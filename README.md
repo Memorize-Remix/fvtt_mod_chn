@@ -11,9 +11,6 @@
 - [x] 清单文件地址： [https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json](https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json)
 - [x] 模组管理器： 搜索 `Translation: 中文 [Mod]` 并**完成更新**
 
-## 更新说明
-无
-
 ## 已汉化mod
 - #### [Active Auras](https://foundryvtt.com/packages/ActiveAuras)
 - #### [Always Chat](https://foundryvtt.com/packages/always-chat)
