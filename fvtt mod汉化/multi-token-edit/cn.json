@@ -1,0 +1,195 @@
+{
+  "MassEdit": {
+    "form": {
+      "immediate-update-title": "在字段更改时自动应用更新。",
+      "global-search-title": "启用世界搜索。",
+      "global-delete-title": "删除",
+      "actions": "活动",
+      "images": "图片",
+      "shaders": "着色器",
+      "delete-warning": "删除 [{count}] {document}",
+      "proceed": "你想继续吗？",
+      "search-and-edit": "搜索和编辑",
+      "apply-on-current-scene": "应用于当前场景",
+      "apply-on-all-scenes": "应用于所有场景",
+      "apply-update-proto": "应用和更新原型",
+      "apply-json": "应用 JSON 数据",
+      "mass-search-title": "批量-{document}搜索",
+      "mass-edit-title": "批量-{document}编辑[ {count} ]",
+      "adding": "添加",
+      "subtracting": "删减"
+    },
+    "dialog": {
+      "search-document": "选择要搜索的文件类型：",
+      "document-not-found": "`未找到所选类型的文件。({document})`"
+    },
+    "generic-form": {
+      "step-size": "Step Size",
+      "define-range": "定义范围控件",
+      "define-dropdown": "定义下拉菜单控件",
+      "pinned": "Pinned"
+    },
+    "clipboard": {
+      "copy": "批量编辑: 将{document}数据复制到剪贴板",
+      "paste": "批量编辑: 将数据粘贴到{count} {document}"
+    },
+    "macro": {
+      "dependency-warning": "该宏要求 {module} 模块处于激活状态。",
+      "target-all-title": "宏将在运行时针对所选'范围'内的所有{document}",
+      "target-ids": "当前选定的 ID",
+      "target-ids-title": "当前所选文件的 ID 将存储在宏中。",
+      "target-search-title": "宏将在运行时搜索与特定字段匹配的{document}",
+      "target-tagger-title": "宏将在运行时以 Tagger 模块的标记为目标。"
+    },
+    "keybindings": {
+      "presetApply": {
+        "name": "打开预设",
+        "hint": "打开可放置预设窗口。"
+      },
+      "presetApplyScene": {
+        "name": "打开场景预置",
+        "hint": "打开场景预设窗口。"
+      },
+      "selectKey": {
+        "name": "打开可放置搜索并选择",
+        "hint": "按下后将打开一个配置窗口，您可以在此选择字段，模块将使用这些字段在当前场景中搜索和选择可放置物品。"
+      },
+      "editKey": {
+        "name": "打开Multi-Placeable编辑",
+        "hint": "按下后将打开一个配置窗口，同时更新所有选定的可放置物品。"
+      },
+      "genericForm": {
+        "name": "打开通用多对象编辑器",
+        "hint": "按下后将打开一个配置窗口，同时更新所有选定对象。"
+      }
+    },
+    "settings": {
+      "autoSnap": {
+        "name": "自动将坐标映射到网格",
+        "hint": "在坐标随机化菜单中使用\"Select Range\" 时，范围值将自动套入网格。"
+      },
+      "panToSearch": {
+        "name": "平移到搜索目标",
+        "hint": "自动将屏幕居中对准第一个找到的可放置位置。"
+      },
+      "tmfxFieldsEnable": {
+        "name": "插入 TMFX 字段",
+        "hint": "DungeonDraft 染色颜色和预设过滤字段将添加到批量编辑 表单中。选择这些字段将应用 TokenMagicFX 过滤。"
+      },
+      "historyMaxLength": {
+        "name": "历史最大长度",
+        "hint": "记录在历史中的更新次数。"
+      },
+      "enableHistory": {
+        "name": "更新历史",
+        "hint": "(需要重新载入游戏) 启用后，对可放置项的更新将被存储，并可通过批量编辑表单进行访问。"
+      },
+      "enableFlagsTab": {
+        "name": "标记选项卡",
+        "hint": " 启用后，'标志'选项卡将添加到批量编辑表单中，以便更新和删除文档标志。"
+      },
+      "rangeToTextbox": {
+        "name": "允许手动输入范围滑块",
+        "hint": "将滑块值标签转换为文本框。"
+      },
+      "singleDocDefaultConfig": {
+        "name": "可单独放置： 默认配置",
+        "hint": "选择或悬停单个可放置项时，打开默认配置窗口，而不是调整后的批量编辑配置。"
+      },
+      "cssEdit": {
+        "name": "配置 CSS",
+        "hint": "更改已修改配置窗口的外观。"
+      }
+    },
+    "randomizer": {
+      "interpolate": "插值",
+      "interpolateReverse": "插值 (反转)",
+      "pickRange": "选择一个范围",
+      "addImagesToList": "在列表中添加图片",
+      "listOfImages": "随机化过程中使用的图像列表",
+      "selectFolder": "选择文件夹",
+      "includeSubfolders": "包含子文件夹",
+      "sequential": "顺序",
+      "findAndReplace": "查找和替换",
+      "findAndReplaceRegex": "查找和替换(RegEx)",
+      "generators": "生成器",
+      "listOfStrings": "随机化过程中使用的字符串列表",
+      "allowDuplicates": "允许复制",
+      "stepSize": "Step size",
+      "snapToGrid": "卡入网格"
+    },
+    "presets": {
+      "drag-placeable-message": "拖入可放置项创建预设。",
+      "drag-placeable": "可拖入式放置",
+      "drag-placeable-hint": "与预设一起生成的附加可放置物体。",
+      "drag-over-message": "创建预置",
+      "default-name": "新预设",
+      "spawning": "Spawning",
+      "warn-no-fields": "未选择字段，无法更新。",
+      "imported": "导入 {count} 预置。",
+      "import": "导入预设",
+      "assign": "将 {count}{document} 分配给预设。",
+      "select-compendium": "选择合集",
+      "export-directory-message": "如果目的地不是批量编辑预设合集，则此操作将使其成为 批量编辑预设合集。确保其中不包含非预设的日志，以免出现意外问题。",
+      "working-directory-message": "更改模块将在其中存储和编辑预设的合集。确保其中不包含非预设的日志，以免出现意外问题。",
+      "update-preset": "更新预置",
+      "delete-fields": "删除字段",
+      "select-delete": "选择要从该预设中删除的字段。",
+      "select-modify": "选择预置生成时提示修改的字段。",
+      "data-edit": "编辑存储在预置中的{document}数据",
+      "data-assign": "将当前选定的{document}分配给预置。",
+      "controls": {
+        "activate-brush": "激活Brush",
+        "document-lock": "打开表格时，将当前类别锁定为默认类别。",
+        "layer-switch": "自动图层切换",
+        "external-compendiums": "显示外部合集。",
+        "scale-to-grid": "根据网格大小调整图块、绘画和墙的比例。"
+      },
+      "export-as-json": "导出为 JSON 格式",
+      "open-journal": "打开日志",
+	  "apply-to-selected": "应用于选定的可放置项",
+      "apply-to-selected-warn": "此操作不能混合使用多个文档类型的预设。",
+      "export-to-compendium": "导出到合集",
+      "copy-to-clipboard": "复制到剪贴板",
+      "keep-preset-ids": "保留预设 ID",
+      "keep-preset-ids-hint": "具有相同 ID 的预置将在目的地被覆盖。",
+      "search-presets": "搜索预置",
+      "search-presets-folders": "搜索预置和文件夹",
+	  "delete-presets-warn": "您将要永久删除[ {count} ]预设。",
+      "spawn-random": "生成一个随机的可放置对象，而不是整个组。"
+    },
+    "css": {
+      "pick": "选择一种风格:"
+    },
+    "common": {
+      "range": "范围",
+      "min": "最小",
+      "max": "最大",
+      "random": "随机",
+      "randomize": "随机化",
+      "color": "颜色",
+      "method": "模式",
+      "find": "查找",
+      "replace": "替换",
+      "list": "列表",
+      "generate": "生成",
+      "pin": "Pin",
+      "preset": "预设",
+      "presets": "预设",
+      "history": "历史",
+      "delete": "删除",
+      "apply": "应用",
+      "ratio": "比例",
+      "options": "选项",
+      "all": "所有",
+      "swap": "交换",
+      "import": "导入",
+      "copy": "复制",
+      "data": "数据",
+      "modify": "修改",
+      "placeable": "可放置",
+      "attach": "附加",
+      "attached": "所附加"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+    "media-optimizer": {
+        "converted": "媒体优化器：已转换",
+        "conversionFailed": "媒体优化器：转换失败，请查看wiki以获取更多信息。",
+        "audioConversionStarted": "媒体优化器：转换为 OGG | 文件： ",
+        "videoConversionStarted": "媒体优化器：转换为 WEBM | 文件： ",
+        "settings": {
+            "enabled": {
+                "name": "已启用",
+                "hint": "是否启用媒体优化器。如果禁用，则不会优化图像、音频和视频。"
+            },
+            "compressionRatio":{
+                "name": "质量",
+                "hint": "优化图像时使用的质量。质量越高，图像质量越高，文件大小越大。质量越低，图像质量越低，文件大小越小。默认值为 0.75。注意：音频和视频的压缩率不能自定义。"
+            },
+            "maxResolution": {
+                "name": "最大分辨率",
+                "hint": "要优化的图像的最大分辨率。如果图像大于此值，则在优化前将按此分辨率调整大小。这对于避免大多数显卡不支持的高分辨率非常有用。",
+                "choices": {
+                    "1024": "1K (1024px)",
+                    "2048": "2K (2048px)",
+                    "4096": "4K (4096px)",
+                    "8192": "8K (8192px)",
+                    "16384": "16K (16384px)"
+                }
+            },
+            "excludeFolders": {
+                "name": "排除文件夹",
+                "hint": "以逗号分隔的文件夹列表，不包括在优化范围内。如果图像/音频/视频上传到此位置，则不会进行优化。"
+            },
+            "optimizeImages": {
+                "name": "优化图片",
+                "hint": "是否优化图片。"
+            },
+            "optimizeAudio": {
+                "name": "优化音频",
+                "hint": "是否优化音频。"
+            },
+            "optimizeVideo": {
+                "name": "优化视频",
+                "hint": "是否优化视频。"
+            },
+            "slugifyFileNames":{
+                "name": "清除文件名",
+                "hint": "是否清理文件名。请注意，此设置将适用于媒体优化器处理或创建的任何文件。这将删除特殊字符并用破折号代替。这对于避免不同操作系统上的文件名问题以及由空格和特殊字符引起的其他问题非常有用。"
+            }
+        },
+        "tile-combiner": {
+            "title": "媒体优化器：图块组合器",
+            "notes": "此功能将永久更改场景！强烈建议备份场景。",
+            "info": "组合器将使用全局媒体优化器压缩设置，您可以在模块设置中进行更改。",
+            "confirm": {
+                "title": "图块组合器： 确认",
+                "content": "您即将组合图块，这将对场景做出永久性更改！您确定要继续吗？",
+                "backup": "不建议您在没有备份的情况下进行组合！"
+            },
+            "buttons": {
+                "backup-combine": "备份与组合",
+                "combine": "组合",
+                "cancel": "取消"
+            },
+            "mode": {
+                "label": "组合模式: ",
+                "background": "背景图块",
+                "foreground": "Foreground Tiles",
+                "selected": "前景图块",
+                "all": "所有图块"
+            },
+            "background": {
+                "label": "包括背景?",
+                "notes": "启用此选项后，合并操作的结果将被设置为场景背景。"
+            },
+            "folderPath":{
+                "label": "文件夹路径: "
+            },
+            "fileName":{
+                "label": "文件名称: "
+            },
+            "deleteTiles": {
+                "label": "删除组合图块?"
+            }
+        },
+        "file-converter": {
+            "header-button": "媒体优化器",
+            "title": "媒体优化器：批量优化",
+            "buttons": {
+                "convert": "优化已选",
+                "select-all": "优化全部",
+                "select-none": "清除选择"
+            }
+        }
+    }
+}

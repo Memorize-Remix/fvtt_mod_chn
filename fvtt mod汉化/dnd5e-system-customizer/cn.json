@@ -1,0 +1,115 @@
+{
+    "dnd5e-system-customizer": {
+        "settings": {
+            "menu": {
+                "name": "D&D 5e系统定制器",
+                "label": "D&D 5e系统定制器",
+                "hint": "定制 D&D 5e 系统"
+            }
+        },
+        "CustomizerApp": {
+            "title": "D&D 5e系统定制器",
+            "save": "豁免变更",
+            "hide": "隐藏",
+            "delete": "删除",
+            "tabs": {
+                "abilities": {
+                    "name": "属性",
+                    "hint": "自定义属性",
+                    "abilityName": "属性名",
+                    "abilityAbbreviation": "缩写",
+                    "add": "添加属性"
+                },
+                "skills": {
+                    "name": "技能",
+                    "hint": "自定义技能",
+                    "skillName": "技能名",
+                    "skillAbbreviation": "缩写",
+                    "skillAbility": "属性",
+                    "add": "添加技能"
+                },
+                "damageTypes": {
+                    "name": "伤害类型",
+                    "hint": "自定义伤害类型",
+                    "damageName": "伤害类型名",
+                    "damageAbbreviation": "缩写",
+                    "add": "添加伤害类型"
+                },
+                "creatureTypes": {
+                    "name": "生物类型",
+                    "hint": "自定义生物类型",
+                    "creatureName": "生物类型名",
+                    "creatureAbbreviation": "缩写",
+                    "add": "添加生物类型"
+                },
+                "languages": {
+                    "name": "语言",
+                    "hint": "自定义语言",
+                    "languageName": "语言名",
+                    "languageAbbreviation": "缩写",
+                    "add": "添加语言"
+                },
+                "hitDieTypes": {
+                    "name": "生命骰",
+                    "hint": "自定义生命骰类型",
+                    "hitDieName": "生命骰类型",
+                    "add": "添加生命骰类型"
+                },
+                "itemRarity": {
+                    "name": "物品稀有度",
+                    "hint": "自定义物品稀有度",
+                    "itemRarityName": "物品稀有度名",
+                    "itemRarityAbbreviation": "缩写",
+                    "add": "添加物品稀有度"
+                },
+                "spellLevels": {
+                    "name": "法术环位",
+                    "hint": "自定义法术位",
+                    "spellLevelName": "法术位名",
+                    "spellLevelAbbreviation": "法术位数量",
+                    "add": "添加法术位"
+                },
+                "spellSchools": {
+                    "name": "法术学派",
+                    "hint": "自定义法术学派",
+                    "spellSchoolName": "法术学派名",
+                    "spellSchoolAbbreviation": "缩写",
+                    "add": "添加法术学派"
+                },
+                "classFeatureTypes": {
+                    "name": "职业特性类型",
+                    "hint": "自定义职业特性类型",
+                    "classFeatureTypeName": "职业特性名",
+                    "classFeatureTypeAbbreviation": "缩写",
+                    "add": "添加职业特性类型"
+                },
+                "currencies": {
+                    "name": "货币",
+                    "hint": "自定义货币",
+                    "currency": "货币",
+                    "currencyName": "名称",
+                    "currencyAbbreviation": "缩写"
+                },
+                "misc": {
+                    "name": "杂项",
+                    "hint": "自定义杂项",
+                    "maxLevel": "最高等级",
+                    "initiativeAbility": "先攻属性",
+                    "initiativeFormula": "先攻公式",
+                    "initiativeFormulaNotes": "警告：该选项将覆盖 DND5E 的核心功能，可能会导致与其他模组发生问题。使用风险自负。",
+                    "hitPointsAbility": "生命值属性",
+                    "castFromDescription": "来自内容链接的角色",
+                    "castFromDescriptionHint": "通过自有物品描述栏中的内容链接施法",
+                    "sharedInspiration": "共享激励",
+                    "sharedInspirationHint": "所有玩家共享一个激励池。重要： 此功能将使用'Resource 3'，并将覆盖所有玩家拥有的角色。使用'/inspiration'聊天命令为每位玩家授予 1 点激励，或使用 '/inspiration N'为全队授予 N 点灵感。"
+                }
+            }
+        },
+        "castFromDescription": {
+            "tooltip": "施法"
+        },
+        "sharedInspiration": {
+            "awarded": "灵感已授予该小队！"
+        }
+    }
+}
