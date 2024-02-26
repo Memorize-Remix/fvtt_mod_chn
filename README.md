@@ -5,7 +5,7 @@
 
 如需提议新增模组汉化（仅限5e和通用mod），可以在[建议贴](https://github.com/13996090016/fvtt_mod_chn/discussions/1)中回复。
 
-如发现此mod汉化文本的错误或缺失（仅限此mod的汉化），可以[纠错贴](https://github.com/13996090016/fvtt_mod_chn/discussions/2)中回复。
+如发现此mod汉化文本的错误或缺失（仅限此mod的汉化），可以在[纠错贴](https://github.com/13996090016/fvtt_mod_chn/discussions/2)中回复。
 
 ## 安装
 - [x] 清单文件地址： [https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json](https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json)
