@@ -4,6 +4,7 @@
 本模组为 FVTT 的部分mod提供了汉化，目前的mod翻译适配于FVTT V11版本和DND5e 2.4.1版本。
 
 如需提议新增模组汉化（仅限5e和通用mod），可以在[建议贴](https://github.com/13996090016/fvtt_mod_chn/discussions/1)中回复。
+
 如发现此mod汉化文本的错误或缺失（仅限此mod的汉化），可以[纠错贴](https://github.com/13996090016/fvtt_mod_chn/discussions/2)中回复。
 
 ## 安装
