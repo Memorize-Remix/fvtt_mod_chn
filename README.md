@@ -1,4 +1,4 @@
-![038952E0](https://github.com/13996090016/fvtt_mod_chn/assets/62300045/78af94d1-41bf-46b5-a24e-a0537e58a09d)# Foundry VTT Mod 翻译包
+# Foundry VTT Mod 翻译包
 ![](https://img.shields.io/badge/Foundry-v11.315-informational) ![](https://img.shields.io/badge/DND-v2.4.1-informational) 
 
 本模组为 FVTT 的部分mod提供了汉化，目前的翻译基本适配于FVTT V11版本和DND5e 2.4.1版本的mod。
@@ -79,4 +79,9 @@
 - #### [Token Variant Art](https://foundryvtt.com/packages/token-variants)
 - #### [VoodooFrog's 5e Sheet Addons](https://foundryvtt.com/packages/vf-5e-sheet-addons)
 - #### [Wall Height](https://foundryvtt.com/packages/wall-height)
+- #### [Patrol](https://foundryvtt.com/packages/patrol)
+- #### [Power Select Toolkit](https://foundryvtt.com/packages/power-select-toolkit)
+- #### [Party HUD](https://foundryvtt.com/packages/party-monitor-dock)
+- #### [Simple Quest](https://foundryvtt.com/packages/simple-quest)
+- #### [Visual Active Effects](https://foundryvtt.com/packages/visual-active-effects)
 
