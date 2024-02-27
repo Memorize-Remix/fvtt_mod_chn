@@ -5,6 +5,20 @@
                 "name": "D&D 5e系统定制器",
                 "label": "D&D 5e系统定制器",
                 "hint": "定制 D&D 5e 系统"
+            },
+            "enableAdvancedCustomization": {
+                "name": "启用高级定制",
+                "hint": "启用高级定制选项"
+            },
+            "configKey": {
+                "name": "配置密钥",
+                "hint": "系统配置密钥"
+            },
+            "jsonEditor": {
+                "name": "系统定制",
+                "label": "打开 JSON 编辑器",
+                "hint": "打开 JSON 编辑器自定义系统。要使用此功能，必须启用'启用高级定制'。",
+                "warn": "Important! Not every customization will work, this will depend on your system. If any customization is not working or causing errors/issues, remove that customization or Reset to Defaults."
             }
         },
         "CustomizerApp": {
@@ -105,11 +119,15 @@
                 }
             }
         },
+		"json-editor-app": {
+            "title": "系统定制器"
+        },
         "castFromDescription": {
             "tooltip": "施法"
         },
         "sharedInspiration": {
             "awarded": "灵感已授予该小队！"
-        }
+        },
+        "noConfig": "系统定制器： 未找到适合您系统的配置。您的系统可能不支持修改配置，或者您可能需要在模块设置中手动输入配置路径。如果您不知道如何识别系统的配置密钥，请在系统频道寻求帮助。"
     }
 }
