@@ -5,6 +5,11 @@
         "audioConversionStarted": "媒体优化器：转换为 OGG | 文件： ",
         "videoConversionStarted": "媒体优化器：转换为 WEBM | 文件： ",
         "settings": {
+			"bloatDetector": {
+                "name": "Bloat检测",
+                "label": "打开Bloat检测",
+                "hint": "检测可能导致加载速度慢或性能问题的条目。"
+            },
             "enabled": {
                 "name": "已启用",
                 "hint": "是否启用媒体优化器。如果禁用，则不会优化图像、音频和视频。"
@@ -88,6 +93,12 @@
                 "select-all": "优化全部",
                 "select-none": "清除选择"
             }
+        },
+        "bloat-detector": {
+            "title": "媒体优化器: bloat检测",
+            "bloat": "检测到可能导致加载速度慢或性能问题的条目。数量: ",
+            "no-bloat": "未检测到bloat。",
+            "large-collection": "合集规模较大，建议将未使用的条目移至合集。"
         }
     }
 }
