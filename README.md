@@ -79,6 +79,8 @@
 - #### [Token Variant Art](https://foundryvtt.com/packages/token-variants)
 - #### [VoodooFrog's 5e Sheet Addons](https://foundryvtt.com/packages/vf-5e-sheet-addons)
 - #### [Wall Height](https://foundryvtt.com/packages/wall-height)
+- #### [FXMaster](https://foundryvtt.com/packages/fxmaster)
+- #### [Custom Character Sheet Sections](https://foundryvtt.com/packages/custom-character-sheet-sections)
 - #### [Patrol](https://foundryvtt.com/packages/patrol)
 - #### [Power Select Toolkit](https://foundryvtt.com/packages/power-select-toolkit)
 - #### [Party HUD](https://foundryvtt.com/packages/party-monitor-dock)
