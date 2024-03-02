@@ -86,4 +86,10 @@
 - #### [Party HUD](https://foundryvtt.com/packages/party-monitor-dock)
 - #### [Simple Quest](https://foundryvtt.com/packages/simple-quest)
 - #### [Visual Active Effects](https://foundryvtt.com/packages/visual-active-effects)
+- #### [Archon (Masked Items)](https://foundryvtt.com/packages/archon)
+- #### [Beaver's System Interface](https://foundryvtt.com/packages/beavers-system-interface)
+- #### [Beaver's Crafting Module](https://foundryvtt.com/packages/beavers-crafting)
+- #### [Gatherer](https://foundryvtt.com/packages/gatherer)
+- #### [Mastercrafted](https://foundryvtt.com/packages/mastercrafted)
+
 
