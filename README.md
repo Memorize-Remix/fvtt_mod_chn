@@ -91,5 +91,6 @@
 - #### [Beaver's Crafting Module](https://foundryvtt.com/packages/beavers-crafting)
 - #### [Gatherer](https://foundryvtt.com/packages/gatherer)
 - #### [Mastercrafted](https://foundryvtt.com/packages/mastercrafted)
+- #### [Rest Recovery 5e](https://foundryvtt.com/packages/rest-recovery)
 
 
