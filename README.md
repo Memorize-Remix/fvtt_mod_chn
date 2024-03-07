@@ -92,5 +92,7 @@
 - #### [Gatherer](https://foundryvtt.com/packages/gatherer)
 - #### [Mastercrafted](https://foundryvtt.com/packages/mastercrafted)
 - #### [Rest Recovery 5e](https://foundryvtt.com/packages/rest-recovery)
+- #### [DF Chat Enhancements](https://foundryvtt.com/packages/df-chat-enhance)
+- #### [Chat Commander](https://foundryvtt.com/packages/_chatcommands)
 
 
