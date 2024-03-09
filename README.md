@@ -94,5 +94,7 @@
 - #### [Rest Recovery 5e](https://foundryvtt.com/packages/rest-recovery)
 - #### [DF Chat Enhancements](https://foundryvtt.com/packages/df-chat-enhance)
 - #### [Chat Commander](https://foundryvtt.com/packages/_chatcommands)
+- #### [Multilevel Tokens](https://foundryvtt.com/packages/multilevel-tokens)
+- #### [Combat Tracker Extensions](https://foundryvtt.com/packages/combat-tracker-extensions)
 
 
