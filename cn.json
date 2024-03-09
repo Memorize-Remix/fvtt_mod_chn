@@ -13224,6 +13224,440 @@
     },
 	
 	
-	"DF_CHAT_ENHANCE":{"LANG":"中文","ReloadGameTitle":"DF Chat Enhance","ReloadGameContent":"<p style=\"margin:1em 0\">重载后改动才会生效。你想现在就重载吗？</p>"},"DF_CHAT_ARCHIVE":{"ChatEnhanceSettingGroup":"聊天增强","ExportButtonTitle":"归档聊天记录","OpenChatArchive":"管理聊天归档","Settings":{"HideExport":"聊天归档: 隐藏导出聊天归档按钮","ArchiveFolder_Name":"保存聊天归档的文件夹","ArchiveFolder_Hint":"存储聊天归档的目录"},"ArchiveNew_Title":"DF 创建聊天归档","ArchiveNew_Name":"归档名称:","ArchiveNew_NameHint":"未命名归档","ArchiveNew_All":"归档所有当前的聊天记录","ArchiveNew_Date":"归档日期范围","ArchiveNew_FromDate":"起始日期:","ArchiveNew_ToDate":"截止日期:","ArchiveNew_Delete":"从聊天记录中删除这些聊天消息？","ArchiveNew_Visible":"玩家可见？","ArchiveNew_Submit":"保存归档","ArchiveNew_ErrorNameMissing":"必须为新建的归档提供一个名称！","ArchiveNew_ErrorDatesMissing":"必须为日期范围同时提供起始和截止日期！","ArchiveNew_NoticeSuccess":"新的归档 \"{0}\" 已经创建","ArchiveManager_Title":"DF 聊天归档管理","ArchiveManager_NotItems":"你没有任何聊天归档记录","ArchiveManager_DeleteAll":"删除所有归档","ArchiveManager_ErrorBadId":"选择的聊天的归档的 ID 并不存在。","ArchiveManager_ConfirmDeleteAllTitle":"删除所有聊天归档？","ArchiveManager_ConfirmDeleteAllMessage1":"<p style=\"margin:1em 0\">你确定你要删除你的所有聊天归档？<b>此操作不可逆！</b></p>","ArchiveManager_ConfirmDeleteAllMessage2":"<p style=\"margin:1em 0\"><b>最后确认！</b> 你真的确定想要删除所有的归档吗？</p>","ArchiveManager_ConfirmDeleteAllComplete":"所有聊天归档已被删除","ArchiveManager_ConfirmDeleteArchiveTitle":"删除聊天归档?","ArchiveManager_ConfirmDeleteArchiveContent":"<p style=\"margin:1em 0\">你确定你想要删除 '{name}'？</p>","ArchiveManager_VisibleToPlayers":"玩家可见","ArchiveViewer_Title":"DF 聊天归档","ArchiveViewer_NameEdit_Title":"编辑归档名称","ArchiveViewer_NameEdit_Save":"保存名称","ArchiveViewer_NameEdit_Cancel":"取消","ArchiveViewer_SaveChanges":"应用删除","ArchiveViewer_Visible":"玩家可见","ArchiveViewer_DeleteTitle":"删除归档消息","ArchiveViewer_DeleteContent":"你确定你想要应用所有刚才消息的删除吗？","ArchiveViewer_Html":"将聊天记录保存为 HTML 格式","ArchiveViewer_Print":"打印该归档","ArchiveViewer_Merge":"合并一条归档到该归档中","ArchiveViewer_Merge_Title":"合并聊天归档","ArchiveViewer_Merge_SelectArchive":"选择一条归档以并入","ArchiveViewer_Merge_Delete":"删除被合并的归档？","ArchiveViewer_Merge_Cancel":"取消","ArchiveViewer_Merge_Merge":"合并","ArchiveViewer_Merge_OnlyOneArchive":"没有其他可用于合并的归档","ArchiveViewer_Error_Delete_All":"无法删除存档中的所有聊天归档。如果您想删除存档，请从存档管理器中删除。"},"DF_CHAT_PRIVACY":{"Settings_EnableTitle":"掷骰按钮：将所有掷骰类型选项替换为按钮","Settings_EnableHint":"(需要重载) 将掷骰类型的下拉菜单选项替换为四个一组的按钮。","Settings_ReplaceButtonsTitle":"掷骰按钮：应用同类风格在所有聊天按钮上","Settings_ReplaceButtonsHint":"(需要重载) 也为其他聊天按钮应用风格，使得聊天按钮风格都统一近似新的掷骰类型按钮。"},"DF_CHAT_LOG":{"CommandDescription":"向冒险日志提交事件","PCCommandDescription":"向玩家日志提交事件","GMCommandDescription":"向 GM 冒险日志提交事件","HelpDialog_Title":"冒险日志命令帮助","Setting":{"EnableTitle":"冒险日志：启用","EnableHint":"启用冒险日志功能，用于直接从聊天侧边栏里为日志记录事件。","GmOnlyTitle":"冒险日志：设定冒险日志功能为仅限 GM","GmOnlyHint":"设定冒险日志的命令仅限 GM 可用。","GmOnlyWhisperName":"冒险日志：(如果仅限 GM) 所有日志设为私聊","GmOnlyWhisperHint":"如果仅限 GM 可用，这项设定可以令所有日志条目的聊天消息设为私聊。","UseTimeName":"冒险日志: 包括当前时间","UseTimeHint":"在时间戳中包含当前时间（hh:mm:ss）","PrintMessagesName":"冒险日志：将日志发布到聊天","PrintMessagesHint":"为新的冒险日志条目发布一条聊天消息。","DisableFormatName":"冒险日志：禁用条目格式","DisableFormatHint":"在冒险日志中添加条目时禁用字体格式。","DisableEntryAuthorName":"冒险日志：禁用在条目中撰写作者","DisableEntryAuthorHint":"在记录事件和引用时，防止将作者姓名写入冒险日志。","SortDescendingName":"冒险日志：按新消息在顶端排序","SortDescendingHint":"冒险日志以最新的消息置于日志顶端来排序，最旧的消息会在日志底端。","SimpleCalendarName":"冒险日志：使用 SimpleCalendar 时间戳","SimpleCalendarHint":"使用由 SimpleCalendar 生成的时间戳代替真实时间戳"},"Error":{"LibWrapperMissing":"你没有启用 libWrapper 。冒险日志功能依赖于此模组，无法起效。","ConfigGmOnly":"仅 GM 可以修改冒险日志的配置。","Disabled":"GM 已经禁用冒险日志","NoJournalSet":"GM 还没有为冒险日志设定一个使用的日志","NoPlayerJournalSet":"个人冒险日志尚未与您的用户帐户绑定。","NoJournalSetGM":"没有为冒险日志设定使用的日志。使用 \"<code>/log config</code>\" 来设置","MissingQuote":"你漏掉了 {0} 的引号","MissingMessage":"你没有提供一条消息","ApiLog_NotGm":"您必须是GM才能将事件记录到GM冒险日志中"},"Log_Header":"冒险日志","PLog_Header":"Pl日志","GMLog_Header":"冒险日志 (仅限 GM)","Log_Event":"<p><code><span class=\"dfal-ts\">{0}</span></code>&nbsp;(<span class=\"dfal-na\">{1}</span>)&nbsp;<span class=\"dfal-ev\">{2}</span></p>","Log_Quote":"<p><code><span class=\"dfal-ts\">{0}</span></code>&nbsp;(<span class=\"dfal-na\">{1}</span>)&nbsp;<span class=\"dfal-qu-src\">{2} 说:</span>&nbsp;<span class=\"dfal-qu\">\"{3}\"</span></p>","Log_Event_Bland":"<p><span>{0}</span>&nbsp;(<span>{1}</span>)&nbsp;<span>{2}</span></p>","Log_Quote_Bland":"<p><span>{0}</span>&nbsp;(<span>{1}</span>)&nbsp;<span>{2} 说:</span>&nbsp;<span>\"{3}\"</span></p>","Log_Event_NoAuth":"<p><code><span class=\"dfal-ts\">[{0}]</span></code>&nbsp;<span class=\"dfal-ev\">{2}</span></p>","Log_Quote_NoAuth":"<p><code><span class=\"dfal-ts\">[{0}]</span></code>&nbsp;<span class=\"dfal-qu-src\">{2} 说:</span>&nbsp;<span class=\"dfal-qu\">\"{3}\"</span></p>","Log_Event_Bland_NoAuth":"<p><span>({0})</span>&nbsp;<span>{2}</span></p>","Log_Quote_Bland_NoAuth":"<p><span>({0})</span>&nbsp;<span>{2} 说:</span>&nbsp;<span>\"{3}\"</span></p>","Config_Title":"冒险日志设置","Config_JournalSelect":"用于冒险日志的日志","Config_GMJournalSelect":"用于仅限 GM 的日志","Config_ClearContent":"清除日志的所有内容","Config_GmClearContent":"清除仅限 GM 的日志的所有内容","Config_JournalPermissions":"所有提交日志事件的玩家需要编辑选择的日志的权限。","ContextMenu_AsEvent":"为冒险日志记录事件","ContextMenu_AsQuote":"为冒险日志记录引述","ContextMenu_AsGmEvent":"为 GM 冒险日志记录事件","ContextMenu_AsGmQuote":"为 GM 冒险日志记录引述"},"DF_CHAT_EDIT":{"Editor_Title":"DF 聊天编辑","Editor_Original":"原消息","Settings_AllowEditName":"聊天编辑：允许编辑消息","Settings_AllowEditHint":"允许玩家编辑他们发送的消息","Settings_GMEditAllName":"聊天编辑：GM 可以编辑所有消息","Settings_GMEditAllHint":"允许 GM 除了自己的消息外，还可以编辑任何人的消息","Settings_IgnoreHtmlName":"聊天编辑：忽略包含 HTML 的消息","Settings_IgnoreHtmlHint":"不允许编辑包含 HTML 的消息。","Settings_MarkdownName":"聊天编辑：启用 Markdown","Settings_MarkdownHint":"在聊天记录中启用 Markdown 风格。","Settings_ShowEditedLabelName":"聊天编辑：标签编辑的消息","Settings_ShowEditedLabelHint":"在已编辑消息的底部添加一个小标签，上面写着：\"(已编辑)\"","EditedFlag":"(已编辑)","Error_NoPermission":"GM 已禁用编辑","ContextOption":"编辑信息"},"DF_CHAT_MERGE":{"EnableName":"聊天合并：启用聊天消息合并","EnableHint":"将把同一用户发布时间相近的消息合并在一起。","ShowHeaderName":"聊天合并：显示消息头部","ShowHeaderHint":"如果启用，将显示每条合并消息的头部。","AllowRollsName":"聊天合并：合并时如何处理掷骰","AllowRollsHint":"应如何处理掷骰消息。","SeparateName":"聊天合并：显示合并的消息分隔线","SeparateHint":"在合并的消息之间显示一条细分隔线。","SplitSpeakerName":"按发言人分组","SplitSpeakerHint":"如果启用，消息将根据说话的 actor 进行分组；否则，来自单个用户的所有消息都将分组。","HoverName":"聊天合并：显示悬停阴影","HoverHint":"当鼠标悬停在合并的聊天消息上时，显示边框阴影。","EpochName":"聊天合并：最长时间段","EpochHint":"可将消息合并在一起的最长间隔时间。","AllowRollsOptions":{"none":"不要合并","rolls":"与其他掷骰合并","all":"与任何消息合并"}},"DF_CHAT_SCROLL":{"EnableName":"启用聊天滚动增强","EnableHint":"将显示滚动到底部按钮，如果您正在向上滚动聊天记录，它将阻止聊天记录在有新消息时向下滚动。相反，当有新消息发布时，它会高亮显示滚动到底按钮。","ScrollIfYouName":"发送消息时滚动到底部","ScrollIfYouHint":"如果您已经向上滚动了聊天记录，当您发送消息时，它会自动滚动回底部。","ScrollButton":"滚动到底部","NewMessage":"新消息!","HistorySizeName":"减少显示聊天消息","HistorySizeHint":"减少显示聊天消息的数量。旧消息将在您向上滚动聊天记录时加载。当聊天记录较长时，这有助于提高 Foundry 的性能。","HistoryFixEnabledName":"最多聊天消息","HistoryFixEnabledHint":"在聊天记录底部时显示的聊天消息的最大数量。"},"DF_CHAT_WHISPER_TRUNC":{"SettingEnabledName":"启用私聊名称列表截断功能","SettingEnabledHint":"将为私聊消息截断较长的接收消息者姓名列表。","SettingCharLimitName":"私聊截断角色限制","SettingCharLimitHint":"截断接收消息者姓名前显示的最大角色数。"},"DF_CHAT_PLAYER_COLOR":{"Label":"玩家聊天颜色","SettingTintBackgroundName":"着色聊天消息背景","SettingTintBackgroundHint":"将聊天消息的背景染成玩家的颜色。","SettingBorderStyleName":"聊天消息着色边框","SettingBorderStyleHint":"哪些聊天消息应该有着色边框。","BorderStyle":{"all":"所有消息（默认）","mine":"仅限我的消息","none":"无边框着色"}},"DF_CHAT_SEND_BUTTON":{"EnabledName":"在聊天中显示发送按钮","EnabledHint":"在聊天框中显示发送按钮，点击后即可发送消息。","ButtonTitle":"发送消息"},"DF_CHAT_FONT_SIZE":{"FontSizeName":"聊天消息字体大小","FontSizeHint":"聊天消息和文本框的字体大小。(默认：14）"},"DF_CHAT_TIME":{"EnabledName":"使用简单日历获取聊天时间戳","EnabledHint":"(需要Simple Calendar）如果启用，聊天消息将显示当前的游戏时间，而不是现实世界的时间。重要！更改此选项将导致聊天记录重新渲染。","FormatName":"聊天消息时间戳使用的格式","FormatHint":"聊天消息中显示的简单日历时间戳的格式。需要启用上述设置。(默认：\"YYYY, MMM DD, HH:mm\")","ErrorSimpleCalendarMissing":"必须安装并激活 Simple Calendar 才能将其用于聊天消息时间戳"}
+	"DF_CHAT_ENHANCE":{"LANG":"中文","ReloadGameTitle":"DF Chat Enhance","ReloadGameContent":"<p style=\"margin:1em 0\">重载后改动才会生效。你想现在就重载吗？</p>"},"DF_CHAT_ARCHIVE":{"ChatEnhanceSettingGroup":"聊天增强","ExportButtonTitle":"归档聊天记录","OpenChatArchive":"管理聊天归档","Settings":{"HideExport":"聊天归档: 隐藏导出聊天归档按钮","ArchiveFolder_Name":"保存聊天归档的文件夹","ArchiveFolder_Hint":"存储聊天归档的目录"},"ArchiveNew_Title":"DF 创建聊天归档","ArchiveNew_Name":"归档名称:","ArchiveNew_NameHint":"未命名归档","ArchiveNew_All":"归档所有当前的聊天记录","ArchiveNew_Date":"归档日期范围","ArchiveNew_FromDate":"起始日期:","ArchiveNew_ToDate":"截止日期:","ArchiveNew_Delete":"从聊天记录中删除这些聊天消息？","ArchiveNew_Visible":"玩家可见？","ArchiveNew_Submit":"保存归档","ArchiveNew_ErrorNameMissing":"必须为新建的归档提供一个名称！","ArchiveNew_ErrorDatesMissing":"必须为日期范围同时提供起始和截止日期！","ArchiveNew_NoticeSuccess":"新的归档 \"{0}\" 已经创建","ArchiveManager_Title":"DF 聊天归档管理","ArchiveManager_NotItems":"你没有任何聊天归档记录","ArchiveManager_DeleteAll":"删除所有归档","ArchiveManager_ErrorBadId":"选择的聊天的归档的 ID 并不存在。","ArchiveManager_ConfirmDeleteAllTitle":"删除所有聊天归档？","ArchiveManager_ConfirmDeleteAllMessage1":"<p style=\"margin:1em 0\">你确定你要删除你的所有聊天归档？<b>此操作不可逆！</b></p>","ArchiveManager_ConfirmDeleteAllMessage2":"<p style=\"margin:1em 0\"><b>最后确认！</b> 你真的确定想要删除所有的归档吗？</p>","ArchiveManager_ConfirmDeleteAllComplete":"所有聊天归档已被删除","ArchiveManager_ConfirmDeleteArchiveTitle":"删除聊天归档?","ArchiveManager_ConfirmDeleteArchiveContent":"<p style=\"margin:1em 0\">你确定你想要删除 '{name}'？</p>","ArchiveManager_VisibleToPlayers":"玩家可见","ArchiveViewer_Title":"DF 聊天归档","ArchiveViewer_NameEdit_Title":"编辑归档名称","ArchiveViewer_NameEdit_Save":"保存名称","ArchiveViewer_NameEdit_Cancel":"取消","ArchiveViewer_SaveChanges":"应用删除","ArchiveViewer_Visible":"玩家可见","ArchiveViewer_DeleteTitle":"删除归档消息","ArchiveViewer_DeleteContent":"你确定你想要应用所有刚才消息的删除吗？","ArchiveViewer_Html":"将聊天记录保存为 HTML 格式","ArchiveViewer_Print":"打印该归档","ArchiveViewer_Merge":"合并一条归档到该归档中","ArchiveViewer_Merge_Title":"合并聊天归档","ArchiveViewer_Merge_SelectArchive":"选择一条归档以并入","ArchiveViewer_Merge_Delete":"删除被合并的归档？","ArchiveViewer_Merge_Cancel":"取消","ArchiveViewer_Merge_Merge":"合并","ArchiveViewer_Merge_OnlyOneArchive":"没有其他可用于合并的归档","ArchiveViewer_Error_Delete_All":"无法删除存档中的所有聊天归档。如果您想删除存档，请从存档管理器中删除。"},"DF_CHAT_PRIVACY":{"Settings_EnableTitle":"掷骰按钮：将所有掷骰类型选项替换为按钮","Settings_EnableHint":"(需要重载) 将掷骰类型的下拉菜单选项替换为四个一组的按钮。","Settings_ReplaceButtonsTitle":"掷骰按钮：应用同类风格在所有聊天按钮上","Settings_ReplaceButtonsHint":"(需要重载) 也为其他聊天按钮应用风格，使得聊天按钮风格都统一近似新的掷骰类型按钮。"},"DF_CHAT_LOG":{"CommandDescription":"向冒险日志提交事件","PCCommandDescription":"向玩家日志提交事件","GMCommandDescription":"向 GM 冒险日志提交事件","HelpDialog_Title":"冒险日志命令帮助","Setting":{"EnableTitle":"冒险日志：启用","EnableHint":"启用冒险日志功能，用于直接从聊天侧边栏里为日志记录事件。","GmOnlyTitle":"冒险日志：设定冒险日志功能为仅限 GM","GmOnlyHint":"设定冒险日志的命令仅限 GM 可用。","GmOnlyWhisperName":"冒险日志：(如果仅限 GM) 所有日志设为私聊","GmOnlyWhisperHint":"如果仅限 GM 可用，这项设定可以令所有日志条目的聊天消息设为私聊。","UseTimeName":"冒险日志: 包括当前时间","UseTimeHint":"在时间戳中包含当前时间（hh:mm:ss）","PrintMessagesName":"冒险日志：将日志发布到聊天","PrintMessagesHint":"为新的冒险日志条目发布一条聊天消息。","DisableFormatName":"冒险日志：禁用条目格式","DisableFormatHint":"在冒险日志中添加条目时禁用字体格式。","DisableEntryAuthorName":"冒险日志：禁用在条目中撰写作者","DisableEntryAuthorHint":"在记录事件和引用时，防止将作者姓名写入冒险日志。","SortDescendingName":"冒险日志：按新消息在顶端排序","SortDescendingHint":"冒险日志以最新的消息置于日志顶端来排序，最旧的消息会在日志底端。","SimpleCalendarName":"冒险日志：使用 SimpleCalendar 时间戳","SimpleCalendarHint":"使用由 SimpleCalendar 生成的时间戳代替真实时间戳"},"Error":{"LibWrapperMissing":"你没有启用 libWrapper 。冒险日志功能依赖于此模组，无法起效。","ConfigGmOnly":"仅 GM 可以修改冒险日志的配置。","Disabled":"GM 已经禁用冒险日志","NoJournalSet":"GM 还没有为冒险日志设定一个使用的日志","NoPlayerJournalSet":"个人冒险日志尚未与您的用户帐户绑定。","NoJournalSetGM":"没有为冒险日志设定使用的日志。使用 \"<code>/log config</code>\" 来设置","MissingQuote":"你漏掉了 {0} 的引号","MissingMessage":"你没有提供一条消息","ApiLog_NotGm":"您必须是GM才能将事件记录到GM冒险日志中"},"Log_Header":"冒险日志","PLog_Header":"Pl日志","GMLog_Header":"冒险日志 (仅限 GM)","Log_Event":"<p><code><span class=\"dfal-ts\">{0}</span></code>&nbsp;(<span class=\"dfal-na\">{1}</span>)&nbsp;<span class=\"dfal-ev\">{2}</span></p>","Log_Quote":"<p><code><span class=\"dfal-ts\">{0}</span></code>&nbsp;(<span class=\"dfal-na\">{1}</span>)&nbsp;<span class=\"dfal-qu-src\">{2} 说:</span>&nbsp;<span class=\"dfal-qu\">\"{3}\"</span></p>","Log_Event_Bland":"<p><span>{0}</span>&nbsp;(<span>{1}</span>)&nbsp;<span>{2}</span></p>","Log_Quote_Bland":"<p><span>{0}</span>&nbsp;(<span>{1}</span>)&nbsp;<span>{2} 说:</span>&nbsp;<span>\"{3}\"</span></p>","Log_Event_NoAuth":"<p><code><span class=\"dfal-ts\">[{0}]</span></code>&nbsp;<span class=\"dfal-ev\">{2}</span></p>","Log_Quote_NoAuth":"<p><code><span class=\"dfal-ts\">[{0}]</span></code>&nbsp;<span class=\"dfal-qu-src\">{2} 说:</span>&nbsp;<span class=\"dfal-qu\">\"{3}\"</span></p>","Log_Event_Bland_NoAuth":"<p><span>({0})</span>&nbsp;<span>{2}</span></p>","Log_Quote_Bland_NoAuth":"<p><span>({0})</span>&nbsp;<span>{2} 说:</span>&nbsp;<span>\"{3}\"</span></p>","Config_Title":"冒险日志设置","Config_JournalSelect":"用于冒险日志的日志","Config_GMJournalSelect":"用于仅限 GM 的日志","Config_ClearContent":"清除日志的所有内容","Config_GmClearContent":"清除仅限 GM 的日志的所有内容","Config_JournalPermissions":"所有提交日志事件的玩家需要编辑选择的日志的权限。","ContextMenu_AsEvent":"为冒险日志记录事件","ContextMenu_AsQuote":"为冒险日志记录引述","ContextMenu_AsGmEvent":"为 GM 冒险日志记录事件","ContextMenu_AsGmQuote":"为 GM 冒险日志记录引述"},"DF_CHAT_EDIT":{"Editor_Title":"DF 聊天编辑","Editor_Original":"原消息","Settings_AllowEditName":"聊天编辑：允许编辑消息","Settings_AllowEditHint":"允许玩家编辑他们发送的消息","Settings_GMEditAllName":"聊天编辑：GM 可以编辑所有消息","Settings_GMEditAllHint":"允许 GM 除了自己的消息外，还可以编辑任何人的消息","Settings_IgnoreHtmlName":"聊天编辑：忽略包含 HTML 的消息","Settings_IgnoreHtmlHint":"不允许编辑包含 HTML 的消息。","Settings_MarkdownName":"聊天编辑：启用 Markdown","Settings_MarkdownHint":"在聊天记录中启用 Markdown 风格。","Settings_ShowEditedLabelName":"聊天编辑：标签编辑的消息","Settings_ShowEditedLabelHint":"在已编辑消息的底部添加一个小标签，上面写着：\"(已编辑)\"","EditedFlag":"(已编辑)","Error_NoPermission":"GM 已禁用编辑","ContextOption":"编辑信息"},"DF_CHAT_MERGE":{"EnableName":"聊天合并：启用聊天消息合并","EnableHint":"将把同一用户发布时间相近的消息合并在一起。","ShowHeaderName":"聊天合并：显示消息头部","ShowHeaderHint":"如果启用，将显示每条合并消息的头部。","AllowRollsName":"聊天合并：合并时如何处理掷骰","AllowRollsHint":"应如何处理掷骰消息。","SeparateName":"聊天合并：显示合并的消息分隔线","SeparateHint":"在合并的消息之间显示一条细分隔线。","SplitSpeakerName":"按发言人分组","SplitSpeakerHint":"如果启用，消息将根据说话的 actor 进行分组；否则，来自单个用户的所有消息都将分组。","HoverName":"聊天合并：显示悬停阴影","HoverHint":"当鼠标悬停在合并的聊天消息上时，显示边框阴影。","EpochName":"聊天合并：最长时间段","EpochHint":"可将消息合并在一起的最长间隔时间。","AllowRollsOptions":{"none":"不要合并","rolls":"与其他掷骰合并","all":"与任何消息合并"}},"DF_CHAT_SCROLL":{"EnableName":"启用聊天滚动增强","EnableHint":"将显示滚动到底部按钮，如果您正在向上滚动聊天记录，它将阻止聊天记录在有新消息时向下滚动。相反，当有新消息发布时，它会高亮显示滚动到底按钮。","ScrollIfYouName":"发送消息时滚动到底部","ScrollIfYouHint":"如果您已经向上滚动了聊天记录，当您发送消息时，它会自动滚动回底部。","ScrollButton":"滚动到底部","NewMessage":"新消息!","HistorySizeName":"减少显示聊天消息","HistorySizeHint":"减少显示聊天消息的数量。旧消息将在您向上滚动聊天记录时加载。当聊天记录较长时，这有助于提高 Foundry 的性能。","HistoryFixEnabledName":"最多聊天消息","HistoryFixEnabledHint":"在聊天记录底部时显示的聊天消息的最大数量。"},"DF_CHAT_WHISPER_TRUNC":{"SettingEnabledName":"启用私聊名称列表截断功能","SettingEnabledHint":"将为私聊消息截断较长的接收消息者姓名列表。","SettingCharLimitName":"私聊截断角色限制","SettingCharLimitHint":"截断接收消息者姓名前显示的最大角色数。"},"DF_CHAT_PLAYER_COLOR":{"Label":"玩家聊天颜色","SettingTintBackgroundName":"着色聊天消息背景","SettingTintBackgroundHint":"将聊天消息的背景染成玩家的颜色。","SettingBorderStyleName":"聊天消息着色边框","SettingBorderStyleHint":"哪些聊天消息应该有着色边框。","BorderStyle":{"all":"所有消息（默认）","mine":"仅限我的消息","none":"无边框着色"}},"DF_CHAT_SEND_BUTTON":{"EnabledName":"在聊天中显示发送按钮","EnabledHint":"在聊天框中显示发送按钮，点击后即可发送消息。","ButtonTitle":"发送消息"},"DF_CHAT_FONT_SIZE":{"FontSizeName":"聊天消息字体大小","FontSizeHint":"聊天消息和文本框的字体大小。(默认：14）"},"DF_CHAT_TIME":{"EnabledName":"使用简单日历获取聊天时间戳","EnabledHint":"(需要Simple Calendar）如果启用，聊天消息将显示当前的游戏时间，而不是现实世界的时间。重要！更改此选项将导致聊天记录重新渲染。","FormatName":"聊天消息时间戳使用的格式","FormatHint":"聊天消息中显示的简单日历时间戳的格式。需要启用上述设置。(默认：\"YYYY, MMM DD, HH:mm\")","ErrorSimpleCalendarMissing":"必须安装并激活 Simple Calendar 才能将其用于聊天消息时间戳"},
+	
+	
+	
+  "MLT.SettingAutoSyncTargets": "自动同步玩家目标",
+  "MLT.SettingAutoSyncTargetsHint": "勾选此项，则将一个token选中为目标或取消选中时，也对其副本（或本体）进行同样的操作。",
+  "MLT.SettingAutoSyncChatBubbles": "自动同步聊天气泡",
+  "MLT.SettingAutoSyncChatBubblesHint": "勾选此项，则token的聊天气泡也会显示在其副本（或本体）上方。",
+  "MLT.SettingCloneActorLink": "克隆 token 的链接 actor",
+  "MLT.SettingCloneActorLinkHint": "如果启用，克隆token会链接到原始token的 actor。否则， 克隆的token不会链接到任何actor，。",
+  "MLT.SettingCloneModuleFlags": "克隆其他模组设置的 token 标记",
+  "MLT.SettingCloneModuleFlagsHint": "模组可以在指示物上设置不同的旗标（flags）供其使用。勾选此项，则克隆出的指示物会继承其本体所拥有的旗标。鉴于这些旗标的作用取决于各个模组，无法确切表述此设置的作用，但如果克隆指示物与其他模组的互动性差，你可以尝试修改该设置。",
+  "MLT.TabTitle": "多层",
+  "MLT.TabNotes": "定义此绘图为 Multilevel Tokens 的自动化区域。",
+  "MLT.SectionTeleports": "传送",
+  "MLT.SectionTeleportsNotes": "移动进入 <b>入</b> 区域的token会被传送至拥有与之匹配的标识符的 <b>出</b> 区域。",
+  "MLT.FieldIn": "入",
+  "MLT.FieldOut": "出",
+  "MLT.FieldTeleportId": "传送标识符",
+  "MLT.FieldAnimateMovement": "移动动画",
+  "MLT.FieldActivateViaMapNote": "通过地图笔记激活",
+  "MLT.FieldActivateViaMapNoteNotes": "在 <b>入</b> 区域中的token只会在他们的拥有者（或GM）点击该区域中的地图笔记时传送。",
+  "MLT.FieldSnapToGrid": "网格吸附",
+  "MLT.FieldSnapToGridNotes": "当传送至该 <b>出</b> 区域时，token会吸附至网格。",
+  "MLT.FieldSceneLocal": "场景限定",
+  "MLT.FieldSceneLocalNotes": "将传送和克隆区域限制为只能与在同场景中的其他区域匹配。",
+  "MLT.SectionTokenCloning": "克隆指示物",
+  "MLT.SectionTokenCloningNotes": "token会从 <b>源</b> 区域中被复制到任何拥有匹配标识符的 <b>目标</b> 区域。",
+  "MLT.FieldSource": "源",
+  "MLT.FieldTarget": "目标",
+  "MLT.FieldCloneId": "克隆标识符",
+  "MLT.SectionTargetRegionNotes": "被该目标区域创建的克隆指示物的设置。",
+  "MLT.FieldClonedTokenTintColor": "克隆指示物的色调",
+  "MLT.FieldClonedTokenOpacity": "克隆指示物的不透明度",
+  "MLT.FieldClonedTokenScale": "克隆指示物缩放倍数",
+  "MLT.FieldMirrorHorizontally": "水平翻转",
+  "MLT.FieldMirrorVertically": "垂直翻转",
+  "MLT.SectionMacroTriggers": "宏触发器",
+  "MLT.SectionMacroTriggersNotes": "当指示物进入、离开或在该区域中移动时，触发一个宏。在宏中，变量 <b>scene</b>，<b>region</b>，<b>token</b> 和 <b>actor</b> 会以相应的<b>场景</b>，<b>绘图</b>，<b>指示物</b>和<b>角色</b>赋值。",
+  "MLT.FieldTriggerOnEnter": "进入时触发",
+  "MLT.FieldTriggerOnLeave": "离开时触发",
+  "MLT.FieldTriggerOnMove": "移动时触发",
+  "MLT.SectionMacroEventsNotes": "在宏内，<b>event</b> 变量将会在 <b>MLT.ENTER</b>, <b>MLT.LEAVE</b>, or <b>MLT.MOVE</b> 中取一值。",
+  "MLT.FieldMacroName": "宏名称",
+  "MLT.FieldAdditionalArguments": "附加参数",
+  "MLT.FieldAdditionalArgumentsNotes": "在宏内，<b>args</b> 变量中可用的参数，用逗号分隔。",
+  "MLT.SectionLevels": "楼层",
+  "MLT.SectionLevelsNotes": "指示物移动到 <b>@stairs</b> 时将被传送到在层数更邻近的楼层区域内其他的 <b>@stairs</b>，位置保持相对一致。",
+  "MLT.FieldLevelRegion": "楼层区域",
+  "MLT.FieldLevelNumber": "楼层数",
+  "MLT.FieldDisableRegion": "禁用区域",
+  "MLT.FieldDisableRegionNotes": "将该区域的所有自动化特性全部禁用。",
+ 
+ 
+ 
   
+  "COMBATTRACKEREXTENSIONS.ToggleNameMask": "切换名称屏蔽",
+  "COMBATTRACKEREXTENSIONS.ToggleTokenVisibility":"切换 token 可见性",
+  "COMBATTRACKEREXTENSIONS.DuplicateCombatant": "重复战斗者",
+  "COMBATTRACKEREXTENSIONS.RemoveAllDuplicates": "删除所有副本",
+  "COMBATTRACKEREXTENSIONS.ChangeDispositionToFriendly": "将指示物倾向改为友善",
+  "COMBATTRACKEREXTENSIONS.ChangeDispositionToNeutral": "将指示物倾向改为中立",
+  "COMBATTRACKEREXTENSIONS.ChangeDispositionToHostile": "将指示物倾向改为敌对",
+  "COMBATTRACKEREXTENSIONS.ChangeDispositionToSecret": "将指示物倾向改为未知",
+  "COMBATTRACKEREXTENSIONS.ChangeDispositionCancel": "取消",
+  "COMBATTRACKEREXTENSIONS.ChangeDisposition":"改变指示物倾向",
+  "COMBATTRACKEREXTENSIONS.ChangePhase":"移至{phasename}",
+  "COMBATTRACKEREXTENSIONS.ChangePhaseCancel": "取消",
+  "COMBATTRACKEREXTENSIONS.UnknownCombatant": "未知",
+  "COMBATTRACKEREXTENSIONS.ChangeToActive": "将战斗者设置为当前",
+  "COMBATTRACKEREXTENSIONS.Phase":"阶段: ",
+  "COMBATTRACKEREXTENSIONS.SelectorAll":"全部",
+  "COMBATTRACKEREXTENSIONS.SelectorAllPlayers":"全部pl",
+  "COMBATTRACKEREXTENSIONS.SelectorAllNPCs":"全部NPC",
+  "COMBATTRACKEREXTENSIONS.SelectorAllNPCsFriendly":"全部友善NPC",
+  "COMBATTRACKEREXTENSIONS.SelectorAllNPCsNeutral":"全部中立NPC",
+  "COMBATTRACKEREXTENSIONS.SelectorAllNPCsHostile":"全部敌对NPC",
+  "COMBATTRACKEREXTENSIONS.SelectorAllNPCsSecret":"全部未知NPC",
+  "COMBATTRACKEREXTENSIONS.SelectorRandomUnsetCombatant":"从{unsetphase}中随机",
+  
+  "COMBATTRACKEREXTENSIONS.MenuUnset":"至{unsetphase}",
+  "COMBATTRACKEREXTENSIONS.MenuMask":"屏蔽",
+  "COMBATTRACKEREXTENSIONS.MenuUnMask":"不屏蔽",
+  "COMBATTRACKEREXTENSIONS.MenuHide":"隐藏",
+  "COMBATTRACKEREXTENSIONS.MenuReveal":"显示",
+  "COMBATTRACKEREXTENSIONS.MenuAdd":"新增",
+  "COMBATTRACKEREXTENSIONS.MenuAddTooltip":"将画布上的 token 添加到遭遇战中",
+  "COMBATTRACKEREXTENSIONS.MenuRemove":"移除",
+  "COMBATTRACKEREXTENSIONS.MenuSelect":"选择",
+  "COMBATTRACKEREXTENSIONS.MenuClearInitiative":"清除先攻",
+  
+  "COMBATTRACKEREXTENSIONS.ConfirmRemoveCombatantsPromptTitle":"清除战斗者",
+  "COMBATTRACKEREXTENSIONS.ConfirmRemoveCombatantsPromptBody":"移除{selection}?",
+  
+  "COMBATTRACKEREXTENSIONS.MenuSettings":"设置",
+  "COMBATTRACKEREXTENSIONS.MenuSettingsHint":"战斗追踪器扩展设置",
+  
+  "COMBATTRACKEREXTENSIONS.MenuPhaseEditor":"阶段编辑器",
+  "COMBATTRACKEREXTENSIONS.MenuRoundSetEditor":"轮编辑器",
+  
+  "COMBATTRACKEREXTENSIONS.PhaseUnset":"未设置",
+  "COMBATTRACKEREXTENSIONS.PhaseAssign":"将战斗者移至该阶段",
+  "COMBATTRACKEREXTENSIONS.PhaseAssignAll":"分配所有",
+  "COMBATTRACKEREXTENSIONS.PhaseAssignAllPlayers":"分配所有pl",
+  "COMBATTRACKEREXTENSIONS.PhaseAssignNPCs":"分配NPC",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsEdit":"编辑组",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsCreate":"创建组",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsPlayers":"Pl",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsNPCs":"NPC",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsFriendly":"友善NPC",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsNeutral":"中立NPC",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsHostile":"敌对NPC",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsSecret":"未知NPC",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateNew":"新",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupClearAllGroups":"清除所有组",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmClearAllGroupsPromptTitle":"清除所有组",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmClearAllGroupsPromptBody":"这将删除所有现有组中的所有成员，但组将保留。",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupDeleteAllGroups":"删除所有组",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmDeleteAllGroupsPromptTitle":"删除所有组",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmDeleteAllGroupsPromptBody":"这将删除所有现有组中的所有成员，并删除所有组。",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmDeleteGroupPromptTitle":"删除组",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmDeleteGroupPromptBody":"这将删除该组的所有成员并删除该组。",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromToken":"根据 token 创建组",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromTokenHint":"根据 token 创建组，并将所有拥有此 token 的战斗者加入创建的组。如果组已经存在，则会更新。",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromActor":"根据 actor 创建组",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromActorHint":"根据 actor 创建组，并将该 actor 的所有战斗者加入创建的组。如果组已经存在，则会更新。",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromActorFolder":"根据actor文件夹创建组",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromActorFolderHint":"根据actor文件夹创建组，并将同一文件夹中的所有actor加入创建的组。如果组已经存在，则会更新。",
+  
+    
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromPlayers":"Pl",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromPlayersHint":"创建组并将所有玩家加入创建的组。如果组已经存在，则会更新。",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromNPCs":"NPC",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromNPCsHint":"创建组并将所有 NPC 战斗者加入创建的群组。如果组已经存在，则会更新。",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromFriendlyNPCs":"友善NPC",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromFriendlyNPCsHint":"创建组并将所有 友善NPC 战斗者加入创建的群组。如果组已经存在，则会更新。",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromNeutralNPCs":"中立NPC",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromNeutralNPCsHint":"创建组并将所有 中立NPC 战斗者加入创建的群组。如果组已经存在，则会更新。",
+    
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromHostileNPCs":"敌对NPC",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromHostileNPCsHint":"创建组并将所有 敌对NPC 战斗者加入创建的群组。如果组已经存在，则会更新。",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromSecretNPCs":"未知NPC",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromSecretNPCsHint":"创建组并将所有 未知NPC 战斗者加入创建的群组。如果组已经存在，则会更新。",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupJoin":"加入{initiativegroupname}",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupLeave":"离开{initiativegroupname}",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupLead":"设为组长",
+ 
+  "ColorPicker.Title":"颜色选择器",
+  "HTMLColorPicker.Title":"HTML 颜色选择器",
+  
+  "RoundSetEditor.Title":"轮编辑器",
+  "PhaseEditor.Title":"阶段编辑器",
+  "GroupEditor.Title":"先攻小组编辑",
+  
+  "ListEditor.Title":"列表编辑器",
+  "ListEditor.TableHeader.ItemName.Caption":"名称",
+  "ListEditor.TableHeader.ItemIcon.Caption":"图标",
+  "ListEditor.TableHeader.ItemIcon.Hint":"A Font Awesome CSS class, 例如'fa-sparkles'",
+  "ListEditor.Button.AddItem.Hint":"新增",
+  "ListEditor.Button.MoveItemUp.Hint":"上移",
+  "ListEditor.Button.MoveItemDown.Hint":"下移",
+  "ListEditor.Button.DeleteItem.Hint":"删除",
+  "ListEditor.Button.Close.Caption":"关闭",
+  "ListEditor.Button.Update.Caption":"保存",
+  "ListEditor.Button.UpdateAndClose.Caption":"保存并关闭",
+  
+  "GroupEditor.Label.Members.Caption":"小组成员",
+  "GroupEditor.Label.Name.Caption":"名称",
+  "GroupEditor.Label.Color.Caption":"颜色",
+  "GroupEditor.Label.SharesInitiative.Caption":"共享先攻",
+  "GroupEditor.Button.RemoveMember.Hint":"从小组中删除成员",
+  
+  "GroupEditor.Button.Close.Caption":"关闭",
+  "GroupEditor.Button.Update.Caption":"保存",
+  "GroupEditor.Button.Delete.Caption":"删除",
+  "GroupEditor.Button.UpdateAndClose.Caption":"保存并关闭",
+  
+  "settings": {
+    "categories": {
+      "GENERAL_OPTIONS": {
+        "Name": "通用选项",
+        "Hint": "通用选项"
+      },
+      "BASIC_COMMANDS_OPTIONS": {
+        "Name": "命令选项",
+        "Hint": "基本命令（下拉）选项"
+      },
+      "COMBATTRACKER_OPTIONS": {
+        "Name": "战斗追踪器选项",
+        "Hint": "战斗追踪器的选项"
+      },
+      "DISPLAY_OPTIONS": {
+        "Name": "显示选项",
+        "Hint": "通用显示选项"
+      },
+      "INPUT_OPTIONS": {
+        "Name": "输入选项",
+        "Hint": "先攻输入选项"
+      },
+      
+      "PHASE_OPTIONS": {
+        "Name": "阶段选项",
+        "Hint": "各阶段选项"
+      }
+      ,
+      "OBSCURING_OPTIONS": {
+        "Name": "遮蔽选项",
+        "Hint": "为玩家遮挡战斗者信息的选项。拥有的 token 不会被遮挡"
+      }
+      ,
+      "GROUP_OPTIONS": {
+        "Name": "组选项",
+        "Hint": "战斗小组的选项"
+      }
+    },
+    "settings": {
+      "OPTION_COMBAT_TRACKER_MODULE_SETTINGS_FORM": {
+        "Name": "设置",
+        "Hint": "打开模组设置"
+      },
+      "OPTION_COMBAT_TRACKER_SHARING_GROUPS_SHARE_PHASE": {
+        "Name": "共享小组还共享阶段",
+        "Hint": "选中时，共享先攻的组内战斗者也会共享阶段。仅在启用了[启用战斗者分组]时使用"
+      },
+      "OPTION_COMBAT_TRACKER_NEW_GROUPS_SHARES_INITIATIVE": {
+        "Name": "新小组共享先攻",
+        "Hint": "选中后，创建的新组将默认启用共享先攻。仅在启用了[启用战斗者分组]时使用"
+      },
+      
+      "OPTION_COMBAT_TRACKER_ENABLE_GROUPS": {
+        "Name": "启用战斗者分组",
+        "Hint": "实现战斗人者分组。"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_BASIC_COMMANDS": {
+        "Name": "启用基本菜单命令",
+        "Hint": "启用基本下拉菜单命令。"
+      },
+      
+      "OPTION_COMBAT_TRACKER_PHASE_UNSET_NAME": {
+        "Name": "未设置阶段名称",
+        "Hint": "未设置阶段要显示的名称（标题）"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_PHASE_ASSIGN_RANDOM_UNSET": {
+        "Name": "启用阶段分配随机",
+        "Hint": "选中后，阶段分配下拉菜单中将有一个条目，用于随机选择一名未设置的战斗者。"
+      },
+      "OPTION_CANVAS_TOKEN_HIDE_TOKEN_EFFECTS_FOR_PLAYERS": {
+        "Name": "对非GM玩家隐藏token效果",
+        "Hint": "选中此选项后，画布上的 token 激活效果将只显示所拥有的 token。"
+      },
+      
+      "OPTION_CANVAS_TOKEN_HIDE_TOKEN_BORDER_FOR_PLAYERS": {
+        "Name": "对非GM玩家隐藏 token 边框",
+        "Hint": "选中此选项后，画布上的 token 边框将只显示所拥有的 token。"
+      },
+      
+      "OPTION_COMBAT_TRACKER_HIDE_TOKEN_EFFECTS_FOR_PLAYERS": {
+        "Name": "对非GM玩家隐藏战斗者效果",
+        "Hint": "选中后，战斗追踪器中的战斗者激活效果将只显示所拥有的 token。"
+      },
+      "OPTION_COMBAT_TRACKER_SHOW_TOKEN_EFFECT_TOOLTIPS": {
+        "Name": "显示战斗者效果工具提示",
+        "Hint": "选中后，战斗追踪器中的战斗者激活效果将有一个描述工具提示。如果无法显示所有效果，则会用一个包含完整列表的摘要图标代替所有效果图标。"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_PLAYERS_PAN_TO_TOKEN": {
+        "Name": "对非GM玩家启用平移到 token",
+        "Hint": "选中后，玩家可以在战斗追踪器中点击一名战斗者，画布就会平移到其 token 上。"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_PLAYERS_CHANGE_PHASE": {
+        "Name": "对非GM玩家启用变更阶段",
+        "Hint": "选中后，玩家可在战斗追踪器中更改所属战斗者的阶段"
+      },
+      "OPTION_COMBAT_TRACKER_DEFAULT_PHASE_PLAYERS": {
+        "Name": "玩家默认阶段",
+        "Hint": "在战斗中添加玩家 token 时，会将其加入此阶段（第一阶段为 0）。"
+      },
+      "OPTION_COMBAT_TRACKER_DEFAULT_PHASE_NPCS": {
+        "Name": "NPC 默认阶段",
+        "Hint": "在战斗中添加 NPC token 时，会将其加入此阶段（第一阶段为 0）。"
+      },
+      
+      "OPTION_COMBAT_TRACKER_PHASE_EDITOR_FORM": {
+        "Name": "阶段编辑器",
+        "Hint": "打开阶段编辑器"
+      },
+      "OPTION_COMBAT_TRACKER_ROUNDSET_EDITOR_FORM": {
+        "Name": "轮编辑器",
+        "Hint": "打开轮编辑器"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_ROUNDSET": {
+        "Name": "启用轮设置",
+        "Hint": "为战斗追踪器启用自定义的轮。轮集中的每一轮都有自己的阶段。"
+      },
+      "OPTION_COMBAT_TRACKER_DEFINED_ROUNDSET": {
+        "Name": "默认轮设置",
+        "Hint": "自定义的轮集，包含用于战斗追踪器的轮。包含有效 JSON 表达式的字符串。"
+      },
+      
+      "OPTION_COMBAT_TRACKER_ENABLE_PHASES": {
+        "Name": "启用阶段",
+        "Hint": "为战斗追踪器启用自定义阶段。每个阶段都有自己的先攻顺序。在战斗追踪器中添加下拉菜单项目，允许更改战斗者 token 的阶段。"
+      },
+      "OPTION_COMBAT_TRACKER_DEFINED_PHASES": {
+        "Name": "默认阶段",
+        "Hint": "为战斗跟踪器自定义的阶段。包含有效 JSON 表达式的字符串。格式示例: {\"phases\":[{\"name\":\"Magic\",\"icon\":\"fa-sparkles\"},{\"name\":\"Missile\",\"icon\":\"fa-bullseye\"},{\"name\":\"Melee\",\"icon\":\"fa-swords\"},{\"name\":\"Manoeuvers\",\"icon\":\"fa-person-walking\"}]}"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_DISPOSITION_CHANGE": {
+        "Name": "启用指示物倾向更改",
+        "Hint": "在战斗追踪器中添加下拉菜单项目，允许更改战斗者token的指示物倾向。仅适用于 GM。"
+      },
+      "OPTION_COMBAT_TRACKER_USE_ACTOR_PORTRAITS_FOR_GMS": {
+        "Name": "为 GM 使用 actor 肖像",
+        "Hint": "选中后，战斗追踪器将使用 token 角色肖像作为图像，而不是 token 图像。仅适用于 GM。"
+      },
+      "OPTION_COMBAT_TRACKER_USE_ACTOR_PORTRAITS_FOR_PLAYERS": {
+        "Name": "为pl使用 actor 肖像",
+        "Hint": "选中后，战斗追踪器将使用 token 角色肖像作为图像，而不是 token 图像。仅适用于非Gm用户。"
+      },
+      "OPTION_COMBAT_TRACKER_SHOW_DISPOSITION_FOR_GMS": {
+        "Name": "为GM显示指示物倾向",
+        "Hint": "选中后，战斗追踪器将以颜色显示战斗者的指示物倾向。仅适用于 GM。"
+      },
+      "OPTION_COMBAT_TRACKER_SHOW_DISPOSITION_FOR_PLAYERS": {
+        "Name": "为pl显示指示物倾向",
+        "Hint": "选中后，战斗追踪器将以颜色显示战斗者的指示物倾向。仅适用于非Gm用户。"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_NAME_MASKING": {
+        "Name": "启用名称屏蔽",
+        "Hint": "选中后，GM 可以在战斗追踪器中为非 GM 切换屏蔽战斗者姓名。"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_VISIBILITY_TOGGLE": {
+        "Name": "启用可见性切换",
+        "Hint": "选中后，GM 可以切换战斗追踪器中战斗者 token 的可见性。"
+      },
+      "OPTION_COMBAT_TRACKER_ADD_COMBATANTS_NAME_MASKED": {
+        "Name": "添加屏蔽姓名的 NPC 战斗者",
+        "Hint": "选中后，在战斗追踪器中添加的 NPC token 将对非GM用户屏蔽其名称。仅在选中[启用名称屏蔽]时使用。"
+      },
+      "OPTION_COMBAT_TRACKER_ADD_COMBATANTS_HIDDEN": {
+        "Name": "添加隐藏的 NPC 战斗者",
+        "Hint": "选中后，在战斗追踪器中添加 NPC token 将被添加为隐藏。"
+      },
+      "OPTION_COMBAT_TRACKER_OBSCURE_COMBATANT": {
+        "Name": "启用模糊战斗者",
+        "Hint": "选中后，战斗追踪器将根据模组设置和拥有权显示战斗者/信息。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_OBSCURE_COMBATANT_BY_VISIBILITY": {
+        "Name": "通过可见性隐蔽战斗者",
+        "Hint": "选中后，战斗追踪器将只显示用户可见的 token 战斗者。仅在选中 [启用模糊战斗者] 时使用。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_OBSCURE_COMBATANT_BY_DISPOSITION": {
+        "Name": "通过指示物倾向隐蔽战斗者",
+        "Hint": "选中后，战斗追踪器将根据指示物倾向和当前设置显示 token 的战斗者/信息。仅在选中 [启用模糊战斗者] 时使用。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_REVERSE_INITIATIVE": {
+        "Name": "反向先攻",
+        "Hint": "颠倒先攻的排序顺序，让先攻最低的先行动。"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_DUPLICATE_COMBATANT": {
+        "Name": "重复战斗者",
+        "Hint": "在战斗追踪器中添加'复制战斗者'下拉菜单项，允许每个 token 有多个先攻，以便在同一轮中行动多回合。"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_INITIATIVE_INPUT_FIELD": {
+        "Name": "先攻输入框",
+        "Hint": "用数字输入框取代普通的先攻值。"
+      },
+      "OPTION_COMBAT_TRACKER_INITIATIVE_INPUT_MIN": {
+        "Name": "允许输入的最低先攻",
+        "Hint": "可输入先攻输入框的最小数字。"
+      },
+      "OPTION_COMBAT_TRACKER_INITIATIVE_INPUT_MAX": {
+        "Name": "允许输入的最大先攻",
+        "Hint": "可输入先攻输入框的最大数字。"
+      },
+      
+      
+      "OPTION_COMBAT_TRACKER_HIDE_INITIATIVES_FRIENDLY": {
+        "Name": "隐藏友善战斗者先攻",
+        "Hint": "如果选中，具有友好指示物倾向的战斗者token将不会在战斗追踪器中显示其先攻数值。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_INITIATIVES_NEUTRAL": {
+        "Name": "隐藏中立战斗者先攻",
+        "Hint": "如果选中，具有中立指示物倾向的战斗者token将不会在战斗追踪器中显示其先攻数值。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_INITIATIVES_HOSTILE": {
+        "Name": "隐藏敌对战斗者先攻",
+        "Hint": "如果选中，具有敌对指示物倾向的战斗者token将不会在战斗追踪器中显示其先攻数值。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_INITIATIVES_SECRET": {
+        "Name": "隐藏未知战斗者先攻",
+        "Hint": "如果选中，具有未知指示物倾向的战斗者token将不会在战斗追踪器中显示其先攻数值。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_INITIATIVES_NON_NPCS": {
+        "Name": "隐藏pl战斗者先攻",
+        "Hint": "如果选中，pl将不会在战斗追踪器中显示其先攻数值。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      },
+      
+      
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_FRIENDLY": {
+        "Name": "隐藏友好战斗者",
+        "Hint": "如果选中，则不会在战斗追踪器中显示具有友好指示物倾向的战斗人者。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_NEUTRAL": {
+        "Name": "隐藏中立战斗者",
+        "Hint": "如果选中，则不会在战斗追踪器中显示具有中立指示物倾向的战斗人者。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_HOSTILE": {
+        "Name": "隐藏敌对战斗者",
+        "Hint": "如果选中，则不会在战斗追踪器中显示具有敌对指示物倾向的战斗人者。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_SECRET": {
+        "Name": "隐藏未知战斗者",
+        "Hint": "如果选中，则不会在战斗追踪器中显示具有未知指示物倾向的战斗人者。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      }      ,
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_NPCS": {
+        "Name": "隐藏NPC战斗者",
+        "Hint": "如果选中此选项，NPC 战斗者将不会显示在战斗追踪器中。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_NON_NPCS": {
+        "Name": "隐藏非NPC战斗者",
+        "Hint": "如果选中此选项，非NPC 战斗者将不会显示在战斗追踪器中。仅在选中[启用模糊战斗者]时使用。仅适用于非GM用户。"
+      }
+      
+    }
+  }
+ 
 }
