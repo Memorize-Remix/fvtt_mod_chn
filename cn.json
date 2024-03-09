@@ -13658,6 +13658,85 @@
       }
       
     }
-  }
+  },
+  
+  
+  
+    "SETTINGS.BossSplashColorFirst": "顶部颜色",
+    "SETTINGS.BossSplashColorFirstHint": "第一颜色栏的十六进制代码",
+    "SETTINGS.BossSplashColorSecond": "中间颜色",
+    "SETTINGS.BossSplashColorSecondHint": "第二颜色栏的十六进制代码",
+    "SETTINGS.BossSplashColorThird": "底部颜色",
+    "SETTINGS.BossSplashColorThirdHint": "第三颜色栏的十六进制代码",
+    "SETTINGS.BossSplashColorFont": "字体颜色",
+    "SETTINGS.BossSplashColorFontHint": "文字颜色的十六进制代码",
+    "SETTINGS.BossSplashColorShadow": "字体阴影颜色",
+    "SETTINGS.BossSplashColorShadowHint": "文字阴影颜色的十六进制代码",
+    "SETTINGS.BossSplashTimer": "长度",
+    "SETTINGS.BossSplashTimerHint": "闪屏保持激活状态的秒数",
+    "SETTINGS.BossSplashSound":"音效",
+    "SETTINGS.BossSplashSoundHint":"渲染闪屏时播放此声音",
+    "SETTINGS.BossSplashMessage":"显示信息",
+    "SETTINGS.BossSplashMessageHint":"在颜色条上显示信息。{{name}} 将替换为actor姓名。",
+    "SETTINGS.BossSplashAnimationDuration":"动画时长",
+    "SETTINGS.BossSplashAnimationDurationHint":"动画结束的秒数。设置为 0 表示无动画。",
+    "BossSplash.ErrorGM":"你必须是 GM 才能使用此命令。",
+    "BossSplash.ErrorToken":"请选择一个角色 token。",
+	
+	
+	
+  "HEYWAIT.SETTINGS.restrictGmName": "限制 GM 触发图块",
+  "HEYWAIT.SETTINGS.restrictGmHint": "Hey, Wait!图块的触发只能由玩家的 token 移动触发，而不能由 GM 触发。",
+  "HEYWAIT.SETTINGS.dispositionName": "允许的 token 指示物倾向",
+  "HEYWAIT.SETTINGS.dispositionHint": "允许触发Hey, Wait!图块的 token 指示物倾向。",
+  "HEYWAIT.SETTINGS.dispositionChoiceFriendly": "友善",
+  "HEYWAIT.SETTINGS.dispositionChoiceFriendlyNeutral": "友善, 中立",
+  "HEYWAIT.SETTINGS.dispositionChoiceFriendlyNeutralHostile": "友善, 中立, 敌对",
+  "HEYWAIT.SETTINGS.warpPlayersName": "触发图块时变换Warp玩家Warp Players on Tile Trigger",
+  "HEYWAIT.SETTINGS.warpPlayersHint": "在玩家未查看的场景上触发Hey, Wait!图块会将玩家变换Warp到该场景。无论如何，GM 都会被变换Warp。",
+  "HEYWAIT.SETTINGS.disableSfxName": "禁用图块触发音效",
+  "HEYWAIT.SETTINGS.disableSfxHint": "禁止在任何人触发Hey, Wait!图块时播放音效。",
+  "HEYWAIT.CONTROLS.TOOLS.heyWaitTile": "放置\"Hey, Wait!\"图块",
+  "HEYWAIT.TEMPLATE.isNotTriggered": "切换\"Hey, Wait!\"触发状态",
+  "HEYWAIT.TILECONFIG.typeText": "触发动画类型",
+  "HEYWAIT.TILECONFIG.typeNone": "无",
+  "HEYWAIT.TILECONFIG.typeInfo": "信息 ( ⓘ )",
+  "HEYWAIT.TILECONFIG.typeQuestion": "疑问 ( ? )",
+  "HEYWAIT.TILECONFIG.typeExclamation": "感叹 ( ! )",
+  "HEYWAIT.TILECONFIG.macroText": "触发宏",
+  "HEYWAIT.TILECONFIG.macroNone": "无",
+  "HEYWAIT.TILECONFIG.unlimitedText": "启用无限触发器",
+  "HEYWAIT.TILECONFIG.unlimitedHint": "如果选中，在Hey, Wait!图块触发后，其他 token 仍能触发它。",
+  "HEYWAIT.TILECONFIG.targetText": "actor 白名单",
+  "HEYWAIT.TILECONFIG.targetHint": "按住 CTRL 键可选择多个目标，只有选中的目标才能触发此图块。只显示场景中的 actor。留空表示允许每个角色触发此图块。",
+  "HEYWAIT.TILECONFIG.elevationLowerText": "底部高度",
+  "HEYWAIT.TILECONFIG.elevationUpperText": "顶部高度",
+  "HEYWAIT.TILECONFIG.elevationHint": "如果设置，该图块将只在高于底部高度和低于顶部高度的 token 上触发。留空可在任何高度触发",
+  "HEYWAIT.TILECONFIG.UnlimitedWarn": "无限触发器无法切换，请先禁用无限触发器！",
+  
+  
+  "IWS.CHARGES_HINT": "该法术是否使用物品的充能来施放，请在上面配置充能的数量。",
+  "IWS.Configure": "配置",
+  "IWS.ConfigureOverrides": "配置覆盖",
+  "IWS.DeleteSpell": "删除法术",
+  "IWS.LIMITED_HINT": "该法术是否具有每次休息的使用次数或类似的限制，请配置上述充能次数。",
+  "IWS.MISSING_ITEM_DESCRIPTION": "找不到该法术的源物品。也许被删除了？",
+  "IWS.MISSING_ITEM": "缺失物品",
+  "IWS.MODULE_NAME": "物品附带法术",
+  "IWS.QUERY_ALSO_DELETE": "你还想删除该物品的法术吗？",
+  "IWS.RemoveLink": "删除链接",
+  "IWS.SAVE_HINT": "该法术是否具有固定 DC 或其他专门的豁免检定逻辑。",
+  "IWS.SETTINGS.ITEM_EXCLUSION.HINT": "选择可附加法术的物品类型。",
+  "IWS.SETTINGS.ITEM_EXCLUSION.NAME": "选择物品类型",
+  "IWS.SETTINGS.ITEM_EXCLUSION.TITLE": "物品类型排除菜单",
+  "IWS.SETTINGS.SORT_ORDER.HINT": "如果选中，本模组添加的法术书部分将放在法术书选项卡的底部，而不是顶部。",
+  "IWS.SETTINGS.SORT_ORDER.NAME": "法术书排序",
+  "IWS.ATTACK_HINT": "该法术是否具有固定攻击加值，请写在此处。",
+  "IWS.WARN_ALSO_DELETE": "这也会从 actor 中删除咒语。您确定要删除嵌入的咒语吗？",
+  "IWS.WARN_CANNOT_ADDREMOVE": "无法添加或删除自有物品的法术。这些法术已添加到 Actor 的法术书标签中。",
+  "IWS.WARN_OWNED": "你正在编辑一个自有物品的法术，这里所做的任何更改都不会应用到自有 actor 的法术上。"
+
+
+
  
 }
