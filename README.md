@@ -96,5 +96,8 @@
 - #### [Chat Commander](https://foundryvtt.com/packages/_chatcommands)
 - #### [Multilevel Tokens](https://foundryvtt.com/packages/multilevel-tokens)
 - #### [Combat Tracker Extensions](https://foundryvtt.com/packages/combat-tracker-extensions)
+- #### [Hey, Wait!](https://foundryvtt.com/packages/hey-wait)
+- #### [Items with Spells DnD5e](https://foundryvtt.com/packages/items-with-spells-5e)
+- #### [Boss Splash Screen](https://foundryvtt.com/packages/boss-splash)
 
 
