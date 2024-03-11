@@ -2555,7 +2555,7 @@
         },
         "CustomizerApp": {
             "title": "D&D 5e系统定制器",
-            "save": "豁免变更",
+            "save": "保存变更",
             "hide": "隐藏",
             "delete": "删除",
             "tabs": {
@@ -7832,57 +7832,59 @@
 
 
 
+    
     "party-monitor-dock": {
         "settings": {
             "onlyConnected": {
-                "name": "只显示已关联的pl",
-                "hint": "只显示已关联服务器的pl"
+                "name": "只显示已连接的玩家",
+                "hint": "只显示连接到服务器的玩家"
             },
             "portraitSize": {
-                "name": "肖像尺寸",
-                "hint": "dock中肖像的大小"
+                "name": "肖像大小",
+                "hint": "显示器上显示画像的大小"
             },
             "dockAlignment": {
-                "name": "HUD调整",
-                "hint": "HUD 在屏幕上的排列方式",
+                "name": "显示器对齐位置",
+                "hint": "团队平视显示器显示于画面中的对齐位置",
                 "choices": {
-                    "flex-start": "顶端",
-                    "center": "中心",
+                    "flex-start": "顶部",
+                    "center": "居中",
                     "flex-end": "底部"
                 }
             },
             "cornerImage": {
-                "name": "边角图像",
-                "hint": "在 dock 的四角使用的图片 留空表示禁用。"
+                "name": "导航栏图像",
+                "hint": "显示为左侧导航栏的图像，留空以禁用。"
             },
             "edgeImage": {
-                "name": "边缘图像",
-                "hint": "用于填充 dock 四角之间空间的图片。留空表示禁用。"
+                "name": "填充图案",
+                "hint": "用于填角色图案之间空间的图像，留空以禁用。"
             }
         },
         "app": {
             "buttons": {
                 "toggle-nav": "切换导航按钮",
-                "toggle-dock": "切换Dock",
+                "toggle-dock": "切换导航栏样式",
                 "reduce": "缩小尺寸",
                 "enlarge": "增大尺寸",
-                "start-follow": "Start Following",
-                "stop-follow": "Stop Following",
+                "start-follow": "开启跟随",
+                "stop-follow": "停止跟随",
                 "context": {
-                    "follow": "Follow",
-                    "mount": "Mount",
-                    "epicRoll": "Req. Roll"
+                    "follow": "随从",
+                    "mount": "坐骑",
+                    "epicRoll": "请求掷骰"
                 }
             }
         },
         "flags": {},
         "notifications": {
-            "follow": " now following ",
-            "unfollow": " no longer following ",
-            "mounted": " has mounted ",
-            "dismounted": " has dismounted "
+            "follow": " 现在跟随 ",
+            "unfollow": " 不在跟随 ",
+            "mounted": " 已骑乘 ",
+            "dismounted": " 未骑乘 "
         }
     },
+
 
 
 
@@ -9926,6 +9928,7 @@
     "SCA.groupLabel.misc": "杂项",
 
 
+    
     "simple-quest": {
         "settings": {
             "tabConfig": {
@@ -10291,10 +10294,20 @@
                     "content": "简单任务添加了页面模板。这是一项方便快捷的功能，可快速将预先格式化的模板或部分附加到日志页面。点击此按钮查看可用模板。"
                 },
                 "2": {
-                    "title": "格式化",
+                    "title": "风格化",
                     "content": "在这个下拉菜单中，你可以找到新的'标注'和'插入页面'选项，为你的文档增添一些亮点。"
                 }
             }
+        },
+        "default-structure": {
+            "in-progress": "进行中",
+            "completed": "已完成",
+            "failed": "失败",
+            "locations": "地点",
+            "npcs": "NPC",
+            "organizations": "组织",
+            "history": "历史",
+            "bestiary": "图鉴"
         }
     },
 
@@ -11452,16 +11465,16 @@
         "config":{
             "formapp": {
                 "title": "配置Token Flip",
-                "add": "添加新Face",
-                "flip": "翻转Token",
-                "model3d": "3D Model",
-                "faceId": "Face ID"
+                "add": "添加新外貌",
+                "flip": "变幻Token",
+                "model3d": "3D模型",
+                "faceId": "外貌ID"
             }
         },
         "settings": {
             "flipspeed": {
-                "name": "翻转速度",
-                "hint": "Token翻转的速度。默认值为 0.1。"
+                "name": "变幻速度",
+                "hint": "Token变幻的速度。默认值为 0.1。"
             }
         }
     },
@@ -12384,6 +12397,7 @@
 
 
 
+    
     "mastercrafted": {
         "craft": "制作",
         "show-recipes": "显示配方",
@@ -12460,7 +12474,9 @@
             "noTools": "缺少工具！ 您需要以下之一：",
             "ingredientsTooltip": "左键单击以检查原料，右键单击以选择原料",
             "resultTooltip": "单击一个项目以检查结果或单击它的容器以选择它作为制作结果",
-            "cauldron": "大锅"
+            "cauldron": "大锅",
+            "timedCrafting": "制作进度",
+            "readyIn": "准备就绪："
         },
         "cauldronApp": {
             "title": "大锅",
@@ -13734,9 +13750,438 @@
   "IWS.ATTACK_HINT": "该法术是否具有固定攻击加值，请写在此处。",
   "IWS.WARN_ALSO_DELETE": "这也会从 actor 中删除咒语。您确定要删除嵌入的咒语吗？",
   "IWS.WARN_CANNOT_ADDREMOVE": "无法添加或删除自有物品的法术。这些法术已添加到 Actor 的法术书标签中。",
-  "IWS.WARN_OWNED": "你正在编辑一个自有物品的法术，这里所做的任何更改都不会应用到自有 actor 的法术上。"
+  "IWS.WARN_OWNED": "你正在编辑一个自有物品的法术，这里所做的任何更改都不会应用到自有 actor 的法术上。",
+
+
+  "Forien": {
+    "EasyPolls": {
+      "CreateAndSave": "创建并保存",
+      "AnswerSent":  "投票!",
+      "CountAnswered": "投票数",
+      "ToggleResults": "切换显示结果",
+
+      "ToggleSettingResults": {
+        "Enable": "显示结果",
+        "Disable": "隐藏结果"
+      },
+
+      "ToggleSettingSecret": {
+        "Enable": "保密",
+        "Disable": "公开"
+      },
+
+      "Notifications":{
+        "NoGM": "没有活跃的GM在线。必须有GM在场才能投票。"
+      },
+
+      "PollDialog": {
+        "Title": "设置投票!",
+        "AddOption": "添加选项",
+        "Option": "选项"
+      },
+
+      "SavedPollsApp": {
+        "Title": "保存投票",
+        "OrderingNumber": "序号",
+        "PollQuestion": "问题",
+        "CreateNew": "创建新投票",
+        "Controls": "控制",
+
+        "Tooltips": {
+          "PollMode": "投票模式(多选与单选)",
+          "PollResults": "玩家能否看到结果",
+          "PollSecret": "玩家能否看到谁对哪个选项投了票",
+          "Multiple": "多选",
+          "Single": "单选",
+          "Results": "玩家可以看到结果",
+          "NoResults": "玩家无法看到结果",
+          "Secret": "投票保密",
+          "Public": "投票公开",
+          "Post": "在聊天中发布投票",
+          "Edit": "发布前编辑投票",
+          "Delete": "删除投票"
+        }
+      },
+
+      "Settings": {
+        "PlayersCreate": {
+          "Enable": "允许玩家创建投票",
+          "EnableHint": "选中后，玩家将可以使用 /poll 聊天命令创建投票"
+        },
+        "DefaultMode": {
+          "Enable": "默认投票模式",
+          "EnableHint": "选择创建新投票时的默认模式。可使用 --mode flag 标志覆盖该选项。",
+          "Multiple": "多选",
+          "Single": "单选"
+        },
+        "DefaultDisplay": {
+          "Enable": "允许显示结果",
+          "EnableHint": "选中后，默认情况下允许玩家查看投票结果。可使用--results 标志覆盖该选项。"
+        },
+        "DefaultSecret": {
+          "Enable": "秘密投票",
+          "EnableHint": "选中后，玩家将无法看到谁对特定选项进行了投票。请注意，如果不能显示结果，玩家将无法看到谁投了票。可以用 --secret 标志覆盖该选项。"
+        },
+
+        "Keybindings": {
+          "OpenPollDialog": {
+            "Name": "打开投票对话框",
+            "Hint": "打开投票对话框，以可视化方式创建投票"
+          },
+          "OpenSavedPollsDialog": {
+            "Name": "打开已保存的投票",
+            "Hint": "打开已保存的投票对话框，用户可从先前保存的投票中进行选择"
+          }
+        }
+      },
+
+      "ChatCommander": {
+        "CommandDescription": "创建投票。第一行为问题，其他行为答案。使用 {keybind} 创建新行。",
+
+        "SimpleYesNo": "Suggestion: <strong>Quick Yes/No poll</strong>",
+        "QuickPCPoll": "Suggestion: <strong>Quick Online PC poll</strong>",
+
+        "ParameterMode": "Parameter: <strong>Mode</strong> - 投票模式",
+        "ParameterResults": "Parameter: <strong>Results</strong> - 玩家能看到它们吗？",
+        "ParameterSecret": "Parameter: <strong>Secret</strong> - 玩家能否看到谁对哪个选项投了票？",
+
+        "ModeSingle": "Mode: <strong>single choice</strong>",
+        "ModeMultiple": "Mode: <strong>multiple choice</strong>",
+
+        "ResultsTrue": "Results: <strong>yes</strong> - 玩家可查看投票结果",
+        "ResultsFalse": "Results: <strong>no</strong> - 只有 GM 才能看到投票结果",
+
+        "SecretTrue": "Secret: <strong>yes</strong> - 玩家看不到谁投了票",
+        "SecretFalse": "Secret: <strong>no</strong> - 玩家可以看到谁投了票",
+
+        "DialogHint": "你还可以使用{quickPollKey}打开快速投票对话框,或者{savedPollsKey} 来打开你保存的投票列表"
+      },
+
+      "console": {
+        "__COMMENT__": "玩家通常不会看到以下信息",
+        "errors": {
+          "undefined-event": "API Error: Wrong Socket Event Received: {event}",
+          "noGM": "没有活跃的GM，停止执行!",
+          "noPoll": "不存在具有 ID {id} 的投票, 或消息不是投票。"
+        }
+      }
+    }
+  },
+  
+  
+  
+	"SIMPLEFOG": {
+		"brushOpacity": "战争迷雾透明度",
+		"brushSize": "笔刷大小",
+		"hide": "隐藏",
+		"reveal": "显示",
+
+		"gmFogSettings": "GM迷雾设置",
+		"gmColorTint": "颜色",
+		"gmColorAlpha": "颜色透明度",
+
+		"playerFogSettings": "pl迷雾设置",
+		"playerColorTint": "颜色",
+		"playerColorAlpha": "颜色透明度",
+
+		"fogImageOverlaySettings": "迷雾覆盖图像",
+		"fogImageOverlay": "图像",
+		"fogImageOverlayNotes": "所选图像将显示在色调颜色的上方/下方。该图像的高度和宽度应与场景背景图像相同。",
+		"fogImageOverlayGMAlpha": "GM图像透明度",
+		"fogImageOverlayPlayerAlpha": "Pl图像透明度",
+		"fogImageOverlayZIndex": "屏蔽排序",
+
+		"filterSettings": "过滤设置",
+		"blurEnable": "启用显示模糊",
+		"blurRadius": "模糊半径",
+		"blurQuality": "模糊透明度",
+		"blurQualityDesc": "较高的模糊透明度可改善模糊效果的观感，但可能会导致性能降低。",
+		"transitionSettings": "过渡设置",
+		"enableTransitions": "启用过渡",
+		"transitionSpeed": "过渡速度",
+		"visibilitySettings": "可见度设置",
+		"enableAutovis": "启用自动可见",
+		"enableForGM": "为 GM 启用",
+		"enableAutoFog": "为新场景自动启用迷雾",
+		"visThreshold": "可见度阈值",
+		"saveAsDef": "将当前设置保存为默认",
+		"ok": "OK",
+		"sf": "简单迷雾",
+		"onoff": "启用/禁用简单迷雾",
+
+		"brushTool": "笔刷工具",
+		"gridTool": "网格工具",
+		"polygonTool": "多边形工具",
+		"boxTool": "矩形工具",
+		"ellipseTool": "椭圆工具",
+		"sceneConfig": "场景配置",
+		"reset": "重置简单迷雾",
+		"confirmReset": "你确定吗？战争迷雾将被重置。",
+		"autoFogSettings": "自动迷雾设置",
+		"autoFogNotes": "启用并保存为默认设置后，创建场景时会自动渲染迷雾。请选中复选框并单击 将当前设置保存为默认以启用。如果要禁用，请执行相同操作。",
+
+		"advancedSettings": "高级设置",
+		"configurableZindex": "简单迷雾Z-Index",
+		"configurableZindexNotes": "z-index 决定了不同图层在 Foundry 画布中的渲染顺序。 数字越大，渲染的图层（以及该图层上的对象）就越靠前。这样就可以调整 z-index，使 Simple Fog 渲染在其他图层（尤其是其他模组添加的图层）的上方/下方。低于 200 将与 Foundry 图层混合，如前景图像 (200)、token (100) 等...（默认值：220）",
+
+		"confirmDisablingFogSettings": "切换确认设置",
+		"confirmDisablingFog": "启用确认以禁用简单迷雾。",
+		"confirmDisablingFogNotes": "在场景中禁用简单迷雾时，请在禁用前显示对话框确认禁用。",
+		"confirmDisableFog": "您确定要在此场景中关闭简单迷雾功能吗？",
+		"disableFog": "禁用简单迷雾",
+
+		"hotkeySettings": "热键设置",
+		"enableHotkeys": "启用热键",
+		"hotkeyNotes": "启用后，您可以使用 Ctrl+S 快速切换到简单迷雾控件，并使用热键'T'切换透明度。",
+		"hotKeyToolDesc": "热键工具",
+		"hotKeyToolNotes": "确定激活热键时将选择哪个工具。",
+
+		"autoVisNotes": "启用后，自动可见将根据阈值设置，根据其所在位置的迷雾透明度等级来显示/隐藏 token。笔刷颜色变为绿色/红色，表示 token 是否可见。",
+
+		"versionNotification": "<b>Simple Fog 0.3.4</b><p>This release includes:</p><ul><li>Fixes for v11 by macskay <a href='https://github.com/League-of-Foundry-Developers/simplefog/pull/110'>#110</a></li><li>Fixes for v11 by mattd <a href='https://github.com/League-of-Foundry-Developers/simplefog/pull/111'>#111</a></li></ul></p>",
+
+		"migration2Notification": "<b>简单迷雾数据迁移</b><p>Simple Fog 数据已迁移到支持 v3 的格式。强烈建议在向玩家展示场景之前，从 GM 和pl的角度审查所有场景和迷雾的可见性。"
+
+	},
 
 
 
+    "dynamic-soundscapes": {
+        "soundIcon": "声景图标",
+        "sidebarButtonTooltip": "Shift + 单击重置位置",
+        "soundscapeLayout": "声景布局",
+        "soundscapeLayoutFlex": "曲线",
+        "soundscapeLayoutRows": "排列",
+        "mood": "声景气氛",
+        "sidebarButtonText": "动态声景",
+        "toggleWindow": "切换声景窗口",
+        "folderCreated": "动态声景 | 已创建的“声景Soundscapes”文件夹，请在此文件夹中创建或移动声景播放列表。",
+        "app": {
+            "title": "动态声景",
+            "click-to-add": "单击任意位置添加新模块",
+            "volume": "体积:",
+            "add-playlist": "新声景",
+            "condition-not-met": "条件不满足，模块将不播放。",
+            "deleteBlock": {
+                "title": "删除模块",
+                "content": "您确定要删除此块吗?选择“全部删除”将删除块并从声景中删除所有声音。",
+                "delete": "删除",
+                "deleteAll": "删除全部",
+                "cancel": "取消"
+            },
+            "cycle-mood": "循环气氛",
+            "add-sound": "添加声音",
+            "config-playlist": "播放列表配置/批量导入",
+            "play-stop": "播放 / 停止",
+            "select-all": "全选",
+            "deselect-all": "取消全选",
+            "config-block": "配置模块",
+            "delete-block": "删除模块"
+        },
+        "block-config": {
+            "title": "配置模块",
+            "coreWeather": "天气： ",
+            "fxmasterWeather": "天气 (FXMaster): ",
+            "aspect" : "外观",
+            "condition": "条件",
+            "sound": "声音",
+            "save": "更新模块",
+            "name": "名称",
+            "color": "颜色",
+            "mode": "模组",
+            "mode-ambient": "环境",
+            "mode-random": "随机",
+            "mode-soundboard": "音乐列表",
+            "mode-soundboard-info": "在这种模式下，声音不会被启用，相反，当点击他们会播放一次。",
+            "mode-ambient-info": "在这种模式下，启用的声音将一次播放并循环播放。",
+            "mode-random-info": "在此模式下，启用的声音将在设定的时间间隔内随机播放。",
+            "time": "每(秒)播放一次",
+            "variance": "方差",
+            "time-text": "每 {{v}} 秒从这个块中随机发出一个声音",
+            "size": "字体尺寸",
+            "size-tiny": "极小",
+            "size-small": "小",
+            "size-medium": "中等",
+            "size-large": "大",
+            "size-huge": "巨大",
+            "conditionMode": "条件要求",
+            "conditionMode-all": "需求必须为真",
+            "conditionMode-any": "需求至少有一个是真的",
+            "conditionMode-none": "所有必须为假",
+            "conditions": "条件",
+            "conditions-none": "选择要添加的条件",
+            "conditions-inCombat": "在战斗中",
+            "conditions-notInCombat": "不在战斗",
+            "conditions-day": "白天(黑暗等级< 0.5)",
+            "conditions-night": "夜(黑暗等级> 0.5)",
+            "conditions-moodA": "气氛 A",
+            "conditions-moodB": "气氛 B",
+            "conditions-moodC": "气氛 C"
+        }
+    },
  
+ 
+ 
+    "epic-rolls-5e": {
+        "check": "检定",
+        "save": "豁免",
+        "death": "死亡豁免",
+        "success": "成功",
+        "failure": "失败",
+        "button-tooltip": "设置史诗掷骰<hr>右键单击最近骰掷",
+        "complete-roll": "完成史诗掷骰",
+        "epicRoll": "史诗掷骰",
+        "settings": {
+            "introSound": {
+                "name": "掷骰声音",
+                "hint": "开始掷骰时播放的声音"
+            },
+            "successSound": {
+                "name": "成功音效",
+                "hint": "掷骰成功时播放的声音"
+            },
+            "failureSound": {
+                "name": "失败音效",
+                "hint": "掷骰失败时播放的声音"
+            },
+            "recapMessage": {
+                "name": "回顾信息",
+                "hint": "配置谁可以看到史诗掷骰完成后显示的消息",
+                "options": {
+                    "none": "无",
+                    "gm": "GM",
+                    "public": "玩家"
+                }
+            },
+            "cleanupMessages": {
+                "name": "清理消息",
+                "hint": "史诗掷骰完成后删除骰掷消息"
+            }
+        },
+        "get-roll-data": {
+            "title": "设置史诗掷骰",
+            "startRoll": "开始史诗掷骰",
+            "macro": "保存为宏",
+            "save-macro": "创建史诗掷骰 ",
+            "player": "玩家角色",
+            "npc": "非玩家角色",
+            "selected": "已选",
+            "available": "可用",
+            "rollOptions": "骰掷选项",
+            "VsDCNotes": "骰掷DC",
+            "showDC": "显示 DC",
+            "showDCNotes": "启用后，DC将对玩家可见",
+            "useAverage": "启用优势",
+            "useAverageNotes": "使用所有结果的平均值来确定成功或失败",
+            "allowReroll": "允许重骰",
+            "allowRerollNotes": "允许玩家重骰",
+            "showRollResults": "显示其他文本",
+            "showRollResultsNotes": "显示成功/失败其他文本",
+            "blindRoll": "暗骰",
+            "blindRollNotes": "对玩家隐藏掷骰结果",
+            "hideNames": "隐藏姓名",
+            "hideNamesNotes": "对玩家隐藏NPC的姓名",
+            "color": "颜色",
+            "colorNotes": "掷骰界面的颜色",
+            "autoColor": "自动颜色",
+            "autoColorNotes": "根据骰子的类型自动为掷骰界面着色",
+            "contest": "对抗",
+            "contestInfo": "要标记参与者，请右键单击角色和/或骰子",
+            "saveDefaultOptions": "另存为默认值",
+            "saveDefaultOptionsNotification": "当前选项保存为默认值",
+            "ERROR": {
+                "noActors": "没有选择角色，请至少选择一名角色",
+                "noType": "未选择掷骰类型，请选择类型",
+                "noContestants": "已选择对抗检定类型，但未选择任何参与者",
+                "noContest": "已选择参与者但未选择检定类型",
+                "noDC": "未输入 DC，请输入 DC"
+            }
+        },
+        "flags": {}
+    },
+	
+	
+    "tidbits": {
+        "message": {
+            "didYouKnow": "贤者箴言",
+            "tidbits": "花絮",
+            "reroll": "在来一句!"
+        },
+        "settings": {
+            "showChatMessage": {
+                "name": "显示聊天信息",
+                "hint": "在登录时将聊天中的花絮显示为短语",
+                "choices": {
+                    "everyone": "所有人",
+                    "players": "玩家",
+                    "gamemaster": "GM",
+                    "none": "无"
+                }
+            },
+            "showLoadingScreen":{
+                "name": "显示加载屏幕",
+                "hint": "加载场景时显示花絮",
+                "choices": {
+                    "everyone": "所有人",
+                    "players": "玩家",
+                    "gamemaster": "GM",
+                    "none": "无"
+                }
+            },
+            "startupLoadingScreen":{
+                "name": "开启花絮时间",
+                "hint": "开启花絮的时间（以秒为单位），0表示禁用。"
+            },
+            "loadingScreenMinimumDuration": {
+                "name": "加载屏幕淡出延迟",
+                "hint": "场景加载后保持加载屏幕可见的时间（以秒为单位）。"
+            },
+            "pauseText": {
+                "name": "暂停文字",
+                "hint": "显示花絮而不是“游戏暂停”文本。"
+            },
+            "useDefaultSources": {
+                "name": "使用默认来源",
+                "hint": "使用默认的花絮来源。"
+            },
+            "customSource": {
+                "name": "定制来源",
+                "hint": "自定义 JSON 文件用作花絮源，留空表示禁用。"
+            },
+            "imageSource": {
+                "name": "图片来源",
+                "hint": "用于加载屏幕的文件夹，留空表示禁用。"
+            }
+        }
+    },
+	
+	
+    "tokennotes": {
+        "togglenotes": "切换指示物注释",
+        "settings": {
+            "autoopen": {
+                "name": "自动开启/关闭",
+                "hint": "当指示物被选择/弃选时自动开启/关闭注释。"
+            },
+            "allowplayers": {
+                "name": "玩家权限",
+                "hint": "玩家指示物注释的控制权。 任何选项仅适用于玩家拥有的指示物。",
+                "options": {
+                    "none": "无",
+                    "readonly": "可读",
+                    "readwrite": "读写"
+                }
+            },
+            "position": {
+                "name": "位置",
+                "hint": "注释显示位置.",
+                "options": {
+                    "bottomleft": "左下方",
+                    "bottomright": "右下方",
+                    "topleft": "左上方",
+                    "topright": "右上方"
+                }
+            }
+        }
+    }
 }
