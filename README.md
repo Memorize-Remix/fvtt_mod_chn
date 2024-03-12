@@ -7,6 +7,9 @@
 
 如发现此mod汉化文本的错误或缺失（仅限此mod的汉化），可以在[纠错贴](https://github.com/13996090016/fvtt_mod_chn/discussions/2)中回复。
 
+## 特别注意
+为了让此mod的汉化保证能覆盖其他mod的文本，因此将文件名由“mod_chn”变更为了“zzz_mod_chn”
+
 ## 一些须知
 - 如安装了此mod，则不要在安装[Foundry VTT Mega](https://github.com/fvtt-cn/mega_chn)，以免文本冲突。
 - 若mod作者提供的DND5e 3.0版本mod没有大规模进行文本重置，则此汉化mod依旧会发挥作用，但不会汉化作者额外新增的对应文本。
