@@ -1,0 +1,79 @@
+{
+    "epic-rolls-5e": {
+        "check": "检定",
+        "save": "豁免",
+        "death": "死亡豁免",
+        "success": "成功",
+        "failure": "失败",
+        "button-tooltip": "设置史诗掷骰<hr>右键单击最近骰掷",
+        "complete-roll": "完成史诗掷骰",
+        "epicRoll": "史诗掷骰",
+        "settings": {
+            "introSound": {
+                "name": "掷骰声音",
+                "hint": "开始掷骰时播放的声音"
+            },
+            "successSound": {
+                "name": "成功音效",
+                "hint": "掷骰成功时播放的声音"
+            },
+            "failureSound": {
+                "name": "失败音效",
+                "hint": "掷骰失败时播放的声音"
+            },
+            "recapMessage": {
+                "name": "回顾信息",
+                "hint": "配置谁可以看到史诗掷骰完成后显示的消息",
+                "options": {
+                    "none": "无",
+                    "gm": "GM",
+                    "public": "玩家"
+                }
+            },
+            "cleanupMessages": {
+                "name": "清理消息",
+                "hint": "史诗掷骰完成后删除骰掷消息"
+            }
+        },
+        "get-roll-data": {
+            "title": "设置史诗掷骰",
+            "startRoll": "开始史诗掷骰",
+            "macro": "保存为宏",
+            "save-macro": "创建史诗掷骰 ",
+            "player": "玩家角色",
+            "npc": "非玩家角色",
+            "selected": "已选",
+            "available": "可用",
+            "rollOptions": "骰掷选项",
+            "VsDCNotes": "骰掷DC",
+            "showDC": "显示 DC",
+            "showDCNotes": "启用后，DC将对玩家可见",
+            "useAverage": "启用优势",
+            "useAverageNotes": "使用所有结果的平均值来确定成功或失败",
+            "allowReroll": "允许重骰",
+            "allowRerollNotes": "允许玩家重骰",
+            "showRollResults": "显示其他文本",
+            "showRollResultsNotes": "显示成功/失败其他文本",
+            "blindRoll": "暗骰",
+            "blindRollNotes": "对玩家隐藏掷骰结果",
+            "hideNames": "隐藏姓名",
+            "hideNamesNotes": "对玩家隐藏NPC的姓名",
+            "color": "颜色",
+            "colorNotes": "掷骰界面的颜色",
+            "autoColor": "自动颜色",
+            "autoColorNotes": "根据骰子的类型自动为掷骰界面着色",
+            "contest": "对抗",
+            "contestInfo": "要标记参与者，请右键单击角色和/或骰子",
+            "saveDefaultOptions": "另存为默认值",
+            "saveDefaultOptionsNotification": "当前选项保存为默认值",
+            "ERROR": {
+                "noActors": "没有选择角色，请至少选择一名角色",
+                "noType": "未选择掷骰类型，请选择类型",
+                "noContestants": "已选择对抗检定类型，但未选择任何参与者",
+                "noContest": "已选择参与者但未选择检定类型",
+                "noDC": "未输入 DC，请输入 DC"
+            }
+        },
+        "flags": {}
+    }
+}

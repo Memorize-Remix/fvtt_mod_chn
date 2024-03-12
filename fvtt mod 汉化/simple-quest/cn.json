@@ -1,0 +1,383 @@
+{
+    "simple-quest": {
+        "settings": {
+            "tabConfig": {
+                "name": "标签配置",
+                "hint": "配置简单任务标签名称。",
+                "label": "配置标签名称"
+            },
+            "themeConfig": {
+                "name": "主题配置",
+                "hint": "配置简单任务主题。",
+                "label": "配置主题"
+            },
+            "folderName": {
+                "name": "文件夹名称",
+                "hint": "包含简单任务日志的文件夹名称"
+            },
+            "mapsJournalName": {
+                "name": "地图日志名称",
+                "hint": "包含简单任务地图的日志名称"
+            },
+            "loreFolderName": {
+                "name": "学识文件夹名称",
+                "hint": "包含简单任务学识的文件夹名称"
+            },
+            "partyJournalName": {
+                "name": "小队日志名称",
+                "hint": "包含小队笔记的日志名称"
+            },
+            "sharedJournalName": {
+                "name": "共享日志名称",
+                "hint": "包含共享笔记的日记页面名称"
+            },
+            "backgroundColor": {
+                "name": "背景颜色",
+                "hint": "简单任务的背景颜色"
+            },
+            "labelColor": {
+                "name": "全局标记颜色",
+                "hint": "如果设置，所有地图标记的颜色都将被此颜色覆盖。'none'表示禁用。"
+            },
+            "invertTheme": {
+                "name": "反转主题",
+                "hint": "是否反转简单任务主题。请注意，反转主题可能会产生意想不到的结果。"
+            },
+            "matchJournalStyle": {
+                "name": "匹配日志风格",
+                "hint": "如果启用，会尝试匹配应用于日志的特殊样式。根据主题的不同，可能会产生副作用。"
+            },
+            "textColor": {
+                "name": "文本颜色",
+                "hint": "简单任务的文本颜色"
+            },
+            "secretColor": {
+                "name": "秘密任务颜色",
+                "hint": "用于秘密任务目标的颜色"
+            },
+            "failedColor": {
+                "name": "失败任务颜色",
+                "hint": "用于失败任务目标的颜色"
+            },
+            "hideFolderFromPlayers": {
+                "name": "向玩家隐藏文件夹",
+                "hint": "是否向玩家隐藏简单任务文件夹"
+            },
+            "fontFamily": {
+                "name": "字体类型",
+                "hint": "用于简单任务的字体类型"
+            },
+            "useMessageTheme": {
+                "name": "聊天信息主题",
+                "hint": "是否为简单任务聊天信息使用自定义主题"
+            },
+            "showQuestNotifications": {
+                "name": "显示任务通知",
+                "hint": "是否在任务更新或分享到聊天时显示通知"
+            },
+            "newQuestSoundEffect": {
+                "name": "新任务音效",
+                "hint": "显示新任务通知时播放的音效"
+            },
+            "updateQuestSoundEffect": {
+                "name": "更新任务音效",
+                "hint": "显示任务更新通知时播放的音效"
+            },
+            "matchJournalPermission": {
+                "name": "匹配日志权限",
+                "hint": "除了隐藏状态外，简单任务是否还应匹配任务的用户权限。禁用此设置后，所有任务对所有玩家都是可见的，除非它们被设置为隐藏状态。请注意，启用此设置后，玩家将可以通过打开常规日志来查看隐藏的任务目标。"
+            },
+            "openJournalPinsAsModals": {
+                "name": "将地图标记作为Modals打开Open Map Markers as Modals",
+                "hint": "如果地图标记链接到日志页面，且该页面不是简单任务页面，则在地图顶部以modal方式打开该页面，而不是在日志中打开该页面。"
+            },
+            "enableMaps": {
+                "name": "启用地图",
+                "hint": "是否启用地图标签"
+            },
+            "enableLore": {
+                "name": "启用学识",
+                "hint": "是否启用学识标签"
+            },
+            "headerOnlyFont": {
+                "name": "标题字体",
+                "hint": "标题使用的字体，如果选择'默认'，则使用默认字体"
+            }
+        },
+        "simple-quest": {
+            "title": "简单任务",
+            "windowedModeToggle": "切换窗口模式",
+            "tabs": {
+                "quests": "任务",
+                "map": "地图",
+                "lore": "学识",
+                "my-journal": "我的日志",
+                "party-journal": "小队日志",
+                "tab": "标签"
+            },
+            "move-to": "移动至...",
+            "moveQuest": {
+                "error": "您没有权限将任务移至该类别。"
+            },
+            "tooltip": {
+                "add-quest": "新建任务",
+                "add-map": "新建地图",
+                "add-lore": "新建学识",
+                "edit-lore": "编辑学识",
+                "configure-lore-permissions": "配置权限",
+                "map-help": "如何使用地图标签",
+                "edit-quest": "编辑任务",
+                "delete-quest": "删除任务",
+                "delete-lore": "删除学识",
+                "share-quest": "发送到聊天",
+                "duplicate-quest": "复制任务",
+                "duplicate-map": "复制地图",
+                "delete-map": "删除地图",
+                "duplicate-lore": "复制学识",
+                "mark-updated": "将任务标记为已更新",
+                "add-category": "添加分类",
+                "edit-map": "编辑地图",
+                "reset-fow": "重置/启用战争迷雾",
+                "fow-brush-size": "战争迷雾笔刷大小",
+                "measure": "100px = 1mi",
+                "lock-pins": "锁定/解锁标记",
+                "show-players": "向玩家开放"
+            }
+        },
+        "tab-config": {
+            "title": "标签配置"
+        },
+        "theme-config": {
+            "title": "主题配置",
+            "info": "主题会应用一些预设设置。如果您愿意，可以从模组设置中访问该菜单，也可以在模组设置中单独定制每个主题方面。",
+            "themes": {
+                "default": "默认",
+                "redDragon": "红龙",
+                "whiteDragon": "白龙",
+                "D&D": "D&D",
+                "typewriter": "打字机",
+                "postApocalypticWasteland": "末世荒原",
+                "cyberpunkCity": "赛博朋克城市",
+                "galacticAdventure": "银河探险",
+                "steampunkWorkshop": "蒸汽朋克工坊",
+                "dystopianFuture": "乌托邦式未来",
+                "virtualRealityOasis": "虚拟绿洲",
+                "mysticForest": "神秘森林",
+                "vintageFilmNoir": "复古黑色电影",
+                "sciFiConsole": "科幻控制台",
+                "futuristicTech": "未来科技",
+                "alienInvasion": "异形入侵",
+                "ancientScrolls": "古代卷轴",
+                "steampunkAdventure": "蒸汽朋克探险"
+            }
+        },
+        "markerConfig": {
+            "title": "标记配置",
+            "icon": "图标",
+            "journal": "在此处投放日志或页面",
+            "hidden": "隐藏",
+            "displayLabel": "始终显示标记"
+        },
+        "deleteQuest": {
+            "title": "删除任务? - ",
+            "content": "您确定要删除此任务吗？无法撤销。"
+        },
+        "deleteLore": {
+            "title": "删除学识? - ",
+            "content": "您确定要删除此学识吗？无法撤销。"
+        },
+        "deleteMap": {
+            "title": "删除地图? - ",
+            "content": "您确定要删除此地图吗？无法撤销。"
+        },
+        "shareQuest": {
+            "title": "发送任务到聊天",
+            "content": "您确定要向聊天发送'新任务'通知吗？",
+            "chatMessage": "可进行新任务！"
+        },
+        "showQuest": {
+            "title": "展示任务"
+        },
+        "welcomeScreen": {
+            "title": "欢迎来到简单任务!",
+            "content": "欢迎来到简单任务！!<hr>按<span class='hotkey'>J</span>可打开简单任务窗口。"
+        },
+        "welcomeMaps": {
+            "title": "简单任务: 地图标签",
+            "content": "欢迎来到地图标签!<hr><span class='hotkey'>右键 + 拖动</span>可平移地图。<br><span class='hotkey'>滚动</span>以缩放地图。<br><span class='hotkey'>左击</span>添加标记。<br><span class='hotkey'>左击</span>可打开标记注释或任务。<br><span class='hotkey'>右击</span>标记进行编辑。<hr>战争迷雾<hr><span class='hotkey'>Shift + 左击</span>以隐藏地图。<br><span class='hotkey'>Shift + 右击</span>以显示地图。<hr>M测量<hr> <span class='hotkey'>Ctrl + 左击</span>进行测量。"
+        },
+        "flags": {},
+        "noPermission": "您没有权限查看本文件。",
+        "time-enricher": {
+            "expired": "已过期"
+        },
+        "questNotification": {
+            "text": "任务 %q 已更新！"
+        },
+        "hotkeys": {
+            "toggleSimpleQuest": {
+                "name": "切换简单任务"
+            }
+        },
+        "notifications": {
+            "defaultStructureCreated": "简单任务：创建默认文件夹和日志结构。"
+        },
+        "resetFow": {
+            "title": "重置战争迷雾？",
+            "content": "您确定要重置/启用该地图的战争迷雾吗？这无法撤销。"
+        },
+        "proseMirrorMenu": {
+            "callout": {
+                "title": "标注",
+                "callout-lore": "学识",
+                "callout-magic": "魔法",
+                "callout-item": "物品",
+                "callout-creature": "生物",
+                "callout-event": "事件",
+                "callout-time": "时间"
+            },
+            "pageInsert": {
+                "title": "插入页面",
+                "parchment-note-1": "羊皮纸笔记 1",
+                "parchment-note-2": "羊皮纸笔记 2",
+                "parchment-note-3": "羊皮纸笔记 3",
+                "parchment-note-4": "羊皮纸笔记 4",
+                "parchment-book-1": "书册 1",
+                "parchment-book-2": "书册 2",
+                "parchment-scroll-1": "卷轴"
+            },
+            "text": {
+                "initial": "大写首字母"
+            }
+        },
+        "page-template": {
+            "label": "页面模板",
+            "description": "这是一个 HTML 模板集，用于格式化日志页面。即使禁用了'简单任务 '模组，该格式仍可继续使用。点击按钮可将模板附加到页面末尾。"
+        },
+        "injected": {
+            "fowMask": {
+                "label": "简单任务：战争迷雾屏蔽"
+            }
+        },
+        "tours": {
+            "interface": {
+                "name": "界面导览 & 任务标签",
+                "description": "本教程将向您介绍如何使用简单任务主界面和任务标签。",
+                "1": {
+                    "title": "部分",
+                    "content": "该区域显示了'简单任务'的各个部分，您可以单击选项进行导航，右击编辑标签名称，在右上角悬停可弹出'切换全屏'按钮。"
+                },
+                "2": {
+                    "title": "任务列表",
+                    "content": "该区域显示任务类别列表和其中的任务，您可以右击类别编辑其名称。右上方有添加新任务和添加新分类的按钮。将鼠标悬停在任务标题的左侧，会弹出切换隐藏按钮。"
+                },
+                "3": {
+                    "title": "任务详情",
+                    "content": "该区域显示所选任务的详细信息。右上角有管理任务的按钮，将鼠标悬停在按钮上会有工具提示说明按钮的作用。"
+                },
+                "4": {
+                    "title": "字体大小",
+                    "content": "通过此功能，您可以更改简单任务的字体大小。"
+                }
+            },
+            "lore-tab": {
+                "name": "学识标签",
+                "description": "本教程将向您展示如何使用学识标签。",
+                "1": {
+                    "title": "学识标签",
+                    "content": "学识标签显示简单任务界面中Lore文件夹中的所有日志。虽然该标签不提供任何特殊功能，但它是访问Lore的便捷方式。查看学识页面的权限与FVTT日志权限相同。"
+                },
+                "2": {
+                    "title": "学识列表",
+                    "content": "该区域显示学识类别列表和其中的学识，您可以右击类别编辑其名称。右上方有添加新学识和添加新分类的按钮。将鼠标悬停在学识标题的左侧，会弹出切换隐藏按钮。"
+                },
+                "3": {
+                    "title": "学识详情",
+                    "content": "该区域显示所选学识的详细信息。右上角有管理该学识的按钮，将鼠标悬停在按钮上会有工具提示说明按钮的作用。"
+                }
+            },
+            "map-tab": {
+                "name": "地图标签",
+                "description": "本教程将向您展示如何使用地图标签。",
+                "1": {
+                    "title": "地图标签",
+                    "content": "地图标签显示任务文件夹内'地图日志'中的所有地图。"
+                },
+                "2": {
+                    "title": "地图列表",
+                    "content": "该区域显示地图列表，右上方有添加新地图按钮和解释高级控制的按钮。将鼠标悬停在地图标题的左侧，会弹出切换隐藏按钮。"
+                },
+                "3": {
+                    "title": "地图详情",
+                    "content": "该区域显示所选地图。您可以通过点击和拖动来平移地图，也可以使用鼠标滚轮来放大或缩小地图。右上角有管理地图的按钮，将鼠标悬停在按钮上会有工具提示说明按钮的作用。"
+                },
+                "4": {
+                    "title": "标记",
+                    "content": "您可以在地图上单击右键（可以按住不放进行预览）来添加标记。您还可以右键单击标记进行编辑，或右键单击并拖动标记进行移动。左键单击标记可打开其注释、任务或链接文档。将任何文档拖放到地图上都会创建一个与该文档链接的标记。"
+                },
+                "5": {
+                    "title": "战争迷雾",
+                    "content": "您可以按住 Shift 键来显示战争迷雾笔刷。左键单击隐藏地图，右键单击显示地图。"
+                },
+                "6": {
+                    "title": "测量",
+                    "content": "您可以按住 Ctrl 键来使用测量工具。按住 Ctrl 键的同时，左键单击并拖动进行测量。"
+                }
+            },
+            "my-journal-tab": {
+                "name": "我的日志标签",
+                "description": "本教程将向你展示如何使用我的日志标签。",
+                "1": {
+                    "title": "我的日志标签",
+                    "content": "我的日志标签显示只有你和GM才能看到的个人日志。"
+                },
+                "2": {
+                    "title": "内容目录",
+                    "content": "此区域显示日志的目录。你在日志中创建的任何标题都将显示在这里，以便于导航。"
+                },
+                "3": {
+                    "title": "日志内容",
+                    "content": "该区域显示日志内容。点击右上角的编辑按钮可以编辑日志内容。"
+                }
+            },
+            "party-journal-tab": {
+                "name": "小队日志标签",
+                "description": "本教程将向你展示如何使用小队日志标签。",
+                "1": {
+                    "title": "小队日志标签",
+                    "content": "小队日志标签显示所有用户都能看到和编辑的日志。"
+                },
+                "2": {
+                    "title": "内容目录",
+                    "content": "此区域显示小队日志的目录。你在该日志中创建的任何标题都将显示在这里，以便于导航。"
+                },
+                "3": {
+                    "title": "日志内容",
+                    "content": "该区域显示小队日志内容。点击右上角的编辑按钮可以编辑日志内容。"
+                }
+            },
+            "journal-page": {
+                "name": "日志页面功能",
+                "description": "本游览将向您展示如何使用日志页面。",
+                "1": {
+                    "title": "页面模板",
+                    "content": "简单任务添加了页面模板。这是一项方便快捷的功能，可快速将预先格式化的模板或部分附加到日志页面。点击此按钮查看可用模板。"
+                },
+                "2": {
+                    "title": "风格化",
+                    "content": "在这个下拉菜单中，你可以找到新的'标注'和'插入页面'选项，为你的文档增添一些亮点。"
+                }
+            }
+        },
+        "default-structure": {
+            "in-progress": "进行中",
+            "completed": "已完成",
+            "failed": "失败",
+            "locations": "地点",
+            "npcs": "NPC",
+            "organizations": "组织",
+            "history": "历史",
+            "bestiary": "图鉴"
+        }
+    }
+}

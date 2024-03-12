@@ -1,0 +1,80 @@
+{
+    "fvtt-paper-doll-ui": {
+        "settings": {
+            "globalConfigMenu": {
+                "name": "Paper Doll全局设置",
+                "hint": "自定义每种类型的空图像和插槽数量。",
+                "label": "配置Paper Doll"
+            },
+            "hideActorHeaderText": {
+                "name": "隐藏角色头按钮文本",
+                "hint": "隐藏角色头像按钮中的文字。"
+            },
+            "paperDollPosition": {
+                "name": "Paper Doll位置",
+                "hint": "Paper Doll打开后的位置。请注意，如果左右空间不够，Paper Doll会放在中间。",
+                "label": "位置",
+                "choices": {
+                    "left": "左",
+                    "right": "右",
+                    "center": "中心"
+                }
+            },
+            "autoOpen": {
+                "name": "自动打开",
+                "hint": "打开角色表时，自动打开Paper Doll。"
+            },
+            "allowNonOwned": {
+                "name": "允许非所有权物品",
+                "hint": "允许将非所有权物品（如边栏或简编中的物品）添加到Paper Doll中。此设置适用于没有库存系统的自定义系统，一般情况下不应使用。"
+            }
+        },
+        "app": {
+            "paper-doll": {
+                "title": "Paper Doll",
+                "config": "配置"
+            },
+            "actor-config": {
+                "title": "角色配置",
+                "img": {
+                    "label": "图片",
+                    "placeholder": "使用角色图片"
+                },
+                "objectFit": {
+                    "label": "图像匹配",
+                    "contain": "包含",
+                    "cover": "覆盖"
+                },
+                "autoOpen": {
+                    "label": "自动打开",
+                    "useDefault": "使用默认",
+                    "true": "总是",
+                    "false": "从不"
+                }
+            },
+            "paper-doll-global-config": {
+                "title": "Paper Doll全局配置",
+                "how": {
+                    "add": "点击 `+ add `按钮，添加一个新插槽。",
+                    "remove": "右键点击一个插槽，将其删除。",
+                    "image": "左键单击插槽，为其选择图像。"
+                },
+                "HUE_ROTATE": {
+                    "label": "色调"
+                },
+                "EQUIPPED_PATH": {
+                    "label": "装备路径"
+                },
+                "MAIN_COLOR": {
+                    "label": "颜色"
+                }
+            }
+        },
+        "hotkeys": {
+            "togglePaperDoll": {
+                "name": "切换Paper Doll"
+            }
+        },
+        "flags": {}
+    }
+}

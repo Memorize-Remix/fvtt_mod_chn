@@ -1,0 +1,75 @@
+{
+    "AE": {
+        "custombindings": {
+            "add" : "添加绑定",
+            "bindingstitle": "编辑自定义绑定",
+            "bindingtitle": "编辑绑定",
+            "tt": {
+                "spellname": "法术名称",
+                "edit": "编辑",
+                "delete": "删除",
+                "creaturename": "生物名称"
+            },
+            "sett": {
+                "label": "配置自定义绑定",
+                "name": "自定义绑定",
+                "hint": "配置自定义法术绑定"
+            }
+        },
+        "pick3d": "单击 3D 画布中的一个点进行召唤。",
+        "dialogs": {
+            "companionManager":{
+                "title": "召唤物管理器",
+                "confirm": {
+                    "title": "删除召唤物",
+                    "content": "<p>您确定要删除这个召唤物吗？</p>"
+                }
+            }
+        },
+        "actorSheetBtn": "召唤物",
+        "animations": {
+            "fire": "火",
+            "air": "气",
+            "lightning": "Lightning",
+            "water": "水",
+            "energy1": "Energy",
+            "magic1": "Magic",
+            "heart": "Doki-Doki",
+            "music": "Crescendo",
+            "fourelements": "四元素",
+            "music2": "Chord",
+            "darkness": "Darkness",
+            "ice1": "Ice",
+            "magic2": "Conjuration",
+            "lightning2": "Storm"
+
+        },
+        "groups":{
+            "elemental": "元素",
+            "magical": "魔法Magical",
+            "z-none": "其他"
+        },
+        "settings":{
+            "storeonactor":{
+                "title": "在 Actor 上存储召唤物",
+                "hint": "默认情况下，将召唤物存储在actor身上，而不是user身上。"
+            },
+            "enableautomations":{
+                "title": "启用自动化",
+                "hint": "在施法过程中启用召唤物自动化系统。"
+            },
+            "autoclose": {
+                "title": "自动关闭",
+                "hint": "召唤后自动关闭召唤物窗口。"
+            },
+            "hidebutton":{
+                "title": "隐藏召唤物按钮",
+                "hint": "隐藏角色表上的召唤物按钮。"
+            },
+            "restrictOwned":{
+                "title": "只有自己的Actors",
+                "hint": "限制召唤物列表只显示拥有召唤物的Actors。"
+            }
+        }
+    }
+}

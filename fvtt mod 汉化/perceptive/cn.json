@@ -1,0 +1,886 @@
+{
+	"perceptive" : {
+		"Titles" : {
+			"perceptive"				: "Perceptive",
+			"LockPeekSettings"			: "钥匙孔窥视设定",
+			"DoorMoveSettings"			: "开门设定",
+			"SpottingSettings"			: "察觉隐形设定",
+			"ClientSettings"			: "客户端设定",
+			"PeekLock"					: "窥视钥匙孔",
+			"Basic"						: "基础",
+			"SpottingInfos"	: {
+				"Title"					: "窥视资料",
+				"PP"					: "计算被动察觉: {pValue}",
+				"Spottedby"				: "被: {pNames}发现",
+				"LightModifier"			: "照明察觉DC调整值: {pValue}",
+				"LightRollBehaviour"	: "Illumination perception roll behaviour modifier: {pBehaviour}",
+				"VisionLevel" : {
+					"name"				: "视觉等级: {pLevel}",
+					"value0"			: "基础视野",
+					"value1"			: "弱光视野",
+					"value2"			: "黑暗视野",
+					"value3"			: "黑暗视野（完全）"
+				},
+				"LightLevel" : {
+					"name"				: "照明等级: {pLevel}",
+					"value0"		    : "黑暗",
+					"value1"			: "弱光",
+					"value2"			: "明亮"
+				},
+				"LingeringAP"				: "Lingering active perception"
+			},
+			"SpottingConfirm" : {
+				"name"					: "确定发现",
+				"content"				: "玩家 <b>{pPlayer}</b> {pSkillName}觉鉴定上得到了 <b>{pResult}</b> 让 <b>{pSpotters}</b> 在场景 <b>{pScene}</b> 发现了 <b>{pDoors}</b> 扇密门和: <br>个隐形指示物",
+				"defaultSkill"			: "察觉",
+				"forcecontent"			: "玩家<b>{pPlayer}</b>请求场景 <b>{pScene}</b>中的<b>{pSpotters}</b>，<b>在没有</b>察觉检定的情况下发现<b>{pDoors}</b>密门和隐藏的token: <br>",
+				"Behaviour"				: "使用<b>{pBehaviour}</b>掷骰，得出<b>{pResult}</b>结果"
+			},
+			"StartStealthing"			: "开始隐匿",
+			"StopStealthing"			: "停止隐匿",
+			"GMuiandcontrol"			: "GM UI & 控制",
+			"SightRange"				: "视线范围",
+			"RulesAutomation"			: "规则 & 自动化",
+			"RollFormulas"				: "掷骰 & 公式",
+			"Effects"					: "效果",
+			"Illumination"				: "照明",
+			"Sound"						: "声音",
+			"SoundnImages"				: "噪音 & 图片",
+			"Tile"						: "图块",
+			"Triggers"					: "触发器",
+			"ResetSpottedby"			: "重置 \"spotted by\"",
+			"with"						: "with",
+			"VisionChannels"			: "视觉通道",
+			"OpenVCMenu"				: "打开视觉通道菜单"
+		},
+		
+		"ChatMessage" : {
+			"SpottingReport" : {
+				"content"				: "你发现了<b>{pDoors}</b>密门和这些隐藏token：",
+				"unknown"				: "???"
+			},
+			"LostLingeringAP" 			: "{pName}失去了残留的主动察觉{pName} has lost lingering active perception",
+			"Peeking"					: "{pName}想偷看一把锁",
+			"PeekingSuccess" : {
+				"default"				: "{pName}成功地窥视了一把锁",
+				"crit"					: "{pName}critically成功地窥视了一把锁"
+			},
+			"PeekingFail" : {
+				"default"				: "{pName}偷看门锁失败了",
+				"crit"					: "{pName}critically偷看门锁失败了"
+			}
+		},
+		
+		"Warnings" : {
+			"MacroSeekDeactivatet" 		: "该宏目前不可用, 参见设置 \"Perception macro use behaviour\""
+		},
+		
+		"Popups" : {
+			"OutofRange"				: "超出范围",
+			"CantbePeeked"				: "不能被偷看",
+			"DoorisLocked"				: "锁定",
+			"CantbeMoved"				: "不能移动",
+			"GainedLingeringAP"			: "获得残留的主动察觉",
+			"RemovedLingeringAP"		: "失去残留的主动察觉"
+		},
+		
+		"Settings" : {	
+			"SplitInteractionDistances" : {
+				"name"					: "分割互动距离",
+				"descrp"				: "是否窥视门锁和移动门的交互距离应该分开"
+			},
+			
+			"InteractionDistance" : {
+				"name"					: "最大交互距离",
+				"descrp"				: "玩家与物件交互的最大距离（-1为无限）"
+			},
+			
+			"UseArmsreachDistance" : {
+				"name"					: "使用手臂触及距离",
+				"descrp"				: "用手臂触及距离来计算最大交互距离"
+			},
+			
+			"DFredsEffectsIntegration" : {
+				"name"					: "DFreds Convenient Effects集成",
+				"descrp"				: "用 DFreds convenient effects"
+			},
+			
+			"Vision5eIntegration" : {
+				"name"					: "Vision 5e integration集成",
+				"descrp"				: "使用5E视觉模组规则"
+			},
+			
+			"StealthyIntegration" : {
+				"name"					: "Stealthy集成",
+				"descrp"				: "使用Stealthy模组规则，隐匿 DC会在Perceptive和Stealthy模组之间同步"
+			},
+			
+			"Peekablebydefault" : {
+				"name" 					: "默认锁孔可被窥视",
+				"descrp" 				: "默认锁孔是否可以被窥视"
+			}, 
+			
+			"LockpeekstandardSize" : {
+				"name" 					: "锁孔的基本大小",
+				"descrp" 				: "窥视锁孔时使用的标准间隙尺寸，相对于门的尺寸（0-1）"
+			}, 
+			
+			"LockpeekstandardPosition" : {
+				"name" 					: "窥视锁孔时的锁孔标准位置",
+				"descrp" 				: "窥视锁时使用的标准间隙位置，相对于门的尺寸（0-1）"
+			}, 
+			
+			"StopPeekonMove" : {
+				"name" 					: "当指示物移动时停止窥视",
+				"descrp" 				: "指示物移动后，即使仍在交互距离内，也会立即停止锁定窥视"
+			}, 
+			
+			"PeekingDistance" : {
+				"name" 					: "锁定窥视距离",
+				"descrp" 				: "玩家可以偷看锁的最大距离（-1 表示不受限制）"
+			}, 
+			
+			"GMConfirmPeeking" : {
+				"name"					: "GM确认偷窥",
+				"descrp"				: "是否GM必须确认每次偷看行动"
+			},
+			
+			"PeekingFormula" : {
+				"name"					: "窥视公式",
+				"descrp"				: "用于窥视锁的公式（留空表示停用）"
+			},
+			
+			"PeekingDefaultDC" : {
+				"name"					: "窥视默认 DC",
+				"descrp"				: "用于窥视新建墙壁的默认 DC"
+			},
+			
+			"DoorstandardMove" : {
+				"name" 					: "开门的基本模式",
+				"descrp" 				: "开门的基本模式",
+				"options" : {
+					"none"				: "原版 (直接打开)",
+					"swing"				: "摆门",
+					"slide"				: "滑动门"
+				}
+			}, 
+			
+			"PreventNormalOpenbydefault" : {
+				"name" 					: "禁止原版的开门模式",
+				"descrp" 				: "设定是否让摆门和滑动门模式的门依然可以用左键一键打开"
+			}, 
+			
+			"DoorstandardHinge" : {
+				"name" 					: "门铰链标准位置",
+				"descrp" 				: "设定门铰链的标准位置在哪",
+				"options" : {
+					"0"				: "左边",
+					"1"				: "右边",
+					"2"				: "中间"
+				}
+			}, 
+			
+			"DoorstandardSwingSpeed" : {
+				"name" 					: "标准摆门速度",
+				"descrp" 				: "门的标准摆动速度，以度数为单位°"
+			},
+
+			"DoorStandardSwingRange" : {
+				"name" 					: "标准的摆门可开门角度",
+				"descrp" 				: "门可以摆动的范围，以度数为单位° ({min}:{max} 留空为无限制)"
+			}, 			
+			
+			"DoorstandardSlideSpeed" : {
+				"name" 					: "标准的滑动门速度",
+				"descrp" 				: "门的标准滑动速度，相对于门的尺寸 (0-1)"
+			},
+			
+			"MovingDistance" : {
+				"name" 					: "门移动距离",
+				"descrp" 				: "玩家可以移动门的最大距离（-1 表示无限距离）"
+			},
+			
+			"ActivateSpotting" : {
+				"name"					: "启用主动察觉隐形物体功能",
+				"descrp"				: "是否启用主动察觉功能（关闭能加强性能）"
+			},
+					
+			"SpottingRange" : {
+				"name"					: "观测范围",
+				"descrp"				: "可发现token和门的最大范围（-1 表示无限制）"
+			},
+			
+			"SpottingConeRange" : {
+				"name"					: "聚光锥范围",
+				"descrp"				: "在token前方 90° 锥形范围内使用额外的聚光范围（0 以提高性能）"
+			},
+			
+			"ApplyRange" : {
+				"name"					: "应用范围",
+				"descrp"				: "哪些检定应使用范围",
+				"options" : {
+					"never"				: "从不",
+					"always"			: "总是",
+					"activeonly"		: "仅主动检定",
+					"passiveonly"		: "仅被动检定",
+					"incombatonly"		: "仅在战斗中（两种检定）",
+					"outcombatonly"		: "仅在非战斗情况下（两种检定）"
+				}
+			},	
+
+			"UseBordertoBorderRange" : {
+				"name"					: "使用边框给范围加上边框",
+				"descrp"				: "是否视觉范围应从标记的边界而不是中心开始计算"
+			},
+			
+			"StandardVisionDirection" : {
+				"name"					: "标准视觉方向",
+				"descrp"				: "用于视锥的方向，测量未旋转的token",
+				"options" : {
+					"bottom"			: "底部",
+					"left"				: "左",
+					"top"				: "顶端",
+					"right"				: "右"
+				}
+			},
+			
+			"RangePDCModifier" : {
+				"name"					: "远程察觉 DC 调整值",
+				"descrp"				: "根据与可发现物体的距离调整察觉 DC（DCincrement/RangeIncrement，0/0 关闭)"
+			},
+			
+			"Range3DCalculation" : {
+				"name"					: "远程 3D 计算",
+				"descrp"				: "是否视线范围应以 3D 而不是 2D 计算"
+			},
+			
+			"UsePf2eRules" : {
+				"name"					: "使用Pf2e规则",
+				"descrp"				: "If the Pf2e rules should be used, including differentiating between hiding and sneaking and the respective rules"
+			},
+			
+			"AutoRerollPPDConMove" : {
+				"name"					: "自动重掷潜行隐匿 dc",
+				"descrp"				: "当token移动时，潜行隐匿 dc 是否应重骰（可锁定每个token）"
+			},
+			
+			"AutomateTokenSpottable" : {
+				"name"					: "自动化发现指示物",
+				"descrp"				: "当隐形状态改变后可以被发现的指示物设定会自动被改变"
+			},
+			
+			"CritMethod": {
+				"name": "大成功/大失败",
+				"descrp": "如何界定大成功与大失败",
+				"options": {
+					"noCrit": "没有大成功与大失败",
+					"natCrit": "掷出1或20",
+					"natCritpm10": "掷出1或20 或是 ±10DC [譬如Pf2e]"
+				}
+			},
+	  
+			"SimulatePlayerVision" : {
+				"name"					: "玩家视角",
+				"descrp"				: "决定GM是否使用与玩家一样的指示物察觉算式 (只适用于指示物)"
+			},
+			
+			"PassivePerceptionFormula" : {
+				"name"					: "被动察觉算式",
+				"descrp"				: "系统的被动察觉算式 (e.g. \"10 + @actor.system.abilities.wis.mod + @actor.system.skills.prc.value\", 帮助可在该模块的 Github 页面上找到)"
+			},
+
+			"PerceptionKeyWord" : {
+				"name"					: "察觉关键词",
+				"descrp"				: "用来识别察觉鉴定的关键词 (出现在察觉掷骰文本中的字符串)"
+			}, 
+			
+			"StealthKeyWord" : {
+				"name"					: "隐匿关键词",
+				"descrp"				: "用来识别隐匿鉴定的关键词 (出现在隐匿掷骰文本中的字符串)"
+			}, 
+			
+			"AutoStealthDCbehaviour" : {
+				"name" 					: "自动隐匿行为",
+				"descrp"				: "当进行隐匿鉴定时应该发生什么",
+				"options" : {
+					"off"				: "什么都不发生",
+					"both"				: "设定主动和被动察觉DC",
+					"activeonly"		: "只设定主动察觉DC"
+				}
+			},
+			
+			"applySystemStealthEffect" : {
+				"name"					: "应用系统隐匿效果",
+				"descrp"				: "当隐匿鉴定后系统隐匿效果应不应该应用"				
+			},
+			
+			"usePerceptiveStealthEffect" : {
+				"name"					: "使用Perceptive模组的隐匿",
+				"descrp"				: "是否使用Perceptive模组自己的隐匿\"效果\""				
+			},
+			
+			"PerceptiveStealthFriendliesvisible" : {
+				"name"					: "Perceptive隐匿的友军可见",
+				"descrp"				: "友军token将被其他友军token看到，即使它们是Perceptive隐匿的"				
+			},
+			
+			"syncEffectswithPerceptiveStealth" : {
+				"name"					: "同步Perceptive隐匿重现",
+				"descrp"				: "移除token的Perceptive隐匿会移除设置隐匿效果，反之亦然"				
+			},
+			
+			"customStealthEffects" : {
+				"name"					: "自制隐匿效果",
+				"descrp"				: "当指示物进行隐匿鉴定时的额外效果 (Names or IDs, seperated with \";\")"				
+			},
+			
+			"resetSpottedbyMovedefault" : {
+				"name"					: "当指示物移动重置被发现效果",
+				"descrp"				: "当主动察觉者移动是否重置一个隐匿的指示物"
+			}, 
+			
+			"IlluminationPDCModifier" : {
+				"name"					: "照明察觉DC调整值",
+				"descrp"				: "适用于不同光照等级的察觉 DC 调整值 (微光光照,明亮光照 , \"0,0\" 为无调整值)"
+			}, 
+			
+			"UseIlluminationPDCModifierforAP" : {
+				"name"					: "使用照明察觉 DC 调整值进行主动察觉",
+				"descrp"				: "是否主动进行察觉检定，则应使用照明 DC 调整值用于发现"
+			},
+			
+			"IlluminationAPDCBehaviour" : {
+				"name"					: "照明perception行为",
+				"descrp"				: "不同光照度下的察觉检定行为 (微光光照,明亮光照 , \"=,=\" 为默认行为, 有效关键词: advantage, adv, +, normal, =, disadvantage, disadv, -)"
+			},
+			
+			"Light3Dcalc" : {
+				"name"					: "照明 3D 计算",
+				"descrp"				: "是否token光照度应按3D（而不是2D）计算"
+			},
+			
+			"GMSpotconfirmDialog" : {
+				"name"					: "GM确定发现",
+				"descrp"				: "是否在进行察觉鉴定后为GM创建一个对话框，让GM在对话框中对发现的情况进行确认。"
+			}, 
+			
+			"GMSpotconfirmDialogbehaviour" : {
+				"name"					: "GM确认发现行为",
+				"descrp"				: "掷骰察觉检定的用户应为 GM 创建一个对话框，在对话框中必须确认发现的情况",
+				"options" : {
+					"off"				: "关闭",
+					"playersonly"		: "仅限pl",
+					"always"			: "任何人"
+				}
+			}, 
+			
+			"ShowfailuresinGMconfirm" : {
+				"name"					: "在 GM 确认对话框中显示失败信息",
+				"descrp"				: "在 GM 确认对话框中将察觉检定失败的token显示为未选中条目"
+			},
+			
+			"MakeSpottedTokensVisible" : {
+				"name"					: "让被发现的指示物可见",
+				"descrp"				: "是否主动或被动地发现token，则应使其可见",
+				"options" : {
+					"never"				: "从不",
+					"always"			: "总是",
+					"incombatonly"		: "仅在战斗中",
+					"outcombatonly"		: "仅在非战斗状态下"
+				}
+			},
+			
+			"RevealAllies" : {
+				"name"					: "让盟军token可见",
+				"descrp"				: "是否主动或被动发现盟军 token，也应使其可见（仅适用于上述设置）",
+				"options" : {
+					"never"				: "从不",
+					"always"			: "总是",
+					"incombatonly"		: "仅在战斗中",
+					"outcombatonly"		: "仅在非战斗状态下"
+				}
+			},
+
+			"LingeringAP" : {
+				"name"					: "主动察觉残留",
+				"descrp"				: "是否主动察觉被激活，它就会继续发挥作用，直到被手动移除。",
+				"options" : {
+					"off"				: "关闭",
+					"always"			: "总是",
+					"outofcombatonly"	: "无战斗状态"
+				}
+			}, 		
+
+			"LingeringAPRadius" : {
+				"name"					: "残留主动察觉半径",
+				"descrp"				: "从原始掷骰点开始测量的半径，在该半径内主动察觉仍然存在（-1 表示无限制）"
+			},	
+
+			"LingeringAPDuration" : {
+				"name"					: "残留主动察觉持续时间",
+				"descrp"				: "主动察觉的持续时间，以秒为单位（-1 表示无限制）。"
+			},
+
+			"RevealSpottedDooronClick" : {
+				"name"					: "点击后可看到观测门",
+				"descrp"				: "如果发现隐形门，点击后就会变成正常的门"
+			},			
+			
+			"disableSpottableMATTTiles" : {
+				"name"					: "禁用不可见的 MATT 图块",
+				"descrp"				: "如果出于MATT目的，，未被观测到的可观测图块是否应成为非活动图块"
+			},	
+			
+			"ForceInvertIgnoreRollKey" : {
+				"name" 					: "强制反转 \"忽略掷骰\" 键",
+				"descrp" 				: "为所有pl反转 \"忽略掷骰\" 键并移除客户端设置"				
+			},
+			
+			"GMReciveInformationWhisper" : {
+				"name"					: "GM 接收信息消息",
+				"descrp"				: "是否 GM 收到玩家的更新消息" 
+			},
+			
+			"onlyMacroSeek" : {
+				"name" 					: "只用宏进行察觉",
+				"descrp" 				: "是否只考虑用Perceptive宏制作的察觉掷骰"				
+			},
+			
+			"MacroSeekBehaviour" : {
+				"name"					: "察觉宏使用行为",
+				"descrp"				: "在哪些条件下只考虑用Perceptive宏制作的察觉掷骰操作",
+				"options" : {
+					"never"				: "从不",
+					"incombatonly"		: "仅限战斗",
+					"always"			: "总是"
+				}
+			},
+			
+			"SpottedSound" : {
+				"name"					: "发现声音",
+				"descrp"				: "发现受控 token 时播放的声音（指向声音文件的路径）"
+			},	
+			
+			"SpottedSoundVolume" : {
+				"name"					: "发现声音音量",
+				"descrp"				: "发现声音的音量"
+			},	
+
+			"SpotterImagePing" : {
+				"name"					: "发现者ping图片",
+				"descrp"				: "隐蔽物体发现者ping图像"
+			},		
+
+			"SpotterImagePingDuration" : {
+				"name"					: "发现者ping图片持续时间",
+				"descrp"				: "发现者 ping 图像的持续时间（秒）。"
+			},
+
+			"ActivateVCs" : {
+				"name" 					: "激活视觉通道",
+				"descrp" 				: "是否应启用perceptive视觉通道功能"
+			},	
+
+			"SimulateVCPlayerVision" : {
+				"name" 					: "模拟pl视野",
+				"descrp" 				: "是否应显示当前所选 token 的基于视觉通道的玩家视图"
+			},		
+			
+			"VCRange3DCalc" : {
+				"name" 					: "视觉通道 3D 范围",
+				"descrp" 				: "是否视觉通道范围应在 3D 中计算"
+			},		
+
+			"ShowVCIDs" : {
+				"name" 					: "显示视觉通道 ID",
+				"descrp" 				: "是否要在菜单中显示内部视觉通道 ID"
+			},	
+		
+			"vRequiredOrBehaviour" : {
+				"name"					: "使用逻辑 OR 模式",
+				"descrp"				: "如果需要，视觉通道应在逻辑 OR 而不是逻辑 AND 的基础上运行"
+			},			
+			
+			"showPerceptiveWalls" : {
+				"name" 					: "显示Perceptive墙[DEBUG]",
+				"descrp" 				: "是否应在墙面层中显示 Perceptive 墙面（用于调试）？"
+			},
+			
+			"recreatePerceptiveWalls" : {
+				"name" 					: "在场景加载上再现Perceptive墙[DEBUG]",
+				"descrp" 				: "重新加载场景时是否应重新创建Perceptive墙（用于调试）"
+			},
+			
+			"followTokens" : {
+				"name" 					: "跟随指示物",
+				"descrp" 				: "是否让画面跟随选择的指示物移动"
+			},
+			
+			"MessagePopUps" : {
+				"name" 					: "消息弹出窗口",
+				"descrp" 				: "是否应显示移动门和偷窥锁的弹出消息"
+			},
+			
+			"moveDoorControls" : {
+				"name" 					: "移动门的控制",
+				"descrp" 				: "是否让门的控制与墙一起移动"
+			},
+			
+			"SpeedDoorMovefactor" : {
+				"name" 					: "门的开门速度",
+				"descrp" 				: "使用 Alt+ 鼠标滚轮移动门时的速度系数"
+			},
+			
+			"IlluminationIconPosition" : {
+				"name" 					: "照明指示点的位置",
+				"descrp" 				: "决定照明指示点应该在指示物HUD的哪里",
+				"options" : {
+					"none"				: "不存在",
+					"left"				: "左边",
+					"right"				: "右边"
+				}
+			},
+			
+			"LingeringAPIconPosition" : {
+				"name" 					: "主动察觉指示器的位置",
+				"descrp" 				: "残留的主动察觉指示器应置于 token HUD 的哪个位置",
+				"options" : {
+					"none"				: "不存在",
+					"left"				: "左边",
+					"right"				: "右边"
+				}
+			},
+			
+			"SpottingPingDuration" : {
+				"name" 					: "发现 ping 持续时间",
+				"descrp" 				: "使用主动察觉掷骰发现的物体应被 ping 多长时间（以秒为单位，0 表示禁用 ping）。"
+			},
+			
+			"WhisperPerceptionResult" : {
+				"name" 					: "显示察觉结果",
+				"descrp" 				: "是否应在聊天中显示自己的察觉掷骰结果"
+			},
+			
+			"WhisperLingeringAPremoval" : {
+				"name" 					: "Notify on lingering AP removal",
+				"descrp" 				: "如果要在聊天中显示通知，则在移除残留主动察觉时要显示通知"
+			},
+
+			"InvertIgnoreRollKey" : {
+				"name" 					: "反转\"忽略掷骰\"键",
+				"descrp" 				: "如果只有在按下设置键时才能识别掷骰"
+			},
+			
+			"SpottedTokenTransparency" : {
+				"name" 					: "隐匿指示物的透明度",
+				"descrp" 				: "隐匿指示物的透明度"
+			}			
+		},
+		
+		"Keys" : {
+			"PeekLock" : {
+				"name" 					: "窥视钥匙孔"
+			},
+
+			"MoveDoorLeft" : {
+				"name" 					: "把门推到左边"
+			},
+			
+			"MoveDoorRight" : {
+				"name" 					: "把门推到右边"
+			},
+			
+			"ToggleTokenFollowing" : {
+				"name" 					: "启用跟随指示物"
+			},
+			
+			"IgnoreRoll" : {
+				"name" 					: "无视鉴定",
+				"descrp"				: "长按这个按键来阻止Perceptive把这个鉴定应用于隐匿或者察觉鉴定里 (can be inverted)"
+			},
+			
+			"resetStealthSelected" : {
+				"name" 					: "移除选择指示物的隐匿",
+				"descrp"				: "移除选择指示物的隐匿效果和信息"
+			},
+			
+			"MousePeekLock" : {
+				"name" 					: "鼠标偷窥锁",
+				"descrp"				: "右键单击的同时按住此按钮，可偷看已单击的锁"
+			},
+			
+			"MouseMoveDoor" : {
+				"name" 					: "鼠标移动门",
+				"descrp"				: "滚动时按住此按钮可移动悬停的门（可留空）"
+			},
+			
+			"MouseMoveDoorFast" : {
+				"name" 					: "鼠标快速移动门",
+				"descrp"				: "滚动时按住此按钮可快速移动悬停的门"
+			}
+		},
+		
+		"SheetSettings" : {
+			"canbeLockpeekedFlag" : {
+				"name" 					: "可以被窥视",
+				"descrp"				: "钥匙孔是否可以被玩家窥视"
+			},
+			
+			"PeekingDCFlag" : {
+				"name" 					: "窥视 DC",
+				"descrp"				: "窥视此锁的难度等级（0 表示关闭掷骰功能）"
+			},
+			
+			"LockPeekSizeFlag" : {
+				"name" 					: "钥匙孔大小",
+				"descrp"				: "钥匙孔的大小，相对于门的尺寸 (0-1)"
+			},
+			
+			"LockPeekPositionFlag" : {
+				"name" 					: "钥匙孔位置",
+				"descrp"				: "钥匙孔的位置，相对于门的尺寸 (0-1)"
+			},
+			
+			"DoorMovementFlag" : {
+				"name" 					: "门的打开模式",
+				"descrp"				: "决定门的打开模式",
+				"options" : {
+					"none"				: "无移动 (normal door)",
+					"swing"				: "摆门",
+					"slide"				: "滑动门"
+				}
+			},
+			
+			"PreventNormalOpenFlag" : {
+				"name" 					: "禁止原版开门模式",
+				"descrp"				: "决定是否让这扇门可以直接通过左键打开 (only moving doors)"
+			},
+			
+			"DoorHingePositionFlag" : {
+				"name" 					: "门铰链位置",
+				"descrp"				: "门铰链的所在位置",
+				"options" : {
+					"0"					: "左边",
+					"1"					: "右边",
+					"2"					: "中间"
+				}
+			},
+			
+			"DoorSwingSpeedFlag" : {
+				"name" 					: "开门速度",
+				"descrp"				: "以角度为单位°"
+			},		
+			
+			"DoorSwingRangeFlag" : {
+				"name" 					: "可开门的角度",
+				"descrp"				: "可开门的角度，以角度为单位° (min-max)"
+			},		
+
+			"DoorSlideSpeedFlag" : {
+				"name" 					: "滑动门速度",
+				"descrp"				: "滑动门开门的速度，相对于门的尺寸 (0-1)"
+			},
+
+			"PerceptiveStealthingFlag" : {
+				"name" 					: "是否Perceptive隐匿",
+				"descrp"				: "决定是否拥有Perceptive模组的隐匿效果\"effect\""
+			},
+			
+			"canbeSpottedFlag" : {
+				"name" 					: "是否可被发现",
+				"descrp"				: "决定这扇门是否可以被察觉 (被动和主动)"
+			},
+			
+			"RevealwhenSpottedFlag" : {
+				"name" 					: "被发现时揭示",
+				"descrp"				: "发现该对象时是否应将其显示出来（激活时覆盖游戏设置）"
+			},
+			
+			"PPDCFlag" : {
+				"name" 					: "被动察觉 DC",
+				"descrp"				: "通过被动察觉发现的 DC (-1 则为不可能)"
+			},
+			
+			"APDCFlag" : {
+				"name" 					: "主动察觉 DC",
+				"descrp"				: "通过主动察觉发现的 DC (-1 则为不可能, 留空则和被动一样数值)"
+			},
+			
+			"SpottingRangeFlag" : {
+				"name"					: "观测范围",
+				"descrp"				: "可发现此对象的自定义范围（覆盖世界设置，-1 表示关闭）"
+			},
+			
+			"otherSkillADCsFlag" : {
+				"openButtonname"		: "其他主动技能 DC",
+				"confirmButtonname"		: "确认",
+				"Title"					: "其他主动技能 DC",
+				"name"					: "其他技能的主动 DC（-1 表示不可能）:",
+				"entry"					: "DC for {pSkill} checks"
+			},
+			
+			"SpottingMessageFlag" : {
+				"name"					: "发现信息",
+				"descrp"				: "向该物体的观测者发送私聊信息"
+			},
+				
+			"LockPPDCFlag" : {
+				"name" 					: "锁定被动察觉 DC",
+				"descrp"				: "防止该 token 的被动察觉 DC 在移动时被重骰"
+			},
+			
+			"resetSpottedbyMoveFlag" : {
+				"name"					: "在指示物行动后重置被发现状态",
+				"descrp"				: "是否隐藏 token 的主动观测应在其移动时重置"
+			},
+			
+			"StealthEffectsFlag" : {
+				"name"					: "隐匿效果",
+				"descrp"				: "隐匿检定时对该 token 应用的其他隐匿效果(Names or IDs, seperated with \";\")"
+			},
+			
+			"OverrideWorldSEffectsFlag" : {
+				"name"					: "覆盖世界隐匿效果",
+				"descrp"				: "是否该 token 的隐匿效果优先于世界的隐匿效果"
+			},
+
+			"SceneBrightEndFlag" : {
+				"name"					: "明亮度限制",
+				"descrp"				: "场景暗度等级低于该值时，该场景将被视为明亮"
+			},
+			
+			"SceneDimEndFlag" : {
+				"name"					: "昏暗度限制",
+				"descrp"				: "场景暗度等级低于该值时，该场景将被视为微光"
+			},
+			
+			"TilePerceptiveNameFlag" : {
+				"name"					: "图块名",
+				"descrp"				: "Perceptive图块使用的名称(e.g. Dialogs)"
+			},
+
+			"MATTTriggerTileFlag" : {
+				"name" 					: "触发图块 ID",
+				"descrp"				: "由以下Lock & Key操作触发的图块 ID（您可以使用不同的落脚点）"
+			},
+			
+			"MATTTriggerConditionsFlag" : {
+				"NewlySpotted.name"		: "在新发现的",
+				"options" : {
+					"never"				: "从不",
+					"always"			: "总是",
+					"active"			: "主动",
+					"passive"			: "被动"
+				}
+			}
+		},
+		
+		"vision-channels-window" : {
+			"buttons" : {
+				"OpenVCMenu" : {
+					"name"				: "打开视觉通道"
+				},
+				"confirm" : {
+					"name"				: "确认"
+				},
+				"add" : {
+					"name"				: "增加通道"
+				}
+			},
+			"titles" : {
+				"VisionChannels"		: "视觉通道"
+			},
+			"entries" : {
+				"titles" : {
+					"Name"				: "名称",
+					"RequiredtoSee"		: "需要可见",
+					"SeethroughWalls"	: "穿过墙壁",
+					"Range"				: "范围",
+					"RangeFormula"		: "范围公式",
+					"Color"				: "颜色",
+					"EffectFilter" : {
+						"name"			: "效果过滤",
+						"options" : {
+							"off"		: "关闭",
+							"outline"   : "轮廓",
+							"outline_waves" : "轮廓 & 波纹",
+							"glow"		: "光彩",
+							"TMfog"		: "雾",
+							"TMelectric": "电",
+							"TMtransform": "漩涡",
+							"TMflood"	: "洪水",
+							"TMadjustment" : "渐变",
+							"TMblur"	: "模糊"
+						}
+					},
+					"EffectFilterColor" : "效果滤镜颜色",
+					"Transparency"		: "透明度",
+					"VCID"				: "内部 ID",
+					"Emits"				: "发出",
+					"Receives"			: "接收",
+					"ReceiveFiltered"	: "接收过滤",
+					"ReceiveRange"		: "自定义范围",
+					"CalculatedRange"	: "计算范围",
+					"Sight"				: "视觉",
+					"Movement"			: "移动"
+				}
+			}
+		},
+		
+		"PeekingConfirm" : {
+			"name" 						: "窥视确认",
+			"descrp" 					: "{pUserName}想偷看一扇门，确认吗？"
+		},
+		
+		"monks-active-tiles" : {
+			"filters" : {
+				"name"						: "过滤",
+				
+				"filter-spotted-by" : {
+					"name"					: "通过以下方式过滤发现的物体",
+					"descrp"				: "<span class=\"filter-style\">过滤</span> <span class=\"entity-style\">{pEntities}</span> {pFilterCondition} by <span class=\"entity-style\">{pSpotters}</span>",
+					"settings" : {
+						"spotters" : {
+							"name" 			: "观测者"
+						},
+						"filterCondition" : {
+							"name"			: "过滤，如果",
+							"options" : {
+								"spotted"	: "已被发现",
+								"notspotted": "尚未发现"
+							}
+						}
+					}
+				},
+				
+				"filter-has-spotted" : {
+					"name"					: "发现过滤 token",
+					"descrp"				: "<span class=\"filter-style\">过滤</span> <span class=\"entity-style\">{pEntities}</span> {pFilterCondition} <span class=\"entity-style\">{pSpotted}</span>",
+					"settings" : {
+						"spotted" : {
+							"name" 			: "发现"
+						},
+						"filterCondition" : {
+							"name"			: "过滤，如果",
+							"options" : {
+								"spotted"	: "已被发现",
+								"notspotted": "尚未发现"
+							}
+						}
+					}
+				}
+			},
+			
+			"actions" : {
+				"spot-object" : {
+					"name"					: "观测对象",
+					"descrp"				: "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pTargets}</span> with <span class=\"entity-style\">{pEntities}</span>",
+					"settings" : {
+						"target" : {
+							"name"			: "目标"
+						}
+					}
+				}
+			}
+		}
+	},

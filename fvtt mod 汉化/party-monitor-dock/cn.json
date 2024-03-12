@@ -1,0 +1,53 @@
+{
+    "party-monitor-dock": {
+        "settings": {
+            "onlyConnected": {
+                "name": "只显示已连接的玩家",
+                "hint": "只显示连接到服务器的玩家"
+            },
+            "portraitSize": {
+                "name": "肖像大小",
+                "hint": "显示器上显示画像的大小"
+            },
+            "dockAlignment": {
+                "name": "显示器对齐位置",
+                "hint": "团队平视显示器显示于画面中的对齐位置",
+                "choices": {
+                    "flex-start": "顶部",
+                    "center": "居中",
+                    "flex-end": "底部"
+                }
+            },
+            "cornerImage": {
+                "name": "导航栏图像",
+                "hint": "显示为左侧导航栏的图像，留空以禁用。"
+            },
+            "edgeImage": {
+                "name": "填充图案",
+                "hint": "用于填角色图案之间空间的图像，留空以禁用。"
+            }
+        },
+        "app": {
+            "buttons": {
+                "toggle-nav": "切换导航按钮",
+                "toggle-dock": "切换导航栏样式",
+                "reduce": "缩小尺寸",
+                "enlarge": "增大尺寸",
+                "start-follow": "开启跟随",
+                "stop-follow": "停止跟随",
+                "context": {
+                    "follow": "随从",
+                    "mount": "坐骑",
+                    "epicRoll": "请求掷骰"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": " 现在跟随 ",
+            "unfollow": " 不在跟随 ",
+            "mounted": " 已骑乘 ",
+            "dismounted": " 未骑乘 "
+        }
+    }
+}

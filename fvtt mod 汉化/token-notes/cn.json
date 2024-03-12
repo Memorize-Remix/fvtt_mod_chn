@@ -1,0 +1,30 @@
+{
+    "tokennotes": {
+        "togglenotes": "切换指示物注释",
+        "settings": {
+            "autoopen": {
+                "name": "自动开启/关闭",
+                "hint": "当指示物被选择/弃选时自动开启/关闭注释。"
+            },
+            "allowplayers": {
+                "name": "玩家权限",
+                "hint": "玩家指示物注释的控制权。 任何选项仅适用于玩家拥有的指示物。",
+                "options": {
+                    "none": "无",
+                    "readonly": "可读",
+                    "readwrite": "读写"
+                }
+            },
+            "position": {
+                "name": "位置",
+                "hint": "注释显示位置.",
+                "options": {
+                    "bottomleft": "左下方",
+                    "bottomright": "右下方",
+                    "topleft": "左上方",
+                    "topright": "右上方"
+                }
+            }
+        }
+    }
+}

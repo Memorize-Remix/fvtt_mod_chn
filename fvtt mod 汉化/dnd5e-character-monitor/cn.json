@@ -1,0 +1,102 @@
+{
+    "characterMonitor": {
+        "settings": {
+            "cmColorsMenu": {
+                "name": "自定义角色监视器颜色",
+                "label": "定制"
+            },
+            "monitorEquip": {
+                "name": "监视装备",
+                "hint": "跟踪角色何时装备/卸下装备。"
+            },
+            "monitorQuantity": {
+                "name": "监视数量",
+                "hint": "跟踪角色何时更改物品数量。"
+            },
+            "monitorAttune": {
+                "name": "监视调谐",
+                "hint": "跟踪角色何时与装备调谐或取消调谐。"
+            },
+            "monitorSpellPrep": {
+                "name": "监视法术准备",
+                "hint": "跟踪角色何时准备/取消法术。"
+            },
+            "monitorSpellSlots": {
+                "name": "监视法术位",
+                "hint": "跟踪角色何时在角色表上更改法术位。"
+            },
+            "monitorFeats": {
+                "name": "监视特性",
+                "hint": "跟踪角色何时在角色表上更改特性使用次数。"
+            },
+            "monitorResources": {
+                "name": "监视资源",
+                "hint": "跟踪角色何时更改其角色表上的资源值计数。"
+            },
+            "monitorActiveEffects": {
+                "name": "监视激活效果",
+                "hint": "跟踪角色何时更改其角色表上的激活效果。"
+            },
+            "monitorCurrency": {
+                "name": "监视货币",
+                "hint": "跟踪角色何时在其角色表上更改货币。"
+            },
+            "monitorProficiency": {
+                "name": "监视技能熟练",
+                "hint": "跟踪角色何时改变技能熟练。"
+            },
+            "monitorAbility": {
+                "name": "监视属性值",
+                "hint": "跟踪角色何时改变属性值。"
+            },
+            "showGMonly": {
+                "name": "仅向 GM 用户显示角色监视器",
+                "hint": "聊天信息可通过上下文菜单显示给玩家。"
+            },
+            "allowPlayerView": {
+                "name": "允许玩家查看自己的信息",
+                "hint": "如果启用了仅限GM显示，此设置允许玩家仍然可以看到自己的监控信息。"
+            },
+            "showToggle": {
+                "name": "显示角色监视器切换",
+                "hint": "关闭 token 工具栏上的控制按钮，暂时禁用角色监视器。控制按钮只对 GM 可见。"
+            },
+            "trashIcon": {
+                "name": "启用健康监视聊天信息图标Trash Icon"
+            }
+        },
+        "control": {
+            "title": "切换角色监视器"
+        },
+        "chatMessage": {
+            "equipped": "装备",
+            "unequipped": "卸下",
+            "prepared": "准备",
+            "unprepared": "取消准备",
+            "aSpell": "法术",
+            "uses": "使用",
+            "attunesTo": "与物品调谐",
+            "breaksAttune": "解除与物品的调谐",
+            "SpellSlots": "法术位",
+            "enabled": "启用",
+            "disabled": "禁用",
+            "duration": {
+                "seconds": "秒",
+                "startTime": "开始时间",
+                "rounds": "轮",
+                "turns": "回合",
+                "startRound": "开始轮",
+                "startTurn": "开始回合"
+            },
+            "effects": {
+                "label": "标签",
+                "mode": "mode",
+                "value": "value"
+            }
+        },
+        "colorMenu": {
+            "on": "装备/准备/调谐",
+            "off": "卸下/取消准备/取消调谐"
+        }
+    }
+}
