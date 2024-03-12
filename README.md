@@ -99,5 +99,6 @@
 - #### [Hey, Wait!](https://foundryvtt.com/packages/hey-wait)
 - #### [Items with Spells DnD5e](https://foundryvtt.com/packages/items-with-spells-5e)
 - #### [Boss Splash Screen](https://foundryvtt.com/packages/boss-splash)
+- #### [Danger Zone](https://foundryvtt.com/packages/danger-zone)
 
 
