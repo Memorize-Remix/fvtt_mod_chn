@@ -104,5 +104,6 @@
 - #### [DND5E Scriptlets](https://foundryvtt.com/packages/dnd5e-scriptlets)
 - #### [Boss Splash Screen](https://foundryvtt.com/packages/boss-splash)
 - #### [Danger Zone](https://foundryvtt.com/packages/danger-zone)
+- #### [Forien's Easy Polls](https://foundryvtt.com/packages/forien-easy-polls)
 
 
