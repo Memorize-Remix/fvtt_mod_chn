@@ -94,7 +94,7 @@
             "extension":{
                 "add": "添加区域扩展",
                 "boundary.description": "该扩展将使用与触发区域相同的目标位置。",
-                "boundary.label": "在目标位置通过",
+                "boundary.label": "在目标位置触发",
                 "clear.label": "忽略清除",
                 "clear.description": "该扩展的清除设置将被忽略",
                 "interaction.label": "互动",
@@ -334,8 +334,8 @@
         "occlusionmodes": {
             "none": "无(始终可见)",
             "fade": "淡化(整个图块)",
-            "radial": "Radial (周边 token)",
-            "vision": "视野(token 视野)"
+            "radial": "辐射(围绕token)",
+            "vision": "视觉(token视觉)"
         },
         "record": {
             "title.label": "标题",
@@ -352,10 +352,10 @@
         },
         "restrictions":{
             "none": "无",
-            "limited": "有限",
-            "normal": "正常",
-            "proximity": "邻近",
-            "distance": "反向邻近"
+            "limited": "限制",
+            "normal": "普通",
+            "proximity": "接近",
+            "distance": "远离"
         },
         "scene": {
             "add-danger-zone": "添加危险区域",
@@ -1016,7 +1016,7 @@
                 "door.label": "是否门?",
                 "label": "墙",
                 "left.label": "左侧墙壁",
-                "light.label": "光线限制",
+                "light.label": "光照限制",
                 "movement.label": "移动限制",
                 "random.description": "从所选的墙壁（顶部、右侧、底部、左侧）中，随机选择是否在危险中创建墙。",
                 "random.label": "随机放置墙体",
