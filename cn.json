@@ -2819,6 +2819,7 @@
 
 
 
+    
     "EncounterStats.opt_enable_name": "启用遭遇统计",
     "EncounterStats.opt_enable_hint": "启用遭遇统计模组",
     "EncounterStats.opt_enable_export_json_name": "启用将原始数据导出到日志",
@@ -2860,7 +2861,7 @@
     "EncounterStats.template.rounddmg": "轮DMG",
     "EncounterStats.template.dmg": "DMG",
     "EncounterStats.template.attacks": "攻击",
-    "EncounterStats.template.health": "健康",
+    "EncounterStats.template.health": "生命值",
     "EncounterStats.template.rolltype": "掷骰类型",
     "EncounterStats.template.type": "类型",
     "EncounterStats.template.damageMultipleEnemiesTotal": "目标总伤害",
@@ -6777,7 +6778,7 @@
 
   "MonksActiveTiles.ThisTile": "该图块",
   "MonksActiveTiles.TriggeringToken": "触发 Token",
-  "MonksActiveTiles.PlayerTokens": "Pl Tokens",
+  "MonksActiveTiles.PlayerTokens": "Pl Token",
   "MonksActiveTiles.CurrentLocation": "当前位置",
   "MonksActiveTiles.WithinTile": "图块内的{collection}",
   "MonksActiveTiles.WithinWall": "门下图块",
@@ -6799,7 +6800,7 @@
   "MonksActiveTiles.Seconds": "秒",
   "MonksActiveTiles.CreateNewAction": "创建新动作",
   "MonksActiveTiles.Active": "激活",
-  "MonksActiveTiles.RestrictedTo": "束缚Token",
+  "MonksActiveTiles.RestrictedTo": "受限Token",
   "MonksActiveTiles.ControlledBy": "受控于",
   "MonksActiveTiles.When": "当",
   "MonksActiveTiles.ChanceTrigger": "% 触发几率",
@@ -9791,6 +9792,7 @@
   "ROLLGROUPS.VersatileTooltip": "'多功能'按钮掷骰组将会掷骰。组中的第一个公式将被多功能公式替换。",
   "ROLLGROUPS.Weapon": "武器",
 
+    
     "SCC.ConfigApp.title": "Simbul's掩护计算配置",
     "SCC.setting.ConfigOption.name": "配置设置",
     "SCC.setting.ConfigOption.label": "打开掩护计算配置",
@@ -9801,24 +9803,35 @@
     "SCC.groupLabel.system": "系统",
     "SCC.groupLabel.combat": "战斗",
     "SCC.groupLabel.token-sizes": "Token掩护大小",
+	"SCC.groupLabel.cover-levels": "掩护级别",
     "SCC.groupLabel.misc": "杂项",
 
-    "SCC.groupHint.token-sizes": "当启用'为 Token 指明掩护大小'设置时。每个输入可以使用以下选项之一：微小、小、中等、大、巨大、超巨大。这些选项必须用逗号(',')分隔，不能有空格。如果你将它们留空，默认情况下 Token 将提供 1/2 掩护。",
+    "scc.sureCheck.title": "你确定吗?",
+    "scc.presets.title": "预设",
     
     "setting.losOnTarget.name":"计算目标的掩护",
     "setting.losOnTarget.hint":"无论使用什么热键，在瞄准 Token 时始终计算掩护。",
     "setting.losSystem.name": "掩护计算模式",
     "setting.losSystem.hint": "选择掩护使用的算法，或完全禁用此功能。",
+	"option.default.disabled": "禁用",
     "option.losOnTarget.center":"中心点视线(Foundry视线)",
     "option.losOnTarget.corner":"四角视线(DMG pg. 251)",
     "setting.debugDrawing.name": "调试视线",
     "setting.debugDrawing.hint": "渲染最新掩护计算中使用的视线。刷新以清除绘图。",
     "SCC.LoS_nocover": "无掩护",
-    "SCC.LoS_halfcover":"半身掩护(+2)",
-    "SCC.LoS_34cover":"四分之三掩护(+5)",
+	"SCC.LoS_lessercover": "较小掩护",
+    "SCC.LoS_quartercover": "1/4掩护",
+    "SCC.LoS_halfcover":"半身掩护",
+	"SCC.LoS_standardcover":"标准掩护",
+    "SCC.LoS_34cover":"3/4掩护",
     "SCC.LoS_fullcover":"全身掩护",
+	"SCC.LoS_greatercover":"更大掩护",
+	"SCC.LoS_coverstring": "{coverType} ({acBonus})",
     "SCC.LoS_outputmessage":"检查他们的视线",
     "SCC.LoS_providescover":"提供掩护",
+	"SCC.LoS_providescoveralive":"提供掩护（存活）",
+    "SCC.LoS_providescoverdead":"提供掩护（死亡）",
+    "SCC.LoS_providescoverprone":"提供掩护（倒地）",
     "SCC.LoSMaskNPCs_creatureMask": "一个生物",
     "setting.losKeyBind.name" : "掩护快捷键",
     "setting.losKeyBind.hint" : "指定键盘快捷键，以便在瞄准时检查掩护。",
@@ -9849,36 +9862,86 @@
     "setting.whisperToSelf.name":"私聊掩护报告",
     "setting.whisperToSelf.hint":"只对自己私聊掩护报告，而不是同时私聊给GM",
 
-    "setting.losWithTiles.name": "Tile掩护",
-    "setting.losWithTiles.hint": "允许在计算掩护时考虑Tile因素。",
+    "setting.losWithTiles.name": "图块掩护",
+    "setting.losWithTiles.hint": "允许在计算掩护时考虑图块因素。",
 
-    "setting.coverPerTokenSize.name" : "Token 尺寸效果掩护",
-    "setting.coverPerTokenSize.hint" : "启用此功能并在下面指定尺寸，以确定 Token 尺寸的掩护。",
-    "setting.noCoverTokenSizes.name" : "无掩护",
-    "setting.noCoverTokenSizes.hint" : "拥有 HP 的Token不提供任何掩护。",
-    "setting.threeQuartersCoverTokenSizes.name" : "3/4掩护",
-    "setting.threeQuartersCoverTokenSizes.hint" : "拥有 HP 的Token提供3/4掩护。",
-    "setting.noDeadTokenSizes.name" : "当生命值为0时无掩护",
-    "setting.noDeadTokenSizes.hint" : "HP为0的Token不提供任何掩护。",
-    "setting.halfDeadTokenSizes.name" : "当生命值为0时提供半身掩护",
-    "setting.halfDeadTokenSizes.hint" : "HP为0的Token提供半身掩护。",
-    "setting.threeQuartersDeadTokenSizes.name" : "当生命值为0时提供3/4掩护",
-    "setting.threeQuartersDeadTokenSizes.hint" : "HP为0的Token提供3/4掩护。",
-    "setting.fullDeadTokenSizes.name" : "当生命值为0时提供全身掩护",
-    "setting.fullDeadTokenSizes.hint" : "HP为0的Token提供全身掩护。",
+    "setting.coverData.name": "掩护级别配置",
+    "setting.coverData.hint": "配置可用的掩护级别及其提供的AC。",
+    "scc.coverData.presetBody": "为掩护级别应用预设配置。",
+    "scc.coverData.name": "名称",
+    "scc.coverData.nameTitle": "该掩护级别的名称。",
+    "scc.coverData.acBonus": "AC加值",
+    "scc.coverData.acBonusTitle": "该掩护级别下可获得的AC加值。",
+    "scc.coverData.icon": "图标",
+    "scc.coverData.iconTitle": "代表此掩护级别的图标。",
+    "scc.coverData.color": "颜色",
+    "scc.coverData.colorTitle": "代表此掩护级别的调试颜色。",
+    "scc.coverData.add": "新增",
+    "scc.coverData.newCoverLevelName": "新掩护级别",
+    "scc.coverData.controlTitleAdd": "新增掩护级别",
+    "scc.coverData.controlTitleEdit": "编辑掩护级别",
+    "scc.coverData.controlTitleUp": "上移",
+    "scc.coverData.controlTitleDown": "下移",
+    "scc.coverData.controlTitleDelete": "删除掩护级别",
+    "scc.coverData.coverPartialsHeading": "局部掩护级别",
+    "scc.coverData.coverPartialsBody1": "当 token 只局部处于该掩护级别的后方时，这些掩护级别将被更换。",
+    "scc.coverData.coverPartialsBody2": "可以更改完全位于掩护后的值，但不建议这样做",
+    "scc.coverData.coverPartialsQuarter": "1/4掩护",
+    "scc.coverData.coverPartialsQuarterTitle": "当一个token只被该掩护覆盖1/4时提供的掩护级别。",
+    "scc.coverData.coverPartialsHalf": "1/2掩护",
+    "scc.coverData.coverPartialsHalfTitle": "当一个token只被该掩护覆盖一半时提供的掩护级别。",
+    "scc.coverData.coverPartialsThreeQuarter": "3/4掩护",
+    "scc.coverData.coverPartialsThreeQuarterTitle": "当一个token只被该掩护覆盖3/4时提供的掩护级别。",
+    "scc.coverData.coverPartialsFull": "全身掩护",
+    "scc.coverData.coverPartialsFullTitle": "当一个token完全被该掩护覆盖时提供的掩护级别。",
+    "scc.coverData.coverPartialsReset": "重置局部掩护",
+    "scc.coverData.sureCheckPreset": "您确定要彻底改变掩护级别吗？世界中现有的墙壁、图块和 token 不会更新，除非进行更正，否则可能会出现意外行为",
+    "scc.coverData.sureCheckMove": "您确定要修改掩护级别的顺序吗？世界中现有的墙壁、图块和 token 不会被更新，除非进行更正，否则可能会出现意外行为",
+    "scc.coverData.sureCheckDelete": "你确定要删除那个掩护级别吗？",
+    "scc.coverData.warningMissingSelf": "局部掩护值永远不会返回这个掩护级别，角色永远不会被视为完全处于这种类型的掩护中。",
+    "scc.coverData.warningExceedsSelf": "局部级别返回的值大于该掩护级别，这可能会产生意想不到的结果。",
+    "scc.coverData.warningUnknownLevel": "此局部返回一个不存在的掩护级别，这可能会产生意想不到的结果。",
+    "scc.coverLevelConfig.titleAdd": "添加新的掩护级别",
+    "scc.coverLevelConfig.titleEdit": "编辑掩护级别",
+    "scc.coverLevelConfig.errorNoLabel": "你必须提供一个标签",
 
-    "SCC.flagsNoCover" : "忽视某些级别的掩护",
-    "SCC.flagsNoCoverHint" : "由特性和魔法物品提供。",
-    "SCC.flagsNoCoverOptionNone" : "不忽略任何掩护",
-    "SCC.flagsNoCoverOptionHalf" : "忽略半身掩护",
-    "SCC.flagsNoCoverOptionThreeQ" : "忽略半身和3/4掩护",
-    "SCC.flagsNoCoverOptionFull" : "忽略全身掩护",
+    "setting.actorSizePath.name" : "角色大小路径",
+    "setting.actorSizePath.hint" : "角色中定义大小的变量的路径。",
+    "setting.unconsciousStatusName.name" : "昏迷状态名称",
+    "setting.unconsciousStatusName.hint" : "角色处于昏迷时的状态效果名称。",
+    "setting.proneStatusName.name" : "倒地状态名称",
+    "setting.proneStatusName.hint" : "角色处于倒地时的状态效果名称。",
+    "setting.tokenSizesDefault.name" : "掩护：Token大小掩护",
+    "setting.tokenSizesDefault.hint" : "为每个角色大小设置Token的掩护级别。",
+    "scc.tokenSizesDefault.presetBody": "为角色尺寸掩护级别应用预设配置。",
+    "scc.tokenSizesDefault.presetWarning": "下面的任何更改都不会影响场景中已有的 token。",
+    "scc.tokenSizesDefault.tableSize": "大小",
+    "scc.tokenSizesDefault.tableCover": "掩护",
+    "scc.tokenSizesDefault.coverTitle": "此大小的 token 的正常掩护值。",
+    "scc.tokenSizesDefault.tableDead": "死亡",
+    "scc.tokenSizesDefault.deadTitle": "此大小的 token 在死亡或昏迷时的掩护值。",
+    "scc.tokenSizesDefault.tableProne": "倒地",
+    "scc.tokenSizesDefault.proneTitle": "此大小的 token 在倒地时的掩护值。",
+    "scc.tokenSizes.sureCheckPreset": "您确定要应用token掩护级别预设吗？不会更新已放置在世界中的现有 token",
+    "scc.tokenSizes.warningUnknownLevel": "掩护等级被设置为大于最大可用掩护等级，这将被规约（clamped）到最大掩护级别。",
+    "scc.tokenSizes.warningBadSizeOrder": "这个尺寸的掩护级别小于前一个尺寸的掩护等级，这可能是一个错误，也可能是尺寸不对。",
 
-    "SCC.flagsReduceCover" : "减少目标部分掩护",
-    "SCC.flagsReduceCoverHint" : "攻击目标时，目标的部分掩护会减少指定的阶段。",
+    "scc.coverPreset.flat": "平铺",
+    "scc.coverPreset.linear": "线形",
+    "scc.coverPreset.linearHalf": "线形,死亡时减半",
+    "scc.coverPreset.linearAlt": "线形(alt)",
+    "scc.coverPreset.linearHalfAlt": "线形(alt),死亡时减半",
+    "scc.coverPreset.devPref": "开发者的偏好",
+    "scc.coverPreset.devPrefHalf": "开发者的偏好,死亡时减半",
 
-    "setting.proneActsLikeDead.name": "倒地视为0生命值",
-    "setting.proneActsLikeDead.hint": "当 Token 具有倒地或昏迷状态效果时，视其为 0 HP 处理掩护。",
+    "SCC.flagsNoCover" : "忽略某些掩护级别",
+    "SCC.flagsNoCoverHint" : "攻击目标时，如果目标的掩护级别低于或等于此值，则视其为没有掩护",
+    
+    "SCC.flagsReduceCover" : "减少目标局部掩护",
+    "SCC.flagsReduceCoverHint" : "攻击目标时，目标的局部掩护会减少指定的阶段。",
+
+    "setting.migrationVersion.name": "迁移版本",
+    "setting.migrationVersion.hint": "世界当前的迁移版本",
 
 
     "SCA.ConfigApp.title": "Simbul's生物辅助配置",
@@ -14210,6 +14273,7 @@
 	
 	
 	
+    
     "DANGERZONE": {
         "add": "新增",
         "after": "之后",
@@ -14305,7 +14369,7 @@
             "extension":{
                 "add": "添加区域扩展",
                 "boundary.description": "该扩展将使用与触发区域相同的目标位置。",
-                "boundary.label": "在目标位置通过",
+                "boundary.label": "在目标位置触发",
                 "clear.label": "忽略清除",
                 "clear.description": "该扩展的清除设置将被忽略",
                 "interaction.label": "互动",
@@ -14327,8 +14391,8 @@
                 },
                 "save.description": "该扩展功能将使用与触发区域相同的豁免检定结果。",
                 "save.label": "豁免检定输入",
-                "source.description": "此扩展将使用与触发区域相同的源。",
-                "source.label": "源输入",
+                "source.description": "此扩展将使用与触发区域相同的来源。",
+                "source.label": "来源输入",
                 "target.description": "此扩展将使用与触发区域相同的目标 token。",
                 "target.label": "目标 token 输入",
                 "trigger.label": "触发设置",
@@ -14357,7 +14421,7 @@
             "name": "配置区域",
             "operation.description": "确定每个循环的触发操作。\n  连续: 当前循环完成后，下一循环启动。\n  交错: 所有循环同时启动，每个循环的'延迟启动'分别计算。\n  同时: 计算并执行一次'延迟启动'，然后直接触发所有循环。",
             "operation.label": "循环操作",
-            "placeTemplate.label": "选择位置Choose Location",
+            "placeTemplate.label": "选择位置",
             "placeTemplate.description": "触发时，系统会提示您选择要使用危险标记的场景位置（否则将从区域范围内随机选择位置并渗开）。如果您选择的位置完全在区域之外，则会产生危险效果，但区域外的 token 不会成为目标。",
             "promptElevation.label": "跳过高度提示",
             "promptTrigger.label": "执行前提示 GM?",
@@ -14377,9 +14441,9 @@
                 "area.label": "来源区域",
                 "area.description": "定义区域内可能影响目标选择的来源区域",
                 "description": "此来源可能会影响区域何时触发以及是否触发。许多危险部分都可以根据区域的危险来源来定义。",
-                "label": "源",
+                "label": "来源",
                 "limit": {
-                    "description": "如果有一个以上的源，则将区域触发时涉及的源总数设置为最小值和最大值之间的上限。设置为 0 则忽略。",
+                    "description": "如果有一个以上的来源，则将区域触发时涉及的来源总数设置为最小值和最大值之间的上限。设置为 0 则忽略。",
                     "label": "数量",
                     "min.label": "最小",
                     "max.label": "最大"
@@ -14391,11 +14455,11 @@
                 },
                 "target.label": "标记影响目标",
                 "target.description": "根据区域的来源区域，限制区域内的标记。\n *对光环触发区域或由 GM 选择目标位置的区域没有影响",
-                "trigger.description": "由来源角色确定是否触发区域。\n *对手动或通过 API 触发的区域没有影响。\n对于'只有源才能触发区域'的战斗触发，源必须作为战斗人员出现在范围内。\n 回合: 战斗人员的回合。\n 其他: 必须是战斗中的战斗人员。",
+                "trigger.description": "由来源角色确定是否触发区域。\n *对手动或通过 API 触发的区域没有影响。\n对于'只有来源才能触发区域'的战斗触发，来源必须作为战斗人员出现在范围内。\n 回合: 战斗人员的回合。\n 其他: 必须是战斗中的战斗人员。",
                 "trigger.label": "触发影响",
                 "triggers":{
                     "any": "区域触发与来源无关",
-                    "scene": "区域只有在源出现在现场时才会触发",
+                    "scene": "区域只有在来源出现在现场时才会触发",
                     "source": "只有来源角色才能触发区域"
                 }
             },
@@ -14467,16 +14531,16 @@
                 "token.label": "在目标 token 上播放"
             },
             "source":{
-                "add.label": "将画布目标 token 添加到源列表中",
-                "clear.label": "清除源列表",
+                "add.label": "将画布目标 token 添加到来源列表中",
+                "clear.label": "清除来源列表",
                 "fail.label": "列表中所有目标的豁免检定失败",
                 "highlight.label": "游戏画布上的目标是此列表中的任何 token",
-                "list.label": "源列表",
-                "lock.label": "源列表不会因区域或边界变化而更新",
-                "none.label": "源列表为空",
-                "replace.label": "用场景目标替换源列表",
-                "succeed.label": "成功豁免检定列表中的所有源",
-                "unlock.label": "源列表将根据区域或边界变化进行更新"
+                "list.label": "来源列表",
+                "lock.label": "来源列表不会因区域或边界变化而更新",
+                "none.label": "来源列表为空",
+                "replace.label": "用场景目标替换来源列表",
+                "succeed.label": "成功豁免检定列表中的所有来源",
+                "unlock.label": "来源列表将根据区域或边界变化进行更新"
             },
             "targets":{
                 "add.label": "在目标列表中添加画布目标 token",
@@ -14545,8 +14609,8 @@
         "occlusionmodes": {
             "none": "无(始终可见)",
             "fade": "淡化(整个图块)",
-            "radial": "Radial (周边 token)",
-            "vision": "视野(token 视野)"
+            "radial": "辐射(围绕token)",
+            "vision": "视觉(token视觉)"
         },
         "record": {
             "title.label": "标题",
@@ -14563,10 +14627,10 @@
         },
         "restrictions":{
             "none": "无",
-            "limited": "有限",
-            "normal": "正常",
-            "proximity": "邻近",
-            "distance": "反向邻近"
+            "limited": "限制",
+            "normal": "普通",
+            "proximity": "接近",
+            "distance": "远离"
         },
         "scene": {
             "add-danger-zone": "添加危险区域",
@@ -14639,32 +14703,32 @@
         },
         "source":{
             "area": {
-                "none": "未定义源区域",
+                "none": "未定义来源区域",
                 "danger.placeable": "包含危险创建可放置物的网格",
                 "danger.tile": "包含危险创建图块的网格",
                 "tag": "包含标记可放置物的网格",
-                "actor": "包含源角色的网格",
+                "actor": "包含来源角色的网格",
                 "zone.placeable": "包含区域创建可放置物的网格",
                 "zone.tile": "包含区域创建图块的网格"
             },
             "danger.description": "来源是区域表中定义的角色。\n定义如何根据目标和来源应用该危险部分。",
-            "label": "源",
+            "label": "来源",
             "target": {
-                "none": "不要根据源区域确定目标",
-                "adjacent": "邻近源区域",
-                "in": "在源区域内",
-                "both": "在源区域内或邻近源区域"
+                "none": "不要根据来源区域确定目标",
+                "adjacent": "邻近来源区域",
+                "in": "在来源区域内",
+                "both": "在来源区域内或邻近来源区域"
             },
             "danger.location": {
-                "actor": "在源角色上播放",
-                "area": "在源区域上播放",
-                "both": "在源角色和源区域上播放"
+                "actor": "在来源角色上播放",
+                "area": "在来源区域上播放",
+                "both": "在来源角色和来源区域上播放"
             },
             "treatment":{
                 "none": "无特殊待遇",
-                "ignore": "不适用于源角色(如果是目标)",
-                "also": "也适用于源角色",
-                "only": "适用于源角色而非目标",
+                "ignore": "不适用于来源角色(如果是目标)",
+                "also": "也适用于来源角色",
+                "only": "适用于来源角色而非目标",
                 "targets": "适用于目标"
             }
         },
@@ -14722,7 +14786,7 @@
             "audio":{
                 "description": "触发危险时播放声音。",
                 "label": "音频",
-                "file.label": "音频源",
+                "file.label": "音频来源",
                 "file.placeholder": "path/audio.mp3",
                 "file.find": "浏览音频文件",
                 "playlist.label": "播放清单名称",
@@ -14735,7 +14799,7 @@
             "backgroundEffect":{
                 "audio":{
                     "label": "音频",
-                    "file.label": "音频源",
+                    "file.label": "音频来源",
                     "file.placeholder": "path/audio.mp3",
                     "file.find": "浏览音频文件",
                     "playlist.label": "播放清单名称",
@@ -14777,7 +14841,7 @@
                 "label": "战斗",
                 "new.label": "创建新战斗",
                 "source": {
-                    "add.label": "为战斗添加源"
+                    "add.label": "为战斗添加来源"
                 },
                 "spawn.description": "此危险部分将应用于由此危险产生的任何 token。产生危险部分的'延迟启动'必须发生在此危险部分的'延迟启动'之前。",
                 "spawn.label": "在战斗中添加产生",
@@ -14823,12 +14887,12 @@
                 "randomFile.label": "随机化通配符 webm",
                 "scale.label": "比例",
                 "source": {
-                    "enabled.label": "源到目标",
-                    "name.label": "覆盖源 (Tag)",
+                    "enabled.label": "来源到目标",
+                    "name.label": "覆盖来源 (Tag)",
                     "name.description": "标记标签",
-                    "name.notes": "默认情况下，源是区域的源角色。如果在此处添加了标签，那么区域中所有带有此标签的实体都会被视为源。",
-                    "target.label": "源地点",
-                    "swap.description": "播放效果，使其看起来来自目标并朝向源。",
+                    "name.notes": "默认情况下，来源是区域的来源角色。如果在此处添加了标签，那么区域中所有带有此标签的实体都会被视为来源。",
+                    "target.label": "来源地点",
+                    "swap.description": "播放效果，使其看起来来自目标并朝向来源。",
                     "swap.label": "反向流动"
                 },
                 "repeat.label": "重复次数",
@@ -14864,7 +14928,7 @@
                 "animationIntensity.label": "动画强度",
                 "animation.label": "灯光动画类型",
                 "brightLight.label": "明亮",
-                "clear.label": "创建后活动",
+                "clear.label": "创建后激活",
                 "color.label": "灯光颜色",
                 "coloration.label": "着色技术",
                 "contrast.label": "背景对比",
@@ -14908,7 +14972,7 @@
                     "description": "图块将把token传送到区域内的另一个随机目的地。如果选择了'双联'，则将创建第二个图块，两个图块将相互传送。",
                     "label": "新增Token传送",
                     "pan.label": "传送时平移屏幕",
-                    "source.label": "删除源Token",
+                    "source.label": "删除来源Token",
                     "twin.label": "双联图块(例如，传送门Portal)"
                 }
             },
@@ -15006,12 +15070,12 @@
             "sound":{
                 "description": "为目标位置的场景添加环境音效。",
                 "label": "音效",
-                "file.label": "音频源",
+                "file.label": "音频来源",
                 "file.placeholder": "path/audio.mp3",
                 "file.find": "浏览音频文件",
                 "playlist.label": "播放清单名称",
                 "delay.label": "延迟启动",
-                "easing.label": "放宽音量",
+                "easing.label": "音量缓动",
                 "random.label": "从播放清单中随机选择",
                 "walls.label": "受墙限制",
                 "radius.label": "效果半径",
@@ -15020,7 +15084,7 @@
             "sourceEffect":{
                 "audio":{
                     "label": "音频",
-                    "file.label": "音频源",
+                    "file.label": "音频来源",
                     "file.placeholder": "path/audio.mp3",
                     "file.find": "浏览音频文件",
                     "playlist.label": "播放清单名称",
@@ -15028,8 +15092,8 @@
                     "volume.label": "音量"
                 },
                 "delay.label": "延迟启动",
-                "description": "在源区域下方产生临时效果，例如烟雾或挥舞的魔杖。",
-                "label": "源效果",
+                "description": "在来源区域下方产生临时效果，例如烟雾或挥舞的魔杖。",
+                "label": "来源效果",
                 "file.find": "浏览效果",
                 "file.label": "图片或视频",
                 "file.placeholder": "path/image.webm",
@@ -15056,8 +15120,8 @@
                 "hidden.label":"隐藏",
                 "label": "持久效果",
                 "occlusion":{
-                    "alpha.label": "Occlusion Alpha",
-                    "mode.label":  "Occlusion Mode"
+                    "alpha.label": "遮挡透明度",
+                    "mode.label":  "遮挡模式"
                 },
                 "overhead.label": "过顶图块",
                 "overhead.description": "如果安装了Levels，则在有深度的区域内，如果放置危险时的底部大于 0，则图块会自动设置为过顶。",
@@ -15077,7 +15141,7 @@
             "tokenSays": {
                 "audio":{
                     "compendium":{
-                        "description": "确定保存播放列表的合集。如果'合集'留空，则 token Says 将使用默认合集或 token Says 设置后的世界源。",
+                        "description": "确定保存播放列表的合集。如果'合集'留空，则 token Says 将使用默认合集或 token Says 设置后的世界来源。",
                         "label": "音频合集",
                         "placeholder": "合集名称"
                     },
@@ -15091,7 +15155,7 @@
                     "source.placeholder": "播放列表名称"
                 },
                 "chat.label": "聊天",
-                "compendium.description": "确定保存'源Source'播放列表或随机表的合集。如果'合集'留空，则 token Says 将使用默认合集或 token Says 设置后的世界源。",
+                "compendium.description": "确定保存'来源'播放列表或随机表的合集。如果'合集'留空，则 token Says 将使用默认合集或 token Says 设置后的世界来源。",
                 "compendium.label": "随机表合集",
                 "compendium.placeholder": "合集名称",
                 "delay.label": "延迟启动",
@@ -15105,11 +15169,11 @@
                 },
                 "saying-source.label": "随机表",
                 "says":{
-                    "description": "如果填入，token 将始终这样说。留空是为了随机使用'源Source'。",
+                    "description": "如果填入，token 将始终这样说。留空是为了随机使用'来源'。",
                     "label": "聊天信息",
                     "placeholder": "引语"
                 },
-                "source.label": "源",
+                "source.label": "来源",
                 "source.placeholder": "随机表名称",
                 "suppress.label": "抑制",
                 "suppressChatbubble.label": "聊天气泡",
@@ -15118,7 +15182,7 @@
                 "volume.label": "音量"
             },
             "tokenEffect":{
-                "below.label": "显示下方 token",
+                "below.label": "显示在token下方",
                 "delay.label": "延迟启动",
                 "description": "创建一个对目标 token 起作用的效果，如果该效果成为永久效果，则会随 token 一起移动。",
                 "label": "Token效果",
@@ -15154,7 +15218,7 @@
                     },
                 "label": "移动 token",
                 "overrides.label": "移动覆盖",
-                "source-to-target.label": "将源移动到目标区域",
+                "source-to-target.label": "将来源移动到目标区域",
                 "tiles-block.label": "图块阻挡目标深度移动",
                 "walls-block.label": "墙壁阻挡目标 X/Y 移动",
                 "vertical.label": "垂直移动",
@@ -15227,16 +15291,16 @@
                 "door.label": "是否门?",
                 "label": "墙",
                 "left.label": "左侧墙壁",
-                "light.label": "光线限制",
+                "light.label": "光照限制",
                 "movement.label": "移动限制",
-                "random.description": "从所选的墙壁（顶部、右侧、底部、左侧）中，随机选择是否在危险中实际建造了这些墙壁。",
+                "random.description": "从所选的墙壁（顶部、右侧、底部、左侧）中，随机选择是否在危险中创建墙。",
                 "random.label": "随机放置墙体",
                 "right.label": "右侧墙壁",
                 "sound.label": "声音限制",
                 "sight.label": "视线限制",
                 "tag.label": "标签",
                 "tag.description": "目标标签",
-                "thresholdAttenuation.label": "近距离阈值衰减",
+                "thresholdAttenuation.label": "接近阈值衰减",
                 "top.label": "顶部墙壁"
             },
             "warpgate": {
@@ -15307,6 +15371,60 @@
             "form-name": "危险",
             "name": "名称"
         }
-    }
+    },
+    
+	
+	
+	
+	
+  "dnd5e-scriptlets.LukasSheetFilter.Name": "在角色表中添加过滤",
+  "dnd5e-scriptlets.LukasSheetFilter.Hint": "允许你通过文本过滤过滤角色表中的物品/法术/特性。Thanks @Lukas",
+  "dnd5e-scriptlets.AmmoSelector.Name": "弹药选择器",
+  "dnd5e-scriptlets.AmmoSelector.Hint": "在使用远程武器时启用弹药选择对话框。Thanks @Lukas",
+  "dnd5e-scriptlets.AmmoSelectorOptions": {
+    "off": "禁用",
+    "on": "启用",
+    "onDark": "启用暗色模式"
+  },
+  "dnd5e-scriptlets.LukasItemRarityColors.Name": "稀有度颜色",
+  "dnd5e-scriptlets.LukasItemRarityColors.Hint": "根据物品稀有度为物品着色。Thanks @Lukas",
+  "dnd5e-scriptlets.LukasFadeUnprepared.Name": "淡化未准备",
+  "dnd5e-scriptlets.LukasFadeUnprepared.Hint": "淡化未准备的法术。Thanks @Lukas",
+  "dnd5e-scriptlets.AutoItemRecharge.Name": "自动充能物品",
+  "dnd5e-scriptlets.AutoItemRecharge.Hint": "在回合开始时自动掷骰为物品充能",
+  "dnd5e-scriptlets.AutoItemRechargeOptions": {
+    "off": "禁用",
+    "silent": "充能（无聊天消息）",
+    "whisper": "充能（仅向 GM 发送聊天消息）",
+    "chatter": "充能（聊天信息）"
+  },
+  "dnd5e-scriptlets.LegendaryRecharge.Name": "充能传奇动作",
+  "dnd5e-scriptlets.LegendaryRecharge.Hint": "在回合开始时自动为传奇动作充能",
+  "dnd5e-scriptlets.AutoRollUnlinkedHP.Name": "掷骰NPC生命骰",
+  "dnd5e-scriptlets.AutoRollUnlinkedHP.Hint": "在画布上添加token时，自动掷骰未链接token的生命骰",
+  "dnd5e-scriptlets.TokenResizer.Name": "Token调整",
+  "dnd5e-scriptlets.TokenResizer.Hint": "为 token 控件添加调整大小按钮，可调整所选 token 的大小",
+  "dnd5e-scriptlets.TokenResizerWarpgateError": "DND5E-Scriptlets | 令牌调整器要求 warpgate 已安装并激活 - Token调整已禁用",
+  "dnd5e-scriptlets.NoTokenSelected": "DND5E-Scriptlets | Token调整: 至少选择一个 token 调整大小",
+  "dnd5e-scriptlets.CleanRolls.Name": "清除掷骰",
+  "dnd5e-scriptlets.CleanRolls.Hint": "删除dnd5e 掷骰中重复的'+'和'-'",
+  "dnd5e-scriptlets.needsLibWrapper": "DND5D-Scirptlets | 清除掷骰: libwrapper必须已安装并激活",
+  "dnd5e-scriptlets.AlternativeAdvantage.Name": "代替优势",
+  "dnd5e-scriptlets.AlternativeAdvantage.Hint": "优势/劣势可获得掷骰表达式加值，而不是掷 2 个骰子。例如，你可以使用'1d4 + @abilities.str.mod'",
+  "dnd5e-scriptlets.ActorCollapsibleSection.Name": "可折叠栏",
+  "dnd5e-scriptlets.ActorCollapsibleSection.Hint": "启用后，单击角色卡栏部分名称即可折叠该部分。",
+  "dnd5e-scriptlets.AmmoTracker.Name": "回收使用过的弹药",
+  "dnd5e-scriptlets.AmmoTracker.Hint": "战斗结束时，每位战斗人员可回收 1/2 的非魔法弹药",
+  "dnd5e-scriptlets.AmmoRecoveryMessage.Name": "显示弹药恢复信息",
+  "dnd5e-scriptlets.AmmoRecoveryMessage.Hint": "显示战斗结束时回收的弹药",
+  "dnd5e-scriptlets.SilentInitiative.Name":  "沉默先攻",
+  "dnd5e-scriptlets.SilentInitiative.Hint": "掷骰先攻时不会发送聊天信息",
+  "dnd5e-scriptlets.UpdateCreatedOrigins.Name": "修复创建角色时的效果来源",
+  "dnd5e-scriptlets.UpdateCreatedOrigins.Hint": "创建角色时，尝试修复角色身上任何效果的来源",
+  "dnd5e-scriptlets.BetterScrollCreation.Name": "更好的卷轴创建",
+  "dnd5e-scriptlets.BetterScrollCreation.Hint": "根据法术创建卷轴时，复制效果和标记",
+  "dnd5e-scriptlets.GriddedGridless.Name": "无网格场景",
+  "dnd5e-scriptlets.GriddedGridless.Hint": "在无网格场景中计算距离时，使用有网格的 dnd5e 距离计算方法"
+
 	
 }
