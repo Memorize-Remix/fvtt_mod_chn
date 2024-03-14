@@ -105,5 +105,7 @@
 - #### [Boss Splash Screen](https://foundryvtt.com/packages/boss-splash)
 - #### [Danger Zone](https://foundryvtt.com/packages/danger-zone)
 - #### [Forien's Easy Polls](https://foundryvtt.com/packages/forien-easy-polls)
+- #### [Bar Brawl](https://foundryvtt.com/packages/barbrawl)
+- #### [Link Item and Resource DnD5e](https://foundryvtt.com/packages/link-item-resource-5e)
 
 
