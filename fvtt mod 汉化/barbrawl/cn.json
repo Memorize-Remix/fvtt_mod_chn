@@ -1,0 +1,109 @@
+{
+    "barbrawl": {
+        "translatedBy": "记忆remix",
+        "barStyle": {
+            "name": "栏条风格",
+            "hint": "更改栏条的显示方式。",
+            "minimal": "简约(纤细，无边框)",
+            "default": "FVTT默认",
+            "large": "大(宽, 细边框)",
+            "legacy": "传统(粗边框)"
+        },
+        "textStyle": {
+            "name": "栏条标签",
+            "hint": "更改栏条上显示的数字。",
+            "user": "用户默认",
+            "none": "无",
+            "fraction": "分数 (当前值/最大值)",
+            "percent": "百分比(%)"
+        },
+        "compactHud": {
+            "name": "紧凑型 HUD",
+            "hint": "缩小 token HUD 中资源输入字段的大小。"
+        },
+        "hideHostile": {
+            "name": "隐藏所有敌对栏条",
+            "hint": "防止显示敌对 token 的栏条。请注意，这可能会覆盖特定资源的可见性设置。"
+        },
+        "heightMultiplier": {
+            "name": "栏条高度乘数",
+            "hint": "将栏条高度乘以配置值，以提高可读性。这会影响标签，但不会影响栏条的背景或前景图像。"
+        },
+        "config": {
+            "attribute": "属性",
+            "ownerVisibility": "可见(所有者)",
+            "otherVisibility": "可见(任何人)",
+            "gmVisibility": "可见(GM)",
+            "hide": "隐藏栏条",
+            "hideHint": "满足任何选中条件时不显示栏条。",
+            "hideFull": "满",
+            "hideEmpty": "空",
+            "hideCombat": "在战斗中",
+            "hideNoCombat": "战斗之外",
+            "value": "值(当前/最大)",
+            "color": "颜色(最小/最大)",
+            "position": "位置",
+            "advanced": "高级配置",
+            "indent": "缩进",
+            "indentHint": "栏条的缩进空间，单位为 token 宽度的百分比。",
+            "indentLeft": "左",
+            "indentRight": "右",
+            "shareHeight": "共享高度",
+            "shareHeightHint": "防止栏条保留任何垂直空间，从而将下面的条形图移到同一行。这在与缩进结合使用时特别有用。",
+            "style": "标签",
+            "ignoreLimits": "忽略限制",
+            "ignoreLimitsHint": "禁用输入值在 0（下限）和最大值（上限）之间的限制。这仅适用于自定义栏条，其他属性的栏条由系统处理。",
+            "ignoreMin": "下限",
+            "ignoreMax": "上限",
+            "invert": "反转数值",
+            "invertDirection": "反转方向",
+            "invertHint": "0 显示为满值，最大值显示为空。",
+            "invertDirectionHint": "反转栏条的填充方向。",
+            "label": "标签前缀",
+            "labelHint": "在栏条上显示配置的文本。",
+            "approximate": "近似值",
+            "approximateHint": "在栏条及其标签上显示近似值。这可以配置要显示的段数。例如，具有 3 段的 9/10 显示为 3/3",
+            "approximateOwner": "所有者近似值",
+            "approximateOwnerHint": "表示是否也为 token 所有者显示近似值。",
+            "fgImage": "前景图像",
+            "fgImageHint": "用根据填充百分比剪切的图像替换常规栏条。",
+            "bgImage": "背景图片",
+            "bgImageHint": "用图像替换通常的栏条背景。建议两个图像的宽度与场景网格大小相同。",
+            "opacity": "不透明度",
+            "save": "更新栏条"
+        },
+        "attribute": {
+            "none": "无(移除)",
+            "custom": "自定义(以下)"
+        },
+        "visibility": {
+            "inheritFromOwner": "从所有者继承",
+            "inheritFromOther": "从所有人继承",
+            "none": "从不",
+            "always": "总是",
+            "hover": "悬停时",
+            "control": "选择时",
+            "hoverOrControl": "悬停或选择时"
+        },
+        "position": {
+            "top-inner": "顶部（内侧）",
+            "top-outer": "顶部（外侧）",
+            "bottom-inner": "底部（内侧）",
+            "bottom-outer": "底部（外侧）",
+            "left-inner": "左（内侧）",
+            "left-outer": "左（外侧）",
+            "right-inner": "右（内侧）",
+            "right-outer": "右（外侧）"
+        },
+        "add": "新增资源",
+        "defaults": {
+            "save": "保存到...",
+            "saveConfirmation": "保存在{target}中的资源。",
+            "load": "加载自...",
+            "defaultToken": "默认token",
+            "typeDefaults": "<strong>{type}</strong>默认",
+            "prototypeToken": "<strong>{name}</strong>的原型 token",
+            "activeTokens": "<strong>{name}</strong>的活跃 token"
+        }
+    }
+}
