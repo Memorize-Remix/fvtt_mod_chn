@@ -1,4 +1,4 @@
-{
+
     "levels": {
         "modulename": "Levels",
         "settings": {
@@ -7,20 +7,20 @@
                 "hint": "悬停水平对象时显示顶端和底部工具提示"
             },
             "tokenElevScale": {
-                "name": "海拔标尺",
+                "name": "高度标尺",
                 "hint": "根据受控token的高度改变token的大小"
             },
             "tokenElevScaleMultiSett": {
-                "name": "海拔高度乘数",
-                "hint": "将海拔高度乘以这个数字。大于 1 的数字会使 token 变大，小于 1 的数字会使 token 变小。"
+                "name": "高度乘数",
+                "hint": "将高度乘以这个数字。大于 1 的数字会使 token 变大，小于 1 的数字会使 token 变小。"
             },
             "fogHiding": {
                 "name": "高级战争迷雾",
                 "hint": "将未探索的楼层从已探索的战争迷雾中隐藏起来"
             },
             "lockElevation": {
-                "name": "锁定海拔",
-                "hint": "防止玩家从 token HUD 上更改海拔高度。请记住，如果玩家有编辑令牌的权限，他们就可以在token配置中更改它"
+                "name": "锁定高度",
+                "hint": "防止玩家从 token HUD 上更改高度。请记住，如果玩家有编辑token的权限，他们就可以在token配置中更改它"
             },
             "defaultLosHeight": {
                 "name": "默认token高度",
@@ -47,7 +47,7 @@
                 "hint": "必须启用'准确 token 可见性'才能使用该选项。该选项将对 token 的边角进行 11 点检查。建议您使用 3D 画布"
             },
             "blockSightMovement": {
-                "name": "围栏",
+                "name": "阻拦",
                 "hint": "启用后，高度不限制视线的墙仍会限制移动"
             },
             "forceUiRefresh": {
@@ -55,20 +55,20 @@
                 "hint": "强制更频繁地刷新levels UI，但会降低性能，如果启用可能会在特定系统上造成问题（例如 PF2e）。"
             },
             "hideElevation": {
-                "name": "隐藏海拔",
-                "hint": "从 token 隐藏海拔高度",
+                "name": "隐藏高度",
+                "hint": "从 token 隐藏高度",
                 "opt0": "不要隐藏",
                 "opt1": "为玩家隐藏",
                 "opt2": "为每个人隐藏"
             },
             "revealTokenInFog": {
-                "name": "在雾中显示 token",
+                "name": "在战争迷雾中显示 token",
                 "hint": "如果一个token可见，则揭示该token周围的战争迷雾"
             }
         },
         "tileconfig": {
-            "noOverhead": "这不是俯视图块，该图块将以背景海拔渲染。要更改这些设置，请启用俯视选项卡中的'是否俯视？' ",
-            "occlusionNone": "Occlusion Mode设置为'None'时，该图块不会遮挡视线。如果希望该图块遮挡视线，请将Occlusion Mode设置为'Fade'。",
+            "noOverhead": "这不是过顶图块，该图块将以背景海拔渲染。要更改这些设置，请启用过顶选项卡中的'是否过顶？' ",
+            "occlusionNone": "遮挡模式设置为'无'时，该图块不会遮挡视线。如果希望该图块遮挡视线，请将遮挡模式设置为'渐隐'。",
             "rangeTop": {
                 "name": "高度(顶端)"
             },
@@ -89,10 +89,10 @@
             },
             "noFogHide": {
                 "name": "不要把这块图块藏在迷雾里",
-                "hint": "从Level's '高级战争迷雾'中排除该图块"
+                "hint": "从Level的'高级战争迷雾'中排除该图块"
             },
             "range": {
-                "unit": "海拔"
+                "unit": "高度"
             },
             "excludeFromChecker": {
                 "name": "从场景检查器中排除"
@@ -135,13 +135,13 @@
         },
         "tokenconfig": {
             "tokenHeight": {
-                "name": "Token LOS高度",
+                "name": "Token LOS 高度",
                 "unit": "(距离)"
             }
         },
         "template": {
             "elevation": {
-                "name": "海拔"
+                "name": "高度"
             },
             "special": {
                 "name": "特别"
@@ -152,11 +152,11 @@
         },
         "sceneconfig": {
             "backgroundElevation": {
-                "name": "背景海拔",
+                "name": "背景高度",
                 "notes": "以距离单位表示的高度，用于配置背景图像和脚下图块的高度。"
             },
             "weatherElevation": {
-                "name": "天气海拔",
+                "name": "天气高度",
                 "notes": "以距离单位表示的高度，用于设置天气效果的高度。"
             },
             "lightMasking": {
