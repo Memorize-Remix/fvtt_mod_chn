@@ -6,7 +6,7 @@
 
   "MonksActiveTiles.ThisTile": "该图块",
   "MonksActiveTiles.TriggeringToken": "触发 Token",
-  "MonksActiveTiles.PlayerTokens": "Pl Tokens",
+  "MonksActiveTiles.PlayerTokens": "Pl Token",
   "MonksActiveTiles.CurrentLocation": "当前位置",
   "MonksActiveTiles.WithinTile": "图块内的{collection}",
   "MonksActiveTiles.WithinWall": "门下图块",
@@ -28,7 +28,7 @@
   "MonksActiveTiles.Seconds": "秒",
   "MonksActiveTiles.CreateNewAction": "创建新动作",
   "MonksActiveTiles.Active": "激活",
-  "MonksActiveTiles.RestrictedTo": "束缚Token",
+  "MonksActiveTiles.RestrictedTo": "受限Token",
   "MonksActiveTiles.ControlledBy": "受控于",
   "MonksActiveTiles.When": "当",
   "MonksActiveTiles.ChanceTrigger": "% 触发几率",
@@ -128,6 +128,7 @@
   "MonksActiveTiles.action.gametime": "游戏时间",
   "MonksActiveTiles.action.shuffle": "Shuffle Collection",
   "MonksActiveTiles.action.preloadtileimage": "预载图块图像",
+  "MonksActiveTiles.action.runcode": "运行代码",
 
   "MonksActiveTiles.filter.distance": "按距离筛选 Token",
   "MonksActiveTiles.filter.exists": "检查实体数量",
@@ -151,7 +152,7 @@
   "MonksActiveTiles.logic.checkdata": "检查数据",
   "MonksActiveTiles.logic.stoptriggers": "停止触发其他图块",
 
-  "MonksActiveTiles.ctrl.snap": "卡入网格",
+  "MonksActiveTiles.ctrl.snap": "嵌入网格",
   "MonksActiveTiles.ctrl.select-coordinates": "选择坐标",
   "MonksActiveTiles.ctrl.select-entity": "选择实体",
   "MonksActiveTiles.ctrl.select-actor": "选择角色",
@@ -293,6 +294,8 @@
   "MonksActiveTiles.ctrl.time": "时间(分)",
   "MonksActiveTiles.ctrl.landingname": "着陆点名称",
   "MonksActiveTiles.ctrl.resettype": "重置类型",
+  "MonksActiveTiles.ctrl.triggerremote": "在目的地触发",
+  "MonksActiveTiles.ctrl.code": "代码",
 
   "MonksActiveTiles.mode.enter": "进入",
   "MonksActiveTiles.mode.exit": "退出",
@@ -341,7 +344,7 @@
   "MonksActiveTiles.add.add": "添加",
   "MonksActiveTiles.add.remove": "移除",
   "MonksActiveTiles.add.toggle": "切换",
-  "MonksActiveTiles.add.clear": "清楚",
+  "MonksActiveTiles.add.clear": "清除",
 
   "MonksActiveTiles.for.all": "所有人",
   "MonksActiveTiles.for.gm": "仅限GM",
@@ -392,7 +395,7 @@
   "MonksActiveTiles.rollmode.public": "公开掷骰",
   "MonksActiveTiles.rollmode.private": "私聊 GM 掷骰",
   "MonksActiveTiles.rollmode.blind": "GM盲骰",
-  "MonksActiveTiles.rollmode.self": "自己掷骰",
+  "MonksActiveTiles.rollmode.self": "自骰",
 
   "MonksActiveTiles.notification.info": "信息",
   "MonksActiveTiles.notification.warning": "警告",
