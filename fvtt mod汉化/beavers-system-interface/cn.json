@@ -1,0 +1,27 @@
+{
+    "beaversSystemInterface": {
+        "VersionsMismatch": "您的bsa-x模块已过期，不再兼容",
+        "SystemNotFound": "找不到该系统的实现。可能您错过了安装正确的beavers系统实现模块",
+        "MethodNotSupported": "您的系统尚不支持该方法：",
+        "RemainingQuantityLessThenZero": "数量不足：",
+        "NotEnoughMoney": "余额不足",
+        "DocumentNotFound": "未找到此文档：",
+        "SystemAdaptionNeeded": "如果没有活动的系统适配模块，则无法执行此方法。",
+        "SystemAdaptionNeededAdditional": "如果您希望访问这些方法而不出错，则需要在beaver系统接口上注册您的模块",
+        "NoModulesRegistered": "没有注册的模块需要beaver -system-interface。",
+        "NoImplementationRegistered": "没有系统专用的适配模块，只有一些方法可以在此模式下工作。",
+        "select-dialog": {
+            "title": "选择",
+            "preselection": "选择"
+        },
+        "settings": {
+            "enableSelection": {
+                "hint": "Beavers选择是一个可含有多个图片的自定义设计选择框。由于它不是原生实现，因此在某些浏览器上可能会出现问题。如果出现问题，您可以在这里禁用它。",
+                "name": "启用beavers选择"
+            }
+        },
+        "TokenMovement": {
+          "desc": "该模块允许控制Token的移动"
+        }
+    }
+}
