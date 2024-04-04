@@ -1,0 +1,111 @@
+{
+	"DataInspector": {
+		"DataButton": "数据",
+		"Instructions": "左键单击展开。<wbr>右键单击<em>key</em>可将路径复制到剪贴板，<wbr>右键单击<em>value</em>可将该值复制到剪贴板。",
+		"Search": "搜索",
+		"Filter": "过滤",
+		"IDValue": "ID: {id}\n点击复制到剪贴板",
+		"Key": "Key",
+		"Value": "Value",
+		"NotAvailable": "n/a",
+		"Link": "链接",
+		"NoData": "未找到数据。",
+		"DataEntries": "数据条目",
+		"MaxDepth": "最大深度",
+		"Info": {
+			"CopyValue": "复制到剪贴板的\"{path}\"值",
+			"CopyPath": "复制到剪贴板的路径\"{path}\""
+		},
+		"Depth": {
+			"Plain": "原始数据",
+			"Functional": "包括函数"
+		},
+		"Context": {
+			"OpenInspector": "在数据检查器中打开"
+		},
+		"Settings": {
+			"AllowEditing": "允许编辑",
+			"AllowEditingHint": "允许通过双击值进行简单编辑。这会影响所有用户。如果您使用此功能造成损坏，责任由您自负。",
+			"AllowEditingUnsupported": "允许编辑不支持的内容",
+			"AllowEditingUnsupportedHint": "允许编辑某些额外的数据类型（如基本对象和数组）。只提供删除选项。",
+			"AllowUsers": "允许用户",
+			"AllowUsersHint": "如果启用，用户就可以访问该模组。",
+			"Tooltip": "显示条目提示",
+			"TooltipHint": "显示工具提示，更直接地显示每行信息，如完整路径。",
+			"IncludeFunctions": "包括函数",
+			"IncludeFunctionsHint": "默认在数据树中包含函数。",
+			"ResultQuality": "结果质量",
+			"ResultQualityHint": "默认搜索结果质量。越高匹配越严格，越低匹配越不严格。",
+			"DefaultMode": "默认模式",
+			"DefaultModeHint": "默认数据模式。",
+			"Strictness": "严格性",
+			"StrictnessHint": "搜索严格程度。左侧更宽松，右侧更严格。",
+			"Functions": "函数",
+			"FunctionsHint": "包括getter和函数。"
+		},
+		"Editor": {
+			"Title": "编辑器",
+			"TokenWarning": "更改覆盖数据可能会暂时破坏 actor。重新打开工作表就可以修复。",
+			"TypeWarning": "小心！您正在更改数据类型。",
+			"Dangerous": "这是非常危险的。"
+		},
+		"Data": {
+			"Mixed": "混合",
+			"Roll": "掷骰数据",
+			"Source": "源",
+			"Derived": "衍生",
+			"Override": "覆盖",
+			"Flags": "标志",
+			"Legend": "掷骰数据–用于计算公式。<br>衍生数据–如系统、宏、模组等所见。<br>源数据–永久存储数据。"
+		},
+		"DataValue": {
+			"Getter": "getter",
+			"Function": "函数",
+			"Value": "Value",
+			"Total": "总计",
+			"Length": "{length}字符",
+			"Null": "空",
+			"Undefined": "未定义",
+			"Error": {
+				"Unidentified": "ERROR: 不明类型"
+			}
+		},
+		"Error": {
+			"NavigationFailure": "导航至目标数据路径失败： {path}",
+			"NoGetterEdit": "无法编辑 getter 内部的值。",
+			"UnsupportedEditType": "不支持的编辑类型： {type}"
+		},
+		"Types": {
+			"undefined": "未定义",
+			"null": "空",
+			"object": "对象Object",
+			"number": "数量",
+			"boolean": "Boolean",
+			"string": "String",
+			"array": "数组Array",
+			"set": "集合Set",
+			"map": "映射Map",
+			"collection": "集合Collection",
+			"function": "函数",
+			"getter": "Getter",
+			"model": "数据模型",
+			"data": "文件数据",
+			"document": "文件",
+			"placeable": "可放置",
+			"app": "应用",
+			"pixi": "PIXI graphic",
+			"custom": "自定义"
+		},
+		"Path": "路径",
+		"PathHint": "数据路径",
+		"Mode": "模式",
+		"Type": "类型",
+		"Document": "文件",
+		"DocumentID": "文件ID",
+		"DataModel": "数据模型",
+		"ChildCount": "子类",
+		"StringLength": "长度",
+		"Update": "更新",
+		"Delete": "删除"
+	}
+}

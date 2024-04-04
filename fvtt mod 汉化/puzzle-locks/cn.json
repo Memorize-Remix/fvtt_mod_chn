@@ -1,0 +1,217 @@
+{
+    "puzzle-locks": {
+        "settings": {},
+        "general-lock-config": {
+            "header-buttons": {
+                "copyContentLink": "复制内容链接",
+                "unlock": "打开拼图"
+            },
+            "title": "常规锁配置",
+            "label": {
+                "label": "标签",
+                "placeholder": "门禁系统"
+            },
+            "description": {
+                "label": "描述",
+                "placeholder": "这是一个门的安全系统。"
+            },
+            "unlocked": {
+                "label": "已解锁"
+            },
+            "attempts": {
+                "label": "次数限制",
+                "notes": "允许的尝试次数，设置为 -1 表示无限制。"
+            },
+            "lockType": {
+                "label": "锁类型",
+                "configure": "配置",
+                "none": "无 (禁用)"
+            },
+            "unlockSound": {
+                "label": "解锁音效"
+            },
+            "interactionSound": {
+                "label": "互动音效"
+            },
+            "backgroundImage": {
+                "label": "背景图片"
+            },
+            "glow": {
+                "label": "光晕效果",
+                "notes": "启用边框和文字发光/阴影效果，这将使主题更适合科幻场景。"
+            },
+            "textColor": {
+                "label": "文本颜色"
+            },
+            "primaryColor": {
+                "label": "主色调",
+                "notes": "某些锁类型可能不使用此颜色。留空表示使用锁的默认颜色。"
+            },
+            "secondaryColor": {
+                "label": "辅色调",
+                "notes": "某些锁类型可能不使用此颜色。留空表示使用锁的默认颜色。"
+            },
+            "primaryFont": {
+                "label": "主要字体"
+            },
+            "secondaryFont": {
+                "label": "次要字体",
+                "notes": "某些锁类型可能不使用此字体。"
+            },
+            "font": {
+                "inherit": "继承"
+            },
+            "unlockMacro": {
+                "label": "解锁宏",
+                "notes": "解锁时运行的宏。在宏中，您可以访问'对象object'来获取解锁的文档，访问'用户user'来获取解锁的用户。"
+            },
+            "permission": {
+                "label": "关于解锁权限",
+                "notes": "决定玩家在解锁文件时获得的权限级别，以及是只给解锁的玩家还是给所有玩家。如果文件是一扇门，此设置将被忽略，门将被解锁。",
+                "noChange": "无变更",
+                "all": "全部PL",
+                "unlocking": "解锁PL"
+            }
+        },
+        "number-lock": {
+            "name": "数字/图案",
+            "description": "一把密码锁。玩家必须输入正确的密码才能解锁文件。您可以用字形或图像代替数字，使锁更具主题性。",
+            "code": {
+                "label": "Code"
+            },
+            "keypad": {
+                "label": "Keypad"
+            }
+        },
+        "password-lock": {
+            "name": "密码",
+            "description": "一个简单的密码锁。玩家必须输入正确的密码才能解锁文件。",
+            "password": {
+                "label": "密码",
+                "placeholder": "a$$w0rd"
+            }
+        },
+        "item-lock": {
+            "name": "物品",
+            "description": "需要玩家将一个或多个物品拖放到正确的插槽中才能解锁的锁。",
+            "item": {
+                "label": "物品名"
+            },
+            "itemImage": {
+                "label": "插槽图像"
+            },
+            "deleteItems": {
+                "label": "删除物品",
+                "notes": "如果选中此选项，则在解锁时会删除玩家背包中的物品。"
+            }
+        },
+        "switches-lock": {
+            "name": "开关",
+            "description": "一种需要玩家将一组二进制开关配置到正确位置才能解锁的锁。",
+            "switchesSolution": {
+                "label": "开关配置",
+                "notes": "答案是以'0110'格式配置开关。每个数字代表一个开关，0 表示关闭，1 表示打开。开关数量不限。"
+            },
+            "showSwitches": {
+                "label": "显示开关",
+                "notes": "是否显示开关按钮。如果禁用，则只显示开/关状态指示灯。"
+            }
+        },
+        "cryptex-lock": {
+            "name": "隐芯",
+            "description": "一种需要玩家将一组圆柱体旋转到正确位置以形成解锁方法的锁。可以使用表情符号或字形来表示圆柱体上的字符。不同的圆柱体可以有不同的字符集。",
+            "solution": {
+                "label": "答案"
+            },
+            "cylinder": {
+                "label": "圆筒",
+                "notes": "晶体管使用的圆柱体。每个圆柱体字符之间用逗号隔开。"
+            },
+            "glyphs": {
+                "label": "图形",
+                "notes": "可在隐芯中使用的字形。每个字形应以逗号分隔。"
+            }
+        },
+        "sudoku-lock": {
+            "name": "数独",
+            "description": "这是一种需要玩家解开数独谜题才能解锁文件的锁。可以用图像或字形替换默认数字，使锁更具主题性。",
+            "generate": "生成数独",
+            "difficulty": {
+                "label": "难度"
+            },
+            "grid": {
+                "label": "网格",
+                "4": "4x4",
+                "9": "9x9"
+            },
+            "sudoku": {
+                "label": "数独"
+            },
+            "key": {
+                "label": "密钥"
+            }
+        },
+        "image-wheel": {
+            "name": "图像轮",
+            "description": "这种锁要求玩家将一组同心圆环旋转到正确的位置，以便对齐图像。",
+            "image": {
+                "label": "图像"
+            },
+            "wheelCount": {
+                "label": "轮数"
+            },
+            "angleStep": {
+                "label": "步距角"
+            },
+            "fixed": {
+                "label": "固定轮",
+                "notes": "不应旋转的轮子。其中 1 是最外侧的轮子。"
+            }
+        },
+		"mastermind-lock": {
+            "name": "珠玑妙算",
+            "description": "一种需要玩家猜出正确的颜色或字母组合才能解锁的锁。每次玩家尝试解锁时，都会收到反馈，显示有多少种颜色或字母是正确的，以及在正确的位置上。绿色表示颜色和位置正确，黄色表示颜色正确但位置错误，红色表示颜色不正确。",
+            "reset": "重置",
+            "solution": {
+                "label": "答案",
+                "notes": "珠玑妙算的答案。每种颜色或字母之间应该用逗号隔开。您可以使用 css 颜色（如 'red'）或十六进制代码（如'#ff0000'）。"
+            },
+            "pipOptions": {
+                "label": "解锁",
+                "notes": "玩家可以用来猜测答案的颜色或字母。每种颜色或字母应用逗号分隔。您可以使用 css 颜色（如 'red'）或十六进制代码（如'#ff0000'）。"
+            }
+        },
+        "fill-blanks-lock": {
+            "name": "填空",
+            "description": "一种需要玩家在文本中填空才能解锁的锁。玩家必须按照正确的顺序输入正确的字符。",
+            "solution": {
+                "label": "答案",
+                "notes": "填空的答案。这应该是填空后的完整全文。",
+                "placeholder": "The quick brown fox jumps over the lazy dog."
+            },
+            "text": {
+                "label": "文本",
+                "notes": "玩家必须填写的空白文本。用下划线表示空白。",
+                "placeholder": "The _____ brown fox jumps ____ the ____ dog."
+            },
+            "caseSensitive": {
+                "label": "区分大小写"
+            }
+        },
+        "flags": {},
+        "attempts": "剩余尝试",
+        "headerConfig": "拼图锁",
+        "unlocked": "已解锁",
+        "how-to": "它是如何工作的？",
+        "notifications": {
+            "noLock": "本文件尚未上锁。",
+            "alreadyUnlocked": "本文件已解锁。",
+            "noLockSelected": "未选择锁类型。",
+            "unlocked": "已解锁。",
+            "noGM": "解锁本文件需要GM。",
+            "failedAttempt": "解锁失败。",
+            "contentLinkCopied": "内容链接已复制到剪贴板。",
+            "locked": "本文件已锁定。作为 GM，您可以正常打开它。"
+        }
+    }
+}

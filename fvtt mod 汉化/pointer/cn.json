@@ -1,0 +1,75 @@
+{
+  "POINTER": {
+    "Settings": {
+      "Name": "选择热键、ping 和指针！",
+      "Button": "设置和设计工作室",
+      "Controls": {
+        "header": "控制",
+        "inputhint": "点击输入，选择所需键值。",
+        "pointer": {
+          "label": "指针",
+          "hint": "按下该按钮时，指针会跟随鼠标光标移动，同时会在画布上移动。"
+        },
+        "ping": {
+          "label": "Ping",
+          "pointerActive": "只有当指针处于激活状态时才能 Ping？",
+          "pointerActiveHint": "激活该选项后，只有在指针已经激活的情况下，按下按钮才会显示 ping。",
+          "hint": "按下此按钮后，如果光标位于画布上方，ping 将出现在光标的当前位置。您可以选择只在指针处于激活状态时显示 ping。",
+          "force": "在 ping 时移动玩家视图",
+          "forceHint": "按下此按钮会放置ping，并将玩家的视图强制切换到您的视图。"
+        }
+      },
+      "GM": {
+        "applyToAll": {
+          "label": "将设置应用于所有玩家?",
+          "button": "是!",
+          "hint": "所有玩家都将获得您的热键设置以及选定的 ping 和指针。这并不能阻止玩家事后更改这些设置！"
+        }
+      },
+      "Designer": {
+        "Graphic": "图形",
+        "Scale": {
+          "label": "比例"
+        },
+        "Angle": {
+          "label": "角度"
+        },
+        "Offset": {
+          "label": "偏移"
+        },
+        "Tint": {
+          "label": "色调颜色",
+          "userColor": "使用玩家颜色作为色调"
+        },
+        "Animations": {
+          "header": "动画",
+          "rotate": {
+            "label": "旋转"
+          },
+          "scale": {
+            "label": "比例"
+          },
+          "duration": "持续时间",
+          "easing": "缓和方法"
+        },
+        "pingDuration": "持续时间为 Ping"
+      },
+      "Chooser": {
+        "addPointer": "创建新的"
+      }
+    },
+    "General": {
+      "min": "最小",
+      "max": "最大",
+      "name": "名称",
+      "ping": "Ping",
+      "pointer": "指针",
+      "delete": "删除?",
+      "units": {
+        "grid": "网格单元",
+        "degree": "角度",
+        "seconds": "s"
+      }
+    }
+  }
+}

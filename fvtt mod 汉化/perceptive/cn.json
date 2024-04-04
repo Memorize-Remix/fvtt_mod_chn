@@ -13,7 +13,7 @@
 				"PP"					: "计算被动察觉: {pValue}",
 				"Spottedby"				: "被: {pNames}发现",
 				"LightModifier"			: "照明察觉DC调整值: {pValue}",
-				"LightRollBehaviour"	: "Illumination perception roll behaviour modifier: {pBehaviour}",
+				"LightRollBehaviour"	: "照明察觉掷骰行为调整: {pBehaviour}",
 				"VisionLevel" : {
 					"name"				: "视觉等级: {pLevel}",
 					"value0"			: "基础视野",
@@ -27,7 +27,9 @@
 					"value1"			: "弱光",
 					"value2"			: "明亮"
 				},
-				"LingeringAP"				: "Lingering active perception"
+				"LingeringAP"				: "残留的主动感知",
+				"PassiveDC"				: "被动察觉 DC",
+				"ActiveDC"				: "主动察觉 DC"
 			},
 			"SpottingConfirm" : {
 				"name"					: "确定发现",
@@ -48,7 +50,7 @@
 			"SoundnImages"				: "噪音 & 图片",
 			"Tile"						: "图块",
 			"Triggers"					: "触发器",
-			"ResetSpottedby"			: "重置 \"spotted by\"",
+			"ResetSpottedby"			: "重置 \"被发现\"",
 			"with"						: "with",
 			"VisionChannels"			: "视觉通道",
 			"OpenVCMenu"				: "打开视觉通道菜单"
@@ -512,8 +514,13 @@
 			},
 			
 			"followTokens" : {
-				"name" 					: "跟随指示物",
-				"descrp" 				: "是否让画面跟随选择的指示物移动"
+				"name" 					: "跟随token",
+				"descrp" 				: "是否让画面跟随选择的token移动"
+			},
+			
+			"followonControl" : {
+				"name" 					: "跟踪控制",
+				"descrp" 				: "是否让镜头应在选择 token 的瞬间发生变化"
 			},
 			
 			"MessagePopUps" : {
@@ -548,6 +555,16 @@
 					"none"				: "不存在",
 					"left"				: "左边",
 					"right"				: "右边"
+				}
+			},
+			
+			"PDCInputPosition" : {
+				"name" 					: "察觉 DC 输入的位置",
+				"descrp" 				: "在 token HUD 上，察觉 DC 指示器的位置应在何处",
+				"options" : {
+					"none"				: "无",
+					"left"				: "左",
+					"right"				: "右"
 				}
 			},
 			
@@ -797,6 +814,7 @@
 					"SeethroughWalls"	: "穿过墙壁",
 					"Range"				: "范围",
 					"RangeFormula"		: "范围公式",
+					"RangeMin"			: "最小范围",
 					"Color"				: "颜色",
 					"EffectFilter" : {
 						"name"			: "效果过滤",
@@ -815,12 +833,14 @@
 					},
 					"EffectFilterColor" : "效果滤镜颜色",
 					"Transparency"		: "透明度",
+					"defaultReceiver"	: "接收默认值",
 					"VCID"				: "内部 ID",
 					"Emits"				: "发出",
 					"Receives"			: "接收",
 					"ReceiveFiltered"	: "接收过滤",
 					"ReceiveRange"		: "自定义范围",
 					"CalculatedRange"	: "计算范围",
+					"ReceiveRangeMin"	: "自定义范围最小值",
 					"Sight"				: "视觉",
 					"Movement"			: "移动"
 				}
@@ -880,7 +900,69 @@
 							"name"			: "目标"
 						}
 					}
+				},
+				
+				"give-VC" : {
+					"name"					: "提供视觉通道",
+					"descrp"				: "<span class=\"logic-style\">{pname}</span> <span class=\"value-style\">{pChannel}</span> to <span class=\"entity-style\">{pEntities}</span> as <span class=\"value-style\">{pType}</span>",
+					"settings" : {
+						"channelid" : {
+							"name"			: "通道"
+						},
+						"type" : {
+							"name"			: "提供为",
+							"options" : {
+								"Emits"		: "发射",
+								"Receives"	: "接收",
+								"Sight"		: "视觉(仅限墙)",
+								"Movement"	: "移动(仅限墙)"
+							}
+						}
+					}
+				},
+				
+				"remove-VC" : {
+					"name"					: "移除视觉通道",
+					"descrp"				: "<span class=\"logic-style\">{pname}</span> <span class=\"value-style\">{pChannel}</span> from <span class=\"entity-style\">{pEntities}</span> as <span class=\"value-style\">{pType}</span>",
+					"settings" : {
+						"channelid" : {
+							"name"			: "通道"
+						},
+						"type" : {
+							"name"			: "删除为",
+							"options" : {
+								"Emits"		: "发射",
+								"Receives"	: "接收",
+								"Sight"		: "视觉(仅限墙)",
+								"Movement"	: "移动(仅限墙)"
+							}
+						}
+					}
+				},
+				
+				"reset-Spottedby" : {
+					"name"					: "重置\"被发现\"",
+					"descrp"				: "<span class=\"logic-style\">{pname}</span> of <span class=\"entity-style\">{pEntities}</span>"
+				},
+				
+				"set-canbeSpotted" : {
+					"name"					: "设置\"可被发现\"",
+					"descrp" : {
+						"value"				: "<span class=\"logic-style\">{pname}</span> of <span class=\"entity-style\">{pEntities}</span> to <span class=\"value-style\">{pvalue}</span>",
+						"toggle"			: "<span class=\"logic-style\">切换\"可被发现\"</span><span class=\"entity-style\">{pEntities}</span>"
+					},
+					"settings" : {
+						"setto" : {
+							"name"  		: "设置为",
+							"options" : {
+								"true"		: "True",
+								"false"		: "False",
+								"toggle"	: "切换"
+							}
+						}
+					}
 				}
 			}
 		}
-	},
+	}
+}

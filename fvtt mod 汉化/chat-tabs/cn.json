@@ -1,0 +1,88 @@
+{
+	"TC": {
+		"SETTINGS": {
+			"ChatTabsSettings": {
+				"name": "聊天选项卡设置",
+				"MessageTypes": "消息类型",
+				"RolePermissions": "角色权限",
+				"UserPermissions": "用户权限"
+			},
+			"OocWebhook.name": "超游聊天Webhook",
+			"OocWebhook.hint": "OOC聊天始终是全局性的，从不针对特定场景",
+
+			"IcFallbackWebhook.name": "角色聊天Webhook",
+			"IcFallbackWebhook.hint": "如果没有设置任何场景webhook，这是一个备用webhook。请不要在{setting}中将多个聊天标签页设置为'角色In Character'，否则所有'角色In Character'频道的消息都会发送到该标签页。",
+
+			"IcSceneWebhook.name": "角色聊天Webhook",
+			"IcSceneWebhook.hint": "请查看关于 webhooks 的说明。不要在{setting}中将多个聊天选项卡设置为'角色内'，否则所有'角色内 '频道的信息都会发送到该选项卡。",
+
+			"IcChatInOoc.name": "将角色内信息转换为 OOC 聊天",
+			"IcChatInOoc.hint": "当玩家在 OOC 标签激活的情况下发送信息时，信息将发布在该聊天室而不是角色内聊天。这对忘记使用 /ooc 的玩家很有用。",
+
+			"rollsToWebhook": {
+				"name": "向 Webhooks 发送掷骰信息",
+				"hint": "这将把掷骰信息发送到相应的webhook（如果已设置）。"
+			},
+
+			"HideInStreamView.name": "禁用流媒体视图",
+			"HideInStreamView.hint": "在 /stream 上观看游戏时禁用聊天选项卡。",
+
+			"PerScene.name": "分割每个场景的角色和掷骰",
+			"PerScene.hint": "使每个场景都有自己的聊天。这样还能通过场景配置对话框为每个场景添加 Webhooks。",
+
+			"AutoNavigate.name": "在新信息中切换到标签页",
+			"AutoNavigate.hint": "如果有新信息发布，则会切换到发布的标签页。",
+
+			"IcWhispers.name": "交换私聊，使其显示在角色聊天中，而不是 OOC 中？",
+			"IcWhispers.hint": "默认为关闭",
+
+			"tabExclusive": {
+				"name": "选项卡专属信息",
+				"hint": "使信息仅限于其发布的聊天选项卡。只有 OOC 和私聊信息例外。信息会分配给标签页的 ID，而不是它的名字，因此在删除标签页时要小心。"
+			},
+
+			"tabExclusiveOOC": {
+				"name": "选项卡专属 OOC 消息",
+				"hint": "允许 OOC 消息受 {setting} 设置的影响。"
+			}
+		},
+		"TABS": {
+			"IC": "Token",
+			"OOC": "OOC",
+			"Rolls": "掷骰",
+			"NewTab": "新选项卡",
+			"AddTab": "添加选项卡"
+		},
+		"MESSAGE_TYPES": {
+			"EMOTE": {
+				"label": "表情",
+				"hint": "由 /emote 命令发送的信息。"
+			},
+			"IC": {
+				"label": "角色内",
+				"hint": "场景中拥有 token 的用户发送的信息。"
+			},
+			"OOC": {
+				"label": "OOC",
+				"hint": "由 /ooc 命令或场景中未分配token的用户发送的信息。"
+			},
+			"OTHER": {
+				"label": "其他",
+				"hint": "发送的信息未定义类型。"
+			},
+			"ROLL": {
+				"label": "掷骰",
+				"hint": "由 /roll 命令发送的信息。"
+			},
+			"WHISPER": {
+				"label": "私聊",
+				"hint": "通过 /whisper 命令发送的信息。"
+			}
+		},
+		"PERMISSIONS": {
+			"NONE": "无",
+			"READ": "可读",
+			"READ_WRITE": "可读 & 可写"
+		}
+	}
+}

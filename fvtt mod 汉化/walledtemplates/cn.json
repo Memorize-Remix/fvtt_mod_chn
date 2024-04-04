@@ -1,0 +1,120 @@
+{
+    "walledtemplates.MeasuredTemplateConfiguration.LegendTitle": "Walled Templates",
+    "walledtemplates.MeasuredTemplateConfiguration.walls-block.Name": "墙",
+    "walledtemplates.MeasuredTemplateConfiguration.walls-block.Hint": "圆形/矩形: 扩散; 线形/锥形: 反射。",
+
+    "walledtemplates.MeasuredTemplateConfiguration.wall-restriction-type.Name": "墙壁类型",
+    "walledtemplates.MeasuredTemplateConfiguration.walls-restriction-type.Hint": "模板忽略不阻挡该类型的墙壁。",
+
+    "walledtemplates.MeasuredTemplateConfiguration.globalDefault": "使用全局默认",
+    "walledtemplates.MeasuredTemplateConfiguration.unwalled": "不阻挡模板",
+    "walledtemplates.MeasuredTemplateConfiguration.walled": "阻挡模板",
+    "walledtemplates.MeasuredTemplateConfiguration.recurse": "反射/扩散模板",
+
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.Name": "所附Token?",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.Hint": "连接该模板，使其与 token 一起移动。",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.useSelectedToken": "附加最后选定的 token",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.useTargetedToken": "附加最后标记的 token",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.removeToken": "移除所附token",
+
+    "walledtemplates.MeasuredTemplateConfiguration.rotate-with-token.Name": "使用 token 旋转",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.Hint": "当 token 旋转时，围绕 token 旋转该模板。",
+
+    "walledtemplates.MeasuredTemplateConfiguration.elevation.Name": "高度",
+
+    "walledtemplates.dnd5e-spell-config.attach-token.Name": "附加到?",
+    "walledtemplates.dnd5e-spell-config.attach-token.na": "N/A",
+    "walledtemplates.dnd5e-spell-config.attach-token.caster": "施放者",
+    "walledtemplates.dnd5e-spell-config.attach-token.target": "最后标记",
+
+    "walledtemplates.dnd5e-spell-config.add-token-size.Name": "在模板中增加 token 大小",
+    "walledtemplates.dnd5e-spell-config.add-token-size.Hint": "如果法术位于 token 的中心，则将 token 的尺寸（宽/高的最小值）加到模板尺寸上。",
+
+    "walledtemplates.settings.submenu.title": "默认形状设置",
+
+    "walledtemplates.settings.submenu.circle.Name": "圆形",
+    "walledtemplates.settings.submenu.cone.Name": "锥形",
+    "walledtemplates.settings.submenu.ray.Name": "线形",
+    "walledtemplates.settings.submenu.rect.Name": "矩形",
+
+    "walledtemplates.settings.submenu.circle.Title": "默认圆形模板设置",
+    "walledtemplates.settings.submenu.cone.Title": "默认锥形模板设置",
+    "walledtemplates.settings.submenu.ray.Title": "默认线形模板设置",
+    "walledtemplates.settings.submenu.rect.Title": "默认矩形模板设置",
+
+    "walledtemplates.settings.submenu.circle.Description": "默认模板设置，除非被特定法术（dnd5e）或宏覆盖。",
+    "walledtemplates.settings.submenu.cone.Description": "默认模板设置，除非被特定法术（dnd5e）或宏覆盖。",
+    "walledtemplates.settings.submenu.ray.Description": "默认模板设置，除非被特定法术（dnd5e）或宏覆盖。",
+    "walledtemplates.settings.submenu.rect.Description": "默认模板设置，除非被特定法术（dnd5e）或宏覆盖。",
+
+    "walledtemplates.settings.submenu.autotarget-override.Name": "覆盖高亮/自动标记",
+    "walledtemplates.settings.submenu.autotarget-override.Hint": "覆盖此形状的默认高亮/自动标记设置",
+
+    "walledtemplates.settings.default_circle.Name": "墙壁阻挡",
+    "walledtemplates.settings.default_cone.Name": "墙壁阻挡",
+    "walledtemplates.settings.default_ray.Name": "墙壁阻挡",
+    "walledtemplates.settings.default_rect.Name": "墙壁阻挡",
+
+    "walledtemplates.settings.default_circle.Hint": "为新创建的圆形模板选择默认值。圆形可以扩散，但不能反射。",
+    "walledtemplates.settings.default_cone.Hint": "为新创建的锥形模板选择默认值。锥形可以反射，但不能扩散。",
+    "walledtemplates.settings.default_ray.Hint": "为新创建的线形模板选择默认值。线形可以反射，但不能扩散。",
+    "walledtemplates.settings.default_rect.Hint": "为新创建的矩形模板选择默认值。矩形可以扩散，但不能反射。",
+
+    "walledtemplates.settings.default-circle-wall-restriction.Name": "墙壁限制",
+    "walledtemplates.settings.default-cone-wall-restriction.Name": "墙壁限制",
+    "walledtemplates.settings.default-ray-wall-restriction.Name": "墙壁限制",
+    "walledtemplates.settings.default-rect-wall-restriction.Name": "墙壁限制",
+
+    "walledtemplates.settings.default-circle-wall-restriction.Hint": "阻挡这种类型的墙壁会阻挡圆形模板。",
+    "walledtemplates.settings.default-cone-wall-restriction.Hint": "阻挡这种类型的墙壁会阻挡锥形模板。",
+    "walledtemplates.settings.default-ray-wall-restriction.Hint": "阻挡这种类型的墙壁会阻挡线形模板。",
+    "walledtemplates.settings.default-rect-wall-restriction.Hint": "阻挡这种类型的墙壁会阻挡矩形模板。",
+
+    "walledtemplates.settings.unwalled": "不受墙壁阻挡",
+    "walledtemplates.settings.walled": "被墙壁阻挡",
+    "walledtemplates.settings.recurse": "反射/扩散",
+
+    "walledtemplates.settings.autotarget-menu.Name": "启用自动标记",
+    "walledtemplates.settings.autotarget-menu.Hint": "选择切换选项后，模板控制栏上的标记控制按钮将允许您在标记或不标记之间进行切换。",
+    "walledtemplates.settings.autotarget-menu.Choice.no": "不自动标记",
+    "walledtemplates.settings.autotarget-menu.Choice.toggle-off": "显示切换按钮；默认为关闭",
+    "walledtemplates.settings.autotarget-menu.Choice.toggle-on": "显示切换按钮；默认为打开",
+    "walledtemplates.settings.autotarget-menu.Choice.yes": "总是自动标记",
+
+    "walledtemplates.settings.autotarget-method.Name": "高亮/自动标记方法",
+    "walledtemplates.settings.autotarget-method.Hint": "如何高亮显示模板下的网格方格和自动标记 token。",
+    "walledtemplates.settings.autotarget-method.Method.center": "模板内的 token 中心",
+    "walledtemplates.settings.autotarget-method.Method.overlap": "token 区域与模板重叠",
+
+    "walledtemplates.settings.autotarget-area.Name": "高亮/自动标记百分比",
+    "walledtemplates.settings.autotarget-area.Hint": "仅适用于重叠高亮/自动标记方法。必须与模板重叠才能标记的 token 边界或网格区域的百分比。0 表示任何重叠都计算在内。(提示：点击方格后使用方向键以 0.01 为单位递增）。",
+
+    "walledtemplates.settings.snapGrid.Name": "捕捉网格交叉点",
+    "walledtemplates.settings.snapGrid.Hint": "拖动模板时按住 shift 键，可捕捉到半网格增量，如网格正方形中心。",
+
+    "walledtemplates.settings.diagonal-scaling-ray.Name": "缩放对角线形",
+    "walledtemplates.settings.diagonal-scaling-ray.Hint": "缩放线形模板，使其符合 5-5-5 对角线规则。",
+
+    "walledtemplates.settings.diagonal-scaling-cone.Name": "缩放对角锥形",
+    "walledtemplates.settings.diagonal-scaling-cone.Hint": "缩放锥形模板，使其符合 5-5-5 对角线规则。",
+
+    "walledtemplates.settings.diagonal-scaling-circle.Name": "将圆形转换为方形",
+    "walledtemplates.settings.diagonal-scaling-circle.Hint": "将圆形模板转换为方形，以便更好地符合 5-5-5 对角线规则。",
+
+    "walledtemplates.settings.diagonal-scaling-rect.Name": "未使用： 缩放对角矩形",
+    "walledtemplates.settings.diagonal-scaling-rect.Hint": "未使用",
+
+    "walledtemplates.settings.hideBorder.Name": "隐藏模板边框",
+    "walledtemplates.settings.hideBorder.Hint": "除非将鼠标悬停在模板控制图标上，否则不会显示模板形状的轮廓。",
+
+    "walledtemplates.settings.hideHighlighting.Name": "隐藏模板高亮",
+    "walledtemplates.settings.hideHighlighting.Hint": "除非将鼠标悬停在模板控制图标上，否则不会显示高亮的模板网格。",
+
+    "walledtemplates.controls.autotarget.Title": "使用模板自动标记 token",
+
+    "walledtemplates.notifications.attach-last-selected-token": "请选择要附加的 token。",
+    "walledtemplates.notifications.attach-last-targeted-token": "请标记要附加的 token。",
+
+    "walledtemplates.keybindings.autoTarget.name": "切换模板自动标记",
+    "walledtemplates.keybindings.autoTarget.hint": "默认为按键的其他用途。例如，如果设置为'T'，则在将鼠标悬停在 token 上时不起作用。此外，只有在设置中启用自动标记切换时才会起作用。而且只在 token 或模板图层中起作用。"
+}
