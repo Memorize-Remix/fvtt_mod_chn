@@ -107,5 +107,11 @@
 - #### [Forien's Easy Polls](https://foundryvtt.com/packages/forien-easy-polls)
 - #### [Bar Brawl](https://foundryvtt.com/packages/barbrawl)
 - #### [Link Item and Resource DnD5e](https://foundryvtt.com/packages/link-item-resource-5e)
+- #### [Walled Templates](https://foundryvtt.com/packages/walledtemplates)
+- #### [Sequencer](https://foundryvtt.com/packages/sequencer)
+- #### [Token Magic FX](https://foundryvtt.com/packages/tokenmagic)
+- #### [Puzzle Locks](https://foundryvtt.com/packages/puzzle-locks)
+- #### [Spotlight Omnisearch](https://foundryvtt.com/packages/spotlight-omnisearch)
+- #### [PnP - Pointer and Pings!](https://foundryvtt.com/packages/pointer)
 
 
