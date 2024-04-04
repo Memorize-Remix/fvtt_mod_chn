@@ -70,7 +70,7 @@
 			"numberOfMessagesToDisplay.name": "要显示的信息数量",
 			"numberOfMessagesToDisplay.hint": "您可以调整此设置来调整显示的信息数量。设置为 0 将允许显示 999 条信息。请注意，这里没有滚动条，如果信息超出了浏览器的高度，你将无法与之互动。",
 			"inactiveScale.name": "不活跃聊天比例",
-			"inactiveScale.hint": "当聊天侧边栏不活动时，您可以调整其大小，使其更不碍事。",
+			"inactiveScale.hint": "当聊天侧边栏不激活时，您可以调整其大小，使其更不碍事。",
 			"inactiveOpacity.name": "不透明聊天比例",
 			"inactiveOpacity.hint": "您可以调整聊天信息在未悬停时的不透明度。",
 			"chatPosition": {
@@ -1853,7 +1853,7 @@
         },
         "add-event": {
             "title": "添加事件",
-            "duration": "活动时间（轮）",
+            "duration": "激活时间（轮）",
             "error": "Error: 您必须为事件提供名称、图像和先攻值。",
             "expired": "事件 %n 已过期。"
         },
@@ -3654,7 +3654,7 @@
 	"FSC.Configuration.Client.CompactViewScale.Description": "此设置可让你更改显示紧凑视图的比例。你可以用它来使紧凑视图显示得更大或更小。数字表示缩放比例大小与默认大小（100%）相比的百分比。",
 	"FSC.Configuration.CombatPauseRule.Title": "战斗下暂停实时时钟",
 	"FSC.Configuration.CombatPauseRule.Description": "选择在场景中进行战斗时暂停实时时钟的时间。",
-	"FSC.Configuration.CombatPauseRule.Active": "仅在活动场景中暂停",
+	"FSC.Configuration.CombatPauseRule.Active": "仅在激活场景中暂停",
 	"FSC.Configuration.CombatPauseRule.Current": "暂停 GM 正在查看的场景",
 	"FSC.Configuration.Display.DateTimeFormat": "日期/时间格式化",
 	"FSC.Configuration.Display.Description": "这些设置允许更改所选日历的日期和时间的显示方式。有关配置日期格式的更多详细信息，请查看<a target=\"_blank\" href=\"https://simplecalendar.info/docs/calendar-configuration/display-options#datetime-formatting \">文档</a>或展开下表。",
@@ -4143,7 +4143,7 @@
     "fuzz.tconfing.excavat.tip" : "挖掘Token",
     "fuzz.settings.excavateWildcard.name" : "挖掘通配符",
     "fuzz.settings.excavateWildcard.hint" : "挖掘标记时，如果启用了该选项，则会找到通配符路径。挖掘前必须勾选随机化通配符图像复选框",
-    "fuzz.settings.useS3.name" : "使用 S3 水桶",
+    "fuzz.settings.useS3.name" : "使用 S3 桶",
     "fuzz.settings.useS3.hint" : "启用后，将使用 S3 存储桶以及用户和核心文件夹。这需要一个有效的 AWS 账户和一个有效的 S3 存储桶名称",
     "fuzz.settings.useS3name.name": "S3 Bucket Name",
     "fuzz.settings.useS3name.hint": "要使用的 S3 存储桶的名称",
@@ -4151,7 +4151,7 @@
     "fuzz.settings.chatSearch.name" : "聊天搜索",
     "fuzz.settings.chatSearch.hint" : "启用聊天侧边栏顶部的搜索框",
     "fuzz.warn.cache": "向下挖掘 - 建立文件缓存，请不要刷新，这可能需要一些时间...",
-    "fuzz.warn.done": "向下挖掘 - 建筑缓存已完成。",
+    "fuzz.warn.done": "向下挖掘 - 建立缓存已完成。",
     "fuzz.chat.search": "搜索聊天信息",
 
 
@@ -5292,6 +5292,7 @@
 
 
 
+
     "levels": {
         "modulename": "Levels",
         "settings": {
@@ -5300,20 +5301,20 @@
                 "hint": "悬停水平对象时显示顶端和底部工具提示"
             },
             "tokenElevScale": {
-                "name": "海拔标尺",
+                "name": "高度标尺",
                 "hint": "根据受控token的高度改变token的大小"
             },
             "tokenElevScaleMultiSett": {
-                "name": "海拔高度乘数",
-                "hint": "将海拔高度乘以这个数字。大于 1 的数字会使 token 变大，小于 1 的数字会使 token 变小。"
+                "name": "高度乘数",
+                "hint": "将高度乘以这个数字。大于 1 的数字会使 token 变大，小于 1 的数字会使 token 变小。"
             },
             "fogHiding": {
                 "name": "高级战争迷雾",
                 "hint": "将未探索的楼层从已探索的战争迷雾中隐藏起来"
             },
             "lockElevation": {
-                "name": "锁定海拔",
-                "hint": "防止玩家从 token HUD 上更改海拔高度。请记住，如果玩家有编辑令牌的权限，他们就可以在token配置中更改它"
+                "name": "锁定高度",
+                "hint": "防止玩家从 token HUD 上更改高度。请记住，如果玩家有编辑token的权限，他们就可以在token配置中更改它"
             },
             "defaultLosHeight": {
                 "name": "默认token高度",
@@ -5340,7 +5341,7 @@
                 "hint": "必须启用'准确 token 可见性'才能使用该选项。该选项将对 token 的边角进行 11 点检查。建议您使用 3D 画布"
             },
             "blockSightMovement": {
-                "name": "围栏",
+                "name": "阻拦",
                 "hint": "启用后，高度不限制视线的墙仍会限制移动"
             },
             "forceUiRefresh": {
@@ -5348,20 +5349,20 @@
                 "hint": "强制更频繁地刷新levels UI，但会降低性能，如果启用可能会在特定系统上造成问题（例如 PF2e）。"
             },
             "hideElevation": {
-                "name": "隐藏海拔",
-                "hint": "从 token 隐藏海拔高度",
+                "name": "隐藏高度",
+                "hint": "从 token 隐藏高度",
                 "opt0": "不要隐藏",
                 "opt1": "为玩家隐藏",
                 "opt2": "为每个人隐藏"
             },
             "revealTokenInFog": {
-                "name": "在雾中显示 token",
+                "name": "在战争迷雾中显示 token",
                 "hint": "如果一个token可见，则揭示该token周围的战争迷雾"
             }
         },
         "tileconfig": {
-            "noOverhead": "这不是俯视图块，该图块将以背景海拔渲染。要更改这些设置，请启用俯视选项卡中的'是否俯视？' ",
-            "occlusionNone": "Occlusion Mode设置为'None'时，该图块不会遮挡视线。如果希望该图块遮挡视线，请将Occlusion Mode设置为'Fade'。",
+            "noOverhead": "这不是过顶图块，该图块将以背景海拔渲染。要更改这些设置，请启用过顶选项卡中的'是否过顶？' ",
+            "occlusionNone": "遮挡模式设置为'无'时，该图块不会遮挡视线。如果希望该图块遮挡视线，请将遮挡模式设置为'渐隐'。",
             "rangeTop": {
                 "name": "高度(顶端)"
             },
@@ -5382,10 +5383,10 @@
             },
             "noFogHide": {
                 "name": "不要把这块图块藏在迷雾里",
-                "hint": "从Level's '高级战争迷雾'中排除该图块"
+                "hint": "从Level的'高级战争迷雾'中排除该图块"
             },
             "range": {
-                "unit": "海拔"
+                "unit": "高度"
             },
             "excludeFromChecker": {
                 "name": "从场景检查器中排除"
@@ -5428,13 +5429,13 @@
         },
         "tokenconfig": {
             "tokenHeight": {
-                "name": "Token LOS高度",
+                "name": "Token LOS 高度",
                 "unit": "(距离)"
             }
         },
         "template": {
             "elevation": {
-                "name": "海拔"
+                "name": "高度"
             },
             "special": {
                 "name": "特别"
@@ -5445,11 +5446,11 @@
         },
         "sceneconfig": {
             "backgroundElevation": {
-                "name": "背景海拔",
+                "name": "背景高度",
                 "notes": "以距离单位表示的高度，用于配置背景图像和脚下图块的高度。"
             },
             "weatherElevation": {
-                "name": "天气海拔",
+                "name": "天气高度",
                 "notes": "以距离单位表示的高度，用于设置天气效果的高度。"
             },
             "lightMasking": {
@@ -5581,6 +5582,8 @@
 
 
 
+    
+	"MAGICITEMS.SettingTabNames": "魔法物品",
     "MAGICITEMS.SettingIdentifiedOnly": "仅鉴定",
     "MAGICITEMS.SettingIdentifiedOnlyHint": "仅为已鉴定的魔法物品显示",
     "MAGICITEMS.SettingHideFromPlayers": "向玩家隐藏设置选项卡",
@@ -5591,7 +5594,8 @@
     "MAGICITEMS.SheetActivationAttuned": "已调谐",
 
     "MAGICITEMS.SheetTot": "总计",
-    "MAGICITEMS.SheetActives": "可用",
+    "MAGICITEMS.SheetActives": "激活",
+	"MAGICITEMS.SheetUses": "可用",
 
     "MAGICITEMS.RechargeUnitDaily": "每日",
     "MAGICITEMS.RechargeUnitDawn": "黎明时",
@@ -5645,7 +5649,7 @@
     "MAGICITEMS.SheetCanUpcastNo": "不可",
     "MAGICITEMS.SheetUsage": "用法",
     "MAGICITEMS.SheetSortingMode": "排序方式",
-    "MAGICITEMS.SheetSortByLevel": "等级",
+    "MAGICITEMS.SheetSortByLevel": "环阶",
     "MAGICITEMS.SheetFeatOnUsage": "正在使用",
     "MAGICITEMS.SheetSortAlphabetically": "按字母顺序",
     "MAGICITEMS.SheetConsumptionConsume": "消耗",
@@ -5692,7 +5696,14 @@
     "MAGICITEMS.WarnNoActor": "未选择一个角色，请选择后重试。",
     "MAGICITEMS.WarnNoMagicItem": "你选择的角色未拥有此名字的物品",
     "MAGICITEMS.WarnNoMagicItemSpell": "你选择的角色未拥有此名字的法术/特性 ",
-    "MAGICITEMS.WarnItemNoLongerExists": "更多",
+	
+	"MAGICITEMS.RandomResult": "随机结果",
+	
+	"MAGICITEMS.ToggleActiveEffectDialogMessage": "您想在所选 token 上切换激活效果吗？",
+	"MAGICITEMS.ToggleActiveEffectDialogTitle": "切换激活效果",
+	"MAGICITEMS.ToggleActiveEffectDialogYes": "是",
+	"MAGICITEMS.ToggleActiveEffectDialogNo": "否",
+	"MAGICITEMS.ToggleActiveEffectError": "添加激活效果时发生错误，请检查控制台。",
 
 
 
@@ -6780,6 +6791,7 @@
 
 
 
+  
   "MonksActiveTiles.Triggers": "触发器",
   "MonksActiveTiles.TriggersHint": "当玩家与该图块交互时的设置",
   "MonksActiveTiles.TriggersImages": "该图块的其他图像列表",
@@ -6909,6 +6921,7 @@
   "MonksActiveTiles.action.gametime": "游戏时间",
   "MonksActiveTiles.action.shuffle": "Shuffle Collection",
   "MonksActiveTiles.action.preloadtileimage": "预载图块图像",
+  "MonksActiveTiles.action.runcode": "运行代码",
 
   "MonksActiveTiles.filter.distance": "按距离筛选 Token",
   "MonksActiveTiles.filter.exists": "检查实体数量",
@@ -6932,7 +6945,7 @@
   "MonksActiveTiles.logic.checkdata": "检查数据",
   "MonksActiveTiles.logic.stoptriggers": "停止触发其他图块",
 
-  "MonksActiveTiles.ctrl.snap": "卡入网格",
+  "MonksActiveTiles.ctrl.snap": "嵌入网格",
   "MonksActiveTiles.ctrl.select-coordinates": "选择坐标",
   "MonksActiveTiles.ctrl.select-entity": "选择实体",
   "MonksActiveTiles.ctrl.select-actor": "选择角色",
@@ -7074,6 +7087,8 @@
   "MonksActiveTiles.ctrl.time": "时间(分)",
   "MonksActiveTiles.ctrl.landingname": "着陆点名称",
   "MonksActiveTiles.ctrl.resettype": "重置类型",
+  "MonksActiveTiles.ctrl.triggerremote": "在目的地触发",
+  "MonksActiveTiles.ctrl.code": "代码",
 
   "MonksActiveTiles.mode.enter": "进入",
   "MonksActiveTiles.mode.exit": "退出",
@@ -7122,7 +7137,7 @@
   "MonksActiveTiles.add.add": "添加",
   "MonksActiveTiles.add.remove": "移除",
   "MonksActiveTiles.add.toggle": "切换",
-  "MonksActiveTiles.add.clear": "清楚",
+  "MonksActiveTiles.add.clear": "清除",
 
   "MonksActiveTiles.for.all": "所有人",
   "MonksActiveTiles.for.gm": "仅限GM",
@@ -7173,7 +7188,7 @@
   "MonksActiveTiles.rollmode.public": "公开掷骰",
   "MonksActiveTiles.rollmode.private": "私聊 GM 掷骰",
   "MonksActiveTiles.rollmode.blind": "GM盲骰",
-  "MonksActiveTiles.rollmode.self": "自己掷骰",
+  "MonksActiveTiles.rollmode.self": "自骰",
 
   "MonksActiveTiles.notification.info": "信息",
   "MonksActiveTiles.notification.warning": "警告",
@@ -7259,20 +7274,20 @@
   "MonksActiveTiles.msg.noteleporttoken": "没有 Token 传送",
   "MonksActiveTiles.msg.setposition": "使用当前视图",
   "MonksActiveTiles.msg.usetagger": "使用标记",
-  "MonksActiveTiles.msg.itempiles": "活动图块的下拉项目功能与项目堆冲突，该设置已被禁用。",
+  "MonksActiveTiles.msg.itempiles": "激活图块的下拉项目功能与项目堆冲突，该设置已被禁用。",
   "MonksActiveTiles.msg.useplayerlocation": "使用玩家 Token 的位置",
   "MonksActiveTiles.msg.currentlyplaying": "当前游玩",
   "MonksActiveTiles.msg.useusers": "使用pl",
-  "MonksActiveTiles.msg.usescene": "使用活动场景",
+  "MonksActiveTiles.msg.usescene": "使用激活场景",
 
   "MonksActiveTiles.allow-player.name": "允许players",
   "MonksActiveTiles.allow-player.hint": "如果没有GM在场，允许玩家激活图块。",
   "MonksActiveTiles.use-core-macro.name": "执行核心宏",
   "MonksActiveTiles.use-core-macro.hint": "核心宏执行不会传递所有可用信息，因此 Active Tiles 可以处理宏的执行。 如果会造成问题，请重新开启。",
   "MonksActiveTiles.drop-item.name": "在画布上投放物品",
-  "MonksActiveTiles.drop-item.hint": "允许将投放到画布上的项目创建为活动图块",
+  "MonksActiveTiles.drop-item.hint": "允许将投放到画布上的项目创建为激活图块",
   "MonksActiveTiles.drop-scene.name": "在画布上投放场景",
-  "MonksActiveTiles.drop-scene.hint": "允许将投放到画布上的场景创建为活动图块",
+  "MonksActiveTiles.drop-scene.hint": "允许将投放到画布上的场景创建为激活图块",
   "MonksActiveTiles.allow-door.name": "门触发器",
   "MonksActiveTiles.allow-door.hint": "允许门触发图块",
   "MonksActiveTiles.teleport-wash.name": "显示传送洗涤",
@@ -7296,7 +7311,7 @@
   "MonksActiveTiles.show-landing.name": "展示登陆亮点",
   "MonksActiveTiles.show-landing.hint": "高亮着陆场内的动作",
   "MonksActiveTiles.drop-macro.name": "在画布上投放宏",
-  "MonksActiveTiles.drop-macro.hint": "允许将投放在画布上的宏创建为活动图块",
+  "MonksActiveTiles.drop-macro.hint": "允许将投放在画布上的宏创建为激活图块",
   "MonksActiveTiles.tile-edit.name": "允许编辑图块模板",
   "MonksActiveTiles.tile-edit.hint": "允许编辑图块模板，我强烈建议不要使用此功能，除非您确信自己知道自己在做什么",
 
@@ -7445,8 +7460,8 @@
 	"MonksTokenBar.FastForward": "快进",
 	"MonksTokenBar.filter-duplicates.hint": "从令牌栏中过滤掉重复令牌",
 	"MonksTokenBar.filter-duplicates.name": "过滤重复",
-	"MonksTokenBar.Flavor": "风味",
-	"MonksTokenBar.FlavorText": "风味文本",
+	"MonksTokenBar.Flavor": "聊天",
+	"MonksTokenBar.FlavorText": "聊天文本",
 	"MonksTokenBar.free-npc-combat.hint": "在当前参战者的战斗回合内，对所有拥有该参战者的用户，允许他们移动他们所有的指示物而不仅是当前参战者",
 	"MonksTokenBar.free-npc-combat.name": "解锁当前参战者所有指示物的移动",
 	"MonksTokenBar.FreeMovement": "自由移动",
@@ -7651,7 +7666,7 @@
       "immediate-update-title": "在字段更改时自动应用更新。",
       "global-search-title": "启用世界搜索。",
       "global-delete-title": "删除",
-      "actions": "活动",
+      "actions": "激活",
       "images": "图片",
       "shaders": "着色器",
       "delete-warning": "删除 [{count}] {document}",
@@ -7926,6 +7941,7 @@
 
 
 	
+	
 	"perceptive" : {
 		"Titles" : {
 			"perceptive"				: "Perceptive",
@@ -7940,7 +7956,7 @@
 				"PP"					: "计算被动察觉: {pValue}",
 				"Spottedby"				: "被: {pNames}发现",
 				"LightModifier"			: "照明察觉DC调整值: {pValue}",
-				"LightRollBehaviour"	: "Illumination perception roll behaviour modifier: {pBehaviour}",
+				"LightRollBehaviour"	: "照明察觉掷骰行为调整: {pBehaviour}",
 				"VisionLevel" : {
 					"name"				: "视觉等级: {pLevel}",
 					"value0"			: "基础视野",
@@ -7954,7 +7970,9 @@
 					"value1"			: "弱光",
 					"value2"			: "明亮"
 				},
-				"LingeringAP"				: "Lingering active perception"
+				"LingeringAP"				: "残留的主动感知",
+				"PassiveDC"				: "被动察觉 DC",
+				"ActiveDC"				: "主动察觉 DC"
 			},
 			"SpottingConfirm" : {
 				"name"					: "确定发现",
@@ -7975,7 +7993,7 @@
 			"SoundnImages"				: "噪音 & 图片",
 			"Tile"						: "图块",
 			"Triggers"					: "触发器",
-			"ResetSpottedby"			: "重置 \"spotted by\"",
+			"ResetSpottedby"			: "重置 \"被发现\"",
 			"with"						: "with",
 			"VisionChannels"			: "视觉通道",
 			"OpenVCMenu"				: "打开视觉通道菜单"
@@ -8439,8 +8457,13 @@
 			},
 			
 			"followTokens" : {
-				"name" 					: "跟随指示物",
-				"descrp" 				: "是否让画面跟随选择的指示物移动"
+				"name" 					: "跟随token",
+				"descrp" 				: "是否让画面跟随选择的token移动"
+			},
+			
+			"followonControl" : {
+				"name" 					: "跟踪控制",
+				"descrp" 				: "是否让镜头应在选择 token 的瞬间发生变化"
 			},
 			
 			"MessagePopUps" : {
@@ -8475,6 +8498,16 @@
 					"none"				: "不存在",
 					"left"				: "左边",
 					"right"				: "右边"
+				}
+			},
+			
+			"PDCInputPosition" : {
+				"name" 					: "察觉 DC 输入的位置",
+				"descrp" 				: "在 token HUD 上，察觉 DC 指示器的位置应在何处",
+				"options" : {
+					"none"				: "无",
+					"left"				: "左",
+					"right"				: "右"
 				}
 			},
 			
@@ -8724,6 +8757,7 @@
 					"SeethroughWalls"	: "穿过墙壁",
 					"Range"				: "范围",
 					"RangeFormula"		: "范围公式",
+					"RangeMin"			: "最小范围",
 					"Color"				: "颜色",
 					"EffectFilter" : {
 						"name"			: "效果过滤",
@@ -8742,12 +8776,14 @@
 					},
 					"EffectFilterColor" : "效果滤镜颜色",
 					"Transparency"		: "透明度",
+					"defaultReceiver"	: "接收默认值",
 					"VCID"				: "内部 ID",
 					"Emits"				: "发出",
 					"Receives"			: "接收",
 					"ReceiveFiltered"	: "接收过滤",
 					"ReceiveRange"		: "自定义范围",
 					"CalculatedRange"	: "计算范围",
+					"ReceiveRangeMin"	: "自定义范围最小值",
 					"Sight"				: "视觉",
 					"Movement"			: "移动"
 				}
@@ -8807,11 +8843,74 @@
 							"name"			: "目标"
 						}
 					}
+				},
+				
+				"give-VC" : {
+					"name"					: "提供视觉通道",
+					"descrp"				: "<span class=\"logic-style\">{pname}</span> <span class=\"value-style\">{pChannel}</span> to <span class=\"entity-style\">{pEntities}</span> as <span class=\"value-style\">{pType}</span>",
+					"settings" : {
+						"channelid" : {
+							"name"			: "通道"
+						},
+						"type" : {
+							"name"			: "提供为",
+							"options" : {
+								"Emits"		: "发射",
+								"Receives"	: "接收",
+								"Sight"		: "视觉(仅限墙)",
+								"Movement"	: "移动(仅限墙)"
+							}
+						}
+					}
+				},
+				
+				"remove-VC" : {
+					"name"					: "移除视觉通道",
+					"descrp"				: "<span class=\"logic-style\">{pname}</span> <span class=\"value-style\">{pChannel}</span> from <span class=\"entity-style\">{pEntities}</span> as <span class=\"value-style\">{pType}</span>",
+					"settings" : {
+						"channelid" : {
+							"name"			: "通道"
+						},
+						"type" : {
+							"name"			: "删除为",
+							"options" : {
+								"Emits"		: "发射",
+								"Receives"	: "接收",
+								"Sight"		: "视觉(仅限墙)",
+								"Movement"	: "移动(仅限墙)"
+							}
+						}
+					}
+				},
+				
+				"reset-Spottedby" : {
+					"name"					: "重置\"被发现\"",
+					"descrp"				: "<span class=\"logic-style\">{pname}</span> of <span class=\"entity-style\">{pEntities}</span>"
+				},
+				
+				"set-canbeSpotted" : {
+					"name"					: "设置\"可被发现\"",
+					"descrp" : {
+						"value"				: "<span class=\"logic-style\">{pname}</span> of <span class=\"entity-style\">{pEntities}</span> to <span class=\"value-style\">{pvalue}</span>",
+						"toggle"			: "<span class=\"logic-style\">切换\"可被发现\"</span><span class=\"entity-style\">{pEntities}</span>"
+					},
+					"settings" : {
+						"setto" : {
+							"name"  		: "设置为",
+							"options" : {
+								"true"		: "True",
+								"false"		: "False",
+								"toggle"	: "切换"
+							}
+						}
+					}
 				}
 			}
 		}
 	},
-
+	
+	
+	
 
 
   "POLYGLOT": {
@@ -10024,6 +10123,7 @@
 
 
     
+    
     "simple-quest": {
         "settings": {
             "tabConfig": {
@@ -10038,23 +10138,33 @@
             },
             "folderName": {
                 "name": "文件夹名称",
-                "hint": "包含简单任务日志的文件夹名称"
+                "hint": "包含简单任务日志的文件夹名称",
+                "default": "任务"
             },
             "mapsJournalName": {
                 "name": "地图日志名称",
-                "hint": "包含简单任务地图的日志名称"
+                "hint": "包含简单任务地图的日志名称",
+                "default": "地图"
+            },
+			"timelineJournalName": {
+                "name": "时线日志名称",
+                "hint": "包含简单任务时线的日志名称",
+                "default": "时线"
             },
             "loreFolderName": {
                 "name": "学识文件夹名称",
-                "hint": "包含简单任务学识的文件夹名称"
+                "hint": "包含简单任务学识的文件夹名称",
+                "default": "学识"
             },
             "partyJournalName": {
-                "name": "小队日志名称",
-                "hint": "包含小队笔记的日志名称"
+                "name": "队伍日志名称",
+                "hint": "包含队伍笔记的日志名称",
+                "default": "队伍"
             },
             "sharedJournalName": {
                 "name": "共享日志名称",
-                "hint": "包含共享笔记的日记页面名称"
+                "hint": "包含共享笔记的日记页面名称",
+                "default": "共享"
             },
             "backgroundColor": {
                 "name": "背景颜色",
@@ -10113,12 +10223,28 @@
                 "hint": "除了隐藏状态外，简单任务是否还应匹配任务的用户权限。禁用此设置后，所有任务对所有玩家都是可见的，除非它们被设置为隐藏状态。请注意，启用此设置后，玩家将可以通过打开常规日志来查看隐藏的任务目标。"
             },
             "openJournalPinsAsModals": {
-                "name": "将地图标记作为Modals打开Open Map Markers as Modals",
+                "name": "将地图标记作为Modals打开",
                 "hint": "如果地图标记链接到日志页面，且该页面不是简单任务页面，则在地图顶部以modal方式打开该页面，而不是在日志中打开该页面。"
+            },
+			"enableQuests": {
+                "name": "启用任务",
+                "hint": "是否启用任务标签"
+            },
+			"enablePartyJournal": {
+                "name": "启用队伍日志",
+                "hint": "是否启用队伍日志标签"
+            },
+			"enableMyJournal": {
+                "name": "启用个人日志",
+                "hint": "是否启用个人日志标签"
             },
             "enableMaps": {
                 "name": "启用地图",
                 "hint": "是否启用地图标签"
+            },
+			"enableTimeline": {
+                "name": "启用时线",
+                "hint": "是否启用时线标签"
             },
             "enableLore": {
                 "name": "启用学识",
@@ -10127,6 +10253,10 @@
             "headerOnlyFont": {
                 "name": "标题字体",
                 "hint": "标题使用的字体，如果选择'默认'，则使用默认字体"
+            },
+            "imagePageMask": {
+                "name": "图像页面屏蔽",
+                "hint": "图像页面使用的屏蔽。留空表示无屏蔽。"
             }
         },
         "simple-quest": {
@@ -10136,8 +10266,9 @@
                 "quests": "任务",
                 "map": "地图",
                 "lore": "学识",
-                "my-journal": "我的日志",
-                "party-journal": "小队日志",
+				"timeline": "时线",
+                "my-journal": "个人日志",
+                "party-journal": "队伍日志",
                 "tab": "标签"
             },
             "move-to": "移动至...",
@@ -10148,6 +10279,7 @@
                 "add-quest": "新建任务",
                 "add-map": "新建地图",
                 "add-lore": "新建学识",
+				"add-page": "添加页",
                 "edit-lore": "编辑学识",
                 "configure-lore-permissions": "配置权限",
                 "map-help": "如何使用地图标签",
@@ -10166,7 +10298,56 @@
                 "fow-brush-size": "战争迷雾笔刷大小",
                 "measure": "100px = 1mi",
                 "lock-pins": "锁定/解锁标记",
-                "show-players": "向玩家开放"
+                "show-players": "向玩家开放",
+                "edit": "编辑",
+                "duplicate": "复制",
+                "delete": "删除",
+                "toggle-completed": "显示已完成"
+            }
+        },
+		"timeline-config": {
+            "title": "编辑时线事件",
+            "label": "标签",
+            "labelNote": "事件标签。将显示在年份上方。可用于特定日期或其他信息。",
+            "banner": "题图",
+            "hidden": "隐藏",
+            "year": "年份",
+            "duration": "持续时间（年）",
+            "era": "纪元",
+            "event": "事件",
+            "general": "全局",
+            "to": "to",
+            "generalNote": "这些设置将应用于全部时线。",
+            "icon": "图标",
+            "isEra": "是纪元？",
+            "eraStart": "纪元起始",
+            "eraEnd": "纪元结束",
+            "flipped": "反转",
+            "offset": "偏移量 (px)",
+            "description": "编辑内容",
+            "negativeAbb": "负数年份缩写",
+            "showMinus": "显示负号",
+            "positiveAbb": "正数年份缩写",
+            "timeScale": "时间尺度",
+            "dynamicTimeScale": "动态时间尺度",
+            "dynamicTimeScaleNote": "与时线固定的绝对大小不同，时线将会根据每个纪元发生事件的数量来调整大小，依然乘以时间尺度。",
+            "content": "内容可见性",
+            "ignoreDataValidation": "忽略数据验证",
+            "ignoreDataValidationNote": "如果需要重组纪元，可以忽略数据验证，以便在重组时允许纪元暂时重叠。",
+            "contentChoices": {
+                "always": "始终可见",
+                "toggleOn": "切换（默认展开）",
+                "toggleOff": "切换（默认折叠）"
+            },
+            "errors": {
+                "noEra": "没有找到纪元。请首先创建一个纪元。",
+                "noYear": "没有找到年份。你必须为事件设定一个年份。",
+                "yearOutOfBounds": "年份必须被包含于一个纪元之中。",
+                "noEraStart": "没有找到纪元起始。你必须为纪元设置起始时间。",
+                "noEraEnd": "没有找到纪元结束。你必须为纪元设置结束时间。",
+                "eraStartAfterEnd": "纪元起始必须早于纪元结束。",
+                "eraNotConnected": "纪元起始或结束必须与另一个纪元连接上。",
+                "eraOverlap": "纪元不能与另一个纪元重叠。"
             }
         },
         "tab-config": {
@@ -10215,6 +10396,10 @@
             "title": "删除地图? - ",
             "content": "您确定要删除此地图吗？无法撤销。"
         },
+		"deletePage": {
+            "title": "删除页? - ",
+            "content": "您确定要删除此页面吗？这无法撤销。"
+        },
         "shareQuest": {
             "title": "发送任务到聊天",
             "content": "您确定要向聊天发送'新任务'通知吗？",
@@ -10245,7 +10430,9 @@
             }
         },
         "notifications": {
-            "defaultStructureCreated": "简单任务：创建默认文件夹和日志结构。"
+            "defaultStructureCreated": "简单任务：创建默认文件夹和日志结构。",
+            "playerJournalUpdated": "简单任务: 玩家日志已更新。",
+            "noPage": "简单任务: 请选择要删除的页面。"
         },
         "resetFow": {
             "title": "重置战争迷雾？",
@@ -10350,11 +10537,11 @@
                 }
             },
             "my-journal-tab": {
-                "name": "我的日志标签",
-                "description": "本教程将向你展示如何使用我的日志标签。",
+                "name": "个人日志标签",
+                "description": "本教程将向你展示如何使用个人日志标签。",
                 "1": {
-                    "title": "我的日志标签",
-                    "content": "我的日志标签显示只有你和GM才能看到的个人日志。"
+                    "title": "个人日志标签",
+                    "content": "个人日志标签显示只有你和GM才能看到的个人日志。"
                 },
                 "2": {
                     "title": "内容目录",
@@ -10366,19 +10553,19 @@
                 }
             },
             "party-journal-tab": {
-                "name": "小队日志标签",
-                "description": "本教程将向你展示如何使用小队日志标签。",
+                "name": "队伍日志标签",
+                "description": "本教程将向你展示如何使用队伍日志标签。",
                 "1": {
-                    "title": "小队日志标签",
-                    "content": "小队日志标签显示所有用户都能看到和编辑的日志。"
+                    "title": "队伍日志标签",
+                    "content": "队伍日志标签显示所有用户都能看到和编辑的日志。"
                 },
                 "2": {
                     "title": "内容目录",
-                    "content": "此区域显示小队日志的目录。你在该日志中创建的任何标题都将显示在这里，以便于导航。"
+                    "content": "此区域显示队伍日志的目录。你在该日志中创建的任何标题都将显示在这里，以便于导航。"
                 },
                 "3": {
                     "title": "日志内容",
-                    "content": "该区域显示小队日志内容。点击右上角的编辑按钮可以编辑日志内容。"
+                    "content": "该区域显示队伍日志内容。点击右上角的编辑按钮可以编辑日志内容。"
                 }
             },
             "journal-page": {
@@ -10391,6 +10578,22 @@
                 "2": {
                     "title": "风格化",
                     "content": "在这个下拉菜单中，你可以找到新的'标注'和'插入页面'选项，为你的文档增添一些亮点。"
+                }
+            },
+            "timeline-tab": {
+                "name": "时线标签",
+                "description": "本游览将向您展示如何使用时线页面。",
+                "1": {
+                    "title": "时线标签",
+                    "content": "时线标签显示了一系列事件的时间线。"
+                },
+                "2": {
+                    "title": "时线列表",
+                    "content": "此区域展示了事件和纪元的列表，你可以点击以跳转到事件或纪元，或者右键单击以编辑。"
+                },
+                "3": {
+                    "title": "添加事件或纪元",
+                    "content": "你只需要此按钮来给时线添加新事件或者纪元。配置表单允许你给事件或纪元设置细节。若要开始，请先创建一个纪元。"
                 }
             }
         },
@@ -11280,8 +11483,8 @@
     "tokenActionHud.keybinding.toggleHud.disabled": "已禁用 HUD。要启用，请按 {binding}",
     "tokenActionHud.keybinding.toggleHud.enabled": "已启用 HUD。要禁用，请按 {binding}",
 
-    "tokenActionHud.settings.activeCssAsText.hint": "使用星号标记活动操作",
-    "tokenActionHud.settings.activeCssAsText.name": "使用星号标记活动操作",
+    "tokenActionHud.settings.activeCssAsText.hint": "使用星号标记激活操作",
+    "tokenActionHud.settings.activeCssAsText.name": "使用星号标记激活操作",
     "tokenActionHud.settings.allow.choice.1": "玩家",
     "tokenActionHud.settings.allow.choice.2": "可信玩家",
     "tokenActionHud.settings.allow.choice.3": "助理 GM",
@@ -11297,7 +11500,7 @@
     "tokenActionHud.settings.customStyle.hint": "自定义 HUD 样式。要启用，请将“样式”设置为“自定义”",
     "tokenActionHud.settings.customStyle.label": "自定义样式",
     "tokenActionHud.settings.customStyle.name": "自定义样式",
-    "tokenActionHud.settings.customStyle.form.active": "活动时",
+    "tokenActionHud.settings.customStyle.form.active": "激活时",
     "tokenActionHud.settings.customStyle.form.backgroundColor.label": "背景颜色",
     "tokenActionHud.settings.customStyle.form.buttonBackgroundColor.label": "背景颜色",
     "tokenActionHud.settings.customStyle.form.buttonBorderPrimaryColor.label": "主要边框颜色",
@@ -12471,7 +12674,7 @@
         "RemainingQuantityLessThenZero": "数量不足：",
         "NotEnoughMoney": "余额不足",
         "DocumentNotFound": "未找到此文档：",
-        "SystemAdaptionNeeded": "如果没有活动的系统适配模块，则无法执行此方法。",
+        "SystemAdaptionNeeded": "如果没有激活的系统适配模块，则无法执行此方法。",
         "SystemAdaptionNeededAdditional": "如果您希望访问这些方法而不出错，则需要在beaver系统接口上注册您的模块",
         "NoModulesRegistered": "没有注册的模块需要beaver -system-interface。",
         "NoImplementationRegistered": "没有系统专用的适配模块，只有一些方法可以在此模式下工作。",
@@ -15250,7 +15453,7 @@
                     "delay.label": "延迟启动",
                     "description": "对每个目标 token 掷骰伤害。是否自动造成伤害取决于您的 midiQol 配置。",
                     "enable.label": "激活伤害",
-                    "flavor.label": "风味(聊天卡片)",
+                    "flavor.label": "聊天(聊天卡片)",
                     "flavor.description": "为每个受伤的 token 输出聊天信息，作为伤害卡片的一部分。\n为变量文本包含参数:\n@alias表示 token 名称列表\n@elevation 表示因危险而改变的 token 标高量*\n@moved 用于因危险而移动的 token 网格*\n* 这些都是单独的 token，因此会强制使用单独的伤害掷骰和聊天卡。",
                     "save.label": "如果豁免成功",
                     "save.options": {
@@ -15554,7 +15757,899 @@
             "prototypeToken": "<strong>{name}</strong>的原型 token",
             "activeTokens": "<strong>{name}</strong>的活跃 token"
         }
+    },
+	
+	
+	
+	
+  "SEQUENCER": {
+    "OK": "OK",
+    "Cancel": "取消",
+
+    "PlayerPermissionsWarning": "您好！由于您是GM，您可以创建特效，但默认情况下，<strong>您的玩家也可以创建特效</strong>。 如果不希望这样，可以单击此按钮配置权限:",
+
+    "Error": {
+      "CouldNotPlay": "无法播放"
+    },
+
+    "Player": {
+      "Title": "播放器",
+      "SwitchToLayer": "切换到层",
+      "PathInput": "输入数据库路径或文件路径",
+      "AllUsers": "所有用户",
+      "Presets": "预设:",
+      "PresetsDefault": "默认",
+      "ApplyPresetTitle": "应用预置",
+      "ApplyPresetContent": "您确定要应用\"{preset_name}\"预设吗？未保存的更改将丢失。",
+      "CreateNewPresetTitle": "创建新的序列特效预置",
+      "CreateNewPresetInputLabel": "输入新预置名称",
+      "CopyPresetTitle": "复制序列特效预置",
+      "CopyPresetInputLabel": "输入新预置名称",
+      "DefaultErrorTitle": "错误",
+      "DefaultErrorContent": "抱歉，您不能将预置命名为\"default\"。本身也需要它。",
+      "OverwritePresetTitle": "覆盖预置?",
+      "OverwritePresetContent": "您确定要覆盖\"{preset_name}\"预置吗?",
+      "DeletePresetTitle": "删除预置?",
+      "DeletePresetContent": "您确定要删除\"{preset_name}\"预设吗？",
+
+      "Option": {
+        "Scale": "比例",
+        "BelowTokens": "在token之下",
+        "SnapToGrid": "嵌入网格",
+        "Rotation": "旋转",
+        "Randomize": "随机化",
+        "FadeIn": "淡入",
+        "FadeOut": "淡出",
+        "ScaleIn": "Scale In",
+        "ScaleOut": "Scale Out",
+
+        "MirrorX": "镜像 X",
+        "MirrorY": "镜像 Y",
+
+        "OffsetX": "偏移 X",
+        "OffsetY": "偏移 Y",
+        "RandomOffset": "数值",
+        "GridUnits": "网格单元",
+
+        "Repeat": "重复",
+        "Repetitions": "重复",
+        "DelayMin": "(ms)",
+        "DelayMax": "",
+
+        "DragBehavior": "拖曳行为",
+        "DragStretch": "拉伸",
+        "DragMove": "移动",
+        "MoveSpeed": "移动速度",
+
+        "Preload": "预加载",
+        "AttachTo": "连接到起点",
+        "StretchToAttach": "连接到终点",
+        "Persist": "持久"
+      }
+    },
+
+    "SidebarButtons": {
+      "Select": "选择特效",
+      "Play": "播放特效",
+      "Manager": "显示序列管理器",
+      "Database": "显示序列数据库"
+    },
+
+    "Hotkeys": {
+      "PlayTool": {
+        "Shift": "播放器 - 同时播放多种特效",
+        "Control": "播放器 - 连续播放多种特效",
+        "Alt": "播放器 - 附加到画布上的对象"
+      },
+      "SelectTool": {
+        "Control": "选择 - 嵌入网格",
+        "Alt": "选择 - 附加到画布上的对象",
+        "Delete": "选择 - 删除所选特效"
+      }
+    },
+
+    "Manager": {
+      "Title": "管理器",
+      "NothingPlaying": "目前未播放任何内容",
+      "PersistentEffects": "持续特效:",
+      "TemporaryEffects": "临时特效:",
+      "Sounds": "Sounds:",
+      "PlayersEffect": "{user_name}的特效",
+      "UnknownEffect": "未知用户特效",
+      "EndAllEffects": "结束所有特效",
+      "EndAllSounds": "结束所有声音"
+    },
+
+    "Sequences": {
+      "Title": "序列",
+      "NoSequences": "目前没有正在运行的序列",
+      "AbortSequence": "中止序列",
+      "AbortSection": "中止部分",
+      "ClearFinished": "清除已完成",
+      "Clear": "清除",
+      "StopAll": "停止所有"
+    },
+
+    "HowTo": {
+      "Title": "如何使用",
+      "Welcome": "欢迎访问序列特效器!",
+      "Explanation": "通过播放器，<i class=\"fas fa-play-circle\"></i>, 您可以在画布上快速播放特效，而通过管理器，<i class=\"fas fa-film\"></i>您可以随时结束持久特效。",
+      "PermissionsExplanation": "因为你是GM, 所以你可以创造特效，默认情况下，你的玩家也可以。单击此按钮可配置设置:",
+      "PlayerExplanation": "使用播放器时<i class=\"fas fa-play-circle\"></i>, 您需要设置要播放的特效。单击<strong>文件输入</strong>查看数据库路径，或直接开始键入搜索。你可以按<i class=\"fas fa-file-import\"></i>旁边的按钮直接搜索文件。",
+      "LayerExplanation": "选好文件后，您可以在序列层上执行以下任何操作。",
+      "OpenModuleSettings": "打开模组设置",
+      "Click": "点击",
+      "ClickLabel": "当场播放特效",
+      "ClickDrag": "单击按住 + 拖动",
+      "ClickDragLabel": "播放向某个位置延伸的特效",
+      "Shift": "Shift",
+      "ShiftLabel": "按住Shift后同时播放多个特效",
+      "ShiftControl": "控制",
+      "ShiftControlLabel": "连续播放多个特效，中间稍作等待",
+      "MoreToCome": "...更多精彩内容，敬请期待未来更新!"
+    },
+
+    "ManagerUI": "序列管理器",
+
+    "Database": {
+      "Title": "序列数据库查看器",
+      "AllPacks": "所有包",
+      "Search": "搜索...",
+      "ButtonFilepath": "文件路径",
+      "ButtonDatabasePath": "数据库",
+      "ShowAllRanges": "显示所有范围",
+      "ShowSubLists": "显示子列表",
+      "ListView": "列表查看"
+    },
+
+    "Setting": {
+      "DatabaseViewer": {
+        "Title": "打开序列数据库查看器",
+        "Label": "打开数据库浏览器"
+      },
+      "EnablePixiFix": {
+        "Title": "启用 PIXI 修复",
+        "Label": "这可以修复 Foundry 中序列器特效上的alphas问题 - 某些设置（浏览器、硬件、软件等）似乎会使这一修复过时。"
+      },
+      "EnableGlobalPixiFix": {
+        "Title": "启用全局 PIXI 修复",
+        "Label": "此功能可修复 Foundry 中所有 .webms 动画文件的alphas问题。请谨慎使用。"
+      },
+      "EnableAboveUIScreenspace": {
+        "Title": "启用上方UI屏幕空间层",
+        "Label": "这将启用在 Foundry 中所有 UI 元素上方播放特效的图层--一些用户反映该图层会对性能造成很大影响，因此请禁用。"
+      },
+      "Debug": {
+        "Title": "启用调试",
+        "Label": "这将使序列器在控制台中记录正在进行的操作"
+      },
+      "ShowTools": {
+        "Title": "显示序列工具",
+        "Label": "显示或隐藏侧边栏上的序列工具。"
+      },
+      "ShowTokenTools": {
+        "Title": "在token控件中显示序列工具",
+        "Label": "显示或隐藏 token 控件侧边栏上的序列工具。"
+      },
+      "EnableEffects": {
+        "Title": "启用特效",
+        "Label": "允许在该客户端上播放特效"
+      },
+      "EnableSounds": {
+        "Title": "启用声音",
+        "Label": "允许在该客户端上播放声音"
+      },
+      "ExternalEffectOpacity": {
+        "Title": "外部特效不透明度",
+        "Label": "如果您创建的特效是为其他玩家而不是您自己播放的，将此设置为 0 以外的任何值都会导致特效也为您显示，但会被静音。所有特效都会显示给 GM。"
+      },
+      "Permission": {
+        "EffectCreate": {
+          "Title": "序列: 播放特效",
+          "Label": "允许选定角色及以上的玩家通过宏和序列特效播放器播放特效。"
+        },
+        "EffectDelete": {
+          "Title": "序列: 移除所有特效",
+          "Label": "允许选定角色及以上的玩家通过序列特效管理器移除任何特效。"
+        },
+        "SoundCreate": {
+          "Title": "序列: 播放声音",
+          "Label": "允许选定角色及以上的玩家通过播放声音"
+        },
+        "PreloadClients": {
+          "Title": "序列: 为其他人预加载",
+          "Label": "允许选定角色及以上的玩家为其他玩家预加载特效和音效。"
+        },
+        "UseSidebarTools": {
+          "Title": "序列: 使用侧边栏工具",
+          "Label": "允许选定角色及以上的玩家使用侧边栏工具（他们还需要能够播放特效）。"
+        }
+      }
+    },
+
+    "Permission": {
+      "Player": "玩家及以上",
+      "Trusted": "受信玩家及以上",
+      "Assistant": "GM助手及以上",
+      "GM": "仅限GM"
     }
+  },
+  
+  
+  
+  
+	"TMFX.TokenMagic": "TokenMagic",
+	"TMFX.preset.add.success": "特效已成功添加到预设库中。",
+	"TMFX.preset.add.permission.failure": "您不能在预设库中添加特效。",
+	"TMFX.preset.add.params.failure": "无法将特效添加到预置库中。参数不正确。",
+	"TMFX.preset.add.duplicate.failure": "无法将特效添加到预设库中。同名的特效已经存在。",
+	"TMFX.preset.delete.success": "特效已成功从预设库中删除。",
+	"TMFX.preset.delete.permission.failure": "您不能删除预设库中的特效。",
+	"TMFX.preset.delete.params.failure": "删除失败: \"名称\"参数必须是字符串。",
+	"TMFX.preset.delete.notfound.failure": "预设库中不存在要删除的特效。",
+	"TMFX.preset.delete.empty.failure": "失败: 预设库已经清空！",
+	"TMFX.preset.import.format.failure": "导入无法完成。格式无效。",
+	"TMFX.preset.import.success": "特效导入已成功完成。",
+	"TMFX.preset.import.failure": "无法完成导入。",
+	"TMFX.preset.reset.message": "您确定要重置预设库吗？",
+	"TMFX.preset.reset.success": "您的预设库已成功重置。",
+	"TMFX.settings.importOverwrite.name": "导入时覆盖",
+	"TMFX.settings.importOverwrite.hint": "如果想在导入时替换同名预设，请选中此选项。",
+	"TMFX.template.opacity": "纹理不透明度:",
+	"TMFX.template.fx": "特殊效果:",
+	"TMFX.template.tint": "效果色调:",
+	"TMFX.settings.autoFPS.name": "自动FPS",
+	"TMFX.settings.autoFPS.hint": "选中此选项可让浏览器（或应用程序）进行FPS限制。在某些配置下可能会抑制动画的晃动。(警告：此选项会覆盖 Foundry FPS限制）",
+	"TMFX.settings.useMaxPadding.name": "附加填充模式下的特效",
+	"TMFX.settings.useMaxPadding.hint": "默认情况下，在可放置对象上应用特效添加填充。如果未勾选此项，则使用最大填充。",
+	"TMFX.settings.minPadding.name": "最小填充",
+	"TMFX.settings.minPadding.hint": "在特效应用最小填充。",
+	"TMFX.settings.fxPlayerPermission.name": "许可模式",
+	"TMFX.settings.fxPlayerPermission.hint": "如果勾选此项，则非GM玩家可以在他们不拥有的可放置的位置上添加，修改和删除效果(FX)。GM必须同时在线。",
+	"TMFX.settings.useZOrder.name": "特效次序",
+	"TMFX.settings.useZOrder.hint": "如果要按其zOrder属性的顺序应用效果，请勾选此项。具有最细zOrder的效果将首先应用。（请参阅文件）",
+	"TMFX.settings.disableAnimations.name": "禁用特效动画",
+	"TMFX.settings.disableAnimations.hint": "如果要禁用特效动画，请勾选此项。需要重新加载FoundryVTT。",
+	"TMFX.settings.disableCaching.name": "在启动时，禁用Filter缓存",
+	"TMFX.settings.disableCaching.hint": "如果要在FoundryVTT启动时禁用Filter缓存，请勾选此项。",
+	"TMFX.settings.disableVideo.name": "在模板中禁用视频支持",
+	"TMFX.settings.disableVideo.hint": "如果要在模板中禁用视频支持和纹理自动调整大小，请勾选此项。",
+	"TMFX.settings.autoTemplateEnabled.name": "启用自动模板效果",
+	"TMFX.settings.autoTemplateEnabled.hint": "禁用此选项将禁用所有自动模板效果。注意：仅影响新放置的模板。",
+	"TMFX.settings.defaultTemplateOnHover.name": "悬停时的默认模板网格",
+	"TMFX.settings.defaultTemplateOnHover.hint": "仅在悬停时显示默认模板网格。",
+	"TMFX.settings.autohideTemplateElements.name": "自动隐藏模板元素",
+	"TMFX.settings.autohideTemplateElements.hint": "仅当在模板层上悬停时才显示非必要模板元素。",
+	"TMFX.settings.autoTemplateSettings.button.name": "自动模板效果",
+	"TMFX.settings.autoTemplateSettings.button.label": "模板设定",
+	"TMFX.settings.autoTemplateSettings.button.hint": "在受支持的游戏系统上，可以根据法术区域和伤害类型或特定法术的替代来启用模板效果。",
+	"TMFX.settings.autoTemplateSettings.tabs.general": "通用",
+	"TMFX.settings.autoTemplateSettings.tabs.categories": "类别",
+	"TMFX.settings.autoTemplateSettings.tabs.overrides": "覆盖",
+	"TMFX.settings.autoTemplateSettings.texture.label": "纹理（可选）:",
+	"TMFX.settings.autoTemplateSettings.target.label": "目标:",
+	"TMFX.settings.autoTemplateSettings.texture.hint": "可为Filter指定一种纹理，如果未指定，则将使用适当的纹理。",
+	"TMFX.settings.autoTemplateSettings.unsupported": "该功能目前还不支持该游戏系统，欢迎大家为支持更多系统做出贡献！",
+	"TMFX.settings.autoTemplateSettings.overrides.introduction": "您可以在此处为个别物品/法术配置覆盖。在“目标”字段的“项目/合集”中输入该物品/法术的名称，然后进行设定。",
+	"TMFX.settings.autoTemplateSettings.overrides.add": "新增覆盖",
+	"TMFX.settings.autoTemplateSettings.dialog.title": "Token Magic模板设置",
+	"TMFX.save": "保存",
+	
+	
+	
+	
+	
+	
+    "walledtemplates.MeasuredTemplateConfiguration.LegendTitle": "Walled Templates",
+    "walledtemplates.MeasuredTemplateConfiguration.walls-block.Name": "墙",
+    "walledtemplates.MeasuredTemplateConfiguration.walls-block.Hint": "圆形/矩形: 扩散; 线形/锥形: 反射。",
+
+    "walledtemplates.MeasuredTemplateConfiguration.wall-restriction-type.Name": "墙壁类型",
+    "walledtemplates.MeasuredTemplateConfiguration.walls-restriction-type.Hint": "模板忽略不阻挡该类型的墙壁。",
+
+    "walledtemplates.MeasuredTemplateConfiguration.globalDefault": "使用全局默认",
+    "walledtemplates.MeasuredTemplateConfiguration.unwalled": "不阻挡模板",
+    "walledtemplates.MeasuredTemplateConfiguration.walled": "阻挡模板",
+    "walledtemplates.MeasuredTemplateConfiguration.recurse": "反射/扩散模板",
+
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.Name": "所附Token?",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.Hint": "连接该模板，使其与 token 一起移动。",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.useSelectedToken": "附加最后选定的 token",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.useTargetedToken": "附加最后标记的 token",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.removeToken": "移除所附token",
+
+    "walledtemplates.MeasuredTemplateConfiguration.rotate-with-token.Name": "使用 token 旋转",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.Hint": "当 token 旋转时，围绕 token 旋转该模板。",
+
+    "walledtemplates.MeasuredTemplateConfiguration.elevation.Name": "高度",
+
+    "walledtemplates.dnd5e-spell-config.attach-token.Name": "附加到?",
+    "walledtemplates.dnd5e-spell-config.attach-token.na": "N/A",
+    "walledtemplates.dnd5e-spell-config.attach-token.caster": "施放者",
+    "walledtemplates.dnd5e-spell-config.attach-token.target": "最后标记",
+
+    "walledtemplates.dnd5e-spell-config.add-token-size.Name": "在模板中增加 token 大小",
+    "walledtemplates.dnd5e-spell-config.add-token-size.Hint": "如果法术位于 token 的中心，则将 token 的尺寸（宽/高的最小值）加到模板尺寸上。",
+
+    "walledtemplates.settings.submenu.title": "默认形状设置",
+
+    "walledtemplates.settings.submenu.circle.Name": "圆形",
+    "walledtemplates.settings.submenu.cone.Name": "锥形",
+    "walledtemplates.settings.submenu.ray.Name": "线形",
+    "walledtemplates.settings.submenu.rect.Name": "矩形",
+
+    "walledtemplates.settings.submenu.circle.Title": "默认圆形模板设置",
+    "walledtemplates.settings.submenu.cone.Title": "默认锥形模板设置",
+    "walledtemplates.settings.submenu.ray.Title": "默认线形模板设置",
+    "walledtemplates.settings.submenu.rect.Title": "默认矩形模板设置",
+
+    "walledtemplates.settings.submenu.circle.Description": "默认模板设置，除非被特定法术（dnd5e）或宏覆盖。",
+    "walledtemplates.settings.submenu.cone.Description": "默认模板设置，除非被特定法术（dnd5e）或宏覆盖。",
+    "walledtemplates.settings.submenu.ray.Description": "默认模板设置，除非被特定法术（dnd5e）或宏覆盖。",
+    "walledtemplates.settings.submenu.rect.Description": "默认模板设置，除非被特定法术（dnd5e）或宏覆盖。",
+
+    "walledtemplates.settings.submenu.autotarget-override.Name": "覆盖高亮/自动标记",
+    "walledtemplates.settings.submenu.autotarget-override.Hint": "覆盖此形状的默认高亮/自动标记设置",
+
+    "walledtemplates.settings.default_circle.Name": "墙壁阻挡",
+    "walledtemplates.settings.default_cone.Name": "墙壁阻挡",
+    "walledtemplates.settings.default_ray.Name": "墙壁阻挡",
+    "walledtemplates.settings.default_rect.Name": "墙壁阻挡",
+
+    "walledtemplates.settings.default_circle.Hint": "为新创建的圆形模板选择默认值。圆形可以扩散，但不能反射。",
+    "walledtemplates.settings.default_cone.Hint": "为新创建的锥形模板选择默认值。锥形可以反射，但不能扩散。",
+    "walledtemplates.settings.default_ray.Hint": "为新创建的线形模板选择默认值。线形可以反射，但不能扩散。",
+    "walledtemplates.settings.default_rect.Hint": "为新创建的矩形模板选择默认值。矩形可以扩散，但不能反射。",
+
+    "walledtemplates.settings.default-circle-wall-restriction.Name": "墙壁限制",
+    "walledtemplates.settings.default-cone-wall-restriction.Name": "墙壁限制",
+    "walledtemplates.settings.default-ray-wall-restriction.Name": "墙壁限制",
+    "walledtemplates.settings.default-rect-wall-restriction.Name": "墙壁限制",
+
+    "walledtemplates.settings.default-circle-wall-restriction.Hint": "阻挡这种类型的墙壁会阻挡圆形模板。",
+    "walledtemplates.settings.default-cone-wall-restriction.Hint": "阻挡这种类型的墙壁会阻挡锥形模板。",
+    "walledtemplates.settings.default-ray-wall-restriction.Hint": "阻挡这种类型的墙壁会阻挡线形模板。",
+    "walledtemplates.settings.default-rect-wall-restriction.Hint": "阻挡这种类型的墙壁会阻挡矩形模板。",
+
+    "walledtemplates.settings.unwalled": "不受墙壁阻挡",
+    "walledtemplates.settings.walled": "被墙壁阻挡",
+    "walledtemplates.settings.recurse": "反射/扩散",
+
+    "walledtemplates.settings.autotarget-menu.Name": "启用自动标记",
+    "walledtemplates.settings.autotarget-menu.Hint": "选择切换选项后，模板控制栏上的标记控制按钮将允许您在标记或不标记之间进行切换。",
+    "walledtemplates.settings.autotarget-menu.Choice.no": "不自动标记",
+    "walledtemplates.settings.autotarget-menu.Choice.toggle-off": "显示切换按钮；默认为关闭",
+    "walledtemplates.settings.autotarget-menu.Choice.toggle-on": "显示切换按钮；默认为打开",
+    "walledtemplates.settings.autotarget-menu.Choice.yes": "总是自动标记",
+
+    "walledtemplates.settings.autotarget-method.Name": "高亮/自动标记方法",
+    "walledtemplates.settings.autotarget-method.Hint": "如何高亮显示模板下的网格方格和自动标记 token。",
+    "walledtemplates.settings.autotarget-method.Method.center": "模板内的 token 中心",
+    "walledtemplates.settings.autotarget-method.Method.overlap": "token 区域与模板重叠",
+
+    "walledtemplates.settings.autotarget-area.Name": "高亮/自动标记百分比",
+    "walledtemplates.settings.autotarget-area.Hint": "仅适用于重叠高亮/自动标记方法。必须与模板重叠才能标记的 token 边界或网格区域的百分比。0 表示任何重叠都计算在内。(提示：点击方格后使用方向键以 0.01 为单位递增）。",
+
+    "walledtemplates.settings.snapGrid.Name": "捕捉网格交叉点",
+    "walledtemplates.settings.snapGrid.Hint": "拖动模板时按住 shift 键，可捕捉到半网格增量，如网格正方形中心。",
+
+    "walledtemplates.settings.diagonal-scaling-ray.Name": "缩放对角线形",
+    "walledtemplates.settings.diagonal-scaling-ray.Hint": "缩放线形模板，使其符合 5-5-5 对角线规则。",
+
+    "walledtemplates.settings.diagonal-scaling-cone.Name": "缩放对角锥形",
+    "walledtemplates.settings.diagonal-scaling-cone.Hint": "缩放锥形模板，使其符合 5-5-5 对角线规则。",
+
+    "walledtemplates.settings.diagonal-scaling-circle.Name": "将圆形转换为方形",
+    "walledtemplates.settings.diagonal-scaling-circle.Hint": "将圆形模板转换为方形，以便更好地符合 5-5-5 对角线规则。",
+
+    "walledtemplates.settings.diagonal-scaling-rect.Name": "未使用： 缩放对角矩形",
+    "walledtemplates.settings.diagonal-scaling-rect.Hint": "未使用",
+
+    "walledtemplates.settings.hideBorder.Name": "隐藏模板边框",
+    "walledtemplates.settings.hideBorder.Hint": "除非将鼠标悬停在模板控制图标上，否则不会显示模板形状的轮廓。",
+
+    "walledtemplates.settings.hideHighlighting.Name": "隐藏模板高亮",
+    "walledtemplates.settings.hideHighlighting.Hint": "除非将鼠标悬停在模板控制图标上，否则不会显示高亮的模板网格。",
+
+    "walledtemplates.controls.autotarget.Title": "使用模板自动标记 token",
+
+    "walledtemplates.notifications.attach-last-selected-token": "请选择要附加的 token。",
+    "walledtemplates.notifications.attach-last-targeted-token": "请标记要附加的 token。",
+
+    "walledtemplates.keybindings.autoTarget.name": "切换模板自动标记",
+    "walledtemplates.keybindings.autoTarget.hint": "默认为按键的其他用途。例如，如果设置为'T'，则在将鼠标悬停在 token 上时不起作用。此外，只有在设置中启用自动标记切换时才会起作用。而且只在 token 或模板图层中起作用。",
+
+
+	
+  
+  "POINTER": {
+    "Settings": {
+      "Name": "选择热键、ping 和指针！",
+      "Button": "设置和设计工作室",
+      "Controls": {
+        "header": "控制",
+        "inputhint": "点击输入，选择所需键值。",
+        "pointer": {
+          "label": "指针",
+          "hint": "按下该按钮时，指针会跟随鼠标光标移动，同时会在画布上移动。"
+        },
+        "ping": {
+          "label": "Ping",
+          "pointerActive": "只有当指针处于激活状态时才能 Ping？",
+          "pointerActiveHint": "激活该选项后，只有在指针已经激活的情况下，按下按钮才会显示 ping。",
+          "hint": "按下此按钮后，如果光标位于画布上方，ping 将出现在光标的当前位置。您可以选择只在指针处于激活状态时显示 ping。",
+          "force": "在 ping 时移动玩家视图",
+          "forceHint": "按下此按钮会放置ping，并将玩家的视图强制切换到您的视图。"
+        }
+      },
+      "GM": {
+        "applyToAll": {
+          "label": "将设置应用于所有玩家?",
+          "button": "是!",
+          "hint": "所有玩家都将获得您的热键设置以及选定的 ping 和指针。这并不能阻止玩家事后更改这些设置！"
+        }
+      },
+      "Designer": {
+        "Graphic": "图形",
+        "Scale": {
+          "label": "比例"
+        },
+        "Angle": {
+          "label": "角度"
+        },
+        "Offset": {
+          "label": "偏移"
+        },
+        "Tint": {
+          "label": "色调颜色",
+          "userColor": "使用玩家颜色作为色调"
+        },
+        "Animations": {
+          "header": "动画",
+          "rotate": {
+            "label": "旋转"
+          },
+          "scale": {
+            "label": "比例"
+          },
+          "duration": "持续时间",
+          "easing": "缓和方法"
+        },
+        "pingDuration": "持续时间为 Ping"
+      },
+      "Chooser": {
+        "addPointer": "创建新的"
+      }
+    },
+    "General": {
+      "min": "最小",
+      "max": "最大",
+      "name": "名称",
+      "ping": "Ping",
+      "pointer": "指针",
+      "delete": "删除?",
+      "units": {
+        "grid": "网格单元",
+        "degree": "角度",
+        "seconds": "s"
+      }
+    }
+  },
+  
+  
+  
+  
+    "puzzle-locks": {
+        "settings": {},
+        "general-lock-config": {
+            "header-buttons": {
+                "copyContentLink": "复制内容链接",
+                "unlock": "打开拼图"
+            },
+            "title": "常规锁配置",
+            "label": {
+                "label": "标签",
+                "placeholder": "门禁系统"
+            },
+            "description": {
+                "label": "描述",
+                "placeholder": "这是一个门的安全系统。"
+            },
+            "unlocked": {
+                "label": "已解锁"
+            },
+            "attempts": {
+                "label": "次数限制",
+                "notes": "允许的尝试次数，设置为 -1 表示无限制。"
+            },
+            "lockType": {
+                "label": "锁类型",
+                "configure": "配置",
+                "none": "无 (禁用)"
+            },
+            "unlockSound": {
+                "label": "解锁音效"
+            },
+            "interactionSound": {
+                "label": "互动音效"
+            },
+            "backgroundImage": {
+                "label": "背景图片"
+            },
+            "glow": {
+                "label": "光晕效果",
+                "notes": "启用边框和文字发光/阴影效果，这将使主题更适合科幻场景。"
+            },
+            "textColor": {
+                "label": "文本颜色"
+            },
+            "primaryColor": {
+                "label": "主色调",
+                "notes": "某些锁类型可能不使用此颜色。留空表示使用锁的默认颜色。"
+            },
+            "secondaryColor": {
+                "label": "辅色调",
+                "notes": "某些锁类型可能不使用此颜色。留空表示使用锁的默认颜色。"
+            },
+            "primaryFont": {
+                "label": "主要字体"
+            },
+            "secondaryFont": {
+                "label": "次要字体",
+                "notes": "某些锁类型可能不使用此字体。"
+            },
+            "font": {
+                "inherit": "继承"
+            },
+            "unlockMacro": {
+                "label": "解锁宏",
+                "notes": "解锁时运行的宏。在宏中，您可以访问'对象object'来获取解锁的文档，访问'用户user'来获取解锁的用户。"
+            },
+            "permission": {
+                "label": "关于解锁权限",
+                "notes": "决定玩家在解锁文件时获得的权限级别，以及是只给解锁的玩家还是给所有玩家。如果文件是一扇门，此设置将被忽略，门将被解锁。",
+                "noChange": "无变更",
+                "all": "全部PL",
+                "unlocking": "解锁PL"
+            }
+        },
+        "number-lock": {
+            "name": "数字/图案",
+            "description": "一把密码锁。玩家必须输入正确的密码才能解锁文件。您可以用字形或图像代替数字，使锁更具主题性。",
+            "code": {
+                "label": "Code"
+            },
+            "keypad": {
+                "label": "Keypad"
+            }
+        },
+        "password-lock": {
+            "name": "密码",
+            "description": "一个简单的密码锁。玩家必须输入正确的密码才能解锁文件。",
+            "password": {
+                "label": "密码",
+                "placeholder": "a$$w0rd"
+            }
+        },
+        "item-lock": {
+            "name": "物品",
+            "description": "需要玩家将一个或多个物品拖放到正确的插槽中才能解锁的锁。",
+            "item": {
+                "label": "物品名"
+            },
+            "itemImage": {
+                "label": "插槽图像"
+            },
+            "deleteItems": {
+                "label": "删除物品",
+                "notes": "如果选中此选项，则在解锁时会删除玩家背包中的物品。"
+            }
+        },
+        "switches-lock": {
+            "name": "开关",
+            "description": "一种需要玩家将一组二进制开关配置到正确位置才能解锁的锁。",
+            "switchesSolution": {
+                "label": "开关配置",
+                "notes": "答案是以'0110'格式配置开关。每个数字代表一个开关，0 表示关闭，1 表示打开。开关数量不限。"
+            },
+            "showSwitches": {
+                "label": "显示开关",
+                "notes": "是否显示开关按钮。如果禁用，则只显示开/关状态指示灯。"
+            }
+        },
+        "cryptex-lock": {
+            "name": "隐芯",
+            "description": "一种需要玩家将一组圆柱体旋转到正确位置以形成解锁方法的锁。可以使用表情符号或字形来表示圆柱体上的字符。不同的圆柱体可以有不同的字符集。",
+            "solution": {
+                "label": "答案"
+            },
+            "cylinder": {
+                "label": "圆筒",
+                "notes": "晶体管使用的圆柱体。每个圆柱体字符之间用逗号隔开。"
+            },
+            "glyphs": {
+                "label": "图形",
+                "notes": "可在隐芯中使用的字形。每个字形应以逗号分隔。"
+            }
+        },
+        "sudoku-lock": {
+            "name": "数独",
+            "description": "这是一种需要玩家解开数独谜题才能解锁文件的锁。可以用图像或字形替换默认数字，使锁更具主题性。",
+            "generate": "生成数独",
+            "difficulty": {
+                "label": "难度"
+            },
+            "grid": {
+                "label": "网格",
+                "4": "4x4",
+                "9": "9x9"
+            },
+            "sudoku": {
+                "label": "数独"
+            },
+            "key": {
+                "label": "密钥"
+            }
+        },
+        "image-wheel": {
+            "name": "图像轮",
+            "description": "这种锁要求玩家将一组同心圆环旋转到正确的位置，以便对齐图像。",
+            "image": {
+                "label": "图像"
+            },
+            "wheelCount": {
+                "label": "轮数"
+            },
+            "angleStep": {
+                "label": "步距角"
+            },
+            "fixed": {
+                "label": "固定轮",
+                "notes": "不应旋转的轮子。其中 1 是最外侧的轮子。"
+            }
+        },
+		"mastermind-lock": {
+            "name": "珠玑妙算",
+            "description": "一种需要玩家猜出正确的颜色或字母组合才能解锁的锁。每次玩家尝试解锁时，都会收到反馈，显示有多少种颜色或字母是正确的，以及在正确的位置上。绿色表示颜色和位置正确，黄色表示颜色正确但位置错误，红色表示颜色不正确。",
+            "reset": "重置",
+            "solution": {
+                "label": "答案",
+                "notes": "珠玑妙算的答案。每种颜色或字母之间应该用逗号隔开。您可以使用 css 颜色（如 'red'）或十六进制代码（如'#ff0000'）。"
+            },
+            "pipOptions": {
+                "label": "解锁",
+                "notes": "玩家可以用来猜测答案的颜色或字母。每种颜色或字母应用逗号分隔。您可以使用 css 颜色（如 'red'）或十六进制代码（如'#ff0000'）。"
+            }
+        },
+        "fill-blanks-lock": {
+            "name": "填空",
+            "description": "一种需要玩家在文本中填空才能解锁的锁。玩家必须按照正确的顺序输入正确的字符。",
+            "solution": {
+                "label": "答案",
+                "notes": "填空的答案。这应该是填空后的完整全文。",
+                "placeholder": "The quick brown fox jumps over the lazy dog."
+            },
+            "text": {
+                "label": "文本",
+                "notes": "玩家必须填写的空白文本。用下划线表示空白。",
+                "placeholder": "The _____ brown fox jumps ____ the ____ dog."
+            },
+            "caseSensitive": {
+                "label": "区分大小写"
+            }
+        },
+        "flags": {},
+        "attempts": "剩余尝试",
+        "headerConfig": "拼图锁",
+        "unlocked": "已解锁",
+        "how-to": "它是如何工作的？",
+        "notifications": {
+            "noLock": "本文件尚未上锁。",
+            "alreadyUnlocked": "本文件已解锁。",
+            "noLockSelected": "未选择锁类型。",
+            "unlocked": "已解锁。",
+            "noGM": "解锁本文件需要GM。",
+            "failedAttempt": "解锁失败。",
+            "contentLinkCopied": "内容链接已复制到剪贴板。",
+            "locked": "本文件已锁定。作为 GM，您可以正常打开它。"
+        }
+    },
+  
+  
+    
+	
+	
+	
+	
+    "spotlight-omnisearch": {
+        "settings": {
+            "compendiumConfig": {
+                "name": "合集配置",
+                "hint": "配置搜索结果中包含哪些合集",
+                "label": "配置合集"
+            },
+            "gmOnly": {
+                "name": "仅限GM",
+                "hint": "只有GM可以打开Spotlight Omnisearch"
+            },
+            "darkMode": {
+                "name": "暗色模式",
+                "hint": "为 Spotlight Omnisearch 使用深色主题"
+            },
+            "compactMode": {
+                "name": "紧凑模式",
+                "hint": "为 Spotlight Omnisearch 使用紧凑布局。这将隐藏描述并缩小搜索结果的大小。"
+            },
+            "clickToDismiss": {
+                "name": "点击取消",
+                "hint": "单击 Spotlight Omnisearch 外侧将其取消"
+            },
+            "saveLastSearch": {
+                "name": "保存上次搜索",
+                "hint": "保存上次搜索查询和结果，以便下次打开 Spotlight Omnisearch 时使用"
+            },
+            "useHistory": {
+                "name": "使用搜索历史",
+                "hint": "使用搜索历史记录来建议搜索"
+            },
+            "enableCtrlSpace": {
+                "name": "启用 Ctrl + Space",
+                "hint": "启用 Ctrl + Space 热键打开 Spotlight Omnisearch - 由于此绑定绕过了FVV核心键绑定系统，因此它将在输入框和文本区域内工作。"
+            },
+            "position": {
+                "name": "位置",
+                "hint": "设置 Spotlight Omnisearch 在屏幕上的位置",
+                "choices": {
+                    "default": "默认（居中）",
+                    "save": "保存最后位置",
+                    "mouse": "在鼠标位置打开"
+                }
+            },
+            "alwaysOnTop": {
+                "name": "始终处于顶端",
+                "hint": "让 Spotlight Omnisearch 位于其他窗口上方"
+            },
+            "spotlightWidth": {
+                "name": "Spotlight宽度",
+                "hint": "以像素为单位设置 Spotlight Omnisearch 的宽度"
+            },
+            "showImages": {
+                "name": "显示图片",
+                "hint": "在搜索结果中显示图片。图片会增加搜索结果的加载时间，并可能导致卡顿，具体取决于搜索结果的数量和图片的大小。"
+            },
+            "searchFiles": {
+                "name": "搜索文件",
+                "hint": "包含文件搜索结果（需要使用Dig Down模组中的文件索引）"
+            },
+            "searchSettings": {
+                "name": "搜索设置",
+                "hint": "在搜索结果中包含游戏设置"
+            },
+            "searchCompendium": {
+                "name": "搜索合集",
+                "hint": "在搜索结果中包含合集"
+            },
+			"fullCompendiumJournalIndex": {
+                "name": "全合集日志索引",
+                "hint": "在合集日志索引中包含页面和标题。这会增加索引的初始化时间。如果你有大量的日志合集，建议禁用此功能。"
+            },
+            "searchSidebar": {
+                "name": "搜索侧边栏",
+                "hint": "在搜索结果中包含侧边栏标签"
+            },
+            "searchUtils": {
+                "name": "搜索Utilities",
+                "hint": "在搜索结果中包含utility"
+            },
+            "useMetricForLights": {
+                "name": "使用公制灯光",
+                "hint": "使用公制单位快速灯光效果"
+            }
+        },
+        "hotkeys": {
+            "toggleSpotlight": {
+                "name": "切换Spotlight Omnisearch"
+            }
+        },
+        "recent-searches": "最近搜索",
+        "recent-tooltip": "清除最近的搜索",
+        "app": {},
+        "flags": {},
+        "actions": {
+            "execute": "执行",
+            "activate": "激活",
+            "preload": "预载",
+            "view": "浏览",
+            "roll-table": "掷骰表",
+            "play-playlist": "播放播放列表",
+            "stop-playlist": "停止播放列表",
+            "use-item": "使用物品",
+            "playForEveryone": "为每个人执行"
+        },
+        "notifications": {
+            "calc-clipboard": "结果复制到剪贴板",
+            "note": "保存在'Omnisearch Notes'日志中的说明",
+            "timer-gm": "只有GM可以启动计时器",
+            "tracker-gm": "只有GM可以使用成功/失败追踪器"
+        },
+        "special": {
+            "note": {
+                "name": "快速说明",
+                "local-keyword": "说明"
+            },
+            "roll": {
+                "name": "快速掷骰",
+                "local-keyword": "掷骰"
+            },
+            "help": {
+                "name": "帮助",
+                "local-keyword": "帮助",
+                "list": [
+                    "Shift + Space 以打开Spotlight Omnisearch",
+                    "Escape 或单击外部(可选，默认为关闭)以关闭Spotlight Omnisearch",
+                    "按回车键确认第一个结果",
+                    "Shift / Alt + Enter 执行第一个结果的第一个或第二个操作",
+                    "特殊指令: 帮助, 说明, 掷骰, 计时器, 追踪器, 计数器或输入一个数学表达式来计算",
+                    "! 按类型过滤搜索结果 (!item, !actor)。过滤:"
+                ]
+            },
+            "timer": {
+                "name": "计时器",
+                "timeLeft": "剩余时间",
+                "local-keyword": "计时器",
+                "expired": "计时器已过期!"
+            },
+            "light": {
+                "torch": "火把",
+                "lantern": "提灯",
+                "lantern-shut": "提灯(关闭)",
+                "off": "移除灯光",
+                "candle": "蜡烛",
+                "magical": "魔法灯光",
+                "flashlight": "手电筒",
+                "info": "对选定 token 应用灯光"
+            },
+            "tracker": {
+                "name": "成功/失败追踪器",
+                "local-keyword": "追踪器"
+            },
+            "counter": {
+                "name": "计数器",
+                "local-keyword": "计数器"
+            },
+            "kill": {
+                "name": "击杀",
+                "description": "杀死所选 token"
+            },
+            "heal": {
+                "name": "治愈"
+            },
+            "damage": {
+                "name": "伤害"
+            },
+            "restore": {
+                "name": "复原",
+                "description": "将所选 token 恢复到满生命值状态"
+            },
+            "reindex": {
+                "name": "索引",
+                "description": "为 Spotlight Omnisearch 重建搜索索引"
+            },
+            "darkness": {
+                "night": "夜晚",
+                "dawn": "黎明",
+                "day": "日",
+                "dusk": "黄昏"
+            },
+            "attribute": {
+                "name": "属性"
+            }
+        }
+    }
+
+
+
+
 
 	
 }
