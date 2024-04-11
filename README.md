@@ -113,5 +113,6 @@
 - #### [Puzzle Locks](https://foundryvtt.com/packages/puzzle-locks)
 - #### [Spotlight Omnisearch](https://foundryvtt.com/packages/spotlight-omnisearch)
 - #### [PnP - Pointer and Pings!](https://foundryvtt.com/packages/pointer)
+- #### [Tile Scroll](https://foundryvtt.com/packages/tile-scroll)
 
 
