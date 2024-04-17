@@ -117,5 +117,6 @@
 - #### [Splatter](https://foundryvtt.com/packages/splatter)
 - #### [Chat Portrait](https://foundryvtt.com/packages/chat-portrait)
 - #### [Multiface Tiles](https://foundryvtt.com/packages/multiface-tiles)
+- #### [Quick Encounters](https://foundryvtt.com/packages/quick-encounters)
 
 
