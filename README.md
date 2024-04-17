@@ -115,5 +115,7 @@
 - #### [PnP - Pointer and Pings!](https://foundryvtt.com/packages/pointer)
 - #### [Tile Scroll](https://foundryvtt.com/packages/tile-scroll)
 - #### [Splatter](https://foundryvtt.com/packages/splatter)
+- #### [Chat Portrait](https://foundryvtt.com/packages/chat-portrait)
+- #### [Multiface Tiles](https://foundryvtt.com/packages/multiface-tiles)
 
 
