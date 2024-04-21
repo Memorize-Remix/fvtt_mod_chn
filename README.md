@@ -118,5 +118,6 @@
 - #### [Chat Portrait](https://foundryvtt.com/packages/chat-portrait)
 - #### [Multiface Tiles](https://foundryvtt.com/packages/multiface-tiles)
 - #### [Quick Encounters](https://foundryvtt.com/packages/quick-encounters)
+- #### [Vauxs' Archives](https://foundryvtt.com/packages/vauxs-archives)
 
 
