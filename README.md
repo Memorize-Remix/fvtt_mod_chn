@@ -120,5 +120,12 @@
 - #### [Quick Encounters](https://foundryvtt.com/packages/quick-encounters)
 - #### [Vauxs' Archives](https://foundryvtt.com/packages/vauxs-archives)
 - #### [Mob Attack Tool](https://foundryvtt.com/packages/mob-attack-tool)
+- #### [Token Lean: Peek Around Corners](https://foundryvtt.com/packages/token-lean)
+- #### [Raise My Hand](https://foundryvtt.com/packages/raise-my-hand)
+- #### [Health Monitor](https://foundryvtt.com/packages/health-monitor)
+- #### [Module Management+](https://foundryvtt.com/packages/module-credits)
+- #### [Module Profiles](https://foundryvtt.com/packages/module-profiles)
+- #### [Political Map Overlay](https://foundryvtt.com/packages/polmap)
+- #### [World Explorer](https://foundryvtt.com/packages/world-explorer)
 
 
