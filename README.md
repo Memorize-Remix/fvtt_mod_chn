@@ -127,5 +127,6 @@
 - #### [Module Profiles](https://foundryvtt.com/packages/module-profiles)
 - #### [Political Map Overlay](https://foundryvtt.com/packages/polmap)
 - #### [World Explorer](https://foundryvtt.com/packages/world-explorer)
+- #### [Simple Weather](https://foundryvtt.com/packages/simple-weather)
 
 
