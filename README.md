@@ -128,5 +128,6 @@
 - #### [Political Map Overlay](https://foundryvtt.com/packages/polmap)
 - #### [World Explorer](https://foundryvtt.com/packages/world-explorer)
 - #### [Simple Weather](https://foundryvtt.com/packages/simple-weather)
+- #### [Compact Scene Navigation](https://foundryvtt.com/packages/compact-scene-navigation)
 
 
