@@ -129,5 +129,6 @@
 - #### [World Explorer](https://foundryvtt.com/packages/world-explorer)
 - #### [Simple Weather](https://foundryvtt.com/packages/simple-weather)
 - #### [Compact Scene Navigation](https://foundryvtt.com/packages/compact-scene-navigation)
+- #### [Arbron’s Summoning (5e)](https://foundryvtt.com/packages/arbron-summoner)
 
 
