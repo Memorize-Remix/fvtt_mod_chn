@@ -130,5 +130,7 @@
 - #### [Simple Weather](https://foundryvtt.com/packages/simple-weather)
 - #### [Compact Scene Navigation](https://foundryvtt.com/packages/compact-scene-navigation)
 - #### [Arbron’s Summoning (5e)](https://foundryvtt.com/packages/arbron-summoner)
-
+- #### [Tokenizer](https://foundryvtt.com/packages/vtta-tokenizer)
+- #### [Anonymous](https://foundryvtt.com/packages/anonymous)
+- #### [Token Warp](https://foundryvtt.com/packages/tokenwarp)
 
