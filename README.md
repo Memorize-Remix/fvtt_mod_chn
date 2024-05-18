@@ -133,4 +133,6 @@
 - #### [Tokenizer](https://foundryvtt.com/packages/vtta-tokenizer)
 - #### [Anonymous](https://foundryvtt.com/packages/anonymous)
 - #### [Token Warp](https://foundryvtt.com/packages/tokenwarp)
+- #### [Terrain Mapper](https://foundryvtt.com/packages/terrainmapper)
+- #### [Bing Bong](https://foundryvtt.com/packages/bing-bong)
 
