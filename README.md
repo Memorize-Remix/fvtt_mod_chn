@@ -135,4 +135,5 @@
 - #### [Token Warp](https://foundryvtt.com/packages/tokenwarp)
 - #### [Terrain Mapper](https://foundryvtt.com/packages/terrainmapper)
 - #### [Bing Bong](https://foundryvtt.com/packages/bing-bong)
+- #### [Illandril's Token Quick Actions (5e)](https://foundryvtt.com/packages/illandril-npc-quick-actions)
 
