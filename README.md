@@ -12,8 +12,8 @@
 V12对于文本的调用方式没发生变化，所以目前也可以适用于V12
 
 ## 一些须知
-- [x] 如安装了此mod，则不要在安装[Foundry VTT Mega](https://github.com/fvtt-cn/mega_chn)，以免文本冲突。
-- [x] 若mod作者提供的DND5e 3.0版本mod没有大规模进行文本重置，则此汉化mod依旧会发挥作用，但不会汉化作者额外新增的对应文本。
+- 如安装了此mod，则不要在安装[Foundry VTT Mega](https://github.com/fvtt-cn/mega_chn)，以免文本冲突。
+- 若mod作者提供的DND5e 3.0版本mod没有大规模进行文本重置，则此汉化mod依旧会发挥作用，但不会汉化作者额外新增的对应文本。
 
 ## 安装
 - [x] 清单文件地址： [https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json](https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json)
