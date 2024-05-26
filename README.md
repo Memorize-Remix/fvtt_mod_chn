@@ -1,7 +1,7 @@
 # Foundry VTT Mod 翻译包
-![](https://img.shields.io/badge/Foundry-v11.315-informational) ![](https://img.shields.io/badge/DND-v2.4.1-informational) 
+![](https://img.shields.io/badge/Foundry-v11-informational) ![](https://img.shields.io/badge/DND-v2.4.1-informational) 
 
-本模组为 FVTT 的部分mod提供了汉化，目前的翻译基本适配于FVTT V11版本和DND5e 2.4.1版本的mod。
+本模组为 FVTT 的部分mod提供了汉化，目前的翻译基本适配于FVTT V11-V12版本和DND5e 2.4.1版本的mod。
 
 如需提议新增模组汉化（仅限5e和通用mod），可以在[建议贴](https://github.com/13996090016/fvtt_mod_chn/discussions/1)中回复。
 
@@ -9,6 +9,7 @@
 
 ## 特别注意
 为了让此mod的汉化保证能覆盖其他mod的文本，因此将文件名由“mod_chn”变更为了“zzz_mod_chn”
+V12对于文本的调用方式没发生变化，所以目前也可以适用于V12
 
 ## 一些须知
 - 如安装了此mod，则不要在安装[Foundry VTT Mega](https://github.com/fvtt-cn/mega_chn)，以免文本冲突。
