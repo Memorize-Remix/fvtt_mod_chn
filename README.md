@@ -136,4 +136,12 @@
 - #### [Terrain Mapper](https://foundryvtt.com/packages/terrainmapper)
 - #### [Bing Bong](https://foundryvtt.com/packages/bing-bong)
 - #### [Illandril's Token Quick Actions (5e)](https://foundryvtt.com/packages/illandril-npc-quick-actions)
+- #### [Alignment Tracker](https://foundryvtt.com/packages/alignment-tracker)
+- #### [Downtime Dnd5e](https://foundryvtt.com/packages/downtime-dnd5e)
+- #### [Active Character Portrait](https://foundryvtt.com/packages/active-character-portrait)
+- #### [Droplet](https://foundryvtt.com/packages/droplet)
+- #### [Illandril's Token Tooltips](https://foundryvtt.com/packages/illandril-token-tooltips)
+- #### [Torch](https://foundryvtt.com/packages/torch)
+- #### [Zoom/Pan Options](https://foundryvtt.com/packages/zoom-pan-options)
+- #### [Ready To Use Cards](https://foundryvtt.com/packages/ready-to-use-cards)
 
