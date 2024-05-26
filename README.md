@@ -8,8 +8,8 @@
 如发现此mod汉化文本的错误或缺失（仅限此mod的汉化），可以在[纠错贴](https://github.com/13996090016/fvtt_mod_chn/discussions/2)中回复。
 
 ## 特别注意
-为了让此mod的汉化保证能覆盖其他mod的文本，因此将文件名由“mod_chn”变更为了“zzz_mod_chn”
-V12对于文本的调用方式没发生变化，所以目前也可以适用于V12
+- 为了让此mod的汉化保证能覆盖其他mod的文本，因此将文件名由“mod_chn”变更为了“zzz_mod_chn”
+- V12对于文本的调用方式没发生变化，所以目前也可以适用于V12
 
 ## 一些须知
 - 如安装了此mod，则不要在安装[Foundry VTT Mega](https://github.com/fvtt-cn/mega_chn)，以免文本冲突。
