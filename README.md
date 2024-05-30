@@ -146,4 +146,11 @@
 - #### [Zoom/Pan Options](https://foundryvtt.com/packages/zoom-pan-options)
 - #### [Ready To Use Cards](https://foundryvtt.com/packages/ready-to-use-cards)
 - #### [Notebook](https://foundryvtt.com/packages/notebook)
+- #### [Automatic Journal Icon Numbers](https://foundryvtt.com/packages/journal-icon-numbers)
+- #### [Light/Sound Mask](https://foundryvtt.com/packages/lightmask)
+- #### [Monk's Sound Enhancements](https://foundryvtt.com/packages/monks-sound-enhancements)
+- #### [Alternative Token Cover](https://foundryvtt.com/packages/tokencover)
+- #### [Token Ease](https://foundryvtt.com/packages/token-ease)
+- #### [Simbul's Template Scaling](https://foundryvtt.com/packages/simbuls-template-scaling)
+- #### [Whisper As](https://foundryvtt.com/packages/whisper-as)
 
