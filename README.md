@@ -145,4 +145,5 @@
 - #### [Torch](https://foundryvtt.com/packages/torch)
 - #### [Zoom/Pan Options](https://foundryvtt.com/packages/zoom-pan-options)
 - #### [Ready To Use Cards](https://foundryvtt.com/packages/ready-to-use-cards)
+- #### [Notebook](https://foundryvtt.com/packages/notebook)
 
