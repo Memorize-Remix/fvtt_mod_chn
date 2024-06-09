@@ -1,7 +1,7 @@
 # Foundry VTT Mod 翻译包
 ![](https://img.shields.io/badge/Foundry-v11-informational) ![](https://img.shields.io/badge/DND-v2.4.1-informational) 
 
-本模组为 FVTT 的部分mod提供了汉化，目前的翻译基本适配于FVTT V11-V12版本和DND5e 2.4.1版本的mod。
+本模组为 FVTT 的部分mod提供了汉化，目前的翻译基本适配于FVTT绝大多数主流mod。
 
 如需提议新增模组汉化（仅限5e和通用mod），可以在[建议贴](https://github.com/13996090016/fvtt_mod_chn/discussions/1)中回复。
 
@@ -13,7 +13,7 @@
 
 ## 一些须知
 - 如安装了此mod，则不要在安装[Foundry VTT Mega](https://github.com/fvtt-cn/mega_chn)，以免文本冲突。
-- 若mod作者提供的DND5e 3.0版本mod没有大规模进行文本重置，则此汉化mod依旧会发挥作用，但不会汉化作者额外新增的对应文本。
+- 4.3版本是DND 2.4.1的汉化内容，后续的5.0及其以后的文本都会按照DND 3.2的mod适配进行汉化，若无特殊需求，请勿升级
 
 ## 安装
 - [x] 清单文件地址： [https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json](https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json)
@@ -130,7 +130,6 @@
 - #### [World Explorer](https://foundryvtt.com/packages/world-explorer)
 - #### [Simple Weather](https://foundryvtt.com/packages/simple-weather)
 - #### [Compact Scene Navigation](https://foundryvtt.com/packages/compact-scene-navigation)
-- #### [Arbron’s Summoning (5e)](https://foundryvtt.com/packages/arbron-summoner)
 - #### [Tokenizer](https://foundryvtt.com/packages/vtta-tokenizer)
 - #### [Anonymous](https://foundryvtt.com/packages/anonymous)
 - #### [Token Warp](https://foundryvtt.com/packages/tokenwarp)
