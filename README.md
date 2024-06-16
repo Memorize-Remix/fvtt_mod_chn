@@ -1,5 +1,4 @@
 # Foundry VTT Mod 翻译包
-![](https://img.shields.io/badge/Foundry-v11-informational) ![](https://img.shields.io/badge/DND-informational) 
 
 本模组为 FVTT 的部分mod提供了汉化，目前的翻译基本适配于FVTT绝大多数主流mod。
 
