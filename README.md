@@ -151,4 +151,5 @@
 - #### [Token Ease](https://foundryvtt.com/packages/token-ease)
 - #### [Simbul's Template Scaling](https://foundryvtt.com/packages/simbuls-template-scaling)
 - #### [Whisper As](https://foundryvtt.com/packages/whisper-as)
+- #### [Custom D&D 5e](https://foundryvtt.com/packages/custom-dnd5e)
 
