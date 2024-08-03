@@ -153,4 +153,13 @@
 - #### [Whisper As](https://foundryvtt.com/packages/whisper-as)
 - #### [Custom D&D 5e](https://foundryvtt.com/packages/custom-dnd5e)
 - #### [Elevation Ruler](https://foundryvtt.com/packages/elevationruler)
+- #### [Quick Grid Align](https://foundryvtt.com/packages/quick-grid-align)
+- #### [Roll Toasts](https://foundryvtt.com/packages/roll-toast)
+- #### [Find the Culprit!](https://foundryvtt.com/packages/find-the-culprit)
+- #### [Settlement Sheets](https://foundryvtt.com/packages/settlement-sheets)
+- #### [Dice Tray](https://foundryvtt.com/packages/dice-calculator)
+- #### [Vision Toolkit](https://foundryvtt.com/packages/vision-toolkit)
+- #### [Prime Performance](https://foundryvtt.com/packages/fvtt-perf-optim)
+- #### [Quick Insert - Search Widget](https://foundryvtt.com/packages/quick-insert)
+
 
