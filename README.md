@@ -161,5 +161,7 @@
 - #### [Vision Toolkit](https://foundryvtt.com/packages/vision-toolkit)
 - #### [Prime Performance](https://foundryvtt.com/packages/fvtt-perf-optim)
 - #### [Quick Insert - Search Widget](https://foundryvtt.com/packages/quick-insert)
+- #### [Global Progress Clocks](https://foundryvtt.com/packages/global-progress-clocks)
+- #### [Clock-Works](https://foundryvtt.com/packages/clock-works)
 
 
