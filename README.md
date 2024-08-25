@@ -163,5 +163,10 @@
 - #### [Quick Insert - Search Widget](https://foundryvtt.com/packages/quick-insert)
 - #### [Global Progress Clocks](https://foundryvtt.com/packages/global-progress-clocks)
 - #### [Clock-Works](https://foundryvtt.com/packages/clock-works)
+- #### [Times Up](https://foundryvtt.com/packages/times-up)
+- #### [Region Attacher](https://foundryvtt.com/packages/region-attacher)
+- #### [About Face](https://foundryvtt.com/packages/about-face)
+- #### [World Setting Sync](https://foundryvtt.com/packages/world-setting-sync)
+- #### [DFreds Convenient Effects(DCE)](https://foundryvtt.com/packages/dfreds-convenient-effects)
 
 
