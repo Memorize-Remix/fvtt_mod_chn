@@ -8,7 +8,7 @@
 
 ## 特别注意
 - 为了让此mod的汉化保证能覆盖其他mod的文本，因此将文件名由“mod_chn”变更为了“zzz_mod_chn”
-- 
+  
 ## 一些须知
 - 如安装了此mod，则不要在安装[Foundry VTT Mega](https://github.com/fvtt-cn/mega_chn)，以免文本冲突。
 - 4.3版本是DND 2.4.1的汉化内容，后续的5.0及其以后的文本都会按照V12和最新的mod适配进行汉化，若无特殊需求，请勿更新。
