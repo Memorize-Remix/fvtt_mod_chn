@@ -167,5 +167,7 @@
 - #### [About Face](https://foundryvtt.com/packages/about-face)
 - #### [World Setting Sync](https://foundryvtt.com/packages/world-setting-sync)
 - #### [DFreds Convenient Effects(DCE)](https://foundryvtt.com/packages/dfreds-convenient-effects)
+- #### [Chat Edit](https://foundryvtt.com/packages/chatedit)
+- #### [Macro Wheel](https://foundryvtt.com/packages/macro-wheel)
 
 
