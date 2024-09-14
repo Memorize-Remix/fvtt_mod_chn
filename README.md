@@ -169,5 +169,8 @@
 - #### [DFreds Convenient Effects(DCE)](https://foundryvtt.com/packages/dfreds-convenient-effects)
 - #### [Chat Edit](https://foundryvtt.com/packages/chatedit)
 - #### [Macro Wheel](https://foundryvtt.com/packages/macro-wheel)
+- #### [Skill Tree](https://foundryvtt.com/packages/skill-tree)
+- #### [Advantage Reminder for dnd5e](https://foundryvtt.com/packages/adv-reminder)
+- #### [Deyzeria's Equipment Slots](https://foundryvtt.com/packages/deyzerias-equipment-slots)
 
 
