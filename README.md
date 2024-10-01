@@ -173,5 +173,6 @@
 - #### [Skill Tree](https://foundryvtt.com/packages/skill-tree)
 - #### [Advantage Reminder for dnd5e](https://foundryvtt.com/packages/adv-reminder)
 - #### [Deyzeria's Equipment Slots](https://foundryvtt.com/packages/deyzerias-equipment-slots)
+- #### [Chat Edit](https://foundryvtt.com/packages/chatedit)
 
 
