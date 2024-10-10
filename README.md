@@ -177,5 +177,6 @@
 - #### [Mythic's Simpler Quests](https://foundryvtt.com/packages/simpler-quests)
 - #### [Movement Approval](https://foundryvtt.com/packages/movement-approval)
 - #### [Cauldron of Plentiful Resources（CPR）](https://foundryvtt.com/packages/chris-premades)
+- #### [Youtube Player Widget](https://foundryvtt.com/packages/fvtt-youtube-player)
 
 
