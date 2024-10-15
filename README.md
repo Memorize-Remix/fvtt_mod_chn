@@ -178,5 +178,7 @@
 - #### [Movement Approval](https://foundryvtt.com/packages/movement-approval)
 - #### [Cauldron of Plentiful Resources（CPR）](https://foundryvtt.com/packages/chris-premades)
 - #### [Youtube Player Widget](https://foundryvtt.com/packages/fvtt-youtube-player)
+- #### [Limits](https://foundryvtt.com/packages/limits)
+- #### [Vision 5e](https://foundryvtt.com/packages/vision-5e)
 
 
