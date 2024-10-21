@@ -180,5 +180,6 @@
 - #### [Youtube Player Widget](https://foundryvtt.com/packages/fvtt-youtube-player)
 - #### [Limits](https://foundryvtt.com/packages/limits)
 - #### [Vision 5e](https://foundryvtt.com/packages/vision-5e)
+- #### [Scene Transitions](https://foundryvtt.com/packages/scene-transitions)
 
 
