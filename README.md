@@ -181,5 +181,7 @@
 - #### [Limits](https://foundryvtt.com/packages/limits)
 - #### [Vision 5e](https://foundryvtt.com/packages/vision-5e)
 - #### [Scene Transitions](https://foundryvtt.com/packages/scene-transitions)
+- #### [Combat HP Display](https://foundryvtt.com/packages/combat-hp-display)
+- #### [Tabbed Whispers](https://foundryvtt.com/packages/tabbed-whispers)
 
 
