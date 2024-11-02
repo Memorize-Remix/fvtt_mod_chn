@@ -183,5 +183,9 @@
 - #### [Scene Transitions](https://foundryvtt.com/packages/scene-transitions)
 - #### [Combat HP Display](https://foundryvtt.com/packages/combat-hp-display)
 - #### [Tabbed Whispers](https://foundryvtt.com/packages/tabbed-whispers)
+- #### [Small Talk](https://foundryvtt.com/packages/smalltalk)
+- #### [DFreds Effects Panel](https://foundryvtt.com/packages/dfreds-effects-panel)
+- #### [Battle Transitions](https://foundryvtt.com/packages/battle-transitions)
+
 
 
