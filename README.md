@@ -186,6 +186,7 @@
 - #### [Small Talk](https://foundryvtt.com/packages/smalltalk)
 - #### [DFreds Effects Panel](https://foundryvtt.com/packages/dfreds-effects-panel)
 - #### [Battle Transitions](https://foundryvtt.com/packages/battle-transitions)
+- #### [Forien's Copy Environment](https://foundryvtt.com/packages/forien-copy-environment)
 
 
 
