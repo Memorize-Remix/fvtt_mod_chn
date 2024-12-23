@@ -187,6 +187,12 @@
 - #### [DFreds Effects Panel](https://foundryvtt.com/packages/dfreds-effects-panel)
 - #### [Battle Transitions](https://foundryvtt.com/packages/battle-transitions)
 - #### [Forien's Copy Environment](https://foundryvtt.com/packages/forien-copy-environment)
+- #### [Reflect, Inspect, Correct](https://foundryvtt.com/packages/ric)
+- #### [Map Coordinates](https://foundryvtt.com/packages/map-coords)
+- #### [Hexplorer](https://foundryvtt.com/packages/hexplorer)
+- #### [Story Teller 2](https://foundryvtt.com/packages/storyteller2)
+- #### [Monk's Little Details](https://foundryvtt.com/packages/monks-little-details)
+- #### [Cautious Gamemaster's Pack](https://foundryvtt.com/packages/CautiousGamemastersPack)
 
 
 
