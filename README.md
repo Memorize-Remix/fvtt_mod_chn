@@ -193,6 +193,8 @@
 - #### [Story Teller 2](https://foundryvtt.com/packages/storyteller2)
 - #### [Monk's Little Details](https://foundryvtt.com/packages/monks-little-details)
 - #### [Cautious Gamemaster's Pack](https://foundryvtt.com/packages/CautiousGamemastersPack)
-
-
-
+- #### [Fancy UI 5e](https://github.com/erizocosmico/foundryvtt-fancy-ui-5e)
+- #### [Tactical Grid](https://foundryvtt.com/packages/aedifs-tactical-grid)
+- #### [LAME Messenger](https://foundryvtt.com/packages/lame-messenger)
+- #### [Bulk Tasks](https://foundryvtt.com/packages/bulk-tasks)
+- #### [Dramatic Rolls](https://foundryvtt.com/packages/dramatic-rolls)
