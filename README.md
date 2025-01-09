@@ -198,3 +198,4 @@
 - #### [LAME Messenger](https://foundryvtt.com/packages/lame-messenger)
 - #### [Bulk Tasks](https://foundryvtt.com/packages/bulk-tasks)
 - #### [Dramatic Rolls](https://foundryvtt.com/packages/dramatic-rolls)
+- #### [Stairways](https://foundryvtt.com/packages/stairways)
