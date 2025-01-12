@@ -199,3 +199,7 @@
 - #### [Bulk Tasks](https://foundryvtt.com/packages/bulk-tasks)
 - #### [Dramatic Rolls](https://foundryvtt.com/packages/dramatic-rolls)
 - #### [Stairways](https://foundryvtt.com/packages/stairways)
+- #### [Move That for You](https://foundryvtt.com/packages/move-that-for-you)
+- #### [Dragonbane - Item Browser](https://foundryvtt.com/packages/dragonbane-item-browser)
+- #### [Snap Me Maybe](https://foundryvtt.com/packages/aedifs-snap-me-maybe)
+- #### [Aedif's Compendium Search](https://foundryvtt.com/packages/aedifs-compendium-search)
