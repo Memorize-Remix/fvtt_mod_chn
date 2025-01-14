@@ -1,0 +1,65 @@
+{
+    "id": "babonus",
+    "title": "Build-a-Bonus",
+    "version": "12.5.8",
+    "authors": [
+        {
+            "name": "Zhell",
+            "url": "https://github.com/krbz999",
+            "discord": "zhell9201",
+            "ko-fi": "https://ko-fi.com/zhell",
+            "patreon": "https://patreon.com/zhell"
+        }
+    ],
+    "compatibility": {
+        "minimum": 12,
+        "maximum": 12,
+        "verified": 12
+    },
+    "esmodules": [
+        "module.mjs"
+    ],
+    "styles": [
+        "module.css"
+    ],
+    "relationships": {
+        "systems": [
+            {
+                "id": "dnd5e",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "4.0.0",
+                    "maximum": "4.0.x"
+                }
+            }
+        ]
+    },
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json",
+            "flags": {}
+        },
+        {
+            "lang": "fr",
+            "name": "Français",
+            "path": "lang/fr.json",
+            "flags": {}
+        },
+        {
+            "lang": "pt-BR",
+            "name": "Português (Brasil)",
+            "path": "lang/pt-BR.json",
+            "flags": {}
+        }
+    ],
+    "flags": {
+        "hotReload": false
+    },
+    "url": "https://github.com/krbz999/babonus",
+    "license": "https://raw.githubusercontent.com/krbz999/babonus/main/LICENSE",
+    "manifest": "https://github.com/krbz999/babonus/releases/latest/download/module.json",
+    "download": "https://github.com/krbz999/babonus/releases/download/v12.5.8/module.zip",
+    "description": "Make it easier to manage very particular and niche bonuses and auras on actors, items, effects, and templates."
+}

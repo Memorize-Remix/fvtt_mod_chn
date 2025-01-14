@@ -1,0 +1,120 @@
+{
+  "id": "midi-qol",
+  "title": "Midi QOL",
+  "description": "Automates rolling weapon/spell attacks and applying damage",
+
+  "version": "12.4.21",
+  "authors": [
+    { "name": "tposney",
+    "discord": "tposney#1462",
+    "ko-fi": "https://ko-fi.com/tposney"
+    }
+  ],
+  "socket": true,
+  "scripts": [],
+  "esmodules": ["src/midi-qol.js"],
+  "styles": ["css/styles.css"],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.1",
+          "maximum": "4.9.99"
+        }
+      },
+      {
+        "id": "sw5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "2.0.2.2.2.5",
+          "compatible": "2.0.2.2.2.5"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "socketlib",
+        "type": "module"
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      },
+      {
+        "id": "dae",
+        "type": "module",
+        "compatibility": {
+          "minimum": "12.0.4"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "midiqol-sample-items",
+      "label": "MidiQOL Sample Items",
+      "path": "./packs/sampleitems",
+      "module": "world",
+      "type": "Item",
+      "system": "dnd5e",
+      "lang": []
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ja",
+      "name": " 日本語",
+      "path": "lang/ja.json"
+    },
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "path": "lang/ko.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    },
+    {
+      "lang": "es",
+      "name": "Spanish",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    },
+    {
+      "lang": "it",
+      "name": "Italian",
+      "path": "lang/it.json"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12.0.0",
+    "verified": "12.999",
+    "maximum": "12.999"
+  },
+  "bugs": "https://gitlab.com/tposney/midi-qol/-/issues",
+  "flags": {
+    "allowBugReporter": true
+  },
+  "url": "https://gitlab.com/tposney/midi-qol",
+  "manifest": "https://gitlab.com/tposney/midi-qol/raw/v12dnd4/package/module.json",
+  "download": "https://gitlab.com/tposney/midi-qol/raw/v12dnd4/package/midi-qol-v12.4.21.zip",
+  "changelog": "https://gitlab.com/tposney/midi-qol/raw/v12dnd4/Changelog.md"
+}

@@ -1,0 +1,633 @@
+"BABONUS": {
+  "AvailableFiltersTooltip": "你可以应用于此加值的过滤列表，进一步缩小该加值应用于哪些掷骰。每个过滤条件都必须为真才能应用加值。",
+  "Babonus": "Babonus",
+  "Bonuses": "加值",
+  "TestBabonus": "属性检定加值",
+  "AttackBabonus": "攻击检定加值",
+  "DamageBabonus": "伤害掷骰加值",
+  "HitdieBabonus": "生命骰加值",
+  "SaveBabonus": "豁免DC加值",
+  "ThrowBabonus": "豁免检定加值",
+  "BasicBonuses": "基础加值",
+  "BonusCopy": "{name} (Copy)",
+  "OptionalSelector": {
+    "LabelApply": "应用",
+    "LabelConsume": "消耗"
+  },
+  "ConfigurationCopyTooltip": "创建该加值的副本",
+  "ConfigurationEditTooltip": "编辑此加值",
+  "ConsumptionOption": "{max} {label} 的 ({value})",
+  "ContextMenu": {
+    "Delete": "删除",
+    "Disable": "禁用",
+    "Duplicate": "复制",
+    "Edit": "编辑",
+    "Enable": "启用"
+  },
+  "Create": "创建新加值",
+  "CurrentBonuses": "当前加值",
+  "CurrentBonusesTooltip": "你创建的、当前存储在此角色、物品或激活效果上的加值。",
+  "CurrentFiltersTooltip": "当前应用于此加值的过滤列表，进一步缩小该加值应用于哪些掷骰。每个过滤条件都必须为真才能应用加值。",
+  "Example": "示例",
+  "FIELDS": {
+    "aura": {
+      "blockers": {
+        "hint": "阻止光环转移的状态条件，例如圣武士的灵光只有在圣武士既未死亡也未失去意识时才会激活。",
+        "label": "阻止条件"
+      },
+      "disposition": {
+        "hint": "相对于源token的倾向，哪些目标会受到该光环的影响。",
+        "label": "有效目标",
+        "optionAlly": "友善目标",
+        "optionAny": "任意目标",
+        "optionEnemy": "敌对目标"
+      },
+      "enabled": {
+        "hint": "配置加值是否以及如何作为光环。",
+        "label": "启用"
+      },
+      "label": "光环配置",
+      "range": {
+        "hint": "光环的范围，以英尺为单位（输入“-1 ”表示范围无限）。",
+        "label": "范围",
+        "labelFt": "范围 ({range} ft)",
+        "labelUnlimited": "范围 ({range})"
+      },
+      "require": {
+        "light": {
+          "hint": "如果选中，光环将受到任何阻挡光线的东西的限制。",
+          "label": "执行光照限制"
+        },
+        "move": {
+          "hint": "如果选中，光环将受到任何阻挡移动的东西的限制。",
+          "label": "执行移动限制"
+        },
+        "sight": {
+          "hint": "如果选中，光环将受到任何阻挡视线的东西的限制。",
+          "label": "执行视线限制"
+        },
+        "sound": {
+          "hint": "如果选中，光环将受到任何阻挡声音的东西的限制。",
+          "label": "执行声音限制"
+        }
+      },
+      "self": {
+        "hint": "光环是否会影响其拥有者，而与任何其他目标行为无关。",
+        "label": "影响自身"
+      },
+      "template": {
+        "hint": "光环是否影响的是测量模板内的区域，而不是范围（对于能够放置模板的物品）。",
+        "label": "应用于测量板"
+      }
+    },
+    "consume": {
+      "enabled": {
+        "hint": "配置加值是否消耗属性以及如何消耗属性。除非是可选的，否则不能将加值设置为消耗。",
+        "label": "启用"
+      },
+      "formula": {
+        "hint": "每一步的加值比例计算公式。",
+        "label": "比例公式"
+      },
+      "label": "消耗配置",
+      "scales": {
+        "hint": "决定该加值能否消耗超过消耗属性的基础量，并相应地对加值应用比例。",
+        "label": "启用比例"
+      },
+      "subtype": {
+        "label": "子类型"
+      },
+      "type": {
+        "label": "消耗类型",
+        "optionEffect": "激活效果",
+        "optionSlots": "法术位"
+      },
+      "value": {
+        "label": "消耗值",
+        "labelSlot": "法术位大小",
+        "hint": "选择该加值时将消耗的数值。",
+        "hintScale": "选择该加值时可消耗的最低和最高数值。",
+        "hintScaleSlot": "可用于加值的法术位的最小和最大值。如果消耗的法术位大于此最大值，也不会带来额外的好处。",
+        "hintSlot": "选择该加值所需的最小法术位大小。",
+        "min": {
+          "label": "最小",
+          "labelSlot": "最小"
+        },
+        "max": {
+          "label": "最大",
+          "labelSlot": "最大"
+        },
+        "step": {
+          "label": "Step",
+          "hint": "消费时选择的 delta 或 step。"
+        }
+      }
+    },
+    "description": {
+      "hint": "与该加值相关的文字。虽然不是必需的，但会显示在提示以及任何可选加值的提示中。",
+      "label": "描述"
+    },
+    "enabled": {
+      "hint": "打开或关闭该加值。切换为关闭的加值将被完全忽略。",
+      "label": "启用"
+    },
+    "exclusive": {
+      "hint": "切换该加值是否只适用于创建该加值的物品。加值不能设置为只适用于某一特定物品，除非是在该物品上创建的，并适用于攻击、伤害、豁免DC或工具检定。",
+      "label": "特定"
+    },
+    "img": {
+      "hint": "在相关位置显示该加值的图像。",
+      "label": "图像"
+    },
+    "optional": {
+      "hint": "切换掷骰时是否应选择该加值。请注意，此加值不适用于豁免 DC 。",
+      "label": "可选"
+    },
+    "reminder": {
+      "hint": "切换该加值是否只起到提醒作用。要使用此功能，必须不给予任何加值或掷骰修改。此功能也只适用于有配置对话框的掷骰。",
+      "label": "提示"
+    },
+    "filters": {
+      "abilities": {
+        "hint": "根据掷骰时使用的属性值进行过滤。这与设置为使用默认属性的物品一致，例如使用施法属性的法术，或使用力量或敏捷的灵巧武器。",
+        "label": "属性调整"
+      },
+      "actorCreatureSizes": {
+        "hint": "根据角色的生物体型进行过滤，要求掷骰角色是所选生物体型之一。",
+        "label": "生物大小"
+      },
+      "actorCreatureTypes": {
+        "hint": "根据掷骰角色属于的生物类型（或其子类型），或掷骰角色不属于的生物类型进行过滤。例如 '不死生物undead','精类fey'或'构装体construct'。要指定一种生物类型为子类型，请在角色的子类型字段中写入任意多个子类型，并用'/'分隔。",
+        "label": "角色生物类型"
+      },
+      "actorLanguages": {
+        "hint": "根据角色会说或不会说、读或写的语言进行过滤。这将考虑到角色是否会说原初语Primordial等系列语言，而不仅仅是特定的语言。",
+        "label": "语言"
+      },
+      "arbitraryComparisons": {
+        "hint": "插入数字、掷骰数据属性、字符串或三者的组合，必须在特定关系中才能应用加值。这种比较可以通过使用任一不等式对子串进行评估。你还可以在公式前加上'@target'，从而使用标记token角色的掷骰数据。",
+        "label": "任意比较",
+        "one": {
+          "placeholder": "值…"
+        },
+        "other": {
+          "placeholder": "其他值…"
+        }
+      },
+      "attackModes": {
+        "hint": "根据物品的攻击类型进行过滤，攻击类型决定伤害掷骰。例如，徒手攻击、双手武器攻击或远程法术攻击。",
+        "label": "攻击模式",
+        "value": {
+          "label": "范围"
+        },
+        "classification": {
+          "label": "类型"
+        },
+        "mode": {
+          "label": "模式"
+        }
+      },
+      "baseArmors": {
+        "hint": "根据角色穿戴或不能穿戴的护甲类型（包括盾牌）进行过滤。例如，希望加值仅在穿戴链甲Chain Mail或未穿戴护甲时适用。该过滤还可以考虑'轻甲'等护甲类别。",
+        "label": "护甲类型"
+      },
+      "baseTools": {
+        "hint": "根据掷骰物品是其中一种或不是其中一种的工具类型进行过滤。例如，只想在使用草药工具包、盗贼工具或鞋匠工具时获得加值。",
+        "label": "工具类型"
+      },
+      "baseWeapons": {
+        "hint": "根据掷骰物品属于或不属于的武器类型进行过滤。例如，希望加值仅在使用战斧、短弓或长剑时适用。该过滤还可以考虑类别。",
+        "label": "武器类型"
+      },
+      "creatureTypes": {
+        "hint": "根据目标角色属于的生物类型（或其子类型），或目标角色不属于的生物类型进行过滤。例如 '不死生物undead','精类fey'或'构装体construct'。要指定一种生物类型为子类型，请在角色的子类型字段中写入任意多个子类型，并用'/'分隔。",
+        "label": "目标生物类型"
+      },
+      "customScripts": {
+        "hint": "使用自己编写的任何自定义脚本进行过滤。脚本必须完全同步，并且必须明确返回true或false。作为辅助变量，脚本会提供掷骰角色和token('actor'和'token')、正在使用的物品（'item'，如果有的话）以及该脚本所附加的加值（'bonus'）。可以直接访问这些变量。",
+        "label": "自定义脚本"
+      },
+      "damageTypes": {
+        "hint": "根据掷骰必须或不必须造成哪种伤害类型进行过滤。例如法术必须是造成火焰或闪电伤害。",
+        "label": "伤害类型"
+      },
+      "featureTypes": {
+        "hint": "根据特性类型项目必须具有的类型和子类型进行过滤。例如职业特性、气特性或怪物特性。",
+        "label": "特性类型",
+        "subtype": {
+          "label": "子类型"
+        },
+        "type": {
+          "label": "类型"
+        }
+      },
+      "HealthPercentages": {
+        "hint": "根据角色至少或最多的生命值百分比进行过滤。例如，掷骰角色必须剩余 90% 或以上的生命值。",
+        "label": "生命值百分比",
+        "type": {
+          "label": "类型",
+          "optionLT": "低于",
+          "optionGT": "超过"
+        },
+        "value": {
+          "label": "阈值"
+        }
+      },
+      "identifiers": {
+        "hint": "根据物品必须具备的标识符进行过滤。你可以在源配置中设置物品的标识符。",
+        "label": "标识符",
+        "placeholder": "输入标识符"
+      },
+      "itemTypes": {
+        "hint": "根据掷骰物品类型进行过滤。例如，加值只适用于法术或只适用于武器。",
+        "label": "物品类型"
+      },
+      "markers": {
+        "label": "标记",
+        "hint": "根据掷骰角色身上必须存储的标记进行过滤。使用的物品或其角色必须至少有一个标记。应用效果上存储的任何标记也将有效。此外，您还可以比较目标上的标记。",
+        "placeholder": "输入标记…",
+        "target": {
+          "label": "目标标记",
+          "hint": "目标生物身上必须有其中一个标记。"
+        },
+        "values": {
+          "label": "标记",
+          "hint": "进行掷骰的生物身上必须有其中一个标记。"
+        }
+      },
+      "preparationModes": {
+        "hint": "根据法术设置的准备模式类型进行过滤。例如，当施展准备模式为'契约pact'或仪式法术的法术时。",
+        "label": "准备模式"
+      },
+      "proficiencyLevels": {
+        "hint": "根据熟练程度进行过滤。例如，使用的工具具有专精，或者豁免检定未具有熟练，加值才适用。",
+        "label": "熟练程度"
+      },
+      "remainingSpellSlots": {
+        "hint": "根据掷骰角色所拥有的法术位总数的最小值和最大值进行过滤。例如，您希望只有在剩余3个或更多法术位或完全没有剩余法术位的情况下才应用加值。可以对其进行切换，使每个剩余法术位的数值等于其大小。",
+        "label": "剩余法术位",
+        "rangeLabel": "范围",
+        "size": {
+          "label": "大小",
+          "hint":"将法术位的大小考虑在内，即 5 环法术位的数值算作 5。否则，每个法术位算1。"
+        }
+      },
+      "saveAbilities": {
+        "hint": "根据用于设置物品豁免DC的属性值进行过滤；例如，战斗大师战士使用敏捷确定他们的战技DC。这可能不同于物品使用的其他属性。如果物品被设置为'施法属性'，则会与掷骰角色的施法属性进行比较。",
+        "label": "豁免DC属性"
+      },
+      "skillIds": {
+        "hint": "根据掷骰是其中一种或不是其中一种的技能类型进行过滤。例如，加值只适用于运动、自然或求生技能检定。",
+        "label": "技能"
+      },
+      "sourceClasses": {
+        "hint": "根据法术所属职业标识符进行过滤。源职业标识符可在法术的详细信息中设置。",
+        "label": "源职业",
+        "placeholder": "输入标识符"
+      },
+      "spellComponents": {
+        "hint": "根据所施法术具备的成分或法术标签进行过滤。您可以选择该法术是否必须具备所有给定的成分或标签，或至少其中一个。例如，如果您希望加值适用于所有需要专注的法术或所有具有材料成分的法术。",
+        "label": "法术成分",
+        "match": {
+          "label": "匹配",
+          "optionAll": "全部匹配",
+          "optionAny": "任意匹配"
+        },
+        "types": {
+          "label": "类型"
+        }
+      },
+      "spellLevels": {
+        "hint": "根据法术施放的环阶进行过滤。例如，可以让加值只适用于戏法，只适用于环阶法术，或只适用于 3 环或以下的法术。",
+        "label": "法术环阶"
+      },
+      "spellSchools": {
+        "hint": "根据法术属于的学派进行过滤。如果选择了多个学派，则法术必须属于其中任何一个学派。例如，您希望加值只适用于预言Divination或塑能Evocation法术。",
+        "label": "法术学派"
+      },
+      "statusEffects": {
+        "hint": "根据掷骰角色受到或未受到的状态进行过滤。这将考虑到角色所拥有的任何状态免疫，例如麻痹免疫。",
+        "label": "角色状态"
+      },
+	  "targetArmors": {
+        "hint": "根据目标穿戴或未穿戴的护甲类型（包括盾牌）进行过滤。例如，只在目标穿着链甲或未着甲时才获得加值。该过滤还可以考虑'轻甲'等护甲类别。",
+        "label": "目标护甲"
+      },
+      "targetEffects": {
+        "hint": "根据目标角色受到或未受到的状态进行过滤。这将考虑到角色所拥有的任何状态免疫，例如麻痹免疫。",
+        "label": "目标状态"
+      },
+      "throwTypes": {
+        "hint": "根据豁免检定类型进行过滤。例如，如果加值只适用于智力或魅力豁免检定，甚至适用于死亡豁免检定或维持专注于某种效果的豁免检定。",
+        "label": "豁免检定类型"
+      },
+      "tokenSizes": {
+        "hint": "根据目标token的大小进行过滤，以及是否与掷骰token进行比较。例如，是否应要求目标token至少是2*2，并大于执行掷骰角色的token。",
+        "label": "Token大小",
+        "self": {
+          "label": "与自身比较",
+          "hint": "如果选中，除上述值外，目标Token还必须大于/小于掷骰角色的Token大小。"
+        },
+        "size": {
+          "label": "大小",
+          "placeholder": "大小…"
+        },
+        "type": {
+          "optionGT": "大于",
+          "optionLT": "小于"
+        }
+      },
+      "weaponProperties": {
+        "hint": "根据用于掷骰物品具备或不能具备的武器属性进行过滤。例如，加值只适用于双手武器或多用武器。",
+        "label": "武器属性"
+      }
+    }
+  },
+  "MODIFIERS": {
+    "FIELDS": {
+      "amount": {
+        "label": "骰子数量",
+        "enabled": {
+          "label": "数量调整"
+        },
+        "mode": {
+          "hint": "是将额外的骰子加在上面，还是将数值乘以这个数量。",
+          "label": "模式"
+        },
+        "value": {
+          "hint": "掷骰数量增加。",
+          "label": "额外骰子"
+        }
+      },
+      "config": {
+        "label": "骰子配置",
+        "enabled": {
+          "label": "启用调整",
+          "hint": "切换哪些骰子调整应可配置并应用于掷骰。"
+        },
+        "first": {
+          "hint": "如果选中，则骰子调整只适用于完整表达式中的第一个骰子。",
+          "label": "仅第一枚骰子"
+        }
+      },
+      "explode": {
+        "label": "爆炸骰",
+        "enabled": {
+          "label": "爆炸骰"
+        },
+        "limit": {
+          "hint": "允许的最大爆炸次数。如果留空，则不执行任何限制。",
+          "label": "最大爆炸"
+        },
+        "once": {
+          "hint": "限制骰子最多爆炸一次。",
+          "label": "爆炸一次"
+        },
+        "value": {
+          "hint": "爆炸行为的阈值。",
+          "label": "阈值"
+        }
+      },
+      "maximum": {
+        "label": "最大结果",
+        "enabled": {
+          "hint": "允许此加值配置每个骰子上掷出的最大结果。",
+          "label": "最大结果"
+        },
+        "value": {
+          "hint": "能够掷骰的最大结果。使用负值时，上限将从顶部而不是底部开始计算。",
+          "label": "最大值"
+        },
+        "zero": {
+          "hint": "允许最终值为 0。否则，允许的最小结果将是 1。",
+          "label": "允许0"
+        }
+      },
+      "minimum": {
+        "label": "最小结果",
+        "enabled": {
+          "hint": "允许此加值配置每个骰子上掷出的最小结果。",
+          "label": "最小结果"
+        },
+        "value": {
+          "hint": "能够掷骰的最小结果。使用负值时，下限将从顶部而不是底部开始计算。",
+          "label": "最小值"
+        },
+        "maximize": {
+          "hint": "使所有骰子都达到最大值。",
+          "label": "最大化"
+        }
+      },
+      "mode": {
+        "optionAdd": "增加",
+        "optionMultiply": "相乘"
+      },
+      "reroll": {
+        "label": "重新掷骰",
+        "enabled": {
+          "hint": "允许此加值导致骰子重掷。",
+          "label": "重掷行为"
+        },
+        "invert": {
+          "hint": "是否对掷出高于阈值的骰子进行重掷，而不是对掷出低于阈值的骰子进行重掷。",
+          "label": "反转"
+        },
+        "limit": {
+          "hint": "允许的最大重掷次数。如果留空，则不执行任何限制。",
+          "label": "最大重掷次数"
+        },
+        "recursive": {
+          "hint": "是否循环重掷。",
+          "label": "循环"
+        },
+        "value": {
+          "hint": "重掷行为的阈值。",
+          "label": "阈值"
+        }
+      },
+      "size": {
+        "label": "骰子大小",
+        "enabled": {
+          "hint": "允许对掷骰的大小进行更改。",
+          "label": "大小调整"
+        },
+        "mode": {
+          "hint": "是增加骰子的大小，还是乘以面数。",
+          "label": "模式"
+        },
+        "value": {
+          "hint": "掷骰的大小增加。",
+          "label": "大小增加"
+        }
+      }
+    }
+  },
+  "ID": "ID",
+  "Keys": "Keys",
+  "KeysDialogApplySelection": "应用选择",
+  "KeysDialogExclude": "排除",
+  "KeysDialogInclude": "包括",
+  "KeysDialogState": "状态",
+  "KeysDialogTitle": "Keys: {name}",
+  "KeysDialogValue": "值",
+  "Labels": {
+    "Consuming": "消耗",
+    "Disabled": "禁用",
+    "Exclusive": "物品专属",
+    "Filters": "{n}过滤",
+    "Optional": "可选",
+    "Reminder": "提示",
+    "TemplateAura": "测量板光环",
+    "TokenAura": "Token光环"
+  },
+  "Largest": "最大",
+  "ModuleTitle": "Build-a-Bonus",
+  "NewBabonus": "新建加值",
+  "OriginName": "来源: {name}",
+  "OverviewActor": "角色",
+  "OverviewCopied": "uuid 已复制到剪贴板",
+  "OverviewImmediateParent": "直系父系",
+  "OverviewName": "名称",
+  "OverviewTitle": "应用加值",
+  "RegionConfigHint": "打开该场景区域的加值构建器。这些加值将适用于该区域内的任何token。",
+  "Relative": "相关",
+  "SearchBonuses": "搜索加值",
+  "SelectType": "选择一种类型",
+  "SelectTypeTooltip": "为你的新加值选择一种类型；它应适用于哪种掷骰。",
+  "SettingsAllowFumbleNegationHint": "允许修改攻击检定的失误范围，使其低于 1 ？",
+  "SettingsAllowFumbleNegationName": "允许失误否定",
+  "SettingsDisableCustomScriptFilterHint": "禁止读取'自定义脚本'过滤的值。相反，过滤总是立即返回true。如果希望其他用户不执行脚本，请启用此设置。",
+  "SettingsDisableCustomScriptFilterName": "禁用'自定义脚本'过滤",
+  "SettingsDisplayLabelHint": "如果选中，标签就会显示在适用的角色、物品和效果的标题中。",
+  "SettingsDisplayLabelName": "显示标签",
+  "SettingsPadAuraRadius": "填充光环半径",
+  "SettingsPadAuraRadiusHint": "在无网格场景中，是否会因token大小而扩大光环的半径？",
+  "SettingsShowAuraRangesHint": "为 babonus 光环的范围创建可视化指示器。这不适用于测量板光环或范围不受限制的光环。如果掷骰者在光环范围内，则标记为绿色，否则标记为红色。",
+  "SettingsShowAuraRangesName": "显示光环范围",
+  "SettingsShowBuilderForPlayersHint": "如果禁用，玩家将无法在标题中看到进入bab的图标。",
+  "SettingsShowBuilderForPlayersName": "为玩家显示",
+  "SettingsShowSheetTab": "角色表标签",
+  "SettingsShowSheetTabHint": "在角色表上添加一个新标签，而不是添加一个按钮。",
+  "SheetTabs": {
+    "Advanced": "高级",
+    "Bonuses": "加值",
+    "Configuration": "配置",
+    "Description": "描述",
+    "Filters": "过滤"
+  },
+  "MarkersDialog": {
+    "field": {
+      "label": "标记",
+      "hint": "为'标记'过滤的作用将标记应用于本文档。"
+    },
+    "title": "应用标记: {name}"
+  },
+  "ToggleBonus": "切换加值",
+  "Toggles": "切换",
+  "ATTACK": {
+    "Label": "攻击检定",
+    "FIELDS": {
+      "bonuses": {
+        "bonus": {
+          "label": "攻击检定加值",
+          "hint": "在攻击检定的基础上增加的额外内容。"
+        },
+        "criticalRange": {
+          "label": "重击范围调整",
+          "hint": "从攻击检定的重击范围中减去的整数。该字段采纳掷骰(即D20)数据，而不采纳掷骰总值。"
+        },
+        "fumbleRange": {
+          "label": "大失败范围调整",
+          "hint": "用于添加到攻击检定范围中的整数。该字段采纳掷骰(即D20)数据，而不采纳掷骰总值。"
+        }
+      }
+    }
+  },
+  "DAMAGE": {
+    "Label": "伤害掷骰",
+    "FIELDS": {
+      "bonuses": {
+        "bonus": {
+          "label": "伤害掷骰加值",
+          "hint": "在伤害掷骰的基础上增加的额外内容。"
+        },
+        "criticalBonusDamage": {
+          "hint": "重击命中时在伤害掷骰基础上增加的额外部分。",
+          "label": "额外重击伤害"
+        },
+        "criticalBonusDice": {
+          "hint": "重击命中时应掷的额外骰子数。该字段采纳掷骰(即D20)数据，而不采纳掷骰总值。",
+          "label": "额外重击伤害骰"
+        },
+        "damageType": {
+          "hint": "添加到伤害掷骰上的额外伤害类型。",
+          "label": "伤害类型"
+        }
+      }
+    }
+  },
+  "HITDIE": {
+    "Label": "生命骰掷骰",
+    "FIELDS": {
+      "bonuses": {
+        "bonus": {
+          "label": "生命骰加值",
+          "hint": "在生命骰掷骰的基础上增加的额外内容。"
+        }
+      }
+    }
+  },
+  "SAVE": {
+    "Label": "豁免DC",
+    "FIELDS": {
+      "bonuses": {
+        "bonus": {
+          "hint": "加到豁免检定 DC 上的整数。该字段采纳掷骰(即D20)数据，而不采纳掷骰总值。",
+          "label": "豁免DC加值"
+        }
+      }
+    }
+  },
+  "TEST": {
+    "Label": "属性检定",
+    "FIELDS": {
+      "bonuses": {
+        "bonus": {
+          "label": "属性检定加值",
+          "hint": "在属性检定的基础上增加的额外内容。"
+        }
+      }
+    }
+  },
+  "THROW": {
+    "Label": "豁免检定",
+    "FIELDS": {
+      "bonuses": {
+        "bonus": {
+          "hint": "在豁免检定的基础上增加的额外内容。",
+          "label": "豁免检定加值"
+        },
+        "deathSaveCritical": {
+          "hint": "用于减去决定死亡豁免检定何时恢复意识和 1 点生命值的关键值(20)的一个整数。该字段采纳掷骰(即D20)数据，而不采纳掷骰总值。",
+          "label": "死亡豁免大成功限制"
+        },
+        "targetValue": {
+          "hint": "从通过豁免检定的最低要求中减去的整数。该字段采纳掷骰(即D20)数据，而不采纳掷骰总值。",
+          "label": "目标值"
+        }
+      }
+    }
+  },
+  "Warning": {
+    "Consuming": {
+      "CurrencyUnavailable":  "你没有该面额所需的金额。",
+      "EffectUnavailable": "相关效果不再存在。",
+      "HealthUnavailable": "你剩余的生命值不足。",
+      "HitdiceUnavailable": "你剩余的生命骰不足。",
+      "InspirationUnavailable": "你没有激励。",
+      "QuantityUnavailable": "你没有所需数量的相关物品。",
+      "SlotsUnavailable": "你没有该环阶的剩余法术位。",
+      "UsesUnavailable": "你的物品没有达到所需的消耗次数。"
+    }
+  }
+}}

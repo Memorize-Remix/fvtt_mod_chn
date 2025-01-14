@@ -1,0 +1,53 @@
+{
+    "title": "Combat Booster: Turn Marker, Recent Actions and more",
+    "description": "Speed up Combat",
+    "version": "4.0.3",
+    "authors": [
+        {
+            "name": "theripper93",
+            "email": "tsplab@gmail.com",
+            "url": "https://www.patreon.com/theripper93"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        },
+        {
+            "lang": "it",
+            "name": "Italiano",
+            "path": "languages/it.json"
+        },
+        {
+            "lang": "es",
+            "name": "Español",
+            "path": "languages/es.json"
+        },
+        {
+            "lang": "ja",
+            "name": "日本語",
+            "path": "languages/ja.json"
+        }
+    ],
+    "scripts": [
+        "scripts/main.js",
+        "scripts/CombatBooster.js",
+        "scripts/TurnMarker.js",
+        "scripts/config.js",
+        "scripts/CombatHud.js"
+    ],
+    "styles": [
+        "styles/CombatBooster.css"
+    ],
+    "url": "https://github.com/theripper93/Combat-Booster",
+    "manifest": "https://github.com/theripper93/Combat-Booster/releases/latest/download/module.json",
+    "download": "https://github.com/theripper93/Combat-Booster/releases/download/4.0.3/module.zip",
+    "socket": true,
+    "id": "combatbooster",
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12"
+    }
+}

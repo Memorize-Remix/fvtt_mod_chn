@@ -1,0 +1,118 @@
+{
+    "id": "token-action-hud-dnd5e",
+    "title": "Token Action HUD D&D 5e",
+    "description": "Token Action HUD is a repositionable HUD of actions for a selected token",
+    "authors": [
+        {
+            "name": "Larkinabout",
+            "url": "https://github.com/Larkinabout"
+        },
+        {
+            "name": "Drental"
+        },
+        {
+            "name": "^ and stick"
+        }
+    ],
+    "url": "https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e",
+    "flags": {},
+    "version": "2.0.2",
+    "compatibility": {
+        "minimum": "12.331",
+        "verified": "12.331"
+    },
+    "esmodules": [
+        "./scripts/token-action-hud-dnd5e.min.js"
+    ],
+    "scripts": [],
+    "styles": [
+        "./styles/tah-dnd5e.css"
+    ],
+    "languages": [
+        {
+            "lang": "cn",
+            "name": "中文",
+            "path": "languages/cn.json"
+        },
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "languages/de.json"
+        },
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        },
+        {
+            "lang": "es",
+            "name": "Spanish",
+            "path": "languages/es.json"
+        },
+        {
+            "lang": "fr",
+            "name": "French",
+            "path": "languages/fr.json"
+        },
+        {
+            "lang": "it",
+            "name": "italiano",
+            "path": "languages/it.json"
+        },
+        {
+            "lang": "ja",
+            "name": "日本語",
+            "path": "languages/ja.json"
+        },
+        {
+            "lang": "ko",
+            "name": "Korean",
+            "path": "languages/ko.json"
+        },
+        {
+            "lang": "pl",
+            "name": "Polish",
+            "path": "languages/pl.json"
+        },
+        {
+            "lang": "pt-BR",
+            "name": "Português (Brasil)",
+            "path": "languages/pt-BR.json"
+        }
+    ],
+    "packs": [],
+    "relationships": {
+        "systems": [
+            {
+                "id": "dnd5e",
+                "compatibility": {
+                    "minimum": "4.0.0",
+                    "maximum": "4.99",
+                    "verified": "4.0.4"
+                }
+            }
+        ],
+        "requires": [
+            {
+                "id": "token-action-hud-core",
+                "type": "module",
+                "compatibility": {
+                    "minimum": "2.0.0",
+                    "maximum": "2.0.99",
+                    "verified": "2.0.0"
+                }
+            }
+        ],
+        "optional": [],
+        "flags": {
+            "optional": []
+        }
+    },
+    "socket": false,
+    "manifest": "https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e/releases/latest/download/module.json",
+    "download": "https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e/releases/download/2.0.2/module.zip",
+    "readme": "https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e#readme",
+    "protected": false,
+    "coreTranslation": false,
+    "library": false
+}

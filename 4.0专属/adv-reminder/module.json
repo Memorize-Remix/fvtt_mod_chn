@@ -1,0 +1,68 @@
+{
+    "id": "adv-reminder",
+    "title": "Advantage Reminder for dnd5e",
+    "description": "Use active effects to remind you to roll with advantage, disadvantage, or show messages on the dialog for situational adv/dis or bonuses.",
+    "authors": [
+        {
+            "name": "kaelad",
+            "discord": "kaelad#1693"
+        }
+    ],
+    "version": "4.1.0",
+    "compatibility": {
+        "minimum": "12.331",
+        "verified": "12"
+    },
+    "relationships": {
+        "systems": [
+            {
+                "id": "dnd5e",
+                "compatibility": {
+                    "minimum": "4.0.0",
+                    "verified": "4.0.0"
+                }
+            },
+            {
+                "id": "sw5e"
+            }
+        ]
+    },
+    "esmodules": [
+        "src/module.js",
+        "src/settings.js"
+    ],
+    "styles": [
+        "css/adv-reminder.css"
+    ],
+    "packs": [
+        {
+            "name": "sample-items",
+            "label": "AR Message Sample Items",
+            "system": "dnd5e",
+            "path": "packs/sample-items",
+            "type": "Item"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        },
+        {
+            "lang": "fr",
+            "name": "Français",
+            "path": "lang/fr.json"
+        },
+        {
+            "lang": "pt-BR",
+            "name": "Portuguese (Brasil)",
+            "path": "lang/pt-BR.json"
+        }
+    ],
+    "url": "https://github.com/kaelad02/adv-reminder",
+    "manifest": "https://github.com/kaelad02/adv-reminder/releases/latest/download/module.json",
+    "download": "https://github.com/kaelad02/adv-reminder/releases/download/v4.1.0/module.zip",
+    "changelog": "https://github.com/kaelad02/adv-reminder/blob/main/CHANGELOG.md",
+    "readme": "https://github.com/kaelad02/adv-reminder/blob/main/README.md"
+}

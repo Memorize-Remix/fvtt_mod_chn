@@ -1,0 +1,105 @@
+{
+    "title": "Argon - Combat HUD (DND5E)",
+    "description": "DnD5e - Fifth Edition System Argon integration",
+    "id": "enhancedcombathud-dnd5e",
+    "version": "4.1.3",
+    "authors": [
+        {
+            "name": "theripper93",
+            "email": "tsplab@gmail.com",
+            "url": "https://www.patreon.com/theripper93"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "languages/de.json"
+        },
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        },
+        {
+            "lang": "es",
+            "name": "Español",
+            "path": "languages/es.json"
+        },
+        {
+            "lang": "fr",
+            "name": "Français",
+            "path": "languages/fr.json"
+        },
+        {
+            "lang": "it",
+            "name": "Italiano",
+            "path": "languages/it.json"
+        },
+        {
+            "lang": "ja",
+            "name": "日本語",
+            "path": "languages/ja.json"
+        },
+        {
+            "lang": "pt-BR",
+            "name": "Português (Brasil)",
+            "path": "languages/pt-br.json"
+        },
+        {
+            "lang": "ru",
+            "name": "Русский",
+            "path": "languages/ru.json"
+        },
+        {
+            "lang": "ko",
+            "name": "한국어",
+            "path": "languages/ko.json"
+        },
+        {
+            "lang": "cn",
+            "name": "中文",
+            "path": "languages/cn.json"
+        },
+        {
+            "lang": "pl",
+            "name": "Polski",
+            "path": "languages/pl.json"
+        }
+    ],
+    "scripts": [],
+    "esmodules": [
+        "index.js"
+    ],
+    "styles": [
+        "styles/module.css"
+    ],
+    "packs": [],
+    "url": "https://github.com/theripper93/enhancedcombathud-dnd5e",
+    "manifest": "https://github.com/theripper93/enhancedcombathud-dnd5e/releases/latest/download/module.json",
+    "download": "https://github.com/theripper93/enhancedcombathud-dnd5e/releases/download/4.1.3/module.zip",
+    "relationships": {
+        "requires": [
+            {
+                "id": "enhancedcombathud",
+                "type": "module",
+                "compatibility": {
+                    "minimum": "3.0.4"
+                }
+            }
+        ],
+        "systems": [
+            {
+                "id": "dnd5e",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "4.1.0"
+                }
+            }
+        ]
+    },
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12"
+    }
+}

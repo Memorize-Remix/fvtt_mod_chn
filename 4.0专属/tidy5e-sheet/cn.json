@@ -1,0 +1,840 @@
+
+  "TIDY5E.Tidy5eCharacterSheetClassic": "Tidy 5e 经典角色表",
+  "TIDY5E.Tidy5eNpcSheetClassic": "Tidy 5e 经典NPC表",
+  "TIDY5E.Tidy5eItemSheetClassic": "Tidy 5e 经典物品表",
+  "TIDY5E.Tidy5eContainerSheetClassic": "Tidy 5e 经典容器表",
+  "TIDY5E.Tidy5eVehicleSheetClassic": "Tidy 5e 经典载具表",
+  "TIDY5E.Tidy5eGroupSheetClassic": "Tidy 5e 经典组表",
+  "TIDY5E.PlayerName": "玩家名称",
+  "TIDY5E.EditSheetImageHint": "左键：编辑图像",
+  "TIDY5E.PreviewSheetImageHint": "左键：预览图像",
+  "TIDY5E.SheetImageOptionsHint": "右键：显示图像选项",
+  "TIDY5E.ShowPortraitArt": "显示肖像",
+  "TIDY5E.PortraitTitle": "肖像: {subject}",
+  "TIDY5E.ItemImageTitle": "物品: {subject}",
+  "TIDY5E.ShowTokenArt": "显示token",
+  "TIDY5E.ShowItemImage": "右键：显示物品图像",
+  "TIDY5E.ShowItemArt": "显示图像",
+  "TIDY5E.Tidy5eSettings": "Tidy 5e 角色卡设置",
+
+  "TIDY5E.ExhaustionLevelTooltip": "力竭等级 {level}",  
+
+  "TIDY5E.AbbrInitiative": "先攻",
+
+  "TIDY5E.NoSpecialSenses": "无特殊感官",
+
+  "TIDY5E.Group.NamePlaceholder": "组名称",
+  "TIDY5E.Group.RemoveMemberFromGroup": "从组中移除成员",
+  "TIDY5E.Group.ShowMemberTabInfoPanel": "显示信息面板",
+  "TIDY5E.Group.HideMemberTabInfoPanel": "隐藏信息面板",
+  "TIDY5E.Group.EmptyMembersTabHint": "该组为空。从侧边栏中拖拽一个角色到此即可添加成员。",
+
+  "TIDY5E.RestHint": "休息",
+  "TIDY5E.ShortRest": "短休",
+  "TIDY5E.LongRest": "长休",
+  "TIDY5E.HitDiceRollAverage": "右击：应用均值",
+
+  "TIDY5E.JournalTabName": "日志",
+
+  "TIDY5E.Actions": {
+    "TabName": "动作",
+    "OverriddenSetOverrideFalse": "从动作列表中移除（Shift+单击清除覆盖）",
+    "OverriddenSetOverrideTrue": "添加到动作列表(Shift+ 点击清除覆盖)",
+    "SetOverrideFalse": "从动作列表中删除",
+    "SetOverrideTrue": "添加到动作列表",
+    "ResetActionDefault": "重置默认动作"
+  },
+
+  "TIDY5E.HitDC": "命中/DC",
+
+  "TIDY5E.RestoreOnRest": "休息后回复",
+
+  "TIDY5E.JournalPersonsOfInterest": "感兴趣的人",
+  "TIDY5E.JournalLocationsOfInterest": "感兴趣的地点",
+  "TIDY5E.JournalQuests": "任务",
+  "TIDY5E.JournalMisc": "杂项",
+  "TIDY5E.JournalEntries": "日志条目",
+  "TIDY5E.TogglePersonalityInfo": "切换个性信息",
+
+  "TIDY5E.SheetEdit.Enable.Hint": "启用编辑-{description}",
+  "TIDY5E.SheetEdit.Disable.Hint": "禁用编辑-{description}",
+  "TIDY5E.SheetEdit.Description": "切换添加/删除按钮和空白部分的可见性",
+
+  "TIDY5E.SheetLock.Unlock.Hint": "解锁-{description}",
+  "TIDY5E.SheetLock.Lock.Hint": "锁定-{description}",
+  "TIDY5E.SheetLock.Description": "为不应经常更改的敏感字段切换锁定",
+
+  "TIDY5E.Inventory.Weight.Tooltip": "宽度: {weight} {weightUnit}",
+  "TIDY5E.Inventory.Weight.Text": "{weight} {weightUnit}",
+
+  "TIDY5E.ContextMenuActionEquip": "装备",
+  "TIDY5E.ContextMenuActionUnequip": "卸下",
+  "TIDY5E.ContextMenuActionAttune": "同调",
+  "TIDY5E.ContextMenuActionUnattune": "解除同调",
+  "TIDY5E.ContextMenuActionPrepare": "准备",
+  "TIDY5E.ContextMenuActionUnprepare": "未准备",
+  "TIDY5E.ContextMenuActionEdit": "编辑",
+  "TIDY5E.ContextMenuActionDelete": "删除",
+
+  "TIDY5E.EmptyContainer": "这个容器是空的。",
+  "TIDY5E.EmptySection": "此部分为空。解锁表进行编辑。",
+  "TIDY5E.GMOnlyEdit": "只有您的 GM 才能编辑该部分。",
+
+  "TIDY5E.AttunementWarning": "同调: 不能同调超过 {number} 件物品！",
+  "TIDY5E.AttunementItems": "已同调物品",
+  "TIDY5E.AttunementMax": "最大同调数",
+
+  "TIDY5E.GridLayout": "图标布局",
+  "TIDY5E.ListLayout": "列表布局",
+  "TIDY5E.LayoutNotSupported": "不支持布局模式",
+
+  "TIDY5E.Encumbrance": "负重",
+
+  "TIDY5E.AddFavorite": "添加喜好",
+  "TIDY5E.Favorite": "喜好",
+  "TIDY5E.RemoveFavorite": "移除喜好",
+
+  "TIDY5E.ShowNotProficientSkills": "显示未熟练",
+  "TIDY5E.HideNotProficientSkills": "隐藏未熟练",
+  "TIDY5E.ShowEmptyTraits": "显示/编辑空特性",
+  "TIDY5E.HideEmptyTraits": "隐藏空特性",
+
+  "TIDY5E.Abilities": "属性",
+
+  "TIDY5E.Environment": "环境",
+  "TIDY5E.EnvironmentTooltip": "环境: {environment}",
+
+  "TIDY5E.Search": "搜索",
+  "TIDY5E.SearchClear": "清除搜索",
+  "TIDY5E.SearchHint": "输入以显示搜索结果",
+
+  "TIDY5E.InfoCardInspectHint": "{inspectKey}审视",
+
+  "TIDY5E.ItemCardsMouseHint": "用鼠标中键来查看/编辑物品。",
+
+  "TIDY5E.AbbrMod": "调整值",
+  "TIDY5E.AbbrSavingThrow": "豁免",
+  "TIDY5E.AttackMod": "攻击调整值",
+  "TIDY5E.ActorSpellAttackTitle": "{actorName} - 法术攻击",
+  "TIDY5E.ActorSpellAttackFlavorText": "法术攻击",
+  "TIDY5E.ActorMeleeSpellAttackTitle": "{actorName} - 近战法术攻击",
+  "TIDY5E.ActorMeleeSpellAttackFlavorText": "近战法术攻击",
+  "TIDY5E.ActorRangedSpellAttackTitle": "{actorName} - 远程法术攻击",
+  "TIDY5E.ActorRangedSpellAttackFlavorText": "远程法术攻击",
+  "TIDY5E.SpellAttackMod": "法术攻击调整值",
+  "TIDY5E.MeleeSpellAttackMod": "近战法术攻击调整值",
+  "TIDY5E.RangedSpellAttackMod": "远程法术攻击调整值",
+  "TIDY5E.PreparedSpells": "已准备法术",
+
+  "TIDY5E.TokenLinked": "Token已与角色链接",
+  "TIDY5E.TokenUnlinked": "Token未与角色链接",
+
+  "TIDY5E.SpellSourceIdentifierSelectText": "职业标识: {identifier}",
+  "TIDY5E.SpellSourceIdentifierLabelHint": "拥有此法术的角色不具备此处指定的源职业。",
+
+  "TIDY5E.Class.Artificer": "奇械师",
+  "TIDY5E.Class.Barbarian": "野蛮人",
+  "TIDY5E.Class.Bard": "吟游诗人",
+  "TIDY5E.Class.Cleric": "牧师",
+  "TIDY5E.Class.Custom": "自定义",
+  "TIDY5E.Class.Druid": "德鲁伊",
+  "TIDY5E.Class.Fighter": "战士",
+  "TIDY5E.Class.Monk": "武僧",
+  "TIDY5E.Class.Paladin": "圣武士",
+  "TIDY5E.Class.Ranger": "游侠",
+  "TIDY5E.Class.Rogue": "游荡者",
+  "TIDY5E.Class.Sorcerer": "术士",
+  "TIDY5E.Class.Warlock": "契术师",
+  "TIDY5E.Class.Wizard": "法师",
+
+  "TIDY5E.OriginSummaryConfig": "来源概要配置: {actorName}",
+
+  "TIDY5E.MaxPreparedSpellsConfig": {
+    "Title": "最大准备法术配置: {documentName}",
+    "ExamplesHeader": "公式范例",
+    "ButtonTooltip": "配置最大准备法术数",
+    "MoreFormulas": "更多公式"
+  },
+
+  "TIDY5E.TabSelection": {
+    "Title": "选项卡选择: {documentName}",
+    "MenuOptionText": "选项卡选择",
+    "AvailableHeader": "可用选项卡",
+    "SelectedHeader": "所选选项卡",
+    "UnsupportedDocumentErrorMessage": "文件类型 {documentType} 当前未设置为选项卡选择。",
+    "AtLeastOneRequiredErrorMessage": "至少需要一个选项卡。",
+    "Explanation": "用户或角色表配置为不允许查看的任何选项卡（例如，在配置设置中禁用日志条目）即使被选中，仍不会显示在角色表上。"
+  },
+
+  "TIDY5E.ButtonConfirm.Text": "确认",
+
+  "TIDY5E.Listbox": {
+    "MoveUp": "上移（Alt + 上箭头键）",
+    "MoveDown": "下移（Alt + 下箭头键）",
+    "MoveLeft": "左移（空格）",
+    "MoveRight": "右移（空格）",
+    "MoveAllLeft": "全部向左移",
+    "MoveAllRight": "全部向右移"
+  },
+
+  "TIDY5E.WorldSettings.TabCharacter": {
+    "tabLabel": "PC"
+  },
+  "TIDY5E.WorldSettings.TabNpc": {
+    "tabLabel": "NPC"
+  },
+  "TIDY5E.WorldSettings.TabVehicle": {
+    "tabLabel": "载具"
+  },
+  "TIDY5E.WorldSettings.TabExhaustion": {
+    "tabLabel": "力竭"
+  },
+  "TIDY5E.WorldSettings.Exhaustion": {
+    "Header": "PC/NPC力竭",
+    "name": "力竭配置",
+    "hint": "决定在PC和 NPC 表上如何配置和显示力竭。",
+    "options.specific.text": "特定层数",
+    "options.specific.levels.name": "总体层数",
+    "options.specific.levels.hint": "决定力竭的最大层数。",
+    "options.specific.levels.tooltip.name": "力竭层数{level}提示",
+    "options.specific.levels.tooltip.hint": "此力竭层数的提示。本地化键也可以使用。",
+    "options.open.text": "打开数字输入",
+    "options.open.explanation": "显示用户力竭层数的数字输入。",
+    "AtLeastOneLevelRequiredErrorMessage": "至少需要一个力竭层数。"
+  },
+  "TIDY5E.WorldSettings.VehicleExhaustion": {
+    "Header": "载具耗尽",
+    "name": "载具耗尽配置",
+    "hint": "决定载具耗尽的配置和在载具表上的显示方式。",
+    "AtLeastOneLevelRequiredErrorMessage": "至少需要一个载具耗尽层数。"
+  },
+  "TIDY5E.WorldSettings.TabItem": {
+    "tabLabel": "物品"
+  },
+  "TIDY5E.WorldSettings.IncludeTidySectionFieldsInDefaultSheets": {
+    "name": "默认表中包含Tidy分区字段",
+    "hint": "在默认物品表中包含Tidy分区和动作分区输入。"
+  },
+  "TIDY5E.WorldSettings.ItemIdentificationPermission": {
+    "name": "物品鉴定权限",
+    "hint": "确定哪类用户可以访问用于鉴定物品的UI控件。",
+    "options.GmOnly": "仅限GM",
+    "options.GmAndOwners": "GM和物品拥有者"
+  },
+  "TIDY5E.WorldSettings.IncludeFlagsInSpellScrollCreation": {
+    "name": "在创建法术卷轴时包含flag",
+    "hint": "法术有时会包含来自其他模组的特殊数据，将这些数据带入法术卷轴可能会很有用。启用此功能可在创建时将所有基于flag的数据复制到法术卷轴中。"
+  },
+  "TIDY5E.WorldSettings.TabSheetLock": {
+    "tabLabel": "角色表锁定",
+    "header": "锁定选项",
+    "hint": "防止玩家更改角色表中不常更改的内容。可选择隐藏一些你根本不想使用的元素。",
+    "hint2": "重要提示：角色表锁定功能旨在指导玩家使用角色表，并帮助防止错误，例如意外添加/删除豁免熟练度。角色表锁定设置并不能有效防止玩家的恶意行为。",
+    "labelGeneralLocks": "常规锁定",
+    "labelInventoryLocks": "所持物锁定",
+    "labelFeaturesLocks": "特性锁定"
+  },
+  "TIDY5E.WorldSettings.TabMisc": {
+    "tabLabel": "GM选项"
+  },
+  "TIDY5E.WorldSettings.TabIcons": {
+    "tabLabel": "图标"
+  },
+
+  "TIDY5E.Settings.MulticlassSpellbookFilterLabel": "多职业法术书过滤",
+
+  "TIDY5E.WorldSettings.Menu": {
+    "name": "世界设置",
+    "hint": "调整世界设置，自定义 Tidy 5e 角色表内容。这些设置将保存到此 Foundry 世界，并适用于所有相关的 Tidy 5e Sheets 内容。",
+    "label": "世界设置",
+    "title": "世界设置(仅GM)"
+  },
+
+  "TIDY5E.UserSettings.Menu": {
+    "name": "用户设置",
+    "hint": "定制你自己的 Tidy 5e 角色表。这些设置会保存到您的浏览器，并应用于您的角色表。",
+    "label": "用户设置",
+    "title": "用户设置: {userName}"
+  },
+  "TIDY5E.UserSettings.TabPlayers": {
+    "tabLabel": "PC",
+    "header": "PC角色表"
+  },
+  "TIDY5E.UserSettings.TabNPCs": {
+    "tabLabel": "NPC",
+    "header": "NPC角色表"
+  },
+  "TIDY5E.UserSettings.TabVehicles": {
+    "tabLabel": "载具",
+    "header": "载具角色表"
+  },
+  "TIDY5E.UserSettings.TabActionsList": {
+    "tabLabel": "动作列表"
+  },
+  "TIDY5E.Settings.ItemCardsForAllItems": {
+    "name": "在所有布局中显示物品卡",
+    "hint": "禁用此设置后，物品卡片只显示在网格中。"
+  },
+  "TIDY5E.Settings.UseEffectCards": {
+    "name": "显示激活效果信息卡",
+    "hint": "在所有角色和具有激活效果的物品上显示激活效果的信息卡。"
+  },
+  "TIDY5E.Settings.ItemCardsAreFloating": {
+    "name": "显示浮动物品卡",
+    "hint": "启用后，物品信息卡会悬浮在鼠标光标旁边。建议：使用延迟功能。"
+  },
+  "TIDY5E.Settings.ItemCardsDelay": {
+    "name": "物品卡延迟（毫秒）",
+    "hint": "将显示物品卡的时间延迟指定的毫秒(ms)。0 表示无延迟。默认值：300。"
+  },
+  "TIDY5E.Settings.UseAccessibleKeyboardSupport": {
+    "name": "使用无障碍键盘支持",
+    "hint": "使用户能够以选项卡方式查看 Tidy 5e Sheets 上的大多数按钮/命令，并使用传统的基于按钮的键盘热键执行这些按钮/命令。注意：当专注于 Foundry 中的按钮时，\"配置控件\"中的按键绑定不会响应。如果模组在角色表上使用此 Foundry 功能进行控制，例如在按住特殊键的同时使用物品，那么启用此 Tidy 5e 角色表选项将干扰这些键绑定。"
+  },
+  "TIDY5E.Settings.UseDefaultSheetAttributeTabbing": {
+    "name": "使用默认表属性键盘标签",
+    "hint": "默认的5e表允许从一个属性输入到下一个属性输入的键盘标签，方法是在标签顺序中隐藏其周围的控件。启用此选项可复制该行为。如果关闭了\"使用无障碍键盘支持\"，则此设置将被忽略。"
+  },
+  "TIDY5E.Settings.UseDefaultSheetHpTabbing": {
+    "name": "使用默认表 HP 键盘标签",
+    "hint": "默认的5e表允许从当前 HP 输入到当前临时 HP 输入的键盘标签。启用此选项可复制该行为。如果关闭了\"使用无障碍键盘支持\"，则此设置将被忽略。"
+  },
+  "TIDY5E.Settings.InfoCardsInspectKey": {
+    "name": "信息卡审视键",
+    "hint": "在查看信息卡时按下该键盘字符（例如，\"t\"键），信息卡就会弹出来。"
+  },
+  "TIDY5E.Settings.DefaultTheme": {
+    "name": "默认颜色主题",
+    "hint": "所有未选择特定主题的用户的默认主题。"
+  },
+  "TIDY5E.Settings.SheetTheme": {
+    "name": "颜色主题",
+    "hint": "你角色卡的主题",
+    "default": "默认",
+    "light": "明亮",
+    "dark": "深色"
+  },
+  "TIDY5E.Settings.UseClassicControls": {
+    "name": "使用经典列表控件",
+    "hint": "在列表视图中显示控件。"
+  },
+  "TIDY5E.Settings.ShowTraitLabels": {
+    "name": "显示特性标签",
+    "hint": "显示 PC、NPC 和载具特的标签。禁用则只显示图标。"
+  },
+  "TIDY5E.Settings.ShowPlayerName": {
+    "name": "显示玩家名称",
+    "hint": "在角色名称下方显示玩家名称字段。"
+  },
+  "TIDY5E.Settings.ShowClassList": {
+    "name": "显示职业列表",
+    "hint": "在角色名称下方显示职业列表。"
+  },
+  "TIDY5E.Settings.InspirationAnimation": {
+    "name": "动画激励追踪器",
+    "hint": "显示激励跟踪器的发光动画。"
+  },
+  "TIDY5E.Settings.HideIfZero": {
+    "name": "为0隐藏力竭和激励",
+    "hint": "如果为 0，则隐藏力竭和激励，但悬停时仍会显示。"
+  },
+  "TIDY5E.Settings.ShowInspirationOnHover": {
+    "name": "仅在悬停时显示激励指示器",
+    "hint": "只有将鼠标悬停在肖像上时才显示激励指示器。"
+  },
+  "TIDY5E.Settings.ShowExhaustionOnHover": {
+    "name": "仅在悬停时显示力竭跟踪器",
+    "hint": "只有将鼠标悬停在肖像上时，才会显示力竭跟踪器。"
+  },
+  "TIDY5E.Settings.UseHpBar": {
+    "name": "使用HP栏",
+    "hint": "显示表示剩余 HP 的彩色栏。生命值数字仍然可见。"
+  },
+  "TIDY5E.Settings.UseHpOverlay": {
+    "name": "使用生命值覆盖",
+    "hint": "显示彩色 HP 叠加。"
+  },
+  "TIDY5E.Settings.ToggleEmptyCharacterSkills": {
+    "name": "切换空角色技能",
+    "hint": "添加显示/隐藏空技能的切换按钮。"
+  },
+  "TIDY5E.Settings.ToggleEmptyCharacterTraits": {
+    "name": "切换空角色特性",
+    "hint": "添加显示/隐藏空特性的切换按钮。"
+  },
+  "TIDY5E.Settings.MoveTraitsBelowResources": {
+    "name": "将特性移至资源下方",
+    "hint": "将特性置于角色资源之下。"
+  },
+  "TIDY5E.Settings.ShowEquippedAmmoOnly": {
+    "name": "仅显示已装备的弹药",
+    "hint": "在武器弹药选择器中只显示当前装备的弹药。"
+  },
+  "TIDY5E.Settings.AlwaysShowTraits": {
+    "name": "总是显示特性",
+    "hint": "移除空特性的可见切换按钮，并显示所有特性。"
+  },
+  "TIDY5E.Settings.AlwaysShowSkills": {
+    "name": "总是显示技能",
+    "hint": "移除空技能的可见切换按钮，并显示所有技能。"
+  },
+  "TIDY5E.Settings.ShowNPCSpellbookTab": {
+    "name": "显示法术书选项卡",
+    "hint": "显示 NPC 的法术书选项卡。禁用可将法术书部分移至属性选项卡。"
+  },
+  "TIDY5E.Settings.ShowActiveEffectsMarker": {
+    "name": "显示激活效果标记",
+    "hint": "显示具有激活效果的列表视图项的标记。"
+  },
+  "TIDY5E.Settings.UseContextMenu": {
+    "name": "使用右键菜单",
+    "hint": "启用物品的右键上下文菜单。"
+  },
+  "TIDY5E.Settings.ShowExpandedLimitedView": {
+    "name": "显示扩展的有限视图",
+    "hint": "向限制权限的玩家显示整张角色卡（除去日志）。"
+  },
+  "TIDY5E.Settings.UseCircularPortraitStyle": {
+    "name": "使用圆形肖像",
+    "hint": "显示角色的圆形肖像/图标。",
+    "all": "所有角色",
+    "pc": "PC",
+    "npc": "NPC/载具",
+    "none": "无"
+  },
+  "TIDY5E.Settings.UseTotalSheetLock": {
+    "name": "锁定敏感字段",
+    "hint": "锁定不常更改的字段（名称、熟练项切换），并在锁定角色表时隐藏配置按钮。"
+  },
+  "TIDY5E.Settings.LimitEffectsManagementToGM": {
+    "name": "激活效果管理仅限于 GM",
+    "hint": "将编辑或切换激活效果的权限仅限于 GM。"
+  },
+  "TIDY5E.Settings.UseInspiration": {
+    "name": "使用激励追踪器",
+    "hint": "在角色资料上显示激励追踪器。"
+  },
+  "TIDY5E.Settings.UseVehicleMotion": {
+    "name": "使用载具运动追踪器",
+    "hint": "显示载具上的运动追踪器。"
+  },
+  "TIDY5E.Settings.UseExhaustion": {
+    "name": "使用力竭追踪器",
+    "hint": "显示PC、NPC 和载具的力竭追踪器。"
+  },
+  "TIDY5E.Settings.ShowNPCRestInChat": {
+    "name": "在聊天中显示 NPC 休息",
+    "hint": "在 NPC 休息时显示聊天卡。"
+  },
+  "TIDY5E.Settings.ShowNPCActorLinkMarker": {
+    "name": "标记已链接/未链接的 NPC",
+    "hint": "为已链接/未链接的 NPC 页面添加彩色边框和图标。",
+    "default": "无链接标记（默认）",
+    "unlinked": "只应用于未链接的token",
+    "linked": "只应用于已链接的token",
+    "both": "应用于已链接的和未链接的token"
+  },
+  "TIDY5E.Settings.InitialSheetTab": {
+    "name": "初始角色表选项卡",
+    "hint": "首次打开角色表时显示指定的选项卡。"
+  },
+  "TIDY5E.Settings.DefaultSheetTabs": {
+    "name": "默认角色表选项卡",
+    "hint": "决定默认情况下选项卡将以何种顺序显示。适用于无选项卡选择的角色。",
+    "AvailableHeader": "可用选项卡",
+    "SelectedHeader": "选定选项卡",
+    "AtLeastOneTabRequiredErrorMessage": "默认选项卡：每个角色类型至少需要一个选项卡。"
+  },
+  "TIDY5E.Settings.HideDeathSavesFromPlayers": {
+    "name": "隐藏玩家的死亡豁免",
+    "hint": "使死亡豁免总值只对 GM 可见。死亡豁免掷骰按钮仍然可见。"
+  },
+  "TIDY5E.Settings.DefaultDeathSaveRoll": {
+    "name": "默认死亡豁免检定",
+    "hint": "确定进行死亡豁免检定时使用的默认掷骰类型。"
+  },
+  "TIDY5E.Settings.UseCharacterEncumbranceBar": {
+    "name": "使用PC负重栏",
+    "hint": "在PC角色表上显示负重栏。"
+  },
+  "TIDY5E.Settings.UseNPCEncumbranceBar": {
+    "name": "使用NPC负重栏",
+    "hint": "在NPC角色表上显示负重栏。"
+  },
+  "TIDY5E.Settings.UseVehicleEncumbranceBar": {
+    "name": "使用载具负重栏",
+    "hint": "在载具角色表上显示负重栏。"
+  },
+  "TIDY5E.Settings.UseMulticlassSpellbookFilter": {
+    "name": "使用多职业法术书过滤",
+    "hint": "允许在法术书选项卡中按职业筛选法术。法术必须与法术编辑表中的职业选择器关联。"
+  },
+  "TIDY5E.Settings.UseSpellClassIcons": {
+    "name": "为法术使用法术职业图标",
+    "hint": "在法术上显示法术职业的图像，而不是法术本身的图像。该法术必须使用法术编辑表中的职业选择器与某个职业相关联。在多职业时，此功能可以一目了然地区分哪些法术属于哪个职业。"
+  },
+  "TIDY5E.Settings.AllowCantripsToBePrepared": {
+    "name": "允许准备戏法",
+    "hint": "塔莎的万事坩埚中的\"戏法公式\"可选规则允许法师在长休后更换戏法，就像准备环阶法术一样。准备好的戏法不计入准备好的法术总数。"
+  },
+  "TIDY5E.Settings.LockMoneyChanges": {
+    "name": "锁定货币",
+    "hint": "防止非GM用户对货币进行更改。"
+  },
+  "TIDY5E.Settings.LockExpChanges": {
+    "name": "锁定经验",
+    "hint": "防止非GM用户对经验进行更改。"
+  },
+  "TIDY5E.Settings.LockHpMaxChanges": {
+    "name": "锁定最大HP",
+    "hint": "防止非GM用户对最大HP进行更改。"
+  },
+  "TIDY5E.Settings.LockLevelSelector": {
+    "name": "锁定等级选择",
+    "hint": "防止非GM用户对职业等级进行更改。"
+  },
+  "TIDY5E.Settings.LockConfigureSheet": {
+    "name": "锁定角色表选择",
+    "hint": "防止非GM用户对角色表布局进行更改。"
+  },
+  "TIDY5E.Settings.LockItemQuantity": {
+    "name": "锁定物品数量",
+    "hint": "防止非GM用户对物品数量进行更改。"
+  },
+  "TIDY5E.Settings.ActionList.Header": "动作列表",
+  "TIDY5E.Settings.ActionListLimitActionsToCantrips": {
+    "name": "限制戏法动作",
+    "hint": "在动作选项卡/面板中默认不显示所有造成伤害的法术，而是限制为只显示戏法。这是 D&DBeyond 的默认行为。"
+  },
+  "TIDY5E.Settings.ActionListIncludeMinuteLongSpellsAsActions": {
+    "name": "动作包括几分钟的法术",
+    "hint": "将持续时间为1分钟或更短（如 1 回合）且激活时间为 1 动作或 1 附赠动作（如祝福术、灾祸术、命令术）的法术默认包含在动作选项卡/面板中。"
+  },
+  "TIDY5E.Settings.ActionListIncludeSpellsWithActiveEffects": {
+    "name": "动作包括具有激活效果的法术",
+    "hint": "将附带激活效果的法术（如树肤术）默认包含在动作选项卡/面板中。"
+  },
+  "TIDY5E.Settings.ActionListIncludeConsumables": {
+    "name": "动作包括消耗",
+    "hint": "将有激活费用（动作、附赠行动等）的消耗品默认包含在动作列表中。"
+  },
+  "TIDY5E.Settings.ColorPickerEnabled": {
+    "name": "使用自定义主题颜色",
+    "hint": "显示自定义主题颜色"
+  },
+  "TIDY5E.Settings.ColorPickerPrimaryAccent": {
+    "name": "主色调"
+  },
+  "TIDY5E.Settings.ColorPickerEquipped": {
+    "name": "已装备"
+  },
+  "TIDY5E.Settings.ColorPickerHpBar": {
+    "name": "HP栏"
+  },
+  "TIDY5E.Settings.ColorPickerEquippedOutline": {
+    "name": "已装备轮廓"
+  },
+  "TIDY5E.Settings.ColorPickerEquippedAccent": {
+    "name": "已装备色调"
+  },
+  "TIDY5E.Settings.ColorPickerPrepared": {
+    "name": "已准备"
+  },
+  "TIDY5E.Settings.ColorPickerPreparedOutline": {
+    "name": "已准备轮廓"
+  },
+  "TIDY5E.Settings.ColorPickerPreparedAccent": {
+    "name": "已准备色调"
+  },
+  "TIDY5E.Settings.ColorPickerPact": {
+    "name": "契约"
+  },
+  "TIDY5E.Settings.ColorPickerPactOutline": {
+    "name": "契约轮廓"
+  },
+  "TIDY5E.Settings.ColorPickerPactAccent": {
+    "name": "轮廓色调"
+  },
+  "TIDY5E.Settings.ColorPickerAtWill": {
+    "name": "随意施法"
+  },
+  "TIDY5E.Settings.ColorPickerAtWillOutline": {
+    "name": "随意施法轮廓"
+  },
+  "TIDY5E.Settings.ColorPickerAtWillAccent": {
+    "name": "随意施法色调"
+  },
+  "TIDY5E.Settings.ColorPickerRitualOnly": {
+    "name": "仅限仪式"
+  },
+  "TIDY5E.Settings.ColorPickerRitualOnlyOutline": {
+    "name": "仅限仪式轮廓"
+  },
+  "TIDY5E.Settings.ColorPickerRitualOnlyAccent": {
+    "name": "仅限仪式色调"
+  },
+  "TIDY5E.Settings.ColorPickerInnate": {
+    "name": "天生施法"
+  },
+  "TIDY5E.Settings.ColorPickerInnateOutline": {
+    "name": "天生施法轮廓"
+  },
+  "TIDY5E.Settings.ColorPickerInnateAccent": {
+    "name": "天生施法色调"
+  },
+  "TIDY5E.Settings.ColorPickerAlwaysPrepared": {
+    "name": "总是准备"
+  },
+  "TIDY5E.Settings.ColorPickerAlwaysPreparedOutline": {
+    "name": "总是准备轮廓"
+  },
+  "TIDY5E.Settings.ColorPickerAlwaysPreparedAccent": {
+    "name": "总是准备色调"
+  },
+  "TIDY5E.Settings.ColorPickerScrollbarThumb": {
+    "name": "Scrollbar Thumb"
+  },
+  "TIDY5E.Settings.ColorPickerScrollbarTrack": {
+    "name": "Scrollbar Track"
+  },
+  "TIDY5E.Settings.ColorPickerMagicAccent": {
+    "name": "魔法物品色调轮廓"
+  },
+  "TIDY5E.Settings.AllowHpMaxOverride": {
+    "name": "允许覆盖角色的最大 HP 值",
+    "hint": "允许 GM 手动更改角色表上的最大 HP。"
+  },
+  "TIDY5E.Settings.UseTidySpellSchoolIcons": {
+    "name": "使用Tidy法术学派图标",
+    "hint": "使用 Tidy 为法术学派精心挑选的图标。要通过 CONFIG.DND5E 或其他模组自定义法术学派图标，请禁用此选项。要扩展 Tidy 的自定义法术学派图标，请参阅 Tidy API 文档。"
+  },
+  "TIDY5E.Settings.Reset": {
+    "name": "将设置重置为默认值",
+    "hint": "这将把所有设置重置为激活游戏系统的默认设置。这只会影响\"世界\"范围内的设置，如 GM 选项。",
+    "dialogs": {
+      "title": "重置模组设置",
+      "content": "您确定要将所有模组设置重置为当前系统的默认设置吗？<strong>无法撤销！</strong>",
+      "confirm": "重置模组设置",
+      "cancel": "取消"
+    }
+  },
+  "TIDY5E.Settings.Migrations": {
+    "name": "迁移",
+    "buttonLabel": "迁移Tidy数据",
+    "dialogTitle": "迁移Tidy数据",
+    "hint": "如果您是原始 Tidy5e 角色表模组的用户，可选择使用此迁移菜单迁移您的 GM 设置和 Tidy 角色表数据。",
+    "migrationBeginningMessage": "迁移数据。完成前请不要刷新页面。",
+    "migrationErrorMessage": "发生错误。更多详情请查看控制台。",
+    "migrationCompleteMessage": "迁移完成。",
+    "migrateDocumentFlagsButtonLabel": "迁移文件标志",
+    "migrateGmSettingsButtonLabel": "迁移 GM 设置",
+    "migrateConfirmTitle": "确认迁移",
+    "migrateConfirmMessage1": "您确定要进行迁移吗？",
+    "migrateConfirmMessage2": "{boldStart}Note{boldEnd}: ：请务必记住{boldStart}备份数据{boldEnd}.",
+    "migrateConfirmButtonYes": "迁移",
+    "migrateConfirmButtonNo": "取消",
+    "v1": {
+      "sectionTitle": "Tidy V1 迁移",
+      "mainExplanation1": "使用新的 Tidy 5e Sheets 模组不需要迁移数据。最坏的情况是，如果您是 Tidy5e Sheet 的原始用户，并且跳过了迁移，则需要根据自己的喜好重新应用设置。",
+      "mainExplanation2": "{boldStart}Note{boldEnd}: 客户端设置不是本次迁移的一部分。在 Tidy 中，客户端设置的工作方式已经发生了很大变化，因此建议重新审视客户端设置。",
+      "originalHeader": "原始 Tidy5e 角色表",
+      "originalExplanation": "从原始 Tidy5e 工作表迁移 GM 设置和 Tidy 角色表数据标志。大部分数据差异来自 GM 设置。如果迁移设置后发现某个设置不符合自己的喜好，只需从配置设置菜单中更改设置即可。"
+    },
+    "Notification": {
+      "Title": "Tidy 5e Sheets: 可进行迁移",
+      "Explanation": "新的 Tidy 5e Sheets 数据迁移功能可用。查看 {boldStart} 配置设置迁移菜单{boldEnd}，了解更多信息。",
+      "Explanation2": "注意：迁移会将数据从一个地方移动到另一个地方。有时，最初由 Tidy 5e Sheets 存储的数据需要转移到系统正式支持的数据字段中。在其他情况下，Tidy 可能会采用其他模组的功能，因此，可能会提供方便的迁移，以缓解过渡。如果在更新 Tidy 5e Sheets 后，您的角色表没有缺失资料，则不需要迁移。",
+      "Button.DoNotShowAgain": "不再显示",
+      "DoNotShowAgain.ConfirmMessage": "已确认。此信息不会再显示，直到有另一次可用的迁移。"
+    },
+    "OptionsHeader": "迁移选项",
+    "OptionOverwrite.Text": "覆盖",
+    "OptionOverwrite.Tooltip": "启用覆盖现有角色表数据。如果未选中，则只有空系统字段会收到迁移的 Tidy 数据。",
+    "OptionDeleteFlags.Text": "删除受影响的Tidy标志",
+    "OptionDeleteFlags.Tooltip": "从自定义 Tidy 标志数据迁移到正式系统数据时，默认情况下会保留标志。选中此选项可移除这些标志。",
+    "ButtonMigration.Text": "迁移",
+    "MigrateCompendia.CompendiumLabel": "合集",
+    "MigrateCompendia.Title": "迁移合集",
+    "MigrateCompendia.SelectionDialogTitle": "选择要迁移的合集",
+    "MigrateCompendia.TotalEntriesLabel": "条目总数",
+    "CharacterBiography": {
+      "sectionTitle": "角色传记",
+      "selectionDialogTitle": "迁移: 角色传记"
+    },
+    "NpcDeathSaves": {
+      "sectionTitle": "NPC死亡豁免",
+      "selectionDialogTitle": "迁移: NPC死亡豁免"
+    },
+    "CcssToTidy": {
+      "sectionTitle": "CCSS to Tidy 5e",
+      "selectionDialogTitle": "迁移: CCSS to Tidy 5e",
+      "ccss": "CCSS",
+      "section": "分区",
+      "explanation1": "Tidy 5e 现在开始支持自定义分类，并围绕自定义分类提供其他功能。此迁移将把Custom Character Sheet Sections (CCSS)的分区名称复制到 Tidy 的分区设置中。",
+      "overwrite": "覆盖",
+      "overwriteTooltip": "启用以覆盖现有的 Tidy 分区标志。如果不选中，则只有空的 Tidy 标志会收到迁移的 CCSS 数据。",
+      "deleteFlags": "删除受影响的 CCSS 标志",
+      "deleteFlagsTooltip": "从 CCSS 迁移到 Tidy 自定义分区时，默认情况下 CCSS 标志仍保留在原处。选中此选项可移除这些标志。"
+    },
+    "UnlinkedExplanation": "此迁移可选择迁移当前场景中未链接的 token 文件。您可以根据需要在其他场景中运行迁移。",
+    "Selection": {
+      "TotalSelectedLabel": "所选全部: {total}",
+      "ToMigrate": "进行迁移",
+      "SelectAllNoneTooltip": "全选或不选"
+    },
+    "FavoritesToSystem": {
+      "sectionTitle": "角色喜好",
+      "selectionDialogTitle": "牵引: 角色喜好到系统"
+    },
+	"BondsIdealsFlawsToSystem": {
+      "sectionTitle": "NPC 牵绊、理想和缺陷",
+      "selectionDialogTitle": "迁移：NPC 牵绊、理想和缺陷"
+    },
+    "SpellClassToSourceClass": {
+      "sectionTitle": "法术职业到源职业",
+      "selectionDialogTitle": "迁移: 法术职业到源职业"
+    },
+    "NpcExhaustion": {
+      "sectionTitle": "NPC力竭",
+      "selectionDialogTitle": "迁移: NPC力竭到系统"
+    },
+    "Parent": "父系"
+  },
+  "TIDY5E.Settings.SheetPreferences": {
+    "name": "将 Tidy 设置为默认表",
+    "hint": "您是否想将 Tidy 5e Sheets 设置为一种或多种文档类型的默认设置，但核心默认表配置菜单无法按预期工作，请使用此菜单选择您的偏好。",
+    "buttonLabel": "将 Tidy 设置为默认表",
+    "explanation": "将 Tidy 5e Sheets 作为默认设置的所有文档类型。"
+  },
+  "TIDY5E.Settings.About": {
+    "name": "关于",
+    "buttonLabel": "关于Tidy 5e Sheets",
+    "dialogTitle": "关于Tidy 5e Sheets",
+    "hint": "有关 Tidy 5e Sheets 模组的信息。",
+    "logoAltText": "A heater shield with four stars and the words 'Tidy 5e' on the front.",
+    "MaintainerParagraph": "Tidy 5e Sheets由 {urlStart}kgar{urlEnd} 维护。",
+    "GithubParagraph": "您有功能方面的想法吗？有什么问题吗？提交 {urlStart}Github Issue{urlEnd}。",
+    "DiscordParagraph": "{urlStart}Tidy 5e Sheets Discord 服务器{urlEnd}： 讨论新功能的想法，从他人处获得帮助，并跟踪本模组的进度。",
+    "LocalizationParagraph": "{urlStart}Weblate{urlEnd}： 您会本地化网页内容吗？Tidy 5e Sheets 需要您的帮助！请访问 Weblate 网站，查看我们在各种语言方面的本地化进展。本模组接受新的语言翻译和对现有翻译的修改。",
+    "FinancialSupportHeader": "赞助Tidy 5e Sheets",
+    "FinancialSupportParagraph": "如果您喜欢 Tidy 5e Sheets 并想在经济上支持它，这里有一些方法：",
+    "BuyMeACoffeeLink": "{urlStart}给我买杯咖啡{urlEnd}",
+    "KoFiLink": "{urlStart}Ko-Fi{urlEnd}",
+    "PatreonLink": "{urlStart}Patreon{urlEnd}"
+  },
+  "TIDY5E.Settings.Debug": {
+    "name": "启用调试",
+    "hint": "向控制台打印调试信息。"
+  },
+  "TIDY5E.Settings.PermanentlyUnlockCharacterSheetForGM": {
+    "name": "PC角色表：始终为 GM 解锁",
+    "hint": "将PC角色表视为始终未锁定，无论锁定设置如何。GM 可以随时编辑角色，但也可以为同时拥有该角色的玩家切换锁定/解锁。",
+    "title": "对于 GM 来说，无论锁定设置如何，该角色表始终处于解锁状态。"
+  },
+  "TIDY5E.Settings.PermanentlyUnlockNPCSheetForGM": {
+    "name": "NPC角色表: 始终为 GM 解锁",
+    "hint": "将NPC角色表视为始终未锁定，无论锁定设置如何。GM 可以随时编辑角色，但也可以为同时拥有该角色的玩家切换锁定/解锁。",
+    "title": "对于 GM 来说，无论锁定设置如何，该角色表始终处于解锁状态。"
+  },
+  "TIDY5E.Settings.PermanentlyUnlockVehicleSheetForGM": {
+    "name": "载具角色表: 始终为 GM 解锁",
+    "hint": "将载具角色表视为始终未锁定，无论锁定设置如何。GM 可以随时编辑角色，但也可以为同时拥有该角色的玩家切换锁定/解锁。",
+    "title": "对于 GM 来说，无论锁定设置如何，该角色表始终处于解锁状态。"
+  },
+  "TIDY5E.ThemeSettings": {
+    "SheetMenu": {
+      "name": "Tidy主题设置",
+      "buttonLabel": "主题设置",
+      "hint": "自定义 Tidy 5e Sheets 的颜色。"
+    },
+    "Sheet": {
+      "title": "主题设置: {userName}",
+      "header": "自定义主题颜色",
+      "useDefaultLightColors": "默认明亮",
+      "useDefaultDarkColors": "默认深色",
+      "export": "导出",
+      "import": "导入",
+      "importDropHint": "提示: 你可以将一个\".tidy5e-theme\"文件拖到这个表单上导入。",
+      "importError": "主题导入失败。详情请查看控制台。",
+      "importSuccess": "主题导入成功！",
+      "menuLabel": "菜单",
+      "explanation": "为每个选项选择您希望使用的颜色。\"#00000000\"相当于禁用颜色。"
+    }
+  },
+  "TIDY5E.FavoriteSpellLevelLabel": "法术环阶 {number}",
+  "TIDY5E.ApplyChanges": "应用更改",
+  "TIDY5E.SaveChanges": "保存更改",
+  "TIDY5E.UseDefault": "使用默认",
+  "TIDY5E.Reset": "重置",
+  "TIDY5E.VehicleInMotion": "载具运动中",
+  "TIDY5E.VehicleMotionless": "载具停止不动",
+  "TIDY5E.TotalCrewCount": "驾驶员总数",
+  "TIDY5E.ActionsPerTurn": "每回合动作",
+  "TIDY5E.SheetMenu": {
+    "label": "菜单",
+    "themeLabel": "主题"
+  },
+  "TIDY5E.ActiveEffectsMarkerTitle": "本物品具有激活效果",
+  "TIDY5E.SortMode.ActionListDefault": "默认动作列表排序",
+  "TIDY5E.Commands.ExpandAll": "全部展开",
+  "TIDY5E.Commands.CollapseAll": "全部折叠",
+  "TIDY5E.ItemFilters.MenuTooltip.Filters": "过滤",
+  "TIDY5E.Commands.ShowLegendaryToolbar": "显示传奇工具栏",
+  "TIDY5E.Commands.HideLegendaryToolbar": "隐藏传奇工具栏",
+  "TIDY5E.Commands.ShowContainerPanel": "显示容器面板",
+  "TIDY5E.Commands.HideContainerPanel": "隐藏容器面板",
+  "TIDY5E.ItemFilters.CanCast": "可施展",
+  "TIDY5E.ItemFilters.CanUse": "可使用",
+  "TIDY5E.ItemFilters.ClearAll": "清除全部",
+  "TIDY5E.ItemFilters.Category.Miscellaneous": "杂项",
+  "TIDY5E.ItemFilters.Filter.Other": "其他",
+  "TIDY5E.GMOnly.Message": "仅限GM: {message}",
+  "TIDY5E.ReminderToBackUp": "切记备份您的世界",
+  "TIDY5E.Utilities.Tools": "工具",
+  "TIDY5E.Utilities.GMTools": "GM 工具",
+  "TIDY5E.Utilities.IdentifyAll": "鉴定所有物品",
+  "TIDY5E.Utilities.AssignSpellsToClasses": "为职业分配法术",
+  "TIDY5E.GenericErrorNotification": "执行此操作时发生错误。详情请查看 devtools 控制台。",
+  "TIDY5E.Utilities.MarkAllAsUnidentified": "将所有物品标记为未鉴定",
+  "TIDY5E.Utilities.ConfigureSections": "配置分区",
+  "TIDY5E.Section": {
+    "Default": "默认分区",
+    "Label": "分区",
+    "LabelPl": "分区",
+    "Tooltip": "在角色表中放置此物品时，为其指定一个自定义分区，或留空默认。",
+    "ActionLabel": "动作分区",
+    "ActionTooltip": "在动作选项卡中放置此物品时，为其指定一个自定义分区，或留空默认。",
+    "ConfigDialog": {
+      "title": "配置分区: {tabTitle}",
+      "showTooltip": "显示此分区",
+      "hideTooltip": "隐藏此分区"
+    }
+  },
+  "TIDY5E.UseDefaultDialog": {
+    "title": "确认：使用默认",
+    "text": "您确定要使用默认设置吗？"
+  },
+  "TIDY5E.RollRecharge.Hint": "{rechargeLabel} (Shift+ 点击可跳过掷骰并立即充能) ",
+  "TIDY5E.SpellSourceClassAssignments.Identifier": "来源职业标识符",
+  "TIDY5E.SpellSourceClassAssignments.IdentifierHint": "此处显示法术的来源职业标识符。要指定一个玩家角色不拥有的标识符，请在此文本字段中输入职业标识符。",
+  "TIDY5E.SpellSourceClassAssignments.ShowUnassignedOnly.Text": "仅显示未指定",
+    "TIDY5E.Keybindings.ToggleSheetLock.Name": "切换角色卡锁定",
+  "TIDY5E.Keybindings.ToggleSheetLock.Hint": "如果UI中的当前激活窗口是 Tidy 角色卡，则此键绑定会切换角色卡锁定。",
+  "TIDY5E.Keybindings.ToggleHeaderMenu.Name": "切换标题菜单",
+  "TIDY5E.Keybindings.ToggleHeaderMenu.Hint": "如果 Tidy 表是用户界面中的当前激活窗口，该键绑定将切换表标题菜单。",
+  "TIDY5E.Facilities.Hirelings.Label": "雇工",
+  "TIDY5E.Facilities.Defenders.Label": "防御者",
+  "TIDY5E.Facilities.Creatures.Label": "生物",
+  "TIDY5E.Facilities.RosterMember.Label": "{actorName} - {facilityName}",
+  "TIDY5E.Facilities.ContextMenuActionRemove": "从{facilityName}移除",
+  "TIDY5E.Facilities.Progress.OrderAndCraftLabel": "{orderName} - {craftingItemName}",
+  "TIDY5E.LocalizationTestKey": "本地化测试Key",
+  "TIDY5E.ExpandCollapseMenu.OptionTitle": "展开/折叠行为",
+  "TIDY5E.ExpandCollapseMenu.OptionTopLevel": "顶层分区",
+  "TIDY5E.ExpandCollapseMenu.OptionAllSections": "全部分区",
+  "TIDY5E.SortMenu.OptionAlphabetical": "按字母顺序（A-Z）",
+  "TIDY5E.SortMenu.OptionManual": "手动",
+  "TIDY5E.SortMenu.OptionPrepared": "已准备",
+  "TIDY5E.SortMenu.OptionEquipped": "已装备",
+  "TIDY5E.Activities.Cast.SourceHintText": "来自{itemName}"
+}

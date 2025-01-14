@@ -1,0 +1,137 @@
+{
+  "id": "dae",
+  "title": "Dynamic effects using Active Effects (DAE)",
+  "description": "Replacement for dynamic effects",
+  "version": "12.0.10",
+  "authors": [
+    {
+      "name": "tposney",
+      "url": "https://gitlab.com/tposney",
+      "discord": "",
+      "twitter": "",
+      "patreon": "",
+      "github": "",
+      "ko-fi": "",
+      "reddit": "",
+      "email": ""
+    }
+  ],
+  "socket": true,
+  "media": [
+    {
+      "type": "icon",
+      "location": ""
+    },
+    {
+      "type": "cover",
+      "location": ""
+    },
+    {
+      "type": "screenshot",
+      "location": ""
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ja",
+      "name": " 日本語",
+      "path": "lang/ja.json"
+    },
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "path": "lang/ko.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "it",
+      "name": "Italian",
+      "path": "lang/it.json"
+    },
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "lang/pl.json"
+    },
+    {
+      "lang": "cn",
+      "name": "China",
+      "path": "lang/cn.json"
+    }
+  ],
+  "packs": [],
+  "scripts": [
+    "libs/tokenizer.min.js"
+  ],
+  "esmodules": [
+    "dae.js"
+  ],
+  "styles": [
+    "css/dae.css",
+    "css/field-browser.css"
+  ],
+  "flags": {
+    "compatible": [
+      "dnd5e",
+      "sw5e"
+    ],
+    "incompatible": [
+      "pf2e"
+    ],
+    "partial": [],
+    "allowBugReporter": true
+  },
+  "compatibility": {
+    "minimum": "11.313",
+    "verified": "12.331",
+    "maximum": "12.999"
+  },
+  "url": "https://gitlab.com/tposney/dae",
+  "manifest": "https://gitlab.com/tposney/dae/raw/dndv4/package/module.json",
+  "download": "https://gitlab.com/tposney/dae/raw/dndv4/package/dae-v12.0.10.zip",
+  "readme": "https://gitlab.com/tposney/dae/-/blob/dndv4/Readme.md",
+  "changelog": "https://gitlab.com/tposney/dae/-/blob/dndv4/Changelog.md",
+  "bugs": "https://gitlab.com/tposney/dae/-/issues",
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.1",
+          "verified": "4",
+          "maximum": "4.9.99"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+        "compatibility": {}
+      },
+      {
+        "id": "socketlib",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/develop/module.json",
+        "compatibility": {}
+      }
+    ],
+    "conflicts": []
+  }
+}

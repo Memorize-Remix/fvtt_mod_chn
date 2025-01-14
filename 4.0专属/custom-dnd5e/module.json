@@ -1,0 +1,88 @@
+{
+    "id": "custom-dnd5e",
+    "title": "Custom D&D 5e",
+    "description": "A Foundry VTT utility to customise the D&D 5e system",
+    "version": "1.2.9",
+    "library": "false",
+    "compatibility": {
+        "minimum": 12.325,
+        "verified": 12.331,
+        "maximum": 12.999
+    },
+    "authors": [
+        {
+            "name": "Larkinabout",
+            "url": "https://github.com/Larkinabout"
+        }
+    ],
+    "esmodules": [
+        "scripts/module.js"
+    ],
+    "styles": [
+        "styles/custom-dnd5e.css",
+        "styles/custom-dnd5e-character-sheet.css",
+        "styles/custom-dnd5e-counters.css",
+        "styles/custom-dnd5e-form.css",
+        "styles/custom-dnd5e-journal.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        },
+        {
+            "lang": "pt-BR",
+            "name": "Português (Brasil)",
+            "path": "languages/pt-BR.json"
+        }
+    ],
+    "packs": [
+        {
+            "name": "custom-dnd5e-journals",
+            "label": "Custom D&D 5e",
+            "path": "packs/custom-dnd5e-journals",
+            "type": "JournalEntry",
+            "ownership": {
+                "PLAYER": "NONE",
+                "ASSISTANT": "OWNER"
+            },
+            "system": "dnd5e",
+            "flags": {}
+        },
+        {
+            "name": "custom-dnd5e-items",
+            "label": "Custom D&D 5e Items",
+            "path": "packs/custom-dnd5e-items",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "NONE",
+                "ASSISTANT": "OWNER"
+            },
+            "system": "dnd5e",
+            "flags": {}
+        }
+    ],
+    "relationships": {
+        "systems": [
+            {
+                "id": "dnd5e",
+                "compatibility": {
+                    "minimum": "4.1.0",
+                    "verified": "4.1.2",
+                    "maximum": "4.99"
+                }
+            }
+        ],
+        "requires": [
+            {
+                "id": "lib-wrapper",
+                "type": "module"
+            }
+        ]
+    },
+    "url": "https://github.com/Larkinabout/fvtt-custom-dnd5e",
+    "manifest": "https://github.com/Larkinabout/fvtt-custom-dnd5e/releases/latest/download/module.json",
+    "download": "https://github.com/Larkinabout/fvtt-custom-dnd5e/releases/download/1.2.9/module.zip",
+    "readme": "https://github.com/Larkinabout/fvtt-custom-dnd5e#readme"
+}

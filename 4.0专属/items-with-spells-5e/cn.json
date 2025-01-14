@@ -1,0 +1,54 @@
+
+  "IWS": {
+    "MODULE_NAME": "Items with Spells",
+    "BUTTONS": {
+      "DeleteSpell": "从物品中删除法术，并提示从角色中删除法术",
+      "EditSpell": "编辑法术",
+      "RemoveLink": "移除物品上的法术"
+    },
+    "DIALOG": {
+      "AlsoDeleteSpell": "您还想删除该物品中的法术吗？",
+      "DeleteOrphanedSpells": "法术不再与物品关联，但仍存在于角色身上。您还想删除角色身上的法术吗？"
+    },
+    "FORM": {
+      "AttackHint": "如果该法术具有固定攻击加值或其他特殊攻击逻辑，则设置此项。",
+      "ChargesHint": "如果该法术将使用链接物品的充能施放，请配置消耗充能。",
+      "NoOverride": "不覆盖",
+      "ConfigureOverrides": "配置覆盖",
+      "NoUsesHint": "链接物品没有可以消耗的有限使用，因此禁用此字段。",
+      "LimitedHint": "如果该法术有每次休息的使用次数或类似的先天限制，则配置充能。",
+      "SaveHint": "如果该法术具有固定DC或其他施法豁免检定逻辑。"
+    },
+    "MISSING_ITEM": {
+      "Description": "找不到该法术的源物品。也许被删除了？",
+      "Name": "缺失物品"
+    },
+    "TAB": {
+      "AbilityBased": "基于{ability}",
+      "Consumes": "消耗",
+      "EmbeddedHint": "角色拥有的物品。下面添加的法术会立即添加到角色身上。无法对已拥有的法术设置覆盖，但可以直接配置法术。",
+      "Hint": "下面的法术都与该物品相链接，当你将该物品拖到角色表中时，这些法术就会被添加到角色中，并且会有任何覆盖。",
+      "FillerHint": "在此拖放法术，将其链接到此物品。",
+      "PreviewSpell": "预览具有覆盖的法术"
+    },
+    "SETTINGS" : {
+      "ITEM_EXCLUSION": {
+        "HINT": "选择哪些物品类型可以附加法术。",
+        "NAME": "选择物品类型",
+        "TITLE": "物品类型排除菜单"
+      },
+      "SORT_ORDER": {
+        "HINT": "如果选中，本模组添加的法术书部分将放在法术书选项卡的底部，而不是顶部。如果使用的是 Tidy 5e 角色卡，无论是否勾选，都可以通过角色表上的编辑齿轮更改顺序。（默认：未选中）",
+        "NAME": "在法术书底部显示法术"
+      },
+      "EXCLUDE_UNEQUIPPED": {
+        "HINT": "如果选中，则不会显示未装备物品的法术。如果未选中，则无论装备状态如何，都会显示法术。更改此选项不会对当前打开的角色表生效。请关闭并重新打开角色表以查看是否生效。(默认：选中）",
+        "NAME": "隐藏未装备物品的法术"
+      }
+    },
+    "SUBTITLE": {
+      "linked_item": "点击预览覆盖法术",
+      "owned_item": "点击施放"
+    }
+  }
+}

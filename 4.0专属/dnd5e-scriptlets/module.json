@@ -1,0 +1,75 @@
+{
+  "id": "dnd5e-scriptlets",
+  "title": "DND5E Scriplets - 5E QOL bits and pieces",
+  "description": "QOL bits and pieces with nowhere else to live",
+  "version": "1.1.0",
+  "library": "false",
+  "socket": true,
+  "manifestPlusVersion": "1.2.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12",
+    "maximum": "12.999"
+  },
+  "authors": [
+    {
+      "name": "tposney",
+      "url": "https://github.com/tposney",
+      "discord": "tposney"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.1",
+          "maximum": "4.9.99"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "socketlib",
+        "type": "module"
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "scripts": [
+    "scripts/lib/lib.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "languages/pt-BR.json"
+    }
+  ],
+  "url": "https://github.com/tposney/dnd5e-scriptlets",
+  "manifest": "https://github.com/tposney/dnd5e-scriptlets/releases/latest/download/module.json",
+  "download": "https://github.com/tposney/dnd5e-scriptlets/releases/download/v1.1.0/module.zip",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
+    }
+  ]
+}
