@@ -11,7 +11,7 @@
   
 ## 一些须知
 - 如安装了此mod，则不要在安装[Foundry VTT Mega](https://github.com/fvtt-cn/mega_chn)，以免文本冲突。
-- **4.0.x版本是专属于DND 4新更新mod的汉化，而DND 3版本的汉化会按照正常编号继续。**
+- **10.0版本之后是专属于DND 4新更新mod的汉化。**
 
 ## 安装
 - [x] 清单文件地址： [https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json](https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json)
