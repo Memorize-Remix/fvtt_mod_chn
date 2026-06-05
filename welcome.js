@@ -53,3 +53,50 @@ Hooks.on("ready", () => {
         welcomeDialog.render(true);
     }
 });
+
+
+Hooks.once("ready", async () => {
+    if (!game.user.isGM) return;
+
+    const myModId = "zzz_mod_chn";   
+    const oldModId = "zzzzz_mega_chn";  
+
+    if (game.modules.get(oldModId)?.active) {
+        
+        const { DialogV2 } = foundry.applications.api;
+
+        await DialogV2.wait({
+            window: { 
+                title: "你无需启用mega汉化",
+                icon: "fas fa-arrow-up"
+            },
+            content: `
+                <div style="margin-bottom: 10px;">
+                    <p>检测到你启用了 <b>Foundry VTT Mod 翻译包</b>。</p>
+                    <p>本模块是已停更mod <b>Mega翻译整合包包</b> 更新与替代。为了确保各项功能正常运作，旧版mod将不能继续同时运行。</p>
+                    <p style="color: #4a8b31; font-weight: bold;">
+                        点击确认，系统即将自动为你禁用旧版模块。
+                    </p>
+                </div>
+            `,
+            buttons: [
+                {
+                    action: "confirm",
+                    label: "确认",
+                    icon: "fas fa-check"
+                }
+            ]
+        });
+
+        ui.notifications.info(`即将刷新...`);
+        
+        let modConfig = game.settings.get("core", "moduleConfiguration");
+        modConfig[oldModId] = false; 
+        
+        await game.settings.set("core", "moduleConfiguration", modConfig);
+        
+        setTimeout(() => {
+            window.location.reload();
+        }, 500);
+    }
+});
