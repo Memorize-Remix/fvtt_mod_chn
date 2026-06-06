@@ -1,0 +1,111 @@
+{
+    "simraki-radial-effects": {
+        "Source": "来源",
+        "Duration": "持续时间",
+        "TimeUnlimited": "无限",
+        "TimeExpired": "已过期",
+        "SettingChoices": {
+            "ClickActions": {
+                "Nothing": "无操作",
+                "Disable": "禁用",
+                "Delete": "删除"
+            },
+            "TooltipVisibilityMode": {
+                "Disable": "禁用",
+                "GMOnly": "仅 GM",
+                "OwnersOnly": "仅 Token 拥有者",
+                "AnyPlayer": "任意玩家的 Token",
+                "FriendlyNeutral": "友善与中立",
+                "Everyone": "所有人"
+            },
+            "TooltipElements": {
+                "Duration": "持续时间",
+                "Description": "描述",
+                "Source": "来源"
+            },
+            "EffectShapes": {
+                "Circle": "圆形",
+                "RoundedSquare": "圆角方形",
+                "Hexagon": "六边形",
+                "FlatHexagon": "六边形（平顶）",
+                "Triangle": "三角形"
+            },
+            "OrbitShapes": {
+                "Circle": "圆形",
+                "Square": "方形",
+                "Hexagon": "六边形",
+                "FlatHexagon": "六边形（平顶）"
+            }
+        },
+        "Settings": {
+            "ClickActionGM": {
+                "Name": "GM 点击动作",
+                "Hint": "GM 点击效果图标时发生什么"
+            },
+            "ClickActionOwner": {
+                "Name": "拥有者点击动作",
+                "Hint": "Token 拥有者点击效果图标时发生什么"
+            },
+            "TooltipVisibilityMode": {
+                "Name": "工具提示可见模式",
+                "Hint": "决定谁可以看到悬停在效果图标上时弹出的工具提示"
+            },
+            "TooltipElementsGM": {
+                "Name": "工具提示内容（GM）",
+                "Hint": "选择在 GM 的工具提示中显示哪些元素"
+            },
+            "TooltipElementsPlayer": {
+                "Name": "工具提示内容（玩家）",
+                "Hint": "选择在玩家的工具提示中显示哪些元素"
+            },
+            "InteractionRequireAlt": {
+                "Name": "需要 Alt 键",
+                "Hint": "若启用，效果交互（悬停、点击）仅在按住 Alt 键时生效"
+            },
+            "EffectShape": {
+                "Name": "效果图标形状",
+                "Hint": "为每个效果图标的背景选择几何形状"
+            },
+            "EffectBgColor": {
+                "Name": "图标背景颜色"
+            },
+            "EffectBorderColor": {
+                "Name": "图标边框颜色"
+            },
+            "EffectSizeMultiplier": {
+                "Name": "图标大小乘数"
+            },
+            "EffectOpacity": {
+                "Name": "图标不透明度"
+            },
+            "OrbitShape": {
+                "Name": "轨道形状",
+                "Hint": "效果图标围绕 Token 排列的几何路径"
+            },
+            "OrbitSpacing": {
+                "Name": "图标间距",
+                "Hint": "同一轨道环上相邻效果图标之间距离的乘数"
+            },
+            "OrbitStartAngle": {
+                "Name": "起始角度",
+                "Hint": "第一个效果图标放置的角度（以度为单位）。逆时针测量"
+            },
+            "OrbitBaseRadiusMultiplier": {
+                "Name": "基础轨道半径",
+                "Hint": "第一个轨道环半径（距 Token 中心）的乘数"
+            },
+            "OrbitReverseDirection": {
+                "Name": "反向排列",
+                "Hint": "若启用，图标将顺时针排列（否则为逆时针）。不影响起始角度"
+            },
+            "HoverEnableAnimation": {
+                "Name": "启用悬停动画",
+                "Hint": "鼠标悬停时启用效果图标的平滑缩放"
+            },
+            "TooltipDelay": {
+                "Name": "工具提示延迟",
+                "Hint": "悬停后工具提示出现前的延迟时间（毫秒）"
+            }
+        }
+    }
+}

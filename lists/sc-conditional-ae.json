@@ -1,0 +1,118 @@
+{
+  "SCConditionalAE": {
+    "Sheets": {
+      "ActiveEffect": "SC 条件动态效果"
+    },
+    "ConditionTab": {
+      "Label": "条件",
+      "Heading": "动态效果条件",
+      "Hint": "使用 JavaScript。仅当脚本返回 true 时，此动态效果才会生效。",
+      "CompatibilityHint": "此条件来自 DAE。SC Conditional AE 正在自动适配它。",
+      "Variables": "可用变量：effect、actor、targetActor、item、origin、originActor、user、rollData、source、getProperty、hasProperty、deepClone、game。",
+      "Placeholder": "示例：return actor?.system?.attributes?.hp?.value > 0;",
+      "Evaluation": {
+        "Heading": "当前求值",
+        "Empty": "未配置条件。效果可用。",
+        "True": "当前条件为 true。效果可用。",
+        "False": "当前条件为 false。效果被抑制。",
+        "Error": "条件求值时抛出了错误。",
+        "Result": "返回值",
+        "Context": "求值上下文",
+        "EffectState": "效果状态"
+      },
+      "Wiki": "打开维基",
+      "Invalid": "此条件包含无效代码。",
+      "BadgeLabel": "条件徽章文本",
+      "BadgeLabelHint": "在未激活的效果上显示的单行文本。留空以隐藏。",
+      "BadgeLabelPlaceholder": "例如：条件未满足",
+      "ApplyBehavior": "应用于目标时",
+      "ApplyBehaviorUpdate": "默认（更新）",
+      "ApplyBehaviorDuplicate": "叠加",
+      "ApplyBehaviorDae": "与 DAE 相同",
+      "ApplyBehaviorUpdateHint": "重新应用当前动态效果到目标上，而不是创建一个新的。",
+      "ApplyBehaviorDuplicateHint": "添加一个新的动态效果，而不是更新已有的。",
+      "ApplyBehaviorDaeHint": "使用 DAE 的“可叠加”设置来决定效果是否叠加。"
+    },
+    "MacroChange": {
+      "Name": "要执行的宏",
+      "Description": "当此动态效果被应用或移除时执行一个世界宏。值格式：宏名称或 UUID，后跟可选参数。",
+      "MacroNotFound": "未找到宏：{macro}"
+    },
+    "FormulaChange": {
+      "DialogTitle": "投掷动态效果公式",
+      "DialogHint": "确认或编辑要为该动态效果投掷的公式。",
+      "RollButton": "投掷",
+      "ChatCardButton": "投掷所有公式",
+      "ChatCardTitle": "公式投掷可用",
+      "ChatCardHint": "此效果的公式已准备好可以投掷。",
+      "ChatCardIntroActivation": "{effect} 刚刚被激活。",
+      "ChatCardIntroCondition": "{effect} 的条件已满足。",
+      "ChatCardPrompt": "是否现在投掷？",
+      "ChatCardReasonActivation": "{effect} 已激活，其公式现在可以投掷。",
+      "ChatCardReasonCondition": "{effect} 已就绪，其公式现在可以投掷。",
+      "ChatCardAttributeKeyLabel": "属性键",
+      "ChatCardCurrentValueLabel": "当前值",
+      "ChatCardFormulaLabel": "公式",
+      "ChatCardUnnamedKey": "变更",
+      "RollAllLabel": "投掷所有公式",
+      "RollAllUnavailableLabel": "公式当前不可用",
+      "RollFlavor": "动态效果公式投掷",
+      "InvalidFormula": "无效的动态效果公式。",
+      "Column": "公式",
+      "ColumnHint": "此动态效果被激活时投掷的公式。",
+      "Placeholder": "可选公式"
+    },
+    "Settings": {
+      "EnableFormulaChanges": {
+        "Name": "启用公式列",
+        "Hint": "在动态效果变更表中添加“公式”列，并在效果激活时投掷公式。"
+      },
+      "UseFormulaChatCard": {
+        "Name": "发布公式投掷聊天卡片",
+        "Hint": "当一个条件效果变为可用，或一个带有公式的动态效果被激活时，发布一张聊天卡片，以便从聊天界面触发投掷而不是立即执行。"
+      },
+      "ShowConditionTab": {
+        "Name": "显示条件标签页",
+        "Hint": "在动态效果配置界面添加“条件”标签页。",
+        "DaeNotice": "如果你使用 DAE 并启用了条件标签页，浏览器控制台可能会出现 libWrapper 冲突警告。这是预期的行为——模块会在条件不满足时主动阻止效果应用，这也会跳过 DAE 对这些效果的包装器。你可以放心忽略此警告。"
+      },
+      "DebugLogging": {
+        "Name": "启用调试日志",
+        "Hint": "将条件求值、抑制刷新和激活状态转换记录到浏览器控制台。"
+      },
+      "SupportMenu": {
+        "Name": "支持开发者",
+        "Label": "Patreon 支持",
+        "Hint": "在 Patreon 上支持 Shattered Codex 开发。"
+      },
+      "DocumentationMenu": {
+        "Name": "文档",
+        "Label": "打开Wiki",
+        "Hint": "打开 SC - Conditional AE 文档维基。"
+      },
+      "ModuleSettingsMenu": {
+        "Name": "模块设置",
+        "Label": "打开设置",
+        "Hint": "打开 SC - Conditional AE 配置窗口。"
+      },
+      "App": {
+        "Title": "SC - Conditional AE 设置",
+        "Intro": "配置条件动态效果的行为、公式支持及模块诊断。",
+        "WorldSection": {
+          "Title": "效果行为",
+          "Description": "世界级设置，控制条件标签页、公式变更及聊天卡片行为。",
+          "PermissionNote": "只有 GM 可以更改此部分的设置。"
+        },
+        "ClientSection": {
+          "Title": "诊断",
+          "Description": "用于故障排查和本地浏览器日志记录的客户端设置。"
+        },
+        "DaeWarningTitle": "DAE 兼容性警告",
+        "DaeWarning": "此 libWrapper 消息仅为警告。当 DAE 激活时，两个模块都会触及相同的动态效果处理流程，因此浏览器控制台可能会报告潜在冲突，即使行为表现正常。",
+        "Save": "保存",
+        "Cancel": "取消",
+        "Saved": "SC - Conditional AE 设置已保存。"
+      }
+    }
+  }
+}
