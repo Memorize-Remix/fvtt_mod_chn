@@ -1,0 +1,157 @@
+{
+	"BBH": {
+		"COMMON": {
+			"All": "全部",
+			"Unknown": "未知",
+			"None": "无",
+			"One": "1",
+			"RangeLow": "低",
+			"RangeHigh": "高"
+		},
+		"SETTINGS": {
+			"CreatureTypeTables": {
+				"Name": "采集表条目",
+				"Hint": "存储映射到生物类型的随机表UUID条目。",
+				"Menu": {
+					"Name": "生物类型表",
+					"Label": "分配随机表",
+					"Hint": "为生物类型分配随机表UUID。优先精确匹配，然后使用ALL作为后备。"
+				}
+			},
+			"AutoRollHarvest": {
+				"Name": "快速进行采集检定",
+				"Hint": "若启用，采集技能检定将跳过配置对话框。"
+			},
+			"AutoEnableQuantityOnNewTables": {
+				"Name": "新随机表自动启用数量数据",
+				"Hint": "若启用，新创建的随机表将默认启用数量数据。"
+			},
+			"RollTableCompendium": {
+				"Name": "首选随机表文件夹",
+				"Hint": "当某行无法解析为随机表资料库时，用作后备来源。",
+				"None": "侧边栏随机表"
+			},
+			"HarvestAttemptsBySize": {
+				"Name": "最大采集尝试次数（{size}）",
+				"Hint": "在阻止进一步尝试之前，允许对{size}生物进行采集检定的最大次数。",
+				"Menu": {
+					"Name": "按体型设置最大采集尝试次数",
+					"Label": "每体型尝试次数菜单",
+					"Hint": "为每个D&D5e生物体型配置允许的最大采集检定次数。",
+					"HintWithDefaultBehavior": "为每个D&D5e生物体型配置允许的最大采集检定次数。留空则使用该体型的默认值（DND5E数值，最小为1）。"
+				},
+				"WindowTitle": "配置最大采集尝试次数"
+			},
+			"Debug": {
+				"Name": "调试日志记录",
+				"Hint": "在浏览器控制台中启用详细的BBH调试/信息日志。"
+			}
+		},
+		"KEYBINDINGS": {
+			"OpenTablesModifier": {
+				"Name": "打开采集者表格修饰键",
+				"Hint": "按住此键的同时点击采集者Token控制按钮，即可打开生物类型表格。"
+			}
+		},
+		"SHEETS": {
+			"RollTable": {
+				"Label": "Bugbear的采集者随机表"
+			},
+			"TableResult": {
+				"Label": "Bugbear的采集者表格结果"
+			}
+		},
+		"TABLES": {
+			"WindowTitle": "采集者表格",
+			"Hint": "添加采集表条目。选择生物类型，或使用ALL在所有生物类型间共享一个表格。将随机表拖入UUID字段。",
+			"HeaderType": "生物类型",
+			"HeaderRollTable": "随机表",
+			"CustomType": "自定义",
+			"CustomTypeEdit": "编辑自定义类型",
+			"CustomTypeDisplay": "自定义：{value}",
+			"CustomTypePromptTitle": "配置自定义类型",
+			"CustomTypePromptLabel": "自定义类型键名",
+			"CustomTypePromptHint": "使用小写键名。你可以使用“值:子类型”来匹配特定子类型的条目（例如：dragon:red, silver）。",
+			"OpenTableSource": "打开首选随机表文件夹",
+			"CreatureTypeAria": "生物类型",
+			"UuidPlaceholder": "将随机表拖拽至此或粘贴其UUID",
+			"OpenLinkedRollTable": "打开链接的随机表",
+			"ClearInput": "清空输入",
+			"DeleteEntry": "删除条目",
+			"AddTable": "添加表格",
+			"Save": "保存"
+		},
+		"ROLL_TABLE": {
+			"HarvestDataLabel": "采集数据",
+			"HarvestDataHint": "在此随机表上暴露采集技能和DC字段，并允许其用于采集结算。",
+			"QuantityDataLabel": "数量数据",
+			"QuantityDataHint": "在此随机表上为结果奖励暴露数量字段。"
+		},
+		"RESULTS": {
+			"Skill": "技能",
+			"Dc": "DC",
+			"Quantity": "数量",
+			"ApplySkillToAllAria": "将技能应用到所有结果",
+			"ApplySelectedSkillToAllAria": "将所选技能应用到所有结果"
+		},
+		"RESULT_CONFIG": {
+			"HarvestSkillLabel": "采集技能",
+			"HarvestSkillHint": "采集此结果所需的技能检定。",
+			"HarvestDcLabel": "采集DC",
+			"HarvestDcHint": "采集检定的难度等级。",
+			"QuantityLabel": "数量",
+			"QuantityHint": "在创建链接物品之前应用的固定数字或掷骰公式。",
+			"DcPlaceholder": "10",
+			"QuantityPlaceholder": "1d4"
+		},
+		"CONTROLS": {
+			"GroupTitle": "Bugbear的采集者",
+			"HarvestTarget": "采集目标",
+			"ResetHarvestedResults": "重置已采集的结果",
+			"ConfigureTables": "配置表格"
+		},
+		"INFO": {
+			"ResetHarvestedResultsDone": "已在 {count} / {total} 个角色上重置已采集的结果。"
+		},
+		"WARN": {
+			"NoHarvestTableForType": "未为生物类型“{creatureType}”配置采集表。",
+			"HarvestTableNoResults": "采集表“{tableName}”没有返回任何结果。",
+			"ResultMissingSkillOrDc": "采集表“{tableName}”上的结果“{resultName}”缺少采集技能或DC。",
+			"ResultMissingItemLink": "采集表“{tableName}”上的结果“{resultName}”未链接到物品文档。",
+			"SelectOne": {
+				"Actor": "尝试采集前请先选择一个Token。",
+				"Target": "请精确选择一个目标来采集。",
+				"TargetActor": "此目标Token引用的角色在世界中已不存在。",
+				"Creature": "此目标Token引用的角色不是生物"
+			},
+			"HarvestPayloadUnresolved": "无法从其存储的数据中解析采集请求。",
+			"TargetMustBeAtZeroHp": "目标生命值必须 ≤0 才能被采集。",
+			"NoHarvestableResultsRemaining": "该目标和表格没有剩余的可采集结果。",
+			"HarvestTableMissingResultConfig": "采集表“{tableName}”没有可用的结果：缺少 {details}。请在表格结果上配置BBH结果技能/DC标志。",
+			"HarvestAttemptsReached": "{targetName} 无法再次被采集。已达到最大尝试次数（{maxAttempts}）。",
+			"MissingSkillLabel": "技能",
+			"MissingDcLabel": "DC",
+			"DropRollTable": "将随机表文档拖拽至此。",
+			"TableNameOrUuidNotResolved": "值未能解析为随机表UUID或确切的表名。",
+			"UuidNotRollTable": "UUID未能解析为随机表。",
+			"SelectTargetsOrControlledForReset": "选择一个或多个Token和/或目标Token以重置已采集的结果。"
+		},
+		"CHAT": {
+			"RollFlavor": "{actorName} 正在采集 {targetName}",
+			"HarvestAttemptTitle": "采集尝试",
+			"AttemptBody": "{actorName} 正在采集 {targetName}。",
+			"TableLine": "表格：{tableName}",
+			"ResultLine": "结果：{resultName}",
+			"CheckLine": "检定：{skillLabel} vs DC {dc}",
+			"SelectSkillPrompt": "选择要尝试采集的技能检定：",
+			"RollHarvestCheck": "进行采集检定",
+			"UnnamedResult": "未命名的结果",
+			"HarvestResultFallback": "采集结果",
+			"HarvestSucceeded": "采集成功",
+			"HarvestFailed": "采集失败",
+			"OutcomeBody": "{actorName} 采集了 {targetName}（{creatureType}）。",
+			"CheckResultLine": "检定：{skillLabel} {total}",
+			"RewardLine": "奖励：{rewardName}"
+		}
+	}
+}
