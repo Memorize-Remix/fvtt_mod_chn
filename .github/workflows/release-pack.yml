@@ -17,53 +17,44 @@ jobs:
       - name: 安装 jq 和 dos2unix
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq dos2unix xxd
+          sudo apt-get install -y jq dos2unix
 
-      # 将所有 cn.json 的换行符统一转为 LF（Unix 风格）
+      # 统一所有 cn.json 的换行符为 LF
       - name: 统一换行符为 LF
         run: |
           echo "转换所有 cn.json 的换行符为 LF..."
           find "fvtt mod汉化" -name "cn.json" -exec dos2unix {} \;
-          echo "转换完成"
 
-      # 🐛 专门针对 inspect-statblock/cn.json 进行详细调试
-      - name: 调试 inspect-statblock/cn.json
+      # 🛠️ 针对 inspect-statblock/cn.json 进行强制修复
+      - name: 修复 inspect-statblock/cn.json
         run: |
           FILE="fvtt mod汉化/inspect-statblock/cn.json"
-          echo "=== 文件内容 (cat -A) ==="
-          cat -A "$FILE"
-          echo ""
-          echo "=== 文件十六进制 (前200字节) ==="
-          xxd -c 16 -l 200 "$FILE"
-          echo ""
-          echo "=== 文件大小和行数 ==="
-          wc -c "$FILE"
-          wc -l "$FILE"
-          echo ""
-          echo "=== 尝试用 jq 解析，显示详细错误 ==="
-          jq . "$FILE" 2>&1 || true
-          echo ""
-          echo "=== 检查 JSON 括号匹配 (用 python) ==="
-          python3 -c "
-import json, sys
-try:
-    with open('$FILE', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    print('✅ JSON 解析成功')
-except json.JSONDecodeError as e:
-    print(f'❌ JSON 错误: {e}')
-    # 显示错误行附近的内容
-    with open('$FILE', 'r', encoding='utf-8') as f:
-        lines = f.readlines()
-        err_line = e.lineno - 1
-        start = max(0, err_line - 2)
-        end = min(len(lines), err_line + 3)
-        for i in range(start, end):
-            prefix = '>>>' if i == err_line else '   '
-            print(f'{prefix} {i+1}: {repr(lines[i])}')
-" || echo "python 未安装，跳过"
+          echo "正在修复 $FILE ..."
+          
+          # 去除文件末尾的空白字符（换行、空格等）
+          sed -i -e :a -e '/^\n*$/{$d;N;ba' -e '}' "$FILE" 2>/dev/null || true
+          
+          # 获取最后一个非空白字符的十六进制值
+          LAST_CHAR=$(tail -c 1 "$FILE" | od -An -tx1 | tr -d ' \n')
+          # '}' 的十六进制是 7d
+          if [ "$LAST_CHAR" != "7d" ]; then
+            echo "文件末尾不是 '}'，追加一个 '}'"
+            echo '}' >> "$FILE"
+          else
+            echo "文件末尾已是 '}'"
+          fi
+          
+          # 再次用 jq 尝试格式化，如果能成功，则用 jq 重新输出干净格式（可选）
+          if jq empty "$FILE" 2>/dev/null; then
+            echo "✅ 修复后格式正确"
+          else
+            echo "⚠️ 修复后仍然报错，请手动检查文件内容"
+            # 可选：输出文件内容以便排查
+            cat -A "$FILE"
+            exit 1
+          fi
 
-      # 验证所有 cn.json 是否合法
+      # 验证所有 cn.json 是否合法（此时应该全部通过）
       - name: 验证所有 cn.json
         run: |
           echo "开始验证所有 cn.json 文件..."
@@ -76,16 +67,14 @@ except json.JSONDecodeError as e:
           done
           echo "✅ 所有 cn.json 文件格式正确"
 
-      # 合并所有 cn.json（深度合并）
+      # 合并所有 cn.json
       - name: 合并所有 cn.json
         run: |
           find "fvtt mod汉化" -name "cn.json" -exec cat {} + | jq -s 'reduce .[] as $item ({}; . * $item)' > cn.json
           echo "合并完成，文件大小："
           ls -lh cn.json
-          echo "内容预览（前10行）："
-          head -n 10 cn.json
 
-      # 准备打包文件夹
+      # 准备打包
       - name: 准备打包文件夹
         run: |
           mkdir package
