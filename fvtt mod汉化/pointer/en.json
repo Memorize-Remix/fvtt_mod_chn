@@ -1,0 +1,75 @@
+{
+    "POINTER": {
+        "Settings": {
+            "Name": "Choose your hotkeys, ping and pointer!",
+            "Button": "Settings and Design Studio",
+            "Controls": {
+                "header": "Controls",
+                "inputhint": "Click on the input and choose your desired key.",
+                "pointer": {
+                    "label": "Pointer",
+                    "hint": "While pressing this button the pointer will follow your mouse cursor, while its over the canvas."
+                },
+                "ping": {
+                    "label": "Ping",
+                    "pointerActive": "Ping only when pointer is active?",
+                    "pointerActiveHint": "When this option is active pressing the button does only make the ping appear, when your pointer is already active.",
+                    "hint": "When pressing this button the ping will appear at your cursors current position, if its over the canvas. You may choose to only be able to ping when the pointer is active.",
+                    "force": "Move player view on ping",
+                    "forceHint": "Pressing this button places a ping and forces your players view to your view."
+                }
+            },
+            "GM": {
+                "applyToAll": {
+                    "label": "Apply your settings to all users?",
+                    "button": "Yes!",
+                    "hint": "All users will get your hotkey settings as well as your selected ping and pointer. This will not stop your players from changing these settings afterwards!"
+                }
+            },
+            "Designer": {
+                "Graphic": "Graphic",
+                "Scale": {
+                    "label": "Scale"
+                },
+                "Angle": {
+                    "label": "Angle"
+                },
+                "Offset": {
+                    "label": "Offset"
+                },
+                "Tint": {
+                    "label": "Tint color",
+                    "userColor": "Use usercolor as tint."
+                },
+                "Animations": {
+                    "header": "Animations",
+                    "rotate": {
+                        "label": "Rotation"
+                    },
+                    "scale": {
+                        "label": "Scale"
+                    },
+                    "duration": "Duration",
+                    "easing": "Easing Method"
+                },
+                "pingDuration": "Duration as Ping"
+            },
+            "Chooser": {
+                "addPointer": "Create new"
+            }
+        },
+        "General": {
+            "min": "Min",
+            "max": "Max",
+            "name": "Name",
+            "ping": "Ping",
+            "pointer": "Pointer",
+            "delete": "Delete?",
+            "units": {
+                "grid": "grid units",
+                "degree": "deg.",
+                "seconds": "s"
+            }
+        }
+    }
+}

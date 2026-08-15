@@ -1,0 +1,79 @@
+{
+  "easy-regions": {
+    "dropdownUUIDs": {
+      "Name": "Provide drop-list in UUID fields",
+      "Hint": "Adds a drop-down list showing all available UUIDs and a label showing their (nested) name of the relevant type (Region, Behavior, Macro, Scene) in UUID fields"
+    },
+    "onlyNavigatableScenes": {
+      "Name": "Only Navigatable Scenes",
+      "Hint": "Only show UUIDs from Scenes for which navigation is enabled."
+    },
+    "regionIcons": {
+      "Name": "Add Icons to Regions",
+      "Hint": "Adds fields to a Region definition to specify an optional icon (with tint and size)"
+    },
+    "customDropdown": {
+      "Name": "Use Custom Dropdown Handling",
+      "Hint": "Your browser's default display of the UUID dropdown list might show big UUID values and small labels. Enabling this option will display only the labels"
+    },
+    "legendShowNoBehavior": {
+      "Name": "Highlight regions with no behaviors",
+      "Hint": "Changes the colour of the Config icon in the Region list when a region has no behaviors defined"
+    },
+    "autoLinkTeleport": {
+      "Name": "Auto-link Teleport Regions",
+      "Hint": "Automatically link a Teleport behavior to a region with the complementary/identical Region name"
+    },
+    "teleportPattern1": {
+      "Name": "Teleport Region Pattern Name 1",
+      "Hint": "Specify the pattern of the region name for automatic teleport linking, of a pattern similar to '$1 up to $2' where $1 and $2 can be any text"
+    },
+    "teleportPattern2": {
+      "Name": "Teleport Region Pattern Name 2",
+      "Hint": "Second pattern for the region name, in both cases '$1' should appear before '$2'"
+    },
+    "teleportSameName": {
+      "Name": "Allow Teleport Link to Same Region Name",
+      "Hint": "When looking for a Region to Teleport to, link if the Region name is identical (in preference to the following pattern matching)"
+    },
+    "teleportPrompt": {
+      "Name": "Custom Prompts for Teleporting",
+      "Hint": "When enabled, two additional fields are present in each Teleport Token behavior. If not blank, these fields will supercede the default Foundry prompts"
+    },
+    "regionConfig": {
+      "src": {
+        "label": "Icon Image",
+        "hint": "Select an icon to display at the centre of each region polygon"
+      },
+      "tint": {
+        "label": "Icon Tint",
+        "hint": "The colour of the icon"
+      },
+      "size": {
+        "label": "Icon Size",
+        "hint": "The size of the icon (minimum 32)",
+        "validation": "must be an integer greater than 32"
+      }
+    },
+    "rulerShowCost": {
+      "Name": "Show Cost on Ruler",
+      "Hint": "Changes the ruler label to also show Cost (if different from distance)"
+    }
+  },
+  "BEHAVIOR": {
+    "TYPES": {
+      "teleportToken": {
+        "FIELDS": {
+          "confirmPrompt": {
+            "label": "Player Confirm Text",
+            "hint": "The text which should be displayed to players when using the teleport, use {token}, {region}, {scene}"
+          },
+          "confirmPromptGM": {
+            "label": "GM Confirm Text",
+            "hint": "The text which should be displayed to GMs when using the teleport, use {token}, {region}, {scene}"
+          }
+        }
+      }
+    }
+  }
+}

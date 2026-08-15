@@ -1,0 +1,180 @@
+{
+    "hexplorer": {
+        "request": {
+            "explore": "Explore",
+            "reveal": "Reveal",
+            "advance-time": "Advance Time",
+            "total-time": "Total Time",
+            "roll-tables": "Roll on Table",
+            "move": "Move",
+            "journal-entry": "Reveal Page",
+            "not-in-scene": "Hexplorer: You need to be in the same scene as the requested movement in order to confirm it.",
+            "player-message": "Movement request forwarded to the Game Master."
+        },
+        "fog": {
+            "showColor": "Toggle display of cell colors in revealed cells"
+        },
+        "scene": {
+            "enable": {
+                "name": "Enable Hexplorer"
+            }
+        },
+        "token": {
+            "enable": {
+                "name": "Is Hexplorer?"
+            },
+            "revealRadius": {
+                "name": "Reveal Radius",
+                "hint": "The radius of the revealed area in hexes. 0 means only the hex the token is on is revealed."
+            },
+            "speed": {
+                "name": "Speed",
+                "hint": "The movement speed of the hexplorer token in scene units per hour. This is used to calculate time advancement."
+            }
+        },
+        "settings": {
+            "hexTime": {
+                "name": "Movement Animation",
+                "hint": "The animation time in milliseconds to move one cell."
+            },
+            "autoTriggerExplore": {
+                "name": "Auto Trigger Explore Action",
+                "hint": "Automatically trigger the explore activities when a token moves into a cell. If your system requires a manual action from players to explore a cell, this can be disabled."
+            }
+        },
+        "hexplorer-app": {
+            "title": "Hexplorer",
+            "brushes": {
+                "legend": "Brushes",
+                "radius": "Brush Radius",
+                "hint": "Click on a cell on the canvas to configure it and/or save it as a brush. Click on cells with a brush selected to paint cells instead of configuring them.",
+                "apply": {
+                    "title": "Apply Brush",
+                    "sameColor": "Same Color",
+                    "sameColorHint": "Apply brush to all cells with the same color",
+                    "sameName": "Same Name",
+                    "sameNameHint": "Apply brush to all cells with the same region name",
+                    "tooltip": "Apply brush",
+                    "notification": "Applied brush to {count} cells."
+                }
+            },
+            "settings": {
+                "legend": "Settings",
+                "show-color": {
+                    "label": "Display Cell Colors in Revealed cells"
+                },
+                "always-banner": {
+                    "label": "Always Show Region Banner"
+                }
+            },
+            "reset-fow": {
+                "label": "Reset Revealed Cells",
+                "title": "Reset Revealed Cells?",
+                "content": "Are you sure you want to reset the revealed cells? This action cannot be undone."
+            },
+            "reset-discovered": {
+                "label": "Reset Discovered Regions",
+                "title": "Reset Discovered Regions?",
+                "content": "Are you sure you want to reset the discovered regions? The banner will be shown again when entering regions for the first time."
+            }
+        },
+        "cell-config": {
+            "title": "Configure Cell",
+            "tabs": {
+                "basic": {
+                    "label": "Basic"
+                },
+                "activities": {
+                    "label": "Activities"
+                },
+                "discover-activities": {
+                    "label": "Explore Activities",
+                    "hint": "These activities will be executed when the hexplorer passes through the cell or ends its movement in it. Some activities can be executed only the first time the hexplorer moves to the cell."
+                },
+                "explore-activities": {
+                    "label": "Reveal Activities",
+                    "hint": "These activities will be executed when the the cell is first revealed."
+                }
+            },
+            "revealed": {
+                "label": "Revealed",
+                "hint": "A revealed cell will be visible to the players."
+            },
+            "revealRadius": {
+                "label": "Reveal Radius",
+                "hint": "The radius to reveal around this cell when revealing it. A value of 0 or more will override the hexplorer token setting."
+            },
+            "discovered": {
+                "label": "Explored",
+                "hint": "A explored cell has been traversed by an hexplorer token."
+            },
+            "execute-only-on-explore": {
+                "label": "Execute only on explore",
+                "hint": "Execute the cell activities only if the cell was previously not explored."
+            },
+            "first-time-only": {
+                "label": "First Time Only",
+                "hint": "Only execute the above activity the first time the hexplorer moves to this cell."
+            },
+            "reveal-tooltip": {
+                "label": "Reveal Tooltip",
+                "hint": "Give observer permission to players for the journal page associated with the tooltip."
+            },
+            "reveal-journal-entry": {
+                "label": "Reveal Journal Entry",
+                "hint": "Allow players to open the Journal Entry associated with this cell in the General tab."
+            },
+            "reveal-map-notes": {
+                "label": "Reveal Map Notes",
+                "hint": "Give observer permission to players to all the scene map notes present within this cell."
+            },
+            "color": {
+                "label": "Color"
+            },
+            "region": {
+                "label": "Region"
+            },
+            "reveal": {
+                "label": "Reveal Cells",
+                "hint": "Comma separated list of cells to reveal. Shift + Click on the canvas to add cells.",
+                "notification": "Cell added to reveal list."
+            },
+            "remove-hidden": {
+                "label": "Remove Hidden",
+                "hint": "Documents to remove the hidden status from when this activity is executed. Can be lights, tiles, sounds, tokens etc."
+            },
+            "macros": {
+                "label": "Macros",
+                "hint": "Macros to execute when this activity is executed."
+            },
+            "speed-multiplier": {
+                "label": "Speed Multiplier"
+            },
+            "roll-tables": {
+                "label": "Roll Tables",
+                "hint": "Roll Tables to roll when entering or traveling through the cell."
+            },
+            "tooltip": {
+                "label": "Tooltip"
+            },
+            "journal-entry": {
+                "label": "Journal Entry",
+                "hint": "Journal Entry to open on click."
+            },
+            "brush-name": {
+                "label": "Brush Name"
+            },
+            "save-as-brush": {
+                "label": "Save as Brush"
+            },
+            "discover-button": {
+                "label": "Trigger Explore Action",
+                "no-token": "No hexplorer token found."
+            }
+        },
+        "flags": {},
+        "err": {
+            "gridless": "Hexplorer is not compatible with gridless scenes. Please select a grid type."
+        }
+    }
+}

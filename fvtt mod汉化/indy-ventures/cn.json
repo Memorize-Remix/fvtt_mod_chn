@@ -1,0 +1,353 @@
+
+	"INDYFX": {
+		"RegionBehaviorLabel": "indyFX"
+	},
+	"INDYVENTURES": {
+		"Settings": {
+			"IntegrateBastion": {
+				"Name": "与据点回合集成",
+				"Hint": "当创建 D&D5e 据点回合总结时，自动处理商业活动结果。"
+			},
+			"PostChatSummary": {
+				"Name": "发布商业活动总结卡片",
+				"Hint": "每个据点回合后创建商业活动总结聊天卡片。"
+			},
+			"HideVentureHirelings": {
+				"Name": "隐藏商业活动雇佣人员",
+				"Hint": "启用后，支持商业活动的设施将隐藏据点雇佣人员槽位。"
+			},
+			"DebugLogging": {
+				"Name": "启用调试日志",
+				"Hint": "启用后，模组将调试信息写入浏览器控制台。"
+			},
+			"CoveragePromptTimeoutSeconds": {
+				"Name": "亏损覆盖提示超时（秒）",
+				"Hint": "在自动拒绝前，等待所有者响应亏损覆盖提示的时间。"
+			},
+			"RollPromptTimeoutSeconds": {
+				"Name": "掷骰提示超时（秒）",
+				"Hint": "GM 在回退到 GM 掷骰提示前，等待委托所有者进行盈亏掷骰的时间。"
+			}
+		},
+		"Sheet": {
+			"Legend": "商业活动自动化",
+			"Enabled": "启用商业活动",
+			"EnabledHint": "启用后，此特殊设施将在每个据点回合解析商业活动盈亏。",
+			"VentureName": "商业活动名称",
+			"ProfitDie": "利润骰",
+			"LossDie": "基础亏损骰",
+			"LossModifier": "亏损骰调整值",
+			"GpPerPoint": "每点金币（GP）",
+			"GpPerPointHint": "每个盈亏点价值多少 GP。",
+			"SuccessThreshold": "增长所需成功次数",
+			"NaturalOneDegradesProfitDie": "N1 降低利润骰",
+			"NaturalOneDegradesProfitDieHint": "启用后，利润骰掷出 N1 时，将当前利润骰降低一级（如可能）。",
+			"AutoUseTreasuryLoss": "自动使用商业活动金库弥补亏损",
+			"AutoUseTreasuryLossHint": "启用后，在动用角色资金前，自动使用商业活动金库弥补亏损。",
+			"AutoCoverLoss": "自动弥补亏损（GP）",
+			"AutoCoverLossHint": "启用后，在降级前，从角色的 GP 中自动支付商业活动亏损。",
+			"Boons": "恩惠",
+			"OpenBoonEditor": "打开恩惠编辑器",
+			"BoonsHint": "已配置恩惠：{count}。每行格式为：名称 | 成本 | 描述 | 奖励 UUID（可选） | 每据点回合购买次数（可选；默认 1，使用 'unlimited' 表示无限制） | 购买时机（可选：default、loss、profit） | group=<名称>（可选） | group-limit=<n>（可选）。",
+			"BoonsDropHint": "提示：将物品或主动效果拖到恩惠字段以插入 @UUID 奖励引用。",
+			"BoonTableTitle": "标题",
+			"BoonTableCost": "成本",
+			"BoonTableReward": "奖励",
+			"BoonTableCount": "数量",
+			"BoonTableGroup": "分组",
+			"BoonTableWindow": "利润",
+			"BoonTableEmpty": "未配置恩惠。",
+			"ActiveEffects": "激活商业活动效果",
+			"ActiveEffectsName": "效果",
+			"ActiveEffectsSummary": "调整值",
+			"ActiveEffectsRemaining": "持续时间",
+			"ActiveEffectsStatus": "状态",
+			"ActiveEffectsApplied": "已应用",
+			"ActiveEffectsTemplate": "模板",
+			"ActiveEffectsDisabled": "已禁用",
+			"ActiveEffectsEmpty": "此设施上无商业活动效果。",
+			"CurrentProfitDie": "当前利润骰",
+			"SuccessStreak": "当前成功连胜",
+			"Treasury": "商业活动金库（GP）",
+			"Failed": "商业活动失败"
+		},
+		"BoonPurchaseWhen": {
+			"Default": "任意回合",
+			"Loss": "仅亏损或持平",
+			"Profit": "仅盈利或持平"
+		},
+		"Chat": {
+			"Title": "{actor} 的商业活动结果",
+			"RollLine": "利润：{profit}（{profitDie}）| 亏损：{loss}（{lossDie}）",
+			"ProfitRollBonus": "利润加值已应用：{raw} + {bonus} = {total}",
+			"AppliedModifiers": "已应用商业活动调整值",
+			"VentureEffectsApplied": "已应用商业活动效果",
+			"ModifierOutcomeProfitDie": "调整后的利润骰：{base} -> {final}",
+			"ModifierOutcomeLossDie": "调整后的亏损骰：{base} -> {final}",
+			"ModifierOutcomeSuccessThreshold": "调整后的成功阈值：{base} -> {final}",
+			"ModifierOutcomeProfitRoll": "调整后的利润掷骰：{raw} + {bonus} = {total}",
+			"ModifierImpactLabel": "影响",
+			"ModifierImpactProfitStep": "利润骰步进 {step} 贡献（{from} -> {to}，在覆盖/下限之前）",
+			"ModifierImpactProfitOverride": "利润骰覆盖已应用：{override}（最终 {final}）",
+			"ModifierImpactMinProfit": "最低利润骰下限 {minimum} 已强制执行（最终 {final}）",
+			"ModifierImpactLossStep": "亏损骰步进 {step} 贡献（{from} -> {to}，在覆盖/上限之前）",
+			"ModifierImpactLossOverride": "亏损骰覆盖已应用：{override}（最终 {final}）",
+			"ModifierImpactMaxLoss": "最高亏损骰上限 {maximum} 已强制执行（最终 {final}）",
+			"ModifierImpactSuccessThreshold": "成功阈值覆盖贡献（{base} -> {effective}）",
+			"ModifierImpactProfitBonus": "利润加值贡献 {bonus}（掷骰 {raw} -> {total}，总加值 {aggregateBonus} 后）",
+			"ModifierTurnsTick": "剩余 {before} 回合，本回合后减少至 {after}",
+			"ModifierTurnsStatic": "剩余 {remaining} 回合（本回合未消耗）",
+			"BastionEffectsTitle": "激活商业活动效果",
+			"BastionEffectsNoTurnLimit": "无回合限制",
+			"BastionEffectsTurnsRemaining": "剩余 {turns} 回合",
+			"IncomeLabel": "收入",
+			"OutgoingsLabel": "支出",
+			"NetLabel": "净额",
+			"NetBreakdownTooltip": "收入：{income} gp | 支出：{outgoings} gp",
+			"TreasuryLabel": "金库",
+			"NextProfitDie": "当前利润骰：{die}",
+			"ProfitDieIncreased": "利润骰提升：{from} -> {to}",
+			"ProfitDieDecreased": "利润骰降低：{from} -> {to}",
+			"NetLine": "收入：{income} gp | 支出：{outgoings} gp | 净额：{net} gp | 金库：{treasury} gp",
+			"ClaimTreasury": "向角色支付资金",
+			"Unlimited": "无限制",
+			"BoonTurnLimit": "本回合已购买：{purchased}/{limit}",
+			"BoonTurnLimitUnlimited": "本回合已购买：{purchased}（无限制）",
+			"BoonGroupLimit": "分组 '{group}' 本回合已购买：{purchased}/{limit}",
+			"BoonGroupLimitUnlimited": "分组 '{group}' 本回合已购买：{purchased}（无分组限制）",
+			"BoonPurchaseWindow": "购买时机：{mode}",
+			"BoonPurchaseWindowBlocked": "由于购买时机（{mode}），本回合无法购买此恩惠。",
+			"ExpandBoonDetails": "展开恩惠详情",
+			"CollapseBoonDetails": "收起恩惠详情",
+			"BoonRewardLabel": "购买时奖励：",
+			"BoonReward": "购买时奖励：{reward}",
+			"DeficitCovered": "剩余的 {character} gp 亏损已自动从角色资金中弥补。",
+			"DeficitCoveredManual": "{decider} 选择从角色资金中弥补剩余的 {character} gp 亏损。",
+			"DeficitCoveredManualInventory": "{decider} 选择从角色物品栏资金中弥补剩余的 {character} gp 亏损。",
+			"DeficitSources": "亏损弥补使用了 {treasury} gp 的商业活动金库和 {character} gp 的角色资金。",
+			"DeficitDeclined": "{decider} 拒绝弥补此商业活动的亏损。",
+			"DeficitTimedOut": "{decider} 无响应；亏损弥补已超时。",
+			"DeficitRemaining": "仍有 {uncovered} gp 亏损未弥补。",
+			"DeficitInsufficient": "角色资金不足以弥补剩余的 {deficit} gp 亏损。",
+			"Grew": "商业活动势头增强。利润骰提升。",
+			"Degraded": "商业活动表现不佳。利润骰降低。",
+			"NaturalOneDegraded": "利润骰掷出自然 1：利润骰降低。",
+			"Failed": "商业活动已失败并被禁用。"
+		},
+		"BoonEditor": {
+			"Title": "编辑商业活动恩惠",
+			"Help": "在表格中管理恩惠条目。保存时忽略空名称。将物品或主动效果拖到奖励字段以插入 UUID 链接，或使用魔杖按钮生成商业活动调整值主动效果奖励。购买时机控制恩惠何时可购买；持平同时符合盈利和亏损条件。分组和分组回合限制允许多个恩惠共享每回合购买上限。",
+			"ModifierBuilderOpen": "构建主动效果奖励",
+			"ModifierBuilderTitle": "构建商业活动调整值奖励",
+			"ModifierBuilderHelp": "为此恩惠创建主动效果奖励。它将存储在设施上并链接到奖励 UUID 字段。",
+			"ModifierBuilderCreate": "创建奖励效果",
+			"ModifierBuilderNone": "无变化",
+			"ModifierBuilderDefaultNamePrefix": "商业活动调整值",
+			"ModifierBuilderDefaultName": "自定义商业活动调整值",
+			"ModifierBuilderEffectName": "效果名称",
+			"ModifierBuilderScope": "范围",
+			"ModifierBuilderScopeAll": "应用于所有商业活动（而非仅此一个）",
+			"ModifierBuilderProfitDieStep": "利润骰步进（+/-）",
+			"ModifierBuilderProfitDieOverride": "利润骰覆盖",
+			"ModifierBuilderMinProfitDie": "最低利润骰",
+			"ModifierBuilderLossDieStep": "亏损骰步进（+/-）",
+			"ModifierBuilderLossDieOverride": "亏损骰覆盖",
+			"ModifierBuilderMaxLossDie": "最高亏损骰",
+			"ModifierBuilderSuccessThresholdOverride": "增长所需成功次数覆盖",
+			"ModifierBuilderProfitRollBonus": "利润掷骰加值",
+			"ModifierBuilderDurationMode": "持续时间类型",
+			"ModifierBuilderDurationModeStandard": "标准（固定回合或公式）",
+			"ModifierBuilderDurationModeNextBastionTurn": "1 据点回合（在角色的下一个据点回合时过期）",
+			"ModifierBuilderRemainingTurns": "固定持续时间（回合）",
+			"ModifierBuilderDurationFormula": "持续时间公式（固定持续时间为空时使用）",
+			"ModifierBuilderConsumePerTurn": "每据点回合消耗持续时间",
+			"Name": "名称",
+			"Cost": "成本",
+			"Description": "描述",
+			"Reward": "奖励 UUID",
+			"RewardPlaceholder": "@UUID[...]",
+			"Limit": "每回合限制",
+			"LimitPlaceholder": "限制（默认 1 / 无限制）",
+			"PurchaseWhen": "购买时机",
+			"Group": "分组",
+			"GroupPlaceholder": "分组（共享回合上限）",
+			"GroupLimit": "分组回合限制",
+			"GroupLimitPlaceholder": "分组限制（空白 = 无分组上限）",
+			"GroupsTitle": "恩惠分组",
+			"GroupsHelp": "创建分组，设置其每回合限制，然后在卡片间拖放恩惠芯片以分配或取消分配。",
+			"AddGroup": "添加分组",
+			"UngroupedTitle": "未分组恩惠",
+			"NoBoonsInGroup": "将恩惠拖放到此处",
+			"GroupCount": "{count} 个分组",
+			"UnnamedBoon": "未命名恩惠",
+			"GroupDefaultName": "分组 {number}",
+			"Add": "添加恩惠",
+			"Remove": "移除恩惠",
+			"Save": "应用",
+			"Cancel": "取消"
+		},
+		"EffectSummary": {
+			"Label": "商业活动调整值总结",
+			"Scope": "范围",
+			"ScopeAll": "所有商业活动",
+			"ScopeThis": "仅此商业活动",
+			"ProfitDieStep": "利润骰步进",
+			"ProfitDieOverride": "利润骰覆盖",
+			"MinProfitDie": "最低利润骰",
+			"LossDieStep": "亏损骰步进",
+			"LossDieOverride": "亏损骰覆盖",
+			"MaxLossDie": "最高亏损骰",
+			"SuccessThresholdOverride": "增长所需成功次数",
+			"ProfitRollBonus": "利润掷骰加值",
+			"RemainingTurns": "剩余据点回合",
+			"DurationFormula": "持续时间公式",
+			"BastionDurationNextTurn": "持续时间：1 据点回合（在下一个据点回合时过期）。",
+			"TemplateNote": "模板效果：此效果存储在商业活动上，并在购买恩惠时复制。",
+			"NoConsume": "每据点回合不消耗持续时间",
+			"NoChanges": "未设置骰子或加值调整值。"
+		},
+		"Prompt": {
+			"Title": "弥补商业活动亏损？",
+			"Content": "<p><strong>{decider}</strong>，你希望如何弥补此商业活动亏损？</p><p>角色：<strong>{actor}</strong><br>商业活动：<strong>{venture}</strong><br>总亏损：<strong>{deficit} gp</strong><br>当前商业活动金库：<strong>{currentTreasury} gp</strong><br>物品栏货币总值：<strong>{availableInventoryGp} gp</strong></p>",
+			"CoverFromGp": "从 GP 中弥补",
+			"CoverFromInventory": "从物品栏中弥补",
+			"CoverFromTreasury": "从金库中弥补",
+			"CoverFromTreasuryAndActor": "从金库 + 角色中弥补",
+			"CoverFromActor": "从角色中弥补",
+			"Decline": "不弥补",
+			"ClaimTitle": "领取商业活动金库",
+			"ClaimConfirm": "领取 GP",
+			"ClaimContent": "<p>你希望从 <strong>{venture}</strong> 领取多少 GP？</p><div class=\"form-group\"><label>金额（最大 {maxAmount} gp）</label><div class=\"form-fields\"><input type=\"number\" name=\"amount\" min=\"1\" max=\"{maxAmount}\" step=\"1\" value=\"{maxAmount}\" /></div></div>"
+		},
+		"Errors": {
+			"GMOnly": "只有 GM 可以购买商业活动恩惠。",
+			"NotEnoughTreasury": "此商业活动金库不足以购买该恩惠。",
+			"NoTreasury": "此商业活动无金库可领取。",
+			"NotOwner": "你必须拥有此角色（或是 GM）才能管理商业活动金库。",
+			"InvalidClaimAmount": "请输入 1 到 {maxAmount} gp 之间的领取金额。",
+			"BoonDropMissingUuid": "拖放的文档缺少 UUID 引用。",
+			"BoonModifierNoFacility": "未找到用于创建调整值奖励效果的设施文档。",
+			"BoonModifierNoChanges": "未设置调整值。请至少添加一个骰子或加值变化。",
+			"BoonModifierCreateFailed": "创建调整值奖励效果失败。",
+			"BoonSaveFailed": "将恩惠更改保存到设施失败。",
+			"BoonTurnLimitReached": "此恩惠已达到本回合购买限制（{purchased}/{limit}）。",
+			"BoonGroupTurnLimitReached": "此恩惠的分组 '{group}' 已达到本回合购买限制（{purchased}/{limit}）。",
+			"BoonPurchaseWindowBlocked": "由于购买时机（{mode}），本回合无法购买此恩惠。",
+			"StaleVentureSummary": "此总结来自较早的据点回合。请使用最新的商业活动总结卡片。",
+			"BoonDurationFormulaInvalid": "恩惠效果持续时间公式无效：{formula}。",
+			"BoonRewardMissing": "未找到恩惠奖励：{reward}。",
+			"BoonRewardUnsupported": "奖励 '{reward}' 的恩惠奖励类型 '{type}' 不受支持。请使用物品或 ActiveEffect 的 UUID。"
+		},
+		"Notifications": {
+			"BoonPurchased": "为 {venture} 购买了恩惠 '{boon}'。",
+			"BoonPurchasedReward": "为 {venture} 购买了恩惠 '{boon}' 并授予了奖励 '{reward}'。",
+			"BoonModifierLinked": "已将奖励效果 '{effect}' 链接到恩惠行。",
+			"BoonRewardUuidInserted": "已将恩惠奖励 UUID 插入恩惠列表。",
+			"ClaimedTreasury": "从 {venture} 领取了 {amount} gp 到 {actor}。"
+		},
+		"RollPrompt": {
+			"Title": "掷商业活动骰",
+			"Content": "<p>请为 <strong>{facility}</strong> 掷 <strong>{rollLabel}</strong>。</p><p>公式：<strong>{formula}</strong></p>",
+			"Roll": "掷骰",
+			"Flavor": "{rollLabel} - {facility}",
+			"Profit": "商业活动利润",
+			"Loss": "商业活动亏损",
+			"Duration": "恩惠持续时间"
+		}
+	},
+	"dae": {
+		"fieldData": {
+			"fieldCategories": {
+				"IndyVentures": "Indy Ventures"
+			}
+		},
+		"IndyVentures": {
+			"fieldData": {
+				"flags": {
+					"indy-ventures": {
+						"ventureModifier": {
+							"enabled": {
+								"name": "商业活动调整值：启用",
+								"description": "如果为 true，此商业活动调整值可影响商业活动回合处理。"
+							},
+							"applyToAllVentures": {
+								"name": "商业活动调整值：应用于所有商业活动",
+								"description": "如果为 true，此调整值应用于角色上的每个商业活动。"
+							},
+							"facilityId": {
+								"name": "商业活动调整值：设施范围",
+								"description": "当不全局应用时，此调整值目标设施 id/uuid/名称。"
+							},
+							"profitDieStep": {
+								"name": "商业活动调整值：利润骰步进",
+								"description": "按骰子步进上下调整利润骰（例如从 d8 到 d10 为 +1）。"
+							},
+							"profitDieOverride": {
+								"name": "商业活动调整值：利润骰覆盖",
+								"description": "强制利润骰为此值（d4/d6/d8/d10/d12）。"
+							},
+							"minProfitDie": {
+								"name": "商业活动调整值：最低利润骰",
+								"description": "防止利润骰低于此值。"
+							},
+							"lossDieStep": {
+								"name": "商业活动调整值：亏损骰步进",
+								"description": "按骰子步进上下调整亏损骰。"
+							},
+							"lossDieOverride": {
+								"name": "商业活动调整值：亏损骰覆盖",
+								"description": "强制亏损骰为此值（d4/d6/d8/d10/d12）。"
+							},
+							"maxLossDie": {
+								"name": "商业活动调整值：最高亏损骰",
+								"description": "限制计算出的亏损骰，使其不能高于此值。"
+							},
+							"successThresholdOverride": {
+								"name": "商业活动调整值：增长所需成功次数覆盖",
+								"description": "覆盖利润骰增长所需的成功次数（例如设置为 1 表示'一次成功后增长'）。"
+							},
+							"profitRollBonus": {
+								"name": "商业活动调整值：利润掷骰加值",
+								"description": "每个商业活动回合添加到掷骰利润结果的固定加值。"
+							},
+							"durationFormula": {
+								"name": "商业活动调整值：持续时间公式",
+								"description": "购买时使用的掷骰公式，用于在未设置固定回合时确定剩余据点回合。"
+							},
+							"consumePerTurn": {
+								"name": "商业活动调整值：每据点回合消耗",
+								"description": "如果为 true，remainingTurns 在每个据点回合减少 1。"
+							},
+							"bastionDurationType": {
+								"name": "商业活动调整值：特殊持续时间类型",
+								"description": "使用 'nextBastionTurn' 使此调整值在角色的下一个据点回合时过期。"
+							},
+							"remainingTurns": {
+								"name": "商业活动调整值：剩余据点回合",
+								"description": "调整值过期前的剩余据点回合数。"
+							}
+						},
+						"bastionDuration": {
+							"expireNextTurn": {
+								"name": "据点持续时间：下一个据点回合过期",
+								"description": "设置为 true 使此非商业活动主动效果在角色的下一个据点回合时过期。"
+							},
+							"remainingTurns": {
+								"name": "据点持续时间剩余回合",
+								"description": "非商业活动主动效果的手动回合计数器，每据点回合消耗。"
+							},
+							"durationFormula": {
+								"name": "据点持续时间公式",
+								"description": "如果设置（且剩余回合为空白），此公式在授予奖励时掷骰以设置剩余回合。"
+							},
+							"consumePerTurn": {
+								"name": "据点持续时间每回合消耗",
+								"description": "如果为 true，非商业活动主动效果的剩余回合每据点回合递减。"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

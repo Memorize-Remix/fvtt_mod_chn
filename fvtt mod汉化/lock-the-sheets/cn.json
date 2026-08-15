@@ -1,0 +1,110 @@
+
+  "lock-the-sheets": {
+    "setting": {
+      "modVersion": {
+        "name": "版本",
+        "hint": "当前安装的模组版本（此处无法更改）。"
+      },
+      "debug": {
+        "name": "调试模式",
+        "hint": "客户端设置，启用扩展调试日志记录。"
+      },
+      "isActive": {
+        "name": "激活锁定",
+        "hint": "开启角色表锁定状态（可在游戏中通过键位绑定、宏或UI按钮切换）。"
+      },
+      "allowEquip": {
+        "name": "允许装备与卸装",
+        "hint": "在角色表锁定激活时，是否允许装备/卸装库存物品？"
+      },
+      "showUIButton": {
+        "name": "显示UI按钮",
+        "hint": "在左侧场景控件菜单中显示一个用于切换锁定状态的按钮。"
+      },
+      "hideChatInfo": {
+        "name": "在聊天窗口中隐藏模组信息",
+        "hint": "在游戏开始时隐藏聊天窗口中关于此模组的信息文本（取消勾选此选项可再次查看）。"
+      },
+      "notifyOnChange": {
+        "name": "切换时显示界面消息",
+        "hint": "在开关切换时显示临时界面消息。"
+      },
+      "notifyPermanentlyWhileLOCKED": {
+        "name": "激活时显示粘性屏幕消息",
+        "hint": "切换为开启时显示永久界面消息（可见直到停用）。需要启用\"切换时显示界面消息\"选项。"
+      },
+      "notifyPermanentlyWhileUNLOCKED": {
+        "name": "停用时显示粘性屏幕消息",
+        "hint": "切换为关闭时显示永久界面消息（可见直到重新激活）。需要启用\"切换时显示界面消息\"选项。"
+      },
+      "alertGMOnReject": {
+        "name": "拒绝编辑时提醒GM",
+        "hint": "当玩家尝试编辑锁定的角色表时，为GM显示屏幕警告。"
+      },
+      "lockForGM": {
+        "name": "同时对GM锁定更改",
+        "hint": "规则适用于所有人！对GM也应用锁定（保护自己免受意外编辑）。"
+      },
+      "showOverlayLocked": {
+        "name": "在锁定的角色上显示图标",
+        "hint": "锁定时在Token和角色上显示图标（默认：关闭）。注意：对于大型场景和/或世界，切换场景时可能会影响性能。也可以通过使用缩放选项'不可见'来模拟关闭覆盖层。"
+      },
+      "showOverlayOpen": {
+        "name": "在解锁的角色上显示图标",
+        "hint": "解锁时在Token和角色上显示图标（默认：关闭）。注意：对于大型场景和/或世界，切换场景时可能会影响性能。也可以通过使用缩放选项'不可见'来模拟关闭覆盖层。"
+      },
+      "overlayScale": {
+        "name": "图标大小",
+        "hint": "场景视图中锁定/解锁角色上图标的缩放比例。也可以通过全局控制设置中的自定义键位绑定来切换。"
+      },
+      "overlayScaleOptions": {
+        "small": "小",
+        "normal": "正常",
+        "large": "大"
+      },
+      "showHUDIconLocked": {
+        "name": "锁定时显示HUD状态图标",
+        "hint": "在屏幕上显示一个图标（右上角）指示锁定状态（默认：开启）。\n 你可以通过设置下面的滑块使其在超时后自动关闭。"
+      },
+      "showHUDIconOpen": {
+        "name": "解锁时显示HUD状态图标",
+        "hint": "在屏幕上显示一个图标（右上角）指示解锁状态（默认：开启）。\n 你可以通过设置下面的滑块使其在超时后自动关闭。"
+      },
+      "hudIconTimeoutSeconds": {
+        "name": "HUD状态图标的超时时间（秒）",
+        "hint": "HUD图标在一定时间后自动关闭的超时时间（秒）。设置为0使HUD图标始终可见。默认：10。"
+      },
+      "hudIconOpacity": {
+        "name": "HUD状态图标的不透明度",
+        "hint": "1（最大值）表示完全可见，0.2（最小值）表示可见度为20%（透明度为80%）。默认：0.7（70%）"
+      },
+      "keybindingNames": {
+        "toggle": "锁定角色表！(开/关)",
+        "scaleZero": "图标大小：不可见",
+        "scaleSmall": "图标大小：小",
+        "scaleNormal": "图标大小：正常",
+        "scaleLarge": "图标大小：大"
+      }
+    },
+    "chatInfoContent": {
+      "title": "锁定角色表！<br/>(由coffiarts制作)",
+      "text1": "成为守门人！<br/>只需一次点击即可同时锁定和解锁所有角色表！",
+      "text2": "使用这个方便的小助手模组，GM可以阻止和解除阻止玩家对角色表的任何编辑。",
+      "text3": "切换开/关有多种方式：通过游戏设置，或通过方便的UI按钮（可选），或通过宏代码或宏按钮。<br/><br/>请参考游戏设置下的模组偏好设置。<br/><br/>在GitHub上查找更多详细信息",
+      "footer": "此聊天卡片仅显示一次。如有需要，可在模组设置中再次激活。"
+    },
+    "onOffUIMessage": {
+      "whenON": "角色表现已锁定！",
+      "whenOFF": "角色表现已解锁。"
+    },
+    "sheetEditRejected": {
+      "playerMsg": "角色表当前已被GM远程锁定。更改将不会被保存。",
+      "gmMsgSheet": "[{userName}] 正在尝试修改角色：[{sheetName}]。",
+      "gmMsgItem": "[{userName}] 正在尝试在角色表中更改：[{itemName}]",
+      "gmMsgItemDeleted": "[{userName}] 正在尝试从角色表中删除：[{itemName}]"
+    },
+    "controlButton": {
+      "label": "锁定角色表！开/关"
+    }
+  }
+}

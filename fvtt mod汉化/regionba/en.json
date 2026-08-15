@@ -1,0 +1,497 @@
+{
+	"regionba" : {
+		"Titles" : {
+			"regionba" : "Region Behaviour Adjustments",
+			
+			"genericPosition" : "position (x:{x}, y:{y})",
+			
+			"enterdropUUID" : "Enter UUID or Drop Document",
+			
+			"addUUID" : "Add Document from UUID",
+			"documentUUID" : "Document UUIDs",
+			
+			"clickCanvas" : "Choose Scene Position",
+			
+			"addSelectedDocuments" : "Set selected documents [SHIFT to add]"
+		},
+		
+		"BehaviourSettings" : {
+			"scChangeHint" : "[shift+L-click to add all, shift+R-click to remove all]",
+			
+			"autoSkipConfirmDialogue" : {
+				"name" : "Skip confirm dialogue",
+				"hint" : "If the confirm dialogue is skipped, if only one target level is available"
+			},
+			
+			"continueMovement" : {
+				"name" : "Continue movement",
+				"hint" : "If token movement should resume after the level change (respects wall collision of new level)"
+			},
+			
+			"targetLevelChoice" : {
+				"name" : "Target level",
+				"hint" : "The level which this behaviour can send tokens to (not limited by the regions levels)",
+				"options" : {
+					"default" : "Default (Foundry behaviour)",
+					"upElevation" : "Next higher elevation",
+					"downElevation" : "Next lower elevation",
+					"neighbourElevation" : "Neighbouring elevations",
+					"levelChoice" : "Custom level choice"
+				}
+			},
+			
+			"chosenLevels" : {
+				"name" : "Chosen levels",
+				"hint" : "Levels chosen for the Target level setting. If none are chosen, all levels are available."
+			},
+			
+			"movementTypeExclusion" : {
+				"name" : "Excluded movement",
+				"hint" : "Tokens that enter the region with this movement type will not trigger this behaviour"
+			},
+			
+			"teleportPosition" : {
+				"name" : "Teleport Position",
+				"hint" : "Coordinates of the point to teleport to [sceneUUID,levelUUID,x,y]"
+			},
+			
+			"combatantDocuments" : {
+				"name" : "Combatants",
+				"hint" : "Tokens to be added as combatants"
+			},
+			
+			"playerTokensTriggeronly" : {
+				"name" : "Characters trigger",
+				"hint" : "If only tokens set as a player character should trigger this behaviour"
+			},
+			
+			"additionalRecipients" : {
+				"name" : "Additional Recipients",
+				"hint" : "Additional tokens whose items will be changed"
+			},
+			
+			"ignoreTriggeringToken" : {
+				"name" : "Ignore triggering Token",
+				"hint" : "Removes the triggering Token from the list of recipients"
+			},
+					
+			"addTokensonRegion" : {
+				"name" : "Tokens on Region",
+				"hint" : "If the Tokens curently standing on this region should be added"
+			},
+			
+			"addPlayerTokens" : {
+				"name" : "Player Characters",
+				"hint" : "If tokens set as a player character should be added"
+			},
+			
+			"once" : {
+				"name" : "Once",
+				"hint" : "Disable the behaviour after the first time it's triggered"
+			},
+			
+			"movementTypeEnter" : {
+				"name" : "Enter Movement",
+				"hint" : "The movement type tokens entering the behaviours region are set to"
+			},
+			
+			"movementTypeLeave" : {
+				"name" : "Leave Movement",
+				"hint" : "The movement type tokens leaving the behaviours region are set to"
+			},
+			
+			"noChangeMovementType" : {
+				"name" : "Excluded types",
+				"hint" : "The movement type of tokens with these movement types will not be changed"
+			},
+			
+			"visibilityDocuments" : {
+				"name" : "Placeables",
+				"hint" : "Placeables (Tokens, Tiles, Doors) whose visibility is changed"
+			},
+			
+			"visibilityChange" : {
+				"name" : "Change",
+				"hint" : "How the visibility is changed",
+				"options" : {
+					"toggle" : "Toggle",
+					"show" : "Show",
+					"hide" : "Hide"
+				}
+			},
+			
+			"logicMode" : {
+				"name" : "Logic",
+				"hint" : "The way the following values are combined",
+				"options" : {
+					"AND" : "AND",
+					"OR" : "OR"
+				}
+			},
+			
+			"conditionTypes" : {
+				"name" : "Condition types",
+				"hint" : "Activate and deactivate types of conditions",
+				"options" : {
+					"ItemsinToken" : "Items in token",
+					"DoorState" : "Door state",
+					"TokeninRegions" : "Token within Regions",
+					"TokennotinRegions" : "Token outside Regions",
+					"Macros" : "Macros",
+					"Script" : "Script"
+				}
+			},
+			
+			"invertResult" : {
+				"name" : "Invert",
+				"hint" : "Inverts logical result"
+			},
+			
+			"triggerBehavioursTRUE" : {
+				"name" : "On TRUE",
+				"hint" : "Behaviours triggered when TRUE"
+			},
+			
+			"triggerBehavioursFALSE" : {
+				"name" : "On FALSE",
+				"hint" : "Behaviours triggered when FALSE"
+			},
+			
+			"ignoreDisabled" : {
+				"name" : "Ignore disabled",
+				"hint" : "If the disabled state of the triggered behaviours should be ignored [In most cases you will want this set to true and the target behaviours set to disabled]"
+			},
+			
+			"conditionalItemsinToken" : {
+				"name" : "Items",
+				"hint" : "Entering token is checked for these Items"
+			},
+			
+			"checkIteminTokenZero" : {
+				"name" : "Check Quantity",
+				"hint" : "If the above items should be checked for a quantity higher than 0"
+			},
+			
+			"conditionalDoors" : {
+				"name" : "Conditional Doors",
+				"hint" : "Doors for the door check state"
+			},
+			
+			"conditionalDoorState" : {
+				"name" : "Conditional Door State",
+				"hint" : "State to check the doors for",
+				"options" : {
+					"locked" : "locked",
+					"unlocked" : "unlocked (opened or closed)",
+					"opened" : "opened",
+					"closed" : "closed (locked or unlocked)",
+					"unlockedclosed" : "unlocked closed"
+				}
+			},
+
+			"conditionalTokeninRegions" : {
+				"name" : "Token within Regions",
+				"hint" : "Check if the triggering Token is within these Regions during the trigger event"
+			},
+			
+			"conditionalTokennotinRegions" : {
+				"name" : "Token outside Regions",
+				"hint" : "Check if the triggering Token is outside these Regions during the trigger event"
+			},
+				
+			"conditionalMacros" : {
+				"name" : "Macros",
+				"hint" : "Macros should return 'true', 'false', 'undefined' (skip) or an array thereof [Parameters: speaker, actor, token, scene, region, behavior, event]"
+			},
+			
+			"conditionalScript" : {
+				"name" : "Script",
+				"hint" : "The script should return 'true', 'false', 'undefined' (skip) or an array thereof [Parameters: actor, token, scene, region, behavior, event]"
+			},
+			
+			"changeItemDocuments" : {
+				"name" : "Items",
+				"hint" : "Items to be changed in the tokens inventory" 
+			},
+			
+			"changeItemMode" : {
+				"name" : "Mode",
+				"hint" : "The way the above defined items quantity is changed",
+				"options" : {
+					"give" : "give",
+					"remove" : "remove",
+					"setto" : "set to"
+				}
+			},
+			
+			"itemQuantity" : {
+				"name" : "Quantity",
+				"hint" : "Quantity for the above defined mode"
+			},
+			
+			"deleteItemonZero" : {
+				"name" : "Delete on zero",
+				"hint" : "If the changed items should be deletet if the quantity reaches 0"
+			},
+			
+			"pingPosition" : {
+				"name" : "Ping Position",
+				"hint" : "Coordinates of the point to ping [x,y]"
+			},
+			
+			"pingColor" : {
+				"name" : "Ping Color",
+				"hint" : "Color of the ping"
+			},
+			
+			"pingDuration" : {
+				"name" : "Ping Duration",
+				"hint" : "Duration of the ping in seconds"
+			},
+			
+			"pingTokensonRegion" : {
+				"name" : "Ping Tokens on Region",
+				"hint" : "If tokens currently standing on this region should also be pinged"
+			},
+			
+			"movementTypeBlocked" : {
+				"name" : "Prevented Movement",
+				"hint" : "Movement types to prevent in this region (a GM can still move tokens using unconstrained movement)"
+			},
+
+			"blockDirectionOnly" : {
+				"name" : "Directional Block",
+				"hint" : "If only a certain direction should be blocked"
+			},
+			
+			"blockDirection" : {
+				"name" : "Block Direction",
+				"hint" : "Blocked movement direction"
+			},
+					
+			"rollTables" : {
+				"name" : "Roll Tables",
+				"hint" : "Roll tables rolled by the user when triggered"
+			},
+			
+			"triggerDelay" : {
+				"name" : "Trigger Delay",
+				"hint" : "Delay until behaviour trigger in seconds"
+			},
+			
+			"triggerBehaviours" : {
+				"name" : "To trigger",
+				"hint" : "List of Behaviours to trigger"
+			},
+			
+			"changeDoorDocuments" : {
+				"name" : "Doors",
+				"hint" : "Doors which will be changed"
+			},
+			
+			"changeDoorType" : {
+				"name" : "State Change",
+				"hint" : "State the doors will be changed to/ the way the state will be changed",
+				"options" : {
+					"lock" : "locked",
+					"unlock" : "unlocked (but closed)",
+					"open" : "open",
+					"togglelock" : "Change lock",
+					"toggleopen" : "Change closed/open"
+				}
+			},
+			
+			"changeWallDocuments" : {
+				"name" : "Walls",
+				"hint" : "Walls that will be changed"
+			},
+			
+			"wallChangemove" : {
+				"name" : "Movement",
+				"hint" : ""
+			},
+			
+			"wallChangelight" : {
+				"name" : "Light",
+				"hint" : ""
+			},
+			
+			"wallChangesight" : {
+				"name" : "Sight",
+				"hint" : ""
+			},
+			
+			"wallChangesound" : {
+				"name" : "Sound",
+				"hint" : ""
+			},
+			
+			"wallChangePTA" : {
+				"name" : "Proximity Threshold Attenuation",
+				"hint" : "Just try it, thats easier than explaining what this does"
+			},
+			
+			"movementModus" : {
+				"name" : "Movement Modus",
+				"hint" : "The way the triggered movement is defined",
+				"options" : {
+					"relative" : "Relative to Token",
+					"fromCenter" : "Relative to Region"
+				}
+			},
+			
+			"movementDirection" : {
+				"name" : "Direction",
+				"hint" : "Direction the triggering token is moved to"
+			},
+			
+			"movementDistance" : {
+				"name" : "Distance",
+				"hint" : "Distance the triggering token is moved"
+			},
+			
+			"movementType" : {
+				"name" : "Movement Type",
+				"hint" : "The movement type used ofr the triggered movement",
+				"options" : {
+					"RBAcurrentMovement" : "current Movement"
+				}
+			},
+			
+			"onlySpawnActiveUsers" : {
+				"name" : "Only active players",
+				"hint" : "If only characters of currently active users should be spawned"
+			},
+			
+			"onlyActiveScene" : {
+				"name" : "Only active scene",
+				"hint" : "If characters are only spawned if this scene is active"
+			},
+			
+			"soundSource" : {
+				"name" : "Sound source",
+				"hint" : "Sound file to be played when triggered"
+			},
+			
+			"soundPosition" : {
+				"name" : "Sound Position",
+				"hint" : "The way the sound position is determined",
+				"options" : {
+					"trigger" : "Trigger Position",
+					"custom" : "Custom Position",
+					"global" : "Global"
+				}
+			},
+			
+			"soundCustomPosition" : {
+				"name" : "Custom position",
+				"hint" : "Custom position where sound is played"
+			},
+			
+			"soundVolume" : {
+				"name" : "Sound Volume",
+				"hint" : "Volume of played sound"
+			},
+			
+			"soundRadius" : {
+				"name" : "Sound Radius",
+				"hint" : "Radius in which the sound can be heard"
+			},
+			
+			"soundEasing" : {
+				"name" : "Sound Easing",
+				"hint" : "If the sound slowly becomes more quiet with distance"
+			},
+			
+			"soundThroughWalls" : {
+				"name" : "Sound through walls",
+				"hint" : "If the sound can be heard through walls"
+			},
+			
+			"chatMessage" : {
+				"name" : "Message",
+				"hint" : "Displayed message, you can use {token} to refer to the triggering token and {tokens} to refer to the tokens in the region"
+			},
+			
+			"messageSpeaker" : {
+				"name" : "Speaker",
+				"hint" : "Token or actor displayed as speaker of this message"
+			},
+			
+			"whisperMessage" : {
+				"name" : "Whisper Message",
+				"hint" : "If this message gets whispered to the owner of the triggering token"
+			},
+			
+			"appearanceDocuments" : {
+				"name" : "Documents",
+				"hint" : "Tiles and Tokens whos appearance will be changed"
+			},
+			
+			"appearanceImageList" : {
+				"name" : "Appearances",
+				"hint" : "List of appearances, when triggered the next appearance inthe list will be chosen for each document"
+			},
+			
+			"loopAppearance" : {
+				"name" : "Loop Appearance",
+				"hint" : "If the list should start at the top after reaching the last entry"
+			}
+		},
+		
+		"Settings" : {
+			"RBAteleportToken" : {
+				"active" : {
+					"name" : "Adjust Teleport Token behaviour",
+					"hint" : "If the teleport token behaviour should be modified (custom teleport target without region)"
+				}
+			},
+			
+			"RBAchangeLevel" : {
+				"active" : {
+					"name" : "Adjust Change Level behaviour",
+					"hint" : "If the change level behaviour should be modified (skip dialog, continue movement, custom level choice, exclude movement type)"
+				},
+				
+				"autoSkipConfirmDialogue_default" : {
+					"name" : "Skip Change Level dialog by default",
+					"hint" : "If the change level dialog confirmation should be skipped by default if only one valid target level is available"
+				},
+				
+				"continueMovement_default" : {
+					"name" : "Change Level continue Movement by default",
+					"hint" : "If the movement should continue after changing levels by default"
+				}
+			}
+		}
+	},
+	
+	"TYPES" : {
+		"RegionBehavior" : {
+			"regionba" : {
+				"changeCombatant" : "[RBA] Add Combatants",
+				"changeItem" : "[RBA] Give/Take Item",
+				"changeMovement" : "[RBA] Change Movement Type",
+				"changeVisibility" : "[RBA] Change Visibility",
+				"conditionalTrigger" : "[RBA] Conditional Trigger",
+				"ping" : "[RBA] Ping",
+				"rollTable" : "[RBA] Roll Table",
+				"stopMovement" : "[RBA] Prevent Movement",
+				"delayTrigger" : "[RBA] Delay Trigger",
+				"changeDoorState" : "[RBA] Change Door State",
+				"changeWall" : "[RBA] Change Wall",
+				"moveToken" : "[RBA] Move Token",
+				"spawnPlayers" : "[RBA] Spawn Player Characters",
+				"playSound" : "[RBA] Play Sound",
+				"postChatMessage" : "[RBA] Chat Message",
+				"changeAppearance" : "[RBA] Change Appearance"
+			}
+		}
+	},
+	
+	"WALL" : {
+		"SenseTypes" : {
+			"RBAunchanged" : "Unchanged"
+		}
+	}
+}

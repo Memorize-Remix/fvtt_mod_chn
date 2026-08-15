@@ -1,0 +1,61 @@
+
+  "dorman-lakelys-npc-generator": {
+    "settings": {
+      "enableExistentialThemes": {
+        "name": "启用深层存在主义主题",
+        "hint": "启用后，NPC将具有更深刻的存在主义危机和哲学深度。"
+      },
+      "includeContradictions": {
+        "name": "包含个人矛盾",
+        "hint": "启用后，NPC将具有内在矛盾，使其更加复杂。"
+      },
+      "philosophicalComplexity": {
+        "name": "哲学复杂度等级",
+        "hint": "控制生成NPC中哲学主题的深度。"
+      }
+    },
+    "ui": {
+      "generateButton": "NPC生成器",
+      "dialogTitle": "Dorman Lakely's NPC Generator",
+      "createActor": "创建角色",
+      "regenerate": "重新生成",
+      "close": "关闭",
+      "npcCreated": "已创建NPC：{name}",
+      "npcCreationError": "创建NPC失败",
+      "generatePortrait": "生成立绘（$0.04）",
+      "generatingPortrait": "正在生成立绘...这将花费约$0.04，可能需要15-30秒。",
+      "downloadingPortrait": "正在下载并保存立绘...",
+      "portraitGenerated": "立绘已生成并保存至：{path}",
+      "portraitGenerationFailed": "生成立绘失败：{error}",
+      "portraitSaveFailed": "保存立绘到本地文件系统失败",
+      "debugFill": "随机填充（调试）"
+    },
+    "fields": {
+      "name": "姓名",
+      "age": "年龄",
+      "occupation": "职业",
+      "existentialCrisis": "存在主义危机",
+      "philosophy": "哲学观",
+      "motivation": "动机",
+      "fear": "恐惧",
+      "hope": "希望",
+      "contradiction": "矛盾",
+      "backstory": "背景故事"
+    }
+  },
+  "NPCGEN": {
+    "CRComparisonIntro": "CR计算器分析了{name}，发现与目标CR存在差异。",
+    "TargetCR": "目标CR",
+    "TargetCRDesc": "生成此NPC时你希望的CR",
+    "CalculatedCR": "计算CR",
+    "CalculatedCRDesc": "基于实际属性、装备和能力，此NPC的CR为",
+    "CRLevels": "CR",
+    "CRBreakdown": "CR细分",
+    "DefensiveCR": "防御CR",
+    "OffensiveCR": "攻击CR",
+    "CRComparisonHelp": "防御CR基于生命值、护甲等级、抗性和防御能力。攻击CR基于伤害输出和攻击加值。",
+    "UseCalculatedCR": "使用计算CR",
+    "KeepTargetCR": "保持目标CR",
+    "Cancel": "取消"
+  }
+}

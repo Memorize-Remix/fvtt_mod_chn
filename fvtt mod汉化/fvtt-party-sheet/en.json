@@ -1,0 +1,107 @@
+{
+  "fvtt-party-sheet": {
+    "party-sheet": {
+      "assigned-only": "Hide All Unassigned Actors",
+      "assigned-only-tooltip": "Hide any actor not assigned to a player.",
+      "invalid-template": "The template you are using is invalid. <br/> Please check the template and try again.",
+      "no-players": "No players are currently logged in.",
+      "no-systems": "You do not have any json files for this system in your data/partysheets folder. Please add some to enable this feature.",
+      "bugreport": "File a Bug Report",
+      "feedback": "Send Feedback",
+      "discord": "Discord"
+    },
+    "preview-mode": {
+      "active": "Preview Mode Active",
+      "active-tooltip": "You are currently previewing a template from the Template Editor. Close the Template Editor to return to normal view."
+    },
+    "hide-sheet": {
+      "button": "Configure Hidden Actors",
+      "hint": "Edit which actors are displayed if not showing online actors.",
+      "hide-all": "Hide All",
+      "tooltip": "Select Actors To Hide"
+    },
+    "settings": {
+      "refresh-rate": {
+        "name": "Refresh Rate",
+        "hint": "How often the group sheet is refreshed in seconds. A lower value may cause performance issues. Default (off) is 0."
+      },
+      "enable-minimal-view": {
+        "name": "Hide Support Buttons",
+        "hint": "Hide the buttons for bug reports and feedback."
+      },
+      "enable-only-online": {
+        "name": "Show only online actors",
+        "hint": "Only show actors assigned to logged in players. Turning this off will show all non-NPC actors but allow you to 'hide' the ones you don't care about."
+      },
+      "enable-dark-mode": {
+        "name": "Enable Dark Mode",
+        "hint": "Enable dark mode for the party sheet."
+      },
+      "show-debug-info": {
+        "name": "Show Debug Information",
+        "hint": "Enable this to show debug information in the console for all parsed actors when the party sheet is opened. Hopefully this will allow you to track down specific properties that you are trying to parse."
+      },
+      "show-template-status-form": {
+        "name": "Show Template Status Form",
+        "hint": "This will show you which templates are out of date, which have newer systems installed, and which have no version information."
+      },
+      "show-version-notifications": {
+        "name": "Show Template Update Notifications",
+        "hint": "Display notification banners when installed templates have newer versions available in the module's example templates."
+      }
+    },
+    "template-status": {
+      "template-status": "Template Status",
+      "by": "by",
+      "out-of-date": "The following templates are out of date",
+      "current-version": "Current Version",
+      "module-version": "Module Version",
+      "newer-required-system": "The following templates need newer systems installed",
+      "older-required-system": "The following templates need older systems installed",
+      "no-version-information": "The following templates have no version information",
+      "no-system-information": "The following templates have no system information",
+      "current-system-version": "Current System Version",
+      "required-system-version": "Required System Version",
+      "maximum-system-version": "Maximum System Version"
+    },
+    "notifications": {
+      "template-update-available": "Template updates available! {count} installed template(s) have newer versions available. Check the Template Status dialog or use the Installer to update."
+    },
+    "template-editor": {
+      "new": "New",
+      "new-tooltip": "New Template",
+      "load": "Load",
+      "load-tooltip": "Load Template",
+      "save": "Save",
+      "save-tooltip": "Copy Template to Clipboard",
+      "validate": "Validate",
+      "validate-tooltip": "Validate JSON",
+      "format": "Format",
+      "format-tooltip": "Format JSON",
+      "close-tooltip": "Close Editor",
+      "metadata": "Template Metadata",
+      "name-placeholder": "Template name...",
+      "author-placeholder": "Author name...",
+      "system": "System",
+      "json-editor": "JSON Editor",
+      "save-warnings": "This data is temporary. Use the Save button to copy the template to your clipboard before closing.",
+      "ready": "Ready"
+    },
+    "template": "Template",
+    "close": "Close",
+    "install": "Install",
+    "reinstall": "Reinstall",
+    "installer": "Installer",
+    "update": "Update",
+    "template-name": "Name",
+    "preview": "Preview",
+    "author": "Author",
+    "version": "Version",
+    "section-title": "Party Sheet",
+    "show-section-title": "Show Party Sheet",
+    "section-title-tooltip": "Show the Party Sheet",
+    "template-installed-version": "Installed Version",
+    "template-system-version": "Min System Version",
+    "template-max-system-version": "Max System Version"
+  }
+}

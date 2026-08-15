@@ -1,0 +1,67 @@
+
+    "statuscounter": {
+        "rebindNumberKeys": {
+            "name": "重新绑定数字键",
+            "hint": "当悬停在状态标记上时，覆盖默认的数字键分配以设置堆叠数量。"
+        },
+        "rebindMouseButtons": {
+            "name": "重新绑定鼠标按键",
+            "hint": "覆盖默认的鼠标按键行为，使用左键点击增加堆叠数量，右键点击减少堆叠数量。状态覆盖叠加可以通过Shift + 左键点击设置。特定堆叠数量可以通过Alt + 左键点击设置。"
+        },
+        "multiSelect": {
+            "name": "修改所有选中的Token",
+            "hint": "调整所有选中Token的效果和计数器。"
+        },
+        "displayOne": {
+            "name": "显示'1'",
+            "hint": "配置何时/是否应显示单个堆叠的计数器。",
+            "always": "总是",
+            "countdown": "倒计时",
+            "never": "从不"
+        },
+        "counterFontSize": {
+            "name": "计数器字体大小",
+            "hint": "状态计数器的字体大小。"
+        },
+        "counterColor": {
+            "name": "计数器颜色",
+            "hint": "状态计数器的颜色，格式为RRGGBB。"
+        },
+        "countdownColor": {
+            "name": "倒计时颜色",
+            "hint": "战斗倒计时的颜色，格式为RRGGBB。"
+        },
+        "counterDefaults": {
+            "name": "重置默认",
+            "hint": "打开对话框以重置一个或多个状态效果的默认配置。",
+            "reset": "重置选中的效果",
+            "none": "没有配置默认值。"
+        },
+        "config": {
+            "title": "计数器配置",
+            "value": "数量",
+            "type": {
+                "name": "类型",
+                "default": "简单"
+            },
+            "durationType": {
+                "name": "持续时间",
+                "hint": "确定效果的剩余时间如何显示。",
+                "none": "无",
+                "round": "轮",
+                "turn": "回合"
+            },
+            "localEffect": "本地效果{name}无法配置。",
+            "modifyDuration": {
+                "name": "修改持续时间",
+                "hint": "Token的鼠标和键盘输入会改变持续时间（而不是数量）。"
+            },
+            "multiplyEffect": {
+                "name": "增强效果",
+                "hint": "将效果的修改与计数器的数量相乘。这仅适用于加法和乘法修饰符。"
+            },
+            "save": "保存",
+            "saveDefault": "保存为{status}的默认值"
+        }
+    }
+}

@@ -1,0 +1,59 @@
+
+  "illandril-third-pact": {
+    "progression": {
+      "leveled": {
+        "Quarter": "(illandril) 1/4施法者",
+        "TwoThirds": "(illandril) 2/3施法者",
+        "ThreeQuarters": "(illandril) 3/4施法者"
+      },
+      "pact": {
+        "PactQuarter": "(illandril) 1/4施法者（契约魔法）",
+        "_thirdpact": "(illandril) 1/3施法者（契约魔法）",
+        "PactHalf": "(illandril) 半施法者（契约魔法）",
+        "PactTwoThirds": "(illandril) 2/3施法者（契约魔法）",
+        "PactThreeQuarters": "(illandril) 3/4施法者（契约魔法）"
+      }
+    },
+    "setting": {
+      "debug": {
+        "label": "调试模式",
+        "hint": "除非Illandril特别要求启用，否则请保持禁用（否则会降低运行速度）。"
+      },
+      "rounding": {
+        "choice": {
+          "standard": "标准舍入",
+          "up": "始终向上进位",
+          "down": "始终向下舍入",
+          "downMin1": "向下舍入，最小为1"
+        }
+      },
+      "pactRoundingMode": {
+        "label": "契约舍入模式",
+        "hint": "标准舍入：与其他契约施法职业多职业时向下舍入，否则向上舍入。"
+      },
+      "leveledRoundingMode": {
+        "label": "等级施法舍入模式",
+        "hint": "标准舍入：与其他等级施法职业多职业时向下舍入，否则向上舍入。系统舍入：让dnd5e系统决定舍入方式（可能与'标准舍入'相同）",
+        "choice": {
+          "system": "系统舍入"
+        }
+      },
+      "illandril_custompact_a.label": "(illandril) 自定义契约施法者A",
+      "illandril_custompact_b.label": "(illandril) 自定义契约施法者B",
+      "illandril_custompact_c.label": "(illandril) 自定义契约施法者C",
+      "hitDice-d20.label": "生命骰：包含d20",
+      "menu": {
+        "customPacts": {
+          "name": "自定义契约施法者进度",
+          "label": "配置",
+          "hint": "配置自定义契约施法者的法术进度设置。注意：自定义契约施法职业与其他契约施法职业多职业时无法正确计算。",
+          "title": "自定义契约施法者进度",
+          "classLevel": "职业等级",
+          "slots": "法术位",
+          "spellLevel": "法术环阶",
+          "save": "保存更改"
+        }
+      }
+    }
+  }
+}

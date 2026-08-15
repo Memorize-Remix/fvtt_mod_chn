@@ -1,0 +1,190 @@
+
+  "MINIMAP": {
+    "CONTEXTMENU": {
+      "FIT": "适应视图",
+      "HIDE": "隐藏小地图",
+      "LOCKGM": "锁定到GM视图",
+      "SETTINGS": "小地图设置",
+      "SYNCHRONIZE": "同步其他玩家",
+      "UNLOCKGM": "从GM视图解锁",
+      "VIEWACTOR": "查看 {name}",
+      "MARKERS": {
+        "ADD": "添加地图标记",
+        "EDIT": "编辑地图标记",
+        "REMOVE": "移除地图标记",
+        "CLEAR": "清除地图标记"
+      }
+    },
+    "TITLE": "小地图",
+    "ERRORS": {
+      "CONTEXTMENUELEMENTNOTFOUND": "未找到右键菜单的容器元素",
+      "FILENOTFOUND": "文件未找到: {file}",
+      "NOFILE": "未加载文件",
+      "NOTINITIALIZED": "渲染器未初始化",
+      "SOCKETNOTINITIALIZED": "Websocket未初始化"
+    },
+    "KEYBINDINGS": {
+      "TOGGLE": "切换小地图"
+    },
+    "MARKERS": {
+      "CLEAR": {
+        "MESSAGE": "确定要移除所有地图标记吗？\n此操作无法撤销。",
+        "TITLE": "移除所有地图标记"
+      },
+      "CREATE": "创建地图标记",
+      "DROPSHADOW": {
+        "HINT": "",
+        "NAME": "投影"
+      },
+      "EDIT": "编辑地图标记",
+      "ICON": {
+        "NAME": "图标"
+      },
+      "LABEL": {
+        "HINT": "",
+        "NAME": "标签"
+      },
+      "LABELALIGN": {
+        "BOTTOM": "底部",
+        "HINT": "",
+        "NAME": "标签对齐",
+        "TOP": "顶部"
+      },
+      "REMOVE": {
+        "MESSAGE": "确定要移除此地图标记吗？\n此操作无法撤销。",
+        "TITLE": "移除地图标记"
+      },
+      "SHOWLABEL": {
+        "HINT": "",
+        "NAME": "显示标签"
+      },
+      "TINT": {
+        "HINT": "",
+        "NAME": "色调"
+      },
+      "X": "X坐标",
+      "Y": "Y坐标"
+    },
+    "NOTECONFIG": {
+      "SHOW": "在小地图上显示",
+      "SHOWBG": "显示背景",
+      "SHOWLABEL": "显示标签"
+    },
+    "SCENECONFIG": {
+      "OVERRIDE": {
+        "NAME": "覆盖全局设置",
+        "HINT": "如果启用，小地图将使用这些设置而不是全局设置。"
+      }
+    },
+    "SETTINGS": {
+      "ANTIALIASING": {
+        "HINT": "启用此选项时，小地图上绘制的物品在缩放时不会进行抗锯齿处理，使它们看起来更清晰。",
+        "NAME": "禁用抗锯齿"
+      },
+      "BGCOLOR": {
+        "HINT": "小地图使用的背景颜色",
+        "NAME": "背景颜色"
+      },
+      "ENABLE": {
+        "HINT": "如果启用，将启用小地图。",
+        "NAME": "启用小地图"
+      },
+      "LOCKGMVIEW": {
+        "HINT": "如果启用，将强制玩家的视图与GM的视图匹配。",
+        "NAME": "锁定到GM视图"
+      },
+      "MARKERS": {
+        "BUTTON": "配置地图标记",
+        "CLEAR": "移除所有标记",
+        "EDIT": "编辑地图标记",
+        "EXPORT": "导出地图标记",
+        "HINT": "配置地图标记",
+        "IMPORT": "导入地图标记",
+        "NAME": "地图标记",
+        "REMOVE": "移除地图标记"
+      },
+      "MASK": {
+        "HINT": "用作小地图形状遮罩的图像。",
+        "NAME": "图像遮罩"
+      },
+      "MODE": {
+        "NAME": "小地图图像模式"
+      },
+      "OVERLAY": {
+        "BORDERS": "边框",
+        "BOTTOM": "底部",
+        "BUTTON": "配置覆盖层",
+        "HINT": "覆盖在小地图顶部的图像。",
+        "LEFT": "左侧",
+        "NAME": "小地图覆盖层",
+        "RIGHT": "右侧",
+        "SHOW": "显示覆盖层",
+        "TOP": "顶部"
+      },
+      "PADDING": {
+        "HINT": "距离画布边缘的空间，以像素为单位。",
+        "NAME": "内边距",
+        "X": "X轴",
+        "Y": "Y轴"
+      },
+      "POSITION": {
+        "BOTTOMLEFT": "左下角",
+        "BOTTOMRIGHT": "右下角",
+        "HINT": "小地图的相对屏幕位置。",
+        "NAME": "小地图位置",
+        "TOPLEFT": "左上角",
+        "TOPRIGHT": "右上角"
+      },
+      "RESETOVERRIDES": {
+        "HINT": "将此场景的覆盖设置重置为全局默认值。",
+        "NAME": "重置为默认值"
+      },
+      "SHAPE": {
+        "CIRCLE": "圆形",
+        "DIAMOND": "菱形",
+        "HINT": "小地图的形状",
+        "MASK": "图像遮罩",
+        "NAME": "小地图形状",
+        "RECTANGLE": "矩形"
+      },
+      "SHOW": {
+        "HINT": "显示或隐藏小地图。",
+        "NAME": "切换小地图"
+      },
+      "SHOWDARKNESS": {
+        "HINT": "如果启用，将为场景类型的小地图显示一般黑暗级别。",
+        "NAME": "显示黑暗"
+      },
+      "SHOWDRAWINGS": {
+        "HINT": "如果启用，将为场景类型的小地图显示绘图。",
+        "NAME": "显示绘图"
+      },
+      "SHOWGRID": {
+        "HINT": "如果启用，将为场景类型的小地图显示网格。",
+        "NAME": "显示场景网格"
+      },
+	  "CANVAS": {
+        "NAME": "画布",
+        "HINT": ""
+      },
+      "SHOWNOTES": {
+        "HINT": "如果启用，将为场景类型的小地图显示地图注释。",
+        "NAME": "显示地图注释"
+      },
+      "SHOWWEATHER": {
+        "HINT": "如果启用，将为场景类型的小地图显示天气效果。",
+        "NAME": "显示天气效果"
+      },
+      "UNLOCKPLAYERS": {
+        "NAME": "允许玩家平移/缩放小地图"
+      }
+    }
+  },
+  "SCENE": {
+    "TABS": {
+      "SHEET": {
+        "micromap": "小地图"
+      }
+    }
+  }
+}

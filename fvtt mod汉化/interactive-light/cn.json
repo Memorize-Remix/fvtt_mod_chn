@@ -1,0 +1,54 @@
+
+    "INTERACTIVE_LIGHT": {
+        "Config": {
+            "Enabled": {
+                "Label": "交互式光源",
+                "Hint": "指示玩家是否可以开关此光源。"
+            },
+            "Path": {
+                "Label": "图标",
+                "Hint": "用作光源图标的纹理。"
+            },
+            "ClickOptions": {
+                "Label": "点击处理方式",
+                "Options": {
+                    "Single": "单击",
+                    "Double": "双击"
+                },
+                "Hint": "配置光源如何响应点击。默认为双击。"
+            },
+            "Prefab": {
+                "Name": {
+                    "Label": "预设名称",
+                    "Hint": "用于搜索的预设名称"
+                },
+                "Tags": {
+                    "Hint": "用于预设分类和搜索的标签"
+                }
+            },
+            "InteractiveSettingsLegend": "交互性",
+            "PrefabSettingsLegend": "预设",
+            "TabName": "交互式光源",
+            "MakePrefabButton": "保存并创建预设"
+        },
+        "Menu": {
+            "Prefabs": {
+                "Label": "预设",
+                "Hint": "交互式光源的预设",
+                "Name": "交互式光源预设",
+                "Browser": {
+                    "Title": "光源预设库",
+                    "Footer": {
+                        "Hint": {
+                            "Rotate": "Shift/Alt + 滚轮 — 旋转预设预览",
+                            "Place": "点击 — 放置预设"
+                        }
+                    }
+                }
+            }
+        },
+        "Multiselect": {
+            "Add": "按 Enter 键添加新标签"
+        }
+    }
+}

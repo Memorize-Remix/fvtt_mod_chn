@@ -1,0 +1,49 @@
+
+    "UiExtender": {
+        "RegistrationConfig": {
+            "Title": "注册配置",
+            "Hud": "HUD",
+            "SceneControls": "场景控件",
+            "Directories": "目录",
+            "HudButton": {
+                "ModuleIdLabel": "模组ID",
+                "HudTypeLabel": "HUD类型",
+                "TooltipLabel": "提示",
+                "ActionLabel": "操作",
+                "IconLabel": "图标",
+                "LocationLabel": "位置",
+                "PredicateLabel": "有条件判断",
+                "HandlersLabel": "事件处理",
+                "NoHudButtons": "模组 {moduleId} 未注册任何HUD按钮"
+            },
+            "SceneControl": {
+                "ModuleIdLabel": "模组ID",
+                "NameLabel": "控件名称",
+                "PredicateLabel": "有条件判断",
+                "ToolLabel": "工具名称",
+                "ToolOrderLabel": "工具顺序",
+                "ToolTitleLabel": "工具标题",
+                "ToolIconLabel": "工具图标",
+                "ToolPropertiesLabel": "工具属性",
+                "ToolclipLabel": "工具剪辑标题",
+                "NoSceneControls": "模组 {moduleId} 未注册任何场景控件"
+            },
+            "Directory": {
+                "ModuleIdLabel": "模组ID",
+                "IdLabel": "目录ID",
+                "TooltipLabel": "提示文本",
+                "IconLabel": "图标",
+                "DocumentNameLabel": "文档名称",
+                "OrderLabel": "排序",
+                "ApplicationClassLabel": "应用类",
+                "NoDirectories": "模组 {moduleId} 未注册任何目录"
+            }
+        },
+        "Settings": {
+            "RegistrationConfig": {
+                "Name": "注册信息",
+                "Hint": "查看已注册UI组件的详细信息"
+            }
+        }
+    }
+}

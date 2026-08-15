@@ -1,0 +1,180 @@
+
+  "enhanced-region-behavior": {
+    "regionClickedLabel": "区域被点击",
+    "Settings": {
+      "globalOnClickName": "在所有区域行为上启用onClick事件",
+      "globalOnClickHint": "启用此选项将允许为所有区域行为选择onClick事件。某些行为在启用此事件时可能会中断，请谨慎使用。"
+    },
+    "Regions": {
+      "Trap": {
+        "FIELDS": {
+          "saveDC": {
+            "label": "DC",
+            "hint": "豁免检定/属性检定的DC"
+          },
+          "saveAbility": {
+            "label": "豁免属性",
+            "hint": "用于对抗陷阱伤害的豁免检定的属性。优先于技能检定。"
+          },
+          "skillChecks": {
+            "label": "技能检定",
+            "hint": "触发陷阱时执行的技能检定。用户将能够选择使用哪个技能。"
+          },
+          "damage": {
+            "label": "伤害",
+            "hint": "陷阱触发时造成的伤害。"
+          },
+          "savedDamage": {
+            "label": "豁免成功伤害",
+            "hint": "豁免检定成功时陷阱造成的伤害。"
+          },
+          "damageType": {
+            "label": "伤害类型",
+            "hint": "陷阱造成的伤害类型（例如，火焰、寒冷、强酸）。"
+          },
+          "saveFailedMessage": {
+            "label": "豁免失败消息",
+            "hint": "豁免检定失败时显示的消息。"
+          },
+          "saveSucceededMessage": {
+            "label": "豁免成功消息",
+            "hint": "豁免检定成功时显示的消息。"
+          },
+          "automateDamage": {
+            "label": "自动化伤害",
+            "hint": "如果启用，陷阱将在触发时自动应用伤害。"
+          },
+          "triggerBehaviorOnSave": {
+            "label": "豁免成功时触发行为",
+            "hint": "如果设置，这些行为将在豁免检定成功时触发。"
+          },
+          "triggerBehaviorOnFail": {
+            "label": "豁免失败时触发行为",
+            "hint": "如果设置，这些行为将在豁免检定失败时触发。"
+          }
+        },
+        "TrapDialogTitle": "陷阱",
+        "TrapSaveAbilityContent": "选择使用哪个属性进行豁免",
+        "TrapSkillCheckContent": "选择使用哪个技能进行检定",
+        "TrapDamageMessage": "{name}触发了陷阱，受到了{damage}点{type}伤害！",
+        "TrapAvoidedMessage": "{name}躲过了陷阱，受到了减少的{damage}点{type}伤害！",
+        "TrapSavingThrowMessage": "豁免检定",
+        "TrapDamageRollMessage": "陷阱伤害掷骰"
+      },
+      "Music": {
+        "FIELDS": {
+          "playlistName": {
+            "label": "播放列表名称",
+            "hint": "在其中查找歌曲的音乐播放列表名称。"
+          },
+          "songNames": {
+            "label": "歌曲名称",
+            "hint": "要播放的歌曲名称的逗号分隔列表。"
+          },
+          "playAll": {
+            "label": "播放所有歌曲",
+            "hint": "如果启用，所有歌曲将同时播放。"
+          },
+          "stop": {
+            "label": "停止当前音乐",
+            "hint": "如果启用，在开始新音乐之前将停止所有当前播放的音乐。"
+          },
+          "playPlaylist": {
+            "label": "播放完整播放列表",
+            "hint": "如果启用，将播放完整播放列表而不是歌曲。"
+          }
+        }
+      },
+      "SoundEffect": {
+        "FIELDS": {
+          "volume": {
+            "label": "音量",
+            "hint": "音效的音量级别（0-1）。"
+          },
+          "soundPath": {
+            "label": "音效文件路径",
+            "hint": "要播放的音效文件或动画效果的路径。"
+          }
+        }
+      },
+      "VisualEffect": {
+        "FIELDS": {
+          "imagePath": {
+            "label": "特效名称",
+            "hint": "要播放的视觉特效的名称，或图像文件的路径。"
+          },
+          "duration": {
+            "label": "持续时间",
+            "hint": "视觉特效的持续时间（秒）（设置为0以播放完整持续时间）。"
+          },
+          "scale": {
+            "label": "缩放",
+            "hint": "视觉特效的缩放因子（1.0为正常大小）。"
+          },
+          "infinite": {
+            "label": "无限持续时间",
+            "hint": "如果启用，视觉特效将无限期播放（通过行为停用停止）。"
+          },
+          "belowTokens": {
+            "label": "在Token下方",
+            "hint": "如果启用，视觉特效将显示在Token下方。"
+          },
+          "playAtTokenLocation": {
+            "label": "在Token位置播放",
+            "hint": "如果启用，视觉特效将在触发它的Token位置播放。"
+          }
+        }
+      },
+      "Elevation": {
+        "FIELDS": {
+          "elevation": {
+            "label": "高度",
+            "hint": "为进入此区域的Token设置的高度。"
+          }
+        }
+      },
+      "Journal": {
+        "FIELDS": {
+          "journalId": {
+            "label": "日志ID",
+            "hint": "要打开的日志条目的唯一ID。如果同时提供，优先于日志名称。"
+          },
+          "journalName": {
+            "label": "日志名称",
+            "hint": "要打开的日志条目的名称。如果未提供日志ID，则使用此名称。"
+          },
+          "journalPageId": {
+            "label": "日志页面ID",
+            "hint": "要显示的特定页面ID（可选）。优先于日志名称和日志ID。"
+          },
+          "showToAll": {
+            "label": "向所有玩家显示",
+            "hint": "如果启用，日志条目将显示给所有玩家。否则，仅显示给触发玩家或Token所有者。"
+          }
+        },
+        "MigrationError": "journalPageId的迁移失败。请在打开日志行为设置中重置页面ID。"
+      },
+      "TriggerAction": {
+        "FIELDS": {
+          "itemId": {
+            "label": "物品ID",
+            "hint": "要触发的物品的唯一ID。（从你想要使用物品的Token拖动）"
+          }
+        }
+      }
+    }
+  },
+  "TYPES": {
+    "RegionBehavior": {
+      "enhanced-region-behavior": {
+        "Trap": "陷阱",
+        "Music": "音乐",
+        "SoundEffect": "音效",
+        "VisualEffect": "视觉特效",
+        "Elevation": "高度",
+        "Journal": "打开日志",
+        "TriggerAction": "触发动作"
+      }
+    }
+  }
+}

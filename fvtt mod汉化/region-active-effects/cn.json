@@ -1,0 +1,56 @@
+
+  "TYPES.RegionBehavior": {
+    "region-active-effects.statusEffect": "状态效果",
+    "region-active-effects.statusEffectEvents": "状态效果事件",
+    "region-active-effects.activeEffect": "主动效果",
+    "region-active-effects.activeEffectEvents": "主动效果事件"
+  },
+  "TYPES.RegionBehavior.pf2e": {
+    "region-active-effects.statusEffect": "状态",
+    "region-active-effects.statusEffectEvents": "状态事件",
+    "region-active-effects.activeEffect": "效果",
+    "region-active-effects.activeEffectEvents": "效果事件"
+  },
+  "RAE.ACTIONS": {
+    "add.label": "添加",
+    "resetDuration.label": "重置持续时间",
+    "enable.label": "启用",
+    "disable.label": "禁用",
+    "delete.label": "删除"
+  },
+  "RAE.TYPES.statusEffect": {
+    "FIELDS.statusId.label": "状态",
+    "FIELDS.statusId.hint": "当事件发生时应用的状态效果。",
+    "FIELDS.overlay.label": "覆盖显示",
+    "FIELDS.overlay.hint": "将状态效果显示为覆盖。"
+  },
+  "RAE.TYPES.statusEffectEvents": {
+    "FIELDS.action.choices.toggle": "切换",
+    "FIELDS.action.choices.apply": "应用",
+    "FIELDS.action.choices.remove": "移除",
+    "FIELDS.action.label": "操作",
+    "FIELDS.action.hint": "对状态效果执行的操作。"
+  },
+  "RAE.TYPES.activeEffect": {
+    "FIELDS.uuid.label": "主动效果",
+    "FIELDS.uuid.hint": "当Token进入区域时使用的主动效果。",
+    "FIELDS.disable.label": "禁用效果",
+    "FIELDS.disable.hint": "离开区域时禁用主动效果，而不是删除它。"
+  },
+  "RAE.TYPES.activeEffectEvents": {
+    "FIELDS.action.label": "操作",
+    "FIELDS.action.hint": "对主动效果执行的操作。",
+    "FIELDS.uuid.label": "主动效果",
+    "FIELDS.uuid.hint": "要添加或重置持续时间的主动效果。",
+    "FIELDS.name.label": "效果名称",
+    "FIELDS.name.hint": "要启用/禁用/删除的主动效果名称。"
+  },
+  "RAE.TYPES.pf2e-effect": {
+    "FIELDS.uuid.label": "效果",
+    "FIELDS.uuid.hint": "当Token进入区域时使用的效果。"
+  },
+  "RAE.TYPES.pf2e-effectEvents": {
+    "FIELDS.action.label": "操作",
+    "FIELDS.action.hint": "对效果执行的操作。"
+  }
+}

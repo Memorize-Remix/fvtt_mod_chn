@@ -1,0 +1,43 @@
+
+    "youtube-sync": {
+        "settings": {
+            "bgColorPrimary": {
+                "name": "主背景色",
+                "hint": "背景渐变的主颜色（十六进制格式）\n默认值为: #667eea"
+            },
+            "bgColorSecondary": {
+                "name": "次背景色",
+                "hint": "背景渐变的次颜色（十六进制格式）\n默认值为: #764ba2"
+            },
+            "textColor": {
+                "name": "文字颜色",
+                "hint": "主要文字颜色（十六进制格式）\n默认值为: #ffffff"
+            },
+            "accentColor": {
+                "name": "按钮颜色",
+                "hint": "按钮和高亮颜色（十六进制格式）\n默认值为: #FF6B6B"
+            },
+            "youtube-sync.rememberVolume.name": "记住音量",
+            "youtube-sync.rememberVolume.hint": "记住上次的音量设置，并在打开新视频时恢复"
+        },
+        "dialog": {
+            "title": "YouTube 同步",
+            "urlLabel": "YouTube 视频链接",
+            "playButton": "播放",
+            "cancelButton": "取消",
+            "placeholder": "在此输入 YouTube 链接…",
+            "love": {
+                "question": "你喜欢这个插件吗？",
+                "linkKOFI": "在 Ko-fi 上请我喝杯咖啡"
+            }
+        },
+        "controls": {
+            "play": "播放",
+            "pause": "暂停",
+            "stop": "停止"
+        },
+        "errors": {
+            "invalidUrl": "无效的 YouTube 链接"
+        }
+    }
+}

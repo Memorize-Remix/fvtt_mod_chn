@@ -1,0 +1,90 @@
+
+  "KARMA": {
+    "Karma": "业力值",
+    "AdjustRoll": "已将 {oldRoll} 调整为 {newRoll}。",
+    "Settings": {
+      "KarmaDialog": {
+        "label": "打开业力值配置",
+        "hint": "配置业力值的相关设置。"
+      },
+      "showChatMessageIcon": {
+        "label": "消息图标",
+        "hint": "在因业力值而改变的聊天消息上显示图标。"
+      },
+      "controlsButton": {
+        "label": "配置按钮",
+        "hint": "在控件上添加一个按钮以打开业力值配置。你也可以通过设置快捷键来打开配置。"
+      },
+      "hideModule": {
+        "label": "对玩家隐藏模组",
+        "hint": "为非GM玩家将模组管理菜单中的模组名称替换为\"libDiceStats\"。"
+      }
+    },
+    "Form": {
+      "title": "业力值配置",
+      "enabled": "启用",
+      "recurring": "循环生效",
+      "UserPicker": {
+        "title": "谁应受业力值影响？"
+      },
+      "Configuration": "业力值配置",
+      "AllPlayers": "所有玩家",
+      "GMS": "GM",
+      "Dice": "骰子",
+      "AddNewKarma": "添加新配置",
+      "NewKarma": "新业力值",
+      "DeleteKarma": "删除业力值",
+      "Outcome": "结果",
+      "least": "至少",
+      "most": "至多",
+
+      "Type": {
+        "label": "类型",
+        "simple": "简单",
+        "average": "平均",
+        "fudge": "调整"
+      },
+      "Faces": {
+        "label": "骰子",
+        "hint": "骰子的面数。"
+      },
+      "Inequality": {
+        "label": "比较",
+        "hint": "基于给定不等式的业力值触发条件。",
+        "options": {
+          "≤": "小于或等于",
+          "<": "小于",
+          "≥": "大于或等于",
+          ">": "大于"
+        }
+      },
+      "History": {
+        "label": "历史记录",
+        "hint": {
+          "simple": "如果最近 {number} 次掷骰",
+          "average": "如果最近 {number} 次掷骰的平均值"
+        }
+      },
+      "Threshold": {
+        "label": "阈值",
+        "hint": "{term} {number}，则"
+      },
+      "Floor": {
+        "label": "目标",
+        "hint": "下一次掷骰结果将{leastMost} {number}。"
+      },
+      "Nudge": {
+        "label": "调整",
+        "hint": "下一次掷骰结果将调整 {number}。"
+      },
+      "Cumulative": {
+        "label": "累积调整",
+        "hint": "在后续掷骰中增加 {number} 的调整值，直到平均值超过阈值。"
+      },
+      "Recurring": {
+        "label": "循环生效",
+        "hint": "此调整一旦触发将不会停用。"
+      }
+    }
+  }
+}

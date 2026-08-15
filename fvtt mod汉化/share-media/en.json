@@ -1,0 +1,226 @@
+{
+  "share-media": {
+    "base": {
+      "validate": "Validate",
+      "cancel": "Cancel"
+    },
+
+    "ui.actions": {
+      "popoutAll": {
+        "label": "Popout",
+        "description": "Share media in a window"
+      },
+
+      "popoutSelection": {
+        "label": "Popout &rarr; specific users",
+        "description": "Select specific users to share with"
+      },
+
+      "fullscreenAll": {
+        "label": "Fullscreen",
+        "description": "Share media in fullscreen"
+      },
+
+      "fullscreenSelection": {
+        "label": "Fullscreen &rarr; specific users",
+        "description": "Select specific users to share with"
+      },
+
+      "sceneFit": {
+        "label": "Scene",
+        "description": "Share media to the current scene (fit)"
+      },
+
+      "sceneFill": {
+        "label": "Scene &rarr; fill",
+        "description": "Share media to the current scene (fill)"
+      }
+    },
+
+    "ui.settings": {
+      "label": "Settings",
+      "description": "Configure media settings",
+
+      "categories": {
+        "popout": "Popout",
+        "fullscreen": "Fullscreen",
+        "video": "Video"
+      },
+
+      "darkness": {
+        "label": "Darkness",
+        "description": "Apply darkness based on scene lighting"
+      },
+
+      "immersive": {
+        "label": "Immersive",
+        "description": "Hide FoundryVTT UI controls"
+      },
+	  
+	  "controls": {
+        "label": "Controls",
+        "description": "Show fullscreen controls to players"
+      },
+
+      "loop": {
+        "label": "Loop",
+        "description": "Loop video playback"
+      },
+
+      "mute": {
+        "label": "Mute",
+        "description": "Mute audio"
+      }
+    },
+
+    "ui.sidebar": {
+      "label": "Media History",
+      "loading": "Loading previous media",
+
+      "header": {
+        "link": {
+          "label": "Share link"
+        },
+
+        "clear": {
+          "label": "Clear history",
+          "description": "<strong>Are You Sure?</strong> All media within the media history log will be permanently deleted."
+        }
+      },
+
+      "gm-actions": {
+        "targetUsers.no-players": "Not shared with any players",
+        "share": "Share this again"
+      }
+    },
+
+    "layers.fullscreen": {
+      "dismiss": {
+        "label": "Dismiss"
+      },
+
+      "minimize": {
+        "label": "Minimize"
+      },
+
+      "maximize": {
+        "label": "Maximize"
+      }
+    },
+
+    "canvas.layer": {
+      "tool": {
+        "label": "Toggle Media Layer",
+        "zero": "No media shared on the current scene, share media on the scene before activating the media layer."
+      },
+
+      "tile": {
+        "label": "Share Media Configuration",
+        "enabled.label": "Share Media Tile",
+        "enabled.description": "Enable this tile as a boundary for scene media sharing.",
+        "name.label": "Tile Name",
+        "name.description": "Tile identifier to easily identify which tile you are selecting for scene sharing.",
+        "name.default": "Share Media Tile"
+      }
+    },
+
+    "shareables.selector": {
+      "entities.label": "Share this Media",
+      "entities.contextmenu": "(right-click to share the sheet media)",
+
+      "area": {
+        "label": "Area Selector",
+        "description": "Choose an area from the list. Hover to preview the area, then select your preferred area.",
+        "zero": "No Share Media areas detected.<br><br><strong><u>Region</u></strong>: you must create at least one Scene Region with <strong>at least one shape</strong> and with at least one <strong>enabled</strong> behavior type: \"{type}\" <strong>on the current scene</strong>.<br><br><strong><u>Tile</u></strong>: you must create <strong>at least one tile</strong> with Share Media enabled <strong>on the current scene</strong>."
+      },
+
+      "user": {
+        "label": "User Selector",
+        "description": "Choose one or multiple users from the list. Gamemasters always receive shared media unless they are blacklisted."
+      },
+
+      "share": {
+        "label": "Share Selector",
+        "description": "Choose how to share this media and configure the settings for your selected sharing method. Click validate when ready to share.",
+
+        "link": {
+          "label": "Media link",
+          "description": "Fill in the field with a valid media URL."
+        },
+
+        "mode": {
+          "label": "Sharing method"
+        },
+
+        "settings": {
+          "label": "{mode} settings"
+        }
+      }
+    },
+
+    "settings": {
+      "mediaSettings": {
+        "label": "Default Media Settings",
+        "name": "Configure Default Media Settings",
+        "hint": "Configure the default settings that will be applied when sharing media with players.",
+        "description": "These are default settings that will be automatically applied when sharing media. You can override these settings for each individual media if needed."
+      },
+
+      "mediaSidebarSettings": {
+        "label": "Media Sidebar Settings",
+        "name": "Configure Media Sidebar",
+        "hint": "Configure display and access settings for the media sidebar.",
+        "description": "Controls visibility and access permissions for the sidebar that displays all previously shared media. Configure whether the sidebar is enabled, restrict access to gamemasters only, and control which media sharing methods are displayed in the sidebar.",
+        "options": {
+          "general": {
+            "label": "General preferences",
+            "enabled.label": "Enable Sidebar",
+            "enabled.hint": "Enable the sidebar to display shared media history.",
+            "gmOnly.label": "Gamemasters Only",
+            "gmOnly.hint": "Only allow gamemasters to access the sidebar."
+          },
+          "layers": {
+            "label": "Media sharing methods",
+            "hint": "Select which sharing methods will be tracked in the media history and displayed in the sidebar.",
+            "popout.label": "Popout Sharing",
+            "popout.hint": "Display media shared in popout windows in the sidebar.",
+            "fullscreen.label": "Fullscreen Sharing",
+            "fullscreen.hint": "Display media shared in fullscreen mode in the sidebar.",
+            "scene.label": "Scene Sharing",
+            "scene.hint": "Display media shared to scenes in the sidebar."
+          }
+        }
+      },
+
+      "entitySharingSettings": {
+        "label": "Entity Sharing Settings",
+        "name": "Configure Entity Sharing Settings",
+        "hint": "Configure how sharing buttons and context menu entries appear for game entities.",
+        "description": "Control the display and behavior of media sharing settings for entities. Configure whether sharing options appear on tokens, as context menu entries on sheets, or both, and whether entity names are displayed as captions.",
+        "options": {
+          "sheet.label": "Sheet Context Menu",
+          "sheet.hint": "Add media sharing entries to the sheet context menu.",
+          "hud.label": "HUD Button",
+          "hud.hint": "Display media sharing buttons directly on the HUD.",
+          "caption.label": "Show Entity Caption",
+          "caption.hint": "Display the entity name alongside shared media."
+        }
+      },
+
+      "blacklistSettings": {
+        "label": "User Blacklist",
+        "name": "Configure User Blacklist",
+        "hint": "Exclude specific users from receiving shared media.",
+        "description": "Check the boxes next to users you want to exclude from receiving shared media."
+      }
+    }
+  },
+
+  "TYPES": {
+    "RegionBehavior": {
+      "share-media": {
+        "ShareRegion": "Share Media Region"
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+    "Clipboard": {
+        "App": {
+            "Name": "Clipboard",
+            "Empty": "Nothing has been copied for this layer yet",
+            "CopiedAt": "Copied at {date}",
+            "Copy": "Copy",
+            "Delete": "Delete"
+        },
+        "Keybinding": {
+            "ToggleAppName": "Toggle Clipboard App",
+            "ToggleAppHint": "Toggle the clipboard application"
+        },
+        "Settings": {
+            "MaxItems": "Max Items",
+            "MaxItemsHint": "The maximum number of items that can be copied to the clipboard at once."
+        },
+        "Labels": {
+            "Drawing": {
+                "Ellipse": "Ellipse",
+                "Rectangle": "Rectangle",
+                "Freeform": "Freeform",
+                "Polygon": "Polygon",
+                "Unknown": "Unknown"
+            },
+            "Light": {
+                "Base": "Light",
+                "Disabled": "(Disabled)",
+                "Colored": "Colored"
+            },
+            "Sound": {
+                "Unknown": "Unknown Sound",
+                "NoSound": "No Sound"
+            },
+            "Template": {
+                "Circle": "Circle Template",
+                "Cone": "Cone Template",
+                "Rectangle": "Rectangle Template",
+                "Ray": "Ray Template",
+                "Unknown": "Unknown Template"
+            },
+            "Tile": {
+                "Background": "Background",
+                "Foreground": "Foreground",
+                "Unknown": "Unknown Tile"
+            },
+            "Token": {
+                "Linked": "(Linked)",
+                "Hidden": "(Hidden)",
+                "PC": "(PC)",
+                "NPC": "(NPC)"
+            },
+            "Wall": {
+                "Door": "Door",
+                "SecretDoor": "Secret Door",
+                "BasicWall": "Basic Wall",
+                "TerrainWall": "Terrain Wall",
+                "InvisibleWall": "Invisible Wall",
+                "EtherealWall": "Ethereal Wall",
+                "WindowWall": "Window Wall",
+                "Wall": "Wall"
+            }
+        },
+        "Hints": {
+            "InScene": "In Scene {name}",
+            "Position": "Position: {x},{y}",
+			"Elevation": "Elevation: {height}",
+            "Fill": "Fill: {color} ({opacity}% opacity)",
+            "Stroke": "Stroke: {color} ({opacity}% opacity)",
+
+            "Drawing": {
+                "FillTypes": {
+                    "Solid": "Solid Fill",
+                    "Pattern": "Pattern Fill"
+                },
+                "Texture": "Texture: {texture}",
+                "StrokeWidth": "Stroke Width: {width}",
+                "SmoothFactor": "Smooth Factor: {factor}"
+            },
+            "Light": {
+                "Bright": "{distance} bright",
+                "Dim": "{distance} dim",
+                "Color": "{color} color"
+            },
+            "Note": {
+				"Unknown": "Unknown",
+                "IconSize": "Icon Size: {size}px",
+                "IconTint": "Icon Tint: {color}",
+                "Label": "Label: \"{text}\"",
+                "TextColor": "Text Color: {color}",
+                "TextSize": "Text Size: {size}px",
+                "Global": "Global"
+            },
+            "Template": {
+                "Distance": "{distance}",
+                "Angle": "{angle}° angle",
+                "Width": "{width} wide",
+                "Direction": "{angle}° dir",
+                "Border": "Border: {color}",
+                "Fill": "Fill: {color}",
+                "Texture": "Texture: {texture}"
+            },
+            "Tile": {
+                "OcclusionTypes": {
+                    "Fade": "Fade Occlusion",
+                    "Radial": "Radial Occlusion",
+                    "Vision": "Vision Occlusion"
+                },
+                "OcclusionAlpha": "Alpha: {value}%",
+                "RestrictionTypes": {
+                    "Light": "Light",
+                    "Weather": "Weather"
+                },
+                "Restricts": "Restricts: {types}",
+                "Rotation": "{rotation}° rotation",
+                "Tint": "Tint: {color}",
+                "Scale": "Scale: {x}x{y}",
+                "Opacity": "Opacity: {value}%",
+                "Size": "{width}x{height}"
+            },
+            "Token": {
+                "Disposition": {
+                    "Hostile": "Hostile",
+                    "Neutral": "Neutral",
+                    "Friendly": "Friendly"
+                },
+                "Vision": "Vision: {range}",
+                "Light": "Light: {bright}/{dim}"
+            },
+            "Sound": {
+                "Radius": "{distance} radius",
+                "Volume": "{level}% volume",
+                "WallsBlock": "Walls block",
+                "IgnoresWalls": "Ignores walls",
+                "GradualFade": "Gradual fade",
+                "NoFade": "No fade",
+                "Effect": "{type} effect"
+            },
+            "Wall": {
+                "RegularDoor": "Regular Door",
+                "SecretDoor": "Secret Door",
+                "UnknownDoor": "Unknown Door",
+                "Blocks": "Blocks: {types}",
+                "NoBlocks": "No blocks",
+                "Light": "Light",
+                "Vision": "Vision",
+                "Sound": "Sound",
+                "Movement": "Movement"
+            }
+        }
+    }
+}

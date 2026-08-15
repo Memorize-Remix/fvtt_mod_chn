@@ -1,0 +1,353 @@
+{
+  "INDYFX": {
+    "RegionBehaviorLabel": "indyFX"
+  },
+  "INDYVENTURES": {
+    "Settings": {
+      "IntegrateBastion": {
+        "Name": "Integrate with Bastion Turns",
+        "Hint": "Automatically process venture results when D&D5e bastion turn summaries are created."
+      },
+      "PostChatSummary": {
+        "Name": "Post Venture Summary Cards",
+        "Hint": "Create a venture summary chat card after each bastion turn."
+      },
+      "HideVentureHirelings": {
+        "Name": "Hide Venture Hirelings",
+        "Hint": "When enabled, venture-enabled facilities hide bastion hireling slots."
+      },
+      "DebugLogging": {
+        "Name": "Enable Debug Logging",
+        "Hint": "If enabled, the module writes debug messages to the browser console."
+      },
+      "CoveragePromptTimeoutSeconds": {
+        "Name": "Coverage Prompt Timeout (seconds)",
+        "Hint": "How long to wait for an owner response to deficit coverage prompts before auto-declining."
+      },
+      "RollPromptTimeoutSeconds": {
+        "Name": "Roll Prompt Timeout (seconds)",
+        "Hint": "How long the GM waits for delegated owner profit/loss rolls before falling back to GM roll prompts."
+      }
+    },
+    "Sheet": {
+      "Legend": "Venture Automation",
+      "Enabled": "Enable Venture",
+      "EnabledHint": "If enabled, this special facility resolves venture profit/loss each bastion turn.",
+      "VentureName": "Venture Name",
+      "ProfitDie": "Profit Die",
+      "LossDie": "Base Loss Die",
+      "LossModifier": "Loss Die Modifier",
+      "GpPerPoint": "Gold per Point (GP)",
+      "GpPerPointHint": "How much GP each profit/loss point is worth.",
+      "SuccessThreshold": "Successes to Grow",
+      "NaturalOneDegradesProfitDie": "Natural 1 Degrades Profit Die",
+      "NaturalOneDegradesProfitDieHint": "When enabled, a raw 1 on the venture profit roll lowers current profit die by one step (if possible).",
+      "AutoUseTreasuryLoss": "Auto-use Venture Treasury for Losses",
+      "AutoUseTreasuryLossHint": "When enabled, venture treasury is used automatically to cover deficits before any character funds.",
+      "AutoCoverLoss": "Auto-cover Deficits (GP)",
+      "AutoCoverLossHint": "When enabled, venture deficits are paid from the actor's GP before degradation.",
+      "Boons": "Boons",
+      "OpenBoonEditor": "Open Boon Editor",
+      "BoonsHint": "Configured boons: {count}. Format each line as Name | Cost | Description | Reward UUID (optional) | Purchases Per Bastion Turn (optional; default 1, use 'unlimited' for no cap) | Purchase Window (optional: default, loss, profit) | group=<name> (optional) | group-limit=<n> (optional).",
+      "BoonsDropHint": "Tip: drag an Item or Active Effect onto the boons field to insert an @UUID reward reference.",
+      "BoonTableTitle": "Title",
+      "BoonTableCost": "Cost",
+      "BoonTableReward": "Reward",
+      "BoonTableCount": "Count",
+      "BoonTableGroup": "Group",
+      "BoonTableWindow": "Profit",
+      "BoonTableEmpty": "No boons configured.",
+      "ActiveEffects": "Active Venture Effects",
+      "ActiveEffectsName": "Effect",
+      "ActiveEffectsSummary": "Modifier",
+      "ActiveEffectsRemaining": "Duration",
+      "ActiveEffectsStatus": "Status",
+      "ActiveEffectsApplied": "Applied",
+      "ActiveEffectsTemplate": "Template",
+      "ActiveEffectsDisabled": "disabled",
+      "ActiveEffectsEmpty": "No venture effects on this facility.",
+      "CurrentProfitDie": "Current Profit Die",
+      "SuccessStreak": "Current Success Streak",
+      "Treasury": "Venture Treasury (GP)",
+      "Failed": "Venture Failed"
+    },
+    "BoonPurchaseWhen": {
+      "Default": "Any Turn",
+      "Loss": "Loss or Break-even Only",
+      "Profit": "Profit or Break-even Only"
+    },
+    "Chat": {
+      "Title": "{actor}'s Venture Results",
+      "RollLine": "Profit: {profit} ({profitDie}) | Loss: {loss} ({lossDie})",
+      "ProfitRollBonus": "Profit bonus applied: {raw} + {bonus} = {total}",
+      "AppliedModifiers": "Applied Venture Modifiers",
+      "VentureEffectsApplied": "Venture Effects Applied",
+      "ModifierOutcomeProfitDie": "Profit die after modifiers: {base} -> {final}",
+      "ModifierOutcomeLossDie": "Loss die after modifiers: {base} -> {final}",
+      "ModifierOutcomeSuccessThreshold": "Success threshold after modifiers: {base} -> {final}",
+      "ModifierOutcomeProfitRoll": "Profit roll after modifiers: {raw} + {bonus} = {total}",
+      "ModifierImpactLabel": "Impact",
+      "ModifierImpactProfitStep": "Profit die step {step} contributed ({from} -> {to} before overrides/floors)",
+      "ModifierImpactProfitOverride": "Profit die override applied: {override} (final {final})",
+      "ModifierImpactMinProfit": "Minimum profit die floor {minimum} enforced (final {final})",
+      "ModifierImpactLossStep": "Loss die step {step} contributed ({from} -> {to} before overrides/caps)",
+      "ModifierImpactLossOverride": "Loss die override applied: {override} (final {final})",
+      "ModifierImpactMaxLoss": "Maximum loss die cap {maximum} enforced (final {final})",
+      "ModifierImpactSuccessThreshold": "Success threshold override contributed ({base} -> {effective})",
+      "ModifierImpactProfitBonus": "Profit bonus contribution {bonus} (roll {raw} -> {total} after total bonus {aggregateBonus})",
+      "ModifierTurnsTick": "{before} turns remaining, decrements to {after} after this turn",
+      "ModifierTurnsStatic": "{remaining} turns remaining (not consumed this turn)",
+      "BastionEffectsTitle": "Active Venture Effects",
+      "BastionEffectsNoTurnLimit": "no turn limit",
+      "BastionEffectsTurnsRemaining": "{turns} turns remaining",
+      "IncomeLabel": "Income",
+      "OutgoingsLabel": "Outgoings",
+      "NetLabel": "Net",
+      "NetBreakdownTooltip": "Income: {income} gp | Outgoings: {outgoings} gp",
+      "TreasuryLabel": "Treasury",
+      "NextProfitDie": "Current profit die: {die}",
+      "ProfitDieIncreased": "Profit die increased: {from} -> {to}",
+      "ProfitDieDecreased": "Profit die decreased: {from} -> {to}",
+      "NetLine": "Income: {income} gp | Outgoings: {outgoings} gp | Net: {net} gp | Treasury: {treasury} gp",
+      "ClaimTreasury": "Payout Funds to Character",
+      "Unlimited": "unlimited",
+      "BoonTurnLimit": "Purchased this turn: {purchased}/{limit}",
+      "BoonTurnLimitUnlimited": "Purchased this turn: {purchased} (no limit)",
+      "BoonGroupLimit": "Group '{group}' purchased this turn: {purchased}/{limit}",
+      "BoonGroupLimitUnlimited": "Group '{group}' purchased this turn: {purchased} (no group limit)",
+      "BoonPurchaseWindow": "Purchase Window: {mode}",
+      "BoonPurchaseWindowBlocked": "Not purchasable this turn due to purchase window ({mode}).",
+      "ExpandBoonDetails": "Expand boon details",
+      "CollapseBoonDetails": "Collapse boon details",
+      "BoonRewardLabel": "Reward on purchase:",
+      "BoonReward": "Reward on purchase: {reward}",
+      "DeficitCovered": "Remaining deficit of {character} gp was automatically covered from character funds.",
+      "DeficitCoveredManual": "{decider} chose to cover the remaining {character} gp deficit from character funds.",
+      "DeficitCoveredManualInventory": "{decider} chose to cover the remaining {character} gp deficit from character inventory funds.",
+      "DeficitSources": "Loss coverage used {treasury} gp from venture treasury and {character} gp from character funds.",
+      "DeficitDeclined": "{decider} declined to cover this venture's deficit.",
+      "DeficitTimedOut": "No response from {decider}; deficit coverage timed out.",
+      "DeficitRemaining": "{uncovered} gp of deficit remained uncovered.",
+      "DeficitInsufficient": "Insufficient character funds to cover the remaining {deficit} gp deficit.",
+      "Grew": "Venture momentum increased. Profit die improved.",
+      "Degraded": "Venture underperformed. Profit die degraded.",
+      "NaturalOneDegraded": "Natural 1 on profit roll: profit die degraded.",
+      "Failed": "The venture failed and has been disabled."
+    },
+    "BoonEditor": {
+      "Title": "Edit Venture Boons",
+      "Help": "Manage boon entries in a table. Empty names are ignored when saving. Drag an Item or Active Effect onto a Reward field to insert a UUID link, or use the wand button to generate a venture modifier Active Effect reward. Purchase Window controls when the boon can be bought; break-even qualifies as both profit and loss. Group and Group Turn Limit let multiple boons share one per-turn purchase cap.",
+      "ModifierBuilderOpen": "Build active effect reward",
+      "ModifierBuilderTitle": "Build Venture Modifier Reward",
+      "ModifierBuilderHelp": "Create an Active Effect reward for this boon. It will be stored on the facility and linked into the Reward UUID field.",
+      "ModifierBuilderCreate": "Create Reward Effect",
+      "ModifierBuilderNone": "No change",
+      "ModifierBuilderDefaultNamePrefix": "Venture Modifier",
+      "ModifierBuilderDefaultName": "Custom Venture Modifier",
+      "ModifierBuilderEffectName": "Effect Name",
+      "ModifierBuilderScope": "Scope",
+      "ModifierBuilderScopeAll": "Applies to all ventures (instead of this one)",
+      "ModifierBuilderProfitDieStep": "Profit Die Step (+/-)",
+      "ModifierBuilderProfitDieOverride": "Profit Die Override",
+      "ModifierBuilderMinProfitDie": "Minimum Profit Die",
+      "ModifierBuilderLossDieStep": "Loss Die Step (+/-)",
+      "ModifierBuilderLossDieOverride": "Loss Die Override",
+      "ModifierBuilderMaxLossDie": "Maximum Loss Die",
+      "ModifierBuilderSuccessThresholdOverride": "Successes to Grow Override",
+      "ModifierBuilderProfitRollBonus": "Profit Roll Bonus",
+      "ModifierBuilderDurationMode": "Duration Type",
+      "ModifierBuilderDurationModeStandard": "Standard (fixed turns or formula)",
+      "ModifierBuilderDurationModeNextBastionTurn": "1 Bastion Turn (expires at character's next bastion turn)",
+      "ModifierBuilderRemainingTurns": "Fixed Duration (turns)",
+      "ModifierBuilderDurationFormula": "Duration Formula (used if fixed duration empty)",
+      "ModifierBuilderConsumePerTurn": "Consume duration per bastion turn",
+      "Name": "Name",
+      "Cost": "Cost",
+      "Description": "Description",
+      "Reward": "Reward UUID",
+      "RewardPlaceholder": "@UUID[...]",
+      "Limit": "Per-Turn Limit",
+      "LimitPlaceholder": "Limit (default 1 / unlimited)",
+      "PurchaseWhen": "Purchase Window",
+      "Group": "Group",
+      "GroupPlaceholder": "Group (shared turn cap)",
+      "GroupLimit": "Group Turn Limit",
+      "GroupLimitPlaceholder": "Group limit (blank = no group cap)",
+      "GroupsTitle": "Boon Groups",
+      "GroupsHelp": "Create a group, set its per-turn limit, then drag boon chips between cards to assign or unassign them.",
+      "AddGroup": "Add Group",
+      "UngroupedTitle": "Ungrouped Boons",
+      "NoBoonsInGroup": "Drop boons here",
+      "GroupCount": "{count} groups",
+      "UnnamedBoon": "Unnamed Boon",
+      "GroupDefaultName": "Group {number}",
+      "Add": "Add Boon",
+      "Remove": "Remove Boon",
+      "Save": "Apply",
+      "Cancel": "Cancel"
+    },
+    "EffectSummary": {
+      "Label": "Venture Modifier Summary",
+      "Scope": "Scope",
+      "ScopeAll": "All ventures",
+      "ScopeThis": "This venture only",
+      "ProfitDieStep": "Profit die step",
+      "ProfitDieOverride": "Profit die override",
+      "MinProfitDie": "Minimum profit die",
+      "LossDieStep": "Loss die step",
+      "LossDieOverride": "Loss die override",
+      "MaxLossDie": "Maximum loss die",
+      "SuccessThresholdOverride": "Successes to grow",
+      "ProfitRollBonus": "Profit roll bonus",
+      "RemainingTurns": "Remaining bastion turns",
+      "DurationFormula": "Duration formula",
+      "BastionDurationNextTurn": "Duration: 1 bastion turn (expires at next bastion turn).",
+      "TemplateNote": "Template effect: this is stored on the venture and copied when a boon is purchased.",
+      "NoConsume": "Does not consume duration each bastion turn",
+      "NoChanges": "No die or bonus modifiers set."
+    },
+    "Prompt": {
+      "Title": "Cover Venture Deficit?",
+      "Content": "<p><strong>{decider}</strong>, how do you want to cover this venture loss?</p><p>Actor: <strong>{actor}</strong><br>Venture: <strong>{venture}</strong><br>Total Deficit: <strong>{deficit} gp</strong><br>Current Venture Treasury: <strong>{currentTreasury} gp</strong><br>Total Inventory Currency Value: <strong>{availableInventoryGp} gp</strong></p>",
+      "CoverFromGp": "Cover from GP",
+      "CoverFromInventory": "Cover from Inventory",
+      "CoverFromTreasury": "Cover from Treasury",
+      "CoverFromTreasuryAndActor": "Cover from Treasury + Actor",
+      "CoverFromActor": "Cover from Actor",
+      "Decline": "Do Not Cover",
+      "ClaimTitle": "Claim Venture Treasury",
+      "ClaimConfirm": "Claim GP",
+      "ClaimContent": "<p>How much GP do you want to claim from <strong>{venture}</strong>?</p><div class=\"form-group\"><label>Amount (max {maxAmount} gp)</label><div class=\"form-fields\"><input type=\"number\" name=\"amount\" min=\"1\" max=\"{maxAmount}\" step=\"1\" value=\"{maxAmount}\" /></div></div>"
+    },
+    "Errors": {
+      "GMOnly": "Only a GM can purchase venture boons.",
+      "NotEnoughTreasury": "This venture does not have enough treasury for that boon.",
+      "NoTreasury": "This venture has no treasury to claim.",
+      "NotOwner": "You must own this actor (or be GM) to manage venture treasury.",
+      "InvalidClaimAmount": "Enter a claim amount between 1 and {maxAmount} gp.",
+      "BoonDropMissingUuid": "Dropped document is missing a UUID reference.",
+      "BoonModifierNoFacility": "No facility document found for creating a modifier reward effect.",
+      "BoonModifierNoChanges": "No modifier values were set. Add at least one die or bonus change.",
+      "BoonModifierCreateFailed": "Failed to create the modifier reward effect.",
+      "BoonSaveFailed": "Failed to save boon changes to the facility.",
+      "BoonTurnLimitReached": "This boon has already reached its purchase limit for this turn ({purchased}/{limit}).",
+      "BoonGroupTurnLimitReached": "This boon's group '{group}' has reached its purchase limit for this turn ({purchased}/{limit}).",
+      "BoonPurchaseWindowBlocked": "This boon cannot be purchased this turn due to its purchase window ({mode}).",
+      "StaleVentureSummary": "This summary is from an older bastion turn. Use the latest venture summary card.",
+      "BoonDurationFormulaInvalid": "Invalid boon effect duration formula: {formula}.",
+      "BoonRewardMissing": "Boon reward not found: {reward}.",
+      "BoonRewardUnsupported": "Unsupported boon reward type '{type}' for reward '{reward}'. Use an Item or ActiveEffect UUID."
+    },
+    "Notifications": {
+      "BoonPurchased": "Purchased boon '{boon}' for {venture}.",
+      "BoonPurchasedReward": "Purchased boon '{boon}' for {venture} and granted reward '{reward}'.",
+      "BoonModifierLinked": "Linked reward effect '{effect}' to boon row.",
+      "BoonRewardUuidInserted": "Inserted boon reward UUID into the boons list.",
+      "ClaimedTreasury": "Claimed {amount} gp from {venture} to {actor}."
+    },
+    "RollPrompt": {
+      "Title": "Roll Venture Dice",
+      "Content": "<p>Please roll <strong>{rollLabel}</strong> for <strong>{facility}</strong>.</p><p>Formula: <strong>{formula}</strong></p>",
+      "Roll": "Roll",
+      "Flavor": "{rollLabel} - {facility}",
+      "Profit": "Venture Profit",
+      "Loss": "Venture Loss",
+      "Duration": "Boon Duration"
+    }
+  },
+  "dae": {
+    "fieldData": {
+      "fieldCategories": {
+        "IndyVentures": "Indy Ventures"
+      }
+    },
+    "IndyVentures": {
+      "fieldData": {
+        "flags": {
+          "indy-ventures": {
+            "ventureModifier": {
+              "enabled": {
+                "name": "Venture Modifier: Enabled",
+                "description": "If true, this venture modifier can affect venture turn processing."
+              },
+              "applyToAllVentures": {
+                "name": "Venture Modifier: Apply To All Ventures",
+                "description": "If true, this modifier applies to every venture on the actor."
+              },
+              "facilityId": {
+                "name": "Venture Modifier: Facility Scope",
+                "description": "Facility id/uuid/name this modifier targets when not applying globally."
+              },
+              "profitDieStep": {
+                "name": "Venture Modifier: Profit Die Step",
+                "description": "Shifts profit die up/down by die steps (for example +1 from d8 to d10)."
+              },
+              "profitDieOverride": {
+                "name": "Venture Modifier: Profit Die Override",
+                "description": "Forces profit die to this value (d4/d6/d8/d10/d12)."
+              },
+              "minProfitDie": {
+                "name": "Venture Modifier: Minimum Profit Die",
+                "description": "Prevents profit die from dropping below this value."
+              },
+              "lossDieStep": {
+                "name": "Venture Modifier: Loss Die Step",
+                "description": "Shifts loss die up/down by die steps."
+              },
+              "lossDieOverride": {
+                "name": "Venture Modifier: Loss Die Override",
+                "description": "Forces loss die to this value (d4/d6/d8/d10/d12)."
+              },
+              "maxLossDie": {
+                "name": "Venture Modifier: Maximum Loss Die",
+                "description": "Caps the computed loss die so it cannot be higher than this value."
+              },
+              "successThresholdOverride": {
+                "name": "Venture Modifier: Successes To Grow Override",
+                "description": "Overrides successes required for profit die growth (for example set to 1 for 'grow after one success')."
+              },
+              "profitRollBonus": {
+                "name": "Venture Modifier: Profit Roll Bonus",
+                "description": "Flat bonus added to the rolled profit result each venture turn."
+              },
+              "durationFormula": {
+                "name": "Venture Modifier: Duration Formula",
+                "description": "Roll formula used at purchase time to determine remaining bastion turns when no fixed turns are set."
+              },
+              "consumePerTurn": {
+                "name": "Venture Modifier: Consume Per Bastion Turn",
+                "description": "If true, remainingTurns decreases by 1 on each bastion turn."
+              },
+              "bastionDurationType": {
+                "name": "Venture Modifier: Special Duration Type",
+                "description": "Use 'nextBastionTurn' to make this modifier expire at the actor's next bastion turn."
+              },
+              "remainingTurns": {
+                "name": "Venture Modifier: Remaining Bastion Turns",
+                "description": "Number of bastion turns remaining before the modifier expires."
+              }
+            },
+            "bastionDuration": {
+              "expireNextTurn": {
+                "name": "Bastion Duration: Expire Next Bastion Turn",
+                "description": "Set to true to expire this non-venture Active Effect at the actor's next bastion turn."
+              },
+              "remainingTurns": {
+                "name": "Bastion Duration Remaining Turns",
+                "description": "Manual turn counter for non-venture Active Effects consumed each bastion turn."
+              },
+              "durationFormula": {
+                "name": "Bastion Duration Formula",
+                "description": "If set (and remaining turns is blank), this formula is rolled on reward grant to set remaining turns."
+              },
+              "consumePerTurn": {
+                "name": "Bastion Duration Consume Per Turn",
+                "description": "If true, non-venture Active Effect remaining turns are decremented each bastion turn."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

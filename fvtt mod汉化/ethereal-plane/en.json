@@ -1,0 +1,165 @@
+{
+	"ethereal-plane": {
+		"settings": {
+			"server-url": {
+				"Name": "Server Url",
+				"Hint": "The URL on which Ethereal Plane Server is running"
+			},
+			"enabled": {
+				"Name": "Enable Module",
+				"Hint": "If this is not checked, the module will not connect to the server"
+			},
+			"chat-commands-active": {
+				"Name": "Enable Triggers",
+				"Hint": "If this is not checked, the module will not run triggers"
+			},
+			"send-rolls-to-chat": {
+				"Name": "Send Rolls to Chat",
+				"Hint": "If this is checked, public rolls will be forwarded to stream chat"
+			},
+			"enable-chat-tab": {
+				"Name": "Chat Tab",
+				"Hint": "If this is checked, the Chat Tab will be loaded"
+			},
+			"mode": {
+				"Name": "Mode",
+				"localchat": "Hosted Polls /w Local Chat Bridge",
+				"localonly": "Local Bridge only",
+				"patreon": "Server Settings"
+			},
+			"setup": {
+				"Name": "Setup",
+				"Hint": "Base Setup",
+				"Label": "Open Setup Menu"
+			},
+			"chat-commands": {
+				"Name": "Triggers",
+				"Label": "Open Trigger Setup"
+			},
+			"chat-message-template": {
+				"Name": "Chat Message Template"
+			},
+			"polls-enabled": {
+				"Name": "Polls Enabled"
+			},
+			"allow-socket": {
+				"Name": "Allow Sockets",
+				"Hint": "WARNING! This will allow player clients to send roll messages. This can be exploited to send anything to chat."
+			},
+			"allow-api": {
+				"Name": "Allow API Usage",
+				"Hint": "WARNING! This will allow any macro or module to send any messages to chat."
+			}
+		},
+		"feature-names": {
+			"custom-twitch-bot": "Custom Twitch Bot Name",
+			"twitch-bot": "Twitch Bot",
+			"twitch-polls": "Twitch Polls"
+		},
+		"ui": {
+			"docs": "Documentation",
+			"status": "Connection Status",
+			"poll-status": "Polls",
+			"chat-status": "Chat",
+			"trigger-status": "Triggers (including Chat Command Triggers)",
+			"connected": "Connected",
+			"disconnected": "Disconnected",
+			"inactive":  "Inactive",
+			"connecting": "Connecting",
+			"reconnect": "Reconnect",
+			"general-tab": "General",
+			"hosted-tab": "Server Settings",
+			"local-tab": "Local Server",
+			"config-application-title": "Ethereal Plane | Connection Config",
+			"chat-command-application-title": "Ethereal Plane | Trigger Config",
+			"login-application-title": "Ethereal Plane | Server Login",
+			"notification-application-title": "Ethereal Plane | Notification Center",
+			"polls-application-title": "Ethereal Plane | Polls",
+			"chat-tab-name": "Stream Chat",
+			"chat-welcome": "This is your stream chat! Messages will appear here as they are posted. Reloading the page will clear this.",
+			"system": "Ethereal Plane",
+			"commands": {
+				"active": "Active",
+				"name": "Name",
+				"created_at": "Created At",
+				"updated_at": "Updated At",
+				"macro": "Macro",
+				"import": {
+					"button": "Import",
+					"title": "Ethereal Plane | Import Data",
+					"hint1": "You are about to import and exported Trigger configuration.",
+					"hint2": "Data will be appended to the list. Please choose if you want to import Macros as well.",
+					"data-file-error": "You did not import a data file!",
+					"with-macros": "Import /w Macros",
+					"wrong-file-error": "Imported file is not an Ethereal Plane Export",
+					"wrong-version-error": "Imported file Version is unsupported"
+				},
+				"export": {
+					"button": "Export",
+					"title": "Ethereal Plane | Export with Buttons?",
+					"content": "Do you want to export the Macros? (Otherwise Macro data will be deleted)"
+				},
+				"export-legacy": {
+					"button": "Export Legacy Config"
+				}
+			},
+			"login": {
+				"device-code": "Your login Code is",
+				"hint1": "Either press \"Open\" to open a log-in dialog directly, copy it and send it to another device, or scan the QR code.",
+				"hint2": "This window will automatically close when the login is complete."
+			},
+			"save": "Save",
+			"cancel": "Cancel",
+			"yes": "Yes",
+			"no": "No",
+			"open-polls-button": "Open Polls",
+			"abort": "Abort",
+			"starting": "Starting",
+			"end": "End",
+			"start": "Start",
+			"title": "Title",
+			"open": "Open",
+			"copy": "Copy",
+			"chat-command-alias-application-title": "Trigger Alias Editor"
+		},
+		"notifications": {
+			"login-copy": "Login link copied to clipboard",
+			"api-version-mismatch": "API version does not match the installed Module. Please Update. Patreon Features Disabled.",
+			"please-log-in": "Please log in to use Ethereal Plane",
+			"invalid-credential": "Credentials Invalid, please log in again",
+			"reconnecting": "Reconnecting to EP Backend, please wait"
+		},
+		"strings": {
+			"youtube-id": "Set Youtube ID (Optional)",
+			"youtube-id-hint": "Only use this if auto-detection fails",
+			"youtube-id-placeholder": "Please enter the Video-ID or link of your livestream",
+			"disabled": "The Module is not enabled. You can configure it, but it won't do anything until you enable it. Some Options are also unavailable",
+			"patreon-ok": "All good!",
+			"patreon-disconnected": "Please connect to a live streaming service above.",
+			"patreon-logged-out": "You need to log in!",
+			"privacy-policy": "Privacy Policy",
+			"tos": "Terms of Service",
+			"youtube": "YouTube",
+			"twitch": "Twitch",
+			"log-in": "Log in",
+			"log-out": "Log out",
+			"connect": "Connect",
+			"profile": "Go to Control Panel",
+			"disconnect": "Disconnect",
+			"accept-text": "By connecting you accept the ",
+			"notification-prefix": "Ethereal Plane | ",
+			"account-setup": "Account Setup",
+			"account-setup-reminder": "Please make sure to set up your account before trying to connect to the backend!"
+		},
+		"macro": {
+			"download": {
+				"success": "Downloaded Macro successfully",
+				"failure": "Couldn't download the Macro"
+			},
+			"upload": {
+				"success": "Uploaded Macro successfully",
+				"failure": "Couldn't upload the Macro"
+			}
+		}
+	}
+}

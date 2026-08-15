@@ -1,0 +1,76 @@
+
+  "FAMILIAR": {
+    "title": "Foundry Familiar",
+    "description": "FVTT 的 AI 助手",
+    
+    "dialog": {
+      "title": "召唤魔宠",
+      "prompt": "询问魔宠...",
+      "ask": "询问",
+      "summon": "召唤",
+      "clear": "清空",
+      "close": "关闭",
+      "working": "魔宠正在思考...",
+      "error": "魔宠遇到了问题"
+    },
+    
+    "chat": {
+      "familiar_says": "🧙 魔宠说：",
+      "journal_summary": "🧙 日志摘要：{name}",
+      "error_message": "⚠️ 魔宠遇到了魔法干扰。",
+      "confused_message": "⚠️ 我在使用工具时有点困惑。让我尝试一个更简单的方法。",
+      "tool_error": "执行工具时出错：{error}"
+    },
+    
+    "tools": {
+      "list_journals": {
+        "name": "列出日志",
+        "description": "显示所有可用的日志条目",
+        "no_parameters": "无需参数"
+      },
+      "read_journal": {
+        "name": "阅读日志",
+        "description": "读取特定日志的内容",
+        "parameters": "日志名称"
+      },
+      "search_journals": {
+        "name": "搜索日志",
+        "description": "在日志中搜索内容",
+        "parameters": "搜索查询"
+      }
+    },
+    
+    "status": {
+      "connecting": "正在连接到魔宠...",
+      "connected": "魔宠已就绪",
+      "error": "无法连接到魔宠",
+      "no_llm": "LLM 服务不可用"
+    },
+    
+    "buttons": {
+      "open_familiar": "打开魔宠",
+      "test_connection": "测试连接",
+      "list_tools": "可用工具"
+    },
+    
+    "errors": {
+      "journal_not_found": "未找到日志\"{name}\"。",
+      "journal_empty": "日志\"{name}\"似乎为空或不包含可读文本。",
+      "no_journals_found": "未找到匹配\"{query}\"的日志。",
+      "unknown_tool": "未知工具：{tool}",
+      "network_error": "网络错误：无法访问 LLM 服务",
+      "api_error": "API 错误：{status}",
+      "general_error": "发生了意外错误"
+    },
+    
+    "help": {
+      "getting_started": "Foundry Familiar入门指南",
+      "commands": "可用命令：",
+      "ask_command": "game.familiar.ask(prompt) - 使用工具访问进行询问",
+      "summon_command": "game.familiar.summon(prompt) - 简单提示/响应", 
+      "list_command": "game.familiar.listJournals() - 列出所有日志",
+      "summarize_command": "game.familiar.summarizeJournal(name) - 摘要日志",
+      "chat_command": "/familiar <prompt> - 通过聊天命令询问"
+    }
+  }
+}

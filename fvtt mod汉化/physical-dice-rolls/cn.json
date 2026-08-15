@@ -1,0 +1,84 @@
+
+  "physical-dice-rolls": {
+    "settings": {
+      "gmOnly": {
+        "name": "仅限GM",
+        "hint": "启用后，只有GM可以手动掷骰。此设置启用时，玩家将无法察觉该模组。"
+      },
+      "manualRollMode": {
+        "name": "手动掷骰模式",
+        "hint": "启用后需点击掷骰按钮进行掷骰，禁用时骰子将在释放后自动投掷。",
+        "choices": {
+          "0": "从不",
+          "1": "总是",
+          "2": "询问"
+        }
+      },
+      "disableInCombat": {
+        "name": "战斗中禁用",
+        "hint": "启用后，该模组在战斗中将不可用。"
+      },
+      "position": {
+        "name": "位置",
+        "hint": "骰子投掷窗口的显示位置。",
+        "choices": {
+          "default": "居中",
+          "chat": "聊天框"
+        }
+      },
+      "enableTotalBox": {
+        "name": "启用总和框",
+        "hint": "启用后将显示输入框，可输入骰子总和。模组将生成符合该总和的投掷结果。"
+      },
+      "showFormula": {
+        "name": "显示公式",
+        "hint": "启用后，手动掷骰窗口顶部将显示投掷公式。"
+      },
+      "showMessage": {
+        "name": "显示通知",
+        "hint": "启用后，玩家手动掷骰时GM会收到聊天栏通知。"
+      },
+      "showMessagePlayers": {
+        "name": "向玩家显示通知",
+        "hint": "启用后，玩家也会看到手动掷骰通知。"
+      },
+      "messageColor": {
+        "name": "通知颜色",
+        "hint": "玩家手动掷骰时GM收到的聊天通知颜色。"
+      },
+      "useTheme": {
+        "name": "使用主题",
+        "hint": "启用后，骰子投掷窗口将使用自定义主题。"
+      },
+      "themeColor": {
+        "name": "主题颜色",
+        "hint": "主题的强调色。"
+      },
+      "realDiceConfig": {
+        "name": "骰子配置",
+        "hint": "配置哪些骰子需要手动投掷",
+        "label": "配置"
+      }
+    },
+    "real-roll": {
+      "title": "骰子投掷",
+      "realRollMessage": "进行了手动掷骰。",
+      "totalBoxMessage": "请输入骰子总和而非单个骰面结果。"
+    },
+    "flags": {},
+    "buttons": {
+      "realRollToggle": {
+        "tooltips": {
+          "0": "手动掷骰模式：禁用<hr>所有掷骰将自动执行",
+          "1": "手动掷骰模式：启用<hr>所有掷骰将手动执行",
+          "2": "手动掷骰模式：询问<hr>每次将询问采用手动或自动掷骰"
+        }
+      }
+    },
+    "keybindings": {
+      "toggleRollMode": {
+        "name": "切换手动掷骰模式"
+      }
+    }
+  }
+}

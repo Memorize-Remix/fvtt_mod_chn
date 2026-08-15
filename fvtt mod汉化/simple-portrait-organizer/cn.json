@@ -1,0 +1,45 @@
+
+    "simple-portrait-organizer" : {
+        
+        "settings" : {
+			"storageSourceName": "存储源",
+			"storageSourceHint": "云存储提供商文件系统支持选项。如果支持 S3 或 Forge 等选项，将在此处显示。",
+
+            "uploadDirectoryName" : "上传路径",
+            "uploadDirectoryHint" : "选择转换后的WebP图像保存的路径。",
+
+            "uploadDirectoryGMName" : "（可选）GM上传路径",
+            "uploadDirectoryGMHint" : "如果不为空，所有GM上传将保存到此路径。",
+
+            "capturePasteEventsName" : "启用剪贴板支持（Ctrl + V）",
+            "capturePasteEventsHint" : "（需要重新加载）可能会与其他模组产生冲突。",
+
+            "qualityPercentName" : "图像质量",
+            "qualityPercentHint" : "WebP格式的质量百分比（例如：90、80、70）。",
+
+            "maxSidePixelSizeName" : "（可选）图像最大边长（像素）",
+            "maxSidePixelSizeHint" : "0 = 不调整大小。如果图像更大，将按比例缩放。",
+
+            "enabledForGmName" : "为GM启用",
+            "enabledForGmHint" : "允许GM自动转换图像。无需重启。",
+
+            "keepOriginalFilenamesForGMName" : "为GM保留原始文件名",
+            "keepOriginalFilenamesForGMHint" : "但仍会将格式转换为.webp。",
+
+            "generateRandomFileNameName" : "为每个上传的文件生成随机名称",
+            "generateRandomFileNameHint" : "会造成混乱，但确保更新的图像立即显示。解决编辑问题。"
+        },
+
+        "form" : {
+            "chooseFile" : "选择、粘贴或拖入图像：",
+			"uploadingNow": "请等待上传完成。",
+            "dropHere" : "拖入图像或从剪贴板粘贴。（Ctrl + V）",
+            "chooseFileLabel" : "选择文件",
+            "defaultUploader" : "打开默认文件选择"
+        },
+
+        "dialog" : {
+            "selectFilename" : "确认文件名"
+        }
+    }
+}

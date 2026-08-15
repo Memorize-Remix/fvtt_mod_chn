@@ -1,0 +1,196 @@
+
+  "beaversCrafting": {
+    "actorLink": "配方",
+    "actorSheet": {
+      "tab": "合成",
+      "table": {
+        "name": "名称",
+        "status": "状态",
+        "progress": "进度",
+        "add": "添加"
+      }
+    },
+    "inventory": {
+      "type": "类型",
+      "title": "库存"
+    },
+    "recipe": {
+      "ingredients": "材料",
+      "quantity": "数量",
+      "skills": "技能",
+      "tests": {
+        "tests": "检定",
+        "test": "检定",
+        "hits": "目标次数",
+        "hitsHint": "制作成功所需的成功检定次数",
+        "fails": "失败次数",
+        "failsHint": "制作失败所需的失败检定次数",
+        "dc": "难度等级",
+        "consume": "消耗",
+        "consumeHint": "在检定失败时消耗成本",
+        "andTestHint": "添加额外检定",
+        "orTestHint": "添加替代检定",
+        "skill":"技能:",
+        "ability": "属性:"
+      },
+      "tools": "工具",
+      "dc": "DC",
+      "results": "结果",
+      "dropItem": "放置物品",
+      "addItem" : "add item",
+      "orItem": "or item",
+      "currency": "成本",
+      "consumeOnFailedSaveHint": "在技能检定失败时消耗成本",
+      "attendants": "催化剂",
+      "macro": {
+        "button": "保存"
+      },
+      "folder": "文件夹",
+      "folderHint": "你可以用'.'将单词分开以创建子文件夹，例如 Folder.Subfolder",
+      "folderPlaceHolder":"文件夹.子文件夹"
+    },
+    "anyOf": {
+      "dropItem": "放置物品",
+      "button": "测试物品",
+      "error": "一个'anyOf'宏产生了错误。请参见控制台（F12）"
+    },
+    "component": {
+      "warning": "你控制的角色没有物品名为 "
+    },
+    "select-dialog": {
+      "title": "选择",
+      "preselection": "选择"
+    },
+    "crafting-app": {
+	  "search": {
+		"all": "全部",
+		"available": "可用",
+		"usable": "可使用",
+		"own": "拥有"
+	  },
+      "title": "海狸配方手册",
+      "button": "开始",
+      "errors": {
+        "tableNotFound": "找不到随机表 : ",
+        "tableNotValid": "随机表返回无效对象 : ",
+        "itemNotFound": "在随机表中找不到物品 :"
+      },
+      "cost": "成本",
+      "instruction": "说明",
+      "required": "所需物品",
+      "result": "结果",
+      "pass": "成功",
+      "before": "之前",
+      "fails": "失败",
+      "checks": "检定记录"
+    },
+    "settings": {
+      "moduleButton": {
+        "name": "配置模组",
+        "hint": "配置模组，例如设置物品子类型'Recipe'和'AnyOf'。",
+        "label": "设置"
+      },
+      "createItemTitle": {
+        "name": "创建物品对话框标题",
+        "hint": "此标题用于检测创建物品对话框以添加'Recipe'和'AnyOf'子类型。"
+      },
+      "captureCreateItemTitle": {
+        "name": "捕捉创建物品对话窗口",
+        "hint": "这将在每个对话框头中启用一个靶心来识别创建物品对话框窗口。",
+        "hint2": "点击后，重新打开该窗口后，就会将其设置为物品创建窗口。"
+      },
+      "displayResults": {
+        "name": "显示结果表",
+        "hint": "单击配方结果项时显示物品表。"
+      },
+      "displayIngredients": {
+        "name": "显示材料表",
+        "hint": "单击配方材料项时显示物品表"
+      },
+      "useTool": {
+        "name": "配方使用工具（已弃用）",
+        "hint": "一个配方可以要求在角色上存在一个工具。 自0.7.x以来已被弃用，以支持催化剂。 它将在未来某个时候被删除，你应该迁移到 催化剂 上。"
+      },
+	  "itemDirectoryButton": {
+		"name": "添加海狸物品按钮",
+		"hint": "在物品目录中添加一个按钮，用于直接创建海狸的工艺物品（仅限 v12+ 版本）。"
+	  },
+      "useAttendants": {
+        "name": "配方使用催化剂",
+        "hint": "一个配方可以要求在角色上存在催化剂。你可以设置任何想要的特性，职业，背景，工具等等!"
+      },
+      "currencyExchange": {
+        "name": "交换货币",
+        "hint": "如果禁用，则需要确切的货币才能支付配方成本"
+      },
+      "disabledActor": {
+        "name": "禁用角色",
+        "hint": "不使用制作选项卡的角色类型，使用逗号分隔"
+      },
+      "tabName": {
+        "name": "标签名",
+        "hint": "自定义角色表上的选项卡名称(默认:Crafting)。有些系统使用TabName而不是TabIcon。为什么?这个模块最初是基于制作，但你可以将其用于各种其他事情，如:科技树，任务进度，休整期活动"
+      },
+      "tabIcon": {
+        "name": "标签图标",
+        "hint": "自定义角色表上的Tab图标(默认:Recipe)。有些系统使用TabIcon而不是TabName。你可以将其更改为foundry支持的任何漂亮的图标"
+      },
+      "addHeaderLink": {
+        "name": "角色表链接",
+        "hint": "这将在角色表上添加配方链接。自2.0.x起为可选项，因为太多的模块会污染表头区域，在某些世界中我很难找到空白处拖拽。"
+      },
+      "timeToCraft": {
+        "name": "制作时间",
+        "hint": "TimeToCraft 用于跟踪制作过程需要的时间。“立即完成”不会使用任何时间，并且将立即完成该过程。“交互完成”则会在用户与进度交互时推进进度。",
+        "choices": {
+          "instantly": "立即完成",
+          "interaction": "交互完成"
+        }
+      },
+      "separateItems": {
+        "name": "分离制作的物品",
+        "hint": "你可以设置合成得到的物品是否不同于不由合成得到的物品。当设置为full时，合成的物品将与非合成的物品不同(例如，你可以创建需要由合成的物品作为材料的特殊配方)。partial选项则将尝试检测你的意思，但并不总是正确的(例如，当你拖拽一个合成的匕首到你的配方作为材料时，它需要一个合成的匕首;当你拖拽一个正常的匕首时，它可以使用一个合成的或非合成的匕首)。"
+      },
+      "containerContentHandling": {
+		"name": "容器内容处理",
+		"hint": "当容器被删除时，容器内的物品应该如何处理？",
+		"choices": {
+		  "ask": "询问",
+		  "remove": "删除物品",
+		  "move": "移动物品"
+		}
+	  }
+    },
+    "module-config": {
+      "title": "模组配置",
+      "info": "模组需要检测创建新物品的窗口。为此，模组内部会使用该窗口的标题。如果你使用的是默认语言，则标题很可能是'创建新物品'，你无需做任何操作。"
+    },
+    "create-item-dialog": {
+		"title": "创建海狸物品",
+		"name": "物品名称",
+		"type": "物品类型",
+		"create": "创建",
+		"recipe": "📜配方",
+		"anyOf": "❔任意",
+		"container": "📦容器"
+	},
+    "container": {
+		"mode": "模式",
+		"mode-recipes": "配方（书籍）",
+		"mode-items": "实物（背包）",
+		"book": "书籍",
+		"bag": "背包",
+		"remove": "从容器中移除",
+		"delete": "删除物品",
+		"edit": "编辑物品",
+		"empty": "容器为空",
+		"experimental": "此功能处于实验阶段。",
+		"deleteDialog": {
+		  "title": "删除容器",
+		  "content": "容器 '{name}' 中包含物品。您希望如何处理它们？",
+		  "remove": "删除物品",
+		  "move": "移动物品"
+	    }
+	}
+  }
+}

@@ -1,0 +1,91 @@
+{
+    "hp":{
+        "settings":{
+            "disable" : {
+                "name": "Disable Timer",
+                "hint": "Disable the combat timer"
+            },
+            "timerDuration":{
+                "name": "Timer Duration",
+                "hint": "Duration in seconds of the timer"
+            },
+            "style":{
+                "name": "Style",
+                "hint": "Style of the timer",
+                "digits": "Digits",
+                "circle": "Circle",
+                "sand": "Sand"
+            },
+            "countup":{
+                "name": "Counting Up",
+                "hint": "Timer counts up instead of down (Digits and Circle styles only)"
+            },
+            "overtime":{
+                "name": "Overtime",
+                "hint": "Timer keeps running after maximum time allowance"
+            },
+            "size":{
+                "name": "Size",
+                "hint": "Size of the timer"
+            },
+			"secondary-size":{
+                "name": "Secondary Size",
+                "hint": "Size of the secondary timers"
+            },
+            "secondary-direction":{
+                "name": "Secondary Direction",
+                "hint": "Direction of the secondary timers"
+            },
+            "windowless":{
+                "name": "Windowless",
+                "hint": "Display the timer without a window"
+            },
+            "critical":{
+                "name": "Critical Threshold",
+                "hint": "Threshold after which the timer will go critical and start blinking"
+            },
+            "secondsInsteadOfPercentage": {
+				"name": "Critical time use seconds instead of percentage",
+				"hint": "By default the critical threshold uses percentage of total time. By checking this setting it's changed to seconds instead."
+			},
+            "goNext": {
+                "name": "Go Next",
+                "hint": "Go to next combatant when timer ends."
+            },
+			"runForNpc": {
+				"name": "Run for NPC",
+				"hint": "Run the timer on NPCs turn"
+			},
+            "showOnUpdateCombatOnly": {
+                "name": "First Show Timer on Next Turn",
+				"hint": "First show the combat timer when 'Begin Combat', 'Next Turn' or 'End Turn' is pressed"
+            },
+            "critSoundPath":{
+                "name": "Critical Sound",
+                "hint": "Sound to play when timer goes critical"
+            },
+            "endSoundPath":{
+                "name": "End Sound",
+                "hint": "Sound to play when timer ends"
+            },
+            "soundVol":{
+                "name": "Sound Volume",
+                "hint": "Volume of the sounds played"
+            }
+        },
+        "contextMenu": {
+            "pause": "Pause",
+            "unpause": "Resume",
+            "reset": "Reset",
+            "close": "Close"
+        },
+        "create": {
+            "title": "Hurry Up!",
+            "paused": "Paused",
+            "time": "Time",
+            "timeError": "Time must be a number greater than 0",
+            "name": "Name",
+            "color": "Color"
+        }
+    }
+}

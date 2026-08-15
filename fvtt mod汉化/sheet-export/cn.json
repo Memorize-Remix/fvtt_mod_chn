@@ -1,0 +1,85 @@
+
+  "sheet-export": {
+    "menu":{
+      "label": "表单导出"
+    },
+    "settings": {
+      "mappingOption": {
+        "Name": "映射版本-发行版",
+        "Hint": "选择要导出的表单版本和发行版"
+      },
+      "mappingEdit": {
+        "Name": "生成映射文件",
+        "Hint": "为下方选择的版本-发行版生成映射文件"
+      },
+      "setCustomMapping": {
+        "Name": "设置自定义映射",
+        "Hint": "设置自定义映射配置"
+      },
+      "mapping": {
+        "Name": "映射配置",
+        "Hint": "用于将PDF字段映射到FVTT角色表单信息的JS文件。详情请参阅README。"
+      },
+      "mapping-npc": {
+        "Name": "NPC映射配置",
+        "Hint": "用于将PDF字段映射到FVTT NPC表单信息的JS文件。详情请参阅README。"
+      }
+    },
+    "sheet": {
+      "override": "覆盖映射配置的PDF"
+    },
+    "mappingEdit": {
+      "upload": "从PDF生成PC映射配置",
+      "PC": "PC",
+      "NPC": "NPC"
+    },
+    "customMapping": {
+      "upload-player-js": "添加player.js映射文件",
+      "upload-player-pdf": "添加玩家角色PDF文件",
+      "upload-npc-js": "添加npc.js映射文件",
+      "upload-npc-pdf": "添加NPC PDF文件"
+    },
+    "download": {
+      "dnd5e": {
+        "label": "D&D 5e PDF",
+        "title": "下载第五版官方可填写角色表PDF",
+        "url": "https://media.wizards.com/2016/dnd/downloads/5E_CharacterSheet_Fillable.pdf"
+      },
+      "starwars-ffg": {
+        "label": "Star Wars FFG角色表PDF",
+        "title": "下载非官方的Star Wars FFG角色表",
+        "url": "http://holocast.terceiraterra.com/wp-content/uploads/EotE-CharacterSheet-Fillable-v4.pdf"
+      },
+      "shadowrun5e": {
+        "label": "SR5e角色表PDF",
+        "title": "下载非官方的SR5e角色表PDF",
+        "url": "https://drive.google.com/uc?export=download&id=1Gkaoi3JR6bfjhhq1PcgFpqGZlhTWv2oV"
+      },
+      "pf1": {
+        "label": "Pathfinder 1 角色表PDF",
+        "title": "下载非官方的Pathfinder 1 角色表PDF",
+        "url": "https://cdn.discordapp.com/attachments/877667041119731734/940318362146308127/Pf1e-Foundry_to_PDF.pdf"
+      },
+      "pf2e": {
+        "label": "Pathfinder 2e角色表PDF",
+        "title": "下载非官方的Pathfinder 2e角色表PDF",
+        "url": "https://drive.google.com/uc?export=download&id=1dP95d_1UgenS9olPasXra8iItBZFCXMo"
+      },
+      "pf2e-remastered": {
+        "label": "Pathfinder 2e重制版角色表PDF",
+        "title": "下载非官方的Pathfinder 2e重制版角色表PDF",
+        "url": "https://github.com/arcanistzed/pdf-sheet/blob/main/pdf/pf2e-remastered.pdf"
+      },
+      "dcc": {
+        "label": "Dungeon Crawl Classics角色表PDF",
+        "title": "从Goodman Games下载Dungeon Crawl Classics角色表PDF",
+        "url": "https://goodman-games.com/wp-content/uploads/2021/04/0level_fillable.pdf"
+      },
+      "swade": {
+        "label": "SWADE角色表PDF",
+        "title": "在PEG商店查看官方的SWADE角色表PDF",
+        "url": "https://peginc.com/store/savage-worlds-character-sheet-pdf-swade/"
+      }
+    }
+  }
+}

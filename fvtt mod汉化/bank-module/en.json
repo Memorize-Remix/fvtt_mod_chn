@@ -1,0 +1,132 @@
+{
+  "bank-module": {
+    "settings": {
+      "banks": {
+        "name": "Registered Banks",
+        "open-bank": "Open Bank",
+        "hint": "List of banks available in the world"
+      },
+      "bankItems": {
+        "name": "Bank Items",
+        "hint": "Items stored in each bank"
+      },
+      "bankManager": {
+        "name": "Bank Manager",
+        "label": "Open Manager",
+        "hint": "Create, edit and remove banks available in the world"
+      },
+      "gridView": {
+        "name": "Grid View",
+        "hint": "Toggle between list and grid view for bank items"
+      }
+    },
+    "manager": {
+      "title": "Bank Manager",
+      "bankName": "Bank Name",
+      "bankIcon": "Bank Icon",
+      "browseIcon": "Browse Icon",
+      "addBank": "Add Bank",
+      "saveChanges": "Save Changes",
+      "description": "Create, edit or remove banks available in the system. Each bank has an <code>id</code> and a <strong>name</strong>.",
+      "createButton": "Create New Bank",
+      "tableHeaders": {
+        "bankId": "Bank ID",
+        "bankName": "Bank Name",
+        "actions": "Actions"
+      },
+      "deleteButton": "Delete",
+      "saveButton": "Save Changes",
+      "newBank": "New Bank"
+    },
+    "notifications": {
+      "selectOneToken": "Select only one token to open the bank.",
+      "noActorForToken": "No actor is associated with this token.",
+      "bankSystemNotInitialized": "The bank system is not initialized.",
+      "noAccessToBank": "This actor does not have access to the bank.",
+      "banksUpdated": "Banks updated successfully",
+      "itemDeposited": "You deposited {quantity} unit(s) of {itemName} in the bank",
+      "itemWithdrawn": "You withdrew {quantity} unit(s) of {itemName} from the bank",
+      "itemDeleted": "Item removed from bank successfully",
+      "configSaved": "Settings saved successfully",
+      "errors": {
+        "noBank": "No bank selected for this actor",
+        "itemNotFound": "Item not found in bank",
+        "notYourItem": "This item belongs to another actor and cannot be withdrawn",
+        "sourceActorNotFound": "Source actor not found",
+        "invalidItem": "Invalid item data",
+        "invalidDrop": "You can only deposit items",
+        "noSourceActor": "Source actor not provided in dragged item",
+        "noSourceActorFound": "Source actor not found",
+        "noItemFound": "Could not find item via UUID",
+        "noActorLink": "Item is not linked to any actor",
+        "inventoryItemNotFound": "Item not found in source actor's inventory",
+        "cantDeposit": "Could not deposit this item",
+        "quantityError": "You cannot withdraw more than you have",
+        "notBanker": "You don't have permission to access the bank",
+        "saveFailed": "Failed to save changes to the bank",
+        "anotherBankAccountOpen": "Another bank account is already open",
+        "selectBank": "You must select a bank when enabling banker status",
+        "flagsUpdateFailed": "Failed to set bank flags",
+        "configSaveError": "Error saving configuration",
+        "noBankSelected": "Nenhum banco selecionado para atualização"
+      },
+      "quantityUpdated": "Item quantity updated successfully",
+      "cleanupSuccess": "Bank items cleaned up successfully"
+    },
+    "toggle": {
+      "title": "Configure Bank for {actorName}",
+      "label": "Configure Bank",
+      "status": {
+        "label": "Bank Status:",
+        "enabled": "Enabled",
+        "disabled": "Disabled"
+      },
+      "selectBank": {
+        "label": "Select Bank:",
+        "none": "None",
+        "required": "A bank must be selected when banker status is enabled"
+      },
+      "saveButton": "Save"
+    },
+	"dialog": {
+      "quantity": {
+        "title": "Quantity",
+        "label": "Enter quantity:",
+        "confirm": "Confirm",
+        "cancel": "Cancel"
+      }
+    },
+    "account": {
+      "title": "Bank Account",
+      "label": "Bank",
+      "noBank": "No Bank",
+      "instructions": "Drag items from inventory to deposit:",
+      "dropZone": "Drop items here",
+      "closeButton": "Close",
+      "quantity": "Quantity: {value}",
+      "owner": "Owner: ",
+      "withdrawDialog": {
+        "title": "Withdraw Item",
+        "content": "You have {quantity} unit(s). How many do you want to withdraw?",
+        "confirm": "Confirm",
+        "cancel": "Cancel"
+      },
+      "editQuantity": {
+        "title": "Edit Quantity",
+        "dialogTitle": "Edit Item Quantity",
+        "dialogContent": "Current quantity: {quantity}. Enter new quantity:",
+        "confirm": "Update",
+        "cancel": "Cancel"
+      },
+      "depositDialog": {
+        "title": "Deposit Items",
+        "content": "You have {quantity} unit(s). How many do you want to deposit?",
+        "confirm": "Confirm",
+        "cancel": "Cancel"
+      },
+      "viewToggle": {
+        "title": "Toggle View Mode"
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+    "macro-wheel": {
+        "bindings": {
+            "open": {
+                "name": "Open/Close Macro Wheel"
+            }
+        },
+        "settings": {
+            "folderSize": {
+                "name": "Folder Button Size",
+                "hint": "Size of the folder buttons in the macro wheel in pixels."
+            },
+            "macroSize": {
+                "name": "Macro Button Size",
+                "hint": "Size of the macro buttons in the macro wheel in pixels."
+            },
+            "closeOnClick": {
+                "name": "Close on Click",
+                "hint": "Close the macro wheel when a macro is clicked. You can hold ctrl to keep the wheel open."
+            },
+            "enableTooltips": {
+                "name": "Enable Tooltips",
+                "hint": "Show tooltips when hovering over a macro or folder."
+            },
+            "useRoot": {
+                "name": "Use Root Folder",
+                "hint": "Use the whole macro directory as the root for the macro wheel."
+            },
+            "addHotbar": {
+                "name": "Show Hotbar Macros",
+                "hint": "Add the hotbar macros to the macro wheel."
+            },
+            "useMiddleMouse": {
+                "name": "Use Middle Mouse",
+                "hint": "Use the middle mouse button to open the macro wheel."
+            },
+            "hoverDelay": {
+                "name": "Hover Delay",
+                "hint": "Delay in milliseconds before the macro wheel opens when hovering over a macro wheel folder."
+            }
+        },
+        "flags": {
+            "header": "Macro Wheel",
+            "folderImg": {
+                "name": "Image"
+            },
+            "condition": {
+                "name": "Custom Condition",
+                "placeholder": "Condition Script"
+            },
+            "activeCondition": {
+                "name": "Active Condition",
+                "hint": "This condition is used to determine if the macro is active. This will be used to determine the color of the ring around the macro in the Macro Wheel to quickly check states."
+            },
+            "presetCondition": {
+                "name": "Condition",
+                "options": {
+                    "custom": "Custom",
+                    "tokens": "Active Layer: Tokens",
+                    "tiles": "Active Layer: Tiles",
+                    "walls": "Active Layer: Walls",
+                    "sounds": "Active Layer: Sounds",
+                    "notes": "Active Layer: Notes",
+                    "lights": "Active Layer: Lighting",
+                    "templates": "Active Layer: Templates",
+                    "drawings": "Active Layer: Drawings",
+                    "selectedtoken": "Token Selected",
+                    "combat": "In Combat",
+                    "enabled3d": "3D Canvas Enabled"
+                }
+            }
+        },
+        "errors": {
+            "no-folder": "MacroWheel: Folder 'MacroWheel' not found. Please create a folder named 'MacroWheel' in your Macro folder or enable the 'Use Root Folder' option to disable this notification. Inside the 'MacroWheel' folder create subfolders for each wheel you want to add then add macros to those folders."
+        }
+    }
+}

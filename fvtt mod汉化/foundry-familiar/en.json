@@ -1,0 +1,76 @@
+{
+  "FAMILIAR": {
+    "title": "Foundry Familiar",
+    "description": "AI-powered assistant for Foundry VTT",
+    
+    "dialog": {
+      "title": "Summon the Familiar",
+      "prompt": "Ask the Familiar...",
+      "ask": "Ask",
+      "summon": "Summon",
+      "clear": "Clear",
+      "close": "Close",
+      "working": "The Familiar is thinking...",
+      "error": "The Familiar encountered a problem"
+    },
+    
+    "chat": {
+      "familiar_says": "🧙 Familiar says:",
+      "journal_summary": "🧙 Journal Summary: {name}",
+      "error_message": "⚠️ The familiar encountered a magical disturbance.",
+      "confused_message": "⚠️ I got a bit confused trying to use my tools. Let me try a simpler approach.",
+      "tool_error": "Error executing tool: {error}"
+    },
+    
+    "tools": {
+      "list_journals": {
+        "name": "List Journals",
+        "description": "Shows all available journal entries",
+        "no_parameters": "No parameters required"
+      },
+      "read_journal": {
+        "name": "Read Journal",
+        "description": "Reads the content of a specific journal",
+        "parameters": "Journal name"
+      },
+      "search_journals": {
+        "name": "Search Journals",
+        "description": "Searches for content in journals",
+        "parameters": "Search query"
+      }
+    },
+    
+    "status": {
+      "connecting": "Connecting to Familiar...",
+      "connected": "Familiar is ready",
+      "error": "Cannot reach Familiar",
+      "no_llm": "LLM service unavailable"
+    },
+    
+    "buttons": {
+      "open_familiar": "Open Familiar",
+      "test_connection": "Test Connection",
+      "list_tools": "Available Tools"
+    },
+    
+    "errors": {
+      "journal_not_found": "Journal \"{name}\" not found.",
+      "journal_empty": "The journal \"{name}\" appears to be empty or contains no readable text.",
+      "no_journals_found": "No journals found matching \"{query}\".",
+      "unknown_tool": "Unknown tool: {tool}",
+      "network_error": "Network error: Unable to reach LLM service",
+      "api_error": "API error: {status}",
+      "general_error": "An unexpected error occurred"
+    },
+    
+    "help": {
+      "getting_started": "Getting started with Foundry Familiar",
+      "commands": "Available commands:",
+      "ask_command": "game.familiar.ask(prompt) - Ask with tool access",
+      "summon_command": "game.familiar.summon(prompt) - Simple prompt/response", 
+      "list_command": "game.familiar.listJournals() - List all journals",
+      "summarize_command": "game.familiar.summarizeJournal(name) - Summarize a journal",
+      "chat_command": "/familiar <prompt> - Ask via chat command"
+    }
+  }
+}

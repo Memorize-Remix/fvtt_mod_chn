@@ -1,0 +1,126 @@
+{
+    "rarity-colors.setting.rarityFlag.name": "Rarity Color",
+    "rarity-colors.setting.rarityFlag.hint": "Color Items in the actor sheet and sidebar based on its rarity",
+
+    "rarity-colors.setting.spellFlag.name": "Spell Color",
+    "rarity-colors.setting.spellFlag.hint": "Color Items in the sidebar that are Spells",
+
+    "rarity-colors.setting.featFlag.name": "Feat Color",
+    "rarity-colors.setting.featFlag.hint": "Color Items in the sidebar that are Features",
+
+    "rarity-colors.setting.common.name": "Common Color",
+    "rarity-colors.setting.common.hint": " ",
+
+    "rarity-colors.setting.commonExternal.name": "Common External Color",
+    "rarity-colors.setting.common.hint": " ",
+
+    "rarity-colors.setting.uncommon.name": "Uncommon Color",
+    "rarity-colors.setting.uncommon.hint": " ",
+
+    "rarity-colors.setting.uncommonExternal.name": "Uncommon External Color",
+    "rarity-colors.setting.uncommon.hint": " ",
+
+    "rarity-colors.setting.rare.name": "Rare Color",
+    "rarity-colors.setting.rare.hint": " ",
+
+    "rarity-colors.setting.rareExternal.name": "Rare External Color",
+    "rarity-colors.setting.rareExternal.hint": " ",
+
+    "rarity-colors.setting.veryrare.name": "Very Rare Color",
+    "rarity-colors.setting.veryrare.hint": " ",
+
+    "rarity-colors.setting.veryrareExternal.name": "Very Rare External Color",
+    "rarity-colors.setting.veryrareExternal.hint": " ",
+
+    "rarity-colors.setting.legendary.name": "Legendary Color",
+    "rarity-colors.setting.legendary.hint": " ",
+
+    "rarity-colors.setting.legendaryExternal.name": "Legendary External Color",
+    "rarity-colors.setting.legendaryExternal.hint": " ",
+
+    "rarity-colors.setting.artifact.name": "Artifact Color",
+    "rarity-colors.setting.artifact.hint": " ",
+
+    "rarity-colors.setting.artifactExternal.name": "Artifact External Color",
+    "rarity-colors.setting.artifactExternal.hint": " ",
+
+    "rarity-colors.setting.spell.name": "Spell Color",
+    "rarity-colors.setting.spell.hint": " ",
+
+    "rarity-colors.setting.spellExternal.name": "Spell External Color",
+    "rarity-colors.setting.spellExternal.hint": " ",
+
+    "rarity-colors.setting.feat.name": "Feat Color",
+    "rarity-colors.setting.feat.hint": " ",
+
+    "rarity-colors.setting.featExternal.name": "Feat External Color",
+    "rarity-colors.setting.featExternal.hint": " ",
+
+    "rarity-colors.setting.rarityColorMode.name": "Rarity Color Mode",
+    "rarity-colors.setting.rarityColorMode.hint": "Choose what mode you want for this module",
+
+    "rarity-colors.setting.disableRarityColorOnCompendium.name": "Disable Rarity Color on the compendium",
+    "rarity-colors.setting.disableRarityColorOnCompendium.hint": "Apply this styling to the compendium can slowdown the loading of the compendium. You can now disable this if you want it.",
+
+    "rarity-colors.setting.reset.name": "Reset settings to default",
+    "rarity-colors.setting.reset.label": "Reset Settings To Default",
+    "rarity-colors.setting.reset.hint": "This will reset all of the settings of back to the active game system's default.",
+    "rarity-colors.setting.debug.name": "Enable debugging",
+    "rarity-colors.setting.debug.label": "Prints debug messages to the console",
+    "rarity-colors.setting.debug.hint": " ",
+    "rarity-colors.dialogs.resetsettings.title": "Reset Module Settings",
+    "rarity-colors.dialogs.resetsettings.content": "Are you sure you want to reset all of the module settings to the current system's defaults? <strong>THIS CANNOT BE UNDONE!</strong>",
+    "rarity-colors.dialogs.resetsettings.confirm": "Reset Module Settings",
+    "rarity-colors.dialogs.resetsettings.cancel": "Cancel",
+    "rarity-colors.dialogs.nosystemfound.title": "System Not Recognized",
+    "rarity-colors.dialogs.nosystemfound.content": "This system is not currently fully supported. This means that the module does not know how to best handle this system's items, but can still operate in a limited fashion.<br><br>You can configure the module's settings yourself, but it requires a bit of technical know-how.",
+    "rarity-colors.dialogs.systemfound.title": "System Recognized",
+    "rarity-colors.dialogs.systemfound.content": "This system was previously not supported, but in an recent update it was added as a supported system!<br><br>Do you want to load this system's default Item Pile settings?",
+    "rarity-colors.dialogs.systemfound.confirm": "Apply System Defaults",
+    "rarity-colors.dialogs.menu.name": "Rarity Color Configuration",
+    "rarity-colors.dialogs.menu.label": "Rarity Color Configuration",
+    "rarity-colors.dialogs.menu.hint": "Set colors for item, spells and features",
+
+    "rarity-colors.setting.enableBackgroundColorInsteadText.name": "Enable Color only as background and not text",
+    "rarity-colors.setting.enableBackgroundColorInsteadText.hint": "Color the Backgrounds Items in the sidebar and the inventory instead the text",
+
+    "rarity-colors.setting.enableBorderColor.name": "Enable Color on the image border",
+    "rarity-colors.setting.enableBorderColor.hint": "Enable Color on the image border on Items in the sidebar and the inventory",
+
+    "rarity-colors.setting.thresholdBackgroundColorInsteadText.name": "Contrast threshold to control the resulting font color",
+    "rarity-colors.setting.thresholdBackgroundColorInsteadText.hint": "Make sense only with 'Enable Color only as background and not text' enabled. Contrast threshold to control the resulting font color, float values from 0 to 1. Default is 0.5. It is use by default for all text without a rgba color background",
+    "rarity-colors.setting.forceThresholdBackgroundColorInsteadText.name": "Force to use the manual Contrast threshold to control the resulting font color",
+    "rarity-colors.setting.forceThresholdBackgroundColorInsteadText.hint": "Make sense only with 'Enable Color only as background and not text' enabled. If enabled it will apply the Contrast threshold set on 'Contrast threshold to control the resulting font color' to all text even the one with a rgba background.",
+
+    "rarity-colors.setting.forceAlphaBackgroundColorInsteadText.name": "Force the alpha/opacity value on the rgba background color.",
+    "rarity-colors.setting.forceAlphaBackgroundColorInsteadText.hint": "Make sense only with 'Enable Color only as background and not text' enabled. If enabled it will apply the alpha value on thi setting if is > 0 by default in all the backgrounds even the one with a rgba background. NOTE: The value '0' will disable this setting.",
+
+    "rarity-colors.RarityColorsApp": {
+        "title": "Rarity Color Configuration",
+        "save": "Save Changes",
+        "delete": "Delete",
+        "tabs": {
+            "itemRarity": {
+                "name": "Item Rarity Colors",
+                "hint": "Customize the Item Rarity Colors",
+                "itemRarityName": "Item Rarity Name",
+                "itemRarityColor": "Color",
+                "add": "Add Item Rarity Color"
+            },
+            "spellSchools": {
+                "name": "Spell Schools Colors",
+                "hint": "Customize the Spell Schools Colors",
+                "spellSchoolName": "Spell School Name",
+                "spellSchoolColor": "Color",
+                "add": "Add Spell School Color"
+            },
+            "classFeatureTypes": {
+                "name": "Class Feature Types Colors",
+                "hint": "Customize the Class Feature Types Colors",
+                "classFeatureTypeName": "Class Feature Type Name",
+                "classFeatureTypeColor": "Color",
+                "add": "Add Class Feature Type Color"
+            }
+        }
+    }
+}

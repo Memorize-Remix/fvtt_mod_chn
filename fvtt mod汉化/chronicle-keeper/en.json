@@ -1,0 +1,121 @@
+{
+    "CHRONICLE_KEEPER": {
+        "ModuleTitle": "Chronicle Keeper",
+        "Settings": {
+            "OllamaUrl": {
+                "Name": "Ollama Server URL",
+                "Hint": "The URL of your local Ollama server (e.g., http://localhost:11434)"
+            },
+            "Model": {
+                "Name": "AI Model",
+                "Hint": "Select the Ollama model to use for AI responses"
+            },
+            "EmbeddingModel": {
+                "Name": "Embedding Model",
+                "Hint": "Model used for generating memory embeddings (e.g., nomic-embed-text)"
+            },
+            "Temperature": {
+                "Name": "Temperature",
+                "Hint": "Controls randomness in AI responses (0.0-1.0). Higher = more creative"
+            },
+            "MaxTokens": {
+                "Name": "Max Response Tokens",
+                "Hint": "Maximum length of AI responses"
+            },
+            "ShortTermMemorySize": {
+                "Name": "Short-term Memory Size",
+                "Hint": "Number of recent messages to keep in context (20-50 recommended)"
+            },
+            "EnableAutoNarration": {
+                "Name": "Enable Auto-Narration",
+                "Hint": "Automatically narrate dice rolls and combat events"
+            },
+            "EnableCombatNarration": {
+                "Name": "Enable Combat Narration",
+                "Hint": "Generate dramatic descriptions during combat"
+            },
+            "SystemPrompt": {
+                "Name": "System Prompt",
+                "Hint": "The AI's core personality and behavior instructions"
+            },
+            "DMEnabled": {
+                "Name": "AI DM Enabled",
+                "Hint": "Toggle AI Dungeon Master functionality on/off"
+            },
+            "MemoryRetrievalCount": {
+                "Name": "Memory Retrieval Count",
+                "Hint": "Number of relevant memories to retrieve for context"
+            },
+            "SummarizationThreshold": {
+                "Name": "Summarization Threshold",
+                "Hint": "Compress memories when conversation exceeds this length"
+            }
+        },
+        "Chat": {
+            "Thinking": "Chronicle Keeper is thinking...",
+            "ConnectionError": "Failed to connect to Ollama server. Please check your settings.",
+            "ModelNotFound": "The selected model was not found. Please check Ollama configuration.",
+            "ResponseError": "An error occurred while generating a response."
+        },
+        "Commands": {
+            "AI": {
+                "Description": "Send a message to the AI Dungeon Master"
+            },
+            "Narrate": {
+                "Description": "Request a scene narration from the AI"
+            },
+            "NPC": {
+                "Description": "Have an NPC speak (usage: /npc [name] [message])"
+            },
+            "Memory": {
+                "Description": "Manage AI memories",
+                "Search": "Search memories",
+                "Save": "Save a memory",
+                "Clear": "Clear short-term memory",
+                "Browse": "Open memory browser"
+            },
+            "DM": {
+                "Description": "Toggle AI DM on/off"
+            }
+        },
+        "Memory": {
+            "Browser": {
+                "Title": "Memory Browser",
+                "ShortTerm": "Short-term Memory",
+                "LongTerm": "Long-term Memory",
+                "Entities": "Entities",
+                "NPCs": "NPCs",
+                "Locations": "Locations",
+                "Items": "Items",
+                "Factions": "Factions",
+                "Search": "Search memories...",
+                "Delete": "Delete",
+                "Edit": "Edit",
+                "Add": "Add New",
+                "Save": "Save",
+                "Cancel": "Cancel",
+                "NoMemories": "No memories stored yet."
+            },
+            "Types": {
+                "Conversation": "Conversation",
+                "StoryBeat": "Story Beat",
+                "QuestProgress": "Quest Progress",
+                "Relationship": "Relationship",
+                "SessionSummary": "Session Summary"
+            }
+        },
+        "UI": {
+            "ConnectionStatus": {
+                "Connected": "Connected to Ollama",
+                "Disconnected": "Disconnected from Ollama",
+                "Checking": "Checking connection..."
+            },
+            "Panel": {
+                "Title": "AI Dungeon Master",
+                "Settings": "Settings",
+                "Memory": "Memory",
+                "Toggle": "Toggle AI DM"
+            }
+        }
+    }
+}

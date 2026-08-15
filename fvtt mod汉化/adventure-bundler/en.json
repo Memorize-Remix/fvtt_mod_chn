@@ -1,0 +1,29 @@
+{
+    "ADVENTUREBUNDLER": {
+        "BundleAdventureButton": "Bundle and export",
+        "UnbundleAdventureButton": "Import bundle",
+        "BundleExportFailed": "Error exporting adventure: {message}",
+        "BundleImportFailed": "Error importing adventure: {message}",
+        "ImportOverwritePromptTitle": "Overwrite adventure?",
+        "ImportOverwritePromptMessage": "The adventure you're importing has the same ID as the existing adventure <strong>{existing}</strong>. Continue?",
+        "ImportOverwritePromptOverwriteButton": "Overwrite",
+        "ImportOverwritePromptCreateNewButton": "Use new ID",
+        "ImportOverwritePromptCancelButton": "Cancel",
+        "ImportCancelled": "Import cancelled!",
+        "SettingImportAssetDirName": "Imported asset folder",
+        "SettingImportAssetDirHint": "Where to upload assets from imported adventure bundles",
+        "ExportProgressMessage": "Zipping asset: {asset}",
+        "ImportProgressMessage": "Uploading asset: {asset}",
+        "ExportDoneProgressMessage": "Done!",
+        "ImportDoneProgressMessage": "Done!",
+        "ExportErrorProgressMessage": "Failed!",
+        "ImportErrorProgressMessage": "Failed!",
+        "SettingBundleModuleFileName": "Bundle assets from modules?",
+        "SettingBundleModuleFileHint": "Should assets from add-on modules be bundled by default? Please double check copyright when using this setting!",
+        "SettingBundleDataFileName": "Bundle assets from user files?",
+        "SettingBundleDataFileHint": "Should user data assets be bundled by default?",
+        "ImportVersionMismatchTitle": "Version mismatch",
+        "ImportVersionMismatchMessage": "This adventure was built in Foundry version <strong>{coreVersion}</strong> using the <strong>{systemId}</strong> system version <strong>{systemVersion}</strong>, which does not match the current configuration. Do you want to continue? <strong>This may break things!</strong>",
+        "AbortedMessage": "Operation aborted!"
+    }
+}

@@ -1,0 +1,167 @@
+
+  "random-target": {
+    "macro": {
+      "unexpectedError": "[RandomTarget]出现问题。请尝试从资源库更新宏。如果问题持续存在，请联系作者。"
+    },
+    "targetApp": {
+      "window": {
+        "title": "随机目标",
+        "controls": {
+          "openSettings": "设置",
+          "openHelp": "帮助",
+          "openSupport": "支持"
+        }
+      },
+      "ui": {
+        "toggleSelection": {
+          "label": "切换选择（全选/取消全选）"
+        },
+        "emptySceneError": {
+          "label": "当前场景中没有可选择的Token。"
+        },
+        "buttons": {
+          "cancel": {
+            "label": "取消"
+          },
+          "submit": {
+            "label": "选择随机目标"
+          }
+        },
+        "status": {
+          "selection": {
+            "none": "未选择候选目标",
+            "one": "已选择 1 个候选目标",
+            "many": "已选择 {total} 个候选目标"
+          },
+          "chatVisibility": {
+            "silent": {
+              "label": "静默",
+              "tooltip": "不会发布到聊天窗口"
+            },
+            "gmOnly": {
+              "label": "私密",
+              "tooltip": "将仅向 GM 发布消息到聊天窗口"
+            },
+            "public": {
+              "label": "公开",
+              "tooltip": "将向所有人发布消息到聊天窗口"
+            }
+          }
+        }
+      }
+    },
+    "supportDialog": {
+      "window": {
+        "title": "支持此模组"
+      },
+      "ui": {
+        "buttons": {
+          "later": {
+            "label": "稍后再说"
+          },
+          "support": {
+            "label": "立即支持"
+          }
+        }
+      },
+      "content": {
+        "heading": "感谢你使用 <strong>随机目标</strong>！",
+        "backgroundText": "该项目自 2022 年以来一直积极维护。最初只是一个小型项目，现已发展成为被数百名 FVTT 用户使用的工具。",
+        "supportText": "如果你觉得此模组有用，请考虑支持其开发！"
+      }
+    },
+    "categories": {
+      "targeted": {
+        "label": "目标",
+        "description": "列出场景中已被选为目标的Token",
+        "info": "仅当至少有 {count} 个Token被选为目标时显示。"
+      },
+      "selected": {
+        "label": "已选",
+        "description": "列出场景中已选择的Token",
+        "info": "仅当至少有 {count} 个Token被选择时显示。"
+      },
+      "all": {
+        "label": "全部",
+        "description": "列出场景中的所有Token"
+      },
+      "category": {
+        "description": "列出类型为 <code>{name}</code> 的Token",
+        "info": "仅当至少有 {count} 个匹配的Token时显示。"
+      },
+      "disposition": {
+        "description": "列出阵营为 <code>{name}</code> 的Token",
+        "info": "仅当至少有 {count} 个匹配的Token时显示。"
+      }
+    },
+    "categoriesSettings": {
+      "window": {
+        "title": "随机目标：分类"
+      },
+      "ui": {
+        "buttons": {
+          "save": {
+            "label": "保存选择"
+          }
+        }
+      },
+      "content": {
+        "instructions": "选择要提供的分类过滤。必须至少选择一个分类。你可以拖动以重新排列它们的顺序。"
+      }
+    },
+    "notifications": {
+      "targeted": "<b>{targetName}</b> 已被选为目标",
+      "missingSceneError": "你需要有一个激活场景才能选择随机目标",
+      "minimumSelectionError": "你需要至少选择 2 个Token",
+      "minimumCategoriesError": "你需要至少选择 1 个分类"
+    },
+    "chat": {
+      "unknownTarget": {
+        "label": "未知Token（{tokenId}）"
+      },
+      "target": {
+        "label": "{targetLink} 被随机选中。",
+        "tooltip": "目标：{name}"
+      },
+      "candidatesPool": {
+        "label": "本次选择的候选池："
+      }
+    },
+    "settings": {
+      "categoryFilters": {
+        "name": "分类过滤",
+        "label": "配置",
+        "hint": "管理哪些分类过滤可用以及它们的显示顺序。"
+      },
+      "closeAfterSelection": {
+        "name": "选择后关闭",
+        "hint": "指定在选择目标后是否应关闭目标选择窗口。"
+      },
+      "chatNotifications": {
+        "name": "聊天通知",
+        "hint": "指定在选择随机目标时是否应发送聊天消息，以及隐私级别。",
+        "options": {
+          "disabled": "禁用",
+          "gm": "仅 GM",
+          "public": "公开"
+        }
+      },
+      "avoidSameTarget": {
+        "name": "避免选择相同目标",
+        "hint": "指定是否应防止连续两次选择相同的目标。"
+      },
+	  "panToTarget": {
+		"name": "平移至目标",
+		"hint": "指定画布是否应平移至所选目标。"
+	  },
+      "preferredTargetImage": {
+        "name": "首选目标图像",
+        "hint": "指定在目标列表中显示的优先图像。",
+        "options": {
+          "token": "Token图像",
+          "actor": "角色图像"
+        }
+      }
+    }
+  }
+}

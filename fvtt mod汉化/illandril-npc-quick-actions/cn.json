@@ -1,0 +1,48 @@
+{
+  "illandril-npc-quick-actions": {
+    "setting": {
+      "debug": {
+        "label": "调试模式",
+        "hint": "除非Illandril特别要求启用，否则请不要启用（否则会拖慢运行速度）。"
+      },
+      "minimumRole.label": "快速动作的最低权限",
+      "minimumRole.hint": "右键单击用户拥有的 token 时，如果用户的权限大于或等于所选权限，则会显示快速动作菜单。注意：GM\"拥有\"每个token。",
+      "showUnpreparedNPCSpells.label": "显示未准备的 NPC 法术",
+      "showUnpreparedNPCSpells.hint": "如果选中，具有\"准备\"的法术但未标记为\"已准备\"的法术将显示在玩家未拥有的\"玩家角色\"类型角色的快速动作菜单中。(注：这些法术将显示在\"NPC\"类型角色的快速动作菜单中，无论其是否为玩家所有，也无论是否有此设置）。",
+      "showUnpreparedPCSpells.label": "显示未准备的 PC 法术",
+      "showUnpreparedPCSpells.hint": "如果选中，则具有\"准备\"的法术但未标记为\"已准备\"的法术将显示在玩家拥有的\"玩家角色\"类型角色的快速动作菜单中。",
+      "showUnequippedNPCItems.label": "显示未装备的 NPC 物品",
+      "showUnequippedNPCItems.hint": "如果选中此选项，未标记为\"已装备\"的物品将显示在玩家未拥有的\"玩家角色\"类型角色的快速动作菜单中。(注意：这些物品将显示在\"NPC\"类型角色的快速动作菜单中，无论它们是否有为玩家所有，也无论是否有此设置）。",
+      "showUnequippedPCItems.label": "显示未装备的 PC 物品",
+      "showUnequippedPCItems.hint": "如果选中此选项，则未标记为\"已装备\"的物品将显示在玩家拥有的\"玩家角色\"类型角色的快速动作菜单中。",
+      "showZeroUsesRemainActions.label": "显示剩余充能为零的动作",
+      "showZeroUsesRemainActions.hint": "如果选中，剩余使用次数为零的动作将显示在快速动作菜单中。",
+      "showForPCActors.label": "为玩家角色显示",
+      "showForPCActors.hint": "如果选中此选项，快速动作将显示在玩家角色上。注意：这是基于角色类型，而不是基于角色是否为玩家所有。",
+      "showForNPCActors.label": "为NPC角色显示",
+      "showForNPCActors.hint": "如果选中，快速动作将显示在NPC角色上。注意：这是基于角色类型，而不是基于角色是否为玩家所有。",
+      "showForVehicleActors.label": "为载具显示",
+      "showForVehicleActors.hint": "如果选中，快速动作将显示在载具角色上。"
+    },
+    "activation_action": "动作",
+    "activation_bonus": "附赠动作",
+    "activation_reaction": "反应",
+    "activation_legendary": "传奇动作",
+    "activation_lair": "巢穴动作",
+    "activation_special": "特殊动作",
+    "activation_crew": "驾驶员动作",
+    "activation_new-turn": "回合开始",
+    "reset-for-new-turn": "重置新回合的动作",
+    "legendary-actions-reset": "*传奇动作已重置*",
+    "spell-abbr": {
+      "pact": "契约魔法",
+      "cantrip": "戏法",
+      "innate": "天生施法",
+      "atwill": "随意施法",
+      "unknown": "?"
+    },
+    "recharge-roll": "充能掷骰",
+    "recharge-success": "☑",
+    "recharge-fail": "☒"
+  }
+}

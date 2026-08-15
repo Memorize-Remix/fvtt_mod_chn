@@ -1,0 +1,176 @@
+
+  "I18N.LANGUAGE": "中文",
+  "more-dynamic-token-rings": {
+    "module-settings": {
+      "button": "使用SETT配置Token环",
+      "custom-ring": {
+        "menu": {
+          "settings-button": "自定义Token环制作",
+          "header": "创建Token环精灵表与JSON",
+          "icons": {
+            "kofi": {
+              "title": "在Ko-fi上支持我",
+              "tooltip": "捐赠给我可以移除这个提示！"
+            }
+          },
+          "content": {
+            "link-to-guide": "指南链接"
+          },
+          "parts": {
+            "spritesheet": "Token环精灵表配置",
+            "json": "Token环JSON配置"
+          },
+          "fields": {
+            "token-img": {
+              "ring": {
+                "label": "动态Token环",
+                "tooltip": "必须为2048px x 2048px"
+              },
+              "background": {
+                "label": "动态Token背景",
+                "tooltip": "必须为2048px x 2048px"
+              },
+              "quality": {
+                "label": "Token环质量",
+                "tooltip": "生成的Webp质量，推荐80%"
+              }
+            },
+            "thickness": {
+              "label": "Token环厚度",
+              "tooltip": "Token环从内到外的厚度，0到1取值，1表示100%"
+            },
+            "coloration": {
+              "label": "Token环着色",
+              "inner": {
+                "label": "内边缘",
+                "tooltip": "Token环着色的起始位置，0到1取值，1表示距中心100%距离"
+              },
+              "outer": {
+                "label": "外边缘",
+                "tooltip": "Token环着色的结束位置，0到1.5取值，1表示距中心100%距离"
+              },
+              "color": {
+                "label": "颜色",
+                "tooltip": "输入十六进制颜色值，作为重新着色时的'白色'基准(如设为蓝色时蓝色部分将最明显)"
+              }
+            }
+          },
+          "error": {
+            "upload-both": "请上传两张图片以创建Token环",
+            "2048-min": "两张图片都必须为2048px x 2048px。",
+            "failed-to-download": {
+              "json": "下载JSON失败：",
+              "image": "下载或转换图片失败："
+            },
+            "does-not-exist": "SETT：自定义Token环不存在，请先创建一个"
+          },
+          "buttons": {
+            "create": {
+              "label": "创建"
+            },
+            "export": {
+              "label": "导出"
+            },
+            "cancel": {
+              "label": "取消"
+            }
+          }
+        },
+        "enabled": {
+          "name": "启用自定义Token环",
+          "hint": "在动态Token环选择器中启用自定义Token环，注意每次修改属性后都需要重新加载才能更新"
+        },
+        "kofi-code": {
+          "name": "Ko-fi捐赠码",
+          "hint": "如果你在Ko-fi上捐赠过任意金额，可以移除自定义Token环制作中的标题图标和消息"
+        }
+      }
+    },
+    "notifications": {
+      "ring-list-saved": "你的动态Token环列表已更新，重新加载以查看新Token环",
+      "first-time-user": {
+        "content": "<h2>欢迎使用SETT</h2><p>你好，欢迎使用本模组。</p><p>要获取新Token环，请点击配置设置并导航至SETT模组设置。在那里启用一些Token环，保存更改后系统会提示你重新加载FVTT。完成后再次打开设置，找到核心->动态Token环下拉设置，现在将包含额外的Token环。选择其中一个，保存更改，并再次重新加载FVTT。</p>",
+        "button": "开始导览"
+      },
+      "reload-to-switch": "添加新动态Token环后需要再次重启才能激活！"
+    },
+    "dialog": {
+      "reload": {
+        "title": "重新加载？",
+        "content": "你要重新加载吗？",
+        "buttons": {
+          "yes": "是",
+          "no": "否"
+        }
+      },
+      "ring-submission": {
+        "title": "Token环提交",
+        "content": "你要提交这个Token环(该Token环无版权或你拥有合法权利)到模组中吗？"
+      }
+    },
+    "hover-text": {
+      "new-ring": "新Token环！",
+      "click-ring": "点击后将询问你是否重新加载以快速激活Token环。",
+      "click-ring-warning": "[重要] 这不会保存你在设置中做出的任何其他更改，请先提交那些更改！"
+    },
+    "tours": {
+      "starter": {
+        "title": "SETT入门导览",
+        "steps": {
+          "1": {
+            "title": "导航到",
+            "content": "打开设置后首先导航至'核心'设置"
+          },
+          "2": {
+            "title": "SETT菜单",
+            "content": "你会看到插入的SETT按钮，用它来启用新Token环！"
+          },
+          "3": {
+            "title": "之后",
+            "content": "启用Token环后确保点击保存，然后系统会提示你重新加载FVTT"
+          },
+          "4": {
+            "title": "选择Token环",
+            "content": "在此选择一个Token环，系统会提示你重新加载以更新Token环"
+          },
+          "5": {
+            "title": "感谢",
+            "content": "感谢参加导览，如果愿意的话，别忘了给导游(我)和服务员(Token环制作者)小费哦 :D"
+          }
+        }
+      },
+      "custom": {
+        "notification": {
+          "title": "✨自定义Token环✨",
+          "step": "有新功能啦！要使用它，你需要前往SETT模组设置，点击设置顶部的按钮来使用新的自定义Token环创建系统。祝你好运，享受新选项！"
+        },
+        "full": {
+          "1": {
+            "title": "自定义Token环指南",
+            "content": "这里我链接了一个使用本功能的通用指南。建议至少先浏览一遍以防混淆。本导览仅介绍基础知识"
+          },
+          "2": {
+            "title": "Token环精灵表图片",
+            "content": "这里你可以上传动态Token环和背景来创建'动态Token环精灵表'。注意需要同时添加两者才能正确保存精灵表。如果只想编辑已创建自定义Token环的配置，忽略这些即可"
+          },
+          "3": {
+            "title": "Token环配置",
+            "content": "这里是自定义Token环的配置设置，悬停可查看每个选项的描述和视觉辅助"
+          },
+          "4": {
+            "title": "创建Token环",
+            "content": "此按钮将保存你上传的Token环和背景到精灵表(如有)，并将配置数据保存到Token环json中。创建Token环后需要重新加载以启用新自定义Token环"
+          },
+          "5": {
+            "title": "导出Token环",
+            "content": "此按钮允许你导出Token环的精灵表及其对应的json。你可以在github上提交这些文件，可能被添加到模组中！"
+          },
+          "6": {
+            "title": "出发吧！✈",
+            "content": "祝你好运，Token环制作愉快！<hr><i>也考虑在<a href='https://ko-fi.com/chasarooni'>kofi</a>上捐赠给我，激励我做出更多这样的酷炫功能</i>"
+          }
+        }
+      }
+    }
+  }
+}

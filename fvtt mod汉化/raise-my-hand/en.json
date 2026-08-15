@@ -1,0 +1,205 @@
+{
+  "raise-my-hand": {
+    "EMPTY-STRING": "",
+    "UINOTIFICATION": "✋ {name} has their hand raised",
+    "CHATMESSAGE": "has their hand raised!",
+    "context": {
+      "lowerHand": "Lower Hand"
+    },
+    "ui": {
+      "xcard": {
+        "title": "Stop!"
+      }
+    },
+    "controls": {
+      "keybinding": {
+        "or": "or"
+      },
+      "raise-hand": {
+        "name": "Raise Hand",
+        "hint": "Same effect as clicking the Raise Hand button.",
+        "toolclip": {
+          "heading": "Toggle or Raise Hand"
+        },
+        "toggle": {
+          "true": "Lower Hand",
+          "false": "Raise Hand"
+        }
+      },
+      "show-xcard": {
+        "name": "Show X-Card",
+        "hint": "This will display the X-Card.",
+        "toolclip": {
+          "heading": "Show X-Card"
+        }
+      }
+    },
+    "settings": {
+      "handSettings": {
+        "name": "Hand Settings",
+        "label": "Configure Hand",
+        "hint": "Configure the hand raiser toggle mode, enabled notification modes, and their sub-settings."
+      },
+      "xcard": {
+        "name": "X-Card Settings",
+        "label": "Configure X-Card",
+        "hint": "Configure X-Card enabled notification modes and their sub-settings."
+      },
+      "notificationTimeout": {
+        "name": "Notification Timeout",
+        "hint": "Minimum time (seconds) between uses of Raise Hand or X-Card per player."
+      },
+      "FIELDS": {
+        "choices": {
+          "disabled": "Disabled",
+          "all": "All Users",
+          "gm": "GMs Only"
+        }
+      },
+      "HAND": {
+        "FIELDS": {
+          "general": {
+            "label": "General Settings",
+            "isToggle": {
+              "label": "Toggle Mode",
+              "hint": "Makes the hand raiser toggle between raise and lower states. A player lowering their hand will remove the hand icon from the list and close popout they raised."
+            },
+            "notificationModes": {
+              "label": "Notification Modes",
+              "hint": "Set the notification modes.",
+              "choices": {
+                "playerList": "Player List Icon",
+                "aural": "Aural Notification",
+                "popout": "Popout Notification",
+                "ui": "UI Notification",
+                "chat": "Chat Notification"
+              }
+            }
+          },
+          "playerList": {
+            "label": "Player List Icon",
+            "scope": {
+              "label": "Show for",
+              "hint": "Set who will see the hand icon in the players list."
+            },
+            "holdTime": {
+              "label": "Hold Time",
+              "hint": "Non-toggle mode: How long the icon remains after the animation completes."
+            }
+          },
+          "aural": {
+            "label": "Aural Notification",
+            "scope": {
+              "label": "Play for",
+              "hint": "Set who will hear the sound."
+            },
+            "source": {
+              "label": "Notification Sound",
+              "hint": "Choose a sound to play.",
+              "choices": {
+                "default": "Default Chime",
+                "custom": "Custom Sound"
+              }
+            },
+            "overridePath": {
+              "label": "Sound Path",
+              "hint": "Set a path to a sound you prefer."
+            },
+            "soundVolume": {
+              "label": "Volume",
+              "hint": "Set the volume from 1-100%."
+            }
+          },
+          "popout": {
+            "label": "Popout Notification",
+            "scope": {
+              "label": "Show for",
+              "hint": "Set who will see the popout notification."
+            },
+            "source": {
+              "label": "Popout Image",
+              "hint": "Choose what image to display in the popout notification.",
+              "choices": {
+                "default": "Default Hand Image",
+                "avatar": "Player Avatar",
+                "custom": "Custom Image"
+              }
+            },
+            "overridePath": {
+              "label": "Image Path",
+              "hint": "Set a path to the image displayed in the popout."
+            }
+          },
+          "ui": {
+            "label": "UI Notification",
+            "scope": {
+              "label": "Send to",
+              "hint": "Set who will see the UI notification."
+            },
+            "permanent": {
+              "label": "Permanent",
+              "hint": "Notification will remain until manually dismissed."
+            }
+          },
+          "chat": {
+            "label": "Chat Notification",
+            "scope": {
+              "label": "Send to",
+              "hint": "Set who will see the chat message."
+            },
+            "source": {
+              "label": "Chat Image",
+              "hint": "Choose what image to display in the chat message.",
+              "choices": {
+                "disabled": "None",
+                "default": "Default Hand Image",
+                "avatar": "Player Avatar",
+                "custom": "Custom Image"
+              }
+            },
+            "overridePath": {
+              "label": "Image Path",
+              "hint": "You can set a path to the image displayed on the chat."
+            },
+            "widthPercentage": {
+              "label": "Image Width",
+              "hint": "Set the image width from 1-100%."
+            }
+          }
+        }
+      },
+      "XCARD": {
+        "FIELDS": {
+          "isEnabled": {
+            "label": "Enable X-Card"
+          },
+          "scope": {
+            "label": "Send to",
+            "hint": "Set who will receive X-Card notifications."
+          },
+          "anonymousWarning": {
+            "label": "Anonymous Warnings",
+            "hint": "If enabled, the X-Card will not show who triggered it."
+          },
+          "source": {
+            "label": "Notification Sound",
+            "hint": "Choose a sound to play.",
+            "choices": {
+              "none": "Disabled",
+              "default": "Default Alarm",
+              "custom": "Custom Sound"
+            }
+          },
+          "overridePath": {
+            "label": "Sound Path",
+            "hint": "Set a path to a sound you prefer."
+          },
+          "soundVolume": {
+            "label": "Volume",
+            "hint": "Set the volume from 1-100%."
+          }
+        }
+      }
+    }
+  }
+}

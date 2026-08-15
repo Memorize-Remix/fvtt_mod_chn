@@ -1,0 +1,52 @@
+
+  "remote-highlight-ui": {
+  "tool": {
+    "heading": "远程高亮",
+    "paragraph": "点击任意界面元素即可为所有人高亮显示。你也可以使用内置快捷键（例如 Ctrl+中键点击）实现此功能，并且可以通过用户列表将特定用户设置为高亮目标。"
+  },
+    "settings": {
+      "enable-highlighting-for-others": {
+        "name": "为其他玩家启用元素高亮",
+        "hint": "当按住 Ctrl 并中键点击 / 右键点击 / 辅助点击 UI 元素时，它将为所有其他玩家高亮显示。"
+      },
+      "enable-receiving-highlights": {
+        "name": "启用接收其他玩家的高亮",
+        "hint": "如果禁用此选项，其他人将无法向你发送高亮。"
+      },
+      "keybinding-modifiers": {
+        "name": "调整键",
+        "hint": "选择中键点击触发高亮所需的调整键（默认：Ctrl）。",
+        "choices": {
+          "control": "Ctrl",
+          "control+shift": "Ctrl + Shift",
+          "shift": "Shift"
+        }
+      },
+      "allow-when-right-clicking": {
+        "name": "允许右键点击",
+        "hint": "是否应在例如 Ctrl+右键点击时也触发？（默认 false）"
+      },
+      "activate-highlighter-tool": {
+        "name": "激活高亮工具",
+        "hint": "激活后，点击任何 UI 元素即可为所有人高亮显示。需要启用'启用高亮'设置。"
+      },
+      "instant-highlight-keybind": {
+        "name": "即时高亮快捷键",
+        "hint": "按下此键，光标下的 UI 元素将为所有人高亮显示。需要启用'启用高亮'设置。"
+      },
+	  "permission-level": {
+	    "name": "访问工具的最低权限等级",
+	    "hint": "选择哪个权限等级的用户可以看到工具栏按钮。",
+	    "choices": {
+	  	  "gm": "仅GM",
+	  	  "trusted": "GM和受信玩家",
+	  	  "player": "所有玩家"
+	    }
+	  }
+    },
+    "playerList": {
+      "highlightOnlyForThisUser": "仅为此用户高亮界面",
+      "stopOnlyHighlightingForThisUser": "停止仅为此用户高亮"
+    }
+  }
+}

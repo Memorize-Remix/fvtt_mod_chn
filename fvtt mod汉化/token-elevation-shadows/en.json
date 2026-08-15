@@ -1,0 +1,22 @@
+{
+    "TokenElevationShadows.Setting.BaseOpacity.Name": "Base Shadow Opacity",
+    "TokenElevationShadows.Setting.BaseOpacity.Hint": "The starting opacity (0 to 1) of the shadow when the token begins to elevate.",
+    "TokenElevationShadows.Setting.MaxElevation.Name": "Maximum Elevation",
+    "TokenElevationShadows.Setting.MaxElevation.Hint": "The elevation at which the shadow completely fades away.",
+    "TokenElevationShadows.Setting.Azimuth.Name": "Sun Azimuth (Direction)",
+    "TokenElevationShadows.Setting.Azimuth.Hint": "Compass direction of the sun (0 = North, 90 = East, 180 = South, 270 = West). Shadows cast away from the sun.",
+    "TokenElevationShadows.Setting.Altitude.Name": "Sun Altitude (Height)",
+    "TokenElevationShadows.Setting.Altitude.Hint": "Height of the sun in the sky (1 = Horizon, 89 = High Noon). Lower altitudes create longer shadows.",
+    "TokenElevationShadows.Setting.MeshOffsetMultiplier.Name": "Elevation Multiplier",
+    "TokenElevationShadows.Setting.MeshOffsetMultiplier.Hint": "How aggressively the token visually moves up the screen per unit of elevation.",
+    "TokenElevationShadows.Setting.AlphaThreshold.Name": "Alpha Clip Threshold",
+    "TokenElevationShadows.Setting.AlphaThreshold.Hint": "Opacity threshold (0 to 1) for stripping baked-in shadows. Higher values strip more pixels.",
+    "TokenElevationShadows.Setting.RequireStatus.Name": "Require Airborne Status",
+    "TokenElevationShadows.Setting.RequireStatus.Hint": "If enabled, tokens will only visually elevate and cast dynamic shadows if they have an airborne status effect applied. Otherwise, they remain visually grounded.",
+    "TokenElevationShadows.Setting.StatusIds.Name": "Airborne Status IDs",
+    "TokenElevationShadows.Setting.StatusIds.Hint": "A comma-separated list of system-specific status IDs that trigger visual elevation (e.g., 'fly, hover, levitate'). Defaults to 'fly'.",
+    "TokenElevationShadows.Setting.TimeIntegration.Name": "Time Integration",
+    "TokenElevationShadows.Setting.TimeIntegration.Hint": "Synchronise shadow directions with in-game time tracking modules.",
+    "TokenElevationShadows.Setting.TimeIntegration.None": "None (Manual Control)",
+    "TokenElevationShadows.Setting.TimeIntegration.Core": "Core World Time (SmallTime, etc.)"
+}

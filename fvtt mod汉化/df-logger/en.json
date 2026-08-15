@@ -1,0 +1,90 @@
+{
+	"DF-LOGGER": {
+		"Settings": {
+			"ManageMessages": "Manage Messages",
+			"Sound_Name": "Sound used for messages",
+			"Sound_Hint": "The sound that is played when a Log In/Out message is displayed to the chat",
+			"GmOnly_Name": "Only show messages to GM",
+			"GmOnly_Hint": "Only show the user login/logout messages to the GM.",
+			"NotMe_Name": "Don't show my own to me",
+			"NotMe_Hint": "Only show your login/logout messages to others, and not to yourself.",
+			"Delay_Name": "Auto-Remove Delay",
+			"Delay_Hint": "How many seconds should a login/logout message be kept in the log?",
+			"SelfDestruct_Name": "Auto-Remove Messages",
+			"SelfDestruct_Hint": "Messages will automatically delete themselves from the chat log after defined amount of time."
+		},
+		"Content": {
+			"Login": "User Logged In",
+			"Login_Persist": "*User Logged In",
+			"Logout": "User Logged Out",
+			"Logout_Persist": "*User Logged Out"
+		},
+		"ManageMenu": {
+			"Title": "Message Management",
+			"Confirm": {
+				"Title": "Reset All Messages",
+				"Content": "Are you sure you wish to reset all of the messages to the default ones? This cannot be undone, and will delete any custom messages."
+			},
+			"TabLogin": "Log In Messages",
+			"TabLogout": "Log Out Messages",
+			"Headers": {
+				"Toggle": "Use Message",
+				"Message": "Message Text",
+				"Remove": "Delete Message"
+			},
+			"Entry": {
+				"ToggleTitle": "Toggle Message",
+				"MessagePlaceholder": "Place your custom message here...",
+				"RemoveTitle": "Remove Entry"
+			},
+			"Buttons": {
+				"Add": "Add Entry",
+				"Reset": "Reset All Messages",
+				"Save": "Save Messages"
+			}
+		},
+		"LoginMsg": [
+			"{{username}} just joined the server - glhf!",
+			"{{username}} just joined. Everyone, look busy!",
+			"{{username}} just joined. Can I get a heal?",
+			"{{username}} joined your party.",
+			"{{username}} joined. You must construct additional pylons.",
+			"Ermagherd. {{username}} is here.",
+			"Welcome, {{username}}. Stay awhile and listen.",
+			"Welcome, {{username}}. ( ͡° ͜ʖ ͡°) We were expecting you",
+			"Welcome, {{username}}. We hope you brought pizza.",
+			"Welcome {{username}}. Leave your weapons by the door.",
+			"A wild {{username}} appeared.",
+			"Swoooosh. {{username}} just landed.",
+			"Brace yourselves. {{username}} just joined the server.",
+			"{{username}} just joined. Hide your bananas.",
+			"{{username}} just arrived. Seems OP - please nerf.",
+			"{{username}} just slid into the server.",
+			"A {{username}} has spawned in the server.",
+			"Big {{username}} showed up!",
+			"Where's {{username}}? In the server!",
+			"{{username}} hopped into the server. Kangaroo!!",
+			"{{username}} just showed up. Hold my beer.",
+			"Challenger approaching - {{username}} has appeared!",
+			"It's a bird! It's a plane! Nevermind, it's just {{username}}.",
+			"It's {{username}}! Praise the sun!\n\\[T]/",
+			"Never gonna give {{username}} up. Never gonna let {{username}} down.",
+			"Ha! {{username}} has joined! You activated my trap card!",
+			"Cheers, love! {{username}}'s here!",
+			"Hey! Listen! {{username}} has joined!",
+			"We've been expecting you {{username}}",
+			"It's dangerous to go alone, take {{username}}!",
+			"{{username}} has joined the server! It's super effective!",
+			"Cheers, love! {{username}} is here!",
+			"{{username}} is here, as the prophecy foretold.",
+			"{{username}} has arrived. Party's over.",
+			"Ready player {{username}}",
+			"{{username}} is here to kick butt and chew bubblegum. And {{username}} is all out of gum.",
+			"Hello. Is it {{username}} you're looking for?",
+			"Roses are red, violets are blue, {{username}} joined this server with you"
+		],
+		"LogoutMsg": [
+			"{{username}} has left the building!"
+		]
+	}
+}

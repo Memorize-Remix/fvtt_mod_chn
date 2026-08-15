@@ -1,0 +1,132 @@
+{
+  "DLCRITFUMBLE": {
+    "ModuleName": "Dorman Lakely's Critical Hit & Fumble Tables",
+    "ModuleDescription": "Tier-based critical hit and fumble tables for D&D 5e",
+
+    "Settings": {
+      "Enabled": {
+        "Name": "Enable Module",
+        "Hint": "Toggle the entire module on/off"
+      },
+      "EnableCrits": {
+        "Name": "Enable Critical Hit Tables",
+        "Hint": "Automatically roll on critical hit table when rolling a natural 20"
+      },
+      "EnableFumbles": {
+        "Name": "Enable Fumble Tables",
+        "Hint": "Automatically roll on fumble table when rolling a natural 1"
+      },
+      "ApplyEffects": {
+        "Name": "Apply Effects Automatically",
+        "Hint": "Automatically apply damage and conditions from crit/fumble results"
+      },
+      "UseActorLevel": {
+        "Name": "Use Actor Level for Tier",
+        "Hint": "Automatically determine tier based on the attacking actor's level"
+      },
+      "FixedTier": {
+        "Name": "Fixed Tier Selection",
+        "Hint": "When not using actor level, use this tier for all rolls"
+      },
+      "ShowChatMessages": {
+        "Name": "Show Chat Messages",
+        "Hint": "Display crit/fumble results in chat"
+      },
+      "CritSound": {
+        "Name": "Critical Hit Sound",
+        "Hint": "Sound effect to play when a critical hit occurs. Leave empty for no sound."
+      },
+      "FumbleSound": {
+        "Name": "Fumble Sound",
+        "Hint": "Sound effect to play when a fumble occurs. Leave empty for no sound."
+      },
+      "ReimportTables": {
+        "Name": "Re-import Tables",
+        "Label": "Re-import Tables",
+        "Hint": "Delete and re-import all crit/fumble tables from the module source. Use this if tables are missing or corrupted.",
+        "DialogTitle": "Re-import Crit/Fumble Tables",
+        "DialogMessage": "This will delete all existing crit/fumble tables and re-import them from the module source.",
+        "ConfirmTitle": "Confirm Re-import",
+        "ConfirmMessage": "This will delete ALL existing crit/fumble tables and re-import fresh copies from the module.",
+        "Warning": "Warning: Any custom table modifications will be lost!",
+        "Success": "Tables re-imported successfully!"
+      },
+      "ResetSettings": {
+        "Name": "Reset to Defaults",
+        "Label": "Reset Settings",
+        "Hint": "Reset all module settings to their default values.",
+        "ConfirmTitle": "Reset Settings",
+        "ConfirmMessage": "Are you sure you want to reset all settings to their default values?",
+        "Success": "Settings reset to defaults!"
+      },
+      "Patreon": {
+        "Name": "Support on Patreon",
+        "Label": "Visit Patreon",
+        "Hint": "Support the development of this module on Patreon! Your contributions help fund new features and updates."
+      },
+      "PreviewSound": {
+        "Tooltip": "Preview sound",
+        "NoFileSelected": "No sound file selected",
+        "PlayError": "Failed to play sound"
+      }
+    },
+
+    "Tiers": {
+      "Tier1": "Tier 1 (Levels 1-4) - Novice",
+      "Tier2": "Tier 2 (Levels 5-8) - Competent",
+      "Tier3": "Tier 3 (Levels 9-12) - Experienced",
+      "Tier4": "Tier 4 (Levels 13-20) - Legendary"
+    },
+
+    "AttackTypes": {
+      "Melee": "Melee",
+      "Ranged": "Ranged",
+      "Spell": "Spell"
+    },
+
+    "Chat": {
+      "CriticalHit": "CRITICAL HIT!",
+      "Fumble": "FUMBLE!",
+      "Attacker": "Attacker",
+      "Target": "Target",
+      "Effect": "Effect",
+      "NothingSpecial": "Nothing Special",
+      "NothingSpecialDesc": "Your critical strike deals damage as normal, but no additional effect occurs.",
+      "NothingSpecialFumbleDesc": "You fumble, but recover quickly with no additional penalty."
+    },
+
+    "Effects": {
+      "AppliedCondition": "Applied condition: {condition}",
+      "AppliedDamage": "Applied {damage} {type} damage",
+      "EffectApplied": "Effect applied to {target}",
+      "SaveRequired": "Save Required",
+      "SaveSuccess": "Save successful - effect avoided!",
+      "SaveFailure": "Save failed - effect applied!"
+    },
+
+    "Dialogs": {
+      "UpdateTables": {
+        "Title": "Update Crit/Fumble Tables",
+        "Content": "A new version of the crit/fumble tables is available! Your tables were imported from version {oldVersion}, and version {newVersion} is now available with new effects and improvements.",
+        "Warning": "Note: Updating will replace your current tables. Any custom modifications will be lost."
+      }
+    },
+
+    "Errors": {
+      "MidiQolRequired": "Dorman Lakely's Critical Hit & Fumble Tables requires Midi-QOL to be enabled.",
+      "TableNotFound": "Table '{tableName}' not found. Please import the compendium tables.",
+      "NoActiveScene": "No active scene found.",
+      "NoTargetToken": "No target token found for effect application.",
+      "GMRequired": "This action requires GM permissions."
+    },
+
+    "Notifications": {
+      "ModuleReady": "Dorman Lakely's Critical Hit & Fumble Tables is ready!",
+      "HooksRegistered": "Midi-QOL hooks registered successfully.",
+      "ImportingTables": "Importing crit/fumble tables...",
+      "TablesImported": "Imported {count} crit/fumble tables!",
+      "ReimportingTables": "Re-importing crit/fumble tables...",
+      "UpdateSkipped": "Table update skipped. You can update later via Module Settings > Re-import Tables."
+    }
+  }
+}

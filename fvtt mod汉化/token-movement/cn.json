@@ -1,0 +1,16 @@
+
+  "token-movement.settings.animationMode.name": "动画模式",
+  "token-movement.settings.animationMode.hint": "控制Token移动动画的行为方式。",
+  "token-movement.settings.animationMode.default": "默认（Foundry 内置）",
+  "token-movement.settings.animationMode.disabled": "禁用（瞬间移动）",
+  "token-movement.settings.animationMode.fixed": "固定时长（整个移动的毫秒数）",
+  "token-movement.settings.animationMode.percentage": "默认速度百分比",
+  "token-movement.settings.speedValue.name": "动画速度值",
+  "token-movement.settings.speedValue.hint": "在固定模式下：无论距离多远，动画总时长（毫秒）（数值越低越快）。在百分比模式下：默认速度的百分比（100 = 正常，50 = 较慢，200 = 较快）。在默认/禁用模式下忽略此设置。",
+  "token-movement.settings.distanceScaling.name": "基于距离的速度缩放",
+  "token-movement.settings.distanceScaling.hint": "启用后，短距离移动将按比例快于配置的速度。达到或超过阈值距离的移动使用配置的速度。仅适用于固定或百分比模式。",
+  "token-movement.settings.distanceThreshold.name": "距离缩放阈值",
+  "token-movement.settings.distanceThreshold.hint": "以格为单位的距离，达到或超过此时Token以配置的速度移动。低于此距离时，速度按比例增加。",
+  "token-movement.settings.suppressMovementVision.name": "抑制移动视野",
+  "token-movement.settings.suppressMovementVision.hint": "防止在Token移动动画期间揭示战争迷雾。战争迷雾仅在动画结束后在最终位置更新。"
+}

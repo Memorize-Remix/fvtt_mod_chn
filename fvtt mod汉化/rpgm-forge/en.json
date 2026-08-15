@@ -1,0 +1,83 @@
+{
+    "RPGM_TOOLS": {
+        "SIDEBAR": {
+            "TITLE": "RPGM Tools"
+        },
+        "LOGGING": {
+            "READY": "RPGM Tools has finished loading!"
+        },
+        "CONFIG": {
+            "SECRETS_SETTINGS": "Secrets",
+            "SECRETS_SETTINGS_LABEL": "Configure Secrets",
+            "SECRETS_SETTINGS_HINT": "View and manage api keys, and logins for AI services.",
+            "SECRETS_SETTINGS_SUBTITLE": "\"All right then, configure your secrets.\"",
+            "RADIAL_MENU_SETTINGS": "Radial Menu",
+            "RADIAL_MENU_SETTINGS_LABEL": "Configure Radial Menu",
+            "RADIAL_MENU_SETTINGS_HINT": "Configure settings related to the RPGM radial menu.",
+            "RADIAL_MENU_SETTINGS_SUBTITLE": "404: Witty remark not found",
+            "DEVELOPER_SETTINGS": "Developer Settings",
+            "DEVELOPER_SETTINGS_LABEL": "Configure Developer Settings",
+            "DEVELOPER_SETTINGS_HINT": "Other settings for testing RPGM Tools.",
+            "DEVELOPER_SETTINGS_SUBTITLE": "\"Developers, developers, developers, developers!\"",
+            "RADIAL_MENU_INPUT": "Radial Menu Inputs",
+            "RADIAL_MENU_INPUT_HINT": "Populate compatible input fields with a radial menu.",
+            "RADIAL_MENU_HUD": "Radial Menu Token HUD",
+            "RADIAL_MENU_HUD_HINT": "Enable the radial menu on the Token HUD.",
+            "RADIAL_MENU_DEBUG": "Radial Menu Debug Mode",
+            "RADIAL_MENU_DEBUG_HINT": "Shows options in the radial menu related to debugging."
+        },
+        "RADIAL_MENU": {
+            "INFO": "Info",
+            "COMMAND": "Command"
+        }
+    },
+    "RPGM_FORGE": {
+        "PROVIDERS": {
+            "RPGM": "AI-generated creative content (uses your daily text quota).",
+            "OFFLINE_NAMES": "Offline curated weighted list of fantasy names (no quota).",
+            "ADJECTIVE_NAMES": "Random adjective + base actor name (offline, no quota).",
+            "CUSTOM": "Custom provider model from your configured AI provider."
+        },
+        "HOMEBREW": {
+            "PLACEHOLDER": "Leave blank to let AI decide"
+        },
+        "CONFIG": {
+            "AUTO_NAME": "Auto Name Tokens",
+            "AUTO_NAME_HINT": "Tokens placed on the canvas will automatically be named. You can hold shift to bypass this feature.",
+            "RENAME_ACTORS": "Rename Actors",
+            "RENAME_ACTORS_HINT": "Whether to change a token actor's name when renaming the token.",
+            "LANGUAGE": "Language",
+            "LANGUAGE_HINT": "The language to use for AI-generated content.",
+            "SYSTEM": "System",
+            "SYSTEM_HINT": "The game system to base AI-generated content on.",
+            "GENRE": "Genre",
+            "GENRE_HINT": "The genre to base AI-generated content on."
+        },
+        "RADIAL_MENU": {
+            "D4": "Roll a D4",
+            "D6": "Roll a D6",
+            "LOREM_IPSUM": "Lorem Ipsum",
+            "START_SHIMMER": "Shimmer",
+            "STOP_SHIMMER": "Stop Shimmer",
+            "NAMES": "Generate Name",
+            "DESCRIPTION": "Generate Description",
+            "DELETE": "Delete",
+            "REGENERATE": "Regenerate",
+            "COPY": "Copy to clipboard",
+            "SEND_TO_JOURNAL": "Send to Jounal",
+            "OPEN_JOURNAL": "Open Journal"
+        },
+        "ERRORS": {
+            "TOKEN_SELECT": "Please select a token on the canvas and try again.",
+            "TOKEN_OWNER": "You must have ownership of the token to rename it.",
+            "TEXT_LIMIT": "You have reached your daily limit on text generations, but names will continue to generate offline."
+        },
+        "INIT": {
+            "TITLE": "Welcome to RPGM Forge!",
+            "PROMPT1": "Get started with free generation by signing up in the RPGM Tools sidebar!",
+            "PROMPT3": "Please confirm these options:",
+            "PROMPT4": "(You can change them later in settings)",
+            "BUTTON": "Open RPGM Tools Sidebar"
+        }
+    }
+}

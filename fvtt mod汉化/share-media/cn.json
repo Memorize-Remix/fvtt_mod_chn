@@ -1,0 +1,226 @@
+
+  "share-media": {
+    "base": {
+      "validate": "验证",
+      "cancel": "取消"
+    },
+
+    "ui.actions": {
+      "popoutAll": {
+        "label": "弹出",
+        "description": "在窗口中分享媒体"
+      },
+
+      "popoutSelection": {
+        "label": "弹出 → 指定用户",
+        "description": "选择特定用户进行分享"
+      },
+
+      "fullscreenAll": {
+        "label": "全屏",
+        "description": "全屏分享媒体"
+      },
+
+      "fullscreenSelection": {
+        "label": "全屏 → 指定用户",
+        "description": "选择特定用户进行分享"
+      },
+
+      "sceneFit": {
+        "label": "场景",
+        "description": "将媒体分享到当前场景（适应）"
+      },
+
+      "sceneFill": {
+        "label": "场景 → 填充",
+        "description": "将媒体分享到当前场景（填充）"
+      }
+    },
+
+    "ui.settings": {
+      "label": "设置",
+      "description": "配置媒体设置",
+
+      "categories": {
+        "popout": "弹出",
+        "fullscreen": "全屏",
+        "video": "视频"
+      },
+
+      "darkness": {
+        "label": "黑暗效果",
+        "description": "根据场景光照应用黑暗效果"
+      },
+
+      "immersive": {
+        "label": "沉浸模式",
+        "description": "隐藏FVTT UI控件"
+      },
+	  
+	  "controls": {
+        "label": "控件",
+        "description": "向玩家显示全屏控件"
+      },
+
+      "loop": {
+        "label": "循环",
+        "description": "循环播放视频"
+      },
+
+      "mute": {
+        "label": "静音",
+        "description": "静音音频"
+      }
+    },
+
+    "ui.sidebar": {
+      "label": "媒体历史记录",
+      "loading": "正在加载历史媒体",
+
+      "header": {
+        "link": {
+          "label": "分享链接"
+        },
+
+        "clear": {
+          "label": "清除历史记录",
+          "description": "<strong>确定吗？</strong> 媒体历史记录中的所有媒体将被永久删除。"
+        }
+      },
+
+      "gm-actions": {
+        "targetUsers.no-players": "未与任何玩家分享",
+        "share": "再次分享"
+      }
+    },
+
+    "layers.fullscreen": {
+      "dismiss": {
+        "label": "关闭"
+      },
+
+      "minimize": {
+        "label": "最小化"
+      },
+
+      "maximize": {
+        "label": "最大化"
+      }
+    },
+
+    "canvas.layer": {
+      "tool": {
+        "label": "切换媒体层",
+        "zero": "当前场景没有分享媒体，请先在场景上分享媒体再激活媒体层。"
+      },
+
+      "tile": {
+        "label": "分享媒体配置",
+        "enabled.label": "分享媒体图块",
+        "enabled.description": "将此图块启用为场景媒体分享的边界。",
+        "name.label": "图块名称",
+        "name.description": "图块标识符，便于识别你为场景分享选择的图块。",
+        "name.default": "分享媒体图块"
+      }
+    },
+
+    "shareables.selector": {
+      "entities.label": "分享此媒体",
+      "entities.contextmenu": "(右键点击分享表单媒体)",
+
+      "area": {
+        "label": "区域选择",
+        "description": "从列表中选择一个区域。悬停可预览区域，然后选择你偏好的区域。",
+        "zero": "未检测到分享媒体区域。<br><br><strong><u>区域</u></strong>: 你必须在当前场景上创建至少一个场景区域，其中包含<strong>至少一个形状</strong>，并且至少启用一种行为类型: \"{type}\"。<br><br><strong><u>图块</u></strong>: 你必须在当前场景上创建<strong>至少一个图块</strong>并启用分享媒体功能。"
+      },
+
+      "user": {
+        "label": "用户选择",
+        "description": "从列表中选择一个或多个用户。GM始终接收分享的媒体，除非被列入黑名单。"
+      },
+
+      "share": {
+        "label": "分享选择",
+        "description": "选择如何分享此媒体并配置所选分享方法的设置。准备好分享时点击验证。",
+
+        "link": {
+          "label": "媒体链接",
+          "description": "在字段中填写有效的媒体URL。"
+        },
+
+        "mode": {
+          "label": "分享方式"
+        },
+
+        "settings": {
+          "label": "{mode} 设置"
+        }
+      }
+    },
+
+    "settings": {
+      "mediaSettings": {
+        "label": "默认媒体设置",
+        "name": "配置默认媒体设置",
+        "hint": "配置与玩家分享媒体时将应用的默认设置。",
+        "description": "这些是分享媒体时将自动应用的默认设置。你可以根据需要为每个单独媒体覆盖这些设置。"
+      },
+
+      "mediaSidebarSettings": {
+        "label": "媒体侧边栏设置",
+        "name": "配置媒体侧边栏",
+        "hint": "配置媒体侧边栏的显示和访问设置。",
+        "description": "控制显示所有先前分享媒体的侧边栏的可见性和访问权限。配置侧边栏是否启用、是否仅限GM访问，以及控制侧边栏中显示哪些媒体分享方法。",
+        "options": {
+          "general": {
+            "label": "常规偏好",
+            "enabled.label": "启用侧边栏",
+            "enabled.hint": "启用侧边栏以显示分享的媒体历史记录。",
+            "gmOnly.label": "仅限GM",
+            "gmOnly.hint": "仅允许GM访问侧边栏。"
+          },
+          "layers": {
+            "label": "媒体分享方式",
+            "hint": "选择哪些分享方法将在媒体历史记录中跟踪并在侧边栏中显示。",
+            "popout.label": "弹出分享",
+            "popout.hint": "在侧边栏中显示在弹出窗口中分享的媒体。",
+            "fullscreen.label": "全屏分享",
+            "fullscreen.hint": "在侧边栏中显示在全屏模式下分享的媒体。",
+            "scene.label": "场景分享",
+            "scene.hint": "在侧边栏中显示分享到场景的媒体。"
+          }
+        }
+      },
+
+      "entitySharingSettings": {
+        "label": "实体分享设置",
+        "name": "配置实体分享设置",
+        "hint": "配置游戏实体的分享按钮和右键菜单项的显示方式。",
+        "description": "控制实体媒体分享设置的显示和行为。配置分享选项是否出现在Token上、作为表单的右键菜单项，或两者兼有，以及是否显示实体名称作为标题。",
+        "options": {
+          "sheet.label": "表单右键菜单",
+          "sheet.hint": "将媒体分享项添加到表单右键菜单中。",
+          "hud.label": "HUD按钮",
+          "hud.hint": "直接在HUD上显示媒体分享按钮。",
+          "caption.label": "显示实体标题",
+          "caption.hint": "在分享的媒体旁边显示实体名称。"
+        }
+      },
+
+      "blacklistSettings": {
+        "label": "用户黑名单",
+        "name": "配置用户黑名单",
+        "hint": "将特定用户排除在接收分享媒体之外。",
+        "description": "勾选要排除在接收分享媒体之外的用户旁边的复选框。"
+      }
+    }
+  },
+
+  "TYPES": {
+    "RegionBehavior": {
+      "share-media": {
+        "ShareRegion": "分享媒体区域"
+      }
+    }
+  }
+}

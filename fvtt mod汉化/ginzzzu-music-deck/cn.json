@@ -1,0 +1,82 @@
+
+
+
+  "ginzzzu-music-deck": {
+    "module": {
+      "title": "Ginzzzu's Music Deck",
+      "description": "FVTT的垂直音乐面板，可快速访问播放列表和曲目。"
+    },
+    "settings": {
+      "playlistButtonSize": {
+        "name": "面板宽度",
+        "hint": "播放列表按钮（折叠时）和搜索字段的大小。"
+      },
+      "maxExpandWidth": {
+        "name": "最大展开宽度",
+        "hint": "悬停时播放列表和曲目按钮展开的最大宽度（像素）。"
+      },
+	  "deckTopOffset": {
+		"name": "音乐面板顶部偏移（像素）",
+		"hint": "从屏幕顶部到音乐面板容器的距离，单位为像素"
+	  },
+	  "deckBottomOffset": {
+		"name": "音乐面板底部偏移（百分比）",
+		"hint": "从屏幕底部到音乐面板容器的百分比距离"
+	  },
+	  "deckRightOffset": {
+		"name": "音乐面板右侧偏移（像素）",
+		"hint": "从屏幕右边缘的额外偏移，在其他UI元素重叠时很有用"
+	  },
+	  "hidePlaylistMarker": {
+		"name": "隐藏以指定字符开头的播放列表",
+		"hint": "如果设置，任何名称以此字符（例如\"!\"）开头的播放列表将从音乐面板中隐藏。留空则禁用此功能"
+	  },
+	  "useFolderColor": {
+		"name": "使用文件夹颜色",
+		"hint": "如果启用，播放列表按钮背景将使用其文件夹颜色"
+	  },
+	  "collapseOthers": {
+		"name": "折叠其他播放列表",
+		"hint": "当展开一个播放列表时，其他所有播放列表将自动折叠"
+	  },
+	  "truncateFavoritePlaylists": {
+		"name": "截断收藏播放列表名称",
+		"hint": "如果禁用，收藏播放列表和\"收藏夹\"将始终显示完整名称（最多达到最大宽度）"
+	  },
+	  "sortColoredPlaylists": {
+		"name": "分组彩色播放列表",
+		"hint": "将具有自定义颜色的播放列表移动到普通播放列表上方（但在收藏夹下方），按字母顺序排序"
+	  },
+      "paletteColor1": { "name": "调色板颜色1" },
+      "paletteColor2": { "name": "调色板颜色2" },
+      "paletteColor3": { "name": "调色板颜色3" },
+      "paletteColor4": { "name": "调色板颜色4" },
+      "paletteColor5": { "name": "调色板颜色5" },
+      "paletteColor6": { "name": "调色板颜色6" },
+      "paletteColor7": { "name": "调色板颜色7" },
+      "paletteColor8": { "name": "调色板颜色8" },
+      "paletteColor9": { "name": "调色板颜色9" },
+	  
+      "paletteColor": {
+        "baseName": "颜色",
+        "hint": "音乐面板调色板中使用的颜色。你可以输入十六进制代码或安装\"Color Picker\"模组通过拾色器选择颜色。"
+      }
+    },
+    "ui": {
+      "searchPlaceholder": "搜索...",
+      "untitled": "（无标题）",
+      "untitledPlaylist": "（播放列表）",
+      "favoritesTitle": "收藏夹",
+      "favoritesTooltip": "音乐面板的收藏曲目",
+      "favoritesClearTooltip": "清空收藏夹（移除所有曲目）",
+      "favoritesDialogTitle": "清空收藏夹？",
+      "favoritesDialogContent": "<p>所有曲目将从<strong>\"收藏夹\"</strong>播放列表中移除，但仍保留在其原始播放列表中。</p>",
+      "playlistPlayTitle": "开始播放列表（标准全部播放）",
+      "playlistStopTitle": "停止播放列表（标准停止）",
+      "colorPickerClearOne": "移除此播放列表的颜色",
+      "colorPickerClearAll": "重置所有颜色",
+      "aliasEditWithAlias": "在收藏夹中重命名曲目",
+      "aliasEditNoAlias": "为此收藏曲目设置名称"
+    }
+  }
+}

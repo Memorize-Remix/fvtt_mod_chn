@@ -1,0 +1,102 @@
+{
+  "languages-rp": {
+    "ui": {
+      "languageConfiguration": "Language Configuration",
+      "proficiencyLevelsConfiguration": "Proficiency Levels Configuration",
+      "addLanguage": "Add Language",
+      "removeLanguage": "Remove",
+      "languageName": "Language Name",
+      "encryptionKey": "Encryption Key",
+      "font": "Font",
+      "preview": "Preview",
+      "proficiencyLevel": "Proficiency Level",
+      "availableProficiencyLevels": "Available Proficiency Levels",
+      "availableLanguages": "Available Languages",
+      "noLevel": "None",
+      "save": "Save",
+      "cancel": "Cancel",
+      "resetDefaults": "Reset to Defaults",
+      "loadingError": "Loading error",
+      "invalidFont": "Invalid font",
+      "noFontSelected": "No font selected",
+      "browseFiles": "Browse files",
+      "fontPath": "Font file path",
+      "levelColor": "Level color",
+      "note": "Note",
+      "levelsSortNote": "Levels are sorted by ascending value when saving.",
+      "nativeLevelNote": "The level with value 1.0 represents full comprehension (native level).",
+      "manageLanguages": "Manage Languages",
+      "languageManagement": "Language Management",
+      "languageEditor": "{name} Editor",
+      "insert": "Insert",
+      "languagesMenu": "Languages Menu",
+      "enterText": "Enter text to insert",
+      "encrypt": "Encrypt",
+      "addLanguageButton": "Add a language",
+      "levelName": "Level name",
+      "percentage": "Percentage"
+    },
+    "proficiencyLevels": {
+      "beginner": "beginner",
+      "intermediate": "intermediate",
+      "advanced": "advanced",
+      "native": "native"
+    },
+    "messages": {
+      "clickToDecrypt": "Click to decrypt",
+      "languageNotKnown": "You don't know this language",
+      "languageNotStudied": "Language not studied",
+      "unknownLanguage": "{name} - Untranslated",
+      "translatedAs": "{name} - {level}"
+    },
+    "settings": {
+      "languages": {
+        "name": "Available Languages",
+        "label": "Configure",
+        "hint": "Configure the languages available to your players"
+      },
+      "proficiencyLevels": {
+        "name": "Linguistic Proficiency Levels",
+        "label": "Configure",
+        "hint": "Configure linguistic proficiency levels and their percentages",
+        "reset": {
+          "title": "Reset Proficiency Levels",
+          "content": "Are you sure you want to reset all proficiency levels to their default values? This action is irreversible."
+        }
+      }
+    },
+    "notifications": {
+      "noLanguagesConfigured": "No languages are configured. Please ask the GM to configure available languages.",
+      "allLanguagesAssigned": "All available languages have already been assigned to this actor."
+    },
+    "updates": {
+      "title": "The module has been updated to version 1.5!",
+      "content": [
+        {
+          "title": "New Features",
+          "list" : [
+            "Encryption of similar words now yields distinct outputs.",
+            "Decryption is now player-specific, so two players will decrypt the same word differently."
+          ]
+        },
+        {
+          "title": "Fix 1.5.1",
+          "list" : [
+            "Fixed an issue where already encrypted words were being re-encrypted."
+          ]
+        },
+        {
+          "title": "Fix 1.5.2",
+          "list" : [
+            "Display of language names and levels in settings instead of IDs.",
+            "Correct display of levels when configuring an actor's languages. Previously, the level shown at the top of the list was not the actual level."
+          ]
+        }
+      ],
+      "version": {
+        "name": "Last Seen Version",
+        "hint": "Stores the last version of the module shown to the user"
+      }
+    }
+  }
+} 

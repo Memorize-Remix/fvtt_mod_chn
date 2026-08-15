@@ -1,0 +1,227 @@
+
+  "SNOOT": {
+    "App": {
+      "Title": "Snoot"
+    },
+    "Settings": {
+      "Menu": {
+        "Name": "Snoot 数据嗅探器",
+        "Label": "嗅探数据",
+        "Hint": "打开 Snoot 以查找和清理孤立的模组数据。"
+      },
+      "ShowCoreFlags": {
+        "Name": "显示 Foundry 核心标志",
+        "Hint": "在扫描结果中包含 Foundry 核心标志。此功能大部分未经测试，可能会产生嘈杂的结果。"
+      },
+      "ShowSystemFlags": {
+        "Name": "显示系统标志",
+        "Hint": "在扫描结果中包含游戏系统标志。此功能大部分未经测试，可能会产生嘈杂的结果。"
+      }
+    },
+    "Tab": {
+      "HowTo": "使用指南",
+      "Overview": "概览",
+      "Settings": "设置",
+      "FlagsWorld": "世界标志",
+      "FlagsCompendiums": "合集标志"
+    },
+    "HowTo": {
+      "Disclaimer": {
+        "Title": "在清理任何内容之前备份你的世界。",
+        "Body": "Snoot 会删除设置并移除标志。没有撤销功能。请先备份你的世界。"
+      },
+      "About": {
+        "Title": "Snoot 的功能",
+        "Body": "Snoot 扫描每个世界和合集文档上的世界设置和标志，按模组分组，并允许你删除由已卸载或已禁用模组留下的数据。"
+      },
+      "Status": {
+        "Title": "状态",
+        "System": "属于 Foundry 或你的游戏系统。",
+        "Active": "相关模组已安装并启用。",
+        "Inactive": "相关模组已安装但已禁用。",
+        "Orphaned": "未找到相关的已安装模组。",
+        "StaleLabel": "陈旧",
+        "Stale": "存储的设置，其key不再由其模组声明。"
+      },
+      "Tabs": {
+        "Title": "标签页",
+        "Overview": "按模组摘要，包含状态徽记、条目计数和清理操作。包括孤立和陈旧数据的总计数。",
+        "Settings": "存储中的每个世界设置，按命名空间分组。删除单个设置或命名空间的所有设置。",
+        "FlagsWorld": "在世界文档上找到的每个标志范围，按模组分组。",
+        "FlagsCompendiums": "在合集文档上找到的每个标志范围。"
+      },
+      "Workflow": {
+        "Title": "推荐工作流程",
+        "Step1": "备份你的世界。",
+        "Step2": "打开概览标签页并查看孤立和陈旧的计数。",
+        "Step3": "在清理之前，在每个标签页视图中检查每个命名空间拥有的内容。",
+        "Step4": "首先清理孤立数据，然后单独审查非激活和陈旧条目。"
+      }
+    },
+    "Status": {
+      "system": "系统",
+      "active": "激活",
+      "inactive": "非激活",
+      "orphaned": "孤立"
+    },
+    "StatusHint": {
+      "system": "Foundry 核心或游戏系统数据",
+      "active": "模组已安装并启用",
+      "inactive": "模组已安装但已禁用",
+      "orphaned": "模组不再安装"
+    },
+    "Overview": {
+      "OrphanedSettings": "孤立设置",
+      "OrphanedWorldFlags": "孤立世界标志",
+      "OrphanedCompendiumFlags": "孤立合集标志",
+      "StaleSettings": "陈旧设置",
+      "ModuleList": "拥有世界数据的模组"
+    },
+    "Label": {
+      "Module": "模组",
+      "Status": "状态",
+      "Data": "数据",
+      "Actions": "操作",
+      "Key": "key",
+      "Value": "值",
+      "Registered": "已注册",
+      "Document": "文档",
+      "Type": "类型",
+      "FlagKeys": "标志key",
+      "Pack": "合集包",
+      "Count": "条目数"
+    },
+    "Action": {
+      "CleanModule": "清理模组",
+      "CleanAllOrphaned": "清理所有孤立数据",
+      "CleanAllInactive": "清理所有非激活数据",
+      "CleanAllStale": "清理所有陈旧数据",
+      "Rescan": "重新扫描",
+      "Skip": "跳过",
+      "Delete": "删除",
+      "DeleteAll": "全部删除",
+      "Remove": "移除",
+      "RemoveAll": "全部移除"
+    },
+    "Confirm": {
+      "CleanModule": {
+        "Title": "清理模组数据",
+        "Content": "删除 <strong>{module}</strong> 的所有设置并移除所有标志？此操作无法撤销。"
+      },
+      "CleanAll": {
+        "Title": "清理所有孤立数据",
+        "Content": "删除每个孤立模组的所有设置并移除所有标志？孤立模组不再安装。此操作无法撤销。"
+      },
+      "CleanInactive": {
+        "Title": "清理所有非激活数据",
+        "Content": "删除每个非激活模组的所有设置并移除所有标志？非激活模组已安装但已禁用。此操作无法撤销。"
+      },
+      "CleanStale": {
+        "Title": "清理所有陈旧设置",
+        "Content": "删除每个模组中所有未注册（陈旧）的设置？此操作无法撤销。"
+      },
+      "DeleteSetting": {
+        "Title": "删除设置",
+        "Content": "删除设置 <code>{key}</code>？此操作无法撤销。"
+      },
+      "DeleteModuleSettings": {
+        "Title": "删除模组设置",
+        "Content": "删除 <strong>{module}</strong> 的所有设置？此操作无法撤销。"
+      },
+      "RemoveScope": {
+        "Title": "移除标志范围",
+        "Content": "从每个世界文档中移除所有 <strong>{scope}</strong> 标志？此操作无法撤销。"
+      },
+      "RemoveCompendiumScope": {
+        "Title": "移除合集标志范围",
+        "Content": "从每个合集文档中移除所有 <strong>{scope}</strong> 标志？合集包将暂时解锁。此操作无法撤销。"
+      },
+      "RemoveDocFlag": {
+        "Title": "移除文档标志",
+        "Content": "从 <strong>{name}</strong> 中移除 <strong>{scope}</strong> 标志？此操作无法撤销。"
+      },
+      "Rescan": {
+        "Title": "清理后重新扫描？",
+        "Content": "重新扫描世界和合集数据以刷新显示？拒绝将保持当前视图显示陈旧数据，直到你手动点击重新扫描。"
+      }
+    },
+    "Scan": {
+      "Start": "正在嗅探世界数据…",
+      "Settings": "已扫描设置",
+      "WorldFlags": "已扫描世界文档",
+      "Pack": "正在扫描合集包：{label}",
+      "Complete": "扫描完成！"
+    },
+    "Progress": {
+      "CleaningModule": "正在清理模组…",
+      "CleaningOrphaned": "正在清理孤立模组…",
+      "CleaningInactive": "正在清理非激活模组…",
+      "CleaningStale": "正在删除陈旧设置…",
+      "RemovingFlags": "正在移除世界标志…",
+      "RemovingCompendiumFlags": "正在移除合集标志…",
+      "DeletingSettings": "正在删除设置…",
+      "Complete": "完成。",
+      "Module": "正在清理：{module}",
+      "Doc": "文档：{name}",
+      "Pack": "合集包：{label}",
+      "Stage": {
+        "Settings": "设置",
+        "WorldFlags": "世界标志",
+        "CompendiumFlags": "合集标志"
+      }
+    },
+    "Notify": {
+      "SettingNotFound": "未找到设置 \"{key}\"。",
+      "DeletedSetting": "已删除设置：{key}",
+      "DeletedSettings": "已删除 \"{namespace}\" 的 {count} 个设置。",
+      "RemovedFlagsFrom": "已从 {name} 中移除 \"{scope}\" 标志。",
+      "RemovedFlags": "已从 {count} 个文档中移除 \"{scope}\" 标志。",
+      "RemovedCompendiumFlags": "已从 {count} 个合集文档中移除 \"{scope}\" 标志。",
+      "DocNotFound": "未找到文档：{uuid}",
+      "CleanedModule": "已清理模组 \"{module}\"。",
+      "CleanedOrphaned": "已清理 {count} 个孤立模组。",
+      "CleanedInactive": "已清理 {count} 个非激活模组。",
+      "DeletedStale": "已删除 {count} 个陈旧设置。"
+    },
+    "Search": {
+      "Placeholder": "搜索…"
+    },
+    "Tooltip": {
+      "Search": "按名称、key或值过滤条目",
+      "Toggle": "展开或折叠此命名空间",
+      "Registered": "由其模组注册",
+      "Stale": "key未由其模组声明。通常已重命名或移除。",
+      "Card": {
+        "OrphanedSettings": "由未安装模组拥有的设置",
+        "OrphanedWorldFlags": "由未安装模组拥有的世界文档标志",
+        "OrphanedCompendiumFlags": "由未安装模组拥有的合集文档标志",
+        "StaleSettings": "key不再由其模组声明的设置"
+      },
+      "Col": {
+        "Module": "拥有数据的模组 ID",
+        "Status": "拥有模组是否已安装、启用或缺失",
+        "Count": "此模组拥有的设置和标志文档总数",
+        "Data": "此模组拥有的数据类型",
+        "Key": "设置key",
+        "Value": "存储的值",
+        "Registered": "key是否由模组声明",
+        "Document": "持有标志的文档",
+        "Type": "文档类型",
+        "Pack": "合集包",
+        "FlagKeys": "顶级标志key",
+        "Actions": "每行操作"
+      },
+      "Data": {
+        "Settings": "拥有世界设置",
+        "WorldFlags": "在世界文档上有标志",
+        "CompendiumFlags": "在合集文档上有标志",
+        "Stale": "拥有陈旧（未注册）设置"
+      }
+    },
+    "Empty": {
+      "Settings": "在世界存储中未找到模组设置。",
+      "WorldFlags": "在世界文档中未找到标志范围。",
+      "CompendiumFlags": "在合集文档中未找到标志范围。"
+    }
+  }
+}

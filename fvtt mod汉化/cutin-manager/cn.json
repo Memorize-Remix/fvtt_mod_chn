@@ -1,0 +1,290 @@
+
+  "CIM": {
+    "ControlTitle": "特写管理器",
+    "Export": "导出",
+    "Import": "导入",
+    "Token": "Token",
+    "Pc": "玩家角色",
+    "Npc": "NPC",
+    "GameMaster": "GM",
+    "Players": "玩家",
+    "List": {
+      "Title": "特写管理器",
+      "New": "添加特写",
+      "Play": "播放",
+      "Edit": "编辑",
+      "Duplicate": "复制",
+      "Delete": "删除",
+      "ToggleOn": "禁用",
+      "ToggleOff": "启用",
+      "Tooltips": {
+        "ScanIds": "特写 ID 列表"
+      }
+    },
+    "Delete": {
+      "Title": "删除特写",
+      "Confirm": "确定要删除特写\"<strong>{name}</strong>\"吗？"
+    },
+    "Trigger": {
+      "DefaultName": "特写",
+      "Title": "特写设置",
+      "TitleNew": "新建特写",
+      "TitleEdit": "编辑特写",
+      "TabTrigger": "触发",
+      "TabCutin": "特写",
+      "TabScript": "脚本",
+      "Preview": "预览",
+      "Save": "保存更改",
+      "Tooltips": {
+        "EditId": "特写 ID: {id}",
+        "InvertCondition": "反转条件",
+        "PasteSettings": "粘贴特写设置",
+        "ExportCutin": "导出特写"
+      },
+      "AddTrigger": "添加触发",
+      "TitleContainer": "编辑容器",
+      "TitleContainerNew": "新建容器",
+      "TitleContainerEdit": "编辑容器: {name}",
+      "ApplyChanges": "应用更改",
+      "TokenPickerInfo": "点击场景中的Token以选择它。",
+      "NoTokenSelected": "未选择Token",
+      "Key": {
+        "SupportTriggerHelp": "支持：用于细化条件的触发。本身不单独起作用。",
+        "Container": {
+          "TypeName": "触发容器",
+          "Label": "容器备注",
+          "Description": "将多个触发分组到一个容器中。",
+          "Empty": "无触发"
+        },
+        "ChatMessage": {
+          "TypeName": "聊天消息",
+          "Label": "关键词",
+          "Description": "基于聊天消息中的特定关键词触发。",
+          "PartialMatch": "部分匹配",
+          "ExactMatch": "精确匹配",
+          "StartsWith": "开头匹配",
+          "EndsWith": "结尾匹配",
+          "DisplayKeyword": "在消息中显示关键词"
+        },
+        "DiceRollTotal": {
+          "TypeName": "掷骰总数",
+          "Description": "基于掷骰的总结果触发。",
+          "Total": "总数",
+          "DiceTotal": "骰子总数"
+        },
+        "DiceRollDice": {
+          "TypeName": "骰子",
+          "Description": "基于掷骰的单个骰子结果触发。",
+          "Dice": "骰子",
+          "Count": "数量"
+        },
+        "DiceRollFormula": {
+          "TypeName": "掷骰公式",
+          "Description": "基于掷骰的公式触发。",
+          "FormulaLabel": "掷骰公式"
+        },
+        "CombatStart": {
+          "TypeName": "战斗开始",
+          "Description": "当战斗开始时触发。使用NOT结束触发。",
+          "OnCreate": "战斗创建时",
+          "OnStart": "战斗开始时"
+        },
+        "RoundStart": {
+          "TypeName": "战斗轮开始",
+          "Description": "当战斗轮开始时触发。使用NOT结束触发。",
+          "All": "所有战斗轮",
+          "Specific": "特定战斗轮",
+          "EveryN": "每N战斗轮",
+          "EvenOdd": "偶数/奇数战斗轮",
+          "Even": "偶数战斗轮",
+          "Odd": "奇数战斗轮",
+          "GreaterThan": "战斗轮大于或等于",
+          "LessThan": "战斗轮小于或等于",
+          "Mode": "模式",
+          "Value": "例如: 1, 3-5, 8",
+          "EverySummary": ": 每",
+          "GreaterSummary": ": 之后",
+          "LessSummary": ": 之前"
+        },
+        "TurnStart": {
+          "TypeName": "回合开始",
+          "Description": "当战斗回合开始时触发。使用NOT结束触发。"
+        },
+        "CutinPlayback": {
+          "TypeName": "特写播放",
+          "Description": "当另一个特写播放时触发。",
+          "TargetCutin": "目标特写",
+          "Timing": "时机",
+          "Delay": "延迟(毫秒)",
+          "ManualInput": "手动输入ID",
+          "OnStart": "开始时",
+          "OnEnd": "结束时",
+          "AfterDelay": "延迟后"
+        },
+        "MessageType": {
+          "TypeName": "消息类型",
+          "Description": "基于聊天消息类型触发。限制聊天消息、掷骰总数、骰子、掷骰公式。",
+          "IC": "角色",
+          "OOC": "超游",
+          "ROLL": "掷骰",
+          "Whisper": "私聊",
+          "OTHER": "其他"
+        },
+        "TriggeringCharacter": {
+          "TypeName": "触发角色",
+          "Description": "基于执行角色触发。限制聊天消息、掷骰总数、骰子、掷骰公式、回合开始和回合激活触发。"
+        },
+        "TriggeringPlayer": {
+          "TypeName": "触发玩家",
+          "Description": "基于执行动作的用户触发。限制聊天消息、掷骰总数、骰子、掷骰公式、回合开始和回合激活触发。"
+        },
+        "CombatState": {
+          "TypeName": "战斗中",
+          "Label": "条件",
+          "Description": "在战斗期间触发。"
+        },
+        "TurnActive": {
+          "TypeName": "回合激活",
+          "Description": "在战斗者的回合期间触发。"
+        },
+        "Target": {
+          "TypeName": "目标",
+          "Description": "基于用户的目标选择触发。",
+          "Any": "任意目标",
+          "PcOnly": "仅玩家角色",
+          "NpcOnly": "仅NPC",
+          "Specific": "指定角色",
+          "SpecifyCharacter": "角色",
+          "SpecifyToken": "指定Token"
+        }
+      },
+      "BlockTitleMedia": "图片/视频",
+      "BlockTitleAudio": "音频",
+      "BlockTitleText": "文本",
+      "FilePath": "文件路径",
+      "OptionsTitle": "高级选项",
+      "IncludeSidebar": "包含侧边栏区域",
+      "ScaleMode": "缩放模式",
+      "ScaleModeNone": "无(100%)",
+      "ScaleModeMaximize": "适应屏幕",
+      "ScaleModeCustom": "自定义",
+      "KeepAspectRatio": "保持宽高比",
+      "Magnification": "自定义放大率(%)",
+      "AnchorMode": "位置",
+      "AnchorModeCenter": "居中",
+      "AnchorModeTop": "顶部",
+      "AnchorModeBottom": "底部",
+      "AnchorModeLeft": "左侧",
+      "AnchorModeRight": "右侧",
+      "AnchorModeTopLeft": "左上",
+      "AnchorModeTopRight": "右上",
+      "AnchorModeBottomLeft": "左下",
+      "AnchorModeBottomRight": "右下",
+      "AnchorModeCustom": "自定义",
+      "CustomAnchor": "自定义位置(最小值:0 最大值:1.0)",
+      "Playback": "播放",
+      "PlayModeOnce": "一次",
+      "PlayModeRepeat": "重复",
+      "PlayModeFixed": "固定时间",
+      "Repetitions": "重复次数",
+      "Duration": "持续时间(毫秒)",
+      "Delay": "延迟(毫秒)",
+      "Fade": "淡入淡出",
+      "In": "淡入(毫秒)",
+      "Out": "淡出(毫秒)",
+      "Volume": "图片/视频文件音量",
+      "AudioVolume": "音频文件音量",
+      "AudioPlayback": "音频播放",
+      "TextLabel": "文本",
+      "StrokeSettings": "描边",
+      "SizeUnit": "大小(像素)",
+      "ExecutionMode": "执行模式",
+      "ExecutionModeCutinOnly": "仅执行特写",
+      "ExecutionModeCutinAndScript": "执行特写和脚本",
+      "ExecutionModeScriptOnly": "仅执行脚本",
+      "ScriptLabel": "脚本"
+    },
+    "ExportDialog": {
+      "ConfirmationText": "将特写导出到JSON文件？",
+      "FileName": "文件名",
+      "ConfirmationTextSingle": "将\"{name}\"导出到JSON文件？",
+      "ConfirmationTextAll": "将所有特写导出到JSON文件。"
+    },
+    "ImportDialog": {
+      "ImportMode": "导入模式",
+      "AddImport": "添加特写",
+      "OverwriteImport": "覆盖所有特写",
+      "AddDescription": "新的特写将被添加到现有列表中。你可以选择跳过或重命名具有重复ID的特写。",
+      "OverwriteDescription": "所有现有特写将被删除并替换为导入的特写。此操作无法撤销。",
+      "SkipDuplicates": "跳过具有重复ID的特写",
+      "FilePath": "文件路径"
+    },
+    "Cleanup": {
+      "ConfirmTitle": "清理未使用数据",
+      "ConfirmContent": "<p>找到<strong>{count}</strong>个未使用的触发。</p><p>确定要删除它们吗？此操作无法撤销。</p>"
+    },
+    "IdList": {
+      "Title": "特写 ID 列表",
+      "NoneConfigured": "未配置任何特写。"
+    },
+    "IdEdit": {
+      "Title": "编辑特写 ID",
+      "Label": "特写 ID"
+    },
+    "FilePicker": {
+      "ImportTitle": "选择导入文件"
+    },
+    "Settings": {
+      "PlayerPermission": {
+        "Name": "允许玩家查看特写列表",
+        "Hint": "开启：玩家可以查看特写列表并从列表播放特写。关闭：玩家只能通过触发播放特写。"
+      },
+      "ImageDuration": {
+        "Name": "图片标准持续时间(毫秒)",
+        "Hint": "设置当特写为静态图片时单次播放的持续时间。如果重复播放，每次重复都将使用此持续时间。"
+      },
+      "Cleanup": {
+        "Name": "清理未使用数据",
+        "Hint": "扫描并移除特写管理器中的未使用数据。",
+        "Label": "清理"
+      },
+      "ShowTriggerDescription": {
+        "Name": "显示触发描述",
+        "Hint": "如果启用，将在特写设置窗口中显示每种触发类型的简要描述。"
+      }
+    },
+    "Notifications": {
+      "IdCopied": "已复制ID到剪贴板。",
+      "ExportSuccess": "成功导出\"{fileName}\"。",
+      "AddImportSuccess": "成功添加{importedCount}个特写。(跳过: {skippedCount}, 重命名: {renamedCount})",
+      "OverwriteImportSuccess": "成功覆盖所有特写。导入了{count}个特写。",
+      "AllCutinsStopped": "所有特写已停止。",
+      "AllCutinsHalted": "所有特写已停止并禁用。",
+      "ChangesStaged": "更改已暂存。保存主特写设置以使其永久生效。",
+      "OrphansFound": "Cut-in Manager | 找到{count}个未使用数据。你可以运行清理。",
+      "NoOrphansFound": "未找到未使用数据。一切都很干净！",
+      "CleanupSuccess": "成功删除{count}个未使用数据。"
+    },
+    "Error": {
+      "NoMediaPath": "特写'{name}'已触发，但未设置特写。",
+      "CannotPlayNoMedia": "未设置特写。",
+      "NotFound": "未找到ID为'{id}'的特写。",
+      "CannotBeEmpty": "ID不能为空。",
+      "AlreadyExists": "该ID已被使用。",
+      "ScriptGenerationError": "无法生成脚本。请确保文件路径正确。",
+      "SequencerNotActive": "特写管理器需要激活'Sequencer'模组。",
+      "ScriptExecutionError": "执行\"{name}\"的自定义脚本时出错。",
+      "NoFileSelected": "未选择导入文件。",
+      "FileNotFound": "在路径{path}找不到文件。请确保文件已上传到Foundry VTT的数据目录。",
+      "FileReadError": "读取文件时出错: {error}",
+      "EmptyFileContent": "文件内容为空。",
+      "InvalidJson": "JSON格式无效: {error}",
+      "InvalidImportFile": "导入文件格式无效。预期为'cutins'数组。",
+      "DuplicateIdSkipped": "由于重复ID，跳过特写\"{name}\"(ID: {id})。",
+      "DuplicateIdRenamed": "由于重复ID，特写\"{name}\"(旧ID: {oldId})已重命名为\"{newId}\"。",
+      "CutinNotFound": "指定的特写 ID'{id}'不存在。请检查触发设置。",
+      "TargetNotFound": "指定的角色/Token\"{name}\"不存在。请检查触发设置。",
+      "PlayerNotFound": "指定的玩家\"{name}\"不存在。请检查触发设置。"
+    }
+  }
+}

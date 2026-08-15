@@ -1,0 +1,521 @@
+{
+    "simple-quest": {
+        "settings": {
+            "showHistory": {
+                "name": "Show History",
+                "hint": "Show a history bar at the top of the Simple Quest window."
+            },
+            "tabConfig": {
+                "name": "Tab Configuration",
+                "hint": "Configure the Simple Quest tabs names.",
+                "label": "Configure Tab Names"
+            },
+            "themeConfig": {
+                "name": "Theme Configuration",
+                "hint": "Configure the Simple Quest theme.",
+                "label": "Configure Theme"
+            },
+            "hideCheckboxAutoHide": {
+                "name": "Show 'hide' checkbox only on hover",
+                "hint": "If enabled, the 'hide' checkbox will only be shown when hovering over the checkbox."
+            },
+            "folderName": {
+                "name": "Folder Name",
+                "hint": "The name of the folder containing the Simple Quest journals",
+                "default": "Quests"
+            },
+            "mapsJournalName": {
+                "name": "Maps Journal Name",
+                "hint": "The name of the journal containing the Simple Quest maps",
+                "default": "Maps"
+            },
+            "timelineJournalName": {
+                "name": "Timeline Journal Name",
+                "hint": "The name of the journal containing the Simple Quest timeline",
+                "default": "Timeline"
+            },
+            "achievementsJournalName": {
+                "name": "Achievements Journal Name",
+                "hint": "The name of the journal containing the Simple Quest achievements",
+                "default": "Achievements"
+            },
+            "loreFolderName": {
+                "name": "Lore Folder Name",
+                "hint": "The name of the folder containing the Simple Quest lore",
+                "default": "Lore"
+            },
+            "partyJournalName": {
+                "name": "Party Journal Name",
+                "hint": "The name of the journal entry that will contain the party's notes",
+                "default": "Party"
+            },
+            "sharedJournalName": {
+                "name": "Shared Journal Name",
+                "hint": "The name of the journal page that will contain the shared notes",
+                "default": "Shared"
+            },
+            "backgroundColor": {
+                "name": "Background Color",
+                "hint": "Simple Quest's background color"
+            },
+            "labelColor": {
+                "name": "Global Label Color",
+                "hint": "If set, all Map Labels color will be overridden by this color. Type 'none' to disable."
+            },
+            "invertTheme": {
+                "name": "Invert Theme",
+                "hint": "Whether to invert the Simple Quest theme. Note that inverting the theme might produce unexpected results."
+            },
+            "matchJournalStyle": {
+                "name": "Match Journal Style",
+                "hint": "If enabled, attempt to match special styles applied to journals. Can have side effects depending on the theme."
+            },
+            "textColor": {
+                "name": "Text Color",
+                "hint": "Simple Quest's text color"
+            },
+            "secretColor": {
+                "name": "Secret Color",
+                "hint": "Simple Quest's color for secret quest objectives"
+            },
+            "failedColor": {
+                "name": "Failed Color",
+                "hint": "Simple Quest's color for failed quest objectives"
+            },
+            "hideFolderFromPlayers": {
+                "name": "Hide Folder From Players",
+                "hint": "Whether to hide the Simple Quest folder from players"
+            },
+            "fontFamily": {
+                "name": "Font Family",
+                "hint": "The font family to use for Simple Quest"
+            },
+            "useMessageTheme": {
+                "name": "Chat Message Theme",
+                "hint": "Whether to use a custom theme for the Simple Quest chat messages"
+            },
+            "showQuestNotifications": {
+                "name": "Show Quest Notifications",
+                "hint": "Whether to show notifications when a quest is updated or shared to chat"
+            },
+            "newQuestSoundEffect": {
+                "name": "New Quest Sound Effect",
+                "hint": "The sound effect to play when a new quest notification is displayed"
+            },
+            "updateQuestSoundEffect": {
+                "name": "Update Quest Sound Effect",
+                "hint": "The sound effect to play when a quest update notification is displayed"
+            },
+            "matchJournalPermission": {
+                "name": "Match Journal Permission",
+                "hint": "Whether to match the Simple Quest should match user permissions for quests, in addition to the hidden status. When this setting is disabled, all quests will be visible to all players unless they have been set to hidden. Note that by enabling this setting, players will be able to see hidden quest objectives by opening the regular journal."
+            },
+            "openJournalPinsAsModals": {
+                "name": "Open Map Markers as Modals",
+                "hint": "If a map marker is linked to a journal page and the page is not a Simple Quest page, open the page as a modal on top of the map instead of opening the page in the journal."
+            },
+            "enableQuests": {
+                "name": "Enable Quests",
+                "hint": "Whether to enable the Quests tab"
+            },
+            "enablePartyJournal": {
+                "name": "Enable Party Journal",
+                "hint": "Whether to enable the Party Journal tab"
+            },
+            "enableMyJournal": {
+                "name": "Enable My Journal",
+                "hint": "Whether to enable the My Journal tab"
+            },
+            "enableMaps": {
+                "name": "Enable Maps",
+                "hint": "Whether to enable the Maps tab"
+            },
+            "enableTimeline": {
+                "name": "Enable Timeline",
+                "hint": "Whether to enable the Timeline tab"
+            },
+            "enableAchievements": {
+                "name": "Enable Achievements",
+                "hint": "Whether to enable the Achievements tab"
+            },
+            "enableLore": {
+                "name": "Enable Lore",
+                "hint": "Whether to enable the Lore tab"
+            },
+            "headerOnlyFont": {
+                "name": "Header Font",
+                "hint": "Font to use for headers, if 'default' is selected, the default font will be used"
+            },
+            "imagePageMask": {
+                "name": "Image Page Mask",
+                "hint": "The mask to use for image pages. Leave empty for no mask."
+            }
+        },
+        "simple-quest": {
+            "title": "Simple Quest",
+            "windowedModeToggle": "Toggle Windowed Mode",
+            "tabs": {
+                "quests": "Quests",
+                "map": "Map",
+                "lore": "Lore",
+                "timeline": "Timeline",
+                "achievements": "Achievements",
+                "my-journal": "My Journal",
+                "party-journal": "Party Journal",
+                "tab": "Tab"
+            },
+            "move-to": "Move to...",
+            "moveQuest": {
+                "error": "You don't have permission to move quests to that category."
+            },
+            "tooltip": {
+                "add-quest": "Add Quest",
+                "add-map": "Add Map",
+                "add-lore": "Add Lore",
+                "add-page": "Add Page",
+                "edit-lore": "Edit Lore",
+                "configure-lore-permissions": "Configure Permissions",
+                "map-help": "How to use the Maps Tab",
+                "edit-quest": "Edit Quest",
+                "delete-quest": "Delete Quest",
+                "delete-lore": "Delete Lore",
+                "share-quest": "Send to Chat",
+                "duplicate-quest": "Duplicate Quest",
+                "duplicate-map": "Duplicate Map",
+                "delete-map": "Delete Map",
+                "duplicate-lore": "Duplicate Lore",
+                "mark-updated": "Mark Quest as Updated",
+                "add-category": "Add Category",
+                "edit-map": "Edit Map",
+                "reset-fow": "Reset/Enable Fog of War",
+                "fow-brush-size": "Fog of War Brush Size",
+                "measure": "100px = 1mi",
+                "lock-pins": "Lock / Unlock Markers",
+                "show-players": "Open for Players",
+                "edit": "Edit",
+                "duplicate": "Duplicate",
+                "delete": "Delete",
+                "toggle-completed": "Show Completed"
+            }
+        },
+        "timeline-config": {
+            "title": "Edit Timeline Event",
+            "label": "Label",
+            "labelNote": "The label of the event. This will be displayed above the year. It can be used for a specific date or other information.",
+            "banner": "Banner",
+            "hidden": "Hidden",
+            "year": "Year",
+            "duration": "Duration (Years)",
+            "era": "Era",
+            "event": "Event",
+            "general": "Global",
+            "to": "to",
+            "generalNote": "These settings will apply to the whole timeline.",
+            "icon": "Icon",
+            "isEra": "Is Era?",
+            "eraStart": "Start of Era",
+            "eraEnd": "End of Era",
+            "flipped": "Flipped",
+            "offset": "Offset (px)",
+            "description": "Edit Contents",
+            "negativeAbb": "Negative Year Abbreviation",
+            "showMinus": "Show Minus Sign",
+            "positiveAbb": "Positive Year Abbreviation",
+            "timeScale": "Time Scale",
+            "dynamicTimeScale": "Dynamic Time Scale",
+            "dynamicTimeScaleNote": "Instead of sizing the timeline absolutely, the timeline will be sized based on the number of events in each era, will still be multiplied by the time scale.",
+            "content": "Content Visibility",
+            "ignoreDataValidation": "Ignore Data Validation",
+            "ignoreDataValidationNote": "In the event that you need to reorganize Eras, you can ignore the data validation to allow for Eras to temporarily overlap while you reorganize them.",
+            "contentChoices": {
+                "always": "Always Display",
+                "toggleOn": "Toggle (Default Expanded)",
+                "toggleOff": "Toggle (Default Collapsed)"
+            },
+            "errors": {
+                "noEra": "No Eras found. Please create an Era first.",
+                "noYear": "No Year found. You must set a year for the event.",
+                "yearOutOfBounds": "Year must be contained within an Era.",
+                "noEraStart": "No Era Start found. You must set a start for the Era.",
+                "noEraEnd": "No Era End found. You must set an end for the Era.",
+                "eraStartAfterEnd": "Era Start must be before Era End.",
+                "eraNotConnected": "Era Start or End must be connected to another era.",
+                "eraOverlap": "Era cannot overlap with another Era."
+            }
+        },
+        "tab-config": {
+            "title": "Tab Configuration"
+        },
+        "theme-config": {
+            "title": "Theme Configuration",
+            "info": "Themes will apply some preset settings. If you wish you can access this menu from the module settings where you can also customize each theme aspect individually.",
+            "themes": {
+                "default": "Default",
+                "redDragon": "Red Dragon",
+                "whiteDragon": "White Dragon",
+                "D&D": "D&D",
+                "typewriter": "Typewriter",
+                "postApocalypticWasteland": "Post-Apocalyptic Wasteland",
+                "cyberpunkCity": "Cyberpunk City",
+                "galacticAdventure": "Galactic Adventure",
+                "steampunkWorkshop": "Steampunk Workshop",
+                "dystopianFuture": "Dystopian Future",
+                "virtualRealityOasis": "Virtual Reality Oasis",
+                "mysticForest": "Mystic Forest",
+                "vintageFilmNoir": "Vintage Film Noir",
+                "sciFiConsole": "Sci-Fi Console",
+                "futuristicTech": "Futuristic Tech",
+                "alienInvasion": "Alien Invasion",
+                "ancientScrolls": "Ancient Scrolls",
+                "steampunkAdventure": "Steampunk Adventure"
+            }
+        },
+        "importQuests": {
+            "title": "Import Quests: ",
+            "content": "Are you sure you want to import quests from this journal? If a category with the same name already exists, the quests will be added to it."
+        },
+        "markerConfig": {
+            "title": "Marker Configuration",
+            "icon": "Icon",
+            "journal": "Drop Journal or Page here",
+            "hidden": "Hidden",
+            "displayLabel": "Always Display Label",
+            "fixedScale": "Fixed Scale"
+        },
+        "deleteQuest": {
+            "title": "Delete Quest? - ",
+            "content": "Are you sure you want to delete this quest? This cannot be undone."
+        },
+        "deleteLore": {
+            "title": "Delete Lore? - ",
+            "content": "Are you sure you want to delete this lore? This cannot be undone."
+        },
+        "deleteMap": {
+            "title": "Delete Map? - ",
+            "content": "Are you sure you want to delete this map? This cannot be undone."
+        },
+        "deletePage": {
+            "title": "Delete Page? - ",
+            "content": "Are you sure you want to delete this page? This cannot be undone."
+        },
+        "shareQuest": {
+            "title": "Send Quest to Chat",
+            "content": "Are you sure you want to send the 'New Quest' notification to chat?",
+            "chatMessage": "New Quest Available!"
+        },
+        "shareLore": {
+            "title": "Send Lore to Chat",
+            "content": "Are you sure you want to send the 'New Lore' notification to chat?",
+            "chatMessage": "New Lore was Revealed!"
+        },
+        "shareAchievement": {
+            "title": "Send Achievement to Chat",
+            "content": "Are you sure you want to send the 'New Achievement' notification to chat?",
+            "chatMessage": "Achievement Unlocked!"
+        },
+        "showQuest": {
+            "title": "Show Quest"
+        },
+        "welcomeScreen": {
+            "title": "Welcome to Simple Quest!",
+            "content": "Welcome to Simple Quest!<hr>Press <span class='hotkey'>J</span> to open the Simple Quest window."
+        },
+        "welcomeMaps": {
+            "title": "Simple Quest: Map Tab",
+            "content": "Welcome to the Maps Tab!<hr><span class='hotkey'>Right Click + Drag</span> to pan the map.<br><span class='hotkey'>Scroll</span> to zoom the map.<br><span class='hotkey'>Left Click</span> to add a marker.<br><span class='hotkey'>Left Click</span> to open a marker's notes or quest.<br><span class='hotkey'>Right Click</span> a marker to edit it.<hr>Fog of War<hr><span class='hotkey'>Shift + Left Click</span> to hide the map.<br><span class='hotkey'>Shift + Right Click</span> to reveal the map.<hr>Measure<hr> <span class='hotkey'>Ctrl + Left Click</span> to measure."
+        },
+        "flags": {},
+        "noPermission": "You do not have permission to view this document.",
+        "time-enricher": {
+            "expired": "Expired"
+        },
+        "questNotification": {
+            "text": "Quest %q has been updated!"
+        },
+        "hotkeys": {
+            "toggleSimpleQuest": {
+                "name": "Toggle Simple Quest"
+            }
+        },
+        "notifications": {
+            "defaultStructureCreated": "Simple Quest: Default folder and journal structure created.",
+            "playerJournalUpdated": "Simple Quest: Player journal updated.",
+            "noPage": "Simple Quest: Please select a page to delete."
+        },
+        "resetFow": {
+            "title": "Reset Fog of War?",
+            "content": "Are you sure you want to reset/enable the fog of war for this map? This cannot be undone."
+        },
+        "proseMirrorMenu": {
+            "callout": {
+                "title": "Callout",
+                "callout-lore": "Lore",
+                "callout-magic": "Magic",
+                "callout-item": "Item",
+                "callout-creature": "Creature",
+                "callout-event": "Event",
+                "callout-time": "Time",
+                "callout-npc": "NPC",
+                "callout-location": "Location"
+            },
+            "pageInsert": {
+                "title": "Insert Page",
+                "parchment-note-1": "Parchment Note 1",
+                "parchment-note-2": "Parchment Note 2",
+                "parchment-note-3": "Parchment Note 3",
+                "parchment-note-4": "Parchment Note 4",
+                "parchment-book-1": "Book 1",
+                "parchment-book-2": "Book 2",
+                "parchment-scroll-1": "Scroll"
+            },
+            "text": {
+                "initial": "Large Initial"
+            }
+        },
+        "page-template": {
+            "label": "Page Template",
+            "description": "This is a collection of HTML templates to format your journal pages. This formatting will continue to work even if the Simple Quest module is disabled. Click on a button to append the template to the end of the page."
+        },
+        "injected": {
+            "fowMask": {
+                "label": "Simple Quest: Fog of War Mask"
+            }
+        },
+        "tours": {
+            "interface": {
+                "name": "Interface Tour & Quest Tab",
+                "description": "This tour will show you how to use the Simple Quest main interface and the Quests tab.",
+                "1": {
+                    "title": "Sections",
+                    "content": "This area shows the various sections of Simple Quest, you can click on a section to navigate to it, Right click to Edit tab names and Hover on the top right corner to bring up the Toggle full-screen button."
+                },
+                "2": {
+                    "title": "Quest List",
+                    "content": "This area shows the list of quests categories and the quests within them, You can Right Click a category to edit it's name. On the Top Right you will find button to Add a new Quest and Add a new Category. Hover over the Left Side of a Quest title to bring up the Toggle Hidden button."
+                },
+                "3": {
+                    "title": "Quest Details",
+                    "content": "This area shows the details of the selected quest. In the top right corner you will find buttons to manage the quest, you can hover the buttons for a tooltip explaining what they do."
+                },
+                "4": {
+                    "title": "Font Size",
+                    "content": "This area allows you to change the font size of Simple Quest"
+                }
+            },
+            "lore-tab": {
+                "name": "Lore Tab",
+                "description": "This tour will show you how to use the Lore tab.",
+                "1": {
+                    "title": "Lore Tab",
+                    "content": "The Lore Tab displays all the Journals Present in the Lore folder within the Simple Quest interface. While this tab does not offer any special functionality, it is a convenient way to access your lore. The Permissions to view Lore pages is mirrored from the Core Foundry Journal Permissions."
+                },
+                "2": {
+                    "title": "Lore List",
+                    "content": "This area shows the list of lore categories and the lore within them, You can Right Click a category to edit it's name. On the Top Right you will find button to Add a new Lore and Add a new Category. Hover over the Left Side of a Lore title to bring up the Toggle Hidden button."
+                },
+                "3": {
+                    "title": "Lore Details",
+                    "content": "This area shows the details of the selected lore. In the top right corner you will find buttons to manage the lore, you can hover the buttons for a tooltip explaining what they do."
+                }
+            },
+            "map-tab": {
+                "name": "Map Tab",
+                "description": "This tour will show you how to use the Map tab.",
+                "1": {
+                    "title": "Map Tab",
+                    "content": "The Map Tab displays all the Maps Present in the Maps Journal inside the Quests Folder."
+                },
+                "2": {
+                    "title": "Map List",
+                    "content": "This area shows the list of maps, On the Top Right you will find button to Add a new Map and a button that will explain the more advanced controls. Hover over the Left Side of a Map title to bring up the Toggle Hidden button."
+                },
+                "3": {
+                    "title": "Map Details",
+                    "content": "This area shows the selected map. You can pan the map by clicking and dragging, zoom in and out with the mouse wheel. On the top right corner you will find buttons to manage the map, you can hover the buttons for a tooltip explaining what they do."
+                },
+                "4": {
+                    "title": "Markers",
+                    "content": "You can Right click (you can hold for a preview) on the map to add a marker. You can also Right click on a marker to edit it or Right click and drag a marker to move it. You can Left click on a marker to open it's notes, quest or linked document. Drag and Dropping any document onto the map will create a marker linked to that document."
+                },
+                "5": {
+                    "title": "Fog of War",
+                    "content": "You can hold the Shift to display the Fog of War brush. Left Click to hide the map and Right Click to reveal the map."
+                },
+                "6": {
+                    "title": "Measuring",
+                    "content": "You can hold the Ctrl key to engage the measuring tool. While holding Ctrl, Left Click and drag to measure."
+                }
+            },
+            "my-journal-tab": {
+                "name": "My Journal Tab",
+                "description": "This tour will show you how to use the My Journal tab.",
+                "1": {
+                    "title": "My Journal Tab",
+                    "content": "The My Journal Tab displays a personal Journal only you and the Game Master can see."
+                },
+                "2": {
+                    "title": "Table of Contents",
+                    "content": "This area shows the table of contents of your journal. Any Header you create within your journal will show here for easy navigation."
+                },
+                "3": {
+                    "title": "Journal Content",
+                    "content": "This area shows the contents of your journal. You can edit the contents of your journal by clicking the Edit button in the top right corner."
+                }
+            },
+            "party-journal-tab": {
+                "name": "Party Journal Tab",
+                "description": "This tour will show you how to use the Party Journal tab.",
+                "1": {
+                    "title": "Party Journal Tab",
+                    "content": "The Party Journal Tab displays a Journal which is visible and editable by all users."
+                },
+                "2": {
+                    "title": "Table of Contents",
+                    "content": "This area shows the table of contents of your the Party Journal. Any Header you create within this journal will show here for easy navigation."
+                },
+                "3": {
+                    "title": "Journal Content",
+                    "content": "This area shows the contents of the Party Journal. You can edit the contents of this journal by clicking the Edit button in the top right corner."
+                }
+            },
+            "journal-page": {
+                "name": "Journal Page Features",
+                "description": "This tour will show you how to use the Journal Page.",
+                "1": {
+                    "title": "Page Templates",
+                    "content": "Simple Quest adds Page Tempates. A convinient feature to quickly append a pre-formatted template or section to your journal page. Click this button to see the available templates."
+                },
+                "2": {
+                    "title": "Formatting",
+                    "content": "Inside this dropdown you will find the new 'Callout' and 'Page Insert' option to give some extra flare to your documents."
+                }
+            },
+            "timeline-tab": {
+                "name": "Timeline Tab",
+                "description": "This tour will show you how to use the Timeline tab.",
+                "1": {
+                    "title": "Timeline Tab",
+                    "content": "The Timeline Tab displays a timeline of events."
+                },
+                "2": {
+                    "title": "Timeline List",
+                    "content": "This area shows the list of events and eras, you can click to jump to the event or era or Right Click to edit it."
+                },
+                "3": {
+                    "title": "Add Event or Era",
+                    "content": "This button is all you need to add a new event or era to the timeline. The configuration form will allow you to set the details of the event or era. To get started, create an Era."
+                }
+            }
+        },
+        "default-structure": {
+            "in-progress": "In Progress",
+            "completed": "Completed",
+            "failed": "Failed",
+            "locations": "Locations",
+            "npcs": "NPCs",
+            "organizations": "Organizations",
+            "history": "History",
+            "bestiary": "Bestiary"
+        }
+    }
+}

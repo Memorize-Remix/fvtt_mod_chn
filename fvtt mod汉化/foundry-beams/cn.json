@@ -1,0 +1,90 @@
+
+  "foundry-beams": {
+    "Beam": "光束",
+    "EnableBeam": "启用光束",
+    "Active": "激活",
+    "UseControlHud": "使用控件HUD",
+    "UseControlHudTooltip": "如果启用，将在Token HUD（Token HUD显示时可见）中添加一个FVTT Beams按钮。",
+    "BeamWidthPx": "光束宽度(像素)",
+    "BeamOffsetPx": "光束偏移(像素)",
+    "BeamColor": "光束颜色",
+    "BeamStyle": "光束样式",
+	"BeamColorTooltip": "光束颜色；如果启用HUD，可被HUD覆盖",
+    "ActivateRegionOnBeam": "光束进入时激活区域？",
+    "ConfigureRegion": "配置区域",
+    "WallConfigLegend": "激活光束",
+    "WallConfigIsReactiveLegend": "对光束进入有反应",
+    "WallConfigIsReactiveExitLegend": "对光束离开有反应",
+    "IsMirror": "是镜子",
+    "IsReactive": "有反应",
+    "IsReactiveTooltip": "如果启用，当光束击中此墙壁时，将触发指定的宏/MATT（保存UUID）。",
+    "IsReactiveExitTooltip": "如果启用，当光束离开此墙壁时，将触发指定的宏/MATT（保存UUID）。",
+    "MacroForReactive": "反应UUID",
+    "HUD": {
+      "ToggleSequencerEffect": "切换Sequencer效果"
+    },
+    "error": {
+      "SequencerNotActive": "Sequencer模组未激活。"
+    },
+    "Settings": {
+      "MaxBounces": {
+        "Name": "最大反弹次数",
+        "Hint": "光束在停止前可以反弹的最大次数。"
+      },
+      "Debug": {
+        "Name": "启用调试日志"
+      },
+      "UseProviderStyles": {
+        "Name": "从Styles Hub模组加载样式",
+        "Hint": "如果'foundry-beams-styles'模组处于活动状态，导入并注册其所有样式。"
+      },
+		"ControlHudMode": "HUD模式",
+		"ControlHudModeTooltip": "选择悬停HUD应允许你为此Token配置的内容。",
+		"ControlHudModeNone": "无HUD",
+		"ControlHudModeColor": "配置颜色",
+		"ControlHudModeRotation": "配置旋转",
+		"ControlHudModeBoth": "配置两者",
+		"HudDialShadowImg": "HUD拨盘图像（阴影）",
+		"HudDialShadowImgTooltip": "自定义玩家看到的拨盘阴影图像",
+		"HudDialColorImg": "HUD颜色拨盘图像",
+		"HudDialColorImgTooltip": "用于在玩家看到的HUD中更改发射器颜色的拨盘图像",
+		"HudDialRotationImg": "HUD旋转拨盘图像",
+		"HudDialRotationImgTooltip": "用于在玩家看到的HUD中更改发射器旋转的拨盘图像",
+		"HudRotationSteps": "旋转步数",
+		"HudRotationStepsTooltip": "HUD旋转拨盘中使用的旋转步数。图像应与此步数匹配。",
+		"HudUseActivatorButton": "使用HUD激活按钮",
+		"HudUseActivatorButtonTooltip": "如果启用，符文拨盘HUD将初始为未激活状态，玩家必须按下激活按钮才能启用拨盘。",
+		"HudActivatorOffImg": "HUD激活按钮图像（关闭）",
+		"HudActivatorOffImgTooltip": "HUD拨盘未激活时的激活按钮图像。",
+		"HudActivatorOnImg": "HUD激活按钮图像（开启）",
+		"HudActivatorOnImgTooltip": "HUD拨盘激活时的激活按钮图像。",
+		"EditColors": "编辑HUD颜色",
+		"EditColorsLabel": "编辑HUD颜色管理",
+		"EditColorsTooltip": "打开光束HUD颜色编辑器，你可以在其中添加、删除和修改HUD可用的颜色。",
+		"HudDialTitle": "HUD",
+		"HudDialForToken": "Token",
+		"HudDialColor": "颜色",
+		"HudDialRotation": "旋转",
+		"HudDialStep": "步进",
+		"HudDialSteps": "步进",
+		"HudDialNoImage": "未配置图像"
+    },
+    "MATT": {
+      "GroupName": "激活光束",
+      "Actions": {
+        "RotateBeamOf": {
+          "Name": "旋转光束",
+          "Controls": {
+            "Entity": {
+              "Name": "选择光束发射器",
+              "Placeholder": "请选择作为发射器的Token"
+            },
+            "RotateOf": {
+              "Name": "旋转角度"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,286 @@
+
+  "fameosity": {
+    "settings": {
+      "reputationSettings": {
+        "name": "声望设置",
+        "label": "配置",
+        "hint": "配置声望系统",
+        "title": "声望设置"
+      },
+      "tab-general": "通用",
+      "tab-tiers": "等级",
+      "tab-modes": "模式",
+      "tab-data": "数据",
+      "enabled": {
+        "name": "启用声望系统",
+        "hint": "启用或禁用声望系统"
+      },
+      "displayMode": {
+        "name": "显示模式",
+        "hint": "向玩家显示声望变化的方式",
+        "show": "显示数值",
+        "hide": "隐藏数值"
+      },
+      "reputationMin": {
+        "name": "最低声望"
+      },
+      "reputationMax": {
+        "name": "最高声望"
+      },
+      "defaultActorMode": {
+        "name": "默认角色模式",
+        "hint": "新跟踪角色的模式"
+      },
+      "defaultFactionMode": {
+        "name": "默认派系模式",
+        "hint": "新派系的模式"
+      },
+      "hybridBalance": {
+        "name": "混合模式平衡",
+        "hint": "基础声望与计算平均值之间的权重分配"
+      },
+      "hybridBase": {
+        "name": "基础权重"
+      },
+      "hybridAuto": {
+        "name": "关系权重"
+      },
+      "dragActorHint": "将角色拖拽至此",
+      "dragActorHintFull": "从侧边栏拖拽角色以添加到跟踪列表",
+      "exportImport": {
+        "name": "导出/导入",
+        "hint": "备份或恢复所有模组数据，包括设置、等级、派系、地点和关系"
+      },
+      "export": "导出",
+      "import": "导入",
+      "importSettings": "导入设置",
+      "importTiers": "导入关系等级",
+      "importData": "导入派系、地点和关系",
+      "exportSuccess": "数据导出成功",
+      "importSuccess": "数据导入成功",
+      "importError": "数据导入错误",
+      "importInvalid": "导入文件格式无效",
+      "dangerZone": "危险地带",
+      "resetAll": "重置所有数据",
+      "resetConfirmTitle": "重置所有数据",
+      "resetConfirmContent": "确定要重置所有模组数据吗？这将删除所有派系、地点、关系和设置。此操作无法撤销！",
+      "resetSuccess": "所有数据已重置"
+    },
+    "keybindings": {
+      "increase": {
+        "name": "增加声望",
+        "hint": "增加所选Token的声望"
+      },
+      "decrease": {
+        "name": "减少声望",
+        "hint": "减少所选Token的声望"
+      }
+    },
+    "tiers": {
+      "nemesis": "宿敌",
+      "hostile": "敌对",
+      "unfriendly": "不友好",
+      "wary": "警惕",
+      "neutral": "中立",
+      "friendly": "友好",
+      "allied": "盟友",
+      "devoted": "忠诚"
+    },
+    "mode": {
+      "manual": "手动",
+      "auto": "自动",
+      "hybrid": "混合",
+      "manual-hint": "手动模式：直接设置声望",
+      "auto-hint": "自动模式：根据关系计算",
+      "hybrid-hint": "混合模式：基础值 + 关系加成（最高50%）"
+    },
+    "reputation": {
+      "window-title": "声望",
+      "current-label": "当前声望",
+      "disabled": "声望系统已禁用"
+    },
+    "relations": {
+      "viewer-title": "关系",
+      "tab-character": "角色",
+      "tab-locations": "地点",
+      "tab-factions": "派系",
+      "tab-actors": "角色",
+      "tab-character-hint": "查看所选角色的关系",
+      "tab-locations-hint": "管理地点和通缉状态",
+      "tab-factions-hint": "管理派系及其成员",
+      "tab-actors-hint": "管理跟踪的NPC",
+      "no-locations": "无地点",
+      "no-factions": "无派系",
+      "no-actors": "无跟踪角色",
+      "no-members": "无成员",
+      "no-players": "无玩家角色",
+      "no-relations": "无关系",
+      "tiers": "关系等级",
+      "relations-to-actors": "与角色的关系",
+      "addTier": "添加等级",
+      "newTier": "新等级",
+      "their-attitude": "他们的态度",
+      "your-attitude": "你的态度",
+      "to-players": "对玩家的态度",
+      "to-factions": "对派系的态度",
+      "to-other-factions": "对其他派系的态度",
+      "faction-attitude": "派系态度",
+      "members-avg": "成员（平均）",
+      "faction-memberships": "派系成员资格",
+      "no-faction-memberships": "不属于任何派系",
+      "faction-member": "派系成员"
+    },
+    "factions": {
+      "add": "添加派系",
+      "add-hint": "创建新派系",
+      "new-faction": "新派系",
+      "bounties": "赏金"
+    },
+    "locations": {
+      "add": "添加地点",
+      "add-hint": "创建新地点",
+      "new-location": "新地点",
+      "wanted": "通缉",
+      "factions-here": "派系",
+      "actors-here": "角色",
+      "controlled-by": "控制者",
+      "no-control": "未指定"
+    },
+    "ranks": {
+      "title": "等级",
+      "members": "成员",
+      "add": "添加等级",
+      "new-rank": "新等级",
+      "auto": "自动"
+    },
+    "wanted": {
+      "no-warrants": "无通缉令",
+      "no-bounties": "未设置赏金",
+      "unknown": "未知",
+      "announced": "{name}在{location}被通缉！{level}",
+      "announce": "宣布通缉状态"
+    },
+    "character": {
+      "wanted-summary": "通缉",
+      "subtab-locations": "地点",
+      "subtab-factions": "派系",
+      "subtab-actors": "角色",
+      "subtab-locations-hint": "查看地点和通缉状态",
+      "subtab-factions-hint": "查看与派系的关系",
+      "subtab-actors-hint": "查看与NPC的关系"
+    },
+    "info": {
+      "title": "信息",
+      "tab-public": "公开",
+      "tab-gm": "仅GM可见",
+      "no-info": "信息不可用"
+    },
+    "picker": {
+      "search": "搜索...",
+      "select-actor": "选择角色",
+      "select-faction": "选择派系",
+      "no-actors": "无可用角色",
+      "no-factions": "无可用派系"
+    },
+    "confirm": {
+      "delete-title": "确认删除",
+      "delete-faction": "确定要删除此派系吗？",
+      "delete-location": "确定要删除此地点吗？",
+      "delete-actor": "确定要停止跟踪此角色吗？",
+      "delete-member": "确定要移除此成员吗？",
+      "delete-rank": "确定要删除此等级吗？",
+      "delete-wanted": "确定要删除此通缉令吗？",
+      "remove-from-location": "确定要从此地点移除此项吗？"
+    },
+    "remember": {
+      "warn-no-token": "未选择Token",
+      "warn-no-party": "未选择活跃小队。请在设置中分配小队。",
+      "relation-improved": "{source}与{target}的关系改善了",
+      "relation-worsened": "{source}与{target}的关系恶化了"
+    },
+    "tooltips": {
+      "delete": "删除",
+      "hide": "对玩家隐藏",
+      "show": "对玩家显示",
+      "hidden": "对玩家隐藏",
+      "unnest": "从父级移除",
+      "add-child": "添加子元素",
+      "add-to-tracking": "添加到跟踪",
+      "announce-wanted": "宣布通缉状态并通知所有人"
+    },
+    "errors": {
+      "saveFailed": "保存声望数据失败",
+      "cannotNest": "无法将此实体类型嵌套到目标中"
+    },
+    "context": {
+      "select": "选择",
+      "open-sheet": "打开角色表",
+      "duplicate": "创建副本",
+      "copy-suffix": "副本",
+      "activate-party": "设为活跃小队",
+      "hide-all": "全部隐藏",
+      "show-all": "全部显示",
+      "hide-all-nested": "隐藏所有嵌套",
+      "show-all-nested": "显示所有嵌套",
+      "add-to-relations": "添加到小队关系",
+      "add-child-location": "添加子地点",
+      "add-child-faction": "添加子派系"
+    },
+    "party": {
+      "default-name": "冒险小队"
+    },
+    "ui": {
+      "type": "类型",
+      "description-placeholder": "描述...",
+      "player-characters": "玩家角色",
+      "active-characters": "小队成员",
+      "npcs": "角色",
+      "select-entity-hint": "从导航中选择元素",
+      "relations-to-players": "与玩家角色的关系",
+      "relations-to-characters": "与其他角色的关系",
+      "no-active-party-gm": "未分配活跃小队。创建小队并在导航树中使用右键菜单设为活跃。",
+      "no-active-party-player": "你不属于任何活跃小队。",
+      "personal-reputation": "个人声望",
+      "custom-type-name-placeholder": "自定义类型名称...",
+      "current-active-party": "活跃小队"
+    },
+    "creator": {
+      "title-location": "创建地点",
+      "title-faction": "创建派系",
+      "title-actor": "添加角色",
+      "select-location-type": "选择地点类型",
+      "select-faction-type": "选择派系类型",
+      "name-label": "名称",
+      "location-name-placeholder": "地点名称...",
+      "faction-name-placeholder": "派系名称...",
+      "create-btn": "创建",
+      "actors-label": "角色",
+      "drop-actors-hint": "将角色拖拽至此或使用下方按钮",
+      "add-player-characters": "添加PC",
+      "add-important-npcs": "添加重要NPC",
+      "add-all-btn": "添加全部",
+      "location-types": {
+        "continent": "大陆",
+        "country": "国家",
+        "settlement": "定居点",
+        "poi": "兴趣点"
+      },
+      "faction-types": {
+        "organization": "组织",
+        "group": "小队"
+      }
+    },
+    "types": {
+      "location": {
+        "continent": "大陆",
+        "country": "国家",
+        "settlement": "定居点",
+        "poi": "兴趣点"
+      },
+      "faction": {
+        "organization": "组织",
+        "group": "小队"
+      }
+    }
+  }
+}

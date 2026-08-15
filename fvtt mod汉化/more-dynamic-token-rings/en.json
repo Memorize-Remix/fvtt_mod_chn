@@ -1,0 +1,176 @@
+{
+  "I18N.LANGUAGE": "English",
+  "more-dynamic-token-rings": {
+    "module-settings": {
+      "button": "Configure Rings with SETT",
+      "custom-ring": {
+        "menu": {
+          "settings-button": "Custom Ring Maker",
+          "header": "Create Token Ring Sprite Sheet & JSON",
+          "icons": {
+            "kofi": {
+              "title": "Support me on Ko-fi",
+              "tooltip": "Donate to me to get rid of this!"
+            }
+          },
+          "content": {
+            "link-to-guide": "Link to Guide here"
+          },
+          "parts": {
+            "spritesheet": "Ring Sprite Sheet Config",
+            "json": "Ring JSON Config"
+          },
+          "fields": {
+            "token-img": {
+              "ring": {
+                "label": "Dynamic Token Ring",
+                "tooltip": "Must be 2048px x 2048px"
+              },
+              "background": {
+                "label": "Dynamic Token BG",
+                "tooltip": "Must be 2048px x 2048px"
+              },
+              "quality": {
+                "label": "Ring Quality",
+                "tooltip": "Quality of the generated Webp, recommend 80%"
+              }
+            },
+            "thickness": {
+              "label": "Ring Thickness",
+              "tooltip": "How thick is the ring from the interior to the outside of the ring as a value from 0 to 1, 1 being 100%"
+            },
+            "coloration": {
+              "label": "Ring Coloration",
+              "inner": {
+                "label": "Inner Edge",
+                "tooltip": "Where on the ring should the coloration start as a value from 0 to 1, 1 being 100% distance from the center"
+              },
+              "outer": {
+                "label": "Outer Edge",
+                "tooltip": "Where on the ring should the coloration end as a value from 0 to 1.5, 1 being 100% distance from the center"
+              },
+              "color": {
+                "label": "Color",
+                "tooltip": "Enter Color Hex value that is the 'white' when the ring is recolored (IE if you do a blue color the blue will be recolored the most)"
+              }
+            }
+          },
+          "error": {
+            "upload-both": "Please upload both images to create a ring",
+            "2048-min": "Both images must be 2048px x 2048px.",
+            "failed-to-download": {
+              "json": "Failed to download JSON:",
+              "image": "Failed to download or convert image:"
+            },
+            "does-not-exist": "SETT: Custom Ring doesn't exist, please actually create one"
+          },
+          "buttons": {
+            "create": {
+              "label": "Create"
+            },
+            "export": {
+              "label": "Export"
+            },
+            "cancel": {
+              "label": "Cancel"
+            }
+          }
+        },
+        "enabled": {
+          "name": "Custom Ring Enabled",
+          "hint": "Enables custom ring to the Dynamic Ring Picker, note you must reload every time you change a property in order for it to update"
+        },
+        "kofi-code": {
+          "name": "Code from Kofi",
+          "hint": "If you donate any amount ever to my kofi you can remove the header icon and messages from the Custom Ring Maker"
+        }
+      }
+    },
+    "notifications": {
+      "ring-list-saved": "Your Dynamic Ring List has been updated, reload to see the new rings",
+      "first-time-user": {
+        "content": "<h2>Welcome to SETT</h2><p>Hi, welcome to the module.</p><p>To access new token rings, click Configure Settings and navigate to the SETT module settings. Enable some of the rings there, save changes, and you'll be prompted to reload Foundry.  After doing so, open settings again and find the Core -> Dynamic Token Ring dropdown setting, which will now include the extra rings.  Select one of them, save changes, and reload Foundry once more.</p>",
+        "button": "Take a Tour"
+      },
+      "reload-to-switch": "After adding the new Dynamic Ring restarting again to actually activate it!"
+    },
+    "dialog": {
+      "reload": {
+        "title": "Reload?",
+        "content": "Do you want to reload?",
+        "buttons": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "ring-submission": {
+        "title": "Ring Submission",
+        "content": "Do you want to submit this ring (which is copyright free or you have the legal rights to) to the module?"
+      }
+    },
+    "hover-text": {
+      "new-ring": "New Ring!",
+      "click-ring": "When clicked will ask you to reload to quickly activate the ring.",
+      "click-ring-warning": "[IMPORTANT] this will NOT save any other changes made anywhere in the settings, so submit those first!"
+    },
+    "tours": {
+      "starter": {
+        "title": "SETT Starter Tour",
+        "steps": {
+          "1": {
+            "title": "Navigate To",
+            "content": "After opening settings first navigate from into 'Core' settings"
+          },
+          "2": {
+            "title": "SETT Menu",
+            "content": "You should see the SETT button that has been inserted, use this to enable new rings!"
+          },
+          "3": {
+            "title": "After that",
+            "content": "After you have enabled rings make sure to click save, then you'll be prompted to reload foundry"
+          },
+          "4": {
+            "title": "Selecting a Ring",
+            "content": "Select a Ring here, it will prompt you to reload so that it can update the rings"
+          },
+          "5": {
+            "title": "Thanks",
+            "content": "Thanks for taking the tour, make sure to tip your tour guide (me) and your servers (Ring Makers) on you way out if you feel so inclined :P."
+          }
+        }
+      },
+      "custom": {
+        "notification": {
+          "title": "✨Custom Rings✨",
+          "step": "There's a new feature! To access it you'll need to head on over to the SETT module settings and click the new button at the top of those setting to use the new Custom Ring Creation System. Best of luck, and enjoy the new options!"
+        },
+        "full": {
+          "1": {
+            "title": "Custom Ring Guide",
+            "content": "Here I have linked a general guide for using this feature. I'd recommend at least skimming through it first to prevent any confusion. This tour will only take you through the basics"
+          },
+          "2": {
+            "title": "Ring Spritesheet Images",
+            "content": "Here you can upload the Dynamic Ring and Background to create the 'Dynamic Ring Spritesheet'. Note you need to add both at once to properly save the spritesheet. If you only want to edit the config for a custom ring you've already made simply ignore these."
+          },
+          "3": {
+            "title": "Ring Config",
+            "content": "Here are the configuration settings for the custom ring, hover over them to see a description of each one as well as a visual aid"
+          },
+          "4": {
+            "title": "Create Ring",
+            "content": "This button will save your uploaded ring and bg into a sprite sheet if you have them, as well as save your configuration data into the ring json. After you have created the ring you'll need to reload to enable your new custom ring."
+          },
+          "5": {
+            "title": "Export Ring",
+            "content": "This button allows you to export the ring's spritesheet and its corresponding json. You can then submit these files on the github to have it possibly be added to the module!"
+          },
+          "6": {
+            "title": "Send off! ✈",
+            "content": "Best of luck and happy Ring Making!<hr><i>also consider donating to me on <a href='https://ko-fi.com/chasarooni'>kofi</a> so i can motivate myself to do more cool stuff like this</i>"
+          }
+        }
+      }
+    }
+  }
+}

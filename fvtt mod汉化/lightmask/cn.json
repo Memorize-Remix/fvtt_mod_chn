@@ -1,0 +1,36 @@
+{
+    "lightmask.AmbientConfiguration.LegendTitle": "灯光/声音遮罩",
+    "lightmask.AmbientConfiguration.Shapes.Name": "形状",
+
+    "lightmask.AmbientConfiguration.CachedWallID.Name": "缓存的墙ID",
+    "lightmask.AmbientConfiguration.CachedWallID.Hint.Light": "以逗号分隔的墙体 ID 列表，用于缓存该灯光。",
+    "lightmask.AmbientConfiguration.CachedWallID.Hint.Sound": "以逗号分隔的墙体 ID 列表，用于缓存该声音。",
+    "lightmask.AmbientConfiguration.CachedWallID.Button.Name": "缓存选定的墙壁",
+    "lightmask.AmbientConfiguration.CachedWallID.Button.Hint": "切换到墙壁层并选择要缓存的墙壁，然后点击 '缓存选定的墙壁'来缓存这些墙壁。",
+
+    "lightmask.AmbientConfiguration.Relative.Name": "相对移动",
+    "lightmask.AmbientConfiguration.Relative.Hint.Light": "移动灯光时，使缓存的墙壁相对于灯光移动。",
+    "lightmask.AmbientConfiguration.Relative.Hint.Sound": "移动声音时，使缓存的墙壁相对于声音移动。",
+
+    "lightmask.AmbientConfiguration.NumSides.Name": "边",
+    "lightmask.AmbientConfiguration.NumSides.Hint": "多边形最少 3 边",
+    "lightmask.AmbientConfiguration.NumPoints.Name": "点",
+    "lightmask.AmbientConfiguration.NumPoints.Hint": "常规星最少 5 点",
+    "lightmask.AmbientConfiguration.Ellipse.MinorAxis.Name": "高",
+    "lightmask.AmbientConfiguration.Ellipse.MinorAxis.Hint": "旋转 = 0 时，垂直方向上从原点到边缘的距离（网格单位）。半径用于表示宽度。",
+
+    "lightmask.Circle": "圆形",
+    "lightmask.Triangle": "三角形",
+    "lightmask.Square": "方形",
+    "lightmask.Pentagon": "五边形",
+    "lightmask.Pentagram": "五角星",
+    "lightmask.Hexagon": "六边形",
+    "lightmask.Hexagram": "六芒星",
+    "lightmask.None": "无",
+    "lightmask.RegularPolygon": "常规多边形",
+    "lightmask.RegularStar": "常规星",
+    "lightmask.Ellipse": "椭圆",
+
+    "lightmask.settings.sweep-always.Name": "始终使用遮罩",
+    "lightmask.settings.sweep-always.Hint": "对所有视觉/光线/声音视场使用光遮罩算法，而非 Foundry 默认算法。在某些情况下可能会提高性能，但也可能会带来与某些模组的兼容性问题。"
+}

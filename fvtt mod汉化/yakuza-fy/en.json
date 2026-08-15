@@ -1,0 +1,61 @@
+{
+  "YAKUZA_FY": {
+    "Name": "Yakuza-fy",
+    "Button": {
+      "Label": "Yakuza-fy",
+      "Hint": "Create a Yakuza-style intro"
+    },
+    "Settings": {
+      "CloseBehavior": {
+        "Name": "Intro closing behavior",
+        "Hint": "When GM clicks, what should happen for other users?",
+        "Choices": {
+          "ask": "Ask every time",
+          "always": "Always close",
+          "never": "Never close"
+        }
+      },
+      "GiveObserverPermission": {
+        "Name": "Give Observer Permission",
+        "Hint": "Grant all players observer access automatically"
+      },
+      "ForceCloseTableMap": {
+        "Name": "Force close for Table Map user",
+        "Hint": "Always close the overlay for the Table Map user regardless of settings"
+      },
+      "ImageAdaptationMode": {
+        "Name": "Image Adaptation Mode",
+        "Hint": "How should images be displayed in the intro overlay",
+        "Choices": {
+          "auto": "Automatic (based on image and screen orientation)",
+          "width": "Fit to Width",
+          "height": "Fit to Height",
+          "contain": "Contain (show entire image, may have empty space)"
+        }
+      },
+      "ImageScaleFactor": {
+        "Name": "Image Scale Factor",
+        "Hint": "Scale the image size (75% to 125%)"
+      },
+      "CloseDialog": {
+        "Title": "Close for all players?",
+        "Content": "Do you want to close the intro for all players?",
+        "Yes": "Yes",
+        "No": "No"
+      }
+    },
+    "Notifications": {
+      "NoImage": "Must contain an image.",
+      "JournalNotFound": "Could not find journal entry.",
+      "InvalidData": "Invalid data: Must provide yakuzaData with an image.",
+      "ApiNotAvailable": "Yakuza-fy API not available.",
+      "NoJournalId": "Could not determine Journal ID."
+    },
+    "Keybindings": {
+      "CloseIntro": {
+        "Name": "Close Yakuza Overlay",
+        "Hint": "Hotkey to close Yakuza overlay for all players"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "EFFECTIVETRAY": {
+    "AllowTargetSettingName": "Transfer to Target",
+    "AllowTargetSettingHint": "Allow users to transfer effects to targets they do not own.",
+    "DamageDefaultSettingName": "Use Default Damage Tray",
+    "DamageDefaultSettingHint": "Retain default system behavior for damage trays (DM only trays).",
+    "DamageTargetSettingName": "Damage Target",
+    "DamageTargetSettingHint": "Allow users to damage targets that they do not own with the damage tray.",
+    "DeleteInsteadSettingName": "Delete Instead of Refresh",
+    "DeleteInsteadSettingHint": "Attempting to transfer an effect to an actor that has it already will delete it rather than refreshing its duration.",
+    "FilterDispositionSettingName": "Filter by Disposition",
+    "FilterDispositionSettingHint": "Hide effects from users if they originate from tokens with the selected (or worse) disposition.",
+    "FilterPermissionSettingName": "Filter by Permission",
+    "FilterPermissionSettingHint": "Hide effects from users if they originate from actors which the users lack the selected permissions (or below) for.",
+    "GmOnly": "GM Only",
+    "IgnoreNPCSettingName": "Filter NPCs",
+    "IgnoreNPCSettingHint": "Hide effects from users if they originate from NPCs they do not own.",
+    "MultipleConcentrationEffectsSettingName": "Multiple Effects with Concentration",
+    "MultipleConcentrationEffectsSettingHint": "Allow multiple effects to be applied from spells with concentration",
+    "NoFilter": "No Filter",
+    "NOTIFICATION": {
+      "NoActiveGMDamage": "There is no active GM. An active GM is required to damage targets you do not own.",
+      "NoActiveGMEffect": "There is no active GM. An active GM is required to create effects on targets you do not own.",
+      "NoTarget": "You don't have a target."
+    },
+    "SystemDefaultSettingName": "Use Default Effects Tray",
+    "SystemDefaultSettingHint": "Retain default system behavior for effect application trays (DM only trays outside of transfer effects)."
+  }
+}

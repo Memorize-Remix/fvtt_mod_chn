@@ -1,0 +1,54 @@
+
+  "maleficar-manoeuvres": {
+    "settings": {
+      "logLevel": {
+        "name": "日志级别",
+        "hint": "设置模组的日志记录级别",
+        "choices": {
+          "debug": "调试 — 显示所有日志消息，包括详细诊断信息",
+          "info": "信息 — 显示信息性消息及以上（隐藏调试信息）",
+          "warn": "警告 — 仅显示警告和错误",
+          "error": "错误 — 仅显示错误级别消息",
+          "fatal": "致命 — 仅显示严重（致命）错误",
+          "none": "无 — 禁用所有日志记录"
+        }
+      },
+      "foundryTokenBorderIndicator": {
+        "name": "FVTT Token边框指示器",
+        "hint": "FVTT默认的Token轮廓。"
+      },
+      "tokenDefaultVerticalHeight": {
+        "name": "默认Token高度",
+        "hint": "类人体型生物的默认垂直高度。"
+      },
+      "meleeWeaponRangeOverride": {
+        "name": "近战武器范围覆盖",
+        "hint": "当武器范围完全匹配\"网格\"比例距离时覆盖其范围。"
+      },
+      "movementValidation": {
+        "name": "移动验证",
+        "hint": "启用碰撞检测和移动验证。禁用时，Token可以自由穿过障碍物。"
+      }
+    },
+    "tokenSheet": {
+      "verticalHeight": {
+        "label": "垂直高度",
+        "hint": "Token从底部到顶部的高度，以场景单位（{units}）表示。"
+      }
+    },
+    "keybindings": {
+      "toggleOverlay": {
+        "name": "切换移动覆盖层",
+        "hint": "按住时显示覆盖层。释放以隐藏。"
+      }
+    },
+    "notifications": {
+      "moduleInitialised": "Maleficar Manoeuvres 初始化成功",
+      "settingChanged": "设置 '{setting}' 已更新为：{value}",
+      "settingFailed": "更新设置 '{setting}' 失败",
+      "logLevelChanged": "日志级别已更改为：{level}",
+      "movementValidationEnabled": "移动验证已启用",
+      "movementValidationDisabled": "移动验证已禁用"
+    }
+  }
+}

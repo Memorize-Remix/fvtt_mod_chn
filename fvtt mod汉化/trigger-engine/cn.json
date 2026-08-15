@@ -1,0 +1,1168 @@
+
+    "TYPES": {
+        "RegionBehavior": {
+            "trigger-engine": {
+                "builtins": {
+                    "region": "触发引擎"
+                }
+            }
+        }
+    },
+    "trigger-engine": {
+        "blueprint": {
+            "entry": {
+                "add": {
+                    "title": "添加: {label}"
+                },
+                "disconnect": "断开入口连接",
+                "edit": {
+                    "label": "编辑入口",
+                    "title": "编辑: {label}"
+                },
+                "remove": {
+                    "content": "确定要移除此入口吗？",
+                    "title": "移除入口"
+                },
+                "variable": "创建变量"
+            },
+            "node": {
+                "copy": {
+                    "copied": "选择内容已复制到剪贴板。",
+                    "multi": "复制选中的节点",
+                    "single": "复制节点"
+                },
+                "delete": {
+                    "confirm": {
+                        "content": "确定要删除选中的节点吗？",
+                        "title": "删除节点"
+                    },
+                    "multi": "删除选中的节点",
+                    "single": "删除节点"
+                },
+                "duplicate": {
+                    "multi": "复制选中的节点",
+                    "single": "复制节点"
+                },
+                "edit": "编辑节点",
+                "state": {
+                    "content": "确定要切换状态吗？",
+                    "title": "切换: {label}"
+                }
+            },
+            "trigger": {
+                "back": "返回触发器",
+                "collapse": "折叠窗口",
+                "copy": {
+                    "label": "复制触发器路径",
+                    "notify": "触发器路径已复制到剪贴板。"
+                },
+                "data": "解析数据",
+                "delete": {
+                    "content": "确定要删除选中的触发器吗？",
+                    "title": "删除触发器"
+                },
+                "description": "切换描述",
+                "duplicate": "复制触发器",
+                "edit": "编辑触发器",
+                "events": "事件",
+                "expand": "恢复触发器窗口",
+                "folder": "编辑文件夹",
+                "gates": {
+                    "tab": "移动到下一个入口门",
+                    "title": "门"
+                },
+                "refresh": "刷新应用",
+                "save": "保存触发器",
+                "variables": {
+                    "tab": "移动到下一个变量获取器",
+                    "title": "变量"
+                }
+            },
+            "triggers": {
+                "close": "关闭窗口",
+                "create": "创建触发器",
+                "export": "导出触发器",
+                "import": "导入触发器",
+                "search": {
+                    "clear": "清除搜索",
+                    "label": "搜索触发器"
+                },
+                "tags": {
+                    "placeholder": "触发器标签"
+                }
+            },
+            "variable": {
+                "delete": {
+                    "content": "确定要删除选中的变量吗？",
+                    "title": "删除变量"
+                },
+                "edit": "编辑变量"
+            }
+        },
+        "builtins": {
+            "category": {
+                "action": {
+                    "title": "动作"
+                },
+                "event": {
+                    "title": "事件"
+                },
+                "extractor": {
+                    "title": "提取器"
+                },
+                "logic": {
+                    "title": "逻辑"
+                },
+                "splitter": {
+                    "title": "分割器"
+                },
+                "value": {
+                    "title": "值"
+                }
+            },
+            "convertor": {
+                "item-target": "父级角色",
+                "user-target": "分配的角色",
+                "target-user": "主要所有者"
+            },
+			
+            "custom": {
+                "variable": {
+                    "label": "变量"
+                }
+            },
+            "entry": {
+                "a": {
+                    "title": "入口A"
+                },
+                "actor": {
+                    "title": "角色"
+                },
+                "any": {
+                    "title": "任意"
+                },
+                "b": {
+                    "title": "入口B"
+                },
+                "boolean": {
+                    "title": "布尔值"
+                },
+                "callback": {
+                    "title": "回调"
+                },
+                "combatant": {
+                    "title": "战斗者"
+                },
+                "current": {
+                    "title": "当前"
+                },
+                "entry": {
+                    "title": "入口"
+                },
+                "formula": {
+                    "title": "公式"
+                },
+                "input": {
+                    "title": "输入"
+                },
+                "item": {
+                    "title": "物品"
+                },
+                "localization": {
+                    "title": "本地化键"
+                },
+                "max": {
+                    "title": "最大值"
+                },
+                "min": {
+                    "title": "最小值"
+                },
+                "number": {
+                    "title": "数字"
+                },
+                "target": {
+                    "title": "目标"
+                },
+                "targets": {
+                    "title": "目标"
+                },
+                "text": {
+                    "title": "文本"
+                },
+                "uuid": {
+                    "title": "源UUID"
+                },
+                "user": {
+                    "title": "用户"
+                },
+                "value": {
+                    "title": "值"
+                }
+            },
+            "group": {
+                "optional": "可选"
+            },
+            "node": {
+                "__gate__": {
+                    "__gate_entry__": {
+                        "subtitle": "入口门"
+                    },
+                    "__gate_exit__": {
+                        "subtitle": "出口门"
+                    }
+                },
+                "action": {
+                    "await-confirm": {
+                        "inputs": {
+                            "content": {
+                                "title": "提示内容"
+                            },
+                            "plain": {
+                                "title": "提示文本"
+                            },
+                            "timeout": {
+                                "title": "超时时间(秒)"
+                            },
+                            "title": {
+                                "title": "对话框标题",
+                                "tooltip": "可以是本地化键"
+                            }
+                        },
+                        "title": "等待确认"
+                    },
+                    "console-log": {
+                        "title": "控制台日志"
+                    },
+                    "create-message": {
+                        "title": "创建聊天消息",
+                        "inputs": {
+                            "content": {
+                                "title": "消息描述"
+                            },
+                            "plain": {
+                                "title": "消息文本"
+                            },
+                            "speaker": {
+                                "title": "发言者"
+                            },
+                            "visibility": {
+                                "options": {
+                                    "all": "所有用户",
+                                    "gm": "仅GM",
+                                    "self": "上下文用户"
+                                },
+                                "title": "可见性"
+                            }
+                        }
+                    },
+                    "delete-item": {
+                        "title": "删除物品"
+                    },
+                    "execute-script": {
+                        "inputs": {
+                            "macro": {
+                                "title": "宏UUID"
+                            },
+                            "script": {
+                                "title": "脚本代码"
+                            }
+                        },
+                        "states": {
+                            "macro": "宏",
+                            "script": "脚本"
+                        },
+                        "title": "执行脚本"
+                    },
+                    "update-item": {
+                        "inputs": {
+                            "path": {
+                                "title": "系统路径"
+                            }
+                        },
+                        "title": "更新物品"
+                    }
+                },
+                "condition": {
+                    "if-truthy": {
+                        "customs": {
+                            "inputs": {
+                                "condition": {
+                                    "label": "条件"
+                                }
+                            }
+                        },
+                        "title": "测试是否为真"
+                    },
+                    "is-combatant": {
+                        "title": "是否为当前战斗者"
+                    },
+                    "list-contains": {
+                        "inputs": {
+                            "list": {
+                                "title": "文本列表"
+                            }
+                        },
+                        "title": "文本列表包含"
+                    }
+                },
+                "event": {
+                    "__start_event__": {
+                        "title": "开始事件"
+                    },
+                    "create-combatant-event": {
+                        "title": "战斗者创建"
+                    },
+                    "create-token-event": {
+                        "title": "Token创建"
+                    },
+                    "delete-combatant-event": {
+                        "title": "战斗者移除"
+                    },
+                    "delete-token-event": {
+                        "title": "Token移除"
+                    },
+                    "execute-event": {
+                        "title": "执行事件"
+                    },
+                    "move-token-event": {
+                        "title": "Token移动"
+                    },
+                    "region-event": {
+                        "outputs": {
+                            "event": {
+                                "title": "事件"
+                            }
+                        },
+                        "title": "场景区域"
+                    },
+                    "test-event": {
+                        "title": "测试事件"
+                    }
+                },
+                "extractor": {
+                    "extract-actor": {
+                        "title": "从角色提取"
+                    },
+                    "extract-item": {
+                        "title": "从物品提取"
+                    },
+                    "filter-targets": {
+                        "title": "过滤目标",
+                        "titles": {
+                            "find": "查找目标",
+                            "loop": "遍历目标"
+                        }
+                    }
+                },
+                "logic": {
+                    "actors-match": {
+                        "title": "角色匹配"
+                    },
+                    "break-loop": {
+                        "title": "中断当前循环"
+                    },
+                    "compare-numbers": {
+                        "inputs": {
+                            "compare": {
+                                "options": {
+                                    "eq": "等于",
+                                    "gt": "大于",
+                                    "gte": "大于或等于",
+                                    "lt": "小于",
+                                    "lte": "小于或等于"
+                                }
+                            }
+                        },
+                        "title": "比较数字"
+                    },
+                    "format-text": {
+                        "inputs": {
+                            "content": {
+                                "title": "要格式化的描述"
+                            },
+                            "plain": {
+                                "title": "要格式化的文本"
+                            }
+                        },
+                        "outputs": {
+                            "result": {
+                                "title": "格式化结果"
+                            }
+                        },
+                        "title": "格式化文本"
+                    },
+                    "resolve-formula": {
+                        "title": "解析公式"
+                    },
+                    "texts-match": {
+                        "title": "文本匹配"
+                    }
+                },
+                "splitter": {
+                    "split-boolean": {
+                        "title": "分割布尔值"
+                    },
+                    "split-number": {
+                        "customs": {
+                            "outs": {
+                                "value": {
+                                    "input": {
+                                        "label": "数字入口"
+                                    }
+                                }
+                            }
+                        },
+                        "title": "分割数字"
+                    },
+                    "split-text": {
+                        "customs": {
+                            "outs": {
+                                "value": {
+                                    "input": {
+                                        "label": "文本入口"
+                                    }
+                                }
+                            }
+                        },
+                        "title": "分割文本"
+                    }
+                },
+                "value": {
+                    "current-combatant": {
+                        "title": "当前战斗者"
+                    },
+                    "scene-targets": {
+                        "title": "场景目标"
+                    },
+                    "user-value": {
+                        "inputs": {
+                            "id": {
+                                "options": {
+                                    "__active-gm__": "在线GM",
+                                    "__context-user__": "上下文用户",
+                                    "__self-user__": "自身用户",
+                                    "specials": "特殊",
+                                    "users": "用户"
+                                }
+                            }
+                        },
+                        "title": "世界用户"
+                    }
+                }
+            },
+            "region": {
+                "gm": "仅GM",
+                "path": "触发器路径"
+            },
+            "shared": {
+				"extract": {
+                    "input": {
+                        "label": "路径"
+                    }
+                },
+                "numbers": {
+                    "disable": {
+                        "tooltip": "设置为<code>0</code>以禁用"
+                    }
+                },
+                "variables": {
+                    "tooltip": "使用<code>@</code>字符作为变量前缀"
+                }
+            },
+            "special": {
+                "break": "可中断当前进程",
+                "custom": "具有自定义入口",
+                "emit": "等待用户输入",
+                "loop": "可循环遍历",
+                "state": "具有多个状态",
+                "warning": "使用此节点时请格外小心"
+            },
+            "state": {
+                "description": "描述",
+                "filter": "过滤",
+                "find": "查找",
+                "localization": "本地",
+                "loop": "循环",
+                "plain": "纯文本"
+            },
+            "tag": {
+                "chat": {
+                    "title": "聊天"
+                },
+                "combat": {
+                    "title": "战斗"
+                },
+                "combatant": {
+                    "title": "战斗者"
+                },
+                "debug": {
+                    "title": "调试"
+                },
+                "dialog": {
+                    "title": "对话框"
+                },
+                "loop": {
+                    "title": "循环"
+                },
+                "macro": {
+                    "title": "宏"
+                },
+                "region": {
+                    "title": "区域"
+                },
+                "token": {
+                    "title": "Token"
+                }
+            }
+        },
+        "close-window": {
+            "title": "关闭触发器菜单",
+            "content": "关闭前是否要保存触发器？",
+            "yes": "保存并关闭",
+            "no": "不保存直接关闭"
+        },
+        "confirm-dialog": {
+            "title": "确认对话框"
+        },
+        "edit-entry": {
+            "array": "是否为数组",
+            "input": "输入",
+            "label": "标签",
+            "required": "字段<strong>{name}</strong>是必填的。",
+            "types": "类型",
+            "validation": "字段<strong>{name}</strong>必须匹配模式<strong>{pattern}</strong>。",
+            "yes": {
+                "add": "添加",
+                "edit": "编辑"
+            }
+        },
+        "edit-folder": {
+            "folder": "文件夹",
+            "reset": "重置为模组默认值？",
+            "title": "编辑文件夹",
+            "yes": "编辑"
+        },
+        "edit-trigger": {
+            "folder": "文件夹",
+            "name": "触发器名称",
+            "priority": {
+                "label": "优先级",
+                "tooltip": "具有更高优先级的触发器会先执行。"
+            },
+            "tags": "触发器标签",
+            "yes": {
+                "create": "创建",
+                "edit": "编辑"
+            }
+        },
+        "edit-label": {
+            "label": "标签",
+            "title": {
+                "gate": {
+                    "create": "创建门",
+                    "edit": "编辑门"
+                },
+                "variable": {
+                    "create": "创建变量",
+                    "edit": "编辑变量"
+                }
+            },
+            "yes": {
+                "create": "创建",
+                "edit": "编辑"
+            }
+        },
+        "import-export-triggers": {
+            "error": "解析触发器数据时发生错误。",
+            "imported": "触发器已导入但尚未保存。",
+            "keep": "保留ID",
+            "title": {
+                "export": "导出触发器",
+                "import": "导入触发器"
+            },
+            "toggle": "全选/取消全选",
+            "yes": {
+                "export": "导出",
+                "import": "导入"
+            }
+        },
+        "node": {
+            "entry": "入口",
+            "false": "假",
+            "in": "输入",
+            "input": "输入",
+            "null": "空",
+            "out": "输出",
+            "output": "输出",
+            "true": "真",
+            "value": "值"
+        },
+        "nodes-menu": {
+            "add": {
+                "gate": "创建新门"
+            },
+            "category": {
+                "event": "事件",
+                "gate": "门",
+                "node": "节点",
+                "variable": "变量"
+            },
+            "clipboard": {
+                "paste": "从剪贴板粘贴节点",
+                "title": "剪贴板"
+            },
+            "event": "事件",
+            "search": {
+                "label": "搜索节点",
+                "placeholder": "节点名称"
+            },
+            "tags": {
+                "label": "过滤标签"
+            }
+        },
+        "pf2e-trigger": {
+            "category": {
+                "condition": {
+                    "title": "状态"
+                }
+            },
+            "convertor": {
+                "outcome-number": "介于-1到3之间的数字",
+                "outcome-text": "null, criticalFailure, failure, success, criticalSuccess",
+                "target-text": "签名值"
+            },
+            "custom": {
+                "rule": {
+                    "label": "规则元素"
+                }
+            },
+            "entry": {
+                "action": {
+                    "title": "动作"
+                },
+                "basic": {
+                    "title": "基础"
+                },
+                "by": {
+                    "title": "由"
+                },
+                "condition": {
+                    "title": "状态"
+                },
+                "counter": {
+                    "title": "计数器"
+                },
+                "effect": {
+                    "title": "效果"
+                },
+                "for": {
+                    "title": "触发对象"
+                },
+                "identifier": {
+                    "title": "标识符"
+                },
+                "name": {
+                    "title": "名称"
+                },
+                "option": {
+                    "title": "掷骰选项"
+                },
+                "options": {
+                    "title": "掷骰选项"
+                },
+                "origin": {
+                    "title": "来源"
+                },
+                "outcome": {
+                    "title": "结果"
+                },
+                "parent": {
+                    "title": "父级"
+                },
+                "private": {
+                    "title": "私有"
+                },
+                "reroll": {
+                    "title": "是否为重掷"
+                },
+                "save": {
+                    "title": "豁免类型"
+                },
+                "slug": {
+                    "title": "短标识符"
+                },
+                "when": {
+                    "title": "触发时机"
+                }
+            },
+            "group": {
+                "duration": "持续时间数据",
+                "roll": "掷骰数据",
+                "rule": "规则元素",
+                "save": "豁免数据"
+            },
+            "node": {
+                "action": {
+                    "create-condition": {
+                        "groups": {
+                            "effect": "效果数据"
+                        },
+                        "title": "创建状态效果"
+                    },
+                    "create-effect": {
+                        "title": "创建效果"
+                    },
+                    "create-item": {
+                        "customs": {
+                            "inputs": {
+                                "choices": {
+                                    "label": "选择集",
+                                    "tooltip": "<ul><li>flag:&lt;flag&gt;:&lt;index&gt;</li><li>rollOption:&lt;rollOption&gt;:&lt;index&gt;</li></ul>"
+                                }
+                            }
+                        },
+                        "groups": {
+                            "choices": "选择集选项"
+                        },
+                        "inputs": {
+                            "duplicate": {
+                                "title": "允许重复"
+                            }
+                        },
+                        "title": "创建物品"
+                    },
+                    "create-persistent": {
+                        "inputs": {
+                            "dc": {
+                                "title": "DC"
+                            },
+                            "die": {
+                                "title": "骰子"
+                            },
+                            "type": {
+                                "title": "伤害类型"
+                            }
+                        },
+                        "title": "创建持续伤害"
+                    },
+                    "create-temporary": {
+                        "title": "创建触发器效果"
+                    },
+                    "decrease-condition": {
+                        "title": "减少状态"
+                    },
+                    "effect-badge": {
+                        "title": "更新效果徽章",
+                        "titles": {
+                            "decrease": "减少效果徽章",
+                            "increase": "增加效果徽章"
+                        }
+                    },
+                    "effect-duration": {
+                        "outputs": {
+                            "delete": {
+                                "title": "已删除"
+                            }
+                        },
+                        "title": "更新效果持续时间",
+                        "titles": {
+                            "decrease": "减少效果持续时间",
+                            "increase": "增加效果持续时间"
+                        }
+                    },
+                    "increase-condition": {
+                        "title": "增加状态"
+                    },
+					"move-time": {
+                        "states": {
+                            "threshold": "阈值",
+                            "unit": "单位"
+                        },
+                        "title": "移动时间"
+                    },
+					"remove-condition": {
+                        "title": "移除状态"
+                    },
+                    "roll-damage": {
+                        "inputs": {
+                            "formula": {
+                                "title": "伤害公式"
+                            }
+                        },
+                        "states": {
+                            "item": "豁免(物品)",
+                            "none": "无豁免",
+                            "target": "豁免(目标)",
+                            "value": "豁免(数值)"
+                        },
+                        "title": "掷伤害骰"
+                    },
+                    "roll-flat": {
+                        "title": "掷平值检定"
+                    },
+                    "roll-save": {
+                        "title": "掷豁免检定"
+                    },
+                    "send-chat": {
+                        "inputs": {
+                            "parent": {
+                                "tooltip": "无法将未拥有的物品发送到聊天"
+                            }
+                        },
+                        "title": "发送物品到聊天"
+                    },
+                    "update-resource": {
+                        "inputs": {
+                            "slug": {
+                                "title": "资源短标识符"
+                            }
+                        },
+                        "title": "更新特殊资源",
+                        "titles": {
+                            "decrease": "减少资源",
+                            "increase": "增加资源"
+                        }
+                    }
+                },
+                "condition": {
+                    "has-condition": {
+                        "title": "具有状态"
+                    },
+                    "has-immunity": {
+                        "title": "具有免疫"
+                    },
+                    "has-item": {
+                        "inputs": {
+                            "slug": {
+                                "title": "物品短标识符"
+                            }
+                        },
+                        "outputs": {
+                            "target": {
+                                "title": "父级"
+                            }
+                        },
+                        "states": {
+                            "slug": "短标识符"
+                        },
+                        "title": "具有物品"
+                    },
+                    "has-option": {
+                        "title": "具有掷骰选项"
+                    },
+					"has-resource": {
+                        "inputs": {
+                            "slug": {
+                                "title": "资源标识符"
+                            }
+                        },
+                        "title": "有特殊资源"
+                    },
+                    "has-temporary": {
+                        "title": "具有触发器效果"
+                    },
+                    "in-combat": {
+                        "title": "是否在战斗中"
+                    },
+                    "in-range": {
+                        "inputs": {
+                            "distance": {
+                                "title": "距离",
+                                "tooltip": "以5英尺为单位"
+                            }
+                        },
+                        "title": "是否在范围内"
+                    },
+                    "inside-aura": {
+                        "inputs": {
+                            "once": {
+                                "title": "仅执行一次"
+                            }
+                        },
+                        "outputs": {
+                            "target": {
+                                "title": "光环目标"
+                            }
+                        },
+                        "title": "是否在光环内"
+                    },
+                    "is-alliance": {
+                        "title": "是否为阵营"
+                    },
+                    "is-dead": {
+                        "title": "角色是否死亡"
+                    }
+                },
+                "event": {
+					"action-chat-event": {
+						"title": "发送至聊天的动作",
+						"inputs": {
+						  "slug": {
+							"title": "动作标识符"
+						  }
+					   }
+					},
+                    "attack-roll-event": {
+                        "title": "攻击检定"
+                    },
+                    "aura-enter-event": {
+                        "title": "进入光环"
+                    },
+                    "aura-leave-event": {
+                        "title": "离开光环"
+                    },
+                    "base-aura-event": {
+                        "inputs": {
+                            "affects": {
+                                "options": {
+                                    "all": "所有",
+                                    "allies": "盟友",
+                                    "enemies": "敌人"
+                                },
+                                "title": "影响对象"
+                            },
+                            "slug": {
+                                "title": "光环短标识符"
+                            },
+                            "when": {
+                                "options": {
+                                    "always": "总是触发",
+                                    "combat": "仅在战斗中",
+                                    "turn": "仅当前回合"
+                                }
+                            }
+                        },
+                        "outputs": {
+                            "source": {
+                                "title": "光环来源"
+                            }
+                        }
+                    },
+                    "check-roll-event": {
+                        "inputs": {
+                            "for": {
+                                "options": {
+                                    "skill-check": "技能检定"
+                                }
+                            }
+                        },
+                        "outputs": {
+                            "roller": {
+                                "title": "掷骰者"
+                            },
+                            "type": {
+                                "title": "检定类型"
+                            }
+                        },
+                        "states": {
+                            "all": "所有检定",
+                            "check": "特定检定"
+                        },
+                        "title": "检定掷骰",
+                        "titles": {
+                            "specific": "{type}掷骰"
+                        }
+                    },
+                    "damage-taken-event": {
+                        "inputs": {
+                            "requires": {
+                                "tooltip": "必须来源于一个角色",
+                                "title": "需要来源"
+                            },
+                            "for": {
+                                "options": {
+                                    "all": "所有伤害",
+                                    "damage": "受到伤害",
+                                    "heal": "受到治疗",
+                                    "persistent": "仅持续伤害",
+                                    "negated": "仅抵消伤害"
+                                }
+                            }
+                        },
+                        "title": "受到伤害"
+                    },
+                    "turn-end-event": {
+                        "title": "回合结束"
+                    },
+                    "turn-start-event": {
+                        "title": "回合开始",
+                        "outputs": {
+                            "round": {
+                                "title": "回合数"
+                            }
+                        }
+                    }
+                },
+                "extractor": {
+                    "choiceset-selection": {
+                        "inputs": {
+                            "flag": {
+                                "title": "标记"
+                            },
+                            "option": {
+                                "title": "掷骰选项"
+                            }
+                        },
+                        "outputs": {
+                            "selection": {
+                                "title": "选择"
+                            }
+                        },
+                        "title": "获取选择集选项"
+                    },
+                    "item-formula": {
+                        "title": "提取物品公式"
+                    },
+                    "option-value": {
+                        "inputs": {
+                            "option": {
+                                "title": "选项前缀"
+                            }
+                        },
+                        "title": "获取掷骰选项值"
+                    }
+                },
+                "logic": {
+                    "compare-alliances": {
+                        "inputs": {
+                            "compare": {
+                                "options": {
+                                    "allies": "是盟友",
+                                    "different": "不同",
+                                    "enemies": "是敌人",
+                                    "neutral": "是中立"
+                                }
+                            }
+                        },
+                        "title": "比较阵营关系"
+                    },
+                    "compare-outcomes": {
+                        "title": "比较成功等级"
+                    },
+                    "distance-between": {
+                        "inputs": {
+                            "distance": {
+                                "title": "距离"
+                            },
+                            "strict": {
+                                "title": "严格模式",
+                                "tooltip": "不回退在线Token"
+                            }
+                        },
+                        "title": "Token间距离"
+                    },
+                    "match-predicate": {
+                        "inputs": {
+                            "predicate": {
+                                "title": "谓词"
+                            }
+                        },
+                        "title": "匹配谓词"
+                    }
+                },
+                "splitter": {
+                    "split-outcome": {
+                        "title": "分割成功等级"
+                    }
+                },
+                "value": {
+                    "item-value": {
+                        "title": "缓存的物品"
+                    }
+                }
+            },
+            "setting": {
+                "hint": "使用此模组注册你自己的触发器。",
+                "label": "注册触发器",
+                "name": "PF2e触发器菜单"
+            },
+            "shared": {
+                "difficulty-class": {
+                    "adjustment": {
+                        "title": "调整值"
+                    },
+                    "against": {
+                        "title": "对抗"
+                    }
+                },
+                "image": {
+                    "pf2e": {
+                        "title": "PF2e图像路径"
+                    },
+                    "sf2e": {
+                        "title": "SF2e图像路径"
+                    }
+                },
+                "item-extraction": {
+                    "index": {
+                        "title": "实例索引"
+                    }
+                },
+                "roll-data": {
+                    "note": {
+                        "title": "额外备注"
+                    },
+                    "options": {
+                        "title": "额外掷骰选项"
+                    },
+                    "traits": {
+                        "title": "额外特性"
+                    }
+                },
+                "uuid": {
+                    "pf2e": {
+                        "title": "PF2e源UUID"
+                    },
+                    "sf2e": {
+                        "title": "SF2e源UUID"
+                    }
+                }
+            },
+            "state": {
+                "fixed": "固定",
+                "timed": "定时"
+            },
+            "tag": {
+                "attack": {
+                    "title": "攻击"
+                },
+                "aura": {
+                    "title": "光环"
+                },
+                "check": {
+                    "title": "检定"
+                },
+                "damage": {
+                    "title": "伤害"
+                },
+                "duration": {
+                    "title": "持续时间"
+                },
+                "outcome": {
+                    "title": "成功等级"
+                },
+                "save": {
+                    "title": "豁免"
+                },
+                "turn": {
+                    "title": "回合"
+                }
+            },
+            "version": {
+                "error": "<strong>Trigger Engine</strong>模组支持的最低系统版本是<strong>{version}</strong>。"
+            }
+        },
+        "refresh-application": {
+            "content": "这将刷新触发器应用程序，你是否要先保存触发器？",
+            "no": "仅刷新",
+            "title": "刷新应用程序",
+            "yes": "保存并刷新"
+        },
+        "save-triggers": {
+            "content": "你确定要保存触发器吗？",
+            "saved": "你的触发器已保存。",
+            "title": "保存触发器",
+            "yes": "保存"
+        }
+    }
+}

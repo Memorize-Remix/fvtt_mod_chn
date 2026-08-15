@@ -1,0 +1,65 @@
+{
+  "ZONE-MOVEMENT": {
+    "zone": {
+      "singular": "zone",
+      "plural": "zones"
+    },
+    "DistanceLabel": {
+      "Name": "Show Distance Labels",
+      "Hint": "Toggle to display distance labels on movement paths, based on Coriolis: The Great Dark rules.",
+      "Engaged": {
+        "Name": "Engaged Label",
+        "Hint": "Label for Engaged distance (adjacent square/less than the grid size). Leave null to use default ('Engaged'), or set your own custom label. Accepts a translation key.",
+        "Default": "Engaged"
+      },
+      "Short": {
+        "Name": "Short Label",
+        "Hint": "Label for Short distance (same region). Leave null to use default ('Short'), or set your own custom label. Accepts a translation key.",
+        "Default": "Short"
+      },
+      "Medium": {
+        "Name": "Medium Label",
+        "Hint": "Label for Medium distance (adjacent region). Leave null to use default ('Medium'), or set your own custom label. Accepts a translation key.",
+        "Default": "Medium",
+        "Ranges": {
+          "Name": "Zones range to be within Medium",
+          "Hint": "Number of zones for a distance to be Medium, defaults to 1. So 1 (since 2 is Long) zone is considered to be Medium. Short is less than Medium (defaults to 0 distance) and Engaged is alwats adjacent square."
+        }
+      },
+      "Long": {
+        "Name": "Long Label",
+        "Hint": "Label for Long distance (between two and four regions). Leave null to use default ('Long'), or set your own custom label. Accepts a translation key.",
+        "Default": "Long",
+        "Ranges": {
+          "Name": "Zones range to be within Long",
+          "Hint": "Number of zones for a distance to be Long, defaults to 2. So between 2 and 4 (since 5 is Extreme) zones is considered to be Long."
+        }
+      },
+      "Extreme": {
+        "Name": "Extreme Label",
+        "Hint": "Label for Extreme distance (more than four regions). Leave null to use default ('Extreme'), or set your own custom label. Accepts a translation key.",
+        "Default": "Extreme",
+        "Ranges": {
+          "Name": "Zones range to be within Extreme",
+          "Hint": "Number of zones for a distance to be Extreme, defaults to 5."
+        }
+      }
+    },
+    "CountNoRegionAsZone": {
+      "Name": "Count No Region as Zone",
+      "Hint": "If enabled, areas without a defined region will be treated as their own zone for movement calculations. If you are using gridless maps, you may not want to enable this setting, as regions boundaries are counted as not being inside the zones, and tokens can, in some edge cases, end their movement on a boundary, causing some wrong calculations on the next movement."
+    },
+    "GridlessStepSize": {
+      "Name": "Gridless Step Size",
+      "Hint": "When using gridless maps, the module will calculate the paths based on the movement line. To do that, we can use the grid size (default, if the value is empty) or use a defined size (in pixels). Keep in mind that smaller step sizes will improve the accuracy but may increase calculation time."
+    },
+    "DrawTokenPoints": {
+      "Name": "Draw Token Points",
+      "Hint": "If enabled, the module will draw some points on the movement path, centered on the token. This can help visualize the exact path taken, especially on gridless maps. Each movement will get a point with a different colour. Refresh the page to clear old points."
+    },
+    "LogDebugMessages": {
+      "Name": "Log Debug Messages",
+      "Hint": "If enabled, the module will log debug messages to the console, including warnings about overlapping regions and zone changes during movement calculations. Useful for troubleshooting."
+    }
+  }
+}

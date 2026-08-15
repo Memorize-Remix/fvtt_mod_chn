@@ -1,0 +1,21 @@
+{
+    "TYPES": {
+        "RegionBehavior": {
+            "fvtt-delayed-teleport-region": {
+                "delayedTeleportToken": "Delayed Teleport Token"
+            }
+        }
+    },
+    "fvtt-delayed-teleport-region": {
+        "FIELDS": {
+            "showCountdown": {
+                "name": "Show Countdown",
+                "hint": "Whether to show scrolling text with a countdown of the time to teleport"
+            },
+            "delayAmount": {
+                "name": "Delay Amount",
+                "hint": "Delay in seconds before the token is teleported to its destination"
+            }
+        }
+    }
+}

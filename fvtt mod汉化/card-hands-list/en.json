@@ -1,0 +1,41 @@
+{
+    "CardHandsList": {
+        "Heading": "Card Hands",
+        "OpenHand": "Open Hand Sheet",
+        "Open": "Open {name}",
+        "OpenHandActions": "Open Hand Actions",
+        "Menu": "Menu",
+        "FlipAll": "Flip All",
+        "Favorite": "Set as Favorite",
+        "Unfavorite": "Unset as Favorite",
+        "Pin": "Pin",
+        "Unpin": "Unpin",
+        "Defaults": "Set Defaults",
+        "DefaultsMessage": "Set the default card draw and discard options for <strong>{name}</strong>",
+        "OpenCard": "Open Card Sheet",
+        "Flip": "Flip",
+        "Pass": "Pass",
+        "Discard": "Discard",
+        "DiscardAll": "Discard All",
+        "PlayAdventureCard": "Play Adventure Card",
+        "ScryDeck": "Scry Default Deck",
+        "ReturnToDeck": "Return to Deck",
+        "None": "None",
+        "Favorited": "Favorited",
+        "Owner": "Owner",
+        "Observer": "Observer",
+        "DefaultDiscardPile": "Discard Pile",
+        "DefaultDrawDeck": "Draw Deck",
+        "Settings": {
+			"ObserverLevel": {
+				"Name": "Include Hands with Observer Ownership",
+				"Hint": "Includes hands of which users have Observer-level ownership. Default is Owner-level ownership only."
+			},
+			"ExplicitOwnership": {
+				"Name": "Use Explicit GM Ownership Levels",
+				"Hint": "Enable this setting to hide Hands from GMs. When enabled, Hand visibility for GMs will based on the Default or user-specific ownership level set on each hand."
+            }
+        },
+        "FlipWarning": "Card Hands List: This card is not yours to flip."
+    }
+}

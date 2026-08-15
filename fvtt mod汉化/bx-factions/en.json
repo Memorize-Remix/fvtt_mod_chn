@@ -1,0 +1,262 @@
+{
+  "TYPES.JournalEntryPage.bx-factions": {
+    "faction": "Faction",
+    "roomKey": "Dungeon Room Key",
+    "characterClass": "Character Class (OSE)",
+    "levelOverview": "Dungeon Level Overview"
+  },
+  "FACTIONS": {
+    "settings": {
+      "useFactionRepModifiers": {
+        "label": "Use Faction Reputation Modifiers",
+        "hint": "Enables controls for and display of UI elements related to fame/infamy trackers for reaction modifiers."
+      },
+      "useFactionMorality": {
+        "label": "Use Faction Morality",
+        "hint": "Enables controls for and display of UI elements related to a faction's morality (Good/Neutral/Evil)."
+      }
+    },
+    "templates": {
+      "faction": {
+        "sheetName": "Faction Sheet",
+        "name": "Name",
+        "reputation": {
+          "label": "Player reputation",
+          "fame": "Fame",
+          "infamy": "Infamy",
+          "modifier": "Reaction modifier"
+        },
+        "alignment": {
+          "heading": "Faction alignment",
+          "labelAlignment": "Alignment",
+          "labelMorality": "Morality",
+          "lawful": "Lawful",
+          "neutral": "Neutral",
+          "chaotic": "Chaotic",
+          "good": "Good",
+          "evil": "Evil",
+          "trueNeutral": "True Neutral",
+          "unaligned": "Unaligned"
+        },
+        "goals": "Goals",
+        "territory": "Holdings and Territory",
+        "resources": "Resources",
+        "relationships": "Relationships with other factions",
+        "description": "Description",
+        "notes": "Notes",
+        "members": {
+          "label": "Membership",
+          "notable": "Notable individuals",
+          "others": "Members",
+          "reinforcements": "Reinforcement procedures"
+        },
+        "edit": {
+          "tabs": {
+            "notes": "Notes",
+            "information": "Details",
+            "resources": "Territory/Resources",
+            "relationships": "Relationships/Party Reputation",
+            "membership": "Membership"
+          }
+        },
+        "empty": {
+          "goals": "This faction has no recorded goals",
+          "territory": "This faction has no recorded territory",
+          "relationships": "This faction has no recorded relationships",
+          "notes": "No notes have been recorded about this faction",
+          "resources": "This faction has no recorded resources",
+          "notables": {
+            "view": "This faction has no notable individuals",
+            "edit": "This faction has no notable individuals. Drag Actors to add them to this faction"
+          },
+          "members": {
+            "view": "This faction has no members",
+            "edit": "This faction has no members. Drag Actors to add them to this faction"
+          }
+        }
+      },
+      "roomKey": {
+        "sheetName": "Room Key Sheet",
+        "description": "Description",
+        "secrets": "Secrets",
+        "traps": "Traps",
+        "treasure": "Treasure",
+        "treasureNotes": "Notes",
+        "inhabitants": "Inhabitants",
+        "inhabitantNotes": "Notes",
+        "edit": {
+          "tabs": {
+            "description": "Description",
+            "inhabitants": "Inhabitants",
+            "treasure": "Treasure",
+            "secrets": "Secrets"
+          }
+        },
+        "empty": {
+          "description": "This room has no description",
+          "secrets": "This room has no secrets",
+          "traps": "This room has no traps",
+          "treasure": {
+            "view": "This room has no treasure",
+            "edit": "This room has no treasure. Drag Items to add them to this room"
+          },
+          "inhabitants": {
+            "view": "This room has no inhabitants",
+            "edit": "This room has no inhabitants. Drag Actors to add them to this room"
+          }
+        }
+      },
+      "levelOverview": {
+        "sheetName": "Dungeon Level Overview Sheet",
+        "access": {
+          "from": "From",
+          "to": "To",
+          "notes": "Notes",
+          "delete": "Delete access point",
+          "add": "Add Access Point"
+        },
+        "notable": {
+          "npcs": "Notable NPCs",
+          "factions": "Factions"
+        },
+        "frequency": {
+          "turns": "Turns",
+          "minutes": "Minutes",
+          "hours": "Hours"
+        },
+        "grouping": {
+          "rooms": "Per-Room",
+          "regions": "Regional",
+          "fullLevel": "Full Level"
+        },
+        "encounters": {
+          "groupType": "Type",
+          "locations": "Locations",
+          "rooms": "Rooms",
+          "regions": "Regions",
+          "frequency": {
+            "label": "Frequency",
+            "every": "Every",
+            "XinY": "in",
+            "chance": "chance"
+          },
+          "formula": "Formula",
+          "table": "Roll Table",
+          "notes": "Notes",
+          "add": "Add Encounter Table"
+        },
+        "regions": {
+          "name": "Name",
+          "rooms": "Rooms",
+          "add": "Add Region"
+        },
+        "edit": {
+          "tabs": {
+            "description": "Description",
+            "access": "Access",
+            "regions": "Regions",
+            "encounters": "Random Encounters",
+            "notables": "NPCs/Factions"
+          }
+        },
+        "empty": {
+          "access": {
+            "edit": "This level has no listed access points. Click the \"Add Access Point\" button to add one!"
+          },
+          "encounters": {
+            "edit": "This level has no encounter tables. Click the \"Add Encounter Table\" button to add one!"
+          },
+          "regions": {
+            "edit": "This level has no listed regions. Click the \"Add Region\" button to add one!"
+          },
+          "notable": {
+            "npcs": {
+              "view": "This level has no notable NPCs.",
+              "edit": "This level has no notable NPCs. Drag Actors to add them to this level"
+            },
+            "factions": {
+              "view": "No factions are active on this level.",
+              "edit": "No factions are active on this level. Drag Faction journal pages here to add them to this level."
+            }
+          }
+        }
+      },
+      "characterClass": {
+        "sheetName": "Character Class Sheet",
+        "hitDieSize": "Hit Die",
+        "maxLevel": "Maximum Level",
+        "armor": "Armour",
+        "weapons": "Weapons",
+        "languages": "Languages",
+        "restrictions": "Restrictions",
+        "gearTable": "Gear Table",
+        "prerequisites": "Prerequisites",
+        "primerequisites": {
+          "label": "Prime requisites",
+          "half": "Prime requisites (5%)",
+          "full": "Prime requisites (10%)",
+          "inclusive": "and",
+          "exclusive": "or"
+        },
+        "spellLevel": "Level {level}",
+        "advancement": {
+          "level": "Lv.",
+          "xp": "XP",
+          "hd": "HD",
+          "thac0": "THAC0",
+          "saves": "Saves",
+          "caption": {
+            "conMod": "Modifiers from CON no longer apply"
+          },
+          "conMod": "Con Mod?",
+          "add": "Add Level",
+          "remove": "Remove Last Level"
+        },
+        "resources": {
+          "category": {
+            "label": "Category",
+            "add": "Add Resource Category",
+            "remove": "Remove Resource Category"
+          },
+          "pool": {
+            "label": "Resource",
+            "add": "Add Resource",
+            "remove": "Remove Resource"
+          }
+        },
+        "edit": {
+          "tabs": {
+            "description": "Description",
+            "information": "Class Details",
+            "xp": "Advancement",
+            "resources": "Resources",
+            "spellList": "Spell List",
+            "features": "Class Features"
+          }
+        },
+        "empty": {
+          "gearTable": "Unassigned",
+          "secrets": "This room has no secrets",
+          "traps": "This room has no traps",
+          "advancement": "No levels added",
+          "armor": "None",
+          "weapons": "None",
+          "languages": "None",
+          "spellList": {
+            "all": "This class has no spells. Drag abilities to add them to this class",
+            "atLevel": "This class has no spells of this level"
+          },
+          "features": {
+            "view": "This class has no features",
+            "edit": "This class has no features. Drag abilities to add them to this class"
+          },
+          "resources": {
+            "category": "No resource categories have been added",
+            "pool": "No resources in this category"
+          },
+          "primerequisite": "None"
+        }
+      }
+    }
+  }
+}

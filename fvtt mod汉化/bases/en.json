@@ -1,0 +1,29 @@
+{
+	"BASES": {
+		"AssignStatusHUDSorting": {
+			"Switch": {
+				"Name": "Enable Status HUD Sorting",
+				"Hint": "When enabled, the status effects labels will also be shown and an opinionated sorting will take place"
+			},
+			"SortingType": {
+				"Name": "Status effects sorting",
+				"Hint": "Fill by rows (left → right) or by columns (top → bottom)",
+				"Choices": {
+					"Rows": "Rows",
+					"Columns": "Columns"
+				}
+			},
+			"NumberColumns": {
+				"Name": "Number of columns",
+				"Hint": "Divide the HUD status effects into this number of columns"
+			},
+			"Filter": {
+				"Name": "Enable status filter",
+				"Hint": "Show a search field above status effects to filter by name or status id",
+				"Placeholder": "Filter effects...",
+				"Clear": "Clear"
+			}
+		},
+		"IncompatibleSystemError": "Bugbear's Assign Status Effects Sorter is not compatible with your system and the Assign Status Effects HUD changes have been disabled. Disabling the module is recommended!"
+	}
+}

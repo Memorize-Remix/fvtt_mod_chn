@@ -1,0 +1,78 @@
+
+  "revolutionary-piratenames": {
+    "message": {
+      "flavor": {
+        "given": "抽取一个{gender}{nation}名字。",
+        "surname": "抽取一个{nation}姓氏。",
+        "full": "抽取一个{gender}{nation}姓名。",
+        "ship": "抽取一个{nation}船只名称。"
+      },
+      "speaker": "海盗名称生成器"
+    },
+    "dialog": {
+      "person": {
+        "title": "生成人物名称",
+        "nationalities": {
+          "label": "国籍",
+          "hint": "此名称应来自哪个国籍？",
+          "options": {
+            "Random Person": "随机人物",
+            "Random Pirate": "随机海盗",
+            "Spanish": "西班牙",
+            "English": "英格兰",
+            "French": "法兰西",
+            "Dutch": "荷兰",
+            "Scottish": "苏格兰",
+            "Irish": "爱尔兰",
+            "Welsh": "威尔士"
+          }
+        },
+        "gender": {
+          "label": "性别",
+          "hint": "名称应反映何种性别？",
+          "options": {
+            "Random": "随机",
+            "Masculine": "男性",
+            "Feminine": "女性"
+          }
+        },
+        "actions": {
+          "generate": "生成名称",
+          "cancel": "取消"
+        }
+      },
+      "ship": {
+        "title": "生成船只名称",
+        "nationalities": {
+          "label": "所属势力",
+          "options": {
+            "Random": "随机",
+            "Spanish": "西班牙帝国",
+            "British": "大英帝国",
+            "French": "法兰西王国",
+            "Dutch": "荷兰西印度公司",
+            "Pirate": "海盗"
+          }
+        },
+        "type": {
+          "label": "类型",
+          "hint": "这是商船还是军舰？",
+          "options": {
+            "Commercial": {
+              "label": "商船",
+              "hint": "为从事商业贸易的民用船只生成名称。"
+            },
+            "Martial": {
+              "label": "军舰",
+              "hint": "为用于战争的船只生成名称，包括海军舰艇或私掠船。"
+            }
+          }
+        },
+        "actions": {
+          "generate": "生成名称",
+          "cancel": "取消"
+        }
+      }
+    }
+  }
+}

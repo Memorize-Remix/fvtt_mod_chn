@@ -1,0 +1,42 @@
+{
+    "recycle-bin": {
+        "app": {
+            "title": "🗑️ Recycle Bin",
+            "restore-item": "Restore Item",
+            "preview-item": "Preview Item",
+            "permanently-delete": "Permanently Delete Item",
+            "noParent": "Primary Document",
+            "search": "Search",
+            "time": "Deleted {time} ago",
+            "deleteOnRefresh": "This item will be permanently deleted on refresh.",
+            "deleteOnRefreshTitle": "One or more items pending deletion"
+        },
+        "settings": {
+            "maxPermanentItems": {
+                "name": "Maximum Permanent History",
+                "hint": "Number of items that will be saved between reloads."
+            },
+            "maxTemporaryItems": {
+                "name": "Maximum Temporary History",
+                "hint": "Number of items that will be saved. Temporary items that exceed the 'Maximum Permanent History' will be lost on reload."
+            }
+        },
+        "error": {
+            "restore": "Failed to restore {item}. Parent not found:",
+            "preview": "Failed to preview {item}. Parent not found."
+        },
+        "success": {
+            "restore": "Successfully restored {item}."
+        },
+        "dialog": {
+            "restoreParent": {
+                "title": "Restore Parent",
+                "content": "The parent of this item could not be found in your world but it's present in the recycle bin. Would you like to restore it?"
+            },
+            "permanentlyDelete": {
+                "title": "Permanently Delete",
+                "content": "Are you sure you want to permanently delete this item? This action cannot be undone."
+            }
+        }
+    }
+}

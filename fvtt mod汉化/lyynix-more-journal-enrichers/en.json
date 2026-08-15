@@ -1,0 +1,216 @@
+{
+  "LMJE": {
+    "SYSTEM": {
+      "changelog": {
+        "intro": "An new version has been installed! Here is a list of all the changes since the last installed update.",
+        "additions": "Additions",
+        "fixes": "Bugfixes"
+      },
+      "getDocument": {
+        "wrongType": "Expected type doesn't match type of found document",
+        "expectedTypeNotFound": "The expected type is not implemented",
+        "noExpectedDocumentType": "No expected type given",
+        "noDocumentFound": "No document found",
+        "selfReference": "No self reference possible",
+        "multiplePagesFound": "Found multiple pages with that identifier"
+      },
+      "welcomeMessage": {
+        "name": "Post welcome message",
+        "hint": "When checked, posts the welcome message to chat, when the world is reloaded.",
+        "message": {
+          "Thanks": "Thank you for installing More Journal Enrichers",
+          "Wiki": "Check out the wiki for an explanation of the enrichers",
+          "Journal": "Alternatively, you can take a look at the introduction journal",
+          "Contact": "If you have any questions or feedback, feel free to contact me on discord",
+          "wikiLinkLabel": "Wiki",
+          "FoundryVTTDiscordLabel": "Official FoundryVTT Discord",
+          "WeltenformerDiscordLabel": "Weltenformer Discord - Map Making and Foundry Community",
+          "IntroductionJournal": "@UUID[Compendium.lyynix-more-journal-enrichers.lmje-introduction.JournalEntry.5HxMwKHnyXOC1Xtg]",
+          "IntroductionJournalLinkPage": "@UUID[Compendium.lyynix-more-journal-enrichers.lmje-introduction.JournalEntry.5HxMwKHnyXOC1Xtg.JournalEntryPage.o1vv5ODbL2o7bAmi]"
+        }
+      }
+    },
+    "JOURNAL": {
+      "PAGE": {
+        "pageTypeNotSupported": "This journal page type is currently not supported"
+      },
+      "CHECKBOX": {
+        "invalidId": "The entered ID is invalid",
+        "idNotFound": "The entered ID doesn't exist"
+      },
+      "VARIABLE": {
+        "editVariablesDialog": {
+          "title": "Edit Variables",
+          "chooseKey": "Choose a key to edit:",
+          "newKey": "New Key",
+          "editKey": "Edit Key:",
+          "editVal": "Edit Value:",
+          "submit": "Submit",
+          "submitResponse": "Successfully updated variable",
+          "delete": "Delete",
+          "deleteResponse": "Successfully deleted variable"
+        },
+        "chooseVariablesDialog": {
+          "title": "Choose Variable",
+          "submit": "Submit"
+        },
+        "keyNotFound": "The key has no value"
+      }
+    },
+    "SCENEMENU": {
+      "Title": "Scene menu",
+      "Tooltip": {
+        "Show": "Show scene",
+        "Activate": "Acitvate scene",
+        "ToggleNav": "Toggle scene in navigation",
+        "Preload": "Preload scene",
+        "Edit": "Edit scene",
+        "Collapse": "Show/Hide preview"
+      }
+    },
+    "ROLLTABLE": {
+      "Title": "Rolltable menu"
+    },
+    "COMPENDIUM": {
+      "INLINE": {
+        "Show": "Show compendium pack"
+      },
+      "MENU": {
+        "Title": "Compendium pack menu"
+      },
+      "ERROR": {
+        "NotFound": "No compendium pack found",
+        "Multiple": "Multiple packs with this name found"
+      }
+    },
+    "PLAYLIST": {
+      "Title": "Playlist Menu",
+      "Tooltip": {
+        "PlayPause": "Play / Pause",
+        "FastForward": "Next Audio",
+        "Edit": "Edit Playlist"
+      }
+    },
+    "WHISPER": {
+      "Title": "Whisper message",
+      "Dialog": {
+        "Title": "Whisper to Player",
+        "Cancel": "Cancel"
+      }
+    },
+    "CHAT": {
+      "Title": "Chat message"
+    },
+    "POLYGLOT": {
+      "UnknownLanguage": "Unknown Language"
+    },
+    "PROSEMIRROR": {
+      "INFO": {
+        "Cancel": "Press [{keybinding}] to cancel the selection process.",
+        "Cancelled": "Selection process cancelled.",
+        "WrongType": "The selected document has the wrong type.",
+        "AddedDocument": "The selected document was added to the enricher: {docName}"
+      },
+      "TEXTINPUTDIALOG": {
+        "TITLE": {
+          "Alias": "Enter alias",
+          "Chat": "Enter chat message",
+          "Checkbox": "Enter checkbox name",
+          "CBLabel": "Enter the label for the checkbox",
+          "IfChecked": "Enter checkbox name",
+          "IfCheckedContent": "Enter text",
+          "PolyglotLanguage": "Enter Language",
+          "PolyglotText": "Enter text",
+          "Page": "Select Page"
+        },
+        "DESCRIPTION": {
+          "Alias": "Enter an alternative label. Leave blank or click on cancel to not assign an alias.",
+          "Chat": "Enter the message that should be sent to the chat.",
+          "Checkbox": "Enter the unique name for the Checkbox. This name will not be shown next to the checkbox and is used internally as an identifier.",
+          "CBLabel": "Enter the Label that will be displayed next to the checkbox. Leave blank or press Cancel to not have a label.",
+          "IfChecked": "Enter the unique name of the checkbox that should be used.",
+          "IfCheckedContent": "Enter the text, that should be shown when the checkbox is checked.",
+          "PolyglotLanguage": "Enter the Language in which the Text should be displayed.",
+          "PolyglotText": "Enter the Text that should be displayed in the chosen language.",
+          "Page": "Please select a page from the journal that should be inserted:"
+        },
+        "Accept": "Accept",
+        "Cancel": "Cancel"
+      },
+      "ENRICHERS": {
+        "MenuTitle": "Enrichers",
+        "TOC": {
+          "Category": "Table of Contents",
+          "toc": "Table of Contents - Other Journal",
+          "tocs": "Table of Contents - This Journal",
+          "otoc": "Ordered Table of Contents - Other Journal",
+          "otocs": "Ordered Table of Contents - This Journal"
+        },
+        "JOURNAL": {
+          "Page": "Journal Page",
+          "Category": "Journal Enrichers",
+          "Variable": "Placeholder Text",
+          "Checkbox": "Checkbox",
+          "IfChecked": "Conditional Text"
+        },
+        "SCENES": {
+          "Category": "Scene Enrichers",
+          "Menu": "Scene Menu",
+          "Full": "Full Scene",
+          "Inline": "Inline Scene"
+        },
+        "ROLLTABLES": {
+          "Category": "Rolltable Enrichers",
+          "Menu": "Rolltable Menu",
+          "Full": "Full Rolltable",
+          "Inline": "Inline Rolltable"
+        },
+        "PLAYLIST": {
+          "Category": "Playlist Enrichers",
+          "Menu": "Playlist Menu",
+          "Inline": "Inline Playlist"
+        },
+        "COMPENDIUM": {
+          "Category": "Compendium Pack Enrichers",
+          "Full": "Full Compendium",
+          "Inline": "Inline Compendium"
+        },
+        "CHAT": {
+          "Category": "Chat Enrichers",
+          "Post": "Post paragraph to chat",
+          "Whisper": "Whisper paragraph to users"
+        },
+        "Polyglot": "Polyglot"
+      }
+    },
+    "DND": {
+      "CHARACTER": {
+        "imageAlt": "Portrait of the Character",
+        "race": "Race",
+        "alignment": "Alignment",
+        "attr": {
+          "str": "STR",
+          "dex": "DEX",
+          "con": "CON",
+          "int": "INT",
+          "wis": "WIS",
+          "cha": "CHA"
+        }
+      }
+    },
+    "PF2E": {
+      "CHARACTER": {
+        "imageAlt": "Portrait of the Character",
+        "level": "Level",
+        "attr": {
+          "str": "STR",
+          "dex": "DEX",
+          "con": "CON",
+          "int": "INT",
+          "wis": "WIS",
+          "cha": "CHA"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "MINIMAP": {
+    "CONTEXTMENU": {
+      "FIT": "Fit In View",
+      "HIDE": "Hide MiniMap",
+      "LOCKGM": "Lock to GM View",
+      "SETTINGS": "MiniMap Settings",
+      "SYNCHRONIZE": "Synchronize Other Players",
+      "UNLOCKGM": "Unlock from GM View",
+      "VIEWACTOR": "View {name}",
+      "MARKERS": {
+        "ADD": "Add Map Marker",
+        "EDIT": "Edit Map Marker",
+        "REMOVE": "Remove Map Marker",
+        "CLEAR": "Clear Map Markers"
+      }
+    },
+    "TITLE": "MicroMap",
+    "ERRORS": {
+      "CONTEXTMENUELEMENTNOTFOUND": "Container element for context menu not found",
+      "FILENOTFOUND": "File not found: {file}",
+      "NOFILE": "No file loaded.",
+      "NOTINITIALIZED": "Renderer not initialized",
+      "SOCKETNOTINITIALIZED": "Websocket not initialized"
+    },
+    "KEYBINDINGS": {
+      "TOGGLE": "Toggle MiniMap"
+    },
+    "MARKERS": {
+      "CLEAR": {
+        "MESSAGE": "Are you sure you wish to remove all map markers?\nThis cannot be undone.",
+        "TITLE": "Remove All Map Markers"
+      },
+      "CREATE": "Create Map Marker",
+      "DROPSHADOW": {
+        "HINT": "",
+        "NAME": "Drop Shadow"
+      },
+      "EDIT": "Edit Map Marker",
+      "ICON": {
+        "NAME": "Icon"
+      },
+      "LABEL": {
+        "HINT": "",
+        "NAME": "Label"
+      },
+      "LABELALIGN": {
+        "BOTTOM": "Bottom",
+        "HINT": "",
+        "NAME": "Label Alignment",
+        "TOP": "Top"
+      },
+      "REMOVE": {
+        "MESSAGE": "Are you sure you wish to remove this map marker?\nThis cannot be undone.",
+        "TITLE": "Remove Map Marker"
+      },
+      "SHOWLABEL": {
+        "HINT": "",
+        "NAME": "Show Label"
+      },
+      "TINT": {
+        "HINT": "",
+        "NAME": "Tint"
+      },
+      "X": "X",
+      "Y": "Y"
+    },
+    "NOTECONFIG": {
+      "SHOW": "Show On MicroMap",
+      "SHOWBG": "Show Background",
+      "SHOWLABEL": "Show Label"
+    },
+    "SCENECONFIG": {
+      "OVERRIDE": {
+        "NAME": "Override Global Settings",
+        "HINT": "If enabled, MicroMap will use these settings instead of the global settings."
+      }
+    },
+    "SETTINGS": {
+      "ANTIALIASING": {
+        "HINT": "When this option is enabled, items drawn on the minimap won't be antialias when they're scaled, causing them to appear sharper.",
+        "NAME": "Disable AntiAliasing"
+      },
+      "BGCOLOR": {
+        "HINT": "The background color to use on the minimap",
+        "NAME": "Background Color"
+      },
+      "ENABLE": {
+        "HINT": "If enabled, will enable the minimap.",
+        "NAME": "Enable MiniMap"
+      },
+      "LOCKGMVIEW": {
+        "HINT": "If enabled, will force players' view to match the GM's.",
+        "NAME": "Lock To GM View"
+      },
+      "MARKERS": {
+        "BUTTON": "Configure Map Markers",
+        "CLEAR": "Remove All Markers",
+        "EDIT": "Edit Map Marker",
+        "EXPORT": "Export Map Markers",
+        "HINT": "Configure map markers",
+        "IMPORT": "Import Map Markers",
+        "NAME": "Map Markers",
+        "REMOVE": "Remove Map Marker"
+      },
+      "MASK": {
+        "HINT": "An image to use as a mask for shaping the minimap.",
+        "NAME": "Image Mask"
+      },
+      "MODE": {
+        "NAME": "MiniMap Image Mode"
+      },
+      "OVERLAY": {
+        "BORDERS": "Borders",
+        "BOTTOM": "Bottom",
+        "BUTTON": "Configure Overlay",
+        "HINT": "An image to overlay atop the minimap.",
+        "LEFT": "Left",
+        "NAME": "MiniMap Overlay",
+        "RIGHT": "Right",
+        "SHOW": "Show Overlay",
+        "TOP": "Top"
+      },
+      "PADDING": {
+        "HINT": "Space, in pixels, from the edge of the canvas area.",
+        "NAME": "Padding",
+        "X": "X",
+        "Y": "Y"
+      },
+      "POSITION": {
+        "BOTTOMLEFT": "Bottom Left",
+        "BOTTOMRIGHT": "Bottom Right",
+        "HINT": "Relative screen position of the minimap.",
+        "NAME": "MiniMap Position",
+        "TOPLEFT": "Top Left",
+        "TOPRIGHT": "Top Right"
+      },
+      "RESETOVERRIDES": {
+        "HINT": "Reset this scene's override settings to the global defaults.",
+        "NAME": "Reset to Default"
+      },
+      "SHAPE": {
+        "CIRCLE": "Circular",
+        "DIAMOND": "Diamond",
+        "HINT": "The shape of the minimap",
+        "MASK": "Image Mask",
+        "NAME": "MiniMap Shape",
+        "RECTANGLE": "Rectangular"
+      },
+      "SHOW": {
+        "HINT": "Show or hide the minimap.",
+        "NAME": "Toggle MiniMap"
+      },
+      "SHOWDARKNESS": {
+        "HINT": "If enabled, will show general darkness level for scene-type minimaps.",
+        "NAME": "Show Darkness"
+      },
+      "SHOWDRAWINGS": {
+        "HINT": "If enabled, will show drawings for scene-type minimaps.",
+        "NAME": "Show Drawings"
+      },
+      "SHOWGRID": {
+        "HINT": "If enabled, will show the grid for scene-type minimaps.",
+        "NAME": "Show Scene Grid"
+      },
+	  "CANVAS": {
+        "NAME": "Canvas",
+        "HINT": ""
+      },
+      "SHOWNOTES": {
+        "HINT": "If enabled, will show map notes for scene-type minimaps.",
+        "NAME": "Show Map Notes"
+      },
+      "SHOWWEATHER": {
+        "HINT": "If enabled, will show weather effects for scene-type minimaps.",
+        "NAME": "Show Weather Effects"
+      },
+      "UNLOCKPLAYERS": {
+        "NAME": "Allow Players to Pan/Zoom MiniMap"
+      }
+    }
+  },
+  "SCENE": {
+    "TABS": {
+      "SHEET": {
+        "micromap": "MicroMap"
+      }
+    }
+  }
+}

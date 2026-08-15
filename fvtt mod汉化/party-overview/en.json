@@ -1,0 +1,76 @@
+{
+	"party-overview": {
+		"EnablePlayerAccess": {
+			"Name": "Grant Players access to the overview?",
+			"Hint": "Allow players to access the Party window."
+		},
+		"SystemProvider": {
+			"Name": "System Provider",
+			"choices": {
+				"module": "Module {name}",
+				"native": "Generic",
+				"system": "System {name}"
+			}
+		},
+		"filter": {
+			"0": "All (Scene, Unfiltered)",
+			"1": "All (Scene)",
+			"2": "Hidden (Scene)",
+			"3": "All Owned",
+			"4": "All Selected"
+		},
+		"keybinds": {
+			"open": {
+				"name": "Open Party Overview",
+				"hint": "Opens the Party Overview window."
+			},
+			"close": {
+				"name": "Close Party Overview",
+				"hint": "Closes the Party Overview window."
+			},
+			"toggle": {
+				"name": "Toggle Party Overview",
+				"hint": "Opens or closes the Party Overview window."
+			}
+		},
+		"GENERAL": "General",
+		"LIMIT": "Limit",
+		"NAME": "Name",
+		"PROFICIENCIES": "Proficiencies",
+		"TOTAL": "Total",
+		"WEALTH": "Wealth",
+		"EXPERIENCE": "Experience",
+		"XP": "XP",
+		"DND5E": {
+			"Traits": "Traits"
+		},
+		"DemonLord": {
+			"LanguagesSpoken" : "Languages Spoken",
+			"LanguagesScript" : "Languages Script"
+		},		
+		"cof": {
+			"attributes": {
+				"melee": {
+					"abbrev": "Cont"
+				},
+				"ranged": {
+					"abbrev": "Rang"
+				},
+				"magic": {
+					"abbrev": "Mag"
+				},
+				"size": {
+					"label": "Size",
+					"abbrev": "Size"
+				},
+				"level": {
+					"label": "Level",
+					"abbrev": "Lvl"
+				}
+			}
+		},
+		"PF1": {
+			"Knowledge": "Knowledge"
+		}
+	}
+}

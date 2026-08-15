@@ -1,0 +1,114 @@
+{
+  "SMARTPHONE": {
+    "apps": {
+      "macros": {
+        "title": "Macros",
+        "searchAndFilter": {
+          "searchPlaceholder": "Search by name...",
+          "filterButton": "Filter",
+          "filterTitle": "Macro Filter",
+          "type": "Type",
+          "typeAll": "All",
+          "typeScript": "Script",
+          "typeChat": "Chat",
+          "ownership": "Ownership",
+          "ownershipAllUsers": "All Users",
+          "permission": "Permission",
+          "permissionAll": "All",
+          "permissionObserver": "Observer+",
+          "permissionLimited": "Limited+",
+          "permissionOwner": "Owner Only",
+          "noResults": "No results found."
+        },
+        "contextMenu": {
+          "addToHome": "Add to Home Screen", 
+          "addFavorite": "Add to Favorites",
+          "removeFavorite": "Remove from Favorites",
+          "edit": "Edit",
+          "delete": "Delete",
+          "ownership": "Configure Ownership",
+          "duplicate": "Duplicate",
+          "share": "Share",
+          "renameFolder": "Rename Folder",
+          "deleteFolder": "Delete Folder"
+        },
+        "notifications": {
+          "shareValidation": "You must enter both a recipient and a packet title.",
+          "duplicating": "Duplicating macro '{name}'...",
+          "created": "Macro '{name}' created.",
+          "sharing": "Sharing macro '{macroName}'...",
+          "shared": "Sent macro to '{recipientName}'.",
+          "executing": "Executing macro '{name}'...",
+          "folderRenamed": "Folder renamed.",
+          "folderDeleted": "Folder deleted."
+        },
+        "copySuffix": "(Copy)",
+        "newFolderDialog": {
+          "title": "Create New Folder",
+          "placeholder": "Enter folder name",
+          "createButton": "Create",
+          "toastMessage": "Creating folder '{folderName}' and moving macros..."
+        },
+        "renameFolderDialog": {
+            "title": "Rename Folder",
+            "placeholder": "New folder name",
+            "confirmButton": "Rename"
+        },
+        "newMacroDialog": {
+            "title": "Create New Macro",
+            "placeholder": "Enter macro name",
+            "createButton": "Create",
+            "toastMessage": "Creating macro '{name}'..."
+        },
+        "shareDialog": {
+            "title": "Share Macro",
+            "recipient": "Recipient",
+            "selectRecipient": "Select contact or group...",
+            "packetTitle": "Packet Title",
+            "packetTitlePlaceholder": "Ex: Emergency Software",
+            "message": "Attached Message (Optional)",
+            "messagePlaceholder": "Enter description...",
+            "sendButton": "Send",
+            "noContacts": "No contacts or groups to share with."
+        },
+        "deleteConfirm": {
+          "title": "Delete Macro",
+          "content": "Are you sure you want to delete the macro '{name}'? This action cannot be undone.",
+          "confirmButton": "Delete"
+        },
+        "deleteFolderConfirm": {
+            "title": "Delete Folder",
+            "content": "Are you sure you want to delete the folder '{folderName}'?<br>Contents will be moved to the parent folder.",
+            "confirmButton": "Delete"
+        },
+        "toastMoveToFolder": "Moving macro to folder...",
+        "emptyFavorites": "Right-click macros in the 'Explorer' tab<br>to add them to Favorites.",
+        "favoritesTab": "Favorites",
+        "explorerTab": "Explorer",
+        "newMacroInRoot": "New Macro (Root Folder)",
+        "newMacroInFolder": "New Macro ({folderName})",
+        "Empty": "Empty"
+      },
+      "messages": {
+        "saveToMemory": "Save to Memory",
+        "useImmediately": "Use Immediately",
+        "saved": "Saved",
+        "macroSavedSuccess": "Macro saved successfully.",
+        "macroExecError": "Macro not found or insufficient permissions. Please save it first.",
+        "macroSocketError": "Error: Macro App socket not found.",
+        "macroPacketLabel": "Macro Packet:"
+      }    
+    },
+    "ui": {
+        "removeShortcut": "Remove Shortcut",
+        "removeShortcutTitle": "Remove Shortcut",
+        "confirmRemoveShortcut": "Are you sure you want to remove the shortcut '{name}' from the Home Screen?"
+    },
+    "notifications": {
+        "alreadyOnHome": "Already on the Home Screen.",
+        "addedToHome": "Added to Home Screen.",
+        "shortcutRemoved": "Shortcut removed.",
+        "macroNotFound": "Macro not found."
+    }
+  }
+}

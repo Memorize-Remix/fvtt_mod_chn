@@ -1,0 +1,33 @@
+{
+  "SCConditionalActivities": {
+    "ConditionTab": {
+      "Label": "Condition",
+      "Heading": "Activity condition",
+      "Hint": "Use JavaScript. The activity is available only when the script returns true.",
+      "Variables": "Available variables: activity, activityType, item, actor, user, usage, dialog, message, rollData, source, getProperty, hasProperty, deepClone, game.",
+      "Placeholder": "Example: return actor?.system?.attributes?.hp?.value > 0;",
+      "Wiki": "Open wiki",
+      "Invalid": "This condition has invalid code."
+    },
+    "Badge": {
+      "NotAvailable": "Not available",
+      "ConditionError": "Condition error"
+    },
+    "Notifications": {
+      "ConditionFailed": "Not available. Conditions not matched.",
+      "ConditionError": "This activity's condition could not be evaluated."
+    },
+    "Settings": {
+      "SupportMenu": {
+        "Name": "Support the developer",
+        "Label": "Patreon support",
+        "Hint": "Support Shattered Codex development on Patreon."
+      },
+      "DocumentationMenu": {
+        "Name": "Documentation",
+        "Label": "Open wiki",
+        "Hint": "Open the SC - Conditional Activities documentation wiki."
+      }
+    }
+  }
+}

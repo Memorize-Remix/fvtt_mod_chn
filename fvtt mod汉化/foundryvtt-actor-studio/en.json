@@ -1,0 +1,664 @@
+{
+  "GAS": {
+    "Error": {
+      "ItemNotFoundInCompendium": "Item not found in compendium",
+      "PackIndexNotFound": "The compendium pack from which the character class was imported not found in this world",
+      "EquipmentSelectionNotViable": "Starting Equipment could not be selected because the selected data types do not include starting equipment data."
+    },
+    "ActorStudio": "Actor Studio",
+    "CreateActor": "Create Actor",
+    "Cancel": "Cancel",
+    "Dialog": {
+      "ReloadRequiredTitle": "Reload Required",
+      "ReloadRequiredContent": "This settings change requires Foundry to reload. Would you like to reload now?",
+      "AutoAssignSources": {
+        "Title": "Configure Actor Studio Sources",
+        "Content": "No Actor Studio sources have been assigned. Would you like to auto-assign sources? (You can always amend these later in settings – you will need some sources assigned for Actor Studio to work)",
+        "Success": "Sources auto-assigned successfully. You can modify them in the Actor Studio settings if needed.",
+        "Skipped": "Sources not auto-assigned. You can configure them manually in the Actor Studio settings when ready."
+      }
+    },
+	"Notification": {
+      "CompendiumSourcesCleaned": "Actor Studio cleaned some compendium sources for {type}. <a class='gas-open-sources' href='#'>Open Sources</a> to review and save changes.",
+      "SettingsSaved": "Settings saved successfully.",
+      "SettingsSaveFailed": "Failed to save settings. Please try again."
+    },
+    "Disabled": "Disabled",
+    "AbilityScores": "Ability Scores",
+    "Advancements": "Advancements",
+    "Level": "Level",
+    "LevelUp": {
+      "Button": "Level Up",
+      "ClassLevelUp": "Level up this class",
+      "ExistingClassesTitle": "Level Up Existing Class",
+      "ExistingClassesDescription": "Click the class you want to level up, or select a class from the Multiclass dropdown to add a new one.",
+      "NewClassTitle": "Add Multiclass",
+      "SelectClass": "Select a class to add",
+      "SelectMulticlass": "Select Multiclass",
+      "CancelDescription": "Click the class button below to cancel the level up selection and return to the start. Or click \"Update Character\" to apply the changes.",
+      "Subclass": "Choose Subclass",
+      "LevelAdvancements": "Level Advancements",
+      "DisabledTooltip": "Disabled as advancement is in progress",
+      "DisabledDescription": "While advancement is in progress, this section is not editable"
+    },
+    "Footer": {
+      "AddLevel": "Add Character Level",
+      "AddEquipment": "Confirm",
+      "FinalizePurchase": "Finalize Purchase",
+      "FinalizeSpells": "Finalize Spells",
+      "SkipSpells": "Skip Spells",
+      "CharacterName": "Character Name",
+      "CreateCharacter": "Create Character",
+      "UpdateCharacter": "Update Character"
+    },
+    "Name": "Name",
+    "MulticlassMode": "Multiclass Mode",
+    "Item": "Item",
+    "Skip": "Skip",
+    "Complete": "Complete",
+    "Type": "Type",
+    "NoAdvancements": "No advancements for this level",
+    "PCTitle": "Player Character",
+    "Title": "Actor Studio",
+    "Source": "Source",
+    "StartingEquipment": "Starting Equipment",
+    "Permissions": {
+      "NeedCreateActorError": "User requires the 'Create New Actors' permission. Ask your DM to add it to your role",
+      "NeedCreateItemWarn": "User without 'Create New Items' permission. You will not be able to create custom Features",
+      "NeedFileUploadWarn": "User without 'Upload New Files' permission. You might experience issues selecting images",
+      "NeedFileBrowseWarn": "User without 'Use File Browser' permission. You might experience issues selecting images"
+    },
+    "SubClass": "Subclass",
+    "Tabs": {
+      "Abilities": {
+        "Title": "Abilities",
+        "HowCalculated": "How are abilities calculated?",
+        "AbilityGenerationMethod": "Ability Generation Method",
+        "ManualEntry": "Manual Entry",
+        "PointBuy": "Point Buy",
+        "Roll": "Roll",
+        "StandardArray": "Standard Array"
+      },
+      "Races": {
+        "Title": "Races",
+		"Title2024": "Species",
+        "Movement": "Movement",
+        "Senses": "Senses",
+        "Type": "Type",
+        "Placeholder": "Races",
+        "Placeholder2024": "Species"
+      },
+      "Classes": {
+        "Title": "Classes",
+        "Class": "Class",
+        "SubClass": "Sublass",
+        "FilterByLevel": "Explore Advancements by Level",
+        "Placeholder": "Classes",
+        "SubclassPlaceholder": "Subclasses",
+		"LevelPreview": "Level Preview",
+        "Level": "Level"
+      },
+      "Background": {
+        "Title": "Background",
+        "Placeholder": "Backgrounds"
+      },
+      "Equipment": {
+        "Title": "Equipment"
+      },
+      "Shop": {
+        "Title": "Shop"
+      },
+      "Biography": {
+        "Title": "Biography"
+      }
+    },
+    "Welcome": {
+      "To": "Welcome to the",
+      "IntroductionTitle": "Introduction",
+      "Introduction": "Actor Studio is a tool to help you create and level-up your characters for Dungeons and Dragons 5e.",
+      "UsageTitle": "Usage Instructions",
+      "Issues": "If you have any issues, please report them on ",
+      "Github": "GitHub.",
+      "CreatedBy": "for FoundryVTT developed by ",
+      "Support": "If you wish to support the development of this module, please consider a monthly donation via",
+      "SponsorLinkText": "GitHub Sponsors",
+      "IssuesLinkText": "GitHub Issues",
+      "PayPalLinkText": "PayPal",
+      "JoinDiscord": "Join the",
+      "DiscordLinkText": "Actor Studio Discord server",
+      "Thanks": "Thank you for using Actor Studio!"
+    },
+    "Setting": {
+      "World": "World Settings",
+      "User": "User Settings",
+      "AbilityScoreEntryOptions": "Ability Score Entry Options",
+      "LevelingOptions": "Leveling Options",
+      "DisplayOptions": "Display Options",
+      "DebugOptions": "Debug Options",
+      "AbilityEntry": {
+        "AllowManualInput": {
+          "Name": "Allow manual input",
+          "Hint": "Allow the user to manually input the ability scores"
+        },
+        "AllowStandardArray": {
+          "Name": "Allow standard array",
+          "Hint": "Allow the user to use the standard array"
+        },
+		"StandardArrayValues": {
+          "Name": "Custom standard array",
+          "Hint": "Set the custom standard array values (comma separated, e.g. 15, 14, 13, 12, 10, 8)"
+        },
+        "AllowPointBuy": {
+          "Name": "Allow point buy",
+          "Hint": "Allow the user to use the point buy system",
+          "InvalidTotal": "Invalid total points"
+        },
+        "AllowRolling": {
+          "Name": "Allow rolling",
+          "Hint": "Allow the user to roll for the ability scores"
+        },
+        "PointBuyLimit": {
+          "Name": "Point Buy Limit",
+          "Hint": "Set the maximum points allowed for the point buy system. Values higher than this threshold will show in red."
+        },
+        "AbilityRollFormula": {
+          "Name": "Formula used to roll stats (per stat)",
+          "Hint": "E.g. 4d6kh3"
+        }
+      },
+      "AdvancementCaptureTimerThreshold": {
+        "Name": "Advancement Capture Timer Threshold",
+        "Hint": "Set the threshold for the advancement capture timer. If you find that Race or Background or Class is not being captured for new Actors, make this number higher. This represents the number of milliseconds to wait before the advancement capture is considered to have failed."
+      },
+      "debug": {
+        "Name": "Enable debug mode",
+        "Hint": "Provides additional logging for debugging purposes"
+      },
+      "debugHooks": {
+        "Name": "Enable extended debugging mode",
+        "Hint": "Provides additional logging of all Foundry hooks"
+      },
+      "defaultGoldDice": {
+        "Name": "Default starting gold roll",
+        "Hint": "Here you can customize the default starting gold dice rolled on the tool, this will be used if the character class does not have a custom starting gold formula"
+      },
+      "DonationTrackerEnabled": {
+        "Name": "Enable Donation Tracker",
+        "Hint": "Enable the donation tracker to show the current donation amount and goal"
+      },
+      "disableAdvancementCapture": {
+        "Name": "Disable Advancement Tab",
+        "Hint": "Prevents advancements from being captured in the Advancements Tab. Instead they will appear as default for the system – i.e. as a dialog popup window. (Note: this is intended for debugging purposes only – there's not much point in using Actor Studio with this disabled.)"
+      },
+	  "forceTakeAverageHitPoints": {
+        "Name": "Force Take Average Hit Points",
+        "Hint": "When enabled, Actor Studio will force the Take Average option during level-up hit point advancements."
+      },
+      "DisableOtherActorCreationOptionsForPlayers": {
+        "Name": "Disable other Create Actor button",
+        "Hint": "Prevents players from creating actors using the standard Create Actor button. Only Actor Studio will be available."
+      },
+      "DonationTrackerRank": {
+        "Name": "Rank",
+        "Hint": "Enter the folder name for the rank"
+      },
+      "DonationTracker_UnregisteredAccess": {
+        "Name": "Unregistered Access",
+        "Hint": "If ticked, unregistered users will have access to anything outside of DT folders in DT linked compendiums"
+      },
+      "DonationTrackerAction": {
+        "Name": "Add DT folders",
+        "Hint": "Add the Donation Tracker membership level folders to this compendium"
+      },
+      "DonationTracker": {
+        "Name": "Donation Tracker settings",
+        "Label": "Edit",
+        "Hint": "Enable / Disable the integration, and each donation tracker membership level has a folder name. You can edit them here."
+      },
+      "DontShowWelcome": {
+        "Name": "Don't show this message again",
+        "Hint": "Don't show the welcome application when Foundry first loads. (You can always undo this via Configure Settings)."
+      },
+      "EnableLevelUp": {
+        "Name": "Enable Level Up",
+        "Hint": "Check this to include a button on the character sheet for leveling up via Actor Studio"
+      },
+      "FilterPackSourcesAppropriatelyByName": {
+        "Name": "Filter Pack Sources Appropriately by Name",
+        "Hint": "If enabled, the Source sections will only include packs that have a name, path, id, or label that matches the source type. E.g. a spell items compendium titled 'Spell emporium' would be shown in the Spells sources section but not in other sources sections."
+      },
+      "forceDnd5eLevelUpAutomation": {
+        "Name": "Force D&D5e Level Up Automation",
+        "Hint": "Without this the Actor Studio is pretty much useless other that for previewing options as it won't be able to apply the changes to the actor"
+      },
+      "milestoneLeveling": {
+        "Name": "Milestone Levelling",
+        "Hint": "If unchecked, the Level Up button will only be shown when the Actor has sufficient XP to level up. If checked, the button will always be shown and the user will be able to level up without having the required XP."
+      },
+      "ShowRolls": {
+        "Name": "Show rolls on chat",
+        "Hint": "Show ability score, hp per level and starting gold rolls as chat messages"
+      },
+      "showButtonInSideBar": {
+        "Name": "Show button in sidebar",
+        "Hint": "Show the Actor Studio button in the sidebar. (Requires a browser refresh to take effect)"
+      },
+      "illuminatedDescription": {
+        "Name": "Enable illuminated description",
+        "Hint": "This will add a larger version of the selection icons to the right-hand panel of the tab, where appropriate."
+      },
+      "illuminatedHeight": {
+        "Name": "Illuminated height",
+        "Hint": "Set the height of the illuminated description"
+      },
+      "illuminatedWidth": {
+        "Name": "Illuminated width",
+        "Hint": "Set the width of the illuminated description"
+      },
+      "IndividualPanelScroll": {
+        "Name": "Individual panel scrolls",
+        "Hint": "In tabs with left and right panels, make each side have independent scrolls"
+      },
+      "AllowAbilityRolling": {
+        "Name": "Allow ability score rolling"
+      },
+      "AllowAbilityStandardArray": {
+        "Name": "Allow ability score Standard Array"
+      },
+      "AllowAbilityPointBuy": {
+        "Name": "Allow ability score Point-Buy"
+      },
+      "AllowAbilityInput": {
+        "Name": "Allow ability score manual entry"
+      },
+      "UseTokenizer": {
+        "Name": "Use Tokenizer if available",
+        "Hint": "The tool will try to use the Tokenizer module, if found, as default to generate avatar and token pictures"
+      },
+      "TokenNameMode": {
+        "Name": "Token name display mode"
+      },
+      "TokenBarMode": {
+        "Name": "Token bar 1 display mode"
+      },
+      "EquipmentBlacklist": {
+        "Name": "Equipment Blacklist",
+        "Hint": "Items (Equipment) not shown for purchase, by name (case-sensitive, separated by ';', spaces are ok). Only 'common' rarity items are shown, but this list excludes the few magical/unreasonable common items. Default - 'Potion of Climbing; Potion of Healing; Spell Scroll 1st Level; Spell Scroll Cantrip Level; Unarmed Strike'"
+      },
+      "ShowPackLabelInSelect": {
+        "Name": "Show Compendium Label in Select",
+        "Hint": "Show the pack label along with the item label in the select options"
+      },
+      "SubraceNameBlacklist": {
+        "Name": "Subrace Names Blacklist",
+        "Hint": "Items excluded by name from been Subraces (case-sensitive, separated by ';', spaces are ok). Used by default to exclude things like Gnome Cunning from registering as Gnome subclasses. Default - 'Gnome Cunning; Halfling Nimbleness'"
+      },
+      "ButtonOnDialogInsteadOfActorsDirectory": {
+        "Name": "Create Actor dialog button",
+        "Hint": "If the button interferes with other modules, or you prefer the aesthetic of having a single 'create actor' button to not confuse your players"
+      },
+      "NonGmsCanOnlyCreatePCs": {
+        "Name": "Non-GMs can only create PCs",
+        "Hint": "If enabled, non-GMs will only be able to create Player Characters, not other actor types"
+      },
+      "WindowX": {
+        "Name": "Actor Studio application window width",
+        "Hint": "Set the initial width for the window here"
+      },
+      "WindowY": {
+        "Name": "Actor Studio application window height",
+        "Hint": "Set the initial height for the window here"
+      },
+      "Sources": {
+        "Name": "Compendium Sources",
+        "Hint": "Select the compendia that will serve as data source for the different creation steps",
+        "Label": "Select sources",
+        "Save": "Save",
+        "RaceCompendia": "Race Compendia",
+		"RaceCompendia2024": "Species Compendia",
+        "RacialFeatureCompendia": "Racial Features Compendia",
+		"RacialFeatureCompendia2024": "Species Features Compendia",
+        "ClassCompendia": "Class Compendia",
+        "SubclassCompendia": "Subclass Compendia",
+        "ClassFeatureCompendia": "Class Features Compendia",
+        "BackgroundCompendia": "Background Compendia",
+        "SpellCompendia": "Spell Compendia",
+        "FeatCompendia": "Feat Compendia",
+        "EquipmentCompendia": "Equipment Compendia"
+      },
+      "TrimSubclasses": {
+        "Name": "Trim Subclass names",
+        "Hint": "Shows subclass names without any last part in parenthesis, mostly for DDBImporter subclasses like 'Assassin (Rogue)' to be just 'Assassin' (does NOT modify the items added to actor, just show they are shown in the tool)"
+      },
+      "EnableEquipmentSelection": {
+        "Name": "Enable Equipment Selection",
+        "Hint": "Allows players to select their starting equipment during character creation. If disabled, equipment will need to be added manually after creation."
+      },
+      "EnableEquipmentPurchase": {
+        "Name": "Enable Equipment Purchase",
+        "Hint": "If enabled, adds a 'Shop' tab after equipment selection for characters who received starting gold, allowing them to purchase items from designated compendiums. Note that if Equipment Selection is disabled, this setting is ignored."
+      },
+      "ExperimentalCharacterNameStyling": {
+        "Name": "Experimental Character Name Styling",
+        "Hint": "Enable experimental animated character name styling with random colors and fonts. This is an experimental feature that adds visual flair to the character name input."
+      },
+      "AllowAbilityRollScoresToBeMoved": {
+        "Name": "Allow rolled ability scores to be moved",
+        "Hint": "If enabled, rolled abilities can be moved; similar to how Standard Array works."
+      },
+      "EnableSpellSelection": {
+        "Name": "Enable Spell Selection",
+        "Hint": "Allows players to select their spells during character creation. If disabled, spells will need to be added manually after creation."
+      },
+	  "EnableCustomSpellListFiltering": {
+        "Name": "Spells that are not assigned to any character class will be available to all characters.",
+        "Hint": "If enabled, spells can match custom spell-list flags and spells without class assignments are included. If disabled, only spells explicitly assigned to the selected class/subclass are shown."
+      },
+      "ShowLevelPreviewDropdown": {
+        "Name": "Show Level Preview Dropdown",
+        "Hint": "If enabled, shows a level preview dropdown in the Class tab that allows users to preview advancements at different levels. If disabled, the dropdown will be hidden to avoid confusion about creating higher level characters."
+      },
+	  "HideAdvancementList": {
+        "Name": "Hide left panel for Backgrounds, Origins and Classes",
+        "Hint": "If enabled, hides the left panel of the Background, Origins and Class tabs. The dropdown selectors remain visible. The blank area is filled with the relevant item description."
+      },
+	  "CharacterCreationTabOrder": {
+        "Name": "Character Creation Tab Order",
+        "Hint": "Set the order for the four core character creation tabs (Abilities, Race, Background, Class).",
+        "Title": "Character Creation Tab Order",
+        "Abilities": "Abilities",
+        "Race": "Race",
+		"Race2024": "Species",
+        "Background": "Background",
+        "Class": "Class"
+      },
+      "EnableLLMNameGeneration": {
+        "Name": "Enable LLM Name Generation",
+        "Hint": "If enabled, adds a ChatGPT button next to the character name input that generates fantasy-appropriate names based on the selected race."
+      },
+      "EnableBiographyTab": {
+        "Name": "Enable Biography Tab",
+        "Hint": "Show the Biography tab during character creation. If enabled, Biography will be shown even if LLM name generation or the license tracker are disabled; the Generate button will hide when generation isn't available."
+      },
+      "EnableLicenseTracker": {
+        "Name": "Enable License Tracker",
+        "Hint": "If enabled, requires a license key for LLM name generation. The license key must be entered below."
+      },
+      "AardvarkLicenseCode": {
+        "Name": "Aardvark License Code",
+        "Hint": "Enter your Aardvark license code for LLM name generation. This is required when license tracking is enabled."
+      },
+      "LLMApiKey": {
+        "Name": "LLM API Key",
+        "Hint": "API key for the LLM service. Leave as default for OpenAI (built-in service). For Claude, enter your Anthropic API key. For OpenRouter, enter your OpenRouter API key."
+      },
+      "LLMProvider": {
+        "Name": "LLM Provider",
+        "Hint": "Select which LLM provider to use for name generation. OpenAI uses the built-in service (no API key needed). Claude requires an Anthropic API key. OpenRouter requires an OpenRouter API key."
+      },
+      "AbilityScores": {
+        "Name": "Ability Scores",
+        "Hint": "Configure how players can enter ability scores during character creation",
+        "Label": "Configure ability scores",
+        "Title": "Ability Scores Configuration",
+        "Description": "Choose which methods players can use to determine their ability scores",
+        "EntryMethods": "Entry Methods"
+      },
+      "Equipment": {
+        "Name": "Equipment & Gold",
+        "Hint": "Configure starting gold and equipment/spell selection options",
+        "Label": "Configure equipment & gold",
+        "Title": "Equipment & Gold Configuration",
+        "Description": "Set starting gold and enable equipment/spell selection features",
+        "StartingGold": "Starting Gold",
+        "SelectionOptions": "Selection Options"
+      },
+	  "Spell": {
+        "Name": "Spells",
+        "Hint": "Configure spell selection and custom spell list behavior",
+        "Label": "Configure spells",
+        "Title": "Spell Configuration",
+        "Description": "Control spell selection and custom spell list features",
+        "SelectionOptions": "Selection Options",
+        "CustomLists": "Custom Spell Lists"
+      },
+      "CustomSpellLists": {
+        "Name": "Custom Spell Lists",
+        "Hint": "Create and edit custom spell lists used for spell filtering.",
+        "Label": "Manage Spell Lists",
+        "MenuHint": "Open the Spell List Manager to create and edit custom lists."
+      },
+      "Progression": {
+        "Name": "Progression",
+        "Hint": "Configure level-up and advancement options",
+        "Label": "Configure progression",
+        "Title": "Progression Configuration",
+        "Description": "Configure level-up behavior and advancement capture settings",
+        "LevelUpOptions": "Level Up Options",
+        "AdvancementOptions": "Advancement Options"
+      },
+      "UI": {
+        "Name": "UI & Window",
+        "Hint": "Configure window dimensions and UI display options",
+        "Label": "Configure UI & window",
+        "Title": "UI & Window Configuration",
+        "Description": "Customize the appearance and dimensions of the Actor Studio window",
+        "WindowDimensions": "Window Dimensions",
+        "DisplayOptions": "Display Options",
+        "IlluminatedOptions": "Illuminated Description Options"
+      },
+      "AccessControl": {
+        "Name": "Access Control",
+        "Hint": "Configure player permissions for character creation",
+        "Label": "Configure access control",
+        "Title": "Access Control Configuration",
+        "Description": "Control what actions players can perform when creating characters",
+        "PlayerRestrictions": "Player Restrictions"
+      },
+      "CompendiumDisplay": {
+        "Name": "Compendium Display",
+        "Hint": "Configure how compendia are displayed and filtered",
+        "Label": "Configure compendium display",
+        "Title": "Compendium Display Configuration",
+        "Description": "Control how compendium packs are shown in selection lists",
+        "DisplayOptions": "Display Options"
+      },
+      "Diagnostics": {
+        "Name": "Diagnostics",
+        "Hint": "Configure debug and diagnostic options",
+        "Label": "Configure diagnostics",
+        "Title": "Diagnostics Configuration",
+        "Description": "Enable debug logging and diagnostic features",
+        "DebugOptions": "Debug Options"
+      },
+      "testTimeoutUiInteraction": {
+        "Name": "UI interaction timeout (ms)",
+        "Hint": "Timeout for general UI interactions like button clicks and tab switches"
+      },
+      "testTimeoutUiStateChange": {
+        "Name": "UI state change timeout (ms)",
+        "Hint": "Timeout for UI state changes like app opening, tab activation, or form updates"
+      },
+      "testTimeoutSpellUiLoad": {
+        "Name": "Spell UI load timeout (ms)",
+        "Hint": "Timeout for spell-related UI elements to load and become interactive"
+      },
+      "testTimeoutSpellWorkflow": {
+        "Name": "Spell workflow timeout (ms)",
+        "Hint": "Timeout for complete spell selection workflows including finalization"
+      },
+      "testTimeoutAppClosure": {
+        "Name": "App closure timeout (ms)",
+        "Hint": "Timeout for application windows to close completely"
+      },
+      "testTimeoutAppLifecycleComplete": {
+        "Name": "App lifecycle complete timeout (ms)",
+        "Hint": "Timeout for complete application lifecycle including creation and cleanup"
+      },
+      "testTimeoutAdvancementProcessing": {
+        "Name": "Advancement processing timeout (ms)",
+        "Hint": "Timeout for advancement processing and automation steps"
+      },
+      "testTimeoutAdvancementPostLevel": {
+        "Name": "Advancement post-level timeout (ms)",
+        "Hint": "Timeout for post-level advancement operations and state updates"
+      },
+      "testTimeoutActorDataUpdate": {
+        "Name": "Actor data update timeout (ms)",
+        "Hint": "Timeout for actor data updates and persistence operations"
+      },
+      "testIntervalPolling": {
+        "Name": "Polling interval (ms)",
+        "Hint": "Time between polls when waiting for conditions"
+      }
+    },
+	"SpellListManager": {
+      "NewList": "New List",
+      "Save": "Save",
+      "SaveAll": "Save All",
+      "Cancel": "Cancel",
+      "SpellLists": "Spell Lists",
+      "NoSpellLists": "No spell lists yet. Click \"New List\" to create one.",
+      "SpellCount": "{count} spell",
+      "SpellCountPlural": "{count} spells",
+      "DeleteList": "Delete list",
+      "Name": "Name",
+      "NamePlaceholder": "Enter list name",
+      "Type": "Type",
+      "TypeClass": "Class",
+      "TypeSubclass": "Subclass", 
+      "TypeRace": "Race",
+      "TypeRace2024": "Species",
+      "TypeBackground": "Background",
+      "TypeFeat": "Feat",
+      "Identifier": "Identifier",
+      "IdentifierPlaceholder": "e.g. wizard, eldritch-knight",
+      "Description": "Description",
+      "DescriptionPlaceholder": "Optional description",
+      "DragPlaceholder": "Drag spells or entire compendiums from the sidebar to add them here",
+      "DropActive": "Drop to add spell",
+      "Loading": "Loading...",
+      "RemoveSpell": "Remove spell",
+      "SelectListMessage": "Select a spell list from the left panel to edit it",
+      "SavedNotification": "Spell lists saved. Reload the world to apply changes to spell filtering.",
+      "CompendiumNotFound": "Compendium \"{pack}\" not found.",
+      "NoSpellsInCompendium": "No spells found in compendium \"{pack}\".",
+      "SpellsAdded": "Added {count} spell(s) from \"{pack}\".",
+      "AllSpellsAlreadyInList": "All spells from \"{pack}\" are already in this list."
+    },
+    "Equipment": {
+      "Label": "Equipment",
+      "Choice": "Choose one",
+      "ChooseOne": "Choose one...",
+      "EquipmentConfirmed": "Equipment has been confirmed and now resides on the character sheet",
+      "EquipmentReadOnly": "Equipment selections have been completed and are now read-only during advancement selection",
+      "Focus": "Spellcasting Focus",
+      "SelectEquipment": "Select Equipment",
+      "SelectOne": "Select one of the following options:",
+      "StartingGold": "Starting Gold",
+      "Selection": "Equipment Selection",
+      "Detail": "Equipment Detail",
+      "Gold": "Gold",
+      "ConfigureLabel": "Configure Starting Equipment",
+      "NoItemsToConfig": "No items to configure",
+      "Type": {
+        "Armor": "Armor",
+        "Weapon": "Weapon",
+        "Tool": "Tool",
+        "Focus": "Focus"
+      },
+      "PlannedInventory": "Planned Inventory",
+      "NoItemsSelected": "No items selected",
+      "Weight": "Weight",
+      "Quantity": "Quantity",
+      "SelectType": "Select"
+    },
+    "Shop": {
+      "AvailableGold": "Available",
+      "SpentGold": "Spent",
+      "CartItems": "Cart Items",
+      "CartEmpty": "Your cart is empty",
+      "PurchaseCompleted": "Equipment purchases have been completed and finalized",
+      "ShopReadOnly": "Shop selections have been completed and are now read-only",
+      "AvailableEquipment": "Available Equipment",
+      "Loading": "Loading items...",
+      "NoEquipment": "No equipment available. Please check your compendium sources in the module settings.",
+      "ErrorItemNoId": "Failed to add item to cart: Missing item id",
+      "ErrorAddToCart": "Failed to add item to cart",
+      "InfoAddedToCart": "Added {item} to cart",
+      "ErrorUpdateQuantity": "Failed to update item quantity",
+      "ErrorRemoveFromCart": "Failed to remove item from cart",
+      "FilterPlaceholder": "Search items in the shop by keyword",
+      "NoMatchingEquipment": "No matching equipment was found."
+    },
+    "AltText": {
+      "MoveUp": "Move Up",
+      "MoveDown": "Move Down",
+      "Roll": "Roll",
+      "Increase": "Increase",
+      "Decrease": "Decrease",
+      "Subclass": "Subclass"
+    },
+    "Spells": {
+      "CharacterLevel": "Character Level",
+      "MaxSpellLevel": "Max Spell Level",
+      "SelectedSpells": "Selected Spells",
+      "NoSpellsSelected": "No spells selected",
+      "AvailableSpells": "Available Spells",
+      "FilterPlaceholder": "Search spells by keyword",
+      "Loading": "Loading spells...",
+      "NoSpells": "No spells available. Please check your compendium sources in the module settings.",
+      "NoMatchingSpells": "No matching spells found.",
+      "SpellsReadOnly": "Spell selections have been completed and are now read-only",
+      "CantripLimitReached": "You have reached the maximum number of cantrips for your level and class.",
+      "SpellLimitReached": "You have reached the maximum number of spells for your level and class.",
+      "MaxLvl": "Max Spell Lvl.",
+      "Spells": "Spells",
+      "Cantrips": "Cantrips",
+      "Level": "Lvl"
+    },
+    "FeatSpells": {
+      "Title": "Feat Spell Selection",
+      "Description": "Some of your feats grant access to additional spells. Please select the required spells for each feat.",
+      "Loading": "Loading feat requirements...",
+      "Error": "Error loading feat spell requirements: {error}",
+      "NoRequirements": "No feat spell selections are required.",
+      "ChooseCount": "Choose {count}",
+      "ManualReview": "This feat requires manual review. Please add the spells manually after completing the level-up process.",
+      "LoadingSpells": "Loading available spells...",
+      "Complete": "Complete",
+      "Skip": "Skip",
+      "Retry": "Retry",
+      "SelectedSpells": "Selected Spells",
+      "AvailableSpells":"Available Spells",
+      "NoSpellsSelected": "No spells selected"
+    },
+	"FeatSelector": {
+      "Title": "Select a Feat",
+      "Search": "Search feats...",
+      "Loading": "Loading feats...",
+      "NoFeats": "No feats available. Check your compendium sources in settings.",
+      "Select": "Select Feat",
+      "Cancel": "Cancel",
+      "ShowIneligible": "Show ineligible feats"
+    },
+	"Import": {
+      "Method": "Import Method",
+      "FromFile": "From File",
+      "FromText": "From Text",
+      "JSONText": "JSON Text",
+      "NoJSONProvided": "No JSON text provided"
+    },
+    "SpellSchool": {
+      "abj": "Abjuration",
+      "con": "Conjuration", 
+      "div": "Divination",
+      "enc": "Enchantment",
+      "evo": "Evocation",
+      "ill": "Illusion",
+      "nec": "Necromancy",
+      "trs": "Transmutation"
+    },
+    "Cantrip": "Cantrip"
+  }
+}

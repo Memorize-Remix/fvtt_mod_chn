@@ -1,0 +1,83 @@
+{
+	"IT": {
+		"common": {
+			"artists": "Artists",
+			"images": "Images",
+			"unsaved": "This change hasn't been saved, if you close without saving it will be undone.",
+			"page": {
+				"previous": "Prev",
+				"next": "Next"
+			},
+			"name": "Name",
+			"tags": "Tags",
+			"select": "Select",
+			"links": "Links",
+			"sort-by": "Sort By"
+		},
+		"apps": {
+			"ArtBrowser": {
+				"selected": "{current}/{required} Selected",
+				"upload-image": "Upload Image",
+				"no-results": "No results were found for that search",
+				"select-image": "Select image",
+				"page-reset-warning": "Changing any of these will reset your page to 1."
+			},
+			"ArtistBrowser": {
+				"sort-options": {
+					"name-asc": "Name (A -> Z)",
+					"name-desc": "Name (Z -> A)",
+					"image-count-asc": "Image Count (0 -> 9)",
+					"image-count-desc": "Image Count (9 -> 0)"
+				},
+				"image-count": "{count} Images",
+				"common-tags": "Common Image Tags",
+				"create-artist": "Create New Artist"
+			},
+			"ArtistApp": {
+				"title": {
+					"create": "Create New Artist",
+					"edit": "Edit Artist: {name}"
+				},
+				"add-link": "Add New Link"
+			},
+			"ArtSidebar": {
+				"view": "View All",
+				"add-new": "Add New",
+				"db-size": "Database Size: {size}"
+			},
+			"ImageApp": {
+				"title": {
+					"upload": "Upload New Image",
+					"register": "Register External Image",
+					"edit-named": "Editing Image: {name}",
+					"edit-generic": "Editing Image"
+				},
+				"toggle-upload-mode": "Toggle Upload Mode",
+				"image-label": "Image",
+				"clear": "Clear",
+				"preview-placeholder": "Select an image to see a preview"
+			}
+		},
+		"settings": {
+			"openForEditImage": {
+				"name": "Open Art Browser for Documents",
+				"hint": "Whether or not to open the custom Art Browser when picking an image using the edit image action within Foundry for all documents. Systems and Modules that use a different edit image action will not work with this setting."
+			}
+		},
+		"dialogs": {
+			"Link": {
+				"title": "Create/Edit Link",
+				"name": "Name",
+				"url": "URL"
+			}
+		},
+		"notifs": {
+			"error": {
+				"db-out-of-date": "Database out of date, please try again.",
+				"document-ID-404": "Cannot find {dbType} with ID: {id}",
+				"no-upload-permission": "Cannot save due to missing the \"Upload Files\" permission.",
+				"cant-find-image": "Cannot find image at location: {url}"
+			}
+		}
+	}
+}

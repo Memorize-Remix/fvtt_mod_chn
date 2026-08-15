@@ -1,0 +1,67 @@
+{
+    "tidbits": {
+        "message": {
+            "didYouKnow": "Did you know?",
+            "tidbits": "Tidbits",
+            "reroll": "Another one!"
+        },
+        "settings": {
+            "showChatMessage": {
+                "name": "Show chat message",
+                "hint": "Show a tidbit in chat as a whisper on login",
+                "choices": {
+                    "everyone": "Everyone",
+                    "players": "Players",
+                    "gamemaster": "Gamemaster",
+                    "none": "None"
+                }
+            },
+            "showLoadingScreen":{
+                "name": "Show loading screen",
+                "hint": "Show a tidbit while loading a scene",
+                "choices": {
+                    "everyone": "Everyone",
+                    "players": "Players",
+                    "gamemaster": "Gamemaster",
+                    "none": "None"
+                }
+            },
+            "startupLoadingScreen":{
+                "name": "Startup Tidbit time",
+                "hint": "Time in seconds to hide the startup Tidbit, 0 to disable"
+            },
+            "loadingScreenMinimumDuration": {
+                "name": "Loading screen fade out delay",
+                "hint": "The time in seconds to keep the loading screen visible after the scene is loaded"
+            },
+            "loadingScreenGradient": {
+                "name": "Loading screen gradient",
+                "hint": "Cover half of the image with a gradient to make the text more readable and apply a blur filter to the image"
+            },
+            "pauseText": {
+                "name": "Pause text",
+                "hint": "Show Tidbits instead of the 'Game Paused' text"
+            },
+            "useDefaultSources": {
+                "name": "Use default sources",
+                "hint": "Use the default tidbit sources"
+            },
+            "customSource": {
+                "name": "Custom source",
+                "hint": "Custom JSON file to use as tidbit source, leave empty to disable."
+            },
+            "imageSource": {
+                "name": "Image source",
+                "hint": "Folder to use in loading screens, leave empty to disable."
+            },
+            "autoCycle": {
+                "name": "Auto cycle",
+                "hint": "Time in seconds after which to cycle through the tidbits in pause text. 0 to disable."
+            },
+            "didYouKnowText": {
+                "name": "Did you know text",
+                "hint": "Custom text to use in place of the default 'Did you know?' text."
+            }
+        }
+    }
+}

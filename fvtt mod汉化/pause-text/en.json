@@ -1,0 +1,164 @@
+{
+  "pauseText": {
+    "image": {
+      "source": {
+        "name": "File path of pause image:",
+        "hint": "Type None, for no image."
+      },
+      "opacity": {
+        "name": "Image Opacity %:",
+        "hint": "Value between 0 and 100, lower means more translucent. Default: 50%"
+      },
+      "width": {
+        "name": "Image Width:",
+        "hint": "Width of the icon in pixels. Default: 100px"
+      },
+      "height": {
+        "name": "Image Height:",
+        "hint": "Height of the icon in pixels. Default: 100px"
+      },
+      "initRotation": {
+        "name": "Image Rotation:",
+        "hint": "This sets the initial rotation of the image. Can be used to rotate the image, if the rotation animation is disabled. Default: 0"
+      },
+      "speed": {
+        "name": "Speed:",
+        "hint": "Seconds per rotation, 0 is no rotation. Default: 5"
+      },
+      "reverse": {
+        "name": "Reverse:",
+        "hint": "Revert the rotation."
+      },
+      "verticalPos": {
+        "name": "Vertical Position:",
+        "hint": "Vertical position of the Pause Element on screen. 0 is extreme top, 100 extreme bottom. Default: 50"
+      },
+      "horizontalPos": {
+        "name": "Horizontal Position:",
+        "hint": "Horizontal position of the Pause Element on screen. 0 is extreme left, 100 extreme right. Works best with gradient background off. Default: 50"
+      },
+      "gradientBackground": {
+        "name": "Gradient Background:",
+        "hint": "Toggles the background behind the icon and the message."
+      },
+      "gradientColor":{
+        "name": "Gradient Color:",
+        "hint": "Sets the color of the gradient. Default: #0b0a13"
+      },
+      "gradientOpacity": {
+        "name": "Gradient Opacity",
+        "hint": "Sets the background opacity of the center of the gradient. Default: 128"
+      }
+    },
+    "text": {
+      "messages": {
+        "name": "Pause Messages:",
+        "hint": "After saving your settings, REPAUSE the game to see your changes, you've made!",
+        "label": "Pause Messages",
+        "submenuTitle": "Pause Messages",
+        "saveButton": "Save",
+        "messageHint": "You can use \\n to insert newlines into your messages!"
+      },
+      "textSync": {
+        "name": "Enable Synchronization:",
+        "hint": "Enable or disable synchronization of the pause text between players. Default: false"
+      },
+	  "textSelectionMode": {
+        "name": "Text selection mode:",
+        "hint": "Choose how pause text messages are selected.\n\"In Order\" displays messages sequentially and remembers the last position until the session is reloaded.\n\"Random\" uses true randomness.\n\"Random (Less Repetition)\" uses a Tetris The Grand Master inspired algorithm to reduce recently repeated messages. Default: Random",
+        "choices": {
+          "ordered": "In Order",
+          "random": "Random",
+          "perceivedRandom": "Random (Less Repetition)"
+        }
+      },
+      "changeInterval": {
+        "name": "Change Text Interval:",
+        "hint": "Seconds until the next random text is displayed. 0 and negative values disables this. Default: 15s"
+      },
+      "textWidth":{
+        "name": "Change Text Width:",
+        "hint": "Changes the text width proportional to the width of the viewport. Default: 90%"
+      },
+      "fontFamily": {
+        "name": "Font:",
+        "hint": "Font name to be used. It works well with Custom Fonts module and Google Fonts. Check the name is well written. Foundry Default: Amiri"
+      },
+      "useGoogleFont": {
+        "name": "Google Font:",
+        "hint": "Check this, if the font is from Google Fonts, otherwise it will not work. Default: false"
+      },
+      "fontColor": {
+        "name": "Font Color:",
+        "hint": "Color Hexcode of the font. Default: #ada7b8"
+      },
+      "fontSize": {
+        "name": "Font Size (em):",
+        "hint": "Size of the font in em. Default: 2em"
+      },
+      "fontBold": {
+        "name": "Bold:",
+        "hint": "Bolds the font. Some fonts don't support this. Default: true"
+      },
+      "fontItalic": {
+        "name": "Italic:",
+        "hint": "Italicizes the font. Some fonts don't support this. Default: false"
+      },
+      "fontSmallCaps": {
+        "name": "Small Caps:",
+        "hint": "Activates the small-caps font variant. All lowercase letters are converted to smaller uppercase letters. Default: false"
+      },
+      "lineHeight": {
+        "name": "Line Height (rem):",
+        "hint": "Height of text lines in rem, best for multiline text is 2. Default: 1rem"
+      },
+      "lineOffset": {
+        "name": "Vertical Line Offset (px):",
+        "hint": "Offset of the message line in relation to the image. Negative values offset upwards, positive values downwards. Works best with background off. Default: 0px"
+      },
+      "textShadow": {
+        "name": "Enable Drop Shadow:",
+        "hint": "When enabled there is a drop shadow under the text."
+      },
+      "textAlign": {
+        "name": "Align Multiline Text:",
+        "hint": "Align multiline text inside it's display box. Default: Center",
+        "choices": {
+          "center": "Center",
+          "left": "Left",
+          "right": "Right"
+        }
+      },
+      "fontCaps": {
+        "name": "Text options:",
+        "hint": "Sets diverse options to transform the text. Default: All uppercase",
+        "choices": {
+          "none": "None",
+          "capitalize": "First letter uppercase",
+          "uppercase": "All uppercase"
+        }
+      }
+    },
+    "animation": {
+      "animationType": {
+        "name": "Animation Type:",
+        "hint": "Sets the animation for the whole Pause Element. Default: Pulse",
+        "choices": {
+          "none": "None",
+          "pulse": "Pulse",
+          "rainbow": "Rainbow",
+          "breath": "Breath",
+          "glow": "Glow"
+        }
+      },
+      "animationDuration": {
+        "name": "Animation Duration:",
+        "hint": "Sets the duration of the animation in seconds. Default: 3s"
+      },
+      "animationColor": {
+        "name": "Animation Color:",
+        "hint": "On some of the animations the color can be changed. Default: #ffffff"
+      }
+    }
+  }
+}

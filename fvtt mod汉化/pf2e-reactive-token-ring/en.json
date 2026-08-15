@@ -1,0 +1,198 @@
+{
+  "I18N.LANGUAGE": "English",
+  "pf2e-reactive-token-ring": {
+    "libwrapper": {
+      "autocolor": {
+        "error": "REDY: Another module is already overriding token ring colors!"
+      }
+    },
+    "module-settings": {
+      "headers": {
+        "flash": {
+          "name": "Flash Settings",
+          "colors": "Flash Color Settings"
+        },
+        "auto-coloring": {
+          "name": "Auto Coloring Setting"
+        }
+      },
+      "configuration-menu": {
+        "redy-menu": "REDY Menu",
+        "hover": {
+          "headers": {
+            "category": "Category of token type",
+            "ring-or-bg": "Whether auto color affects the ring or background",
+            "custom": "Use Custom Color for token rings",
+            "disposition": "Color tokens based on their disposition",
+            "health-percent": "Color tokens based on their percentage health",
+            "level-diff": "Color tokens based on their level difference from the party",
+            "custom-color": "If Custom is toggled, uses this color for tokens",
+            "default": "Use the world setting for this",
+            "unchanged": "Doesn't auto color the token",
+            "random": "For distinguishing duplicate tokens, selects a random color from a list of 16"
+          },
+          "row": {
+            "type": {
+              "party": "Tokens in the pf2e party",
+              "friendly": "Tokens with friendly disposition",
+              "neutral": "Tokens with neutral disposition",
+              "hostile": "Tokens with hostile disposition",
+              "secret": "Tokens with a secret disposition"
+            },
+            "ring": {
+              "unchanged": "Does not change the color of the ring color",
+              "default": "Uses the GM settings for the ring color",
+              "custom": "Uses the Custom Color inputted for the ring color",
+              "disposition": "Uses the token's disposition for the ring color",
+              "health-percent": "Uses the Percentage if health for the ring color",
+              "level-diff": "Uses the Difference from the party level for the ring color",
+              "random": "For distinguishing duplicate tokens, selects a random color from a list of 16 for the ring color"
+            },
+            "bg": {
+              "unchanged": "Does not change the color of the background color",
+              "default": "Uses the GM settings for the background color",
+              "custom": "Uses the Custom Color inputted for the background color",
+              "disposition": "Uses the token's disposition for the background color",
+              "health-percent": "Uses the Percentage if health for the background color",
+              "level-diff": "Uses the Difference from the part level for the background color",
+              "random": "For distinguishing duplicate tokens, selects a random color from a list of 16 for the background color"
+            },
+            "reset-color": "Reset to Default Color"
+          }
+        },
+        "headers": {
+          "title": "REDY: Auto Color Dynamic Token Settings",
+          "world": "World🌎",
+          "gamemaster": "GM👑",
+          "player": "Player👤",
+          "category": "Category",
+          "ring-or-bg": "Ring or BG",
+          "custom": "Custom",
+          "disposition": "Disposition",
+          "health-percent": "Health %",
+          "level-diff": "Level Diff",
+          "custom-color": "Custom Color",
+          "default": "Default",
+          "unchanged": "Unchanged",
+          "random": "Random"
+        },
+        "row": {
+          "type": {
+            "party": "Party",
+            "friendly": "Friendly",
+            "neutral": "Neutral",
+            "hostile": "Hostile",
+            "secret": "Secret"
+          },
+          "ring": "Ring",
+          "bg": "BG"
+        },
+        "notifications": {
+          "saved": "Custom Token Ring Settings Saved!"
+        }
+      },
+      "import-export-menu": {
+        "import-settings": "Import Settings",
+        "export-settings": "Export Settings",
+        "title": "REDY Settings Importer",
+        "body": "Upload Settings JSON",
+        "notifications": {
+          "error": "Invalid JSON in uploaded file. Please check the file content.",
+          "imported": "REDY Settings were successfully Imported! Reloading foundry"
+        },
+        "buttons": {
+          "cancel": "Cancel",
+          "import": "Import"
+        }
+      },
+      "target": {
+        "share-flash": {
+          "name": "Share Target Flash",
+          "hint": "Shows the flash effect on target to all users (disabled show to only the person targetting)"
+        },
+        "player-color": {
+          "name": "Target uses Player Color",
+          "hint": "For the target flash, use the player color (overrides any custom set colors)"
+        }
+      },
+      "damage-heal": {
+        "scale-on-%-hp": {
+          "name": "Scale Damage/Heal Duration",
+          "hint": "Scale damage/healing duration based on the percent of health change"
+        }
+      },
+      "duration": {
+        "name": "Duration",
+        "hint": "How long (in ms) should the token flashing be for all effects (Default 500 ms, this will scaled if you toggle on settings that scale duration)"
+      },
+      "auto-coloring": {
+        "ring": {
+          "type": {
+            "name": "Token Ring Auto Color",
+            "hint": "Select if the module should change the dynamic token ring color automatically"
+          },
+          "custom-color": {
+            "name": "Token Ring Custom Color",
+            "hint": "If auto color option is set to custom will use this color"
+          }
+        },
+        "background": {
+          "type": {
+            "name": "Token Background Auto Color",
+            "hint": "Select if the module should change the dynamic token ring color"
+          },
+          "custom-color": {
+            "name": "Token Background Custom Color",
+            "hint": "If auto color option is set to custom will use this color"
+          }
+        },
+        "choices": {
+          "default": "Default",
+          "custom": "Custom",
+          "unchanged": "Unchanged",
+          "health": "Health-Based",
+          "random": "Random",
+          "disposition": "Disposition",
+          "levelDiff": "Level Difference"
+        },
+        "percent-color": {
+          "name": "Token Auto Color Percentage",
+          "hint": "How much should the saturation of the autocoloring be"
+        },
+        "override-color": {
+          "name": "Auto Color Overrides Color",
+          "hint": "Select whether autocoloring should override color if you have it set to a value for the token?"
+        }
+      },
+
+      "colors": {
+        "damage": {
+          "name": "[Color] Damage",
+          "hint": "Change the color the token flashes on damage"
+        },
+        "healing": {
+          "name": "[Color] Healing",
+          "hint": "Change the color the token flashes on healing"
+        },
+        "target": {
+          "name": "[Color] Target",
+          "hint": "Change the color the token flashes on targeting (assuming you don't have the player color setting enabled)"
+        },
+        "status": {
+          "positive": {
+            "name": "[Color] Positive Condition",
+            "hint": "Change the color the token flashes on receiving a positive condition"
+          },
+          "negative": {
+            "name": "[Color] Negative Condition",
+            "hint": "Change the color the token flashes on receiving a negative condition"
+          }
+        }
+      },
+      "": {
+        "name": "",
+        "hint": ""
+      }
+    }
+  }
+}

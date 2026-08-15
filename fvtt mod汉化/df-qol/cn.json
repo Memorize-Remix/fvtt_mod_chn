@@ -1,0 +1,65 @@
+
+	"DF-QOL.errorLibWrapperMissing": "'DF Quality of Life' 需要 'libWrapper' 模组。请安装并启用 'libWrapper'。",
+	"DF_QOL": {
+		"QuickRoll": {
+			"Title": "启用随机表菜单选项以快速掷骰",
+			"Hint": "(需要重新加载) 在随机表侧边栏中添加一个菜单选项，以便在不打开随机表窗口的情况下掷骰。",
+			"MenuItem": "快速掷骰"
+		},
+		"AutoFocus": {
+			"Title": "启用自动聚焦实体对话框中的文本字段",
+			"Hint": "当创建实体（角色、物品、表格、场景等）时，这将自动选择名称文本框，因此您无需点击它。只需打开对话框并开始输入！"
+		},
+		"FolderTextColour": {
+			"Name": "启用文件夹文本颜色",
+			"Hint": "添加为文件夹设置自定义文本颜色的功能。"
+		},
+		"BetterToggle": {
+			"Name": "启用更好的场景控件切换高亮",
+			"Hint": "更改场景控件，使切换按钮打开时更加明显。"
+		},
+		"ReloadGame": {
+			"Title": "重新加载游戏？",
+			"Content": "<p style=\"margin:1em 0\">某些更改仅在重新加载后生效。您想现在重新加载吗？</p>"
+		},
+		"BetterAttack": {
+			"Name": "启用更好的默认攻击按钮高亮",
+			"Hint": "攻击按钮并未清晰地显示建议操作。这将根据高亮的按钮添加绿色边框表示优势，红色边框表示劣势。"
+		},
+		"VehicleUnit": {
+			"SettingName": "为载具启用重量单位",
+			"SettingHint": "启用更改载具重量基础单位的功能",
+			"ConfigName": "重量单位",
+			"ConfigHint": "用于重量计算的测量单位。",
+			"Units_LongTon": "长吨 (2240 磅)",
+			"Units_ShortTon": "短吨 (2000 磅)",
+			"Units_Pounds": "磅 (1 磅)",
+			"ConvertTitle": "转换载货容量",
+			"ConvertContent": "您想将当前载货容量从 '{{OLD}}' 转换为 '{{NEW}}' 吗？"
+		},
+		"DayNight": {
+			"ProgressSettingName": "显示昼夜过渡进度",
+			"ProgressSettingHint": "当您运行动画化昼夜过渡时，启用此选项将显示进度条，展示动画从开始到结束的进度。",
+			"DurationSettingName": "昼夜过渡持续时间（秒）",
+			"DurationSettingHint": "昼夜过渡动画完成所需的时间。单位为秒（1-60 秒）。"
+		},
+		"TemplateTargeting": {
+			"SettingName": "测量板自动标记Token",
+			"SettingHint": "如果启用，将自动标记被测量板击中的Token。",
+			"PreviewName": "预览测量板高亮/标记",
+			"PreviewHint": "在移动或创建测量板时显示网格高亮并执行自动标记。",
+			"ToggleTitle": "自动标记Token",
+			"Patch5e_Name": "使用 D&D 5e 风格测量板",
+			"Patch5e_Hint": "核心 Foundry 要求token中心位于测量板内才能生效。此选项调整测量板以遵循 D&D5e 规则，即任何被测量板触碰的token都会被标记（圆形测量板除外）。",
+			"Patch5e_Circle_Name": "使圆形测量板全标记（需要 D&D 5e 风格测量板）",
+			"Patch5e_Circle_Hint": "如果您希望圆形测量板不成为上述 D&D 5e 风格的例外，启用此选项后，任何被圆形测量板触碰的token都会被标记。"
+		},
+		"TokenLock": {
+			"Setting.EnableName": "Token锁定：启用",
+			"Setting.EnableHint": "启用后，Token HUD 中将出现一个锁定按钮，用于锁定Token的位置。功能与锁定图块或绘图相同。",
+			"Setting.AllowGMName": "Token锁定：忽略GM",
+			"Setting.AllowGMHint": "允许GM在Token锁定时移动Token。如果您只想阻止玩家移动Token，这将非常有用。",
+			"LockTitle": "切换锁定状态"
+		}
+	}
+}

@@ -1,0 +1,122 @@
+
+	"DICE_TRAY": {
+		"Adv": "优势",
+		"Advantage": "优势",
+		"DiceTray": "骰子托盘",
+		"Dis": "劣势",
+		"Disadvantage": "劣势",
+		"FateDice": "命运骰",
+		"For": "好运",
+		"Fortune": "好运(kh)",
+		"Misfortune": "厄运(kl)",
+		"Mis": "厄运",
+		"Wild": "狂野",
+		"Ace": "Ace",
+		"WildDie": "狂野骰",
+		"ExplodingDie": "爆炸骰",
+		"PlusOneDie": "+1d",
+		"MinusOneDie": "-1d",
+		"PlusOneDieLong": "增大骰子大小",
+		"MinusOneDieLong": "减小骰子大小",
+		"KeepHighest": "保持最高",
+		"KeepLowest": "保持最低",
+		"Roll": "掷骰",
+
+		"Optional": "可选",
+
+		"DiceCreator": {
+			"CreateDice": "创建骰子",
+			"Formula": {
+				"name": "公式",
+				"hint": "将添加到聊天中的公式。"
+			},
+			"Row": {
+				"name": "行",
+				"hint": "按钮所在的行。"
+			},
+			"Image": {
+				"name": "图像"
+			},
+			"Label": {
+				"name": "标签",
+				"hint": "骰子没有图像时显示的标签。"
+			},
+			"Tooltip": {
+				"name": "提示",
+				"hint": "悬停在按钮上时显示的提示。默认为公式。"
+			},
+			"Color": {
+				"name": "颜色",
+				"hint": "填充图像的颜色。"
+			}
+		},
+
+		"DiceRows": {
+			"compactMode": {
+				"label": "紧凑模式",
+				"hint": "禁用所有额外的骰子行，并将原有的两行合并为一行。"
+			},
+			"hideNumberInput": {
+				"label": "隐藏数字输入框"
+			},
+			"hideNumberButtons": {
+				"label": "隐藏 +/- 按钮"
+			},
+			"hideRollButton": {
+				"label": "隐藏掷骰按钮"
+			},
+			"Instruction1": "点击任意骰子按钮进行编辑。右键点击任意骰子按钮进行删除。"
+		},
+
+		"KEYBINGINDS": {
+			"popout": {
+				"name": "切换骰子托盘弹出"
+			}
+		},
+
+		"SETTINGS": {
+			"DiceCreator": "骰子创建",
+			"DiceRowSettings": "骰子行数配置",
+			"autoOpenPopout": {
+				"name": "自动打开弹出",
+				"hint": "在页面加载时自动打开骰子托盘弹出。"
+			},
+			"enableDiceTray": {
+				"name": "启用骰子托盘",
+				"hint": "启用聊天消息区域下方的骰子托盘显示。这是为不想使用托盘的玩家提供的用户设置。"
+			},
+			"hideAdv": {
+				"name": "隐藏额外按钮",
+				"hint": "隐藏优劣势按钮"
+			},
+			"popout": {
+				"name": "骰子托盘弹出按钮",
+				"hint": "在控件上添加一个按钮，用于切换骰子托盘弹出。你还可以通过设置按键绑定来切换弹出窗口。",
+				"options": {
+					"all": "所有控件"
+				}
+			},
+			"rightClickCommand": {
+				"name": "右键点击命令",
+				"hint": "设置右键点击骰子按钮时应触发的行为。",
+				"options": {
+					"decrease": "默认（减少骰子数量）",
+					"roll": "掷一个骰子"
+				}
+			},
+			"PF2E": {
+				"flatCheckLabel": "{dc} {text}",
+				"flatCheck": {
+					"name": "添加纯骰检定按钮",
+					"hint": "将幸运/厄运按钮替换为 DC 5/11 的纯骰检定按钮。"
+				}
+			},
+			"SWADE": {
+				"wildDieBehavior": {
+					"name": "为Wild按钮使用骰子池",
+					"hint": "当Wild处于激活状态时，点击相同的骰子会将骰子添加到池中，而不是增加列表中当前骰子的数量。"
+				}
+			}
+		}
+	}
+}

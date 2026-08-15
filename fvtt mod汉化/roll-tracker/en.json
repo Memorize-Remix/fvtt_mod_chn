@@ -1,0 +1,100 @@
+{
+    "ROLL-TRACKER": {
+        "button-title": "Check Rolls",
+        "form-label": {
+            "mean": "Mean",
+            "median": "Median",
+            "mode": "Mode",
+            "nat1s": "Natural 1s",
+            "nat20s": "Natural 20s",
+            "lastRoll": "Last roll",
+            "count": "Rolls Counted",
+            "instance": "instance",
+            "instances": "instances",
+            "each": "each",
+            "combatstats": "Combat Stats"
+        },
+        "form-button": {
+            "clear": "Clear Data",
+            "toggle-combat": "Show Only Combat Stats",
+            "toggle-all": "Show All Stats",
+            "download": "Download",
+            "print": "Print to Chat"
+        },
+        "comparison-card": {
+            "title": "Comparison Card",
+            "combat-title": "Combat Comparison Card",
+            "headers": {
+                "mean": "Mean",
+                "median": "Median",
+                "mode": "Mode",
+                "nat1s": "Natural 1s",
+                "nat20s": "Natural 20s"
+            },
+            "descriptors": {
+                "highest": "Highest",
+                "lowest": "Lowest",
+                "most": "Most",
+                "fewest": "Fewest",
+                "raw": "Raw Numbers",
+                "percentage": "By Percentage"
+            },
+            "misc" : {
+                "and": "and",
+                "with": "with"
+            },
+            "mode": {
+                "most-frequent": "had the most frequent mode with",
+                "instances-of": "instances of",
+                "of-their-rolls": "of their rolls being"
+            }
+        },
+        "settings": {
+            "gm_see_players": {
+                "Name" : "See Player Roll Icons?",
+                "Hint" : "If enabled, the GM will see icons beside all player names that they can use to access that player's roll stats."
+            },
+            "roll_storage": {
+                "Name" : "Max rolls stored",
+                "Hint" : "How many rolls should the system store before older rolls begin to be overwritten?"
+            },
+            "players_see_players": {
+                "Name" : "Can Players Access Tracked Rolls?",
+                "Hint" : "If disabled, players will not be able to access their roll summaries."
+            },
+            "count_hidden": {
+                "Name" : "Count Blind Rolls?",
+                "Hint" : "If disabled, blind rolls for players will not be counted in the tracker."
+            },
+            "streak_behaviour": {
+                "Name" : "Streak Behaviour",
+                "Hint" : "Choose whether to disable streak messages, send them only to the GM, or show them publicly. Note: streaks that include a blind roll are always whispered to the GM.",
+                "disable": "Disable Streak Messages",
+                "hidden": "Whisper Streaks to GM",
+                "shown": "Publicly display Streaks"
+            },
+            "streak_threshold": {
+                "Name" : "Streak Threshold",
+                "Hint" : "The number of consecutive rolls within 1 point of each other that should be counted as a streak."
+            },
+            "dnd5e": {
+                "restrict_counted_rolls": {
+                    "Name": "Don't Count Unlinked Rolls",
+                    "Hint": "If enabled, the tracker will not count any rolls that are not explicitly linked to an actor. Ex: typing /r 1d20 in the chat will not be counted, but an attack or saving throw will be."
+                }
+            },
+            "pf2e": {
+                "restrict_counted_rolls": {
+                    "Name": "Don't Count Unlinked Rolls",
+                    "Hint": "If enabled, the tracker will not count any rolls that are not explicitly linked to an actor. Ex: typing /r 1d20 in the chat will not be counted, but an attack or saving throw will be."
+                }
+            }
+        },
+        "confirms": {
+            "clear_rolls": {
+                "title": "Clear Rolls?",
+                "content": "Are you sure you want to clear your rolls? This cannot be undone."
+            }
+        }
+    }
+}

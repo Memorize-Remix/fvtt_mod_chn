@@ -1,0 +1,67 @@
+{
+    "token-color-marker": {
+        "button-title": "Open Color Selector",
+        "trash-button-title": "Click to remove deleted color markers from token",
+        "default-setting-colors": {
+            "#ff0000": "Red",
+            "#ffa500": "Orange",
+            "#ffff00": "Yellow",
+            "#008000": "Green",
+            "#0000ff": "Blue",
+            "#800080": "Purple",
+            "#ffffff": "White",
+            "#000000": "Black",
+            "Number1": "Number 1",
+            "Number2": "Number 2",
+            "ABC": "ABC",
+            "Rainbow": "Rainbow"
+        },
+        "settings": {
+            "enable-button": {
+              "Name": "Display Token Color Marker Button",
+              "Hint": "Controls whether or not the Token Color Marker palatte can be opened from the token hud"
+            },
+            "enable-button-for-gm-only": {
+                "Name": "Display Button for the GM only",
+                "Hint": "Controls whether or not the button is displayed for only the GM"
+            },
+            "color-manager-menu": {
+                "Name": "Color Settings",
+                "Label": "My Color Settings",
+                "Hint": "This is where the colors can be customized"
+            },
+            "enable-mono-Icon": {
+                "Name": "Use Monochrome Icon",
+                "Hint": "Controls which icon will be used for the button either rainbow gradient or monochrome."
+            },
+            "enable-icon-in-chat-message": {
+                "Name": "Show Color Markers In Chat Message",
+                "Hint": "Shows the token color markers by the tarket's name in the chat message."
+            },
+            "max-font-size": {
+                "Name": "Max Pixel Size Of Marker Text",
+                "Hint": "This is the max pixel size for text added to a marker. Requires a refresh to update current marker text size."
+            } 
+        },
+        "color-manager-menu":{
+            "name-header": "Name",
+            "hex-header": "Hex Value",
+            "color-picker-header": "Color",
+            "text-header": "Text",
+            "text-color-header": "Text Color",
+            "add-color": "Add Color",
+            "delete-color": "Delete Color",
+            "move-up": "Move Up",
+            "move-down": "Move Down",
+            "new-color-label": "New Color",
+            "add-image": "Add Image",
+            "new-image-label": "New Image"
+        },
+        "confirms": {
+            "deleteConfirm": {
+              "Title": "Confirm Deletion",
+              "Content": "Are you sure you want to delete this color? This action cannot be undone."
+            }
+        }
+    }
+}

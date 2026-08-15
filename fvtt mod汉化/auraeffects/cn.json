@@ -1,0 +1,114 @@
+
+    "AURAEFFECTS": {
+        "ACTIVEEFFECT": {
+            "Aura": {
+                "FIELDS": {
+                    "applyToSelf": {
+                        "hint": "如果启用，此光环将作用于源Token。",
+                        "label": "作用于自身"
+                    },
+                    "bestFormula": {
+                        "hint": "使用源角色的掷骰数据评估的公式，用于确定非叠加情况下最强大的效果。如果留空，则按照先到先得的原则处理。",
+                        "label": "\"最佳\"公式"
+                    },
+                    "canStack": {
+                        "hint": "如果启用，同名的其他光环可以同时作用于任何适用的Token。",
+                        "label": "光环可叠加"
+                    },
+                    "collisionTypes": {
+                        "hint": "哪些类型的墙（如果有）会阻挡此光环。",
+                        "label": "碰撞类型"
+                    },
+                    "color": {
+                        "hint": "如果留空，将继承用户颜色（如果没有用户将该角色设为其角色，则继承GM的颜色）。",
+                        "label": "颜色"
+                    },
+                    "combatOnly": {
+                        "hint": "如果启用，此效果将在战斗外被抑制。",
+                        "label": "仅限战斗"
+                    },
+                    "disableOnHidden": {
+                        "hint": "如果启用，当其所处的Token隐藏时，此效果将被抑制。",
+                        "label": "隐藏时禁用"
+                    },
+                    "disposition": {
+                        "Choices": {
+                            "Any": "任意",
+                            "Friendly": "友善",
+                            "Hostile": "敌对"
+                        },
+                        "hint": "此光环将作用于哪些Token阵营（相对于源Token）。",
+                        "label": "阵营"
+                    },
+                    "distanceFormula": {
+                        "hint": "指定此光环延伸的半径（接受掷骰数据）。",
+                        "label": "距离"
+                    },
+                    "evaluatePreApply": {
+                        "hint": "如果启用，变更值将在效果应用前进行评估，必要时使用源角色的掷骰数据。",
+                        "label": "提前评估变更"
+                    },
+                    "opacity": {
+                        "hint": "光环应显示的透明度。",
+                        "label": "不透明度"
+                    },
+                    "overrideName": {
+                        "hint": "所应用效果应使用的名称（留空则使用基础效果的名称）。",
+                        "label": "效果名称"
+                    },
+                    "script": {
+                        "hint": "一个表达式，如果为真（或为空）则表示光环应生效。",
+                        "label": "条件脚本"
+                    },
+                    "showRadius": {
+                        "hint": "是否为所有用户显示光环边界。",
+                        "label": "显示半径"
+                    }
+                }
+            }
+        },
+        "ConvertToAura": "转换为光环",
+        "ConvertToAuraHint": "这将立即将此效果转换为光环源效果。",
+        "ConvertToNormal": "恢复为普通效果",
+        "ConvertToNormalHint": "这将立即将此效果恢复为其原始类型；光环设置将丢失。",
+        "Errors": {
+            "ScriptError": "在运行为角色\"{actor}\"上的效果\"{effect}\"的光环效果条件脚本时出错：\n{error}"
+        },
+        "Migrations": {
+            "ActiveAurasBegin": "开始从Active Auras迁移到Aura Effects...",
+            "ActiveAurasChatMessage": "感谢你安装Aura Effects！如果你之前使用过Active Auras，有一个迁移脚本可以将你所有的Active Aura效果转换为Aura Effects。你可以在Aura Effects的合集文件夹中找到它，或者点击此处执行：@UUID[Compendium.auraeffects.AuraEffectsMacros.Macro.NeaP6NSy6TzLQuKS]{从Active Auras迁移}",
+            "ActiveAurasComplete": "从Active Auras到Aura Effects的迁移现已完成！",
+            "AllCompleted": "所有Aura Effects迁移已完成！",
+            "Beginning": "开始Aura Effects迁移..."
+        },
+        "NoActiveGM": "没有GM登录时，Aura Effects将不会尝试运行。",
+		"PotentialSystemIncompatibility": "请注意，由于此系统的基础主动效果定义与Aura Effects添加的字段重叠，任何光环类型的效果将不具备普通效果上存在的系统特定增强功能。",
+        "SETTINGS": {
+            "DefaultVisibility": {
+                "Hint": "启用后，任何新创建的光环效果默认将开启可视化。",
+                "Name": "光环效果默认可见"
+            },
+            "DisableScrollingText": {
+                "Hint": "禁用向Token角色添加/移除由光环引起的效果时出现的文本。",
+                "Name": "禁用光环效果的文本"
+            },
+            "DisableVisuals": {
+                "Hint": "完全禁用光环半径可视化，无论效果设置如何。",
+                "Name": "禁用可视化"
+            },
+            "ExactCircles": {
+                "Hint": "启用后，当\"网格对角线\"设置为\"精确\"时，可视化光环将显示为完美的圆形。（这可能导致圆形边缘的可视化不准确，尤其是在光环半径较大的情况下）。",
+                "Name": "使用精确对角线显示圆形"
+            },
+            "PreferLatest": {
+				"Hint": "启用后，当没有最佳光环时，将优先选择最近施加的不可叠加光环。默认情况下，最佳光环的平局情况会优先保留现有效果。",
+				"Name": "优先选择最近施加的光环"
+			}
+        },
+        "SHEETS.AuraActiveEffectSheet": "Aura Effect表"
+    },
+    "EFFECT.TABS": {
+        "aura": "光环"
+    },
+    "TYPES.ActiveEffect.auraeffects.aura": "光环"
+}

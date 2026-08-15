@@ -1,0 +1,141 @@
+{
+    "SHAREDDICE": {
+        "Settings": {
+            "DiceTypeConfigTitle": "Shared Dice Configuration",
+            "ManageDiceTypes": "Manage Shared Dice",
+            "CreateButtonTooltip": "Create a new Shared Die",
+            "DeleteButtonTooltip": "Delete the currently selected Die",
+            "EmptySelectLabel": "Select an existing die or create a new one",
+            "Save": "Save",
+            "OverflowThreshold": {
+                "Name": "Dice Overflow Threshold",
+                "Hint": "Set the maximum number of dice icons displayed next to a player's name. Additional dice are hidden in a collapsible panel. Enter 0 to move all dice directly to the overflow panel."
+            },
+            "ConfigureDiceTypes": {
+                "Name": "Shared Dice Configuration",
+                "Label": "Configure Shared Dice",
+                "Hint": "Configure and create the Shared Dice available in this world."
+            },
+            "DeleteDialog": {
+                "Warning": "Are you sure? The following dice will be permanently deleted and cannot be recovered:",
+                "Title": "Delete Shared Dice"
+            },
+            "DiceConfigTitle": "Die Configuration",
+            "PlaceholderInfo": {
+                "Title": "Chat Messages",
+                "sourceUser": "The initiating user's name.",
+                "targetUser": "The targeted user's name.",
+                "dieName": "The name of this die.",
+                "amount": "The quantity of this die.",
+                "Explanation": "The placeholders listed below are automatically swapped with their respective values in the final chat message."
+            },
+            "RolePermissionsTitle": "Add/Remove Permissions",
+            "LogLevel": {
+                "Name": "Log Level",
+                "Hint": "Set the console log level for this module. Higher levels show more detailed logs.",
+                "Choices": {
+                    "None": "0 - None",
+                    "Warn": "1 - Warn",
+                    "Log": "2 - Log",
+                    "Info": "3 - Info",
+                    "Debug": "4 - Debug"
+                }
+            },
+            "MsgGroupDelaySec": {
+                "Name": "Message Grouping Delay (s)",
+                "Hint": "Multiple identical dice actions (add/remove/gift/use) within this time frame will be grouped into a single chat message. For example, using the same die three times quickly will result in a single message showing an amount of 3, instead of three separate messages each showing an amount of 1."
+            },
+            "EnableActionDialogs": {
+                "Name": "Fine Dice Controls",
+                "Hint": "Enable to set the number of dice you add/remove/gift/use via a dialog window instead."
+            }
+        },
+        "Fields": {
+            "enabled": {
+                "Label": "Enabled",
+                "Hint": "Disabled dice are hidden and not usable but their data is preserved and they can be reenabled at any time."
+            },
+            "name": {
+                "Initial": "New Shared Die",
+                "Label": "Name of the Die",
+                "Hint": "The name given to this die (e.g. 'd20', 'Inspiration'). Used in UI elements and chat messages."
+            },
+            "img": {
+                "Label": "Image",
+                "Hint": "Select an image for this die."
+            },
+            "maxPerUser": {
+                "Label": "Maximum Amount per User",
+                "Hint": "The maximum number of dice of this type a single user can possess. (0 for unlimited)"
+            },
+            "sortPriority": {
+                "Label": "Sort Priority",
+                "Hint": "Determines the order in which dice are displayed on the player list. Dice with a higher priority are displayed closer to the user names."
+            },
+            "allowGift": {
+                "Label": "Allow Gift",
+                "Hint": "Can players gift their own uses of this die to others?"
+            },
+            "msgOnAdd": {
+                "Label": "Message on Add",
+                "Hint": "Chat message shown when a die is added to a user. If empty, no message is sent.",
+                "Placeholder": "[$sourceUser] gave [$targetUser] [$amount] [$dieName]."
+            },
+            "msgOnRemove": {
+                "Label": "Message on Remove",
+                "Hint": "Chat message shown when a die is removed from a user. If empty, no message is sent.",
+                "Placeholder": "[$sourceUser] removed [$amount] [$dieName] from [$targetUser]."
+            },
+            "msgOnUse": {
+                "Label": "Message on Use",
+                "Hint": "Chat message shown when a user uses/consumes a die. If empty, no message is sent.",
+                "Placeholder": "[$sourceUser] used [$amount] [$dieName]."
+            },
+            "msgOnGift": {
+                "Label": "Message on Gift",
+                "Hint": "Chat message shown when a user gives a die to another user. If empty, no message is sent.",
+                "Placeholder": "[$sourceUser] gifted [$amount] [$dieName] to [$targetUser]."
+            },
+            "editPermissions": {
+                "Hint": "Do users of a given role have permission to add or remove this die?",
+                "choices": {
+                    "none": "None",
+                    "self": "Self Only",
+                    "all": "All Users"
+                }
+            }
+        },
+        "Notifications": {
+            "unexpectedError": "Unexpected error. Check developer console (F12) for details.",
+            "onNegative": "Shared Dice can not have negative values.",
+            "onOverLimit": "Users cannot have more than {diceTypeLimit} uses of {diceTypeName}.",
+            "disallowedGift": "This die cannot be gifted.",
+            "missingEditPermission": "You do not have the required permissions to add or remove this die.",
+            "noActiveOwner": "No owner for the target document currently active. See console for details.",
+            "unUserDataCleanFail": "Failed to clean the flag data of {failCount} users. See console warnings for details.",
+            "InvalidClickAction": {
+                "HoldCtrlForEdit": "This action is not available. To Add/Remove, click while holding CTRL/CMD.",
+                "ReleaseCtrlForUse": "This action is not available. To Use, click without holding CTRL/CMD.",
+                "ReleaseCtrlForGift": "This action is not available. To Gift, click without holding CTRL/CMD.",
+                "NoAvailableAction": "No actions are available for you on this player's die.",
+                "Default": "This action is not available."
+            }
+        },
+        "UI": {
+            "Tooltips": {
+                "edit": "{dieName} | Add/Remove",
+                "use": "{dieName} | Use",
+                "gift": "{dieName} | Gift",
+                "use_edit": "{dieName} | Use or Add/Remove",
+                "gift_edit": "{dieName} | Gift or Add/Remove",
+                "expand": "Expand",
+                "collapse": "Collapse"
+            },
+            "ActionDialogs": {
+                "editAction": "Add/Remove",
+                "useAction": "Use",
+                "giftAction": "Gift"
+            }
+        }
+    }
+}

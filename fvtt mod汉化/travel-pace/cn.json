@@ -1,0 +1,85 @@
+
+  "TravelPace": {
+    "Button": "旅行步调",
+    "Buttons": {
+      "Calculate": "发送到聊天",
+      "Save": "保存配置"
+    },
+    "ChatMessage": {
+      "Distance": "距离",
+      "OfNormalSpeed": "的正常步调",
+      "Pace": "步调",
+      "Time": "旅行时间",
+      "Title": "旅行步调计算",
+      "UsingMount": "骑乘"
+    },
+    "Effects": {
+      "Fast": "快速步调会使 &Reference[Perception] 或 &Reference[Survival] ，以及 &Reference[Stealth] 检定处于劣势。",
+      "Normal": "正常步调会使 &Reference[Stealth] 检定处于劣势。",
+      "Slow": "慢速步调会使 &Reference[Perception] 或 &Reference[Survival] 检定处于优势。"
+    },
+    "Errors": {
+      "CalculationFailed": "旅行距离计算结果失败，请检查输入内容。",
+      "MessageCreationFailed": "创建包含旅行结果的聊天信息失败。",
+      "OpeningCalculator": "打开旅行步调计算器时发生错误。",
+      "SaveFailed": "保存坐骑配置设置失败。"
+    },
+    "Labels": {
+      "CalculationMode": "计算模式",
+      "Days": "天数",
+      "Distance": "距离",
+      "Hours": "小时",
+      "NoMount": "步行",
+      "Pace": "旅行步调",
+      "TransportationMethod": "旅行方式"
+    },
+    "Modes": {
+      "Distance": "距离 → 时间",
+      "Time": "时间 → 距离"
+    },
+    "Paces": {
+      "Fast": "快速",
+      "Normal": "正常",
+      "Slow": "慢速"
+    },
+    "Preview": {
+      "Empty": "输入值以查看预览",
+      "Error": "无效输入",
+      "Title": "计算预览"
+    },
+    "Settings": {
+      "EnabledMounts": {
+        "Hint": "配置哪些角色可以作为坐骑或载具用于计算。",
+        "Name": "启用坐骑和载具"
+      },
+      "MountConfig": {
+        "AddMountsHint": "要添加坐骑：创建一个名为 'Mounts' 的文件夹，并添加类型为 'npc' 或 '载具' 的角色。如果文件夹被删除，将自动创建。",
+        "CompendiumVehicles": "载具（合集）",
+        "Hint": "选择哪些角色应出现在坐骑/载具下拉菜单中。",
+        "Instructions": "选择哪些角色应作为坐骑或载具在旅行步调计算中可用。",
+        "Label": "配置",
+        "Name": "配置坐骑和载具",
+        "NoActors": "未找到合适的角色。创建NPC或载具类型的角色以使用此功能。",
+        "NoMounts": "未在您的世界中找到坐骑或载具。",
+        "Saved": "坐骑配置已保存",
+        "SelectMounts": "可用坐骑和载具",
+        "Title": "坐骑和载具配置",
+        "WorldNPCs": "坐骑（世界）",
+        "WorldVehicles": "载具（世界）"
+      },
+      "ShowEffects": {
+        "Hint": "在聊天消息中显示每种旅行步调的游戏效果。",
+        "Name": "在聊天中显示步调效果"
+      },
+      "UseMetric": {
+        "Hint": "使用千米和米而不是英里和英尺。",
+        "Name": "使用公制单位"
+      }
+    },
+    "Title": "旅行步调计算",
+    "Warnings": {
+      "InvalidDistance": "提供的距离无效，请查看日志。",
+      "InvalidTime": "提供的时间无效，请查看日志。"
+    }
+  }
+}

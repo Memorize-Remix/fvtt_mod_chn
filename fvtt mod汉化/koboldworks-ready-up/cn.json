@@ -1,0 +1,30 @@
+
+  "Koboldworks": {
+    "ReadyUp": {
+      "VolumeLabel": "音量 %",
+      "VolumeHint": "音频通知的音量百分比。这不是线性比例。你可能会在较低（低于25%）范围内注意到最大的变化。",
+      "NextUp": "下一个！",
+      "YourTurn": "轮到你了！",
+      "RoundSfx": "回合开始音效",
+      "RoundSfxHint": "每当新回合开始时播放的音效。用于增强回合流逝的感觉并帮助跟踪回合。",
+      "TurnSfx": "回合开始音效",
+      "TurnSfxHint": "每当当前玩家回合开始时播放的音效；提醒他们采取行动。",
+      "NextSfx": "下一个音效",
+      "NextSfxHint": "在当前玩家回合开始前一回合播放的音效；预示他们需要采取行动。",
+      "Test": "测试",
+      "TestNotify": "正在测试 \"{key}\": {file} - 音量 {volume}%",
+      "NotifyLabel": "显示通知横幅",
+      "NotifyHint": "如果启用，将在画布中央显示大型横幅式回合通知。",
+      "LingerLabel": "通知持续时间",
+      "LingerHint": "定义回合通知在淡出前停留的时间。0表示无限期停留，直到被点击。",
+      "SpamGuardLabel": "防刷屏保护",
+      "SpamGuardHint": "防止通知刷屏的简单保护措施。",
+      "NextUpLabel": "下一个消息",
+      "NextUpHint": "当玩家回合即将开始时显示的消息。\n`{name}` 可用于显示战斗者的名称。\n\\n 允许换行。",
+      "TurnStartLabel": "回合开始消息",
+      "TurnStartHint": "当玩家回合开始时显示的消息。\n`{name}` 在此处可用，类似于下一个消息。",
+      "StickyLabel": "粘性通知",
+      "StickyHint": "如果启用，下一个回合通知将以淡出状态保留在屏幕上，以确保玩家意识到它仍然即将到来。"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "DISTANCE_CALC": {
+    "ButtonTitle": "Distance Calculator",
+    "DialogTitle": "Configure Distance and Travel Speed",
+    "DialogDescription": "Set up your map scale and travel parameters to calculate journey times",
+    "MapSettings": "Map Configuration",
+    "TravelSettings": "Travel Parameters",
+    "MilesPerPixel": "Miles per Pixel",
+    "MilesPerPixelHint": "How many miles does 1 pixel represent on your map?",
+    "MoveSpeed": "Movement Speed",
+    "MoveSpeedHint": "Character's movement speed (typically 12 for most characters)",
+    "HoursPerDay": "Travel Hours per Day",
+    "HoursPerDayHint": "How many hours of travel per day (1-24 hours)",
+    "Calculate": "Calculate Distance",
+    "Cancel": "Cancel",
+    "SettingsSaved": "Settings saved: {milesPerPixel} mi/pixel, Move = {move}, {hoursPerDay} h/day",
+    "InvalidMilesPerPixel": "Invalid value for miles per pixel. Must be a positive number.",
+    "InvalidMove": "Invalid value for movement speed. Must be a positive number.",
+    "InvalidHours": "Invalid value for hours per day. Must be between 1 and 24.",
+    "NoDrawingFound": "No drawing found on canvas. Please draw a path first.",
+    "InvalidDrawingData": "Invalid drawing data found.",
+    "InvalidDrawingType": "The last drawing is not a freehand line or polygon.",
+    "NoPointsFound": "No points found in the drawing.",
+    "TravelCalculation": "Travel Distance Calculation",
+    "TotalDistance": "Total Distance",
+    "EstimatedTime": "Estimated Travel Time",
+    "Miles": "miles",
+    "Days": "day(s)",
+    "Hours": "hour(s)",
+    "Minutes": "minute(s)",
+    "CalculationDetails": "Based on {speed} mph travel speed, {hoursPerDay} hours per day"
+  }
+}

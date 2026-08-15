@@ -1,0 +1,99 @@
+
+
+  "toolbar": {
+    "title": "工具栏",
+    "groups": {
+      "tokens": "Token",
+      "chat": "聊天",
+      "roll": "掷骰"
+    }
+  },
+  "macros": {
+    "change_size": {
+      "title": "更改Token大小"
+    },
+    "hidden_or_not": {
+      "title": "隐藏或显示（图块或Token）"
+    },
+    "show_image": {
+      "title": "显示Token图像"
+    },
+    "message_to_chat": {
+      "title": "发送消息到聊天",
+      "dialog_destinataires": "聊天消息的接收者",
+      "dialog_message": "消息文本"
+    },
+    "message_to_bubble": {
+      "title": "气泡消息",
+      "dialog_destinataires": "说话角色的Token",
+      "dialog_message": "消息文本"
+    },
+    "roll_pc": {
+      "title": "随机选择玩家角色",
+      "dialog_targets": "可能的选择列表"
+    },
+    "rolltables": {
+      "title": "掷随机表",
+      "select_title": "随机表",
+      "label_choice": "选择一个随机表",
+      "other_groups": "其他随机表",
+      "no_rolltable": "未选择随机表"
+    }
+  },
+  "settings": {
+    "common": {
+      "fadedui": "工具栏的淡化和透明度",
+      "fadedui-active": "启用淡化效果",
+      "fadedui-desactive": "禁用淡化效果"
+    },
+    "toolbar": {
+      "name": "工具栏",
+      "title": "工具栏设置",
+      "orientation": "水平或垂直显示",
+      "orientation-hint": "默认显示为水平",
+      "horizontal": "水平",
+      "vertical": "垂直",
+      "position_left": "水平位置（距离左侧的像素）",
+      "position_top": "垂直位置（距离顶部的像素）",
+      "one_line": "单行显示工具栏",
+      "one_line-hint": "默认工具栏使用两行。",
+      "display": "显示工具栏"
+    },
+    "partybar": {
+      "name": "玩家角色栏",
+      "title": "玩家角色栏选项",
+      "pcfolder": "包含玩家角色的文件夹名称",
+      "orientation": "水平或垂直显示玩家角色栏",
+      "orientation-hint": "默认显示为水平",
+      "horizontal": "水平",
+      "vertical": "垂直",
+      "position_left": "水平位置（距离左侧的像素）",
+      "position_top": "垂直位置（距离顶部的像素）",
+      "display": "显示玩家角色栏"
+    }
+  },
+  "common": {
+    "button": {
+      "cancel": "取消",
+      "apply": "应用",
+      "save": "保存",
+      "send": "发送",
+      "close": "关闭",
+      "select_all": "全选",
+      "unselect_all": "取消全选",
+      "validate": "应用",
+      "roll": "掷骰",
+      "generate": "生成"
+    },
+    "carriage_return": "使用 <br> 添加换行",
+    "private": "私密",
+    "roll_on": "掷骰",
+    "select": {
+      "no-player-connected": "没有玩家连接 => 没有在线玩家角色执行此操作",
+      "select-token": "请选择一个Token。",
+      "select-token-pj": "请选择一个玩家角色的Token。",
+      "select-tokens": "请选择一个Token（或多个）",
+      "select-tokens-pj": "请选择一个玩家角色的Token（或多个）"
+    }
+  }
+}

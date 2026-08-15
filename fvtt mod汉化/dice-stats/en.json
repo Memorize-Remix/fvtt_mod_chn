@@ -1,0 +1,228 @@
+{
+    "DICE_STATS_TEXT" : {
+        "title": "Dice Stats",
+        "settings":{
+            "players_see_players": {
+                "Name" : "See players stats?",
+                "Hint" : "If enabled, the player can see other players stats. Impacts Comparison Screen. Doesn't Impact Global Stats Page.\n Recommended: On"
+            },
+            "players_see_gm": {
+                "Name" : "See GM roll data?",
+                "Hint" : "If enabled, the player can see the GM's stats. If you are the GM this is useless. \n Recommended: Off"
+            },
+            "players_see_global": {
+                "Name" : "See GLOBAL roll data?",
+                "Hint" : "If enabled, the player can see the global stats. \n Recommended: On"
+            },
+            "players_see_gm_in_global": {
+                "Name" : "See GM Stats In Global Roll Data?",
+                "Hint" : "GM Dice Stats will not be included in Global Stats Screen unless this is enabled. (This impacts GM global stats button too) \n Recommended: off"
+            },
+            "enable_blind_rolls_immediate": {
+                "Name" : "Allow blind rolls to be immediately added to player stats",
+                "Hint" : "If enabled hidden rolls can be seen by players just by looking at their stats. \n Recommended: Off"
+            },
+            "enable_auto_db": {
+                "Name" : "Automatically use DB",
+                "Hint" : "Enabled means rolls will get saved and loaded from DB automatically. Could Negatively Impact Player Performance. Seems Minimal From Testing. \n Recommended: On"
+            },
+            "player_access_icons":{
+                "Name": "Define Players Icons",
+                "Hint": "Used to change player Icons from D-20's to something custom. Check GITHUB for better guide!\nNeed to use https://fontawesome.com/search?o=r&m=free Font Awesome Icons in a comma seperated list. Order matching players in player list \n EX: fa-solid fa-frog, fa-solid fa-circle, fa-solid fa-skull-crossbones"
+            },
+            "global_enable_clear_all_stats_popup":{
+                "Name": "Enable CLEAR ALL popup",
+                "Hint": "Create a popup for the GM that asks if they want to clear all user data (DB and Local) every time they join the game.",
+                "title": "Clear All Popup",
+                "context": "DICE STATS: Clearing ALL Player Data (Local And DB). Are you sure? \n NOTE: This popup can be disabled in settings."
+            },
+            "global_pause_recording_data":{
+                "Name":"Pause Saving Roll Data",
+                "Hint":"Quickly disable the saving of roll data. Can be useful to disable saving of rolls when not in the session."
+            },
+            "local_enable_d20_details_tab":{
+                "Name": "Enable D20 Info Tab",
+                "Hint": "Allows the user to remove the D20 tab button on the player screen to reduce UI clutter if not needed."
+            },
+            "local_enable_2dx_details_tab":{
+                "Name": "Enable 2DX Info Tab",
+                "Hint": "Allows the user to remove the 2dX tab button on the player screen to reduce UI clutter if not needed."
+            },
+            "local_enable_hit_miss_info_tab":{
+                "Name": "Enable Hit And Miss Info",
+                "Hint": "Displays info about degree success's rolled for Attacks and Saves"
+            }
+        },
+        "both_forms":{
+            "checkboxes":{
+                "d2": "D-2",
+                "d3": "D-3", 
+                "d4": "D-4", 
+                "d6": "D-6",
+                "d8": "D-8",
+                "d10": "D-10",
+                "d12": "D-12",
+                "d20": "D-20",
+                "d100": "D-100" 
+            },
+            "section_headings":{
+                "all": "All Dice Stats",
+                "d2": "D-2 (COIN) Stats",
+                "d3": "D-3 (Fate) Stats", 
+                "d4": "D-4 Stats", 
+                "d6": "D-6 Stats",
+                "d8": "D-8 Stats",
+                "d10": "D-10 Stats",
+                "d12": "D-12 Stats",
+                "d20": "D-20 Stats",
+                "d100": "D-100 Stats"
+            },
+            "table_values":{
+                "total_rolls":  "Total Dice Rolled:         ",
+                "mean":         "Mean (Avg):                ",
+                "median":       "Median (Middle Number):   ",
+                "mode":         "Mode (Most Common):        "
+            },
+            "refresh_btn":  "Refresh Stats",
+            "tab_titles":{
+                "all": "All Dice Stats",
+                "d20": "D-20 Stats",
+                "twoDx":    "2 D-(X) Stats"
+            }
+        },
+        "global_data_form":{
+            "title":        "Global Dice Stats",
+            "button": "Global Dice Stats",
+            "blind_rolls":  "There Are {ui_rollcount} Blind rolls between all players",
+            "blind_roll_btn": "Push Players Blind Rolls to Graph",
+            "clear_all_btn": "Clear All Roll Data",
+            "clear_all_local_btn":"Clear All Local Data",
+            "clear_all_db_btn":"Clear All DB Data",
+            
+            "player_roll_count": "<b>{ui_player}</b> with <b>{ui_lowRollCnt}</b> Rolls",
+            
+            "most_low_roll":"Most Rolled 1's",
+            "no_low_roll":"No 1's Rolled",
+            
+            "most_high_roll_2":"Most 2's Rolled",
+            "no_high_roll_2":"No 2's Rolled",
+            "most_high_roll_3":"Most 3's Rolled",
+            "no_high_roll_3":"No 3's Rolled",
+            "most_high_roll_4":"Most 4's Rolled",
+            "no_high_roll_4":"No 4's Rolled",
+            "most_high_roll_6":"Most 6's Rolled",
+            "no_high_roll_6":"No 6's Rolled",
+            "most_high_roll_8":"Most 8's Rolled",
+            "no_high_roll_8":"No 8's Rolled",
+            "most_high_roll_10":"Most 10's Rolled",
+            "no_high_roll_10":"No 10's Rolled",
+            "most_high_roll_12":"Most 12's Rolled",
+            "no_high_roll_12":"No 12's Rolled",
+            "most_high_roll_20":"Most 20's Rolled",
+            "no_high_roll_20":"No 20's Rolled",
+            "most_high_roll_100":"Most 100's Rolled",
+            "no_high_roll_100":"No 100's Rolled",
+
+            "streak_label":"Longest Streak is <b>{ui_player}</b> (Sequential incrementing rolls):",
+            "no_streak_label":"No Streak was made"
+        },
+        "player_data_form":{
+            "title": "Player Dice Stats",
+            "blind_rolls": "You have {ui_rolls} Blind Rolls Which are Not Tracked. Ask GM to Push Rolls",
+            "player_name":  "{ui_player} Roll Data",
+            "streak":       "Streak Data (Sequential incrementing rolls):",
+            "no_streak":    "No Streak was made",
+            "streak_blind": "Streak Includes a Blind Roll, Data Hidden",
+            "load_data_btn": "Load ALL player data From DB",
+            "load_data_btn_yours": "Load in YOUR player data from DB",
+            "load_data_btn_others": "Load in ALL OTHER players data from DB",
+            "save_data_btn": "Save YOUR Player Data To DB",
+            "clear_all_local_data_btn":"Clear ALL locally stored data",
+            "clear_my_local_data_btn":"Clear YOUR locally stored data",
+            "clear_my_db_info":"Clear YOUR DB values",
+            "clear_your_both":"Clear YOUR Local And DB Values",
+            "tab_unsupported":{
+                "tab_unsuported_heading":   "Feature not supported for your current system or No Data Saved",
+                "tab_unsuported_body":      "Hit and miss info is only supported for PF2e. This page either subcatagorizes D20 rolls into Attack, Damage, Skill, etc. Or Shows Roll Stats like #Hits, #Misses, #Failed Saves, #Success Saves etc \n Please submit a feature request on the github if you would like the information added for whatever system your using. \n \n This tab button can be removed though the settings.",
+                "tab_unsuported_link":      "Link to Feature Request Page"
+            },
+            "tab_d20_rolls":{
+                "attack": "D20 Atack Rolls",
+                "damage": "D20 Damage Rolls",
+                "save": "D20 Save Rolls",
+                "skill": "D20 Skill Rolls",
+                "ability": "D20 Ability Rolls",
+                "unknown": "D20 Unknown Rolls"
+            }
+        },
+        "compare_data_form":{
+            "title": "Compare Player Stats",
+            "button": "Compare Players"
+        },
+        "export_data_form":{
+            "title": "Export Data",
+            "button": "Export",
+            "export_csv_btn": "Export as CSV",
+            "export_json_btn": "Export as Json",
+            "header": "Export Dice Stats Data"
+        },
+        "google_chart":{
+            "die": "Die Number",
+            "rolls": "Number Of Rolls"
+        },
+        "player-stats-button-title": "Player Rolls",
+        "global-stats-button-title": "Global Rolls",
+        "player_dialogs":{
+            "save_to_db":{
+                "title":"Confirm Save",
+                "context":"Are you sure you want to save YOUR values to database? This will overwrite all your prev saved values."
+            },
+            "load_all_db":{
+                "title":"Confirm Load",
+                "context":"Are you sure you want to load Values from database? This will overwrite all players roll data including your own."
+            },
+            "load_your_db":{
+                "title":"Confirm Load",
+                "context":"Are you sure you want to load Values from database? This will overwrite all players roll data including your own."
+            },
+            "load_others_db":{
+                "title":"Confirm Load",
+                "context":"Are you sure you want to load Values from database? This will overwrite all players roll data including your own."
+            },
+            "clear_all_db":{
+                "title":"Confirm Clear",
+                "context":"Are you sure you would like to clear All Local roll data? This will clear All users roll data locally. It It will not impact the DB values or values on other players screens."
+            },
+            "clear_your_db":{
+                "title":"Confirm Clear",
+                "context":"Are you sure you would like to clear YOUR roll data? This will clear YOUR users roll data locally. It It will not impact the DB values or values on other players screens."
+            },
+            "clear_all_local":{
+                "title": "Confirm Clear",
+                "context": "Are you sure you would like to clear all locally stored data?"
+            },
+            "clear_your_local":{
+                "title": "Confirm Clear",
+                "context": "Are you sure you would like to clear your locally stored data?"
+            },
+            "clear_both":{
+                "title": "Confirm Clear",
+                "context": "Are you sure you want to clear YOUR local and DB values?"
+            }
+        },
+        "global_dialogs":{
+            "clear_all_local_data":{
+                "title":"Confirm Clear",
+                "context":"Are you sure wou would like to clear all roll data? This will clear all locally stored data on EVERY client. DB Values are still saved."
+            },
+            "clear_all_db_data":{
+                "title":"Confirm Clear",
+                "context":"Are you sure you would like to clear all roll data? This will clear all players DB values. But local Data will stay."
+            },
+            "clear_all_data":{
+                "title":"Confirm Clear",
+                "context":"Are you sure you would like to clear all roll data? This will clear all players DB and locally stored values."
+            }
+        }
+    }
+}

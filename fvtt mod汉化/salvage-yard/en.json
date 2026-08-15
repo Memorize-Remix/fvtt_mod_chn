@@ -1,0 +1,22 @@
+{
+    "SALVAGEYARD": {
+        "CONFIG": {
+            "CONFIG": "Configuration",
+            "DESCRIPTION": "Here you may configure what document types Salvage Yards will automatically back up.  By unchecking a box, you are telling Salvage Yards you do not want it to store deleted documents of that type.",
+            "INFORMATION": "Information",
+            "INFORMATION_DETAILS": "Data information about how much of each kind of document Salvage Yards has saved, and how large the index of each is.  Larger index sizes can end up impacting load times, so it's important to clean out your data from time to time!",
+            "HINT": "Enable or disable per document type automated salvage and see information on the amount of data salvaged.",
+            "INDEX_SIZE": "Index Size",
+            "ITEMS": "Document Count",
+            "LABEL": "Salvage Yard Configuration and Information",
+            "PURGE": "Purge Documents",
+            "PURGE_HINT": "The Purge Documents button will delete all of the documents for that type of Document that Salvage Yards has saved."
+        },
+        "PURGE": {
+            "DOCUMENT": "Salvage Yard Document Type to Purge:",
+            "TITLE": "Confirm Purge Documents",
+            "WARNING": "By clicking PURGE, you acknowledge that this will delete all the contents in the Salvage Yard Compendium for the above document type.  This cannot be undone."
+        },
+        "SALVAGEYARD": "Salvage Yard"
+    }
+}

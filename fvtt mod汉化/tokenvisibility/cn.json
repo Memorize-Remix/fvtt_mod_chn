@@ -1,0 +1,130 @@
+
+    "tokenvisibility.name": "Alt. Token Visibility",
+    "tokenvisibility.nameAbbr": "ATV",
+
+	"tokenvisibility.settings.lm-algorithm.Name": "光照监测",
+	"tokenvisibility.settings.lm-algorithm.Hint": "按Token：当Token处于昏暗或无光照环境时，添加一个激活效果和状态图标。视角：当用户控制一个Token时，从该受控Token的视角Token处于昏暗或无光照环境中的Token。",
+	"tokenvisibility.settings.lm-algorithm-none": "禁用",
+	"tokenvisibility.settings.lm-algorithm-tokens": "按Token",
+	"tokenvisibility.settings.lm-algorithm-viewpoint": "视角",
+
+    "tokenvisibility.settings.points-center": "仅Token中心（1点）",
+    "tokenvisibility.settings.points-two": "Token正面前角（2点）",
+    "tokenvisibility.settings.points-three": "Token正面和中心（3点）",
+    "tokenvisibility.settings.points-four": "Token四角（4点）",
+    "tokenvisibility.settings.points-five": "Token四角和中心（5点）",
+    "tokenvisibility.settings.points-eight": "Token中点和四角（8点）",
+    "tokenvisibility.settings.points-nine": "Token中点、四角和中心（9点）",
+
+    "tokenvisibility.settings.range-algorithm.Name": "点",
+    "tokenvisibility.settings.range-algorithm.Hint": "测试Token是否在范围内时使用的点数。",
+
+    "tokenvisibility.settings.range-points-3d.Name": "测试底部和顶部点",
+    "tokenvisibility.settings.range-points-3d.Hint": "如果适用，使用Token高度和Token身高构建额外的点以测试范围。（需要Wall Height模组）",
+
+    "tokenvisibility.settings.range-distance-3d.Name": "在3D中测量距离",
+    "tokenvisibility.settings.range-distance-3d.Hint": "是否在3维中测量Token可见性范围计算，而不是2维（俯视图）。",
+
+    "tokenvisibility.settings.los-algorithm.Name": "算法",
+    "tokenvisibility.settings.los-algorithm.Hint": "如何测试Token对另一个（目标）Token的视线。",
+
+    "tokenvisibility.settings.los-percent.Name": "百分比阈值",
+    "tokenvisibility.settings.los-percent.Hint": "Token的可视区域中必须被另一个Token看到的百分比，才能被认为对该Token可见。对于点，这是目标点中必须可见的百分比。如果设置为0，则如果Token的任何部分（或任何点）可见，则认为其可见。",
+
+    "tokenvisibility.settings.los-large-target.Name": "大型Token子目标",
+    "tokenvisibility.settings.los-large-target.Hint": "如果目标Token大于网格方格，则如果至少一个网格方格的Token可见，则认为Token可见。",
+
+    "tokenvisibility.settings.los-algorithm-points": "点",
+	"tokenvisibility.settings.los-algorithm-geometric": "几何",
+	"tokenvisibility.settings.los-algorithm-webgl2": "WebGL2",
+	"tokenvisibility.settings.los-algorithm-webgpu": "WebGPU",
+	"tokenvisibility.settings.los-algorithm-per-pixel": "面部点阵",
+	"tokenvisibility.settings.los-algorithm-sample-pixel": "像素采样",
+
+    "tokenvisibility.settings.los-points-viewer.Name": "点",
+    "tokenvisibility.settings.los-points-viewer.Hint": "测试观察者视线时使用的点数。Fvtt默认值为“中心”（1点）",
+
+    "tokenvisibility.settings.los-inset-viewer.Name": "内嵌",
+    "tokenvisibility.settings.los-inset-viewer.Hint": "对于观察者点，如果不是中心点，则从Token边界向Token中心内嵌的百分比。",
+
+	"tokenvisibility.settings.los-points-options-viewer.Name": "观察者点选项",
+	"tokenvisibility.settings.los-points-options-viewer.Hint": "观察者身上用于测试其视线的点。每个点代表观察者的一个“眼睛”。",
+
+	"tokenvisibility.settings.los-points-options-target.Name": "目标点选项",
+	"tokenvisibility.settings.los-points-options-target.Hint": "目标身上用于测试观察者视线的点。",
+
+    "tokenvisibility.settings.los-points-target.Name": "点",
+    "tokenvisibility.settings.los-points-target.Hint": "测试目标视线时使用的点数。",
+
+    "tokenvisibility.settings.los-inset-target.Name": "内嵌",
+    "tokenvisibility.settings.los-inset-target.Hint": "对于目标点，如果不是中心点，则从Token边界向Token中心内嵌的百分比。",
+
+    "tokenvisibility.settings.debug-range.Name": "调试范围",
+    "tokenvisibility.settings.debug-range.Hint": "如果启用，将在画布上绘制Token视野范围的表示。请注意，如果被照亮但超出范围，Token仍然可能可见。",
+
+    "tokenvisibility.settings.debug-los.Name": "调试视线",
+    "tokenvisibility.settings.debug-los.Hint": "如果启用，将在画布上绘制Token视线的表示。如果启用了区域3D，则必须选择一个Token才能使调试窗口出现。",
+
+    "tokenvisibility.settings.button-foundry.Label": "重置为Fvtt默认值",
+    "tokenvisibility.settings.button-foundry.Notification": "Alt. Token Visibility设置已更改为Fvtt默认值",
+
+    "tokenvisibility.settings.button-dnd5e.Label": "重置为DND5e DMG",
+    "tokenvisibility.settings.button-dnd5e.Notification": "Alt. Token Visibility设置已更改为D&D 5e DMG默认值",
+
+    "tokenvisibility.settings.button-threeD.Label": "重置为3D",
+    "tokenvisibility.settings.button-threeD.Notification": "Alt. Token Visibility设置已更改为3D默认值",
+
+    "tokenvisibility.settings.button-documentation.Label": "打开文档",
+    "tokenvisibility.settings.button-issue.Label": "报告问题",
+
+    "tokenvisibility.settings.prone-status-id.Name": "'倒地'状态ID",
+    "tokenvisibility.settings.prone-status-id.Hint": "表示Token“倒地”状态的ID字符串。如果设置，倒地的Token可能会在所有视野计算中具有不同的高度，具体取决于“倒地倍率”设置。如果启用了“倒地Token阻挡”，则必须设置此项。",
+
+    "tokenvisibility.settings.token-hp-attribute.Name": "Token生命值属性",
+    "tokenvisibility.settings.token-hp-attribute.Hint": "表示`token.actor`的生命值数据的字符串。如果启用了“死亡或存活Token阻挡”，则必须设置此项。",
+
+    "tokenvisibility.settings.prone-multiplier.Name": "倒地倍率",
+    "tokenvisibility.settings.prone-multiplier.Hint": "倒地Token应使用的Token高度的百分比。例如，如果一个Token身高5英尺，倍率设置为0.6，则倒地Token将被视为身高3英尺。这会影响倒地Token的视野点以及倒地Token阻挡视野时使用的形状。",
+
+    "tokenvisibility.settings.vision-height-multiplier.Name": "视野高度倍率",
+    "tokenvisibility.settings.vision-height-multiplier.Hint": "Token视野位于其高度的百分比是多少？0%表示最底部；100%（1）表示最顶部。",
+
+    "tokenvisibility.settings.live-tokens-block.Name": "存活Token阻挡",
+    "tokenvisibility.settings.live-tokens-block.Hint": "如果启用，存活的Token将像该位置的墙壁一样阻挡视野。",
+
+    "tokenvisibility.settings.dead-tokens-block.Name": "死亡Token阻挡",
+    "tokenvisibility.settings.dead-tokens-block.Hint": "如果启用，死亡的Token将像该位置的墙壁一样阻挡视野。",
+
+    "tokenvisibility.settings.prone-tokens-block.Name": "倒地Token阻挡",
+    "tokenvisibility.settings.prone-tokens-block.Hint": "如果启用，倒地的Token将根据其身高（由倒地倍率修改）阻挡视野。如果既未启用死亡也未启用存活Token阻挡，则此设置无效。",
+
+    "tokenvisibility.template.settings-config.tabs.range": "范围",
+    "tokenvisibility.template.settings-config.tabs.los_viewer": "观察者视线",
+    "tokenvisibility.template.settings-config.tabs.los_target": "目标视线",
+
+    "tokenvisibility.template.settings-config.range": "范围",
+    "tokenvisibility.template.settings-config.rangeDescription": "如何测量观察者Token和目标Token之间的距离。",
+    "tokenvisibility.template.settings-config.viewer": "观察者视线（LOS）",
+    "tokenvisibility.template.settings-config.viewerDescription": "观察者是具有视野的Token。这些设置调整观察者视线的处理方式。",
+
+    "tokenvisibility.template.settings-config.target": "目标视线（LOS）",
+    "tokenvisibility.template.settings-config.targetDescription": "目标是被感知的Token。这些设置调整目标形状的程序化处理方式。",
+
+    "tokenvisibility.template.settings-config.tabs.other": "其他",
+    "tokenvisibility.template.settings-config.other": "其他视野设置",
+    "tokenvisibility.template.settings-config.otherDescription": "影响Token视线计算的其他设置。",
+
+    "tokenvisibility.settings-submenu.tabs.range": "范围",
+    "tokenvisibility.settings-submenu.tabs.losViewer": "观察者视线",
+    "tokenvisibility.settings-submenu.tabs.losTarget": "目标视线",
+    "tokenvisibility.settings-submenu.tabs.other": "其他",
+
+    "tokenvisibility.settings.submenu.title": "Alternative Token Visibility设置",
+    "tokenvisibility.settings.submenu.Name": "ATV设置",
+    "tokenvisibility.settings.submenu.Label": "配置",
+    "tokenvisibility.settings.submenu.Hint": "提示",
+
+    "tokenvisibility.settings.submenu.notifyDND5e": "正在将设置更改为 dnd5e。",
+    "tokenvisibility.settings.submenu.notify3d": "正在将设置更改为 3d。"
+
+}

@@ -1,0 +1,158 @@
+{
+  "relations-tracker": {
+    "title": "Relations Tracker",
+    "global": {
+      "selectActor": "Select an actor",
+      "errors": {
+        "onlyGm": "Only the GM can perform this operation."
+      }
+    },
+    "common": {
+      "buttons": {
+        "close": "Close",
+        "cancel": "Cancel",
+        "create": "Create",
+        "update": "Update",
+        "save": "Save"
+      },
+      "errors": {
+        "noGm": "No GM available."
+      }
+    },
+    "errors": {
+      "onlyGm": "Only the GM can perform this operation."
+    },
+    "factions": {
+      "title": "Factions Manager",
+      "label": "Open Factions Manager",
+      "hint": "Create, view, edit, and delete factions."
+    },
+    "factionsManager": {
+      "title": "Factions Manager",
+      "header": "Factions",
+      "actions": {
+        "create": "Create Faction",
+        "view": "View",
+        "edit": "Edit",
+        "delete": "Delete",
+        "createFirst": "Create First Faction"
+      },
+      "members": {
+        "label": "Members:"
+      },
+      "empty": {
+        "title": "No factions yet",
+        "desc": "Register your first faction to manage relations."
+      },
+      "dialog": {
+        "viewTitle": "View Faction",
+        "editTitle": "Edit Faction",
+        "createTitle": "Create Faction",
+        "deleteTitle": "Delete Faction",
+        "deleteMessage": "Are you sure you want to delete <strong>{{name}}</strong>?"
+      },
+      "fields": {
+        "name": "Name",
+        "image": "Image",
+        "imagePlaceholder": "path/to/image.png",
+        "members": "Members",
+        "searchActors": "Search actors"
+      },
+      "errors": {
+        "load": "Error loading factions.",
+        "delete": "Error deleting faction.",
+        "deleteFailed": "Failed to delete faction.",
+        "updateFailed": "Failed to update faction.",
+        "createFailed": "Failed to create faction.",
+        "createFailedWithReason": "Failed to create faction: {{reason}}",
+        "save": "Error saving faction.",
+        "filePickerOpenFailed": "Failed to open FilePicker. See console for details."
+      },
+      "success": {
+        "delete": "Faction deleted.",
+        "update": "Faction updated.",
+        "create": "Faction created."
+      }
+    },
+    "localRelations": {
+      "title": "Personal Relations",
+      "header": "Personal Relations",
+      "actions": {
+        "add": "Add",
+        "remove": "Remove"
+      },
+      "empty": {
+        "title": "No relations yet",
+        "desc": "Use Add to include actors or factions."
+      },
+      "dialog": {
+        "addTitle": "Add Relation",
+        "type": "Type",
+        "actor": "Actor",
+        "faction": "Faction",
+        "chooseActor": "Choose actor",
+        "chooseFaction": "Choose faction"
+      },
+      "errors": {
+        "save": "Error saving relation."
+      }
+    },
+    "reputation": {
+      "title": "Reputation",
+      "label": "Reputation",
+      "imageLabel": "Image (URL or upload)",
+      "imagePlaceholder": "https://...",
+      "editTitle": "Edit reputation",
+      "editTooltip": "Edit reputation",
+      "hidden": "Hidden",
+      "visibility": {
+        "title": "Reputation visibility",
+        "hint": "Controls who can view reputation in the tracker.",
+        "public": "Public (all players)",
+        "private": "Private (GM only)",
+        "vendor": "Only via information vendor"
+      },
+      "viewer": {
+        "selectActor": "Actor",
+        "private": "Reputation is private.",
+        "vendorLocked": "Reputation is only visible via an information vendor."
+      },
+      "vendorManager": {
+        "title": "Vendor Access",
+        "locked": "Only GM can manage vendor access.",
+        "userId": "User ID",
+        "userPlaceholder": "User ID (empty = anyone)",
+        "actorId": "Actor ID",
+        "actorPlaceholder": "Actor ID (empty = any actor)",
+        "targets": "Targets (comma separated)",
+        "targetsPlaceholder": "target1, target2 (empty = all targets)",
+        "duration": "Duration (minutes, 0 = no expiry)",
+        "note": "Note",
+        "add": "Add access",
+        "remove": "Remove",
+        "empty": "No vendor access entries.",
+        "user": "User",
+        "actor": "Actor",
+        "targetsLabel": "Targets",
+        "expires": "Expires",
+        "anyUser": "Any user",
+        "anyActor": "Any actor",
+        "anyTarget": "Any target",
+        "noExpiry": "No expiry",
+        "error": "Failed to update vendor access."
+      }
+    },
+    "playerAllowedEditRelationships": {
+      "title": "Allow Players to Edit Relationships",
+      "hint": "When enabled, non-GM users can edit relationships in the tracker."
+    },
+    "enableGlobalRelations": {
+      "title": "Enable Global Relations",
+      "hint": "When enabled, the global party relations tracker is available."
+    },
+    "globalRelations": {
+      "title": "Party Relations",
+      "header": "Party Relations"
+    }
+  }
+}

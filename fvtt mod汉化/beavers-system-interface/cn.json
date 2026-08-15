@@ -1,0 +1,57 @@
+
+  "beaversSystemInterface": {
+    "VersionsMismatch": "你的bsa-x模组已过时且不再兼容",
+    "SystemNotFound": "未找到该系统实现，你可能未安装正确的beavers系统实现模组",
+    "MethodNotSupported": "你的系统暂不支持该方法：",
+    "RemainingQuantityLessThenZero": "数量不足",
+    "NotEnoughMoney": "余额不足",
+    "DocumentNotFound": "未找到文档：",
+    "SystemAdaptionNeeded": "需要系统适配模组才能执行此方法",
+    "SystemAdaptionNeededAdditional": "如需无错误访问这些方法，你需要在beavers系统接口注册你的模组",
+    "NoModulesRegistered": "没有注册需要beavers-system-interface的模组",
+    "NoImplementationRegistered": "无可用系统特定适配模组，此模式下仅部分方法可用",
+    "select-dialog": {
+      "title": "选择",
+      "preselection": "选择"
+    },
+    "settings": {
+      "enableSelection": {
+        "hint": "beavers选择是一种支持图片的自定义选择框设计。由于非原生实现，某些浏览器可能不兼容，如遇问题可在此禁用",
+        "name": "启用beavers选择"
+      }
+    },
+    "TokenMovement": {
+      "desc": "此模组用于控制token移动"
+    },
+    "tests": {
+      "incrementStep": {
+        "info": {
+          "label": "递增步骤",
+          "hint": "无需用户输入，自动成功"
+        },
+        "customization": {
+          "label": "名称",
+          "hint": "描述此步骤内容，如：击杀了一个骷髅"
+        }
+      },
+      "gmRequest": {
+        "info": {
+          "label": "GM请求",
+          "hint": "将向GM发送问题，由其决定成功或失败"
+        }
+      },
+      "abilityTest": {
+        "info": {
+          "label": "属性测试",
+          "hint": "当前角色的属性检定"
+        }
+      },
+      "skillTest": {
+        "info": {
+          "label": "技能测试",
+          "hint": "当前角色的技能检定"
+        }
+      }
+    }
+  }
+}

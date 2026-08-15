@@ -1,0 +1,124 @@
+{
+	"FOUNDRYAI": {
+		"Title": "FoundryAI",
+		"Description": "AI-powered DM Assistant for Foundry VTT",
+
+		"Settings": {
+			"MenuName": "FoundryAI Configuration",
+			"MenuLabel": "Configure",
+			"MenuHint": "Configure your API key, models, and RAG knowledge base.",
+
+			"ApiKey": "OpenRouter API Key",
+			"ApiKeyHint": "Your OpenRouter API key for accessing AI models. Get one at openrouter.ai",
+
+			"ChatModel": "Chat Model",
+			"ChatModelHint": "The AI model to use for chat conversations.",
+
+			"EmbeddingModel": "Embedding Model",
+			"EmbeddingModelHint": "The model used for generating text embeddings (RAG).",
+
+			"JournalFolders": "Journal Folders",
+			"JournalFoldersHint": "Select which journal folders to include in the AI's knowledge base.",
+
+			"ActorFolders": "Actor Folders",
+			"ActorFoldersHint": "Select which actor folders the AI can access for character information.",
+
+			"ChatHistoryFolder": "Chat History Folder",
+			"ChatHistoryFolderHint": "The journal folder where raw chat sessions are saved.",
+
+			"SessionRecapFolder": "Session Recaps Folder",
+			"SessionRecapFolderHint": "The journal folder where AI-generated session recaps are saved.",
+
+			"Temperature": "Temperature",
+			"TemperatureHint": "Controls randomness: 0 = deterministic, 2 = very creative. Default: 0.8",
+
+			"MaxTokens": "Max Tokens",
+			"MaxTokensHint": "Maximum number of tokens in the AI's response. Default: 4096",
+
+			"SystemPrompt": "System Prompt Override",
+			"SystemPromptHint": "Override the default DM assistant system prompt. Leave blank to use the built-in prompt.",
+
+			"StreamResponses": "Stream Responses",
+			"StreamResponsesHint": "Show AI responses as they are generated (real-time streaming).",
+
+			"AutoIndex": "Auto-Index on Startup",
+			"AutoIndexHint": "Automatically index selected folders when Foundry loads.",
+
+			"EnableTools": "Enable Tool Use",
+			"EnableToolsHint": "Allow the AI to search journals, create entries, and interact with the world.",
+
+			"ShowSidebarTab": "Show Sidebar Tab",
+			"ShowSidebarTabHint": "Add a FoundryAI tab to the sidebar.",
+
+			"ImageModel": "Image Generation Model",
+			"ImageModelHint": "The model used for AI image generation (e.g. openai/dall-e-3).",
+
+			"TTSModel": "Text-to-Speech Model",
+			"TTSModelHint": "The model used for text-to-speech audio generation.",
+
+			"MacroFolders": "Macro Folders",
+			"MacroFoldersHint": "Select which macro folders the AI can access and execute.",
+
+			"EnableActorTools": "Enable Actor Tools",
+			"EnableActorToolsHint": "Allow the AI to create, update, and delete actors.",
+
+			"EnableItemTools": "Enable Item Tools",
+			"EnableItemToolsHint": "Allow the AI to create, update, and delete world items.",
+
+			"EnableMacroTools": "Enable Macro Tools",
+			"EnableMacroToolsHint": "Allow the AI to list, create, update, and execute macros.",
+
+			"EnableImageTools": "Enable Image Tools",
+			"EnableImageToolsHint": "Allow the AI to generate images and create scenes with AI maps."
+		},
+
+		"Chat": {
+			"Placeholder": "Ask FoundryAI...",
+			"Generating": "Generating...",
+			"Send": "Send",
+			"NewChat": "New Chat",
+			"Sessions": "Chat Sessions",
+			"NoSessions": "No sessions yet. Start a new chat!",
+			"DeleteSession": "Delete this chat session? This cannot be undone.",
+			"SessionDeleted": "Session deleted.",
+			"Today": "Today"
+		},
+
+		"Recap": {
+			"Generate": "Generate Session Recap",
+			"Generating": "Generating session recap...",
+			"Saved": "Session recap saved!",
+			"NoSessions": "No chat sessions available for recap.",
+			"Failed": "Recap generation failed."
+		},
+
+		"Index": {
+			"Reindex": "Reindex Knowledge Base",
+			"Starting": "Starting indexing...",
+			"Complete": "Indexing complete!",
+			"Failed": "Indexing failed."
+		},
+
+		"Errors": {
+			"NoApiKey": "Please configure your OpenRouter API key in FoundryAI settings.",
+			"ConnectionFailed": "Failed to connect to OpenRouter.",
+			"ChatFailed": "Chat request failed.",
+			"ToolFailed": "Tool execution failed."
+		},
+
+		"Welcome": {
+			"Title": "Welcome to FoundryAI",
+			"Subtitle": "Your AI DM Assistant",
+			"Description": "Configure your OpenRouter API key to get started.",
+			"OpenSettings": "Open Settings",
+			"Ready": "FoundryAI is ready! Click the brain icon to start chatting."
+		},
+
+		"Suggestions": {
+			"Scene": "Describe a scene",
+			"SkillCheck": "Skill check guidance",
+			"NPC": "NPC dialogue",
+			"Lore": "Search lore"
+		}
+	}
+}

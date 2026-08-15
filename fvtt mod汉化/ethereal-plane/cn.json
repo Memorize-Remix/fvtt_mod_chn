@@ -1,0 +1,165 @@
+
+  "ethereal-plane": {
+    "settings": {
+      "server-url": {
+        "Name": "服务器地址",
+        "Hint": "Ethereal Plane服务器运行的URL"
+      },
+      "enabled": {
+        "Name": "启用模组",
+        "Hint": "如果不勾选，模组将不会连接到服务器"
+      },
+      "chat-commands-active": {
+        "Name": "启用触发器",
+        "Hint": "如果不勾选，模组将不会运行触发器"
+      },
+      "send-rolls-to-chat": {
+        "Name": "发送骰子结果到聊天",
+        "Hint": "如果勾选，公开的骰子结果将被转发到直播聊天"
+      },
+      "enable-chat-tab": {
+        "Name": "聊天标签页",
+        "Hint": "如果勾选，将加载聊天标签页"
+      },
+      "mode": {
+        "Name": "模式",
+        "localchat": "托管投票 /w 本地聊天桥接",
+        "localonly": "仅本地桥接",
+        "patreon": "服务器设置"
+      },
+      "setup": {
+        "Name": "设置",
+        "Hint": "基础设置",
+        "Label": "打开设置菜单"
+      },
+      "chat-commands": {
+        "Name": "触发器",
+        "Label": "打开触发器设置"
+      },
+      "chat-message-template": {
+        "Name": "聊天消息模板"
+      },
+      "polls-enabled": {
+        "Name": "启用投票"
+      },
+      "allow-socket": {
+        "Name": "允许Socket",
+        "Hint": "警告！这将允许玩家客户端发送掷骰消息。可能被利用来发送任意内容到聊天。"
+      },
+      "allow-api": {
+        "Name": "允许API使用",
+        "Hint": "警告！这将允许任何宏或模组发送任意消息到聊天。"
+      }
+    },
+    "feature-names": {
+      "custom-twitch-bot": "自定义Twitch机器人名称",
+      "twitch-bot": "Twitch机器人",
+      "twitch-polls": "Twitch投票"
+    },
+    "ui": {
+      "docs": "文档",
+      "status": "连接状态",
+      "poll-status": "投票",
+      "chat-status": "聊天",
+      "trigger-status": "触发器(包括聊天命令触发器)",
+      "connected": "已连接",
+      "disconnected": "已断开",
+      "inactive": "未激活",
+      "connecting": "连接中",
+      "reconnect": "重新连接",
+      "general-tab": "常规",
+      "hosted-tab": "服务器设置",
+      "local-tab": "本地服务器",
+      "config-application-title": "Ethereal Plane | 连接配置",
+      "chat-command-application-title": "Ethereal Plane | 触发器配置",
+      "login-application-title": "Ethereal Plane | 服务器登录",
+      "notification-application-title": "Ethereal Plane | 通知中心",
+      "polls-application-title": "Ethereal Plane | 投票",
+      "chat-tab-name": "直播聊天",
+      "chat-welcome": "这是你的直播聊天！消息会在此显示。刷新页面将清空内容。",
+      "system": "Ethereal Plane",
+      "commands": {
+        "active": "激活",
+        "name": "名称",
+        "created_at": "创建时间",
+        "updated_at": "更新时间",
+        "macro": "宏",
+        "import": {
+          "button": "导入",
+          "title": "Ethereal Plane | 导入数据",
+          "hint1": "你即将导入导出的触发器配置。",
+          "hint2": "数据将被追加到列表中。请选择是否同时导入宏。",
+          "data-file-error": "你没有导入数据文件！",
+          "with-macros": "包含宏导入",
+          "wrong-file-error": "导入的文件不是Ethereal Plane导出文件",
+          "wrong-version-error": "导入的文件版本不受支持"
+        },
+        "export": {
+          "button": "导出",
+          "title": "Ethereal Plane | 导出选项",
+          "content": "是否要导出宏？(否则宏数据将被删除)"
+        },
+        "export-legacy": {
+          "button": "导出旧版配置"
+        }
+      },
+      "login": {
+        "device-code": "你的登录码是",
+        "hint1": "点击\"打开\"直接打开登录对话框，或复制发送到其他设备，或扫描二维码。",
+        "hint2": "登录完成后此窗口将自动关闭。"
+      },
+      "save": "保存",
+      "cancel": "取消",
+      "yes": "是",
+      "no": "否",
+      "open-polls-button": "打开投票",
+      "abort": "中止",
+      "starting": "启动中",
+      "end": "结束",
+      "start": "开始",
+      "title": "标题",
+      "open": "打开",
+      "copy": "复制",
+      "chat-command-alias-application-title": "触发器别名编辑器"
+    },
+    "notifications": {
+      "login-copy": "登录链接已复制到剪贴板",
+      "api-version-mismatch": "API版本与安装的模组不匹配。请更新。Patreon功能已禁用。",
+      "please-log-in": "请登录以使用Ethereal Plane",
+      "invalid-credential": "凭据无效，请重新登录",
+      "reconnecting": "正在重新连接到EP后端，请稍候"
+    },
+    "strings": {
+      "youtube-id": "设置YouTube ID(可选)",
+      "youtube-id-hint": "仅在自动检测失败时使用",
+      "youtube-id-placeholder": "请输入直播的视频ID或链接",
+      "disabled": "模组未启用。你可以配置它，但在启用前不会生效。某些选项也不可用",
+      "patreon-ok": "一切正常！",
+      "patreon-disconnected": "请先连接到直播服务。",
+      "patreon-logged-out": "你需要登录！",
+      "privacy-policy": "隐私政策",
+      "tos": "服务条款",
+      "youtube": "YouTube",
+      "twitch": "Twitch",
+      "log-in": "登录",
+      "log-out": "登出",
+      "connect": "连接",
+      "profile": "前往控制面板",
+      "disconnect": "断开连接",
+      "accept-text": "连接即表示你接受",
+      "notification-prefix": "Ethereal Plane | ",
+      "account-setup": "账户设置",
+      "account-setup-reminder": "在尝试连接后端前，请确保已完成账户设置！"
+    },
+		"macro": {
+			"download": {
+			  "success": "宏下载成功",
+			  "failure": "无法下载宏"
+			},
+			"upload": {
+			  "success": "宏上传成功",
+			  "failure": "无法上传宏"
+			}
+		}
+  }
+}

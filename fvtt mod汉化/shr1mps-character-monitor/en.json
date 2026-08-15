@@ -1,0 +1,150 @@
+{
+    "characterMonitor": {
+        "settings": {
+            "cmColorsMenu": {
+                "name": "Customize Character Monitor Colors",
+                "label": "Customize"
+            },
+            "monitorHP": {
+                "name": "Monitor HP",
+                "hint": "Tracks when a character's or NPC's HP changes."
+            },
+            "monitorEquip": {
+                "name": "Monitor Equipment",
+                "hint": "Tracks when a character equips/unequips equipment."
+            },
+            "monitorQuantity": {
+                "name": "Monitor Quantity",
+                "hint": "Tracks when a character's item changes quantity."
+            },
+            "monitorAttune": {
+                "name": "Monitor Attunement",
+                "hint": "Tracks when a character attunes to equipment or breaks attunement."
+            },
+            "monitorSpellPrep": {
+                "name": "Monitor Spell Preparation",
+                "hint": "Tracks when a character prepares/unprepares a spell."
+            },
+            "monitorSpellSlots": {
+                "name": "Monitor Spell Slots",
+                "hint": "Tracks when a character changes spell slot counts on their character sheet."
+            },
+            "monitorFeats": {
+                "name": "Monitor Features",
+                "hint": "Tracks when a character changes feature use counts on their character sheet."
+            },
+            "monitorResources": {
+                "name": "Monitor Resources",
+                "hint": "Tracks when a character changes resources values counts on their character sheet."
+            },
+            "monitorActiveEffects": {
+                "name": "Monitor Active Effects",
+                "hint": "Tracks when a character changes active effects on their character sheet."
+            },
+            "monitorCurrency": {
+                "name": "Monitor Currency",
+                "hint": "Tracks when a character changes currency on their character sheet."
+            },
+            "monitorProficiency": {
+                "name": "Monitor Skill Proficiency",
+                "hint": "Tracks when a character changes skill proficiency."
+            },
+            "monitorAbility": {
+                "name": "Monitor Ability Scores",
+                "hint": "Tracks when a character changes ability scores."
+            },
+            "monitorSheetMode": {
+                "name": "Monitor Sheet Mode Toggle",
+                "hint": "Tracks when character sheet toggles between Play and Edit modes."
+            },
+            "showGMonly": {
+                "name": "Display Character Monitor to GM Users only",
+                "hint": "Chat messages can be revealed to players using context menu."
+            },
+            "allowPlayerView": {
+                "name": "Allow players to see their own messages",
+                "hint": "If GM-only mode is enabled, this setting allows players to still see their own monitor messages."
+            },
+            "showToggle": {
+                "name": "Show Character Monitor Toggle",
+                "hint": "Temporarily disable Character Monitor by toggling off the control button on the token toolbar. The control button is only visible to GM users."
+            },
+            "trashIcon": {
+                "name": "Enable Health Monitor Chat Message Trash Icon"
+            },
+            "useTokenName": {
+                "name": "Use Token Name",
+                "hint": "For unlinked tokens, token name will be used. For linked tokens, prototype token name will be used."
+            },
+            "hideNPCs": {
+                "name": "Hide NPC Health Log from Players",
+                "hint": "GM users can reveal chat messages to players using context menu"
+            },
+            "hideNPCname": {
+                "name": "Hide NPC Name",
+                "hint": "Replaces NPC name with text set below."
+            },
+            "replacementName": {
+                "name": "Hidden NPC Name Replacement",
+                "hint": "If above setting is enabled, NPC name will be replaced with text entered here."
+            }
+        },
+        "control": {
+            "title": "Toggle Character Monitor"
+        },
+        "chatMessage": {
+            "hp": {
+                "value": "HP",
+                "max": "Max HP",
+                "temp": "Temp HP"
+            },
+            "equipped": "equipped",
+            "unequipped": "unequipped",
+            "prepared": "prepared",
+            "unprepared": "unprepared",
+            "aSpell": "a spell",
+            "uses": "uses",
+            "attunesTo": "attunes to an item",
+            "breaksAttune": "breaks attunement to an item",
+            "SpellSlots": "Spell Slots",
+            "enabled": "enabled",
+            "disabled": "disabled",
+            "duration": {
+                "seconds": "seconds",
+                "startTime": "start time",
+                "rounds": "rounds",
+                "turns": "turns",
+                "startRound": "start round",
+                "startTurn": "start turn"
+            },
+            "effects": {
+                "label": "label",
+                "mode": "mode",
+                "value": "value"
+            },
+            "sheetMode": "Sheet Mode"
+        },
+        "colorMenu": {
+            "hpPlus": "HP Increases",
+            "hpMinus": "HP Decreases",
+            "on": "Equip/Prepare/Attune",
+            "off": "Unequip/Unprepare/Break Attunement"
+        }
+    },
+    "healthMonitor": {
+        "control": {
+            "title": "Toggle Health Monitor"
+        },
+        "chatMessage": {
+            "heals": "heals",
+            "takes": "takes",
+            "damage": "damage",
+            "gains": "gains",
+            "loses": "loses",
+            "maxHP": "max HP",
+            "Immunity": "Immunity",
+            "Resistance": "Resistance",
+            "Vulnerability": "Vulnerability"
+        }
+    }
+}

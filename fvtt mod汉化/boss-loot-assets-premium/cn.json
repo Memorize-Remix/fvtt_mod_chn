@@ -1,0 +1,271 @@
+
+  "boss-loot-assets-premium": {
+    "ui": {
+      "title": "动画设置：",
+
+      "animationConfig": {
+        "title": "动画配置",
+        "macroEventDesc": "事件",
+        "macroEventHintDesc": "动画应在何时播放？",
+        "macroTypeDesc": "动画类型",
+
+        "animationFileNameDesc": "动画文件名",
+        "scaleDesc": "缩放",
+        "elevationDesc": "高度",
+        "offsetDesc": "偏移",
+        "fadeInDesc": "淡入（毫秒）",
+        "fadeOutDesc": "淡出（毫秒）",
+        "scaleInDesc": "缩放进入（缩放/持续时间）",
+        "scaleOutDesc": "缩放退出（缩放/持续时间）",
+        "belowTokensDesc": "在Token下方",
+        "waitUntilFinishedDesc": "等待完成（毫秒）",
+        "deleteTemplateDesc": "自动删除测量板",
+        "persistDesc": "永久",
+        "delayAnimationDesc": "延迟（毫秒）",
+        "hiddenTemplateDesc": "隐藏测量板",
+        "missAnimationDesc": "未命中动画",
+        "hiddenTargetDesc": "隐藏目标",
+        "hiddenTargetHintDesc": "Token在播放此序列的动画之前不可见。",
+
+        "soundFileNameDesc": "音效文件名",
+        "delaySoundDesc": "延迟（毫秒）",
+        "startTimeSoundDesc": "开始时间（毫秒）",
+        "playAnimationIfDesc": "动画应在以下情况播放",
+        "playSoundIfDesc": "音效应在以下情况播放",
+        "waitUntilFinishedSoundHint": "如果复选框未启用，音效将与动画同时开始。",
+
+        "genericShakeDesc": "震动",
+        "shakeDurationDesc": "震动持续时间（毫秒）",
+        "shakeIntensityDesc": "震动强度",
+        "shakeDurationHintDesc": "设为0表示无震动",
+        "playShakeIfDesc": "震动应在以下情况播放"
+      },
+
+      "animationScript": {
+        "title": "动画脚本",
+        "commandDesc": "在此处写入命令或拖放宏："
+      },
+
+      "button": {
+        "save": "保存",
+        "save-close": "保存并关闭"
+      },
+
+      "notifications": {
+        "emptyField": "此字段不能为空！",
+        "invalidMacro": "拖放的物品不是有效的宏！",
+        "processError": "处理拖放数据失败！",
+        "inactiveModule": "Sequencer模组未激活！"
+      }
+    },
+
+    "blap": {
+      "ui": {
+        "title": "Boss Loot动画预览",
+        "details": "选择视频以查看其详情。",
+        "ms": "(ms)",
+        "noMediaMessage": "暂无内容，请尝试优化搜索。",
+        "noPackMessage": "在Sequencer中加载资源包以查看其内容。",
+        "filters": {
+          "allMedia": "所有媒体",
+          "allPacks": "所有包",
+          "video": "视频",
+          "sound": "音效",
+          "image": "图像"
+        },
+        "hint": {
+          "toggle": "在Sequencer路径和文件名路径之间切换"
+        }
+      },
+
+      "notifications": {
+        "message1": "已复制 '{selectedKey}' 到剪贴板",
+        "message2": "未选择要复制的动画",
+        "message3": "功能尚未支持！"
+      },
+
+      "button": {
+        "copy": "复制",
+        "copy-close": "复制并关闭"
+      }
+    },
+
+    "cdd": {
+      "ui": {
+        "title": "图块/Sequencer/音效控件",
+        "headerTitle": "配置资源",
+        "docDropdown": {
+          "label": "文档类型",
+          "values": {
+            "tile": "FVTT图块",
+            "animation": "Sequencer动画",
+            "sound": "FVTT环境音效"
+          }
+        },
+        "tileFieldset": {
+          "legend": "图块属性",
+          "width": "宽度 (像素)",
+          "height": "高度 (像素)",
+          "elevation": "高度",
+          "autoplay": "自动播放视频",
+          "loop": "循环视频",
+          "hidden": "隐藏"
+        },
+        "animationFieldset": {
+          "legend": "Sequencer属性",
+          "scale": "比例",
+          "elevation": "高度",
+          "belowTokens": "在Token下方",
+          "persist": "永久"
+        },
+        "soundFieldset": {
+          "legend": "环境音效属性",
+          "radius": "音效半径",
+          "elevation": "音效高度",
+          "hidden": "隐藏"
+        },
+        "button": {
+          "create": "创建",
+          "cancel": "取消"
+        },
+        "notifications": {
+          "tileCreated": "图块已创建！使用图块控件来更新它！",
+          "animCreated": "Sequencer动画已创建！使用Sequencer图层来移动或删除它！",
+          "soundCreated": "环境音效已创建！使用环境音效控件来更新它！"
+        }
+      }
+    },
+
+    "migration": {
+      "title": "需要执行BLFX迁移",
+      "contentPhrase1": "有一个重要更新可用，需要将你的物品动画迁移到最新版本。",
+      "contentPhrase2": "此迁移将更新你的物品动画以兼容新功能和改进。",
+      "contentPhrase3": "要了解更多信息，请查看 ",
+      "contentPhrase4": "{boldStart}注意{boldEnd}：此过程将覆盖直接对宏进行的任何自定义，因此请务必{boldStart}备份你的数据{boldEnd}。",
+      "button1Label": "从选定Token迁移物品",
+      "button2Label": "迁移所有物品",
+      "button3Label": "不再显示",
+      "uiNotification1": "未找到要迁移的物品。",
+      "uiNotification2": "迁移和同步完成！",
+      "displayBarMessage1": "正在迁移和同步物品动画",
+      "displayBarMessage2": "迁移和同步完成",
+      "errorMessage1": "迁移过程中发生错误。请检查控制台以获取详细信息。"
+    },
+
+    "transfer": {
+      "title": "BLFX转移动画",
+      "contentPhrase1": "{boldStart}免费版到高级版。{boldEnd} 将你的自定义动画从免费版转移到高级版！",
+      "contentPhrase2": "迁移完成后，考虑使用{boldStart}迁移物品{boldEnd}功能，利用最新特性(如音效)增强你的动画。",
+      "contentPhrase3": "{boldStart}DnD v3到DnD v4。{boldEnd} 将动画从DnD5e v3转移到DnD5e v4。请注意，此过程是尽力而为，仅适用于具有一个动画和一个行动的物品！",
+      "contentPhrase4": "所有场景中所有Token以及物品栏中所有物品的动画都将包含在此过程中。",
+      "button1Label": "转移动画 <span>（免费版到高级版）</span>",
+      "button2Label": "转移动画 <span>（DnD5e v3到DnD5e v4）</span>",
+      "button3Label": "转移动画 <span>（Midi到标准）</span>",
+      "uiNotification1": "没有要转移的动画！",
+      "uiNotification2": "MidiQoL未激活，无法转移！",
+      "uiNotification3": "此选项仅适用于D&D5e-v4，无法转移！",
+      "uiNotification4": "无法将物品 {itemName} 转移到v4",
+      "uiNotification5": "动画转移完成！",
+      "errorMessage1": "动画转移过程中发生错误。请检查控制台以获取详细信息。"
+    },
+
+    "itemSpecificOptions": {
+      "title": "自定义设置",
+      "autoRec": {
+        "title": "Boss Loot自动识别",
+        "description": "BLFX自动识别 '{trigger}'",
+        "hint": "如果启用，当物品未定义自定义动画时，BLFX将播放默认动画。"
+      }
+    },
+
+    "afterItemUse": {
+      "triggerName": "物品使用",
+      "triggerInfo": "物品使用后",
+      "triggerLabel": "在物品使用后播放动画。可访问参数：'sourceToken'(源Token)、'[targetTokens]'(目标Token)、'item'(物品)和'roll'(掷骰)",
+      "triggerLabelShort": "在物品使用后播放动画。",
+      "primaryAnimationDesc": "在来源Token上",
+      "secondaryAnimationDesc": "次要动画(目标Token)",
+      "thirdAnimationDesc": "在目标上",
+      "genericSoundDesc": "音效",
+      "genericAnimationDesc": "动画"
+    },
+    "afterThrown": {
+      "triggerName": "投掷",
+      "triggerInfo": "投掷攻击检定后",
+      "triggerLabel": "投掷攻击检定后播放动画。可访问参数：'sourceToken'(源Token)、'[targetTokens]'(目标Token)、'item'(物品)和'roll'(掷骰)",
+      "triggerLabelShort": "投掷攻击检定后播放动画。",
+      "primaryAnimationDesc": "在来源Token上",
+      "secondaryAnimationDesc": "从来源到目标",
+      "thirdAnimationDesc": "在目标上",
+      "genericSoundDesc": "音效",
+      "genericAnimationDesc": "动画"
+    },
+    "afterAttack": {
+      "triggerName": "攻击",
+      "triggerInfo": "攻击检定后",
+      "triggerLabel": "攻击检定后播放动画。可访问参数：'sourceToken'(源Token)、'[targetTokens]'(目标Token)、'item'(物品)和'roll'(掷骰)",
+      "triggerLabelShort": "攻击检定后播放动画。",
+      "primaryAnimationDesc": "在来源Token上",
+      "secondaryAnimationDesc": "从来源到目标",
+      "thirdAnimationDesc": "在目标上",
+      "genericSoundDesc": "音效",
+      "genericAnimationDesc": "动画"
+    },
+    "createTemplate": {
+      "triggerName": "测量板",
+      "triggerInfo": "放置测量板后",
+      "triggerLabel": "放置测量板后播放动画。可访问参数：'sourceToken'(源Token)和'templateDocument'(测量板)",
+      "triggerLabelShort": "放置测量板后播放动画。",
+      "primaryAnimationDesc": "在来源Token上",
+      "secondaryAnimationDesc": "从来源到目标",
+      "thirdAnimationDesc": "在目标上",
+      "genericSoundDesc": "音效",
+      "genericAnimationDesc": "动画"
+    },
+    "afterDamage": {
+      "triggerName": "伤害",
+      "triggerInfo": "伤害掷骰后",
+      "triggerLabel": "伤害掷骰后播放动画。可访问参数：'sourceToken'(源Token)、'[targetTokens]'(目标Token)、'item'(物品)和'roll'(掷骰)",
+      "triggerLabelShort": "伤害掷骰后播放动画。",
+      "primaryAnimationDesc": "在来源Token上",
+      "secondaryAnimationDesc": "从来源到目标",
+      "thirdAnimationDesc": "在目标上",
+      "genericSoundDesc": "音效",
+      "genericAnimationDesc": "动画"
+    },
+    "afterActiveEffects": {
+      "triggerName": "激活效果",
+      "triggerInfo": "激活效果后",
+      "triggerLabel": "创建激活效果后播放动画。可访问参数：'sourceToken'(源Token)、'[targetTokens]'(目标Token)、'item'(物品)和'effect'(效果)",
+      "triggerLabelShort": "创建激活效果后播放动画。",
+      "primaryAnimationDesc": "在来源Token上",
+      "secondaryAnimationDesc": "从来源到目标",
+      "thirdAnimationDesc": "在目标上",
+      "genericSoundDesc": "音效",
+      "genericAnimationDesc": "动画"
+    },
+    "afterSummon": {
+      "triggerName": "召唤",
+      "triggerInfo": "召唤后",
+      "triggerLabel": "召唤生物后播放动画。可访问参数：'sourceToken'(源Token)、'[targetTokens]'(目标Token)和'item'(物品)",
+      "triggerLabelShort": "召唤生物后播放动画。",
+      "primaryAnimationDesc": "在来源Token上",
+      "secondaryAnimationDesc": "从来源到目标",
+      "thirdAnimationDesc": "在目标上",
+      "genericSoundDesc": "音效",
+      "genericAnimationDesc": "动画"
+    },
+
+    "afterActivityUse": {
+      "triggerName": "{trigger}",
+      "triggerInfo": "行动",
+      "triggerLabel": "使用'{trigger}'行动后播放动画。可访问参数：{boldStart}sourceToken{boldEnd}(源Token)、{boldStart}[targetTokens]{boldEnd}(目标Token)、{boldStart}item{boldEnd}(物品)、{boldStart}roll{boldEnd}(掷骰)和{boldStart}activity{boldEnd}(行动)",
+      "triggerLabelShort": "使用行动'{trigger}'后播放动画",
+      "primaryAnimationDesc": "在来源Token上",
+      "secondaryAnimationDesc": "从来源到目标",
+      "thirdAnimationDesc": "在目标上",
+      "genericSoundDesc": "音效",
+      "genericAnimationDesc": "动画"
+    }
+  }
+}

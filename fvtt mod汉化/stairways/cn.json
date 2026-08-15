@@ -1,0 +1,77 @@
+
+  "DOCUMENT": {
+    "Stairway": "楼梯"
+  },
+  "stairways": {
+    "settings": {
+      "prompt-player": {
+        "name": "需要确认？",
+        "hint": "提示玩家确认楼梯的使用。"
+      }
+    },
+    "ui": {
+      "config": {
+        "title": "楼梯配置",
+        "tab-main": "主要",
+        "tab-label": "标签",
+        "tab-position": "位置",
+        "status": "状态",
+        "name": "ID",
+        "name-hint": "当楼梯的 ID 相同时，楼梯就会被连接起来。",
+        "name-warning": "确保只有两个楼梯具有相同的 ID！",
+        "scene": "链接场景",
+        "current-scene": "(当前场景)",
+        "partner-scene-label": "使用链接场景名称",
+        "label": "标签",
+        "font-family": "字体类型",
+        "font-size": "字体大小",
+        "text-color": "文字颜色",
+        "icon": "图标",
+        "icons": {
+          "stairway": "楼梯(默认)",
+          "door-steel": "钢门",
+          "door-closed": "紧闭的门",
+          "door-exit": "出口",
+          "cave": "洞穴",
+          "house": "房屋",
+          "city": "城市",
+          "castle": "城堡"
+        },
+        "disabled": "禁用(锁定)",
+        "hidden": "为玩家隐藏",
+        "animate": "移动动画",
+        "animate-hint-1": "将楼梯的使用制作成动画，就像普通移动一样。",
+        "animate-hint-2": "仅适用于同一场景。",
+        "locked": "位置固定",
+        "reset": "重置默认",
+        "submit": "保存"
+      },
+      "controls": {
+        "group": "楼梯控件",
+        "stairway": "创建楼梯",
+        "disabled": "禁用(锁定)楼梯",
+        "hidden": "隐藏楼梯",
+        "animate": "移动动画",
+        "clear": "清除楼梯"
+      },
+      "messages": {
+        "disabled": "你不能使用这个楼梯，看起来已禁用。",
+        "no-gm": "你必须等你的GM来使用楼梯。",
+        "no-partner": "楼梯不知通向何方！",
+        "no-token-selected": "请至少选择一个 token。",
+        "data-update-error": "保存更改失败。",
+        "internal-error": "stairway模组出现内部错误。"
+      },
+      "status": {
+        "connected": "已连接。",
+        "no-partner-other-scene": "在其他场景中失去了链接。",
+        "no-partner": "当前场景中缺少链接。",
+        "non-monogamous": "有一个以上的链接！"
+      },
+      "prompt": {
+        "title": "使用楼梯？",
+        "content": "您想使用这个楼梯/传送器吗？"
+      }
+    }
+  }
+}

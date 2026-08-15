@@ -1,0 +1,114 @@
+{
+    "AURAEFFECTS": {
+        "ACTIVEEFFECT": {
+            "Aura": {
+                "FIELDS": {
+                    "applyToSelf": {
+                        "hint": "If enabled this aura will apply to the source token.",
+                        "label": "Apply to Self"
+                    },
+                    "bestFormula": {
+                        "hint": "A formula to evaluate with the source actor's roll data to determine the most powerful effect in a non-stacking situation. If left blank, first-come, first-serve.",
+                        "label": "\"Best\" Formula"
+                    },
+                    "canStack": {
+                        "hint": "If enabled, other auras of the same name can apply at the same time to any applicable tokens.",
+                        "label": "Aura Can Stack"
+                    },
+                    "collisionTypes": {
+                        "hint": "Which, if any, types of wall will stop this aura.",
+                        "label": "Collision Types"
+                    },
+                    "color": {
+                        "hint": "If blank, will inherit User color (or GM's color, if no user has the actor set as their character).",
+                        "label": "Color"
+                    },
+                    "combatOnly": {
+                        "hint": "If enabled, this effect will be suppressed outside of combat.",
+                        "label": "Combat Only"
+                    },
+                    "disableOnHidden": {
+                        "hint": "If enabled, this effect will be suppressed while the token it is on is hidden.",
+                        "label": "Disable While Hidden"
+                    },
+                    "disposition": {
+                        "Choices": {
+                            "Any": "Any",
+                            "Friendly": "Friendly",
+                            "Hostile": "Hostile"
+                        },
+                        "hint": "Which token dispositions (relative to the source token) this aura will apply to.",
+                        "label": "Disposition"
+                    },
+                    "distanceFormula": {
+                        "hint": "Specifies the radius that this aura extends to (roll data is accepted).",
+                        "label": "Distance"
+                    },
+                    "evaluatePreApply": {
+                        "hint": "If enabled, change values will be evaluated prior to effect application, using the source actor's roll data if necessary.",
+                        "label": "Evaluate Changes Early"
+                    },
+                    "opacity": {
+                        "hint": "How opaque or transparent the aura should appear.",
+                        "label": "Opacity"
+                    },
+                    "overrideName": {
+                        "hint": "What name the applied effect should have (leave blank to use base effect's name).",
+                        "label": "Effect Name"
+                    },
+                    "script": {
+                        "hint": "An expression which, if true (or blank) means the aura should apply.",
+                        "label": "Conditional Script"
+                    },
+                    "showRadius": {
+                        "hint": "Whether to display aura borders for every user.",
+                        "label": "Show Radius"
+                    }
+                }
+            }
+        },
+        "ConvertToAura": "Convert to Aura",
+        "ConvertToAuraHint": "This will immediately transform this effect into an Aura source effect.",
+        "ConvertToNormal": "Revert to Normal Effect",
+        "ConvertToNormalHint": "This will immediately revert this effect to its original type; aura settings will be lost.",
+        "Errors": {
+            "ScriptError": "Error while running Aura Effects Conditional Script for effect \"{effect}\" on actor \"{actor}\":\n{error}"
+        },
+        "Migrations": {
+            "ActiveAurasBegin": "Beginning migration from Active Auras to Aura Effects...",
+            "ActiveAurasChatMessage": "Thank you for installing Aura Effects! If you previously used Active Auras, there is a migration script to convert all of your Active Aura effects into Aura Effects. You can find it at any time in the Aura Effects compendium folder, or execute it by clicking here: @UUID[Compendium.auraeffects.AuraEffectsMacros.Macro.NeaP6NSy6TzLQuKS]{Migrate from Active Auras}",
+            "ActiveAurasComplete": "Migration from Active Auras to Aura Effects now complete!",
+            "AllCompleted": "All Aura Effects migrations completed!",
+            "Beginning": "Beginning Aura Effects migrations..."
+        },
+        "NoActiveGM": "Aura Effects will not attempt to function without a GM logged in.",
+		"PotentialSystemIncompatibility": "Please note that, because this system's base Active Effect definition overlaps with the fields Aura Effects adds, any Aura-type effects will not have whatever system-specific enhancements exist on normal effects.",
+        "SETTINGS": {
+            "DefaultVisibility": {
+                "Hint": "When enabled, visualization will be on by default for any newly-created aura effects.",
+                "Name": "Aura Effects Default to Visible"
+            },
+            "DisableScrollingText": {
+                "Hint": "Disable the scrolling text that appears when adding/removing aura-caused effects to a token's actor.",
+                "Name": "Disable Scrolling Text for Aura Effects"
+            },
+            "DisableVisuals": {
+                "Hint": "Disable aura radius visualization entirely, regardless of effect settings.",
+                "Name": "Disable Visuals"
+            },
+            "ExactCircles": {
+                "Hint": "When enabled, visualized auras will be shown as perfect circles when \"Grid Diagonals\" is set to \"Exact.\" (This can result in inaccurate visualizations around the edges of circles, especially with larger aura radii).",
+                "Name": "Show Circles with Exact Diagonals"
+            },
+            "PreferLatest": {
+                "Hint": "When enabled, the most recent instance of a non-stackable Aura will be preferred, if there is no \"best\" aura. By default, ties in \"best\" go to the existing effect.",
+                "Name": "Prefer Most Recent Aura"
+            }
+        },
+        "SHEETS.AuraActiveEffectSheet": "Aura Active Effect Sheet"
+    },
+    "EFFECT.TABS": {
+        "aura": "Aura"
+    },
+    "TYPES.ActiveEffect.auraeffects.aura": "Aura"
+}

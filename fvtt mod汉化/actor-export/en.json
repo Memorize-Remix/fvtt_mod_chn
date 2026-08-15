@@ -1,0 +1,58 @@
+{
+    "ACTOR-EXPORT": {
+        "actor-dialog": {
+            "header-button": {
+                "label": "Export"
+            }
+        },
+        "export-dialog": {
+            "title": "Export Actor"
+        },
+        "settings": {
+            "actorExportCustomProvider": {
+                "title": "Custom Provider"
+            },
+            "actorExportProviderDialog": {
+                "title": "Export Providers"
+            },
+            "allProviders": {
+                "name": "All Providers",
+                "hint": "All Providers"
+            },
+            "enabledProviders": {
+                "name": "Enabled Providers",
+                "hint": "Providers enabled by your Gamemaster"
+            },
+            "exportProviderCustom": {
+                "name": "Custom Export Provider",
+                "hint": "Custom Javascript code to generate a single download",
+                "label": "Custom Provider"
+            },
+            "exportProviderCustomCode": {
+                "name": "Custom Provider Javascript code",
+                "hint": "Custom Javascript code to generate a single download"
+            },
+            "exportProviderFilter": {
+                "name": "Select Actor Export Providers",
+                "hint": "Allows you to limit the Actor Export Providers for non-Gamemaster users",
+                "label": "Filter Providers"
+            },
+            "exportProviderOverridePdfFonts": {
+                "name": "Override PDF fonts",
+                "hint": "Override PDF fonts with a safe font. The resulting PDF may not generate correctly, as it may not be optimized for the selected font!"
+            },
+            "exportProviderOverridePdfFontsSelection": {
+                "name": "Override PDF font selection",
+                "hint": "Select the font to use to override"
+            },
+            "exportSelectedProviderFiles": {
+                "name": "Selected Provider Files",
+                "hint": "The list of selected Provider files to export"
+            },
+            "relationProvider": {
+                "name": "Relation Provider Selector",
+                "hint": "Select the provider to translate actor data into a file"
+            }
+        }
+    }
+}

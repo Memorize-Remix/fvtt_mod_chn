@@ -1,0 +1,906 @@
+{
+  "MORTAL_NEEDS": {
+    "Title": "Mortal Needs",
+
+    "Controls": {
+      "Toggle": "Toggle Mortal Needs Panel"
+    },
+
+    "Keybindings": {
+      "TogglePanel": "Toggle Mortal Needs Panel",
+      "TogglePanelHint": "Show or hide the Mortal Needs panel"
+    },
+
+    "Needs": {
+      "Hunger": "Hunger",
+      "Thirst": "Thirst",
+      "Exhaustion": "Exhaustion",
+      "Cold": "Cold",
+      "Heat": "Heat",
+      "Comfort": "Comfort",
+      "Sanity": "Sanity",
+      "Morale": "Morale",
+      "Pain": "Pain",
+      "Radiation": "Radiation",
+      "Corruption": "Corruption",
+      "Fatigue": "Fatigue",
+      "Environmental": "Environmental Stress"
+    },
+
+    "Severity": {
+      "Safe": "Safe",
+      "Low": "Low",
+      "Medium": "Moderate",
+      "High": "High",
+      "Critical": "Critical"
+    },
+
+    "Toolbar": {
+      "Add": "Add",
+      "AddActors": "Add Actors",
+      "StressAll": "Stress All",
+      "RelieveAll": "Relieve All",
+      "Configure": "Configure",
+      "History": "History"
+    },
+
+    "Actions": {
+      "Stress": "Stress",
+      "Relieve": "Relieve",
+      "ResetAll": "Reset All",
+      "Untrack": "Untrack"
+    },
+
+    "EmptyState": {
+      "Title": "No Characters Tracked",
+      "Description": "Add actors to start tracking their survival needs.",
+      "AddActors": "Add Actors",
+      "PlayerWaiting": "Waiting for the GM to add characters..."
+    },
+
+    "ActorSelection": {
+      "Title": "Select Characters to Track",
+      "FoundryActors": "Foundry Actors",
+      "ESCharacters": "Exalted Scenes Characters",
+      "SearchPlaceholder": "Search actors...",
+      "AlreadyTracked": "Tracked",
+      "NoESCharacters": "No Exalted Scenes characters available.",
+      "AddSelected": "Add Selected"
+    },
+
+    "MultiStress": {
+      "Title": "Stress All Characters",
+      "RelieveTitle": "Relieve All Characters",
+      "SelectNeed": "Select Need",
+      "Amount": "Amount",
+      "Targets": "Target Characters"
+    },
+
+    "Config": {
+      "Title": "Configure Needs",
+      "NeedsTab": "Needs",
+      "PresetsTab": "Presets",
+      "ImportExportTab": "Import / Export",
+      "AddCustomNeed": "Add Custom Need",
+      "ApplyPresetTitle": "Apply Preset",
+      "ApplyPresetConfirm": "This will enable/disable needs according to the preset. Continue?",
+      "SavePresetTitle": "Save Preset",
+      "PresetName": "Preset Name",
+      "PresetDescription": "Description",
+      "SavePreset": "Save Current as Preset",
+      "Export": "Export",
+      "ExportJSON": "Export Configuration",
+      "Import": "Import",
+      "ImportJSON": "Import Configuration",
+      "ImportPlaceholder": "Paste JSON configuration here..."
+    },
+
+    "NeedEdit": {
+      "Title": "Edit Need",
+      "General": "General",
+      "Id": "Need ID",
+      "Label": "Display Name",
+      "Icon": "Icon (FontAwesome)",
+      "Category": "Category",
+      "Enabled": "Enabled",
+      "Values": "Values",
+      "Min": "Min",
+      "Max": "Max",
+      "Default": "Default",
+      "StressAmount": "Stress per Click",
+      "Decay": "Auto-Decay",
+      "DecayEnabled": "Enable time-based decay",
+      "DecayRate": "Decay Amount",
+      "DecayInterval": "Interval",
+      "Consequences": "Consequences",
+      "NoConsequences": "No consequences configured.",
+      "AddConsequence": "Add Consequence",
+      "EditConsequence": "Edit",
+      "DeleteConsequence": "Remove",
+      "Delete": "Delete Need",
+      "DeleteTitle": "Delete Custom Need",
+      "DeleteConfirm": "Are you sure? This will remove the need and all associated data."
+    },
+
+    "EffectConfig": {
+      "Title": "Configure Consequence",
+      "Type": "Consequence Type",
+      "Configuration": "Configuration",
+      "Behavior": "Trigger Behavior",
+      "Threshold": "Threshold",
+      "Ticks": "Ticks before repeat",
+      "Reversible": "Reversible when need recovers",
+      "ThresholdHint": "When this need reaches this percentage, the consequence triggers. Example: 80 means it fires when the need is 80% stressed.",
+      "TicksHint": "How many sustained stress checks happen before the consequence re-applies. Lower values are more punishing.",
+      "ReversibleHint": "If checked, this consequence is automatically removed when the need recovers below the threshold.",
+      "EditTitle": "Edit Consequence",
+      "DeleteConfirm": "Remove this consequence?",
+      "SuggestionsTitle": "Suggested for this system",
+      "NoSuggestions": "No system suggestions available for this need.",
+      "AttributePathHint": "Path to the actor property. Use the dropdown to pick from your system's known attributes, or type a custom path."
+    },
+
+    "Consequences": {
+      "AttributeModify": "Modify Attribute",
+      "ConditionApply": "Apply Condition",
+      "ActiveEffectApply": "Apply Active Effect",
+      "CustomCallback": "Custom Callback",
+      "ChatNotify": "Chat Notification",
+      "AttributePath": "Attribute Path",
+      "Operation": "Operation",
+      "Amount": "Amount",
+      "ConditionId": "Condition",
+      "EffectName": "Effect Name",
+      "EffectChanges": "Effect Changes (JSON)",
+      "CallbackId": "Callback ID",
+      "Message": "Message",
+      "WhisperGM": "Whisper to GM only",
+      "MacroExecute": "Execute Macro",
+      "MacroSelect": "Macro",
+      "OpSubtract": "Subtract",
+      "OpAdd": "Add",
+      "OpSet": "Set to",
+      "OpMultiply": "Multiply by",
+      "ChangeKey": "Change Key",
+      "ChangeMode": "Change Mode",
+      "ChangeValue": "Change Value",
+      "ModeAdd": "Add (sum with current)",
+      "ModeDowngrade": "Downgrade (use lower)",
+      "ModeUpgrade": "Upgrade (use higher)",
+      "ModeOverride": "Override (replace)"
+    },
+
+    "History": {
+      "Title": "Needs History",
+      "AllEntities": "All Characters",
+      "AllNeeds": "All Needs",
+      "NoEntries": "No history entries yet."
+    },
+
+    "Presets": {
+      "Survival": "Survival",
+      "SurvivalDesc": "Classic survival: hunger, thirst, exhaustion, cold, heat",
+      "Horror": "Horror",
+      "HorrorDesc": "Psychological horror: sanity, morale, pain, corruption",
+      "SciFi": "Sci-Fi",
+      "SciFiDesc": "Science fiction: radiation, fatigue, morale",
+      "DarkFantasy": "Dark Fantasy",
+      "DarkFantasyDesc": "Dark fantasy: hunger, thirst, exhaustion, corruption, sanity",
+      "Minimalist": "Minimalist",
+      "MinimalistDesc": "Simple survival: hunger and thirst only"
+    },
+
+    "Settings": {
+      "DefaultStress": "Default Stress Amount",
+      "DefaultStressHint": "The default amount of stress applied per click (1-50).",
+      "PlayerVisibility": "Player Visibility",
+      "PlayerVisibilityHint": "Control what players can see in the needs panel.",
+      "VisibilityNone": "Hidden (GM only)",
+      "VisibilityOwn": "Own character only",
+      "VisibilityAll": "All characters",
+      "PlayerControl": "Player Self-Service",
+      "PlayerControlHint": "Allow players to manage their own character's needs.",
+      "NotifyCritical": "Notify on Critical",
+      "NotifyCriticalHint": "Send a chat notification when a need reaches critical level.",
+      "CriticalThreshold": "Critical Threshold",
+      "CriticalThresholdHint": "The percentage at which a need is considered critical (50-100).",
+      "ConsequenceRemoval": "Consequence Removal",
+      "ConsequenceRemovalHint": "How consequences are handled when needs drop below critical.",
+      "RemovalAskGM": "Ask GM (show dialog)",
+      "RemovalImmediate": "Remove immediately",
+      "RemovalManual": "Manual only",
+      "ShowConsequenceChat": "Show Consequence Chat",
+      "ShowConsequenceChatHint": "Display styled chat messages when consequences are applied.",
+      "AnimateBars": "Animate Bars",
+      "AnimateBarsHint": "Enable smooth animations when bar values change.",
+      "BarOrientation": "Bar Style",
+      "BarOrientationHint": "Choose between horizontal, vertical, or radial bar display.",
+      "OrientationHorizontal": "Horizontal Bars",
+      "OrientationVertical": "Vertical Bars",
+      "OrientationRadial": "Radial Arcs",
+      "UIScale": "UI Scale",
+      "UIScaleHint": "Adjust the size of the needs panel (80-200%).",
+      "CompactMode": "Compact Mode",
+      "CompactModeHint": "Use a more compact display with smaller portraits.",
+      "FlavorMessages": "Flavor Messages",
+      "FlavorMessagesHint": "Enable narrative flavor messages when needs cross severity thresholds.",
+      "FlavorVerbosity": "Flavor Verbosity",
+      "FlavorVerbosityHint": "Controls how often flavor messages appear in chat.",
+      "VerbosityMinimal": "Minimal (critical transitions only)",
+      "VerbosityNormal": "Normal (all threshold crossings)",
+      "VerbosityVerbose": "Verbose (all crossings + sustained)",
+      "FlavorVisibility": "Flavor Message Visibility",
+      "FlavorVisibilityHint": "Who can see flavor messages in chat.",
+      "FlavorVisibilityGM": "GM Only",
+      "FlavorVisibilityAll": "All Players",
+      "FlavorBatchMode": "Batch Simultaneous Messages",
+      "FlavorBatchModeHint": "Combine simultaneous threshold crossings into a single chat card."
+    },
+
+    "Chat": {
+      "ConsequenceApplied": "Consequence Applied",
+      "Need": "Need",
+      "Level": "Level",
+      "Consequence": "Consequence",
+      "NeedsSummary": "Needs Summary",
+      "Removed": "Removed",
+      "FlavorWorsening": "Worsening",
+      "FlavorImproving": "Improving"
+    },
+
+    "Dialogs": {
+      "RemoveConsequenceTitle": "Remove Consequence",
+      "RemoveConsequenceContent": "<strong>{name}</strong>'s <em>{need}</em> has recovered. Remove <em>{consequence}</em>?",
+      "Remove": "Remove",
+      "Keep": "Keep Active",
+      "ResetAllTitle": "Reset All Needs",
+      "ResetAllContent": "Reset all needs for this character to their default values?",
+      "Apply": "Apply",
+      "SelectNeed": "Select Need",
+      "Amount": "Amount",
+      "QuickStressTitle": "Quick Stress"
+    },
+
+    "SessionFlow": {
+      "WidgetLabel": "Mortal Needs",
+      "NoTracked": "No characters tracked. Use the toolbar to add actors.",
+      "AddActors": "Add Actors",
+      "ToggleNeeds": "Toggle Needs",
+      "Apply": "Apply",
+      "Broadcast": "Show to Players",
+      "BroadcastStop": "Hide from Players",
+      "Flash": "Flash to Players",
+      "BroadcastTitle": "Mortal Needs",
+      "FlashTitle": "Mortal Needs",
+      "ResetAll": "Reset All Needs",
+      "ResetActor": "Reset Needs"
+    },
+
+    "Notifications": {
+      "GMOnly": "Only the GM can perform this action.",
+      "NoTokenSelected": "No token selected.",
+      "NoTargetsSelected": "No targets selected.",
+      "NoNeedsEnabled": "No needs are currently enabled.",
+      "ConfigSaved": "Needs configuration saved.",
+      "ConfigExported": "Configuration exported.",
+      "ConfigImported": "Configuration imported successfully.",
+      "ImportEmpty": "No data to import.",
+      "ImportFailed": "Failed to import configuration.",
+      "PresetApplied": "Preset applied.",
+      "PresetSaved": "Preset saved.",
+      "LongRestComplete": "Long rest complete — all needs reset.",
+      "ShortRestComplete": "Short rest complete — needs partially relieved.",
+      "SceneModifierSet": "Scene modifier updated."
+    },
+
+    "Migration": {
+      "Complete": "Mortal Needs has been upgraded to v2.0. Your data has been migrated automatically.",
+      "Failed": "Mortal Needs migration failed. Check the console for details."
+    },
+
+    "API": {
+      "Description": "Mortal Needs API — Use game.modules.get('mortal-needs').api for programmatic access."
+    },
+
+    "Flavor": {
+      "Hunger": {
+        "Worsening": {
+          "Low": {
+            "1": "A hollow ache settles into the stomach, quiet but insistent.",
+            "2": "Food crosses the mind unbidden — a persistent, low hum of want.",
+            "3": "The body sends its first polite request: it would very much like to eat."
+          },
+          "Medium": {
+            "1": "Hunger has settled in like an unwelcome guest, demanding and impossible to ignore.",
+            "2": "The stomach twists with an urgency that crowds out softer thoughts.",
+            "3": "Concentration frays at the edges — the body's patience wearing dangerously thin."
+          },
+          "High": {
+            "1": "The body begins to rebel, hunger overriding thought and reason alike.",
+            "2": "A deep, animal need claws its way up from the gut, blotting out everything else.",
+            "3": "Hunger sinks its teeth deep, a patient predator that never sleeps."
+          },
+          "Critical": {
+            "1": "The gnawing emptiness becomes a living thing, clawing at the walls of their stomach.",
+            "2": "Their body begins to consume itself, a slow and terrible arithmetic of survival.",
+            "3": "Starvation writes its name in trembling hands and hollowed cheeks."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "The worst of the hunger retreats, but the body still remembers the ache.",
+            "2": "A little sustenance takes the edge off — enough to think, barely enough to move.",
+            "3": "The gnawing eases, though the stomach still growls its protests."
+          },
+          "Medium": {
+            "1": "The hunger dulls to a manageable ache — still present, but no longer commanding.",
+            "2": "Food finds its way to where it's needed most, and the body exhales with quiet relief.",
+            "3": "The fog of starvation lifts, thought returning in slow, welcome waves."
+          },
+          "Low": {
+            "1": "Almost satisfied now. The ordeal fades to a memory the body won't soon forget.",
+            "2": "Strength trickles back as nourishment does its patient, steady work.",
+            "3": "The belly quiets. Not quite full, but no longer screaming."
+          },
+          "Safe": {
+            "1": "Sustenance floods in like rain after drought, every cell singing with relief.",
+            "2": "The first real fullness in ages — the body sags with grateful exhaustion.",
+            "3": "Fed and whole again. The hunger was a nightmare, now mercifully ended."
+          }
+        }
+      },
+      "Thirst": {
+        "Worsening": {
+          "Low": {
+            "1": "A dry tickle at the back of the throat — easy to dismiss, hard to forget.",
+            "2": "The lips feel a touch too dry, the mouth a shade too empty.",
+            "3": "Thirst whispers its first warning, gentle as sand shifting in wind."
+          },
+          "Medium": {
+            "1": "The throat tightens, each swallow a conscious effort against rising dryness.",
+            "2": "Thirst sharpens into something unavoidable, a constant companion demanding attention.",
+            "3": "The tongue begins to stick, thoughts circling inevitably back to water."
+          },
+          "High": {
+            "1": "Every swallow is a razor blade. The body screams for what it cannot have.",
+            "2": "Dehydration draws a veil over the mind — thoughts come slow and sticky as tar.",
+            "3": "The tongue becomes a dead thing, swollen and cracked like sun-baked earth."
+          },
+          "Critical": {
+            "1": "Thirst is the cruelest need — it kills faster and hurts worse than all the others.",
+            "2": "The blood thickens, the heart labors, and every cell cries out for moisture.",
+            "3": "Vision swims. Reality bends. The body is a desert consuming itself."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "A few precious drops ease the worst of it, but the body still aches for more.",
+            "2": "The razor edge of thirst dulls, though the throat still burns.",
+            "3": "Some relief, like the first drops before a storm — not enough, but a promise."
+          },
+          "Medium": {
+            "1": "Water finds its way through parched channels, and the mind begins to clear.",
+            "2": "The desperate edge fades. Swallowing no longer feels like a punishment.",
+            "3": "Hydration returns in careful measures, each sip a small act of mercy."
+          },
+          "Low": {
+            "1": "The crisis passes. The throat remembers what comfort feels like.",
+            "2": "Almost whole again — the body hoards every drop like a miser counting gold.",
+            "3": "Thirst retreats to a whisper, barely audible over the sound of recovery."
+          },
+          "Safe": {
+            "1": "Water hits parched lips like a benediction, spreading life through desiccated veins.",
+            "2": "The relief is so sharp it borders on pain — the body drinking in salvation.",
+            "3": "Fully quenched at last. The memory of thirst lingers like a bad dream."
+          }
+        }
+      },
+      "Exhaustion": {
+        "Worsening": {
+          "Low": {
+            "1": "A yawn that comes from somewhere deep, a gentle tug toward rest.",
+            "2": "The eyelids grow heavy with the first suggestion of fatigue.",
+            "3": "Weariness settles in the limbs like fine sand filling an hourglass."
+          },
+          "Medium": {
+            "1": "Exhaustion wraps around them like a heavy cloak, dulling senses and slowing steps.",
+            "2": "The body moves as though wading through honey — every action requiring twice the effort.",
+            "3": "Focus slips away like water through fingers, fatigue clouding the mind."
+          },
+          "High": {
+            "1": "The weight of consciousness becomes unbearable, gravity pulling at every thought.",
+            "2": "Exhaustion wraps around them like a burial shroud, heavy and inescapable.",
+            "3": "Their bones ache with a fatigue so deep it feels geological."
+          },
+          "Critical": {
+            "1": "The body shuts down in stages, like lights going out one by one in an empty building.",
+            "2": "Consciousness flickers — a candle guttering in a draft it can no longer resist.",
+            "3": "Beyond exhaustion now. The body operates on nothing but desperate, animal stubbornness."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "A brief reprieve. Not enough to restore, but enough to stave off collapse.",
+            "2": "The heaviest weight lifts, though exhaustion still sits in every joint.",
+            "3": "Some energy returns — a trickle where a flood is needed."
+          },
+          "Medium": {
+            "1": "Rest peels away the worst layers of exhaustion like bandages from a healing wound.",
+            "2": "The fog begins to thin. Thoughts form more easily, limbs move more freely.",
+            "3": "Recovery, slow and welcome, seeps into tired muscles."
+          },
+          "Low": {
+            "1": "Energy returns in slow waves, each one reaching a little further into deadened limbs.",
+            "2": "Nearly restored. The body hums with quiet gratitude for the chance to recover.",
+            "3": "Strength rebuilds itself, brick by patient brick."
+          },
+          "Safe": {
+            "1": "Fully rested at last — the world sharpens, colors brighten, thoughts crystallize.",
+            "2": "Vitality surges back like a river finding its course after a drought.",
+            "3": "The exhaustion is gone. Every breath feels like the first one in days."
+          }
+        }
+      },
+      "Cold": {
+        "Worsening": {
+          "Low": {
+            "1": "A chill creeps in at the edges — fingertips, ear tips, the tip of the nose.",
+            "2": "The cold makes itself known with a gentle, persistent shiver.",
+            "3": "Gooseflesh rises unbidden, the body's first quiet alarm."
+          },
+          "Medium": {
+            "1": "The cold tightens its grip, turning breath to mist and joints to rust.",
+            "2": "Shivering becomes involuntary, the body burning fuel it can't afford to spend.",
+            "3": "Warmth retreats to the core, abandoning the extremities to encroaching frost."
+          },
+          "High": {
+            "1": "The cold doesn't bite — it swallows. Numbness spreads like frost across glass.",
+            "2": "Ice crystallizes in the blood, each heartbeat pumping winter deeper.",
+            "3": "Thought slows to a crawl, the cold wrapping around the mind like a frozen fist."
+          },
+          "Critical": {
+            "1": "The shivering stops — a terrible sign. The body has given up generating warmth.",
+            "2": "A treacherous drowsiness descends, the cold's most seductive and lethal trick.",
+            "3": "Flesh turns white at the edges. The body is losing its war with winter."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "A thin thread of warmth — enough to hold on to, not enough to thaw.",
+            "2": "The worst numbness recedes, replaced by the painful sting of returning sensation.",
+            "3": "The shivering intensifies — paradoxically, a good sign. The body fights again."
+          },
+          "Medium": {
+            "1": "Warmth returns in painful increments, thawing frozen nerves back to life.",
+            "2": "The cold loosens its grip, though the chill still sits deep in the bones.",
+            "3": "Feeling returns to the extremities — pins and needles, then blessed warmth."
+          },
+          "Low": {
+            "1": "Nearly warm again. The cold becomes a memory, fading with each passing moment.",
+            "2": "Color returns to pale skin, circulation remembering its ancient routes.",
+            "3": "The body relaxes its desperate grip on its remaining heat. The danger has passed."
+          },
+          "Safe": {
+            "1": "Warmth creeps back like dawn, painful and beautiful in equal measure.",
+            "2": "The cold is vanquished. Every limb tingles with the joy of restored warmth.",
+            "3": "Fully thawed and whole. The frost is nothing but a fading nightmare."
+          }
+        }
+      },
+      "Heat": {
+        "Worsening": {
+          "Low": {
+            "1": "A thin sheen of sweat forms — the body's first acknowledgment of rising heat.",
+            "2": "The warmth presses in, not yet oppressive but no longer comfortable.",
+            "3": "Skin flushes as the body begins its quiet, constant work of cooling."
+          },
+          "Medium": {
+            "1": "The heat presses down like a physical weight, squeezing moisture from every pore.",
+            "2": "Sweat runs freely now, the body desperately dumping heat it cannot contain.",
+            "3": "The air shimmers and thoughts waver, concentration melting in the heat."
+          },
+          "High": {
+            "1": "The air itself becomes hostile, each breath like inhaling from an oven.",
+            "2": "Dizziness swirls as the body's cooling systems begin to fail under the assault.",
+            "3": "The heat is a hammer, and the body is the anvil. Something has to give."
+          },
+          "Critical": {
+            "1": "Sweat dries before it forms. The body cooks from the inside, slow and merciless.",
+            "2": "Vision darkens at the edges. The heat has become a living enemy.",
+            "3": "The body surrenders — muscles cramp, skin burns, consciousness wavers in the inferno."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "A whisper of cool air — barely enough, but the body seizes on it like a lifeline.",
+            "2": "The worst of the heat breaks, though the air still shimmers with residual fury.",
+            "3": "Temperature drops a fraction. The body dares to hope."
+          },
+          "Medium": {
+            "1": "The oppressive weight lifts by degrees, sweat finally doing its intended work.",
+            "2": "Breathing comes easier as the air loses some of its punishing edge.",
+            "3": "The furnace dims. Thought and movement return to something approaching normal."
+          },
+          "Low": {
+            "1": "Cool air washes over heated skin, and the body remembers what comfort means.",
+            "2": "Nearly recovered. The flush fades, the pulse steadies, the world stops wavering.",
+            "3": "The heat retreats, leaving behind only the faint memory of its oppression."
+          },
+          "Safe": {
+            "1": "Cool relief washes over fevered skin, the body's furnace slowly banking.",
+            "2": "The heat is broken. Every cool breeze feels like a gift from merciful gods.",
+            "3": "Temperature returns to blessed normalcy. The ordeal melts away like morning frost."
+          }
+        }
+      },
+      "Comfort": {
+        "Worsening": {
+          "Low": {
+            "1": "A nagging sense of wrongness — the ground too hard, the air too still.",
+            "2": "Discomfort whispers from a dozen small sources, none serious, all irritating.",
+            "3": "The body shifts restlessly, seeking a position that doesn't exist."
+          },
+          "Medium": {
+            "1": "Every surface is wrong. Every position aches. Rest becomes a distant fantasy.",
+            "2": "The body complains in a chorus of small agonies — cramped, sore, unsatisfied.",
+            "3": "Comfort is a memory now, replaced by the constant fidgeting of the miserable."
+          },
+          "High": {
+            "1": "Every surface is wrong. Every position aches. The body has forgotten what ease feels like.",
+            "2": "Misery settles into the joints and won't be dislodged by any shift or stretch.",
+            "3": "The relentless discomfort grinds away at patience and sanity alike."
+          },
+          "Critical": {
+            "1": "Comfort is a word from another life. The body exists only in states of suffering.",
+            "2": "Pain, pressure, heat, cold — the body is assaulted from every angle, with no respite.",
+            "3": "The mind begins to fray under the constant, unrelenting assault of discomfort."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "A small mercy — one less ache, one less source of grinding misery.",
+            "2": "The worst edge dulls, though comfort remains a distant shore.",
+            "3": "Something shifts, and the body finds a fraction of relief in the adjustment."
+          },
+          "Medium": {
+            "1": "The body begins to unclench, finding positions that don't actively punish.",
+            "2": "Comfort returns in fragments — a softer surface, a gentler temperature.",
+            "3": "The constant fidgeting slows. Not comfortable yet, but no longer miserable."
+          },
+          "Low": {
+            "1": "Almost at ease. The last whispers of discomfort fade to background noise.",
+            "2": "The body settles, muscles unknotting one by one like released fists.",
+            "3": "Comfort creeps back like a cat returning to a warm spot — quietly, gratefully."
+          },
+          "Safe": {
+            "1": "Comfort settles in like a warm blanket, muscles unknotting one by one.",
+            "2": "At ease at last. The body sinks into comfort with the relief of a long-held breath released.",
+            "3": "Every ache and pressure point dissolves. Bliss, simple and complete."
+          }
+        }
+      },
+      "Sanity": {
+        "Worsening": {
+          "Low": {
+            "1": "A shadow passes at the edge of vision — there and gone. Probably nothing.",
+            "2": "Thoughts loop in strange patterns, circling truths the mind isn't ready to face.",
+            "3": "The world seems slightly off-kilter, as if viewed through warped glass."
+          },
+          "Medium": {
+            "1": "Reality frays at the edges, threads of certainty unraveling one by one.",
+            "2": "The mind bends under weights it was never built to carry.",
+            "3": "Whispers in the static. Patterns in the chaos. The mind reaches for meaning that isn't there."
+          },
+          "High": {
+            "1": "Shadows whisper truths that sane minds refuse to hear.",
+            "2": "The boundary between real and unreal thins to gossamer — and something presses through.",
+            "3": "Thoughts fracture and reassemble wrong, like a mirror shattered and reglued by alien hands."
+          },
+          "Critical": {
+            "1": "Sanity is a shore receding in the distance, and the current pulls only deeper.",
+            "2": "The mind cracks open and something terrible and beautiful pours in.",
+            "3": "Reality dissolves. What replaces it is worse — and somehow, more true."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "A moment of clarity pierces the fog — brief, fragile, desperately needed.",
+            "2": "The worst visions recede, though their echoes still ring in the hollows of the mind.",
+            "3": "The mind steadies, if only for a moment. A handhold on the cliff face of reason."
+          },
+          "Medium": {
+            "1": "Clarity returns like a lighthouse beam cutting through madness-fog.",
+            "2": "The world begins to make sense again, piece by tentative piece.",
+            "3": "The whispers quiet. The shadows thin. Reality reasserts its familiar, comforting shape."
+          },
+          "Low": {
+            "1": "The fractured pieces of reason slowly reassemble, clicking back into place.",
+            "2": "Nearly whole again. The madness fades like a fever dream in morning light.",
+            "3": "Thought flows clearly once more, a river returning to its proper banks."
+          },
+          "Safe": {
+            "1": "Sanity restored — the world is solid, real, and blessedly ordinary.",
+            "2": "The mind seals its cracks, rebuilding walls that should never have been breached.",
+            "3": "Clarity, complete and brilliant. Whatever darkness touched the mind has been banished."
+          }
+        }
+      },
+      "Morale": {
+        "Worsening": {
+          "Low": {
+            "1": "A quiet sigh escapes — the kind that carries the weight of unspoken doubt.",
+            "2": "Enthusiasm dims by a shade. The road ahead seems longer than it did before.",
+            "3": "A flicker of doubt, small and persistent, like a candle flame in a draft."
+          },
+          "Medium": {
+            "1": "Hope gutters like a candle in a hurricane. Why bother? Why try?",
+            "2": "The weight of it all settles in — not crushing, but heavy, so heavy.",
+            "3": "Purpose drains away like water from a cracked vessel. What's the point?"
+          },
+          "High": {
+            "1": "Despair is a quiet thing — it doesn't scream, it simply... stops.",
+            "2": "The will to push forward crumbles, replaced by a leaden, gray indifference.",
+            "3": "Every small setback feels like confirmation that nothing will ever improve."
+          },
+          "Critical": {
+            "1": "There is nothing left to fight for. The spirit is a gutted building — hollow and cold.",
+            "2": "Hope died somewhere back there. What remains is just... endurance without purpose.",
+            "3": "The eyes go flat. The shoulders sag. The last ember of will winks out."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "Something sparks in the darkness. Small, fragile, but undeniably alive.",
+            "2": "A thin thread of determination — not hope, not yet, but the memory of it.",
+            "3": "The heavy gray lifts by a fraction. Just enough to see one step ahead."
+          },
+          "Medium": {
+            "1": "Morale returns not as a flood, but as a slow sunrise after endless night.",
+            "2": "Purpose stirs, stretching cautiously like an animal emerging from hibernation.",
+            "3": "The road ahead still stretches far, but the will to walk it has returned."
+          },
+          "Low": {
+            "1": "Spirits lift. Laughter becomes possible again — tentative, surprised, real.",
+            "2": "Strength of will rebuilds itself, and the future no longer looks so bleak.",
+            "3": "The weight lifts. The horizon brightens. Purpose flows back in steady currents."
+          },
+          "Safe": {
+            "1": "Morale restored — spirits burn bright, steady, and unshakeable.",
+            "2": "The darkness is past. Conviction returns with a fierce, quiet certainty.",
+            "3": "Hope doesn't just return — it surges, fierce and defiant, daring the world to try again."
+          }
+        }
+      },
+      "Pain": {
+        "Worsening": {
+          "Low": {
+            "1": "A dull throb makes itself known — insistent, like a knock at an unwelcome door.",
+            "2": "Pain announces its arrival quietly, settling in with the patience of an old enemy.",
+            "3": "The body sends its first sharp complaint — a warning shot across the bow."
+          },
+          "Medium": {
+            "1": "Pain becomes a second heartbeat, pulsing bright and relentless.",
+            "2": "Each movement draws a fresh line of fire through protesting nerves.",
+            "3": "The body's protests grow louder, a chorus of injury demanding attention."
+          },
+          "High": {
+            "1": "The body screams in a language older than words.",
+            "2": "Pain becomes the world — everything else is distant, muffled, secondary.",
+            "3": "Agony rewrites priorities. Nothing matters but making it stop."
+          },
+          "Critical": {
+            "1": "Pain transcends sensation and becomes a place — a country with no borders and no exit.",
+            "2": "The body has nothing left but to endure. Pain is the only reality now.",
+            "3": "Beyond screaming, beyond tears. The body shuts down everything non-essential to survive."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "The sharpest edge dulls. Still agonizing, but the body dares to believe it can endure.",
+            "2": "Pain recedes by a fraction — enough to draw a breath that isn't a gasp.",
+            "3": "The worst passes. What remains is still terrible, but survivable."
+          },
+          "Medium": {
+            "1": "The pain retreats to a steady throb — constant, but no longer overwhelming.",
+            "2": "Nerves quiet their screaming to a persistent, manageable complaint.",
+            "3": "Movement becomes possible again, though each action is still a negotiation with pain."
+          },
+          "Low": {
+            "1": "The pain fades to a dull echo, easily ignored if not dwelt upon.",
+            "2": "Relief washes through overtaxed nerves, the body slowly unclenching.",
+            "3": "Almost pain-free. The body holds its breath, scarcely daring to believe."
+          },
+          "Safe": {
+            "1": "The pain recedes like a tide, leaving behind the strange euphoria of its absence.",
+            "2": "Pain-free at last. The body trembles with the relief of it.",
+            "3": "Gone. Every nerve sighs with a gratitude that borders on the sacred."
+          }
+        }
+      },
+      "Radiation": {
+        "Worsening": {
+          "Low": {
+            "1": "A faint metallic taste blooms on the tongue — the first invisible warning.",
+            "2": "The air carries something wrong, felt before it's understood.",
+            "3": "A subtle nausea stirs, sourceless and unsettling."
+          },
+          "Medium": {
+            "1": "Invisible fire rewrites their DNA one strand at a time. The body doesn't know it's dying yet.",
+            "2": "Nausea rolls in waves, and the skin prickles with an energy that shouldn't be there.",
+            "3": "The body's repair systems scramble to fix damage that keeps arriving faster than healing."
+          },
+          "High": {
+            "1": "Cells mutiny, splitting and twisting into something wrong.",
+            "2": "Blood rebels against its own purpose as radiation tears through tissue and marrow.",
+            "3": "The body wages a silent, desperate war against an enemy it cannot see or touch."
+          },
+          "Critical": {
+            "1": "The damage is deep, cellular, fundamental. The body breaks down at the level of blueprint.",
+            "2": "Radiation burns from the inside — a fire without smoke, a wound without a weapon.",
+            "3": "Life itself begins to unravel, the fundamental code of being corrupted beyond repair."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "The invisible assault eases — still dangerous, but the body's defenses rally.",
+            "2": "Exposure drops, and the body seizes the chance to shore up its crumbling defenses.",
+            "3": "The nausea retreats a fraction, though the damage already done lingers."
+          },
+          "Medium": {
+            "1": "Cells cautiously resume their ordered dance, healing what the radiation broke.",
+            "2": "The metallic taste fades, and with it the worst of the nausea.",
+            "3": "The body's repair systems gain ground, patching damage faster than it accumulates."
+          },
+          "Low": {
+            "1": "The invisible poison fades, cells cautiously resuming their ancient, ordered dance.",
+            "2": "Recovery continues — slow, cellular, measured in molecules rather than moments.",
+            "3": "Nearly clean. The body's natural resilience slowly erases the invisible scars."
+          },
+          "Safe": {
+            "1": "Clear of contamination at last. The body rebuilds what was broken, cell by patient cell.",
+            "2": "The radiation is gone. What remains is healing — slow, steady, and profoundly welcome.",
+            "3": "Clean. Safe. The body trembles with relief, its cells no longer under siege."
+          }
+        }
+      },
+      "Corruption": {
+        "Worsening": {
+          "Low": {
+            "1": "A dark thought surfaces — unfamiliar, unwelcome, strangely compelling.",
+            "2": "Something shifts in the shadows of the soul, a weight that wasn't there before.",
+            "3": "The faintest stain spreads at the edge of consciousness, barely perceptible."
+          },
+          "Medium": {
+            "1": "Something dark takes root, growing tendrils through the soul like black ivy.",
+            "2": "The darkness whispers, and the terrible thing is — it starts to make sense.",
+            "3": "A corruption of purpose creeps in, twisting noble instincts toward darker ends."
+          },
+          "High": {
+            "1": "The corruption spreads like ink in water — slow, beautiful, and fatal.",
+            "2": "The soul strains under a weight it was never meant to bear, cracks spreading through its foundation.",
+            "3": "Right and wrong blur together. The darkness offers clarity the light never could."
+          },
+          "Critical": {
+            "1": "The corruption is nearly complete. What remains of the original soul is just a thin veneer.",
+            "2": "Darkness fills every corner, every crevice. The soul drowns in black water.",
+            "3": "The taint has won. What looks back from behind those eyes is no longer entirely human."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "A flicker of light in the dark — not much, but enough to remember what was lost.",
+            "2": "The grip of corruption loosens by a fraction, and the soul gasps for air.",
+            "3": "Something pure surfaces, struggling against the dark tide."
+          },
+          "Medium": {
+            "1": "Light scours the darkness, burning away corruption like morning mist.",
+            "2": "The soul shakes off some of its chains. The whispers grow quieter.",
+            "3": "Clarity returns in patches, like sunlight breaking through storm clouds."
+          },
+          "Low": {
+            "1": "The stain fades to almost nothing — a shadow of a shadow, easily ignored.",
+            "2": "The soul reasserts itself, pushing the last remnants of darkness to the margins.",
+            "3": "Nearly clean. The corruption retreats, hissing, from the light."
+          },
+          "Safe": {
+            "1": "Purified. The soul shines again, unmarked and unbowed by the darkness that tested it.",
+            "2": "The corruption is gone — banished, burned away, leaving only clean light.",
+            "3": "Whole again, and stronger for the trial. The darkness found no permanent purchase."
+          }
+        }
+      },
+      "Fatigue": {
+        "Worsening": {
+          "Low": {
+            "1": "A gentle heaviness in the limbs — the body's quiet request for a slower pace.",
+            "2": "Energy levels dip, like a well drawing lower with each bucket.",
+            "3": "The first tendrils of fatigue wrap around the muscles, soft but insistent."
+          },
+          "Medium": {
+            "1": "The world blurs at the edges as fatigue draws its curtain.",
+            "2": "Muscles turn to lead, thoughts to molasses. Everything requires twice the effort.",
+            "3": "Fatigue settles in like a fog, blurring edges and slowing reflexes."
+          },
+          "High": {
+            "1": "The body moves on borrowed time, each action paying interest on a growing debt.",
+            "2": "Fatigue becomes a physical thing — a weight strapped to every limb, a chain on every thought.",
+            "3": "Reactions slow to a crawl. The body operates on fumes and stubbornness alone."
+          },
+          "Critical": {
+            "1": "The tank is empty. The body runs on nothing but sheer, desperate will.",
+            "2": "Collapse looms — inevitable, unavoidable. The body has given everything it has.",
+            "3": "Fatigue wins its war of attrition. Even standing requires a kind of heroism."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "A small reserve, scraped from the bottom of the barrel. It won't last, but it helps.",
+            "2": "The heaviest chains of fatigue loosen, though the body still staggers under the load.",
+            "3": "Some energy returns — not enough to thrive, but enough to survive."
+          },
+          "Medium": {
+            "1": "Vitality seeps back in, quiet and steady as a turning tide.",
+            "2": "The fog of fatigue begins to lift, revealing a world that was always there.",
+            "3": "Strength returns in welcome increments, each one a small victory."
+          },
+          "Low": {
+            "1": "Energy rebuilds steadily, the body's reserves slowly filling back up.",
+            "2": "Nearly restored. The body hums with quiet gratitude for the chance to recover.",
+            "3": "Fatigue becomes a whisper, easily drowned out by returning vigor."
+          },
+          "Safe": {
+            "1": "Fully recharged. The body surges with the energy of complete recovery.",
+            "2": "Fatigue is a distant memory. Every muscle responds with eager readiness.",
+            "3": "Restored, revitalized, ready. The body remembers what it feels like to be whole."
+          }
+        }
+      },
+      "Environmental": {
+        "Worsening": {
+          "Low": {
+            "1": "The environment shifts — a subtle wrongness in the air, in the ground, in the light.",
+            "2": "Something about this place sets the nerves on edge, though it's hard to say what.",
+            "3": "The surroundings press in with a vague, unfocused hostility."
+          },
+          "Medium": {
+            "1": "The environment turns hostile, pressing in from all sides.",
+            "2": "The world grows teeth — sharp edges, harsh surfaces, an unforgiving landscape.",
+            "3": "Every element conspires: the terrain punishes, the air resists, the ground begrudges each step."
+          },
+          "High": {
+            "1": "Nature shows its teeth — indifferent, merciless, absolute.",
+            "2": "The environment is no longer a setting — it's an adversary, and a patient one.",
+            "3": "Survival becomes the only thought as the world itself becomes a weapon."
+          },
+          "Critical": {
+            "1": "This place is actively trying to kill them. Every moment of survival is a small miracle.",
+            "2": "The environment reaches its breaking point — or rather, theirs. Something has to give.",
+            "3": "Beyond hostile. The world is a machine of destruction, and they are caught in its gears."
+          }
+        },
+        "Improving": {
+          "High": {
+            "1": "The environment relents by a fraction — enough to catch a breath, plan a next move.",
+            "2": "The worst of the assault passes, though the surroundings remain far from friendly.",
+            "3": "A thin margin of safety opens. Not comfortable, but survivable."
+          },
+          "Medium": {
+            "1": "The pressure eases. The world remembers how to be kind.",
+            "2": "Conditions improve — still challenging, but no longer threatening.",
+            "3": "The environment shifts from enemy to obstacle. Manageable, if unpleasant."
+          },
+          "Low": {
+            "1": "The surroundings soften toward something approaching habitable.",
+            "2": "Almost comfortable. The environment withdraws its hostility to a low grumble.",
+            "3": "Conditions normalize. The worst is clearly past."
+          },
+          "Safe": {
+            "1": "The environment settles into calm. Safe ground, breathable air, solid footing.",
+            "2": "All clear. The world is hospitable once more, and every sense relaxes with relief.",
+            "3": "Safety, genuine and complete. The environment is no longer a concern."
+          }
+        }
+      }
+    }
+  }
+}

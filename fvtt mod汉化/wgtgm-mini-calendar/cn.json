@@ -1,0 +1,22 @@
+
+  "wgtgm-mini-calendar": {
+	"welcomePageHTML" : "<div> <p><strong>欢迎使用Mini Calendar</strong></p> <hr> <p><strong>加入Mini Calendar社区</strong></p> <p>欢迎加入我们的 Discord 社区。</p> <div><button data-wgtngm=\"wgtgm-mini-calendar|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> 加入 Discord</button></div> <p> <strong>支持开发</strong></p> <p>如果你想支持本模块的开发，可以考虑在 Patreon 上查看会员选项。</p> <div><button data-wgtngm=\"wgtgm-mini-calendar|openWindow|https://patreon.com/wgtngm\"><i class=\"fa-brands fa-patreon\"></i> 成为会员</button></div><p>你也可以通过 Ko-fi 进行支持。</p><div><button data-wgtngm=\"wgtgm-mini-calendar|openWindow|https://ko-fi.com/wgtngm\"><i class=\"fas fa-cup-togo\"></i> 请我喝杯咖啡</button></div><p><strong>文档</strong></p> <p>感觉有点迷茫？前往我们的文档页面查看指引，或直接加入 Discord 提问。</p> <div><button data-wgtngm=\"wgtgm-mini-calendar|openWindow|https://campaigncodex.wgtngm.com/minicalendar\"><i class=\"fas fa-book\"></i> 查看文档</button></div></div>",
+    "WindowName": "Mini Calendar",
+    "settings": {
+      "calSheetDimensions": "日历位置",
+      "calSheetDimensionsHint": "存储日历的最后位置和大小。",
+	  "calHudOpened": "日历HUD打开状态",
+	  "calHudOpenedHint": "存储上次关闭FVTT时日历HUD是否打开。",
+      "calSheetOpened": "日历打开状态",
+      "calSheetOpenedHint": "存储你上次关闭FVTT时日历是否打开。",
+      "pauseOnCombat": "战斗时暂停时间",
+      "pauseOnCombatHint": "在战斗期间停止时钟。",
+      "resumeAfterCombat": "战斗后恢复时间",
+      "resumeAfterCombatHint": "战斗结束后恢复时钟。",
+      "fadedUIHint":"日历界面将在鼠标悬停前保持淡出状态",
+      "fadedUI":"启用界面淡出",
+      "hideHudonCombat": "战斗时隐藏HUD",
+	  "hideHudonCombatHint": "在战斗期间隐藏HUD，战斗结束时重新打开。"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+    "epic-rolls-5e": {
+        "check": "Check",
+        "save": "Save",
+        "death": "Death",
+        "success": "Success",
+        "failure": "Failure",
+        "button-tooltip": "Configure Epic Roll<hr>Right click for recent rolls",
+        "complete-roll": "Conclude Epic Roll",
+        "epicRoll": "Epic Roll",
+        "settings": {
+            "introSound": {
+                "name": "Intro Sound",
+                "hint": "The sound to play when the roll is started"
+            },
+            "successSound": {
+                "name": "Success Sound",
+                "hint": "The sound to play when the roll is successful"
+            },
+            "failureSound": {
+                "name": "Failure Sound",
+                "hint": "The sound to play when the roll is a failure"
+            },
+            "recapMessage": {
+                "name": "Recap Message",
+                "hint": "Configure who can see the message displayed once the epic roll is complete",
+                "options": {
+                    "none": "None",
+                    "gm": "GM",
+                    "public": "Public"
+                }
+            },
+            "cleanupMessages": {
+                "name": "Cleanup Messages",
+                "hint": "Delete the roll messages after the epic roll is complete"
+            }
+        },
+        "get-roll-data": {
+            "customFormula": "Custom Formula",
+            "customLabel": "Label",
+            "customLabelNotes": "Custom intro label for the roll",
+            "formula": "Formula",
+            "title": "Configure Epic Roll",
+            "startRoll": "Start Epic Roll",
+            "macro": "Save to Macro",
+            "save-macro": "Created Epic Roll macro for ",
+            "player": "Player Character",
+            "npc": "Non-Player Character",
+            "selected": "Selected",
+            "available": "Available",
+            "rollOptions": "Roll Options",
+            "VsDCNotes": "The DC for the roll",
+            "showDC": "Show DC",
+            "showDCNotes": "When enabled, the DC will be visible to players",
+            "useAverage": "Use Average",
+            "useAverageNotes": "Use the average of all results to determine success or failure",
+            "allowReroll": "Allow Reroll",
+            "allowRerollNotes": "Allow players to reroll their roll",
+            "showRollResults": "Show Outro Text",
+            "showRollResultsNotes": "Show the Success/Failure outro text",
+            "blindRoll": "Blind Roll",
+            "blindRollNotes": "Hide the results of the rolls from players",
+            "hideNames": "Hide Names",
+            "hideNamesNotes": "Hide the names of non player owned actors from players",
+            "color": "Color",
+            "colorNotes": "The color of the roll banner",
+            "autoColor": "Auto Color",
+            "autoColorNotes": "Automatically color the roll banner based on the type of roll",
+            "contest": "Contest",
+            "contestInfo": "To mark contestants, right click an actor and/or a roll",
+            "saveDefaultOptions": "Save as Default",
+            "saveDefaultOptionsNotification": "Current options saved as default",
+            "ERROR": {
+                "noActors": "No actors selected for the roll, please select at least one actor",
+                "noType": "No type selected for the roll, please select a type",
+                "noContestants": "A contested roll type was selected but no contestants were selected",
+                "noContest": "Contestants were selected but no contest type was selected",
+                "noDC": "No DC was entered for the roll, please enter a DC"
+            }
+        },
+        "flags": {}
+    }
+}

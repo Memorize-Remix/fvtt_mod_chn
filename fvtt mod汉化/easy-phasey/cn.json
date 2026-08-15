@@ -1,0 +1,34 @@
+
+  "fep": {
+    "windowTitle": "Easy Phasey - 配置阶段",
+    "notifications": {
+      "noValidScenes": "Easy Phasey: 未找到其他有效场景。",
+      "masterSceneNotActive": "Easy Phasey: 为什么阶段没有改变？因为你没有查看激活场景。",
+      "noValidFolder": "在配置阶段地图之前，你必须至少有一个包含场景的文件夹。"
+    },
+    "labels": {
+      "skipped": "已跳过",
+      "mergeTokens": "合并Token",
+      "save": "保存",
+      "saveActivate": "保存并激活",
+      "phaseScenes": "阶段场景",
+      "chooseFolder": "选择文件夹",
+      "phaseFolder": "阶段文件夹",
+      "masterScene": "主场景",
+      "currentPhase": "当前阶段"
+    },
+    "controls": {
+      "nextPhase": "下一阶段",
+      "prevPhase": "上一阶段"
+    },
+    "tooltips": {
+      "mergeTokens": "将新阶段的任何Token与前一阶段的Token合并。如果关闭，场景中现有的Token将被移除，只有来自前一阶段的Token会出现。"
+    },
+    "keybindings": {
+      "prevPhase": "上一阶段",
+      "prevPhaseHelp": "移动到顺序中的上一阶段（将循环切换）",
+      "nextPhase": "下一阶段",
+      "nextPhaseHelp": "移动到顺序中的下一阶段（将循环切换）"
+    }
+  }
+}

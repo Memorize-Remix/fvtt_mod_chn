@@ -1,0 +1,71 @@
+{
+  "QUICKBRUSH": {
+    "Title": "Quickbrush Image Generator",
+    "ButtonLabel": "Generate Image",
+    "JournalButton": "Create with Quickbrush",
+    "Settings": {
+      "CoreLibraryUrl": {
+        "Name": "Core Library URL",
+        "Hint": "URL to load the quickbrush-core.js library from. Change this to use a custom or updated version. Default: https://quickbrush.ai/js/quickbrush-core.js"
+      },
+      "OpenAIApiKey": {
+        "Name": "OpenAI API Key",
+        "Hint": "Your OpenAI API key. Get one at https://platform.openai.com/api-keys"
+      },
+      "ImageModel": {
+        "Name": "Image Model",
+        "Hint": "Which OpenAI image model to use. Mini is faster and cheaper, Standard is higher quality.",
+        "Choices": {
+          "mini": "GPT-Image-1-Mini (Faster, Cheaper)",
+          "standard": "GPT-Image-1 (Higher Quality)"
+        }
+      },
+      "SaveFolder": {
+        "Name": "Image Save Folder",
+        "Hint": "Folder name where generated images will be saved (default: quickbrush-images)"
+      }
+    },
+    "Dialog": {
+      "Title": "Generate Image with Quickbrush",
+      "Description": "Description",
+      "DescriptionPlaceholder": "Long-form text (e.g., journal entry, character background). May contain irrelevant details - we'll focus on physical description.",
+      "ImageName": "Image Name",
+      "Prompt": "Context Prompt (optional)",
+      "PromptPlaceholder": "e.g., 'wearing a red cloak', 'in a defensive stance', 'at sunset'",
+      "Type": "What do you want to paint?",
+      "Types": {
+        "character": "🎭 Character",
+        "scene": "🌄 Scene",
+        "creature": "🐉 Creature",
+        "item": "🗡️ Item"
+      },
+      "Quality": "Quality",
+      "Qualities": {
+        "low": "Low (Standard)",
+        "medium": "Medium (Standard)",
+        "high": "High (HD)"
+      },
+      "AspectRatio": "Aspect Ratio",
+      "AspectRatios": {
+        "square": "Square (1024x1024)",
+        "landscape": "Landscape (1792x1024)",
+        "portrait": "Portrait (1024x1792)"
+      },
+      "Generate": "Generate Image",
+      "Cancel": "Cancel"
+    },
+    "Notifications": {
+      "NoApiKey": "Please set your OpenAI API key in module settings",
+      "Generating": "Generating image with Quickbrush. We'll notify you when it's ready!",
+      "Success": "Image generated successfully!",
+      "Error": "Failed to generate image: {error}",
+      "Saved": "Image saved to {folder}",
+      "GalleryUpdated": "Quickbrush Gallery updated"
+    },
+    "Gallery": {
+      "Title": "Quickbrush Gallery",
+      "Description": "This journal contains all images generated with Quickbrush.",
+      "EntryTemplate": "<h2>{type} - {date}</h2><p><strong>Description:</strong> {description}</p><p><strong>Quality:</strong> {quality} | <strong>Aspect Ratio:</strong> {aspectRatio}</p><img src=\"{imageUrl}\" alt=\"{description}\" style=\"max-width: 100%; height: auto;\" /><hr>"
+    }
+  }
+}

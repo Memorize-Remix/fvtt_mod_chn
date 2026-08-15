@@ -1,0 +1,84 @@
+{
+  "physical-dice-rolls": {
+    "settings": {
+      "gmOnly": {
+        "name": "GM Only",
+        "hint": "If enabled, only the GM will be able to roll manually. When this setting is enabled, the module will be undetectable by players."
+      },
+      "manualRollMode": {
+        "name": "Manual Roll Mode",
+        "hint": "If enabled, you will have to click the roll button to roll the dice. If disabled, the dice will roll automatically when you release them.",
+        "choices": {
+          "0": "Never",
+          "1": "Always",
+          "2": "Ask"
+        }
+      },
+      "disableInCombat": {
+        "name": "Disable In Combat",
+        "hint": "If enabled, the module will be disabled during combat."
+      },
+      "position": {
+        "name": "Position",
+        "hint": "The position of the Physical Dice Rolls window.",
+        "choices": {
+          "default": "Center",
+          "chat": "Chat Box"
+        }
+      },
+      "enableTotalBox": {
+        "name": "Enable Total Box",
+        "hint": "If enabled, a box will be shown where you can enter the total of the roll. The module will then generate a roll that adds up to that total."
+      },
+      "showFormula": {
+        "name": "Show Formula",
+        "hint": "If enabled, the formula of the roll will be shown in the top of the manual roll window."
+      },
+      "showMessage": {
+        "name": "Show Message",
+        "hint": "If enabled, a message will be shown in the chat to the GM when a player rolls manually."
+      },
+      "showMessagePlayers": {
+        "name": "Show Message To Players",
+        "hint": "If enabled, the message will be shown to players as well."
+      },
+      "messageColor": {
+        "name": "Message Color",
+        "hint": "The color of the message shown in the chat to the GM when a player rolls manually."
+      },
+      "useTheme": {
+        "name": "Use Theme",
+        "hint": "If enabled, the Physical Dice Rolls window will use a custom theme"
+      },
+      "themeColor": {
+        "name": "Theme Color",
+        "hint": "The accent color of the theme."
+      },
+      "realDiceConfig": {
+        "name": "Dice Configuration",
+        "hint": "Configure which dice should be rolled manually",
+        "label": "Configure"
+      }
+    },
+    "real-roll": {
+      "title": "Physical Dice Rolls",
+      "realRollMessage": "has rolled manually.",
+      "totalBoxMessage": "Enter the total of the roll instead of individual results."
+    },
+    "flags": {},
+    "buttons": {
+      "realRollToggle": {
+        "tooltips": {
+          "0": "Manual Roll Mode: Disabled<hr> All rolls will be automatic.",
+          "1": "Manual Roll Mode: Enabled<hr> All rolls will be manual.",
+          "2": "Manual Roll Mode: Ask<hr> You will be asked if you want to roll manually or automatically."
+        }
+      }
+    },
+    "keybindings": {
+      "toggleRollMode": {
+        "name": "Toggle Manual Roll Mode"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+
+	"pings": {
+		"settings": {
+			"minMovePermission": {
+				"title": "最小移动权限",
+				"hint": "允许用户通过Ping标记移动屏幕的最低权限。例如，若选择'GM助手'，则只有GM和GM助手可以执行会移动所有人屏幕的Ping标记操作。"
+			},
+			"mouseButton": {
+				"title": "Ping标记触发鼠标按键",
+				"hint": "需要按住指定时长(可配置)来执行Ping标记的鼠标按键。在此字段按下你想要的鼠标按键(可配合shift/ctrl等修饰键)，按ESC键可清除设置。"
+			},
+			"mouseButtonMove": {
+				"title": "屏幕移动Ping标记的鼠标按键",
+				"hint": "需要按住指定时长(可配置)来执行会移动所有玩家屏幕的Ping标记的鼠标按键。在此字段按下你想要的鼠标按键(可配合shift/ctrl等修饰键)，按ESC键可清除设置。"
+			},
+			"mouseButtonDuration": {
+				"title": "鼠标按键按住时长",
+				"hint": "触发Ping标记需要按住鼠标按键的毫秒数。"
+			},
+			"key": {
+				"title": "Ping标记触发按键",
+				"hint": "在鼠标当前位置执行Ping标记的按键。在此字段按下你想要的按键(可配合shift/ctrl等修饰键)，按ESC键可清除设置。"
+			},
+			"keyMove": {
+				"title": "屏幕移动Ping标记的按键",
+				"hint": "在鼠标当前位置执行会移动所有玩家屏幕的Ping标记的按键。在此字段按下你想要的按键(可配合shift/ctrl等修饰键)，按ESC键可清除设置。"
+			},
+			"showName": {
+				"title": "显示玩家名称",
+				"hint": "是否在Ping标记下方显示玩家名称。"
+			},
+			"image": {
+				"title": "Ping标记图像",
+				"hint": "用作默认Ping标记替代的图像。将根据玩家颜色应用色调，因此非灰度图像可能显示效果不佳。"
+			},
+			"scale": {
+				"title": "缩放",
+				"hint": "Ping标记的显示大小(以网格为单位)。"
+			},
+			"duration": {
+				"title": "持续时间",
+				"hint": "Ping标记显示的时长(秒)。"
+			},
+			"rotate": {
+				"title": "旋转",
+				"hint": "Ping标记图像是否应该旋转。"
+			},
+			"rotateSpeed": {
+				"title": "旋转速度",
+				"hint": "Ping标记图像完成360度旋转所需的秒数。"
+			},
+			"sizeChange": {
+				"title": "大小变化",
+				"hint": "Ping标记图像是否应该轻微改变大小。"
+			},
+			"sizeChangeAmount": {
+				"title": "大小变化幅度",
+				"hint": "总大小应该改变多少。"
+			},
+			"sizeChangeSpeed": {
+				"title": "大小变化速度",
+				"hint": "完成一次大小变化周期所需的秒数。"
+			},
+			"handledByPings": "由\"Pings\"模组处理"
+		}
+	}
+}

@@ -1,0 +1,207 @@
+
+
+  "foundrytodiscord": {
+    "name": "Foundry to Discord",
+    "description": "将 FVTT 消息发送到 Discord 的模组。",
+    "ready": "准备就绪。",
+    "server": {
+      "stateOffline": "Foundry to Discord | 服务器状态设置为离线",
+      "stateOfflineMessage": "服务器状态已设置为离线。"
+    },
+    "error": {
+      "editingEmbed": "编辑嵌入时出错：{status} {statusText}",
+      "parserEmptyResult": "解析器返回了空结果。",
+      "unknownRequestMethod": "未知的请求方法。",
+      "getMessageInfo": "获取消息信息时出错：",
+      "sendToDiscord": "尝试发送到 Discord 时发生错误。请检查 F12 查看日志。",
+      "generic": "发生错误。",
+      "inviteURLNotSet": "邀请链接未设置！",
+      "failedParsing": "解析后发送消息失败：解析器返回空结果。",
+      "sendingToDiscord": "尝试发送到 Discord 时发生错误。请检查 F12 查看日志。"
+    },
+    "warning": {
+      "inviteURLNotSet": "你的邀请链接未设置！Discord 上无法显示头像图片。"
+    },
+    "info": {
+      "sendToDiscordSuccess": "已成功发送到 Discord 玩家笔记。",
+      "mediaLinksFound": "找到链接。正在从以下来源添加媒体：{links}",
+      "successfullySent": "已成功发送到 Discord。",
+      "attemptingRequest": "正在尝试 {method} 请求...",
+      "unsuccessfulAttempt": "尝试 {msgChange} 消息失败，因为该消息在 Discord 上不存在。"
+    },
+    "autoping": {
+      "title": "自动提及映射工具",
+      "description": "这是一个在聊天中提及 @用户名 时自动提及 Discord 用户的工具。输入关键词（区分大小写）并为其分配 Discord 用户 ID 或角色 ID。当该关键词在 FVTT 聊天中被提及时，例如关键词 foo，在聊天中以 @foo 形式被提及时，对应的提及将替换该关键词。要获取 ID，只需右键单击用户或角色，然后复制 ID。需要启用开发者模式才能使用此功能。",
+      "selectType": "选择类型",
+      "user": "用户",
+      "role": "角色",
+      "delete": "删除"
+    },
+    "threadedchat": {
+      "title": "场景-线程映射",
+      "description": "选择一个场景，并将其与 Discord 线程关联！来自场景的所有聊天将被定向到关联的线程，并将覆盖你的默认 Webhook URL 或掷骰 Webhook URL。要获取线程的 ID，只需在 Discord 中右键单击你的线程，然后复制线程 ID。确保你的 Discord 处于开发者模式。发送到聊天线程 ID 和掷骰线程 ID 的消息将分别发送到你的主 webhook URL 和掷骰 webhook URL 中的线程。你可以留空其中任何一个，但如果你想更新线程 ID，必须先删除该条目。",
+      "selectScene": "选择场景",
+      "delete": "删除"
+    },
+    "modulePrefix": "Foundry to Discord",
+    "logs": {
+      "inviteURLNotSet": "你的邀请链接未设置！图片未发送。",
+      "serverStateOffline": "服务器状态设置为离线",
+      "errorEditingEmbed": "编辑嵌入时出错：{status} {statusText}",
+      "systemDetected": "检测到游戏系统为 '{systemId}'。",
+      "systemNotSupported": "游戏系统 '{systemId}' 不完全支持。使用 '通用' 模式。",
+      "systemNotSupportedRollEmbeds": "系统 \"{systemId}\" 不支持特殊掷骰嵌入。",
+      "autoUuidEmbedItemNotExist": "无法生成自动 UUID 嵌入，原因：项目不存在。",
+      "limitingTo10Pages": "限制为 10 页...",
+      "couldNotParseDice": "由于独特的掷骰结构，无法解析骰子。",
+      "deletingMessagesQuickly": "你正在尝试快速删除 2 条或更多消息。正在思考...",
+      "deletionRescuePartyTriggered": "触发删除救援队！检测到超过 10 个同时删除。",
+      "deletionRescuePartyMessage": "ඞඞඞඞඞ 你呼叫了吗？我们将清理消息队列！ඞඞඞඞඞ",
+      "requestQueueCleared": "请求队列已清除。5 秒后进行下一个请求...",
+      "deletionRescuePartyNotTriggered": "未触发删除救援队。继续...",
+      "requestSucceeded": "{method} 请求成功。",
+      "rateLimitExceeded": "超出速率限制！{seconds} 秒后进行下一个请求。",
+      "fetchError": "获取错误：{status}",
+      "requestDiscarded": "请求在重试 2 次后从队列中丢弃。",
+      "retrying": "正在重试...",
+      "autoPingConfigRendering": "[自动提及配置] 使用 autoPingMap 渲染：",
+      "attemptingEditServerStatus": "正在尝试编辑服务器状态...",
+      "falseAlarmResetServerStatus": "误报...正在重置服务器状态。",
+      "polyglotFailedLanguagePath": "未能找到具有指定语言路径 \"{path}\" 的玩家拥有角色，用于Polyglot集成。",
+      "polyglotIntegrationFailed": "Polyglot集成失败，错误：{error}"
+    },
+    "notifications": {
+      "errorSendingToDiscord": "尝试发送到 Discord 时发生错误。请检查 F12 查看日志。",
+      "successfullySentToDiscord": "已成功发送到 Discord。",
+      "journalPageNotSupported": "不支持此日志页面类型。",
+      "journalPagesNotSupported": "一个或多个日志页面不支持自动发送到 Discord。仅支持文本和图片。",
+      "editLongerThanDiscordMessages": "Foundry to Discord 尝试编辑消息，但生成的编辑内容比链接到该消息的 Discord 消息数量更长。",
+      "fillOutAllFields": "请填写所有字段。"
+    },
+    "loginMonitor": {
+      "userConnectionStatus": "用户 {userName} {action} {direction} {worldTitle}。__**({activeUsers}/{totalUsers})**__",
+      "adminClosedServer": "管理员已关闭服务器。"
+    },
+    "statusMonitor": {
+      "setupTitle": "服务器状态设置说明",
+      "setupDescription": "**重要**：此模组的一个限制是，只有在GM账号在线时才能检测到你的世界在线。还需要使用命令 'ftd serveroff' 将此消息设置为离线。\n\n**步骤 1：** 固定此消息，以便每个人都能在你的频道上轻松找到它。\n**步骤 2：** 右键单击此消息，然后单击 **\"复制消息 ID\"**。你的 Discord 应用必须启用 **用户设置 > 高级 > 开发者模式** 才能显示此选项。\n**步骤 3：** 转到 **配置设置 > Foundry to Discord > 服务器状态消息 ID** 并 **粘贴** 从步骤 2 复制的 ID。之后，保存你的设置，它应该会提示你的世界重新启动。\n**步骤 4：** 在你的世界重新启动后再次查看此消息。它应该显示为正确的服务器状态消息。",
+      "serverStatusTitle": "服务器状态：{worldId}",
+      "onlineStatus": "## 在线",
+      "offlineStatus": "## 离线",
+      "inviteLink": "**邀请链接：**{inviteURL}",
+      "activeUsers": "__**{activeUsers}/{totalUsers} 在线用户**__",
+      "offlineFooter": "让 GM 在 FVTT 中输入 \"ftd serveroff\" 将你的服务器状态设置为离线。这将持续到下次 GM 登录为止。"
+    },
+    "settings": {
+      "inviteURL": {
+        "name": "游戏邀请链接",
+        "hint": "这应该是你游戏会话的互联网邀请链接。确保域名是公开的！要测试你的链接是否有效，请访问 <https://yourinviteurl.example>/modules/foundrytodiscord/src/images/defaultavatar.png（当然不包括 <>）。如果你访问托管此图片的链接，它应该显示为默认的 FVTT 图标！"
+      },
+      "webHookURL": {
+        "name": "Webhook URL",
+        "hint": "这应该是你想要发送聊天消息的 Discord 频道的 Webhook URL。留空以使 Foundry to Discord 忽略常规聊天消息。"
+      },
+      "rollWebHookURL": {
+        "name": "掷骰 Webhook URL",
+        "hint": "这是你希望掷骰在 Discord 中出现的任何地方的 webhook。留空以使 Foundry to Discord 忽略掷骰。你可以将其设置为与上述相同的 webhook URL。"
+      },
+      "serverStatusMessage": {
+        "name": "启用服务器状态消息",
+        "hint": "切换此选项以启用你的世界检测何时在线。当服务器重新启动时，如果你已设置 Webhook 链接和邀请链接，它将发送有关如何设置此功能的说明。在此设置开启后返回此设置页面。"
+      },
+      "messageID": {
+        "name": "服务器状态消息 ID",
+        "hint": "当模组检测到你的世界在线或离线时将编辑的消息的消息 ID。按照发送到你设置 webhook 的频道的说明操作。留空将在重新启动后向你的 webhook 发送新的说明消息。"
+      },
+      "showInvite": {
+        "name": "显示邀请链接",
+        "hint": "开启此选项后，服务器状态消息将包含你世界的公共邀请链接。"
+      },
+      "userMonitor": {
+        "name": "监控用户登录/登出",
+        "hint": "如果用户连接或断开连接，Foundry to Discord 将向你的 webhook 发送消息。"
+      },
+      "prettierEmojis": {
+        "name": "使用外部表情符号",
+        "hint": "通过允许模组使用来自其他 Discord 服务器的外部表情符号来增强你的体验！确保你频道/服务器中的 @everyone 权限设置为启用外部表情符号。"
+      },
+      "ignoreWhispers": {
+        "name": "忽略私聊和暗骰",
+        "hint": "关闭此选项将允许 Foundry to Discord 检测私聊和暗骰，并将它们像任何其他消息一样发送到你的 webhook。"
+      },
+      "allowNoGM": {
+        "name": "允许 GM 不在线的聊天镜像",
+        "hint": "即使 GM 不在线中，Foundry to Discord 也会镜像消息。"
+      },
+      "allowPlayerSend": {
+        "name": "为所有人启用\"发送到 Discord\"",
+        "hint": "这将允许玩家在聊天消息上使用\"发送到 Discord\"右键菜单选项，以及\"发送到玩家笔记\"右键菜单选项（如果你填写了\"玩家笔记 Webhook URL\"）。"
+      },
+      "notesWebHookURL": {
+        "name": "玩家笔记 Webhook URL",
+        "hint": "这是用于玩家笔记的 webhook，当单击\"发送 _ 到玩家笔记\"时使用。（如果未填写，则不会在窗口或右键菜单中显示此选项）"
+      },
+      "showDescription": {
+        "name": "显示聊天卡片描述",
+        "hint": "禁用此选项意味着聊天卡片描述不再发送到 Discord，如果你不想记录冗长的法术描述等，这可能很有用。"
+      },
+      "sendEmbeds": {
+        "name": "显示聊天卡片嵌入",
+        "hint": "禁用此选项意味着聊天卡片不再发送到 Discord。（不影响带有掷骰的聊天卡片，例如使用 midi-qol 的卡片）"
+      },
+      "showFormula": {
+        "name": "在适用处显示掷骰公式",
+        "hint": "在适用的掷骰嵌入中启用显示掷骰公式。这不会覆盖掷骰公式可见性的一般规则，即如果开启此选项，来自 GM 的大多数掷骰通常仍然隐藏，并且 GM 掷骰公式仅在 GM 掷骰细节隐藏设置为\"无\"时在 midi-qol 中显示。"
+      },
+      "enablePolyglot": {
+        "name": "（Polyglot）启用语言检查",
+        "hint": "关闭此选项以禁用 Foundry to Discord 的Polyglot集成。"
+      },
+      "includeOnly": {
+        "name": "（Polyglot）仅理解这些语言：",
+        "hint": "逗号分隔的语言列表，你希望仅这些语言被理解并发送到 Discord。留空以使用正常的Polyglot行为。"
+      },
+      "includeLanguage": {
+        "name": "（Polyglot）在消息中显示语言",
+        "hint": "如果消息不是通用语言，则显示消息的语言。"
+      },
+      "polyglotShowMode": {
+        "name": "（Polyglot）显示混淆消息、原始消息或两者",
+        "hint": "全语言消息不会被混淆",
+        "choices": {
+          "showOriginal": "仅当无人理解时混淆消息",
+          "showIfOne": "混淆，但如果有人理解则在剧透中显示原始消息",
+          "showAll": "混淆，但在剧透中显示原始消息"
+        }
+      },
+      "enableAnon": {
+        "name": "（Anonymous）使用替换名称",
+        "hint": "在 Discord 消息中使用Anonymous，例如替换名称，在描述和页脚中删除它们。如果你想像往常一样限制元游戏信息，请不要关闭此选项。"
+      },
+      "forceShowNames": {
+        "name": "强制在 Discord 上显示名称",
+        "hint": "开启此选项以在 Discord 上显示Token名称，无论Token名称是否可见。默认行为是仅当Token上的名称对玩家可见时才显示Token名称。这会覆盖Anonymous设置。"
+      },
+      "forceShowRolls": {
+        "name": "强制显示 GM 掷骰结果、公式和分解",
+        "hint": "模组将不再尝试隐藏所有 GM 掷骰细节。\"在适用处显示掷骰公式\"仍需开启以显示公式和掷骰分解。这仅影响公共掷骰，不影响其他元游戏信息。"
+      },
+      "autoUuidEmbed": {
+        "name": "自动嵌入 UUID 链接消息",
+        "hint": "开启此选项以在消息仅包含 UUID 链接时自动附加项目描述或日志的嵌入，最多 10 个项目链接和/或日志页面。如果你发送非常长的日志，在 FVTT 上删除包含 UUID 链接的消息也将删除 Discord 上的长嵌入。"
+      },
+      "showAuthor": {
+        "name": "在嵌入中显示用户名",
+        "hint": "在嵌入中包含消息发送者的 FVTT 用户名和头像（如果有）。"
+      },
+      "disableDeletions": {
+        "name": "禁用消息删除",
+        "hint": "如果开启此选项，在 FVTT 中删除的消息将不会与你的 Discord webhook 同步。"
+      },
+      "disableMessages": {
+        "name": "禁用聊天镜像",
+        "hint": "这将禁用新聊天消息的检测。如果你想纯粹将 Foundry to Discord 用作 API 或仅使用服务器状态消息，可以开启此选项。"
+      }
+    }
+  }
+}

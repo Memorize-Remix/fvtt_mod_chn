@@ -1,0 +1,132 @@
+
+  "DLCRITFUMBLE": {
+    "ModuleName": "大成功与大失败随机表",
+    "ModuleDescription": "适用于D&D 5e的大成功与大失败随机表",
+
+    "Settings": {
+      "Enabled": {
+        "Name": "启用模组",
+        "Hint": "切换整个模组的开启/关闭"
+      },
+      "EnableCrits": {
+        "Name": "启用大成功随机表",
+        "Hint": "掷出N20时自动掷骰大成功随机表"
+      },
+      "EnableFumbles": {
+        "Name": "启用大失败随机表",
+        "Hint": "掷出N1时自动掷骰大失败随机表"
+      },
+      "ApplyEffects": {
+        "Name": "自动应用效果",
+        "Hint": "自动应用来自大成功/大失败结果的伤害和状态"
+      },
+      "UseActorLevel": {
+        "Name": "使用角色等级确定层级",
+        "Hint": "根据攻击角色的等级自动确定层级"
+      },
+      "FixedTier": {
+        "Name": "固定层级选择",
+        "Hint": "不使用角色等级时，对所有掷骰使用此层级"
+      },
+      "ShowChatMessages": {
+        "Name": "显示聊天消息",
+        "Hint": "在聊天中显示大成功/大失败结果"
+      },
+      "CritSound": {
+        "Name": "大成功音效",
+        "Hint": "发生大成功时播放的音效。留空表示无音效。"
+      },
+      "FumbleSound": {
+        "Name": "大失败音效",
+        "Hint": "发生大失败时播放的音效。留空表示无音效。"
+      },
+      "ReimportTables": {
+        "Name": "重新导入随机表",
+        "Label": "重新导入随机表",
+        "Hint": "从模组来源删除并重新导入所有大成功/大失败随机表。如果随机表缺失或损坏，请使用此功能。",
+        "DialogTitle": "重新导入大成功/大失败随机表",
+        "DialogMessage": "这将删除所有现有的大成功/大失败随机表，并从模组来源重新导入。",
+        "ConfirmTitle": "确认重新导入",
+        "ConfirmMessage": "这将删除所有现有的大成功/大失败随机表，并从模组重新导入新副本。",
+        "Warning": "警告：任何自定义随机表修改都将丢失！",
+        "Success": "随机表重新导入成功！"
+      },
+      "ResetSettings": {
+        "Name": "重置为默认",
+        "Label": "重置设置",
+        "Hint": "将所有模组设置重置为其默认。",
+        "ConfirmTitle": "重置设置",
+        "ConfirmMessage": "确定要将所有设置重置为默认值吗？",
+        "Success": "设置已重置为默认值！"
+      },
+      "Patreon": {
+        "Name": "在Patreon上支持",
+        "Label": "访问Patreon",
+        "Hint": "在Patreon上支持此模组的开发！你的贡献有助于资助新功能和更新。"
+      },
+      "PreviewSound": {
+        "Tooltip": "预览音效",
+        "NoFileSelected": "未选择音效文件",
+        "PlayError": "播放音效失败"
+      }
+    },
+
+    "Tiers": {
+      "Tier1": "层级1（等级1-4）- 新手",
+      "Tier2": "层级2（等级5-8）- 熟练",
+      "Tier3": "层级3（等级9-12）- 专家",
+      "Tier4": "层级4（等级13-20）- 传奇"
+    },
+
+    "AttackTypes": {
+      "Melee": "近战",
+      "Ranged": "远程",
+      "Spell": "法术"
+    },
+
+    "Chat": {
+      "CriticalHit": "重击！",
+      "Fumble": "大失败！",
+      "Attacker": "攻击者",
+      "Target": "目标",
+      "Effect": "效果",
+      "NothingSpecial": "无特殊效果",
+      "NothingSpecialDesc": "你的重击造成正常伤害，但没有额外效果发生。",
+      "NothingSpecialFumbleDesc": "你的攻击大失败，但迅速恢复，没有额外惩罚。"
+    },
+
+    "Effects": {
+      "AppliedCondition": "已应用状态：{condition}",
+      "AppliedDamage": "已应用{damage}点{type}伤害",
+      "EffectApplied": "效果已应用于{target}",
+      "SaveRequired": "需要豁免",
+      "SaveSuccess": "豁免成功 - 效果被避免！",
+      "SaveFailure": "豁免失败 - 效果已应用！"
+    },
+
+    "Dialogs": {
+      "UpdateTables": {
+        "Title": "更新大成功/大失败随机表",
+        "Content": "大成功/大失败随机表的新版本可用！你的随机表是从版本{oldVersion}导入的，现在版本{newVersion}可用，包含新效果和改进。",
+        "Warning": "注意：更新将替换你当前的随机表。任何自定义修改都将丢失。"
+      }
+    },
+
+    "Errors": {
+      "MidiQolRequired": "大成功与大失败随机表需要启用Midi-QOL。",
+      "TableNotFound": "未找到随机表'{tableName}'。请导入合集随机表。",
+      "NoActiveScene": "未找到激活场景。",
+      "NoTargetToken": "未找到用于效果应用的目标Token。",
+      "GMRequired": "此操作需要GM权限。"
+    },
+
+    "Notifications": {
+      "ModuleReady": "大成功与大失败随机表已就绪！",
+      "HooksRegistered": "Midi-QOL钩子注册成功。",
+      "ImportingTables": "正在导入大成功/大失败随机表...",
+      "TablesImported": "已导入{count}个大成功/大失败随机表！",
+      "ReimportingTables": "正在重新导入大成功/大失败随机表...",
+      "UpdateSkipped": "随机表更新已跳过。你稍后可以通过模组设置 > 重新导入随机表来更新。"
+    }
+  }
+}

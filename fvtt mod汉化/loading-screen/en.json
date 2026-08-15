@@ -1,0 +1,95 @@
+{
+  "LOADING_SCREEN": {
+    "Loading": "Loading...",
+    "DefaultText": "Loading New Scene",
+    
+    "SettingEnabled": "Enable Loading Screen",
+    "SettingEnabledHint": "Display the custom loading screen when switching scenes.",
+    
+    "SettingImageFolder": "Default Image Folder",
+    "SettingImageFolderHint": "Choose a folder with images for the loading screen. If a scene doesn't have its own folder, this one will be used.",
+    
+    "SettingCustomText": "Custom Text",
+    "SettingCustomTextHint": "The text displayed on the loading screen.",
+    
+    "SettingShowProgress": "Show Progress Bar",
+    "SettingShowProgressHint": "Display an animated progress bar during loading.",
+    
+    "SettingFadeDuration": "Fade Duration (seconds)",
+    "SettingFadeDurationHint": "How long the loading screen fade-in and fade-out animations last.",
+    
+    "SettingShowTips": "Show Tips",
+    "SettingShowTipsHint": "Display random tips during loading.",
+    
+    "SettingTipRotation": "Tip Rotation (seconds)",
+    "SettingTipRotationHint": "How often a new tip is displayed (during longer loading times).",
+    
+    "SettingTemplate": "Loading Screen Design",
+    "SettingTemplateHint": "Choose the design/template for the loading screen.",
+ 
+    "SettingBlockNotifications": "Block Notifications During Loading",
+    "SettingBlockNotificationsHint": "When enabled, info notifications are hidden while the loading screen is active.",
+
+    "SettingSceneNameSource": "Scene Name Display",
+    "SettingSceneNameSourceHint": "Choose whether players see the hidden scene name or the navigation name while loading.",
+    "SceneNameHidden": "Hidden Scene Name",
+    "SceneNameNavigation": "Navigation Name",
+   
+    "TemplateStandard": "Standard (Original)",
+    "TemplateMinimalist": "Minimalist",
+    "TemplateCinematic": "Cinematic",
+    "TemplateFantasy": "Fantasy/RPG",
+    
+    "SettingCustomTips": "Custom Tips",
+    "SettingCustomTipsHint": "Create your own tips (one tip per line). If empty, default tips will be used.",
+    "EditCustomTips": "Edit Tips",
+    
+    "CustomTipsTitle": "Edit Custom Tips",
+    "CustomTipsLabel": "Your Tips",
+    "CustomTipsDescription": "Enter your own tips here, one per line. These will replace the default tips. Leave empty to use default tips.",
+    "CustomTipsPlaceholder": "Tip: Your first custom tip\nTip: Another tip\nTip: And one more...",
+    "CustomTipsHelp": "Each line = one tip. Empty lines are ignored.",
+    "CustomTipsSaved": "Custom tips saved!",
+    
+    "SceneTab": "Loading Screen",
+    "SceneTabDescription": "Configure the loading screen specifically for this scene. With multiple images in the folder, one will be randomly selected.",
+    "SceneImageFolder": "Image Folder for this Scene",
+    "SceneImageFolderHint": "Leave empty to use the default folder. With multiple images, one will be randomly selected during loading.",
+    "SceneFolderSaved": "Loading Screen folder for scene saved!",
+    "ConfigureLoadingScreen": "Configure Loading Screen",
+    
+    "ConfigTitle": "Loading Screen - Configure Scene Folders",
+    "ConfigDescription": "Here you can set a custom image folder for each scene. Images from the folder will be randomly used as backgrounds. With multiple images, a random one is selected each time.",
+    "ConfigSaved": "Loading Screen configuration saved!",
+    
+    "TabScenes": "Scenes",
+    "TabHelp": "Help",
+    
+    "DefaultFolder": "Default Folder",
+    "DefaultFolderPlaceholder": "e.g. worlds/my-world/images/loading",
+    "DefaultFolderHint": "This folder is set in the general module settings.",
+    
+    "SceneFolders": "Scene-specific Folders",
+    "UseDefaultFolder": "Use default folder",
+    
+    "HelpTitle": "Instructions",
+    "HelpFolderSetup": "Setting up Folders",
+    "HelpStep1": "Create a folder in your Foundry installation with loading screen images",
+    "HelpStep2": "Set the 'Default Image Folder' in the module settings",
+    "HelpStep3": "Optional: Configure individual folders for specific scenes here",
+    "HelpStep4": "Click the folder icon to select a folder",
+    
+    "HelpBehavior": "Behavior",
+    "HelpBehavior1": "If a scene has its own folder, only images from it will be used",
+    "HelpBehavior2": "Without a scene folder, the default folder will be used",
+    "HelpBehavior3": "With multiple images, one is randomly selected",
+    "HelpBehavior4": "With only one image, it will always be used",
+    
+    "HelpTips": "Tips",
+    "HelpTip1": "Use images with 1920x1080px for best results",
+    "HelpTip2": "Supported formats: JPG, PNG, WEBP, GIF",
+    "HelpTip3": "Organize images thematically (e.g. 'dungeon', 'city', 'wilderness')",
+    
+    "Save": "Save"
+  }
+}

@@ -1,0 +1,35 @@
+
+  "RDD": {
+    "newBehavior": "战斗开始时生成卡牌图标",
+    "settingTooltip": "当此区域开始战斗时，从选定的牌组中抽取卡牌并放置在地图上。",
+    "Regions": {
+      "spawnCards": {
+        "FIELDS": {
+          "deckId": {
+            "label": "选择你的牌组",
+            "hint": "选择战斗开始时将从哪个牌组抽取卡牌。"
+          },
+          "cardCount": {
+            "label": "你想抽取多少张卡牌？"
+          },
+          "pickUpCard": {
+            "label": "你将手动拾取卡牌，而不是随机抽取。"
+          }
+        }
+      }
+    },
+    "combatStartedLabel": "战斗开始/结束",
+    "pleaseInsertCorrectUUid": "请复制卡牌组的UUID；它应包含'Card.'",
+    "incorrectNumberOfCard": "请输入有效的掷骰公式。",
+    "thereWillBeDrawnXCard": "将从{deck}抽取{roll}张卡牌。",
+    "useCard": "使用卡牌！",
+    "cardWasUsed": "此卡牌刚刚被使用。",
+    "insertDeckUuid": "请输入所选牌组的UUID，包括'Card.'",
+    "insertFormulaOrNumber": "请输入掷骰公式（如xdx、xDx）或数字。",
+    "caedSelector": "选择卡牌",
+    "youCanPickUpXCard": "你需要从下方选择{count}张卡牌",
+    "selected": "已选择",
+    "dialogSubmit": "提交",
+    "cardSelector": "卡牌选择器"
+  }
+}

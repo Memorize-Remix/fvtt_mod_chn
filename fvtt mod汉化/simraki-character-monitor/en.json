@@ -1,0 +1,115 @@
+{
+    "simraki-character-monitor": {
+        "settings": {
+            "monitorHP": {
+                "name": "Monitor HP",
+                "hint": "Tracks changes to a character's HP."
+            },
+            "monitorXP": {
+                "name": "Monitor Experience Points",
+                "hint": "Tracks changes in experience points on the character sheet."
+            },
+            "monitorLevel": {
+                "name": "Monitor Level",
+                "hint": "Tracks level changes on the character sheet."
+            },
+            "monitorSpellPrep": {
+                "name": "Monitor Spell Preparation",
+                "hint": "Tracks when a character prepares or unprepares a spell."
+            },
+            "monitorSpellSlots": {
+                "name": "Monitor Spell Slots",
+                "hint": "Tracks changes to the number of spell slots on the character sheet."
+            },
+            "monitorAC": {
+                "name": "Monitor Armor Class (AC)",
+                "hint": "Tracks changes to a character's Armor Class (AC)."
+            },
+            "monitorAbility": {
+                "name": "Monitor Abilities",
+                "hint": "Tracks changes to a character's ability scores."
+            },
+            "monitorSkillProficiency": {
+                "name": "Monitor Skill Proficiencies",
+                "hint": "Tracks changes to a character's skill proficiencies."
+            },
+            "monitorSaveProficiency": {
+                "name": "Monitor Saving Throw Proficiencies",
+                "hint": "Tracks changes to a character's saving throw proficiencies."
+            },
+            "monitorToolProficiency": {
+                "name": "Monitor Tool Proficiencies",
+                "hint": "Tracks changes to a character's tool proficiencies."
+            },
+            "monitorCurrency": {
+                "name": "Monitor Currency",
+                "hint": "Tracks changes to currency on the character sheet."
+            },
+            "monitorEffects": {
+                "name": "Monitor Active Effects",
+                "hint": "Tracks changes to active effects on the character sheet."
+            },
+            "monitorItemQuantity": {
+                "name": "Monitor Item Quantities",
+                "hint": "Tracks changes to the quantity of items a character has."
+            },
+            "monitorItemNameDesc": {
+                "name": "Monitor Item Names and Descriptions",
+                "hint": "Tracks changes to item names and/or descriptions on the character sheet."
+            },
+            "monitorItemEquip": {
+                "name": "Monitor Equipment",
+                "hint": "Tracks when a character equips or unequips an item."
+            },
+            "monitorItemAttune": {
+                "name": "Monitor Attunement",
+                "hint": "Tracks when a character attunes to or loses attunement on an item."
+            },
+            "monitorItemIdentify": {
+                "name": "Monitor Item Identification",
+                "hint": "Tracks changes to an item's identified/unidentified status."
+            },
+            "monitorItemCharges": {
+                "name": "Monitor Item Charges",
+                "hint": "Tracks changes to an item's charges on the character sheet."
+            },
+            "monitorSheetMode": {
+                "name": "Monitor Sheet Mode",
+                "hint": "Tracks switching the character sheet between game and edit modes."
+            },
+            "monitorInspiration": {
+                "name": "Monitor Inspiration",
+                "hint": "Tracks changes to inspiration on the character sheet."
+            },
+            "monitorDeathSave": {
+                "name": "Monitor Death Saves",
+                "hint": "Tracks changes to death saving throw results on the character sheet."
+            }
+        },
+        "chatMessage": {
+            "sheetMode": "Sheet Mode",
+            "description": "Description",
+            "descriptionChanged": "Description Changed",
+            "hp": {
+                "value": "HP",
+                "max": "Max HP",
+                "temp": "Temp HP",
+                "tempmax": "Temp Max HP"
+            },
+            "equipped": "equipped",
+            "unequipped": "unequipped",
+            "prepared": "prepared",
+            "unprepared": "unprepared",
+            "attunesTo": "attunes to",
+            "breaksAttune": "breaks attunement on",
+            "enabled": "enabled",
+            "disabled": "disabled",
+            "added": "added",
+            "deleted": "deleted",
+            "identified": "identified",
+            "unidentified": "unidentified",
+            "old": "Old",
+            "new": "New"
+        }
+    }
+}

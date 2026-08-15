@@ -1,0 +1,46 @@
+{
+    "three-actor-portrait": {
+        "settings":{
+            "authKey": {
+                "name": "HeroForge Authentication Key",
+                "hint": "Enter your authentication key here. You can find it in your HeroForge account settings (Account -> Personal Info -> Access Key). If you change your HeroForge Password you will need to update the Authentication Key."
+            },
+            "disablePortrait": {
+                "name": "Disable 3D Portraits",
+                "hint": "Disable 3D Portraits on all actors. Suggested for low-end devices and slow network speeds."
+            },
+            "playerCanEditPortrait": {
+                "name": "Allow Players to Edit Camera Position",
+                "hint": "Allow Players to edit how the camera is positioned on the 3D Portraits."
+            },
+            "autoRotate": {
+                "name": "Auto Rotate",
+                "hint": "Auto Rotate the camera on the 3D Portraits."
+            },
+            "rotationSpeed": {
+                "name": "Rotation Speed",
+                "hint": "The speed at which the camera rotates on the 3D Portraits."
+            },
+            "license-agreement": {
+                "name": "Accept Terms of Service",
+                "hint": "By enabling this settings you accept the Terms of Service of 3D Portraits. This module uses the HeroForge API, any attempt to reverse engineer, extract or use the API without Sky Castle Studio's permission is against the Terms of Service. If you wish to utilize the HeroForge API in your own project please contact Sky Castle Studio at support@heroforge.com."
+            },
+            "maxContexts": {
+                "name": "Maximum Simultaneous Portraits",
+                "hint": "The maximum number of portraits that can be displayed at the same time. Other modules or other browser tabs might use canvas contexts, if you experience webgl crashes you might want to lower this value. WebGl has a maximum limit of 16 contexts."
+            }
+        },
+        "portrait-preview":{
+            "save-pose": "Save Pose",
+            "download": "Download",
+            "toggle-rotate": "Toggle Automatic Rotation",
+            "camera-position-saved": "Camera Position Saved",
+            "topdown": "Top-Down View",
+            "outline": "Toggle Outline"
+        },
+        "notifications": {
+            "maxContextExceeded": "You have reached the maximum number of 3D portraits you can display simultaneusly, the oldest has been closed. You can change this in the module settings."
+        }
+    }
+    
+}

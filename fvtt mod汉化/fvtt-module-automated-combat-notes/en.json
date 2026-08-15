@@ -1,0 +1,37 @@
+{
+  "ACN": {
+    "overview": {
+      "title": "Automated Combat Notes",
+      "open": {
+        "tooltip": "Open Combat Notes Overview",
+        "keybinding": {
+          "label": "Open Combat Notes Overview",
+          "hint": "Opens a window with an overview of all your combat notes."
+        }
+      },
+      "drop-target": {
+        "text": "Drag a journal entry onto this area to add another note.",
+        "textEmpty": "You currently don't have any combat notes. Drag a journal entry onto this area to add your first note."
+      },
+      "table": {
+        "journalEntry": "Journal Entry",
+        "frequency": "Frequency",
+        "actions": "Actions"
+      }
+    },
+    "frequencies": {
+      "always": "Always",
+      "once": "Once",
+      "onceNth": "Once in the Nth combat",
+      "everyNth": "Every Nth combat",
+      "never": "Never"
+    },
+    "error": {
+      "missingUser": "There was an error retrieving your user data. Please refresh the page and try again.",
+      "unknownJournalEntry": "There was an error reading the added journal entry. Please try again.",
+      "unknownJournalEntryId": "There was an error displaying the journal entry with the ID",
+      "missingJournalEntryName": "There was an error retrieving the journal entry's name. Please make sure it has one and then try again.",
+      "duplicateJournalEntry": "You already have a reminder for this journal entry."
+    }
+  }
+}

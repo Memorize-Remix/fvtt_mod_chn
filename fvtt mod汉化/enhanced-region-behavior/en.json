@@ -1,0 +1,180 @@
+{
+  "enhanced-region-behavior": {
+    "regionClickedLabel": "Region Clicked",
+    "Settings": {
+      "globalOnClickName": "Enable onClick Event on all Region Behaviors",
+      "globalOnClickHint": "Enabling this will allow the onClick event to be selected for all region behaviors. Some behaviors may break with this event enabled, so use with caution."
+    },
+    "Regions": {
+      "Trap": {
+        "FIELDS": {
+          "saveDC": {
+            "label": "DC",
+            "hint": "The DC for the saving throw/ability check"
+          },
+          "saveAbility": {
+            "label": "Save Ability",
+            "hint": "The ability used for the saving throw against the trap's damage. Takes priority over skill checks."
+          },
+          "skillChecks": {
+            "label": "Skill Checks",
+            "hint": "Skill checks to perform when the trap is triggered. User will be able to choose which skill to use."
+          },
+          "damage": {
+            "label": "Damage",
+            "hint": "The amount of damage the trap deals when triggered."
+          },
+          "savedDamage": {
+            "label": "Damage if Saved",
+            "hint": "The amount of damage the trap deals if the saving throw is successful."
+          },
+          "damageType": {
+            "label": "Damage Type",
+            "hint": "The type of damage dealt by the trap (e.g., fire, cold, acid)."
+          },
+          "saveFailedMessage": {
+            "label": "Save Failed Message",
+            "hint": "Message displayed when the saving throw fails."
+          },
+          "saveSucceededMessage": {
+            "label": "Save Success Message",
+            "hint": "Message displayed when the saving throw succeeds."
+          },
+          "automateDamage": {
+            "label": "Automate Damage",
+            "hint": "If enabled, the trap will automatically apply damage when triggered."
+          },
+          "triggerBehaviorOnSave": {
+            "label": "Trigger Behaviors on Save",
+            "hint": "If set, these behaviors will be triggered when the saving throw is successful."
+          },
+          "triggerBehaviorOnFail": {
+            "label": "Trigger Behaviors on Fail",
+            "hint": "If set, these behaviors will be triggered when the saving throw fails."
+          }
+        },
+        "TrapDialogTitle": "Trap",
+        "TrapSaveAbilityContent": "Choose which Ability to make the save with",
+        "TrapSkillCheckContent": "Choose which Skill to make the check with",
+        "TrapDamageMessage": "{name} triggered a trap and took {damage} {type} damage!",
+        "TrapAvoidedMessage": "{name} dodged a trap and took a reduced {damage} {type} damage!",
+        "TrapSavingThrowMessage": "Saving Throw",
+        "TrapDamageRollMessage": "Trap Damage Roll"
+      },
+      "Music": {
+        "FIELDS": {
+          "playlistName": {
+            "label": "Playlist Name",
+            "hint": "The name of the music playlist find songs in."
+          },
+          "songNames": {
+            "label": "Song Names",
+            "hint": "Comma-separated list of song names to play."
+          },
+          "playAll": {
+            "label": "Play All Songs",
+            "hint": "If enabled, all songs will be played simultaneously."
+          },
+          "stop": {
+            "label": "Stop Current Music",
+            "hint": "If enabled, all currently playing music will be stopped before starting new music."
+          },
+          "playPlaylist": {
+            "label": "Play Full Playlist",
+            "hint": "If enabled, the full playlist will be played instead of songs."
+          }
+        }
+      },
+      "SoundEffect": {
+        "FIELDS": {
+          "volume": {
+            "label": "Volume",
+            "hint": "The volume level for the sound effect (0-1)."
+          },
+          "soundPath": {
+            "label": "Path to Sound File",
+            "hint": "The path to the sound file or sequencer effect to play."
+          }
+        }
+      },
+      "VisualEffect": {
+        "FIELDS": {
+          "imagePath": {
+            "label": "Effect Name",
+            "hint": "The name of the visual effect to play, or the path to an image file."
+          },
+          "duration": {
+            "label": "Duration",
+            "hint": "The duration of the visual effect in seconds (set to 0 to play full duration)."
+          },
+          "scale": {
+            "label": "Scale",
+            "hint": "The scale factor for the visual effect (1.0 is normal size)."
+          },
+          "infinite": {
+            "label": "Infinite Duration",
+            "hint": "If enabled, the visual effect will play indefinitely (stopped by Behavior Deactivated)."
+          },
+          "belowTokens": {
+            "label": "Below Tokens",
+            "hint": "If enabled, the visual effect will be displayed below tokens."
+          },
+          "playAtTokenLocation": {
+            "label": "Play at Token Location",
+            "hint": "If enabled, the visual effect will be played at the location of the token that triggered it."
+          }
+        }
+      },
+      "Elevation": {
+        "FIELDS": {
+          "elevation": {
+            "label": "Elevation",
+            "hint": "The elevation to set for tokens entering this region."
+          }
+        }
+      },
+      "Journal": {
+        "FIELDS": {
+          "journalId": {
+            "label": "Journal ID",
+            "hint": "The unique ID of the journal entry to open. Takes priority over Journal Name if both are provided."
+          },
+          "journalName": {
+            "label": "Journal Name",
+            "hint": "The name of the journal entry to open. Used if Journal ID is not provided."
+          },
+          "journalPageId": {
+            "label": "Journal Page ID",
+            "hint": "The specific page ID to show (optional). Takes priority over Journal Name and Journal ID."
+          },
+          "showToAll": {
+            "label": "Show to All Players",
+            "hint": "If enabled, the journal entry will be shown to all players. Otherwise, only to the triggering player or token owner."
+          }
+        },
+        "MigrationError": "Migration failed for journalPageId. Please reset the page ID in the Open Journal Behavior settings."
+      },
+      "TriggerAction": {
+        "FIELDS": {
+          "itemId": {
+            "label": "Item ID",
+            "hint": "The unique ID of the item to trigger. (Drag from token you want to use the item from)"
+          }
+        }
+      }
+    }
+  },
+  "TYPES": {
+    "RegionBehavior": {
+      "enhanced-region-behavior": {
+        "Trap": "Trap",
+        "Music": "Music",
+        "SoundEffect": "Sound Effect",
+        "VisualEffect": "Visual Effect",
+        "Elevation": "Elevation",
+        "Journal": "Open Journal",
+        "TriggerAction": "Trigger Action"
+      }
+    }
+  }
+}

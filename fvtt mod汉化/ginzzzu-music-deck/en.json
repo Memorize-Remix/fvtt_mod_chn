@@ -1,0 +1,82 @@
+{
+  "LANGUAGE": "English",
+  "NATIVE": "English",
+  "ginzzzu-music-deck": {
+    "module": {
+      "title": "Ginzzzu's Music Deck",
+      "description": "Vertical music deck for Foundry VTT with fast access to playlists and tracks."
+    },
+    "settings": {
+      "playlistButtonSize": {
+        "name": "Deck width",
+        "hint": "Size of playlist buttons (when collapsed) and the search field."
+      },
+      "maxExpandWidth": {
+        "name": "Max expand width",
+        "hint": "Maximum width of playlist and track buttons when expanded on hover (in pixels)."
+      },
+	  "deckTopOffset": {
+        "name": "Deck top offset (px)",
+        "hint": "Distance from the top of the screen to the Music Deck container, in pixels."
+      },
+      "deckBottomOffset": {
+        "name": "Deck bottom offset (%)",
+        "hint": "Percentage distance from the bottom of the screen to the Music Deck container."
+      },
+      "deckRightOffset": {
+        "name": "Deck right offset (px)",
+        "hint": "Additional offset from the right edge of the screen, useful when other UI elements overlap."
+      },
+      "hidePlaylistMarker": {
+      "name": "Hide playlists starting with",
+      "hint": "If set, any playlist whose name begins with this character (e.g. \"!\") will be hidden from Ginzzzu's Music Deck. Leave empty to disable."
+    },
+      "useFolderColor": {
+        "name": "Use folder color",
+        "hint": "If enabled, playlist button background is taken from its folder color."
+      },
+      "collapseOthers": {
+        "name": "Collapse other playlists",
+        "hint": "When you expand one playlist, all others will automatically collapse."
+      },
+      "truncateFavoritePlaylists": {
+        "name": "Truncate favorite playlist names",
+        "hint": "If disabled, favorite playlists and \"Favorites\" always show the full name (up to the maximum width)."
+      },
+      "sortColoredPlaylists": {
+      "name": "Group colored playlists",
+      "hint": "Move playlists with a custom color above normal playlists (but below favorites), sorted alphabetically."
+      },
+      "paletteColor1": { "name": "Palette color 1" },
+      "paletteColor2": { "name": "Palette color 2" },
+      "paletteColor3": { "name": "Palette color 3" },
+      "paletteColor4": { "name": "Palette color 4" },
+      "paletteColor5": { "name": "Palette color 5" },
+      "paletteColor6": { "name": "Palette color 6" },
+      "paletteColor7": { "name": "Palette color 7" },
+      "paletteColor8": { "name": "Palette color 8" },
+      "paletteColor9": { "name": "Palette color 9" },
+
+      "paletteColor": {
+        "baseName": "Color",
+        "hint": "Color used in the Music Deck palette. You can enter a hex code or install the \"Color Picker\" module to choose colors via a picker."
+      }
+    },
+    "ui": {
+      "searchPlaceholder": "Search...",
+      "untitled": "(no name)",
+      "untitledPlaylist": "(playlist)",
+      "favoritesTitle": "Favorites",
+      "favoritesTooltip": "Favorite tracks of Ginzzzu's Music Deck",
+      "favoritesClearTooltip": "Clear favorites (remove all tracks)",
+      "favoritesDialogTitle": "Clear favorites?",
+      "favoritesDialogContent": "<p>All tracks will be removed from the <strong>\"Favorites\"</strong> playlist, but will remain in their original playlists.</p>",
+      "playlistPlayTitle": "Start playlist (standard PlayAll)",
+      "playlistStopTitle": "Stop playlist (standard Stop)",
+      "colorPickerClearOne": "Remove color from this playlist",
+      "colorPickerClearAll": "Reset all colors",
+      "aliasEditWithAlias": "Rename track in favorites",
+      "aliasEditNoAlias": "Set a name for this favorite track"
+    }
+  }
+}

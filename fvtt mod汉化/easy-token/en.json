@@ -1,0 +1,69 @@
+{
+    "easy-token": {
+        "settings": {
+            "menus": {
+                "directories": {
+                    "name": "Directories",
+                    "label": "Setup Directories",
+                    "hint": "Upload directories for the different actor types."
+                }
+            }
+        },
+        "directories": {
+            "avatar": "Avatar",
+            "cancel": "Cancel",
+            "save": "Save",
+            "source": {
+                "label": "Source",
+                "hint": "The data source to which the file will be uploaded."
+            },
+            "title": "Actor Types Directories",
+            "token": "Token"
+        },
+        "editor": {
+            "background": {
+                "background-plain": "Plain Background",
+                "background-marble": "Marble Background",
+                "background-noise": "Noise Background",
+                "label": "Background"
+            },
+            "border": "Border",
+            "download": "Download Token Image",
+            "load-avatar": "Load Avatar Image",
+			"mask": {
+                "add": "Add New Mask",
+                "angle": "Angle",
+                "range": "Range",
+                "title": "Use Popout Masks",
+                "width": "Width"
+            },
+            "open-local": "Open Local Image",
+            "open-server": "Open Server Image",
+            "popout": {
+                "both": "Full Popout",
+                "bottom": "Bottom Popout",
+                "disabled": "No Popout",
+                "top": "Top Popout"
+            },
+            "ring": {
+                "dynamic": "Dynamic Ring",
+                "label": "Token Ring {number}"
+            },
+            "save-all": "Save All & Close",
+            "save-avatar": "Save Avatar Image",
+            "save-token": "Save Token Image",
+            "saved": {
+                "avatar": "Avatar image was successfully saved '{path}'",
+                "token": "Token image was successfully saved '{path}'"
+            },
+			"token": {
+                "title": "Token"
+            },
+            "warning": {
+                "actor": "This actor is not linked, already placed tokens in your scenes will not be updated.",
+                "token": "This token is not linked to any actor, changes will only be applied to this particular Token."
+            }
+        },
+        "label": "Easy-Token"
+    }
+}

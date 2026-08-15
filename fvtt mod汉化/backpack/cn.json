@@ -1,0 +1,139 @@
+
+  "backpack": {
+    "title": "背包",
+	"actorSlots": {
+      "title": "背包槽位",
+      "description": "设置此角色可以使用的背包槽位数量。"
+    },
+    "manager": {
+      "name": "背包管理器",
+      "label": "管理背包",
+      "hint": "为每个玩家配置背包槽位限制",
+      "title": "背包管理器",
+      "description": "配置每个玩家可用的背包槽位数量",
+      "defaultLimit": "默认槽位限制",
+      "defaultLimitHint": "新玩家的默认槽位数",
+      "playersTitle": "玩家设置",
+      "backpackLimit": "背包槽位",
+      "noCharacter": "未分配角色",
+      "online": "在线",
+      "offline": "离线",
+      "noPlayers": "未找到玩家",
+      "save": "保存设置",
+      "reset": "全部重置",
+      "limitTooHigh": "最大限制为100个槽位",
+	  "limitTooLow": "最小限制为5个槽位",
+      "settingsSaved": "背包设置保存成功",
+      "saveError": "保存设置时出错",
+      "resetSuccess": "设置重置成功",
+      "resetError": "重置设置时出错"
+    },
+    "viewer": {
+      "title": "背包",
+      "sortBy": "排序方式",
+      "sortItems": "排序背包物品",
+      "sortAlphabetical": "按字母排序 (A-Z)",
+      "sortDefault": "默认顺序",
+      "slotsUsed": "已用槽位:",
+      "emptyBackpack": "你的背包为空",
+      "emptyHint": "将物品拖放到此处进行存储",
+      "addItem": "添加物品",
+      "removeItem": "移除物品",
+      "itemAdded": "物品已添加到背包",
+      "itemRemoved": "物品已从背包移除",
+      "backpackFull": "背包已满",
+      "invalidItem": "无效物品",
+	  "organize": "整理",
+	  "organizeTooltip": "合并相同物品以释放更多栏位",
+      "slot": "槽位"
+    },
+    "contextMenu": {
+      "withdrawItem": "取出物品",
+      "deleteItem": "删除物品",
+      "expandSlots": "占用多个槽位（GM）",
+      "clearExpansion": "清除扩展"
+    },
+	"expandDialog": {
+		"title": "扩展物品尺寸",
+		"content": "可用最大槽位：{maxSlots}",
+		"inputLabel": "要占用的槽位（包含当前）",
+		"confirm": "应用",
+		"cancel": "取消",
+		"selectAnySlots": "选择任意空闲槽位进行占用"
+	  },
+    "depositDialog": {
+      "title": "存入物品",
+      "content": "可用数量: {quantity}",
+      "inputLabel": "你想要存入多少？",
+      "confirm": "存入",
+      "cancel": "取消"
+    },
+    "deleteDialog": {
+      "title": "删除物品",
+      "content": "确定要删除 {itemName} 吗？"
+    },
+    "notifications": {
+      "itemAdded": "物品 {itemName} (x{quantity}) 已添加到背包",
+      "itemRemoved": "物品已从背包移除",
+      "itemWithdrawn": "物品 {itemName} 已从背包取出",
+      "itemDeleted": "物品 {itemName} 已从背包删除",
+      "backpackFull": "背包已满",
+      "invalidItem": "无效物品",
+      "slotOccupied": "此槽位已被占用",
+      "itemNotFound": "物品未找到",
+      "quantityError": "无效数量",
+      "addError": "添加物品到背包时出错",
+      "withdrawError": "从背包取出物品时出错",
+      "sortedAlphabetically": "物品已按字母顺序排序",
+      "sortedDefault": "物品已按默认顺序排序",
+	  "organizeNothing": "无需整理",
+	  "organizedFreed": "整理完成：释放了 {freed} 个栏位",
+	  "organizedNoChange": "整理完成：未释放任何栏位",
+	  "organizeFailed": "背包整理失败",
+	  "selectTokenToOpen": "请选择一个Token以打开背包。",
+	  "slotLocked": "此槽位已锁定",
+	  "leaderMoveBlocked": "无法移动已扩展物品；请先清除扩展",
+	  "leaderDragBlocked": "无法拖拽已扩展物品；请先清除扩展",
+	  "expandSuccess": "物品现在占用 {count} 个槽位；槽位已锁定",
+	  "expandCleared": "物品扩展已清除；槽位已解锁",
+	  "expandFailOverlap": "无法扩展：所需槽位已被占用或锁定",
+	  "noFreeSlots": "没有可用的空闲槽位"
+    },
+    "reset": {
+      "title": "重置设置",
+      "content": "确定要将所有背包设置重置为默认值吗？",
+      "confirm": "重置",
+      "cancel": "取消"
+    },
+	  "settings": {
+		"debugMode": {
+		  "name": "调试模式",
+		  "hint": "允许在更详细的日志记录下渲染用户界面。"
+		},
+		"useActorSlotCount": {
+		  "name": "使用角色槽位数量",
+		  "hint": "启用后，将使用角色的库存槽位数量作为背包上限"
+		},
+		"useAttributeBasedCapacity": {
+		  "name": "使用基于属性的容量",
+		  "hint": "启用后，将根据角色属性（例如力量）自动计算背包容量"
+		},
+		"capacityAttributePath": {
+		  "name": "容量属性路径",
+		  "hint": "用于容量计算的属性点表示法路径（例如，DCC 力量为 'system.abilities.str.value'）"
+		},
+		"capacityFormula": {
+		  "name": "容量计算公式",
+		  "hint": "根据属性计算容量的公式。使用 'attribute' 作为占位符。示例：'attribute'、'attribute * 2'、'attribute / 10'、'attribute + 5'"
+		},
+		"capacityMin": {
+		  "name": "最小容量",
+		  "hint": "背包槽位的最小数量（在公式计算后应用）"
+		},
+		"capacityMax": {
+		  "name": "最大容量",
+		  "hint": "背包槽位的最大数量（在公式计算后应用）"
+		}
+	  }
+  }
+}

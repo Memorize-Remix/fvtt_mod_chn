@@ -1,0 +1,36 @@
+
+    "portal-lib": {
+        "settings": {
+            "autoDelete": {
+                "name": "自动删除变形角色",
+                "hint": "如果启用，角色将在变形恢复后无需确认即被删除。"
+            },
+            "enableRouter": {
+                "name": "启用Router",
+                "hint": "如果启用，非 GM 用户将能够使用 Portal Router，该Router允许执行脚本以更新非拥有的文档。重要提示：恶意或不熟练的用户可能会利用此功能干扰或破坏您世界中的内容。请确保仅与您信任的玩家一起使用此功能。"
+            }
+        },
+        "app": {},
+        "flags": {},
+        "ERR": {
+            "InvalidOrigin": "Portal: 无效的来源",
+            "InvalidTexture": "Portal: 无效的纹理",
+            "InvalidNumber": "Portal: 无效的数字",
+            "InvalidColor": "Portal: 无效的颜色",
+            "InvalidTransformTarget": "Portal: 无效的变形目标",
+            "InvalidTransformCreature": "Portal: 无效的变形生物",
+            "NoTokenData": "Portal: 无 Token 数据",
+            "NoTeleportTarget": "Portal: 无传送目标",
+            "OutOfRange": "Portal: 超出范围，请选择新位置"
+        },
+        "INFO": {
+            "RevertedTransformation": "Portal: 已恢复变形"
+        },
+        "DIALOG": {
+            "Title": "Portal: 生成生物",
+            "TransformTitle": "Portal: 选择要变形为的生物",
+            "DeleteTitle": "Portal: 删除变形角色",
+            "DeleteContent": "变形角色不再需要，可以删除。是否继续？"
+        }
+    }
+}

@@ -1,0 +1,88 @@
+
+    "GlobalProgressClocks": {
+        "Add": {
+            "Clock": "进度钟",
+            "Points": "点数",
+            "Tracker": "追踪"
+        },
+        "CreateDialog": {
+            "Color": "颜色",
+            "Default": "默认",
+            "EditTitle": "编辑进度钟",
+            "EditTitlePoints": "编辑点数",
+			"EditTitleTracker": "编辑追踪",
+            "Title": "添加进度钟",
+            "TitlePoints": "添加点数",
+			"TitleTracker": "添加追踪",
+            "Name": "名称",
+            "Value": "数值",
+            "Size": "大小",
+            "Private": "私有"
+        },
+        "DeleteDialog": {
+            "Title": "删除条目",
+            "Message": "确定要删除 {name} 吗？"
+        },
+        "Empty": "空",
+        "SizeTooBigError": "进度钟不能超过 {maxSize} 个分段。",
+        "Settings": {
+            "ClockTheme": {
+                "name": "进度钟主题",
+                "hint": "更改默认颜色并添加新的颜色选项",
+                "label": "更改进度钟主题设置"
+            },
+			"EnabledTypes": {
+                "name": "启用类型",
+                "hint": "更改支持的进度追踪类型",
+                "label": "更改启用类型"
+            },
+            "clockColors": {
+                "name": "名称",
+                "color": "颜色"
+            },
+            "defaultBackgroundColor": {
+                "name": "背景颜色",
+                "hint": "未填充的进度钟分段显示的颜色"
+            },
+            "defaultColor": {
+                "name": "默认进度钟颜色",
+                "hint": "进度钟的基础颜色，假设它们不属于特定的进度钟类型"
+            },
+            "location": {
+                "name": "屏幕位置",
+                "hint": "进度钟显示的锚点位置",
+                "Choices": {
+                    "topRight": "右上角",
+                    "bottomLeft": "玩家列表上方"
+                }
+            },
+			"minimumEditorRole": {
+				"name": "最低编辑权限",
+				"hint": "编辑时钟数值所需的最低权限角色"
+			},
+            "offset": {
+                "name": "垂直偏移",
+                "hint": "距离顶部或底部的像素距离。用于处理模组不兼容问题。"
+            },
+            "enabledTypes": {
+                "FIELDS": {
+                    "clocks": {
+                        "label": "启用时钟",
+                        "hint": "支持Blades in the Dark风格的饼图进度追踪器"
+                    },
+                    "points": {
+                        "label": "启用点数",
+                        "hint": "支持无上限的数值计数器（向上计数）"
+                    },
+                    "trackers": {
+                        "label": "启用追踪",
+                        "hint": "添加水平追踪作为替代计数器类型。"
+                    }
+                }
+            }
+        },
+        "Warnings": {
+            "NoActiveGM": "必须有一名在线GM才能使用该功能"
+        }
+    }
+}

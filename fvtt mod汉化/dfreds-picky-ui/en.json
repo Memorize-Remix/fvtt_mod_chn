@@ -1,0 +1,104 @@
+{
+    "PickyUi": {
+        "SceneControlsConfig": {
+            "Title": "Scene Controls Configuration",
+            "Instructions": "Configure which scene control buttons appear",
+
+            "Control": "Control",
+            "Icon": "Icon",
+            "Enable": "Enable",
+
+            "Reset": "Reset",
+            "Save": "Save",
+
+            "NoTools": "No tools are available for these controls",
+            "NoControls": "No controls are available for this layer",
+
+            "Tokens": "Tokens",
+            "Templates": "Templates",
+            "Tiles": "Tiles",
+            "Drawings": "Drawings",
+            "Walls": "Walls",
+            "Lighting": "Lighting",
+            "Sounds": "Sounds",
+            "Regions": "Regions",
+            "Notes": "Notes",
+
+            "ResetDialog": {
+                "Title": "Reset Scene Controls Configuration",
+                "Description": "All scene controls will be re-enabled."
+            }
+        },
+        "HudConfig": {
+            "Title": "HUD Configuration",
+            "Instructions": "Configure which HUD buttons appear",
+
+            "Tokens": "Tokens",
+            "Tiles": "Tiles",
+            "Drawings": "Drawings",
+
+            "Button": "Button",
+            "Icon": "Icon",
+            "Enable": "Enable",
+
+            "Reset": "Reset",
+            "Save": "Save",
+
+            "NoHud": "No buttons are available for this HUD. Please activate the HUD first to populate, then re-open the HUD configuration.",
+
+            "ResetDialog": {
+                "Title": "Reset HUD Configuration",
+                "Description": "All HUD buttons will be re-enabled."
+            }
+        },
+
+        "DirectoriesConfig": {
+            "Title": "Directories Configuration",
+            "Instructions": "Configure which sidebar directories appear",
+
+            "Directory": "Directory",
+            "Icon": "Icon",
+            "Enable": "Enable",
+
+            "Reset": "Reset",
+            "Save": "Save",
+
+            "NoDirectories": "No directories are available",
+
+            "ResetDialog": {
+                "Title": "Reset Directories Configuration",
+                "Description": "All directories will be re-enabled."
+            }
+        },
+        "Settings": {
+            "SceneControlsMenu": {
+                "Name": "Scene Controls",
+                "Hint": "Configure which scene control buttons appear"
+            },
+            "HudConfigMenu": {
+                "Name": "HUD",
+                "Hint": "Configure which HUD buttons appear"
+            },
+            "DirectoriesMenu": {
+                "Name": "Directories",
+                "Hint": "Configure which sidebar directories appear"
+            },
+            "ChatNotifications": {
+                "Name": "Enable Chat Notifications",
+                "Hint": "Configure whether chat notifications appear"
+            },
+            "PlayerList": {
+                "Name": "Enable Player List",
+                "Hint": "Configure whether the player list appears"
+            },
+            "Hotbar": {
+                "Name": "Enable Hotbar",
+                "Hint": "Configure whether the hotbar appears"
+            },
+            "SceneNavigation": {
+                "Name": "Enable Scene Navigation",
+                "Hint": "Configure whether the scene navigation appears"
+            }
+        }
+    }
+}

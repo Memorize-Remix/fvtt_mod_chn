@@ -1,0 +1,44 @@
+{
+    "settings.debug.title": "Debug (Client Setting)",
+    "settings.debug.hint": "Console debugging information.",
+
+    "settings.defaultmacro.title": "Override default macro execution",
+    "settings.defaultmacro.hint": "Enabling this will allow item macro to check if an item has a macro and roll that instead of the default system's execution.",
+
+    "settings.sheethook.title": "Character Sheet Hook",
+    "settings.sheethook.hint": "Enabling this will allow item macro to roll macros from the character sheet.",
+
+    "settings.charsheet.title": "Character Sheet Hook",
+    "settings.charsheet.hint": "Enabling this will allow item macro to roll macros from the character sheet.",
+
+    "settings.visibilty.title" : "Player access",
+    "settings.visibilty.hint" : "Enabling this will allow player's to view and edit macros on items they own.",
+
+    "settings.icon.title" : "Display Icon Only",
+    "settings.icon.hint" : "Enabling this will trim the item sheet button to only an Icon.",
+
+    "settings.click.title" : "Right Click Override (Client Setting)",
+    "settings.click.hint" : "Enabling this will cause item-macro (on sheethooks only) to execute on right click.",
+
+    "buttons.saveMacro":"Save Macro",
+    "buttons.executeMacro":"Execute Macro",
+    
+    "context.label" : "Update World Item Macros",
+    "context.confirm.title" : "Item Macro Overwrite Prompt",
+    "context.confirm.content" :  "Are you sure you want to overwrite all items macro's with ",
+    "context.prompt.title" : "Item Macro Overwrite Info",
+    "context.prompt.content" : "Item Macro Overwrite Complete",
+
+    "error.editImage":"You cannot edit the icon for this macro.",
+    "error.macroExecution" : "There was an error in your macro syntax. See the console (F12) for details",
+
+    "warning.systemNotSupported": "The {system} system is not supported by Item Macro. Macros can still be added to Items, but you will have to launch them from Item Macro Config, or programmatically.",
+
+    "itemacro.dnd5e.v9deprecation": "ITEM MACRO: The hotbar functionality has been disabled for v9.",
+    "itemacro.dnd5e.systemDeprecationv4": "ITEM MACRO: New module versions no longer support DND5e below 4.0.0. Please update your system or install Item Macro v2.0.1.",
+    "itemacro.dnd5e.skipItemMacroDeprecation": "ITEM MACRO: Since DND5e 4.0.0 usage of items changed and previous solutions will no longer work. You can no longer use `item.use({}, {skipItemMacro: true});` and must use `item.use({skipItemMacro: true, legacy: false});` instead.",
+    "itemacro.dnd5e.useFunctionWarning": "ITEM MACRO: blank usage of `item.use()` is no longer supported in Item Macros. Return `true` in macro in order to fall back to system's use method or pass `{skipItemMacro: true, legacy: false}` as the first parameter.",
+
+    "itemacro.dnd5e.defaultmacro.title": "Override `preUseItem` Hook",
+    "itemacro.dnd5e.defaultmacro.hint": "Enabling this will allow item macro to trigger item macro instead of default item's usage. Return `true` or call `item.use({skipItemMacro: true, legacy: false});` to perform default item usage from item macro."
+}

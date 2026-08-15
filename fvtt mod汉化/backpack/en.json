@@ -1,0 +1,139 @@
+{
+  "backpack": {
+    "title": "Backpack",
+	"actorSlots": {
+      "title": "Backpack Slots",
+      "description": "Set how many backpack slots this actor can use."
+    },
+    "manager": {
+      "name": "Backpack Manager",
+      "label": "Manage Backpacks",
+      "hint": "Configure backpack slot limits for each player",
+      "title": "Backpack Manager",
+      "description": "Configure the number of backpack slots available for each player",
+      "defaultLimit": "Default Slot Limit",
+      "defaultLimitHint": "Default number of slots for new players",
+      "playersTitle": "Player Settings",
+      "backpackLimit": "Backpack Slots",
+      "noCharacter": "No character assigned",
+      "online": "Online",
+      "offline": "Offline",
+      "noPlayers": "No players found",
+      "save": "Save Settings",
+      "reset": "Reset All",
+      "limitTooHigh": "Maximum limit is 100 slots",
+	  "limitTooLow": "Minimum slot limit is 5.",
+      "settingsSaved": "Backpack settings saved successfully",
+      "saveError": "Error saving settings",
+      "resetSuccess": "Settings reset successfully",
+      "resetError": "Error resetting settings"
+    },
+    "viewer": {
+      "title": "Backpack",
+      "sortBy": "Sort By",
+      "sortItems": "Sort items in backpack",
+      "sortAlphabetical": "Sort A-Z",
+      "sortDefault": "Default Order",
+      "slotsUsed": "Slots:",
+      "emptyBackpack": "Your backpack is empty",
+      "emptyHint": "Drag items here to store them",
+      "addItem": "Add Item",
+      "removeItem": "Remove Item",
+      "itemAdded": "Item added to backpack",
+      "itemRemoved": "Item removed from backpack",
+      "backpackFull": "Backpack is full",
+      "invalidItem": "Invalid item",
+      "organize": "Organize",
+      "organizeTooltip": "Merge identical items to free up slots",
+      "slot": "Slot"
+    },
+    "contextMenu": {
+      "withdrawItem": "Withdraw Item",
+      "deleteItem": "Delete Item",
+      "expandSlots": "Occupy multiple slots (GM)",
+      "clearExpansion": "Clear expansion"
+    },
+    "expandDialog": {
+      "title": "Expand Item Size",
+      "content": "Maximum slots available: {maxSlots}",
+      "inputLabel": "Slots to occupy (including current)",
+      "confirm": "Apply",
+      "cancel": "Cancel",
+      "selectAnySlots": "Select any free slots to occupy"
+    },
+    "depositDialog": {
+      "title": "Deposit Item",
+      "content": "Available quantity: {quantity}",
+      "inputLabel": "How many do you want to deposit?",
+      "confirm": "Deposit",
+      "cancel": "Cancel"
+    },
+    "deleteDialog": {
+      "title": "Delete Item",
+      "content": "Are you sure you want to delete {itemName}?"
+    },
+    "notifications": {
+      "itemAdded": "Item {itemName} (x{quantity}) added to backpack",
+      "itemRemoved": "Item removed from backpack",
+      "itemWithdrawn": "Item {itemName} withdrawn from backpack",
+      "itemDeleted": "Item {itemName} deleted from backpack",
+      "backpackFull": "Backpack is full",
+      "invalidItem": "Invalid item",
+      "slotOccupied": "This slot is already occupied",
+      "itemNotFound": "Item not found",
+      "quantityError": "Invalid quantity",
+      "addError": "Error adding item to backpack",
+      "withdrawError": "Error withdrawing item from backpack",
+      "sortedAlphabetically": "Items sorted alphabetically",
+      "sortedDefault": "Items in default order",
+      "organizeNothing": "Nothing to organize",
+      "organizedFreed": "Organization completed: {freed} slot(s) freed",
+      "organizedNoChange": "Organization completed: no slots were freed",
+      "organizeFailed": "Failed to organize the backpack",
+      "selectTokenToOpen": "Please select a token to open the backpack.",
+      "slotLocked": "This slot is locked",
+      "leaderMoveBlocked": "Cannot move expanded item; clear expansion first",
+      "leaderDragBlocked": "Cannot drag expanded item; clear expansion first",
+      "expandSuccess": "Item now occupies {count} slot(s); slots locked",
+      "expandCleared": "Item expansion cleared; slots unlocked",
+      "expandFailOverlap": "Cannot expand: required slots are occupied or locked",
+      "noFreeSlots": "No free slots available"
+    },
+    "reset": {
+      "title": "Reset Settings",
+      "content": "Are you sure you want to reset all backpack settings to default values?",
+      "confirm": "Reset",
+      "cancel": "Cancel"
+    },
+    "settings": {
+      "debugMode": {
+        "name": "Debug Mode",
+        "hint": "Allows UI rendering with more robust logging."
+      },
+      "useActorSlotCount": {
+        "name": "Use Actor Slot Count",
+        "hint": "If enabled, use the actor's inventory slot count as the backpack limit"
+      },
+      "useAttributeBasedCapacity": {
+        "name": "Use Attribute-Based Capacity",
+        "hint": "If enabled, calculate backpack capacity automatically based on actor attributes (e.g., Strength)"
+      },
+      "capacityAttributePath": {
+        "name": "Capacity Attribute Path",
+        "hint": "Dot-notation path to the attribute used for capacity calculation (e.g., 'system.abilities.str.value' for DCC Strength)"
+      },
+      "capacityFormula": {
+        "name": "Capacity Formula",
+        "hint": "Formula to calculate capacity from attribute. Use 'attribute' as placeholder. Examples: 'attribute', 'attribute * 2', 'attribute / 10', 'attribute + 5'"
+      },
+      "capacityMin": {
+        "name": "Minimum Capacity",
+        "hint": "Minimum number of backpack slots (applied after formula calculation)"
+      },
+      "capacityMax": {
+        "name": "Maximum Capacity",
+        "hint": "Maximum number of backpack slots (applied after formula calculation)"
+      }
+    }
+  }
+}

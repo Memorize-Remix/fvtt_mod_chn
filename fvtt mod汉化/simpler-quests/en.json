@@ -1,0 +1,88 @@
+{
+    "MythicsSimplerQuests": {
+        "Common": {
+            "Visible": "Visible",
+            "Hidden": "Hidden"
+        },
+        "Controls": {
+            "Tracker": "Quest Tracker"
+        },
+        "DeleteDialog": {
+            "Title": "Delete Quest",
+            "Message": "Are you sure you want to delete \"{title}\"?"
+        },
+        "Editor": {
+            "Title": "Quest Editor",
+            "SaveText": "Save",
+            "ViewStyle": "View Style",
+            "Objectives": "Objectives:"
+        },
+        "Quest": {
+            "New": "New Quest"
+        },
+        "Settings": {
+            "ExpandMultiple": {
+                "Name": "Allow Expanding Multiple Quests",
+                "Hint": "While enabled, you can expand multiple quests in the tracker. Disabling it will make expanding a quest collapse all others. Good for saving space."
+            },
+            "ViewStyle": {
+                "Name": "Default Quest View Style",
+                "Hint": "Controls how objectives are shown to players. Does not include Secret objectives.",
+                "All": "All Quest Objectives",
+                "Next": "Up To Next Objective Only",
+                "Complete": "Only Completed Objectives"
+            },
+            "TrackerDocked": {
+                "Name": "Dock Quest Tracker",
+                "Hint": "If enabled, the quest tracker is docked to the sidebar. If disabled, the quest tracker will be a floating window. (Requires Reload)"
+            },
+            "TrackerDisplayStyle": {
+                "Name": "Quest Tracker Display Style",
+                "Hint": "Controls how the quest tracker is displayed. Docked will show it in the sidebar, Sidebar will show it in the sidebar but not docked, and Floating will show it as a floating window.",
+                "Docked": "Docked",
+                "Sidebar": "Sidebar",
+                "Floating": "Floating"
+            },
+            "TrackerOffset": {
+                "Name": "Tracker Offset",
+                "Hint": "Adjusts the position of the quest log when docked. The higher the number, the lower the tracker appears."
+            },
+            "TrackerHidden": {
+                "Name": "Hide From Players",
+                "Hint": "If enabled, the quest tracker will not be shown to players."
+            },
+            "TrackerWidth": {
+                "Name": "Tracker Width",
+                "Hint": "Sets the width (in pixels) of the tracker while docked. Has no effect if not docked."
+            },
+            "TrackerMaxHeight": {
+                "Name": "Tracker Max Height",
+                "Hint": "Sets the max height (in pixels) of the tracker while docked. Has no effect if not docked."
+            },
+            "PlayerCreate": {
+                "Name": "Allow Player Create",
+                "Hint": "Allow players to create quests."
+            },
+            "PlayerEdit": {
+                "Name": "Allow Players to Edit GM Quests",
+                "Hint": "Allow players to edit quests made by the GM. Warning, this will allow players to see objective entry data, potentially revealing secret objectives."
+            },
+            "PlayersMark": {
+                "Name": "Allow Players to Mark GM Objectives",
+                "Hint": "Allow players to mark the objectives of quests made by the GM as complete, failed, or incomplete."
+            }
+        },
+        "Tracker": {
+            "ActiveQuests": "Active Quests",
+            "AddQuest": "Add Quest",
+            "Delete": "Delete",
+            "Edit": "Edit",
+            "Expand": "Expand",
+            "Minimize": "Minimize",
+            "Title": "Quest Tracker",
+            "Incomplete": "Incomplete",
+            "Complete": "Complete",
+            "Failed": "Failed"
+        }
+    }
+}

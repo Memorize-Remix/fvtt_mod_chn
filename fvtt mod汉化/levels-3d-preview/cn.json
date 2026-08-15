@@ -1,0 +1,2486 @@
+
+	"levels3dpreview": {
+		"controls": {
+			"preview3d": "切换3D模式",
+			"miniCanvas": "弹出/恢复画布",
+			"tile3dPolygon": "绘制形状以拉伸",
+			"tips": {
+				"templatePlacement": "3D测量板放置：鼠标滚轮旋转。Ctrl + 鼠标滚轮改变高度。Alt + 鼠标滚轮倾斜。"
+			},
+			"loading": {
+				"load": "加载3D Canvas...",
+				"env": "创建3D环境...",
+				"gravity": "计算重力...",
+				"shaders": "编译着色器..."
+			},
+			"loadingScreen": {
+				"navtools": "场景导航工具（左侧 ",
+				"showcontrols": "显示控件（切换）",
+				"togglecamera": "切换游戏相机",
+				"cameracontrols": "相机控制",
+				"tokencontrols": "Token控制",
+				"pan": "平移",
+				"rotate": "旋转",
+				"zoom": "缩放",
+				"topdown": "俯视",
+				"firstperson": "第一人称",
+				"unlock": "解锁",
+				"lockon": "锁定",
+				"move": "移动",
+				"elevation": "飞行",
+				"snapping": "贴地",
+				"rebind": "你可以在设置中重新绑定按键。",
+				"holddrag": "按住 + 拖动",
+				"toggle": "切换",
+				"manualpan": "手动平移",
+				"dragdrop": "拖放",
+				"tap": "点击",
+				"scroll": "滚动",
+				"loadingdone": "3D Canvas已准备就绪！- 按下 <i class='fas fa-question control-highlighted'></i> 关闭此屏幕。",
+				"loadingarrow": "点击箭头指向的'？'图标以关闭加载屏幕。"
+			}
+		},
+		"errors": {
+			"initfailed": "3D Canvas：初始化失败。这可能是缓存问题，请尝试按CTRL+F5刷新页面。请确保你有一个激活的场景。或者，3D Canvas或其依赖项可能已过时或损坏。请确保模组已更新，如果其他方法都失败，请尝试重新安装。",
+			"noActiveScene": "3D Canvas：未找到激活的场景。已自动激活一个场景，请重新加载页面。",
+			"noScenes": "3D Canvas：未找到场景。已创建默认场景，请重新加载页面。",
+			"attachmentNotFound": "3D Canvas：未找到附加。Token：%token% | 附加：%attachment%",
+			"gamecameradisabled": "3D Canvas：禁用游戏相机 - 游戏相机已启用，但'使用3D几何进行视线计算'已禁用。",
+			"filenotsupported": "文件格式不受支持或缺失",
+			"nomapgencells": "地图生成器动态网格在生成的地图中未找到单元格或无有效材质",
+			"toofarfromdoor": "你的Token离门太远，无法开门",
+			"tokenNotGrounded": "尝试的移动不允许，Token未贴地。",
+			"3dnotactive": "无法打开画布弹出窗口，3D模式未激活。",
+			"canping": "用户缺少在地图上显示Ping的权限。",
+			"canpingpan": "用户缺少发送相机位置的权限。",
+			"overmaxelevation": "尝试的移动超过了此场景的最大高度。",
+			"particleSystem": {
+				"type": "粒子系统：类型'%type%'不受支持，有效类型为：",
+				"fromto": "粒子系统：未指定目标和/或来源，或未定义。",
+				"onend": "粒子系统：.onEnd() - 一个或多个参数不是Particle3D的实例。"
+			},
+			"critical": "3D Canvas：在渲染循环中遇到致命错误。正在尝试恢复...",
+			"notarget": "3D Canvas：未找到拖放目标。请确保你至少有一个3D对象或已启用背景。"
+		},
+		"notifications": {
+			"initialviewcleared": "初始视角已清除",
+			"initialviewcaptured": "初始视角已捕获"
+		},
+		"clipNavigator": {
+			"disabled": "显示全部",
+			"sync": "与玩家同步",
+			"gamecamera": "切换游戏相机",
+			"syncNotification": "{{level}}的层级视图已与所有玩家同步",
+			"cameraToToken": "将相机聚焦到选中的Token",
+			"automode": "跟随模式",
+			"controls": "显示控件",
+			"lockon": "切换锁定",
+			"performance": "设置性能模式",
+			"performancereport": "性能报告",
+			"wireframe": "切换碰撞体",
+			"fog": "切换距离迷雾"
+		},
+		"mapgen": {
+			"title": "地图生成器 - 单元格高度为1等于 ",
+			"tooltips": {
+				"fit-to-scene": "自动调整并定位图块",
+				"select-all": "全选",
+				"deselect-all": "取消全选",
+				"set-elevation": "为选中的单元格设置高度",
+				"add-material": "添加材质",
+				"apply-material": "将材质应用于选中的单元格",
+				"select-material": "选择使用此材质的单元格",
+				"select-elevation": "选择具有此高度的单元格",
+				"delete-material": "删除材质",
+				"invert": "反转选择",
+				"toggle-material": "展开/折叠材质",
+				"clear-material": "清除材质"
+			},
+			"generator": {
+				"title": "生成地图",
+				"content": "你确定要生成新地图吗？这将覆盖所有当前设置的高度，且无法撤销！\n第一个材质槽将用作地面材质，其余将根据单元格高度自动映射。",
+				"height": "最大高度",
+				"cave": "洞穴",
+				"dungeon": "地下城",
+				"landscape": "自定义",
+				"generate": "生成",
+				"theme": "主题",
+				"shore": "海岸",
+				"hills": "丘陵",
+				"mountains": "山脉",
+				"plateau": "高原",
+				"valley": "山谷",
+				"island": "岛屿"
+			},
+			"themes": {
+				"firelands": "熔岩",
+				"desert": "沙漠",
+				"plains": "平原",
+				"wood": "森林",
+				"frost": "冰霜",
+				"jungle": "丛林废墟",
+				"crypt": "墓穴",
+				"alien": "外星",
+				"tech": "科技",
+				"tmcArabianNights": "阿拉伯之夜",
+				"tmcNature": "自然",
+				"tmcDungeon": "地下城"
+			},
+			"material": {
+				"name": "名称",
+				"cellColor": "单元格颜色",
+				"tint": "色调颜色",
+				"texture": "纹理",
+				"repeat": "重复",
+				"rotate": "随机化",
+				"metalness": "金属度",
+				"roughness": "粗糙度",
+				"opacity": "不透明度",
+				"emissive": "自发光"
+			},
+			"bevel": "斜角",
+			"zoom": "缩放",
+			"rows": "行",
+			"columns": "列"
+		},
+		"sharing": {
+			"sharemap": {
+				"agreement": "通过分享此地图，你确认你有权分享它，并且你没有违反任何使用资产的条款。你还同意地图将存储在3D Canvas服务器上，并且可以随时删除。",
+				"imageinfo": "请将地图的截图上传到imgur，并将链接粘贴在图像字段中。如果正确，图像将显示在预览中。",
+				"title": "分享地图",
+				"name": "地图名称",
+				"description": "描述",
+				"author": "作者",
+				"image": "图像",
+				"imageplaceholder": "图像URL",
+				"share": "分享",
+				"error": "发生错误",
+				"preview": "图像预览",
+				"secret": "密钥",
+				"secretinfo": "请注意，密钥未以加密格式存储，建议使用自动生成的随机密钥，如果你决定重新提交新版本的地图，它将自动保存以供将来使用。",
+				"missingfields": "3D Canvas - 地图分享 | 缺少一个或多个字段，或未选择资产包",
+				"gamemaster": "Gamemaster不是允许的作者名称。",
+				"assetpacks": "资产包",
+				"assetinfo": "共享地图将不包括自定义资产。请主要使用允许包中的资产。Ctrl + 点击以选择多个包。",
+				"confirm": {
+					"title": "地图分享确认",
+					"content": "你确定要分享此地图吗？一旦分享，你将无法编辑共享内容。"
+				},
+				"success": {
+					"titleupdated": "地图已更新",
+					"title": "地图已分享",
+					"content": "地图已成功分享。现在每个人都可以享受此地图，感谢你的分享！"
+				}
+			},
+			"mapbrowser": {
+				"title": "地图浏览器：{count}地图可用",
+				"createJournal": "创建场景笔记，包含导入场景的信息",
+				"imported": "导入的场景",
+				"search": "开始输入以搜索..."
+			},
+			"packs": {
+				"baileywiki": "Baileywiki",
+				"mapmakingpack": "地图制作包",
+				"tokencollection": "Token合集"
+			},
+			"error": "请求过多，请稍后再试。",
+			"scenedirbutton": "浏览社区3D地图",
+			"contextbutton": "分享场景"
+		},
+		"keybindings": {
+			"dialog": {
+				"title": "3D Canvas：移除核心按键绑定",
+				"content": "为了使3D Canvas控件不与核心控件重叠，强烈建议移除核心WASD按键绑定。你仍然可以使用箭头键或数字键盘移动Token或其他实体。你要移除它们吗？"
+			},
+			"lockcamera": "启用相机自动模式（仅限游戏相机）",
+			"gameCameraTopDown": "切换俯视相机（仅限游戏相机）",
+			"removeWaypoint": "移除标尺路径点",
+			"toggleFirstPerson": "切换第一人称相机",
+			"toggleCameraLockPosition": "锁定相机位置（按住）",
+			"rotate": "图块编辑器：旋转",
+			"translate": "图块编辑器：平移",
+			"toggleGizmo": "图块编辑器：切换Gizmo",
+			"toggleSelect": "组选择（按住拖动时）",
+			"resetView": "重置相机视角",
+			"topdownView": "俯视相机视角",
+			"cameraToToken": "将相机聚焦到选中的Token",
+			"panUp": "相机：向上平移",
+			"panDown": "相机：向下平移",
+			"panLeft": "相机：向左平移",
+			"panRight": "相机：向右平移",
+			"freeMode": "自由放置模式",
+			"pingcamera": "Ping并将相机移动到所有客户端的当前视角",
+			"ping": "Ping当前鼠标位置给所有客户端",
+			"scaleWidth": "图块编辑器：缩放宽度",
+			"scaleHeight": "图块编辑器：缩放高度",
+			"scaleGap": "图块编辑器：缩放间隙",
+			"scale": "图块编辑器：缩放",
+			"scaleScale": "图块编辑器：缩放图块比例",
+			"toggleMode": "图块编辑器：循环填充样式",
+			"tiltX": "图块编辑器：倾斜X",
+			"tiltY": "图块编辑器：倾斜Y"
+		},
+		"flags": {
+			"emote": {
+				"header": "3D Canvas",
+				"label": "表情",
+				"notes": "选择一个自定义玩家表情以用于3D Canvas战术Ping。"
+			},
+			"meshStats": "顶点：%v% | 三角形：%t% | 网格：%m% | 实例：%i%",
+			"maxElevation": {
+				"label": "最大高度",
+				"notes": "此场景中Token允许的最大高度。"
+			},
+			"grounding": {
+				"label": "贴地",
+				"notes": "防止玩家Token在空中结束移动。",
+				"options": {
+					"none": "无",
+					"notFlying": "仅当未飞行时",
+					"always": "始终"
+				}
+			},
+			"offset": {
+				"x": {
+					"label": "偏移X"
+				},
+				"y": {
+					"label": "偏移Y"
+				},
+				"z": {
+					"label": "偏移Z"
+				}
+			},
+			"positional": {
+				"label": "3D Canvas：位置音频",
+				"notes": "根据与相机的距离调整此音量的音量。需要启用'音量缓和'。"
+			},
+			"doorType": {
+				"options": {
+					"none": "无",
+					"door": "门",
+					"secret": "秘门"
+				}
+			},
+			"textureMode": {
+				"label": "纹理模式",
+				"options": {
+					"stretch": "拉伸",
+					"repeat": "重复"
+				}
+			},
+			"textureRepeat": {
+				"label": "纹理重复"
+			},
+			"flipY": {
+				"label": "垂直翻转纹理"
+			},
+			"doorState": {
+				"options": {
+					"open": "打开",
+					"closed": "关闭",
+					"locked": "锁定"
+				}
+			},
+			"doorStyle": {
+				"label": "门样式",
+				"options": {
+					"transparent": "透明",
+					"animate": "动画（枢轴）",
+					"slide": "动画（滑动 - 侧面）",
+					"slideVertical": "动画（滑动 - 垂直）",
+					"linkWithAnimation": "链接3D模型动画",
+					"linkWithAnimationReversed": "链接单一3D模型动画"
+				}
+			},
+			"doorAnimateAngle": {
+				"label": "门动画角度"
+			},
+			"doorAnimationDuration": {
+				"label": "门动画持续时间",
+				"units": "毫秒"
+			},
+			"doorSlidePercent": {
+				"label": "门滑动百分比"
+			},
+			"doorGrabTokens": {
+				"label": "捕获Token",
+				"notes": "在门开始移动时捕获附近的Token。不适用于'透明'样式。请注意，Token不会在移动过程中被捕获，仅在门开始移动时。"
+			},
+			"isFog": {
+				"label": "是战争迷雾框吗？",
+				"notes": "当相机进入此测量板时，遮蔽视野。仅适用于矩形测量板。"
+			},
+			"enablePlayers": {
+				"label": "为玩家启用",
+				"notes": "允许玩家为此场景打开3D视图，如果未启用战争迷雾，地图将完全可见。"
+			},
+			"auto3d": {
+				"label": "加载时启用3D"
+			},
+			"pixel": {
+				"label": "像素化"
+			},
+			"bloom": {
+				"label": "光晕"
+			},
+			"bloomThreshold": {
+				"label": "光晕阈值"
+			},
+			"bloomStrength": {
+				"label": "光晕强度"
+			},
+			"bloomRadius": {
+				"label": "光晕半径"
+			},
+			"filter": {
+				"label": "滤镜",
+				"options": {
+					"none": "无",
+					"grayscale": "灰度",
+					"sepia": "棕褐色",
+					"invert": "反色",
+					"brightness": "亮度",
+					"contrast": "对比度",
+					"saturate": "饱和度",
+					"hue": "色调",
+					"custom": "自定义"
+				}
+			},
+			"filterStrength": {
+				"label": "滤镜强度"
+			},
+			"filterCustom": {
+				"label": "自定义滤镜",
+				"placeholder": "例如：亮度(0.5) 对比度(1.5) 饱和度(0.5)"
+			},
+			"skybox": {
+				"label": "天空盒图像",
+				"placeholder": "天空盒图像",
+				"notes": "文件需要与6个文件在同一文件夹中，文件必须包含_ft, _bk, _up, _dn, _rt, _lf。"
+			},
+			"exr": {
+				"label": "天空盒",
+				"placeholder": "EXR文件或360°全景图像",
+				"notes": "支持.EXR文件或360°全景图像格式。HDRI将用作背景并照亮场景。"
+			},
+			"exposure": {
+				"label": "曝光",
+				"notes": "HDRI的曝光。1为默认值，2为最亮，0为最暗。"
+			},
+			"renderTable": {
+				"label": "填充区域",
+				"notes": "在3D视图中如何显示填充区域。",
+				"options": {
+					"none": "无",
+					"table": "桌子（自定义）",
+					"matpaper": "无限垫子（纸张）",
+					"matwood": "无限垫子（木材）",
+					"matcloth": "无限垫子（布料）",
+					"matblueprint": "无限垫子（蓝图）",
+					"matcustom": "无限垫子（自定义）"
+				}
+			},
+			"tableTex": {
+				"label": "填充纹理",
+				"placeholder": "填充纹理"
+			},
+			"tableHeightmap": {
+				"label": "填充高度图",
+				"placeholder": "填充高度图"
+			},
+			"tableHeightmapScale": {
+				"label": "高度图比例"
+			},
+			"tableColor": {
+				"label": "填充色调"
+			},
+			"renderBackground": {
+				"label": "显示背景",
+				"notes": "显示场景的背景图像作为板。"
+			},
+			"enableGrid": {
+				"label": "启用网格"
+			},
+			"enableRuler": {
+				"label": "启用标尺"
+			},
+			"enableAnimationScripts": {
+				"label": "启用动画脚本",
+				"notes": "警告：请确保你信任场景的来源，这可能被用于运行恶意代码。启用图块的动画脚本执行。"
+			},
+			"enableFogOfWar": {
+				"label": "启用战争迷雾（性能消耗大）",
+				"notes": "性能消耗大。此选项将在3D中启用战争迷雾，如果启用了'使用3D几何进行视线计算'，则战争迷雾将基于3D几何计算（仍然是二维的）。"
+			},
+			"bakeLights": {
+				"label": "预制灯光",
+				"notes": "在场景加载时预制灯光的阴影投射，它们不会动态变化，但不会穿过墙壁。"
+			},
+			"enableFog": {
+				"label": "启用迷雾"
+			},
+			"fogColor": {
+				"label": "迷雾颜色"
+			},
+			"fogDistance": {
+				"label": "迷雾距离"
+			},
+			"sceneTint": {
+				"label": "场景色调"
+			},
+			"timeSync": {
+				"label": "自动照明",
+				"options": {
+					"off": "关闭",
+					"time": "与世界时间同步位置",
+					"darkness": "与场景黑暗度同步曝光",
+					"both": "同步两者（与SmallTime模组配合最佳）"
+				}
+			},
+			"lockCamera": {
+				"label": "锁定相机视角",
+				"options": {
+					"off": "关闭",
+					"players": "仅限玩家",
+					"all": "所有人"
+				}
+			},
+			"sunPosition": {
+				"label": "时间（24小时制）"
+			},
+			"sunDistance": {
+				"label": "太阳距离"
+			},
+			"sunTilt": {
+				"label": "太阳倾斜"
+			},
+			"sunIntensity": {
+				"label": "太阳强度"
+			},
+            "ambientLightIntensity": {
+                "label": "环境光照强度",
+                "notes": "控制全局光源的强度，该光源会均匀照亮所有表面。此光源是均匀的，不会投射或接收阴影。"
+            },
+            "ambientLightColor": {
+                "label": "环境光照颜色"
+            },
+			"shadowBias": {
+				"label": "阴影偏移",
+				"notes": "决定阴影渲染的数字，如果你在场景中的实体上注意到黑色条纹，可以调整此数字。此数字的正确值通常非常小，建议以0.00001或更小的增量进行调整。"
+			},
+			"showSceneWalls": {
+				"label": "渲染墙壁"
+			},
+			"showSceneDoors": {
+				"label": "渲染门"
+			},
+			"showSceneFloors": {
+				"label": "渲染图块"
+			},
+			"initialview": {
+				"label": "初始视角位置",
+				"notes": "场景加载时的默认相机位置 - 在捕获相机视图之前，使用Ping设置目标。",
+				"button": "捕获相机视角",
+				"buttondel": "清除存储的相机视角"
+			},
+			"font": {
+				"label": "字体",
+				"notes": "用于文本动态网格的JSON字体。"
+			},
+			"wallFloorAlpha": {
+				"label": "墙壁/地板透明度"
+			},
+			"renderSceneLights": {
+				"label": "渲染场景灯光"
+			},
+			"mirrorLevels": {
+				"label": "镜像Levels图块可见性"
+			},
+			"object3dSight": {
+				"label": "使用3D几何进行视线计算"
+			},
+			"enableGameCamera": {
+				"label": "启用游戏相机",
+				"notes": "为此场景启用游戏相机。必须在3D Canvas设置中全局启用游戏相机才能生效。"
+			},
+			"model3d": {
+				"label": "3D模型"
+			},
+			"rotation": {
+				"label": "旋转"
+			},
+			"dynaMesh": {
+				"label": "动态网格",
+				"options": {
+					"optgroup": {
+						"basic": "基础",
+						"complex": "复杂",
+						"advanced": "高级",
+						"interactive": "交互",
+						"special": "特殊"
+					},
+					"default": "无（使用3D模型）",
+					"box": "盒子",
+					"plane": "平面",
+					"sphere": "球体",
+					"cylinder": "圆柱体",
+					"cone": "圆锥体",
+					"tube": "管状体",
+					"dome": "穹顶",
+					"billboard": "广告牌",
+					"billboard2": "广告牌（交叉）",
+					"text": "文本（使用3D模型字段输入文本）",
+					"decal": "贴花",
+					"stairs": "楼梯",
+					"vines": "藤蔓",
+					"paper": "纸片",
+					"rock": "岩石（立方体）",
+					"rocksphere": "岩石（球体）",
+					"rockcylinder": "岩石（圆柱体）",
+					"rockcone": "岩石（圆锥体）",
+					"polygon": "多边形",
+					"polygonbevel": "多边形（斜角）",
+					"polygonsolidify": "多边形（固体化）",
+					"polygonbevelsolidify": "多边形（斜角 + 固体化）",
+					"polygonbevelsolidifyjagged": "多边形（锯齿状曲线）",
+					"polygonbevelsolidifyjaggeddouble": "多边形（双重锯齿）",
+					"polygonbevelsolidifyjaggedstraight": "多边形（直线锯齿）",
+					"polygonlathe": "多边形（旋转）",
+					"polygonchain": "多边形（链式）",
+					"counter": "计数器",
+					"counterradial": "计数器 - 饼图",
+					"mapGen": "地图生成器"
+				}
+			},
+			"dynaMeshResolution": {
+				"label": "动态网格分辨率"
+			},
+			"imageTexture": {
+				"label": "纹理"
+			},
+			"gmOnlyInteractive": {
+				"label": "仅GM交互"
+			},
+			"displacementMap": {
+				"label": "高度图/热图"
+			},
+			"invertDisplacementMap": {
+				"label": "反转高度图/热图"
+			},
+			"displacementIntensity": {
+				"label": "高度图强度"
+			},
+			"displacementMatrix": {
+				"label": "高度图矩阵"
+			},
+			"wallSidesTexture": {
+				"label": "侧面纹理"
+			},
+			"wallSidesTint": {
+				"label": "侧面色调"
+			},
+			"onAnimation": {
+				"label": "动画函数"
+			},
+			"fillType": {
+				"header": "平铺",
+				"tabNotes": "配置3D模型是否应重复多次或拉伸以适合图块。",
+				"label": "填充类型",
+				"options": {
+					"stretch": "单个",
+					"tile": "重复",
+					"merged": "合并图块"
+				}
+			},
+			"enableGravity": {
+				"label": "重力",
+				"options": {
+					"none": "禁用",
+					"gravity": "仅重力",
+					"gravityRotation": "重力 + 表面旋转"
+				}
+			},
+			"depth": {
+				"label": "深度"
+			},
+			"material": {
+				"label": "材质",
+				"header": "材质",
+				"tabNotes": "配置应用于此图块的材质的视觉属性。滑块设置为-0.01时将使用材质的默认值。",
+				"options": {
+					"none": "默认",
+					"optgroup": {
+						"presets": "预设",
+						"advanced": "高级"
+					},
+					"presets": {
+						"basic-plastic": "基础塑料",
+						"premium-plastic": "高级塑料",
+						"steel": "钢铁",
+						"bronze": "青铜",
+						"copper": "赤铜",
+						"hammered-steel": "锤纹钢",
+						"leather": "皮革",
+						"marble": "大理石",
+						"wood": "木材"
+					},
+					"basic": "基础（无光照/阴影）",
+					"texcol": "纹理/颜色",
+					"plastic": "塑料",
+					"wood": "木材",
+					"metal": "金属",
+					"pbr": "PBR"
+				}
+			},
+			"color": {
+				"label": "颜色",
+				"notes": "材质和颜色仅适用于某些模型，通常是灰色/未纹理化的模型。"
+			},
+			"tint": {
+				"label": "色调颜色"
+			},
+			"shading": {
+				"label": "着色",
+				"options": {
+					"default": "默认",
+					"flat": "平面",
+					"smooth": "平滑"
+				}
+			},
+			"sides": {
+				"label": "侧面",
+				"options": {
+					"default": "默认",
+					"FrontSide": "正面",
+					"BackSide": "背面",
+					"DoubleSide": "双面"
+				}
+			},
+			"basic": {
+				"header": "基础",
+				"tabNotes": "配置3D模型、定位和缩放选项。"
+			},
+			"effects": {
+				"header": "效果",
+				"tabNotes": "配置应用于此图块的特殊效果。"
+			},
+			"noise": {
+				"header": "噪声",
+				"tabNotes": "配置模型顶部的程序化噪声以应用失真。",
+				"label": "噪声类型",
+				"options": {
+					"none": "无",
+					"simplex": "单纯形",
+					"perlin": "柏林"
+				}
+			},
+			"noiseScale": {
+				"label": "噪声比例"
+			},
+			"noiseHeight": {
+				"label": "高度"
+			},
+			"noisePersistence": {
+				"label": "持久性"
+			},
+			"noiseOctaves": {
+				"label": "八度"
+			},
+			"noiseLacunarity": {
+				"label": "间隙"
+			},
+			"noiseExponent": {
+				"label": "指数"
+			},
+			"noiseFlattening": {
+				"label": "平整"
+			},
+			"shaderIntensity": {
+				"label": "着色器强度"
+			},
+			"shaderSpeed": {
+				"label": "速度"
+			},
+			"shaderOther": {
+				"label": "着色器其他"
+			},
+			"shaderOther2": {
+				"label": "着色器其他2"
+			},
+			"shaderAlt": {
+				"label": "使用替代模式"
+			},
+			"baseColor": {
+				"label": "基底颜色"
+			},
+			"disableBase": {
+				"label": "禁用基底"
+			},
+			"removeBase": {
+				"label": "移除基底",
+				"notes": "移除原始模型的基底，仅在基底在3D模型数据中命名为'base'时有效。"
+			},
+			"solidBaseMode": {
+				"label": "基底模式",
+				"options": {
+					"default": "默认",
+					"merge": "合并",
+					"ontop": "顶部"
+				}
+			},
+			"draggable": {
+				"label": "可拖动"
+			},
+			"alwaysVisible": {
+				"label": "始终可见"
+			},
+			"enableAnim": {
+				"label": "启用动画（如果存在）"
+			},
+			"animIndex": {
+				"label": "动画索引"
+			},
+			"animationOnce": {
+				"label": "播放一次"
+			},
+			"linkWithDoorState": {
+				"label": "链接门状态"
+			},
+			"animSpeed": {
+				"label": "动画速度"
+			},
+            "forceFlyingMode": {
+                "label": "强制飞行模式"
+            },
+			"paused": {
+				"label": "暂停"
+			},
+			"faceCamera": {
+				"label": "面向相机模式",
+				"options": {
+					"default": "全局设置（默认）",
+					"face": "面向相机",
+					"noface": "不面向相机"
+				}
+			},
+			"rotationAxis": {
+				"label": "旋转轴",
+				"options": {
+					"x": "X",
+					"z": "Z",
+					"y": "Y"
+				},
+				"notes": "当原始Token旋转变化时使用的轴。如果原始文件为STL格式，通常为Z轴，否则为Y轴。"
+			},
+			"autoCenter": {
+				"label": "自动居中"
+			},
+			"autoGround": {
+				"label": "自动贴地"
+			},
+			"rotationX": {
+				"label": "旋转X"
+			},
+			"rotationY": {
+				"label": "旋转Y"
+			},
+			"rotationZ": {
+				"label": "旋转Z"
+			},
+			"rotateBase": {
+				"label": "修正基底旋转",
+				"notes": "某些模型需要旋转选择指示，请根据需要启用。（通常是从STL格式转换的文件）"
+			},
+			"offsetX": {
+				"label": "偏移X"
+			},
+			"offsetY": {
+				"label": "偏移Y"
+			},
+			"offsetZ": {
+				"label": "偏移Z"
+			},
+			"scale": {
+				"label": "缩放"
+			},
+			"yScale": {
+				"label": "Y轴缩放"
+			},
+			"tileScale": {
+				"label": "图块缩放"
+			},
+			"gap": {
+				"label": "间隙"
+			},
+			"tilt": {
+				"label": "倾斜"
+			},
+			"tiltX": {
+				"label": "倾斜X"
+			},
+			"tiltZ": {
+				"label": "倾斜Y"
+			},
+			"randomRotation": {
+				"label": "随机旋转"
+			},
+			"randomColor": {
+				"label": "随机颜色"
+			},
+			"randomDepth": {
+				"label": "随机深度"
+			},
+			"randomScale": {
+				"label": "随机缩放"
+			},
+			"randomPosition": {
+				"label": "随机位置"
+			},
+			"randomSeed": {
+				"label": "随机种子"
+			},
+			"maxInstances": {
+				"label": "最大实例"
+			},
+			"tiling": {
+				"label": "平铺选项"
+			},
+			"shader": {
+				"header": "着色器"
+			},
+			"attachments": {
+				"header": "附加",
+				"tabNotes": "配置此Token的附加。要添加附加，请选择Token，移至图块层，将你希望附加的图块放置在Token上，右键单击图块并选择'将图块附加到Token'选项。",
+				"filename": "附加名称",
+				"info": "图块%s已附加到Token"
+			},
+			"wallOpacity": {
+				"label": "不透明度"
+			},
+			"roughness": {
+				"label": "粗糙度"
+			},
+			"metalness": {
+				"label": "反射率"
+			},
+			"transparency": {
+				"label": "不透明度"
+			},
+			"alphaClip": {
+				"label": "Alpha Clip"
+			},
+			"transmission": {
+				"label": "透射"
+			},
+			"ior": {
+				"label": "折射率"
+			},
+			"wallDepth": {
+				"label": "墙壁深度"
+			},
+			"joinWall": {
+				"label": "连接墙壁"
+			},
+			"stretchTex": {
+				"label": "拉伸纹理"
+			},
+			"tcollision": {
+				"label": "阻挡移动"
+			},
+			"tsight": {
+				"header": "视野",
+				"tabNotes": "配置此图块的视野、阻挡光线和碰撞属性。",
+				"label": "阻挡视线"
+			},
+			"aura": {
+				"header": "光环"
+			},
+			"advanced": {
+				"header": "高级"
+			},
+			"position": {
+				"header": "位置",
+				"tabNotes": "配置位置、缩放和旋转。此外，配置偏移（偏移旨在用于更改图块的枢轴点，不适用于合并图块）。某些属性（如宽度、高度和旋转）可以在图块配置的常规'基础'选项卡中找到。"
+			},
+			"auraRange": {
+				"label": "光环范围"
+			},
+			"auraColor": {
+				"label": "光环颜色"
+			},
+			"tcameraCollision": {
+				"label": "相机碰撞体"
+			},
+			"sightMeshComplexity": {
+				"label": "碰撞体分辨率"
+			},
+			"highlightOnHover": {
+				"label": "悬停时高亮"
+			},
+			"enableCollision": {
+				"label": "启用碰撞",
+				"options": {
+					"0": "关闭",
+					"1": "开启（从Token）",
+					"2": "开启（从天空）"
+				}
+			},
+			"stem": {
+				"label": "启用阀杆Stem"
+			},
+			"collisionPlane": {
+				"label": "碰撞平面"
+			},
+			"castShadow": {
+				"label": "投射阴影",
+				"notes": "启用灯光的阴影投射 - 警告：高性能影响！"
+			},
+			"visibleWhenDisabled": {
+				"label": "禁用时可见",
+				"notes": "如果灯光被禁用，它仍然可见。它不会提供光源，但仍会应用灯光视觉效果。"
+			},
+			"postprocessing": {
+				"header": "后期处理",
+				"notes": "应用于场景的后期处理效果。",
+				"enabled": {
+					"label": "启用"
+				},
+				"vignette": {
+					"label": "晕影"
+				},
+				"chromaticAberration": {
+					"label": "色差"
+				},
+				"grain": {
+					"label": "噪声"
+				},
+				"tint": {
+					"label": "色调"
+				},
+				"contrast": {
+					"label": "对比度"
+				},
+				"brightness": {
+					"label": "亮度"
+				},
+				"saturation": {
+					"label": "饱和度"
+				}
+			},
+			"particlePreset": {
+				"label1": "粒子预设1",
+				"label2": "粒子预设2",
+				"notes": "用于粒子效果的预设。",
+				"options": {
+					"none": "无",
+					"rain": "雨",
+					"heavyrain": "暴雨",
+					"snow": "雪",
+					"hail": "冰雹",
+					"sand": "沙尘暴",
+					"leaves": "树叶",
+					"embers": "余烬",
+					"mysteriouslights": "神秘光",
+					"stars": "星星",
+					"starfall": "流星（JB2A）",
+					"smoke": "烟雾",
+					"toxic": "毒气",
+					"dust": "灰尘",
+					"custom": "自定义"
+				}
+			},
+			"particleTexture": {
+				"label": "纹理"
+			},
+			"particleColor": {
+				"label": "颜色"
+			},
+			"particleSize": {
+				"label": "大小"
+			},
+			"particleSpeed": {
+				"label": "速度"
+			},
+			"particleDensity": {
+				"label": "密度"
+			},
+			"particleDirection": {
+				"label": "方向"
+			},
+			"particleOpacity": {
+				"label": "不透明度"
+			},
+			"particleVelocity": {
+				"label": "速度"
+			},
+			"particleBlending": {
+				"label": "混合"
+			},
+			"particleGroundOffset": {
+				"label": "地面偏移"
+			},
+			"particleRandomRotation": {
+				"label": "随机旋转"
+			},
+			"particleRandomScale": {
+				"label": "随机大小"
+			},
+			"particleRotationspeed": {
+				"label": "旋转速度"
+			},
+			"particleBlend": {
+				"label": "混合"
+			},
+			"lightParticleEffect": {
+				"ParticleType": {
+					"label": "粒子预设",
+					"options": {
+						"optgroup": "方向性（需要发射角度）"
+					}
+				},
+				"ParticlePosition": {
+					"label": "位置",
+					"options": {
+						"surface": "表面",
+						"center": "中心"
+					}
+				},
+				"ParticleRadius": {
+					"label": "半径"
+				},
+				"ParticleIntensity": {
+					"label": "强度"
+				},
+				"ParticleSprite": {
+					"label": "Sprite"
+				},
+				"ParticleScale": {
+					"label": "缩放"
+				},
+				"ParticleEmitterSizeMultiplier": {
+					"label": "区域倍率"
+				},
+				"ParticleColor": {
+					"label": "主颜色"
+				},
+				"ParticleColor2": {
+					"label": "次颜色"
+				},
+				"ParticleForce": {
+					"label": "力"
+				},
+				"ParticleLife": {
+					"label": "寿命"
+				},
+				"ParticleCount": {
+					"label": "数量"
+				},
+				"ParticleEmitTime": {
+					"label": "发射时间"
+				},
+				"ParticleMass": {
+					"label": "质量"
+				},
+				"ParticleGravity": {
+					"label": "重力"
+				},
+				"enableParticle": {
+					"label": "启用粒子效果"
+				},
+				"enableParticleHidden": {
+					"label": "隐藏/禁用时启用粒子效果"
+				},
+				"ParticleAlphaStart": {
+					"label": "起始不透明度"
+				},
+				"ParticleAlphaEnd": {
+					"label": "结束不透明度"
+				},
+				"ParticlePushX": {
+					"label": "推动X"
+				},
+				"ParticlePushY": {
+					"label": "推动Y"
+				},
+				"ParticlePushZ": {
+					"label": "推动Z"
+				},
+				"header": {
+					"title": "粒子效果",
+					"notes": "用于灯光的粒子效果。"
+				}
+			}
+		},
+		"settings": {
+			"autoApply": {
+				"name": "自动应用材质",
+				"hint": "选择材质后，将立即应用到所选对象上。"
+			  },
+			  "autoClose": {
+				"name": "关闭材质浏览器",
+				"hint": "选择材质后，材质浏览器将自动关闭。"
+			  },
+			  "allTokens": {
+				"name": "显示所有Token",
+				"hint": "禁用时仅显示彩色Token，启用时显示所有可用Token。"
+			  },
+			  "autoAssignToken": {
+				"name": "自动分配3D模型",
+				"hint": "在画布上放置未链接的Token时，如果未分配3D模型，则自动为其分配一个。",
+				"options": {
+				  "0": "禁用",
+				  "1": "仅3D模型",
+				  "2": "3D模型与俯视Token"
+				}
+			  },
+			  "assetBrowserCustomPath": {
+				"name": "自定义资源路径",
+				"hint": "如需为资源浏览器设置自定义路径，请在此处填写。"
+			  },
+			"rangeFinder": {
+				"name": "距离测量",
+				"hint": "悬停在Token上时显示距离。",
+				"options": {
+					"none": "禁用",
+					"combat": "仅在战斗中",
+					"always": "始终"
+				}
+			},
+			"useRaycastRuler": {
+				"name": "实验性：自适应测量尺",
+				"hint": "启用此设置后，测量尺将贴合其下方的地形，只要Token未处于飞行状态。"
+			},
+			"resolutionMultiplier": {
+				"name": "分辨率倍率",
+				"hint": "警告：更改此设置也会影响2D视图的分辨率。需要刷新。"
+			},
+			"fogDebounce": {
+				"name": "战争迷雾更新限制",
+				"hint": "如果禁用，视野和战争迷雾将不断刷新。"
+			},
+			"sharedContext": {
+				"name": "共享内容",
+				"hint": "如果启用，战争迷雾性能将大幅提升，但你将无法使用迷你画布。"
+			},
+			"preapplyShaders": {
+				"name": "预加载着色器",
+				"hint": "如果启用，着色器将在渲染循环开始前应用。这将防止首次激活着色器时的卡顿，但可能会对性能和/或加载时间产生轻微影响。"
+			},
+			"lightCacheSize": {
+				"name": "光源缓存大小",
+				"hint": "每个场景缓存的光源数量。此数量的光源可以放置/启用而不会引起卡顿。"
+			},
+			"showAdvanced": {
+				"show": "显示高级设置",
+				"wiki": "了解更多",
+				"hide": "隐藏高级设置",
+				"name": "始终显示高级设置",
+				"hint": "默认在配置菜单中显示高级设置。"
+			},
+			"navigatorAuto": {
+				"name": "导航器跟随模式",
+				"hint": "在场景加载时自动启用3D导航器的跟随模式。",
+				"options": {
+					"none": "无",
+					"players": "仅玩家",
+					"all": "玩家和GM"
+				}
+			},
+			"headers": {
+				"basics": {
+					"title": "基础",
+					"notes": "配置此3D场景的基本设置。"
+				},
+				"environment": {
+					"title": "环境",
+					"notes": "3D环境和效果的设置。"
+				},
+				"lighting": {
+					"title": "光照",
+					"notes": "配置场景的全局光照。"
+				},
+				"particles": {
+					"title": "粒子",
+					"notes": "配置粒子效果。"
+				},
+				"visibility": {
+					"title": "可见性",
+					"notes": "配置3D对象的可见性。"
+				}
+			},
+			"canping": {
+				"name": "玩家可以Ping",
+				"hint": "启用玩家Ping位置的能力（默认Shift+E）。"
+			},
+			"canpingpan": {
+				"name": "玩家可以发送相机位置",
+				"hint": "启用玩家发送相机位置的能力（默认Shift+Q）。"
+			},
+			"enableGameCamera": {
+				"name": "启用游戏相机",
+				"hint": "启用类似“视频游戏”的相机。玩家将强制启用此功能，而GM可以切换它。"
+			},
+			"gameCameraMinAngle": {
+				"name": "最小角度",
+				"hint": "相机可以旋转到的最小角度（垂直旋转）。"
+			},
+			"gameCameraMaxAngle": {
+				"name": "最大角度",
+				"hint": "相机可以旋转到的最大角度（垂直旋转）。"
+			},
+			"gameCameraMinAzimuth": {
+				"name": "最小方位角",
+				"hint": "相机可以旋转到的最小方位角（水平旋转）。"
+			},
+			"gameCameraMaxAzimuth": {
+				"name": "最大方位角",
+				"hint": "相机可以旋转到的最大方位角（水平旋转）。"
+			},
+			"gameCameraMaxZoom": {
+				"name": "最大缩放",
+				"hint": "相机可以设置到的最大缩放级别。值越大，缩放越远。"
+			},
+			"gameCameraClipping": {
+				"name": "Clip",
+				"hint": "如果启用，隐藏覆盖当前相机目标的对象。"
+			},
+			"gameCameraDefaultGm": {
+				"name": "GM默认开启",
+				"hint": "GM首次加载场景时是否应默认开启游戏相机。"
+			},
+			"gameCameraAutoLock": {
+				"name": "自动重新锁定",
+				"hint": "如果游戏相机从其目标解锁，则目标更改时自动重新锁定。"
+			},
+			"gameCameraWarnings": {
+				"name": "显示警告",
+				"hint": "如果启用，显示游戏相机功能的警告。"
+			},
+			"configApp": {
+				"title": "3D Canvas配置",
+				"name": "全局设置",
+				"label": "配置全局设置",
+				"hint": "配置全局3D Canvas设置。这些设置将应用于所有客户端。以下所有设置均为客户端特定设置。",
+				"save": "保存设置",
+				"tabs": {
+					"canvas": "画布",
+					"token": "Token",
+					"base": "基底",
+					"misc": "杂项",
+					"perm": "权限",
+					"gc": "游戏相机",
+                    "tools": "工具"
+				}
+			},
+			"baseStyle": {
+				"name": "基底风格",
+				"hint": "用于所有Token的基底风格。",
+				"options": {
+					"image": "图像",
+					"solid": "固体",
+					"solidindicator": "固体 + 方向指示"
+				}
+			},
+			"solidBaseMode": {
+				"name": "基底模式",
+				"hint": "合并不会移动原始模型，顶部会将模型偏移到基底顶部。",
+				"options": {
+					"merge": "合并",
+					"ontop": "顶部"
+				}
+			},
+			"solidBaseColor": {
+				"name": "基底颜色",
+				"hint": "固体基底的颜色。可以是十六进制值或颜色名称（或任何CSS颜色）。默认值为#1c1c1c。"
+			},
+			"highlightCombat": {
+				"name": "战斗高亮",
+				"hint": "高亮当前战斗中的角色。"
+			},
+			"startMarker": {
+				"name": "回合开始标记",
+				"hint": "在战斗中，将标记放置在Token回合开始的位置。只有该Token的所有者才能看到它。"
+			},
+			"selectedImage": {
+				"name": "选择高亮图像",
+				"hint": "选择Token时显示的图像。"
+			},
+			"colorizeInidcator": {
+				"name": "高亮图像着色",
+				"hint": "为高亮图像着色以匹配默认的Foundry边框颜色。"
+			},
+			"enableReticule": {
+				"name": "启用瞄准",
+				"hint": "启用瞄准以高亮当前用户正在标记的Token。这将创建一个类似于2D瞄准器的瞄准器。"
+			},
+			"hideTarget": {
+				"name": "隐藏目标指示（如果固体基底）",
+				"hint": "如果Token启用了基底，则隐藏目标指示，目标将显示在基底环高亮中。"
+			},
+			"hideEffects": {
+				"name": "隐藏效果",
+				"hint": "隐藏浮动在Token上方的效果指示。"
+			},
+			"rotateIndicator": {
+				"name": "旋转基底",
+				"hint": "旋转3D基底以匹配Token的旋转。"
+			},
+			"templateEffects": {
+				"name": "启用测量板效果",
+				"hint": "根据伤害类型自动将着色器应用于测量板。目前仅支持dnd5e。"
+			},
+			"templateAuto3D": {
+				"name": "自动3D测量板",
+				"hint": "当未为测量板指定第三维度时，推断其值（例如，5英尺宽的射线将为5英尺高）。"
+			},
+			"lightHelpers": {
+				"name": "启用光源辅助",
+				"hint": "启用光源辅助。当处于光源层时，这将显示光源及其影响区域。"
+			},
+			"templateSyle": {
+				"name": "测量板风格",
+				"hint": "用于测量测量的测量板的风格。",
+				"options": {
+					"wireframe": "线框",
+					"solid": "固体"
+				}
+			},
+			"paddingAppearance": {
+				"name": "填充外观",
+				"hint": "填充的默认外观。这也可以按场景进行自定义。"
+			},
+			"gridMode": {
+				"name": "网格绘制模式",
+				"hint": "网格的绘制方式。快速模式通常更好，但仅支持方形网格。镜像模式将1:1镜像Foundry网格，但渲染成本更高。",
+				"options": {
+					"fast": "快速",
+					"mirror": "镜像"
+				}
+			},
+			"autoPan": {
+				"name": "自动平移",
+				"hint": "将3D相机平移与2D相机平移挂钩。主要是移动Token时相机会跟随它。禁用时，你始终可以使用Ctrl+X平移至选定的Token。",
+				"options": {
+					"none": "禁用",
+					"player": "仅玩家",
+					"all": "所有人"
+				}
+			},
+			"conservativeHitbox": {
+				"name": "保守的碰撞框",
+				"hint": "限制Token的碰撞框大小，使其不会溢出到Token的基底之外。"
+			},
+			"screenspacepanning": {
+				"name": "启用屏幕空间平移",
+				"hint": "为3D视图启用屏幕空间平移（地图控件样式）。"
+			},
+			"altCameraControls": {
+				"name": "替代相机控制",
+				"hint": "启用时，左键单击不会旋转相机。旋转将改为在中键鼠标按钮上。"
+			},
+			"enabledamping": {
+				"name": "启用阻尼",
+				"hint": "为相机启用阻尼。如果你感到晕眩，请禁用此选项。（在3D视图中按Shift+R重置相机并应用此更改）。"
+			},
+			"camerafocuszoom": {
+				"name": "启用相机焦点缩放",
+				"hint": "当使用Shift+X聚焦相机于Token时，缩放至Token。"
+			},
+			"standupFace": {
+				"name": "立牌面向相机",
+				"hint": "以立牌风格显示的2D Token将始终面向相机。"
+			},
+			"flatTokenStyle": {
+				"name": "2D Token风格",
+				"hint": "当未设置3D模型时，用于2D Token的风格。",
+				"options": {
+					"flat": "平面（面向相机）",
+					"extruded": "立体（站立）",
+					"coin": "硬币（俯视）"
+				}
+			},
+			"useMultithreading": {
+				"name": "使用多线程",
+				"hint": "使用多线程以提高战争迷雾计算的性能。如果你未使用战争迷雾，则此设置无效。"
+			},
+			"miniCanvas": {
+				"name": "启用画布弹出",
+				"hint": "当激活3D模式时，将2D画布弹出到单独的窗口中。"
+			},
+			"pingsound": {
+				"name": "Ping音效",
+				"hint": "Ping位置时播放的音效。"
+			},
+			"preventNegative": {
+				"name": "防止负高度",
+				"hint": "防止Token移动到游戏板下方。"
+			},
+			"outline": {
+				"name": "轮廓",
+				"hint": "在悬停和选择时为画布对象添加轮廓。禁用以提高性能。"
+			},
+			"fullTransparency": {
+				"name": "真实透明度",
+				"hint": "为避免视觉伪影，3D Canvas使用Alpha Clip处理透明度，这可能导致锯齿边缘。如果你使用非常少的透明纹理，或者没有重叠的透明度，则可以启用此设置以使透明纹理看起来更好。自行承担风险，可能导致视觉故障。"
+			},
+			"globalCollision": {
+				"name": "启用全局碰撞",
+				"hint": "为游戏板上的所有Token启用碰撞。"
+			},
+			"antialiasing": {
+				"name": "抗锯齿",
+				"hint": "启用抗锯齿以提高性能。FXAA对性能几乎无影响。SMAA将提供更好的结果，但可能会稍微更消耗性能。",
+				"options": {
+					"none": "禁用",
+					"fxaa": "FXAA",
+					"smaa": "SMAA"
+				}
+			},
+			"fowQuality": {
+				"name": "战争迷雾质量",
+				"hint": "设置战争迷雾的分辨率。",
+				"options": {
+					"native": "原生",
+					"high": "高",
+					"medium": "中",
+					"low": "低",
+					"verylow": "非常低"
+				}
+			},
+			"dofblur": {
+				"name": "景深",
+				"hint": "启用景深模糊。当相机靠近Token时，背景将模糊，使你感觉像在桌面上。更高的设置意味着更多的模糊，性能不受模糊级别的影响。启用时可能会对性能产生较大影响。",
+				"options": {
+					"off": "禁用",
+					"low": "低",
+					"medium": "中",
+					"high": "高"
+				}
+			},
+			"disableLighting": {
+				"name": "禁用阴影",
+				"hint": "禁用阴影以提高性能。"
+			},
+			"shadowQuality": {
+				"name": "阴影质量",
+				"hint": "阴影的分辨率。设置为“禁用”以禁用阴影。",
+				"options": {
+					"none": "禁用",
+					"low": "低",
+					"medium": "中",
+					"high": "高",
+					"ultra": "超高",
+					"gamer": "游戏模式"
+				}
+			},
+			"enableShaders": {
+				"name": "启用着色器",
+				"hint": "启用着色器特效。某些特效可能会对性能产生较大影响，具体取决于硬件和数量。禁用以提高性能。"
+			},
+			"enableEffects": {
+				"name": "启用效果",
+				"hint": "启用天气和粒子效果。某些效果可能会对性能产生较大影响，具体取决于硬件和数量。禁用以提高性能。"
+			},
+			"softShadows": {
+				"name": "柔和阴影",
+				"hint": "启用柔和阴影，性能影响较小。需要刷新。"
+			},
+			"resolution": {
+				"name": "分辨率",
+				"hint": "3D canvas的分辨率，这将影响性能。",
+				"options": {
+					"full": "高",
+					"half": "中",
+					"quarter": "低"
+				}
+			},
+			"cameralockzero": {
+				"name": "防止负相机",
+				"hint": "防止相机旋转或平移至0以下（需要刷新）。"
+			},
+			"debugMode": {
+				"name": "调试模式",
+				"hint": "显示有用的调试信息以进行故障排除。"
+			}
+		},
+		"exporter": {
+			"title": "将对象导出为GLTF",
+			"tokens": "Token",
+			"interactive": "包括可拖动的Token",
+			"tiles": "图块",
+			"all": "完整场景",
+			"doors": "门",
+			"walls": "墙",
+			"background": "背景",
+			"export": "导出",
+			"cancel": "取消"
+		},
+		"particleSystems": {
+			"optgroup-projectiles": "投射物",
+			"optgroup-rays": "射线",
+			"optgroup-sprites": "对象",
+			"optgroup-directional": "方向性",
+			"optgroup-explosions": "爆炸",
+			"optgroup-targetonly": "在目标上",
+			"custom": "自定义",
+			"torch": "火把",
+			"magiccircle": "魔法圈",
+			"fire": "火焰",
+			"vortex": "漩涡",
+			"sparks": "火花",
+			"holy": "圣光",
+			"ghostly": "幽灵之光",
+			"fairy": "仙灵之尘",
+			"smokecloud": "烟雾云",
+			"mysteriouslights": "神秘之光",
+			"sunburst": "阳爆",
+			"tesla": "特斯拉",
+			"magicsphere": "魔法球",
+			"mist": "薄雾",
+			"mist2": "薄雾2",
+			"gravitywell": "重力井",
+			"optgroup": "方向性（需要发射角度）",
+			"directionalfire": "火焰喷射器",
+			"directionalshock": "电击爆发",
+			"directionalpoison": "毒云",
+			"directionalwave": "波浪",
+			"directionallaser": "激光",
+			"directionalfrost": "冰霜",
+			"projectile": "投射物",
+			"blackdart": "黑镖",
+			"shotgun": "霰弹枪",
+			"earthprojectile": "大地投射物",
+			"earthexplosion": "大地爆炸",
+			"ray": "射线",
+			"voidray": "虚空射线",
+			"runicray": "符文射线",
+			"runicshot": "符文射击",
+			"explosion": "爆炸",
+			"sprite": "3D模型",
+			"slash": "斩击",
+			"magicburst": "魔法爆发",
+			"json": "自定义（JSON）",
+			"jb2aexplosion": "爆炸（JB2A动画）",
+			"jb2aexplosionnolight": "爆炸（JB2A动画，无光）",
+			"arrow": "箭",
+			"bolt": "弩箭",
+			"javelin": "标枪",
+			"magicarrow": "魔法箭",
+			"bullet": "子弹",
+			"swing": "挥击（3D对象）",
+			"thrust": "刺击（3D对象）",
+			"thrustswing": "挥击/刺击（3D对象）",
+			"starburst": "星爆",
+			"lightning": "闪电",
+			"castingsign": "仪式"
+		},
+		"macrodialog": {
+			"title": "导出粒子效果",
+			"label": "名称：",
+			"export": "保存为宏",
+			"cancel": "取消",
+			"placeholder": "输入宏的名称"
+		},
+		"welcome": {
+			"title": "欢迎使用3D Canvas",
+			"content": "<h1>欢迎来到3D世界！</h1>\n欢迎使用3D Canvas！首先，感谢你支持我的开发项目，让这个项目成为可能！\n只需<b>点击<i class='fas fa-cube'></i>按钮</b>（Token控件，左上角）即可将场景切换到3D模式。<p><h2>重要模组</h2>\n在开始使用3D Canvas之前，请安装：<ul><li><a href='https://wiki.theripper93.com/levels-3d-preview/canvas3dcompendium'>地图制作包</a></li><li><a href='https://wiki.theripper93.com/levels-3d-preview/canvas3dtokencompendium'>Token合集</a></li></ul> 你将获得大量3D道具、Token以及许多易于使用的工具！<p><h2>入门指南</h2>\n启用<b>地图制作包</b>后，你将获得一个简单快速的<b>快速入门教程</b>。完成快速入门后，如果你想深入了解高级设置，强烈建议<b>阅读文档</b>（点击<b><i class='fas fa-book'></i> 入门指南</b>按钮）。你以后可以在你的合集中找到文档！文档中还提供了一系列视频教程供你参考。<p><h2>故障排除</h2>\n如果你遇到任何<b>问题</b>或在<b>配置</b>或<b>3D模型</b>方面遇到困难，请随时在Discord频道中<b>联系我们</b>！<hr>",
+			"ok": "关闭",
+			"dontshowagain": "不再显示",
+			"opencompendium": "入门指南"
+		},
+		"newuserexperience": {
+			"title": "欢迎使用3D Canvas",
+			"content": "<h1>3D快速入门！</h1> 欢迎使用3D Canvas，这是一个快速入门教程，帮助你立即轻松制作地图！点击<b>开始导览！</b>按钮以开始导览。<hr>",
+			"starttour": "开始导览！"
+		},
+		"performance": {
+			"verylow": "非常低",
+			"low": "低",
+			"medium": "中",
+			"high": "高",
+			"veryhigh": "非常高",
+			"custom": "自定义",
+			"dialog": {
+				"title": "3D Canvas：性能设置",
+				"content": "选择你偏好的图形质量（页面将刷新）："
+			},
+			"buttonTooltip": {
+				"verylow": "推荐用于较旧的集成GPU",
+				"low": "推荐用于较旧的独立GPU或现代集成GPU",
+				"medium": "推荐用于现代独立GPU",
+				"high": "推荐用于高端独立GPU",
+				"veryhigh": "推荐用于高端独立GPU"
+			},
+			"settings": {
+				"header": "图形设置",
+				"presetHint": "选择一个视觉质量预设以自动设置以下选项。你之后可以随时单独更改它们。悬停按钮以查看硬件推荐。",
+				"resolution": "使用当前设置，3D Canvas将以{resolution}分辨率运行。",
+				"resolutionTooltip": "在高分辨率下使用3D Canvas对低端硬件要求很高，尤其是在2K分辨率以上运行时。如果遇到性能问题，请尝试降低分辨率。"
+			},
+			"notification": "3D Canvas：性能模式设置为{performancemode}。"
+		},
+		"tileEditor": {
+			"controlsReference": {
+				"title": "3D Canvas图块编辑器控件",
+				"translate": "平移",
+				"rotate": "旋转",
+				"scale": "缩放",
+				"toggleGizmo": "切换Gizmo",
+				"nogizmo": "禁用Gizmo时，拖动图块会将其吸附到地形",
+				"scaleWidth": "宽度",
+				"scaleHeight": "高度",
+				"tiltX": "倾斜X",
+				"tiltZ": "倾斜Y",
+				"scaleGap": "间隙",
+				"scaleScale": "图块缩放",
+				"toggleMode": "填充模式",
+				"wheel": "鼠标滚轮增加/减少值",
+				"clone": "在开始变换之前，按住CTRL以克隆"
+			}
+		},
+		"tokenAnimations": {
+			"title": "动画",
+			"twirl": "旋转",
+			"slash": "斩击",
+			"charge": "冲锋",
+			"swipe": "挥击",
+			"buff": "增强",
+			"debuff": "削弱",
+			"bow": "弓",
+			"breath": "呼吸",
+			"shake": "摇晃",
+			"knockback": "击退"
+		},
+		"baseStyles": {
+			"roundDoubleRing": "圆形双环",
+			"sharp": "尖锐",
+			"sharpIndicator": "尖锐 + 指示器",
+			"rounded": "圆角",
+			"ringHollow": "空心环",
+			"ringSimple": "简单环",
+			"ringSimpleSmall": "简单小环",
+			"jb2ahex1": "六边形1 (JB2A)",
+			"jb2ahex1Indicator": "六边形1 + 指示器 (JB2A)",
+			"jb2ahex2": "六边形2 (JB2A)",
+			"jb2ahex2Indicator": "六边形2 + 指示器 (JB2A)",
+			"jb2around1": "圆形1 (JB2A)",
+			"jb2around1Indicator": "圆形1 + 指示器 (JB2A)",
+			"jb2around2": "圆形2 (JB2A)",
+			"jb2around2Indicator": "圆形2 + 指示器 (JB2A)",
+			"jb2asquare1": "方形1 (JB2A)",
+			"jb2asquare1Indicator": "方形1 + 指示器 (JB2A)",
+			"jb2asquare2": "方形2 (JB2A)",
+			"jb2asquare2Indicator": "方形2 + 指示器 (JB2A)"
+		},
+		"units": {
+			"ms": "毫秒",
+			"gu": "网格单位",
+			"gs": "网格方格"
+		},
+		"shaders": {
+			"config": {
+				"title": "着色器配置",
+				"save": "保存",
+				"autosave": "自动保存",
+				"apply": "应用",
+				"macro-btn": "宏",
+				"enabled": "启用？",
+				"label": "着色器配置",
+				"button": "配置着色器",
+				"notes": "配置用于此3D对象的视觉效果。",
+				"slow": "警告：使用此着色器的多个实例可能会导致性能问题。",
+				"macro": {
+					"title": "创建着色器宏",
+					"content": "宏名称：",
+					"created": "宏'%s'创建成功！",
+					"enabled": "仅导出启用",
+					"players": "允许玩家"
+				}
+			},
+			"clipping": {
+				"name": "Clip",
+				"description": "在靠近Token或相机时淡出此图块。",
+				"speed": "速度",
+				"diameter": "半径",
+				"heightOffset": "高度偏移",
+				"noiseScale": "噪声比例",
+				"useCamera": "使用相机",
+				"useCameraAdvanced": "使用高级相机计算"
+			},
+			"wind": {
+				"name": "风",
+				"description": "风效果，为你的植被添加一些动态。",
+				"speed": "速度",
+				"direction": "方向",
+				"intensity": "强度",
+				"affect_model": "偏移点（%）",
+				"convoluted": "复杂",
+				"ground_blend": "地面混合",
+				"ground_color": "地面颜色",
+				"reactive": "反应性",
+				"reactive_intensity": "反应强度"
+			},
+			"distortion": {
+				"name": "扭曲",
+				"description": "扭曲效果，非常适合用于熔岩池或其他粘性液体。",
+				"speed": "速度",
+				"direction": "方向",
+				"intensity": "强度",
+				"convoluted": "复杂"
+			},
+			"water": {
+				"name": "水",
+				"description": "基于正弦波的简单水效果。效果显著且对性能影响极低。",
+				"speed": "速度",
+				"direction": "方向",
+				"wave_amplitude": "波浪密度",
+				"wave_height": "波浪高度"
+			},
+			"oil": {
+				"name": "油",
+				"description": "油/液态金属效果。效果可以着色和缩放，请注意颜色会被效果扭曲。",
+				"speed": "速度",
+				"intensity": "强度",
+				"scale": "缩放",
+				"color": "颜色",
+				"blendMode": "混合模式"
+			},
+			"ocean": {
+				"name": "海洋",
+				"description": "复杂的水模拟，使用多个波浪。比简单水着色器更消耗性能。",
+				"speed": "速度",
+				"scale": "缩放",
+				"waveA_wavelength": "波浪A波长",
+				"waveA_steepness": "波浪A陡度",
+				"waveA_direction": "波浪A方向",
+				"waveB_wavelength": "波浪B波长",
+				"waveB_steepness": "波浪B陡度",
+				"waveB_direction": "波浪B方向",
+				"waveC_wavelength": "波浪C波长",
+				"waveC_steepness": "波浪C陡度",
+				"waveC_direction": "波浪C方向",
+				"foam": "高光",
+				"reflections": "反射"
+			},
+			"orbit": {
+				"name": "轨道",
+				"description": "轨道效果。为对象添加旋转和轨道，请注意模型需要是单个网格以获得最佳效果。",
+				"orbit_speed": "轨道速度",
+				"pivot_speed": "枢轴速度",
+				"radius": "轨道半径"
+			},
+			"bounce": {
+				"name": "弹跳",
+				"description": "弹跳效果。为对象添加弹跳效果，请注意模型需要是单个网格以获得最佳效果。",
+				"speed": "速度",
+				"strength": "强度",
+				"axisX": "X轴",
+				"axisY": "Z轴",
+				"axisZ": "Y轴"
+			},
+			"grid": {
+				"name": "网格",
+				"description": "将场景网格投影到此3D对象上。仅支持方形网格。此着色器将使用场景设置中的网格颜色和不透明度。",
+				"normalCulling": "常规剔除",
+				"heightCulling": "高度剔除",
+				"showBounds": "显示边界"
+			},
+			"triplanar": {
+				"name": "三平面",
+				"description": "高级纹理投影技术，用于正确纹理化在陡峭角度下会出现纹理拉伸的表面。",
+				"roughnessAdjust": "反射调整"
+			},
+			"textureScroll": {
+				"name": "滚动",
+				"description": "简单的纹理滚动效果，类似于'Parallaxia'模组。",
+				"speedX": "速度X",
+				"speedY": "速度Y",
+				"direction": "方向"
+			},
+			"fire": {
+				"name": "火焰",
+				"description": "火焰效果。效果可以着色和缩放，以产生超越火焰的效果。",
+				"speed": "速度",
+				"intensity": "强度",
+				"scale": "缩放",
+				"color": "颜色",
+				"blendMode": "混合模式"
+			},
+			"lightning": {
+				"name": "闪电",
+				"description": "闪电效果，带有移动的电弧。",
+				"speed": "速度",
+				"intensity": "强度",
+				"scale": "缩放",
+				"color": "颜色",
+				"blendMode": "混合模式"
+			},
+			"ice": {
+				"name": "冰",
+				"description": "冰霜表面效果，带有非常微妙的动画。",
+				"speed": "速度",
+				"grain": "颗粒",
+				"intensity": "强度",
+				"scale": "缩放",
+				"color": "颜色",
+				"blendMode": "混合模式"
+			},
+			"idle": {
+				"name": "闲置",
+				"description": "简单的位移效果，旨在用于Token以赋予其更多活力。",
+				"speed": "速度",
+				"direction": "方向",
+				"intensity": "强度",
+				"affect_model": "偏移点（%）"
+			},
+			"colorwarp": {
+				"name": "颜色",
+				"description": "颜色扭曲效果，可以同时设置多个。发光效果在场景配置中启用泛光效果时效果最佳。",
+				"speed": "速度",
+				"glow": "发光",
+				"hue_angle": "色相偏移",
+				"flicker": "闪烁",
+				"animate_range": "动画范围"
+			},
+			"colorswap": {
+				"name": "颜色交换",
+				"description": "颜色交换效果。将模型的一种颜色与另一种颜色交换。",
+				"sourceColor1": "源颜色1",
+				"targetColor1": "目标颜色1",
+				"threshold1": "阈值1",
+				"sourceColor2": "源颜色2",
+				"targetColor2": "目标颜色2",
+				"threshold2": "阈值2",
+				"sourceColor3": "源颜色3",
+				"targetColor3": "目标颜色3",
+				"threshold3": "阈值3"
+			},
+			"textureRotate": {
+				"name": "旋转",
+				"description": "纹理旋转效果，需要纹理和一些纹理重复才能工作。",
+				"speed": "速度",
+				"centerx": "X偏移",
+				"centery": "Y偏移",
+				"offsetAngle": "角度偏移"
+			},
+			"mask": {
+				"name": "遮罩",
+				"description": "遮罩效果。使用纹理遮罩遮罩纹理。需要纹理和遮罩纹理。",
+				"textureMask": "遮罩纹理",
+				"textureDiffuse": "纹理",
+				"repeat": "重复",
+				"color": "颜色"
+			},
+			"noiseMask": {
+				"name": "噪声",
+				"description": "噪声遮罩效果。使用两个噪声纹理遮罩纹理。需要纹理和两个噪声纹理。",
+				"textureNoise1": "噪声纹理1",
+				"noise1Repeat": "重复",
+				"noise1ScrollX": "滚动X",
+				"noise1ScrollY": "滚动Y",
+				"textureNoise2": "噪声纹理2",
+				"noise2Repeat": "重复",
+				"noise2ScrollX": "滚动X",
+				"noise2ScrollY": "滚动Y",
+				"invert": "反转",
+				"textureDiffuse": "纹理",
+				"color": "颜色",
+				"repeat": "重复",
+				"strength": "强度",
+				"maskThreshold": "遮罩阈值"
+			},
+			"overlay": {
+				"name": "覆盖",
+				"description": "纹理覆盖。需要设置纹理。对于白色背景的纹理使用“乘法混合”，对于黑色背景的纹理使用“黑色混合”。",
+				"textureDiffuse": "纹理",
+				"coveragePercent": "覆盖百分比",
+				"inclination": "倾斜",
+				"color": "颜色",
+				"strength": "强度",
+				"repeat": "重复",
+				"rotation_angle": "旋转（度）",
+				"offsetX": "偏移X（UV）",
+				"offsetY": "偏移Y（UV）",
+				"black_alpha": "黑色混合",
+				"add_blend": "加法混合",
+				"mult_blend": "乘法混合"
+			},
+			"splatMap": {
+				"name": "贴图",
+				"description": "贴图。需要设置纹理。这是一个高级着色器。将贴图纹理的RGBA通道映射到4个不同的纹理。",
+				"textureSplatMap": "贴图",
+				"repeatSplatMap": "贴图重复",
+				"flipY": "翻转Y",
+				"useAlpha": "使用Alpha通道",
+				"upNormals": "仅“朝上”表面",
+				"textureDiffuse0": "纹理R",
+				"color0": "颜色R",
+				"repeat0": "重复R",
+				"textureDiffuse1": "纹理G",
+				"color1": "颜色G",
+				"repeat1": "重复G",
+				"textureDiffuse2": "纹理B",
+				"color2": "颜色B",
+				"repeat2": "重复B",
+				"textureDiffuse3": "纹理A",
+				"color3": "颜色A",
+				"repeat3": "重复A"
+			},
+			"textureGradient": {
+				"name": "渐变",
+				"description": "纹理渐变。需要设置纹理。将纹理映射到高度或倾斜度。\n使用倾斜度时，1表示平坦表面，0表示垂直表面。",
+				"texCount": "纹理数量",
+				"useNormals": "使用倾斜度",
+				"smoothing": "平滑",
+				"tex0Begin": "纹理1开始",
+				"tex1Begin": "纹理2开始",
+				"tex2Begin": "纹理3开始",
+				"tex3Begin": "纹理4开始",
+				"textureDiffuse0": "纹理1",
+				"color0": "颜色1",
+				"repeat0": "重复1",
+				"textureDiffuse1": "纹理2",
+				"color1": "颜色2",
+				"repeat1": "重复2",
+				"textureDiffuse2": "纹理3",
+				"color2": "颜色3",
+				"repeat2": "重复3",
+				"textureDiffuse3": "纹理4",
+				"color3": "颜色4",
+				"repeat3": "重复4"
+			},
+			"sound": {
+				"name": "声音",
+				"description": "需要正在播放的声音。出于性能考虑，如果多个声音正在播放，只会使用第一个声音。",
+				"intensity": "强度",
+				"glow": "发光",
+				"chroma": "色度",
+				"flat_bottom": "平坦底部",
+				"croma_offset_angle": "色度偏移"
+			}
+		},
+		"tours": {
+			"dialog": {
+				"title": "入门指南",
+				"content": "你要开始3D Canvas入门导览吗？"
+			},
+			"getting-started": {
+				"title": "基础：入门",
+				"description": "此导览将引导你了解3D Canvas的基础知识。",
+				"requires": "你需要未激活3D视图才能开始此导览。",
+				"step-0": {
+					"title": "进入3D视图（1/2）",
+					"content": "激活角色控件。"
+				},
+				"step-1": {
+					"title": "进入3D视图（2/2）",
+					"content": "点击立方体按钮以激活3D视图。"
+				},
+				"step-2": {
+					"title": "控件",
+					"content": "加载屏幕包含有关3D Canvas相机和角色控件的帮助信息。"
+				}
+			},
+			"first-tile": {
+				"title": "中级：3D图块操作和自定义资产",
+				"description": "此导览将帮助你开始3D图块操作以及如何使用自定义资产。",
+				"requires": "你需要激活3D视图并安装3D Canvas地图制作包才能开始此导览。",
+				"step-0": {
+					"title": "图块层",
+					"content": "前往图块层。"
+				},
+				"step-1": {
+					"title": "文件浏览器",
+					"content": "打开文件浏览器。"
+				},
+				"step-2": {
+					"title": "导航到3D资产",
+					"content": "按照步骤进入3D Canvas地图制作包的图块文件夹。"
+				},
+				"step-3": {
+					"title": "导航到3D资产",
+					"content": "按照步骤进入3D Canvas地图制作包的图块文件夹。"
+				},
+				"step-4": {
+					"title": "导航到3D资产",
+					"content": "按照步骤进入3D Canvas地图制作包的图块文件夹。"
+				},
+				"step-5": {
+					"title": "导航到3D资产",
+					"content": "按照步骤进入3D Canvas地图制作包的图块文件夹。"
+				},
+				"step-6": {
+					"title": "导航到3D资产",
+					"content": "按照步骤进入3D Canvas地图制作包的图块文件夹。"
+				},
+				"step-7": {
+					"title": "拖放",
+					"content": "像使用2D图块一样拖放3D模型。使用控件参考来操作图块。3D Canvas宏合集中包含有用的宏来操作图块。"
+				}
+			},
+			"scene-configuration": {
+				"title": "高级：3D场景配置",
+				"description": "此导览将引导你了解场景配置选项。",
+				"requires": "你需要激活3D视图才能看到此导览。",
+				"step-0": {
+					"title": "前往3D选项卡",
+					"content": "3D选项卡包含所有3D场景的设置。"
+				},
+				"step-1": {
+					"title": "为玩家启用",
+					"content": "如果未启用此设置，你的玩家将无法进入3D视图。"
+				},
+				"step-2": {
+					"title": "加载时启用3D",
+					"content": "启用此设置后，激活3D视图时将自动加载场景。"
+				},
+				"step-3": {
+					"title": "视野",
+					"content": "默认情况下，3D Canvas将使用2D视图的可见性（独立于其可见状态）通过墙壁计算角色视野。启用此设置以忽略2D视野并使用3D环境计算视野。"
+				},
+				"step-4": {
+					"title": "战争迷雾",
+					"content": "战争迷雾在3D模式下默认禁用，即使在2D中启用。当3D中的战争迷雾禁用时，玩家将能够看到整个环境，但角色仍会根据视野隐藏。如果你希望使用战争迷雾，强烈建议你在3D Canvas模组设置中启用“共享内容”。"
+				},
+				"step-5": {
+					"title": "环境",
+					"content": "HDRI（2:1图像）有助于场景照明和背景（将其视为全局照明）。更改HDRI可以极大地改变场景的外观！尝试将HDRI设置为3D Canvas地图制作包中的一些选项！"
+				},
+				"step-6": {
+					"title": "光照",
+					"content": "此部分允许你调整场景的全局光照。尝试调整基本滑块！"
+				},
+				"step-7": {
+					"title": "天气",
+					"content": "在这里，你可以为场景设置天气/粒子效果。尝试启用一个效果，看看它如何增强你的场景！"
+				},
+				"step-8": {
+					"title": "高级",
+					"content": "场景配置提供了更多选项，当你熟悉基本设置后，可以点击此处显示所有高级选项。"
+				}
+			},
+			"first-scene": {
+				"title": "基础：创建你的第一个3D场景",
+				"description": "此导览将帮助你开始创建3D场景。",
+				"requires": "你需要安装3D Canvas地图制作包才能开始此导览。",
+				"step-0": {
+					"title": "前往场景选项卡",
+					"content": "场景选项卡包含你世界中的所有场景。"
+				},
+				"step-1": {
+					"title": "创建新场景",
+					"content": "点击“创建场景”按钮以创建新场景。"
+				},
+				"step-2": {
+					"title": "启用快速3D场景创建",
+					"content": "勾选此框以启用快速3D场景创建。"
+				},
+				"step-3": {
+					"title": "创建场景",
+					"content": "点击“创建新场景”按钮以确认场景的创建。"
+				},
+				"step-4": {
+					"title": "控件",
+					"content": "加载屏幕包含有关3D Canvas相机和角色控件的帮助信息。"
+				},
+				"step-5": {
+					"title": "3D场景面板",
+					"content": "此面板允许你快速构建场景。导览完成后，悬停按钮以查看它们的功能！"
+				},
+				"step-6": {
+					"title": "控件参考",
+					"content": "你可以随时通过点击此按钮重新打开控件参考。"
+				},
+				"step-7": {
+					"title": "图块操作",
+					"content": "放置图块后，你可以移动、缩放和旋转它。点击此按钮以获取控件参考作为聊天消息。"
+				},
+				"step-8": {
+					"title": "开始构建！",
+					"content": "这是你入门所需的全部内容！尝试使用快速地形和3D场景面板创建场景。当你对3D Canvas更加熟悉后，可以前往导览页面并开始更高级的导览！"
+				}
+			},
+			"tile-configuration": {
+				"title": "高级：图块配置",
+				"description": "此导览将引导你了解图块配置选项和着色器。",
+				"requires": "你需要选中一个图块才能开始此导览。",
+				"step-0": {
+					"title": "前往3D选项卡",
+					"content": "3D选项卡包含所有3D图块的设置。"
+				},
+				"step-1": {
+					"title": "3D模型",
+					"content": "此设置允许你设置图块的3D模型。类似于2D图像，你可以浏览和上传3D文件。"
+				},
+				"step-2": {
+					"title": "动态网格",
+					"content": "动态网格选项是一个非常强大的工具，它允许你生成简单的3D形状等。"
+				},
+				"step-3": {
+					"title": "纹理",
+					"content": "此设置允许你设置图块的纹理。虽然你可以使用普通的Foundry文件浏览，但也可以使用“打开材质浏览器”按钮浏览大量包含的纹理。"
+				},
+				"step-4": {
+					"title": "视野",
+					"content": "此设置将让你决定图块如何与视野交互。在3D中不需要墙壁，图块将完成所有工作！"
+				},
+				"step-5": {
+					"title": "着色器",
+					"content": "此部分允许你将着色器应用于图块。着色器是一种强大的工具，可用于创建许多效果。尝试将一些着色器应用于你的图块，看看它们的效果！"
+				},
+				"step-6": {
+					"title": "着色器窗口",
+					"content": "此窗口允许你编辑着色器参数。切换选项卡以启用各种效果并尝试它们！"
+				}
+			},
+			"tokens": {
+				"title": "基础：3D Token",
+				"description": "此导览将引导你了解Token配置，以设置3D Token。",
+				"requires": "你需要选中一个Token，并安装3D Canvas地图制作包和3D CanvasToken合集才能开始此导览。",
+				"step-0": {
+					"title": "前往3D选项卡",
+					"content": "3D选项卡包含所有3D Token的设置。"
+				},
+				"step-1": {
+					"title": "3D模型",
+					"content": "此设置允许你设置Token的3D模型。类似于2D图像，你可以浏览和上传3D文件。"
+				},
+				"step-2": {
+					"title": "材质",
+					"content": "此设置允许你设置Token的材质。你可以选择预设或使用自定义材质。"
+				},
+				"step-3": {
+					"title": "颜色",
+					"content": "此设置允许你在使用的预设材质或未着色的Token时设置Token的颜色。"
+				},
+				"step-4": {
+					"title": "Token浏览器",
+					"content": "此按钮将打开Token浏览器。"
+				},
+				"step-5": {
+					"title": "Token浏览器",
+					"content": "此窗口允许你浏览包含的Token。默认情况下，仅显示着色Token，你可以通过在3D Canvas地图制作包模组设置中启用相应设置来查看所有Token。"
+				}
+			},
+			"asset-browser": {
+				"title": "面板：资产浏览器",
+				"description": "此导览将引导你了解资产浏览器的高级功能。",
+				"requires": "你需要安装3D Canvas地图制作包并打开资产浏览器才能开始此导览。",
+				"step-0": {
+					"title": "资产浏览器窗口",
+					"content": "此窗口允许你浏览包含的资产。"
+				},
+				"step-1": {
+					"title": "搜索栏",
+					"content": "你可以使用搜索栏查找特定资产。你还可以使用关键字如'nature'或'scifi'来查找与特定主题匹配的资产。"
+				},
+				"step-2": {
+					"title": "资产面板",
+					"content": "此面板包含所有与你的搜索匹配的资产。你可以将它们拖放到场景中，或点击（或Ctrl/Shift+点击以进行多选）以选择它们。"
+				},
+				"step-3": {
+					"title": "随机化",
+					"content": "你可以使用这些选项来随机化资产的放置。你可以随机化旋转、缩放和色调。"
+				},
+				"step-4": {
+					"title": "放置",
+					"content": "你可以使用这些选项来确定资产的放置方式。例如，如果你希望它们与网格对齐。"
+				},
+				"step-5": {
+					"title": "碰撞",
+					"content": "这些选项将让你决定放置的资产是否应阻挡视野和/或移动。"
+				},
+				"step-6": {
+					"title": "绘制",
+					"content": "此按钮将切换资产绘制模式。启用后，你可以在场景中点击并拖动以放置多个资产。"
+				},
+				"step-7": {
+					"title": "外观",
+					"content": "这些字段确定资产的基本外观设置，例如缩放、旋转和色调。"
+				},
+				"step-8": {
+					"title": "实用工具",
+					"content": "实用工具选项卡包含批量操作的快速快捷方式。"
+				},
+				"step-9": {
+					"title": "优化",
+					"content": "当你完成场景构建时，使用“合并图块”按钮将所有相似的图块合并为单个图块以提高性能。"
+				}
+			},
+			"quick-environment": {
+				"title": "面板：环境",
+				"description": "此导览将引导你了解环境面板。",
+				"requires": "你需要安装3D Canvas地图制作包并打开环境面板才能开始此导览。",
+				"step-0": {
+					"title": "环境面板",
+					"content": "此面板允许你通过几次点击快速设置场景氛围。"
+				},
+				"step-1": {
+					"title": "时间",
+					"content": "以24小时格式设置时间。这将影响光照和阴影，你可以进入场景设置进行更高级的配置。"
+				},
+				"step-2": {
+					"title": "天气",
+					"content": "你可以将天气设置为预设之一，或进入场景设置以使用多个和自定义效果。"
+				},
+				"step-3": {
+					"title": "天空盒",
+					"content": "天空盒不仅会影响场景的背景，还会影响光照。尝试不同的天空盒，看看它们如何极大地改变场景氛围。"
+				}
+			},
+			"quick-terrain": {
+				"title": "面板：地形",
+				"description": "此导览将引导你了解地形面板。",
+				"requires": "你需要安装3D Canvas地图制作包并打开地形面板才能开始此导览。",
+				"step-0": {
+					"title": "地形面板",
+					"content": "此面板允许你快速设置地形，作为场景的基础。"
+				},
+				"step-1": {
+					"title": "主题",
+					"content": "在此部分中，你可以选择一些预设的地形主题。使用“应用主题”按钮将所选主题应用于当前地形。"
+				},
+				"step-2": {
+					"title": "地形",
+					"content": "此部分将让你随机生成地形，使用下拉菜单选择不同的地形类型。“微调”按钮将让你手动偏移和缩放用于地形的高度图。"
+				},
+				"step-3": {
+					"title": "流体",
+					"content": "点击不同的流体按钮以创建流体图块。请注意，根据你的地形，流体可能需要缩放或重新定位。如果需要，请使用Gizmo工具进行操作。"
+				},
+				"step-4": {
+					"title": "工具",
+					"content": "此部分包含一些帮助你处理地形的工具。使用“锁定/解锁”按钮防止地形被左键选中，或使用“网格”按钮切换地形上的网格显示。"
+				}
+			},
+			"material-browser": {
+				"title": "面板：材质",
+				"description": "此导览将引导你了解材质面板。",
+				"requires": "你需要安装3D Canvas地图制作包并打开材质面板才能开始此导览。",
+				"step-0": {
+					"title": "材质面板",
+					"content": "此面板允许你快速浏览并更改所选图块的材质。"
+				},
+				"step-1": {
+					"title": "搜索栏",
+					"content": "你可以使用搜索栏查找特定材质。"
+				},
+				"step-2": {
+					"title": "纹理重复",
+					"content": "此字段允许你更改所选图块的纹理重复。这将影响图块上纹理的平铺方式。"
+				},
+				"step-3": {
+					"title": "材质列表",
+					"content": "此列表包含所有与你的搜索匹配的材质。点击材质以将其应用于所有选定的图块。"
+				}
+			},
+			"effect-browser": {
+				"title": "面板：效果",
+				"description": "此导览将引导你了解效果面板。",
+				"requires": "你需要安装3D Canvas地图制作包并打开效果面板才能开始此导览。",
+				"step-0": {
+					"title": "效果面板",
+					"content": "此面板允许你将效果拖放到场景中。<hr>效果是作为贴图投影的纹理，放置后你将看到一个红色锥体，指示投影方向。此方向仅在图块层中对GM可见。"
+				},
+				"step-1": {
+					"title": "缩放",
+					"content": "此字段允许你更改所选效果的缩放比例。"
+				},
+				"step-2": {
+					"title": "搜索栏",
+					"content": "你可以使用搜索栏查找特定效果。"
+				},
+				"step-3": {
+					"title": "效果列表",
+					"content": "此列表包含所有与你的搜索匹配的效果。将效果拖放到场景中以放置它。<hr>如果你安装了<strong>Token Attacher</strong>模组，将效果拖放到Token上会将其附加到Token。"
+				}
+			},
+			"cutscene-panel": {
+				"title": "面板：过场动画",
+				"description": "此导览将引导你了解过场动画面板。",
+				"requires": "你需要安装3D Canvas地图制作包并打开过场动画面板才能开始此导览。",
+				"step-0": {
+					"title": "过场动画面板",
+					"content": "此面板允许你快速为场景设置一个或多个过场动画。"
+				},
+				"step-1": {
+					"title": "创建剪辑",
+					"content": "要创建新剪辑，请点击<strong>添加剪辑</strong>按钮。这将创建一个新剪辑并打开剪辑设置。"
+				},
+				"step-2": {
+					"title": "剪辑设置",
+					"content": "此部分允许你设置当前剪辑的设置。你可以编辑名称、播放或删除剪辑。"
+				},
+				"step-3": {
+					"title": "添加关键帧",
+					"content": "要添加关键帧，请点击<strong>添加关键帧</strong>按钮。这将创建一个新的关键帧。<hr>关键帧是相机将被定位和旋转的时间点。你可以添加任意数量的关键帧以创建过场动画。"
+				},
+				"step-4": {
+					"title": "捕获关键帧",
+					"content": "要捕获当前相机的位置和旋转，请点击<strong>捕获</strong>按钮。这将存储当前相机的位置和旋转以用于关键帧。"
+				},
+				"step-5": {
+					"title": "持续时间",
+					"content": "此字段允许你更改当前关键帧的持续时间。这将影响相机从上一个关键帧移动到当前关键帧所需的时间。<hr>如果<strong>过渡</strong>字段设置为<strong>交叉淡入淡出</strong>，则持续时间是相机淡出和淡入所需的时间。"
+				},
+				"step-6": {
+					"title": "停留时间",
+					"content": "此字段允许你更改相机在当前关键帧停留的时间，然后移动到下一个关键帧。"
+				},
+				"step-7": {
+					"title": "过渡",
+					"content": "此字段允许你更改过渡类型。你可以选择<strong>链式</strong>和<strong>交叉淡入淡出</strong>。链式将使相机从一个关键帧移动到下一个关键帧，交叉淡入淡出将使相机在关键帧之间淡出和淡入。"
+				},
+				"step-8": {
+					"title": "缓动",
+					"content": "此字段允许你更改缓动类型。你可以在此处<a href='https://easings.net/en'>了解更多</a>关于缓动的信息。"
+				},
+				"step-9": {
+					"title": "编辑",
+					"content": "此按钮允许你切换此剪辑的关键帧设置。"
+				},
+				"step-10": {
+					"title": "播放",
+					"content": "完成过场动画后，你可以点击<strong>播放</strong>按钮播放它。系统会提示你选择哪些玩家可以观看过场动画。"
+				}
+			},
+			"room-builder": {
+				"title": "面板：地牢与室内",
+				"description": "此导览将引导你了解地牢与室内面板。",
+				"requires": "你需要安装3D Canvas地图制作包并打开地牢与室内面板才能开始此导览。",
+				"step-0": {
+					"title": "地牢与室内面板",
+					"content": "此面板允许你创建地牢、洞穴和建筑内部。"
+				},
+				"step-1": {
+					"title": "构建",
+					"content": "此部分包含你构建布局所需的所有工具。"
+				},
+				"step-2": {
+					"title": "添加",
+					"content": "在此模式下，绘制的形状将被添加到布局中。"
+				},
+				"step-3": {
+					"title": "减去",
+					"content": "在此模式下，绘制的形状将从布局中减去。"
+				},
+				"step-4": {
+					"title": "切割",
+					"content": "在此模式下，你可以切割墙壁以创建开口。"
+				},
+				"step-5": {
+					"title": "形状",
+					"content": "此部分将确定绘制模式<h3>矩形和椭圆</h3><p>在此模式下，点击并拖动场景以绘制形状，满意后释放。</p><h3>多边形和样条</h3><p>在此模式下，点击并拖动以开始绘制多边形。按住左键时，点击右键以添加点。满意后释放左键，如果未闭合形状，则仅创建墙壁。</p>"
+				},
+				"step-6": {
+					"title": "墙壁类型",
+					"content": "此字段允许你更改墙壁类型。<strong>平滑</strong>将创建类似内部的墙壁，<strong>粗糙</strong>将创建类似洞穴的墙壁。"
+				},
+				"step-7": {
+					"title": "墙壁和地板",
+					"content": "此部分允许你选择是绘制墙壁、地板还是两者。"
+				},
+				"step-8": {
+					"title": "主题",
+					"content": "此部分允许你选择地牢的主题。你可以通过在下拉菜单中选择<strong>自定义</strong>，然后选择墙壁和地板的纹理来设置自定义主题。"
+				},
+				"step-9": {
+					"title": "尺寸",
+					"content": "此部分允许你更改墙壁的高度和厚度（以像素为单位）。"
+				},
+				"step-10": {
+					"title": "开始吧！",
+					"content": "现在你知道如何使用面板了，让我们开始构建吧！强烈建议在平坦的表面上构建。"
+				}
+			},
+			"asset-browser-paint": {
+				"title": "面板：资产浏览器 - 绘制",
+				"description": "此导览将引导你了解资产浏览器的绘制模式。",
+				"requires": "你需要安装3D Canvas地图制作包并打开资产浏览器才能开始此导览。",
+				"step-0": {
+					"title": "绘制模式",
+					"content": "绘制模式允许你快速在场景中散布图块。"
+				},
+				"step-1": {
+					"title": "选择一个或多个资产",
+					"content": "要开始绘制，你需要在资产浏览器中选择一个或多个资产。点击资产以选择它，或Ctrl+点击以选择多个资产。"
+				},
+				"step-2": {
+					"title": "选择通知",
+					"content": "选择了一个或多个资产后，你将在窗口底部看到通知。"
+				},
+				"step-3": {
+					"title": "绘制：矩形",
+					"content": "当“放置图块”工具启用时，你可以点击并拖动场景以绘制矩形。矩形将填充所选资产。"
+				},
+				"step-4": {
+					"title": "绘制：多边形",
+					"content": "当“多边形”工具启用时，点击并拖动以开始绘制多边形。按住左键时，点击右键以添加点。满意后释放左键，如果未闭合形状，资产将散布在段上，否则将填充区域。"
+				},
+				"step-5": {
+					"title": "绘制：自由绘制",
+					"content": "当“选择”工具启用时，按住Shift，然后点击并拖动以在场景中放置资产。"
+				}
+			}
+		},
+		"mergeTiles": {
+			"title": "合并图块",
+			"occlusionGroup": " - 遮挡ID：",
+			"content": "合并图块是不可逆的操作，建议在合并大量图块之前备份场景。<br>你即将合并<strong>%count%图块</strong>。选定的图块将被排除。你确定要继续吗？"
+		},
+		"extrudeWalls": {
+			"title": "挤出墙壁",
+			"content": "此过程将尝试将场景中的墙壁转换为图块。你确定要继续吗？"
+		},
+		"dynamicSkyConfig": {
+			"title": "动态天空配置",
+			"sceneConfig": {
+				"label": "动态天空配置",
+				"button": "打开配置",
+				"notes": "动态天空功能使天空看起来更真实且具有动态效果，但场景中的实际颜色和反射仍来自上方“天空”部分的静态图像。"
+			},
+			"enabled": {
+				"label": "启用"
+			},
+			"turbidity": {
+				"label": "浑浊度",
+				"notes": "浑浊度是空气中颗粒物含量的度量。高浑浊度会导致天空更加朦胧。"
+			},
+			"rayleigh": {
+				"label": "瑞利散射",
+				"notes": "瑞利散射是由远小于光波长的颗粒引起的光散射。它是白天天空呈蓝色的原因。"
+			},
+			"mieCoefficient": {
+				"label": "米氏系数",
+				"notes": "米氏散射是由大于光波长的颗粒引起的光散射。它是日出和日落时天空呈红色和橙色的原因。"
+			},
+			"mieDirectionalG": {
+				"label": "米氏方向G"
+			},
+			"starDensity": {
+				"label": "星密度",
+				"notes": "天空中可见的星星数量。"
+			},
+			"color": {
+				"label": "颜色",
+				"notes": "天空的颜色。"
+			},
+			"enableClouds": {
+				"label": "启用云层"
+			},
+			"cloudsSpeed": {
+				"label": "云速度"
+			},
+			"cloudsAlpha": {
+				"label": "云不透明度"
+			},
+			"cloudsTint": {
+				"label": "云颜色"
+			},
+			"cloudsScale": {
+				"label": "云缩放"
+			}
+		}
+	}
+}

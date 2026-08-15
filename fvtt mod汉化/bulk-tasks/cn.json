@@ -1,0 +1,44 @@
+
+	"BulkTasks": {
+		"title": "批量任务",
+		"delete": "删除",
+		"duplicate": "复制",
+		"export": "导出",
+		"import": "导入",
+		"move": "移动",
+		"rename": "重命名",
+		"update": "更新",
+		"secondaryNav": {
+			"actors": "角色",
+			"cards": "牌堆",
+			"compendium": "合集",
+			"journal": "日志",
+			"macros": "宏",
+			"items": "物品",
+			"playlists": "播放列表",
+			"scenes": "场景",
+			"tables": "随机表"
+		},
+		"settings": {
+			"gmOnly": {
+				"title": "对玩家隐藏菜单",
+				"hint": ""
+			},
+			"defaultExportNamingConvention": { "title": "导出文件的默认命名。" },
+			"defaultExportZipName": { "title": "导出的默认 Zip 名称。" },
+			"defaultDuplicateNamingConvention": { "title": "复制文件的默认命名。" },
+			"defaultRenameNamingConvention": { "title": "重命名文件的默认命名。" },
+			"permDefaultName": {
+				"title": "权限未定义的文件的默认行为。",
+				"hint": "",
+				"choices": {
+					"GMOnly": "仅GM",
+					"all": "任何人"
+				}
+			},
+			"keepIdsOnImport": { "title": "导入时保留ID" }
+		}
+	},
+	"BM.deleteTitle": "删除选定",
+	"BM.deleteContent": "你确定吗？<br />该操作是永久性的，无法撤销。"
+}

@@ -1,0 +1,67 @@
+{
+    "simple-session-scheduler": {
+        "settings": {
+            "sessionFrequency": {
+                "name": "Session Frequency",
+                "hint": "How far from the last session the next session should be scheduled.",
+                "daily": "Daily",
+                "weekly": "Weekly",
+                "biweekly": "Bi-weekly",
+                "monthly": "Monthly"
+            },
+            "silentMode": {
+                "name": "Silent Mode",
+                "hint": "If enabled, the module will not prompt to confirm the next session date and will instead automatically set it based on the session frequency."
+            },
+            "enable": {
+                "name": "Enable",
+                "hint": "Enables the module functionality."
+            },
+            "announceType": {
+                "name": "Announcement Type",
+                "hint": "Choose how the next session date is announced when it is automatically set.",
+                "none": "None",
+                "public": "Public",
+                "whisperGMs": "Whisper to all GMs",
+                "whisperCurrentUser": "Whisper to Current User"
+            },
+            "sessionReminder": {
+                "name": "Session Reminder",
+                "hint": "Reminds you when the next session is scheduled upon joining the world.",
+                "prompt": "Dialog",
+                "whisper": "Whisper",
+                "none": "None"
+            },
+            "dateSettings": {
+                "name": "Date Settings",
+                "hint": "Configure how dates are displayed. Long: Sunday, January 1, 2023 at 12:00 PM. Numeric: 01/01/2023, 12:00 PM.",
+                "long": "Long",
+                "numeric": "Numeric"
+            }
+        },
+        "dialogs": {
+            "sessionDate": {
+                "title": "Upcoming Session",
+                "content": "The next session is scheduled for {date}."
+            },
+            "sessionDatePassed": {
+                "title": "Session Date Passed",
+                "content": "The next session date was {date}, but it has already passed. Your GM should update the session date."
+            },
+            "reschedule": {
+                "title": "Next Session Confirmation",
+                "lastSession": "The last session was scheduled for:",
+                "futureSession": "The future session will be scheduled for:",
+                "confirm": "Do you want to proceed?"
+            }
+        },
+        "announcement": {
+            "message": "The next session has been scheduled for {date}.",
+            "silentMessage": "The next session has been automatically scheduled for {date}.",
+            "speaker": "Simple Session Scheduler",
+            "sessionDatePassed": "The next session date was {date}, but it has already passed. Your GM should update the session date.",
+            "sessionDate": "The next session is scheduled for {date}.",
+            "setInitialSession": "To use the Simple Session Scheduler, you need to set the next session date in Edit World first."
+        }
+    }
+}

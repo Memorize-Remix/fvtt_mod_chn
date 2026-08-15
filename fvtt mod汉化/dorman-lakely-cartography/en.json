@@ -1,0 +1,83 @@
+{
+  "DLC": {
+    "Title": "Dorman Lakely Cartography",
+    "Description": "Download and manage custom battlemaps with Patreon integration",
+
+    "Settings": {
+      "DownloadPath": {
+        "Name": "Download Path",
+        "Hint": "Custom path for downloaded map files (leave empty for default module path)"
+      },
+      "ConcurrentDownloads": {
+        "Name": "Concurrent Downloads",
+        "Hint": "Number of files to download in parallel (1-10)"
+      },
+      "CacheExpiry": {
+        "Name": "Cache Expiry (hours)",
+        "Hint": "How long to cache map catalog data before refreshing"
+      }
+    },
+
+    "Gallery": {
+      "Title": "Map Gallery",
+      "SearchPlaceholder": "Search maps...",
+      "FilterByTags": "Filter by Tags",
+      "ClearTags": "Clear all tags",
+      "NoMapsFound": "No maps found",
+      "AdjustFilters": "Try adjusting your filters or search query",
+      "BackToGallery": "Back to Gallery",
+      "LoadingCatalog": "Loading map catalog...",
+      "RefreshCatalog": "Refresh Map Catalog"
+    },
+
+    "Auth": {
+      "NotLoggedIn": "Not Logged In",
+      "FreeAccess": "Free Access",
+      "PremiumAccess": "Premium Access",
+      "LoginWithPatreon": "Login with Patreon",
+      "Logout": "Logout",
+      "WaitingForAuth": "Waiting for Patreon authentication...",
+      "AuthSuccess": "Successfully authenticated!",
+      "AuthFailed": "Patreon authentication failed. Please try again.",
+      "AuthTimeout": "Patreon authentication timed out or was cancelled.",
+      "LogoutSuccess": "Successfully logged out.",
+      "PopupBlocked": "Failed to open Patreon login window. Please allow popups for this site."
+    },
+
+    "Download": {
+      "Title": "Download Map",
+      "StartDownload": "Start Download",
+      "Cancel": "Cancel",
+      "Close": "Close",
+      "DownloadingFiles": "Downloading Files...",
+      "DownloadComplete": "Download Complete!",
+      "FilesToDownload": "Files to Download",
+      "Completed": "Completed",
+      "Failed": "Failed",
+      "LoadingFileList": "Loading file list...",
+      "DownloadStarted": "Starting download",
+      "DownloadSuccess": "Successfully downloaded {count} files!",
+      "DownloadPartial": "Downloaded {success} files with {fail} errors.",
+      "DownloadCancelled": "Download cancelled.",
+      "PleaseLoginToDownload": "Please log in to download maps.",
+      "PremiumRequired": "This map requires Premium access. Please upgrade your Patreon tier."
+    },
+
+    "Map": {
+      "DownloadMap": "Download Map",
+      "FreeMap": "Free",
+      "PremiumMap": "Premium",
+      "PremiumAccessRequired": "Premium access required"
+    },
+
+    "Errors": {
+      "LoadDataFailed": "Failed to load map catalog. Please try again.",
+      "LoadFilesFailed": "Failed to load file list.",
+      "DownloadFailed": "Download failed. Please try again.",
+      "AuthRequired": "Authentication required. Please log in with Patreon.",
+      "AccessDenied": "You do not have access to this map.",
+      "FileNotFound": "File not found.",
+      "NetworkError": "Network error. Please check your connection and try again."
+    }
+  }
+}

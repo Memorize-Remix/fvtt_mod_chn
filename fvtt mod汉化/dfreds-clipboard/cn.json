@@ -1,0 +1,152 @@
+
+    "Clipboard": {
+        "App": {
+            "Name": "剪切板",
+            "Empty": "该图层尚未复制任何内容",
+            "CopiedAt": "复制于{date}",
+            "Copy": "复制",
+            "Delete": "删除"
+        },
+        "Keybinding": {
+            "ToggleAppName": "切换剪切板应用",
+            "ToggleAppHint": "打开/关闭剪切板应用"
+        },
+        "Settings": {
+            "MaxItems": "最大存储数量",
+            "MaxItemsHint": "剪切板单次可保存的最大项目数"
+        },
+        "Labels": {
+            "Drawing": {
+                "Ellipse": "椭圆形",
+                "Rectangle": "矩形",
+                "Freeform": "自由绘制",
+                "Polygon": "多边形",
+                "Unknown": "未知"
+            },
+            "Light": {
+                "Base": "光源",
+                "Disabled": "(已禁用)",
+                "Colored": "彩色"
+            },
+            "Sound": {
+                "Unknown": "未知音效",
+                "NoSound": "无音效"
+            },
+            "Template": {
+                "Circle": "圆形模板",
+                "Cone": "锥形模板",
+                "Rectangle": "矩形模板",
+                "Ray": "射线模板",
+                "Unknown": "未知模板"
+            },
+            "Tile": {
+                "Background": "背景图块",
+                "Foreground": "前景图块",
+                "Unknown": "未知图块"
+            },
+            "Token": {
+                "Linked": "(已关联)",
+                "Hidden": "(已隐藏)",
+                "PC": "(PC)",
+                "NPC": "(NPC)"
+            },
+            "Wall": {
+                "Door": "门",
+                "SecretDoor": "秘门",
+                "BasicWall": "基础墙壁",
+                "TerrainWall": "地形墙",
+                "InvisibleWall": "隐形墙",
+                "EtherealWall": "以太墙",
+                "WindowWall": "窗户墙",
+                "Wall": "墙壁"
+            }
+        },
+        "Hints": {
+            "InScene": "位于场景{name}",
+            "Position": "坐标：{x},{y}",
+			"Elevation": "高度：{height}",
+            "Fill": "填充色：{color}（不透明度{opacity}%）",
+            "Stroke": "描边：{color}（不透明度{opacity}%）",
+			
+			"Drawing": {
+				"FillTypes": {
+					"Solid": "实心填充",
+					"Pattern": "图案填充"
+				},
+				"Texture": "纹理: {texture}",
+				"StrokeWidth": "描边宽度: {width}",
+				"SmoothFactor": "平滑系数: {factor}"
+			},
+            "Light": {
+                "Bright": "明亮范围{distance}",
+                "Dim": "昏暗范围{distance}", 
+                "Color": "光源颜色{color}"
+            },
+            "Note": {
+				"Unknown": "未知",
+                "IconSize": "图标尺寸：{size}px",
+                "IconTint": "图标色调：{color}",
+                "Label": "标签：\"{text}\"",
+                "TextColor": "文字颜色：{color}",
+                "TextSize": "文字大小：{size}px",
+                "Global": "全局可见"
+            },
+            "Template": {
+                "Distance": "{distance}",
+                "Angle": "{angle}°",
+                "Width": "{width} 宽", 
+                "Direction": "{angle}° 方向",
+				"Border": "边框: {color}",
+				"Fill": "填充: {color}",
+				"Texture": "纹理: {texture}"
+            },
+			"Tile": {
+				"OcclusionTypes": {
+					"Fade": "淡出遮挡",
+					"Radial": "径向遮挡", 
+					"Vision": "视野遮挡"
+				},
+				"OcclusionAlpha": "透明度: {value}%",
+				"RestrictionTypes": {
+					"Light": "光照",
+					"Weather": "天气"
+				},
+				"Restricts": "限制: {types}",
+				"Rotation": "{rotation}° 旋转",
+				"Tint": "着色: {color}",
+				"Scale": "缩放: {x}x{y}",
+				"Opacity": "透明度: {value}%",
+				"Size": "{width}x{height}"
+			},
+            "Token": {
+                "Disposition": {
+                    "Hostile": "敌对",
+                    "Neutral": "中立",
+                    "Friendly": "友善"
+                },
+                "Vision": "视野范围：{range}",
+                "Light": "光源：{bright}/{dim}"
+            },
+            "Sound": {
+                "Radius": "{distance} 半径",
+                "Volume": "{level}% 音量",
+                "WallsBlock": "被墙壁阻挡",
+                "IgnoresWalls": "忽略墙壁",
+                "GradualFade": "渐变衰减",
+                "NoFade": "无衰减",
+                "Effect": "{type}效果"
+            },
+            "Wall": {
+                "RegularDoor": "普通门",
+                "SecretDoor": "秘门",
+                "UnknownDoor": "未知门",
+                "Blocks": "阻挡：{types}",
+                "NoBlocks": "无阻挡",
+                "Light": "光线",
+                "Vision": "视野",
+                "Sound": "声音",
+                "Movement": "移动"
+            }
+        }
+    }
+}

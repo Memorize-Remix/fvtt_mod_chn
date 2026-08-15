@@ -1,0 +1,85 @@
+{
+  "sheet-export": {
+    "menu":{
+      "label": "Sheet Export"
+    },
+    "settings": {
+      "mappingOption": {
+        "Name": "Mappings version-release",
+        "Hint": "Choose the export sheet version and release"
+      },
+      "mappingEdit": {
+        "Name": "Generate mapping",
+        "Hint": "Generate the mapping files of the version-release chosen below"
+      },
+      "setCustomMapping": {
+        "Name": "Set custom mapping",
+        "Hint": "set the own custom mapping"
+      },
+      "mapping": {
+        "Name": "Mapping",
+        "Hint": "JS file which is used to map the PDF fields to information on the Foundry character sheet. See the README for details."
+      },
+      "mapping-npc": {
+        "Name": "Mapping NPC",
+        "Hint": "JS file which is used to map the PDF fields to information on the Foundry NPC sheet. See the README for details."
+      }
+    },
+    "sheet": {
+      "override": "Override mapping's PDF"
+    },
+    "mappingEdit": {
+      "upload": "Generate mapping for PC from PDF",
+      "PC": "PC",
+      "NPC": "NPC"
+    },
+    "customMapping": {
+      "upload-player-js": "Add player.js mapping file",
+      "upload-player-pdf": "Add player PDF file",
+      "upload-npc-js": "Add npc.js mapping file",
+      "upload-npc-pdf": "Add npc PDF file"
+    },
+    "download": {
+      "dnd5e": {
+        "label": "PDF for D&D 5e",
+        "title": "Download the official character sheet PDF for 5th edition",
+        "url": "https://media.wizards.com/2016/dnd/downloads/5E_CharacterSheet_Fillable.pdf"
+      },
+      "starwars-ffg": {
+        "label": "PDF for Star Wars FFG",
+        "title": "Download the unofficial character sheet for Star Wars FFG",
+        "url": "http://holocast.terceiraterra.com/wp-content/uploads/EotE-CharacterSheet-Fillable-v4.pdf"
+      },
+      "shadowrun5e": {
+        "label": "PDF for SR5e",
+        "title": "Download an unofficial character sheet PDF for Shadowrun 5e",
+        "url": "https://drive.google.com/uc?export=download&id=1Gkaoi3JR6bfjhhq1PcgFpqGZlhTWv2oV"
+      },
+      "pf1": {
+        "label": "PDF for Pathfinder 1",
+        "title": "Download an unofficial character sheet PDF for Pathfinder 1",
+        "url": "https://cdn.discordapp.com/attachments/877667041119731734/940318362146308127/Pf1e-Foundry_to_PDF.pdf"
+      },
+      "pf2e": {
+        "label": "PDF for Pathfinder 2e",
+        "title": "Download an unofficial character sheet PDF for Pathfinder 2e",
+        "url": "https://drive.google.com/uc?export=download&id=1dP95d_1UgenS9olPasXra8iItBZFCXMo"
+      },
+      "pf2e-remastered": {
+        "label": "PDF for Pathfinder 2e Remastered",
+        "title": "Download an unofficial remastered character sheet PDF for Pathfinder 2e",
+        "url": "https://github.com/arcanistzed/pdf-sheet/blob/main/pdf/pf2e-remastered.pdf"
+      },
+      "dcc": {
+        "label": "PDF for Dungeon Crawl Classics",
+        "title": "Download a character sheet PDF from Goodman Games for Dungeon Crawl Classics",
+        "url": "https://goodman-games.com/wp-content/uploads/2021/04/0level_fillable.pdf"
+      },
+      "swade": {
+        "label": "PDF for SWADE",
+        "title": "View the the official character sheet PDF for SWADE in the PEG store",
+        "url": "https://peginc.com/store/savage-worlds-character-sheet-pdf-swade/"
+      }
+    }
+  }
+}

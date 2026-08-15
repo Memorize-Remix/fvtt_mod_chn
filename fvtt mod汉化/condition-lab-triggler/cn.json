@@ -1,0 +1,295 @@
+
+	"CLT": {
+		"Trigger": "触发器",
+		"ENHANCED_CONDITIONS": {
+			"OutputChatConfirm": {
+				"Title": "为所有状态启用输出到聊天？",
+				"Content": "点击“是”以在所有状态上启用“输出到聊天”"
+			},
+			"ConditionLab": {
+				"NoReference": "--无参考条目--（将文档拖入此字段以设置）",
+				"FilterInputTitle": "按名称过滤",
+				"FilterButtonTitle": "应用过滤器",
+				"SortAnchorTitle": {
+					"asc": "A 到 Z",
+					"desc": "Z 到 A",
+					"unsorted": "未排序"
+				},
+				"SortDirectionSave": {
+					"Title": "保存排序方向的映射？",
+					"Content": "<p>点击“是”以保存当前排序方向的状态实验映射。点击“否”取消保存。</p>",
+					"CheckboxText": "不再显示"
+				},
+				"BadReference": "无法为拖入的内容（角色、物品、日志等）构建链接",
+				"RestoreDefaultClearCache": {
+					"CheckboxText": "清除缓存"
+				},
+				"Buttons": {
+					"Options": "选项"
+				}
+			},
+			"ChatCard": {
+				"Heading": "状态变更",
+				"HeadingActive": "激活状态",
+				"Title": {
+					"Active": "激活状态",
+					"Added": "添加状态",
+					"Removed": "移除状态"
+				},
+				"Buttons": {
+					"Undo": "撤销移除状态",
+					"Remove": "移除状态"
+				}
+			},
+			"MacroConfig": {
+				"Title": "宏配置",
+				"Heading": "要执行的宏",
+				"ApplyHeading": "应用宏",
+				"RemoveHeading": "移除宏",
+				"Description": "选择在将此状态添加到或从角色/Token移除时要执行的宏",
+				"NoTriggerSet": "--未设置触发器--",
+				"SelectNone": "--无宏--"
+			},
+			"TriggerConfig": {
+				"Title": "触发器配置",
+				"Heading": "触发器",
+				"ApplyHeading": "应用触发器",
+				"RemoveHeading": "移除触发器",
+				"Description": "应用或移除此状态的触发器",
+				"SelectNone": "--无触发器--"
+			},
+			"OptionConfig": {
+				"Title": "选项配置",
+				"Heading": "选项",
+				"Description": "此状态的一般选项",
+				"SpecialStatusEffects": {
+					"Heading": "特殊状态效果",
+					"Description": "使用原生FVTT功能应用的特殊效果。"
+				},
+				"BlindToken": {
+					"Label": "目盲Token",
+					"Notes": "当应用时，此状态还会使Token目盲"
+				},
+				"MarkInvisible": {
+					"Label": "标记为隐形",
+					"Notes": "当应用时，此状态会使受影响的Token被标记为隐形"
+				},
+				"SpecialStatusEffectOverride": {
+					"Title": "覆盖此状态效果的现有状态？",
+					"Content": "另一个状态（{existingCondition}）已设置为应用此特殊状态效果：{statusEffect}。<p>如果您点击“是”并保存此状态的选项，您将覆盖现有的映射。</p>"
+				},
+				"SaveNote": "注意：点击保存将保存状态实验映射"
+			},
+			"Warnings": {
+				"ApplyCondition": "应用状态applyCondition 已替换为 添加状态addCondition。请更新您的代码。"
+			},
+			"MapMismatch": "此映射与您的游戏系统不匹配，可能无法按预期工作。",
+			"ApplyCondition": {
+				"Failed": {
+					"NoToken": "应用状态失败。未提供Token",
+					"NoCondition": "应用状态失败。找不到状态：",
+					"NoIcon": "应用状态失败。找不到图标。",
+					"AlreadyActive": "已激活。应用状态失败"
+				}
+			},
+			"GetConditions": {
+				"Failed": {
+					"NoToken": "获取状态失败。未提供实体且无法自动找到",
+					"NoCondition": "获取状态失败。未找到状态映射",
+					"NoResults": "获取状态失败。在角色/Token上未找到状态"
+				}
+			},
+			"RemoveCondition": {
+				"Failed": {
+					"NoToken": "移除状态失败。未提供Token",
+					"NoCondition": "移除状态失败。找不到名称为的状态：",
+					"NoIcon": "移除状态失败。找不到图标",
+					"NotActive": "未在Token上激活。移除状态失败。"
+				}
+			},
+			"RemoveAllConditions": {
+				"Failed": {
+					"NoToken": "移除状态失败。未提供Token",
+					"NoCondition": "移除状态失败。没有激活的状态映射"
+				}
+			},
+			"Lab": {
+				"Title": "状态实验",
+				"Hint": "提供将状态映射到状态效果图标的功能",
+				"MappingType": {
+					"Label": "映射类型",
+					"Unsaved": "（未保存的更改）"
+				},
+				"ActiveEffects": {
+					"Title": "激活效果配置",
+					"TitleDisabledNew": "先保存映射",
+					"TitleDisabledDefault": "无法编辑默认映射"
+				},
+				"Import": {
+					"NoFile": "您未上传数据文件！"
+				},
+				"ConfirmDeleteTitle": "确认删除行",
+				"ConfirmDeleteContent": "您确定要删除此行吗？",
+				"RestoreDefaultsTitle": "恢复默认值？",
+				"RestoreDefaultsContent": "<p>您确定要恢复此映射的默认值吗？</p><strong>如果保存，此更改将是永久的。</strong>",
+				"ResetFormTitle": "重置表单？",
+				"ResetFormContent": "<p>您确定要重置表单吗？</p><p><strong>您将丢失所有未保存的更改。</strong></p>",
+				"SaveFailed": "状态实验保存并关闭失败",
+				"SaveSuccess": "状态实验映射已保存！",
+				"ImportTitle": "导入状态映射",
+				"ExportTitle": "导出状态映射",
+				"Options": {
+					"Title": "选项：",
+					"Overlay.Label": "叠加",
+					"RemoveOthers.Label": "移除其他",
+					"OutputChat.Label": "输出到聊天",
+					"MarkDefeated.Label": "标记为击败",
+					"Overlay.Title": "状态是叠加",
+					"RemoveOthers.Title": "应用此状态时移除其他状态",
+					"MarkDefeated.Title": "应用此状态时标记匹配的战斗者为击败",
+					"OutputChat.Title": "添加/移除此状态时输出到聊天"
+				}
+			}
+		},
+		"GAME_SYSTEMS": {
+			"other": "其他",
+			"custom": "自定义/其他",
+			"unknown": "--未知--"
+		},
+		"KEYBINDINGS": {
+			"openConditionLab": {
+				"name": "打开状态实验"
+			},
+			"openTriggler": {
+				"name": "打开触发器"
+			}
+		},
+		"MIGRATION": {
+			"Title": "状态实验 & 触发器：CUB 设置迁移",
+			"Content": "检测到 CUB 设置，您想导入这些设置吗？此选择将覆盖 CLT 的设置。您的 CUB 设置不会受到影响。"
+		},
+		"SETTINGS": {
+			"EnhancedConditions": {
+				"CoreIconsN": "核心状态图标",
+				"CoreIconsH": "核心状态图标的副本",
+				"SystemN": "游戏系统",
+				"SystemH": "游戏系统的参考。如果模组未知则默认为其他",
+				"OutputChatN": "输出到聊天",
+				"OutputChatH": "将匹配的状态输出到聊天",
+				"OutputCombatN": "战斗中输出",
+				"OutputCombatH": "在战斗的每一轮中，将当前战斗者的任何状态输出到聊天",
+				"DefaultMapsN": "默认状态映射",
+				"DefaultMapsH": "模组提供的状态到图标的映射",
+				"RemoveDefaultEffectsN": "移除默认状态效果",
+				"RemoveDefaultEffectsH": "从Token HUD 中移除现有的状态效果图标",
+				"DefaultOutputChatN": "将默认状态输出到聊天",
+				"DefaultOutputChatH": "将所有默认状态输出到聊天",
+				"MapTypeN": "激活状态映射类型",
+				"MapTypeH": "当前使用的状态映射类型——默认、自定义或其他",
+				"MapType": {
+					"Choices": {
+						"inferred": "系统 - 推断",
+						"default": "系统 - 默认",
+						"custom": "系统 - 自定义",
+						"other": "其他/导入"
+					}
+				},
+				"ActiveConditionMapN": "激活状态映射",
+				"ActiveConditionMapH": "存储激活的状态映射",
+				"SuppressPreventativeSaveReminderN": "抑制预防性保存提醒",
+				"SuppressPreventativeSaveReminderH": "抑制保存状态实验以防止问题的提醒（例如，如果用户已经保存过）",
+				"MigrationVersionN": "迁移版本",
+				"MigrationVersionH": "最后一次执行迁移的 CUB 版本",
+				"ShowSortDirectionDialogN": "提示保存排序方向",
+				"ShowSortDirectionDialogH": "是否显示保存排序方向的确认对话框。"
+			},
+			"TokenUtility": {
+				"TokenEffectSizeN": "Token效果图标大小",
+				"TokenEffectSizeH": "设置Token上效果图标的大小。数字表示要显示的效果图标数量（X * Y）。默认：小 - 5x5",
+				"TokenEffectSize": {
+					"choices": {
+						"small": "小（默认）- 5x5",
+						"medium": "中 - 4x4",
+						"large": "大 - 3x3",
+						"xLarge": "超大 - 2x2"
+					}
+				}
+			},
+			"Triggler": {
+				"TriggersN": "触发器",
+				"TriggersH": "用于Token/角色属性更改的触发器管理系统"
+			},
+			"SceneControls": {
+				"Name": "场景控制快捷方式",
+				"Hint": "在Token控制中添加两个按钮，用于打开状态实验或触发器窗口。请注意，您也可以通过设置快捷键来打开这些窗口，而无需使用此设置。"
+			}
+		},
+		"TRIGGLER": {
+			"ImportTitle": "导入触发器",
+			"TriggerMismatch": "这些触发器与您的游戏系统不匹配，可能无法按预期工作。",
+			"App": {
+				"Labels": {
+					"Type": "类型",
+					"Triggers": "现有触发器",
+					"Category": "类别",
+					"Attribute": "属性",
+					"Property": "属性 {number}",
+					"Operator": "操作",
+					"Value": "值"
+				},
+				"AdvancedTrigger": {
+					"ActorProperty": {
+						"Label": "角色更新属性",
+						"Note": "设置用于角色更新的属性路径。路径相对于传递给 updateActor hook的更新对象。请注意，如果未设置Token更新属性，则此属性是必需的。",
+						"Placeholder": "例如：system.attributes.hp.value"
+					},
+					"ActorProperty2": {
+						"Label": "角色比较属性",
+						"Note": "可选地设置第二个属性以与第一个属性进行比较——此路径相对于角色对象本身",
+						"Placeholder": "例如：system.attributes.hp.max（可选）"
+					},
+					"TokenProperty": {
+						"Label": "Token更新属性",
+						"Note": "设置用于Token更新的属性路径——路径相对于传递给 updateToken hook的更新对象。请注意，如果未设置角色更新属性，则此属性是必需的。",
+						"Placeholder": "例如：actor.system.attributes.hp.value"
+					},
+					"TokenProperty2": {
+						"Label": "Token比较属性",
+						"Note": "可选地设置第二个属性以与第一个属性进行比较——此路径相对于Token对象本身",
+						"Placeholder": "例如：actor.system.attributes.hp.max（可选）"
+					},
+					"Property": {
+						"Hint": "要监听的更新属性的路径。角色和Token的Entry Point值告诉触发器在哪里查找每种实体类型"
+					},
+					"OperatorValue": {
+						"Heading": "操作 & 值",
+						"Note": "始终需要。操作和值适用于上面设置的角色和Token属性"
+					},
+					"Name": {
+						"Label": "触发器名称",
+						"Warning": "高级触发器需要名称！"
+					}
+				},
+				"TriggerType": {
+					"Simple": {
+						"Label": "简单触发器"
+					},
+					"Advanced": {
+						"Label": "高级触发器"
+					}
+				},
+				"Options": {
+					"Title": "选项"
+				},
+				"SaveSuccessful": "触发器成功保存！"
+			}
+		},
+		"WORDS": {
+			"Icon": "图标",
+			"Reference": "参考",
+			"Import": "导入",
+			"Export": "导出"
+		}
+	}
+}
+

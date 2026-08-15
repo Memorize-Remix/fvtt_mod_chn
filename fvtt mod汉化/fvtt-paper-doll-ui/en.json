@@ -1,0 +1,98 @@
+{
+    "fvtt-paper-doll-ui": {
+        "settings": {
+            "globalConfigMenu": {
+                "name": "Paper Doll Global Settings",
+                "hint": "Customize empty images and number of slots for each type.",
+                "label": "Configure Paper Doll"
+            },
+            "hideActorHeaderText": {
+                "name": "Hide Actor Header Button Text",
+                "hint": "Hide the text in the actor header button."
+            },
+            "paperDollPosition": {
+                "name": "Paper Doll Position",
+                "hint": "Position of the paper doll when opened. Note that if the space is not sufficient on the left or right, the paper doll will be placed in the middle.",
+                "label": "Position",
+                "choices": {
+                    "left": "Left",
+                    "right": "Right",
+                    "center": "Center"
+                }
+            },
+            "autoOpen": {
+                "name": "Auto Open",
+                "hint": "Automatically open the paper doll when an actor sheet is opened."
+            },
+            "allowNonOwned": {
+                "name": "Allow Non Owned Items",
+                "hint": "Allow non owned items (eg, items from the sidebar or compendium) to be added to the paper doll. This setting is meant for custom systems which do not have an inventory system and should generally be left off."
+            },
+            "playerOwnedOnly": {
+                "name": "Player Owned Only",
+                "hint": "Only enable Paper Doll for player owned actors."
+            }
+        },
+        "app": {
+            "paper-doll": {
+                "title": "Paper Doll",
+                "config": "Configuration",
+                "disallowed": "This item is not allowed to be equipped to this slot."
+            },
+            "actor-config": {
+                "title": "Actor Configuration",
+                "img": {
+                    "label": "Image",
+                    "placeholder": "Use actor image"
+                },
+                "objectFit": {
+                    "label": "Image Fit",
+                    "contain": "Contain",
+                    "cover": "Cover"
+                },
+                "autoOpen": {
+                    "label": "Auto Open",
+                    "useDefault": "Use Default",
+                    "true": "Always",
+                    "false": "Never"
+                },
+                "playerOwnedOnly": {
+                    "label": "Player Owned Only",
+                    "hint": "Only enable Paper Doll for player owned actors."
+                }
+            },
+            "paper-doll-global-config": {
+                "title": "Paper Doll Global Configuration",
+                "img": "Icon",
+                "filter": {
+                    "label": "Custom Filter",
+                    "hint": "A script used to create a window with items that can be equipped to this slot. 'item' refers to the item being checked. Example: return item.type === 'weapon';"
+                },
+                "simpleFilter": {
+                    "label": "Basic Filter",
+                    "hint": "Filter only items that have this type."
+                },
+                "how": {
+                    "add": "Add a new slot by clicking the `+ Add` button.",
+                    "remove": "Remove a slot by right clicking on it.",
+                    "image": "Select an image for the slot by left clicking on it."
+                },
+                "HUE_ROTATE": {
+                    "label": "Hue"
+                },
+                "EQUIPPED_PATH": {
+                    "label": "Equipped Path"
+                },
+                "MAIN_COLOR": {
+                    "label": "Color"
+                }
+            }
+        },
+        "hotkeys": {
+            "togglePaperDoll": {
+                "name": "Toggle Paper Doll"
+            }
+        },
+        "flags": {}
+    }
+}

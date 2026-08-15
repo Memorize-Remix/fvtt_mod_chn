@@ -1,0 +1,910 @@
+
+	"LocknKey" : {
+		"Titles" : {
+			"LockSettings"				: "锁设置",
+			"PickpocketSettings"		: "扒窃设置",
+			"confirm"					: "确认",
+			"abbort"					: "取消",
+			"LocknKey"					: "锁与钥匙",
+			"LocknKeyabbr"				: "L&K",
+			"WorldSettings"				: "世界设置（仅GM）",
+			"ClientSettings"			: "客户端设置",
+			"GMonly"					: "仅GM",
+			"LockTokens"				: "锁设置",
+			"CharacterTokens"			: "角色设置",
+			"KeyItems"					: "钥匙设置",
+			"LPItems"					: "锁操作设置",
+			"LockusePasskey"			: "密码",
+			"Passkey"					: "密码",
+			"EnterPasskey"				: "输入密码：",
+			"ConfirmPasskey"			: "确认",
+			"Lockuse"					: "锁使用",
+			"LockuseKey"				: "使用钥匙",
+			"LockusePick"				: "撬锁",
+			"LockuseBreak"				: "破坏锁",
+			"LockuseFree"				: "自由使用锁",
+			"LockuseCustom"				: "{pCheckName}",
+			"Close"						: "关闭",
+			"Keycreation"				: "钥匙创建",
+			"Keyname"					: "钥匙名称",
+			"KeyID"						: "钥匙ID（用“;”分隔ID）",
+			"Keyfolder"					: "钥匙目标文件夹",
+			"ConfirmKeycreation"		: "创建",
+			"Basic"						: "基础",
+			"Triggers"					: "触发器",
+			"FreeCircumventHUD"			: "此Token可以绕过下一个锁，点击移除",
+			"PickPocket"				: "扒窃",
+			"LockchangePasskey"			: "更改密码",
+			"LockuseIdentity"			: "身份",
+			"newPasskey"				: "新密码：",
+			"addIdentityMessage"		: "玩家 {pPlayerName} 想要将这些身份添加到锁中：{pIdentities}",
+			"IdentifierofType"			: " {pIdentifier} 的 {pType} {pName}",
+			"ToggleTile"				: "切换图块状态（L&K）",
+			"DC"						: "（DC：{pDC}）",
+			"Usekey"					: "使用钥匙",
+			"Keyuse"					: "钥匙使用",
+			"dropKey"					: "将钥匙物品拖放到此处",
+			"clicktoselectImage"		: "点击选择图片"
+		},
+		
+		"Popup" : {
+			"TokenisLocked"				: "{pLockName} 已锁定",
+			"DoorisLocked"				: "此门已锁定",
+			"Lockoutofreach"			: "此锁无法触及",
+			"Tokenoutofreach"			: "{pTokenName} 无法触及",
+			"TokenoutofreachAnonymous"	: "无法触及",
+			"lockedDoor"				: "门已锁定",
+			"lockedToken"				: "{pLockName} 已锁定",
+			"unlockedDoor"				: "门已解锁",
+			"unlockedToken"				: "{pLockName} 已解锁",
+			"GamePaused"				: "游戏已暂停",
+			"noLockPickItem"			: "库存中没有撬锁工具",
+			"nomatchingKey"				: "没有匹配的钥匙",
+			"pickLockfailed"			: "撬锁失败",
+			"cantLock" : {
+				"default"				: "此锁无法锁定",
+				"break"					: "此锁已打开"
+			},
+			"breakLockfailed"			: "破坏锁失败",
+			"NotaLock"					: "不是锁",
+			"WrongPassword"				: "密码错误",
+			"Lockisjammed"				: "锁已卡住",
+			"Lockpickbroke"				: "撬锁工具损坏",
+			"jammedLock"				: "锁已卡住",
+			"cantcircumventFree"		: "无法绕过锁",
+			"PickPocketfailed"			: "扒窃失败",
+			"customcheckfailed"			: "{pCheckName} 失败",
+			"WrongIdentity"				: "身份错误",
+			"PasswordChanged"			: "密码已更改",
+			"NoPasswordLength"			: "新密码太短",
+			"CantChangePassword"		: "无法更改密码",
+			
+			"CantbePicked"				: "无法撬锁",
+			"CantbeBroken"				: "无法破坏",
+			"CantbeCustomChecked"		: "无法使用 {pCheckName}",
+			"CantbePickpocketed"		: "无法扒窃"
+		},	
+		
+		"ChatMessage" : {
+			"LockPick"					: "{pName} 尝试撬锁：",
+			"LockPicksuccess" : {
+				"crit"					: "{pName} 撬锁大成功",
+				"default" 				: "{pName} 撬锁成功"
+			},
+			"LockPickfail" : {
+				"crit"					: "{pName} 撬锁大失败",
+				"default" 				: "{pName} 撬锁失败"
+			},
+			"LockPicksuccessLPName" : {
+				"crit"					: "{pName} 使用 {pLPName} 撬锁大成功",
+				"default" 				: "{pName} 使用 {pLPName} 撬锁成功"
+			},
+			"LockPickfailLPName" : {
+				"crit"					: "{pName} 使用 {pLPName} 撬锁大失败",
+				"default" 				: "{pName} 使用 {pLPName} 撬锁失败"
+			},
+			"LockPickfailLPNameremove" : {
+				"crit"					: "{pName} 撬锁大失败并损坏了 {pLPName}"
+			},
+			
+			"LockBreak"					: "{pName} 尝试破坏锁：",
+			"LockBreaksuccess" : {
+				"crit"					: "{pName} 破坏锁大成功",
+				"default" 				: "{pName} 破坏锁成功"
+			},
+			"LockBreakfail" : {
+				"crit"					: "{pName} 破坏锁大失败",
+				"default" 				: "{pName} 破坏锁失败"
+			},
+			
+			"CustomCheck"				: "{pName} 使用 {pCheckName}：",
+			"CustomChecksuccess" : {
+				"crit"					: "{pName} 使用 {pCheckName} 大成功",
+				"default" 				: "{pName} 使用 {pCheckName} 成功"			
+			},
+			"CustomCheckFail" : {
+				"crit"					: "{pName} 使用 {pCheckName} 大失败",
+				"default" 				: "{pName} 使用 {pCheckName} 失败"
+			},
+			
+			"PickPocket"				: "{pName} 尝试扒窃：",
+			"PickPocketDetailed"		: "{pName} 尝试扒窃 {pTargetName}，DC为 {pDC}：",
+			"PickPocketSuccess" : {
+				"crit"					: "{pName} 大成功扒窃",
+				"default" 				: "{pName} 成功扒窃"			
+			},
+			"PickPocketFail" : {
+				"crit"					: "{pName} 大失败扒窃",
+				"default" 				: "{pName} 扒窃失败"
+			}
+		},
+		
+		"Settings" : {
+			"useGMquickKeys" : {
+				"name" 					: "使用GM快捷控制",
+				"descrp"				: "允许GM使用底部列出的特殊锁相关控制（标记为*的受影响）"
+			},
+			
+			"allowTileLocking" : {
+				"name": "允许图块锁定",
+				"descrp": "允许将图块设置为可锁定对象"
+			},
+		
+			"allowLocking" : {
+				"name" 					: "允许玩家锁定",
+				"descrp"				: "允许玩家在拥有匹配钥匙时锁定锁"
+			},
+			
+			"startasLocked" : {
+				"name" 					: "初始锁定",
+				"descrp"				: "新创建的锁是否锁定"
+			},
+	
+			"LockDistance" : {
+				"name" 					: "锁距离",
+				"descrp"				: "锁可以使用的距离（以游戏内单位计）"		
+			},
+			
+			"DefaultLockSound" : {
+				"name"					: "默认锁音效",
+				"descrp"				: "应用于新门和锁Token的默认音效"
+			},
+			
+			"UseArmReachDistance": {
+				"name" 					: "使用\"Arms Reach\"距离",
+				"descrp"				: "使用\"Arms Reach\"中设置的距离作为锁距离"	
+			},
+			
+			"alwaysopenOwned" : {
+				"name" 					: "始终打开拥有的",
+				"descrp"				: "玩家可以始终打开拥有的Token，即使它们已锁定"		
+			},
+			
+			"allowallInteractions" : {
+				"name" 					: "允许所有交互",
+				"descrp"				: "是否允许所有交互（撬锁、破坏、自定义、扒窃），即使DC不可能"					
+			},
+
+			"showinteractionDCs" : {
+				"name" 					: "显示交互DC",
+				"descrp"				: "是否在交互菜单中显示交互DC"					
+			},			
+			
+			"showallLockInteractions" : {
+				"name" 					: "显示所有锁交互",
+				"descrp"				: "始终显示锁的所有交互选项（为邪恶的GM准备）"					
+			},
+			
+			"preventUseinPause" : {
+				"name" 					: "暂停时防止使用钥匙",
+				"descrp"				: "防止玩家在游戏暂停时使用钥匙"		
+			},
+			
+			"useKeyDialogbydefault" : {
+				"name" 					: "默认使用钥匙选择对话框",
+				"descrp"				: "是否所有锁钥匙使用默认需要选择钥匙"		
+			},
+	
+			"autoKeyuse" : {
+				"name" 					: "自动使用钥匙",
+				"descrp"				: "玩家与锁定对象交互时会自动尝试使用匹配的钥匙"		
+			},
+			
+			"KeyItemtype" : {
+				"name" 					: "钥匙物品类型",
+				"descrp"				: "模块将用于新钥匙的物品类型，留空使用默认类型（可以通过在F12控制台中输入“game.items.documentClass.TYPES”获取有效类型列表）"		
+			},
+
+			"LnKSettingTypes" : {
+				"name" 					: "设置物品类型",
+				"descrp"				: "显示锁与钥匙设置的物品类型（用“;”分隔，“all”表示所有类型）"		
+			},
+			
+			"LnKSettingsubTypes" : {
+				"name" 					: "设置物品子类型",
+				"descrp"				: "显示锁与钥匙设置的物品子类型（用“;”分隔，“all”表示所有子类型）"		
+			},
+			
+			"KeyitemCreationPopup" : {
+				"name" 					: "钥匙创建菜单",
+				"descrp"				: "是否为新生成的钥匙显示菜单以更改其名称和文件夹"		
+			},	
+			
+			"KeyitemCreationIDOption" : {
+				"name" 					: "钥匙创建ID选项",
+				"descrp"				: "是否在钥匙创建菜单中显示输入自定义ID的选项"		
+			},	
+			
+			"DefaultKeyFolder" : {
+				"name"					: "默认钥匙文件夹",
+				"descrp"				: "钥匙创建菜单中使用的默认文件夹名称"
+			},
+			
+			"LimitKeyFolders" : {
+				"name"					: "过滤钥匙文件夹",
+				"descrp"				: "是否在钥匙创建菜单中仅显示默认钥匙文件夹及其子文件夹"
+			},
+
+			"UseKeynameasID" : {
+				"name" 					: "钥匙名称作为ID",
+				"descrp"				: "是否将钥匙名称视为解锁锁的附加ID"		
+			},	
+			
+			"usePf2eSystem" : {
+				"name" 					: "使用系统掷骰",
+				"descrp"				: "使用系统的掷骰规则（禁用锁与钥匙的自定义掷骰公式和大成功/大失败设置，优先使用系统的掷骰规则）"						
+			},
+			
+			"CritMethod" : {
+				"name" 					: "大成功/大失败系统",
+				"descrp"				: "确定大成功/大失败掷骰的方式",
+				"options" : {
+					"noCrit"			: "无大成功/大失败",
+					"natCrit"			: "N 1/20",
+					"natCritpm10"		: "N 1/20 &  DC +-10 [例如 Pf2e]",
+					"d100WFRP4": "d100 Nat1/100（反转难度等级）[例如：WFRP4e]",
+					"d100WFRP4Doubles": "d100 Nat1/100 & 双骰（反转难度等级）[例如：WFRP4e]",
+					"d100WFRP4normDC": "d100 Nat1/100 [例如：WFRP4e]",
+					"d100WFRP4DoublesnormDC": "d100 Nat1/100 & 双骰 [例如：WFRP4e]",
+					"d100CoC7e"			: "d100 难度范围 [例如 CoC7e]",
+					"d10poolCoD2e"		: "d10 池 >=8 并在10时重新掷骰 [例如 CoD2e]",
+					"3d20DSA": "3d20 DSA"
+				}
+			},
+			
+			"InfinityThreshold": {
+				"name": "无穷阈值",
+				"descrp": "在计算DC时，等于此值的数字将被视为无穷大"
+			},
+						
+			"LockPickItem" : {
+				"name" 					: "撬锁工具物品",
+				"descrp"				: "撬锁工具物品的名称或合集 ID（推荐），“-”表示不需要物品（用“;”分隔）"		
+			},
+			
+			"MentionLockPickItem" : {
+				"name" 					: "提及撬锁工具",
+				"descrp"				: "是否在聊天中提及使用的撬锁工具"		
+			},
+			
+			"RemoveLP" : {
+				"name" 					: "移除撬锁工具",
+				"descrp"				: "是否以及在什么条件下移除使用的撬锁工具",
+				"options" : {
+					"never"				: "从不",
+					"always"			: "总是",
+					"fail"				: "失败时",
+					"critfail"			: "大失败时"
+				}
+			},
+			
+			"RemoveLPoncritFail" : {
+				"name" 					: "大失败时移除撬锁工具",
+				"descrp"				: "是否在大失败时移除使用的撬锁工具（或堆叠减少1）"		
+			},	
+			
+			"JamLockonLPcritFail" : {
+				"name" 					: "大失败时卡住锁",
+				"descrp"				: "大失败时门卡住且无法再撬锁"		
+			},
+			
+			"JamedLockKeyunusable" : {
+				"name" 					: "卡住的锁无法使用钥匙",
+				"descrp"				: "卡住的锁不再接受匹配的钥匙"		
+			},
+			
+			"defaultLPAttempts" : {
+				"name"					: "默认撬锁尝试次数",
+				"descrp"				: "锁在无法撬锁之前的默认撬锁尝试次数（-1表示无限次）"
+			},
+			
+			"autoResetAttempts" : {
+				"name"					: "自动重置撬锁尝试次数",
+				"descrp"				: "何时重置撬锁尝试次数",
+				"options" : {
+					"off"				: "从不",
+					"lockchange"		: "锁状态更改时",
+					"lpsuccess"			: "撬锁成功时"
+				}
+			},
+			
+			"LockPickFormula" : {
+				"name" 					: "撬锁掷骰公式",
+				"descrp"				: "用于撬锁掷骰的公式（例如“1d20 + @actor.skills.thievery.mod”，帮助可以在模块的Github页面上找到）"				
+			},
+					
+			"DefaultPickDC" : {
+				"name" 					: "默认锁DC",
+				"descrp"				: "锁DC的默认值"				
+			},
+			
+			"LockBreakFormula" : {
+				"name" 					: "破坏锁掷骰公式",
+				"descrp"				: "用于破坏锁掷骰的公式（例如“1d20 + @actor.skills.athletics.mod - 2”，帮助可以在模块的Github页面上找到）"				
+			},
+			
+			"DefaultBreakDC" : {
+				"name" 					: "默认破坏锁DC",
+				"descrp"				: "破坏锁DC的默认值"				
+			},
+			
+			"CustomCircumventName" : {
+				"name" 					: "自定义检查名称",
+				"descrp"				: "用于绕过锁的第三个可选自定义检查的名称（例如\"黑客技术Hacking\"或\"符文魔法Magic rune\"，留空以禁用）"				
+			},
+			
+			"CustomCircumventFormula" : {
+				"name" 					: "自定义检查公式",
+				"descrp"				: "用于上述自定义检查掷骰的公式"				
+			},
+			
+			"CustomCircumventDefaultDC" : {
+				"name" 					: "自定义检查默认DC",
+				"descrp"				: "自定义检查DC的默认值"				
+			},
+			
+			"LockBreakunlockable" : {
+				"name" 					: "使破坏的锁可解锁",
+				"descrp"				: "使被破坏的锁可解锁"				
+			},
+			
+			"onlyCombatMultiSuccess" : {
+				"name" 					: "仅在战斗中允许多次成功",
+				"descrp"				: "在战斗外忽略设定的撬锁成功次数要求"				
+			},
+			
+			"LockCircumventName" : {
+				"name" 					: "锁绕行关键词",
+				"descrp"				: "用于识别允许玩家绕过锁的效果的关键词（例如\"敲击术Knock\"法术，用“;”分隔）"				
+			},
+			
+			"AutoAcceptIdentityAddition" : {
+				"name" 					: "自动接受身份添加",
+				"descrp"				: "是否自动接受身份添加（不推荐）"				
+			},
+			
+			"EnablePickpocketing" : {
+				"name" 					: "启用扒窃",
+				"descrp"				: "启用扒窃功能及其设置"				
+			},
+			
+			"PickPocketFormula" : {
+				"name" 					: "扒窃公式",
+				"descrp"				: "用于扒窃掷骰的公式（例如“1d20 + @actor.skills.thievery.mod”，帮助可以在模块的Github页面上找到）"				
+			},
+			
+			"PickPocketDefaultDC" : {
+				"name" 					: "扒窃默认DC",
+				"descrp"				: "扒窃DC的默认值"				
+			},
+			
+			"PickPocketDefaultDCFormula" : {
+				"name" 					: "扒窃默认DC公式",
+				"descrp"				: "用于计算扒窃DC的默认公式（覆盖其他默认值）"				
+			},
+			
+			"PickPocketDefaultItemDC" : {
+				"name" 					: "默认物品扒窃DC",
+				"descrp"				: "物品的默认扒窃DC修正值"				
+			},
+			
+			"PickPocketDCCritThreshold" : {
+				"name" 					: "扒窃大成功DC阈值",
+				"descrp"				: "可以通过大成功克服的最大扒窃DC"				
+			},
+			
+			"AutoUpdatePickPocketDC" : {
+				"name" 					: "自动更新扒窃DC",
+				"descrp"				: "是否在掷骰察觉检定时自动更新扒窃DC"				
+			},
+			
+			"PickPocketItemTypes" : {
+				"name" 					: "可扒窃物品类型",
+				"descrp"				: "可扒窃的物品类型（用“;”分隔，“#currency”表示数值货币）"				
+			},
+			
+			"MaximumPPNumber" : {
+				"name" 					: "扒窃最大物品数量",
+				"descrp"				: "成功扒窃Token时可拿取的最大物品数量（-1表示无限）"				
+			},
+			
+			"MaximumPPNumberCrit" : {
+				"name" 					: "大成功/大失败扒窃最大物品数量",
+				"descrp"				: "大成功/大失败扒窃Token时可拿取的最大物品数量（-1表示无限）"				
+			},
+			
+			"MaximumPPNumberFail" : {
+				"name" 					: "失败扒窃最大物品数量",
+				"descrp"				: "扒窃失败时可拿取的最大物品数量（如果物品DC仍允许，-1表示无限）"				
+			},
+			
+			"MaximumPPWeight" : {
+				"name" 					: "扒窃最大物品重量",
+				"descrp"				: "成功扒窃Token时可拿取的最大物品重量（系统单位，-1表示无限）"				
+			},
+			
+			"MaximumPPWeightCrit" : {
+				"name" 					: "大成功/大失败扒窃最大物品重量",
+				"descrp"				: "大成功/大失败扒窃Token时可拿取的最大物品重量（系统单位，-1表示无限）"				
+			},
+			
+			"MaximumPPWeightFail" : {
+				"name" 					: "失败扒窃最大物品重量",
+				"descrp"				: "扒窃失败时可拿取的最大物品重量（如果物品DC仍允许，-1表示无限）"				
+			},
+			
+			"PickPocketCooldown" : {
+				"name" 					: "扒窃冷却时间",
+				"descrp"				: "每个玩家的扒窃冷却时间（秒）"				
+			},
+			
+			"deadActorsLootable" : {
+				"name"					: "死亡Token可拾取",
+				"descrp"				: "死亡Token是否可拾取/扒窃而无需掷骰"	
+			},
+			
+			"lootFilter" : {
+				"name"					: "拾取过滤",
+				"descrp"				: "是否仅拾取名为\"Loot\"的背包或容器中的物品（仅部分系统支持）",
+				"options" : {
+					"off"				: "关闭",
+					"ifavailable"		: "如果有拾取物品",
+					"always"			: "总是"
+				}
+			},
+			
+			"MentionPickpocketDetails" : {
+				"name" 					: "提及扒窃详情",
+				"descrp"				: "是否在扒窃消息中提及目标名称和DC"				
+			},
+			
+			"PerceptionKeyWord" : {
+				"name"					: "察觉关键词",
+				"descrp"				: "用于识别察觉掷骰的关键词（存在于察觉掷骰的提示文本中的字符串）"		
+			},
+			
+			"ControlSceme" : {
+				"name" 					: "控制方案",
+				"descrp"				: "用于玩家控制的方案（右键+钥匙的详细说明见下方的\"玩家控制\"）",	
+				"options" : {
+					"rightKeys"			: "右键+钥匙",
+					"rightPopups"		: "右键弹出菜单"
+				}
+			},			
+			
+			"MessagePopUps" : {
+				"name" 					: "消息弹窗",
+				"descrp"				: "启用锁定或解锁锁等操作时的多个弹窗"		
+			},
+			
+			"PlayLockSounds" : {
+				"name" 					: "播放锁音效",
+				"descrp"				: "锁锁定或解锁时播放音效"		
+			},
+			
+			"FreeCircumventButtonPosition" : {
+				"name" 					: "锁绕行指示器位置",
+				"descrp"				: "显示Token可以绕过下一个锁的指示器在Token HUD上的位置",
+				"options" : {
+					"none"				: "无",
+					"left"				: "左侧",
+					"right"				: "右侧"
+				}
+			},
+			
+			"dblClicktoLoot" : {
+				"name"					: "双击扒窃",
+				"descrp"				: "双击Token是否触发扒窃"
+			}
+		},
+		
+		"Keys" : {
+			"ToggleLock" : {
+				"name"					: "切换锁"
+			},
+			
+			"CopyLock" : {
+				"name"					: "复制锁ID"
+			},
+			
+			"PasteLock" : {
+				"name"					: "粘贴锁ID"
+			},
+			
+			"CreatenewKey" : {
+				"name"					: "创建新钥匙"
+			},
+			
+			"UseKey" : {
+				"name"					: "使用钥匙"
+			},
+			
+			"PickLock" : {
+				"name"					: "撬锁"
+			},
+			
+			"BreakLock" : {
+				"name"					: "破坏锁"
+			},
+			
+			"CustomCheck" : {
+				"name"					: "自定义检查（询问GM，除非你是GM）"
+			},
+			
+			"PickPocket" : {
+				"name"					: "扒窃"
+			},
+		
+			"ChangePassword" : {
+				"name"					: "更改密码"
+			}
+		},
+		
+		"SheetSettings" : {
+			"OpenImageFlag" : {
+				"name"					: "打开图像",
+				"descrp"				: "用于打开状态的图像"
+			},
+			
+			"ClosedImageFlag" : {
+				"name"					: "关闭图像",
+				"descrp"				: "用于关闭状态的图像"
+			},
+			
+			"LockableFlag" : {
+				"name" 					: "可锁定",
+				"descrp"				: "此对象是否可锁定"					
+			},
+			
+			"LockonCloseFlag" : {
+				"name" 					: "关闭时锁定",
+				"descrp"				: "此门关闭时是否锁定"					
+			},
+			
+			"LockedFlag" : {
+				"name" 					: "已锁定",
+				"descrp"				: "此对象是否已锁定"					
+			},
+			
+			"IDKeysFlag" : {
+				"name" 					: "ID钥匙",
+				"descrp" : {
+					"lock" 				: "可以锁定/解锁此锁的ID（用“;”分隔，“&”表示需要多个钥匙）",
+					"key" 				: "此钥匙可以锁定/解锁的ID（用“;”分隔）"
+				}
+			},
+			
+			"UseKeyDialogFlag" : {
+				"name" 					: "钥匙使用对话框",
+				"descrp"				: "用户是否必须选择要使用的钥匙"					
+			},
+			
+			"PasskeysFlag" : {
+				"name"					: "密码",
+				"descrp"				: "可以解锁此锁的密码（用“;”分隔）"
+			},
+			
+			"PasskeyChangeableFlag" : {
+				"name"					: "密码可更改",
+				"descrp"				: "玩家是否可以更改密码（需要正确密码）"
+			},
+			
+			"IdentityKeyFlag" : {
+				"name"					: "身份",
+				"descrp"				: "可以解锁此锁的身份（用“;”分隔，Token/角色/用户的ID/名称）"
+			},
+			
+			"LockjammedFlag" : {
+				"name"					: "卡住",
+				"descrp"				: "此锁是否卡住（见世界设置）"				
+			},
+			
+			"RemoveKeyonUseFlag" : {
+				"name" 					: "使用后移除钥匙",
+				"descrp"				: "使用后是否移除此钥匙（或堆叠减少1）"					
+			},			
+			
+			"LockDCFlag" : {
+				"name" 					: "锁DC",
+				"descrp"				: "此锁的难度等级，用于撬锁（-1表示无法撬锁）"					
+			},
+			
+			"SpecialLPFlag" : {
+				"name" 					: "特殊撬锁工具",
+				"descrp"				: "撬锁此锁所需的特殊撬锁工具（ID或名称，多个条目用“;”分隔）"					
+			},
+			
+			"LockBreakDCFlag" : {
+				"name" 					: "破坏锁DC",
+				"descrp"				: "破坏此锁的难度等级（-1表示无法破坏）"					
+			},
+			
+			"LockCCDCFlag" : {
+				"name" 					: "{pCheckName} DC",
+				"descrp"				: "使用{pCheckName}在此锁上的难度等级（-1表示无法使用）"					
+			},
+			
+			"requiredLPsuccessFlag" : {
+				"name" 					: "所需撬锁成功次数",
+				"descrp"				: "此锁所需的撬锁成功次数（以及已添加的次数）（大成功计为2）"				
+			},
+			
+			"LPAttemptsFlag" : {
+				"name" 					: "剩余撬锁尝试次数",
+				"descrp"				: "剩余的撬锁尝试次数（-1表示无限）"				
+			},
+			
+			"canbeCircumventedFreeFlag" : {
+				"name" 					: "可绕行",
+				"descrp"				: "此锁是否可以通过效果绕行（例如\"敲击术Knock\"法术）"				
+			},
+			
+			"CustomPopupsFlag" : {
+				"openButtonname"			: "自定义弹窗",
+				"Title"						: "自定义弹窗",
+				"name"						: "为某些玩家交互设置自定义弹窗：",
+				"LockLocked" : {
+					"name"					: "锁已锁定："
+				},
+				"LocknotPickable" : {
+					"name"					: "锁无法撬锁："
+				},
+				"LocknotBreakable" : {
+					"name"					: "锁无法破坏："
+				},
+				"LockPasskeyTitle" : {
+					"name"					: "密码对话框提示："
+				},
+				"LocknotCustom" : {
+					"name"					: "锁无法使用自定义检查："
+				},
+				"CharacternotPickpocketable" : {
+					"name"					: "角色无法扒窃："
+				},
+				"confirmButtonname"        	: "确认弹窗"
+			},
+			
+			"SoundVariantFlag" : {
+				"name"					: "锁音效",
+				"descrp"				: "设置用于此门操作的音效集",
+				"options" : {
+					"off"				: "关闭",
+					"futuristic"		: "未来风",
+					"industrial"		: "工业风",
+					"jail"				: "监狱风",
+					"metal"				: "金属风 🤘",
+					"shutter"			: "百叶窗风",
+					"sliding"			: "滑动风",
+					"stone"				: "石头风",
+					"wood"				: "木头风"
+				}
+			},
+			
+			"LPFormulaFlag" : {
+				"name" 					: "撬锁公式",
+				"descrp" : {
+					"token" 			: "此Token进行的撬锁掷骰的公式",
+					"item"				: "此物品所有者进行的撬锁掷骰的公式（仅使用库存中最好的）"
+				}			
+			},
+			
+			"LPFormulaOverrideFlag" : {
+				"name" 					: "覆盖撬锁公式",
+				"descrp" : {
+					"token" 			: "此Token的撬锁公式是否覆盖世界公式",
+					"item"				: "此物品的撬锁公式是否覆盖Token/世界公式"
+				}				
+			},
+			
+			"LBFormulaFlag" : {
+				"name" 					: "破坏锁公式",
+				"descrp" : {
+					"token" 			: "此Token进行的破坏锁掷骰的公式",
+					"item"				: "此物品所有者进行的破坏锁掷骰的公式（仅使用库存中最好的）"
+				}					
+			},
+			
+			"LBFormulaOverrideFlag" : {
+				"name" 					: "覆盖破坏锁公式",
+				"descrp" : {
+					"token" 			: "此Token的破坏锁公式是否覆盖世界公式",
+					"item"				: "此物品的破坏锁公式是否覆盖Token/世界公式"
+				}				
+			},
+			
+			"CCFormulaFlag" : {
+				"name" 					: "{pCheckName} 公式",
+				"descrp" : {
+					"token" 			: "此Token进行的{pCheckName}掷骰的公式",
+					"item"				: "此物品所有者进行的{pCheckName}掷骰的公式（仅使用库存中最好的）"
+				}					
+			},
+			
+			"CCFormulaOverrideFlag" : {
+				"name" 					: "覆盖 {pCheckName} 公式",
+				"descrp" : {
+					"token" 			: "此Token的{pCheckName}公式是否覆盖世界公式",
+					"item"				: "此物品的{pCheckName}公式是否覆盖Token/世界公式"
+				}				
+			},
+			
+			"PickPocketFormulaFlag" : {
+				"name" 					: "扒窃公式",
+				"descrp" : {
+					"token" 			: "此Token进行的扒窃掷骰的公式",
+					"item"				: "此物品所有者进行的扒窃掷骰的公式（仅使用库存中最好的）"
+				}					
+			},
+			
+			"PickPocketFormulaOverrideFlag" : {
+				"name" 					: "覆盖扒窃公式",
+				"descrp" : {
+					"token" 			: "此Token的扒窃公式是否覆盖世界公式",
+					"item"				: "此物品的扒窃公式是否覆盖Token/世界公式"
+				}				
+			},
+			
+			"LootFormulaFlag" : {
+				"name" 					: "自定义拾取公式",
+				"descrp"  				: "扒窃此Token时替代扒窃公式的公式"
+			},
+			
+			"PickPocketDCFlag" : {
+				"name" 					: "扒窃DC",
+				"descrp"  				: "扒窃此角色的难度等级（-1表示无法扒窃）",
+				"item" : {
+					"name"				: "扒窃DC修正",
+					"descrp"			: "扒窃此物品时的修正值"
+				}
+			},
+			
+			"ReplacementItemFlag" : {
+				"name" 					: "替换物品",
+				"descrp" 				: "掷骰失败时消耗的替换物品（ID或名称，多个条目用“;”分隔）"			
+			},
+
+			"MATTTriggerTileFlag" : {
+				"name" 					: "触发图块ID",
+				"descrp"				: "由以下锁与钥匙操作触发的图块ID（可以使用不同的着陆点）"
+			},
+			
+			"MATTTriggerConditionsFlag" : {
+				"LockuseKey.name"		: "使用钥匙时",
+				"LockusePasskey.name"	: "使用密码时",
+				"LockusePick.name"		: "撬锁时",
+				"LockuseBreak.name"		: "破坏锁时",
+				"LockuseFree.name"		: "绕行锁时",
+				"UsePickPocket.name"	: "扒窃时",
+				"options" : {
+					"never"				: "从不",
+					"always"			: "总是",
+					"failure"			: "失败时",
+					"critfailure"		: "大失败时",
+					"success"			: "成功时"
+				}
+			},
+			
+			"RollOptionsFlag" : {
+				"LockusePick" : {
+					"d10CritLimit" : {
+						"name"			: "撬锁d10大成功/大失败阈值",
+						"descrp"		: "d10撬锁掷骰的最小大成功/大失败值"
+					}
+				},
+				"LockuseBreak" : {
+					"d10CritLimit" : {
+						"name"			: "破坏锁d10大成功/大失败阈值",
+						"descrp"		: "d10破坏锁掷骰的最小大成功/大失败值"
+					}					
+				}
+			}
+		},
+		
+		"Context" : {
+			"KeyCopy"					: "复制钥匙ID",
+			"KeyPaste"					: "将ID粘贴到钥匙中"
+		},
+		
+		"Words" : {
+			"Key"						: "钥匙"
+		},
+		
+		"Text" : {
+			"GMControls" : {
+				"line0"					: "GM控制：",
+				"line1" 				: "•shift+右键点击为锁创建新钥匙",
+				"line2" 				: "•alt+右键点击切换Token锁定（*）",
+				"line3" 				: "•ctrl+右键点击复制锁的钥匙ID（*）",
+				"line4" 				: "•ctrl+左键点击将钥匙ID粘贴到锁中（*）"
+			},
+			
+			"PlayerControls" : {
+				"line0"					: "玩家控制：",
+				"line1" 				: "•右键点击尝试使用钥匙开锁",
+				"line2" 				: "•shift+右键点击尝试撬锁",
+				"line3" 				: "•alt+右键点击尝试破坏锁"
+			}
+		},
+		
+		"take-inventory-window" : {
+			"titles" : {
+				"inventory"				: "库存"
+			},
+			"header" : {
+				"title"					: "<h> 从 <b>{pOwnerName}的</b> 库存中拿取（放入 <b>{pTakerName}的</b> 库存）： </h>"
+			},
+			"displays" : {
+				"NumberDisplay" 		: "已选物品：<b>{pValue}</b>/{pMax}",
+				"WeightDisplay" 		: "已选物品重量：<b>{pValue}</b>/{pMax}"
+			},
+			"buttons" : {
+				"take" : {
+					"name"				: "拿取已选"
+				}
+			}
+		},
+		
+		"monks-active-tiles" : {
+			"filters" : {
+				"name"						: "过滤",
+				
+				"filter-by-lock-state" : {
+					"name"					: "按锁状态过滤",
+					"settings" : {
+						"filterCondition" : {
+							"name"			: "锁状态条件",
+							"options" : {
+								"locked"	: "已锁定",
+								"unlocked"	: "未锁定"
+							}
+						}
+					}
+				}
+			},
+			
+			"actions" : {
+				"lock" : {
+					"name"					: "锁定"
+				},
+				
+				"unlock" : {
+					"name"					: "解锁"
+				},
+				
+				"toggle-lock" : {
+					"name"					: "切换锁定"
+				},
+				
+				"loot-inventory" : {
+					"name"					: "拾取库存",
+					"descrp"				: "<span class=\"logic-style\">{pname}</span> 的 <span class=\"entity-style\">{pEntities}</span>，提供给 <span class=\"details-style\">{pOfferto}</span>",
+					"settings" : {
+						"offerto" : {
+							"name"			: "提供给"
+						}
+					}	
+				}
+			}
+		}
+	}
+}

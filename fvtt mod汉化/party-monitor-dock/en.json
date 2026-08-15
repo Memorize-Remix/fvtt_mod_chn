@@ -1,0 +1,73 @@
+{
+    "party-monitor-dock": {
+        "title": "Party Monitor Dock",
+        "settings": {
+            "onlyConnected": {
+                "name": "Only show connected players",
+                "hint": "Only show players that are connected to the server"
+            },
+            "portraitSize": {
+                "name": "Portrait Size",
+                "hint": "The size of the portraits in the dock"
+            },
+            "position": {
+                "name": "Dock Position",
+                "hint": "The position of the dock on the screen",
+                "choices": {
+                    "docked": "Docked",
+                    "horizontal": "Horizontal (Floating)",
+                    "vertical": "Vertical (Floating)",
+                    "hidden": "Hidden"
+                }
+            },
+            "dockAlignment": {
+                "name": "HUD Alignment",
+                "hint": "The alignment of the HUD on the screen when in Docked Position",
+                "choices": {
+                    "flex-start": "Top",
+                    "center": "Center",
+                    "flex-end": "Bottom"
+                }
+            },
+            "hideInCombat": {
+                "name": "Hide in Combat",
+                "hint": "Hide the HUD when a combat is active"
+            },
+            "hideCompanions": {
+                "name": "Hide Companions",
+                "hint": "Hide companions from the party members list"
+            },
+            "cornerImage": {
+                "name": "Corner Image",
+                "hint": "The image to use in the corners of the dock Leave blank to disable."
+            },
+            "edgeImage": {
+                "name": "Edge Image",
+                "hint": "The image to use to fill the space between the corners of the dock. Leave blank to disable."
+            }
+        },
+        "app": {
+            "buttons": {
+                "toggle-nav": "Toggle Navigation Buttons",
+                "toggle-dock": "Toggle Dock",
+                "reduce": "Decrease Size",
+                "enlarge": "Increase Size",
+                "start-follow": "Start Following",
+                "stop-follow": "Stop Following",
+                "context": {
+                    "follow": "Follow",
+                    "mount": "Mount",
+                    "epicRoll": "Req. Roll",
+                    "raise-hand": "Raise Hand"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": " now following ",
+            "unfollow": " no longer following ",
+            "mounted": " has mounted ",
+            "dismounted": " has dismounted "
+        }
+    }
+}

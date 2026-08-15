@@ -1,0 +1,121 @@
+
+    "CHRONICLE_KEEPER": {
+        "ModuleTitle": "Chronicle Keeper",
+        "Settings": {
+            "OllamaUrl": {
+                "Name": "Ollama 服务器 URL",
+                "Hint": "本地 Ollama 服务器的 URL（例如：http://localhost:11434）"
+            },
+            "Model": {
+                "Name": "AI 模型",
+                "Hint": "选择用于 AI 响应的 Ollama 模型"
+            },
+            "EmbeddingModel": {
+                "Name": "嵌入模型",
+                "Hint": "用于生成记忆嵌入的模型（例如：nomic-embed-text）"
+            },
+            "Temperature": {
+                "Name": "温度",
+                "Hint": "控制 AI 响应的随机性（0.0-1.0）。值越高 = 越有创意"
+            },
+            "MaxTokens": {
+                "Name": "最大响应Token数",
+                "Hint": "AI 响应的最大长度"
+            },
+            "ShortTermMemorySize": {
+                "Name": "短期记忆大小",
+                "Hint": "保留在上下文中的最近消息数量（建议 20-50）"
+            },
+            "EnableAutoNarration": {
+                "Name": "启用自动旁白",
+                "Hint": "自动叙述骰子检定和战斗事件"
+            },
+            "EnableCombatNarration": {
+                "Name": "启用战斗旁白",
+                "Hint": "在战斗中生成戏剧性的描述"
+            },
+            "SystemPrompt": {
+                "Name": "系统提示",
+                "Hint": "AI 的核心个性和行为指令"
+            },
+            "DMEnabled": {
+                "Name": "AI 地下城主已启用",
+                "Hint": "切换 AI 地下城主功能开/关"
+            },
+            "MemoryRetrievalCount": {
+                "Name": "记忆检索数量",
+                "Hint": "为上下文检索的相关记忆数量"
+            },
+            "SummarizationThreshold": {
+                "Name": "摘要化阈值",
+                "Hint": "当对话超过此长度时压缩记忆"
+            }
+        },
+        "Chat": {
+            "Thinking": "Chronicle Keeper正在思考...",
+            "ConnectionError": "无法连接到 Ollama 服务器。请检查您的设置。",
+            "ModelNotFound": "未找到所选模型。请检查 Ollama 配置。",
+            "ResponseError": "生成响应时发生错误。"
+        },
+        "Commands": {
+            "AI": {
+                "Description": "向 AI 地下城主发送消息"
+            },
+            "Narrate": {
+                "Description": "请求 AI 进行场景叙述"
+            },
+            "NPC": {
+                "Description": "让 NPC 说话（用法：/npc [名称] [消息]）"
+            },
+            "Memory": {
+                "Description": "管理 AI 记忆",
+                "Search": "搜索记忆",
+                "Save": "保存记忆",
+                "Clear": "清除短期记忆",
+                "Browse": "打开记忆浏览器"
+            },
+            "DM": {
+                "Description": "切换 AI 地下城主开/关"
+            }
+        },
+        "Memory": {
+            "Browser": {
+                "Title": "记忆浏览器",
+                "ShortTerm": "短期记忆",
+                "LongTerm": "长期记忆",
+                "Entities": "实体",
+                "NPCs": "NPC",
+                "Locations": "地点",
+                "Items": "物品",
+                "Factions": "派系",
+                "Search": "搜索记忆...",
+                "Delete": "删除",
+                "Edit": "编辑",
+                "Add": "添加新记忆",
+                "Save": "保存",
+                "Cancel": "取消",
+                "NoMemories": "尚未存储任何记忆。"
+            },
+            "Types": {
+                "Conversation": "对话",
+                "StoryBeat": "故事节点",
+                "QuestProgress": "任务进度",
+                "Relationship": "关系",
+                "SessionSummary": "会话摘要"
+            }
+        },
+        "UI": {
+            "ConnectionStatus": {
+                "Connected": "已连接到 Ollama",
+                "Disconnected": "已断开与 Ollama 的连接",
+                "Checking": "正在检查连接..."
+            },
+            "Panel": {
+                "Title": "AI 地下城主",
+                "Settings": "设置",
+                "Memory": "记忆",
+                "Toggle": "切换 AI 地下城主"
+            }
+        }
+    }
+}

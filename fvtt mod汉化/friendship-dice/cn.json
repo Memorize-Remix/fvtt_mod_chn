@@ -1,0 +1,55 @@
+
+  "FRIENDSHIP_DICE.SceneControl": "友谊骰",
+
+  "FRIENDSHIP_DICE.PlayerPanel.Title": "友谊骰",
+  "FRIENDSHIP_DICE.PlayerPanel.NoBonds": "尚无羁绊。",
+  "FRIENDSHIP_DICE.PlayerPanel.SelectCharacter": "请在用户配置中选择你的角色",
+  "FRIENDSHIP_DICE.PlayerPanel.Roll": "掷骰",
+  "FRIENDSHIP_DICE.PlayerPanel.Used": "已使用",
+  "FRIENDSHIP_DICE.PlayerPanel.AlreadyUsed": "你已在此次休息中使用过友谊骰。",
+
+  "FRIENDSHIP_DICE.GMPanel.Title": "友谊羁绊",
+  "FRIENDSHIP_DICE.GMPanel.AddBond": "添加羁绊",
+  "FRIENDSHIP_DICE.GMPanel.Actor1": "角色 1",
+  "FRIENDSHIP_DICE.GMPanel.Actor2": "角色 2",
+  "FRIENDSHIP_DICE.GMPanel.Delete": "删除",
+  "FRIENDSHIP_DICE.GMPanel.ResetAll": "重置所有使用次数",
+  "FRIENDSHIP_DICE.GMPanel.ConfirmResetAll": "重置所有角色的友谊骰使用次数？",
+  "FRIENDSHIP_DICE.GMPanel.ResetOne": "重置",
+  "FRIENDSHIP_DICE.GMPanel.ConfirmResetOne": "重置 {actor} 的友谊骰使用次数？",
+  "FRIENDSHIP_DICE.GMPanel.ResetOneDone": "已重置 {actor} 的友谊骰使用次数。",
+  "FRIENDSHIP_DICE.GMPanel.NoBonds": "尚未创建羁绊。",
+  "FRIENDSHIP_DICE.GMPanel.ConfirmDelete": "删除 {actor1} 和 {actor2} 之间的羁绊？",
+  "FRIENDSHIP_DICE.GMPanel.DuplicateBond": "这些角色之间已存在羁绊。",
+  "FRIENDSHIP_DICE.GMPanel.SameActor": "无法与同一角色创建羁绊。",
+  "FRIENDSHIP_DICE.GMPanel.ResetDone": "所有友谊骰使用次数已重置。",
+
+  "FRIENDSHIP_DICE.GMPanel.SearchActor": "搜索角色...",
+  "FRIENDSHIP_DICE.GMPanel.FilterBonds": "搜索...",
+  "FRIENDSHIP_DICE.GMPanel.SessionOnly": "会话中",
+  "FRIENDSHIP_DICE.PlayerPanel.FilterBonds": "筛选...",
+
+  "FRIENDSHIP_DICE.Sort.created": "按创建时间",
+  "FRIENDSHIP_DICE.Sort.name": "按名称",
+  "FRIENDSHIP_DICE.Sort.dice": "按骰子",
+  "FRIENDSHIP_DICE.Sort.updated": "按更新时间",
+
+  "FRIENDSHIP_DICE.Chat.Flavor": "{actor} 与 {partner} 使用友谊骰！",
+
+  "FRIENDSHIP_DICE.Rules.Title": "友谊骰规则",
+  "FRIENDSHIP_DICE.Rules.Bond": "羁绊由 GM 设定骰子公式，共享于两个角色之间。",
+  "FRIENDSHIP_DICE.Rules.Usage": "掷出你的一个友谊骰，并将结果添加到任何检定中。",
+  "FRIENDSHIP_DICE.Rules.Nearby": "使用骰子时，你羁绊的朋友必须在 10 英尺范围内。",
+  "FRIENDSHIP_DICE.Rules.Limit": "一旦使用，在完成一次长休前，你无法再次使用任何友谊骰。",
+  "FRIENDSHIP_DICE.Rules.SendToChat": "发送到聊天",
+
+  "FRIENDSHIP_DICE.Settings.RollDialog.Name": "在掷骰时显示友谊骰对话框",
+  "FRIENDSHIP_DICE.Settings.RollDialog.Hint": "启用后，在进行技能检定、属性检定、豁免检定和攻击检定时，将出现一个对话框，提供添加友谊骰的选项。需要 midi-qol。禁用则仅使用面板中的手动掷骰按钮。",
+  "FRIENDSHIP_DICE.Settings.RollThreshold.Name": "对话框的 D20 阈值",
+  "FRIENDSHIP_DICE.Settings.RollThreshold.Hint": "仅当 d20 结果低于此值时，才显示友谊骰对话框。设置为 0 则始终显示对话框。",
+
+  "FRIENDSHIP_DICE.Dialog.Title": "友谊骰",
+  "FRIENDSHIP_DICE.Dialog.Content": "为此掷骰使用友谊骰？",
+  "FRIENDSHIP_DICE.Dialog.Skip": "跳过",
+  "FRIENDSHIP_DICE.Roll.Label": "友谊骰"
+}

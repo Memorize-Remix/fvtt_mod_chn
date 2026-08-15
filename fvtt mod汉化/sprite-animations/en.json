@@ -1,0 +1,133 @@
+{
+  "SPRITE-ANIMATIONS": {
+    "ANIMATIONCONFIG": {
+      "TITLE": "Animation Configuration"
+    },
+    "CONFIG": {
+      "ADD": {
+        "HINT": "Click to add a new animatin",
+        "LABEL": "Add Animation"
+      },
+      "AUTOFIT": {
+        "HINT": "Will attempt to automatically fit the visible parts of the sprite within the token's area.",
+        "LABEL": "Auto-Fit"
+      },
+      "CLEAR": {
+        "HINT": "Click to remove all currently configured animations",
+        "LABEL": "Clear Animations",
+        "MESSAGE": "Are you sure you want to do this?"
+      },
+      "CONFIRMREMOVE": "Are you sure you wish to remove this animation?",
+      "DESCRIPTION": "Use the following options to add, remove, and update pre-configured animations for this token.",
+      "ENABLESOUND": "Enable Sound",
+      "EXPORT": {
+        "CLIPBOARD": "Export to Clipboard",
+        "COPIED": "Configuration copied to clipboard",
+        "DOWNLOAD": "Download JSON",
+        "HINT": "Export current animations as JSON",
+        "LABEL": "Export Animations"
+      },
+      "HEADER": "Sprite Animations",
+      "IMPORT": {
+        "BULK": "Import From Directory",
+        "BULKWARNING": "This will overwrite existing animations.  Are you sure?",
+        "CLIPBOARD": "Import from Clipboard",
+        "HINT": "Import JSON configuration",
+        "LABEL": "Import Animations",
+        "PASTED": "Configuration read from clipboard",
+        "UPLOAD": "Upload JSON"
+      },
+      "LOOP": "Loop",
+      "MESH": {
+        "DESCRIPTION": "The following options can be used to adjust the display of the underlying SpriteMesh used for this token or tile, should you need to adjust the scale or positioning relative to the actual placeable object's selectable area, in order to fit larger animations.",
+        "ENABLE": "Enable Mesh Adjustments",
+        "HEIGHT": {
+          "LABEL": "H"
+        },
+        "SHOWOUTLINE": {
+          "HINT": "If enabled, will outline the underlying sprite mesh on which this object's texture is drawn.",
+          "LABEL": "Show Mesh Outline"
+        },
+        "WIDTH": {
+          "LABEL": "W"
+        },
+        "X": {
+          "LABEL": "X"
+        },
+        "Y": {
+          "LABEL": "Y"
+        }
+      },
+      "NAME": "Name",
+      "PATH": "Path",
+      "PLAY": "Play Animation",
+      "REMOVE": {
+        "MESSAGE": "Are you sure you wish to remove {name}?",
+        "TITLE": "Remove Animation"
+      },
+      "SOUND": "Sound",
+      "TOOLTIPS": {
+        "EDIT": "Edit {animation}",
+        "EXPORT": "Export the current animations as JSON",
+        "IMPORT": "Import a JSON configuration",
+        "LOOP": "This animation should loop",
+        "REMOVE": "Remove {animation}"
+      },
+      "VOLUME": "Volume"
+    },
+    "TITLE": "Sprite Animations",
+    "HUD": {
+      "PLAY": "Sprite Animation Player"
+    },
+    "TABS": {
+      "ANIMATIONS": "Animations",
+      "MESH": "Mesh"
+    },
+    "ERRORS": {
+      "INVALIDACTOR": "Invalid actor: {actor}",
+      "INVALIDANIMATION": "Invalid animation: {animation}",
+      "INVALIDTOKEN": "Invalid token: {token}",
+      "SOCKETNOTINITIALIZED": "Websocket not initialized",
+      "PERMISSIONDENIED": "Permission denied",
+      "INVALIDSPRITE": "Invalid sprite: {sprite}",
+      "TARGETALREADYSET": "A target for this sprite animation sequence has already been set.",
+      "INVALIDJSON": "Invalid JSON"
+    },
+    "MATT": {
+      "PLAY": "Play Animation",
+      "IMMEDIATE": "Play Animation Immediately",
+      "ANIMATION": "Animation",
+      "PLAYLABEL": "Play Animation: {name}"
+    },
+    "PLAYER": {
+      "CLEAR": "Clear queue",
+      "CLEARCONFIRM": "Are you sure you wish to clear the animation queue?",
+      "DESCRIPTION": "Use the buttons below to either play an animation right away, or build a queue of animations to play in sequence.",
+      "NONE": "Nothing queued",
+      "PLAY": "Play Animation",
+      "PLAYQUEUE": "Play animation queue immediately",
+      "QUEUEQUEUE": "Play animation queue after current animation finishes",
+      "QUEUE": "Queue Animation",
+      "QUEUELIST": "Queue",
+      "REMOVE": "Remove from queue",
+      "TITLE": "Sprite Animation Player",
+      "CONFIG": "Configuration",
+      "TOOLTIPS": {
+        "PLAY": "Play {name} animation immediately",
+        "QUEUE": "Play {name} animation after current one ends",
+        "ADD": "Add {name} animation to list to play",
+        "REMOVE": "Click to remove {name} from queue"
+      }
+    },
+    "SETTINGS": {
+      "ANIMATEOTHERS": {
+        "LABEL": "Animate others' tokens",
+        "HINT": "Allow users to animate tokens they do not own"
+      },
+      "COLLAPSEHEADERBUTTON": {
+        "LABEL": "Collapse application header button",
+        "HINT": "If enabled, will hide the text label for the header button, reducing the space that the button takes up.\nNOTE: Only affects applications that use ApplicationV1."
+      }
+    }
+  }
+}

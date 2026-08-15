@@ -1,0 +1,116 @@
+{
+    "ITEM_BROWSER.ItemBrowser": "Item Browser",
+    "ITEM_BROWSER.OpenItemBrowser": "Open Item Browser",
+    "ITEM_BROWSER.SearchName": "Name:",
+    "ITEM_BROWSER.SearchDescription": "Description:",
+    "ITEM_BROWSER.WorldCompendium": "World Compendium",
+    "ITEM_BROWSER.Select": "Select",
+    "ITEM_BROWSER.Open": "Open",
+    "ITEM_BROWSER.Close": "Close",
+
+    "ITEM_BROWSER.Source.AllItems": "All Items",
+    "ITEM_BROWSER.Source.WorldItems": "World Items",
+
+    "ITEM_BROWSER.Filter": {
+        "Source": "Source:",
+        "Type": "Type:",
+        "SpellLevel": "Spell Level:",
+        "Rarity": "Rarity:",
+        "Attunement": "Requires Attunement:",
+        "BaseWeapon": "Base Weapon:",
+        "EquipmentType": "Equipment Type:",
+        "Rank": "Rank:",
+        "Category": "Category:"
+    },
+
+    "ITEM_BROWSER.TypeFilters": {
+        "AllItems": "All",
+        "NoItems": "No Items Found",
+        "ability": "Abilities",
+        "ancestry": "Ancestries",
+        "armor": "Armors",
+        "consumable": "Consumables",
+        "category": "Category",
+        "edge": "Edges",
+        "gear": "Gear",
+        "hindrance": "Hindrances",
+        "power": "Powers",
+        "shield": "Shields",
+        "skill": "Skills",
+        "weapon": "Weapons"
+    },
+
+    "ITEM_BROWSER.Name": "Name",
+    "ITEM_BROWSER.Type": "Type",
+    "ITEM_BROWSER.Cost": "Cost",
+    "ITEM_BROWSER.Weight": "Weight",
+    "ITEM_BROWSER.Damage": "Damage",
+    "ITEM_BROWSER.AP": "AP",
+    "ITEM_BROWSER.Range": "Range",
+    "ITEM_BROWSER.Shots": "Shots",
+    "ITEM_BROWSER.Parry": "Parry",
+    "ITEM_BROWSER.ROF": "ROF",
+    "ITEM_BROWSER.MinStr": "Min Str",
+    "ITEM_BROWSER.TraitMod": "Trait Mod",
+    "ITEM_BROWSER.DmgMod": "Dmg Mod",
+    "ITEM_BROWSER.Heavy": "Heavy",
+    "ITEM_BROWSER.Armor": "Armor",
+    "ITEM_BROWSER.Toughness": "Tough",
+    "ITEM_BROWSER.Locations": "Locations",
+    "ITEM_BROWSER.Cover": "Cover",
+    "ITEM_BROWSER.Rank": "Rank",
+    "ITEM_BROWSER.PP": "PP",
+    "ITEM_BROWSER.Duration": "Duration",
+    "ITEM_BROWSER.Requirements": "Requirements",
+    "ITEM_BROWSER.Price": "Price",
+    "ITEM_BROWSER.ToHit": "To Hit",
+    "ITEM_BROWSER.Attunement": "Requires Attunement",
+    "ITEM_BROWSER.BaseWeapon": "Base Weapon",
+    "ITEM_BROWSER.EquipmentType": "Equipment Type",
+    "ITEM_BROWSER.Rarity": "Rarity",
+    "ITEM_BROWSER.AC": "AC",
+    "ITEM_BROWSER.Healing": "Healing",
+    "ITEM_BROWSER.Level": "Level",
+    "ITEM_BROWSER.School": "School",
+    "ITEM_BROWSER.Components": "Components",
+    "ITEM_BROWSER.CastTime": "Cast Time",
+    "ITEM_BROWSER.Classes": "Classes",
+    "ITEM_BROWSER.Target": "Target",
+    "ITEM_BROWSER.Category": "Category",
+
+    "ITEM_BROWSER.Yes": "Yes",
+    "ITEM_BROWSER.No": "No",
+	
+    "ITEM_BROWSER.Save": "Save",
+
+    "ITEM_BROWSER.All": "All",
+    "ITEM_BROWSER.None": "None",
+    "ITEM_BROWSER.Unknown": "Unknown",
+
+    "ITEM_BROWSER.WaitError": "Item Browser was used as a selector but the requester did not wait for the results.",
+
+    "ITEM_BROWSER.Settings.ShowOnItemDirectoryN": "Show on Items Tab",
+    "ITEM_BROWSER.Settings.ShowOnItemDirectoryH": "If enabled, a button to open the Item Browser will be added to the Items tab",
+
+    "ITEM_BROWSER.Settings.UseSmallButtonN": "Use Small Button",
+    "ITEM_BROWSER.Settings.UseSmallButtonH": "If enabled, the button on the Items tab is small and placed in the same row as the search field",
+
+    "ITEM_BROWSER.Settings.UseProgressiveRenderingN": "Use Progressive Rendering",
+    "ITEM_BROWSER.Settings.UseProgressiveRenderingH": "If enabled, the table is rendered over time to make the browser more responsive when there are thousands of rows",
+
+    "ITEM_BROWSER.Settings.ProgressiveRenderSizeN": "Progressive Render Size",
+    "ITEM_BROWSER.Settings.ProgressiveRenderSizeH": "The number of rows to render each pass. If you have slow hardware or are finding the browser to be unresponsive, set this to a lower value.",
+
+    "ITEM_BROWSER.Settings.DuplicatesSettings": {
+        "Title": "Duplicates Settings",
+        "Hint": "Settings for how duplicate items are handled",
+        "Settings": {
+            "RemoveDuplicatesN": "Remove Duplicates",
+            "RemoveDuplicatesH": "If enabled, duplicates are removed from the results based on the settings below.<br>Deduplication happens after all other filtering.",
+            "TypesN": "Item Types",
+            "TypesH": "A comma-separated list of types of items that will be deduplicated. If no types are provided, no duplicates will be removed.",
+            "PriorityN": "Source Priorities",
+            "PriorityH": "This list determines which sources to prioritize when deduplicating.<br>World items are always considered to be the highest priority.<br>All other sources not listed here are considered to be the lowest priority."
+        }
+    }
+}

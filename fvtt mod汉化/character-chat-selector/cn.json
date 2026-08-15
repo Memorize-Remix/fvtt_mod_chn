@@ -1,0 +1,233 @@
+
+    "CHATSELECTOR": {
+        "Default": "默认",
+        "RefreshList": "刷新列表",
+        "Edit": "编辑",
+        "Save": "保存",
+        "Cancel": "取消",
+        "Settings": {
+			"Save": "保存",
+            "AllowPersonalThemes": {
+				"Name": "允许个人主题",
+				"Hint": "如果启用，玩家的自定义头像样式（边框、发光效果等）将对所有人可见。如果禁用，你的本地设置将应用于所有消息。"
+			},
+            "ShowSelector": {
+                "Name": "显示聊天角色选择",
+                "Hint": "显示角色选择，无需选中token即可用特定角色发言"
+            },
+            "SpeakAsToken": {
+                "Name": "token发言模式",
+                "Hint": "启用后，即使该角色的token不在场景中，也会视为使用该token发言"
+            },
+            "ShowPortrait": {
+                "Name": "显示发言者头像",
+                "Hint": "在聊天消息中显示发言者的头像"
+            },
+            "PortraitSize": {
+                "Name": "头像尺寸（像素）",
+                "Hint": "设置聊天头像的像素尺寸"
+            },
+            "PortraitBorder": {
+                "Name": "头像边框样式",
+                "Choices": {
+                    "Default": "默认",
+                    "None": "无",
+                    "Square": "方形",
+                    "Circle": "圆形",
+                    "minimalist": "极简",
+                    "cyber": "赛博朋克"
+                }
+            },
+            "PortraitBorderColor": {
+                "Name": "头像边框颜色"
+            },
+            "UseUserColor": {
+                "Name": "使用用户颜色作为头像边框",
+                "Hint": "使用用户颜色作为头像边框颜色"
+            },
+            "ChatBorderColor": {
+                "Name": "聊天边框颜色"
+            },
+            "UseUserBorder": {
+                "Name": "使用用户颜色作为聊天边框",
+                "Hint": "使用用户颜色作为聊天消息的边框颜色"
+            },
+            "UseSecondaryColor": {
+                "Name": "使用次要颜色",
+                "Hint": "为渐变和双重边框使用次要颜色"
+            },
+            "SecondaryColor": {
+                "Name": "次要颜色",
+                "Hint": "用于渐变和双重边框的颜色"
+            },
+            "UseGlowEffect": {
+				"Name": "使用能量边框",
+				"Hint": "在边框上应用旋转的能量效果"
+			},
+			"GlowColor": {
+				"Name": "能量颜色",
+				"Hint": "旋转能量的颜色"
+			},
+            "GlowStrength": {
+                "Name": "发光强度",
+                "Hint": "发光效果的强度(0-20)"
+            },
+            "UseHpTint": {
+                "Name": "显示生命值状态",
+                "Hint": "头像会随生命值降低逐渐变红"
+            },
+            "HpTintIntensity": {
+                "Name": "生命值染色强度",
+                "Hint": "设置生命值状态红色的染色强度"
+            },
+            "HpCurrentPath": {
+                "Name": "当前生命值路径",
+                "Hint": "输入当前生命值的角色数据路径"
+            },
+            "HpMaxPath": {
+                "Name": "最大生命值路径",
+                "Hint": "输入最大生命值的角色数据路径"
+            },
+            "HidePortrait": {
+                "Name": "隐藏D&D5e默认头像",
+                "Hint": "启用后隐藏D&D5e默认聊天头像，避免与Chat Selector模组的头像重复显示"
+            },
+            "AllowedModuleFlags": {
+                "Name": "允许的模组标识",
+                "Hint": "输入逗号分隔的模组ID（如foundryvtt-simple-calendar,module-id-2），允许这些模组的消息显示头像"
+            },
+            "DropdownBackground": {
+                "Name": "下拉菜单背景色",
+                "Hint": "设置下拉菜单的背景颜色"
+            },
+            "DropdownTextColor": {
+                "Name": "下拉菜单文字颜色",
+                "Hint": "设置下拉菜单的文字颜色"
+            },
+            "DropdownBorderColor": {
+                "Name": "下拉菜单边框颜色",
+                "Hint": "设置下拉菜单的边框颜色"
+            },
+            "DropdownHoverColor": {
+                "Name": "下拉菜单悬停颜色",
+                "Hint": "设置鼠标悬停时下拉菜单项的背景色"
+            },
+            "EnableThumbnailPreview": {
+                "Name": "启用缩略图预览",
+                "Hint": "鼠标悬停时显示大尺寸角色缩略图预览"
+            },
+            "EnableHotkeys": {
+                "Name": "启用角色切换快捷键",
+                "Hint": "可使用Ctrl+数字/字母键快速切换角色"
+            },
+            "HotkeyModifier": {
+                "Name": "快捷键修饰键",
+                "Hint": "选择快捷键使用的修饰键。注意避免与其他Fvtt快捷键冲突"
+            },
+            "HotkeyConfig": {
+                "Instructions": "点击每个角色的输入框，按下想要设置的快捷键（数字或字母）",
+                "ModifierNote": "设置的快捷键需配合{modifier}键使用（如{modifier}+1）"
+            },
+            "EnableRuby": {
+                "Name": "启用注音文本",
+                "Hint": "在聊天中启用注音文本支持"
+            },
+            "RubySize": {
+                "Name": "注音文字大小",
+                "Hint": "设置注音文字相对于正文的大小比例"
+            },
+            "RubyColor": {
+                "Name": "注音文字颜色",
+                "Hint": "设置注音文字的颜色"
+            },
+            "ReloadRequired": "请刷新浏览器使更改生效",
+            "FactoryReset": {
+				"Name": "恢复默认设置",
+				"Hint": "将所有设置、快捷键和个人主题重置为默认值。如果遇到问题，请使用此功能。（自动刷新）",
+				"ConfirmTitle": "确认恢复默认设置",
+				"ConfirmContent": "<p>确定吗？</p><p><strong>所有个人设置和快捷键将被删除。</strong></p>"
+			},
+			"EnableOptimization": {
+				"Name": "聊天性能优化（无限滚动）",
+				"Hint": "限制聊天记录中的消息数量，并在向上滚动时加载之前的消息。功能类似于'Less Chat'模组。"
+			},
+			"MaxMessages": {
+				"Name": "最大显示消息数",
+				"Hint": "聊天窗口中保留的最大消息数量。如果超过此数量，最早的消息将从视图中移除。"
+			},
+			"BatchSize": {
+				"Name": "滚动加载批次大小",
+				"Hint": "向上滚动时一次性加载的历史消息数量。"
+			},
+			"EnableNotification": {
+				"Name": "启用聊天通知音效",
+				"Hint": "当收到新的聊天消息时播放音效。"
+			},
+			"PlayNotificationForSelf": {
+				"Name": "为自己发送的消息播放",
+				"Hint": "是否为自己发送的消息播放音效。"
+			},
+			"NotificationSound": {
+				"Name": "通知音效文件",
+				"Hint": "选择要播放的音频文件。"
+			},
+			"NotificationVolume": {
+				"Name": "通知音量",
+				"Hint": "调整通知音效的音量。"
+			},
+			"Saved": "设置已成功保存。",
+			"Tabs": {
+				"General": "常规",
+				"Appearance": "外观",
+				"Chat": "聊天与文本",
+				"UI": "选择器界面",
+				"Advanced": "高级"
+			},
+			"Headers": {
+				"Core": "核心功能",
+				"World": "世界设置（仅GM）",
+				"Portrait": "头像风格",
+				"Colors": "颜色与效果",
+				"ChatMessage": "聊天消息",
+				"Ruby": "注音文本（振假名）",
+				"UI": "选择器界面自定义",
+				"Optimization": "聊天优化",
+				"Notification": "通知音效",
+				"HpTint": "生命值色调（红色覆盖层）"
+			},
+			"Preview": {
+				"Title": "实时预览",
+				"Note": "部分更改可能需要保存才能完全生效。",
+				"Name": "角色名称",
+				"Flavor": "描述文本",
+				"Content": "测试消息。"
+			},
+			"HideWfrp4ePortrait": {
+				"Name": "隐藏 WFRP4e 头像",
+				"Hint": "启用时，隐藏默认的 WFRP4e 聊天头像。这有助于在使用Chat Selector模组时避免重复的头像显示。"
+			}
+        },
+        "ConfigureHotkeys": "配置快捷键",
+        "HotkeyConfig": {
+            "Title": "角色切换快捷键配置",
+            "Instructions": "点击每个角色的输入框，按下想要设置的快捷键",
+            "ModifierNote": "设置的快捷键需配合{modifier}键使用"
+        },
+        "Warnings": {
+            "NoName": "请输入角色名称",
+            "NoMatch": "未找到匹配的角色",
+            "HotkeyInUse": "{name}已使用{key}键",
+            "NoMessage": "请在角色名称后输入消息内容"
+        },
+        "Info": {
+            "CharacterChanged": "已切换至角色：{name}",
+            "TempCharacterEnabled": "已启用临时角色模式：{name}",
+            "TempCharacterDisabled": "已关闭临时角色模式"
+        },
+		"Config": {
+			"Title": "角色聊天选择器配置",
+			"Button": "打开配置菜单",
+			"Hint": "打开主配置菜单以自定义头像、边框和其他设置。"
+		}
+    }
+}

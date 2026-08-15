@@ -1,0 +1,341 @@
+
+	"healthEstimate": {
+		"core": {
+			"sample": "示例",
+			"custom": {
+				"FractionHP": {
+					"name": "生命值属性数据路径",
+					"hint": "你的游戏系统可能有着与默认不同的数据路径。如果健康评估显示不正确，请手动输入数据路径（比如actor.system.health）。"
+				},
+				"FractionMath": {
+					"name": "生命值计算方式",
+					"hint": "你的游戏系统的生命值计算方式可能与默认方法不同。选择你的游戏规则的生命值计算方法。",
+					"choices": {
+						"0": "(当前生命值)/(最大生命值)",
+						"1": "(最大生命值-当前生命值)/(最大生命值)"
+					}
+				}
+			},
+			"estimates": {
+				"plural": "健康",
+				"worst": "最糟的",
+				"best": "最好的",
+				"states": {
+					"0": "失去意识",
+					"1": "濒死",
+					"2": "重伤",
+					"3": "受伤",
+					"4": "轻伤",
+					"5": "无伤"
+				},
+				"vehicles": {
+					"0": "毁坏",
+					"1": "冒火",
+					"2": "冒烟",
+					"3": "损坏",
+					"4": "划伤",
+					"5": "完好"
+				},
+				"thresholds": {
+					"0": "毁坏",
+					"1": "破损",
+					"2": "功能完好"
+				}
+			},
+			"estimationSettings": {
+				"title": "健康状况设置",
+				"AddEstimate": "增加健康状况",
+				"addTable": "增加种类",
+				"newTable": "新种类",
+				"default": "默认",
+				"deleteTable": "删除种类",
+				"estimate": "健康状况",
+				"jsRule": "JavaScript规则",
+				"prioDecrease": "降低优先级",
+				"prioIncrease": "提高优先级",
+				"ignoreColor": {
+					"name": "忽略颜色",
+					"hint": "忽略此表的颜色并为Token使用下一个有效表中的颜色。这意味着状态会比健康状况有更高的优先级，但是仍使用健康状况的颜色。"
+				}
+			},
+			"keybinds": {
+				"markDead": {
+					"name": "标记为死亡",
+					"hint": "将所有选中的Token标记为死亡。如果所有已选中的Token皆为死亡状态，则他们会被标记为生存。"
+				},
+				"customEstimates": {
+					"name": "自定义健康状况",
+					"hint": "为选中的Token设置健康状态。若留空则重置为默认健康状态。",
+					"options": {
+						"1": "Token和人物卡",
+						"2": "仅Token"
+					}
+				},
+				"dontMarkDead": {
+					"name": "不要标记为死亡",
+					"hint": "使NPC的生命值降为0使不会被标记为死亡(比如会被标记为失去意识)。仅当你开启{setting}设置时有效。"
+				},
+				"hideEstimates": {
+					"name": "隐藏健康状况",
+					"hint": "对玩家隐藏选中Token的健康状况。若设置为“是”，隐藏的健康状况会发送至聊天，并为GM显示*号标记。"
+				},
+				"hideNames": {
+					"name": "隐藏姓名",
+					"hint": "当你启用{setting}设置时，隐藏Token的姓名。"
+				},
+				"hideEstimatesAndNames": {
+					"name": "隐藏健康状况和姓名",
+					"hint": "隐藏选中Token的健康状况和姓名。"
+				}
+			},
+			"isNow": "{name}现在是{desc}了。",
+			"unknownEntity": {
+				"name": "不明实体",
+				"hint": "设置隐藏角色如何呼出。{warning}",
+				"default": "不明实体",
+				"warningCUB": "如果你正在使用CUB的隐藏名称功能，将优先使用CUB功能。",
+				"warningPF2eWorkbench": "如果你正在使用PF2e Workbench的名称神秘化功能，将优先使用Workbench功能。"
+			},
+			"alwaysShow": {
+				"name": "总是显示健康状况",
+				"hint": "总是显示健康状况，而不是仅在鼠标悬浮时显示。"
+			},
+			"combatOnly": {
+				"name": "仅在战斗中显示",
+				"hint": "仅在战斗中显示健康状况。"
+			},
+			"showDescription": {
+				"name": "显示健康状况：用户",
+				"hint": "下列用户可以看到健康状况。",
+				"choices": {
+					"all": "所有",
+					"GM": "GM",
+					"Players": "玩家",
+					"NPC": "NPC",
+					"PC": "PC"
+				}
+			},
+			"showDescriptionTokenType": {
+				"name": "显示健康状况：Token",
+				"hint": "显示下列Token的健康状况。"
+			},
+			"deathState": {
+				"name": "死亡状态显示",
+				"hint1": "当Token受到{setting2}中指定的状态图标影响时，显示{setting}中设定的Token。",
+				"hint2": "当Token在战斗中被击败时，显示{setting}中设定的Token。"
+			},
+			"deathStateName": {
+				"name": "死亡状态名称",
+				"hint": "当Token死亡时显示的描述文本。",
+				"default": "死亡"
+			},
+			"deathMarker": {
+				"name": "死亡标记",
+				"hint": "标记死亡Token的状态图标路径。"
+			},
+			"tooltipPosition": {
+				"name": "高度提示位置",
+				"hint": "移动高度提示，以避免在Token顶部显示时与健康状况冲突。",
+				"options": {
+					"left": "左",
+					"default": "默认(无变更)",
+					"right": "右"
+				}
+			},
+			"NPCsJustDie": {
+				"name": "NPC 立刻死亡",
+				"hint": "未被玩家选择的角色的Token的健康状况的最后一个阶段会被{setting}替代。有关“玩家选择的角色”的更多信息，请阅读FVTT知识库里的“用户和权限”一文中的用户配置部分。"
+			},
+			"outputChat": {
+				"name": "将健康状况发到聊天栏",
+				"hint": "将任何健康状况的变化发到聊天栏。Token配置为“隐藏名称”的角色将显示{setting}设置的描述。"
+			},
+			"addTemp": {
+				"name": "添加临时生命值",
+				"hint": "显示描述时将临时生命值也计算在内。\n例如：启用此选项后，有临时生命值的Token会看起来更“健康”，除非它正处于最大生命值。"
+			},
+			"breakOnZeroMaxHP": {
+				"name": "在Token上隐藏健康状况",
+				"hint": "对物品Token很有用。",
+				"options": {
+					"none": "不隐藏健康状况",
+					"zero": "最大生命值为0",
+					"one": "最大生命值为1", 
+					"zeroOrOne": "最大生命值为0或1"
+				}
+			},
+			"menuSettings": {
+				"behaviorSettings": {
+					"name": "行为设置",
+					"plural": "行为设置"
+				},
+				"deathSettings": {
+					"name": "死亡设置",
+					"plural": "死亡设置"
+				},
+				"styleSettings": {
+					"name": "风格设置",
+					"plural": "风格设置"
+				},
+				"fontSize": {
+					"name": "字体大小",
+					"hint": "接受任何可用的CSS字体大小属性"
+				},
+				"useColor": {
+					"name": "使用颜色",
+					"hint": "健康状况黑白显示。"
+				},
+				"smoothGradient": {
+					"name": "平滑梯度",
+					"hint": "禁用该选项会让描述的颜色仅在到达下一阶段时改变， 启用该选项则会反映健康百分比。"
+				},
+				"deadColor": {
+					"name": "死亡Token颜色"
+				},
+				"outline": {
+					"name": "描线",
+					"darken": "暗色",
+					"brighten": "亮色"
+				},
+				"position": {
+					"name": "高度",
+					"hint": "设置与Token框的相对高度。负值更高，正值更低。",
+					"top": "顶部",
+					"middle": "中部",
+					"bottom": "底部"
+				},
+				"position2": {
+					"name": "位置",
+					"hint": "相对于Token框架的位置。"
+				},
+				"positionAdjustment": {
+					"name": "边缘调整",
+					"hint": "调整文本边缘。正值更高，负值更低。"
+				},
+				"scaleToGridSize": {
+					"name": "网格大小调整",
+					"hint": "根据网格大小调整健康状况，假设基值为 100px。"
+				},
+				"scaleToTokenSize": {
+					"name": "根据Token大小调整",
+					"hint": "根据Token的大小调整健康状况。"
+				},
+				"scaleToZoom": {
+					"name": "调整健康状况缩放",
+					"hint": "根据缩放调整健康状况文字尺寸。"
+				}
+			}
+		},
+		"notifications": {
+			"terms": {
+				"shown": {
+					"singular": "显示",
+					"plural": "显示"
+				},
+				"hidden": {
+					"singular": "隐藏",
+					"plural": "隐藏"
+				}
+			},
+			"toggleEstimate": "{tokenName}的健康状况正对玩家{term}。",
+			"toggleName": "{tokenName}的姓名正对玩家{term}。",
+			"toggleEstimateName": "{tokenName}的健康状况和姓名正对玩家{term}。",
+			"invalidFontSize": "您的字体大小设置已被重置。请查看样式设置进行更改。上一值：{fontSize}"
+		},
+		"custom-system-builder": {
+			"FractionHP": {
+				"hint": "这大概为{dataPath1}或{dataPath2}。"
+			},
+			"tempHP": {
+				"name": "临时生命值数据路径",
+				"hint": "如果系统没有此功能、或你不希望它出现在生命预测中时，此项留空。"
+			}
+		},
+		"cyberpunk-red-core": {
+			"unorganics": {
+				"4": "未受损",
+				"3": "可运转",
+				"2": "故障",
+				"0": "报废"
+			}
+		},
+		"cyphersystem": {
+			"impaired": {
+				"name": "受伤的PC的健康状况等级",
+				"hint": "设置追踪死亡时为受伤PC显示的最大HP水平（当前 / 最大，小数点从0.0 - 1.0）"
+			},
+			"debilitated": {
+				"name": "身体虚弱的PC的健康状况等级",
+				"hint": "设置追踪死亡时为疲惫（Debilitated）PC显示的最大HP水平（当前 / 最大，小数点从0.0 - 1.0）"
+			}
+		},
+		"PF1": {
+			"addNonlethal": {
+				"name": "使用非致命伤害",
+				"hint": "启用时，非致命伤害将从当前生命值估算中扣除。"
+			},
+			"showExtra": {
+				"name": "显示{condition1} & {condition2}",
+				"hint": "满足先决条件时显示{condition1}和{condition2}的描述。"
+			},
+			"disabledName": {
+				"name": "瘫痪阶段",
+				"default": "瘫痪"
+			},
+			"dyingName": {
+				"name": "失去意识",
+				"default": "失去意识"
+			}
+		},
+		"PF2E": {
+			"staminaToHp": {
+				"name": "显示耐力值",
+				"hint": "将耐力值加到健康状况内。"
+			},
+			"hideHazardHP": {
+				"name": "隐藏危害的生命值估算",
+				"hint": "隐藏危害的生命值估算。"
+			},
+			"hideVehicleHP": {
+				"name": "隐藏载具估算",
+				"hint": "隐藏载具的生命值估算。"
+			},
+			"workbenchMystifier": {
+				"name": "(实验性) PF2e Workbench神秘化支持",
+				"hint": "如果启用了NPC神秘化功能，聊天输出将忽略{setting}的设置名称，若Token名称与角色原始Token名称不同，则改为使用Token名称。"
+			}
+		},
+		"numenera": {
+			"countPools": {
+				"name": "空属性池计数",
+				"hint": "为空属性池计数，而不是统计其值的和。评估仅会在属性池被删除或补足时更改。"
+			}
+		},
+		"starfinder": {
+			"useThreshold": {
+				"name": "使用载具阈值",
+				"hint": "请设置计算载具健康时使用的健康情况表。"
+			},
+			"addStamina": {
+				"name": "记录耐力",
+				"hint": "启用该选项会将耐力加到 HP 上用作计算。"
+			}
+		},
+		"worldbuilding": {
+			"simpleRule": {
+				"name": "评估规则",
+				"hint": "用来计算Token生命值分数的 JS 公式。谨慎更改。 默认为简单的递减生命值，例如：初始生命值为 10/10，受到伤害后降为 0/10。"
+			}
+		},
+		"swade": {
+			"defaultWildCardMaxWounds": {
+				"name": "Wild Card默认最大受伤值",
+				"hint": "此选项用于计算被标记为Wild Card的NPC的默认最大受伤值。"
+			},
+			"showIncap": {
+				"name": "{incap}状态效果",
+				"hint": "带有{incap}状态效果的Token将被显示为{incap}而非实时的健康状况。这对载具或已死亡的Token无效。"
+			}
+		}
+	}
+}

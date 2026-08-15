@@ -1,0 +1,27 @@
+{
+  "insania-et-perturbatio-animi": {
+    "settings": {
+      "logLevel": {
+        "name": "Log Level",
+        "hint": "Set the logging level for the module",
+        "choices": {
+          "debug": "Debug — Show every log message, including detailed diagnostics",
+          "info": "Info — Show informational messages and above (hides debug)",
+          "warn": "Warning — Show only warnings and errors",
+          "error": "Error — Show only error-level messages",
+          "fatal": "Fatal — Show only critical (fatal) errors",
+          "none": "None — Disable all logging"
+        }
+      },
+      "notifications": {
+        "moduleInitialised": "Insania et Perturbatio Animi initialised successfully",
+        "settingChanged": "Setting '{setting}' updated to: {value}",
+        "settingFailed": "Failed to update setting '{setting}'",
+        "logLevelChanged": "Log level changed to: {level}"
+      }
+    },
+    "anguishBar": {
+      "name": "Anguish"
+    }
+  }
+}

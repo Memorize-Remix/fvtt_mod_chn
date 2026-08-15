@@ -1,0 +1,39 @@
+{
+    "_chatcommands": {
+        "settings": {
+            "enableAutocomplete": "启用自动补全",
+            "enableAutocompleteHint": "在聊天中输入命令时显示自动补全菜单。需要重新加载才能应用。",
+            "maxEntries": "最大自动补全条目",
+            "maxEntriesHint": "限制自动补全菜单中可显示的条目数量。其他条目将以溢出信息取代。",
+            "autocompleteCore": "自动补全核心命令",
+            "autocompleteCoreHint": "包含 FoundryVTT 核心命令的自动补全功能。需要重新加载才能应用。",
+            "displayFooter": "显示别名和模组",
+            "displayFooterHint": "在自动补全命令时显示别名和源代码模组。"
+        },
+        "extraEntries": "输入参数以查找其他结果。",
+        "noEntries": "没有与您的输入匹配的注册指令。",
+        "insufficientPermissions": "您没有使用 {command} 命令的权限。",
+        "coreCommands": {
+            "ic": "以当前选定或关联的角色发送信息。",
+            "ooc": "以ooc发送信息。",
+            "emote": "以当前选定或关联角色的身份执行表情。",
+            "whisper": {
+                "description": "向其他玩家发送私信",
+                "gm": "GM",
+                "players": "PL"
+            },
+            "roll": {
+                "basic": "掷骰",
+                "gm": "掷出一些只有你和GM才能看到的骰子。",
+                "blind": "掷出一些只有GM才能看到的骰子。",
+                "self": "掷一些只有你能看到的骰子。",
+                "public": "掷出每个人都能看到的骰子。",
+                "simpleInfo": "基本语法: <span class='parameter'>数量</span>d<span class='parameter'>面数</span>+,-,*,/<span class='parameter'>更多掷骰或加值</span>",
+                "descriptionInfo": "带标签的掷骰: <span class='parameter'>掷骰</span>[<span class='parameter'>骰子说明</span>] # <span class='parameter'>掷骰说明</span>",
+                "modifierInfo": "调整值: 见<a href='https://foundryvtt.com/article/dice-modifiers/'>骰子调整值</a>.",
+                "advancedInfo": "Pools, variables & functions: 见<a href='https://foundryvtt.com/article/dice-advanced/'>进阶骰子</a>.",
+                "recent": "最近使用"
+            }
+        }
+    }
+}

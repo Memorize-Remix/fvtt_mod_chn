@@ -1,0 +1,36 @@
+{
+    "portal-lib": {
+        "settings": {
+            "autoDelete": {
+                "name": "Auto Delete Transformation Actor",
+                "hint": "If enabled, the actor will be deleted without confirmation after the transformation is reverted."
+            },
+            "enableRouter": {
+                "name": "Enable Router",
+                "hint": "If enabled, non-gm users will be able to use the Portal Router which allows script execution to update unowned documents. IMPORTANT: A Malicious or Inexperienced user could use this to grief or damage the contents of your world. Make sure you only use this with players you trust."
+            }
+        },
+        "app": {},
+        "flags": {},
+        "ERR": {
+            "InvalidOrigin": "Portal: Invalid origin",
+            "InvalidTexture": "Portal: Invalid texture",
+            "InvalidNumber": "Portal: Invalid number",
+            "InvalidColor": "Portal: Invalid color",
+            "InvalidTransformTarget": "Portal: Invalid transform target",
+            "InvalidTransformCreature": "Portal: Invalid transform creature",
+            "NoTokenData": "Portal: No token data",
+            "NoTeleportTarget": "Portal: No teleport target",
+            "OutOfRange": "Portal: Out of range, please pick a new location"
+        },
+        "INFO": {
+            "RevertedTransformation": "Portal: Reverted transformation"
+        },
+        "DIALOG": {
+            "Title": "Portal: Spawn Creatures",
+            "TransformTitle": "Portal: Chose a creature to transform to",
+            "DeleteTitle": "Portal: Delete Transformation Actor",
+            "DeleteContent": "The transformation actor is no longer needed and can be deleted. Proceed?"
+        }
+    }
+}

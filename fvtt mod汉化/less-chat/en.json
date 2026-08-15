@@ -1,0 +1,14 @@
+{
+    "less-chat": {
+        "Settings": {
+            "Max": {
+                "name": "Maximum Rendered Chat Messages",
+                "hint": "Number of chat messages displayed in the chat log at once.  Old messages are still there, and will be re-displayed if you scroll to the top.  They will be removed when the log is scolled back to the bottom."
+            },
+            "Batch": {
+                "name": "Chat Rendering Batch Size",
+                "hint": "Number of chat messages to render at once when scrolling up.  A smaller size means more 're-scrolls' when going back in the history.  But each re-scoll will be less of a pause."
+            }
+        }
+    }
+}

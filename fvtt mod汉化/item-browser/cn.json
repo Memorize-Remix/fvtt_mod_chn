@@ -1,0 +1,116 @@
+
+    "ITEM_BROWSER.ItemBrowser": "物品浏览器",
+    "ITEM_BROWSER.OpenItemBrowser": "打开物品浏览器",
+    "ITEM_BROWSER.SearchName": "名称：",
+    "ITEM_BROWSER.SearchDescription": "描述：",
+    "ITEM_BROWSER.WorldCompendium": "世界合集",
+    "ITEM_BROWSER.Select": "选择",
+    "ITEM_BROWSER.Open": "打开",
+    "ITEM_BROWSER.Close": "关闭",
+
+    "ITEM_BROWSER.Source.AllItems": "所有物品",
+    "ITEM_BROWSER.Source.WorldItems": "世界物品",
+
+    "ITEM_BROWSER.Filter": {
+        "Source": "来源：",
+        "Type": "类型：",
+        "SpellLevel": "法术环阶：",
+        "Rarity": "稀有度：",
+        "Attunement": "需要同调：",
+        "BaseWeapon": "基础武器：",
+        "EquipmentType": "装备类型：",
+        "Rank": "等级：",
+        "Category": "类别："
+    },
+
+    "ITEM_BROWSER.TypeFilters": {
+        "AllItems": "全部",
+        "NoItems": "未找到物品",
+        "ability": "属性",
+        "ancestry": "传承",
+        "armor": "护甲",
+        "consumable": "消耗品",
+        "category": "类别",
+        "edge": "专长",
+        "gear": "装备",
+        "hindrance": "缺陷",
+        "power": "威能",
+        "shield": "盾牌",
+        "skill": "技能",
+        "weapon": "武器"
+    },
+
+    "ITEM_BROWSER.Name": "名称",
+    "ITEM_BROWSER.Type": "类型",
+    "ITEM_BROWSER.Cost": "价格",
+    "ITEM_BROWSER.Weight": "重量",
+    "ITEM_BROWSER.Damage": "伤害",
+    "ITEM_BROWSER.AP": "AP",
+    "ITEM_BROWSER.Range": "射程",
+    "ITEM_BROWSER.Shots": "弹数",
+    "ITEM_BROWSER.Parry": "格挡",
+    "ITEM_BROWSER.ROF": "ROF",
+    "ITEM_BROWSER.MinStr": "最小力量",
+    "ITEM_BROWSER.TraitMod": "特性调整",
+    "ITEM_BROWSER.DmgMod": "伤害调整",
+    "ITEM_BROWSER.Heavy": "重型",
+    "ITEM_BROWSER.Armor": "护甲",
+    "ITEM_BROWSER.Toughness": "坚韧",
+    "ITEM_BROWSER.Locations": "部位",
+    "ITEM_BROWSER.Cover": "掩护",
+    "ITEM_BROWSER.Rank": "等级",
+    "ITEM_BROWSER.PP": "PP",
+    "ITEM_BROWSER.Duration": "持续时间",
+    "ITEM_BROWSER.Requirements": "需求",
+    "ITEM_BROWSER.Price": "价格",
+    "ITEM_BROWSER.ToHit": "命中",
+    "ITEM_BROWSER.Attunement": "需要同调",
+    "ITEM_BROWSER.BaseWeapon": "基础武器",
+    "ITEM_BROWSER.EquipmentType": "装备类型",
+    "ITEM_BROWSER.Rarity": "稀有度",
+    "ITEM_BROWSER.AC": "AC",
+    "ITEM_BROWSER.Healing": "治疗",
+    "ITEM_BROWSER.Level": "等级",
+    "ITEM_BROWSER.School": "学派",
+    "ITEM_BROWSER.Components": "成分",
+    "ITEM_BROWSER.CastTime": "施法时间",
+    "ITEM_BROWSER.Classes": "职业",
+    "ITEM_BROWSER.Target": "目标",
+    "ITEM_BROWSER.Category": "类别",
+
+    "ITEM_BROWSER.Yes": "是",
+    "ITEM_BROWSER.No": "否",
+
+    "ITEM_BROWSER.Save": "保存",
+
+    "ITEM_BROWSER.All": "全部",
+    "ITEM_BROWSER.None": "无",
+    "ITEM_BROWSER.Unknown": "未知",
+
+    "ITEM_BROWSER.WaitError": "物品浏览器被用作选择器，但请求者未等待结果。",
+
+    "ITEM_BROWSER.Settings.ShowOnItemDirectoryN": "在物品标签页显示",
+    "ITEM_BROWSER.Settings.ShowOnItemDirectoryH": "启用后，将在物品标签页添加打开物品浏览器的按钮",
+
+    "ITEM_BROWSER.Settings.UseSmallButtonN": "使用小按钮",
+    "ITEM_BROWSER.Settings.UseSmallButtonH": "启用后，物品标签页上的按钮将变小并位于搜索栏同一行",
+
+    "ITEM_BROWSER.Settings.UseProgressiveRenderingN": "使用渐进式渲染",
+    "ITEM_BROWSER.Settings.UseProgressiveRenderingH": "启用后，表格会随时间逐步渲染，当有数千行数据时使浏览器响应更迅速",
+
+    "ITEM_BROWSER.Settings.ProgressiveRenderSizeN": "渐进式渲染大小",
+    "ITEM_BROWSER.Settings.ProgressiveRenderSizeH": "每次渲染的行数。如果你的硬件较慢或发现浏览器无响应，请将此值设置为较低值。",
+
+    "ITEM_BROWSER.Settings.DuplicatesSettings": {
+        "Title": "重复项设置",
+        "Hint": "如何处理重复物品的设置",
+        "Settings": {
+            "RemoveDuplicatesN": "移除重复项",
+            "RemoveDuplicatesH": "启用后，根据以下设置从结果中移除重复项。<br>去重操作在所有其他筛选之后进行。",
+            "TypesN": "物品类型",
+            "TypesH": "逗号分隔的去重物品类型列表。如果未提供类型，则不会移除任何重复项。",
+            "PriorityN": "来源优先级",
+            "PriorityH": "此列表确定去重时优先考虑哪些来源。<br>世界物品始终被视为最高优先级。<br>此处未列出的所有其他来源被视为最低优先级。"
+        }
+    }
+}

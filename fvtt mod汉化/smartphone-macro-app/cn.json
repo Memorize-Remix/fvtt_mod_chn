@@ -1,0 +1,114 @@
+
+  "SMARTPHONE": {
+    "apps": {
+      "macros": {
+        "title": "宏",
+        "searchAndFilter": {
+          "searchPlaceholder": "按名称搜索...",
+          "filterButton": "过滤",
+          "filterTitle": "宏过滤",
+          "type": "类型",
+          "typeAll": "全部",
+          "typeScript": "脚本",
+          "typeChat": "聊天",
+          "ownership": "所有权",
+          "ownershipAllUsers": "所有用户",
+          "permission": "权限",
+          "permissionAll": "全部",
+          "permissionObserver": "查看+",
+          "permissionLimited": "限制+",
+          "permissionOwner": "仅拥有者",
+          "noResults": "未找到结果。"
+        },
+        "contextMenu": {
+          "addToHome": "添加到主屏幕",
+          "addFavorite": "添加到收藏",
+          "removeFavorite": "从收藏移除",
+          "edit": "编辑",
+          "delete": "删除",
+          "ownership": "配置所有权",
+          "duplicate": "复制",
+          "share": "分享",
+          "renameFolder": "重命名文件夹",
+          "deleteFolder": "删除文件夹"
+        },
+        "notifications": {
+          "shareValidation": "必须同时填写接收者和数据包标题。",
+          "duplicating": "正在复制宏“{name}”...",
+          "created": "已创建宏“{name}”。",
+          "sharing": "正在分享宏“{macroName}”...",
+          "shared": "已将宏发送给“{recipientName}”。",
+          "executing": "正在执行宏“{name}”...",
+          "folderRenamed": "文件夹已重命名。",
+          "folderDeleted": "文件夹已删除。"
+        },
+        "copySuffix": "（复制）",
+        "newFolderDialog": {
+          "title": "创建新文件夹",
+          "placeholder": "输入文件夹名称",
+          "createButton": "创建",
+          "toastMessage": "正在创建文件夹“{folderName}”并移动宏..."
+        },
+        "renameFolderDialog": {
+          "title": "重命名文件夹",
+          "placeholder": "新文件夹名称",
+          "confirmButton": "重命名"
+        },
+        "newMacroDialog": {
+          "title": "创建新宏",
+          "placeholder": "输入宏名称",
+          "createButton": "创建",
+          "toastMessage": "正在创建宏“{name}”..."
+        },
+        "shareDialog": {
+          "title": "分享宏",
+          "recipient": "接收者",
+          "selectRecipient": "选择联系人或群组...",
+          "packetTitle": "数据包标题",
+          "packetTitlePlaceholder": "例如：应急软件",
+          "message": "附加消息（可选）",
+          "messagePlaceholder": "输入说明...",
+          "sendButton": "发送",
+          "noContacts": "没有可分享的联系人或群组。"
+        },
+        "deleteConfirm": {
+          "title": "删除宏",
+          "content": "确定要删除宏“{name}”吗？此操作无法撤销。",
+          "confirmButton": "删除"
+        },
+        "deleteFolderConfirm": {
+          "title": "删除文件夹",
+          "content": "确定要删除文件夹“{folderName}”吗？<br>其中内容将移动到父文件夹。",
+          "confirmButton": "删除"
+        },
+        "toastMoveToFolder": "正在将宏移动到文件夹...",
+        "emptyFavorites": "在“浏览器”标签中右键宏<br>即可添加到收藏。",
+        "favoritesTab": "收藏",
+        "explorerTab": "浏览器",
+        "newMacroInRoot": "新宏（根文件夹）",
+        "newMacroInFolder": "新宏（{folderName}）",
+        "Empty": "空"
+      },
+      "messages": {
+        "saveToMemory": "保存到记忆",
+        "useImmediately": "立即使用",
+        "saved": "已保存",
+        "macroSavedSuccess": "宏已成功保存。",
+        "macroExecError": "未找到宏或权限不足。请先保存。",
+        "macroSocketError": "错误：未找到宏应用的 socket。",
+        "macroPacketLabel": "宏数据包："
+      }
+    },
+    "ui": {
+      "removeShortcut": "移除快捷方式",
+      "removeShortcutTitle": "移除快捷方式",
+      "confirmRemoveShortcut": "确定要从主屏幕移除快捷方式“{name}”吗？"
+    },
+    "notifications": {
+      "alreadyOnHome": "已在主屏幕中。",
+      "addedToHome": "已添加到主屏幕。",
+      "shortcutRemoved": "快捷方式已移除。",
+      "macroNotFound": "未找到宏。"
+    }
+  }
+}

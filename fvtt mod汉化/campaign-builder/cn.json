@@ -1,0 +1,1296 @@
+
+  "fcb": {
+    "title": "Campign Builder",
+    "defaultRootFolderName": "Campign Builder",
+    "contentFolders": {
+      "campaigns": "战役",
+      "entries": "条目",
+      "sessions": "会话",
+      "fronts": "导向",
+      "arcs": "剧情线",
+      "storyWebs": "故事网络"
+    },
+    "settings": {
+      "startCollapsed": "侧边栏初始折叠？",
+      "startCollapsedHelp": "首次打开窗口时，侧边栏是否应该关闭？",
+      "displaySessionNotes": "显示弹出式会话笔记",
+      "displaySessionNotesHelp": "启用后，游戏会话开始时将自动打开会话笔记窗口",
+      "defaultAddToSession": "默认'添加到当前会话'",
+      "defaultAddToSessionHelp": "在游戏模式下，创建条目时的复选框默认应为开启还是关闭？",
+		"sessionBookmark": "显示会话书签",
+		"sessionBookmarkHelp": "启用后，当前会话的书签将显示在书签栏的最前端",
+      "sessionDisplayMode": "会话显示格式",
+      "sessionDisplayModeHelp": "选择会话在战役目录中的显示方式",
+      "sessionDisplayModeOptions": {
+        "number": "会话编号",
+        "date": "会话日期",
+        "name": "会话名称"
+      },
+      "keybindings": {
+        "closeTab": "关闭标签页",
+        "closeTabHelp": "关闭当前标签页",
+        "historyBack": "在标签页历史中后退",
+        "historyBackHelp": "在当前标签页的历史记录中\"后退\"",
+        "historyForward": "在标签页历史中前进",
+        "historyForwardHelp": "在当前标签页的历史记录中\"前进\"",
+        "toggleWindow": "打开/关闭主窗口",
+        "toggleWindowHelp": "打开/关闭战役构建器窗口",
+        "addToDo": "添加待办事项",
+		"addToDoHelp": "打开对话框，为战役添加新的待办事项"
+      },
+      "autoRefreshRollTables": "自动刷新随机表",
+      "autoRefreshRollTablesHelp": "启用后，模组加载时将自动用新值刷新生成器随机表",
+      "rollTableSettings": "随机表设置",
+      "rollTableSettingsLabel": "随机表设置",
+      "rollTableSettingsHelp": "配置随机生成器的设置",
+      "rollTableConfig": {
+        "defaultTypeNPC": "默认NPC类型",
+        "defaultTypeNPCHelp": "创建NPC角色条目时使用的默认类型",
+        "defaultTypeTown": "默认城镇类型",
+        "defaultTypeTownHelp": "创建城镇地点条目时使用的默认类型",
+        "defaultTypeStore": "默认商店类型",
+        "defaultTypeStoreHelp": "创建商店地点条目时使用的默认类型",
+        "defaultTypeTavern": "默认酒馆类型",
+        "defaultTypeTavernHelp": "创建酒馆地点条目时使用的默认类型"
+      },
+      "advanced": "高级设置",
+      "advancedLabel": "打开高级设置",
+      "advancedHelp": "配置高级设置（包括AI）",
+      "speciesList": "管理物种列表",
+      "speciesListLabel": "物种列表",
+      "speciesListHelp": "定义可用的物种。这些跨越所有设定 - 如果你需要每个设定有不同的列表，请提交问题。",
+      "hideBackendWarning": "隐藏缺失后端警告？",
+      "hideBackendWarningHelp": "如果你不使用后端，这可以让你关闭通知",
+      "enableToDoList": "启用待办事项列表",
+      "enableToDoListHelp": "如果禁用，待办事项列表功能将被关闭。",
+      "autoRelationships": "自动建议关系",
+      "autoRelationshipsHelp": "如果启用，系统将根据对描述的更改自动建议条目之间关系的更改。",
+	  "images": "配置内容图像",
+	  "imagesLabel": "内容图像",
+	  "imagesHelp": "配置不同内容类型的图像可见性设置",
+      "showTypesInTree": "在设定树中显示类型",
+      "showTypesInTreeHelp": "为true时，如果设定目录未按类型分组，将在树中显示每个条目的类型。",
+      "useFronts": "使用导向",
+	  "useFrontsHelp": "开启战役\"导向\"功能。",
+	  "useStoryWebs": "使用故事网络",
+	  "useStoryWebsHelp": "开启战役\"故事网络\"功能。",
+	  "useTimeline": "使用时间线",
+		"useTimelineHelp": "开启时间线功能（需要 Calendaria 模组）。",
+	  "subTabsSavePosition": "子标签页保存位置",
+	  "subTabsSavePositionHelp": "启用时，每个标签页都会记住内部哪个子标签页是打开的，并在重新打开该标签页时返回到该子标签页。禁用时，标签页将始终恢复到第一个子标签页（通常是描述）。",
+	  "storyWebAutoArrange": "自动排列故事网络",
+	  "storyWebAutoArrangeHelp": "启用时，故事网络将重新排列以保持画面整洁。禁用时，你可以按照自己的意愿精确放置所有元素。",
+		"customFields": "自定义字段",
+		"customFieldsLabel": "配置自定义字段",
+		"customFieldsHelp": "为每种内容类型配置额外的字段和AI指令",
+		"storyWebSettings": "故事网络设置",
+		"storyWebSettingsLabel": "配置设置",
+		"storyWebSettingsHelp": "配置故事网络的线条颜色/样式和元素文本",
+      "enableVoiceRecording": "启用语音录制",
+	  "enableVoiceRecordingHelp": "允许录制角色语音样本，以帮助记忆角色的声音/口音",
+	  "tableGrouping": "表格分组设置",
+	  "tableGroupingLabel": "表格分组",
+	  "tableGroupingHelp": "配置每种内容类型下哪些标签页使用分组表格",
+	  "tabVisibility": "标签页可见性设置",
+    "tabVisibilityLabel": "标签页可见性",
+    "tabVisibilityHelp": "为每种内容类型配置哪些标签页可见",
+	  "importExport": "导入/导出模组数据",
+	  "importExportLabel": "导入/导出模组数据",
+	  "importExportHelp": "将所有模组数据导出到文件，或从之前的导出文件导入数据",
+      "associationTags": "关联标签",
+    "associationTagsLabel": "配置关联标签",
+    "associationTagsHelp": "配置与角色（用于人物）和场景（用于地点）相关联的标签"
+    },
+    "applications": {
+      "sessionNotes": {
+        "title": "会话笔记"
+      },
+      "speciesList": {
+        "title": "配置物种列表",
+        "labels": {
+          "add": "添加物种",
+          "edit": "编辑物种",
+          "delete": "删除物种"
+        },
+		"newSpecies": "新物种",
+        "newDescription": "新物种描述",
+        "defaultSpecies": {
+          "dwarf": {
+            "name": "矮人",
+            "description": "结实而有韧性，矮人以他们的工艺、耐力以及与山脉和石工的深厚联系而闻名。他们通常矮小粗壮，有着浓密的胡须和强调其坚韧的结实体格。"
+          },
+          "elf": {
+            "name": "精灵",
+            "description": "优雅而长寿，精灵拥有敏锐的感官、对魔法的自然亲和力以及与自然的持久联系。他们高大苗条，有着尖耳朵、棱角分明的特征和超凡脱俗的美貌。"
+          },
+          "halfling": {
+            "name": "半身人",
+            "description": "小巧而灵活，半身人开朗且足智多谋，以他们的运气和避开危险的能力而闻名。他们矮小，大约三英尺高，有着圆脸、卷发和友好的举止。"
+          },
+          "human": {
+            "name": "人类",
+            "description": "多才多艺且雄心勃勃，人类适应任何环境，擅长各种技能和职业。他们在身高、体格、肤色和面部特征上差异很大，反映了他们文化的多样性。"
+          },
+          "dragonborn": {
+            "name": "龙裔",
+            "description": "骄傲而强大，龙裔是人形龙类，有着强烈的荣誉感和天生的吐息武器。他们高大肌肉发达，覆盖着彩色鳞片，有着爬行动物的头部、爪状手和尾巴。"
+          },
+          "gnome": {
+            "name": "侏儒",
+            "description": "好奇且富有创造力，侏儒小巧灵活，以敏锐的头脑和对修补的热爱而闻名。他们矮小，有着尖耳朵、淘气的举止和寻找隐藏宝藏的技巧。"
+          },
+          "half-elf": {
+            "name": "半精灵",
+            "description": "融合了人类的多才多艺和精灵的优雅，半精灵富有魅力且适应性强，适合两个世界但又不完全属于任何一个。他们有略微尖的耳朵、棱角分明的面部特征，以及因血统而异的人类和精灵特征的混合。"
+          },
+          "half-orc": {
+            "name": "半兽人",
+            "description": "强壮而坚韧，半兽人继承了兽人血统的耐力和战斗精神，同时常常努力证明自己超越于此。他们高大强壮，有着绿色或灰色的皮肤、突出的下獠牙和浓密的眉毛。"
+          },
+          "tiefling": {
+            "name": "提夫林",
+            "description": "被地狱血统标记，提夫林拥有恶魔特征、天生的火焰抗性和魔法天赋。他们有角、尾巴和不寻常的眼睛和皮肤颜色，范围从深红色到紫色和蓝色。"
+          }
+        }
+      },
+      "advancedSettings": {
+        "title": "配置高级设置",
+        "labels": {
+          "add": "新增",
+          "backendURL": "后端URL",
+          "backendURLHint": "部署后端脚本的输出。",
+          "APIToken": "API Token",
+          "APITokenHint": "部署后端脚本的输出。",
+          "useGmailIdeas": "使用Gmail获取想法",
+          "useGmailIdeasHint": "启用后，将从Gmail收件箱创建想法项目",
+          "emailDefaultSetting": "电子邮件的默认设定",
+          "emailDefaultSettingHint": "电子邮件功能使用的默认设定（例如，邮件发送想法项目）",
+          "emailDefaultCampaign": "电子邮件的默认战役",
+          "emailDefaultCampaignHint": "电子邮件功能使用的默认战役（例如，邮件发送想法项目）",
+          "selectSetting": "选择一个设定...",
+          "selectCampaign": "选择一个战役...",
+          "textModel": "文本生成模型",
+          "textModelHint": "选择用于文本生成的AI模型",
+          "imageModel": "图像生成模型",
+          "imageModelHint": "选择用于图像生成的AI模型"
+        },
+        "tabs":{
+          "backend": "后端",
+          "models": "AI模型",
+          "content": "AI内容",
+          "email": "电子邮件"
+        }
+      },
+		"customFields": {
+		  "title": "配置自定义字段",
+		  "tabs": {
+			"fields": "字段",
+			"images": "图像"
+		  },
+		  "notifications": {
+			"missingLabel": "每个自定义字段必须有一个标签",
+			"duplicateKey": "两个自定义字段具有相同的名称。请重命名其中一个，确保键名唯一。"
+		  },
+		  "labels": {
+			"contentType": "内容类型",
+			"selectType": "选择类型...",
+			"selectOptionsPlaceholder": "a;b;c",
+			"aiTemplate": "AI模板",
+			"delete": "删除"
+		  },
+		  "images": {
+			"labels": {
+			  "prompt": "图像提示词",
+			  "promptTemplate": "图像提示词模板",
+			  "selectField": "选择字段...",
+			  "insert": "插入",
+			  "fieldToken": "插入字段token",
+			  "descriptionField": "用于图像生成的描述字段",
+			  "negativePrompt": "负面提示词",
+			  "imageConfiguration": "图像配置",
+			  "artStyle": "艺术风格",
+			  "artStylePlaceholder": "例如：水彩、油画",
+			  "medium": "媒介",
+			  "mediumPlaceholder": "例如：墨水、铅笔素描",
+			  "modelStyle": "模型风格",
+			  "modelStylePlaceholder": "例如：电影感、动漫",
+			  "contentRating": "内容分级",
+			  "contentRatingPlaceholder": "例如：PG、PG-13",
+			  "composition": "构图",
+			  "compositionPlaceholder": "例如：特写肖像、广角镜头",
+			  "lighting": "灯光",
+			  "lightingPlaceholder": "例如：黄金时刻、情绪化边缘光",
+			  "colorPalette": "调色板",
+			  "colorPalettePlaceholder": "例如：柔和的大地色调",
+			  "camera": "相机",
+			  "cameraPlaceholder": "例如：35mm、长焦",
+			  "mood": "氛围",
+			  "moodPlaceholder": "例如：不祥、异想天开",
+			  "negativePromptPlaceholder": "需要避免的内容"
+			},
+			"promptHint": "创建AI图像生成模板。使用{FIELD}在提示词中引用字段值。可用字段显示在下拉列表中。所有默认字段都会自动传递，因此只有在想要给出与某个字段相关的特定指令时才需要引用它们。"
+		  },
+		  "aiImage": {
+			"errors": {
+			  "invalidTokens": "无效的模板token："
+			}
+		  },
+		  "aiDialog": {
+			"title": "AI模板",
+			"labels": {
+			  "enabled": "可由AI生成",
+			  "fieldToken": "插入字段token",
+			  "selectField": "选择字段...",
+			  "insert": "插入",
+			  "fieldTokenHint": "构建提示词时使用{FIELD}引用其他字段。可用字段显示在下拉列表中。所有默认字段都会自动传递，因此只有在想要给出与某个字段相关的特定指令时才需要引用它们。",
+			  "descriptionField": "描述字段",
+			  "descriptionFieldPlaceholder": "选择用作描述的字段...",
+			  "promptTemplate": "提示词模板",
+			  "configuration": "配置",
+			  "minWords": "最小字数",
+			  "maxWords": "最大字数",
+			  "writingStyle": "写作风格",
+			  "tense": "时态",
+			  "pointOfView": "视角",
+			  "allowLists": "允许列表",
+			  "avoidListsLongerThan": "避免列表长度超过"
+			},
+			"errors": {
+			  "invalidTokens": "无效的模板token："
+			},
+			"presets": {
+			  "custom": "自定义",
+			  "short": "简短",
+			  "detailed": "详细",
+			  "bullets": "项目符号"
+			}
+		  },
+		  "columns": {
+			"label": "标签",
+			"fieldKey": "键",
+			"selectOptions": "选择选项",
+			"helpText": "帮助文本"
+		  },
+		  "fieldTypes": {
+			"input": "输入框",
+			"select": "选择框",
+			"editor": "编辑器",
+			"checkbox": "复选框"
+		  }
+		},
+		"customFieldsBlocks": {
+		  "notifications": {
+			"saveFailed": "保存自定义字段失败"
+		  }
+		},
+      "rollTableSettings": {
+        "title": "配置随机表设置",
+        "folderName": "战役构建器随机表",
+        "tableDescription": "生成器表格",
+        "labels": {
+          "refreshAll": "刷新所有表格",
+          "refreshAllHelp": "用新项目替换任何已使用的项目"
+        },
+        "notifications": {
+          "refreshStarted": "正在后台为随机表生成新名称",
+          "refreshSuccess": "随机表刷新成功",
+          "refreshError": "刷新随机表失败。请检查控制台获取详细信息。"
+        }
+      },
+		"storyWebSettings": {
+		  "title": "配置故事网络设置",
+		  "tabs": {
+			"colors": "连接颜色",
+			"styles": "连接样式",
+			"shapeColors": "形状颜色",
+			"fields": "字段"
+		  },
+		  "columns": {
+			"name": "名称",
+			"color": "颜色",
+			"style": "样式",
+			"foregroundColor": "文字颜色",
+			  "backgroundColor": "背景颜色",
+			  "preview": "预览",
+			  "fieldName": "字段名称"
+		  },
+		  "fieldsHint": "当在故事网络中悬停在实体上时，此列表中的字段将显示在提示中。",
+		  "contentType": "内容类型",
+		  "selectField": "选择字段",
+		  "notifications": {
+			"duplicateColorIds": "颜色ID必须唯一",
+			  "duplicateStyleIds": "样式ID必须唯一",
+			  "duplicateCustomColorSchemeIds": "自定义配色方案ID必须唯一"
+		  }
+		},
+	"associationTags": {
+		"title": "配置关联标签",
+		"tabs": {
+		  "characters": "角色",
+		  "locations": "地点"
+		},
+		"columns": {
+		  "name": "标签名称",
+		  "color": "颜色",
+		  "actor": "关联角色",
+		  "scene": "关联场景"
+		},
+		"labels": {
+		  "add": "添加标签",
+		  "noSelection": "未选择",
+		  "selectActor": "选择角色",
+		  "selectScene": "选择场景"
+		},
+		"notifications": {
+		  "duplicateName": "标签名称 '{name}' 已在其他标签列表中存在",
+		  "duplicateActorNames": "角色标签名称必须唯一",
+		  "duplicateSceneNames": "场景标签名称必须唯一"
+		}
+	  },
+      "createEntry": {
+        "titles": {
+          "create": {
+            "character": "创建角色",
+            "location": "创建地点",
+            "organization": "创建组织",
+            "pc": "创建PC"
+          },
+          "update": {
+            "character": "更新角色",
+            "location": "更新地点",
+            "organization": "更新组织",
+            "pc": "更新PC"
+          }
+        },
+        "labels": {
+          "generateImage": "生成图像",
+          "generateImageTooltip": "创建后在后台生成新图像",
+          "generatedName":"生成的名称",
+          "generatedDescription": "生成的描述"
+        }
+      },
+      "importExport": {
+		"title": "导入/导出模组数据",
+		"exportTitle": "导出模组数据",
+		"importTitle": "导入模组数据",
+		"exportDescription": "将所有FCB设置和内容导出为JSON文件，可导入到另一个FVTT世界。",
+		"importDescription": "从先前导出的JSON文件导入FCB数据。这将替换所有现有的FCB内容。",
+		"exportButton": "导出数据",
+		"importButton": "导入数据",
+		"exportModeLabel": "导出模式",
+		"exportModeAll": "导出全部",
+		"exportModeConfiguration": "仅配置",
+		"exportModeSettings": "仅设置",
+		"exportStarting": "开始导出...",
+		"exportComplete": "模组数据导出成功",
+		"exportFailed": "模组数据导出失败",
+		"importStarting": "开始导入...",
+		"importComplete": "模组数据导入成功。正在重新加载...",
+		"importFailed": "模组数据导入失败",
+		"importWarning": "导入将替换所有具有匹配ID的现有FCB设置。其他设置将保持不变。此操作不可撤销。",
+		"importWarningConfig": "导入配置将更新模组设置，不影响FCB内容。",
+		"importConfirmTitle": "确认导入",
+		"importConfirm": "这将替换所有具有匹配ID的现有FCB设置。其他设置将保持不变。是否继续？",
+		"importConfirmConfig": "这将更新模组配置设置。是否继续？",
+		"invalidFile": "无效的导出文件格式",
+		"selectFile": "选择导出文件...",
+		"collectingSettings": "正在收集模组设置...",
+		"exportingSetting": "正在导出设置",
+		"creatingFile": "正在创建导出文件...",
+		"readingFile": "正在读取导入文件...",
+		"validatingData": "正在验证导入数据...",
+		"deletingExisting": "正在删除现有内容...",
+		"importingSettings": "正在导入模组设置...",
+		"importingSetting": "正在导入设置",
+		"remappingUuids": "正在重新映射文档引用..."
+	  }
+    },
+    "help": {
+      "settingGenre": "例如\"奇幻\" - AI生成所需",
+      "settingFeeling": "例如\"粗犷危险，魔法水平低\" - 改进AI生成"
+    },
+    "labels": {
+      "add": "新增",
+      "newTab": "新建标签页",
+	  "newGroup": "新建分组",
+      "saveChanges": "保存更改",
+      "reset": "重置",
+      "cancel": "取消",
+      "save": "保存",
+      "generate": "生成",
+      "accept": "接受",
+      "use": "使用",
+      "useOnce": "使用一次",
+      "tryAgain": "重试",
+      "addToSetting": "添加到设定",
+	  "description": "描述",
+      "prep": "准备",
+      "play": "游戏",
+      "ok": "确定",
+      "yes": "是",
+      "no": "否",
+      "close": "关闭",
+      "update": "更新",
+	  "complete": "完成",
+      "noToAll": "全部否",
+      "actors": "角色",
+      "sessions": "会话",
+      "scenes": "场景",
+      "journals": "日志",
+	  "searching": "搜索中",
+	  "copyOf": "{name} 的副本",
+	  "branchesFolder": "分支",
+      "tableHeaders": {
+        "actions": "操作",
+        "name": "名称",
+        "location": "位置",
+        "journalName": "日志",
+        "pageName": "日志页面",
+        "type": "类型",
+        "role": "角色",
+        "description": "描述"
+      },
+      "locations": {
+        "compendium": "合集",
+        "world": "世界"
+      },
+      "homePage": {
+        "createSetting": "创建设定",
+        "createCampaign": "创建战役",
+        "createCharacter": "创建角色",
+        "createLocation": "创建地点",
+        "createOrganization": "创建组织",
+        "createPC": "创建PC"
+      },
+      "fields": {
+        "type": "类型",
+        "parent": "父级",
+		"parentOrganization": "上级组织",
+		"branchLocation": "所在地",
+        "campaign": "战役",
+        "sessionNumber": "编号",
+        "sessionDate": "会话日期",
+        "playerName": "玩家名称",
+        "background": "背景",
+        "otherPlotPoints": "其他剧情点",
+        "desiredMagicItems": "期望的魔法物品",
+		"strongStart": "强力开场",
+		"aiDescription": "详细描述",
+		"strongStartHelpText": "强力开场是一个简短、有影响力的事件，为整个会话定下基调。点击阅读Lazy DM的更多内容。",
+        "name": "名称",
+        "topic": "主题",
+		"notes": "笔记",
+        "species": "物种",
+        "entryRolePlayingNotes": "角色扮演笔记",
+        "settingGenre": "流派",
+        "settingFeeling": "设定氛围",
+        "campaignDescription": "战役描述",
+        "houseRules": "房规",
+        "settingDescription": "设定描述",
+        "startingDescription": "起始描述",
+		"boxedText": "文本框内容",
+        "gmNotes": "GM 笔记",
+        "generateImage": "生成图像",
+        "addToCurrentSession": "添加到当前会话"
+      },
+	  "addParticipant": "添加参与者",
+      "addParticipantDrag": "(或拖放一个设定条目)",
+      "addTopic": {
+        "character": "添加角色",
+        "location": "添加地点",
+        "organization": "添加组织",
+        "pc": "添加PC"
+      },
+      "addTopicDrag": {
+        "character": "(或拖放角色)",
+        "location": "(或拖放地点)",
+        "organization": "(或拖放组织)",
+        "pc": "(或拖放PC)"
+      },
+      "entry": {
+		"entry": "条目",
+        "topic": "主题文件夹",
+        "type": "类型",
+        "relationships": "关系"
+      },
+	  "arc": {
+        "arc": "剧情线",
+        "addParticipant": "添加参与者",
+        "addParticipantDrag": "(或拖放一个角色/组织)",
+        "participantHelpText": "在此剧情线中可能出现的角色和组织"
+      },
+      "session": {
+        "session": "会话",
+        "pc": "PC",
+        "addLocation": "添加地点",
+        "addLocationDrag": "(或拖放地点)",
+        "addVignette": "添加小场景",
+        "addLore": "添加学识",
+		"addDocumentDrag": "（拖放任何 FVTT 文档）",
+        "addLoreDrag": "(或拖放日志条目)",
+        "addNPC": "添加NPC",
+        "addNPCDrag": "(或拖放角色)",
+        "addItem": "添加物品",
+        "addItemDrag": "(或拖放物品)",
+        "addMonster": "添加怪物",
+        "addMonsterDrag": "(或拖放角色)",
+        "addActor": "添加角色",
+        "addActorDrag": "(或拖放角色)",
+        "addScene": "添加场景",
+        "addSceneDrag": "(或拖放场景)",
+		"addJournal": "添加日志",
+        "addJournalDrag": "(或拖放一个日志或日志页面)", 
+        "loreHelpText": "有用且有趣的信息，大小如推文。点击阅读Lazy DM的更多内容。",
+        "itemHelpText": "适合你的PC和剧情的魔法物品。点击阅读Lazy DM的更多内容。",
+        "npcHelpText": "可能在会话中遇到的NPC。",
+        "monsterHelpText": "适合情况和地点的怪物。点击阅读Lazy DM的更多内容。",
+        "vignetteHelpText": "带来结局、开辟新路径、改变故事的场景。每45分钟1个。点击阅读Lazy DM的更多内容。",
+        "locationHelpText": "详细、难忘、奇幻的地点，角色可以探索。点击阅读Lazy DM的更多内容。"
+      },
+      "front": {
+        "front": "导向",
+        "motivation": "动机",
+        "grimPortents": "预兆",
+        "participants": "参与者",
+        "impendingDoom": "末日",
+        "addPortent": "添加预兆",
+        "portentHelpText": "预兆是如果危险未被处理将会发生的事件。它们可以带来结局、开辟新路径、改变故事走向。"
+      },
+      "danger": {
+        "addParticipant": "添加参与者",
+        "addParticipantDrag": "（或拖放一个角色/组织）"
+      },
+	  "storyWeb": {
+		"addText": "添加文本",
+		"enterText": "输入新文本",
+		"editText": "编辑文本",
+		"editRelationship": "编辑关系",
+		"removeRelationship": "移除关系",
+		"removeRelationshipConfirm": "确定要删除此关系吗？这将从条目中移除该关系，而不仅仅是图表。",
+		"addConnection": "添加连接",
+		"newConnectionLabel": "新关系标签（可为空）",
+		"createConnection": "创建连接",
+		"createConnectionPrompt": "你将一个条目拖放到了现有节点上。是否要在它们之间创建连接？",
+		"addStoryWebDrag": "（或拖放一个故事网络）",
+		"zoomIn": "放大",
+		"zoomOut": "缩小",
+		"fitToWindow": "适应窗口"
+	  },
+      "campaign": {
+		"campaign": "战役",
+        "addPC": "添加PC",
+        "addPCDrag": "(或拖放PC)",
+        "pcs": "PC",
+        "lore": "学识",
+        "loreHelpText": "追踪大型战役级别的秘密和你尚未准备好交付的小秘密。点击阅读Lazy DM的更多内容。",
+        "toDo": "待办事项",
+        "addToDo": "添加待办事项",
+        "ideas": "想法",
+        "addIdea": "添加想法"
+      },
+      "pc": {
+        "linkToNewActor": "链接到新角色",
+        "pc": "PC"
+      },
+	  "character": {
+        "character": "角色"
+      },
+      "organization": {
+        "organization": "组织",
+        "branch": "分支"
+      },
+      "location": {
+        "location": "地点"
+      },
+      "setting": {
+        "setting": "设置"
+      },
+	  "timeline": {
+		"loading": "加载时间线中...",
+		"textSearch": "搜索",
+		"textSearchPlaceholder": "搜索事件...",
+		"categories": "分类",
+		"selectCategories": "选择分类...",
+		"excludeGMOnly": "排除仅GM可见",
+		"referenceEntity": "引用此{entity}",
+		"resetFilters": "重置",
+		"resetRange": "重置范围",
+		"noFilters": "无过滤条件",
+		"filterSummaryCategories": "分类：{categories}",
+		"filterSummarySearch": "搜索：“{search}”",
+		"calendar": "日历",
+		"selectCalendar": "选择日历...",
+		"includeChildren": "包含子项",
+		"includeArcAndSessionReferences": "包含篇章和会话引用",
+		"includeSessionReferences": "包含会话引用",
+		"includeAllReferences": "包含条目、战役、篇章和会话引用"
+	  },
+      "groupTree": "按类型分组树",
+      "tabs": {
+        "entry": {
+          "characters": "角色",
+          "locations": "地点",
+          "pcs": "PC",
+          "organizations": "组织",
+          "foundry": "FVTT",
+          "timeline": "时间线"
+        },
+        "setting": {
+          "timeline": "时间线"
+        },
+        "campaign": {
+          "pcs": "PC",
+          "lore": "学识",
+          "toDo": "待办事项",
+          "ideas": "想法",
+          "timeline": "时间线"
+        },
+        "front": {
+          "createNewDanger": "创建新危险"
+        },
+        "arc": {
+          "pcs": "PC",
+          "lore": "学识",
+		  "vignettes": "小场景",
+          "locations": "地点",
+          "participants": "参与者",
+          "monsters": "怪物",
+          "items": "魔法物品",
+		  "ideas": "灵感",
+		  "timeline": "时间线"
+        },
+        "session": {
+          "notes": "笔记",
+          "noteBox": "笔记框",
+          "pcs": "PC",
+          "start": "开始",
+          "lore": "学识",
+          "vignettes": "小场景",
+          "locations": "地点",
+          "npcs": "NPC",
+          "monsters": "怪物",
+          "magic": "魔法物品",
+          "toDo": "待办事项",
+          "timeline": "时间线"
+        }
+      },
+      "noResults": "此处无内容",
+      "loading": "加载中"
+    },
+    "placeholders": {
+      "search": "搜索",
+      "filter": "过滤",
+      "characterName": "角色名称",
+      "locationName": "地点名称",
+      "organizationName": "组织名称",
+      "pcName": "PC名称",
+	  "arcName": "剧情线名称",
+	  "allSessions": "所有会话",
+      "campaignName": "战役名称",
+      "settingName": "设定名称",
+      "sessionName": "会话名称",
+	  "frontName": "导向名称",
+      "dangerName": "危险名称",
+	  "storyWebName": "故事网络名称",
+      "sessionDate": "日期",
+      "sessionNumber": "会话编号",
+      "linkToActor": "链接到角色"
+    },
+    "topics": {
+      "character": "角色",
+      "location": "地点",
+      "organization": "组织",
+      "pc": "PC",
+      "characters": "角色",
+      "locations": "地点",
+      "organizations": "组织",
+      "pcs": "PC"
+    },
+    "notifications": {
+      "backend": {
+        "successfulConnection": "成功连接到Campign Builder后端。",
+        "failedConnection": "连接到后端失败 - 检查你的\"高级\"设置以确保它们与你部署的后端服务器正确匹配。在此期间你将无法使用高级功能。",
+        "versionMismatch": "你的世界与Campign Builder后端的版本（$1）与你安装的模组版本所需的版本（$2）不匹配。请更新其中一个或两者。在此期间你将无法使用高级功能。",
+        "emailSettingsNotSet": "你已启用电子邮件想法列表功能，但尚未设置默认设定或战役。请在高级设置中设置这些。",
+        "rollTablesNotAvailable": "后端不可用。自动随机表将不会刷新。在高级设置中配置后端以启用与你世界主题匹配的AI生成名称。"
+      },
+	  "duplicateBookmark": "已存储为书签",
+	  "nameRequired": "名称不能为空",
+	  "failedToRepairIndexes": "修复索引失败。请查看控制台获取详细信息。",
+	  "participantCopiedToNextSession": "参与者已复制到下一会话",
+      "locationCopiedToNextSession": "地点已复制到下一会话",
+      "monsterCopiedToNextSession": "怪物已复制到下一会话",
+	  "itemCopiedToNextSession": "物品已复制至下一场会话",
+      "toDoReferenceNotFound": "此待办事项的链接引用不再存在。",
+      "addedToSession": "已添加到会话",
+      "changesSaved": "更改已保存",
+	  "changesDiscarded": "更改已丢弃",
+	  "failedToExportStoryWeb": "故事网络导出为PNG失败",
+	  "export": {
+		"starting": "开始导出设置...",
+		"complete": "设置导出成功",
+		"failed": "设置导出失败"
+	  },
+	  "migration": {
+		"minimumVersionRequired": "Campaign Builder无法从版本 {0} 迁移。在升级到 {2} 之前，你必须首先升级到版本 {1} 或更高版本。",
+		"cannotOpen": "由于迁移失败，无法打开Campign Builder。请检查控制台以获取详细信息并解决迁移问题。"
+	  },
+      "documentIndexesRepaired": "所有文档索引已成功修复！",
+      "voiceRecording": {
+		"saved": "语音录制已保存",
+		"deleted": "语音录制已删除",
+		"permissionDenied": "麦克风访问被拒绝。请允许麦克风访问以录制语音。",
+		"notSupported": "此浏览器不支持语音录制功能",
+		"uploadFailed": "语音录制上传失败"
+	  }
+  },
+  "dialogs": {
+    "generateNameDialog": {
+      "title": "选择一个选项",
+	  "errorMessage": "出现错误：",
+	  "emptyTable": "随机表中没有剩余的未抽取名称。你可以打开它并添加一些新名称，或者使用'重置结果'来重用旧名称。"
+    },
+    "configureNames": {
+      "title": "配置名称样式",
+      "description": "选择你想在此设定中用于AI生成名称的命名样式。你可以根据此设定的流派和氛围预览每种样式的示例。",
+      "errorMessage": "出现错误："
+    },
+    "confirmDeleteRelationship": {
+      "title": "移除关系？",
+      "message": "你确定要删除此关系吗？"
+    },
+	"confirmDeleteParticipant": {
+        "title": "移除此参与者？",
+        "message": "确定要将此参与者从危险中移除吗？"
+      },
+    "confirmDeletePC": {
+      "title": "移除PC？",
+      "message": "你确定要从战役中移除此PC吗？这不会影响PC条目本身。"
+    },
+    "saveSessionNotes": {
+      "title": "保存更改？",
+      "message": "你想在关闭前保存当前会话笔记吗？"
+    },
+    "createEntry": {
+      "generatedName": "生成的名称",
+      "generatedDescription": "生成的描述",
+      "generatePrompt": "按生成获取结果",
+      "generatePrompt2": "否则，\"简要描述\"将用作新条目描述。"
+    },
+	"voiceRecording": {
+		"title": "语音录制",
+		"recording": "正在录制... 完成后请点击停止。",
+		"stop": "停止",
+		"overwriteTitle": "覆盖录音？",
+		"overwriteMessage": "已存在语音录音。是否要替换它？",
+		"deleteTitle": "删除录音？",
+		"deleteMessage": "确定要删除此语音录音吗？文件将保留在服务器上，但不再与此角色关联。",
+		"selectFolderTitle": "选择语音录制文件夹"
+	  },
+	"arcManager": {
+        "title": "管理剧情线",
+        "labels": {
+            "edit": "编辑剧情线",
+            "delete": "删除剧情线",
+            "addArc": "添加剧情线"
+        },
+        "missingSession": "缺少会话",
+        "warning": {
+            "mustBeBlank": "战役中暂无会话，开始和结束必须为空",
+            "invalidSessionNumber": "无效的会话编号",
+            "startTooHigh": "开始会话必须小于结束会话",
+            "bothBlank": "开始和结束会话编号必须同时为空或同时不为空",
+            "allSessionsCovered": "所有会话必须被某个剧情线覆盖"
+        }
+    },
+    "createPC": {
+      "title": "创建PC",
+      "playerName": "玩家名称"
+    },
+    "createCampaign": {
+      "title": "创建战役",
+      "campaignName": "战役名称"
+    },
+    "createSession": {
+      "title": "创建会话",
+      "sessionName": "会话名称"
+    },
+	"createFront": {
+        "title": "创建导向",
+        "arcName": "导向名称"
+      },
+      "createArc": {
+        "title": "创建剧情线",
+        "arcName": "剧情线名称"
+      },
+    "createSetting": {
+      "title": "创建设定",
+      "settingName": "设定名称"
+    },
+	"createStoryWeb": {
+        "title": "创建故事网络",
+        "webName": "故事网络名称"
+      },
+    "deleteEntry": {
+      "title": "删除条目？",
+      "message": "你确定要删除此条目吗？它将从所有关系和会话中移除。编辑器中对其的任何引用将变为损坏。"
+    },
+	"deleteEntryWithBranches": {
+		"title": "删除条目？",
+		"message": "这将同时删除 {count} 个分支。确定要继续吗？"
+	  },
+	  "createBranches": {
+		"title": "创建分支",
+		"message": "选择要为 {organization} 创建分支的地点：",
+		"loading": "加载地点中...",
+		"noLocations": "暂无可用地点",
+		"selectedCount": "已选择 {count} 个地点",
+		"existingBranch": "（已有分支）"
+	  },
+    "addToDo": {
+      "title": "添加待办事项",
+      "prompt": "输入待办事项文本："
+    },
+	"selectCampaign": {
+		"title": "选择战役",
+		"prompt": "此待办事项应添加到哪个战役中？"
+	  },
+    "relatedEntries": {
+        "additionalInformation": "附加信息",
+        "allItemsConnected": "所有可能的关联项均已连接。",
+        "entry": {
+            "title": "添加条目",
+            "buttonTitle": "添加条目"
+        },
+        "character": {
+            "title": "添加角色",
+            "createButtonTitle": "创建角色",
+            "buttonTitle": "添加关系"
+        },
+        "location": {
+            "title": "添加地点",
+            "createButtonTitle": "创建地点",
+            "buttonTitle": "添加关系"
+        },
+        "organization": {
+            "title": "添加组织",
+            "createButtonTitle": "创建组织",
+            "buttonTitle": "添加关系"
+        },
+        "pc": {
+            "title": "添加玩家角色",
+            "createButtonTitle": "创建玩家角色",
+            "buttonTitle": "添加关系"
+        },
+      "addToSession": "添加到会话"
+    },
+    "relatedDocuments": {
+      "addActor": "添加角色",
+      "addItem": "添加物品",
+      "addJournal": "添加日志/页面",
+      "addScene": "添加场景"       
+    },
+    "saveChanges": {
+        "title": "未保存的更改",
+        "message": "一个或多个打开的编辑器中有未保存的更改。你想要做什么？",
+		"uuidChangesMessage": "你已添加或移除了对其他条目的引用。是否要更新相关条目？",
+        "save": "保存更改",
+        "discard": "丢弃更改",
+        "cancel": "取消"
+    },
+	"migrationProgress": {
+	  "title": "正在将Campaign Builder迁移至新版本",
+	  "message": "正在将Campaign Builder迁移至最新版本...",
+	  "warnings": {
+		"noMigrationsNeeded": "无需迁移"
+	  },
+	  "status": {
+		"initializing": "正在初始化...",
+		"runningMigrationForVersion": "正在运行版本 {version} 的迁移...",
+		"completedMigrationForVersion": "已完成版本 {version} 的迁移",
+		"failedMigrationForVersion": "版本 {version} 的迁移失败",
+		"completedMigrationsProgress": "已完成 {completed}/{total} 个迁移",
+		"processedSetting": "已处理设置: {name}",
+		"migratedDocumentsProgress": "已迁移文档 ({migrated}/{total})"
+	  },
+	  "progress": {
+		"percent": "{percent}%"
+	  },
+	  "errors": {
+		"migrationFailedForVersion": "版本 {version} 的迁移失败: {error}"
+	  },
+	  "completion": {
+		"completeTitle": "迁移完成",
+		"failedTitle": "迁移失败",
+		"successMigratedItems": "已成功迁移 {count} 个项目。",
+		"noMigrationNeeded": "无需进行迁移。",
+		"failureSummary": "迁移失败。已迁移 {migrated} 个项目，失败 {failed} 个。",
+		"errorDetails": "错误详情",
+		"warnings": "警告"
+	  }
+	},
+	"imageSettings": {
+		"title": "图像可见性设置",
+		"description": "选择哪些内容类型应在其描述页面上显示图像。",
+		"settings": "设置",
+		"entries": "条目",
+		"campaigns": "战役",
+		"arcs": "剧情线",
+		"sessions": "会话",
+		"fronts": "导向"
+	},
+	"tableGrouping": {
+		"title": "表格分组设置",
+		"description": "为每种内容类型选择哪些标签页应使用分组表格。",
+		"contentTypes": {
+		  "settings": "设置",
+		  "entries": "条目",
+		  "campaigns": "战役",
+		  "arcs": "剧情线",
+		  "sessions": "会话",
+		  "fronts": "前线"
+		},
+		"tabs": {
+		  "journals": "日志",
+		  "characters": "角色",
+		  "npcs": "NPCs",
+		  "locations": "地点",
+		  "organizations": "组织",
+		  "pcs": "玩家角色",
+		  "actors": "角色",
+		  "sessions": "会话",
+		  "items": "物品",
+		  "magicItems": "魔法物品",
+		  "monsters": "怪物",
+		  "vignettes": "场景片段",
+		  "lore": "背景知识",
+		  "ideas": "想法",
+		  "todo": "待办事项",
+		  "participants": "参与者",
+		  "grimPortents": "预兆"
+		}
+	  },
+	  "tabVisibility": {
+		"title": "标签页可见性设置",
+		"description": "为每种内容类型选择应显示的标签页。描述标签页始终显示。",
+		"contentTypes": {
+		  "setting": "设定",
+		  "campaign": "战役",
+		  "arc": "故事线",
+		  "session": "会话",
+		  "entryCharacter": "条目 - 角色",
+		  "entryLocation": "条目 - 地点",
+		  "entryOrganization": "条目 - 组织",
+		  "entryPC": "条目 - 玩家角色"
+		},
+		"tabs": {
+		  "journals": "日志",
+		  "characters": "角色",
+		  "npcs": "NPC",
+		  "locations": "地点",
+		  "organizations": "组织",
+		  "pcs": "玩家角色",
+		  "actors": "角色",
+		  "scenes": "场景",
+		  "sessions": "会话",
+		  "foundry": "FVTT",
+		  "monsters": "怪物",
+		  "vignettes": "小场景",
+		  "lore": "学识",
+		  "ideas": "灵感",
+		  "todo": "待办事项",
+		  "participants": "参与者",
+		  "magic": "魔法物品",
+		  "storyWebs": "故事网络",
+		  "timeline": "时间线"
+		}
+	  },
+    "relatedEntriesManagement": {
+      "title": "管理相关条目",
+      "entryDescription": "根据你的更改，选择要与此条目链接或取消链接的条目。",
+		"sessionDescription": "根据你的更改，选择要与本次会话链接或取消链接的条目。",
+		"arcDescription": "根据你的更改，选择要与此剧情线链接或取消链接的条目。",
+		"pcDescription": "根据你的更改，选择要与此玩家角色链接或取消链接的条目。",
+		"dangerDescription": "根据你的更改，选择要添加到此危险或从中移除的参与者。",
+		"addedItems": "发现的新引用",
+		"removedItems": "已移除的引用"
+    },
+      "overwriteField": {
+		"title": "覆盖字段？",
+		"message": "确定要用新文本覆盖 {field} 吗？"
+	  },
+	  "deleteGroup": {
+		"title": "删除分组？",
+		"message": "确定要删除此分组吗？所有项目将被移至“未分组”"
+	  },
+	  "deleteSetting": {
+		"title": "删除设定？",
+		"message": "确定要删除此设定吗？"
+	  },
+	  "deleteLocation": {
+		"title": "删除地点？",
+		"message": "确定要删除此地点吗？这不会影响关联的设定地点"
+	  },
+	  "deleteParticipant": {
+		"title": "删除参与者？",
+		"message": "确定要删除此参与者吗？这不会影响关联的条目"
+	  },
+	  "deleteLore": {
+		"title": "删除学识？",
+		"message": "确定要删除此学识吗？"
+	  },
+	  "deleteVignette": {
+		"title": "删除小场景？",
+		"message": "确定要删除此小场景吗？"
+	  },
+	  "deleteMonster": {
+		"title": "删除怪物？",
+		"message": "确定要删除此怪物吗？"
+	  },
+	  "deleteItem": {
+		"title": "删除物品？",
+		"message": "确定要删除此物品吗？"
+	  },
+	  "deleteIdea": {
+		"title": "删除灵感？",
+		"message": "确定要删除此灵感吗？"
+	  },
+	  "deleteNPC": {
+		"title": "删除NPC？",
+		"message": "确定要删除此NPC吗？这不会影响关联的角色"
+	  },
+	  "deleteSession": {
+		"title": "删除会话？",
+		"message": "确定要删除此会话吗？"
+	  },
+	  "deleteFront": {
+		"title": "删除导向？",
+		"message": "确定要删除此导向吗？"
+	  },
+	  "deleteStoryWeb": {
+		"title": "删除故事网络？",
+		"message": "确定要删除此故事网络吗？"
+	  },
+	  "createEntryTitle": {
+		"title": "创建 {topic}"
+	  }
+  },
+  "contextMenus": {
+	"addToStoryWeb": "添加到当前故事网络",
+	"addWithRelationships": "添加并建立关系",
+    "tabs": {
+      "closeAll": "关闭所有标签页",
+      "closeOther": "关闭其他标签页"
+    },
+    "bookmarks": {
+      "openNewTab": "在新标签页中打开",
+      "delete": "删除书签"
+    },
+    "settingFolder": {
+      "delete": "删除设定",
+      "createCampaign": "创建战役",
+        "exportJson": "导出为JSON"
+    },
+    "campaignsHeader": {
+      "createCampaign":"创建战役"
+    },
+    "campaignFolder": {
+      "createSession": "创建会话",
+	  "createFront": "创建导向",
+        "createArc": "创建剧情线",
+		"createStoryWeb": "创建故事网络",
+        "manageArcs": "管理剧情线",
+      "delete": "删除战役",
+      "markComplete": "标记战役为已完成",
+      "markActive": "标记战役为进行中"
+    },
+	"arcFolder": {
+        "createSession": "创建会话",
+        "delete": "删除剧情线"
+      },
+    "session": {
+      "delete": "删除会话"
+    },
+	"front": {
+        "delete": "删除导向"
+    },
+	"danger": {
+        "delete": "删除危险"
+      },
+	  "storyWeb": {
+		"duplicate": "复制故事网络",
+		"delete": "删除故事网络",
+		"exportAsPng": "导出为PNG"
+	  },
+	  "storyWebGraph": {
+		"delete": "删除",
+		"removeFromDiagram": "从图表中移除",
+		"addText": "添加文本",
+		"addEntry": "添加条目",
+		"editText": "编辑文本",
+		"editRelationship": "编辑关系",
+		"addConnection": "添加连接",
+		"addEntryWithRelationships": "添加带关系的条目",
+		"addDanger": "添加危险",
+		"addDangerWithRelationships": "添加带关系的危险",
+		"addTextPrompt": "输入要添加到图表的文本",
+		"openEntryInNewTab": "在新标签页中打开条目",
+		"openDangerInNewTab": "在新标签页中打开危险",
+        "setColor": "设置颜色",
+        "setStyle": "设置风格",
+        "resetToDefault": "重置为默认"
+	  },
+    "dialogs": {
+        "cannotActivateFromCompendium": "无法从合集激活",
+        "cannotToggleNavigationFromCompendium": "无法切换合集中场景的导航状态",
+        "cannotToggleNavigationWhileActive": "场景激活时无法切换导航状态"
+    },
+    "image": {
+      "viewImage": "查看图像",
+	  "showToPlayers": "向玩家显示",
+      "changeImage": "更改图像",
+      "addImage": "添加图像",
+      "removeImage": "移除图像",
+      "postToChat": "发布到聊天",
+      "createScene": "创建场景",
+      "generateImage": "生成图像",
+      "copyToClipboard": "复制到剪贴板",
+      "copyLinkToClipboard": "复制链接到剪贴板"
+    },
+	"voice": {
+		"record": "录制语音",
+		"play": "播放语音",
+		"delete": "删除录音",
+		"changeFolder": "更改录音文件夹"
+	},
+    "topicFolder": {
+      "create": {
+        "1": "创建新角色",
+        "2": "创建新地点",
+        "3": "创建新组织",
+        "4": "创建新PC"
+      }
+    },
+    "directoryEntry": {
+      "delete": "删除条目",
+        "createBranches": "创建分支"
+    },
+    "typeFolder": {
+      "create": "新建"
+    },
+    "generate":  {
+      "nameAndDescription": "生成名称或描述",
+      "image": "生成图像",
+      "inProgress": "进行中",
+      "configureNames": "配置名称"
+    }
+  },
+  "tooltips": {
+    "mainButton": "启动战役构建器",
+    "createSetting": "创建设定",
+    "expandDirectory": "展开目录",
+    "collapseDirectory": "折叠目录",
+	"maximizeWindow": "最大化窗口",
+    "restoreWindow": "恢复窗口",
+    "collapseAllTopics": "折叠全部",
+    "addBookmark": "添加书签",
+	"moreBookmarks": "更多书签",
+	"currentSession": "当前会话",
+	"campaignComplete": "战役完成",
+	"arcComplete": "剧情线完成",
+    "historyBack": "后退",
+    "historyForward": "前进",
+	"generateAIContent": "生成AI内容",
+    "editRelationship": "编辑关系",
+	"editSession": "编辑会话",
+	"editNotes": "编辑笔记",
+    "editParticipant": "编辑参与者",
+    "editPortent": "编辑预兆",
+    "deleteRelationship": "删除关系",
+    "deleteLocation": "删除地点",
+    "deleteNPC": "删除NPC",
+    "deleteItem": "删除物品",
+    "deleteMonster": "删除怪物",
+    "editRow": "编辑此项。按Enter保存更改。",
+    "deleteScene": "删除场景",
+    "deleteVignette": "删除小场景",
+	"deletePortent": "删除预兆",
+      "deleteParticipant": "删除参与者",
+    "deleteLore": "删除学识",
+    "deleteToDo": "完成待办事项",
+    "deleteIdea": "删除想法",
+	"moveToToDo": "移动到待办事项列表",
+      "moveToIdeas": "移动到想法列表",
+    "markAsDelivered": "标记为已交付",
+    "unmarkAsDelivered": "取消标记为已交付",
+    "moveToNextSession": "移动到下一个会话",
+	"copyToNextSession": "复制到下一个会话",
+    "moveToCampaign": "移动到战役以供以后使用",
+	"moveToArc": "移至剧情线以备后用",
+    "moveToLatestArc": "移至最新剧情线",
+    "addToCampaign": "添加到战役",
+    "addToASession": "添加到会话",
+    "sessionUnavailable": "没有具有活动会话的战役，或者此条目已附加到所有战役",
+    "generateContent": "生成内容",
+    "settingGenerateContent": "管理设定生成配置",
+    "backendNotAvailable": "后端不可用",
+    "playModeNoCampaigns": "你需要至少有一个带有会话的战役才能使用游戏模式",
+    "dragMonsterFromSession": "拖到场景",
+    "dragItemFromSession": "拖到角色等",
+    "dragToScene": "拖到场景",
+	"cannotChangeSettingInPlayMode": "游戏模式中无法更改设置",
+    "contentLinks": {
+      "1": {
+        "1": "角色",
+        "2": "地点",
+        "3": "组织",        
+        "4": "PC"
+      },
+      "2": "战役",
+      "3": "会话",
+      "4": "设定",
+	  "5": "导向",
+	  "6": "剧情线",
+	  "7": "故事网络",
+	  "8": "标签结果"
+    },
+    "createEntry": {
+      "addToCurrentSession": "添加到当前会话",
+      "name": "如果留空，将自动生成名称",
+      "type": "如果你创建新类型，它将被添加到主列表中",
+      "description": "可选。用于指定你希望包含的物理特征或个性特征。可以非常简短。",
+      "parent": "在某些情况下可能影响生成的文本",
+      "species": "如果为空，将使用你设定中的随机物种进行AI生成。自定义条目将传递给AI但不会添加到你的物种列表中",
+      "longDescriptions": "生成详细描述还是简短摘要？",
+      "generateImage": "创建后在后台生成新图像"
+    },
+	"voiceRecordingExists": "已存在语音录音 - 点击查看选项",
+	"voiceRecordingNone": "暂无语音录音 - 点击开始录制",
+      "openFoundryActor": "打开FVTT角色",
+	  "openFoundryScene": "打开FVTT场景",
+	  "noActorsAttached": "未关联角色",
+	  "noScenesAttached": "未关联场景"
+  },
+  "tags": {
+	  "tag": "标签",
+	  "resultsFor": "标签搜索结果",
+	  "entryFound": "条结果",
+	  "entriesFound": "条结果",
+      "actorAssociated": "通过标签 \"{tagName}\" 关联的角色：",
+	  "sceneAssociated": "通过标签 \"{tagName}\" 关联的场景：",
+	  "dragActorHint": "拖拽到FVTT",
+	  "clickSceneHint": "点击配置。右键点击查看更多选项。",
+	  "multipleActorTagsWarning": "应用了多个角色标签。仅第一个（{name}）将被使用。",
+	  "multipleSceneTagsWarning": "应用了多个场景标签。仅第一个（{name}）将被使用。"
+  },
+  "export": {
+    "relatedTopics": {
+      "1": "相关角色",
+      "2": "相关地点",
+      "3": "相关组织",
+      "4": "相关玩家角色"
+    }
+  }
+ }
+}
+

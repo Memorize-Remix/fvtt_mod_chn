@@ -1,0 +1,211 @@
+
+  "downtime-dnd5e.ChangeLog": "更新日志",
+
+  "downtime-dnd5e.CreateEditCategoryAppTitle": "创建/编辑类别",
+  "downtime-dnd5e.UnnamedCategory": "未命名类别",
+
+  "downtime-dnd5e.InvalidNumberWarning": "输入无效。请输入数字。",
+  "downtime-dnd5e.InvalidItemWarning": "无效项目。未找到项目。",
+
+  "downtime-dnd5e.Skipping": "跳过角色迁移",
+  "downtime-dnd5e.BackingUpDataFor": "备份角色数据",
+  "downtime-dnd5e.UpdatingDataFor": "更新角色数据",
+  "downtime-dnd5e.ProblemUpdatingDataFor": "角色数据更新问题",
+  "downtime-dnd5e.SuccessUpdatingDataFor": "成功更新角色数据",
+
+  "downtime-dnd5e.ActorNotFoundWarning": "未找到角色。",
+  "downtime-dnd5e.ItemNotFoundWarning": "无法找到名为",
+  "downtime-dnd5e.ProgressValueIsNanWarning": "进度值不是一个数字",
+  "downtime-dnd5e.LogActionMacro": "宏/外部代码",
+
+  "downtime-dnd5e.NewCategory": "新类别",
+  "downtime-dnd5e.DeleteCategory": "删除类别",
+  "downtime-dnd5e.Cancel": "取消",
+  "downtime-dnd5e.DeleteItem": "删除项目",
+  "downtime-dnd5e.AdjustProgressValue": "调整进度",
+  "downtime-dnd5e.Roll": "掷骰",
+  "downtime-dnd5e.ToolNotFoundWarning": "未找到所选工具。请编辑项目并选择一个新的。",
+
+  "downtime-dnd5e.MacroNotFoundWarning": "找不到引用的宏",
+
+  "downtime-dnd5e.CompletedATrackedItem": "完成一个进程项目。",
+
+  "downtime-dnd5e.Disadvantage": "劣势",
+  "downtime-dnd5e.Advantage": "优势",
+  "downtime-dnd5e.Normal": "常规",
+
+  "downtime-dnd5e.InvalidTool": "未找到工具",
+  "downtime-dnd5e.ProgressionStyleMacro": "宏",
+  "downtime-dnd5e.DC": "DC",
+  "downtime-dnd5e.RollItem": "掷骰物品",
+  "downtime-dnd5e.RollItemDisabled": "掷骰无效。项目已完成。",
+
+  "downtime-dnd5e.SettingGmOnlyMode": "启用仅限 GM 模式。",
+  "downtime-dnd5e.SettingGmOnlyModeHint": "启用后，模组将进入仅限 GM模式。开启后，非 GM 用户的角色表上不会显示该选项卡，完成信息会自动私发给 GM 而不是公开显示，掷骰对话框也会自动选择GM 暗骰模式。",
+  "downtime-dnd5e.SettingGmOnlyEditMode": "启用仅 GM 编辑模式。",
+  "downtime-dnd5e.SettingGmOnlyEditModeHint": "启用后，模组将进入仅限 GM 编辑模式。开启后，只有 GM 可以添加/编辑类别或添加/编辑任何进程。玩家只能进行掷骰。",
+  "downtime-dnd5e.SettingShowDowntimeTabPc": "显示进程选项卡(PC)",
+  "downtime-dnd5e.SettingShowDowntimeTabPcHint": "打开此选项将在所有 PC 角色表上显示进程选项卡。你需要关闭并重新打开角色表才能生效。",
+  "downtime-dnd5e.SettingShowDowntimeTabNpc": "显示进程选项卡(NPC)",
+  "downtime-dnd5e.SettingShowDowntimeTabNpcHint": "打开此选项将在所有 NPC 角色表上显示进程选项卡。你需要关闭并重新打开角色表才能生效。",
+  "downtime-dnd5e.SettingDowntimeTabName": "进程选项名称",
+  "downtime-dnd5e.SettingDowntimeTabNameHint": "将进程选项的标题设置为你在此处输入的任何内容。默认为'Downtime'，但你也可以根据自己使用模组的方式，使用其他名称。",
+  "downtime-dnd5e.SettingExtraSheetWidth": "角色表宽度调整",
+  "downtime-dnd5e.SettingExtraSheetWidthHint": "(客户端）在此处输入一个值，将按指定的像素数改变默认的角色表宽度。你可能需要将其调整为更大或更小，以确保角色表的选项保持在一行上。默认值为 50，如果你使用的是dnd5e核心角色表和默认选项名称，则该值有效。",
+  "downtime-dnd5e.SettingDefaultCompletionTarget": "默认完成目标",
+  "downtime-dnd5e.SettingDefaultCompletionTargetHint": "设置使用基于检定的进程项目达到 100% 所需的默认完成目标数。一个经验之谈，普通人每次检定可为其进度总计贡献约 10 点。默认值为 300（对于每天检定一次的普通人来说为 30 天）。",
+  "downtime-dnd5e.SettingAnnounceCompletionFor": "公布进程项目完成情况：",
+  "downtime-dnd5e.SettingAnnounceCompletionForHint": "选择你希望在进程项目完成时触发聊天信息的角色类型。",
+  "downtime-dnd5e.SettingShowImportButton": "显示导入按钮",
+  "downtime-dnd5e.SettingShowImportButtonHint": "启用此选项可在进程选项卡上显示导入按钮。这是一个故障排除/数据恢复工具，没有任何检查来防止导入意外数据。以这种方式导入意外数据可能会破坏角色的模组。使用该功能风险自负。如果发生意外，开发人员很乐意帮助你解除故障，但她不作任何保证。",
+
+  "downtime-dnd5e.SettingTabName": "选项卡名称",
+  "downtime-dnd5e.SettingTabNameHint": "将选项的标题设置为你在此处输入的任何内容。默认为'Tracking'，但你也可以根据自己使用模组的方式，使用其他名称。",
+  "downtime-dnd5e.SettingAnnounceActivityCompletionFor": "宣布完成:",
+  "downtime-dnd5e.SettingAnnounceActivityCompletionForHint": "这些角色类型在完成一个进程项目时都会导致聊天信息显示。",
+
+  "downtime-dnd5e.SettingReset.name": "重置为默认设置",
+  "downtime-dnd5e.SettingReset.hint": "这将把所有设置重置为当前游戏系统的默认设置。",
+  "downtime-dnd5e.SettingReset.dialogs.title": "重置模组设置",
+  "downtime-dnd5e.SettingReset.dialogs.content": "你确定要将所有模组设置重置为当前系统的默认设置吗？<strong>无法撤回！</strong>",
+  "downtime-dnd5e.SettingReset.dialogs.confirm": "重置模组设置",
+  "downtime-dnd5e.SettingReset.dialogs.cancel": "取消",
+
+  "downtime-dnd5e.SettingDebug.title": "启用调试",
+  "downtime-dnd5e.SettingDebug.label": "将调试信息打印到控制台",
+  "downtime-dnd5e.SettingDebug.hint": " ",
+
+  "downtime-dnd5e.NpcsOnly": "仅限NPC",
+  "downtime-dnd5e.PcsAndNpcs": "PC和NPC",
+  "downtime-dnd5e.PcsOnly": "仅限PC",
+
+  "downtime-dnd5e.CreateEditItemAppTitle": "创建/编辑进程项目",
+
+  "downtime-dnd5e.NewItem": "新项目",
+
+  "downtime-dnd5e.InputErrorName": "请输入有效的项目名称。",
+  "downtime-dnd5e.InputErrorMacroName": "请输入有效的宏名称/ID/UUID。",
+  "downtime-dnd5e.InputErrorFixedIncrease": "请输入有效的增加数字。",
+  "downtime-dnd5e.InputErrorCompletionAt": "请输入有效的完成目标。",
+  "downtime-dnd5e.InputErrorProgress": "请输入有效的进度数字。",
+
+  "downtime-dnd5e.UnnamedMacro": "未命名的宏",
+  "downtime-dnd5e.SelectAnAbility": "属性",
+  "downtime-dnd5e.CheckDC": "检定 DC (可选)",
+  "downtime-dnd5e.CompletionTarget": "完成目标",
+  "downtime-dnd5e.SelectIncreaseAmount": "增加数字",
+  "downtime-dnd5e.MacroName": "宏名称/ID/UUID",
+  "downtime-dnd5e.SelectASkill": "技能",
+  "downtime-dnd5e.SelectATool": "工具",
+
+  "downtime-dnd5e.CompletionTargetInputHelpText": "项目标记为完成所需的所有检定的累计总数。必须是大于零的数字。",
+  "downtime-dnd5e.SuccessesRequiredInputHelpText": "必须进行成功检定才能完成的次数。必须是大于零的数字。",
+  "downtime-dnd5e.FixedIncreaseInputHelpText": "每次掷骰时该项目进度增加的数字。必须是大于零的数字。",
+  "downtime-dnd5e.MacroNameInputHelpText": "掷骰时要运行的宏名称/id/uuid。必须准确无误。",
+  "downtime-dnd5e.ToolInputHelpText": "该列表是根据该角色物品中的工具填充的。如果没有，请添加一个工具，然后再试一次。",
+  "downtime-dnd5e.ProgressInputHelpText": "项目的当前进度值。必须是介于零和项目的完成目标（如果未设置 DC）或所需成功次数（如果设置了 DC）之间的数字。",
+
+  "downtime-dnd5e.Time": "时间(UTC)",
+  "downtime-dnd5e.User": "用户",
+  "downtime-dnd5e.Item": "项目/活动",
+  "downtime-dnd5e.Action": "动作",
+  "downtime-dnd5e.ProgressChange": "进度变化",
+  "downtime-dnd5e.ChangeLogDeleteNote": "注意：取消更改不会还原更改。如果你想还原在此看到的更改，必须手动还原，但本日志可作为指南，帮助你找出需要做出的更改。",
+  "downtime-dnd5e.ChangeLogInstructionsGm": "该日志显示了对该角色的每个进程项目所做的所有更改列表。查看完项目后，你可以勾选删除一栏中的复选框并点击窗口底部的按钮，将项目从列表中删除。一旦你这样做了，你和玩家都将无法再看到它们。",
+  "downtime-dnd5e.ChangeLogInstructionsPlayer": "此日志显示了对你的每个进程项目所做更改的列表，这些更改尚未经过你的GM审核。一旦这些项目通过审核，它们将不再在此显示。",
+  "downtime-dnd5e.Dismiss": "驳回",
+  "downtime-dnd5e.DismissSelected": "驳回选定",
+
+  "downtime-dnd5e.CategoryCreationInstructions": "你可以使用类别来组织该选项卡上的项目。",
+  "downtime-dnd5e.Name": "名称",
+  "downtime-dnd5e.Description": "描述",
+  "downtime-dnd5e.SaveCategory": "保存类别",
+
+  "downtime-dnd5e.TrackedItemComplete": "进程项目完成",
+  "downtime-dnd5e.Completed": "完成",
+
+  "downtime-dnd5e.DeleteCategoryConfirmation": "你确定要删除此类别吗？该类别中的所有项目都将移至未分类部分。",
+  "downtime-dnd5e.DeleteItemConfirmation": "你确定要删除此项目吗？",
+
+  "downtime-dnd5e.GeneralInformationHeader": "基本信息",
+  "downtime-dnd5e.ItemId": "项目 ID",
+  "downtime-dnd5e.Image": "图片",
+  "downtime-dnd5e.Hidden": "对玩家隐藏？",
+  "downtime-dnd5e.Category": "类别",
+  "downtime-dnd5e.ProgressionType": "进度类型",
+  "downtime-dnd5e.CurrentProgress": "当前进度",
+  "downtime-dnd5e.ProgressionStyleFixed": "固定数值",
+  "downtime-dnd5e.ProgressionStyleAbilityCheck": "属性检定",
+  "downtime-dnd5e.ProgressionStyleSkillCheck": "技能检定",
+  "downtime-dnd5e.ProgressionStyleToolCheck": "工具检定",
+
+  "downtime-dnd5e.ProgressionStyleFixedHeader": "详情 - 固定值",
+  "downtime-dnd5e.ProgressionStyleAbilityCheckHeader": "详情 - 属性检定",
+  "downtime-dnd5e.ProgressionStyleSkillCheckHeader": "详情 - 技能检定",
+  "downtime-dnd5e.ProgressionStyleToolCheckHeader": "详情 - 工具检定",
+  "downtime-dnd5e.ProgressionStyleMacroHeader": "详情 - 宏",
+
+  "downtime-dnd5e.ProgressionStyleFixedHelp": "每次掷骰，项目的进度都会按设定值增加。",
+  "downtime-dnd5e.ProgressionStyleAbilityCheckHelp": "每次掷骰时，系统都会提示你进行指定的属性检定。如果没有设置 DC，项目进度将增加一个与检定结果相等的数字。如果设置了DC，成功的检定将使进度增加1。",
+  "downtime-dnd5e.ProgressionStyleSkillCheckHelp": "每次掷骰时，系统都会提示你进行指定的技能检定。如果没有设置 DC，项目进度将增加一个与检定结果相等的数字。如果设置了DC，成功的检定将使进度增加1。",
+  "downtime-dnd5e.ProgressionStyleToolCheckHelp": "每次掷骰时，系统都会提示你进行指定的工具检定。如果没有设置 DC，项目进度将增加一个与检定结果相等的数字。如果设置了DC，成功的检定将使进度增加1。",
+  "downtime-dnd5e.ProgressionStyleMacroHelp": "每次掷骰时，引用的宏都会运行。为了使项目进度增加，宏必须调用该模组的 API。有关示例宏和 API 文档，请访问该模组的 github 代码。",
+
+  "downtime-dnd5e.SaveTrackedItem": "保存进程项目",
+
+  "downtime-dnd5e.AddCategory": "添加类别",
+  "downtime-dnd5e.AddWorldCategory": "添加世界类别",
+  "downtime-dnd5e.AddActorCategory": "添加角色类别",
+  "downtime-dnd5e.AddItem": "添加项目",
+  "downtime-dnd5e.AddWorldItem": "添加世界进程项目",
+  "downtime-dnd5e.CreateNewCategory": "添加新的类别",
+  "downtime-dnd5e.CreateNewWorldCategory": "添加新的世界类别",
+  "downtime-dnd5e.CreateNewItem": "添加活动",
+  "downtime-dnd5e.CreateNewWorldItem": "添加世界活动",
+  "downtime-dnd5e.ReviewChanges": "审查变更",
+
+  "downtime-dnd5e.Uncategorized": "未分类",
+  "downtime-dnd5e.CheckTypeColumnHeader": "类型",
+  "downtime-dnd5e.ProgressColumnHeader": "进度",
+  "downtime-dnd5e.ToggleInfo": "切换信息",
+
+  "downtime-dnd5e.EditItem": "编辑项目",
+  "downtime-dnd5e.EditCategory": "编辑类别",
+
+  "downtime-dnd5e.None": "无",
+  "downtime-dnd5e.Delete": "删除",
+  "downtime-dnd5e.RollItemProgress": "掷骰项目增加进度",
+
+  "downtime-dnd5e.MigrationPromptTitle": "需要新的迁移",
+  "downtime-dnd5e.MigrationPromptBackupWarning": "备份数据",
+  "downtime-dnd5e.MigrationPromptText1": "该模组的最新更新对其数据结构进行了更改。任何正在使用旧数据进程项目的角色都需要迁移到这个新结构，然后才能再次使用这些项目。",
+  "downtime-dnd5e.MigrationPromptText2": "迁移可能导致数据丢失或损坏。我们会在迁移时备份该模组的数据，但为了安全起见，我们强烈建议你备份所有数据。",
+  "downtime-dnd5e.MigrationPromptText3": "你拥有{num}个需要更新的角色。你想现在进行迁移吗？",
+  "downtime-dnd5e.MigrationPromptYes": "立即迁移",
+  "downtime-dnd5e.MigrationPromptNo": "稍后再做",
+
+  "downtime-dnd5e.ExportTrackedItems": "导出",
+  "downtime-dnd5e.ImportTrackedItems": "导入",
+  "downtime-dnd5e.ExportTrackedItemsTooltip": "将进程项目导出到文件",
+  "downtime-dnd5e.ImportTrackedItemsTooltip": "从文件导入进程项目",
+
+  "downtime-dnd5e.ExportNoTrackedItems": "没有要导出的项目或类别。取消导出。",
+  "downtime-dnd5e.ImportNoTrackedItems": "没有要导入的项目或类别。取消导入。",
+  "downtime-dnd5e.ImportNoFile": "未选择文件。取消导入。",
+
+  "downtime-dnd5e.ImportTypeSelectionTitle": "如何导入？",
+  "downtime-dnd5e.ImportTypeSelectionTextOverwrite": "永久删除所有当前进程项目，并用导入的项目取而代之。",
+  "downtime-dnd5e.ImportTypeSelectionTextCombine": "将当前的进程项目与要导入的项目合并，并同时保留。",
+  "downtime-dnd5e.ImportTypeSelectionOverwrite": "替换",
+  "downtime-dnd5e.ImportTypeSelectionCombine": "合并",
+
+  "downtime-dnd5e.ImportOldWarningTitle": "无法导入类别",
+  "downtime-dnd5e.ImportOldWarningText": "你导入的数据来自旧版本的模组，该版本不支持在导出项目的同时导出类别数据。我们还是为你导入了，但所有项目都被归入了未分类类别。",
+  "downtime-dnd5e.ImportOldWarningConfirm": "明白了，谢谢！",
+
+  "downtime-dnd5e.ImportComplete": "导入完成",
+
+  "downtime-dnd5e.NoIdWarning": "未找到项目 ID。这可能是因为该项目是由本模组的早期版本创建的，通常只要刷新页面并在提示时选择执行迁移即可解决。如果没有出现迁移提示，开发人员可以帮你解决！导出此角色的进程项目，并通过 GitHub 或 Discord 上的错误报告发送给开发者。",
+
+  "downtime-dnd5e.SuccessesRequired": "成功需求"
+}

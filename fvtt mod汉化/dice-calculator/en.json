@@ -1,0 +1,122 @@
+{
+	"DICE_TRAY": {
+		"Adv": "Adv",
+		"Advantage": "Advantage",
+		"DiceTray": "Dice Tray",
+		"Dis": "Dis",
+		"Disadvantage": "Disadvantage",
+		"FateDice": "Fate Dice",
+		"For": "For",
+		"Fortune": "Fortune (kh)",
+		"Misfortune": "Misfortune (kl)",
+		"Mis": "Mis",
+		"Wild": "Wild",
+		"Ace": "Ace",
+		"WildDie": "Wild Die",
+		"ExplodingDie": "Exploding Die",
+		"PlusOneDie": "+1d",
+		"MinusOneDie": "-1d",
+		"PlusOneDieLong": "Increase Dice Size",
+		"MinusOneDieLong": "Decrease Dice Size",
+		"KeepHighest": "Keep Highest",
+		"KeepLowest": "Keep Lowest",
+		"Roll": "Roll",
+
+		"Optional": "Optional",
+
+		"DiceCreator": {
+			"CreateDice": "Create Dice",
+			"Formula": {
+				"name": "Formula",
+				"hint": "The formula that will be added to the chat."
+			},
+			"Row": {
+				"name": "Row",
+				"hint": "The row the button will be placed on."
+			},
+			"Image": {
+				"name": "Image"
+			},
+			"Label": {
+				"name": "Label",
+				"hint": "The label shown in case the dice has no image."
+			},
+			"Tooltip": {
+				"name": "Tooltip",
+				"hint": "The tooltip shown when hovering over the button. Defaults to the Formula."
+			},
+			"Color": {
+				"name": "Color",
+				"hint": "The color that fills the image."
+			}
+		},
+
+		"DiceRows": {
+			"compactMode": {
+				"label": "Compact Mode",
+				"hint": "Disables any additional dice rows and merges the original two rows together."
+			},
+			"hideNumberInput": {
+				"label": "Hide Number Input"
+			},
+			"hideNumberButtons": {
+				"label": "Hide +/- Buttons"
+			},
+			"hideRollButton": {
+				"label": "Hide Roll Button"
+			},
+			"Instruction1": "Click any dice button to edit it. Right-Click any dice button to delete it."
+		},
+
+		"KEYBINGINDS": {
+			"popout": {
+				"name": "Toggle Dice Tray Popout"
+			}
+		},
+
+		"SETTINGS": {
+			"DiceCreator": "Dice Creator",
+			"DiceRowSettings": "Dice Rows Configuration",
+			"autoOpenPopout": {
+				"name": "Auto Open Popout",
+				"hint": "Opens the Dice Tray popout automatically on page load."
+			},
+			"enableDiceTray": {
+				"name": "Enable Dice Tray",
+				"hint": "Enable showing a dice tray below the chat message area. This is a user setting for players that don't want the tray."
+			},
+			"hideAdv": {
+				"name": "Hide Extra Buttons",
+				"hint": "Hides the KH/KL buttons."
+			},
+			"popout": {
+				"name": "Dice Tray Popout Button",
+				"hint": "Adds a button on the Controls bar to toggle the Dice Tray popout. You can also toggle the popout by setting a keybinding.",
+				"options": {
+					"all": "All Controls"
+				}
+			},
+			"rightClickCommand": {
+				"name": "Right Click Command",
+				"hint": "Sets which behavior right-clicking a dice button should have.",
+				"options": {
+					"decrease": "Default (Decrease Dice)",
+					"roll": "Roll One Dice"
+				}
+			},
+			"PF2E": {
+				"flatCheckLabel": "{dc} {text}",
+				"flatCheck": {
+					"name": "Add Flat Check Buttons",
+					"hint": "Replaces the Fortune/Misfortune buttons for DC 5/11 Flat Check buttons."
+				}
+			},
+			"SWADE": {
+				"wildDieBehavior": {
+					"name": "Use Dice Pool for Wild Button",
+					"hint": "Clicking the same dice while Wild is active will add dice to the pool rather than increasing the current dice in the list."
+				}
+			}
+		}
+	}
+}

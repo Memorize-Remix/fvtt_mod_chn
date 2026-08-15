@@ -1,0 +1,127 @@
+{
+  "SEASONS_STARS": {
+    "module_title": "Seasons & Stars",
+    "calendar": {
+      "current_date": "Current Date",
+      "toggle_calendar": "Toggle Calendar",
+      "monthly_view": "Monthly Calendar",
+      "advance_time": "Advance Time",
+      "calendar_selection": "Calendar Selection",
+      "calendar_format": "Calendar Format",
+      "custom": "Custom Calendar",
+      "import": "Import Calendar",
+      "export": "Export Calendar",
+      "months": "Months",
+      "days_per_week": "Days per Week",
+      "leap_year": "Leap Year",
+      "enabled": "Enabled"
+    },
+    "dialog": {
+      "calendar_selection": {
+        "title": "📅 Change Calendar System",
+        "choose_calendar": "Choose Your Calendar System",
+        "choose_hint": "Select which calendar system to use for date display and time tracking in your world. This affects how dates are displayed and calculated throughout the game. You can choose from the built-in calendars below or load a custom calendar file.",
+        "select": "Use This Calendar",
+        "cancel": "Keep Current",
+        "switch_to": "Switch to {calendar}",
+        "current": "Currently Active",
+		"selected": "Selected",
+        "select_this": "Select This Calendar",
+        "sample": "Sample",
+        "preview": "Preview",
+        "preview_tooltip": "View calendar details and sample dates",
+        "sample_dates": "Sample Dates",
+        "structure": "Calendar Structure",
+        "no_calendars": "No Calendars Available",
+        "no_calendars_hint": "No calendar files were found. Please ensure calendar data is properly installed.",
+        "custom_file": "Custom Calendar File",
+        "custom_file_hint": "Select a custom calendar JSON file from your Foundry server. This allows you to use calendars that aren't included in the built-in collection.",
+        "browse": "Browse",
+        "browse_tooltip": "Select a custom calendar file from your Foundry server",
+        "no_file_selected": "No custom file selected",
+        "clear_file": "Clear file selection",
+        "clear": "Clear",
+        "file_active": "Custom calendar file is currently active",
+        "file_loaded": "Custom calendar file is loaded and ready to use",
+        "file_path": "File Path",
+        "status": "Status",
+        "click_to_select": "Click to select a calendar file",
+        "use_this_file": "Use This File",
+        "search_placeholder": "Search calendars...",
+        "filter_by_tag": "Filter by tag",
+        "clear_filters": "Clear filters",
+        "of": "of",
+        "no_results": "No calendars match your search",
+        "select_to_view": "Select a calendar to view details",
+        "toggle_variants": "Toggle variants",
+        "tags": "Tags",
+        "prev_month": "Previous month",
+        "next_month": "Next month"
+      },
+      "calendar_preview": {
+        "title": "Calendar Preview: {calendar}"
+      },
+      "close": "Close"
+    },
+    "settings": {
+      "calendar_selection": "📅 Calendar System",
+      "select_calendar_button": "Select Calendar",
+      "calendar_selection_hint": "Choose which calendar system to use for date display and time tracking in your world. Opens a dialog to browse and select from available calendars.",
+      "active_calendar": "📅 Active Calendar System",
+      "active_calendar_hint": "Choose which calendar system to use for date display and time tracking. This is the primary setting for configuring your world's calendar.",
+	  "active_calendar_file": "📄 Custom Calendar File Path",
+      "active_calendar_file_hint": "Path to a custom calendar JSON file on the Foundry server. This setting is managed through the calendar selection dialog.",
+	  "chat_day_notifications": "📝 Day Change Chat Notifications",
+      "chat_day_notifications_hint": "Post a chat message when the in-game day changes, helping players track time progression in the chat log.",
+      "chat_day_format": "📝 Day Change Format",
+      "chat_day_format_hint": "The format template for day change notifications. Uses Handlebars syntax with helpers like {{ss-weekday format='name'}}, {{ss-month format='name'}}, {{ss-day format='ordinal'}}, {{ss-year}}.",
+      "current_date": "Current Date",
+      "current_date_hint": "The current in-game date (managed automatically)",
+      "default_widget": "🔧 Default Calendar Widget",
+      "default_widget_hint": "Choose which calendar widget opens when using the scene control button or default keyboard shortcut (Alt+S)",
+	  "default_widget_none": "None (no widget on startup)",
+      "default_widget_main": "Main Calendar Widget",
+      "default_widget_mini": "Mini Calendar Widget",
+      "default_widget_grid": "Calendar Grid Widget"
+    },
+    "notifications": {
+      "calendar_changed": "Calendar changed to {calendar}"
+    },
+    "warnings": {
+      "no_calendars_available": "No calendars are available for selection",
+      "calendar_file_failed": "Failed to load calendar file '{path}': {error}"
+    },
+    "keybindings": {
+      "toggle_default_widget": "Toggle Default Calendar Widget",
+      "toggle_default_widget_hint": "Show or hide the default calendar widget (configurable in settings)",
+      "toggle_mini_widget": "Toggle Mini Calendar Widget",
+      "toggle_mini_widget_hint": "Show or hide the compact calendar widget",
+      "toggle_grid_widget": "Toggle Calendar Grid Widget",
+      "toggle_grid_widget_hint": "Show or hide the monthly calendar grid widget",
+      "toggle_main_widget": "Toggle Main Calendar Widget",
+      "toggle_main_widget_hint": "Show or hide the main calendar management widget"
+    },
+    "errors": {
+      "invalid_calendar": "Invalid calendar format",
+      "failed_load": "Failed to load calendar: {error}",
+      "conversion_failed": "Calendar conversion failed: {error}",
+      "manager_not_ready": "Calendar manager is not ready yet",
+      "file_picker_failed": "Failed to open file picker dialog",
+      "calendar_file_load_failed": "Failed to load calendar from file {path}: {error}",
+      "clear_file_failed": "Failed to clear custom calendar file selection"
+    },
+    "mini_widget": {
+      "context_menu": {
+        "toggle_time": "Toggle Time",
+        "toggle_weekday": "Toggle Weekday",
+		"toggle_year": "Toggle Year",
+        "toggle_moon_phases": "Toggle Moon Phases",
+		"toggle_sunrise_sunset": "Toggle Sunrise/Sunset",
+		"toggle_12hour": "Toggle 12-Hour Format",
+        "toggle_time_controls": "Toggle Time Controls",
+        "toggle_extensions": "Toggle Extension Buttons",
+        "toggle_pin": "Toggle Pin"
+      }
+    }
+  }
+}

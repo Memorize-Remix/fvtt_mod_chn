@@ -1,0 +1,79 @@
+{
+  "fast-flip": {
+    "keybinds": {
+      "flip-token": {
+        "hotkey": "Flip Selected Token",
+        "hint": "Flips the selected token (hold SHIFT to flip vertically)"
+      },
+      "flip-tile": {
+        "hotkey": "Flip Selected Tile",
+        "hint": "Flips the selected tile (hold SHIFT to flip vertically)"
+      },
+      "afk-toggle": {
+        "hotkey": "Toggle AFK Status",
+        "hint": "Toggles the AFK status of the selected tokens"
+      },
+      "show-speech-bubble": {
+        "hotkey": "Show Speech Bubble",
+        "hint": "Displays a speech bubble attached to your selected token to all players."
+      }
+    },
+    "settings": {
+      "afk": {
+        "show-toggle-button": {
+          "value": "Show AFK Toggle",
+          "hint": "Show or hide the AFK toggle button on the token HUD"
+        },
+        "allow": {
+          "value": "Allow AFK Toggle",
+          "hint": "Allow the AFK status to be toggled for player owned tokens"
+        },
+        "overlay-icon-path": {
+          "value": "AFK Icon Path",
+          "hint": "Path to the image to use for the AFK status indicator on tokens"
+        },
+        "show-status-in-chat": {
+          "value": "Show AFK Status in Chat",
+          "hint": "Send a chat message whenever a player's AFK status changes"
+        }
+      },
+      "speech-bubble": {
+        "allow": {
+          "value": "Allow Speech Bubbles",
+          "hint": "Allow speech bubbles to be displayed on tokens when the hotkey is activated."
+        },
+        "font-size": {
+          "value": "Speech Bubble Font Size",
+          "hint": "Font size of the names shown in speech bubbles in px units."
+        }
+      },
+      "flip": {
+        "show": {
+          "value": "Show Flip Buttons",
+          "hint": "Show or hide the flip buttons on the token HUD"
+        },
+        "animation-duration": {
+          "value": "⚠️ Animation Duration",
+          "hint": "Duration of the token flip animation in seconds (0 disables animations). Use at your own risk. Only verified to work with Pathfinder 2e."
+        }
+      }
+    },
+    "text": {
+      "afk": {
+        "toggle-button": "Toggle AFK Status",
+        "chat": {
+          "message": "{name} has gone AFK.",
+          "returned-message": "{name} has returned from being AFK."
+        }
+      },
+      "flip-token": {
+        "horizontal-button": "Flip Token (Horizontal)",
+        "vertical-button": "Flip Token (Vertical)"
+      },
+      "flip-tile": {
+        "horizontal-button": "Flip Tile (Horizontal)",
+        "vertical-button": "Flip Tile (Vertical)"
+      }
+    }
+  }
+}

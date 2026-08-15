@@ -1,0 +1,55 @@
+
+  "DUELYSTSPRITES": {
+    "FACTIONS": {
+      "LABEL": "阵营",
+      "LYONAR": "里昂纳尔王国",
+      "SONGHAI": "松海帝国",
+      "VETRUVIAN": "维特鲁威帝国",
+      "ABYSSIAN": "深渊军团",
+      "MAGMAR": "岩浆之形",
+      "VANAR": "瓦纳尔部族",
+      "UNKNOWN": "未知",
+      "NEUTRAL": "中立"
+    },
+    "UNITTYPES": {
+      "LABEL": "类型",
+      "MINION": "随从",
+      "GENERAL": "将军",
+      "UNKNOWN": "未知"
+    },
+	  "CONTEXT": {
+		"ASSIGN": "分配 Duelyst 精灵",
+		"CONFIRM": {
+		  "MESSAGE": "覆盖 {name} 上的以下属性：",
+		  "NAME": "名称",
+		  "PORTRAIT": "角色立绘",
+		  "TOKENIMAGE": "Token图像",
+		  "ANIMATIONS": "精灵动画设置",
+		  "THEATREINSERT": "剧场插入设置"
+		}
+	  },
+    "ACTORCREATOR": {
+      "TITLE": "角色创建器",
+      "DESCRIPTION": "此对话框将允许你使用《Duelyst Sprites》模组中包含的美术资源创建一个预配置的角色。",
+      "PRESET": {
+        "LABEL": "预设",
+        "HINT": "选择用于创建角色的角色"
+      },
+      "ACTORTYPE": {
+        "LABEL": "角色类型"
+      },
+      "ACTORNAME": {
+        "LABEL": "名称"
+      },
+      "HASSPRITEANIMATION": "此预设包含针对 <a href='https://foundryvtt.com/packages/sprite-animations'>Sprite Animations</a> 的配置",
+      "HASTHEATREINSERT": "此预设包含适合 <a href='https://foundryvtt.com/packages/theatre'>Theatre Inserts</a> 的图像"
+    },
+    "ERRORS": {
+      "INVALIDPRESET": "无效的角色预设：{preset}"
+    },
+    "PRESETBROWSER": {
+      "TITLE": "预设浏览器",
+      "DESCRIPTION": "请在下方选择一个预设"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+
+	"damage-log.chat-tab-name": "聊天",
+	"damage-log.damage-log-tab-name": "伤害记录",
+
+	"damage-log.customizable-chat-tabs-hint": "Damag Log模组创建的信息",
+
+	"damage-log.reset-visibility": "重置可见",
+	"damage-log.undo-damage": "撤销伤害",
+	"damage-log.undo-healing": "撤销治疗",
+	"damage-log.redo-damage": "重做伤害",
+	"damage-log.redo-healing": "重做治疗",
+
+	"damage-log.damage-flavor-text": "受到{diff} {damageType}伤害",
+	"damage-log.healing-flavor-text": "治愈{diff}伤害",
+
+	"damage-log.old": "旧",
+	"damage-log.new": "新",
+	"damage-log.diff": "差异",
+
+	"damage-log.default.hp-name": "HP",
+	"damage-log.default.temp-name": "临时",
+	"damage-log.ac2d20.stress-name": "压力",
+	"damage-log.ac2d20.injuries-name": "伤势",
+	"damage-log.ac2d20.fortune-name": "幸运",
+	"damage-log.ac2d20.fatigue-name": "疲劳",
+	"damage-log.age-of-sigmar-soulbound.toughness-name": "坚韧",
+	"damage-log.CoC7.hp-name" : "HP",
+	"damage-log.CoC7.mp-name" : "MP",
+	"damage-log.CoC7.lck-name": "幸运值",
+	"damage-log.CoC7.san-name": "理智值",
+	"damage-log.cy-borg.hp-name" : "HP",
+	"damage-log.D35E.vigor-name": "活力",
+	"damage-log.D35E.vigorTemp-name": "临时",
+	"damage-log.D35E.wounds-name": "伤残",
+	"damage-log.demonlord.corruption-name": "腐化",
+	"damage-log.demonlord.damage-name": "伤害",
+	"damage-log.demonlord.insanity-name": "疯狂",
+	"damage-log.fallout.radiation-name": "辐射",
+	"damage-log.gurps.fp-name": "FP",
+	"damage-log.nimble.wounds-name": "伤残",
+	"damage-log.pf2e.sp-name": "耐力值",
+	"damage-log.shaper.temp-name": "护盾",
+	"damage-log.swade.wounds-name": "伤残",
+	"damage-log.swade.fatigue-name": "疲劳",
+	"damage-log.swade.bennies-name": "奖励点",
+	"damage-log.tormenta20.pv-name": "PV",
+	"damage-log.tresdetv.mana-name": "魔法",
+	"damage-log.tresdetv.vida-name": "生命",
+	
+	"damage-log.settings.use-tab": "使用单独的伤害记录标签页",
+	"damage-log.settings.use-tab-hint": "为伤害记录使用单独的标签页。 如果未选中此项，伤害记录将发送到默认聊天。",
+
+	"damage-log.settings.allow-player-view": "允许玩家查看伤害记录",
+
+	"damage-log.settings.min-player-permission": "最低角色权限",
+	"damage-log.settings.min-player-permission-hint": "玩家只能在伤害记录中看到拥有此权限（或更高权限）的角色。",
+
+	"damage-log.settings.allow-player-undo": "允许玩家撤销/重做伤害",
+	"damage-log.settings.allow-player-undo-hint": "启用后，玩家将能够撤销/重做对其*拥有的*角色造成的伤害和治疗。",
+
+	"damage-log.settings.show-limited-info": "向玩家显示有限的伤害信息",
+	"damage-log.settings.show-limited-info-hint": "启用后，玩家可以看到*所有*角色受到的伤害，但无法看到旧/差异/新的数值表。",
+
+	"damage-log.settings.hide-healing-in-limited-info": "在有限的伤害信息中隐藏治疗",
+	"damage-log.settings.hide-healing-in-limited-info-hint": "启用后，玩家将无法在有限的伤害信息中看到任何治疗。",
+
+	"damage-log.settings.clamp-to-max": "限制到最大 HP",
+	"damage-log.settings.clamp-to-max-hint": "在恢复伤害或重新应用治疗时，防止角色的 HP 超过当前允许的最大值",
+
+	"damage-log.settings.clamp-to-min": "限制到最小 HP",
+	"damage-log.settings.clamp-to-min-hint": "重新应用伤害或恢复治疗时，防止角色的 HP 值低于当前允许的最小值",
+
+	"damage-log.settings.none": "无",
+	"damage-log.settings.limited": "限制",
+	"damage-log.settings.observer": "查看",
+	"damage-log.settings.owner": "拥有",
+
+	"damage-log.error.system-not-supported": "Damage Log | 目前不支持'{systemId}'系统",
+	"damage-log.error.scene-id-missing": "Damage Log | 伤害记录中缺少场景 ID",
+	"damage-log.error.scene-deleted": "Damage Log | 场景'{scene}'不存在",
+	"damage-log.error.token-id-missing": "Damage Log | 伤害记录中缺少 token ID",
+	"damage-log.error.token-deleted": "Damage Log | Token'{token}'不存在",
+	"damage-log.error.no-undo-user": "Damage Log | 无法{undo} {damage}。{user}和任何 GM 都没有连接"
+}

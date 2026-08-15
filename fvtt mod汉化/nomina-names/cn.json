@@ -1,0 +1,519 @@
+
+    "names": {
+        "title": "Nomina Names",
+        "window-title": "Nomina Names - 名称生成",
+        "picker-window-title": "Nomina Names - 名称选择",
+        "// ===== BASIC UI ELEMENTS =====": "",
+        "language": "语言",
+        "lbl_species": "种族",
+        "lbl_language": "语言风格",
+        "lbl_gender": "性别",
+        "category": "类别",
+        "generate": "生成",
+        "btn-copy": "复制",
+        "clear": "清除",
+        "copied": "名称已复制！",
+        "or": "或",
+        "// ===== UI DROPDOWN LABELS =====": "",
+        "ui": {
+            "choose-species": "选择种族...",
+            "choose-category": "选择类别...",
+            "all-genders": "所有性别（随机）",
+			"search-language": "搜索语言...",
+			"search-species": "搜索物种...",
+			"search-category": "搜索分类...",
+			"search-recipe": "搜索配方...",
+			"placeholder-language": "选择语言风格...",
+			"placeholder-species": "选择物种...",
+			"placeholder-category": "选择分类...",
+			"placeholder-recipe": "选择配方..."
+        },
+        "// ===== NAMES & COMPONENTS =====": "",
+        "names": "名称",
+        "components": "成分",
+		"recipe": "配方",
+		"recipes": "配方集",
+		"recipe-mode": "配方模式",
+		"component-mode": "成分模式",
+		"custom-recipe": "自定义",
+		"recipe-copy": "复制",
+		"recipe-clear": "清空",
+		"recipe-field-label": "配方定义",
+		"recipe-seed": "种子",
+		"recipe-seed-placeholder": "可选：用于确定性生成的种子",
+		"recipe-randomize-seed": "生成随机种子",
+		"example-prefix": "例如：",
+        "gender": {
+            "label": "性别",
+            "male": "男性",
+            "female": "女性",
+            "nonbinary": "非二元",
+            "neutral": "中性",
+            "random": "随机"
+        },
+        "firstname": "名字",
+        "surname": "姓氏",
+        "titles": "头衔",
+        "nickname": "昵称",
+        "nameformat": "名称格式",
+        "placeholders": "可用占位符",
+        "examples": "示例",
+        "// ===== CATEGORIZED CONTENT =====": "",
+        "subcategories": "子类别",
+        "settlements": "定居点",
+        "// ===== GENERATION CONTROLS =====": "",
+        "max-20": "一次生成1-20个名称",
+        "lbl_amount": "名称数量",
+        "new-names": "新名称",
+        "choose-name": "选择名称：",
+        "select-options": "选择选项并点击'生成'",
+        "select-all": "请选择语言和种族",
+        "select-components": "请至少选择一个名称成分",
+        "search-hint": "提示：使用搜索功能查找更多选项",
+		"search-placeholder": "搜索名称...",
+        "no-search-results": "未找到相关名称",
+        "// ===== HELP & INSTRUCTIONS =====": "",
+        "gender-help": "仅当所选种族支持时，非二元名字才可用。",
+        "subcategory-help": "至少选择一个子类别，或全部不选以随机选择。",
+        "click-for-suggestions": "点击\"新名称\"获取3个建议",
+        "click-to-adopt": "点击名称以将其应用于角色",
+        "// ===== NEW UI ELEMENTS =====": "",
+        "section": {
+            "basic": "基本设置"
+        },
+        "results": {
+            "title": "生成的名称",
+            "count": "{count}个结果",
+            "count-zero": "0个结果"
+        },
+        "view": {
+            "detailed": "详细视图",
+            "simple": "紧凑视图"
+        },
+        "type": {
+            "name": "名称"
+        },
+        "copy": {
+            "hint": "点击复制",
+            "help": "💡 点击名称进行复制"
+        },
+        "// ===== USER INTERACTION =====": "",
+        "name-adopted": "名称\"{name}\"已被采用！",
+        "select-one-token": "请选择恰好一个Token。",
+        "no-permission": "你没有使用名称生成的权限。",
+        "permissions-saved": "角色权限已保存！",
+		"copied-to-clipboard": "已复制到剪贴板",
+		"click-disabled-hint": "名称点击操作已禁用。请在模组设置中启用。",
+		"generated-name": "已生成名称",
+        "// ===== ERRORS & WARNINGS =====": "",
+        "no-names-found": "未找到名称",
+        "generation-error": "生成错误：{error}",
+        "name-error": "采用名称时出错",
+        "copy-error": "复制失败",
+        "no-names-generated": "无法生成名称",
+        "// ===== LANGUAGES =====": "",
+        "languages": {
+            "de": "德语",
+            "en": "英语",
+            "fr": "法语",
+            "es": "西班牙语",
+            "it": "意大利语"
+        },
+        "// ===== SPECIES =====": "",
+        "species": {
+            "human": "人类",
+            "elf": "精灵",
+            "dwarf": "矮人",
+            "halfling": "半身人",
+            "orc": "兽人",
+            "goblin": "地精",
+            "dragonborn": "龙裔",
+            "tiefling": "提夫林",
+            "aasimar": "阿斯莫",
+            "gnome": "侏儒"
+        },
+        "// ===== CATEGORIES =====": "",
+        "categories": {
+            "male": "男性名字",
+            "female": "女性名字",
+            "nonbinary": "非二元名字",
+            "surnames": "姓氏",
+            "titles": "头衔/贵族头衔",
+            "nicknames": "昵称",
+            "pets": "宠物与伙伴"
+        },
+        "// ===== CATEGORY GROUPS =====": "",
+        "category-groups": {
+            "places": "地点",
+            "atmospheric": "氛围"
+        },
+        "// ===== SUBCATEGORY TRANSLATIONS =====": "",
+        "subcategory-translations": {
+            "pets": {
+                "hunde": "狗",
+                "katzen": "猫",
+                "voegel": "鸟",
+                "fische": "鱼",
+                "tressym": "翼猫"
+            }
+        },
+        "// ===== SETTINGS =====": "",
+        "settings": {
+            "interfaceLanguage": {
+                "name": "界面语言",
+                "hint": "用户界面的语言（与内容语言无关）",
+                "auto": "自动（FVTT语言）"
+            },
+            "defaultContentLanguage": {
+                "name": "默认内容语言",
+                "hint": "生成名称的默认语言风格",
+                "auto": "自动（界面语言）"
+            },
+            "showInTokenControls": {
+                "name": "在Token控件中显示按钮",
+                "hint": "在左侧工具栏中显示名称生成控件"
+            },
+            "showInCharacterSheet": {
+                "name": "在角色表中显示按钮",
+                "hint": "在角色表的名称字段旁边显示名称选择按钮"
+            },
+            "showInTokenContextMenu": {
+                "name": "Token HUD和右键菜单",
+                "hint": "在Token HUD中显示名称按钮，并在右键菜单中添加'更改名称'选项"
+            },
+            "showEmergencyButton": {
+                "name": "显示\"快速NPC\"按钮",
+                "hint": "在聊天下方显示按钮，用于快速生成NPC名称"
+            },
+            "includeNonbinaryNames": {
+                "name": "包含非二元名称",
+                "hint": "如果种族支持，允许选择非二元名字"
+            },
+            "roleConfig": {
+                "name": "配置角色权限",
+                "hint": "确定哪些用户角色可以使用名称生成",
+                "label": "配置角色"
+            },
+            "logLevel": {
+                "name": "日志级别",
+                "hint": "设置控制台日志输出量",
+                "error": "仅错误",
+                "warn": "警告",
+                "info": "信息",
+                "debug": "所有详情"
+            },
+            "availableSpecies": {
+                "name": "可用种族",
+                "hint": "选择生成中应可用的种族"
+            },
+            "speciesConfig": {
+                "name": "管理种族",
+                "hint": "配置应可用的种族",
+                "label": "配置种族"
+            },
+            "defaultView": {
+                "name": "默认视图",
+                "hint": "打开名称生成时自动选择的视图",
+                "detailed": "详细视图",
+                "simple": "紧凑视图"
+            },
+			"generateButtonPlacement": {
+				"name": "生成按钮位置",
+				"hint": "生成器应用中生成按钮的位置",
+				"legacy": "经典（选项下方）",
+				"floating": "浮动（选项面板底部）",
+				"result": "结果区域（复制按钮旁）"
+			},
+            "defaultNameCount": {
+                "name": "默认名称数量",
+                "hint": "默认应生成的名称数量（1-20）"
+            },
+            "historyMaxEntries": {
+                "name": "最大历史记录条目数",
+                "hint": "历史记录中存储的生成名称的最大数量（10-200）"
+            },
+            "enableMetadata": {
+                "name": "显示增强元数据",
+                "hint": "显示生成地点和建筑物的附加信息，如所有者、位置和专业领域"
+            },
+			"nameClickCopy": {
+				"name": "复制到剪贴板",
+				"hint": "点击时自动将名称复制到剪贴板"
+			},
+			"nameClickPost": {
+				"name": "发送到聊天",
+				"hint": "点击时自动将名称发送到聊天"
+			},
+			"nameClickPostWhisper": {
+				"name": "聊天隐私设置",
+				"hint": "决定发送名称时聊天消息的可见性",
+				"inherit": "继承当前模式",
+				"whisper": "仅GM可见（私聊）",
+				"public": "公开（所有人可见）"
+			},
+			"rememberSelections": {
+				"name": "记住选择",
+				"hint": "关闭时保存所有卡选择（语言、物种、类别、性别等），并在重新打开时恢复"
+			},
+			"enableGenderColors": {
+				"name": "启用性别颜色",
+				"hint": "根据性别使用颜色编码显示生成的名称"
+			},
+			"genderColorsConfig": {
+				"name": "配置性别颜色",
+				"hint": "为每个性别设置单独的颜色",
+				"label": "配置颜色"
+			},
+            "enableEmergencyGenderColors": {
+				"name": "紧急性别颜色",
+				"hint": "根据性别使用颜色编码显示紧急名称"
+			},
+			"emergencyGenderColors": {
+				"name": "紧急性别颜色配置",
+				"hint": "紧急名称中每种性别的颜色配置"
+			}
+        },
+    "// ===== GENDER COLORS CONFIG =====": "",
+		"genderColorsConfig": {
+			"title": "性别颜色",
+			"enable": "启用性别颜色",
+			"description": "为每个性别选择强调色。该颜色将作为背景渐变和边框强调色微妙地使用。",
+			"male": "男性",
+			"female": "女性",
+			"nonbinary": "非二元性别",
+			"preview": "预览",
+			"reset": "重置",
+			"save": "保存",
+			"cancel": "取消",
+			"saved": "颜色已保存！"
+		},
+		"emergencyGenderColorsConfig": {
+			"sectionTitle": "紧急生成器颜色",
+			"enable": "在紧急生成器中启用性别颜色",
+			"description": "紧急名称生成器的独立颜色设置。",
+			"copyFromAbove": "从主生成器复制",
+			"copiedSuccess": "已从主生成器复制颜色"
+		},
+        "// ===== SPECIES CONFIG =====": "",
+        "speciesConfig": {
+            "title": "管理种族",
+            "description": "选择名称生成中应可用的种族。禁用的种族将不会出现在下拉菜单中。",
+            "search": "搜索：",
+            "searchPlaceholder": "搜索种族...",
+            "enableAll": "启用全部",
+            "disableAll": "禁用全部",
+            "reset": "重置",
+            "coreSpecies": "核心种族",
+            "extensionSpecies": "扩展种族",
+            "coreModule": "核心模组",
+            "enableAllInModule": "启用全部",
+            "disableAllInModule": "禁用全部",
+            "noExtensions": "未找到包含附加种族的扩展模组。",
+            "extensionHint": "安装包含附加种族的模组以获得更多选择。",
+            "totalAvailable": "可用种族：",
+            "saved": "种族配置已保存：{enabled}/{total}已启用",
+            "save": "保存",
+            "cancel": "取消"
+        },
+        "// ===== ROLE CONFIG =====": "",
+        "roleConfig": {
+            "title": "名称生成角色权限",
+            "description": "选择允许使用名称生成的用户角色。没有相应角色的用户将看不到任何名称生成按钮，也无法使用聊天命令。",
+            "allowedRoles": "允许的角色：",
+            "save": "保存",
+            "reset": "重置",
+            "roles": {
+                "PLAYER": "玩家",
+                "TRUSTED": "受信玩家",
+                "ASSISTANT": "GM助理",
+                "GAMEMASTER": "GM"
+            }
+        },
+        "// ===== PERMISSION CHANGE =====": "",
+        "permissionChange": {
+            "title": "权限已更改",
+            "content": "你的名称生成权限已被GM更改。需要重新加载页面才能使更改生效。",
+            "reload": "重新加载页面",
+            "later": "稍后"
+        },
+        "// ===== EMERGENCY NAMES =====": "",
+        "emergency": {
+            "title": "快速NPC名称",
+            "button": "快速NPC名称",
+            "tooltip": "紧急情况下的快速NPC名称",
+            "reroll": "新名称",
+            "generating": "生成中...",
+            "clickToCopy": "点击复制",
+            "nameCopied": "'{name}' 已复制！",
+            "openGenerator": "打开名称生成",
+            "quickNames": "快速NPC名称",
+            "description": "点击名称将其复制到剪贴板",
+            "noNames": "无可用名称",
+            "hint": "名称使用名称生成模组的默认设置生成",
+            "error": "生成名称时出错",
+            "errorOpenGenerator": "打开主生成时出错",
+            "speciesFilter": "物种过滤",
+			"speciesFilterExpanded": "选择物种",
+			"selectAll": "全选",
+			"selectHumans": "人类",
+			"allSpeciesSelected": "全部物种",
+			"minOneSpecies": "必须至少选择一个物种"
+        },
+        "// ===== META DATA LABELS =====": "",
+        "meta": {
+            "owner": "所有者",
+            "location": "位置",
+            "price": "价格",
+            "specialization": "专业领域",
+            "atmosphere": "氛围",
+            "clientele": "客户群体",
+            "features": "特色",
+            "services": "服务",
+            "quality": "质量",
+            "size": "大小",
+            "age": "年代",
+            "type": "类型",
+            "description": "描述"
+        },
+        "// ===== HISTORY =====": "",
+        "history": {
+            "title": "名称历史记录",
+            "open": "打开历史记录",
+            "entries": "条目",
+            "empty": "历史记录中无名称",
+            "empty-hint": "在任何应用中生成名称以在此处查看。",
+            "already-empty": "历史记录已为空",
+            "search-placeholder": "搜索名称...",
+            "select-all": "全选",
+            "no-selection": "未选择名称",
+            "click-to-copy": "点击复制",
+            "name-copied": "\"{name}\" 已复制！",
+            "copied-selected": "已复制{count}个名称",
+            "copied-all": "已复制{count}个名称",
+            "clear": "清除历史记录",
+            "clear-title": "清除历史记录？",
+            "clear-confirm": "你确定要删除历史记录中的所有{count}个条目吗？此操作无法撤销。",
+            "cleared": "历史记录已清除",
+            "export": "导出",
+            "exported": "历史记录已导出为JSON",
+            "copy-selected": "复制选中项",
+            "copy-all": "复制全部",
+            "help": "点击名称进行复制。使用复选框进行多选。",
+            "filter": {
+                "all": "全部",
+                "generator": "生成",
+                "picker": "选择",
+                "emergency": "快速"
+            },
+            "source": {
+                "generator": "生成",
+                "picker": "选择",
+                "emergency": "快速"
+            },
+            "column": {
+                "name": "名称",
+                "species": "种族",
+                "category": "类别",
+                "subcategory": "子类别",
+                "source": "来源",
+                "time": "时间"
+            },
+            "time": {
+                "just-now": "刚刚",
+                "minutes-ago": "{minutes}分钟前",
+                "hours-ago": "{hours}小时前"
+            }
+        },
+        "// ===== CONSOLE MESSAGES =====": "",
+        "console": {
+            "module-init": "名称模组初始化",
+            "loading-index": "加载数据索引...",
+            "index-not-found": "未找到index.json，使用备用方案",
+            "index-loaded": "索引已加载，找到{count}个文件",
+            "index-error": "加载索引文件时出错：",
+            "available-languages": "可用语言：",
+            "available-species": "可用种族：",
+            "available-categories": "可用类别：",
+            "file-unavailable": "{filename}不可用（{status}）",
+            "grammar-loaded": "已加载{key}的语法规则",
+            "file-loaded": "✓ {filename}（{count}个条目）",
+            "file-failed": "✗ {filename} - {error}",
+            "no-data-found": "未找到{key}的数据",
+            "no-gender-data": "未找到{key}的{gender}{category}",
+            "no-titles-found": "未找到{language}.{species}的{gender}头衔",
+            "component-generation-failed": "无法生成{component}：",
+            "generation-error": "生成错误：",
+            "name-setting-error": "设置名称时出错：",
+            "clipboard-fallback": "剪贴板API不可用，使用备用方案"
+        },
+        "// ===== DETAILED ERROR MESSAGES =====": "",
+        "errors": {
+            "catalog": {
+				"empty": "此类别中没有可用的名称",
+				"empty-hint": "此类别目前不包含任何名称。请尝试其他类别或物种。",
+				"no-match": "没有符合过滤条件的名称",
+				"no-match-hint": "请尝试移除部分过滤条件或选择其他选项。",
+				"not-found": "数据目录 '{catalog}' 未找到",
+				"missing-required": "缺少必需的数据目录: {catalogs}",
+				"no-distinct": "在 {attempts} 次尝试后仍无法找到唯一名称",
+				"no-distinct-hint": "可用的不同名称数量不足。请尝试一次性生成较少的名称。"
+			},
+			"package": {
+				"not-found": "{language} 语言的 {species} 名称数据不可用",
+				"not-found-hint": "此物种与语言的组合目前不可用。",
+				"invalid-format": "数据格式无效: {format}",
+				"missing-data": "缺少必需的名称数据"
+			},
+			"recipe": {
+				"not-found": "未找到模板 '{recipe}'",
+				"not-found-hint": "此名称模板不可用。请尝试选择其他选项。",
+				"invalid-json": "模板格式无效",
+				"invalid-json-hint": "模板定义包含错误。请检查语法后重试。",
+				"missing": "必须指定至少一个模板",
+				"execution-failed": "使用模板生成名称失败",
+				"execution-failed-hint": "名称生成过程中出现问题。请重试或选择其他模板。"
+			},
+			"generation": {
+				"failed": "无法生成名称",
+				"failed-hint": "请检查你的设置后重试。",
+				"partial": "仅成功生成 {count} 个名称（共请求 {requested} 个）",
+				"partial-hint": "可用的唯一名称数量不足。请尝试生成较少的名称。",
+				"no-components": "无法生成任何名称成分",
+				"no-components-hint": "请至少选择一个成分（如名、姓等）后重试。",
+				"species-unavailable": "物种 '{species}' 在 {language} 语言中不可用",
+				"unsupported-gender": "不支持性别 '{gender}'",
+				"no-subcategories": "此选择没有可用的子类别",
+				"no-data": "{subcategory} 没有可用数据",
+				"template-failed": "模板缺少必需的成分: {components}"
+			},
+			"selection": {
+				"select-language-species": "请同时选择语言和物种",
+				"select-components": "请至少选择一个名称成分",
+				"select-category": "请选择一个类别"
+			},
+            "api": {
+				"invalid-language": "无效语言: '{language}'",
+				"invalid-language-hint": "可用语言: {available}",
+				"invalid-species": "无效物种: '{species}'",
+				"invalid-species-hint": "可用物种: {available}",
+				"invalid-gender": "无效性别: '{gender}'",
+				"invalid-gender-hint": "可用性别: {available}",
+				"invalid-components": "无效名称成分: {components}",
+				"invalid-components-hint": "成分必须是有效的名称部分类型（例如 'firstname', 'surname', 'title'）",
+				"invalid-format": "无效格式: '{format}'",
+				"invalid-format-hint": "格式必须是有效的名称模板字符串",
+				"invalid-count": "无效数量: {count}",
+				"invalid-count-hint": "数量必须是 1 到 100 之间的数字",
+				"invalid-package-code": "无效包代码: '{code}'",
+				"invalid-package-code-hint": "包代码格式必须为 'language.species'（例如 'de.human'）",
+				"invalid-catalog": "无效目录: '{catalog}'",
+				"invalid-catalog-hint": "目录必须是有效的数据目录标识符",
+				"invalid-tags": "无效标签: {tags}",
+				"invalid-tags-hint": "标签必须作为字符串数组提供",
+				"missing-required-param": "缺少必需参数: '{param}'",
+				"module-not-ready": "模组尚未就绪",
+				"module-not-ready-hint": "名称生成器仍在初始化中。请稍等片刻，然后重试。"
+			}
+        }
+    }
+}

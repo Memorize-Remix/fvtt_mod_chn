@@ -1,0 +1,55 @@
+{
+  "DUELYSTSPRITES": {
+    "FACTIONS": {
+      "LABEL": "Factions",
+      "LYONAR": "Lyonar Kingdom",
+      "SONGHAI": "Songhai Empire",
+      "VETRUVIAN": "Vetruvian Imperium",
+      "ABYSSIAN": "Abyssian Host",
+      "MAGMAR": "Magmar Aspects",
+      "VANAR": "Vanar Kindred",
+      "UNKNOWN": "Unknown",
+      "NEUTRAL": "Neutral"
+    },
+    "UNITTYPES": {
+      "LABEL": "Type",
+      "MINION": "Minion",
+      "GENERAL": "General",
+      "UNKNOWN": "Unknown"
+    },
+	"CONTEXT": {
+      "ASSIGN": "Assign Duelyst Sprite",
+      "CONFIRM": {
+        "MESSAGE": "Override the following properties on {name}:",
+        "NAME": "Name",
+        "PORTRAIT": "Actor Portrait",
+        "TOKENIMAGE": "Token Image",
+        "ANIMATIONS": "Sprite Animations Settings",
+        "THEATREINSERT": "Theatre Insert Settings"
+      }
+    },
+    "ACTORCREATOR": {
+      "TITLE": "Actor Creator",
+      "DESCRIPTION": "This dialog will allow you to create a preconfigured actor using art assets contained in the Duelyst Sprites module.",
+      "PRESET": {
+        "LABEL": "Preset",
+        "HINT": "Select the character to use to create an actor"
+      },
+      "ACTORTYPE": {
+        "LABEL": "Actor Type"
+      },
+      "ACTORNAME": {
+        "LABEL": "Name"
+      },
+      "HASSPRITEANIMATION": "This preset has a configuration for <a href='https://foundryvtt.com/packages/sprite-animations'>Sprite Animations</a>",
+      "HASTHEATREINSERT": "This preset has an image appropriate for <a href='https://foundryvtt.com/packages/theatre'>Theatre Inserts</a>"
+    },
+    "ERRORS": {
+      "INVALIDPRESET": "Invalid actor preset: {preset}"
+    },
+    "PRESETBROWSER": {
+      "TITLE": "Preset Browser",
+      "DESCRIPTION": "Please select a preset below"
+    }
+  }
+}

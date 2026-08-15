@@ -1,0 +1,22 @@
+{
+  "wgtgm-mini-calendar": {
+    "welcomePageHTML" : "<div> <p><strong>Welcome to Mini Calendar</strong></p> <hr> <p><strong>Be part of the Mini Calendar Community</strong></p> <p>Join us on Discord.</p> <div><button data-wgtngm=\"wgtgm-mini-calendar|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> Join Discord</button></div> <p> <strong>Supporting the development</strong></p> <p>If you want to support the development, consider taking a look at the membership options on Patreon. </p> <div><button data-wgtngm=\"wgtgm-mini-calendar|openWindow|https://patreon.com/wgtngm\"><i class=\"fa-brands fa-patreon\"></i> Become a member</button></div><p>If you prefer, you can support via Ko-fi.</p><div><button data-wgtngm=\"wgtgm-mini-calendar|openWindow|https://ko-fi.com/wgtngm\"><i class=\"fas fa-cup-togo\"></i> Buy a coffee</button></div><p><strong>Documentation</strong></p> <p>Feeling a little lost? Head over to our documentation page for some direction, or jump on Discord and ask a question</a>.</p> <div><button data-wgtngm=\"wgtgm-mini-calendar|openWindow|https://campaigncodex.wgtngm.com/minicalendar\"><i class=\"fas fa-book\"></i> Documentation</button></div></div>",   
+    "WindowName": "Mini Calendar",
+    "settings": {
+      "calSheetDimensions": "Calendar Position",
+      "calSheetDimensionsHint": "Stores the last position and size of the calendar.",
+	  "calHudOpened": "Calendar HUD Open State",
+      "calHudOpenedHint": "Stores if the calendar HUD was open when you last closed Foundry.",
+      "calSheetOpened": "Calendar Open State",
+      "calSheetOpenedHint": "Stores if the calendar was open when you last closed Foundry.",
+      "pauseOnCombat":"Pause time on combat",
+      "pauseOnCombatHint":"Stops the clock during combat.",
+      "resumeAfterCombat":"Resume time after combat",
+      "resumeAfterCombatHint":"Restores the clock after combat has finished.",
+      "fadedUIHint":"Calendar will fade until mouse is hovered over",
+      "fadedUI":"Enable Fade UI",
+      "hideHudonCombat":"Hide HUD on combat",
+      "hideHudonCombatHint":"Hides the HUD during combat and reopens at end."
+    }
+  }
+}

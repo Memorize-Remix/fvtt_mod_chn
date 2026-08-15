@@ -1,0 +1,65 @@
+{
+	"DF-QOL.errorLibWrapperMissing": "'DF Quality of Life' requires the 'libWrapper' module. Please install and activate 'libWrapper'.",
+	"DF_QOL": {
+		"QuickRoll": {
+			"Title": "Enable Roll Table menu option to quick roll",
+			"Hint": "(Requires reload) Adds a menu option to Roll Tables in the Roll Table sidebar to roll on the table without having to open the table window.",
+			"MenuItem": "Quick Roll"
+		},
+		"AutoFocus": {
+			"Title": "Enable Auto-Focusing text field in Entity dialogs",
+			"Hint": "When creating an Entity (Actors, Items, Tables, Scenes, etc.) this will auto-select the Name text box so you don't have to click it. Just open the dialog and start typing!"
+		},
+		"FolderTextColour": {
+			"Name": "Enable Folder Text Colour",
+			"Hint": "Add ability to set a custom text colour for entity folders."
+		},
+		"BetterToggle": {
+			"Name": "Enable Better Scene Control Toggle Highlight",
+			"Hint": "Changes the scene controls so that when the purple toggle buttons are turned on, it is more visible."
+		},
+		"ReloadGame": {
+			"Title": "Reload game?",
+			"Content": "<p style=\"margin:1em 0\">Some changes made will only go into effect on a reload. Would you like to reload now?</p>"
+		},
+		"BetterAttack": {
+			"Name": "Enable Better Default Attack Buttons Highlight",
+			"Hint": "The attack buttons do not show the suggested action very clearly. This adds a Green border for Advantage and Red for Disadvantage depending on which button is highlighted."
+		},
+		"VehicleUnit": {
+			"SettingName": "Enable Unit of weight for Vehicles",
+			"SettingHint": "Enables ability to change the base unit for weight used by vehicles",
+			"ConfigName": "Weight Unit",
+			"ConfigHint": "Unit of measurement to be used for weight calculation.",
+			"Units_LongTon": "Long Ton (2240 lb.)",
+			"Units_ShortTon": "Short Ton (2000 lb.)",
+			"Units_Pounds": "Pounds (1 lb.)",
+			"ConvertTitle": "Convert Cargo Capacity",
+			"ConvertContent": "Would you like to convert the current cargo capacity from '{{OLD}}' to '{{NEW}}'?"
+		},
+		"DayNight": {
+			"ProgressSettingName": "Display Day/Night Transition Progress",
+			"ProgressSettingHint": "When you run the animated Day/Night transition, enabling this will display the progress bar showing the progress from start to finish of the animation.",
+			"DurationSettingName": "Day/Night Transition Duration (Seconds)",
+			"DurationSettingHint": "The duration of time it takes for the Day/Night transition animation to complete. This is in Seconds (1-60 seconds)"
+		},
+		"TemplateTargeting": {
+			"SettingName": "Templates Auto-Target Tokens",
+			"SettingHint": "If enabled, will automatically target tokens that are hit by a Measure Template",
+			"PreviewName": "Preview Template Highlight/Targeting",
+			"PreviewHint": "Show the grid highlight and perform auto-targeting when moving or creating a template.",
+			"ToggleTitle": "Auto-Target Tokens",
+			"Patch5e_Name": "Use D&D 5e Style Templates",
+			"Patch5e_Hint": "Core Foundry requires a grid square's center to be inside a template to be affected. This adjusts templates to follow the D&D5e rules for targeting grid squares where any square TOUCHED by a template is hit (with the exception of circles).",
+			"Patch5e_Circle_Name": "Make Circle Templates Greedy (Requires D&D 5e Style Templates)",
+			"Patch5e_Circle_Hint": "If you want circle templates to not be an exception to the above D&D 5e style rules, enable this and any square touched by a circle will be hit."
+		},
+		"TokenLock": {
+			"Setting.EnableName": "Token Locking: Enable",
+			"Setting.EnableHint": "When enabled, tokens will now have a lock button in the Token HUD for locking a token's position. Acts the same as locking a Tile or Drawing.",
+			"Setting.AllowGMName": "Token Locking: Ignore GM",
+			"Setting.AllowGMHint": "Will allow GM's to move tokens when they are locked. Useful if you only want to stop players from moving the tokens.",
+			"LockTitle": "Toggle Locked State"
+		}
+	}
+}

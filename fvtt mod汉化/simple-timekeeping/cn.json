@@ -1,0 +1,329 @@
+
+    "simple-timekeeping": {
+        "day": "日",
+        "days": "天数",
+        "in-progress": "进行中",
+        "paused": "已暂停",
+        "paused-info": "Simple Timekeeping - 时间推进已暂停，点击恢复。",
+        "unpaused-info": "Simple Timekeeping - 时间推进已恢复，点击暂停。如果游戏暂停或战斗激活，时间仍将暂停。",
+        "calendar-dusk-dawn": "此日历包含黎明和黄昏时间，设置中或基于气候区的任何值将被忽略，将使用日历中的值。",
+        "settings": {
+            "config-menu": {
+                "label": "配置",
+                "name": "配置",
+                "hint": "配置模组设置。"
+            }
+        },
+        "weather": {
+            "clear": "晴朗",
+            "partlyCloudy": "少云",
+            "cloudy": "多云",
+            "overcast": "阴天",
+            "rain": "降雨",
+            "thunderstorm": "雷暴",
+            "drizzle": "毛毛雨",
+            "snow": "降雪",
+            "blizzard": "暴风雪",
+            "hail": "冰雹",
+            "fog": "浓雾",
+            "mist": "薄雾",
+            "windy": "大风",
+            "tornado": "龙卷风",
+            "hurricane": "飓风",
+            "ashfall": "火山灰",
+            "sandstorm": "沙尘暴",
+            "luminousSky": "天光异象",
+            "bloodRain": "血雨",
+            "manaStorm": "魔力风暴",
+            "arcaneFog": "奥术迷雾",
+            "voidstorm": "虚空风暴",
+            "celestialEclipse": "天体蚀变",
+            "meteorShower": "流星雨",
+            "frozenHell": "极寒地狱",
+            "sunshower": "太阳雨",
+            "spectralStorm": "幽魂风暴",
+            "etherealDrizzle": "以太细雨",
+            "wildMagicWinds": "狂野魔法之风"
+        },
+        "moonPhase": {
+            "new": "新月",
+            "waxingCrescent": "娥眉月",
+            "firstQuarter": "上弦月",
+            "waxingGibbous": "盈凸月",
+            "full": "满月",
+            "waningGibbous": "亏凸月",
+            "lastQuarter": "下弦月",
+            "waningCrescent": "残月",
+            "bloodMoon": "血月",
+            "eclipse": "月食",
+            "voidMoon": "虚空之月",
+            "twinMoons": "双月",
+            "manaMoon": "魔力之月",
+            "celestialAlignment": "天体连珠",
+            "shatteredMoon": "破碎之月",
+            "spiritMoon": "灵魂之月"
+        },
+        "configuration": {
+            "title": "配置菜单",
+            "firstTimeTitle": "首次设置",
+            "tabs": {
+                "configuration": "配置",
+                "visibility": "可见性",
+                "aspect": "外观",
+                "badges": "徽章",
+                "time": "时间",
+                "calendar": "日历",
+                "automation": "自动化",
+                "environment": "环境"
+            },
+            "seasons": {
+                "label": "季节颜色"
+            },
+            "macrosFieldset": {
+                "label": "自动化宏",
+                "hint": "在一天中特定时间运行的宏。这些宏将为所有已连接且有权限运行它的用户执行。"
+            },
+            "newDayMacros": {
+                "label": "新日宏"
+            },
+            "dawnMacros": {
+                "label": "黎明宏"
+            },
+            "duskMacros": {
+                "label": "黄昏宏"
+            },
+            "middayMacros": {
+                "label": "正午宏"
+            },
+            "use24HourClock": {
+                "label": "使用24小时制"
+            },
+            "wideLetterSpacing": {
+                "label": "宽字符间距"
+            },
+            "useMonospace": {
+                "label": "使用等宽字体"
+            },
+            "noPills": {
+                "label": "简约样式"
+            },
+            "useFullWidth": {
+                "label": "强制最大宽度"
+            },
+            "hideInCombat": {
+                "label": "战斗中隐藏"
+            },
+            "topOffset": {
+                "label": "顶部边距（像素）"
+            },
+            "hideExpired": {
+                "label": "隐藏过期事件"
+            },
+            "copyButton": {
+                "label": "从当前配置复制（保存并重新打开以格式化）"
+            },
+            "customCalendar": {
+                "label": "自定义日历 JSON",
+                "hint": "自定义日历的 JSON 定义。不提供对自定义日历或如何设置 JSON 文件的支持。你可以在维基上找到一些示例日历。",
+                "error": "自定义日历的 JSON 格式无效，设置已恢复为先前状态。请查看控制台以获取更多详细信息。"
+            },
+            "useCustomMoons": {
+                "label": "自定义月亮"
+            },
+            "customMoons": {
+                "label": "自定义月亮 JSON",
+                "hint": "自定义月亮的 JSON 定义。虽然月亮也可以在日历 JSON 中定义，但这允许你在不更改日历 JSON 的情况下覆盖月亮，例如，当你使用系统或其他模组定义的日历时，你想向其添加月亮。不提供对自定义月亮或如何设置 JSON 文件的支持，请参阅维基以获取示例。",
+                "error": "自定义月亮的 JSON 格式无效，设置已恢复为先前状态。请查看控制台以获取更多详细信息。"
+            },
+            "climateData": {
+                "label": "气候数据",
+                "hint": "天气和温度生成的 JSON 定义。不提供对自定义气候或如何设置 JSON 文件的支持。"
+            },
+            "customBadge": {
+                "label": "自定义徽章"
+            },
+            "calendar": {
+                "label": "日历",
+                "hint": "自定义日历，如自定义日历 JSON 中所定义",
+                "default": "系统默认",
+                "custom": "自定义"
+            },
+            "moonLabel": {
+                "label": "月相标签"
+            },
+            "moonColor": {
+                "label": "月相颜色"
+            },
+            "moonAutomation": {
+                "label": "月相自动化",
+                "hint": "如果月亮在日历中定义，Simple Timekeeping将自动更新月亮徽章以显示当前月相。"
+            },
+            "weatherLabel": {
+                "label": "天气标签"
+            },
+            "weatherOverlay": {
+                "label": "天气动画"
+            },
+            "weatherColor": {
+                "label": "天气颜色"
+            },
+            "showFullDate": {
+                "label": "显示完整日期徽章"
+            },
+            "daysDisplay": {
+                "label": "天数显示",
+                "options": {
+                    "none": "无",
+                    "sinceEpoch": "日历起始天数",
+                    "dayOfYear": "年内天数"
+                }
+            },
+            "dayOffset": {
+                "label": "起始日偏移",
+                "hint": "在“天数显示”中使用“日历起始天数”选项时应用于天数的偏移量"
+            },
+            "dawn": {
+                "label": "黎明",
+                "hint": "一天中的时间百分比，例如，如果是24小时制，0.5将是12:00，0.25将是06:00"
+            },
+            "dusk": {
+                "label": "黄昏",
+                "hint": "一天中的时间百分比，例如，如果是24小时制，0.5将是12:00，0.75将是18:00"
+            },
+            "latitude": {
+                "label": "气候带",
+                "hint": "选择你世界的气候带。如果设置，将用于生成天气、温度和黎明/黄昏时间（忽略其他黎明/黄昏设置）",
+                "options": {
+                    "disabled": "禁用",
+                    "equatorial": "赤道",
+                    "tropical": "热带",
+                    "subtropical": "亚热带",
+                    "hotDesert": "炎热沙漠",
+                    "mediterranean": "地中海",
+                    "temperate": "温带",
+                    "coolTemperate": "冷温带",
+                    "subpolar": "次极地",
+                    "boreal": "北方"
+                }
+            },
+            "genWeather": {
+                "label": "生成天气",
+                "hint": "每天生成新天气。使用气候带确定气候。",
+                "options": {
+                    "no": "否",
+                    "noTemp": "是（无温度）",
+                    "tempC": "是 + 摄氏度",
+                    "tempF": "是 + 华氏度"
+                }
+            },
+            "dayColor": {
+                "label": "白昼色调"
+            },
+            "nightColor": {
+                "label": "夜晚色调"
+            },
+            "hueIntensity": {
+                "label": "场景色调强度",
+                "hint": "当Simple Timekeeping设置黑暗级别时，它还会根据白昼和夜晚颜色对场景应用色调。"
+            },
+            "badgeLabel": {
+                "label": "标签"
+            },
+            "badgeColor": {
+                "label": "颜色"
+            },
+            "secondsPerRound": {
+                "label": "战斗轮对应秒数"
+            },
+            "secondsPerRealSecond": {
+                "label": "现实时间秒对应秒数"
+            },
+            "journalEntryEvents": {
+                "label": "事件日志条目名称"
+            },
+            "clockSeconds": {
+                "label": "更新频率（秒）"
+            },
+            "setDateTime": {
+                "label": "设置当前日期/时间"
+            },
+            "darknessSync": {
+                "label": "同步场景黑暗和天气",
+                "hint": "是否应根据当前时间和天气自动设置场景黑暗和天气。此选项也可以在照明选项卡底部按场景配置。",
+                "options": {
+                    "default": "使用全局默认",
+                    "sync": "同步天气和黑暗",
+                    "noSync": "不同步",
+                    "weatherOnly": "仅同步天气",
+                    "darknessOnly": "仅同步黑暗"
+                }
+            }
+        },
+        "app": {
+            "searchEvents": "搜索事件",
+            "create-event": {
+                "eventTime": {
+                    "label": "事件开始"
+                },
+                "eventEnd": {
+                    "label": "事件结束（可选）"
+                },
+                "duration": {
+                    "label": "事件持续时间（小时）"
+                },
+                "edit": {
+                    "label": "编辑事件日期/时间"
+                },
+                "repeat": {
+                    "label": "重复",
+                    "options": {
+                        "none": "不重复",
+                        "day": "每天",
+                        "week": "每周",
+                        "month": "每月",
+                        "year": "每年"
+                    }
+                }
+            },
+            "controls": {
+                "create-event": {
+                    "tooltip": "创建事件"
+                },
+                "day-back": {
+                    "tooltip": "倒退 1 天（Ctrl 1周，Shift 3天，Alt 2天）"
+                },
+                "hour-back": {
+                    "tooltip": "倒退 1 小时（Ctrl 30分钟，Shift 10分钟，Alt 5分钟）"
+                },
+                "hour-forward": {
+                    "tooltip": "推进 1 小时（Ctrl 30分钟，Shift 10分钟，Alt 5分钟）"
+                },
+                "day-forward": {
+                    "tooltip": "推进 1 天（Ctrl 1周，Shift 3天，Alt 2天）"
+                },
+                "sunrise": {
+                    "tooltip": "日出"
+                },
+                "sunset": {
+                    "tooltip": "日落"
+                },
+                "midday": {
+                    "tooltip": "正午"
+                },
+                "midnight": {
+                    "tooltip": "午夜"
+                },
+                "configure": {
+                    "tooltip": "配置"
+                },
+                "toggle-events": {
+                    "tooltip": "事件"
+                }
+            },
+            "weather": {
+                "generate": "生成"
+            }
+        },
+        "flags": {}
+    }
+}

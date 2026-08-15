@@ -1,0 +1,88 @@
+
+    "world-setting-sync": {
+        "settings": {
+            "masterAgnostic": {
+                "name": "主世界是为未知设置？",
+                "hint": "如果启用，该世界将成为系统未知设置、用户和系统未知模块的主世界。"
+            },
+            "masterSystem": {
+                "name": "主世界是为系统设置？",
+                "hint": "如果启用，该世界将成为系统设置、用户和系统模组的主世界。"
+            },
+            "autoCheckSync": {
+                "name": "自动检查同步",
+                "hint": "如果启用，这个世界将在启动时自动检查未知和系统设置的更改。"
+            },
+            "autoPerformSync": {
+                "name": "自动执行同步",
+                "hint": "如果启用，这个世界将在启动时自动将未知和系统设置保存到文件中。"
+            },
+            "silentUpload": {
+                "name": "静音上传",
+                "hint": "如果启用，在将未知和系统设置保存到文件时，这个世界将不会通知您。"
+            },
+            "settingsSync": {
+                "name": "同步管理",
+                "label": "打开同步管理",
+                "hint": "打开同步管理，保存或加载未知和系统设置。"
+            },
+            "syncModules": {
+                "name": "同步模组",
+                "hint": "如果启用，这个世界将同步激活的模组。"
+            },
+            "syncUsers": {
+                "name": "同步用户",
+                "hint": "如果启用，这个世界将在用户之间进行同步。"
+            },
+            "syncSettings": {
+                "name": "同步设置",
+                "hint": "如果启用，这个世界将同步设置。"
+            },
+            "exclusionList": {
+                "name": "排除列表",
+                "label": "打开排除列表",
+                "hint": "打开排除列表，将模组、用户和设置排除在同步之外。",
+                "title": "排除列表",
+                "info": "该列表将用于将模组、系统和核心设置排除在同步之外。<br>在主世界中，排除项不会保存到同步文件中。<br>在非主世界中，从同步文件加载设置时将忽略排除项。",
+                "core": "核心",
+                "coreSystem": "核心 & 系统",
+                "modules": "模组",
+                "users": "用户"
+            }
+        },
+        "settings-sync": {
+            "title": "同步设置",
+            "activate": "激活",
+            "deactivate": "禁用",
+            "expand": "点击展开",
+            "namespace": "名字域",
+            "setting": "设置",
+            "user": "用户",
+            "change": "变更",
+            "apply": "应用？",
+            "confirm": {
+                "syncAll": "同步全部",
+                "syncAgnostic": "同步未知设置",
+                "syncSystem": "同步系统设置",
+                "syncModules": "同步模组",
+                "syncUsers": "同步用户",
+                "content": "您确定要继续吗？此操作不可逆。"
+            },
+            "tabs": {
+                "modules": "模组",
+                "users": "用户",
+                "settingsAgnostic": "未知设置",
+                "settingsSystem": "系统设置"
+            },
+            "actions": {
+                "syncAll": "同步全部",
+                "syncAgnostic": "同步未知",
+                "syncSystem": "同步系统",
+                "syncModules": "同步模组",
+                "syncUsers": "同步用户",
+                "saveConfigurations": "手动将设置保存到文件"
+            }
+        },
+        "flags": {}
+    }
+}

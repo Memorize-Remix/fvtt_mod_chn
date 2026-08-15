@@ -1,0 +1,70 @@
+
+    "bossbar": {
+        "controls": {
+            "bossUI": {
+                "name": "切换Boss血条",
+                "warn": "未选择 Token。请选择一个或多个 Token 再试一次"
+            }
+        },
+        "settings": {
+            "barStyle": {
+                "classic": "经典",
+                "matchingImages": "匹配图片"
+            },
+            "currentHpPath": {
+                "name": "当前 HP 路径",
+                "hint": "角色当前HP的数据路径"
+            },
+            "maxHpPath": {
+                "name": "最大 HP 路径",
+                "hint": "角色最大HP的数据路径"
+            },
+            "BarStyleConfiguration": {
+                "name": "Boss血条样式",
+                "label": "配置样式"
+            },
+            "resetPosition": {
+                "name": "重置位置",
+                "hint": "将Boss血条的位置重设为默认位置"
+            },
+            "textAlign": {
+                "left": "左",
+                "center": "中",
+                "right": "右"
+            },
+            "woundsSystem": {
+                "name": "伤残系统",
+                "hint": "如果你的系统使用伤残而不是生命值，请启用此选项。"
+            }
+        },
+        "bar-style-configuration": {
+            "add": "添加样式",
+            "title": "Boss血条样式配置",
+            "delete-title": "删除样式",
+            "delete-confirm": "你确定要删除这种样式吗？",
+            "edit": "编辑样式",
+            "background": "背景图片",
+            "foreground": "前景图片",
+            "bar": "血条栏图片",
+            "tempBarColor": "临时生命值颜色",
+            "tempBarAlpha": "临时生命值透明度",
+            "barHeight": "Boss血条高度",
+            "font": "字体类型",
+            "textSize": "字体大小",
+            "textAlign": "文本对齐",
+            "type": "样式类型",
+            "type-hint": "选择样式类型"
+        },
+        "boss-bar-configuration": {
+            "title": "Boss血条配置",
+            "no-actors": "未选择角色或角色未出现在场景中。",
+            "no-scene": "无可用场景。请查看场景并重试",
+            "save-pan": "保存和平移相机",
+            "edit-themes": "关闭和编辑主题",
+            "hideNameHint": "在Boss血条中隐藏角色名称"
+        },
+        "boss-bar": {
+            "title": "Boss血条"
+        }
+    }
+}

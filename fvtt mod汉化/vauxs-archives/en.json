@@ -1,0 +1,48 @@
+{
+  "vauxs-archives": {
+    "title": "Vauxs' Archives",
+    "settings": {
+      "archive": {
+        "title": "Open Chat Archives",
+        "hint": "Opens a separate window to browse, create, or add chat archives.",
+        "button": "Open"
+      },
+	"replaceButtons": {
+		"title": "Replace the Export Chat Log Button",
+		"hint": "Replaces the \"Export Chat Log\" button in chat with \"Open Vauxs Archives\"."
+	},
+	"putButtonInRolls": {
+		"title": "Put the Archive Button in Roll Options",
+		"hint": "Puts the archive button alongside the roll options, giving you access to the archives without expanding the chatlog tab."
+	},
+      "removeButton": {
+        "title": "Remove the Clear Chat Log Button",
+        "hint": "Removes the \"Clear Chat Log\" button in chat."
+      }
+    },
+    "support": "Donate",
+    "noArchive": {
+      "selected": "No Archive Selected",
+      "found": "No Archives Found"
+    },
+    "create": "Create an Archive",
+    "add": "Add an existing Archive",
+    "remove": "Remove selected Archive",
+    "open": "Open Archive",
+    "modal": {
+      "create": {
+        "title": "Create an Archive",
+        "name": "Name",
+        "create": "Create"
+      },
+      "add": {
+        "title": "Add an Archive",
+        "add": "Add"
+      },
+      "remove": {
+        "title": "Remove an Archive",
+        "content": "Are you sure you want to remove the following archive?<p/><i>\"{title}\"</i><p/>This does <b>not</b> remove the file from your system. You can add it back using the \"Add an Archive\" button. To permanently remove it, after removing it here delete the file from your file system."
+      }
+    }
+  }
+}

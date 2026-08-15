@@ -1,0 +1,45 @@
+
+	"DF_ACTIVE_LIGHTS": {
+		"name": "DF Active Lights",
+		"Seconds": "秒",
+		"Config": {
+			"Title": "动态光源配置: ",
+			"OpenButton": "动态光源配置",
+			"AddKey": "添加关键帧",
+			"Bounce": "使动画来回弹跳",
+			"Randomize": "根据当前持续时间随机化偏移量",
+			"Offset": "时间偏移量(毫秒)，用于\"不同步\"相似动画",
+			"Manual": "光源启用时开始动画",
+			"ManualDesc": "允许GM通过切换光源开/关来控制动画的开始/重置。"
+		},
+		"Props": {
+			"Time": "关键帧时间位置(毫秒)",
+			"Enable": "启用属性",
+			"Dim": "昏暗光照半径",
+			"Bright": "明亮光照半径",
+			"Angle": "发射角度",
+			"Rotation": "光源旋转角度",
+			"TintColor": "光源颜色",
+			"TintAlpha": "颜色强度"
+		},
+		"Funcs": {
+			"Linear": "线性",
+			"LinearLoop": "线性循环",
+			"FixedStart": "固定开始",
+			"FixedEnd": "固定结束",
+			"QuadIn": "二次方淡入",
+			"QuadOut": "二次方淡出",
+			"QuadFull": "二次方完整",
+			"QuadLoop": "二次方循环",
+			"EllipseIn": "椭圆淡入",
+			"EllipseOut": "椭圆淡出",
+			"EllipseFull": "椭圆完整",
+			"EllipseLoop": "椭圆循环"
+		},
+		"Warnings": {
+			"KeyFrame_Zero": "不能将关键帧时间设置为零!",
+			"KeyFrame_Exists": "时间{0}秒已有关键帧存在"
+		},
+		"animationToggleTitle": "动态光源动画"
+	}
+}

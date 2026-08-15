@@ -1,0 +1,90 @@
+{
+  "KARMA": {
+    "Karma": "Karma",
+    "AdjustRoll": "Adjusted {oldRoll} to {newRoll}.",
+    "Settings": {
+      "KarmaDialog": {
+        "label": "Open Karma Configuration",
+        "hint": "Configure the configurations for Karma."
+      },
+      "showChatMessageIcon": {
+        "label": "Message Icon",
+        "hint": "Displays the icon on chat messages that got changed by the karma."
+      },
+      "controlsButton": {
+        "label": "Config Button",
+        "hint": "Adds a button on the Controls bar to open the Karma Configuration. You can also open the configuration by setting a keybinding."
+      },
+      "hideModule": {
+        "label": "Hide Module from Players",
+        "hint": "Replaces the module's name in the Module Management menu for non-GMs to \"libDiceStats\"."
+      }
+    },
+    "Form": {
+      "title": "Karma Configuration",
+      "enabled": "Active",
+      "recurring": "Recurring",
+      "UserPicker": {
+        "title": "Who should be affected by karma?"
+      },
+      "Configuration": "Karma Configuration",
+      "AllPlayers": "All Players",
+      "GMS": "Gamemasters",
+      "Dice": "Dice",
+      "AddNewKarma": "Add New Configuration",
+      "NewKarma": "New Karma",
+      "DeleteKarma": "Delete Karma",
+      "Outcome": "Outcome",
+      "least": "at least",
+      "most": "at most",
+
+      "Type": {
+        "label": "Type",
+        "simple": "Simple",
+        "average": "Average",
+        "fudge": "Fudge"
+      },
+      "Faces": {
+        "label": "Dice",
+        "hint": "The number of faces of the die."
+      },
+      "Inequality": {
+        "label": "Comparison",
+        "hint": "Trigger for the karma, based on the given inequality.",
+        "options": {
+          "≤": "less than or equal to",
+          "<": "less than",
+          "≥": "greater than or equal to",
+          ">": "greater than"
+        }
+      },
+      "History": {
+        "label": "History",
+        "hint": {
+          "simple": "If the last {number} rolls are",
+          "average": "If the average of the last {number} rolls is"
+        }
+      },
+      "Threshold": {
+        "label": "Threshold",
+        "hint": "{term} {number}, then"
+      },
+      "Floor": {
+        "label": "Target",
+        "hint": "the next die roll will be {leastMost} {number}."
+      },
+      "Nudge": {
+        "label": "Adjustment",
+        "hint": "the next die roll will be adjusted by {number}."
+      },
+      "Cumulative": {
+        "label": "Cumulative Adjustment",
+        "hint": "Increase the adjusment by {number} on following rolls until the average passes the threshold."
+      },
+      "Recurring": {
+        "label": "Recurring",
+        "hint": "This fudge won't deactivate once it gets triggered."
+      }
+    }
+  }
+}

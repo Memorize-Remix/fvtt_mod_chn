@@ -1,0 +1,65 @@
+{
+  "MULTI_HIT_SPELL_LVL_SCALER": {
+    "ModuleTitle": "Multi-Hit Spell Level Scaler",
+    "Settings": {
+      "Debug": {
+        "Name": "Enable debug logs",
+        "Hint": "Write additional Multi-Hit Spell Level Scaler diagnostics to the browser console."
+      }
+    },
+    "Ui": {
+      "HeaderButton": {
+        "AriaLabel": "Open Multi-Hit settings",
+        "TooltipDisabled": "Multi-Hit disabled",
+        "TooltipValid": "Multi-Hit enabled and ready",
+        "TooltipInvalid": "Multi-Hit enabled, but setup is incomplete"
+      },
+      "SpellConfig": {
+        "Title": "Multi-Hit: {itemName}",
+        "FallbackSpellName": "Spell",
+        "Enable": "Enable Multi-Hit",
+        "HitActivity": "Hit activity",
+        "SelectActivity": "Select an activity",
+        "UnknownActivity": "Unknown activity ({activityId})",
+        "ActivityHintAvailable": "Each hit will reuse this activity.",
+        "ActivityHintMissing": "This spell currently has no usable activities.",
+        "BaseTotalHits": "Base total hits",
+        "HitsPerSlotLevel": "Hits gained per slot level",
+        "DerivedBaseLevel": "The base spell level is derived automatically from spell level {spellLevel}.",
+        "Save": "Save",
+        "Cancel": "Cancel",
+        "Saved": "Multi-Hit settings saved."
+      },
+      "ExtraHitPrompt": {
+        "Title": "Remaining hits: {itemName}",
+        "FallbackSpellName": "Configured spell",
+        "RemainingHits": "Hits remaining: {hitsRemaining} / {totalHits}",
+        "NextHitHint": "Next Hit uses the currently selected target.",
+        "ResolveAllHint": "Resolve All spends 1 hit per selected target, or all remaining hits on the only selected target.",
+        "SelectionHint": "Your selection must never exceed the number of available hits.",
+        "NextHit": "Next Hit",
+        "ResolveAll": "Resolve All",
+        "Cancel": "Cancel"
+      }
+    },
+    "Notifications": {
+      "CastContextCanceled": "Cast context canceled.",
+      "ConfigTargetRange": "Select between 1 and {totalHits} target(s) before casting this configured spell.",
+      "ConfigTooManyTargets": "You selected {selectedCount} target(s), but this cast only provides {totalHits} hit(s). Reduce your selection and try again.",
+      "InitialTargetPrepareFailed": "The initial target could not be prepared for a controlled single-target cast.",
+      "TargetUnresolved": "A selected target could no longer be resolved.",
+      "TargetOffScene": "The selected target is no longer on the active scene.",
+      "NextHitSelectOne": "Select exactly one target before resolving the next hit.",
+      "SingleHitTooManyTargets": "Only one target can be selected when resolving a single hit.",
+      "RemainingHitsSelectAtLeastOne": "Select at least one target before resolving the remaining hits.",
+      "TooManyTargetsForRemainingHits": "You selected {selectedCount} target(s), but only {remaining} hit(s) remain. Reduce your selection and try again.",
+      "MissingContext": "The hit context no longer exists.",
+      "ForbiddenUser": "Only the user who created this cast context can resolve its remaining hits.",
+      "UnsupportedResolutionMode": "Resolution mode \"{mode}\" is not supported here.",
+      "NoHitsRemaining": "No hits remain in this context.",
+      "MissingDocuments": "The spell item or hit activity could not be resolved for this context.",
+      "TemplateActivitiesUnsupported": "Template-based hit activities are not supported in this controlled resolution flow.",
+      "ActivityUseCancelled": "The hit was not resolved because the dnd5e activity did not complete."
+    }
+  }
+}

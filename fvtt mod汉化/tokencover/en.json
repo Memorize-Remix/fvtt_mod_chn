@@ -1,0 +1,262 @@
+{
+    "tokencover.name": "Alt. Token Cover",
+    "tokencover.nameAbbr": "ATC",
+
+    "tokencover.coverbook.create-cover": "Create Cover",
+    "tokencover.coverbook.reset-defaults": "Reset Default Cover",
+    "tokencover.coverbook.edit-cover": "Edit Cover",
+    "tokencover.coverbook.import-cover": "Import Cover",
+    "tokencover.coverbook.import-cover-description": "Replace this cover with the settings stored in a JSON file.",
+    "tokencover.coverbook.export-cover": "Export Cover",
+	"tokencover.coverbook.import-cover-description": "Replace this cover with the settings stored in a JSON file.",
+    "tokencover.coverbook.delete-cover": "Delete Cover",
+    "tokencover.coverbook.are-you-sure": "Are you sure?",
+    "tokencover.coverbook.remove-cover-description": "This will delete the selected cover and cannot be undone.",
+    "tokencover.coverbook.create-defaults-description": "This will overwrite default covers with the original settings.",
+
+    "tokencover.cover-effect.percent-threshold.Name": "Percent threshold",
+    "tokencover.cover-effect.can-overlap.Name": "Can overlap",
+    "tokencover.cover-effect.include-walls.Name": "Walls block",
+    "tokencover.cover-effect.include-tokens.Name": "Tokens block",
+    "tokencover.cover-effect.priority.Name": "Priority",
+    "tokencover.cover-effect.priority.Hint": "Larger priorities are tested first. Set priority to '0' to ignore.",
+    "tokencover.cover-effect.live-tokens-block.Name": "Live tokens block",
+    "tokencover.cover-effect.dead-tokens-block.Name": "Dead tokens block",
+    "tokencover.cover-effect.dead-tokens-block.Hint": "See module settings to configure the attribute to use for determining token HP.",
+    "tokencover.cover-effect.prone-tokens-block.Name": "Prone tokens block",
+    "tokencover.cover-effect.prone-tokens-block.Hint": "If enabled, a prone token grants cover (based on their height as multiplied by the prone multiplier). If neither dead nor live tokens grant cover, this does nothing. See module settings for the prone multiplier.",
+	"tokencover.cover-effect.linked-status.Name": "Linked Status",
+    "tokencover.cover-effect.linked-status.Hint": "When the selected status in the token HUD is chosen, this cover effect will be used instead.",
+
+    "tokencover.settings.never": "Never",
+    "tokencover.settings.combat": "During Combat",
+    "tokencover.settings.combatant": "For Current Combatant Only",
+    "tokencover.settings.always": "Always",
+    "tokencover.settings.attack": "During Attack",
+
+    "tokencover.settings.cover-workflow-confirm-user": "Ask User",
+    "tokencover.settings.cover-workflow-confirm-user-cancel": "Ask User (cancel only)",
+    "tokencover.settings.cover-workflow-confirm-gm": "Ask GM",
+    "tokencover.settings.cover-workflow-confirm-automatic": "Automatically apply",
+
+    "tokencover.settings.use-cover-types.Name": "Display Cover Icons",
+    "tokencover.settings.use-cover-types.Hint": "When enabled, icons representing cover types will be displayed locally (per user) on tokens to indicate if they have cover from controlled tokens. If multiple tokens selected, cover will be the minimum from the group. This cover display does not account for some system-specific features that might ignore cover (such as ignoring cover for only certain attack types).",
+
+    "tokencover.settings.cover-types-targeting.Name": "Apply Cover Icons Only When Targeting",
+    "tokencover.settings.cover-types-targeting.Hint": "If enabled, cover icons will be displayed only for targeted tokens. Otherwise, cover icons will be displayed for all non-controlled tokens. Only applicable when 'Display Cover Types' is enabled.",
+
+    "tokencover.settings.use-cover-effects.Name": "Apply Cover Effects",
+    "tokencover.settings.use-cover-effects.Hint": "Apply cover effects (active effects or system equivalent) to tokens locally. For dnd5e, the confirm cover settings below may later modify the effects actually applied during an attack.",
+
+    "tokencover.settings.cover-effects-targeting.Name": "Cover Effects Only When Targeting",
+    "tokencover.settings.cover-effects-targeting.Hint": "If enabled, cover effects will be applied only to targeted tokens. Otherwise, cover types will be applied to all non-controlled tokens. Only applicable when 'Apply Cover Effects' is enabled.",
+
+    "tokencover.settings.display-cover-book.Name": "Display Cover Book",
+    "tokencover.settings.display-cover-book.Hint": "If enabled, adds a book icon to the GM's token controls that allows the GM to customize cover types and cover effects. GM can also drag cover effects to a token to override automatic cover.",
+
+    "tokencover.settings.display-secret-cover.Name": "Display Cover on Secret Tokens",
+    "tokencover.settings.display-secret-cover.Hint": "Toggle whether cover icons should be displayed on tokens with secret disposition.",
+
+    "tokencover.settings.templates-use-cover.Name": "Display Cover for Templates",
+    "tokencover.settings.templates-use-cover.Hint": "Toggle whether to apply cover from templates.",
+
+    "tokencover.settings.only-cover-icons.Name": "Only Use Cover Icons",
+    "tokencover.settings.only-cover-icons.Hint": "When enabled, only cover icons will be displayed; no cover effects will be used. If you system is unsupported, try enabling this.",
+
+    "tokencover.settings.cover-chat-message.Name": "Display Cover in Chat",
+    "tokencover.settings.cover-chat-message.Hint": "When rolling an attack, display cover types for targets in the chat.",
+
+    "tokencover.settings.cover-workflow-confirm.Name": "Confirm Cover?",
+    "tokencover.settings.cover-workflow-confirm.Hint": "When an attack is made, should a dialog be presented to allow the user to confirm the cover calculation? This affects the underlying cover calculation. It also will affect Cover Types or Cover Effects, if these settings are enabled.",
+
+    "tokencover.settings.cover-workflow-confirm-change-only.Name": "Only Confirm on Change",
+    "tokencover.settings.cover-workflow-confirm-change-only.Hint": "The confirmation dialog, if enabled, will only be presented if the cover type or effect(s) differ on the token than what has been calculated.",
+
+    "tokencover.settings.cover-workflow-confirm-no-cover.Name": "Confirm No Cover",
+    "tokencover.settings.cover-workflow-confirm-no-cover.Hint": "When enabled, the confirmation will be presented when the cover calculation estimates the token has no cover.",
+
+    "tokencover.settings.points-center": "Token center only (1 point) ⚀",
+    "tokencover.settings.points-two": "Token front-facing corners (2 points)",
+    "tokencover.settings.points-three": "Token front-facing and center (3 points)",
+    "tokencover.settings.points-four": "Token corners (4 points) ⚃",
+    "tokencover.settings.points-five": "Token corners and center (5 points) ⚄",
+    "tokencover.settings.points-eight": "Token midpoints and corners (8 points)",
+    "tokencover.settings.points-nine": "Token midpoints, corners, center (9 points)",
+
+    "tokencover.settings.los-algorithm.Name": "Algorithm",
+    "tokencover.settings.los-algorithm.Hint": "How to test whether a target token has cover with respect to a viewing token.",
+
+    "tokencover.settings.los-large-target.Name": "Large Token Subtargeting",
+    "tokencover.settings.los-large-target.Hint": "If the target token is larger than the grid square, test each grid square under the token separately for cover. Least cover wins. Useful for large targets that should not have cover if the viewer has line-of-sight to a substantial portion of the target. When using the points algorithm, this generally follows the dnd5e DMG cover rule for grid squares.",
+
+    "tokencover.settings.los-algorithm-points": "Points",
+    "tokencover.settings.los-algorithm-geometric": "Geometric",
+    "tokencover.settings.los-algorithm-webgl2": "WebGL2",
+    "tokencover.settings.los-algorithm-webgpu": "WebGPU",
+    "tokencover.settings.los-algorithm-per-pixel": "Face Points Lattice",
+    "tokencover.settings.los-algorithm-sample-pixel": "Sample Pixel",
+
+    "tokencover.settings.los-points-options-viewer.Name": "Viewpoint Arrangement",
+    "tokencover.settings.los-points-options-viewer.Hint": "Points on the viewer to test for the viewer's line-of-sight. Each represents an 'eye' of the viewer.",
+
+    "tokencover.settings.los-inset-viewer.Name": " Inset",
+    "tokencover.settings.los-inset-viewer.Hint": "For viewer points other than the center, what percentage to inset the point from the token border towards the token center.",
+
+    "tokencover.settings.los-points-options-target.Name": "Points",
+    "tokencover.settings.los-points-target.Hint": "How many points on the target to test for cover from the viewer's line-of-sight.",
+
+    "tokencover.settings.los-inset-target.Name": "Inset",
+    "tokencover.settings.los-inset-target.Hint": "For target points other than the center, what percentage to inset the point from the token border towards the token center.",
+
+    "tokencover.settings.debug-cover.Name": "Debug Cover",
+    "tokencover.settings.debug-cover.Hint": "If enabled, will draw representation on the canvas of the cover between viewer and target(s). If Area3d is enabled, you must target a single token to make the debug window appear.",
+
+    "tokencover.settings.button-foundry-default.Name": "Change settings to",
+    "tokencover.settings.button-foundry-default.Label": "Reset to Foundry Defaults",
+    "tokencover.settings.button-foundry-default.Notification": "Settings changed to Foundry defaults",
+
+    "tokencover.settings.button-dnd5e-dmg.Name": "",
+    "tokencover.settings.button-dnd5e-dmg.Label": "Reset to DND5e DMG",
+    "tokencover.settings.button-dnd5e-dmg.Notification": "Settings changed to D&D 5e",
+
+    "tokencover.settings.prone-status-id.Name": "'Prone' Status Id",
+    "tokencover.settings.prone-status-id.Hint": "String indicating the id for the token 'prone' status. If set, prone tokens will be considered half-height for all vision and cover calculations.",
+
+    "tokencover.settings.token-hp-attribute.Name": "Token HP Attribute",
+    "tokencover.settings.token-hp-attribute.Hint": "String indicating where the hit points for a `token.actor` can be found. Required to use dead tokens for cover.",
+
+    "tokencover.settings.prone-multiplier.Name": "Prone Multiplier",
+    "tokencover.settings.prone-multiplier.Hint": "What percentage of token height should be used for prone tokens. For example, if a token is 5 feet high, and the multiplier is set to 0.6, prone tokens would be considered 3 feet high. This affects the vision point for prone tokens as well as the shape used if prone tokens block vision.",
+
+    "tokencover.settings.vision-height-multiplier.Name": "Vision Height Multiplier",
+    "tokencover.settings.vision-height-multiplier.Hint": "What percentage of token height is its vision located? 0% means the very bottom; 100% (1) means very top.",
+
+    "tokencover.settings.atv-settings-message.Name": "Prone / HP configuration",
+    "tokencover.settings.atv-settings-message.Hint": "When Alternative Token Visibility is active, the prone multiplier, vision height multiplier, prone status id, and token HP id use ATV's settings.",
+
+    "tokencover.settings.button-pf2e.Label": "Reset to PF2e",
+    "tokencover.settings.button-pf2e.Notification": "Alt. Cover settings changed to PF2e defaults",
+
+    "tokencover.settings.button-dnd5e.Label": "Reset to DND5e DMG",
+    "tokencover.settings.button-dnd5e.Notification": "Alt. Cover settings changed to D&D 5e DMG defaults",
+
+    "tokencover.settings.button-threeD.Label": "Reset to 3-D",
+    "tokencover.settings.button-threeD.Notification": "Alt. Cover settings changed to 3D defaults",
+
+    "tokencover.settings.button-documentation.Label": "Open Documentation",
+    "tokencover.settings.button-issue.Label": "Report Issue",
+
+    "tokencover.template.settings-config.tabs.los_viewer": "Viewer",
+    "tokencover.template.settings-config.tabs.los_target": "Target",
+    "tokencover.template.settings-config.tabs.workflow": "Cover Workflow",
+    "tokencover.template.settings-config.tabs.other": "Cover Options",
+
+    "tokencover.settings.submenu.Name": "",
+    "tokencover.settings.submenu.Label": "GM Cover Settings",
+    "tokencover.settings.submenu.title": "Alternative Token Cover Settings",
+
+    "tokencover.settings-submenu.tabs.losTarget": "Target LOS",
+    "tokencover.settings-submenu.tabs.losViewer": "Viewer LOS",
+    "tokencover.settings-submenu.tabs.other": "Other",
+    "tokencover.settings-submenu.tabs.workflow": "Workflow",
+
+    "tokencover.settings.exportButton.Name": "",
+    "tokencover.settings.exportButton.Label": "Export Settings",
+
+    "tokencover.settings.importButton.Name": "",
+    "tokencover.settings.importButton.Label": "Import Settings",
+
+    "tokencover.DrawingConfiguration.LegendTitle": "Alternative Token Visibility",
+    "tokencover.DrawingConfiguration.isHole.Name": "Drawing is Hole",
+    "tokencover.DrawingConfiguration.isHole.Hint": "For area algorithms, treat the space indicated by the drawing (including elevation) as a hole for tiles. Only applicable when Levels is active.",
+
+    "tokencover.dnd5e.spell-configuration.useCover.Name": "Use Cover",
+    "tokencover.dnd5e.spell-configuration.useCover.no": "No",
+    "tokencover.dnd5e.spell-configuration.useCover.caster": "From Caster",
+    "tokencover.dnd5e.spell-configuration.useCover.template": "From Template",
+
+    "tokencover.dnd5e.feats.cover.Name": "Ignore certain levels of cover",
+    "tokencover.dnd5e.feats.cover.Hint": "Provided by feats and magic items.",
+    "tokencover.dnd5e.feats.cover.OptionNone": "Don't ignore any cover.",
+    "tokencover.dnd5e.feats.cover.OptionHalf": "Ignore half cover.",
+    "tokencover.dnd5e.feats.cover.OptionThreeQuarters": "Ignore half and three-quarters cover.",
+    "tokencover.dnd5e.feats.cover.OptionFull": "Ignore all cover.",
+
+    "tokencover.template.settings-config.viewer": "Viewing Token",
+    "tokencover.template.settings-config.viewerDescription": "Settings relevant to the token viewing/targeting another token that may have cover",
+
+    "tokencover.template.settings-config.target": "Target Token",
+    "tokencover.template.settings-config.targetDescription": "Settings relevant to the targeted token (the one for which cover would be applied).",
+
+    "tokencover.template.settings-config.workflow": "Cover Workflow",
+    "tokencover.template.settings-config.workflowDescription": "Settings to adjust how cover is determined during token movement and combat.",
+
+    "tokencover.template.settings-config.other": "Cover Options",
+    "tokencover.template.settings-config.otherDescription": "Settings to adjust other cover rules and to set system-specific cover properties.",
+
+    "tokencover.tokenconfig.maximum-cover.name": "Maximum Cover",
+    "tokencover.tokenconfig.maximum-cover.hint": "Maximum cover provided by this token. Example: A swarm of bees might only provide half cover. A ghost may provide no cover. Does nothing if tokens do not grant cover (see module settings).",
+
+    "tokencover.cover-rules-config.title": "Alt. Token Cover: Cover Rules",
+
+    "tokencover.cover-effects-menu.listCoverTypes": "List Cover Types (Advanced Edit)",
+
+    "tokencover.active-effect-config.coverType.name": "Cover Types",
+    "tokencover.active-effect-config.coverType.hint": "Associate this active effect with one or more specific cover types. Depending on module settings, this may cause the active effect to be automatically assigned to a token locally for a given user.",
+
+    "tokencover.controls.cover-effects-control.name": "Alt. Token Cover",
+
+    "tokencover.cover-types-list-config.title": "Cover Types",
+    "tokencover.cover-types-list-config.description": "A cover type defines specific properties used to control when cover applies.",
+
+    "tokencover.cover-types-list-config.add": "Add Cover Type",
+    "tokencover.cover-types-list-config.import": "Import Cover Types",
+    "tokencover.cover-types-list-config.export": "Export Cover Types",
+    "tokencover.cover-types-list-config.reset": "Reset to Defaults",
+
+    "TYPES.RegionBehavior.tokencover.setCover": "Set Minimum Cover",
+
+    "tokencover.behavior.types.set-cover.fields.cover.name": "Minimum Cover",
+    "tokencover.behavior.types.set-cover.fields.cover.hint": "Select a cover that will automatically apply to defending tokens within this region (unless a higher-priority cover applies).",
+
+    "tokencover.behavior.types.set-cover.fields.distance.name": "Min Distance",
+    "tokencover.behavior.types.set-cover.fields.distance.hint": "This cover is automatically applied only when a defender is more than this distance from the nearest attacker.",
+
+    "tokencover.behavior.types.set-cover.fields.exclusive.name": "Disable Cover",
+    "tokencover.behavior.types.set-cover.fields.exclusive.hint": "Disables all other cover within this region.",
+
+    "tokencover.behavior.types.set-cover.fields.appliesToAttackers.name": "Applies to Attackers",
+    "tokencover.behavior.types.set-cover.fields.appliesToAttackers.hint": "If enabled, defending tokens outside the region will gain cover from attacking tokens within the region. If not enabled, only defending tokens inside the region are affected.",
+
+    "tokencover.cover-dialog.yes": "Apply Cover",
+    "tokencover.cover-dialog.no": "Ignore All Cover",
+
+    "tokencover.phrases.coverRules": "Cover Rules",
+    "tokencover.phrases.coverEffects": "Cover Effects",
+
+    "tokencover.phrases.xCoverEffect": "{cover} Cover Effect",
+    "tokencover.phrases.xCoverType": "{cover} Cover Type",
+    "tokencover.phrases.xCover": "{cover} Cover",
+
+    "tokencover.cover.HalfToken": "Half (Token Only)",
+
+    "tokencover.cover.None": "No Cover",
+    "tokencover.cover.Low": "Low Cover",
+    "tokencover.cover.Medium": "Medium Cover",
+    "tokencover.cover.High": "High Cover",
+    "tokencover.cover.Total": "Total Cover",
+
+    "tokencover.cover.NONE": "No Cover",
+    "tokencover.cover.LOW": "Low Cover",
+    "tokencover.cover.MEDIUM": "Medium Cover",
+    "tokencover.cover.HIGH": "High Cover",
+    "tokencover.cover.TOTAL": "Total Cover",
+
+    "tokencover.phrases.Total": "Total",
+    "tokencover.phrases.CoverByTarget": "Cover by Target",
+    "tokencover.phrases.Done": "Done",
+    "tokencover.phrases.ConfirmCover": "Confirm Cover",
+    "tokencover.phrases.AllAttacks": "All Attacks",
+    "tokencover.phrases.newEffect": "New Cover Effect",
+    "tokencover.phrases.takeCover": "Take Cover"
+}

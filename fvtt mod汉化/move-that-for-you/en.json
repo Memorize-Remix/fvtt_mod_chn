@@ -1,0 +1,58 @@
+{
+  "move-that-for-you": {
+    "scene": {
+      "move": "Move That For You: Scene Toggle [Move]",
+      "rotate": "Move That For You: Scene Toggle [Rotate]"
+    },
+    "control-title": "Allow players to move this tile",
+    "config": {
+      "move": {
+        "label": "Move",
+        "note": "Allow players to move this placeable",
+        "spawnNote": "Allow players to move spawned tiles/tokens."
+      },
+      "rotate": {
+        "label": "Rotate",
+        "note": "Allow players to rotate this placeable",
+        "spawnNote": "Allow players to rotate spawned tiles/tokens."
+      }
+    },
+    "app": {
+      "pick-bounds": "Select Boundary",
+      "clear-bounds": "Clear Boundaries"
+    },
+    "errors": {
+      "no-scene": "An active scene required."
+    },
+    "info": {
+      "cleared-bounds": "Cleared boundaries for scene {id}",
+      "new-bounds": "New boundary defined for scene {id} : {bounds}"
+    },
+    "settings": {
+      "configure-bounds": {
+        "name": "Boundary Configuration",
+        "hint": "Define movement restricting boundaries for the current scene."
+      },
+      "fit-in-bounds": {
+        "name": "Fit within boundary",
+        "hint": "Only updates that fit the whole placeable within boundaries will be permitted."
+      },
+      "configure-bounds-key": {
+        "name": "Boundary Configuration",
+        "hint": "Opens boundary configuration for the current scene."
+      },
+      "enable-tile-controls": {
+        "name": "Tile Controls",
+        "hint": "Activates the module for tiles. (GAME RELOAD REQUIRED)"
+      },
+      "enable-token-controls": {
+        "name": "Token Controls",
+        "hint": "Activates the module for tokens. (GAME RELOAD REQUIRED)"
+      },
+      "enable-hud-buttons": {
+        "name": "Insert Permission Button to HUD",
+        "hint": "When enabled a new button will be added to Tile/Token HUDs to control module permissions."
+      }
+    }
+  }
+}

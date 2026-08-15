@@ -1,0 +1,257 @@
+{
+    "arms-reach.noCharacterSelected": "No character is selected to interact with a door.",
+    "arms-reach.noCharacterSelectedToCenterCamera": "No character is selected to center camera on.",
+    "arms-reach.noCharacterSelectedForStairway": "No character is selected to interact with a stairway.",
+
+    "arms-reach.doorIsInReachButIsLockedFor": "Door is in reach but is locked for ${tokenName}",
+    "arms-reach.doorIsInReachButIsLocked": "Door is in reach but is locked.",
+    "arms-reach.doorNotFoundInReach": "No door was found within reach or is locked.",
+    "arms-reach.doorNotFoundInReachFor": "No door was found within {tokenName}'s reach or is locked",
+    "arms-reach.doorNotInReach": "Door not in reach",
+    "arms-reach.doorNotInReachFor": "Door not within {tokenName}'s reach or is locked",
+
+    "arms-reach.stairwaysNotFoundInReach": "No stairway was found within reach or is locked.",
+    "arms-reach.stairwaysNotFoundInReachFor": "No stairway was found within {tokenName}'s reach or is locked",
+    "arms-reach.stairwaysNotInReach": "Stairway not in reach or is locked",
+    "arms-reach.stairwaysNotInReachFor": "Stairway not within {tokenName}'s reach or is locked",
+
+    "arms-reach.notesNotFoundInReach": "No note was found within reach or is locked.",
+    "arms-reach.notesNotFoundInReachFor": "No note was found within {tokenName}'s reach or is locked",
+    "arms-reach.notesNotInReach": "Note not in reach or is locked",
+    "arms-reach.notesNotInReachFor": "Note not within {tokenName}'s reach or is locked",
+
+    "arms-reach.tokensNotFoundInReach": "No token was found within reach or is locked.",
+    "arms-reach.tokensNotFoundInReachFor": "No token was found within {tokenName}'s reach or is locked",
+    "arms-reach.tokensNotInReach": "Token not in reach or is locked",
+    "arms-reach.tokensNotInReachFor": "Token not within {tokenName}'s reach or is locked",
+
+    "arms-reach.lightsNotFoundInReach": "No light was found within reach or is locked.",
+    "arms-reach.lightsNotFoundInReachFor": "No light was found within {tokenName}'s reach or is locked",
+    "arms-reach.lightsNotInReach": "Light not in reach or is locked",
+    "arms-reach.lightsNotInReachFor": "Light not within {tokenName}'s reach or is locked",
+
+    "arms-reach.soundsNotFoundInReach": "No sound was found within reach or is locked.",
+    "arms-reach.soundsNotFoundInReachFor": "No sound was found within {tokenName}'s reach or is locked",
+    "arms-reach.soundsNotInReach": "Sound not in reach or is locked",
+    "arms-reach.soundsNotInReachFor": "Sound not within {tokenName}'s reach or is locked",
+
+    "arms-reach.drawingsNotFoundInReach": "No drawing was found within reach or is locked.",
+    "arms-reach.drawingsNotFoundInReachFor": "No drawing was found within {tokenName}'s reach or is locked",
+    "arms-reach.drawingsNotInReach": "Drawing not in reach or is locked",
+    "arms-reach.drawingsNotInReachFor": "Drawing not within {tokenName}'s reach or is locked",
+
+    "arms-reach.tilesNotFoundInReach": "No tile was found within reach or is locked.",
+    "arms-reach.tilesNotFoundInReachFor": "No tile was found within {tokenName}'s reach or is locked",
+    "arms-reach.tilesNotInReach": "Tile not in reach or is locked",
+    "arms-reach.tilesNotInReachFor": "Tile not within {tokenName}'s reach or is locked",
+
+    "arms-reach.wallsNotFoundInReach": "No wall was found within reach or is locked.",
+    "arms-reach.wallsNotFoundInReachFor": "No wall was found within {tokenName}'s reach or is locked",
+    "arms-reach.wallsNotInReach": "Wall not in reach or is locked",
+    "arms-reach.wallsNotInReachFor": "Wall not within {tokenName}'s reach or is locked",
+
+    "arms-reach.templatesNotFoundInReach": "No template was found within reach or is locked.",
+    "arms-reach.templatesNotFoundInReachFor": "No template was found within {tokenName}'s reach or is locked",
+    "arms-reach.templatesNotInReach": "Template not in reach or is locked",
+    "arms-reach.templatesNotInReachFor": "Template not within {tokenName}'s reach or is locked",
+
+    "arms-reach.warningNoSelectMoreThanOneToken": "Please selected a single token",
+
+    "arms-reach.errorNoDsProperty": "No 'ds' property found for value '${wallDataDs}' for id : '${wallDDataId}'",
+    "arms-reach.errorNoWallFoundForId": "No wall found for id : '${wallDDataId}'",
+
+    "arms-reach.settingNameEnableArmsReachFeature": "Enable/Disable arms reach feature",
+    "arms-reach.settingHintEnableArmsReachFeature": "Enable the GM to select the maximum distance that players can interact with a door",
+
+    "arms-reach.settingNameNotificationsFailedInteraction": "Notifications failed interactions",
+    "arms-reach.settingHintNotificationsFailedInteraction": "Emit notifications for when a player fails to interact with a door. Good for debugging.",
+
+    "arms-reach.settingNameGlobalMaximumInteractionDistance": "[Not Recommended] Global maximum interaction distance in grids",
+    "arms-reach.settingHintGlobalMaximumInteractionDistance": "[I do not recommend this feature use instead 'Global maximum interaction distance measurement' more 'Drag Ruler' perspective], 0 will disable this setting limit (needs app reload), if a value > 0 is used it will ignore the value of the setting 'Global maximum interaction distance measurement'. Max distance (in tiles) that a token can interact with a (door, journal, ...). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalMaximumInteractionMeasurement": "Global maximum interaction distance measurement (ft, mt, ...), support Hex Grid,Gridless and Difficult Terrain Ruler",
+    "arms-reach.settingHintGlobalMaximumInteractionMeasurement": "Max distance (in feet, meter, or the default system unit grid you are using) that a token can interact with a placeable object (door, journal, ...), 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameHotKeyForInteraction": "[Not Recommended] Interaction door with the hotkey 'e'",
+    "arms-reach.settingHintHotKeyForInteraction": "[I do not recommend this feature because of some incompatibility with other movement verification modules, but otherwise it works] Pressing 'e' will open or close nearest door. Holding 'e' will center camera on current token.",
+
+    "arms-reach.settingNameDoubleTapInteraction": "[Not Recommended] Interaction door with double tap delay in seconds",
+    "arms-reach.settingHintDoubleTapInteraction": "[I do not recommend this feature because of some incompatibility with other movement verification modules, but otherwise it works] Double tapping a move key on the direction of a door will interact with it. This option sets the delay between required key presses (the lower the faster you need to tap). Setting this option to zero will disable interaction with double tap.",
+
+    "arms-reach.settingNameHotKeyToCenterCamera": "[Not Recommended] Hotkey 'e' to center camera",
+    "arms-reach.settingHintHotKeyToCenterCamera": "[I do not recommend this feature because of some incompatibility with other movement verification modules, but otherwise it works] Holding 'e' will center the camera on current selected token.",
+
+    "arms-reach.settingNameDisableDoorSound": "Disable sound of the door if is not reachable",
+    "arms-reach.settingHintDisableDoorSound": "This feature is only for door, if enabled this setting will disable the door sound interaction if is not in reach",
+
+    "arms-reach.settingNameNotificationsFailedInteractionEvenForGM": "Notifications failed interactions even for GM",
+    "arms-reach.settingHintNotificationsFailedInteractionEvenForGM": "Emit notifications for fails the distance interaction even for GM. Good for debugging. If no token is selected and you are a GM this feature is not activated",
+
+    "arms-reach.settingNameAvoidSelectsTheControlledToken": "Avoid deselects the controlled token when open/close the door",
+    "arms-reach.settingHintAvoidSelectsTheControlledToken": "Avoid deselects the controlled token if opening the door with a mouse click and 'Left-Click to Release Objects' is checked in the Core",
+
+    "arms-reach.settingNameUseOwnedTokenIfNoTokenIsSelected": "Use the owned tokens if no tokens is selected",
+    "arms-reach.settingHintUseOwnedTokenIfNoTokenIsSelected": "Use the owned tokens if no tokens is selected, make sense for player when usually there is only owned token",
+
+    "arms-reach.settingNameAutoCheckElevationByDefault": "[Experimental] Auto check elevation by default",
+    "arms-reach.settingHintAutoCheckElevationByDefault": "By default a check on the elevation between placeable objects is been done, can be useful with module like 'levels'",
+
+    "arms-reach.settingNameSetDistanceModeForDoorInteraction": "Set Distance Mode",
+    "arms-reach.settingHintSetDistanceModeForDoorInteraction": "Set Distance Mode for Door distance interaction",
+
+    "arms-reach.settingNameShowDoorIconsFeature": "Force Door Icon Visibility?",
+    "arms-reach.settingHintShowDoorIconsFeature": "Default behavior hides Door Icons on the Walls layer. This makes them stay visible.",
+
+    "arms-reach.settingNameStairwaysIntegrationFeature": "Enable/Disable Stairways integration",
+    "arms-reach.settingHintStairwaysIntegrationFeature": "Max distance that a token can interact with a stairway... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalInteractionDistanceForGMOnStairways": "Enable the check distance on Stairways even for GM",
+    "arms-reach.settingHintGlobalInteractionDistanceForGMOnStairways": "If enabled it will apply the check of the distance on Stairways even for GM, useful if the GM want to play as a player.",
+
+    "arms-reach.settingNameGridlessSupportFeature": "[Experimental] Enable/Disable Gridless support feature",
+    "arms-reach.settingHintGridlessSupportFeature": "Instead of calculate the distance by square grid unit, the calculation is based on the unit meele reach of the token 'ft' or 'mt'",
+
+    "arms-reach.settingNameTaggerIntegrationFeature": "Enable/Disable Tagger Module integration",
+    "arms-reach.settingHintTaggerIntegrationFeature": "All the distance calculation are limited now to placeable object with the 'armsreach' tag on it. Remember you need to activate the tagger module for this",
+
+    "arms-reach.settingNameTaggerStairwayIntegrationFeature": "Enable/Disable Tagger Stairway Module integration",
+    "arms-reach.settingHintTaggerStairwayIntegrationFeature": "All the distance calculation are limited now to placeable object with the 'armsreach' tag on it. Remember you need to activate the tagger module for this",
+
+    "arms-reach.settingNameTaggerTokenIntegrationFeature": "Enable/Disable Tagger Token Module integration",
+    "arms-reach.settingHintTaggerTokenIntegrationFeature": "All the distance calculation are limited now to placeable object with the 'armsreach' tag on it. Remember you need to activate the tagger module for this",
+
+    "arms-reach.settingNameTaggerNoteIntegrationFeature": "Enable/Disable Tagger Note Module integration",
+    "arms-reach.settingHintTaggerNoteIntegrationFeature": "All the distance calculation are limited now to placeable object with the 'armsreach' tag on it. Remember you need to activate the tagger module for this",
+
+    "arms-reach.settingNameTaggerLightIntegrationFeature": "Enable/Disable Tagger Light Module integration",
+    "arms-reach.settingHintTaggerLightIntegrationFeature": "All the distance calculation are limited now to placeable object with the 'armsreach' tag on it. Remember you need to activate the tagger module for this",
+
+    "arms-reach.settingNameTaggerSoundIntegrationFeature": "Enable/Disable Tagger Sound Module integration",
+    "arms-reach.settingHintTaggerSoundIntegrationFeature": "All the distance calculation are limited now to placeable object with the 'armsreach' tag on it. Remember you need to activate the tagger module for this",
+
+    "arms-reach.settingNameTaggerDrawingIntegrationFeature": "Enable/Disable Tagger Drawing Module integration",
+    "arms-reach.settingHintTaggerDrawingIntegrationFeature": "All the distance calculation are limited now to placeable object with the 'armsreach' tag on it. Remember you need to activate the tagger module for this",
+
+    "arms-reach.settingNameTaggerTileIntegrationFeature": "Enable/Disable Tagger Tile Module integration",
+    "arms-reach.settingHintTaggerTileIntegrationFeature": "All the distance calculation are limited now to placeable object with the 'armsreach' tag on it. Remember you need to activate the tagger module for this",
+
+    "arms-reach.settingNameTaggerWallIntegrationFeature": "Enable/Disable Tagger Wall Module integration",
+    "arms-reach.settingHintTaggerWallIntegrationFeature": "All the distance calculation are limited now to placeable object with the 'armsreach' tag on it. Remember you need to activate the tagger module for this",
+
+    "arms-reach.settingNameResetDoorsAndFogFeature": "Reset Doors And Fog Feature",
+    "arms-reach.settingHintResetDoorsAndFogFeature": "Add a voice on context menu for close all the doors and reset the fog on a scene",
+
+    "arms-reach.settingNameDoorsIntegrationFeature": "Enable/Disable Doors integration",
+    "arms-reach.settingHintDoorsIntegrationFeature": "Max distance that a token can interact with a door... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalInteractionDistanceForGMOnDoors": "Enable the check distance on Doors even for GM",
+    "arms-reach.settingHintGlobalInteractionDistanceForGMOnDoors": "If enabled it will apply the check of the distance on Doors even for GM, useful if the GM want to play as a player.",
+
+    "arms-reach.settingNameJournalsIntegrationFeature": "Enable/Disable Journals integration",
+    "arms-reach.settingHintJournalsIntegrationFeature": "Max distance that a token can interact with a journal... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalInteractionDistanceForGMOnNotes": "Enable the check distance on Notes even for GM",
+    "arms-reach.settingHintGlobalInteractionDistanceForGMOnNotes": "If enabled it will apply the check of the distance on Notes even for GM, useful if the GM want to play as a player.",
+
+    "arms-reach.settingNameNotesIntegrationFeature": "Enable/Disable Notes integration",
+    "arms-reach.settingHintNotesIntegrationFeature": "Max distance that a token can interact with a note... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameTokensIntegrationFeature": "Enable/Disable Tokens integration",
+    "arms-reach.settingHintTokensIntegrationFeature": "Max distance that a token can interact with a other token... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalInteractionDistanceForGMOnTokens": "Enable the check distance on Tokens even for GM",
+    "arms-reach.settingHintGlobalInteractionDistanceForGMOnTokens": "If enabled it will apply the check of the distance on Tokens even for GM, useful if the GM want to play as a player.",
+
+    "arms-reach.settingNameTokensIntegrationWithLootSheet": "Enable the distance interaction for 'Loot Sheet NPC 5E'",
+    "arms-reach.settingHintTokensIntegrationWithLootSheet": "If true by default enable the distance integration for all the token with the 'LootSheet' sheet active (https://foundryvtt.com/packages/lootsheetnpc5e)",
+
+    "arms-reach.settingNameTokensIntegrationByPrefix": "Enable the distance interaction on target token with a specific name prefix",
+    "arms-reach.settingHintTokensIntegrationByPrefix": "If true by default enable the distance integration for all the target token with the prefix setted on the name of the token (not the character name)",
+
+    "arms-reach.settingNameTokensIntegrationExplicitName": "Set the name of the source token you want to use for the iteraction",
+    "arms-reach.settingHintTokensIntegrationExplicitName": "The name of the source token setted here is the one used for the distance interaction with the target token (not the character name). By default is the character name linked to the user",
+
+    "arms-reach.settingNameLightsIntegrationFeature": "Enable/Disable Lights integration",
+    "arms-reach.settingHintLightsIntegrationFeature": "Max distance that a Light can interact with a other token... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalInteractionDistanceForGMOnLights": "Enable the check distance on Lights even for GM",
+    "arms-reach.settingHintGlobalInteractionDistanceForGMOnLights": "If enabled it will apply the check of the distance on Lights even for GM, useful if the GM want to play as a player.",
+
+    "arms-reach.settingNameSoundsIntegrationFeature": "Enable/Disable Sounds integration",
+    "arms-reach.settingHintSoundsIntegrationFeature": "Max distance that a Sound can interact with a other token... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalInteractionDistanceForGMOnSounds": "Enable the check distance on Sounds even for GM",
+    "arms-reach.settingHintGlobalInteractionDistanceForGMOnSounds": "If enabled it will apply the check of the distance on Sounds even for GM, useful if the GM want to play as a player.",
+
+    "arms-reach.settingNameDrawingsIntegrationFeature": "Enable/Disable Drawings integration",
+    "arms-reach.settingHintDrawingsIntegrationFeature": "Max distance that a Drawing can interact with a other token... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalInteractionDistanceForGMOnDrawings": "Enable the check distance on Drawings even for GM",
+    "arms-reach.settingHintGlobalInteractionDistanceForGMOnDrawings": "If enabled it will apply the check of the distance on Drawings even for GM, useful if the GM want to play as a player.",
+
+    "arms-reach.settingNameTilesIntegrationFeature": "Enable/Disable Tiles integration",
+    "arms-reach.settingHintTilesIntegrationFeature": "Max distance that a Tile can interact with a other token... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalInteractionDistanceForGMOnTiles": "Enable the check distance on Tiles even for GM",
+    "arms-reach.settingHintGlobalInteractionDistanceForGMOnTiles": "If enabled it will apply the check of the distance on Tiles even for GM, useful if the GM want to play as a player.",
+
+    "arms-reach.settingNameWallsIntegrationFeature": "Enable/Disable Walls integration",
+    "arms-reach.settingHintWallsIntegrationFeature": "Max distance that a Wall can interact with a other token... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalInteractionDistanceForGMOnWalls": "Enable the check distance on Walls even for GM",
+    "arms-reach.settingHintGlobalInteractionDistanceForGMOnWalls": "If enabled it will apply the check of the distance on Walls even for GM, useful if the GM want to play as a player.",
+
+    "arms-reach.settingNameTemplatesIntegrationFeature": "Enable/Disable Templates integration",
+    "arms-reach.settingHintTemplatesIntegrationFeature": "Max distance that a Template can interact with a other token... 0 will disable the limit (needs app reload). GM's ignore this distance limitation.",
+
+    "arms-reach.settingNameGlobalInteractionDistanceForGMOnTemplates": "Enable the check distance on Templates even for GM",
+    "arms-reach.settingHintGlobalInteractionDistanceForGMOnTemplates": "If enabled it will apply the check of the distance on Templates even for GM, useful if the GM want to play as a player.",
+
+    "arms-reach.settingNameEnableInteractionForTokenOwnedByUser": "Enable interaction for user owner rather than token owner",
+    "arms-reach.settingHintEnableInteractionForTokenOwnedByUser": "An option to check if the currently selected token is owned by said User rather than a specific token? This way you can log the players in as user and whichever owned token is selected will be able to walk up to a door and hit \"e\" or double tap the arrow to get the door to open.",
+
+    "arms-reach.settingNameMaximumDoorMeasurementInteraction": "Maximum door interaction distance measurement (ft, mt, ...)",
+    "arms-reach.settingHintMaximumDoorMeasurementInteraction": "Is the distance calculation used only for the door interaction",
+
+    "arms-reach.settingNameMaximumStairwayMeasurementInteraction": "Maximum stairway interaction distance measurement (ft, mt, ...),",
+    "arms-reach.settingHintMaximumStairwayMeasurementInteraction": "Is the distance calculation used only for the stairway",
+
+    "arms-reach.settingNameMaximumNoteMeasurementInteraction": "Maximum note interaction distance measurement (ft, mt, ...),",
+    "arms-reach.settingHintMaximumNoteMeasurementInteraction": "Is the distance calculation used only for the note",
+
+    "arms-reach.settingNameMaximumTokenMeasurementInteraction": "Maximum token interaction distance measurement (ft, mt, ...),",
+    "arms-reach.settingHintMaximumTokenMeasurementInteraction": "Is the distance calculation used only for the token",
+
+    "arms-reach.settingNameMaximumLightMeasurementInteraction": "Maximum light interaction distance measurement (ft, mt, ...),",
+    "arms-reach.settingHintMaximumLightMeasurementInteraction": "Is the distance calculation used only for the light",
+
+    "arms-reach.settingNameMaximumSoundMeasurementInteraction": "Maximum sound interaction distance measurement (ft, mt, ...),",
+    "arms-reach.settingHintMaximumSoundMeasurementInteraction": "Is the distance calculation used only for the sound",
+
+    "arms-reach.settingNameMaximumDrawingMeasurementInteraction": "Maximum drawing interaction distance measurement (ft, mt, ...),",
+    "arms-reach.settingHintMaximumDrawingMeasurementInteraction": "Is the distance calculation used only for the drawing",
+
+    "arms-reach.settingNameMaximumTileMeasurementInteraction": "Maximum tile interaction distance measurement (ft, mt, ...),",
+    "arms-reach.settingHintMaximumTileMeasurementInteraction": "Is the distance calculation used only for the tile",
+
+    "arms-reach.settingNameMaximumWallMeasurementInteraction": "Maximum wall interaction distance measurement (ft, mt, ...),",
+    "arms-reach.settingHintMaximumWallMeasurementInteraction": "Is the distance calculation used only for the wall",
+
+    "arms-reach.settingNameMaximumTemplateMeasurementInteraction": "Maximum template interaction distance measurement (ft, mt, ...),",
+    "arms-reach.settingHintMaximumTemplateMeasurementInteraction": "Is the distance calculation used only for the template",
+
+    "arms-reach.settingNameEnableAdditionalReachSettingOnPlaceableConfigSheet": "Enable additional reach setting on placeable config sheet",
+    "arms-reach.settingHintEnableAdditionalReachSettingOnPlaceableConfigSheet": "If enable it will let you set a specific value for the specific placeable object",
+
+    "arms-reach.setting.reset.name": "Reset settings to default",
+    "arms-reach.setting.reset.label": "Reset Settings To Default",
+    "arms-reach.setting.reset.hint": "This will reset all of the settings of back to the active game system's default.",
+    "arms-reach.dialogs.resetsettings.title": "Reset Module Settings",
+    "arms-reach.dialogs.resetsettings.content": "Are you sure you want to reset all of the module settings to the current system's defaults? <strong>THIS CANNOT BE UNDONE!</strong>",
+    "arms-reach.dialogs.resetsettings.confirm": "Reset Module Settings",
+    "arms-reach.dialogs.resetsettings.cancel": "Cancel",
+
+    "arms-reach.setting.debug.name": "Enable debugging",
+    "arms-reach.setting.debug.label": "Prints debug messages to the console",
+    "arms-reach.setting.debug.hint": " "
+}

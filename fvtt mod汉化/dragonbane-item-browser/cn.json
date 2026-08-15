@@ -1,0 +1,100 @@
+
+  "TYPES": {
+    "Actor": {
+      "dragonbane-item-browser.merchant": "商人"
+    }
+  },
+  "DB-IB": {
+    "Any": "任意",
+    "addItem": "<strong>{actor}</strong> 将 <strong>{type}</strong> <strong>{item}</strong> 添加到角色卡中",
+    "rollForPrice": "投掷 {formula} 以确定 {item} 的价格（货币：{currency}）",
+    "notEnoughMoney": "<strong>{actor}</strong> 没有足够的金币购买 <strong>{item}</strong>",
+    "spendMoney": "<strong>{actor}</strong> 花费 <strong>{itemPrice}</strong> 购买了 <strong>{item}</strong>",
+    "gainMoney": "<strong>{actor}</strong> 通过出售 <strong>{item}</strong> 获得了 <strong>{itemPrice}</strong>",
+    "manualMonyRemoval": "与GM商定 <strong>{item}</strong> 的价格。设定为 <strong>{itemPrice}</strong> 并手动扣除金额。",
+    "settings": {
+      "rollForBarter": "购买或出售物品时进行议价掷骰",
+      "hintRollForBarter": "当从物品浏览器对话框购买或出售物品时，将弹出一个窗口询问玩家是否要进行议价掷骰（BARTER），根据规则书中定义的规则调整价格。",
+      "nonCoreSkill": "输入议价BARTER的非核心技能名称",
+      "hintSkillBarter": "此处输入的技能名称将在角色卡中搜索用于议价掷骰。",
+      "selling": "为有价格的物品添加存钱罐图标允许出售",
+      "hintSelling": "默认允许以50%的价格出售物品。如果开启议价选项，也允许通过掷骰出售。",
+      "stash": "添加复选框用于存放物品",
+      "hintStash": "存放的物品不会计入负重限制，但仍会在物品栏中显示。",
+      "hintSkippedFoldersForBrowser": "定义不在物品浏览器中显示的物品文件夹",
+      "skippedFoldersForBrowser": "定义要跳过的文件夹"
+    },
+    "Chat": {
+      "buyItem": "购买物品",
+      "reducePrice": "你将 {item} 的价格降低了20%！",
+      "cannotBuy": "你激怒了对方，导致无法购买 {item}",
+      "cannotSell": "你激怒了对方，导致无法出售 {item}",
+      "reducePriceDragon": "你将 {item} 的价格降低了50%！",
+      "nochangeInPrice": "你可以以正常价格购买 {item}。",
+      "sellItem": "<b>{actor}</b> 以 <b>{cost} {currency}</b> 的价格出售了 <b>{item}</b>。",
+      "increasPrice": "你以高于20%的价格出售了 {item}。",
+      "increasePriceDragon": "你以高于50%的价格出售了 {item}！",
+      "nochangeInPriceSell": "你可以以正常价格出售 {item}。",
+      "sellItemButton": "出售物品",
+      "actorSells": "{actor} 出售物品 {items} 获得",
+      "and": "和"
+    },
+    "itemName": "物品名称",
+    "wannaBarter": "你想要议价吗？",
+    "pickIfYouWantToRollForBartering": "选择是否要进行议价掷骰。",
+    "rollForBarter": "进行议价掷骰",
+    "BuyWithoutRoll": "直接购买（不议价）",
+    "openItemBrowser": "打开物品浏览器",
+    "sellItem": "出售物品",
+    "addItemToCharacter": "将物品添加到角色而不花费金币。",
+    "buyItem": "购买物品。这将把物品添加到角色并花费金币。",
+    "stashItem": "将物品保留在角色卡中，但重量不计入负重限制。",
+    "stash": "存放",
+    "SellWithoutBarter": "直接出售（不议价）",
+    "merchant": {
+      "setting": "设置",
+      "selling": "出售物品",
+      "buing": "商人收购物品",
+      "setSellingRate": "设置商人出售价格为原价的百分比",
+      "setBuingRate": "设置商人收购价格为原价的百分比",
+      "allowedSupply": "商人接受的物品供应类型上限",
+      "sells": "正在出售",
+      "notAcceptSuply": "此商人不接受此类供应。",
+      "nonGMaddItemsToSell": "你不是GM，不能添加商人出售的物品。",
+      "youCannotSellTheSameItemTwice": "你不能多次出售同一件物品！"
+    },
+    "warrning": {
+      "incoretInput": "请输入数字或带%符号的数字",
+      "youAreNotOwnerOfDeletedItem": "你试图删除不属于你的待售物品！",
+      "merchantDoNotHaveMoreItem": "商人没有更多的 {itemName}",
+      "youDoNotSellAnything": "你的角色没有出售任何物品！"
+    },
+    "itemPrice": "物品价格",
+    "dialog": {
+      "denfieQuantity": "定义出售数量。",
+      "selectSellingQuantity": "选择你想出售的 {item} 数量",
+      "selectActor": "选择购买的参与者",
+      "buy": "为选定的参与者购买",
+      "sell": "将物品交给商人",
+      "openMerchantSheet": "打开商人角色卡",
+      "youAttempToOpenMerchantSheet": "你想要打开商人角色卡吗？",
+      "selectSkill": "选择用于交易的技能",
+	  "useSelectedSkill": "使用所选技能"
+    },
+    "title": "物品浏览器",
+    "Sort": "排序方式：",
+	"SortByName": "按物品名称",
+	"SortByType": "按物品类型", 
+	"SortByCost": "按物品价格",
+    "increaseQuantity": "增加物品数量",
+    "decreseQuantity": "减少物品数量",
+    "buy": "购买",
+    "onlyGMCanMove": "只有GM可以移动此商人。"
+  },
+  "DB_IB": {
+    "selectQuantity": "选择数量",
+	"ChangeQuantity": "更改数量",
+	"InfinityQuantity": "无限数量",
+	"DoNotAddToBuyer": "不添加到购买者"
+  }
+}

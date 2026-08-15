@@ -1,0 +1,118 @@
+{
+  "wgtgm-mini-player": {
+    "welcomePageHTML" : "<div> <p><strong>Welcome to Mini Player</strong></p> <hr> <p><strong>Be part of the Mini Player Community</strong></p> <p>Join us on Discord.</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> Join Discord</button></div> <strong>Supporting the development</strong></p> <p>If you want to support the development, consider taking a look at the membership options on Patreon</a>.</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://patreon.com/wgtngm\"><i class=\"fas fa-star\"></i> Become a member</button></div><p><strong>Documentation</strong></p> <p>Feeling a little lost? Head over to our documentation page for some direction, or jump on Discord and ask a question</a>.</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://campaigncodex.wgtngm.com/miniplayer\"><i class=\"fas fa-book\"></i> Documentation</button></div></div>",   
+    "button":{
+        "title":"Create new {type}",
+        "droptoscene" : "Drop  {type} to current scene",
+        "tagmode": "Tag Mode"
+    },
+    "ui": {
+      "resultsLabel": "Results:",
+      "playlistLabel": "Playlist:",
+      "trackLabel": "Track:",
+      "noMatchesText": "-- No Matches --",
+      "selectTrackText": "--Select a Track--",
+      "tagHint": "Left-click include, right-click exclude.",
+      "tagToggleTitle": "Left-click include, right-click exclude",
+      "ttrpgSourceToggleTitle": "Toggle TTRPG source tracks",
+      "favoriteTitle": "Favorite",
+      "crossfadeOn": "Crossfade on",
+      "crossfadeOff": "Crossfade off",
+      "loopTitle": "Loop",
+      "previousTrackTitle": "Previous Track",
+      "playPauseTitle": "Play/Pause",
+      "stopTitle": "Stop",
+      "nextTrackTitle": "Next Track",
+      "muteTitle": "Mute",
+      "nextLabel": "Next:",
+      "none": "None",
+      "windowTitle": "Mini Player",
+      "endOfPlaylist": "End of Playlist",
+      "createTagPlaylist": "Create Tag Playlist",
+      "editTags": "Edit Tags",
+      "rescanLibrary": "Rescan Music Library",
+      "openSoundboard": "Open Soundboard",
+      "toggleTagMode": "Toggle Tag Mode",
+      "toggleDock": "Toggle dock",
+      "rescanComplete": "Mini Player: Music library rescan complete.",
+      "noTrackSelectedToFavorite": "No track selected to favorite.",
+      "favoritesCreated": "Created favorites playlist.",
+      "favoritesCreateFailed": "Failed to create favorites playlist.",
+      "favoritesUpdateFailed": "Failed to update favorites playlist.",
+      "favoriteRemoved": "Removed \"{name}\" from favorites.",
+      "favoriteAdded": "Added \"{name}\" to favorites."
+    },
+    "settings": {
+      "runonlyonce": {
+        "name": "Welcome message disabled",
+        "hint": "Disable to see the Welcome Message"
+      },
+      "rememberOpenState": {
+        "name": "Remember the player and soundboard state.",
+        "hint": "Opens the Player and Soundboard on load if they were open when Foundry was closed."
+      },
+      "enableCrossfade": {
+        "name": "Enable crossfade",
+        "hint": "If enabled crossfade will be applied to music playlists"
+      },
+      "enableSoundboardCrossfade": {
+        "name": "Enable crossfade on Soundboard",
+        "hint": "If enabled crossfade will be applied to soundboard playlists"
+      },
+      "crossfadeDuration": {
+        "name": "Crossfade duration (seconds)",
+        "hint": "Set the length of crossfade between tracks in seconds"
+      },
+      "maxTrackCount": {
+        "name": "Maximum number of tracks in a Tag Playlist",
+        "hint": "Limits the number of tracks in the tag playlist created dynamically in the Mini Player"
+      },
+      "musicFolder": {
+        "name": "Base music folder",
+        "hint": "Folder where playlists are created from, folders with [sfx] will be added as Soundboard Only"
+      },
+      "includePlaylistSoundsInTagScan": {
+        "name": "Include non-Mini Player playlists in tag scans",
+        "hint": "Also scan sounds from playlists that were not created by Mini Player. Duplicate tracks are ignored using each sound path."
+      },
+      "setToLoop": {
+        "name": "Set Soundboard Playlist tracks to loop",
+        "hint": "Imported tracks in Soundboard Only playlists will be set to loop"
+      },
+      "setToEnvironment": {
+        "name": "Set Soundboard Playlist channel to Environment",
+        "hint": "Imported Soundboard Only playlists will be set to the Environment channel"
+      },
+      "setMusicToLoop": {
+        "name": "Set Music Playlist tracks to loop",
+        "hint": "Imported tracks in Music playlists will be set to loop"
+      },
+      "playOnSelect": {
+        "name": "Play on Track Select",
+        "hint": "Automatically play a track when it is selected from the dropdown list."
+      },
+      "stopOnNewSoundboard": {
+        "name": "Stop on new Sound",
+        "hint": "Stop playback of the soundboard track when a new Soundboard sound is played."
+      },
+      "stopOnNewPlaylist": {
+        "name": "Stop on New Playlist",
+        "hint": "Stop playback of the current track when a track from a new playlist is selected."
+      },
+      "linkTTRPG": {
+        "name": "Link with TTRPG Music (Patreon)",
+        "hint": "Enable integration with the Tabletop RPG Music module. Requires the module to be installed and active."
+      },
+      "dockSidebar": {
+        "name": "Dock to Playlists",
+        "hint": "If enabled, the player will be docked to the playlist panel."
+      },
+      "keybindMiniPlayer": {
+        "name": "Open the Mini Music Player"
+      },
+      "keybindMiniBoard": {
+        "name": "Open the Mini Soundboard"
+      }
+    }
+  }
+}

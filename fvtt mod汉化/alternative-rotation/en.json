@@ -1,0 +1,36 @@
+{
+  "alternative-rotation": {
+    "settings": {
+      "altSnapByDefault": {
+        "name": "Snap to grid directions by default",
+        "hint": "If true, rotation will snap to 45°/60° by default unless you hold the 'Alternative Rotation (snap)' key modifier, inverting its behavior."
+      },
+      "smoothRotation": {
+        "name": "Smooth rotation",
+        "hint": "If true, will reduce soft snapping from 5-degree increments to 0.1 degree increments."
+      },
+      "fastPreview": {
+        "name": "Fast preview",
+        "hint": "If true, there will be no lag when rotating, but other players won't see the change until you let go."
+      },
+      "rotationUpdateFrequency": {
+        "name": "Rotation update frequency",
+        "hint": "Only applies if Fast Preview is disabled. Default 60 (times per second). Increase this for smoother yet possibly laggier rotation."
+      },
+      "disableSingleArrowVfx": {
+        "name": "Disable visual effect (hide the orange arrow)",
+        "hint": "When rotating a single thing, this setting will make it so that no arrow is shown.  This is useful if e.g. your tokens emit light in a cone, or have very obvious facing."
+      }
+    },
+    "keybindings": {
+      "alternativeRotation": {
+        "name": "Alternative Rotation",
+        "hint": "Hold this key while having token(s) selected to make the token(s) turn towards the cursor. Hold Shift to snap to grid directions (45°/60°)."
+      },
+      "alternativeRotationSnap": {
+        "name": "Alternative Rotation (snap)",
+        "hint": "Hold this modifier key while using Alternative Rotation to snap to grid directions (45°/60°)."
+      }
+    }
+  }
+}

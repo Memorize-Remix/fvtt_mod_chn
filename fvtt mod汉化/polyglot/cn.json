@@ -1,0 +1,227 @@
+
+	"POLYGLOT": {
+		"GameMasterHasAssignedCharacter": "你是一名{GM}且已分配了角色。因此Polyglot可能会出现异常行为。请考虑从你的用户中取消分配该角色。",
+		"DefaultAlphabet": "默认字母表",
+		"FontSettings": "字体设置",
+		"GeneralSettings": "通用设置",
+		"LanguageSettings": "语言设置",
+		"ChatSettings": "聊天设置",
+		"General": "通用",
+		"Languages.title": "语言",
+		"Languages.hint": "更改语言使用的字母表。",
+		"Font": "字体",
+		"Fonts": "字体",
+		"FontSize": "字体大小 (%)",
+		"KnownLanguages": "已知",
+		"UnknownLanguages": "未知",
+		"RightClickToEnable": "右键单击启用",
+		"AlphabeticOnly": "仅字母",
+		"Logographical": "表意文字",
+		"AllowOOC": {
+			"title": "混淆角色外(OOC)聊天消息",
+			"hint": "选择哪些用户的角色外(OOC)消息应被混淆。"
+		},
+		"AllowOOCOptions": {
+			"a": "全部",
+			"b": "仅GM",
+			"c": "仅玩家",
+			"d": "无"
+		},
+		"Omniglot": {
+			"title": "全知语言",
+			"hint": "设置一种语言，其使用者能理解并说所有其他语言。角色将能够阅读和书写所有其他语言，无论是在聊天中还是在日志中。"
+		},
+		"ComprehendLanguages.hint": "设置一种语言，其使用者能理解所有其他语言，但不能说或写。角色将能够阅读所有聊天消息和日志文本。",
+		"ComprehendLanguages.title": "全知语言（仅理解）",
+		"CustomLanguages.hint": "定义要添加到系统的自定义语言列表。必须用逗号或分号分隔。",
+		"CustomLanguages.title": "自定义语言",
+		"DefaultLanguage.hint": "要选择的默认语言的名称。留空以使用系统默认。",
+		"DefaultLanguage.title": "默认语言",
+		"EnableChatFeatures": {
+			"hint": "启用所有聊天功能，例如聊天中的语言选择和消息混淆。",
+			"title": "启用聊天功能"
+		},
+		"DisplayTranslated.hint": "对于在聊天窗口中翻译的语言，显示原始文本和下方的翻译。",
+		"DisplayTranslated.title": "显示翻译",
+		"enableAllFonts": {
+			"hint": "将FVTT的字体（包括附加字体）添加到Polyglot中。",
+			"title": "将FVTT的字体添加到Polyglot"
+		},
+		"ExportFonts.hint": "将Polyglot的字体添加到FVTT的功能中，例如绘图。",
+		"ExportFonts.title": "将Polyglot的字体添加到FVTT",
+		"HideTranslation.hint": "向玩家隐藏聊天消息中的地球图标和“翻译自”文本。适用于不想向玩家显示你正在使用的语言的情况。",
+		"HideTranslation.title": "向玩家隐藏指示器",
+		"IgnoreJournalFontSize": {
+			"hint": "忽略日志上Polyglot字体的大小，使其与正常文本的大小相同。适用于日志格式很重要的情况。",
+			"title": "使用正常字体大小"
+		},
+		"JournalHighlight": {
+			"hint": "定义日志上字体高亮的透明度。",
+			"title": "高亮透明度 (%)"
+		},
+		"JournalHighlightColor": {
+			"hint": "定义日志上字体高亮的颜色。",
+			"title": "高亮颜色"
+		},
+		"LanguageProvider": {
+			"choices": {
+				"module": "[模组] {name}",
+				"native": "通用",
+				"system": "[系统] {name}"
+			},
+			"hint": "选择谁为字母表和语言提供语言信息。更多语言提供者可通过游戏系统和已安装模组获得。下面的选项取决于此处选择的语言提供者。⚠️ 如果你更改提供者，必须保存并重新打开这些设置。",
+			"name": "语言设置提供者"
+		},
+		"languageDataPath": {
+			"title": "语言数据路径",
+			"hint": "如果你的系统在角色数据中设置了语言但未正确加载，则可能使用了其他数据路径。输入正确属性的数据路径（例如actor.system.languages或actor.system.speak）。此设置优先于{setting}设置。"
+		},
+		"literacyDataPath": {
+			"title": "识字数据路径",
+			"hint": "与{setting}设置相同，但用于阅读日志。此设置需要{setting}设置。"
+		},
+		"LanguageRegex": {
+			"hint": "你可以使用此选项将项目中搜索的术语从“Language”更改为其他内容，例如“Tongue”。此设置对非英语使用者更有用。",
+			"title": "语言正则表达式"
+		},
+		"useLiteracy": {
+			"hint": "设置只有当角色懂得阅读某种语言时才能阅读日志",
+			"title": "启用识字"
+		},
+		"LiteracyRegex": {
+			"hint": "与语言正则表达式相同，但用于书面语言。",
+			"title": "识字正则表达式"
+		},
+		"logographicalFontToggle.hint": "将使用表意文字字体（例如日语、汉字）的短语大小减半。",
+			"logographicalFontToggle.title": "表意文字字体",
+		"RandomizeRunes.hint": "这决定了用于生成短语的RNG类型。⚠️ “无”选项仅支持字母数字字符（无重音符号）。",
+		"RandomizeRunes.title": "随机化符文",
+		"RandomizeRunesOptions": {
+			"a": "默认",
+			"b": "唯一短语",
+			"c": "无"
+		},
+		"ReplaceLanguages.hint": "移除系统的默认语言。自定义语言列表中的第一种语言成为新的默认语言。",
+		"ReplaceLanguages.title": "移除系统语言",
+		"RuneRegex": {
+			"hint": "使随机化忽略非字母数字字符（例如!,.;:?#$\"'）。这可能会在某些字体上将这些字符显示为方框（□）而产生不良效果。",
+			"title": "仅随机化字母数字"
+		},
+		"ScrambleGM.hint": "不为GM翻译文本（参考地球图标颜色了解Token的理解情况）。",
+		"ScrambleGM.title": "为GM混淆消息",
+		"SpeakingIn": "正在使用{language}说话",
+		"Truespeech.hint": "设置一种语言，其使用者能理解所有口语（无法阅读日志）并被所有生物理解。角色将能够阅读所有聊天消息，并书写所有生物都能理解的语言消息。",
+		"Truespeech.title": "全知语音语言",
+		"Translation": "翻译",
+		"TranslatedFrom": "翻译自 ",
+		"LanguageLabel": "语言",
+		"AlphabetLabel": "字母表",
+		"LatinAlphabet": "拉丁字母表",
+		"ToggleRunes": "切换符文",
+		"Runes": "符文",
+		"TOURS": {
+			"Main": {
+				"title": "Polyglot入门指南",
+				"desc": "了解Polyglot与FVTT UI的交互。",
+				"Canvas": {
+					"Title": "欢迎使用Polyglot",
+					"Content": "本导览将引导你了解Polyglot添加到UI的功能及其与FVTT的交互，并为新手提供有关角色选择的指导。"
+				},
+				"LanguageSelector": {
+					"Title": "语言选择",
+					"Content": "<span class='reference'>语言选择</span>是你可以选择要使用的语言的地方，激活时会混淆发送的消息。"
+				},
+				"LanguageSelectorSelect": {
+					"Title": "语言选择的下拉菜单",
+					"Content": "<span class='reference'>下拉菜单</span>包含你世界中的所有语言。<br>根据你的游戏系统，语言可能已经设置好，而在其他游戏系统中，你可能需要在<span class='reference'>游戏设置</span>中配置它们。<br>它将显示玩家角色已知和未知的语言。"
+				},
+				"LanguageSelectorSelect2": {
+					"Title": "语言选择的下拉菜单",
+					"Content": "右键单击<span class='reference'>下拉菜单</span>可切换混淆功能，允许用户像模组禁用时一样说话。"
+				},
+				"LanguageSelectorPips": {
+					"Title": "语言选择的点标",
+					"Content": "每个已知语言旁边会显示一个<span class='reference'>点标</span>，类似于玩家列表中显示的点标，用于每个至少有一个角色理解该语言的玩家。将鼠标悬停在点标上会显示用户名和提供语言访问权限的角色列表。"
+				},
+				"ChatMessage": {
+					"Title": "聊天消息",
+					"Content": "这是使用Polyglot的消息外观。"
+				},
+				"ChatMessageScrambled": {
+					"Title": "混淆文本",
+					"Content": "这是不理解消息语言的玩家所看到的内容。"
+				},
+				"ChatMessageTranslation": {
+					"Title": "翻译文本",
+					"Content": "这是理解消息语言的玩家所看到的内容。<br>有一个设置可以禁用向理解语言的玩家显示混淆文本。将鼠标悬停在其上会显示语言名称。"
+				},
+				"ChatMessageGlobe": {
+					"Title": "地球图标",
+					"Content": "这个地球图标可以有3种颜色：<ul><li><span style=\"color: green\">绿色</span>表示已知语言。将鼠标悬停在其上会显示语言名称。</li><li><span style=\"color: blue\">蓝色</span>表示可以阅读但玩家不知道是哪种语言的语言。</li><li><span style=\"color: red\">红色</span>表示未知语言。</li></ul>"
+				},
+				"ChatMessageEnding": {
+					"Title": "聊天消息设置",
+					"Content": "请务必查看模组设置，你可以在其中更改聊天消息的显示方式。<br>有一个关于FVTT和聊天消息的特殊事项与<span class='reference'>用户配置</span>相关。"
+				},
+				"PlayersList": {
+					"Title": "玩家列表",
+					"Content": "虽然Polyglot本身不改变任何相关内容，但你应该了解核心FVTT行为与<span class='reference'>用户配置</span>相关。你可以通过右键单击此列表中的用户名自行打开它。"
+				},
+				"UserConfig": {
+					"Title": "用户配置",
+					"Content": "非GM用户在没有<span class='reference'>选择角色</span>的情况下加载到世界时，此配置会打开。"
+				},
+				"UserConfigSelectCharacter": {
+					"Title": "选择角色",
+					"Content": "作为GM，你不应选择角色，因为这会使你的消息在该角色出现在场景中时以该角色发送。<br>对于玩家，请确保他们选择主要角色；否则，他们的消息将始终以玩家身份发送，而不是以角色身份发送，并且除非其Token在画布上，否则他们将无法阅读其角色理解的语言消息。<br>你可以通过玩家列表中的名称后是否跟有角色名称来判断玩家是否选择了角色。<br>这是核心FVTT行为，Polyglot仅遵循它。"
+				},
+				"ActorOwnership": {
+					"Title": "角色拥有权",
+					"Content": "关于角色拥有权，如果你给予玩家对某个角色的“拥有”或“查看”权限，则该玩家将能够以该角色阅读和书写消息（如果其Token在画布上）。如果有多个Token，选择画布上的Token将更改玩家的角色。<br>这也是核心FVTT行为，Polyglot仅遵循它。"
+				},
+				"End": {
+					"Title": "结束",
+					"Content": "本导览到此结束。希望这消除了关于Polyglot与核心FVTT行为交互的一些疑问。<br>如果你想更深入地了解该模组，请查看<span class='reference'>游戏设置</span>中的设置。<br>如果这仍然不够，请尝试查看<a class=\"hyperlink\" href=\"https://github.com/mclemente/fvtt-module-polyglot/wiki\" target=\"_blank\" rel=\"nofollow noopener\">模组的wiki</a>以获取更多信息。"
+				}
+			}
+		},
+		"UESRPG.Language": "语言",
+		"Generic": {
+			"Language": "语言",
+			"Literacy": "识字",
+			"Read": "阅读"
+		},
+		"COC7": {
+			"LanguageOwn": "语言",
+			"LanguageAny": "语言",
+			"LanguageOther": "语言",
+			"LanguageSpec": "语言"
+		},
+		"DND5E": {
+			"SpecialLanguages.title": "替换特殊语言",
+			"SpecialLanguages.hint": "将替换“语言”（例如“它生前知道的所有语言”）的语言名称。"
+		},
+		"PF2E": {
+			"replaceLanguages.hint": "移除系统的默认语言。你必须在自制元素菜单中至少设置一种自制语言，否则非通用语言不会被移除。如果你禁用此设置并想将稀有度重置为默认值，请查看模组的wiki。"
+		},
+		"SWADE": {
+			"LanguageSkills": "语言",
+			"AdditionalLanguageStat": {
+				"title": "语言统计Key",
+				"hint": "可以定位附加统计（在SWADE设置配置器中设置）。你需要输入统计Key（区分大小写）。请注意，设置此选项会覆盖{setting}设置。"
+			},
+			"AdditionalLiterateStat": {
+				"title": "识字统计Key",
+				"hint": "可以通过添加附加统计来限制阅读日志。你需要输入统计Key（区分大小写）。此设置独立于{setting}设置。"
+			}
+		},
+		"WFRP4E": {
+			"LanguageSkills": "语言",
+			"ReadWrite": {
+				"hint": "读/写天赋的名称。",
+				"title": "读/写天赋",
+				"default": "读/写"
+			}
+		}
+	}
+}

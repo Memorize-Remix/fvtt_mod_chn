@@ -1,0 +1,244 @@
+
+  "AIASSISTANT": {
+    "Settings": {
+      "Language": {
+        "Name": "助手语言",
+        "Hint": "强制使用特定语言。"
+      },
+      "Provider": {
+        "Name": "AI 模型",
+        "Hint": "使用哪个 AI 服务？"
+      },
+      "Theme": {
+        "Name": "窗口设计",
+        "Hint": "选择你的外观风格。"
+      },
+      "GameSystem": {
+        "Name": "游戏系统",
+        "Hint": "用于上下文的系统。"
+      },
+      "MinRole": {
+        "Name": "最低权限",
+        "Hint": "谁可以访问助手？"
+      },
+      "PlayerUpdateActor": {
+        "Name": "玩家：编辑角色",
+        "Hint": "允许修改自己的角色。"
+      },
+      "PlayerUpdateItem": {
+        "Name": "玩家：编辑物品",
+        "Hint": "允许修改自己的物品。"
+      },
+      "PlayerUpdateJournal": {
+        "Name": "玩家：编辑日志",
+        "Hint": "允许修改自己的日志。"
+      },
+      "SendFullData": {
+        "Name": "默认：更多上下文",
+        "Hint": "完整数据复选框的默认状态。"
+      },
+      "WorldDefault": {
+        "Name": "玩家的默认 AI",
+        "Hint": "对新玩家的建议。"
+      },
+      "PromptWarning": {
+		"Name": "大型提示词警告",
+		"Hint": "当字符数达到多少时，应显示下载建议？",
+		"Choices": {
+		  "0": "从不（禁用）",
+		  "10000": "10,000 字符时（约 2,500 个Token）",
+		  "25000": "25,000 字符时（约 6,000 个Token）",
+		  "50000": "50,000 字符时（约 12,500 个Token）",
+		  "100000": "100,000 字符时（约 25,000 个Token）"
+		}
+	  }
+    },
+    "UI": {
+      "ModeLabel": "你想做什么？",
+      "ModeUpdate": "编辑数值/属性",
+      "ModeChat": "提问/背景知识",
+      "ModeImage": "生成图像创意",
+      "ModeStory": "编写故事",
+      "SelectPages": "选择要处理的页面：",
+      "CheckboxFullData": "使用更多上下文（效果更好）",
+      "InfoText": "修改此文档的属性、描述或数值。",
+      "InfoTextChat": "询问有关此文档的规则或背景知识问题。",
+      "InfoTextImage": "为外部工具生成详细的图像描述提示。",
+      "InfoTextStory": "编写或扩展日志页面的内容（故事/情节）。",
+      "PromptLabel": "你的指令（{systemName}）：",
+      "PromptPlaceholder": "例如：强化这个 NPC... 或：描述得像一幅油画...",
+	  "BtnDownload": "下载 (JSON)",
+	  "BtnDownloadSmall": "下载",
+	  "LargePromptTitle": "注意：数据量过大！",
+	  "LargePromptBody": "你的提示词非常长（{size} 字符）。向 AI 发送大量数据可能导致错误。建议将数据下载为 JSON 文件，然后上传/粘贴给 AI。",
+	  "BtnDownloadFile": "下载为文件",
+	  "BtnCopyAnyway": "仍然复制",
+      "BtnCopy": "复制并打开 AI（然后按 CTRL+V）",
+      "PromptCopied": "已复制！👉 现在在 AI 聊天中按 CTRL+V！",
+      "CopyError": "复制失败。",
+      "ResultLabel": "步骤 2：在此处粘贴 AI 响应：",
+      "BtnClear": "清空输入",
+      "BtnUpdate": "应用更改",
+      "Success": "{docName} 更新成功！",
+      "BackupCreated": "已创建备份：{name}",
+      "ErrorJsonInvalid": "响应中未找到有效的 JSON。（缺少 ```json 代码块？）",
+      "WizTitle": "欢迎，{name}！",
+      "WizSubtitle": "你的助手已准备就绪。让我们开始设置。",
+      "WizProviderLabel": "你的 AI 伙伴",
+      "WizProviderHint": "谁应该帮助你？选择你最喜欢的。",
+      "WizThemeLabel": "你的设计",
+      "WizThemeHint": "你更喜欢哪种外观？",
+      "WizThemeAuto": "自动（匹配 AI）",
+      "WizLangLabel": "语言",
+      "WizLangHint": "提示和回答的语言。",
+      "WizGMTitle": "🛡️ GM选项",
+      "WizSystemLabel": "检测到的系统",
+      "WizSystemHint": "我们将其用于规则上下文。",
+      "WizRoleLabel": "谁可以使用这个？",
+      "WizRoleHint": "所需的最低权限。",
+      "WizDefaultLabel": "对玩家的推荐",
+      "WizDefaultHint": "你的玩家应该默认使用哪个 AI？",
+	  "WizSubLabel": "订阅状态",
+	  "WizSubHint": "你是否使用付费版本（Plus/Advanced）？",
+	  "WizSubFree": "否，免费版本（有限制）",
+	  "WizSubPro": "是，付费订阅（最大能力）",
+      "WizBtnSave": "开始吧！",
+      "WizReady": "准备冒险！"
+    },
+    "Prompts": {
+      "UpdateItem": [
+        "你是 FVTT 和游戏系统 {systemName} 的专家。",
+        "你的任务：根据我的指令为此文档（角色、物品、日志）创建部分 JSON 更新。",
+        "",
+        "原始数据：",
+        "```json",
+        "{jsonString}",
+        "```",
+        "",
+        "我的指令：",
+        "{userPrompt}",
+        "",
+        "重要 - 响应规则：",
+        "1. 仅部分更新：仅返回实际更改的嵌套键。",
+        "2. 保护 ID（关键）：保留所有嵌套对象（日志页面、物品、效果）的 `_id`。如果你返回没有 `_id` 的页面/物品，FVTT将删除原始对象并破坏地图日志！",
+        "3. 保护文本：如果输入 JSON 有空的文本字段（由于精简模式），请勿返回它们。如果有文本，除非你更改内容，否则请勿重复。",
+        "4. 数组：仅当你更改条目时才在数组中包含它们。",
+        "5. 根 ID：你可以移除根对象的 `_id`，但不能移除嵌套子对象的 `_id`。",
+        "6. 语法：在代码块内返回有效的 JSON。",
+        "",
+        "响应格式：",
+        "1. 更改的简短摘要。",
+        "2. 部分 JSON 放在 Markdown 代码块内（```json ... ```）。",
+        "3. 指令：'复制上面的代码并粘贴到 FVTT 窗口中。'"
+      ],
+      "ChatQuestion": [
+        "你是 FVTT 和游戏系统 {systemName} 的专家。",
+        "我有一个关于 \"{docName}\" 的问题。",
+        "",
+        "上下文/描述：",
+        "{docDesc}",
+        "",
+        "问题：",
+        "{userPrompt}"
+      ],
+      "GenerateImage": [
+        "你是游戏系统 {systemName} 的专家艺术总监。",
+        "你的任务：分析数据并编写一个'复制粘贴'图像生成提示。",
+        "请勿立即生成图像。首先，创建文本描述。",
+        "",
+        "源数据（FVTT）：",
+        "{docDesc}",
+        "",
+        "用户指令：",
+        "{userPrompt}",
+        "",
+        "装备的严格规则：",
+        "1. 仅描述源数据（JSON/文本）中明确列出的装备/武器/护甲。",
+        "2. 请勿发明物品。如果角色没有列出武器，请勿给他们剑或弓。",
+        "3. 如果数据为空，请描述该种族/职业的通用角色，没有特定装备。",
+        "",
+        "艺术风格：",
+        "除非另有指定，否则使用 {systemName} 的官方艺术风格。",
+        "",
+        "任务：",
+        "1. 严格分析 JSON/文本。",
+        "2. 编写精确的视觉描述（英文）。请勿虚构物品。",
+        "3. 仅将此描述放在 Markdown 代码块（```text ... ```）的末尾。",
+        "4. 告诉用户：'如果你对此满意，请复制上面的文本块并在新聊天（不是这里！）中将其作为消息发送以生成图像。'"
+      ],
+      "WriteStory": [
+        "你是 RPG 系统 {systemName} 的创意作家。",
+        "你的任务：为此日志条目编写内容（故事/描述）。",
+        "",
+        "原始数据（JSON）：",
+        "```json",
+        "{jsonString}",
+        "```",
+        "",
+        "我的指令：",
+        "{userPrompt}",
+        "",
+        "响应规则（关键）：",
+        "1. 目标：更新 `pages` 内的 `text.content` 字段。",
+        "2. 情况 A（数组 `pages` 为空）：创建新页面（数组中的新对象）。",
+        "3. 情况 B（数组有条目）：你必须使用现有的 `_id`。除非明确要求'新章节'，否则请勿创建新页面。",
+        "4. 格式化：为文本使用 HTML（<h1>、<p>、<b> 等）。",
+        "5. JSON 结构：返回有效的部分更新。",
+        "",
+        "响应格式：",
+        "1. 简短摘要。",
+        "2. 部分 JSON 放在 Markdown 代码块内（```json ... ```）。"
+      ],
+	  "ReadFileUpdate": [
+		"你是 FVTT 和游戏系统：{systemName} 的专家。",
+		"你的任务：根据我的指令，为附加的文档文件创建一个部分 JSON 更新。",
+		"",
+		"上下文与数据：",
+		"原始数据（JSON）在附加文件中！",
+		"",
+		"我的指令：",
+		"{userPrompt}",
+		"",
+		"重要 - 响应规则：",
+		"1. 仅部分更新：仅返回实际更改的嵌套键。",
+		"2. 保护 ID（关键）：保留所有嵌套对象（日志页面、物品、效果）的 `_id`。",
+		"3. 语法：在代码块中返回有效的 JSON。",
+		"",
+		"响应：",
+		"1. 只需在代码块中提供 JSON。"
+	  ],
+	  "ReadFileStory": [
+		"你是 RPG 系统：{systemName} 的创意写手。",
+		"你的任务：为此日志条目编写内容（故事/描述）。",
+		"",
+		"上下文：",
+		"原始数据在附加文件中！",
+		"",
+		"我的指令：",
+		"{userPrompt}",
+		"",
+		"响应规则：",
+		"1. 目标：更新 `pages` 内的 `text.content` 字段。",
+		"2. 使用 ID：使用文件中的 `_id`。",
+		"3. 格式：有效的 JSON 部分更新（Markdown 代码块）。"
+	  ],
+	  "ReadFileChat": [
+		"你是 FVTT 和游戏系统：{systemName} 的专家。",
+		"我已附加一个包含 \"{docName}\" 数据的 JSON 文件。",
+		"",
+		"问题：",
+		"{userPrompt}"
+	  ],
+	  "ReadFileImage": [
+		"你是游戏系统：{systemName} 的专家艺术总监。",
+		"你的任务：分析附加文件并编写一个“复制粘贴”图像生成提示。",
+		"",
+		"用户指令：",
+		"{userPrompt}",
+		"",
+		"输出：",
+		"仅在末尾的 Markdown 代码块（```text ... ```）中放入描述。"
+	  ]
+    }
+  }
+}

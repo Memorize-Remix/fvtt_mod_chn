@@ -1,0 +1,1168 @@
+{
+    "TYPES": {
+        "RegionBehavior": {
+            "trigger-engine": {
+                "builtins": {
+                    "region": "Trigger Engine"
+                }
+            }
+        }
+    },
+    "trigger-engine": {
+        "blueprint": {
+            "entry": {
+                "add": {
+                    "title": "Add: {label}"
+                },
+                "disconnect": "Disconnect Entry",
+                "edit": {
+                    "label": "Edit Entry",
+                    "title": "Edit: {label}"
+                },
+                "remove": {
+                    "content": "Are you sure you want to remove this entry?",
+                    "title": "Remove Entry"
+                },
+                "variable": "Create Variable"
+            },
+            "node": {
+                "copy": {
+                    "copied": "The selection has been copied to the clipboard.",
+                    "multi": "Copy Selected Nodes",
+                    "single": "Copy Node"
+                },
+                "delete": {
+                    "confirm": {
+                        "content": "Are you sure you want to delete the selected node(s)?",
+                        "title": "Delete Node(s)"
+                    },
+                    "multi": "Delete Selected Nodes",
+                    "single": "Delete Node"
+                },
+                "duplicate": {
+                    "multi": "Duplicate Selected Nodes",
+                    "single": "Duplicate Node"
+                },
+                "edit": "Edit Node",
+                "state": {
+                    "content": "Are you sure you want to switch state?",
+                    "title": "Switch: {label}"
+                }
+            },
+            "trigger": {
+                "back": "Back To Triggers",
+                "collapse": "Collapse Window",
+                "copy": {
+                    "label": "Copy Trigger Path",
+                    "notify": "The Trigger path has been copied to the clipboard."
+                },
+                "data": "Resove Data",
+                "delete": {
+                    "content": "Are you sure you want to delete the selected trigger?",
+                    "title": "Delete Trigger"
+                },
+                "description": "Toggle description",
+                "duplicate": "Duplicate Trigger",
+                "edit": "Edit Trigger",
+                "events": "Events",
+                "expand": "Restore Triggers Window",
+                "folder": "Edit Folder",
+                "gates": {
+                    "tab": "Move to next Entry Gate",
+                    "title": "Gates"
+                },
+                "refresh": "Refresh Application",
+                "save": "Save Triggers",
+                "variables": {
+                    "tab": "Move to next Variable Getter",
+                    "title": "Variables"
+                }
+            },
+            "triggers": {
+                "close": "Close Window",
+                "create": "Create Trigger",
+                "export": "Export Triggers",
+                "import": "Import Triggers",
+                "search": {
+                    "clear": "Clear Search",
+                    "label": "Search Trigger"
+                },
+                "tags": {
+                    "placeholder": "Trigger Tags"
+                }
+            },
+            "variable": {
+                "delete": {
+                    "content": "Are you sure you want to delete the selected variable?",
+                    "title": "Delete Variable"
+                },
+                "edit": "Edit Variable"
+            }
+        },
+        "builtins": {
+            "category": {
+                "action": {
+                    "title": "Action"
+                },
+                "event": {
+                    "title": "Event"
+                },
+                "extractor": {
+                    "title": "Extractor"
+                },
+                "logic": {
+                    "title": "Logic"
+                },
+                "splitter": {
+                    "title": "Splitter"
+                },
+                "value": {
+                    "title": "Value"
+                }
+            },
+            "convertor": {
+                "item-target": "The parent actor",
+                "user-target": "The assigned actor",
+                "target-user": "The primary owner "
+            },
+
+            "custom": {
+                "variable": {
+                    "label": "Variable"
+                }
+            },
+            "entry": {
+                "a": {
+                    "title": "Entry A"
+                },
+                "actor": {
+                    "title": "Actor"
+                },
+                "any": {
+                    "title": "Any"
+                },
+                "b": {
+                    "title": "Entry B"
+                },
+                "boolean": {
+                    "title": "Boolean"
+                },
+                "callback": {
+                    "title": "Callback"
+                },
+                "combatant": {
+                    "title": "Combatant"
+                },
+                "current": {
+                    "title": "Current"
+                },
+                "entry": {
+                    "title": "Entry"
+                },
+                "formula": {
+                    "title": "Formula"
+                },
+                "input": {
+                    "title": "Input"
+                },
+                "item": {
+                    "title": "Item"
+                },
+                "localization": {
+                    "title": "Localization Key"
+                },
+                "max": {
+                    "title": "Maximum"
+                },
+                "min": {
+                    "title": "Minimum"
+                },
+                "number": {
+                    "title": "Number"
+                },
+                "target": {
+                    "title": "Target"
+                },
+                "targets": {
+                    "title": "Targets"
+                },
+                "text": {
+                    "title": "Text"
+                },
+                "uuid": {
+                    "title": "Source UUID"
+                },
+                "user": {
+                    "title": "User"
+                },
+                "value": {
+                    "title": "Value"
+                }
+            },
+            "group": {
+                "optional": "Optional"
+            },
+            "node": {
+                "__gate__": {
+                    "__gate_entry__": {
+                        "subtitle": "Entry Gate"
+                    },
+                    "__gate_exit__": {
+                        "subtitle": "Exit Gate"
+                    }
+                },
+                "action": {
+                    "await-confirm": {
+                        "inputs": {
+                            "content": {
+                                "title": "Prompt Content"
+                            },
+                            "plain": {
+                                "title": "Prompt Text"
+                            },
+                            "timeout": {
+                                "title": "Timeout (s)"
+                            },
+                            "title": {
+                                "title": "Dialog Title",
+                                "tooltip": "Can be a localization key"
+                            }
+                        },
+                        "title": "Await Confirmation"
+                    },
+                    "console-log": {
+                        "title": "Console Log"
+                    },
+                    "create-message": {
+                        "title": "Create Chat Message",
+                        "inputs": {
+                            "content": {
+                                "title": "Message Description"
+                            },
+                            "plain": {
+                                "title": "Message Text"
+                            },
+                            "speaker": {
+                                "title": "Speaker"
+                            },
+                            "visibility": {
+                                "options": {
+                                    "all": "All Users",
+                                    "gm": "GM Only",
+                                    "self": "Context User"
+                                },
+                                "title": "Visibility"
+                            }
+                        }
+                    },
+                    "delete-item": {
+                        "title": "Delete Item"
+                    },
+                    "execute-script": {
+                        "inputs": {
+                            "macro": {
+                                "title": "Macro UUID"
+                            },
+                            "script": {
+                                "title": "Script Code"
+                            }
+                        },
+                        "states": {
+                            "macro": "Macro",
+                            "script": "Script"
+                        },
+                        "title": "Execute Script"
+                    },
+                    "update-item": {
+                        "inputs": {
+                            "path": {
+                                "title": "System Path"
+                            }
+                        },
+                        "title": "Update Item"
+                    }
+                },
+                "condition": {
+                    "if-truthy": {
+                        "customs": {
+                            "inputs": {
+                                "condition": {
+                                    "label": "Condition"
+                                }
+                            }
+                        },
+                        "title": "Test If Truthy"
+                    },
+                    "is-combatant": {
+                        "title": "Is Current Combatant"
+                    },
+                    "list-contains": {
+                        "inputs": {
+                            "list": {
+                                "title": "Text List"
+                            }
+                        },
+                        "title": "Text List Contains"
+                    }
+                },
+                "event": {
+                    "__start_event__": {
+                        "title": "Start Event"
+                    },
+                    "create-combatant-event": {
+                        "title": "Combatant Created"
+                    },
+                    "create-token-event": {
+                        "title": "Token Created"
+                    },
+                    "delete-combatant-event": {
+                        "title": "Combatant Removed"
+                    },
+                    "delete-token-event": {
+                        "title": "Token Removed"
+                    },
+                    "execute-event": {
+                        "title": "Execute Event"
+                    },
+                    "move-token-event": {
+                        "title": "Token Moved"
+                    },
+                    "region-event": {
+                        "outputs": {
+                            "event": {
+                                "title": "Event"
+                            }
+                        },
+                        "title": "Scene Region"
+                    },
+                    "test-event": {
+                        "title": "Test Event"
+                    }
+                },
+                "extractor": {
+                    "extract-actor": {
+                        "title": "Extract From Actor"
+                    },
+                    "extract-item": {
+                        "title": "Extract From Item"
+                    },
+                    "filter-targets": {
+                        "title": "Filter Targets",
+                        "titles": {
+                            "find": "Find Target",
+                            "loop": "Loop Over Targets"
+                        }
+                    }
+                },
+                "logic": {
+                    "actors-match": {
+                        "title": "Actors Match"
+                    },
+                    "break-loop": {
+                        "title": "Break Current Loop"
+                    },
+                    "compare-numbers": {
+                        "inputs": {
+                            "compare": {
+                                "options": {
+                                    "eq": "Equal to",
+                                    "gt": "Greater than",
+                                    "gte": "Greater than or equal to",
+                                    "lt": "Less than",
+                                    "lte": "Less than or equal to"
+                                }
+                            }
+                        },
+                        "title": "Compare Numbers"
+                    },
+                    "format-text": {
+                        "inputs": {
+                            "content": {
+                                "title": "Description to Format"
+                            },
+                            "plain": {
+                                "title": "Text to Format"
+                            }
+                        },
+                        "outputs": {
+                            "result": {
+                                "title": "Formatted"
+                            }
+                        },
+                        "title": "Format Text"
+                    },
+                    "resolve-formula": {
+                        "title": "Resolve Formula"
+                    },
+                    "texts-match": {
+                        "title": "Texts Match"
+                    }
+                },
+                "splitter": {
+                    "split-boolean": {
+                        "title": "Split Boolean"
+                    },
+                    "split-number": {
+                        "customs": {
+                            "outs": {
+                                "value": {
+                                    "input": {
+                                        "label": "Number Entry"
+                                    }
+                                }
+                            }
+                        },
+                        "title": "Split Number"
+                    },
+                    "split-text": {
+                        "customs": {
+                            "outs": {
+                                "value": {
+                                    "input": {
+                                        "label": "Text Entry"
+                                    }
+                                }
+                            }
+                        },
+                        "title": "Split Text"
+                    }
+                },
+                "value": {
+                    "current-combatant": {
+                        "title": "Current Combatant"
+                    },
+                    "scene-targets": {
+                        "title": "Scene Targets"
+                    },
+                    "user-value": {
+                        "inputs": {
+                            "id": {
+                                "options": {
+                                    "__active-gm__": "Active GM",
+                                    "__context-user__": "Context User",
+                                    "__self-user__": "Self User",
+                                    "specials": "Specials",
+                                    "users": "Users"
+                                }
+                            }
+                        },
+                        "title": "World User"
+                    }
+                }
+            },
+            "region": {
+                "gm": "GM Only",
+                "path": "Trigger Path"
+            },
+            "shared": {
+				"extract": {
+                    "input": {
+                        "label": "Path"
+                    }
+                },
+                "numbers": {
+                    "disable": {
+                        "tooltip": "Set to <code>0</code> to disable"
+                    }
+                },
+                "variables": {
+                    "tooltip": "Prefix variables with the <code>@</code> character"
+                }
+            },
+            "special": {
+                "break": "Can break current process",
+                "custom": "Has Custom Entries",
+                "emit": "Awaits User Input",
+                "loop": "Can Loop Over",
+                "state": "Has Multiple States",
+                "warning": "Be very careful when using this node"
+            },
+            "state": {
+                "description": "Description",
+                "filter": "Filter",
+                "find": "Find",
+                "localization": "Localization",
+                "loop": "Loop",
+                "plain": "Plain Text"
+            },
+            "tag": {
+                "chat": {
+                    "title": "Chat"
+                },
+                "combat": {
+                    "title": "Combat"
+                },
+                "combatant": {
+                    "title": "Combatant"
+                },
+                "debug": {
+                    "title": "Debug"
+                },
+                "dialog": {
+                    "title": "Dialog"
+                },
+                "loop": {
+                    "title": "Loop"
+                },
+                "macro": {
+                    "title": "Macro"
+                },
+                "region": {
+                    "title": "Region"
+                },
+                "token": {
+                    "title": "Token"
+                }
+            }
+        },
+        "close-window": {
+            "title": "Close Triggers Menu",
+            "content": "Do you want to save the triggers before closing?",
+            "yes": "Save & Close",
+            "no": "Close w/o Saving"
+        },
+        "confirm-dialog": {
+            "title": "Confirm Dialog"
+        },
+        "edit-entry": {
+            "array": "Is Array",
+            "input": "Input",
+            "label": "Label",
+            "required": "The field <strong>{name}</strong> is required.",
+            "types": "Types",
+            "validation": "The field <strong>{name}</strong> must match the pattern <strong>{pattern}</strong>.",
+            "yes": {
+                "add": "Add",
+                "edit": "Edit"
+            }
+        },
+        "edit-folder": {
+            "folder": "Folder",
+            "reset": "Reset to module value?",
+            "title": "Edit Folder",
+            "yes": "Edit"
+        },
+        "edit-trigger": {
+            "folder": "Folder",
+            "name": "Trigger Name",
+            "priority": {
+                "label": "Priority",
+                "tooltip": "Tooltips with higher priority will be executed first."
+            },
+            "tags": "Trigger Tags",
+            "yes": {
+                "create": "Create",
+                "edit": "Edit"
+            }
+        },
+        "edit-label": {
+            "label": "Label",
+            "title": {
+                "gate": {
+                    "create": "Create Gate",
+                    "edit": "Edit Gate"
+                },
+                "variable": {
+                    "create": "Create Variable",
+                    "edit": "Edit Variable"
+                }
+            },
+            "yes": {
+                "create": "Create",
+                "edit": "Edit"
+            }
+        },
+        "import-export-triggers": {
+            "error": "An error occurred while trying to parse triggers data.",
+            "imported": "Your triggers have been imported but nothing has been saved.",
+            "keep": "Keep IDs",
+            "title": {
+                "export": "Export Triggers",
+                "import": "Import Triggers"
+            },
+            "toggle": "Toggle All",
+            "yes": {
+                "export": "Export",
+                "import": "Import"
+            }
+        },
+        "node": {
+            "entry": "Entry",
+            "false": "False",
+            "in": "In",
+            "input": "Input",
+            "null": "Null",
+            "out": "Out",
+            "output": "Output",
+            "true": "True",
+            "value": "Value"
+        },
+        "nodes-menu": {
+            "add": {
+                "gate": "Create new gate"
+            },
+            "category": {
+                "event": "Events",
+                "gate": "Gates",
+                "node": "Nodes",
+                "variable": "Variables"
+            },
+            "clipboard": {
+                "paste": "Paste Node(s) from Clipboard",
+                "title": "Clipboard"
+            },
+            "event": "Event",
+            "search": {
+                "label": "Search Node",
+                "placeholder": "Node Name"
+            },
+            "tags": {
+                "label": "Filter Tags"
+            }
+        },
+        "pf2e-trigger": {
+            "category": {
+                "condition": {
+                    "title": "Condition"
+                }
+            },
+            "convertor": {
+                "outcome-number": "A number between -1 and 3",
+                "outcome-text": "null, criticalFailure, failure, success, criticalSuccess",
+                "target-text": "The signature value"
+            },
+            "custom": {
+                "rule": {
+                    "label": "Rule Element"
+                }
+            },
+            "entry": {
+                "action": {
+                    "title": "Action"
+                },
+                "basic": {
+                    "title": "Basic"
+                },
+                "by": {
+                    "title": "By"
+                },
+                "condition": {
+                    "title": "Condition"
+                },
+                "counter": {
+                    "title": "Counter"
+                },
+                "effect": {
+                    "title": "Effect"
+                },
+                "for": {
+                    "title": "Triggers For"
+                },
+                "identifier": {
+                    "title": "Identifier"
+                },
+                "name": {
+                    "title": "Name"
+                },
+                "option": {
+                    "title": "Roll Option"
+                },
+                "options": {
+                    "title": "Roll Options"
+                },
+                "origin": {
+                    "title": "Origin"
+                },
+                "outcome": {
+                    "title": "Outcome"
+                },
+                "parent": {
+                    "title": "Parent"
+                },
+                "private": {
+                    "title": "Private"
+                },
+                "reroll": {
+                    "title": "Is Reroll"
+                },
+                "save": {
+                    "title": "Save Type"
+                },
+                "slug": {
+                    "title": "Slug"
+                },
+                "when": {
+                    "title": "Triggers When"
+                }
+            },
+            "group": {
+                "duration": "Duration Data",
+                "roll": "Roll Data",
+                "rule": "Rule Elements",
+                "save": "Save Data"
+            },
+            "node": {
+                "action": {
+                    "create-condition": {
+                        "groups": {
+                            "effect": "Effect Data"
+                        },
+                        "title": "Create Condition Effect"
+                    },
+                    "create-effect": {
+                        "title": "Create Effect"
+                    },
+                    "create-item": {
+                        "customs": {
+                            "inputs": {
+                                "choices": {
+                                    "label": "ChoiceSet",
+                                    "tooltip": "<ul><li>flag:&lt;flag&gt;:&lt;index&gt;</li><li>rollOption:&lt;rollOption&gt;:&lt;index&gt;</li></ul>"
+                                }
+                            }
+                        },
+                        "groups": {
+                            "choices": "ChoiceSet Selections"
+                        },
+                        "inputs": {
+                            "duplicate": {
+                                "title": "Allow Duplicate"
+                            }
+                        },
+                        "title": "Create Item"
+                    },
+                    "create-persistent": {
+                        "inputs": {
+                            "dc": {
+                                "title": "DC"
+                            },
+                            "die": {
+                                "title": "Die"
+                            },
+                            "type": {
+                                "title": "Damage Type"
+                            }
+                        },
+                        "title": "Create Persistent Damage"
+                    },
+                    "create-temporary": {
+                        "title": "Create Trigger-Effect"
+                    },
+                    "decrease-condition": {
+                        "title": "Decrease Condition"
+                    },
+                    "effect-badge": {
+                        "title": "Update Effect Badge",
+                        "titles": {
+                            "decrease": "Decrease Effect Badge",
+                            "increase": "Increase Effect Badge"
+                        }
+                    },
+                    "effect-duration": {
+                        "outputs": {
+                            "delete": {
+                                "title": "Deleted"
+                            }
+                        },
+                        "title": "Update Effect Duration",
+                        "titles": {
+                            "decrease": "Decrease Effect Duration",
+                            "increase": "Increase Effect Duration"
+                        }
+                    },
+                    "increase-condition": {
+                        "title": "Increase Condition"
+                    },
+					"move-time": {
+                        "states": {
+                            "threshold": "Thresholds",
+                            "unit": "Units"
+                        },
+                        "title": "Move Time"
+                    },
+					"remove-condition": {
+                        "title": "Remove Condition"
+                    },
+                    "roll-damage": {
+                        "inputs": {
+                            "formula": {
+                                "title": "Damage Formula"
+                            }
+                        },
+                        "states": {
+                            "item": "Save (Item)",
+                            "none": "No Save",
+                            "target": "Save (Target)",
+                            "value": "Save (Value)"
+                        },
+                        "title": "Roll Damage"
+                    },
+                    "roll-flat": {
+                        "title": "Roll Flat Check"
+                    },
+                    "roll-save": {
+                        "title": "Roll Save Check"
+                    },
+                    "send-chat": {
+                        "inputs": {
+                            "parent": {
+                                "tooltip": "Cannot send unowned items to chat"
+                            }
+                        },
+                        "title": "Send Item to Chat"
+                    },
+                    "update-resource": {
+                        "inputs": {
+                            "slug": {
+                                "title": "Resource Slug"
+                            }
+                        },
+                        "title": "Update Special Resource",
+                        "titles": {
+                            "decrease": "Decrease Resource",
+                            "increase": "Increase Resource"
+                        }
+                    }
+                },
+                "condition": {
+                    "has-condition": {
+                        "title": "Has Condition"
+                    },
+                    "has-immunity": {
+                        "title": "Has Immunity"
+                    },
+                    "has-item": {
+                        "inputs": {
+                            "slug": {
+                                "title": "Item Slug"
+                            }
+                        },
+                        "outputs": {
+                            "target": {
+                                "title": "Parent"
+                            }
+                        },
+                        "states": {
+                            "slug": "Slug"
+                        },
+                        "title": "Has Item"
+                    },
+                    "has-option": {
+                        "title": "Has Roll Option"
+                    },
+					"has-resource": {
+                        "inputs": {
+                            "slug": {
+                                "title": "Resource Slug"
+                            }
+                        },
+                        "title": "Has Special Resource"
+                    },
+                    "has-temporary": {
+                        "title": "Has Trigger-Effect"
+                    },
+                    "in-combat": {
+                        "title": "Is  In Combat"
+                    },
+                    "in-range": {
+                        "inputs": {
+                            "distance": {
+                                "title": "Distance",
+                                "tooltip": "In increment of 5ft."
+                            }
+                        },
+                        "title": "Is In Range"
+                    },
+                    "inside-aura": {
+                        "inputs": {
+                            "once": {
+                                "title": "Execute Once"
+                            }
+                        },
+                        "outputs": {
+                            "target": {
+                                "title": "Aura Target"
+                            }
+                        },
+                        "title": "Is Inside Aura"
+                    },
+                    "is-alliance": {
+                        "title": "Is of Alliance"
+                    },
+                    "is-dead": {
+                        "title": "Actor Is Dead"
+                    }
+                },
+                "event": {
+					"action-chat-event": {
+                        "title": "Action Sent to Chat",
+                        "inputs": {
+                            "slug": {
+                                "title": "Action Slug"
+                            }
+                        }
+                    },
+					"attack-roll-event": {
+                        "title": "Attack Rolled"
+                    },
+                    "aura-enter-event": {
+                        "title": "Aura Entered"
+                    },
+                    "aura-leave-event": {
+                        "title": "Aura Left"
+                    },
+                    "base-aura-event": {
+                        "inputs": {
+                            "affects": {
+                                "options": {
+                                    "all": "All",
+                                    "allies": "Allies",
+                                    "enemies": "Enemies"
+                                },
+                                "title": "Affects Who"
+                            },
+                            "slug": {
+                                "title": "Aura Slug"
+                            },
+                            "when": {
+                                "options": {
+                                    "always": "Always Trigger",
+                                    "combat": "Only in Combat",
+                                    "turn": "Only Current Turn"
+                                }
+                            }
+                        },
+                        "outputs": {
+                            "source": {
+                                "title": "Aura Source"
+                            }
+                        }
+                    },
+                    "check-roll-event": {
+                        "inputs": {
+                            "for": {
+                                "options": {
+                                    "skill-check": "Skill Check"
+                                }
+                            }
+                        },
+                        "outputs": {
+                            "roller": {
+                                "title": "Roller"
+                            },
+                            "type": {
+                                "title": "Check Type"
+                            }
+                        },
+                        "states": {
+                            "all": "All Checks",
+                            "check": "Specific Check"
+                        },
+                        "title": "Check Rolled",
+                        "titles": {
+                            "specific": "{type} Rolled"
+                        }
+                    },
+                    "damage-taken-event": {
+                        "inputs": {
+                            "requires": {
+                                "tooltip": "Must originate from an Actor",
+                                "title": "Requires Origin"
+                            },
+                            "for": {
+                                "options": {
+                                    "all": "All Damages",
+                                    "damage": "Damage Received",
+                                    "heal": "Heal Received",
+                                    "persistent": "Persistent Only",
+                                    "negated": "Negated Only"
+                                }
+                            }
+                        },
+                        "title": "Damage Taken"
+                    },
+                    "turn-end-event": {
+                        "title": "Turn End"
+                    },
+                    "turn-start-event": {
+                        "title": "Turn Start",
+                        "outputs": {
+                            "round": {
+                                "title": "Round"
+                            }
+                        }
+                    }
+                },
+                "extractor": {
+                    "choiceset-selection": {
+                        "inputs": {
+                            "flag": {
+                                "title": "flag"
+                            },
+                            "option": {
+                                "title": "rolloPtion"
+                            }
+                        },
+                        "outputs": {
+                            "selection": {
+                                "title": "Selection"
+                            }
+                        },
+                        "title": "Get ChoiceSet Selection"
+                    },
+                    "item-formula": {
+                        "title": "Extract Item Formula"
+                    },
+                    "option-value": {
+                        "inputs": {
+                            "option": {
+                                "title": "Option Prefix"
+                            }
+                        },
+                        "title": "Get RollOption Value"
+                    }
+                },
+                "logic": {
+                    "compare-alliances": {
+                        "inputs": {
+                            "compare": {
+                                "options": {
+                                    "allies": "Are Allies",
+                                    "different": "Are Different",
+                                    "enemies": "Are Enemies",
+                                    "neutral": "Are Neutrals"
+                                }
+                            }
+                        },
+                        "title": "Compare Allliances"
+                    },
+                    "compare-outcomes": {
+                        "title": "Compare Degree of Success"
+                    },
+                    "distance-between": {
+                        "inputs": {
+                            "distance": {
+                                "title": "Distance"
+                            },
+                            "strict": {
+                                "title": "Strict",
+                                "tooltip": "Do not fallback to active tokens"
+                            }
+                        },
+                        "title": "Distance Between Tokens"
+                    },
+                    "match-predicate": {
+                        "inputs": {
+                            "predicate": {
+                                "title": "Predicate"
+                            }
+                        },
+                        "title": "Matches Predicate"
+                    }
+                },
+                "splitter": {
+                    "split-outcome": {
+                        "title": "Split Degree of Success"
+                    }
+                },
+                "value": {
+                    "item-value": {
+                        "title": "Cached Item"
+                    }
+                }
+            },
+            "setting": {
+                "hint": "Register you own triggers with the module.",
+                "label": "Register Triggers",
+                "name": "PF2e Triggers Menu"
+            },
+            "shared": {
+                "difficulty-class": {
+                    "adjustment": {
+                        "title": "Adjustment"
+                    },
+                    "against": {
+                        "title": "Against"
+                    }
+                },
+                "image": {
+                    "pf2e": {
+                        "title": "PF2e Image Path"
+                    },
+                    "sf2e": {
+                        "title": "SF2e Image Path"
+                    }
+                },
+                "item-extraction": {
+                    "index": {
+                        "title": "Instance Index"
+                    }
+                },
+                "roll-data": {
+                    "note": {
+                        "title": "Extra Note"
+                    },
+                    "options": {
+                        "title": "Extra Roll Options"
+                    },
+                    "traits": {
+                        "title": "Extra Traits"
+                    }
+                },
+                "uuid": {
+                    "pf2e": {
+                        "title": "PF2e Source UUID"
+                    },
+                    "sf2e": {
+                        "title": "SF2e Source UUID"
+                    }
+                }
+            },
+            "state": {
+                "fixed": "Fixed",
+                "timed": "Timed"
+            },
+            "tag": {
+                "attack": {
+                    "title": "Attack"
+                },
+                "aura": {
+                    "title": "Aura"
+                },
+                "check": {
+                    "title": "Check"
+                },
+                "damage": {
+                    "title": "Damage"
+                },
+                "duration": {
+                    "title": "Duration"
+                },
+                "outcome": {
+                    "title": "Degree of Success"
+                },
+                "save": {
+                    "title": "Save"
+                },
+                "turn": {
+                    "title": "Turn"
+                }
+            },
+            "version": {
+                "error": "The minimum supported system version for the <strong>Trigger Engine</strong> module is <strong>{version}</strong>."
+            }
+        },
+        "refresh-application": {
+            "content": "This will refresh the triggers application, would you like to save your triggers first?",
+            "no": "Refresh Only",
+            "title": "Refresh Application",
+            "yes": "Save & Refresh"
+        },
+        "save-triggers": {
+            "content": "Are you sure you want to save the triggers?",
+            "saved": "Your triggers have been saved.",
+            "title": "Save Triggers",
+            "yes": "Save"
+        }
+    }
+}

@@ -1,0 +1,34 @@
+
+	"CSVIMPORTER": {
+		"COMPENDIUM": { "Import": "导入 CSV/TSV" },
+		"IMPORT": {
+			"templateFile": {
+				"label": "模板文件",
+				"hint": "一个 Handlebars 模板，可渲染为适合创建文档的 JSON 数据。",
+				"missing": "未指定模板文件"
+			},
+			"csvFile": {
+				"label": "数据文件",
+				"hint": "要应用于模板的 CSV 或 TSV 文件。需要列名。列名中的空格将被替换为下划线。",
+				"missing": "未指定数据文件"
+			},
+			"baseFolder": {
+				"label": "基础文件夹",
+				"hint": "在此文件夹内创建所有文档。"
+			},
+			"folderColumn": {
+				"label": "文件夹字段",
+				"hint": "此列将用作每个记录的文件夹名称。如果不存在，将在基础文件夹下创建。"
+			},
+			"Progress": "正在导入数据...",
+			"submit": { "label": "导入" },
+			"title": "导入到 {id}"
+		},
+		"SETTINGS": {
+			"allowPackage": {
+				"name": "允许系统和模组包",
+				"hint": "面向开发者。允许导入到非世界合集包。警告：对合集包的任何更改将在模组或系统更新时被覆盖。"
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+
+  "YAKUZA_FY": {
+    "Name": "极道风格化",
+    "Button": {
+      "Label": "极道风格化",
+      "Hint": "创建极道风格的介绍动画"
+    },
+    "Settings": {
+      "CloseBehavior": {
+        "Name": "介绍关闭行为",
+        "Hint": "当GM点击时，对其他用户应执行什么操作？",
+        "Choices": {
+          "ask": "每次都询问",
+          "always": "总是关闭",
+          "never": "从不关闭"
+        }
+      },
+      "GiveObserverPermission": {
+        "Name": "授予查看权限",
+        "Hint": "自动授予所有玩家查看访问权限"
+      },
+      "ForceCloseTableMap": {
+        "Name": "强制为桌布用户关闭",
+        "Hint": "无论设置如何，始终为桌布用户关闭覆盖层"
+      },
+      "ImageAdaptationMode": {
+        "Name": "图像适配模式",
+        "Hint": "介绍覆盖层中应如何显示图像",
+        "Choices": {
+          "auto": "自动（基于图像和屏幕方向）",
+          "width": "适应宽度",
+          "height": "适应高度", 
+          "contain": "包含（显示完整图像，可能有空白）"
+        }
+      },
+      "ImageScaleFactor": {
+        "Name": "图像缩放比例",
+        "Hint": "调整图像大小（75%至125%）"
+      },
+      "CloseDialog": {
+        "Title": "为所有玩家关闭？",
+        "Content": "你要为所有玩家关闭介绍吗？",
+        "Yes": "是",
+        "No": "否"
+      }
+    },
+    "Notifications": {
+      "NoImage": "必须包含图像。",
+      "JournalNotFound": "找不到日志条目。",
+      "InvalidData": "无效数据：必须提供带有图像的yakuzaData。",
+      "ApiNotAvailable": "极道风格化API不可用。",
+      "NoJournalId": "无法确定日志ID。"
+    },
+    "Keybindings": {
+      "CloseIntro": {
+        "Name": "关闭极道覆盖层",
+        "Hint": "为所有玩家关闭极道覆盖层的热键"
+      }
+    }
+  }
+}

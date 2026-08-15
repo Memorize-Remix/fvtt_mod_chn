@@ -1,0 +1,85 @@
+{
+    "FOLLOWMEIFYOUCAN": {
+        "Settings": {
+            "KeepFollowing": {
+                "Name": "Maintain following on scene change",
+                "Hint": "If enabled, a token will continue to follow its target after a scene change."
+            },
+            "InstantFollow": {
+                "Name": "Instant follow",
+                "Hint": "If enabled, the following token will instantly move to the target's position instead of moving gradually."
+            },
+            "PlayerAccess": {
+                "Name": "Player access",
+                "Hint": "If enabled, players will have access to the token-following feature."
+            },
+            "ShowFloatingButtons": {
+                "Name": "Show floating buttons",
+                "Hint": "If enabled, floating buttons will be displayed for quick access to following commands."
+            },
+            "GitHub": {
+                "Hint": "Click to visit the module's GitHub"
+            }
+        },
+        "Controls": {
+            "Start": "Start following a token",
+            "Stop": "Stop following",
+            "StopAll": "Manage followings",
+            "SelectToFollow": "Select a token to follow",
+            "Home": "Reset control position",
+            "DragHandle": "Move controls"
+        },
+        "Notifications": {
+            "FollowingStarted": "{followerName} is now following {target}.",
+            "FollowingStopped": "{followerName} has stopped following {target}.",
+            "FollowingStoppedAll": "All followings have been stopped.",
+            "NoActiveToken": "You must select a token to use as a follower.",
+            "NoActiveFollowing": "You must first select a token to use as a follower.",
+            "StopButtonPressed": "The stop following button has been pressed.",
+            "SelectedFollowingStopped": "{count} following(s) have been stopped.",
+            "NoFollowsSelected": "No followings were selected to be stopped.",
+            "NoTargetTokens": "There are no target tokens available in this scene.",
+            "CircularFollowingPrevented": "Circular following detected and prevented. {followerName} cannot follow {target}.",
+            "FollowRequestSent": "Follow request sent to follow {target}.",
+            "PlayerRequestedFollow": "{playerName} requested {followerName} to follow {target}.",
+            "ResetPosition": "Control position has been reset to default.",
+            "NoVisibleTargets": "No visible targets are available in this scene.",
+            "StoppedFollowing": "{followerName} has stopped following {target}",
+            "CannotFollowSelf": "{followerName} cannot follow themselves",
+            "StartedFollowing": "{followerName} is now following {target}.",
+            "SelectTarget": "Select a target to follow"
+        },
+        "Dialog": {
+            "SelectTarget": {
+                "Title": "Select a target to follow",
+                "Label": "Choose a token to follow:",
+                "Follow": "Follow"
+            },
+            "StopFollowing": {
+                "Title": "Stop followings",
+                "Label": "Select the followings to stop:",
+                "Stop": "Stop",
+                "SelectAll": "Select all",
+                "OtherScenes": "Followings in other scenes",
+                "StopAllScenes": "Stop all followings in all scenes"
+            },
+            "ConfirmFollow": {
+                "Title": "Follow confirmation",
+                "Content": "{source} will follow {target}. Are you sure?"
+            },
+            "Yes": "Yes",
+            "No": "No",
+            "Cancel": "Cancel"
+        },
+        "Errors": {
+            "NoGM": "No GM is connected. Your request cannot be processed.",
+            "SocketTimeout": "Connection to GM timed out. Please try again later.",
+            "SocketProcessingError": "Error processing socket message.",
+            "MissingParameters": "Missing parameters for follow request. Please select a valid token.",
+            "SocketConnectionFailed": "Could not establish a connection to the GM. Ensure the GM is online and the module is properly enabled.",
+            "SocketNotAvailable": "Socket communication system is not available. Please refresh the page or contact the GM.",
+            "SocketError": "An error occurred while sending the request. Please try again.",
+            "SocketTestFailed": "Socket connection test failed after multiple attempts. Please check that the GM is online and the module is properly enabled."
+        }
+    }
+}

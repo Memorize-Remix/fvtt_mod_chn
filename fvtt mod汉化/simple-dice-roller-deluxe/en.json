@@ -1,0 +1,58 @@
+{
+    "title": "Dice Roller",
+    "legend": {
+        "hiddenRolls": "Hidden Rolls",
+        "explodingDiceRolls": "Exploding Dice",
+        "CthulhuD100Rolls": "Call of Cthulhu"
+    },
+    "tooltip": {
+        "makeGMRoll": "Private Roll to GM",
+        "makeBlindRoll": "Blind Roll to GM",
+        "makeSelfRoll": "Roll to Self",
+        "penaltyCthulhuRoll": "Penalty 'tens' Roll for d100",
+        "bonusCthulhuRoll": "Bonus 'tens' Roll for d100",
+        "explodingDice": "Standard Exploding Dice",
+        "explodingDiceOnce": "Single Exploding Dice"
+    },
+    "settings": {
+        "advancedSettings": {
+            "title": "Advanced Settings for Dice Roller",
+            "name": "Advanced Global Settings:",
+            "label": "Configure Dice Roller",
+            "hint": "Only settable by the Game Master.",
+            "save": "Save Settings"
+        },
+        "enableHiddenRolls": {
+            "name": "Add Hidden Roll Toggles",
+            "hint": "Buttons for mutually exclusive hidden rolls (Blind, GM and Self Rolls)."
+        },
+        "enableCthulhuD100": {
+            "name": "Add 'Call of Cthulhu' d100 Penalty / Bonus Toggles",
+            "hint": "Buttons for 'Call of Cthulhu' d100 rolls: reroll the tens-die, taking highest for Penalty / lowest for Bonus."
+        },
+        "enableExplodingDice": {
+            "name": "Add Exploding Dice Toggles",
+            "hint": "Buttons for mutually exclusive Exploding Dice rolls. NOT applicable to coin flips, Fudge or d100 rolls!"
+        },
+        "enableFudgeDice": {
+            "name": "Enable 'Fudge Dice'",
+            "hint": "For rolling 'Fudge Dice' (also known as 'Fate Dice') for your Fate and Fudge games."
+        },
+        "enableCoins": {
+            "name": "Enable coin tosses",
+            "hint": "For making coin flips (similar to d2 dice rolls)."
+        },
+        "maxDiceCount": {
+            "name": "Maximum dice thrown",
+            "hint": "The max number of dice (from 1 to 25) you can throw with the Dice Roller."
+        },
+        "enableFirstColumn": {
+            "name": "Add additional 1st column for rolling only 1 die",
+            "hint": "Note: the dice-icon column is always clickable and rolls a single die!"
+        },
+        "closeRollerAfterRoll": {
+            "name": "Close the Dice Roller on a successful roll",
+            "hint": "If enabled, Dice Roller window will close on making a roll."
+        }
+    }
+}

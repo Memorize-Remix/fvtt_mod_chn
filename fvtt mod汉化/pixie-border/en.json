@@ -1,0 +1,159 @@
+{
+  "pixie-border": {
+    "settings": {
+      "foundryBorder": {
+        "name": "Foundry Border Behavior",
+        "hint": "Set how the default foundry square border should behave.",
+        "choices": {
+          "disable": "Disable",
+          "enable": "Enable",
+          "guide": "Guide"
+        }
+      },
+
+      "hideTargetIndicator": {
+        "name": "Hide Foundry Target Indicator",
+        "hint": "Remove Foundry’s default targeting indicator."
+      },
+
+      "enableTarget": {
+        "name": "Enable Target Border",
+        "hint": "Also show the outline and glow on tokens you target."
+      },
+
+      "enableCombatBorder": {
+        "name": "Enable Combat Border",
+        "hint": "Show an animated border for the active combatant."
+      },
+
+      "disableOutline": {
+        "name": "Disable Outline Filter",
+        "hint": "Turn this on to completely disable the outline filter."
+      },
+
+      "disableGlow": {
+        "name": "Disable Glow Filter",
+        "hint": "Turn this on to completely disable the glow filter."
+      },
+
+      "combatBorderSpeed": {
+        "name": "Combat Border Speed",
+        "hint": "Set the speed of the combat border animation."
+      },
+
+      "thickness": {
+        "name": "Outline Thickness",
+        "hint": "Width of the outline in pixels."
+      },
+
+      "glowDistance": {
+        "name": "Glow Distance",
+        "hint": "Glow radius in pixels. Larger values expand the glow outward."
+      },
+
+      "glowOuterStrength": {
+        "name": "Glow Strength",
+        "hint": "Intensity of the outer glow. Higher values are brighter."
+      },
+
+      "mode": {
+        "name": "Color Mode",
+        "hint": "Use Foundry disposition colors, custom colors, or colors based on health condition.",
+        "choices": {
+          "disposition": "Disposition colors",
+          "custom": "Custom colors",
+          "condition": "Condition colors"
+        }
+      },
+
+      "colorMenu": {
+        "name": "Customize Colors",
+        "label": "Customize Colors",
+        "hint": "Open a color panel to set outline and glow colors for selected and targeted tokens.",
+        "saved": "Pixie Border: Colors updated.",
+        "reset": "Pixie Border: Colors reset to defaults.",
+        "invalidHex": "Please enter a valid hex color (e.g., #88ccff)."
+      },
+
+      "colorSections": {
+        "core": "Custom Colors",
+        "disposition": "Disposition Colors",
+        "condition": "Condition Colors",
+        "guided": "Guided Border"
+      },
+
+      "outlineColor": {
+        "name": "Outline Color",
+        "hint": "Sets the outline color for selected tokens when Color Mode is set to custom."
+      },
+      "targetOutlineColor": {
+        "name": "Target Outline Color",
+        "hint": "Sets the outline color for targeted tokens when target border is enabled."
+      },
+      "glowColor": {
+        "name": "Glow Color",
+        "hint": "Sets the glow color for selected tokens when Color Mode is set to custom."
+      },
+      "targetGlowColor": {
+        "name": "Target Glow Color",
+        "hint": "Sets the glow color for targeted tokens when target border is enabled."
+      },
+
+      "dispositionHostileColor": {
+        "name": "Hostile Color",
+        "hint": "Used for hostile tokens when Color Mode is set to Disposition."
+      },
+      "dispositionFriendlyColor": {
+        "name": "Friendly Color",
+        "hint": "Used for friendly tokens when Color Mode is set to Disposition."
+      },
+      "dispositionNeutralColor": {
+        "name": "Neutral Color",
+        "hint": "Used for neutral tokens when Color Mode is set to Disposition."
+      },
+      "dispositionSecretColor": {
+        "name": "Secret Color",
+        "hint": "Used for secret/hidden tokens when Color Mode is set to Disposition."
+      },
+
+      "conditionHighColor": {
+        "name": "High HP Color",
+        "hint": "Used when the token is at high health."
+      },
+      "conditionMidColor": {
+        "name": "Mid HP Color",
+        "hint": "Used when the token is at moderate health."
+      },
+      "conditionLowColor": {
+        "name": "Low HP Color",
+        "hint": "Used when the token is at low health."
+      },
+
+      "guideColor": {
+        "name": "Guided Border Color",
+        "hint": "Sets the color of the guided hover border when Foundry Border behavior is set to Guided."
+      },
+
+      "guideOpacity": {
+        "name": "Guided Border Opacity",
+        "hint": "Adjusts the transparency of the guided hover border."
+      },
+
+      "guideStyle": {
+        "name": "Guided Border Style",
+        "hint": "Choose the line style for the guided hover border.",
+        "choices": {
+          "dashed": "Dashed",
+          "dotted": "Dotted",
+          "solid": "Solid"
+        }
+      }
+    },
+
+    "common": {
+      "save": "Save",
+      "reset": "Reset to Defaults",
+      "cancel": "Cancel"
+    }
+  }
+}

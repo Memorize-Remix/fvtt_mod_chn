@@ -1,0 +1,134 @@
+{
+  "TOKEN": {
+    "TABS": {
+      "shadows": "Shadows"
+    }
+  },
+  "TILE": {
+    "TABS": {
+      "shadows": "Shadows"
+    }
+  },
+  "SPRITESHADOWS": {
+    "ERRORS": {
+      "TEXTUREGEN": "Unaable to generate shadow texture"
+    },
+    "SETTINGS": {
+      "ADJUSTMENTS": {
+        "DRAGPOS": "Click and drag to fine-tune position",
+        "DRAGSIZE": "Click and drag to fine-tune size",
+        "HEIGHT": "Height",
+        "HINT": "Fine tune the position and size of the shadow.",
+        "LABEL": "Adjustments",
+        "WIDTH": "Width",
+        "X": "X",
+        "Y": "Y"
+      },
+      "ALIGNMENT": {
+        "BOTTOM": "Bottom",
+        "CENTER": "Center",
+        "HINT": "Where to align the shadow relative to its token.",
+        "LABEL": "Alignment"
+      },
+      "ALPHA": {
+        "HINT": "Opoacity of the shadow",
+        "LABEL": "Alpha"
+      },
+      "BLOB": {
+        "HINT": "A simple, circular shadow placed below the token.",
+        "LABEL": "Blob Shadow"
+      },
+      "BLOBSHAPE": {
+        "CIRCLE": "Circle",
+        "HINT": "The shape of the blob",
+        "LABEL": "Shadow Shape"
+      },
+      "BLUR": {
+        "HINT": "Amount of blur",
+        "LABEL": "Blur"
+      },
+      "COLOR": {
+        "HINT": "Color of the shadow.",
+        "LABEL": "Color"
+      },
+      "ELEVATIONADJUST": {
+        "HINT": "If enabled, will move the shadow based on the token's elevation.",
+        "LABEL": "Adjust for Elevation"
+      },
+      "ELEVATIONINCREMENT": {
+        "HINT": "Increment by which the shadow will be moved when adjusting for token elevation",
+        "LABEL": "Elevation Increment"
+      },
+      "ENABLE": {
+        "HINT": "Uncheck to turn off all sprite shadows.",
+        "LABEL": "Enable Sprite Shadows"
+      },
+      "EXPORT": {
+        "CLIPBOARD": "Copy to Clipboard",
+        "COPIED": "Configuration copied to clipboard",
+        "DIALOGMESSAGE": "Copy the text below",
+        "DOWNLOAD": "Download JSON",
+        "HINT": "Export JSON configuration",
+        "LABEL": "Export Configuration"
+      },
+      "IGNORESAADJUSTMENTS": {
+        "HINT": "If enabled, will ignore mesh adjustments configured by Sprite Animations.",
+        "LABEL": "Ignore Sprite Animations Adjustments"
+      },
+      "IMPORT": {
+        "CLIPBOARD": "Import from Clipboard",
+        "DIALOGMESSAGE": "Paste the JSON below",
+        "HINT": "Import JSON configuration",
+        "LABEL": "Import Configuration",
+        "PASTED": "Configuration read from clipboard",
+        "UPLOAD": "Upload JSON"
+      },
+      "LIFTTOKEN": {
+        "HINT": "When enabled, will move the token instead of the shadow if Adjust for Elevation is also enabled.",
+        "LABEL": "Lift Token"
+      },
+      "LOADFROMACTOR": {
+        "HINT": "Load current settings from this token's actor",
+        "LABEL": "Load From Actor"
+      },
+      "LOADFROMTOKEN": {
+        "HINT": "Load current settings from this token",
+        "LABEL": "Load From Token"
+      },
+      "ROTATION": {
+        "HINT": "Angle by which to rotate the shadow",
+        "LABEL": "Rotation"
+      },
+      "SKEW": {
+        "HINT": "The amount by which to skew this shadow, to simulate projection angle.",
+        "LABEL": "Skew Amount"
+      },
+      "STENCIL": {
+        "HINT": "A faux-3d shadow based on the token's texture.",
+        "LABEL": "Stencil Shadow"
+      },
+      "STENCILIMAGE": {
+        "HINT": "The image to use for the shape of the stencil shadow.",
+        "LABEL": "Image"
+      },
+      "TOKENOVERRIDE": {
+        "HINT": "If enabled, will store shadow settings directly on this token rather than the actor.",
+        "LABEL": "Use Token Overrides"
+      },
+      "TOOLTIPS": {
+        "EXPORT": "Export the current configuration as JSON",
+        "IMPORT": "Import a JSON configuration"
+      },
+      "TYPE": {
+        "BLOB": "Blob",
+        "HINT": "Toggle between blob and stencil shadow",
+        "LABEL": "Shadow Type",
+        "STENCIL": "Stencil"
+      },
+      "USEIMAGE": {
+        "HINT": "When configured, will use a separate image for the shape of the stencil shadow.\nNote: If you are using the <a href='https://foundryvtt.com/packages/sprite-animations'>Sprite Animations</a> module, this setting will disable integration with it.",
+        "LABEL": "Use Image for Shape"
+      }
+    }
+  }
+}

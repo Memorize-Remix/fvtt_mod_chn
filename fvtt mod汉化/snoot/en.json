@@ -1,0 +1,227 @@
+{
+  "SNOOT": {
+    "App": {
+      "Title": "Snoot"
+    },
+    "Settings": {
+      "Menu": {
+        "Name": "Snoot Data Sniffer",
+        "Label": "Sniff Data",
+        "Hint": "Open Snoot to find and clean up orphaned module data."
+      },
+      "ShowCoreFlags": {
+        "Name": "Show Foundry Flags",
+        "Hint": "Include Foundry core flags in scan results. This feature is largely untested and may produce noisy results."
+      },
+      "ShowSystemFlags": {
+        "Name": "Show System Flags",
+        "Hint": "Include game system flags in scan results. This feature is largely untested and may produce noisy results."
+      }
+    },
+    "Tab": {
+      "HowTo": "How to Use",
+      "Overview": "Overview",
+      "Settings": "Settings",
+      "FlagsWorld": "World Flags",
+      "FlagsCompendiums": "Compendium Flags"
+    },
+    "HowTo": {
+      "Disclaimer": {
+        "Title": "Back up your world before cleaning anything.",
+        "Body": "Snoot deletes settings and removes flags. There is no undo. Back up your world first."
+      },
+      "About": {
+        "Title": "What Snoot does",
+        "Body": "Snoot scans world settings and flags on every world and compendium document, groups them by module, and lets you delete data left behind by uninstalled or disabled modules."
+      },
+      "Status": {
+        "Title": "Statuses",
+        "System": "Belongs to Foundry or your game system.",
+        "Active": "The relevant module is installed and enabled.",
+        "Inactive": "The relevant module is installed but disabled.",
+        "Orphaned": "No relevant installed module found.",
+        "StaleLabel": "Stale",
+        "Stale": "A stored setting whose key is no longer declared by its module."
+      },
+      "Tabs": {
+        "Title": "Tabs",
+        "Overview": "Per-module summary with status badges, entry counts, and clean actions. Includes total counts of orphaned and stale data.",
+        "Settings": "Every world setting in storage, grouped by namespace. Delete individual settings or every setting for a namespace.",
+        "FlagsWorld": "Every flag scope found on world documents, grouped by module.",
+        "FlagsCompendiums": "Every flag scope found on compendium documents."
+      },
+      "Workflow": {
+        "Title": "Recommended workflow",
+        "Step1": "Back up your world.",
+        "Step2": "Open the Overview tab and review the orphaned and stale counts.",
+        "Step3": "Inspect what each namespace owns in the per-tab views before cleaning.",
+        "Step4": "Clean orphaned data first, then review inactive and stale entries individually."
+      }
+    },
+    "Status": {
+      "system": "System",
+      "active": "Active",
+      "inactive": "Inactive",
+      "orphaned": "Orphaned"
+    },
+    "StatusHint": {
+      "system": "Foundry core or game system data",
+      "active": "Module is installed and enabled",
+      "inactive": "Module is installed but disabled",
+      "orphaned": "Module is no longer installed"
+    },
+    "Overview": {
+      "OrphanedSettings": "Orphaned Settings",
+      "OrphanedWorldFlags": "Orphaned World Flags",
+      "OrphanedCompendiumFlags": "Orphaned Compendium Flags",
+      "StaleSettings": "Stale Settings",
+      "ModuleList": "Modules with World Data"
+    },
+    "Label": {
+      "Module": "Module",
+      "Status": "Status",
+      "Data": "Data",
+      "Actions": "Actions",
+      "Key": "Key",
+      "Value": "Value",
+      "Registered": "Registered",
+      "Document": "Document",
+      "Type": "Type",
+      "FlagKeys": "Flag Keys",
+      "Pack": "Pack",
+      "Count": "Entries"
+    },
+    "Action": {
+      "CleanModule": "Clean Module",
+      "CleanAllOrphaned": "Clean All Orphaned",
+      "CleanAllInactive": "Clean All Inactive",
+      "CleanAllStale": "Clean All Stale",
+      "Rescan": "Rescan",
+      "Skip": "Skip",
+      "Delete": "Delete",
+      "DeleteAll": "Delete All",
+      "Remove": "Remove",
+      "RemoveAll": "Remove All"
+    },
+    "Confirm": {
+      "CleanModule": {
+        "Title": "Clean Module Data",
+        "Content": "Delete all settings and remove all flags for <strong>{module}</strong>? This cannot be undone."
+      },
+      "CleanAll": {
+        "Title": "Clean All Orphaned Data",
+        "Content": "Delete all settings and remove all flags for every orphaned module? Orphaned modules are no longer installed. This cannot be undone."
+      },
+      "CleanInactive": {
+        "Title": "Clean All Inactive Data",
+        "Content": "Delete all settings and remove all flags for every inactive module? Inactive modules are installed but disabled. This cannot be undone."
+      },
+      "CleanStale": {
+        "Title": "Clean All Stale Settings",
+        "Content": "Delete all unregistered (stale) settings across every module? This cannot be undone."
+      },
+      "DeleteSetting": {
+        "Title": "Delete Setting",
+        "Content": "Delete the setting <code>{key}</code>? This cannot be undone."
+      },
+      "DeleteModuleSettings": {
+        "Title": "Delete Module Settings",
+        "Content": "Delete all settings for <strong>{module}</strong>? This cannot be undone."
+      },
+      "RemoveScope": {
+        "Title": "Remove Flag Scope",
+        "Content": "Remove all <strong>{scope}</strong> flags from every world document? This cannot be undone."
+      },
+      "RemoveCompendiumScope": {
+        "Title": "Remove Compendium Flag Scope",
+        "Content": "Remove all <strong>{scope}</strong> flags from every compendium document? Packs will be temporarily unlocked. This cannot be undone."
+      },
+      "RemoveDocFlag": {
+        "Title": "Remove Document Flag",
+        "Content": "Remove <strong>{scope}</strong> flags from <strong>{name}</strong>? This cannot be undone."
+      },
+      "Rescan": {
+        "Title": "Rescan After Cleanup?",
+        "Content": "Rescan world and compendium data to refresh the display? Declining leaves the current view showing stale data until you click Rescan manually."
+      }
+    },
+    "Scan": {
+      "Start": "Sniffing world data…",
+      "Settings": "Scanned settings",
+      "WorldFlags": "Scanned world documents",
+      "Pack": "Scanning pack: {label}",
+      "Complete": "Scan complete!"
+    },
+    "Progress": {
+      "CleaningModule": "Cleaning module…",
+      "CleaningOrphaned": "Cleaning orphaned modules…",
+      "CleaningInactive": "Cleaning inactive modules…",
+      "CleaningStale": "Deleting stale settings…",
+      "RemovingFlags": "Removing world flags…",
+      "RemovingCompendiumFlags": "Removing compendium flags…",
+      "DeletingSettings": "Deleting settings…",
+      "Complete": "Done.",
+      "Module": "Cleaning: {module}",
+      "Doc": "Document: {name}",
+      "Pack": "Pack: {label}",
+      "Stage": {
+        "Settings": "Settings",
+        "WorldFlags": "World flags",
+        "CompendiumFlags": "Compendium flags"
+      }
+    },
+    "Notify": {
+      "SettingNotFound": "Setting \"{key}\" not found.",
+      "DeletedSetting": "Deleted setting: {key}",
+      "DeletedSettings": "Deleted {count} settings for \"{namespace}\".",
+      "RemovedFlagsFrom": "Removed \"{scope}\" flags from {name}.",
+      "RemovedFlags": "Removed \"{scope}\" flags from {count} documents.",
+      "RemovedCompendiumFlags": "Removed \"{scope}\" flags from {count} compendium documents.",
+      "DocNotFound": "Document not found: {uuid}",
+      "CleanedModule": "Cleaned module \"{module}\".",
+      "CleanedOrphaned": "Cleaned {count} orphaned modules.",
+      "CleanedInactive": "Cleaned {count} inactive modules.",
+      "DeletedStale": "Deleted {count} stale settings."
+    },
+    "Search": {
+      "Placeholder": "Search\u2026"
+    },
+    "Tooltip": {
+      "Search": "Filter entries by name, key, or value",
+      "Toggle": "Expand or collapse this namespace",
+      "Registered": "Registered by its module",
+      "Stale": "Key not declared by its module. Usually renamed or removed.",
+      "Card": {
+        "OrphanedSettings": "Settings owned by uninstalled modules",
+        "OrphanedWorldFlags": "World document flags owned by uninstalled modules",
+        "OrphanedCompendiumFlags": "Compendium document flags owned by uninstalled modules",
+        "StaleSettings": "Settings whose key is no longer declared by its module"
+      },
+      "Col": {
+        "Module": "Module ID that owns the data",
+        "Status": "Whether the owning module is installed, enabled, or missing",
+        "Count": "Total settings and flagged documents owned by this module",
+        "Data": "Data types this module owns",
+        "Key": "Setting key",
+        "Value": "Stored value",
+        "Registered": "Whether the key is declared by the module",
+        "Document": "Document holding the flags",
+        "Type": "Document type",
+        "Pack": "Compendium pack",
+        "FlagKeys": "Top-level flag keys",
+        "Actions": "Per-row actions"
+      },
+      "Data": {
+        "Settings": "Has world settings",
+        "WorldFlags": "Has flags on world documents",
+        "CompendiumFlags": "Has flags on compendium documents",
+        "Stale": "Has stale (unregistered) settings"
+      }
+    },
+    "Empty": {
+      "Settings": "No module settings found in world storage.",
+      "WorldFlags": "No flag scopes found in world documents.",
+      "CompendiumFlags": "No flag scopes found in compendium documents."
+    }
+  }
+}

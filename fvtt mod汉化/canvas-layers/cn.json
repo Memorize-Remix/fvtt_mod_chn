@@ -1,0 +1,109 @@
+
+    "CanvasLayers": {
+        "General": {
+            "Layer": "图层",
+            "Layers": "图层",
+            "Tiles": "图块",
+            "Drawings": "绘图",
+            "Confirm": "确认",
+            "Cancel": "取消"
+        },
+        "UI": {
+            "AddCanvasLayer": "添加新场景绘制图层",
+            "AddCanvasLayerTitle": "{scene} - 新建绘制图层",
+            "EditCanvasLayerTitle": "{scene} - 编辑绘制图层",
+            "LayerMenu": "图层菜单",
+            "UsedLayersTitle": "包含的画布图层",
+            "LayerMenuNoControlled": "无玩家"
+        },
+        "GuideDialog": {
+            "Title": "Canvas Layers指南",
+            "Overview": {
+                "Title": "概述",
+                "Intro": "画布图层目前允许你将<strong>绘图</strong>和<strong>图块</strong>添加到GM创建的不同图层中。",
+                "Description": "你可以使用不同类型的图层：",
+                "OpenTitle": "开放图层",
+                "OpenDescription": "这些图层由GM和玩家单独切换，以过滤他们自己在画布上看到的内容，而不影响其他人。",
+                "ControlledTitle": "受控图层",
+                "ControlledDescription": "受控图层的可见性由GM控制。玩家无法切换它们的开启或关闭状态。"
+            },
+            "Open": {
+                "Title": "开放图层",
+                "Example1": {
+                    "Title": "示例1",
+                    "Description": "这里我设置了四个开放图层。我为自己激活了区域图层。"
+                },
+                "Example2": {
+                    "Title": "示例2",
+                    "Description": "这里我停用了之前的图层并激活了城市图层。"
+                },
+                "Example3": {
+                    "Title": "示例3",
+                    "Description": "我将区域、城市和兴趣点图层中所有位于Pronas国家的绘图也分配给了Pronas国家图层。这样分组可能很有用。"
+                }
+            },
+            "Controlled": {
+                "Title": "受控图层",
+                "Example1": {
+                    "Title": "示例1",
+                    "Description": "这里我设置了一个带有激活幻象的场景。有一个所有人都能看到的图块显示着正常的房子。我添加了一个受控图层来显示可怕的真相，'真实外观'。"
+                },
+                "Example2": {
+                    "Title": "示例2",
+                    "Description": "GM可以通过正常左键点击来为自己切换此图层的可见性。"
+                },
+                "Example3": {
+                    "Title": "示例3",
+                    "Description": "玩家无法看到此图层的存在，使其成为一个沉浸式的秘密。"
+                },
+                "Example4": {
+                    "Title": "示例4",
+                    "Description": "GM可以右键点击图层并设置为对选定的玩家可见。可怕的真相被揭露了！其他玩家仍然只能看到正常的房子。"
+                }
+            },
+            "Macros": {
+                "Title": "宏",
+                "AddToLayers": {
+                    "Title": "添加到图层",
+                    "Description": "选择一组绘图或图块。使用此宏将打开一个对话框，允许你将所有选定的画布可放置对象添加到其他图层。你可以选择覆盖它们所属的任何现有图层。"
+                }
+            }
+        },
+        "LayerMenu": {
+            "Title": "{scene} - 图层菜单",
+            "LayersSection": {
+                "Title": "图层",
+                "ToggleActive": "切换激活",
+                "EditName": "编辑名称",
+                "Favorite": "标记为收藏",
+                "Remove": "清理图层",
+                "RemoveMenu": {
+                    "Title": "{scene} - {layer}",
+                    "RemoveConfirmationOptionText": "选择你希望删除的与此图层链接的任何画布可放置对象组。如果选定的可放置对象<strong>仅</strong>属于此图层，则会被删除，否则它们只是从此图层解耦，保留所有其他图层。"
+                }
+            }
+        },
+        "AddToLayersMenu": {
+            "Title": "添加到图层",
+            "Hint": "使用此宏将选定的图层添加到画布可放置对象中。",
+            "SelectedLayers": "选定的图层",
+            "OverwriteLayers": "用选定的图层覆盖现有图层？",
+            "SetLayersButton": "设置图层"
+        },
+        "PlayerSelectDialog": {
+            "Title": "{layer} - 玩家选择对话框",
+            "Info": "切换哪些玩家可以看到此图层"
+        },
+        "Constants": {
+            "LayerType": {
+                "Open": "开放",
+                "Controlled": "受控"
+            }
+        },
+        "Errors": {
+            "GMOnly": "此宏仅适用于GM！",
+            "NoSceneLayers": "此场景上没有可用的图层！",
+            "NoPlaceablesSelected": "当前没有选中的可用画布对象！"
+        }
+    }
+}

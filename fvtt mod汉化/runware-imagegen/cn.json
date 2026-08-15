@@ -1,0 +1,83 @@
+
+  "runware-image-generator": {
+    "settings": {
+      "apiKey": {
+        "name": "Runware API 密钥",
+        "hint": "用于图像生成的 Runware API 密钥。请在 https://runware.ai 获取"
+      },
+      "defaultModel": {
+        "name": "默认模型",
+        "hint": "用于图像生成的默认 AI 模型（例如：runware:100@1）"
+      },
+      "imageWidth": {
+        "name": "图像宽度",
+        "hint": "生成图像的默认宽度（像素）"
+      },
+      "imageHeight": {
+        "name": "图像高度",
+        "hint": "生成图像的默认高度（像素）"
+      },
+      "numberResults": {
+        "name": "生成数量",
+        "hint": "每次请求生成的图像数量（1-4）"
+      }
+    },
+    "dialog": {
+      "title": "生成 AI 图像",
+      "generating": "正在生成图像，请稍候...",
+      "actorInfo": "角色信息",
+      "generatingFor": "正在为以下角色生成：",
+      "prompt": {
+        "title": "图像提示词",
+        "positive": "正向提示词",
+        "positiveHint": "描述你希望在图像中看到的内容",
+        "negative": "反向提示词",
+        "negativeHint": "可选：描述你希望在图像中避免的内容"
+      },
+      "model": {
+        "title": "模型配置",
+        "label": "AI 模型",
+        "hint": "用于生成的 AI 模型",
+        "width": "宽度",
+        "height": "高度",
+        "numberResults": "图像数量",
+        "numberResultsHint": "要生成的图像数量（1-4）"
+      },
+      "advanced": {
+        "title": "高级选项",
+        "toggle": "显示高级选项",
+        "lora": "LoRA 模型（可选）",
+        "loraHint": "用于风格适配的可选 LoRA 模型",
+        "loraWeight": "权重",
+        "steps": "推理步数",
+        "stepsHint": "去噪步数（越多=质量越高，速度越慢）",
+        "cfgScale": "CFG 比例",
+        "cfgScaleHint": "遵循提示词的程度（越高=越贴近描述）",
+        "seed": "种子（可选）",
+        "seedHint": "用于可重现的结果，使用相同的种子"
+      },
+      "actions": {
+        "cancel": "取消",
+        "generate": "生成图像"
+      }
+    },
+    "notifications": {
+      "noApiKey": "请在模组设置中配置你的 Runware API 密钥",
+      "generating": "正在生成图像...",
+      "saving": "正在保存生成的图像...",
+      "saved": "图像已成功保存至 {path}",
+      "updated": "角色图像已更新",
+      "failed": "保存图像失败 - {error}",
+      "generationFailed": "图像生成失败 - {error}",
+      "alreadyGenerating": "生成任务正在进行中",
+      "noPrompt": "请输入提示词",
+      "noModel": "请输入模型"
+    },
+    "confirm": {
+      "setAsImage": {
+        "title": "设为角色图像？",
+        "content": "你要将此图像设为角色的立绘图像吗？"
+      }
+    }
+  }
+}

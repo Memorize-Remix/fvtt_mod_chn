@@ -1,0 +1,130 @@
+{
+    "tokenvisibility.name": "Alt. Token Visibility",
+    "tokenvisibility.nameAbbr": "ATV",
+
+    "tokenvisibility.settings.lm-algorithm.Name": "Light Monitor",
+    "tokenvisibility.settings.lm-algorithm.Hint": "Per Token: Add an active effect and status icon when token is in dim or no light. Viewpoint: When a user controls a token, mark tokens in dim or no light from perspective of that controlled token.",
+    "tokenvisibility.settings.lm-algorithm-none": "Disable",
+    "tokenvisibility.settings.lm-algorithm-tokens": "Per Token",
+    "tokenvisibility.settings.lm-algorithm-viewpoint": "Viewpoint",
+
+    "tokenvisibility.settings.points-center": "Token center only (1 point) ⚀",
+    "tokenvisibility.settings.points-two": "Token front-facing corners (2 points)",
+    "tokenvisibility.settings.points-three": "Token front-facing and center (3 points)",
+    "tokenvisibility.settings.points-four": "Token corners (4 points) ⚃",
+    "tokenvisibility.settings.points-five": "Token corners and center (5 points) ⚄",
+    "tokenvisibility.settings.points-eight": "Token midpoints and corners (8 points)",
+    "tokenvisibility.settings.points-nine": "Token midpoints, corners, center (9 points)",
+
+    "tokenvisibility.settings.range-algorithm.Name": "Points",
+    "tokenvisibility.settings.range-algorithm.Hint": "Number of points to use when testing whether a token is within range of another.",
+
+    "tokenvisibility.settings.range-points-3d.Name": "Test Bottom and Top Points",
+    "tokenvisibility.settings.range-points-3d.Hint": "When applicable, use token elevation and token height to construct additional points for testing range. (Requires Wall Height module.)",
+
+    "tokenvisibility.settings.range-distance-3d.Name": "Measure Distance in 3d",
+    "tokenvisibility.settings.range-distance-3d.Hint": "Whether to measure token visibility range calculations in 3 dimensions, versus 2 (overhead view).",
+
+    "tokenvisibility.settings.los-algorithm.Name": "Algorithm",
+    "tokenvisibility.settings.los-algorithm.Hint": "How to test a token's line-of-sight to another (target) token.",
+
+    "tokenvisibility.settings.los-percent.Name": "Percent Threshold",
+    "tokenvisibility.settings.los-percent.Hint": "Percentage of the token hit area that must be viewable to another token to be considered visible by that other token. For points, this is the percentage of target points that must be visible. If set to 0, then if any part of the token (or any point) is viewable, it is considered visible.",
+
+    "tokenvisibility.settings.los-large-target.Name": "Large Token Subtargeting",
+    "tokenvisibility.settings.los-large-target.Hint": "If the target token is larger than the grid square, consider the token visible if at least one grid square worth of token is visible.",
+
+    "tokenvisibility.settings.los-algorithm-points": "Points",
+    "tokenvisibility.settings.los-algorithm-geometric": "Geometric",
+    "tokenvisibility.settings.los-algorithm-webgl2": "WebGL2",
+    "tokenvisibility.settings.los-algorithm-webgpu": "WebGPU",
+    "tokenvisibility.settings.los-algorithm-per-pixel": "Face Points Lattice",
+    "tokenvisibility.settings.los-algorithm-sample-pixel": "Sample Pixel",
+
+    "tokenvisibility.settings.los-points-viewer.Name": "Points",
+    "tokenvisibility.settings.los-points-viewer.Hint": "How many points on the viewer to test for the viewer's line-of-sight. Foundry default is 'Center' (one point).",
+
+    "tokenvisibility.settings.los-inset-viewer.Name": "Inset",
+    "tokenvisibility.settings.los-inset-viewer.Hint": "For viewer points other than the center, what percentage to inset the point from the token border towards the token center.",
+
+    "tokenvisibility.settings.los-points-options-viewer.Name": "Point Options",
+    "tokenvisibility.settings.los-points-options-viewer.Hint": "Points on the viewer to test for the viewer's line-of-sight. Each represents an 'eye' of the viewer.",
+
+    "tokenvisibility.settings.los-points-options-target.Name": "Point Options",
+    "tokenvisibility.settings.los-points-options-target.Hint": "Points on the target to test for the viewer's line-of-sight.",
+
+    "tokenvisibility.settings.los-points-target.Name": "Points",
+    "tokenvisibility.settings.los-points-target.Hint": "How many points on the target to test for the viewer's line-of-sight.",
+
+    "tokenvisibility.settings.los-inset-target.Name": "Inset",
+    "tokenvisibility.settings.los-inset-target.Hint": "For target points other than the center, what percentage to inset the point from the token border towards the token center.",
+
+    "tokenvisibility.settings.debug-range.Name": "Debug Range",
+    "tokenvisibility.settings.debug-range.Hint": "If enabled, will draw representation on the canvas of the token vision range. Note that tokens still may be visible if illuminated but out of range.",
+
+    "tokenvisibility.settings.debug-los.Name": "Debug LOS",
+    "tokenvisibility.settings.debug-los.Hint": "If enabled, will draw representation on the canvas of the token vision line-of-sight. If Area3d is enabled, you must target a token to make the debug window appear.",
+
+    "tokenvisibility.settings.button-foundry.Label": "Reset to Foundry Defaults",
+    "tokenvisibility.settings.button-foundry.Notification": "Alt. Token Visibility settings changed to Foundry defaults",
+
+    "tokenvisibility.settings.button-dnd5e.Label": "Reset to DND5e DMG",
+    "tokenvisibility.settings.button-dnd5e.Notification": "Alt. Token Visibility settings changed to D&D 5e DMG defaults",
+
+    "tokenvisibility.settings.button-threeD.Label": "Reset to 3-D",
+    "tokenvisibility.settings.button-threeD.Notification": "Alt. Token Visibility settings changed to 3D defaults",
+
+    "tokenvisibility.settings.button-documentation.Label": "Open Documentation",
+    "tokenvisibility.settings.button-issue.Label": "Report an Issue",
+
+    "tokenvisibility.settings.prone-status-id.Name": "'Prone' Status Id",
+    "tokenvisibility.settings.prone-status-id.Hint": "String indicating the id for the token 'prone' status. If set, prone tokens may have a different height for all vision calculations, depending on the Prone Multiplier setting. Required if Prone Tokens Block is enabled.",
+
+    "tokenvisibility.settings.token-hp-attribute.Name": "Token HP Attribute",
+    "tokenvisibility.settings.token-hp-attribute.Hint": "String indicating where the hit points for a `token.actor` can be found. Required if Dead or Live Tokens Block are enabled.",
+
+    "tokenvisibility.settings.prone-multiplier.Name": "Prone Multiplier",
+    "tokenvisibility.settings.prone-multiplier.Hint": "What percentage of token height should be used for prone tokens. For example, if a token is 5 feet high, and the multiplier is set to 0.6, prone tokens would be considered 3 feet high. This affects the vision point for prone tokens as well as the shape used if prone tokens block vision.",
+
+    "tokenvisibility.settings.vision-height-multiplier.Name": "Vision Height Multiplier",
+    "tokenvisibility.settings.vision-height-multiplier.Hint": "What percentage of token height is its vision located? 0% means the very bottom; 100% (1) means very top.",
+
+    "tokenvisibility.settings.live-tokens-block.Name": "Live Tokens Block",
+    "tokenvisibility.settings.live-tokens-block.Hint": "If enabled, live tokens block vision as would a token-shaped wall at that position.",
+
+    "tokenvisibility.settings.dead-tokens-block.Name": "Dead Tokens Block",
+    "tokenvisibility.settings.dead-tokens-block.Hint": "If enabled, dead tokens block vision as would a token-shaped wall at that position.",
+
+    "tokenvisibility.settings.prone-tokens-block.Name": "Prone Tokens Block",
+    "tokenvisibility.settings.prone-tokens-block.Hint": "If enabled, prone tokens block vision (based on their height as modified by the prone multiplier). If neither dead nor live tokens block, this does nothing.",
+
+    "tokenvisibility.template.settings-config.tabs.range": "Range",
+    "tokenvisibility.template.settings-config.tabs.los_viewer": "Viewer LOS",
+    "tokenvisibility.template.settings-config.tabs.los_target": "Target LOS",
+
+    "tokenvisibility.template.settings-config.range": "Range",
+    "tokenvisibility.template.settings-config.rangeDescription": "How distance between the viewer token and the target token is measured.",
+    "tokenvisibility.template.settings-config.viewer": "Viewer Line-of-Sight (LOS)",
+    "tokenvisibility.template.settings-config.viewerDescription": "The viewer is the token with the vision. These settings adjust how the viewer's line-of-sight is treated.",
+
+    "tokenvisibility.template.settings-config.target": "Target Line-of-Sight (LOS)",
+    "tokenvisibility.template.settings-config.targetDescription": "The target is the token being perceived. These settings adjust how the target shape is considered programatically.",
+
+    "tokenvisibility.template.settings-config.tabs.other": "Other",
+    "tokenvisibility.template.settings-config.other": "Other Vision Settings",
+    "tokenvisibility.template.settings-config.otherDescription": "Miscellaneous settings that affect how token line-of-sight is calculated.",
+
+    "tokenvisibility.settings-submenu.tabs.range": "Range",
+    "tokenvisibility.settings-submenu.tabs.losViewer": "Viewer LOS",
+    "tokenvisibility.settings-submenu.tabs.losTarget": "Target LOS",
+    "tokenvisibility.settings-submenu.tabs.other": "Other",
+
+    "tokenvisibility.settings.submenu.title": "Alternative Token Visibility Settings",
+    "tokenvisibility.settings.submenu.Name": "ATV Settings",
+    "tokenvisibility.settings.submenu.Label": "Configure",
+    "tokenvisibility.settings.submenu.Hint": "Hint",
+
+    "tokenvisibility.settings.submenu.notifyDND5e": "Changing settings to dnd5e.",
+    "tokenvisibility.settings.submenu.notify3d": "Changing settings to 3d."
+
+ }

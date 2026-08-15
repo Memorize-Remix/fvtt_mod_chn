@@ -1,0 +1,146 @@
+
+    "pdf-pager": {
+        "TitleActorPDFs": "角色表PDF",
+        "TitleItemPDFs": "物品表PDF",
+        "TitleMenusActor": "从右键菜单打开角色的PDF代码",
+        "TitleMenusItem": "从右键菜单打开物品的PDF代码",
+        "PDFSheetName": "PDF表",
+        "PageOffset.Label": "页码偏移",
+        "Code.Label": "PDF代码",
+        "Error.NoPDFWithCode": "找不到指定代码的PDF文件。",
+        "Error.FailedLoadPage": "加载指定代码PDF页面失败。",
+        "Warning.ThingDeleted": "在打开的PDF页面中显示的'{name}'已被删除",
+        "Warning.OnlyGM": "只有GM可以执行{function}",
+        "Warning.NoPDFforListFields": "未找到'{docname}'对应的PDF",
+        "alwaysLoadPdf.Name": "立即显示PDF",
+        "alwaysLoadPdf.Hint": "勾选后，选择页面时将立即显示PDF，无需点击'加载PDF'按钮",
+        "dropPdfLink.Name": "拖放时创建@PDF链接",
+        "dropPdfLink.Hint": "当将日志PDF页面拖放到其他文档时，创建@PDF[journalname#pagename|page=1]{pagename}链接而非@UUID链接",
+        "formFillPdf.Name": "支持可填写PDF表",
+        "formFillPdf.Hint": "启用可填写PDF表作为角色表的替代选项",
+        "actorConfig.Name": "角色字段映射",
+        "actorConfig.Hint": "定义JavaScript对象，包含PDF字段与角色字段的映射关系，例如：{ \"Character_Name\" : \"name\", \"health\" : \"system.health.hp\" }",
+        "itemConfig.Name": "物品字段映射",
+        "itemConfig.Hint": "定义JavaScript对象，包含PDF字段与物品字段的映射关系，例如：{ \"Name\" : \"name\", \"health\" : \"system.health.hp\" }",
+        "hideFieldBg.Name": "隐藏可编辑字段背景",
+        "hideFieldBg.Hint": "禁用为可编辑字段设置显式背景颜色(覆盖PDFJS默认样式)",
+        "hideFieldBorder.Name": "隐藏可编辑字段边框",
+        "hideFieldBorder.Hint": "禁用为可编辑字段绘制边框(覆盖PDFJS默认样式)",
+        "editableAnnotations.Name": "允许PDF页面添加批注",
+        "editableAnnotations.Hint": "允许拥有权限的玩家在普通PDF页面上添加墨迹和文本批注。批注存储在JournalEntryPage上，所有查看该PDF页面的玩家都可见",
+        "noSpellCheck.Name": "禁用拼写检查",
+        "noSpellCheck.Hint": "勾选后，将禁用PDF可编辑字段中的拼写检查",
+        "readPdfFields.Name": "从PDF读取字段",
+        "readPdfFields.Hint": "启用后，打开PDF时会将其中的字段数据(批注)复制到对应的角色字段，覆盖角色上存储的旧值(启用此选项时将禁用PDF编辑)",
+        "ignoreBookmarkZoom.Name": "忽略书签中的缩放设置",
+        "ignoreBookmarkZoom.Hint": "始终忽略PDF自带书签中配置的缩放",
+        "maxTocDepth.Name": "目录最大嵌套深度",
+        "maxTocDepth.Hint": "日志页面左侧边栏中目录的最大嵌套层级",
+        "defaultZoom.Name": "默认缩放",
+        "defaultZoom.Hint": "选择打开PDF时使用的默认缩放设置(固定值需要设置下一个参数)",
+        "hideToolbar.Name": "隐藏PDF浏览工具",
+        "hideToolbar.Hint": "编辑可填写PDF表时隐藏PDF浏览工具",
+        "showMapTooltips.Name": "显示映射提示",
+        "showMapTooltips.Hint": "在作为角色/物品表显示的可填写PDF上，为每个字段添加提示，显示PDF字段名称以及映射到的角色/物品字段(如果有)",
+        "showFieldMenus.Name": "编辑字段映射",
+        "showFieldMenus.Hint": "将每个可编辑字段替换为下拉菜单，可从中选择角色/物品中的字段(如果字段已配置使用getter/setter函数，则该字段不可编辑)",
+        "showTitleBarButtons.Name": "在表标题栏显示按钮",
+        "showTitleBarButtons.Hint": "勾选后，在角色/物品PDF表的标题栏显示按钮",
+        "showGmButtons.Name": "在标题栏显示GM按钮",
+        "showGmButtons.Hint": "在标题栏显示'记录PDF字段'和'检查数据'按钮",
+        "autoScrollToc.Name": "自动滚动目录",
+        "autoScrollToc.Hint": "当PDF视图变化时，自动滚动日志目录以确保当前视图可见",
+        "labelClickableColor": {
+            "Name": "可点击文本颜色",
+            "Hint": "定义可点击标签的背景颜色(应设置较低的透明度)"
+        },
+        "labelHoverColor": {
+            "Name": "可点击文本悬停颜色",
+            "Hint": "定义鼠标悬停在可点击文本上时的背景颜色(应设置较低的透明度)"
+        },
+        "labelClickColor": {
+            "Name": "可点击文本点击颜色",
+            "Hint": "定义点击可点击文本时的背景颜色(应设置较低的透明度)"
+        },
+        "ChoosePdfForm": {
+            "Title": "为'{name}'选择PDF",
+            "Prompt": "自定义PDF:",
+            "Hint": "选择用于此特定角色的PDF",
+            "Submit": "保存自定义PDF"
+        },
+        "Zoom": {
+            "none": "无",
+            "page-actual": "实际大小",
+            "page-width": "页面宽度",
+            "page-fit": "页面适应",
+            "auto": "自动缩放",
+            "number": "固定百分比"
+        },
+        "defaultSpread.Name": "默认展开",
+        "defaultSpread.Hint": "设置查看PDF时使用的显式展开模式",
+        "Spread": {
+            "none": "---",
+            "no-spread": "不展开",
+            "odd-spread": "奇数页展开",
+            "even-spread": "偶数页展开"
+        },
+        "defaultScroll.Name": "默认滚动模式",
+        "defaultScroll.Hint": "设置查看PDF时使用的显式滚动模式",
+        "Scroll": {
+            "none": "---",
+            "vertical": "垂直",
+            "horizontal": "水平",
+            "wrapped": "环绕",
+            "page": "分页"
+        },
+        "zoomPercentage.Name": "默认缩放固定百分比",
+        "zoomPercentage.Hint": "当默认缩放设置为'固定百分比'时的默认缩放百分比",
+        "showInPDF": "打开PDF",
+        "actorType.Name": "角色类型: '{name}'",
+        "actorType.Hint": "定义从角色右键菜单中选择'在PDF中显示'时使用的PDF页面代码",
+        "itemType.Name": "物品类型: '{name}'",
+        "itemType.Hint": "定义从物品右键菜单中选择'在PDF中显示'时使用的PDF页面代码",
+        "actorSheet.Name": "角色表: '{name}'",
+        "actorSheet.Hint": "选择用于'{name}'角色的PDF文件",
+        "itemSheet.Name": "物品表: '{name}'",
+        "itemSheet.Hint": "选择用于'{name}'物品的PDF文件",
+        "inspector": {
+            "help1": "你可以保持此窗口打开并返回到系统表。窗口将每10秒刷新一次以反映对角色所做的更改，但你也可以通过标题栏上的'刷新'按钮手动刷新。",
+            "help2": "在PDF中使用这些数据路径时应非常小心。颜色编码是'最佳猜测'，虽然通常正确，但某些系统可能有例外或导致你输入表的更改被系统覆盖。",
+            "help3": "虽然提供了复制 /roll 语法的按钮以方便使用，但系统可能会在掷骰时省略或更改数据。如果/roll语法未产生预期结果，这不是错误。",
+            "DANGER": {
+                "Safe": "此路径使用可能是安全的。",
+                "Low": "此路径不太可能危险，但应谨慎使用。",
+                "High": "此路径极有可能在使用时导致问题。",
+                "Critical": "在任何情况下都不应使用此路径！"
+            },
+            "CopyDataPath": "复制数据路径到剪贴板",
+            "CopyRollPath": "复制/roll语法路径到剪贴板",
+            "Refresh": "刷新",
+            "CopiedToClipboard": "已复制！"
+        },
+        "actorSheetButton": {
+            "CustomPDF": "自定义PDF",
+            "chooseImage": "设置肖像",
+            "ShowPdfFields": "记录PDF字段",
+            "InspectData": "检查数据"
+        },
+        "itemSheetButton": {
+            "CustomPDF": "自定义PDF",
+            "chooseImage": "设置图标",
+            "ShowPdfFields": "记录PDF字段",
+            "InspectData": "检查数据"
+        },
+        "logPdfFields": {
+            "introduction": "以下是显示的PDF页面中所有已知字段的列表",
+            "pageNumber": "--- 第{pageNumber}页 ---"
+        },
+        "noteConfig": {
+            "pdfPagePrompt": "PDF页码"
+        },
+        "ignoreField": {
+            "label": "<<<忽略此字段>>>"
+        },
+        "noMacroMapping": "--无映射--"
+    }
+}

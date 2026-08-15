@@ -1,0 +1,100 @@
+
+    "smarttarget.settings.altTarget.name": "使用Alt+点击进行目标选择",
+    "smarttarget.settings.altTarget.hint": "通过按下Alt+点击来选择Token目标，按住Shift可选择多个目标",
+    
+    "smarttarget.settings.alwaysTarget.name": "始终选择目标",
+    "smarttarget.settings.alwaysTarget.hint": "点击非拥有的Token时自动将其设为目标",
+    
+    "smarttarget.settings.targetingMode.name": "目标选择模式",
+    "smarttarget.settings.targetingMode.hint": "默认：FVTT默认行为。Alt+点击：通过按下Alt+点击选择Token目标，按住Shift可选择多个。始终选择目标：点击非拥有的Token时自动将其设为目标。\n你可以在配置控制中重新绑定ALT键",
+    
+    "smarttarget.settings.targetingMode.opt0": "默认",
+    "smarttarget.settings.targetingMode.opt1": "Alt+点击",
+    "smarttarget.settings.targetingMode.opt2": "始终选择目标（仅玩家）",
+    
+    "smarttarget.settings.portraitPips.name": "显示立绘指示器而非颜色指示器",
+    "smarttarget.settings.portraitPips.hint": "为GM使用立绘，如果为分配的角色未找到立绘，则为玩家默认使用Token（需要刷新）。请注意所有指示器设置仅适用于图像指示器！",
+    
+    "smarttarget.settings.useToken.name": "使用Token而非立绘",
+    "smarttarget.settings.useToken.hint": "为玩家目标指示器使用Token而非立绘",
+    
+    "smarttarget.settings.useTokenGm.name": "GM图像",
+    "smarttarget.settings.useTokenGm.hint": "GM指示器立绘使用的图像",
+    "smarttarget.settings.useTokenGm.opt0": "玩家立绘",
+    "smarttarget.settings.useTokenGm.opt1": "Token立绘",
+    "smarttarget.settings.useTokenGm.opt2": "Token图像",
+    
+    "smarttarget.settings.insidePips.name": "将目标指示器保持在Token内部",
+    "smarttarget.settings.insidePips.hint": "移动目标指示器使其保持在Token边框内部",
+    
+    "smarttarget.settings.pipImgScale.name": "目标图标图像缩放",
+    "smarttarget.settings.pipImgScale.hint": "设置目标图标使用的图像缩放比例（默认：1）",
+    
+    "smarttarget.settings.pipOffsetManualY.name": "目标图像Y轴偏移",
+    "smarttarget.settings.pipOffsetManualY.hint": "为图像添加固定的Y轴偏移量（像素）（默认：0）",
+    
+    "smarttarget.settings.pipOffsetManualX.name": "目标图像X轴偏移",
+    "smarttarget.settings.pipOffsetManualX.hint": "为图像添加固定的X轴偏移量（像素）（默认：0）",
+    
+    "smarttarget.settings.pipScale.name": "目标图标大小",
+    "smarttarget.settings.pipScale.hint": "设置目标图标的大小（像素）（默认：12）",
+    
+    "smarttarget.settings.pipOffset.name": "目标图标间距",
+    "smarttarget.settings.pipOffset.hint": "设置图标之间的距离（像素）（默认：16）",
+    
+    "smarttarget.settings.borderThicc.name": "边框厚度",
+    "smarttarget.settings.borderThicc.hint": "设置边框的厚度（像素）（默认：2）",
+    
+    "smarttarget.settings.crossairSpread.name": "将目标箭头靠得更近",
+    "smarttarget.settings.crossairSpread.hint": "将目标箭头靠得更近，使其位于Token框内部（仅适用于默认目标箭头）",
+    
+    "smarttarget.settings.crossairColor.name": "目标箭头颜色",
+    "smarttarget.settings.crossairColor.hint": "目标箭头的十六进制颜色（默认：#ff9829）。留空则使用基于阵营的颜色",
+    
+    "smarttarget.settings.target-indicator.name": "目标指示器",
+    "smarttarget.settings.target-indicator.hint": "为目标Token选择指示器",
+    "smarttarget.settings.target-indicator-choices-0": "默认FVTT指示器",
+    "smarttarget.settings.target-indicator-choices-1": "十字准星1",
+    "smarttarget.settings.target-indicator-choices-2": "十字准星2",
+    "smarttarget.settings.target-indicator-choices-3": "靶心1",
+    "smarttarget.settings.target-indicator-choices-4": "靶心2",
+    "smarttarget.settings.target-indicator-choices-5": "更好的目标指示器",
+    
+    "smarttarget.settings.use-player-color.name": "使用玩家颜色作为目标指示器",
+    "smarttarget.settings.use-player-color.hint": "使用玩家颜色作为目标指示器",
+    
+    "smarttarget.settings.customHotKeyTarget.name": "使用自定义热键选择目标",
+    "smarttarget.settings.customHotKeyTarget.hint": "通过按下自定义热键选择Token目标，按住Shift可选择多个",
+    
+    "smarttarget.settings.customHotKeyTargetMulti.name": "使用自定义热键多目标选择",
+    "smarttarget.settings.customHotKeyTargetMulti.hint": "通过按下自定义热键多目标选择Token，按住Shift可选择多个",
+    
+    "smarttarget.settings.releaseBehaviour.name": "释放行为",
+    "smarttarget.settings.releaseBehaviour.hint": "此设置决定在点击多个Token时刷新目标的行为。'粘性'模式将选择每个点击的Token而不取消任何目标，必须再次点击Token才能取消目标。'标准'模式更接近标准FVTT行为，点击新Token时自动取消所有先前Token的目标，必须按住Shift同时点击才能选择多个Token",
+    "smarttarget.settings.releaseBehaviour.choice0.Standard": "标准",
+    "smarttarget.settings.releaseBehaviour.choice0.Sticky": "粘性",
+    
+    "smarttarget.warningNoSelectMoreThanOneToken": "未选择Token来设置目标",
+    "smarttarget.controls.cleartargets.name": "清除所有目标",
+    
+    "smarttarget.settings.forceToUseSelectedTokenForPortraitPips.name": "强制使用选定Token的图像构建指示器立绘",
+    "smarttarget.settings.forceToUseSelectedTokenForPortraitPips.hint": "强制使用选定Token的图像构建指示器立绘",
+    
+    "smarttarget.settings.useOwnedTokenIfNoTokenIsSelected.name": "如果未选择Token则使用拥有的Token（如果你是GM则忽略）",
+    "smarttarget.settings.useOwnedTokenIfNoTokenIsSelected.hint": "此设置仅在与'强制使用选定Token的图像构建指示器立绘'结合使用时才有意义（如果你是GM则忽略）",
+    "smarttarget.keybindings.altkey": "目标选择修饰键",
+    "smarttarget.keybindings.clearAllTargets": "清除所有目标",
+    
+    "smarttarget.settings.pipPosition.name": "目标指示器位置",
+    "smarttarget.settings.pipPosition.hint": "设置目标指示器的位置（仅限指示器立绘）",
+    "smarttarget.settings.pipPosition.topleft": "左上",
+    "smarttarget.settings.pipPosition.topright": "右上",
+    "smarttarget.settings.pipPosition.bottomleft": "左下",
+    "smarttarget.settings.pipPosition.bottomright": "右下",
+    "smarttarget.settings.pipPosition.centertop": "顶部居中",
+    "smarttarget.settings.pipPosition.centerbottom": "底部居中",
+    "smarttarget.settings.pipPosition.random": "随机",
+    
+    "smarttarget.settings.templateTargeting.name": "测量板目标选择",
+    "smarttarget.settings.templateTargeting.hint": "在测量板上按下Alt+点击时，选择测量板区域内的所有Token"
+}

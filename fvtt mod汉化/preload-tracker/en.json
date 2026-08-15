@@ -1,0 +1,42 @@
+{
+    "preload-tracker":{
+        "title": "Preload Status",
+        "preloading": "Preloading:",
+        "preloadingScene": "Preloading scene...",
+        "finished": "Finished",
+        "loading": "Loading",
+        "waiting": "Waiting",
+        "close": "Close",
+        "activate": "Activate",
+		"alreadyActive": "Already active",
+        "activateError": "Activate failed; see console.",
+        "activateBtnTitle": "Waiting for all connected users to finish preloading",
+        "libwrapperReq": "Preload Tracker: libWrapper is required. Enable it and reload.",
+		"preloadScene": "Preload Scene",
+		"preloadingSound": "Preloading Sound",
+        "audioTitle": "Audio Preload Tracker",
+        "playBtn": "Play",
+        "playHint": "Play sound",
+        "noUsers": "No users connected.",
+        "playError": "Error playing (check console).","sendToChat": "Send to Chat",
+		"raceResultsTitle": "Preload Race Results",
+		"firstPlace": "1st place",
+		"secondPlace": "2nd place",
+		"thirdPlace": "3rd place",
+		"lastPlace": "Last place",
+        "settings": {
+			"enableRaceModeName": "Enable Race Mode",
+			"enableRaceModeHint": "Show a race progress bar with rabbit/turtle icons and trophy placements when everyone finishes.",
+            "debugLevelName": "Enable debugging",
+            "debugLevelHint": "Set the debug level for Preload Tracker.",
+            "debugLevelNone": "None",
+            "debugLevelError": "Errors",
+            "debugLevelWarn": "Warnings",
+            "debugLevelAll": "All",
+			"raceResultsScopeName": "Race Results Include",
+			"raceResultsScopeHint": "Choose who is included in race placements.",
+			"raceResultsPlayers": "Players only",
+			"raceResultsAll": "GM + Players"
+        }
+    }
+}

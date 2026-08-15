@@ -1,0 +1,375 @@
+
+  "ASSET_LIBRARIAN": {
+    "Title": "资源浏览器",
+    "WindowTitle": {
+      "WorldView": "资源浏览器 - 世界视图",
+      "CompendiumView": "资源浏览器 - 合集视图"
+    },    
+    "Tabs": {
+      "Actor": "角色",
+      "Item": "物品",
+      "JournalEntry": "日志",
+      "Scene": "场景",
+      "Macro": "宏",
+      "Cards": "牌堆",
+      "Playlist": "播放列表",
+      "Adventure": "冒险",
+      "RollTable": "随机表",
+      "Image": "媒体",
+      "SetDefault": "设为默认标签页",
+      "ClearDefault": "清除默认标签页",
+      "DefaultTooltip": "默认标签页"
+    },
+    "Mode": {
+      "World": "世界",
+      "Compendiums": "合集"
+    },
+    "Folders": {
+      "All": "全部",
+      "Unsorted": "未分类",
+      "SearchPlaceholder": "过滤文件夹..."
+    },
+    "Search": {
+      "Placeholder": "搜索...",
+      "Clear": "清除搜索"
+    },
+    "Counts": {
+      "Showing": "显示 {visible} / {total}"
+    },
+    "Empty": {
+      "NoAssetsFound": "未找到资源",
+      "NoTabsEnabled": "资源浏览器设置中所有标签页都已禁用。请至少启用一个标签页。"
+    },
+    "Filters": {
+      "Title": "过滤",
+      "ResetAll": "重置所有过滤",
+      "UnavailableInCompendium": "合集索引中自定义字段不可用"
+    },
+    "ViewMode": {
+      "List": "列表",
+      "ColumnList": "列列表",
+      "Small": "小",
+      "Medium": "中",
+      "Large": "大"
+    },
+    "Buttons": {
+      "ShowDuplicates": "显示重复项",
+      "Refresh": "刷新",
+      "RefreshImages": "刷新图像",
+      "Scanning": "扫描中...",
+      "ConfigureImagePaths": "配置图像路径",
+      "ConfigureCompendiums": "配置合集",
+      "ConfigureCategories": "配置分类",
+      "ConfigureTagGroups": "配置标签组",
+      "BulkEditTags": "批量编辑标签",
+      "BulkSelectMode": "批量选择模式",
+	  "BulkSelectNone": "全不选",
+	  "BulkSelectAll": "全选",
+      "BulkClearSelection": "清除批量选择",
+      "BulkEditSelected": "编辑选中标签",
+      "ConfigureCustomFilters": "配置自定义过滤",
+      "SendToPlayer": "发送给玩家",
+      "CreateTile": "创建图块",
+      "SetBackground": "设为背景",
+      "CreateScene": "创建场景",
+	  "CopyPath": "复制路径",
+      "ShowFolder": "显示文件夹",
+      "OpenCompendium": "打开合集"
+    },
+    "Controls": {
+      "PaletteTitle": "资源浏览器",
+      "OpenBrowser": "打开资源浏览器"
+    },
+    "Categories": {
+      "All": "全部",
+      "Images": "图片",
+	  "Audio": "音频",
+	  "Video": "视频"
+    },
+	 "AudioPreview": {
+		"NowPlaying": "正在预览",
+		"Stop": "停止"
+	  },
+    "Notifications": {
+      "ItemNotFound": "物品未找到",
+      "AssetDeleted": "已删除 {name}",
+      "ImagesFound": "找到 {count} 个扫描的资源",
+  "AssetFolderPath": "{name} 位于 {folder}",
+  "AssetPathCopied": "已复制资源路径：{path}",
+  "AssetPathCopyFailed": "无法将资源路径复制到剪贴板。"
+    },
+    "Welcome": {
+      "Title": "欢迎使用Asset Librarian",
+      "CommunityTitle": "加入社区",
+      "CommunityText": "加入我们的 Discord。",
+      "SupportTitle": "支持开发",
+      "SupportPatreonText": "如果你想支持开发，请查看 Patreon 上的会员选项。",
+      "SupportKofiText": "如果你愿意，也可以通过 Ko-fi 支持。",
+      "DocsTitle": "文档",
+      "DocsText": "需要帮助入门？请阅读文档或在 Discord 中提问。",
+      "Buttons": {
+        "Discord": "加入 Discord",
+        "Patreon": "成为会员",
+        "Kofi": "请我喝咖啡",
+        "Docs": "文档"
+      },
+      "Links": {
+        "DiscordUrl": "https://discord.gg/fycwH79s2y",
+        "PatreonUrl": "https://patreon.com/wgtngm",
+        "KofiUrl": "https://ko-fi.com/wgtngm",
+        "DocsUrl": "https://campaigncodex.wgtngm.com/"
+      }
+    },
+    "Settings": {
+      "CustomCategoryGroups": {
+        "Name": "自定义分类组",
+        "Hint": "可选的逗号分隔额外分类组，用于物品浏览（例如：圣物、配方）。名称必须唯一且不能重用内置组名。"
+      },
+      "TagRegistry": {
+        "Name": "标签注册表",
+        "Hint": "资源浏览器分类/过滤标签的内部自动完成缓存。"
+      },
+      "TagGroupConfig": {
+        "Name": "标签组配置",
+        "Hint": "将自定义过滤标签映射到自定义组。"
+      },
+      "openTags": {
+        "Name": "展开的标签",
+        "Hint": "默认展开的标签组数量（0 表示全部）。"
+      },
+      "AllowPlayersSceneControl": {
+        "Name": "允许玩家场景控件按钮",
+        "Hint": "如果启用，玩家可以看到并使用资源浏览器场景控件按钮。"
+      },
+      "ShowWelcomeMessage": {
+        "Name": "显示欢迎信息",
+        "Hint": "如果启用，每个模组版本会看到一次欢迎卡片。"
+      },
+      "LastWelcomeVersion": {
+        "Name": "上次欢迎版本",
+        "Hint": "内部设置，存储上次显示欢迎卡片的模组版本。"
+      },
+      "IncludedCompendiums": {
+        "Name": "包含的合集",
+        "Hint": "浏览时要包含哪些合集。"
+      },
+      "IncludeWorld": {
+        "Name": "包含世界资源",
+        "Hint": "在扫描中包含世界级资源。"
+      },
+      "EnableImageScanning": {
+        "Name": "启用图像扫描",
+        "Hint": "启用图像标签页以扫描图像和视频文件。"
+      },
+	  "EnableAudioScanning": {
+		"Name": "启用音频扫描",
+		"Hint": "在图像标签页扫描中包含音频和音乐文件。"
+	  },
+      "IncludeWorldPath": {
+        "Name": "包含世界图像",
+        "Hint": "扫描世界目录中的媒体文件。"
+      },
+      "FilterCollapsed": {
+        "Name": "过滤面板默认折叠",
+        "Hint": "过滤面板默认折叠。"
+      },
+      "FolderCollapsed": {
+        "Name": "文件夹面板默认折叠",
+        "Hint": "文件夹面板默认折叠。"
+      },
+      "ShowNestedFolderContent": {
+        "Name": "显示所有嵌套内容",
+        "Hint": "选择文件夹时，包含所有嵌套子文件夹的内容。"
+      },
+      "ImageScanPaths": {
+        "Name": "图像扫描路径",
+        "Hint": "逗号分隔的媒体文件扫描路径列表。"
+      },
+      "ViewMode": {
+        "Name": "视图模式",
+        "Hint": "资源在网格中的显示方式。"
+      },
+      "UseDiskThumbnailCache": {
+        "Name": "使用磁盘缓存（图像）",
+        "Hint": "将图像缩略图持久化到磁盘缓存。磁盘缓存需要手动清除。"
+      },
+      "UseDiskScenePreviewCache": {
+        "Name": "使用磁盘缓存（场景预览）",
+        "Hint": "将场景预览持久化到磁盘缓存。磁盘缓存需要手动清除。"
+      },
+      "CustomFilterFields": {
+        "Name": "自定义过滤字段",
+        "Hint": "用于过滤的自定义字段映射。"
+      },
+      "CategoryConfig": {
+        "Name": "分类配置",
+        "Hint": "系统类型到高级分类的映射。"
+      },
+      "ShowTab": {
+        "Actor": {
+          "Name": "显示角色",
+          "Hint": "在资源浏览器菜单中包含角色。"
+        },
+        "Item": {
+          "Name": "显示物品",
+          "Hint": "在资源浏览器菜单中包含物品。"
+        },
+        "JournalEntry": {
+          "Name": "显示日志",
+          "Hint": "在资源浏览器菜单中包含日志。"
+        },
+        "Scene": {
+          "Name": "显示场景",
+          "Hint": "在资源浏览器菜单中包含场景。"
+        },
+        "RollTable": {
+          "Name": "显示随机表",
+          "Hint": "在资源浏览器菜单中包含随机表。"
+        },
+        "Playlist": {
+          "Name": "显示播放列表",
+          "Hint": "在资源浏览器菜单中包含播放列表。"
+        },
+        "Macro": {
+          "Name": "显示宏",
+          "Hint": "在资源浏览器菜单中包含宏。"
+        },
+        "Cards": {
+          "Name": "显示卡牌堆",
+          "Hint": "在资源浏览器菜单中包含牌堆。"
+        },
+        "Adventure": {
+          "Name": "显示冒险",
+          "Hint": "在资源浏览器菜单中包含冒险。"
+        }
+      }
+    },
+    "Menus": {
+      "Compendiums": {
+        "Name": "选择合集",
+        "Label": "选择合集",
+        "Hint": "选择扫描时要包含哪些合集。"
+      },
+      "Filters": {
+        "Name": "自定义过滤字段",
+        "Label": "配置过滤",
+        "Hint": "自定义资源浏览器的过滤字段。"
+      },
+      "Categories": {
+        "Name": "分类配置",
+        "Label": "配置分类",
+        "Hint": "将系统类型映射到高级分类。"
+      },
+      "TagGroups": {
+        "Name": "标签组配置",
+        "Label": "配置标签组",
+        "Hint": "将自定义标签映射到自定义组。"
+      }
+    },
+    "Compendiums": {
+      "WindowTitle": "选择合集",
+      "Hint": "选择在合集模式浏览时要包含哪些合集：",
+      "RefreshCache": "刷新缓存",
+      "SelectAll": "全选",
+      "SelectNone": "全不选",
+      "Save": "保存",
+      "SelectedCount": "已选择 {count} 个合集",
+      "CacheRefreshed": "合集缓存已刷新。"
+    },
+    "CustomFilters": {
+      "WindowTitle": "自定义过滤字段",
+      "Hint": "添加自定义字段进行过滤。路径使用点表示法（例如：system.level）。",
+      "AddField": "添加字段",
+      "Save": "保存",
+      "PlaceholderKey": "键",
+      "PlaceholderLabel": "标签",
+      "PlaceholderPath": "system.path",
+      "Saved": "自定义过滤字段已保存！",
+      "Exported": "过滤包已导出到文件！",
+      "Imported": "过滤包已导入！点击保存以应用。",
+      "InvalidJson": "无效的 JSON 文件格式"
+    },
+    "CategoryConfig": {
+      "WindowTitle": "分类配置",
+      "Hint": "将系统文档类型分配到高级分类。",
+      "CustomGroupsValidationWarning": "某些自定义组被忽略。请使用逗号分隔的唯一名称（2-30 个字符），并避免使用内置组名。",
+      "ResetDefaults": "重置为默认",
+      "Save": "保存",
+      "Saved": "分类配置已保存",
+      "ResetToDefaults": "分类配置已重置为默认值。",
+      "ResetConfirm": "你确定要将分类配置重置为系统默认值吗？"
+    },
+    "TagGroupConfig": {
+      "WindowTitle": "标签组配置",
+      "Hint": "创建自定义组并分配自定义标签。每个标签在每个文档类型中只能属于一个组。",
+      "NoGroups": "尚无组。点击 + 添加一个。",
+      "NewGroupPrompt": "新组名称",
+      "RemoveDeadTag": "移除无效标签",
+      "ResetDefaults": "重置为默认",
+      "Save": "保存",
+      "Saved": "标签组配置已保存",
+      "ResetToDefaults": "标签组配置已重置为默认值。",
+      "ResetConfirm": "你确定要重置标签组配置吗？"
+    },
+    "Tagging": {
+      "EditTags": "编辑标签",
+      "WindowTitle": "编辑标签",
+      "CategoryLabel": "分类标签",
+      "CategoryHint": "用于分类栏的单个标签。",
+      "FilterLabel": "过滤标签",
+      "FilterHint": "用于过滤面板的标签。",
+      "PlaceholderCategory": "...",
+      "PlaceholderFilters": "...",
+      "None": "无",
+      "Add": "添加",
+      "RegistryCategoryList": "已知分类标签",
+      "RegistryFilterList": "已知过滤标签",
+      "Save": "保存",
+      "Cancel": "取消",
+      "Saved": "标签已更新",
+      "BulkWindowTitle": "批量编辑标签",
+      "BulkHint": "将标签更改应用到 {count} 个文档。",
+      "BulkSkippedHint": "{count} 个文档被排除（例如锁定的合集条目）。",
+      "BulkCategoryMode": "分类操作",
+      "BulkCategoryNoChange": "无更改",
+      "BulkCategorySet": "设置分类",
+      "BulkCategoryClear": "清除分类",
+      "BulkCategoryValue": "分类值",
+      "BulkFilterAdd": "添加过滤标签（逗号分隔）",
+      "BulkUngroupedTags": "其他标签",
+      "BulkCommonHint": "已勾选的标签当前存在于每个选中的文档上。取消勾选任何标签将从所有选中文档中移除它们。",
+      "BulkFilterRemove": "移除过滤标签（逗号分隔）",
+      "BulkClearFilters": "在应用添加/移除前清除所有过滤标签",
+      "BulkApply": "应用",
+      "BulkNoEditable": "当前结果中没有可编辑的文档。",
+      "BulkNoSelected": "没有选中的文档可编辑。",
+      "BulkNoChanges": "未指定批量更改。",
+      "BulkSummary": "批量标签完成：{updated} 个已更新，{failed} 个失败，{skipped} 个跳过。",
+      "NoPermission": "你没有权限编辑此文档的标签。",
+      "InvalidDocument": "无法加载此文档进行标签编辑。"
+    },
+    "Images": {
+      "DialogTitle": "配置图像路径",
+      "EnterPaths": "输入要扫描的路径：",
+      "RelativeHint": "路径相对于 Foundry 的数据目录。",
+      "Browse": "浏览",
+      "Save": "保存",
+      "Cancel": "取消",
+      "Updated": "图像路径已更新"
+    },
+    "Helpers": {
+      "ConfirmDefault": "你确定吗？",
+      "CanvasNotReady": "画布未就绪。",
+      "NewScene": "新场景",
+      "NoPlayerCharacters": "未找到玩家角色",
+      "SendItemTitle": "发送物品给玩家角色",
+      "SendItemPrompt": "将 <strong>{itemName}</strong> 发送给哪个玩家角色？",
+      "FilterCharacters": "过滤角色...",
+      "Unassigned": "未分配",
+      "Cancel": "取消",
+      "ItemSent": "物品已发送给玩家",
+      "WhisperSentItem": "<p><strong>{sender}</strong> 从 {source} 向你发送了 <strong>{item}</strong>！</p>",
+      "ConfirmChangeBackground": "你要更改 {sceneName} 的背景吗？"
+    }
+  }
+}

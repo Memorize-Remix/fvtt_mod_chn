@@ -1,0 +1,768 @@
+
+  "BATTLETRANSITIONS": {
+    "SCENECONFIG": {
+      "AUTOTRIGGER": {
+        "HINT": "每当此场景被激活时自动触发此过渡。",
+        "LABEL": "自动触发"
+      },
+      "BARWIPE": {
+        "BARS": {
+          "HINT": "将屏幕分割成的栏数。",
+          "LABEL": "栏数"
+        }
+      },
+      "BOSSSPLASH": {
+        "ANIMATIONDELAY": {
+          "HINT": "开始动画前的等待时间，以毫秒为单位。",
+          "LABEL": "动画延迟"
+        },
+        "ANIMATIONDURATION": {
+          "HINT": "滑入动画播放所需的时间，以毫秒为单位。",
+          "LABEL": "动画持续时间"
+        },
+        "BOTCOLOR": {
+          "HINT": "用于底部第三色栏的颜色。",
+          "LABEL": "底部颜色"
+        },
+        "FONT": {
+          "HINT": "用于消息文本的字体。",
+          "LABEL": "字体"
+        },
+        "FONTCOLOR": {
+          "HINT": "主要消息文本的颜色。",
+          "LABEL": "字体颜色"
+        },
+        "FONTSHADOW": {
+          "HINT": "主要消息文本阴影的颜色。",
+          "LABEL": "字体阴影颜色"
+        },
+        "FONTSIZE": {
+          "HINT": "主要消息字体的大小。",
+          "LABEL": "字体大小"
+        },
+        "MESSAGE": {
+          "HINT": "如果未指定，将显示角色的名称。",
+          "LABEL": "消息"
+        },
+        "MIDCOLOR": {
+          "HINT": "用于中间第二色栏的颜色。",
+          "LABEL": "中间颜色"
+        },
+        "SUBCOLOR": {
+          "HINT": "次要消息文本的颜色。",
+          "LABEL": "子文本颜色"
+        },
+        "SUBSHADOW": {
+          "HINT": "次要消息文本阴影的颜色。",
+          "LABEL": "子文本阴影颜色"
+        },
+        "SUBSIZE": {
+          "HINT": "次要消息字体的大小。",
+          "LABEL": "子文本大小"
+        },
+        "SUBTEXT": {
+          "HINT": "显示在主要消息下方的文本。",
+          "LABEL": "子文本"
+        },
+        "TABS": {
+          "ANIMATION": "动画",
+          "BASICS": "基础",
+          "COLORS": "颜色",
+          "FONT": "字体"
+        },
+        "TOPCOLOR": {
+          "HINT": "用于顶部第一色栏的颜色。",
+          "LABEL": "顶部颜色"
+        }
+      },
+      "BUTTONS": {
+        "ADDSTEP": "添加步骤",
+		"CLEARSTEPS": "清除步骤",
+        "CONFIGURE": "配置 {name}",
+        "REMOVE": "移除 {name}"
+      },
+      "CHROMAKEY": {
+        "ENABLE": {
+          "HINT": "",
+          "LABEL": "启用色度键Chroma Key"
+        },
+        "KEYCOLOR": {
+          "HINT": "要移除的颜色",
+          "LABEL": "Key颜色"
+        },
+        "RANGE": {
+          "HINT": "背景色、前景色或混合色的截断值。",
+		  "LABEL": "截断范围",
+          "X": "X",
+          "Y": "Y"
+        }
+      },
+      "CLOCKWIPE": {
+        "DIRECTION": {
+          "HINT": "移动方向",
+          "LABEL": "时钟方向"
+        }
+      },
+      "COMMON": {
+        "ACTOR": {
+          "HINT": "",
+          "LABEL": "角色"
+        },
+        "BACKGROUND": {
+          "COLOR": "背景颜色",
+          "HINT": "显示在此步骤背景的背景颜色或图像。",
+          "IMAGE": "背景图像",
+          "LABEL": "背景",
+          "OVERLAY": "原始覆盖纹理",
+          "STYLE": "背景风格"
+        },
+        "CLOCKDIRECTION": {
+          "HINT": "顺时针或逆时针",
+          "LABEL": "方向"
+        },
+        "DIRECTION": {
+          "HINT": "开始的方向",
+          "LABEL": "方向"
+        },
+		"DROPSHADOW": {
+			"BLUR": {
+				"HINT": "投影模糊半径",
+				"LABEL": "投影模糊"
+			},
+			"COLOR": {
+				"HINT": "投影的颜色",
+				"LABEL": "投影颜色"
+			},
+			"DISTANCE": {
+				"HINT": "投影与原始文本之间的距离",
+				"LABEL": "投影距离"
+			},
+			"ENABLE": {
+				"HINT": "点击以启用文本投影效果",
+				"LABEL": "启用投影"
+			}
+		},
+        "DUALSTYLE": {
+          "BOTH": "应用于两者",
+          "HINT": "此效果可以应用于过渡覆盖、新场景或两者。",
+          "LABEL": "应用效果于",
+          "OVERLAY": "应用于覆盖",
+          "SCENE": "应用于新场景"
+        },
+        "DURATION": {
+          "HINT": "持续时间，以毫秒为单位",
+          "LABEL": "持续时间"
+        },
+		"FALLOFF": {
+			"HINT": "从过渡边缘开始淡出的距离。0 表示无淡出，1 表示从过渡的最末端开始淡出。",
+			"LABEL": "边缘淡出"
+		},
+        "FONT": {
+          "HINT": "选择字体。",
+          "LABEL": "字体"
+        },
+        "FONTSIZE": {
+          "HINT": "字体大小，以像素为单位。",
+          "LABEL": "字体大小"
+        },
+        "LABEL": {
+          "FORMAT": "({label})",
+          "HINT": "",
+          "LABEL": "标签"
+        },
+        "RADIAL": {
+          "HINT": "从内部或外部开始",
+          "LABEL": "径向方向"
+        },
+		"TARGET": {
+			"HINT": "此效果的中心屏幕点或场景元素。",
+			"LABEL": "目标",
+			"TYPE": "目标类型"
+		},
+		"TARGETBOTH": "叠加层和新场景两者",
+		"TARGETDIALOG": {
+			"TITLE": "效果目标"
+		},
+		"TARGETOVERLAY": "叠加层",
+		"TARGETSCENE": "新场景",
+		"TARGETTYPE": {
+			"DRAWING": {
+				"HINT": "将此效果的中心设置在绘图的中心点。",
+				"LABEL": "绘图"
+			},
+			"LABEL": "目标类型",
+			"NOTE": {
+				"HINT": "将此效果的中心设置在日志笔记的位置。",
+				"LABEL": "笔记",
+				"SELECT": "选择日志笔记",
+				"SELECTHINT": "请选择一个日志笔记作为此效果的目标。"
+			},
+			"POINT": {
+				"HINT": "屏幕上的归一化点。(0,0) 为左上角，(1,1) 为右下角，(0.5,0.5) 为中心点。",
+				"LABEL": "屏幕点",
+				"X": "X",
+				"Y": "Y"
+			},
+			"PROMPT": {
+				"HINT": "在过渡开始时提示选择此效果的目标。",
+				"LABEL": "过渡前询问"
+			},
+			"TILE": {
+				"HINT": "将此效果的中心设置在图块的中心点。",
+				"LABEL": "图块"
+			},
+			"TOKEN": {
+				"LABEL": "Token",
+				"HINT": "将此效果的中心设置在Token的中心点。"
+			}
+		},
+        "VOLUME": {
+          "HINT": "",
+          "LABEL": "音量"
+        }
+      },
+      "DIAMOND": {
+        "SIZE": {
+          "HINT": "钻石的大小",
+          "LABEL": "大小"
+        }
+      },
+      "EASING": {
+        "HINT": "动画此过渡时使用的缓动函数。",
+        "LABEL": "缓动"
+      },
+      "EXPORT": {
+        "HINT": "将此动画下载为 .json 文件。",
+        "LABEL": "导出动画"
+      },
+      "FIREDISSOLVE": {
+        "BURNSIZE": {
+          "HINT": "过渡期间燃烧孔的大小",
+          "LABEL": "燃烧大小"
+        }
+      },
+      "HUESHIFT": {
+        "MAXSHIFT": {
+          "HINT": "色调偏移量。1 将绕回原始色调。",
+          "LABEL": "偏移量"
+        }
+      },
+      "IMPORT": {
+        "HINT": "导入之前导出为 .json 文件的过渡动画。",
+        "LABEL": "导入动画"
+      },
+      "LOADINGTIP": {
+        "FONTCOLOR": {
+          "HINT": "加载提示文本的颜色。",
+          "LABEL": "字体颜色"
+        },
+        "LOCATION": {
+          "BOTTOMCENTER": "底部中心",
+          "BOTTOMLEFT": "底部左侧",
+          "BOTTOMRIGHT": "底部右侧",
+          "CENTER": "中心",
+          "HINT": "显示加载提示的屏幕部分。",
+          "LABEL": "屏幕位置",
+          "TOPCENTER": "顶部中心",
+          "TOPLEFT": "顶部左侧",
+          "TOPRIGHT": "顶部右侧"
+        },
+        "MESSAGE": {
+          "HINT": "显示的加载提示消息。",
+          "LABEL": "消息"
+        },
+        "ROLLTABLE": {
+          "HINT": "从中选择消息的随机表。",
+          "LABEL": "随机表"
+        },
+        "SOURCETYPE": {
+          "HINT": "加载提示的来源。",
+          "LABEL": "来源",
+          "ROLLTABLE": {
+            "HINT": "从随机表中选择随机消息。",
+            "LABEL": "随机表"
+          },
+          "STRING": {
+            "HINT": "指定消息。",
+            "LABEL": "字符串"
+          }
+        },
+        "TABS": {
+          "BASICS": "基础",
+          "FONT": "字体设置"
+        }
+      },
+      "MACRO": {
+        "HINT": "将此动画保存为宏",
+        "LABEL": "保存为宏"
+      },
+      "PARALLEL": {
+        "ADDSEQUENCE": "添加动画",
+		"EDITSEQUENCE": "编辑动画",
+        "REMOVESEQUENCE": "移除动画",
+        "SEQUENCE": "动画 {index}",
+        "SEQUENCES": "动画"
+      },
+      "PIXELATE": {
+        "MAXSIZE": {
+          "HINT": "像素的最大相对尺寸。",
+          "LABEL": "最大像素大小"
+        }
+      },
+      "REPEAT": {
+        "EDITSEQUENCE": "编辑动画",
+        "DELAY": {
+          "HINT": "重复之间的延迟时间",
+          "LABEL": "延迟"
+        },
+        "ITERATIONS": {
+          "HINT": "重复次数。",
+          "LABEL": "迭代次数"
+        },
+        "PREVIOUS": {
+          "HINT": "重复上一步。",
+          "LABEL": "上一步"
+        },
+        "SEQUENCE": {
+          "HINT": "重复指定的动画。",
+          "LABEL": "动画"
+        },
+        "STYLE": {
+          "LABEL": "重复样式"
+        }
+      },
+      "REVERSE": {
+        "DELAY": {
+          "HINT": "反转前一个效果前的延迟时间。",
+          "LABEL": "延迟"
+        }
+      },
+      "SOUND": {
+        "FILE": {
+          "HINT": "要播放的声音文件",
+          "LABEL": "文件"
+        }
+      },
+      "TAB": "过渡",
+      "TEXTURESWAP": {
+        "REPLACE": {
+			"HINT": "如果启用，将完全替换当前的覆盖纹理。否则，将根据此纹理的透明度值进行混合。",
+			"LABEL": "替换当前"
+		},
+		"TEXTURE": {
+          "HINT": "要交换的纹理",
+          "LABEL": "纹理"
+        }
+      },
+      "TOTALDURATION": "总持续时间: {duration}",
+      "TRANSITIONCONFIG": {
+        "LABEL": "过渡步骤"
+      },
+      "VIDEO": {
+        "CLEAR": {
+          "HINT": "播放完成后将移除视频。",
+          "LABEL": "播放后清除"
+        },
+        "FILE": {
+          "HINT": "要播放的视频",
+          "LABEL": "文件"
+        },
+        "TABS": {
+          "BASICS": "基础",
+          "CHROMAKEY": "色度键Chroma Key"
+        }
+      },
+      "ZOOM": {
+        "AMOUNT": {
+          "HINT": "覆盖纹理 UV 的放大倍数。1 = 正常大小，<1 = 更近，>1 = 更远。",
+          "LABEL": "放大倍数"
+        },
+        "CLAMPBOUNDS": {
+          "HINT": "缩放时将覆盖纹理的边缘夹在屏幕边缘。",
+          "LABEL": "夹紧边界"
+        }
+      },
+      "ZOOMBLUR": {
+        "INNERRADIUS": {
+          "HINT": "屏幕中心未模糊的圆半径。",
+          "LABEL": "内部半径"
+        },
+        "MAXSTRENGTH": {
+          "HINT": "效果的最大强度。",
+          "LABEL": "最大强度"
+        }
+      }
+    },
+    "DIALOGS": {
+      "REVERSIBLE": "此步骤可反转",
+      "IMPORTCONFIRM": {
+        "TITLE": "导入动画",
+        "MESSAGE": "导入动画将覆盖现有动画，是否确定继续？"
+      },
+      "BUTTONS": {
+        "CANCEL": "取消",
+        "OK": "确定",
+        "CLEARSEARCH": "清除搜索",
+        "TRANSITION": "过渡"
+      },
+      "CLEARSTEPS": {
+        "TITLE": "清除过渡动画",
+        "MESSAGE": "是否确定要移除所有过渡步骤？"
+      },
+      "ADDSTEP": {
+        "TITLE": "添加过渡步骤",
+        "SEARCH": {
+          "PLACEHOLDER": "搜索"
+        },
+        "TABS": {
+          "WIPES": "擦除",
+          "WARPS": "扭曲",
+          "EFFECTS": "效果",
+          "TECHNICAL": "技术"
+        }
+      },
+      "EDITSTEP": {
+        "TITLE": "编辑 {name}"
+      },
+      "SEQUENCE": {
+        "ADD": "添加动画",
+        "EDIT": "编辑动画",
+        "NAME": "动画 {index}"
+      },
+      "REMOVECONFIRM": {
+        "CONTENT": "是否确定要移除 {name}？",
+        "TITLE": "移除 {name}"
+      },
+      "SCENESELECTOR": {
+        "DESCRIPTION": "请在下方选择一个场景：",
+        "TITLE": "场景选择"
+      },
+      "SAVEMACRO": {
+        "TITLE": "保存为宏",
+        "SCENE": {
+          "HINT": "要过渡到的场景。如果未指定场景，生成的宏将提示选择场景"
+        }
+      }
+    },
+    "COMMON": {
+      "TRANSITION": "过渡"
+    },
+	"DOCUMENTPICKER": {
+      "PLACEHOLDER": "请选择一个 {type}",
+      "TOOLTIP": "选择一个 {type}"
+    },
+    "WARNINGS": {
+      "TRANSITIONCANCELED": "过渡已取消。",
+      "PREPARETIMEOUT": "一个或多个客户端在等待响应时超时。",
+      "INVALIDFORM": "无效的表单数据。",
+      "REMOVEOVERLAYDEPRECATION": "'removeOverlay' 函数已弃用，将在未来版本中移除。请改用 'hideOverlay'。",
+      "RESTOREOVERLAYDEPRECATION": "'restoreOverlay' 函数已弃用，将在未来版本中移除。请改用 'showOverlay'。"
+    },
+    "INFO": {
+      "SCENESMIGRATED": "战斗过渡：已将 {count} 个场景更新为最新配置格式。"
+    },
+    "DIRECTIONS": {
+      "BOTTOM": "底部",
+      "BOTTOMLEFT": "左下",
+      "BOTTOMRIGHT": "右下",
+      "CLOCKWISE": "顺时针",
+      "COUNTERCLOCKWISE": "逆时针",
+      "HORIZONTAL": "水平",
+      "INSIDE": "内部",
+      "LEFT": "左侧",
+      "OUTSIDE": "外部",
+      "RIGHT": "右侧",
+      "TOP": "顶部",
+      "TOPLEFT": "左上",
+      "TOPRIGHT": "右上",
+      "VERTICAL": "垂直"
+    },
+    "EASINGS": {
+      "BACKIN": "back.in",
+      "BACKINOUT": "back.inOut",
+      "BACKOUT": "back.out",
+      "BOUNCEIN": "bounce.in",
+      "BOUNCEINOUT": "bounce.inOut",
+      "BOUNCEOUT": "bounce.out",
+      "CIRCIN": "circ.in",
+      "CIRCINOUT": "circ.inOut",
+      "CIRCOUT": "circ.out",
+      "ELASTICIN": "elastic.in",
+      "ELASTICINOUT": "elastic.inOut",
+      "ELASTICOUT": "elastic.out",
+      "EXPOIN": "expo.in",
+      "EXPOINOUT": "expo.inOut",
+      "EXPOOUT": "expo.out",
+      "NONE": "none",
+      "POWER1IN": "power1.in",
+      "POWER1INOUT": "power1.inOut",
+      "POWER1OUT": "power1.out",
+      "POWER2IN": "power2.in",
+      "POWER2INOUT": "power2.inOut",
+      "POWER2OUT": "power2.out",
+      "POWER3IN": "power3.in",
+      "POWER3INOUT": "power3.inOut",
+      "POWER3OUT": "power3.out",
+      "POWER4IN": "power4.in",
+      "POWER4INOUT": "power4.inOut",
+      "POWER4OUT": "power4.out",
+      "SINEIN": "sine.in",
+      "SINEINOUT": "sine.inOut",
+      "SINEOUT": "sine.out",
+      "STEPS": "steps",
+      "ROUGH": "rough",
+      "SLOW": "slow",
+      "EXPOSCALE": "expoScale"
+    },
+    "FORMATTERS": {
+      "MILLISECONDS": "{value}ms",
+      "PERCENT": "{value}%",
+      "PIXELS": "{value}px"
+    },
+    "NAVIGATION": {
+      "CUSTOM": "过渡构建",
+      "TRIGGER": "过渡",
+      "BYPASS": "跳过过渡"
+    },
+    "ERRORS": {
+      "CANNOTAUTOPLAYAUDIO": "无法自动播放音频，请先与浏览器窗口交互。",
+      "CANNOTINITIALIZECANVAS": "无法初始化画布",
+      "CANVASNOTFOUND": "未找到画布",
+      "EXECUTECALLEDPARALLEL": "在创建并行过渡链时不要调用执行函数。",
+      "EXECUTECALLEDREPEAT": "在创建重复过渡动画时不要调用执行函数。",
+      "FILENOTFOUND": "未找到文件: {file}",
+      "INVALIDDIRECTION": "提供了无效的方向: {direction}",
+	  "INVALIDDOCUMENTTYPE": "无效的文档类型: {type}",
+      "INVALIDDURATION": "提供了无效的持续时间: {duration}",
+      "INVALIDEASING": "无效的缓动: {easing}",
+      "INVALIDELEMENT": "无法定位HTML元素",
+      "INVALIDIMPORT": "无效的导入数据。",
+      "INVALIDMARO": "无效的宏: {macro}",
+      "INVALIDOBJECT": "指定了无效的对象: {object}",
+      "INVALIDROLLTABLE": "提供了无效的随机表: {table}",
+      "INVALIDSCENE": "无效的场景: {name}",
+      "INVALIDSOUND": "无效的声音: {sound}",
+      "INVALIDTARGET": "无效的目标: {item}",
+      "INVALIDTEXTURE": "提供了无效的纹理。",
+      "INVALIDTIPLOCATION": "无效的加载提示位置: {location}",
+      "INVALIDTRANSITION": "无效的过渡: {name}",
+      "INVALIDVERSION": "无效的数据版本: {version}",
+      "MIGRATORNOTFOUND": "未找到从版本 {currentVersion} 迁移到 {newVersion} 的 {type} 函数。",
+      "MODULENOTACTIVE": "模组 {name} 未安装或未激活。",
+      "NEWERVERSION": "数据似乎来自较新的版本: {version}",
+      "NOAPPLICATION": "没有PIXI应用程序",
+      "NOBACKGROUNDPROVIDED": "未提供背景图像或颜色。",
+	  "NOCONFIGAPP": "未配置配置应用程序。",
+      "NOCOVERELEMENT": "无法定位过渡覆盖层元素",
+      "NOFILE": "未加载文件。",
+      "NOIMAGEPROVIDED": "未提供图像。",
+      "NOPREVIOUSSTEP": "没有上一步可重复。",
+      "NOTIMPLEMENTED": "未实现。",
+      "NOTINITIALIZED": "未初始化",
+      "NOVIDEOPROVIDED": "未提供视频。",
+      "PERMISSIONDENIED": "权限被拒绝。",
+      "PREPARETIMEDOUT": "等待用户准备过渡时超时。",
+      "SEQUENCETIMEDOUT": "过渡动画超时。",
+      "STEPNOTREVERSIBLE": "过渡步骤不可逆: {type}",
+      "TRANSITIONTOSELF": "尝试过渡到当前场景。",
+      "UNABLETOMIGRATE": "无法将数据从 {old} 迁移到 {current}"
+    },
+      "TRANSITIONBUILDER": {
+        "TITLE": "过渡构建器",
+        "USERS": {
+          "HINT": "仅对选定用户显示过渡动画。如果未选择任何用户，将对所有人执行该动画效果"
+        }
+      },
+    "ANGULARWIPE": {
+      "DESCRIPTION": "一种逐步清除屏幕角部区域的过渡效果。",
+      "NAME": "角度擦除",
+      "LABEL": "擦除至 {background}，持续 {duration} 毫秒"
+    },
+    "BARWIPE": {
+      "DESCRIPTION": "一种由屏幕两侧交替出现的栏状擦除效果。",
+      "NAME": "栏状擦除",
+      "LABEL": "{bars} 栏 {direction} 方向擦除至 {background}，持续 {duration} 毫秒"
+    },
+    "BILINEARWIPE": {
+      "DESCRIPTION": "沿着水平、垂直或对角线轴从屏幕中心或外部边缘开始的两个线性擦除效果。",
+      "NAME": "双线性擦除",
+      "LABEL": "从 {radial} / {direction} 擦除至 {background}，持续 {duration} 毫秒"
+    },
+    "BOSSSPLASH": {
+      "DESCRIPTION": "触发来自Boss Splash Screen模组的动画。",
+      "NAME": "Boss Splash Screen",
+      "LABEL": "横幅显示 {message}，持续 {duration} 毫秒"
+    },
+    "CHROMAKEY": {
+      "DESCRIPTION": "将当前过渡图像中的一种颜色替换为另一种颜色。适用于为绿屏视频添加透明度。",
+      "NAME": "色度键Chroma Key"
+    },
+    "CLEAREFFECTS": {
+      "DESCRIPTION": "移除已应用于覆盖层的任何过渡效果。",
+      "NAME": "清除效果",
+      "LABEL": "清除所有过渡效果"
+    },
+    "CLOCKWIPE": {
+      "DESCRIPTION": "围绕中心点顺时针或逆时针方向擦除屏幕。",
+      "NAME": "时钟擦除",
+      "LABEL": "从 {direction} 按 {clockDirection} 方向擦除至 {background}，持续 {duration} 毫秒"
+    },
+    "DIAMONDWIPE": {
+      "DESCRIPTION": "将屏幕分割为逐渐缩小的钻石形状，从左到右开始。",
+      "NAME": "钻石擦除",
+      "LABEL": "擦除至 {background}，持续 {duration} 毫秒"
+    },
+    "FADE": {
+      "DESCRIPTION": "从当前前景淡出到指定的背景颜色。",
+      "NAME": "淡入淡出",
+      "LABEL": "淡入淡出至 {background}，持续 {duration} 毫秒"
+    },
+    "FIREDISSOLVE": {
+      "DESCRIPTION": "对屏幕应用燃烧效果，露出底层背景。",
+      "NAME": "火焰溶解（燃烧）",
+      "LABEL": "屏幕灼烧效果，持续 {duration} 毫秒"
+    },
+    "FLASH": {
+      "DESCRIPTION": "用给定的颜色或纹理闪烁屏幕。",
+      "NAME": "闪烁",
+      "LABEL": "屏幕闪烁 {background}，持续 {duration} 毫秒"
+    },
+    "HIDEOVERLAY": {
+      "DESCRIPTION": "将过渡覆盖层设置为不可见，露出下方的新场景。",
+      "NAME": "隐藏覆盖层",
+      "LABEL": "隐藏过渡覆盖层"
+    },
+    "HUESHIFT": {
+      "DESCRIPTION": "偏移屏幕的色调。",
+      "NAME": "色调偏移",
+      "LABEL": "将 {target} 的色调偏移 {maxShift}，持续 {duration} 毫秒"
+    },
+    "INVERT": {
+      "DESCRIPTION": "反转当前屏幕纹理/颜色。",
+      "NAME": "反转",
+      "LABEL": "反转 {target} 的颜色"
+    },
+    "LINEARWIPE": {
+      "DESCRIPTION": "从屏幕一侧到另一侧的线性擦除，沿途露出给定的背景颜色。",
+      "NAME": "线性擦除",
+      "LABEL": "从 {direction} 方向线性擦除至 {background}，持续 {duration} 毫秒"
+    },
+    "LOADINGTIP": {
+      "DESCRIPTION": "显示基于文本的加载屏幕提示。",
+      "NAME": "加载提示",
+      "LABEL": "在 {location} 显示加载提示"
+    },
+    "MACRO": {
+      "DESCRIPTION": "执行宏。这将为每个用户执行，因此请确保他们都有权限。",
+      "NAME": "宏",
+      "LABEL": "执行宏：{macro}"
+    },
+    "MELT": {
+      "DESCRIPTION": "像某些毁灭战士FPS中看到的那样，融化屏幕。",
+      "NAME": "融化",
+      "LABEL": "屏幕融化至 {background}，持续 {duration} 毫秒"
+    },
+    "PARALLEL": {
+      "DESCRIPTION": "同时运行多个过渡动画。",
+      "NAME": "并行",
+      "LABEL": "并行执行 {count} 个动画"
+    },
+    "PIXELATE": {
+      "DESCRIPTION": "增加覆盖纹理中像素的显示大小。",
+      "NAME": "像素化",
+      "LABEL": "像素化 {target}，持续 {duration} 毫秒"
+    },
+    "RADIALWIPE": {
+      "DESCRIPTION": "从屏幕内部或外部开始的圆形擦除。",
+      "NAME": "径向擦除（快门）",
+      "LABEL": "从屏幕的 {radial} 进行径向擦除，持续 {duration} 毫秒"
+    },
+    "REPEAT": {
+      "DESCRIPTION": "重复上一步或指定的步骤动画。",
+      "NAME": "重复",
+      "LABELPREV": "重复上一步骤 {iterations} 次",
+      "LABELSEQUENCE": "重复步骤动画 {iterations} 次"
+    },
+    "REVERSE": {
+      "DESCRIPTION": "如果可用，反向执行上一步。",
+      "NAME": "反向",
+      "LABEL": "在 {delay} 毫秒后反向执行上一步"
+    },
+    "SCENECHANGE": {
+      "DESCRIPTION": "更改激活场景。",
+      "NAME": "更改场景"
+    },
+    "SHOWOVERLAY": {
+      "DESCRIPTION": "再次显示过渡覆盖层。",
+      "NAME": "显示覆盖层",
+      "LABEL": "显示过渡叠加层"
+    },
+    "SOUND": {
+      "DESCRIPTION": "在过渡期间播放声音。与大多数过渡步骤不同，此步骤不会等待声音播放完毕才继续下一步。",
+      "NAME": "播放声音",
+      "LABEL": "播放声音：{file}"
+    },
+    "SPIRALSHUTTER": {
+      "DESCRIPTION": "螺旋形状的快门式擦除。",
+      "NAME": "螺旋快门",
+      "LABEL": "从 {radial} 到 {background} 的螺旋快门擦除，持续 {duration} 毫秒"
+    },
+    "SPIRALWIPE": {
+      "DESCRIPTION": "从屏幕外部或内部开始的螺旋形屏幕擦除。",
+      "NAME": "螺旋擦除",
+      "LABEL": "螺旋擦除至 {background}，持续 {duration} 毫秒"
+    },
+    "SPOTLIGHTWIPE": {
+      "DESCRIPTION": "以屏幕边缘某点为中心并从内部或外部开始的双线性擦除。",
+      "NAME": "聚光灯擦除",
+      "LABEL": "从 {direction} 到 {background} 的聚光灯擦除，持续 {duration} 毫秒"
+    },
+    "STARTPLAYLIST": {
+      "DESCRIPTION": "开始播放新场景配置的环境声音/播放列表。",
+      "NAME": "开始环境播放列表"
+    },
+    "TEXTURESWAP": {
+      "DESCRIPTION": "将当前过渡背景设置为给定图像。",
+      "NAME": "纹理交换",
+      "LABEL": "将 {target} 的纹理更改为 {background}"
+    },
+    "TWIST": {
+      "DESCRIPTION": "扭曲屏幕图像。",
+      "NAME": "扭曲",
+      "LABEL": "将屏幕扭曲 {angle}°，持续 {duration} 毫秒"
+    },
+    "VIDEO": {
+      "DESCRIPTION": "播放视频。",
+      "NAME": "视频",
+      "LABEL": "播放视频：{file}"
+    },
+    "WAIT": {
+      "DESCRIPTION": "等待指定的时间。",
+      "NAME": "等待",
+      "LABEL": "等待{duration}毫秒"
+    },
+    "WAVEWIPE": {
+      "DESCRIPTION": "波浪形的双线性擦除。",
+      "NAME": "波浪擦除",
+      "LABEL": "从 {direction} 到 {background} 的波浪擦除，持续 {duration} 毫秒"
+    },
+    "ZOOM": {
+      "DESCRIPTION": "放大屏幕上的某点。",
+      "NAME": "缩放",
+      "LABEL": "将 {target} 缩放 {amount}%，持续 {duration} 毫秒"
+    },
+    "ZOOMBLUR": {
+      "DESCRIPTION": "同时放大并模糊屏幕。",
+      "NAME": "缩放和模糊",
+      "LABEL": "缩放并模糊 {target}，持续 {duration} 毫秒"
+    }
+  },
+  "SCENE": {
+    "TABS": {
+      "SHEET": {
+        "transition": "过渡"
+      }
+    }
+  }
+}
+

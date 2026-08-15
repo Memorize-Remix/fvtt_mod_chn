@@ -1,0 +1,129 @@
+{
+  "fvtt-player-achievements": {
+    "settings": {
+      "enable-player-achievements": {
+        "name": "Enable Player Achievements",
+        "hint": "Enable Player Achievements"
+      },
+      "play-self-sounds": {
+        "name": "Play Self Achievement Sounds",
+        "hint": "Play a sound if you are awarded an achievement."
+      },
+      "default-sound-file": {
+        "name": "Default Sound File",
+        "hint": "The default sound file to play when an achievement is awarded."
+      },
+      "hide-unearned": {
+        "name": "Hide Unearned Achievements",
+        "hint": "Completely hide unearned achievements from the player. (This takes precedence over the cloak setting.)"
+      },
+      "cloak-unearned": {
+        "name": "Cloak Unearned Achievements",
+        "hint": "Players can see that there is an achievement, but not what it is. (This is overridden by the hide setting.)"
+      },
+      "show-only-to-awarded-user": {
+        "name": "Show Only to Awarded User",
+        "hint": "Show the achievement message only to the user who gained it."
+      },
+      "show-tags-to-players": {
+        "name": "Show tags to Players",
+        "hint": "Show tags to players, allowing them to filter as well."
+      },
+      "cloak-title-text": {
+        "name": "Cloak Title Text",
+        "hint": "Text to show when an achievement title is cloaked."
+      },
+      "cloak-description-text": {
+        "name": "Cloak Description Text",
+        "hint": "Text to show when an achievement description is cloaked."
+      }
+    },
+    "interface": {
+      "achievements-sheet": "Achievements Window",
+      "show-achievements-sheet": "Show Achievements Window"
+    },
+    "forms": {
+      "achievements-sheet": {
+        "all-actors": "All Actors",
+        "online-actors": "Online Actors",
+        "only-online-actors": "Show only online Actors",
+        "add-achievement": "Add Achievement",
+        "export": "Export",
+        "export-achievements": "Export achievement data to clipboard",
+        "import-achievements": "Overwrite current achievements with export data from clipboard",
+        "import": "Import",
+        "filter": "Filter by achievement name",
+        "hide-awarded": "Hide Awarded",
+        "hide-unawarded": "Hide Unawarded",
+        "hide-details": "Compact View",
+        "no-achievements-match-filter": "No achievements match your filter.",
+        "no-achievements-added": "No achievements have been added yet.",
+        "no-achievements-online": "No online players have any awarded achievements.",
+        "bugreport": "File a Bug Report or Feature Request",
+        "feedback": "Send Feedback",
+        "discord": "Discord"
+      },
+      "achievement-block": {
+        "edit": "Edit",
+        "delete": "Delete",
+        "owned": "Owned",
+        "owned-by": "Owned by",
+        "unowned": "Unowned",
+        "click-to-remove": "Click to remove",
+        "click-to-award": "Click to award",
+        "no-actors-to-award": "No actors to award.",
+        "toggle-lock": "Lock",
+        "toggle-unlock": "Unlock",
+        "all-actors": "All Actors",
+        "tags": "Tags"
+      },
+      "add-achievement-form": {
+        "id": "ID",
+        "title": "Title",
+        "title-hiddenoption": "Show title if cloaked?",
+        "description": "Description",
+        "image": "Image",
+        "cloaked-image": "Cloaked Image",
+        "select": "Select",
+        "sound": "Sound",
+        "preview": "Preview",
+        "clear": "Clear",
+        "add-achievement": "Add Achievement",
+        "update-achievement": "Update Achievement",
+        "window-title": "Add/Edit Achievement",
+        "tags": "Tags (comma separated)"
+      },
+      "achievements-export": {
+        "export-message": "Please copy the following data to a safe place, in case you need to restore it later."
+      },
+      "achievements-import": {
+        "import-message": "Paste the data you wish to import into the box below.",
+        "button": "Import Achievement Data"
+      }
+    },
+    "messages": {
+      "achievements-imported": "Achievements imported from clipboard.",
+      "achievements-exported": "Achievements exported to clipboard.",
+      "achievement-updated": "Achievement updated.",
+      "achievement-added": "Achievement added.",
+      "duplicate-id": "An achievement with that ID already exists.",
+      "id-no-spaces": "ID cannot contain spaces.",
+      "invalid-achievement-format": "Invalid achievement format.",
+      "missing-fields": "Please fill out all fields.",
+      "no-clipboard-data": "No data found to import.",
+      "no-achievements-in-clipboard": "No achievements found in the clipboard.",
+      "import-achievements": {
+        "title": "Import Achievements",
+        "content": "This will overwrite all existing achievements with data from your clipboard. Are you sure?"
+      },
+      "while-away": "While they were away",
+      "has-unlocked": "{while_away} {character_name} ({player_name}) has unlocked",
+      "next-login-notify": "They will be notified upon next login.",
+      "delete-achievement": {
+        "title": "Delete Achievement",
+        "content": "Are you sure you want to delete this achievement?"
+      },
+      "achievement-id-copied": "Achievement ID copied to clipboard."
+    }
+  }
+}

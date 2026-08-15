@@ -1,0 +1,95 @@
+
+  "LOADING_SCREEN": {
+    "Loading": "加载中...",
+    "DefaultText": "加载新场景",
+    
+    "SettingEnabled": "启用加载屏幕",
+    "SettingEnabledHint": "切换场景时显示自定义加载屏幕。",
+    
+    "SettingImageFolder": "默认图像文件夹",
+    "SettingImageFolderHint": "选择包含加载屏幕图像的文件夹。如果场景没有自己的文件夹，将使用此文件夹。",
+    
+    "SettingCustomText": "自定义文本",
+    "SettingCustomTextHint": "加载屏幕上显示的文本。",
+    
+    "SettingShowProgress": "显示进度条",
+    "SettingShowProgressHint": "在加载期间显示动画进度条。",
+    
+    "SettingFadeDuration": "淡入淡出持续时间（秒）",
+    "SettingFadeDurationHint": "加载屏幕淡入和淡出动画持续的时间。",
+    
+    "SettingShowTips": "显示提示",
+    "SettingShowTipsHint": "在加载期间显示随机提示。",
+    
+    "SettingTipRotation": "提示轮换（秒）",
+    "SettingTipRotationHint": "新提示显示的频率（在较长的加载时间内）。",
+    
+    "SettingTemplate": "加载屏幕设计",
+    "SettingTemplateHint": "选择加载屏幕的设计/模板。",
+
+    "SettingBlockNotifications": "加载期间屏蔽通知",
+	"SettingBlockNotificationsHint": "启用后，加载屏幕激活期间将隐藏信息通知。",
+
+	"SettingSceneNameSource": "场景名称显示",
+	"SettingSceneNameSourceHint": "选择玩家在加载时看到的是隐藏场景名称还是导航名称。",
+	"SceneNameHidden": "隐藏场景名称",
+	"SceneNameNavigation": "导航名称",
+    
+    "TemplateStandard": "标准（原始）",
+    "TemplateMinimalist": "极简主义",
+    "TemplateCinematic": "电影风格",
+    "TemplateFantasy": "奇幻/RPG",
+    
+    "SettingCustomTips": "自定义提示",
+    "SettingCustomTipsHint": "创建你自己的提示（每行一个提示）。如果为空，将使用默认提示。",
+    "EditCustomTips": "编辑提示",
+    
+    "CustomTipsTitle": "编辑自定义提示",
+    "CustomTipsLabel": "你的提示",
+    "CustomTipsDescription": "在此输入你自己的提示，每行一个。这些将替换默认提示。留空以使用默认提示。",
+    "CustomTipsPlaceholder": "提示：你的第一个自定义提示\n提示：另一个提示\n提示：再来一个...",
+    "CustomTipsHelp": "每行 = 一个提示。空行将被忽略。",
+    "CustomTipsSaved": "自定义提示已保存！",
+    
+    "SceneTab": "加载屏幕",
+    "SceneTabDescription": "专门为此场景配置加载屏幕。如果文件夹中有多个图像，将随机选择一个。",
+    "SceneImageFolder": "此场景的图像文件夹",
+    "SceneImageFolderHint": "留空以使用默认文件夹。如果有多个图像，加载时将随机选择一个。",
+    "SceneFolderSaved": "场景的加载屏幕文件夹已保存！",
+    "ConfigureLoadingScreen": "配置加载屏幕",
+    
+    "ConfigTitle": "加载屏幕 - 配置场景文件夹",
+    "ConfigDescription": "在此你可以为每个场景设置自定义图像文件夹。文件夹中的图像将随机用作背景。如果有多个图像，每次都会随机选择一个。",
+    "ConfigSaved": "加载屏幕配置已保存！",
+    
+    "TabScenes": "场景",
+    "TabHelp": "帮助",
+    
+    "DefaultFolder": "默认文件夹",
+    "DefaultFolderPlaceholder": "例如：worlds/my-world/images/loading",
+    "DefaultFolderHint": "此文件夹在通用模组设置中设置。",
+    
+    "SceneFolders": "场景特定文件夹",
+    "UseDefaultFolder": "使用默认文件夹",
+    
+    "HelpTitle": "说明",
+    "HelpFolderSetup": "设置文件夹",
+    "HelpStep1": "在你的FVTT安装中创建一个包含加载屏幕图像的文件夹",
+    "HelpStep2": "在模组设置中设置'默认图像文件夹'",
+    "HelpStep3": "可选：在此为特定场景配置单独的文件夹",
+    "HelpStep4": "点击文件夹图标选择文件夹",
+    
+    "HelpBehavior": "行为",
+    "HelpBehavior1": "如果场景有自己的文件夹，将仅使用其中的图像",
+    "HelpBehavior2": "没有场景文件夹时，将使用默认文件夹",
+    "HelpBehavior3": "有多个图像时，随机选择一个",
+    "HelpBehavior4": "只有一个图像时，将始终使用它",
+    
+    "HelpTips": "提示",
+    "HelpTip1": "使用1920x1080像素的图像以获得最佳效果",
+    "HelpTip2": "支持的格式：JPG、PNG、WEBP、GIF",
+    "HelpTip3": "按主题组织图像（例如'地牢'、'城市'、'荒野'）",
+    
+    "Save": "保存"
+  }
+}

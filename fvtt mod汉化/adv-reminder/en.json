@@ -1,0 +1,76 @@
+{
+  "adv-reminder.AutoFail": "Auto fail",
+  "adv-reminder.Messages": "Messages",
+  "adv-reminder.ButtonStyle": {
+    "SETTING": {
+      "name": "Button Style",
+      "hint": "Change the style of the default button on roll dialogs",
+      "label": "Configure Style",
+      "test": "Show Sample Roll"
+    },
+    "FIELDS": {
+      "wide": {
+        "label": "Widen Default Button",
+        "hint": "Make the default button wider to emphasize which button to click."
+      },
+      "color": {
+        "label": "Default Button Color",
+        "hint": "Changes the color of the default button on roll dialogs."
+      },
+      "custom": {
+        "label": "Custom Colors",
+        "buttonColor": {
+          "label": "Button Color",
+          "hint": "The background color of the default button."
+        },
+        "textColor": {
+          "label": "Text Color",
+          "hint": "The text color of the default button. Leave blank to not change it."
+        }
+      }
+    },
+    "COLORS": {
+      "default": {
+        "label": "Default"
+      },
+      "player": {
+        "label": "Player Color"
+      },
+      "green": {
+        "label": "Green"
+      },
+      "custom": {
+        "label": "Custom Color"
+      }
+    }
+  },
+  "adv-reminder.ShowSources": {
+    "Name": "Show Sources of Adv/Dis/Crit",
+    "Hint": "If an active effect determines adv/dis/crit on a roll, show its name as a message in the dialog"
+  },
+  "adv-reminder.Source": {
+    "Advantage": {
+      "override": "Advantage Override from",
+      "suppressed": "Advantage Suppressed by",
+      "prefix": "Advantage from"
+    },
+    "Normal": {
+      "override": "Normal Override from"
+    },
+    "Disadvantage": {
+      "override": "Disadvantage Override from",
+      "suppressed": "Disadvantage Suppressed by",
+      "prefix": "Disadvantage from"
+    },
+    "Critical": {
+      "suppressed": "Critical Hit Suppressed by",
+      "prefix": "Critical Hit from",
+      "nat20": "Natural {value}"
+    }
+  },
+  "adv-reminder.UpdateStatusEffects": {
+    "Name": "Enable Condition Effects",
+    "Hint": "Apply adv/dis/crit with the system's conditions (e.g. apply disadvantage to attacks when Poisoned). Not recommended if you are using another module to modify or replace the status effects."
+  },
+  "dae.fieldData.fieldCategories.ARMessage": "AR Messages"
+}

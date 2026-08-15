@@ -1,0 +1,109 @@
+{
+    "CanvasLayers": {
+        "General": {
+            "Layer": "Layer",
+            "Layers": "Layers",
+            "Tiles": "Tiles",
+            "Drawings": "Drawings",
+            "Confirm": "Confirm",
+            "Cancel": "Cancel"
+        },
+        "UI": {
+            "AddCanvasLayer": "Add New Scene Draw Layer",
+            "AddCanvasLayerTitle": "{scene} - New Draw Layer",
+            "EditCanvasLayerTitle": "{scene} - Edit Draw Layer",
+            "LayerMenu": "Layer menu",
+            "UsedLayersTitle": "Containing Canvas Layers",
+            "LayerMenuNoControlled": "No Players"
+        },
+        "GuideDialog": {
+            "Title": "Canvas Layers Guide",
+            "Overview": {
+                "Title": "Overview",
+                "Intro": "Canvas Layers currently allows you to add <strong>Drawings</strong> and <strong>Tiles</strong> to distinct layers the GM creates.",
+                "Description": "There are different types of layers you can make use of:",
+                "OpenTitle": "Open Layers",
+                "OpenDescription": "These are ones that GMs and Players toggle individually to filter what they themselves see on the Canvas without impacting anyone else.",
+                "ControlledTitle": "Controlled Layers",
+                "ControlledDescription": "Controlled Layer visibility is controlled by the GM. Players cannot toggle them on or off."                
+            },
+            "Open": {
+                "Title": "Open Layer",
+                "Example1": {
+                    "Title": "Example 1",
+                    "Description": "Here I've set up four open layers. I activated the Regions layer for myself."
+                },
+                "Example2": {
+                    "Title": "Example 2",
+                    "Description": "Here I deactivated the former layer and activated cities."
+                },
+                "Example3": {
+                    "Title": "Example 3",
+                    "Description": "I assigned all the drawings from the Region, Cities and Places Of Interest layers that happen to be in the country of Pronas to also belong to the Country Of Pronas layer. It can be useful to group things like this."
+                }
+            },
+            "Controlled": {
+                "Title": "Controlled Layer",
+                "Example1": {
+                    "Title": "Example 1",
+                    "Description": "Here I've set up a scene with an active illusion. There is a tile everyone can see showing a normal house. I added a controlled layer that displays the grisly truth, 'True Appearance'."
+                },
+                "Example2": {
+                    "Title": "Example 2",
+                    "Description": "The GM can toggle this layer for themselves to see or not see it by left-clicking as normal."
+                },
+                "Example3": {
+                    "Title": "Example 3",
+                    "Description": "Players cannot see the existance of this layer, making it an immersive secret."
+                },
+                "Example4": {
+                    "Title": "Example 4",
+                    "Description": "The GM can rightclick the layer and set the layer as visible to select players. The horrible truth is revealed! Other players still see only a normal house.."
+                }
+            },
+            "Macros": {
+                "Title": "Macros",
+                "AddToLayers": {
+                    "Title": "Add To Layers",
+                    "Description": "Select a group of drawings or tiles. Using this macro will then open a dialog allowing you to add all selected canvas placeables to additional layers. Optionally, you can choose to overwrite any existing layers they belong to."
+                }
+            }
+        },
+        "LayerMenu": {
+            "Title": "{scene} - Layer Menu",
+            "LayersSection": {
+                "Title": "Layers",
+                "ToggleActive": "Toggle Active",
+                "EditName": "Edit Name",
+                "Favorite": "Mark As Favorite",
+                "Remove": "Clean Layer",
+                "RemoveMenu": {
+                    "Title": "{scene} - {layer}",
+                    "RemoveConfirmationOptionText": "Select any group of canvas placeables linked to this layer that you wish to delete. Selected placeables are deleted if they belong <strong>only</strong> to this layer, otherwise they are just decoupled from this layer as all others."
+                }
+            }
+        },
+        "AddToLayersMenu": {
+            "Title": "Add To Layers",
+            "Hint": "Using this macro will add the chosen layers to the canvas placeables.",
+            "SelectedLayers": "Selected Layers",
+            "OverwriteLayers": "Overwrite existing layers with selected?",
+            "SetLayersButton": "Set Layers"
+        },
+        "PlayerSelectDialog": {
+            "Title": "{layer} - Player Select Dialog",
+            "Info": "Toggle which players see this layer"
+        },
+        "Constants": {
+            "LayerType": {
+                "Open": "Open",
+                "Controlled": "Controlled"
+            }
+        },
+        "Errors": {
+            "GMOnly": "This macro only works for the GM!",
+            "NoSceneLayers": "You have no layers on this scene to use!",
+            "NoPlaceablesSelected": "You have no useable canvas objects currently selected!"
+        }
+    }    
+}

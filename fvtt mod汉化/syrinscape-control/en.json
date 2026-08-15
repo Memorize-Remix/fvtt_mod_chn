@@ -1,0 +1,101 @@
+{
+  "SYRINSCAPE": {
+    "NAME": "Syrinscape",
+    "BROWSER": {
+      "StopAll": "Stop All",
+      "CONTEXTMENU": {
+        "play": "Play",
+        "stop": "Stop Playback",
+        "macro": "Create Macro",
+        "playlist": "Create Playlist"
+      },
+      "HINTS": {
+        "results": {
+          "none": "No results found."
+        },
+        "playlist": {
+          "new": "New Syrinscape Playlist"
+        }
+      },
+      "TABS": {
+        "moods": "Moods",
+        "elements": "Elements"
+      },
+      "WARNING": {
+        "cached": "No cached data was able to be provided for the Syrinscape Browser."
+      },
+      "WINDOW": {
+        "title": "Syrinscape Browser"
+      },
+      "REFRESHDATA": {
+        "label": "Refresh Listing",
+        "title": "Syrinscape Bulk Data Refresh",
+        "content": "Are you sure you want to refresh? Syrinscape officially suggests only refreshing once a week.",
+        "error": "There was an error initializing the Syrinscape data."
+      }
+    },
+    "FILTERS": {
+      "ACTIONS": {
+        "clear": "Clear Filters"
+      },
+      "FIELDS": {
+        "product": {
+          "label": "Product or Pack"
+        },
+        "soundset": {
+          "label": "Soundset"
+        },
+        "status": {
+          "label": "Status"
+        },
+        "subcategory": {
+          "label": "Subcategory"
+        },
+        "subtype": {
+          "label": "Subtype"
+        }
+      },
+      "OPTIONS": {
+        "boardgame": "Board Game",
+        "dungeons-and-dragons": "Dungeons & Dragons",
+        "general-fantasy": "General Fantasy",
+        "music": "Music",
+        "oneshot": "One-Shot",
+        "pathfinder": "Pathfinder",
+        "sci-fi": "Sci-Fi",
+        "sfx": "SFX"
+      },
+      "ERRORS": {
+        "invalidValue": "The input value [{value}] is not in the list of available options."
+      }
+    },
+    "SETTINGS": {
+      "AUTH": {
+        "name": "Auth Token",
+        "hint": "Paste your token in from syrinscape.com/account/auth-token."
+      }
+    },
+    "SoundType": {
+      "Element": "Element",
+      "Mood": "Mood"
+    },
+    "Viewer": {
+      "Title": "Syrinscape App Viewer"
+    },
+    "SceneControls": {
+      "PlayerTitle": "Syrinscape Player"
+    },
+    "SoundConfig": {
+      "SoundTypeLabel": "Syrinscape Sound Type",
+      "SoundIdLabel": "Syrinscape Sound ID",
+      "SoundIdHint": "If present, used as an alternative to the source file"
+    },
+    "Errors": {
+      "Auth": "Syrinscape Controller: No Authentication Token Detected"
+    },
+    "BulkDataRequest": {
+      "Progress": "Downloading bulk data from Syrinscape...",
+      "Success": "Successfully updated Syrinscape data."
+    }
+  }
+}

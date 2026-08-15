@@ -1,0 +1,427 @@
+{
+  "cooking-pot": {
+    "global": {
+      "close": "Close"
+    },
+    "title": "Cooking Pot",
+    "cutting-board-title": "Cutting Board",
+    "settings": {
+      "name": "Enable Players to View Ingredients List",
+      "hint": "Allows players to view the list of available ingredients.",
+      "reloadNotice": "Settings changed. Reloading...",
+      "useDefaultIngredients": {
+        "name": "Use default ingredients",
+        "hint": "Use the module's default ingredients to quickly populate your world. If you disable this option, all default ingredients added by the module will be removed from your database."
+      },
+      "useDefaultCuttingBoards": {
+        "name": "Use default cutting boards",
+        "hint": "Use the module's default cutting boards to quickly populate your world. If you disable this option, all default cutting boards added by the module will be removed from your database."
+      },
+      "useDefaultRecipes": {
+        "name": "Use default recipes",
+        "hint": "Use the module's default recipes to quickly populate your world. If you disable this option, all default recipes added by the module will be removed from your database."
+      }
+    },
+    "recipe": {
+      "title": "Recipe Manager",
+      "label": "Open Recipe Manager",
+      "hint": "Manage your culinary recipes - create, edit, view and delete recipes",
+      "create": "Create Recipe",
+      "edit": "Edit Recipe",
+      "view": "View Recipe",
+      "delete": "Delete Recipe",
+      "ingredients": "Ingredients",
+      "items": "items",
+      "empty": {
+        "title": "No Recipes Yet",
+        "description": "Start creating your first recipe to build your cookbook!"
+      },
+      "buttons": {
+        "createFirst": "Create First Recipe",
+        "close": "Close",
+        "cancel": "Cancel",
+        "update": "Update",
+        "create": "Create"
+      },
+      "dialogs": {
+        "createTitle": "Create Recipe",
+        "editTitle": "Edit Recipe",
+        "viewTitle": "View Recipe",
+        "deleteTitle": "Delete Recipe",
+        "deleteConfirm": "Are you sure you want to delete the recipe \"{name}\"?"
+      },
+      "form": {
+        "name": "Name",
+        "image": "Image URL",
+        "ingredients": "Ingredients",
+        "selectPlaceholder": "Select an ingredient...",
+        "add": "Add",
+        "instructions": "Instructions",
+        "noIngredients": "No ingredients available. Create ingredients first.",
+        "validation": {
+          "required": "Name, at least one ingredient, and image are required",
+          "maxIngredients": "A recipe can have at most 4 ingredients"
+        },
+        "result": {
+          "label": "Recipe Result",
+          "type": {
+            "ingredient": "Ingredient",
+            "item": "Game item",
+            "self": "Same recipe"
+          },
+          "selectIngredientPlaceholder": "Select an ingredient...",
+          "selectItemPlaceholder": "Select a game item...",
+          "readonly": {
+            "none": "None",
+            "ingredient": "Ingredient: {name}",
+            "item": "Item: {name}",
+            "self": "Same recipe: {name}"
+          }
+        }
+      },
+      "notify": {
+        "loadFailed": "Failed to load recipes data",
+        "deletedSuccess": "Recipe deleted successfully",
+        "deleteFailed": "Failed to delete recipe",
+        "deleteError": "Error deleting recipe",
+        "created": "Recipe created successfully",
+        "updated": "Recipe updated successfully",
+        "saveFailed": "Failed to save recipe: {error}",
+        "saveError": "Error saving recipe",
+        "noGmAvailable": "No active GM available."
+      },
+      "access": {
+        "manage": "Manage Access",
+        "dialogTitle": "Recipe Access",
+        "allowAll": "Allow all users",
+        "users": "Users",
+        "save": "Save",
+        "saveSuccess": "Access permissions updated",
+        "saveFailed": "Failed to save access permissions"
+      }
+    },
+    "ingredients": {
+      "title": "Ingredients Manager",
+      "label": "Open Ingredients Manager",
+      "hint": "Manage your ingredients and categories - create, edit, delete ingredients and organize them into categories",
+      "create": "Create Ingredient",
+      "edit": "Edit Ingredient",
+      "delete": "Delete Ingredient",
+
+      "ingredient-sidebar": {
+        "title": "Ingredients List"
+      },
+
+      "list": {
+        "title": "Ingredients"
+      },
+
+      "empty": {
+        "title": "No Ingredients Yet",
+        "description": "Start by creating ingredients to use in your recipes!"
+      },
+
+      "buttons": {
+        "createFirst": "Create First Ingredient",
+        "close": "Close",
+        "cancel": "Cancel",
+        "update": "Update",
+        "create": "Create"
+      },
+
+      "dialogs": {
+        "createTitle": "Create Ingredient",
+        "editTitle": "Edit Ingredient",
+        "viewTitle": "View Ingredient",
+        "deleteTitle": "Delete Ingredient",
+        "deleteConfirm": "Are you sure you want to delete the ingredient \"{name}\"?"
+      },
+
+      "form": {
+        "name": "Name",
+        "image": "Image URL",
+        "category": "Categories",
+        "categoryHint": "Hold Ctrl (Cmd on Mac) to select multiple categories",
+        "description": "Description",
+        "validation": {
+          "required": "Name is required"
+        }
+      },
+
+      "notify": {
+        "loadFailed": "Failed to load ingredients data",
+        "deletedSuccess": "Ingredient deleted successfully",
+        "deleteFailed": "Failed to delete ingredient",
+        "deleteError": "Error deleting ingredient",
+        "created": "Ingredient created successfully",
+        "updated": "Ingredient updated successfully",
+        "saveFailed": "Failed to save ingredient: {error}",
+        "saveError": "Error saving ingredient"
+      },
+
+      "categories": {
+        "title": "Categories",
+        "create": "Create Category",
+        "edit": "Edit Category",
+        "delete": "Delete Category",
+        "items": "items",
+        "none": "None",
+        "empty": "No categories yet",
+
+        "createTitle": "Create Category",
+        "editTitle": "Edit Category",
+        "deleteTitle": "Delete Category",
+        "deleteConfirm": "Are you sure you want to delete the category \"{name}\"?",
+
+        "form": {
+          "name": "Name",
+          "validation": {
+            "required": "Name is required"
+          }
+        },
+
+        "deletedSuccess": "Category deleted successfully",
+        "deleteFailed": "Failed to delete category",
+        "deleteError": "Error deleting category",
+        "created": "Category created successfully",
+        "updated": "Category updated successfully",
+        "saveFailed": "Failed to save category: {error}",
+        "saveError": "Error saving category"
+      },
+      "sidebar": {
+        "contextMenu": {
+          "transferToBackpack": "Transfer to backpack"
+        },
+        "transferDialog": {
+          "title": "Transfer to Backpack",
+          "selectActor": "Select the character",
+          "quantity": "Quantity",
+          "add": "Add",
+          "cancel": "Cancel"
+        },
+        "notify": {
+          "transferDialog": {
+            "title": "Transfer to Backpack",
+            "selectActor": "Select the character",
+            "quantity": "Quantity",
+            "add": "Add",
+            "cancel": "Cancel"
+          },
+          "transferNotImplemented": "Transfer action not implemented.",
+          "transferNotImplementedItem": "\"{name}\" — transfer action not implemented.",
+          "noActorsAvailable": "No character available for transfer.",
+          "backpackModuleMissing": "Backpack module not found. Make sure the 'backpack' module is active.",
+          "transferSuccess": "\"{name}\" has been added to the backpack successfully.",
+          "transferFailed": "Failed to transfer item to the backpack."
+        },
+        "search": {
+          "placeholder": "Search ingredients...",
+          "ariaLabel": "Search ingredients",
+          "noResults": "No ingredients match your search"
+        }
+      }
+    },
+    "items": "items",
+    "empty": {
+      "title": "No Recipes Yet",
+      "description": "Start creating your first recipe to build your cookbook!"
+    },
+    "buttons": {
+      "createFirst": "Create First Recipe",
+      "close": "Close",
+      "cancel": "Cancel",
+      "update": "Update",
+      "create": "Create"
+    },
+    "dialogs": {
+      "createTitle": "Create Recipe",
+      "editTitle": "Edit Recipe",
+      "viewTitle": "View Recipe",
+      "deleteTitle": "Delete Recipe",
+      "deleteConfirm": "Are you sure you want to delete the recipe \"{name}\"?"
+    },
+    "form": {
+      "name": "Name",
+      "image": "Image URL",
+      "ingredients": "Ingredients",
+      "selectPlaceholder": "Select an ingredient...",
+      "add": "Add",
+      "instructions": "Instructions",
+      "noIngredients": "No ingredients available. Create ingredients first.",
+      "validation": {
+        "required": "Name and instructions are required"
+      }
+    },
+    "notify": {
+      "loadFailed": "Failed to load recipes data",
+      "deletedSuccess": "Recipe deleted successfully",
+      "deleteFailed": "Failed to delete recipe",
+      "deleteError": "Error deleting recipe",
+      "created": "Recipe created successfully",
+      "updated": "Recipe updated successfully",
+      "saveFailed": "Failed to save recipe: {error}",
+      "saveError": "Error saving recipe"
+    },
+    "validation": {
+      "required": "Name, at least one ingredient, and image are required"
+    },
+    "cuttingBoard": {
+      "name": "Cutting Board",
+      "title": "Cutting Board Manager",
+      "label": "Open Cutting Board Manager",
+      "hint": "Manage ingredient transformations — create, edit, view and delete cutting boards",
+      "create": "Create Cutting Board",
+      "edit": "Edit Cutting Board",
+      "view": "View Cutting Board",
+      "delete": "Delete Cutting Board",
+      "inputs": "Inputs",
+      "results": "Results",
+      "empty": {
+        "title": "No Cutting Boards Yet",
+        "description": "Start by creating cutting boards to define ingredient transformations!"
+      },
+      "buttons": {
+        "createFirst": "Create First Cutting Board",
+        "cut": "Cut"
+      },
+      "menu": {
+        "use": "Use",
+        "boards": "Boards",
+        "items": "Items"
+      },
+      "dialogs": {
+        "createTitle": "Create Cutting Board",
+        "editTitle": "Edit Cutting Board",
+        "viewTitle": "View Cutting Board",
+        "deleteTitle": "Delete Cutting Board",
+        "deleteConfirm": "Are you sure you want to delete the cutting board \"{name}\"?"
+      },
+      "form": {
+        "inputs": "Input Ingredients",
+        "results": "Result Ingredients",
+        "addNewResult": "New result ingredient",
+        "validation": {
+          "required": "Name, inputs and results are required",
+          "maxInputs": "A cutting board can have at most 4 input ingredients",
+          "maxResults": "A cutting board can have at most 4 result ingredients"
+        }
+      },
+      "itemsPanel": {
+        "selectActor": "Select an actor:",
+        "emptyNoItems": "No items in the backpack.",
+        "emptyNoActors": "You don't own any actors.",
+        "quantity": "quantity"
+      },
+      "notify": {
+        "loadFailed": "Failed to load cutting boards data",
+        "deletedSuccess": "Cutting board deleted successfully",
+        "deleteFailed": "Failed to delete cutting board",
+        "deleteError": "Error deleting cutting board",
+        "created": "Cutting board created successfully",
+        "updated": "Cutting board updated successfully",
+        "saveFailed": "Failed to save cutting board",
+        "saveError": "Error saving cutting board",
+        "boardNotFound": "Cutting board not found."
+      },
+      "access": {
+        "manage": "Manage Access",
+        "dialogTitle": "Cutting Board Access",
+        "allowAll": "Allow all users",
+        "users": "Users",
+        "save": "Save",
+        "saveSuccess": "Access permissions updated",
+        "saveFailed": "Failed to save access permissions"
+      },
+      "boardDialog": {
+        "name": "Name",
+        "description": "Description",
+        "empty": "Empty"
+      }
+    },
+    "cookingPot": {
+      "title": "Cooking Pot",
+      "sidebar": {
+        "title": "Recipe List",
+        "empty": "No recipes available"
+      },
+      "content": {
+        "ingredients": "Ingredients",
+        "noIngredients": "This recipe has no listed ingredients.",
+        "instructions": "Instructions",
+        "noInstructions": "No instructions provided.",
+        "selectHint": "Select a recipe in the left column to view its details."
+      },
+      "notify": {
+        "loadFailed": "Failed to load Cooking Pot data.",
+        "noActor": "No accessible actors. Select a character first.",
+        "noMatch": "No recipe matches the selected ingredients.",
+        "backpackApiMissing": "Backpack module API not found.",
+        "cookSuccess": "Cooked: {name}",
+        "cookFailed": "Failed to cook recipe."
+      },
+      "itemsPanel": {
+        "emptyNoActors": "You don't own any actors."
+      },
+      "buttons": {
+        "cook": "Cook"
+      },
+      "dialogs": {
+        "selectItem": {
+          "title": "Select an item for Slot {slot}",
+          "itemsListAriaLabel": "Backpack items list",
+          "itemsGridAriaLabel": "Backpack items",
+          "emptyNoItems": "No items in the backpack.",
+          "cancel": "Cancel"
+        },
+		"selectQuantity": {
+          "title": "Select quantity of {item} for Slot {slot}",
+          "available": "Available",
+          "quantity": "Quantity",
+          "cancel": "Cancel",
+          "confirm": "Confirm"
+        },
+        "recipeInfo": {
+          "close": "Close",
+          "result": "Result"
+        }
+      }
+    },
+    "menu": {
+      "cook": "Cook",
+      "recipes": "Recipes",
+      "items": "Items"
+    },
+    "itemsPanel": {
+      "selectActor": "Select an actor:",
+      "emptyNoItems": "No items in the backpack.",
+      "emptyNoActors": "You don't own any actors.",
+      "quantity": "quantity"
+    },
+    "hotkeys": {
+      "manager": {
+        "title": "Hotkeys",
+        "label": "Open Hotkey Manager",
+        "hint": "Configure hotkeys for Cooking Pot and Cutting Board."
+      },
+      "tab": { "hotkeys": "Hotkeys" },
+      "fields": {
+        "name": "Name",
+        "key": "Key",
+        "modifiers": "Modifiers",
+        "action": "Action",
+        "scene": "Scene ID",
+        "tile": "Tile ID",
+        "enabled": "Enabled"
+      },
+      "add": "Add Hotkey",
+      "delete": "Delete",
+      "save": "Save",
+      "notify": {
+        "saveSuccess": "Hotkeys saved successfully",
+        "saveFailed": "Error saving hotkeys",
+        "loadFailed": "Error loading hotkeys",
+        "deleteFailed": "Error deleting hotkey"
+      }
+    }
+  }
+}

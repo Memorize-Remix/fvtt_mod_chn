@@ -1,0 +1,77 @@
+{
+  "PQT.Title": "Phils Quest Tracker",
+  "PQT.AppName": "Quest Log",
+  
+  "PQT.Status.Active": "Active",
+  "PQT.Status.Draft": "Draft",
+  "PQT.Status.Completed": "Completed",
+  "PQT.Status.Failed": "Failed",
+  "PQT.Status.Available": "Available",
+  
+  "PQT.Category.Main": "Main Quest",
+  "PQT.Category.Side": "Side Quest",
+  "PQT.Category.Personal": "Personal Quest",
+
+  "PQT.Field.Title": "Quest Title",
+  "PQT.Field.Description": "Description",
+  "PQT.Field.Source": "Quest Giver",
+  "PQT.Field.Objectives": "Objectives",
+  "PQT.Field.Rewards": "Rewards",
+  "PQT.Field.StartDate": "Start Date",
+  "PQT.Field.SyncCalendar": "Sync with Calendar",
+  "PQT.Field.Visibility": "Visibility",
+  "PQT.Visibility.Always": "Always Visible",
+  "PQT.Visibility.GM": "GM Only",
+  "PQT.Visibility.Date": "Visible on Start Date",
+  "PQT.Action.PickDate": "Pick Date from Calendar",
+
+  "PQT.Access.Observer": "GM",
+  "PQT.Access.Owner": "Everyone",
+  "PQT.Field.AccessLabel": "Editable By",
+  "PQT.Field.TypeLabel": "Quest Type",
+  "PQT.Field.StatusLabel": "Quest Status",
+  
+  "PQT.Tab.Overview": "Overview",
+  "PQT.Tab.Notes": "Notes",
+  "PQT.Tab.Rewards": "Rewards",
+
+  "PQT.Field.PlayerNotes": "Player Notes",
+  "PQT.Field.GMNotes": "GM Notes",
+
+    
+  "PQT.Action.Create": "New Quest",
+  "PQT.Action.Edit": "Edit",
+  "PQT.Action.Delete": "Delete",
+  "PQT.Action.Track": "Track",
+  "PQT.Action.Untrack": "Untrack",
+  "PQT.Action.Save": "Save Quest",
+  "PQT.Action.Cancel": "Cancel",
+  "PQT.Action.ShowToPlayers": "Show to Players",
+  "PQT.Action.HideFromPlayers": "Hide from Players",
+  "PQT.Action.DragRewardToSheet": "Drag reward to a character sheet",
+  
+  "PQT.Label.NoQuests": "No quests found.",
+  "PQT.Label.DragActor": "Drag Actor Here",
+  "PQT.Label.DragItem": "Drag Item Here",
+  "PQT.Label.NoObjectivesVisible": "No objectives visible.",
+  
+  "PQT.Message.QuestCreated": "New Quest Created: {title}",
+  "PQT.Message.QuestCompleted": "Quest Completed: {title}",
+  "PQT.Message.ConfirmDelete": "Are you sure you want to delete this quest?",
+  "PQT.Message.SavingToGM": "Saving changes to GM...",
+  "PQT.Label.NoRewardsVisible": "No rewards visible.",
+
+  "PQT.Settings.Title": "Quest Tracker Settings",
+  "PQT.Settings.Description": "Manage your quest data.",
+  "PQT.Settings.ExportLabel": "Export Quests",
+  "PQT.Settings.ExportButton": "Export Data",
+  "PQT.Settings.ExportHint": "Download a backup of all current quests as a JSON file.",
+  "PQT.Settings.ImportLabel": "Import Quests",
+  "PQT.Settings.ImportButton": "Import Data",
+  "PQT.Settings.ImportHint": "Upload a previously exported JSON file. Imports will be added as new quests.",
+  "PQT.Settings.ExportSuccess": "Quests exported successfully.",
+  "PQT.Settings.ImportSuccess": "Quests imported successfully.",
+  
+  "PQT.Keybinding.Toggle.Name": "Toggle Quest Log",
+  "PQT.Keybinding.Toggle.Hint": "Open or close the Quest Log window."
+}

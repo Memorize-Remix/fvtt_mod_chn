@@ -1,0 +1,59 @@
+{
+    "INTERACTIVE_LIGHT": {
+        "Config": {
+            "Enabled": {
+                "Label": "Interactive light",
+                "Hint": "Indicates whether this light source can be toggled by players."
+            },
+
+            "Path": {
+                "Label": "Icon",
+                "Hint": "The texture used as the light source icon."
+            },
+
+            "ClickOptions": {
+                "Label": "Click handler",
+                "Options": {
+                    "Single": "Single",
+                    "Double": "Double"
+                },
+                "Hint": "Configures how the light source reacts to click(-s). Double-click is the default."
+            },
+            "Prefab": {
+                "Name": {
+                    "Label": "Prefab Name",
+                    "Hint": "Name of the Prefab used for searching"
+                },
+                "Tags": {
+                    "Hint": "Tags for prefab classification and searching"
+                }
+            },
+
+            "InteractiveSettingsLegend": "Interactivity",
+            "PrefabSettingsLegend": "Prefab",
+
+            "TabName": "Interactive light",
+            "MakePrefabButton": "Save & Make Prefab"
+        },
+        "Menu": {
+            "Prefabs": {
+                "Lable": "Prefabs",
+                "Hint": "Prefabs of Interactive Light",
+                "Name": "Prefabs of Interactive Light",
+
+                "Browser": {
+                    "Title": "Light Sources Prefabs",
+                    "Footer": {
+                        "Hint": {
+                            "Rotate": "Shiftt/Alt + Wheel — rotate prefab preview",
+                            "Place": "Click — place prefab"
+                        }
+                    }
+                }
+            }
+        },
+        "Multiselect": {
+            "Add": "Press Enter to add a new tag"
+        }
+    }
+}

@@ -1,0 +1,125 @@
+
+    "foundry-graph": {
+        "tooltip": {
+            "edit": "编辑关系图元数据",
+            "delete": "删除关系图",
+            "openGraph": "打开并管理关系图表",
+            "backgroundImage": "设置关系图的背景关系图像",
+            "selectGraphType": "选择要创建的关系图类型",
+            "manageRelations": "管理关系",
+			"manageRelationsDisabled": "此关系图类型的关系已固定",
+			"reassignEntities": "重新分配导入关系图的实体",
+            "permissions": "管理关系图权限"
+        },
+		"themes":{
+            "none": "无主题"
+        },
+        "Tabs": {
+            "creationGraph": "创建关系图",
+            "listGraph": "关系图列表"
+        },
+        "Manager": {
+            "ControlTitle": "关系图管理",
+            "ControlManage": "关系图管理"
+        },
+        "Window": {
+            "DashboardTitle": "关系图",
+            "GraphTitle": "关系图",
+            "PermTitle": "关系图权限",
+            "RelationsTitle": "管理关系图的关系：",
+            "ViewOnlyMode": "只读模式"
+        },
+        "Settings": {
+            "DebugName": "启用调试日志",
+            "DebugHint": "将详细日志写入控制台以进行故障排除。"
+        },
+        "List": {
+            "SavedGraphs": "已保存的关系图",
+			"Type": "类型",
+            "Name": "名称",
+            "Description": "描述",
+            "Actions": "操作"
+        },
+        "Buttons": {
+            "ExportSvg": "导出关系图",
+            "LinkNodes": "链接节点",
+            "DeleteClean": "删除并清理",
+            "Save": "保存",
+            "Cancel": "取消",
+            "CancelLinking": "取消链接",
+            "CreateGraph": "创建关系图"
+        },
+        "Labels": {
+            "RelationType": "关系类型",
+            "graphId": "关系图ID",
+            "graphName": "关系图名称",
+            "graphDesc": "关系图描述",
+			"importGraph": "导入关系图",
+            "SelectGraphType": "选择关系图类型"
+        },
+        "Confirm": {
+            "DeleteNode": "删除节点\"{name}\"?",
+            "DeleteLink": "删除从\"{source}\"到\"{target}\"的链接?"
+        },
+        "Errors": {
+            "SaveError": "保存关系图时出错。",
+            "ExportFailed": "导出失败。请查看控制台获取详细信息。",
+            "NoGraphSelectedForExport": "未选择要导出的关系图。",
+            "ImportParseFailed": "无法读取文件。请确保它是一个有效的JSON关系图导出文件。",
+		    "ImportInvalidFile": "此文件似乎不是有效的关系图导出文件。",
+		    "ImportSaveFailed": "关系图已解析但无法保存。请查看控制台获取详细信息。"
+        },
+        "Defaults": {
+            "UntitledGraph": "新关系图",
+            "GraphDescription": "关系图的描述。"
+        },
+        "Notifications": {
+            "LinkingOn": "链接模式已开启",
+            "LinkingOff": "链接模式已关闭",
+            "ExportPrepare": "正在准备高分辨率导出…对于大型关系图可能需要几秒钟。",
+            "ExportFinished": "导出完成。",
+            "InvalidGraphType": "选择了无效的关系图类型。",
+            "GraphSaved": "关系图已保存。",
+            "GraphCleanupDone": "已清理关系图引用。",
+            "ImportSuccess": "关系图“{name}”导入成功。",
+			"ImportIdCollision": "ID为“{oldId}”的关系图已存在。已使用新ID导入：{newId}。"
+        },
+		"GraphPage": {
+			"Configure": "关系图",
+			"Title": "关系图页面",
+			"Hint": "为此日志页面设置关系图标记。",
+			"IconLabel": "自定义图标",
+			"PickIcon": "选择图像",
+			"ClearIcon": "清除",
+			"Preview": "预览",
+			"Saved": "页面设置已保存。",
+			"SaveError": "无法保存页面设置。",
+			"start_date": "开始日期",
+			"end_date": "结束日期",
+			"event_color": "事件颜色",
+			"StartDateRequired": "开始日期是必需的。",
+			"PickDate": "选择日期",
+			"ClearDate": "清除",
+			"Year": "年",
+			"Month": "月",
+			"Day": "日",
+			"Time": "时间",
+			"Apply": "应用",
+			"Close": "关闭",
+			"StartDate": "开始日期",
+			"EndDate": "结束日期",
+			"InvalidDate": "无效日期"
+		},
+		"Timeline": {
+			"DefaultLane": "默认轨道",
+			"AddGraphFrame": "添加关系图框架",
+			"GraphFrame": "关系图框架"
+		},
+        "DeletionDialog": {
+            "Title": "删除警告",
+            "UsedInGraphs": "在这些关系图中使用：",
+			"RangeDropHint": "范围项目已放置 — 拖动右边缘以设置结束日期。",
+            "WarningRemoveFromDiagrams": "删除它将从这些关系图表中移除。是否继续？"
+        }
+    }
+}

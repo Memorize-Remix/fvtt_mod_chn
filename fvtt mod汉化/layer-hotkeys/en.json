@@ -1,0 +1,26 @@
+{
+    "LAYER_HOTKEYS": {
+        "activate": "Activate {title}",
+        "focus": "Focus {tooltip}",
+        "cycle": "Cycle tools within layer",
+        "cycleTip": "Enable cycling between selectable tools in a given layer by pressing the hotkey repeatedly",
+        "resetOnChange": "Reset to first tool",
+        "resetOnChangeTip": "Always reset to using the first tool in a layer when switching to that layer via hotkey",
+        "sidebarHotkeys": "Sidebar Hotkeys",
+        "sidebarHotkeysTip": "Register hotkeys for the tabs in the right sidebar",
+        "combatHotkeys": "Combat Hotkeys",
+        "combatHotkeysTip": "Register hotkeys for common combat actions",
+        "combatPrefix": "Combat: {label}",
+        "hotkeyGroupHint": "Register hotkeys for each of the selectable tools in this layer",
+        "stickyUnconstrained": "Remember Unconstrained Movement state",
+        "stickyUnconstrainedTip": "Remember the state of the Unconstrained Movement setting between refreshes and scene changes",
+        "cache": {
+            "save": "Save",
+            "reset": "Reset",
+            "notes": "Save the current layers and tools so that hotkeys can be bound for them as-needed on future page loads.  Core layers and tools are handled by default; this will also include layers and tools that systems and modules have added.  The changes will be reflected after the next page refresh.",
+            "saveSettings": "Current layers/tools saved.  Refresh the page to see the change reflected in the hotkey bindings.",
+            "resetSettings": "Layers/tools reset.  Refresh the page to see the change reflected in the hotkey bindings."
+        },
+        "pingCombatant": "Ping Current Combatant"
+    }
+}

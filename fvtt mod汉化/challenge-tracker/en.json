@@ -1,0 +1,169 @@
+{
+  "challengeTracker": {
+    "labels": {
+      "title": "Challenge Tracker",
+      "buttonTitle": "Challenge Tracker",
+      "showTracker": "Click to Show",
+      "hideTracker": "Click to Hide",
+      "yes": "Yes",
+      "no": "No",
+      "deleteAllDialog": {
+        "title": "Delete All Challenge Trackers",
+        "body": "Are you sure you wish to delete all Challenge Trackers?"
+      },
+      "form": {
+        "open": "Open",
+        "openTooltip": "Open the Challenge Tracker",
+        "copy": "Copy",
+        "copyTooltip": "Copy the Challenge Tracker",
+        "edit": "Edit",
+        "editTooltip": "Edit the Challenge Tracker",
+        "delete": "Delete",
+        "deleteTooltip": "Delete the Challenge Tracker",
+        "moveUpTooltip": "Move the Challenge Tracker up the list",
+        "moveDownTooltip": "Move the Challenge Tracker down the list",
+        "new": "Create New",
+        "newTooltip": "Create a new Challenge Tracker",
+        "title": "Challenge Tracker List"
+      },
+      "editForm": {
+        "save": "Save and Close",
+        "title": "Edit Challenge Tracker",
+        "trackerOptions": {
+          "mainTitle": "Main Options",
+          "title": "Title",
+          "titleTooltip": "The title of the challenge tracker",
+          "scroll": "Scroll",
+          "scrollTooltip": "Use the scroll wheel to increase and decrease segments",
+          "size": "Size",
+          "sizeTooltip": "The size of the challenge tracker in pixels",
+          "show": "Show to Others",
+          "showTooltip": "Show the challenge tracker to others",
+          "windowed": "Windowed",
+          "windowedTooltip": "Display the challenge tracker in a window",
+          "outerTitle": "Outer Track",
+          "outerTotal": "Total Segments",
+          "outerTotalTooltip": "The number of total segments on the outer track",
+          "outerCurrent": "Current Segments",
+          "outerCurrentTooltip": "The number of currently set segments on the outer track",
+          "outerBackgroundColor": "Unset Color",
+          "outerBackgroundColorTooltip": "The hex color of unset segments on the outer track",
+          "outerColor": "Set Color",
+          "outerColorTooltip": "The hex color of the set segments on the outer track",
+          "innerTitle": "Inner Track",
+          "innerTotal": "Total Segments",
+          "innerTotalTooltip": "The number of total segments on the inner track",
+          "innerCurrent": "Current Segments",
+          "innerCurrentTooltip": "The number of currently set segments on the inner track",
+          "innerBackgroundColor": "Unset Color",
+          "innerBackgroundColorTooltip": "The hex color of the unset segments on the inner track",
+          "innerColor": "Set Color",
+          "innerColorTooltip": "The hex color of the set segments on the inner track",
+          "imageTitle": "Images",
+          "backgroundImage": "Background Image",
+          "backgroundImageTooltip": "The background image of the challenge tracker",
+          "foregroundImage": "Set Image",
+          "foregroundImageTooltip": "The image of the set segments on the outer and inner track",
+          "frameTitle": "Frame",
+          "frameWidth": "Width",
+          "frameWidthTooltip": "The width of the frame",
+          "frameColor": "Color",
+          "frameColorTooltip": "The hex color of the frame"
+        }
+      },
+      "fuzzyQuery": "Did you mean '{fuzzyResult}'?"
+    },
+    "errors": {
+      "doesNotExist": "Challenge Tracker '{value}' does not exist.",
+      "notAllowed": "Function '{function}' is not allowed for the user.",
+      "notOwned": "Challenge Tracker '{value}' is not owned by the user.", 
+      "notSupplied":  "Parameter '{parameter}' was not supplied to function '{function}'.",
+      "notValid": "Parameter '{parameter}' is not valid."
+    },
+    "settings": {
+      "allowShow" : {
+        "name": "Allow Show to Others",
+        "hint": "GM setting: Allow users with this role (and above) to show Challenge Trackers to others (Requires reload)",
+        "choices" : {
+          "4": "Game Master",
+          "3": "Assistant GM",
+          "2": "Trusted Player",
+          "1": "Player"
+        }
+    	},
+      "buttonLocation" : {
+        "name": "Button Location",
+        "hint": "GM setting: Set the location of the Challenge Tracker button (Requires reload)",
+        "choices" : {
+          "playerList": "Player List",
+          "tokens": "Token Controls",
+          "templates": "Measurement Controls",
+          "tiles": "Tile Controls",
+          "drawing": "Drawing Tools",
+          "walls": "Wall Controls",
+          "lighting": "Lighting Controls",
+          "sounds": "Ambient Sound Controls",
+          "regions": "Region Controls",
+          "notes": "Journal Notes",
+          "none": "None"
+        }
+    	},
+      "debug" : {
+        "name": "Debug",
+        "hint": "Enable debug logging in the console"
+    	},
+      "displayButton" : {
+        "name": "Display Button",
+        "hint": "GM setting: Display the Challenge Tracker button to users with this role and above (Requires reload)"
+    	},
+      "frameColor" : {
+        "name": "Frame Color",
+        "hint": "Set the default color of the frame",
+        "label": "Color Picker"
+    	},
+      "frameWidth" : {
+        "name": "Frame Width",
+        "hint": "Set the width of the frame",
+        "choices" : {
+          "none": "None",
+          "extraThin": "Extra Thin",
+          "thin": "Thin",
+          "medium": "Medium",
+          "thick": "Thick"
+        }
+      },
+      "innerBackgroundColor" : {
+        "name": "Inner Background Color",
+        "hint": "Set the default background color of the inner track",
+        "label": "Color Picker"
+    	},
+      "innerColor" : {
+        "name": "Inner Color",
+        "hint": "Set the default color of the inner track",
+        "label": "Color Picker"
+    	},
+      "outerBackgroundColor" : {
+        "name": "Outer Background Color",
+        "hint": "Set the default background color of the outer track",
+        "label": "Color Picker"
+    	},
+      "outerColor" : {
+        "name": "Outer Color",
+        "hint": "Set the default color of the outer track",
+        "label": "Color Picker"
+    	},
+      "scroll" : {
+        "name": "Scroll",
+        "hint": "Use the scroll wheel to increase and decrease segments"
+    	},
+      "size" : {
+        "name": "Size",
+        "hint": "Set the default size of the Challenge Tracker in pixels"
+    	},
+      "windowed" : {
+        "name": "Windowed",
+        "hint": "Display the Challenge Trackers in a window by default"
+    	}
+    }
+  }
+}

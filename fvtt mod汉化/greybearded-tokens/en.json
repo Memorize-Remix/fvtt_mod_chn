@@ -1,0 +1,121 @@
+{
+  "GBT": {
+    "Common": {
+      "Enabled": "Enabled",
+      "Save": "Save",
+      "Cancel": "Cancel",
+      "TintMode": "Tint Mode",
+      "UsePlayerColor": "Use Player Color",
+      "ColorHex": "Color Hex",
+      "ColorPicker": "Color Picker",
+      "InvalidHex": "Please enter a valid hexadecimal color (e.g. #RRGGBB).",
+      "DefaultColor": "Default Color"
+    },
+    "Tint": {
+      "None": "No Tint",
+      "Disposition": "Disposition",
+      "Unicolor": "Unicolor",
+      "Custom": "Custom",
+      "ActorType": "Actor Type",
+      "Ownership": "Ownership"
+    },
+    "Frames": {
+      "Name": "Frame Settings",
+      "Label": "Configure Frames",
+      "Frame1": "Frame 1",
+      "Frame2": "Frame 2",
+      "Mask": "Mask",
+      "Frame1Preview": "Frame 1 Preview",
+      "Frame2Preview": "Frame 2 Preview",
+      "MaskPreview": "Mask Preview",
+      "Frame1AlwaysOnTitle": "Frame 1 is always active.",
+      "Path": "Path",
+      "Scale": "Scale",
+      "Browse": "Browse…"
+    },
+    "Disposition": {
+      "hostile": "Hostile",
+      "neutral": "Neutral",
+      "friendly": "Friendly",
+      "secret": "Secret",
+      "character": "Player Character"
+    },
+    "Nameplate": {
+      "Name": "Nameplate Settings",
+      "Label": "Configure Nameplates",
+      "BaseFontSize": "Base Font Size (px)",
+      "FontFamily": "Font Family",
+      "ScaleWithToken": "Scale With Token"
+    },
+    "Sync": {
+      "Name": "Portrait → Prototype Token Sync",
+      "Hint": "Choose how to handle syncing the actor portrait to the prototype token image when the portrait changes.",
+      "ChoiceAlways": "Always synchronize",
+      "ChoiceDialog": "Ask (Dialog)",
+      "ChoiceNothing": "Do nothing",
+      "DialogTitle": "Sync Prototype Token Image?",
+      "DialogText": "The actor portrait has changed. Do you want to update the prototype token image to match?",
+      "ActorPortrait": "Actor Portrait",
+      "ProtoToken": "Prototype Token",
+      "ButtonSync": "Synchronize",
+      "ButtonCancel": "Cancel",
+      "DoneInfo": "Prototype Token image synchronized for {name}."
+    },
+    "Tools": {
+      "SizeShrinkTitle": "Shrink token (min {sizeMin})",
+      "SizeGrowTitle": "Grow token (max {sizeMax})",
+      "ToggleFrameToolTitle": "Toggle frame flag",
+      "Config": {
+        "Name": "Token Tools",
+        "Label": "Configure Token Tools",
+        "Size": "Enable Shrink/Grow",
+        "ToggleFrame": "Enable Toggle Frame Flag",
+        "Disposition": "Enable Disposition Tool",
+        "SizeMin": "Minimum size for Shrink/Grow",
+        "SizeMax": "Maximum size for Shrink/Grow",
+        "MirrorArtwork": "Enable Mirror Artwork Tool",
+        "CustomTint": "Enable Custom Color Tool"
+      },
+      "Disposition": {
+        "ToolTitle": "Set disposition for selected tokens",
+        "Title": "Change Disposition",
+        "Content": "Which disposition should be applied to all selected tokens?",
+        "NoneSelected": "Please select at least one token."
+      },
+      "MirrorArtwork": {
+        "ToolTitle": "Toggle mirror for selected token artwork (vertical axis)"
+      },
+      "CustomTint": {
+        "ToolTitle": "Set custom color for selected tokens",
+        "Title": "Set Custom Color",
+        "Content": "Which custom color should be applied to all selected tokens?",
+        "NoneSelected": "Please select at least one token.",
+        "Clear": "Remove Color"
+      }
+    },
+    "ActorTypeColors": {
+      "Name": "Actor Type Colors",
+      "Label": "Configure Actor Type Colors",
+      "ActorType": "Actor Type",
+      "Hint": "Define default colors for all registered actor types."
+    },
+    "DispositionColors": {
+      "Name": "Disposition Colors",
+      "Label": "Configure Disposition Colors",
+      "Disposition": "Disposition",
+      "Hint": "Define default tint colors for each token disposition."
+    },
+    "Ownership": {
+      "owner": "Owner",
+      "observer": "Observer",
+      "limited": "Limited",
+      "none": "None"
+    },
+    "OwnershipColors": {
+      "Name": "Ownership Colors",
+      "Label": "Configure Ownership Colors",
+      "Level": "Ownership",
+      "Hint": "Define default tint colors for each ownership level."
+    }
+  }
+}

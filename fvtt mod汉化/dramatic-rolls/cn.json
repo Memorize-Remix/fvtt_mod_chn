@@ -1,0 +1,60 @@
+
+   "dramatic-rolls": {
+      "settings": {
+         "add-sound": {
+            "name": "添加音效",
+            "label": "为大成功和大失败添加音效。"
+         },
+         "play-animations": {
+            "name": "大成功和大失败时播放动画",
+            "label": "建议性能较差的电脑禁用此功能"
+         },
+         "configure-sounds": {
+            "name": "配置音效",
+            "label": "配置大成功和大失败时播放的音效。"
+         },
+         "configure-animations": {
+            "name": "配置动画",
+            "label": "配置大成功和大失败时播放的动画。"
+         },
+         "disable-npc-rolls": {
+            "name": "禁用 NPC 和 GM 的戏剧掷骰",
+            "label": "让玩家们尽情玩吧，戏剧掷骰只会触发在玩家所有的角色。"
+         },
+         "trigger-on-public-only": {
+            "name": "仅在公开掷骰时播放音效和动画",
+            "label": "如果选中，音效和动画将不会在暗骰时触发。无论该设置如何，只有在掷骰是公开的情况下，音效和动画才会播放给其他玩家。"
+         },
+         "pf2e-trigger-on-degree-of-success": {
+            "name": "仅 PF2E - 根据成功程度触发效果",
+            "label": "选中后，如果掷骰的结果比掷骰的 DC 值高出 10 或更多，就会触发大成功效果。如果掷骰的结果比掷骰子的 DC 值低 10 或更多，将触发大失败效果。"
+         },
+         "sound-volume-multiplier": {
+            "name": "音效音量",
+            "label": "调整所有dramatic roll音效的音量（0 = 静音，1 = 最大音量）。此设置按玩家保存。"
+         }
+      },
+      "configure-sounds-settings-form": {
+         "title": "配置音效",
+         "save": "保存更改",
+         "reset": "重置默认",
+         "playSound": "播放音效",
+         "removeSound": "移除音效",
+         "enableDisableSound": "启用/禁用音效",
+         "addCritSound": "添加大成功音效",
+         "addFumbleSound": "添加大失败音效",
+         "critical-sounds-list-title": "大成功音效",
+         "fumble-sounds-list-title": "大失败音效",
+         "soundVolume": "音量"
+      },
+      "configure-animations-settings-form": {
+         "title": "配置动画",
+         "save": "保存更改",
+         "reset": "重置默认",
+         "playAnimation": "播放",
+         "enableDisableAnimation": "启用/禁用",
+         "critical-animations-list-title": "大成功动画",
+         "fumble-animations-list-title": "大失败动画"
+      }
+   }
+}

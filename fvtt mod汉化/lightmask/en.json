@@ -1,0 +1,36 @@
+{
+    "lightmask.AmbientConfiguration.LegendTitle": "Light/Sound Mask",
+    "lightmask.AmbientConfiguration.Shapes.Name": "Shape",
+
+    "lightmask.AmbientConfiguration.CachedWallID.Name": "Cached wall IDs",
+    "lightmask.AmbientConfiguration.CachedWallID.Hint.Light": "Comma-separated list of wall ids to cache for this light.",
+    "lightmask.AmbientConfiguration.CachedWallID.Hint.Sound": "Comma-separated list of wall ids to cache for this sound.",
+    "lightmask.AmbientConfiguration.CachedWallID.Button.Name": "Cache selected walls",
+    "lightmask.AmbientConfiguration.CachedWallID.Button.Hint": "Switch to the Walls Layer and select walls to cache, then hit 'Cache selected walls' to cache those walls.",
+
+    "lightmask.AmbientConfiguration.Relative.Name": "Relative",
+    "lightmask.AmbientConfiguration.Relative.Hint.Light": "Make cached walls move relative to the light when this light is moved.",
+    "lightmask.AmbientConfiguration.Relative.Hint.Sound": "Make cached walls move relative to the sound when this sound is moved.",
+
+    "lightmask.AmbientConfiguration.NumSides.Name": "Sides",
+    "lightmask.AmbientConfiguration.NumSides.Hint": "Min 3 for Regular Polygon",
+    "lightmask.AmbientConfiguration.NumPoints.Name": "Points",
+    "lightmask.AmbientConfiguration.NumPoints.Hint": "Min 5 for Regular Star",
+    "lightmask.AmbientConfiguration.Ellipse.MinorAxis.Name": "Height",
+    "lightmask.AmbientConfiguration.Ellipse.MinorAxis.Hint": "When rotation = 0, distance in grid units from origin to edge in vertical direction. Radius is used for width.",
+
+    "lightmask.Circle": "Circle",
+    "lightmask.Triangle": "Triangle",
+    "lightmask.Square": "Square",
+    "lightmask.Pentagon": "Pentagon",
+    "lightmask.Pentagram": "Pentagram",
+    "lightmask.Hexagon": "Hexagon",
+    "lightmask.Hexagram": "Hexagram",
+    "lightmask.None": "None",
+    "lightmask.RegularPolygon": "Regular Polygon",
+    "lightmask.RegularStar": "Regular Star",
+    "lightmask.Ellipse": "Ellipse",
+
+    "lightmask.settings.sweep-always.Name": "Always Use Light Mask sweep",
+    "lightmask.settings.sweep-always.Hint": "Use Light Mask instead of Foundry default algorithm for all vision/light/sound field-of-view. May improve performance in some instances but may also introduce compatibility issues with some modules."
+}

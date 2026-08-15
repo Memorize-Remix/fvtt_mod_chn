@@ -1,0 +1,64 @@
+
+	"droplet" : {
+		"Titles" : {
+			"Transfer"						: "转移",
+			"Tranferto"						: "转移到 {to}",
+			"Transferfromto"				: "从 {from} 转移到 {to}",
+			"Duplicate"						: "复制",
+			"Duplicatefromto"				: "从 {from} 复制到 {to}",
+			"Amount"						: "数量",
+			"All"							: "全部",
+			
+			"accept"						: "接受",
+			"abbort"						: "取消"
+		},
+		
+		"ChatMessages" : {
+			"ObjectTransfer" : {
+				"Item" : {
+					"Delete"				: "{UserName} 从 <b>{SourceName}</b> 向 <b>{TargetName}</b> 转移了一个物品：",
+					"NoDelete"				: "{UserName} 给 <b>{TargetName}</b> 提供了一个物品："
+				}
+			}
+		},
+		
+		"Settings" : {
+			"TransferChatMessage" : {
+				"name"						: "在聊天中显示转移",
+				"descrp"					: "是否要在聊天中显示一条信息，提及拖放物品转移的用户、来源和目标"
+			},
+			
+			"allowPlayerItemTransfer" : {
+				"name"						: "允许玩家转移物品",
+				"descrp"					: "是否允许玩家转移物品，以及允许玩家转移给谁",
+				"options" : {
+					"no"					: "不",
+					"ownedonly"				: "仅限拥有",
+					"playersonly"			: "仅限玩家",
+					"friendliesonly"		: "仅限友善",
+					"neutrals"				: "中立和友善"
+				}
+			},
+			
+			"deleteItemonTransfer" : {
+				"name"						: "转移时删除物品",
+				"descrp"					: "从另一个库存中拖放的物品是否应在源库存中销毁[按 ALT 反转]。"
+			},
+			
+			"askTransferAmount" : {
+				"name"						: "询问转移数量",
+				"descrp"					: "转移多个物品时是否应打开菜单设置数量 [按 CTRL 反转]。"
+			},
+
+			"transferZeros" : {
+				"name"						: "转移0数量",
+				"descrp"					: "转移0个物品时是否创建数量为0的物品"
+			},
+			
+			"applytoSheetDrop" : {
+				"name"						: "将设置应用于角色卡拖拽",
+				"descrp"					: "上述设置是否应适用于角色卡拖拽"
+			}
+		}
+	}
+}

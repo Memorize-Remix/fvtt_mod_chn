@@ -1,0 +1,109 @@
+
+    "TEAMBOX": {
+        "Title": "团队物品栏",
+        "Inventory": {
+            "Title": "团队物品栏",
+            "Empty": "物品栏为空"
+        },
+        "Settings": {
+            "Theme": {
+                "Name": "主题",
+                "Hint": "选择物品栏视觉主题"
+            }
+        },
+        "Controls": {
+            "Sort": {
+                "Name": "按名称排序",
+                "Type": "按类型排序",
+                "Quantity": "按数量排序"
+            },
+            "Edit": "编辑",
+            "Delete": "删除",
+            "DeleteAll": "删除全部",
+            "Give": "给予",
+            "Take": "拿取",
+            "Filters": {
+                "All": "全部",
+                "weapon": "武器",
+                "armor": "护甲",
+                "item": "物品",
+                "equipment": "装备",
+                "consumables": "消耗品",
+                "tools": "工具",
+                "spells": "法术",
+                "features": "特性",
+                "spacecraftmods": "飞船改装",
+                "vehicleweapons": "载具武器",
+                "spacecraftweapons": "飞船武器",
+                "currency": "货币",
+                "containers": "容器",
+                "loot": "战利品",
+                "cybernetics": "机械改造",
+                "modifications": "改装",
+                "drugs": "药品",
+                "magic": "魔法物品",
+                "tech": "科技"
+            },
+            "Confirm": "确认",
+            "Cancel": "取消"
+        },
+        "DropZone": {
+            "Text": "在此处放置物品"
+        },
+        "Dialogs": {
+            "Edit": {
+                "Title": "编辑物品",
+                "Quantity": "数量",
+                "Confirm": "更新",
+                "Cancel": "取消"
+            },
+            "Delete": {
+                "Title": "删除物品",
+                "Content": "确定要删除此物品吗？",
+                "Confirm": "删除",
+                "Cancel": "取消"
+            },
+            "DeleteAll": {
+                "Title": "删除所有物品",
+                "Content": "确定要删除团队物品栏中的所有物品吗？此操作无法撤销。"
+            },
+            "Give": {
+                "Title": "给予物品",
+                "SelectPlayer": "选择玩家",
+                "Token": "Token",
+                "Quantity": "数量"
+            },
+            "TakeRequest": {
+                "Title": "拿取物品请求",
+                "Content": "{player}请求拿取{item}",
+                "Confirm": "允许",
+                "Cancel": "拒绝"
+            }
+        },
+        "Notifications": {
+            "ItemAdded": "物品已添加到物品栏",
+            "ItemUpdated": "物品已更新",
+            "ItemDeleted": "物品已删除",
+            "AllItemsDeleted": "所有物品已从团队物品栏中删除",
+            "ItemGiven": "物品已给予{target}",
+            "ItemReceived": "从{source}收到{item}",
+            "ItemTaken": "你拿取了1个{name}",
+            "ItemRemoved": "物品已从团队物品栏中移除",
+            "QuantityUpdated": "{item}的数量已更新为{quantity}",
+            "ItemSent": "{item}已发送给{recipient}",
+            "ItemRequested": "物品请求已发送给GM",
+            "ItemRequestAccepted": "{item}的请求已被接受",
+            "ItemRequestDenied": "{item}的请求已被拒绝"
+        },
+        "Errors": {
+            "NoTokens": "场景中没有Token",
+            "InvalidItem": "无效物品",
+            "NoPermission": "你没有权限执行此操作",
+            "TargetNotFound": "未找到目标",
+            "AddFailed": "添加物品失败",
+            "UpdateFailed": "更新物品失败",
+            "DeleteFailed": "删除物品失败",
+            "InvalidQuantity": "无效数量"
+        }
+    }
+}

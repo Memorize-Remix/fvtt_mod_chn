@@ -1,0 +1,129 @@
+
+  "fvtt-player-achievements": {
+    "settings": {
+      "enable-player-achievements": {
+        "name": "启用玩家成就系统",
+        "hint": "启用玩家成就功能"
+      },
+      "play-self-sounds": {
+        "name": "播放个人成就音效",
+        "hint": "当你获得成就时播放音效"
+      },
+      "default-sound-file": {
+        "name": "默认音效文件",
+        "hint": "获得成就时播放的默认音效文件"
+      },
+      "hide-unearned": {
+        "name": "隐藏未获得成就",
+        "hint": "对玩家完全隐藏未获得的成就（此设置优先于伪装设置）"
+      },
+      "cloak-unearned": {
+        "name": "伪装未获得成就",
+        "hint": "玩家可以看到有成就存在，但看不到具体内容（此设置会被隐藏设置覆盖）"
+      },
+      "show-only-to-awarded-user": {
+        "name": "仅对获得者显示",
+        "hint": "成就消息仅显示给获得该成就的用户"
+      },
+      "show-tags-to-players": {
+        "name": "向玩家显示标签",
+        "hint": "向玩家显示标签，允许他们进行过滤"
+      },
+      "cloak-title-text": {
+        "name": "伪装标题文本",
+        "hint": "当成就标题被伪装时显示的文本"
+      },
+      "cloak-description-text": {
+        "name": "伪装描述文本",
+        "hint": "当成就描述被伪装时显示的文本"
+      }
+    },
+    "interface": {
+      "achievements-sheet": "成就窗口",
+      "show-achievements-sheet": "显示成就窗口"
+    },
+    "forms": {
+      "achievements-sheet": {
+        "all-actors": "所有角色",
+        "online-actors": "在线角色",
+        "only-online-actors": "仅显示在线角色",
+        "add-achievement": "添加成就",
+        "export": "导出",
+        "export-achievements": "将成就数据导出到剪贴板",
+        "import-achievements": "使用剪贴板数据覆盖当前成就",
+        "import": "导入",
+        "filter": "按成就名称过滤",
+        "hide-awarded": "隐藏已获得",
+        "hide-unawarded": "隐藏未获得",
+        "hide-details": "简洁视图",
+        "no-achievements-match-filter": "没有匹配过滤条件的成就。",
+        "no-achievements-added": "尚未添加任何成就。",
+        "no-achievements-online": "没有在线玩家获得过任何成就。",
+        "bugreport": "提交错误报告或功能请求",
+        "feedback": "发送反馈",
+        "discord": "Discord"
+      },
+      "achievement-block": {
+        "edit": "编辑",
+        "delete": "删除",
+        "owned": "已拥有",
+        "owned-by": "拥有者",
+        "unowned": "未拥有",
+        "click-to-remove": "点击移除",
+        "click-to-award": "点击授予",
+        "no-actors-to-award": "没有可授予的角色。",
+        "toggle-lock": "锁定",
+        "toggle-unlock": "解锁",
+        "all-actors": "所有角色",
+        "tags": "标签"
+      },
+      "add-achievement-form": {
+        "id": "ID",
+        "title": "标题",
+        "title-hiddenoption": "伪装时显示标题？",
+        "description": "描述",
+        "image": "图片",
+        "cloaked-image": "伪装图片",
+        "select": "选择",
+        "sound": "音效",
+        "preview": "预览",
+        "clear": "清除",
+        "add-achievement": "添加成就",
+        "update-achievement": "更新成就",
+        "window-title": "添加/编辑成就",
+        "tags": "标签（逗号分隔）"
+      },
+      "achievements-export": {
+        "export-message": "请将以下数据复制到安全位置，以备日后恢复需要。"
+      },
+      "achievements-import": {
+        "import-message": "将你要导入的数据粘贴到下方框中。",
+        "button": "导入成就数据"
+      }
+    },
+    "messages": {
+      "achievements-imported": "已从剪贴板导入成就。",
+      "achievements-exported": "成就已导出到剪贴板。",
+      "achievement-updated": "成就已更新。",
+      "achievement-added": "成就已添加。",
+      "duplicate-id": "已存在具有该ID的成就。",
+      "id-no-spaces": "ID不能包含空格。",
+      "invalid-achievement-format": "无效的成就格式。",
+      "missing-fields": "请填写所有字段。",
+      "no-clipboard-data": "未找到要导入的数据。",
+      "no-achievements-in-clipboard": "剪贴板中未找到成就数据。",
+      "import-achievements": {
+        "title": "导入成就",
+        "content": "这将用剪贴板中的数据覆盖所有现有成就。确定要继续吗？"
+      },
+      "while-away": "当他们不在线时",
+      "has-unlocked": "{while_away} {character_name}（{player_name}）已解锁",
+      "next-login-notify": "他们将在下次登录时收到通知。",
+      "delete-achievement": {
+        "title": "删除成就",
+        "content": "确定要删除此成就吗？"
+      },
+      "achievement-id-copied": "成就ID已复制到剪贴板。"
+    }
+  }
+}

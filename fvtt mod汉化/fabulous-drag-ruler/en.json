@@ -1,0 +1,100 @@
+{
+  "FABDRAGRULER": {
+    "CONFIG": {
+      "COMMON": {
+        "RESETTODEFAULT": "Reset to Default"
+      },
+      "WAYPOINT": {
+        "TITLE": "Waypoint Style Overrides",
+        "ENABLED": {
+          "LABEL": "Enable",
+          "HINT": "Toggle on to enable waypoint overrides"
+        },
+        "RADIUS": {
+          "LABEL": "Radius",
+          "HINT": "Radius of the waypoint"
+        },
+        "ALPHA": {
+          "LABEL": "Alpha",
+          "HINT": "Alpha value of the waypoint"
+        },
+        "COLOR": {
+          "LABEL": "Color",
+          "HINT": "Color of the waypoint"
+        }
+      },
+      "GRIDHIGHLIGHT": {
+        "TITLE": "Grid Highlight Style Overrides",
+        "ENABLED": {
+          "LABEL": "Enable",
+          "HINT": "Toggle on to enable drag segment overrides"
+        },
+        "COLOR": {
+          "LABEL": "Color",
+          "HINT": "Color of the grid highlight section"
+        },
+        "ALPHA": {
+          "LABEL": "Alpha",
+          "HINT": "The alpha value of the grid highlight"
+        }
+      },
+      "SEGMENT": {
+        "TITLE": "Segment Style Overrides",
+        "ENABLED": {
+          "LABEL": "Enable",
+          "HINT": "Toggle on to enable drag segment overrides"
+        },
+        "WIDTH": {
+          "LABEL": "Width",
+          "HINT": "The width of the drag segment.  Will be multiplied by the canvas's UI scale"
+        },
+        "COLOR": {
+          "LABEL": "Color",
+          "HINT": "Color of the drag ruler segments"
+        },
+        "ALPHA": {
+          "LABEL": "Alpha",
+          "HINT": "Alpha value of the drag ruler segments"
+        }
+      }
+    },
+    "KEYBINDINGS": {
+      "SHOWTOKENDRAGRULER": "Show Token Drag Ruler"
+    },
+    "SCENE": {
+      "RULERSTATE": {
+        "LABEL": "Token Drag Ruler",
+        "HINT": "Set to 'Default' to use global defaults for grid type, otherwise set to 'Enabled' or 'Disabled' to override.",
+        "ENABLED": "Enabled",
+        "DISABLED": "Disabled",
+        "DEFAULT": "Default"
+      }
+    },
+    "SETTINGS": {
+      "DISABLEOUTOFCOMBAT": {
+        "LABEL": "Disable Out of Combat",
+        "HINT": "Toggle on to disable the drag ruler by default when not in an active encounter"
+      },
+      "ENABLEGRIDLESS": {
+        "LABEL": "Enable for Gridless Scenes",
+        "HINT": "Toggle on to enable the drag ruler by default for gridless scenes"
+      },
+      "ENABLEGRIDDED": {
+        "LABEL": "Enable for Gridded Scenes",
+        "HINT": "Toggle on to enable the drag ruler by default for scenes with a grid"
+      },
+      "SEGMENTSTYLEOVERRIDE": {
+        "LABEL": "Segment Style Overrides",
+        "HINT": "Options to customize the look of line segments when dragging tokens."
+      },
+      "WAYPOINTSTYLEOVERRIDE": {
+        "LABEL": "Waypoint Style Overrides",
+        "HINT": "Options to customize the look of waypoints along the drag ruler."
+      },
+      "GRIDHIGHLIGHTSTYLEOVERRIDE": {
+        "LABEL": "Grid Highlight Style Overrides",
+        "HINT": "Options to customize the look of the drag ruler's grid highlight"
+      }
+    }
+  }
+}

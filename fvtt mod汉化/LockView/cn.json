@@ -1,0 +1,239 @@
+
+    "LOCKVIEW": {
+        "Help": "帮助",
+        "Settings": {
+            "ShowHideUI": "显示/隐藏UI",
+            "ShowHideUI_Hint": "如果在场景配置中设置了，可以切换显示或隐藏UI。",
+            "PhysicalGridSize": "物理网格尺寸",
+            "PhysicalGridSize_Hint": "配置使用物理网格尺寸时的真实世界尺寸。显示宽度是你显示器的真实世界宽度，而网格尺寸是期望的网格真实世界尺寸。单位可以是毫米或英寸，但两个设置的单位必须相同。",
+            "PhysicalGridSize_Hint2": "默认情况下，这些设置可由每个用户配置，但GM可以设置适用于所有用户的值。",
+            "GmGridsize": "强制使用GM设置",
+            "DisplayWidth": "显示宽度",
+            "Gridsize": "网格尺寸",
+            "Documentation": "文档",
+            "Documentation_Hint": "打开锁定视图文档。",
+            "CycleViewboxes": "循环视图框",
+            "CycleViewboxes_Hint": "在启用编辑视图框时循环切换视图框。",
+            "MouseViewboxControl": "鼠标视图框编辑",
+            "MouseViewboxControl_Hint": "启用通过右键拖动和使用鼠标滚轮编辑视图框。如果启用，在启用编辑视图框控件时将无法平移或缩放。",
+            "PingPan": {
+                "Label": "画布平移至Ping行为",
+                "Hint": "配置当控制用户使用画布平移至Ping功能且（缩放和/或平移）锁已应用时的行为。",
+                "Block": "阻止所有锁定移动",
+                "PanOnly": "允许平移，阻止缩放",
+                "ZoomOnly": "允许缩放，阻止平移",
+                "Any": "允许所有移动"
+            },
+            "CloneView": "克隆视图",
+            "CloneView_Hint": "将当前视图克隆到启用的用户。"
+        },
+        "SetView": {
+            "Title": "设置视图",
+            "Pan": "平移",
+            "Pan_Hint": "选择如何平移所选用户的视图。",
+            "PanModes": {
+                "InitialView": "设置为初始视图",
+                "MoveGridSpaces": "移动网格空间",
+                "MoveByCoordinates": "按坐标移动",
+                "MoveToCoordinates": "移动到坐标"
+            },
+            "Scale": "缩放比例",
+            "Scale_Hint": "视图将被设置的缩放比例。",
+            "Zoom": "缩放",
+            "Zoom_Hint": "选择如何缩放所选用户的视图。",
+            "ZoomModes": {
+                "DontChange": "不更改",
+                "Set": "设置比例",
+                "Reset": "重置到初始视点",
+                "PhysicalGridSize": "设置为物理网格尺寸"
+            },
+            "GridSpaces": "网格空间",
+            "GridSpaces_Hint": "在X和Y方向上移动视图的网格空间数量。",
+            "Coordinates": "坐标",
+            "Coordinates_Hint": "移动视图到的中心坐标。",
+            "Apply": "应用",
+            "UserHint": "选择要应用新视图的用户。"
+        },
+        "UserConfig": {
+            "Title": "用户配置",
+            "Hint": "配置锁定视图如何影响用户。",
+            "Name": "名称",
+            "Role": "角色",
+            "Enable": "启用",
+            "Enable_Hint": "启用锁定视图的所有功能，除了视图框和静态功能覆盖的功能。",
+            "Viewbox": "视图框",
+            "Viewbox_Hint": "启用此设置的用户将与控制用户共享他们的视图，控制用户可以使用控制按钮显示此视图并进行更改，从而控制其他用户的视图。",
+            "Static": "静态",
+            "Static_Hint": "静态用户在场景激活等情况下不会更改场景。控制用户可以通过在场景导航中右键单击场景并选择“拉取静态用户”来为静态用户更改场景。",
+            "Control": "控制",
+            "Control_Hint": "启用此设置的用户可以控制锁定视图的功能。这包括设置（平移或缩放）锁和使用视图框更改用户的视图。",
+            "UserSettings": "用户设置",
+            "UserSettings_Hint": "配置每个用户。默认设置应用于新用户和未配置的玩家和受信玩家用户。",
+            "Default": "默认"
+        },
+        "InitialViewConfig": {
+            "Title": "初始视图配置",
+            "Hint_A": "配置场景的初始视图。",
+            "Hint_B": "如果你当前正在查看场景，将出现一个代表初始视图的视图框。",
+            "Hint_C": "最终视图会根据用户的显示器（例如宽高比）略有不同。某些“自动缩放”设置将覆盖初始视图比例。",
+            "CurrentInitialView": "当前初始视图位置",
+            "NewInitialView": "新初始视图位置",
+            "SizeInGridSpaces": "网格空间中的尺寸",
+            "X": "x",
+            "Y": "y",
+            "Scale": "比例",
+            "SetToPhysicalGridSize": "设置为物理网格尺寸",
+            "SetToPlayerView": "设置为玩家视图",
+            "CaptureView": "捕获视图",
+            "SnapToGrid": "对齐到网格",
+            "SnapDir": {
+                "TopLeft": "左上",
+                "TopRight": "右上",
+                "BottomLeft": "左下",
+                "BottomRight": "右下"
+            },
+            "SaveChanges": "保存更改"
+        },
+        "Locks": {
+            "Label": "锁定",
+            "Hint": "配置场景的锁定。",
+            "PanLock": "平移锁定",
+            "PanLock_Hint": "“平移锁定”将阻止平移",
+            "ZoomLock": "缩放锁定",
+            "ZoomLock_Hint": "“缩放锁定”将阻止放大或缩小",
+            "BoundingBox": "边界框",
+            "BoundingBox_Hint": "“边界框”将视图锁定在指定框内"
+        },
+        "ControlButtons": {
+            "SetView": "设置视图",
+            "PanLock": "平移锁定",
+            "ZoomLock": "缩放锁定",
+            "BoundingBox": "边界框",
+            "Viewbox": "视图框",
+            "EditViewbox": "编辑视图框",
+            "CloneView": "克隆视图",
+            "ResetView": "重置视图",
+            "ControlButtonsConfig": "控件按钮配置",
+            "ControlButtonsConfig_Hint": "选择启用或禁用所有（启用控件按钮）或部分锁定视图控件按钮。",
+            "ControlButtonsConfig_ButtonHint": "配置哪些控件按钮可见。",
+            "EnableControlButtons": "启用控件按钮"
+        },
+        "SceneConfigurator": {
+            "Title": "场景配置",
+            "Hint": "配置所有场景的锁定视图设置。",
+            "Name": "名称",
+            "Copy": "复制",
+            "Copy_Hint": "复制所选场景的场景配置",
+            "Paste": "粘贴",
+            "Paste_Hint": "将复制的场景配置应用到所选场景",
+            "Reset": "重置",
+            "Reset_Hint": "将所选场景的场景配置重置为“默认”场景配置",
+            "Default": "默认",
+            "Default_Hint": "“默认”场景配置应用于新场景和未配置的场景。",
+            "AppHint": "为每个场景配置锁定视图场景设置。每行显示一个场景的场景配置。更改会立即保存并应用。"
+        },
+        "SceneConfig": {
+            "Autoscale": {
+                "Label": "自动缩放",
+                "Hint": "加载场景时自动缩放视图。",
+                "Tooltip": "加载场景时自动缩放视图。<br><ul><li><b>水平适配：</b>缩放视图使场景水平适配。</li><li><b>垂直适配：</b>缩放视图使场景垂直适配。</li><li><b>自动适配（内部）：</b>缩放视图使整个场景适配到视图内部（这可能意味着场景背景颜色将可见）。</li><li><b>自动适配（外部）：</b>缩放视图使整个视图充满场景（不会显示背景颜色，但部分场景可能被裁剪）。</li><li><b>物理网格尺寸：</b>缩放视图使网格与真实尺寸对应。</li></ul>",
+                "Off": "关闭",
+                "HorizontalFit": "水平适配",
+                "HorizontalFit_Hint": "“水平适配”将缩放视图使场景水平适配。",
+                "VerticalFit": "垂直适配",
+                "VerticalFit_Hint": "“垂直适配”将缩放视图使场景垂直适配。",
+                "AutomaticFitInside": "自动适配（内部）",
+                "AutomaticFitInside_Hint": "“自动适配（内部）”将缩放视图使整个场景适配到视图内部（这可能意味着场景背景颜色将可见）。",
+                "AutomaticFitOutside": "自动适配（外部）",
+                "AutomaticFitOutside_Hint": "“自动适配（外部）”将缩放视图使整个视图充满场景（不会显示背景颜色，但部分场景可能被裁剪）。",
+                "PhysicalGridSize": "物理网格尺寸",
+                "PhysicalGridSize_Hint": "“物理网格尺寸”将缩放场景使网格与真实尺寸对应。"
+            },
+            "Locks": {
+                "Label": "锁定",
+                "Hint": "配置场景的锁定。",
+                "PanLock": "平移锁定",
+                "PanLock_Hint": "阻止用户平移。",
+                "ZoomLock": "缩放锁定",
+                "ZoomLock_Hint": "阻止用户放大或缩小。",
+                "BoundingBox": "边界框",
+                "BoundingBox_Hint": "将用户的视图锁定在指定框内。"
+            },
+            "UI": {
+                "Label": "隐藏UI元素",
+                "Hint": "选择何时隐藏UI元素以及隐藏哪些元素。",
+                "HideOn": "隐藏时机",
+                "HideAlways": "始终",
+                "HideOnNever": "从不",
+                "HideOnSceneLoad": "场景加载",
+                "HideOnSidebarCollapse": "侧边栏折叠",
+                "SceneControls": "场景控件",
+                "Hotbar": "宏快栏",
+                "SceneNavigation": "场景导航",
+                "Players": "玩家框",
+                "Sidebar": "侧边栏",
+                "ChatNotifications": "聊天通知",
+                "CameraViews": "摄像机视图"
+            },
+            "ForceInitialView": {
+                "Label": "强制初始视图",
+                "Hint_Short": "强制视图到“初始视图位置”。",
+                "Hint": "加载场景时强制用户的视图到“初始视图位置”。按按钮进入初始视图配置。",
+                "Config": "配置初始视图"
+            },
+            "Sidebar": {
+                "Label": "侧边栏",
+                "Hint": "配置侧边栏。",
+                "ExcludeSidebar": "排除侧边栏",
+                "ExcludeSidebar_Hint": "在使用视图框确定玩家视图以及配置“自动缩放”时排除侧边栏。",
+                "BlackenSidebar": "侧边栏黑化",
+                "BlackenSidebar_Hint": "移除侧边栏的透明度，防止用户看到其后面的内容。",
+                "OnSceneLoad": "场景加载时",
+                "OnSceneLoad_Hint": "配置场景加载时侧边栏的行为。折叠、展开或保持原样。",
+                "NoChange": "无变化",
+                "Collapse": "折叠",
+                "Expand": "展开"
+            },
+            "ExpandToSeeMore": "展开查看更多。",
+            "CollapseExpandAll": "折叠或展开全部",
+            "Collapse": "折叠",
+            "Expand": "展开",
+            "LockViewHelp": "锁定视图帮助"
+        },
+        "DrawingConfig": {
+            "Hint_1": "你可以强制玩家的视图保持在此绘图的区域内。",
+            "Hint_2": "这仅适用于在“用户配置”中设置了“启用”的用户，并且在“场景配置”中启用了“边界框”或使用控件按钮时。",
+            "Disabled": "禁用",
+            "Disabled_Hint": "边界框等于场景",
+            "OwnedTokens": "拥有Token",
+            "OwnedTokens_Hint": "仅当玩家在绘图内拥有Token时才强制视图到此绘图",
+            "Always": "始终",
+            "Always_Hint": "始终强制视图到此绘图",
+            "ForceToBoundingBox": "强制到边界框"
+        },
+        "CloneView": {
+            "Title": "克隆视图",
+            "Hint_A": "配置“克隆视图”是否克隆平移和/或缩放。",
+            "Hint_B": "应用到所选用户。",
+            "Pan": "平移",
+            "Zoom": "缩放",
+            "ButtonTitle": "克隆视图配置",
+            "ButtonHint": "配置克隆视图时的行为。",
+            "DialogContent": "克隆视图将覆盖平移和缩放锁定，确定要继续吗？",
+            "DoNotShowAgain": "不再显示"
+        },
+        "Notifications": {
+            "CopiedSceneConfig": "已从“{scene}”复制场景配置",
+            "CouldNotCopySceneConfig": "无法复制场景“{scene}”的配置",
+            "NoCopiedSceneConfig": "无复制的场景配置",
+            "PastedSceneConfig": "已将场景配置从“{origin}”粘贴到“{target}”",
+            "CouldNotResetSceneConfig": "无法重置场景“{scene}”的配置",
+            "ResetSceneConfig": "已重置“{scene}”的场景配置",
+            "NoUsersSelected": "未选择用户",
+            "NoPermission": "你没有执行该操作的权限"
+        },
+        "SceneNavigation": {
+            "PullStaticUsers": "拉取静态用户"
+        }
+    }
+}

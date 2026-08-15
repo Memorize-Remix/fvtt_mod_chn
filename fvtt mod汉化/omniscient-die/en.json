@@ -1,0 +1,139 @@
+{
+  "omniscient-die": {
+    "settings": {
+      "menu": {
+        "name": "Advanced Settings",
+        "label": "Open Configuration",
+        "hint": "Configure custom images and sounds."
+      },
+      "theme": {
+        "name": "Theme",
+        "hint": "Change the dice theme. The text language on the dice automatically follows your Foundry VTT system language. WARNING! Foundry VTT will reload after changing this."
+      },
+      "forceDiceColors": {
+        "name": "Force 3D Colors",
+        "hint": "If enabled, forces the 3D die to use solid colors matching the selected theme (e.g. Black for Blood). If disabled, uses each player's default 'Dice So Nice!' settings. WARNING! Foundry VTT will reload after changing this."
+      },
+      "chatImage": {
+        "name": "Chat Image",
+        "hint": "Show an image in the chat message after rolling. 'Theme' uses the active dice theme images. 'Custom' uses the images configured below.",
+        "disabled": "Disabled",
+        "theme": "Use theme images",
+        "custom": "Custom images"
+      },
+      "soundMode": {
+        "name": "Sound",
+        "hint": "Play a sound after rolling. 'Single' plays one sound for any result. 'Per face' plays a different sound per result.",
+        "disabled": "Disabled",
+        "single": "Single sound (any result)",
+        "perface": "One sound per result"
+      },
+      "soundVolume": {
+        "name": "Sound Volume",
+        "hint": "Volume of the result sound. This setting is per player."
+      },
+      "soundSingle": {
+        "name": "Sound File",
+        "hint": "Audio file played after any roll result. Leave empty to play nothing."
+      },
+      "customImage_yesand": {
+        "name": "Custom Image — Yes, and...",
+        "hint": "Show an image in the chat message after rolling. Leave empty to show nothing."
+      },
+      "soundFace_yesand": {
+        "name": "Sound — Yes, and...",
+        "hint": "Audio file played when this result is rolled. Leave empty to play nothing."
+      },
+      "customImage_no": {
+        "name": "Custom Image — No",
+        "hint": "Show an image in the chat message after rolling. Leave empty to show nothing."
+      },
+      "soundFace_no": {
+        "name": "Sound — No",
+        "hint": "Audio file played when this result is rolled. Leave empty to play nothing."
+      },
+      "customImage_nobut": {
+        "name": "Custom Image — No, but",
+        "hint": "Show an image in the chat message after rolling. Leave empty to show nothing."
+      },
+      "soundFace_nobut": {
+        "name": "Sound — No, but",
+        "hint": "Audio file played when this result is rolled. Leave empty to play nothing."
+      },
+      "customImage_yesbut": {
+        "name": "Custom Image — Yes, but",
+        "hint": "Show an image in the chat message after rolling. Leave empty to show nothing."
+      },
+      "soundFace_yesbut": {
+        "name": "Sound — Yes, but",
+        "hint": "Audio file played when this result is rolled. Leave empty to play nothing."
+      },
+      "customImage_yes": {
+        "name": "Custom Image — Yes",
+        "hint": "Show an image in the chat message after rolling. Leave empty to show nothing."
+      },
+      "soundFace_yes": {
+        "name": "Sound — Yes",
+        "hint": "Audio file played when this result is rolled. Leave empty to play nothing."
+      },
+      "customImage_noand": {
+        "name": "Custom Image — No, and...",
+        "hint": "Show an image in the chat message after rolling. Leave empty to show nothing."
+      },
+      "soundFace_noand": {
+        "name": "Sound — No, and...",
+        "hint": "Audio file played when this result is rolled. Leave empty to play nothing."
+      }
+    },
+    "keybindings": {
+      "name": "Omniscient Die",
+      "hint": "This shortcut will roll the Omniscient Die."
+    },
+    "tips": {
+      "yesand": {
+        "title": "Yes, and...",
+        "content": "Yes, and something else happens."
+      },
+      "no": {
+        "title": "No",
+        "content": "Just no."
+      },
+      "nobut": {
+        "title": "No, but",
+        "content": "This can be a partial no. This can be a no with a twist or complication."
+      },
+      "yesbut": {
+        "title": "Yes, but",
+        "content": "This can be a partial yes. This can be a yes with a twist or complication."
+      },
+      "yes": {
+        "title": "Yes",
+        "content": "Just yes."
+      },
+      "noand": {
+        "title": "No, and...",
+        "content": "No, and something else happens."
+      }
+    },
+    "dice": {
+      "black": {
+        "label": "Black"
+      },
+      "blood": {
+        "label": "Blood"
+      },
+      "color": {
+        "label": "Color"
+      },
+      "color2": {
+        "label": "Color 2"
+      },
+      "white": {
+        "label": "White"
+      },
+      "modern": {
+        "label": "Modern"
+      }
+    }
+  }
+}

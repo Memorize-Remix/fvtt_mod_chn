@@ -1,0 +1,135 @@
+{
+    "dnd5e-system-customizer": {
+        "settings": {
+            "menu": {
+                "name": "D&D 5e System Customizer",
+                "label": "D&D 5e System Customizer",
+                "hint": "Customize the D&D 5e System"
+            },
+            "enableAdvancedCustomization": {
+                "name": "Enable Advanced Customization",
+                "hint": "Enable the advanced customization options"
+            },
+            "configKey": {
+                "name": "Configuration Key",
+                "hint": "The configuration key for your system"
+            },
+            "jsonEditor": {
+                "name": "System Customization",
+                "label": "Open JSON Editor",
+                "hint": "Open the JSON Editor to customize your system. 'Enable Advanced Customization' must be enabled to use this feature.",
+                "warn": "Important! Not every customization will work, this will depend on your system. If any customization is not working or causing errors/issues, remove that customization or Reset to Defaults."
+            }
+        },
+        "CustomizerApp": {
+            "title": "D&D 5e System Customizer",
+            "save": "Save Changes",
+            "hide": "Hide",
+            "delete": "Delete",
+            "tabs": {
+                "abilities": {
+                    "name": "Abilities",
+                    "hint": "Customize the Abilities",
+                    "abilityName": "Ability Name",
+                    "abilityAbbreviation": "Abbreviation",
+                    "add": "Add Ability"
+                },
+                "skills": {
+                    "name": "Skills",
+                    "hint": "Customize the Skills",
+                    "skillName": "Skill Name",
+                    "skillAbbreviation": "Abbreviation",
+                    "skillAbility": "Ability",
+                    "add": "Add Skill"
+                },
+                "damageTypes": {
+                    "name": "Damage Types",
+                    "hint": "Customize the Damage Types",
+                    "damageName": "Damage Type Name",
+                    "damageAbbreviation": "Abbreviation",
+                    "add": "Add Damage Type"
+                },
+                "creatureTypes": {
+                    "name": "Creature Types",
+                    "hint": "Customize the Creature Types",
+                    "creatureName": "Creature Type Name",
+                    "creatureAbbreviation": "Abbreviation",
+                    "add": "Add Creature Type"
+                },
+                "languages": {
+                    "name": "Languages",
+                    "hint": "Customize the Languages",
+                    "languageName": "Language Name",
+                    "languageAbbreviation": "Abbreviation",
+                    "add": "Add Language"
+                },
+                "hitDieTypes": {
+                    "name": "Hit Dice",
+                    "hint": "Customize the Hit Die Types",
+                    "hitDieName": "Hit Die Type",
+                    "add": "Add Hit Die Type"
+                },
+                "itemRarity": {
+                    "name": "Item Rarity",
+                    "hint": "Customize the Item Rarity",
+                    "itemRarityName": "Item Rarity Name",
+                    "itemRarityAbbreviation": "Abbreviation",
+                    "add": "Add Item Rarity"
+                },
+                "spellLevels": {
+                    "name": "Spell Levels",
+                    "hint": "Customize the Spell Levels",
+                    "spellLevelName": "Spell Level Name",
+                    "spellLevelAbbreviation": "Spell Level Number",
+                    "add": "Add Spell Level"
+                },
+                "spellSchools": {
+                    "name": "Spell Schools",
+                    "hint": "Customize the Spell Schools",
+                    "spellSchoolName": "Spell School Name",
+                    "spellSchoolAbbreviation": "Abbreviation",
+                    "add": "Add Spell School"
+                },
+                "classFeatureTypes": {
+                    "name": "Class Feature Types",
+                    "hint": "Customize the Class Feature Types",
+                    "classFeatureTypeName": "Class Feature Type Name",
+                    "classFeatureTypeAbbreviation": "Abbreviation",
+                    "add": "Add Class Feature Type"
+                },
+                "currencies": {
+                    "name": "Currencies",
+                    "hint": "Customize the Currencies",
+                    "currency": "Currency",
+                    "currencyName": "Name",
+                    "currencyAbbreviation": "Abbreviation"
+                },
+                "misc": {
+                    "name": "Miscellaneous",
+                    "hint": "Customize the Miscellaneous",
+                    "maxLevel": "Max Level",
+                    "initiativeAbility": "Initiative Ability",
+                    "initiativeFormula": "Initiative Formula",
+                    "initiativeFormulaNotes": "WARNING: This option will override core DND5E functions, and may cause issues with other modules. Use at your own risk.",
+                    "hitPointsAbility": "Hit Points Ability",
+                    "castFromDescription": "Cast From Content Links",
+                    "castFromDescriptionHint": "Cast spells from content links in the description field of owned items.",
+                    "sharedInspiration": "Shared Inspiration",
+                    "sharedInspirationHint": "Share a single inspiration pool between all players. IMPORTANT: This feature will use the 'Resource 3' slot and will override it on all player owned characters. Use the '/inspiration' chat command to award 1 inspiration point for each player or '/inspiration N' to award N inspiration points to the party."
+                }
+            }
+        },
+        "json-editor-app": {
+            "title": "System Customization",
+            "resetTitle": "Reset to Defaults",
+            "resetContent": "Are you sure you want to reset the system to it's default configuration? This operation cannot be undone."
+        },
+        "castFromDescription": {
+            "tooltip": "Cast Spell"
+        },
+        "sharedInspiration": {
+            "awarded": " Inspiration has been awarded to the party!"
+        },
+        "noConfig": "System Customizer: No Configuration found for your system. Your system may not support modifications to it's configuration or you may need to manually enter the configuration path into the module settings. If you don't know how to identify your system's configuration key, please ask in your system channel for help."
+    }
+}

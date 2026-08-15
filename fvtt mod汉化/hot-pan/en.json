@@ -1,0 +1,129 @@
+{
+  "hot-pan": {
+    "setting": {
+      "modVersion": {
+        "name": "Version",
+        "hint": "Currently installed module version (can't be changed here)."
+      },
+      "debug": {
+        "name": "Debug mode",
+        "hint": "Client-side setting enabling extended debug logging."
+      },
+      "isActive": {
+        "name": "Always active",
+        "hint": "Keep module always activated, unless overridden by macro code."
+      },
+      "hideChatInfo": {
+        "name": "Hide module info in chat window",
+        "hint": "Hides the general one-time info about this mod in the chat. If you want to see again on next reload, UNCHECK this option."
+      },
+      "notifyOnChange": {
+        "name": "UI messages on toggle",
+        "hint": "Show temporary UI messages whenever toggling on and off (also works when switching via macro code)."
+      },
+      "warnWhenON": {
+        "name": "Warning on activate",
+        "hint": "Show extra prominent UI message (warning) when toggling ON. Needs option \"UI messages on toggle\" to be enabled."
+      },
+      "warnWhenOFF": {
+        "name": "Warning on deactivate",
+        "hint": "Show extra prominent UI message (warning) when toggling OFF. Needs option \"UI messages on toggle\" to be enabled."
+      },
+      "showHUDIcon": {
+        "name": "Show HUD status icon",
+        "hint": "Display an icon on screen (top-right, default: ON) whenever the GM controls the screen.\n You can automatically make it turn off after a timeout by setting the slider below."
+      },
+      "hudIconScale": {
+        "name": "HUD Icon size",
+        "hint": "Scale of the Status HUD Icon. Can also be toggled by custom keybindings in the global control settings."
+      },
+      "hudIconScaleOptions": {
+        "small": "small",
+        "normal": "normal",
+        "large": "large"
+      },
+      "hudIconOpacity": {
+        "name": "Opacity of the HUD status icon",
+        "hint": "1 (maximum) means fully visible, 0.2 (minimum) means visible by 20% (transparent by 80%). Default: 0.7 (70%)"
+      },
+      "keybindingNames": {
+        "toggle": "Hot Pan & Zoom! (on/off)",
+        "scaleZero": "Icon Size: invisible",
+        "scaleSmall": "Icon Size: small",
+        "scaleNormal": "Icon Size: normal",
+        "scaleLarge": "Icon Size: large"
+      },
+      "afMode": {
+        "name": "Mode",
+        "hint": "Disabled: Module off (default) | Party View: all player owned tokens | Selected Token: only the selected token.",
+        "options": {
+          "disabled": "disabled",
+          "partyView": "Party View",
+          "selectedToken": "Selected Token"
+        }
+      },
+      "afAutoZoom": {
+        "name": "Auto Zoom",
+        "hint": "Adjust zoom as well as position. Highly Recommended."
+      },
+      "afMitigateBounce": {
+        "name": "Mitigate Bouncing Issue",
+        "hint": "Only relevant when Auto Zoom is set to off and Mode is Party View. Forces Auto Zoom when required."
+      },
+      "afPaddingSq": {
+        "name": "Padding (squares)",
+        "hint": "Padding added to view area in all directions. Highly Recommended to be set to >2 and will have no effect <1."
+      },
+      "afPaddingPer": {
+        "name": "Padding (%)",
+        "hint": "Percentage increase of view area"
+      },
+      "afMaxZoom": {
+        "name": "Max zoom level",
+        "hint": "Hint: 0.1 is far away, 3 is very close."
+      },
+      "afUpdateSpeed": {
+        "name": "Camera animation speed",
+        "hint": "Default: 500"
+      },
+      "afIncludeInvisible": {
+        "name": "Include Invisible",
+        "hint": "Whether to account for tokens that can't be seen by the user in the party view calculations."
+      }
+    },
+    "chatInfoContent": {
+      "title": "Hot Pan & Zoom!",
+      "text1": "&quot;One Thing to Pan Them! One Thing to Find Them! One Thing to Zoom them and to the GM's Canvas Bind Them!&quot;",
+      "text2": "Hot Pan & Zoom! is a systems-agnostic utility for keeping players' canvas position & zoom in sync with the GM's screen. It runs in the backend, but is also controllable through macro code.",
+      "text3": "Please refer to the various module preferences under game settings. Find even more details on GitHub",
+      "footer": "This chat card will only be shown once. Activate once more in the module settings if needed."
+    },
+    "chatInfoContentHUDIcon": {
+      "title": "New Feature: HUD Icon",
+      "text1": "A new icon in the top-right corner of the scene view now indicates whenever the GM controls the screen.",
+      "text2": "Configure its size in the module settings, or disable it completely, if you find it too invasive.",
+      "text3": "It works like the similar HUD icon in my other module <a href='https://github.com/coffiarts/FoundryVTT-lock-the-sheets' style='font-weight: bold; text-decoration: underline'>-&gt; Lock The Sheets!</a>. Both mods/icons are designed to work alongside with each other.",
+      "footer": "This message card will only be shown once. Activate once more in the module settings if needed."
+    },
+    "onOffUIMessage": {
+      "whenON": "Screen is remote controlled by the gamemaster!",
+      "whenOFF": "Screen control has been released."
+    },
+    "keybindingMenuLabel": "Toggle on/off Hot Pan & Zoom!",
+    "keybindingMenuLabelAF": "Toggle on/off Auto Focus (aka 'Always Centred')",
+    "autoFocus": {
+      "title": "Auto Focus (aka 'Always Centred')",
+      "description": "Additional auto-focussing and auto-zooming onto scene tokens (can be switched on/off separately). Formerly known as 'Always Centred' by SDoehren. Works excellently in line with Hot Pan & Zoom! Merged into this mod with approval by its author. Find the original mod at",
+      "msg": {
+        "invalidMode": "You've tried to set an invalid mode for Auto Focus:",
+        "whenON": "Auto Focus is ENABLED and set to '{mode}'.",
+        "whenOFF": "Auto Focus is DISABLED.",
+        "alwaysCentredWarning": {
+          "title": "Warning:<br/>Original Mod 'Always Centred' detected!",
+          "text": "Hot Pan & Zoom! has detected that the mod 'Always Centred' is running in your game.<br/>This mod has been integrated into Hot Pan & Zoom! since mod version 12.1.0.<br/>It is recommended that you uninstall 'Always Centred', to avoid conflicts.<br>The only reason to keep the original would be if players still want to use and configure auto-focussing and auto-zooming locally on their clients.",
+          "footer": "This chat card will only be shown once!"
+        }
+      }
+    }
+  }
+}

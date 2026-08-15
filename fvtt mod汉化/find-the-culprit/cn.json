@@ -1,0 +1,156 @@
+
+  "FindTheCulprit": {
+    "Action": {
+      "acknowledge": {
+        "Label": {
+          "Disabled": "不在显示",
+          "Enabled": "每次显示"
+        }
+      },
+      "clearAll": {
+        "Label": "全部清除",
+        "Tooltip": "将所有模组设为可疑"
+      },
+      "deterministic": {
+        "Label": {
+          "Disabled": "刷新",
+          "Enabled": "决定性"
+        },
+        "Tooltip": {
+          "Disabled": "在跨步模组拆分过程中，不受自身或其他模组依赖关系限制的模组将被刷新",
+          "Enabled": "跳过模组激活/未激活拆分的刷新步骤"
+        }
+      },
+      "instructions": {
+        "Label": "说明",
+        "Tooltip": "单击以显示说明对话框"
+      },
+      "lockLibraries": {
+        "Label": {
+          "Disabled": "解锁Library",
+          "Enabled": "锁定Library"
+        },
+        "Tooltip": {
+          "Disabled": "正常处理Library模组",
+          "Enabled": "所有标记为Library的模组都被强制锁定"
+        }
+      },
+      "mute": {
+        "Tooltip": {
+          "Disabled": "不静音",
+          "Enabled": "静音"
+        }
+      },
+      "reloadAll": {
+        "Label": {
+          "Disabled": "仅GM重新加载",
+          "Enabled": "全部重新加载"
+        },
+        "Tooltip": {
+          "Disabled": "只有 GM 会重新加载",
+          "Enabled": "所有已连接的客户端将与GM一起重新加载"
+        }
+      },
+      "startRun": {
+        "Label": "开始运行",
+        "Tooltip": "启动搜索程序"
+      },
+      "zeroMods": {
+        "Label": "零模组",
+        "Tooltip": "重新加载时，除Find the Culprit外没有激活其他模组。不会启动全面搜索"
+      }
+    },
+    "BinarySearchStep": {
+      "ConfirmStep": "确认步骤：唯一激活的模组是已确定的罪魁祸首\"{culprit}\"，它的依赖模组（如果有的话）和你的锁定模组（如果有的话）。",
+      "ConfirmStepTitle": "确认步骤",
+      "StatsData": "步骤 {currentStep}：{numRemaining} 模组仍可疑。{remainingSteps}或更少的步骤。",
+	  "Title": "搜索步骤",
+      "WrongCulprit": "错误罪魁祸首 - 重新启动运行"
+    },
+    "ClearAll": "全部清除",
+    "Continue": "继续",
+    "CopyModuleList": "复制模组列表",
+    "DependencyOf": "依赖",
+    "ErrorDialog": {
+      "Direction": "该模组的数据可以在控制台中以错误Error的形式显示，以协助错误报告。点击下面的按钮或关闭此对话框，您的世界将恢复到Find the Culprit运行前的状态。",
+      "EncounteredError": "查找罪魁祸首遇到错误："
+    },
+    "FindTheCulprit": "找出罪魁祸首！",
+    "FoundTheCulprit": {
+      "CulpritConfirmed": "您已确认找到的罪魁祸首导致了问题。",
+      "HasPinned": "你已锁定{count}个模组，其中任何一个都可能是真正的罪魁祸首。如果你相信它们，那么列出的罪魁祸首很可能就是问题的根源。",
+      "Header": "我们找到了罪魁祸首！",
+      "OfferConfirmStep": "罪魁祸首在这一步中没有激活，因此目前只能推断其状态。单击下面的确认按钮，在罪魁祸首处于激活状态时再执行一个步骤。",
+      "Title": "判决"
+    },
+    "Instructions": {
+      "Controls": "模组状态可以通过点击模组标题或旁边的按钮进行循环，除非该模组的状态已被强制。右键单击该按钮将向后循环。默认情况下，所有模组都处于可疑状态，但作者标记为library的模组除外，因为锁定Library按钮默认为开启状态。",
+      "Disclaimer": "虽然这对许多类型的问题都是准确的，但这一过程并不能保证找到的罪魁祸首是导致问题的唯一模组，或实际上是<em>一个模组</em>&ndash; 因为它无法解释所有模组间的相互作用。模块列表分割算法可以防止模组在没有依赖关系的情况下被启用，但并不是所有模组关系都定义得足够好，可以通过这种方式加以考虑。",
+      "ModuleStates": "模组状态",
+	  "Reassurance": "任何已关闭的搜索步骤对话框都可以通过重新加载页面或单击模组管理中的查找罪魁祸首按钮来检索。",
+      "Tooltips": "大多数交互式元素都有工具提示，解释其功能和/或当前的切换状态。",
+      "Usage": "搜索开始后，页面将刷新，并提示您问题是否仍然存在。按照提示完成搜索步骤，这将缩小可疑列表的范围，直到找到最后的罪魁祸首，之后您可以返回当前激活模组列表。"
+    },
+    "IPWOP": {
+      "BlameCoreOrSystem": "问题似乎出在游戏系统或核心软件上",
+      "BlameModules": "，或你的某个锁定模组中：",
+	  "NonePinnedTitle": "核心或系统中的问题",
+      "SomePinnedTitle": "核心、系统或锁定中的问题"
+    },
+    "MissingDependencies": {
+      "Header": "无效模组状态",
+      "NotActiveDescription": "下面的模组不是激活模组，尽管它们是所列激活模组的必需依赖模组。",
+      "NotActiveNotInstalledClickInstruction": "单击退出将在退出前启用这些功能。",
+      "NotActiveOnlyClickInstruction": "单击下面的全部启用来启用这些模组并重新加载。",
+      "NotInstalledDescription": "以下模组尚未安装，尽管它们是列出的激活模组的必需依赖项。单击下面的退出返回设置，在那里可以安装这些模组。",
+      "Title": "缺失依赖",
+      "Unavailable": "由于缺少激活模组的依赖项，Find the Culprit不可用。"
+    },
+    "ModuleID": "模组 ID",
+    "ModuleTitle": "模组标题",
+    "NotActive": "未激活",
+    "NotInstalled": "未安装",
+    "SelectMods": {
+      "FilterModules": "过滤模组",
+      "ForcedTooltip": {
+        "DependencyOf": "模组是{pinnedDependants}锁定模组的依赖模组",
+        "ExcludedDependencies": "模组依赖于排除的模组 {excludedDependencies}",	
+        "LockedLibrary": "模组是一个library，锁定Library已启用",
+        "Preamble": "这种状态是被迫的，因为"
+      }
+    },
+    "Setting": {
+      "debugLevel": {
+        "Choices": {
+          "Debugger": "启用断点",
+          "Logging": "Logging & globalThis.ftc",
+          "None": "无"
+        },
+        "Hint": "启用Find the Culprit调试功能的级别",
+        "Name": "调试级别"
+      }
+    },
+    "Start": "开始",
+    "StartOfRun": {
+      "AllButPinnedDeactivated": "除了已锁定的模组和Find the Culprit外，其他所有模组都将停用。",
+      "AllModulesDeactivated": "除Find the Culprit外的所有模组均已停用",
+      "DoesIssuePersist": "您的问题仍然存在吗？",
+      "MaxSteps": "搜索最多需要 {maxSteps} 步。",
+      "NonePinnedTitle": "无激活模组",
+      "SomePinnedTitle": "只激活锁定模组"
+    },
+    "StateTooltip": {
+      "active": "<strong>激活：</strong>目前该搜索步骤处于激活状态",
+      "culprit": "<strong>罪魁祸首：</strong>导致您的问题（之一）的模组",
+      "excluded": "<strong>排除：</strong>搜索期间禁用",
+      "exonerated": "<strong>无错误：</strong>您表示该问题在该模组激活时并未持续存在",
+      "exoneratedButActive": "<strong>无错误(激活)：</strong>尽管该模组已被标记为无错误，但它仍处于激活状态，因为一个或多个激活的可疑模组需要它作为依赖。",
+      "inactive": "<strong>未激活：</strong>仍可疑，但这一步没有启动",
+      "pinned": "<strong>锁定：</strong>在搜索过程中始终处于激活状态",
+      "suspect": "<strong>可疑：</strong>潜在的罪魁祸首，正常启用和禁用"
+    },
+    "ZeroModules": {
+      "Title": "零模组"
+    }
+  }
+}

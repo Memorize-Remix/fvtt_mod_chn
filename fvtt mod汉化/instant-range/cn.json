@@ -1,0 +1,18 @@
+
+  "instant-range": {
+    "settings": {
+      "hoverOnlyInCombat": {
+        "name": "仅在战斗中悬停显示",
+        "hint": "仅在战斗激活时显示悬停Token的距离。"
+      },
+      "refreshThrottleMs": {
+        "name": "刷新节流（毫秒）",
+        "hint": "限制在高亮交互期间距离标签刷新的频率。0表示禁用节流。"
+      }
+    },
+    "warnings": {
+      "conflictDetected": "Instant Range检测到冲突模组：{name} ({id})。一次只能激活一个悬停距离模组。",
+      "failedToRegisterWrappers": "Instant Range未能注册其libWrapper钩子。Package：{package_id}，错误：{error_name}。"
+    }
+  }
+}

@@ -1,0 +1,306 @@
+
+  "illandril-token-tooltips": {
+    "setting": {
+      "debug": {
+        "label": "调试模式",
+        "hint": "除非Illandril特别要求启用，否则请不要启用（否则会拖慢运行速度）。"
+      },
+      "menu": {
+        "customOptions": {
+          "name": "工具提示值",
+          "label": "配置工具提示值",
+          "hint": "自定义工具提示中显示的值。自定义工具提示值允许您为与 token 角色相关的任何数字数据显示工具提示。",
+
+          "title": "工具提示值配置",
+
+          "instructions": {
+            "top": "为每个标准工具提示值选择查看这些值所需的权限（注意：并非所有系统都显示所有标准值）。为每个自定义工具提示值指定名称、图标和数据key。",
+            "name": "显示数据的名称。如果没有指定图标，则将在工具提示中显示名称而不是图标。",
+            "icon": "要在工具提示中显示的 Font Awesome 图标名称。图标的预览会显示在输入的右侧，以确保您选择了正确的图标。如果留空，将显示名称而不是图标。请注意，并非所有的 Font Awesome 图标都可用（FoundryVTT 本身控制可用的图标，而非本模组--本模组只是使用 FoundryVTT 附带的图标）。",
+            "iconLink": "在 Font Awesome 网站上搜索图标",
+            "attributeKey": "用于查找要在工具提示中显示的值的属性key。例如，要显示使用 DnD5e 系统的生物的 CR，请指定 `system.details.cr`。可以启用数据key调试来帮助您为要显示的信息找到正确的数据key。\n您可以使用 +、-、*（乘法）、/（除法）和 %（模数）来执行基本数学运算（运算从左到右进行，而不是 PEMDAS次序；例如，`5+5*2`将是 20，而不是 15）。您还可以使用 <、>、<=、>=、!=（不等于）或 ==（等于）在不满足指定条件时抑制一行（例如，`system.skills.preception.value != 0 + 10` 将显示一个比 token 的察觉技能大 10 的值，但前提是 token 的察觉技能不为零）。您还可以使用 & 将多个值连接在一起，使用\"quotes\"指定固定字符串（例如，`system.carryWeight.value & \" lbs\"` 将显示为`72 lbs`)",
+            "permission": "玩家在角色的工具提示中看到该值所需的最低权限（假设他们能看到工具提示--请参阅主设置页面中的工具提示可见性设置）。注：GM 被视为所有角色的所有者。",
+            "gmPermission": "此设置允许玩家在工具提示中看到自己的详细信息，同时对 GM 隐藏这些信息。注意：这会检查 token 是否为玩家所有，而不是角色类型，因此为玩家所有的 NPC 角色算作玩家信息，而没有玩家所有的 PC 角色算作 NPC 信息。",
+            "showOnPersistent": "此设置允许在悬停工具提示中显示详细信息，但在持续工具提示中隐藏详细信息。注意：要在持续工具提示中显示详细信息，除了启用此设置外，还必须通过其他权限设置--不能在持续工具提示中显示数据，却在悬停工具提示中隐藏数据。",
+            "show": "显示帮助",
+            "hide": "隐藏帮助",
+            "bugs": "单击此处报告错误或申请功能"
+          },
+
+          "header": {
+            "name": "名称",
+            "icon": "图标",
+            "attributeKey": "数据Key",
+            "permission": "显示权限",
+            "gmPermission": "GM 看到\n玩家信息？",
+            "showOnPersistent": "显示在\n持续？"
+          },
+
+          "standardOptionsTitle": "标准工具提示值(可能不会在所有系统中显示)",
+          "customOptionsTitle": "自定义工具提示值",
+
+          "standard": {
+            "hp.name": "生命值",
+            "hp.key": "视情况而定(ex. system.attributes.hp)",
+
+            "ac.name": "护甲等级(AC)",
+            "ac.key": "视情况而定(e.g. `system.attributes.ac`)",
+
+            "movement.name": "移动速度",
+            "movement.key": "视情况而定(e.g. `system.stats.speed`)",
+
+            "ruler.name": "距离标尺",
+            "ruler.key": "与所选 token 的计算距离",
+
+            "attributesPlus.name": "属性值(+调整值)",
+            "attributesPlus.help": "属性值和相关调整值（包括适当系统的基于属性的豁免）。",
+            "attributesPlus.icon": "标签",
+            "attributesPlus.key": "视情况而定(e.g. `system.abilities.str`)",
+
+            "passives.name": "被动技能",
+            "passives.key": "视情况而定(e.g. `system.skills.prc.passive`)",
+
+            "resources.name": "资源",
+            "resources.key": "system.resources.#",
+
+            "savingThrows.name": "豁免检定",
+            "savingThrows.help": "强韧豁免，反射豁免和意志豁免(Pathfinder和D&D 3.5)。 不包括基于属性的豁免检定 (D&D 5).",
+            "savingThrows.icon": "标签",
+            "savingThrows.key": "视情况而定(e.g. `system.saves.will`)",
+
+            "dmgResVuln.name": "伤害抗性/易伤",
+            "dmgResVuln.help": "伤害抗性、免疫和易伤/弱点。注：对于混合伤害免疫和状态免疫的系统（如 PF2e），状态免疫与伤害免疫一起包含。",
+            "dmgResVuln.icon": "标签",
+            "dmgResVuln.key": "视情况而定(e.g. `system.traits.di/dr/dv`)",
+
+            "condImm.name": "状态免疫",
+            "condImm.help": "状态免疫。注：对于混合伤害豁免和状态免疫的系统（如 PF2e），状态免疫与伤害豁免一起包含。",
+            "condImm.icon": "标签",
+            "condImm.key": "视情况而定(e.g. `system.traits.ci`)",
+
+            "spells.name": "法术位",
+            "spells.key": "视情况而定(ex. `system.spells.spell#`)",
+
+            "talents.name": "天赋",
+            "talents.icon": "天赋图片",
+            "talents.key": "system.talentList.#.name",
+
+            "items.name": "物品使用",
+            "items.icon": "物品图片",
+            "items.key": "仅限DND5e(在角色表中按物品切换)"
+          },
+
+          "moveDown": "下移",
+          "moveUp": "上移",
+          "delete": "删除",
+          "deleteConfirm": "您确定要删除此值吗？",
+          "add": "新增",
+          "save": "保存自定义工具提示值",
+
+          "toggleDebug.offLabel": "启用数据key调试",
+          "toggleDebug.onLabel": "禁用数据key调试"
+        },
+        "importExport": {
+          "name": "导入/导出工具提示值",
+          "label": "导入/导出",
+          "hint": "从一个世界导出工具提示值并导入另一个世界（或与 Illandril 共享，以帮助调试问题）。",
+
+          "title": "Illandril的token 工具提示导入/导出",
+
+          "instructions": {
+            "bugs": "单击此处报告错误或申请功能",
+            "notes": "此程序只导入或导出工具提示值设置。不包括其他工具提示设置（如持续工具提示、为玩家简化 HP 等）。单击导出将提示您下载一个 `.json` 文件。单击导入将提示您选择先前下载的`.json`文件。如果你试图导入从不同版本的Illandril's Token Tooltips导出的设置，导入可能会失败。"
+          },
+
+          "import": "导入",
+          "export": "导出",
+          "close": "关闭",
+          "confirmImport": "您确定要覆盖当前的工具提示值设置吗？警告：这无非撤销。- 如果你导入了错误的地方，又没有有效的导出保存来还原，你就需要根据记忆逐一手动还原以前的设置。",
+          "error": "无法读取所选文件。请确保您使用的是从使用相同版本Illandril's Token Tooltips的世界中导出的文件。",
+          "success": "工具提示值已导入。请单击配置工具提示值确认已导入预期设置。"
+        },
+        "persistentTooltips": {
+          "name": "持续工具提示",
+          "label": "配置持续工具提示",
+          "hint": "配置工具提示，使其始终显示在屏幕的特定区域。注：与该模组的大多数其他设置不同，该设置可针对每个客户端进行配置，而不是适用于每个人，这样您就可以在屏幕上为玩家始终显示持续的工具提示，而不会使您的 GM 屏幕变得杂乱无章。",
+
+          "title": "持续工具提示配置",
+
+          "instructions": {
+            "show": "显示帮助",
+            "hide": "隐藏帮助",
+            "bugs": "单击此处报告错误或申请功能",
+            "top": "只要相关角色在当前场景中可见，就会显示持续工具提示。如果在同一位置配置了多个工具提示，它们将并排显示。如果配置的工具提示未显示，请确认 ID 是否正确（检查 ID 前后是否有多余的空白），并通过将鼠标悬停在 token 上确保您有权限查看工具提示。",
+            "type": "角色根据角色 ID 为工具提示查找 token。用户根据指定用户选择的角色（通过用户配置而非标记选择选择的角色）为工具提示查找标记。",
+            "id": "要获取角色的 ID，请打开该角色的角色表，然后单击对话框标题中的图书图标，复制该角色的 ID。要获取用户的 ID，请右键单击玩家列表中的用户，打开用户配置对话框，然后单击对话框标题中的图书图标，复制该用户的 ID。",
+            "id_bad": "表示指定的 ID 无效--仔细检查类型和 ID 值。",
+            "id_good": "表示指定的 ID 有效，但当前场景中没有相关联的 token。将鼠标悬停在图标上可查看相关用户或角色的名称。",
+            "id_best": "表示指定的 ID 有效，并且当前场景中有一个关联token。将鼠标悬停在图标上可查看相关token的名称。",
+            "rotation": "工具提示的旋转角度（顺时针）。"
+          },
+
+          "header": {
+            "type": "类型",
+            "id": "ID",
+            "position": "位置",
+            "rotation": "旋转"
+          },
+
+          "positions": {
+            "top": {
+              "left": "左上角",
+              "center": "顶端",
+              "right": "右上角"
+            },
+            "center": {
+              "left": "左",
+              "center": "中心",
+              "right": "右"
+            },
+            "bottom": {
+              "left": "左下角",
+              "center": "底端",
+              "right": "右下角"
+            }
+          },
+
+          "rotations": {
+            "0": "0°",
+            "90": "90°",
+            "180": "180°",
+            "270": "270°"
+          },
+
+          "moveDown": "下移",
+          "moveUp": "上移",
+          "delete": "删除",
+          "deleteConfirm": "您确定要删除此值吗？",
+          "add": "新增",
+          "save": "保存持续工具提示"
+        }
+      },
+      "visibility": {
+        "label": "工具提示可见性",
+        "hint": "工具提示可见性可调整哪些token会为玩家显示工具提示。对 GM 而言，所有 token 都会显示工具提示。",
+        "choice": {
+          "FRIENDLY": "友善token(PC和NPC)",
+          "NEUTRAL": "中立和友善token(PC和NPC)",
+          "ALL_PLAYERS": "玩家token(任意倾向)",
+          "OWNER": "拥有角色token",
+          "OBSERVER": "可查看角色token",
+          "LIMITED": "限制权限角色token",
+          "ALL": "全部token",
+          "NONE": "无token(仅向 GM 显示工具提示)"
+        }
+      },
+      "simplifyHP": {
+        "label": "为玩家简化 HP",
+        "hint": "简化显示给玩家的 HP 值（是否显示 HP - 上文的配置工具提示值可配置何时显示 HP）。未简化的值始终显示给 GM。",
+        "choice": {
+          "NONE": "不要简化（显示 HP 值）",
+          "FOUR_HEARTS__PLAYERS_ALL": "四颗红心（所有 token）",
+          "FOUR_HEARTS__PLAYERS_NON_FRIENDLY": "四颗红心（非友善 token）",
+          "FOUR_HEARTS__PLAYERS_HOSTILE": "四颗红心（敌对 token）",
+          "FOUR_HEARTS__PLAYERS_NON_OBSERVER": "四颗红心（无法查看的 token）",
+          "FIVE_HEARTS__PLAYERS_ALL": "五颗红心（所有 token）",
+          "FIVE_HEARTS__PLAYERS_NON_FRIENDLY": "五颗红心（非友善 token）",
+          "FIVE_HEARTS__PLAYERS_HOSTILE": "五颗红心（敌对 token）",
+          "FIVE_HEARTS__PLAYERS_NON_OBSERVER": "五颗红心（无法查看的 token）"
+        }
+      },
+      "simplifyDamageTypes": {
+        "label": "抗性/免疫/易伤风格",
+        "hint": "指定如何显示抗性、免疫和易伤的伤害和状态类型值。并非所有类型都有图标--如果类型没有图标，即使选择了图标，名称也会显示。",
+        "choice": {
+          "NONE": "标签(黑色)",
+          "COLOR": "标签(色彩)",
+          "ICON": "图标(黑色)",
+          "COLOR_ICON": "图标(色彩)",
+          "ICON_AND_TEXT": "图标和标签(色彩)"
+        }
+      },
+      "entityPermission.choice": {
+        "NONE": "为每个人显示",
+        "LIMITED": "限制或更高",
+        "OBSERVER": "查看或更高",
+        "OWNER": "拥有或GM",
+        "FRIENDLY": "友善(+GM)",
+        "NEUTRAL": "中立或更好(+GM)",
+        "SHOW_TO_GMS_ONLY": "仅限GM",
+        "HIDE_FROM_EVERYONE": "为每个人隐藏"
+      },
+      "gmPermission.choice": {
+        "ALL": "GM 查看玩家信息",
+        "NPC_ONLY": "仅 GM 的 NPC"
+      },
+      "disableTooltips": {
+        "label": "禁用提示",
+        "hint": "如果选中，无论 GM 为该模组配置了哪些其他设置，提示都不会显示（客户端设置 - 不影响其他玩家）。注：仅适用于动态工具提示，不影响持久工具提示，您已经可以在'配置持续工具提示'菜单中随意添加或删除持久工具提示。"
+      },
+
+      "rowsPerTooltip.label": "工具提示行（悬停）",
+      "rowsPerTooltip.hint": "工具提示中每列显示的最大行数。",
+
+      "tooltipFontSize.label": "工具提示字体大小（悬停）",
+      "tooltipFontSize.hint": "相对于应用程序中大多数其他地方使用的字体大小，悬停时显示的工具提示字体大小的比例。",
+
+      "rowsPerPersistent.label": "持续工具提示行",
+      "rowsPerPersistent.hint": "持续工具提示中每列显示的最大行数。",
+
+      "persistentFontSize.label": "持续工具提示字体大小",
+      "persistentFontSize.hint": "相对于应用程序中大多数其他地方使用的字体大小，持续工具提示字体大小的比例。",
+
+      "darkMode.label": "暗色模式",
+      "darkMode.hint": "如果选中，工具提示将显示为深色方案（而不是浅色）。",
+
+      "showOnLeft.label": "左侧显示",
+      "showOnLeft.hint": "如果选中，工具提示将显示在 token 的左侧（而不是右侧）。",
+
+      "showTokenName.label": "显示 token 名称",
+      "showTokenName.hint": "如果选中，工具提示顶部将显示 token 的名称。",
+
+      "showOnHighlightHotkey.label": "高亮显示热键",
+      "showOnHighlightHotkey.hint": "如果选中，按下高亮显示对象热键（默认为 ALT；可在配置设定中配置）时，将显示工具提示（仅针对当前选中的 token）。注意：与只显示工具提示热键不兼容。",
+
+      "showOnlyWithTooltipHotkey.label": "只显示工具提示热键",
+      "showOnlyWithTooltipHotkey.hint": "如果选中此选项，则只有在将鼠标悬停在 token 上时按下显示工具提示热键（默认为 SHIFT；可在配置设定中配置），工具提示才会显示。注意：与高亮显示热键不兼容。"
+    },
+
+    "debugDisplay.empty": "将鼠标悬停在 token 上，查看该角色的数据key",
+
+    "hotkey": {
+      "showTooltip": {
+        "label": "显示工具提示",
+        "hint": "如果启用了\"只显示工具提示热键\"，则只有在悬停在 token 上按下该按钮时才会显示工具提示。"
+      }
+    },
+
+    "pactAbbreviation": "契约",
+    "spellPointsAbbreviation": "法术位",
+    "powerAbbreviation": "P",
+    "cantripAbbreviation": "戏法",
+    "focusAbbreviation": "法器",
+
+    "savingThrowFort": "强韧",
+    "savingThrowRef": "反射",
+    "savingThrowWill": "意志",
+
+    "touchACAbbreviation": "T",
+    "flatFootedACAbbreviation": "FF",
+    "cmdAbbreviation": "CMD",
+    "meleeDefenseAbbreviation": "M.Def",
+    "rangedDefenseAbbreviation": "R.Def",
+
+    "tooltip": {
+      "damageImmunities.label": "免疫",
+      "damageResistances.label": "抗性",
+      "damageVulnerabilities.label": "易伤",
+      "weaknesses.label": "弱点",
+      "conditionImmunities.label": "状态免疫"
+    },
+
+    "tooltipSwitch": "在工具提示中显示",
+    "tooltipShown": "显示在工具提示中",
+    "tooltipNotShown": "未在工具提示中显示"
+  }
+}

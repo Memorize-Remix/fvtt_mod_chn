@@ -1,0 +1,209 @@
+{
+    "PUTARINGONIT": {
+        "Blacklist": {
+            "App": {
+                "Field": {
+                    "BlacklistFolders": {
+                        "Label": "Blacklisted Folders"
+                    }
+                },
+                "Header": {
+                    "Content": "Prevent token rings auto applying to certain files paths (such as tokenizer or JB2A files). Type the filepath to a folder in the text box and click the plus, or use the file browser to select a folder. Click the x on the tags to remove items from the blacklist.",
+                    "Title": "Blacklist"
+                },
+                "Warning": {
+                    "EmptyInput": "Please type a file path into the text box.",
+                    "InvalidFolder": "File path does not exist."
+                },
+                "WindowTitle": "Put A Ring On It - Blacklist Menu"
+            },
+            "Menu": {
+                "Hint": "Prevent token rings auto applying to certain files paths (such as tokenizer or JB2A files).",
+                "Label": "Blacklist",
+                "Name": "Blacklist Menu"
+            }
+        },
+        "Defaults": {
+            "AllTokens": "All Tokens",
+            "Cancel": "Cancel",
+            "FrameBevel": "Frame Bevel",
+            "Full": "Full",
+            "None": "None",
+            "Partial": "Partial",
+            "Save": "Save",
+            "SingleBevel": "Single Bevel"
+        },
+        "Module": {
+            "LibWrapperRequired": "Put A Ring On It requires Libwrapper, please enabled it and reload!"
+        },
+        "Profiles": {
+            "App": {
+                "Buttons": {
+                    "AddProfile": "Add New Profile",
+                    "RemoveProfile": "Remove Selected Profile"
+                },
+                "ConfirmDelete": {
+                    "Content": "Are you sure you want to delete the selected profile?"
+                },
+                "Field": {
+                    "Borders": {
+                        "InnerBorder": {
+                            "Color": {
+                                "Label": "➜ Color:"
+                            },
+                            "Enabled": {
+                                "Label": "Inner Border Enabled:"
+                            },
+                            "Size": {
+                                "Label": "➜ Size:"
+                            }
+                        },
+                        "Label": "Borders",
+                        "OuterBorder": {
+                            "Color": {
+                                "Label": "➜ Color:"
+                            },
+                            "Enabled": {
+                                "Label": "Outer Border Enabled:"
+                            },
+                            "Size": {
+                                "Label": "➜ Size:"
+                            }
+                        }
+                    },
+                    "Color": {
+                        "Label": "➜ Color:"
+                    },
+					"Coverage": {
+                        "Label": "➜ Coverage:"
+                    },
+					"Glows": {
+                        "InnerGlow": {
+                            "Enabled": {
+                                "Label": "Inner Glow Enabled:"
+                            }
+                        },
+                        "Label": "Glows",
+                        "OuterGlow": {
+                            "Enabled": {
+                                "Label": "Outer Glow Enabled:"
+                            }
+                        }
+                    },
+                    "Info": {
+						"BackgroundEnabled": {
+                            "Label": "Background Enabled:"
+                        },
+                        "Label": "Info",
+                        "OverrideEnabled": {
+                            "Hint": "When enabled, a chosen texture will be applied to tokens instead of a custon ring.",
+                            "Label": "Override Enabled:"
+                        },
+                        "ProfileIdentifier": {
+                            "Label": "Profile Identifier:"
+                        },
+                        "ProfileName": {
+                            "Label": "Profile Name:"
+                        }
+                    },
+                    "Override": {
+                        "Label": "Override",
+                        "OverrideTexture": {
+                            "Hint": "File path to your own token ring texture.",
+                            "Label": "Override Texture:"
+                        }
+                    },
+                    "Ring": {
+                        "BevelStyle": {
+                            "Label": "Bevel Style:"
+                        },
+                        "ColorOverlay": {
+                            "Label": "Overlay Color:"
+                        },
+                        "ColorOverlayEnabled": {
+                            "Hint": "When enabled, a tint of the chose color will be added to the token ring.",
+                            "Label": "Color Overlay Enabled:"
+                        },
+                        "Label": "Ring",
+                        "Size": {
+                            "Hint": "Width of the token ring.",
+                            "Label": "Ring Size:"
+                        },
+                        "Texture": {
+                            "Hint": "Texture for token ring, you can use your own or the module's defaults.",
+                            "Label": "Ring Texture:"
+                        }
+                    },
+                    "Shadows": {
+                        "InnerShadow": {
+                            "Enabled": {
+                                "Label": "Inner Shadow Enabled:"
+                            }
+                        },
+                        "Label": "Shadows",
+                        "OuterShadow": {
+                            "Enabled": {
+                                "Label": "Outer Shadow Enabled:"
+                            }
+                        }
+                    },
+                    "Size": {
+                        "Label": "➜ Size:"
+                    }
+                },
+                "Form": {
+                    "Placeholder": "Select or add a profile!"
+                },
+                "Header": {
+                    "Content": "Select profile to edit."
+                },
+				"Preview": {
+                    "Label": "Preview"
+                },
+                "WindowTitle": "Put A Ring On It - Profiles Menu"
+            },
+            "Menu": {
+                "Hint": "Customize token ring \"Profiles\" which are presets that can quickly applied to tokens.",
+                "Label": "Profiles",
+                "Name": "Profiles Menu"
+            }
+        },
+        "Settings": {
+            "ApplyByDisposition": {
+                "Choices": {
+                    "HostileNeutral": "Hostile and Neutral"
+                },
+                "Hint": "Apply based on a token's disposition.",
+                "Name": "Apply by Disposition"
+            },
+            "ApplyByLinkedStatus": {
+                "Choices": {
+                    "Linked": "Unlinked Tokens",
+                    "Unlinked": "Linked Tokens"
+                },
+                "Hint": "Apply to tokens based on \"Link Actor Data\" status.",
+                "Name": "Apply by Linked Status"
+            },
+            "AutoApply": {
+                "Hint": "Automatically apply token ring to relevant tokens when dropped on the scene. When disabled, token rings must be enabled on the prototype token.",
+                "Name": "Auto Apply Token Ring"
+            },
+            "DefaultProfileFriendly": {
+                "Hint": "Token Ring Profile that will be applied to Friendly tokens without a customized ring.",
+                "Name": "Default Friendly Token Ring Profile"
+            },
+            "DefaultProfileHostile": {
+                "Hint": "Token Ring Profile that will be applied to Hostile tokens without a customized ring.",
+                "Name": "Default Hostile Token Ring Profile"
+            },
+            "DefaultProfileNeutral": {
+                "Hint": "Token Ring Profile that will be applied to Neutral tokens without a customized ring.",
+                "Name": "Default Neutral Token Ring Profile"
+            }
+        },
+        "TokenConfig": {
+            "Hint": "The selected profile will be applied, ignoring default settings. Profiles can be added or changed in the settings.",
+            "Label": "Token Ring Profile:"
+        }
+    }
+}

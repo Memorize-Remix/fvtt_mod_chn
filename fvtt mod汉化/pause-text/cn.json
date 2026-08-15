@@ -1,0 +1,164 @@
+
+  "pauseText": {
+    "image": {
+      "source": {
+        "name": "暂停图像文件路径：",
+        "hint": "输入 None 表示不使用图像。"
+      },
+      "opacity": {
+        "name": "图像透明度 %：",
+        "hint": "0 到 100 之间的值，数值越低越透明。默认：50%"
+      },
+      "width": {
+        "name": "图像宽度：",
+        "hint": "图标的宽度（像素）。默认：100px"
+      },
+      "height": {
+        "name": "图像高度：",
+        "hint": "图标的高度（像素）。默认：100px"
+      },
+      "initRotation": {
+        "name": "图像旋转：",
+        "hint": "设置图像的初始旋转角度。如果禁用旋转动画，可用于旋转图像。默认：0"
+      },
+      "speed": {
+        "name": "旋转速度：",
+        "hint": "每转秒数，0 表示不旋转。默认：5"
+      },
+      "reverse": {
+        "name": "反向旋转：",
+        "hint": "反转旋转方向。"
+      },
+      "verticalPos": {
+        "name": "垂直位置：",
+        "hint": "暂停元素在屏幕上的垂直位置。0 为最顶部，100 为最底部。默认：50"
+      },
+      "horizontalPos": {
+        "name": "水平位置：",
+        "hint": "暂停元素在屏幕上的水平位置。0 为最左侧，100 为最右侧。关闭渐变背景时效果最佳。默认：50"
+      },
+      "gradientBackground": {
+        "name": "渐变背景：",
+        "hint": "切换图标和消息后面的背景。"
+      },
+      "gradientColor": {
+        "name": "渐变颜色：",
+        "hint": "设置渐变的颜色。默认：#0b0a13"
+      },
+      "gradientOpacity": {
+        "name": "渐变透明度：",
+        "hint": "设置渐变中心区域的透明度。默认：128"
+      }
+    },
+    "text": {
+      "messages": {
+        "name": "暂停消息：",
+        "hint": "保存设置后，重新暂停游戏以查看你所做的更改！",
+        "label": "暂停消息",
+        "submenuTitle": "暂停消息",
+        "saveButton": "保存",
+        "messageHint": "你可以使用 \\n 在消息中插入换行符！"
+      },
+      "textSync": {
+        "name": "启用同步：",
+        "hint": "启用或禁用玩家之间暂停文本的同步。默认值：false"
+      },
+	  "textSelectionMode": {
+		"name": "文本选择模式：",
+		"hint": "选择暂停文本消息的选取方式。\n“顺序”按顺序显示消息，并记住上次位置直到会话重新加载。\n“随机”使用真随机。\n“随机（减少重复）”使用受Tetris The Grand Master启发的算法，减少最近重复的消息。默认：随机",
+		"choices": {
+		  "ordered": "顺序",
+		  "random": "随机",
+		  "perceivedRandom": "随机（减少重复）"
+		}
+	  },
+      "changeInterval": {
+        "name": "文本切换间隔：",
+        "hint": "显示下一条随机文本前的秒数。0 和负值将禁用此功能。默认：15秒"
+      },
+      "textWidth": {
+        "name": "文本宽度：",
+        "hint": "根据视口宽度按比例调整文本宽度。默认：90%"
+      },
+      "fontFamily": {
+        "name": "字体：",
+        "hint": "要使用的字体名称。与自定义字体模组和 Google 字体兼容良好。请确保名称拼写正确。FVTT 默认：Amiri"
+      },
+      "useGoogleFont": {
+        "name": "Google 字体：",
+        "hint": "如果字体来自 Google 字体，请勾选此项，否则将无法正常工作。默认：false"
+      },
+      "fontColor": {
+        "name": "字体颜色：",
+        "hint": "字体的十六进制颜色代码。默认：#ada7b8"
+      },
+      "fontSize": {
+        "name": "字体大小 (em)：",
+        "hint": "字体大小（em 单位）。默认：2em"
+      },
+      "fontBold": {
+        "name": "粗体：",
+        "hint": "将字体加粗。某些字体不支持此功能。默认：true"
+      },
+      "fontItalic": {
+        "name": "斜体：",
+        "hint": "将字体设为斜体。某些字体不支持此功能。默认：false"
+      },
+      "fontSmallCaps": {
+        "name": "小型大写字母：",
+        "hint": "启用小型大写字母字体变体。所有小写字母将转换为较小的大写字母。默认：false"
+      },
+      "lineHeight": {
+        "name": "行高 (rem)：",
+        "hint": "文本行的高度（rem 单位），多行文本建议值为 2。默认：1rem"
+      },
+      "lineOffset": {
+        "name": "垂直行偏移 (px)：",
+        "hint": "消息行相对于图像的垂直偏移。负值向上偏移，正值向下偏移。关闭背景时效果最佳。默认：0px"
+      },
+      "textShadow": {
+        "name": "启用阴影效果：",
+        "hint": "启用时文本下方显示阴影。"
+      },
+      "textAlign": {
+        "name": "多行文本对齐：",
+        "hint": "在多行文本框内对齐文本。默认：居中",
+        "choices": {
+          "center": "居中",
+          "left": "左对齐",
+          "right": "右对齐"
+        }
+      },
+      "fontCaps": {
+        "name": "文本选项：",
+        "hint": "设置各种文本转换选项。默认：全部大写",
+        "choices": {
+          "none": "无",
+          "capitalize": "首字母大写",
+          "uppercase": "全部大写"
+        }
+      }
+    },
+    "animation": {
+      "animationType": {
+        "name": "动画类型：",
+        "hint": "设置整个暂停元素的动画效果。默认：脉动",
+        "choices": {
+          "none": "无",
+          "pulse": "脉动",
+          "rainbow": "彩虹",
+          "breath": "呼吸",
+          "glow": "发光"
+        }
+      },
+      "animationDuration": {
+        "name": "动画持续时间：",
+        "hint": "设置动画的持续时间（秒）。默认：3秒"
+      },
+      "animationColor": {
+        "name": "动画颜色：",
+        "hint": "某些动画可以更改颜色。默认：#ffffff"
+      }
+    }
+  }
+}

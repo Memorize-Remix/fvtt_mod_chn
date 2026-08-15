@@ -1,0 +1,57 @@
+{
+  "I18N.LANGUAGE": "English",
+  "objection": {
+    "module-settings": {
+      "sfx": {
+        "name": "Sound Effect",
+        "hint": "SFX to play when the animation is played"
+      },
+      "volume": {
+        "name": "Volume",
+        "hint": "Volume level to play sfx at (0 - 1)"
+      },
+      "duration": {
+        "word": {
+          "name": "Duration of Objection! word",
+          "hint": "Duration to play the Objection portion of the animation"
+        },
+        "bench": {
+          "name": "Bench Duration",
+          "hint": "How long to show the bench image after the Objection! word"
+        }
+      },
+      "flip-hostile": {
+        "name": "Flip Hostile Objection",
+        "hint": "Cause hostile objections to play on the opposite side by default"
+      },
+      "reaction": {
+        "enabled": {
+          "name": "Reactions cause an Objection!",
+          "hint": "When a reaction is sent to chat (for the pf2e system) it causes an objection"
+        }
+      }
+    },
+    "controls": {
+      "objection": {
+        "name": "Objection!",
+        "hint": "Keybind to run default Objection! Macro (hold Shift to play on the opposite side)"
+      },
+      "eureka": {
+        "name": "Eureka!",
+        "hint": "Keybind to run Eureka! animation (hold Shift to play on the opposite side)"
+      },
+      "gotcha": {
+        "name": "Gotcha!",
+        "hint": "Keybind to run Gotcha! animation (hold Shift to play on the opposite side)"
+      },
+      "hold-it": {
+        "name": "Hold It!",
+        "hint": "Keybind to run Hold It! animation (hold Shift to play on the opposite side)"
+      },
+      "take-that": {
+        "name": "Take That!",
+        "hint": "Keybind to run Take That! animation (hold Shift to play on the opposite side)"
+      }
+    }
+  }
+}

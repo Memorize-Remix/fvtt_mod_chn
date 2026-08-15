@@ -1,0 +1,43 @@
+
+  "adaptive-audio": {
+    "title": "自适应音频播放器",
+    "settings": {
+      "defaultIntensity": {
+        "name": "默认强度",
+        "hint": "开始播放时的默认强度值（0-100）"
+      },
+      "combatIntensity": {
+        "name": "战斗强度",
+        "hint": "战斗开始时自动设置的强度值（0-100）"
+      },
+      "autoSetCombatIntensity": {
+        "name": "自动设置战斗强度",
+        "hint": "战斗开始/结束时自动调整强度滑块"
+      },
+      "masterVolume": {
+        "name": "主音量",
+        "hint": "自适应音频播放的主音量（0-100）"
+      }
+    },
+    "ui": {
+      "lowIntensityTrack": "低强度音轨",
+      "highIntensityTrack": "高强度音轨",
+      "intensity": "强度",
+      "volume": "音量",
+      "play": "播放",
+      "pause": "暂停",
+      "stop": "停止",
+      "loop": "循环",
+      "selectTrack": "选择音频文件",
+      "noTracksLoaded": "请选择低强度和高强度音轨以开始",
+      "playing": "播放中",
+      "paused": "已暂停",
+      "stopped": "已停止"
+    },
+    "notifications": {
+      "bothTracksRequired": "必须同时选择低强度和高强度音轨",
+      "trackLoadError": "加载音轨时出错：{error}",
+      "playbackError": "播放过程中出错：{error}"
+    }
+  }
+}

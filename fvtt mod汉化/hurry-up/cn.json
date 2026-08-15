@@ -1,0 +1,91 @@
+
+    "hp": {
+        "settings": {
+            "disable": {
+                "name": "禁用计时器",
+                "hint": "禁用战斗计时器功能"
+            },
+            "timerDuration": {
+                "name": "计时时长",
+                "hint": "计时器的持续时间（秒）"
+            },
+            "style": {
+                "name": "计时样式",
+                "hint": "计时器的显示风格",
+                "digits": "数字",
+				"circle": "圆形",
+				"sand": "沙漏"
+            },
+            "countup": {
+                "name": "递增计时",
+                "hint": "计时器递增计数而非递减（仅数字和圆圈样式适用）"
+            },
+            "overtime": {
+                "name": "超时延续",
+                "hint": "计时器在到达最大时间后继续运行"
+            },
+            "size": {
+                "name": "尺寸",
+                "hint": "计时器的显示尺寸"
+            },
+			  "secondary-size": {
+				"name": "次要尺寸",
+				"hint": "次要计时器的尺寸"
+			  },
+			  "secondary-direction": {
+				"name": "次要方向",
+				"hint": "次要计时器的方向"
+			  },
+            "windowless": {
+                "name": "无边框模式",
+                "hint": "不以窗口形式显示计时器"
+            },
+            "critical": {
+                "name": "紧急阈值",
+                "hint": "计时器进入紧急状态并开始闪烁的临界值"
+            },
+            "secondsInsteadOfPercentage": {
+                "name": "紧急阈值使用秒数而非百分比",
+                "hint": "默认紧急阈值使用总时长的百分比，启用后将改为使用具体秒数"
+            },
+            "goNext": {
+                "name": "自动下一回合",
+                "hint": "计时结束后自动切换到下一个战斗者"
+            },
+            "runForNpc": {
+                "name": "NPC回合计时",
+                "hint": "在NPC的回合也运行计时器"
+            },
+            "showOnUpdateCombatOnly": {
+                "name": "次回合显示",
+                "hint": "仅在点击'开始战斗'、'下一回合'或'结束回合'时首次显示计时器"
+            },
+            "critSoundPath": {
+                "name": "紧急音效",
+                "hint": "计时器进入紧急状态时播放的音效"
+            },
+            "endSoundPath": {
+                "name": "结束音效",
+                "hint": "计时器结束时播放的音效"
+            },
+            "soundVol": {
+                "name": "音效音量",
+                "hint": "播放音效的音量大小"
+            }
+        },
+		  "contextMenu": {
+			"pause": "暂停",
+			"unpause": "继续",
+			"reset": "重置",
+			"close": "关闭"
+		  },
+		  "create": {
+			"title": "快点！",
+			"paused": "已暂停",
+			"time": "时间",
+			"timeError": "时间必须是大于0的数字",
+			"name": "名称",
+			"color": "颜色"
+		  }
+    }
+}

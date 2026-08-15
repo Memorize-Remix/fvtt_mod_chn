@@ -1,0 +1,187 @@
+
+  "GOLD_BOX": {
+    "MODULE_NAME": "The Gold Box",
+    "MODULE_DESCRIPTION": "一个由AI驱动的FVTT模组，提供智能TTRPG辅助",
+    "VERSION": "0.2.5",
+    
+    "BUTTONS": {
+      "TAKE_AI_TURN": "执行AI回合",
+      "DISCOVER_BACKEND": "发现后端",
+      "MODULE_INFO": "The Gold Box"
+    },
+    
+    "NOTIFICATIONS": {
+      "AI_FUNCTIONALITY_COMING_SOON": "The Gold Box：AI功能即将推出！",
+      "MODULE_INITIALIZED": "The Gold Box模组初始化成功",
+      "MODULE_READY": "The Gold Box已准备好进行AI冒险！",
+      "CONNECTION_VERIFIED": "✅ 后端连接已验证！",
+      "CONNECTION_FAILED": "❌ 未找到后端服务器。请启动后端服务器。",
+      "DISCOVERY_FAILED": "🚫 后端发现失败 - {error}",
+      "SESSION_EXPIRING": "⚠️ 会话即将过期！服务器连接可能不稳定。请刷新页面。",
+      "CRITICAL_SESSION": "⚠️ 会话即将过期！服务器连接可能不稳定。请刷新页面。"
+    },
+    
+    "DIALOG": {
+      "TITLE": "The Gold Box",
+      "VERSION": "版本 {version}",
+      "DESCRIPTION": "一个由AI驱动的FVTT模组，提供智能TTRPG辅助。",
+      "STATUS": "基本结构已加载 - AI功能即将推出！",
+      "GITHUB_LINK": "GitHub仓库",
+      "CLOSE": "关闭",
+      "BACKEND_STARTUP": "The Gold Box - 需要启动后端",
+      "PROVIDER_STATUS": "The Gold Box - 提供商状态",
+      "AVAILABLE_PROVIDERS": "The Gold Box - 可用提供商",
+      "CRITICAL_WARNING": "The Gold Box - 关键会话警告",
+      "AI_PROCESSING": "The Gold Box - AI处理中"
+    },
+    
+    "STATUS": {
+      "THINKING": "AI正在思考...",
+      "READY": "AI已就绪",
+      "ERROR": "AI遇到错误",
+      "PROCESSING": "AI处理中...",
+      "THINKING_BUTTON": "🤔 AI思考中...",
+      "CONNECTED": "已连接",
+      "DISCONNECTED": "已断开",
+      "ERROR_STATE": "错误",
+      "CHECKING": "检查中..."
+    },
+    
+    "SETTINGS": {
+      "TITLE": "The Gold Box设置",
+      "BACKEND_STATUS": "后端状态",
+      "BACKEND_STATUS_HINT": "后端服务器的当前状态（自动检测）",
+      "BACKEND_PASSWORD": "后端密码",
+      "BACKEND_PASSWORD_HINT": "后端服务器管理操作的密码（用于同步设置）",
+      "MAX_MESSAGE_CONTEXT": "最大消息上下文",
+      "MAX_MESSAGE_CONTEXT_HINT": "发送给AI作为上下文的最近聊天消息数量（默认：15）",
+      "AI_RESPONSE_TIMEOUT": "AI响应超时（秒）",
+      "AI_RESPONSE_TIMEOUT_HINT": "在重新启用按钮前等待AI响应的最长时间（默认：60）",
+      "AI_ROLE": "AI角色",
+      "AI_ROLE_HINT": "AI在你的游戏中应扮演的角色",
+      "GENERAL_LLM_PROVIDER": "通用LLM - 提供商",
+      "GENERAL_LLM_PROVIDER_HINT": "通用LLM的提供商名称（例如：openai、anthropic、opencode、custom-provider）",
+      "GENERAL_LLM_BASE_URL": "通用LLM - 基础URL",
+      "GENERAL_LLM_BASE_URL_HINT": "通用LLM提供商的基础URL（例如：https://api.openai.com/v1、https://api.z.ai/api/coding/paas/v4）",
+      "GENERAL_LLM_MODEL": "通用LLM - 模型",
+      "GENERAL_LLM_MODEL_HINT": "通用LLM的模型名称（例如：gpt-3.5-turbo、claude-3-5-sonnet-20241022、openai/glm-4.6）",
+      "GENERAL_LLM_VERSION": "通用LLM - API版本",
+      "GENERAL_LLM_VERSION_HINT": "通用LLM的API版本（例如：v1、v2、custom）",
+      "GENERAL_LLM_TIMEOUT": "通用LLM - 超时（秒）",
+      "GENERAL_LLM_TIMEOUT_HINT": "通用LLM的请求超时时间（秒）（默认：30）",
+      "GENERAL_LLM_MAX_RETRIES": "通用LLM - 最大重试次数",
+      "GENERAL_LLM_MAX_RETRIES_HINT": "通用LLM的最大重试尝试次数（默认：3）",
+      "GENERAL_LLM_CUSTOM_HEADERS": "通用LLM - 自定义头部（JSON）",
+      "GENERAL_LLM_CUSTOM_HEADERS_HINT": "通用LLM的自定义头部，JSON格式（高级）",
+      "TACTICAL_LLM_PROVIDER": "战术LLM - 提供商",
+      "TACTICAL_LLM_PROVIDER_HINT": "战术LLM的提供商名称（未来实现的占位符）",
+      "TACTICAL_LLM_BASE_URL": "战术LLM - 基础URL",
+      "TACTICAL_LLM_BASE_URL_HINT": "战术LLM提供商的基础URL（未来实现的占位符）",
+      "TACTICAL_LLM_MODEL": "战术LLM - 模型",
+      "TACTICAL_LLM_MODEL_HINT": "战术LLM的模型名称（未来实现的占位符）",
+      "TACTICAL_LLM_VERSION": "战术LLM - API版本",
+      "TACTICAL_LLM_VERSION_HINT": "战术LLM的API版本（例如：v1、v2、custom）",
+      "TACTICAL_LLM_TIMEOUT": "战术LLM - 超时（秒）",
+      "TACTICAL_LLM_TIMEOUT_HINT": "战术LLM的请求超时时间（秒）（默认：30）",
+      "TACTICAL_LLM_MAX_RETRIES": "战术LLM - 最大重试次数",
+      "TACTICAL_LLM_MAX_RETRIES_HINT": "战术LLM的最大重试尝试次数（默认：3）",
+      "TACTICAL_LLM_CUSTOM_HEADERS": "战术LLM - 自定义头部（JSON）",
+      "TACTICAL_LLM_CUSTOM_HEADERS_HINT": "战术LLM的自定义头部，JSON格式（高级）",
+      
+      "CHOICES": {
+        "DM": "DM",
+        "DM_ASSISTANT": "DM助手", 
+        "PLAYER": "玩家"
+      },
+      
+      "NOTES": {
+        "DISCOVER_BACKEND": "测试后端连接，如果端口更改则发现服务器"
+      }
+    },
+    
+    "CONNECTION": {
+      "BACKEND_NOT_RUNNING": "后端服务器未运行或无法访问",
+      "OPTION_1_RUN": "选项1：运行自动化脚本",
+      "RUN_AUTOMATION": "从The Gold Box模组目录运行 <code>./start-backend.py</code> 以自动设置并启动后端服务器。",
+      "OPTION_2_MANUAL": "选项2：手动设置",
+      "SEE_README": "查看README.md文件获取手动设置说明。",
+      "OPTION_3_DISCOVER": "选项3：自动发现端口",
+      "AUTO_DISCOVER": "转到The Gold Box设置并点击\"发现后端\"以自动查找并连接到运行中的后端服务器。",
+      "NOTE": "注意：前端自动发现后端端口。如果需要，请使用\"发现后端\"按钮。",
+      
+      "NO_PROVIDERS_CONFIGURED": "未配置LLM提供商",
+      "CONFIGURE_API_KEYS": "请在后端配置API密钥以使用AI功能。",
+      "USE_KEY_MANAGER": "使用密钥管理器添加提供商，如OpenAI、Anthropic或其他。",
+      "FOUND_PROVIDERS": "找到 {count} 个已配置的LLM提供商：",
+      "CONFIGURE_DESIRED": "在The Gold Box设置中配置你所需的提供商。",
+      
+      "AI_RESPONSE": "AI响应",
+      "AI_ERROR": "错误",
+      "AI_TURN_ERROR": "错误：{error}",
+      "CHECK_CONNECTION": "请检查你的后端连接和设置。",
+      "AI_TIMEOUT": "AI响应超时"
+    },
+    
+    "ERRORS": {
+      "BACKEND_UNREACHABLE": "无法访问后端服务器",
+      "INVALID_API_KEY": "无效的API密钥",
+      "CONNECTION_FAILED": "连接到AI服务失败",
+      "RATE_LIMIT_EXCEEDED": "超出速率限制。请稍后再试。",
+      "SESSION_REQUIRED": "需要会话或会话已过期。请刷新页面。",
+      "CSRF_REQUIRED": "需要CSRF Token",
+      "CSRF_INVALID": "CSRF Token验证失败",
+      "SESSION_INVALID": "会话验证失败",
+      "SESSION_EXPIRED": "会话已过期",
+      "HTTP_ERROR": "HTTP {status}: {statusText}",
+      "REQUEST_FAILED": "请求失败：{error}",
+      "BACKEND_NOT_FOUND": "在任何端口上都未找到后端服务器",
+      "PORT_DISCOVERY_FAILED": "端口发现失败：{error}",
+      "SESSION_INITIALIZATION_FAILED": "初始化会话失败",
+      "CONNECTION_TEST_FAILED": "连接测试失败",
+      "REFRESH_FAILED": "会话刷新失败，连续失败 {failures} 次"
+    },
+    
+    "MESSAGES": {
+      "COLLECTING_CHAT": "正在收集最近的聊天消息作为AI上下文...",
+      "SENDING_TO_BACKEND": "正在将消息上下文发送到后端...",
+      "PROCESSING_RESPONSE": "正在处理AI响应...",
+      "RESPONSE_RECEIVED": "AI响应接收成功",
+      "ERROR_PROCESSING": "处理AI请求时出错：{error}",
+      "EXTENDING_SESSION": "正在尝试延长现有会话...",
+      "SESSION_EXTENDED": "会话延长成功",
+      "REFRESHING_SESSION": "正在刷新会话...",
+      "SESSION_REFRESHED": "会话刷新成功",
+      "CIRCUIT_BREAKER_OPEN": "由于重复失败，断路器已打开",
+      "CIRCUIT_BREAKER_RESET": "断路器已重置，允许刷新",
+      "VISIBILITY_HIDDEN": "标签页变为隐藏，调整刷新行为",
+      "VISIBILITY_VISIBLE": "标签页变为可见，检查会话健康状态",
+      "HEALTH_CHECK_PASSED": "标签页可见性检查时连接测试通过",
+      "HEALTH_CHECK_FAILED": "标签页可见性检查时连接测试失败，正在刷新会话"
+    },
+    
+    "ENDPOINTS": {
+      "HEALTH_CHECK": "正在测试后端健康状态...",
+      "SESSION_INIT": "正在初始化会话...",
+      "SIMPLE_CHAT": "正在发送简单聊天请求...",
+      "PROCESS_CHAT": "正在处理带有紧凑JSON的聊天...",
+      "ADMIN_COMMAND": "正在执行管理命令：{command}",
+      "AUTO_START": "正在获取自动启动说明..."
+    },
+    
+    "PROVIDERS": {
+      "OPENAI": "OpenAI兼容",
+      "ANTHROPIC": "Anthropic",
+      "OPENCODE": "OpenCode",
+      "NOVELAI": "NovelAI",
+      "CUSTOM": "自定义提供商",
+      "LOCAL_LLM": "本地LLM"
+    },
+    
+    "TIMESTAMP": {
+      "JUST_NOW": "刚刚",
+      "MINUTES_AGO": "{minutes} 分钟前",
+      "HOURS_AGO": "{hours} 小时前",
+      "SECONDS_AGO": "{seconds} 秒前"
+    }
+  }
+}

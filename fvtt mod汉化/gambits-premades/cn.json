@@ -1,0 +1,1406 @@
+
+  "GAMBITSPREMADES": {
+    "ChatMessages": {
+      "Common": {
+        "OptionAvailableSaveTrigger": "{actorName} 可因该豁免而触发 {itemProperName}。",
+        "ReactionAvailableAttackTrigger": "{actorName} 可因该攻击而反应触发 {itemProperName}。",
+        "ReactionAvailableRollTrigger": "{actorName} 可因该掷骰而反应触发 {itemProperName}。",
+        "ReactionAvailableSaveTrigger": "{actorName} 可因该豁免而反应触发 {itemProperName}。",
+        "ReactionAvailableSpellTrigger": "{actorName} 可因该法术而反应触发 {itemProperName}。"
+      },
+      "Automations": {
+        "ThirdPartyClassFeatures": {
+          "Witch": {
+            "WitchesHex": {
+              "HexReducedAttackHit": "该生物因诅咒而降低 {reduction} 点攻击检定， 但仍能命中目标。",
+              "HexReducedAttackMiss": "该生物因诅咒而降低 {reduction} 点攻击检定，并攻击失手。",
+              "SaveFailed": "该生物因诅咒而豁免失败。",
+              "SaveSucceeded": "该生物虽然遭受诅咒，但仍豁免成功。"
+            },
+            "CovenOfTheRoilingHearth": {
+              "SootSpiritAttackedHit": "该生物攻击了你的一个烟烬精魄并命中！你还剩 {sootSpiritsRemaining} 个烟烬精魄。",
+              "SootSpiritAttackedMiss": "该生物攻击了你的一个烟烬精魄但未命中！你还剩 {sootSpiritsRemaining} 个烟烬精魄。"
+            }
+          },
+          "Wizard": {
+            "Chronurgist": {
+              "ChronalShift": {
+                "AllySaveFailed": "你的盟友的时间被变幻了，但仍豁免失败。",
+                "AllySaveSucceeded": "你的盟友的时间被变幻了，并豁免成功。",
+                "AttackFailed": "该生物的时间被变幻了，并攻击失手。",
+                "AttackHitAnyway": "该生物的时间被变幻了，但仍攻击命中。",
+                "EnemySaveFailed": "你的敌人的时间被变幻了，并豁免失败。",
+                "EnemySaveSucceeded": "你的敌人的时间被变幻了，但仍豁免失败。"
+              }
+            }
+          }
+        },
+        "ThirdPartySpells": {
+          "ContagiousHealing": {
+            "NoAdditionalAlliesInRange": "10尺以内没有额外的友军，你的传染性治疗平息了。"
+          },
+          "DrafynsBaneOfExcellence": {
+            "Natural20CancelledAttack": "你的自然20掷骰被德莱芬的卓越之祸取消，你的攻击失手了。",
+            "Natural20CancelledSave": "你的自然20掷骰被德莱芬的卓越之祸取消，你的豁免失败了。"
+          },
+          "ShroomOfDoom": {
+            "MushroomCreatedOnBody": "该生物因诅咒蘑菇在身体上长出了 {mushroomCount} 朵蘑菇。",
+            "MushroomsCreatedOnBody": "该生物因诅咒蘑菇在身体上长出了 {mushroomCount} 朵蘑菇。"
+          }
+        },
+        "ClassFeatures": {
+          "Artificer": {
+            "FlashOfGenius": {
+              "UsedAddedSRoll": "{actorName} 使用了 {itemName} 并将 {intMod} 加入到 {targetName} 的掷骰中。"
+            }
+          },
+          "Bard": {
+            "CollegeOfLore": {
+              "CuttingWords": {
+                "CuttingWordsReducedAttackHit": "生物遭受惊人之语，攻击检定降低了 {reduction}，但仍然击中了目标。",
+                "CuttingWordsReducedAttackMiss": "生物遭受惊人之语，攻击检定降低了 {reduction，并攻击失手。",
+                "DamageReduced": "生物遭受惊人之语，伤害被降低了 {reduction}。",
+                "ReactionAvailable": "{actorName} 可因 {workflowType} 用反应触发 {itemProperName}。",
+                "SeemsNotBeEffectedBy": "目标似乎无法被你的 {itemProperName} 影响。"
+              }
+            },
+            "CollegeOfTragedy": {
+              "PoetryInMisery": {
+                "SoliloquizeOverRegain": "你在 {typeText} 面前独自沉思，并施展 {itemProperName} 恢复了一次诗人激励使用次数。"
+              },
+              "TaleOfHubris": {
+                "IncreaseCriticalThreshold": "由于目标的自然20掷骰，你使用了 {itemProperName} 降低了目标的受重击阈值。"
+              }
+            }
+          },
+          "Fighter": {
+            "ArcaneArcher": {
+              "BeguilingArrow": {
+                "TargetCharmedByAlly": "你使用欺诈矢，令目标被 {allyName} 魅惑。",
+                "TargetCharmedByYou": "{actorName} 使用了欺诈矢，目标被你所魅惑。但在你攻击它、对它造成伤害、或迫使它进行一次豁免时，此魅惑状态将提前结束。"
+              },
+              "GraspingArrow": {
+                "RemoveVinesFail": "你无法用动作从目标身上移除藤蔓。",
+                "RemoveVinesSuccess": "你成功使用动作移除了藤蔓。"
+              }
+            },
+            "Indomitable": {
+              "AutoSuccess": "{actorName} 使用了不屈并自动成功于豁免。",
+              "Success": "{actorName} 使用了不屈并成功于豁免。",
+              "Failure": "{actorName} 使用了不屈，但仍然失败于豁免。"
+            }
+          },
+          "Interception": {
+            "ReduceDamageTakenBy": "你使用了 {itemProperName} 减少了 {targetName} 受到的伤害 {reduction} 点。"
+          },
+          "Paladin": {
+            "DivineSense": {
+              "Celestials": "天族",
+              "Fiends": "邪魔",
+              "Found": "找到",
+              "TotalSensed": "总感知数量",
+              "Type": "类型",
+              "Undead": "亡灵"
+            }
+          },
+          "Protection": {
+            "AttackHitAnyway": "你使用了守护战斗风格，但对方仍然命中了 {targetName}。",
+            "FightingStyleCause": "你使用了守护战斗风格，并使对方攻击 {targetName} 失手。",
+            "TurnAdvantageToStraightRollHit": "你使用了守护战斗风格令对方优劣相抵，但对方仍然命中了 {targetName}。",
+            "TurnAdvantageToStraightRollMiss": "你使用了守护战斗风格令对方优劣相抵，并使对方攻击 {targetName} 失手。"
+          },
+          "Ranger": {
+            "MonsterSlayerConclave": {
+              "HuntersSense": {
+                "FollowingDamageTraits": "{targetName} 具有以下伤害特性：",
+                "Immunities": "- 免疫：",
+                "Resistances": "- 抗性：",
+                "Vulnerabilities": "- 易伤："
+              },
+              "MagicUsersNemesis": {
+                "SaveFailed": "目标未能通过豁免，被魔法使的克星阻止传送。",
+                "SaveSucceeded": "目标通过了豁免，未被魔法使的克星影响。"
+              }
+            }
+          },
+          "Rogue": {
+            "StrokeOfLuck": {
+              "ChangedAbilityCheck": "你使用幸运一击将你的属性检定结果改为 {newTotal}。",
+              "ChangedSkillCheck": "你使用幸运一击将你的技能检定结果改为 {newTotal}。",
+              "ReactionAvailableSaveTrigger": "{actorName} 因该豁免有机会触发 {itemName} 反应。"
+            }
+          },
+          "Sorcerer": {
+            "ClockworkSoul": {
+              "RestoreBalance": {
+                "AllyDisadvantageRemovedAttackHit": "你的盟友被移除了劣势，并成功掷出 {attackResult} 而命中。",
+                "AllyDisadvantageRemovedAttackMiss": "Y你的盟友被移除了劣势，但仍掷出 {attackResult} 而未命中。",
+                "AllyDisadvantageRemovedCriticalHit": "你的盟友被移除了劣势，并成功重击。",
+                "AllyDisadvantageRemovedCriticalMiss": "你的盟友被移除了劣势，但仍掷出大失败。",
+                "AllyDisadvantageRemovedSaveFailure": "你的盟友被移除了劣势，但仍以 {saveResult} 未能通过检定。",
+                "AllyDisadvantageRemovedSaveSuccess": "你的盟友被移除了劣势，并以 {saveResult} 成功通过检定。",
+                "EnemyAdvantageRemovedAttackHit": "你的敌人被移除了优势，但仍以 {attackResult} 而命中。",
+                "EnemyAdvantageRemovedAttackMiss": "你的敌人被移除了优势，并以 {attackResult} 而未命中。",
+                "EnemyAdvantageRemovedCriticalHit": "你的敌人被移除了优势，但仍掷出重击。 ",
+                "EnemyAdvantageRemovedCriticalMiss": "你的敌人被移除了优势，掷出大失败。",
+                "EnemyAdvantageRemovedSaveFailure": "你的敌人被移除了优势，并以 {saveResult} 未能通过检定。",
+                "EnemyAdvantageRemovedSaveSuccess": "你的敌人被移除了优势，但仍以 {saveResult} 成功通过检定。"
+              }
+            }
+          },
+          "Wizard": {
+            "SchoolOfDivination": {
+              "Portent": {
+                "PortentApplied": "你使用了 {portentLabel} 并将掷骰结果改为 {roll}。",
+                "PortentRoll": "- 预言骰 {i}："
+              }
+            },
+            "SchoolOfEnchantment": {
+              "InstinctiveCharm": {
+                "OptionAvailableAttackTrigger": "{actorName} 可因该攻击有机会触发 {itemProperName} 反应。"
+              }
+            }
+          }
+        },
+        "GenericFeatures": {
+          "OpportunityAttack": {
+            "ReactionAvailableOpportunityAttack": "{actorName} 有机会触发一次借机攻击。"
+          }
+        },
+        "Items": {
+          "Caltrops": {
+            "PiercingDamageTaken": "{actorName} 受到了 {damage} 点穿刺伤害。"
+          },
+          "RodOfThePactKeeper": {
+            "SpellSlotRecovered": "已恢复法术位！你现在剩余 {spellLevelNew} 个契约法术位。"
+          },
+          "StaffOfTheRootedHills": {
+            "RestrainedBy": "该生物被根深蒂固法杖束缚。"
+          }
+        },
+        "MonsterFeatures": {
+          "BurstOfIngenuity": {
+            "AddedBonusToRollSaveAlreadySucceeded": "你给 {allyName} 的掷骰结果+2但他们已经成功通过豁免了。",
+            "AddedBonusToRollSaveStillFailed": "你给 {allyName} 的掷骰结果+2但他们仍未能通过豁免。",
+            "AddedBonusToRollSaveSucceeded": "你给 {allyName} 的掷骰结果+2，使他们成功通过豁免。"
+          },
+          "DreadCounterspell": {
+            "DreadCounterspellAutoSuccess": "该生物被恐惧反制了，因为你对一个4环或以下的法术使用了 {itemProperName} 。",
+            "DreadCounterspellFailed": "该生物未被恐惧反制，你在 {skillFlavor} 上的能力检定掷出了 {skillTotal} 但需要 {spellThreshold}。{spellPenetrationChat}",
+            "DreadCounterspellSuccess": "该生物被恐惧反制了，你在 {skillFlavor} 上的能力检定掷出了 {skillTotal}。"
+          }
+        },
+        "Spells": {
+          "Counterspell": {
+            "CounterspellAutoSuccess": "该生物被法术反制，因为你以同环或更高环位施展了 {itemProperName}。",
+            "CounterspellFailed": "该生物未被法术反制，你在 {skillFlavor} 上的能力检定掷出了 {skillTotal} {abjurationChat} 但需要 {spellThreshold}。{spellPenetrationChat}",
+            "CounterspellSuccess": "该生物被法术反制，你在 {skillFlavor} 上的能力检定掷出了 {skillTotal}{abjurationChat}。"
+          },
+          "DissonantWhispers": {
+            "TargetAutoSaveSuccess": "目标耳聋因此自动成功于豁免。"
+          },
+          "Enervation": {
+            "DealDamageHeal": "你对目标造成了 {damageTotal} 点伤害，并使用汲能术治疗多达 {healAmount} 点生命。"
+          },
+          "Identify": {
+            "Identify": "鉴定术 {timeToCast}",
+            "PromptRitualCast": "你要以仪式施展鉴定术吗？"
+          },
+          "Infestation": {
+            "MovementRollMovesUsingUp": "{targetName} 的随机方向掷骰结果为  {directionResult}： {targetName} 向 {directionContent} 移动多达5尺。这不会引起借机攻击。"
+          },
+          "KineticJaunt": {
+            "EndTurnAnotherCreaturesSpace": "你在其它生物的空间中结束了回合并受到 {damageTotal} 点力场伤害，并被推挤到你最后所经过的未占据空间里。"
+          },
+          "SilveryBarbs": {
+            "AttackFailed": "该生物被银光锐语影响，攻击失手。",
+            "AttackHitAnyway": "该生物被银光锐语影响，但仍攻击命中。",
+            "FailedSaveCheck": "该生物被银光锐语影响，并在 {itemName} 的 {rollType} 中失败。",
+            "Succeeded": "该生物被银光锐语影响，但仍在 {itemName} 的 {rollType} 中成功。"
+          },
+          "StinkingCloud": {
+            "Content": "你被剧毒瓦斯窒息，失去本回合动作，只能在原地蹒跚呕吐。"
+          },
+          "TemporalShunt": {
+            "ReactionAvailableAttackTrigger": "{actorName} 可因法术或攻击而有机会触发 {itemProperName} 反应。",
+            "TargetRollInterrupted": "目标的 {workflowType} 掷骰成功被干扰，消失在时间之中。"
+          },
+          "Web": {
+            "Escape": "你成功逃脱了 {itemName}！",
+            "UnableEscapeTurn": "你本回合无法逃脱 {itemName} 。"
+          },
+          "Confusion": {
+            "ActNormally": "该生物能正常行动。",
+            "MovementRoll": "你的随机移动方向掷骰为 {rollResult} 并向 {direction} 移动：你本回合不能使用动作。",
+            "NoMoveOrActions": "你本回合无法移动也无法使用动作。",
+            "RollForIs": "{actorName} 的困惑术掷骰结果为 {result}：",
+            "MustMoveAndMeleeAttack": "你必须向 {targetName} 移动并对其发动一次近战攻击。",
+            "NoAction": "该生物本回合不做任何事情。"
+          },
+          "BlackTentacles": {
+            "EscapeFailed": "你本回合无法逃脱黑触手。",
+            "EscapeSucceeded": "你成功地逃离了黑触手！"
+          },
+          "Command": {
+            "MustNow": "{actorName} 现在必须 {wordInput}。"
+          }
+        }
+      },
+      "Automations2024": {
+        "GenericFeatures": {
+          "MageSlayer2024": {
+            "SaveSucceeded": "{actorName} 使用了 {itemProperName} 并在豁免中成功。"
+          }
+        },
+        "Spells": {
+          "Counterspell2024": {
+            "CounterspellFailed": "该生物通过了豁免，并未被法术反制。",
+            "CounterspellSuccess": "该生物未能通过豁免，被法术反制。"
+          },
+          "StinkingCloud2024": {
+            "Content": "你被剧毒瓦斯窒息，失去本回合动作与附赠动作，只能在原地蹒跚呕吐。"
+          }
+        }
+      },
+      "Utils": {
+        "Helpers": {
+          "CastRitually": "{actorName} 以仪式施展 {itemName}。",
+          "Per": "每 {restModeName}",
+          "Remaining": "你还剩 {remaining} 次使用次数。",
+          "UsesRemaining": "你还剩 {remaining} 次使用次数。"
+        }
+      }
+    },
+    "DAE": {
+      "Flags": {
+        "OADisadvantage": {
+          "Description": "对此token发动的借机攻击具有劣势。",
+          "Name": "借机攻击劣势"
+        },
+        "OADisadvantageSource": {
+          "Description": "该token发动的借机攻击具有劣势。",
+          "Name": "借机攻击来源劣势"
+        },
+        "OAImmunity": {
+          "Description": "令token免受借机攻击。",
+          "Name": "借机攻击免疫"
+        },
+        "OASuppression": {
+          "Description": "令token无法做出借机攻击。",
+          "Name": "压制借机攻击"
+        }
+      }
+    },
+    "Debug": {
+      "Automations": {
+        "Spells": {
+          "Confusion": {
+            "EffectNotFound": "未在目标角色身上找到困惑术效果。"
+          }
+        }
+      }
+    },
+    "Dialogs": {
+      "Common": {
+        "Advantage": "优势：",
+        "Cast": "施展",
+        "Close": "关闭",
+        "Daily": "每日",
+        "DamageLabel": "伤害：",
+        "EnemyHitsAlly": "一名敌人命中了你的盟友。",
+        "EnemyHitsAllyWithAttackTotal": "一名敌人以 {attackTotal} 命中了你的盟友。",
+        "FavoriteThisOption": "将此选项作为最爱？",
+        "FreeUse": "免费 {itemName} 使用",
+        "LongRest": "长休",
+        "No": "否",
+        "NoValidAlliesInRange": "距离内无有效盟友。",
+        "NoValidEnemiesInRange": "距离内无有效敌人。",
+        "Pause": "暂停",
+        "PointsAbbrev": "点",
+        "PromptAutoSaveSuccess": "你是否要使用 {itemProperName} 将豁免改为成功？",
+        "PromptRerollSave": "你是否要使用 {itemProperName} 重掷豁免？",
+        "Resume": "恢复",
+        "ShortRest": "短休",
+        "Target": "目标：",
+        "WaitingForSelection": "等待 {actorName} 选择 | {itemName}",
+        "Weapon": "武器：",
+        "Yes": "是"
+      },
+      "Automations": {
+        "ThirdPartyClassFeatures": {
+          "Savant": {
+            "CalculatedFlourish": {
+              "Prompts": {
+                "UseYourReaction": {
+                  "Default": "你是否要用反应攻击？这会由于反击战技而消耗你一枚卓越骰。从你以下武器中选择。"
+                }
+              }
+            }
+          },
+          "Witch": {
+            "CovenOfTheRoilingHearth": {
+              "RainOfCinders": {
+                "AttackedInitiate": "{targetName} 被攻击了，你是否要施展 {itemProperName} 使用一个炉烬精魄干扰这次攻击？"
+              }
+            },
+            "WitchesHex": {
+              "Prompts": {
+                "UseYourReaction": {
+                  "ReduceAttack": "你是否要用反应施展 {itemName} 降低敌人的攻击检定掷骰？",
+                  "ReduceSave": "你是否要用反应施展 {itemName} 降低敌人的豁免检定掷骰？从下列敌人中选择目标："
+                }
+              }
+            }
+          },
+          "Wizard": {
+            "Chronurgist": {
+              "ChronalShift": {
+                "AllyTarget": "盟友目标：",
+                "Details": {
+                  "AlliesFailed": "盟友豁免失败了。从下列盟友中选择一名重掷。",
+                  "EnemiesSucceeded": "敌人豁免成功了。从下列敌人中选择一名重掷。",
+                  "EnemiesSucceededAlliesFailed": "敌人豁免成功了且盟友豁免失败了。从下列敌人中选择一名重掷。如果两个都选择了，那么重掷将会施加给敌人。"
+                },
+                "EnemyTarget": "敌方目标：",
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Initiate": "你是否要用反应发动 {itemName}？ {details}"
+                  }
+                },
+                "SelectAlly": "-- 选择盟友 --",
+                "SelectEnemy": "-- 选择敌人 --"
+              }
+            }
+          }
+        },
+        "ThirdPartySpells": {
+          "GrimSiphon": {
+            "Heal": "治疗",
+            "HealLabel": "治疗：",
+            "SelectHealingTarget": "你想要治疗谁？",
+            "Windowtitle": "阴翳虹吸治疗"
+          },
+          "PowerWordRebound": {
+            "HitByAttack": "{targetName} 被攻击命中并处于半血以下，你是否要使用 {itemProperName} 反射伤害？"
+          },
+          "StormMote": {
+            "AssignMotes": "安排你拥有的 {numMotes} 个微粒：",
+            "Cancel": "取消",
+            "Confirm": "确认",
+            "Windowtitle": "安排微粒"
+          }
+        },
+        "ClassFeatures": {
+          "Artificer": {
+            "FlashOfGenius": {
+              "For": "对 {targetName}？",
+              "ForYourself": "对你自身？",
+              "Prompts": {
+                "UseYourReaction": {
+                  "Default": "你是否要用反应发动 {itemName} ？{targetPrompt}"
+                }
+              },
+              "TargetPrompt": {
+                "ChooseAlly": "对盟友发动？从下方列表选择。",
+                "ChooseSelfOrAlly": "对自身或盟友发动？从下方列表选择。"
+              }
+            }
+          },
+          "Bard": {
+            "CollegeOfLore": {
+              "CuttingWords": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "你是否要对这次 {rollType} 掷骰用反应发动 {itemName}？",
+                    "WithDetails": "{details}你是否要对这次 {rollType} 掷骰用反应发动 {itemName}？"
+                  }
+                },
+                "Pts": "- {points} 点",
+                "TargetRolledAttack": "目标掷出了 {attackTotal} 点攻击检定。 "
+              }
+            },
+            "CollegeOfTragedy": {
+              "PoetryInMisery": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "你是否要对这次大失败 {rollType} 掷骰用反应发动 {itemName}？"
+                  }
+                }
+              },
+              "TaleOfHubris": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "你是否要对这次大成功 {rollType} 掷骰用反应发动 {itemName}？"
+                  }
+                }
+              }
+            }
+          },
+          "Druid": {
+            "CircleOfStars": {
+              "StarMap": {
+                "Prompt": "你是否要使用星图来发动一次免费的 {itemName}？它将以基础环级施展。你还有 {freeUses} 次数剩余。"
+              }
+            }
+          },
+          "Fighter": {
+            "ArcaneArcher": {
+              "BeguilingArrow": {
+                "SelectAllyForCharm": "选择你要使目标被哪个盟友魅惑。"
+              }
+            },
+            "BattleMaster": {
+              "Riposte": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "你是否要用反应攻击？这会由于反击战技而消耗你一枚卓越骰。从你以下武器中选择。"
+                  }
+                }
+              }
+            }
+          },
+          "Interception": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要对这次 {rollType} 掷骰用反应发动 {itemName}？"
+              }
+            },
+            "PtsOf": "{points} 点"
+          },
+          "Protection": {
+            "Prompt": "你是否要使用",
+            "ToDisadvantageTheAttackAgainst": "对此次攻击施加劣势以保护"
+          },
+          "Ranger": {
+            "MonsterSlayerConclave": {
+              "MagicUsersNemesis": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "你是否要用反应发动 {itemName}？"
+                  }
+                }
+              }
+            }
+          },
+          "Rogue": {
+            "StrokeOfLuck": {
+              "Prompt": "你是否要使用幸运一击来将你的能力检定掷骰改为20？",
+              "VeMissedAttack": "你的攻击失手了，你是否要使用幸运一击来改为成功？"
+            }
+          },
+          "Sorcerer": {
+            "ClockworkSoul": {
+              "RestoreBalance": {
+                "Ally": "盟友：",
+                "Enemy": "敌人：",
+                "OnchangeResetallyselect": "onchange=\"resetAllySelect()\">",
+                "OnchangeResetenemyselect": "onchange=\"resetEnemySelect()\">",
+                "Prompts": {
+                  "UseYourReaction": {
+                    "SelectTarget": "你是否要用反应发动 {itemName}？ {selectionHint}",
+                    "TargetDisposition": "你是否要用反应发动 {itemName} {targetHint}"
+                  }
+                },
+                "SelectAlly": "选择盟友：",
+                "SelectEnemy": "选择敌人：",
+                "SelectionHint": {
+                  "ChooseAlly": "从下方列表中选择一名盟友移除劣势。",
+                  "ChooseAllyOrEnemy": "从下方列表中选择一名盟友移除劣势，或选择一名敌人移除优势。",
+                  "ChooseEnemy": "选择一名敌人移除优势。"
+                },
+                "TargetHint": {
+                  "RemoveAdvantageFromEnemy": "移除你敌人身上的优势吗？",
+                  "RemoveDisadvantageFromAlly": "移除你盟友身上的劣势吗？"
+                }
+              }
+            }
+          },
+          "Warlock": {
+            "GreatOldOne": {
+              "EntropicWard": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "你是否要使用反应对此次针对你的攻击施加劣势，并有机会对攻击者获得优势？"
+                  }
+                }
+              }
+            },
+            "Hexblade": {
+              "ArmorOfHexes": {
+                "Prompt": "你是否要使用巫咒盔甲来试图避免此次攻击？"
+              }
+            }
+          },
+          "Wizard": {
+            "SchoolOfDivination": {
+              "Portent": {
+                "SelectPortentRoll": "你要使用哪个预言骰？",
+                "Windowtitle": "选择预言骰"
+              }
+            },
+            "SchoolOfEnchantment": {
+              "InstinctiveCharm": {
+                "ForcedSelectNew": "{itemProperName} 迫使你选择一个新的攻击目标。从下方列表中选择。",
+                "Prompt": "你是否要使用 {itemProperName} 来尝试迫使攻击者转向一个别的的目标？"
+              }
+            }
+          },
+          "Barbarian": {
+            "RecklessAttack": {
+              "Prompts": {
+                "UseRecklessAttack": "你本回合要使用鲁莽攻击吗？"
+              }
+            }
+          }
+        },
+        "GenericFeatures": {
+          "GiftOfTheGemDragon": {
+            "Charisma": "魅力",
+            "Damaged": "你被伤害了，你是否要使用反应施展",
+            "Intelligence": "智力",
+            "PromptDamageAndPush": "以伤害并推离攻击者？",
+            "SelectAbilityScore": "你以宝石龙赋礼提升的属性值是哪种？",
+            "TelekineticReprisal": "念力报复",
+            "Windowtitle": "宝石龙赋礼能力",
+            "Wisdom": "感知"
+          },
+          "MageSlayer": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用反应以巫师杀手攻击？从你的下列武器中选择。"
+              }
+            }
+          },
+          "OpportunityAttack": {
+            "BraceHint": " 这将使用你的一枚卓越骰来触发战技警戒。",
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用你的反应来攻击？{warCasterHint}{braceHint}"
+              }
+            },
+            "Title": "借机攻击",
+            "TitleBrace": "战技：警戒借机攻击",
+            "TitleDeadlyReach": "死亡触及借机攻击",
+            "TitlePolearm": "长柄武器借机攻击",
+            "WarCasterHint": "当使用战地施法者来施展法术时，引发借机攻击的生物必须为法术的唯一目标。"
+          },
+          "Sentinel": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用反应以哨兵攻击？从你的下列武器中选择。"
+              }
+            }
+          }
+        },
+        "Items": {
+          "AmuletOfTheDevout": {
+            "Prompt": "你是否要恢复一次引导神力使用次数？"
+          },
+          "BallBearings": {
+            "ConfirmHalfSpeed": "{actorName} 正通过滚珠，他们是以半速前进的吗？"
+          },
+          "BootsOfSpeed": {
+            "Prompt": "你是否要终止速度之靴的效应？",
+            "Windowtitle": "速度之靴"
+          },
+          "Caltrops": {
+            "ConfirmHalfSpeed": "{actorName} 正通过铁蒺藜，他们是以半速前进的吗？"
+          },
+          "RodOfThePactKeeper": {
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "你是否要使用动作来恢复一个法术位？"
+              }
+            }
+          },
+          "StaffOfWithering": {
+            "Prompt": "你是否要使用1点充能来造成额外伤害，并有机会对目标施加劣势？你还有",
+            "Remaining": "{chargesText} 点充能剩余。"
+          }
+        },
+        "MonsterFeatures": {
+          "BurstOfIngenuity": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用反应施展 {itemName} 并对豁免结果+2？从下方列表中选择盟友。"
+              }
+            }
+          },
+          "DreadCounterspell": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用反应发动 {itemName}？"
+              }
+            }
+          },
+          "LegendaryResistance": {
+            "PromptUseLegendaryResistance": "{actorName} 豁免失败了。你是否要使用 {itemName} 改为成功？"
+          }
+        },
+        "Spells": {
+          "BlackTentacles": {
+            "Dexterity": "敏捷",
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "你是否要使用你的动作进行一次属性检定来逃脱黑触手？"
+              }
+            },
+            "Strength": "力量"
+          },
+          "Counterspell": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用反应来 {itemName}？"
+              }
+            },
+            "SubtleSpellRemaining": "是否使用精妙法术？ | {pointsRemaining} {pointsLabel} 剩余。"
+          },
+          "Enervation": {
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "你本回合是否要使用你的动作通过汲能术对你的目标造成4d8点暗蚀伤害？"
+              }
+            }
+          },
+          "Entangle": {
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "你是否要用你的动作进行一次力量属性检定以逃脱束缚？"
+              }
+            }
+          },
+          "FizbansPlatinumShield": {
+            "PromptSelectTarget": "你要将费资本铂金盾移向谁？"
+          },
+          "FortunesFavor": {
+            "PromptRerollAttackRoll": "使用 {itemName} 以重掷攻击的D20骰：",
+            "ReplaceRoll": "把 {oldRoll} 换成 {newRoll} 吗？"
+          },
+          "HellishRebuke": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要用反应对伤害你的生物发动炼狱叱喝？"
+              }
+            }
+          },
+          "Identify": {
+            "Level": "{levelWithOrdinal} 等级 ({spellSlot})",
+            "WindowTitle": "鉴定物品",
+            "WindowTitleRitual": "以仪式鉴定物品",
+            "Windowtitle": "鉴定术施法方式"
+          },
+          "PowerWordHeal": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要用反应从倒地状态起身？"
+              }
+            }
+          },
+          "SilveryBarbs": {
+            "Prompts": {
+              "UseYourReaction": {
+                "AfterAttack": "你是否要用反应施展 {itemName}？ {triggerDetails} 从下方列表选择一名盟友给予优势。",
+                "AfterSave": {
+                  "Multiple": "你是否要用反应施展 {itemName}？敌人豁免成功了。从下方列表选择一名敌人和一名盟友分别给予劣势与优势。",
+                  "Single": "你是否要用反应施展 {itemName}？敌人豁免成功了。从下方列表选择一名敌人和一名盟友分别给予劣势与优势。"
+                }
+              }
+            }
+          },
+          "TemporalShunt": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要用反应使用 {itemName}？"
+              }
+            },
+            "SelectAdditionalTargets": "你想要对哪些额外目标施加 {itemProperName} 的影响？你可以从下方列表选择多达 {numTargets} 个额外 {targetWord} 目标。"
+          },
+          "ViciousMockery": {
+            "WhatDoYouSay": "你想要说什么？",
+            "Windowtitle": "🗣恶言相加😜️"
+          },
+          "Web": {
+            "Prompts": {
+              "UseYourAction": {
+                "AthleticsCheck": "你是否要用你的动作来进行一次运动检定以逃脱 {itemName}？",
+                "StrengthCheck": "你是否要用你的动作来进行一次力量检定以逃脱 {itemName}？"
+              }
+            }
+          },
+          "ZephyrStrike": {
+            "Prompt": "你是否要使用西风打击对此次攻击施加优势，并在你下个回合结束之前提升移动速度？",
+            "Windowtitle": "西风打击"
+          },
+          "Command": {
+            "WindowTitle": "🗣命令术🗣",
+            "Prompts": {
+              "SelectCommand": "你想命令什么？"
+            }
+          }
+        }
+      },
+      "Automations2024": {
+        "ClassFeatures": {
+          "Sorcerer": {
+            "DraconicSorcery": {
+              "ElementalAffinity2024": {
+                "SelectEnemyForBonusDamage": "从下方列表选择将从你的元素亲合中受到额外 {damageType} 伤害的敌人："
+              }
+            }
+          }
+        },
+        "GenericFeatures": {
+          "Sentinel2024": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用反应以哨兵攻击？从你的下列武器中选择。"
+              }
+            }
+          },
+          "ShieldMaster2024": {
+            "Prompt": "你是否要使用盾击，迫使目标进行豁免检定，以将其推开（{pushRangeText}）尺或使其倒地？",
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用你的反应动作，在豁免成功时通过介入盾牌规避伤害？"
+              }
+            },
+            "Prone": "倒地",
+            "Push": "击退"
+          }
+        },
+        "RaceFeatures": {
+          "FiresBurn2024": {
+            "Prompt": "你是否要使用{itemName}造成额外伤害？"
+          },
+          "FrostsChill2024": {
+            "Prompt": "你是否要使用{itemName}造成额外伤害并降低该生物的移动速度？"
+          },
+          "HillsTumble2024": {
+            "Prompt": "你是否要使用{itemName}使该生物倒地？"
+          },
+          "StormsThunder2024": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用你的反应动作，通过{itemName}对造成伤害的生物进行反击？"
+              }
+            }
+          }
+        },
+        "Spells": {
+          "BlackTentacles2024": {
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "你是否要使用你的动作进行运动技能检定，尝试挣脱黑触手的束缚？"
+              }
+            }
+          },
+          "Command2024": {
+            "Approach": "过来",
+            "Drop": "放下",
+            "Flee": "走开",
+            "Grovel": "趴下",
+            "Halt": "立定"
+          },
+          "Counterspell2024": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用你的反应动作来施放{itemName}？"
+              }
+            }
+          },
+          "Entangle2024": {
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "你是否要使用你的动作进行运动技能检定，尝试挣脱束缚？"
+              }
+            }
+          },
+          "PowerWordHeal2024": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "你是否要使用你的反应动作从倒地状态起身？"
+              }
+            }
+          }
+        }
+      },
+      "Utils": {
+        "Helpers": {
+          "PromptFreeUse": "你是否要免费使用一次 {itemName}？它将以基础环级施展。{remainingText}",
+          "PromptRitualCast": "你是否要以仪式施展 {itemName} ？这将延长其施法时间 ({activationCost} {activationType}) 10分钟。",
+          "RitualUse": "仪式施展 {itemName} ",
+          "ThisGrantsOneFreeUse": "这允许每 {restModeText} 免费使用一次。"
+        },
+        "LightActions": {
+          "Dim": "变暗",
+          "Extinguish": "熄灭",
+          "Light": "点亮",
+          "PromptAction": "你要用你的的 {dialogTitle} 做什么？",
+          "Throw": "投掷"
+        }
+      }
+    },
+    "Directions": {
+      "East": "东",
+      "North": "北",
+      "Northeast": "东北",
+      "Northwest": "西北",
+      "South": "南",
+      "Southeast": "东南",
+      "Southwest": "西南",
+      "West": "西"
+    },
+    "Effects": {
+      "Utils": {
+        "Helpers": {
+          "LongRestChargeUsed": "{itemName}：长休充能已使用"
+        }
+      }
+    },
+    "Menus": {
+      "ClassFeatures": {
+        "Hint": "语出惊人、拦截、惨中取意等",
+        "Label": "启用职业特性",
+        "Name": "职业特性"
+      },
+      "GeneralSettings": {
+        "Hint": "镜像对话框、鉴定限制等",
+        "Label": "通用设置",
+        "Name": "通用设置"
+      },
+      "GenericFeatures": {
+        "Hint": "借机攻击、哨兵等",
+        "Label": "启用通用特性",
+        "Name": "通用特性"
+      },
+      "MonsterFeatures": {
+        "Hint": "怪物特性",
+        "Label": "启用怪物特性",
+        "Name": "怪物特性"
+      },
+      "PatreonSupport": {
+        "Hint": "如果你愿意支持我 Gambit！订阅有助于支持本模块及其他免费模块的开发，还能获得我的高级模块 Gambit's FXMaster+、Gambit's Asset Previewer 和 Gambit's Image Viewer！",
+        "Label": "Gambit's Lounge",
+        "Name": "Patreon 支持"
+      },
+      "Spells": {
+        "Hint": "法术反制、银光锐语等",
+        "Label": "启用法术",
+        "Name": "法术"
+      }
+    },
+    "Notifications": {
+      "ThirdPartyClassFeatures": {
+        "Witch": {
+          "WitchesHex": {
+            "MustScale": "你必须在这个角色身上有一个名为 'kp-witch' 的比例值。"
+          }
+        }
+      },
+      "Common": {
+        "RequiresActiveCombat": "{effectName} 必须在激活的战斗中生效。",
+        "ThisEffect": "这个效果"
+      },
+      "Automations2024": {
+        "Spells": {
+          "CloudOfDaggers2024": {
+            "MoveFeatureItemCreated": "特性物品 \"{name} - 移动\" 已创建。使用该物品来在需要的时候移动你的 {name} 。"
+          },
+          "PowerWordStun2024": {
+            "TargetMoreThan150": "目标的HP高于150，并未被震慑，但其速度将在施法者的下个回合开始之前降为0。"
+          },
+          "Sleep2024": {
+            "TargetImmuneToSleepOrExhaustion": "该生物对魔法睡眠和/或力竭免疫。"
+          }
+        }
+      },
+      "ClassFeatures": {
+        "Bard": {
+          "CollegeOfLore": {
+            "CuttingWords": {
+              "MissingBardicInspirationScale": "你必须在该角色身上有一个名为 'bardic-inspiration' or 'inspiration' 的吟游诗人或大使职业的比例值。"
+            }
+          }
+        },
+        "Druid": {
+          "CircleOfStars": {
+            "StarMap": {
+              "NoSpellSlotConsumed": "你使用星图发动了一次 {name} ，并未消耗法术位。"
+            }
+          }
+        },
+        "Fighter": {
+          "ArcaneArcher": {
+            "GraspingArrow": {
+              "MissingDependency": "你要安装 Jinkers Animated Art Pack 才能使用该自动化。"
+            }
+          }
+        },
+        "Paladin": {
+          "OathOfConquest": {
+            "ScornfulRebuke": {
+              "Incapacitated": "{name} 失能了，轻蔑呵斥失败。"
+            }
+          }
+        },
+        "Ranger": {
+          "MonsterSlayerConclave": {
+            "HuntersSense": {
+              "TargetSingleCreature": "猎手感知：请只选择一个生物，再试一次。"
+            }
+          }
+        },
+        "Wizard": {
+          "SchoolOfEnchantment": {
+            "InstinctiveCharm": {
+              "CharmImmunity": "该生物未能被影响，因为它们免疫魅惑。"
+            }
+          }
+        }
+      },
+      "GenericFeatures": {
+        "OpportunityAttack": {
+          "NoValidOptions": "未找到可用的近战能力，取消创建 {name} 的借机攻击选项。"
+        }
+      },
+      "Helpers": {
+        "CanOnlySelectUp": "你只能选择最多 {numTargets} 个目标。",
+        "CastOptionNoSlotConsumed": "你使用了你的 {restModeName} 施展选项来发动 {name} ，并未消耗法术位。它将以基础环级施展。"
+      },
+      "Hooks": {
+        "Msg": "{message}"
+      },
+      "Items": {
+        "AmuletOfTheDevout": {
+          "NoAmuletCharges": "你的虔信护符没有充能可用。",
+          "NoChannelDivinityCharges": "你没有引导神力的充能可恢复。",
+          "Recovered": "已恢复引导神力充能！"
+        },
+        "Candle": {
+          "DoNotAnyS": "你不剩任何 {animType} 了。",
+          "MissingDependency": "Active Token Effects模组必须被激活"
+        },
+        "Matalotok": {
+          "TargetAtLeastOneToken": "请选中至少1个token。"
+        },
+        "RodOfThePactKeeper": {
+          "NotAvailable": "你没有合适的法术位可恢复。"
+        },
+        "StaffOfWithering": {
+          "NotAvailable": "你没有凋零法杖的可用充能。"
+        },
+        "Torch": {
+          "DoNotAnyEs": "你不剩任何 {animType}了。"
+        }
+      },
+      "Spells": {
+        "DimensionDoor": {
+          "CanOnlySelectOne": "你只能选择一个目标和你一起传送。",
+          "MissingDependency": "你必须安装 Jack Kerouac's Animated Spell Effects - Cartoon 模组才能使用该自动化。",
+          "MustBeWithin5Feet": "你必须位于你想传送的生物身边5尺。",
+          "TooLarge": "你的目标太大了无法与你一起传送。"
+        },
+        "EnemiesAbound": {
+          "TargetImmuneCannotBeFrightened": "{name} 免疫举目皆敌，因为它们免疫恐慌。"
+        },
+        "HideousLaughter": {
+          "TargetNotAffectedIntTooLow": "这个生物未被影响；它的智力值过低。"
+        },
+        "Identify": {
+          "Identified": "鉴定的 {name}",
+          "NoSpellSlots": "你没有可用的法术位",
+          "NoUnidentifiedItems": "你没有未鉴定物品",
+          "RitualOnly": "仪式施法：你只能通过仪式施展鉴定术。"
+        },
+        "IntellectFortress": {
+          "SelectedMoreTokensThan": "你选择了多于法术等级允许的token，请重新选择。",
+          "TargetsNotWithinRange": "你选择的两个token不在互相30尺范围内，请重新选择。",
+          "UnableSee": "你无法看到看到选择的生物，请重新选择。"
+        },
+        "MentalPrison": {
+          "TargetsImmune": "目标免疫魅惑"
+        },
+        "PowerWordHeal": {
+          "TargetUndead": "目标为构装或亡灵生物，未被影响。"
+        },
+        "PowerWordPain": {
+          "TargetMoreThan100": "目标HP高于100，未被魅惑。",
+          "UnableSave": "你无法进行豁免，你的法术失败并被浪费。"
+        },
+        "PowerWordStun": {
+          "TargetMoreThan150": "目标的HP高于150。"
+        },
+        "ViciousMockery": {
+          "TargetCannotHearYou": "该生物未被影响，因为它们听不见你说话。"
+        }
+      }
+    },
+    "Settings": {
+      "BurstOfIngenuityTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "灵光乍现超时"
+      },
+      "ChronalShiftTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "时间变换超时"
+      },
+      "CounterspellTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "法术反制超时"
+      },
+      "CuttingWordsTimeout": {
+        "Hint": "输入自定义秒数，默认值为30秒。",
+        "Name": "语出惊人超时"
+      },
+      "EnableCounterspell": {
+        "Hint": "启用后，为拥有法术反制的用户显示对话框，并在使用时自动应用法术反制。",
+        "Name": "启用法术反制"
+      },
+      "EnableCuttingWords": {
+        "Hint": "启用后，为拥有语出惊人的用户显示对话框，并在使用时自动应用语出惊人。",
+        "Name": "启用语出惊人"
+      },
+      "EnableIdentifyRestrictions": {
+        "Hint": "启用后，将阻止玩家角色鉴定未鉴定物品，除非使用本模块的鉴定法术自动化。",
+        "Name": "启用鉴定限制"
+      },
+      "EnableIndomitable": {
+        "Hint": "",
+        "Name": "启用不屈"
+      },
+      "EnableInterception": {
+        "Hint": "启用后，为拥有“战斗风格：拦截”的用户显示对话框，并在使用时自动应用拦截。",
+        "Name": "启用 intercept（拦截）"
+      },
+      "EnableOpportunityAttack": {
+        "Hint": "启用后，战斗开始时自动为合适的参战者添加“借机攻击”物品，战斗结束时移除。",
+        "Name": "启用借机攻击"
+      },
+      "EnablePoetryInMisery": {
+        "Hint": "启用后，为拥有悲剧学院吟游诗人“惨中取意”特性的用户显示对话框，并在使用时自动应用。",
+        "Name": "启用惨中取意"
+      },
+      "EnablePowerWordRebound": {
+        "Hint": "启用后，为拥有律令反弹法术的用户显示对话框，并在使用时自动应用。",
+        "Name": "启用律令反弹"
+      },
+      "EnableProtection": {
+        "Hint": "",
+        "Name": "启用守护"
+      },
+      "EnableRiposte": {
+        "Hint": "",
+        "Name": "启用反击"
+      },
+      "EnableSentinel": {
+        "Hint": "",
+        "Name": "启用哨兵"
+      },
+      "EnableSilveryBarbs": {
+        "Hint": "启用后，为拥有银光锐语的用户显示对话框，并在使用时自动应用银光锐语。",
+        "Name": "启用银光锐语"
+      },
+      "EnableWitchesHex": {
+        "Hint": "启用后，为拥有女巫诅咒的用户显示对话框，并在使用时自动应用。",
+        "Name": "启用女巫诅咒"
+      },
+      "FlashOfGeniusTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "灵光一闪超时"
+      },
+      "IdentifyRestrictionMessage": {
+        "Hint": "当用户受到限制时将显示的提示信息。",
+        "Name": "鉴定限制提示信息"
+      },
+      "IndomitableTimeout": {
+        "Hint": "",
+        "Name": "不屈超时"
+      },
+      "InstinctiveCharmTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "直觉魅惑超时"
+      },
+      "InterceptionTimeout": {
+        "Hint": "输入自定义秒数，默认值为30秒。",
+        "Name": "拦截超时"
+      },
+      "LegendaryResistanceTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "传奇抗性超时"
+      },
+      "MageSlayerTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "巫师杀手超时"
+      },
+      "MirrorThirdPartyDialogForGMs": {
+        "Hint": "启用后，第三方对话框将同时发送给 GM 和玩家。双方均可交互对话框来使用/取消/暂停。",
+        "Name": "为 GM 镜像第三方对话框"
+      },
+      "OpportunityAttackTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "借机攻击超时"
+      },
+      "PoetryInMiseryTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "惨中取意超时"
+      },
+      "PowerWordReboundTimeout": {
+        "Hint": "输入自定义秒数，默认值为30秒。",
+        "Name": "律令反弹超时"
+      },
+      "ProtectionTimeout": {
+        "Hint": "",
+        "Name": "守护超时"
+      },
+      "RainOfCindersTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "灰烬之雨超时"
+      },
+      "RestoreBalanceTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "归复平衡超时"
+      },
+      "RiposteTimeout": {
+        "Hint": "",
+        "Name": "反击超时"
+      },
+      "SentinelTimeout": {
+        "Hint": "",
+        "Name": "哨兵超时"
+      },
+      "SilveryBarbsTimeout": {
+        "Hint": "输入自定义秒数，默认值为30秒。",
+        "Name": "银光锐语超时"
+      },
+      "TaleOfHubrisTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "盛极必衰超时"
+      },
+      "TemporalShuntTimeout": {
+        "Hint": "输入自定义秒数，默认值为15秒。",
+        "Name": "时流刹转超时"
+      },
+      "WitchesHexTimeout": {
+        "Hint": "输入自定义秒数，默认值为30秒。",
+        "Name": "女巫诅咒超时"
+      },
+      "DebugEnabled": {
+        "Hint": "启用后，将在控制台输出反应验证过程的日志，用于故障排查。",
+        "Name": "启用调试"
+      },
+      "Enable3prNoCombat": {
+        "Hint": "启用后，第三方反应在非战斗状态下也能生效。",
+        "Name": "非战斗时启用第三方反应"
+      },
+      "EnableTimerFullAnim": {
+        "Hint": "启用后，对话框的倒计时动画将覆盖整个标题栏，而非仅标题栏边框。",
+        "Name": "启用计时器全栏动画"
+      },
+      "HideTemplates": {
+        "Hint": "此选项在借机攻击中始终启用。如果开启，本模块中其他使用测量版的自动化将完全隐藏测量版。不会隐藏本模块外创建的自动化或模板。",
+        "Name": "隐藏测量版"
+      },
+      "PrimaryGM": {
+        "Hint": "",
+        "Name": "主 GM"
+      },
+      "TokenMovementSpeed": {
+        "Hint": "Token 移动动画速度的数值。Foundry 默认速度为 6。",
+        "Name": "Token 移动速度"
+      }
+    },
+    "SettingsMenu": {
+      "Headers": {
+        "Feature": "特性",
+        "Enable": "启用",
+        "TimeoutSeconds": "超时时间 (秒)"
+      },
+      "ClassFeatures": {
+        "ChronalShift": {
+          "Description": "为时间法师的“时间变换”显示对话框。",
+          "Name": "时间变换"
+        },
+        "CuttingWords": {
+          "Description": "为逸闻学院诗人的“语出惊人”显示对话框。",
+          "Name": "语出惊人"
+        },
+        "DisableCuttingWordsMaxMiss": {
+          "Description": "若最大吟游诗人激励骰也无法影响命中时跳过提示。",
+          "Name": "禁用语出惊人最大失手"
+        },
+        "EnableAutoSucceedIndomitable": {
+          "Description": "使用时自动成功。",
+          "Name": "启用不屈自动成功"
+        },
+        "EnableProtectionOnSuccess": {
+          "Description": "仅在攻击成功时触发。",
+          "Name": "攻击成功时触发防护"
+        },
+        "FlashOfGenius": {
+          "Description": "为奇械师的“灵光一闪”显示对话框。",
+          "Name": "灵光一闪"
+        },
+        "Indomitable": {
+          "Description": "为战士的“不屈”显示对话框。",
+          "Name": "不屈"
+        },
+        "InstinctiveCharm": {
+          "Description": "为惑控师的“直觉魅惑”显示对话框。",
+          "Name": "直觉魅惑"
+        },
+        "Interception": {
+          "Description": "为圣武士/战士的“拦截”显示对话框。",
+          "Name": "拦截"
+        },
+        "MagicUsersNemesis": {
+          "Description": "为怪物杀手游侠的“魔法使的克星”显示对话框。",
+          "Name": "魔法使的克星"
+        },
+        "PoetryInMisery": {
+          "Description": "为悲剧学院诗人的“惨中取意”显示对话框。",
+          "Name": "惨中取意"
+        },
+        "Protection": {
+          "Description": "为圣武士/战士的“防护”显示对话框。",
+          "Name": "防护"
+        },
+        "RainOfCinders": {
+          "Description": "为沸炉巫团女巫的“灰烬之雨”显示对话框。",
+          "Name": "灰烬之雨"
+        },
+        "RestoreBalance": {
+          "Description": "为时械之魂术士的“归复平衡”显示对话框。",
+          "Name": "归复平衡"
+        },
+        "Riposte": {
+          "Description": "为战斗大师战士的“反击”显示对话框。",
+          "Name": "反击"
+        },
+        "TaleOfHubris": {
+          "Description": "为悲剧学院诗人的“盛极必衰”显示对话框。",
+          "Name": "盛极必衰"
+        },
+        "WitchesHex": {
+          "Description": "为女巫的“女巫诅咒”显示对话框。",
+          "Name": "女巫诅咒"
+        }
+      },
+      "GenericFeatures": {
+        "OpportunityAttack": {
+          "Description": "自动为战斗中的参战者启用借机攻击。",
+          "Name": "借机攻击"
+        },
+        "Sentinel": {
+          "Description": "当敌人攻击范围内的盟友时，为拥有哨兵专长的玩家显示对话框。",
+          "Name": "哨兵"
+        },
+        "MageSlayer": {
+          "Description": "为拥有巫师杀手专长的玩家显示对话框。",
+          "Name": "巫师杀手"
+        },
+        "LegendaryResistance": {
+          "Description": "为怪物的传奇抗性特性显示对话框。",
+          "Name": "传奇抗性"
+        }
+      },
+      "Spells": {
+        "Counterspell": {
+          "Description": "为拥有法术反制的玩家显示对话框。",
+          "Name": "法术反制"
+        },
+        "SilveryBarbs": {
+          "Description": "为拥有银光锐语的玩家显示对话框。",
+          "Name": "银光锐语"
+        },
+        "CounterspellSpellPenetration": {
+          "Description": "启用可选特性“浴血奋战：法术穿透”。",
+          "Name": "法术穿透"
+        },
+        "DisableSilveryBarbsOnNat20": {
+          "Description": "在攻击检定为重击时禁用。",
+          "Name": "重击时禁用"
+        },
+        "EnableSilveryBarbsOnNat20": {
+          "Description": "仅在攻击检定为重击时启用。",
+          "Name": "仅在重击时启用"
+        },
+        "PowerWordRebound": {
+          "Description": "为拥有律令反弹的玩家显示对话框。",
+          "Name": "律令反弹"
+        },
+        "TemporalShunt": {
+          "Description": "为拥有时流刹转的玩家显示对话框。",
+          "Name": "时流刹转"
+        }
+      },
+      "MonsterFeatures": {
+        "BurstOfIngenuity": {
+          "Description": "为拥有灵光乍现的怪物显示对话框。",
+          "Name": "灵光乍现"
+        },
+        "DreadCounterspell": {
+          "Name": "恐惧反制",
+          "Description": "为维克那的恐惧反制显示对话框。"
+        }
+      },
+      "General": {
+        "Enable3prNoCombat": {
+          "Description": "允许第三方反应在非战斗状态下生效。",
+          "Name": "非战斗时启用第三方反应"
+        },
+        "EnableIdentifyRestrictions": {
+          "Description": "阻止玩家鉴定物品，除非通过本模块的鉴定法术。",
+          "Name": "启用鉴定限制"
+        },
+        "IdentifyRestrictionMessage": {
+          "Description": "用户受限制时显示的自定义信息。",
+          "Name": "鉴定限制提示信息"
+        },
+        "EnableRegionWrapping": {
+          "Description": "将 Foundry 默认的区域检测行为（仅检测 Token 中心点）替换为多点检测，以更好地匹配 5e 规则集（需要重载）。",
+          "Name": "启用区域包裹"
+        },
+        "EnableTimerFullAnim": {
+          "Description": "将对话框的倒计时动画修改为覆盖整个标题栏，而非仅标题栏边框。",
+          "Name": "启用计时器全栏动画"
+        },
+        "HideTemplates": {
+          "Description": "放置后隐藏测量版。",
+          "Name": "隐藏测量版"
+        },
+        "TokenMovementSpeed": {
+          "Description": "Token 移动动画速度的数值。Foundry 默认速度为 6。",
+          "Name": "Token 移动速度"
+        },
+        "DebugEnabled": {
+          "Description": "启用控制台日志输出反应验证过程，用于故障排查。",
+          "Name": "启用调试"
+        },
+        "MirrorThirdPartyDialogForGMs": {
+          "Name": "为 GM 镜像第三方对话框",
+          "Description": "启用后，第三方对话框将同时发送给 GM 和玩家。双方均可交互对话框来使用/取消/暂停。"
+        }
+      }
+    },
+    "UI": {
+      "InvalidInputNotNumber": "无效输入：不是一个数字。",
+      "InvalidInputNotNumberExample": "无效输入数值设置示例：不是一个数字。",
+      "None": "无",
+      "Prone": "倒地",
+      "Push": "推离",
+      "SaveSettings": "保存设置",
+      "Point": "点",
+      "Points": "点",
+      "Target": "目标",
+      "Targets": "目标"
+    },
+    "Windows": {
+      "EnableClassFeatures": "启用职业特性",
+      "EnableGenericFeatures": "启用通用特性",
+      "EnableMonsterFeatures": "启用怪物特性",
+      "EnableSpells": "启用法术",
+      "GeneralSettings": "通用设置",
+      "PatreonSupport": "Patreon支持"
+    }
+  }
+}

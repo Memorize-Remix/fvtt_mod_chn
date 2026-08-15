@@ -1,0 +1,88 @@
+
+    "MythicsSimplerQuests": {
+        "Common": {
+            "Visible": "可见",
+            "Hidden": "隐藏"
+        },
+        "Controls": {
+            "Tracker": "任务追踪"
+        },
+        "DeleteDialog": {
+            "Title": "删除任务",
+            "Message": "你确定要删除\"{title}\"吗？"
+        },
+        "Editor": {
+            "Title": "任务编辑",
+            "SaveText": "保存",
+            "ViewStyle": "查看样式",
+            "Objectives": "目标："
+        },
+        "Quest": {
+            "New": "新任务"
+        },
+        "Settings": {
+            "ExpandMultiple": {
+                "Name": "允许展开多个任务",
+                "Hint": "启用后，您可以在任务追踪中展开多个任务。禁用后，展开一个任务时会关闭所有其他任务。有利于节省空间。"
+            },
+            "ViewStyle": {
+                "Name": "默认任务视图样式",
+                "Hint": "控制向玩家显示目标的方式。不包括秘密目标。",
+                "All": "所有任务目标",
+                "Next": "仅限于下一个目标",
+                "Complete": "仅完成目标"
+            },
+            "TrackerDocked": {
+                "Name": "停靠任务追踪",
+                "Hint": "如果启用，任务追踪将停靠在侧边栏上。如果禁用，任务追踪将是一个浮动窗口。(需要重新加载）"
+            },
+			"TrackerDisplayStyle": {
+				"Name": "任务追踪显示样式",
+				"Hint": "控制任务追踪的显示方式。停靠模式将在侧边栏中显示，侧边栏模式将在侧边栏中显示但不固定，浮动模式将显示为浮动窗口。",
+				"Docked": "停靠",
+				"Sidebar": "侧边栏",
+				"Floating": "浮动"
+			},
+            "TrackerOffset": {
+                "Name": "任务追踪偏移",
+                "Hint": "调整停靠时任务追踪的位置。数字越大，任务追踪出现的位置越低。"
+            },
+            "TrackerHidden": {
+                "Name": "为玩家隐藏",
+                "Hint": "如果启用，则不会向玩家显示任务追踪。"
+            },
+            "TrackerWidth": {
+                "Name": "任务追踪宽度",
+                "Hint": "设置停靠时任务追踪的宽度（像素）。如果未停靠则无影响。"
+            },
+            "TrackerMaxHeight": {
+                "Name": "任务追踪最大高度",
+                "Hint": "设置停靠时任务追踪的最大高度（像素）。如果未停靠则无影响。"
+            },
+            "PlayerCreate": {
+                "Name": "允许玩家创建",
+                "Hint": "允许玩家创建任务。"
+            },
+            "PlayerEdit": {
+                "Name": "允许玩家编辑 GM 任务",
+                "Hint": "允许玩家编辑由 GM 创建的任务。警告：这将允许玩家查看目标输入数据，有可能泄露秘密目标。"
+            },
+            "PlayersMark": {
+                "Name": "允许玩家标记 GM 目标",
+                "Hint": "允许玩家将由 GM 创建的任务目标标记为完成、失败或未完成。"
+            }
+        },
+        "Tracker": {
+            "ActiveQuests": "激活任务",
+            "AddQuest": "添加任务",
+            "Delete": "删除",
+            "Edit": "编辑",
+            "Expand": "展开",
+            "Minimize": "最小化",
+            "Title": "任务追踪",
+            "Incomplete": "未完成",
+            "Complete": "完成",
+            "Failed": "失败"
+        }
+    }
+}

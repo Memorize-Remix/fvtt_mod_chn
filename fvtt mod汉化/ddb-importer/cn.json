@@ -1,0 +1,238 @@
+
+  "ddb-importer": {
+    "module-name": "D&D Beyond Importer",
+    "activities": {
+      "macro": {
+        "Title": "宏命令 (DDB Importer)",
+        "Button": "执行宏",
+        "Config": "宏配置",
+        "Hide": "隐藏宏行动",
+        "FIELDS": {
+          "macro": {
+            "label": "宏",
+            "function": {
+              "label": "宏名称或UUID"
+            },
+            "parameters": {
+              "label": "函数参数"
+            },
+            "visible": {
+              "label": "对所有玩家可见？"
+            },
+            "name": {
+              "label": "按钮名称"
+            }
+          }
+        }
+      }
+    },
+    "tattoo": {
+      "CreateSpellwroughtTattoo": "创建蕴法刺青",
+      "Details": "刺青详情"
+    },
+    "Welcome": {
+      "Title": "欢迎使用DDB Importer！",
+      "FirstTime": "看起来你是第一次使用这个模组！",
+      "SetupButton": "打开配置地牢",
+      "Setup": "在使用DDB Importer之前需要完成一些设置，主要是将其与你的D&D Beyond账号关联。请花时间按照<a href=\"https://docs.ddb.mrprimate.co.uk/docs/ddb-importer/initial-setup\">这里</a>进行操作。它是最新的，也是你的最佳起点。",
+      "Later": "你随时可以在'配置设置 > 模组设置 > DDB Importer'中修改这些设置！",
+      "Fin": "完成设置后，你将不会再看到此消息。"
+    },
+    "settings": {
+      "add-extra-base-weapons.name": "添加额外基础武器？",
+      "add-extra-base-weapons.hint": "导入物品后，是否将新的基础武器添加到 FVTT 基础武器列表中？",
+      "use-basic-rules.name": "解析资源时添加D&D基础规则而非SRD或PHB 2024？",
+      "use-basic-rules.hint": "如果取消勾选，DDB Importer会尽量归类到SRD 5.1或PHB 2024资源。请注意这是最佳猜测，因为D&D Beyond没有SRD资源，而是使用覆盖范围略有不同的\"基础规则\"。",
+      "disable-tattoo-type.name": "禁用蕴法刺青",
+      "disable-tattoo-type.hint": "DDB Importer会注入刺青消耗品类型并允许创建蕴法刺青。",
+      "persistent-storage-location.name": "持久存储位置",
+      "persistent-storage-location.hint": "这是DDB缓存DDB文件的位置，如背景合集和DDB法术图标。",
+      "munching-policy-force-spell-version.name": "怪物法术版本",
+      "munching-policy-force-spell-version.hint": "决定怪物应使用2024版法术还是与其原始规则匹配的法术版本",
+      "user-hint-setting": "如果你不了解特定设置的用途，建议保持默认。部分设置依赖额外模组，仅在你想为游戏添加该级别自动化时才推荐使用。",
+      "user-hint-effects": "部分设置提及ActiveEffects。请注意这些不是<em>动画</em>效果。",
+      "user-hint-animations": "请注意这些不是<em>动画</em>效果。",
+      "update-check.name": "检查可用更新？",
+      "log-level.name": "日志级别",
+      "log-level.hint": "应在控制台中显示的日志级别。",
+      "show-munch-top": {
+        "name": "导入按钮显示在顶部？",
+        "hint": "否则显示在底部。"
+      },
+      "effects-uses-macro-status-effects.name": "使用宏状态效果？",
+      "effects-uses-macro-status-effects.hint": "如果勾选将通过DAE macro.StatusEffect方法应用效果，而非普通状态效果。默认为关闭。",
+      "custom-proxy.name": "使用自定义代理？",
+      "custom-proxy.hint": "如果使用自定义代理请勾选，并在下方输入代理URL",
+      "image-upload-directory.name": "角色图片上传目录",
+      "image-upload-directory.hint": "指定服务器上的图片上传位置。",
+      "add-ddb-languages.name": "添加D&D Beyond语言？",
+      "add-ddb-languages.hint": "如果取消勾选，DDB语言将被添加到自定义字段",
+      "other-image-upload-directory.name": "其他图片上传目录",
+      "other-image-upload-directory.hint": "指定服务器上的图片上传位置。",
+      "frame-image-upload-directory.name": "框架图片上传目录",
+      "frame-image-upload-directory.hint": "指定服务器上的框架图片上传位置。",
+      "scene-upload-directory.name": "场景上传目录",
+      "scene-upload-directory.hint": "指定服务器上的场景上传位置。",
+      "adventure-import-path.name": "冒险导入路径",
+      "adventure-import-path.hint": "模组查找冒险数据文件进行导入的位置",
+      "adventure-upload-path.name": "冒险上传路径",
+      "adventure-upload-path.hint": "模组上传冒险图片和数据的位置",
+      "adventure-misc-path.name": "冒险杂项上传路径",
+      "adventure-misc-path.hint": "模组上传杂项冒险内容的位置，例如图标",
+      "monster-link-title.name": "在标题栏显示怪物D&D Beyond链接？",
+      "monster-link-title.hint": "否则显示为名称旁边的按钮。(需要重新加载生效)",
+      "cobalt-cookie.name": "DDB Cobalt Cookie",
+      "cobalt-cookie.hint": "你可以使用我的Chrome扩展获取：https://github.com/MrPrimate/ddb-importer-chrome",
+      "campaign-id.name": "DDB战役URL或ID",
+      "campaign-id.hint": "输入战役URL或ID，例如https://www.dndbeyond.com/campaigns/12345或12345",
+      "spells-on-items-as-activities.name": "物品上的法术作为行动",
+      "spells-on-items-as-activities.hint": "如果勾选，物品上的法术将创建为行动，而非从法术链接的使用方式",
+	  "patreon-key.name": "Patreon赞助者密钥",
+	  "patreon-key.hint": "在此处输入你的Patreon赞助者密钥。",
+      "auto-create-compendium.name": "自动创建缺失的合集？",
+      "auto-create-compendium.hint": "自动创建缺失的合集？",
+      "use-full-source.name": "使用完整资源书名？",
+      "use-full-source.hint": "否则使用缩写",
+      "show-resource-chooser-default.name": "默认显示资源选择器？",
+      "show-resource-chooser-default.hint": "新建角色时默认启用资源选择器？",
+      "monster-has-vision.name": "导入的怪物应设置视觉？",
+      "monster-has-vision.hint": "如果取消勾选，怪物将不设置视觉",
+      "restrict-to-trusted.name": "限制为受信用户",
+      "restrict-to-trusted.hint": "将角色导入限制为受信用户",
+      "allow-all-sync.name": "允许所有用户同步到DDB",
+      "allow-all-sync.hint": "如果角色导入受限，此选项仍允许玩家同步回DDB。",
+      "apply-conditions-with-ce.name": "使用DCE状态？",
+      "apply-conditions-with-ce.hint": "如果安装了DCE，使用它来管理状态",
+      "use-loose-srd-reference-matching.name": "宽松规则引用匹配？",
+      "use-loose-srd-reference-matching.hint": "尝试匹配任何对SRD规则的引用，可能导致一些误报",
+      "setup.name": "核心设置",
+      "setup.hint": "核心设置选项",
+      "compendium-setup.name": "合集",
+      "compendium-setup.hint": "配置要使用的合集",
+      "folder-setup.name": "目录位置",
+      "folder-setup.hint": "选择存储图片的文件夹/目录",
+      "dynamic-update-setup.name": "动态DDB更新设置",
+      "dynamic-update-setup.hint": "将角色更新直接推送回D&D Beyond！",
+      "character-link-title.name": "在标题栏显示DDB-Importer按钮？",
+      "character-link-title.hint": "否则显示为名称旁边的按钮。(需要重新加载生效)",
+      "link-title-colour-white.name": "将标题栏图标设为白色？",
+      "link-title-colour-white.hint": "默认为红色。需要重新加载生效。",
+      "use-damage-hints.name": "使用伤害类型提示？",
+      "use-damage-hints.hint": "构建伤害字符串时使用，例如1d6[healing]。对MidiQOL等有用。",
+      "add-damage-restrictions-to-hints.name": "在提示中添加伤害限制？",
+      "add-damage-restrictions-to-hints.hint": "如果有伤害限制，将其添加到伤害提示中",
+      "allow-scene-download.name": "允许下载场景数据",
+      "allow-scene-download.hint": "如果你想提交场景的墙壁和照明数据，使用此选项下载配置文件以供提交。",
+      "top-level-compendium-folder.name": "顶层合集文件夹？",
+      "top-level-compendium-folder.hint": "如果选择，将把合集放入名为D&D Beyond的文件夹中(仅v11)",
+      "munching-selection-compendium-folders-monster.name": "合集文件夹样式(怪物)",
+      "munching-selection-compendium-folders-monster.hint": "如果使用合集文件夹，你希望创建哪种文件夹？",
+      "munching-selection-compendium-folders-spell.name": "合集文件夹样式(法术)",
+      "munching-selection-compendium-folders-spell.hint": "如果使用合集文件夹，你希望创建哪种文件夹？",
+      "munching-selection-compendium-folders-item.name": "合集文件夹样式(物品)",
+      "munching-selection-compendium-folders-item.hint": "如果使用合集文件夹，你希望创建哪种文件夹？",
+      "embed-macros": {
+        "name": "在物品中嵌入宏？",
+        "hint": "将宏嵌入到物品中？如果不选择，物品宏将调用DDB Importer动态生成并运行适当的宏。优点：不需要重新导入法术来获取宏，世界数据存储更少。缺点：更难调试，需要运行DDB Importer。"
+      },
+      "no-item-macros": {
+        "name": "从物品中移除宏？",
+        "hint": "如果选择，将调用DDB函数让Midi-QOL和DAE运行宏，取代嵌入宏选项。"
+      },
+      "show-image-to-players.name": "显示向玩家展示图片按钮？",
+      "show-image-to-players.hint": "在日志中提供悬停按钮向玩家展示图片？(需要重新加载)",
+      "show-read-alouds-button.name": "显示向玩家朗读按钮？",
+      "show-read-alouds-button.hint": "在日志中提供悬停按钮向玩家朗读文本？(需要重新加载)",
+      "show-read-alouds-all-content.name": "为所有内容启用朗读功能？",
+      "show-read-alouds-all-content.hint": "在非DDB Importer导入的内容中也显示向玩家朗读按钮。(需要重新加载)",
+	  "show-welcome-message.name": "显示欢迎信息？",
+	  "show-welcome-message.hint": "勾选此项后，下次登录时将显示欢迎信息。",
+      "dynamic-sync": {
+        "dynamic-sync": "启用动态同步？",
+        "dynamic-sync-policy-currency": "货币？",
+        "dynamic-sync-policy-hitpoints": "生命值？",
+        "dynamic-sync-policy-hitdice": "生命骰？",
+        "dynamic-sync-policy-action-use": "动作使用？",
+        "dynamic-sync-policy-inspiration": "激励？",
+        "dynamic-sync-policy-condition": "状态？",
+        "dynamic-sync-policy-deathsaves": "死亡豁免？",
+        "dynamic-sync-policy-spells-prepared": "准备法术？",
+        "dynamic-sync-policy-spells-slots": "法术位？",
+        "dynamic-sync-policy-spells-sync": "已知法术？",
+        "dynamic-sync-policy-equipment": "装备？",
+        "dynamic-sync-policy-xp": "经验值？"
+      }
+    },
+    "item-type": {
+      "background": "背景",
+      "character": "玩家",
+      "npc": "怪物",
+      "spell": "法术",
+      "weapon": "武器",
+      "equipment": "装备",
+      "consumable": "消耗品",
+      "tool": "工具",
+      "loot": "战利品",
+      "class": "职业",
+      "backpack": "背包",
+      "magic-items": "魔法物品",
+      "magic-item-spells": "魔法物品法术",
+      "extras": "D&D Beyond额外内容",
+      "scene": "场景"
+    },
+    "label": {
+      "Scene": "场景",
+      "Scenes": "场景",
+      "Actor": "角色",
+      "Actors": "角色",
+      "Item": "物品",
+      "Items": "物品",
+      "JournalEntry": "日志条目",
+      "Journals": "日志",
+      "Rolltable": "随机表",
+      "Rolltables": "随机表",
+      "Playlist": "播放列表",
+      "Playlists": "播放列表",
+      "Compendium": "合集",
+      "Compendiums": "合集",
+      "AdventureName": "冒险名称",
+      "Export": "导出资源",
+      "Import": "导入冒险",
+      "Working": "处理中",
+      "ActiveModules": "以下模组处于激活状态：",
+      "ExportOptions": "导出选项",
+      "References": "更新引用",
+      "RollTable": "随机表",
+      "Macros": "宏"
+    },
+    "adventure-import": {
+      "button": "将冒险导入世界",
+      "compendium-button": "将冒险导入冒险合集",
+      "confirm": "更新选定内容",
+      "all": "全部",
+      "selection": "已选"
+    },
+    "scenes": {
+      "download": "DDB场景配置",
+      "third-party-download": "第三方场景配置"
+    },
+    "Dialogs": {
+      "ResetSettings": {
+        "Label": "重置DDB Importer设置",
+        "Hint": "警告：这将把所有DDB Importer设置重置为默认。",
+        "Title": "重置设置",
+        "Content": "你确定要将DDB Importer模组的所有设置重置为默认吗？",
+        "Confirm": "重置模组设置",
+        "Cancel": "取消"
+      },
+      "DDBProxy": {
+        "AppTitle": "DDB Importer代理设置",
+        "Label": "DDB代理设置",
+        "Hint": "在此配置自定义DDB代理端点。",
+        "Title": "DDB代理设置",
+        "Use": "使用自定义代理？",
+        "AddressExample": "自定义代理地址，例如http://localhost:3000"
+      }
+    }
+  }
+}

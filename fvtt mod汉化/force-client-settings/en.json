@@ -1,0 +1,50 @@
+{
+  "FORCECLIENTSETTINGS": {
+    "settings": {
+      "forced-settings": {
+        "name": "(deprecated) Forced settings list (JSON)",
+        "hint": "Force listed settings to the world scope."
+      },
+      "forced": {
+        "name": "Forced settings collection",
+        "hint": "Holds information about forced settings and respective forcing modes"
+      },
+      "unlocked": {
+        "name": "Unlocked settings collection",
+        "hint": "Holds information about unlocked soft-forced settings"
+      },
+      "restricted": {
+        "name": "Restricted settings menus collection",
+        "hint": "Holds information about restricted settings submenu buttons"
+      },
+      "hide-forced": {
+        "name": "Hide forced settings from the clients",
+        "hint": "Non-GM clients won't display any of the hard-forced settings in the settings configuration app"
+      },
+      "forced-config": {
+        "label": "Force Client Settings Editor",
+        "title": "Force Client Settings Editor",
+        "name": "",
+        "warning": "Here you may force all settings, including unlisted. This may allow you to force some of the settings hidden behind submenus. BE WARNED, however, that forcing certain settings may cause faulty or unresponsive application behavior. Refer to README.md for troubleshooting.",
+        "filter": "Show unlisted settings only",
+        "keybindings": "You might want to use \"Force Client Controls\" module for this",
+        "unlock-all": "Unlock All Settings",
+        "close": "Close"
+      }
+    },
+    "ui": {
+      "yes": "Yes",
+      "no": "No",
+      "open-gm-hint": "These settings are not forced. Click to soft-force.",
+      "soft-gm-hint": "These settings are soft-forced (may optionally be edited by clients). Click to hard-force, Alt-Click to escape.",
+      "hard-gm-hint": "These settings are forced for all clients. Click to release, Alt-Click to escape.",
+      "unlocked-gm-hint": "These settings are forced for clients, but the GM has escaped the force. Click to unescape.",
+      "unrestricted-gm-hint": "These settings buttons are unrestricted for all clients. Click to restrict.",
+      "restricted-gm-hint": "These settings buttons are restricted and hidden for non-GM clients. Click to unrestrict.",
+      "hard-client-hint": "These settings are forced by the GM and cannot be edited.",
+      "soft-client-hint": "These settings are soft-forced by the GM. Click to unlock editing.",
+      "unlocked-client-hint": "These settings are unlocked for this client. Click to reset to the GM's defaults.",
+      "migration-note": "Forced Client Settings completed the settings migration process. Please refresh your browser."
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "token-note-hover": {
+    "Settings": {
+      "HoverEnabled": {
+        "Name": "Hover Enabled",
+        "Hint": "Display the note in a tooltip when the token is hovered over."
+      },
+      "DisplayImages": {
+        "Name": "Display Images",
+        "Hint": "Display images contained in token notes."
+      },
+      "DisplayPC": {
+        "Name": "Display Notes for PC Tokens",
+        "Hint": "Display notes for PC tokens."
+      },
+      "DisplayNPC": {
+        "Name": "Display Notes for NPC Tokens",
+        "Hint": "Display notes for NPC tokens."
+      },
+      "OwnershipPermissionsRequired": {
+        "Name": "Ownership Permissions Required",
+        "Hint": "Token ownership permissions required to view the notes."
+      },
+      "TooltipPlacement": {
+        "Name": "Tooltip Placement",
+        "Hint": "Placement of tooltip relative to the token.",
+        "Choices": {
+          "north-west-alt": "North West Alt",
+          "north-west": "North West",
+          "north": "North",
+          "north-east": "North East",
+          "north-east-alt": "North East Alt",
+          "west": "West",
+          "east": "East",
+          "south-west-alt": "South West Alt",
+          "south-west": "South West",
+          "south": "South",
+          "south-east": "South East",
+          "south-east-alt": "South East Alt"
+        }
+      },
+      "TooltipScreenPosition": {
+        "Name": "Tooltip Position on Screen",
+        "Hint": "Set the position of the tooltip on the screen.",
+        "Choices": {
+          "adjacent-to-token": "Adjacent to Token",
+          "bottom-left": "Bottom left",
+          "bottom-right": "Bottom right",
+          "top-left": "Top left",
+          "top-right": "Top right"
+        }
+      },
+      "SmartPlacement": {
+        "Name": "Tooltip Smart Placement ",
+        "Hint": "Dynamic placement of the tooltips to stay inside the browser viewport."
+      },
+      "TooltipOpenDelay": {
+        "Name": "Tooltip Open Delay",
+        "Hint": "Length of delay before the token note tooltip appears (in milliseconds)."
+      },
+      "TooltipCloseDelay": {
+        "Name": "Tooltip Close Delay",
+        "Hint": "Length of delay before the token note tooltip closes (in milliseconds)."
+      },
+      "TooltipColor": {
+        "Name": "Tooltip Theme",
+        "Hint": "The color theme of the token note tooltip. `System` will use the game system theme.",
+        "System": "System",
+        "Default": "Default",
+        "Blue": "Blue",
+        "Dark": "Dark",
+        "Green": "Green",
+        "Light": "Light",
+        "Oceanic": "Oceanic",
+        "Orange": "Orange",
+        "Phosphor": "Phosphor",
+        "Purple": "Purple",
+        "Red": "Red",
+        "Yellow": "Yellow",
+        "Zinc": "Zinc"
+      },
+      "FontSize": {
+        "Name": "Text Size",
+        "Hint": "The base text size for the token note display. Use 'rem' or 'px' units."
+      },
+      "MaxWidth": {
+        "Name": "Maximum Width",
+        "Hint": "The maximum width in px the token note display can grow to before it will force wrapping."
+      },
+      "UseMousePositionForCoordinates": {
+        "Name": "Use Mouse Position for Tooltip Coordinates",
+        "Hint": "Use mouse position to display the tooltip. Overrides the Tooltip Position on Screen setting."
+      },
+      "ShowTitle": {
+        "Name": "Show Title on Tooltip",
+        "Hint": "Show token title on tooltip"
+      },
+      "HidePrivateNotes": {
+        "Name": "Hide Private Notes",
+        "Hint": "Hide notes marked as private from the tooltip"
+      },
+      "UseHotkeyToOpenTooltip": {
+        "Name": "Use Hotkey to Open Tooltip",
+        "Hint": "Use a hotkey to open the tooltip. This overrides the mouse hover behavior."
+      },
+      "HotkeyToOpenTooltip": {
+        "Name": "Choose Hotkey to Open Tooltip",
+        "Hint": "Choose the hotkey to open the tooltip. Only used when Hotkey is enabled.",
+        "Choices": {
+          "ControlLeft": "Control Left",
+          "ControlRight": "Control Right",
+          "AltLeft": "Alt Left",
+          "AltRight": "Alt Right",
+          "MetaLeft": "Command Left Mac",
+          "MetaRight": "Command Right Mac"
+        }
+      }
+    }
+  }
+}

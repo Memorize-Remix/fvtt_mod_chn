@@ -1,0 +1,170 @@
+
+  "SMARTPHONE_ID_CARD": {
+    "appTitle": "身份卡",
+    "gmHack": {
+      "sendTitle": "管理员转移",
+      "transferMethodTitle": "转移方式",
+      "transferMethodPrompt": "如何将卡片转移给 {target}？",
+      "targetDefault": "目标",
+      "copyAction": "复制（克隆）",
+      "moveAction": "移动（窃取）",
+      "noCardToTarget": "没有可目标的卡片。",
+      "targetHasNoPhone": "目标没有手机。",
+      "cardStolen": "卡片窃取（移动）成功。",
+      "cardCloned": "卡片克隆成功。",
+      "transferFailed": "转移失败。"
+    },
+    "emptyState": {
+      "title": "无凭证",
+      "subtitle": "此设备未存储数字身份。请向你的组织申请。"
+    },
+    "errors": {
+      "requiresWidget": "身份卡应用需要'Smartphone Widget'模组。",
+      "deviceNotFound": "设备未找到",
+      "permissionDenied": "权限被拒绝",
+      "sceneNotFound": "场景未找到",
+      "doorNotFound": "门未找到",
+      "notSmartDoor": "不是智能门。",
+      "noCardSelected": "未选择卡片",
+      "socket": "Socket错误。",
+      "noControlledToken": "无受控Token。",
+      "noToken": "无Token"
+    },
+    "wallConfig": {
+      "title": "智能手机访问",
+      "smartLockEnabled": "智能锁启用",
+      "smartLockHint": "勾选此项要求使用身份卡才能打开此门。",
+      "requiredLevel": "所需等级",
+      "requiredOrg": "所需组织",
+      "requiredOrgPlaceholder": "例如：UMBRELLA",
+      "detectionEnabled": "伪造检测",
+      "detectionHint": "使用检测规则检查伪造卡片。",
+      "detectionMode": "检测模式",
+      "detectionModeChance": "概率（质量 - 检测）",
+      "detectionModeThreshold": "阈值（质量 >= 检测）",
+      "detectionLevel": "检测等级（0-100）",
+      "logAccess": "访问日志（GM）",
+      "logAccessHint": "记录此门的打开/关闭和被拒绝的访问。",
+      "autoClose": "自动关闭",
+      "autoCloseHint": "打开后自动关闭门。",
+      "closeState": "手动关闭状态",
+      "closeDelay": "关闭延迟（秒）",
+      "autoCloseState": "自动关闭状态",
+      "stateClosed": "关闭",
+      "stateLocked": "锁定"
+    },
+    "access": {
+      "any": "任意",
+      "denied": "访问被拒绝。\n要求：{org}（等级{level}）",
+      "forgeryDetected": "检测到伪造。"
+    },
+    "log": {
+      "title": "访问日志",
+      "view": "查看访问日志",
+      "close": "关闭",
+      "back": "返回",
+      "empty": "尚无访问记录。",
+      "time": "时间",
+      "filterTitle": "过滤器",
+      "filterSuccess": "成功",
+      "filterDenied": "被拒绝",
+      "filterOpened": "已打开",
+      "filterClosed": "已关闭",
+      "filterDoor": "门",
+      "filterAllDoors": "所有门",
+      "opened": "打开",
+      "closed": "关闭",
+      "denied": "拒绝",
+      "forged": "伪造",
+      "authentic": "真实",
+      "entrySuccess": "{scene} / 门 {door}: {card}（{org}, 等级{level}, {status}）{state}",
+      "entryDenied": "{scene} / 门 {door}: {card}（{org}, 等级{level}, {status}）拒绝（{reason}）"
+    },
+    "defaults": {
+      "unknownName": "未知",
+      "securityAccess": "安全访问",
+      "newUser": "新用户",
+      "newOrg": "新组织"
+    },
+    "actions": {
+      "showToChat": "显示到聊天",
+      "sendToDevice": "发送到设备",
+      "gmHack": "GM：黑客/窃取卡片",
+      "exportAsItem": "GM：导出为物品"
+    },
+	"item": {
+	  "exported": "卡片已导出为物品。",
+	  "cardAdded": "已从物品中安装身份卡。",
+	  "cardRemoved": "已从手机中移除身份卡。"
+	},
+    "scan": {
+      "verifying": "验证中...",
+      "scanAccess": "扫描访问",
+      "noDoorInRange": "范围内无安全门。",
+      "doorOpened": "已打开",
+      "doorClosed": "已关闭",
+      "success": "成功：门{state}",
+      "errorInteracting": "与门交互时出错。"
+    },
+    "card": {
+      "nameLabel": "姓名",
+      "clearanceLabel": "权限",
+      "levelLabel": "等级",
+      "forgedLabel": "伪造",
+      "idCode": "ID: {id}",
+      "avatarAlt": "头像"
+    },
+    "editor": {
+      "title": "卡片管理",
+      "addCard": "添加新卡片",
+      "deleteCard": "删除当前卡片",
+      "newOrg": "新建",
+      "newUser": "用户",
+      "themePreset": "主题预设",
+      "themeStandard": "标准（深色）",
+      "themeCorporate": "企业（白色）",
+      "themeCyberpunk": "赛博朋克（霓虹）",
+      "themeFantasy": "奇幻（羊皮纸）",
+      "profileImage": "个人资料图像",
+      "holderName": "持有者姓名",
+      "level": "等级（0-10）",
+      "forged": "伪造",
+      "quality": "质量（0-100）",
+      "organization": "组织（ID类型）",
+      "organizationPlaceholder": "例如：UMBRELLA",
+      "customBackground": "自定义背景",
+      "imageUrlPlaceholder": "图像URL...",
+      "customLogo": "自定义徽标",
+      "headerColor": "标题颜色",
+      "bodyColor": "主体颜色",
+      "footerColor": "页脚颜色",
+      "resetTheme": "重置为主题默认值",
+      "saveAll": "保存所有卡片",
+      "exit": "退出",
+      "saved": "所有卡片已保存",
+      "expirationType": "过期类型",
+      "expPermanent": "永久",
+      "expUsage": "使用限制",
+      "expTime": "时间限制",
+      "maxUses": "最大使用次数",
+      "durationHours": "有效小时数",
+      "usesLeft": "剩余使用次数：{count}",
+      "expiredLabel": "已过期",
+      "timeRemaining": "过期时间：{time}",
+      "soundSettings": "声音设置",
+      "successSound": "成功声音",
+      "failSound": "失败声音",
+      "soundVolume": "音量"
+    },
+    "share": {
+      "sharedToChat": "卡片已分享到聊天。"
+    },
+    "send": {
+      "title": "发送身份卡",
+      "noCardToSend": "无卡片可发送。",
+      "recipientNoPhone": "收件人没有手机。",
+      "success": "卡片发送成功！",
+      "failed": "发送卡片失败。"
+    }
+  }
+}

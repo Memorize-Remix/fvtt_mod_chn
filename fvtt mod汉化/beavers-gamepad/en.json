@@ -1,0 +1,54 @@
+{
+  "beaversGamepad": {
+    "errors": {
+      "UserHasNoGamepad": "No gamepad associated with user"
+    },
+    "settings": {
+      "uiConfig": {
+        "name": "User Configuration",
+        "hint": "Configure userdata for this client",
+        "label": "\uD83D\uDC65 User Configuration"
+      },
+      "gamepadConfig":{
+        "name": "Gamepad Configuration",
+        "hint": "Configure the gamepads",
+        "label": "\uD83C\uDFAE configure"
+      },
+      "actorFilter":{
+        "name": "Actor Filter Type",
+        "hint": "the filter type to select an actor for a gamepad"
+      }
+    },
+    "gamepadConfigApp": {
+      "title": "GamepadConfig",
+      "noGamepad": "No connected gamepads detected." ,
+      "info": "Press a button on a gamepad to connect it",
+      "user": "User:",
+      "addUser": "assign User",
+      "userHint": "Each gamepad needs to be assigned to an user.",
+      "actorLabel": "Actor:",
+      "reversedLabel": "Reversed:",
+      "addModule": "add gamepad module"
+    },
+    "uiConfigApp": {
+      "title": "User Configuration",
+      "info": "This UserConfiguration is not global and only valid for the currently connected client",
+      "userPosition": "User Position:",
+      "userPositionHint": "When the monitor is lying on the table the position of the player towards the monitor e.g. top means he looks from upside down on it.",
+      "userPositionPx": "Display Position top/left:",
+      "userPositionPxHint": "Coordinates of the display on the monitor.",
+      "userPositionPxCenter":"Center Tiny UI based on user position.",
+      "tinyUI": "Enable TinyUserInterface",
+      "tinyUIHint": "A tiny interface on this client screen for the defined user. There can be mutliple interfaces on one client.",
+      "addUser": "Add user",
+      "addUserHint": ""
+    },
+    "TUIGamepadModule": {
+      "desc": "This is a context module. When activated it controls the Tiny-User-Interface",
+      "desc2": "This module activates Tiny-User-Interface"
+    },
+    "TokenRotation": {
+      "desc": "this module allows to control the direction your token is facing"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+
+  "ez-glide": {
+    "settings": {
+      "enableSmoothZoom": {
+        "name": "平滑缩放",
+        "hint": "禁用此选项以恢复为FVTT的默认缩放行为。"
+      },
+      "enableSmoothPan": {
+        "name": "平滑平移",
+        "hint": "禁用此选项以恢复为FVTT的默认平移行为。"
+      },
+      "zoomStepSize": {
+        "name": "缩放步长",
+        "hint": "FVTT默认值为 1.05。"
+      },
+      "zoomSpeed": {
+        "name": "缩放平滑因子",
+        "hint": "数值越低收敛越慢，数值越高收敛越快。"
+      },
+      "panSpeed": {
+        "name": "平移平滑因子",
+        "hint": "数值越低收敛越慢，数值越高收敛越快。"
+      }
+    },
+    "warnings": {
+      "failedToRegisterWrappers": "{package_id} | 注册包装失败 ({error_name})。可能已有其他模组覆盖了这些方法。",
+      "conflictDetected": "检测到冲突：'{id}' 与 EZGlide 冲突。\n{reason}"
+    }
+  }
+}

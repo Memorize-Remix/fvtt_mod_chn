@@ -1,0 +1,106 @@
+{
+  "celebrate": {
+    "buttons": {
+      "title": "Celebrate",
+      "intensity": {
+        "low": "Low Intensity",
+        "med": "Medium Intensity",
+        "high": "High Intensity!"
+      }
+    },
+    "notifications": {
+      "gmWarning": "The GM has restricted the use of confetti to GMs only!"
+    },
+    "settings": {
+      "appearanceMenu": {
+        "name": "Confetti Appearance",
+        "label": "Configure Appearance",
+        "hint": "Change your confetti appearance."
+      },
+      "gmOnly": {
+        "name": "GM Only",
+        "hint": "If your players are abusing the confetti, enable this and prevent them shooting it."
+      },
+      "fireRateLimit": {
+        "name": "Fire Rate Limit (Seconds)",
+        "hint": "Starts a cooldown after each shot. Highly recommended! (0 is no-limit)"
+      },
+      "confettiMultiplier": {
+        "name": "Confetti Multiplier",
+        "hint": "Multiplies the amount of confetti pieces fired. Set this high at your own peril!"
+      },
+      "showButtons": {
+        "name": "Show Buttons",
+        "hint": "(Requires reload) Disable if you are only interested in using it from macros/modules and/or the buttons conflict with other module(s)."
+      },
+      "soundVolume": {
+        "name": "Sound Volume",
+        "hint": "Sets the volume for the confetti firing sounds."
+      },
+      "soundIntensityHigh": {
+        "name": "High Intensity Sound",
+        "hint": "Sets the sound file for the high intensity confetti."
+      },
+      "soundIntensityMed": {
+        "name": "Medium Intensity Sound",
+        "hint": "Sets the sound file for the medium intensity confetti."
+      },
+      "soundIntensityLow": {
+        "name": "Low Intensity Sound",
+        "hint": "Sets the sound file for the low intensity confetti."
+      },
+      "showOthersConfettiScale": {
+        "name": "Show Other Players Confetti Scale",
+        "hint": "Tick if you want to see the confetti from other players scaled by their settings."
+      },
+      "showOthersGlitterStrength": {
+        "name": "Show Other Players Glitter Strength",
+        "hint": "Tick if you want to see the glitter confetti from other players at their chosen strength."
+      },
+      "appearance": {
+        "windowTitle": "Configure Confetti Appearance",
+        "confettiStyleChoice": {
+          "name": "Confetti Style Choice",
+          "hint": "Default: Multi colored confetti. | Base Color: Confetti with the chosen base color below. | Glitter: Sparkly color cycling confetti. | Base Glitter: Glitter derived from the base color.",
+          "choices": {
+            "default": "Default",
+            "base": "Base Color",
+            "glitter": "Glitter",
+            "baseGlitter": "Base Glitter"
+          }
+        },
+        "confettiColorBase": {
+          "name": "Confetti Color Base",
+          "hint": "Confetti will be colored with this as the base color if enabled below."
+        },
+        "confettiGlitterStrength": {
+          "name": "Glitter Strength",
+          "hint": "How glittery you want your confetti glitter to be."
+        },
+        "confettiScale": {
+          "name": "Confetti Scale",
+          "hint": "How big you want your confetti pieces to be."
+        },
+        "buttons": {
+          "test": "Test Settings",
+          "cancel": "Cancel",
+          "submit": "Save"
+        },
+        "confettiTexture": {
+          "name": "Confetti Texture",
+          "hint": "Classic: Classic rectangle. | Circle | Crescent | Lightning Bolt | Music Note | Skull | Star | Tree",
+          "choices": {
+            "classic": "Classic",
+            "circle": "Circle",
+            "crescent": "Crescent",
+            "lightning": "Lightning Bolt",
+            "music": "Music Note",
+            "skull": "Skull",
+            "star": "Star",
+            "tree": "Tree"
+          }
+        }
+      }
+    }
+  }
+}

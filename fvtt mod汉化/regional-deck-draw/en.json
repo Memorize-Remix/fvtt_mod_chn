@@ -1,0 +1,35 @@
+{
+  "RDD": {
+    "newBehavior": "Spawn Cards Icon on Combat Start",
+    "settingTooltip": "When combat starts in this region, draw cards from a selected deck and place them on the map.",
+    "Regions": {
+      "spawnCards": {
+        "FIELDS": {
+          "deckId": {
+            "label": "Pick Your Deck",
+            "hint": "Select the card deck from which you will draw cards at the beginning of combat."
+          },
+          "cardCount": {
+            "label": "How Many Cards Do You Want to Draw?"
+          },
+          "pickUpCard": {
+            "label": "Instead of drawing cards randomly, you will pick them up manually."
+          }
+        }
+      }
+    },
+    "combatStartedLabel": "Combat Start/End",
+    "pleaseInsertCorrectUUid": "Please copy the UUID of the card deck; it should contain 'Card.'",
+    "incorrectNumberOfCard": "Please insert a valid roll formula.",
+    "thereWillBeDrawnXCard": "There will be {roll} cards drawn from {deck}.",
+    "useCard": "Use Card!",
+    "cardWasUsed": "This card has just been used.",
+    "insertDeckUuid": "Please insert the UUID of the chosen deck, including 'Card.'",
+    "insertFormulaOrNumber": "Insert a roll formula like xdx, xDx, or just a number.",
+    "caedSelector": "Select Cards",
+    "youCanPickUpXCard": "You need to pick {count} cards from below",
+    "selected": "Selected",
+    "dialogSubmit": "Subbmit",
+    "cardSelector": "Card selektor"
+  }
+}

@@ -1,0 +1,59 @@
+{
+    "simple-requests": {
+        "settings": {
+            "soundCreate": "Sound on request creation",
+            "soundCreateHint": "Play a sound when a request is added: you hear it when you click; everyone (including the player added) hears it when another client adds to the queue.",
+            "soundOnPromptActivate": "Sound on prompt activation",
+            "soundOnPromptActivateHint": "Play a sound when the epic prompt is shown (GM callout)",
+            "promptShowSound": "Prompt activation sound file",
+            "promptShowSoundHint": "Path to the file for the sound when the epic prompt is shown (GM callout)",
+            "epicPromptHeadline": "Prompt headline",
+            "epicPromptHeadlineHint": "\"{name} has the floor\" or \"It's {name}'s turn\".",
+            "soundActivate": "Sound on request activation",
+            "soundActivateHint": "Play a sound when the GM calls someone out (queue click or targeted callout) or when activateRequest runs (macro/socket).",
+            "reqClickSound": "Request activation sound file",
+            "reqClickSoundHint": "Path to the file for the sound when activating a request",
+            "firstRequest": "Show First request",
+            "firstRequestSound": "First Request Sound File",
+            "firstRequestSoundHint": "Audio file to play for the first (common) request.",
+            "secondRequest": "Show Second request",
+            "secondRequestHint": "Show the 'Second request' button (important)",
+            "thirdRequest": "Show Third request",
+            "thirdRequestHint": "Show the 'Third request' button (urgent!)",
+            "secondRequestSound": "Second Request Sound File",
+            "secondRequestSoundHint": "Audio file to play for the second (important) request.",
+            "thirdRequestSound": "Third Request Sound File",
+            "thirdRequestSoundHint": "Audio file to play for the third (urgent) request.",
+            "queueAllPlayersOnly": "Queue all: players only",
+            "queueAllPlayersOnlyHint": "When enabled, “add all to queue” only includes users with the Player role. When disabled, every connected user (including GMs and Assistants) is included. Order is randomized each time."
+        },
+        "chatMessage": {
+            "activateRequest": "{name} made a request!"
+        },
+        "buttons": {
+            "firstRequestTooltip": "Common request",
+            "secondRequestTooltip": "Important request",
+            "thirdRequestTooltip": "Urgent request!",
+            "queueTransferTooltip": "Change the position of the requests window to Free",
+            "queueAllMenuTooltip": "Add all connected users to the queue (random order)",
+            "pickPlayerCalloutTooltip": "Send a player callout or roll prompt"
+        },
+        "pickPlayerCallout": {
+            "dialogTitle": "Player callout",
+            "playerLabel": "Player",
+            "messageSection": "Message",
+            "messageLabel": "Callout text",
+            "messageDefault": "You're next",
+            "rollSection": "Ask for a roll",
+            "pickDie": "Die type",
+            "cancel": "Cancel",
+            "countLabel": "Number of dice",
+            "sendMessageButton": "Send message",
+            "rollHeadline": "Roll {formula}",
+            "noPlayers": "No active players to notify.",
+            "needMessage": "Enter a message to send.",
+            "needDieAndCount": "Choose how many dice and a die type.",
+            "rollFailed": "Could not roll dice. Check the formula or your system."
+        }
+    }
+}

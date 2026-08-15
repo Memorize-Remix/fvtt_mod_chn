@@ -1,0 +1,37 @@
+
+  "ACN": {
+    "overview": {
+      "title": "自动战斗笔记",
+      "open": {
+        "tooltip": "打开战斗笔记概览",
+        "keybinding": {
+          "label": "打开战斗笔记概览",
+          "hint": "打开一个窗口，显示你所有战斗笔记的概览。"
+        }
+      },
+      "drop-target": {
+        "text": "将日志条目拖到此区域以添加另一个笔记。",
+        "textEmpty": "你目前没有任何战斗笔记。将日志条目拖到此区域以添加你的第一个笔记。"
+      },
+      "table": {
+        "journalEntry": "日志条目",
+        "frequency": "频率",
+        "actions": "操作"
+      }
+    },
+    "frequencies": {
+      "always": "总是",
+      "once": "一次",
+      "onceNth": "第 N 次战斗时一次",
+      "everyNth": "每 N 次战斗",
+      "never": "从不"
+    },
+    "error": {
+      "missingUser": "检索你的用户数据时出错。请刷新页面后重试。",
+      "unknownJournalEntry": "读取添加的日志条目时出错。请重试。",
+      "unknownJournalEntryId": "显示 ID 为 {id} 的日志条目时出错",
+      "missingJournalEntryName": "检索日志条目名称时出错。请确保其有名称后重试。",
+      "duplicateJournalEntry": "你已为此日志条目设置了提醒。"
+    }
+  }
+}

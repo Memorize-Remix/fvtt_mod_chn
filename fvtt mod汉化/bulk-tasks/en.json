@@ -1,0 +1,44 @@
+{
+	"BulkTasks": {
+		"title": "Bulk Tasks",
+		"delete": "Delete",
+		"duplicate": "Duplicate",
+		"export": "Export",
+		"import": "Import",
+		"move": "Move",
+		"rename": "Rename",
+		"update": "Update",
+		"secondaryNav": {
+			"actors": "Actors",
+			"cards": "Cards",
+			"compendium": "Compendium",
+			"journal": "Journals",
+			"macros": "Macros",
+			"items": "Items",
+			"playlists": "Playlists",
+			"scenes": "Scenes",
+			"tables": "Roll Tables"
+		},
+		"settings": {
+			"gmOnly": {
+				"title": "Hide menu from players",
+				"hint": ""
+			},
+			"defaultExportNamingConvention": { "title": "Default File Naming Convention for Exports." },
+			"defaultExportZipName": { "title": "Default Zip Name for Exports." },
+			"defaultDuplicateNamingConvention": { "title": "Default Naming Convention for Duplicates." },
+			"defaultRenameNamingConvention": { "title": "Default File Naming Convention for Renames." },
+			"permDefaultName": {
+				"title": "Default Behavior for documents with undefined permissions.",
+				"hint": "",
+				"choices": {
+					"GMOnly": "GM Only",
+					"all": "Everyone"
+				}
+			},
+			"keepIdsOnImport": { "title": "Keep IDs on Import" }
+		}
+	},
+	"BM.deleteTitle": "Delete Selected",
+	"BM.deleteContent": "Are you sure? <br /> This action is permanent and cannot be undone."
+}

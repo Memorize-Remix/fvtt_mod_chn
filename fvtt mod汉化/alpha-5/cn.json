@@ -1,0 +1,31 @@
+
+  "alpha-5": {
+    "settings": {
+      "apiUrl": {
+        "name": "API URL",
+        "hint": "Alpha-5 API的基础URL地址"
+      },
+      "apiKey": {
+        "name": "API密钥",
+        "hint": "用于访问Alpha-5 API的认证密钥"
+      },
+      "autoSync": {
+        "name": "自动同步",
+        "hint": "定期自动同步玩家数据"
+      },
+      "syncInterval": {
+        "name": "同步间隔",
+        "hint": "同步玩家的频率（单位：分钟）"
+      }
+    },
+    "table": {
+      "headers": {
+        "id": "ID",
+        "displayName": "显示名称",
+        "discordId": "Discord ID",
+        "tag": "标签"
+      },
+      "noUsers": "未找到用户"
+    }
+  }
+}

@@ -1,0 +1,329 @@
+{
+    "simple-timekeeping": {
+        "day": "Day",
+        "days": "Days",
+        "in-progress": "In Progress",
+        "paused": "Paused",
+        "paused-info": "Simple Timekeeping - Time advancement is paused, click to resume.",
+        "unpaused-info": "Simple Timekeeping - Time advancement resumed, click to pause. The time will still be paused if the game is paused or if combat is active.",
+        "calendar-dusk-dawn": "This calendar includes dawn and dusk times, any value set in the settings or based on climate zone will be ignored and the calendar one will be used.",
+        "settings": {
+            "config-menu": {
+                "label": "Configure",
+                "name": "Configuration",
+                "hint": "Configure the module settings."
+            }
+        },
+        "weather": {
+            "clear": "Clear",
+            "partlyCloudy": "Partly Cloudy",
+            "cloudy": "Cloudy",
+            "overcast": "Overcast",
+            "rain": "Rain",
+            "thunderstorm": "Thunderstorm",
+            "drizzle": "Drizzle",
+            "snow": "Snow",
+            "blizzard": "Blizzard",
+            "hail": "Hail",
+            "fog": "Fog",
+            "mist": "Mist",
+            "windy": "Windy",
+            "tornado": "Tornado",
+            "hurricane": "Hurricane",
+            "ashfall": "Ashfall",
+            "sandstorm": "Sandstorm",
+            "luminousSky": "Luminous Sky",
+            "bloodRain": "Blood Rain",
+            "manaStorm": "Mana Storm",
+            "arcaneFog": "Arcane Fog",
+            "voidstorm": "Voidstorm",
+            "celestialEclipse": "Celestial Eclipse",
+            "meteorShower": "Meteor Shower",
+            "frozenHell": "Frozen Hell",
+            "sunshower": "Sunshower",
+            "spectralStorm": "Spectral Storm",
+            "etherealDrizzle": "Ethereal Drizzle",
+            "wildMagicWinds": "Wild Magic Winds"
+        },
+        "moonPhase": {
+            "new": "New Moon",
+            "waxingCrescent": "Waxing Crescent",
+            "firstQuarter": "First Quarter",
+            "waxingGibbous": "Waxing Gibbous",
+            "full": "Full Moon",
+            "waningGibbous": "Waning Gibbous",
+            "lastQuarter": "Last Quarter",
+            "waningCrescent": "Waning Crescent",
+            "bloodMoon": "Blood Moon",
+            "eclipse": "Eclipse",
+            "voidMoon": "Void Moon",
+            "twinMoons": "Twin Moons",
+            "manaMoon": "Mana Moon",
+            "celestialAlignment": "Celestial Alignment",
+            "shatteredMoon": "Shattered Moon",
+            "spiritMoon": "Spirit Moon"
+        },
+        "configuration": {
+            "title": "Configuration Menu",
+            "firstTimeTitle": "First Time Setup",
+            "tabs": {
+                "configuration": "Configuration",
+                "visibility": "Visibility",
+                "aspect": "Aspect",
+                "badges": "Badges",
+                "time": "Time",
+                "calendar": "Calendar",
+                "automation": "Automation",
+                "environment": "Environment"
+            },
+            "seasons": {
+                "label": "Season Colors"
+            },
+            "macrosFieldset": {
+                "label": "Automation Macros",
+                "hint": "Macros to run at specific times of day. The macros will be executed for all connected users that have permissions to run it."
+            },
+            "newDayMacros": {
+                "label": "New Day Macros"
+            },
+            "dawnMacros": {
+                "label": "Dawn Macros"
+            },
+            "duskMacros": {
+                "label": "Dusk Macros"
+            },
+            "middayMacros": {
+                "label": "Midday Macros"
+            },
+            "use24HourClock": {
+                "label": "Use 24 Hour Clock"
+            },
+            "wideLetterSpacing": {
+                "label": "Wide Letter Spacing"
+            },
+            "useMonospace": {
+                "label": "Use Monospace Font"
+            },
+            "noPills": {
+                "label": "Plain Style"
+            },
+            "useFullWidth": {
+                "label": "Force maximum width"
+            },
+            "hideInCombat": {
+                "label": "Hide During Combat"
+            },
+            "topOffset": {
+                "label": "Top Margin (px)"
+            },
+            "hideExpired": {
+                "label": "Hide Expired Events"
+            },
+            "copyButton": {
+                "label": "Copy from current configuration (Save and reopen for formatting)"
+            },
+            "customCalendar": {
+                "label": "Custom Calendar JSON",
+                "hint": "JSON Definition for the custom calendar. No support is provided for the custom calendar or on how to setup the JSON file. You can find some sample calendars on the wiki.",
+                "error": "Invalid JSON format for the custom calendar, setting has been reverted to the previous state. Please check the console for more details."
+            },
+            "useCustomMoons": {
+                "label": "Customize Moons"
+            },
+            "customMoons": {
+                "label": "Custom Moons JSON",
+                "hint": "JSON Definition for the custom moons. While moons can also be defined in the calendar JSON, this allows you to override the moons without having to change the calendar JSON in cases where, for example, you are using a calendar defined by the system or another module and you want to add moons to it. No support is provided for the custom moons or on how to setup the JSON file see the wiki for examples.",
+                "error": "Invalid JSON format for the custom moons, setting has been reverted to the previous state. Please check the console for more details."
+            },
+            "climateData": {
+                "label": "Climate Data",
+                "hint": "JSON Definition for the weather and temperature generation. No support is provided for the custom climate or on how to setup the JSON file."
+            },
+            "customBadge": {
+                "label": "Custom Badge"
+            },
+            "calendar": {
+                "label": "Calendar",
+                "hint": "Custom calendar as defined in the Custom Calendar JSON",
+                "default": "System Default",
+                "custom": "Custom"
+            },
+            "moonLabel": {
+                "label": "Moon Phase Label"
+            },
+            "moonColor": {
+                "label": "Moon Phase Color"
+            },
+            "moonAutomation": {
+                "label": "Moon Phase Automation",
+                "hint": "If moons are defined in the calendar, Simple Timekeeping will automatically update the moon badge with the current moon phase."
+            },
+            "weatherLabel": {
+                "label": "Weather Label"
+            },
+            "weatherOverlay": {
+                "label": "Weather Animation"
+            },
+            "weatherColor": {
+                "label": "Weather Color"
+            },
+            "showFullDate": {
+                "label": "Show full date badge"
+            },
+            "daysDisplay": {
+                "label": "Days Display",
+                "options": {
+                    "none": "None",
+                    "sinceEpoch": "Since Start of Calendar",
+                    "dayOfYear": "Day of Year"
+                }
+            },
+            "dayOffset": {
+                "label": "Start Day Offset",
+                "hint": "Offset to apply to the number of days when using the 'Since Start of Calendar' option in 'Days Display'"
+            },
+            "dawn": {
+                "label": "Dawn",
+                "hint": "Time of day in percentage, for example if your day is 24 hours, 0.5 would be 12:00 and 0.25 would be 06:00"
+            },
+            "dusk": {
+                "label": "Dusk",
+                "hint": "Time of day in percentage, for example if your day is 24 hours, 0.5 would be 12:00 and 0.75 would be 18:00"
+            },
+            "latitude": {
+                "label": "Climate Zone",
+                "hint": "Select the climate zone for your world. If set it will be used to generate weather, temperature and dawn/dusk times (ignoring other dawn/dusk settings)",
+                "options": {
+                    "disabled": "Disabled",
+                    "equatorial": "Equatorial",
+                    "tropical": "Tropical",
+                    "subtropical": "Subtropical",
+                    "hotDesert": "Hot Desert",
+                    "mediterranean": "Mediterranean",
+                    "temperate": "Temperate",
+                    "coolTemperate": "Cool Temperate",
+                    "subpolar": "Subpolar",
+                    "boreal": "Boreal"
+                }
+            },
+            "genWeather": {
+                "label": "Generate Weather",
+                "hint": "Generate a new weather every day. Uses Climate Zone to determine the climate.",
+                "options": {
+                    "no": "No",
+                    "noTemp": "Yes (No Temperature)",
+                    "tempC": "Yes + Celsius",
+                    "tempF": "Yes + Fahrenheit"
+                }
+            },
+            "dayColor": {
+                "label": "Day Tint"
+            },
+            "nightColor": {
+                "label": "Night Tint"
+            },
+            "hueIntensity": {
+                "label": "Scene Tint Intensity",
+                "hint": "When Simple Timekeeping sets a darkness level, it will also apply a tint to the scene based on the day and night colors."
+            },
+            "badgeLabel": {
+                "label": "Label"
+            },
+            "badgeColor": {
+                "label": "Color"
+            },
+            "secondsPerRound": {
+                "label": "Seconds per Combat Round"
+            },
+            "secondsPerRealSecond": {
+                "label": "Second per Real Time second"
+            },
+            "journalEntryEvents": {
+                "label": "Events Journal Entry Name"
+            },
+            "clockSeconds": {
+                "label": "Update Frequency (seconds)"
+            },
+            "setDateTime": {
+                "label": "Set current Date/Time"
+            },
+            "darknessSync": {
+                "label": "Sync Scene Darkness and Weather",
+                "hint": "Whether scene darkness and weather should be set automatically based on the current time and weather. This option can also be configured per scene at the bottom of the lighting tab.",
+                "options": {
+                    "default": "Use Global Default",
+                    "sync": "Sync Weather & Darkness",
+                    "noSync": "Don't Sync",
+                    "weatherOnly": "Sync Weather Only",
+                    "darknessOnly": "Sync Darkness Only"
+                }
+            }
+        },
+        "app": {
+            "searchEvents": "Search Events",
+            "create-event": {
+                "eventTime": {
+                    "label": "Event Start"
+                },
+                "eventEnd": {
+                    "label": "Event End (optional)"
+                },
+                "duration": {
+                    "label": "Event Duration (hours)"
+                },
+                "edit": {
+                    "label": "Edit Event Date/Time"
+                },
+                "repeat": {
+                    "label": "Repeat",
+                    "options": {
+                        "none": "Do not repeat",
+                        "day": "Every Day",
+                        "week": "Every Week",
+                        "month": "Every Month",
+                        "year": "Every Year"
+                    }
+                }
+            },
+            "controls": {
+                "create-event": {
+                    "tooltip": "Create Event"
+                },
+                "day-back": {
+                    "tooltip": "Back one Day (Ctrl 1 week, Shift 3 days, Alt 2 days)"
+                },
+                "hour-back": {
+                    "tooltip": "Back one Hour (Ctrl 30min, Shift 10min, Alt 5min)"
+                },
+                "hour-forward": {
+                    "tooltip": "Advance one Hour (Ctrl 30min, Shift 10min, Alt 5min)"
+                },
+                "day-forward": {
+                    "tooltip": "Advance one Day (Ctrl 1 week, Shift 3 days, Alt 2 days)"
+                },
+                "sunrise": {
+                    "tooltip": "Sunrise"
+                },
+                "sunset": {
+                    "tooltip": "Sunset"
+                },
+                "midday": {
+                    "tooltip": "Midday"
+                },
+                "midnight": {
+                    "tooltip": "Midnight"
+                },
+                "configure": {
+                    "tooltip": "Configure"
+                },
+                "toggle-events": {
+                    "tooltip": "Events"
+                }
+            },
+            "weather": {
+                "generate": "Generate"
+            }
+        },
+        "flags": {}
+    }
+}

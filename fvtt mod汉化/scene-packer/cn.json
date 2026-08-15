@@ -1,0 +1,573 @@
+
+  "SCENE-PACKER": {
+    "ok": "确定",
+    "dontShow": "不再显示",
+    "settings": {
+      "context-menu": {
+        "name": "启用Scene Packer右键菜单",
+        "hint": "添加右键菜单项以协助打包场景。仅在积极开发和打包模组中的场景时才需要启用此功能。"
+      }
+    },
+    "welcome": {
+      "title": "快速入门",
+      "intro": "<h2>欢迎来到<strong>{adventure}</strong>。</h2>",
+      "brand-new": "<p>是否要导入并解包此模组的内容？</p>",
+      "update-available": "<p>有更新可用。你已安装<strong>{existing}</strong>，当前可用版本为<strong>{version}</strong>。是否要导入此模组的内容？</p>",
+      "update-cancelled": "{module}从{from}更新至{to}已取消。",
+      "update-warning-title": "警告！即将进行破坏性操作！",
+      "update-warning-content": "<h2><i class='fas fa-exclamation-triangle'></i> 警告</h2><p>当前世界中存在属于<strong>{module}</strong>的条目。根据你的选择，将<em>删除</em>这些现有条目，然后导入新条目。</p><p><strong>强烈建议</strong>在执行此操作之前备份你的世界。如果尚未备份，请选择“取消”并<em>立即备份</em>，退出你的世界并备份与此世界对应的世界文件夹（worlds/{world}）。</p><p><strong>如果你对</strong>来自<em>{module}</em>的条目进行了任何更改（例如编辑日志条目或向场景添加玩家角色Token），并且希望保留这些更改，则应在选择<em>替换</em>之前将更改复制到世界外部（例如通过截图或右键单击条目并选择右键菜单中的“导出数据”），因为这些条目和更改<em>将被删除</em>。</p>{listToDelete}<p>你希望如何继续？</p><ul><li><em>替换</em>现有条目。</li><li><em>重命名</em>旧条目，但保留现有条目。</li><li><em>取消</em>此过程，例如<strong>进行备份</strong>。</li></ul>",
+      "update-warning-list-to-delete": "将被删除、替换或重命名的现有条目：",
+      "yes-all": "是，导入<strong>所有{count}个实体</strong>",
+      "yes-all-fallback": "是，导入<strong>所有实体</strong>",
+      "let-me-choose": "让我选择单独的<strong>场景</strong>",
+      "close": "关闭",
+      "migration-wait": "请等待，正在迁移\"{module}\"的合集……",
+      "migration-complete": "\"{module}\"合集的迁移已完成。",
+      "import-all": {
+        "title": "请等待……",
+        "wait-title": "请等待……正在从{name}导入所有内容。",
+        "wait": "请等待……正在加载{type}……",
+        "creating-data": "正在从{label}创建{count}个{type}……",
+        "complete": "已完成从{name}导入所有内容。"
+      }
+    },
+    "worth-packing": {
+      "title": "值得打包的场景",
+      "intro": "以下{count}个场景（共{total}个）值得打包（如果尚未打包）：",
+      "verify": "验证合集",
+      "verify-intro": "<p>验证你世界中的场景是否也存在于模组合集中，并且包含打包的数据。</p><p><strong>请注意：</strong>此过程不会验证打包数据是否相同，它仅确保合集中存在打包数据。</p>",
+      "verify-select": "选择包含你要验证的合集的模组：",
+      "verify-slow": "<strong>请注意：</strong>此过程可能需要一些时间，具体取决于你拥有的场景数量。",
+      "verify-wait": "请等待……",
+      "verify-missing": "以下{count}个场景（共{total}个）在\"{module}\"的合集中可能存在问题：",
+      "verify-ok": "在\"{module}\"的合集中找到了所有场景。",
+      "verify-not-found": "缺失",
+      "verify-not-packed": "无打包数据",
+      "none": "没有包含值得打包数据的场景。"
+    },
+    "asset-report": {
+      "name": "资产报告",
+      "selector": "选择是针对本地世界还是针对模组的合集运行资产报告。",
+      "notes": "以下是资产报告，显示你的{mode}中依赖外部位置的实体。它不支持通配符Token。",
+      "copy": "复制JSON到剪贴板",
+      "copied-to-clipboard": "资产报告已复制到剪贴板！",
+      "scenes": "场景",
+      "cards": "卡片",
+      "actors": "角色",
+      "journals": "日志",
+      "items": "物品",
+      "playlists": "播放列表",
+      "macros": "宏",
+      "tables": "随机表",
+      "show": "显示依赖项",
+      "hide": "隐藏依赖项",
+      "hide-ok": "仅显示具有依赖项的条目：",
+      "wait": "请等待……正在加载{type}……",
+      "module-select": {
+        "title": "模组选择",
+        "instructions": "资产报告将列出{mode}中所有依赖模组外部位置的资产。使用此报告帮助确定分发模组时哪些图像会损坏。使用此表单选择要视为数据源的模组。在大多数情况下，这应该只是你的模组及其依赖项。",
+        "none": "此世界中没有可用的模组。",
+        "search": "过滤模组",
+        "web-external": "在计算依赖项时将Web URL视为“外部”。",
+        "mini": "选择要运行资产报告的模组。仅显示具有合集的模组。"
+      },
+      "no-assets": "无资产",
+      "no-assets-details": "此世界中没有资产。",
+      "processing-assets": "正在处理资产",
+      "processing-assets-count": "正在验证{count}个资产（共{total}个）……",
+      "run": "运行资产报告"
+    },
+    "notifications": {
+      "first-launch": "首次启动此场景！正在解包场景……",
+      "done": "全部完成！",
+      "pack-scene": {
+        "writing-journals": "正在将{number}个日志写入场景：{name}",
+        "no-journal-pins": "未检测到场景中的日志标记。",
+        "writing-tokens": "正在将{number}个Token写入场景：{name}",
+        "no-tokens": "未检测到场景中的Token。",
+        "writing-tile-actions": "正在将{countActions}个动作写入场景{name}中的{countTiles}个图块",
+        "already-shown-welcome": "欢迎日志\"{journal}\"已为此版本\"{version}\"显示。"
+      },
+      "import-entities": {
+        "creating-data": "正在导入{count}个新的{type}。",
+        "missing-name": "尝试为没有名称的Token查找角色失败。",
+        "could-not-import": "导入实体时出错",
+        "invalid-packs": {
+          "error": "无效的合集配置。无法导入{type}。请检查控制台（F12）以获取更多详细信息。",
+          "short": "ImportEntities被调用时未定义searchPacks。",
+          "details": "ImportEntities被调用时未定义有效的searchPacks。请检查manifest.json和模组初始化文件之间的拼写错误。收到以下调用详细信息：",
+          "reference": "ImportEntities被调用时使用了未在Foundry中注册的引用。请检查manifest.json和模组初始化文件之间的拼写错误。如果你*不是*此模组的创建者，则问题可能是引用了来自不同游戏系统的合集。如果是这样，你可以忽略此警告。收到以下调用详细信息：",
+          "missing-pack": "无效的合集配置。找不到合集{packName}。请检查控制台（F12）以获取更多详细信息。",
+          "missing-pack-details": "ImportEntities被调用以搜索未找到的合集\"{packName}\"。请检查模组设置中的拼写错误。"
+        },
+        "invalid-collection": "找不到类型为\"{type}\"的游戏集合。",
+        "active-tiles-macro-missing": "图块\"{tile}\" | Monk's Active Tile Triggers | 在你的世界中找不到名为\"{macro}\"的宏。此激活图块将保持未链接状态，你需要手动重新链接宏。",
+        "active-tiles-entity-reference-missing": "图块\"{tile}\" | Monk's Active Tile Triggers | 在你的世界中找不到替换实体\"{ref}\"。此激活图块将保持未链接状态，你需要手动重新链接实体。",
+        "active-tiles-unpacked": "在场景\"{scene}\"上解包了{tiles}个图块和{actions}个动作。",
+        "cf-clean-up-title": "清理{name}实体？",
+        "cf-clean-up": "<p>你刚刚导入了{count}个名为<code style=\"display:inline-block;\">{name}</code>的实体，它们属于你未启用的<a href=\"https://foundryvtt.com/packages/compendium-folders\" target=\"_blank\">Compendium Folders</a>模组。</p><p>是否要运行<a class=\"entity-link\" draggable=\"true\" data-pack=\"scene-packer.macros\" data-id=\"D0GsPqV3zglJ9w7V\"><i class=\"fas fa-terminal\"></i> 清理{name}条目</a>宏？</p>"
+      },
+      "find-journal-compendium": {
+        "no-match": "在合集中找不到名为\"{journal}\"的日志条目。",
+        "invalid-index": "从合集中加载日志内容时出错。请检查调试日志以获取详细信息。",
+        "missing-pack": "无效的合集配置。找不到合集{packName}。请检查控制台（F12）以获取更多详细信息。",
+        "missing-pack-details": "FindJournalInCompendiums被调用以搜索未找到的合集\"{packName}\"。请检查模组设置中的拼写错误。",
+        "no-packs": "无效的合集配置。打包场景日志标志将无法工作。请检查控制台（F12）以获取更多详细信息。",
+        "no-packs-details": "调用FindJournalInCompendiums时，模组初始化脚本中未定义“journalPacks”。请参阅“示例模组javascript”日志条目以了解如何定义常量。可能的值为：{packOptions}",
+        "no-packs-in-module": "警告：你的module.json中未定义日志条目合集。"
+      },
+      "find-actor-compendium": {
+        "no-match": "在合集中找不到名为\"{actor}\"的角色条目。",
+        "invalid-index": "从合集中加载角色内容时出错。请检查调试日志以获取详细信息。",
+        "missing-pack": "无效的合集配置。找不到合集{packName}。请检查控制台（F12）以获取更多详细信息。",
+        "missing-pack-details": "FindActorInCompendiums被调用以搜索未找到的合集\"{packName}\"。请检查模组设置中的拼写错误。",
+        "no-packs": "无效的合集配置。打包场景角色Token将无法工作。请检查控制台（F12）以获取更多详细信息。",
+        "no-packs-details": "调用FindActorInCompendiums时，模组初始化脚本中未定义“creaturePacks”。请参阅“示例模组javascript”日志条目以了解如何定义常量。可能的值为：{packOptions}",
+        "no-packs-in-module": "警告：你的module.json中未定义角色合集。"
+      },
+      "find-playlist-compendium": {
+        "no-match": "在合集中找不到名为\"{playlist}\"的播放列表条目。",
+        "invalid-index": "从合集中加载播放列表内容时出错。请检查调试日志以获取详细信息。",
+        "missing-pack": "无效的合集配置。找不到合集{packName}。请检查控制台（F12）以获取更多详细信息。",
+        "missing-pack-details": "FindPlaylistInCompendiums被调用以搜索未找到的合集\"{packName}\"。请检查模组设置中的拼写错误。"
+      },
+      "find-macro-compendium": {
+        "no-match": "在合集中找不到名为\"{macro}\"的宏条目。",
+        "invalid-index": "从合集中加载宏内容时出错。请检查调试日志以获取详细信息。",
+        "missing-pack": "无效的合集配置。找不到合集{packName}。请检查控制台（F12）以获取更多详细信息。",
+        "missing-pack-details": "FindMacroInCompendiums被调用以搜索未找到的合集\"{packName}\"。请检查模组设置中的拼写错误。"
+      },
+      "find-entity-compendium": {
+        "no-match": "在合集中找不到名为\"{name}\"的{type}条目。",
+        "invalid-index": "从合集中加载{type}内容时出错。请检查调试日志以获取详细信息。",
+        "missing-pack": "无效的合集配置。找不到合集{packName}。请检查控制台（F12）以获取更多详细信息。",
+        "missing-pack-details": "findCompendiumEntity被调用以搜索未找到的合集\"{packName}\"。请检查模组设置中的拼写错误。"
+      },
+      "find-actor": {
+        "missing-name": "找不到没有名称的Token。请检查调试日志以获取详细信息。",
+        "missing-name-details": "尝试查找没有名称的Token不会有好的结果。请确保在打包之前，Token和角色都有名称。"
+      },
+      "link-tokens": {
+        "missing": "找不到{count}个角色进行链接，它们将保持未链接状态。请检查调试日志以获取详细信息。",
+        "missing-details": "在{scene}中找不到{count}个角色进行链接。以下角色Token未在\"{adventureName}\"文件夹中找到。",
+        "linking": "正在重新链接{count}个链接到角色的Token。"
+      },
+      "spawn-notes": {
+        "missing": "找不到{count}个日志进行链接。请检查调试日志以获取详细信息。",
+        "missing-details": "在{scene}中找不到{count}个笔记进行链接。以下日志未找到。",
+        "spawning": "正在链接{count}个日志笔记。"
+      },
+      "clear-data": {
+        "done": "已完成清除打包数据。"
+      },
+      "deprecated": "警告，{method}已弃用，将在未来版本中移除。"
+    },
+    "scene-context": {
+      "pack": {
+        "title": "打包场景数据"
+      },
+      "unpack": {
+        "title": "解包场景数据"
+      },
+      "clear": {
+        "title": "清除打包的场景数据"
+      }
+    },
+    "log": {
+      "invalidForce": "{moduleName} | 无效的日志用法。期望“log(force, ...args)”为布尔值，但得到了{force}"
+    },
+    "errors": {
+      "adventureName": {
+        "ui": "调用SetAdventureName()无效。请查看控制台以获取详细信息。",
+        "details": "传递给“SetAdventureName()”的冒险名称无效。这必须是module.json中“title”字段中定义的冒险名称。"
+      },
+      "moduleName": {
+        "ui": "调用SetModuleName()无效。请查看控制台以获取详细信息。",
+        "details": "传递给“SetModuleName()”的模组名称无效。这必须是module.json中“name”字段中定义的模组名称。"
+      },
+      "instance": {
+        "ui": "调用ScenePacker无效。请查看控制台以获取详细信息。",
+        "details": "传递给“ScenePacker”的模组名称或方法无效。模组名称必须与module.json中“name”字段中定义的名称一致。确保名称正确，并且你的模组已正确初始化ScenePacker - 请参阅合集中的日志条目以获取帮助。"
+      },
+      "version": {
+        "packed-low": "场景\"{scene}\"（来自模组\"{sourceModule}\"）是使用Scene Packer版本\"{version}\"打包的，该版本早于最低兼容版本\"{supportedVersion}\"。请联系作者并要求他们使用当前版本重新打包场景。"
+      },
+      "welcomeJournal": {
+        "ui": "调用SetWelcomeJournal()无效。请查看控制台以获取详细信息。",
+        "details": "传递给“SetWelcomeJournal()”的日志名称无效。这必须是模组合集中的日志名称。",
+        "missing": "调用SetWelcomeJournal()时未提供值。这将禁用导入欢迎日志。不会自动打开任何日志。"
+      },
+      "additionalJournals": {
+        "ui": "调用SetAdditionalJournalsToImport()无效。请查看控制台以获取详细信息。",
+        "details": "必须将字符串数组传递给“SetAdditionalJournalsToImport()”。它们必须是日志的名称。收到：{journal}",
+        "missing": "调用SetAdditionalJournalsToImport()时未提供值。这将禁用导入其他日志。仅导入通过地图标志链接到场景的日志。"
+      },
+      "additionalMacros": {
+        "ui": "调用SetAdditionalMacrosToImport()无效。请查看控制台以获取详细信息。",
+        "details": "必须将字符串数组传递给“SetAdditionalMacrosToImport()”。它们必须是宏的名称。收到：{macro}",
+        "missing": "调用SetAdditionalMacrosToImport()时未提供值。这将禁用导入其他宏。"
+      },
+"creaturePacks": {
+        "ui": "调用SetCreaturePacks()无效。请查看控制台以获取详细信息。",
+        "details": "必须将字符串数组传递给“SetCreaturePacks()”。它们必须是角色合集的名称。收到：{pack}",
+        "missing": "调用SetCreaturePacks()时未提供值。这将禁用导入角色。"
+      },
+      "journalPacks": {
+        "ui": "调用SetJournalPacks()无效。请查看控制台以获取详细信息。",
+        "details": "必须将字符串数组传递给“SetJournalPacks()”。它们必须是日志合集的名称。收到：{pack}",
+        "missing": "调用SetJournalPacks()时未提供值。这将禁用导入日志。"
+      },
+      "macroPacks": {
+        "ui": "调用SetMacroPacks()无效。请查看控制台以获取详细信息。",
+        "details": "必须将字符串数组传递给“SetMacroPacks()”。它们必须是宏合集的名称。收到：{pack}",
+        "missing": "调用SetMacroPacks()时未提供值。这将禁用导入宏。"
+      },
+      "playlistPacks": {
+        "ui": "调用SetPlaylistPacks()无效。请查看控制台以获取详细信息。",
+        "details": "必须将字符串数组传递给“SetPlaylistPacks()”。它们必须是播放列表合集的名称。收到：{pack}",
+        "missing": "调用SetPlaylistPacks()时未提供值。这将禁用导入播放列表。"
+      },
+      "modulePacks": {
+        "ui": "调用SetAdditionalModulePacks()无效。请查看控制台以获取详细信息。",
+        "details": "必须将字符串数组传递给“SetAdditionalModulePacks()”。它们必须是模组的名称。收到：{pack}",
+        "missing": "调用SetAdditionalModulePacks()时未提供值。"
+      },
+      "ignoredPacks": {
+        "ui": "调用SetIgnoredCompendiumPacks()无效。请查看控制台以获取详细信息。",
+        "details": "必须将字符串数组传递给“SetIgnoredCompendiumPacks()”。它们必须是模组合集的名称。收到：{pack} 可用合集为：{packs}",
+        "invalid": "传递给“SetIgnoredCompendiumPacks()”的值无效。收到：{pack} 可用合集为：{packs}",
+        "missing": "调用SetIgnoredCompendiumPacks()时未提供值。"
+      }
+    },
+    "world-conversion": {
+      "compendiums": {
+        "wait": "请等待……请查看控制台（F12）以获取更多信息。",
+        "unlock": "正在解锁合集：{list}",
+        "lock": "正在锁定合集：{list}",
+        "lock-prompt-title": "锁定合集？",
+        "lock-prompt": "是否要锁定属于模组“{moduleName}”的合集？",
+        "lock-prompt-button": "锁定合集",
+        "checking-and-updating": "正在检查和更新{count}个日志引用，从世界链接转换为合集链接。",
+        "invalid-ref-type": "找到一个未处理的日志引用：{type}。跳过引用……",
+        "invalid-no-name": "找到一个日志引用，但无法找到其原始名称。请检查调试日志以获取详细信息。",
+        "invalid-no-matching-name": "在世界数据中找不到{type}引用：{name}",
+        "invalid-not-found": "找到一个日志引用，但无法通过名称找到其合集版本。请检查调试日志以获取详细信息。",
+        "invalid-not-found-console": "在合集数据中找不到引用。跳过更新引用……",
+        "invalid-too-many": "找到一个日志引用，但通过名称找到多个合集版本。请检查调试日志以获取详细信息。",
+        "invalid-too-many-console": "在合集数据中找到多个引用。跳过更新引用……",
+        "updating-references": "正在更改{count}个{type}引用：“{name}”",
+        "updating-reference-console": "正在更改{pack}[{journalEntryId}] {type}引用 {oldRef} -> {newRef}",
+        "updating-reference": "正在更新“{name}”中的{count}个引用。请查看控制台以获取完整详细信息。",
+        "completed-checks": "已完成{type}“{name}”{entryId}的检查。",
+        "no-references": "在{type}“{name}”{entryId}中没有需要更新的引用。",
+        "checking-contents": "正在检查{type}“{name}”{entryId}的内容。",
+        "completed": "已完成！",
+        "quick-encounters": {
+          "could-not-parse": "无法解析日志“{journal}”的快速遭遇数据。错误：{error}",
+          "updating-references": "正在更改{count}个快速遭遇引用：“{journal}”",
+          "updating-references-console": "正在更改{type} {name}引用 {oldRef} -> {newRef}",
+          "missing-actor-reference": "在快速遭遇“{journal}”中引用了角色“{actor}”，但在你的世界中找不到（要么缺失，要么有多个同名匹配）。此快速遭遇在其他世界中将无法正常工作。请重新构建此快速遭遇，重新导出（以及角色），并重新运行“重新链接日志条目”宏。",
+          "missing-journal-reference": "日志“{journal}”在你的世界中找不到（要么缺失，要么有多个同名匹配）。此快速遭遇在其他世界中将无法正常工作。请重新构建此快速遭遇，重新导出（以及角色），并重新运行“重新链接日志条目”宏。"
+        },
+        "monks-enhanced-journal-encounter": {
+          "updating-references-console": "正在更改Monk's Enhanced Journal Encounter引用：“{journal}” {oldRef} -> {newRef}"
+        },
+        "monks-enhanced-journal-actor": {
+          "updating-references-console": "正在更改Monk's Enhanced Journal Actor引用：“{journal}” {oldRef} -> {newRef}"
+        },
+        "monks-enhanced-journal-relationships": {
+          "updating-references-console": "正在更改Monk's Enhanced Journal Relationship引用：“{journal}” 添加“{newRelation}”"
+        }
+      }
+    },
+    "instance-prompt": {
+      "title": "选择实例",
+      "intro": "选择你要使用的模组：",
+      "none-found": "没有安装注册了Scene Packer的模组。请参阅合集中的日志条目以了解如何将你的模组注册到Scene Packer。",
+      "select": "选择",
+      "cancel": "取消"
+    },
+    "relink-prompt": {
+      "title": "重新链接日志条目",
+      "intro": "选择你使用Scene Packer的模组：",
+      "make-changes": "保存更改？",
+      "make-changes-info": "取消勾选此选项将以“模拟运行”模式操作，仅将更改输出到控制台。",
+      "relink": "重新链接",
+      "cancel": "取消",
+      "none": "没有安装注册了Scene Packer的模组。请参阅合集中的日志条目以了解如何将你的模组注册到Scene Packer。"
+    },
+    "performance-report": {
+      "title": "性能报告",
+      "copy": "复制到剪贴板",
+      "close": "关闭"
+    },
+    "deprecated": {
+      "method": "方法“{method}”已被弃用，将在未来版本中移除。请参阅Scene Packer合集中的日志条目以了解如何正确调用Scene Packer。"
+    },
+    "importer": {
+      "name": "Scene Packer: 导入器",
+      "invalid-pack-data": "无效的打包数据。请重试，如果问题仍然存在，请在Scene Packer或Moulinette Discord服务器上寻求帮助。",
+      "loading": "正在加载数据……",
+      "unsupported": "Scene Packer: 导入器仅支持版本 >= 0.8.0",
+      "invalid-url": "传递给Scene Packer导入器的URL值无效。收到：“{url}”。{err}",
+      "invalid-url-empty": "传递给Scene Packer导入器的URL值为空。",
+      "creating-documents": "正在创建{count}个{type}……",
+      "processing": "正在处理……",
+      "be-patient": "请耐心等待打包导入。这可能需要一些时间。如果你觉得时间过长，请检查控制台（F12）中的错误，请注意你可能需要展开日志组。",
+      "process-fetch-data": "正在获取数据……",
+      "process-creating-data": "正在创建{count}个{type}和资产……",
+      "ensure-assets": "正在确保{count}个实体的资产存在。",
+      "converting-references": "正在检查{count}个{type}的合集样式引用。",
+      "converting-reference": "正在转换“{name}”中的{type}引用 {oldRef} -> {newRef}，位置：{path}",
+      "no-existing-value": "在路径“{path}”找不到现有值。跳过更新引用……",
+      "complete": "完成！",
+      "complete-content": "导入完成。强烈建议重新加载你的世界。点击下方按钮刷新。",
+      "import-all": "导入此包中的所有{count}个实体",
+      "import-one": "导入选定的",
+      "selected-entity": "选定的{type}：",
+      "unrelated-title": "无关实体",
+      "unrelated-intro": "以下实体与此包中的任何场景没有直接关系，已自动导入以防止链接断开。",
+      "author": "作者：",
+      "discord": "Discord：",
+      "email": "电子邮件：",
+      "version": "版本：",
+      "more-info": "更多信息：",
+      "missing-asset": "包数据中缺少资产：{asset}",
+	  "incorrect-system": "你尝试导入的系统 ({packSystem}) 与当前系统 ({currentSystem}) 不同，可能会遇到问题。场景中的所有Token将被替换为占位角色以提高兼容性。是否继续？"
+    },
+    "zip-importer": {
+      "name": "从Moulinette ZIP导入",
+      "label": "打开导入向导",
+      "hint": "导入向导将允许你将Moulinette ZIP文件导入到你的世界中。",
+      "title": "从Moulinette ZIP文件导入",
+      "file": "选择要导入的ZIP文件：",
+      "description": "此导入器允许你导入为导出到Moulinette准备的ZIP文件。",
+      "description2": "导入器将从ZIP中导入整个包。如果你只想导入单个场景，请使用Moulinette。",
+      "error-unzip": "解压文件“{name}”时出错。请在Scene Packer Discord服务器上寻求帮助。",
+      "ensure-assets": "正在确保{count}个资产存在。",
+      "ensure-asset-error": "创建资产时出错：{error}",
+      "error-read": "读取文件“{name}”时出错。请在Scene Packer Discord服务器上寻求帮助。"
+    },
+    "exporter": {
+      "name": "导出到Moulinette",
+      "label": "打开导出向导",
+      "hint": "导出向导将允许你打包冒险以通过Moulinette Cloud分发。",
+      "timeout": "资产超时",
+      "timeout-help": "等待资产下载的时间（以秒为单位）。设置为0以禁用超时。",
+      "unsupported": "导出到Moulinette仅支持版本 >= 0.8.0",
+      "selected-count": "已选择{count}个实体进行导出。",
+      "toggle-checkboxes": "切换所有复选框",
+      "tabs": {
+        "actors": "角色",
+        "items": "物品",
+        "journals": "日志",
+        "macros": "宏",
+        "options": "选项",
+        "playlists": "播放列表",
+        "cards": "卡片",
+        "scenes": "场景",
+        "tables": "随机表"
+      },
+      "search": {
+        "actors": "搜索角色",
+        "items": "搜索物品",
+        "journals": "搜索日志",
+        "macros": "搜索宏",
+        "playlists": "搜索播放列表",
+        "cards": "搜索卡片",
+        "scenes": "搜索场景",
+        "tables": "搜索随机表"
+      },
+      "options": {
+        "intro": "你即将构建要通过Moulinette共享的冒险包。你必须是<a href=\"https://www.patreon.com/moulinette\" target=\"_blank\">Moulinette的Patreon</a>才能上传和分享你的冒险。",
+        "package-name": "冒险包名称",
+        "package-name-help": "对于你的作者名称必须是唯一的。",
+        "version": "冒险版本号",
+        "version-help": "如果更新冒险，请增加版本号。",
+        "author": "作者名称",
+        "author-help": "你的公开名称或笔名。将显示在冒险名称旁边。",
+        "package-description": "冒险包描述",
+        "package-description-help": "描述冒险的类型、设计的等级、包含的内容等。",
+        "package-cover": "冒险包封面图像",
+        "package-cover-help": "显示给最终用户查看冒险详细信息时的图像。",
+        "discord-id": "你的Discord标识符",
+        "discord-id-help": "如果需要联系你以获取更多信息。不会向公众显示。",
+        "email": "你的电子邮件地址",
+        "email-help": "如果需要联系你以获取更多信息。不会向公众显示。",
+        "external-link": "更多信息的URL",
+        "external-link-help": "最终用户可以在此找到有关冒险包的更多信息的绝对URL。",
+        "welcome-journal": "导入后显示的日志",
+        "welcome-journal-help": "最终用户导入冒险包后自动显示选定的日志条目。如果不想自动显示日志条目，请留空。",
+        "welcome-journal-drop-text": "将你的日志拖放到此处",
+        "allow-complete-import": "允许导入所有实体？",
+        "allow-complete-import-help": "如果不想让最终用户一次性导入整个冒险包，请选择“否”。如果你的包中有大量实体，请选择“否”以防止卡顿。",
+        "adventure-categorisation": "分类",
+        "adventure-category": "冒险类别",
+        "adventure-category-help": "此冒险属于什么类型？这将用于在Moulinette Cloud上分类你的冒险。",
+        "adventure-category-one-shot": "一次性冒险",
+        "adventure-category-short-campaign": "短战役",
+        "adventure-category-long-campaign": "长战役",
+        "adventure-category-prefab": "预制角色",
+        "adventure-category-supplement": "补充材料",
+        "adventure-duration": "冒险时长（小时）",
+        "adventure-duration-help": "完成冒险大约需要多长时间？",
+        "adventure-duration-placeholder": "预计游戏时间（小时）",
+        "adventure-players-min": "最少玩家",
+        "adventure-players-min-help": "此冒险设计的最少玩家数。",
+        "adventure-players-max": "最多玩家",
+        "adventure-players-max-help": "此冒险设计的最多玩家数。",
+        "adventure-players-recommended": "推荐玩家",
+        "adventure-players-recommended-help": "此冒险的推荐玩家数。",
+        "adventure-player-level": "玩家等级",
+        "adventure-player-level-help": "此冒险设计的最低、最高和推荐玩家等级。你可以提供多个等级范围。",
+        "adventure-player-level-add": "添加等级范围",
+        "adventure-player-level-min-placeholder": "最低",
+        "adventure-player-level-max-placeholder": "最高",
+        "adventure-player-level-recommended-placeholder": "推荐",
+        "adventure-theme": "冒险主题",
+        "adventure-theme-help": "此冒险的主要主题是什么？这将用于在Moulinette Cloud上分类你的冒险。",
+        "adventure-theme-placeholder": "主题，用逗号分隔",
+        "adventure-token-style": "Token风格",
+        "adventure-token-style-help": "选择此冒险中包含的Token风格。",
+        "adventure-token-style-top-down": "俯视",
+        "adventure-token-style-token": "传统圆形Token",
+        "adventure-token-style-iso": "等距",
+        "adventure-token-style-other": "其他",
+        "adventure-grid-type": "网格类型",
+        "adventure-grid-type-help": "选择此冒险中包含的网格类型。",
+        "adventure-grid-type-square": "方形",
+        "adventure-grid-type-hex": "六边形",
+        "adventure-pregen-characters": "包含预生成可玩角色",
+        "adventure-pregen-characters-help": "此冒险是否包含预生成的可玩角色？",
+        "adventure-tags": "附加标签",
+        "adventure-tags-help": "哪些其他标签描述了此冒险？这将用于在Moulinette Cloud上分类你的包。",
+        "adventure-tags-placeholder": "标签，用逗号分隔",
+        "adventure-system": "冒险系统",
+        "adventure-system-help": "此冒险设计的系统。留空以表示无系统要求。请注意，包含角色和物品通常会使你的冒险特定于系统。",
+        "adventure-tag-suggestions": "常用选项",
+        "adventure-themes": {
+          "dungeon": "地下城",
+          "wilderness": "荒野",
+          "town": "城镇/村庄",
+          "city": "城市/都市",
+          "forest": "森林",
+          "stronghold": "要塞（城堡/堡垒/塔楼）",
+          "cave": "洞穴",
+          "mountain": "山脉",
+          "ruins": "废墟/坟墓/墓地",
+          "temple": "神庙/神殿",
+          "mansion": "房屋/豪宅",
+          "swamp": "沼泽/荒原",
+          "ship": "船只",
+          "island": "岛屿",
+          "desert": "沙漠/金字塔",
+          "underdark": "幽暗地域/地下",
+          "sewer": "下水道",
+          "feywild": "妖精荒野",
+          "abyss": "无底深渊/九层地狱",
+          "horror": "恐怖",
+          "mystery": "神秘",
+          "snow": "极地/雪地",
+          "mega-dungeon": "巨型地下城",
+          "shadowfell": "堕影冥界",
+          "air": "空中/飞艇",
+          "heist": "劫案/潜入"
+        },
+        "next": "当你点击下一步时，Scene Packer将链接所有实体，验证它们，然后创建一个包含整个冒险（包括资产）的<code>data.zip</code>文件。此文件应上传到Moulinette网站的标准资产部分。一旦处理完毕并发布，最终用户将能够从Moulinette的场景部分导入它。",
+        "help": "如果你在打包冒险时需要任何帮助，请访问 <img src=\"https://github.com/League-of-Foundry-Developers/scene-packer/raw/main/assets/icons/hand-truck.png\" alt=\"icon\" height=\"24\" valign=\"middle\" style=\"max-width:100%;border:0;\"> <a href=\"https://discord.com/invite/HY3xhBEf2A\" target=\"_blank\">Scene Packer Discord服务器</a> 并与 <code>blair#9056</code> 联系。",
+        "support": "此工具的开发投入了大量工作。如果你觉得它有用，请考虑通过<em>向blair提供你的冒险</em>、<a href=\"https://www.patreon.com/blairm\" target=\"_blank\">成为我的Patreon</a> 或 <a href=\"https://ko-fi.com/blairm\" target=\"_blank\">请我喝杯咖啡</a>来支持该项目。无论你选择如何，此模组都将免费提供给你。"
+      },
+      "progress": {
+        "title": "正在导出{name}",
+        "please-wait": "请等待……",
+        "status": "请等待，正在验证和压缩{total}个实体……",
+        "speed": "当前资产下载速度。",
+        "size": "冒险的未压缩大小。",
+        "complete": "完成",
+        "downloading": "正在下载文件……",
+        "next-step": "请将以下文件上传到Moulinette管理界面的标准资产部分：<ul><li>{files}</li></ul>",
+        "extract-data": "正在提取JSON数据……",
+        "compressing-data": "正在压缩{count}个{type}……",
+        "compressing-assets": "正在映射{count}个资产……",
+        "download-error": "下载资产时出错：{error}"
+      },
+      "invalid": {
+        "title": "无效的表单数据",
+        "fields": "<p><strong>选项</strong>选项卡上的以下字段需要填写：</p><ul>{fields}</ul>"
+      }
+    },
+  "adventure-converter": {
+    "name": "冒险转换",
+    "setting-hint": "将你现有的Scene Packer冒险转换为V10冒险文档格式。（仅对创作者有用，对最终用户无意义。）",
+    "sitting-label": "打开冒险转换器",
+    "summary": "使用此工具将你现有的Scene Packer冒险转换为V10冒险文档格式。在使用此工具之前，你可能希望{link}。",
+    "view-tutorial": "观看教程视频",
+    "summary-help": "如果你在转换包时需要任何帮助，请访问{img} {link}并与<code>blair#9056</code>联系。",
+    "discord-name": "Scene Packer Discord服务器",
+    "missing-adventure-pack": "你选择的模组目前不支持冒险包格式。",
+    "missing-adventure-pack-link": "查看推荐的<code>module.json</code>更改。",
+    "select-adventure": "选择要转换的兼容模组",
+    "select-adventure-hint": "选择你希望转换的Scene Packer模组。它必须在此世界中启用。",
+    "select-adventure-details": "从上方选择一个模组以开始。",
+    "no-adventures": "未选择启用Scene Packer的模组。你只能使用此转换器转换已在此世界中启用的现有Scene Packer冒险。",
+    "welcome-journal": "欢迎日志",
+    "welcome-journal-hint": "欢迎日志（如果设置）将在冒险导入后自动显示。你可以将日志拖到框中以设置此值。",
+    "welcome-journal-description": "在成功导入此冒险后，{link}日志将自动显示给最终用户。",
+    "error-journal-wrong-pack": "你必须选择属于你正在转换的模组的日志。",
+    "error-journal-not-found": "在现有模组中找不到名为\"{name}\"的日志。请尝试直接从模组的合集中拖拽日志。",
+    "backup-warning": "强烈建议在运行冒险转换器之前备份你的模组和世界。这将确保你拥有与Foundry VTT v9兼容的模组版本。",
+    "backup-warning-link": "查看推荐的备份步骤。",
+    "submit": "转换冒险",
+    "manifest-upgrade-prompt-title": "冒险选项",
+    "manifest-upgrade-prompt-message": "为你的冒险文档输入一个名称。这是在合集侧栏中显示的包标签。",
+    "manifest-upgrade-prompt-label": "冒险标签",
+    "manifest-upgrade-prompt-button": "显示module.json更改",
+    "manifest-upgrade-detail-1": "需要对你的<code>{module}</code>文件进行以下更改，并已建议如下：",
+    "manifest-upgrade-detail-2": "添加了一个<code>Adventure</code>包。",
+    "manifest-upgrade-detail-3": "将<code>compatibility</code>更改为最低V10。",
+    "manifest-upgrade-detail-4": "由Core Foundry VTT平台执行的转换过程会将警告输出到控制台（F12）。请考虑查看这些警告以获取除上述两项之外的其他更改的上下文。",
+    "manifest-upgrade-next-steps": "在你的冒险模组可以转换之前，你需要手动执行以下步骤（请记下或截屏这些步骤，因为在完成所有步骤之前你将关闭此对话框）：",
+    "manifest-upgrade-next-steps-1": "在文本编辑器中打开<code>{module}</code>文件。",
+    "manifest-upgrade-next-steps-2": "将文件替换为以下内容并查看更改。进行你认为合适的任何额外更改。如果你有任何疑问，请加入Discord服务器以获取帮助。",
+    "manifest-upgrade-next-steps-3": "保存文件。",
+    "manifest-upgrade-next-steps-4": "退出此世界，返回到设置屏幕（这将重新加载模组详细信息）。",
+    "manifest-upgrade-next-steps-5": "再次加载世界并返回冒险转换器。选择你刚刚更新的模组并继续进行转换。",
+    "manifest-upgrade-automated-steps": "已自动选择以下文件路径来存储冒险合集数据库。如果你选择使用与上述建议的<code>module.json</code>更改不同的格式，则可能需要手动调整包路径。",
+    "manifest-upgrade-ok": "我已按照上述步骤操作。",
+    "manifest-upgrade-error": "生成module.json推荐更改时出错。请检查控制台（F12）以获取更多信息。",
+    "manifest-upgrade-module-not-found": "世界中不存在名为\"{name}\"的模组。",
+    "process-error-no-module": "必须提供模组名称。",
+    "process-error-no-target": "你必须提供目标包。",
+    "process-error-no-source": "你必须提供至少一个要转换的源包。",
+    "process-error-no-instance": "未找到名为\"{moduleName}\"的模组的Scene Packer实例。",
+    "process-error-no-module-found": "世界中未找到名为\"{moduleName}\"的模组。",
+    "process-error-no-pack-found": "未找到名为\"{packName}\"的合集包，其名称为\"{moduleName}\"。"
+  },
+  "welcome-journal": {
+    "import-all": "从模组导入所有{totalCount}个实体",
+    "import-replace": "替换现有内容",
+    "import-rename": "重命名现有内容",
+    "import-close": "不再显示"
+  },
+  "assets-to-lowercase": {
+    "title": "检查资产是否存在并转换为小写",
+    "description": "此工具将检查你世界中所有资产是否存在并将其引用转换为小写。它首先会列出所有将要转换的资产引用，然后提示你确认。",
+    "find-assets": "查找资产",
+    "convert": "转换资产",
+    "wait": "请稍候…",
+    "nothing": "你的世界中未找到任何资产。",
+    "all-lowercase": "所有资产已为小写。",
+    "list-assets": "以下资产将被转换为小写：",
+    "confirm": "你确定要将这些资产转换为小写吗？"
+  },
+  "reset-prompts": {
+    "name": "重置导入提示",
+    "label": "选择模组",
+    "hint": "使用此功能重置你首次安装受支持模组时收到的提示。如果你第一次不小心关闭了它，这将非常有用。",
+    "nothing": "未安装任何注册到Scene Packer的模组，因此无法重置欢迎提示。请确保模组已启用。",
+    "refresh-text": "重置提示将自动重新加载你的世界。",
+    "select-module-label": "选择模组："
+    }
+  }
+}
+

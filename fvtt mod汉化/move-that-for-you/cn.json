@@ -1,0 +1,58 @@
+
+  "move-that-for-you": {
+    "scene": {
+      "move": "Move That For You: 场景切换[移动]",
+      "rotate": "Move That For You: 场景切换[旋转]"
+    },
+    "control-title": "允许玩家移动此图块",
+    "config": {
+      "move": {
+        "label": "移动",
+        "note": "允许玩家移动此放置物",
+        "spawnNote": "允许玩家移动生成的图块/token。"
+      },
+      "rotate": {
+        "label": "旋转",
+        "note": "允许玩家旋转此放置物",
+        "spawnNote": "允许玩家旋转生成的图块/token。"
+      }
+    },
+    "app": {
+      "pick-bounds": "选择边界",
+      "clear-bounds": "清除边界"
+    },
+    "errors": {
+      "no-scene": "需要一个激活的场景。"
+    },
+    "info": {
+      "cleared-bounds": "清除了场景 {id} 的边界",
+      "new-bounds": "为场景 {id} 定义新边界: {bounds}"
+    },
+    "settings": {
+      "configure-bounds": {
+        "name": "边界配置",
+        "hint": "定义当前场景的移动限制边界。"
+      },
+      "fit-in-bounds": {
+        "name": "符合边界",
+        "hint": "只有符合整个可放置范围的更新才会被允许。"
+      },
+      "configure-bounds-key": {
+        "name": "边界配置",
+        "hint": "打开当前场景的边界配置。"
+      },
+      "enable-tile-controls": {
+        "name": "图块控件",
+        "hint": "激活图块模组控件。(需要重新加载)"
+      },
+      "enable-token-controls": {
+        "name": "Token控件",
+        "hint": "激活Token模组控件。(需要重新加载)"
+      },
+      "enable-hud-buttons": {
+        "name": "将权限按钮插入 HUD",
+        "hint": "启用后，图块/token HUD 上将添加一个新按钮，用于控制模组权限。"
+      }
+    }
+  }
+}

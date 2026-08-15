@@ -1,0 +1,426 @@
+{
+    "BG3.Hotbar": {
+        "Errors": {
+            "InvalidDrop": "Invalid drop data: not valid JSON.",
+            "InvalidItem": "Invalid item data. Only items with a valid UUID can be placed on the hotbar.",
+            "ItemNotFound": "Could not retrieve item from UUID. Not placing on hotbar.",
+            "WrongToken": "You cannot drop items from a different token onto this hotbar.",
+            "UnableToRetrieve": "Unable to retrieve item data.",
+            "MacroNotFound": "Macro not found",
+            "NoActor": "No actor found",
+            "NoUIReference": "UI reference not found. Please try refreshing the page."
+        },
+        "ContextMenu": {
+            "EditItem": "Edit Item",
+            "ConfigureActivities": "Configure Activities",
+            "Remove": "Remove"
+        },
+        "UI": {
+            "AddRow": "Add Row",
+            "RemoveRow": "Remove Row"
+        },
+        "SettingsMenu": {
+            "ResetLayout": "Reset Layout",
+            "ClearAllItems": "Clear All Items",
+            "ImportLayout": "Import Layout",
+            "ExportLayout": "Export Layout"
+        },
+        "Tooltips": {
+            "Action": "Action",
+            "Range": "Range",
+            "Target": "Target",
+            "Duration": "Duration",
+            "Description": "Description",
+            "LoadingDescription": "Loading description...",
+            "NoDescription": "No description available.",
+            "Permanent": "Permanent",
+            "RoundsRemaining": "{count} Round(s) Remaining",
+            "TurnsRemaining": "{count} Turn(s) Remaining",
+            "SecondsRemaining": "{count} Seconds Remaining",
+            "Status": "Status",
+            "Active": "Active",
+            "Disabled": "Disabled"
+        },
+        "Ability": {
+            "Tooltip": "Left-Click to show ability checks and saving throws.<br>Right-click to roll Initiative (ALT: Adv / CTRL: Disadv)."
+        }
+    },
+    "BG3.Portrait": {
+        "HP": {
+            "Death": "Kill !",
+            "Full": "Fully heal"
+        }
+    },
+    "BG3.Settings": {
+        "EnableUI": {
+            "Name": "Enable BG3 Hotbar UI",
+            "Hint": "Enable or disable the BG3-style hotbar interface. Disable this if you prefer to use a different hotbar module or the default Foundry hotbar."
+        },
+        "ShowDamageRanges": {
+            "Name": "Show Damage as Ranges",
+            "Hint": "Display spell damage as min-max ranges instead of dice notation (e.g., '1-8 fire' instead of '1d8 fire')"
+        },
+        "ShowMaterialDescription": {
+            "Name": "Show Material Components Description",
+            "Hint": "Display the full description of material components in spell tooltips (e.g. 'diamonds worth 300gp, which the spell consumes')"
+        },
+        "EnableLightTooltip": {
+            "Name": "Configure Tooltip display",
+            "Hint": "Choose what should be displayed in item tooltip",
+            "Choices": {
+                "Full": "Full",
+                "Light": "Show only item name & type",
+                "NoDesc": "Hide description only"
+            }
+        },
+        "BypassSpellPreparationCheck": {
+            "Name": "Include Unprepared Spells",
+            "Hint": "When enabled, all spells will be included in the hotbar regardless of their preparation state"
+        },
+        "EnforceSpellPreparationPC": {
+            "Name": "Enforce Spell Preparation (Linked Tokens)",
+            "Hint": "When enabled, linked tokens (including player characters) will only show prepared spells and special spells (innate, at-will, pact, ritual, always). When disabled, all spells will appear."
+        },
+        "EnforceSpellPreparationNPC": {
+            "Name": "Enforce Spell Preparation (Unlinked Tokens)",
+            "Hint": "When enabled, unlinked tokens will only show prepared spells and special spells (innate, at-will, pact, ritual, always). When disabled, all spells will appear."
+        },
+        "CollapseFoundryMacrobar": {
+            "Name": "Collapse Foundry Macrobar",
+            "Hint": "Automatically collapse the default Foundry macrobar. On Foundry V13 or higher, \"Always\" and \"Fully Hidden\" do the same thing."
+        },
+        "ShowPassiveFeaturesContainer": {
+            "Name": "Show Passive Features Container",
+            "Hint": "Display the container of passive features above the portrait"
+        },
+        "TooltipDelay": {
+            "Name": "Tooltip Delay",
+            "Hint": "How long to wait before showing tooltips (in milliseconds)"
+        },
+        "FadeOutDelay": {
+            "Name": "Fade Out Delay",
+            "Hint": "Seconds to wait before fading out the hotbar"
+        },
+        "NormalOpacity": {
+            "Name": "Normal Opacity",
+            "Hint": "Opacity of the hotbar when mouse is over it (0.1 to 1.0)"
+        },
+        "FadedOpacity": {
+            "Name": "Faded Opacity",
+            "Hint": "Opacity of the hotbar when mouse is not over it (0.0 to 1.0). Set to 1 to disable fading completely."
+        },
+        "AutoPopulateUnlinkedTokens": {
+            "Name": "Auto-Populate Unlinked Tokens",
+            "Hint": "Automatically populate the hotbar for newly created unlinked tokens based on the settings below"
+        },
+        "Container1AutoPopulate": {
+            "Name": "Container 1 Auto-Populate",
+            "Hint": "What item types to automatically populate in the first container (index 0)"
+        },
+        "Container2AutoPopulate": {
+            "Name": "Container 2 Auto-Populate",
+            "Hint": "What item types to automatically populate in the second container (index 1)"
+        },
+        "Container3AutoPopulate": {
+            "Name": "Container 3 Auto-Populate",
+            "Hint": "What item types to automatically populate in the third container (index 2)"
+        },
+        "AutoPopulateOverflow": {
+            "Name": "When Container is Full",
+            "Hint": "Choose how to handle items when the container runs out of space.",
+            "Expand": "Continue adding rows",
+            "NextContainer": "Overflow to next container"
+        },
+        "AutoPopulateFillDirection": {
+            "Name": "Auto-Populate Fill Direction",
+            "Hint": "Whether to fill rows first (left to right, then down) or columns first (top to bottom, then right)",
+            "RowFirst": "Rows First (Left to Right, Then Down)",
+            "ColumnFirst": "Columns First (Top to Bottom, Then Right)"
+        },
+        "ContainerAutoPopulate": {
+            "DialogTitle": "Auto-Populate Container",
+            "DefaultsTitle": "Configure Container Auto-Populate Defaults",
+            "Name": "Select Item Types",
+            "Hint": "Choose which types of items to automatically add to this container.",
+            "Weapons": "Weapons",
+            "Features": "Features",
+            "Spells": "Spells",
+            "Consumables": "Consumables",
+            "Potions": "Potions",
+            "Scrolls": "Scrolls",
+            "Ammunition": "Ammunition",
+            "Food": "Food & Drink",
+            "Wands": "Wands",
+            "Rods": "Rods",
+            "Poisons": "Poisons",
+            "Trinkets": "Trinkets",
+            "Equipment": "Equipment",
+            "Tools": "Tools",
+            "Loot": "Loot",
+            "Populate": "Populate",
+            "Cancel": "Cancel",
+            "Save": "Save Changes",
+            "SaveSuccess": "Container auto-populate settings saved successfully",
+            "Configure": "Configure Container Auto-Populate",
+            "Export": "Export Theme"
+        },
+        "HighlightStyle": {
+            "Name": "Highlight Style",
+            "Hint": "Choose how items are highlighted when filtered",
+            "Bottom": "Bottom Border",
+            "Border": "Full Border"
+        },
+        "DefaultPortraitPreferences": {
+            "Name": "Default Portrait Display",
+            "Hint": "Choose whether to display token images or character portraits by default. This can be overridden per token. For the first time you enable this setting, it will apply to all tokens that do not have a portrait set.",
+            "Token": "Always Use Token Image",
+            "Portrait": "Always Use Character Portrait"
+        },
+        "ShapePortraitPreferences": {
+            "Name": "Shape Portrait Display",
+            "Hint": "Choose character portraits shape.",
+            "Round": "Round",
+            "Square": "Square"
+        },
+        "BorderPortraitPreferences": {
+            "Name": "Border Portrait Display",
+            "Hint": "Choose character portraits border.",
+            "None": "None",
+            "Simple": "Simple",
+            "Styled": "Styled (Round shape only)"
+        },
+        "BackgroundPortraitPreferences": {
+            "Name": "Background Portrait Image",
+            "Hint": "Choose character portraits background color."
+        },
+        "ShowHealthOverlay": {
+            "Name": "Show health overlay",
+            "Hint": ""
+        },
+        "ShowHPText": {
+            "Name": "Show HP text",
+            "Hint": ""
+        },
+        "ShowRestTurnButton": {
+            "Name": "Show Rest/Turn buttons",
+            "Hint": "Control which rest and turn buttons are displayed in the hotbar",
+            "Choices": {
+                "Both": "Show Both (Rest & Turn)",
+                "Rest": "Show Rest Only",
+                "Turn": "Show Turn Only", 
+                "None": "Show Neither"
+            }
+        },
+        "EnableTargetSelector": {
+            "Name": "Enable Target Selector",
+            "Hint": "Show an interactive target selector for spells and abilities that require targeting. When enabled, clicking items that need targets will show a crosshair cursor and allow you to select targets on the canvas."
+        },
+        "ShowRangeIndicators": {
+            "Name": "Show Range Indicators",
+            "Hint": "Display visual range indicators when using the target selector. Shows circles around your token indicating the maximum range of spells and abilities."
+        },
+        "RangeIndicatorShape": {
+            "Name": "Range Indicator Shape",
+            "Hint": "Choose the shape of range indicators. Circle shows traditional round range, while Square shows grid-based D&D 5e range that better matches token movement.",
+            "Choices": {
+                "Circle": "Circle",
+                "Square": "Square"
+            }
+        },
+        "RangeIndicatorAnimation": {
+            "Name": "Range Indicator Animation",
+            "Hint": "Choose whether range indicators should pulse to draw attention or remain static. Pulse makes them more noticeable, while static provides a cleaner appearance.",
+            "Choices": {
+                "Pulse": "Pulse",
+                "Static": "Static"
+            }
+        },
+        "RangeIndicatorLineWidth": {
+            "Name": "Range Indicator Line Width",
+            "Hint": "Choose the thickness of range indicator lines. Thicker lines are more visible but may be more intrusive.",
+            "Choices": {
+                "Thin": "Thin (1px)",
+                "Normal": "Normal (2px)",
+                "Thick": "Thick (3px)",
+                "ExtraThick": "Extra Thick (4px)"
+            }
+        },
+        "RangeIndicatorColor": {
+            "Name": "Range Indicator Color",
+            "Hint": "Choose the color of range indicators. The indicator will show as an outline in this color with no fill."
+        },
+        "AutoTargetSelf": {
+            "Name": "Auto-Target Self",
+            "Hint": "Automatically target yourself for spells and abilities that can only target the caster (like self-buffs). When enabled, self-targeting spells will skip the target selector."
+        },
+        "SkipSelectorWithValidTarget": {
+            "Name": "Skip Selector with Valid Target",
+            "Hint": "For single-target spells/abilities, skip the target selector if a valid target is already selected."
+        },
+        "EnableRangeChecking": {
+            "Name": "Enable Range Checking",
+            "Hint": "Check if targets are within range when using the target selector. When disabled, you can target any token regardless of spell/ability range."
+        },
+        "OverlayModePortrait": {
+            "Name": "Health Overlay as Mask",
+            "Hint": "If checked, Health Overlay won't cover transparent part of Character Portrait. Check it if you're using Dynamic Token Ring."
+        },
+        "SettingsCategories": {
+            "HotbarContainer": "Hotbar buttons",
+            "CombatContainer": "Common Actions Container",
+            "Global": "General",
+            "Portrait": "Character Portrait",
+            "Tooltip": "Tooltip",
+            "AutoPopulating": "Auto-Populating",
+            "FoundryUI": "Foundry UI Tweaks",
+            "MidiQoL": "Synchro MidiQoL"
+        },
+        "MenuTheme": {
+            "Name": "Theme configuration",
+            "Hint": "Choose between available themes or create a custom one.",
+            "Label": "Configure Theme"
+        },
+        "scopeTheme": {
+            "Name": "Theme Scope",
+            "Hint": "If checked every player will be able to choose his own theme. Otherwise the theme selected by the GM will be the same for everyone."
+        },
+        "PlayerListVisibility": {
+            "Name": "Player List Visibility",
+            "Hint": "Control the visibility of the default Foundry player list in the bottom-left.",
+            "Choices": {
+                "always": "Always Visible",
+                "hover": "Show on Hover",
+                "hidden": "Hide Completely"
+            }
+        },
+        "ShowDeathSavingThrow": {
+            "Name": "Display Death Saving Throw",
+            "Hint": "Control how the Death Saving Throw should be displayed.",
+            "Choices": {
+                "show": "Default",
+                "hide": "Never",
+                "only": "Only display a clickable skull on portrait"
+            }
+        },
+        "EnableHPControls": {
+            "Name": "Enable HP controls",
+            "Hint": "Add extra controls on HP when hovering portrait."
+        },
+        "synchroMidiQoL": {
+            "BR": {
+                "Name": "Bonus & Reaction active effects",
+                "Hint": "Set Bonus Action and Reaction as used based on MidiQoL active effects."
+            },
+            "ADV": {
+                "Name": "Add Advantage/Disadvantage buttons",
+                "Hint": "Add an advantage or disadvantage source. Need MidiQoL fast forward to be enable."
+            }
+        },
+        "GamePause": {
+            "Name": "Keep \"Game Paused\" on top",
+            "Hint": "If checked UI will be displayed under the \"Game Paused\" label."
+        },
+        "AutoScale": {
+            "Name": "Auto UI scale",
+            "Hint": "Auto scale the UI based on your browser. Disable the UI scale parameter below."
+        },
+        "EnableGMHotbar": {
+            "Name": "Enable GM Hotbar",
+            "Hint": "Show GM special hotbar when no or multiple tokens are selected."
+        },
+        "EnableWeaponAutoEquip": {
+            "Name": "Enable Weapon Sets Auto-Equip",
+            "Hint": "If checked, selecting a token or switching between weapon sets will automatically equip or unequip items."
+        },
+        "NpcUseContainerDefaults": {
+            "Name": "NPCs Use Container Defaults",
+            "Hint": "If checked, NPCs (linked or unlinked) will ignore weapon sets and use container auto-populate defaults instead."
+        },
+        "HoverFilterShow": {
+            "Name": "Hotbar Filter on hover",
+            "Hint": "If checked, show Hotbar Filter only when hovering it."
+        },
+        "ShowExtendedFilter": {
+            "Name": "Show Extended Filters",
+            "Hint": "If checked, show items with limited uses as Filter (no highlight/grey out)."
+        },
+        "Keybindings": {
+            "toggleUI": "Toggle BG3 Hotbar",
+            "decreaseTargets": "Decrease Target Count",
+            "increaseTargets": "Increase Target Count",
+            "confirmTargets": "Confirm Target Selection"
+        },
+        "Menu": {
+            "Global": {
+                "Name": "General settings",
+                "Hint": "Native Foundry elements or general BG3 UI settings.",
+                "Label": "Configure General",
+                "Sub": {
+                    "Foundry": "Foundry UI",
+                    "Scale": "Scale & Position",
+                    "Opacity": "Opacity & Hide"
+                }
+            },
+            "Theme": {
+                "Name": "Theme settings",
+                "Hint": "Choose between available themes or create a custom one.",
+                "Label": "Configure Theme"
+            },
+            "Portrait": {
+                "Name": "Portrait settings",
+                "Hint": "Advanced settings for character portrait.",
+                "Label": "Configure Portrait",
+                "Sub": {
+                    "Show": "Show/Hide settings",
+                    "Portrait": "Portrait settings",
+                    "Other": "Other settings"
+                }
+            },
+            "Hotbar": {
+                "Name": "Hotbars settings",
+                "Hint": "Advanced settings for Hotbars.",
+                "Label": "Configure Hotbars",
+                "Sub": {
+                    "General": "General",
+                    "Weapon": "Weapon Sets",
+                    "Common": "Common Actions",
+                    "Other": "Other"
+                }
+            },
+            "TargetSelector": {
+                "Name": "Target Selector settings",
+                "Hint": "Settings for the interactive target selector system.",
+                "Label": "Configure Target Selector"
+            },
+            "Filter": {
+                "Name": "Filter settings"
+            },
+            "Combat": {
+                "Name": "Common Actions settings",
+                "Hint": "Advanced settings for common actions.",
+                "Label": "Configure Common Actions"
+            },
+            "Populate": {
+                "Name": "Auto-Populating settings",
+                "Hint": "Advanced settings for auto-populating feature.",
+                "Label": "Configure Auto-Populating"
+            },
+            "Tooltip": {
+                "Name": "Tooltip settings",
+                "Hint": "Advanced settings for Tooltip.",
+                "Label": "Configure Tooltip"
+            },
+            "Midi": {
+                "Name": "Synchro MidiQoL setting",
+                "Hint": "Synchonization with MidiQoL features. Must have MidiQoL module installed.",
+                "Label": "Configure Synchro MidiQoL"
+            },
+            "CPR": {
+                "Name": "Choose CPR Actions",
+                "Hint": "Select which CPR actions to auto-populate in common actions container.",
+                "Label": "Select CPR Actions",
+                "UpTo6": "Select which CPR actions to auto-populate in common actions container. Up to 6."
+            }
+        }
+    }
+} 

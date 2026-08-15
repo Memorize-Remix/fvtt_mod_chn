@@ -1,0 +1,52 @@
+{
+  "remote-highlight-ui": {
+    "tool": {
+      "heading": "Remote Highlight",
+      "paragraph": "Click on any UI element to highlight it for everyone.  You can also do this with a built-in shortcut (e.g. Ctrl+Midclick) and you can set a specific user as a highlight target via the users list."
+    },
+    "settings": {
+      "enable-highlighting-for-others": {
+        "name": "Enable highlighting elements for other players",
+        "hint": "When holding Control and middle-clicking / right-clicking / aux-clicking on a UI element, it will be highlighted for every other player."
+      },
+      "enable-receiving-highlights": {
+        "name": "Enable receiving highlights from other players",
+        "hint": "If you disable this, others won't be able to send highlights to you."
+      },
+      "keybinding-modifiers": {
+        "name": "Modifier keys",
+        "hint": "Choose modifier keys required for the highlight to trigger on a middle-click (default: Control).",
+        "choices": {
+          "control": "Control",
+          "control+shift": "Control + Shift",
+          "shift": "Shift"
+        }
+      },
+      "allow-when-right-clicking": {
+        "name": "Allow when right-clicking",
+        "hint": "Should this also trigger on e.g. Ctrl+Right-click?  (default false)"
+      },
+      "activate-highlighter-tool": {
+        "name": "Activate highlighter tool",
+        "hint": "After activating, click on any UI element to highlight it for everyone.  Requires 'Enable highlighting' setting to be enabled."
+      },
+      "instant-highlight-keybind": {
+        "name": "Instant highlight keybind",
+        "hint": "Press this and the UI element under your cursor will be highlighted for everyone.  Requires 'Enable highlighting' setting to be enabled."
+      },
+	  "permission-level": {
+	    "name": "Minimum level to access tool",
+	    "hint": "Choose which level of user will see the toolbar button.",
+	    "choices": {
+	  	  "gm": "GM Only",
+	  	  "trusted": "GM and Trusted Players",
+	  	  "player": "All Players"
+	    }
+	  }
+    },
+    "playerList": {
+      "highlightOnlyForThisUser": "Highlight UI only for this user",
+      "stopOnlyHighlightingForThisUser": "Stop only highlighting for this user"
+    }
+  }
+}

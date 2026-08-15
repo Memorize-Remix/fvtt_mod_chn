@@ -1,0 +1,125 @@
+{
+	"notebook" : {
+		"notebook" 							: "Notebook",
+		
+		"Titles" : {
+			"notebook" 						: "Notebook",
+			"note"							: "Note",
+			
+			"defaultTitle"					: "Note Title",
+			"newNote"						: "New Note",
+			"copyfromTitle"					: "{pOriginal} - copy",
+			"newFolder"						: "New Folder",
+			"name"							: "Name",
+			"delete"						: "Delete",
+			"manually"						: "Manually",
+			
+			"searchNote"					: "Search Note",
+			
+			"userName"						: "User names",
+			"self"							: "self",
+			"default"						: "default",
+			"alldefault"					: "all/default",
+			
+			"createNote"					: "Create Note",
+			"createFolder"					: "Create Folder",
+			"deleteNoteConfirm"				: "Delete note \"{pTitle}\" ?",
+			
+			"owner"							: "Owner",
+			"seer"							: "Observers",
+			"editor"						: "Editors",
+			
+			"permissions"					: "Permissions",
+			"showtouser"					: "Show user",
+			"permissionsTypes" : {
+				"default"					: "default",
+				"none"						: "none",
+				"see"						: "see",
+				"edit"						: "edit",
+				"owner"						: "owner"
+			},
+			
+			"type"							: "Type",
+			"typeTitle"						: "{pType} Note",
+			"notesTypes" : {
+				"text"						: "Text",
+				"counter"					: "Counter",
+				"list"						: "List",
+				"slider"					: "Slider",
+				"chat"						: "Chat",
+				"timer"						: "Timer",
+				"progressclock"				: "Progress Clock",
+				"roundcounter"				: "Round Counter",
+				"macro"						: "Macros",
+				"enhancedtext"				: "Enhanced Text",
+				"scribble"					: "Scribble",
+				"hourglass"					: "Hourglass"
+			},
+			
+			"min"							: "Min",
+			"max"							: "Max",
+			"steps"							: "Steps",
+			"segments"						: "Segments",
+			"changedirection"				: "Change direction",
+			"reset"							: "Reset",
+			"days"							: "Days",
+			"maxtime"						: "Max time",
+			"currenttime"					: "Current time",
+			
+			"none"							: "None",
+			
+			"context" : {
+				"ownership"					: "Configure Ownership",
+				"exportdata"				: "Export Data",
+				"importdata"				: "Import Data",
+				"delete"					: "Delete",
+				"copy"						: "Duplicate"
+			}
+		},
+		
+		"Warnings" : {
+			"importError"					: "Tried to import {pGotType} note, expected {pExpectedType} note"
+		},
+		
+		"Descrp" : {
+			"removeshiftclick"				: "remove with shift+click"
+		},
+		
+		"Settings" : {
+			"shiftquickcreate" : {
+				"name"						: "Shift quick create",
+				"descrp"					: "Note type created when holding shift while creating a new note"
+			},
+			
+			"ctrlquickcreate" : {
+				"name"						: "CTRL quick create",
+				"descrp"					: "Note type created when holding CTRL while creating a new note"
+			},
+			
+			"altquickcreate" : {
+				"name"						: "ALT quick create",
+				"descrp"					: "Note type created when holding ALT while creating a new note"
+			},
+			
+			"smallnoteheight" : {
+				"name"						: "Small note height",
+				"descrp"					: "The height some notes collapse to when not actively hovered"
+			},	
+			
+			"largenoteheight" : {
+				"name"						: "Large note height",
+				"descrp"					: "The height some notes expand to when actively hovered"
+			},
+			
+			"backgroundpattern" : {
+				"name"						: "Note background",
+				"descrp"					: "Background pattern for notes",
+				"options" : {
+					"parchment"				: "Parchment",
+					"parchment-white"		: "White parchment",
+					"denim065"				: "Denim"
+				}
+			}
+		}
+	}
+}

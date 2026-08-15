@@ -1,0 +1,121 @@
+{
+    "TYPES": {
+        "JournalEntryPage": {
+            "gatherer": {
+                "gatherer": "Gatherer"
+            }
+        }
+    },
+    "gatherer": {
+        "gatherer": "Gatherer",
+        "gathered": "Gathered",
+        "found": "Found",
+		"quantity": "Quantity", 
+        "minigame": {
+            "title": "Gatherer Minigame"
+        },
+        "sheet": {
+            "err": {
+                "noDraws": "This gathering spot is Exhausted and cannot be used again until it's reset.",
+                "noActor": "No Actor to execute gathering. Please select a token or assign yourself a Character.",
+                "noReq": "You do not meet the requirements to gather here. Missing: ",
+                "noItem": "Item not found. Please check your spelling and try again.",
+                "noExp": "You did not gather any resources from this spot...",
+                "noGM": "A GM user must be connected to gather."
+            },
+            "gather": "Gather",
+            "reset": "Reset",
+            "edit": "Edit",
+            "remaining": "Remaining Pulls",
+            "time": "Resets in",
+            "quantity": "Quantity",
+            "waitingFirst": "Waiting for first draw"
+        },
+        "flags": {
+            "table": {
+                "label": "Rollable Table"
+            },
+            "time": {
+                "label": "Time",
+                "placeholder": "Time until reset in hours"
+            },
+            "quantity": {
+                "label": "Quantity",
+                "placeholder": "Number or Roll expression"
+            },
+            "draws": {
+                "label": "Pulls",
+                "placeholder": "Pulls before the spot is exhausted",
+                "notes": "Leave blank to use pulls from the corresponding gatherer page"
+            },
+            "require": {
+                "label": "Requires",
+                "placeholder": "Comma separated list of items"
+            },
+            "minigame": {
+                "label": "Minigame",
+                "placeholder": "Time for the Minigame in milliseconds"
+            },
+            "expression": {
+                "label": "Expression",
+                "placeholder": "Macro condition to execute"
+            },
+            "systemAbil": {
+                "label": "Check"
+            },
+            "DC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "toolCheck": {
+                "label": "Tool",
+                "placeholder": "Tool Name"
+            },
+            "toolDC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "gatherSheet": {
+                "label": "Harvest Sheet",
+                "placeholder": "Drop Gatherer page here"
+            },
+            "modifierList": {
+                "label": "Modifier",
+                "add": "Add Modifier",
+                "hint": "If either the roll result or the value returned by the expression is equal to or greater than the DC (using the higher value), the number of items gathered is modified according to the modifier expression. You may include a mathematical operator at the beginning of the modifier; if none is provided, a plus (+) is assumed by default. For example, *1d4 multiplies the number of gathered items by 1d4."
+            }
+        },
+        "gatherer-actor-config": {
+            "title": "Gatherer Configuration",
+            "notes": "In order to harvest a targeted token, create a macro with the following:",
+            "notes2": "Or use the keyboard shortcut: "
+        },
+        "error": {
+            "notGatherer": "This is not a Gatherer Sheet. Please select a Gatherer Sheet and try again.",
+            "noDraws": "There are no more resources to gather from this creature.",
+            "noJournal": "There is no gathering spot associated with this token. Please select a token with a valid gathering spot and try again.",
+            "cantHarvest": "Conditions to harvest this token are not met"
+        },
+        "settings": {
+            "resourcePath": {
+                "name": "Harvest Resource Path",
+                "hint": "Path to check if harvesting is possible. For example for DnD5e, this would be 'attributes.hp.value' to check if the token is alive."
+            },
+            "quantityPath": {
+                "name": "Quantity Path",
+                "hint": "Data path to item quantity. Starting from 'system' (excluded). For example for DnD5e, this would be 'quantity'."
+            },
+            "resourceValue": {
+                "name": "Harvest Resource Value",
+                "hint": "Value to check if harvesting is possible. For example for DnD5e, this would be '0' to check if the token has no HP remaining."
+            },
+            "enableHarvesting": {
+                "name": "Enable Harvesting"
+            },
+            "migrateOnStartup": {
+                "name": "Migrate settings on startup",
+                "hint": "If enabled, the module will migrate journal data on startup. You can use the macro 'game.modules.get(\"gatherer\").API.migration.showManualMigrationDialog()' to manually migrate your settings."
+            }
+        }
+    }
+}

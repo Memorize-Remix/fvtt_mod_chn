@@ -1,0 +1,29 @@
+
+	"BASES": {
+		"AssignStatusHUDSorting": {
+			"Switch": {
+				"Name": "启用状态HUD排序",
+				"Hint": "启用后，状态效果标签将显示，并会进行预设的排序"
+			},
+			"SortingType": {
+				"Name": "状态效果排序",
+				"Hint": "按行填充（从左到右）或按列填充（从上到下）",
+				"Choices": {
+					"Rows": "行",
+					"Columns": "列"
+				}
+			},
+			"NumberColumns": {
+				"Name": "列数",
+				"Hint": "将HUD状态效果分成此数量的列"
+			},
+			"Filter": {
+				"Name": "启用状态过滤",
+				"Hint": "在状态效果上方显示搜索框，可按名称或状态ID过滤",
+				"Placeholder": "过滤效果...",
+				"Clear": "清空"
+			}
+		},
+		"IncompatibleSystemError": "Bugbear's Assign Status Effects Sorter与你的系统不兼容，分配状态效果HUD更改已被禁用。建议禁用此模组！"
+	}
+}

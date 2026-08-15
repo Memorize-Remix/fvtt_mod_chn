@@ -1,0 +1,101 @@
+{
+    "smarttarget.settings.altTarget.name": "使用 Alt-Click 锁定目标",
+    "smarttarget.settings.altTarget.hint": "按 Alt+Click 键锁定 Token，按 Shift 键锁定多个 Token",
+
+    "smarttarget.settings.alwaysTarget.name": "始终锁定目标",
+    "smarttarget.settings.alwaysTarget.hint": "点击非自有 Token 会自动瞄准它们",
+
+    "smarttarget.settings.targetingMode.name": "目标锁定模式",
+    "smarttarget.settings.targetingMode.hint": "默认: 默认 foundry 模式。Alt-click: 按 Alt+Click 键锁定Token，按 Shift 键锁定多个Token。始终锁定目标: 点击非自有 Token 会自动瞄准它们。\n 你可以在配置控制中重新绑定 ALT 键。",
+
+    "smarttarget.settings.targetingMode.opt0": "默认",
+    "smarttarget.settings.targetingMode.opt1": "Alt-Click",
+    "smarttarget.settings.targetingMode.opt2": "始终锁定目标(仅限Pl)",
+
+    "smarttarget.settings.portraitPips.name": "显示指示器肖像而不是颜色",
+    "smarttarget.settings.portraitPips.hint": "GM 使用头像，如果没有找到指定角色的头像，则默认玩家使用 Token（需要刷新）。",
+
+    "smarttarget.settings.useToken.name": "使用 Token 代替头像",
+    "smarttarget.settings.useToken.hint": "使用 Token 代替头像作为玩家目标选择",
+
+    "smarttarget.settings.useTokenGm.name": "Gm图片",
+    "smarttarget.settings.useTokenGm.hint": "用于 GM 指示器肖像的图像",
+    "smarttarget.settings.useTokenGm.opt0": "PlAvatar",
+    "smarttarget.settings.useTokenGm.opt1": "Token肖像",
+    "smarttarget.settings.useTokenGm.opt2": "Token图片",
+
+    "smarttarget.settings.insidePips.name": "将目标指标保留在 Token 内",
+    "smarttarget.settings.insidePips.hint": "移动目标指示符，使其保持在 Token 边界内",
+
+    "smarttarget.settings.pipImgScale.name": "目标图标图像比例",
+    "smarttarget.settings.pipImgScale.hint": "设置目标图标使用的图像比例（默认值：1）",
+
+    "smarttarget.settings.pipOffsetManualY.name": "目标图像 Y 偏移",
+    "smarttarget.settings.pipOffsetManualY.hint": "以像素为单位为图像添加平面偏移（默认值：0）",
+
+    "smarttarget.settings.pipOffsetManualX.name": "目标图像 X 偏移",
+    "smarttarget.settings.pipOffsetManualX.hint": "以像素为单位为图像添加平面偏移（默认值：0）",
+
+    "smarttarget.settings.pipScale.name": "目标图标大小",
+    "smarttarget.settings.pipScale.hint": "以像素为单位设置目标图标的大小（默认值：12）",
+
+    "smarttarget.settings.pipOffset.name": "目标图标偏移",
+    "smarttarget.settings.pipOffset.hint": "以像素为单位设置图标之间的距离（默认值：16）",
+
+    "smarttarget.settings.borderThicc.name": "边框厚度",
+    "smarttarget.settings.borderThicc.hint": "以像素为单位设置边框的厚度（默认值：2）",
+
+    "smarttarget.settings.crossairSpread.name": "拉近瞄准箭头的距离",
+    "smarttarget.settings.crossairSpread.hint": "拉近瞄准箭头的距离，使其位于 Token 框架内（仅适用于默认瞄准箭头）",
+
+    "smarttarget.settings.crossairColor.name": "瞄准箭头颜色",
+    "smarttarget.settings.crossairColor.hint": "瞄准箭头的十六进制颜色（默认：#ff9829）。留空表示基于布局的颜色",
+
+    "smarttarget.settings.target-indicator.name" : "目标指标",
+    "smarttarget.settings.target-indicator.hint" : "选择目标指标",
+    "smarttarget.settings.target-indicator-choices-0" : "默认Foundry指标",
+    "smarttarget.settings.target-indicator-choices-1" : "CrossHair 1",
+    "smarttarget.settings.target-indicator-choices-2" : "CrossHair 2",
+    "smarttarget.settings.target-indicator-choices-3" : "BullsEye 1",
+    "smarttarget.settings.target-indicator-choices-4" : "BullsEye 2",
+    "smarttarget.settings.target-indicator-choices-5" : "Better Target",
+
+    "smarttarget.settings.use-player-color.name" : "为目标指示器使用玩家颜色",
+    "smarttarget.settings.use-player-color.hint" : "为目标指示器使用玩家颜色",
+
+    "smarttarget.settings.customHotKeyTarget.name": "使用自定义热键锁定目标",
+    "smarttarget.settings.customHotKeyTarget.hint": "按自定义热键锁定 Token，按 Shift 键可锁定多个 Token",
+
+    "smarttarget.settings.customHotKeyTargetMulti.name": "使用自定义热键实现多目标",
+    "smarttarget.settings.customHotKeyTargetMulti.hint": "通过按下自定义热键来锁定多目标 Token，按 Shift 键来标记多Token",
+
+    "smarttarget.settings.releaseBehaviour.name": "释放模式",
+	"smarttarget.settings.releaseBehaviour.hint": "此设置决定了点击多个 Token 时刷新目标的模式。'粘性'模式会将每个点击的标记作为目标，而不会取消任何目标，你必须再次点击一个标记才能取消目标。'标准'模式更接近于标准的FVTT行为，即在点击一个新标记时，所有以前的标记都会自动取消目标，而且你必须在点击时按住 Shift 才能锁定多个标记。",
+	"smarttarget.settings.releaseBehaviour.choice0.Standard": "标准",
+	"smarttarget.settings.releaseBehaviour.choice0.Sticky": "粘性",
+
+    "smarttarget.warningNoSelectMoreThanOneToken": "未选择 Token 设置锁定",
+    "smarttarget.controls.cleartargets.name": "清除所有锁定",
+    
+    "smarttarget.settings.forceToUseSelectedTokenForPortraitPips.name": "强制使用选定的 Token 图像来构建指标肖像",
+    "smarttarget.settings.forceToUseSelectedTokenForPortraitPips.hint": "强制使用选定的 Token 图像来构建指标肖像",
+
+    "smarttarget.settings.useOwnedTokenIfNoTokenIsSelected.name": "如果没有选择 Token，则使用自己的 Token（如果你是 GM，则忽略不计）。",
+    "smarttarget.settings.useOwnedTokenIfNoTokenIsSelected.hint": "此设置只有与'强制使用选定的 Token 图像来构建指示器肖像'（如果你是 GM，则忽略）结合使用时才有意义。",
+    "smarttarget.keybindings.altkey": "瞄准修改器",
+    "smarttarget.keybindings.clearAllTargets": "清除所有锁定",
+
+    "smarttarget.settings.pipPosition.name": "目标指标位置",
+    "smarttarget.settings.pipPosition.hint": "设置目标指示器的位置",
+    "smarttarget.settings.pipPosition.topleft": "左上方",
+    "smarttarget.settings.pipPosition.topright": "右上方",
+    "smarttarget.settings.pipPosition.bottomleft": "左下方",
+    "smarttarget.settings.pipPosition.bottomright": "右下方",
+    "smarttarget.settings.pipPosition.centertop": "中心顶部",
+    "smarttarget.settings.pipPosition.centerbottom": "中心底部",
+    "smarttarget.settings.pipPosition.random": "随机",
+
+    "smarttarget.settings.templateTargeting.name": "测量版目标",
+    "smarttarget.settings.templateTargeting.hint": "按 Alt + 单击测量模板时，标记模板区域内的所有 token"
+
+}

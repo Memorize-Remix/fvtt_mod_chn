@@ -1,0 +1,101 @@
+
+  "SYRINSCAPE": {
+    "NAME": "Syrinscape",
+    "BROWSER": {
+      "StopAll": "停止全部",
+      "CONTEXTMENU": {
+        "play": "播放",
+        "stop": "停止播放",
+        "macro": "创建宏",
+        "playlist": "创建播放列表"
+      },
+      "HINTS": {
+        "results": {
+          "none": "未找到结果。"
+        },
+        "playlist": {
+          "new": "新建 Syrinscape 播放列表"
+        }
+      },
+      "TABS": {
+        "moods": "氛围",
+        "elements": "元素"
+      },
+      "WARNING": {
+        "cached": "无法为 Syrinscape 浏览器提供缓存数据。"
+      },
+      "WINDOW": {
+        "title": "Syrinscape 浏览器"
+      },
+      "REFRESHDATA": {
+        "label": "刷新列表",
+        "title": "Syrinscape 批量数据刷新",
+        "content": "确定要刷新吗？Syrinscape 官方建议每周仅刷新一次。",
+        "error": "初始化 Syrinscape 数据时出错。"
+      }
+    },
+    "FILTERS": {
+      "ACTIONS": {
+        "clear": "清除过滤"
+      },
+      "FIELDS": {
+        "product": {
+          "label": "产品或包"
+        },
+        "soundset": {
+          "label": "音效集"
+        },
+        "status": {
+          "label": "状态"
+        },
+        "subcategory": {
+          "label": "子类别"
+        },
+        "subtype": {
+          "label": "子类型"
+        }
+      },
+      "OPTIONS": {
+        "boardgame": "桌游",
+        "dungeons-and-dragons": "Dungeons & Dragons",
+        "general-fantasy": "通用奇幻",
+        "music": "音乐",
+        "oneshot": "单次冒险",
+        "pathfinder": "Pathfinder",
+        "sci-fi": "Sci-Fi",
+        "sfx": "音效"
+      },
+      "ERRORS": {
+        "invalidValue": "输入值 [{value}] 不在可用选项列表中。"
+      }
+    },
+    "SETTINGS": {
+      "AUTH": {
+        "name": "认证Token",
+        "hint": "从 syrinscape.com/account/auth-token 粘贴你的Token。"
+      }
+    },
+    "SoundType": {
+      "Element": "元素",
+      "Mood": "氛围"
+    },
+    "Viewer": {
+      "Title": "Syrinscape 应用查看器"
+    },
+    "SceneControls": {
+      "PlayerTitle": "Syrinscape 播放器"
+    },
+    "SoundConfig": {
+      "SoundTypeLabel": "Syrinscape 声音类型",
+      "SoundIdLabel": "Syrinscape 声音 ID",
+      "SoundIdHint": "如果存在，将用作源文件的替代"
+    },
+    "Errors": {
+      "Auth": "Syrinscape 控制器：未检测到认证Token"
+    },
+    "BulkDataRequest": {
+      "Progress": "正在从 Syrinscape 下载批量数据...",
+      "Success": "Syrinscape 数据更新成功。"
+    }
+  }
+}

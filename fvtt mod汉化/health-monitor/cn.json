@@ -1,0 +1,54 @@
+{
+    "healthMonitor": {
+        "settings": {
+            "useTokenName": {
+                "name": "使用 token 名称",
+                "hint": "对于非链接令牌，将使用token名称。对于链接令牌，将使用token原型名称。"
+            },
+            "hideNPCs": {
+                "name": "向玩家隐藏 NPC 生命值日志",
+                "hint": "GM 用户可右键聊天信息来向玩家显示。"
+            },
+            "hideNPCname": {
+                "name": "隐藏 NPC 名称",
+                "hint": "用以下文本替换 NPC 名称。"
+            },
+            "replacementName": {
+                "name": "隐藏 NPC 名称替换",
+                "hint": "如果启用了上述设置，NPC 名称将被此处输入的文本替换。"
+            },
+            "showGMonly": {
+                "name": "仅向 GM 显示生命值监控",
+                "hint": "聊天信息可右键来显示给玩家。"
+            },
+            "showToggle": {
+                "name": "显示生命值监控切换",
+                "hint": "通过切换关闭 token 工具栏上的控制按钮，暂时禁用生命值监控。只有 GM 才能看到控制按钮。"
+            },
+            "showRes": {
+                "name": "显示伤害免疫、抗性和易伤",
+                "hint": "减少伤害自动化所需的其他模组。"
+            },
+            "trackMax": {
+                "name": "显示最大生命值/最大临时生命值的变更"
+            },
+            "trashIcon": {
+                "name": "启用生命值监控聊天信息删除图标"
+            }
+        },
+        "control": {
+            "title": "切换生命值监控"
+        },
+        "chatMessage": {
+            "heals": "恢复了",
+            "takes": "受到了",
+            "damage": "伤害",
+            "gains": "获得了",
+            "loses": "失去了",
+            "maxHP": "最大生命值",
+            "Immunity": "免疫",
+            "Resistance": "抗性",
+            "Vulnerability": "易伤"
+        }
+    }
+}

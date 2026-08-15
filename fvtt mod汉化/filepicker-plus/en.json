@@ -1,0 +1,54 @@
+{
+    "filepicker-plus": {
+                "settings": {
+            "sidebarFilepicker": {
+                "name": "Enable Filepicker Sidebar Tab",
+                "hint": "Add a new tab to the sidebar that allows you to browse and upload files, as well as drag and drop images/3D Models onto the scene."
+            },
+            "placeastokens": {
+                "name": "Place images as Tokens",
+                "hint": "When dragging an image onto the scene, place it as a token instead of a tile if you are on the token layer (sidebar picker only)"
+            },
+            "size": {
+                "name": "Filepicker Size",
+                "hint": "Width of the filepicker",
+                "choices": {
+                    "default": "Default",
+                    "large": "Large",
+                    "extraLarge": "Extra Large",
+                    "massive": "Massive"
+                }
+            },
+            "imagepreview": {
+                "name": "Image-Video Preview",
+                "hint": "Display the image or video preview when hovering over them in the filepicker"
+            },
+            "threepreview": {
+                "name": "3D Preview",
+                "hint": "Show 3D Previews, requires 3D Portraits. If this setting is disabled, the 3D File Thumbnail will be used instead (if present)."
+            },
+            "audiopreview": {
+                "name": "Audio Preview",
+                "hint": "Play an audio preview when hovering over sounds in the file picker"
+            },
+            "audiopreviewdelay": {
+                "name": "Audio Preview Delay",
+                "hint": "Delay in ms before the preview sound starts playing"
+            },
+            "audiopreviewvol": {
+                "name": "Audio Preview Volume",
+                "hint": "Volume of the preview sound"
+            },
+            "enablecolortheme": {
+                "name": "Enable Color Theme",
+                "hint": "Enable the dark color theme for the filepicker, if you have a module or system that applies a theme to the filepicker, you might want to disable this."
+            }
+        },
+        "app": {},
+        "flags": {},
+        "sidebar": {
+            "no-filepicker": "The File Browser is open in a separate window. The File Browser will return to the sidebar once the window is closed.",
+            "open": "The File Browser sidebar is active, the selected File Browser was opened in the sidebar."
+        }
+    }
+}

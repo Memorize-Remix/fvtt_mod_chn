@@ -1,0 +1,780 @@
+{
+  "SWIPE_VTT": {
+    "ModuleTitle": "Swipe VTT",
+    "Settings": {
+      "MenuTitle": "Swipe VTT Settings",
+      "MenuButton": {
+        "Name": "Swipe VTT Settings",
+        "Label": "Configure",
+        "Hint": "Open the Swipe VTT settings dialog"
+      },
+      "PremiumMenu": {
+        "Name": "Amethyst Club features",
+        "Label": "Connect to Patreon",
+        "Hint": "GM must connect their Patreon account for access to Amethyst Club features, like mobile character sheets for supported systems"
+      },
+      "ImageOptimizerMenu": {
+        "Name": "Image Optimizer",
+        "Label": "Optimize Scene Images",
+        "Hint": "This will not affect any scenes on Desktop. Very large images might not load correctly on phones, so this feature generates small versions to load on phones. This does not change the scene config, only selects the smaller image on mobile. "
+      },
+      "ImageOptimizerPrompt": {
+        "Title": "SWIPE | Create mobile images automatically?",
+        "Content1": "If confirmed, Swipe will create smaller versions of scene images just for mobile devices. This happens automatically when the GM views a scene that has large images.",
+        "Content2": "This does not change the original images or scene config. You can do this manually later in Swipe VTT settings.",
+        "FolderLabel": "Folder to save optimized images to:",
+        "SelectFolder": "Select Folder"
+      },
+	  "AutoOptimizeScenes": {
+        "Name": "Auto-Optimize Scene Images",
+        "Hint": "Automatically create mobile-optimized versions of scene images. This does not change the original images or scene config."
+      },
+      "Tabs": {
+        "General": "General",
+        "Performance": "Performance",
+        "Users": "Users"
+      },
+      "Fieldsets": {
+        "SheetAndChat": "Sheet & Chat",
+		"Controls": "Controls",
+        "CameraViews": "Camera Views",
+        "SystemSettings": "System Settings"
+      },
+      "System": {
+        "PF2E": {
+          "ShowCheckDialogs": {
+            "Name": "Always Show Roll Dialog",
+            "Hint": "Show the roll dialog with modifiers before making a check. On desktop this can be toggled with Shift+Click."
+          }
+        }
+      },
+      "UnfreezeTriggers": "Auto-Unfreeze Triggers",
+      "Reset": "Reset to Defaults",
+      "Save": "Save Settings",
+      "ToggleHints": "Toggle Hints",
+	  "AdvancedSettings": "Advanced Settings",
+      "Saved": "Swipe VTT settings saved",
+      "OpenGameSettings": "Open Game Settings",
+      "MobileOnlyNote": "These settings only apply when using a mobile or tablet device.",
+      "Enabled": {
+        "Name": "Enable Mobile Mode on Desktop",
+        "Hint": "Toggle to force mobile UI on desktop for testing - on mobile devices, it is automatically enabled."
+      },
+      "DisableIncompatible": {
+        "Name": "Disable Heavy FX Modules",
+        "Hint": "Automatically disable performance-heavy effect modules (FXMaster, Token Magic FX) on this device for better performance."
+      },
+      "LargeMapThreshold": {
+        "Name": "Large Map Threshold",
+        "Hint": "Maps larger than this (in pixels) will use optimized rendering. Default: 4096"
+      },
+      "CanvasFreeze": {
+        "Enabled": {
+          "Name": "Enable Canvas Freeze",
+          "Hint": "Pause canvas rendering after inactivity to save battery on low-end devices. Canvas unfreezes on touch."
+        },
+        "Delay": {
+          "Name": "Freeze Delay (seconds)",
+          "Hint": "Seconds of inactivity before canvas freezes. Default: 10"
+        },
+        "OnCombat": {
+          "Name": "Unfreeze on Combat",
+          "Hint": "Automatically refresh canvas when combat turn changes."
+        },
+        "OnTokenMove": {
+          "Name": "Unfreeze on Token Move",
+          "Hint": "Automatically refresh canvas when a token you control moves."
+        },
+        "OnDiceRoll": {
+          "Name": "Unfreeze on Dice Roll",
+          "Hint": "Automatically refresh canvas when dice are rolled."
+        }
+      },
+      "CloseSheetOnRoll": {
+        "Name": "Close Sheet on Roll",
+        "Hint": "Automatically close the character sheet drawer after rolling dice, using items, or casting spells."
+      },
+      "OpenChatOnMessage": {
+        "Name": "Auto-Show Chat",
+        "Hint": "When to automatically show the chat popup after your actions.",
+        "All": "All actions from user",
+        "Rolls": "Only roll actions",
+        "UseCast": "Only use / cast",
+        "None": "No actions"
+      },
+      "ChatAutoHideSeconds": {
+        "Name": "Chat Auto-Hide Delay",
+        "Hint": "Seconds before the auto-shown chat popup hides. (2-10)"
+      },
+	  "KeepAwake": {
+        "Name": "Keep Awake",
+        "Hint": "Play silent audio to prevent the browser from suspending when your screen turns off. Keeps your connection to the game alive. Uses a small amount of battery."
+      },
+	  "Controls": {
+        "TouchOnly": "These settings only apply when using a touch device (phone or tablet)."
+      },
+      "HideQuickControls": {
+        "Name": "Hide Quick Controls",
+        "Hint": "Hide the floating quick controls and settings button. On phones, the settings button remains visible since Foundry's sidebar is hidden."
+      },
+      "HideAvatarCarousel": {
+        "Name": "Hide Avatar Carousel",
+        "Hint": "Hide the character avatar carousel at the bottom of the screen. You can still open sheets by double-tapping tokens on the canvas."
+      },
+      "HideMacroButton": {
+        "Name": "Hide Macro Hotbar Button",
+        "Hint": "Hide the macro hotbar toggle button. When visible, it allows you to open the macro hotbar in a drawer."
+      },
+      "AddMacro": "Add Macro",
+      "SpeakerOnlyAV": {
+        "Name": "Speaker-Only Camera Mode",
+        "Hint": "Only show the camera view of the user who is currently speaking. When nobody is speaking, the GM's camera is shown as fallback."
+      },
+      "EnableMobileSheets": {
+        "Name": "Enable Mobile Sheets",
+        "Hint": "Use custom mobile-optimized character sheets. Disable to use default Foundry sheets."
+      },
+      "LayoutSpacing": {
+        "Name": "Layout Spacing",
+        "Hint": "Control the size of touch targets. Spacious mode increases button and row heights for easier tapping.",
+        "Compact": "Compact (default)",
+        "Spacious": "Spacious (larger touch targets)"
+      },
+      "DebugMode": {
+        "Name": "Debug Mode",
+        "Hint": "Enable verbose console logging for troubleshooting."
+      },
+	  "InviteUrlOverride": {
+        "Name": "Invite URL Override",
+        "Hint": "Custom base URL for the Connect Phone QR code (e.g. http://26.x.x.x:30000). Use this when players connect via VPN (Radmin, Hamachi, ZeroTier, etc.) or a reverse proxy. Leave empty for auto-detection."
+      },
+	  "StandaloneSkipAuth": {
+        "Name": "Skip Standalone Authentication",
+        "Hint": "Allow players to access the standalone phone app without entering a password. Enable this if you use an external hosting service (e.g. Sqyre) or if your players have trouble connecting."
+      },
+      "ShowMemoryMonitor": {
+        "Name": "Show Memory Monitor",
+        "Hint": "Display real-time memory usage (JS Heap + GPU Textures) in the Players list next to Latency and FPS."
+      },
+      "AllowMiniCanvas": {
+        "Name": "Allow Simplified Token Map",
+        "Hint": "Allow players to enable the simplified token map when in Sheet mode. This shows a lightweight grid with token positions instead of the full canvas."
+      },
+      "EnableMiniCanvas": {
+        "Name": "Enable Simplified Token Map",
+        "Hint": "Show a simplified token map with grid and token positions when in Sheet mode. Requires GM permission."
+      },
+      "MiniCanvasPrompt": {
+        "Title": "Simplified Token Map",
+        "Content": "Would you like to enable the simplified token map? It shows a lightweight grid that allows you to move tokens, select targets and place templates even in Sheet mode.",
+        "Yes": "Enable",
+        "No": "No Thanks"
+      },
+	  "DisableModules": {
+        "Title": "Disable Heavy Modules"
+      },
+      "DisableAAAnimations": {
+        "Name": "Disable Automated Animations",
+        "Hint": "Disable JB2A / Automated Animations on this device to improve performance."
+      },
+	  "DisableDiceSoNice": {
+        "Name": "Disable Dice So Nice",
+        "Hint": "Disable 3D dice animations on this device to improve performance."
+      },
+      "DisableCanvas": {
+        "Name": "Disable Canvas",
+        "Hint": "If your device really struggles, disable the game canvas entirely to use the sheet/roll functionality. "
+      },
+	  "ExpandedSheet": {
+        "Name": "Expanded Sheet (Tablet)",
+        "Hint": "When canvas is disabled, show multiple character sheet sections side-by-side using the full screen. Requires canvas to be disabled."
+      },
+      "Override": {
+        "Default": "Use Performance Mode Setting",
+        "Enabled": "Always Enabled",
+        "Disabled": "Always Disabled"
+      },
+      "OverrideDiceSoNice": {
+        "Name": "Dice So Nice Override",
+        "Hint": "Override performance mode setting for 3D dice. 'Default' follows your performance mode."
+      },
+      "OverrideAAAnimations": {
+        "Name": "Automated Animations Override",
+        "Hint": "Override performance mode setting for JB2A animations. 'Default' follows your performance mode."
+      },
+      "PowerSaver": {
+        "Title": "Power Saver",
+        "EnableAll": "Enable All",
+        "LimitFps": {
+          "Name": "Limit FPS to 30",
+          "Hint": "Reduces frame rate to save battery and improve performance."
+        },
+        "DisableAnimations": {
+          "Name": "Disable Light/Vision Animations",
+          "Hint": "Stops flickering lights and smooth vision transitions."
+        },
+        "UseNativeResolution": {
+          "Name": "Disable Pixel Ratio Resolution",
+          "Hint": "Render at native resolution instead of high-DPI. Reduces sharpness but significantly improves performance."
+        },
+        "Enabled": "Power Saver enabled",
+        "DialogTitle": "Performance Warning",
+        "DialogContent": "Your device appears to be struggling with this scene. Enable Power Saver Mode to reduce heating and improve responsiveness?",
+        "DialogEnable": "Enable Power Saver",
+        "DialogNotNow": "Not Now",
+        "DialogDontAsk": "Don't ask again"
+      },
+      "PremiumFeature": "Amethyst Club feature - Connect to unlock",
+      "NoCanvasBackgroundEnabled": {
+        "Name": "Background Image (Sheet-only Mode)",
+        "Hint": "Show a background image when canvas is disabled. Uncheck for a black background."
+      },
+      "NoCanvasBackground": {
+        "Name": "Custom Sheet-Only Background",
+        "Hint": "Choose a custom background image for users on Sheet-Only mode. Leave empty to use the default.",
+        "Default": "Default",
+        "Browse": "Browse",
+        "Clear": "Reset"
+      },
+      "PartyGroupActor": {
+        "Name": "Party Actor",
+        "Hint": "Select a Group actor to use as the party. Members will appear in the carousel for all players who have at least Limited permission.",
+        "None": "— None —"
+      }
+    },
+    "Notifications": {
+      "MobileDetected": "Swipe VTT: Mobile device detected, enabling touch controls",
+      "DiceDisabled": "Swipe VTT: Disabled 3D dice for better performance",
+      "LargeMapOptimized": "Swipe VTT: Large scene detected, using optimized rendering",
+      "LargeUnoptimizedImages": "Scene \"{scene}\" has large images that may not load on some mobile devices. Swipe VTT can create mobile-friendly versions for you, that will load only on mobile phones. Find the option in the module's settings - Optimize Images",
+	  "SceneExceedsMaxTexture": "Scene \"{scene}\" has images larger than this device supports ({maxTexture}px). Some images may not render correctly. Ask your GM to optimize scene images in Swipe VTT settings.",
+      "PlayerOversizedTexture": "Player \"{player}\" tried to load a scene image too large for their device ({width}x{height}, max {maxTexture}px). Use Image Optimizer in Swipe VTT settings to create mobile versions.",
+      "AutoOptimized": "Swipe VTT: Auto-optimized {count} image(s) for scene \"{scene}\" for mobile devices.",
+      "OptimizedImagesLoaded": "Swipe VTT: Using {count} mobile-optimized image(s)",
+      "DSNSafariOptimized": "Swipe VTT: Adjusted Dice So Nice settings for Safari compatibility",
+      "SafariIOSWarning": "Foundry VTT does not work well on iOS Safari. For a better experience, please use Chrome (or another Chromium browser) instead."
+    },
+	"DesktopEnableWarning": {
+      "Title": "Enable Mobile Mode on Desktop",
+      "Content": "This setting is meant for touch enabled laptops or testing with Chrome Device Simulator. It may cause issues on regular browser. Are you sure you want to enable?",
+      "Enable": "Enable",
+      "Cancel": "Cancel"
+    },
+	"DiceSoNicePrompt": {
+      "Title": "Dice So Nice",
+      "Content": "3D dice animations can impact performance on mobile devices. Would you like to disable Dice So Nice?",
+      "Disable": "Disable 3D Dice",
+      "Keep": "Keep Enabled"
+    },
+    "iOSAAPrompt": {
+      "Title": "Automated Animations on iOS",
+      "Content": "Transparent videos from JB2A show with black background on iOS. This is not something Swipe VTT can fix. Would you like to disable Automated Animations?",
+      "Disable": "Disable Animations",
+      "Keep": "Keep Enabled"
+    },
+    "ImageOptimizer": {
+      "windowTitle": "Swipe VTT - Image Optimization",
+      "title": "Scene Image Optimization",
+      "description": "Some mobile devices won't load large images. Swipe-VTT can replace the images on mobile devices for you with optimized versions and save in the indicated folder. IMPORTANT: This will NOT change your current scenes - it will simply generate mobile images that will be used in mobile only",
+      "analyzing": "Analyzing scenes",
+      "waitForAnalysis": "Please wait for analysis to complete.",
+      "noOptimizationNeeded": "All scenes are optimized or have no large images.",
+      "noScenesFound": "No scenes found in this world.",
+      "noLargeImages": "No large images",
+      "note": "Optimized images will be resized to max 4096px and compressed as WebP. Original files are preserved.",
+      "folderLabel": "Folder to save optimized images to:",
+      "folderNote": "If you delete or change the folder, images may not be found anymore. Make sure to select one folder for all images and update here if folder is manually moved.",
+      "folderHint": "Folder will be created when optimization starts. You can change this or browse to select an existing folder.",
+      "folderRequired": "Please enter a folder name.",
+      "folderInvalid": "Invalid folder path.",
+      "selectFolder": "Select Folder",
+      "selectAll": "Select All",
+      "sceneName": "Scene",
+      "status": "Status",
+      "images": "Images",
+      "statusPending": "Needs Optimization",
+      "statusOptimized": "Optimized",
+      "statusSkipped": "Skipped by GM",
+      "statusOk": "OK",
+	  "statusVideo": "Video",
+      "videosSkipped": "video(s) - can't optimize",
+      "videoWarning": "Video backgrounds cannot be optimized. For better mobile performance, consider using a static image or pre-converting videos to 720p H.264 format.",
+      "imagesOptimized": "image(s) optimized",
+      "optimizeSelected": "Optimize Selected",
+	  "saveAndClose": "Close",
+      "skipAll": "Close",
+      "dontAskAgainCheckbox": "Don't ask again for unselected scenes",
+      "processing": "Processing",
+      "of": "of",
+      "loading": "Loading...",
+      "complete": "Optimization Complete",
+      "successCount": "{count} image(s) optimized successfully.",
+      "failedCount": "{count} image(s) failed:",
+      "mobileNote": "Mobile clients will automatically use optimized versions when available.",
+      "StaleEntriesTitle": "Missing Optimized Images",
+      "StaleEntriesFound": "{count} optimized image(s) are registered but no longer exist on disk:",
+      "StaleEntriesClear": "Would you like to clear these entries from the registry?",
+      "ClearRegistry": "Clear Registry",
+      "KeepEntries": "Keep Entries",
+      "StaleEntriesCleared": "Cleared {count} stale registry entries",
+      "ProgressDialogTitle": "Optimizing Images",
+      "ProgressDialogStarting": "Starting...",
+      "ProgressDialogProcessing": "Processing: "
+    },
+    "UI": {
+      "Buttons": {
+        "close": "Close"
+      },
+      "NoItems": "No items"
+    },
+    "CanvasFreeze": {
+      "RefreshTooltip": "Tap to refresh canvas"
+    },
+    "Chat": {
+      "ToggleTooltip": "Toggle Chat",
+      "NoMessages": "No chat messages to show"
+    },
+    "QuickControls": {
+      "Toggle": "Quick Controls",
+      "TogglePause": "Pause / Unpause Game",
+      "UntargetAll": "Untarget All",
+      "MeasureDistance": "Measure Distance",
+      "Templates": "Measurement Templates",
+      "TemplateCircle": "Circle",
+      "TemplateCone": "Cone",
+      "TemplateRect": "Rectangle",
+      "TemplateRay": "Ray",
+      "TargetsCleared": "All targets cleared",
+      "DeleteTemplate": "Delete All Templates",
+      "NoTemplatesOnCanvas": "No templates on canvas",
+      "Logout": "Logout",
+      "LogoutConfirmTitle": "Confirm Logout",
+      "LogoutConfirmMessage": "Are you sure you want to log out?",
+      "Volume": "Volume"
+    },
+    "Sheet": {
+      "OpenSheet": "Open Character Sheet",
+      "CloseSheet": "Close Character Sheet",
+      "Notes": "Notes",
+      "NotesPlaceholder": "Add your notes here...",
+      "RotateToPortrait": "Please Rotate Your Device",
+      "RotateToPortraitHint": "This sheet works best in portrait orientation",
+      "SkillsFilter": {
+        "All": "All Skills",
+        "Proficient": "Proficient Only"
+      },
+	  "ToolsFilter": {
+        "All": "All Tools",
+        "Proficient": "Proficient Only"
+      },
+      "TempHP": "Temp. HP",
+      "TempMax": "Temp. Max",
+      "Healing": "Healing",
+      "Damage": "Damage",
+      "Apply": "Apply",
+      "PF2E": {
+        "View": "View",
+        "Delete": "Delete",
+        "Cancel": "Cancel",
+        "Use": "Use",
+        "Cast": "Cast",
+        "Craft": "Craft",
+        "Unprepare": "Unprepare",
+		"Expend": "Expend",
+        "Restore": "Restore",
+        "DailyCrafting": "Daily Crafting",
+        "Reset": "Reset",
+        "DeleteConfirmTitle": "Delete {name}",
+        "DeleteConfirmContent": "<p>Delete <strong>{name}</strong>?</p>",
+        "NoCraftingAbilities": "No crafting abilities",
+        "NoSpellcasting": "No spellcasting",
+        "NoFeats": "No feats",
+        "NoExplorationActivities": "No exploration activities",
+        "NoDowntimeActivities": "No downtime activities",
+        "DC": "DC",
+        "Cost": "Cost",
+        "Quantity": "Quantity",
+        "Bulk": "Bulk",
+        "Currency": "Currency",
+        "InvestedItems": "Invested Items",
+        "KnownFormulas": "Known Formulas ({count})",
+        "AdvancedAlchemy": "Advanced Alchemy",
+        "InfusedReagents": "Infused Reagents",
+        "Level": "Level {level}",
+        "FocusPoints": "Focus Points",
+		"SearchSpells": "Search spells...",
+        "Cantrips": "Cantrips",
+        "Rank": "Rank {rank}",
+        "SpellDC": "Spell DC",
+        "Attack": "Attack",
+        "EmptySlot": "Empty Slot",
+        "EmptySlotRemaining": "Empty Slot ({remaining} remaining)",
+        "Prepare": "Prepare {rank}",
+		"PrepareBtn": "Prepare",
+        "Spells": "Spells",
+        "Flexible": "Flexible",
+        "Done": "Done",
+        "NoSpellsPrepared": "No spells prepared",
+        "Conditions": "Conditions",
+        "ConditionsCount": "Conditions ({count})",
+        "EffectsCount": "Effects ({count})",
+        "IntercessionsCount": "Divine Intercessions ({count})",
+        "Expired": "Expired",
+        "Encounter": "Encounter",
+        "Exploration": "Exploration",
+        "Downtime": "Downtime",
+        "Strike": "Strike",
+        "Damage": "Damage",
+        "Critical": "Critical",
+        "Action": "Action",
+        "Actions": "Actions",
+        "Reactions": "Reactions",
+        "FreeActions": "Free Actions",
+        "Active": "Active",
+        "Available": "Available",
+        "Enc": "Enc",
+        "Curse": "Curse",
+        "Boon": "Boon",
+        "Skills": "Skills",
+        "All": "All",
+        "TrainedPlus": "Trained+",
+        "Attacks": "Attacks",
+        "Defenses": "Defenses",
+        "MartialProficiencies": "Martial Proficiencies",
+        "ClassDC": "Class DC",
+        "Weapons": "Weapons",
+        "Armor": "Armor",
+        "Equipment": "Equipment",
+        "Consumables": "Consumables",
+        "Treasure": "Treasure",
+        "Containers": "Containers",
+        "Kits": "Kits",
+        "Other": "Other",
+        "Invested": "Invested",
+        "Strikes": "Strikes",
+        "AncestryFeatures": "Ancestry Features",
+        "ClassFeatures": "Class Features",
+        "AncestryFeats": "Ancestry Feats",
+        "ClassFeats": "Class Feats",
+        "ArchetypeFeats": "Archetype Feats",
+        "SkillFeats": "Skill Feats",
+        "GeneralFeats": "General Feats",
+        "BonusFeats": "Bonus Feats",
+        "MythicFeats": "Mythic Feats",
+        "CampaignFeats": "Campaign Feats",
+        "Calling": "Calling",
+        "PFSBoons": "PFS Boons"
+      }
+    },
+    "Sheets": {
+      "MobileCharacter": "Mobile Character Sheet"
+    },
+    "DiceRoller": {
+      "Title": "Dice Roller",
+      "Roll": "Roll",
+      "SelectDice": "Select which dice to roll",
+      "CustomRoll": "Custom Roll"
+    },
+"Daggerheart": {
+      "Loadout": "Loadout",
+      "Vault": "Vault",
+      "NoCardsEquipped": "No cards equipped",
+      "NoCardsInVault": "No cards in vault",
+      "MoveToVault": "Move to Vault",
+      "MoveToLoadout": "Move to Loadout",
+      "Hope": "Hope",
+      "Experiences": "Experiences",
+      "NoExperiences": "No experiences yet",
+      "Evasion": "Evasion",
+      "ShortRest": "Short Rest",
+      "LongRest": "Long Rest",
+      "Armor": "Armor",
+      "ArmorSlots": "Armor Slots",
+      "Minor": "Minor",
+      "Major": "Major",
+      "Severe": "Severe",
+      "Gold": "Gold",
+      "Coins": "Coins",
+      "Handfuls": "Handfuls",
+      "Bags": "Bags",
+      "Chests": "Chests",
+      "Background": "Background",
+      "NoBackground": "No background written",
+      "Connections": "Connections",
+      "NoConnections": "No connections defined",
+      "Characteristics": "Characteristics",
+      "NoCharacteristics": "No characteristics defined",
+      "Scars": "Scars",
+      "NoScars": "No scars yet",
+      "Notes": "Notes",
+      "NoNotes": "No notes",
+      "ActiveEffects": "Active Effects",
+      "InactiveEffects": "Inactive Effects",
+      "NoActiveEffects": "No active effects",
+      "NoInactiveEffects": "No inactive effects",
+      "EnableEffect": "Enable effect",
+      "DisableEffect": "Disable effect",
+      "DeleteEffect": "Delete effect",
+      "Weapons": "Weapons",
+      "Consumables": "Consumables",
+      "Equipment": "Equipment",
+      "Use": "Use",
+      "ViewCard": "View",
+      "ViewItem": "View",
+      "Attack": "Attack",
+      "Damage": "Damage",
+      "Difficulty": "Difficulty",
+      "NoAttacks": "No attacks",
+      "NoFeatures": "No features",
+      "ReactionRoll": "Reaction Roll"
+    },
+	"PerformanceMode": {
+      "DialogTitle": "Performance Mode",
+      "Intro": "Based on device's capabilities, Swipe suggests {recommendedMode} mode.",
+      "ChooseMode": "Choose a performance mode:",
+      "Recommended": "Recommended",
+      "Apply": "Apply",
+	  "Reset": "Reset",
+      "Applied": "Performance mode set to {mode}",
+      "ChangeMode": "Change Performance Mode",
+      "CurrentMode": "Current Mode",
+      "AutoOptimize": {
+        "Name": "Auto-Escalate If Struggling",
+        "Hint": "If FPS stays low, prompt to enable a higher performance mode."
+      },
+      "Minimal": {
+        "Name": "Minimal",
+        "Desc": "No performance changes other than loading optimized mobile images. For flagship devices only.",
+        "Warning": "May heat up your device. Test and switch if necessary."
+      },
+      "Balanced": {
+        "Name": "Balanced",
+        "Desc": "Lowers FPS to 30, freezes canvas when idle, and disables some heavy effects modules. Good balance of quality and battery life."
+      },
+      "Aggressive": {
+        "Name": "Aggressive",
+        "Desc": "All Balanced optimizations, plus disables Automated Animations, offers to disable Dice So Nice, and uses lower resolution rendering."
+      },
+      "SheetOnly": {
+        "Name": "Sheet-Only",
+        "Desc": "Disables the map rendering, but keeps certain Foundry functionality. For heavy worlds or devices struggling with Foundry."
+      },
+	  "Standalone": {
+        "Name": "Standalone",
+        "Desc": "Lightweight standalone page that bypasses Foundry's client. Best for access to character sheet on iPhones or low-memory devices, but lacks many Foundry features."
+      },
+      "Escalation": {
+        "Title": "Performance Still Low",
+        "Message": "Your device is experiencing low frame rates ({fps} FPS). Would you like to try {nextMode} mode?",
+        "Apply": "Yes",
+        "Skip": "Decide Later",
+        "StopAsking": "Stop asking"
+      },
+      "ReloadTitle": "Reload Required",
+      "ReloadPrompt": "Performance mode settings have been saved. A page reload is required for all changes to take effect.",
+      "ReloadNow": "Reload Now",
+      "ReloadLater": "Later"
+    },
+	"ConnectPhone": {
+      "Title": "Swipe QR Code",
+      "ButtonName": "Swipe QR Code",
+      "Instructions": "Scan this QR code on your phone to connect as the same user.",
+      "NetworkNote": "",
+      "CopyUrl": "Copy Link",
+      "Copied": "Link copied to clipboard!",
+      "DontShowAgain": "Don't show this on load (reopen on user config dialog)"
+    },
+	"SettingsCleanup": {
+      "MenuButton": {
+        "Name": "Cleanup Utility",
+        "Label": "Clean Up Orphaned Settings",
+        "Hint": "Every module you installed leaves settings behind. Scan for and remove orphaned settings left by disabled or uninstalled modules - it might save world loading time."
+      },
+      "WindowTitle": "Cleanup Utility",
+      "Title": "Orphaned Module Settings",
+      "Description": "These settings belong to modules that are no longer active. Removing them can help reduce a bit of world loading time.",
+      "Scanning": "Scanning settings...",
+      "NoOrphansFound": "No orphaned settings found. Your world is clean!",
+      "WorldSettings": "World Settings",
+      "ClientSettings": "Client Settings (Browser)",
+      "SelectAll": "Select All",
+      "Module": "Module",
+      "Status": "Status",
+      "SettingsCount": "Settings",
+      "Settings": "setting(s)",
+      "StatusInactive": "Inactive",
+      "StatusUninstalled": "Not Installed",
+      "NoneSelected": "Please select at least one module to clean up.",
+      "ConfirmTitle": "Confirm Deletion",
+      "ConfirmMessage": "Delete {count} orphaned setting(s)? This cannot be undone.",
+      "ConfirmDelete": "Delete",
+      "ConfirmCancel": "Cancel",
+      "DeletedSummary": "Deleted {world} world setting(s) and {client} client setting(s).",
+      "DeleteSelected": "Delete Selected",
+      "Close": "Close",
+      "Note": "Only settings from inactive or uninstalled modules are shown. Active module, system, and core settings are never affected."
+    },
+    "MemoryDiag": {
+      "MenuButton": {
+        "Name": "Memory Diagnostics",
+        "Label": "Open Memory Diagnostics",
+        "Hint": "Analyze memory usage by module and asset type. Helps identify what is consuming resources on mobile devices."
+      },
+      "WindowTitle": "Memory Diagnostics",
+      "Refresh": "Refresh",
+      "Close": "Close",
+      "TABS": {
+        "overview": "Overview",
+        "documents": "Documents",
+        "textures": "Textures",
+        "recommendations": "Recommendations"
+      },
+      "QuickStats": "Quick Stats",
+      "WorldDocuments": "World Documents",
+      "ActiveModules": "Active Modules",
+      "LoadedTextures": "Loaded Textures",
+      "TextureMemory": "Texture Memory",
+      "EstimatedTotal": "Estimated Total Memory",
+      "EstimatedTotalHint": "JS Heap (includes module code + documents) + GPU Textures",
+      "CollectionCounts": "Collection Counts",
+      "ToConsider": "To Consider",
+      "DocumentsIntro": "Everything in the World sidebar is loaded into memory for every connected client. Keep actors, items, and scenes in compendium packs when not actively in use \u2014 they are only loaded on demand and won\u2019t slow down your world.",
+      "Name": "Name",
+      "Type": "Type",
+      "DataSize": "Data Size",
+      "Embedded": "Embedded",
+      "NoDocuments": "No documents in this collection.",
+      "SkippedLargeCollection": "Skipped sizing for {count} entries (too large). Count shown only.",
+      "WorldVsCompendium": "World vs Compendium",
+      "WorldVsCompendiumHint": "World documents are always loaded into memory. Compendium documents are lazy-loaded on demand.",
+      "World": "World",
+      "Compendium": "Compendium",
+      "WorldInMemory": "World (always in memory)",
+      "CompendiumLazy": "Compendium (lazy-loaded)",
+      "DiskUsage": "Server Disk Usage",
+      "DiskUsageHint": "Actual file sizes on the server for each data collection.",
+      "WorldData": "World Data",
+      "CompendiumData": "Compendium Data",
+      "Collection": "Collection",
+      "Count": "Count",
+      "DiskSize": "Disk Size",
+      "Pack": "Pack",
+      "IndexEntries": "Index",
+      "GMRequired": "Server disk sizes are only available to the GM.",
+      "GPUTextureMemory": "GPU Texture Memory",
+      "TexturesLoaded": "textures loaded into GPU memory",
+      "ByModule": "By Module",
+      "ByCategory": "By Category",
+      "LargestTextures": "Largest Textures",
+      "Asset": "Asset",
+      "Size": "Size",
+      "Memory": "Memory",
+      "Module": "Module",
+      "Textures": "Textures",
+      "Category": "Category",
+      "PerSceneTextures": "Per-Scene Texture Estimates",
+      "PerSceneHint": "Estimated GPU memory cost per scene. Active/viewed scenes have textures loaded.",
+      "Scene": "Scene",
+      "Dimensions": "Dimensions",
+      "Assets": "Assets",
+      "Loaded": "Loaded",
+      "Estimated": "Estimated",
+      "ShowMore": "Show {count} more...",
+      "NoIssuesFound": "No issues found. Your world looks healthy!"
+    },
+    "Premium": {
+      "DialogTitle": "Amethyst Club features",
+      "TabAuthentication": "Authentication",
+      "Description": "Connect your Patreon account to unlock complete mobile character sheets and image optimization features.",
+      "PatreonAuth": "Patreon Authentication",
+      "Status": "Connection Status",
+      "Connected": "Connected",
+      "NotConnected": "Not connected to Patreon",
+      "NotPatronStatus": "Not a Patron",
+      "InsufficientTierStatus": "Insufficient Tier",
+      "PatronName": "Patron",
+      "PatronTier": "Tier",
+      "PatronInfo": "Patron Information",
+      "LoadedFeatures": "Loaded Features",
+      "RequiredTier": "Amethyst Club features require ${required}/month tier",
+      "GracePeriod": "offline mode - {days} days remaining",
+      "ConnectPatreon": "Connect with Patreon",
+      "RefreshStatus": "Refresh",
+      "RefreshBundles": "Reload Features",
+      "Logout": "Disconnect",
+      "InfoText": "Amethyst Club features include complete mobile character sheets and image optimization. Connect your Patreon account (on free tier!) to unlock these features.",
+      "ConnectionSuccess": "Connected as {name}! Amethyst Club features are now available.",
+      "ConnectionFailed": "Failed to connect. Please try again.",
+      "NotPatron": "Your account is not linked to an active Patreon membership.",
+      "InsufficientTier": "Your tier (${current}/month) doesn't meet the minimum (${required}/month) for Amethyst Club features.",
+      "InsufficientTierWarning": "Your current tier doesn't include Amethyst Club features.",
+      "UpgradeTier": "Upgrade on Patreon",
+      "PopupBlocked": "Popup was blocked. Please allow popups for this site and try again.",
+      "LoggedOut": "Disconnected from Patreon. Amethyst Club features disabled.",
+      "RefreshingBundles": "Refreshing Amethyst Club features...",
+      "BundlesRefreshed": "Amethyst Club features refreshed.",
+      "PatronNameUnknown": "(unknown)",
+      "FeatureLocked": "Connect to Patreon",
+      "UpgradeHint": "GM must connect their Patreon account on any tier to unlock this section of character sheet.",
+      "TokenExpired": "Swipe Patreon session expired. GM should reconnect with Patreon to unlock features.",
+      "GMReloadRequest": "GM loaded Amethyst Club features. Reloading...",
+      "LinkCodeFieldset": "Authenticate with Link Code",
+      "LinkCodeHint": "Can't use popups? Get a code from another device.",
+      "GetLinkCode": "Click to Get an Auth Code",
+      "SaveCode": "Save",
+      "EnterCode": "Please enter a link code",
+      "InvalidCode": "Invalid or expired code"
+    },
+	"Diagnostics": {
+      "CollectionActors": "Actors",
+      "CollectionItems": "Items",
+      "CollectionScenes": "Scenes",
+      "CollectionJournals": "Journals",
+      "CollectionTables": "Roll Tables",
+      "CollectionPlaylists": "Playlists",
+      "CollectionMacros": "Macros",
+      "CollectionMessages": "Chat Messages",
+      "ConflictCompetingMobile": "{modules} conflict with Swipe VTT touch handling. Disable for better stability and lower memory usage.",
+      "ConflictAnimationStack": "{count} animation modules active ({modules}). Animation libraries consume significant GPU memory on mobile and don't usually work on iOS.",
+      "ConflictDiceModules": "{count} dice modules active. Each adds WebGL textures. Consider keeping only Dice So Nice on mobile.",
+      "ConflictFxModules": "{modules}: GPU shader effects increase memory pressure on mobile.",
+      "ConflictMediaOptimizer": "Media Optimizer is active alongside Swipe VTT's built-in image optimizer. This may cause conflicts or redundant processing.",
+      "RecActorCount": "Your world has {count} actors loaded into memory. Consider moving NPCs to a compendium and importing only when needed.",
+      "RecActorCountHint": "Move inactive NPCs to a compendium pack",
+      "RecBloatedActors": "Actors with excessive embedded items",
+      "RecBloatedActorsHint": "Archive unused items to a compendium",
+      "RecChatMessages": "You have {count} chat messages. Old messages consume memory on every client.",
+      "RecChatMessagesHint": "Use \"Flush Chat\" or delete old messages",
+      "RecOversizedTextures": "Oversized scene backgrounds (exceeding 4096px)",
+      "RecOversizedTexturesHint": "Use Image Optimizer to create mobile-friendly versions",
+      "RecStorageSize": "Total world data on disk is {size}.",
+      "RecStorageSizeHint": "Consider removing unused compendia or cleaning up world data",
+      "RecWorldHeavy": "Collections with most documents in world (always loaded into memory)",
+      "RecWorldHeavyHint": "Move rarely-used entries to compendium packs",
+      "RecComplexWalls": "Scenes with complex wall geometry",
+      "RecComplexWallsHint": "Complex walls increase memory and render time",
+      "WarnTexturesCritical": "GPU texture memory is very high ({size}). This will likely cause crashes on mobile.",
+      "WarnTexturesHigh": "GPU texture memory is elevated ({size}). May cause issues on low-end devices.",
+      "WarnModulesCritical": "{count} modules active. This is extremely high for mobile. Each module adds JS, CSS, and hook overhead.",
+      "WarnModulesHigh": "{count} modules active. Consider disabling non-essential modules for mobile sessions.",
+      "WarnDOMComplexity": "DOM has {count} elements. High DOM complexity increases memory usage and slows rendering."
+    },
+    "UserConfig": {
+      "Description": "Configure mobile mode and performance settings for individual players.",
+      "Mode": "Mobile Mode",
+      "ModeAuto": "Auto-Detect",
+      "ModeFull": "Full Mobile",
+      "ModeSheetsOnly": "Sheets Only",
+      "ModeOff": "Desktop (Off)",
+      "Force": "Force",
+      "Overrides": "Performance Overrides",
+      "PlayerChoice": "Player's Choice",
+      "On": "On",
+      "Off": "Off",
+      "NoUsers": "No non-GM users in this world.",
+      "ForcedByGM": "Set by GM",
+      "ReloadTitle": "Settings Changed",
+      "ReloadPrompt": "Your GM has updated your mobile settings. A reload is required for changes to take effect."
+    }
+  }
+}

@@ -1,0 +1,78 @@
+
+	"Menu":{
+		"enableSceneActorsOnScene": "启用角色场景",
+		"hideSceneActorsOnScene": "暂时隐藏角色场景"
+	},
+	"Selector": {
+		"deleteAllActors": "删除所有场景角色",
+		"noActor": "还没有NPC出现在这个场景中",
+		"noPlayerCharacter": "尚未添加玩家角色",
+		"noItems": "尚未添加物品",
+		"dropHere": "点击此处",
+		"minimize": "最小化",
+		"maximize": "最大化",
+		"szeneSettings": "场景设置",
+		"openSheet": "打开角色表",
+		"openItemSheet": "打开物品卡",
+		"removeActor": "从场景中移除角色",
+		"removeItem": "从场景中移除物品",
+		"showActor": "<strong>左键点击：</strong>显示/隐藏场景中的角色<br><strong>右键单击：</strong>更改头像显示",
+		"focusActor": "聚焦场景中的角色",
+		"showItem": "<strong>左键点击：</strong>显示/隐藏场景中的物品<br><strong>右键单击：</strong>更改物品显示",
+		"showToolbar": "显示场景工具栏",
+		"hideToolbar": "隐藏场景工具栏",
+		"hint": "备注",
+		"disabledHint": "禁止显示 PC 和 NPC",
+		"toolbarShowActorsToGM": "为 GM 显示/隐藏角色",
+		"toolbarShowActorsToPlayers": "为玩家显示/隐藏角色",
+		"toolbarScaleActors": "比例化角色",
+		"toolbarNPC": "NPC",
+		"toolbarPC": "PC",
+		"toolbarShowPC": "显示PC",
+		"toolbarShowNPC": "显示NPC"
+	},
+	"Settings": {
+		"disableTitle": "禁用角色场景",
+		"disableHint": "应与GM讨论禁用问题，因为这可能对其游戏管理很重要。",
+		"tooltipsTitle": "显示提示",
+		"tooltipsHint": "提示可以帮助GM在模组中找到方向，尤其是在开始阶段。",
+		"changelogTitle": "功能与更新",
+		"changelogHint": "有关该模组的功能和更新日志，请点击此处。",
+		"changelogButton": "立即查看",
+		"showChangelogTitle": "显示更新日志",
+		"showChangelogHint": "更新后是否应为GM显示更新日志？",
+		"keyToggleSceneActorsViewTitle": "角色展示",
+		"keyToggleSceneActorsViewHint": "角色在自己的屏幕上隐藏或显示。玩家只能暂时隐藏角色，也就是说，只要GM将一个角色切换进来，所有的角色又都会显示出来。",
+		"keyMinMaxSelectorTitle": "最小化选择器",
+		"keyMinMaxSelectorHint": "最小化或最大化场景角色选择器",
+		"keyToggleSceneActorsTitle": "启用角色场景",
+		"keyToggleSceneActorsHint": "在场景中完全启用或禁用模组。",
+		"rotateActorsTitle": "旋转角色",
+		"rotateActorsHint": "游戏区域中的角色可通过点击进行旋转",
+		"battleActorsTitle": "启用战斗角色(BETA)",
+		"battleActorsHint": "注意：此功能至少需要 DSA 系统 v5.1.0。在战斗地图上，其中一个 战斗角色选择器会在正在进行的战斗中取代场景角色选择器。这样玩家就可以在没有战斗地图的情况下在另一个（TotM）场景中进行身临其境的战斗，而GM仍然可以借助战斗地图进行跟踪。",
+		"hoverNamesTitle": "鼠标悬停时显示名称",
+		"hoverNamesHint": "如果角色的名称已对玩家解锁，则仅在玩家将鼠标悬停在头像上时显示。这也适用于物品的交互区域。"
+	},
+	"Changelog": {
+		"title": "Yendor's Scene Actors: 功能与更新",
+		"tabFeatures": "功能",
+		"tabChangelog": "更新",
+		"currentReleaseHint": "该版本包含一些小的改进或错误修复。更多详细信息请参见"
+	},
+	"Canvas": {
+		"tooltipClickActor": "<strong>左键点击：</strong>聚焦显示角色<br><strong>右键单击：</strong>另类立绘视角<br><strong>Alt + 左键点击：</strong>旋转角色（如果启用该选项）",
+		"tooltipClickActorPlayer": "打开角色表（需要权限）",
+		"tooltipClickItem": "<strong>左键点击：</strong> 聚焦显示物品<br><strong>右键点击：</strong> 切换物品视图<br><strong>Alt + 左键点击：</strong> 旋转物品（如果选项已启用）",
+		"tooltipClickITemPlayer": "打开物品卡（需要权限）",
+		"tooltipClickNameLabel": "单击：显示/隐藏名称",
+		"tooltipNameIsHidden": "名称将被隐藏",
+		"tooltipItemToInventory": "拾取物品并添加到库存",
+		"tooltipItemLocked": "无法查看或拾取物品",
+		"tooltipItemDisable": "对玩家禁用",
+		"tooltipItemEnable": "对玩家启用",
+		"notification": {
+			"noCharacter": "必须为玩家分配一个角色。"
+		}
+	}
+}

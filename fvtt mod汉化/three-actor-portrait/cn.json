@@ -1,0 +1,45 @@
+
+    "three-actor-portrait": {
+        "settings": {
+            "authKey": {
+                "name": "HeroForge 认证密钥",
+                "hint": "在此输入你的认证密钥。你可以在 HeroForge 账户设置中找到（账户 -> 个人信息 -> 访问密钥）。如果你更改了 HeroForge 密码，则需要更新认证密钥。"
+            },
+            "disablePortrait": {
+                "name": "禁用 3D 立绘",
+                "hint": "在所有角色上禁用 3D 立绘。建议低端设备和慢速网络使用。"
+            },
+            "playerCanEditPortrait": {
+                "name": "允许玩家编辑摄像机位置",
+                "hint": "允许玩家编辑 3D 立绘的摄像机位置。"
+            },
+            "autoRotate": {
+                "name": "自动旋转",
+                "hint": "自动旋转 3D 立绘的摄像机。"
+            },
+            "rotationSpeed": {
+                "name": "旋转速度",
+                "hint": "3D 立绘摄像机旋转的速度。"
+            },
+            "license-agreement": {
+                "name": "接受服务条款",
+                "hint": "启用此设置即表示你接受 3D 立绘的服务条款。此模组使用 HeroForge API，任何未经 Sky Castle Studio 许可尝试逆向工程、提取或使用 API 的行为均违反服务条款。如果你希望在自己的项目中使用 HeroForge API，请联系 Sky Castle Studio：support@heroforge.com。"
+            },
+            "maxContexts": {
+                "name": "最大同时显示立绘数",
+                "hint": "可以同时显示的立绘的最大数量。其他模组或其他浏览器标签页可能会使用画布菜单，如果你遇到 WebGL 崩溃，可能需要降低此值。WebGL 的最大限制为 16 个上下文。"
+            }
+        },
+        "portrait-preview": {
+            "save-pose": "保存姿势",
+            "download": "下载",
+            "toggle-rotate": "切换自动旋转",
+            "camera-position-saved": "摄像机位置已保存",
+            "topdown": "俯视图",
+            "outline": "切换轮廓"
+        },
+        "notifications": {
+            "maxContextExceeded": "你已达到可同时显示的 3D 立绘最大数量，最旧的立绘已被关闭。你可以在模组设置中更改此值。"
+        }
+    }
+}

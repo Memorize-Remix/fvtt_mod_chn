@@ -1,0 +1,158 @@
+
+  "relations-tracker": {
+    "title": "关系追踪",
+    "global": {
+      "selectActor": "选择角色",
+      "errors": {
+        "onlyGm": "只有GM可以执行此操作。"
+      }
+    },
+    "common": {
+      "buttons": {
+        "close": "关闭",
+        "cancel": "取消",
+        "create": "创建",
+        "update": "更新",
+        "save": "保存"
+      },
+      "errors": {
+        "noGm": "没有可用的GM。"
+      }
+    },
+    "errors": {
+      "onlyGm": "只有GM可以执行此操作。"
+    },
+    "factions": {
+      "title": "派系管理",
+      "label": "打开派系管理",
+      "hint": "创建、查看、编辑和删除派系。"
+    },
+    "factionsManager": {
+      "title": "派系管理",
+      "header": "派系",
+      "actions": {
+        "create": "创建派系",
+        "view": "查看",
+        "edit": "编辑",
+        "delete": "删除",
+        "createFirst": "创建第一个派系"
+      },
+      "members": {
+        "label": "成员："
+      },
+      "empty": {
+        "title": "尚无派系",
+        "desc": "注册你的第一个派系以管理关系。"
+      },
+      "dialog": {
+        "viewTitle": "查看派系",
+        "editTitle": "编辑派系",
+        "createTitle": "创建派系",
+        "deleteTitle": "删除派系",
+        "deleteMessage": "你确定要删除<strong>{{name}}</strong>吗？"
+      },
+      "fields": {
+        "name": "名称",
+        "image": "图片",
+        "imagePlaceholder": "path/to/image.png",
+        "members": "成员",
+        "searchActors": "搜索角色"
+      },
+      "errors": {
+        "load": "加载派系时出错。",
+        "delete": "删除派系时出错。",
+        "deleteFailed": "删除派系失败。",
+        "updateFailed": "更新派系失败。",
+        "createFailed": "创建派系失败。",
+        "createFailedWithReason": "创建派系失败：{{reason}}",
+        "save": "保存派系时出错。",
+        "filePickerOpenFailed": "打开文件选择器失败。详情请查看控制台。"
+      },
+      "success": {
+        "delete": "派系已删除。",
+        "update": "派系已更新。",
+        "create": "派系已创建。"
+      }
+    },
+    "localRelations": {
+      "title": "个人关系",
+      "header": "个人关系",
+      "actions": {
+        "add": "添加",
+        "remove": "移除"
+      },
+      "empty": {
+        "title": "尚无关系",
+        "desc": "使用添加来包含角色或派系。"
+      },
+      "dialog": {
+        "addTitle": "添加关系",
+        "type": "类型",
+        "actor": "角色",
+        "faction": "派系",
+        "chooseActor": "选择角色",
+        "chooseFaction": "选择派系"
+      },
+      "errors": {
+        "save": "保存关系时出错。"
+      }
+    },
+    "reputation": {
+      "title": "声望",
+      "label": "声望",
+      "imageLabel": "图片（URL或上传）",
+      "imagePlaceholder": "https://...",
+      "editTitle": "编辑声望",
+      "editTooltip": "编辑声望",
+      "hidden": "隐藏",
+      "visibility": {
+        "title": "声望可见性",
+        "hint": "控制谁可以在追踪中查看声望。",
+        "public": "公开（所有玩家）",
+        "private": "私有（仅GM）",
+        "vendor": "仅通过信息供应商"
+      },
+      "viewer": {
+        "selectActor": "角色",
+        "private": "声望是私有的。",
+        "vendorLocked": "声望仅通过信息供应商可见。"
+      },
+      "vendorManager": {
+        "title": "供应商访问",
+        "locked": "只有GM可以管理供应商访问。",
+        "userId": "用户ID",
+        "userPlaceholder": "用户ID（空 = 任何人）",
+        "actorId": "角色ID",
+        "actorPlaceholder": "角色ID（空 = 任何角色）",
+        "targets": "目标（逗号分隔）",
+        "targetsPlaceholder": "target1, target2（空 = 所有目标）",
+        "duration": "持续时间（分钟，0 = 无过期）",
+        "note": "备注",
+        "add": "添加访问",
+        "remove": "移除",
+        "empty": "无供应商访问条目。",
+        "user": "用户",
+        "actor": "角色",
+        "targetsLabel": "目标",
+        "expires": "过期时间",
+        "anyUser": "任何用户",
+        "anyActor": "任何角色",
+        "anyTarget": "任何目标",
+        "noExpiry": "无过期",
+        "error": "更新供应商访问失败。"
+      }
+    },
+    "playerAllowedEditRelationships": {
+      "title": "允许玩家编辑关系",
+      "hint": "启用后，非GM用户可以编辑追踪中的关系。"
+    },
+    "enableGlobalRelations": {
+      "title": "启用全局关系",
+      "hint": "启用后，全局小队关系追踪可用。"
+    },
+    "globalRelations": {
+      "title": "小队关系",
+      "header": "小队关系"
+    }
+  }
+}

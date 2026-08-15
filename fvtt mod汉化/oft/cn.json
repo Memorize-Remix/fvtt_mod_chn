@@ -1,0 +1,124 @@
+
+	"OFT": {
+		"setting": {
+			"addGlobalAppsReference": {
+				"name": "添加全局实例",
+				"hint": "(v13+) 这将添加一个名为\"apps\"的全局变量，让你可以用更少的代码访问\"foundry.applications.instances\"。"
+			},
+			"addGlobalDocReferrer": {
+				"name": "添加全局 \"_doc\"",
+				"hint": "(v13+) 在文档表中添加一个标题控件，用于设置全局变量 _doc。在触发该标题控件之前，\"_doc\" 变量为未定义状态。"
+			},
+			"autoUnpauseOnLoad": {
+				"name": "加载时自动取消暂停",
+				"hint": "(v13+, 仅限GM) 当你加载进入世界时，自动取消游戏暂停。这会在每次加载进入世界时发生，包括重新加载网站时。"
+			},
+			"chatImageLinks": {
+				"name": "图片快捷方式",
+				"hint": "(v13+) 在聊天中发布图片和GIF链接时自动嵌入。链接必须指向具体的图片文件（例如png、webp、gif），否则将完全不会被嵌入。"
+			},
+			"chatSidebarBackground": {
+				"name": "聊天背景",
+				"hint": "(v13+) 为右侧边栏的聊天标签页添加背景。"
+			},
+			"defaultHotbarPage": {
+				"name": "默认快捷栏页面",
+				"hint": "(v13+) 加载进入FVTT时快捷栏默认显示的页面。"
+			},
+			"hideProseMirrorChatMenu": {
+				"name": "隐藏聊天文本菜单",
+				"hint": "(v14+) 隐藏聊天侧边栏中的富文本菜单控件。这不会禁用用于设置聊天消息样式的任何快捷键，仅隐藏菜单。"
+			},
+			"hotbarButtonGap": {
+				"name": "快捷栏按钮间距",
+				"hint": "(v13+) 允许更改快捷栏按钮之间的间距。"
+			},
+			"hotbarButtonSize": {
+				"name": "快捷栏按钮大小",
+				"hint": "(v13+) 将快捷栏按钮的大小更改为你喜欢的尺寸。"
+			},
+			"preventMovementHistory": {
+				"name": "禁止移动历史记录",
+				"hint": "(v13+, 仅GM) 此选项将阻止 FVTT 记录Token的移动历史，但不会禁用移动标尺。"
+			},
+			"preventTokenRotation": {
+				"name": "禁止Token自动旋转",
+				"hint": "(v13+，仅GM) 此选项将阻止Token在你移动时自动旋转，让你可以更轻松地使用非俯视风格的Token，而不会被 FVTT 自动旋转。"
+			},
+			"preventUserConfigOpen": {
+				"name": "阻止自动打开用户配置",
+				"hint": "(v13+，非GM) 阻止玩家加载进入世界时，FVTT自动打开用户配置界面。"
+			},
+			"repositionHotbar": {
+				"name": "重新定位快捷栏",
+				"hint": "(v13+) 将快捷栏移动到类似于 ~v11 版本的位置，使其在展开或折叠右侧边栏时不会移动。"
+			},
+			"startSidebarExpanded": {
+				"name": "启动时展开边栏",
+				"hint": "(v13+) 登录时，右侧边栏初始状态为展开。"
+			},
+			"startingSidebarTab": {
+				"name": "初始边栏标签页",
+				"hint": "(v13+) 决定加载 FVTT 时，初始选中的边栏标签页。",
+				"choices": {
+					"blank": "无自定义默认标签页"
+				}
+			}
+		},
+		"menu": {
+			"customStatusIcons": {
+				"name": "自定义状态图标",
+				"hint": "(v13+) 无需自定义模组或世界脚本即可修改你的Token状态效果图标！从服务器上选择任意图像作为图标！",
+				"label": "配置图标"
+			},
+			"devSettings": {
+				"name": "开发者设置",
+				"hint": "如果你在 FVTT 内进行开发，这些调整会很有用，但在此之外很少用到。",
+				"label": "配置开发者设置"
+			},
+			"hotbarSettings": {
+				"name": "宏栏设置",
+				"hint": "用于修改 FVTT 宏栏的调整选项",
+				"label": "配置宏栏"
+			},
+			"rearrangeSidebarTabs": {
+				"name": "重新排列侧边栏标签页",
+				"hint": "(v13+) 允许你自定义右侧边栏标签页的显示顺序，包括模组添加的侧边栏标签页。",
+				"label": "更改标签页顺序"
+			}
+		},
+		"keybindings": {
+			"toggleMouseBroadcast": {
+				"name": "切换显示光标",
+				"hint": "(v13+)临时关闭其他玩家可见的鼠标光标位置。隐藏光标，直到你再次激活此按键绑定。"
+			}
+		},
+		"apps": {
+			"discard-changes": "放弃更改",
+			"no-settings-to-display": "没有可显示的设置",
+			"make-global-reference": "创建全局引用",
+			  "StatusEffectIconConfig": {
+				"title": "配置状态效果图标",
+				"no-status-effects": "未检测到状态效果，这很可能是由于你的游戏系统或其他模组导致的。",
+				"remove-override": "移除自定义覆盖",
+				"select-using-image-tagger": "使用图像标签器选择"
+			  },
+			  "SidebarTabRearranger": {
+				"title": "重新排列侧边栏标签页",
+				"top": "顶部",
+				"bottom": "底部",
+				"save-user": "为用户保存更改",
+				"remove-user": "移除用户顺序",
+				"save-world": "为世界保存更改",
+				"remove-world": "移除世界顺序",
+				"user-override-warning": "你已设置了用户级别的标签页顺序，对世界级别标签页顺序的任何更改将不会对你生效。"
+			  }
+		},
+		"notifs": {
+			"toggleMouseBroadcast": {
+				"hidingCursor": "正在向其他玩家隐藏你的光标！",
+				"showingCursor": "正在向其他玩家显示你的光标！"
+			}
+		}
+	}
+}

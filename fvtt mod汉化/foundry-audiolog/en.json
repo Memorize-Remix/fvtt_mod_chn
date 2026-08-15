@@ -1,0 +1,33 @@
+{
+  "AUDIOLOG": {
+    "title": "Foundry Audiology",
+    "pageType": "Audio Log",
+    "themes": {
+      "generic": "Generic",
+      "fantasy": "Fantasy / Arcane",
+      "steampunk": "Steampunk",
+      "cyberpunk": "Cyberpunk",
+      "modern": "Modern",
+      "futuristic": "Futuristic"
+    },
+    "fields": {
+      "theme": "Theme",
+      "audioPath": "Audio File",
+      "imagePath": "Image",
+      "controls": "Visible Controls",
+      "transcript": "Transcript"
+    },
+    "controls": {
+      "play": "Play",
+      "pause": "Pause",
+      "stop": "Stop",
+      "showTranscript": "Show transcript",
+      "hideTranscript": "Hide transcript"
+    }
+  },
+  "TYPES": {
+    "JournalEntryPage": {
+      "foundry-audiolog.audiolog": "Audio Log"
+    }
+  }
+}

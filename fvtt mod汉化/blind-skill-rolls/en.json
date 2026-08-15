@@ -1,0 +1,86 @@
+{
+  "BLINDSKILLROLLS.NPC.Unknown": "Unknown",
+  "BLINDSKILLROLLS.NPC.ToggleNameVisibility": "Toggle name visibility",
+  "BLINDSKILLROLLS.NPC.HideName": "Hide name",
+  "BLINDSKILLROLLS.NPC.RevealName": "Reveal name",
+
+  "BLINDSKILLROLLS.Settings.Enabled.Name": "Enable Blind Skill Rolls",
+  "BSR.Settings.Theme.Name": "Dialog Theme",
+  "BSR.Settings.Theme.Hint": "Choose between light or dark theme for module dialogs.",
+  "BSR.Settings.Theme.Light": "Light Theme",
+  "BSR.Settings.Theme.Dark": "Dark Theme",
+
+  "BSR.SettingsGroup.Skills.Legend": "Blind Skill Rolls",
+  "BSR.SettingsGroup.Skills.Hint": "Choose which skills should be forced to Blind GM Roll.",
+  "BSR.UI.Skills": "Skills",
+  "BSR.UI.All": "All",
+  "BSR.UI.None": "None",
+  "BSR.UI.Defaults": "Defaults",
+  "BSR.Menu.Skills.Name": "Configure Blind Skill Rolls",
+  "BSR.Menu.Skills.Label": "enable/disable specific skills",
+  "BSR.SettingsGroup.RChats.Legend": "Hide Blind Skill Rolls Chats From The Roller",
+  "BSR.Settings.BlindRollersChat.Name": "Hide the roller's own blind chat messages",
+  "BSR.Settings.BlindRollersChat.Hint": "Hide player's own blind chat messages from the them.",
+  "BSR.UI.Cancel": "Cancel",
+  "BSR.UI.Save": "Save",
+  "BSR.UI.SkillBlindGMNote": "This skill is configured for Blind GM Roll",
+
+  "BSR.Settings.DSNGhostDice.Name": "Dice So Nice: Ghost dice mode",
+  "BSR.Settings.DSNGhostDice.Hint": "Keep ghost dice visible only for the roll author (recommended) or disable them globally.",
+  "BSR.Notifications.DSNGhostDiceSet": "Ghost dice mode set to {target}.",
+  "BSR.Errors.DSNNotActive": "Dice So Nice is not active.",
+
+  "BLINDSKILLROLLS.Settings.HideForeign.Name": "Hide foreign secret messages",
+  "BLINDSKILLROLLS.Settings.HideForeign.Hint": "Hide blind/whisper messages not addressed to the current player.",
+  "BLINDSKILLROLLS.Settings.MuteForeign.Name": "Mute foreign dice sounds",
+  "BLINDSKILLROLLS.Settings.MuteForeign.Hint": "Suppress dice sounds for secret rolls made by other players.",
+  "BLINDSKILLROLLS.Settings.GmSanitize.Name": "Sanitize public GM rolls",
+  "BLINDSKILLROLLS.Settings.TrustedDetails.Name": "Trusted users see details",
+
+  "BLINDSKILLROLLS.Section.ChatDisplay": "Chat Display & Privacy",
+  "BSR.Menu.Chat.Name": "Configure Chat Display",
+  "BSR.Menu.Chat.Label": "visibility of chat messages",
+
+  "BSR.Menu.GMRolls.Legend": "GM Rolls",
+
+  "BLINDSKILLROLLS.Section.NPC": "NPC Masking",
+  "BLINDSKILLROLLS.Settings.NpcMaskDefault.Name": "Hide NPC names from players",
+  "BLINDSKILLROLLS.Settings.NpcMaskDefault.Hint": "When enabled, NPC names are masked for players until revealed.",
+  "BLINDSKILLROLLS.Settings.NpcReplacement.Name": "NPC placeholder name",
+  "BLINDSKILLROLLS.Settings.NpcReplacement.Hint": "Placeholder shown to players instead of the real NPC name.",
+  "BLINDSKILLROLLS.Menu.Chat.Note": "-",
+
+  "BLINDSKILLROLLS.Section.DeathSaves": "Death Saves",
+  "BLINDSKILLROLLS.Settings.DeathSaves.Mode.Name": "Death save visibility",
+  "BLINDSKILLROLLS.Settings.DeathSaves.Mode.Hint": "Choose how death saves are posted: public, private to GM, or blind (GM only).",
+  "BLINDSKILLROLLS.Settings.DeathSaves.Mode.public": "Public (everyone sees the roll)",
+  "BLINDSKILLROLLS.Settings.DeathSaves.Mode.privatroll": "Private GM Roll (author + GM)",
+  "BLINDSKILLROLLS.Settings.DeathSaves.Mode.blindroll": "Blind GM Roll (GM only)",
+  "BLINDSKILLROLLS.Section.DeathSavesHiddenChats": "Hide Death Saves Rolls Chats From The Roller",
+  "BLINDSKILLROLLS.Settings.DeathSaves.BlindRollersDeathSaveChat.Name": "Hide the roller's own blind death saves chat messages",
+  "BLINDSKILLROLLS.Settings.DeathSaves.BlindRollersDeathSaveChat.Hint":  "Hide the players's own blind death saves chat messages from them.",
+  "BSR.Menu.DeathSaves.Name": "Configure Death Saves",
+  "BSR.Menu.DeathSaves.Label": "visibility of death saves",
+
+  "BLINDSKILLROLLS.Log.ReadyText": "ready | hide={hide} | mute={mute}",
+  "BLINDSKILLROLLS.Log.FailedDSNProxyRegistration": "BSR | Registering DSN proxy setting failed:",
+  "BLINDSKILLROLLS.Log.BSRReadySyncFailed":  "BSR | ready sync failed:",
+
+  "BLINDSKILLROLLS.Log.RCMHTMLMarkFailed": "renderChatMessageHTML mark failed",
+  "BLINDSKILLROLLS.Log.AudioPatchFailed": "AudioHelper patch failed",
+  "BLINDSKILLROLLS.Log.SPPPatchFailed": "Sound.prototype.play patch failed",
+  "BLINDSKILLROLLS.Log.HowlerPatchFailed": "Howler patch failed",
+  "BLINDSKILLROLLS.Log.HTMLAPatchFailed": "HTMLAudio patch failed",
+
+  "BLINDSKILLROLLS.Log.NPCRLRCMHFailed": "BSR | npc-reveal-live renderChatMessageHTML failed",
+  "BLINDSKILLROLLS.Log.FLVFileFailedLoad": "File failed to load:",
+  "BLINDSKILLROLLS.Log.FLVReason": "Reason:",
+
+  "BLINDSKILLROLLS.UINotification.BSRMIDIInitSync": "BSR | Blind skills synced on startup",
+  "BLINDSKILLROLLS.UINotification.Synced": "Synced ",
+  "BLINDSKILLROLLS.UINotification.BSRToMIDIQ": "blind skills to midi-qol",
+  "BLINDSKILLROLLS.UINotification.BSRFromMIDIQ": "blind skills from midi-qol",
+  "BSR.Settings.MidiSync.ShowSyncMessages.Name": "Show Sync Notifications",
+  "BSR.Settings.MidiSync.ShowSyncMessages.Hint": "Display notifications and console messages when blind skills are synced with midi-qol. (GM only)"
+
+}

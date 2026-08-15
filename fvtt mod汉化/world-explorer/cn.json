@@ -1,0 +1,88 @@
+
+    "WorldExplorer": {
+        "Name": "World Explorer",
+        "FIELDS": {
+            "image": {
+                "Name": "覆盖图像"
+            },
+            "color": {
+                "Name": "覆盖颜色",
+                "Hint": "如果使用覆盖图像，则忽略此项。",
+                "Placeholder": "默认 (#000000)"
+            },
+            "opacityGM": {
+                "Name": "GM透明度"
+            },
+            "opacityPlayer": {
+                "Name": "玩家透明度"
+            },
+            "partialColor": {
+                "Name": "部分显示颜色",
+                "Hint": "如果为空，将使用覆盖颜色。如果不为空且使用覆盖图像，则部分显示区域会对GM着色，但不会对玩家着色。",
+                "Placeholder": "默认（与上方覆盖颜色相同）"
+            },
+            "partialOpacityPlayer": {
+                "Name": "部分显示透明度",
+                "Hint": "GM将看到部分显示区域的加权透明度，该值由其他透明度计算得出。计算后的值显示在右侧。"
+            },
+            "persistExploredAreas": {
+                "Name": "保留由Token探索的区域"
+            },
+            "position": {
+                "Name": "覆盖位置",
+                "Hint": "应显示在图块和纹理下方还是上方。",
+                "Choices": {
+                    "back": "仅覆盖地图",
+                    "behindDrawings": "覆盖地图和非过顶图块",
+                    "behindTokens": "覆盖地图、非过顶图块和绘图",
+                    "front": "覆盖除网格外的所有内容"
+                }
+            },
+            "revealRadius": {
+                "Name": "Token揭示距离",
+                "Hint": "围绕友方Token临时揭示的距离（从中心计算）。"
+            },
+            "gridRevealRadius": {
+                "Name": "扩展揭示距离",
+                "Hint": "如果设置，已揭示的网格空间将延伸到隐藏和部分显示的空间中一定距离。不会扩展部分显示的空间。"
+            }
+        },
+        "SceneSettings": {
+            "Enabled": "在此场景中启用",
+            "Overlay": {
+                "Title": "覆盖设置"
+            },
+            "Partial": {
+                "Title": "部分显示空间设置",
+                "DerivedName": "GM"
+            },
+            "TokenInteractions": {
+                "Title": "Token交互"
+            }
+        },
+        "Tools": {
+            "Toggle": "切换空间",
+            "Reveal": "揭示空间",
+            "Partial": "部分揭示空间",
+            "Hide": "隐藏空间",
+            "Reset": "重置场景",
+            "Opacity": "GM覆盖透明度"
+        },
+        "ResetDialog": {
+            "Title": "重置场景？",
+            "Content": "确定要重置并更新整个场景吗？</br>此操作无法撤销！",
+            "Confirm": "在下方框中输入以下确切代码以继续：<strong>{code}</strong>",
+            "Choices": {
+                "Explored": "显示全部",
+                "Unexplored": "隐藏全部"
+            }
+        },
+        "MigrateModuleSettings": {
+            "Title": "迁移模组设置",
+            "Content": "此场景包含某些已迁移到模组设置的数据。是否要用此场景之前的值覆盖模组设置？"
+        },
+        "Notifications": {
+            "Migrated": "World Explorer | 已完成当前场景的迁移"
+        }
+    }
+}

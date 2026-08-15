@@ -1,0 +1,99 @@
+
+	"SIMPLEFOG": {
+		  "fogConfiguration": "战争迷雾配置",
+		  "SETTINGS": {
+			"config": {
+			  "name": "默认战争迷雾配置",
+			  "label": "配置战争迷雾设置",
+			  "hint": "配置所有没有特定战争迷雾配置的场景所使用的设置"
+			},
+			"confirmFogDisable": {
+			  "name": "确认禁用场景简单战争迷雾",
+			  "hint": "启用后，在关闭场景的简单战争迷雾功能前会显示确认对话框"
+			},
+			"autoEnableSceneFog": {
+			  "name": "自动启用场景战争迷雾",
+			  "hint": "启用后，新创建的场景将自动启用简单战争迷雾功能"
+			},
+			"toolHotKeys": {
+			  "name": "快捷键工具",
+			  "hint": "定义使用快捷键时将选择的工具",
+			  "choices": {
+				"brush": "画笔",
+				"grid": "网格",
+				"room": "房间",
+				"polygon": "多边形",
+				"box": "矩形",
+				"ellipse": "椭圆"
+			  }
+			},
+			"zIndex": {
+			  "name": "Z轴层级",
+			  "hint": "在特定画布图层及其对象上方显示覆盖层",
+			  "choices": {
+				"tokens": "Token",
+				"controls": "控件（如门）",
+				"interface": "界面（如滚动数字）",
+				"healthEstimate": "界面（如Health Estimates）"
+			  }
+			}
+		  },
+		"brushOpacity": "战争迷雾透明度",
+		"brushSize": "笔刷大小",
+		"hide": "隐藏",
+		"reveal": "显示",
+
+		"gmFogSettings": "GM战争迷雾设置",
+		"gmColorTint": "颜色",
+		"gmColorAlpha": "颜色透明度",
+
+		"playerFogSettings": "pl战争迷雾设置",
+		"playerColorTint": "颜色",
+		"playerColorAlpha": "颜色透明度",
+
+		"fogImageOverlaySettings": "战争迷雾覆盖图像",
+		"fogImageOverlay": "图像",
+		"fogImageOverlayNotes": "所选图像将显示在色调颜色的上方/下方。该图像的高度和宽度应与场景背景图像相同。",
+		"fogImageOverlayGMAlpha": "GM图像透明度",
+		"fogImageOverlayPlayerAlpha": "Pl图像透明度",
+		"fogImageOverlayZIndex": "屏蔽排序",
+		  "fogImageOverlayZIndexOptions": {
+			"4000": "着色位于覆盖图像上方",
+			"6000": "覆盖图像位于着色上方"
+		  },
+
+		"filterSettings": "过滤设置",
+		"blurEnable": "启用显示模糊",
+		"blurRadius": "模糊半径",
+		"blurQuality": "模糊透明度",
+		"blurQualityDesc": "较高的模糊透明度可改善模糊效果的观感，但可能会导致性能降低。",
+		"transitionSettings": "过渡设置",
+		"enableTransitions": "启用过渡",
+		"transitionSpeed": "过渡速度",
+		"visibilitySettings": "可见度设置",
+		"enableAutovis": "启用自动可见",
+		"enableForGM": "为 GM 启用",
+		"enableAutoFog": "为新场景自动启用战争迷雾",
+		"visThreshold": "可见度阈值",
+		"saveAsDef": "保存为默认",
+		"sf": "简单战争迷雾",
+		"onoff": "启用/禁用简单战争迷雾",
+
+		"brushTool": "笔刷工具",
+		"gridTool": "网格工具",
+		"roomTool": "房间工具",
+		"polygonTool": "多边形工具",
+		"boxTool": "矩形工具",
+		"ellipseTool": "椭圆工具",
+		"sceneConfig": "场景配置",
+		"reset": "重置简单战争迷雾",
+		"confirmReset": "你确定吗？战争迷雾将被重置。",
+		"autoFogSettings": "自动战争迷雾设置",
+		"autoFogNotes": "启用并保存为默认设置后，创建场景时会自动渲染战争迷雾。请选中复选框并单击 将当前设置保存为默认以启用。如果要禁用，请执行相同操作。",
+
+		"confirmDisableFog": "您确定要在此场景中关闭简单战争迷雾功能吗？",
+		"disableFog": "禁用简单战争迷雾",
+
+		"autoVisNotes": "启用后，自动可见将根据阈值设置，根据其所在位置的战争迷雾透明度等级来显示/隐藏 token。笔刷颜色变为绿色/红色，表示 token 是否可见。"
+	}
+}

@@ -1,0 +1,142 @@
+
+  "aedifs-tactical-grid": {
+    "settings": {
+	  "menu": {
+		"world": "世界设置",
+		"client": "客户端设置"
+	  },
+	  "tabs": {
+		"enable": "启用网格",
+		"grid": "网格",
+		"ruler": "标尺",
+		"measurement": "测量",
+		"cover": "掩护",
+		"range": "范围",
+		"misc": "其他"
+	  },
+	  "disableTacticalGrid": {
+		"name": "禁用'Tactical Grid'模组",
+		"hint": "禁用'Tactical Grid'模组。"
+	  },
+      "defaultViewDistance": {
+        "name": "默认网格视图距离",
+        "hint": "要显示的网格数。"
+      },
+      "usePropertyBasedDistance": {
+        "name": "使用 token 基于属性的距离",
+        "hint": "使用 token 属性代替`默认网格视图距离`"
+      },
+      "propertyDistance": {
+        "name": "Token属性",
+        "hint": "用于确定网格大小的 token 属性的数据路径。"
+      },
+      "defaultViewShape": {
+        "name": "默认网格视图形状",
+        "hint": "网格遮罩的形状。"
+      },
+      "enableOnCombatOnly": {
+        "name": "仅限战斗",
+        "hint": "网格只会在战斗时显示。"
+      },
+      "enableOnControl": {
+        "name": "受控时",
+        "hint": "在可放置物受控时将显示网格。"
+      },
+      "enableOnHover": {
+        "name": "悬停时",
+        "hint": "在可放置物悬停时将显示网格。"
+      },
+      "mixColors": {
+        "name": "混合颜色",
+        "hint": "启用后，视图形状颜色将混合在一起。"
+      },
+      "assignDispositionBasedColor": {
+        "name": "根据倾向分配颜色",
+        "hint": "启用后，token 视图形状颜色将根据Token倾向默认为其配置："
+      },
+      "layerEnable": {
+        "hint": "为\"{layerName}\"启用战术网格"
+      },
+      "enableOnRuler": {
+        "name": "为标尺启用战术网格",
+        "hint": "启用标尺测量网格（要求 libWrapper 处于激活状态）。"
+      },
+      "measurementPrecision": {
+        "hint": "显示测量距离的小数精度。"
+      },
+      "rulerColor": {
+        "hint": "为标尺网格设置颜色。如果没有设置颜色，则会使用场景的网格颜色。"
+      },
+	  "volumetricTokens": {
+		"name": "三维Token",
+		"hint": "启用后，在计算高处Token的距离时将考虑其高度。"
+	  },
+	  "broadcastControl": {
+		"name": "插入广播控件",
+		"hint": "启用时，将在Token场景控件中添加一个控件项，用于切换GM距离测量的全局广播。"
+	  },	  
+      "scaleFontSize": "根据画布网格调整字体大小",
+      "baseGridSize": {
+        "name": "基础网格尺寸",
+        "hint": "小于或大于此值的网格将导致字体大小按比例缩放。"
+      },
+      "cover": {
+        "name": "掩护计算",
+        "hint": "如果选择了掩护计算并启用了相应模组，则掩护信息将显示在测量值下方。",
+        "none": "无",
+        "half": "半身掩护",
+        "threeQuarters": "四分之三掩护",
+        "total": "全身掩护"
+      },
+      "ignoreEffect": {
+        "name": "忽略效果 token",
+        "hint": "在测量计算中，将忽略具有匹配效果名称的 token。"
+      },
+      "displayDistancesOnRulerDrag": {
+        "name": "标尺拖动",
+        "hint": "启用后，将计算并显示标尺前沿点与所有可见 token 之间的距离。"
+      },
+      "displayDistancesOnTokenDrag": {
+        "name": "token 拖动",
+        "hint": "启用后，将计算拖动的 token 与所有可见 token 之间的距离，并显示在上面。"
+      },
+	  "displayDistancesOnTokenHover": {
+		"name": "Token悬停距离显示",
+		"hint": "启用后，将计算并显示受控Token与悬停Token之间的距离。"
+	  },
+      "range": {
+        "item-range": "物品范围高亮",
+        "token-range": "Token范围高亮",
+        "combat-only": "仅战斗",
+        "ranges": "范围",
+        "grid-shape-shrink": "网格形状收缩",
+        "dispositions": "为玩家高亮倾向",
+        "client-toggle": {
+          "name": "范围高亮",
+          "hint": "开启/关闭悬停时Token/物品的范围高亮显示。"
+        }
+      }
+    },
+    "keybindings": {
+      "toggleGrid": {
+        "name": "在当前图层上切换网格（全局）",
+        "hint": "短按将在全局范围内切换图层，长按则仅在当前场景中切换图层。"
+      },
+      "sceneToggleGrid": {
+        "name": "在当前图层上切换网格（场景）",
+        "hint": ""
+      }
+    },
+    "common": {
+      "layers": "图层",
+      "gridSpaces": "网格空间",
+      "color": "颜色",
+      "precision": "精度",
+      "decimalPlaces": "小数位",
+      "apply": "应用",
+      "labels": "标签",
+      "alpha": "透明度",
+      "marker": "标记"
+    }
+  }
+}

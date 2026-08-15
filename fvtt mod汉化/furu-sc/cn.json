@@ -1,0 +1,218 @@
+
+  "FURU-SC": {
+    "SETTINGS": {
+      "SAVE_PATH": {
+        "name": "保存路径",
+        "hint": "保存配方文件的默认路径。路径应与您的数据文件夹相关。您也可以用它来按文件夹对不同世界的不同配方文件进行排序！注意：不要使用包含其他 json 文件的文件夹！"
+      },
+      "CURRENT_FILE": {
+        "name": "当前文件名",
+        "hint": "已加载的配方文件名称，我们现在正在更改。"
+      },
+      "RECIPE_FILES": {
+        "name": "配方文件",
+        "hint": "在设定的保存路径上世界上所有可用的配方文件"
+      },
+      "PLAYER_CAN_EDIT": {
+        "name": "玩家配方编辑",
+        "hint": "允许玩家编辑和创建配方文件。GM始终拥有这项权利。如果设置为false，玩家将只能探索已创建的配方文件并使用它们进行制作。"
+      },
+      "QUANTITY": {
+        "name": "系统数量路径",
+        "hint": "如果系统提供了追踪物品数量的功能，你可以为该变量提供一个相对于物品的路径。\"简单制作\"将使用它，而不是使用它自己的数量系统。"
+      },
+      "HIDE_TAGS_LABEL": {
+        "name": "隐藏标记标签",
+        "hint": "隐藏物品窗口中标签编辑器标题按钮的标签。"
+      },
+      "ALLOW_FORCE_CRAFTING": {
+        "name": "允许强制制作",
+        "hint": "允许玩家在不使用原料的情况下强制制作任何配方。可按配方设置。如果出现此类制作，GM 会在聊天中收到通知。"
+      },
+      "HIDE_WRONG_WORLD_NOTIFICATION": {
+        "name": "隐藏错误世界通知",
+        "hint": "隐藏制作菜单中的\"这个配方文件是在另一个世界制作的\"通知。"
+      }
+    },
+    "CRAFT_MENU": "制作菜单",
+    "CRAFT_MENU_UI": {
+      "NOTIFICATIONS": {
+        "WRONG_SYSTEM": "此配方文件是在另一个游戏系统中制作的。物品可能完全不兼容！",
+        "WRONG_WORLD": "这个配方文件是在另一个世界制作的。除非使用相同的系统和合集，否则可能无法兼容！"
+      },
+      "TOOLTIPS": {
+        "SEARCH": "搜索配方",
+        "SELECT_FILE": "选择带有配方的文件",
+        "CLEAR_RECIPES": "清除所选文件中的所有配方",
+        "CREATE_FILE": "创建新配方文件",
+        "RELOAD_FILE": "重新加载当前文件",
+        "SAVE_FILE": "保存配方文件",
+        "CREATE_RECIPE": "创建新配方",
+        "DELETE_RECIPE": "删除此配方",
+        "SAVE_DESCRIPTION": "保存描述",
+        "EDIT_DESCRIPTION": "编辑描述",
+        "CRAFT_FROM_RECIPE": "根据配方制作",
+        "SUBSTRACT_QUANTITY": "减少数量",
+        "ITEM_QUANTITY": "该物品的数量",
+        "ADD_QUANTITY": "增加数量",
+        "DELETE_INGREDIENT": "删除原料",
+        "ADD_TAG": "添加新标签",
+        "TAG_QUANTITY": "此标签的数量",
+        "CHANGE_TAG": "更改此标签",
+        "REMOVE_TAG": "移除此标签",
+        "EDIT_RECIPE_SETTINGS": "编辑配方设置"
+      },
+      "SETTINGS": {
+        "TITLE": "配方设置",
+        "IS_TARGET_LIST": "允许多个目标物品",
+        "ALLOW_DISMANTLING": "允许通过此配方将目标物品拆解回其成分",
+        "IS_SECRET": "将此配方设为秘密，对玩家隐藏所需成分",
+        "ALLOW_FORCE_CRAFT": "允许玩家强制按配方制作，即使他们缺少原料。您将收到关于强制制作的聊天消息。",
+        "IS_ONE_TIME": "将此配方设为一次性，制作后对玩家隐藏",
+        "IS_HIDDEN": "对玩家隐藏此配方",
+        "SEND_CRAFT_REQUEST": "向 GM 发送创建物品的批准请求"
+      },
+      "SEARCH_RECIPES": "搜索配方：",
+      "SEARCH_PLACEHOLDER": "搜索...",
+      "CURRENT_FILE": "当前文件：",
+      "RECIPE_NAME": "配方名称：",
+      "RECIPE_TYPE": "配方类型：",
+      "TYPES": {
+        "TEXT": "文本",
+        "ITEMS": "物品",
+        "TAGS": "标签"
+      },
+      "TARGET_ITEM": "目标物品：",
+      "TARGET_ITEMS": "目标物品：",
+      "DESCRIPTION": "描述：",
+      "REQUIRED_ITEMS": "所需物品：",
+      "REQUIRED_TAGS": "所需标签："
+    },
+    "CRAFT_TABLE": "制作台",
+    "CRAFT_TABLE_UI": {
+      "NOTIFICATIONS": {
+        "NOT_ENOUGH_ITEMS_WITH_TAGS": "你没有足够的带有所需标签的原料来制作此物品！"
+      },
+      "TOOLTIPS": {
+        "SELECT_ACTOR": "选择制作此物品的角色",
+        "RELOAD_CRAFT_TABLE": "重新加载制作台",
+        "CRAFT_ITEM": "制作物品",
+        "EXPAND_ITEM": "展开物品信息",
+        "ITEM_NAME": "物品名称",
+        "TAG_QUANTITY": "此标签的数量",
+        "SUBSTRACT_QUANTITY": "减少数量",
+        "ITEM_QUANTITY": "制作中使用的该物品数量",
+        "ADD_QUANTITY": "增加数量"
+      },
+      "ACTOR_SELECTION": "角色选择：",
+      "QUANTITY": "数量：",
+      "REQUIRED_INGREDIENTS": "所需原料：",
+      "REQUIRED": "需要：",
+      "SUITABLE_INGREDIENTS": "合适原料：",
+      "TARGET_ITEMS": "目标物品：",
+      "FORCE_CRAFT": "强制制作此配方。无需原料。GM 将会收到通知！"
+    },
+    "QUANTITY_CONFIG_TITLE": "数量路径配置",
+    "QUANTITY_CONFIG_UI": {
+      "TOOLTIPS": {
+        "HELP": "获取有关如何获取物品数量路径的帮助。",
+        "QUANTITY_PATH": "在此处填写数量路径"
+      },
+      "HELP": "帮助",
+      "STEPS": {
+        "HEADER": "获取数量路径的步骤",
+        "FIRST": "创建一些不同类型的物品，并检查它们是否在物品 UI 中具有数量属性。",
+        "SECOND": "打开控制台。默认键 - \"F12\"",
+        "THIRD": "在控制台中输入 | game.items |。这将列出该世界中的所有物品。如果您想获取特定物品，请输入 | game.items.get(\"\") | 并在 \"\" 之间添加物品ID。",
+        "FOURTH": "检查所有物品类型的属性并找到数量。然后记下您获取它的路径，相对于该物品。它应该类似于 \"data.quantity\" 或 \"system.count\" 等。重要的是确保它包含数字格式的必要数据。",
+        "FIFTH": "最后将该路径写入与该物品类型对应的字段中。如果您的物品不包含任何数量属性，请留空。"
+      },
+      "TYPE": "类型",
+      "PATH": "路径"
+    },
+    "NOTIFICATIONS": {
+      "NO_RIGHTS": "您没有足够的权限执行此操作！",
+      "INVALID_NUMBER": "请输入有效的数字！",
+      "NO_INGREDIENTS": "此配方没有原料。请在制作前添加一些原料。",
+      "NO_TARGET": "此配方没有目标物品。请添加一个目标以进行制作。",
+      "NO_TARGETS": "此配方没有目标物品。请至少添加一个目标以进行制作。",
+      "FILE_RELOADED": "所选文件已重新加载！",
+      "ITEMS_ONLY": "只能将物品拖放到制作菜单中！",
+      "ACTOR_NOT_FOUND": "未找到角色！",
+      "CRAFT_TABLE_RELOADED": "制作台已重新加载！",
+      "NOT_ENOUGH_INGREDIENTS": "没有足够的原料来制作物品！",
+      "NO_FOLDER_OR_FILE": "无法获取当前文件夹和/或文件。",
+      "FOUND_NO_RECIPES": "未找到与搜索查询匹配的配方",
+      "NO_DATA": "没有数据可保存！",
+      "SUCCESSFULL_SAVE": "成功保存文件：",
+      "FAILED_LOAD": "加载配方数据失败。错误：",
+      "NO_OWNED_ACTOR": "未找到所属角色！没有制作者无法制作！",
+      "ACTOR_NO_ITEMS": "角色没有任何物品！",
+      "CRAFTED": "已制作：",
+      "INVALID_MESSAGE": "无效的消息！",
+      "TAG_EXISTS": "此标签已分配！",
+      "NO_TAGS": "此配方未分配任何标签！请在制作前添加一些标签。",
+      "SPECIAL_SYMBOLS": "请不要在此输入字段中使用任何特殊符号！",
+      "INSUFFICIENT_ITEM_QUANTITY": "您已经选择了该物品的最大可能数量！",
+      "ENOUGH_TAGS": "您已经提供了足够的标签来制作物品！",
+      "NOT_ENOUGH_TAGS": "您没有足够的标签来制作此物品！",
+      "INVALID_RECIPE_TYPE": "无效的配方类型！",
+      "FOUND_QUANTITY_PATH_DEFAULT": "已找到当前系统中物品的数量路径设置预设。正在设置..."
+    },
+    "NEW_RECIPE": "新配方",
+    "DEFAULT_DESCRIPTION": "填写我！",
+    "DIALOGS": {
+      "DELETE_CONFIRM": {
+        "title": "确认删除",
+        "content": "<p>您确定要删除此配方吗？此操作无法撤消。</p>"
+      },
+      "INGREDIENT_EQUALS_TARGET": {
+        "title": "警告！",
+        "content": "<p>目标物品和您拖拽的物品具有相同的名称或来源物品！用自己制作物品并不太合乎逻辑。</p><p>您确定吗？</p>"
+      },
+      "SAVE_PROGRESS": {
+        "title": "保存进度",
+        "content": "<p>保存您的进度吗？</p>"
+      },
+      "CLEAR_FILE": {
+        "title": "确认清除文件",
+        "content": "<p>这将不可逆地删除文件中的所有数据。您确定吗？</p>"
+      },
+      "FILE_CREATION": {
+        "title": "文件创建",
+        "content": "请为新文件命名。",
+        "placeholder": "输入名称"
+      },
+      "TAG_CREATION": {
+        "title": "标签创建",
+        "content": "请输入新标签。请注意，标签区分大小写。",
+        "placeholder": "标签"
+      },
+      "CLEAR_TAGS": {
+        "title": "清除标签",
+        "content": "<p>您确定要清除此物品的所有标签吗？</p>"
+      }
+    },
+    "CRAFT_TAGS": "制作标签",
+    "TAGS_EDITOR_TITLE": "标签编辑器",
+    "TAGS_EDITOR_UI": {
+      "NOTIFICATIONS": {
+        "NO_TAGS": "物品没有标签或未找到与搜索查询匹配的标签！"
+      },
+      "TOOLTIPS": {
+        "SEARCH_TAGS": "搜索标签",
+        "CLEAR_TAGS": "清除所有标签",
+        "RELOAD_WINDOW": "重新加载标签编辑器",
+        "ADD_TAG": "添加新标签",
+        "TAG_QUANTITY": "此标签的数量",
+        "CHANGE_TAG": "更改此标签",
+        "REMOVE_TAG": "移除此标签"
+      },
+      "SEARCH_TAGS": "搜索标签：",
+      "SEARCH_PLACEHOLDER": "搜索..."
+    },
+    "CHAT_MESSAGES": {
+      "FORCE_CRAFT": "<h2>强制制作</h2><p>配方：\"%r\"</p><p>玩家：\"%p\" </p><p>角色：\"%a\" </p>"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+
+	"DF_TEMPLATES": {
+		"errorLibWrapperMissing": "'DF Template Enhancements'需要 'libWrapper' 模组。请安装并激活 'libWrapper'。",
+		"ToggleTitle": "自动标记Token",
+		"AutoTargetName": "测量板自动标记Token",
+		"AutoTargetHint": "如果启用，将自动标记被测量板圈中的Token。",
+		"SnapIntersectName": "将测量板对齐到网格交点",
+		"SnapIntersectHint": "某些规则系统（如D&D 5e）规定法术测量板应从网格交点开始。",
+		"GridlessPointResolutionName": "无网格场景自动标记分辨率（默认：3）",
+		"GridlessPointResolutionHint": "在无网格场景中为自动标记生成每个轴上的点数（例如：3表示每个方格上有3 x 3 = 9个点）。较高的值可能会导致场景中有大量Token时性能下降。",
+		"GridlessPointPercentageName": "无网格场景自动标记百分比（默认：0）",
+		"GridlessPointPercentageHint": "需要多少百分比的点在测量板内才能高亮它们。设置为0表示只要有一个点在测量板内就会被标记。",
+		"PreviewName": "预览测量板高亮/标记",
+		"PreviewHint": "在移动或创建测量板时显示网格高亮并执行自动标记。",
+		"SquareRotateName": "修复方形测量板旋转",
+		"SquareRotateHint": "方形测量板在旋转时不会保持其形状。这将修正旋转，使方形测量板在围绕原点旋转时保持其形状。",
+		"DebugName": "[仅调试] 显示自动标记点网格和测试网格",
+		"DebugHint": "为了调试自动标记功能，此选项将显示在无网格场景中用于检测Token标记的点，或显示整个测试区域以进行网格高亮。",
+		"AngleSnap": {
+			"MacroName": "测量板角度对齐点数（默认：24）",
+			"MacroHint": "旋转测量板时可用的对齐点数。这可用于减少玩家需要选择的角度数量以加快战斗速度。",
+			"MicroName": "小旋转倍数（默认：3）",
+			"MicroHint": "按住Ctrl时，可以执行更小的旋转对齐。这基本上将上述设置乘以该值以生成子角度对齐。设置为1将有效禁用微角度步进。"
+		},
+		"TemplateConfig": {
+			"Title": "测量板设置",
+			"ResetButton": "FVTT 默认",
+			"DnD5eButton": "D&D 5e 风格",
+			"Options": {
+				"center": {
+					"label": "中心点",
+					"desc": "<i>（默认）</i> 每个网格单元的中心点必须在测量板内才能高亮该单元。"
+				},
+				"touch": {
+					"label": "接触",
+					"desc": "如果网格单元的<b>任何</b>部分<b>接触</b>测量板，该单元将被高亮。"
+				},
+				"points": {
+					"label": "点网格（实验性）",
+					"desc": "仅当网格方框上的点在测量板内时才高亮该方框。点的数量基于无网格设置中的百分比。<br><i><b>这是实验性的</b>，仅用于Token标记。网格高亮使用接触模式以测试Token。</i>"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,126 @@
+{
+  "MCT": {
+    "menu": {
+      "name": "",
+      "label": "Tab Config"
+    },
+    "context": {
+      "settings": "Setting",
+      "delete": "Delete",
+      "tabSettings": "TabConfig"
+    },
+    "settings": {
+      "windowTitle": "Chat Tab Settings",
+      "hint": "Tab detail setting window can be displayed, added, deleted, and reordered by dragging.",
+      "buttons": {
+        "add": "Add Tab",
+        "reset": "Reset"
+      },
+      "autoWhisperTab": {
+        "name": "Auto-Create Whisper Tabs",
+        "hint": "ON: Automatically creates a new whisper tab when no match is found."
+      },
+      "showAloneMessageToDefaultTab": {
+        "name": "Show Orphaned Messages in Default Tab",
+        "hint": "ON; Displays messages (e.g., messages without this mnodule, deleted tab's messages) in the default tab. OFF: these messages can read in tab with Show All Messages option."
+      },
+      "unreadCount": {
+        "name": "Unread mark shows the number of unread messages",
+        "hint": "ON： show the number of unread messages.  OFF: show a simple dot only. (Per client setting)"
+      },
+      "autoLoad": {
+        "name": "Auto-Load Past Messages",
+        "hint": "Automatically loads past messages (Core Autoload cannot be deactivated, Per client setting)."
+      },
+      "loadBatchSize": {
+        "name": "Message Load Size",
+        "hint": "The number of past messages to load at once (Per client setting)."
+      },
+      "defaults": {
+        "main": "Main",
+        "roll": "Roll",
+        "sub": "Sub",
+        "newTabName": "NewTab"
+      },
+      "tooltips": {
+        "edit": "Edit detail settings for this tab",
+        "delete": "Delete this tab",
+        "reset": "Reset all tab settings",
+        "defaultTab": "The default tab cannot be reordered.",
+        "tabIdList": "Tab ID List"
+      }
+    },
+    "detailSettings": {
+      "windowTitle": "Tab Detail Settings",
+      "label": "Tab Name",
+      "showAllMessages": {
+        "label": "Show All Messages",
+        "hint": "ON: Show all messages regardless of settings in other tabs. (Including orphaned messages, such as messages without this mnodule, deleted tab's messages.)"
+      },
+      "forceOOC": {
+        "label": "Force Out-of-Character (OOC)",
+        "hint": "ON: Force new messages to Out-of-Character (OOC) in this tab."
+      },
+      "forceDisplayTitle": "Force Message Display",
+      "forceDisplayHint": "Force display setting by messages type",
+      "whisperTab": {
+        "label": "Whisper Tab",
+        "hint": "ON: Make this a dedicated tab for whisper. Messages will be displayed in this tab. Other settings will be disabled.",
+        "targets": "Whisper Targets"
+      },
+      "tooltips": {
+        "moveDisabled": "Unavailable as 'Display in This Tab Only' is set on the '{tabName}' tab.",
+        "tabId": "Tab ID: {tabId}"
+      }
+    },
+    "forceOptions": {
+      "none": "No Forced Display",
+      "duplicate": "Display in Active Tab and This Tab",
+      "move": "Display in This Tab Only"
+    },
+    "messageTypes": {
+      "ic": "In-Character (IC)",
+      "ooc": "Out-of-Character (OOC)",
+      "roll": "Rolls",
+      "other": "Other"
+    },
+    "tabs": {
+      "tooltips": {
+        "add": "Add New Tab"
+      }
+    },
+    "tooltips": {
+      "loadButton": "Load messages"
+    },
+    "dialog": {
+      "reset": {
+        "title": "Reset Tab Settings",
+        "content": "Do you want to reset all tab settings to their default state? (All messages will be detached from tabs and become invisible.)"
+      },
+      "delete": {
+        "title": "Delete Tab (Tab ID: {tabId})",
+        "content": "Do you want to delete the tab '<strong>{name}</strong>'?"
+      },
+      "editTabId": {
+        "title": "Edit Tab ID",
+        "label": "Tab ID"
+      },
+      "allTabID": {
+        "title": "Tab ID List",
+        "currentTab": "Tab IDs (Current)",
+        "orphanedTab": "Tab ID (Orphaned)",
+        "orphanedTabHint": "These IDs were used in the past chat messages but are not currently in use.",
+        "none": "No used Tab IDs were found.",
+        "noneConfigured": "No tabs are configured."
+      }
+    },
+    "notifications": {
+      "cannotDeleteDefault": "The default tab cannot be deleted.",
+      "cannotDragDefault": "The default tab cannot be reordered.",
+      "cannotBeEmpty": "ID cannot be empty.",
+      "alreadyExists": "That ID is already in use.",
+      "idCopied": "Copied ID to clipboard."
+    },
+    "save": "Save"
+  }
+}

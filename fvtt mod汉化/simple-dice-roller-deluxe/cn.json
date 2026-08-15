@@ -1,0 +1,58 @@
+
+    "title": "掷骰工具",
+    "legend": {
+        "hiddenRolls": "隐藏掷骰",
+        "explodingDiceRolls": "爆炸骰",
+        "CthulhuD100Rolls": "克苏鲁的呼唤"
+    },
+    "tooltip": {
+        "makeGMRoll": "向GM私密掷骰",
+        "makeBlindRoll": "向GM盲掷",
+        "makeSelfRoll": "仅自己可见掷骰",
+        "penaltyCthulhuRoll": "d100惩罚骰（重掷十位骰取高）",
+        "bonusCthulhuRoll": "d100奖励骰（重掷十位骰取低）",
+        "explodingDice": "标准爆炸骰",
+        "explodingDiceOnce": "单次爆炸骰"
+    },
+    "settings": {
+        "advancedSettings": {
+            "title": "进阶掷骰工具设置",
+            "name": "进阶全局设置",
+            "label": "配置掷骰工具",
+            "hint": "仅可由GM设置",
+            "save": "保存设置"
+        },
+        "enableHiddenRolls": {
+            "name": "启用隐藏掷骰开关",
+            "hint": "互斥的隐藏掷骰按钮（盲掷、GM私掷和自掷）。"
+        },
+        "enableCthulhuD100": {
+            "name": "启用克苏鲁d100惩罚/奖励骰",
+            "hint": "克苏鲁规则d100掷骰按钮：重掷十位骰，惩罚骰取高值/奖励骰取低值。"
+        },
+        "enableExplodingDice": {
+            "name": "启用爆炸骰开关",
+            "hint": "互斥的爆炸骰按钮。不适用于硬币投掷、Fudge骰或d100掷骰！"
+        },
+        "enableFudgeDice": {
+            "name": "启用Fudge骰",
+            "hint": "为Fate/Fudge规则游戏投掷特殊Fudge骰（又称命运骰）。"
+        },
+        "enableCoins": {
+            "name": "启用硬币投掷",
+            "hint": "用于进行硬币正反面判定（类似d2骰子）。"
+        },
+        "maxDiceCount": {
+            "name": "最大投掷骰数",
+            "hint": "掷骰工具单次可投掷的最大骰子数（1-25）。"
+        },
+        "enableFirstColumn": {
+            "name": "添加首列单骰投掷区",
+            "hint": "注意：骰子图标列始终可点击，点击后将投掷单个骰子！"
+        },
+        "closeRollerAfterRoll": {
+            "name": "掷骰后自动关闭窗口",
+            "hint": "启用后，成功掷骰时将自动关闭掷骰工具窗口"
+        }
+    }
+}

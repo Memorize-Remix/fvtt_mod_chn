@@ -1,0 +1,45 @@
+{
+	"TOKEN-LEAN": {
+		"Keybindings": {
+			"lean": {
+				"Name": "Lean",
+				"Hint": "Hold to move your vision towards the mouse cursor."
+			},
+			"leanToggle": {
+				"Name": "Lean (Toggle)",
+				"Hint": "Press to move your vision towards the mouse cursor. Press again to reset."
+			}
+		},
+		"Settings": {
+			"limit": {
+				"Name": "Maximum Lean Distance",
+				"Hint": "How many spaces a token can lean."
+			},
+			"leanWhilePaused": {
+				"Name": "Lean While Paused",
+				"Hint": "Players can lean while paused."
+			},
+			"canLeanInCombat": {
+				"Name": "Combat Only",
+				"Hint": "Players can only lean during encounters."
+			},
+			"combatLeanToggle": {
+				"Name": "Scene Controls Button",
+				"Hint": "Adds a button to the scene controls to toggle the Combat Only setting."
+			},
+			"notifyOnLean": {
+				"Name": "Notify When Leaning",
+				"Hint": "Players will send a whisper to the GM when they lean.",
+				"Options": {
+					"1": "Always",
+					"2": "Combat Only",
+					"0": "Never"
+				}
+			},
+			"notifySound": {
+				"Name": "Notification Sound",
+				"Hint": "Play a sound when a notification message is sent. Leave it empty to disable it."
+			}
+		}
+	}
+}

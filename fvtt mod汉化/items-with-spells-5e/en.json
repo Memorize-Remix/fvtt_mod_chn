@@ -1,0 +1,54 @@
+{
+  "IWS": {
+    "MODULE_NAME": "Items with Spells",
+    "BUTTONS": {
+      "DeleteSpell": "Delete spell from item and prompt to delete from actor",
+      "EditSpell": "Edit spell",
+      "RemoveLink": "Remove spell from item"
+    },
+    "DIALOG": {
+      "AlsoDeleteSpell": "Would you also like to delete the spells from that item?",
+      "DeleteOrphanedSpells": "The spell is no longer linked to the item, but is still present on the actor. Do you also want to delete the spell from the actor?"
+    },
+    "FORM": {
+      "AttackHint": "Set this if the spell has a flat attack bonus or other specialized attack logic.",
+      "ChargesHint": "If this spell will be cast using charges from the parent item, configure the number of charges above.",
+      "NoOverride": "Don't override",
+      "ConfigureOverrides": "Configure Overrides",
+      "NoUsesHint": "The parent item has no limited uses that can be consumed, hence this field is disabled.",
+      "LimitedHint": "If this spell has a number of uses per rest or similar innate limitations, configure the number of charges above.",
+      "SaveHint": "If this spell has a flat DC or other specialized saving throw logic."
+    },
+    "MISSING_ITEM": {
+      "Description": "This spell's original item could not be found. Maybe it was deleted?",
+      "Name": "Missing Item"
+    },
+    "TAB": {
+      "AbilityBased": "{ability} based",
+      "Consumes": "Consumes",
+      "EmbeddedHint": "Item owned by actor. Spells added below are immediately added to the actor. You can't set overrides on already owned spells, but you can configure a spell directly.",
+      "Hint": "The spells below are linked to this item and will be added to an actor, with any overrides, when you drag this item unto an actor's sheet.",
+      "FillerHint": "Drag and drop a spell here to link it to this item.",
+      "PreviewSpell": "Preview spell with overrides"
+    },
+    "SETTINGS" : {
+      "ITEM_EXCLUSION": {
+        "HINT": "Select which item types can have spells attached.",
+        "NAME": "Select item types",
+        "TITLE": "Item Type Exclusion Menu"
+      },
+      "SORT_ORDER": {
+        "HINT": "If checked, spellbook sections added by this module will be put at the bottom of the spellbook tab, rather than the top. If you are using Tidy 5e Sheets, you can change the order with the edit cog on the sheet, regardless if this is checked. (default: unchecked)",
+        "NAME": "Show spells at bottom of spellbook"
+      },
+      "EXCLUDE_UNEQUIPPED": {
+        "HINT": "If checked, spells won't be shown for items that are not equipped. If unchecked, spells will be shown regardless of equipped status. Changing this won't take effect on currently open sheets. Close and reopen a sheet to see this work. (default: checked)",
+        "NAME": "Hide spells from unequipped items"
+      }
+    },
+    "SUBTITLE": {
+      "linked_item": "Click to preview spell with overrides",
+      "owned_item": "Click to cast"
+    }
+  }
+}

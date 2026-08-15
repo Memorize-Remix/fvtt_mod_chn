@@ -1,0 +1,77 @@
+
+    "macro-wheel": {
+        "bindings": {
+            "open": {
+                "name": "打开/关闭宏轮"
+            }
+        },
+        "settings": {
+            "folderSize": {
+                "name": "文件夹按钮大小",
+                "hint": "宏轮中文件夹按钮的大小（像素）。"
+            },
+            "macroSize": {
+                "name": "宏按钮大小",
+                "hint": "宏轮中宏按钮的大小（像素）。"
+            },
+            "closeOnClick": {
+                "name": "点击关闭",
+                "hint": "点击宏时关闭宏轮。您可以按住 ctrl 键保持宏轮打开。"
+            },
+            "enableTooltips": {
+                "name": "启用提示",
+                "hint": "将鼠标悬停在宏或文件夹上时显示提示。"
+            },
+            "useRoot": {
+                "name": "使用根目录",
+                "hint": "将整个宏目录作为宏轮的根目录。"
+            },
+            "addHotbar": {
+                "name": "显示热栏宏",
+                "hint": "将热栏宏添加到宏轮中。"
+            },
+            "useMiddleMouse": {
+                "name": "使用鼠标中键",
+                "hint": "使用鼠标中键打开宏轮。"
+            },
+            "hoverDelay": {
+                "name": "悬停延迟",
+                "hint": "将鼠标悬停在宏轮文件夹上时，宏轮打开前的延迟（毫秒）。"
+            }
+        },
+        "flags": {
+            "header": "宏轮",
+            "folderImg": {
+                "name": "图像"
+            },
+            "condition": {
+                "name": "自定义条件",
+                "placeholder": "条件脚本"
+            },
+			"activeCondition": {
+				"name": "激活条件",
+				"hint": "此条件用于确定宏是否处于激活状态。这将用于确定宏轮中宏周围环的颜色，以便快速检查状态。"
+			},
+            "presetCondition": {
+                "name": "条件",
+                "options": {
+                    "custom": "自定义",
+                    "tokens": "激活层：Token",
+                    "tiles": "激活层：图块",
+                    "walls": "激活层：墙体",
+                    "sounds": "激活层：音频",
+                    "notes": "激活层：日志",
+                    "lights": "激活层：灯光",
+                    "templates": "激活层：测量板",
+                    "drawings": "激活层：绘图",
+                    "selectedtoken": "已选 token",
+                    "combat": "战斗中",
+                    "enabled3d": "3D Canvas已启用"
+                }
+            }
+        },
+        "errors": {
+            "no-folder": "MacroWheel: 未找到文件夹'MacroWheel'。请在 Macro 文件夹中创建名为'MacroWheel'的文件夹，或启用'使用根目录'选项禁用此通知。在'MacroWheel'文件夹中为要添加的每个宏轮创建子文件夹，然后在这些文件夹中添加宏。"
+        }
+    }
+}

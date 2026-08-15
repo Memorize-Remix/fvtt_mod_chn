@@ -1,0 +1,133 @@
+
+  "SPRITE-ANIMATIONS": {
+    "ANIMATIONCONFIG": {
+      "TITLE": "动画配置"
+    },
+    "CONFIG": {
+      "ADD": {
+        "HINT": "点击添加新动画",
+        "LABEL": "添加动画"
+      },
+      "AUTOFIT": {
+        "HINT": "将尝试自动将精灵的可见部分适配到Token区域内。",
+        "LABEL": "自动适配"
+      },
+      "CLEAR": {
+        "HINT": "点击移除所有当前配置的动画",
+        "LABEL": "清除动画",
+        "MESSAGE": "确定要执行此操作吗？"
+      },
+      "CONFIRMREMOVE": "确定要移除这个动画吗？",
+      "DESCRIPTION": "使用以下选项为此Token添加、移除和更新预配置的动画。",
+      "ENABLESOUND": "启用音效",
+      "EXPORT": {
+        "CLIPBOARD": "导出到剪贴板",
+        "COPIED": "配置已复制到剪贴板",
+        "DOWNLOAD": "下载JSON",
+        "HINT": "将当前动画导出为JSON",
+        "LABEL": "导出动画"
+      },
+      "HEADER": "精灵动画",
+      "IMPORT": {
+        "BULK": "从目录导入",
+        "BULKWARNING": "这将覆盖现有动画。确定要继续吗？",
+        "CLIPBOARD": "从剪贴板导入",
+        "HINT": "导入JSON配置",
+        "LABEL": "导入动画",
+        "PASTED": "配置已从剪贴板读取",
+        "UPLOAD": "上传JSON"
+      },
+      "LOOP": "循环播放",
+      "MESH": {
+        "DESCRIPTION": "以下选项可用于调整底层SpriteMesh的显示，以便调整相对于实际可放置对象可选择区域的缩放或定位，以适应更大的动画。",
+        "ENABLE": "启用网格调整",
+        "HEIGHT": {
+          "LABEL": "高"
+        },
+        "SHOWOUTLINE": {
+          "HINT": "如果启用，将勾勒出绘制此对象纹理的底层精灵网格的轮廓。",
+          "LABEL": "显示网格轮廓"
+        },
+        "WIDTH": {
+          "LABEL": "宽"
+        },
+        "X": {
+          "LABEL": "X"
+        },
+        "Y": {
+          "LABEL": "Y"
+        }
+      },
+      "NAME": "名称",
+      "PATH": "路径",
+      "PLAY": "播放动画",
+      "REMOVE": {
+        "MESSAGE": "确定要移除{name}吗？",
+        "TITLE": "移除动画"
+      },
+      "SOUND": "音效",
+      "TOOLTIPS": {
+        "EDIT": "编辑{animation}",
+        "EXPORT": "将当前动画导出为JSON",
+        "IMPORT": "导入JSON配置",
+        "LOOP": "此动画应循环播放",
+        "REMOVE": "移除{animation}"
+      },
+      "VOLUME": "音量"
+    },
+    "TITLE": "精灵动画",
+    "HUD": {
+      "PLAY": "精灵动画播放器"
+    },
+    "TABS": {
+      "ANIMATIONS": "动画",
+      "MESH": "网格"
+    },
+    "ERRORS": {
+      "INVALIDACTOR": "无效的角色：{actor}",
+      "INVALIDANIMATION": "无效的动画：{animation}",
+      "INVALIDTOKEN": "无效的Token：{token}",
+      "SOCKETNOTINITIALIZED": "Websocket未初始化",
+      "PERMISSIONDENIED": "权限被拒绝",
+      "INVALIDSPRITE": "无效的精灵：{sprite}",
+      "TARGETALREADYSET": "此精灵动画序列的目标已设置。",
+      "INVALIDJSON": "无效的JSON"
+    },
+    "MATT": {
+      "PLAY": "播放动画",
+      "IMMEDIATE": "立即播放动画",
+      "ANIMATION": "动画",
+      "PLAYLABEL": "播放动画：{name}"
+    },
+    "PLAYER": {
+      "CLEAR": "清空队列",
+      "CLEARCONFIRM": "确定要清空动画队列吗？",
+      "DESCRIPTION": "使用下面的按钮立即播放动画，或构建要按顺序播放的动画队列。",
+      "NONE": "队列为空",
+      "PLAY": "播放动画",
+      "PLAYQUEUE": "立即播放动画队列",
+      "QUEUEQUEUE": "在当前动画结束后播放动画队列",
+      "QUEUE": "队列动画",
+      "QUEUELIST": "队列",
+      "REMOVE": "从队列中移除",
+      "TITLE": "精灵动画播放器",
+      "CONFIG": "配置",
+      "TOOLTIPS": {
+        "PLAY": "立即播放{name}动画",
+        "QUEUE": "在当前动画结束后播放{name}动画",
+        "ADD": "将{name}动画添加到播放列表",
+        "REMOVE": "点击从队列中移除{name}"
+      }
+    },
+    "SETTINGS": {
+      "ANIMATEOTHERS": {
+        "LABEL": "动画化他人的Token",
+        "HINT": "允许用户动画化他们不拥有的Token"
+      },
+      "COLLAPSEHEADERBUTTON": {
+        "LABEL": "折叠应用程序标题按钮",
+        "HINT": "如果启用，将隐藏标题按钮的文本标签，减少按钮占用的空间。\n注意：仅影响使用ApplicationV1的应用程序。"
+      }
+    }
+  }
+}

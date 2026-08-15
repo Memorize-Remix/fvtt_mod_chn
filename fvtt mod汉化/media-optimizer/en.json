@@ -1,0 +1,104 @@
+{
+    "media-optimizer": {
+        "converted": "Media Optimizer: Converted",
+        "conversionFailed": "Media Optimizer: Conversion Failed, Please check the wiki for more information.",
+        "audioConversionStarted": "Media Optimizer: Converting to OGG | File: ",
+        "videoConversionStarted": "Media Optimizer: Converting to WEBM | File: ",
+        "settings": {
+            "bloatDetector": {
+                "name": "Bloat Detector",
+                "label": "Open Bloat Detector",
+                "hint": "Detects entries that can potentially cause slow loading times or performance issues."
+            },
+            "enabled": {
+                "name": "Enabled",
+                "hint": "Whether or not the media optimizer should be enabled. If disabled, images, audio and video will not be optimized."
+            },
+            "compressionRatio":{
+                "name": "Quality",
+                "hint": "The quality to use when optimizing images. A higher quality will result in a higher quality image and larger file size. A lower quality will result in a lower quality image and smaller file size. The default value is 0.75. Note: Compression rations for Audio and Video cannot be customized."
+            },
+            "maxResolution": {
+                "name": "Max Resolution",
+                "hint": "The maximum resolution of the image to be optimized. If the image is larger than this, it will be resized to this resolution before being optimized. This is useful to avoid very high resolutions not supported by most graphics cards.",
+                "choices": {
+                    "1024": "1K (1024px)",
+                    "2048": "2K (2048px)",
+                    "4096": "4K (4096px)",
+                    "8192": "8K (8192px)",
+                    "16384": "16K (16384px)"
+                }
+            },
+            "excludeFolders": {
+                "name": "Exclude Folders",
+                "hint": "Comma separated list of folders to exclude from optimization. If images/audio/videos are uploaded to this location they will not be optimized."
+            },
+            "optimizeImages": {
+                "name": "Optimize Images",
+                "hint": "Whether or not to optimize images."
+            },
+            "optimizeAudio": {
+                "name": "Optimize Audio",
+                "hint": "Whether or not to optimize audio."
+            },
+            "optimizeVideo": {
+                "name": "Optimize Videos",
+                "hint": "Whether or not to optimize videos."
+            },
+            "slugifyFileNames":{
+                "name": "Clean File Names",
+                "hint": "Whether or not to clean file names. Note that this setting will apply to any file processed or created by Media Optimizer. This will remove special characters and replace them with dashes. This is useful for avoiding issues with file names on different operating systems and other issues caused by spaces and special characters."
+            }
+        },
+        "tile-combiner": {
+            "title": "Media Optimizer: Tile Combiner",
+            "notes": "This feature will make permanent changes to the scene! Making a backup of the scene is highly recommended.",
+            "info": "The Combiner will use the global Media Optimizer compression settings, you can change them in the module settings.",
+            "confirm": {
+                "title": "Tile Combiner: Confirm",
+                "content": "You are about to combine tiles, this will make permanent changes to the scene! Are you sure you want to continue?",
+                "backup": "You are about to combine without making a backup, this is not recommended!"
+            },
+            "buttons": {
+                "backup-combine": "Backup & Combine",
+                "combine": "Combine",
+                "cancel": "Cancel"
+            },
+            "mode": {
+                "label": "Combine Mode: ",
+                "background": "Background Tiles",
+                "foreground": "Foreground Tiles",
+                "selected": "Selected Tiles",
+                "all": "All Tiles"
+            },
+            "background": {
+                "label": "Include Background?",
+                "notes": "When this option is enabled, the result of the Combine operation will be set as the scene background."
+            },
+            "folderPath":{
+                "label": "Folder Path: "
+            },
+            "fileName":{
+                "label": "File Name: "
+            },
+            "deleteTiles": {
+                "label": "Delete Combined Tiles?"
+            }
+        },
+        "file-converter": {
+            "header-button": "Optimize Media",
+            "title": "Media Optimizer: Mass Optimizer",
+            "buttons": {
+                "convert": "Optimize Selected",
+                "select-all": "Select All",
+                "select-none": "Clear Selection"
+            }
+        },
+        "bloat-detector": {
+            "title": "Media Optimizer: Bloat Detector",
+            "bloat": "Detected entries that can potentially cause slow loading times or performance issues. Count: ",
+            "no-bloat": "No bloat detected.",
+            "large-collection": "Collection size is large, it's recommended to move unused entries to a compendium."
+        }
+    }
+}

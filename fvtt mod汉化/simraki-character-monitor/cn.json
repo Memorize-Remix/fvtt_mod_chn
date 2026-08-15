@@ -1,0 +1,115 @@
+
+    "simraki-character-monitor": {
+        "settings": {
+            "monitorHP": {
+                "name": "监控生命值",
+                "hint": "追踪角色生命值的变化。"
+            },
+            "monitorXP": {
+                "name": "监控经验值",
+                "hint": "追踪角色卡上经验值的变化。"
+            },
+            "monitorLevel": {
+                "name": "监控等级",
+                "hint": "追踪角色卡上等级的变化。"
+            },
+            "monitorSpellPrep": {
+                "name": "监控法术准备",
+                "hint": "追踪角色准备或取消准备法术的时间。"
+            },
+            "monitorSpellSlots": {
+                "name": "监控法术位",
+                "hint": "追踪角色卡上法术位数量的变化。"
+            },
+            "monitorAC": {
+                "name": "监控护甲等级（AC）",
+                "hint": "追踪角色护甲等级（AC）的变化。"
+            },
+            "monitorAbility": {
+                "name": "监控属性值",
+                "hint": "追踪角色属性值的变化。"
+            },
+            "monitorSkillProficiency": {
+                "name": "监控技能熟练项",
+                "hint": "追踪角色技能熟练项的变化。"
+            },
+            "monitorSaveProficiency": {
+                "name": "监控豁免熟练项",
+                "hint": "追踪角色豁免熟练项的变化。"
+            },
+            "monitorToolProficiency": {
+                "name": "监控工具熟练项",
+                "hint": "追踪角色工具熟练项的变化。"
+            },
+            "monitorCurrency": {
+                "name": "监控货币",
+                "hint": "追踪角色卡上货币的变化。"
+            },
+            "monitorEffects": {
+                "name": "监控主动效果",
+                "hint": "追踪角色卡上主动效果的变化。"
+            },
+            "monitorItemQuantity": {
+                "name": "监控物品数量",
+                "hint": "追踪角色拥有的物品数量的变化。"
+            },
+            "monitorItemNameDesc": {
+                "name": "监控物品名称和描述",
+                "hint": "追踪角色卡上物品名称和/或描述的变化。"
+            },
+            "monitorItemEquip": {
+                "name": "监控装备",
+                "hint": "追踪角色装备或卸下物品的时间。"
+            },
+            "monitorItemAttune": {
+                "name": "监控同调",
+                "hint": "追踪角色与物品同调或失去同调的时间。"
+            },
+            "monitorItemIdentify": {
+                "name": "监控物品鉴定",
+                "hint": "追踪物品已鉴定/未鉴定状态的变化。"
+            },
+            "monitorItemCharges": {
+                "name": "监控物品充能",
+                "hint": "追踪角色卡上物品充能的变化。"
+            },
+            "monitorSheetMode": {
+                "name": "监控卡模式",
+                "hint": "追踪角色卡在游戏模式和编辑模式之间的切换。"
+            },
+            "monitorInspiration": {
+                "name": "监控激励",
+                "hint": "追踪角色卡上激励的变化。"
+            },
+            "monitorDeathSave": {
+                "name": "监控死亡豁免",
+                "hint": "追踪角色卡上死亡豁免检定结果的变化。"
+            }
+        },
+        "chatMessage": {
+            "sheetMode": "卡模式",
+            "description": "描述",
+            "descriptionChanged": "描述已更改",
+            "hp": {
+                "value": "生命值",
+                "max": "最大生命值",
+                "temp": "临时生命值",
+                "tempmax": "临时最大生命值"
+            },
+            "equipped": "已装备",
+            "unequipped": "已卸下",
+            "prepared": "已准备",
+            "unprepared": "未准备",
+            "attunesTo": "与...同调",
+            "breaksAttune": "失去与...的同调",
+            "enabled": "已启用",
+            "disabled": "已禁用",
+            "added": "已添加",
+            "deleted": "已删除",
+            "identified": "已鉴定",
+            "unidentified": "未鉴定",
+            "old": "旧",
+            "new": "新"
+        }
+    }
+}

@@ -1,0 +1,90 @@
+
+	"DF-LOGGER": {
+		"Settings": {
+			"ManageMessages": "管理消息",
+			"Sound_Name": "消息使用的音效",
+			"Sound_Hint": "在聊天中显示登录/登出消息时播放的音效",
+			"GmOnly_Name": "仅向GM显示消息",
+			"GmOnly_Hint": "仅向GM显示用户登录/登出消息。",
+			"NotMe_Name": "不向我显示自己的消息",
+			"NotMe_Hint": "仅向他人显示你的登录/登出消息，不向你自己显示。",
+			"Delay_Name": "自动移除延迟",
+			"Delay_Hint": "登录/登出消息应在日志中保留多少秒？",
+			"SelfDestruct_Name": "自动移除消息",
+			"SelfDestruct_Hint": "消息将在定义的时间后自动从聊天日志中删除。"
+		},
+		"Content": {
+			"Login": "用户已登录",
+			"Login_Persist": "*用户已登录",
+			"Logout": "用户已登出",
+			"Logout_Persist": "*用户已登出"
+		},
+		"ManageMenu": {
+			"Title": "消息管理",
+			"Confirm": {
+				"Title": "重置所有消息",
+				"Content": "你确定要将所有消息重置为默认消息吗？此操作无法撤销，并将删除所有自定义消息。"
+			},
+			"TabLogin": "登录消息",
+			"TabLogout": "登出消息",
+			"Headers": {
+				"Toggle": "使用消息",
+				"Message": "消息文本",
+				"Remove": "删除消息"
+			},
+			"Entry": {
+				"ToggleTitle": "切换消息",
+				"MessagePlaceholder": "在此处放置你的自定义消息...",
+				"RemoveTitle": "删除条目"
+			},
+			"Buttons": {
+				"Add": "添加条目",
+				"Reset": "重置所有消息",
+				"Save": "保存消息"
+			}
+		},
+		"LoginMsg": [
+			"{{username}} 刚刚加入了服务器 - 祝好运！",
+			"{{username}} 刚刚加入。大家，装忙！",
+			"{{username}} 刚刚加入。能给我加个血吗？",
+			"{{username}} 加入了你的队伍。",
+			"{{username}} 加入了。你必须建造更多的水晶塔。",
+			"天哪。{{username}} 来了。",
+			"欢迎，{{username}}。稍作停留，听我说。",
+			"欢迎，{{username}}。( ͡° ͜ʖ ͡°) 我们正等着你呢",
+			"欢迎，{{username}}。我们希望你带了披萨。",
+			"欢迎 {{username}}。把武器留在门口。",
+			"一只野生的 {{username}} 出现了。",
+			"嗖的一声。{{username}} 刚刚降落。",
+			"做好准备。{{username}} 刚刚加入了服务器。",
+			"{{username}} 刚刚加入。藏好你的香蕉。",
+			"{{username}} 刚刚到达。看起来太强了 - 请削弱。",
+			"{{username}} 刚刚滑进了服务器。",
+			"一个 {{username}} 在服务器中生成。",
+			"大 {{username}} 出现了！",
+			"{{username}} 在哪？在服务器里！",
+			"{{username}} 跳进了服务器。袋鼠！！",
+			"{{username}} 刚刚出现。帮我拿着啤酒。",
+			"挑战者接近 - {{username}} 出现了！",
+			"是鸟！是飞机！算了，只是 {{username}}。",
+			"是 {{username}}！赞美太阳！\n\\[T]/",
+			"永远不会放弃 {{username}}。永远不会让 {{username}} 失望。",
+			"哈！{{username}} 加入了！你发动了我的陷阱卡！",
+			"干杯，亲爱的！{{username}} 来了！",
+			"嘿！听着！{{username}} 加入了！",
+			"我们一直在等你 {{username}}",
+			"独自前行很危险，带上 {{username}}！",
+			"{{username}} 加入了服务器！效果拔群！",
+			"干杯，亲爱的！{{username}} 在这里！",
+			"{{username}} 来了，正如预言所预示的。",
+			"{{username}} 已到达。派对结束了。",
+			"准备玩家 {{username}}",
+			"{{username}} 来这里是为了踢屁股和嚼泡泡糖。而 {{username}} 的泡泡糖已经嚼完了。",
+			"你好。你在找的是 {{username}} 吗？",
+			"玫瑰是红色的，紫罗兰是蓝色的，{{username}} 和你一起加入了此服务器"
+		],
+		"LogoutMsg": [
+			"{{username}} 已经离开了！"
+		]
+	}
+}

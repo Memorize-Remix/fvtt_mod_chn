@@ -1,0 +1,50 @@
+
+  "FORCECLIENTSETTINGS": {
+    "settings": {
+      "forced-settings": {
+        "name": "(已弃用) 强制设置列表(JSON)",
+        "hint": "将列表中的设置强制应用为世界范围设置"
+      },
+      "forced": {
+        "name": "强制设置集合",
+        "hint": "包含强制设置及其强制模式的信息"
+      },
+      "unlocked": {
+        "name": "解锁设置集合",
+        "hint": "包含软强制设置解锁状态的信息"
+      },
+      "restricted": {
+        "name": "受限设置菜单集合",
+        "hint": "包含受限设置子菜单按钮的信息"
+      },
+      "hide-forced": {
+        "name": "对客户端隐藏强制设置",
+        "hint": "非GM客户端将不会在设置配置应用中显示任何硬强制设置"
+      },
+      "forced-config": {
+        "label": "强制客户端设置编辑",
+        "title": "强制客户端设置编辑",
+        "name": "",
+        "warning": "在此你可以强制所有设置，包括未列出的设置。这可能会允许你强制某些隐藏在子菜单后的设置。但请注意，强制某些设置可能导致应用程序行为异常或无响应。请参考README.md进行故障排除。",
+        "filter": "仅显示未列出的设置",
+        "keybindings": "你可能需要使用\"Force Client Controls\"模组来实现此功能",
+        "unlock-all": "解锁所有设置",
+        "close": "关闭"
+      }
+    },
+    "ui": {
+      "yes": "是",
+      "no": "否",
+      "open-gm-hint": "这些设置未被强制。点击进行软强制。",
+      "soft-gm-hint": "这些设置已被软强制(客户端可选择编辑)。点击进行硬强制，Alt+点击退出。",
+      "hard-gm-hint": "这些设置对所有客户端强制生效。点击释放，Alt+点击退出。",
+      "unlocked-gm-hint": "这些设置对客户端强制生效，但GM已退出强制。点击取消退出。",
+      "unrestricted-gm-hint": "这些设置按钮对所有客户端无限制。点击进行限制。",
+      "restricted-gm-hint": "这些设置按钮对非GM客户端受限且隐藏。点击取消限制。",
+      "hard-client-hint": "这些设置已被GM强制，无法编辑。",
+      "soft-client-hint": "这些设置被GM软强制。点击解锁编辑。",
+      "unlocked-client-hint": "这些设置已对此客户端解锁。点击重置为GM默认。",
+      "migration-note": "强制客户端设置已完成设置迁移过程。请刷新浏览器。"
+    }
+  }
+}

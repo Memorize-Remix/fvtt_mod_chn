@@ -1,0 +1,66 @@
+
+  "zoom-pan-options": {
+    "settings": {
+      "zoom-around-cursor": {
+        "name": "围绕光标缩放",
+        "hint": "围绕光标居中缩放。不适用于通过pageup或pagedown进行缩放。"
+      },
+      "middle-mouse-pan": {
+        "name": "鼠标中键平移",
+        "hint": "按下鼠标中键将平移画布，而不是默认的什么都不做。"
+      },
+      "max-zoom-override": {
+        "name": "最大缩放覆盖",
+        "hint": "最大缩放比例限制的覆盖值（无法限制初始场景缩放范围），数值越大意味着你能更近距离查看细节。3 是FVTT的默认值（最多 x3 缩放）。"
+      },
+      "min-zoom-override": {
+        "name": "最小缩放覆盖",
+        "hint": "最小缩放比例限制的覆盖值（无法限制初始场景缩放范围），数值越小意味着你能一次性看到更多场景内容。1 是FVTT的默认值（最低 x1 像素对像素缩放，外加边距）。"
+      },
+      "pan-zoom-mode": {
+        "name": "平移/缩放模式",
+        "hint": "鼠标: 标准FVTT行为。使用鼠标滚动缩放。使用 Shift+滚轮 和 Ctrl+滚轮 进行旋转。\n触摸板: 用双指拖动平移。用双指捏合或 Ctrl+滚轮 缩放。使用 Shift+滚轮 和 Ctrl+Shift+滚轮 进行旋转。\n其他: 用双指拖动或滚动或 shift+滚轮 进行平移。用双指捏合或 Ctrl+滚轮 缩放。使用 Alt+Shift+滚轮 和 Alt+Ctrl+滚轮 进行旋转。",
+        "choice_mouse": "鼠标: 标准FVTT行为",
+        "choice_touchpad": "触摸板: 用 Shift 或 Ctrl+Shift 拖动、捏合、旋转",
+        "choice_alternative": "其他: 可以用 Shift 键平移，按住 Alt 键旋转"
+      },
+      "auto-detect-touchpad": {
+        "name": "自动检测触摸板(BUGGY)",
+        "hint": "将尝试自动检测触摸板；根据结果选择鼠标或触摸板（如果选择了其他）。 该功能存在漏洞，并非对所有人都有效！"
+      },
+      "invert-vertical-scroll": {
+        "name": "反转垂直滚动",
+        "hint": "如果设置为true，向下拖动/滚动时将向上。"
+      },
+      "zoom-speed-multiplier": {
+        "name": "缩放速度",
+        "hint": "缩放速度的倍数，影响缩放速度。0.1 或 10 可能更适合某些触摸板。0 表示FVTT的默认行为（忽略滚动\"强度\"），对触摸板来说感觉更糟）。"
+      },
+      "pan-speed-multiplier": {
+        "name": "平移速度（用于触摸板模式）",
+        "hint": "如果使用触摸板/其他模式，将平移速度乘以该数值。默认值为 1，应接近右键拖动画布时的平移速度。"
+      },
+      "pad-value-when-dragging": {
+        "name": "将某物拖动到屏幕边缘时的\"pad\"值",
+        "hint": "按住光标并将其移向屏幕边缘时，画布将平移。\"pad\" 是触发它的距离。FVTT默认为 50px。"
+      },
+      "shift-value-when-dragging": {
+        "name": "拖动内容到屏幕边缘时的\"shift\"值",
+        "hint": "按住光标并将其移向屏幕边缘时，画布将平移。 \"shift\"是平移距离，单位是图块。FVTT的默认值为 3 图块。"
+      }
+    },
+    "keybindings": {
+      "toggle-touchpad-mode": {
+        "name": "切换鼠标/触摸板模式"
+      },
+      "toggle-alternative-mode": {
+        "name": "切换鼠标/其他模式"
+      },
+      "notifications": {
+        "Mouse": "缩放/平移选项：启用鼠标模式。",
+        "Touchpad": "缩放/平移选项：启用触控板模式。",
+        "Alternative": "缩放/平移选项：启用其他模式。"
+      }
+    }
+  }
+}

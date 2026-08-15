@@ -1,0 +1,239 @@
+{
+    "LOCKVIEW": {
+        "Help": "Help",
+        "Settings": {
+            "ShowHideUI": "Show/Hide UI",
+            "ShowHideUI_Hint": "Toggle between showing and hiding the UI, if configured in the scene configuration.",
+            "PhysicalGridSize": "Physical Grid Size",
+            "PhysicalGridSize_Hint": "Configure the real-world dimensions for when using Physical Grid Size. Display Width is the real-world width of your display, while Grid Size is the desired real-world size of the grid. Unit can be millimeter or inches, but the unit must be the same for both settings.",
+            "PhysicalGridSize_Hint2": "By default these settings are configurable by each user, but the GM can set values that apply to all users.",
+            "GmGridsize": "Force GM-Set Settings",
+            "DisplayWidth": "Display Width",
+            "Gridsize": "Grid Size",
+            "Documentation": "Documentation",
+            "Documentation_Hint": "Open the Lock View documentation.",
+            "CycleViewboxes": "Cycle Viewboxes",
+            "CycleViewboxes_Hint": "Cycle between viewboxes when Edit Viewbox is enabled.",
+            "MouseViewboxControl": "Mouse Viewbox Editing",
+            "MouseViewboxControl_Hint": "Enable editing of viewboxes by dragging with the right mouse button and using the mousewheel. If enabled, you will not be able to pan or zoom when the Edit Viewbox control is enabled.",
+            "PingPan": {
+                "Label": "Pan Canvas to Ping Behavior",
+                "Hint": "Configure what happens when a Control user uses Pan Canvas to Ping while (zoom and/or pan) locks are applied.",
+                "Block": "Prevent all locked movement",
+                "PanOnly": "Allow panning, prevent zooming",
+                "ZoomOnly": "Allow zooming, prevent panning",
+                "Any": "Allow all movemement"
+            },
+            "CloneView": "Clone View",
+            "CloneView_Hint": "Clone the current view to enabled users."
+        },
+        "SetView": {
+            "Title": "Set View",
+            "Pan": "Pan",
+            "Pan_Hint": "Select how to pan the view of the selected users.",
+            "PanModes": {
+                "InitialView": "Set to initial view",
+                "MoveGridSpaces": "Move grid spaces",
+                "MoveByCoordinates": "Move by coordinates",
+                "MoveToCoordinates": "Move to coordinates"
+            },
+            "Scale": "Scale",
+            "Scale_Hint": "The scale the view will be set to.",
+            "Zoom": "Zoom",
+            "Zoom_Hint": "Select how to zoom the view of the selected users.",
+            "ZoomModes": {
+                "DontChange": "Don't Change",
+                "Set": "Set scale",
+                "Reset": "Reset to initial viewpoint",
+                "PhysicalGridSize": "Set to physical grid size"
+            },
+            "GridSpaces": "Grid Spaces",
+            "GridSpaces_Hint": "The amount of grid spaces to move the view to in the X- and Y-direction.",
+            "Coordinates": "Coordinates",
+            "Coordinates_Hint": "The center coordinates to move the view to.",
+            "Apply": "Apply",
+            "UserHint": "Select users to apply the new view to."
+        },
+        "UserConfig": {
+            "Title": "User Configurator",
+            "Hint": "Configure how Lock View affects users.",
+            "Name": "Name",
+            "Role": "Role",
+            "Enable": "Enable",
+            "Enable_Hint": "Enables all of Lock View's functions, except for the functions covered by Viewbox and Static.",
+            "Viewbox": "Viewbox",
+            "Viewbox_Hint": "Users with this setting enabled will share their view with Control users, Control users can display this view using the control buttons and change it, which allows them to control the view of other users.",
+            "Static": "Static",
+            "Static_Hint": "Static users will not change scenes when, for example, a scene is activated. Control users can change scenes for Static Users by right-clicking a scene in the scene navigation and selecting Pull Static Users.",
+            "Control": "Control",
+            "Control_Hint": "Users with this setting enabled can control Lock View's functions. This includes setting (pan or zoom) locks and changing a user's view using the viewbox.",
+            "UserSettings": "User Settings",
+            "UserSettings_Hint": "Configure each user. The Default settings are applied to new and unconfigured Player and Trusted Player users.",
+            "Default": "Default"
+        },
+        "InitialViewConfig": {
+            "Title": "Initial View Configurator",
+            "Hint_A": "Configure the initial view for the scene.",
+            "Hint_B": "If you are currently viewing the scene, a viewbox will appear that represents the initial view.",
+            "Hint_C": "The resulting view will vary slightly depending on the display of the user (for example, the aspect ratio). Some 'autoscale' settings will override the initial view scale.",
+            "CurrentInitialView": "Current Initial View Position",
+            "NewInitialView": "New Initial View Position",
+            "SizeInGridSpaces": "Size In Grid Spaces",
+            "X": "x",
+            "Y": "y",
+            "Scale": "Scale",
+            "SetToPhysicalGridSize": "Set to Physical Grid Size",
+            "SetToPlayerView": "Set to Player View",
+            "CaptureView": "Capture View",
+            "SnapToGrid": "Snap to Grid",
+            "SnapDir": {
+                "TopLeft": "Top Left",
+                "TopRight": "Top Right",
+                "BottomLeft": "Bottom Left",
+                "BottomRight": "Bottom Right"
+            },
+            "SaveChanges": "Save Changes"
+        },
+        "Locks": {
+            "Label": "Locks",
+            "Hint": "Configure locks for the scene.",
+            "PanLock": "Pan Lock",
+            "PanLock_Hint": "\"Pan Lock\" will prevent panning",
+            "ZoomLock": "Zoom Lock",
+            "ZoomLock_Hint": "\"Zoom Lock\" will prevent zooming in or out",
+            "BoundingBox": "Bounding Box",
+            "BoundingBox_Hint": "\"Bounding Box\" will lock the view inside a specified box"
+        },
+        "ControlButtons": {
+            "SetView": "Set View",
+            "PanLock": "Pan Lock",
+            "ZoomLock": "Zoom Lock",
+            "BoundingBox": "Bounding Box",
+            "Viewbox": "Viewbox",
+            "EditViewbox": "Edit Viewbox",
+            "CloneView": "Clone View",
+            "ResetView": "Reset View",
+            "ControlButtonsConfig": "Control Buttons Configurator",
+            "ControlButtonsConfig_Hint": "Choose to enable or disable all (Enable Control Buttons) or some of the Lock View control buttons.",
+            "ControlButtonsConfig_ButtonHint": "Configure which control buttons are visible.",
+            "EnableControlButtons": "Enable Control Buttons"
+        },
+        "SceneConfigurator": {
+            "Title": "Scene Configurator",
+            "Hint": "Configure Lock View settings for all scenes.",
+            "Name": "Name",
+            "Copy": "Copy",
+            "Copy_Hint": "Copy the scene config for the selected scene",
+            "Paste": "Paste",
+            "Paste_Hint": "Apply the copied scene config to the selected scene",
+            "Reset": "Reset",
+            "Reset_Hint": "Reset the scene config of the selected scene to the 'Default' scene config",
+            "Default": "Default",
+            "Default_Hint": "The 'Default' scene config is applied to new and unconfigured scenes.",
+            "AppHint": "Configure the Lock View scene settings for each scene. Each row displays the scene config for a scene. Changes are saved and applied immediately."
+        },
+        "SceneConfig": {
+            "Autoscale": {
+                "Label": "Autoscale",
+                "Hint": "Automatically scale the view when the scene is loaded.",
+                "Tooltip": "Automatically scale the view when the scene is loaded.<br><ul><li><b>Horizontal Fit:</b> Scale the view so the scene fits horizontally.</li><li><b>Vertical Fit:</b> Scale the view so the scene fits vertically.</li><li><b>Automatic Fit (Inside):</b> Scale the view so the entire scene fits inside the view (this can mean that the scene background color will be visible).</li><li><b>Automatic Fit (Outside):</b> Scale the view so the entire view is filled with the scene (no background color will be visible, but parts of the scene might be cut off).</li><li><b>Physical Grid Size:</b> Scale the view so the grid corresponds with real-life dimensions.</li></ul>",
+                "Off": "Off",
+                "HorizontalFit": "Horizontal Fit",
+                "HorizontalFit_Hint": "\"Horizontal Fit\" will scale the view so the scene fits horizontally.",
+                "VerticalFit": "Vertical Fit",
+                "VerticalFit_Hint": "\"Vertical Fit\" will scale the view so the scene fits vertically.",
+                "AutomaticFitInside": "Automatic Fit (Inside)",
+                "AutomaticFitInside_Hint": "\"Automatic Fit (Inside)\" will scale the view so the entire scene fits inside the view (this can mean that the scene background color will be visible).",
+                "AutomaticFitOutside": "Automatic Fit (Outside)",
+                "AutomaticFitOutside_Hint": "\"Automatic Fit (Outside)\" will scale the view so the entire view is filled with the scene (no background color will be visible, but parts of the scene might be cut off).",
+                "PhysicalGridSize": "Physical Grid Size",
+                "PhysicalGridSize_Hint": "\"Physical Grid Size\" will scale the scene so the grid corresponds with real-life dimensions."
+            },
+            "Locks": {
+                "Label": "Locks",
+                "Hint": "Configure locks for the scene.",
+                "PanLock": "Pan Lock",
+                "PanLock_Hint": "Prevent users from panning.",
+                "ZoomLock": "Zoom Lock",
+                "ZoomLock_Hint": "Prevent users from zooming in or out.",
+                "BoundingBox": "Bounding Box",
+                "BoundingBox_Hint": "Lock the view of users inside a specified box."
+            },
+            "UI": {
+                "Label": "Hide UI Elements",
+                "Hint": "Select when to hide UI elements and which elements to hide.",
+                "HideOn": "Hide On",
+                "HideAlways": "Always",
+                "HideOnNever": "Never",
+                "HideOnSceneLoad": "Scene Load",
+                "HideOnSidebarCollapse": "Sidebar Collapse",
+                "SceneControls": "Scene Controls",
+                "Hotbar": "Macro Hotbar",
+                "SceneNavigation": "Scene Navigation",
+                "Players": "Players Box",
+                "Sidebar": "Sidebar",
+                "ChatNotifications": "Chat Notifications",
+                "CameraViews": "Camara Feeds"
+            },
+            "ForceInitialView": {
+                "Label": "Force Initial View",
+                "Hint_Short": "Force the view to the \"Initial View Position\".",
+                "Hint": "Force the user's view to the \"Initial View Position\" when the scene is loaded. Press the button to enter the initial view configurator.",
+                "Config": "Configure Initial View"
+            },
+            "Sidebar": {
+                "Label": "Sidebar",
+                "Hint": "Configure the sidebar.",
+                "ExcludeSidebar": "Exclude Sidebar",
+                "ExcludeSidebar_Hint": "Exclude the sidebar when determining a player's view with the viewbox, and when 'Autoscale' is configured.",
+                "BlackenSidebar": "Blacken Sidebar",
+                "BlackenSidebar_Hint": "Remove the transparancy from the sidebar, preventing users from seeing what's behind it.",
+                "OnSceneLoad": "On Scene Load",
+                "OnSceneLoad_Hint": "Configure what should happen with the sidebar when the scene is loaded. Collapse it, expand it, or leave it as is.",
+                "NoChange": "No Change",
+                "Collapse": "Collapse",
+                "Expand": "Expand"
+            },
+            "ExpandToSeeMore": "Expand to see more.",
+            "CollapseExpandAll": "Collapse or Expand All",
+            "Collapse": "Collapse",
+            "Expand": "Expand",
+            "LockViewHelp": "Lock View Help"
+        },
+        "DrawingConfig": {
+            "Hint_1": "You can force the view of a player to stay within the area of this drawing.",
+            "Hint_2": "This is only applicable for users with \"Enable\" set in the \"User Configuration\", and when \"Bounding Box\" is enabled in the \"Scene Configuration\" or using the control buttons.",
+            "Disabled": "Disabled",
+            "Disabled_Hint": "The bounding box is equal to the scene",
+            "OwnedTokens": "Owned Tokens",
+            "OwnedTokens_Hint": "Only force the view to this drawing if the player owns a token within the drawing",
+            "Always": "Always",
+            "Always_Hint": "Always force the view to this drawing",
+            "ForceToBoundingBox": "Force to Bounding Box"
+        },
+        "CloneView": {
+            "Title": "Clone View",
+            "Hint_A": "Configure whether \"Clone View\" clones the pan and/or the zoom.",
+            "Hint_B": "Apply to the selected users.",
+            "Pan": "Pan",
+            "Zoom": "Zoom",
+            "ButtonTitle": "Clone View Configurator",
+            "ButtonHint": "Configure what happens when the view is cloned.",
+            "DialogContent": "Cloning the view will override the pan and zoom lock, are you sure you want to continue?",
+            "DoNotShowAgain": "Do not show again"
+        },
+        "Notifications": {
+            "CopiedSceneConfig": "Copied scene config from \"{scene}\"",
+            "CouldNotCopySceneConfig": "Could not copy scene config for scene \"{scene}\"",
+            "NoCopiedSceneConfig": "No copied scene config",
+            "PastedSceneConfig": "Pasted scene config from \"{origin}\" to \"{target}\"",
+            "CouldNotResetSceneConfig": "Could not reset scene config for scene \"{scene}\"",
+            "ResetSceneConfig": "Reset scene config for \"{scene}\"",
+            "NoUsersSelected": "No users selected",
+            "NoPermission": "You do not have permission to perform that action"
+        },
+        "SceneNavigation": {
+            "PullStaticUsers": "Pull Static Users"
+        }
+    }
+}

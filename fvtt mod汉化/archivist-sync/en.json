@@ -1,0 +1,324 @@
+{
+  "ARCHIVIST_SYNC": {
+    "Settings": {
+      "ApiKey": {
+        "Name": "API Key",
+        "Hint": "Enter your API key to authenticate with the Archivist API service"
+      },
+      "SemanticMappingEnabled": {
+        "Name": "Enable semantic field mapping",
+        "Hint": "Use a small local embeddings model to improve field detection"
+      },
+      "SelectedWorld": {
+        "Name": "Selected World ID",
+        "Hint": "The ID of the currently selected world from the Archivist API"
+      },
+      "SelectedWorldName": {
+        "Name": "Selected World",
+        "Hint": "The name of the currently selected world from the Archivist API"
+      },
+      "ChatHistory": {
+        "Name": "Chat History",
+        "Hint": "Internal storage for Archivist Chat message history"
+      },
+      "ChatHistoryEnabled": {
+        "Name": "Keep Chat History",
+        "Hint": "When enabled, your chat session is saved and restored per-user and per-campaign. Disable to start fresh each time."
+      },
+	  "ChatVisibility": {
+        "Name": "Chat Visibility",
+        "Hint": "Who should see the Archivist Chat sidebar tab?",
+        "Options": {
+          "All": "All",
+          "GMOnly": "GM Only",
+          "None": "None"
+        }
+      },
+	  "ChatGmPermissions": {
+        "Name": "Allow GM private journal context in chat",
+        "Hint": "When enabled, GM chat requests include private journal context during retrieval. Non-GM users never send private context."
+      },
+      "MappingOverride": {
+        "Name": "Mapping Override (JSON)",
+        "Hint": "Optional JSON rules to customize importer field mapping"
+      },
+      "WorldInitialized": {
+        "Name": "World Initialized",
+        "Hint": "Internal flag indicating whether this Foundry world has been set up with Archivist"
+      },
+      "AutoSort": {
+        "Name": "Auto-Sort Linked Content",
+        "Hint": "Automatically sort linked characters, items, factions, and locations alphabetically in sheet panels"
+      },
+      "HideByOwnership": {
+        "Name": "Hide by Ownership",
+        "Hint": "Non-GM users will only see linked content they have permission to observe"
+      },
+      "OrganizeFolders": {
+        "Name": "Organize in Folders",
+        "Hint": "Automatically organize imported Archivist content into dedicated folders (Archivist - PCs, NPCs, Items, etc.)"
+      },
+      "MaxLocationDepth": {
+        "Name": "Max Location Tree Depth",
+        "Hint": "Maximum depth for hierarchical location trees (1-10)"
+      },
+      "RealtimeSync": {
+        "Name": "Real-Time Sync",
+        "Hint": "Automatically sync changes to Archivist when documents are created, updated, or deleted in Foundry"
+      },
+      "ImportConfig": {
+        "Name": "Import Configuration",
+        "Hint": "Internal JSON configuration for import/export field mappings and filters"
+      },
+      "SemanticMapping": {
+        "Name": "Semantic Field Mapping",
+        "Hint": "Use AI to improve automatic field detection during import (experimental)"
+      },
+      "ProjectDescriptions": {
+        "Name": "Project Descriptions",
+        "Hint": "When enabled, Archivist will find the most likely description field on Actors, Items, and Scenes and append a separate Archivist section beneath any existing value."
+      },
+      "ProjectionLoopGuardMs": {
+        "Name": "Projection: Loop Guard (ms)",
+        "Hint": "Deprecated"
+      }
+    },
+    "chat": {
+      "copied": "Copied to clipboard",
+      "title": "Archivist Chat",
+      "placeholder": "Ask a question about your campaign...",
+      "clear": "Clear Chat",
+      "clearConfirm": "This will delete your local chat history for this world. Continue?",
+      "streaming": "Streaming...",
+      "stop": "Stop",
+      "me": "Me",
+      "assistant": "",
+      "noWorld": "Please select an Archivist world first.",
+      "noApi": "Please configure your API key in module settings.",
+      "notInitialized": "This Foundry world has not been initialized with Archivist yet.",
+      "error": "Chat error"
+    },
+    "Menu": {
+      "UpdateApiKey": {
+        "Name": "Update API Key",
+        "Label": "Update API Key",
+        "Hint": "Securely update your Archivist API key",
+        "Title": "Update API Key",
+        "Description": "Enter your new Archivist API key below. This will replace your current key.",
+        "Placeholder": "Paste your new API key here...",
+        "Update": "Update",
+        "Cancel": "Cancel",
+        "Success": "API key updated successfully",
+        "Empty": "API key cannot be empty"
+      },
+      "RunSetup": {
+        "Name": "Run World Setup Again",
+        "Label": "Run World Setup Again",
+        "Hint": "Reset initialization and relaunch the Archivist world setup wizard.",
+        "Title": "Run World Setup Again",
+        "Confirm": "This will reset initialization and reload Foundry to run setup again. Continue?"
+      },
+      "AskChat": {
+        "Name": "Archivist Chat",
+        "Label": "Archivist Chat",
+        "Hint": "Ask questions about your campaign with RAG"
+      },
+      "Documentation": {
+        "Name": "Documentation",
+        "Label": "Documentation",
+        "Hint": "View Archivist Sync documentation and user guide",
+        "Title": "Archivist Sync Documentation"
+      }
+    },
+    "dialog": {},
+    "Dialog": {
+      "SyncOptions": {
+        "Label": "",
+        "title": "",
+        "Title": ""
+      }
+    },
+    "tabs": {
+      "world": "Settings",
+      "importer": "Importer",
+      "characters": "Characters",
+      "factions": "Factions",
+      "locations": "Locations"
+    },
+    "labels": {
+      "apiStatus": "API Status",
+      "apiKey": "API Key",
+      "selectWorld": "Select World",
+      "currentSelection": "Current Selection",
+      "foundryWorld": "Current Foundry World",
+      "archivistWorld": "Archivist World Data",
+      "importer": "Importer Wizard",
+      "importPreview": "Import Preview",
+      "thresholdA": "Auto-import threshold (A)",
+      "thresholdB": "Needs review threshold (B)",
+      "samplePreview": "Sample preview",
+      "syncTarget": "Sync Target",
+      "title": "Title",
+      "description": "Description",
+      "lastUpdated": "Last Updated",
+      "createdAt": "Created At",
+      "characterCount": "Character Count",
+      "charactersAndNpcs": "Characters & NPCs",
+      "playerCharacters": "Player Characters",
+      "npcs": "NPCs",
+      "factions": "Factions",
+      "locations": "Locations",
+      "items": "Items",
+      "recaps": "Recaps",
+      "mappingOverride": "Mapping Override (JSON)",
+      "importProgress": "Import Progress"
+    },
+    "status": {
+      "connected": "Connected",
+      "notConfigured": "Not Configured"
+    },
+    "buttons": {
+      "syncing": "Syncing...",
+      "syncWorlds": "Refresh",
+      "saveSelection": "Save Selection",
+      "syncTitle": "Sync Title to Archivist",
+      "syncFromFoundry": "→ Sync to Archivist",
+      "syncFromArchivist": "← Sync from Archivist",
+      "syncCharacters": "Sync All Characters",
+      "map": "Map",
+      "pushToArchivist": "Push to Archivist",
+      "pullFromArchivist": "Pull from Archivist",
+      "loadData": "Load Data",
+      "runImport": "Run Import",
+      "createWorld": "Create Campaign",
+      "loadMapping": "Load",
+      "saveMapping": "Save",
+      "save": "Save"
+    },
+    "options": {
+      "selectWorld": "-- Select a World --"
+    },
+    "hints": {
+      "configureApi": "Please configure your API key in the module settings first."
+    },
+    "help": {
+      "mappingOverride": "Advanced: Provide JSON to override importer mapping per-entity. Structure: {\n  \"byUuid\": { \"<Foundry UUID>\": { include?: boolean, targetType?: \"Character|Faction|Location|Item|Note\", characterType?: \"PC|NPC\", fieldPaths?: { <field>: '$.<path>' } } },\n  \"byKey\": { \"<kind|subtype|folderName>\": { ...same fields... } }\n}\nUse fieldPaths to force values (e.g. { imageUrl: '$.images' })."
+    },
+    "warnings": {
+      "apiNotConfigured": "Please configure your API key in the module settings first.",
+      "selectWorldFirst": "Please select an Archivist world first.",
+      "selectWorld": "Please select a world from the dropdown before saving.",
+      "noWorldsFound": "No Archivist worlds found. Create a world before continuing.",
+      "noActorsToSync": "No characters or NPCs found in this world to sync."
+    },
+    "messages": {
+      "worldsLoaded": "Worlds loaded successfully from Archivist API",
+      "worldSaved": "World selection saved successfully",
+      "titleSynced": "World title synchronized successfully",
+      "charactersSynced": "Characters synchronized successfully",
+      "noActors": "No character or NPC actors found in this world.",
+      "noPlayerCharacters": "No player characters found in this world.",
+      "noNpcs": "No NPCs found in this world.",
+      "noActorsHint": "Create some characters or NPCs to get started.",
+      "loadingWorldData": "Loading world data from Archivist API...",
+      "noFactions": "No factions found (folder 'Archivist - Factions' or flagged).",
+      "noLocations": "No locations found (folder 'Archivist - Locations' or flagged).",
+      "factionsSynced": "Factions synchronized successfully",
+      "locationsSynced": "Locations synchronized successfully",
+      "factionsPulled": "Factions pulled successfully",
+      "locationsPulled": "Locations pulled successfully",
+      "charactersPulled": "Characters pulled successfully",
+      "worldInitialized": "Foundry world has been initialized with Archivist for the first time",
+      "worldInitializedReset": "World initialization reset. Reloading to run setup again..."
+    },
+    "errors": {
+      "fetchFailed": "Failed to fetch worlds from Archivist API",
+      "worldNotFound": "Selected world not found",
+      "saveFailed": "Failed to save world selection",
+      "syncFailed": "Failed to sync data",
+      "actorNotFound": "Actor not found",
+      "resetFailed": "Failed to reset world setup",
+      "descriptionTooLong": "Description exceeds maximum length (10,000 characters)",
+      "descriptionTooLongMultiple": "Failed to process {count} entity/entities: {names}. Their descriptions exceed the maximum length of 10,000 characters. Please shorten the descriptions and try again."
+    },
+    "worldSetup": {
+      "title": "Archivist World Setup",
+      "subtitle": "Connect your Foundry world to Archivist in just a few steps",
+      "setupComplete": "World setup completed successfully! Archivist features are now available.",
+      "setupFailed": "Failed to complete world setup. Please try again.",
+      "buttons": {
+        "start": "Start World Setup",
+        "previous": "Previous",
+        "next": "Next",
+        "complete": "Complete Setup",
+        "cancel": "Cancel"
+      },
+      "step1": {
+        "title": "Welcome to Archivist",
+        "description": "This setup wizard will help you connect your Foundry world to Archivist, enabling powerful AI-driven campaign management features.",
+        "nextSteps": "Here's what we'll do:",
+        "step1": "Configure your Archivist API key",
+        "step2": "Connect to your Archivist campaign world",
+        "step3": "Complete the initialization process",
+        "helpTitle": "Need Help?",
+        "helpText": "If you close this window, it will open again when you reload the VTT until you complete the setup process.",
+        "helpNote": "You can also access this setup wizard later from the Game Settings menu under Archivist Sync → Run World Setup Again.",
+        "viewDocs": "View Documentation"
+      },
+      "step2": {
+        "title": "Enter Your API Key",
+        "description": "To connect to Archivist, you'll need to provide your API key. This key allows secure access to your campaign data.",
+        "getApiKey": "How to Get Your API Key",
+        "noKeyYet": "Don't have an API key yet? Follow these steps:",
+        "step1": "Make sure you have an active Archivist subscription",
+        "step2": "Log into your Archivist account",
+        "step3": "Navigate to https://app.myarchivist.ai/profile",
+        "step4": "Generate a new API key with all permissions checked",
+        "permissionsWarning": "Important: API Key Permissions",
+        "permissionsDetails": "When generating your API key, make sure ALL available permissions are checked. This ensures the Foundry module can access all necessary features.",
+        "enterKey": "Enter Your API Key",
+        "keyPlaceholder": "Paste your API key here...",
+        "validateKey": "Validate Key",
+        "validating": "Validating...",
+        "keyValid": "Key is valid!"
+      },
+      "step3": {
+        "title": "Select Your Archivist Campaign",
+        "description": "Now let's connect to your Archivist campaign. Click 'Fetch Archivist Campaigns' to fetch your available campaigns.",
+        "worldSelected": "Perfect! Your world is selected and ready."
+      },
+      "step4": {
+        "title": "Setup Complete!",
+        "description": "Congratulations! Your Foundry world is now connected to Archivist.",
+        "ready": "You're all set!",
+        "features": "You now have access to these Archivist features:",
+        "feature1": "AI-powered chat assistant in the sidebar",
+        "feature2": "Character and NPC synchronization",
+        "feature3": "Faction and location management",
+        "feature4": "Advanced import and mapping tools"
+      },
+      "mapping": {
+        "title": "Configure Mapping",
+        "description": "Choose which Foundry fields map to Archivist fields and where new imports will be placed.",
+        "saveAndContinue": "Save & Continue"
+      },
+      "select": {
+        "title": "Select Foundry Documents to Sync",
+        "description": "Choose existing Foundry documents to export or link. You can skip this step if you're only importing to Foundry from Archivist.",
+        "placeholder": "Selection UI coming next: PCs, NPCs, Items, Locations, Factions with matching suggestions."
+      },
+      "summary": {
+        "title": "Review & Begin Sync",
+        "description": "We will create and link journal entries in the Archivist directory and perform the selected operations.",
+        "placeholder": "Summary UI coming next with counts and details.",
+        "beginSync": "Begin Sync"
+      }
+    },
+    "settings": {
+      "realtimeSync": {
+        "name": "Real‑Time Sync (auto‑update Archivist)",
+        "hint": "When enabled, changes you make in Foundry (create, edit, or delete Actors, Items, and designated Faction/Location journal pages) are immediately mirrored to Archivist. Recaps are read‑only: creating a Recaps page will not create a Game Session, and deleting a Recaps page will not delete a Game Session in Archivist."
+      }
+    }
+  }
+}

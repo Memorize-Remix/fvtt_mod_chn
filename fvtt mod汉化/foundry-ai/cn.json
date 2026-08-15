@@ -1,0 +1,124 @@
+
+	"FOUNDRYAI": {
+		"Title": "FoundryAI",
+		"Description": "FVTT的AI驱动DM助手",
+
+		"Settings": {
+			"MenuName": "FoundryAI配置",
+			"MenuLabel": "配置",
+			"MenuHint": "配置你的API密钥、模型和RAG知识库。",
+
+			"ApiKey": "OpenRouter API密钥",
+			"ApiKeyHint": "用于访问AI模型的OpenRouter API密钥。在openrouter.ai获取。",
+
+			"ChatModel": "聊天模型",
+			"ChatModelHint": "用于聊天对话的AI模型。",
+
+			"EmbeddingModel": "嵌入模型",
+			"EmbeddingModelHint": "用于生成文本嵌入（RAG）的模型。",
+
+			"JournalFolders": "日志文件夹",
+			"JournalFoldersHint": "选择要包含在AI知识库中的日志文件夹。",
+
+			"ActorFolders": "角色文件夹",
+			"ActorFoldersHint": "选择AI可以访问以获取角色信息的角色文件夹。",
+
+			"ChatHistoryFolder": "聊天历史文件夹",
+			"ChatHistoryFolderHint": "保存原始聊天会话的日志文件夹。",
+
+			"SessionRecapFolder": "会话摘要文件夹",
+			"SessionRecapFolderHint": "保存AI生成的会话摘要的日志文件夹。",
+
+			"Temperature": "温度",
+			"TemperatureHint": "控制随机性：0 = 确定性，2 = 非常有创造性。默认：0.8",
+
+			"MaxTokens": "最大Token数",
+			"MaxTokensHint": "AI响应中的最大Token数。默认：4096",
+
+			"SystemPrompt": "系统提示覆盖",
+			"SystemPromptHint": "覆盖默认的DM助手系统提示。留空以使用内置提示。",
+
+			"StreamResponses": "流式响应",
+			"StreamResponsesHint": "在生成时显示AI响应（实时流式传输）。",
+
+			"AutoIndex": "启动时自动索引",
+			"AutoIndexHint": "在FVTT加载时自动索引选定的文件夹。",
+
+			"EnableTools": "启用工具使用",
+			"EnableToolsHint": "允许AI搜索日志、创建条目并与世界互动。",
+
+			"ShowSidebarTab": "显示侧边栏标签",
+			"ShowSidebarTabHint": "在侧边栏中添加FoundryAI标签。",
+
+			"ImageModel": "图像生成模型",
+			"ImageModelHint": "用于AI图像生成的模型（例如openai/dall-e-3）。",
+
+			"TTSModel": "文本转语音模型",
+			"TTSModelHint": "用于文本转语音音频生成的模型。",
+
+			"MacroFolders": "宏文件夹",
+			"MacroFoldersHint": "选择AI可以访问和执行的宏文件夹。",
+
+			"EnableActorTools": "启用角色工具",
+			"EnableActorToolsHint": "允许AI创建、更新和删除角色。",
+
+			"EnableItemTools": "启用物品工具",
+			"EnableItemToolsHint": "允许AI创建、更新和删除世界物品。",
+
+			"EnableMacroTools": "启用宏工具",
+			"EnableMacroToolsHint": "允许AI列出、创建、更新和执行宏。",
+
+			"EnableImageTools": "启用图像工具",
+			"EnableImageToolsHint": "允许AI生成图像并使用AI地图创建场景。"
+		},
+
+		"Chat": {
+			"Placeholder": "询问FoundryAI...",
+			"Generating": "生成中...",
+			"Send": "发送",
+			"NewChat": "新聊天",
+			"Sessions": "聊天会话",
+			"NoSessions": "还没有会话。开始新的聊天吧！",
+			"DeleteSession": "删除此聊天会话？此操作无法撤销。",
+			"SessionDeleted": "会话已删除。",
+			"Today": "今天"
+		},
+
+		"Recap": {
+			"Generate": "生成会话摘要",
+			"Generating": "正在生成会话摘要...",
+			"Saved": "会话摘要已保存！",
+			"NoSessions": "没有可用于摘要的聊天会话。",
+			"Failed": "摘要生成失败。"
+		},
+
+		"Index": {
+			"Reindex": "重新索引知识库",
+			"Starting": "开始索引...",
+			"Complete": "索引完成！",
+			"Failed": "索引失败。"
+		},
+
+		"Errors": {
+			"NoApiKey": "请在FoundryAI设置中配置你的OpenRouter API密钥。",
+			"ConnectionFailed": "连接到OpenRouter失败。",
+			"ChatFailed": "聊天请求失败。",
+			"ToolFailed": "工具执行失败。"
+		},
+
+		"Welcome": {
+			"Title": "欢迎使用FoundryAI",
+			"Subtitle": "你的AI DM助手",
+			"Description": "配置你的OpenRouter API密钥以开始使用。",
+			"OpenSettings": "打开设置",
+			"Ready": "FoundryAI已就绪！点击图标开始聊天。"
+		},
+
+		"Suggestions": {
+			"Scene": "描述一个场景",
+			"SkillCheck": "技能检定指导",
+			"NPC": "NPC对话",
+			"Lore": "搜索学识"
+		}
+	}
+}

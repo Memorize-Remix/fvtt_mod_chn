@@ -1,0 +1,88 @@
+{
+    "GlobalProgressClocks": {
+        "Add": {
+            "Clock": "Clock",
+            "Points": "Points",
+            "Tracker": "Tracker"
+        },
+        "CreateDialog": {
+            "Color": "Color",
+            "Default": "Default",
+            "EditTitle": "Edit Clock",
+            "EditTitlePoints": "Edit Points",
+			"EditTitleTracker": "Edit Tracker",
+            "Title": "Add Clock",
+            "TitlePoints": "Add Points",
+			"TitleTracker": "Add Tracker",
+            "Name": "Name",
+            "Value": "Value",
+            "Size": "Size",
+            "Private": "Private"
+        },
+        "DeleteDialog": {
+            "Title": "Delete Entry",
+            "Message": "Are you sure you want to delete {name}?"
+        },
+        "Empty": "Empty",
+        "SizeTooBigError": "Clocks cannot be larger than {maxSize} segments.",
+        "Settings": {
+            "ClockTheme": {
+                "name": "Clock Theme",
+                "hint": "Change the default color and add new color choices",
+                "label": "Change Clock Theme Settings"
+            },
+			"EnabledTypes": {
+                "name": "Enabled Types",
+                "hint": "Change what sorts of progress trackers are supported",
+                "label": "Change Enabled Types"
+            },
+            "clockColors": {
+                "name": "Name",
+                "color": "Color"
+            },
+            "defaultBackgroundColor": {
+                "name": "Background Color",
+                "hint": "The color shown for clock segments that are not filled in"
+            },
+            "defaultColor": {
+                "name": "Default Clock Color",
+                "hint": "The color clocks have by base, assuming they are not of a specific clock type"
+            },
+            "location": {
+                "name": "Screen Location",
+                "hint": "Where to anchor the displayed clocks",
+                "Choices": {
+                    "topRight": "Top Right",
+                    "bottomLeft": "Above Player List"
+                }
+            },
+			"minimumEditorRole": {
+                "name": "Minimum Editor Role",
+                "hint": "Minimum role required to edit clock values"
+            },
+            "offset": {
+                "name": "Vertical Offset",
+                "hint": "Distance from the top or bottom in pixels. Used to handle module incompatibility."
+            },
+            "enabledTypes": {
+                "FIELDS": {
+                    "clocks": {
+                        "label": "Enable Clocks",
+                        "hint": "Support Blades in the Dark style pie chart progress trackers"
+                    },
+                    "points": {
+                        "label": "Enable Points",
+                        "hint": "Support uncapped numerical counters that count up"
+                    },
+                    "trackers": {
+                        "label": "Enable Trackers",
+                        "hint": "Add horizontal trackers as an alternative counter type."
+                    }
+                }
+            }
+        },
+        "Warnings": {
+            "NoActiveGM": "An Active GM must be online to use that feature"
+        }
+    }
+}

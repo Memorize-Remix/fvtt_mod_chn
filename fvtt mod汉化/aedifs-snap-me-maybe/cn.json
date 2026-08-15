@@ -1,0 +1,32 @@
+
+  "aedifs-snap-me-maybe": {
+    "settings": {
+      "shape": {
+        "name": "Token形状",
+        "hint": "token 在捕捉时应被视为什么形状。"
+      },
+      "sticky": {
+        "name": "粘滞键",
+        "hint": "启用后，使用键盘按键移动时，碰撞 token 会相互粘连，而不是闪烁或弹开。"
+      },
+      "debug": {
+        "name": "调试",
+        "hint": "显示 token 的形状轮廓。"
+      },
+      "wall-snap": {
+        "name": "墙体吸附",
+        "hint": "启用时Token将同时吸附到墙体"
+      }
+    },
+    "keybindings": {
+      "tmp": {
+        "name": "在当前图层上切换网格(全局)",
+        "hint": "短按将在全局范围内切换图层，长按则仅在当前场景中切换图层。"
+      }
+    },
+    "common": {
+      "rectangle": "矩形",
+      "circle": "圆形"
+    }
+  }
+}

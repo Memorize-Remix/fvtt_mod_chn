@@ -1,0 +1,124 @@
+{
+  "WildMagicSurge5E.opt_wms_feat_name_name": "Name of the Wild Magic Surge feat",
+  "WildMagicSurge5E.opt_wms_feat_name_hint": "If you play in another language, this enables you to set the name of the feat to your language.",
+
+  "WildMagicSurge5E.opt_toc_feat_name_name": "Name of the Tides of Chaos feat",
+  "WildMagicSurge5E.opt_toc_feat_name_hint": "If you play in another language, this enables you to set the name of the feat to your language.",
+
+  "WildMagicSurge5E.opt_powm_feat_name_name": "Name of the Path of Wild Magic feat",
+  "WildMagicSurge5E.opt_powm_feat_name_hint": "If you play in another language, this enables you to set the name of the feat to your language.",
+
+  "WildMagicSurge5E.opt_incremental_check_to_chat_name": "Send to chat",
+  "WildMagicSurge5E.opt_incremental_check_to_chat_hint": "When enabled, each time a incremental check type for a surge changes it is posted to Chat for others to see.",
+
+  "WildMagicSurge5E.opt_incremental_check_to_chat_text_name": "Wild Magic Surge Charge Count",
+
+  "WildMagicSurge5E.opt_whisper_gm_name": "Whisper Wild Magic Surge Roll Check to GM",
+  "WildMagicSurge5E.opt_whisper_gm_hint": "The surge check roll message is only sent to the GM instead of all players.",
+  
+  "WildMagicSurge5E.opt_whisper_gm_roll_chat_name": "Whisper Auto Roll Table result to GM",
+  "WildMagicSurge5E.opt_whisper_gm_roll_chat_hint": "Auto Roll Table results are only sent to the GM instead of all players.",
+
+  "WildMagicSurge5E.opt_chat_msg_name": "Message to check for surge",
+  "WildMagicSurge5E.opt_chat_msg_hint": "When automation is disabled, this message will show in chat to remind you when a spell is cast.",
+
+  "WildMagicSurge5E.opt_auto_d20_name": "Automate Wild Magic Surge",
+  "WildMagicSurge5E.opt_auto_d20_hint": "When unchecked, will ignore all other automation options in this module and only send a Chat Message to remind you to roll.",
+
+  "WildMagicSurge5E.opt_enable_spell_regex_name": "Enable Spell Filter",
+  "WildMagicSurge5E.opt_enable_spell_regex_hint": "Specify certain spells that trigger a Wild Magic Surge Check.",
+
+  "WildMagicSurge5E.opt_spell_regex_inverse_name": "Reverse Filter to exclude spells",
+  "WildMagicSurge5E.opt_spell_regex_inverse_hint": "Inverse the spell filter. Instead of triggering a Wild Magic Surge on the pattern, exclude spells that match it instead.",
+
+  "WildMagicSurge5E.opt_spell_regex_name": "Spell Filter Include Regex",
+  "WildMagicSurge5E.opt_spell_regex_hint": "The RegEx to specify what spells to include in a Wild Magic Surge Check. This assumes spells appended with (S) like 'Magic Missile (S)' will trigger a Wild Magic Surge, all other spells that do not have (S) on the end will be ignored.",
+
+  "WildMagicSurge5E.opt_auto_d20_msg_name": "Surge Chat Message Success",
+  "WildMagicSurge5E.opt_auto_d20_msg_hint": "On a Wild Magic Surge, show this message.",
+
+  "WildMagicSurge5E.opt_auto_d20_msg_no_surge_name": "Surge Chat Message Fail",
+  "WildMagicSurge5E.opt_auto_d20_msg_no_surge_hint": "On a failed auto Wild Magic Surge roll, show this message.",
+  
+  "WildMagicSurge5E.opt_auto_d20_msg_enabled_name": "Show Message",
+  "WildMagicSurge5E.opt_auto_d20_msg_enabled_hint": "Optionally enable this message to show.",
+
+  "WildMagicSurge5E.opt_enable_toc_name": "Tides of Chaos auto recharge",
+  "WildMagicSurge5E.opt_enable_toc_hint": "Enables Tides of Chaos auto recharge when a Wild Magic Surge occurs.",
+
+  "WildMagicSurge5E.opt_rolltable_enabled_name": "Auto Roll Table",
+  "WildMagicSurge5E.opt_rolltable_enabled_hint": "Enable Auto Roll on a Wild Magic Surge Table or prompt player to roll via a chat message.",
+
+  "WildMagicSurge5E.opt_rolltable_name_name": "Roll Table Name",
+  "WildMagicSurge5E.opt_rolltable_name_hint": "The Roll Table to use when rolling for the surge effect. Enter the name of the Roll Table.",
+
+  "WildMagicSurge5E.opt_rolltable_powm_name_name": "Path of Wild Magic Roll Table Name",
+  "WildMagicSurge5E.opt_rolltable_powm_name_hint": "The Roll Table to use when rolling for the Barbarian Path of Wild Magic surge effect. Enter the name of the Roll Table.",
+
+  "WildMagicSurge5E.opt_custom_roll_dice_formula_name": "Dice Formula",
+  "WildMagicSurge5E.opt_custom_roll_dice_formula_hint": "Set the dice formula you want to roll. The default is 1d20.",
+
+  "WildMagicSurge5E.opt_custom_roll_result_name": "The target result of the dice roll",
+  "WildMagicSurge5E.opt_custom_roll_result_hint": "What is the dice roll result you want to check against. For multiple value use a comma seperated value list like '1, 4, 10'.",
+
+  "WildMagicSurge5E.opt_custom_roll_result_check_name": "Roll result boolean expression",
+  "WildMagicSurge5E.opt_custom_roll_result_check_hint": "Based on the target dice roll, should the result be less/greater than or equal to the result to trigger the Wild Magic Surge.",
+
+  "WildMagicSurge5E.opt_tsl_die_name": "Default Dice Formula",
+  "WildMagicSurge5E.opt_tsl_die_hint": "Set the default dice formula you want to roll. The default is 1d20.",
+  "WildMagicSurge5E.opt_tsl_cantrip_name": "Cantrip",
+  "WildMagicSurge5E.opt_tsl_lvl1_name": "Level 1",
+  "WildMagicSurge5E.opt_tsl_lvl1_hint": "Spell Level Dependent Roll Options. Each must start with either a >, < or = followed by a space and a number OR set your own specific dice formula for each like '2d20kh = 1'.",
+  "WildMagicSurge5E.opt_tsl_lvl2_name": "Level 2",
+  "WildMagicSurge5E.opt_tsl_lvl3_name": "Level 3",
+  "WildMagicSurge5E.opt_tsl_lvl4_name": "Level 4",
+  "WildMagicSurge5E.opt_tsl_lvl5_name": "Level 5",
+  "WildMagicSurge5E.opt_tsl_lvl6_name": "Level 6",
+  "WildMagicSurge5E.opt_tsl_lvl7_name": "Level 7",
+  "WildMagicSurge5E.opt_tsl_lvl8_name": "Level 8",
+  "WildMagicSurge5E.opt_tsl_lvl9_name": "Level 9",
+  "WildMagicSurge5E.opt_tsl_lvl10_name": "Level 10",
+
+  "WildMagicSurge5E.opt_surge_type_name": "Wild Magic Surge Roll Feature",
+  "WildMagicSurge5E.opt_surge_type_hint": "Choose how you want to play, either Standard, Spell level dependent rolls, Incremental Check or Incremental Check Chaotic. Incremental Check Chaotic: For the amazingly awesome chaotic players and GMs. Instead of checking every time a spell is cast, at the start of every turn in combat, the threshold is increased by `1` for a Surge to a maximum of `10`. Once triggered the threshold is reset back to `1`. Incremental Check: Every time a spell is cast, the threshold is increased by 1 for a Surge. Once triggered the threshold is reset back to 1. Spell level dependent rolls: Wild Magic Surge triggers dependent on spell level (Set options below). Descending Dice: On no Surge roll d20,d12,d10,d8,d6 then d4 until a surge, then reset back to d20.",
+
+  "WildMagicSurge5E.opt_resource_type_name": "Set Resource to use for tracking surge type",
+  "WildMagicSurge5E.opt_resource_type_hint": "Choose which resource on the Actor character sheet to use for tracking Incremental or Descending dice. You can then add this as a resource to track on your Token. Choosing None hides the tracking from the Actor.",
+
+  "WildMagicSurge5E.opt_enable_npcs_name": "Track Wild Magic Surge for NPCs",
+  "WildMagicSurge5E.opt_enable_npcs_hint": "Enabling this setting will automate Wild Magic Surge for Non Player Characters as well as Player Characters.",
+
+  "WildMagicSurge5E.opt_enable_surge_toc_name": "Auto surge on spell use after Tides of Chaos has been used",
+  "WildMagicSurge5E.opt_enable_surge_toc_hint": "When Tides of Chaos is used, any 1st level spell and higher will trigger a surge and restore your Tides of Chaos.",
+
+  "WildMagicSurge5E.opt_enable_effects_name": "Play animation on Surge",
+  "WildMagicSurge5E.opt_enable_effects_hint": "Play an animation when a Surge happens on the token. Requires JB2A and Sequencer.",
+
+  "WildMagicSurge5E.opt_cantrip_surge_enabled_name": "Roll for surge on Cantrips",
+  "WildMagicSurge5E.opt_cantrip_surge_enabled_hint": "Standard rules are 1st Level and higher to trigger a surge. This also enables it for Cantrips.",
+  
+  "WildMagicSurge5E.opt_minimum_spell_level_trigger_name": "Set minimum Spell Level to trigger Surge",
+  "WildMagicSurge5E.opt_minimum_spell_level_trigger_hint": "Set a custom minimum level to trigger a Wild Magic Surge. For example 3 would only trigger on spells cast at level 3 or higher.",
+
+  "WildMagicSurge5E.opt_triggermacro_enabled_name": "Execute macro on a Surge",
+  "WildMagicSurge5E.opt_triggermacro_enabled_hint": "Execute a macro when a Wild Magic Surge happens.",
+
+  "WildMagicSurge5E.opt_triggermacro_name_name": "Macro name to trigger",
+  "WildMagicSurge5E.opt_triggermacro_name_hint": "Name of the macro to execute on a surge.",
+
+  "WildMagicSurge5E.opt_show_wms_debug_option_name": "Show Debug option in character sheet",
+  "WildMagicSurge5E.opt_show_wms_debug_option_hint": "Disable the Debug WMS button in the header of character sheets. This option can usually be disabled once your character is setup and working. (Requires reload).",
+
+  "WildMagicSurge5E.es_tides_of_chaos": "Tides of Chaos Wild Magic Surge",
+  "WildMagicSurge5E.es_wild_magic_surge": "Wild Magic Surge",
+  "WildMagicSurge5E.es_wild_magic_surge_with_roll": "Wild Magic Surge with Roll of",
+  "WildMagicSurge5E.es_roll_on_table": "Roll on Table",
+
+  "WildMagicSurge5E.settings_panel_spell_regex": "Include/Exclude Spell Filter",
+  "WildMagicSurge5E.settings_panel_standard_phb": "Standard PHB Variant",
+  "WildMagicSurge5E.settings_panel_spell_level_dep": "Spell Level Dependent Rolls Variant",
+  "WildMagicSurge5E.settings_panel_incremental": "Incremental Check Variant",
+  "WildMagicSurge5E.settings_panel_chat_message": "Chat Message Options",
+  "WildMagicSurge5E.configure": "Configure",
+  "WildMagicSurge5E.settings_panel_information": "Wild Magic Surge 5e Information"
+}

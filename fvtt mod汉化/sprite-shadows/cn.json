@@ -1,0 +1,134 @@
+
+  "TOKEN": {
+    "TABS": {
+      "shadows": "阴影"
+    }
+  },
+  "TILE": {
+    "TABS": {
+      "shadows": "阴影"
+    }
+  },
+  "SPRITESHADOWS": {
+    "ERRORS": {
+      "TEXTUREGEN": "无法生成阴影纹理"
+    },
+    "SETTINGS": {
+      "ADJUSTMENTS": {
+        "DRAGPOS": "点击并拖动以微调位置",
+        "DRAGSIZE": "点击并拖动以微调大小",
+        "HEIGHT": "高度",
+        "HINT": "微调阴影的位置和大小。",
+        "LABEL": "调整",
+        "WIDTH": "宽度",
+        "X": "X轴",
+        "Y": "Y轴"
+      },
+      "ALIGNMENT": {
+        "BOTTOM": "底部",
+        "CENTER": "居中",
+        "HINT": "阴影相对于其Token的对齐位置。",
+        "LABEL": "对齐方式"
+      },
+      "ALPHA": {
+        "HINT": "阴影的透明度",
+        "LABEL": "透明度"
+      },
+      "BLOB": {
+        "HINT": "一个简单的圆形阴影，放置在Token下方。",
+        "LABEL": "圆形阴影"
+      },
+      "BLOBSHAPE": {
+        "CIRCLE": "圆形",
+        "HINT": "圆形阴影的形状",
+        "LABEL": "阴影形状"
+      },
+      "BLUR": {
+        "HINT": "模糊程度",
+        "LABEL": "模糊"
+      },
+      "COLOR": {
+        "HINT": "阴影的颜色。",
+        "LABEL": "颜色"
+      },
+      "ELEVATIONADJUST": {
+        "HINT": "如果启用，将根据Token的高度移动阴影。",
+        "LABEL": "根据高度调整"
+      },
+      "ELEVATIONINCREMENT": {
+        "HINT": "根据Token高度调整阴影位置时的增量",
+        "LABEL": "高度增量"
+      },
+      "ENABLE": {
+        "HINT": "取消勾选以关闭所有精灵阴影。",
+        "LABEL": "启用精灵阴影"
+      },
+      "EXPORT": {
+        "CLIPBOARD": "复制到剪贴板",
+        "COPIED": "配置已复制到剪贴板",
+        "DIALOGMESSAGE": "复制下方文本",
+        "DOWNLOAD": "下载JSON",
+        "HINT": "导出JSON配置",
+        "LABEL": "导出配置"
+      },
+      "IGNORESAADJUSTMENTS": {
+        "HINT": "如果启用，将忽略Sprite Animations模组配置的网格调整。",
+        "LABEL": "忽略Sprite Animations调整"
+      },
+      "IMPORT": {
+        "CLIPBOARD": "从剪贴板导入",
+        "DIALOGMESSAGE": "在下方粘贴JSON",
+        "HINT": "导入JSON配置",
+        "LABEL": "导入配置",
+        "PASTED": "已从剪贴板读取配置",
+        "UPLOAD": "上传JSON"
+      },
+      "LIFTTOKEN": {
+        "HINT": "启用后，如果同时启用了“根据高度调整”，将移动Token而非阴影。",
+        "LABEL": "提升Token"
+      },
+      "LOADFROMACTOR": {
+        "HINT": "从此Token的角色加载当前设置",
+        "LABEL": "从角色加载"
+      },
+      "LOADFROMTOKEN": {
+        "HINT": "从此Token加载当前设置",
+        "LABEL": "从Token加载"
+      },
+      "ROTATION": {
+        "HINT": "旋转阴影的角度",
+        "LABEL": "旋转"
+      },
+      "SKEW": {
+        "HINT": "倾斜阴影的程度，用于模拟投影角度。",
+        "LABEL": "倾斜量"
+      },
+      "STENCIL": {
+        "HINT": "基于Token纹理的伪3D阴影。",
+        "LABEL": "模板阴影"
+      },
+      "STENCILIMAGE": {
+        "HINT": "用于模板阴影形状的图像。",
+        "LABEL": "图像"
+      },
+      "TOKENOVERRIDE": {
+        "HINT": "如果启用，将在此Token上直接存储阴影设置，而非角色。",
+        "LABEL": "使用Token覆盖"
+      },
+      "TOOLTIPS": {
+        "EXPORT": "将当前配置导出为JSON",
+        "IMPORT": "导入JSON配置"
+      },
+      "TYPE": {
+        "BLOB": "圆形",
+        "HINT": "在圆形和模板阴影之间切换",
+        "LABEL": "阴影类型",
+        "STENCIL": "模板"
+      },
+      "USEIMAGE": {
+        "HINT": "配置后，将使用单独的图像作为模板阴影的形状。\n注意：如果你正在使用<a href='https://foundryvtt.com/packages/sprite-animations'>Sprite Animations</a>模组，此设置将禁用与其的集成。",
+        "LABEL": "使用图像作为形状"
+      }
+    }
+  }
+}

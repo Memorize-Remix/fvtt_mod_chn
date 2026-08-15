@@ -1,0 +1,47 @@
+
+	"dnd5e-animations": {
+		"updateMenu": {
+			"deleted": "以下效果将从先前版本的 'D&D5e Animations' 中删除。",
+			"added": "以下效果将被添加到你的自动识别设置中。",
+			"custom": "以下效果不会被添加，因为它们已存在于未知来源中。",
+			"customHint": "如果你想要 'D&D5e Animations' 版本，请从你的自动识别菜单中删除它们。",
+			"updated": "以下效果将从先前版本的 'D&D5e Animations'（或Automated Animations的默认菜单）中更新。",
+			"nothing": "未找到更新。",
+			"blacklisted": "以下效果已被列入黑名单，并将从你的自动识别菜单中移除。",
+			"warning": "请确保备份你的自动识别菜单！此过程不可逆。",
+			"debugCustom": "以下效果不存在于 D&D5e Animations 中，它们是完全新的，并将保留在你的自动识别菜单中。"
+		},
+		"notifications": {
+			"update": "D&D5e Animations v{version} 已加载。请检查是否有新的动画需要添加到你的自动识别菜单中！",
+			
+			"unevenGrid": "你的场景网格不均匀({grid}px)。这可能会导致目标位置偏移！",
+			"gridless": "建议仅在基于网格的场景中使用十字准线。无网格场景可能会导致问题。",
+			"wrongVersion": "你缺少 <b>{modules}</b>，导致 D&D5e Animations 无法完全运行！请更新列出的模组！",
+			"noDependencies": "你缺少 <b>{modules}</b>，导致 D&D5e Animations 无法完全运行！请启用列出的模组！",
+			"noJB2A": "你需要启用 <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A 模组</a> 才能与 D&D5e Animations 模组一起使用！",
+			"noToken": "未找到源token。",
+			"noDummy": "缺少用于召唤宏的虚拟角色。",
+			"creatingDummy": " 正在创建虚拟NPC… ",
+			"outOfRange": "目标超出范围。",
+			"noPack": "找不到 'pf2e-jb2a-macros.Actions' 合集？",
+			"tooManyArgs": "此宏的参数过多！以下参数不兼容：{issues}",
+			"noPrem": "你缺少 <a href='https://www.patreon.com/JB2A/membership'>JB2A 资产的付费版本</a> 来使用此动画！",
+			"metaData": "此动画在更新时将被替换。如果你不希望它被替换，最好的方法是暂时将其 <b>动画</b> 或 <b>变体</b> 更改为其他内容，或在设置中启用调试模式并再次按下元数据按钮。"
+		
+		},
+		"settings": {
+			"autoUpdate": {
+				"name": "在模组更新时打开更新菜单",
+				"hint": "当模组更新时，自动打开自动识别更新菜单。"
+			},
+			"debug": {
+				"name": "调试模式",
+				"hint": "启用 D&D5e Animations 模组的控制台日志，显示其正在执行的操作。"
+			},
+			"autorecUpdate": {
+				"name": "动画更新",
+				"label": "更新菜单"
+			}
+		}
+	}
+}

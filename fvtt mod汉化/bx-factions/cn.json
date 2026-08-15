@@ -1,0 +1,262 @@
+
+  "TYPES.JournalEntryPage.bx-factions": {
+    "faction": "派系",
+    "roomKey": "地牢房间钥匙",
+    "characterClass": "角色职业 (OSE)",
+    "levelOverview": "地牢层级概览"
+  },
+  "FACTIONS": {
+    "settings": {
+      "useFactionRepModifiers": {
+        "label": "使用派系声望调整",
+        "hint": "启用与名声/恶名追踪相关的反应调整的UI元素显示和控件。"
+      },
+      "useFactionMorality": {
+        "label": "使用派系道德观",
+        "hint": "启用与派系道德观（善良/中立/邪恶）相关的UI元素显示和控件。"
+      }
+    },
+    "templates": {
+      "faction": {
+        "sheetName": "派系表",
+        "name": "名称",
+        "reputation": {
+          "label": "玩家声望",
+          "fame": "名声",
+          "infamy": "恶名",
+          "modifier": "反应调整"
+        },
+        "alignment": {
+          "heading": "派系阵营",
+          "labelAlignment": "阵营",
+          "labelMorality": "道德观",
+          "lawful": "守序",
+          "neutral": "中立",
+          "chaotic": "混乱",
+          "good": "善良",
+          "evil": "邪恶",
+          "trueNeutral": "绝对中立",
+          "unaligned": "无阵营"
+        },
+        "goals": "目标",
+        "territory": "领地和领土",
+        "resources": "资源",
+        "relationships": "与其他派系的关系",
+        "description": "描述",
+        "notes": "备注",
+        "members": {
+          "label": "成员资格",
+          "notable": "知名人物",
+          "others": "成员",
+          "reinforcements": "增援程序"
+        },
+        "edit": {
+          "tabs": {
+            "notes": "备注",
+            "information": "详细信息",
+            "resources": "领土/资源",
+            "relationships": "关系/队伍声望",
+            "membership": "成员资格"
+          }
+        },
+        "empty": {
+          "goals": "此派系没有记录的目标",
+          "territory": "此派系没有记录的领土",
+          "relationships": "此派系没有记录的关系",
+          "notes": "此派系没有记录的备注",
+          "resources": "此派系没有记录的资源",
+          "notables": {
+            "view": "此派系没有知名人物",
+            "edit": "此派系没有知名人物。拖动角色来添加到这个派系"
+          },
+          "members": {
+            "view": "此派系没有成员",
+            "edit": "此派系没有成员。拖动角色来添加到这个派系"
+          }
+        }
+      },
+      "roomKey": {
+        "sheetName": "房间钥匙表",
+        "description": "描述",
+        "secrets": "秘密",
+        "traps": "陷阱",
+        "treasure": "宝藏",
+        "treasureNotes": "备注",
+        "inhabitants": "居民",
+        "inhabitantNotes": "备注",
+        "edit": {
+          "tabs": {
+            "description": "描述",
+            "inhabitants": "居民",
+            "treasure": "宝藏",
+            "secrets": "秘密"
+          }
+        },
+        "empty": {
+          "description": "此房间没有描述",
+          "secrets": "此房间没有秘密",
+          "traps": "此房间没有陷阱",
+          "treasure": {
+            "view": "此房间没有宝藏",
+            "edit": "此房间没有宝藏。拖动物品来添加到这个房间"
+          },
+          "inhabitants": {
+            "view": "此房间没有居民",
+            "edit": "此房间没有居民。拖动角色来添加到这个房间"
+          }
+        }
+      },
+      "levelOverview": {
+        "sheetName": "地牢层级概览表",
+        "access": {
+          "from": "从",
+          "to": "到",
+          "notes": "备注",
+          "delete": "删除入口点",
+          "add": "添加入口点"
+        },
+        "notable": {
+          "npcs": "知名NPC",
+          "factions": "派系"
+        },
+        "frequency": {
+          "turns": "回合",
+          "minutes": "分钟",
+          "hours": "小时"
+        },
+        "grouping": {
+          "rooms": "按房间",
+          "regions": "区域",
+          "fullLevel": "全层级"
+        },
+        "encounters": {
+          "groupType": "类型",
+          "locations": "位置",
+          "rooms": "房间",
+          "regions": "区域",
+          "frequency": {
+            "label": "频率",
+            "every": "每",
+            "XinY": "在",
+            "chance": "几率"
+          },
+          "formula": "公式",
+          "table": "掷骰表",
+          "notes": "备注",
+          "add": "添加遭遇表"
+        },
+        "regions": {
+          "name": "名称",
+          "rooms": "房间",
+          "add": "添加区域"
+        },
+        "edit": {
+          "tabs": {
+            "description": "描述",
+            "access": "入口",
+            "regions": "区域",
+            "encounters": "随机遭遇",
+            "notables": "NPC/派系"
+          }
+        },
+        "empty": {
+          "access": {
+            "edit": "此层级没有列出的入口点。点击\"添加入口点\"按钮来添加一个！"
+          },
+          "encounters": {
+            "edit": "此层级没有遭遇表。点击\"添加遭遇表\"按钮来添加一个！"
+          },
+          "regions": {
+            "edit": "此层级没有列出的区域。点击\"添加区域\"按钮来添加一个！"
+          },
+          "notable": {
+            "npcs": {
+              "view": "此层级没有知名NPC。",
+              "edit": "此层级没有知名NPC。拖动角色来添加到这个层级"
+            },
+            "factions": {
+              "view": "此层级没有激活的派系。",
+              "edit": "此层级没有激活的派系。拖动派系日志页面到这里来添加到这个层级。"
+            }
+          }
+        }
+      },
+      "characterClass": {
+        "sheetName": "角色职业表",
+        "hitDieSize": "生命骰",
+        "maxLevel": "最高等级",
+        "armor": "护甲",
+        "weapons": "武器",
+        "languages": "语言",
+        "restrictions": "限制",
+        "gearTable": "装备表",
+        "prerequisites": "先决条件",
+        "primerequisites": {
+          "label": "主要属性要求",
+          "half": "主要属性要求 (5%)",
+          "full": "主要属性要求 (10%)",
+          "inclusive": "和",
+          "exclusive": "或"
+        },
+        "spellLevel": "环阶 {level}",
+        "advancement": {
+          "level": "等级",
+          "xp": "经验值",
+          "hd": "生命骰",
+          "thac0": "THAC0",
+          "saves": "豁免",
+          "caption": {
+            "conMod": "体质调整不再适用"
+          },
+          "conMod": "体质调整？",
+          "add": "添加等级",
+          "remove": "移除最后等级"
+        },
+        "resources": {
+          "category": {
+            "label": "类别",
+            "add": "添加资源类别",
+            "remove": "移除资源类别"
+          },
+          "pool": {
+            "label": "资源",
+            "add": "添加资源",
+            "remove": "移除资源"
+          }
+        },
+        "edit": {
+          "tabs": {
+            "description": "描述",
+            "information": "职业详情",
+            "xp": "升级",
+            "resources": "资源",
+            "spellList": "法术列表",
+            "features": "职业特性"
+          }
+        },
+        "empty": {
+          "gearTable": "未分配",
+          "secrets": "此房间没有秘密",
+          "traps": "此房间没有陷阱",
+          "advancement": "未添加等级",
+          "armor": "无",
+          "weapons": "无",
+          "languages": "无",
+          "spellList": {
+            "all": "此职业没有法术。拖动能力来添加到这个职业",
+            "atLevel": "此职业没有此环阶的法术"
+          },
+          "features": {
+            "view": "此职业没有特性",
+            "edit": "此职业没有特性。拖动能力来添加到这个职业"
+          },
+          "resources": {
+            "category": "未添加资源类别",
+            "pool": "此类别中没有资源"
+          },
+          "primerequisite": "无"
+        }
+      }
+    }
+  }
+}

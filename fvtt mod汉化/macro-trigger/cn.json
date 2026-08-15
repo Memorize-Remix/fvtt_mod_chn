@@ -1,0 +1,224 @@
+
+  "macro-trigger": {
+    "title": "宏触发器",
+    "manager": {
+      "title": "宏事件管理",
+      "createEvent": "创建事件",
+      "createFirstEvent": "创建你的第一个事件",
+      "noEventsYet": "尚无事件。",
+      "table": {
+        "name": "名称",
+        "macroId": "宏ID",
+        "events": "事件",
+        "actions": "操作"
+      },
+      "buttons": {
+        "view": "查看事件",
+        "edit": "编辑事件",
+        "delete": "删除事件"
+      },
+      "dialog": {
+        "createEvent": {
+          "title": "创建新事件",
+          "name": "事件名称",
+          "macroId": "宏ID",
+          "events": "事件类型",
+          "selectEvent": "选择事件类型",
+          "eventDescription": "事件描述",
+          "save": "保存",
+          "cancel": "取消"
+        },
+        "validation": {
+          "requiredFields": "以下字段为必填项: {fields}",
+          "fieldNames": {
+            "eventName": "事件名称",
+            "macroId": "宏ID",
+            "eventType": "事件类型"
+          }
+        },
+        "eventTypes": {
+          "setup": {
+            "name": "初始化",
+            "description": "在初始化后，系统和模组准备就绪时触发。"
+          },
+          "ready": {
+            "name": "就绪",
+            "description": "最终初始化hook，世界准备就绪可使用。"
+          },
+          "preCreateActor": {
+            "name": "创建角色前",
+            "description": "在创建角色之前。"
+          },
+          "createActor": {
+            "name": "创建角色",
+            "description": "在创建角色之后。"
+          },
+          "updateActor": {
+            "name": "更新角色",
+            "description": "当更新角色数据时。"
+          },
+          "deleteActor": {
+            "name": "删除角色",
+            "description": "在删除角色之后。"
+          },
+          "preCreateItem": {
+            "name": "创建物品前",
+            "description": "在创建物品之前。"
+          },
+          "createItem": {
+            "name": "创建物品",
+            "description": "在创建物品之后。"
+          },
+          "updateItem": {
+            "name": "更新物品",
+            "description": "当更新物品数据时。"
+          },
+          "deleteItem": {
+            "name": "删除物品",
+            "description": "在删除物品之后。"
+          },
+          "preCreateToken": {
+            "name": "创建Token前",
+            "description": "在创建Token之前。"
+          },
+          "createToken": {
+            "name": "创建Token",
+            "description": "在创建Token之后。"
+          },
+          "updateToken": {
+            "name": "更新Token",
+            "description": "当更新Token数据时。"
+          },
+          "deleteToken": {
+            "name": "删除Token",
+            "description": "在删除Token之后。"
+          },
+          "preCreateScene": {
+            "name": "创建场景前",
+            "description": "在创建场景之前。"
+          },
+          "createScene": {
+            "name": "创建场景",
+            "description": "在创建场景之后。"
+          },
+          "updateScene": {
+            "name": "更新场景",
+            "description": "当更新场景数据时。"
+          },
+          "deleteScene": {
+            "name": "删除场景",
+            "description": "在删除场景之后。"
+          },
+          "preCreateCombat": {
+            "name": "创建战斗前",
+            "description": "在创建战斗之前。"
+          },
+          "createCombat": {
+            "name": "创建战斗",
+            "description": "在创建战斗之后。"
+          },
+          "updateCombat": {
+            "name": "更新战斗",
+            "description": "当更新战斗数据时。"
+          },
+          "deleteCombat": {
+            "name": "删除战斗",
+            "description": "在删除战斗之后。"
+          },
+          "renderChatMessage": {
+            "name": "渲染聊天消息",
+            "description": "当聊天消息被渲染时。"
+          },
+          "chatMessage": {
+            "name": "聊天消息",
+            "description": "当发送聊天消息时。"
+          },
+          "preCreateChatMessage": {
+            "name": "创建聊天消息前",
+            "description": "在创建聊天消息之前。"
+          },
+          "createChatMessage": {
+            "name": "创建聊天消息",
+            "description": "在创建聊天消息之后。"
+          },
+          "controlToken": {
+            "name": "控制Token",
+            "description": "当Token被控制/取消控制时。"
+          },
+          "hoverToken": {
+            "name": "悬停Token",
+            "description": "当悬停在Token上时。"
+          },
+          "targetToken": {
+            "name": "选择目标Token",
+            "description": "当选择或取消选择Token为目标时。"
+          },
+          "preUpdateToken": {
+            "name": "更新Token前",
+            "description": "在移动/更新Token之前。"
+          },
+          "canvasReady": {
+            "name": "地图就绪",
+            "description": "当画布（地图）准备就绪时。"
+          },
+          "combatStart": {
+            "name": "战斗开始",
+            "description": "当战斗开始时。"
+          },
+          "combatRound": {
+            "name": "战斗轮改变",
+            "description": "当战斗轮改变时。"
+          },
+          "combatTurn": {
+            "name": "战斗回合改变",
+            "description": "当战斗回合改变时。"
+          },
+          "renderActorSheet": {
+            "name": "渲染角色表",
+            "description": "当角色表被渲染时。"
+          },
+          "renderItemSheet": {
+            "name": "渲染物品表",
+            "description": "当物品表被渲染时。"
+          },
+          "renderSceneControls": {
+            "name": "渲染场景控制",
+            "description": "当场景控制被渲染时。"
+          },
+          "renderJournalSheet": {
+            "name": "渲染日志表",
+            "description": "当日志表被渲染时。"
+          }
+        },
+        "viewEvent": {
+          "title": "查看事件",
+          "close": "关闭"
+        },
+        "editEvent": {
+          "title": "编辑事件",
+          "save": "保存更改",
+          "cancel": "取消"
+        },
+        "deleteEvent": {
+          "title": "删除事件",
+          "confirmation": "确定要删除此事件吗？",
+          "warning": "此操作无法撤销！",
+          "delete": "删除",
+          "cancel": "取消"
+        }
+      },
+      "notifications": {
+        "eventCreated": "事件创建成功！",
+        "eventCreateFailed": "创建事件失败",
+        "eventUpdated": "事件更新成功！",
+        "eventUpdateFailed": "更新事件失败",
+        "eventDeleted": "事件删除成功！",
+        "eventDeleteFailed": "删除事件失败！",
+        "eventNotFound": "事件未找到！"
+      }
+    },
+    "notifications": {
+      "gmRequired": "你需要是GM才能使用此功能"
+    }
+  }
+}

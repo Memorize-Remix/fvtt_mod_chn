@@ -1,0 +1,63 @@
+
+    "theripper-premium-hub": {
+        "settings": {
+            "autoCheck": {
+                "name": "启动时检查更新",
+                "hint": "在世界加载时自动检查93的订阅模组是否有更新。"
+            },
+            "checkDisabled": {
+                "name": "检查未启用的模组",
+                "hint": "检查已安装但未启用的模组的更新。"
+            }
+        },
+        "tweaks-menu": {
+            "title": "调整",
+            "label": "配置调整",
+            "hint": "配置一些生活质量功能，例如启动宏、清除标题按钮和 CSS 调整。",
+            "tabs": {
+                "misc": "杂项",
+                "startup-macros": "启动宏",
+                "css-tweaks": "CSS 调整"
+            },
+            "initMacros": {
+                "name": "启动宏",
+                "hint": "在世界加载时执行宏。宏按此处列出的顺序执行。"
+            },
+            "readyMacros": {
+                "name": "准备宏",
+                "hint": "在客户端准备就绪时执行宏。宏按此处列出的顺序执行。"
+            },
+            "cssTweak": {
+                "name": "CSS 调整",
+                "hint": "编写自定义 CSS 以修改 Foundry 或模组的样式。提供了三个字段用于组织，但您也可以只使用一个字段。"
+            },
+            "cleanHeaderButtons": {
+                "name": "清除标题按钮",
+                "hint": "移除标题按钮中的文字以使其更简洁。如果您使用了许多93的模组，可能会在窗口标题中出现大量按钮，此选项将移除其中的文字。（需要 LibWrapper）"
+            },
+            "compactSidebar": {
+                "name": "紧凑侧边栏",
+                "hint": "使侧边栏条目更小，以便在屏幕上容纳更多项目。"
+            },
+            "enableSettingsSwap": {
+                "name": "强制客户端设置",
+                "hint": "启用将世界设置更改为客户端设置的功能。这将强制所有客户端使用选定的设置，玩家也将无法再看到这些设置。"
+            },
+            "diceTray": {
+                "name": "Dice Tray",
+                "hint": "在聊天中添加一个骰子托盘。这将允许您掷骰并修改它们。"
+            },
+            "autoRotate": {
+                "name": "自动旋转",
+                "hint": "自动旋转 Token 以面向移动方向和目标 Token。",
+                "none": "禁用",
+                "defaultOn": "启用（默认开启）",
+                "defaultOff": "启用（默认关闭）",
+                "on": "启用",
+                "off": "禁用",
+                "default": "默认"
+            }
+        },
+        "wtcNotification": "{setting} 的配置已设置为 {value}。请重新加载游戏以使更改生效。在下次重新加载之前，设置的更改不会保存。"
+    }
+}

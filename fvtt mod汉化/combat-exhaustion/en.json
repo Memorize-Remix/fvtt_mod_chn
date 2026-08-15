@@ -1,0 +1,80 @@
+{
+  "combat-exhaustion": {
+    "settings": {
+      "exhaustionMode": {
+        "name": "When Is Exhaustion Applied?",
+        "hint": "Controls when the exhaustion trigger fires. 'After Combat' queues exhaustion until combat ends; all other modes apply it immediately.",
+        "choices": {
+          "afterCombat": "After Combat (Queued)",
+          "duringCombat": "During Combat Only (Immediately)",
+          "always": "Always (Immediately)"
+        }
+      },
+      "exhaustOnFirstDeathFail": {
+        "name": "Trigger on First Death Save Failure",
+        "hint": "When enabled, exhaustion triggers on the first failed death save instead of when the character gets back up."
+      },
+      "saveMode": {
+        "name": "Require a Save to Avoid Exhaustion",
+        "hint": "Roll to avoid exhaustion when the trigger fires. CON Save uses the character's Constitution modifier; Flat d20 is an unmodified die roll.",
+        "choices": {
+          "disabled": "Disabled",
+          "conSave": "CON Save",
+          "flatD20": "Flat d20 (No Modifiers)"
+        }
+      },
+      "baseSaveDC": {
+        "name": "Base Save DC",
+        "hint": "Base DC for the save roll. In After Combat mode, increases by 1 per down (e.g. 3 downs = DC 13 at base 10). Set to 0 to disable combat exhaustion triggers."
+      },
+      "afterCombatCheckMode": {
+        "name": "After Combat: Exhaustion Mode",
+        "hint": "Only applies when 'After Combat' is selected above. Choose whether exhaustion is applied without a roll, with a save for a single level, or with a save for all stacked levels.",
+        "choices": {
+          "disabled": "No Save \u2014 All Exhaustions",
+          "singleExhaustion": "Save \u2014 Single Exhaustion",
+          "stackedExhaustion": "Save \u2014 Stacked Exhaustion"
+        }
+      },
+      "enableLongRestQuality": {
+        "name": "Enable Long Rest Quality",
+        "hint": "When enabled, the GM is prompted to choose a rest quality tier at the start of each long rest, determining how much exhaustion is recovered. Requires a reload."
+      },
+      "exhaustionOverrideSwap": {
+        "name": "Swap Exhaustion Ruleset",
+        "hint": "Flips exhaustion to the opposite ruleset. 2014 rules \u2192 applies 2024 mechanics. 2024 rules \u2192 applies 2014 mechanics. Requires a reload."
+      }
+    },
+    "ui": {
+      "exhaustion2014": "Exhaustion (2014)",
+      "exhaustion2024": "Exhausted (2024)"
+    },
+    "rest": {
+      "dialogTitle": "Long Rest Quality",
+      "restTypeHeader": "Rest Type",
+      "playersHeader": "Players",
+      "restQualityHeader": "Rest Quality",
+      "exhaustionSuffix": "exhaustion",
+      "confirm": "Confirm",
+      "cancelRest": "Cancel Rest",
+      "tiers": {
+        "standard": {
+          "label": "Standard Rest",
+          "description": "Rough sleeping, camping, or a basic tavern."
+        },
+        "quality": {
+          "label": "Comfortable Rest",
+          "description": "A private room at a good inn or similarly comfortable lodging."
+        },
+        "luxury": {
+          "label": "Luxury Rest",
+          "description": "A luxury suite at a fine inn, bathhouse, or accommodations with exceptional comfort and care."
+        }
+      }
+    },
+    "notifications": {
+      "exhaustionGained": "{name} has gained {count} level{s} of exhaustion. ({prev} \u2192 {next})",
+      "exhaustionRecovered": "{name} has recovered {count} level{s} of exhaustion. ({prev} \u2192 {next})"
+    }
+  }
+}

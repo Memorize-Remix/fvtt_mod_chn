@@ -1,0 +1,24 @@
+{
+  "bsa-dnd5e": {
+    "tests": {
+      "toolTest": {
+        "info": {
+          "label": "Tool Test",
+          "hint": "Tool check of the current actor"
+        }
+      }
+    },
+    "settings": {
+      "toolButton": {
+        "name": "Configure tools available",
+        "hint": "Configure list of tools that are available in tool dropdown when choosing ToolsTest",
+        "label": "configure"
+      }
+    },
+    "tool-config": {
+      "title": "Tool Config",
+      "dropItem": "drop tool",
+      "warn": "Be warned if you manipulate items from this list it might reduce your compatibility to imported/exported tests customized with your tool. Also ff you delete tools customized Test configured with this tool will break. E.g. if you use beavers crafting recipes may not work anymore when the tool it was configured for is not available."
+    }
+  }
+}

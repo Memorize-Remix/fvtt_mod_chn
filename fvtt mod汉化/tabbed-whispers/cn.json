@@ -1,0 +1,76 @@
+
+    "TABBED_WHISPERS": {
+        "SETTINGS": {
+            "SplitICAndOOC": {
+                "Name": "划分角色和超游信息？(默认值)",
+                "NameUser": "划分角色和超游信息？",
+                "Hint": "激活以创建专用的 IC 和 OOC 标签"
+            },
+            "ForceMessageToTab": {
+                "Name": "强制在当前标签页中发送信息？(默认值)",
+                "NameUser": "强制在当前标签页中发送信息？",
+                "Hint": "在 IC 标签中将信息转为 IC，在 OOC 标签中将信息转为 OOC，在私聊主题中将信息转为私聊"
+            },
+            "AddRollsTab": {
+                "Name": "为掷骰添加特定标签页？(默认值)",
+                "NameUser": "为掷骰添加特定标签页？",
+                "Hint": "激活此选项可将所有掷骰发送到这个新标签页，并防止它们出现在任何其他标签页中（私聊除外）"
+            },
+            "HideInStreamView": {
+                "Name": "是否应该禁用 FVTT /stream 视图中的Tabbed Chatlog？",
+                "Hint": "默认为 True"
+            },
+            "PerScene": {
+                "Name": "每个场景的'角色'和'掷骰'信息是否应该分开？(默认值)",
+                "NameUser": "每个场景的'角色'和'掷骰'信息是否应该分开？",
+                "Hint": "'角色'和'掷骰'标签页中的消息在不是来自当前场景时将被隐藏"
+            },
+            "AutoNavigate": {
+                "Name": "新信息是否应该自动切换到相应的标签页？(默认值)",
+                "NameUser": "新信息是否应该自动切换到相应的标签页？",
+                "Hint": "发送和接收的消息将更改当前查看的标签页以强制显示消息"
+            },
+            "HideWhispersInMainTabs": {
+                "Name": "在'角色'和'超游'标签中隐藏私聊？(默认值)",
+                "NameUser": "在'角色'和'超游'标签中隐藏私聊？",
+                "Hint": "仅在其专用线程中显示私聊"
+            },
+			"FilterByTabsInChatNotifications": {
+				"Name": "在聊天通知中按标签过滤消息（聊天日志关闭时）？（默认值）",
+				"NameUser": "在聊天通知中按标签过滤消息（聊天日志关闭时）？",
+				"Hint": "如果取消勾选，所有消息都会显示在聊天通知中"
+			}
+        },
+        "TABS": {
+            "IC": "角色",
+            "OOC": "超游",
+            "Rolls": "掷骰",
+            "Whisper": "私聊",
+            "ALL": "聊天"
+        },
+        "WHISPER_CONFIG": {
+            "Title": "私聊主题配置",
+            "NameField": "主题名称:",
+            "SelectUsers": "选择用户:",
+            "SelectUsersEdit": "选定用户(不可编辑):",
+            "NoCharacter": "无角色",
+            "GMTag": "[GM]"
+        },
+        "DIALOG": {
+            "FlushWarning": "当前聊天标签页中的所有信息都将被永久删除。"
+        },
+        "BUTTONS": {
+            "AddWhisperTab": "添加新的私聊主题",
+            "EditWhisperTab": "编辑选定的私聊主题",
+            "DeleteWhisperTab": "删除选定的私聊主题"
+        },
+        "MESSAGE_LINK": {
+            "Title": "在私聊主题中打开",
+            "SelfChat": "自我聊天",
+            "ChatWith": "与{nameList}聊天"
+        },
+        "SETTINGS_APP": {
+            "Title": "聊天标签设置"
+        }
+    }
+}

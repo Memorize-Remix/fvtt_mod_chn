@@ -1,0 +1,294 @@
+{
+	"CLT": {
+		"Trigger": "Trigger",
+		"ENHANCED_CONDITIONS": {
+			"OutputChatConfirm": {
+				"Title": "Enable Output to Chat for All Conditions?",
+				"Content": "Click 'Yes' to enable 'Output to Chat' on all Conditions"
+			},
+			"ConditionLab": {
+				"NoReference": "--No Reference Entry-- (Drag a Document into this field to set)",
+				"FilterInputTitle": "Filter by Name",
+				"FilterButtonTitle": "Apply Filter",
+				"SortAnchorTitle": {
+					"asc": "A to Z",
+					"desc": "Z to A",
+					"unsorted": "Unsorted"
+				},
+				"SortDirectionSave": {
+					"Title": "Save Mapping with Sort Direction?",
+					"Content": "<p>Click 'Yes' to save the Condition Lab map with the current sort direction. Click 'No' to cancel Saving.</p>",
+					"CheckboxText": "Don't show this again"
+				},
+				"BadReference": "Could not build a link to the dropped content (actor, item, journal etc)",
+				"RestoreDefaultClearCache": {
+					"CheckboxText": "Clear cache"
+				},
+				"Buttons": {
+					"Options": "Options"
+				}
+			},
+			"ChatCard": {
+				"Heading": "Condition Changes",
+				"HeadingActive": "Active Conditions",
+				"Title": {
+					"Active": "Active Conditions",
+					"Added": "Added Conditions",
+					"Removed": "Removed Conditions"
+				},
+				"Buttons": {
+					"Undo": "Undo Remove Condition",
+					"Remove": "Remove Condition"
+				}
+			},
+			"MacroConfig": {
+				"Title": "Macro Configuration",
+				"Heading": "Macros to Execute",
+				"ApplyHeading": "Apply Macro",
+				"RemoveHeading": "Remove Macro",
+				"Description": "Select a macro to execute when this condition is added to or removed from a token/actor",
+				"NoTriggerSet": "--No Trigger Set--",
+				"SelectNone": "--No Macro--"
+			},
+			"TriggerConfig": {
+				"Title": "Trigger Configuration",
+				"Heading": "Triggers",
+				"ApplyHeading": "Apply Trigger",
+				"RemoveHeading": "Remove Trigger",
+				"Description": "Triggers that Apply or Remove this Condition",
+				"SelectNone": "--No Trigger--"
+			},
+			"OptionConfig": {
+				"Title": "Option Configuration",
+				"Heading": "Options",
+				"Description": "General options for this Condition",
+				"SpecialStatusEffects": {
+					"Heading": "Special Status Effects",
+					"Description": "Special Effects applied using native Foundry functionality."
+				},
+				"BlindToken": {
+					"Label": "Blind Token",
+					"Notes": "When applied, this Condition will also cause the token to be blinded"
+				},
+				"MarkInvisible": {
+					"Label": "Mark Invisible",
+					"Notes": "When applied, this Condition will cause the affected Token to marked as Invisible"
+				},
+				"SpecialStatusEffectOverride": {
+					"Title": "Override Existing Condition for this Status Effect?",
+					"Content": "Another Condition ({existingCondition}) is already setup to apply this special Status Effect: {statusEffect}. <p>If you click 'Yes' and Save this Condition's Options you will override that existing mapping.</p>"
+				},
+				"SaveNote": "Note: Clicking Save will Save Condition Lab Mapping"
+			},
+			"Warnings": {
+				"ApplyCondition": "applyCondition was replaced with addCondition. Please update your code."
+			},
+			"MapMismatch": "This map does not match your game system and may not work as expected.",
+			"ApplyCondition": {
+				"Failed": {
+					"NoToken": "Apply Condition failed. No token provided",
+					"NoCondition": "Apply Condition failed. Could not find condition:",
+					"NoIcon": "Apply Condition failed. Could not find icon.",
+					"AlreadyActive": "is already active. Apply Condition failed"
+				}
+			},
+			"GetConditions": {
+				"Failed": {
+					"NoToken": "Get Conditions failed. No entity provided and none could be found automatically",
+					"NoCondition": "Get Conditions failed. No Condition Map found",
+					"NoResults": "Get Conditions failed. No Conditions found on Actor/Token"
+				}
+			},
+			"RemoveCondition": {
+				"Failed": {
+					"NoToken": "Remove Condition failed. No token provided",
+					"NoCondition": "Remove Condition failed. Could not find condition with name:",
+					"NoIcon": "Remove Condition failed. Could not find icon",
+					"NotActive": "is not active on token. Remove Condition failed."
+				}
+			},
+			"RemoveAllConditions": {
+				"Failed": {
+					"NoToken": "Remove Conditions failed. No token/s provided",
+					"NoCondition": "Remove Conditions failed. There is no active Condition Map"
+				}
+			},
+			"Lab": {
+				"Title": "Condition Lab",
+				"Hint": "Provides the ability to map Conditions to Status Effect icons",
+				"MappingType": {
+					"Label": "Mapping Type",
+					"Unsaved": "(unsaved changes)"
+				},
+				"ActiveEffects": {
+					"Title": "Active Effect Config",
+					"TitleDisabledNew": "Save Mapping First",
+					"TitleDisabledDefault": "Cannot Edit Default Mapping"
+				},
+				"Import": {
+					"NoFile": "You did not upload a data file!"
+				},
+				"ConfirmDeleteTitle": "Confirm Row Deletion",
+				"ConfirmDeleteContent": "Are you sure you want to delete this row?",
+				"RestoreDefaultsTitle": "Restore Defaults?",
+				"RestoreDefaultsContent": "<p>Are you sure you want to restore this mapping to defaults?</p><strong>If you save, this change will be permanent.</strong>",
+				"ResetFormTitle": "Reset Form?",
+				"ResetFormContent": "<p>Are you sure you want to reset the form?</p><p><strong>You will lose any unsaved changes.</strong></p>",
+				"SaveFailed": "Condition Lab failed to Save and Close",
+				"SaveSuccess": "Condition Lab mapping saved!",
+				"ImportTitle": "Import Condition Map",
+				"ExportTitle": "Export Condition Map",
+				"Options": {
+					"Title": "Options:",
+					"Overlay.Label": "Overlay",
+					"RemoveOthers.Label": "Remove Others",
+					"OutputChat.Label": "Output to Chat",
+					"MarkDefeated.Label": "Mark Defeated",
+					"Overlay.Title": "Condition is an overlay",
+					"RemoveOthers.Title": "Remove other conditions when this one is applied",
+					"MarkDefeated.Title": "Mark matching combatants defeated when this condition is applied",
+					"OutputChat.Title": "Output this condition to chat when added/removed"
+				}
+			}
+		},
+		"GAME_SYSTEMS": {
+			"other": "Other",
+			"custom": "Custom/Other",
+			"unknown": "--Unknown--"
+		},
+		"KEYBINDINGS": {
+			"openConditionLab": {
+				"name": "Open Condition Lab"
+			},
+			"openTriggler": {
+				"name": "Open Triggler"
+			}
+		},
+		"MIGRATION": {
+			"Title": "Condition Lab & Triggler: CUB Settings Migration",
+			"Content": "CUB settings have been detected, would you like to import these settings? This choice will overwrite CLT's settings. Your CUB settings won't be affected."
+		},
+		"SETTINGS": {
+			"EnhancedConditions": {
+				"CoreIconsN": "Core Status Icons",
+				"CoreIconsH": "A copy of the core status icons",
+				"SystemN": "Game System",
+				"SystemH": "A reference to the game system. Defaults to other if not known to the module",
+				"OutputChatN": "Output to Chat",
+				"OutputChatH": "Output matched conditions to chat",
+				"OutputCombatN": "Output During Combat",
+				"OutputCombatH": "On each round of Combat, output any conditions for the current combatant to chat",
+				"DefaultMapsN": "Default Condition Maps",
+				"DefaultMapsH": "Module-provided maps of conditions to icons",
+				"RemoveDefaultEffectsN": "Remove Default Status Effects",
+				"RemoveDefaultEffectsH": "Remove existing status effect icons from token HUD",
+				"DefaultOutputChatN": "Output Default Conditions to Chat",
+				"DefaultOutputChatH": "Output all default conditions to chat",
+				"MapTypeN": "Active Condition Map Type",
+				"MapTypeH": "Condition map type currently in use -- default, custom or other",
+				"MapType": {
+					"Choices": {
+						"inferred": "System - Inferred",
+						"default": "System - Default",
+						"custom": "System - Custom",
+						"other": "Other/Imported"
+					}
+				},
+				"ActiveConditionMapN": "Active Condition Map",
+				"ActiveConditionMapH": "Stores the active condition map",
+				"SuppressPreventativeSaveReminderN": "Suppress Preventative Save Reminder",
+				"SuppressPreventativeSaveReminderH": "Suppress the reminder to save the Condition Lab to prevent issues (eg. if user has already done so)",
+				"MigrationVersionN": "Migration Version",
+				"MigrationVersionH": "Version of CUB for which migration was last performed",
+				"ShowSortDirectionDialogN": "Prompt Saving Sort Direction",
+				"ShowSortDirectionDialogH": "Whether or not to show the confirmation dialog for saving the sort direction."
+			},
+			"TokenUtility": {
+				"TokenEffectSizeN": "Token Effect Icon Size",
+				"TokenEffectSizeH": "Sets the size for token effect icons on the token. Numbers represent the amount of effect icons to show (X * Y). Default: Small - 5x5",
+				"TokenEffectSize": {
+					"choices": {
+						"small": "Small (Default) - 5x5",
+						"medium": "Medium - 4x4",
+						"large": "Large - 3x3",
+						"xLarge": "Extra Large - 2x2"
+					}
+				}
+			},
+			"Triggler": {
+				"TriggersN": "Triggler Triggers",
+				"TriggersH": "A trigger-management system for token/actor attribute changes"
+			},
+			"SceneControls": {
+				"Name": "Scene Controls Shortcuts",
+				"Hint": "Adds two buttons to the Token Controls to open the Condition Lab or Triggler windows. Note that you can also open those by setting keybindings instead of using this setting."
+			}
+		},
+		"TRIGGLER": {
+			"ImportTitle": "Import Triggers",
+			"TriggerMismatch": "These triggers do not match your game system and may not work as expected.",
+			"App": {
+				"Labels": {
+					"Type": "Type",
+					"Triggers": "Existing Triggers",
+					"Category": "Category",
+					"Attribute": "Attribute",
+					"Property": "Property {number}",
+					"Operator": "Operator",
+					"Value": "Value"
+				},
+				"AdvancedTrigger": {
+					"ActorProperty": {
+						"Label": "Actor Update Property",
+						"Note": "Set the property path to use for Actor updates. The path is relative to the update object passed to the updateActor hook. Note that this is required if Token Update Property is not set.",
+						"Placeholder": "eg. system.attributes.hp.value"
+					},
+					"ActorProperty2": {
+						"Label": "Actor Comparison Property",
+						"Note": "Optionally set a second property to compare the first one against--this path is relative to the Actor object itself",
+						"Placeholder": "eg. system.attributes.hp.max (optional)"
+					},
+					"TokenProperty": {
+						"Label": "Token Update Property",
+						"Note": "Set the property path to use for Token updates--the path is relative to the update object passed to the updateToken hook. Note that this is required if Actor Update Property is not set.",
+						"Placeholder": "eg. actor.system.attributes.hp.value"
+					},
+					"TokenProperty2": {
+						"Label": "Token Comparison Property",
+						"Note": "Optionally set a second property to compare the first one against--this path is relative to the Token object itself",
+						"Placeholder": "eg. actor.system.attributes.hp.max (optional)"
+					},
+					"Property": {
+						"Hint": "The path to the updated property to listen for. The Actor and Token Entry Point values tell Triggler where to look for each entity type"
+					},
+					"OperatorValue": {
+						"Heading": "Operator & Value",
+						"Note": "Always required. The operator and value apply to both Actor and Token Properties set above"
+					},
+					"Name": {
+						"Label": "Trigger Name",
+						"Warning": "Name is required for advanced triggers!"
+					}
+				},
+				"TriggerType": {
+					"Simple": {
+						"Label": "Simple Trigger"
+					},
+					"Advanced": {
+						"Label": "Advanced Trigger"
+					}
+				},
+				"Options": {
+					"Title": "Options"
+				},
+				"SaveSuccessful": "Trigger successfully saved!"
+			}
+		},
+		"WORDS": {
+			"Icon": "Icon",
+			"Reference": "Reference",
+			"Import": "Import",
+			"Export": "Export"
+		}
+	}
+}

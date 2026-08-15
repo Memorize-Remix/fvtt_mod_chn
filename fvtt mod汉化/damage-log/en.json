@@ -1,0 +1,84 @@
+{
+	"damage-log.chat-tab-name": "Chat",
+	"damage-log.damage-log-tab-name": "Damage Log",
+
+	"damage-log.customizable-chat-tabs-hint": "Messages created by the Damag Log module",
+
+	"damage-log.reset-visibility": "Reset Visibility",
+	"damage-log.undo-damage": "Undo Damage",
+	"damage-log.undo-healing": "Undo Healing",
+	"damage-log.redo-damage": "Redo Damage",
+	"damage-log.redo-healing": "Redo Healing",
+
+	"damage-log.damage-flavor-text": "Took {diff} {damageType} damage",
+	"damage-log.healing-flavor-text": "Healed {diff} damage",
+
+	"damage-log.old": "Old",
+	"damage-log.new": "New",
+	"damage-log.diff": "Diff",
+
+	"damage-log.default.hp-name" : "HP",
+	"damage-log.default.temp-name" : "Temp",
+	"damage-log.ac2d20.stress-name" : "Stress",
+	"damage-log.ac2d20.injuries-name" : "Injuries",
+	"damage-log.ac2d20.fortune-name" : "Fortune",
+	"damage-log.ac2d20.fatigue-name" : "Fatigue",
+	"damage-log.age-of-sigmar-soulbound.toughness-name" : "Toughness",
+	"damage-log.CoC7.hp-name" : "HP",
+	"damage-log.CoC7.mp-name" : "MP",
+	"damage-log.CoC7.lck-name" : "Luck",
+	"damage-log.CoC7.san-name" : "Sanity",
+	"damage-log.cy-borg.hp-name" : "HP",
+	"damage-log.D35E.vigor-name": "Vigor",
+	"damage-log.D35E.vigorTemp-name": "Temp",
+	"damage-log.D35E.wounds-name": "Wounds",
+	"damage-log.demonlord.corruption-name": "Corruption",
+	"damage-log.demonlord.damage-name": "Damage",
+	"damage-log.demonlord.insanity-name": "Insanity",
+	"damage-log.fallout.radiation-name": "Radiation",
+	"damage-log.gurps.fp-name": "FP",
+	"damage-log.nimble.wounds-name": "Wounds",
+	"damage-log.pf2e.sp-name": "Stamina",
+	"damage-log.shaper.temp-name": "Shield",
+	"damage-log.swade.wounds-name" : "Wounds",
+	"damage-log.swade.fatigue-name" : "Fatigue",
+	"damage-log.swade.bennies-name" : "Bennies",
+	"damage-log.tormenta20.pv-name" : "PV",
+	"damage-log.tresdetv.mana-name" : "Magic",
+	"damage-log.tresdetv.vida-name" : "Life",
+	
+	"damage-log.settings.use-tab": "Use separate damage log tab",
+	"damage-log.settings.use-tab-hint": "Use a separate tab for damage logs.  If this is unchecked, damage logs will be sent to the default chatlog.",
+
+	"damage-log.settings.allow-player-view": "Allow players to view the damage log",
+
+	"damage-log.settings.min-player-permission": "Minimum actor permission",
+	"damage-log.settings.min-player-permission-hint": "Players will only be able to see actors in the damage log for which they have this permission (or better).",
+
+	"damage-log.settings.allow-player-undo": "Allow players to undo/redo damage",
+	"damage-log.settings.allow-player-undo-hint": "When enabled, players will be able to undo/redo damage and healing dealt to their *owned* actors.",
+
+	"damage-log.settings.show-limited-info": "Show limited damage info to players",
+	"damage-log.settings.show-limited-info-hint": "When enabled, players can see the damage taken by *all* actors, but not the old/diff/new table of values.",
+
+	"damage-log.settings.hide-healing-in-limited-info": "Hide healing in the limited damage info",
+	"damage-log.settings.hide-healing-in-limited-info-hint": "When enabled, players will not be able to see any healing in the limited damage info.",
+
+	"damage-log.settings.clamp-to-max": "Clamp to max HP",
+	"damage-log.settings.clamp-to-max-hint": "When reverting damage or re-applying healing, prevent the character's HP going over its current allowed maxiumum value",
+
+	"damage-log.settings.clamp-to-min": "Clamp to min HP",
+	"damage-log.settings.clamp-to-min-hint": "When re-applying damage or reverting healing, prevent the character's HP going under its current allowed minimum value",
+
+	"damage-log.settings.none": "None",
+	"damage-log.settings.limited": "Limited",
+	"damage-log.settings.observer": "Observer",
+	"damage-log.settings.owner": "Owner",
+
+	"damage-log.error.system-not-supported": "Damage Log | The '{systemId}' system is not currently supported",
+	"damage-log.error.scene-id-missing": "Damage Log | Scene ID missing from damage log",
+	"damage-log.error.scene-deleted": "Damage Log | Scene '{scene}' no longer exists",
+	"damage-log.error.token-id-missing": "Damage Log | Token ID missing from damage log",
+	"damage-log.error.token-deleted": "Damage Log | Token '{token}' no longer exists",
+	"damage-log.error.no-undo-user": "Damage Log | Cannot {undo} {damage}.  Neither {user}, nor any GM is connected"
+}

@@ -1,0 +1,71 @@
+{
+  "SIMPLE_NUTRITION": {
+    "Dialog": {
+      "Consume": "Consume",
+      "ConsumeMore": "Consume More",
+      "TitleFood": "Consume Food",
+      "TitleWater": "Drink Water",
+      "ManageTitleFood": "Manage Food",
+      "ManageTitleWater": "Manage Water",
+      "ManageCurrent": "Already recorded today: {amount}",
+      "ManageHintFood": "Choose whether to record more food or clear today's food intake.",
+      "ManageHintWater": "Choose whether to record more water or clear today's water intake.",
+      "ClearFood": "Clear Food",
+      "ClearWater": "Clear Water",
+      "SummaryLegend": "Summary",
+      "LegendFood": "Food",
+      "LegendWater": "Water",
+      "DaysWithoutFoodLabel": "Days without food",
+      "FreshWater": "Fresh Water Source Available",
+      "FreshWaterHint": "Drink from a fresh water source instead of consuming stored water.",
+      "RequiredLabel": "Required",
+      "SelectedLabel": "Selected",
+      "Each": "{amount} each",
+      "AmountFullDay": "full day",
+      "AmountWater": "{value} gal",
+      "DropLegend": "Add Consumable",
+      "DropHint": "Drag a consumable from this actor's inventory here to add it to the list.",
+      "Owned": "Owned: {quantity}",
+      "Decrease": "Decrease {item}",
+      "Increase": "Increase {item}",
+      "WarningDropDuplicate": "That item is already available in this dialog.",
+      "WarningDropEmpty": "That item has no remaining quantity.",
+      "WarningDropInvalid": "Only consumables from this actor's inventory can be added here.",
+      "WarningItemMissing": "That item is no longer available.",
+      "WarningSelectFood": "Select food to consume.",
+      "WarningSelectWater": "Select water to consume.",
+      "WarningNotEnough": "Not enough {item}."
+    },
+    "Tracker": {
+      "Title": "Nutrition",
+      "Food": "Food",
+      "Water": "Water",
+      "Progress": "{current}/{required}",
+      "FoodTooltip": "Food consumed today: {current} of {required}",
+      "WaterTooltip": "Water consumed today: {current} of {required}"
+    },
+    "Config": {
+      "Title": "Nutrition",
+      "Configure": "Configure Nutrition",
+      "Requirements": "Daily Needs",
+      "OverrideHint": "Leave a field blank to use the actor's size-based default.",
+      "FoodPerDay": "Food per Day",
+      "WaterPerDay": "Water per Day",
+      "StarvationLimit": "Days Without Food",
+      "DefaultValue": "Default: {value}",
+      "DefaultDays": "Default: {days} days"
+    },
+    "Chat": {
+      "Title": "Nutrition",
+      "StarvationLabel": "Days without food",
+      "StarvationValue": "{days}",
+      "ConditionsLabel": "Conditions",
+      "StatusDehydrated": "Dehydrated",
+      "StatusMalnourished": "Malnourished"
+    },
+    "Rest": {
+      "MalnutritionSave": "Malnutrition Constitution Save (DC 10)",
+      "MalnutritionSaveHint": "On a failed save, manually apply 1 level of &Reference[Exhaustion] and the &Reference[Malnutrition] condition."
+    }
+  }
+}

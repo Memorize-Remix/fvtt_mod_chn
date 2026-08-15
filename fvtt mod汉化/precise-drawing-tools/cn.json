@@ -1,0 +1,53 @@
+
+  "precise-drawing-tools": {
+    "drawing-to-image": {
+      "dialog-title": "将绘图转换为图片",
+      "dialog-input-filename-label": "图片文件名",
+      "default-filename-prefix": "我的FVTT绘图_",
+      "dialog-button-download-label": "下载图片",
+      "dialog-button-uploadAndKeep-label": "隐藏绘图 + 替换为图块",
+      "dialog-error-no-file-name": "未输入文件名。",
+      "dialog-error-no-drawings-selected": "未选择任何绘图！",
+      "progress-uploading": "正在上传图块图片...",
+      "progress-creating-tile": "正在创建图块...",
+      "progress-hiding-drawings": "正在隐藏绘图（可能需要一些时间）...",
+      "progress-done-hiding-drawings": "绘图隐藏完成！",
+      "progress-preparing": "正在准备绘图...",
+      "progress-workaround": "正在应用解决方案...",
+      "progress-collecting": "正在收集绘图...",
+      "progress-rendering": "正在渲染图片...",
+      "progress-cleaning-up": "正在清理...",
+      "progress-done-preparing": "图片准备完成。",
+      "toolbar-title": "将所选内容转换为图片"
+    },
+    "eyedropper": {
+      "keybinding-name": "吸管工具（颜色选取）",
+      "keybinding-hint": "选取光标下当前像素的颜色，并将其设置为当前描边颜色。按住 Shift 键可改为更改填充颜色。"
+    },
+    "settings": {
+      "disable-drag-resistance": {
+        "name": "禁用绘图时的拖拽阻力",
+        "hint": "允许绘制短笔画 - 否则，每个绘图的最小尺寸为 1/4 个方格（通常为 25 像素）"
+      },
+      "enable-dsr": {
+        "name": "启用动态采样率（DSR）",
+        "hint": "通常，FVTT对多边形线条施加 75 毫秒的采样率，对任何鼠标拖拽事件施加约 17 毫秒的采样率。此设置将根据你使用手绘工具绘制的速度，动态选择 4-75 毫秒的采样率。"
+      },
+      "target-sampling-distance": {
+        "name": "目标采样距离（如果启用了 DSR）",
+        "hint": "默认为 50，这意味着它旨在每 50 个屏幕像素放置约两个多边形点。数值越低，点的频率越高"
+      },
+      "enable-eyedropper": {
+        "name": "启用“吸管”/“颜色选取器”热键",
+        "hint": "选取光标下当前像素的颜色，并将其设置为当前描边颜色。按住 Shift 键可改为更改填充颜色。（默认热键为 K，请参见“配置控件”）"
+      },
+      "enable-convert-drawings": {
+        "name": "启用“转换绘图”按钮",
+        "hint": "此新增按钮位于绘图控件中，允许你将选定的绘图转换为单个图片文件，并可选择在同一位置创建带有该图片的图块。图片将保存到 worlds/[你的世界ID]/PDT-converted-drawings 目录中。"
+      }
+    },
+    "notifications": {
+      "progress-bar-not-found": "未找到进度条，preciseDrawingTools 可能存在问题！"
+    }
+  }
+}

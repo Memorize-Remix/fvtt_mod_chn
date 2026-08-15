@@ -1,0 +1,75 @@
+{
+    "vision-toolkit": {
+        "keybinding": {
+            "toggleVision": {
+                "name": "Toggle Token Vision",
+                "hint": " "
+            },
+            "activeGmVision": {
+                "name": "Toggle GM Vision",
+                "hint": " "
+            }
+        },
+        "toggle": "Ignore Token Vision",
+        "setting": {
+            "disableVisionOnDragAsGM": {
+                "name": "Disable the token vision when is dragged from a GM",
+                "hint": "Disables the vision limitation when dragging a token as a GM (Useful for not show the map to player when you move some token on the map)"
+            },
+            "noTokenAnimationAsGM": {
+                "name": "Disable Token Movement Animations for GM",
+                "hint": "Dragging and dropping tokens around the map will resolve instantly instead of sliding."
+            },
+            "enableGmVision": {
+                "name": "Enable GM Vision",
+                "hint": "A embedded version of the module 'GM Vision'"
+            },
+            "enableRevealObservableTokens": {
+                "name": "Enable Reveal Observable Tokens",
+                "hint": "A embedded version of the module 'Reveal Observable Tokens'"
+            },
+            "doNotRevealMyMap": {
+                "name": "Do not reveal map on moving through wall",
+                "hint": "Cancels the animation of a token if it would be moved through a wall to prevent showing parts of a map a player should not be able to see."
+            },
+            "invisibleTokensCanSee": {
+                "name": "Invisible tokens can see",
+                "hint": "By default invisible tokens loose sight. If you check this setting, this behavior changes."
+            },
+            "invisibleTokensEmitLight": {
+                "name": "Invisible tokens emit light",
+                "hint": "Tokens with a light source still emit light if they are invisible."
+            },
+            "reset": {
+                "name": "Reset settings to default",
+                "label": "Reset Settings To Default",
+                "hint": "This will reset all of the settings of back to the active game system's default."
+            },
+            "debug": {
+                "name": "Enable debugging",
+                "label": "Prints debug messages to the console",
+                "hint": "Prints debug messages to the console"
+            },
+            "tokenWarpEnable": {
+                "name": "Enable token warp",
+                "hint": "Helps GMs to avoid revealing their maps by automatically cancelling the dragged tokens' movement animation, when there is a wall in their path."
+            },
+            "tokenWarpWallsCancelTokenAnimation": {
+                "name": "Walls cancel token movement animation.",
+                "hint": "When checked and the GM drags tokens over scene walls, the tokens appear at their destinations instantly (no token movement animations). This setting helps GMs to not reveal map areas not meant to be seen by their players (will not have any effect if the token movement animation is OFF)."
+            },
+            "tokenWarpDefaultTokenAnimationSwitch": {
+                "name": "No token movement animations by default.",
+                "hint": "When checked, the tokens appear at their destinations instantly (no token movement animations)."
+            },
+            "tokenWarpExcludedScenes": {
+                "name": "Excluded Scenes.",
+                "hint": "Add Scene UUIDs (or IDs) separated by semicolons (;). Token movement animations always ON."
+            },
+            "tokenWarpDefaultTokenAnimation": {
+                "name": "Token movement animation speed.",
+                "hint": "Default is 6. Foundry v10 was using a default of 12."
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+
+  "celebrate": {
+    "buttons": {
+      "title": "Celebrate",
+      "intensity": {
+        "low": "低强度",
+        "med": "中强度",
+        "high": "高强度！"
+      }
+    },
+    "notifications": {
+      "gmWarning": "GM已将彩色纸屑特效限制为仅GM可用！"
+    },
+    "settings": {
+      "appearanceMenu": {
+        "name": "纸屑外观设置",
+        "label": "配置外观",
+        "hint": "自定义彩色纸屑的视觉效果"
+      },
+      "gmOnly": {
+        "name": "仅限GM使用",
+        "hint": "如玩家滥用特效，可启用此选项禁止玩家使用"
+      },
+      "fireRateLimit": {
+        "name": "发射冷却时间（秒）",
+        "hint": "每次发射后的冷却时间。强烈推荐设置！（0表示无限制）"
+      },
+      "confettiMultiplier": {
+        "name": "纸屑数量倍率",
+        "hint": "增加发射纸屑的数量。设置过高可能导致性能问题！"
+      },
+      "showButtons": {
+        "name": "显示按钮",
+        "hint": "（需重载）如仅通过宏/模组使用，或按钮与其他模组冲突时可禁用"
+      },
+      "soundVolume": {
+        "name": "音效音量",
+        "hint": "设置纸屑发射音效的音量大小"
+      },
+      "soundIntensityHigh": {
+        "name": "高强度音效",
+        "hint": "设置高强度纸屑的音效文件"
+      },
+      "soundIntensityMed": {
+        "name": "中强度音效",
+        "hint": "设置中强度纸屑的音效文件"
+      },
+      "soundIntensityLow": {
+        "name": "低强度音效",
+        "hint": "设置低强度纸屑的音效文件"
+      },
+      "showOthersConfettiScale": {
+        "name": "显示其他玩家的纸屑比例",
+        "hint": "勾选后可看到其他玩家按各自设置比例的纸屑"
+      },
+      "showOthersGlitterStrength": {
+        "name": "显示其他玩家的闪光强度",
+        "hint": "勾选后可看到其他玩家设置的闪光强度效果"
+      },
+      "appearance": {
+        "windowTitle": "纸屑外观配置",
+        "confettiStyleChoice": {
+          "name": "纸屑样式选择",
+          "hint": "默认：多彩纸屑 | 基础色：使用下方选择的基础色 | 闪光：色彩循环的闪亮纸屑 | 基础闪光：基于基础色的闪光效果",
+          "choices": {
+            "default": "默认",
+            "base": "基础色",
+            "glitter": "闪光",
+            "baseGlitter": "基础闪光"
+          }
+        },
+        "confettiColorBase": {
+          "name": "纸屑基础色",
+          "hint": "如启用下方选项，纸屑将以此颜色为基础色"
+        },
+        "confettiGlitterStrength": {
+          "name": "闪光强度",
+          "hint": "设置闪光纸屑的闪耀程度"
+        },
+        "confettiScale": {
+          "name": "纸屑大小",
+          "hint": "设置单个纸屑元素的尺寸比例"
+        },
+        "buttons": {
+          "test": "测试设置",
+          "cancel": "取消",
+          "submit": "保存"
+        },
+        "confettiTexture": {
+          "name": "纸屑形状",
+          "hint": "经典：长方形 | 圆形 | 月牙 | 闪电 | 音符 | 骷髅 | 星星 | 树形",
+          "choices": {
+            "classic": "经典",
+            "circle": "圆形",
+            "crescent": "月牙",
+            "lightning": "闪电",
+            "music": "音符",
+            "skull": "骷髅",
+            "star": "星星",
+            "tree": "树形"
+          }
+        }
+      }
+    }
+  }
+}

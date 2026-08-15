@@ -1,0 +1,29 @@
+
+  "EFFECTIVETRAY": {
+    "AllowTargetSettingName": "转移至目标",
+    "AllowTargetSettingHint": "允许用户将效果转移到他们未拥有的目标上。",
+    "DamageDefaultSettingName": "使用默认伤害托盘",
+    "DamageDefaultSettingHint": "保留伤害托盘的默认系统行为（仅限DM使用）。",
+    "DamageTargetSettingName": "伤害目标",
+    "DamageTargetSettingHint": "允许用户使用伤害托盘对他们未拥有的目标造成伤害。",
+    "DeleteInsteadSettingName": "删除而非刷新",
+    "DeleteInsteadSettingHint": "尝试将效果转移到已拥有该效果的角色时，将删除效果而非刷新其持续时间。",
+    "FilterDispositionSettingName": "按阵营过滤",
+    "FilterDispositionSettingHint": "如果效果来源于具有选定（或更糟）阵营的Token，则对用户隐藏这些效果。",
+    "FilterPermissionSettingName": "按权限过滤",
+    "FilterPermissionSettingHint": "如果效果来源于用户缺乏选定权限（或更低）的角色，则对用户隐藏这些效果。",
+    "GmOnly": "仅限GM",
+    "IgnoreNPCSettingName": "过滤NPC",
+    "IgnoreNPCSettingHint": "如果效果来源于用户未拥有的NPC，则对用户隐藏这些效果。",
+    "MultipleConcentrationEffectsSettingName": "允许多个专注效果",
+    "MultipleConcentrationEffectsSettingHint": "允许从需要专注的法术中应用多个效果",
+    "NoFilter": "无过滤",
+    "NOTIFICATION": {
+      "NoActiveGMDamage": "没有GM在线。需要GM在线才能对你未拥有的目标造成伤害。",
+      "NoActiveGMEffect": "没有GM在线。需要GM在线才能在你未拥有的目标上创建效果。",
+      "NoTarget": "你没有选择目标。"
+    },
+    "SystemDefaultSettingName": "使用默认效果托盘",
+    "SystemDefaultSettingHint": "保留效果应用托盘的默认系统行为（转移效果之外的仅限DM使用托盘）。"
+  }
+}

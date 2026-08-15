@@ -1,0 +1,71 @@
+
+  "QUICKBRUSH": {
+    "Title": "Quickbrush Image Generator",
+    "ButtonLabel": "生成图像",
+    "JournalButton": "使用 Quickbrush 创建",
+    "Settings": {
+      "CoreLibraryUrl": {
+        "Name": "核心库 URL",
+        "Hint": "加载 quickbrush-core.js 库的 URL。可更改为自定义或更新版本。默认：https://quickbrush.ai/js/quickbrush-core.js"
+      },
+      "OpenAIApiKey": {
+        "Name": "OpenAI API 密钥",
+        "Hint": "你的 OpenAI API 密钥。请在 https://platform.openai.com/api-keys 获取"
+      },
+      "ImageModel": {
+        "Name": "图像模型",
+        "Hint": "选择使用的 OpenAI 图像模型。Mini 版本更快更便宜，Standard 版本质量更高",
+        "Choices": {
+          "mini": "GPT-Image-1-Mini (更快、更便宜)",
+          "standard": "GPT-Image-1 (更高质量)"
+        }
+      },
+      "SaveFolder": {
+        "Name": "图像保存文件夹",
+        "Hint": "生成图像将保存的文件夹名称（默认：quickbrush-images）"
+      }
+    },
+    "Dialog": {
+      "Title": "使用 Quickbrush 生成图像",
+      "Description": "描述",
+      "DescriptionPlaceholder": "长文本描述（例如：日志条目、角色背景）。可能包含无关细节 - 我们将专注于物理描述",
+      "ImageName": "图像名称",
+      "Prompt": "上下文提示（可选）",
+      "PromptPlaceholder": "例如：'穿着红色斗篷'、'防御姿态'、'日落时分'",
+      "Type": "你想要绘制什么？",
+      "Types": {
+        "character": "🎭 角色",
+        "scene": "🌄 场景",
+        "creature": "🐉 生物",
+        "item": "🗡️ 物品"
+      },
+      "Quality": "质量",
+      "Qualities": {
+        "low": "低（标准）",
+        "medium": "中（标准）",
+        "high": "高（高清）"
+      },
+      "AspectRatio": "宽高比",
+      "AspectRatios": {
+        "square": "正方形 (1024x1024)",
+        "landscape": "横向 (1792x1024)",
+        "portrait": "纵向 (1024x1792)"
+      },
+      "Generate": "生成图像",
+      "Cancel": "取消"
+    },
+    "Notifications": {
+      "NoApiKey": "请在模组设置中设置你的 OpenAI API 密钥",
+      "Generating": "正在使用 Quickbrush 生成图像。完成后我们会通知你！",
+      "Success": "图像生成成功！",
+      "Error": "图像生成失败：{error}",
+      "Saved": "图像已保存至 {folder}",
+      "GalleryUpdated": "Quickbrush 画廊已更新"
+    },
+    "Gallery": {
+      "Title": "Quickbrush 画廊",
+      "Description": "此日志包含所有使用 Quickbrush 生成的图像",
+      "EntryTemplate": "<h2>{type} - {date}</h2><p><strong>描述：</strong> {description}</p><p><strong>质量：</strong> {quality} | <strong>宽高比：</strong> {aspectRatio}</p><img src=\"{imageUrl}\" alt=\"{description}\" style=\"max-width: 100%; height: auto;\" /><hr>"
+    }
+  }
+}

@@ -1,0 +1,2216 @@
+
+    "midi-qol.ResetDefaults.Name": "重置所有设置",
+    "midi-qol.ResetDefaults.Title": "将所有设置重置为默认值",
+    "midi-qol.ResetDefaults.Content": "这将重置所有 midi-qol 设置为默认值，包括配置设置和所有游戏设置。此操作无法撤销。确定要继续吗？",
+    "midi-qol.ResetDefaults.Confirm": "重置所有设置",
+    "midi-qol.ResetDefaults.Button": "将所有设置重置为默认值",
+    "midi-qol.ResetDefaults.Hint": "将所有 midi-qol 设置重置为默认值",
+	"midi-qol.DamageImmunities.Name": "应用伤害免疫",
+	"midi-qol.DamageImmunities.Hint": "当使用 midi-qol 伤害按钮或自动应用伤害时，应用目标的伤害免疫/易伤/抗性。包含所有伤害类型。",
+	"midi-qol.WorldKeyMappings.Name": "世界 vs 客户端按键配置",
+	"midi-qol.WorldKeyMappings.Blurb1": "按键映射由每个客户端定义。每名玩家可以拥有不同的按键映射。强制所有客户端使用相同按键映射，可以使用某一模组来强制统一设置。",
+	"midi-qol.WorldKeyMappings.Blurb2": "我已经成功测试过 'Force Client Controls' 模组",
+	"midi-qol.SpeedAbilityRolls.Name": "启用快速属性(豁免/检定/技能)掷骰",
+	"midi-qol.ShowItemDetails.Name": "在聊天卡片里展示物品详情",
+	"midi-qol.ShowItemDetails.Hint": "开启后物品详情会在聊天卡片里显示。你可以使用 DND5E 系统的设置来自动隐藏描述",
+	"midi-qol.AutoRollAttack.Name": "掷物品骰时若有'攻击'，则自动掷攻击检定",
+	"midi-qol.AutoRollAttack.Hint": "自动快进掷骰的设置将会决定掷攻击检定后的下一步如何进行",
+	"midi-qol.AutoFastForward.Name": "自动快进掷骰",
+	"midi-qol.AutoFastForward.Hint": "始终快进攻击检定和伤害掷骰。点击攻击、伤害的按钮时同样快进",
+	"midi-qol.AutoCheckHit.Name": "自动确认攻击命中目标",
+	"midi-qol.AutoCheckHit.Hint": "检查攻击检定是否命中选中的目标 - 如果命中了任意目标而且启用了自动掷伤害骰，就会掷伤害骰并应用结果。禁用后midi-qol会假设攻击全部命中并掷后续的骰子。",
+	"midi-qol.RequiresTargets.Name": "目标需要被选中",
+	"midi-qol.RequiresTargets.Hint": "在掷骰前要求Token必须标中。‘禁用’表示从不要求选中目标，‘战斗中’仅在战斗中要求，‘始终’将在任何需要目标的物品掷骰时检查。",
+	"midi-qol.requiresTargetsOptions": {
+		"none": "禁用",
+		"combat": "战斗中",
+		"tokens": "场景中的Token",
+		"always": "始终"
+	},
+	"midi-qol.AutoApplyDamage.Name": "自动对目标应用伤害",
+	"midi-qol.AutoApplyDamage.Hint": "自动对命中的目标(如果已开启自动确认攻击命中目标)或用户选定的目标结算伤害",
+	"midi-qol.DamageCardStyle.Name": "伤害卡片样式",
+	"midi-qol.PlayerDamageCard.Name": "展示玩家的伤害卡片",
+	"midi-qol.PlayerDamageCard.Hint": "伤害卡片的简化版本。仅在 GM 卡片显示时显示。卡片不会对 GM 显示",
+	"midi-qol.PlayerCardDamageDifferent.Name": "如果骰出的伤害不符合应用到某些目标的伤害，则显示玩家伤害卡片",
+	"midi-qol.ItemRollButtons.Name": "在物品列表中添加攻击、伤害按钮",
+	"midi-qol.ItemRollButtons.Hint": "在物品描述中添加掷骰按钮 - 支持使用 ctrl/alt/shift 跳过对话框",
+	"midi-qol.AddChatDamageButtons.Name": "在聊天消息上添加伤害按钮",
+	"midi-qol.AddChatDamageButtons.Hint": "启用聊天消息中的dnd5e伤害托盘。",
+	"midi-qol.AddChatDamageButtonsOptions": {
+		"none": "关闭",
+		"gm": "仅为 GM 添加按钮",
+		"pc": "仅为玩家添加按钮",
+		"both": "为所有人添加按钮"
+	},
+	"midi-qol.AutoRollDamage.Name": "自动掷伤害骰",
+	"midi-qol.AutoRollDamage.Hint": "在进行攻击检定时，自动掷伤害骰。设置为'攻击命中时'后，将会在没有选中目标时、攻击命中时(查看'自动确认攻击命中目标')或者不确认攻击是否命中时，自动掷伤害骰",
+	"midi-qol.AutoCheckSaves.Name": "自动确认豁免结果",
+	"midi-qol.AutoCheckSaves.Hint": "自动确认豁免检定结果。禁用后会假设所有目标的豁免全部失败。",
+	"midi-qol.DisplaySaveDC.Name": "展示豁免DC",
+	"midi-qol.DisplaySaveDC.Hint": "关闭后会对玩家隐藏豁免DC(仅限合并卡片)",
+	"midi-qol.AutoRemoveTargets.Name": "回合结束时取消选择目标",
+	"midi-qol.AutoRemoveTargets.Hint": "选择一种情况，在你的回合结束时，将会自动取消选择相应的目标",
+	"midi-qol.buttons.roll": "标准掷骰",
+	"midi-qol.buttons.attack": "攻击",
+	"midi-qol.buttons.damage": "伤害",
+	"midi-qol.buttons.altDamage": "伤害",
+	"midi-qol.buttons.extraDamage": "额外伤害",
+	"midi-qol.buttons.versatileDamage": "多用 伤害",
+	"midi-qol.buttons.versatileAttack": "多用 攻击",
+	"midi-qol.buttons.info": "信息",
+	"midi-qol.buttons.showChatInfo": "显示聊天信息",
+	"midi-qol.buttons.itemUse": "使用",
+	"midi-qol.reallyDelete": "确认删除该物品",
+	"midi-qol.sure": "你确定吗？",
+	"midi-qol.criticals": "重击",
+	"midi-qol.fumbles": "大失败",
+	"midi-qol.hits": "命中",
+	"midi-qol.hitsEC": "闪避等级命中",
+	"midi-qol.misses": "失误",
+	"midi-qol.save-success": "成功骰",
+	"midi-qol.save-failure": "失败骰",
+	"midi-qol.save-drawn": "测量板",
+	"midi-qol.damage-applied": "HP已更新",
+	"midi-qol.noItemNamed": "你选择的token没有对应名称的物品",
+	"midi-qol.noTokens": "无法应用效果 - 无目标Token",
+	"midi-qol.HideNPCNames.Name": "隐藏token名称",
+	"midi-qol.HideNPCNames.Hint": "在命中、豁免的聊天消息里隐藏token的名称",
+	"midi-qol.noTemplateSeen": "测量板尚未放置",
+	"midi-qol.AutoTarget.Name": "自动选中测量板上的目标",
+	"midi-qol.AutoTarget.Hint": "在放置测量板(如施法)时，自动选中测量板范围内的Token作为目标。如果在范围瞄准中设置了'Center + Levels' ，则将使用体积模板(如果已安装)。",
+	"midi-qol.undoDamageFrom": "撤销伤害-来自",
+	"midi-qol.noGM": "只有当GM用户在线时才能应用效果或者更新HP",
+	"midi-qol.noSelection": "未选中token或角色",
+	"midi-qol.showGM.Name": "GM可见所有私聊消息",
+	"midi-qol.showGM.Hint": "GM可见所有私聊消息，即使游戏设置中描述为GM不可见",
+	"midi-qol.PreferredGM.Name": "首选GM",
+	"midi-qol.PreferredGM.Hint": "用于socket调用的首选GM。若选择'无'，将使用当前场景中的第一位GM。",
+	"midi-qol.ColoredBorders.Name": "消息边框着色",
+	"midi-qol.ColoredBorders.Hint": "每条聊天消息的边框颜色改为玩家角色的颜色",
+	"midi-qol.AutoEffects.Name": "自动应用物品效果",
+	"midi-qol.AutoEffects.Hint": "若目标被命中、豁免失败或者未豁免，自动对其应用物品的动态效果。同时最好使用 about-time或times-up。",
+	"midi-qol.AutoEffectsOptions": {
+		"off": "不自动应用效果",
+		"applyNoButton": "应用效果不显示按钮",
+		"applyRemove": "应用效果并移除按钮",
+		"applyLeave": "应用效果并保留按钮"
+	},
+	"midi-qol.RangeTarget.Name": "自动为半径/光环法术和攻击选择目标",
+	"midi-qol.RangeTarget.Hint": "如果半径/光环目标类型为生物/敌人/盟友，自动选中目标",
+	"midi-qol.PlayerRollSaves.Name": "提示玩家掷豁免检定",
+	"midi-qol.PlayerRollSaves.Hint": "玩家掷豁免检定。禁用表示模组掷豁免检定。否则，玩家会收到私聊信息或Monk's Token Bar 提示。",
+	"midi-qol.rollNPCSaves.Name": "提示 GM 掷豁免检定(未链接)",
+	"midi-qol.rollNPCLinkedSaves.Name": "提示 GM 掷豁免检定(链接)",
+	"midi-qol.rollNPCSaves.Hint": "自动时模组将会为 NPC 掷豁免检定。否则，将根据设置提示 GM。",
+	"midi-qol.PlayerSaveTimeout.Name": "等待玩家豁免延时",
+	"midi-qol.PlayerSaveTimeout.Hint": "在替玩家掷骰前，需要等待玩家自己掷豁免检定的秒数",
+	"midi-qol.MagicResistant": "魔法-抗性",
+	"midi-qol.MagicResistanceFeat": "魔法抗性",
+	"midi-qol.PreRollChecks.Name": "实验功能：在速骰或使用宏前先进行检查",
+	"midi-qol.PreRollChecks.Hint": "实验性：在物品掷骰前进行检查，目前只检查范围和掷骰角色需要 > 0HP",
+	"midi-qol.noTargets": "你必须在掷攻击检定前选中一个token作为目标",
+	"midi-qol.wrongNumberTargets": "你必须指定在掷攻击检定前选定最多{allowedTargets}个token",
+	"midi-qol.noSaveTargets": "豁免没有选中目标",
+	"midi-qol.UseTokenNames.Name": "聊天卡片使用token名称",
+	"midi-qol.UseTokenNames.Hint": "聊天卡片的标题和目标名使用token的名称，而非角色名",
+	"midi-qol.CriticalDamage.Name": "选择玩家如何掷重击伤害骰",
+	"midi-qol.CriticalDamage.Hint": "仅限 DND5e 的设置 - 使用标准的 dnd5e 重击伤害掷骰；普通伤害取最大值 - 仅使用原本的武器伤害骰(无重击骰)，但全部取最大值；取重击骰最大值 - 重击骰取最大值；所有骰子取最大值 - 物品+重击骰取最大值；骰值二倍 - 骰子结果数值 x2；爆炸重击骰 - 正常投掷重击并爆炸投掷任一重击骰；仅限物品额外重击 - 只会造成物品的额外重击字段中的伤害, 最大基础重击掷骰 - 使用最大基础伤害，然后像往常一样掷重击骰",
+	"midi-qol.CriticalDamageGM.Name": "选择GM如何掷重击伤害骰",
+	"midi-qol.CriticalDamageGM.Hint": "",
+	"midi-qol.CriticalDamageChoices": {
+		"default": "仅限 DND5e 的设置",
+		"maxDamage": "普通伤害取最大值",
+		"maxCrit": "重击骰最大值(固定数值)",
+		"maxCritRoll": "重击骰最大值(掷骰)",
+		"maxAll": "所有骰子取最大值",
+		"doubleDice": "骰值二倍",
+		"explode": "爆炸重击骰",
+		"maxDamageExplode": "最大基本伤害和爆炸重击骰",
+		"explodeCharacter": "爆炸角色重击骰",
+		"explodeNPC": "爆炸NPC重击骰",
+		"baseDamage": "仅限物品额外重击",
+		"maxBaseRollCrit": "最大基础重击掷骰",
+		"bestOfTwo": "掷两次伤害骰取最高"
+	},
+	"midi-qol.MergeCardCondensed.Name": "紧凑攻击检定和伤害掷骰",
+	"midi-qol.MergeCardCondensed.Hint": "让攻击、伤害掷骰更简洁，省下一小部分聊天日志的空间",
+	"midi-qol.AddSheetButtons.Name": "添加物品/行动按钮",
+	"midi-qol.AddSheetButtons.Hint": "在角色卡的物品和行动上添加快速掷骰按钮（信息、攻击、伤害）",
+	"midi-qol.DisplayItemProperties.Name": "显示物品属性",
+	"midi-qol.DisplayItemProperties.Hint": "在聊天卡片中显示物品属性。禁用此选项可节省聊天卡片空间。",
+	"midi-qol.ConfigButtons": "掷骰对话框",
+	"midi-qol.ConfigTitle": "Midi-QOL 配置",
+	"midi-qol.WorkflowSettings": "工作流设置",
+	"midi-qol.CheckSaveText.Name": "检索物品描述",
+	"midi-qol.CheckSaveText.Hint": "进行豁免后的伤害判断时，检索物品描述的内容是否出现'half as much damage'，如果出现则法术在豁免成功时造成一半伤害。关闭后所有豁免成功时都造成默认倍数的伤害",
+	"midi-qol.Save": "保存设置",
+	"midi-qol.saving-throws": "豁免",
+	"midi-qol.saving-throw": "豁免",
+	"midi-qol.ability-check": "属性检定",
+	"midi-qol.ability-checks": "属性检定",
+	"midi-qol.plain-d20-roll": "D20检定",
+	"midi-qol.RollChoice": "选择属性",
+	"midi-qol.or": "或",
+	"midi-qol.skill-check": "技能检定",
+	"midi-qol.tool-check": "工具检定",
+	"midi-qol.noAttackRoll": "在掷伤害骰前，你必须先掷攻击检定",
+	"midi-qol.config": "Midi QoL 配置",
+	"midi-qol.Hint": "配置 midi-qol 的各种工作流。当心，前方一大波设置来袭",
+	"midi-qol.DiceSound.Name": "攻击检定",
+	"midi-qol.AttackRoll": "攻击检定",
+	"midi-qol.CriticalSoundName": "重击",
+	"midi-qol.FumbleSoundName": "大失败",
+	"midi-qol.AttribADV": "优势",
+	"midi-qol.AttribDIS": "劣势",
+	"midi-qol.AttribNOADV": "无法优势",
+	"midi-qol.AttribNODIS": "无法劣势",
+	"midi-qol.AttribCRIT": "重击",
+	"midi-qol.AttribNOCRIT": "无法重击",
+	"midi-qol.AttribFUMBLE": "大失败",
+	"midi-qol.AttribNOFUMBLE": "无法大失败",
+	"midi-qol.AttribSUCCESS": "自动成功",
+	"midi-qol.AttribFAIL": "自动失败",
+	"midi-qol.AttribMIN": "最小值",
+	"midi-qol.AttribMAX": "最大值",
+	"midi-qol.FriendlyAutoFail": "友好自动失败",
+	"midi-qol.FriendlyAutoSuccess": "友好自动成功",
+	"midi-qol.KeyPress": "按键",
+	"midi-qol.ForcedKeyPress": "强制按键",
+	"midi-qol.RollOptions": "掷骰选项",
+	"midi-qol.WorkflowOptions": "工作流选项",
+	"midi-qol.ActivityUse": "行动使用",
+	"midi-qol.DiceSounds.Hint": "为不同情况下的掷骰播放声音。仅对合并卡片有效",
+	"midi-qol.CustomSoundsPlaylist.Name": "声音播放列表",
+	"midi-qol.WeaponUseSound.Name": "武器使用",
+	"midi-qol.WeaponUseSoundRanged.Name": "武器使用(远程)",
+	"midi-qol.SpellUseSound.Name": "法术使用",
+	"midi-qol.PotionUseSound.Name": "药水使用",
+	"midi-qol.SpellUseSoundRanged.Name": "法术使用(远程)",
+	"midi-qol.ItemUseSound.Name": "物品使用",
+	"midi-qol.AutoFastForwardAbilityRolls.Name": "自动快进属性掷骰",
+	"midi-qol.AutoFastForwardAbilityRolls.Hint": "点击一项属性进行检定/豁免时将会自动快进",
+	"midi-qol.UseCustomSounds.Name": "启用 midi-qol 自定义音效",
+	"midi-qol.UseCustomSounds.Hint": "开启后将会覆盖系统声音。设置的声音来自'配置 Midi 自定义音效' ",
+	"midi-qol:Debug.Name": "启用调试模式",
+	"midi-qol:Debug.Hint": "'Warnings' 提供行动概述，'debug' 提供更多信息，'all' 会同时启用CONFIG.debug.hooks",
+	"midi-qol.DebugOptions": {
+		"none": "关闭",
+		"warn": "警告",
+		"debug": "调试",
+		"all": "全部"
+	},
+	"midi-qol.speedItemRollsOptions": {
+		"off": "禁用",
+		"on": "开启",
+		"onCard": "开启 + 展示物品卡"
+	},
+	"midi-qol.autoCheckHitOptions": {
+		"none": "从不",
+		"all": "命中确认 - 所有人可见",
+		"whisper": "命中确认 - 仅GM可见结果",
+		"gmOnly": "命中确认 - 仅GM可见任何内容",
+		"expandedHints": {
+			"none": "无自动命中检查。命中必须由GM手动裁决。",
+			"all": "Midi-qol自动根据目标AC检查攻击检定结果。所有玩家都能看到命中/未命中结果。",
+			"whisper": "Midi-qol自动根据目标AC检查攻击检定结果。只有GM能看到命中/未命中结果。",
+			"gmOnly": "Midi-qol自动根据目标AC检查攻击检定结果。只有GM能看到攻击检定值和结果。"
+		}
+	},
+	"midi-qol.clickOptions": {
+		"off": "禁用",
+		"attack": "仅攻击检定",
+		"damage": "仅伤害掷骰",
+		"all": "攻击检定和伤害掷骰"
+	},
+	"midi-qol.fastForwardOptions.attack": "攻击检定",
+	"midi-qol.fastForwardOptions.damage": "伤害掷骰",
+	"midi-qol.fastForwardOptions.check": "属性检定",
+	"midi-qol.fastForwardOptions.save": "豁免检定",
+	"midi-qol.fastForwardOptions.skill": "技能检定",
+	"midi-qol.fastForwardOptions.tool": "工具检定",
+	"midi-qol.autoTargetOptions": {
+		"none": "从不",
+		"always": "始终",
+		"alwaysIgnoreIncapacitated": "始终 - 忽略失能/战败",
+		"alwaysIgnoreDefeated": "始终 - 忽略战败",
+		"wallsBlock": "墙壁遮挡",
+		"wallsBlockIgnoreIncapacitated": "墙壁遮挡 - 忽略失能/战败",
+		"wallsBlockIgnoreDefeated": "墙壁遮挡 - 忽略战败",
+		"walledtemplates": "使用Walled Template模组",
+		"expandedHints": {
+			"none": "测量板不会自动选择目标Token。玩家必须手动选择目标。",
+			"always": "测量板区域内的所有Token都会被自动选择为目标，无论是否有墙壁阻挡。",
+			"alwaysIgnoreIncapacitated": "测量板区域内的所有Token都会被选择为目标，但昏迷和死亡的Token会被排除。",
+			"alwaysIgnoreDefeated": "测量板区域内的所有Token都会被选择为目标，但死亡/被击败的Token会被排除。",
+			"wallsBlock": "只有当测量板起点与Token之间没有墙壁阻挡时，测量板区域内的Token才会被选择为目标。",
+			"wallsBlockIgnoreIncapacitated": "如果没有墙壁阻挡测量板起点与Token之间的视线，Token会被选择为目标。昏迷和死亡的Token会被排除。",
+			"wallsBlockIgnoreDefeated": "如果没有墙壁阻挡测量板起点与Token之间的视线，Token会被选择为目标。死亡/被击败的Token会被排除。",
+			"walledtemplates": "将目标选择委托给Walled Templates模组，该模组会根据墙壁重塑测量板区域。需要安装Walled Templates模组。"
+		}
+	},
+	"midi-qol.autoCheckSavesOptions": {
+		"none": "禁用",
+		"allNoRoll": "豁免 - 所有人仅看到结果",
+		"all": "豁免确认 - 所有人可见结果 + 豁免总值",
+		"allShow": "豁免确认 - 所有人可见结果+掷骰",
+		"whisper": "豁免确认 - 仅GM可见结果+掷骰",
+		"gmOnly": "豁免确认 - 仅GM可见任何内容",
+		"expandedHints": {
+			"none": "无自动豁免检定。豁免必须手动掷骰。",
+			"allNoRoll": "Midi-qol自动掷豁免检定。所有玩家都能看到成功/失败结果，但看不到骰点总数。",
+			"all": "Midi-qol自动掷豁免检定。所有玩家都能看到成功/失败结果和豁免检定总数。",
+			"allShow": "Midi-qol自动掷豁免检定。所有玩家都能看到成功/失败结果、豁免检定总数以及完整的掷骰明细。",
+			"whisper": "Midi-qol自动掷豁免检定。只有GM能看到结果和掷骰细节。",
+			"gmOnly": "Midi-qol自动掷豁免检定。只有GM能看到与豁免检定相关的任何信息。"
+		}
+	},
+	"midi-qol.rangeTargetOptions": {
+		"none": "关闭",
+		"always": "始终",
+		"alwaysIgnoreIncapacitated": "始终 - 忽略失能/战败",
+		"alwaysIgnoreDefeated": "始终 - 忽略战败",
+		"wallsBlock": "墙壁遮挡",
+		"wallsBlockIgnoreIncapacitated": "墙壁遮挡 - 忽略失能/战败",
+		"wallsBlockIgnoreDefeated": "墙壁遮挡 - 忽略战败"
+	},
+	"midi-qol.autoRollDamageOptions": {
+		"none": "从不",
+		"always": "始终",
+		"saveOnly": "仅豁免",
+		"onHit": "需要伤害掷骰时"
+	},
+	"midi-qol.autoApplyDamageOptions": {
+		"none": "禁用",
+		"noCard": "禁用 + 伤害卡片",
+		"noCardMisses": "禁用 + 伤害卡片 + 失误",
+		"yes": "启用",
+		"yesCard": "启用 + 伤害卡片",
+		"yesCardMisses": "启用 + 伤害卡片 + 失误",
+		"yesCardNPC": "启用(NPC)禁用(PC)+ 伤害卡片"
+	},
+	"midi-qol.damageCardStyleOptions": {
+    "flexbox": "弹性布局",
+    "classic": "经典(表格)"
+  },
+	"midi-qol.playerDamageCardOptions": {
+		"none": "不显示",
+		"playerresults": "显示玩家结果",
+		"playerbuttons": "显示玩家结果 + 按钮",
+		"npcplayerresults": "显示玩家与 NPC 结果",
+		"npcplayerbuttons": "显示玩家和 NPC + 按钮"
+	},
+	"midi-qol.removeButtonsOptions": {
+		"off": "关闭",
+		"attack": "仅攻击",
+		"damage": "仅伤害",
+		"all": "攻击与伤害",
+		"everything": "全部按钮"
+	},
+	"midi-qol.damageImmunitiesOptions": {
+		"none": "从不",
+		"immunityDefault": "应用免疫",
+		"immunityPhysical": "应用免疫 + 物理"
+	},
+	"midi-qol.showItemDetailsOptions": {
+		"none": "关闭",
+		"cardOnly": "仅限卡片",
+		"pc": "详情：仅限PC",
+		"all": "详情: NPC + PC"
+	},
+	"midi-qol.rollNPCSavesOptions": {
+		"none": "聊天消息",
+		"auto": "自动",
+		"autoDialog": "自动掷骰和显示掷骰对话框",
+		"mtb": "Monk's Token Bar",
+		"ftb": "Flash Token Bar",
+		"rer": "Epic Rolls",
+		"expandedHints": {
+			"none": "通过聊天消息按钮提示GM进行豁免检定。",
+			"auto": "豁免检定自动掷骰，无需GM交互。",
+			"autoDialog": "豁免检定自动掷骰，但会先显示掷骰配置对话框，允许修改。",
+			"mtb": "通过Monks Token Bar界面进行豁免检定。需要安装Monks Token Bar模组。",
+			"ftb": "通过Flash Token Bar弹出窗口进行豁免检定。需要安装Flash Rolls 5e模组。",
+			"rer": "通过Ripper's Epic Rolls界面进行豁免检定。需要安装Epic Rolls 5e模组。"
+		}
+	},
+	"midi-qol.playerRollSavesOptions": {
+		"none": "无(暗骰)",
+		"nonePublic": "无(公开)",
+		"noneDialogPublic": "自动掷骰和显示掷骰对话框(公开)",
+		"noneDialogPrivate": "自动掷骰和显示掷骰对话框(暗骰)",
+		"noneDialogSelf": "自动掷骰和显示掷骰对话框(自骰)",
+		"noneDialogBlind": "自动掷骰和显示掷骰对话框(盲骰)",
+		"chat": "聊天消息",
+		"mtb": "Monk's Token Bar",
+		"ftb": "Flash Token Bar",
+		"rer": "Epic Rolls",
+		"expandedHints": {
+			"none": "豁免检定自动掷骰，无需玩家交互。掷骰结果仅对GM显示（私密）。",
+			"nonePublic": "豁免检定自动掷骰，无需玩家交互。掷骰结果对所有玩家公开显示。",
+			"noneDialogPublic": "豁免检定自动掷骰，但会先显示掷骰配置对话框，允许修改。掷骰结果公开显示。",
+			"noneDialogPrivate": "豁免检定自动掷骰，但会先显示掷骰配置对话框，允许修改。掷骰结果仅对GM显示（私密）。",
+			"noneDialogSelf": "豁免检定自动掷骰，但会先显示掷骰配置对话框，允许修改。掷骰结果仅对掷骰玩家显示。",
+			"noneDialogBlind": "豁免检定自动掷骰，但会先显示掷骰配置对话框，允许修改。掷骰结果以盲骰形式发送。",
+			"chat": "通过聊天消息按钮提示玩家进行豁免检定。",
+			"mtb": "玩家通过Monks Token Bar界面进行豁免检定。需要安装Monks Token Bar模组。",
+			"ftb": "玩家通过Flash Token Bar弹出窗口进行豁免检定。需要安装Flash Rolls 5e模组。",
+			"rer": "玩家通过Ripper's Epic Rolls界面进行豁免检定。需要安装Epic Rolls 5e模组。"
+		}
+	},
+	"midi-qol.playerRollSavesOptionsReduced": {
+		"none": "无",
+		"chat": "聊天消息"
+	},
+	"midi-qol.AutoRemoveTargetsOptions": {
+		"none": "从不",
+		"dead": "取消掷骰后死亡的目标",
+		"allGM": "取消死亡和所有GM的目标",
+		"all": "回合结束时取消所有目标"
+	},
+	"midi-qol.ColoredBordersOptions": {
+		"none": "禁用",
+		"borders": "仅限边框",
+		"borderNamesText": "边框 + 名称文本",
+		"borderNamesBackground": "边框 + 名称背景"
+	},
+	"midi-qol.hideRollDetailsOptions": {
+		"none": "关闭",
+		"detailsDSN": "掷骰公式，但仅显示 DSN 骰子",
+		"details": "掷骰公式",
+		"d20Only": "显示攻击D20骰子结果 + 总计伤害",
+		"hitDamage": "显示命中/未命中 + 总计伤害",
+		"hitCriticalDamage": "显示命中/未命中/重击/大失败 + 总计伤害",
+		"attackTotalOnly": "只显示攻击检定总值",
+		"d20AttackOnly": "仅显示攻击检定的D20骰子结果",
+		"all": "全部掷骰",
+		"expandedHints": {
+			"none": "不隐藏任何内容——玩家可以看到所有掷骰细节。",
+			"detailsDSN": "隐藏掷骰公式，但仍会掷出DSN骰子，让玩家看到动画。",
+			"details": "隐藏掷骰公式，且不显示DSN骰子。",
+			"d20Only": "仅显示攻击D20骰子结果和伤害总值。",
+			"hitDamage": "显示命中/未命中以及伤害总值。",
+			"hitCriticalDamage": "显示命中/未命中/重击/大失败以及伤害总值。",
+			"attackTotalOnly": "仅显示攻击检定总值。",
+			"d20AttackOnly": "仅显示攻击d20骰子结果。",
+			"all": "向玩家隐藏所有掷骰细节。"
+		}
+	},
+	"midi-qol.RollOtherDamageOptions": {
+		"none": "关闭",
+		"always": "总是",
+		"condition": "其他true条件",
+		"ifSave": "true条件 & 当前豁免"
+	},
+	"midi-qol.potion": "药水",
+	"midi-qol.HideRollDetails.Name": "隐藏 GM 掷骰详情",
+	"midi-qol.HideRollDetails.Hint": "选择 GM 掷骰对玩家隐藏/显示多少内容",
+	"midi-qol.DiceRolled": "<div>已掷骰</div>",
+	"midi-qol.ForceHideRoll.Name": "完全隐藏暗骰、盲骰、自骰",
+	"midi-qol.ForceHideRoll.Hint": "原本查看不到掷骰结果的玩家，将完全看不到掷骰的进行。",
+	"midi-qol.EnableWorkflow.Name": "启用掷骰自动化",
+	"midi-qol.EnableWorkflow.Hint": "启用后掷骰自动化可以在工作流设置面板里进行配置",
+	"midi-qol.playerControlsInvisibleTokens.Name": "角色控制拥有的隐藏token",
+	"midi-qol.playerControlsInvisibleTokens.Hint": "实验性 - 可能有用",
+	"midi-qol.Debug.Name": "启用调试模式",
+	"midi-qol.Debug.Hint": "如果不想控制台塞满日志就设为关闭。开启All也会启用CONFIG.hooks.debug",
+	"midi-qol.AllowUseMacro.Name": "使用物品时调用宏",
+	"midi-qol.AllowActorUseMacro.Name": "在角色表中添加[角色的使用宏]",
+	"midi-qol.AllowUseMacro.Hint": "启用后，填写一个宏的名字，每次使用物品时将会被调用。详情参见Readme",
+	"midi-qol.onUseMacroLabel": "物品调用宏",
+	"midi-qol.onUseMacroOptions": {
+		"preTargeting": "在确定目标之前调用 (*)",
+		"preItemRoll": "在物品掷骰之前调用(*)",
+		"templatePlaced": "仅在放置测量板时调用",
+		"preAttackRoll": "在攻击检定前",
+		"preAttackRollConfig": "在攻击前配置",
+		"preCheckHits": "在检查命中前",
+		"postAttackRoll": "在攻击检定后",
+		"preDamageRoll": "在伤害骰前",
+		"postDamageRoll": "在伤害骰后",
+		"damageBonus": "返还伤害加值",
+		"preSave": "在豁免检定前",
+		"postSave": "在豁免检定后",
+		"preDamageRollConfig": "伤害配置前",
+		"preDamageApplication": "在伤害应用前",
+		"preActiveEffects": "在动态效果生效前",
+		"postActiveEffects": "在动态效果生效后",
+		"isTargeted": "目标已被标记，但物品尚未掷骰",
+		"isPreAttacked": "目标即将受到攻击，在做出反应之前",
+		"isAttacked": "目标受到攻击",
+		"isHit": "命中目标",
+		"preTargetSave": "目标即将进行豁免",
+		"isSave": "目标进行豁免",
+		"isSaveSuccess": "目标进行成功豁免",
+		"isSaveFailure": "目标进行失败豁免",
+		"preTargetDamageApplication": "目标即将被物品伤害",
+		"postTargetEffectApplication": "目标受到掷骰物品的影响",
+		"isDamaged": "目标受到攻击伤害",
+		"all": "全部"
+	},
+	"midi-qol.DragDropTarget.Name": "拖放目标",
+	"midi-qol.DragDropTarget.Hint": "允许把物品拖放到token上来攻击它",
+	"midi-qol.AutoAttack.Name": "自动掷攻击检定",
+	"midi-qol.AutoDamage.Name": "自动掷伤害骰",
+	"midi-qol.AutoFastForwardAttack.Name": "自动快进攻击",
+	"midi-qol.AutoFastForwardDamage.Name": "自动快进伤害",
+	"midi-qol.midi-none": "无伤",
+	"midi-qol.noType": "无类型",
+	"midi-qol.vitalityDamage": "活力",
+	"midi-qol.vitalityHealing": "活力",
+	"midi-qol.ItemList": "选择在卡上显示详细的物品类别",
+	"midi-qol.DisplayItems": "显示细节",
+	"midi-qol.fastForward": "(快进)",
+	"midi-qol.RollOtherDamage.Name": "远程武器/近战武器攻击时掷其他伤害公式",
+	"midi-qol.RollOtherSpellDamage.Name": "为法术掷其他伤害公式",
+	"midi-qol.RollOtherDamage.Hint": "<strong>关闭</strong> 不自动掷其他伤害骰。<br><strong>true条件 & 当前豁免</strong> 如果条件不为空且结果为true，或者物品有豁免且激活条件不为false。<br><strong>条件</strong>  如果其他伤害条件为空或结果为 true，则掷骰其他伤害",
+	"midi-qol.ApplyEffects": "应用动态效果",
+	"midi-qol.spell-damage": "法术伤害",
+	"midi-qol.RemoveButtons.Name": "掷骰后移除聊天卡片按钮",
+	"midi-qol.ActiveConcentrationSpell.Title": "专注法术激活",
+	"midi-qol.ActiveConcentrationSpell.ContentNamed": "<p>你正专注于<em>@NAME@</em>。要结束专注并继续吗？</p>",
+	"midi-qol.ActiveConcentrationSpell.ContentGeneric": "<p>你正处于专注中。要结束专注并继续吗？</p>",
+	"midi-qol.ConcentrationAutomation.Name": "启用Midi-qol专注自动管理",
+	"midi-qol.ConcentrationAutomation.Hint": "如果启用，midi 将处理专注管理，你必须禁用 <strong>DnD5e</strong>专注。<br>如果未禁用 <strong>DnD5e</strong>专注，该设置将被强制设置为未选中。<br>建议使用 <strong>DnD5e</strong>专注，其余设置将与 <strong>Dnd5e</strong>专注一起工作。",
+	"midi-qol.SingleConcentrationRoll.Name": "单次专注检定",
+	"midi-qol.SingleConcentrationRoll.Hint": "启用后，骰正常伤害+豁免+其他/多用的伤害骰的攻击将只会进行单次合计伤害的专注检定",
+	"midi-qol.TempHPDamageConcentrationCheck.Name": "临时HP专注检定",
+	"midi-qol.TempHPDamageConcentrationCheck.Hint": "如果启用，临时 HP 降低也会触发专注检定。<br><strong>禁用此功能是自定义规则。根据DND5E规则书，临时生命值伤害会触发专注检定</strong>",
+	"midi-qol.RemoveConcentrationEffects.Name": "移除效果时移除专注",
+	"midi-qol.RemoveConcentrationEffects.Hint": "检查何时移除效果(效果和测量板)。如果专注法术/特性的所有效果和模板都已移除，则移除专注。",
+	"midi-qol.RemoveConcentrationEffectsOptions": {
+		"none": "从不",
+		"effects": "检查效果",
+		"effectsTemplates": "检查效果和测量板"
+	},
+	"midi-qol.Config": {
+		"Tabs": {
+			"gm": "GM",
+			"player": "Pl",
+			"workflow": "工作流",
+			"concentration": "专注",
+			"reactions": "反应",
+			"misc": "杂项",
+			"mechanics": "机制",
+			"rules": "规则",
+			"quick": "快速设置"
+		}
+	},
+	"midi-qol.SoundSettings.Tab": "声音",
+	"midi-qol.Targeting": "目标",
+	"midi-qol.Special": "特殊",
+	"midi-qol.Hits": "命中",
+	"midi-qol.Misses": "未命中",
+	"midi-qol.Saves": "豁免",
+	"midi-qol.SavesBase": "如果目标成功豁免，物品伤害会造成",
+	"midi-qol.SavesBonus": "如果目标成功豁免，加值伤害宏会造成",
+	"midi-qol.SavesOther": "如果目标成功豁免，其他伤害会造成",
+	"midi-qol.Damage": "伤害",
+	"midi-qol.Concentrating": "专注",
+	"midi-qol.concentrationCheckName": "专注",
+	"midi-qol.DamageMacro.Name": "额外伤害宏",
+	"midi-qol.concentrationActivationCondition": "专注",
+	"midi-qol.DamageMacro.Hint": "在计算将要对目标应用的伤害时调用的宏的列表，用逗号分隔",
+	"midi-qol.AttackMacro.Name": "攻击加值宏",
+	"midi-qol.AttackMacro.Hint": "在计算攻击检定结果是否命中目标时调用的宏的列表，用逗号分隔",
+	"midi-qol.DAEMidiQOL": "DAE/Midi-QOL特定",
+	"midi-qol.OptionalRules.Name": "游戏规则",
+	"midi-qol.OptionalRules.Hint": "你可能希望启用的一些DND5E游戏规则。通常无法与better rolls协同使用。",
+	"midi-qol.InvisAdvantage.Name": "隐藏/隐身攻击者在攻击时获得优势/劣势",
+	"midi-qol.RAW2014Invisible.Hint": "<strong>RAW(2014)</strong> 隐形状态总是提供优势/劣势；其他感官（盲视、震颤感知）会抵消来自不可见的优势/劣势。",
+	"midi-qol.RAW2024Invisible.Hint": "<strong>RAW(2024)</strong> 仅当其他生物无法<em>看见</em>你时提供优势/劣势——盲视/真实视觉可抵消，但震颤感知不能。",
+	"midi-qol.InvisAdvantageOptions": {
+		"none": "不应用",
+		"RAW2014": "RAW(2014)",
+		"RAW2024": "RAW(2024)",
+		"vision": "使用token视觉"
+	},
+	"midi-qol.InvisVision.Name": "检查时强制视觉",
+	"midi-qol.InvisVision.Hint": "<strong>勾选：</strong>所有 Token 都已启用视觉。<br><strong>未勾选：</strong> 没有视觉的 Token 可以看到一切",
+	"midi-qol.HiddenAdvantage.Name": "隐匿的攻击者在进行攻击检定时获得优势/劣势",
+	"midi-qol.HiddenAdvantage.Hint": "隐匿的攻击者在进行攻击检定时获得优势。如果被攻击目标为隐匿，则对其进行的攻击检定承受劣势",
+	"midi-qol.HiddenAdvantageOptions": {
+		"none": "不应用",
+		"effect": "检查'隐藏Hidden'状态",
+		"perceptive": "察觉Perceptive"
+	},
+	"midi-qol.CantSeeAdvantage.Hint": "<strong>使用 Token 视觉：</strong>隐形的攻击者对看不到他们的目标所进行的进行攻击检定获得优势。如果攻击者看不到隐形目标，则对其进行的攻击检定承受劣势。",
+	"midi-qol.CheckRange.Name": "攻击时检查武器射程",
+	"midi-qol.CheckRangeOptions": {
+		"none": "不检查",
+		"longfail": "目标距离 > 最长射程: 失败",
+		"longdisadv": "目标距离 > 最长射程: 劣势"
+	},
+	"midi-qol.NearbyFoe.Name": "当敌人距离比此值更近时，远程攻击处于劣势。0 表示禁用",
+	"midi-qol.WallsBlockRange.Name": "墙壁遮挡远程攻击",
+	"midi-qol.WallsBlockRange.Hint": "如果掩护模组判定为完全掩护，则攻击被阻挡。",
+	"midi-qol.WallsBlockRangeOptionsNew": {
+		"none": "不启用",
+		"center": "中心",
+		"centerLevels": "中心 + Levels",
+		"levelsautocover": "levels Auto Cover",
+		"simbuls-cover-calculator": "Simbul's Cover Calculator",
+		"tokencover": "Alternative Token Cover",
+		"simplecover5e": "Simple Cover 5e",
+		"expandedHints": {
+			"none": "墙壁不阻挡远程攻击检定。",
+			"center": "检查从Token中心到目标中心的视线。如果墙壁阻挡了视线，则攻击被阻挡。",
+			"centerLevels": "使用 Levels 模组确定墙壁是否阻挡视线，进行中心到中心的检查。同时使用 Levels 的体积模板进行模板目标定位。需要 Levels 模组。",
+			"levelsautocover": "使用 Levels Auto Cover 模组计算掩护。完全掩护会阻挡攻击。需要 Levels Auto Cover 模组。",
+			"simbuls-cover-calculator": "使用 Simbul's Cover Calculator 模组计算掩护。完全掩护会阻挡攻击。需要 Simbul's Cover Calculator 模组。",
+			"tokencover": "使用 Alternative Token Cover 模组计算掩护。完全掩护会阻挡攻击。需要 Alternative Token Cover 模组。",
+			"simplecover5e": "使用 Simple Cover 5e 模组计算掩护。完全掩护会阻挡攻击。需要 Simple Cover 5e 模组。"
+		}
+	},
+	"midi-qol.NearbyAllyRanged.Name": "(房规) 对盟友身旁的敌人进行远程攻击时带有劣势。",
+	"midi-qol.WallsBlockRangeOptions": {
+		"none": "禁用",
+		"center": "中心",
+		"centerLevels": "中心 + Levels"
+	},
+	"midi-qol.CoverCalculation.Name": "计算掩护",
+	"midi-qol.CoverCalculation.Hint": "为掩护中的目标计算 AC 加值 - 设置取自所选模组",
+	"midi-qol.CoverCalculationOptions": {
+		"none": "禁用",
+		"simbuls-cover-calculator": "Simbul's Cover Calculator",
+		"simplecover5e": "Simple Cover 5e",
+		"levelsautocover": "Levels Auto Cover",
+		"tokencover": "Alternative Token Cover"
+	},
+	"midi-qol.NearbyAllyRanged.Hint": "对距离盟友5尺内的敌人(小于w*h体型)进行远程攻击带有劣势。0为禁用",
+	"midi-qol.Incapacitated.Name": "当失能角色采取行动时，MidiQOL 应该",
+	"midi-qol.IncapacitatedOptions": {
+		"nothing": "不管",
+		"enforce": "禁止",
+		"warn": "警告"
+	},
+	"midi-qol.RemoveHiddenInvis.Name": "进行攻击将移除隐匿/隐形的状态(需要DCE/CV/CUB/core)",
+	"midi-qol.CriticalSaves.Name": "(房规)大成功/大失败总是令豁免检定成功/失败",
+	"midi-qol.MaxDRValue.Name": "(房规) 启用后，仅应用最大的伤害减值。关闭时会累计 DR",
+	"midi-qol.DRAllPerDamageDetail.Name": "(房规) DRALL (DR.rwak/...) 会从攻击伤害和其他伤害中扣除。",
+	"midi-qol.DRAllPerDamageDetail.Hint": "未选中表示 DRALL 只对总伤害应用一次",
+	"midi-qol.invisible": "隐形",
+	"midi-qol.hidden": "隐匿",
+	"midi-qol.nevertarget": "无目标",
+	"midi-qol.DamageCardMultHeader": "加倍",
+	"midi-qol.DamageCardUndoHeader": "撤销",
+	"midi-qol.DamageCardApplyHeader": "应用",
+	"midi-qol.DamageCardCalc": "计算",
+	"midi-qol.DamageCardHeal": "治愈",
+	"midi-qol.DamageCardAll": "全部",
+	"midi-qol.StatsTitle": "掷骰统计",
+	"midi-qol.RollStats": "统计数据",
+	"midi-qol.RollStatsConfig": "统计配置",
+	"midi-qol.RemoveStats": "清除统计数据",
+	"midi-qol.ClearStats": "清空所有统计数据",
+	"midi-qol.EndSession": "清空单次战局统计数据",
+	"midi-qol.KeepRollStats.Name": "掷骰统计数据",
+	"midi-qol.KeepRollStats.Hint": "记录角色的攻击和伤害掷骰数据",
+	"midi-qol.SaveStatsEvery.Name": "保存统计数据频率",
+	"midi-qol.SaveStatsEvery.Hint": "每 N 次掷骰保存一次统计数据。每次攻击和伤害记作一次掷骰。建议频率为 10-20 次以上",
+	"midi-qol.PlayerStatsOnly.Name": "仅玩家统计数据",
+	"midi-qol.PlayerStatsOnly.Hint": "仅保留玩家控制的角色的统计数据",
+	"midi-qol.ShowStats": "显示掷骰统计",
+	"midi-qol.stats.Attacks": "攻击",
+	"midi-qol.stats.Damage": "伤害",
+	"midi-qol.stats.Saves": "豁免",
+	"midi-qol.stats.Session": "会话",
+	"midi-qol.stats.Lifetime": "总计",
+	"midi-qol.stats.rolls": "掷骰次数",
+	"midi-qol.stats.crits": "重击",
+	"midi-qol.stats.fumbles": "大失败",
+	"midi-qol.stats.hits": "命中",
+	"midi-qol.stats.nat20s": "N20",
+	"midi-qol.stats.Avg": "平均",
+	"midi-qol.stats.Applied": "已应用",
+	"midi-qol.stats.total": "总计",
+	"midi-qol.stats.pass": "通过",
+	"midi-qol.stats.fail": "失败",
+	"midi-qol.stats.ItemBreakdown": "物品详情",
+	"midi-qol.stats.Item": "物品",
+	"midi-qol.stats.Rolls": "掷骰",
+	"midi-qol.stats.Hits": "命中",
+	"midi-qol.stats.Crits": "重击",
+	"midi-qol.stats.Adv": "优势",
+	"midi-qol.stats.Dis": "劣势",
+	"midi-qol.stats.avgCrit": "平均重击",
+	"midi-qol.stats.AvgDmg": "平均伤害",
+	"midi-qol.stats.AppliedShort": "已应用",
+	"midi-qol.stats.SavesCol": "豁免",
+	"midi-qol.stats.hitRate": "命中率",
+	"midi-qol.stats.avgRoll": "平均掷骰值",
+	"midi-qol.stats.maxHit": "最大命中",
+	"midi-qol.stats.healed": "治疗",
+	"midi-qol.stats.kills": "击杀",
+	"midi-qol.stats.Defence": "防御",
+	"midi-qol.stats.Taken": "承受",
+	"midi-qol.stats.conc": "专注",
+	"midi-qol.stats.death": "死亡",
+	"midi-qol.stats.rolled": "已掷骰",
+	"midi-qol.stats.applied": "已应用",
+	"midi-qol.stats.NoStats": "暂无统计记录。",
+	"midi-qol.stats.SettingsSection": "设置",
+	"midi-qol.stats.ExportSection": "导出",
+	"midi-qol.stats.SessionSection": "会话",
+	"midi-qol.stats.DangerSection": "Danger Zone",
+	"midi-qol.stats.RemoveActorSection": "移除角色统计",
+	"midi-qol.DefaultSaveMult.Name": "默认豁免检定乘数",
+	"midi-qol.DefaultSaveMult.Hint": "如果没有指定其他调整值，豁免检定计算伤害时，将以此值乘以原本的攻击伤害。默认值为 0.5，即豁免成功时伤害减半。仅当你知道该机制如何起效时才应修改此值",
+	"midi-qol.RequireMagical.Name": "需要设置‘魔法’属性",
+	"midi-qol.RequireMagical.Hint": "魔法属性可以是dnd5e属性的‘魔法’或的‘midi-qol魔法伤害’属性，启用后该物品将造成魔法伤害。‘关闭’则非武器默认造成魔法伤害，武器仅在物品的魔法属性设置时造成魔法伤害。‘非法术’则仅只有法术默认造成魔法伤害。‘全部’则没有物品默认造成魔法伤害",
+	"midi-qol.RequireMagicalOptions": {
+		"off": "关闭：非武器造成魔法伤害",
+		"nonspell": "非法术造成非魔法伤害",
+		"allitems": "所有物品造成非魔法伤害"
+	},
+	"midi-qol.DoConcentrationCheck.Name": "受到伤害时强制进行专注豁免",
+	"midi-qol.DoConcentrationCheckOptions": {
+		"none": "从不",
+		"chatOnly": "仅聊天消息(dnd5e默认行为)",
+		"chat": "聊天消息 + 自动掷骰",
+		"item": "掷骰专注"
+	},
+	"midi-qol.DoConcentrationCheck.Hint": "<strong>仅聊天消息</strong>：显示带按钮的聊天消息(dnd5e 默认行为和所需 dnd5e 专注)。<br><strong>聊天消息 + 自动掷骰</strong>：显示聊天信息并自动掷豁免检定(需要 dnd5e 专注功能)。<br><strong>掷骰专注</strong>：掷一次专注检定(midi 标准行为)",
+	"midi-qol.RemoveConcentration.Name": "豁免失败时移除专注状态",
+	"midi-qol.UsePlayerPortrait.Name": "聊天卡片使用角色立绘",
+	"midi-qol.UsePlayerPortrait.Hint": "启用后，midi-qol 的聊天卡片将会使用角色的立绘图，而非原本的token图像",
+	"midi-qol.DistanceIncludesHeight.Name": "计算距离时包含高度差距",
+	"midi-qol.DistanceMeasurement.Name": "距离测量方法",
+	"midi-qol.DistanceMeasurement.Hint": "如何测量Token之间的距离。'默认'使用 FVTT 测量方法（通过 measurePath 进行中心到中心测量）。'网格方格中心'使用最近的网格方格中心，并经过 midi-qol 处理。'Token边缘'使用Token边缘上最近的点（对于大型Token更精确）。",
+	"midi-qol.DistanceMeasurementOptions.default": "默认（FVTT）",
+	"midi-qol.DistanceMeasurementOptions.center": "网格方格中心",
+	"midi-qol.DistanceMeasurementOptions.perimeter": "Token边缘",
+	"midi-qol.NoSocketLib": "Midi-qol 需要安装并启用 socketlib",
+	"midi-qol.chatlogPruneWarning": "警告",
+	"midi-qol.chatlogPruneDeprecated": "Midi-qol 内置的聊天日志清理功能已弃用，将在 13.1 版本中移除。",
+	"midi-qol.chatlogPruneInstallHint": "请安装并启用 'chatlog-prune' 模组。记得在模组设置中启用聊天日志清理功能。",
+	"midi-qol.chatlogPruneEnableHint": "'chatlog-prune' 模组已安装，但聊天日志清理功能未启用。请在 chatlog-prune 模组设置中启用它。",
+	"midi-qol.confirm": "确认对话框",
+	"midi-qol.ExportConfig": "导出 Midi-QoL 设置到 JSON 文件",
+	"midi-qol.ImportConfig": "从 JSON 文件导入 Midi-QoL 设置",
+	"midi-qol.flags.midi-qol.bardicInspiration": "吟游激励",
+	"midi-qol.ExportJSon": "导出掷骰统计到 Json 文件",
+	"midi-qol.ExportCSV": "导出掷骰统计到 CSV 文件",
+	"midi-qol.AutoCEEffectsOptions": {
+		"none": "仅行动组合效果",
+		"itempri": "应用行动组合效果，如果无行动组合效果则应用 DCE",
+		"cepri": "应用 DCE，如果 DCE 则应用行动组合效果",
+		"both": "应用 DCE 与行动组合效果"
+	},
+	"midi-qol.AutoCEEffects.Name": "应用DCE效果",
+	"midi-qol.AutoCEEffects.Hint": "使用物品时，应用与行动名称(若无匹配则使用物品名称)相匹配的DCE效果。此功能需要同时启用自动应用主动效果。",
+	"midi-qol.BonusACCover": "AC 掩护",
+	"midi-qol.NoChangelogs": "Midi-qol 支持并建议使用 ChangeLogs 或 Module Manager+ 模组来显示最新更新引入的所有变化",
+	"midi-qol.ActiveDefenceString": "主动防御",
+	"midi-qol.ActiveDefence.Name": "主动防御",
+	"midi-qol.ActiveDefenceModifier.Name": "主动防御调整",
+	"midi-qol.ActiveDefenceModifier.Hint": "主动防御DC将为 `攻击加值 + 此调整值`，主动防御掷骰将为 `1d20 + 护甲等级 - (22 - 此调整值)`。<br>数值本身不重要，只需选择让掷骰结果看起来符合你预期的值即可。<br>建议值为 <strong>12</strong>、10 或 0。",
+	"midi-qol.ActiveDefence.Hint": "与 GM 掷‘命中’检定相反，玩家掷防御检定。",
+	"midi-qol.ActiveDefenceDC.Name": "显示主动防御DC",
+	"midi-qol.ActiveDefenceDC.Hint": "若启用，将在聊天卡中显示主动防御DC",
+	"midi-qol.ActiveDefenceShow.Name": "主动防御检定的默认显示方式",
+	"midi-qol.ActiveDefenceShow.Hint": "如果设置为'自骰'，则无论其他设置如何，掷骰都将对 GM 隐藏",
+	"midi-qol.GMHide3dDice.Name": "隐藏 GM 攻击/伤害/豁免的 3D 掷骰 - 覆写其他设置(仅限合并卡片)",
+	"midi-qol.GhostRolls.Name": "攻击/伤害骰显示为‘dice so nice 隐骰’而非隐藏掷骰(仅限合并卡片)",
+	"midi-qol.convenientEffectsOn": "应用便捷效果",
+	"midi-qol.convenientEffectsOff": "不应用便捷效果",
+	"midi-qol.ConsumeResource.Name": "跳过消耗资源对话框",
+	"midi-qol.ConsumeResource.Hint": "启用后，跳过消耗资源对话框(消耗默认资源/法术位并放置测量板)，除非已无对应环级的法术位可用，或者在点击时按下优势+劣势键",
+	"midi-qol.ConsumeResourceOptions": {
+		"none": "不自动消耗",
+		"spell": "自动消耗法术位",
+		"item": "自动消耗资源/使用次数",
+		"both": "自动消耗资源/法术位"
+	},
+	"midi-qol.ChallengeModeArmor.Name": "启用挑战模式AC",
+	"midi-qol.ChallengeModeArmorOptions": {
+		"none": "禁用挑战模式护甲",
+		"challenge": "挑战模式护甲(基础)",
+		"scale": "挑战模式护甲(缩放)",
+		"scaleNoAR": "挑战模式护甲(缩放无 AR)"
+	},
+	"midi-qol.ChallengeModeArmor.Hint": "执行挑战模式护甲的规则 - 查看自述文件来获取更多信息",
+	"midi-qol.ChallengeModeArmorScale.Hint": "执行修改后的挑战模式护甲规则--更多信息请参阅自述文件",
+	"midi-qol.ChallengeModeArmorScaleNoAR.Hint": "执行修改后的挑战模式护甲规则，但不使用 AR 减少传入伤害--更多信息请参阅 readme",
+	"midi-qol.NonSilverPhysical": "非银制物理",
+	"midi-qol.NonAdamantinePhysical": "非精金物理",
+	"midi-qol.NonMagicalPhysical": "非魔法物理",
+	"midi-qol.Physical": "物理伤害",
+	"midi-qol.Magical": "魔法伤害",
+	"midi-qol.NonMagical": "非魔法伤害",
+	"midi-qol.SpellDamage": "法术伤害",
+	"midi-qol.NonSpellDamage": "非法术伤害",
+	"midi-qol.ConditionHeader": "激活条件",
+	"midi-qol.ItemActivationCondition.Name": "如果为 true，允许使用项目(已弃用)",
+	"midi-qol.ReactionActivationCondition.Name": "如果为 true，将触发反应(已弃用)",
+	"midi-qol.OtherActivationCondition.Name": "如果为真，将掷骰其他公式(已弃用)",
+	"midi-qol.HPUpdated": "HP 更新",
+	"midi-qol.HPNPCUpdated": "NPC HP 更新",
+	"midi-qol.HPNotUpdated": "HP 未更新",
+	"midi-qol.reactionDamaged": "受伤后",
+	"midi-qol.reactionManual": "手册",
+	"midi-qol.reactionPreAttack": "每次攻击检定",
+	"midi-qol.ddbGL.Name": "启用 ddb-game-log 支持",
+	"midi-qol.ddbGL.Hint": "接受来自 ddb-game-log 的攻击/伤害/豁免检定触发 Foundry 中的 midi 工作流",
+	"midi-qol.ShowReactionChatMessage.Name": "为反应显示聊天提示",
+	"midi-qol.reactionFlavorHit": "{actorName} 被 {itemName} 击中，可以使用反应",
+	"midi-qol.reactionFlavorTargeted": "{actorName} 是 {itemName} 的目标，可以使用反应",
+	"midi-qol.reactionFlavorMiss": "{actorName} 被 {itemName} 击失，可以使用反应",
+	"midi-qol.reactionFlavorCrit": "{actorName} 被 {itemName} 重击，可以使用反应",
+	"midi-qol.reactionFlavorFumble": "{actorName} 被 {itemName} 攻击，后者失误并可以使用反应 ",
+	"midi-qol.reactionFlavorHeal": "{actorName} 被 {itemName} 治疗，可以使用反应",
+	"midi-qol.reactionFlavorDamage": "{actorName} 被 {itemName}造成伤害，可以使用反应",
+	"midi-qol.reactionFlavorAttacked": "{actorName} 被 {itemName} 攻击，可以使用反应",
+	"midi-qol.reactionFlavorPreAttack": "{actorName} 即将受到 {itemName} 的攻击，可以使用反应",
+	"midi-qol.reactionFlavorSave": "由于 {itemName} 的原因，{actorName} 必须进行豁免，并且可以使用反应",
+	"midi-qol.reactionFlavorSaveFail": "由于 {itemName} 的原因，{actorName} 豁免失败，并且可以使用反应",
+	"midi-qol.reactionFlavorSaveSuccess": "由于 {itemName} 的原因，{actorName} 豁免成功，并且可以使用反应",
+	"midi-qol.reactionFlavorMoved": "被移动",
+	"midi-qol.reactionUsed": "已使用反应",
+	"midi-qol.bonusActionUsed": "已使用附赠动作",
+	"midi-qol.AccelKeysOverride.Name": "Midi-qol 快捷键覆盖其他设置",
+	"midi-qol.AccelKeysOverride.Hint": "启用后，midi 将会始终使用优势/劣势的快捷键映射，而非交给诸如 better rolls 的其他模组",
+	"midi-qol.NoWorkflow": "物品 {itemName} 没有工作流",
+	"midi-qol._comment for translators_DeferText": "下面的文本由 midi 在物品数据的 onUseMacro 字段中搜索。如果你修改了它，那么所有带有 onUseMacro 的物品都需要修改以匹配",
+	"midi-qol.DeferText": "[Defer]",
+	"midi-qol._comment for translators_ItemMacroText": "下面的文本由 midi 在物品数据的 onUseMacro 字段中搜索。如果你修改了它，那么所有带有 onUseMacro 的物品都需要修改以匹配",
+	"midi-qol.ItemMacroText": "ItemMacro",
+	"midi-qol.TargetConfirmationConfig.Name": "目标确认",
+	"midi-qol.TargetConfirmationConfig.Hint": "掷骰时，在完成前确认目标",
+	"midi-qol.TargetConfirmation.Name": "目标确认",
+  "midi-qol.TargetConfirmation.Blurb": "选择最多{targetCount} {targetType}。<br>按住Shift键点击Token以添加到目标列表。<br>右键点击列表中的项目以移除目标",
+  "midi-qol.TargetConfirmation.BlurbAny": "选择任意数量的目标。<br>按住Shift键点击Token以添加到目标列表。<br>右键点击列表中的项目以移除目标",
+	"midi-qol.AddDead.Name": "当HP=0：NPC变为被击败，PC变为昏迷状态",
+	"midi-qol.AddDead.Hint1": "Pl控制",
+	"midi-qol.AddDead.Hint2": "GM控制",
+	"midi-qol.markDefeated": "在战斗追踪中标记为战败",
+	"midi-qol.AddDeadOptions": {
+		"none": "不更新",
+		"overlay": "添加效果为覆盖",
+		"normal": "添加效果为图标"
+	},
+	"midi-qol.Wounded": "重伤",
+	"midi-qol.AddWounded.Name": "当HP低于__%时标记为重伤",
+	"midi-qol.AddWounded.Hint": "当生命值小于或等于最大生命值的特定百分比时，添加选中状态。设为 0 则禁用此功能。",
+	"midi-qol.debugCallTiming.Name": "记录执行时间",
+	"midi-qol.debugCallTiming.Hint": "提供一些耗时相关的日志信息",
+	"midi-qol.autoFailFriendly": "友好自动失败",
+	"midi-qol.FailFriendly": "友好失败",
+	"midi-qol.SaveFriendly": "友好豁免",
+	"midi-qol.OffHandWeapon": "副手",
+	"midi-qol.RollToggle.Hint": "按住时为攻击/伤害/属性检定切换快速/自动掷骰设置",
+	"midi-qol.RollToggle.Name": "掷骰切换",
+	"midi-qol.FastForward.Hint": "按住时快进所有掷骰",
+	"midi-qol.FastForward.Name": "快进",
+	"midi-qol.KeysAdvantage.Hint": "掷骰优势",
+	"midi-qol.KeysDisadvantage.Hint": "掷骰劣势",
+	"midi-qol.KeysCritical.Hint": "掷骰重击伤害(仅自聊天卡片)",
+	"midi-qol.KeysVersatile.Hint": "掷多用伤害",
+	"midi-qol.KeysOther.Hint": "掷伤害的其他公式",
+	"midi-qol.FixStickyKeys.Name": "修复粘连的 Alt/Ctrl/Shift",
+	"midi-qol.FixStickyKeys.Hint": "启用后，Midi 将会尝试解决 Alt/Ctrl/Shift 卡在开启状态的问题",
+	"midi-qol.DisplaySaveAdvantage.Name": "显示豁免的优势/劣势",
+	"midi-qol.QuickSettingsBlurb": "快速设置允许你一次性配置一组设置组合。<br>点击下方任一按钮后，更改将立即应用到你的设置中。<br>应用完成后将显示更改列表<br>欢迎提出改进建议",
+	"midi-qol.Reaction.Title": "反应处理",
+	"midi-qol.GMDoReactionsOptions": {
+		"all": "启用",
+		"allMI": "启用 + Magic Items",
+		"none": "关闭"
+	},
+	"midi-qol.DoReactionsOptions": {
+		"all": "启用",
+		"allMI": "启用 + Magic Items",
+		"none": "关闭"
+	},
+	"midi-qol.ShowReactionAttackRoll.Name": "显示攻击检定",
+	"midi-qol.ShowReactionAttackRollOptions": {
+		"none": "攻击命中",
+		"d20": "d20 掷骰",
+		"all": "攻击检定合计值",
+		"allCrit": "攻击检定合计值 + 重击"
+	},
+	"midi-qol.Reactions": "提示反应",
+	"midi-qol.DoReactions.Name": "检查玩家反应",
+	"midi-qol.DoReactions.Hint": "给被攻击的角色在决定掷骰前使用反应的选项。命中时的反应需要开启'自动确认攻击命中目标'。如果应用伤害则进行伤害反应",
+	"midi-qol.GMDoReactions.Name": "检查 NPC/GM 反应",
+	"midi-qol.ReactionTimeout.Name": "反应检查超时",
+	"midi-qol.ReactionTimeout.Hint": "等待选择反应的时间，超时则假定没有进行反应",
+	"midi-qol.NoOptionalRules.Name": "无规则",
+	"midi-qol.NoOptionalRules.Hint": "本次掷骰禁用规则",
+	"midi-qol.RecordAOO.Name": "记录借机攻击",
+	"midi-qol.RecordAOO.Hint": "当一个角色在其回合外进行了一次攻击时——标记他们的反应已使用",
+	"midi-qol.RecordAOOOptions": {
+		"none": "不启用",
+		"character": "仅角色",
+		"all": "所有角色"
+	},
+	"midi-qol.EnforceReactions.Name": "增强反应",
+	"midi-qol.EnforceReactions.Hint": "使用反应时，如果该轮已经使用过反应则显示提示",
+	"midi-qol.EnforceBonusActions.Name": "增强附赠动作",
+	"midi-qol.EnforceBonusActions.Hint": "使用附赠动作时，如果该轮已经使用过附赠动作则显示提示",
+	"midi-qol.EnforceReactionsOptions": {
+		"none": "不启用",
+		"displayOnly": "显示状态图标",
+		"character": "角色：使用过则提示",
+		"all": "所有角色：使用过则提示"
+	},
+	"midi-qol.EnforceReactions.Title": "已使用反应",
+	"midi-qol.EnforceReactions.Content": "你本轮已使用了反应。仍要继续吗？",
+	"midi-qol.EnforceBonusActions.Title": "附赠动作已使用",
+	"midi-qol.EnforceBonusActions.Content": "你本轮已使用了附赠动作。仍要继续吗？",
+	"midi-qol.SoundSettings.Name": "配置 Midi 自定义音效",
+	"midi-qol.SoundSettings.Hint": "为物品掷骰设置 midi-qol 自定义音效",
+	"midi-qol.SoundSettings.Label": "配置 Midi 自定义音效",
+	"midi-qol.LaunchSetupWizard.Name": "设置向导",
+    "midi-qol.LaunchSetupWizard.Label": "启动设置向导",
+    "midi-qol.LaunchSetupWizard.Hint": "打开逐步配置 midi-qol 的向导",
+	"midi-qol.SoundSettingsBlurb": "开始使用...<br>选择“创建示例播放列表”，这将创建一个名为“Midi 物品音效”的播放列表，其中包含一些音效<br>选择“基本设置”并进行调整<br>其他创建设置会添加更多细节/复杂度",
+	"midi-qol.AddRow": "添加一排",
+	"midi-qol.CheckFlanking.Name": "检查夹击",
+	"midi-qol.CheckFlanking.Hint": "检查你和你的盟友是否夹击对手。为攻击者提供优势，为攻击者施加<strong>夹击Flanking</strong>状态，或为<em>目标</em>施加<strong>被夹击Flanked</strong>状态。如果更改为使用Midi选项之一，需要重新启动。",
+	"midi-qol.CheckFlankingOptions": {
+		"off": "禁用",
+		"advonly": "仅优势",
+		"ceonly": "DCE夹击效果",
+		"midiFlanking": "Midi夹击效果",
+		"ceflanked": "DCE被夹击效果",
+		"midiFlanked": "Midi被夹击效果",
+		"ceflankedNoconga": "DCE被夹击 + 忽略被夹击目标",
+		"midiFlankedNoConga": "Midi被夹击 + 忽略被夹击目标",
+		"expandedHints": {
+			"off": "无夹击自动化。",
+			"advonly": "夹击为近战攻击提供优势。不会对任何Token应用效果或状态。",
+			"ceonly": "为攻击者应用DCE效果的“夹击”效果。仅该攻击者获得优势——同一目标的其他攻击者不会获得。",
+			"midiFlanking": "为攻击者应用 midi-qol 的“夹击”效果。仅该攻击者获得优势——同一目标的其他攻击者不会获得。",
+			"ceflanked": "为目标应用DCE效果的“被夹击”效果。所有对被夹击目标进行近战攻击的攻击者均获得优势。",
+			"midiFlanked": "为目标应用 midi-qol 的“被夹击”效果。所有对被夹击目标进行近战攻击的攻击者均获得优势。",
+			"ceflankedNoconga": "为目标应用DCE效果的“被夹击”效果。所有近战攻击者获得优势。已被夹击的Token不能算作盟友的夹击者。",
+			"midiFlankedNoConga": "为目标应用 midi-qol 的“被夹击”效果。所有近战攻击者获得优势。已被夹击的Token不能算作盟友的夹击者。"
+		}
+	},
+	"midi-qol.Flanked": "被夹击",
+	"midi-qol.Flanking": "夹击",
+	"midi-qol.FlankingBonus.Name": "夹击奖励类型",
+	"midi-qol.FlankingBonus.Hint": "检测到夹击时，给予优势（默认）或按固定数值降低目标的实际护甲等级（AC）。",
+	"midi-qol.SharpShooter": "神射手",
+	"midi-qol.SpellSniper": "法术射手",
+	"midi-qol.ShowFlankingHighlight.Name": "显示夹击位置",
+	"midi-qol.ShowFlankingHighlight.Hint": "高亮显示盟友可对当前目标形成夹击的网格位置。",
+	"midi-qol.FlankingBonusOptions.advantage": "优势",
+	"midi-qol.FlankingBonusOptions.1": "命中+1",
+	"midi-qol.FlankingBonusOptions.2": "命中+2",
+	"midi-qol.FlankingBonusOptions.3": "命中+3",
+	"midi-qol.FlankingBonusOptions.4": "命中+4",
+	"midi-qol.FlankingBonusOptions.5": "命中+5",
+	"midi-qol.FlankingLabel": "夹击",
+	"midi-qol.RollAlternate.Name": "移动掷骰公式到提示中",
+	"midi-qol.RollAlternate.Hint": "在合并卡上使用另一种掷骰显示，将掷骰公式移到提示中并添加的优势注解",
+	"midi-qol.RollAlternateOptions": {
+		"off": "默认提示",
+		"formula": "公式 -> 提示",
+		"adv": "优势注解",
+		"formulaadv": "公式 -> 提示 + 优势注解"
+	},
+	"midi-qol.OptionalCritRule.Name": "(房规)重击余量",
+	"midi-qol.OptionalCritRule.Hint": "攻击检定超过 AC 的差值超过此值，均为重击。设为 -1 以禁用",
+	"midi-qol.CriticalNat20.Name": "(房规)允许常规重击",
+	"midi-qol.CriticalNat20.Hint": "超过重击阈值的掷骰即使不符合保证[重击余量]要求，也仍视为重击。",
+	"midi-qol.ActorOnUseMacros": "角色的使用宏",
+	"midi-qol.MacroPass": "宏传递",
+	"midi-qol.MacroName": "宏名称",
+	"midi-qol.DamageRolled": "已掷骰",
+	"midi-qol.DamageApplied": "已应用",
+	"midi-qol.DamageDealt": "造成",
+	"midi-qol.HealingRolled": "治疗掷骰",
+	"midi-qol.HealingApplied": "治疗应用",
+	"midi-qol.Healed": "已治疗",
+	"midi-qol.FumbleThreshold": "失败阈值",
+	"midi-qol.ActionSpecialDurationImmediate.Name": "掷骰，1次命中/1次攻击/1次动作将失效",
+	"midi-qol.ActionSpecialDurationImmediate.Hint": "攻击/命中/动作特殊持续时间效果过期前不等待伤害掷骰",
+	"midi-qol.IgnoreSpellReactionRestriction.Name": "允许使用任何反应法术",
+	"midi-qol.IgnoreSpellReactionRestriction.Hint": "选择反应法术时不需要可用的法术位或准备",
+	"midi-qol.DamageVulnerabilityMultiplier.Name": "易伤伤害倍数",
+	"midi-qol.DamageResistanceMultiplier.Name": "抗性伤害倍数",
+	"midi-qol.DamageImmunityMultiplier.Name": "免疫伤害倍数",
+	"midi-qol.ShowFastForward.Name": "显示快进掷骰",
+	"midi-qol.ShowFastForward.Hint": "在攻击和伤害按钮上显示快进掷骰指示",
+	"midi-qol.MeasuredTemplate": "测量板",
+	"midi-qol.AutoRemoveTemplate.Name": "法术结束时自动移除已放置的测量板",
+	"midi-qol.AutoRemoveSummonedCreature.Name": "在物品失效/专注移除时自动移除召唤生物(适用于 dnd5e 召唤物品)",
+	"midi-qol.AutoUndoTransformations.Name": "效果/专注结束时自动撤销变形效果",
+	"midi-qol.AutoUndoTransformations.Hint": "对目标施放变形效果时，为施法者添加一个追踪变形状态的效果/专注，在效果结束/专注移除时自动将目标恢复为原始形态",
+	"midi-qol.AttackPerTarget.Name": "对每个目标分别进行攻击检定",
+	"midi-qol.SkillAbilityCheckAdvantage.Name": "优势赋予技能检定优势",
+	"midi-qol.SkillAbilityCheckAdvantage.Hint": "如果角色在属性检定上获得优势/劣势，则基于该属性的技能也获得优势/劣势",
+	"midi-qol.ignoreTotalCover": "无全身掩护(已弃用)",
+	"midi-qol.InitPromptTitle": "先攻检定",
+	"midi-qol.HighlightSuccess.Name": "着色命中/失误/豁免显示",
+	"midi-qol.HighlightSuccess.Hint": "显示命中/失误时，命中/豁免为绿色，失误/豁免失败为红色",
+	"midi-qol.HighLightCriticalAttackOnly.Name": "只高亮重击/大失败命中",
+	"midi-qol.HighLightCriticalAttackOnly.Hint": "覆盖 dnd5e 高亮显示攻击命中和未命中，只突出显示重击/大失败攻击检定",
+	"midi-qol.OptionalRuleVitality.Name": "(房规) 活力物品",
+	"midi-qol.OptionalRuleVitality.Hint": "设置为一个具有使用次数的物品的精确名称(区分大小写，例如'活力池')。对生命值为0的目标造成的伤害会减少该物品的使用次数。当物品使用次数归 0 时，目标死亡。",
+	"midi-qol.OptionalRuleVitalityCondition.Name": "活力耗尽状态",
+	"midi-qol.OptionalRuleVitalityCondition.Hint": "当活力值归 0 时应用的状态。默认为'死亡'。",
+	"midi-qol.OptionalRuleVitalityDeathRequires.Name": "活力死亡条件",
+	"midi-qol.OptionalRuleVitalityDeathRequires.Hint": "使用活力规则时，死亡所需的条件。'仅活力'表示活力=0时死亡(无论生命值如何)。'活力与生命值'表示仅当活力=0且生命值=0时才死亡。",
+	"midi-qol.VitalityDeathRequires.VitalityOnly": "活力值为0",
+	"midi-qol.VitalityDeathRequires.VitalityAndHP": "活力值为0且生命值为0",
+	"midi-qol.AutoRerollInitiative.Name": "自动重骰先攻",
+	"midi-qol.AutoRerollInitiative.Hint": "在新的一轮开始时自动重掷所有战斗者的先攻。警告：可能会打破轮/回合效果的失效时间",
+	"midi-qol.RollChecksBlind.Name": "哪些玩家的属性检定是盲骰？",
+	"midi-qol.RollSavesBlind.Name": "哪些玩家的豁免检定是盲骰？",
+	"midi-qol.RollSkillsBlind.Name": "哪些玩家的技能检定是盲骰？",
+	"midi-qol.UndoWorkflow": {
+		"Name": "支持撤销物品掷骰",
+		"Hint": "如果启用，Midi将存储所有物品/行动掷骰的撤销数据。通过MidiQOL.undoMostRecentWorkflow()撤销。",
+		"title": "Undo workflow",
+		"actorName": "角色名",
+		"itemName": "物品名",
+		"targetName": "目标名",
+		"removeFirstWorkflow": "从列表中移除顶部/最近的工作流(警告)",
+		"undoFirstWorkflow": "从列表中撤销最前/最近的工作流",
+		"GMOnly": "只有GM可以撤销工作流"
+	},
+	"midi-qol.cubNotSupported": "Combat Utility Belt 不会迁移到 11 版本。Midi 将在 11.1.0 版中移除对 CUB 的支持",
+	"midi-qol.ContestedRoll": "对抗掷骰",
+	"midi-qol.versus": "与",
+	"midi-qol.Skipped": "跳过",
+	"midi-qol.ExportTroubleShooting": "导出故障排除数据",
+	"midi-qol.DependentsExplorer": {
+		"Title": "依赖关系浏览",
+        "Name": "依赖关系浏览",
+        "Label": "打开依赖关系浏览",
+        "Hint": "查看 midi-qol 跟踪的文档依赖关系",
+        "Empty": "当前未跟踪任何依赖文档",
+        "NoMatches": "没有文档匹配搜索筛选条件",
+        "Unknown": "未知",
+        "SearchPlaceholder": "按名称筛选...",
+        "ClearFilter": "清除筛选",
+        "TypeActor": "角色",
+        "TypeItem": "物品",
+        "TypeActiveEffect": "效果",
+        "TypeToken": "Token",
+        "TypeScene": "场景",
+        "TypeCombatant": "战斗成员",
+        "On": "于",
+        "Transfer": "转移效果",
+        "DeleteParent": "删除此父文档",
+        "DeleteDependent": "删除此依赖文档",
+        "ConfirmDelete": "确认删除",
+        "ConfirmDeleteParent": "确定要删除 {name}（{type}）吗？这将同时删除其所有依赖项。",
+        "ConfirmDeleteDependent": "确定要删除 {name}（{type}）吗？",
+		"ConfirmDeleteItemEffect": "确定要删除效果 {name} 吗？这将永久从物品中移除该效果。",
+        "Delete": "删除",
+        "Cancel": "取消",
+        "Deleted": "{name} 已删除",
+        "DeleteFailed": "删除文档失败",
+        "DocumentNotFound": "未找到文档"
+	},
+	"midi-qol.TroubleShooter": {
+		"Name": "打开故障排查",
+		"Hint": "帮助诊断问题和收集设置",
+		"Label": "故障排查",
+		"Tabs": {
+			"summary": "概要",
+			"common": "常用模组",
+			"problems": "问题",
+			"errors": "错误",
+			"modules": "全部模组"
+		},
+		"ClearErrors": "清除错误",
+		"Overwrite": "覆写 Midi 设置",
+		"ReviewModules": "查看模组",
+		"NoModuleData": "无可用模组数据。"
+	},
+	"midi-qol.Inactive": "不激活",
+	"midi-qol.Active": "激活",
+	"midi-qol.EnforceSingleWeaponTarget.Name": "武器攻击单一目标",
+	"midi-qol.EnforceSingleWeaponTarget.Hint": "没有指定目标的武器只能攻击一个目标",
+	"midi-qol.DisplayBonusRolls.Name": "显示加值聊天卡前后的内容",
+	"midi-qol.DisplayBonusRolls.Hint": "应用加值时，显示一张聊天卡，上面有掷骰前后的信息",
+	"midi-qol.MergeCardMulti.Name": "为合并卡添加额外按钮",
+	"midi-qol.MergeCardMulti.Hint": "在物品图表卡上添加优势/劣势 重击/不重击按钮",
+	"midi-qol.ConfirmAttackDamage.Name": "显示确认按钮",
+	"midi-qol.ConfirmAttackDamage.Hint": "进行攻击检定/伤害掷骰后暂停，让PL/GM确认，只有确认结果正确，掷骰流程才会执行",
+	"midi-qol.ConfirmAttackDamageOptions": {
+		"none": "无需确认",
+		"gmOnly": "只有GM才能确认",
+		"GMPlayer": "GM和Pl都能确认"
+	},
+	"midi-qol.ConfirmRoll": "确认",
+	"midi-qol.ConfirmMiss": "确认击失",
+	"midi-qol.ConfirmHit": "确认命中",
+	"midi-qol.AverageDamage.Name": "所有伤害掷骰/重击掷骰均为'期望'结果",
+	"midi-qol.AverageDamageOptions": {
+		"none": "无",
+		"npc": "仅限NPC伤害掷骰",
+		"character": "仅限PC伤害掷骰",
+		"all": "全部伤害掷骰"
+	},
+	"midi-qol.GriddedGridless.Name": "无网格",
+	"midi-qol.GridlessFudge.Name": "误差因子",
+	"midi-qol.GridlessFudge.Hint": "将距离小于误差因子的 Token 视为相邻。以网格比例单位指定，即英尺/米",
+	"midi-qol.GriddedGridless.Hint": "如果设置了，midi 将使用正方形网格进行所有距离计算。实验",
+	"midi-qol.targetConfirmationPosition": "目标确认位置",
+	"midi-qol.TargetConfirmationEnabled": "启用目标确认",
+	"midi-qol.TargetConfirmationAll": "始终确认目标",
+	"midi-qol.TargetConfirmationNoneTargeted": "如果未选择目标，则确认目标",
+	"midi-qol.TargetConfirmation.hasAttack": "确认掷骰物品是否有攻击目标",
+	"midi-qol.TargetConfirmationCreatureTarget": "如果掷骰物品有'生物'目标，则确认目标",
+	"midi-qol.TargetConfirmationSelfTarget": "如果自己是目标，则确认目标",
+	"midi-qol.TargetConfirmationAoETarget": "如果物品具有 AoE，则确认目标",
+	"midi-qol.TargetConfirmationRangedAoE": "如果物品具有远程 AoE，则确认目标",
+	"midi-qol.TargetConfirmationLongRangeTarget": "如果有远距离目标，则确认目标",
+	"midi-qol.TargetConfirmationCoveredTarget": "如果任何目标有掩护，则确认目标",
+	"midi-qol.TargetConfirmationMixedDisposition": "如果以盟友和敌人为目标，则确认目标",
+	"midi-qol.TargetConfirmationAllies": "如果任何目标是盟友，则确认目标",
+	"midi-qol.OutOfRange": "超出范围",
+	"midi-qol.TemplateOutOfRange": "法术测量板放置超出范围",
+	"midi-qol.SaveDROrder.Name": "伤害减免豁免顺序",
+	"midi-qol.SaveDROrder.Hint": "伤害减免的应用顺序。<br>dm.midi是midi专用的伤害减免。<br>dm是dnd5e的伤害减免",
+	"midi-qol.SaveDROrderOptions": {
+	"DRSaveDr": "dm.midi/dnd5e.dm -> 豁免/(dr/dv/di) - dnd5e规则",
+	"SaveDRDr": "豁免 -> dm.midi/dm.dnd5e -> (dr/dv/di)",
+	"SaveDrDR": "豁免 -> dm -> (dr/dv/di) -> dm.midi"
+	}, 
+	"midi-qol.WaitingForPreviousWorkflow": "{name}的上一次掷骰尚未完成。",
+	"midi-qol.ResolvePreviousWorkflow": "选择如何处理前一个掷骰",
+	"midi-qol.ConfirmTargetOptions": {
+		"default": "Midi设置",
+		"always": "总是",
+		"never": "从不"
+	},
+	"midi-qol.SaveDamageOptions": {
+		"default": "Midi设置",
+		"fulldam": "全伤",
+		"halfdam": "半伤",
+		"nodam": "无伤"
+	},
+	"midi-qol.MidiSettings": "Midi设置",
+	"midi-qol.ConcentrationIncapacitatedConditionCheck.Name": "失能时时移除专注",
+	"midi-qol.ConcentrationIncapacitatedConditionCheck.Hint": "失能、死亡、昏迷、石化、麻痹和震慑会移除专注",
+	"midi-qol.AutoCompleteWorkflow.Name": "根据需要自动完成工作流",
+	"midi-qol.AutoCompleteWorkflow.Hint": "如果在完成前掷骰，工作流将被标记为已完成，不会执行额外掷骰",
+	"midi-qol.SavesBeforeDamage.Name": "伤害掷骰前进行豁免检定(实验性)",
+	"midi-qol.SavesBeforeDamage.Hint": "启用后将在掷伤害骰前进行豁免检定，否则将在掷伤害骰后进行豁免检定",
+	"midi-qol.ConstrainTemplatePlacement.Name": "限制测量板放置",
+	"midi-qol.ConstrainTemplatePlacement.Hint": "限制测量板放置：射程为“自身”或“无”的锥形/线形测量板将锚定在施法者Token边缘。所有测量板在预览时都会被限制在行动射程内。",
+	"midi-qol.TemplateSnapping.Name": "测量板网格吸附",
+	"midi-qol.TemplateSnapping.Hint": "控制放置测量板时的网格吸附。完全网格吸附仅吸附至网格交点。半网格吸附还会吸附至方格中心及边线中点。",
+	"midi-qol.TemplateSnapping.Full": "完全网格吸附",
+	"midi-qol.TemplateSnapping.Half": "半网格吸附",
+	"midi-qol.emanationNoTemplate": "光环/半径 - 无测量板",
+	"midi-qol.emanationTemplate.counted.one": "光环无测量板",
+	"midi-qol.emanationTemplate.counted.other": "光环无测量板",
+	"midi-qol.AddFakeDice.Name": "在 GM Dice So Nice 掷骰中添加假骰子",
+	"midi-qol.MidiFieldsTab.Name": "在单独的选项卡中显示 Midi 项目字段",
+	"midi-qol.UndoChatColor.Name": "撤销聊天卡颜色",
+	"midi-qol.UndoChatColor.Hint": "删除是指在撤销时删除聊天卡。否则，撤销的聊天会重新着色",
+	"midi-qol.WaitForDamageApplication.Name": "等待伤害应用",
+	"midi-qol.WaitForDamageApplication.Hint": "等待GM客户端应用伤害后再完成工作流。禁用此选项可获得小幅性能提升，但可能会干扰某些第三方模组",
+	"DND5E.DamageApplication.Change.Absorption": "{type} 吸收",
+	"DND5E.DamageApplication.Change.Spell": "自定义法术",
+	"DND5E.DamageApplication.Change.Magic": "自定义魔法",
+	"DND5E.DamageApplication.Change.Nonmagic": "自定义非魔法",
+	"DND5E.DamageApplication.Change.Saved": "豁免",
+	"DND5E.DamageApplication.Change.SuperSaver": "反射闪避",
+	"DND5E.DamageApplication.Change.SemiSuperSaver": "半反射闪避",
+	"DND5E.DamageApplication.Change.UncannyDodge": "直觉闪避 {type}",
+	"DND5E.DamageApplication.Change.DR": "DR",
+	"midi-qol.SettingsSearch": "",
+	"midi-qol.MidiPropertiesTab.Name": "最低用户权限",
+	"midi-qol.MidiPropertiesTab.Hint": "可访问物品 midi-qol 选项卡的最低用户权限。<strong>更改时需要重新加载</strong>。",
+	"midi-qol.CollapsibleTargets.Name": "可折叠目标",
+	"midi-qol.CollapsibleTargets.Hint": "聊天卡中的命中/未命中目标显示是可折叠的",
+	"midi-qol.AutoRemoveInstantaneousTemplate.Name": "自动移除立即模板",
+	"midi-qol.AutoRemoveInstantaneousTemplate.Hint": "持续时间为立即的物品放置的模板会在物品掷骰结束时移除",
+	"midi-qol.ReplaceDefaultActivities.Name": "用 midi-qol 对应行动取代 dnd5e 行动",
+	"midi-qol.ReplaceDefaultActivities.Hint": "任何现有行动、攻击、伤害、豁免、检定、Utility都将使用 midi 版本。这是将 SRD 物品自动化所必需的，否则你将需要手动配置每个物品以实现 midi 自动化。",
+	"midi-qol.AutoMergeActivityOther.Name": "为 Midi 攻击行动自动合并其他行动(需要重新加载)",
+	"midi-qol.AutoMergeActivityOther.Hint": "如果一件物品只有攻击行动和单一的伤害、豁免、检定或Utility，它将与攻击行动合并",
+	"midi-qol.ConfirmAmmunition.Name": "掷骰攻击时确认弹药选择 - 显示攻击检定配置",
+	"midi-qol.ActivityNamePrefix.Name": "行动前缀",
+	"midi-qol.ActivityNamePrefix.Hint": "将 midi-qol 行动名称前缀为 Midi。更改后需要重新加载",
+	"midi-qol.ConditionEditorEnabled.Name": "状态编辑器",
+	"midi-qol.ConditionEditorEnabled.Hint": "在行动表的状态字段上显示状态编辑器按钮",
+	"midi-qol.AoETargetTypeOptions": {
+		"any": "行动/物品设置",
+		"ally": "盟友",
+		"notAlly": "非盟友",
+		"enemy": "敌人",
+		"notEnemy": "非敌人",
+		"neutral": "中立",
+		"notNeutral": "非中立",
+		"hostile": "敌对",
+		"notHostile": "非敌对",
+		"Friendly": "友善",
+		"notFriendly": "非友善"
+	},
+  "midi-qol.ConfigDialogOptions": {
+    "default": "Midi设置",
+    "always": "始终显示",
+    "never": "从不显示"
+  },
+  "midi-qol.ConsumeDialogOptions": {
+    "default": "Midi设置",
+    "always": "始终显示",
+    "never": "从不显示"
+  },
+	"midi-qol.TriggeredActivityTargetOptions": {
+		"self": "目标物品所有者",
+		"targets": "相同目标",
+		"hitTargets": "命中目标",
+		"missedTargets": "击失目标",
+		"failedSaves": "目标豁免失败",
+		"saveTargets": "目标豁免成功",
+		"retarget": "创建新目标"
+	},
+	"midi-qol.TriggeredActivityRollAsOptions": {
+		"self": "物品所有者",
+		"firstTarget": "第一个目标",
+		"firstHitTarget": "第一个命中目标",
+		"firstMissedTarget": "第一个击失目标",
+		"firstSaveTarget": "第一个豁免目标",
+		"firstFailedSaveTarget": "第一个豁免失败目标"
+	},
+	"midi-qol.ActivationAutomation.Name": "激活消耗自动化",
+	"midi-qol.ActivationAutomation.Hint": "自动激活具有短休/长休、遭遇开始或回合开始/结束消耗的行动",
+	"midi-qol.ActivationAutomationOptions": {
+		"none": "无自动化/无聊天信息",
+		"chat": "默认dnd5e行为",
+		"auto": "自动触发标记自身行动"
+	},
+	"midi-qol.dummyCards.Name": "为隐藏合并卡始终显示攻击/伤害卡",
+	"midi-qol.dummyCards.Hint": "(实验性) 对GM掷骰(自骰、暗骰、盲骰)显示攻击/伤害掷骰卡，将在玩家聊天中触发'GM掷骰'提示卡。仅适用于想让玩家知道你掷了骰但不想展示具体结果的情况",
+	"midi-qol.dnd5eConcentrationTrackingDisabled": "<br><strong><center>DND5E专注追踪已禁用</strong><br></center><br><center>专注追踪已在dnd5e系统设置中禁用。</center><center>请在DND5E设置中启用以启用midi专注设置</center><br>",
+	"midi-qol.ItemSheetMidiTab": "Midi QoL",
+	"midi-qol.AddOnUseMacro": "添加物品调用宏",
+	"midi-qol.CustomMacro": "自定义宏",
+	"midi-qol.SHARED": {
+		"use-condition": {
+			"header": "Midi状态"
+		},
+		"ignore": {
+			"header": "忽略伤害特性"
+		},
+		"FIELDS": {
+			"useConditionText": {
+				"label": "使用条件",
+				"hint": "必须为真以允许行动使用继续的条件"
+			},
+			"useConditionReason": {
+				"label": "使用条件原因",
+				"hint": "如果使用条件为假时显示的消息"
+			},
+			"effectConditionText": {
+				"label": "激活效果条件",
+				"hint": "应用激活效果的条件"
+			},
+			"otherActivityId": {
+				"label": "使用其他行动",
+				"hint": "额外的行动以执行“其他other”伤害"
+      		},
+		  "otherActivityAsParentType": {
+			"label": "覆盖动作类型",
+			"hint": "将此行动类型(mwak、rwak等)替换为其他伤害属性的行动类型"
+		  },
+			"midiProperties": {
+				"rollMode": {
+					"label": "掷骰模式",
+					"hint": "为行动组合使用的掷骰模式"
+				},
+				  "removeChatButtons": {
+					"label": "移除聊天按钮",
+					"hint": "从行动聊天卡中移除按钮"
+				  },
+				"ignoreFullCover": {
+					"label": "忽略全身掩护",
+					"hint": "在应用伤害/豁免检定时忽略全身掩护"
+				},
+				"chooseEffects": {
+					"label": "选择效果",
+					"hint": "选择效果应用"
+				},
+				"autoConsume": {
+				  "label": "自动消耗",
+				  "hint": "使用行动时自动消耗资源"
+				},
+				"forceConsumeDialog": {
+					"label": "强制消耗对话框",
+					"hint": "行动使用时强制配置对话框"
+				},
+				  "forceRollDialog": {
+					"label": "强制掷骰配置",
+					"hint": "使用行动时强制显示掷骰/攻击配置对话框"
+				  },
+				  "forceDamageDialog": {
+					"label": "强制伤害配置", 
+					"hint": "使用行动造成伤害时强制显示伤害配置对话框"
+				  },
+				"confirmTargets": {
+					"label": "目标确认",
+					"hint": "掷骰前确认目标"
+				},
+				"autoTargetType": {
+					"label": "AoE 目标类型",
+					"hint": "使用 AoE 测量板时，Midi 将只针对指定类型的 Token"
+				},
+				"autoTargetAction": {
+					"label": "在测量板绘制时选择目标",
+					"hint": "当放置测量板(例如法术)时，选择测量板内的目标token。如果在远程目标设置中启用了'中心 + Levels'，则将使用Levels Volumetric Templates(如果已安装)"
+				},
+				"automationOnly": {
+					"label": "仅自动化",
+					"hint": "该行动仅用于 midi 自动化，不能手动使用"
+				},
+				"displayActivityName": {
+					"label": "显示行动组合名称",
+					"hint": "在聊天卡片中显示行动组合名称"
+				},
+				"identifier": {
+					"label": "标识符",
+					"hint": "行动的标识符"
+				},
+				"triggeredActivityId": {
+					"label": "触发行动",
+					"hint": "执行的行动"
+				},
+				"triggeredActivityConditionText": {
+					"label": "触发条件",
+					"hint": "激活触发行动的条件"
+				},
+				"triggeredActivityTargets": {
+					"label": "触发目标",
+					"hint": "为触发的选择哪些目标"
+				},
+				"triggeredActivityRollAs": {
+					"label": "掷骰",
+					"hint": "掷骰行动视同被拥有..."
+				},
+				"triggeredActivityConsume": {
+					"label": "消耗资源",
+					"hint": "在触发行动运行时消耗法术位和资源"
+				},
+				  "triggeredActivityConfigure": {
+					"label": "显示配置对话框",
+					"hint": "在触发行动运行时显示配置/消耗对话框"
+				},
+				"otherActivityCompatible": {
+					"label": "其他行动兼容",
+					"hint": "可用作其他行动"
+				},
+				"toggleEffect": {
+					"label": "开关效果",
+					"hint": "禁用效果将切换它而不是移除它"
+				},
+				  "magicEffect": {
+					"label": "魔法效果",
+					"hint": "对抗此行动的豁免视为对抗魔法的豁免"
+				  },
+				  "magicDamage": {
+					"label": "魔法伤害",
+					"hint": "此行动造成的伤害被视为魔法伤害"
+				  },
+				  "noConcentrationCheck": {
+					"label": "无需专注豁免",
+					"hint": "此行动造成的伤害无法触发专注豁免检定"
+				  },
+				  "skipConcentrationCheck": {
+					  "label": "跳过专注豁免",
+					  "hint": "该行动的消耗无法触发专注豁免检定"
+					},
+				"ignoreTraits": {
+					"allTypes": "所有伤害类型",
+					"idi": {
+						"label": "免疫",
+						"short": "忽略伤害免疫",
+						"hint": "应用伤害时忽略伤害免疫"
+					},
+					"idr": {
+						"label": "抗性",
+						"short": "忽略伤害抗性",
+						"hint": "应用伤害时忽略伤害抗性"
+					},
+					"idv": {
+						"label": "易伤",
+						"short": "忽略伤害易伤",
+						"hint": "应用伤害时忽略伤害易伤"
+					},
+					"ida": {
+						"label": "吸收",
+						"short": "忽略伤害吸收",
+						"hint": "应用伤害时忽略伤害吸收"
+					},
+					"idm": {
+						"label": "调整",
+						"short": "忽略伤害调整",
+						"hint": "应用伤害时忽略伤害调整"
+					}
+				},
+				  "autoCEEffects": {
+					"label": "应用DCE效果",
+					"hint": "使用物品时，应用与行动名称(若无匹配则使用物品名称)相匹配的DCE效果。此功能需要同时启用自动应用主动效果。"
+				  }
+			},
+			  "friendlySummon": {
+				"label": "友好召唤",
+				"hint": "召唤出的Token与施法者具有相同的倾向"
+			  },
+			"isOverTimeFlag": {
+				"label": "是Over Time",
+				"hint": "该行动组合可以是一个Over Time行动"
+			},
+			"overTimeProperties": {
+				"turnChoice": {
+					"label": "回合选择",
+					"hint": "回合开始或结束",
+					"start": "回合开始",
+					"end": "回合结束"
+				},
+				"rollAs": {
+					"label": "掷骰者",
+					"hint": "谁为overtime行动掷骰",
+					"target": "目标Token",
+					"source": "来源Token"
+				},
+				"saveRemoves": {
+					"label": "豁免移除",
+					"hint": "豁免成功则移除效果"
+				},
+				"preRemoveConditionText": {
+					"label": "行动前移除条件",
+					"hint": "在掷骰行动前检测，如果为真则移除效果"
+				},
+				"postRemoveConditionText": {
+					"label": "行动后移除条件",
+					"hint": "在掷骰行动后检测，如果为真则移除效果"
+				}
+			},
+			"ActivityMacro": {
+				"label": "行动宏",
+				"hint": "使用行动时可运行的宏"
+			},
+			"useSystemActivity": {
+				"label": "使用系统行动",
+				"hint": "使用 dnd5e 系统行动而不是 midi 行动"
+			},
+			"ignoreTraits": {
+				"idi": {
+					"label": "忽略免疫",
+					"hint": "应用伤害时忽略伤害免疫"
+				},
+				"idr": {
+					"label": "忽略抗性",
+					"hint": "应用伤害时忽略伤害抗性"
+				},
+				"idv": {
+					"label": "忽略易伤",
+					"hint": "应用伤害时忽略伤害易伤"
+				},
+				"ida": {
+					"label": "忽略吸收",
+					"hint": "应用伤害时忽略伤害吸收"
+				}
+			}
+		}
+	},
+	"midi-qol.ATTACK": {
+		"Title": {
+			"one": "Midi攻击",
+			"other": "Midi攻击"
+		},
+		"extras": {
+			"header": "Midi攻击字段"
+		},
+		"FIELDS": {
+			"attackMode": {
+				"label": "攻击模式",
+				"hint": "默认攻击模式"
+			},
+			"ammunition": {
+				"label": "弹药",
+				"hint": "默认消耗弹药"
+			},
+		  "attackRollPerTarget": {
+			"label": "每个目标单独攻击检定",
+			"hint": "为每个目标单独进行攻击检定。为每个目标生成一个聊天卡片。"
+		  },
+		  "fumbleThreshold": {
+			"label": "失误阈值",
+			"hint": "如果攻击检定结果小于或等于此值，则视为自动失败"
+		  }
+		}
+	},
+	"midi-qol.CAST": {
+		"Title": {
+			"one": "Midi施法",
+			"other": "Midi施法"
+		}
+	},
+	"midi-qol.CHECK": {
+		"Title": {
+			"one": "Midi检定",
+			"other": "Midi检定"
+		}
+	},
+	"midi-qol.DAMAGE": {
+		"Title": {
+			"one": "Midi伤害",
+			"other": "Midi伤害"
+		},
+		"FIELDS": {
+		  "damage": {
+			"label": "伤害",
+			"critical": {
+			  "label": "重击伤害",
+			  "allow": {
+				"label": "允许重击伤害",
+				"hint": "允许应用重击伤害"
+			  },
+			  "bonus": {
+				"label": "额外重击伤害",
+				"hint": "如果允许重击伤害，则应用的额外重击伤害"
+			  }
+			}
+		  }
+		}
+	},
+	"midi-qol.ENCHANT": {
+		"Title": {
+			"one": "Midi附魔",
+			"other": "Midi附魔"
+		}
+	},
+	"midi-qol.FORWARD": {
+		"Title": {
+			"one": "Midi转进",
+			"other": "Midi转进"
+		}
+	},
+	"midi-qol.HEAL": {
+		"Title": {
+			"one": "Midi治疗",
+			"other": "Midi治疗"
+		}
+	},
+	"midi-qol.OVERTIME": {
+		"Title": {
+			"one": "Midi Overtime",
+			"other": "Midi Overtime"
+		},
+		"extras": {
+			"header": "Midi Overtime 设置"
+		},
+		"FIELDS": {
+			"turnChoice": {
+				"label": "回合选择",
+				"hint": "回合开始或结束",
+				"start": "回合开始",
+				"end": "回合结束"
+			},
+			"saveRemoves": {
+				"label": "豁免移除",
+				"hint": "豁免成功则移除效果"
+			},
+			"rollAs": {
+				"label": "掷骰者",
+				"hint": "谁为overtime行动掷骰",
+				"target": "效果Token",
+				"source": "来源Token"
+			},
+			"removeConditionBeforeActivity": {
+				"label": "掷骰前移除效果",
+				"hint": "如果满足移除条件，则会在行动掷骰前移除效果"
+			},
+			"removeConditionText": {
+				"label": "移除条件",
+				"hint": "移除效果的条件"
+			}
+		}
+	},
+	"midi-qol.SAVE": {
+		"Title": {
+			"one": "Midi豁免",
+			"other": "Midi豁免"
+		},
+		"extras": {
+		  "header": "Midi 豁免字段"
+		},
+		"friendlySave": {
+			"default": "进行豁免",
+			"friendlySuccess": "友善成功",
+			"friendlyFail": "友善失败"
+		},
+		"FIELDS": {
+		  "friendlySave": {
+			"label": "友善豁免",
+			"hint": "启用后，允许盟友进行豁免检定时直接判定为成功或失败"
+		  }
+		}
+	},
+	"midi-qol.UTILITY": {
+		"Title": {
+			"one": "Midi效用",
+			"other": "Midi效用"
+		}
+	},
+	"midi-qol.SUMMON": {
+		"Title": {
+			"one": "Midi召唤",
+			"other": "Midi召唤"
+		}
+	},
+	"midi-qol.TRANSFORM": {
+		"Title": {
+		  "one": "Midi变形",
+		  "other": "Midi变形"
+		},
+		"AlreadyTransformed": "{name}已经处于变形状态"
+	},
+	"midi-qol.fields": {
+		"use-condition-header": "Midi 行动允许使用状态",
+		"attack-extras": "Midi攻击字段",
+		"effects-conditon": "Midi效果应用状态",
+		"force-dialog": "强制配置对话框",
+		"midi-automation-only": "仅用于 midi 自动化"
+	},
+	"midi-qol.BaseDamageFlavor": "伤害",
+	"midi-qol.BaseHealingFlavor": "治愈",
+	"midi-qol.OtherDamageFlavor": "其他",
+	"midi-qol.OtherHealingFlavor": "其他治愈",
+	"midi-qol.RequireAmmunition.Name": "要求在攻击时提供弹药",
+	"midi-qol.CheckTwoHanded.Name": "要求在双手/副手攻击时未装备盾牌",
+	"midi-qol.NoAmmunition": "你的库存中有 0 个{name}",
+	"midi-qol.NoAmmunitionAvailable": "你的库存中没有弹药。",
+	"midi-qol.NoAmmunitionSelected": "你必须选择要使用的弹药。",
+	"midi-qol.TwoHandedShieldWarning": "装备盾牌时无法使用双手或副手攻击",
+    "midi-qol.otherActivityConsumptionFailed": "{actorName}: {itemName} ({activityName}) - 其他行动资源不足",
+    "midi-qol.RefundOtherActivityResource": "退还其他资源",
+    "midi-qol.ConsumeOtherActivityResource": "消耗其他资源",
+	"midi-qol.flagTemplate.advantage.name": "优势 ({label})",
+	"midi-qol.flagTemplate.advantage.description": "在 {label} 检定中获得优势。",
+	"midi-qol.flagTemplate.advantage.attack.name": "攻击检定优势 ({label})",
+	"midi-qol.flagTemplate.advantage.attack.description": "在 {label} 攻击检定中获得优势。",
+	"midi-qol.flagTemplate.disadvantage.name": "劣势 ({label})",
+	"midi-qol.flagTemplate.disadvantage.description": "在 {label} 检定中承受劣势。",
+	"midi-qol.flagTemplate.disadvantage.attack.name": "攻击检定劣势 ({label})",
+	"midi-qol.flagTemplate.disadvantage.attack.description": "在 {label} 攻击检定中承受劣势。",
+	"midi-qol.flagTemplate.noAdvantage.name": "无法获得优势 ({label})",
+	"midi-qol.flagTemplate.noAdvantage.description": "{label} 检定无法获得优势。",
+	"midi-qol.flagTemplate.noAdvantage.attack.name": "无法获得攻击检定优势 ({label})",
+	"midi-qol.flagTemplate.noAdvantage.attack.description": "{label} 攻击检定无法获得优势。",
+	"midi-qol.flagTemplate.noDisadvantage.name": "无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.noDisadvantage.description": "{label} 检定无法承受劣势。",
+	"midi-qol.flagTemplate.noDisadvantage.attack.name": "无攻击劣势 ({label})",
+	"midi-qol.flagTemplate.noDisadvantage.attack.description": "{label} 攻击检定无法承受劣势。",
+	"midi-qol.flagTemplate.fail.name": "自动失败 ({label})",
+	"midi-qol.flagTemplate.fail.description": "强制进行的 {label} 检定自动失败。",
+	"midi-qol.flagTemplate.fail.attack.name": "强制进行的攻击检定自动失败 ({label})",
+	"midi-qol.flagTemplate.fail.attack.description": "强制进行的 {label} 攻击检定自动失败。",
+	"midi-qol.flagTemplate.success.name": "自动成功 ({label})",
+	"midi-qol.flagTemplate.success.description": "强制进行的 {label} 检定自动成功。",
+	"midi-qol.flagTemplate.success.attack.name": "强制进行的攻击检定自动成功 ({label})",
+	"midi-qol.flagTemplate.success.attack.description": "强制进行的 {label} 攻击检定自动。",
+	"midi-qol.flagTemplate.critical.name": "重击 ({label})",
+	"midi-qol.flagTemplate.critical.description": "强制进行的 {label} 检定自动重击。",
+	"midi-qol.flagTemplate.noCritical.name": "无法重击 ({label})",
+	"midi-qol.flagTemplate.noCritical.description": "{label} 检定无法重击。",
+	"midi-qol.flagTemplate.fumble.name": "自动大失败 ({label})",
+	"midi-qol.flagTemplate.fumble.description": "强制进行的 {label} 检定自动大失败。",
+	"midi-qol.flagTemplate.noFumble.name": "无法大失败 ({label})",
+	"midi-qol.flagTemplate.noFumble.description": "{label} 检定无法大失败。",
+	"midi-qol.flagTemplate.fail.critical.name": "免疫重击 ({label})",
+	"midi-qol.flagTemplate.fail.critical.description": "被攻击时，其他生物的 {label} 无法重击。",
+	"midi-qol.flagTemplate.grants.advantage.name": "与该目标对抗的生物检定获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.advantage.description": "与该目标对抗的生物的 {label} 检定获得优势。",
+	"midi-qol.flagTemplate.grants.advantage.attack.name": "被攻击时，攻击者在攻击检定上获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.advantage.attack.description": "被攻击时，攻击者在 {label} 攻击检定上获得优势",
+	"midi-qol.flagTemplate.grants.disadvantage.name": "与该目标对抗的生物检定承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.disadvantage.description": "与该目标对抗的生物的 {label} 检定承受劣势。",
+	"midi-qol.flagTemplate.grants.disadvantage.attack.name": "被攻击时，攻击者在攻击检定上承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.disadvantage.attack.description": "被攻击时，攻击者在 {label} 攻击检定上承受劣势。",
+	"midi-qol.flagTemplate.grants.noAdvantage.name": "与该目标对抗的生物无法获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.noAdvantage.description": "与该目标对抗的生物的 {label} 无法获得优势。",
+	"midi-qol.flagTemplate.grants.noAdvantage.attack.name": "被攻击时，攻击者的攻击检定无法获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.noAdvantage.attack.description": "被攻击时，攻击者的 {label} 攻击检定无法获得优势。",
+	"midi-qol.flagTemplate.grants.noDisadvantage.name": "与该目标对抗的生物无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.noDisadvantage.description": "与该目标对抗的生物的 {label} 无法承受劣势。",
+	"midi-qol.flagTemplate.grants.noDisadvantage.attack.name": "被攻击时，攻击者的攻击检定无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.noDisadvantage.attack.description": "被攻击时，攻击者的 {label} 攻击检定无法承受劣势。",
+	"midi-qol.flagTemplate.grants.critical.name": "被攻击时，攻击者的攻击检定自动重击 ({label})",
+	"midi-qol.flagTemplate.grants.critical.description": "被攻击时，攻击者的 {label} 攻击检定自动重击",
+	"midi-qol.flagTemplate.grants.noCritical.name": "被攻击时，攻击者的攻击检定无法重击 ({label})",
+	"midi-qol.flagTemplate.grants.noCritical.description": "被攻击时，攻击者的 {label} 攻击检定无法重击。",
+	"midi-qol.flagTemplate.grants.fumble.name": "与该目标对抗的生物检定强制大失败 ({label})",
+	"midi-qol.flagTemplate.grants.fumble.description": "与该目标对抗的生物 {label} 检定强制大失败。",
+	"midi-qol.flagTemplate.grants.noFumble.name": "与该目标对抗的生物检定无法大失败 ({label})",
+	"midi-qol.flagTemplate.grants.noFumble.description": "与该目标对抗的生物 {label} 检定无法大失败。",
+	"midi-qol.flagTemplate.grants.attack.bonus.name": "被攻击时，攻击者的攻击检定获得加值 ({label})",
+	"midi-qol.flagTemplate.grants.attack.bonus.description": "被攻击时，攻击者的 {label} 攻击检定获得加值。设置为数字或掷骰表达式。",
+	"midi-qol.flagTemplate.grants.attack.success.name": "被攻击时，攻击者进行的攻击检定自动成功 ({label})",
+	"midi-qol.flagTemplate.grants.attack.success.description": "被攻击时，攻击者进行的{label}攻击检定自动成功。设置为1或条件表达式。",
+	"midi-qol.flagTemplate.grants.attack.fail.name": "被攻击时，攻击者进行的攻击检定自动失败 ({label})",
+	"midi-qol.flagTemplate.grants.attack.fail.description": "被攻击时，攻击者进行的{label}攻击检定自动失败。设置为1或条件表达式。",
+	"midi-qol.flagTemplate.advantage.damage.name": "伤害掷骰取高 ({label})",
+	"midi-qol.flagTemplate.advantage.damage.description": "在 {label} 伤害掷骰取高。",
+	"midi-qol.flagTemplate.max.damage.name": "伤害掷骰最大化 ({label})",
+	"midi-qol.flagTemplate.max.damage.description": "{label} 伤害掷骰直接取最大值。",
+	"midi-qol.flagTemplate.min.damage.name": "伤害掷骰最小化 ({label})",
+	"midi-qol.flagTemplate.min.damage.description": "{label} 伤害掷骰直接取最小值。",
+	"midi-qol.flagTemplate.grants.max.damage.name": "承受伤害时，所有伤害掷骰造成最大伤害 ({label})",
+	"midi-qol.flagTemplate.grants.max.damage.description": "承受伤害时，{label}伤害掷骰造成最大伤害。",
+	"midi-qol.flagTemplate.grants.min.damage.name": "承受伤害时，所有伤害掷骰造成最小伤害 ({label})",
+	"midi-qol.flagTemplate.grants.min.damage.description": "承受伤害时，{label}伤害掷骰造成最小伤害。",
+	"midi-qol.flagTemplate.grants.bonus.damage.name": "承受伤害时，额外受到的伤害 ({label})",
+	"midi-qol.flagTemplate.grants.bonus.damage.description": "承受 {label} 伤害时，额外受到的伤害",
+	"midi-qol.flagTemplate.optional.NAME.attack.name": "可选加值—攻击检定 ({label})",
+	"midi-qol.flagTemplate.optional.NAME.attack.description": " {label} 攻击检定获得加值。",
+	"midi-qol.flagTemplate.optional.NAME.attack.fail.name": "可选加值—攻击检定失败 ({label})",
+	"midi-qol.flagTemplate.optional.NAME.attack.fail.description": "加值在 {label} 攻击检定失败时添加。",
+	"midi-qol.flagTemplate.optional.NAME.damage.name": "可选加值—伤害掷骰 ({label})",
+	"midi-qol.flagTemplate.optional.NAME.damage.description": "在 {label} 伤害掷骰获得加值。",
+	"midi-qol.flagTemplate.rangeOverride.attack.name": "覆盖射程 ({label})",
+	"midi-qol.flagTemplate.rangeOverride.attack.description": "覆盖 {label} 的射程。",
+	"midi-qol.flagTemplate.range.name": "射程 ({label})",
+	"midi-qol.flagTemplate.range.description": "{label} 的射程加值。",
+	"midi-qol.flagTemplate.long.name": "长距离射程 ({label})",
+	"midi-qol.flagTemplate.long.description": "{label} 的长距离射程加值。",
+	"midi-qol.flagTemplate.DR.attackType.name": "伤害减免 ({label}) (已弃用)",
+	"midi-qol.flagTemplate.DR.attackType.description": "请使用 system.traits.dm 字段代替。",
+	"midi-qol.flagTemplate.advantage.check.name": "属性检定优势 ({label})",
+	"midi-qol.flagTemplate.advantage.check.description": "{label} 属性检定获得优势。",
+	"midi-qol.flagTemplate.disadvantage.check.name": "属性检定劣势 ({label})",
+	"midi-qol.flagTemplate.disadvantage.check.description": "{label} 属性检定承受劣势。",
+	"midi-qol.flagTemplate.advantage.save.name": "豁免检定优势 ({label})",
+	"midi-qol.flagTemplate.advantage.save.description": "{label} 豁免检定获得优势。",
+	"midi-qol.flagTemplate.disadvantage.save.name": "豁免检定劣势 ({label})",
+	"midi-qol.flagTemplate.disadvantage.save.description": "{label} 豁免检定承受劣势。",
+	"midi-qol.flagTemplate.advantage.save.school.name": "获得优势（对抗{label}法术的豁免）",
+	"midi-qol.flagTemplate.advantage.save.school.description": "对抗{label}法术的豁免检定获得优势。",
+	"midi-qol.flagTemplate.disadvantage.save.school.name": "承受劣势（对抗{label}法术的豁免）",
+	"midi-qol.flagTemplate.disadvantage.save.school.description": "对抗{label}法术的豁免检定承受劣势。",
+	"midi-qol.flagTemplate.noAdvantage.save.school.name": "无法获得优势（对抗{label}法术的豁免）",
+	"midi-qol.flagTemplate.noAdvantage.save.school.description": "对抗{label}法术的豁免检定无法获得优势。",
+	"midi-qol.flagTemplate.noDisadvantage.save.school.name": "无法承受劣势（对抗{label}法术的豁免）",
+	"midi-qol.flagTemplate.noDisadvantage.save.school.description": "对抗{label}法术的豁免检定无法承受劣势。",
+	"midi-qol.flagTemplate.fail.save.school.name": "豁免自动失败（对抗{label}法术）",
+	"midi-qol.flagTemplate.fail.save.school.description": "对抗{label}法术的豁免检定自动失败。",
+	"midi-qol.flagTemplate.success.save.school.name": "豁免自动成功（对抗{label}法术）",
+	"midi-qol.flagTemplate.success.save.school.description": "对抗{label}法术的豁免检定自动成功。",
+	"midi-qol.flagTemplate.grants.advantage.save.school.name": "与该目标对抗的生物获得优势（对抗{label}法术的豁免）",
+	"midi-qol.flagTemplate.grants.advantage.save.school.description": "在对抗该角色的{label}法术时，目标的豁免检定获得优势。",
+	"midi-qol.flagTemplate.grants.disadvantage.save.school.name": "与该目标对抗的生物承受劣势（对抗{label}法术的豁免）",
+	"midi-qol.flagTemplate.grants.disadvantage.save.school.description": "在对抗该角色的{label}法术时，目标的豁免检定承受劣势。",
+	"midi-qol.flagTemplate.grants.noAdvantage.save.school.name": "与该目标对抗的生物无法获得优势（对抗{label}法术的豁免）",
+	"midi-qol.flagTemplate.grants.noAdvantage.save.school.description": "在对抗该角色的{label}法术时，目标的豁免检定无法获得优势。",
+	"midi-qol.flagTemplate.grants.noDisadvantage.save.school.name": "与该目标对抗的生物无法承受劣势（对抗{label}法术的豁免）",
+	"midi-qol.flagTemplate.grants.noDisadvantage.save.school.description": "在对抗该角色的{label}法术时，目标的豁免检定无法承受劣势。",
+	"midi-qol.flagTemplate.advantage.attack.school.name": "获得优势（{label}学派的法术攻击）",
+	"midi-qol.flagTemplate.advantage.attack.school.description": "使用{label}学派的法术进行攻击检定时获得优势。",
+	"midi-qol.flagTemplate.disadvantage.attack.school.name": "承受劣势（{label}学派的法术攻击）",
+	"midi-qol.flagTemplate.disadvantage.attack.school.description": "使用{label}学派的法术进行攻击检定时承受劣势。",
+	"midi-qol.flagTemplate.noAdvantage.attack.school.name": "无法获得优势（{label}学派的法术攻击）",
+	"midi-qol.flagTemplate.noAdvantage.attack.school.description": "使用{label}学派的法术进行攻击检定时无法获得优势。",
+	"midi-qol.flagTemplate.noDisadvantage.attack.school.name": "无法承受劣势（{label}学派的法术攻击）",
+	"midi-qol.flagTemplate.noDisadvantage.attack.school.description": "使用{label}学派的法术进行攻击检定时无法承受劣势。",
+	"midi-qol.flagTemplate.grants.advantage.attack.school.name": "被攻击时，攻击者在攻击检定上获得优势（{label}学派的法术攻击）",
+	"midi-qol.flagTemplate.grants.advantage.attack.school.description": "目标使用{label}学派的法术对此角色进行攻击检定时获得优势。",
+	"midi-qol.flagTemplate.grants.disadvantage.attack.school.name": "被攻击时，攻击者在攻击检定上承受优势（{label}学派的法术攻击）",
+	"midi-qol.flagTemplate.grants.disadvantage.attack.school.description": "目标使用{label}学派的法术对此角色进行攻击检定时承受劣势。",
+	"midi-qol.flagTemplate.grants.noAdvantage.attack.school.name": "被攻击时，攻击者在攻击检定上无法获得优势（{label}学派的法术攻击）",
+	"midi-qol.flagTemplate.grants.noAdvantage.attack.school.description": "使用{label}学派的法术对此角色进行攻击检定时无法获得优势。",
+	"midi-qol.flagTemplate.grants.noDisadvantage.attack.school.name": "被攻击时，攻击者在攻击检定上无法承受劣势（{label}学派的法术攻击）",
+	"midi-qol.flagTemplate.grants.noDisadvantage.attack.school.description": "使用{label}学派的法术对此角色进行攻击检定时无法承受劣势。",
+	"midi-qol.flagTemplate.noAdvantage.check.name": "属性检定无法获得优势 ({label})",
+	"midi-qol.flagTemplate.noAdvantage.check.description": "{label} 属性检定无法获得优势。",
+	"midi-qol.flagTemplate.noAdvantage.save.name": "豁免检定无法获得优势 ({label})",
+	"midi-qol.flagTemplate.noAdvantage.save.description": "{label} 豁免检定无法获得优势。",
+	"midi-qol.flagTemplate.noDisadvantage.check.name": "属性检定无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.noDisadvantage.check.description": "{label} 属性检定无法承受劣势。",
+	"midi-qol.flagTemplate.noDisadvantage.save.name": "豁免检定无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.noDisadvantage.save.description": "{label} 豁免检定无法承受劣势。",
+	"midi-qol.flagTemplate.fail.ability.check.name": "属性检定自动失败 ({label})",
+	"midi-qol.flagTemplate.fail.ability.check.description": "{label} 属性检定自动失败。",
+	"midi-qol.flagTemplate.fail.ability.save.name": "豁免检定自动失败 ({label})",
+	"midi-qol.flagTemplate.fail.ability.save.description": "{label} 豁免检定自动失败。",
+	"midi-qol.flagTemplate.success.ability.check.name": "属性检定自动成功 ({label})",
+	"midi-qol.flagTemplate.success.ability.check.description": "{label} 属性检定自动成功。",
+	"midi-qol.flagTemplate.success.ability.save.name": "豁免检定成功 ({label})",
+	"midi-qol.flagTemplate.success.ability.save.description": "{label} 豁免检定自动成功。",
+	"midi-qol.flagTemplate.superSaver.name": "反射豁免 ({label})",
+	"midi-qol.flagTemplate.superSaver.description": "豁免成功时不会承受伤害，豁免失败时承受一半的伤害。",
+	"midi-qol.flagTemplate.semiSuperSaver.name": "半反射豁免 ({label})",
+	"midi-qol.flagTemplate.semiSuperSaver.description": "豁免成功时不会承受伤害，豁免失败时承受正常伤害。",
+	"midi-qol.flagTemplate.max.ability.save.name": "豁免检定的最大D20掷骰值 ({label})",
+	"midi-qol.flagTemplate.max.ability.save.description": "{label} 豁免检定的最大D20掷骰值。",
+	"midi-qol.flagTemplate.min.ability.save.name": "豁免检定的最小D20掷骰值 ({label})",
+	"midi-qol.flagTemplate.min.ability.save.description": "{label} 豁免检定的最小D20掷骰值。",
+	"midi-qol.flagTemplate.max.ability.check.name": "属性检定的最大D20掷骰值 ({label})",
+	"midi-qol.flagTemplate.max.ability.check.description": "{label} 属性检定的最大D20掷骰值。",
+	"midi-qol.flagTemplate.min.ability.check.name": "属性检定的最小D20掷骰值 ({label})",
+	"midi-qol.flagTemplate.min.ability.check.description": "{label} 属性检定的最小D20掷骰值。",
+	"midi-qol.flagTemplate.optional.NAME.save.name": "可选加值-豁免检定 ({label})",
+	"midi-qol.flagTemplate.optional.NAME.save.description": "{label} 豁免检定获得加值。",
+	"midi-qol.flagTemplate.optional.NAME.save.fail.name": "可选加值-豁免检定失败 ({label})",
+	"midi-qol.flagTemplate.optional.NAME.save.fail.description": "加值在 {label} 豁免检定失败后添加。",
+	"midi-qol.flagTemplate.optional.NAME.check.name": "可选加值-属性检定 ({label})",
+	"midi-qol.flagTemplate.optional.NAME.check.description": "{label} 属性检定获得加值。",
+	"midi-qol.flagTemplate.optional.NAME.check.fail.name": "可选加值-属性检定失败 ({label})",
+	"midi-qol.flagTemplate.optional.NAME.check.fail.description": "加值在 {label} 属性检定失败后添加。",
+	"midi-qol.flagTemplate.magicResistance.name": "魔法抗性 ({label})",
+	"midi-qol.flagTemplate.magicResistance.description": "对抗魔法效果的 {label} 检定中获得优势。",
+	"midi-qol.flagTemplate.magicVulnerability.name": "魔法易伤 ({label})",
+	"midi-qol.flagTemplate.magicVulnerability.description": "对抗魔法效果的 {label} 检定承受劣势。",
+	"midi-qol.flagTemplate.grants.advantage.save.name": "携带此效果的生物迫使其他生物进行豁免检定时，目标在豁免检定上获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.advantage.save.description": "携带此效果的生物迫使其他生物进行 {label} 豁免检定时，目标在豁免检定上获得优势。",
+	"midi-qol.flagTemplate.grants.advantage.check.name": "携带此效果的生物迫使其他生物进行属性检定时，目标在属性检定上获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.advantage.check.description": "携带此效果的生物迫使其他生物进行 {label} 属性检定时，目标在属性检定上获得优势。",
+	"midi-qol.flagTemplate.grants.disadvantage.save.name": "携带此效果的生物迫使其他生物进行豁免检定时，目标在豁免检定上承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.disadvantage.save.description": "携带此效果的生物迫使其他生物进行 {label} 豁免检定时，目标在豁免检定上承受劣势。",
+	"midi-qol.flagTemplate.grants.disadvantage.check.name": "携带此效果的生物迫使其他生物进行属性检定时，目标在属性检定上承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.disadvantage.check.description": "携带此效果的生物迫使其他生物进行 {label} 属性检定时，目标在属性检定上承受劣势。",
+	"midi-qol.flagTemplate.grants.noAdvantage.save.name": "携带此效果的生物迫使其他生物进行豁免检定时，目标豁免检定无法获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.noAdvantage.save.description": "携带此效果的生物迫使其他生物进行 {label} 豁免检定时，目标豁免检定无法获得优势。",
+	"midi-qol.flagTemplate.grants.noDisadvantage.save.name": "携带此效果的生物迫使其他生物进行豁免检定时，目标豁免检定无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.noDisadvantage.save.description": "携带此效果的生物迫使其他生物进行 {label} 豁免检定时，目标豁免检定无法承受劣势。",
+	"midi-qol.flagTemplate.grants.noAdvantage.check.name": "携带此效果的生物迫使其他生物进行属性检定时，目标属性检定无法获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.noAdvantage.check.description": "携带此效果的生物迫使其他生物进行 {label} 属性检定时，目标属性检定无法获得优势。",
+	"midi-qol.flagTemplate.grants.noDisadvantage.check.name": "携带此效果的生物迫使其他生物进行属性检定时，目标属性检定无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.noDisadvantage.check.description": "携带此效果的生物迫使其他生物进行 {label} 属性检定时，目标属性检定无法承受劣势。",
+	"midi-qol.flagTemplate.advantage.abilitySkill.name": "技能检定优势 ({label})",
+	"midi-qol.flagTemplate.advantage.abilitySkill.description": "{label} 技能检定获得优势。",
+	"midi-qol.flagTemplate.disadvantage.abilitySkill.name": "技能检定劣势 ({label})",
+	"midi-qol.flagTemplate.disadvantage.abilitySkill.description": "{label} 技能检定承受劣势。",
+	"midi-qol.flagTemplate.noAdvantage.abilitySkill.name": "技能检定无法获得优势 ({label})",
+	"midi-qol.flagTemplate.noAdvantage.abilitySkill.description": "{label} 技能检定无法获得优势。",
+	"midi-qol.flagTemplate.noDisadvantage.abilitySkill.name": "技能检定无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.noDisadvantage.abilitySkill.description": "{label} 技能检定无法承受劣势。",
+	"midi-qol.flagTemplate.grants.advantage.abilitySkill.name": "携带此效果的生物迫使其他生物进行技能检定时，目标在技能检定上获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.advantage.abilitySkill.description": "携带此效果的生物迫使其他生物进行 {label} 技能检定时，目标在技能检定上获得优势。",
+	"midi-qol.flagTemplate.grants.disadvantage.abilitySkill.name": "携带此效果的生物迫使其他生物进行技能检定时，目标在技能检定上承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.disadvantage.abilitySkill.description": "携带此效果的生物迫使其他生物进行 {label} 技能检定时，目标在技能检定上承受劣势。",
+	"midi-qol.flagTemplate.grants.noAdvantage.abilitySkill.name": "携带此效果的生物迫使其他生物进行技能检定时，目标在技能检定上无法获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.noAdvantage.abilitySkill.description": "携带此效果的生物迫使其他生物进行 {label} 技能检定时，目标在技能检定上无法获得优势。",
+	"midi-qol.flagTemplate.grants.noDisadvantage.abilitySkill.name": "携带此效果的生物迫使其他生物进行技能检定时，目标在技能检定上无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.noDisadvantage.abilitySkill.description": "携带此效果的生物迫使其他生物进行 {label} 技能检定时，目标在技能检定上无法承受劣势。",
+	"midi-qol.flagTemplate.advantage.skill.name": "优势 ({label})",
+	"midi-qol.flagTemplate.advantage.skill.description": "{label} 检定获得优势。",
+	"midi-qol.flagTemplate.disadvantage.skill.name": "劣势 ({label})",
+	"midi-qol.flagTemplate.disadvantage.skill.description": "{label} 检定承受劣势。",
+	"midi-qol.flagTemplate.noAdvantage.skill.name": "无法获得优势 ({label})",
+	"midi-qol.flagTemplate.noAdvantage.skill.description": "{label} 检定无法获得优势。",
+	"midi-qol.flagTemplate.noDisadvantage.skill.name": "无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.noDisadvantage.skill.description": "{label} 检定无法承受劣势。",
+	"midi-qol.flagTemplate.fail.skill.name": "自动失败 ({label})",
+	"midi-qol.flagTemplate.fail.skill.description": "强制进行的 {label} 检定自动失败。",
+	"midi-qol.flagTemplate.success.skill.name": "自动成功 ({label})",
+	"midi-qol.flagTemplate.success.skill.description": "强制进行的 {label} 检定自动成功。",
+	"midi-qol.flagTemplate.optional.NAME.skill.name": "可选加值-技能检定 ({label})",
+	"midi-qol.flagTemplate.optional.NAME.skill.description": "{label} 技能检定获得加值。",
+	"midi-qol.flagTemplate.grants.advantage.skill.name": "携带此效果的生物迫使其他生物进行技能检定时，目标在技能检定上获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.advantage.skill.description": "携带此效果的生物迫使其他生物进行 {label} 技能检定时，目标在技能检定上获得优势。",
+	"midi-qol.flagTemplate.grants.disadvantage.skill.name": "携带此效果的生物迫使其他生物进行技能检定时，目标在技能检定上承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.disadvantage.skill.description": "携带此效果的生物迫使其他生物进行 {label} 技能检定时，目标在技能检定上承受劣势。",
+	"midi-qol.flagTemplate.grants.noAdvantage.skill.name": "携带此效果的生物迫使其他生物进行技能检定时，目标在技能检定上无法获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.noAdvantage.skill.description": "携带此效果的生物迫使其他生物进行 {label} 技能检定时，目标在技能检定上无法获得优势。",
+	"midi-qol.flagTemplate.grants.noDisadvantage.skill.name": "携带此效果的生物迫使其他生物进行技能检定时，目标在技能检定上无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.noDisadvantage.skill.description": "携带此效果的生物迫使其他生物进行 {label} 技能检定时，目标在技能检定上无法承受劣势。",
+	"midi-qol.flagTemplate.advantage.tool.name": "工具检定优势 ({label})",
+	"midi-qol.flagTemplate.advantage.tool.description": "{label} 工具检定优势。",
+	"midi-qol.flagTemplate.disadvantage.tool.name": "工具检定劣势 ({label})",
+	"midi-qol.flagTemplate.disadvantage.tool.description": "{label} 工具检定劣势。",
+	"midi-qol.flagTemplate.noAdvantage.tool.name": "工具检定无法获得优势 ({label})",
+	"midi-qol.flagTemplate.noAdvantage.tool.description": "{label} 工具检定无法获得优势。",
+	"midi-qol.flagTemplate.noDisadvantage.tool.name": "工具检定无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.noDisadvantage.tool.description": "{label} 工具检定无法承受劣势。",
+	"midi-qol.flagTemplate.fail.tool.name": "工具检定自动失败 ({label})",
+	"midi-qol.flagTemplate.fail.tool.description": "{label} 工具检定自动失败。",
+	"midi-qol.flagTemplate.success.tool.name": "工具检定自动成功 ({label})",
+	"midi-qol.flagTemplate.success.tool.description": "{label} 工具检定自动成功。",
+	"midi-qol.flagTemplate.max.tool.name": "工具检定的最大D20掷骰值 ({label})",
+	"midi-qol.flagTemplate.max.tool.description": "{label} 工具检定的最大D20掷骰值",
+	"midi-qol.flagTemplate.min.tool.name": "工具检定的最小D20掷骰值 ({label})",
+	"midi-qol.flagTemplate.min.tool.description": "{label} 工具检定的最小D20掷骰值",
+	"midi-qol.flagTemplate.grants.advantage.tool.name": "携带此效果的生物迫使其他生物进行工具检定时，目标在工具检定上获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.advantage.tool.description": "携带此效果的生物迫使其他生物进行 {label} 工具检定时，目标在工具检定上获得优势。",
+	"midi-qol.flagTemplate.grants.disadvantage.tool.name": "携带此效果的生物迫使其他生物进行工具检定时，目标在工具检定上承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.disadvantage.tool.description": "携带此效果的生物迫使其他生物进行 {label} 工具检定时，目标在工具检定上承受劣势。",
+	"midi-qol.flagTemplate.grants.noAdvantage.tool.name": "携带此效果的生物迫使其他生物进行工具检定时，目标在工具检定上无法获得优势 ({label})",
+	"midi-qol.flagTemplate.grants.noAdvantage.tool.description": "携带此效果的生物迫使其他生物进行 {label} 工具检定时，目标在工具检定上无法获得优势。",
+	"midi-qol.flagTemplate.grants.noDisadvantage.tool.name": "携带此效果的生物迫使其他生物进行工具检定时，目标在工具检定上无法承受劣势 ({label})",
+	"midi-qol.flagTemplate.grants.noDisadvantage.tool.description": "携带此效果的生物迫使其他生物进行 {label} 工具检定时，目标在工具检定上无法承受劣势。",
+	"midi-qol.flagTemplate.DR.damageType.name": "伤害减免 ({label})",
+	"midi-qol.flagTemplate.DR.damageType.description": "{label} 伤害减免。",
+	"dae.MidiQOL.fieldData": {
+		"flags.midi-qol.advantage.ability.all": {
+			"name": "优势(豁免检定、属性检定和技能检定)",
+			"description": "在所有豁免检定，属性检定和技能检定中获得优势。"
+		},
+		"flags.midi-qol.advantage.all": {
+			"name": "优势(D20检定)",
+			"description": "全部D20检定获得优势"
+		},
+		"flags.midi-qol.fail.disadvantage.heavy": {
+			"name": "若为true，重型武器攻击劣势(条件)",
+			"description": "因使用重型武器而在攻击检定中承受劣势"
+		},
+		"flags.midi-qol.": {
+			"name": "MIDI-QOL Flags",
+			"description": ""
+		},
+		"flags.midi-qol.DR.non-adamant": {
+			"name": "伤害减免(非精金)(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.DR.non-magical": {
+			"name": "伤害减免(非魔法)(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.DR.non-magical-physical": {
+			"name": "伤害减免(非魔法物理)(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.DR.non-physical": {
+			"name": "伤害减免(非物理)(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.DR.non-silver": {
+			"name": "伤害减免(非银制)(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.DR.all": {
+			"name": "伤害减免(全部)(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.DR.final": {
+			"name": "伤害减免(Final)(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.DR.healing": {
+			"name": "伤害减免(治愈)(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.DR.midi-none": {
+			"name": "伤害减免(None)(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.DR.none": {
+			"name": "无伤害减免(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.DR.temphp": {
+			"name": "伤害减免(临时生命值)(已弃用)",
+			"description": "请使用 system.traits.dm 字段。"
+		},
+		"flags.midi-qol.OverTime": {
+			"name": "Over Time效果",
+			"description": "详情请查看FVTT中文教程-自动化教程-midi入门指南-Overtime使用说明"
+		},
+		"flags.midi-qol.advantage.concentration": {
+			"name": "优势(专注豁免)",
+			"description": "专注豁免获得优势。"
+		},
+		"flags.midi-qol.advantage.deathSave": {
+			"name": "优势(死亡豁免)",
+			"description": "死亡豁免获得优势。"
+		},
+		"flags.midi-qol.carefulSpells": {
+			"name": "谨慎法术",
+			"description": "豁免法术的预选目标会自动成功。"
+		},
+		"flags.midi-qol.concentrationSaveBonus": {
+			"name": "专注豁免加值",
+			"description": ""
+		},
+		"flags.midi-qol.damage.reroll-kh": {
+			"name": "伤害重掷(取高)",
+			"description": "重掷伤害骰，保留最高值"
+		},
+		"flags.midi-qol.damage.reroll-kl": {
+			"name": "伤害重掷(取低)",
+			"description": "重掷伤害骰，保留最低值"
+		},
+		"flags.midi-qol.disadvantage.ability.all": {
+			"name": "劣势(豁免检定、属性检定和技能检定)",
+			"description": "在所有豁免检定，属性检定和技能检定中承受劣势。"
+		},
+		"flags.midi-qol.disadvantage.all": {
+			"name": "劣势(D20检定)",
+			"description": "全部D20检定承受劣势"
+		},
+		"flags.midi-qol.noAdvantage.all": {
+			"name": "无法获得优势(所有D20检定)",
+			"description": "阻止所有D20检定获得优势。"
+		},
+		"flags.midi-qol.noDisadvantage.all": {
+			"name": "无法承受劣势(所有D20检定)",
+			"description": "阻止所有D20检定承受劣势。"
+		},
+		"flags.midi-qol.noAdvantage.concentration": {
+			"name": "无法获得优势(专注豁免)",
+			"description": "阻止专注豁免获得优势。"
+		},
+		"flags.midi-qol.noDisadvantage.concentration": {
+			"name": "无法承受劣势(专注)",
+			"description": "阻止专注豁免承受劣势。"
+		},
+		"flags.midi-qol.noAdvantage.deathSave": {
+			"name": "无法获得优势(死亡豁免)",
+			"description": "阻止死亡豁免获得优势。"
+		},
+		"flags.midi-qol.noDisadvantage.deathSave": {
+			"name": "无法承受劣势(死亡豁免)",
+			"description": "阻止死亡豁免承受劣势。"
+		},
+		"flags.midi-qol.initiativeNoAdv": {
+			"name": "无法获得优势(先攻检定)",
+			"description": "阻止先攻检定获得优势。"
+		},
+		"flags.midi-qol.initiativeNoDisadv": {
+			"name": "无法承受劣势(先攻检定)",
+			"description": "阻止先攻检定承受劣势。"
+		},
+		"flags.midi-qol.disadvantage.concentration": {
+			"name": "劣势(专注豁免)",
+			"description": "专注豁免承受劣势。"
+		},
+		"flags.midi-qol.disadvantage.deathSave": {
+			"name": "劣势(死亡豁免)",
+			"description": "死亡豁免承受劣势。"
+		},
+		"flags.midi-qol.fail.ability.all": {
+			"name": "自动失败(豁免检定、属性检定和技能检定)",
+			"description": "强制进行的豁免检定、属性检定和技能检定自动失败(D20结果为1)。"
+		},
+		"flags.midi-qol.fail.all": {
+			"name": "自动失败(所有行动)",
+			"description": "强制所有行动进行的检定自动失败(D20结果为1)。"
+		},
+		"flags.midi-qol.fail.spell.material": {
+			"name": "自动失败(材料成分)",
+			"description": "无法施放带有材料成分的法术。"
+		},
+		"flags.midi-qol.fail.spell.somatic": {
+			"name": "自动失败(姿势成分)",
+			"description": "无法施放带有姿势成分的法术。"
+		},
+		"flags.midi-qol.fail.spell.vocal": {
+			"name": "自动失败(言语成分)",
+			"description": "无法施放带有言语成分的法术。"
+		},
+		"flags.midi-qol.fail.deathSave": {
+			"name": "自动失败(死亡豁免)",
+			"description": "强制进行的死亡豁免自动失败(D20结果为1)。"
+		},
+		"flags.midi-qol.grants.critical.range": {
+			"name": "被攻击时，攻击者进行的攻击检定自动重击(范围)",
+			"description": "攻击者在此范围内攻击时获得重击。例如麻痹状态：若攻击者位于你5尺内，其任何命中你的攻击检定都会变为重击。"
+		},
+		"flags.midi-qol.grants.criticalThreshold": {
+			"name": "被攻击时，调整攻击者的重击阈值",
+			"description": "输入18代表18-20对该生物造成重击，输入-3代表17-20对该生物造成重击"
+		},
+		"flags.midi-qol.bloodsense": {
+			"name": "鲜血感知（范围）",
+			"description": "在此范围内对受伤生物（损失任何生命值）具有盲视能力。如果目标在指定范围内，则抵消因无法侦测目标而获得的优势。不影响Token的实际视野。"
+		},
+		"flags.midi-qol.ignoreNearbyFoes": {
+			"name": "无视临近敌人",
+			"description": "忽略附近敌人对远程攻击施加的劣势。"
+		},
+		"flags.midi-qol.inMotion": {
+			"name": "token正在移动",
+			"description": ""
+		},
+		"flags.dnd5e.initiativeAdv": {
+			"name": "优势(先攻检定)",
+			"description": "在先攻检定中获得优势。"
+		},
+		"flags.dnd5e.initiativeDisadv": {
+			"name": "劣势(先攻检定)",
+			"description": "在先攻检定中承受劣势。"
+		},
+		"flags.midi-qol.magicResistance.check.all": {
+			"name": "魔法抗性(属性检定)",
+			"description": "对抗魔法时所有属性检定获得优势"
+		},
+		"flags.midi-qol.magicResistance.save.all": {
+			"name": "魔法抗性(豁免检定)",
+			"description": "对抗魔法时所有豁免检定获得优势"
+		},
+		"flags.midi-qol.magicResistance.skill.all": {
+			"name": "魔法抗性(技能检定)",
+			"description": "对抗魔法时所有技能检定获得优势"
+		},
+		"flags.midi-qol.max.ability.save.concentration": {
+			"name": "最大专注检定掷骰",
+			"description": "D20掷骰的最大值，用于专注豁免。"
+		},
+		"flags.midi-qol.max.skill.all": {
+			"name": "技能检定的最大D20掷骰值(全部)",
+			"description": "D20掷骰的最大值，用于全部技能检定。"
+		},
+		"flags.midi-qol.min.ability.save.concentration": {
+			"name": "最小专注检定掷骰",
+			"description": "D20掷骰的最小值，用于专注豁免。"
+		},
+		"flags.midi-qol.neverTarget": {
+			"name": "范围效应从不选择此生物",
+			"description": "token不能被选择为目标"
+		},
+		"flags.midi-qol.onUseMacroName": {
+			"name": "",
+			"description": "详情查看FVTT中文教程-自动化教程-midi入门指南-MIDI Flags介绍"
+		},
+		"flags.midi-qol.optional.NAME.macroToCall": {
+			"name": "",
+			"description": "详情查看FVTT中文教程-自动化教程-midi入门指南-Optional使用说明"
+		},
+		"flags.midi-qol.optional.NAME.ac": {
+			"name": "可选加值—AC加值",
+			"description": "应用于目标 AC 的加值"
+		},
+		"flags.midi-qol.optional.NAME.activation": {
+			"name": "可选加值—激活条件(有对话框)",
+			"description": "如果评估为真，将触发可选的弹出窗口，以便玩家可以选择使用它。"
+		},
+		"flags.midi-qol.optional.NAME.count": {
+			"name": "可选加值—主要激活次数",
+			"description": ""
+		},
+		"flags.midi-qol.optional.NAME.countAlt": {
+			"name": "可选加值—次要激活次数",
+			"description": ""
+		},
+		"flags.midi-qol.optional.NAME.criticalDamage": {
+			"name": "可选加值-重击伤害",
+			"description": "optional如果添加了伤害加值，这个标志为true代表这个伤害加值的伤害骰也会随着重击翻倍"
+		},
+		"flags.midi-qol.optional.NAME.force": {
+			"name": "可选加值-激活条件(无对话框)",
+			"description": "如果评估为真，将在不弹出对话框询问玩家的情况下强制应用可选加值。"
+		},
+		"flags.midi-qol.optional.NAME.label": {
+			"name": "可选加值—对话框标签",
+			"description": ""
+		},
+		"flags.midi-qol.optional.NAME.skill.fail.all": {
+			"name": "可选加值—技能检定失败",
+			"description": "加值在技能检定失败后添加"
+		},
+		"flags.midi-qol.potentCantrip": {
+			"name": "强力戏法",
+			"description": "戏法在豁免成功时仍会造成一半伤害"
+		},
+		"flags.midi-qol.sculptSpells": {
+			"name": "法术塑形",
+			"description": "预选的豁免法术目标会自动成功，并获得\"反射闪避\"状态。"
+		},
+		"flags.midi-qol.sharpShooter": {
+			"name": "神射手",
+			"description": "攻击最大射程内的敌人时，远程武器攻击检定不会因为超过常规射程承受劣势"
+		},
+		"flags.midi-qol.success.all": {
+			"name": "自动成功(所有D20检定)",
+			"description": "强制进行的所有D20检定自动成功。"
+		},
+		"flags.midi-qol.success.ability.all": {
+			"name": "自动成功(所有属性检定和豁免检定)",
+			"description": "强制进行的所有属性检定和豁免检定自动成功。"
+		},
+		"flags.midi-qol.success.deathSave": {
+			"name": "自动成功(死亡豁免)",
+			"description": "强制进行的死亡豁免自动成功。"
+		},
+		"flags.midi-qol.uncanny-dodge": {
+			"name": "直觉闪避",
+			"description": "减半受到的伤害"
+		}
+	},
+	  "midi-qol.OverTimeEditor.Title": "OverTime编辑",
+	  "midi-qol.OverTimeEditor.Tooltip": "编辑OverTime",
+	  "midi-qol.ConditionEditor.Title": "条件表达式",
+	  "midi-qol.ConditionEditor.Key": "标记键",
+	  "midi-qol.ConditionEditor.Save": "保存",
+	  "midi-qol.ConditionEditor.Cancel": "取消",
+	  "midi-qol.ConditionEditor.Tooltip": "编辑条件表达式",
+	  "midi-qol.OverTimeEditor.TimingSection": "时机",
+	  "midi-qol.OverTimeEditor.Label": "标签",
+	  "midi-qol.OverTimeEditor.Turn": "回合",
+	  "midi-qol.OverTimeEditor.TurnStart": "回合开始",
+	  "midi-qol.OverTimeEditor.TurnEnd": "回合结束",
+	  "midi-qol.OverTimeEditor.RollSection": "掷骰配置",
+	  "midi-qol.OverTimeEditor.RollType": "掷骰类型",
+	  "midi-qol.OverTimeEditor.RollTypeSave": "豁免检定",
+	  "midi-qol.OverTimeEditor.RollTypeCheck": "属性检定",
+	  "midi-qol.OverTimeEditor.RollTypeSkill": "技能检定",
+	  "midi-qol.OverTimeEditor.RollTypeDamage": "仅伤害",
+	  "midi-qol.OverTimeEditor.SaveAbility": "豁免属性",
+	  "midi-qol.OverTimeEditor.CheckAbility": "属性",
+	  "midi-qol.OverTimeEditor.SkillSelect": "技能",
+	  "midi-qol.OverTimeEditor.SaveDC": "DC",
+	  "midi-qol.OverTimeEditor.SaveDCHint": "数字或@表达式（例如 @attributes.spell.dc）",
+	  "midi-qol.OverTimeEditor.SaveMagic": "魔法豁免",
+	  "midi-qol.OverTimeEditor.DamageSection": "伤害",
+	  "midi-qol.OverTimeEditor.DamageRoll": "伤害掷骰",
+	  "midi-qol.OverTimeEditor.DamageType": "伤害类型",
+	  "midi-qol.OverTimeEditor.DamageBeforeSave": "进行豁免检定前造成伤害",
+	  "midi-qol.OverTimeEditor.SaveDamage": "进行豁免检定后造成伤害",
+	  "midi-qol.OverTimeEditor.NoDamage": "豁免成功不会承受伤害",
+	  "midi-qol.OverTimeEditor.HalfDamage": "豁免成功承受一半伤害",
+	  "midi-qol.OverTimeEditor.FullDamage": "豁免成功承受全部伤害",
+	  "midi-qol.OverTimeEditor.CountSection": "成功/失败计数",
+	  "midi-qol.OverTimeEditor.SaveCountEnabled": "追踪成功计数",
+	  "midi-qol.OverTimeEditor.SaveCount": "所需成功次数",
+	  "midi-qol.OverTimeEditor.FailCountEnabled": "追踪失败计数",
+	  "midi-qol.OverTimeEditor.FailCount": "所需失败次数",
+	  "midi-qol.OverTimeEditor.Consecutive": "连续",
+	  "midi-qol.OverTimeEditor.CountRemove": "移除效果",
+	  "midi-qol.OverTimeEditor.CountPermanent": "设为永久",
+	  "midi-qol.OverTimeEditor.CountEffectSpec": "阈值效果/状态",
+	  "midi-qol.OverTimeEditor.CountEffectSpecHint": "例如 petrified, prone|overlay, UUID",
+	  "midi-qol.OverTimeEditor.ActionSaveSection": "使用动作进行豁免检定",
+	  "midi-qol.OverTimeEditor.ActionSave": "动作豁免检定模式",
+	  "midi-qol.OverTimeEditor.ActionSaveNone": "无",
+	  "midi-qol.OverTimeEditor.ActionSaveDialog": "对话框提示",
+	  "midi-qol.OverTimeEditor.ActionSaveRoll": "掷骰请求卡片",
+	  "midi-qol.OverTimeEditor.ConditionsSection": "条件",
+	  "midi-qol.OverTimeEditor.ApplyCondition": "应用条件",
+	  "midi-qol.OverTimeEditor.RemoveCondition": "移除条件",
+	  "midi-qol.OverTimeEditor.AdvancedSection": "高级",
+	  "midi-qol.OverTimeEditor.ItemName": "物品名称/UUID",
+	  "midi-qol.OverTimeEditor.Macro": "宏",
+	  "midi-qol.OverTimeEditor.ChatFlavor": "聊天描述",
+	  "midi-qol.OverTimeEditor.RollMode": "掷骰模式",
+	  "midi-qol.OverTimeEditor.RollModeDefault": "默认",
+	  "midi-qol.OverTimeEditor.RollModePublic": "公开",
+	  "midi-qol.OverTimeEditor.RollModeGM": "仅GM",
+	  "midi-qol.OverTimeEditor.RollModeBlind": "盲骰",
+	  "midi-qol.OverTimeEditor.RollModeSelf": "自骰",
+	  "midi-qol.OverTimeEditor.FastForwardDamage": "快进伤害掷骰",
+	  "midi-qol.OverTimeEditor.FastForwardAttack": "快进攻击检定",
+	  "midi-qol.OverTimeEditor.AutoRollAttack": "自动攻击检定",
+	  "midi-qol.OverTimeEditor.AutoRollDamage": "自动伤害掷骰",
+	  "midi-qol.OverTimeEditor.AllowIncapacitated": "即便失能，也允许进行掷骰",
+	  "midi-qol.OverTimeEditor.KillAnim": "抑制动画",
+	  "midi-qol.OverTimeEditor.Save": "保存",
+	  "midi-qol.OverTimeEditor.Cancel": "取消",
+	  "midi-qol.OverTimeEditor.UnsavedTitle": "未保存的更改",
+	  "midi-qol.OverTimeEditor.UnsavedContent": "你有未保存的更改。是否不保存就关闭？",
+	  "midi-qol.OverTimeEditor.CloseWithoutSaving": "放弃更改",
+	  "midi-qol.OverTimeEditor.RuntimeSection": "运行时状态",
+	  "midi-qol.OverTimeEditor.Permanent": "标记为永久",
+	  "midi-qol.OverTimeEditor.PermanentHint": "勾选后，不再处理后续豁免。当计数达到0且模式为 '+' 时，由 saveCount/failCount 自动设置。",
+	  "midi-qol.ModuleReview.Title": "模组审查 — 导入的设置",
+	  "midi-qol.ModuleReview.Description": "导入的设置保存时以下模组处于激活状态。原本激活但当前未激活的模组已<strong>高亮显示</strong>。请勾选要激活的模组。",
+	  "midi-qol.ModuleReview.MissingWarning": "保存的设置中部分模组未安装，无法激活。",
+	  "midi-qol.ModuleReview.SelectAll": "全选",
+	  "midi-qol.ModuleReview.DeselectAll": "取消全选",
+	  "midi-qol.ModuleReview.Apply": "激活所选并重新加载",
+	  "midi-qol.ModuleReview.Active": "已激活",
+	  "midi-qol.ModuleReview.Installed": "已安装",
+	  "midi-qol.ModuleReview.NotInstalled": "未安装",
+	  "midi-qol.ModuleReview.NoChanges": "所选模组均已激活。",
+	  "midi-qol.ModuleReview.ReloadPrompt": "模组配置已更新。正在重新加载世界。"
+}

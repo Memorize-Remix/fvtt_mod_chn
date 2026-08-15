@@ -1,0 +1,79 @@
+
+  "easy-regions": {
+    "dropdownUUIDs": {
+      "Name": "在 UUID 字段中提供下拉列表",
+      "Hint": "在 UUID 字段中添加显示所有可用 UUID 的下拉列表和显示相关类型（区域、行为、宏、场景）名称（嵌套）的标签"
+    },
+    "onlyNavigatableScenes": {
+      "Name": "仅可导航场景",
+      "Hint": "只显示已启用导航的场景中的 UUID。"
+    },
+    "regionIcons": {
+      "Name": "为区域添加图标",
+      "Hint": "为区域定义添加字段，以指定可选图标（带色调和大小）"
+    },
+    "customDropdown": {
+      "Name": "使用自定义下拉菜单处理",
+      "Hint": "浏览器默认显示的 UUID 下拉列表可能会显示较大的 UUID 值和较小的标签。启用此选项将只显示标签"
+    },
+    "legendShowNoBehavior": {
+      "Name": "高亮无行为区域",
+      "Hint": "当一个区域没有定义行为时，更改区域列表中配置图标的颜色"
+    },
+    "autoLinkTeleport": {
+      "Name": "自动链接传送区域",
+      "Hint": "自动将传送行为与具有互补/相同区域名称的区域连接起来"
+    },
+    "teleportPattern1": {
+      "Name": "传送区域模式名称 1",
+      "Hint": "指定用于自动传送链接的区域名称模式，模式类似于'$1 至 $2'，其中$1和$2可以是任何文本"
+    },
+    "teleportPattern2": {
+      "Name": "传送区域模式名称 2",
+      "Hint": "区域名称的第二种模式，在这两种情况下，'$1'都应出现在'$2'之前"
+    },
+    "teleportSameName": {
+      "Name": "允许传送链接到相同的区域名称",
+      "Hint": "在查找要传送到的区域时，如果区域名称相同，则链接（优先于以下模式匹配）"
+    },
+    "teleportPrompt": {
+      "Name": "自定义传送提示",
+      "Hint": "启用后，每个传送Token行为中都会出现两个附加字段。如果不是空白，这些字段将取代默认的FVTT提示"
+    },
+    "regionConfig": {
+      "src": {
+        "label": "图标图像",
+        "hint": "选择要显示在每个区域多边形中心的图标"
+      },
+      "tint": {
+        "label": "图标色调",
+        "hint": "图标的颜色"
+      },
+      "size": {
+        "label": "图标大小",
+        "hint": "图标大小（最小 32）",
+        "validation": "必须是大于 32 的整数"
+      }
+    },
+    "rulerShowCost": {
+      "Name": "在标尺上显示消耗",
+      "Hint": "更改标尺标签，同时显示消耗（如果与距离不同）。"
+    }
+  },
+  "BEHAVIOR": {
+    "TYPES": {
+      "teleportToken": {
+        "FIELDS": {
+          "confirmPrompt": {
+            "label": "玩家确认文本",
+            "hint": "使用传送时应显示给玩家的文字，使用 {token}, {region}, {scene}。"
+          },
+          "confirmPromptGM": {
+            "label": "GM 确认文本",
+            "hint": "使用传送时应显示给 GM 的文字，使用 {token}, {region}, {scene}。"
+          }
+        }
+      }
+    }
+  }
+}

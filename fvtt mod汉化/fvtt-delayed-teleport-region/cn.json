@@ -1,0 +1,21 @@
+
+    "TYPES": {
+        "RegionBehavior": {
+            "fvtt-delayed-teleport-region": {
+                "delayedTeleportToken": "延迟传送Token"
+            }
+        }
+    },
+    "fvtt-delayed-teleport-region": {
+        "FIELDS": {
+            "showCountdown": {
+                "name": "显示倒计时",
+                "hint": "是否显示滚动文字，展示传送前的剩余时间"
+            },
+            "delayAmount": {
+                "name": "延迟时间",
+                "hint": "Token被传送到目的地前的延迟时间（秒）"
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+
+	"TOKEN-LEAN": {
+		"Keybindings": {
+			"lean": {
+				"Name": "倾斜",
+				"Hint": "按住，将视线移向鼠标光标。."
+			},
+			"leanToggle": {
+				"Name": "倾斜(切换)",
+				"Hint": "按下将视线移向鼠标光标。再按一次重置。"
+			}
+		},
+		"Settings": {
+			"limit": {
+				"Name": "最大倾斜距离",
+				"Hint": "token 可以倾斜多少格。"
+			},
+			"leanWhilePaused": {
+				"Name": "暂停时倾斜",
+				"Hint": "玩家可以在暂停时倾斜。"
+			},
+			"canLeanInCombat": {
+				"Name": "仅限战斗",
+				"Hint": "玩家只能在战斗时倾斜。"
+			},
+			"combatLeanToggle": {
+				"Name": "场景控制按钮",
+				"Hint": "在场景控制中添加一个按钮，用于切换'仅限战斗'设置。"
+			},
+			"notifyOnLean": {
+				"Name": "倾斜时通知",
+				"Hint": "当玩家倾斜时，他们会向GM发送私聊。",
+				"Options": {
+					"1": "总是",
+					"2": "仅限战斗",
+					"0": "从不"
+				}
+			},
+			"notifySound": {
+				"Name": "通知声音",
+				"Hint": "发送通知信息时播放声音。留空表示禁用。"
+			}
+		}
+	}
+}

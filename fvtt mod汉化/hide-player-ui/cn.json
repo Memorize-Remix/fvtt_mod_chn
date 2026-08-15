@@ -1,0 +1,133 @@
+
+    "hide-player-ui": {
+        "settings": {
+            "hide-for-all-players": {
+                "name": "为所有玩家隐藏界面",
+                "hint": "对所有玩家应用界面隐藏配置（GM除外）"
+            },
+            "hide-for-assisstant-gm": {
+                "name": "为GM助手隐藏界面",
+                "hint": "对GM助手应用界面隐藏配置（主GM除外）"
+            },
+            "hidden-players": {
+                "name": "需隐藏界面的玩家名称",
+                "hint": "为指定名称的玩家隐藏界面（逗号分隔列表）。会被「为所有玩家隐藏」设置覆盖"
+            }
+        },
+        "settings-form": {
+            "toggle-all-checkboxes": "切换所有复选框",
+            "hide-personal-ui": {
+                "title": "个人界面配置",
+                "hint": "本屏幕显示/隐藏元素的配置菜单"
+            },
+            "hide-connecting-players-ui": {
+                "title": "新连接玩家的界面配置",
+                "hint": "为新连接玩家设置显示/隐藏元素的配置菜单"
+            },
+            "save": "保存更改",
+            "reset": "恢复默认",
+            "refresh-player-sessions": "需要刷新玩家会话才能使更改生效",
+            "hide-logo": {
+                "label": "隐藏FVTT logo",
+                "notes": "隐藏屏幕左上角的FVTT logo"
+            },
+            "hide-navigation": {
+                "sub-options-label": "或隐藏导航栏特定部分 - 会被「隐藏整个导航栏」设置覆盖",
+                "section-label": "导航栏区域",
+                "complete": {
+                    "label": "隐藏整个导航栏",
+                    "notes": "隐藏屏幕顶部的整个导航栏"
+                },
+                "navToggle": {
+                    "label": "导航切换按钮"
+                },
+                "sceneList": {
+                    "label": "场景列表"
+                },
+                "bossBar": {
+                    "label": "Boss Bar"
+                }
+            },
+            "hide-controls": {
+                "label": "隐藏控件",
+                "notes": "隐藏屏幕左侧的玩家控件栏"
+            },
+            "hide-sidebar": {
+                "sub-options-label": "或隐藏侧边栏特定标签页 - 会被「隐藏整个侧边栏」设置覆盖",
+                "section-label": "侧边栏区域",
+                "complete": {
+                    "label": "隐藏整个侧边栏",
+                    "notes": "隐藏屏幕右侧的整个侧边栏"
+                },
+                "chatLog": {
+                    "label": "隐藏聊天记录"
+                },
+                "chatInput": {
+                  "label": "隐藏聊天输入框"
+              },
+                "combatTracker": {
+                    "label": "隐藏战斗追踪器"
+                },
+                "scenesDirectory": {
+                    "label": "隐藏场景目录"
+                },
+                "actorsDirectory": {
+                    "label": "隐藏角色目录"
+                },
+                "itemsDirectory": {
+                    "label": "隐藏物品目录"
+                },
+                "journalEntries": {
+                    "label": "隐藏日志条目"
+                },
+                "rollableTables": {
+                    "label": "隐藏随机表"
+                },
+                "cardStacks": {
+                    "label": "隐藏牌堆"
+                },
+                "audioPlaylists": {
+                    "label": "隐藏播放列表"
+                },
+                "compendiumPacks": {
+                    "label": "隐藏合集"
+                },
+                "gameSettings": {
+                    "label": "隐藏游戏设置"
+                },
+                "macros": {
+                    "label": "隐藏宏"
+                }
+            },
+            "hide-players": {
+                "label": "隐藏在线玩家列表",
+                "notes": "隐藏屏幕左下角的在线玩家显示"
+            },
+            "hide-hotbar": {
+                "label": "隐藏快捷栏",
+                "notes": "隐藏屏幕底部的快捷栏"
+            },
+            "hide-player-config": {
+                "label": "隐藏玩家配置弹窗",
+                "notes": "隐藏玩家配置弹出窗口"
+            },
+            "hide-token-hud": {
+                "label": "隐藏Token HUD",
+                "notes": "隐藏画布上右键Token周围显示的快捷操作面板"
+            },
+            "hide-token-action-hud": {
+                "label": "隐藏Token Action HUD",
+                "notes": "隐藏Token Action HUD模组提供的弹出式操作面板"
+            },
+            "hide-custom-hotbar": {
+                "label": "隐藏Custom Hotbar",
+                "notes": "隐藏Custom Hotbar模组提供的底部快捷栏"
+            },
+            "hide-css-by-css-selector": {
+               "label": "通过CSS选择器隐藏",
+               "notes": "通过CSS选择器隐藏指定元素。多个选择器需用分号(;)分隔",
+               "documentationLink": "CSS选择器文档"
+            }
+        }
+    }
+}

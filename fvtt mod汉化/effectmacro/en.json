@@ -1,0 +1,67 @@
+{
+  "EFFECTMACRO": {
+    "AddAnother": "Add",
+
+    "CombatTriggers": "Combat",
+    "CombatantTriggers": "Combatant",
+    "EffectTriggers": "Effect",
+	"SystemTriggers": "System",
+    "never": "When called by external methods",
+
+    "onCombatantDefeated": "When the combatant is marked 'Defeated'",
+    "onTurnEnd": "When the combatant ends its turn",
+    "onTurnStart": "When the combatant starts its turn",
+
+    "onCombatEnd": "When the combat ends",
+    "onCombatStart": "When the combat starts",
+    "onEachTurn": "When the combat proceeds to the next turn",
+    "onRoundEnd": "When the combat round ends",
+    "onRoundStart": "When the combat round starts",
+
+    "onCreate": "When the effect is created",
+    "onDelete": "When the effect is deleted",
+    "onDisable": "When the effect is disabled",
+    "onEnable": "When the effect is enabled",
+    "onToggle": "When the effect is disabled or enabled",
+
+    "dnd5e": {
+      "ChangeTriggers": "Changes",
+      "RestTriggers": "Rests",
+      "RollTriggers": "Rolls",
+
+      "beginConcentrating": "When concentration begins",
+      "damageActor": "When the actor receives damage",
+      "endConcentration": "When concentration ends",
+      "healActor": "When the actor is healed",
+      "longRest": "When a long rest is completed",
+      "rollAbilityCheck": "When an ability check is made",
+      "rollAbilitySave": "When a saving throw is made",
+      "rollAbilityTest": "When an ability check is made",
+      "rollAttack": "When an attack roll is made",
+      "rollConcentration": "When a concentration save is made",
+      "rollDamage": "When a damage roll is made",
+      "rollDeathSave": "When a death saving throw is made",
+      "rollHitDie": "When a hit die is rolled",
+      "rollInitiative": "When an initiative roll is made",
+      "rollSavingThrow": "When a saving throw is made",
+      "rollSkill": "When a skill check is made",
+      "rollToolCheck": "When a tool check is made",
+      "shortRest": "When a short rest is completed"
+    },
+
+    "DeletePrompt": "Delete this macro?",
+    "MacroSheet": "Effect Macro: {name}",
+
+    "ModuleTitle": "Effect Macro",
+    "NoScriptProvided": "You did not provide a function.",
+    "NoSuchScript": "No such script embedded in effect.",
+
+    "SettingRestrictPermission": "Restrict Permissions",
+    "SettingRestrictPermissionHint": "If enabled, non-GM clients will not be able to add, edit, or delete macros from an Active Effect.",
+
+    "effectSheet": {
+      "used": "These are the macros configured to be executed automatically by the 'Effect Macro' module.",
+      "unused": "Select the trigger and configure a new macro to be executed automatically by the 'Effect Macro' module."
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "MINI_UPLOADER": {
+        "Settings": {
+            "UploadFolder": {
+                "Name": "Upload Folder",
+                "Hint": "The folder path where converted WebP images will be uploaded."
+            },
+            "TargetJournal": {
+                "Name": "Target Journal",
+                "Hint": "The journal entry where uploaded images will be added as pages."
+            },
+            "WebPQuality": {
+                "Name": "WebP Quality",
+                "Hint": "Quality of the WebP conversion (0.1 = lowest, 1.0 = highest)."
+            },
+            "ShowNotifications": {
+                "Name": "Show Notifications",
+                "Hint": "Display notification messages when images are uploaded."
+            },
+            "CreateJournalIfMissing": {
+                "Name": "Auto-Create Journal",
+                "Hint": "Automatically create the target journal if it doesn't exist."
+            }
+        },
+        "Notifications": {
+            "UploadSuccess": "Uploaded {name} to journal",
+            "UploadError": "Failed to upload {name}: {error}",
+            "ConversionError": "Failed to convert {name} to WebP",
+            "JournalNotFound": "Target journal not found. Please configure in module settings.",
+            "JournalCreated": "Created journal: {name}",
+            "NoImagesDropped": "No valid image files detected in drop"
+        }
+    }
+}

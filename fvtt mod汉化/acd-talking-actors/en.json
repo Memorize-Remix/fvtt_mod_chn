@@ -1,0 +1,106 @@
+{
+    "acd.ta": {
+        "settings": {
+            "NarratorActor": "Narrating Actor (ID)",
+            "NarratorActorHint": "This actor with this document id takes on the role of the narrator. This means that the voice settings of this actor are used if either no actor has been selected with the /talk command or no voice settings have been made for that actor.",
+            "AllowUsers": "Allow users",
+            "AllowUsersHint": "If enabled, users have access to the module.",
+            "EnableSelectionContextMenu": "Enable Context Menu On Selected Text",
+            "EnableSelectionContextMenuHint": "If enabled, a context menu will be presented in journal entries to read aloud the selected text parts. (Not compatible with the module \"Narrator Tools\"",
+            "PostTextToChat": "Post spoken text to chat",
+            "PostTextToChatHint": "If enabled, the spoken text will be posted to the chat window (and possibly as a chat bubble on the actor's token)",
+            "AutoInCharacterTalk": "Automatically read aloud In-Character chat messages",
+            "AutoInCharacterTalkHint": "If enabled, chat messages sent In-Character with the /ic command will be automatically read aloud.",
+            "ApiKey": "API-Key",
+            "ApiKeyHint": "Your Elevenlabs API Key",
+            "MasterApiKey": "Master-API-Key",
+            "MasterApiKeyHint": "The Elevenlabs API Key to be used by all clients without their own API-Key. Leave empty when you don't want to share your Elevenlabs Account with your players.",
+            "SoundEffectFolder": "Folder for Sound Effects",
+            "SoundEffectFolderHint": "The files for the generated sound effects will be stored in this folder.",
+            "SoundEffectPlaylist": "Playlist for sound effects",
+            "SoundEffectPlaylistHint": "The name of the playlist in which the generated sound effects are stored.",
+            "DefaultLanguage": "Default Language for Voices",
+            "DefaultLanguageHint": "The language that is selected by default for actors when no other language has been configured.",
+            "DefaultModel": "Default Model for Voices",
+            "DefaultModelHint": "The model that is selected by default for actors when no other model has been configured."
+
+        },
+        "controls": {
+            "button.title": "Voice Settings",
+            "headerbutton.title": "Voice",
+            "readAloud": "Read Aloud (Narrator)",
+            "readAloudWithoutChat": "Read Aloud (Narrator) without Chatmessage",
+            "readAloudCurrentActor": "Read Aloud (Actor)",
+            "readAloudCurrentActorWithoutChat": "Read Aloud (Actor) without Chatmessage",
+            "cancel": "Cancel",
+            "mute": "Mute Talking Actors"
+        },
+        "TokenHud": {
+            "dialog.title": "Read Text Aloud",
+            "text.label": "Read aloud this text",
+            "speaker": "Speaker",
+            "narrator": "Narrator",
+            "actor": "Actor",
+            "withChat": "Read Aloud",
+            "withoutChat": "Read Aloud <b>Without</b> Chatmessage"
+        },
+        "errors": {
+            "noTokenSelected": "At least one token has to be selected.",
+            "noLinkedActor": "At least one token with a linked actor has to be selected!",
+            "notAllLinkedActors": "Not all selected token are linked to actors. Voice settings will only assigned to the linked actors.",
+            "noApiKey": "The Elevenlabs api key has to be configured in the settings first.",
+            "unknownVoice": "No Elevenlabs voice found.",
+            "tokensAlreadyAdded": "Some actors are already contained and not added again.",
+            "noVoiceForActor": "No voice configured for actor."
+        },
+        "chat": {
+            "textTalked": "Talked Text:",
+            "unknownSpeaker": "Unknown Speaker"
+        },
+        "VoiceSettings": {
+            "Title": "Voice Settings for Actors",
+            "Actors": "Actors",
+            "AddActor": "Add an actor",
+            "Add": "Add",
+            "ClearAll": "Clear all actors",
+            "Clear": "Clear",
+            "DeleteActor": "Remove this actor",
+            "VoiceLabel": "Voice",
+            "AcceptData": "Accept",
+            "Close": "Close",
+            "PlaySample": "Play Sample",
+            "VoiceSelection": "Voice Selection",
+            "Settings": "Voice Settings",
+            "SimilarityBoost": "Similarity Boost",
+            "Stability": "Stability",
+            "Style": "Style",
+            "Model": "Speech Synthesis Model Settings",
+            "ModelLabel": "Model",
+            "Language": "Language"
+        },
+        "SoundEffects": {
+            "dialog.title": "Create Sound Effects",
+            "createbutton": "Create Sound Effects",
+            "createbuttonHint": "Create new sound effects",
+            "effectDescription": "Description of the Sound Effect",
+            "effectDescriptionHint": "The text that will get converted into a sound effect.",
+            "generationSettings": " Generation Settings",
+            "secondsLabel": "Duration",
+            "secondsUnit": "Second(s)",
+            "automatic": "automatic",
+            "promptInfluenceLabel": "Prompt Influence",
+            "filename": "File name for sound effect",
+            "buttonGenerate": "Generate",
+            "buttonGenerateHint": "Generates the sound effect and stores it in the playlist",
+            "buttonGenerateAndPlace": "Generate and Place",
+            "buttonGenerateAndPlaceHint": "Generates the sound effect, stores it in the playlist and places it as an ambient sound in the scene.",
+            "headerAmbientSoundOptions": "Ambient Sound Options",
+            "radius": "Effect Radius",
+            "volume": "Maximum Volume",
+            "repeat": "Repeat",
+            "walls": "Limited by Walls",
+            "easing": "Adjust Volume",
+            "hidden": "Hidden"
+        }
+    }
+}

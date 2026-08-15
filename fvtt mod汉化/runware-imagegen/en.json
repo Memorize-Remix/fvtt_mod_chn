@@ -1,0 +1,83 @@
+{
+  "runware-image-generator": {
+    "settings": {
+      "apiKey": {
+        "name": "Runware API Key",
+        "hint": "Your Runware API key for image generation. Get one at https://runware.ai"
+      },
+      "defaultModel": {
+        "name": "Default Model",
+        "hint": "The default AI model to use for image generation (e.g., runware:100@1)"
+      },
+      "imageWidth": {
+        "name": "Image Width",
+        "hint": "Default width for generated images in pixels"
+      },
+      "imageHeight": {
+        "name": "Image Height",
+        "hint": "Default height for generated images in pixels"
+      },
+      "numberResults": {
+        "name": "Number of Results",
+        "hint": "How many images to generate per request (1-4)"
+      }
+    },
+    "dialog": {
+      "title": "Generate AI Image",
+      "generating": "Generating image, please wait...",
+      "actorInfo": "Actor Information",
+      "generatingFor": "Generating for:",
+      "prompt": {
+        "title": "Image Prompt",
+        "positive": "Positive Prompt",
+        "positiveHint": "Describe what you want to see in the image",
+        "negative": "Negative Prompt",
+        "negativeHint": "Optional: Describe what you want to avoid in the image"
+      },
+      "model": {
+        "title": "Model Configuration",
+        "label": "AI Model",
+        "hint": "The AI model to use for generation",
+        "width": "Width",
+        "height": "Height",
+        "numberResults": "Number of Images",
+        "numberResultsHint": "How many images to generate (1-4)"
+      },
+      "advanced": {
+        "title": "Advanced Options",
+        "toggle": "Show Advanced Options",
+        "lora": "LoRA Model (Optional)",
+        "loraHint": "Optional LoRA model for style adaptation",
+        "loraWeight": "Weight",
+        "steps": "Inference Steps",
+        "stepsHint": "Number of denoising steps (more = higher quality, slower)",
+        "cfgScale": "CFG Scale",
+        "cfgScaleHint": "How closely to follow the prompt (higher = more literal)",
+        "seed": "Seed (Optional)",
+        "seedHint": "For reproducible results, use the same seed"
+      },
+      "actions": {
+        "cancel": "Cancel",
+        "generate": "Generate Image"
+      }
+    },
+    "notifications": {
+      "noApiKey": "Please configure your Runware API key in module settings.",
+      "generating": "Generating image...",
+      "saving": "Saving generated image...",
+      "saved": "Image saved successfully at {path}",
+      "updated": "Actor image updated",
+      "failed": "Failed to save image - {error}",
+      "generationFailed": "Image generation failed - {error}",
+      "alreadyGenerating": "Generation already in progress",
+      "noPrompt": "Please enter a prompt",
+      "noModel": "Please enter a model"
+    },
+    "confirm": {
+      "setAsImage": {
+        "title": "Set as Actor Image?",
+        "content": "Would you like to set this as the actor's portrait image?"
+      }
+    }
+  }
+}

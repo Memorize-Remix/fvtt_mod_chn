@@ -1,0 +1,31 @@
+{
+  "alpha-5": {
+    "settings": {
+      "apiUrl": {
+        "name": "API URL",
+        "hint": "The base URL for the Alpha-5 API"
+      },
+      "apiKey": {
+        "name": "API Key",
+        "hint": "The authentication key for accessing the Alpha-5 API"
+      },
+      "autoSync": {
+        "name": "Auto Sync",
+        "hint": "Automatically sync players at regular intervals"
+      },
+      "syncInterval": {
+        "name": "Sync Interval",
+        "hint": "How often to sync players (in minutes)"
+      }
+    },
+    "table": {
+      "headers": {
+        "id": "ID",
+        "displayName": "Display Name",
+        "discordId": "Discord ID",
+        "tag": "Tag"
+      },
+      "noUsers": "No users found"
+    }
+  }
+}

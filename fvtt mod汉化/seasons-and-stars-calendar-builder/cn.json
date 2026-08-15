@@ -1,0 +1,65 @@
+
+  "CALENDAR_BUILDER": {
+    "title": "日历构建器",
+    "description": "为Seasons & Stars创建和编辑自定义日历",
+    "menu": {
+      "button": "日历构建器"
+    },
+    "app": {
+      "title": "日历构建器",
+      "menu": {
+        "new": "新建日历",
+        "open": "打开日历",
+        "save": "保存日历",
+        "export": "导出 JSON",
+        "validate": "验证",
+        "import": "导入 JSON"
+      },
+      "editor": {
+        "title": "日历 JSON",
+        "placeholder": "在此处粘贴或输入你的日历 JSON...",
+        "validation": {
+          "title": "验证结果",
+          "valid": "日历有效！",
+          "invalid": "日历存在验证错误：",
+          "warnings": "警告：",
+          "no_errors": "未发现验证错误。",
+          "no_warnings": "无警告。"
+        }
+      },
+      "buttons": {
+        "new": "新建",
+        "open": "打开",
+		"load_current": "加载当前",
+        "save": "保存",
+        "export": "导出",
+        "validate": "验证",
+        "import": "导入",
+        "close": "关闭",
+        "clear": "清空"
+      },
+      "dialogs": {
+        "import_title": "导入日历 JSON",
+        "export_title": "导出日历 JSON",
+        "save_title": "保存日历",
+        "confirm_clear": "确定要清空编辑器吗？这将丢失所有未保存的更改。"
+      },
+      "notifications": {
+        "new_template": "已创建新的日历模板",
+        "imported": "日历 JSON 导入成功",
+        "exported": "日历 JSON 已导出到文件",
+        "saved": "日历保存成功",
+        "cleared": "编辑器已清空",
+        "validation_complete": "验证完成",
+        "no_content": "没有内容可验证",
+        "invalid_json": "JSON 格式无效",
+        "export_failed": "导出日历失败",
+        "import_failed": "导入日历失败",
+		"current_calendar_loaded": "已从文件加载当前日历",
+		"no_current_calendar": "当前未加载任何激活日历",
+		"current_calendar_load_failed": "从文件加载当前日历失败",
+		"timeout": "请求超时 - 文件过大或服务器不可用"
+      }
+    }
+  }
+}

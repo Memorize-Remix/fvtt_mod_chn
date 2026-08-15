@@ -1,0 +1,31 @@
+{
+    "rich-info-tooltips": {
+        "settings": {
+            "theme": {
+                "name": "Theme",
+                "hint": "Select a theme for the rich info tooltips.",
+                "choices": {
+                    "default": "No theme",
+                    "dark-fantasy": "Dark fantasy",
+                    "sci-fi": "Sci-fi",
+                    "retro": "Retro",
+                    "modern": "Modern"
+                }
+            },
+            "addTitle": {
+                "name": "Add title to Tooltips",
+                "hint": "Add the title of the info page to the tooltip as an H1 heading."
+            },
+            "autoTooltips": {
+                "name": "Auto Tooltips",
+                "hint": "Automatically add tooltips to all content links that have a description. Requires Reload"
+            },
+            "useImageBackground": {
+                "name": "Use Image Background",
+                "hint": "Use the image of the document (if any) as the background accent of the tooltip."
+            }
+        },
+        "app": {},
+        "flags": {}
+    }
+}

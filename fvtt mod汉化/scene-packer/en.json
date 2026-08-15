@@ -1,0 +1,572 @@
+{
+  "SCENE-PACKER": {
+    "ok": "Ok",
+    "dontShow": "Don't show me again",
+    "settings": {
+      "context-menu": {
+        "name": "Enable Scene Packer context menu",
+        "hint": "Adds context menu items to assist with packing a Scene. You should only need to enable this while actively developing and packing a module with scenes."
+      }
+    },
+    "welcome": {
+      "title": "Quick Start",
+      "intro": "<h2>Welcome to <strong>{adventure}</strong>.</h2>",
+      "brand-new": "<p>Would you like to import and unpack the content from this module?</p>",
+      "update-available": "<p>An update is available. You have <strong>{existing}</strong> installed, and <strong>{version}</strong> is available. Would you like to import the content from this module?</p>",
+      "update-cancelled": "Update of {module} from {from} -> to {to} was cancelled.",
+      "update-warning-title": "CAUTION! Destructive operation ahead!",
+      "update-warning-content": "<h2><i class='fas fa-exclamation-triangle'></i> Warning</h2><p>There are existing entries in this world that belong to <strong>{module}</strong>. Depending on your choice, you will <em>delete</em> these existing entries and then import the new entries.</p><p>It is <strong>strongly</strong> recommended to backup your world before performing this operation. If you have not done so already, select \"Cancel\" and <em>make a backup now</em> by exiting your world and making a <a href='https://foundryvtt.com/article/configuration/#backup' target='_blank'>backup of the world folder</a> that corresponds to this world (worlds/{world}).</p><p><strong>If you have made any changes</strong> (such as editing a journal entry, or adding player character tokens to a scene) to an entry that came from <em>{module}</em> and you would like to keep those changes, then you should take a copy of what you changed somewhere outside of this world (such as with screenshots or right-clicking the entry and choosing \"Export Data\" from the context menu) before choosing <em>Replace</em>, as those entries and changes <em>will be deleted</em>.</p>{listToDelete}<p>How would you like to proceed?</p><ul><li><em>Replace</em> the existing entries.</li><li><em>Rename</em> the old entries but otherwise leave the existing ones alone.</li><li><em>Cancel</em> this process, for instance to <strong>make a backup</strong>.</li></ul>",
+      "update-warning-list-to-delete": "Existing entries that will be deleted and replaced or renamed:",
+      "yes-all": "Yes import <strong>all {count} entities</strong>",
+      "yes-all-fallback": "Yes import <strong>all entities</strong>",
+      "let-me-choose": "Let me choose individual <strong>Scenes</strong>",
+      "close": "Close",
+      "migration-wait": "Please wait while the compendiums for \"{module}\" are migrated…",
+      "migration-complete": "Migrations of \"{module}\" compendiums complete.",
+      "import-all": {
+        "title": "Please wait…",
+        "wait-title": "Please wait… importing all content from {name}.",
+        "wait": "Please wait… loading {type}…",
+        "creating-data": "Creating {count} {type} from {label}…",
+        "complete": "Finished importing all content from {name}."
+      }
+    },
+    "worth-packing": {
+      "title": "Scenes worth packing",
+      "intro": "The following {count} of {total} Scene/s are worth packing if you haven't already:",
+      "verify": "Verify compendium packs",
+      "verify-intro": "<p>Verify that the scenes present in your world are also present in your module compendiums and contain packed data.</p><p><strong>Please note:</strong> this process will not verify that the packed data is the same, it merely ensures that packed data is present in the compendiums.</p>",
+      "verify-select": "Select the module containing the compendium packs you wish to verify:",
+      "verify-slow": "<strong>Please note:</strong> This process may take a while depending on how many scenes you have.",
+      "verify-wait": "Please wait…",
+      "verify-missing": "The following {count} of {total} Scene/s in the compendiums belonging to \"{module}\" may have issues:",
+      "verify-ok": "All scenes were found in the compendiums belonging to \"{module}\".",
+      "verify-not-found": "missing",
+      "verify-not-packed": "no packed data",
+      "none": "There are no Scenes that contain data worth packing."
+    },
+    "asset-report": {
+      "name": "Asset Report",
+      "selector": "Select whether to run the Asset Report against the local World or against a Module's compendiums.",
+      "notes": "Below is the Asset Report showing which entities in your {mode} have assets that depend on external locations. It does not support wildcard tokens.",
+      "copy": "Copy JSON to clipboard",
+      "copied-to-clipboard": "Asset Report copied to clipboard!",
+      "scenes": "Scenes",
+      "cards": "Cards",
+      "actors": "Actors",
+      "journals": "Journals",
+      "items": "Items",
+      "playlists": "Playlists",
+      "macros": "Macros",
+      "tables": "RollTables",
+      "show": "Show dependencies",
+      "hide": "Hide dependencies",
+      "hide-ok": "Only show entries that have dependencies:",
+      "wait": "Please wait… Loading {type}…",
+      "module-select": {
+        "title": "Module Selection",
+        "instructions": "The asset report will list all of the assets in the {mode} which have dependencies outside of your module. Use this report to help determine what images will be broken when you distribute your module to others. Use this form to select which modules you want to treat as a data source. In most cases this should just be your module and any dependencies of your module.",
+        "none": "No Modules are available within this World.",
+        "search": "Filter Modules",
+        "web-external": "Treat web URLs as \"external\" when calculating dependencies.",
+        "mini": "Select which module you wish to run the Asset Report against. Only modules with Packs are available."
+      },
+      "no-assets": "No Assets",
+      "no-assets-details": "There are no assets in this world.",
+      "processing-assets": "Processing assets",
+      "processing-assets-count": "Validating {count} of {total} assets…",
+      "run": "Run Asset Report"
+    },
+    "notifications": {
+      "first-launch": "First launch of this Scene! Unpacking scene…",
+      "done": "All done!",
+      "pack-scene": {
+        "writing-journals": "Writing {number} journals to scene: {name}",
+        "no-journal-pins": "No journal pins detected on the scene.",
+        "writing-tokens": "Writing {number} tokens to scene: {name}",
+        "no-tokens": "No tokens detected on the scene.",
+        "writing-tile-actions": "Writing {countActions} actions to {countTiles} tiles on scene: {name}",
+        "already-shown-welcome": "The welcome journal \"{journal}\" has already been shown for this version \"{version}\"."
+      },
+      "import-entities": {
+        "creating-data": "Importing {count} new {type}.",
+        "missing-name": "Tried to find an actor for a token with no name.",
+        "could-not-import": "Error importing entity",
+        "invalid-packs": {
+          "error": "Invalid pack configuration. Cannot import {type}. Check console (F12) for more details.",
+          "short": "ImportEntities was called with no searchPacks defined.",
+          "details": "ImportEntities was called with no valid searchPacks defined. Double check for typos between your manifest.json and module initialisation files. Received the following call details:",
+          "reference": "ImportEntities was called with a reference that is not registered with Foundry. Double check for typos between your manifest.json and module initialisation files. If you are *not* the creator of this module, then the issue is likely that a compendium pack from a different game system is being referenced. You can ignore this warning if so. Received the following call details:",
+          "missing-pack": "Invalid pack configuration. Cannot find compendium {packName}. Check console (F12) for more details.",
+          "missing-pack-details": "ImportEntities was called to search for pack \"{packName}\" which is not found. Check for typos in your module setup."
+        },
+        "invalid-collection": "Could not find a game collection of type \"{type}\".",
+        "active-tiles-macro-missing": "Tile \"{tile}\" | Monk's Active Tile Triggers | Could not find a Macro named \"{macro}\" within your world. This active tile will remain unlinked and you will need to link the macro again manually.",
+        "active-tiles-entity-reference-missing": "Tile \"{tile}\" | Monk's Active Tile Triggers | Could not find a replacement entity for \"{ref}\" within your world. This active tile will remain unlinked and you will need to link the entity again manually.",
+        "active-tiles-unpacked": "Unpacked {tiles} tiles and {actions} actions on scene \"{scene}\".",
+        "cf-clean-up-title": "Clean up {name} entities?",
+        "cf-clean-up": "<p>You just imported {count} entites with the name <code style=\"display:inline-block;\">{name}</code> that belong to the <a href=\"https://foundryvtt.com/packages/compendium-folders\" target=\"_blank\">Compendium Folders</a> module which you do not have enabled.</p><p>Do you want to run the <a class=\"entity-link\" draggable=\"true\" data-pack=\"scene-packer.macros\" data-id=\"D0GsPqV3zglJ9w7V\"><i class=\"fas fa-terminal\"></i> Clean up {name} entries</a> macro?</p>"
+      },
+      "find-journal-compendium": {
+        "no-match": "Could not find a Journal entry named \"{journal}\" in the compendiums.",
+        "invalid-index": "Error loading journal content from compendium. Check debug logs for details.",
+        "missing-pack": "Invalid pack configuration. Cannot find compendium {packName}. Check console (F12) for more details.",
+        "missing-pack-details": "FindJournalInCompendiums was called to search for pack \"{packName}\" which is not found. Check for typos in your module setup.",
+        "no-packs": "Invalid pack configuration. Packing scene journal pins will not work. Check console (F12) for more details.",
+        "no-packs-details": "FindJournalInCompendiums was called but there are no \"journalPacks\" defined in the module initialisation script. See the \"Example module javascript\" JournalEntry for details on defining the constant. Possible values are: {packOptions}",
+        "no-packs-in-module": "Warning: there are no JournalEntry packs defined in your module.json"
+      },
+      "find-actor-compendium": {
+        "no-match": "Could not find an Actor entry named \"{actor}\" in the compendiums.",
+        "invalid-index": "Error loading actor content from compendium. Check debug logs for details.",
+        "missing-pack": "Invalid pack configuration. Cannot find compendium {packName}. Check console (F12) for more details.",
+        "missing-pack-details": "FindActorInCompendiums was called to search for pack \"{packName}\" which is not found. Check for typos in your module setup.",
+        "no-packs": "Invalid pack configuration. Packing scene actor tokens will not work. Check console (F12) for more details.",
+        "no-packs-details": "FindActorInCompendiums was called but there are no \"creaturePacks\" defined in the module initialisation script. See the \"Example module javascript\" JournalEntry for details on defining the constant. Possible values are: {packOptions}",
+        "no-packs-in-module": "Warning: there are no Actor packs defined in your module.json"
+      },
+      "find-playlist-compendium": {
+        "no-match": "Could not find a Playlist entry named \"{playlist}\" in the compendiums.",
+        "invalid-index": "Error loading playlist content from compendium. Check debug logs for details.",
+        "missing-pack": "Invalid pack configuration. Cannot find compendium {packName}. Check console (F12) for more details.",
+        "missing-pack-details": "FindPlaylistInCompendiums was called to search for pack \"{packName}\" which is not found. Check for typos in your module setup."
+      },
+      "find-macro-compendium": {
+        "no-match": "Could not find a Macro entry named \"{macro}\" in the compendiums.",
+        "invalid-index": "Error loading macro content from compendium. Check debug logs for details.",
+        "missing-pack": "Invalid pack configuration. Cannot find compendium {packName}. Check console (F12) for more details.",
+        "missing-pack-details": "FindMacroInCompendiums was called to search for pack \"{packName}\" which is not found. Check for typos in your module setup."
+      },
+      "find-entity-compendium": {
+        "no-match": "Could not find a {type} entry named \"{name}\" in the compendiums.",
+        "invalid-index": "Error loading {type} content from compendium. Check debug logs for details.",
+        "missing-pack": "Invalid pack configuration. Cannot find compendium {packName}. Check console (F12) for more details.",
+        "missing-pack-details": "findCompendiumEntity was called to search for pack \"{packName}\" which is not found. Check for typos in your module setup."
+      },
+      "find-actor": {
+        "missing-name": "Cannot find a token that has no name. Check debug logs for details.",
+        "missing-name-details": "Trying to find a token that has no name is not going to end well. Please ensure the Token and Actor have a name prior to packing."
+      },
+      "link-tokens": {
+        "missing": "Could not find {count} actors to link, they will remain unlinked. Check debug logs for details.",
+        "missing-details": "Could not find {count} actors to link in {scene}. The following actor tokens were not found in the \"{adventureName}\" folder.",
+        "linking": "Relinking {count} Tokens linked to actors."
+      },
+      "spawn-notes": {
+        "missing": "Could not find {count} journals to link. Check debug logs for details.",
+        "missing-details": "Could not find {count} notes to link in {scene}. The following journals were not found.",
+        "spawning": "Linking {count} journal notes."
+      },
+      "clear-data": {
+        "done": "Finished clearing Packed Data."
+      },
+      "deprecated": "Warning, {method} is deprecated and will be removed in the future."
+    },
+    "scene-context": {
+      "pack": {
+        "title": "Pack Scene Data"
+      },
+      "unpack": {
+        "title": "Unpack Scene Data"
+      },
+      "clear": {
+        "title": "Clear Packed Scene Data"
+      }
+    },
+    "log": {
+      "invalidForce": "{moduleName} | Invalid log usage. Expected \"log(force, ...args)\" as boolean but got {force}"
+    },
+    "errors": {
+      "adventureName": {
+        "ui": "Invalid call to SetAdventureName(). See console for details.",
+        "details": "Invalid adventure name passed to \"SetAdventureName()\". This must be the name of the adventure as defined in module.json under the \"title\" field."
+      },
+      "moduleName": {
+        "ui": "Invalid call to SetModuleName(). See console for details.",
+        "details": "Invalid module name passed to \"SetModuleName()\". This must be the name of the module as defined in module.json under the \"name\" field."
+      },
+      "instance": {
+        "ui": "Invalid call to ScenePacker. See console for details.",
+        "details": "Invalid module name or method passed to \"ScenePacker\". The module name must be as defined in module.json under the \"name\" field. Ensure that the names are correct and that your module has initialised ScenePacker correctly - see Journal entries in the compendium for assistance."
+      },
+      "version": {
+        "packed-low": "The scene \"{scene}\" (from module \"{sourceModule}\") was packed with Scene Packer version \"{version}\" which is older than the minimum compatible version of \"{supportedVersion}\". Please contact the author and ask them to re-Pack the Scene with a current version."
+      },
+      "welcomeJournal": {
+        "ui": "Invalid call to SetWelcomeJournal(). See console for details.",
+        "details": "Invalid journal name passed to \"SetWelcomeJournal()\". This must be the name of a journal in the module compendium.",
+        "missing": "SetWelcomeJournal() called with no value. This disables importing a welcome journal. No journal will automatically be opened."
+      },
+      "additionalJournals": {
+        "ui": "Invalid call to SetAdditionalJournalsToImport(). See console for details.",
+        "details": "You must pass an array of strings to \"SetAdditionalJournalsToImport()\". They must be the names of journals. Received: {journal}",
+        "missing": "SetAdditionalJournalsToImport() called with no value. This disables importing of additional journals. Only those journals linked to the scene by a map pin will be imported."
+      },
+      "additionalMacros": {
+        "ui": "Invalid call to SetAdditionalMacrosToImport(). See console for details.",
+        "details": "You must pass an array of strings to \"SetAdditionalMacrosToImport()\". They must be the names of macros. Received: {macro}",
+        "missing": "SetAdditionalMacrosToImport() called with no value. This disables importing of additional macros."
+      },
+      "creaturePacks": {
+        "ui": "Invalid call to SetCreaturePacks(). See console for details.",
+        "details": "You must pass an array of strings to \"SetCreaturePacks()\". They must be the names of Actor Packs. Received: {pack}",
+        "missing": "SetCreatePacks() called with no value. This disables importing of Actors."
+      },
+      "journalPacks": {
+        "ui": "Invalid call to SetJournalPacks(). See console for details.",
+        "details": "You must pass an array of strings to \"SetJournalPacks()\". They must be the names of Journal Packs. Received: {pack}",
+        "missing": "SetJournalPacks() called with no value. This disables importing of Journals."
+      },
+      "macroPacks": {
+        "ui": "Invalid call to SetMacroPacks(). See console for details.",
+        "details": "You must pass an array of strings to \"SetMacroPacks()\". They must be the names of Macro Packs. Received: {pack}",
+        "missing": "SetMacroPacks() called with no value. This disables importing of Macros."
+      },
+      "playlistPacks": {
+        "ui": "Invalid call to SetPlaylistPacks(). See console for details.",
+        "details": "You must pass an array of strings to \"SetPlaylistPacks()\". They must be the names of Playlist Packs. Received: {pack}",
+        "missing": "SetPlaylistPacks() called with no value. This disables importing of Playlists."
+      },
+      "modulePacks": {
+        "ui": "Invalid call to SetAdditionalModulePacks(). See console for details.",
+        "details": "You must pass an array of strings to \"SetAdditionalModulePacks()\". They must be the names of Modules. Received: {pack}",
+        "missing": "SetAdditionalModulePacks() called with no value."
+      },
+      "ignoredPacks": {
+        "ui": "Invalid call to SetIgnoredCompendiumPacks(). See console for details.",
+        "details": "You must pass an array of strings to \"SetIgnoredCompendiumPacks()\". They must be the names of Module Packs. Received: {pack} Available packs are: {packs}",
+        "invalid": "Invalid value passed to \"SetIgnoredCompendiumPacks()\". Received: {pack} Available packs are: {packs}",
+        "missing": "SetIgnoredCompendiumPacks() called with no value."
+      }
+    },
+    "world-conversion": {
+      "compendiums": {
+        "wait": "Please wait… Check the console (F12) for more information.",
+        "unlock": "Unlocking compendiums: {list}",
+        "lock": "Locking compendiums: {list}",
+        "lock-prompt-title": "Lock compendiums?",
+        "lock-prompt": "Do you want to lock compendiums that belong to the module \"{moduleName}\"?",
+        "lock-prompt-button": "Lock Compendiums",
+        "checking-and-updating": "Checking and updating {count} journal references from world links to compendium links.",
+        "invalid-ref-type": "Found a journal reference that isn't handled: {type}. Skipping reference…",
+        "invalid-no-name": "Found a journal reference but couldn't find its original name. Check debug logs for details.",
+        "invalid-no-matching-name": "Could not find {type} reference in world data: {name}",
+        "invalid-not-found": "Found a journal reference but couldn't find its compendium version by name. Check debug logs for details.",
+        "invalid-not-found-console": "Could not find reference in compendium data. Skipping updating reference…",
+        "invalid-too-many": "Found a journal reference but found more than one compendium version by name. Check debug logs for details.",
+        "invalid-too-many-console": "Found more than one reference in compendium data. Skipping updating reference…",
+        "updating-references": "Changing {count} {type} references in: \"{name}\"",
+        "updating-reference-console": "Changing {pack}[{journalEntryId}] {type} reference {oldRef} -> {newRef}",
+        "updating-reference": "Updating {count} references in \"{name}\". See console for full details.",
+        "completed-checks": "Completed {type} \"{name}\" {entryId}.",
+        "no-references": "There were no references that needed updating in {type} \"{name}\" {entryId}.",
+        "checking-contents": "Checking contents of {type} \"{name}\" {entryId}.",
+        "completed": "Completed!",
+        "quick-encounters": {
+          "could-not-parse": "Could not parse quick encounter data for journal \"{journal}\". Error: {error}",
+          "updating-references": "Changing {count} Quick Encounter references in: \"{journal}\"",
+          "updating-references-console": "Changing {type} {name} reference {oldRef} -> {newRef}",
+          "missing-actor-reference": "An actor \"{actor}\" was referenced in a Quick Encounter \"{journal}\" but couldn't be found within your world (either is missing, or there are multiple matches by name). This quick encounter will not work correctly in another world. Please rebuild this Quick Encounter, re-export it (and the actor/s), and re-run the \"Relink Journal Entries\" macro.",
+          "missing-journal-reference": "The journal \"{journal}\" couldn't be found within your world (either is missing, or there are multiple matches by name). This quick encounter will not work correctly in another world. Please rebuild this Quick Encounter, re-export it (and the actor/s), and re-run the \"Relink Journal Entries\" macro."
+        },
+        "monks-enhanced-journal-encounter": {
+          "updating-references-console": "Changing Monk's Enhanced Journal Encounter reference in \"{journal}\" {oldRef} -> {newRef}"
+        },
+        "monks-enhanced-journal-actor": {
+          "updating-references-console": "Changing Monk's Enhanced Journal Actor reference in \"{journal}\" {oldRef} -> {newRef}"
+        },
+        "monks-enhanced-journal-relationships": {
+          "updating-references-console": "Changing Monk's Enhanced Journal Relationship reference in \"{journal}\" adding \"{newRelation}\""
+        }
+      }
+    },
+    "instance-prompt": {
+      "title": "Select instance",
+      "intro": "Select the module that you want to use:",
+      "none-found": "There are no modules installed that are registered with Scene Packer. See the Journal entries in the compendium for how to register your module with Scene Packer.",
+      "select": "Select",
+      "cancel": "Cancel"
+    },
+    "relink-prompt": {
+      "title": "Relink Journal Entries",
+      "intro": "Select the module you are using Scene Packer with:",
+      "make-changes": "Save changes?",
+      "make-changes-info": "Leaving this unchecked will operate in a \"dry run\" mode, where changes are only output to the console.",
+      "relink": "Relink",
+      "cancel": "Cancel",
+      "none": "There are no modules installed that are registered with Scene Packer. See the Journal entries in the compendium for how to register your module with Scene Packer."
+    },
+    "performance-report": {
+      "title": "Performance Report",
+      "copy": "Copy to clipboard",
+      "close": "Close"
+    },
+    "deprecated": {
+      "method": "The method \"{method}\" has been deprecated and will be removed in a future version. Please see the Journal entries in the Scene Packer compendium on how to correctly call Scene Packer."
+    },
+    "importer": {
+      "name": "Scene Packer: Importer",
+      "invalid-pack-data": "Invalid pack data. Please try again and if the error persists, ask for assistance on the Scene Packer or Moulinette Discord server.",
+      "loading": "Loading data…",
+      "unsupported": "Scene Packer: Importer is only supported in versions >= 0.8.0",
+      "invalid-url": "An invalid URL value was passed to the Scene Packer importer. Received: \"{url}\". {err}",
+      "invalid-url-empty": "An empty URL value was passed to the Scene Packer importer.",
+      "creating-documents": "Creating {count} {type}…",
+      "processing": "Processing…",
+      "be-patient": "Please be patient while the pack is imported. This can take a while. If you feel it is taking too long, check the console (F12) for errors, noting that you may need to expand the log groups.",
+      "process-fetch-data": "Fetching data…",
+      "process-creating-data": "Creating {count} {type} and assets…",
+      "ensure-assets": "Ensuring assets exist for {count} entities.",
+      "converting-references": "Checking {count} {type} for Compendium style references.",
+      "converting-reference": "Converting {type} reference in \"{name}\" {oldRef} -> {newRef} at location: {path}",
+      "no-existing-value": "Could not find existing value at path \"{path}\". Skipping updating reference…",
+      "complete": "Complete!",
+      "complete-content": "Import complete. It is strongly recommended to reload your world. Click the button below to refresh.",
+      "import-all": "Import all {count} entities in this pack",
+      "import-one": "Import selected",
+      "selected-entity": "Selected {type}:",
+      "unrelated-title": "Unrelated Entities",
+      "unrelated-intro": "The following entities were not directly related to any Scene in this pack and have been automatically imported to prevent broken links.",
+      "author": "Author:",
+      "discord": "Discord:",
+      "email": "Email:",
+      "version": "Version:",
+      "more-info": "More info:",
+      "missing-asset": "Missing asset from package data: {asset}",
+      "incorrect-system": "The system of the pack you are trying to import ({packSystem}) is different from the current system ({currentSystem}) and you may experience issues. Any tokens on scenes will be replaced with a placeholder actor to increase compatibility. Do you wish to proceed?"
+    },
+    "zip-importer": {
+      "name": "Import from Moulinette ZIP",
+      "label": "Open Importer wizard",
+      "hint": "The importer wizard will allow you to import a Moulinette ZIP file into your world.",
+      "title": "Import from Moulinette ZIP file",
+      "file": "Select the ZIP file you want to import:",
+      "description": "This importer allows you to import a ZIP file that was prepared for export to Moulinette.",
+      "description2": "The importer will import the entire pack from the ZIP. If you are wanting just a single scene, use Moulinette instead.",
+      "error-unzip": "There was an error unzipping the file \"{name}\". Please ask for assistance on the Scene Packer Discord server.",
+      "ensure-assets": "Ensuring {count} assets exist.",
+      "ensure-asset-error": "Error creating asset: {error}",
+      "error-read": "There was an error reading the file \"{name}\". Please ask for assistance on the Scene Packer Discord server."
+    },
+    "exporter": {
+      "name": "Export to Moulinette",
+      "label": "Open Exporter wizard",
+      "hint": "The exporter wizard will allow you to package up an adventure for distribution via Moulinette Cloud.",
+      "timeout": "Asset timeout",
+      "timeout-help": "The amount of time in seconds to wait for an asset to be downloaded. Set to 0 to disable timeouts.",
+      "unsupported": "Export to Moulinette is only supported in versions >= 0.8.0",
+      "selected-count": "{count} entities selected for export.",
+      "toggle-checkboxes": "Toggle All Checkboxes",
+      "tabs": {
+        "actors": "Actors",
+        "items": "Items",
+        "journals": "Journals",
+        "macros": "Macros",
+        "options": "Options",
+        "playlists": "Playlists",
+        "cards": "Cards",
+        "scenes": "Scenes",
+        "tables": "Roll Tables"
+      },
+      "search": {
+        "actors": "Search Actors",
+        "items": "Search Items",
+        "journals": "Search Journals",
+        "macros": "Search Macros",
+        "playlists": "Search Playlists",
+        "cards": "Search Cards",
+        "scenes": "Search Scenes",
+        "tables": "Search Rollable Tables"
+      },
+      "options": {
+        "intro": "You are about to build an adventure package to be shared via Moulinette. You must be a <a href=\"https://www.patreon.com/moulinette\" target=\"_blank\">Patreon of Moulinette</a> to be able to upload and share your adventure.",
+        "package-name": "Adventure Package Name",
+        "package-name-help": "Must be unique for your Author name.",
+        "version": "Adventure Version Number",
+        "version-help": "Increase the version if you update an adventure.",
+        "author": "Author Name",
+        "author-help": "Your public name or pseudonym. Displayed to the public beside your adventure name.",
+        "package-description": "Adventure Package Description",
+        "package-description-help": "Describe the type of adventure this is, what levels it is designed for, what's included etc.",
+        "package-cover": "Adventure Package Cover Image",
+        "package-cover-help": "The image to show the end-user when they are viewing details of the adventure.",
+        "discord-id": "Your Discord identifier",
+        "discord-id-help": "In case you need to be contacted for additional information. Will not be shown to the public.",
+        "email": "Your email address",
+        "email-help": "In case you need to be contacted for additional information. Will not be shown to the public.",
+        "external-link": "URL for additional information",
+        "external-link-help": "An absolute URL where an end user can find out more information about the adventure package.",
+        "welcome-journal": "Journal to show after importing",
+        "welcome-journal-help": "Automatically show the selected Journal entry when the end user imports the adventure package. Leave blank if you do not want to automatically show a Journal entry.",
+        "welcome-journal-drop-text": "Drag and drop your Journal here",
+        "allow-complete-import": "Allow importing all entities?",
+        "allow-complete-import-help": "Choose \"no\" if you do not want the end user to be able to import the entire adventure package at once. You should choose \"no\" if you have a lot of entities in your package to prevent lag.",
+        "adventure-categorisation": "Categorisation",
+        "adventure-category": "Adventure Category",
+        "adventure-category-help": "What type of adventure is this? This will be used to categorize your adventure on Moulinette Cloud.",
+        "adventure-category-one-shot": "One Shot",
+        "adventure-category-short-campaign": "Short Campaign",
+        "adventure-category-long-campaign": "Long Campaign",
+        "adventure-category-prefab": "Prefab Actors",
+        "adventure-category-supplement": "Supplement",
+        "adventure-duration": "Adventure Duration (hours)",
+        "adventure-duration-help": "Approximately how long does the adventure take to complete?",
+        "adventure-duration-placeholder": "Approximate play time in hours",
+        "adventure-players-min": "Minimum Players",
+        "adventure-players-min-help": "The minimum number of players this adventure is designed for.",
+        "adventure-players-max": "Maximum Players",
+        "adventure-players-max-help": "The maximum number of players this adventure is designed for.",
+        "adventure-players-recommended": "Recommended Players",
+        "adventure-players-recommended-help": "The recommended number of players for this adventure.",
+        "adventure-player-level": "Player Levels",
+        "adventure-player-level-help": "The minimum, maximum and recommended player levels this adventure is designed for. You can provide multiple level ranges.",
+        "adventure-player-level-add": "Add a level range",
+        "adventure-player-level-min-placeholder": "Min",
+        "adventure-player-level-max-placeholder": "Max",
+        "adventure-player-level-recommended-placeholder": "Recommended",
+        "adventure-theme": "Adventure Themes",
+        "adventure-theme-help": "What are the main themes of this adventure? This will be used to categorize your adventure on Moulinette Cloud.",
+        "adventure-theme-placeholder": "themes, separated by commas",
+        "adventure-token-style": "Token Styles",
+        "adventure-token-style-help": "Choose the token style/s included in this adventure.",
+        "adventure-token-style-top-down": "Top-down",
+        "adventure-token-style-token": "Traditional Pog Token",
+        "adventure-token-style-iso": "Isometric",
+        "adventure-token-style-other": "Other",
+        "adventure-grid-type": "Grid Types",
+        "adventure-grid-type-help": "Choose the grid type/s included in this adventure.",
+        "adventure-grid-type-square": "Square",
+        "adventure-grid-type-hex": "Hexagonal",
+        "adventure-pregen-characters": "Includes Pregenerated Playable Characters",
+        "adventure-pregen-characters-help": "Does this adventure include pregenerated playable characters?",
+        "adventure-tags": "Additional Tags",
+        "adventure-tags-help": "What other tags describe this adventure? This will be used to categorize your package on Moulinette Cloud.",
+        "adventure-tags-placeholder": "tags, separated by commas",
+        "adventure-system": "Adventure System",
+        "adventure-system-help": "The system this adventure is designed for. Leave blank to specify no system requirements. Note that the inclusion of Actors and Items usually makes your adventure system specific.",
+        "adventure-tag-suggestions": "Common options",
+        "adventure-themes": {
+          "dungeon": "Dungeon",
+          "wilderness": "Wilderness",
+          "town": "Town/Village",
+          "city": "City/Urban",
+          "forest": "Forest",
+          "stronghold": "Stronghold (Castle/Keep/Tower)",
+          "cave": "Cave",
+          "mountain": "Mountain",
+          "ruins": "Ruins/Tomb/Cemetery",
+          "temple": "Temple/Shrine",
+          "mansion": "House/Mansion",
+          "swamp": "Swamp/Moor",
+          "ship": "Ship",
+          "island": "Island",
+          "desert": "Desert/Pyramid",
+          "underdark": "Underdark/Subterranean",
+          "sewer": "Sewer",
+          "feywild": "Feywild",
+          "abyss": "Abyss/Nine Hells",
+          "horror": "Horror",
+          "mystery": "Mystery",
+          "snow": "Artic/Snow",
+          "mega-dungeon": "Mega-dungeon",
+          "shadowfell": "Shadowfell",
+          "air": "Air/Sky Ship",
+          "heist": "Heist/Infiltration"
+        },
+        "next": "When you click Next, Scene Packer will link all of your entities together, verify them and then create a <code>data.zip</code> file containing your whole adventure including assets. This file should then be uploaded to the Moulinette website in the standard assets section. Once it has been processed and you have published it, end users will be able to import it into their game from the Scenes section of Moulinette.",
+        "help": "If you require any assistance with packing your adventure, please stop by the <img src=\"https://github.com/League-of-Foundry-Developers/scene-packer/raw/main/assets/icons/hand-truck.png\" alt=\"icon\" height=\"24\" valign=\"middle\" style=\"max-width:100%;border:0;\"> <a href=\"https://discord.com/invite/HY3xhBEf2A\" target=\"_blank\">Scene Packer Discord server</a> and speak with <code>blair#9056</code>.",
+        "support": "A lot of work has gone into making this tool. If you find it useful, please consider supporting the project by <em>providing blair with your adventures</em>, <a href=\"https://www.patreon.com/blairm\" target=\"_blank\">becoming a patron</a> of mine or <a href=\"https://ko-fi.com/blairm\" target=\"_blank\">buying me a coffee</a>. The module is provided free of charge to you regardless of your choice."
+      },
+      "progress": {
+        "title": "Exporting {name}",
+        "please-wait": "Please Wait…",
+        "status": "Please wait while {total} entities are validated and compressed…",
+        "speed": "The current asset download speed.",
+        "size": "The uncompressed size of the adventure.",
+        "complete": "Complete",
+        "downloading": "Downloading files…",
+        "next-step": "Please upload the following file/s to the standard assets section in Moulinette admin: <ul><li>{files}</li></ul>",
+        "extract-data": "Extracting JSON data…",
+        "compressing-data": "Compressing {count} {type}…",
+        "compressing-assets": "Mapping {count} assets…",
+        "download-error": "Error downloading asset: {error}"
+      },
+      "invalid": {
+        "title": "Invalid form data",
+        "fields": "<p>The following fields on the <strong>Options</strong> tab require a value:</p><ul>{fields}</ul>"
+      }
+    },
+    "adventure-converter": {
+      "name": "Adventure Converter",
+      "setting-hint": "Convert your existing Scene Packer adventure to the V10 Adventure Document format. (Only useful to creators. It serves no purpose for end-users.)",
+      "sitting-label": "Open Adventure Converter",
+      "summary": "Use this tool to convert your existing Scene Packer adventure to the V10 Adventure Document format. You may wish to {link} before using this tool.",
+      "view-tutorial": "view the tutorial video",
+      "summary-help": "If you require any assistance with converting your package, please stop by the {img} {link} and speak with <code>blair#9056</code>.",
+      "discord-name": "Scene Packer Discord server",
+      "missing-adventure-pack": "Your selected module does not currently support the Adventure Pack format.",
+      "missing-adventure-pack-link": "View recommended <code>module.json</code> changes.",
+      "select-adventure": "Select compatible module to convert",
+      "select-adventure-hint": "Select the Scene Packer module you wish to convert. It must be enabled within this world.",
+      "select-adventure-details": "Select a module from above to get started.",
+      "no-adventures": "No Scene Packer enabled module selected. You can only use this converter with existing Scene Packer adventures that are enabled within this world.",
+      "welcome-journal": "Welcome Journal",
+      "welcome-journal-hint": "The Welcome Journal (if set) will automatically be displayed after the adventure is imported. You can drag a journal into the box to set this value.",
+      "welcome-journal-description": "On successful import of this adventure, the {link} Journal will automatically be displayed to the end user.",
+      "error-journal-wrong-pack": "You must select a Journal that is part of the module you are converting.",
+      "error-journal-not-found": "Could not find the Journal \"{name}\" within the existing module. Try dropping the journal directly from the module's compendium.",
+      "backup-warning": "It is very strongly recommended to backup your module and world before running the Adventure Converter. This will ensure that you have a version of your module that is compatible with v9 of Foundry VTT.",
+      "backup-warning-link": "View recommended backup steps.",
+      "submit": "Convert Adventure",
+      "manifest-upgrade-prompt-title": "Adventure Options",
+      "manifest-upgrade-prompt-message": "Enter a name for your Adventure Document. This is the pack label that displays in the compendium sidebar.",
+      "manifest-upgrade-prompt-label": "Adventure Label",
+      "manifest-upgrade-prompt-button": "Display module.json changes",
+      "manifest-upgrade-detail-1": "The following changes need to be made to your <code>{module}</code> file and have been suggested below:",
+      "manifest-upgrade-detail-2": "Added an <code>Adventure</code> pack.",
+      "manifest-upgrade-detail-3": "Changed the <code>compatibility</code> to be a minimum of V10.",
+      "manifest-upgrade-detail-4": "The conversion process done by the Core Foundry VTT platform will have output warnings to the Console (F12). Consider reviewing these warnings for additional context on the changes other than the two above.",
+      "manifest-upgrade-next-steps": "You will need to perform the following steps manually before your adventure module can be converted (take a note or screenshot of them as you will close this dialog before completing all of the steps):",
+      "manifest-upgrade-next-steps-1": "Open the <code>{module}</code> file in your text editor.",
+      "manifest-upgrade-next-steps-2": "Replace the file with the contents below and review the changes. Make any additional changes that you feel are appropriate. If you have any queries, please join the Discord server for assistance.",
+      "manifest-upgrade-next-steps-3": "Save the file.",
+      "manifest-upgrade-next-steps-4": "Exit this world, returning to the setup screen (this reloads the module details).",
+      "manifest-upgrade-next-steps-5": "Load the world again and return to the Adventure Converter. Select the module you just updated and proceed with the conversion.",
+      "manifest-upgrade-automated-steps": "The following file path has been chosen automatically to store the Adventure compendium database. If you have chosen to use a format that is different than the suggested <code>module.json</code> changes above, then you may need to manually adjust the pack paths.",
+      "manifest-upgrade-ok": "I've followed the steps above.",
+      "manifest-upgrade-error": "Error generating recommended changes to module.json. Please check the console (F12) for more information.",
+      "manifest-upgrade-module-not-found": "Module \"{name}\" does not exist within the world.",
+      "process-error-no-module": "Module name must be provided.",
+      "process-error-no-target": "You must provide a target pack.",
+      "process-error-no-source": "You must provide at least one source pack to convert.",
+      "process-error-no-instance": "No Scene Packer instance found for module \"{moduleName}\"",
+      "process-error-no-module-found": "Module not found within world with name \"{moduleName}\"",
+      "process-error-no-pack-found": "A compendium pack with name \"{packName}\" was not found with name \"{moduleName}\""
+    },
+    "welcome-journal": {
+      "import-all": "Import all {totalCount} entities from module",
+      "import-replace": "Replace existing content",
+      "import-rename": "Rename existing content",
+      "import-close": "Don't show again"
+    },
+    "assets-to-lowercase": {
+      "title": "Check Assets Exist and Convert to Lowercase",
+      "description": "This tool will check that all assets in your world exist and convert their references to lowercase. It will first list out all of the asset references that it will convert and then prompt you to confirm.",
+      "find-assets": "Find assets",
+      "convert": "Convert assets",
+      "wait": "Please wait…",
+      "nothing": "There were no assets found in your world.",
+      "all-lowercase": "All assets are already lowercase.",
+      "list-assets": "The following assets will be converted to lowercase:",
+      "confirm": "Are you sure you want to convert these assets to lowercase?"
+    },
+    "reset-prompts": {
+      "name": "Reset import prompts",
+      "label": "Choose module",
+      "hint": "Use this to reset the prompt you received when you first installed a supported module. Handy if you accidentally closed it the first time.",
+      "nothing": "There are no modules installed that are registered with Scene Packer, so there are no welcome prompts that can be reset. Make sure the module is enabled.",
+      "refresh-text": "Resetting the prompt will automatically reload your world.",
+      "select-module-label": "Select module:"
+    }
+  }
+}

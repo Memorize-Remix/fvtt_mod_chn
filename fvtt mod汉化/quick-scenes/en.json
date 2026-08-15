@@ -1,0 +1,60 @@
+{
+  "QUICK_SCENES": {
+    "contextMenu": {
+      "quickScene": "Quick Scene",
+      "bulkQuickScenes": "Create Scenes from Images",
+      "showPlayers": "Show to Players",
+      "sendToChat": "Send to Chat",
+      "zoomIn": "Zoom In",
+      "zoomOut": "Zoom Out"
+    },
+    "zoom": {
+      "clickToZoom": "Click to zoom in",
+      "dblClickToReset": "Double-click to reset"
+    },
+    "bulk": {
+      "dialogTitle": "Bulk Scene Creation",
+      "dialogContent": "Found <strong>{count}</strong> images in <strong>{folder}</strong>.",
+      "selectFolder": "Scene Folder",
+      "folderNone": "— No Folder —",
+      "folderNew": "— Create New Folder —",
+      "newFolderName": "New Folder Name",
+      "createScenes": "Create Scenes",
+      "cancel": "Cancel",
+      "progress": "Creating scene {current} of {total}…",
+      "thumbnails": "Generating thumbnails {current} of {total}…",
+      "complete": "Created {count} scenes.",
+      "cancelled": "Cancelled. Created {count} of {total} scenes.",
+      "noImages": "No images found in this folder.",
+      "destination": "Destination",
+      "destinationWorld": "World",
+      "destinationCompendium": "Compendium",
+      "selectPack": "Compendium Pack",
+      "packNew": "— Create New Pack —",
+      "newPackLabel": "New Pack Name"
+    },
+    "notifications": {
+      "sceneCreated": "Scene created: {name}",
+      "sceneCreateError": "Failed to create scene",
+      "showError": "Failed to show image to players",
+      "defaultsSaved": "Quick Scene defaults saved",
+      "chatError": "Failed to send image to chat"
+    },
+    "settings": {
+      "debugMode": {
+        "label": "Debug Mode",
+        "hint": "Enable debug logging in the browser console"
+      },
+      "applyDefaultsAll": {
+        "label": "Use Defaults for All New Scenes",
+        "hint": "Apply the configured scene defaults to all newly created scenes, not just Quick Scenes"
+      },
+      "sceneDefaults": {
+        "label": "Scene Defaults",
+        "button": "Configure Defaults",
+        "hint": "Set default properties applied to every Quick Scene",
+        "configTitle": "Quick Scene Defaults"
+      }
+    }
+  }
+}

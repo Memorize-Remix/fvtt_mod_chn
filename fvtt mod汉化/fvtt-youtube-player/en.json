@@ -1,0 +1,71 @@
+{
+    "fvtt-youtube-player": {
+        "deleteTrack": "Delete Track?",
+        "deleteTrackContent": "Are you sure you want to delete this track?",
+        "deletePlaylist": "Delete Playlist?",
+        "deletePlaylistContent": "Are you sure you want to delete this playlist?",
+        "fetchingTitle": "Fetching video title...",
+        "playlistName": "Playlist Name",
+        "playlistNameContent": "You are importing a playlist. Do you want to create a new playlist or add the tracks to the current playlist? Leave the field empty to add to the current playlist.",
+        "TOOLTIP": {
+            "play": "Play",
+            "stop": "Stop",
+            "toggle-playlists": "Toggle Playlists",
+            "add-to-playlist": "Add to Playlist",
+            "create-playlist": "Create Playlist",
+            "delete-playlist": "Delete Playlist",
+            "delete-track": "Delete Track",
+            "rename-playlist": "Rename Playlist",
+            "sound-library": "Sound Library",
+            "loop": "Toggle Repeat",
+            "toggle-playlist": "Toggle Auto-Play",
+            "search": "Search YouTube",
+            "copy-url": "Copy URL",
+            "configure-track": "Configure Track",
+            "add-to-sound-library": "Add to Sound Library"
+        },
+        "settings": {
+            "googleApiKey": {
+                "name": "YouTube API Key",
+                "hint": "The API is used to parse playlists and perform searches. The request will be routed through my servers, but you can use your own API key to avoid rate limits. An API key is required for the search functionality. Get one at https://console.developers.google.com/apis/credentials"
+            },
+            "importExport": {
+                "name": "Import/Export",
+                "label": "Open Import/Export Dialog",
+                "hint": "Import or export playlists"
+            }
+        },
+        "import-export": {
+            "title": "Import/Export Playlists",
+            "import": "Import",
+            "export": "Export",
+            "imported": "Playlists imported successfully"
+        },
+        "track-configuration": {
+            "title": "Track Configuration",
+            "track-title": "Track Title",
+            "track-url": "Track URL or ID",
+            "url": "URL",
+            "tags": "Tags",
+            "rename-track": "Rename Track"
+        },
+        "tags-configuration": {
+            "title": "Tags Configuration",
+            "create-tag": "Create Tag",
+            "tag-name": "Tag Name",
+            "tag-color": "Tag Color",
+            "tag-label": "Tag Name",
+            "delete-tag": "Delete Tag",
+            "create-tag-error": "Please enter a tag name and a tag color"
+        },
+        "sound-library": {
+            "title": "Sound Library",
+            "add-tracks": "Add Tracks",
+            "import-tracks": "Import Tracks",
+            "import-tracks-textarea": "Paste tracks/playlists urls or ids here"
+        },
+        "app": {},
+        "flags": {},
+        "noApiKey": "Warning: No API key set. In order to access the search functionality, you need to set a YouTube API key in the module settings. You can check the Wiki for more information."
+    }
+}

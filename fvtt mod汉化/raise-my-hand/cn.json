@@ -1,0 +1,205 @@
+
+  "raise-my-hand": {
+    "EMPTY-STRING": "",
+    "UINOTIFICATION": "✋ {name} 举手",
+    "CHATMESSAGE": "举手！",
+    "context": {
+      "lowerHand": "放下"
+    },
+    "ui": {
+      "xcard": {
+        "title": "停止！"
+      }
+    },
+    "controls": {
+      "keybinding": {
+        "or": "或"
+      },
+      "raise-hand": {
+        "name": "举手",
+        "hint": "与点击举手按钮效果相同。",
+        "toolclip": {
+          "heading": "切换或举手"
+        },
+        "toggle": {
+          "true": "放下",
+          "false": "举手"
+        }
+      },
+      "show-xcard": {
+        "name": "显示X卡",
+        "hint": "这将显示X卡。",
+        "toolclip": {
+          "heading": "显示X卡"
+        }
+      }
+    },
+    "settings": {
+      "handSettings": {
+        "name": "举手设置",
+        "label": "配置举手",
+        "hint": "配置举手切换模式、启用的通知模式及其子设置。"
+      },
+      "xcard": {
+        "name": "X卡设置",
+        "label": "配置X卡",
+        "hint": "配置X卡启用的通知模式及其子设置。"
+      },
+      "notificationTimeout": {
+        "name": "通知超时",
+        "hint": "每位玩家使用举手或X卡之间的最短时间（秒）。"
+      },
+      "FIELDS": {
+        "choices": {
+          "disabled": "禁用",
+          "all": "所有用户",
+          "gm": "仅GM"
+        }
+      },
+      "HAND": {
+        "FIELDS": {
+          "general": {
+            "label": "常规设置",
+            "isToggle": {
+              "label": "切换模式",
+              "hint": "使举手在举手和放下状态之间切换。玩家放下将从列表中移除举手图标并关闭他们举起的弹出窗口。"
+            },
+            "notificationModes": {
+              "label": "通知模式",
+              "hint": "设置通知模式。",
+              "choices": {
+                "playerList": "玩家列表图标",
+                "aural": "声音通知",
+                "popout": "弹出通知",
+                "ui": "UI通知",
+                "chat": "聊天通知"
+              }
+            }
+          },
+          "playerList": {
+            "label": "玩家列表图标",
+            "scope": {
+              "label": "显示给",
+              "hint": "设置谁将在玩家列表中看到举手图标。"
+            },
+            "holdTime": {
+              "label": "保持时间",
+              "hint": "非切换模式：动画完成后图标保持的时间。"
+            }
+          },
+          "aural": {
+            "label": "声音通知",
+            "scope": {
+              "label": "播放给",
+              "hint": "设置谁会听到声音。"
+            },
+            "source": {
+              "label": "通知声音",
+              "hint": "选择要播放的声音。",
+              "choices": {
+                "default": "默认提示音",
+                "custom": "自定义声音"
+              }
+            },
+            "overridePath": {
+              "label": "声音路径",
+              "hint": "设置声音路径。"
+            },
+            "soundVolume": {
+              "label": "音量",
+              "hint": "设置音量从1-100%。"
+            }
+          },
+          "popout": {
+            "label": "弹出通知",
+            "scope": {
+              "label": "显示给",
+              "hint": "设置谁会看到弹出通知。"
+            },
+            "source": {
+              "label": "弹出图像",
+              "hint": "选择在弹出通知中显示的图像。",
+              "choices": {
+                "default": "默认手部图像",
+                "avatar": "玩家头像",
+                "custom": "自定义图像"
+              }
+            },
+            "overridePath": {
+              "label": "图像路径",
+              "hint": "设置弹出窗口中显示的图像路径。"
+            }
+          },
+          "ui": {
+            "label": "UI通知",
+            "scope": {
+              "label": "发送给",
+              "hint": "设置谁会看到UI通知。"
+            },
+            "permanent": {
+              "label": "永久",
+              "hint": "通知将保持显示直到手动关闭。"
+            }
+          },
+          "chat": {
+            "label": "聊天通知",
+            "scope": {
+              "label": "发送给",
+              "hint": "设置谁会看到聊天消息。"
+            },
+            "source": {
+              "label": "聊天图像",
+              "hint": "选择在聊天消息中显示的图像。",
+              "choices": {
+                "disabled": "无",
+                "default": "默认手部图像",
+                "avatar": "玩家头像",
+                "custom": "自定义图像"
+              }
+            },
+            "overridePath": {
+              "label": "图像路径",
+              "hint": "你可以设置聊天中显示的图像路径。"
+            },
+            "widthPercentage": {
+              "label": "图像宽度",
+              "hint": "设置图像宽度从1-100%。"
+            }
+          }
+        }
+      },
+      "XCARD": {
+        "FIELDS": {
+          "isEnabled": {
+            "label": "启用X卡"
+          },
+          "scope": {
+            "label": "发送给",
+            "hint": "设置谁会收到X卡通知。"
+          },
+          "anonymousWarning": {
+            "label": "匿名警告",
+            "hint": "如果启用，X卡将不显示谁触发了它。"
+          },
+          "source": {
+            "label": "通知声音",
+            "hint": "选择要播放的声音。",
+            "choices": {
+              "none": "禁用",
+              "default": "默认警报",
+              "custom": "自定义声音"
+            }
+          },
+          "overridePath": {
+            "label": "声音路径",
+            "hint": "设置你偏好的声音路径。"
+          },
+          "soundVolume": {
+            "label": "音量",
+            "hint": "设置音量从1-100%。"
+          }
+        }
+      }
+    }
+  }
+}

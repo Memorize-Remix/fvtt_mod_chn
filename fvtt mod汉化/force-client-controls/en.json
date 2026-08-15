@@ -1,0 +1,23 @@
+{
+  "FORCECLIENTCONTROLS": {
+    "settings": {
+      "forced": {
+        "name": "Forced control bindings",
+        "hint": "Forced control bindings"
+      },
+      "unlocked": {
+        "name": "Unlocked soft-forced control bindings",
+        "hint": "Unlocked soft-forced control bindings"
+      }
+    },
+    "ui": {
+      "open-gm-hint": "These bindings are not forced. Click to soft-force.",
+      "soft-gm-hint": "These bindings are soft-forced (may optionally be edited by clients). Click to hard-force, Alt-Click to escape.",
+      "hard-gm-hint": "These bindings are forced for all clients. Click to release, Alt-Click to escape.",
+      "unlocked-gm-hint": "These bindings are forced for clients, but the GM has escaped the force. Click to unescape.",
+      "hard-client-hint": "These bindings are forced by the GM and cannot be edited.",
+      "soft-client-hint": "These bindings are soft-forced by the GM. Click to unlock editing.",
+      "unlocked-client-hint": "These bindings are unlocked for this client. Click to reset to the GM's default."
+    }
+  }
+}

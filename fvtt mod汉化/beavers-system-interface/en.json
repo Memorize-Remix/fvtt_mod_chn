@@ -1,0 +1,57 @@
+{
+  "beaversSystemInterface": {
+    "VersionsMismatch": "Your bsa-x module is outdated and no longer compatible",
+    "SystemNotFound": "Could not find an implementation for that system. Maybe you missed to install the correct beavers system implementation module",
+    "MethodNotSupported": "Your system does not yet support method: ",
+    "RemainingQuantityLessThenZero": "not enough ",
+    "NotEnoughMoney": "not enough money",
+    "DocumentNotFound": "document not found for :",
+    "SystemAdaptionNeeded": "You can not execute this method without an active System Adaption Module.",
+    "SystemAdaptionNeededAdditional": "You need to register your module on beavers system interface if you want access those methods without error",
+    "NoModulesRegistered": "There is no module registered that requires beavers-system-interface.",
+    "NoImplementationRegistered": "There is no system specific adaption module available, only some methods will work in this mode.",
+    "select-dialog": {
+      "title": "Selection",
+      "preselection": "choose"
+    },
+    "settings": {
+      "enableSelection": {
+        "hint": "beavers selection is a custom design for select boxes which can hold images. As it is not the native implementation it might break on some browser, if so you can disable it here",
+        "name": "enable beavers selection"
+      }
+    },
+    "TokenMovement": {
+      "desc": "this module allows to control the movement of a token"
+    },
+    "tests": {
+      "incrementStep": {
+        "info": {
+          "label": "Increment Step",
+          "hint": "No user input needed. It just succeeds"
+        },
+        "customization": {
+          "label": "Name",
+          "hint": "Describe what this step is about e.g. killed a skeleton"
+        }
+      },
+      "gmRequest": {
+        "info": {
+          "label": "GM Request",
+          "hint": "Will send a question to gm who decides about success or fail"
+        }
+      },
+      "abilityTest": {
+        "info": {
+          "label": "Ability Test",
+          "hint": "Ability check of the current actor"
+        }
+      },
+      "skillTest": {
+        "info": {
+          "label": "Skill Test",
+          "hint": "Skill check of the current actor"
+        }
+      }
+    }
+  }
+}

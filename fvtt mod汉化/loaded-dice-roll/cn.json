@@ -1,0 +1,31 @@
+
+  "loaded-dice-roll": {
+    "title": "作弊骰",
+    "form": {
+      "formula": {
+        "title": "作弊掷骰公式",
+        "placeholder": "例如：2d6",
+        "tooltip": "骰子掷骰公式。例如：2d6+2+1d6+2d10 或 1d12"
+      },
+      "target": {
+        "title": "目标数值",
+        "placeholder": "例如：7",
+        "tooltip": "掷骰的目标数值。例如：6 或 '大于7' 或 '>=12'"
+      },
+      "roll-button": {
+        "title": "掷骰"
+      }
+    },
+    "errors": {
+      "formula": {
+        "required": "必须填写公式",
+        "invalid": "无效的公式"
+      },
+      "target": {
+        "required": "必须填写目标值",
+        "invalid": "无效的目标值",
+        "outside-range": "目标值超出公式可能范围"
+      }
+    }
+  }
+}

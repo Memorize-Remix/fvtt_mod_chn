@@ -1,0 +1,43 @@
+{
+  "adaptive-audio": {
+    "title": "Adaptive Audio Player",
+    "settings": {
+      "defaultIntensity": {
+        "name": "Default Intensity",
+        "hint": "Default intensity value when starting playback (0-100)"
+      },
+      "combatIntensity": {
+        "name": "Combat Intensity",
+        "hint": "Intensity value to automatically set when combat starts (0-100)"
+      },
+      "autoSetCombatIntensity": {
+        "name": "Auto-Set Combat Intensity",
+        "hint": "Automatically adjust intensity slider when combat starts/ends"
+      },
+      "masterVolume": {
+        "name": "Master Volume",
+        "hint": "Master volume for adaptive audio playback (0-100)"
+      }
+    },
+    "ui": {
+      "lowIntensityTrack": "Low Intensity Track",
+      "highIntensityTrack": "High Intensity Track",
+      "intensity": "Intensity",
+      "volume": "Volume",
+      "play": "Play",
+      "pause": "Pause",
+      "stop": "Stop",
+      "loop": "Loop",
+      "selectTrack": "Select Audio File",
+      "noTracksLoaded": "Please select both low and high intensity tracks to begin",
+      "playing": "Playing",
+      "paused": "Paused",
+      "stopped": "Stopped"
+    },
+    "notifications": {
+      "bothTracksRequired": "Both low and high intensity tracks must be selected",
+      "trackLoadError": "Error loading audio track: {error}",
+      "playbackError": "Error during playback: {error}"
+    }
+  }
+}

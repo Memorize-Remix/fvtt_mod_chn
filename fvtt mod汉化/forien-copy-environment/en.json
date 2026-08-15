@@ -1,0 +1,36 @@
+{
+  "forien-copy-environment": {
+    "menu": {
+      "copy": "Copy as text",
+      "save": "Copy as JSON",
+      "export": "Export Settings",
+      "import": "Import Settings"
+    },
+    "settings": {
+      "max-diff": "Number of characters",
+      "max-diff-hint": "Maximum number of characters to show per difference. Set to 0 to show all."
+    },
+    "title": "Import Settings",
+    "intro": "This form allows you to select which world and player settings you want to import.",
+    "message": "List generated with Forien's Copy Environment: https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment",
+    "copiedToClipboard": "Environment data copied to clipboard!",
+    "updatedReloading": "Updated world settings. Reloading world in 5sec...",
+    "import": {
+      "title": "World settings",
+      "save": "Import settings",
+      "playerList": "Import settings for the following players:",
+      "existing": "Import an existing Export:",
+      "property": "Property",
+      "newValue": "New Value",
+      "currentValue": "Current Value",
+      "notFound": "The following users in the import file do not exist in this world and will be skipped.",
+      "existingValue": "Existing values that are unchanged and will be skipped:",
+      "existingPlayerValues": "Existing players that are unchanged and will be skipped:",
+      "updatedPlayer": "Updated player settings for: {name}",
+      "noChanges": "There are no differences between the current world and the imported settings.",
+      "showSettings": "Show {count} settings",
+      "warning": "Warning",
+      "warningMessage": "You have chosen not to import the selected modules. If this was unintentional, enable the \"core.moduleConfiguration\" value above."
+    }
+  }
+}

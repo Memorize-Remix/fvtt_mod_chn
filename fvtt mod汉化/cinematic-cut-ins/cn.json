@@ -1,0 +1,476 @@
+
+  "CINEMATIC": {
+    "AllOut": {
+      "Btn": {
+        "Execute": "执行",
+        "Save": "保存",
+        "Test": "测试（本地）"
+      },
+      "CenterMessage": "居中消息",
+      "GlobalSettings": "全局设置",
+      "Hint": {
+        "LinkCombat": "加入时掷骰先攻，准备就绪后开始战斗。"
+      },
+      "Label": {
+        "AudioGroup": "音频",
+        "CharVoice": "语音",
+        "Character": "角色",
+        "Color": "主题",
+        "Finish": "结束音效",
+        "Font": "字体",
+        "SubFont": "副文本字体",
+        "GlobalBGM": "背景音乐（BGM）",
+        "IndivSFX": "音效",
+        "IndivVoice": "语音",
+        "LinkCombat": "链接战斗",
+        "SFX": "音效（效果）",
+        "ScaleShort": "S",
+        "Shadow": "阴影",
+        "ShowNames": "显示角色名称",
+        "Speed": "速度",
+        "TextColor": "颜色",
+        "TextGroup": "文本",
+        "Theme": "主题",
+        "Voice": "语音 / BGM",
+        "VoteButtonText": "投票按钮文本",
+		"VoteButtonSound": "投票按钮音效",
+        "X": "X",
+        "Y": "Y",
+        "ZoomShort": "Z"
+      },
+      "LivePreview": "实时预览",
+      "AddParticipant": "添加角色",
+      "SelectActor": "选择角色",
+      "Notif": {
+        "NoActorsAvailable": "没有可添加的角色。"
+      },
+      "Participants": "参与者",
+      "Placeholder": {
+        "DisplayText": "显示文本",
+        "MainTitle": "主标题（默认：全力攻击）",
+        "PresetName": "预设名称",
+        "SubTitle": "副标题（默认：是时候结束了！）"
+      },
+      "SelectPreset": "-- 预设 --"
+    },
+    "Analysis": {
+      "Actor": {
+        "Failed": "失败（无）",
+        "TokenHint": "选中的Token"
+      },
+      "Btn": {
+        "Close": "关闭"
+      },
+      "ContextMenuName": "⚡ 电影化分析",
+      "Dice": {
+        "None": "没有掷骰"
+      },
+      "Hint": {
+        "Dice": "* 将橙色/蓝色数字输入到'骰子索引'中。<br>* 使用运算符（>=）和值设置条件。",
+        "DiceLegend": "（左：骰子检查 / 右：公式）",
+        "Keyword": "将上面的单词输入到'关键词'条件中。"
+      },
+      "Label": {
+        "Actor": "检测到的角色",
+        "Dice": "骰子数据（骰子检查）",
+        "Keyword": "文本关键词"
+      },
+      "Roll": {
+        "Index": "索引",
+        "Result": "结果",
+        "Sum": "总和",
+        "Total": "总计"
+      },
+      "Title": "消息分析（电影化检查器）"
+    },
+    "Blend": {
+      "Add": "叠加",
+      "Multiply": "正片叠底",
+      "Normal": "正常",
+      "Overlay": "叠加混合",
+      "Screen": "滤色"
+    },
+    "Config": {
+      "Btn": {
+        "Global": "全局"
+      },
+      "BtnAdd": "添加",
+      "BtnAddSound": "添加音频路径",
+      "BtnAddVariation": "添加变体",
+      "BtnDelete": "删除",
+      "BtnLoad": "加载",
+      "BtnReset": "重置",
+      "BtnSave": "保存",
+      "BtnSaveConfig": "保存配置",
+      "BtnTest": "测试（本地）",
+      "ColorsEffects": "颜色与效果",
+      "CustomDecoration": "自定义装饰（资源）",
+      "Dialog": {
+        "DeleteContent": "<p>确定要删除此预设吗？</p>",
+        "DeleteTitle": "删除预设",
+        "OverwriteGlobal": "<p>名为<strong>\"{name}\"</strong>的全局样式已存在。<br>是否要覆盖它？</p>",
+        "OverwriteGroup": "<p>名为<strong>\"{name}\"</strong>的分组预设已存在。<br>是否要覆盖它？</p>",
+        "OverwritePersonal": "<p>名为<strong>\"{name}\"</strong>的预设已存在。<br>是否要覆盖它？</p>",
+        "OverwriteTitle": "覆盖预设？",
+        "ResetContent": "<p>确定要将所有设置重置为默认值吗？</p>",
+        "ResetTitle": "重置设置"
+      },
+      "FontDefault": "（默认）",
+      "GeneralSettings": "常规设置",
+      "Groups": {
+        "Add": "添加分组",
+        "Hint": "为每个分组设置默认的全局预设。该分组中的角色可以回退使用它。",
+        "Name": "分组名",
+        "NoDefault": "-- 无默认预设 --",
+        "Title": "角色分组"
+      },
+      "Hint": {
+        "ActorGroup": "将此角色分配到分组中，以便使用分组默认预设作为回退。",
+        "AudioOnly": "仅播放声音/音效，无任何视觉效果或黑边。",
+        "LocalOnly": "仅在此触发客户端播放此切入效果。其他玩家不会看到。",
+        "SaveBottom": "使用底部按钮保存更改。",
+        "VideoAudio": "如果特写是视频文件，则同时播放其音轨。"
+      },
+      "Label": {
+        "ActorGroup": "角色分组",
+        "AudioOnly": "仅音频（无视觉效果）",
+        "LocalOnly": "仅本地（仅此客户端）",
+        "BgAdjust": "背景调整",
+        "BlendMode": "混合模式",
+        "Border": "边框",
+        "CharAdjust": "角色调整",
+        "CharShadow": "角色阴影",
+        "CustomBg": "自定义背景图片",
+        "CustomDuration": "显示时长",
+        "CustomLoop": "循环视频资源",
+        "CustomMid": "自定义中景图片",
+        "CustomOverlay": "自定义叠加层（前景）",
+        "DimIntensity": "背景变暗强度",
+        "FontFamily": "字体",
+        "SubFontFamily": "副文本字体",
+        "FontBold": "粗体",
+        "FontItalic": "斜体",
+        "Format": "格式",
+        "HideBackground": "隐藏主题背景",
+        "HideCharShadow": "隐藏阴影",
+        "Image": "切入图片",
+        "KeepAudioPlaying": "切入结束后继续播放音频",
+        "LayerDelay": "开始延迟（秒）",
+        "LayersBack": "背景层（后）",
+        "LayersFront": "前景层（前）",
+        "Loop": "循环视频",
+        "Main": "主文本",
+        "MainOffset": "主文本偏移",
+        "MainSize": "主文本大小",
+        "MainText": "主文本",
+        "MidAdjust": "中景位置/大小",
+        "Mirror": "镜像",
+        "NoBackLayers": "未配置背景层。",
+        "NoFrontLayers": "未配置前景层。",
+        "Opacity": "不透明度",
+        "OverlayAdjust": "叠加层调整",
+        "PosX": "位置 X",
+        "PosY": "位置 Y",
+        "Remove": "移除",
+        "Rotation": "旋转",
+        "SFX": "音效（效果）",
+        "SFXList": "音效列表（随机）",
+        "SFXVolume": "音效音量",
+        "Scale": "缩放",
+        "ScreenPos": "屏幕位置（X / Y）",
+        "Shake": "屏幕震动",
+        "Sound": "语音 / BGM",
+        "SoundList": "语音 / BGM 列表（随机）",
+        "SoundVolume": "语音 / BGM 音量",
+        "Sub": "副文本",
+        "SubOffset": "副文本偏移",
+        "SubSize": "副文本大小",
+        "SubText": "副文本",
+        "TextColor": "文本颜色",
+        "Theme": "主题",
+        "ThemeColor": "主题颜色",
+        "VideoAudio": "播放视频音频"
+      },
+      "Layer": {
+        "BtnAdd": "添加层",
+        "EmptyState": "点击'添加层'创建自定义效果。",
+        "SystemFixed": "（系统固定）",
+        "ZIndex": "Z索引",
+        "ZIndexHint": "值越高 = 越靠前"
+      },
+      "LayerManager": "图层管理器",
+      "LivePreview": "实时预览",
+      "Notif": {
+        "EnterGlobalName": "请输入全局预设的名称。",
+        "EnterName": "请输入预设名称。",
+        "GlobalSaved": "已保存为全局预设：\"{name}\"",
+        "PresetDeleted": "Cinematic-cut-ins效果：预设已删除。",
+        "PresetLoaded": "Cinematic-cut-ins效果：已加载预设 \"{name}\"。",
+        "PresetSaved": "Cinematic-cut-ins效果：预设 \"{name}\" 已保存。",
+        "ResetComplete": "Cinematic-cut-ins效果：设置已重置。",
+        "Saved": "Cinematic-cut-ins效果：已保存 {name} 的配置",
+        "SelectDelete": "请选择要删除的预设。",
+        "TestPlay": "Cinematic-cut-ins效果：正在播放本地预览。"
+      },
+      "Option": {
+        "NoGroup": "-- 无分组 --"
+      },
+      "Placeholder": {
+        "PresetName": "新预设名称",
+        "Width": "宽度",
+        "X": "X（像素）",
+        "Y": "Y（像素）"
+      },
+      "Presets": "预设",
+      "PreviewHint": "预览显示的是缩小版本。",
+      "SaveActorTitle": "保存到角色",
+      "SaveGlobalTitle": "保存为全局样式",
+      "SelectPreset": "-- 选择预设 --",
+      "Short": {
+        "Angle": "角度（°）",
+        "Delay": "延迟",
+        "Opacity": "不透明度",
+        "Scale": "缩放",
+        "X": "X",
+        "Y": "Y"
+      },
+      "Tab": {
+        "General": "常规",
+        "Triggers": "触发器"
+      },
+      "TipVariation": "将随机选择其中之一（或主图片）。",
+      "Title": "Cinematic-cut-ins效果设置",
+      "Typography": "排版",
+      "Variations": "图片变体（随机）"
+    },
+    "Control": {
+      "Btn": {
+        "ActiveConfig": "激活配置",
+        "AssignGroupSelected": "分配分组到选中项",
+        "CreateNew": "创建新攻击",
+        "CreateScene": "创建新场景效果",
+        "CreateSelected": "使用选中项创建全力攻击",
+        "LoadMore": "加载更多",
+        "NewStyle": "新样式"
+      },
+      "Filter": {
+        "All": "全部"
+      },
+      "Hint": {
+        "SelectFirst": "（首先在角色标签页中选择角色以包含他们）"
+      },
+      "NoActors": "未找到可控制的角色。",
+      "NoGroups": "没有保存的分组预设。",
+      "Notif": {
+        "AssignedGroup": "已将分组分配给 {count} 个角色。",
+        "ClearedGroup": "已清除 {count} 个角色的分组分配。",
+        "NoActorsSelected": "未选择角色。"
+      },
+      "Option": {
+        "ClearGroup": "清除分组"
+      },
+      "Placeholder": {
+        "Search": "搜索角色..."
+      },
+      "Label": {
+        "Selected": "已选中"
+      },
+      "Tab": {
+        "Actors": "角色",
+        "AllOut": "全力攻击",
+        "Scenes": "场景",
+        "Style": "样式"
+      },
+      "Title": {
+        "CopyGroup": "复制代码",
+        "CopyMacro": "复制宏代码",
+        "Delete": "删除预设",
+        "DeleteGroup": "删除",
+        "EditGroup": "编辑",
+        "InitiateVote": "发起投票（玩家加入）",
+        "Play": "播放切入效果",
+        "PlayGroup": "播放",
+        "SelectGroup": "选择以创建分组攻击"
+      }
+    },
+    "Format": {
+      "Boxed": "框式",
+      "Popout": "弹出式"
+    },
+    "Global": {
+      "Hint": {
+        "ScanAttributes": "* 选择一个角色以填充下面的路径助手下拉列表。"
+      },
+      "Label": {
+        "ScanAttributes": "从以下扫描属性："
+      },
+      "SelectReference": "-- 选择参考角色 --",
+      "Warning": {
+        "Message1": "你可以在此定义条件（例如，HP < 50%，攻击时），但无法选择要播放的预设。",
+        "Message2": "请将此样式加载到角色后选择特定预设。",
+        "Title": "全局模式："
+      }
+    },
+    "ItemConfig": {
+      "Hint": "<details style='margin-bottom:10px; background:rgba(0,0,0,0.3); border:1px solid #444; border-radius:4px; padding:5px;'><summary style='cursor:pointer; color:#e61c34; font-weight:bold; padding:5px;'>📖 触发器配置指南（点击展开）</summary><div style='padding:10px; font-size:0.85em; color:#ccc; line-height:1.6; max-height:250px; overflow-y:auto; border-top:1px solid #444;'><p style='margin-top:0;'><b>1. 基本模式</b><br>• <b>使用/攻击/伤害时：</b>通过系统hook自动触发。<br>• <b>关键词（任意/掷骰）：</b>如果文本中存在特定单词则触发。<br>• <b>骰子检查：</b>检查特定的骰子值。<br>&nbsp;&nbsp;└ <i>输入<b>#</b>（索引）和<b>值</b>（目标）。（参见检查器中的橙色数字）</i></p><p><b>2. 特殊模式（高级公式）</b><br>使用 JavaScript 语法创建复杂条件。<br><br><b>[运算符]</b><br>• <code>==</code> : 等于<br>• <code>!=</code> : 不等于<br>• <code>&gt;=</code> : 大于或等于<br>• <code>&&</code> : 与（两者都为真）<br>• <code>||</code> : 或（任一为真）<br><br><b>[变量]</b><br>• <code>d</code> : 骰子结果数分组（例如 <code>d[0]</code> 是第一个骰子）<br>• <code>t</code> : 掷骰的总和<br>• <code>flavor</code> : 物品名称或聊天文本<br><br><b>[示例]</b><br>• <b>Fabula Ultima 暴击：</b><br><code style='background:#222; padding:2px 5px; color:#4ecdc4'>d[0] == d[1] && d[0] >= 6</code><br>• <b>失误（蛇眼）：</b><br><code style='background:#222; padding:2px 5px; color:#ff6b6b'>d[0] == 1 && d[1] == 1</code><br>• <b>复杂条件（总计 >= 20 或包含'终结技'）：</b><br><code style='background:#222; padding:2px 5px; color:#f9ca24'>t >= 20 || flavor.includes('Finisher')</code></div></details>"
+    },
+    "Macro": {
+      "CopyQuestion": "你想复制哪种类型的宏代码？",
+      "Instant": "即时播放",
+      "NotifInstant": "即时播放宏已复制到剪贴板！",
+      "NotifInstantGroup": "即时分组攻击宏已复制到剪贴板！",
+      "NotifPrompt": "交互提示宏已复制到剪贴板！",
+      "NotifVote": "全力攻击投票宏已复制到剪贴板！",
+      "Prompt": "交互提示",
+      "Title": "宏",
+      "TitleGroup": "分组宏",
+      "Vote": "参与投票（加入）"
+    },
+    "Scene": {
+      "AutomationTitle": "场景自动化",
+      "Trigger": {
+        "CombatEnd": "战斗结束时",
+        "CombatStart": "战斗开始时",
+        "RoundHint": "如果勾选，当新的战斗回合开始时，此场景将自动播放。<br>在文本中使用 <code>{{round}}</code> 来显示回合数。",
+        "RoundStart": "回合开始时"
+      }
+    },
+    "ScreenMode": {
+      "Cover": "覆盖模式（裁剪边缘）",
+      "Dimmed": "聚焦模式（变暗黑边）",
+      "Fit": "浮动模式（无黑边 / 16:9）",
+      "Letterbox": "影院模式（黑边）",
+      "Stretch": "自适应拉伸（全屏）"
+    },
+    "Setting": {
+      "GroupScreenMode": "分组：屏幕宽高比模式",
+      "PersonalScreenMode": "个人：屏幕宽高比模式",
+      "ScreenModeHint": "选择切入效果如何适应你的屏幕。影院/聚焦/浮动模式保留 GM 的预期构图。",
+      "WaitForDSN": "等待 Dice So Nice",
+      "WaitForDSNHint": "在 Dice So Nice 动画完成后播放切入效果，而不是同时播放。"
+    },
+    "Settings": {
+      "BattleStartHint": "选择战斗开始时播放的全力攻击预设 ID。",
+      "BattleStartName": "战斗开始效果",
+      "VictoryHint": "选择战斗结束时播放的全力攻击预设 ID。",
+      "VictoryName": "胜利效果"
+    },
+  "Theme": {
+    "Arcane": "奥术（魔法/奇幻）",
+    "Blitz": "闪电 R（右侧）",
+    "BlitzLeft": "闪电 L（左侧）",
+    "Blossom": "绽放",
+    "Brush": "画笔（原版）",
+    "Burst": "爆发",
+    "Cinematic": "电影化（电影）",
+    "Cyber": "赛博（科幻）",
+    "Dash": "冲刺（速度）",
+    "Glitch": "故障",
+    "Impact": "冲击（动作）",
+    "Map": "冒险地图（旧纸张）",
+    "Neon": "霓虹（复古波）",
+    "Phantom": "幻影（时尚）",
+    "Royal": "皇家（金色）",
+    "Runes": "符文（神秘）",
+    "Saga": "传奇（纹理）",
+    "Scope": "瞄准镜（宽屏）",
+    "Slash": "斩击（对角线）",
+    "Stellar": "星辉 R（右侧）",
+    "StellarLeft": "星辉 L（左侧）",
+    "Tribal": "部落（龙）",
+    "Typewriter": "打字机",
+    "Voltage": "电压（速度）",
+    "Yakuza": "极道",
+    "Ink": "墨水（飞溅）",
+    "Cleave": "裂斩",
+	"Eclipse": "日蚀"
+  },
+  "Trigger": {
+    "BtnAdd": "添加触发器",
+    "ChatTriggers": "聊天/掷骰监视列表",
+    "Empty": {
+      "TurnEnd": "未配置回合结束触发器。",
+      "TurnStart": "未配置回合开始触发器。"
+    },
+    "Header": {
+      "Special": "特殊条件"
+    },
+    "Hint": {
+      "GroupFallback": "如果预设为空，将自动使用分组 '{group}' 的默认预设 '{preset}'。"
+    },
+    "HintChat": "<details style='margin-bottom:10px; background:rgba(0,0,0,0.3); border:1px solid #444; border-radius:4px; padding:5px;'><summary style='cursor:pointer; color:#e61c34; font-weight:bold; padding:5px;'>📖 触发器配置指南（点击展开）</summary><div style='padding:10px; font-size:0.85em; color:#ccc; line-height:1.6; max-height:250px; overflow-y:auto; border-top:1px solid #444;'><p style='margin-top:0;'><b>1. 基本模式</b><br>• <b>关键词（任意）：</b>如果在文本/描述中找到该词则触发。<br>• <b>关键词（掷骰）：</b>仅在包含该词的<b>'掷骰'</b>上触发。<br>• <b>骰子检查：</b>检查特定的骰子值。<br>&nbsp;&nbsp;└ <i>输入<b>#</b>（索引）和<b>值</b>（目标）。（参见检查器中的橙色数字）</i></p><p><b>2. 特殊模式（高级公式）</b><br>使用 JavaScript 语法创建复杂条件。<br><br><b>[运算符]</b><br>• <code>==</code> : 等于<br>• <code>!=</code> : 不等于<br>• <code>&gt;=</code> : 大于或等于<br>• <code>&&</code> : 与（两者都为真）<br>• <code>||</code> : 或（任一为真）<br><br><b>[变量]</b><br>• <code>d</code> : 骰子结果数分组（例如 <code>d[0]</code> 是第一个骰子）<br>• <code>t</code> : 掷骰的总和<br>• <code>flavor</code> : 物品名称或聊天文本<br><br><b>[示例]</b><br>• <b>Fabula Ultima 暴击：</b><br><code style='background:#222; padding:2px 5px; color:#4ecdc4'>d[0] == d[1] && d[0] >= 6</code><br>• <b>高掷骰双倍（双倍且总计 >= 12）：</b><br><code style='background:#222; padding:2px 5px; color:#f9ca24'>d[0] == d[1] && t >= 12</code></div><br><i class='fas fa-info-circle'></i> 右键点击聊天消息并选择<b>'⚡ 电影化检查器'</b>来检查骰子索引。</details>",
+    "Hintpath": "输入要监视的属性路径。系统将比较 .value 与 .max 以计算百分比。",
+    "Label": {
+      "DefaultSpell": "默认法术切入",
+      "Keyword": "搜索关键词",
+      "Path": "属性路径"
+    },
+    "MacroLabel": "宏",
+    "MacroTooltip": "可选：触发此触发器时运行宏",
+    "NoMacro": "-- 无宏 --",
+    "LowHP": "低生命值（危险）",
+    "Mode": {
+      "Decrease": "📉 低于（减少）",
+      "Increase": "📈 高于（增加）"
+    },
+    "NoChatTriggers": "未配置监视列表。",
+    "NoTriggers": "未配置触发器。",
+    "Note": {
+      "DefaultSpell": "当使用没有特定切入配置的法术时播放。"
+    },
+    "Placeholder": {
+      "Path": "例如：system.attributes.hp.value",
+      "Rounds": "回合"
+    },
+    "Preset": "要播放的预设",
+    "ResourceTriggers": "资源监视列表",
+    "SelectHelper": "从列表中选择...",
+    "SelectPreset": "-- 选择效果 --",
+    "SelectPresetAuto": "自动：分组默认（{preset}）",
+    "TargetRoll": "目标掷骰",
+    "Threshold": "触发阈值",
+    "Title": {
+      "RoundInput": "特定回合（逗号分隔）。留空表示每个回合。"
+    },
+    "TriggerMode": "触发模式",
+    "TurnEnd": "回合结束",
+    "TurnRoundHint": "<i class='fas fa-info-circle'></i> 留空以触发<strong>每个回合</strong>。（例如：<code>1, 3</code>）",
+    "TurnStart": "回合开始",
+    "Unit": {
+      "Percent": "%（百分比）",
+      "Value": "№（绝对值）"
+    }
+  },
+  "Export": {
+    "Btn": {
+      "Export": "导出",
+      "Import": "导入"
+    },
+    "Notif": {
+      "ExportSuccess": "预设已导出（包含 {count} 个资源）。",
+      "ImportSuccess": "预设已导入（恢复 {count} 个资源）。",
+      "SelectFirst": "请先选择预设。"
+    },
+    "Error": {
+      "TypeMismatch": "类型不匹配：预期 {expected}，实际 {actual}。",
+      "InvalidPackage": "无效的包：缺少 preset.json。"
+    }
+  },
+  "Update": {
+    "Close": "关闭",
+    "Confirm": "确认",
+    "ConfirmNotice": "知道了",
+    "CriticalWarning": "⚠️ 此更新包含关键修复。",
+    "CurrentVersion": "当前版本：{current}",
+    "NewVersion": "新版本 {version} 可用！",
+    "PatchHighlights": "更新亮点",
+    "SkipVersion": "跳过此版本",
+    "Title": "电影化效果更新通知",
+    "DisableNotification": "不再显示",
+    "DisableConfirm": "已禁用更新通知。你可以在模组设置中重新启用。",
+    "DisableName": "禁用更新通知",
+    "DisableHint": "启用后，将不再显示更新通知弹窗。"
+    }
+  }
+}
+

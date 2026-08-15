@@ -1,0 +1,76 @@
+{
+    "TABBED_WHISPERS": {
+        "SETTINGS": {
+            "SplitICAndOOC": {
+                "Name": "Split In Character and OOC messages? (Default value)",
+                "NameUser": "Split In Character and OOC messages?",
+                "Hint": "Activate to create dedicated IC and OOC tabs"
+            },
+            "ForceMessageToTab": {
+                "Name": "Force messages to be sent in current tab? (Default value)",
+                "NameUser": "Force messages to be sent in current tab?",
+                "Hint": "Transforms messages to IC in IC Tab, OOC in OOC Tab and Whispers in a Whisper thread"
+            },
+            "AddRollsTab": {
+                "Name": "Add a specific tab for Rolls? (Default value)",
+                "NameUser": "Add a specific tab for Rolls?",
+                "Hint": "Activate this to send all rolls to this new tab, and prevent them from appearing in any other tab (except Whispers)"
+            },
+            "HideInStreamView": {
+                "Name": "Should Tabbed Chatlog be disabled in the FoundryVTT /stream view?",
+                "Hint": "Defaults to True"
+            },
+            "PerScene": {
+                "Name": "Should In Character and Roll messages be split per Scene? (Default value)",
+                "NameUser": "Should In Character and Roll messages be split per Scene?",
+                "Hint": "Messages in IC and Rolls tabs will be hidden when not originating from the current scene"
+            },
+            "AutoNavigate": {
+                "Name": "Should new messages automatically swap to the corresponding tab? (Default value)",
+                "NameUser": "Should new messages automatically swap to the corresponding tab?",
+                "Hint": "Sent and received messages will change the currently viewed tab to force message display"
+            },
+            "HideWhispersInMainTabs": {
+                "Name": "Hide threaded whispers in IC and OOC tabs? (Default value)",
+                "NameUser": "Hide threaded whispers in IC and OOC tabs?",
+                "Hint": "Displays whispers only in their dedicated thread"
+            },
+            "FilterByTabsInChatNotifications": {
+                "Name": "Filter messages by tabs in chat notifications (chat log closed)? (Default value)",
+                "NameUser": "Filter messages by tabs in chat notifications (chat log closed)?",
+                "Hint": "If unchecked, all messages will be displayed in chat notifications"
+            }
+        },
+        "TABS": {
+            "IC": "IC",
+            "OOC": "OOC",
+            "Rolls": "Rolls",
+            "Whisper": "Whispers",
+            "ALL": "Chat"
+        },
+        "WHISPER_CONFIG": {
+            "Title": "Whisper Thread Configuration",
+            "NameField": "Thread name:",
+            "SelectUsers": "Select users:",
+            "SelectUsersEdit": "Selected users (not editable):",
+            "NoCharacter": "No Character",
+            "GMTag": "[GM]"
+        },
+        "DIALOG": {
+            "FlushWarning": "All messages within the current chat tab will be permanently deleted."
+        },
+        "BUTTONS": {
+            "AddWhisperTab": "Add new whisper thread",
+            "EditWhisperTab": "Edit selected whisper thread",
+            "DeleteWhisperTab": "Delete selected whisper thread"
+        },
+        "MESSAGE_LINK": {
+            "Title": "Open in whisper thread",
+            "SelfChat": "Self chat",
+            "ChatWith": "Chat with {nameList}"
+        },
+        "SETTINGS_APP": {
+            "Title": "Chat tab settings"
+        }
+    }
+}

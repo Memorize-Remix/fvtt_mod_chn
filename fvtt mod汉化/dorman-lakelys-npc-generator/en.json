@@ -1,0 +1,61 @@
+{
+  "dorman-lakelys-npc-generator": {
+    "settings": {
+      "enableExistentialThemes": {
+        "name": "Enable Deep Existential Themes",
+        "hint": "When enabled, NPCs will have more profound existential crises and philosophical depth."
+      },
+      "includeContradictions": {
+        "name": "Include Personal Contradictions",
+        "hint": "When enabled, NPCs will have internal contradictions that make them more complex."
+      },
+      "philosophicalComplexity": {
+        "name": "Philosophical Complexity Level",
+        "hint": "Controls the depth of philosophical themes in generated NPCs."
+      }
+    },
+    "ui": {
+      "generateButton": "Dorman's NPC Gen",
+      "dialogTitle": "Dorman Lakely's NPC Generator",
+      "createActor": "Create Actor",
+      "regenerate": "Regenerate",
+      "close": "Close",
+      "npcCreated": "Created NPC: {name}",
+      "npcCreationError": "Failed to create NPC",
+      "generatePortrait": "Generate Portrait ($0.04)",
+      "generatingPortrait": "Generating portrait... This will cost approximately $0.04 and may take 15-30 seconds.",
+      "downloadingPortrait": "Downloading and saving portrait...",
+      "portraitGenerated": "Portrait generated and saved to: {path}",
+      "portraitGenerationFailed": "Failed to generate portrait: {error}",
+      "portraitSaveFailed": "Failed to save portrait to local file system",
+      "debugFill": "Random Fill (Debug)"
+    },
+    "fields": {
+      "name": "Name",
+      "age": "Age",
+      "occupation": "Occupation",
+      "existentialCrisis": "Existential Crisis",
+      "philosophy": "Philosophy",
+      "motivation": "Motivation",
+      "fear": "Fear",
+      "hope": "Hope",
+      "contradiction": "Contradiction",
+      "backstory": "Backstory"
+    }
+  },
+  "NPCGEN": {
+    "CRComparisonIntro": "The CR Calculator analyzed {name} and found a difference from the target CR.",
+    "TargetCR": "Target CR",
+    "TargetCRDesc": "The CR you requested when generating this NPC",
+    "CalculatedCR": "Calculated CR",
+    "CalculatedCRDesc": "Based on actual stats, equipment, and abilities, this NPC is",
+    "CRLevels": "CR",
+    "CRBreakdown": "CR Breakdown",
+    "DefensiveCR": "Defensive CR",
+    "OffensiveCR": "Offensive CR",
+    "CRComparisonHelp": "Defensive CR is based on HP, AC, resistances, and defensive abilities. Offensive CR is based on damage output and attack bonuses.",
+    "UseCalculatedCR": "Use Calculated CR",
+    "KeepTargetCR": "Keep Target CR",
+    "Cancel": "Cancel"
+  }
+}

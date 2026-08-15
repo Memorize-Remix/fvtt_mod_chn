@@ -1,0 +1,286 @@
+{
+  "fameosity": {
+    "settings": {
+      "reputationSettings": {
+        "name": "Reputation Settings",
+        "label": "Configure",
+        "hint": "Configure the reputation system",
+        "title": "Reputation Settings"
+      },
+      "tab-general": "General",
+      "tab-tiers": "Tiers",
+      "tab-modes": "Modes",
+      "tab-data": "Data",
+      "enabled": {
+        "name": "Enable Reputation System",
+        "hint": "Enable or disable the reputation system"
+      },
+      "displayMode": {
+        "name": "Display Mode",
+        "hint": "How reputation changes are displayed to players",
+        "show": "Show values",
+        "hide": "Hide values"
+      },
+      "reputationMin": {
+        "name": "Minimum Reputation"
+      },
+      "reputationMax": {
+        "name": "Maximum Reputation"
+      },
+      "defaultActorMode": {
+        "name": "Default Actor Mode",
+        "hint": "Mode for newly tracked actors"
+      },
+      "defaultFactionMode": {
+        "name": "Default Faction Mode",
+        "hint": "Mode for new factions"
+      },
+      "hybridBalance": {
+        "name": "Hybrid Mode Balance",
+        "hint": "Weight distribution between base reputation and calculated average"
+      },
+      "hybridBase": {
+        "name": "Base Weight"
+      },
+      "hybridAuto": {
+        "name": "Relations Weight"
+      },
+      "dragActorHint": "Drag actor here",
+      "dragActorHintFull": "Drag actors from the sidebar to add them to tracking",
+      "exportImport": {
+        "name": "Export / Import",
+        "hint": "Backup or restore all module data, including settings, tiers, factions, locations, and relations"
+      },
+      "export": "Export",
+      "import": "Import",
+      "importSettings": "Import Settings",
+      "importTiers": "Import Relation Tiers",
+      "importData": "Import Factions, Locations, and Relations",
+      "exportSuccess": "Data exported successfully",
+      "importSuccess": "Data imported successfully",
+      "importError": "Data import error",
+      "importInvalid": "Invalid import file format",
+      "dangerZone": "Danger Zone",
+      "resetAll": "Reset All Data",
+      "resetConfirmTitle": "Reset All Data",
+      "resetConfirmContent": "Are you sure you want to reset ALL module data? This will delete all factions, locations, relations, and settings. This action cannot be undone!",
+      "resetSuccess": "All data reset"
+    },
+    "keybindings": {
+      "increase": {
+        "name": "Increase Reputation",
+        "hint": "Increase reputation of the selected token"
+      },
+      "decrease": {
+        "name": "Decrease Reputation",
+        "hint": "Decrease reputation of the selected token"
+      }
+    },
+    "tiers": {
+      "nemesis": "Nemesis",
+      "hostile": "Hostile",
+      "unfriendly": "Unfriendly",
+      "wary": "Wary",
+      "neutral": "Neutral",
+      "friendly": "Friendly",
+      "allied": "Ally",
+      "devoted": "Devoted"
+    },
+    "mode": {
+      "manual": "Manual",
+      "auto": "Auto",
+      "hybrid": "Hybrid",
+      "manual-hint": "Manual Mode: Reputation is set directly",
+      "auto-hint": "Auto Mode: Calculated from relations",
+      "hybrid-hint": "Hybrid Mode: Base + Relation bonus (max 50%)"
+    },
+    "reputation": {
+      "window-title": "Reputation",
+      "current-label": "Current Reputation",
+      "disabled": "Reputation system disabled"
+    },
+    "relations": {
+      "viewer-title": "Relations",
+      "tab-character": "Character",
+      "tab-locations": "Locations",
+      "tab-factions": "Factions",
+      "tab-actors": "Actors",
+      "tab-character-hint": "View relations of the selected character",
+      "tab-locations-hint": "Manage locations and wanted status",
+      "tab-factions-hint": "Manage factions and their members",
+      "tab-actors-hint": "Manage tracked NPCs",
+      "no-locations": "No locations",
+      "no-factions": "No factions",
+      "no-actors": "No tracked actors",
+      "no-members": "No members",
+      "no-players": "No player characters",
+      "no-relations": "No relations",
+      "tiers": "Relationship Tiers",
+      "relations-to-actors": "Relations to characters",
+      "addTier": "Add Tier",
+      "newTier": "New Tier",
+      "their-attitude": "Their Attitude",
+      "your-attitude": "Your Attitude",
+      "to-players": "Attitude towards Players",
+      "to-factions": "Attitude towards Factions",
+      "to-other-factions": "Attitude towards Factions",
+      "faction-attitude": "Faction Attitude",
+      "members-avg": "Members (Avg.)",
+      "faction-memberships": "Faction Memberships",
+      "no-faction-memberships": "Not a member of any faction",
+      "faction-member": "Faction Member"
+    },
+    "factions": {
+      "add": "Add Faction",
+      "add-hint": "Create a new faction",
+      "new-faction": "New Faction",
+      "bounties": "Bounties"
+    },
+    "locations": {
+      "add": "Add Location",
+      "add-hint": "Create a new location",
+      "new-location": "New Location",
+      "wanted": "Wanted",
+      "factions-here": "Factions",
+      "actors-here": "Actors",
+      "controlled-by": "Controlled By",
+      "no-control": "Unspecified"
+    },
+    "ranks": {
+      "title": "Ranks",
+      "members": "Members",
+      "add": "Add Rank",
+      "new-rank": "New Rank",
+      "auto": "Auto"
+    },
+    "wanted": {
+      "no-warrants": "No warrants",
+      "no-bounties": "No bounties set",
+      "unknown": "Unknown",
+      "announced": "{name} is wanted in {location}! {level}",
+      "announce": "Announce Wanted Status"
+    },
+    "character": {
+      "wanted-summary": "Wanted",
+      "subtab-locations": "Locations",
+      "subtab-factions": "Factions",
+      "subtab-actors": "Actors",
+      "subtab-locations-hint": "View locations and wanted status",
+      "subtab-factions-hint": "View relations with factions",
+      "subtab-actors-hint": "View relations with NPCs"
+    },
+    "info": {
+      "title": "Information",
+      "tab-public": "Public",
+      "tab-gm": "GM Only",
+      "no-info": "Information unavailable"
+    },
+    "picker": {
+      "search": "Search...",
+      "select-actor": "Select Actor",
+      "select-faction": "Select Faction",
+      "no-actors": "No available actors",
+      "no-factions": "No available factions"
+    },
+    "confirm": {
+      "delete-title": "Confirm Deletion",
+      "delete-faction": "Are you sure you want to delete this faction?",
+      "delete-location": "Are you sure you want to delete this location?",
+      "delete-actor": "Are you sure you want to stop tracking this actor?",
+      "delete-member": "Are you sure you want to remove this member?",
+      "delete-rank": "Are you sure you want to delete this rank?",
+      "delete-wanted": "Are you sure you want to delete this warrant?",
+      "remove-from-location": "Are you sure you want to remove this from the location?"
+    },
+    "remember": {
+      "warn-no-token": "No token selected",
+      "warn-no-party": "No active party selected. Assign a party in settings.",
+      "relation-improved": "{source}'s relationship with {target} improved",
+      "relation-worsened": "{source}'s relationship with {target} worsened"
+    },
+    "tooltips": {
+      "delete": "Delete",
+      "hide": "Hide from players",
+      "show": "Show to players",
+      "hidden": "Hidden from players",
+      "unnest": "Remove from parent",
+      "add-child": "Add child element",
+      "add-to-tracking": "Add to tracking",
+      "announce-wanted": "Announce wanted status and notify everyone"
+    },
+    "errors": {
+      "saveFailed": "Failed to save reputation data",
+      "cannotNest": "Cannot nest this entity type into the target"
+    },
+    "context": {
+      "select": "Select",
+      "open-sheet": "Open Sheet",
+      "duplicate": "Create Copy",
+      "copy-suffix": "Copy",
+      "activate-party": "Set as Active Party",
+      "hide-all": "Hide All",
+      "show-all": "Show All",
+      "hide-all-nested": "Hide All Nested",
+      "show-all-nested": "Show All Nested",
+      "add-to-relations": "Add to Party Relations",
+      "add-child-location": "Add Child Location",
+      "add-child-faction": "Add Child Faction"
+    },
+    "party": {
+      "default-name": "Adventuring Party"
+    },
+    "ui": {
+      "type": "Type",
+      "description-placeholder": "Description...",
+      "player-characters": "Player Characters",
+      "active-characters": "Party Members",
+      "npcs": "Characters",
+      "select-entity-hint": "Select an element from the navigator",
+      "relations-to-players": "Relations to Player Characters",
+      "relations-to-characters": "Relations to other characters",
+      "no-active-party-gm": "No active party assigned. Create a group and set it as active using RMB in nav tree.",
+      "no-active-party-player": "You are not part of an active party.",
+      "personal-reputation": "Personal Reputation",
+      "custom-type-name-placeholder": "Custom type name...",
+      "current-active-party": "Active Party"
+    },
+    "creator": {
+      "title-location": "Create Location",
+      "title-faction": "Create Faction",
+      "title-actor": "Add Actors",
+      "select-location-type": "Select location type",
+      "select-faction-type": "Select faction type",
+      "name-label": "Name",
+      "location-name-placeholder": "Location name...",
+      "faction-name-placeholder": "Faction name...",
+      "create-btn": "Create",
+      "actors-label": "Actors",
+      "drop-actors-hint": "Drag actors here or use the buttons below",
+      "add-player-characters": "Add PCs",
+      "add-important-npcs": "Add Important NPCs",
+      "add-all-btn": "Add All",
+      "location-types": {
+        "continent": "Continent",
+        "country": "Country",
+        "settlement": "Settlement",
+        "poi": "Point of Interest"
+      },
+      "faction-types": {
+        "organization": "Organization",
+        "group": "Group"
+      }
+    },
+    "types": {
+      "location": {
+        "continent": "Continent",
+        "country": "Country",
+        "settlement": "Settlement",
+        "poi": "Point of Interest"
+      },
+      "faction": {
+        "organization": "Organization",
+        "group": "Group"
+      }
+    }
+  }
+}

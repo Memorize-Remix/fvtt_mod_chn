@@ -1,0 +1,227 @@
+{
+	"DF_ARCHITECT": {
+		"ModName": "Dragon Flagon Architect",
+		"ErrorColourSettingsMissing": "DF Architect: 'lib - ColorSettings' module required. Please install and activate 'lib - ColorSettings'",
+		"ErrorLibWrapperMissing": "DF Architect: 'libWrapper' module required. Please install and activate 'libWrapper'.",
+		"General": {
+			"Cancel": "Cancel",
+			"ShowCounterName": "Show Object Counters",
+			"ShowCounterHint": "Display object counters on the tiles, walls, lighting, and sounds layers"
+		},
+		"ReloadRequired": {
+			"Title": "Reload Required",
+			"Content": "<p>A reload is required for your changes to go into effect.</p>",
+			"Positive": "Reload Now",
+			"Negative": "I'll Reload Myself"
+		},
+		"LayerShortcuts.Settings": {
+			"Description": "Shortcuts for switching between the canvas layers.",
+			"Reset": "Reset to Defaults",
+			"Save": "Save",
+			"Layer": {
+				"Tokens": "Tokens: ",
+				"Measure": "Measure: ",
+				"Tiles": "Tiles: ",
+				"Drawings": "Drawings: ",
+				"Walls": "Walls: ",
+				"Lighting": "Lighting: ",
+				"Sounds": "Sounds: ",
+				"Notes": "Notes: "
+			},
+			"QuickSwap": {
+				"Title": "Layer Quick Swap",
+				"Info": "This Hotkey is for quickly swapping between two preset layers. Each time it is pressed, it will switch to the layer it is not on. If you are on a layer that is not included in this pair, you will be switched to Layer 1.",
+				"Layer1_Name": "Quick Swap Layer 1",
+				"Layer1_Hint": "One of the two layers that will swap between when the Quick Swap hotkey is pressed.",
+				"Layer2_Name": "Quick Swap Layer 2",
+				"Layer2_Hint": "The second of the two layers that will swap between when the Quick Swap hotkey is pressed."
+			}
+		},
+		"WallShortcuts.Settings": {
+			"Description": "Hotkeys assigned to switch between the different wall types",
+			"ToggleForceSnapName": "Toggle Force Snap to Grid",
+			"ToggleForceSnapHint": "Toggles the Force Snap to Grid option on the walls layer."
+		},
+		"AltGridSnap": {
+			"Label": "Alternate Grid Snap",
+			"Hotkey_Toggle": "Toggle Alternate Grid Snapping",
+			"Setting": {
+				"EnabledName": "Show Alternate Grid Snap Toggle",
+				"EnabledHint": "Show the toggle button for enabling alternate grid snapping to the center of boxes instead of corners.",
+				"PlaceOnControlBarName": "Place on Main Control Bar",
+				"PlaceOnControlBarHint": "Place the Alternate Grid Snap Toggle button on the main Controls Bar instead of the Tools bars."
+			}
+		},
+		"WallCtrlInvert": {
+			"Title": "Lock Wall Chaining",
+			"Name": "Toggle Wall Chaining Lock",
+			"Hotkey": "Toggle chain lock: "
+		},
+		"WallJoinSplit": {
+			"Split_Label": "Split the selected walls into two walls each",
+			"Join_Label": "Merge the selected line of walls into a single wall"
+		},
+		"WallGapFiller": {
+			"SettingName": "Wall Gap Filler Distance",
+			"SettingHint": "The maximum distance two wall endpoints need to be for them to be joined by the Wall Gap Filler feature",
+			"ToolButtonLabel": "Find Wall Gaps",
+			"DetectGapsLabel": "Detecting Wall Gaps...",
+			"NoGaps": "No gaps detected",
+			"DialogTitle": "Gap Detection",
+			"GapsDetected": "{count} gaps were detected. Do you wish to close them?",
+			"ProgressLabel": "Closing Gaps {0}/{1}"
+		},
+		"WallChangeType.Setting": {
+			"MetaKeyName": "Quick Wall Change Key",
+			"MetaKeyHint": "Which key would you like to hold down when clicking a wall type control to change the current selection of walls to that wall type?",
+			"MetaKey_OptionAlt": "Alt Key",
+			"MetaKey_OptionCtrl": "Ctrl Key"
+		},
+		"WallAltDrop.Setting": {
+			"DistanceName": "Wall Drop Auto-Snap",
+			"DistanceHint": "The pixel distance a wall endpoint needs to be to auto-snap the currently dragging wall endpoint to that same position."
+		},
+		"WallDirections.Setting": {
+			"AllowUnselectedInvertName": "Allow Orientation Invert on Unselected Walls",
+			"AllowUnselectedInvertHint": "Allow the use of a double right-click to invert a wall's orientation when the wall has not first been selected."
+		},
+		"AltLightOrigin.Settings": {
+			"Colour1_Name": "Lights: Crosshair Colour",
+			"Colour1_Hint": "The colour of the crosshairs that display when you hold Shift while moving a light source.",
+			"Colour2_Name": "Lights: Alternative Crosshair Colour",
+			"Colour2_Hint": "The alternate colour of the crosshairs that display when you hold Shift+Alt while moving a light source."
+		},
+		"QuickColourPicker": {
+			"EyeDrop_Title": "Pick a colour from the map"
+		},
+		"CaptureGameScreen": {
+			"Setting": {
+				"AllowPC_Name": "Allow Players to Capture Canvas",
+				"AllowPC_Hint": "Allow players to capture the current game board canvas."
+			},
+			"ScreenCapture": {
+				"Rendering": "Rendering Images",
+				"Stitching": "Stitching Images Together",
+				"ErrorStitchingFailure": "Failed to complete image stitching process due to hitting memory limit. You can try again but you may need to make the scene smaller.",
+				"Background": {
+					"Hide": "Hide Background Image",
+					"Colour": "BG Colour",
+					"Alpha": "BG Transparency"
+				},
+				"ShowControls": "Show Controls",
+				"ShowHidden": "Show Hidden",
+				"ResetFilters": "Reset Filter",
+				"Label": "Save Game Board Image",
+				"ContinueButton": "Capture Image",
+				"Target": "What portion would you like to capture?",
+				"Target_Current": "Current View",
+				"Target_All": "Entire Canvas",
+				"Format": "Select a file format",
+				"FormatPNG": "PNG",
+				"FormatJPG": "JPEG",
+				"FormatWEB": "WebP (Chrome Only)",
+				"Compression": "The quality level for JPEG and WebP",
+				"KeepPadding": "(Entire Canvas Only) Include Padding",
+				"WarningNoScene": "There is no scene being viewed. Please view or activate a scene for canvas capture.",
+				"WarningConfirmTitle": "Very Large Image",
+				"WarningConfirmContent": "<p>You are attempting to capture a very large image. The browser window <b>MUST NOT be adjusted</b> once the process has started.<br><br><i>It is <b>not recommended</b> to render anything over <b>8000px by 8000px</b> as this may lead to stitching failures due to memory limits.</i></p>"
+			},
+			"SaveImageDialog": {
+				"Title": "Save Image",
+				"SaveServer": "Save on Server",
+				"SaveLocal": "Save on Computer",
+				"FileNameLabel": "File Name: ",
+				"FileNamePlaceholder": "screenshot",
+				"DefaultFileName": "capture"
+			},
+			"ErrorCaptureInProgress": "A capture session is already in progress. Please complete or cancel it before trying again."
+		},
+		"LightTemplate": {
+			"CreateTemplateButton": {
+				"LightConfig": "Create Template",
+				"MacroDirectory": "Create Light Template"
+			},
+			"ContextMenu": {
+				"Edit": "Edit Template",
+				"Remove": "Remove Template",
+				"Delete": "Delete Template"
+			},
+			"CurrentTemplate": {
+				"Label": "Current Active Template",
+				"EditButton": "Edit Template",
+				"ExitButton": "Stop Placing Template"
+			},
+			"TemplateConfig": {
+				"SaveButton": "Save Template",
+				"UseButton": "Activate Template",
+				"ImageTitle": "Light Template Image"
+			},
+			"Delete": {
+				"Title": "Delete Light Template:",
+				"Confirm": "Are you sure you wish to delete this light template?"
+			}
+		},
+		"AltLightInverted": {
+			"InvertLuminosityButton": "Invert luminosity to Light and Dark (positive/negative values)"
+		},
+		"TileFlattener": {
+			"CapturePromptTitle": "Flatten Tiles",
+			"Label": "Flatten Tiles into Single Image",
+			"FlattenButton": "Flatten Tiles",
+			"RenderLighting": "Bake-In Lighting (background will not be transparent)",
+			"RenderBackground": "Render Background Image",
+			"RenderHiddenTiles": "Render Hidden Tiles (Entire Canvas Only)",
+			"HideAnimatedTiles": "Hide Animated Tiles (Render Hidden Tiles must be OFF)",
+			"RenderSelectedOnly": "Selected Tiles",
+			"RenderEntireCanvas": "Entire Canvas",
+			"Margin": "Additional padding to be rendered outside of <b>Selected Tiles</b>",
+			"ImageFolderTitle": "Flattened Tile Images Folder",
+			"RenderRoofTiles": "Render Roof Tiles Only",
+			"RenderFloorTiles": "Render Floor Tiles Only",
+			"RenderBothTiles": "Render Floor & Roof Tiles",
+			"SaveImageDialog": {
+				"Title": "Save Flattened Tile",
+				"FileNameLabel": "File Name: ",
+				"FileNamePlaceholder": "tile-flattener"
+			},
+			"SceneReplaceDialog": {
+				"Title": "Scene Replacement",
+				"WhatToDo": "Would you like Tile Flattener to do any of these processes for you?",
+				"ReplaceBackground": "Replace the current scene's background",
+				"ReplaceBackgroundHint": "The current scene's background will be changed to the newly created image.",
+				"CloneScene": "Clone the current scene and use image as background",
+				"CloneSceneHint": "Clones the current scene and its content and sets the new scene's background to the newly created image.",
+				"ImportToScene": "Import as a new tile in current Scene",
+				"ImportToSceneHint": "Import the new image as a tile into the center of the current scene.",
+				"DoNothing": "Do Nothing"
+			}
+		},
+		"ShowLayerControls": {
+			"Walls": "Display Walls on other layers",
+			"Lights": "Display Light boundaries on other layers",
+			"Sounds": "Display Sound boundaries on other layers"
+		},
+		"TileConfigExt": {
+			"LabelDimens": "Image Dimensions",
+			"LabelAspect": "Image Aspect Ratio",
+			"SettingControlsName": "Tile Config: Show Controls for Animations",
+			"SettingControlsHint": "Display playback controls for animations in the tile config thumbnail"
+		}
+	},
+	"LAYERS": {
+		"tiles": "Tiles Layer",
+		"foreground_deprecated": "Foreground/Roofs Layer",
+		"drawings": "Drawings Layer",
+		"grid": "Grid Layer",
+		"walls": "Walls Layer",
+		"templates": "Template Layer",
+		"notes": "Notes Layer",
+		"tokens": "Token Layer",
+		"lighting": "Lighting Layer",
+		"sounds": "Sounds Layer",
+		"sight_deprecated": "Sight Layer",
+		"controls": "Controls Layer",
+		"weather": "Weather Layer",
+		"unknown": "\"{0} Layer\""
+	}
+}

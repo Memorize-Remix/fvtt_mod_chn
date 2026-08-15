@@ -1,0 +1,80 @@
+
+  "combat-exhaustion": {
+    "settings": {
+      "exhaustionMode": {
+        "name": "何时应用力竭？",
+        "hint": "控制力竭触发的时间。'战斗后'会将力竭保存直到战斗结束；所有其他模式会立即应用。",
+        "choices": {
+          "afterCombat": "战斗后（保存）",
+          "duringCombat": "仅在战斗中（立即）",
+          "always": "总是（立即）"
+        }
+      },
+      "exhaustOnFirstDeathFail": {
+        "name": "在第一次死亡豁免失败时触发",
+        "hint": "启用后，力竭会在第一次死亡豁免失败时触发，而不是在角色重新站起来时。"
+      },
+      "saveMode": {
+        "name": "需要豁免检定以避免力竭",
+        "hint": "触发时进行豁免检定以避免力竭。体质豁免使用角色的体质调整值；纯骰检定是无指掷骰D20且无任何调整值的检定。",
+        "choices": {
+          "disabled": "禁用",
+          "conSave": "体质豁免",
+          "flatD20": "纯骰检定（无调整值）"
+        }
+      },
+      "baseSaveDC": {
+        "name": "基础豁免DC",
+        "hint": "豁免检定的基础DC。在战斗后模式中，每次倒地增加1点（例如：3次倒地，基础10时DC为13）。设置为0以禁用战斗力竭触发。"
+      },
+      "afterCombatCheckMode": {
+        "name": "战斗后：力竭模式",
+        "hint": "仅当上方选择'战斗后'时应用。选择是否无需检定应用力竭，通过豁免检定避免单层力竭，或通过豁免检定避免所有叠加层数。",
+        "choices": {
+          "disabled": "无豁免检定 — 所有力竭",
+          "singleExhaustion": "豁免检定 — 单层力竭",
+          "stackedExhaustion": "豁免检定 — 叠加力竭"
+        }
+      },
+      "enableLongRestQuality": {
+        "name": "启用长休质量",
+        "hint": "启用后，每次长休开始时GM会被提示选择休息质量等级，决定恢复多少力竭。需要重新加载。"
+      },
+      "exhaustionOverrideSwap": {
+        "name": "切换力竭规则集",
+        "hint": "将力竭切换到相反的规则集。2014规则 → 应用2024机制。2024规则 → 应用2014机制。需要重新加载。"
+      }
+    },
+    "ui": {
+      "exhaustion2014": "力竭（2014）",
+      "exhaustion2024": "力竭（2024）"
+    },
+    "rest": {
+      "dialogTitle": "长休质量",
+      "restTypeHeader": "休息类型",
+      "playersHeader": "玩家",
+      "restQualityHeader": "休息质量",
+      "exhaustionSuffix": "力竭",
+      "confirm": "确认",
+      "cancelRest": "取消休息",
+      "tiers": {
+        "standard": {
+          "label": "标准休息",
+          "description": "粗糙的睡眠、露营或基本酒馆。"
+        },
+        "quality": {
+          "label": "舒适休息",
+          "description": "优质旅馆的私人房间或类似的舒适住宿。"
+        },
+        "luxury": {
+          "label": "豪华休息",
+          "description": "高级旅馆的豪华套房、浴场或提供特殊舒适和关怀的住宿。"
+        }
+      }
+    },
+    "notifications": {
+      "exhaustionGained": "{name} 获得了 {count} 层力竭。（{prev} → {next}）",
+      "exhaustionRecovered": "{name} 恢复了 {count} 层力竭。（{prev} → {next}）"
+    }
+  }
+}

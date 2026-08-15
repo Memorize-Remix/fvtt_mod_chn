@@ -1,0 +1,126 @@
+
+  "MCT": {
+    "menu": {
+      "name": "",
+      "label": "标签页配置"
+    },
+    "context": {
+      "settings": "设置",
+      "delete": "删除",
+      "tabSettings": "标签页配置"
+    },
+    "settings": {
+      "windowTitle": "聊天标签页设置",
+      "hint": "可通过拖拽来显示、添加、删除标签页，并重新排序。",
+      "buttons": {
+        "add": "添加标签页",
+        "reset": "重置"
+      },
+      "autoWhisperTab": {
+        "name": "自动创建私聊标签页",
+        "hint": "开启：当找不到匹配的标签页时，自动创建新的私聊标签页。"
+      },
+      "showAloneMessageToDefaultTab": {
+        "name": "在默认标签页显示孤立消息",
+        "hint": "开启：将孤立消息（如未使用此模组的消息、已删除标签页的消息）显示在默认标签页。关闭：这些消息可在启用'显示所有消息'选项的标签页中查看。"
+      },
+      "unreadCount": {
+        "name": "未读标记显示未读消息数量",
+        "hint": "开启：显示未读消息数量。关闭：仅显示简单圆点标记。（每客户端设置）"
+      },
+      "autoLoad": {
+        "name": "自动加载历史消息",
+        "hint": "自动加载历史消息（核心自动加载功能无法禁用，每客户端设置）。"
+      },
+      "loadBatchSize": {
+        "name": "消息加载数量",
+        "hint": "每次加载的历史消息数量（每客户端设置）。"
+      },
+      "defaults": {
+        "main": "主要",
+        "roll": "掷骰",
+        "sub": "次要",
+        "newTabName": "新标签页"
+      },
+      "tooltips": {
+        "edit": "编辑此标签页的详细设置",
+        "delete": "删除此标签页",
+        "reset": "重置所有标签页设置",
+        "defaultTab": "默认标签页不可重新排序。",
+        "tabIdList": "标签页ID列表"
+      }
+    },
+    "detailSettings": {
+      "windowTitle": "标签页详细设置",
+      "label": "标签页名称",
+      "showAllMessages": {
+        "label": "显示所有消息",
+        "hint": "开启：无视其他标签页设置，显示所有消息。（包括孤立消息，如未使用此模组的消息、已删除标签页的消息。）"
+      },
+      "forceOOC": {
+        "label": "强制设为超游(OOC)",
+        "hint": "开启：强制将此标签页中的新消息设为超游(OOC)。"
+      },
+      "forceDisplayTitle": "强制消息显示",
+      "forceDisplayHint": "按消息类型设置强制显示",
+      "whisperTab": {
+        "label": "私聊标签页",
+        "hint": "开启：将此设为专用私聊标签页。消息将显示在此标签页中，其他设置将被禁用。",
+        "targets": "私聊目标"
+      },
+      "tooltips": {
+        "moveDisabled": "不可用，因为'{tabName}'标签页已设置为'仅在此标签页显示'。",
+        "tabId": "标签页ID: {tabId}"
+      }
+    },
+    "forceOptions": {
+      "none": "不强制显示",
+      "duplicate": "在激活标签页和此标签页显示",
+      "move": "仅在此标签页显示"
+    },
+    "messageTypes": {
+      "ic": "角色(IC)",
+      "ooc": "超游(OOC)",
+      "roll": "掷骰",
+      "other": "其他"
+    },
+    "tabs": {
+      "tooltips": {
+        "add": "添加新标签页"
+      }
+    },
+    "tooltips": {
+      "loadButton": "加载消息"
+    },
+    "dialog": {
+      "reset": {
+        "title": "重置标签页设置",
+        "content": "是否将所有标签页设置重置为默认？（所有消息将从标签页分离并变为不可见。）"
+      },
+      "delete": {
+        "title": "删除标签页 (标签页ID: {tabId})",
+        "content": "是否删除标签页'<strong>{name}</strong>'？"
+      },
+      "editTabId": {
+        "title": "编辑标签页ID",
+        "label": "标签页ID"
+      },
+      "allTabID": {
+        "title": "标签页ID列表",
+        "currentTab": "标签页ID (当前)",
+        "orphanedTab": "标签页ID (孤立)",
+        "orphanedTabHint": "这些ID曾用于历史聊天消息，但当前未在使用。",
+        "none": "未找到使用的标签页ID。",
+        "noneConfigured": "未配置任何标签页。"
+      }
+    },
+    "notifications": {
+      "cannotDeleteDefault": "默认标签页不可删除。",
+      "cannotDragDefault": "默认标签页不可重新排序。",
+      "cannotBeEmpty": "ID不能为空。",
+      "alreadyExists": "该ID已被使用。",
+      "idCopied": "已复制ID到剪贴板。"
+    },
+    "save": "保存"
+  }
+}

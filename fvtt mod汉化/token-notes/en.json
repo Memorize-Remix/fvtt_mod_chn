@@ -1,0 +1,34 @@
+{
+    "tokennotes": {
+        "togglenotes": "Toggle Token Notes",
+        "settings": {
+            "autoopen": {
+                "name": "Auto Open / Close",
+                "hint": "Automatically open/close the notes when the token is selected/unselected."
+            },
+            "allowplayers": {
+                "name": "Player Permissions",
+                "hint": "Lever of permission on token notes for players. Any option will only be availeble for tokens owned by the player.",
+                "options": {
+                    "none": "None",
+                    "readonly": "Read Only",
+                    "readwrite": "Read/Write"
+                }
+            },
+            "position": {
+                "name": "Position",
+                "hint": "Position of the notes.",
+                "options": {
+                    "bottomleft": "Bottom Left",
+                    "bottomright": "Bottom Right",
+                    "topleft": "Top Left",
+                    "topright": "Top Right"
+                }
+            }
+        },
+        "tooltip": {
+            "toggle-edit": "Toggle Edit Mode",
+            "toggle-token-actor": "Toggle Token/Actor"
+        }
+    }
+}

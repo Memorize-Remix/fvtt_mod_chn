@@ -1,0 +1,32 @@
+{
+	"phantomtokens" : {
+		"Titles" : {
+			"togglePhantomVision"			: "Toggle phantom vision",
+			
+			"modes" : {
+				"normal.descrp"				: "A normal token",
+				"anchor.descrp"				: "An immovable token",
+				"unclickable.descrp"		: "An unclickable token",
+				"phantom.descrp"			: "An invisible token"
+			}
+		},
+		
+		"Keys" : {
+			"TogglePhantomRealm.name"		: "Toggle phantom vision",
+			"IncreaseModeSelected.name"		: "Increase phantom mode of selected tokens",
+			"DecreaseModeSelected.name"		: "Decrease phantom mode of selected tokens"
+		},
+		
+		"Settings" : {
+			"anchorpreventteleport" : {
+				"name"						: "Prevent anchored teleport",
+				"descrp"					: "Prevent anchored tokens from being teleported (using stairways)"
+			},
+			
+			"PhantomonDeath" : {
+				"name"						: "Phantom on death",
+				"descrp"					: "Shift NPC tokens into the phantom mode when dying"
+			}
+		}
+	}
+}

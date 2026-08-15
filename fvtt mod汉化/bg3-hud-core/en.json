@@ -1,0 +1,232 @@
+{
+  "bg3-hud-core": {
+    "Settings": {
+      "Theme": {
+        "Name": "Theme Settings",
+        "Label": "Configure Theme",
+        "Hint": "Customize colors, sizes, and appearance of the BG3 HUD",
+        "Title": "Theme Settings",
+        "General": "General",
+        "GeneralHint": "Parameters applied to all components below if not specified.",
+        "UseGeneralEverywhere": "Use General colors everywhere",
+        "UseGeneralEverywhereHint": "When enabled, only the General section is used. Disable to customize each section.",
+        "Normal": "Normal",
+        "Hover": "Hover",
+        "BorderColor": "Border Color",
+        "ContainerBackgroundColor": "Container Background",
+        "TertiaryBackgroundColor": "Tertiary Background",
+        "TextColor": "Text Color",
+        "TextSecondaryColor": "Secondary Text",
+        "ContainerBorderSize": "Container Border Size",
+        "ContainerBorderRadius": "Container Border Radius",
+        "TertiaryBorderSize": "Tertiary Border Size",
+        "TertiaryBorderRadius": "Tertiary Border Radius",
+        "PortraitSize": "Portrait Size",
+        "CellSize": "Cell Size",
+        "Portrait": "Portrait",
+        "Hotbar": "Hotbar",
+        "SubContainer": "Sub-Container",
+        "SubBackgroundColor": "Sub-Container Background",
+        "Cell": "Cell",
+        "DragbarColor": "Container Separator",
+        "WeaponSets": "Weapon Sets",
+        "SmallContainers": "Small Containers",
+        "SmallContainersHint": "Shared styling for control, views, filters, passives, and active effects containers.",
+        "Tooltip": "Tooltip",
+        "ComponentColor": "Component Color",
+        "GridCells": "Grid Cells",
+        "CellBorderWidth": "Cell Border Width",
+        "CellBorderRadius": "Cell Border Radius",
+        "GridGap": "Grid Gap",
+        "Save": "Save",
+        "Reset": "Reset to Defaults",
+        "ResetSuccess": "Theme reset to defaults"
+      },
+      "NormalOpacity": {
+        "Name": "Normal Opacity",
+        "Hint": "The opacity of the HUD when visible (0.1 to 1.0)"
+      },
+      "FadedOpacity": {
+        "Name": "Faded Opacity",
+        "Hint": "The opacity when the HUD fades out after inactivity (set to 1.0 to disable fading)"
+      },
+      "FadeOutDelay": {
+        "Name": "Fade Out Delay (seconds)",
+        "Hint": "How long to wait before fading out the HUD (1 to 30 seconds)"
+      },
+      "AutoScale": {
+        "Name": "Auto Scale",
+        "Hint": "Automatically scale the UI based on screen height"
+      },
+      "UIScale": {
+        "Name": "UI Scale",
+        "Hint": "Manual UI scale percentage (50% to 300%). Only used when Auto Scale is disabled."
+      },
+      "UIPosition": {
+        "Name": "UI Position",
+        "Hint": "Where to position the HUD on the screen",
+        "Center": "Center",
+        "Left": "Left",
+        "Right": "Right"
+      },
+      "PosPadding": {
+        "Name": "Position Padding",
+        "Hint": "Horizontal padding from screen edge (pixels)"
+      },
+      "PosPaddingBottom": {
+        "Name": "Bottom Padding",
+        "Hint": "Padding from the bottom of the screen (pixels)"
+      },
+      "PassivesContainerIconsPerRow": {
+        "Name": "Passive Feature Icons Per Row",
+        "Hint": "Number of Passive Feature icons displayed per row before wrapping"
+      },
+      "ActiveEffectsContainerIconsPerRow": {
+        "Name": "Active Effect Icons Per Row",
+        "Hint": "Number of Active Effect icons displayed per row before wrapping"
+      },
+      "ShowPassiveActiveEffects": {
+        "Name": "Show Passive Active Effects",
+        "Hint": "When enabled, displays permanent/passive active effects (no duration) in addition to temporary effects"
+      },
+	  "ShowFilters": {
+        "Name": "Show Filter Icons",
+        "Hint": "Display the spell slot and action type filter icons above the hotbar"
+      },
+      "ShowPortraitHPControls": {
+        "Name": "Show Portrait HP Controls",
+        "Hint": "Display the buttons to set HP to minimum (skull), maximum (heart), and the HP input field in the portrait UI"
+      },
+      "LayoutAppearance": {
+        "MenuTitle": "Layout & Appearance",
+        "MenuName": "Layout & Appearance",
+        "MenuLabel": "Layout & Appearance Settings",
+        "MenuHint": "Adjust opacity, scaling, positioning, and container density",
+        "OpacityLegend": "Opacity & Fading",
+        "ScalePositionLegend": "Scale & Position",
+        "ContainerConfigurationLegend": "Container Configuration"
+      },
+      "Appearance": {
+        "MenuTitle": "Appearance Settings",
+        "MenuName": "Appearance Settings",
+        "MenuLabel": "Appearance Settings",
+        "MenuHint": "Adjust opacity and fade timing for the HUD",
+        "Legend": "Appearance"
+      },
+      "Layout": {
+        "MenuTitle": "Layout & Position",
+        "MenuName": "Layout & Position",
+        "MenuLabel": "Layout & Position Settings",
+        "MenuHint": "Adjust scaling and positioning of the HUD",
+        "Legend": "Layout & Position"
+      },
+      "FoundryUI": {
+        "MenuTitle": "Foundry UI",
+        "MenuName": "Foundry UI",
+        "MenuLabel": "Foundry UI Settings",
+        "MenuHint": "Control macro bar visibility and tooltip timing",
+        "Legend": "Foundry UI"
+      },
+      "GMHotbar": {
+        "MenuTitle": "GM Hotbar",
+        "MenuName": "GM Hotbar",
+        "MenuLabel": "GM Hotbar Settings",
+        "MenuHint": "Configure GM hotbar visibility",
+        "Legend": "GM Hotbar"
+      },
+      "TargetSelector": {
+        "MenuTitle": "Target Selector",
+        "MenuName": "Target Selector",
+        "MenuLabel": "Target Selector Settings",
+        "MenuHint": "Configure BG3-style target selection for spells and abilities",
+        "Legend": "Target Selection",
+        "EnableName": "Enable Target Selector",
+        "EnableHint": "When enabled, clicking spells/abilities that need targets will prompt for target selection",
+        "SkipName": "Skip If Valid Target Exists",
+        "SkipHint": "Skip the target selector if you already have a valid target selected",
+        "RangeName": "Enforce Range Checking",
+        "RangeHint": "Prevent targeting tokens that are out of range",
+        "AutoSelfName": "Auto-Target Self",
+        "AutoSelfHint": "Automatically target yourself for self-targeting abilities",
+        "RangeIndicatorLegend": "Range Indicator",
+        "ShowRangeIndicatorsName": "Show Range Indicator",
+        "ShowRangeIndicatorsHint": "Display a visual indicator showing the range of the ability on the canvas",
+        "RangeShapeName": "Indicator Shape",
+        "RangeShapeHint": "Shape of the range indicator (circle or square)",
+        "RangeShapeCircle": "Circle",
+        "RangeShapeSquare": "Square",
+        "RangeAnimationName": "Indicator Animation",
+        "RangeAnimationHint": "Animation style for the range indicator",
+        "RangeAnimationPulse": "Pulse",
+        "RangeAnimationStatic": "Static",
+        "RangeLineWidthName": "Line Width",
+        "RangeLineWidthHint": "Thickness of the range indicator line",
+        "RangeLineWidthThin": "Thin (1px)",
+        "RangeLineWidthNormal": "Normal (2px)",
+        "RangeLineWidthThick": "Thick (3px)",
+        "RangeLineWidthExtraThick": "Extra Thick (4px)",
+        "RangeColorName": "Indicator Color",
+        "RangeColorHint": "Color of the range indicator (hex format)"
+      },
+      "PortraitData": {
+        "Title": "Portrait Data Configuration",
+        "MenuName": "Portrait Data",
+        "MenuLabel": "Configure Portrait Data",
+        "MenuHint": "Display data badges around the portrait (AC, Speed, Hero Points, etc.)",
+        "ShowName": "Show Portrait Data",
+        "ShowHint": "Display data badges around the character portrait",
+        "TopLeft": "Top Left",
+        "TopRight": "Top Right",
+        "MiddleLeft": "Middle Left",
+        "MiddleRight": "Middle Right",
+        "BottomLeft": "Bottom Left",
+        "BottomRight": "Bottom Right",
+        "Saved": "Portrait data configuration saved",
+        "WorldOverride": "Use World Config (All Players)",
+        "SyncToWorld": "Sync to World",
+        "SyncedToWorld": "Portrait data synced to world - all players will now use this configuration",
+        "WorldConfigActive": "Your GM has set a world config",
+        "UseMyOwnConfig": "Use my own config instead"
+      }
+    },
+    "Controls": {
+      "Lock": {
+        "Tooltip": "Lock Settings<br>(Right-click for options)",
+        "NoSettingsWarning": "Please right-click the lock button to select which settings to lock.",
+        "DeselectToken": "Deselecting Token",
+        "Opacity": "Opacity",
+        "DragDrop": "Drag & Drop"
+      }
+    },
+    "Tooltips": {
+      "InfoButton": "Character Info<br><small>Right-click for Initiative</small>",
+      "SwitchWeaponSet": "Click: Switch to weapon set {number}"
+    },
+    "TargetSelector": {
+      "Instructions": "Select {min}-{max} targets. Press {confirm} to confirm, {cancel} to cancel.",
+      "AdjustTargets": "Adjust targets with {plus}/{minus}",
+      "Activated": "Target selection active. Press {confirm} to confirm, {cancel} to cancel.",
+      "Confirm": "Confirm",
+      "Cancel": "Cancel",
+      "SelectedTargets": "Selected Targets",
+      "NoTargetsSelected": "No targets selected",
+      "RemoveTarget": "Remove Target",
+      "Unlimited": "unlimited",
+      "InvalidTarget": "Invalid target",
+      "NoActor": "Target has no actor",
+      "TokenNotVisible": "Target is not visible",
+      "SelfOnly": "Can only target self",
+      "CannotTargetSelf": "Cannot target self",
+      "MustBeEnemy": "Must target an enemy",
+      "MustBeAlly": "Must target an ally",
+      "MustBeCreature": "Must target a creature",
+      "OutOfRange": "Target is out of range",
+      "Flanked": "Flanked",
+      "MaxTargetsReached": "Maximum {max} targets reached",
+      "MinTargetsRequired": "Minimum {min} targets required",
+      "IncreaseMax": "Increase Max Targets",
+      "DecreaseMax": "Decrease Max Targets"
+    },
+    "MaxSelectionsReached": "Maximum of {max} selections reached"
+  }
+}

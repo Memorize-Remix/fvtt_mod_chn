@@ -1,0 +1,254 @@
+{
+	"module-credits": {
+		"title": "Module Management+",
+		"settings": {
+			"storePreviousOnPreset": {
+				"name": "加载预设时存储旧设置",
+				"hint": "启用该选项后，在激活预设或导入预设时将创建回滚。"
+			},
+			"keepPresetsRollbacks": {
+				"name": "要保留的旧设置数？",
+				"hint": "此设置表示可以在 0 到 10 之间进行的模组旧设置次数。如果该值设为 0，则会保持无限次存储。建议不要这样做，否则会导致数据冗余。"
+			},
+			"disableLockedModules": {
+				"name": "禁用锁定的模组?",
+				"hint": "此设置将禁用锁定模组的复选框。这样可以防止意外取消对锁定模组的选中。"
+			},
+			"hideLockedSettings": {
+				"name": "隐藏锁定设置",
+				"hint": "此设置将隐藏对玩家锁定的设置。"
+			},
+			"showNewChangelogsOnLoad": {
+				"name": "加载时显示新的更新日志",
+				"hint": "如果某个更新日志被标记为未读，并且启用了此设置，则会出现一个对话框，显示所有尚未标记为已读的更新日志。"
+			},
+			"bigPictureMode": {
+				"name": "大图形模式",
+				"hint": "启用此功能将把模组管理和配置设置窗口设置为FVTT窗口的全高。"
+			},
+			"showActiveModules": {
+				"name": "显示激活模组",
+				"hint": "启用后，侧边栏的设置选项卡中将显示激活模组列表。",
+				"choices": {
+					"hidden": "隐藏",
+					"button": "打开按钮",
+					"default": "核心默认"
+				}
+			},
+			"enableGlobalConflicts": {
+				"name": "启用全局冲突",
+				"hint": "启用此设置后，MM+ 将从公开的 Google 表中抓取冲突。使用此功能意味着 Google 会收到您的 IP 地址。如果您对此感到不适，请关闭此功能。"
+			},
+			"addGoogleSheetButton": {
+				"name": "添加 Google 电子表格",
+				"hint": "启用后，将在模组管理窗口中添加一个指向 google 电子表格的链接。"
+			},
+			"disableSyncPrompt": {
+				"name": "同步设置时禁用提示",
+				"hint": "这将防止用户收到要求他们确认是否同步设置的通知。相反，它会在没有提示的情况下强制设置。"
+			},
+			"autoPrefixModules": {
+				"name": "自动前缀模组",
+				"hint": "这将在模组标题前加上任何必要的模组标题。"
+			},
+			"smartLabels": {
+				"name": "智能标签",
+				"hint": "启用该功能后，模组前会出现一个箭头图标，表示该模组需要依赖于上面的模组。将鼠标悬停在该图标上将显示所有必需的模组。"
+			},
+			"smartPrefix": {
+				"name": "智能前缀",
+				"hint": "它会根据它认为最合适的方式为标题添加前缀。例如，带有library标志的模组将以 Library 作为前缀，而标题中带有 UI 字样的模组将以 UI 作为前缀。这可能无法正确地为模组添加前缀，你可以通过右键单击并指定一个覆盖名称来覆盖前缀。",
+				"prefixes": {
+					"library": "Library",
+					"maps": "Map",
+					"ui": "UI"
+				}
+			},
+			"dependencyDialogType": {
+				"name": "扩展模组依赖关系对话框类型",
+				"hint": "通过该选项，您可以选择在使用扩展模组依赖关系启用/禁用模块时使用的对话框类型。",
+				"choices": {
+					"prompt": "提示",
+					"confirm": "确认"
+				}
+			}
+		},
+		"dialog": {
+			"generic": {
+				"activeModules": "激活模组"
+			},
+			"titles": {
+				"export": "导出模组",
+				"import": "导入模组",
+				"presets": "管理预设"
+			},
+			"moduleManagement": {
+				"lockedModules": "锁定模组",
+				"rollback": "恢复先前的模组列表",
+				"dependencies": {
+					"requires": "需要",
+					"recommends": "建议",
+					"optional": "可选",
+					"headerTextEnable": "{title} 有 {number} 个可能不再需要的非激活依赖项。下面列出了它们。",
+					"headerTextDisable": "{title} 有 {number} 个可能不再需要的激活依赖项。下面列出了它们。",
+					"actionTextEnable": "启用所选模组？",
+					"actionTextDisable": "禁用所选模组？"
+				},
+				"buttons": {
+					"deactivateModules": "停用所有非锁定模组",
+					"deactivateModulesAlt": "按住 ctrl 键禁用所有模组",
+					"spreadsheet": "全局冲突电子表格"
+				},
+				"conflicts": {
+					"core": "核心",
+					"system": "系统",
+					"undefinedReason": "原因不详"
+				},
+				"contextMenu": {
+					"renameModule": "重命名",
+					"restoreModuleName": "恢复默认模组名称",
+					"lockModule": "锁定模组",
+					"unlockModule": "解锁模组",
+					"reportConflict": "报告冲突"
+				},
+				"tooltips": {
+					"managePresets": "管理预设",
+					"exportModules": "导出模组",
+					"importModules": "导入模组",
+					"moduleLocked": "停用模组时不会停用该模组。"
+				},
+				"tags": {
+					"socket": "模组使用 Socket API",
+					"library": "是一个Library模组",
+					"authors": "作者(点击查看)",
+					"url": "查看网址",
+					"readme": "查看说明",
+					"changelog": "查看更新日志",
+					"attributions": "查看贡献",
+					"issues": "报告/查看错误",
+					"bugReporter": "使用 🐛 Bug Reporter报告错误"
+				}
+			},
+			"clientSettings": {
+				"syncSetting": {
+					"askPermission": "允许GM为您设置以下设置吗？",
+					"sendToAll": "将此设置发送给所有其他用户？"
+				},
+				"tooltips": {
+					"worldSetting": "世界设置",
+					"clientSetting": "客户端设置",
+					"syncSetting": "同步设置",
+					"lockSetting": "锁定设置",
+					"unlockSetting": "解锁设置"
+				}
+			},
+			"preview": {
+				"search": "搜索更新日志",
+				"collapseModeLabel": "折叠侧边栏",
+				"navLabel": "目录",
+				"markAsSeen": "标记为已读",
+				"previousPage": "上一页",
+				"nextPage": "下一页"
+			},
+			"presets": {
+				"title": "预设名称",
+				"tooltips": {
+					"info": "信息",
+					"update": "更新",
+					"delete": "删除",
+					"activate": "激活"
+				},
+				"buttons": {
+					"create": "创建新预设"
+				},
+				"info": {
+					"description": "<strong>{name}</strong>预设中的模组。",
+					"installedModules": "已安装的模组",
+					"uninstalledModules": "未安装的模组"
+				},
+				"update": {
+					"description": "将此预设更新为以下模组？"
+				},
+				"delete": {
+					"description": "您确定要删除标有<strong>{name}</strong>的预设吗？",
+					"warning": "此操作<strong>无法</strong>撤销！</div>"
+				},
+				"activate": {
+					"description": "该预设将启用以下模组？"
+				},
+				"create": {
+					"title": "创建新预设",
+					"placeholder": "预设标题",
+					"notification": {
+						"noTitleError": "请输入预设标题。"
+					}
+				}
+			},
+			"export": {
+				"title": "导出激活模组！",
+				"bugsUrl": "Bugs URL",
+				"notification": {
+					"copied": "激活模组列表已复制到剪贴板！"
+				},
+				"buttons": {
+					"copy": "复制",
+					"export": "导出"
+				}
+			},
+			"import": {
+				"tidyUI": {
+					"title": "导入类型为 TidyUI",
+					"message": "导入 TidyUI 文件时，将无法导入客户端或世界设置。"
+				},
+				"table": {
+					"moduleTitle": "模组标题",
+					"client": "客户端",
+					"world": "世界"
+				},
+				"notInstalled": "模组未安装",
+				"buttons": {
+					"keep": "保持当前模组激活",
+					"import": "导入"
+				}
+			},
+			"bugReporter": {
+				"selectLabel": "选择冲突包*",
+				"optGroup": {
+					"core": "核心",
+					"system": "系统",
+					"modules": "模组"
+				},
+				"toggle": {
+					"preview": "预览",
+					"write": "写入"
+				}
+			}
+		},
+		"lib-themer": {
+			"cssTidyMMW": {
+				"name": "整洁模组管理窗口",
+				"hint": "该样式表旨在让模组管理窗口看起来更现代、更简洁。",
+				"settings": {
+					"cssTidyMMWAltCheckbox": {
+						"name": "替代复选框样式",
+						"hint": "Mouse0270 个人认为，这将使复选框更简洁、更现代。"
+					}
+				}
+			}
+		},
+		"migration": {
+			"v204": {
+				"starting": "迁移锁定设置，请稍候。",
+				"complete": "迁移至 v2.0.3 已完成，需要重新加载页面。"
+			},
+			"v212": {
+				"enableGlobalConflicts": "您是否愿意启用全局冲突？",
+				"googleIPWarning": "请注意，MM+ 将从公开的 Google 表中抓取冲突。使用此功能意味着 Google 将收到您的 IP 地址。如果您对此感到不适，请不要启用此功能。",
+				"developersAreFriends": "全局冲突并不是追踪问题的准确方法，而是为了告知您可能存在的问题。通过全局冲突提供的问题可能已经过时。请不要因为 MM+ 提供的信息而骚扰开发人员。"
+			},
+			"v214": {
+				"smartLabels": "将自动前缀模组迁移到智能标签。这将把智能标签设置为之前的自动前缀设置。您可以在设置窗口中更改此设置。"
+			}
+		}
+	}
+}

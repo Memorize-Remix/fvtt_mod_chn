@@ -1,0 +1,47 @@
+
+	"DF-SCENE-ENHANCE": {
+		"errorLibWrapperMissing": "'DF Scene Enhancements'需要 'libWrapper' 模组。请安装并激活 'libWrapper'。",
+		"Thumbnail": {
+			"Label": "预览图片覆盖",
+			"Hint": "缩略图路径",
+			"Button": "浏览文件"
+		},
+		"Nav": {
+			"NavigateMenuItem": "导航",
+			"SettingOnClick": "点击场景时导航",
+			"SettingOnClickHint": "当在侧边栏点击场景时，将导航到该场景（对玩家始终为true）。在下次场景更改时更新。",
+			"SettingOnClickPC": "为玩家启用场景标签",
+			"SettingOnClickPCHint": "（需要刷新）允许玩家使用场景标签进行导航。",
+			"SettingOnClickJournal": "点击日志中的场景引用时导航",
+			"SettingOnClickJournalHint": "如果日志条目包含场景链接，点击它将允许您导航到该场景。",
+			"SettingOnClickJournalOnlyOne": "如果只有一个选项，立即执行场景链接",
+			"SettingOnClickJournalOnlyOneHint": "如果只有一个选项可用，不显示对话框，而是立即执行操作。",
+			"SettingRealName": "在导航栏中为GM显示完整名称",
+			"SettingRealNameHint": "覆盖场景导航栏，为GM用户显示场景的完整名称。",
+			"SettingShowTitle": "在悬停时显示场景名称的导航提示",
+			"SettingShowTitleHint": "当您悬停在导航栏中的按钮上时，显示场景名称的提示。如果启用了\"显示完整名称\"并设置了导航名称，则将显示该名称。",
+			"Tooltip_PC": "导航名称: ",
+			"ContextOptions": {
+				"SetView": "设置视图位置",
+				"ConfigGrid": "配置网格",
+				"SetViewConfirmation": "已更新场景的初始视图"
+			}
+		},
+		"Dialog": {
+			"JournalTitle": "场景导航: ",
+			"JournalMessage": "您希望如何打开此场景？",
+			"JournalNavigate": "导航",
+			"JournalJournal": "日志",
+			"JournalConfig": "配置"
+		},
+		"Ratio": {
+			"Denominator": "分母",
+			"Numerator": "分子",
+			"LockRatio": "锁定比例",
+			"SizeRatio": "尺寸比例",
+			"ApplyRatio": "将自定义比例应用于宽度/高度",
+			"Scale": "缩放",
+			"ApplyScale": "将宽度/高度乘以缩放比例"
+		}
+	}
+}

@@ -1,0 +1,169 @@
+
+  "challengeTracker": {
+    "labels": {
+      "title": "挑战追踪",
+      "buttonTitle": "挑战追踪",
+      "showTracker": "点击显示",
+      "hideTracker": "点击隐藏",
+      "yes": "是",
+      "no": "否",
+      "deleteAllDialog": {
+        "title": "删除所有挑战追踪",
+        "body": "确定要删除所有挑战追踪吗？"
+      },
+      "form": {
+        "open": "打开",
+        "openTooltip": "打开挑战追踪",
+        "copy": "复制",
+        "copyTooltip": "复制挑战追踪",
+        "edit": "编辑",
+        "editTooltip": "编辑挑战追踪",
+        "delete": "删除",
+        "deleteTooltip": "删除挑战追踪",
+        "moveUpTooltip": "将挑战追踪在列表中上移",
+        "moveDownTooltip": "将挑战追踪在列表中下移",
+        "new": "新建",
+        "newTooltip": "创建新的挑战追踪",
+        "title": "挑战追踪列表"
+      },
+      "editForm": {
+        "save": "保存并关闭",
+        "title": "编辑挑战追踪",
+        "trackerOptions": {
+          "mainTitle": "主要选项",
+          "title": "标题",
+          "titleTooltip": "挑战追踪的标题",
+          "scroll": "滚轮控制",
+          "scrollTooltip": "使用滚轮增减片段数量",
+          "size": "尺寸",
+          "sizeTooltip": "挑战追踪的像素尺寸",
+          "show": "向他人显示",
+          "showTooltip": "向其他玩家显示挑战追踪",
+          "windowed": "窗口模式",
+          "windowedTooltip": "在窗口中显示挑战追踪",
+          "outerTitle": "外圈轨道",
+          "outerTotal": "总片段数",
+          "outerTotalTooltip": "外圈轨道的总片段数量",
+          "outerCurrent": "当前片段数",
+          "outerCurrentTooltip": "外圈轨道当前设置的片段数量",
+          "outerBackgroundColor": "未激活颜色",
+          "outerBackgroundColorTooltip": "外圈轨道未激活片段的十六进制颜色",
+          "outerColor": "激活颜色",
+          "outerColorTooltip": "外圈轨道激活片段的十六进制颜色",
+          "innerTitle": "内圈轨道",
+          "innerTotal": "总片段数",
+          "innerTotalTooltip": "内圈轨道的总片段数量",
+          "innerCurrent": "当前片段数",
+          "innerCurrentTooltip": "内圈轨道当前设置的片段数量",
+          "innerBackgroundColor": "未激活颜色",
+          "innerBackgroundColorTooltip": "内圈轨道未激活片段的十六进制颜色",
+          "innerColor": "激活颜色",
+          "innerColorTooltip": "内圈轨道激活片段的十六进制颜色",
+          "imageTitle": "图像设置",
+          "backgroundImage": "背景图像",
+          "backgroundImageTooltip": "挑战追踪的背景图像",
+          "foregroundImage": "激活图像",
+          "foregroundImageTooltip": "内外圈轨道激活片段的图像",
+          "frameTitle": "边框设置",
+          "frameWidth": "宽度",
+          "frameWidthTooltip": "边框的宽度",
+          "frameColor": "颜色",
+          "frameColorTooltip": "边框的十六进制颜色"
+        }
+      },
+      "fuzzyQuery": "你要找的是'{fuzzyResult}'吗？"
+    },
+    "errors": {
+      "doesNotExist": "挑战追踪'{value}'不存在",
+      "notAllowed": "用户无权执行'{function}'功能",
+      "notOwned": "挑战追踪'{value}'不属于该用户",
+      "notSupplied": "函数'{function}'缺少参数'{parameter}'",
+      "notValid": "参数'{parameter}'无效"
+    },
+    "settings": {
+      "allowShow": {
+        "name": "允许向他人显示",
+        "hint": "GM设置：允许此角色(及以上)的用户向他人显示挑战追踪(需要重新加载)",
+        "choices": {
+          "4": "GM",
+          "3": "GM助手",
+          "2": "受信玩家",
+          "1": "普通玩家"
+        }
+      },
+      "buttonLocation": {
+        "name": "按钮位置",
+        "hint": "GM设置：设置挑战追踪按钮的位置(需要重新加载)",
+        "choices": {
+          "playerList": "玩家列表",
+          "tokens": "Token控件",
+          "templates": "测量控件",
+          "tiles": "图块控件",
+          "drawing": "绘图控件",
+          "walls": "墙壁控件",
+          "lighting": "灯光控件",
+          "sounds": "环境音控件",
+          "regions": "区域控件",
+          "notes": "日志控件",
+          "none": "不显示"
+        }
+      },
+      "debug": {
+        "name": "调试模式",
+        "hint": "在控制台启用调试日志"
+      },
+      "displayButton": {
+        "name": "显示按钮",
+        "hint": "GM设置：向此角色及以上的用户显示挑战追踪按钮(需要重新加载)"
+      },
+      "frameColor": {
+        "name": "边框颜色",
+        "hint": "设置默认边框颜色",
+        "label": "颜色选择器"
+      },
+      "frameWidth": {
+        "name": "边框宽度",
+        "hint": "设置边框宽度",
+        "choices": {
+          "none": "无边框",
+          "extraThin": "极细",
+          "thin": "细",
+          "medium": "中等",
+          "thick": "粗"
+        }
+      },
+      "innerBackgroundColor": {
+        "name": "内圈背景色",
+        "hint": "设置内圈轨道默认背景色",
+        "label": "颜色选择器"
+      },
+      "innerColor": {
+        "name": "内圈颜色",
+        "hint": "设置内圈轨道默认颜色",
+        "label": "颜色选择器"
+      },
+      "outerBackgroundColor": {
+        "name": "外圈背景色",
+        "hint": "设置外圈轨道默认背景色",
+        "label": "颜色选择器"
+      },
+      "outerColor": {
+        "name": "外圈颜色",
+        "hint": "设置外圈轨道默认颜色",
+        "label": "颜色选择器"
+      },
+      "scroll": {
+        "name": "滚轮控制",
+        "hint": "使用滚轮增减片段数量"
+      },
+      "size": {
+        "name": "尺寸",
+        "hint": "设置挑战追踪的默认像素尺寸"
+      },
+      "windowed": {
+        "name": "窗口模式",
+        "hint": "默认在窗口中显示挑战追踪"
+      }
+    }
+  }
+}

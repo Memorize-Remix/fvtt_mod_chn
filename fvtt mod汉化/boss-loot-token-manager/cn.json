@@ -1,0 +1,64 @@
+
+  "boss-loot-token-manager": {
+    "ui": {
+      "title": "Boss Loot Token管理器",
+      "previewHint": "选择图片进行预览",
+	  "noSearchResults": "没有找到结果，请重新输入搜索尝试。",
+	  "filterCount": "找到 {count} 个资源",
+      "previewPromo": "查看我们的<a href=\"https://www.foundryvtt.store/creators/boss-loot\" target=\"_blank\" rel=\"noopener noreferrer\">模组包</a>获取更多精美Token！",
+      "actorName": "拖入一个角色开始",
+      "dropActor": "拖入角色",
+      "button": {
+        "update": "更新Token",
+        "rollback": "回滚Token"
+      }
+    },
+    "notifications": {
+      "updateActor": {
+        "actorNeeded": "请在应用更改前将一个角色拖入界面。",
+        "imageNeeded": "请在应用更改前选择一张图片。",
+        "success": "'{actorName}' 的图片已成功更新。"
+      },
+      "rollbackActor": {
+        "actorNeeded": "当前没有选中的角色可供恢复！",
+        "imageNeeded": "未找到 '{actorName}' 的原始图片！",
+        "success": "'{actorName}' 的图片已成功恢复到原始状态。"
+      },
+      "onDrop": {
+        "actorNeeded": "此处只能拖放角色。请重试！"
+      }
+    },
+    "settings": {
+	  "loadDefaultPack": {
+		"name": "加载默认资源包",
+		"hint": "如果启用，将加载默认token资源包 (td00)。更改将在重启后生效。"
+	  },
+	  "duplicateCheck": {
+		"name": "重复检查模式",
+		"hint": "选择如何检测重复资源。如果禁用，所有资源将按原样包含。设置为“按文件大小”时，相同大小的文件将被视为重复，并保留优先级更高的资源包中的文件。设置为“按文件哈希”时，相同哈希的文件将被视为重复，并保留优先级更高的资源包中的文件。",
+		"choices": {
+		  "0": "禁用",
+		  "1": "按文件大小",
+		  "2": "按文件哈希"
+		}
+	  },
+      "dynamicTokenRing": {
+        "name": "禁用动态Token环",
+        "hint": "禁用通过Token管理器更新的Token的动态Token环。动态Token环可防止画布上的Token显示动画资源。"
+      },
+      "tokenArtworkPreview": {
+        "name": "Token图作品预览模式",
+        "hint": "选择如何在Token管理器界面中预览Token图作品。需要重新打开界面才能生效。",
+        "choices": {
+          "0": "仅动画",
+          "1": "仅静态",
+          "2": "动画和静态"
+        }
+      },
+      "tokenScale": {
+        "name": "Token缩放增加",
+        "hint": "通过Token管理器更新时，将当前Token缩放增加此数值。如果使用回滚Token选项，原始缩放将被恢复。"
+      }
+    }
+  }
+}

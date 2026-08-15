@@ -1,0 +1,56 @@
+{
+  "TYPES.RegionBehavior": {
+    "region-active-effects.statusEffect": "Status Effect",
+    "region-active-effects.statusEffectEvents": "Status Effect Events",
+    "region-active-effects.activeEffect": "Active Effect",
+    "region-active-effects.activeEffectEvents": "Active Effect Events"
+  },
+  "TYPES.RegionBehavior.pf2e": {
+    "region-active-effects.statusEffect": "Condition",
+    "region-active-effects.statusEffectEvents": "Condition Events",
+    "region-active-effects.activeEffect": "Effect",
+    "region-active-effects.activeEffectEvents": "Effect Events"
+  },
+  "RAE.ACTIONS": {
+    "add.label": "Add",
+    "resetDuration.label": "Reset Duration",
+    "enable.label": "Enable",
+    "disable.label": "Disable",
+    "delete.label": "Delete"
+  },
+  "RAE.TYPES.statusEffect": {
+    "FIELDS.statusId.label": "Status",
+    "FIELDS.statusId.hint": "The status effect to apply when one of the events occurs.",
+    "FIELDS.overlay.label": "Overlay",
+    "FIELDS.overlay.hint": "Display the status effect as an overlay."
+  },
+  "RAE.TYPES.statusEffectEvents": {
+    "FIELDS.action.choices.toggle": "Toggle",
+    "FIELDS.action.choices.apply": "Apply",
+    "FIELDS.action.choices.remove": "Remove",
+    "FIELDS.action.label": "Action",
+    "FIELDS.action.hint": "What to do with the status effect."
+  },
+  "RAE.TYPES.activeEffect": {
+    "FIELDS.uuid.label": "Active Effect",
+    "FIELDS.uuid.hint": "The Active Effect to use when a token enters the Region.",
+    "FIELDS.disable.label": "Disable Effect",
+    "FIELDS.disable.hint": "Disable the active effect when leaving the Region instead of deleting it."
+  },
+  "RAE.TYPES.activeEffectEvents": {
+    "FIELDS.action.label": "Action",
+    "FIELDS.action.hint": "What to do with an active effect.",
+    "FIELDS.uuid.label": "Active Effect",
+    "FIELDS.uuid.hint": "The Active Effect to add or reset duration.",
+    "FIELDS.name.label": "Effect Name",
+    "FIELDS.name.hint": "The name of the active effect to enable/disable/delete."
+  },
+  "RAE.TYPES.pf2e-effect": {
+    "FIELDS.uuid.label": "Effect",
+    "FIELDS.uuid.hint": "The Effect to use when a token enters the Region."
+  },
+  "RAE.TYPES.pf2e-effectEvents": {
+    "FIELDS.action.label": "Action",
+    "FIELDS.action.hint": "What to do with an effect."
+  }
+}

@@ -1,0 +1,64 @@
+{
+    "clock-works.clocks": "Clocks",
+    "clock-works.settings": {
+        "default-ownership": {
+            "name": "Default Ownership",
+            "hint": "Decides the default ownership level of any newly created clock. \"Limited\" means the user may see the clock but its name is hidden, \"Observer\" allows seeing the name as well, \"Owner\" allows use of the increase and decrease buttons and editing the clocks properties."
+        },
+        "default-color-empty": {
+            "name": "Default Empty Color",
+            "hint": "The default color used for empty segments on newly created clocks."
+        },
+        "default-color-filled": {
+            "name": "Default Filled Color",
+            "hint": "The default color used for filled segments on newly created clocks."
+        },
+        "default-color-frame": {
+            "name": "Default Frame Color",
+            "hint": "The default color used for the frame on newly created clocks."
+        }
+    },
+    "clock-works.edit-form": {
+        "title": "Edit Clock",
+        "save": "Save and Close",
+        "default-name": "New Clock",
+        "fields": {
+            "name": "Name",
+            "name-tooltip": "Name / topic of the Clock",
+            "size": "Size",
+            "size-tooltip": "Total number of segments on the clock",
+            "filled": "Filled segments",
+            "filled-tooltip": "Numer of filled segments on the clock",
+            "imagebg": "Background image",
+            "imagebg-tooltip": "Background image of the clock",
+            "imagefg": "Foreground image",
+            "imagefg-tooltip": "Forgeground image of the clock",
+            "colorempty": "Empty color",
+            "colorempty-tooltip": "Color for empty segments on the clock",
+            "colorfilled": "Filled color",
+            "colorfilled-tooltip": "Color for filled segments on the clock",
+            "colorframe": "Frame color",
+            "colorframe-tooltip": "Color of the clock frame"
+        },
+        "permission-hint": "Configure access to this specific Clock, allowing each User to be assigned a different level of visibility. \"Limited\" means the user may see the clock but its name is hidden, \"Observer\" allows seeing the name as well, \"Owner\" allows use of the increase and decrease buttons and editing the clocks properties."
+    },
+    "clock-works.folders": {
+		"name": "Folder Name",
+        "color": "Folder Color",
+        "default-name": "New Folder"
+    },
+    "clock-works.sidebar": {
+        "create-folder": "Create Folder",
+        "edit-folder": "Edit Folder",
+        "delete-folder": "Delete Folder & Contents",
+        "create": "Create Clock",
+        "show": "Show to Players",
+        "edit": "Edit",
+        "duplicate": "Duplicate",
+        "delete": "Delete",
+        "postfix-copy": " (Copy)",
+        "obfuscated": "Unknown Clock #{index}",
+        "increment": "Increment",
+        "decrement": "Decrement"
+    }
+}

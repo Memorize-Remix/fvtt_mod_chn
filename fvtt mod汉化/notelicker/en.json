@@ -1,0 +1,53 @@
+{
+  "NoteLicker": {
+    "ModuleName": "Note Licker",
+    "Settings": {
+      "Reset": {
+        "Title": "Reset settings to default",
+        "Label": "Reset Note Licker Settings",
+        "Hint": "This will reset all of the module's settings back to their defaults."
+      },
+      "LogLevel": {
+        "Name": "Log Level",
+        "Hint": "The level of logs to place into the console.",
+        "debug": "DEBUG - Lots of details",
+        "info": "INFO - Informative messages",
+        "warn": "WARN - Warnings & warnings only",
+        "error": "ERROR - Errors only",
+        "off": "OFF"
+      },
+      "EnableDynamicIcons": {
+        "Name": "Enable dynamic note icons?",
+        "Hint": "This will dynamically update note icons to a small number/letter. e.g. '1a. Strange Door' will become a circle icon with '1a' in it"
+      },
+      "EnableAnchorLinks": {
+        "Name": "Enable anchor links?",
+        "Hint": "Scene pins will be able to jump to anchors in the journals. Not currently compatible with Monks Enhanced Journals."
+      },
+      "EnableIconBorderRemoval": {
+        "Name": "Enable icon border removal?",
+        "Hint": "This will remove the border around icons, similar to backgroundless-pins module."
+      },
+      "IconUploadDir": {
+        "Name": "Icon upload directory",
+        "Hint": "The directory to upload icons to."
+      }
+    },
+    "Dialogs": {
+      "ResetSettings": {
+        "Title": "Note Licker | Reset Settings",
+        "Content": "Are you sure you want to reset all of the Note Licker module settings' to their defaults?",
+        "Confirm": "Reset Module Settings",
+        "Cancel": "Cancel"
+      }
+    },
+    "Chat": {},
+    "Notifications": {},
+    "Labels": {
+      "ShowIconBorder": "Show icon border?",
+      "DisableAutoIcon": "Disable NoteLicker auto icon generation?",
+      "JumpToAnchor": "Jump to Page Anchor"
+    },
+    "Folders": {}
+  }
+}

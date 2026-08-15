@@ -1,0 +1,24 @@
+{
+	"STAT_TRACKER": {
+		"common": {
+			"Table": "Table",
+			"Subtable": "Subtable",
+			"Users": "Users",
+			"DataVisibility": "Data Visibility"
+		},
+		"settings": {
+			"autoTrackRolls": {
+				"name": "Roll Auto-Tracking",
+				"hint": "Whether or not the module should automatically add rolls made in the chat to the database. This is useful if the system you're using has implemented an integration with the module, or if you only want macros to handle the database additions."
+			},
+			"globalAPI": {
+				"name": "Global API",
+				"hint": "Whether or not the module provides a global interface for interacting with the module's backend. This is convenient for macros and using the dev console."
+			},
+			"statsSidebarTab": {
+				"name": "Stats Sidebar Tab",
+				"hint": "Adds a custom sidebar tab to view and control the module with ease. With the sidebar tab disabled the only way to control the module is via the public API."
+			}
+		}
+	}
+}

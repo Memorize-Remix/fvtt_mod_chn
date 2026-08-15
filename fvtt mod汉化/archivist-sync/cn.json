@@ -1,0 +1,328 @@
+
+  "ARCHIVIST_SYNC": {
+    "Settings": {
+      "ApiKey": {
+        "Name": "API 密钥",
+        "Hint": "输入你的 API 密钥以通过 Archivist API 服务进行身份验证"
+      },
+      "SemanticMappingEnabled": {
+        "Name": "启用语义字段映射",
+        "Hint": "使用小型本地嵌入模型改进字段检测"
+      },
+      "SelectedWorld": {
+        "Name": "选中的世界 ID",
+        "Hint": "从 Archivist API 获取的当前选中世界的 ID"
+      },
+      "SelectedWorldName": {
+        "Name": "选中的世界",
+        "Hint": "从 Archivist API 获取的当前选中世界的名称"
+      },
+      "ChatHistory": {
+        "Name": "聊天历史",
+        "Hint": "Archivist 聊天消息历史的内部存储"
+      },
+      "ChatHistoryEnabled": {
+        "Name": "保留聊天历史",
+        "Hint": "启用后，你的聊天会话将按用户和战役保存和恢复。禁用则每次重新开始。"
+      },
+	  "ChatVisibility": {
+        "Name": "聊天可见性",
+        "Hint": "谁应该可以看到Archivist聊天侧边栏标签？",
+        "Options": {
+            "All": "所有人",
+            "GMOnly": "仅GM",
+            "None": "无人"
+        }
+      },
+		"ChatGmPermissions": {
+			"Name": "允许在聊天中使用GM私人日志上下文",
+			"Hint": "启用后，GM的聊天请求会在检索时包含私人日志上下文。非GM用户永远不会发送私人上下文。"
+		},
+	  "ChatGmPermissions": {
+        "Name": "Allow GM private journal context in chat",
+        "Hint": "When enabled, GM chat requests include private journal context during retrieval. Non-GM users never send private context."
+      },
+      "MappingOverride": {
+        "Name": "映射覆盖 (JSON)",
+        "Hint": "用于自定义导入器字段映射的可选 JSON 规则"
+      },
+      "WorldInitialized": {
+        "Name": "世界已初始化",
+        "Hint": "指示此 FVTT 世界是否已使用 Archivist 设置的内部标志"
+      },
+      "AutoSort": {
+        "Name": "自动排序链接内容",
+        "Hint": "在面板中自动按字母顺序排序链接的角色、物品、派系和地点"
+      },
+      "HideByOwnership": {
+        "Name": "按权限隐藏",
+        "Hint": "非 GM 用户只能看到他们有权限查看的链接内容"
+      },
+      "OrganizeFolders": {
+        "Name": "在文件夹中整理",
+        "Hint": "自动将导入的 Archivist 内容整理到专用文件夹中（Archivist - 玩家角色、NPC、物品等）"
+      },
+      "MaxLocationDepth": {
+        "Name": "最大地点树深度",
+        "Hint": "分层地点树的最大深度 (1-10)"
+      },
+      "RealtimeSync": {
+        "Name": "实时同步",
+        "Hint": "在 FVTT 中创建、更新或删除文档时自动同步到 Archivist"
+      },
+      "ImportConfig": {
+        "Name": "导入配置",
+        "Hint": "用于导入/导出字段映射和过滤器的内部 JSON 配置"
+      },
+      "SemanticMapping": {
+        "Name": "语义字段映射",
+        "Hint": "在导入期间使用 AI 改进自动字段检测（实验性）"
+      },
+      "ProjectDescriptions": {
+        "Name": "项目描述",
+        "Hint": "启用后，Archivist将在角色、物品和场景上找到最可能的描述字段，并在任何现有值下方附加一个单独的Archivist部分。"
+      },
+      "ProjectionLoopGuardMs": {
+        "Name": "投影：循环保护（毫秒）",
+        "Hint": "已弃用"
+      }
+    },
+    "chat": {
+      "copied": "已复制到剪贴板",
+      "title": "Archivist 聊天",
+      "placeholder": "询问关于你的战役的问题...",
+      "clear": "清空聊天",
+      "clearConfirm": "这将删除你在此世界的本地聊天历史。继续吗？",
+      "streaming": "流式传输中...",
+      "stop": "停止",
+      "me": "我",
+      "assistant": "",
+      "noWorld": "请先选择一个 Archivist 世界。",
+      "noApi": "请在模组设置中配置你的 API 密钥。",
+      "notInitialized": "此 FVTT 世界尚未使用 Archivist 初始化。",
+      "error": "聊天错误"
+    },
+    "Menu": {
+      "UpdateApiKey": {
+        "Name": "更新 API 密钥",
+        "Label": "更新 API 密钥",
+        "Hint": "安全地更新你的 Archivist API 密钥",
+        "Title": "更新 API 密钥",
+        "Description": "在下方输入你的新 Archivist API 密钥。这将替换你当前的密钥。",
+        "Placeholder": "在此处粘贴你的新 API 密钥...",
+        "Update": "更新",
+        "Cancel": "取消",
+        "Success": "API 密钥更新成功",
+        "Empty": "API 密钥不能为空"
+      },
+      "RunSetup": {
+        "Name": "再次运行世界设置",
+        "Label": "再次运行世界设置",
+        "Hint": "重置初始化并重新启动 Archivist 世界设置向导。",
+        "Title": "再次运行世界设置",
+        "Confirm": "这将重置初始化并重新加载 FVTT 以再次运行设置。继续吗？"
+      },
+      "AskChat": {
+        "Name": "Archivist 聊天",
+        "Label": "Archivist 聊天",
+        "Hint": "使用 RAG 询问关于你的战役的问题"
+      },
+      "Documentation": {
+        "Name": "文档",
+        "Label": "文档",
+        "Hint": "查看 Archivist Sync 文档和用户指南",
+        "Title": "Archivist Sync 文档"
+      }
+    },
+    "dialog": {},
+    "Dialog": {
+      "SyncOptions": {
+        "Label": "",
+        "title": "",
+        "Title": ""
+      }
+    },
+    "tabs": {
+      "world": "设置",
+      "importer": "导入器",
+      "characters": "角色",
+      "factions": "派系",
+      "locations": "地点"
+    },
+    "labels": {
+      "apiStatus": "API 状态",
+      "apiKey": "API 密钥",
+      "selectWorld": "选择世界",
+      "currentSelection": "当前选择",
+      "foundryWorld": "当前 FVTT 世界",
+      "archivistWorld": "Archivist 世界数据",
+      "importer": "导入器向导",
+      "importPreview": "导入预览",
+      "thresholdA": "自动导入阈值 (A)",
+      "thresholdB": "需要审查阈值 (B)",
+      "samplePreview": "示例预览",
+      "syncTarget": "同步目标",
+      "title": "标题",
+      "description": "描述",
+      "lastUpdated": "最后更新",
+      "createdAt": "创建于",
+      "characterCount": "角色数量",
+      "charactersAndNpcs": "角色与 NPC",
+      "playerCharacters": "玩家角色",
+      "npcs": "NPC",
+      "factions": "派系",
+      "locations": "地点",
+      "items": "物品",
+      "recaps": "战报",
+      "mappingOverride": "映射覆盖 (JSON)",
+      "importProgress": "导入进度"
+    },
+    "status": {
+      "connected": "已连接",
+      "notConfigured": "未配置"
+    },
+    "buttons": {
+      "syncing": "同步中...",
+      "syncWorlds": "刷新",
+      "saveSelection": "保存选择",
+      "syncTitle": "同步标题到 Archivist",
+      "syncFromFoundry": "→ 同步到 Archivist",
+      "syncFromArchivist": "← 从 Archivist 同步",
+      "syncCharacters": "同步所有角色",
+      "map": "映射",
+      "pushToArchivist": "推送到 Archivist",
+      "pullFromArchivist": "从 Archivist 拉取",
+      "loadData": "加载数据",
+      "runImport": "运行导入",
+      "createWorld": "创建战役",
+      "loadMapping": "加载",
+      "saveMapping": "保存",
+      "save": "保存"
+    },
+    "options": {
+      "selectWorld": "-- 选择一个世界 --"
+    },
+    "hints": {
+      "configureApi": "请先在模组设置中配置你的 API 密钥。"
+    },
+    "help": {
+      "mappingOverride": "高级：提供 JSON 以按实体覆盖导入器映射。结构：{\n  \"byUuid\": { \"<Foundry UUID>\": { include?: boolean, targetType?: \"Character|Faction|Location|Item|Note\", characterType?: \"PC|NPC\", fieldPaths?: { <field>: '$.<path>' } } },\n  \"byKey\": { \"<kind|subtype|folderName>\": { ...相同字段... } }\n}\n使用 fieldPaths 强制赋值（例如 { imageUrl: '$.images' }）。"
+    },
+    "warnings": {
+      "apiNotConfigured": "请先在模组设置中配置你的 API 密钥。",
+      "selectWorldFirst": "请先选择一个 Archivist 世界。",
+      "selectWorld": "请在保存前从下拉列表中选择一个世界。",
+      "noWorldsFound": "未找到 Archivist 世界。在继续之前创建一个世界。",
+      "noActorsToSync": "在此世界中未找到要同步的角色或 NPC。"
+    },
+    "messages": {
+      "worldsLoaded": "从 Archivist API 成功加载世界",
+      "worldSaved": "世界选择保存成功",
+      "titleSynced": "世界标题同步成功",
+      "charactersSynced": "角色同步成功",
+      "noActors": "在此世界中未找到角色或 NPC 角色。",
+      "noPlayerCharacters": "在此世界中未找到玩家角色。",
+      "noNpcs": "在此世界中未找到 NPC。",
+      "noActorsHint": "创建一些角色或 NPC 以开始。",
+      "loadingWorldData": "正在从 Archivist API 加载世界数据...",
+      "noFactions": "未找到派系（文件夹 'Archivist - Factions' 或已标记）。",
+      "noLocations": "未找到地点（文件夹 'Archivist - Locations' 或已标记）。",
+      "factionsSynced": "派系同步成功",
+      "locationsSynced": "地点同步成功",
+      "factionsPulled": "派系拉取成功",
+      "locationsPulled": "地点拉取成功",
+      "charactersPulled": "角色拉取成功",
+      "worldInitialized": "FVTT 世界已首次使用 Archivist 初始化",
+      "worldInitializedReset": "世界初始化已重置。重新加载以再次运行设置..."
+    },
+    "errors": {
+      "fetchFailed": "从 Archivist API 获取世界失败",
+      "worldNotFound": "选中的世界未找到",
+      "saveFailed": "保存世界选择失败",
+      "syncFailed": "同步数据失败",
+      "actorNotFound": "角色未找到",
+      "resetFailed": "重置世界设置失败",
+      "descriptionTooLong": "描述超过最大长度（10,000 个字符）",
+      "descriptionTooLongMultiple": "未能处理 {count} 个实体：{names}。它们的描述超过了 10,000 个字符的最大长度限制。请缩短描述后重试。"
+    },
+    "worldSetup": {
+      "title": "Archivist 世界设置",
+      "subtitle": "只需几步即可将你的 FVTT 世界连接到 Archivist",
+      "setupComplete": "世界设置成功完成！Archivist 功能现已可用。",
+      "setupFailed": "未能完成世界设置。请重试。",
+      "buttons": {
+        "start": "开始世界设置",
+        "previous": "上一步",
+        "next": "下一步",
+        "complete": "完成设置",
+        "cancel": "取消"
+      },
+      "step1": {
+        "title": "欢迎使用 Archivist",
+        "description": "此设置向导将帮助你将 FVTT 世界连接到 Archivist，启用强大的 AI 驱动战役管理功能。",
+        "nextSteps": "我们将执行以下操作：",
+        "step1": "配置你的 Archivist API 密钥",
+        "step2": "连接到你的 Archivist 战役世界",
+        "step3": "完成初始化过程",
+        "helpTitle": "需要帮助？",
+        "helpText": "如果你关闭此窗口，在你完成设置过程之前，重新加载 VTT 时会再次打开。",
+        "helpNote": "你稍后也可以从游戏设置菜单中的 Archivist Sync → 再次运行世界设置访问此设置向导。",
+        "viewDocs": "查看文档"
+      },
+      "step2": {
+        "title": "输入你的 API 密钥",
+        "description": "要连接到 Archivist，你需要提供你的 API 密钥。此密钥允许安全访问你的战役数据。",
+        "getApiKey": "如何获取你的 API 密钥",
+        "noKeyYet": "还没有 API 密钥？请按照以下步骤操作：",
+        "step1": "确保你有有效的 Archivist 订阅",
+        "step2": "登录你的 Archivist 账户",
+        "step3": "导航到 https://app.myarchivist.ai/profile",
+        "step4": "生成一个新的 API 密钥，并勾选所有权限",
+        "permissionsWarning": "重要：API 密钥权限",
+        "permissionsDetails": "生成 API 密钥时，请确保勾选所有可用权限。这确保 FVTT 模组可以访问所有必要功能。",
+        "enterKey": "输入你的 API 密钥",
+        "keyPlaceholder": "在此处粘贴你的 API 密钥...",
+        "validateKey": "验证密钥",
+        "validating": "验证中...",
+        "keyValid": "密钥有效！"
+      },
+      "step3": {
+        "title": "选择你的 Archivist 战役",
+        "description": "现在让我们连接到你的 Archivist 战役。点击“获取 Archivist 战役”以获取你可用的战役。",
+        "worldSelected": "完美！你的世界已选中并准备就绪。"
+      },
+      "step4": {
+        "title": "设置完成！",
+        "description": "恭喜！你的 FVTT 世界现已连接到 Archivist。",
+        "ready": "你已准备就绪！",
+        "features": "你现在可以访问这些 Archivist 功能：",
+        "feature1": "侧边栏中的 AI 驱动聊天助手",
+        "feature2": "角色和 NPC 同步",
+        "feature3": "派系和地点管理",
+        "feature4": "高级导入和映射工具"
+      },
+      "mapping": {
+        "title": "配置映射",
+        "description": "选择哪些 FVTT 字段映射到 Archivist 字段以及新导入内容将放置的位置。",
+        "saveAndContinue": "保存并继续"
+      },
+      "select": {
+        "title": "选择要同步的 FVTT 文档",
+        "description": "选择现有的 FVTT 文档以导出或链接。如果你仅从 Archivist 导入到 FVTT，可以跳过此步骤。",
+        "placeholder": "选择 UI 即将推出：玩家角色、NPC、物品、地点、派系及匹配建议。"
+      },
+      "summary": {
+        "title": "审查并开始同步",
+        "description": "我们将在 Archivist 目录中创建和链接日志条目，并执行选定的操作。",
+        "placeholder": "摘要 UI 即将推出，包含计数和详细信息。",
+        "beginSync": "开始同步"
+      }
+    },
+    "settings": {
+      "realtimeSync": {
+        "name": "实时同步（自动更新 Archivist）",
+        "hint": "启用后，你在 FVTT 中进行的更改（创建、编辑或删除角色、物品以及指定的派系/地点日志页面）会立即镜像到 Archivist。战报是只读的：创建战报页面不会在 Archivist 中创建游戏会话，删除战报页面也不会删除 Archivist 中的游戏会话。"
+      }
+    }
+  }
+}

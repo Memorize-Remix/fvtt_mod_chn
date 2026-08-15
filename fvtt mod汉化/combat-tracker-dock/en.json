@@ -1,0 +1,255 @@
+{
+    "combat-tracker-dock": {
+        "configureCarousel": "Configure Carousel",
+		"combat-dock": {
+            "title": "Combat Tracker Dock",
+            "close": "Close"
+        },
+        "contextMenu": {
+            "setAsCurrent": "Set as current combatant"
+        },
+        "combatConfig": {
+            "portraitResource": {
+                "label": "Portrait Bar",
+                "hint": "Resource bar that will be shown as a overlay on top of the portrait image, set to 'None' to disable."
+            }
+        },
+        "settings": {
+            "systems": {
+                "crucible": {
+                    "alwaysShowActions": {
+                        "name": "Show enemy action points",
+                        "hint": "If 'Show system icons' is enabled, show action points to players regardless of permissions. This will allow players to see how many total and remaining action points allies and enemies have. Focus points will still be hidden from players without permission to see them."
+                    }
+                }
+            },
+            "integration": "Integration",
+            "floatingSize": {
+                "name": "Floating Size",
+                "hint": "The size of the floating window. The larger the value, the larger the window will be. This will not affect the Horizontal (Docked) mode."
+            },
+            "portraitSize": {
+                "name": "Carousel Size",
+                "hint": "The maximum size of the portraits in the carousel. Note that the size of the portraits will be automatically reduced if there are too many combatants to fit on the screen.",
+                "choices": {
+                    "30px": "Tiny",
+                    "50px": "Small",
+                    "70px": "Normal",
+                    "90px": "Large",
+                    "110px": "X-Large",
+                    "150px": "XX-Large",
+                    "180px": "XXX-Large"
+                }
+            },
+			"lessButtons": {
+                "name": "Less Buttons",
+                "hint": "Show less buttons in the combat tracker. Hides Reset Initiative, Settings, Previous Round, Next Round."
+            },
+            "carouselStyle": {
+                "name": "Carousel Style",
+                "hint": "The way portraits are placed and move in the carousel: Carousel - Centered: The Active Combatant is at the Center of the carousel, the other combatants rotate around it.\n- Carousel - Left: The Active Combatant is at the Left of the carousel, the other combatants rotate around it.\n- No Carousel: Combatants are always displayed in initiative order and the active combatant moves around while combatants remain in the same position.",
+                "choices": {
+                    "centerCarousel": "Carousel - Centered",
+                    "leftCarousel": "Carousel - Left",
+                    "basic": "No Carousel"
+                }
+            },
+            "overflowStyle": {
+                "name": "Overflow Style",
+                "hint": "The way the carousel behaves when there are too many combatants to fit on the screen.",
+                "choices": {
+                    "hidden": "Hidden",
+                    "scroll": "Scroll",
+                    "autofit": "Shrink Portraits"
+                }
+            },
+            "portraitAspect": {
+                "name": "Portrait Aspect Ratio",
+                "hint": "The aspect ratio of the portrait. The image will be cropped if it doesn't match the aspect ratio of the portrait.",
+                "choices": {
+                    "square": "Square",
+                    "portrait": "Portrait",
+                    "long": "Long"
+                }
+            },
+            "alignment": { 
+                "name": "Alignment",
+                "hint": "The alignment of the carousel.",
+                "choices": {
+                    "left": "Left",
+                    "center": "Center",
+                    "right": "Right"
+                }
+            },
+            "direction": {
+                "name": "Position",
+                "hint": "The direction of the carousel.",
+                "choices": {
+                    "row": "Horizontal",
+                    "column": "Vertical",
+                    "rowDocked": "Horizontal (Docked)",
+                    "rowFloat": "Horizontal (Floating)",
+                    "columnFloat": "Vertical (Floating)"
+                }
+            },
+            "roundness": {
+                "name": "Roundness",
+                "hint": "The roundness of the portraits and tooltips.",
+                "choices": {
+                    "sharp": "Sharp",
+                    "soft": "Soft",
+                    "round": "Round"
+                }
+            },
+            "showDispositionColor": {
+                "name": "Show Disposition Color",
+                "hint": "Show the disposition in the bottom border of the portrait."
+            },
+            "hideDefeated": {
+                "name": "Hide Defeated",
+                "hint": "Hide defeated combatants from the carousel. They will still be visible in the regular combat tracker in the event that you need to interact with them."
+            },
+            "showInitiativeOnPortrait": {
+                "name": "Show Initiative on Portrait",
+                "hint": "Show the initiative value in the top left corner of the portrait. You can always see the initiative in the Tooltip!"
+            },
+            "portraitImageBorder": {
+                "name": "Player Border",
+                "hint": "Special border that will be shown for player characters. Leave blank to disable. If you wish to make a custom image, it's suggested you use the default one as reference for correct sizing."
+            },
+            "attributeColor": {
+                "name": "Attribute Color",
+                "hint": "The color of the main tracked attribute text and bar in the carousel. You can use any valid CSS color value (eg. #ff0000, red, rgba(255,0,0,0.5), etc)."
+            },
+            "attributeColor2": {
+                "name": "Secondary Attribute Color",
+                "hint": "The color of the secondary tracked attribute text and bar in the carousel. You can use any valid CSS color value (eg. #ff0000, red, rgba(255,0,0,0.5), etc)."
+            },
+            "attributeColorPortrait": {
+                "name": "Portrait Attribute Color",
+                "hint": "The color of the tracked attribute portrait overlay bar. You can use any valid CSS color value (eg. #ff0000, red, rgba(255,0,0,0.5), etc)."
+            },
+            "barsPlacement": {
+                "name": "Bars Placement",
+                "hint": "The placement of the tracked attributes bars in the carousel.",
+                "choices": {
+                    "left": "Left",
+                    "right": "Right",
+                    "twinned": "Twinned"
+                }
+            },
+            "attributeVisibility": {
+                "name": "Attribute Visibility",
+                "hint": "The visibility of the tracked attributes in the carousel.",
+                "choices": {
+                    "text": "Text Only",
+                    "bars": "Bars Only",
+                    "both": "Text & Bars"
+                }
+            },
+            "playerPlayerPermission": {
+                "name": "Always Show Player Info",
+                "hint": "Allow all players to see the tracked attributes, tooltip information and system icons of other players."
+            },
+            "displayDescriptions": {
+                "name": "Show Descriptions",
+                "hint": "Show active effects descriptions in the tooltip.",
+                "choices": {
+                    "none": "None",
+                    "owner": "Owner/Observer",
+                    "all": "Everyone"
+                }
+            },
+            "portraitImage": {
+                "name": "Portrait Image",
+                "hint": "Whether to use the Actor or Token image as the portrait.",
+                "choices": {
+                    "actor": "Actor",
+                    "token": "Token"
+                }
+            },
+            "portraitImageBackground": {
+                "name": "Portrait Background",
+                "hint": "The background image behind the portrait that will be visible if the portrait is transparent or doesn't fill the space."
+            },
+            "showSystemIcons": {
+                "name": "Show System Icons",
+                "hint": "Show the system icons below the tracked resource, tooltip or both. Keep in mind that this requires a system specific implementation and will only work on select systems.",
+                "choices": {
+                    "none": "None",
+                    "tooltip": "Tooltip",
+                    "resource": "Portrait",
+                    "both": "Both"
+                }
+            },
+			"hideConflictingUIs": {
+                "name": "Hide Conflicting UIs",
+                "hint": "Automatically hide other UIs docked to the top of the screen when the Combat Tracker Dock is visible to avoid UI clutter."
+            },
+            "displayName": {
+                "name": "Display Name",
+                "hint": "Whether or not to display the name of the combatant in the tooltip. 'Based on Token' will display the name only if the player can see the name of the token.",
+                "choices": {
+                    "default": "Always",
+                    "token": "Based on Token",
+                    "owner": "Based on Ownership"
+                }
+            },
+            "hideFirstRound": {
+                "name": "Hide Until First Turn",
+                "hint": "Hide enemies until they have taken their first turn in combat. (Requires LibWrapper to hide them in the core combat tracker as well.)"
+            },
+            "hideEnemyInitiative": {
+                "name": "Hide Enemy Initiative",
+                "hint": "Hide enemy initiative in the tooltip and portrait."
+            },
+            "attributesMenu": {
+                "name": "Tooltip Attributes",
+                "label": "Configure Attributes",
+                "hint": "Configure custom attributes to show in the tooltip.",
+                "reset": "Reset to Default",
+                "resetWarning": "Are you sure you want to reset the attributes to their default values?",
+                "form": {
+                    "attr": {
+                        "name": "Attribute",
+                        "choose": "Choose Attribute"
+                    },
+                    "icon": {
+                        "name": "Icon"
+                    },
+                    "units": {
+                        "name": "Units"
+                    },
+                    "save": "Save & Close",
+                    "add": "Add Attribute",
+                    "reset": "Reset Defaults",
+                    "notes": "Leave the Attribute field blank to remove it."
+                }
+            },
+            "resource": {
+                "name": "Secondary Resource",
+                "hint": "The secondary resource bar. You should set this in the combat configuration. This option is here for some systems and experienced users to tweak manually."
+            },
+            "portraitResource": {
+                "name": "Portrait Resource",
+                "hint": "The resource bar that will be shown as a overlay on top of the portrait image. You should set this in the combat configuration. This option is here for some systems and experienced users to tweak manually."
+            }
+        },
+        "hotkeys": {
+            "combatPrev": {
+                "name": "Previous Turn"
+            },
+            "combatNext": {
+                "name": "Next Turn"
+            }
+        },
+        "add-event": {
+            "title": "Add Event",
+            "duration": "Event Duration (Rounds)",
+            "error": "Error: You must provide a name, an image and initiative value for the event.",
+            "expired": "Event %n has expired."
+        },
+        "deleteEffectTitle": "Delete Effect",
+        "deleteEffectContent": "Are you sure you want to delete the effect "
+    }
+}

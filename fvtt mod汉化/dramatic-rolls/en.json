@@ -1,0 +1,60 @@
+{
+   "dramatic-rolls": {
+      "settings": {
+         "add-sound": {
+            "name": "Add Sound Effects",
+            "label": "Add sound effects to critical successes and critical failures (fumbles)."
+         },
+         "play-animations": {
+            "name": "Play animations on criticals and fumbles",
+            "label": "Recommend disabling this for slower computers"
+         },
+         "configure-sounds": {
+            "name": "Configure Sounds",
+            "label": "Configure which sounds play on crits and fumbles."
+         },
+         "configure-animations": {
+            "name": "Configure Animations",
+            "label": "Configure which animations play on crits and fumbles."
+         },
+         "disable-npc-rolls": {
+            "name": "Disable Dramatic Rolls for NPCs and GM",
+            "label": "Let the players have their fun, dramatic rolls will only trigger for players and actors that have a player owner."
+         },
+         "trigger-on-public-only": {
+            "name": "Play sounds & animations on Public rolls only",
+            "label": "If checked, sounds and animations will not trigger on private rolls. Regardless of this setting, sounds and animations will only broadcast to other players if the roll is Public"
+         },
+         "pf2e-trigger-on-degree-of-success": {
+            "name": "PF2E Only - Trigger effects based on degree of success",
+            "label": "If checked, will trigger a critical effect if the roll result is 10 or more above the roll DC. Will trigger a fumble effect if the roll result is 10 or more below the roll DC"
+         },
+         "sound-volume-multiplier": {
+            "name": "Sound Volume Multiplier",
+            "label": "Adjust the volume of all dramatic roll sound effects (0 = silent, 1 = full volume). This setting is saved per player."
+         }
+      },
+      "configure-sounds-settings-form": {
+         "title": "Configure Sounds",
+         "save": "Save Changes",
+         "reset": "Reset Defaults",
+         "playSound": "Play Sound",
+         "removeSound": "Remove Sound",
+         "enableDisableSound": "Enabled / Disable Sound",
+         "addCritSound": "Add Critical Sound Effect",
+         "addFumbleSound": "Add Fumble Sound Effect",
+         "critical-sounds-list-title": "Critical Sound Effects",
+         "fumble-sounds-list-title": "Fumble Sound Effects",
+         "soundVolume": "Volume"
+      },
+      "configure-animations-settings-form": {
+         "title": "Configure Animations",
+         "save": "Save Changes",
+         "reset": "Reset Defaults",
+         "playAnimation": "Play",
+         "enableDisableAnimation": "Enabled / Disable",
+         "critical-animations-list-title": "Critical Animations",
+         "fumble-animations-list-title": "Fumble Animations"
+      }
+   }
+}

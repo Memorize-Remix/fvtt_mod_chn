@@ -1,0 +1,96 @@
+
+  "MAGICAL_BEANS": {
+    "BERRY": {
+      "Name": "魔法浆果",
+      "Description": "充满不可预测狂野魔法的浆果。"
+    },
+    "GRENADE": {
+      "Name": "狂野魔法手榴弹",
+      "Description": "能释放随机魔法效果的手榴弹。"
+    },
+    "ARROW": {
+      "Name": "混沌魔法箭",
+      "Description": "命中时会释放混沌魔法效果的箭矢。"
+    },
+    "MESSAGES": {
+      "NoTokenFound": "未找到角色的有效Token。",
+      "EffectAlreadyActive": "该效果已经处于激活状态。",
+      "MagicResult": "魔法结果：{total}",
+      "EffectDuration": "<b>{effect}</b> 将持续 {duration} 秒。",
+      "EffectEnded": "<b>{effect}</b> 效果已结束。",
+      "AlreadyMaxHP": "该角色生命值已满。",
+      "AlreadyHasInspiration": "该角色生命值和激励都已达到上限。"
+    },
+    "EFFECTS": {
+      "FatalDrain": {
+        "Name": "致命吸取",
+        "Flavor": "致命魔法结果！",
+        "Description": "突然的能量吸取使角色仅剩 **1 点生命值**。",
+        "NotificationError": "你的生命值降至 1 点！",
+        "NotificationInfo": "你原本的生命值已经是 1 点或更少。",
+        "NoEffect": "能量吸取效果微弱，角色的生命值保持在 {hp} 点。"
+      },
+      "RainbowSkin": {
+        "Name": "彩虹皮肤",
+        "NotificationStart": "你的皮肤变成了鲜艳的颜色！",
+        "NotificationEnd": "你的皮肤恢复正常。"
+      },
+      "ColorfulHair": {
+        "Name": "多彩头发",
+        "NotificationStart": "你的头发变成了意想不到的颜色。",
+        "NotificationEnd": "你的头发恢复正常。"
+      },
+      "Levitate": {
+        "Name": "漂浮",
+        "NotificationStart": "你开始漂浮到 10 英尺高！",
+        "NotificationEnd": "你重新接触地面。"
+      },
+      "LongTongue": {
+        "Name": "长舌头",
+        "NotificationStart": "你的舌头变得异常长",
+        "NotificationEnd": "你的舌头恢复正常大小"
+      },
+      "OnlyScreams": {
+        "Name": "只能尖叫",
+        "NotificationStart": "你只能通过尖叫来交流！",
+        "NotificationEnd": "你恢复正常说话能力。"
+      },
+      "OnlyWhispers": {
+        "Name": "只能耳语",
+        "NotificationStart": "你只能通过耳语来交流！",
+        "NotificationEnd": "你恢复正常说话能力。"
+      },
+      "Vomiting": {
+        "Name": "呕吐",
+        "NotificationStart": "你开始不受控制地呕吐！",
+        "NotificationEnd": "呕吐停止了。"
+      },
+      "Lightbulb": {
+        "Name": "灯泡",
+        "NotificationStart": "你变成了一个强大的灯泡！",
+        "NotificationEnd": "你的光芒熄灭，恢复正常状态。"
+      },
+      "Petrified": {
+        "Name": "石化",
+        "NotificationStart": "角色被石化了！无法移动或行动。",
+        "NotificationEnd": "石化效果结束。你恢复正常。"
+      },
+      "Healing": {
+        "Name": "治疗",
+        "Flavor": "魔法治疗结果！角色恢复了 {total} 点生命值。",
+        "Notification": "角色已恢复 {amount} 点生命值。"
+      },
+      "MaxHealing": {
+        "Name": "最大治疗",
+        "Flavor": "暴击魔法结果！角色完全恢复。（+{amount} 点生命值）",
+        "Description": "一道魔法闪光完全治愈了角色。最大生命值已恢复！",
+        "Notification": "最大治疗！角色已恢复 {amount} 点生命值。",
+        "InspirationFlavor": "暴击魔法结果，获得激励！",
+        "InspirationDescription": "魔法光环环绕着角色，其生命力已达上限。魔法能量转化为 **激励**。",
+        "InspirationNotification": "已授予激励！该角色原本生命值已满。",
+        "NoEffectFlavor": "暴击魔法结果，但无额外效果。",
+        "NoEffectDescription": "魔法光环环绕着角色，但其生命力已达上限且已拥有激励。"
+      }
+    }
+  }
+}

@@ -1,0 +1,705 @@
+
+  "CAMPAIGN_CODEX": {
+    "updateHTML":"<div> <p><strong>重要操作要求：Campaign Codex</strong></p><p>如果你刚刚从 1.5.7 或更早版本更新了Campaign Codex，请执行包含合集中的“Migrate Parent Region”宏。</p></div>",
+	"updateQUESTS": "<div><p><strong>重要操作要求：Campaign Codex</strong></p><p>如果你已将Campaign Codex从 2.x 版本更新至 3.x 版本，并且之前使用过任务卡，请运行合集中的 <strong>QuestConvert_v3</strong> 宏，以将任务迁移到新的任务表单。</p></div>",
+    "welcomePageHTML": "<div> <p><strong>欢迎使用 Campaign Codex</strong></p> <p>文件夹管理、系统物品价格位置和系统物品货币位置以及其他配置可在设置中更改。</p> <div><button data-campaign-codex-handler=\"campaign-codex|openMenu|core_settings\"><i class=\"fas fa-wrench\"></i>设置</button></div> <hr> <p><strong>加入 Campaign Codex 社区</strong></p> <p>如果你想提出功能建议、报告错误，或者只是想聊聊天，欢迎加入我们的 Discord 社区。</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> 加入 Discord</button></div> <p><strong>发现错误？</strong></p> <p>如果你想报告错误但不想使用 Discord，可以前往 GitHub。</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://github.com/xthesaintx/cc13\"><i class=\"fas fa-bug\"></i> 报告错误</button></div> <p><strong>支持开发</strong></p> <p>如果你想支持开发，可以考虑查看 Patreon 上的会员选项。</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://patreon.com/wgtngm\"><i class=\"fa-brands fa-patreon\"></i> 成为会员</button></div><p>如果你愿意，也可以通过 Ko-fi 支持。</p><div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://ko-fi.com/wgtngm\"><i class=\"fas fa-cup-togo\"></i> 请我喝杯咖啡</button></div><p><strong>文档</strong></p> <p>感到有些迷茫？前往我们的文档页面获取指引，或者跳转到 Discord 提问。</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://campaigncodex.wgtngm.com\"><i class=\"fas fa-book\"></i> 文档</button></div></div>",  
+    "tabs": {
+        "original-name": "原始名称",
+        "override-name": "覆盖名称",
+        "visible": "已启用",
+        "hidden": "已隐藏",
+        "edit-title": "配置标签页",
+        "reset": "重置为默认"
+    },
+    "widgets": {
+        "available": "可用",
+        "inactive": "未激活",
+        "active": "已激活"
+    },
+    "context": {
+		"hideAssociate": "对玩家隐藏",
+		"showAssociate": "对玩家显示",
+        "export": "导出到标准日志",
+        "group": "添加到 {type}",
+        "changeImage": "更改图像",
+        "removeImage": "移除图像",
+        "showImage": "向玩家显示图像",
+		"showInDirectory": "在目录中显示",
+        "removeLink": "取消链接",
+        "removeTag": "移除标签"
+    },
+    "toc": {
+        "filter": "左键点击包含，右键点击排除。使用模式按钮切换 AND/OR 包含逻辑。",
+		"clear": "清除过滤器",
+		"filterPlaceholder": "过滤..."
+    },
+    "button": {
+	  "deactivate": "停用",
+      "title": "创建新的 {type}",
+      "droptoscene": "将 {type} 放置到当前场景",
+      "tagmode": "标签模式",
+        "dropactortoscene": "将角色拖放到当前场景"
+    },
+    "info": {
+      "automatically": "{type} 会自动从所有 {source} 中填充。",
+      "refresh": "刷新",
+      "linkfound": "正在链接现有的 {type}。",
+      "newlink": "已从场景创建并链接 {type}。",
+      "linked": "已链接 {type}"
+    },
+    "sheet": {
+      "journal": "{type} 日志"
+    },
+    "add": "添加 {type}",
+    "group": {
+      "notfound": "你尝试添加的物品未找到。",
+      "self": "小队不能添加到自身。",
+      "expandAll": "展开全部",
+	  "collapseAll": "折叠全部",
+	  "toggleRegions": "隐藏/显示区域",
+	  "toggleShops": "隐藏/显示条目",
+	  "toggleLocations": "隐藏/显示地点",
+	  "toggleGroups": "隐藏/显示小队",
+	  "toggleItems": "隐藏/显示物品栏物品",
+	  "toggleNPCs": "隐藏/显示NPC",
+	  "toggleNPCTags": "隐藏/显示NPC标签",
+	  "toggleTagMode": "派系视图"
+    },
+    "member": {
+      "type": "成员 {type}"
+    },
+    "heading": {
+      "in": "{type} {in}"
+    },
+    "names": {
+      "widgets":"部件",
+      "regionlocation": "区域或地点",
+      "location": "地点",
+      "locations": "地点",
+      "group": "小队",
+      "groups": "小队",
+      "shop": "条目",
+      "shops": "条目",
+      "region": "区域",
+      "regions": "区域",
+	  "parentregions": "父级区域",
+      "npc": "NPC",
+      "npcs": "NPC",
+	  "groupnpcs": "关联 NPC 与派系",
+      "items": "物品",
+      "journal": "日志",
+      "journals": "日志",
+      "organisation": "组织",
+      "organisations": "组织",
+      "associate": "关联",
+      "associates": "关联",
+      "members": "成员",
+      "direct": "直接",
+      "info": "信息",
+      "information": "信息",
+      "note": "笔记",
+      "actor": "角色",
+      "player": "玩家",
+	  "faction": "派系",
+      "tag": "标签",
+      "tags": "标签",
+      "inventory": "库存",
+	  "loot": "战利品",
+      "scene": "场景",
+      "standard": "标准",
+      "quest":"任务",
+      "quests":"任务",
+      "toc":"目录",
+      "factions": "派系",
+      "faction": "派系"
+    },
+    "settings": {
+		"allowPlayerPurchasing": {
+			"name": "允许玩家从库存购买",
+			"hint": "如果启用，玩家可以从库存中向自己发送物品"
+		},
+		"allowPlayerLooting": {
+			"name": "允许玩家从战利品容器中拾取物品",
+			"hint": "启用后，玩家可以从战利品容器中向自己发送物品"
+		},
+		"mapMarkerOverride":{
+			"name": "地图标记缩放",
+			"hint": "Campaign Codex地图标记的大小。默认值为 1"
+        },
+		"mapMarkerColor": {
+			"name": "为地图标记使用 CC 强调色",
+			"hint": "如果启用，CC 地图标记将使用 CC 强调色作为背景色"
+		},
+		"mapMarkerUseSheetIconFallback": {
+			"name": "当标记为空时使用表单图标",
+			"hint": "如果启用且未设置Campaign Codex地图标记，笔记将使用其正常的表单图标，而不是根据名称生成代码标记。"
+		},
+	  "mapMarkers": {
+		"name": "启用Campaign Codex地图标记",
+		"hint": "如果启用，名称以可选字母开头，后跟最多三位数字，再跟可选字母的CC表将创建自定义地图标记，例如 A13"
+	  },
+	  "mapMarkersHover": {
+		"name": "启用Campaign Codex地图标记悬停",
+		"hint": "如果启用，地图日志笔记小部件标记将在悬停时显示内容"
+	  },
+	  "mapMarkersHoverDelay": {
+        "name": "地图标记悬停延迟（毫秒）",
+        "hint": "悬停时显示地图笔记内容前的延迟。可设置为 0 到 1500 毫秒。"
+    },
+	  "hideCCbutton": {
+        "name": "隐藏CC目录按钮",
+        "hint": "为非GM用户隐藏场景控制面板中的CC目录按钮。"
+      },
+      "useStyledTocButton": {
+		"name": "样式化目录按钮",
+		"hint": "启用后，在场景控制中使用 Campaign Codex 主题的目录按钮。"
+	  },
+	  "colorPicker": {
+		"name": "强调色覆盖",
+		"hint": "覆盖默认主题强调色。输入十六进制代码，如 #d4af37。留空可恢复默认值。"
+	  },
+	  "showOnlyPinned": {
+		"name": "目录中仅显示已固顶任务",
+		"hint": "勾选后，目录将仅显示已标记为'已固顶'的任务。"
+	  },
+	  "showStats": {
+		"name": "在菜单中显示统计信息",
+		"hint": "将在角色表的菜单项旁显示 (#) 以指示每种类型的数量，仅 GM 可见。"
+	  },
+	  "showActorDropperDialog": {
+        "name": "显示角色放置器对话框",
+        "hint": "如果禁用，角色放置器将直接放置角色，而不显示选择对话框。"
+    },
+	"roundFinalPrice": {
+		"name": "将最终价格四舍五入为整数",
+		"hint": "将物品的最终价格四舍五入到最接近的整数。"
+	},
+	"maxRegionDepth": {
+		"name": "覆盖嵌套深度",
+		"hint": "可创建的区域的层数。默认值为5，更高的值将增加系统负担。"
+	},
+      "itemPricePath": {
+        "name": "覆盖物品价格路径",
+        "hint": "物品价格值的路径（例如，D&D5e 的 'system.price.value'）。留空以使用检测到的系统。"
+      },
+	  "enableThemes": {
+        "name": "启用自定义主题",
+        "hint": "启用“配置颜色”中选择的自定义颜色和字体。"
+      },
+	  "playerCurrencyPath": {
+        "name": "覆盖玩家货币路径",
+        "hint": "玩家货币的路径（例如，D&D5e 使用 'system.currency'）。留空则使用检测到的系统默认值。"
+      },
+      "itemDenominationPath": {
+        "name": "覆盖物品货币路径",
+        "hint": "物品货币单位的路径（例如，D&D5e 的 'system.price.denomination'）。留空以使用检测到的系统。"
+      },
+      "itemDenominationOverride": {
+        "name": "覆盖货币单位",
+        "hint": "货币单位（例如，信用点、金币、单位）。留空以使用物品货币路径或检测到的系统。Campaign Codex 会根据当前游戏系统（例如，DND5e、PF2e、Starfinder、狂野世界、PF1e、OSE和匕首之心）自动检测物品的价值和货币单位。"
+      },
+      "hideBaseCost": {
+        "name": "隐藏基础价格列",
+        "hint": "如果你不想显示基础价格，或者系统没有价格路径，可以设置此项以在库存标签中隐藏该列。关闭并重新打开表以更新。"
+      },
+      "sortCardsAlpha": {
+        "name": "自动按字母顺序排序卡片",
+        "hint": "如果开启，卡片将按 A-Z 顺序显示"
+      },
+      "runonlyonce": {
+        "name": "欢迎消息 - 已禁用",
+        "hint": "如果开启，你将不会看到欢迎消息"
+      },
+      "useOrganizedFolders": {
+        "name": "在文件夹中组织",
+        "hint": "自动创建文件夹并组织 Campaign Codex 日志"
+      },
+      "hideByPermission": {
+        "name": "根据权限隐藏",
+        "hint": "如果用户对日志没有查看或更高权限，则隐藏链接表"
+      },
+      "hideInventoryByPermission": {
+        "name": "根据权限隐藏库存物品",
+        "hint": "如果用户对物品没有查看或更高权限，则隐藏库存中的物品"
+      },
+	  "addPurchaseFundsToInventoryCash": {
+			"name": "将购买资金添加到库存持有货币",
+			"hint": "如果启用，成功购买后支付的金额将添加到该角色的库存现金中。"
+		},
+		"enableTransactionLogging": {
+			"name": "启用交易日志记录",
+			"hint": "如果启用，购买和销售记录将被记录在交易日志中。"
+		},
+      "resetItemPathsButton": {
+		  "name": "重置为默认设置",
+		  "hint": "启用此选项并保存以将设置重置为默认"
+      }
+    },
+    "notifications": {
+      "itemPricePathsReset": "物品价格路径已重置为 D&D5e 默认值"
+    },
+    "dropzone": {
+      "region": "拖拽 {type} 以添加",
+      "location": "将 {type} 或场景拖到此处以添加",
+      "shop": "将 {type} 日志拖到此处以添加",
+      "npc": "将 {type} 或角色拖到此处以添加",
+      "associate": "将 {type} 或角色拖到此处以创建关系",
+      "item": "将 {type} 拖到此处以添加到库存",
+      "generic": "将 {type} 拖到此处",
+      "link": "放置 {type} 以链接",
+      "empty": "清空 {type}"
+    },
+	"dragToAdd": {
+      "item": "将物品拖拽至此以添加到库存",
+      "empty": "空"
+    },
+    "error": {
+      "faileditem": "转移物品失败"
+    },
+    "warn": {
+      "notEnoughCurrency":"资金不足",
+      "directly": "无法直接移除 {type}",
+      "remove": "移除 {type}",
+      "invaliddrop": "未找到带有链接角色的成员可放置！",
+      "nonpcfound": "没有可放置到地图的 NPC！",
+      "actornotfound": "未找到链接的角色！",
+      "failedtodrop": "将 NPC 放置到地图失败！",
+      "scenenotfound": "找不到放置的场景。"
+    },
+    "message": {
+      "open": "打开 {type}",
+      "unlink": "取消链接 {type}",
+      "droptomap": "将 {type} 成员放置到场景",
+      "drop": "放置到场景。"
+    },
+    "title": {
+      "all": "全部",
+      "open": {
+        "actor": "打开角色表",
+        "sheet": "打开角色表"
+      },
+      "unlink": {
+        "actor": "取消链接角色表"
+      },
+      "sort": {
+        "alphabetically": "按字母顺序排序库存"
+      },
+      "send": {
+        "player": "发送给玩家",
+		"purchase": "购买",
+        "item": {
+          "player": "发送物品给玩家角色",
+          "typetoplayer": "已将 {type} 发送给 {player}。"
+        }
+      },
+	  "infinite":{
+        "item":"切换无限数量"
+      },
+      "remove": {
+        "item": "移除物品",
+        "from": {
+          "group": "从小队中移除"
+        }
+      },
+      "focus": {
+        "in": {
+          "tab": "在标签页中聚焦"
+        }
+      }
+    },
+    "inventory": {
+      "added": "已将 {type} 添加到库存",
+      "price": {
+        "name": "价格",
+        "base": "基础价格",
+        "final": "最终价格"
+      },
+      "quantity": "数量",
+      "actions": "操作",
+      "item": {
+        "name": "物品名称"
+      },
+      "global": {
+        "markup": "全局价格加成"
+      },
+      "help": {
+        "markup": "没有自定义价格的物品将使用基础价格 × 加成"
+      }
+    },
+    "ui": {
+      "addedto": "已将 {type} 添加到 {typeb}",
+      "drag": {
+        "link": {
+          "journal": {
+            "standard": "日志：拖动标准日志以链接"
+          }
+        }
+      },
+      "warn": {
+        "notfound": {
+          "player": {
+            "character": "未找到玩家角色"
+          }
+        }
+      },
+      "send": {
+        "item": {
+          "player": "将 <strong>{type}</strong> 发送给哪个玩家角色？"
+        }
+      },
+      "cancel": "取消",
+      "Save": "保存",
+    "quicklinks": "快速链接",
+    "toggleQuicklinks": "切换快速链接",
+    "customiseTabs": "自定义标签页",
+    "createNewTag": "创建新标签",
+    "toggleExistingTags": "切换现有标签",
+    "themeConfigDescription": "配置Campaign Codex UI的主题颜色。更改将在保存后应用。",
+    "tabName": "标签页名称",
+    "defaultVisible": "默认可见",
+    "hiddenFromPlayer": "对玩家隐藏",
+    "tabPickerDescription": "为每种表类型选择默认可见的标签页 <i class=\"fas fa-power-off\"></i> 和对玩家隐藏的标签页 <i class=\"fas fa-eye-slash\"></i>。此设置适用于所有用户。GM可以使用表标题上的\"配置标签页\"按钮 <i class=\"fas fa-cog\"></i> 为单个表覆盖此设置。",
+    "lootMode": "战利品模式",
+    "filter": "筛选...",
+    "tagsPlaceholder": "添加标签...",
+    "removeTag": "移除标签",
+    "noAssociatesLinked": "未链接关联角色。",
+    "moveWidgets": "移动部件",
+    "dropActorsHere": "将角色拖放到此处",
+    "widgetTitle": "部件标题",
+    "xpLabel": "经验值",
+    "balanceEncounter": "平衡遭遇",
+    "noteTitle": "笔记标题",
+    "noNotesAvailable": "没有可用的笔记。",
+    "noQuestsFound": "未找到任务。",
+    "drop": "放置",
+    "remove": "移除",
+    "cr": "挑战等级"
+  },
+  "quest": {
+    "rewards": "奖励",
+    "objectives": "目标",
+    "addObjective": "添加目标",
+    "addSubObjective": "添加子目标",
+    "toggleCompletion": "切换完成状态",
+    "togglePlayerVisibility": "切换玩家可见性",
+    "deleteObjective": "删除目标",
+    "markAsIncomplete": "标记为未完成",
+    "markAsComplete": "标记为已完成",
+    "removeFromQuestBoard": "从任务板移除",
+    "pinToQuestBoard": "固定到任务板",
+    "hideFromPlayers": "对玩家隐藏",
+    "showToPlayers": "对玩家显示",
+    "removeQuest": "移除任务",
+    "removeItem": "移除物品",
+    "pinned": "已固定",
+    "notPinned": "未固定",
+    "active": "进行中",
+    "completed": "已完成",
+    "inactive": "未激活",
+    "failed": "失败",
+    "cycleStatus": "循环状态",
+    "openSource": "打开任务来源",
+    "pinnedQuests": "已固定的任务",
+    "noPinnedQuests": "尚未固定任何任务。从左侧面板固定任务。",
+    "progress": "进度",
+    "blocked": "已阻止",
+    "locked": "已锁定",
+    "unlocked": "已解锁",
+    "owner": "所有者",
+    "visible": "可见",
+    "dueDate": "截止日期",
+    "urgency": "紧急程度",
+    "boardColumn": "任务板列",
+    "boardOrder": "任务板顺序",
+    "hideRewardsSideBar": "隐藏奖励",
+    "notifyPlayersSideBar": "自动通知",
+    "messageOnCompletedSideBar": "发布完成消息",
+    "hideRewards": "对玩家隐藏奖励",
+    "notifyPlayers": "更改时自动通知玩家",
+    "messageOnCompleted": "完成时发布到聊天",
+    "notifyPlayersNow": "发布更新",
+    "updated": "已更新",
+    "questGiver": "任务发布者",
+    "related": "相关表",
+    "dependencies": "依赖项",
+    "unlocks": "解锁内容",
+    "macros": "宏",
+    "none": "无",
+    "dropQuestGiver": "拖放表到此设置任务发布者",
+    "dropRelated": "拖放表到此链接为相关",
+    "dropDependency": "拖放任务到此",
+    "dropUnlock": "拖放任务到此",
+    "dropMacro": "拖放宏到此",
+    "currency": "货币",
+    "reputation": "声望",
+    "rewardText": "奖励说明",
+    "rewardClaimed": "奖励已领取",
+    "addCheckIn": "添加签到",
+    "checkInNote": "签到备注",
+    "checkIns": "签到记录",
+    "updatedForPlayers": "任务已更新。",
+    "createHandout": "创建讲义",
+    "recentUpdates": "最近更新",
+    "noRecentUpdates": "没有最近更新。",
+    "linkedQuestNotPinned": "该链接的任务当前未固定在任务板上。",
+    "columnActive": "进行中",
+    "columnCompleted": "已完成",
+    "columnFailed": "失败",
+    "openSourceJournal": "打开来源日志：{name}",
+    "distributeAwards": "分发奖励"
+  },
+  "dialog": {
+    "create": "创建",
+    "cancel": "取消",
+    "save": "保存",
+    "close": "关闭",
+    "confirm": "确认",
+    "yes": "是",
+    "no": "否",
+    "createNew": "创建新的{type}",
+    "nameLabel": "名称：",
+    "enterName": "输入{type}名称...",
+    "defaultName": "新{type}",
+    "areYouSure": "确定吗？",
+    "importContent": "是否要将\"{name}\"中的现有文本内容导入到Campaign Codex描述中？",
+    "defaultTabVisibility": "默认标签页可见性",
+    "themeColors": "Campaign Codex主题颜色",
+    "templatePath": "Campaign Codex模板路径",
+    "editPin": "编辑图钉",
+    "newNote": "新笔记",
+    "exportCampaignCodex": "导出Campaign Codex",
+    "importCampaignCodex": "导入Campaign Codex",
+    "confirmExport": "确认导出",
+    "confirmImport": "确认导入",
+    "overwriteCompendiums": "覆盖模组合集？",
+    "overwriteCompendium": "覆盖合集？",
+    "exportToStandardJournal": "导出到标准日志",
+    "sendItemToPlayer": "发送物品给玩家角色",
+    "dropActorsToMap": "放置角色到地图",
+    "dropToMap": "放置{name}到地图",
+    "dropNpcsToMap": "放置{name} NPC到地图",
+    "contextImage": "上下文图片",
+    "templates": "模板",
+    "dropNpcsToScene": "放置NPC到地图",
+    "selectNpcsToPlace": "选择要放置到当前场景的NPC：",
+    "startTokensHidden": "开始时Token隐藏",
+    "startPlacing": "开始放置",
+    "rotateHelp": "旋转：",
+    "rotateHelpDetail": "使用滚轮旋转Token",
+    "gridSnapHelp": "网格对齐：",
+    "gridSnapHelpDetail": "按住Shift键禁用对齐",
+    "skipTokensHelp": "跳过Token：",
+    "skipTokensHelpDetail": "右键单击跳过不需要的NPC",
+    "deleteNote": "确定要删除此笔记吗？",
+    "playerVisible": "玩家可见",
+    "playerHidden": "玩家隐藏",
+    "exportToModule": "导出到模组",
+    "exportToObsidian": "导出到Obsidian",
+    "selectExportTarget": "选择导出目标",
+    "selectImportTarget": "选择导入目标",
+    "exportCleanup": "导出前运行清理",
+    "sendToPlayer": "将<strong>{item}</strong>发送给哪个玩家角色？",
+    "filterCharacters": "筛选角色...",
+    "deductFunds": "从角色扣除资金",
+    "sendToPlayerTitle": "发送物品给玩家角色",
+    "distributeAwardsTitle": "分发奖励",
+    "distributeMode": "分发方式",
+    "divideAmongSelected": "在选中者中平均分配",
+    "totalToEachSelected": "给每个选中者完整金额",
+    "includeRewards": "奖励类型",
+    "includeXP": "包含经验值",
+    "includeCurrency": "包含货币",
+    "selectRecipients": "接收者",
+    "offline": "离线",
+    "balanceEncounter": "平衡遭遇",
+    "targetPartyLevel": "目标队伍等级",
+    "numberOfPlayers": "玩家数量",
+    "difficulty": "难度",
+    "difficultyLow": "低",
+    "difficultyModerate": "中等",
+    "difficultyHigh": "高",
+    "balanceEncounterBudgetNote": "每个角色的经验值预算乘以玩家数量（2024 DMG）。",
+    "reviewEncounterQuantities": "查看遭遇数量",
+    "stillOverBudget": "仍超出预算",
+    "underBudgetBy": "低于预算",
+    "onBudget": "符合预算",
+    "target": "目标",
+    "current": "当前",
+    "suggested": "建议",
+    "currentBeforeEdits": "当前",
+    "suggestedAfterEdits": "编辑后",
+    "new": "新",
+    "balanceProtected": "受保护，不自动减少",
+    "balanceManualOnly": "仅手动",
+    "balanceClickToUnlock": "点击解锁",
+    "balanceClickToLock": "点击锁定",
+    "partyLevel": "队伍等级",
+    "level": "等级",
+    "threat": "威胁等级",
+    "threatTrivial": "微不足道",
+    "threatLow": "低",
+    "threatModerate": "中等",
+    "threatSevere": "严重",
+    "threatExtreme": "极端",
+    "balanceEncounterPf2eNote": "PF2e经验值使用生物等级与队伍等级对比，威胁预算基于队伍规模。"
+  },
+  "notify": {
+    "journalNotFound": "Campaign Codex | 未找到日志条目。",
+    "widgetDataMissing": "Campaign Codex | 部件数据缺失。",
+    "noteContentNotFound": "Campaign Codex | 未找到笔记和日志内容。",
+    "dragDropToLink": "将日志条目拖放到图钉标记上以链接。",
+    "journalUnlinked": "日志已从图钉取消链接。",
+    "invalidDropType": "只有日志条目和日志条目页面可以拖放到地图上。",
+    "documentNotFound": "找不到拖放的文档。",
+    "addedPin": "已为\"{name}\"添加图钉。",
+    "mergingFolders": "正在合并重复的\"{name}\"文件夹...",
+    "folderCleanupComplete": "Campaign Codex文件夹清理完成。",
+    "cannotCreateType": "无法创建未知类型的文档：\"{type}\"",
+    "couldNotFindJournal": "Campaign Codex | 找不到UUID为{uuid}的日志条目",
+    "invalidConversionType": "Campaign Codex | 无效的转换类型\"{type}\"。",
+    "noTextPages": "日志\"{name}\"没有包含内容的文本页面可转换。",
+    "createdSheets": "从\"{name}\"的页面创建了{count}个新的{type}表。",
+    "createdSheet": "成功从\"{name}\"创建了新的{type}表。",
+    "dropRollTable": "请拖放一个RollTable文档。",
+    "rollTableNotFound": "未找到链接的RollTable。",
+    "documentTypeNotFound": "未找到{type}文档",
+    "failedToOpen": "无法打开{type}",
+    "noLinkedActor": "Campaign Codex | 未找到用于忠诚度追踪的链接角色。",
+    "dropMacro": "请拖放一个宏文档。",
+    "macroExecuted": "已执行：{name}",
+    "macroNotFound": "未找到宏。",
+    "dropActor": "请拖放一个角色文档。",
+    "actorDataNotFound": "找不到角色数据。",
+    "dropperNotAvailable": "放置器工具不可用。",
+    "failedToDropActors": "放置角色失败。",
+    "noActorsToDrop": "没有要放置的角色。",
+    "noRestockTables": "未链接补货表。",
+    "noValidItems": "在掷骰结果中未找到有效物品。",
+    "restocked": "已补货{count}个物品。",
+    "tabVisibilitySaved": "Campaign Codex默认标签页可见性已保存！",
+    "tabVisibilityReset": "Campaign Codex默认标签页可见性已重置。",
+    "invalidTemplate": "无效的模板定义。",
+    "failedTemplate": "加载模板失败：{name}",
+    "themeApplied": "Campaign Codex主题设置已应用！",
+    "themeExported": "Campaign Codex：主题导出成功。",
+    "themeImported": "主题导入成功。",
+    "themeImportFailed": "解析JSON文件失败。",
+    "themeReset": "Campaign Codex主题颜色已重置为默认值。",
+    "noLinkedActorForDrop": "Campaign Codex | 未找到用于忠诚度追踪的链接角色。",
+    "noSceneActive": "当前没有激活的场景！",
+    "noNpcsWithActors": "未找到有链接角色的NPC可放置！",
+    "noActorsToDropNpc": "没有要放置的角色！",
+    "noValidActors": "未找到有效的角色可放置！",
+    "noNpcsSelected": "未选择NPC！",
+    "preparingNpcs": "正在准备{count}个NPC进行放置...",
+    "noActorsPrepared": "无法为放置准备任何角色！",
+    "placementInstructions": "点击画布放置{count}个NPC。拖动定位，滚轮旋转，点击确认，右键跳过。",
+    "placementCancelled": "Token放置已取消。",
+    "tokenPlacementFailed": "Token放置失败。请查看控制台了解详情。",
+    "droppedResults": "已放置{success}个NPC到场景",
+    "droppedImported": "（从合集导入了{imported}个）",
+    "droppedFailed": "。{failed}个失败。",
+    "noNpcsDropped": "没有成功放置到场景的NPC。",
+    "awardsUnsupportedSystem": "此系统不支持奖励分发。",
+    "noAssignedCharacters": "未找到玩家分配的角色。",
+    "noRewardsToDistribute": "此任务未设置可分配的经验值或货币奖励。",
+    "awardsDistributed": "已向{count}个角色分发奖励（经验值：{xpCount}，货币：{currencyCount}）。",
+    "exportCleaningUp": "导出前执行清理...",
+    "cleanupNotAvailable": "清理功能不可用，继续导出...",
+    "cleanupComplete": "清理成功完成。",
+    "cleanupErrors": "清理遇到错误，但导出将继续...",
+    "collectingDocuments": "正在收集所有链接的文档...",
+    "noDocumentsToExport": "未找到要导出的Campaign Codex文档！",
+    "exportComplete": "导出完成！文档已导出到\"{name}\"。",
+    "exportFailed": "导出失败：{message}",
+    "moduleNotFound": "未找到模组\"{name}\"或没有所需的解锁合集！",
+    "pruningEmptyFolders": "正在修剪空文件夹...",
+    "pruningFolders": "正在从\"{label}\"修剪{count}个空文件夹。",
+    "failedToCreateCompendium": "创建合集集失败！",
+    "recreatingCompendium": "正在重新创建合集：{name}",
+    "creatingCompendium": "正在创建新合集：{name}",
+    "jsZipNotAvailable": "JSZip库不可用。请确保已加载。",
+    "generatingObsidianFiles": "正在为Obsidian导出生成{count}个文件...",
+    "obsidianExportSuccess": "成功将日志导出到{name}",
+    "obsidianExportFailed": "生成zip文件失败。请查看控制台了解详情。",
+    "importCollecting": "正在从合集收集文档...",
+    "noDocumentsToImport": "未找到要导入的Campaign Codex文档！",
+    "importingFrom": "正在从\"{name}\"导入文档...",
+    "importFailed": "导入失败：{message}",
+    "noCompendiumsFound": "未找到Campaign Codex合集！",
+    "importingFolders": "正在导入文件夹结构...",
+    "relinkingDocuments": "正在重新链接导入的文档...",
+    "relinkingScenes": "正在重新链接导入的场景...",
+    "templatePathUpdated": "Campaign Codex模板路径已更新！",
+    "usingExistingScene": "使用世界中现有的场景\"{name}\"",
+    "importedScene": "已从合集导入场景\"{name}\"到世界",
+    "importComplete": "导入完成！",
+    "importedCount": "已导入：{count}",
+    "skippedCount": "已跳过/使用现有：{count}",
+    "replacedCount": "已替换：{count}",
+    "failedCount": "失败：{count}",
+    "notCampaignCodexDocument": "此日志不是Campaign Codex文档",
+    "exportedToStandard": "已将\"{name}\"导出到标准日志",
+    "exportJournalFailed": "导出日志失败",
+    "noJournalsSelected": "未选择Campaign Codex日志",
+    "exportingJournals": "正在导出{count}个Campaign Codex日志...",
+    "exportedJournals": "成功导出{count}个日志",
+    "exportedWithErrors": "导出{count}个日志，有{errors}个错误",
+    "sceneImportFailed": "导入场景\"{name}\"失败：{message}",
+    "noSceneLinked": "此文档未链接场景",
+    "linkedSceneNotFound": "未找到链接的场景",
+    "compendiumSceneNotSupported": "不支持从合集打开场景。请将场景导入到您的世界并重新链接。",
+    "openLinkedSceneFailed": "无法打开链接的场景",
+    "createdNpcJournal": "已为\"{name}\"创建NPC日志",
+    "resetItemPathsFailed": "重置物品路径失败",
+    "movedRegion": "已将\"{child}\"移动到\"{parent}\"中。",
+    "regionCannotBeSelfParent": "区域不能作为自己的父级。",
+    "circularDependency": "不能将\"{child}\"移动到\"{parent}\"中，因为它是祖先。",
+    "maxNestingDepth": "此操作将超过最大嵌套深度{depth}。",
+    "locationRefreshed": "位置数据已刷新！",
+    "linkedScene": "已将场景\"{name}\"链接到{doc}",
+    "linkedJournal": "已链接日志\"{name}\"。",
+    "journalAlreadyLinked": "日志\"{name}\"已经链接。",
+    "removedBrokenRefs": "已从{name}中移除{count}个损坏的{field}引用",
+    "removedBrokenParent": "已从{name}中移除损坏的父区域链接。",
+    "removedBrokenInventory": "已从{name}中移除{count}个损坏的库存物品",
+    "sheetNotFound": "未找到选中的表",
+    "npcNoLinkedActor": "此NPC没有链接的角色可放置！",
+    "sourceDocNotFound": "找不到源文档。",
+    "removedMember": "已从小队中移除成员",
+    "circularGroupDependency": "不能添加\"{name}\"，因为这将创建循环依赖。",
+    "alreadyInGroup": "\"{name}\"已包含在此小队中。",
+    "failedToUpdateImage": "更新图片失败",
+    "idCollision": "发生随机ID冲突。请重试。",
+    "unlinkedScene": "已取消链接场景",
+    "itemNotFound": "未找到物品",
+    "noSourceDocument": "未设置源文档",
+    "outOfStock": "物品已缺货。",
+    "unlinkedJournal": "已取消链接日志。",
+    "failedToRemoveLocationLink": "移除位置链接失败。",
+    "linkedRegionOrLocationNotFound": "找不到链接的区域或位置。",
+    "removedFromRegion": "已从区域\"{region}\"中移除\"{location}\"",
+    "dropToMapNotImplemented": "未为{type}表实现放置到地图功能",
+    "noNPCsWithActors": "未找到有链接角色的NPC可放置！",
+    "tagNotFound": "找不到要链接的标签。",
+    "itemNotFoundToAdd": "找不到要添加到条目的物品",
+    "addedToQuest": "已将\"{item}\"添加到任务\"{quest}\"",
+    "actorNotFound": "找不到拖放的角色。",
+    "linkedActorToDocument": "已将\"{actor}\"链接到\"{document}\"",
+    "linkedActorToJournal": "已将角色\"{name}\"链接到此日志。",
+    "linkedAsAssociate": "已将\"{name}\"链接为关联角色。",
+    "cannotLinkSelf": "不能将NPC链接到自身作为关联角色。",
+    "actorDropNotConfigured": "未为\"{type}\"表配置角色放置功能。",
+    "documentNotFoundType": "未找到{type}文档",
+    "failedToOpenType": "无法打开{type}",
+    "noPlayerCharacters": "未找到玩家角色"
+  },
+  "export": {
+    "exportButton": "导出Campaign Codex",
+    "exportTooltip": "将所有Campaign Codex内容导出到合集",
+    "importButton": "导入Campaign Codex",
+    "importTooltip": "从合集导入Campaign Codex内容"
+    }
+  }
+}

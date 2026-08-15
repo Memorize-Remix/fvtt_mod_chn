@@ -1,0 +1,146 @@
+
+	"lib-wrapper": {
+		"settings": {
+			"yes": "是",
+			"no": "否",
+			"save": "保存",
+			"reload": "重新加载",
+			"reset": "重置",
+
+			"notify-issues-gm": {
+				"name": "通知GM问题",
+				"hint": "是否在检测到问题时通知GM，例如冲突。"
+			},
+			"notify-issues-player": {
+				"name": "通知玩家问题",
+				"hint": "是否在检测到问题时通知玩家，例如冲突。"
+			},
+			"high-performance-mode": {
+				"name": "高性能模式",
+				"hint": "此模式会禁用大部分动态冲突检测功能以提升性能，特别适用于低端系统。请注意，这会显著降低检测到冲突的概率。因此，建议在安装或更新模组时关闭此模式。"
+			},
+			"log-verbosity": {
+				"name": "日志详细程度",
+				"hint": "libWrapper的Javascript控制台消息的详细程度。",
+				"choices": {
+					"never"   : "从不",
+					"all"     : "全部",
+					"trace"   : "追踪",
+					"debug"   : "调试",
+					"info"    : "信息",
+					"warning" : "警告",
+					"error"   : "错误",
+					"critical": "严重",
+					"always"  : "总是"
+				}
+			},
+
+			"menu": {
+				"title": "libWrapper设置菜单",
+
+				"priorities": {
+					"name": "优先级",
+					"package-inactive": "未激活",
+					"statistics-disabled": "注意：统计收集已禁用，无法显示无优先模组。",
+
+					"prioritized": {
+						"title": "高优先模组",
+						"hint": "这些模组比不在此列表中的任何模组具有更高的优先级。列表中越靠前的位置优先级越高。"
+					},
+
+					"unprioritized": {
+						"title": "无优先模组",
+						"hint": "这些模组没有设置优先级。这些模组之间的优先级按先到先得的原则决定。新模组将默认加入此列表。"
+					},
+
+					"deprioritized": {
+						"title": "低优先模组",
+						"hint": "这些模组比不在此列表中的任何模组具有更低的优先级。列表中越靠前的位置优先级越低。",
+						"note": "请注意，未使用libWrapper的模组甚至比这些模组的优先级更低。"
+					}
+				},
+
+				"conflicts": {
+					"name": "冲突",
+					"none-detected": "未检测到任何冲突。",
+					"statistics-disabled": "统计收集已禁用。",
+					"show-ignored": "显示已忽略的冲突"
+				},
+
+				"active-wrappers": {
+					"name": "激活Wrapper",
+					"none-active": "当前没有激活的Wrapper。"
+				},
+
+				"about": {
+					"name": "关于",
+					"full-name": "关于libWrapper",
+					"credits": "{name} {version} 由 {author} 开发。",
+					"credits-translation": "",
+
+					"description": "'libWrapper' 是一个库，为模组开发者提供了一种简单的方式来修改 Foundry VTT 的核心代码，同时减少与其他模组冲突的可能性。",
+					"info": "您可以在 <a href=\"{repo_url}\">Foundry VTT 模组仓库</a> 以及项目的 <a href=\"{github_url}\">Github 页面</a> 中找到有关此模组的更多信息。",
+					"support": "<b>如果您遇到任何问题</b>，最简单的方法是向社区寻求帮助。最大的社区支持渠道包括：",
+					"issue-tracker": "如果您遇到 <b>libWrapper 内部错误</b>，或者您是 <b>模组开发者</b>，您也可以在 <a href=\"{issues_url}\">libWrapper Github 问题跟踪器</a> 中提交支持请求。"
+				},
+
+				"warning-reset-priorities": "重置模组优先级会将所有模组移回“未优先级”。此操作无法撤销。您确定要继续吗？",
+				"warning-save": "建议您重新加载页面以应用新的模组优先级。您希望重新加载吗？"
+			}
+		},
+
+		"packages": {
+			"unknown-title": "未知",
+
+			"type-plus-id": "{type} {id}",
+			"type-plus-title": "{type} {title}",
+
+			"types": {
+				"module" : "模组",
+				"system" : "系统",
+				"world"  : "世界脚本",
+				"unknown": "包"
+			}
+		},
+
+		"error": {
+			"see-js-console": "(参见JS控制台)",
+			"tech-details": "== 技术细节：",
+			"community-support": "向社区寻求支持：",
+			"not-lw": "这*不是*libWrapper的错误。",
+
+			"external": {
+				"notification": "{title}: 在 {type} 中检测到错误。",
+				"message": "在 {type} {title} 中检测到错误。",
+				"info": "在此处查找有关此 {type} 的信息：{url}",
+				"report": "在此处报告此问题：{url}",
+				"likely-not-updated": "此 {type} 可能尚未更新到 FVTT {version}。"
+			},
+
+			"internal": {
+				"message": "检测到内部错误。",
+				"message-with-package": "检测到内部错误，涉及 {type} {title}。",
+				"info": "在此处查找有关 libWrapper 的信息：{url}",
+				"report": "在此处报告此问题：{url}"
+			},
+
+			"conflict": {
+				"potential": "{main} 和 {other} 修改了相同的 FoundryVTT 功能，更有可能发生冲突。",
+				"confirmed": "检测到 {main} 和 {other} 之间的冲突。",
+				"info": "在此处查找有关这些模组的信息：",
+				"report": "在此处报告此冲突："
+			}
+		},
+
+		"support-channels": [
+			{
+				"title": "FoundryVTT Discord的 #modules-troubleshooting 频道",
+				"url": "https://discord.gg/foundryvtt"
+			},
+			{
+				"title": "FoundryVTT Reddit",
+				"url": "https://www.reddit.com/r/FoundryVTT"
+			}
+		]
+	}
+}

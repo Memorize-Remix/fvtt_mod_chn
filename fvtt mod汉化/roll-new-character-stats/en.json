@@ -1,0 +1,235 @@
+{
+  "RNCS": {
+    "Button":{
+      "text": "Roll New Character Stats"
+    },
+    "settings": {
+      "version": {
+        "title": "Module update detected",
+        "content": "<p>Thank you for updating!</p><p>Settings configurations have been changed since your last update and will need to be restored to default settings.</p><p>Please read v3.1.4 <a href=\"https://github.com/MrXofar/roll-new-character-stats/blob/master/changes.txt\">changes.txt</a> to find out more.</p>"
+      },
+      "NumberOfActors": {
+        "Name": "Number of Actors",
+        "Hint": "Enter how many actors do you want rolled. Use with CAUTION if Dice So Nice! is enabled."    
+      },
+      "DiceSoNiceEnabled": {
+        "Name": "Dice So Nice!",
+        "Hint": "If checked, and Dice So Nice! is installed and enabled, 3D dice will be rolled across your screen only."    
+      },
+      "NameFormat": {
+        "Name": "Name Format",
+        "Hint": "Character Name format if no name is provided." ,
+        "choices":{
+          "player-occupation": "Player (Occupation)",
+          "occupation-player": "Occupation (Player)",
+          "occupation"       : "Occupation",
+          "random"           : "Random"
+        }     
+      },
+      "HideResultsZone": {
+        "Name": "Hide Results Zone",
+        "Hint": "This setting will hide Results Zone when \"Apply as Rolled\" or \"Point Buy\" is selected."      
+      },
+      "ReverseRingMethodScrolling": {
+        "Name": "Reverse Ring Method Scrolling",
+        "Hint": "Reverse the default mouse wheel scroll direction during Ring Method selection."    
+      },
+      "ShowOtherPropertyResults": {
+        "Name": "Show Other Property Results",
+        "Hint": "Select how you want Other Property Results displayed with Result Description. Other Properties Results are other rolls executed by Enhanced Support for things like class, equipment, weapons, armor, etc." ,
+        "choices":{
+          "do-not-show": "Do not show",
+          "with-result": "With result description",
+          "in-place-of": "In place of result description"
+        }     
+      },
+      "IncludeResultDescription": {
+        "Name": "Include Result Description",
+        "Hint": "This setting will include result description from Other Property Results on character sheet; such as in Biography, Backstory or Notes."    
+      },
+      "RollMethodAndDistribution": {
+        "Name": "Roll Method & Distribution",
+        "Hint": "Select how many dice to roll, how many sets to roll, how to distribute results and other roll method and distribution rules."    
+      },
+      "AbilitiesRollMethod": {
+        "Name": "Number of d6 Rolled",
+        "Hint": "Select how many d6 are to be rolled",
+        "choices":{
+          "3": "3d6",
+          "4": "4d6",
+          "2": "2d6+6"
+        }        
+      },
+      "DropLowestDieRoll": {
+        "Name": "Drop Lowest Die Roll",
+        "Hint": "Drop the lowest die roll from the number of d6 rolled."      
+      },
+      "ReRollOnes": {
+        "Name": "Reroll Ones",
+        "Hint": "Reroll 1's until a 1 is not rolled."      
+      },
+      "NumberOfSetsRolled": {
+        "Name": "Number of Sets Rolled",
+        "Hint": "Select how many sets of die are to be rolled",
+        "choices":{
+          "6": "6 Sets",
+          "7": "7 Sets",
+          "8": "8 Sets",
+          "9": "9 Sets"
+        }        
+      },
+      "DropLowestSet": {
+        "Name": "Drop Lowest Set",
+        "Hint": "Drop the lowest set from the number of sets rolled."      
+      },
+      "BonusPoints": {
+        "Name": "Bonus Points",
+        "Hint": "Select how many bonus points are to be awarded",
+        "choices":{
+          "zero-points" : "0 Bonus Points",
+          "one-point"   : "1 Bonus Point",
+          "one-d-four"  : "1d4 Bonus Points"
+        }        
+      },
+      "Over18Allowed": {        
+        "Name": "Scores Over 18 Allowed",
+        "Hint": "Allow scores over 18 when distributing rolled scores and/or bonuses. Setting is ignored when Distribution Method selected is \"Apply as Rolled\" - and no Bonus Points are awarded, or \"Point Buy\" is selected."    
+      },
+      "MinimumAbilityTotal": {
+        "Name": "Minimum Ability Total",
+        "Hint": "Minimum final total ability score, including bonus points. 0 = No Min"    
+      },
+      "MaximumAbilityTotal": {
+        "Name": "Maximum Ability Total",
+        "Hint": "Maximum final total ability score, including bonus points. 0 = No Max"    
+      },
+      "DistributeResults": {
+        "Name": "Distribute Results",
+        "Hint": "Allow distribution of results freely."      
+      },
+      "DistributionMethod": {
+        "Name": "Distribution Method",
+        "Hint": "Choose how results will be distributed.",
+        "choices":{
+          "apply-as-rolled"  : "Apply as Rolled",
+          "distribute-freely": "Distribute Freely",
+          "ring-method"      : "Ring Method",
+          "point-buy-method" : "Point Buy"
+        }          
+      },
+      "ChatRemoveConfigureActorButton": {
+        "Name": "Remove Configure Actor Button",
+        "Hint": "Remove the Configure Actor button when clicked."      
+      },
+      "ChatSettings": {
+        "Name": "Chat Settings",
+        "Hint": "Select which information to hide or show in chat log."    
+      },
+      "ChatShowDescription":{
+        "Name": "Description",
+        "Hint": "Show character description in chat message - if any."
+      },
+      "ChatShowMethodText":{
+        "Name": "Roll Method & Distribution Rules",
+        "Hint": "Show the Roll Method & Distribution rules for new abilities."
+      },
+      "ChatShowResultsText":{
+        "Name": "Show Results",
+        "Hint": "Show results of all rolls. Uncheck to hide all rolls in chat message."
+      },
+      "ChatShowCondensedResults":{
+        "Name": "Condensed Ability Results",
+        "Hint": "Display ability results in condensed form if Show Results is checked."
+      },
+      "ChatShowDieResultSet":{
+        "Name": "Die Result Set",
+        "Hint": "Show all die rolls, excl. rerolls and discards if Show Results is checked."
+      },
+      "ChatShowBonusPointsText":{
+        "Name": "Bonus Points",
+        "Hint": "Show Bonus Points if Show Results is checked."
+      },
+      "ChatShowTotalAbilityScore":{
+        "Name": "Total Ability Score",
+        "Hint": "Show total of all rolls and bonuses in chat message."
+      },
+      "ChatShowDifficultyText":{
+        "Name": "Difficulty",
+        "Hint": "Show Difficulty text - a fun way of showing the probability of rolling high."
+      },
+      "ChatShowNoteFromDM":{
+        "Name": "Note From DM",
+        "Hint": "A note from DM which summarizes the Roll Method & Distribution rules."
+      }
+    },
+
+    "results-text": {
+      "methods":{
+        "label": "Roll Method & Distribution Rules",
+        "drop-lowest-die": " - drop lowest die",
+        "re-roll-ones": " - reroll ones",
+        "drop-lowest-set": " - drop lowest set",
+        "over-18-allowed": "Over 18 Allowed",
+        "over-18-not-allowed": "No scores over 18 allowed",
+        "distribute-freely": "Distribute freely",
+        "apply-as-rolled": "Apply as rolled",
+        "ring-method": "Ring method distribution",
+        "point-buy": "Point Buy distribution"
+      },
+      "difficulty": {
+        "label": "Difficulty",
+        "level": {
+          "Hardcore": "Hardcore",
+          "Veteran": "Veteran",
+          "EasyDay": "Easy Day",
+          "Yawn": "Yawn"
+        }
+      },
+      "results": {
+        "label": "Results",
+        "abilities": "Abilities",
+        "total-ability-score":"Total Ability Score",
+        "min_max_failed":" (Adjust number of die/sets rolled or Min/Max values)"
+      },
+      "bonus": {
+        "label": "Bonus"
+      },
+      "note-from-dm": {
+        "label": "Note from DM",
+        "apply-as-rolled": "Each result will be applied to abilities in the order they were rolled. ",
+        "distribute-freely": "You may distribute these scores among your abilities as you desire. ",
+        "ring-method": "You may select three consecutive die rolls and apply them to any ability. ",
+		"point-buy-method": "You may distribute 27 points among your abilities. ",
+        "distribute-bonus-points": "The Bonus Point(s) may be distributed among any of your scores. ",
+        "final-scores-may": "Final scores may ",
+        "final-scores-may-not": "Final scores may <b>not</b> ",
+        "above-18": "be above 18 after including ",
+        "bonus-points": "Bonus Point(s) and ",
+        "any-bonuses": "any beginning bonuses. "
+      }
+    },
+    
+    "dialog":{
+      "confirm-roll":{
+        "Title": "Roll New Character Stats",
+        "Content": "Roll dice for {0} new {1}?"
+      },
+      "results-button":{
+        "configure-new-actor": "Configure Actor"
+      },
+      "point-buy":{
+        "Title": "Begin New Character Stats",
+        "Content": "Begin new character with point buy method?"
+      }
+    },
+    "form-app":{
+      "form-text":{
+        "applied-as-rolled": "Applied as rolled. ",
+        "over-18-not-allowed": "* No scores over 18 allowed.",
+        "accept-new-actor": "Accept New Actor",
+        "ring-method": "Ring Method: This method allows you to select three consecutive die rolls and apply them to any ability.",
+        "point-buy-method": "Point Buy Method: You may distribute 27 points among your abilities. "
+      }
+    }
+  }
+}

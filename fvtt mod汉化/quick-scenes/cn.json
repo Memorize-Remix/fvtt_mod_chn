@@ -1,0 +1,60 @@
+
+  "QUICK_SCENES": {
+    "contextMenu": {
+      "quickScene": "快速场景",
+      "bulkQuickScenes": "从图像批量创建场景",
+      "showPlayers": "向玩家展示",
+      "sendToChat": "发送到聊天",
+      "zoomIn": "放大",
+      "zoomOut": "缩小"
+    },
+    "zoom": {
+      "clickToZoom": "点击放大",
+      "dblClickToReset": "双击重置"
+    },
+    "bulk": {
+      "dialogTitle": "批量创建场景",
+      "dialogContent": "在 <strong>{count}</strong> 个图像中找到于 <strong>{folder}</strong>。",
+      "selectFolder": "场景文件夹",
+      "folderNone": "— 无文件夹 —",
+      "folderNew": "— 创建新文件夹 —",
+      "newFolderName": "新文件夹名称",
+      "createScenes": "创建场景",
+      "cancel": "取消",
+      "progress": "正在创建场景 {current} / {total}…",
+      "thumbnails": "正在生成缩略图 {current} / {total}…",
+      "complete": "已创建 {count} 个场景。",
+      "cancelled": "已取消。已创建 {count} / {total} 个场景。",
+      "noImages": "此文件夹中未找到图像。",
+      "destination": "目标位置",
+      "destinationWorld": "世界",
+      "destinationCompendium": "合集",
+      "selectPack": "合集包",
+      "packNew": "— 创建新包 —",
+      "newPackLabel": "新包名称"
+    },
+    "notifications": {
+      "sceneCreated": "场景已创建：{name}",
+      "sceneCreateError": "创建场景失败",
+      "showError": "向玩家展示图像失败",
+      "defaultsSaved": "快速场景默认设置已保存",
+      "chatError": "发送图像到聊天失败"
+    },
+    "settings": {
+      "debugMode": {
+        "label": "调试模式",
+        "hint": "在浏览器控制台中启用调试日志记录"
+      },
+      "applyDefaultsAll": {
+        "label": "对所有新场景应用默认设置",
+        "hint": "将配置的场景默认设置应用于所有新创建的场景，而不仅仅是快速场景"
+      },
+      "sceneDefaults": {
+        "label": "场景默认设置",
+        "button": "配置默认设置",
+        "hint": "设置应用于每个快速场景的默认属性",
+        "configTitle": "快速场景默认设置"
+      }
+    }
+  }
+}

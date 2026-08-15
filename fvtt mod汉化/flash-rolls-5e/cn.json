@@ -1,0 +1,859 @@
+
+  "FLASH_ROLLS": {
+    "notifications": {
+      "playerOffline": "{player} 处于离线状态。正在本地掷骰",
+      "rollRequestSent": "已向 {player} 发送 {actor} 的掷骰请求",
+      "rollRequestReceived": "{gm} 请求：{rollType}",
+      "rollRequestsReceivedMultiple": "{gm} 请求：{requests}",
+      "rollError": "为 {actor} 执行掷骰时出错",
+      "combatCreated": "战斗遭遇已创建",
+      "allActorsHaveInitiative": "所有选中的角色已拥有先攻值",
+      "actorsSkippingDeathSave": "无需进行死亡豁免的角色：{actors}",
+      "rollRequestsSentSingle": "已向 {player} 发送 {rollType} 请求，对象为：{actors}",
+      "rollRequestsSentMultiple": "已向 {count} 个角色发送 {rollType} 请求：{players}",
+      "noHitDice": "{actor} 没有可用的生命骰",
+      "noTargetedTokens": "未找到用于掷骰的选定Token",
+      "settingsUpdated": "设置已更新",
+      "invalidFormula": "无效公式：{formula}",
+	  "invalidActorIds": "{numIds} 个角色未找到并已跳过：{invalidIds}",
+	  "noActorsSelected": "未找到符合掷骰请求的角色",
+	  "invalidActorIdsFormat": "角色ID格式无效 - 必须为数组格式",
+	  "invalidMacroData": "宏数据无效 - 选项必须为对象",
+	  "missingRequestType": "宏数据无效 - 必须包含请求类型(requestType)",
+	  "macroExecutionFailed": "执行掷骰请求失败。请检查宏配置后重试。",
+	  "clickMapToPlaceTemplate": "点击地图以放置测量板",
+	  "macroDataMalformed": "宏执行失败。宏数据可能格式错误。",
+	  "unknownRequestType": "未知的请求类型 '{requestType}'。请检查宏配置。",
+	  "macroCreated": "宏 \"{macroName}\" 创建成功",
+      "actorAddedToFavorites": "{actor} 已添加到 Flash Token Bar 收藏",
+      "actorRemovedFromFavorites": "{actor} 已从 Flash Token Bar 收藏中移除",
+      "actorBlocked": "{actor} 已被阻止出现在 Flash Token Bar 菜单中",
+      "actorUnblocked": "{actor} 已被解除阻止，可出现在 Flash Token Bar 菜单中",
+      "actorsSkippedInitiative": "未找到 {actors} 的Token。未掷先攻。",
+      "noTokensForInitiative": "选中的角色在场景中没有Token。未掷先攻。",
+      "noCharactersForHitDie": "生命骰只能为玩家角色掷骰，不能为NPC掷骰。",
+	  "noValidActorsSelected": "未选择有效角色。",
+      "actorAdded": "{actor} 已添加到 Flash Token Bar 菜单",
+      "actorAlreadyAdded": "{actor} 已在菜单中",
+      "actorNotFound": "未找到角色",
+      "dropError": "添加角色到菜单时出错",
+      "npcHiddenFromPlayers": "NPC现在在小队消息中对玩家隐藏。",
+      "npcVisibleToPlayers": "NPC现在在小队消息中对玩家可见。",
+		"interceptWarning": "设置'从玩家角色卡发送掷骰请求'可能与某些掷骰模组冲突。请在游戏前进行测试，或禁用下方选项。",
+		"movementLocked": "{count}个Token的移动已锁定",
+		"movementUnlocked": "{count}个Token的移动已解锁",
+		"movementRestricted": "GM已限制此Token的移动",
+		"noTokensForMovementLock": "未找到所选角色的Token",
+		"noVsActorsSelected": "未选择对抗掷骰的对手角色",
+		"noRollSelected": "未为 {name} 选择掷骰类型",
+		"rollFailed": "执行 {name} 的掷骰失败",
+		"codeCopied": "代码已复制到剪贴板",
+		"twoActorsRequired": "对抗掷骰必须选择两个角色",
+		"menuNotOpen": "Flash Token Bar菜单未打开",
+		"iconRemoved": "图标 {iconName} 已从菜单中移除",
+		"iconRemoveFailed": "从菜单中移除图标失败",
+		"macroCreationFailed": "创建宏失败",
+		"tokensPlaced": "已放置 {count} 个Token",
+		"tokenPlacementCancelled": "Token放置已取消",
+		"noActorsSelectedForPlacement": "未选择角色进行Token放置",
+		"tokensTeleported": "已传送 {count} 个Token",
+		"teleportCancelled": "传送已取消",
+		"teleportReady": "正在传送 {count} 个Token。请导航至目标场景并在画布上点击放置。右键点击取消。",
+		"noTokensSelectedForTeleport": "未选择有效的Token进行传送",
+		"transformationSuccess": "已将 {count} 个角色转化为 {target}",
+		"transformationFailed": "转化 {name} 失败：{error}",
+		"reversionSuccess": "已将 {count} 个角色恢复为原始形态",
+		"animationFileNotFound": "动画文件未找到：{path}",
+		"notTransformed": "未选中任何已转化的角色",
+		"invalidActorUuid": "提供的角色 UUID 无效",
+		"alreadyTransformed": "已有 {count} 个角色处于转化状态",
+		"gmOnly": "仅GM可执行此操作",
+		"rollRequestsDisabled": "掷骰请求当前已禁用",
+		"libWrapperRecommended": "Flash Rolls 5e：libWrapper 模组不是必需的，但建议安装",
+		"autoRollTimeout": "Flash Token Bar:正在为 {actor} 自动掷骰（Midi-QoL 超时已到）",
+      "ddbConnected": "已连接到 D&D Beyond。",
+      "ddbConnectionFailed": "连接 D&D Beyond 失败。请检查你的设置并重试。"
+    },
+	"rollModePlayerChoice": "玩家选择",
+    "contextMenu": {
+      "addToFavorites": "添加到 Flash Token Bar 菜单",
+      "removeFromFavorites": "从 Flash Token Bar 菜单中移除",
+      "toggleFavorite": "在 Flash Token Bar 菜单中切换",
+	  "blockFromMenu": "从收藏中移除",
+	  "unblockFromMenu": "从菜单中取消屏蔽",
+      "showNPCsToPlayers": "向玩家显示NPC",
+	  "hideNPCsFromPlayers": "对玩家隐藏NPC",
+      "showAllResultsToPlayers": "向玩家显示所有结果"
+    },
+    "chat": {
+      "requestedBy": "[由 {gm} 请求]",
+      "groupRoll": "小队掷骰",
+      "contestedRoll": "对抗掷骰",
+      "rollRequest": "掷骰请求"
+    },
+    "settings": {
+      "debugMode": {
+        "label": "调试模式",
+        "hint": "启用调试模式以显示额外的日志信息"
+      },
+      "rollRequestsEnabled": {
+        "label": "启用掷骰请求",
+        "hint": "启用或禁用掷骰请求功能"
+      },
+      "groupRollsMsgEnabled": {
+        "label": "在一条聊天消息中小队掷骰",
+        "hint": "启用后，同时触发的多个掷骰将合并为一条小队消息。禁用后，每个掷骰将显示为单独的消息。"
+      },
+      "showGroupDCToPlayers": {
+        "label": "向玩家显示小队DC",
+        "hint": "启用以在小队掷骰消息中向玩家显示小队DC。"
+      },
+	  "showGroupResultToPlayers": {
+        "label": "向玩家显示小队结果",
+        "hint": "启用后向玩家显示小队掷骰结果页脚（成功/失败总结）。禁用时，仅 GM 能看到结果总结。"
+      },
+	  "groupRollNPCHidden": {
+		"label": "在小队消息中对玩家隐藏NPC掷骰",
+		"hint": "启用后，玩家将无法在小队掷骰消息中看到他们没有查看权限的角色的掷骰结果。GM始终可以看到所有结果。"
+	  },
+	  "concealNPCNames": {
+		"label": "在小队掷骰中隐藏NPC名称",
+		"hint": "启用后，小队掷骰消息中NPC角色名称将对玩家显示为'？？？'。仅适用于可见的NPC（未被'隐藏NPC掷骰'设置隐藏的NPC）。GM始终能看到实际名称。"
+	  },
+	  "interceptTidySheetsGroupRolls": {
+        "label": "拦截来自 Tidy5e 角色卡的小队掷骰",
+		"hint": "启用时，来自 Tidy5e 角色卡的小队技能掷骰将使用 Flash Token Bar 小队掷骰系统，而不是默认的聊天提示。需要 Tidy5e Sheets 模组。"
+      },
+      "groupRollResultMode": {
+        "label": "小队掷骰结果模式",
+        "hint": "选择如何计算小队掷骰的结果：<br/>• <b>标准规则</b> - 至少一半的成员必须成功。<br/>• <b>小队平均</b> - 所有掷骰的简单平均值，向下取整。<br/>• <b>领导者协助</b> - 具有最高加值的角色的结果，减去小队失败次数。<br/>• <b>最弱环节</b> - 具有最低相关技能调整值的角色的结果，加上小队成功次数。",
+        "choices": {
+          "1": "标准规则",
+          "2": "小队平均",
+          "3": "领导者协助",
+          "4": "最弱环节"
+        }
+      },
+	  "groupCalculationForSaves": {
+		"label": "显示小队豁免的计算结果",
+		"hint": "启用后，小队豁免的掷骰消息将包含小队计算结果摘要。禁用时，小队豁免消息将仅显示个人结果，不显示小队计算脚注。"
+	  },
+	  "autoSelectOnGroupRoll": {
+		  "label": "在小队掷骰完成时自动选择Token",
+		  "hint": "当带有 DC 的小队掷骰完成时，自动选择画布上的Token。适用于快速对豁免失败/成功的角色应用伤害或效果。",
+		  "choices": {
+			"0": "不自动选择",
+			"1": "自动选择失败的",
+			"2": "自动选择成功的",
+			"3": "自动选择全部"
+		  }
+		},
+	  "removeSaveMsgAfterRoll": {
+		"label": "隐藏 Midi-QoL 自动豁免请求的消息",
+		"hint": "启用此选项以减少重复信息，特别是在使用 Midi-QoL 时。豁免掷骰消息将在所有掷骰完成后 1 秒隐藏并删除。这可以避免与 Midi-QoL 卡片上显示的信息重复。"
+	  },
+	  "fastForwardChatMsgRoll": {
+			"label": "快速处理聊天消息中的掷骰请求",
+			"hint": "启用后，点击聊天消息中的掷骰请求将跳过掷骰对话框并立即掷骰。玩家仍可按住修饰键以进行优势/劣势掷骰。"
+	  },
+      "useGMTargetTokens": {
+        "label": "使用GM选定的Token",
+        "hint": "当玩家确认请求的掷骰时，此设置将强制使用GM选定的Token而不是玩家选定的Token。如果禁用此设置，则仅当玩家没有目标时才会转移GM目标。"
+      },
+      "publicPlayerRolls": {
+        "label": "始终以公开掷骰形式发送请求",
+        "hint": "当GM向玩家发送掷骰请求时，该特定请求的掷骰模式将默认设为“公开”。仍可在掷骰对话框中更改。禁用此项以使用GM当前的掷骰模式作为默认值。"
+      },
+	  "useCondensedRollMessage": {
+        "label": "对单人掷骰请求使用精简消息格式",
+        "hint": "启用后，针对单个角色的掷骰请求将发布类似小队掷骰格式的精简消息。如果掷骰请求来自GM，此设置将覆盖常规的掷骰结果消息。"
+      },
+	"skipRollDialog": {
+        "label": "跳过掷骰对话框（GM）",
+        "hint": "启用后，将根据下方选择的选项跳过掷骰对话框弹出窗口。跳过时，系统将使用默认配置进行掷骰。"
+      },
+      "skipRollDialogOption": {
+        "label": "跳过哪些掷骰对话框（GM）",
+        "hint": "当“跳过掷骰对话框”启用时，你希望跳过哪些对话框？此设置不影响玩家端的对话框，也不影响消耗类对话框。",
+        "choices": {
+          "1": "所有掷骰配置对话框",
+          "2": "仅发送掷骰请求时",
+          "3": "仅本地掷骰时"
+        }
+      },
+      "skipToRollResolver": {
+        "label": "为非数字骰子跳过对话框",
+        "hint": "启用后，如果玩家已配置使用手动掷骰或交互式设备（如蓝牙/Pixels 骰子），将跳过掷骰配置对话框。这允许快速输入骰子结果，无需经过配置对话框。"
+      },
+      "rollInterceptionEnabled": {
+        "label": "从玩家角色卡和其他模组发送掷骰请求",
+        "hint": "启用后，GM为玩家角色进行的掷骰将自动重定向给在线的角色所有者，无论是从角色卡还是其他模组发起的。"
+      },
+	  "showRequestPrompt": {
+        "label": "在请求时向玩家显示掷骰对话框",
+        "hint": "启用后，掷骰请求将在玩家端立即触发并显示掷骰对话框供其点击。禁用时，玩家仅在聊天记录中收到聊天消息，必须点击才能掷骰。"
+      },
+	  "showNPCRequestPrompt": {
+        "label": "GM控制角色的自动掷骰",
+        "hint": "启用时，GM控制的角色（NPC）在被请求时将立即自动掷骰。禁用时，仅显示聊天消息，GM需要手动点击掷骰。"
+      },
+      "showOfflineNotifications": {
+        "label": "显示离线通知",
+        "hint": "启用以在请求前通知GM玩家处于离线状态。请求将在本地执行。"
+      },
+      "showRequestNotifications": {
+        "label": "在请求时显示通知",
+        "hint": "启用以在请求成功发送给在线玩家时通知GM"
+      },
+      "consumptionConfigMode": {
+        "label": "谁可以看到消耗/测量板对话框？",
+        "hint": "选择是否要为玩家、GM或两者跳过消耗对话框。这是选择专注、法术位等的对话框。跳过时，将使用默认值。",
+        "choices": {
+          "1": "为玩家和GM跳过对话框",
+          "2": "为玩家跳过对话框",
+          "3": "为GM跳过对话框",
+          "4": "不跳过对话框"
+        }
+      },
+	  "placeTemplateForPlayer": {
+		"label": "在请求时为玩家放置测量板",
+		"hint": "启用时，仅GM会被提示放置测量板。禁用时，玩家（而非GM）将被提示放置测量板。"
+	  },
+      "moduleSettingsMenu": {
+        "title": "模组设置",
+        "label": "配置选项",
+        "hint": "",
+        "tabs": {
+          "generalSettings": "通用设置",
+		  "interfaceSettings": "界面",
+          "groupRolls": "小队掷骰",
+          "rollRequests": "掷骰请求",
+          "integrations": "集成"
+        },
+        "fieldsets": {
+          "rollDialog": "掷骰对话框",
+		  "templateOptions": "测量板（法术/效果范围）",
+		  "tokenOptions": "Token选项",
+		  "otherOptions": "其他选项",
+		  "rollActivation": "掷骰所有权与消耗",
+		  "rollPrompting": "掷骰与请求提示",
+		  "initiativeOptions": "战斗与先攻",
+		  "chatMessages": "聊天消息",
+		  "visibility": "可见性",
+          "dndBeyond": "D&D Beyond（Patreon 功能）"
+        }
+      },
+		"ddbImportOwnership": {
+		  "label": "为所有玩家添加所有权",
+		  "hint": "启用后，所有玩家都将获得从 D&D Beyond 导入角色的所有权。禁用后，他们将仅拥有查看权限。"
+		},
+		"ddbRollOwnership": {
+		  "label": "谁执行 D&D Beyond 掷骰",
+		  "hint": "如果由 GM 执行，GM 将放置测量板并选择目标。如果发送给玩家执行，将使用玩家的目标和测量板。如果玩家离线，则始终回退到 GM 执行。",
+		  "choices": {
+			"0": "在 GM 客户端执行",
+			"1": "发送给玩家"
+		  }
+		},
+		"ddbNoAutoConsumeSpellSlot": {
+		  "label": "不自动消耗法术位",
+		  "hint": "启用后，D&D Beyond 的掷骰将不会在 FVTT 中自动消耗法术位，需要手动追踪。"
+		},
+		"ddbImportSourcePriority": {
+		  "label": "角色导入源优先级",
+		  "hint": "从D&D Beyond导入角色时，当有多个规则来源可用时，选择优先使用哪个规则版本。",
+		  "choices": {
+			"0": "根据角色自动检测",
+			"1": "2024版规则（PHB 2024、DMG 2024、SRD 5.2）",
+			"2": "2014版规则（PHB 2014、SRD 5.1）",
+			"3": "最接近匹配 - DDB Importer优先"
+		  }
+		},
+		"ddbImportSpellMode": {
+		  "label": "法术导入模式",
+		  "hint": "选择是导入角色法术列表中的所有法术（适用于可每日更换法术的准备施法者），还是仅导入当前已准备的法术。",
+		  "choices": {
+			"0": "所有法术（推荐用于准备施法者）",
+			"1": "仅已准备法术"
+		  }
+		},
+		"premiumSettings": {
+		  "fetchFailed": "从D&D Beyond获取角色失败。请检查网络连接后重试。",
+		  "ddbImporterApiError": "DDB Importer模组已激活，但其API不可用。",
+		  "successDDBImporter": "角色“{name}”已通过DDB Importer导入。",
+		  "ddbImporterFailed": "DDB Importer导入角色失败。",
+		  "ddbImporterError": "通过DDB Importer导入时发生错误。",
+		  "success": "角色“{name}”已创建（{tier}级导入，匹配{count}个物品）。",
+		  "createFailed": "创建角色失败：{error}"
+		},
+      "initiateCombatOnRequest": {
+        "label": "请求先攻时启动战斗",
+        "hint": "启用以在使用菜单请求先攻检定时自动启动战斗遭遇。"
+      },
+	  "autoRequestInitiativeOnCombatant": {
+        "label": "自动为新战斗者请求先攻",
+        "hint": "启用时，当玩家角色被加入战斗时，会自动向玩家发送先攻检定请求。NPC 将在本地自动掷骰。"
+      },
+      "showOnlyPCsWithToken": {
+		"label": "仅显示有Token的角色",
+		"hint": "菜单中的“玩家角色”和“小队”标签页将仅显示当前场景中有Token的角色，除非你明确从目录中拖拽角色到菜单中。如果禁用此选项，将显示所有玩家拥有的角色。"
+      },
+      "favoriteActorsList": {
+        "label": "收藏角色列表",
+        "hint": "收藏角色列表，无论Token是否存在，这些角色将始终出现在掷骰菜单中。"
+      },
+      "showMenuOnLoad": {
+        "label": "加载时显示菜单",
+        "hint": "启用后，重新加载FVTT时掷骰请求菜单将自动可见。"
+      },
+	  "showTokenVisionOnHover": {
+		"label": "悬停时显示Token视野",
+		"hint": "启用后，在掷骰请求菜单中悬停于角色上将切换画布视图至该Token的视野。若你偏好手动选择Token，请禁用此功能。"
+	  },
+      "templateAutoTarget": {
+        "label": "测量板自动选定目标",
+        "hint": "在画布上绘制测量板时，是否应自动选定/选择Token？",
+        "choices": {
+          "all": {
+            "label": "选定所有Token"
+          },
+          "notFriendly": {
+            "label": "选定非友好目标"
+          },
+          "none": {
+            "label": "禁用自动选定"
+          }
+        }
+      },
+	  "removeTemplate": {
+		"label": "伤害后移除测量板",
+		"hint": "启用后，执行伤害掷骰时将移除测量板。"
+	  },
+	  "templateRemovalTimeout": {
+        "label": "测量板移除超时（秒）",
+        "hint": "自动移除测量板前等待的秒数，最多30秒。仅在启用“移除测量板”设置时生效。"
+      },
+	  "supportPatreon": {
+		"label": "支持开发者",
+		"buttonLabel": "Patreon支持",
+		"hint": "如果你喜欢Flash Token Bar 5e和我的其他模组，请考虑在Patreon上支持开发工作"
+	  },
+	  "exportSettings": {
+		"label": "故障排除",
+		"buttonLabel": "导出设置",
+		"hint": "将你的 Flash Token Bar 5e 设置和激活模组导出为 JSON 文件，用于故障排除。",
+		"success": "设置导出成功！"
+	  },
+	  "importSettings": {
+		"label": "导入设置",
+		"buttonLabel": "导入设置",
+		"hint": "从 JSON 文件导入 Flash Token Bar 5e 设置。仅限 GM。",
+		"success": "成功导入 {count} 项设置！",
+		"partialSuccess": "导入了 {applied} 项设置，有 {errors} 处错误。",
+		"invalidFile": "无效的设置文件。必须包含 flashRollsSettings。",
+		"parseError": "解析设置文件失败。请检查文件格式。",
+		"reloadTitle": "需要重新加载",
+		"reloadPrompt": "设置已导入。是否重新加载页面以应用所有更改？"
+	  },
+		"premiumFeatures": {
+		  "label": "Patreon 功能",
+		  "buttonLabel": "Patreon 功能",
+		  "title": "Patreon 功能",
+		  "hint": "配置 Patreon 功能，包括 D&D Beyond 掷骰集成。",
+		  "description": "点击“通过 Patreon 认证”以获取 D&D Beyond 功能访问权限。所有 Patreon 成员（无论是否付费）至少在 2026 年 8 月之前都将获得免费访问权限。",
+		  "tabs": {
+			"authentication": "会员认证",
+			"ddbSettings": "D&D Beyond 选项"
+		  },
+		  "patreonAuth": "Patreon 认证",
+		  "apiKey": "API 密钥",
+		  "apiKeyHint": "点击'通过 Patreon 认证' - 登录后，只要你是 Carolingian 任何等级的会员，你就应该能够访问。",
+		  "authenticateBtn": "通过 Patreon 认证",
+		  "refreshBtn": "刷新状态",
+		  "logoutBtn": "退出登录",
+		  "connected": "已连接",
+		  "notConnected": "未连接到 Patreon。点击'通过 Patreon 认证'以链接你的账户。",
+		  "patronName": "赞助者",
+		  "patronTier": "等级",
+		  "popupBlocked": "弹窗被阻止！请允许此网站的弹窗并重试。",
+		  "linkCodeFieldset": "使用链接代码认证",
+		  "linkCodeHint": "无法使用弹窗？请从其他设备获取代码。",
+		  "getLinkCode": "点击获取认证代码",
+		  "saveCode": "保存",
+		  "enterCode": "请输入链接代码",
+		  "invalidCode": "无效或已过期的代码",
+		  "loggedOut": "已成功从 Patreon 退出登录。",
+		  "logoutFailed": "退出登录失败。请重试。",
+		  "testConnectionBtn": "测试连接",
+		  "testGameLogBtn": "测试 DDB 连接",
+		  "ddbSettings": "D&D Beyond（Patreon 功能）",
+		  "ddbWarning": "要完整捕获掷骰结果，角色必须位于D&D Beyond战役中并关联到FVTT角色。请在下方字段中添加你的Cobalt Cookie、战役ID和用户ID。",
+			"ddbWarningImportItems": "如果你未购买官方的FVTT D&D模组，建议使用*DDB Importer*在导入角色前将物品、法术和特性添加到合集中。",
+			"ddbWarningAfter": "如果DDB Importer模组已激活，将使用它进行角色导入。如果不可用，Flash Token Bar将尝试在合集中查找存在的特性、物品和法术。这可能不适用于你的情况——请使用DDB Importer或创建缺失的物品。",
+		  "noApiKey": "请先输入 API 密钥。",
+		  "connectionSuccess": "连接成功！欢迎，{name}。",
+		  "connectionFailed": "认证失败。请重新通过 Patreon 认证。",
+		  "connectionError": "连接错误。请检查你的网络连接。",
+		  "notPatron": "你的 Patreon 会员资格无法访问。原因：{reason}",
+		  "patreonVerified": "Patreon 会员资格已验证",
+		  "patreonNotVerified": "Patreon 会员资格未验证",
+		  "statusConnected": "已连接到 D&D Beyond",
+		  "statusConnecting": "正在测试连接...",
+		  "statusDisconnected": "已断开连接",
+		  "statusError": "连接失败",
+		  "statusNotTested": "",
+		  "missingDDBCredentials": "请先填写所有 D&D Beyond 字段。",
+		  "gameLogTestSuccess": "D&D Beyond 连接已验证！",
+		  "gameLogTestFailed": "D&D Beyond 测试失败。{error}。如果看到 'Auth failed: 401'，请重新登录 D&D Beyond 并更新你的 Cobalt Cookie。",
+		  "campaignCharacters": "战役角色",
+		  "refreshCharacters": "刷新角色",
+		  "loadingCharacters": "正在加载角色...",
+		  "noCharacters": "战役中未找到角色。",
+		  "mappedTo": "已链接到",
+		  "notMapped": "未链接",
+		  "mapCharacter": "链接角色",
+		  "unlinkCharacter": "取消链接角色",
+		  "unlinkConfirm": "这将从角色目录中移除\"{name}\"。继续吗？你以后仍然可以从 D&D Beyond 重新导入。",
+		  "syncCharacter": "与 DDB Importer 同步",
+		  "importCharacter": "使用 DDB Importer 导入",
+		  "selectActor": "选择角色",
+		  "noActor": "无角色",
+		  "mapCharacterTitle": "链接 D&D Beyond 角色",
+		  "characterMapped": "角色 <-> 角色链接已保存。",
+		  "characterUnmapped": "角色链接已移除。",
+		  "ddbImporterRequired": "此功能需要 DDB Importer 模组",
+		  "ddbImporterNeedsCobalt": "D&D Beyond Importer 需要配置其 Cobalt Cookie。请先打开 DDB Importer 设置并设置你的 Cobalt Cookie。",
+		  "importingCharacter": "正在从 D&D Beyond 导入 {name}...",
+		  "characterImported": "{name} 导入成功。",
+		  "ddbImporterAPINotFound": "未找到 D&D Beyond Importer API。请确保模组已安装并启用。",
+		  "importFailed": "导入角色失败：{error}",
+		  "syncingCharacter": "正在从 D&D Beyond 同步 {name}...",
+		  "characterSynced": "{name} 同步成功。",
+		  "syncFailed": "同步角色失败：{error}",
+		  "actorNotFound": "未找到用于同步的角色。",
+		  "ddbImporterHint": "安装 D&D Beyond Importer 模组以直接从 D&D Beyond 导入和同步角色。",
+		  "characterCountText": "找到 {count} 个角色",
+		  "importAll": "全部导入",
+		  "syncAll": "全部同步",
+		  "importAllTooltip": "导入所有角色（需要 DDB Importer）",
+		  "syncAllTooltip": "同步已导入的角色（需要 DDB Importer）",
+		  "noCharactersToImport": "没有未链接的角色可导入。",
+		  "noCharactersToSync": "没有已链接的角色可同步。",
+		  "bulkImportProgress": "正在导入 {current}/{total}：{name}...",
+		  "bulkSyncProgress": "正在同步 {current}/{total}：{name}...",
+		  "bulkImportComplete": "导入完成：{imported} 个已导入，{failed} 个失败。",
+		  "bulkSyncComplete": "同步完成：{synced} 个已同步，{failed} 个失败。",
+		  "importCharacterCompendium": "使用合集匹配导入",
+			"importCharacterCompendiumHint": "通过匹配本地合集中的物品导入角色（无需DDB Importer）",
+			"fetchFailed": "从D&D Beyond获取角色数据失败。",
+			"successDDBImporter": "{name} 已通过DDB Importer导入。",
+			"ddbImporterApiError": "DDB Importer API不可用。",
+			"ddbImporterFailed": "DDB Importer导入未成功完成。",
+			"ddbImporterError": "使用DDB Importer时发生错误。",
+			"success": "{name} 已导入（{tier}级匹配，添加了{count}个物品）。",
+			"createFailed": "创建角色失败：{error}",
+		  "tooltipPatreon": "Patreon：",
+		  "tooltipDDB": "D&D Beyond：",
+		  "tooltipVerified": "开启",
+		  "tooltipNotVerified": "关闭",
+		  "tooltipOn": "开启",
+		  "tooltipOff": "关闭",
+		  "contextReconnect": "重新连接到 Patreon",
+		  "patreonRequired": "连接到 Patreon 以访问特殊功能。"
+		},
+		"ddbCampaignId": {
+		  "label": "D&D Beyond 战役 ID",
+		  "hint": "在你的战役 URL 中找到的 ID：dndbeyond.com/campaigns/XXXXXX）。"
+		},
+		"ddbUserId": {
+		  "label": "D&D Beyond 用户 ID",
+		  "hint": "在浏览器控制台中找到的用户 ID - 转到战役页面并在开发者控制台中输入 console.log(Cobalt.User.ID)。这是捕获 D&D Beyond 掷骰所必需的"
+		},
+		"ddbCobaltCookie": {
+		  "label": "Cobalt Session Cookie",
+		  "hint": "你的 D&D Beyond CobaltSession cookie 值（认证所需）"
+		},
+		"proxyApiKey": {
+		  "label": "代理 API 密钥",
+		  "hint": "Carolingian 代理服务的 API 密钥（通过 Patreon 认证后获得）"
+		},
+		"ddbCharacterMappings": {
+		  "label": "D&D Beyond 角色映射",
+		  "hint": "将 D&D Beyond 角色 ID 链接到 Foundry 角色 ID"
+		},
+	  "compactMode": {
+		"label": "使用紧凑模式",
+		"hint": "为掷骰请求菜单使用紧凑布局。角色信息仅在悬停时显示"
+	  },
+		"actorStatsToShow": {
+			"label": "显示的角色属性",
+			"hint": "选择在Token栏菜单中为角色显示哪些属性",
+			"hp": "HP（生命值）",
+			"ac": "AC（护甲等级）",
+			"dc": "DC（法术豁免DC）",
+			"prc": "PRC（被察）"
+		},
+	  "menuLayout": {
+        "label": "菜单布局",
+        "hint": "选择掷骰请求菜单的布局方向。",
+        "choices": {
+          "vertical": "垂直",
+          "horizontal": "水平"
+        }
+      },
+	  "maxIconsPerRow": {
+        "label": "最大可见动作图标数",
+        "hint": "同时显示的角色动作图标的最大数量。当启用更多图标时，将出现导航箭头以便滚动查看。"
+      },
+	  "addMacrosToFolder": {
+		"label": "将新宏放置在'Flash Token Bar'文件夹中",
+		"hint": "勾选此选项后，新创建的宏将始终添加到'Flash Token Bar'文件夹内。若不勾选，宏将被添加到宏目录的根目录中。"
+	  },
+      "showOptionsListOnHover": {
+        "label": "悬停显示掷骰选项",
+        "hint": "启用后，当鼠标悬停在已选中角色的菜单上时，将显示掷骰选项折叠面板。禁用时，需点击切换列表按钮来显示掷骰选项。"
+      },
+      "menuIconsLayout": {
+        "label": "菜单图标布局",
+        "hint": "自定义菜单中显示的图标及其顺序。拖拽图标可重新排序，并可切换图标的显示/隐藏状态。"
+      },
+    "autoBlockMovementInCombat": {
+        "label": "战斗中自动阻止移动",
+        "hint": "启用后，玩家在非回合时将无法移动Token。GM仍可随时移动Token，并可在战斗期间通过菜单暂时为玩家解除移动限制。"
+    },
+	"tokenMovementSpeed": {
+		"label": "Token移动速度（格/秒）",
+		"hint": "控制拖动Token时的动画速度（每秒移动的网格格数）。FVTT 默认值为 6。数值越高移动越快，数值越低移动越慢。"
+	},
+	"tooltipAutoDismiss": {
+		"label": "提示自动消失时间（秒）",
+		"hint": "提示自动消失前的等待时间（秒）。设置为 0 将完全禁用提示。默认值为 2 秒。"
+	},
+	"teleportAnimationPath": {
+		"label": "传送动画视频",
+		"hint": "传送Token时播放的视频文件路径。如果安装了 JB2A 模组，将默认使用蓝色传送动画。留空以禁用动画。"
+	},
+	"disableNotifications": {
+		"label": "禁用通知提示",
+		"hint": "如果你非常熟悉 Flash Token Bar，可以禁用常见操作的通知提示。错误通知仍会显示。"
+	},
+	"lockMenuPosition": {
+        "label": "锁定菜单时禁止拖动",
+        "hint": "启用后，切换“锁定菜单”图标将同时阻止菜单被拖动到新位置。菜单将保持固定位置，直到解锁。"
+    },
+	"flashIconInSceneControls": {
+        "label": "在场景控件栏显示切换按钮",
+        "hint": "启用时，Flash Token Bar 的切换按钮将显示在左侧的场景控件栏中，而非聊天控件区域。这在聊天控件栏被隐藏时非常有用。"
+      },
+	"legacyTokenAssociationsMigrated": {
+		"label": "旧版Token关联迁移状态",
+		"hint": "内部标记，用于追踪旧版Token关联是否已迁移至新的基于场景的格式。"
+	 }
+    },
+    "groupRoll": {
+      "standardRule": {
+        "summary": "{successes}/{total} 成功（需要 {threshold}）",
+		"summaryOnlySuccess": "协助: {leaderRoll} + {bonus} {successWord} = {adjustedResult} (DC {dc})",
+		"summaryOnlyFailure": "协助: {leaderRoll} - {penalty} {failureWord} = {adjustedResult} (DC {dc})",
+		"summaryNoModifiers": "协助: {leaderRoll} = {adjustedResult} (DC {dc})",
+		"successSingular": "成功",
+		"successPlural": "成功次数",
+		"failureSingular": "失败",
+		"failurePlural": "失败次数"
+      },
+      "groupAverage": {
+        "summary": "平均值：{average}（DC {dc}）"
+      },
+      "leaderWithHelp": {
+        "summary": "领导者协助：{leaderRoll} + {bonus} 次成功 - {penalty} 次失败 = {adjustedResult}（DC {dc}）"
+      },
+      "weakestLink": {
+        "summary": "最弱环节：{weakestRoll} + {bonus} {successWord} = {adjustedResult}（DC {dc}）",
+        "successSingular": "次成功",
+        "successPlural": "次成功"
+      }
+    },
+    "ui": {
+    "tooltips": {
+        "dragOutToRemove": "拖出以移除",
+        "movementLocked": "移动已锁定",
+        "characterSheet": "角色卡",
+        "targetCharacter": "目标角色"
+    },
+      "settings": {
+        "moduleActionsTitle": "模组操作",
+        "actorActionsTitle": "角色操作"
+      },
+      "search": {
+        "placeholder": "搜索"
+      },
+      "buttons": {
+        "rollRequestsToggleOn": "掷骰请求 开",
+        "rollRequestsToggleOff": "掷骰请求 关",
+        "reset": "重置",
+        "save": "保存",
+        "reloadButton": "重新加载",
+        "cancelButton": "取消",
+		"delete": "删除",
+        "createMacro": "创建宏",
+        "request": "请求",
+        "showCode": "显示代码"
+      },
+      "inputs": {
+        "lockMenu": "锁定可见性",
+        "toggleRollRequests": "请求掷骰",
+        "skipRollDialog": "跳过掷骰对话框",
+        "groupRollsMsg": "小队掷骰",
+		"selectAll": "全选",
+		"toggleTargets": "切换目标",
+		"healAll": "治疗选中",
+		"killAll": "击杀选中", 
+		"removeStatus": "移除状态",
+		"openSheets": "打开角色卡",
+		"showOptionsListOnHover": "切换列表",
+		"openSettings": "打开设置",
+		"premiumFeatures": "Patreon功能",
+        "filterActors": "过滤角色",
+        "groupSelected": "创建小队",
+        "toggleMovement": "切换移动",
+        "contestedRoll": "对抗检定",
+		"placeTokens": "放置Token",
+        "teleportTokens": "传送Token",
+		"transform": "变形",
+		"selectTokens": "选择",
+		"removeAssociations": "移除关联"
+      },
+      "tokenAssociations": {
+        "associatedTokens": "本场景中有 {count} 个关联Token",
+		"noTokensInScene": "本场景中没有关联Token",
+		"associationsRemoved": "已移除 {actor} 的Token关联"
+      },
+	  "contextMenu": {
+        "removeIcon": "移除图标",
+        "createMacro": "创建宏"
+      },
+      "filters": {
+        "title": "过滤角色",
+        "inCombat": "仅显示战斗角色",
+        "visible": "仅显示可见角色",
+        "removeDead": "移除死亡角色"
+      },
+      "forms": {
+        "pixelsRollTitle": "Pixels Dice - 掷骰解析器",
+        "pixelsWaitingTitle": "等待掷骰",
+        "dcFieldLabel": "DC"
+      },
+      "cards": {
+        "rollRequestFlavor": "掷骰请求"
+      },
+      "dialogs": {
+        "worldSettingsLabel": "世界设置（GM）",
+        "toggleHints": "切换描述",
+        "reloadRequiredTitle": "重新加载FVTT",
+        "reloadRequiredLabel": "需要重新加载。立即重新加载？",
+		"uiConfigReloadLabel": "FVTT UI 配置已更改。建议重新加载以确保主题正确应用。现在重新加载吗？",
+        "multipleActors": "多个角色",
+        "noCombatActive": "没有激活的战斗遭遇。是否在掷先攻之前创建一个？",
+        "rerollInitiativeTitle": "重新掷先攻？",
+        "rerollInitiative": "这些角色已有先攻值：<b>{actors}</b>。是否要重新掷骰？",
+        "customRollTitle": "自定义掷骰",
+        "rollFormula": "掷骰公式",
+        "formulaValid": "有效公式",
+        "formulaInvalid": "无效公式",
+        "gmRollConfigTitle": "GM掷骰配置",
+        "gmRollConfigActors": "为 {count} 个角色掷骰",
+        "optional": "可选",
+        "dcPlaceholder": "留空为默认值",
+        "situationalNote": "例如：+2、1d4 或 +1d4+2",
+        "sendRequest": "作为请求发送",
+        "sendRequestNote": "选择是向玩家发送掷骰还是在本地执行",
+        "sendToPlayers": "发送给玩家",
+        "rollLocally": "本地掷骰",
+        "hitDie": {
+          "refillTitle": "无可用生命骰",
+          "refillMessage": "{actors} 没有可用的生命骰。是否要补充他们的生命骰并发送请求？",
+          "refillMessageLocal": "{actors} 没有可用的生命骰。是否要补充他们的生命骰并掷骰？",
+          "refillAndSend": "补充并发送",
+          "refillAndRoll": "补充并掷骰",
+          "refilled": "{actor} 的生命骰已补充"
+        },
+		  "transformation": {
+			"title": "角色变形",
+			"transformingActors": "正在变形",
+			"favorites": "收藏夹",
+			"favoritesEmpty": "从图册中拖拽角色或点击书签图标添加到收藏列表",
+			"addToFavorites": "添加到收藏夹",
+			"removeFromFavorites": "从收藏夹移除",
+			"onlyNPCs": "仅NPC角色可添加到变形收藏夹",
+			"targetActor": "目标生物",
+			"selectActor": "点击选择角色",
+			"browseActors": "浏览角色",
+			"pickCreature": "选择生物",
+			"selected": "已选择：",
+			"clearSelection": "清除选择",
+			"preset": "变形预设",
+			"customSettings": "自定义设置",
+			"transform": "变形",
+			"revertTitle": "变形",
+			"revertConfirm": "将已变形的角色恢复为原始形态？",
+			"renderSheet": "变形后显示角色卡",
+			"noActorSelected": "请选择目标角色",
+			"worldActor": "世界角色",
+			"allTypes": "所有类型",
+			"characters": "角色",
+			"npcs": "NPC",
+			"searchActors": "搜索角色...",
+			"noActorsFound": "未找到角色",
+			"presets": {
+			  "polymorph": "变形术",
+			  "polymorphDesc": "仅保留精神属性（如变形术法术）",
+			  "wildshape": "荒野形态",
+			  "wildshapeDesc": "保留精神属性、生命值和法术（如德鲁伊荒野形态）",
+			  "appearance": "仅外观",
+			  "appearanceDesc": "仅外观变形 - 保留所有属性和能力（易容术、变身术）",
+			  "custom": "自定义",
+			  "customDesc": "自定义要保留的属性"
+			},
+			"settings": {
+			  "keepMental": "保留精神属性（智力、感知、魅力）",
+			  "keepPhysical": "保留身体属性（力量、敏捷、体质）",
+			  "keepSaves": "保留豁免检定",
+			  "keepSkills": "保留技能",
+			  "keepSpells": "保留法术",
+			  "keepItems": "保留物品",
+			  "keepHP": "保留生命值",
+			  "transformTokens": "变形Token"
+          }
+        },
+        "matt": {
+			"actions": {
+			  "requestRoll": "请求掷骰",
+			  "healAll": "完全治疗",
+			  "killAll": "全部击杀",
+			  "openSheets": "打开角色卡",
+			  "toggleMovement": "切换移动",
+			  "teleportTokens": "传送Token",
+			  "transformActors": "变形角色"
+			},
+			"content": {
+			  "healAll": "完全治疗",
+			  "killAll": "击杀（生命值归零）",
+			  "openSheets": "打开角色卡",
+			  "toggleMovement": "切换移动",
+			  "teleport": "传送Token到 {location}{scene}{snap}",
+			  "revertTransformation": "恢复变形",
+			  "transform": "变形为 {target}（{preset}）",
+			  "requestRoll": "请求 {type}{dc}{advantage}{bonus}{skipDialog}"
+			},
+			"transform": {
+			  "actors": "角色",
+			  "targetCreature": "目标生物",
+			  "targetCreatureHint": "留空以显示选择对话框",
+			  "preset": "预设",
+			  "revert": "恢复变形"
+			},
+			"warnings": {
+			  "noActorsFound": "未找到适用于此操作的角色"
+			}
+        },
+        "midiQOLSettings": {
+          "title": "调整 MidiQOL 设置？",
+          "description": "你当前在 MidiQOL 上的某些设置与 Flash Token Bar 5e 不兼容。是否要调整它们？此偏好将被保存，以便你不再看到此消息。",
+          "changes": "如果你确认，以下 MidiQOL 设置将被禁用：<ul><li>自动快进属性检定</li><li>自动掷攻击检定（玩家）</li><li>自动掷伤害骰（玩家）</li></ul>"
+        },
+		  "contestedRoll": {
+			"title": "对抗检定",
+			"rollMode": "掷骰模式",
+			"flavor": "描述文本",
+			"flavorPlaceholder": "检定的可选描述",
+			"hideNpcNames": "隐藏NPC名称",
+			"actors": "角色",
+			"vs": "对抗",
+			"selectRoll": "选择检定类型",
+			"dice": "骰子",
+			"removeActor": "移除参与者",
+			"customRoll": "自定义检定"
+		  },
+		"characterImport": {
+			"resultsTitle": "导入 {name}",
+			"tierALabel": "完整导入",
+			"tierADesc": "使用 DDB Importer 进行完整角色导入，包含所有特性。",
+			"tierBLabel": "部分匹配",
+			"tierBDesc": "从合集中匹配了 {rate}% 的物品。缺失物品如下。",
+			"tierCLabel": "基础导入",
+			"tierCDesc": "仅匹配了 {rate}% 的物品。建议安装 DDB Importer 以获得更好的结果。",
+			"recommendDDBImporter": "为获得最佳效果，请安装 <a href=\"https://foundryvtt.com/packages/ddb-importer\" target=\"_blank\">D&D Beyond Importer</a> 模组并先导入物品。",
+			"characterInfo": "角色信息",
+			"classLabel": "职业",
+			"raceLabel": "种族",
+			"backgroundLabel": "背景",
+			"matchedItems": "已匹配物品 ({count})",
+			"unmatchedItems": "未匹配物品 ({count})",
+			"matchedItemEntry": "{ddbName} → {foundryName}",
+			"noItemsMatched": "无法从合集匹配任何物品。",
+			"noItemsUnmatched": "所有物品均已匹配！",
+			"itemTypeWeapon": "武器",
+			"itemTypeEquipment": "装备",
+			"itemTypeSpell": "法术",
+			"itemTypeFeat": "特性",
+			"itemTypeConsumable": "消耗品",
+			"itemTypeTool": "工具",
+			"itemTypeOther": "其他",
+			"createActor": "创建角色",
+			"cancel": "取消"
+		}
+      },
+      "menus": {
+        "npcs": "NPC",
+        "pcs": "玩家",
+		"groups": "小队",
+        "rollRequestsTitle": "掷骰请求",
+        "dragHandleTooltip": "拖动菜单",
+        "noActors": "无角色",
+        "noActorsDropHint": "此列表中无角色。从角色目录中拖动一些到此，或简单地将Token添加到激活场景中。",
+        "noGroups": "无小队",
+        "noGroupsDropHint": "此列表中无小队。从角色目录中将遭遇或小队角色拖拽至此。"
+      }
+    },
+    "common": {
+      "and": "和"
+    },
+    "rollTypes": {
+      "abilitycheck": "属性检定",
+      "savingthrow": "豁免检定",
+      "skill": "技能检定",
+      "tool": "工具检定",
+      "concentration": "专注检定",
+      "initiativedialog": "先攻检定",
+      "deathsave": "死亡豁免",
+      "custom": "自定义掷骰",
+      "ability": "属性检定",
+      "save": "豁免检定",
+      "initiative": "先攻检定",
+      "attack": "攻击检定",
+      "damage": "伤害掷骰",
+      "itemsave": "豁免（物品）",
+      "hitdie": "生命骰"
+    },
+    "tiles": {
+      "entity": "角色",
+		"dc": "难度等级 (DC)",
+		"advantage": "优势/劣势",
+		"bonus": "情景加值",
+		"bonusHelp": "输入加值/减值（例如：'+2'、'-1'、'1d4'）",
+		"advantageOptions": {
+		  "normal": "正常",
+		  "advantage": "优势",
+		  "disadvantage": "劣势"
+		},
+      "requestRoll": {
+        "name": "请求掷骰",
+		  "requestType": "掷骰类型",
+		  "rollKey": "特定掷骰",
+		  "rollKeyHelp": "输入特定的掷骰键（例如：'acr' 代表特技，'str' 代表力量）。对于不需要键的掷骰（如先攻）请留空。",
+		  "entityHelp": "选择哪些角色应该进行掷骰",
+		  "skipRollDialog": "跳过掷骰对话框"
+      }
+    }
+  }
+}

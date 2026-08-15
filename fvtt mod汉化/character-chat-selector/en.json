@@ -1,0 +1,233 @@
+{
+    "CHATSELECTOR": {
+        "Default": "Default",
+        "RefreshList": "Refresh List",
+        "Edit": "Edit",
+        "Save": "Save",
+        "Cancel": "Cancel",
+        "Settings": {
+			"Save": "Save",
+            "AllowPersonalThemes": {
+                "Name": "Allow Personal Themes",
+                "Hint": "If enabled, player's custom portrait styles (borders, glow, etc.) will be visible to everyone. If disabled, your local settings will apply to all messages."
+            },
+            "ShowSelector": {
+                "Name": "Show Chat Selector",
+                "Hint": "Displays a selector that allows chatting as a character without selecting a token."
+            },
+            "SpeakAsToken": {
+                "Name": "Speak As Token Mode",
+                "Hint": "When enabled, it will behave as if you were speaking with the selected character's token, even if the token is not in the scene."
+            },
+            "ShowPortrait": {
+                "Name": "Show Chat Portrait",
+                "Hint": "Displays the speaker's portrait in chat messages."
+            },
+            "PortraitSize": {
+                "Name": "Portrait Size",
+                "Hint": "Sets the size of the chat portrait in pixels."
+            },
+            "PortraitBorder": {
+                "Name": "Portrait Border Style",
+                "Choices": {
+                    "Default": "Default",
+                    "None": "None",
+                    "Square": "Square",
+                    "Circle": "Circle",
+                    "minimalist": "minimalist",
+                    "cyber": "Cyberpunk"
+                }
+            },
+            "PortraitBorderColor": {
+                "Name": "Portrait Border Color"
+            },
+            "UseUserColor": {
+                "Name": "Use User Color for Portrait Border",
+                "Hint": "Uses the user's color as the border color."
+            },
+            "ChatBorderColor": {
+                "Name": "Chat Border Color"
+            },
+            "UseUserBorder": {
+                "Name": "Use User Color for Chat Border",
+                "Hint": "Uses the user's color as the border color of chat messages."
+            },
+            "UseSecondaryColor": {
+                "Name": "Use Secondary Color",
+                "Hint": "Use secondary color for gradients and double borders"
+            },
+            "SecondaryColor": {
+                "Name": "Secondary Color",
+                "Hint": "Color used for gradients and double borders"
+            },
+            "UseGlowEffect": {
+                "Name": "Use Energy Border",
+                "Hint": "Applies a rotating energy effect along the border"
+            },
+            "GlowColor": {
+                "Name": "Energy Color",
+                "Hint": "Color of the rotating energy"
+            },
+            "GlowStrength": {
+                "Name": "Glow Effect Strength",
+                "Hint": "Strength of the glowing effect (0-20)"
+            },
+            "UseHpTint": {
+                "Name": "Show HP Status",
+                "Hint": "Portrait becomes redder as HP decreases"
+            },
+            "HpTintIntensity": {
+                "Name": "HP Status Intensity",
+                "Hint": "Sets the intensity of the red tint for HP status"
+            },
+            "HpCurrentPath": {
+                "Name": "Current HP Path",
+                "Hint": "Enter the actor data path where current HP is stored"
+            },
+            "HpMaxPath": {
+                "Name": "Maximum HP Path",
+                "Hint": "Enter the actor data path where maximum HP is stored"
+            },
+            "HidePortrait": {
+            "Name": "Hide D&D5e Portrait",
+            "Hint": "Hides the default D&D5e chat portrait when enabled. This helps avoid duplicate portraits when using the Chat Selector module."
+            },
+            "AllowedModuleFlags": {
+                "Name": "Allowed Module Flags",
+                "Hint": "Enter module flag IDs separated by commas to allow portrait display for their messages (e.g., foundryvtt-simple-calendar, module-id-2)"
+            },
+            "DropdownBackground": {
+                "Name": "Dropdown Background Color",
+                "Hint": "Set the background color of the dropdown menu"
+            },
+            "DropdownTextColor": {
+                "Name": "Dropdown Text Color",
+                "Hint": "Set the text color of the dropdown menu"
+            },
+            "DropdownBorderColor": {
+                "Name": "Dropdown Border Color",
+                "Hint": "Set the border color of the dropdown menu"
+            },
+            "DropdownHoverColor": {
+                "Name": "Dropdown Hover Color",
+                "Hint": "Set the background color when hovering over dropdown items"
+            },
+            "EnableThumbnailPreview": {
+                "Name": "Enable Thumbnail Preview",
+                "Hint": "Show large preview when hovering over character thumbnails"
+            },
+            "EnableHotkeys": {
+                "Name": "Enable Actor Switch Hotkeys",
+                "Hint": "You can quickly switch actors using Ctrl + number/letter keys."
+            },
+            "HotkeyModifier": {
+                "Name": "Hotkey Modifier Key",
+                "Hint": "Select a modifier key to use with the hotkey. Be careful to avoid conflicts with other Foundry hotkeys."
+            },
+            "HotkeyConfig": {
+                "Instructions": "Click each actor's input field and press the desired key to set a hotkey (number or letter).",
+                "ModifierNote": "The assigned hotkey will be used with {modifier} (e.g., {modifier} + 1)."
+            },
+            "EnableRuby": {
+                "Name": "Enable Ruby Text",
+                "Hint": "Enable ruby text support in chat"
+            },
+            "RubySize": {
+                "Name": "Ruby Text Size",
+                "Hint": "Set the size of ruby text relative to the base text"
+            },
+            "RubyColor": {
+                "Name": "Ruby Text Color",
+                "Hint": "Set the color of ruby text"
+            },
+            "ReloadRequired": "Please refresh your browser for the changes to take effect.",
+            "FactoryReset": {
+                "Name": "Factory Reset",
+                "Hint": "Resets all settings, hotkeys, and personal themes to default. Use this if you encounter issues. (Refreshes automatically)",
+                "ConfirmTitle": "Confirm Factory Reset",
+                "ConfirmContent": "<p>Are you sure?</p><p><strong>All personal settings and hotkeys will be deleted.</strong></p>"
+            },
+            "EnableOptimization": {
+                "Name": "Chat Performance Optimization (Infinite Scroll)",
+                "Hint": "Limits the number of messages in the chat log and loads previous messages when scrolling up. Similar functionality to the 'Less Chat' module."
+            },
+            "MaxMessages": {
+                "Name": "Max Displayed Messages",
+                "Hint": "The maximum number of messages to keep in the chat window. If exceeded, the oldest messages are removed from the view."
+            },
+            "BatchSize": {
+                "Name": "Scroll Loading Batch Size",
+                "Hint": "The number of past messages to load at once when scrolling up."
+            },
+            "EnableNotification": {
+                "Name": "Enable Chat Notification Sound",
+                "Hint": "Plays a sound when a new chat message is received."
+            },
+            "PlayNotificationForSelf": {
+                "Name": "Play for My Messages",
+                "Hint": "Whether to play the sound for messages sent by yourself."
+            },
+            "NotificationSound": {
+                "Name": "Notification Sound File",
+                "Hint": "Select the audio file to play."
+            },
+            "NotificationVolume": {
+                "Name": "Notification Volume",
+                "Hint": "Adjust the volume of the notification sound."
+            },
+            "Saved": "Settings saved successfully.",
+            "Tabs": {
+                "General": "General",
+                "Appearance": "Appearance",
+                "Chat": "Chat & Text",
+                "UI": "Selector UI",
+                "Advanced": "Advanced"
+            },
+            "Headers": {
+                "Core": "Core Functionality",
+                "World": "World Settings (GM Only)",
+                "Portrait": "Portrait Style",
+                "Colors": "Colors & Effects",
+                "ChatMessage": "Chat Message",
+                "Ruby": "Ruby Text (Furigana)",
+                "UI": "Selector UI Customization",
+                "Optimization": "Chat Optimization",
+                "Notification": "Notification Sound",
+                "HpTint": "HP Tint (Red Overlay)"
+            },
+            "Preview": {
+                "Title": "Live Preview",
+                "Note": "Some changes may require saving to take full effect.",
+                "Name": "Character Name",
+                "Flavor": "Flavor Text",
+                "Content": "Test Message."
+            },
+            "HideWfrp4ePortrait": {
+                "Name": "Hide WFRP4e Portrait",
+                "Hint": "Hides the default WFRP4e chat portrait when enabled. This helps avoid duplicate portraits when using the Chat Selector module."
+            }
+        },
+        "ConfigureHotkeys": "Configure Hotkeys",
+        "HotkeyConfig": {
+        "Title": "Actor Switch Hotkey Configuration",
+        "Instructions": "Click each actor's input field and press the desired key to set a hotkey.",
+        "ModifierNote": "The assigned hotkey will be used with the {modifier} key."
+        },
+        "Warnings": {
+            "NoName": "Please enter a Actor name.",
+            "NoMatch": "No matching Actor found.",
+            "HotkeyInUse": "{name} is already using the {key} key.",
+            "NoMessage": "Please enter a message after the character name."
+        },
+        "Info": {
+            "CharacterChanged": "Actor changed to {name}.",
+            "TempCharacterEnabled": "Now chatting as temporary character: {name}.",
+            "TempCharacterDisabled": "Temporary character mode has been disabled."
+        },
+        "Config": {
+            "Title": "Character Chat Selector Configuration",
+            "Button": "Open Config Menu",
+            "Hint": "Open the main configuration menu to customize portraits, borders, and other settings."
+        }
+    }
+}

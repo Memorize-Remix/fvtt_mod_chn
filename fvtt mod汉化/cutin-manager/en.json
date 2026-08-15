@@ -1,0 +1,290 @@
+{
+  "CIM": {
+    "ControlTitle": "Cut-in Manager",
+    "Export": "Export",
+    "Import": "Import",
+    "Token": "Token",
+    "Pc": "PC",
+    "Npc": "NPC",
+    "GameMaster": "Gamemaster",
+    "Players": "Players",
+    "List": {
+      "Title": "Cut-in Manager",
+      "New": "Add Cut-in",
+      "Play": "Play",
+      "Edit": "Edit",
+      "Duplicate": "Duplicate",
+      "Delete": "Delete",
+      "ToggleOn": "Disable",
+      "ToggleOff": "Enable",
+      "Tooltips": {
+        "ScanIds": "Cut-in ID List"
+      }
+    },
+    "Delete": {
+      "Title": "Delete Cut-in",
+      "Confirm": "Delete the cut-in \"<strong>{name}</strong>\"?"
+    },
+    "Trigger": {
+      "DefaultName": "Cut-in",
+      "Title": "Cut-in Settings",
+      "TitleNew": "New Cut-in",
+      "TitleEdit": "Edit Cut-in",
+      "TabTrigger": "Trigger",
+      "TabCutin": "Cut-in",
+      "TabScript": "Script",
+      "Preview": "Preview",
+      "Save": "Save Changes",
+      "Tooltips": {
+        "EditId": "Cut-in ID: {id}",
+        "InvertCondition": "Invert condition",
+        "PasteSettings": "Paste Cut-in Settings",
+        "ExportCutin": "Export Cut-in"
+      },
+      "AddTrigger": "Add Trigger",
+      "TitleContainer": "Edit Container",
+      "TitleContainerNew": "New Container",
+      "TitleContainerEdit": "Edit Container: {name}",
+      "ApplyChanges": "Apply Changes",
+      "TokenPickerInfo": "Click a token on the scene to select it.",
+      "NoTokenSelected": "No token selected",
+      "Key": {
+        "SupportTriggerHelp": "Support: A trigger used to refine conditions. Don't function on its own.",
+        "Container": {
+          "TypeName": "Trigger Container",
+          "Label": "Container Memo",
+          "Description": "Group multiple triggers into a container.",
+          "Empty": "No Triggers"
+        },
+        "ChatMessage": {
+          "TypeName": "Chat Message",
+          "Label": "Keyword",
+          "Description": "Triggers based on a specific keyword in a chat message.",
+          "PartialMatch": "Partial Match",
+          "ExactMatch": "Exact Match",
+          "StartsWith": "Starts With",
+          "EndsWith": "Ends With",
+          "DisplayKeyword": "Display keyword in message"
+        },
+        "DiceRollTotal": {
+          "TypeName": "Roll Total",
+          "Description": "Triggers based on the total result of a dice roll.",
+          "Total": "Total",
+          "DiceTotal": "Dice Total"
+        },
+        "DiceRollDice": {
+          "TypeName": "Dice",
+          "Description": "Triggers based on the individual dice results of a roll.",
+          "Dice": "Dice",
+          "Count": "Count"
+        },
+        "DiceRollFormula": {
+          "TypeName": "Roll Formula",
+          "Description": "Triggers based on the formula of a dice roll.",
+          "FormulaLabel": "Roll Formula"
+        },
+        "CombatStart": {
+          "TypeName": "Combat Start",
+          "Description": "Triggers when a combat starts. End triggers using NOT.",
+          "OnCreate": "On Combat Creation",
+          "OnStart": "On Combat Start"
+        },
+        "RoundStart": {
+          "TypeName": "Round Start",
+          "Description": "Triggers when a combat round starts. End triggers using NOT.",
+          "All": "All Rounds",
+          "Specific": "Specific Round(s)",
+          "EveryN": "Every N Rounds",
+          "EvenOdd": "Even/Odd Rounds",
+          "Even": "Even Rounds",
+          "Odd": "Odd Rounds",
+          "GreaterThan": "Round Greater Than or Equal To",
+          "LessThan": "Round Less Than or Equal To",
+          "Mode": "Mode",
+          "Value": "ex: 1, 3-5, 8",
+          "EverySummary": ": every",
+          "GreaterSummary": ": later",
+          "LessSummary": ": before"
+        },
+        "TurnStart": {
+          "TypeName": "Turn Start",
+          "Description": "Triggers when a combat turn starts. End triggers using NOT."
+        },
+        "CutinPlayback": {
+          "TypeName": "Cut-in Playback",
+          "Description": "Triggers when another cut-in is played.",
+          "TargetCutin": "Target Cut-in",
+          "Timing": "Timing",
+          "Delay": "Delay (ms)",
+          "ManualInput": "Manual ID Input",
+          "OnStart": "On Start",
+          "OnEnd": "On End",
+          "AfterDelay": "After Delay"
+        },
+        "MessageType": {
+          "TypeName": "Message Type",
+          "Description": "Triggers based on the type of chat message. Liimits chat message, Roll Total, Dice, Dice Formula.",
+          "IC": "IC (In Character)",
+          "OOC": "OOC (Out of Character)",
+          "ROLL": "ROLL",
+          "Whisper": "Whisper",
+          "OTHER": "OTHER"
+        },
+        "TriggeringCharacter": {
+          "TypeName": "Triggering Character",
+          "Description": "Triggers based on the executing character. Limits Chat Message, Roll Total, Dice, Roll Formula, Turn Start, and Turn Active triggers."
+        },
+        "TriggeringPlayer": {
+          "TypeName": "Triggering Player",
+          "Description": "Triggers based on the user who initiated the action. Limits Chat Message, Roll Total, Dice, Roll Formula, Turn Start, and Turn Active triggers."
+        },
+        "CombatState": {
+          "TypeName": "in Combat",
+          "Label": "Condition",
+          "Description": "Triggers during combat."
+        },
+        "TurnActive": {
+          "TypeName": "Turn Active",
+          "Description": "Triggers during a combatant's turn."
+        },
+        "Target": {
+          "TypeName": "Target",
+          "Description": "Triggers based on the user's target selection.",
+          "Any": "Any Target",
+          "PcOnly": "Only Player Characters",
+          "NpcOnly": "Only Non-Player Characters",
+          "Specific": "Specify Character",
+          "SpecifyCharacter": "Character",
+          "SpecifyToken": "Specify Token"
+        }
+      },
+      "BlockTitleMedia": "Image/Video",
+      "BlockTitleAudio": "Audio",
+      "BlockTitleText": "Text",
+      "FilePath": "File Path",
+      "OptionsTitle": "Advanced Options",
+      "IncludeSidebar": "Include Sidebar Area",
+      "ScaleMode": "Scale Mode",
+      "ScaleModeNone": "None (100%)",
+      "ScaleModeMaximize": "Fit to Screen",
+      "ScaleModeCustom": "Custom",
+      "KeepAspectRatio": "Keep Aspect Ratio",
+      "Magnification": "Custom Magnification (%)",
+      "AnchorMode": "Position",
+      "AnchorModeCenter": "Center",
+      "AnchorModeTop": "Top",
+      "AnchorModeBottom": "Bottom",
+      "AnchorModeLeft": "Left",
+      "AnchorModeRight": "Right",
+      "AnchorModeTopLeft": "Top-Left",
+      "AnchorModeTopRight": "Top-Right",
+      "AnchorModeBottomLeft": "Bottom-Left",
+      "AnchorModeBottomRight": "Bottom-Right",
+      "AnchorModeCustom": "Custom",
+      "CustomAnchor": "Custom Position (Min:0 Max:1.0)",
+      "Playback": "Playback",
+      "PlayModeOnce": "Once",
+      "PlayModeRepeat": "Repeat",
+      "PlayModeFixed": "Fixed Time",
+      "Repetitions": "Repetitions",
+      "Duration": "Duration (ms)",
+      "Delay": "Delay (ms)",
+      "Fade": "Fade",
+      "In": "In (ms)",
+      "Out": "Out (ms)",
+      "Volume": "Image/Video File Volume",
+      "AudioVolume": "Audio File Volume",
+      "AudioPlayback": "Audio Playback",
+      "TextLabel": "Text",
+      "StrokeSettings": "Stroke",
+      "SizeUnit": "Size (px)",
+      "ExecutionMode": "Execution Mode",
+      "ExecutionModeCutinOnly": "Execute Cut-in Only",
+      "ExecutionModeCutinAndScript": "Execute Cut-in and Script",
+      "ExecutionModeScriptOnly": "Execute Script Only",
+      "ScriptLabel": "Script"
+    },
+    "ExportDialog": {
+      "ConfirmationText": "Export cut-ins to a JSON file?",
+      "FileName": "File Name",
+      "ConfirmationTextSingle": "Export \"{name}\" to a JSON file?",
+      "ConfirmationTextAll": "Export all cut-ins to a JSON file."
+    },
+    "ImportDialog": {
+      "ImportMode": "Import Mode",
+      "AddImport": "Add Cut-ins",
+      "OverwriteImport": "Overwrite All Cut-ins",
+      "AddDescription": "New cut-ins will be added to the existing list. You can choose to skip or rename cut-ins with duplicate IDs.",
+      "OverwriteDescription": "All existing cut-ins will be deleted and replaced with the imported cut-ins. This action cannot be undone.",
+      "SkipDuplicates": "Skip cut-ins with duplicate IDs",
+      "FilePath": "File Path"
+    },
+    "Cleanup": {
+      "ConfirmTitle": "Cleanup Unused Data",
+      "ConfirmContent": "<p>Found <strong>{count}</strong> unused triggers.</p><p>Are you sure you want to delete them? This action cannot be undone.</p>"
+    },
+    "IdList": {
+      "Title": "Cut-in ID List",
+      "NoneConfigured": "No cut-ins are configured."
+    },
+    "IdEdit": {
+      "Title": "Edit Cut-in ID",
+      "Label": "Cut-in ID"
+    },
+    "FilePicker": {
+      "ImportTitle": "Select Import File"
+    },
+    "Settings": {
+      "PlayerPermission": {
+        "Name": "Allow Players to View Cut-ins list",
+        "Hint": "ON: Players can view the cut-in list and play from cut-in list.  OFF: Players can only play cut-ins by triggers."
+      },
+      "ImageDuration": {
+        "Name": "Standard Duration for Image (ms)",
+        "Hint": "Sets the duration for a single playback when the cut-in is a still image. If repeated, this duration will be used for each repetition."
+      },
+      "Cleanup": {
+        "Name": "Cleanup Unused Data",
+        "Hint": "Scans and removes unused data from Cut-in Manager.",
+        "Label": "Cleanup"
+      },
+      "ShowTriggerDescription": {
+        "Name": "Show Trigger Descriptions",
+        "Hint": "If enabled, a brief description for each trigger type will be shown in the cut-in settings window."
+      }
+    },
+    "Notifications": {
+      "IdCopied": "Copied ID to clipboard.",
+      "ExportSuccess": "Successfully exported \"{fileName}\".",
+      "AddImportSuccess": "Successfully added {importedCount} cut-ins. (Skipped: {skippedCount}, Renamed: {renamedCount})",
+      "OverwriteImportSuccess": "Successfully overwritten all cut-ins. {count} cut-ins imported.",
+      "AllCutinsStopped": "All cut-ins have been stopped.",
+      "AllCutinsHalted": "All cut-ins have been stopped and disabled.",
+      "ChangesStaged": "Changes have been staged. Save the main cut-in settings to make them permanent.",
+      "OrphansFound": "Cut-in Manager | {count} unused data were found. You can run a cleanup.",
+      "NoOrphansFound": "No unused data found. Everything is clean!",
+      "CleanupSuccess": "Successfully deleted {count} unused data."
+    },
+    "Error": {
+      "NoMediaPath": "The cut-in '{name}' was triggered, but no Cut-in is set.",
+      "CannotPlayNoMedia": "No Cut-in is set.",
+      "NotFound": "Cut-in with ID '{id}' not found.",
+      "CannotBeEmpty": "ID cannot be empty.",
+      "AlreadyExists": "That ID is already in use.",
+      "ScriptGenerationError": "Could not generate script. Make sure the file paths are correct.",
+      "SequencerNotActive": "Cut-in Manager requires the 'Sequencer' module to be active.",
+      "ScriptExecutionError": "Error executing custom script for \"{name}\".",
+      "NoFileSelected": "No file selected for import.",
+      "FileNotFound": "File not found at path: {path}. Please ensure the file is uploaded to Foundry VTT's data directory.",
+      "FileReadError": "Error reading file: {error}",
+      "EmptyFileContent": "File content is empty.",
+      "InvalidJson": "Invalid JSON format: {error}",
+      "InvalidImportFile": "Invalid import file format. Expected a 'cutins' array.",
+      "DuplicateIdSkipped": "Skipped cut-in \"{name}\" (ID: {id}) due to duplicate ID.",
+      "DuplicateIdRenamed": "Cut-in \"{name}\" (Old ID: {oldId}) renamed to \"{newId}\" due to duplicate ID.",
+      "CutinNotFound": "The specified cut-in ID '{id}' does not exist. Please check the trigger settings.",
+      "TargetNotFound": "The specified actor/token \"{name}\" does not exist. Please check the trigger settings.",
+      "PlayerNotFound": "The specified player \"{name}\" does not exist. Please check the trigger settings."
+    }
+  }
+}

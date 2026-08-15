@@ -1,0 +1,18 @@
+{
+  "instant-range": {
+    "settings": {
+      "hoverOnlyInCombat": {
+        "name": "Hover only in combat",
+        "hint": "Only show distance to hovered token when combat is active."
+      },
+      "refreshThrottleMs": {
+        "name": "Refresh throttle (ms)",
+        "hint": "Limit how often distance labels refresh during highlightObject interactions. 0 disables throttling."
+      }
+    },
+    "warnings": {
+      "conflictDetected": "Instant Range detected a conflicting module: {name} ({id}). Only one hover-distance module should be active at a time.",
+      "failedToRegisterWrappers": "Instant Range failed to register its libWrapper hooks. Package: {package_id}, error: {error_name}."
+    }
+  }
+}

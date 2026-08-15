@@ -1,0 +1,38 @@
+{
+    "tokenflip": {
+        "token-flip-config": {
+            "title": "Configure Token Flip",
+            "add": "Add New Face",
+            "flip": "Flip Token",
+            "model3d": "3D Model",
+            "faceId": "Face ID",
+            "protoWarning": "WARNING: Due to Core Foundry Bugs affecting Prototype Tokens, it's highly recommended to set up token flip on a token in the scene, then Assign the token to the prototype token.",
+            "copiedId": "Copied ID to clipboard",
+            "copyID": "Copy ID",
+            "autoFlip": {
+                "label": "Auto Flip",
+                "none": "None",
+                "inCombat": "In Combat",
+                "outOfCombat": "Out of Combat"
+            },
+            "transition": {
+                "label": "Transition",
+                "flip": "Flip"
+            },
+            "autoFlipMacro": {
+                "label": "Auto Flip Macro",
+                "hint": "A macro run when the actor or one of it's items is updated and when a GM loads into a scene. Return true to flip to this face. See the wiki for more information."
+            }
+        },
+        "settings": {
+            "flipSpeed": {
+                "name": "Flip Speed",
+                "hint": "Duration of the flip animation in seconds. This number is multiplied by 10 for non-flip animations. Default is 0.1."
+            },
+            "enableAutoFlip": {
+                "name": "Enable Auto Flip",
+                "hint": "Enable auto flipping of tokens. If you are not using the auto flip feature, you can disable this setting to save some performance."
+            }
+        }
+    }
+}

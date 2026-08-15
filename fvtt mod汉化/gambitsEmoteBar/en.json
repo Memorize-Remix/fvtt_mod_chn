@@ -1,0 +1,164 @@
+{
+  "I18N.LANGUAGE": "English",
+  "gambitsEmoteBar": {
+    "controls": {
+        "emoteBar": {
+            "title": "Emote Bar",
+        "resetOrderAZ": "Reset Emote Order",
+        "resetOrderAZDone": "Emote order reset to A–Z."
+        }
+    },
+    "selector": {
+        "sequencer": {
+            "leftEye": "Left Eye",
+            "rightEye": "Right Eye",
+            "mouth": "Mouth",
+            "nose": "Nose"
+        }
+    },
+    "keybinds": {
+        "toggleEmoteBar": {
+            "name": "Toggle Emote Bar",
+            "hint": "Press this key to open/close the emote bar"
+        }
+    },
+    "menu": {
+        "emote": {
+            "laugh": "Laugh",
+            "angry": "Angry",
+            "surprised": "Surprised",
+            "shout": "Shout",
+            "drunk": "Drunk (Nose)",
+            "soul": "Soul",
+            "slap": "Slap",
+            "cry": "Cry (Eyes)",
+            "offset": "Configure Offsets (Eyes, Mouth, Nose)",
+            "disgusted": "Disgusted",
+            "giggle": "Giggle",
+            "love": "Love",
+            "rofl": "ROFL",
+            "smoking": "Smoking (Mouth)",
+            "nervous": "Nervous",
+            "party": "Party",
+            "thunderHype": "THUNDER!",
+			"thankYou": "Thank You",
+			"wink": "Wink",
+			"smug": "Smug",
+			"huh": "Huh?",
+			"confused": "Confused",
+			"whistle": "Whistle (Mouth)",
+            "filepicker": "Configure Default Emote Sounds",
+            "endAll": "End all Emotes you have applied",
+                "registerDialog": "Register Custom Emote",
+                "hideUnhideEmote": "Hide/Unhide Emotes",
+                "bloodied": "Bloodied",
+                "suspicious": "Suspicious (Eyes)",
+				"endAllSelected": "End emotes on selected token(s)",
+				"endAllAll": "End emotes on all tokens",
+				"playMode": {
+				  "permanent": "Persistent",
+				  "timed": "Timed",
+				  "seconds": "sec",
+				  "toggleTooltip": "Toggle Persistent vs Timed emotes",
+				  "durationTooltip": "In Timed mode, emotes end automatically after this many seconds"
+			}
+        }
+    },
+    "log": {
+        "warning": {
+            "noEffect": "No effect defined for emote:",
+            "pleaseSelectOneToken": "Please select at least one token.",
+            "noPermission": "You do not have permission to use the emote tool on the selected token(s).",
+            "selectMultiple": "Hold Shift to select multiple emotes IF YOU DARE.",
+            "selectSingle": "Please select a single token to set offsets.",
+                "handleEmoteClick": "Error executing custom emote macro:"
+            }
+        },
+        "dialog": {
+            "placeholder": {
+                "openIconPicker": "Search icons...",
+                "emoteName": "Enter emote name...",
+                "emoteTooltipText": "Enter emote tooltip text...",
+                "soundFilePath": "Enter sound file path...",
+				"preset": "Select a built-in emote..."
+            },
+            "window": {
+                "openIconPicker": "Pick Icon",
+				"registerCustomEmote": "Register Custom Emote",
+                "editMacroCode": "Edit Macro Code",
+                "manageHidingEmotes": "Manage Hiding Emotes",
+                "customEmoteMacros": "Custom Emote Macros",
+                "pickIcon": "Pick Icon",
+                "emoteSoundFiles": "Select Emote Sound Files",
+                "editTriggers": "Edit Triggers",
+                "editTrigger": "Edit Trigger",
+                "newTrigger": "New Trigger",
+                "manageTriggers": "Manage Triggers"
+            },
+            "field": {
+                "uniqueEmoteName": "Unique Emote Name:",
+                "emoteTooltipText": "Emote Tooltip Text:",
+                "emoteIcon": "Emote Icon:",
+                "macro": "Macro:",
+                "generatedName": ".name:",
+                "macroCode": "Macro Code:",
+                "triggers": "Triggers:",
+                "openTriggers": "Open Triggers",
+                "hook": "Hook:",
+                "target": "Target:",
+                "tokenIds": "Token ID's:",
+                "tokens": "Tokens:",
+                "duration": "Duration:",
+                "hpThreshold": "HP Threshold %:",
+				"preset": "Preset:"
+            },
+            "tooltip": {
+                "generatedName": "If using a persistent effect, input this .name value (if you ignore this, things WILL break)",
+                "openTriggers": "Open the trigger list for this emote",
+                "tokenIds": "Use a comma to separate ID's when using multiple",
+                "duration": "Value in seconds",
+                "trigger": "Trigger",
+                "triggers": "Triggers",
+				"requiresJB2APatreon": "Available when using the JB2A Patreon module.",
+				"requiresEskiePatreon": "Available when using the Eskie Effects Patreon module.",
+				"preset": "Insert the built-in emote's macro code as a starting point (requires an emote name first)."
+            },
+            "button": {
+                "select": "Select",
+                "cancel": "Cancel",
+                "saveEmote": "Save Emote",
+                "pickIcon": "Pick Icon",
+                "save": "Save",
+                "close": "Close",
+                "edit": "Edit",
+                "delete": "Delete",
+                "configureTriggers": "Configure Triggers",
+                "openTriggers": "Open Triggers"
+            },
+            "heading": {
+                "defaultEmotes": "Default Emotes",
+                "customEmotes": "Custom Emotes",
+                "browseSoundFiles": "Browse sound files"
+            },
+            "message": {
+                "noDefaultEmotes": "No default emotes defined.",
+                "noCustomEmotes": "No custom emotes defined.",
+				"noTriggers": "No triggers defined."
+			  },
+			  "playmode": {
+				"locked": "You can't change timed/permanent mode while a timed emote is playing."
+            }
+        },
+        "error": {
+            "uniqueEmoteNameNoSpaces": "Unique Emote Name cannot contain spaces.",
+            "fillAllFields": "You must fill in all fields.",
+            "emoteNameExists": "An emote with this name already exists. Please choose a unique name."
+        },
+		"settings": {
+		  "disableTokenControls": {
+			"name": "Disable Emote Bar Token Controls",
+			"hint": "Hide the Emote Bar icon from the Token Controls toolbar (use a keybind to open it)."
+		  }
+		}
+    }
+}

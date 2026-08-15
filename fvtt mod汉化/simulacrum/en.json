@@ -1,0 +1,142 @@
+{
+  "SIMULACRUM": {
+    "Settings": {
+      "ApiKey": {
+        "Name": "AI Provider API Key",
+        "Hint": "Enter your API key (OpenAI-compatible APIs)."
+      },
+      "TrustAllTools": "Trust All Tools (Dangerous)",
+      "TrustAllToolsHint": "⚠️ WARNING: Allows AI to execute ANY tool without confirmation. Only enable if you fully trust the AI.",
+      "ToolPermissions": {
+        "Name": "Tool Permissions",
+        "Label": "Configure Tool Permissions",
+        "Hint": "Configure which destructive AI tools require confirmation, are always allowed, or are blocked.",
+        "TrustAllWarning": "⚠️ DANGER: All tool permissions are bypassed! The AI can execute any action without asking.",
+        "DestructiveTools": "Destructive Tools",
+        "MacroTools": "Macro Tools",
+        "NoMacroTools": "No custom macro tools found (check compendium).",
+        "ResetDefaults": "Reset to Defaults",
+        "ResetConfirm": "Are you sure you want to reset all tool permissions to their default values (Ask Each Time)?",
+        "ResetSuccess": "Tool permissions reset to defaults.",
+        "Saved": "Tool permissions saved.",
+        "PermissionState": {
+          "Ask": "Ask Each Time",
+          "Allow": "Always Allow",
+          "Deny": "Always Deny"
+        }
+      },
+      "Save": "Save Changes",
+      "FallbackContextLimit": "Fallback Context Limit",
+      "FallbackContextLimitHint": "Token limit used when context window cannot be derived from model API. Most modern models have 32k-128k context."
+    },
+    "ToolPermissionsConfig": {
+      "Title": "Tool Permissions Configuration"
+    },
+    "Chat": {
+      "CommandDescription": "Interact with the Simulacrum AI assistant.",
+      "NoApiKey": "Please configure your AI API key in the module settings."
+    },
+    "Panel": {
+      "Title": "Simulacrum AI Assistant"
+    },
+    "SidebarTab": {
+      "Title": "Simulacrum",
+      "DisabledTooltip": "AI endpoint not configured or invalid"
+    },
+    "AIName": "Simulacrum AI",
+    "Welcome": "Welcome",
+    "WelcomeMessage": "Hello! I'm your AI assistant for campaign document management. How can I help you today?",
+    "AccessDenied": "Simulacrum is only available to Game Masters.",
+    "InputPlaceholder": "Enter message",
+    "SendMessage": "Send Message",
+    "ClearChat": "Clear Chat",
+    "SystemPrompt": {
+      "Standard": {
+        "Identity": "You are Simulacrum, an expert AI Campaign Assistant for FoundryVTT. Your goal is to help the user manage their world data with precision and creativity.",
+        "CriticalRules": "CRITICAL RULES (NEVER VIOLATE):\n1. NEVER create, update, or delete a document you have not first read. Always use `document_read` or `document_search` BEFORE any modification.\n2. NEVER propose actions on documents without understanding their current state and schema.\n3. ALWAYS use `manage_task` for ANY request involving more than one action.\n4. NEVER skip steps. Complete each step fully before moving to the next.\n5. ALWAYS verify your work by reading back modified documents.\n6. ALWAYS use specific Foundry UUID syntax for ALL document references (e.g., @UUID[JournalEntry.ID]{Name}). Never use names or plain IDs.\n7. ALWAYS validate image URLs. If an image is 404/missing, use `search_assets` to find a valid one.\n8. ITERATIVE PROCESSING (MANDATORY): For large documents or complex tasks, work ITERATIVELY. Never attempt to add all content at once - break it into smaller, manageable chunks. Use `manage_task` to track each chunk as a separate step. This reduces errors and ensures each piece is verified.",
+        "StrategicProtocol": "STRATEGIC PROTOCOL - Execute EVERY request using this exact sequence:\n\n1. PLAN: Determine if task is complex (>1 action, multiple documents, dependencies, large content). If yes, IMMEDIATELY call `manage_task` with action='start_task' and a complete step-by-step plan. For large documents, break into multiple steps (e.g., 'Add Section 1', 'Add Section 2').\n\n2. RESEARCH (MANDATORY): Before ANY action, gather context:\n   - Use `document_search` to find relevant existing documents\n   - Use `document_list` to understand what exists\n   - Use `document_schema` to understand required fields\n   You MUST complete research before proceeding. Never assume.\n\n3. INSPECT (MANDATORY): Read ALL documents you will touch:\n   - Use `document_read` on every document you plan to modify\n   - Understand current state before proposing changes\n   Never modify what you haven't read.\n\n4. EXECUTE ITERATIVELY: Perform actions in small, verifiable chunks:\n   - Call `manage_task` with action='update_task' to mark current step in_progress\n   - Execute the tool (`document_create`, `document_update`, etc.)\n   - Only ONE step should be in_progress at a time\n   - For large content, make multiple smaller updates rather than one massive update\n\n5. VERIFY (MANDATORY): Confirm success after EACH chunk:\n   - Use `document_read` to verify the change was applied correctly\n   - Call `manage_task` with action='update_task' to mark step completed IMMEDIATELY after verification\n   - Do NOT batch completions - mark done as soon as each step finishes\n\n6. CONTINUE: Move to the next step. Repeat steps 4-5 until all steps complete.\n\n7. FINISH: Call `manage_task` with action='finish_task', then provide final summary.",
+        "ToolOperatives": "TOOL USAGE:\n- You may chain multiple tools in sequence.\n- Act autonomously: do not stop to ask for permission unless the request is genuinely ambiguous.\n- When uncertain about document structure, ALWAYS check schema first.\n- Prefer reading over assuming. Prefer verifying over hoping.\n- If a tool fails due to invalid image, IMMEDIATELY use `search_assets` to find a replacement.",
+        "CommunicationStyle_v2": "COMMUNICATION:\n- Answer questions DIRECTLY. If asked a yes/no question, start with yes or no.\n- Don't deflect with \"how can I help?\" when asked a specific question - answer it first.\n- Own mistakes honestly. \"I was wrong\" > \"I apologize if my response...\"\n- Don't be defensive when called out - acknowledge and move forward.\n- Be concise but thorough when reporting what you did and found.\n- Use HTML formatting for structure/emphasis.\n- ALWAYS use @UUID[...] links for documents.",
+        "LoopTermination": "LOOP EXIT: You are in an autonomous tool execution loop. You MUST respond with a tool call - text-only responses are rejected. To exit this loop for ANY reason (task complete, need clarification, error, question), call the `end_loop` tool. Your text response is already displayed - the tool just signals loop termination."
+      },
+      "Legacy": {
+        "Intro_v2": "You are Simulacrum, an AI assistant for FoundryVTT. You strive to assist the user in world-building, context gathering, and document creation. You always respond with natural language, using HTML tags for emphatic formatting.",
+        "CriticalRules": "CRITICAL RULES (NEVER VIOLATE):\n1. NEVER create, update, or delete a document you have not first read. Always search or read BEFORE any modification.\n2. ALWAYS use `manage_task` for ANY request involving more than one action.\n3. NEVER skip steps. Complete and verify each step before moving to the next.\n4. ALWAYS verify your work by reading back modified documents.",
+        "ResearchFirst": "RESEARCH BEFORE ACTION (MANDATORY): Before modifying ANY document, you MUST:\n1. Use `document_search` or `document_list` to find relevant documents\n2. Use `document_read` to inspect documents you will modify\n3. Use `document_schema` to understand required fields\nNever assume. Never modify what you haven't read.",
+        "Instructions": "When you need to use a tool, respond with text AND a JSON block in this EXACT format:",
+        "Format": "```json\n{\"tool_call\":{\"name\":\"tool_name\",\"arguments\":{\"param1\":\"value1\",\"param2\":\"value2\"}}}\n```",
+        "Warning": "CRITICAL: Use valid JSON syntax only. No parentheses like (x,y), use arrays [\"x\",\"y\"]. Use the exact parameter names and types defined in the schemas below.",
+        "Action": "Act autonomously with initiative. Take immediate action to accomplish the user's request without unnecessary questions. But ALWAYS research and read before modifying.",
+        "DocumentSchema": "When creating or updating documents, ALWAYS check the document's schema first using `document_schema` to understand its required fields and structure. Fill out schema fields completely and accurately.",
+        "TaskTracking": "For multi-step tasks, use `manage_task` to track progress. Mark each step in_progress before starting, and completed immediately after finishing. Only one step should be in_progress at a time.",
+        "EndTask": "LOOP EXIT: You are in an autonomous tool execution loop. Text-only responses are rejected. To exit for ANY reason (complete, clarification, error), call the `end_loop` tool. Your text response is already displayed - the tool just signals loop termination.",
+        "Formatting": "Use HTML formatting tags to enhance readability. For example, use <strong> for important terms, <em> for emphasis, and <p> for paragraph breaks. Structure lists with <ul>/<ol> and <li> tags. Use heading tags <h3> through <h6> for section headers when appropriate."
+      },
+      "CustomInstructions": "Additional instructions: {customPrompt}"
+    },
+    "Tools": {
+      "document_create": "Create Document",
+      "document_read": "Read Document",
+      "document_update": "Update Document",
+      "document_delete": "Delete Document",
+      "document_list": "List Documents",
+      "document_search": "Search Documents",
+      "document_schema": "Inspect Schema",
+      "search_assets": "Search Assets",
+      "execute_macro": "Execute Macro",
+      "manage_task": "Manage Task",
+      "run_javascript": "Run Script",
+      "set_document_ownership": "Set Ownership",
+      "end_loop": "End Loop"
+    },
+    "ToolStatus": {
+      "Creating": "Creating",
+      "Reading": "Reading",
+      "Updating": "Updating",
+      "Deleting": "Deleting",
+      "Searching": "Searching",
+      "Listing": "Listing",
+      "Verifying": "Verifying",
+      "Working": "Working",
+      "Processing": "Processing"
+    },
+    "ProcessingWords": [
+      "Divining...",
+      "Scrying...",
+      "Weaving...",
+      "Conjuring...",
+      "Channeling...",
+      "Invoking...",
+      "Manifesting...",
+      "Attuning..."
+    ],
+    "Errors": {
+      "JSONParsingError": "JSON Parsing Error: {error}",
+      "JSONParsingInstructions": "The JSON in your previous response was malformed. Please provide a valid JSON tool call in the correct format:",
+      "JSONFormatExample": "```json\n{\"tool_call\": {\"name\": \"tool_name\", \"arguments\": {...}}}\n```",
+      "ProblematicContent": "Problematic content: {content}"
+    },
+    "ToolConfirmation": {
+      "Title": "Tool Confirmation Required",
+      "Allow": "Allow",
+      "Deny": "Deny",
+      "AlwaysAllow": "Always Allow",
+      "Blacklist": "Blacklist",
+      "Denied": "Tool execution denied by user",
+      "Blacklisted": "Tool is blacklisted and cannot be executed",
+      "WantsToExecute": "wants to execute"
+    },
+    "ToolExplainer": {
+      "CreateDocument": "Allows the AI to create new documents in your world (actors, items, journal entries, scenes, etc.)",
+      "UpdateDocument": "Allows the AI to modify existing documents in your world (actors, items, journal entries, etc.)",
+      "DeleteDocument": "Allows the AI to permanently delete documents from your world. This cannot be undone.",
+      "ExecuteMacro": "Allows the AI to run macros, which can execute arbitrary code defined in your world.",
+      "RunJavascript": "Allows the AI to execute any JavaScript code with full access to your game session.",
+      "MacroGeneric": "Allows the AI to execute this macro, which may contain arbitrary code.",
+      "SetDocumentOwnership": "Allows the AI to change who can view or edit documents by modifying their ownership permissions."
+    },
+    "ModelSelector": {
+      "Placeholder": "Select model..."
+    }
+  }
+}

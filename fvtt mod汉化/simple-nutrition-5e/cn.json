@@ -1,0 +1,71 @@
+
+  "SIMPLE_NUTRITION": {
+    "Dialog": {
+      "Consume": "消耗",
+      "ConsumeMore": "消耗更多",
+      "TitleFood": "消耗食物",
+      "TitleWater": "饮水",
+      "ManageTitleFood": "管理食物",
+      "ManageTitleWater": "管理饮水",
+      "ManageCurrent": "今日已记录：{amount}",
+      "ManageHintFood": "选择是记录更多食物还是清除今日的食物摄入。",
+      "ManageHintWater": "选择是记录更多饮水还是清除今日的饮水摄入。",
+      "ClearFood": "清除食物",
+      "ClearWater": "清除饮水",
+      "SummaryLegend": "摘要",
+      "LegendFood": "食物",
+      "LegendWater": "饮水",
+      "DaysWithoutFoodLabel": "未进食天数",
+      "FreshWater": "有淡水水源",
+      "FreshWaterHint": "从淡水水源饮水，而非消耗储存的水。",
+      "RequiredLabel": "所需",
+      "SelectedLabel": "已选",
+      "Each": "每个 {amount}",
+      "AmountFullDay": "一整天",
+      "AmountWater": "{value} 加仑",
+      "DropLegend": "添加消耗品",
+      "DropHint": "将此角色的物品栏中的消耗品拖拽至此以添加到列表。",
+      "Owned": "拥有：{quantity}",
+      "Decrease": "减少 {item}",
+      "Increase": "增加 {item}",
+      "WarningDropDuplicate": "该物品已在此对话框中可用。",
+      "WarningDropEmpty": "该物品已无剩余数量。",
+      "WarningDropInvalid": "只有此角色物品栏中的消耗品才能添加至此。",
+      "WarningItemMissing": "该物品已不再可用。",
+      "WarningSelectFood": "请选择要消耗的食物。",
+      "WarningSelectWater": "请选择要消耗的饮水。",
+      "WarningNotEnough": "{item} 不足。"
+    },
+    "Tracker": {
+      "Title": "营养",
+      "Food": "食物",
+      "Water": "饮水",
+      "Progress": "{current}/{required}",
+      "FoodTooltip": "今日食物消耗：{current} / {required}",
+      "WaterTooltip": "今日饮水消耗：{current} / {required}"
+    },
+    "Config": {
+      "Title": "营养",
+      "Configure": "配置营养",
+      "Requirements": "每日需求",
+      "OverrideHint": "留空字段以使用基于角色体型的默认值。",
+      "FoodPerDay": "每日食物量",
+      "WaterPerDay": "每日饮水量",
+      "StarvationLimit": "未进食天数限制",
+      "DefaultValue": "默认：{value}",
+      "DefaultDays": "默认：{days} 天"
+    },
+    "Chat": {
+      "Title": "营养",
+      "StarvationLabel": "未进食天数",
+      "StarvationValue": "{days}",
+      "ConditionsLabel": "状态",
+      "StatusDehydrated": "脱水",
+      "StatusMalnourished": "营养不良"
+    },
+    "Rest": {
+      "MalnutritionSave": "营养不良体质豁免（DC 10）",
+      "MalnutritionSaveHint": "豁免失败时，手动施加 1 级 &Reference[力竭] 和 &Reference[营养不良] 状态。"
+    }
+  }
+}

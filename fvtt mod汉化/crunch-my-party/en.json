@@ -1,0 +1,90 @@
+{
+  "crunch-my-party": {
+    "setting": {
+      "modVersion": {
+        "name": "Version",
+        "hint": "Currently installed module version (can't be changed here)."
+      },
+      "debug": {
+        "name": "Debug mode",
+        "hint": "Client-side setting enabling extended debug logging."
+      },
+      "forceUniqueTargetToken": {
+        "name": "Force target token selection",
+        "hint": "Prevent \"crunching\" when no unique group member has been preselected as the target. Most relevant for scenes that use levels and elevation (\"vertical\" maps): By \"crunching\" your party, all group members get teleported to the same position (and elevation!) as the preselected target. Whithout a unique target, a RANDOM member will be used, which may not always be intended (especially when it comes to elevations!). This option prevents that by a warning message."
+      },
+      "memberTokenNames#": {
+        "name": "Party # - List of members",
+        "hint": "Names of all tokens belonging to Party # (comma-separated)."
+      },
+      "partyTokenName#": {
+        "name": "Party # - Party name",
+        "hint": "Name of the shared tokens of Party #."
+      },
+      "hideChatInfo": {
+        "name": "Hide module info in chat window",
+        "hint": "Hides the info text about this module in the chat window on game start, so that it doesn't show up over and over again (deactivate this option to see it again)."
+      },
+      "animation4Crunch": {
+        "name": "\"Crunch\" animation (optional)",
+        "hint": "Animation to play when crunching single tokens into party token. Requires installation of J2BA (see Readme)."
+      },
+      "playAudio4Crunch": {
+        "name": "Play audio on \"Crunch\"?",
+        "hint": "Plays the audio file spedified below, if activated."
+      },
+      "audioFile4Crunch": {
+        "name": "Audio file on \"Crunch\"",
+        "hint": "Audio file (relative path) to be played on \"Crunch\"?"
+      },
+      "animation4Explode": {
+        "name": "\"Explode\" animation (optional)",
+        "hint": "Animation to play when exploding party token into single member tokens. Requires installation of J2BA (see Readme)."
+      },
+      "playAudio4Explode": {
+        "name": "Play audio on \"Explode\"?",
+        "hint": "Plays the audio file spedified below, if activated."
+      },
+      "audioFile4Explode": {
+        "name": "Audio file on \"Explode\"",
+        "hint": "Audio file (relative path) to be played on \"Explode\"?"
+      }
+    },
+    "chatInfoContent": {
+      "title": "Crunch My Party!",
+      "text1": "\"Once there were three little goblins... eager to form a PARTY!<br/>So here's their story...\"",
+      "text2": "Easily collapse arbitrary groups of scene tokens (representing parties) into an easy-to-use single \"party token\", and vice versa. Manage up to 5 separate parties with up to 25 members each!",
+      "text3": "Please refer to the various module preferences under game settings. Find even more details on GitHub",
+      "footer": "This chat card will only be shown once. Activate once more in the module settings if needed."
+    },
+    "errMsg": {
+      "pleaseCheckYourTokenSelection": "Please check your party configuration",
+      "invalidTokenCount": "Required: Exactly ONE group and MORE THAN ONE members",
+      "groupAndMembersIntersect": "Names must not exist both as member and as group.",
+      "tooManyMemberTokens": "Member list too long",
+      "invalidNumberOfMemberTokens": "Invalid number of tokens selected! A party must consist of 2 through 25 members.",
+      "notUniqueInScene": "is not unique in scene!",
+      "tokensMissingInScene": "Tokens missing in scene",
+      "cannotDetermineAction": "Cannot determine action!",
+      "membersAndPartyAllHidden": "None of the involved tokens are currently visible (active).",
+      "pleaseWaitStillBusy": "Please wait for current action to complete ...",
+      "pleaseSelectToken": "Please select at least one scene token to use this function.",
+      "movementActionNotFound": "Unable to move token: The following movement action was not found in CONFIG.Token.movement.actions: ",
+      "pleaseReportThisError": "Please report this error to the mod author on https://github.com/coffiarts/FoundryVTT-crunch-my-party.",
+      "pleaseActivateTokenLayer": "Please activate the token layer (menu button on top left) to use this function.",
+      "pleaseSelectTargetToken": "Please select a unique group member to define the target position and elevation for this action."
+    },
+    "promptForPartyTokenNameTitle": "What's the name of the party token?",
+    "promptForPartyTokenNameText": "Name of the party token that shall represent selected members<br/>(must exist with this exact name in current scene!)",
+    "saveButton": "Save",
+    "cancelButton": "Cancel",
+    "groupingConfirmation": "The following tokens have been assigned to <strong>party #{partyNo} [token: {partyTokenName}]</strong>",
+    "keybindingMenuLabelFind": "Find Party #",
+    "keybindingMenuLabelToggle": "Toggle Party # (collapse/explode)",
+    "settingsMenu": {
+      "behaviourSection": "Behaviour",
+      "membersSection": "Party Member Configuration",
+      "animationsSection": "Animation Settings (requires JB2A & Automated Animations)"
+    }
+  }
+}

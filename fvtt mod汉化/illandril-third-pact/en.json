@@ -1,0 +1,59 @@
+{
+  "illandril-third-pact": {
+    "progression": {
+      "leveled": {
+        "Quarter": "(illandril) Quarter Caster",
+        "TwoThirds": "(illandril) Two Thirds Caster",
+        "ThreeQuarters": "(illandril) Three Quarters Caster"
+      },
+      "pact": {
+        "PactQuarter": "(illandril) Quarter Caster (Pact Magic)",
+        "_thirdpact": "(illandril) Third Caster (Pact Magic)",
+        "PactHalf": "(illandril) Half Caster (Pact Magic)",
+        "PactTwoThirds": "(illandril) Two Thirds Caster (Pact Magic)",
+        "PactThreeQuarters": "(illandril) Three Quarters Caster (Pact Magic)"
+      }
+    },
+    "setting": {
+      "debug": {
+        "label": "Debug Mode",
+        "hint": "Leave this disabled unless specifically asked to enable it by Illandril (otherwise, it will slow things down)."
+      },
+      "rounding": {
+        "choice": {
+          "standard": "Standard Rounding",
+          "up": "Always Round Up",
+          "down": "Always Round Down",
+          "downMin1": "Round Down, Minimum 1"
+        }
+      },
+      "pactRoundingMode": {
+        "label": "Pact Rounding Mode",
+        "hint": "Standard Rounding: Round down when multiclassing with other Pact caster classes, otherwise round up."
+      },
+      "leveledRoundingMode": {
+        "label": "Leveled Rounding Mode",
+        "hint": "Standard Rounding: Round down when multiclassing with other leveled caster classes, otherwise round up. System Rounding: Let the dnd5e system decide how to round (it will likely round the same way as 'Standard Rounding')",
+        "choice": {
+          "system": "System Rounding"
+        }
+      },
+      "illandril_custompact_a.label": "(illandril) Custom Pact Caster A",
+      "illandril_custompact_b.label": "(illandril) Custom Pact Caster B",
+      "illandril_custompact_c.label": "(illandril) Custom Pact Caster C",
+      "hitDice-d20.label": "Hit Dice: Include d20",
+      "menu": {
+        "customPacts": {
+          "name": "Custom Pact Caster Progression",
+          "label": "Configure",
+          "hint": "Configure Custom Pact Caster spell progression settings. Note: Custom Pact Caster classes WILL NOT multiclass properly with other Pact Caster classes.",
+          "title": "Custom Pact Caster Progression",
+          "classLevel": "Class Level",
+          "slots": "Spell Slots",
+          "spellLevel": "Spell Level",
+          "save": "Save Changes"
+        }
+      }
+    }
+  }
+}

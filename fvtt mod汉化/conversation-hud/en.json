@@ -1,0 +1,329 @@
+{
+  "CHUD.strings": {
+    "participantName": {
+      "name": "Name",
+      "hint": "Name of the conversation participant."
+    },
+    "displayName": {
+      "name": "Display name",
+      "hint": "Toggle the display of the participant's name. When off, Unknown will be displayed instead of the name."
+    },
+    "portrait": {
+      "name": "Portrait",
+      "hint": "Portrait of the conversation participant."
+    },
+    "portraitScale": {
+      "name": "Portrait scale",
+      "hint": "The scale of the portrait. By default, a scale of 1 will fill the container. Lower values will decrease the size and add padding, while higher values will zoom the picture in."
+    },
+    "portraitAnchor": {
+      "vertical": {
+        "name": "Vertical Portrait Anchor",
+        "hint": "The vertical point which is considered the origin from which the image will begin to display."
+      },
+      "horizontal": {
+        "name": "Horizontal Portrait Anchor",
+        "hint": "The horizontal point which is considered the origin from which the image will begin to display."
+      }
+    },
+    "name": "Name",
+    "activeConversation": "Active Conversation",
+    "noLinkedDocuments": "No linked documents",
+    "noActiveConversation": "No active conversation",
+    "linkedJournal": {
+      "name": "Linked Journal",
+      "hint": "Journal entry that will be linked to the conversation participant."
+    },
+    "linkedActor": {
+      "name": "Linked Actor",
+      "hint": "Actor that will be linked to the conversation participant."
+    },
+    "conversationName": "Conversation Name",
+    "conversationParticipants": "Conversation Participants",
+    "conversationSettings": "Conversation Settings",
+    "conversationBackground": {
+      "name": "Conversation Background",
+      "hint": "An image that will be displayed as the background of this conversation. If no image is selected, a dark semi-transparent background will be shown instead."
+    },
+    "newParticipant": "New Participant",
+    "currentParticipants": "Current Participants",
+    "noActiveParticipant": "No active participant",
+    "noParticipants": "No participants",
+    "participantsHidden": "Participants list is hidden",
+    "noParticipantsInList": "Conversation has no participants. Try adding some. (Drag and drop is supported)",
+    "conversationEntry": "Conversation Entry",
+    "participantData": "Conversation Participant Data",
+    "factionData": "Conversation Faction Data",
+    "browseFiles": "Browse Files",
+    "filePath": "File Path",
+    "dropItem": "Drop item here to add it to the conversation",
+    "dropFaction": "Drop faction here to add it to the participant",
+    "holdControl": "Hold CTRL to replace current participants",
+    "anonymous": "Anonymous",
+    "unknown": "Unknown",
+    "active": "Active",
+    "banner": "Banner",
+    "details": "Details",
+    "actions": "Actions",
+    "tokenIsHidden": "Token is hidden",
+    "invalidDocumentRef": "Invalid document reference",
+    "migration": {
+      "migrationWizard": "Migration Wizard",
+      "migrationInfo": "This migration will update outdated <strong>Conversations</strong> and <strong>Factions</strong> to the latest format used by ConversationHUD.<br><br>Only entries containing legacy or incompatible data will be affected. No new content will be created, and unrelated documents will remain unchanged.",
+      "migrationWarning": "<strong>Important:</strong> Before continuing, please ensure that your world is backed up. This migration will overwrite existing data within affected journal entries.",
+      "documentsToMigrate": "Documents in Need of Migration",
+      "noDocumentsToMigrate": "All Conversation and Faction sheets are up to date. No migration needed."
+    },
+    "sceneConversation": {
+      "name": "Scene Conversation",
+      "hint": "A linked conversation that will activate automatically whenever the scene is activated."
+    },
+    "sceneConversationVisibilityOff": {
+      "name": "Start Conversation With Visibility Off",
+      "hint": "Set whether or not to start the conversation with the visibility off. When unchecked, the conversation will start as visible."
+    },
+    "sceneActors": "Actors in scene",
+    "excludeFromBeingPulled": {
+      "name": "Exclude From Being Pulled Into a Conversation",
+      "hint": "Toggle whether not not token will be displayed on the list of actors being pulled into an active conversation."
+    },
+    "linkedConversation": {
+      "name": "Linked Conversation",
+      "hint": "A linked conversation that will be used whenever the token is being pulled into an active conversation."
+    },
+    "chooseType": "Choose Type",
+    "featureLocked": "Feature locked by GM"
+  },
+  "CHUD.dialogue": {
+    "onCloseActiveConversation": {
+      "title": "Are you sure?",
+      "content": "Are you sure you want to close this conversation? Any unsaved changes will be lost.",
+      "confirm": "Yes",
+      "reject": "No"
+    },
+    "onRemoveParticipant": {
+      "title": "Are you sure?",
+      "content": "Are you sure you want to remove this participant from the currently active conversation?",
+      "confirm": "Yes",
+      "reject": "No"
+    },
+    "unsavedChanges": {
+      "title": "Unsaved Changes",
+      "content": "The document contains unsaved changes. Do you wish to save them?",
+      "confirm": "Save Changes",
+      "reject": "Discard Changes"
+    },
+    "onMigrateData": {
+      "title": "Are you sure?",
+      "content": "This will migrate outdated Conversations and Factions. Affected journal entries will be overwritten. Please ensure your world is backed up before continuing.",
+      "confirm": "Migrate Data",
+      "reject": "Cancel"
+    }
+  },
+  "CHUD.actions": {
+    "save": "Save",
+    "activateHUD": "Activate ConversationHUD",
+    "activateConversation": "Activate Conversation",
+    "createConversation": "Create Conversation",
+    "startConversation": "Start Conversation",
+    "closeConversation": "Close Conversation",
+    "saveConversation": "Save Conversation",
+    "saveFaction": "Save Faction",
+    "exportFaction": "Export Faction",
+    "toggleSpeakAs": "Toggle Speak As",
+    "toggleVisibility": "Toggle Visibility",
+    "toggleBackgroundBlur": "Toggle Background",
+    "maximizeConversation": "Maximize Conversation",
+    "minimizeConversation": "Minimize Conversation",
+    "lockMinimization": "Lock Minimization",
+    "discardChanges": "Discard Changes",
+    "showLinkedConversation": "Show Linked Conversation",
+    "participant": {
+      "add": "Add Participant",
+      "clone": "Clone Participant",
+      "edit": "Edit Participant",
+      "delete": "Delete Participant"
+    },
+    "selection": {
+      "selectAll": "Select All",
+      "selectVisible": "Select Visible",
+      "deselectAll": "Deselect All"
+    },
+    "changeConversationBackground": "Change Conversation Background",
+    "pullParticipants": "Pull Participants from Scene",
+    "addActors": "Add Actors",
+    "startMigration": "Start Migration"
+  },
+  "CHUD.tabs": {
+    "conversationParticipantAddEdit": {
+      "participant": "Participant Config",
+      "faction": "Faction Config"
+    }
+  },
+  "CHUD.faction": {
+    "factionSelector": {
+      "name": "Faction Selector",
+      "hint": "Create a new faction or select an already existing one."
+    },
+    "displayFaction": {
+      "name": "Display Faction",
+      "hint": "Toggle the display of the faction to which the participant belongs to."
+    },
+    "factionName": {
+      "name": "Faction Name",
+      "hint": "The name of the faction.",
+      "placeholder": "New Faction"
+    },
+    "factionLogo": {
+      "name": "Faction Symbol",
+      "hint": "The symbol representing the faction."
+    },
+    "displayFactionBanner": {
+      "name": "Display Banner",
+      "hint": "Toggle the display of a banner that appears in the background."
+    },
+    "factionBannerShape": {
+      "name": "Banner Shape",
+      "hint": "The shape of the banner."
+    },
+    "factionBannerColor": {
+      "name": "Banner Color",
+      "hint": "The color of the banner."
+    },
+    "unknownFaction": "Unknown Faction",
+    "unaffiliated": "Unaffiliated",
+    "noBannerPreview": "No banner preview available",
+    "bannerPreview": "Banner Preview"
+  },
+  "CHUD.sheets": {
+    "entrySheet": "Conversation Entry Sheet",
+    "factionSheet": "Conversation Faction Sheet"
+  },
+  "CHUD.conversationTypes": {
+    "gmControlled": {
+      "name": "GM Controlled",
+      "description": "Only GMs choose who is speaking. Best for scenes where NPCs address the party, managed solely by the GM."
+    },
+    "collective": {
+      "name": "Collective",
+      "description": "Each player selects their speaker. Useful for group scenes where players take turns speaking as different characters."
+    }
+  },
+  "CHUD.errors": {
+    "generic": "An unknown error has occurred, for more information check the console.",
+    "genericSheetError": "An unknown error occurred while trying to render the sheet. Are you sure this is a valid conversation sheet?",
+    "failedToParse": "Failed to parse sheet data. Are you sure this is a valid conversation sheet?",
+    "invalidActor": "The provided actor is of an invalid format and could not be parsed properly.",
+    "typeNotSupported": "This type of data is not supported by ConversationHUD.",
+    "activateNoPages": "Tried to activate a conversation with a document containing no pages.",
+    "activateNoInit": "Tried to activate a conversation when the ConversationHUD object was not yet initialized",
+    "activateNoPerms": "You do not have permission to activate this conversation.",
+    "noActiveConversation": "No active conversation found.",
+    "saveUnsuccessful": "Failed to save current conversation.",
+    "noSelectedTokens": "No tokens are selected.",
+    "conversationAlreadyActive": "Cannot create a new conversation as there is already an active conversation.",
+    "insufficientRights": "Insufficient user rights.",
+    "featureNotEnabled": "Feature is currently disabled. Enabled it in the settings if you wish to use it.",
+    "noLibWrapper": "ConversationHUD requires the libWrapper module for full functionality. Please install and activate it.",
+    "invalidJournalEntry": "Invalid journal entry provided, please make sure that the provided journal entry is valid and has not been removed."
+  },
+  "CHUD.warnings": {
+    "noParticipantDataFound": "No viable participant data was found in this journal entry.",
+    "noFactionDataFound": "No viable faction data was found in this journal entry.",
+    "migrationNotComplete": "Migration incomplete: some entries could not be updated. Check the console for more information."
+  },
+  "CHUD.info": {
+    "saveSuccessful": "Current conversation has been saved successfully.",
+    "migrationComplete": "Migration successful: all entries were updated without errors."
+  },
+  "CHUD.settings": {
+    "settingsSheetHeaders": {
+      "portrait": "Portrait",
+      "interface": "Interface",
+      "features": "Features",
+      "fontSize": "Font Size",
+      "dataMigration": "Data Migration",
+      "others": "Other Settings"
+    },
+    "portraitStyle": {
+      "name": "Portrait Style",
+      "hint": "This option determines the orientation and style in which the portraits of the active participants will be displayed.",
+      "choices": {
+        "vertical": "Vertical",
+        "horizontal": "Horizontal",
+        "square": "Square",
+        "auto": "Auto"
+      }
+    },
+    "portraitAnchorVertical": {
+      "name": "Portrait Anchor - Vertical",
+      "hint": "The vertical anchor point of reference from which the portrait will begin to pe displayed. For example, with the Top option selected, the upper section of the portrait will always be displayed.",
+      "choices": {
+        "top": "Top",
+        "center": "Center",
+        "bottom": "Bottom"
+      }
+    },
+    "portraitAnchorHorizontal": {
+      "name": "Portrait Anchor - Horizontal",
+      "hint": "The horizontal anchor point of reference from which the portrait will begin to pe displayed. For example, with the Left option selected, the leftmost section of the portrait will always be displayed.",
+      "choices": {
+        "left": "Left",
+        "center": "Center",
+        "right": "Right"
+      }
+    },
+    "displayAllParticipantsToPlayers": {
+      "name": "Display Participants List",
+      "hint": "Toggle whether or not to display the list of all the conversation participants to the players. The GM will still be able to see this list."
+    },
+    "displayNoParticipantBox": {
+      "name": "Show No Active Participant UI",
+      "hint": "Toggle whether or not to display the container informing the users that there is currently no actively speaking participant. If off, nothing will be shown instead."
+    },
+    "enableSpeakAs": {
+      "name": "Enable Speak As",
+      "hint": "Toggle the Speak As feature on or off. By default, the feature is on, but if you do not use it and do not want an extra button to appear, you can toggle it off."
+    },
+    "enableMinimize": {
+      "name": "Enable Minimize",
+      "hint": "Toggle the Minimize feature on or off. By default, the feature is on as it allows users to interact with the map while a conversation is active and visible. If you do not want this behavior, you can toggle the feature off."
+    },
+    "keepMinimize": {
+      "name": "Remember Minimization",
+      "hint": "Remember minimization status between different conversations. By default, the feature is off so that every new conversation will start maximized. Enable this feature to have new conversations pick up the previous minimization state. Minimization state resets on page reload."
+    },
+    "clearActiveParticipantOnVisibilityChange": {
+      "name": "Clear Active Participant on Visibility Change",
+      "hint": "Toggle whether or not to clear the currently active participant whenever the conversation visibility is toggled off."
+    },
+    "enableSceneConversations": {
+      "name": "Enable Scene Conversations",
+      "hint": "Toggle the Scene Conversation feature on or off. By default, the feature is on and it allows users to link a conversation to a scene and when the scene is activated the conversation will open automatically. The conversation selector can be found on the Ambience tab of the Scene Config Sheet. If you do not want this behavior, you can toggle the feature off."
+    },
+    "blurAmount": {
+      "name": "Blur Amount",
+      "hint": "The amount of blur (in pixels) that will be applied to the background when a conversation is active. An amount of zero pixels will disable the background blur completely."
+    },
+    "activeParticipantFontSize": {
+      "name": "Participant Font Size",
+      "hint": "This option determines the size of the font used to display the name of the currently active participant."
+    },
+    "activeParticipantFactionFontSize": {
+      "name": "Participant Faction Font Size",
+      "hint": "This option determines the size of the font used to display the name of the faction to which the currently active participant belongs to."
+    },
+    "fontSizeOptions": {
+      "verySmall": "Very Small",
+      "small": "Small",
+      "regular": "Regular",
+      "large": "Large",
+      "veryLarge": "Very Large"
+    },
+    "migrationWizard": {
+      "name": "Migration Wizard",
+      "button": "Open Wizard",
+      "hint": "Open the migration wizard to migrate outdated Conversations or Factions to the new format."
+    }
+  }
+}

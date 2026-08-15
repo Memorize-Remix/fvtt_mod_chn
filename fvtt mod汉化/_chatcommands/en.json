@@ -1,0 +1,39 @@
+{
+    "_chatcommands": {
+        "settings": {
+            "enableAutocomplete": "Enable autocomplete",
+            "enableAutocompleteHint": "Display an autocomplete menu while entering commands in the chat. Requires a reload to apply.",
+            "maxEntries": "Maximum autocomplete entries",
+            "maxEntriesHint": "Limits how many entries can be displayed in the autocomplete menu. Additional entries will be replaced with an overflow message.",
+            "autocompleteCore": "Autocomplete core commands",
+            "autocompleteCoreHint": "Include FoundryVTT core commands for autocompletion. Requires a reload to apply.",
+            "displayFooter": "Show aliases and module",
+            "displayFooterHint": "Display aliases and the source module when autocompleting commands."
+        },
+        "extraEntries": "Enter parameters to find additional results.",
+        "noEntries": "No registered command matches your input.",
+        "insufficientPermissions": "You do not have the permissions to use the {command} command.",
+        "coreCommands": {
+            "ic": "Send a message as the currently selected or associated character.",
+            "ooc": "Send a message out of character.",
+            "emote": "Perform an emote as the currently selected or associated character.",
+            "whisper": {
+                "description": "Send a private message to another player.",
+                "gm": "Gamemasters",
+                "players": "Players"
+            },
+            "roll": {
+                "basic": "Roll some dice.",
+                "gm": "Roll some dice that are only visible for you and the game master.",
+                "blind": "Roll some dice that are only visible for the game master.",
+                "self": "Roll some dice that are only visible for you.",
+                "public": "Roll some dice that are visible for everyone.",
+                "simpleInfo": "Basic syntax: <span class='parameter'>Amount</span>d<span class='parameter'>Faces</span>+,-,*,/<span class='parameter'>More rolls or numbers</span>",
+                "descriptionInfo": "Labeled rolls: <span class='parameter'>Roll</span>[<span class='parameter'>Dice description</span>] # <span class='parameter'>Roll description</span>",
+                "modifierInfo": "Modifiers: See <a href='https://foundryvtt.com/article/dice-modifiers/'>Dice Modifiers</a>.",
+                "advancedInfo": "Pools, variables & functions: See <a href='https://foundryvtt.com/article/dice-advanced/'>Advanced Dice</a>.",
+                "recent": "Recently used"
+            }
+        }
+    }
+}

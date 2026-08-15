@@ -1,0 +1,39 @@
+{
+  "npc-dialogue-bubbles": {
+    "settings": {
+      "globalEnabled": {
+        "name": "Enable NPC Dialogue",
+        "hint": "Enable or disable all NPC dialogue bubbles globally"
+      },
+      "debugMode": {
+        "name": "Debug Mode",
+        "hint": "Enable debug logging for troubleshooting"
+      }
+    },
+    "dialog": {
+      "configTitle": "Configure Dialogue Bubbles",
+      "enableLabel": "Enable Dialogue for this Token",
+      "phrasesLabel": "Phrases (one per line)",
+      "phrasesHint": "Enter each phrase on a new line. Leave blank to disable dialogue.",
+      "minIntervalLabel": "Minimum Interval (seconds)",
+      "maxIntervalLabel": "Maximum Interval (seconds)",
+      "saveButton": "Save",
+      "cancelButton": "Cancel"
+    },
+    "contextMenu": {
+      "configureDialogue": "Configure Dialogue Bubbles"
+    },
+    "NPCDB": {
+      "ConfigureDialogue": "Configure Dialogue Bubbles"
+    },
+    "notifications": {
+      "configSaved": "Dialogue configured for {name}",
+      "intervalError": "Minimum interval must be less than maximum interval",
+      "moduleReady": "NPC Dialogue Bubbles module ready"
+    },
+    "errors": {
+      "tokenNotFound": "Token not found",
+      "invalidConfig": "Invalid dialogue configuration"
+    }
+  }
+}

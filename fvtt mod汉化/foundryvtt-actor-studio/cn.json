@@ -1,0 +1,664 @@
+
+  "GAS": {
+    "Error": {
+      "ItemNotFoundInCompendium": "物品未在合集中找到",
+      "PackIndexNotFound": "导入角色职业的合集包未在当前世界找到",
+      "EquipmentSelectionNotViable": "无法选择初始装备，因为所选数据类型不包含初始装备数据。"
+    },
+    "ActorStudio": "Actor Studio",
+    "CreateActor": "创建角色",
+    "Cancel": "取消",
+	"Dialog": {
+	  "ReloadRequiredTitle": "需要重新加载",
+	  "ReloadRequiredContent": "此设置更改需要重新加载FVTT。是否立即重新加载？",
+      "AutoAssignSources": {
+		"Title": "配置Actor Studio来源",
+		"Content": "尚未分配任何Actor Studio来源。是否要自动分配来源？（你稍后可以在设置中修改这些设置 - 需要分配一些来源才能使Actor Studio正常工作）",
+		"Success": "来源已成功自动分配。如果需要，你可以在Actor Studio设置中修改它们。",
+		"Skipped": "未自动分配来源。准备好后，你可以在Actor Studio设置中手动配置它们。"
+	  }
+	},
+	"Notification": {
+	  "CompendiumSourcesCleaned": "Actor Studio 已清理 {type} 的一些合集来源。<a class='gas-open-sources' href='#'>打开来源</a>以查看并保存更改。",
+      "SettingsSaved": "设置保存成功。",
+	  "SettingsSaveFailed": "保存设置失败，请重试。"
+	},
+    "Disabled": "禁用",
+    "AbilityScores": "属性值",
+    "Advancements": "升级",
+    "Level": "等级",
+    "LevelUp": {
+      "Button": "升级",
+      "ClassLevelUp": "提升该职业等级",
+      "ExistingClassesTitle": "升级现有职业",
+      "ExistingClassesDescription": "点击你想升级的职业，或从多职业下拉菜单中选择一个新职业添加。",
+      "NewClassTitle": "添加兼职",
+      "SelectClass": "选择要添加的职业",
+      "SelectMulticlass": "选择兼职",
+      "CancelDescription": "点击下方职业按钮可取消升级选择并返回起始界面。或点击“更新角色”应用更改。",
+      "Subclass": "选择子职",
+      "LevelAdvancements": "提升等级",
+      "DisabledTooltip": "因升级进行中而禁用",
+      "DisabledDescription": "升级进行期间，此部分不可编辑"
+    },
+    "Footer": {
+      "AddLevel": "添加角色等级",
+      "AddEquipment": "确认",
+      "FinalizePurchase": "完成购买",
+	  "FinalizeSpells": "完成法术",
+	  "SkipSpells": "跳过法术",
+      "CharacterName": "角色名称",
+      "CreateCharacter": "创建角色",
+      "UpdateCharacter": "更新角色"
+    },
+    "Name": "名称",
+    "MulticlassMode": "兼职模式",
+    "Item": "物品",
+    "Skip": "跳过",
+    "Complete": "完成",
+    "Type": "类型",
+    "NoAdvancements": "该等级无升级内容",
+    "PCTitle": "玩家角色",
+    "Title": "Actor Studio",
+    "Source": "来源",
+    "StartingEquipment": "初始装备",
+    "Permissions": {
+      "NeedCreateActorError": "用户需要'创建新角色'权限。请向你的GM申请将其添加到你的角色中",
+      "NeedCreateItemWarn": "用户缺少'创建新物品'权限。你将无法创建自定义特性",
+      "NeedFileUploadWarn": "用户缺少'上传新文件'权限。选择图片时可能会遇到问题",
+      "NeedFileBrowseWarn": "用户缺少'使用文件浏览器'权限。选择图片时可能会遇到问题"
+    },
+    "SubClass": "子职",
+	"Tabs": {
+		"Abilities": {
+			"Title": "属性",
+			"HowCalculated": "属性如何计算？",
+			"AbilityGenerationMethod": "属性生成方式",
+			"ManualEntry": "手动输入",
+			"PointBuy": "购点法",
+			"Roll": "掷骰",
+			"StandardArray": "标准数组"
+		},
+		"Races": {
+			"Title": "种族",
+			"Title2024": "物种",
+			"Movement": "移动速度",
+			"Senses": "感官",
+			"Type": "类型",
+			"Placeholder": "种族",
+        "Placeholder2024": "物种"
+		},
+		"Classes": {
+			"Title": "职业",
+			"Class": "职业",
+			"SubClass": "子职",
+			"FilterByLevel": "按等级查看升级选项",
+			"Placeholder": "职业",
+			"SubclassPlaceholder": "子职",
+			"LevelPreview": "升级预览",
+			"Level": "等级"
+		},
+		"Background": {
+			"Title": "背景",
+			"Placeholder": "背景"
+		},
+		"Equipment": {
+			"Title": "装备"
+		},
+		"Shop": {
+			"Title": "商店"
+		},
+      "Biography": {
+        "Title": "传记"
+      }
+    },
+    "Welcome": {
+      "To": "欢迎来到",
+      "IntroductionTitle": "介绍",
+      "Introduction": "Actor Studio是帮助你创建和升级《龙与地下城5e》角色的工具。",
+      "UsageTitle": "使用说明",
+      "Issues": "如有任何问题，请提交至",
+      "Github": "GitHub。",
+      "CreatedBy": "为FVTT开发，开发者：",
+      "Support": "如果你想支持该模组的开发，请考虑通过以下方式每月捐赠：",
+      "SponsorLinkText": "GitHub赞助",
+      "IssuesLinkText": "GitHub问题",
+      "PayPalLinkText": "PayPal",
+      "JoinDiscord": "加入",
+      "DiscordLinkText": "Actor Studio Discord 服务器",
+      "Thanks": "感谢你使用Actor Studio!"
+    },
+    "Setting": {
+      "World": "世界设置",
+      "User": "用户设置",
+      "AbilityScoreEntryOptions": "属性值录入选项",
+      "LevelingOptions": "升级选项",
+      "DisplayOptions": "显示选项",
+      "DebugOptions": "调试选项",
+      "AbilityEntry": {
+        "AllowManualInput": {
+          "Name": "允许手动输入",
+          "Hint": "允许用户手动输入属性值"
+        },
+        "AllowStandardArray": {
+          "Name": "允许标准数组",
+          "Hint": "允许用户使用标准数组"
+        },
+		"StandardArrayValues": {
+			"Name": "自定义标准属性数组",
+			"Hint": "设置自定义的标准属性数组值（用逗号分隔，例如：15, 14, 13, 12, 10, 8）"
+		},
+        "AllowPointBuy": {
+          "Name": "允许点数购买",
+          "Hint": "允许用户使用点数购买系统",
+          "InvalidTotal": "点数总和无效"
+        },
+        "AllowRolling": {
+          "Name": "允许掷骰",
+          "Hint": "允许用户掷骰决定属性值"
+        },
+        "PointBuyLimit": {
+          "Name": "点数购买上限",
+          "Hint": "设置点数购买系统的最大点数。超过此阈值的数值将显示为红色。"
+        },
+        "AbilityRollFormula": {
+          "Name": "属性掷骰公式（每个属性）",
+          "Hint": "例如：4d6kh3"
+        }
+      },
+      "AdvancementCaptureTimerThreshold": {
+        "Name": "升级捕获计时阈值",
+        "Hint": "设置升级捕获计时器的阈值。如果发现新角色的种族、背景或职业未被捕获，请增大此数值。单位为毫秒。"
+      },
+      "debug": {
+        "Name": "启用调试模式",
+        "Hint": "为调试目的提供额外日志记录"
+      },
+      "debugHooks": {
+        "Name": "启用扩展调试模式",
+        "Hint": "记录所有Fvtt hook的额外日志"
+      },
+      "defaultGoldDice": {
+        "Name": "默认初始金币掷骰",
+        "Hint": "可在此自定义工具中默认使用的初始金币掷骰公式，当角色职业没有自定义初始金币公式时将使用此设置"
+      },
+      "DonationTrackerEnabled": {
+        "Name": "启用捐赠追踪",
+        "Hint": "启用捐赠追踪以显示当前捐赠金额与目标"
+      },
+      "disableAdvancementCapture": {
+        "Name": "禁用升级标签页",
+        "Hint": "阻止在升级标签页中捕获升级内容。它们将显示为系统的默认形式——即弹出对话框窗口。（注：仅用于调试目的——禁用此功能后使用Actor Studio意义不大。）"
+      },
+	  "forceTakeAverageHitPoints": {
+		"Name": "强制使用期望生命值",
+		"Hint": "启用后，Actor Studio将在升级时的生命值提升中强制使用'取期望值'选项。"
+	  },
+      "DisableOtherActorCreationOptionsForPlayers": {
+        "Name": "禁用其他创建角色按钮",
+        "Hint": "阻止玩家使用标准创建角色按钮。仅Actor Studio可用。"
+      },
+      "DonationTrackerRank": {
+        "Name": "级别",
+        "Hint": "输入级别的文件夹名称"
+      },
+      "DonationTracker_UnregisteredAccess": {
+        "Name": "未注册访问",
+        "Hint": "勾选后，未注册用户可访问捐赠追踪链接合集中非DT文件夹的内容"
+      },
+      "DonationTrackerAction": {
+        "Name": "添加DT文件夹",
+        "Hint": "将捐赠追踪会员等级文件夹添加至此合集"
+      },
+      "DonationTracker": {
+        "Name": "捐赠追踪设置",
+        "Label": "编辑",
+        "Hint": "启用/禁用集成，每个捐赠追踪会员等级都有对应的文件夹名称。可在此编辑。"
+      },
+      "DontShowWelcome": {
+        "Name": "不再显示此消息",
+        "Hint": "Fvtt首次加载时不显示欢迎应用。（可通过配置设置撤销此操作）。"
+      },
+      "EnableLevelUp": {
+        "Name": "启用升级",
+        "Hint": "勾选后在角色卡上添加通过Actor Studio升级的按钮"
+      },
+      "FilterPackSourcesAppropriatelyByName": {
+        "Name": "按名称智能过滤合集来源",
+        "Hint": "启用后，来源部分将仅包含名称、路径、ID或标签与来源类型匹配的合集。例如，标题为'法术宝库'的法术物品合集将显示在法术源部分，但不会显示在其他源部分中。"
+      },
+      "forceDnd5eLevelUpAutomation": {
+        "Name": "强制D&D5e升级自动化",
+        "Hint": "禁用此项后，Actor Studio除预览选项外基本无用，因为它无法将更改应用到角色"
+      },
+      "milestoneLeveling": {
+        "Name": "里程碑升级",
+        "Hint": "取消勾选时，仅当角色拥有足够XP时才会显示升级按钮。勾选后，按钮始终显示，用户无需所需XP即可升级。"
+      },
+      "ShowRolls": {
+        "Name": "在聊天中显示掷骰",
+        "Hint": "将属性值、每级生命值和初始金币掷骰显示为聊天消息"
+      },
+      "showButtonInSideBar": {
+        "Name": "在侧边栏显示按钮",
+        "Hint": "在侧边栏显示Actor Studio按钮。（需刷新浏览器生效）"
+      },
+      "illuminatedDescription": {
+        "Name": "启用高亮描述",
+        "Hint": "将在标签页右侧面板添加放大版选择图标（如适用）。"
+      },
+      "illuminatedHeight": {
+        "Name": "高亮描述高度",
+        "Hint": "设置高亮描述的高度"
+      },
+      "illuminatedWidth": {
+        "Name": "高亮描述宽度",
+        "Hint": "设置高亮描述的宽度"
+      },
+      "IndividualPanelScroll": {
+        "Name": "独立面板滚动",
+        "Hint": "在左右分栏的标签页中，使每侧拥有独立滚动条"
+      },
+      "AllowAbilityRolling": {
+        "Name": "允许属性值掷骰"
+      },
+      "AllowAbilityStandardArray": {
+        "Name": "允许属性值标准数组"
+      },
+      "AllowAbilityPointBuy": {
+        "Name": "允许属性值点数购买"
+      },
+      "AllowAbilityInput": {
+        "Name": "允许属性值手动输入"
+      },
+      "UseTokenizer": {
+        "Name": "如可用则使用Tokenizer",
+        "Hint": "工具将尝试使用Tokenizer模组（如已安装）作为生成头像和Token图片的默认方式"
+      },
+      "TokenNameMode": {
+        "Name": "Token名称显示模式"
+      },
+      "TokenBarMode": {
+        "Name": "Token 栏 1 显示模式"
+      },
+      "EquipmentBlacklist": {
+        "Name": "装备黑名单",
+        "Hint": "不显示供购买的物品（装备），按名称区分（区分大小写，用';'分隔，允许空格）。默认仅显示'普通'稀有度物品，此列表排除少数魔法/不合理的普通物品。默认值 - '攀爬药水; 治疗药水; 1环法术卷轴; 戏法法术卷轴; 徒手打击'"
+      },
+      "ShowPackLabelInSelect": {
+        "Name": "在选择中显示合集标签",
+        "Hint": "在选择选项中同时显示合集标签和物品标签"
+      },
+      "SubraceNameBlacklist": {
+        "Name": "亚种名称黑名单",
+        "Hint": "按名称排除作为亚种的内容（区分大小写，用';'分隔，允许空格）。默认用于排除如'侏儒狡黠'等被识别为侏儒亚种的内容。默认值 - '侏儒狡黠; 半身人灵巧'"
+      },
+      "ButtonOnDialogInsteadOfActorsDirectory": {
+        "Name": "创建角色对话框按钮",
+        "Hint": "如果按钮与其他模组冲突，或你倾向于使用单一'创建角色'按钮以避免玩家混淆"
+      },
+      "NonGmsCanOnlyCreatePCs": {
+        "Name": "非GM只能创建玩家角色",
+        "Hint": "启用后，非GM用户只能创建玩家角色，不能创建其他角色类型"
+      },
+      "WindowX": {
+        "Name": "Actor Studio窗口宽度",
+        "Hint": "在此设置窗口初始宽度"
+      },
+      "WindowY": {
+        "Name": "Actor Studio窗口高度",
+        "Hint": "在此设置窗口初始高度"
+      },
+      "Sources": {
+        "Name": "合集来源",
+        "Hint": "选择将作为不同创建步骤数据来源的合集",
+        "Label": "选择来源",
+        "Save": "保存",
+        "RaceCompendia": "种族合集",
+		"RaceCompendia2024": "物种合集",
+        "RacialFeatureCompendia": "种族特性合集",
+		"RacialFeatureCompendia2024": "物种特性合集",
+        "ClassCompendia": "职业合集",
+        "SubclassCompendia": "子职合集",
+        "ClassFeatureCompendia": "职业特性合集",
+        "BackgroundCompendia": "背景合集",
+        "SpellCompendia": "法术合集",
+        "FeatCompendia": "专长合集",
+        "EquipmentCompendia": "装备合集"
+      },
+      "TrimSubclasses": {
+        "Name": "精简子职名称",
+        "Hint": "显示子职名称时删除括号内的最后部分，主要用于DDBImporter的子职业如'刺客（游荡者）'显示为'刺客'（不会修改添加到角色的物品，仅改变工具中的显示方式）"
+      },
+      "EnableEquipmentSelection": {
+        "Name": "启用装备选择",
+        "Hint": "允许玩家在角色创建期间选择初始装备。禁用后需在创建后手动添加装备。"
+      },
+      "EnableEquipmentPurchase": {
+        "Name": "启用装备购买",
+        "Hint": "启用后，为获得初始金币的角色在装备选择后添加'商店'标签页，允许他们从指定合集中购买物品。注意：如果装备选择功能被禁用，此设置将被忽略。"
+      },
+	  "ExperimentalCharacterNameStyling": {
+        "Name": "实验性角色名称样式",
+        "Hint": "启用实验性的动画角色名称样式，使用随机颜色和字体。此实验性功能可为角色名称输入添加视觉装饰效果。"
+	  },
+      "AllowAbilityRollScoresToBeMoved": {
+        "Name": "允许交换掷骰得到的属性值",
+        "Hint": "启用后，掷骰得到的属性值可交换；类似标准数组的工作方式。"
+      },
+      "EnableSpellSelection": {
+        "Name": "启用法术选择",
+        "Hint": "允许玩家在角色创建过程中选择法术。如果禁用，则需要在创建后手动添加法术。"
+      },
+	  "EnableCustomSpellListFiltering": {
+		"Name": "未分配给任何职业的法术将对所有角色可用。",
+		"Hint": "启用后，法术可以匹配自定义法术列表标志，并且包含未分配职业的法术。禁用后，仅显示明确分配给所选职业/子职业的法术。"
+	  },
+      "ShowLevelPreviewDropdown": {
+        "Name": "显示升级预览下拉菜单",
+        "Hint": "如果启用，将在职业选项卡中显示一个升级预览下拉菜单，允许用户预览不同等级的升级选项。如果禁用，下拉菜单将被隐藏，以避免在创建更高等级角色时产生混淆。"
+      },
+	  "HideAdvancementList": {
+		"Name": "隐藏背景、起源与职业的左侧面板",
+		"Hint": "启用后，将隐藏背景、起源和职业选项卡的左侧面板。下拉选择器仍保持可见。空白区域将填充相关项目的描述信息。"
+	  },
+		"CharacterCreationTabOrder": {
+			"Name": "角色创建标签页顺序",
+			"Hint": "设置四个核心角色创建标签页的顺序（属性、种族、背景、职业）。",
+			"Title": "角色创建标签页顺序",
+			"Abilities": "属性",
+			"Race": "种族",
+			"Race2024": "物种",
+			"Background": "背景",
+			"Class": "职业"
+		},
+		"EnableLLMNameGeneration": {
+		  "Name": "启用 LLM 名称生成",
+		  "Hint": "如果启用，将在角色名称输入框旁添加一个 ChatGPT 按钮，根据所选种族生成适合奇幻风格的名称。"
+		},
+		"EnableBiographyTab": {
+		  "Name": "启用传记标签页",
+		  "Hint": "在角色创建过程中显示传记标签页。如果启用，即使 LLM 名称生成或许可证跟踪器被禁用，传记仍会显示；当生成功能不可用时，生成按钮将隐藏。"
+		},
+		"EnableLicenseTracker": {
+		  "Name": "启用许可证跟踪器",
+		  "Hint": "如果启用，LLM 名称生成需要许可证密钥。必须在下方输入许可证密钥。"
+		},
+		"AardvarkLicenseCode": {
+		  "Name": "Aardvark 许可证代码",
+		  "Hint": "输入你的 Aardvark 许可证代码以使用 LLM 名称生成功能。启用许可证跟踪时需要此代码。"
+		},
+		"LLMApiKey": {
+		  "Name": "LLM API 密钥",
+		  "Hint": "LLM 服务的 API 密钥。使用 OpenAI（内置服务）时保留默认值。使用 Claude 时，请输入你的 Anthropic API 密钥。使用 OpenRouter 时，请输入你的 OpenRouter API 密钥。"
+		},
+		"LLMProvider": {
+		  "Name": "LLM 提供商",
+		  "Hint": "选择用于名称生成的 LLM 提供商。OpenAI 使用内置服务（无需 API 密钥）。Claude 需要 Anthropic API 密钥。OpenRouter 需要 OpenRouter API 密钥。"
+		},
+	  "AbilityScores": {
+		"Name": "属性值",
+		"Hint": "配置玩家在角色创建时如何输入属性值",
+		"Label": "配置属性值",
+		"Title": "属性值配置",
+		"Description": "选择玩家可用于确定属性值的方法",
+		"EntryMethods": "输入方法"
+	  },
+	  "Equipment": {
+		"Name": "装备与金币",
+		"Hint": "配置初始金币和装备/法术选择选项",
+		"Label": "配置装备与金币",
+		"Title": "装备与金币配置",
+		"Description": "设置初始金币并启用装备/法术选择功能",
+		"StartingGold": "初始金币",
+		"SelectionOptions": "选择选项"
+	  },
+	  "Spell": {
+		"Name": "法术",
+		"Hint": "配置法术选择与自定义法术列表行为",
+		"Label": "配置法术",
+		"Title": "法术配置",
+		"Description": "控制法术选择与自定义法术列表功能",
+		"SelectionOptions": "选择选项",
+		"CustomLists": "自定义法术列表"
+	  },
+	  "CustomSpellLists": {
+		"Name": "自定义法术列表",
+		"Hint": "创建和编辑用于法术筛选的自定义法术列表。",
+		"Label": "管理法术列表",
+		"MenuHint": "打开法术列表管理器以创建和编辑自定义列表。"
+	  },
+	  "Progression": {
+		"Name": "角色升级",
+		"Hint": "配置升级与升级选项",
+		"Label": "配置角色升级",
+		"Title": "角色升级配置",
+		"Description": "配置升级行为和升级选项设置",
+		"LevelUpOptions": "升级选项",
+		"AdvancementOptions": "进阶选项"
+	  },
+	  "UI": {
+		"Name": "界面与窗口",
+		"Hint": "配置窗口尺寸和界面显示选项",
+		"Label": "配置界面与窗口",
+		"Title": "界面与窗口配置",
+		"Description": "自定义 Actor Studio 的外观和尺寸",
+		"WindowDimensions": "窗口尺寸",
+		"DisplayOptions": "显示选项",
+		"IlluminatedOptions": "高亮描述选项"
+	  },
+	  "AccessControl": {
+		"Name": "访问控制",
+		"Hint": "配置玩家在角色创建时的权限",
+		"Label": "配置访问控制",
+		"Title": "访问控制配置",
+		"Description": "控制玩家在创建角色时可以执行的操作",
+		"PlayerRestrictions": "玩家限制"
+	  },
+	  "CompendiumDisplay": {
+		"Name": "合集显示",
+		"Hint": "配置合集的显示和过滤方式",
+		"Label": "配置合集显示",
+		"Title": "合集显示配置",
+		"Description": "控制合集包在选择列表中的显示方式",
+		"DisplayOptions": "显示选项"
+	  },
+	  "Diagnostics": {
+		"Name": "诊断",
+		"Hint": "配置调试和诊断选项",
+		"Label": "配置诊断",
+		"Title": "诊断配置",
+		"Description": "启用调试日志记录和诊断功能",
+		"DebugOptions": "调试选项"
+	  },
+      "testTimeoutUiInteraction": {
+		"Name": "UI交互超时（毫秒）",
+		"Hint": "通用UI交互（如按钮点击、选项卡切换）的超时时间"
+	  },
+	  "testTimeoutUiStateChange": {
+		"Name": "UI状态变更超时（毫秒）",
+		"Hint": "UI状态变更（如应用启动、选项卡激活、表单更新）的超时时间"
+	  },
+	  "testTimeoutSpellUiLoad": {
+		"Name": "法术UI加载超时（毫秒）",
+		"Hint": "法术相关UI元素加载并变为可交互的超时时间"
+	  },
+	  "testTimeoutSpellWorkflow": {
+		"Name": "法术工作流超时（毫秒）",
+		"Hint": "完整法术选择工作流（包括最终确认）的超时时间"
+	  },
+	  "testTimeoutAppClosure": {
+		"Name": "应用关闭超时（毫秒）",
+		"Hint": "应用程序窗口完全关闭的超时时间"
+	  },
+	  "testTimeoutAppLifecycleComplete": {
+		"Name": "应用生命周期完成超时（毫秒）",
+		"Hint": "完整应用生命周期（包括创建和清理）的超时时间"
+	  },
+	  "testTimeoutAdvancementProcessing": {
+		"Name": "进阶处理超时（毫秒）",
+		"Hint": "进阶处理和自动化步骤的超时时间"
+	  },
+	  "testTimeoutAdvancementPostLevel": {
+		"Name": "升级后升级操作超时（毫秒）",
+		"Hint": "升级后升级操作和状态更新的超时时间"
+	  },
+	  "testTimeoutActorDataUpdate": {
+		"Name": "角色数据更新超时（毫秒）",
+		"Hint": "角色数据更新和持久化操作的超时时间"
+	  },
+	  "testIntervalPolling": {
+		"Name": "轮询间隔（毫秒）",
+		"Hint": "等待条件满足时的轮询间隔时间"
+	  }
+    },
+	"SpellListManager": {
+		"NewList": "新建列表",
+		"Save": "保存",
+		"SaveAll": "全部保存",
+		"Cancel": "取消",
+		"SpellLists": "法术列表",
+		"NoSpellLists": "暂无法术列表。点击“新建列表”创建一个。",
+		"SpellCount": "{count} 个法术",
+		"SpellCountPlural": "{count} 个法术",
+		"DeleteList": "删除列表",
+		"Name": "名称",
+		"NamePlaceholder": "输入列表名称",
+		"Type": "类型",
+		"TypeClass": "职业",
+		"TypeSubclass": "子职业",
+		"TypeRace": "种族",
+		"TypeRace2024": "物种",
+		"TypeBackground": "背景",
+		"TypeFeat": "专长",
+		"Identifier": "标识符",
+		"IdentifierPlaceholder": "例如：wizard、eldritch-knight",
+		"Description": "描述",
+		"DescriptionPlaceholder": "可选描述",
+		"DragPlaceholder": "从侧边栏拖拽法术或整个法术合集来添加到这里",
+		"DropActive": "松开以添加法术",
+		"Loading": "加载中...",
+		"RemoveSpell": "移除法术",
+		"SelectListMessage": "从左侧面板选择一个法术列表进行编辑",
+		"SavedNotification": "法术列表已保存。重新加载世界以将更改应用到法术筛选。",
+		"CompendiumNotFound": "未找到法术合集“{pack}”。",
+		"NoSpellsInCompendium": "在法术合集“{pack}”中未找到法术。",
+		"SpellsAdded": "从“{pack}”添加了 {count} 个法术。",
+		"AllSpellsAlreadyInList": "“{pack}”中的所有法术已在此列表中。"
+	},
+    "Equipment": {
+      "Label": "装备",
+      "Choice": "选择一项",
+      "ChooseOne": "选择一...",
+      "EquipmentConfirmed": "装备已确认并添加到角色卡中",
+      "EquipmentReadOnly": "装备选择已完成，在升级选择阶段将变为只读",
+      "Focus": "施法法器",
+      "SelectEquipment": "选择装备",
+      "SelectOne": "从下列选项中选择一项：",
+      "StartingGold": "初始金币",
+      "Selection": "装备选择",
+      "Detail": "装备详情",
+      "Gold": "金币",
+      "ConfigureLabel": "配置初始装备",
+      "NoItemsToConfig": "无物品可配置",
+      "Type": {
+        "Armor": "护甲",
+        "Weapon": "武器",
+        "Tool": "工具",
+        "Focus": "法器"
+      },
+      "PlannedInventory": "计划物品栏",
+      "NoItemsSelected": "未选择任何物品",
+      "Weight": "重量",
+      "Quantity": "数量",
+      "SelectType": "选择"
+    },
+    "Shop": {
+      "AvailableGold": "可用",
+      "SpentGold": "已花费",
+      "CartItems": "购物车物品",
+      "CartEmpty": "你的购物车是空的",
+      "PurchaseCompleted": "装备购买已完成并确认",
+      "ShopReadOnly": "商店选择已完成，现已设为只读",
+      "AvailableEquipment": "可用装备",
+      "Loading": "正在加载物品...",
+      "NoEquipment": "无可用装备。请在模组设置中检查你的合集来源。",
+      "ErrorItemNoId": "添加物品到购物车失败：缺少物品ID",
+      "ErrorAddToCart": "添加物品到购物车失败",
+      "InfoAddedToCart": "已添加{item}到购物车",
+      "ErrorUpdateQuantity": "更新物品数量失败",
+      "ErrorRemoveFromCart": "从购物车移除物品失败",
+      "FilterPlaceholder": "通过关键词搜索商店物品",
+      "NoMatchingEquipment": "未找到匹配的装备。"
+    },
+    "AltText": {
+        "MoveUp": "上移",
+        "MoveDown": "下移",
+        "Roll": "掷骰",
+        "Increase": "增加",
+        "Decrease": "减少",
+        "Subclass": "子职"
+    },
+    "Spells": {
+        "CharacterLevel": "角色等级",
+        "MaxSpellLevel": "最高法术环阶",
+        "SelectedSpells": "已选法术",
+        "NoSpellsSelected": "未选择法术",
+        "AvailableSpells": "可用法术",
+        "FilterPlaceholder": "输入关键词搜索法术",
+        "Loading": "正在加载法术...",
+        "NoSpells": "没有可用法术。请在模组设置中检查你的法术来源。",
+        "NoMatchingSpells": "未找到匹配的法术",
+        "SpellsReadOnly": "法术选择已完成，现已设为只读",
+        "CantripLimitReached": "你已达到当前等级和职业的戏法数量上限",
+        "SpellLimitReached": "你已达到当前等级和职业的法术数量上限",
+        "MaxLvl": "最高法术环阶",
+        "Spells": "法术",
+        "Cantrips": "戏法",
+        "Level": "等级"
+    },
+    "FeatSpells": {
+        "Title": "专长法术选择",
+        "Description": "你的部分专长可提供额外法术。请为每个专长选择所需的法术。",
+        "Loading": "正在加载专长要求...",
+        "Error": "加载专长法术要求时出错：{error}",
+        "NoRequirements": "无需选择专长法术",
+        "ChooseCount": "选择 {count} 个",
+        "ManualReview": "此专长需要手动处理。请在升级完成后手动添加法术。",
+        "LoadingSpells": "正在加载可用法术...",
+        "Complete": "完成",
+        "Skip": "跳过",
+        "Retry": "重试",
+        "SelectedSpells": "已选法术",
+        "AvailableSpells": "可用法术",
+        "NoSpellsSelected": "未选择法术"
+    },
+  "FeatSelector": {
+    "Title": "选择专长",
+    "Search": "搜索专长...",
+    "Loading": "正在加载专长...",
+    "NoFeats": "没有可用的专长。请在设置中检查你的合集来源。",
+    "Select": "选择专长",
+    "Cancel": "取消",
+    "ShowIneligible": "显示不符合条件的专长"
+  },
+  "Import": {
+    "Method": "导入方式",
+    "FromFile": "从文件导入",
+    "FromText": "从文本导入",
+    "JSONText": "JSON 文本",
+    "NoJSONProvided": "未提供 JSON 文本"
+  },
+    "SpellSchool": {
+        "abj": "防护",
+        "con": "咒法",
+        "div": "预言",
+        "enc": "惑控",
+        "evo": "塑能",
+        "ill": "幻术",
+        "nec": "死灵",
+        "trs": "变化"
+    },
+    "Cantrip": "戏法"
+  }
+}

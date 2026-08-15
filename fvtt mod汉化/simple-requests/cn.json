@@ -1,0 +1,59 @@
+
+    "simple-requests": {
+        "settings": {
+            "soundCreate": "创建请求时播放声音",
+            "soundCreateHint": "添加请求时播放声音：你点击时听到；其他客户端添加到队列时所有人（包括被添加的玩家）都会听到。",
+            "soundOnPromptActivate": "提示激活时播放声音",
+            "soundOnPromptActivateHint": "显示史诗提示时播放声音（GM呼叫）",
+            "promptShowSound": "提示激活声音文件",
+            "promptShowSoundHint": "显示史诗提示时声音文件的路径（GM呼叫）",
+            "epicPromptHeadline": "提示标题",
+            "epicPromptHeadlineHint": "\"{name} 有发言权\" 或 \"轮到 {name} 了\"。",
+            "soundActivate": "请求激活时播放声音",
+            "soundActivateHint": "GM呼叫某人时（队列点击或定向呼叫）或 activateRequest 运行时（宏/socket）播放声音。",
+            "reqClickSound": "请求激活声音文件",
+            "reqClickSoundHint": "激活请求时声音文件的路径",
+            "firstRequest": "显示第一个请求",
+            "firstRequestSound": "第一个请求声音文件",
+            "firstRequestSoundHint": "第一个（普通）请求播放的音频文件。",
+            "secondRequest": "显示第二个请求",
+            "secondRequestHint": "显示'第二个请求'按钮（重要）",
+            "thirdRequest": "显示第三个请求",
+            "thirdRequestHint": "显示'第三个请求'按钮（紧急！）",
+            "secondRequestSound": "第二个请求声音文件",
+            "secondRequestSoundHint": "第二个（重要）请求播放的音频文件。",
+            "thirdRequestSound": "第三个请求声音文件",
+            "thirdRequestSoundHint": "第三个（紧急）请求播放的音频文件。",
+            "queueAllPlayersOnly": "队列全部：仅限玩家",
+            "queueAllPlayersOnlyHint": "启用时，“添加所有到队列”仅包括具有玩家角色的用户。禁用时，包括每个连接的用户（包括GM和助手）。每次顺序随机。"
+        },
+        "chatMessage": {
+            "activateRequest": "{name} 发出了请求！"
+        },
+        "buttons": {
+            "firstRequestTooltip": "普通请求",
+            "secondRequestTooltip": "重要请求",
+            "thirdRequestTooltip": "紧急请求！",
+            "queueTransferTooltip": "将请求窗口位置更改为自由模式",
+            "queueAllMenuTooltip": "将所有连接的用户添加到队列（随机顺序）",
+            "pickPlayerCalloutTooltip": "发送玩家呼叫或掷骰提示"
+        },
+        "pickPlayerCallout": {
+            "dialogTitle": "玩家呼叫",
+            "playerLabel": "玩家",
+            "messageSection": "消息",
+            "messageLabel": "呼叫文本",
+            "messageDefault": "下一个是你",
+            "rollSection": "要求掷骰",
+            "pickDie": "骰子类型",
+            "cancel": "取消",
+            "countLabel": "骰子数量",
+            "sendMessageButton": "发送消息",
+            "rollHeadline": "掷骰 {formula}",
+            "noPlayers": "没有在线玩家可通知。",
+            "needMessage": "请输入要发送的消息。",
+            "needDieAndCount": "选择骰子数量和骰子类型。",
+            "rollFailed": "无法掷骰。请检查公式或你的系统。"
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+  "boss-loot-token-manager": {
+    "ui": {
+      "title": "Boss Loot Token Manager",
+      "previewHint": "Select an image to preview",
+	  "noSearchResults": "Nothing to see, try refining your search.",
+	  "filterCount": "{count} assets found",
+      "previewPromo": "Check out our <a href=\"https://www.foundryvtt.store/creators/boss-loot\" target=\"_blank\" rel=\"noopener noreferrer\">module packs</a> for more great tokens!",
+      "actorName": "Drop an Actor to begin",
+      "dropActor": "Drop Actor",
+      "button": {
+        "update": "Update Token",
+        "rollback": "Rollback Token"
+      }
+    },
+    "notifications": {
+      "updateActor": {
+        "actorNeeded": "Please drop an Actor into the interface before applying changes.",
+        "imageNeeded": "Please select an image before applying changes.",
+        "success": "Images for '{actorName}' have been successfully updated."
+      },
+      "rollbackActor": {
+        "actorNeeded": "No Actor is currently selected to restore!",
+        "imageNeeded": "No original image found for '{actorName}'!",
+        "success": "Images for '{actorName}' have been successfully restored to their original state."
+      },
+      "onDrop": {
+        "actorNeeded": "Only Actors can be dropped here. Please try again!"
+      }
+    },
+    "settings": {
+      "loadDefaultPack": {
+        "name": "Load Default Pack",
+        "hint": "If enabled, the default token pack (td00) will be loaded. Changes take effect after restart."
+      },
+      "duplicateCheck": {
+        "name": "Duplicate Check Mode",
+        "hint": "Choose how duplicate assets are detected. If disabled, all assets are included as-is. When set to 'By file size', files with the same size are considered duplicates and the one from the higher-priority pack will be kept. When set to 'By file hash', files with the same hash are considered duplicates and the one from the higher-priority pack will be kept.",
+        "choices": {
+          "0": "Disabled",
+          "1": "By file size",
+          "2": "By file hash"
+        }
+      },
+      "dynamicTokenRing": {
+        "name": "Disable Dynamic Token Ring",
+        "hint": "Disables the Dynamic Token Ring for tokens updated via the Token Manager. The Dynamic Token Ring prevents the token on the canvas from displaying animated assets."
+      },
+      "tokenArtworkPreview": {
+        "name": "Token Artwork Preview Mode",
+        "hint": "Choose how token artwork should be previewed in the Token Manager interface. Requires reopening the UI to take effect.",
+        "choices": {
+          "0": "Animated artwork only",
+          "1": "Static artwork only",
+          "2": "Both animated and static"
+        }
+      },
+      "tokenScale": {
+        "name": "Token Scale Increase",
+        "hint": "Increases the current token scale by this amount when updated via the Token Manager. The original scale will be restored if you use the Rollback Token option."
+      }
+    }
+  }
+}

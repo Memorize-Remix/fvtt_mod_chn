@@ -1,0 +1,100 @@
+{
+    "SETTING": {
+        "smwEnable":{
+            "name": "Display message window"
+        },
+        "showCharacter":{
+            "name": "Character Messages",
+            "hint": "Show character message in window (default: on)"
+        },
+        "showGM":{
+            "name": "Gamemaster Messages",
+            "hint": "Show gamemaster message in window (default: on)"
+        },
+        "showPlayer":{
+            "name": "Player Messages",
+            "hint": "Show player message in window (default: off)"
+        },
+        "showRoll":{
+            "name": "Dice roll Messages",
+            "hint": "Show dice roll message in window (default: off)"
+        },
+        "showOther":{
+            "name": "Other Messages",
+            "hint": "Show other message in window (default: off)"
+        },
+        "delayTime":{
+            "name": " Time (in milliseconds) to hide",
+            "hint": " Time (in milliseconds) to hide the message window (0: do not hide, default: 10000)"
+        },
+        "transparent":{
+            "name": "Window transparency (%)",
+            "hint": "Transparency of the message window background as a percentage (0: Opaque, 100: Transparent, default: 10)"
+        },
+        "fontSize":{
+            "name": "Font size (%)",
+            "hint": "Message window font size as a percentage (default: 100)"
+        },
+        "textSpeed":{
+            "name": "Text speed (%)",
+            "hint": "Text speed as a percentage (default: 100)"
+        },
+        "windowHPosition":{
+            "name": "Horizontal position",
+            "hint": "Message window horizontal position (0: bottom, 100: top, default: 50)"
+        },
+        "windowVPosition":{
+            "name": "Virtical position",
+            "hint": "Message window virtical position (0: bottom, 100: top, default: 10)"
+        },
+        "windowWidth":{
+            "name": "Window width (%)",
+            "hint": "Message window width as a percentage (default: 100)"
+        },
+        "windowHeight":{
+            "name": "Window height (%)",
+            "hint": "Message window height as a percentage (default: 100)"
+        },
+        "showImg":{
+            "name": "Show Image",
+            "hint": "Display Image (default: on)"
+        },
+        "hideMysteryman":{
+            "name": "Hide Default Image",
+            "hint": "Hide default image (icons/svg/mystery-man.svg, default: on)"
+        },
+        "imgTransparent":{
+            "name": "Image transparency (%)",
+            "hint": "Transparency of image as a percentage (0: Opaque, 100: Transparent, default: 10)"
+        },
+        "imgSize":{
+            "name": "Image size (%)",
+            "hint": "Image size as a percentage (default: 100)"
+        },
+        "layoutMenu": {
+            "name": "Window Layout Adjustment",
+            "label": "Layout Adjustment",
+            "hint": "Adjust the position, size, transparency, font size, and text speed."
+        },
+        "layout": {
+            "guiMode": "GUI Mode",
+            "guiModeStart": "Start GUI Mode",
+            "guiModeEnd": "End GUI Mode",
+            "reset": "Reset",
+            "save": "Save Changes",
+            "groupWindow": "Message Window Settings",
+            "groupImage": "Image Settings",
+            "previewHeader": "Simple Message Window",
+            "previewMessage": "This is a preview display.\n\nYou can adjust various settings related to the display of the message window and character images using sliders and numeric inputs.\n\nBy starting GUI mode, you can change settings by mouse dragging.\n\nDon't forget to save after making changes!!!"
+        },
+        "mct": {
+            "name": "Multiple Chat Tabs Integration",
+            "label": "Select non-displayed tabs",
+            "hint": "Select which chat tabs are not displayed in the message window."
+        },
+        "mctDialog": {
+            "title": "Multiple Chat Tabs Integration Settings",
+            "description": "Select the tabs you <b>do not</b> want to display in the message window."
+        }
+    }
+}

@@ -1,0 +1,149 @@
+
+  "stealthy": {
+    "hidden": {
+      "name": "隐藏",
+      "description": "隐匿掷骰",
+      "source": "隐藏效果来源",
+      "preloc": {
+        "key": "隐藏名称的本地化键key",
+        "hint": "该字符串将通过 i18n.localize() 发送。更改这些可能会影响 Stealthy 效果的整体自动化。"
+      },
+      "icon": "隐藏图标",
+      "iconhint": "隐藏效果的默认图标",
+      "aliases": "其他可识别为隐藏的名称",
+      "aliasesHint": "用分号分隔名称。这在混合语言情况下非常有用"
+    },
+    "spot": {
+      "name": "察觉",
+      "description": "察觉掷骰",
+      "source": "察觉效果来源",
+      "preloc": {
+        "key": "察觉名称的本地化键key"
+      },
+      "icon": "察觉图标",
+      "iconhint": "察觉效果的默认图标"
+    },
+    "bankPerception": "察觉掷骰",
+    "title": "Stealthy",
+    "friendlyStealth": {
+      "name": "如何处理隐匿状态下的友好 Token",
+      "allow": "始终检测察觉",
+      "inCombat": "只在战斗中检测察觉",
+      "ignore": "忽略察觉检测"
+    },
+    "playerHud": {
+      "name": "玩家可以看到掷骰结果",
+      "hint": "玩家可以在 Token HUD 上看到掷骰结果，但不能更改它们"
+    },
+    "exposure": {
+      "name": "显示光线照射",
+      "hint": "在 Token HUD 上显示所选Token的光线照射",
+      "bright": "明亮光照",
+      "dim": "微光光照",
+      "dark": "黑暗"
+    },
+    "gIDimThreshold": {
+      "name": "全局照明微光光照阈值",
+      "hint": "在启用 GI 的场景中，除非黑暗级别超过场景的 GI 阈值乘以该系数，否则将假定微光光照。使用 1.0 可以直接从明亮过渡到黑暗。"
+    },
+    "clearAfterCombat": {
+      "name": "清除战斗后的隐匿效果",
+      "hint": "只移除战斗者身上的察觉/隐藏效果"
+    },
+    "stealthToActor": {
+      "name": "隐匿掷骰给角色",
+      "hint": "将隐匿掷骰结果存入角色效果/物品中，而不是token中。"
+    },
+    "perceptionToActor": {
+      "name": "察觉掷骰给角色",
+      "hint": "将察觉掷骰结果存入角色效果/物品中，而不是token中。"
+    },
+    "detectionModesMenu": {
+      "name": "检测模式",
+      "label": "配置检测模式",
+      "hint": "启用隐匿将适用于哪些检测模式",
+      "warning": "需要重新加载才能将更改应用于所选检测模式",
+      "enable": "是否启用模式",
+      "light": "模式是否受微光与明亮光照的影响"
+    },
+    "source": {
+      "hint": "角色上存储的激活效果应使用哪个来源",
+      "ce": {
+        "name": "Convenient Effects",
+        "beforeLabel": "找不到效果",
+        "afterLabel": "在 CE 中，改用 Stealthy 的默认设置"
+      },
+      "clt": {
+        "name": "Condition Lab & Triggler",
+        "beforeLabel": "找不到效果",
+        "afterLabel": "在 CLT 中，改用 Stealthy 的默认设置"
+      },
+      "cpr": {
+        "name": "Cauldron of Plentiful Resources",
+        "beforeLabel": "找不到效果",
+        "afterLabel": "在 CPR 中，改用 Stealthy 的默认设置"
+      },
+      "ae": "Stealthy",
+      "min": "Stealthy(无token效应)"
+    },
+    "schema": {
+      "name": "模式版本",
+      "hint": "将此设置为以前的版本，可强制从指定版本向当前版本进行数据迁移"
+    },
+    "logLevel": {
+      "name": "日志级别",
+      "none": "无记录",
+      "debug": "调试级别",
+      "log": "日志级别"
+    },
+    "config": {
+      "general": "常规选项",
+      "effects": "激活效果选项",
+      "debug": "调试选项",
+      "advanced": "高级选项"
+    },
+    "dnd5e": {
+      "name": "Dnd5e",
+      "endTurn": {
+        "name": "启用回合",
+        "hint": "如果你是当前战斗员的所有者，则结束回合"
+      },
+      "hiding": {
+        "choice": "使用'隐藏Hiding'状态效果",
+        "iconhint": "隐藏效果的默认图标(使用状态效果时忽略)"
+      },
+      "perceptionDisadvantage": {
+        "name": "微光光照下的察觉劣势",
+        "hint": "使用场景照明来确定是否对具有隐匿功能的 Token 施加察觉劣势。使用 Token 的中心 X、Y，没有任何花哨"
+      },
+      "ignorePassiveFloor": {
+        "name": "主动检定时忽略被动察觉的最小值",
+        "hint": "启用房规选项，在掷骰进行主动察觉检定时忽略被动察觉值"
+      },
+      "friendlyUmbralSight": {
+        "name": "已摒弃 - 如何使用阴影视野处理友方 Token",
+        "allow": "Umbral Sight is hidden to Darkvision",
+        "inCombat": "除非在战斗中，否则忽略阴影视野",
+        "ignore": "忽略阴影视野"
+      },
+      "stealthKey": {
+        "name": "隐匿技能键key",
+        "hint": "必须是在角色.system.skills 中找到的键key，默认为'ste'。用于将自定义技能的掷骰重定向到隐匿通道，所有提示等将继续使用'隐匿stealth'的本地化功能"
+      },
+      "perceptionKey": {
+        "name": "察觉技能键key",
+        "hint": "必须是在角色.system.skills 中找到的键key，默认为'prc'。参见隐匿技能键提示，但可以用察觉替代"
+      }
+    },
+    "pf1": {
+      "name": "Pathfinder",
+      "passiveSpotOffset": {
+        "name": "被动察觉假定掷骰",
+        "hint": "如果没有察觉掷骰结果，则在可见度测试中的 d20 假设为该值。通常情况下，-99 表示自动失败，10 表示取 10。"
+      }
+    },
+    "pf2e": {
+      "dependency": "Stealthy 需要 PF2e 工作台中基本动作宏中的隐藏和搜寻动作"
+    }
+  }
+}

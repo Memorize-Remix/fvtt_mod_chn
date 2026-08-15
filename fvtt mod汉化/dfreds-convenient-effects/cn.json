@@ -1,0 +1,893 @@
+
+    "ConvenientEffects": {
+        "AppName": "DCE",
+        "BackupAppName": "备份DCE",
+
+        "Setting": {
+			"Player": "玩家",
+			"TrustedPlayer": "受信玩家",
+			"AssistantGM": "GM助手",
+			"GameMaster": "GM",
+			"None": "无",
+
+			"AppControlsPermissionName": "程序控制权限",
+			"AppControlsPermissionHint": "这定义了通过应用程序中的 token 控件上的按钮查看和应用DCE的最低权限级别。将其设置为'无'将完全禁用该按钮。",
+
+			"CreateFoldersPermissionName": "创建文件夹权限",
+			"CreateFoldersPermissionHint": "这定义了在DCE中创建新效果文件夹的最低权限级别。将其设置为'无'将完全禁用创建按钮。请注意，用户必须同时拥有 Foundry 权限才能创建项目。"
+        },
+
+		"Keybinding": {
+			"ToggleAppName": "切换DCE效果应用",
+			"ToggleAppHint": "这将激活侧边栏中的DCE效果应用。",
+			"ToggleAppPopoutName": "切换DCE效果应用弹出窗口",
+			"ToggleAppPopoutHint": "如果DCE效果应用弹出窗口当前关闭则打开，如果当前已打开则关闭。"
+		},
+
+        "SearchEffects": "搜索效果",
+        "ViewBackups": "查看备份",
+        "ShowFolder": "显示文件夹",
+        "HideFolder": "隐藏文件夹",
+        "ShowHiddenEffects": "显示隐藏效果",
+        "ShowNestedEffects": "显示嵌套效果",
+        "PrioritizeTargets": "目标优先级",
+        "NewEffect": "新效果",
+        "EditEffect": "编辑效果",
+		"AddEffect": "新增效果",
+        "RemoveEffect": "移除效果",
+        "DeleteEffect": "删除效果",
+        "ShowEffect": "显示效果",
+        "HideEffect": "隐藏效果",
+        "ToggleConvenientEffect": "切换DCE效果",
+        "ToggleAsOverlay": "切换为覆盖",
+        "ToggleStatusEffect": "切换状态效果",
+        "ResetSystemEffects": "重置系统效果",
+        "ResetSystemEffectsWarning": "这将完全重置为内置特效，撤销任何自定义创建、删除或编辑。",
+        "SelectEffect": "选择效果",
+        "NoPermissionToRemoveEffect": "你没有权限从{originalFolderName}中移除效果{effectName}。已将效果复制到{newFolderName}",
+        "NoPermissionToAddEffect": "你没有权限将效果{effectName}添加到文件夹{newFolderName}",
+
+        "FolderHidden": "文件夹隐藏",
+        "Passive": "被动",
+        "EffectHidden": "效果隐藏",
+        "HasNestedEffects": "具有嵌套效果",
+        "IsNestedEffect": "是嵌套效果",
+        "StatusEffect": "状态效果",
+        "MidiQolEffects": "Midi-QoL 效果",
+		"StackableDae": "可叠加 DAE",
+        "AtlEffects": "ATL 效果",
+        "TokenMagicEffects": "Token Magic 效果",
+
+        "Config": {
+			"Title": "DCE配置",
+			"FoundryEffectIdLabel": "FVTT效果 ID",
+			"FoundryEffectIdHint": "这是FVTT效果 ID，可用于查找、添加或删除效果。",
+			"ConvenientEffectIdLabel": "DCE ID",
+			"ConvenientEffectIdHint": "这是DCE ID，可用于查找、添加或删除效果。",
+			"TemporaryLabel": "临时",
+			"TemporaryHint": "如果选中，即使没有持续时间或状态，该效果也会被标记为临时效果。",
+			"ViewableLabel": "可查看",
+			"ViewableHint": "如果选中，程序中将始终显示该效果。",
+			"DynamicLabel": "动态",
+			"DynamicHint": "如果选中，该效果将根据角色数据应用动态效果。这一点不能更改，只能用于非常特殊的特效情况。",
+			"NestedEffectsLabel": "嵌套效果",
+			"NestedEffectsHint": "嵌套效果，在添加或移除效果时会显示为选项。",
+			"SubEffectsLabel": "子效果",
+			"SubEffectsHint": "与此效果相关的子效果。如果删除此效果，所有子效果也会自动删除。",
+			"OtherEffectsLabel": "其他效果",
+			"OtherEffectsHint": "与此效果相关的其他效果。如果移除此效果，其他效果不会自动移除。",
+
+            "IDsTab": "IDs",
+            "FlagsTab": "Flags",
+            "DependentEffectsTab": "依赖效果"
+        },
+
+        "Initializing": "初始化DCE...",
+        "FinishedInitializing": "DCE初始化完成",
+
+        "Dnd": {
+            "Folders": {
+                "Conditions": "状态",
+                "Spells": "法术",
+                "ClassFeatures": "职业特性",
+                "Equipment": "装备",
+                "MagicItems": "魔法物品",
+                "Other": "其他"
+            },
+            "AcidArrow": {
+                "name": "马友夫强酸箭",
+                "description": "在其下一回合结束时造成 2d4 点强酸伤害"
+            },
+            "Aid": {
+                "name": "援助术",
+                "description": "增加当前和最大生命值，持续 8 小时"
+            },
+            "AlterSelf": {
+                "name": "变身术",
+                "description": "无激活效果，持续 1 小时"
+            },
+            "AmuletOfHealth": {
+                "name": "健康护符",
+                "description": "体质提升至19"
+            },
+            "AntilifeShell": {
+                "name": "防活物护罩",
+                "description": "无激活效果，持续 1 小时"
+            },
+            "ArcaneHand": {
+                "name": "毕格比之手",
+                "description": "无激活效果，持续 1 分钟"
+            },
+            "Bane": {
+                "name": "灾祸术",
+                "description": "每当进行攻击检定或豁免检定时，必须从投骰结果中减去一个 d4，持续1分钟。"
+            },
+            "BardicInspiration": {
+                "name": "诗人激励",
+                "description": "在接下来的10分钟内，该生物在进行单次属性检定、攻击检定、豁免检定时可以使用该激励骰"
+            },
+            "BardicInspirationD10": {
+                "name": "诗人激励(d10)",
+                "description": "适用于 10 至 14 级吟游诗人"
+            },
+            "BardicInspirationD12": {
+                "name": "诗人激励(d12)",
+                "description": "适用于 15 至 20 级吟游诗人"
+            },
+            "BardicInspirationD6": {
+                "name": "诗人激励(d6)",
+                "description": "适用于 1 至 4 级吟游诗人"
+            },
+            "BardicInspirationD8": {
+                "name": "诗人激励(d8)",
+                "description": "适用于 5 至 9 级吟游诗人"
+            },
+            "Barkskin": {
+                "name": "树肤术",
+                "description": "将 AC 提升至 16，持续 1 小时"
+            },
+            "BeaconOfHope": {
+                "name": "希望信标",
+                "description": "在 1 分钟内，进行的感知豁免和死亡豁免具有优势。"
+            },
+            "BearsEndurance": {
+                "name": "熊之坚韧",
+                "description": "体质检定优势和 2d6 点临时生命值，持续 1 小时"
+            },
+            "BeltOfDwarvenkind": {
+                "name": "矮人腰带",
+                "description": "- 你的体质提升2，至多提升至20<br/>- 你获得对毒素伤害的抗性<br/>- 你获得60尺黑暗视觉<br/>- 你理解矮人语e"
+            },
+            "BeltOfGiantStrength": {
+                "name": "巨人之力腰带",
+                "description": "选择下列选项之一：巨人之力腰带（山丘巨人）、巨人之力腰带（霜巨人）、巨人之力腰带（石巨人）、巨人之力腰带（火巨人）、巨人之力腰带（云巨人）或巨人之力腰带（风暴巨人）"
+            },
+            "BeltOfHillGiantStrength": {
+                "name": "巨人之力腰带（山丘巨人）",
+                "description": "力量提升至21"
+            },
+            "BeltOfFrostGiantStrength": {
+                "name": "巨人之力腰带（霜巨人）",
+                "description": "力量提升至23"
+            },
+            "BeltOfStoneGiantStrength": {
+                "name": "巨人之力腰带（石巨人）",
+                "description": "力量提升至23"
+            },
+            "BeltOfFireGiantStrength": {
+                "name": "巨人之力腰带（火巨人）",
+                "description": "力量提升至25"
+            },
+            "BeltOfCloudGiantStrength": {
+                "name": "巨人之力腰带（云巨人）",
+                "description": "力量提升至27"
+            },
+            "BeltOfStormGiantStrength": {
+                "name": "巨人之力腰带（风暴巨人）",
+                "description": "力量提升至29"
+            },
+            "BlackTentacles": {
+                "name": "艾伐黑触手",
+                "description": "施加束缚状态的效果，持续 1 分钟"
+            },
+            "Bless": {
+                "name": "祝福术",
+                "description": "当进行攻击检定或豁免检定时，可以额外掷一次 d4 并加在其结果上，持续1分钟。"
+            },
+            "Blinded": {
+                "name": "目盲",
+                "description": "- 目盲的生物不能视物，其所有需要视觉的属性检定直接失败。<br />- 对目盲的生物发动攻击检定时具有优势。而目盲生物发动攻击检定时具有劣势。"
+            },
+            "BlindingSickness": {
+                "name": "失明症",
+                "description": "进行感知检定和感知豁免时具有劣势，持续7天。"
+            },
+            "Blindness": {
+                "name": "目盲术",
+                "description": "对目盲的生物发动攻击检定时具有优势。而目盲生物发动攻击检定时具有劣势，持续1分钟。"
+            },
+            "BlindnessDeafness": {
+                "name": "目盲术／耳聋术",
+                "description": "选择目盲还是耳聋"
+            },
+            "Blur": {
+                "name": "朦胧术",
+                "description": "任何生物对你发动的攻击检定具有劣势，持续 1 分钟。"
+            },
+            "BonusAction": {
+                "name": "附赠动作",
+                "description": "无激活效果，回合开始时失效"
+            },
+            "BootsOfElvenkind": {
+                "name": "精灵之靴",
+                "description": "敏捷（隐匿）检定具有优势"
+            },
+            "BootsOfTheWinterlands": {
+                "name": "雪地之靴",
+                "description": "你具有寒冷伤害的抗性"
+            },
+            "BroochOfShielding": {
+                "name": "护盾胸针",
+                "description": "你获得对力场伤害的抗性"
+            },
+            "BracersOfArchery": {
+                "name": "射手护腕",
+                "description": "- 远程武器攻击伤害获得+2加值<br/>- 你获得长弓和短弓的熟练项"
+            },
+            "BracersOfDefense": {
+                "name": "防御护腕",
+                "description": "- 你的AC获得+2加值"
+            },
+            "BullsStrength": {
+                "name": "牛之悍力",
+                "description": "进行力量检定时具有优势，且其负重翻倍，持续 1 小时。"
+            },
+            "BullseyeLantern": {
+                "name": "牛眼提灯",
+                "description": "为前方60尺的锥状区域提供光照，持续6小时（需要 ATL）"
+            },
+            "Candle": {
+                "name": "蜡烛",
+                "description": "增加 1 小时的烛光（需要 ATL）"
+            },
+            "CatsGrace": {
+                "name": "猫之优雅",
+                "description": "进行敏捷检定时具有优势，持续 1 小时。"
+            },
+            "ChannelDivinitySacredWeapon": {
+                "name": "引导神力: 神圣武器",
+                "description": "所有武器进行攻击检定时获得魅力调整值（最少+1）的加值，并发出 20/40 的光芒，持续 1 分钟（需要 ATL）"
+            },
+            "ChannelDivinityTurnTheUnholy": {
+                "name": "引导神力: 驱散不洁",
+                "description": "无激活效果，持续 1 分钟。受到伤害时失效。"
+            },
+            "ChannelDivinityTurnUndead": {
+                "name": "引导神力: 驱散不死生物",
+                "description": "无激活效果，持续 1 分钟。受到伤害时失效。"
+            },
+            "CharmPerson": {
+                "name": "魅惑人类",
+                "description": "无激活效果，持续 1 小时"
+            },
+            "Charmed": {
+                "name": "魅惑",
+                "description": "- 被魅惑生物不能攻击魅惑者，其造成伤害的能力或魔法效应也不能以魅惑者为目标。<br/>- 魅惑者对被魅惑生物进行任何与社交相关的属性检定时具有优势。"
+            },
+            "CloakOfDisplacement": {
+                "name": "移位斗篷",
+                "description": "对你的攻击检定都将具有劣势"
+            },
+            "CloakOfElvenkind": {
+                "name": "精灵斗篷",
+                "description": "敏捷（隐匿）检定具有优势"
+            },
+            "CloakOfProtection": {
+                "name": "防护斗篷",
+                "description": "你的AC和豁免获得+1加值"
+            },
+            "CloakOfTheMantaRay": {
+                "name": "蝠鲼斗篷",
+                "description": "你获得60尺游泳速度"
+            },
+            "Command": {
+                "name": "命令术",
+                "description": "无激活效果，持续到其下一回合结束"
+            },
+            "ComprehendLanguages": {
+                "name": "通晓语言",
+                "description": "添加所有语言，持续 1 小时"
+            },
+            "Concentrating": {
+                "name": "专注",
+                "description": "有些法术需要你保持专注才能使其魔法持续生效。如果失去专注，此法术就会终止。"
+            },
+            "Contagion": {
+                "name": "疫病术",
+                "description": "在失明症、腐热症、烂肉症、脑热症、癫痫症或恶心症之间做出选择"
+            },
+            "CoverHalf": {
+                "name": "半身掩护",
+                "description": "其AC和敏捷豁免视为具有 +2加值。"
+            },
+            "CoverThreeQuarters": {
+                "name": "四分之三掩护",
+                "description": "其AC和敏捷豁免视为具有 +5加值。"
+            },
+            "CoverTotal": {
+                "name": "全身掩护",
+                "description": "使所有攻击自动失败"
+            },
+            "Darkvision": {
+                "name": "黑暗视觉",
+                "description": "将黑暗视觉提升至 60 尺，持续 8 小时"
+            },
+            "Dead": {
+                "name": "死亡",
+                "description": "无激活效果"
+            },
+            "Deafened": {
+                "name": "耳聋",
+                "description": "- 耳聋的生物不能听音，其所有需要听觉的属性检定直接失败。"
+            },
+            "Deafness": {
+                "name": "耳聋术",
+                "description": "无激活效果，持续 1 minute"
+            },
+            "DisguiseSelf": {
+                "name": "易容术",
+                "description": "无激活效果，持续 1 hour"
+            },
+            "DivineFavor": {
+                "name": "神恩",
+                "description": "你的武器攻击命中时将造成额外 1d4 点光耀伤害，持续1分钟。"
+            },
+            "DivineWord": {
+                "name": "圣言术",
+                "description": "基于其当前生命值承受以下效应：",
+                "dead": "即死",
+                "stunned": "耳聋、目盲并被震慑 1 小时。",
+                "blinded": "耳聋并目盲 10 分钟。",
+                "deafened": "耳聋 1 分钟。"
+            },
+            "Dodge": {
+                "name": "回避",
+                "description": "直到你下一回合开始之前，所有你可见的敌人对你发动的攻击检定都将具有劣势，并且你进行的敏捷豁免具有优势。"
+            },
+            "EaglesSplendor": {
+                "name": "鹰之威仪",
+                "description": "进行魅力检定时具优势，持续 1 小时。"
+            },
+            "Encumbered": {
+                "name": "重载",
+                "description": "你的速度减少10尺。"
+            },
+            "EnhanceAbility": {
+                "name": "强化属性",
+                "description": "选择熊之坚韧、牛之悍力、猫之优雅、鹰之威仪、狐之狡黠或枭之睿智"
+            },
+            "Enlarge": {
+                "name": "变巨术",
+                "description": "其额外造成1d4点伤害，且进行力量检定和力量豁免时具有优势，持续 1 分钟。"
+            },
+            "EnlargeReduce": {
+                "name": "变巨术／缩小术",
+                "description": "从变巨术或缩小术中选择"
+            },
+            "Exhaustion1": {
+                "name": "力竭 1",
+                "description": "属性检定具有劣势"
+            },
+            "Exhaustion2": {
+                "name": "力竭 2",
+                "description": "属性检定具有劣势<br/>- 速度减半"
+            },
+            "Exhaustion3": {
+                "name": "力竭 3",
+                "description": "属性检定具有劣势<br/>- 速度减半<br/>- 攻击检定和豁免检定具有劣势"
+            },
+            "Exhaustion4": {
+                "name": "力竭 4",
+                "description": "属性检定具有劣势<br/>- 速度减半<br/>- 攻击检定和豁免检定具有劣势<br/>- 生命值上限减半"
+            },
+            "Exhaustion5": {
+                "name": "力竭 5",
+                "description": "属性检定具有劣势<br/>- 速度降为0<br/>- 攻击检定和豁免检定具有劣势<br/>- 生命值上限减半"
+            },
+            "EyesOfTheEagle": {
+                "name": "鹰眼镜片",
+                "description": "感知（察觉）检定具有优势"
+            },
+            "FaerieFire": {
+                "name": "妖火",
+                "description": "任何能看见他们的攻击者对其发动的攻击检定具有优势，持续 1 分钟。"
+            },
+            "FalseLife": {
+                "name": "虚假生命",
+                "description": "增加临时生命值，持续 1 小时。"
+            },
+            "FeatherFall": {
+                "name": "羽落术",
+                "description": "无激活效果，持续 1 分钟"
+            },
+            "Feeblemind": {
+                "name": "弱智术",
+                "description": "将智力和魅力属性值设为 1，直至删除"
+            },
+            "FilthFever": {
+                "name": "腐热症",
+                "description": "其进行力量检定和力量豁免时，以及发动基于力量的攻击检定时具有劣势，持续 7 天。"
+            },
+            "FindThePath": {
+                "name": "寻路术",
+                "description": "无激活效果，持续 1 天"
+            },
+            "FireShield": {
+                "name": "火焰护盾",
+                "description": "选择冷冻抗性或火焰抗性"
+            },
+            "FireShieldColdResistance": {
+                "name": "火焰护盾(冷冻抗性)",
+                "description": "增加冷冻抗性，持续 10 分钟"
+            },
+            "FireShieldFireResistance": {
+                "name": "火焰护盾(火焰抗性)",
+                "description": "增加火焰抗性，持续 10 分钟"
+            },
+            "Flanked": {
+                "name": "夹击",
+                "description": "使所有近战攻击者获得优势"
+            },
+            "Flanking": {
+                "name": "夹击",
+                "description": "在近战攻击检定时具有优势"
+            },
+            "FleshRot": {
+                "name": "烂肉症",
+                "description": "进行魅力检定时具有劣势，并且具有所有伤害类型的伤害易伤，持续 7 天。"
+            },
+            "Fly": {
+                "name": "飞行术",
+                "description": "将飞行速度提升至 60 英尺，持续 10 分钟"
+            },
+            "Foresight": {
+                "name": "预警术",
+                "description": "其无法被突袭，并且其进行的攻击检定、属性检定和豁免检定均具有优势。而其他生物对其进行攻击检定时具有劣势，持续 8 小时"
+            },
+            "FoxsCunning": {
+                "name": "狐之狡黠",
+                "description": "进行智力检定时具有优势，持续 1 小时。"
+            },
+            "FreedomOfMovement": {
+                "name": "行动自如",
+                "description": "无激活效果，持续 1 小时"
+            },
+            "Frightened": {
+                "name": "恐慌",
+                "description": "- 造成恐慌的源头仍在被恐慌生物视线范围内时，其所有属性检定和攻击检定具有劣势。<br />- 被恐慌生物不能自主向造成恐慌的源头移动。"
+            },
+            "GauntletsOfOgrePower": {
+                "name": "食人魔力量护手",
+                "description": "力量提升至19"
+            },
+            "GlobeOfInvulnerability": {
+                "name": "法术无效结界",
+                "description": "无激活效果，持续 1 分钟"
+            },
+            "GogglesOfNight": {
+                "name": "夜视镜",
+                "description": "你获得60尺黑暗视觉"
+            },
+            "Grappled": {
+                "name": "擒抱",
+                "description": "- 被擒抱生物的速度变为0，且无法受益于任何速度加值。<br />- 如果擒抱者陷入失能状态（见“失能”），则擒抱状态结束。<br />- 如果某种效应将被擒抱生物移动到擒抱者或擒抱效果的接触范围之外，则其擒抱状态结束。例如，当生物被法术 雷鸣波thunder-wave推开时。"
+            },
+            "GreatWeaponMaster": {
+                "name": "巨武器大师",
+                "description": "攻击检定承受-5减值。其伤害掷骰获得+10加值"
+            },
+            "GreaterInvisibility": {
+                "name": "高等隐形术",
+                "description": "对隐形的生物发动攻击检定时具有劣势。而隐形的生物发动攻击检定时具有优势，持续 1 分钟。"
+            },
+            "Guidance": {
+                "name": "神导术",
+                "description": "进行属性检定或技能检定时获得1d4加值，持续 1 分钟"
+            },
+            "GuidingBolt": {
+                "name": "光导箭",
+                "description": "在施法者下个回合结束前，对该目标发动的下一次攻击检定具有优势"
+            },
+            "Haste": {
+                "name": "加速术",
+                "description": "目标速度翻倍；其 AC 获得+2 加值；其进行敏捷豁免时具有优势。持续1分钟。"
+            },
+            "HeadbandOfIntellect": {
+                "name": "智力头带",
+                "description": "智力提升至19"
+            },
+            "HeavilyEncumbered": {
+                "name": "超载",
+                "description": "其速度减少20尺，并且其力量、敏捷、体质相关的属性检定、攻击检定、豁免检定都将具有劣势"
+            },
+            "HeroesFeast": {
+                "name": "英雄宴",
+                "description": "免疫毒素和恐慌状态，其进行感知豁免时具有优势，生命值上限也将提高 2d10 点，并获得等量的生命值，持续24小时。"
+            },
+            "Heroism": {
+                "name": "英雄气概",
+                "description": "免疫恐慌，持续 1 分钟"
+            },
+            "HideousLaughter": {
+                "name": "塔莎狂笑术",
+                "description": "俯身倒地，并陷入失能状态且无法起立，持续 1 分钟。"
+            },
+            "HoldMonster": {
+                "name": "怪物定身术",
+                "description": "陷入麻痹状态，持续 1 分钟。"
+            },
+            "HoldPerson": {
+                "name": "人类定身术",
+                "description": "陷入麻痹状态，持续 1 分钟。"
+            },
+            "HolyAura": {
+                "name": "圣洁灵光",
+                "description": "其散发出半径 5 尺的微光光照，且其进行的所有豁免均具有优势，而其他生物对它们进行的攻击检定具有劣势，持续 1 分钟。"
+            },
+            "HoodedLantern": {
+                "name": "附盖提灯",
+                "description": "增加 6 小时附盖提灯照明（需要 ATL）"
+            },
+            "HuntersMark": {
+                "name": "猎人印记",
+                "description": "无激活效果，持续到移除为止（暂时如此）"
+            },
+            "Incapacitated": {
+                "name": "失能",
+                "description": "- 失能的生物不能执行任何动作或反应。"
+            },
+            "Inspiration": {
+                "name": "激励",
+                "description": "在一次属性检定、攻击检定或豁免检定中获得优势，使用后失效。"
+            },
+            "Invisibility": {
+                "name": "隐形术",
+                "description": "对隐形的生物发动攻击检定时具有劣势。而隐形的生物发动攻击检定时具有优势，持续1小时。1 次攻击后失效。"
+            },
+            "Invisible": {
+                "name": "隐形",
+                "description": "- 隐形的生物只能被魔法或特殊感官观察到。在判断隐匿时，该生物视为处于重度遮蔽。不过，隐形的生物身处位置依然可以通过其发出的声音或留下的踪迹来辨认。<br />- 对隐形的生物发动攻击检定时具有劣势。而隐形的生物发动攻击检定时具有优势。"
+            },
+            "IrresistibleDance": {
+                "name": "奥图迷舞",
+                "description": "移动速度降低为0，其进行敏捷豁免和攻击检定时具有劣势。，其它生物对其进行的攻击检定具有优势，持续 1 分钟。"
+            },
+            "Jump": {
+                "name": "跳跃术",
+                "description": "无激活效果，持续 1 分钟"
+            },
+            "KiEmptyBody": {
+                "name": "气: 空灵体",
+                "description": "对隐形的生物发动攻击检定时具有劣势，而隐形的生物发动攻击检定时具有优势。你对力场伤害之外的所有伤害都具有抗性，持续 1 分钟。"
+            },
+            "KiPatientDefense": {
+                "name": "气: 坚强防御",
+                "description": "直到你下一回合开始之前，所有你可见的敌人对你发动的攻击检定都将具有劣势，并且你进行的敏捷豁免具有优势。"
+            },
+            "Lantern": {
+                "name": "提灯",
+                "description": "增加提灯照明 6 小时（需要 ATL）"
+            },
+            "Light": {
+                "name": "光亮术",
+                "description": "散发出 20/40 光照，持续 1 小时（需要 ATL）"
+            },
+            "Longstrider": {
+                "name": "大步奔行",
+                "description": "所有移动速度增加 10 英尺，持续 1 小时"
+            },
+            "MageArmor": {
+                "name": "法师护甲",
+                "description": "将护甲提升至 13 + 敏捷调整值，持续 8 小时"
+            },
+            "MantleOfSpellResistance": {
+                "name": "法术抗性斗篷",
+                "description": "你为抵抗法术进行的豁免具有优势"
+            },
+            "MindBlank": {
+                "name": "心灵屏障",
+                "description": "免疫心灵伤害，持续24小时。"
+            },
+            "Mindfire": {
+                "name": "脑热症",
+                "description": "进行智力检定和智力豁免时具有劣势，并且其在战斗中视为受到困惑术 confusion效应影响，持续 7 天"
+            },
+            "MirrorImage": {
+                "name": "镜影术",
+                "description": "无激活效果，持续 1 分钟"
+            },
+            "OwlsWisdom": {
+                "name": "枭之睿智",
+                "description": "进行感知检定时具有优势，持续 1 小时。"
+            },
+            "Paralyzed": {
+                "name": "麻痹",
+                "description": "- 麻痹的生物陷入失能状态（见“失能”），并且无法移动或说话。<br />- 麻痹的生物进行力量和敏捷豁免时直接失败。<br />- 对麻痹的生物发动攻击检定时具有优势。<br />- 攻击者身处麻痹的生物身边5尺范围内时，其任何命中该生物的攻击都将直接造成重击。"
+            },
+            "PassWithoutTrace": {
+                "name": "行动无踪",
+                "description": "进行敏捷（隐匿）检定时具有+10 加值，持续 1 小时"
+            },
+            "PeriaptOfHealth": {
+                "name": "保健护符",
+                "description": "你免疫疾病"
+            },
+            "PeriaptOfProofAgainstPoison": {
+                "name": "辟毒护符",
+                "description": "你免疫中毒状态和毒素伤害"
+            },
+            "Petrified": {
+                "name": "石化",
+                "description": "- 石化的生物遭受变形，其与随身着装或携带的非魔法物品一同被转化为无生命的实心雕像（通常是石雕）。其重量变为原本的十倍，并且停止老化。<br />- 石化的生物陷入失能状态（见“失能”），并且无法移动，无法说话，也无法感知周围的事物。<br />- 对石化的生物发动攻击检定时具有优势。<br />- 石化的生物进行力量和敏捷豁免时直接失败。<br />- 石化的生物具有所有伤害类型的伤害抗性。<br />- 石化的生物免疫毒素和疾病，但已经生效的毒素或疾病只是被暂缓，而非移除。"
+            },
+            "Poisoned": {
+                "name": "中毒",
+                "description": "- 中毒的生物发动攻击检定时具有劣势。<br />- 中毒的生物进行属性检定时具有劣势。"
+            },
+            "Prone": {
+                "name": "倒地",
+                "description": "- 倒地的生物只能以爬行方式移动，直至其成功起立以结束倒地状态为止。<br />- 倒地的生物发动攻击检定时具有劣势。<br />- 倒地的生物周边5尺范围内有攻击者对其发动攻击时，本次攻击所进行的攻击检定具有优势。而该范围外的攻击者对该倒地生物发动的攻击检定则具有劣势。"
+            },
+            "ProtectionFromAcid": {
+                "name": "防护能量伤害(强酸)",
+                "description": "对强酸伤害具有抗性，持续 1 小时。"
+            },
+            "ProtectionFromCold": {
+                "name": "防护能量伤害(冷冻)",
+                "description": "对冷冻伤害具有抗性，持续 1 小时。"
+            },
+            "ProtectionFromEnergy": {
+                "name": "防护能量伤害",
+                "description": "从强酸、冷冻、火焰、闪电、雷鸣伤害中选择一项获得对应的抗性。"
+            },
+            "ProtectionFromEvilAndGood": {
+                "name": "防护善恶",
+                "description": "无激活效果，持续 10 分钟"
+            },
+            "ProtectionFromFire": {
+                "name": "防护能量伤害(火焰)",
+                "description": "对火焰伤害具有抗性，持续 1 小时。"
+            },
+            "ProtectionFromLightning": {
+                "name": "防护能量伤害(闪电)",
+                "description": "对闪电伤害具有抗性，持续 1 小时。"
+            },
+            "ProtectionFromPoison": {
+                "name": "防护毒素",
+                "description": "对毒素伤害具有抗性，持续 1 小时(不会自动获得对抗中毒的豁免优势)"
+            },
+            "ProtectionFromThunder": {
+                "name": "防护能量伤害(雷鸣)",
+                "description": "对雷鸣伤害具有抗性，持续 1 小时。"
+            },
+            "Rage": {
+                "name": "狂暴",
+                "description": "你进行力量检定和力量豁免时具有优势。<br />- 你用力量值发动近战武器攻击时的伤害掷骰获得加值。<br />- 你拥有钝击，穿刺和挥砍伤害的抗性。<br />- 能处理图腾武者道途的抗性。",
+                "notABarbarian": "选择的角色不是野蛮人",
+                "bearTotemFeat": "图腾精魄: 熊"
+            },
+            "RangedDisadvantage": {
+                "name": "远程劣势",
+                "description": "远程攻击检定具有劣势"
+            },
+            "RayOfFrost": {
+                "name": "冷冻射线",
+                "description": "在施法者的下一回合开始前速度减少 10 尺。"
+            },
+            "Reaction": {
+                "name": "反应",
+                "description": "无激活效果，回合开始时失效"
+            },
+            "Ready": {
+                "name": "预备",
+                "description": "无激活效果，回合开始时失效"
+            },
+            "RecklessAttack": {
+                "name": "鲁莽攻击",
+                "description": "你本回合内所有使用力量值发动的近战武器攻击具有优势。此后，所有对你发动的攻击检定也将具有优势，且该优势持续存在至你的下个回合。"
+            },
+            "RecklessAttackAdvantageOnAttacks": {
+                "name": "鲁莽攻击(攻击优势)",
+                "description": "近战攻击优势，直到回合结束"
+            },
+            "Reduce": {
+                "name": "缩小术",
+                "description": "其造成的伤害减少1d4点，且进行力量检定和力量豁免时具有劣势，持续 1 分钟。"
+            },
+            "Regenerate": {
+                "name": "再生术",
+                "description": "每回合开始时恢复 1 点生命值，持续 1 小时"
+            },
+            "ResilientSphere": {
+                "name": "欧提路克弹力法球",
+                "description": "对所有伤害免疫，降低一半移动速度，持续 1 分钟"
+            },
+            "Resistance": {
+                "name": "提升抗性",
+                "description": "目标可以在一次豁免检定时额外掷一粒 d4，持续 1 分钟。"
+            },
+            "Restrained": {
+                "name": "束缚",
+                "description": "- 被束缚生物的速度变为0，并且无法受益于任何速度加值。<br />- 对被束缚生物发动攻击检定时具有优势，被束缚生物发动攻击检定时具有劣势。<br />- 被束缚生物进行的敏捷豁免具有劣势。"
+            },
+            "RingOfResistance": {
+                "name": "抗性戒指",
+                "description": "选择以下抗性之一：强酸、寒冷、火焰、力场、闪电、黯蚀、毒素、心灵、光耀或雷鸣"
+            },
+            "RingOfAcidResistance": {
+                "name": "抗性戒指（强酸）",
+                "description": "获得对强酸伤害的抗性"
+            },
+            "RingOfColdResistance": {
+                "name": "抗性戒指（寒冷）",
+                "description": "获得对寒冷伤害的抗性"
+            },
+            "RingOfFireResistance": {
+                "name": "抗性戒指（火焰）",
+                "description": "获得对火焰伤害的抗性"
+            },
+            "RingOfForceResistance": {
+                "name": "抗性戒指（力场）",
+                "description": "获得对力场伤害的抗性"
+            },
+            "RingOfLightningResistance": {
+                "name": "抗性戒指（闪电）",
+                "description": "获得对闪电伤害的抗性"
+            },
+            "RingOfNecroticResistance": {
+                "name": "抗性戒指（黯蚀）",
+                "description": "获得对黯蚀伤害的抗性"
+            },
+            "RingOfPoisonResistance": {
+                "name": "抗性戒指（毒素）",
+                "description": "获得对毒素伤害的抗性"
+            },
+            "RingOfPsychicResistance": {
+                "name": "抗性戒指（心灵）",
+                "description": "获得对心灵伤害的抗性"
+            },
+            "RingOfRadiantResistance": {
+                "name": "抗性戒指（光耀）",
+                "description": "获得对光耀伤害的抗性"
+            },
+            "RingOfThunderResistance": {
+                "name": "抗性戒指（雷鸣）",
+                "description": "获得对雷鸣伤害的抗性"
+            },
+            "RingOfFreeAction": {
+                "name": "自由行动戒指",
+                "description": "免疫麻痹和束缚状态"
+            },
+            "RingOfSwimming": {
+                "name": "善泳戒指",
+                "description": "你获得40尺游泳速度"
+            },
+            "RingOfWarmth": {
+                "name": "温暖戒指",
+                "description": "获得对寒冷伤害的抗性"
+            },
+            "RobeOfEyes": {
+                "name": "百眼法袍",
+                "description": "感知（察觉）检定具有优势, 你具有120尺的黑暗视觉和真实视觉"
+            },
+            "RobeOfStars": {
+                "name": "星辰法袍",
+                "description": "你的豁免检定具有+1加值。"
+            },
+            "RobeOfTheArchmagi": {
+                "name": "大法师法袍",
+                "description": "你的基础AC为15+你的敏捷调整值，你对抗法术和其他魔法效果时作的豁免检定具有优势，你的法术豁免DC和法术攻击加值提升2"
+            },
+            "Seizure": {
+                "name": "癫痫症",
+                "description": "进行敏捷检定和敏捷豁免时，以及发动基于敏捷的攻击检定时具劣势，持续 7 天。"
+            },
+            "Sharpshooter": {
+                "name": "神射手",
+                "description": "使攻击检定承受 -5减值，其伤害掷骰获得 +10加值。"
+            },
+            "Shield": {
+                "name": "护盾术",
+                "description": "在你的下一回合开始前，你的 AC 具有+5 加值"
+            },
+            "ShieldOfFaith": {
+                "name": "虔诚护盾",
+                "description": " AC 获得+2 加值，持续 10 分钟"
+            },
+            "SlimyDoom": {
+                "name": "恶心症",
+                "description": "其进行体质检定和体质豁免时具有劣势，另外每当该生物受到伤害时都会陷入震慑状态，直至其下一回合结束，持续 7 天"
+            },
+            "Slow": {
+                "name": "缓慢术",
+                "description": "其速度减半，而其 AC 和敏捷豁免都具有-2 减值，且不能执行反应，持续 1 分钟。"
+            },
+            "SpeakWithAnimals": {
+                "name": "动物交谈",
+                "description": "无激活效果，持续 10 分钟"
+            },
+            "SpeakWithDead": {
+                "name": "死者交谈",
+                "description": "无激活效果，持续 10 分钟"
+            },
+            "SpeakWithPlants": {
+                "name": "植物交谈",
+                "description": "无激活效果，持续 10 分钟"
+            },
+            "SpiderClimb": {
+                "name": "蛛行术",
+                "description": "在 1 小时内获得与步行速度相同的攀爬速度"
+            },
+            "SpiritGuardians": {
+                "name": "灵体卫士",
+                "description": "无激活效果，持续 10 分钟"
+            },
+            "SpiritualWeapon": {
+                "name": "灵体武器",
+                "description": "无激活效果，持续 1 分钟"
+            },
+            "Stoneskin": {
+                "name": "石肤术",
+                "description": "对非魔法的钝击、穿刺和挥砍伤害具有抗性，持续 1 小时。"
+            },
+            "StoneOfGoodLuck": {
+                "name": "幸运石",
+                "description": "你在属性检定和豁免检定上获得+1加值"
+            },
+            "Stunned": {
+                "name": "震慑",
+                "description": "- 被震慑生物陷入失能状态（见“失能”），并且无法移动，以及无法清晰连贯地说话。<br />- 被震慑生物进行力量和敏捷豁免时直接失败。<br />- 对被震慑生物发动攻击检定时具有优势。"
+            },
+            "Suggestion": {
+                "name": "暗示术",
+                "description": "无激活效果，持续 8 小时"
+            },
+            "Telekinesis": {
+                "name": "心灵遥控",
+                "description": "无激活效果，持续 10 分钟"
+            },
+            "Torch": {
+                "name": "火把",
+                "description": "增加火把照明，持续 1 小时（需要 ATL）"
+            },
+            "TrueStrike": {
+                "name": "克敌机先",
+                "description": "你在自己的下一回合里，对该目标发动的第一次攻击检定具有优势。"
+            },
+            "Unconscious": {
+                "name": "昏迷",
+                "description": "- 昏迷的生物陷入失能状态（见“失能”），并且无法移动，无法说话，也无法感知周围的事物。<br />- 昏迷的生物会放开手中持握物，并失足倒地。<br />- 昏迷的生物进行力量和敏捷豁免时直接失败。<br />- 对昏迷的生物发动攻击检定时具有优势。<br />- 攻击者身处昏迷的生物身边5尺范围内时，其任何命中该生物的攻击都将直接造成重击。"
+            },
+            "ViciousMockery": {
+                "name": "恶言相加",
+                "description": "其下一回合结束前进行第一次攻击检定具有劣势。"
+            },
+            "WardingBond": {
+                "name": "守护之链",
+                "description": "其 AC 和豁免检定具有+1 加值，且对所有伤害具有抗性，持续 1 小时"
+            },
+            "WaterBreathing": {
+                "name": "水下呼吸",
+                "description": "无激活效果，持续 24 小时"
+            },
+            "WaterWalk": {
+                "name": "水上行走",
+                "description": "无激活效果，持续 1 小时"
+            },
+            "Wounded": {
+                "name": "重伤",
+                "description": "无激活效果"
+            }
+        }
+    }
+}

@@ -1,0 +1,1295 @@
+{
+  "fcb": {
+    "title": "Campaign Builder",
+    "defaultRootFolderName": "Campaign Builder",
+    "contentFolders": {
+      "campaigns": "Campaigns",
+      "entries": "Entries",
+      "sessions": "Sessions",
+      "fronts": "Fronts",
+      "arcs": "Arcs",
+      "storyWebs": "Story Webs"
+    },
+    "settings": {
+      "startCollapsed": "Sidebar starts collapsed?",
+      "startCollapsedHelp": "Should the sidebar start closed when opening the window for the first time?",
+      "displaySessionNotes": "Display pop-up session notes",
+      "displaySessionNotesHelp": "When enabled, a session notes window will automatically open when a play session starts",
+      "defaultAddToSession": "Default 'Add to current session'",
+      "defaultAddToSessionHelp": "When in play mode, should the checkbox when creating an entry default to on or off?",
+	  "sessionBookmark": "Display Session bookmark",
+      "sessionBookmarkHelp": "When enabled, a bookmark for the current Session will be shown at the front of the bookmark bar",
+      "sessionDisplayMode": "Session display format",
+      "sessionDisplayModeHelp": "Choose how sessions are displayed in the campaign directory",
+      "sessionDisplayModeOptions": {
+        "number": "Session Number",
+        "date": "Session Date",
+        "name": "Session Name"
+      },
+      "keybindings": {
+        "closeTab": "Close tab",
+        "closeTabHelp": "Close the current tab",
+        "historyBack": "Move back in tab history",
+        "historyBackHelp": "Move \"back\" in the history of the current tab",
+        "historyForward": "Move forward in tab history",
+        "historyForwardHelp": "Move \"forward\" in the history of the current tab",
+        "toggleWindow": "Open/Close Main Window",
+        "toggleWindowHelp": "Open/Close the Campaign Builder window",
+        "addToDo": "Add To-do Item",
+        "addToDoHelp": "Open a dialog to add a new to-do item to a campaign"
+      },
+      "autoRefreshRollTables": "Automatically refresh RollTables",
+      "autoRefreshRollTablesHelp": "When enabled, generator roll tables will be automatically refreshed with new values when the module loads",
+      "rollTableSettings": "Roll Table Settings",
+      "rollTableSettingsLabel": "Roll Table Settings",
+      "rollTableSettingsHelp": "Configure settings for the random generators",
+      "rollTableConfig": {
+        "defaultTypeNPC": "Default NPC type",
+        "defaultTypeNPCHelp": "Default type to use when creating an NPC character entry",
+        "defaultTypeTown": "Default Town type",
+        "defaultTypeTownHelp": "Default type to use when creating a town location entry",
+        "defaultTypeStore": "Default Store type",
+        "defaultTypeStoreHelp": "Default type to use when creating a store location entry",
+        "defaultTypeTavern": "Default Tavern type",
+        "defaultTypeTavernHelp": "Default type to use when creating a tavern location entry"
+      },
+      "advanced": "Advanced Settings",
+      "advancedLabel": "Open Advanced Settings",
+      "advancedHelp": "Configure advanced settings (including AI)",
+      "speciesList": "Manage Species List",
+      "speciesListLabel": "Species List",
+      "speciesListHelp": "Define the species to make available.  These cross all Settings - file an issue if you have need different lists per Setting.",
+      "hideBackendWarning": "Hide missing backend warning?",
+      "hideBackendWarningHelp": "If you're not using the backend, this lets you turn off the notification that it's missing",
+      "enableToDoList": "Enable To-do List",
+      "enableToDoListHelp": "If disabled, the To Do list feature will be turned off.",
+      "autoRelationships": "Auto-suggest relationships",
+      "autoRelationshipsHelp": "If enabled, the system will automatically suggest changes to relationships between entries based on changes made to the description.",
+	  "images": "Configure Content Images",
+      "imagesLabel": "Content Images",
+      "imagesHelp": "Configure image visibility settings for different content types",
+      "showTypesInTree": "Show types in Setting tree",
+      "showTypesInTreeHelp": "When true, if the Setting directory is not grouped by type, it will show the type of each Entry in the tree.",
+      "useFronts": "Use Fronts",
+      "useFrontsHelp": "Turn on campaign \"front\" functionality.",
+      "useStoryWebs": "Use Story Webs",
+      "useStoryWebsHelp": "Turn on campaign \"story web\" functionality.",
+	  "useTimeline": "Use Timeline",
+      "useTimelineHelp": "Turn on timeline functionality (requires Calendaria module).",
+      "subTabsSavePosition": "Sub-tabs save position",
+      "subTabsSavePositionHelp": "When enabled, every tab will remember which interior sub-tab was open and return to it when you re-open that tab. When disabled, tabs will always revert to the first one (usually description).",
+      "storyWebAutoArrange": "Auto-arrange story webs",
+      "storyWebAutoArrangeHelp": "When enabled, story webs will rearrange to try to keep a clean picture.  When disabled, you can position everything exactly how you want.",
+      "customFields": "Custom Fields",
+      "customFieldsLabel": "Configure Custom Fields",
+      "customFieldsHelp": "Configure additional fields and AI instructions for each content type",
+      "storyWebSettings": "Story Web Settings",
+      "storyWebSettingsLabel": "Configure Settings",
+      "storyWebSettingsHelp": "Configure line colors/styles and element text for story webs",
+      "enableVoiceRecording": "Enable Voice Recording",
+      "enableVoiceRecordingHelp": "Allow recording voice samples for characters to help remember voices/accents",
+      "tableGrouping": "Table Grouping Settings",
+      "tableGroupingLabel": "Table Grouping",
+      "tableGroupingHelp": "Configure which tabs use grouped tables for each content type",
+	  "tabVisibility": "Tab Visibility Settings",
+      "tabVisibilityLabel": "Tab Visibility",
+      "tabVisibilityHelp": "Configure which tabs are visible for each content type",
+      "importExport": "Import/Export Module Data",
+      "importExportLabel": "Import/Export Module Data",
+      "importExportHelp": "Export all module data to a file or import from a previous export",
+      "associationTags": "Association Tags",
+      "associationTagsLabel": "Configure Association Tags",
+      "associationTagsHelp": "Configure tags that are associated with actors (for characters) and scenes (for locations)"
+    },
+    "applications": {
+      "sessionNotes": {
+        "title": "Session Notes"
+      },
+      "speciesList": {
+        "title": "Configure Species List",
+        "labels": {
+          "add": "Add species",
+          "edit": "Edit species",
+          "delete": "Delete species"
+        },
+		"newSpecies": "New Species",
+        "newDescription": "Description for new species",
+        "defaultSpecies": {
+          "dwarf": {
+            "name": "Dwarf",
+            "description": "Stout and resilient, dwarves are known for their craftsmanship, endurance, and strong connection to mountains and stonework. They are typically short and stocky, with thick beards and sturdy builds that emphasize their toughness."
+          },
+          "elf": {
+            "name": "Elf",
+            "description": "Graceful and long-lived, elves possess keen senses, a natural affinity for magic, and an enduring connection to nature. They are tall and slender, with pointed ears, angular features, and an otherworldly beauty."
+          },
+          "halfling": {
+            "name": "Halfling",
+            "description": "Small and nimble, halflings are cheerful and resourceful, known for their luck and ability to avoid danger. They are short, standing around three feet tall, with round faces, curly hair, and a friendly demeanor."
+          },
+          "human": {
+            "name": "Human",
+            "description": "Versatile and ambitious, humans adapt to any environment, excelling in a wide range of skills and professions. They vary widely in height, build, skin tone, and facial features, reflecting the diversity of their cultures."
+          },
+          "dragonborn": {
+            "name": "Dragonborn",
+            "description": "Proud and powerful, dragonborn are humanoid dragons with a strong sense of honor and an innate breath weapon. They are tall and muscular, covered in colorful scales, with reptilian heads, clawed hands, and tails."
+          },
+          "gnome": {
+            "name": "Gnome",
+            "description": "Curious and inventive, gnomes are small and agile, known for their sharp minds and love of tinkering. They are short, with pointed ears, a mischievous demeanor, and a knack for finding hidden treasures."
+          },
+          "half-elf": {
+            "name": "Half-Elf",
+            "description": "Blending human versatility with elven grace, half-elves are charismatic and adaptable, fitting into both worlds yet fully belonging to neither. They have slightly pointed ears, angular facial features, and a mix of human and elven traits that vary by ancestry."
+          },
+          "half-orc": {
+            "name": "Half-Orc",
+            "description": "Strong and tenacious, half-orcs inherit the endurance and fighting spirit of their orcish ancestry while often striving to prove themselves beyond it. They are tall and powerfully built, with green or gray skin, prominent lower tusks, and thick brows."
+          },
+          "tiefling": {
+            "name": "Tiefling",
+            "description": "Marked by infernal heritage, tieflings possess fiendish traits, an innate resilience to fire, and a talent for magic. They have horns, tails, and unusual eye and skin colors, ranging from deep reds to purples and blues."
+          }
+        }
+      },
+      "advancedSettings": {
+        "title": "Configure Advanced Settings",
+        "labels": {
+          "add": "Add",
+          "backendURL": "Backend URL",
+          "backendURLHint": "Output from script to deploy the backend.",
+          "APIToken": "API Token",
+          "APITokenHint": "Output from script to deploy the backend.",
+          "useGmailIdeas": "Use Gmail for Ideas",
+          "useGmailIdeasHint": "When enabled, idea items will be created from the Gmail inbox",
+          "emailDefaultSetting": "Default Setting for email",
+          "emailDefaultSettingHint": "The Setting to use by default for email features (ex. emailing idea items)",
+          "emailDefaultCampaign": "Default Campaign for email",
+          "emailDefaultCampaignHint": "The campaign to use by default for email features (ex. emailing idea items)",
+          "selectSetting": "Select a setting...",
+          "selectCampaign": "Select a campaign...",
+          "textModel": "Text Generation Model",
+          "textModelHint": "Select the AI model to use for text generation",
+          "imageModel": "Image Generation Model",
+          "imageModelHint": "Select the AI model to use for image generation"
+        },
+        "tabs":{
+          "backend": "Backend",
+          "models": "AI Models",
+          "content": "AI Content",
+          "email": "Email"
+        }
+      },
+	  "customFields": {
+        "title": "Configure Custom Fields",
+        "tabs": {
+          "fields": "Fields",
+          "images": "Images"
+        },
+        "notifications": {
+          "missingLabel": "Each custom field must have a label",
+          "duplicateKey": "Two custom fields have the same name. Please rename one so keys are unique."
+        },
+        "labels": {
+          "contentType": "Content type",
+          "selectType": "Select a type...",
+          "selectOptionsPlaceholder": "a;b;c",
+          "aiTemplate": "AI template",
+          "delete": "Delete"
+        },
+        "images": {
+          "labels": {
+            "prompt": "Image prompt",
+            "promptTemplate": "Image prompt template",
+            "selectField": "Select a field...",
+            "insert": "Insert",
+            "fieldToken": "Insert field token",
+            "descriptionField": "Field that holds the description to be used for image generation",
+            "negativePrompt": "Negative Prompt",
+            "imageConfiguration": "Image Configuration",
+            "artStyle": "Art Style",
+            "artStylePlaceholder": "e.g., watercolor, oil painting",
+            "medium": "Medium",
+            "mediumPlaceholder": "e.g., ink, pencil sketch",
+            "modelStyle": "Model Style",
+            "modelStylePlaceholder": "e.g., cinematic, anime",
+            "contentRating": "Content Rating",
+            "contentRatingPlaceholder": "e.g., PG, PG-13",
+            "composition": "Composition",
+            "compositionPlaceholder": "e.g., close-up portrait, wide shot",
+            "lighting": "Lighting",
+            "lightingPlaceholder": "e.g., golden hour, moody rim light",
+            "colorPalette": "Color Palette",
+            "colorPalettePlaceholder": "e.g., muted earth tones",
+            "camera": "Camera",
+            "cameraPlaceholder": "e.g., 35mm, telephoto",
+            "mood": "Mood",
+            "moodPlaceholder": "e.g., ominous, whimsical",
+            "negativePromptPlaceholder": "Things to avoid"
+          },
+          "promptHint": "Create a template for AI image generation. Use {FIELD} to reference field values in your prompt. Available fields are shown in the drop-down.  All default fields are passed automatically, so you only need to reference them if you want to give a specific instruction related to one of them."
+        },
+        "aiImage": {
+          "errors": {
+            "invalidTokens": "Invalid template token(s):"
+          }
+        },
+        "aiDialog": {
+          "title": "AI Template",
+          "labels": {
+            "enabled": "Can be AI generated",
+            "fieldToken": "Insert field token",
+            "selectField": "Select a field...",
+            "insert": "Insert",
+            "fieldTokenHint": "Use {FIELD} to reference another field when building the prompt.  Available fields are shown in the drop-down. All default fields are passed automatically, so you only need to reference them if you want to give a specific instruction related to one of them.",
+            "descriptionField": "Description field",
+            "descriptionFieldPlaceholder": "Select field to use as description...",
+            "promptTemplate": "Prompt template",
+            "configuration": "Configuration",
+            "minWords": "Min words",
+            "maxWords": "Max words",
+            "writingStyle": "Writing style",
+            "tense": "Tense",
+            "pointOfView": "Point of view",
+            "allowLists": "Allow lists",
+            "avoidListsLongerThan": "Avoid lists longer than"
+          },
+          "errors": {
+            "invalidTokens": "Invalid template token(s):"
+          },
+          "presets": {
+            "custom": "Custom",
+            "short": "Short",
+            "detailed": "Detailed",
+            "bullets": "Bulleted"
+          }
+        },
+        "columns": {
+          "label": "Label",
+          "fieldKey": "Key",
+          "selectOptions": "Select options",
+          "helpText": "Help Text"
+        },
+        "fieldTypes": {
+          "input": "Input",
+          "select": "Select",
+          "editor": "Editor",
+          "checkbox": "Checkbox"
+        }
+      },
+      "customFieldsBlocks": {
+        "notifications": {
+          "saveFailed": "Failed to save custom fields"
+        }
+      },
+      "rollTableSettings": {
+        "title": "Configure Roll Table Settings",
+        "folderName": "Campaign Builder Roll Tables",
+        "tableDescription": "Generator table for",
+        "labels": {
+          "refreshAll": "Refresh all tables",
+          "refreshAllHelp": "Replace any used items with new ones"
+        },
+        "notifications": {
+          "refreshStarted": "Generating new names for roll tables in the background",
+          "refreshSuccess": "Roll tables refreshed successfully",
+          "refreshError": "Failed to refresh roll tables. Check console for details."
+        }
+      },
+	  "storyWebSettings": {
+        "title": "Configure Story Web Settings",
+        "tabs": {
+          "colors": "Connection Colors",
+          "styles": "Connection Styles",
+		  "shapeColors": "Shape Colors",
+          "fields": "Fields"
+        },
+        "columns": {
+          "name": "Name",
+          "color": "Color",
+          "style": "Style",
+          "foregroundColor": "Text Color",
+          "backgroundColor": "Background Color",
+          "preview": "Preview",
+          "fieldName": "Field Name"
+        },
+        "fieldsHint": "The fields in this list will be displayed in the tooltip when hovering over entities in a Story Web.",
+        "contentType": "Content Type",
+        "selectField": "Select Field",
+        "notifications": {
+          "duplicateColorIds": "Color IDs must be unique",
+          "duplicateStyleIds": "Style IDs must be unique",
+          "duplicateCustomColorSchemeIds": "Custom color scheme IDs must be unique"
+        }
+      },
+	  "associationTags": {
+        "title": "Configure Association Tags",
+        "tabs": {
+          "characters": "Characters",
+          "locations": "Locations"
+        },
+        "columns": {
+          "name": "Tag Name",
+          "color": "Color",
+          "actor": "Associated Actor",
+          "scene": "Associated Scene"
+        },
+        "labels": {
+          "add": "Add Tag",
+          "noSelection": "No selection",
+          "selectActor": "Select Actor",
+          "selectScene": "Select Scene"
+        },
+        "notifications": {
+          "duplicateName": "Tag name '{name}' already exists in the other tag list",
+          "duplicateActorNames": "Actor tag names must be unique",
+          "duplicateSceneNames": "Scene tag names must be unique"
+        }
+      },
+      "createEntry": {
+        "titles": {
+          "create": {
+            "character": "Create Character",
+            "location": "Create Location",
+            "organization": "Create Organization",
+            "pc": "Create PC"
+          },
+          "update": {
+            "character": "Update Character",
+            "location": "Update Location",
+            "organization": "Update Organization",
+            "pc": "Update PC"
+          }
+        },
+        "labels": {
+          "generateImage": "Generate image",
+          "generateImageTooltip": "Generate a new image in the background after creating",
+          "generatedName":"Generated Name",
+          "generatedDescription": "Generated Description"
+        }
+      },
+      "importExport": {
+        "title": "Import/Export Module Data",
+        "exportTitle": "Export Module Data",
+        "importTitle": "Import Module Data",
+        "exportDescription": "Export all FCB settings and content to a JSON file that can be imported into another Foundry world.",
+        "importDescription": "Import FCB data from a previously exported JSON file. This will replace all existing FCB content.",
+        "exportButton": "Export Data",
+        "importButton": "Import Data",
+        "exportModeLabel": "Export Mode",
+        "exportModeAll": "Export All",
+        "exportModeConfiguration": "Configuration Only",
+        "exportModeSettings": "Settings Only",
+        "exportStarting": "Starting export...",
+        "exportComplete": "Module data exported successfully",
+        "exportFailed": "Failed to export module data",
+        "importStarting": "Starting import...",
+        "importComplete": "Module data imported successfully. Reloading...",
+        "importFailed": "Failed to import module data",
+        "importWarning": "Importing will replace any existing FCB settings that have matching IDs. Other settings will remain untouched. This cannot be undone.",
+        "importWarningConfig": "Importing configuration will update module settings without affecting FCB content.",
+        "importConfirmTitle": "Confirm Import",
+        "importConfirm": "This will replace any existing FCB settings with matching IDs. Other settings will remain untouched. Continue?",
+        "importConfirmConfig": "This will update module configuration settings. Continue?",
+        "invalidFile": "Invalid export file format",
+        "selectFile": "Select export file...",
+        "collectingSettings": "Collecting module settings...",
+        "exportingSetting": "Exporting setting",
+        "creatingFile": "Creating export file...",
+        "readingFile": "Reading import file...",
+        "validatingData": "Validating import data...",
+        "deletingExisting": "Deleting existing content...",
+        "importingSettings": "Importing module settings...",
+        "importingSetting": "Importing setting",
+        "remappingUuids": "Remapping document references..."
+      }
+    },
+    "help": {
+      "settingGenre": "ex. \"Fantasy\" - Needed for AI generation",
+      "settingFeeling": "ex. \"Rugged and dangerous with low level of magic\" - Improves AI generation"
+    },
+    "labels": {
+      "add": "Add",
+      "newTab": "New Tab",
+	  "newGroup": "New Group",
+      "saveChanges": "Save Changes",
+      "reset": "Reset",
+      "cancel": "Cancel",
+      "save": "Save",
+      "generate": "Generate",
+      "accept": "Accept",
+      "use": "Use",
+      "useOnce": "Use once",
+      "tryAgain": "Try Again",
+      "addToSetting": "Add to Setting",
+	  "description": "Description",
+      "prep": "Prep",
+      "play": "Play",
+      "ok": "OK",
+      "yes": "Yes",
+      "no": "No",
+      "close": "Close",
+      "update": "Update",
+	  "complete": "Complete",
+      "noToAll": "No to All",
+      "actors": "Actors",
+      "sessions": "Sessions",
+      "scenes": "Scenes",
+      "journals": "Journals",
+	  "searching": "Searching",
+	  "copyOf": "Copy of {name}",
+	  "branchesFolder": "Branches",
+      "tableHeaders": {
+        "actions": "Actions",
+        "name": "Name",
+        "location": "Location",
+        "journalName": "Journal",
+        "pageName": "Journal Page",
+        "type": "Type",
+        "role": "Role",
+        "description": "Description"
+      },
+      "locations": {
+        "compendium": "Compendium",
+        "world": "World"
+      },
+      "homePage": {
+        "createSetting": "Create Setting",
+        "createCampaign": "Create Campaign",
+        "createCharacter": "Create Character",
+        "createLocation": "Create Location",
+        "createOrganization": "Create Organization",
+        "createPC": "Create PC"
+      },
+      "fields": {
+        "type": "Type",
+        "parent": "Parent",
+		"parentOrganization": "Parent Organization",
+        "branchLocation": "Location",
+        "campaign": "Campaign",
+        "sessionNumber": "Number",
+        "sessionDate": "Session Date",
+        "playerName": "Player Name",
+        "background": "Background",
+        "otherPlotPoints": "Other Plot Points",
+        "desiredMagicItems": "Desired Magic Items",
+		"strongStart": "Strong Start",
+        "aiDescription": "Detailed Description",
+        "strongStartHelpText": "A strong start is a short, impactful event that sets the tone for the session. Click to read more from Lazy DM.",
+        "name": "Name",
+        "topic": "Topic",
+		"notes": "Notes",
+        "species": "Species",
+        "entryRolePlayingNotes": "Roleplaying Notes",
+        "settingGenre": "Genre",
+        "settingFeeling": "Setting Feeling",
+        "campaignDescription": "Campaign description",
+        "houseRules": "House rules",
+        "settingDescription": "Setting description",
+        "startingDescription": "Starting description",
+		"boxedText": "Boxed Text",
+        "gmNotes": "GM Notes",
+        "generateImage": "Generate Image",
+        "addToCurrentSession": "Add to current session"
+      },
+	  "addParticipant": "Add Participant",
+      "addParticipantDrag": "(or drag/drop a Setting entry)",
+      "addTopic": {
+        "character": "Add Character",
+        "location": "Add Location",
+        "organization": "Add Organization",
+        "pc": "Add PC"
+      },
+      "addTopicDrag": {
+        "character": "(or drag/drop a character)",
+        "location": "(or drag/drop a location)",
+        "organization": "(or drag/drop an organization)",
+        "pc": "(or drag/drop a PC)"
+      },
+      "entry": {
+		"entry": "Entry",
+        "topic": "TopicFolder",
+        "type": "Type",
+        "relationships": "Relationships"
+      },
+	  "arc": {
+        "arc": "Arc",
+        "addParticipant": "Add Participant",
+        "addParticipantDrag": "(or drag/drop a character/organization)",
+        "participantHelpText": "Characters and organizations likely to come up during the arc"
+      },
+      "session": {
+        "session": "Session",
+        "pc": "PC",
+        "addLocation": "Add location",
+        "addLocationDrag": "(or drag/drop a location)",
+        "addVignette": "Add vignette",
+        "addLore": "Add lore",
+		"addDocumentDrag": "(drag/drop any Foundry document)",
+        "addLoreDrag": "(or drag/drop a journal entry)",
+        "addNPC": "Add NPC",
+        "addNPCDrag": "(or drag/drop a character)",
+        "addItem": "Add item",
+        "addItemDrag": "(or drag/drop an item)",
+        "addMonster": "Add monster",
+        "addMonsterDrag": "(or drag/drop an actor)",
+        "addActor": "Add actor",
+        "addActorDrag": "(or drag/drop an actor)",
+        "addScene": "Add scene",
+        "addSceneDrag": "(or drag/drop a scene)",
+		"addJournal": "Add Journal",
+        "addJournalDrag": "(or drag/drop a journal or journal page)", 
+        "loreHelpText": "Tweet-sized bits of useful and interesting information. Click to read more from Lazy DM.",
+        "itemHelpText": "Magic items that fit your PCs and the plot. Click to read more from Lazy DM.",
+        "npcHelpText": "NPCs likely to be encountered in the session.",
+        "monsterHelpText": "Monsters that fit the situation and location. Click to read more from Lazy DM.",
+        "vignetteHelpText": "Scenes that bring resolution, open new paths, shift the story.  1 per 45 minutes. Click to read more from Lazy DM.",
+        "locationHelpText": "Detailed, memorable, fantastic locations the characters can explore. Click to read more from Lazy DM."
+      },
+      "front": {
+        "front": "Front",
+        "motivation": "Motivation",
+        "grimPortents": "Grim Portents",
+        "participants": "Participants",
+        "impendingDoom": "Impending Doom",
+        "addPortent": "Add Grim Portent",
+        "portentHelpText": "Grim portents are the events that will occur if the danger is not dealt with. They can bring resolution, open new paths, shift the story."
+      },
+      "danger": {
+        "addParticipant": "Add Participant",
+        "addParticipantDrag": "(or drag/drop a character/organization)"
+      },
+	  "storyWeb": {
+        "addText": "Add Text",
+        "enterText": "Enter new text",
+        "editText": "Edit Text",
+        "editRelationship": "Edit Relationship",
+        "removeRelationship": "Remove Relationship",
+        "removeRelationshipConfirm": "Are you sure you want to delete this relationship? This will remove the relationship on the entries, not just the diagram.",
+        "addConnection": "Add Connection",
+        "newConnectionLabel": "New relationship label (can be blank)",
+        "createConnection": "Create Connection",
+        "createConnectionPrompt": "You dropped an entry on top of an existing node. Do you want to create a connection between them?",
+        "addStoryWebDrag": "(or drag/drop a story web)",
+        "zoomIn": "Zoom In",
+        "zoomOut": "Zoom Out",
+        "fitToWindow": "Fit to Window"
+      },
+      "campaign": {
+		"campaign": "Campaign",
+        "addPC": "Add PC",
+        "addPCDrag": "(or drag/drop a PC)",
+        "pcs": "PCs",
+        "lore": "Lore",
+        "loreHelpText": "Track big campaign-level secrets and smaller ones that you aren't ready to deliver. Click to read more from Lazy DM.",
+        "toDo": "To-Do",
+        "addToDo": "Add To-do Item",
+        "ideas": "Ideas",
+        "addIdea": "Add idea"
+      },
+      "pc": {
+        "linkToNewActor": "Link to new actor",
+        "pc": "PC"
+      },
+	  "character": {
+        "character": "Character"
+      },
+      "organization": {
+        "organization": "Organization",
+        "branch": "Branch"
+      },
+      "location": {
+        "location": "Location"
+      },
+      "setting": {
+        "setting": "Setting"
+      },
+	  "timeline": {
+        "loading": "Loading timeline...",
+        "textSearch": "Search",
+        "textSearchPlaceholder": "Search events...",
+        "categories": "Categories",
+        "selectCategories": "Select categories...",
+        "excludeGMOnly": "Exclude GM Only",
+        "referenceEntity": "Reference this {entity}",
+        "resetFilters": "Reset",
+        "resetRange": "Reset Range",
+        "noFilters": "No filters",
+        "filterSummaryCategories": "Categories: {categories}",
+        "filterSummarySearch": "Search: \"{search}\"",
+        "calendar": "Calendar",
+        "selectCalendar": "Select calendar...",
+        "includeChildren": "Include children",
+        "includeArcAndSessionReferences": "Include Arc and Session references",
+        "includeSessionReferences": "Include Session references",
+        "includeAllReferences": "Include Entry, Campaign, Arc, and Session references"
+      },
+      "groupTree": "Group tree by type",
+      "tabs": {
+        "entry": {
+          "characters": "Characters",
+          "locations": "Locations",
+          "pcs": "PCs",
+          "organizations": "Organizations",
+          "foundry": "Foundry",
+          "timeline": "Timeline"
+        },
+        "setting": {
+          "timeline": "Timeline"
+        },
+        "campaign": {
+          "pcs": "PCs",
+          "lore": "Lore",
+          "toDo": "To-Do",
+          "ideas": "Ideas",
+          "timeline": "Timeline"
+        },
+        "front": {
+          "createNewDanger": "Create new Danger"
+        },
+        "arc": {
+          "pcs": "PCs",
+          "lore": "Lore",
+		  "vignettes": "Vignettes",
+          "locations": "Locations",
+          "participants": "Participants",
+          "monsters": "Monsters",
+          "items": "Magic Items",
+          "ideas": "Ideas",
+          "timeline": "Timeline"
+        },
+        "session": {
+          "notes": "Notes",
+          "noteBox": "Note Box",
+          "pcs": "PCs",
+          "start": "Start",
+          "lore": "Lore",
+          "vignettes": "Vignettes",
+          "locations": "Locations",
+          "npcs": "NPCs",
+          "monsters": "Monsters",
+          "magic": "Magic Items",
+          "toDo": "To-Do",
+          "timeline": "Timeline"
+        }
+      },
+      "noResults": "Nothing here",
+      "loading": "Loading"
+    },
+    "placeholders": {
+      "search": "Search",
+      "filter": "Filter",
+      "characterName": "Character Name",
+      "locationName": "Location Name",
+      "organizationName": "Organization Name",
+      "pcName": "PC Name",
+	  "arcName": "Arc Name",
+	  "allSessions": "All Sessions",
+      "campaignName": "Campaign Name",
+      "settingName": "Setting Name",
+      "sessionName": "Session Name",
+	  "frontName": "Front Name",
+      "dangerName": "Danger Name",
+	  "storyWebName": "Story Web Name",
+      "sessionDate": "Date",
+      "sessionNumber": "Session Number",
+      "linkToActor": "Link to Actor"
+    },
+    "topics": {
+      "character": "Character",
+      "location": "Location",
+      "organization": "Organization",
+      "pc": "PC",
+      "characters": "Characters",
+      "locations": "Locations",
+      "organizations": "Organizations",
+      "pcs": "PCs"
+    },
+    "notifications": {
+      "backend": {
+        "successfulConnection": "Successfully connected to Campaign Builder backend.",
+        "failedConnection": "Failed to connect to backend - check your \"advanced\" settings to make sure they properly match the backend server you deployed.  You'll be unable to used advanced features in the meantime.",
+        "versionMismatch": "The version of your World & Campaign Builder backend ($1) doesn't match the version required by the module version you have installed ($2).  Please update one or the other (or both).  You'll be unable to use advanced features in the meantime.",
+        "emailSettingsNotSet": "You have enabled the email idea list feature, but you haven't set a default Setting or Campaign.  Please set these in the advanced settings.",
+        "rollTablesNotAvailable": "Backend is not available. Automatic RollTables will not be refreshed. Configure the backend in Advanced Settings to enable AI-generated names that match your world's theme."
+      },
+	  "duplicateBookmark": "Already stored as a bookmark",
+      "nameRequired": "Name cannot be blank",
+      "failedToRepairIndexes": "Failed to repair indexes. Check console for details.",
+	  "participantCopiedToNextSession": "Participant copied to next session",
+      "locationCopiedToNextSession": "Location copied to next session",
+      "monsterCopiedToNextSession": "Monster copied to next session",
+	  "itemCopiedToNextSession": "Item copied to next session",
+      "toDoReferenceNotFound": "The linked reference for this to-do item no longer exists.",
+      "addedToSession": "added to session",
+      "changesSaved": "Changes saved",
+      "changesDiscarded": "Changes discarded",
+	  "failedToExportStoryWeb": "Failed to export story web as PNG",
+      "export": {
+        "starting": "Starting setting export...",
+        "complete": "Setting exported successfully",
+        "failed": "Failed to export setting"
+      },
+      "migration": {
+        "minimumVersionRequired": "Campaign Builder cannot migrate from version {0}. You must first upgrade to version {1} or higher before upgrading to {2}.",
+        "cannotOpen": "Campaign Builder cannot be opened because migration failed. Please check the console for details and resolve the migration issue."
+      },
+      "documentIndexesRepaired": "All document indexes have been successfully repaired!",
+      "voiceRecording": {
+        "saved": "Voice recording saved",
+        "deleted": "Voice recording removed",
+        "permissionDenied": "Microphone access denied. Please allow microphone access to record voice.",
+        "notSupported": "Voice recording is not supported in this browser",
+        "uploadFailed": "Failed to upload voice recording"
+      }
+    },
+    "dialogs": {
+      "generateNameDialog": {
+        "title": "Select an Option",
+        "errorMessage": "There was an error:",
+        "emptyTable": "There are no undrawn names left in the RollTable.  You can open it and add some fresh ones, or use 'Reset Results' to reuse old names."
+      },
+      "configureNames": {
+        "title": "Configure Name Styles",
+        "description": "Select the naming styles you'd like to use for AI-generated names in this setting. You can preview examples of each style below, based on this setting's genre and feeling.",
+        "errorMessage": "There was an error:"
+      },
+      "confirmDeleteRelationship": {
+        "title": "Remove from relationship?",
+        "message": "Are you sure you want to delete this relationship?"
+      },
+	  "confirmDeleteParticipant": {
+        "title": "Remove this participant?",
+        "message": "Are you sure you want to remove this participant from the danger?"
+      },
+      "confirmDeletePC": {
+        "title": "Remove PC?",
+        "message": "Are you sure you want to remove this PC from the campaign?  This will not impact the PC entry itself."
+      },
+      "saveSessionNotes": {
+        "title": "Save changes?",
+        "message": "Do you want to save the current session notes before closing?"
+      },
+      "createEntry": {
+        "generatedName": "Generated name",
+        "generatedDescription": "Generated description",
+        "generatePrompt": "Press generate for results",
+        "generatePrompt2": "Otherwise, \"Brief Description\" will be used as the new Entry description."
+      },
+	  "voiceRecording": {
+        "title": "Voice Recording",
+        "recording": "Recording... Click Stop when finished.",
+        "stop": "Stop",
+        "overwriteTitle": "Overwrite Recording?",
+        "overwriteMessage": "A voice recording already exists. Do you want to replace it?",
+        "deleteTitle": "Delete Recording?",
+        "deleteMessage": "Are you sure you want to delete this voice recording? The file will remain on the server but will no longer be linked to this character.",
+        "selectFolderTitle": "Select Voice Recording Folder"
+      },
+	  "arcManager": {
+        "title": "Manage Arcs",
+        "labels": {
+          "edit": "Edit arc",
+          "delete": "Delete arc",
+          "addArc": "Add Arc"
+        },
+        "missingSession": "Missing Session",
+        "warning": {
+          "mustBeBlank": "There are no sessions in the campaign, so start and end must be blank",
+          "invalidSessionNumber": "Invalid session number",
+          "startTooHigh": "Start session must be less than end session",
+          "bothBlank": "Start and end session numbers must either both be blank or both be non-blank",
+          "allSessionsCovered": "All sessions must be covered by an arc"
+        }
+      },
+      "createPC": {
+        "title": "Create PC",
+        "playerName": "Player Name"
+      },
+      "createCampaign": {
+        "title": "Create Campaign",
+        "campaignName": "Campaign Name"
+      },
+      "createSession": {
+        "title": "Create Session",
+        "sessionName": "Session Name"
+      },
+	  "createFront": {
+        "title": "Create Front",
+        "frontName": "Front Name"
+      },
+      "createArc": {
+        "title": "Create Arc",
+        "arcName": "Arc Name"
+      },
+      "createSetting": {
+        "title": "Create Setting",
+        "settingName": "Setting Name"
+      },
+	  "createStoryWeb": {
+        "title": "Create Story Web",
+        "webName": "Story Web Name"
+      },
+      "deleteEntry": {
+        "title": "Delete entry?",
+        "message": "Are you sure you want to delete this entry?  It will be removed from all relationships and sessions.  Any references to it in editors will become broken."
+      },
+	  "deleteEntryWithBranches": {
+        "title": "Delete entry?",
+        "message": "This will also delete {count} branch(s). Are you sure you want to continue?"
+      },
+      "createBranches": {
+        "title": "Create Branches",
+        "message": "Select locations to create branches for {organization}:",
+        "loading": "Loading locations...",
+        "noLocations": "No locations available",
+        "selectedCount": "{count} location(s) selected",
+        "existingBranch": "(branch exists)"
+      },
+      "addToDo": {
+        "title": "Add To-do",
+        "prompt": "Enter to-do text:"
+      },
+	  "selectCampaign": {
+        "title": "Select Campaign",
+        "prompt": "Which campaign should this to-do be added to?"
+      },
+      "relatedEntries": {
+        "additionalInformation": "Additional Information",
+        "allItemsConnected": "All possible related items are already connected.",
+        "entry": {
+          "title": "Add an entry",
+          "buttonTitle": "Add entry"
+        },
+        "character": {
+          "title": "Add a character",
+          "createButtonTitle": "Create character",
+          "buttonTitle": "Add relationship"
+        },
+        "location": {
+          "title": "Add a location",
+          "createButtonTitle": "Create location",
+          "buttonTitle": "Add relationship"
+        },
+        "organization": {
+          "title": "Add an organization",
+          "createButtonTitle": "Create organization",
+          "buttonTitle": "Add relationship"
+        },
+        "pc": {
+          "title": "Add a PC",
+          "createButtonTitle": "Create PC",
+          "buttonTitle": "Add relationship"
+        },
+        "addToSession": "Add to session"
+      },
+      "relatedDocuments": {
+        "addActor": "Add Actor",
+        "addItem": "Add Item",
+        "addJournal": "Add Journal/Page",
+        "addScene": "Add Scene"       
+      },
+	  "saveChanges": {
+        "title": "Unsaved Changes",
+        "message": "You have unsaved changes in one or more open editors. What would you like to do?",
+		"uuidChangesMessage": "You've added or removed references to other entries. Would you like to update the related entries?",
+        "save": "Save Changes",
+        "discard": "Discard Changes",
+        "cancel": "Cancel"
+      },
+	  "migrationProgress": {
+        "title": "Migrating Campaign Builder to new version",
+        "message": "Migrating your campaign data to the latest version...",
+        "warnings": {
+          "noMigrationsNeeded": "No migrations needed"
+        },
+        "status": {
+          "initializing": "Initializing...",
+          "runningMigrationForVersion": "Running migration for version {version}...",
+          "completedMigrationForVersion": "Completed migration for version {version}",
+          "failedMigrationForVersion": "Migration failed for version {version}",
+          "completedMigrationsProgress": "Completed {completed}/{total} migrations",
+          "processedSetting": "Processed setting: {name}",
+          "migratedDocumentsProgress": "Migrated documents ({migrated}/{total})"
+        },
+        "progress": {
+          "percent": "{percent}%"
+        },
+        "errors": {
+          "migrationFailedForVersion": "Migration failed for version {version}: {error}"
+        },
+        "completion": {
+          "completeTitle": "Migration Complete",
+          "failedTitle": "Migration Failed",
+          "successMigratedItems": "Successfully migrated {count} items.",
+          "noMigrationNeeded": "No migration was needed.",
+          "failureSummary": "Migration failed. {migrated} items migrated, {failed} failed.",
+          "errorDetails": "Error Details",
+          "warnings": "Warnings"
+        }
+      },
+	  "imageSettings": {
+        "title": "Image Visibility Settings",
+        "description": "Choose which content types should display images on their description pages.",
+        "settings": "Settings",
+        "entries": "Entries",
+        "campaigns": "Campaigns",
+        "arcs": "Arcs",
+        "sessions": "Sessions",
+        "fronts": "Fronts"
+      },
+	  "tableGrouping": {
+        "title": "Table Grouping Settings",
+        "description": "Choose which tabs should use grouped tables for each content type.",
+        "contentTypes": {
+          "settings": "Settings",
+          "entries": "Entries",
+          "campaigns": "Campaigns",
+          "arcs": "Arcs",
+          "sessions": "Sessions",
+          "fronts": "Fronts"
+        },
+        "tabs": {
+          "journals": "Journals",
+          "characters": "Characters",
+          "npcs": "NPCs",
+          "locations": "Locations",
+          "organizations": "Organizations",
+          "pcs": "PCs",
+          "actors": "Actors",
+          "sessions": "Sessions",
+          "items": "Items",
+          "magicItems": "Magic Items",
+          "monsters": "Monsters",
+          "vignettes": "Vignettes",
+          "lore": "Lore",
+          "ideas": "Ideas",
+          "todo": "To-Dos",
+          "participants": "Participants",
+          "grimPortents": "Grim Portents"
+        }
+      },
+	  "tabVisibility": {
+        "title": "Tab Visibility Settings",
+        "description": "Choose which tabs should be visible for each content type. Description tabs are always shown.",
+        "contentTypes": {
+          "setting": "Setting",
+          "campaign": "Campaign",
+          "arc": "Arc",
+          "session": "Session",
+          "entryCharacter": "Entry - Character",
+          "entryLocation": "Entry - Location",
+          "entryOrganization": "Entry - Organization",
+          "entryPC": "Entry - PC"
+        },
+        "tabs": {
+          "journals": "Journals",
+          "characters": "Characters",
+          "npcs": "NPCs",
+          "locations": "Locations",
+          "organizations": "Organizations",
+          "pcs": "PCs",
+          "actors": "Actors",
+          "scenes": "Scenes",
+          "sessions": "Sessions",
+          "foundry": "Foundry",
+          "monsters": "Monsters",
+          "vignettes": "Vignettes",
+          "lore": "Lore",
+          "ideas": "Ideas",
+          "todo": "To-Dos",
+          "participants": "Participants",
+          "magic": "Magic Items",
+          "storyWebs": "Story Webs",
+          "timeline": "Timeline"
+        }
+      },
+      "relatedEntriesManagement": {
+        "title": "Manage Related Entries",
+        "entryDescription": "Select Entries to link or unlink to this Entry based on your changes.",
+        "sessionDescription": "Select Entries to link or unlink to the Session based on your changes.",
+        "arcDescription": "Select Entries to link or unlink to this Arc based on your changes.",
+        "pcDescription": "Select Entries to link or unlink to this PC based on your changes.",
+        "dangerDescription": "Select Participants to add to/remove from this Danger based on your changes.",
+        "addedItems": "New References Found",
+        "removedItems": "References Removed"
+      },
+      "overwriteField": {
+        "title": "Overwrite field?",
+        "message": "Are you sure you want to overwrite {field} with new text?"
+      },
+      "deleteGroup": {
+        "title": "Delete group?",
+        "message": "Are you sure you want to delete this group? All items will be put in 'Ungrouped'"
+      },
+      "deleteSetting": {
+        "title": "Delete setting?",
+        "message": "Are you sure you want to delete this setting?"
+      },
+      "deleteLocation": {
+        "title": "Delete location?",
+        "message": "Are you sure you want to delete this location? This will not impact the associated Setting Location"
+      },
+      "deleteParticipant": {
+        "title": "Delete participant?",
+        "message": "Are you sure you want to delete this participant? This will not impact the associated entry"
+      },
+      "deleteLore": {
+        "title": "Delete lore?",
+        "message": "Are you sure you want to delete this lore?"
+      },
+      "deleteVignette": {
+        "title": "Delete vignette?",
+        "message": "Are you sure you want to delete this vignette?"
+      },
+      "deleteMonster": {
+        "title": "Delete monster?",
+        "message": "Are you sure you want to delete this monster?"
+      },
+      "deleteItem": {
+        "title": "Delete item?",
+        "message": "Are you sure you want to delete this item?"
+      },
+      "deleteIdea": {
+        "title": "Delete idea?",
+        "message": "Are you sure you want to delete this idea?"
+      },
+      "deleteNPC": {
+        "title": "Delete NPC?",
+        "message": "Are you sure you want to delete this NPC? This will not impact the associated Character"
+      },
+      "deleteSession": {
+        "title": "Delete session?",
+        "message": "Are you sure you want to delete this session?"
+      },
+      "deleteFront": {
+        "title": "Delete front?",
+        "message": "Are you sure you want to delete this front?"
+      },
+      "deleteStoryWeb": {
+        "title": "Delete story web?",
+        "message": "Are you sure you want to delete this story web?"
+      },
+      "createEntryTitle": {
+        "title": "Create {topic}"
+      }
+    },
+    "contextMenus": {
+	  "addToStoryWeb": "Add to current Story Web",
+      "addWithRelationships": "Add with Relationships",
+      "tabs": {
+        "closeAll": "Close All Tabs",
+        "closeOther": "Close Other Tabs"
+      },
+      "bookmarks": {
+        "openNewTab": "Open in new Tab",
+        "delete": "Delete bookmark"
+      },
+      "settingFolder": {
+        "delete": "Delete Setting",
+        "createCampaign": "Create campaign",
+        "exportJson": "Export as JSON"
+      },
+      "campaignsHeader": {
+        "createCampaign":"Create campaign"
+      },
+      "campaignFolder": {
+        "createSession": "Create a session",
+		"createFront": "Create a front",
+        "createArc": "Create an arc",
+		"createStoryWeb": "Create a story web",
+        "manageArcs": "Manage arcs",
+        "delete": "Delete campaign",
+        "markComplete": "Mark campaign complete",
+        "markActive": "Mark campaign active"
+      },
+	  "arcFolder": {
+        "createSession": "Create a session",
+        "delete": "Delete arc"
+      },
+      "session": {
+        "delete": "Delete session"
+      },
+	  "front": {
+        "delete": "Delete front"
+      },
+	  "danger": {
+        "delete": "Delete danger"
+      },
+	  "storyWeb": {
+		"duplicate": "Duplicate Web",
+        "delete": "Delete Story Web",
+        "exportAsPng": "Export as PNG"
+      },
+      "storyWebGraph": {
+        "delete": "Delete",
+        "removeFromDiagram": "Remove from diagram",
+        "addText": "Add Text",
+        "addEntry": "Add Entry",
+        "editText": "Edit Text",
+        "editRelationship": "Edit Relationship",
+        "addConnection": "Add Connection",
+        "addEntryWithRelationships": "Add Entry with relationships",
+        "addDanger": "Add Danger",
+        "addDangerWithRelationships": "Add Danger with relationships",
+        "addTextPrompt": "Enter text to add to the diagram",
+        "openEntryInNewTab": "Open Entry in new tab",
+        "openDangerInNewTab": "Open Danger in new tab",
+        "setColor": "Set Color",
+        "setStyle": "Set Style",
+        "resetToDefault": "Reset to Default"
+      },
+      "dialogs": {
+        "cannotActivateFromCompendium": "Cannot activate from compendium",
+        "cannotToggleNavigationFromCompendium": "Cannot toggle navigation from scene in a compendium",
+        "cannotToggleNavigationWhileActive": "Cannot toggle navigation while scene is active"
+      },
+      "image": {
+        "viewImage": "View Image",
+		"showToPlayers": "Show to players",
+        "changeImage": "Change Image",
+        "addImage": "Add Image",
+        "removeImage": "Remove Image",
+        "postToChat": "Post To Chat",
+        "createScene": "Create Scene",
+        "generateImage": "Generate image",
+        "copyToClipboard": "Copy to clipboard",
+        "copyLinkToClipboard": "Copy link to clipboard"
+      },
+	  "voice": {
+        "record": "Record Voice",
+        "play": "Play Voice",
+        "delete": "Delete Recording",
+        "changeFolder": "Change Recording Folder"
+      },
+      "topicFolder": {
+        "create": {
+          "1": "Create new character",
+          "2": "Create new location",
+          "3": "Create new organization",
+          "4": "Create new PC"
+        }
+      },
+      "directoryEntry": {
+        "delete": "Delete entry",
+        "createBranches": "Create Branches"
+      },
+      "typeFolder": {
+        "create": "Create new"
+      },
+      "generate":  {
+        "nameAndDescription": "Generate name or description",
+        "image": "Generate image",
+        "inProgress": "in progress",
+        "configureNames": "Configure names"
+      }
+    },
+    "tooltips": {
+      "mainButton": "Launch Campaign Builder",
+      "createSetting": "Create Setting",
+      "expandDirectory": "Expand directory",
+      "collapseDirectory": "Collapse directory",
+	  "maximizeWindow": "Maximize window",
+      "restoreWindow": "Restore window",
+      "collapseAllTopics": "Collapse all",
+      "addBookmark": "Add bookmark",
+	  "moreBookmarks": "More bookmarks",
+	  "currentSession": "current session",
+	  "campaignComplete": "Campaign complete",
+	  "arcComplete": "Arc complete",
+      "historyBack": "Back",
+      "historyForward": "Forward",
+	  "generateAIContent": "Generate AI content",
+      "editRelationship": "Edit relationship",
+	  "editNotes": "Edit notes",
+	  "editSession": "Edit session",
+      "editParticipant": "Edit participant",
+      "editPortent": "Edit grim portent",
+      "deleteRelationship": "Delete relationship",
+      "deleteLocation": "Delete location",
+      "deleteNPC": "Delete NPC",
+      "deleteItem": "Delete item",
+      "deleteMonster": "Delete monster",
+      "editRow": "Edit this item. Press enter to save changes.",
+      "deleteScene": "Delete scene",
+      "deleteVignette": "Delete vignette",
+	  "deletePortent": "Delete grim portent",
+      "deleteParticipant": "Delete participant",
+      "deleteLore": "Delete lore",
+      "deleteToDo": "Complete to-do item",
+      "deleteIdea": "Delete idea",
+	  "moveToToDo": "Move to to-do list",
+      "moveToIdeas": "Move to ideas list",
+      "markAsDelivered": "Mark as delivered",
+      "unmarkAsDelivered": "Unmark as delivered",
+      "moveToNextSession": "Move to next session",
+	  "copyToNextSession": "Copy to next session",
+      "moveToCampaign": "Move to campaign for later usage",
+	  "moveToArc": "Move to arc for later usage",
+      "moveToLatestArc": "Move to latest arc",
+      "addToCampaign": "Add to campaign",
+      "addToASession": "Add to a session",
+      "sessionUnavailable": "No campaigns with an active session, or this entry is already attached to them all",
+      "generateContent": "Generate content",
+      "settingGenerateContent": "Manage Setting generation configuration",
+      "backendNotAvailable": "Backend not available",
+      "playModeNoCampaigns": "You need to have at least one campaign with a session in order to use Play mode",
+      "dragMonsterFromSession": "Drag to scene",
+      "dragItemFromSession": "Drag to actor, etc.",
+      "dragToScene": "Drag to scene",
+	  "cannotChangeSettingInPlayMode": "Cannot change Setting while in play mode",
+      "contentLinks": {
+        "1": {
+          "1": "Character",
+          "2": "Location",
+          "3": "Organization",        
+          "4": "PC"
+        },
+        "2": "Campaign",
+        "3": "Session",
+        "4": "Setting",
+        "5": "Front",
+        "6": "Arc",
+        "7": "Story Web",
+        "8": "Tag Results"
+      },
+      "createEntry": {
+        "addToCurrentSession": "Add to current session",
+        "name": "If left blank, a name will be generated automatically",
+        "type": "If you create a new type, it will be added to the master list",
+        "description": "Optional. Use to specify physical features or personality traits you want included. Can be very brief.",
+        "parent": "May influence generated text in some cases",
+        "species": "If blank, a random species from your Setting will be used for AI generation. Custom entries will be passed to the AI but not added to your species list",
+        "longDescriptions": "Generate detailed description or a short summary?",
+        "generateImage": "Generate a new image in the background after creating"
+      },
+      "voiceRecordingExists": "Voice recording exists - click for options",
+      "voiceRecordingNone": "No voice recording - click to record",
+      "openFoundryActor": "Open Foundry Actor",
+      "openFoundryScene": "Open Foundry Scene",
+      "noActorsAttached": "No actors attached",
+      "noScenesAttached": "No scenes attached"
+    },
+	"tags": {
+      "tag": "Tag",
+      "resultsFor": "Tag Results for",
+      "entryFound": "entry found",
+      "entriesFound": "entries found",
+      "actorAssociated": "Actor associated via tag \"{tagName}\":",
+      "sceneAssociated": "Scene associated via tag \"{tagName}\":",
+      "dragActorHint": "Drag to Foundry",
+      "clickSceneHint": "Click to configure.  Right-click for more options.",
+      "multipleActorTagsWarning": "Multiple actor tags applied. Only the first ({name}) will be used.",
+      "multipleSceneTagsWarning": "Multiple scene tags applied. Only the first ({name}) will be used."
+    },
+    "export": {
+      "relatedTopics": {
+        "1": "Related Characters",
+        "2": "Related Locations",
+        "3": "Related Organizations",
+        "4": "Related PCs"
+      }
+    }
+  }
+}

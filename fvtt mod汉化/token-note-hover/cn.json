@@ -1,0 +1,120 @@
+
+  "token-note-hover": {
+    "Settings": {
+      "HoverEnabled": {
+        "Name": "启用悬停",
+        "Hint": "当悬停在token上时，在提示中显示备注。"
+      },
+      "DisplayImages": {
+        "Name": "显示图像",
+        "Hint": "显示 token 备注中包含的图像。"
+      },
+	  "DisplayPC": {
+		"Name": "显示PC Token的注释",
+		"Hint": "显示PC Token的注释信息。"
+	  },
+	  "DisplayNPC": {
+		"Name": "显示NPC Token的注释",
+		"Hint": "显示NPC Token的注释信息。"
+	  },
+      "OwnershipPermissionsRequired": {
+        "Name": "所需权限",
+        "Hint": "查看备注需要Token的拥有权限。"
+      },
+      "TooltipPlacement": {
+        "Name": "提示位置",
+        "Hint": "提示相对于 token 的位置。",
+        "Choices": {
+          "north-west-alt": "西北 Alt",
+          "north-west": "西北",
+          "north": "北",
+          "north-east": "东北",
+          "north-east-alt": "东北 Alt",
+          "west": "西",
+          "east": "东",
+          "south-west-alt": "西南 Alt",
+          "south-west": "西南",
+          "south": "南",
+          "south-east": "东南",
+          "south-east-alt": "东南 Alt"
+        }
+      },
+	  "TooltipScreenPosition": {
+		"Name": "提示屏幕位置",
+		"Hint": "设置提示在屏幕上的显示位置。",
+		"Choices": {
+		  "adjacent-to-token": "Token旁",
+		  "bottom-left": "左下角",
+		  "bottom-right": "右下角",
+		  "top-left": "左上角",
+		  "top-right": "右上角"
+		}
+	  },
+      "SmartPlacement": {
+        "Name": "提示智能放置 ",
+        "Hint": "动态放置提示，使其位于浏览器视窗内。"
+      },
+      "TooltipOpenDelay": {
+        "Name": "提示打开延迟",
+        "Hint": "token 备注提示出现前的延迟时间（毫秒）。"
+      },
+      "TooltipCloseDelay": {
+        "Name": "提示关闭延迟",
+        "Hint": "token 备注提示关闭前的延迟时间（毫秒）。"
+      },
+      "TooltipColor": {
+        "Name": "提示主题",
+        "Hint": "token 备注提示的颜色主题。`系统`将使用游戏系统主题。",
+        "System": "系统",
+        "Default": "默认",
+        "Blue": "蓝色",
+        "Dark": "暗色",
+        "Green": "绿色",
+        "Light": "亮色",
+        "Oceanic": "海洋",
+        "Orange": "橙色",
+        "Phosphor": "荧光",
+        "Purple": "紫色",
+        "Red": "红色",
+        "Yellow": "黄色",
+        "Zinc": "锌色"
+      },
+      "FontSize": {
+        "Name": "文本大小",
+        "Hint": "token 备注显示的基础文字大小。使用'rem'或'px'单位。"
+      },
+      "MaxWidth": {
+        "Name": "最大宽度",
+        "Hint": "token 备注显示在强制换行前的最大宽度（px）。"
+      },
+      "UseMousePositionForCoordinates": {
+        "Name": "使用鼠标位置获取提示坐标",
+		"Hint": "使用鼠标位置显示提示。此设置将覆盖“提示屏幕位置”的设置。"
+      },
+      "ShowTitle": {
+        "Name": "在提示上显示标题",
+        "Hint": "在提示中显示 token 标题"
+      },
+      "HidePrivateNotes": {
+        "Name": "隐藏私人笔记",
+        "Hint": "从提示框中隐藏标记为私有的笔记"
+      },
+      "UseHotkeyToOpenTooltip": {
+        "Name": "使用快捷键打开提示",
+        "Hint": "使用快捷键打开提示。这将覆盖鼠标悬停行为。"
+      },
+      "HotkeyToOpenTooltip": {
+        "Name": "选择打开提示的快捷键",
+        "Hint": "选择打开提示的快捷键。仅在启用快捷键时使用。",
+        "Choices": {
+            "ControlLeft": "左Ctrl键",
+            "ControlRight": "右Ctrl键",
+            "AltLeft": "左Alt键",
+            "AltRight": "右Alt键",
+            "MetaLeft": "左Command键(Mac)",
+            "MetaRight": "右Command键(Mac)"
+        }
+      }
+    }
+  }
+}

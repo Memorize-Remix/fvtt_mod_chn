@@ -1,0 +1,154 @@
+{
+    "elevationruler.name": "Elevation Ruler",
+    "elevationruler.keybindings.decrementElevation.name": "Decrement Ruler Elevation",
+    "elevationruler.keybindings.decrementElevation.hint": "Decrease the elevation in grid increments when using the ruler.",
+
+    "elevationruler.keybindings.incrementElevation.name": "Increment Ruler Elevation",
+    "elevationruler.keybindings.incrementElevation.hint": "Increase the elevation in grid increments when using the ruler.",
+
+    "elevationruler.keybindings.addWaypoint.name": "Add Regular Ruler Waypoint",
+    "elevationruler.keybindings.addWaypoint.hint": "When using the canvas ruler, add a waypoint.",
+
+    "elevationruler.keybindings.removeWaypoint.name": "Remove Regular Ruler Waypoint",
+    "elevationruler.keybindings.removeWaypoint.hint": "When using the canvas ruler, remove a waypoint.",
+
+    "elevationruler.keybindings.addWaypointTokenRuler.name": "Add Token Ruler Waypoint",
+    "elevationruler.keybindings.addWaypointTokenRuler.hint": "When token ruler is enabled and you are dragging a token, add a waypoint.",
+
+    "elevationruler.keybindings.removeWaypointTokenRuler.name": "Remove Token Ruler Waypoint",
+    "elevationruler.keybindings.removeWaypointTokenRuler.hint": "When token ruler is enabled and you are dragging a token, remove a waypoint.",
+
+    "elevationruler.keybindings.togglePathfinding.name": "Temporarily Toggle Pathfinding",
+    "elevationruler.keybindings.togglePathfinding.hint": "If the pathfinding button is enabled, holding this key will temporarily disable pathfinding. If the pathfinding button is not enabled, holding this key will temporarily enable pathfinding.",
+
+    "elevationruler.keybindings.forceToGround.name": "Force Ruler Elevation to Ground",
+    "elevationruler.keybindings.forceToGround.hint": "When measuring, press this key to get the distance to the ground. Press again to revert.",
+
+    "elevationruler.keybindings.teleport.name": "Teleport along ruler",
+    "elevationruler.keybindings.teleport.hint": "When measuring, hold this key when you release the dragged token or hit the spacebar to move the token to the ruler destination without animation.",
+
+    "elevationruler.settings.pathfinding-algorithm.name": "Pathfinding Algorithm",
+    "elevationruler.settings.pathfinding-algorithm-simple": "Simple",
+    "elevationruler.settings.pathfinding-algorithm-collision": "Gridded Collision",
+    "elevationruler.settings.pathfinding-algorithm-cwsweep": "Clockwise Sweep",
+    "elevationruler.settings.pathfinding-algorithm-trianglemesh": "Triangle Mesh",
+    "elevationruler.settings.pathfinding-algorithm-polymesh": "Polygon Mesh",
+    "elevationruler.settings.pathfinding-algorithm-navmesh": "Navigation Mesh (Recast/Detour)",
+    "elevationruler.settings.pathfinding-algorithm-webgpu": "WebGPU",
+
+    "elevationruler.settings.levels-use-floor-label.name": "Levels Floor Label",
+    "elevationruler.settings.levels-use-floor-label.hint": "If Levels module is active, label the ruler with the current floor, if the Levels UI floors are named.",
+    "elevationruler.settings.levels-labels-never": "Never",
+    "elevationruler.settings.levels-labels-ui": "Only when Levels UI is active",
+    "elevationruler.settings.levels-labels-always": "Always",
+
+    "elevationruler.settings.prefer-token-elevation.name": "Add Token Elevation Control",
+    "elevationruler.settings.prefer-token-elevation.hint": "Add a control to the token toolbar. When toggled on, the control will keep the ruler at the elevation of the measuring token. Otherwise, the ruler destination will assume the elevation of the grid space or the token encountered at the destination point of the ruler.",
+
+    "elevationruler.settings.enable-token-ruler.name": "Use Token Ruler",
+    "elevationruler.settings.enable-token-ruler.hint": "Display the ruler when dragging tokens.",
+
+    "elevationruler.settings.hide-elevation-ruler.name": "Hide Elevation from Ruler",
+    "elevationruler.settings.hide-elevation-ruler.hint": "Hide the Elevation from the Label when using a Ruler.",
+
+    "elevationruler.settings.hide-gm-ruler.name": "Hide GM Token Ruler",
+    "elevationruler.settings.hide-gm-ruler.hint": "Do not display the GM's token ruler for other non-GM users.",
+
+   "elevationruler.settings.speed-highlighting-choice.name": "Use Token Speed Highlighting",
+    "elevationruler.settings.speed-highlighting-choice.hint": "When using the ruler, use different colors for token walk/dash/max distance.",
+
+    "elevationruler.settings.speed-highlighting-choice-never": "Never",
+    "elevationruler.settings.speed-highlighting-choice-combat": "Combat only",
+    "elevationruler.settings.speed-highlighting-choice-always": "Always",
+
+     "elevationruler.settings.speed-highlighting-no-hostiles.name": "No Speed Highlighting of Hostiles",
+    "elevationruler.settings.speed-highlighting-no-hostiles.hint": "When enabled, the user cannot see a hostile or secret token's speed unless the user has observer or owner permissions.",
+
+    "elevationruler.settings.token-ruler-combat-history.name": "Track Combat Move History",
+    "elevationruler.settings.token-ruler-combat-history.hint": "Display history in the ruler when a token moves repeatedly in the same combat round.",
+
+    "elevationruler.settings.combine-prior-with-total.name": "Combine Prior Movement with Total Movement",
+    "elevationruler.settings.combine-prior-with-total.hint": "When Track Combat Move is enabled, combine the token's prior movement in the round with the total movement. Otherwise, place the prior movement on a separate line.",
+
+    "elevationruler.settings.token-speed-property.name": "Token Walk Property",
+    "elevationruler.settings.token-speed-property.hint": "For token speed highlighting, this is the actor property representing token walking speed.",
+
+    "elevationruler.settings.token-fly-property.name": "Token Fly Property",
+    "elevationruler.settings.token-fly-property.hint": "For token speed highlighting, this is the actor property representing token flying speed.",
+
+    "elevationruler.settings.token-burrow-property.name": "Token Burrow Property",
+    "elevationruler.settings.token-burrow-property.hint": "For token speed highlighting, this is the actor property representing token burrowing speed.",
+
+    "elevationruler.settings.token-speed-multiplier.name": "Token Speed Multiplier",
+    "elevationruler.settings.token-speed-multiplier.hint": "For token speed highlighting, this is the multiplier used to go from walk to run (dash) to maximum. For example, with a multiplier of 2, a token with 25 walk speed will have its ruler highlight orange after the first 25 units of distance, and red after the first 50.",
+
+    "elevationruler.settings.round-to-multiple.name": "Round Distance to Multiple",
+    "elevationruler.settings.round-to-multiple.hint": "Round the distance displayed to the nearest multiple of the number entered. Set to 0 to disable rounding.",
+
+    "elevationruler.settings.token-terrain-multiplier.name": "Token Penalty Percent",
+    "elevationruler.settings.token-terrain-multiplier.hint": "Penalize movement through other tokens. Set to 1 for no penalty, less than one to grant a bonus, greater than 1 to impose a penalty multiplier. For example, set to 2 to double movement cost through a token.",
+
+    "elevationruler.settings.token-terrain-multiplier-flat.name": "Flat Token Penalty",
+    "elevationruler.settings.token-terrain-multiplier-flat.hint": "If enabled, treats the token move penalty as a fixed amount of additional distance. For example, set to 5 to add +5 to each square of movement. Negative values provide a flat bonus.",
+
+    "elevationruler.settings.pathfinding_enable.name": "Use Pathfinding",
+    "elevationruler.settings.pathfinding_enable.hint": "When enabled, adds a pathfinding togglee to the Token controls that will cause the ruler to map a path around walls and tokens, depending on settings. Disable this if pathfinding is causing compatibility issues. Disabling may also result in a small performance increase.",
+
+    "elevationruler.settings.pathfinding_tokens_block.name": "Tokens Block",
+    "elevationruler.settings.pathfinding_tokens_block.hint": "For pathfinding, do tokens block the path?",
+    "elevationruler.settings.pathfinding_tokens_block_no": "No",
+    "elevationruler.settings.pathfinding_tokens_block_hostile": "Hostile only",
+    "elevationruler.settings.pathfinding_tokens_block_all": "All",
+
+    "elevationruler.settings.pathfinding_difficulty_friendly.name": "Move Multiplier: Friendlies",
+     "elevationruler.settings.pathfinding_difficulty_friendly.hint": "Penalize movement speed when moving through friendly tokens",
+    "elevationruler.settings.pathfinding_difficulty_hostile.name": "Move Multiplier: Hostiles",
+    "elevationruler.settings.pathfinding_difficulty_hostile.hint": "Penalize movement speed when moving through hostile tokens",
+
+    "elevationruler.settings.pathfinding_limit_token_los.name": "Limit Pathfinding to Explored Areas",
+    "elevationruler.settings.pathfinding_limit_token_los.hint": "When pathfinding, limit the range of the pathfinding to explored areas unless the user is the GM",
+
+    "elevationruler.settings.pathfinding_snap_to_grid.name": "Pathfinding Snap to Grid",
+    "elevationruler.settings.pathfinding_snap_to_grid.hint": "When pathfinding on a gridded map, snap the path to grid centers unless doing so would result in the path getting blocked.",
+
+    "elevationruler.settings.grid-terrain-algorithm.name": "Terrain Grid Measurement",
+    "elevationruler.settings.grid-terrain-algorithm.hint": "When on a grid, how to account for movement penalties or bonuses from terrain and tokens? Center: apply if the terrain/token overlaps the grid center; Percent Area: apply if the terrain/token covers at least this much of the grid square/hex; Euclidean: prorate based on percent of line segment within the terrain/token between this grid square/hex and the previous.",
+
+    "elevationruler.settings.grid-terrain-choice-center-point": "Center Point",
+    "elevationruler.settings.grid-terrain-choice-percent-area": "Percent Area",
+    "elevationruler.settings.grid-terrain-choice-euclidean": "Euclidean",
+
+    "elevationruler.settings.grid-terrain-area-threshold.name": "Percent Area Threshold",
+    "elevationruler.settings.grid-terrain-area-threshold.hint": "If 'Percent Area' is selected for Terrain Grid Measurement, this determines the percent overlap required for the terrain/token to count when measuring on grids.",
+
+    "elevationruler.settings.automatic-movement-type.name": "Autodetect Movement Type",
+    "elevationruler.settings.automatic-movement-type.hint": "Automatically detect the movement type based on token position. Set the token status effect to 'fly' or 'burrowing' to override.",
+
+    "elevationruler.settings.euclidean-grid-distance.name": "Prefer Euclidean Distance",
+    "elevationruler.settings.euclidean-grid-distance.hint": "For gridded scenes, if 'Exact (√2)' is chosen for the 'Square Grid Diagonals' core setting, this will force it to measure Euclidean distance instead of distance in unit hexes/squares. For hex grids, only diagonal elevation movement is affected.",
+
+    "elevationruler.settings.scale-text.name": "Scale Ruler Text",
+    "elevationruler.settings.scale-text.hint": "When enabled, ruler text will be scaled depending on `canvas.dimensions.size`. Further adjust scaling by using `CONFIG.elevationruler.labeling.textScale`.",
+
+    "elevationruler.settings.force-grid-penalties.name": "Use Grid for Movement Penalties",
+    "elevationruler.settings.force-grid-penalties.hint": "When enabled, move penalties only apply if the token/drawing/region covers the center of the hex/square and penalties are applied per-square or per-hex on gridded maps. When disabled, movement penalties are applied proportionally to the move. For example, if a drawing with a x2 move penalty covers 3/4 of a grid square, it will apply to 3/4 of the move through that square (i.e., 1.5x penalty).",
+
+    "elevationruler.settings.customized-labels.name": "Customized Ruler Text",
+    "elevationruler.settings.customized-labels.hint": "Customize the ruler text. Change styles using `CONFIG.elevationruler.labeling.styles` and `CONFIG.elevationruler.labeling.icons`.",
+
+    "elevationruler.controls.prefer-token-elevation.name": "Prefer Token Elevation",
+    "elevationruler.controls.pathfinding-control.name": "Use Pathfinding",
+
+    "elevationruler.drawingconfig.movementPenalty.name": "Movement Penalty Percent",
+    "elevationruler.drawingconfig.movementPenalty.hint": "Set to 1 for no penalty, less than one to grant a bonus, greater than 1 to impose a penalty multiplier. For example, set to 2 to double movement cost through this area. Movement under the drawing elevation will be ignored.",
+
+    "elevationruler.drawingconfig.flatMovementPenalty.name": "Use Flat Penalty",
+    "elevationruler.drawingconfig.flatMovementPenalty.hint": "If enabled, treats the penalty as a fixed amount of additional distance. For example, set to 5 to add +5 to each square of movement. Negative values provide a flat bonus.",
+
+    "elevationruler.clearMovement": "Clear Combatant Movement",
+    "elevationruler.waypoint": "waypoint",
+    "elevationruler.up": "up",
+    "elevationruler.down": "down",
+    "elevationruler.added": "added",
+    "elevationruler.prior": "prior"
+}

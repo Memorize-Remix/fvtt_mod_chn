@@ -1,0 +1,244 @@
+{
+  "AIASSISTANT": {
+    "Settings": {
+      "Language": {
+        "Name": "Assistant Language",
+        "Hint": "Force a specific language."
+      },
+      "Provider": {
+        "Name": "AI Model",
+        "Hint": "Which AI service to use?"
+      },
+      "Theme": {
+        "Name": "Window Design",
+        "Hint": "Choose your look."
+      },
+      "GameSystem": {
+        "Name": "Game System",
+        "Hint": "System used for context."
+      },
+      "MinRole": {
+        "Name": "Minimum Role",
+        "Hint": "Who can access the assistant?"
+      },
+      "PlayerUpdateActor": {
+        "Name": "Player: Edit Characters",
+        "Hint": "Allow modifying own Actors."
+      },
+      "PlayerUpdateItem": {
+        "Name": "Player: Edit Items",
+        "Hint": "Allow modifying own Items."
+      },
+      "PlayerUpdateJournal": {
+        "Name": "Player: Edit Journals",
+        "Hint": "Allow modifying own Journals."
+      },
+      "SendFullData": {
+        "Name": "Default: More Context",
+        "Hint": "Default state for full data checkbox."
+      },
+      "WorldDefault": {
+        "Name": "Default AI for Players",
+        "Hint": "Suggestion for new players."
+      },
+      "PromptWarning": {
+        "Name": "Large Prompt Warning",
+        "Hint": "At what character count should the download suggestion appear?",
+        "Choices": {
+          "0": "Never (Disabled)",
+          "10000": "At 10,000 chars (~2,500 Tokens)",
+          "25000": "At 25,000 chars (~6,000 Tokens)",
+          "50000": "At 50,000 chars (~12,500 Tokens)",
+          "100000": "At 100,000 chars (~25,000 Tokens)"
+        }
+      }
+    },
+    "UI": {
+      "ModeLabel": "What do you want to do?",
+      "ModeUpdate": "Edit Values / Stats",
+      "ModeChat": "Ask Question / Lore",
+      "ModeImage": "Generate Image Idea",
+      "ModeStory": "Write Story",
+      "SelectPages": "Select pages to process:",
+      "CheckboxFullData": "Use more context (Better results)",
+      "InfoText": "Modifies stats, descriptions, or values of this document.",
+      "InfoTextChat": "Ask a question about rules or lore regarding this document.",
+      "InfoTextImage": "Generates a detailed image description prompt for external tools.",
+      "InfoTextStory": "Writes or expands the content of Journal pages (Story/Plot).",
+      "PromptLabel": "Your Instruction ({systemName}):",
+      "PromptPlaceholder": "E.g.: Buff this NPC... OR: Describe like an oil painting...",
+	  "BtnDownload": "Download (JSON)",
+      "BtnDownloadSmall": "Download",
+      "LargePromptTitle": "Attention: Large Payload!",
+      "LargePromptBody": "Your prompt is very long ({size} chars). Sending large amounts of data to the AI can lead to errors. It is recommended to download the data as a JSON file and upload/paste it to the AI.",
+      "BtnDownloadFile": "Download as File",
+      "BtnCopyAnyway": "Copy Anyway",
+      "BtnCopy": "Copy & Open AI (Then CTRL+V)",
+      "PromptCopied": "Copied! 👉 Now press CTRL+V in the AI chat!",
+      "CopyError": "Copy failed.",
+      "ResultLabel": "Step 2: Paste AI response here:",
+      "BtnClear": "Clear Input",
+      "BtnUpdate": "Apply Changes",
+      "Success": "{docName} updated successfully!",
+      "BackupCreated": "Backup created: {name}",
+      "ErrorJsonInvalid": "No valid JSON found in response. (Missing ```json blocks?)",
+      "WizTitle": "Welcome, {name}!",
+      "WizSubtitle": "Your assistant is ready. Let's set it up.",
+      "WizProviderLabel": "Your AI Partner",
+      "WizProviderHint": "Who should help you? Pick your favorite.",
+      "WizThemeLabel": "Your Design",
+      "WizThemeHint": "Which look do you prefer?",
+      "WizThemeAuto": "Automatic (Matches AI)",
+      "WizLangLabel": "Language",
+      "WizLangHint": "Language for prompts and answers.",
+      "WizGMTitle": "🛡️ Gamemaster Options",
+      "WizSystemLabel": "Detected System",
+      "WizSystemHint": "We use this for rules context.",
+      "WizRoleLabel": "Who can use this?",
+      "WizRoleHint": "Minimum permission required.",
+      "WizDefaultLabel": "Recommendation for Players",
+      "WizDefaultHint": "Which AI should be default for your players?",
+	  "WizSubLabel": "Subscription Status",
+      "WizSubHint": "Do you use a paid version (Plus/Advanced)?",
+      "WizSubFree": "No, Free Version (Limits applied)",
+      "WizSubPro": "Yes, Paid Subscription (Max Power)",
+      "WizBtnSave": "Let's go!",
+      "WizReady": "Ready for adventure!"
+    },
+    "Prompts": {
+      "UpdateItem": [
+        "You are an expert for Foundry VTT and the game system: {systemName}.",
+        "Your task: Create a PARTIAL JSON update for the following Document (Actor, Item, Journal) based on my instruction.",
+        "",
+        "ORIGINAL DATA:",
+        "```json",
+        "{jsonString}",
+        "```",
+        "",
+        "MY INSTRUCTION:",
+        "{userPrompt}",
+        "",
+        "IMPORTANT - RESPONSE RULES:",
+        "1. PARTIAL UPDATE ONLY: Return ONLY the nested keys that actually changed.",
+        "2. PROTECT IDs (CRITICAL): Keep the `_id` for all nested objects (Journal Pages, Items, Effects). If you return a Page/Item without its `_id`, Foundry will delete the original and break Map Pins!",
+        "3. PROTECT TEXT: If the input JSON has empty text fields (due to diet mode), DO NOT return them. If it has text, DO NOT repeat it unless you change the content.",
+        "4. ARRAYS: Only include entries in arrays if you are changing them.",
+        "5. ROOT ID: You may remove the `_id` of the ROOT object, but NOT from nested children.",
+        "6. SYNTAX: Return valid JSON inside a code block.",
+        "",
+        "RESPONSE FORMAT:",
+        "1. Short summary of changes.",
+        "2. The PARTIAL JSON inside a Markdown Code Block (```json ... ```).",
+        "3. Instruction: 'Copy the code above and paste it into the Foundry window.'"
+      ],
+      "ChatQuestion": [
+        "You are an expert for Foundry VTT and the game system: {systemName}.",
+        "I have a question about: \"{docName}\".",
+        "",
+        "Context / Description:",
+        "{docDesc}",
+        "",
+        "QUESTION:",
+        "{userPrompt}"
+      ],
+      "GenerateImage": [
+        "You are an expert Art Director for the game system: {systemName}.",
+        "Your task: Analyze the data and write a 'Copy-Paste' Image Generation Prompt.",
+        "DO NOT generate the image yet. First, create the text description.",
+        "",
+        "SOURCE DATA (Foundry VTT):",
+        "{docDesc}",
+        "",
+        "USER INSTRUCTION:",
+        "{userPrompt}",
+        "",
+        "STRICT RULES FOR EQUIPMENT:",
+        "1. ONLY describe equipment/weapons/armor that are explicitly listed in the SOURCE DATA (JSON/Text).",
+        "2. DO NOT invent items. If the character has no weapons listed, do NOT give them a sword or bow.",
+        "3. If the data is empty, describe a generic character of that ancestry/class without specific gear.",
+        "",
+        "ART STYLE:",
+        "Use the official art style of {systemName} unless specified otherwise.",
+        "",
+        "TASK:",
+        "1. Analyze the JSON/Text strictly.",
+        "2. Write a precise visual description (in English). Do not hallucinate items.",
+        "3. Put ONLY this description inside a Markdown Code Block (```text ... ```) at the end.",
+        "4. Tell the user: 'If you are happy with this, copy the text block above and send it as a message in a NEW CHAT (not here!) to generate the image.'"
+      ],
+      "WriteStory": [
+        "You are a creative writer for the RPG system: {systemName}.",
+        "Your task: Write content (Story/Description) for this Journal Entry.",
+        "",
+        "ORIGINAL DATA (JSON):",
+        "```json",
+        "{jsonString}",
+        "```",
+        "",
+        "MY INSTRUCTION:",
+        "{userPrompt}",
+        "",
+        "RESPONSE RULES (CRITICAL):",
+        "1. GOAL: Update the `text.content` field within the `pages`.",
+        "2. CASE A (Array `pages` is EMPTY): Create a new page (new object in array).",
+        "3. CASE B (Array has entries): You MUST use the existing `_id`. DO NOT create a new page unless explicitly asked for a 'new chapter'.",
+        "4. FORMATTING: Use HTML for the text (<h1>, <p>, <b>, etc.).",
+        "5. JSON STRUCTURE: Return a valid partial update.",
+        "",
+        "RESPONSE FORMAT:",
+        "1. Short summary.",
+        "2. The PARTIAL JSON inside a Markdown Code Block (```json ... ```)."
+      ],
+      "ReadFileUpdate": [
+        "You are an expert for Foundry VTT and the game system: {systemName}.",
+        "Your task: Create a PARTIAL JSON update for the attached Document file based on my instruction.",
+        "",
+        "CONTEXT & DATA:",
+        "The original data (JSON) is in the attached file!",
+        "",
+        "MY INSTRUCTION:",
+        "{userPrompt}",
+        "",
+        "IMPORTANT - RESPONSE RULES:",
+        "1. PARTIAL UPDATE ONLY: Return ONLY the nested keys that actually changed.",
+        "2. PROTECT IDs (CRITICAL): Keep the `_id` for all nested objects (Journal Pages, Items, Effects).",
+        "3. SYNTAX: Return valid JSON inside a code block.",
+        "",
+        "RESPONSE:",
+        "1. Just the JSON in a code block."
+      ],
+      "ReadFileStory": [
+        "You are a creative writer for the RPG system: {systemName}.",
+        "Your task: Write content (Story/Description) for this Journal Entry.",
+        "",
+        "CONTEXT:",
+        "The original data is in the attached file!",
+        "",
+        "MY INSTRUCTION:",
+        "{userPrompt}",
+        "",
+        "RESPONSE RULES:",
+        "1. GOAL: Update the `text.content` field within the `pages`.",
+        "2. USE IDs: Use the `_id` from the file.",
+        "3. FORMAT: Valid JSON partial update (Markdown Code Block)."
+      ],
+      "ReadFileChat": [
+        "You are an expert for Foundry VTT and the game system: {systemName}.",
+        "I have attached a JSON file containing data for \"{docName}\".",
+        "",
+        "QUESTION:",
+        "{userPrompt}"
+      ],
+      "ReadFileImage": [
+        "You are an expert Art Director for the game system: {systemName}.",
+        "Your task: Analyze the attached file and write a 'Copy-Paste' Image Generation Prompt.",
+        "",
+        "USER INSTRUCTION:",
+        "{userPrompt}",
+        "",
+        "OUTPUT:",
+        "Put ONLY the description inside a Markdown Code Block (```text ... ```) at the end."
+      ]
+    }
+  }
+}

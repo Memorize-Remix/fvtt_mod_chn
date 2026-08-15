@@ -1,0 +1,83 @@
+
+    "RPGM_TOOLS": {
+        "SIDEBAR": {
+            "TITLE": "RPGM工具"
+        },
+        "LOGGING": {
+            "READY": "RPGM工具加载完成！"
+        },
+        "CONFIG": {
+            "SECRETS_SETTINGS": "密钥管理",
+            "SECRETS_SETTINGS_LABEL": "配置密钥",
+            "SECRETS_SETTINGS_HINT": "查看和管理AI服务的API密钥及登录信息。",
+            "SECRETS_SETTINGS_SUBTITLE": "\"好吧，那就配置你的密钥吧。\"",
+            "RADIAL_MENU_SETTINGS": "径向菜单",
+            "RADIAL_MENU_SETTINGS_LABEL": "配置径向菜单",
+            "RADIAL_MENU_SETTINGS_HINT": "配置与RPGM径向菜单相关的设置。",
+            "RADIAL_MENU_SETTINGS_SUBTITLE": "404：未找到俏皮话",
+            "DEVELOPER_SETTINGS": "开发者设置",
+            "DEVELOPER_SETTINGS_LABEL": "配置开发者设置",
+            "DEVELOPER_SETTINGS_HINT": "用于测试RPGM工具的其他设置。",
+            "DEVELOPER_SETTINGS_SUBTITLE": "\"开发者，开发者，开发者，开发者！\"",
+            "RADIAL_MENU_INPUT": "径向菜单输入",
+            "RADIAL_MENU_INPUT_HINT": "使用径向菜单填充兼容的输入字段。",
+            "RADIAL_MENU_HUD": "Token HUD径向菜单",
+            "RADIAL_MENU_HUD_HINT": "在Token HUD上启用径向菜单。",
+            "RADIAL_MENU_DEBUG": "径向菜单调试模式",
+            "RADIAL_MENU_DEBUG_HINT": "显示径向菜单中与调试相关的选项。"
+        },
+        "RADIAL_MENU": {
+            "INFO": "信息",
+            "COMMAND": "命令"
+        }
+    },
+    "RPGM_FORGE": {
+		"PROVIDERS": {
+			"RPGM": "AI生成的创意内容（使用你的每日文本配额）。",
+			"OFFLINE_NAMES": "离线整理的加权幻想名称列表（无配额限制）。",
+			"ADJECTIVE_NAMES": "随机形容词 + 基础角色名称（离线，无配额限制）。",
+			"CUSTOM": "来自你配置的AI提供者的自定义提供者模型。"
+		},
+        "HOMEBREW": {
+            "PLACEHOLDER": "留空将由AI决定"
+        },
+        "CONFIG": {
+            "AUTO_NAME": "自动命名Token",
+            "AUTO_NAME_HINT": "放置在画布上的Token将自动命名。你可以按住 Shift 键来绕过此功能。",
+            "RENAME_ACTORS": "重命名角色",
+            "RENAME_ACTORS_HINT": "重命名Token时是否同时更改关联角色的名称。",
+            "LANGUAGE": "语言",
+            "LANGUAGE_HINT": "用于AI生成内容的语言。",
+            "SYSTEM": "系统",
+            "SYSTEM_HINT": "作为AI生成内容基础的游戏系统。",
+            "GENRE": "题材",
+            "GENRE_HINT": "作为AI生成内容基础的题材类型。"
+        },
+        "RADIAL_MENU": {
+            "D4": "投掷D4",
+            "D6": "投掷D6",
+            "LOREM_IPSUM": "Lorem Ipsum",
+            "START_SHIMMER": "闪烁效果",
+            "STOP_SHIMMER": "停止闪烁",
+            "NAMES": "生成名称",
+            "DESCRIPTION": "生成描述",
+            "DELETE": "删除",
+            "REGENERATE": "重新生成",
+            "COPY": "复制到剪贴板",
+            "SEND_TO_JOURNAL": "发送到日志",
+            "OPEN_JOURNAL": "打开日志"
+        },
+		"ERRORS": {
+			"TOKEN_SELECT": "请先在画布上选择一个Token，然后重试。",
+			"TOKEN_OWNER": "你必须拥有该Token的拥有权限才能重命名。",
+			"TEXT_LIMIT": "你已达到今日文本生成次数限制，但名称将继续离线生成。"
+		},
+        "INIT": {
+			"TITLE": "欢迎使用 RPGM Forge！",
+			"PROMPT1": "在RPGM工具侧边栏中注册即可开始免费生成！",
+			"PROMPT3": "请确认以下选项：",
+			"PROMPT4": "（你稍后可以在设置中更改它们）",
+			"BUTTON": "打开RPGM工具侧边栏"
+        }
+    }
+}

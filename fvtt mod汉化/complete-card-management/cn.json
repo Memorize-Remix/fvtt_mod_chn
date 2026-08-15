@@ -1,0 +1,176 @@
+
+  "CCM": {
+    "Sheets": {
+      "Cards": "Complete Card Management Cards Sheet",
+      "Card": "Complete Card Management Card Sheet",
+      "Deck": "Complete Card Management Deck Sheet",
+      "Hand": "Complete Card Management Hand Sheet",
+      "DockedHand": "Complete Card Management Hand Sheet (Docked)",
+      "Pile": "Complete Card Management Pile Sheet"
+    },
+    "MoveCardBehavior": {
+      "FIELDS": {
+        "targetStack": {
+          "hint": "要移动卡牌的目标牌组、手牌或牌堆",
+          "label": "目标牌堆"
+        },
+        "keepCanvasCard": {
+          "hint": "移动至此区域的卡牌是否保留在画布上",
+          "label": "保留画布卡牌"
+        }
+      },
+      "NoGM": "没有活跃的GM来管理场景数据！",
+      "NoStack": "找不到该区域的有效卡牌文档",
+      "AddCard": "正在将{name}添加到{stack}",
+      "RemoveCard": "正在将{name}从{stack}移除"
+    },
+    "REGION_EVENTS": {
+      "CardMoveIn": {
+        "label": "卡牌移入"
+      },
+      "CardMoveOut": {
+        "label": "卡牌移出"
+      }
+    },
+    "CardLayer": {
+      "Title": "卡牌控件",
+      "Tools": {
+        "SelectTitle": "选择卡牌",
+    "CreateGrid": "布局卡片网格",
+    "CreateTriangle": "布局卡片三角形",
+        "ClearTitle": "清空卡牌"
+      },
+      "HUD": {
+        "Flip": "翻转{type}",
+        "Rotate": "旋转90度"
+      },
+      "DragCardFromDeck": "正从{name}拖拽卡牌"
+    },
+    "CardSheet": {
+      "CardParentTitle": "{stackName}: {cardName}",
+      "Add": "添加",
+      "TabDetails": "卡牌详情",
+	  "Tabs": {
+		"configuration": "配置",
+		"cards": "卡片"
+	  },
+	  "TabFaces": "卡片正面",
+	  "TabBack": "卡片背面", 
+	  "BacksideUp": "背面朝上",
+	  "Unnamed": "未命名 ({idx})",
+	  "Flip": "翻转",
+	  
+	  "GalleryView": {
+		"ButtonLabel": "切换图库视图"
+	  },
+
+      "ScryingContext": "占卜",
+      "ScryingTitle": "正在占卜: {name}",
+      "ScryingMessage": "{name}正在占卜{deck}中的{number}张卡牌。",
+      "ScryingMessageReorder": "{name}将已展示的{number}张卡牌洗回{deck}。",
+      "ScryingShuffleAndReplace": "洗牌并替换",
+      "ScryPromptHint": "选择要从这组卡牌中占卜的数量。",
+      "ScryPromptLabel": "数量",
+      "ScryMoveTop": "将此牌移至牌组顶部",
+      "ScryMoveBottom": "将此牌移至牌组底部",
+
+      "RecallCard": "收回卡牌",
+      "RecalledCard": "已将{card}收回{deck}。",
+
+      "PrimaryOwner": "主要拥有者"
+    },
+    "Settings": {
+      "ShowNames": {
+        "Label": "显示卡牌拥有者名称",
+        "Hint": "在画布上显示每张卡牌的拥有者"
+      },
+      "OwnerFontSize": {
+        "Label": "字体大小",
+        "Hint": "当\"显示卡牌拥有者\"启用时的文本字体大小"
+      },
+      "OwnerTextColor": {
+        "Label": "文字颜色",
+        "Hint": "当\"显示卡牌拥有者\"启用时的文本颜色"
+      },
+      "OwnerTextAlpha": {
+        "Label": "文字透明度",
+        "Hint": "当\"显示卡牌拥有者\"启用时的文本透明度"
+      }
+    },
+    "SceneConfig": {
+      "CanvasPileLabel": "画布牌堆",
+      "CanvasPileHint": "将整个画布视为卡牌堆。分配了卡牌类型的区域将覆盖其范围内的此设置。"
+    },
+    "UserConfig": {
+      "PlayerHand": "玩家手牌",
+      "ShowCardCount": "显示卡牌数量",
+      "OpenHand": "打开玩家手牌",
+      "CardCount": "{stack}中有{count}张卡牌"
+    },
+    "Warning": {
+      "NoCardsAvailable": "此{type}没有可用卡牌。",
+      "CardDrawn": "此卡牌无法添加到画布，因为它已被抽取并添加到牌堆或手牌中。",
+      "FailDraw": "抽取卡牌失败",
+      "FailCanvasDeck": "此牌组的顶部卡牌已在画布上。请将其移至另一个卡牌堆(如使用区域)以抽取新卡牌。",
+      "AlreadyInside": "{card}已在{stack}中。",
+	  "NoCopyCutPaste": "画布上的卡片无法被复制、剪切或粘贴。",
+	  "NoCopyPaste": "画布上的卡片无法被复制和粘贴。",
+	  "NoCopy": "画布上的卡片无法被复制。",
+      "DeckOwnerNotFound": "找不到牌组持有者来执行此操作。",
+      "NoScryDrop": "无法在占卜对话框放置外部卡牌"
+    },
+    "API": {
+      "LayoutScene": "已在场景{name}上布局卡牌。",
+	  "FromStack": {
+		"label": "来源",
+		"hint": "从中抽取卡片的牌堆。"
+	  },
+	  "ToStack": {
+		"label": "目标",
+		"hint": "要放置卡片的牌堆。"
+	  },
+	  "Face": {
+		"label": "牌面",
+		"hint": "可选强制卡片显示为第一面或背面。",
+		"blank": "保持不变",
+		"front": "第一面",
+		"back": "背面"
+	  },
+	  "OffsetX": {
+		"label": "X轴偏移",
+		"hint": "布局左上角相对于场景边界左上角的偏移量。"
+	  },
+	  "OffsetY": {
+		"label": "Y轴偏移",
+		"hint": "布局左上角相对于场景边界左上角的偏移量。"
+	  },
+	  "GridDialog": {
+		"Title": "布局卡片网格",
+		"Rows": {
+		  "label": "行数",
+		  "hint": "行数，受当前场景大小限制。"
+		},
+		"Columns": {
+		  "label": "列数",
+		  "hint": "列数，受当前场景大小限制。"
+		}
+	  },
+	  "TriangleDialog": {
+		"Title": "布局卡片三角形",
+		"Base": {
+		  "label": "底边",
+		  "hint": "每边的卡片数量。"
+		},
+		"Direction": {
+		  "label": "方向",
+		  "hint": "三角形的指向方向。",
+		  "Up": "向上",
+		  "Down": "向下",
+		  "Left": "向左",
+		  "Right": "向右"
+		}
+	  }
+    }
+  },
+  "TYPES.RegionBehavior.complete-card-management.moveCard": "分配卡牌"
+}

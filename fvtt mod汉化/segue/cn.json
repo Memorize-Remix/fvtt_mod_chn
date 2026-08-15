@@ -1,0 +1,42 @@
+
+    "SEGUE": {
+        "SceneConfig": {
+            "EnableSegueScene": "为此场景启用转场效果",
+            "HintEnableSegueScene": "为此场景启用转场过渡效果 ^",
+            "TextToDisplay": "显示文本",
+            "HintTextToDisplay": "转场期间显示的文本（Shift+Enter 换行）",
+            "PlaceholderTextToDisplay": "第一章：冒险召唤",
+            "TextSize": "文本大小（像素）",
+            "HintTextSize": "显示文本的字体大小（10-200 像素）",
+            "TextColor": "文本颜色",
+            "HintTextColor": "显示文本的颜色",
+            "FontFamily": "字体",
+            "HintFontFamily": "显示文本使用的字体",
+            "SceneFadeInDuration": "场景淡入时间（毫秒）",
+            "HintSceneFadeInDuration": "此场景淡入的持续时间（毫秒）",
+            "TextFadeInDuration": "文本淡入时间（毫秒）",
+            "HintTextFadeInDuration": "文本淡入的持续时间。注意：当显示文本为空时，此设置无效",
+            "TextDisplayDuration": "文本显示时长（毫秒）",
+            "HintTextDisplayDuration": "文本在开始淡出前的显示时间（毫秒）",
+            "TextFadeOutDuration": "文本淡出时间（毫秒）",
+            "HintTextFadeOutDuration": "文本淡出的时间（毫秒）",
+            "SceneFadeOutDuration": "场景淡出时间（毫秒）",
+            "HintSceneFadeOutDuration": "当前活动场景淡出的时间（毫秒）"
+        },
+        "GlobalSettings": {
+            "SegueOverUI": {
+                "Name": "为玩家在 UI 上方显示转场效果",
+                "Hint": "在转场过渡期间隐藏 UI 元素"
+            },
+            "gmSegueUnderUI": {
+                "Name": "仅为 GM 在 UI 下方显示转场效果",
+                "Hint": "如果启用，转场效果将在 GM 的 Foundry UI 下方播放（取决于上述设置）"
+            }
+        },
+        "Notifications": {
+            "SegueNotEnabled": "此场景未启用转场效果。请通过场景配置启用并设置转场选项。",
+            "SceneNotFound": "无法找到场景",
+            "SegueFailed": "转场失败"
+        }
+    }
+}

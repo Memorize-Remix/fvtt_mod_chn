@@ -1,0 +1,209 @@
+
+    "PUTARINGONIT": {
+        "Blacklist": {
+            "App": {
+                "Field": {
+                    "BlacklistFolders": {
+                        "Label": "黑名单文件夹"
+                    }
+                },
+                "Header": {
+                    "Content": "防止Token环自动应用于某些文件路径（例如 tokenizer 或 JB2A 文件）。在文本框中输入文件夹的文件路径并点击加号，或使用文件浏览器选择文件夹。点击标签上的 x 可从黑名单中移除项目。",
+                    "Title": "黑名单"
+                },
+                "Warning": {
+                    "EmptyInput": "请在文本框中输入文件路径。",
+                    "InvalidFolder": "文件路径不存在。"
+                },
+                "WindowTitle": "Put A Ring On It - 黑名单菜单"
+            },
+            "Menu": {
+                "Hint": "防止Token环自动应用于某些文件路径（例如 tokenizer 或 JB2A 文件）。",
+                "Label": "黑名单",
+                "Name": "黑名单菜单"
+            }
+        },
+        "Defaults": {
+            "AllTokens": "所有Token",
+            "Cancel": "取消",
+            "FrameBevel": "Token框斜角",
+            "Full": "完整",
+            "None": "无",
+            "Partial": "部分",
+            "Save": "保存",
+            "SingleBevel": "单斜角"
+        },
+        "Module": {
+            "LibWrapperRequired": "Put A Ring On It 需要 Libwrapper，请启用它并重新加载！"
+        },
+        "Profiles": {
+            "App": {
+                "Buttons": {
+                    "AddProfile": "添加新配置文件",
+                    "RemoveProfile": "移除选定的配置文件"
+                },
+                "ConfirmDelete": {
+                    "Content": "你确定要删除选定的配置文件吗？"
+                },
+                "Field": {
+                    "Borders": {
+                        "InnerBorder": {
+                            "Color": {
+                                "Label": "➜ 颜色："
+                            },
+                            "Enabled": {
+                                "Label": "内边框已启用："
+                            },
+                            "Size": {
+                                "Label": "➜ 大小："
+                            }
+                        },
+                        "Label": "边框",
+                        "OuterBorder": {
+                            "Color": {
+                                "Label": "➜ 颜色："
+                            },
+                            "Enabled": {
+                                "Label": "外边框已启用："
+                            },
+                            "Size": {
+                                "Label": "➜ 大小："
+                            }
+                        }
+                    },
+                    "Color": {
+                        "Label": "➜ 颜色："
+                    },
+					"Coverage": {
+                        "Label": "➜ 覆盖范围:"
+                    },
+					"Glows": {
+                        "InnerGlow": {
+                            "Enabled": {
+                                "Label": "内发光已启用："
+                            }
+                        },
+                        "Label": "发光效果",
+                        "OuterGlow": {
+                            "Enabled": {
+                                "Label": "外发光已启用："
+                            }
+                        }
+                    },
+                    "Info": {
+						"BackgroundEnabled": {
+                            "Label": "背景已启用："
+                        },
+                        "Label": "信息",
+                        "OverrideEnabled": {
+                            "Hint": "启用时，将应用选定的纹理到Token，而不是自定义环。",
+                            "Label": "覆盖已启用："
+                        },
+                        "ProfileIdentifier": {
+                            "Label": "配置文件标识符："
+                        },
+                        "ProfileName": {
+                            "Label": "配置文件名称："
+                        }
+                    },
+                    "Override": {
+                        "Label": "覆盖",
+                        "OverrideTexture": {
+                            "Hint": "你自己的Token环纹理的文件路径。",
+                            "Label": "覆盖纹理："
+                        }
+                    },
+                    "Ring": {
+                        "BevelStyle": {
+                            "Label": "斜角样式："
+                        },
+                        "ColorOverlay": {
+                            "Label": "叠加颜色："
+                        },
+                        "ColorOverlayEnabled": {
+                            "Hint": "启用时，将为Token环添加选定颜色的色调。",
+                            "Label": "颜色叠加已启用："
+                        },
+                        "Label": "Token环",
+                        "Size": {
+                            "Hint": "Token环的宽度。",
+                            "Label": "Token环大小："
+                        },
+                        "Texture": {
+                            "Hint": "Token环的纹理，你可以使用自己的或模组的默认纹理。",
+                            "Label": "Token环纹理："
+                        }
+                    },
+                    "Shadows": {
+                        "InnerShadow": {
+                            "Enabled": {
+                                "Label": "内阴影已启用："
+                            }
+                        },
+                        "Label": "阴影",
+                        "OuterShadow": {
+                            "Enabled": {
+                                "Label": "外阴影已启用："
+                            }
+                        }
+                    },
+                    "Size": {
+                        "Label": "➜ 大小："
+                    }
+                },
+                "Form": {
+                    "Placeholder": "选择或添加配置文件！"
+                },
+                "Header": {
+                    "Content": "选择要编辑的配置文件。"
+                },
+				"Preview": {
+                    "Label": "预览"
+                },
+                "WindowTitle": "Put A Ring On It - 配置文件菜单"
+            },
+            "Menu": {
+                "Hint": "自定义Token环\"配置文件\"，这些是可以快速应用于Token的预设。",
+                "Label": "配置文件",
+                "Name": "配置文件菜单"
+            }
+        },
+        "Settings": {
+            "ApplyByDisposition": {
+                "Choices": {
+                    "HostileNeutral": "敌对和中立"
+                },
+                "Hint": "根据Token的阵营应用。",
+                "Name": "按阵营应用"
+            },
+            "ApplyByLinkedStatus": {
+                "Choices": {
+                    "Linked": "未链接的Token",
+                    "Unlinked": "已链接的Token"
+                },
+                "Hint": "根据\"链接角色数据\"状态应用于Token。",
+                "Name": "按链接状态应用"
+            },
+            "AutoApply": {
+                "Hint": "当相关Token放置在场景上时自动应用Token环。禁用时，必须在原型Token上启用Token环。",
+                "Name": "自动应用Token环"
+            },
+            "DefaultProfileFriendly": {
+                "Hint": "将应用于没有自定义环的友好Token的Token环配置文件。",
+                "Name": "默认友好Token环配置文件"
+            },
+            "DefaultProfileHostile": {
+                "Hint": "将应用于没有自定义环的敌对Token的Token环配置文件。",
+                "Name": "默认敌对Token环配置文件"
+            },
+            "DefaultProfileNeutral": {
+                "Hint": "将应用于没有自定义环的中立Token的Token环配置文件。",
+                "Name": "默认中立Token环配置文件"
+            }
+        },
+        "TokenConfig": {
+            "Hint": "将应用选定的配置文件，忽略默认设置。可以在设置中添加或更改配置文件。",
+            "Label": "Token环配置文件："
+        }
+    }
+}

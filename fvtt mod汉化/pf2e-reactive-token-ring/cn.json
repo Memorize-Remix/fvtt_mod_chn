@@ -1,0 +1,193 @@
+
+  "I18N.LANGUAGE": "中文",
+  "pf2e-reactive-token-ring": {
+    "libwrapper": {
+      "autocolor": {
+        "error": "REDY: 已有其他模组正在修改token环颜色！"
+      }
+    },
+    "module-settings": {
+      "headers": {
+        "flash": {
+          "name": "闪光效果设置",
+          "colors": "闪光颜色设置"
+        },
+        "auto-coloring": {
+          "name": "自动着色设置"
+        }
+      },
+      "configuration-menu": {
+        "redy-menu": "REDY 设置菜单",
+        "hover": {
+          "headers": {
+            "category": "token类型分类",
+            "ring-or-bg": "自动着色影响环或背景",
+            "custom": "使用自定义token环颜色",
+            "disposition": "根据token倾向着色",
+            "health-percent": "根据生命值百分比着色",
+            "level-diff": "根据与队伍等级差着色",
+            "custom-color": "如启用自定义，将使用此颜色",
+            "default": "使用世界默认设置",
+            "unchanged": "不自动改变token颜色",
+            "random": "用于区分重复token，从16色中随机选择"
+          },
+          "row": {
+            "type": {
+              "party": "PF2E队伍中的token",
+              "friendly": "友好倾向的token",
+              "neutral": "中立倾向的token",
+              "hostile": "敌对倾向的token",
+              "secret": "秘密倾向的token"
+            },
+            "ring": {
+              "unchanged": "不改变环颜色",
+              "default": "使用GM设置的环颜色",
+              "custom": "使用输入的自定义环颜色",
+              "disposition": "根据token倾向设置环颜色",
+              "health-percent": "根据生命百分比设置环颜色",
+              "level-diff": "根据等级差设置环颜色",
+              "random": "用于区分重复Token，从16种颜色列表中随机选择一种作为边框颜色"
+            },
+            "bg": {
+              "unchanged": "不改变背景颜色",
+              "default": "使用GM设置的背景颜色",
+              "custom": "使用输入的自定义背景颜色",
+              "disposition": "根据token倾向设置背景颜色",
+              "health-percent": "根据生命百分比设置背景颜色",
+              "level-diff": "根据等级差设置背景颜色",
+              "random": "用于区分重复Token，从16种颜色列表中随机选择一种作为背景颜色"
+            },
+            "reset-color": "重置为默认颜色"
+          }
+        },
+        "headers": {
+          "title": "REDY: 动态token自动着色设置",
+          "world": "世界🌎",
+          "gamemaster": "GM👑",
+          "player": "玩家👤",
+          "category": "分类",
+          "ring-or-bg": "环/背景",
+          "custom": "自定义",
+          "disposition": "倾向",
+          "health-percent": "生命%",
+          "level-diff": "等级差",
+          "custom-color": "自定义颜色",
+          "default": "默认",
+          "unchanged": "不变",
+          "random": "随机"
+        },
+        "row": {
+          "type": {
+            "party": "队伍",
+            "friendly": "友好",
+            "neutral": "中立",
+            "hostile": "敌对",
+            "secret": "秘密"
+          },
+          "ring": "环",
+          "bg": "背景"
+        },
+        "notifications": {
+          "saved": "自定义token环设置已保存！"
+        }
+      },
+      "import-export-menu": {
+        "import-settings": "导入设置",
+        "export-settings": "导出设置",
+        "title": "REDY 设置导入器",
+        "body": "上传设置JSON文件",
+        "notifications": {
+          "error": "上传的文件包含无效JSON，请检查文件内容",
+          "imported": "REDY设置导入成功！正在重载Fvtt"
+        },
+        "buttons": {
+          "cancel": "取消",
+          "import": "导入"
+        }
+      },
+      "target": {
+        "share-flash": {
+          "name": "共享目标闪光",
+          "hint": "向所有用户显示目标闪光效果（禁用则仅显示给选择目标者）"
+        },
+        "player-color": {
+          "name": "目标使用玩家颜色",
+          "hint": "目标闪光使用玩家颜色（覆盖任何自定义颜色）"
+        }
+      },
+      "damage-heal": {
+        "scale-on-%-hp": {
+          "name": "根据生命%调整伤害/治疗时间",
+          "hint": "根据生命值变化百分比调整伤害/治疗效果持续时间"
+        }
+      },
+      "duration": {
+        "name": "持续时间",
+        "hint": "所有闪光效果的持续时间（毫秒，默认500ms，如启用持续时间调整会相应调整）"
+      },
+      "auto-coloring": {
+        "ring": {
+          "type": {
+            "name": "token环自动着色",
+            "hint": "选择是否自动修改动态token环颜色"
+          },
+          "custom-color": {
+            "name": "token环自定义颜色",
+            "hint": "如选择自定义将使用此颜色"
+          }
+        },
+        "background": {
+          "type": {
+            "name": "token背景自动着色",
+            "hint": "选择是否自动修改动态token环颜色"
+          },
+          "custom-color": {
+            "name": "token背景自定义颜色",
+            "hint": "如选择自定义将使用此颜色"
+          }
+        },
+        "choices": {
+          "default": "默认",
+          "custom": "自定义",
+          "unchanged": "不变",
+          "health": "生命值",
+          "random": "随机",
+          "disposition": "倾向",
+          "levelDiff": "等级差"
+        },
+        "percent-color": {
+          "name": "自动着色饱和度",
+          "hint": "自动着色的色彩饱和度强度"
+        },
+        "override-color": {
+          "name": "自动着色覆盖颜色",
+          "hint": "选择自动着色是否覆盖已设置的token颜色"
+        }
+      },
+      "colors": {
+        "damage": {
+          "name": "[颜色] 伤害",
+          "hint": "修改受到伤害时的闪光颜色"
+        },
+        "healing": {
+          "name": "[颜色] 治疗",
+          "hint": "修改受到治疗时的闪光颜色"
+        },
+        "target": {
+          "name": "[颜色] 目标",
+          "hint": "修改选中目标时的闪光颜色（如未启用玩家颜色设置）"
+        },
+        "status": {
+          "positive": {
+            "name": "[颜色] 正面状态",
+            "hint": "修改获得正面状态时的闪光颜色"
+          },
+          "negative": {
+            "name": "[颜色] 负面状态",
+            "hint": "修改获得负面状态时的闪光颜色"
+          }
+        }
+      }
+    }
+  }
+}

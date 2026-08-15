@@ -1,0 +1,30 @@
+{
+    "update-your-password": {
+        "tool.title": "Update Your Password",
+        "dialog": {
+            "title": "Update Your Password",
+            "label.contents": "New Password:",
+            "confirm-label.contents": "Confirm Password:",
+            "other-user-header": "Updating password for other user: {name}",
+            "buttons": {
+                "apply.label": "Apply",
+                "cancel.label": "Cancel"
+            }
+        },
+        "notifications": {
+            "error": {
+                "confirm-not-match": "Passwords do not match. User password not updated."
+            }
+        },
+        "settings": {
+            "show-user-context-menu": {
+                "name": "Show user context menu item.",
+                "hint": "Display an item in the users list right click menu."
+            },
+            "expose-dialog-function": {
+                "name": "Add showDialog() function to main game object.",
+                "hint": "Allows macros or scripts to call game.updateYourPassword.showDialog()."
+            }
+        }
+    }
+}

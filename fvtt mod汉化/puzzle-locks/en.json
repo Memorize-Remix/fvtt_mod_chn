@@ -1,0 +1,335 @@
+{
+    "puzzle-locks": {
+        "settings": {},
+        "general-lock-config": {
+            "header-buttons": {
+                "copyContentLink": "Copy Content Link",
+                "unlock": "Open Puzzle"
+            },
+            "title": "General Lock Configuration",
+            "permissionWarning": "This document's default ownership is not set to 'None'. Players might be able to bypass the lock under certain circumstances. It is recommended to set the default ownership to 'None'.",
+            "fixPermission": "Fix Ownership",
+            "label": {
+                "label": "Label",
+                "placeholder": "Door security system"
+            },
+            "description": {
+                "label": "Description",
+                "placeholder": "This is a security system for the door."
+            },
+            "unlocked": {
+                "label": "Unlocked"
+            },
+            "attempts": {
+                "label": "Attempts",
+                "notes": "Number of attempts allowed, set to -1 for unlimited."
+            },
+            "lockType": {
+                "label": "Lock Type",
+                "configure": "Configure",
+                "none": "None (Disabled)",
+                "optgroupContext": "Requires Context",
+                "optgroupNoContext": "No Context Required",
+                "notes": "The type of lock that will be used to secure the document. Some locks require context to be solved, while others can be solved without any external information."
+            },
+            "unlockSound": {
+                "label": "Unlock Sound"
+            },
+            "interactionSound": {
+                "label": "Interaction Sound"
+            },
+            "backgroundImage": {
+                "label": "Background Image"
+            },
+            "glow": {
+                "label": "Glow Effect",
+                "notes": "Enable border and text glow/shadow effects, this will make the theme more suited for sci-fi settings."
+            },
+            "textColor": {
+                "label": "Text Color"
+            },
+            "primaryColor": {
+                "label": "Primary Color",
+                "notes": "Some lock types may not use this color. Leave empty to use the lock's default color."
+            },
+            "secondaryColor": {
+                "label": "Secondary Color",
+                "notes": "Some lock types may not use this color. Leave empty to use the lock's default color."
+            },
+            "primaryFont": {
+                "label": "Primary Font"
+            },
+            "secondaryFont": {
+                "label": "Secondary Font",
+                "notes": "Some lock types may not use this font."
+            },
+            "font": {
+                "inherit": "Inherit"
+            },
+            "unlockMacro": {
+                "label": "Unlock Macro",
+                "notes": "Macro to run when the lock is unlocked. Within the macro you can access 'object' to get the document that was unlocked and 'user' to get the user that unlocked it."
+            },
+            "permission": {
+                "label": "On Unlock Permissions",
+                "notes": "Determines what level of permission a player gets on the document when they unlock it, and wether to give that permission only to the player that unlocked it or to all players. If the document is a Door, this setting will be ignored and the door will be unlocked.",
+                "noChange": "No Change",
+                "all": "All Players",
+                "unlocking": "Unlocking Player"
+            }
+        },
+        "number-lock": {
+            "name": "Number/Glyph",
+            "description": "A lock in the style of a PIN code. The player must enter the correct code to unlock the document. You can replace the numbers with glyphs or images for a more thematic lock.",
+            "playerInfo": "Since this is not a puzzle, the GM will need to provide players with hints or instructions to enter the correct code.",
+            "code": {
+                "label": "Code"
+            },
+            "keypad": {
+                "label": "Keypad"
+            }
+        },
+        "password-lock": {
+            "name": "Password",
+            "description": "A simple password lock. The player must enter the correct password to unlock the document.",
+            "playerInfo": "Since this is not a puzzle, the GM will need to provide players with hints or instructions to enter the correct password.",
+            "password": {
+                "label": "Password",
+                "placeholder": "a$$w0rd"
+            }
+        },
+        "item-lock": {
+            "name": "Item",
+            "description": "A lock that requires the player to drag and drop one or more items into the correct slots to unlock the document.",
+            "playerInfo": "In order to solve this puzzle, you can ether provide players with context clues or hints to know which items go where, or you can use specific images for the slots that provide the necessary information to guess the correct items.",
+            "item": {
+                "label": "Item Name"
+            },
+            "itemImage": {
+                "label": "Slot Image"
+            },
+            "deleteItems": {
+                "label": "Delete Items",
+                "notes": "If checked, the items will be deleted from the player's inventory when the lock is unlocked."
+            }
+        },
+        "switches-lock": {
+            "name": "Switches",
+            "description": "A lock that requires the player to configure a set of binary switches in the correct position to unlock the document.",
+            "playerInfo": "Since this is not a puzzle, the GM will need to provide players with hints or instructions to configure the switches correctly.",
+            "switchesSolution": {
+                "label": "Switches Configuration",
+                "notes": "The solution an configuration of the switches in the format '0110'. Each digit represents a switch, 0 is off and 1 is on. You can have as many switches as you want."
+            },
+            "showSwitches": {
+                "label": "Show Switches",
+                "notes": "Wether to show the switch buttons. If disabled only the on/off state lights will be shown."
+            }
+        },
+        "cryptex-lock": {
+            "name": "Cryptex",
+            "description": "A lock that requires the player to rotate a set of cylinders to the correct position in order to form the solution. Emojis or glyphs can be used to represent the characters on the cylinders. Different cylinders can have different sets of characters.",
+            "playerInfo": "In order to solve this puzzle, you can ether give players external context clues to know some or all of the characters or, by limiting the amount of characters per cylinder, players can guess the solution by trial and error.",
+            "solution": {
+                "label": "Solution"
+            },
+            "cylinder": {
+                "label": "Cylinder",
+                "notes": "The cylinder that the cryptex uses. Each cylinder character should be separated by a comma."
+            },
+            "glyphs": {
+                "label": "Glyphs",
+                "notes": "The glyphs that can be used in the cryptex. Each glyph should be separated by a comma."
+            }
+        },
+        "sudoku-lock": {
+            "name": "Sudoku",
+            "description": "A lock that requires the player to solve a sudoku puzzle to unlock the document. The default numbers can be replaced with images or glyphs for a more thematic lock.",
+            "playerInfo": "In order to solve this puzzle, players will need meta knowledge on the sudoku rules, or you can provide them with a hint or instructions on how to solve it.",
+            "generate": "Generate Sudoku",
+            "difficulty": {
+                "label": "Difficulty"
+            },
+            "grid": {
+                "label": "Grid",
+                "4": "4x4",
+                "9": "9x9"
+            },
+            "sudoku": {
+                "label": "Sudoku"
+            },
+            "key": {
+                "label": "Key"
+            }
+        },
+        "image-wheel": {
+            "name": "Image Wheel",
+            "description": "A lock that requires the player to rotate a set of concentric rings to the correct position in order to align the image.",
+            "playerInfo": "No outside context is needed to solve this puzzle, players can simply rotate the wheels until the image is aligned.",
+            "image": {
+                "label": "Image"
+            },
+            "wheelCount": {
+                "label": "Wheel Count"
+            },
+            "angleStep": {
+                "label": "Angle Step"
+            },
+            "fixed": {
+                "label": "Fixed Wheel",
+                "notes": "The wheel which should not be rotated. Where 1 is the outermost wheel."
+            }
+        },
+        "mastermind-lock": {
+            "name": "Mastermind",
+            "description": "A lock that requires the player to guess the correct combination of colors or letters to unlock the document. Every time the players attempts to unlock, they will receive feedback on how many colors or letters are correct and in the right position. Green indicates a correct color and position, yellow indicates a correct color but wrong position, and red indicates an incorrect color.",
+            "playerInfo": "In order to solve this puzzle, players can use the feedback from previous attempts to make educated guesses on the correct combination. While meta knowledge is not strictly required, it can help players make more informed guesses.",
+            "reset": "Reset",
+            "solution": {
+                "label": "Solution",
+                "notes": "The solution to the mastermind lock. Each color or letter should be separated by a comma. You can use css colors such as 'red' or hex codes such as '#ff0000'."
+            },
+            "pipOptions": {
+                "label": "Pegs",
+                "notes": "The colors or letters that the player can use to guess the solution. Each color or letter should be separated by a comma. You can use css colors such as 'red' or hex codes such as '#ff0000'."
+            }
+        },
+        "fill-blanks-lock": {
+            "name": "Fill in the Blanks",
+            "description": "A lock that requires the player to fill in the blanks in a text to unlock the document. The player must enter the correct characters in the correct order.",
+            "playerInfo": "In order to solve this puzzle, players can use the context of the puzzle to fill in the blanks. You can also provide them with hints or instructions on how to solve it.",
+            "solution": {
+                "label": "Solution",
+                "notes": "The solution to the fill in the blanks lock. This should be the full complete text with the blanks filled in.",
+                "placeholder": "The quick brown fox jumps over the lazy dog."
+            },
+            "text": {
+                "label": "Text",
+                "notes": "The text with the blanks that the player must fill in. Use underscores to represent the blanks.",
+                "placeholder": "The _____ brown fox jumps ____ the ____ dog."
+            },
+            "caseSensitive": {
+                "label": "Case Sensitive"
+            }
+        },
+        "mosaic-lock": {
+            "name": "Mosaic",
+            "description": "A lock that requires the player to complete a mosaic puzzle to unlock the document. The player must click on the tiles to rotate them and complete the image.",
+            "playerInfo": "No outside context is needed to solve this puzzle, players can simply rotate the tiles until the image is complete.",
+            "mosaicImage": {
+                "label": "Mosaic Image",
+                "notes": "The image that the player must complete. It's recommended to use a square image for best results."
+            },
+            "mosaicSize": {
+                "label": "Mosaic Size",
+                "notes": "The number of rows and columns in the mosaic."
+            }
+        },
+        "sound-lock": {
+            "name": "Melody",
+            "description": "A lock that requires the player to listen to a melody and enter the correct note sequence to unlock the document.",
+            "playerInfo": "While no outside context is needed to solve this puzzle, players will need to have a good ear for music to solve it. Players more familiar with music theory will have an easier time solving this puzzle.",
+            "sequence": {
+                "label": "Sequence",
+                "notes": "The sequence of notes that the player must enter to unlock the document. Each note should be separated by a comma. You can use the following notes: C, C#, D, D#, E, F, F#, G, G#, A, A#, B. You can also use the following notation to increase or decrease the octave: +C, -C, ++A, --B. To set a custom duration per note (in milliseconds) you can use the following notation: C500, D#1000."
+            },
+            "chordDuration": {
+                "label": "Duration",
+                "notes": "The duration of each note in milliseconds."
+            },
+            "pauseBetweenNotes": {
+                "label": "Pause Between Notes",
+                "notes": "The duration of the pause between each note in milliseconds."
+            }
+        },
+        "fifteen-lock": {
+            "name": "Sliding Tiles",
+            "description": "A lock that requires the player to solve a sliding puzzle to unlock the document. The player must slide the tiles to form the correct image. The empty tile needs to be in the bottom right corner to unlock the document.",
+            "playerInfo": "No outside context is needed to solve this puzzle, players can simply slide the tiles until the image is complete.",
+            "shuffleDialog": "Random moves:",
+            "image": {
+                "label": "Image",
+                "notes": "The image that the player must form by sliding the tiles. It's recommended to use a square image for best results."
+            },
+            "size": {
+                "label": "Grid",
+                "notes": "The number of rows and columns in the sliding puzzle."
+            }
+        },
+        "four-by-four-lock": {
+            "name": "Pawns and Stars",
+            "description": "A lock that requires the player place pawns on a grid to form a specific pattern. Certain cells contain stars that must be covered by pawns, the amount of stars that needs to be covered is specified below and depends on the grid size. Every row and column must contain exactly the number of pawns indicated on the column or row headers.",
+            "playerInfo": "If Stars are enabled, players will need an hint to know how many stars they need to cover. Otherwise, it's possible to solve the puzzle without any external information.",
+            "pawnImage": {
+                "label": "Pawn Image",
+                "notes": "The image that represents the pawns."
+            },
+            "starImage": {
+                "label": "Star Image",
+                "notes": "The image that represents the stars."
+            },
+            "noStars": {
+                "label": "Ignore Stars",
+                "notes": "If checked, the stars will be removed and the player only needs to place the pawns in the correct positions."
+            },
+            "gridSize": {
+                "label": "Grid Size",
+                "notes": "The number of rows and columns in the grid."
+            },
+            "generate": "Generate Puzzle",
+            "puzzleGrid": {
+                "label": "Puzzle Grid",
+                "notes": "The puzzle grid. Please follow the syntax of a generated puzzle if you want to create your own. This shows the solved state, where 0 is an empty cell, 1 is a pawn, and 2 is a star and 3 is a pawn on a star."
+            },
+            "pawnNumber": "Pawns to place",
+            "starNumber": "Stars to cover"
+        },
+        "match-lock": {
+            "name": "Word/Image Match",
+            "description": "A lock that requires the player to match words to unlock the document. If a secret word is set, the incorrect letters will be stroked out and the remaining letters will form the secret word. In this case, the players must enter the secret word to unlock the document.",
+            "playerInfo": "In order to solve this puzzle, players can use the context of the puzzle to match the words. You can also provide them with hints or instructions on how to solve it.",
+            "enterSecretWord": "Enter the secret word.",
+            "matchTable": {
+                "label": "Match Table",
+                "notes": "The table that contains the words to match, you can also use image paths instead of words. The first column is the words to match, the second column is the words to match with. Each word pair should be separated by a '|' (pipe) character.\nThe left column will be displayed as written, the right column will be shuffled."
+            },
+            "secretWord": {
+                "label": "Secret Word",
+                "notes": "If set, random letters will be scattered around the center area of the puzzle, once the player has matched the words correctly, the incorrect letters will be stroked out and the remaining letters will form the secret word."
+            },
+            "dictionary": {
+                "label": "Dictionary",
+                "notes": "The dictionary that will be used for the random letters."
+            }
+        },
+        "flags": {},
+        "attempts": "Attempts Left",
+        "headerConfig": "Puzzle Lock",
+        "unlocked": "Unlocked",
+        "how-to": "How does this work?",
+        "how-to-player": "Player Instructions",
+        "chatMessage": "is attempting to unlock",
+        "sidebar-buttons": {
+            "unlock": "Attempt Unlock",
+            "configure": "Configure Lock",
+            "shareToChat": "Share to Chat",
+            "zoomPlus": "Zoom In",
+            "zoomMinus": "Zoom Out",
+            "shuffle": "Shuffle Puzzle",
+            "close": "Close"
+        },
+        "notifications": {
+            "noLock": "A lock has not been set on this document.",
+            "alreadyUnlocked": "This document is already unlocked.",
+            "noLockSelected": "No lock type has been selected.",
+            "unlocked": "Unlocked.",
+            "noGM": "A GM is required to be logged for you to be able to unlock this document.",
+            "failedAttempt": "Failed to unlock.",
+            "contentLinkCopied": "Content link copied to clipboard.",
+            "locked": "This document is locked. As a GM you are able to open it normally.",
+            "resetSuccess": "Puzzle reset successfully.",
+            "ownershipFixed": "Default Ownership set to 'None'.",
+            "noAttempts": "No attempts left."
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "compact-scene-navigation": {
+        "ToggleFavorite": "Toggle Favorite",
+        "goToFolder": "Go to Folder",
+        "settings": {
+            "gmOnly": {
+                "name": "GM Only",
+                "hint": "Enable for GM only, if disabled players will be able to see the folder tree for any scene they have permission to view."
+            },
+            "autoHide": {
+                "name": "Auto Hide",
+                "hint": "Automatically fade out the navigation bar when not in use."
+            },
+            "useNavigation": {
+                "name": "Show only scene in Navigation",
+                "hint": "If enalbed show only scenes marked as 'Show in Navigation' for the GM, otherwise show all scenes. Players will always only see scenes marked as 'Show in Navigation' for players."
+            },
+            "clickViewScene": {
+                "name": "Click to View Scene",
+                "hint": "If enabled clicking on a scene in the sidebar will view the scene instead of opening the scene configuration."
+            },
+            "dynamicSorting": {
+                "name": "Dynamic Sorting",
+                "hint": "If enabled, the active scene will always be first and the viewed scene will always be second."
+            }
+        },
+        "app": {},
+        "flags": {}
+    }
+}

@@ -1,0 +1,64 @@
+{
+	"droplet" : {
+		"Titles" : {
+			"Transfer"						: "Transfer",
+			"Tranferto"						: "Transfer to {to}",
+			"Transferfromto"				: "Transfer from {from} to {to}",
+			"Duplicate"						: "Duplicate",
+			"Duplicatefromto"				: "Duplicate from {from} to {to}",
+			"Amount"						: "Amount",
+			"All"							: "All",
+			
+			"accept"						: "Accept",
+			"abbort"						: "Cancel"
+		},
+		
+		"ChatMessages" : {
+			"ObjectTransfer" : {
+				"Item" : {
+					"Delete"				: "{UserName} transfered an item from <b>{SourceName}</b> to <b>{TargetName}</b>:",
+					"NoDelete"				: "{UserName} gave an item to <b>{TargetName}</b>:"
+				}
+			}
+		},
+		
+		"Settings" : {
+			"TransferChatMessage" : {
+				"name"						: "Show transfer in chat",
+				"descrp"					: "If a message should be shown in chat, mentioning the user, source and target of drag & drop item transfers"
+			},
+			
+			"allowPlayerItemTransfer" : {
+				"name"						: "Allow player item transfer",
+				"descrp"					: "If and and to whom players are allowed to transfer item",
+				"options" : {
+					"no"					: "No",
+					"ownedonly"				: "Owned only",
+					"playersonly"			: "Players only",
+					"friendliesonly"		: "Friendlies only",
+					"neutrals"				: "Neutrals and Friendlies"
+				}
+			},
+			
+			"deleteItemonTransfer" : {
+				"name"						: "Delete item on transfer",
+				"descrp"					: "If item dragged and dropped from a nother inventory should be destroyed in the source inventory [press ALT to invert]"
+			},
+			
+			"askTransferAmount" : {
+				"name"						: "Ask for transfer amount",
+				"descrp"					: "If transfering more than one item should open a menu to set the amount [press CTRL to invert]"
+			},
+			
+			"transferZeros" : {
+				"name"						: "Transfer zeros",
+				"descrp"					: "If transfering 0 items should create an item with quantity 0"
+			},
+			
+			"applytoSheetDrop" : {
+				"name"						: "Apply settings to sheet drops",
+				"descrp"					: "If the above settings should be applied to actor sheet drops"
+			}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+
+  "BLINDSKILLROLLS.NPC.Unknown": "未知",
+  "BLINDSKILLROLLS.NPC.ToggleNameVisibility": "切换名称可见性",
+  "BLINDSKILLROLLS.NPC.HideName": "隐藏名称",
+  "BLINDSKILLROLLS.NPC.RevealName": "显示名称",
+
+  "BLINDSKILLROLLS.Settings.Enabled.Name": "启用盲骰技能检定",
+  "BSR.Settings.Theme.Name": "对话框主题",
+  "BSR.Settings.Theme.Hint": "为模组对话框选择浅色或深色主题。",
+  "BSR.Settings.Theme.Light": "浅色主题",
+  "BSR.Settings.Theme.Dark": "深色主题",
+
+  "BSR.SettingsGroup.Skills.Legend": "盲骰技能检定",
+  "BSR.SettingsGroup.Skills.Hint": "选择哪些技能应强制使用GM盲骰模式。",
+  "BSR.UI.Skills": "技能",
+  "BSR.UI.All": "全部",
+  "BSR.UI.None": "无",
+  "BSR.UI.Defaults": "默认",
+  "BSR.Menu.Skills.Name": "配置盲骰技能检定",
+  "BSR.Menu.Skills.Label": "启用/禁用特定技能",
+  "BSR.SettingsGroup.RChats.Legend": "对掷骰者隐藏盲骰技能检定聊天",
+  "BSR.Settings.BlindRollersChat.Name": "隐藏掷骰者自身的盲骰聊天消息",
+  "BSR.Settings.BlindRollersChat.Hint": "对玩家隐藏其自身的盲骰聊天消息。",
+  "BSR.UI.Cancel": "取消",
+  "BSR.UI.Save": "保存",
+  "BSR.UI.SkillBlindGMNote": "此技能已配置为 GM 盲骰",
+
+  "BSR.Settings.DSNGhostDice.Name": "Dice So Nice：鬼骰模式",
+  "BSR.Settings.DSNGhostDice.Hint": "仅对掷骰者显示鬼骰（推荐）或全局禁用。",
+  "BSR.Notifications.DSNGhostDiceSet": "鬼骰模式已设置为 {target}。",
+  "BSR.Errors.DSNNotActive": "Dice So Nice 未激活。",
+
+  "BLINDSKILLROLLS.Settings.HideForeign.Name": "隐藏非指向性私聊消息",
+  "BLINDSKILLROLLS.Settings.HideForeign.Hint": "隐藏非当前玩家接收的盲骰/私聊消息。",
+  "BLINDSKILLROLLS.Settings.MuteForeign.Name": "静音非指向性骰子音效",
+  "BLINDSKILLROLLS.Settings.MuteForeign.Hint": "屏蔽其他玩家秘密掷骰的骰子音效。",
+  "BLINDSKILLROLLS.Settings.GmSanitize.Name": "净化公开GM掷骰",
+  "BLINDSKILLROLLS.Settings.TrustedDetails.Name": "受信用户查看详情",
+
+  "BLINDSKILLROLLS.Section.ChatDisplay": "聊天显示与隐私",
+  "BSR.Menu.Chat.Name": "配置聊天显示",
+  "BSR.Menu.Chat.Label": "聊天消息可见性",
+
+  "BSR.Menu.GMRolls.Legend": "GM掷骰",
+
+  "BLINDSKILLROLLS.Section.NPC": "NPC匿名化",
+  "BLINDSKILLROLLS.Settings.NpcMaskDefault.Name": "对玩家隐藏NPC名称",
+  "BLINDSKILLROLLS.Settings.NpcMaskDefault.Hint": "启用后，NPC名称将对玩家匿名直至被揭示。",
+  "BLINDSKILLROLLS.Settings.NpcReplacement.Name": "NPC占位名称",
+  "BLINDSKILLROLLS.Settings.NpcReplacement.Hint": "向玩家显示的占位名称，替代真实NPC名称。",
+  "BLINDSKILLROLLS.Menu.Chat.Note": "-",
+
+  "BLINDSKILLROLLS.Section.DeathSaves": "死亡豁免",
+  "BLINDSKILLROLLS.Settings.DeathSaves.Mode.Name": "死亡豁免可见性",
+  "BLINDSKILLROLLS.Settings.DeathSaves.Mode.Hint": "选择死亡豁免的发布方式：公开、暗骰或盲骰（仅GM）。",
+  "BLINDSKILLROLLS.Settings.DeathSaves.Mode.public": "公开（所有人可见）",
+  "BLINDSKILLROLLS.Settings.DeathSaves.Mode.privatroll": "暗骰（发起者+GM）",
+  "BLINDSKILLROLLS.Settings.DeathSaves.Mode.blindroll": "盲骰（仅GM）",
+  "BLINDSKILLROLLS.Section.DeathSavesHiddenChats": "对掷骰者隐藏死亡豁免聊天",
+  "BLINDSKILLROLLS.Settings.DeathSaves.BlindRollersDeathSaveChat.Name": "隐藏掷骰者自身的盲骰死亡豁免聊天消息",
+  "BLINDSKILLROLLS.Settings.DeathSaves.BlindRollersDeathSaveChat.Hint": "对玩家隐藏其自身的盲骰死亡豁免聊天消息。",
+  "BSR.Menu.DeathSaves.Name": "配置死亡豁免",
+  "BSR.Menu.DeathSaves.Label": "死亡豁免可见性",
+
+  "BLINDSKILLROLLS.Log.ReadyText": "就绪 | 隐藏={hide} | 静音={mute}",
+  "BLINDSKILLROLLS.Log.FailedDSNProxyRegistration": "BSR | 注册 DSN 代理设置失败：",
+  "BLINDSKILLROLLS.Log.BSRReadySyncFailed": "BSR | 就绪同步失败：",
+
+  "BLINDSKILLROLLS.Log.RCMHTMLMarkFailed": "渲染聊天消息 HTML 标记失败",
+  "BLINDSKILLROLLS.Log.AudioPatchFailed": "AudioHelper 补丁失败",
+  "BLINDSKILLROLLS.Log.SPPPatchFailed": "Sound.prototype.play 补丁失败",
+  "BLINDSKILLROLLS.Log.HowlerPatchFailed": "Howler 补丁失败",
+  "BLINDSKILLROLLS.Log.HTMLAPatchFailed": "HTMLAudio 补丁失败",
+
+  "BLINDSKILLROLLS.Log.NPCRLRCMHFailed": "BSR | NPC 实时揭示渲染聊天消息 HTML 失败",
+  "BLINDSKILLROLLS.Log.FLVFileFailedLoad": "文件加载失败：",
+  "BLINDSKILLROLLS.Log.FLVReason": "原因：",
+
+  "BLINDSKILLROLLS.UINotification.BSRMIDIInitSync": "BSR | 盲骰技能在启动时已同步",
+  "BLINDSKILLROLLS.UINotification.Synced": "已同步 ",
+  "BLINDSKILLROLLS.UINotification.BSRToMIDIQ": "个盲骰技能到 midi-qol",
+  "BLINDSKILLROLLS.UINotification.BSRFromMIDIQ": "个盲骰技能从 midi-qol",
+  "BSR.Settings.MidiSync.ShowSyncMessages.Name": "显示同步通知",
+  "BSR.Settings.MidiSync.ShowSyncMessages.Hint": "当盲骰技能与 midi-qol 同步时，显示通知和控制台消息。（仅 GM）"
+
+}

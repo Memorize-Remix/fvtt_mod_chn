@@ -1,0 +1,36 @@
+
+  "forien-copy-environment": {
+    "menu": {
+      "copy": "复制为文本",
+      "save": "复制为JSON",
+      "export": "导出设置",
+      "import": "导入设置"
+    },
+    "settings": {
+      "max-diff": "字符数",
+      "max-diff-hint": "每个差值显示的最大字符数。设置为 0 则显示全部。"
+    },
+    "title": "导入设置",
+    "intro": "通过此表，你可以选择要导入的世界和玩家设置。",
+    "message": "使用 Forien's Copy Environment 生成的列表： https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment",
+    "copiedToClipboard": "环境数据复制到剪贴板！",
+    "updatedReloading": "更新了世界设置。5 秒内重加载世界...",
+    "import": {
+      "title": "世界设置",
+      "save": "导入设置",
+      "playerList": "为以下玩家导入设置：",
+      "existing": "导入现有导出文件：",
+      "property": "属性",
+      "newValue": "新值",
+      "currentValue": "当前值",
+      "notFound": "导入文件中的下列用户在此世界中不存在，将被跳过。",
+      "existingValue": "保持不变并将跳过的现有值：",
+      "existingPlayerValues": "现有玩家没有变化，将被跳过：",
+      "updatedPlayer": "更新了玩家设置：{name}",
+      "noChanges": "当前世界和导入的设置没有任何区别。",
+      "showSettings": "显示 {count} 设置",
+      "warning": "警告",
+      "warningMessage": "你选择不导入所选模组。如果这是无意的，请启用上面的\"core.moduleConfiguration\"值。"
+    }
+  }
+}

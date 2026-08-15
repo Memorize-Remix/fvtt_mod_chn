@@ -1,0 +1,81 @@
+{
+	"about-face": {
+		"tokenConfig": {
+			"rotationOffset": {
+				"name": "Rotation Offset"
+			}
+		},
+		"options": {
+			"changeEverySceneDialog": "Would you like to change this setting on every scene?",
+			"disable-indicator": "Disable Direction Indicator",
+			"individual-token-text": "Show indicator for this token?",
+			"facing": "Facing",
+			"arrowColor": {
+				"name": "Indicator Color",
+				"hint": "Select a color for the indicator.",
+				"colorPicker": "Color Picker"
+			},
+			"arrowDistance": {
+				"name": "Indicator Distance",
+				"hint": "Set the multiplier for the indicator's distance. Math: Largest Size × (Multiplier / 2)."
+			},
+			"combatOnly": {
+				"name": "Hide Indicator While Out Of Combat",
+				"hint": "Hides the indicator when no combat is active."
+			},
+			"hideIndicatorOnDead": {
+				"name": "Hide Indicator On Dead Tokens",
+				"hint": "Hides the indicator from tokens marked as defeated on the combat tracker (e.g. the big skull marker on most systems)."
+			},
+			"indicatorDrawingType": {
+				"name": "Indicator Drawing Type",
+				"hint": "Changes how the indicator is drawn.",
+				"options": {
+					"arrow": "Arrow",
+					"line": "Line"
+				}
+			},
+			"lockArrowToFace": {
+				"name": "Snap Token to Closest Tile",
+				"hint": "Snaps the token's rotation to the closest tile it would be facing instead of the direction of the movement's angle."
+			},
+			"enable-indicator": {
+				"name": "NPC Token Indicators",
+				"hint": "Adds an indicator for direction to NPC tokens.",
+				"choices": {
+					"0": "Never Shown",
+					"1": "Shown On Hover",
+					"2": "Always Shown"
+				}
+			},
+			"enable-indicator-pc": {
+				"name": "PC Token Indicators",
+				"hint": "Adds an indicator for direction to player-controlled tokens."
+			},
+			"flip-or-rotate": {
+				"name": "Token Mirroring",
+				"hint": "Sets if tokens should be mirrored horizontally, vertically or not at all.",
+				"choices": {
+					"global": "Global",
+					"rotate": "Don't Mirror Tokens",
+					"flip-h": "Mirror Horizontally",
+					"flip-v": "Mirror Vertically"
+				}
+			},
+			"facing-direction": {
+				"name": "Default Facing Direction",
+				"hint": "The default direction tokens are facing.",
+				"choices": {
+					"right": "Facing Right",
+					"left": "Facing Left",
+					"down": "Facing Down",
+					"up": "Facing Up"
+				}
+			},
+			"indicator-sprite": {
+				"name": "Indicator Size",
+				"hint": "Change the indicator icon's size."
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+  "tokenmagic-automatic-wounds": {
+    "setting": {
+      "clear-wounds-on-full-heal": {
+        "name": "Clear wounds on full heal",
+        "hint": "When a token's health goes back to maximum, should it fully remove all wounds?"
+      },
+      "token-images-are-circular": {
+        "name": "Token images are circular",
+        "hint": "Should the code spread wounds in a circle pattern? If you have square token images, toggle this off, so that wounds can appear everywhere on the token (in a square pattern) without always leaving empty corners. If you use top-down tokens you probably still want to keep this setting on."
+      }
+    },
+    "dialog": {
+      "common": {
+        "cancel": "Cancel"
+      },
+      "change-blood-color": {
+        "title": "Change Blood Color",
+        "selected-tokens": "Selected tokens: {tokens}",
+        "currently-defaulting-to-splatter": "Currently defaulting to Splatter color: {color}",
+        "splatter-color": "Splatter color: {color}",
+        "currently-defaulting-to-red": "Currently defaulting to red color: {color}",
+        "buttons": {
+          "set-new-color": "Set new color",
+          "reset-to-default": "Reset to default: {color}",
+          "reset-to-splatter": "Reset to Splatter: {color}"
+        }
+      }
+    },
+    "notifications": {
+      "disabled-for-actors": "Automatic Wounds: disabled for {names} (game actor)",
+      "enabled-for-actors": "Automatic Wounds: enabled for {names} (game actor)",
+      "disabled-for-tokens": "Automatic Wounds: disabled for {names} (token actor)",
+      "enabled-for-tokens": "Automatic Wounds: enabled for {names} (token actor)",
+      "select-tokens-reapply": "You need to select token(s) for the Reapply Wounds Based On Current HP macro to work.",
+      "no-tokens-selected-for-color-picker": "No tokens selected, can't open blood color picker.",
+      "disabled-on-token-cannot-open-color-picker": "Automatic wounds are disabled on this token, can't open blood color picker."
+    }
+  }
+}

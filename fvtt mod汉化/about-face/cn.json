@@ -1,0 +1,81 @@
+
+	"about-face": {
+		"tokenConfig": {
+			"rotationOffset": {
+				"name": "旋转偏移"
+			}
+		},
+		"options": {
+			"changeEverySceneDialog": "你想在每个场景中都更改这一设置吗？",
+			"disable-indicator": "禁用方向指示器",
+			"individual-token-text": "显示此 token 的指示器？",
+			"facing": "朝向",
+			"arrowColor": {
+				"name": "指示器颜色",
+				"hint": "为指示器选择一种颜色。",
+				"colorPicker": "选色器"
+			},
+			"arrowDistance": {
+				"name": "指示器距离",
+				"hint": "设置指示器距离的乘数。数学： 最大尺寸 × （乘数 / 2）。"
+			},
+			"combatOnly": {
+				"name": "非战斗中隐藏指示器",
+				"hint": "当没有激活的战斗时隐藏指示器。"
+			},
+			"hideIndicatorOnDead": {
+				"name": "隐藏死亡 token 上的指示器",
+				"hint": "隐藏战斗追踪器上标记为战败的 token 上的指示器（例如大多数系统中的骷髅标记）。"
+			},
+			"indicatorDrawingType": {
+				"name": "指示器绘图类型",
+				"hint": "更改指示器的绘制方式。",
+				"options": {
+					"arrow": "箭头",
+					"line": "线条"
+				}
+			},
+			"lockArrowToFace": {
+				"name": "将Token对齐至最近图块",
+				"hint": "将Token的旋转对齐至其将朝向的最近图块，而非移动角度的方向。"
+			},
+			"enable-indicator": {
+				"name": "NPC Token指示器",
+				"hint": "为 NPC token 添加方向指示器。",
+				"choices": {
+					"0": "从不显示",
+					"1": "悬停时显示",
+					"2": "总是显示"
+				}
+			},
+			"enable-indicator-pc": {
+				"name": "PC Token指示器",
+				"hint": "为玩家控制的 token 添加方向指示器。"
+			},
+			"flip-or-rotate": {
+				"name": "Token镜像",
+				"hint": "设置Token是否应进行水平镜像、垂直镜像，或完全不进行镜像。",
+				"choices": {
+					"global": "全局",
+					"rotate": "不进行镜像",
+					"flip-h": "水平镜像",
+					"flip-v": "垂直镜像"
+				}
+			},
+			"facing-direction": {
+				"name": "默认朝向",
+				"hint": "token 的默认朝向。",
+				"choices": {
+					"right": "朝右",
+					"left": "朝左",
+					"down": "朝下",
+					"up": "朝上"
+				}
+			},
+			"indicator-sprite": {
+				"name": "指示器大小",
+				"hint": "更改指示器图标的大小。"
+			}
+		}
+	}
+}

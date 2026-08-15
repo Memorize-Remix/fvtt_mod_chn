@@ -1,0 +1,57 @@
+{
+  "foundry-mcp-bridge": {
+    "settings": {
+      "enabled": {
+        "name": "Enable MCP Bridge",
+        "hint": "Enable or disable the MCP bridge connection to external server"
+      },
+      "serverHost": {
+        "name": "MCP Server Host",
+        "hint": "Hostname or IP address of the external MCP server (default: localhost)"
+      },
+      "serverPort": {
+        "name": "MCP Server Port", 
+        "hint": "Port number for the MCP server connection (default: 30000)"
+      },
+      "namespace": {
+        "name": "Socket Namespace",
+        "hint": "Socket.io namespace path for MCP communication (default: /foundry-mcp)"
+      },
+      "connectionTimeout": {
+        "name": "Connection Timeout (seconds)",
+        "hint": "Maximum time to wait for MCP server connection before timing out"
+      },
+      "reconnectAttempts": {
+        "name": "Reconnection Attempts",
+        "hint": "Number of times to attempt reconnection when connection is lost"
+      },
+      "reconnectDelay": {
+        "name": "Reconnection Delay (ms)",
+        "hint": "Base delay between reconnection attempts (uses exponential backoff)"
+      },
+      "debugLogging": {
+        "name": "Debug Logging",
+        "hint": "Enable detailed console logging for troubleshooting connection issues"
+      }
+    },
+    "notifications": {
+      "connected": "MCP Bridge connected successfully to external server",
+      "disconnected": "MCP Bridge disconnected from external server", 
+      "connectionFailed": "Failed to connect MCP Bridge to external server",
+      "initializationFailed": "Failed to initialize Foundry MCP Bridge module",
+      "settingsReset": "MCP Bridge settings have been reset to defaults",
+      "invalidSettings": "MCP Bridge settings validation failed",
+      "permissionDenied": "Access denied - this feature is disabled in module settings"
+    },
+    "errors": {
+      "notInitialized": "MCP Bridge module is not properly initialized",
+      "notConnected": "Not connected to MCP server",
+      "characterNotFound": "Character not found in this world",
+      "sceneNotFound": "Scene not found or no active scene",
+      "queryFailed": "Failed to execute query",
+      "invalidQuery": "Invalid query parameters provided",
+      "foundryNotReady": "Foundry VTT is not ready",
+      "noActiveWorld": "No active world loaded"
+    }
+  }
+}

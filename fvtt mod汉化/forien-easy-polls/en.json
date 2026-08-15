@@ -1,0 +1,117 @@
+{
+  "Forien": {
+    "EasyPolls": {
+      "CreateAndSave": "Create and Save",
+      "AnswerSent":  "Answer sent!",
+      "CountAnswered": "Total Answers",
+      "ToggleResults": "Toggle Display Results",
+
+      "ToggleSettingResults": {
+        "Enable": "Show Results",
+        "Disable": "Hide Results"
+      },
+
+      "ToggleSettingSecret": {
+        "Enable": "Make Secret",
+        "Disable": "Make Public"
+      },
+
+      "Notifications":{
+        "NoGM": "There is no active Gamer Master online. Game Master's presence is required to vote."
+      },
+
+      "PollDialog": {
+        "Title": "Set up a Poll!",
+        "AddOption": "Add Option",
+        "Option": "Option"
+      },
+
+      "SavedPollsApp": {
+        "Title": "Saved Polls",
+        "OrderingNumber": "No.",
+        "PollQuestion": "Question",
+        "CreateNew": "Create new Poll",
+        "Controls": "Controls",
+
+        "Tooltips": {
+          "PollMode": "Poll Mode (multiple vs single)",
+          "PollResults": "Can players see results",
+          "PollSecret": "Can players see who voted which option",
+          "Multiple": "Multiple vote",
+          "Single": "Single vote",
+          "Results": "Players can see results",
+          "NoResults": "Players cannot see results",
+          "Secret": "Voting is secret",
+          "Public": "Voting is public",
+          "Post": "Post Poll to Chat",
+          "Edit": "Edit Poll before Posting",
+          "Delete": "Delete Poll",
+          "Answers": "Amount of Answers in Poll"
+        }
+      },
+
+      "Settings": {
+        "PlayersCreate": {
+          "Enable": "Allow Players to create Polls",
+          "EnableHint": "When checked, players will be able to create polls utilizing the /poll Chat command"
+        },
+        "DefaultMode": {
+          "Enable": "Default Poll Mode",
+          "EnableHint": "Select which mode should be default when creating new Polls. Can be overriden with --mode flag",
+          "Multiple": "Multiple Vote",
+          "Single": "Single Vote"
+        },
+        "DefaultDisplay": {
+          "Enable": "Allow Showing Results",
+          "EnableHint": "When checked, players will be allowed to check the Poll results by default. Can be overriden with --results flag"
+        },
+        "DefaultSecret": {
+          "Enable": "Secret Voting",
+          "EnableHint": "When checked, players will not be allowed to see who voted on specific answers. Note that players will not be able to see who voted if they can't display the results. Can be overriden with --secret flag"
+        },
+
+        "Keybindings": {
+          "OpenPollDialog": {
+            "Name": "Open Poll Dialog",
+            "Hint": "Opens a Poll Dialog where Poll can be created in visual fashion"
+          },
+          "OpenSavedPollsDialog": {
+            "Name": "Open Saved Polls",
+            "Hint": "Opens a Saved Polls Dialog, where user can pick from previously saved Polls"
+          }
+        }
+      },
+
+      "ChatCommander": {
+        "CommandDescription": "Creates a poll. First line becomes question, other lines become answers. Use {keybind} to make a new line.",
+
+        "SimpleYesNo": "Suggestion: <strong>Quick Yes/No poll</strong>",
+        "QuickPCPoll": "Suggestion: <strong>Quick Online PC poll</strong>",
+
+        "ParameterMode": "Parameter: <strong>Mode</strong> - Poll's voting mode",
+        "ParameterResults": "Parameter: <strong>Results</strong> - can players see them?",
+        "ParameterSecret": "Parameter: <strong>Secret</strong> - can players see who voted on what option?",
+
+        "ModeSingle": "Mode: <strong>single choice</strong>",
+        "ModeMultiple": "Mode: <strong>multiple choice</strong>",
+
+        "ResultsTrue": "Results: <strong>yes</strong> - players can check Poll's results",
+        "ResultsFalse": "Results: <strong>no</strong> - only GM can see Poll's results",
+
+        "SecretTrue": "Secret: <strong>yes</strong> - players can't see who voted",
+        "SecretFalse": "Secret: <strong>no</strong> - players can see who voted",
+
+        "DialogHint": "You can also use {quickPollKey} to open Quick Poll Dialog, or {savedPollsKey} to open your Saved Polls list"
+      },
+
+      "console": {
+        "__COMMENT__": "Messages below are not typically expected to be seen by playes",
+        "errors": {
+          "undefined-event": "API Error: Wrong Socket Event Received: {event}",
+          "noGM": "No active GMs, stopping execution!",
+          "noPoll": "Poll with ID {id} does not exist, or message is not a poll."
+        }
+      }
+    }
+  }
+}

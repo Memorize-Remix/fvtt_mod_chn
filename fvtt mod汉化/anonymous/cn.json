@@ -1,0 +1,69 @@
+{
+    "anonymous": {
+        "settings": {
+            "token": {
+                "name": "强制Token铭牌",
+                "hint": "显示生物名称时，模块是否应强制显示其Token铭牌。"
+            },
+            "rolls": {
+                "name": "隐藏掷骰详情",
+                "hint": "这将删除聊天信息中的掷骰细节（公式、骰值等）。"
+            },
+            "criticals": {
+                "name": "隐藏重击",
+                "hint": "是否应向玩家隐藏重击和失误。必须启用'隐藏掷骰详情'设置。"
+            },
+            "cardContent": {
+                "name": "隐藏卡片内容",
+                "hint": "这将完全隐藏卡片中的描述。"
+            },
+            "footer": {
+                "name": "隐藏页脚",
+                "hint": "这将隐藏显示动作详情的卡片页脚。"
+            },
+            "pf2e": {
+                "traits": {
+                    "name": "(PF2e) 隐藏特质",
+                    "hint": "这将删除聊天信息中的动作特质标签。如果选择了'仅限掷骰'，则必须启用'隐藏掷骰详情'设置。",
+                    "choices": {
+                        "never": "从不",
+                        "rolls": "仅限掷骰",
+                        "always": "总是"
+                    }
+                }
+            },
+
+            "menus": {
+                "namesMenu": {
+                    "name": "自定义名称",
+                    "label": "设置名称",
+                    "hint": "按角色类型名称设置，类型由系统生成。"
+                }
+            }
+        },
+
+        "templates": {
+            "names": {
+                "title": "设置自定义名称",
+                "save": "保存",
+                "cancel": "取消"
+            }
+        },
+
+        "unknown": "未知",
+
+        "pf2e": {
+            "disabled": "系统设置'{setting}'已被禁用，以避免与模组'{module}'发生冲突。",
+            "target": "Target: {name}"
+        },
+
+        "context": {
+            "show": "向玩家显示名称",
+            "hide": "向玩家隐藏名称"
+        },
+
+        "hud": {
+            "title": "切换匿名状态"
+        }
+    }
+}

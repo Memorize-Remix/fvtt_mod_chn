@@ -1,0 +1,228 @@
+
+    "DICE_STATS_TEXT": {
+        "title": "骰子统计",
+        "settings": {
+            "players_see_players": {
+                "Name": "查看其他玩家统计？",
+                "Hint": "启用后，玩家可查看其他玩家的骰子统计（影响对比界面，不影响全局统计页）\n推荐：开启"
+            },
+            "players_see_gm": {
+                "Name": "查看GM骰子数据？",
+                "Hint": "启用后，玩家可查看GM的骰子统计（GM无需开启）\n推荐：关闭"
+            },
+            "players_see_global": {
+                "Name": "查看全局骰子数据？",
+                "Hint": "启用后，玩家可查看全局统计数据\n推荐：开启"
+            },
+            "players_see_gm_in_global": {
+                "Name": "全局统计包含GM数据？",
+                "Hint": "除非启用此项，否则GM数据不会计入全局统计（同时影响GM的全局统计按钮）\n推荐：关闭"
+            },
+            "enable_blind_rolls_immediate": {
+                "Name": "允许盲骰立即计入玩家统计",
+                "Hint": "启用后玩家可通过统计数据查看隐藏结果\n推荐：关闭"
+            },
+            "enable_auto_db": {
+                "Name": "自动使用数据库",
+                "Hint": "启用后自动保存/加载骰子数据到数据库（测试显示对性能影响较小）\n推荐：开启"
+            },
+            "player_access_icons": {
+                "Name": "自定义玩家图标",
+                "Hint": "将玩家默认D20图标替换为自定义图标（需使用Font Awesome图标，以逗号分隔，顺序对应玩家列表）\n示例：fa-solid fa-frog, fa-solid fa-circle, fa-solid fa-skull-crossbones"
+            },
+            "global_enable_clear_all_stats_popup": {
+                "Name": "启用清空数据确认弹窗",
+                "Hint": "GM每次加入游戏时弹出确认是否清空所有玩家数据（本地和数据库）",
+                "title": "清空所有数据",
+                "context": "即将清空所有玩家数据（本地和数据库），确定继续？\n注：可在设置中关闭此弹窗"
+            },
+            "global_pause_recording_data": {
+                "Name": "暂停记录骰子数据",
+                "Hint": "临时禁用骰子数据保存功能（适合非游戏时段使用）"
+            },
+            "local_enable_d20_details_tab": {
+                "Name": "启用D20详情标签页",
+                "Hint": "允许在玩家界面移除D20标签按钮以减少UI干扰"
+            },
+            "local_enable_2dx_details_tab": {
+                "Name": "启用2DX详情标签页",
+                "Hint": "允许在玩家界面移除2dX标签按钮以减少UI干扰"
+            },
+            "local_enable_hit_miss_info_tab": {
+                "Name": "启用命中/失误统计",
+                "Hint": "显示攻击检定和豁免检定的成功级别统计"
+            }
+        },
+        "both_forms": {
+            "checkboxes": {
+                "d2": "D-2",
+                "d3": "D-3", 
+                "d4": "D-4", 
+                "d6": "D-6",
+                "d8": "D-8",
+                "d10": "D-10",
+                "d12": "D-12",
+                "d20": "D-20",
+                "d100": "D-100" 
+            },
+            "section_headings": {
+                "all": "全骰子统计",
+                "d2": "D-2（硬币）统计",
+                "d3": "D-3（命运）统计",
+                "d4": "D-4统计",
+                "d6": "D-6统计",
+                "d8": "D-8统计",
+                "d10": "D-10统计",
+                "d12": "D-12统计",
+                "d20": "D-20统计",
+                "d100": "D-100统计"
+            },
+            "table_values": {
+                "total_rolls": "总投掷次数：",
+                "mean": "平均值：",
+                "median": "中位数：",
+                "mode": "模式（最常见）："
+            },
+            "refresh_btn": "刷新统计",
+            "tab_titles": {
+                "all": "全骰子统计",
+                "d20": "D-20统计",
+                "twoDx": "2 D-(X)统计"
+            }
+        },
+        "global_data_form": {
+            "title": "全局骰子统计",
+            "button": "全局统计",
+            "blind_rolls": "所有玩家共有{ui_rollcount}次盲骰未计入",
+            "blind_roll_btn": "将盲骰数据加入统计",
+            "clear_all_btn": "清空所有数据",
+            "clear_all_local_btn": "清空本地数据",
+            "clear_all_db_btn": "清空数据库",
+            
+            "player_roll_count": "<b>{ui_player}</b> 共掷骰 <b>{ui_lowRollCnt}</b> 次",
+            
+            "most_low_roll": "最低点数最多",
+            "no_low_roll": "无最低点数记录",
+            
+            "most_high_roll_2": "最多2点",
+            "no_high_roll_2": "无2点记录",
+            "most_high_roll_3": "最多3点",
+            "no_high_roll_3": "无3点记录",
+            "most_high_roll_4": "最多4点",
+            "no_high_roll_4": "无4点记录",
+            "most_high_roll_6": "最多6点",
+            "no_high_roll_6": "无6点记录",
+            "most_high_roll_8": "最多8点",
+            "no_high_roll_8": "无8点记录",
+            "most_high_roll_10": "最多10点",
+            "no_high_roll_10": "无10点记录",
+            "most_high_roll_12": "最多12点",
+            "no_high_roll_12": "无12点记录",
+            "most_high_roll_20": "最多20点",
+            "no_high_roll_20": "无20点记录",
+            "most_high_roll_100": "最多100点",
+            "no_high_roll_100": "无100点记录",
+
+            "streak_label": "<b>{ui_player}</b> 保持最长连击（连续递增骰点）：",
+            "no_streak_label": "无连击记录"
+        },
+        "player_data_form": {
+            "title": "玩家骰子统计",
+            "blind_rolls": "你有{ui_rolls}次盲骰未记录，请联系GM导入",
+            "player_name": "{ui_player}的骰子数据",
+            "streak": "连击数据（连续递增骰点）：",
+            "no_streak": "无连击记录",
+            "streak_blind": "连击包含盲骰，数据隐藏",
+            "load_data_btn": "从数据库加载所有玩家数据",
+            "load_data_btn_yours": "加载你的数据库数据",
+            "load_data_btn_others": "加载其他玩家数据库数据",
+            "save_data_btn": "保存你的数据到数据库",
+            "clear_all_local_data_btn": "清空所有本地数据",
+            "clear_my_local_data_btn": "清空你的本地数据",
+            "clear_my_db_info": "清空你的数据库数据",
+            "clear_your_both": "清空你的本地和数据库数据",
+            "tab_unsupported": {
+                "tab_unsuported_heading": "当前系统不支持此功能或无数据",
+                "tab_unsuported_body": "命中/失误统计仅支持PF2e系统。此页面可将D20骰细分为攻击/伤害/技能等类别，或显示命中/失误/豁免成功等数据。\n如需为其他系统添加支持，请在GitHub提交功能请求。\n\n可在设置中移除此标签页。",
+                "tab_unsuported_link": "功能请求链接"
+            },
+            "tab_d20_rolls": {
+                "attack": "D20攻击检定",
+                "damage": "D20伤害掷骰",
+                "save": "D20豁免检定",
+                "skill": "D20技能检定",
+                "ability": "D20属性检定",
+                "unknown": "D20未知掷骰"
+            }
+        },
+        "compare_data_form": {
+            "title": "玩家数据对比",
+            "button": "对比玩家"
+        },
+        "export_data_form": {
+            "title": "导出数据",
+            "button": "导出",
+            "export_csv_btn": "导出为CSV",
+            "export_json_btn": "导出为JSON",
+            "header": "导出骰子统计数据"
+        },
+        "google_chart": {
+            "die": "骰面",
+            "rolls": "投掷次数"
+        },
+        "player-stats-button-title": "玩家统计",
+        "global-stats-button-title": "全局统计",
+        "player_dialogs": {
+            "save_to_db": {
+                "title": "确认保存",
+                "context": "确定将你的数据保存到数据库？这将覆盖所有现有记录。"
+            },
+            "load_all_db": {
+                "title": "确认加载",
+                "context": "确定从数据库加载数据？这将覆盖所有玩家的当前数据（包括你自己）。"
+            },
+            "load_your_db": {
+                "title": "确认加载",
+                "context": "确定从数据库加载你的数据？这将覆盖你当前的统计数据。"
+            },
+            "load_others_db": {
+                "title": "确认加载",
+                "context": "确定从数据库加载其他玩家数据？这将覆盖他们的当前统计数据。"
+            },
+            "clear_all_db": {
+                "title": "确认清空",
+                "context": "确定清空所有本地数据？这将清除所有玩家的本地记录（不影响数据库和其他玩家的数据）。"
+            },
+            "clear_your_db": {
+                "title": "确认清空",
+                "context": "确定清空你的本地数据？这将只影响你当前的统计数据。"
+            },
+            "clear_all_local": {
+                "title": "确认清空",
+                "context": "确定清空所有本地存储数据？"
+            },
+            "clear_your_local": {
+                "title": "确认清空",
+                "context": "确定清空你的本地存储数据？"
+            },
+            "clear_both": {
+                "title": "确认清空",
+                "context": "确定清空你的本地和数据库数据？"
+            }
+        },
+        "global_dialogs": {
+            "clear_all_local_data": {
+                "title": "确认清空",
+                "context": "确定清空所有本地数据？这将清除所有客户端的本地存储（保留数据库数据）。"
+            },
+            "clear_all_db_data": {
+                "title": "确认清空",
+                "context": "确定清空数据库数据？这将清除所有玩家的数据库记录（保留本地数据）。"
+            },
+            "clear_all_data": {
+                "title": "确认清空",
+                "context": "确定清空所有数据？这将同时清除数据库和本地存储的所有记录。"
+            }
+        }
+    }
+}

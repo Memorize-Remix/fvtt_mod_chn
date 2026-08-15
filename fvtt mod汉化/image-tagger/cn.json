@@ -1,0 +1,83 @@
+
+	"IT": {
+		"common": {
+			"artists": "艺术",
+			"images": "图像",
+			"unsaved": "此更改尚未保存，如果关闭而不保存，将被撤销。",
+			"page": {
+				"previous": "上一页",
+				"next": "下一页"
+			},
+			"name": "名称",
+			"tags": "标签",
+			"select": "选择",
+			"links": "链接",
+			"sort-by": "排序方式"
+		},
+		"apps": {
+			"ArtBrowser": {
+				"selected": "已选 {current}/{required}",
+				"upload-image": "上传图像",
+				"no-results": "未找到搜索结果",
+				"select-image": "选择图像",
+				"page-reset-warning": "更改任何这些选项将重置页面到第1页。"
+			},
+			"ArtistBrowser": {
+				"sort-options": {
+					"name-asc": "名称 (A -> Z)",
+					"name-desc": "名称 (Z -> A)",
+					"image-count-asc": "图像数量 (0 -> 9)",
+					"image-count-desc": "图像数量 (9 -> 0)"
+				},
+				"image-count": "{count} 张图像",
+				"common-tags": "常用图像标签",
+				"create-artist": "创建新艺术"
+			},
+			"ArtistApp": {
+				"title": {
+					"create": "创建新艺术",
+					"edit": "编辑艺术: {name}"
+				},
+				"add-link": "添加新链接"
+			},
+			"ArtSidebar": {
+				"view": "查看全部",
+				"add-new": "添加新项",
+				"db-size": "数据库大小: {size}"
+			},
+			"ImageApp": {
+				"title": {
+					"upload": "上传新图像",
+					"register": "注册外部图像",
+					"edit-named": "编辑图像: {name}",
+					"edit-generic": "编辑图像"
+				},
+				"toggle-upload-mode": "切换上传模式",
+				"image-label": "图像",
+				"clear": "清除",
+				"preview-placeholder": "选择图像以查看预览"
+			}
+		},
+		"settings": {
+			"openForEditImage": {
+				"name": "为文档打开艺术浏览器",
+				"hint": "是否在FVTT中使用编辑图像操作选择图像时为所有文档打开自定义艺术浏览器。使用不同编辑图像操作的系统或模组将不适用于此设置。"
+			}
+		},
+		"dialogs": {
+			"Link": {
+				"title": "创建/编辑链接",
+				"name": "名称",
+				"url": "URL"
+			}
+		},
+		"notifs": {
+			"error": {
+				"db-out-of-date": "数据库已过时，请重试。",
+				"document-ID-404": "找不到ID为 {id} 的 {dbType}",
+				"no-upload-permission": "由于缺少\"上传文件\"权限而无法保存。",
+				"cant-find-image": "在以下位置找不到图像: {url}"
+			}
+		}
+	}
+}

@@ -1,0 +1,211 @@
+{
+  "BG3HUD": {
+    "Rest": "Rest",
+    "RestTooltip": "Rest<br><span style='font-size: 0.85em; opacity: 0.8;'>Click: Choose rest type<br>Ctrl+Click: Short Rest<br>Alt+Click: Long Rest</span>",
+    "ChooseRestType": "Choose a rest type:",
+    "EndTurn": "End Turn"
+  },
+  "bg3-hud-dnd5e": {
+    "Settings": {
+      "AutoPopulateConfiguration": "Auto-populate Configuration",
+      "ConfigureAutoPopulateGrids": "Configure Auto-populate Grids",
+      "ConfigureGrids": "Configure Grids",
+      "ConfigureGridsHint": "Configure which item types to auto-populate in each grid when a token is created",
+	  "ConfigureAutoPopulateDescription": "Assign item types to hotbar grids for <strong>NPCs only</strong>. Each type can only be assigned to one grid.<br><small>Note: Player characters should use right-click → Auto-Populate Container instead.</small>",
+      "AutoPopulatePassives": "Auto-populate Passives",
+      "AutoPopulatePassivesHint": "Automatically populate passives container with feats that have no activities when a token is created",
+      "ShowItemNames": "Show Item Names",
+      "ShowItemNamesHint": "Display item names on hotbar cells",
+      "ShowItemUses": "Show Item Uses",
+      "ShowItemUsesHint": "Display remaining uses on items that have limited uses",
+      "ShowHealthOverlay": "Show Health Overlay",
+      "ShowHealthOverlayHint": "Display red damage overlay on portrait images",
+	  "ShowHPControls": "Show HP Control Buttons",
+      "ShowHPControlsHint": "Display the kill (skull) and heal (heart) buttons on the portrait HP controls",
+      "EnableCPRGenericActions": "Enable CPR Generic Actions Button",
+      "EnableCPRGenericActionsHint": "Show a vertical button next to the advantage container that triggers CPR's Generic Actions (2024) dialog",
+      "EnableCPRActionsAutoPopulate": "Enable CPR Actions Auto-Populate",
+      "EnableCPRActionsAutoPopulateHint": "Automatically populate quick access with CPR actions when tokens are created (uses 2014 or 2024 compendium based on D&D 5e Rules Version setting). If actions are manually selected, those take priority.",
+      "SelectedCPRActions": "Selected CPR Actions",
+      "SelectedCPRActionsHint": "Manually selected CPR actions to show in quick access (configure via 'Select CPR Actions' menu). List is populated with the compendium matching your D&D 5e Rules Version.",
+      "BlockCPRActionsOnHotbar": "Block CPR Actions on Hotbar",
+      "BlockCPRActionsOnHotbarHint": "Prevent CPR Generic Actions from being dragged onto the hotbar. Derived items like 'Grapple: Escape' are still allowed.",
+      "EnableAdvBtnsMidiQoL": "Enable Advantage/Disadvantage Buttons (Midi-QoL)",
+      "EnableAdvBtnsMidiQoLHint": "Add advantage/disadvantage buttons to the situational bonuses container when Midi-QoL is active",
+      "AutoPopulateOnTokenCreation": "Auto-populate on Token Creation",
+      "AutoPopulateOnTokenCreationHint": "Automatically populate hotbar grids with items when a token is created",
+      "AutoPopulatePlayerCharacters": "Allow Auto-populate for Player Characters",
+      "AutoPopulatePlayerCharactersHint": "⚠️ WARNING: This overrides the default behavior and allows auto-population for player characters. This is NOT recommended as players should have freedom to customize their own HUD. Only enable if you understand the implications.",
+      "FilterPreparedSpellsPlayers": "Filter Prepared Spells (Players)",
+      "FilterPreparedSpellsPlayersHint": "Only show prepared spells for player characters. At-will, innate, and pact magic spells are always included.",
+      "FilterPreparedSpellsNPCs": "Filter Prepared Spells (NPCs)",
+      "FilterPreparedSpellsNPCsHint": "Only show prepared spells for NPCs. At-will, innate, and pact magic spells are always included.",
+      "AutoPopulateConfigurationHint": "Configure which item types to auto-populate in each grid (restricted to GM)",
+      "Display": {
+        "MenuTitle": "Display Settings",
+        "MenuName": "Display Settings",
+        "MenuLabel": "Display Settings",
+        "MenuHint": "Toggle item names and uses on hotbar cells",
+        "Legend": "Display"
+      },
+      "AutoPopulate": {
+        "MenuTitle": "Auto-Populate Settings",
+        "MenuName": "Auto-Populate Settings",
+        "MenuLabel": "Auto-Populate Settings",
+        "MenuHint": "Control automatic population of grids and passives",
+        "Legend": "Auto-Populate"
+      },
+      "ThirdParty": {
+        "MenuTitle": "Third-Party Modules",
+        "MenuName": "Third-Party Modules",
+        "MenuLabel": "Third-Party Modules",
+        "MenuHint": "Configure integration with third-party modules like CPR and Midi-QoL",
+        "CPR": {
+          "Legend": "Chris's Premades (CPR)"
+        },
+        "Midi": {
+          "Legend": "Midi-QoL"
+        }
+      }
+    },
+    "AutoPopulate": {
+      "Groups": {
+        "Combat": "Combat",
+        "Consumables": "Consumables",
+        "Wondrous": "Wondrous",
+        "Other": "Other"
+      },
+      "ItemTypes": {
+        "Weapons": "Weapons",
+        "FeaturesActions": "Features & Actions",
+        "Spells": "Spells",
+        "Ammunition": "Ammunition",
+        "Potions": "Potions",
+        "Poisons": "Poisons",
+        "Scrolls": "Scrolls",
+        "FoodDrink": "Food & Drink",
+        "Equipment": "Equipment",
+        "Wands": "Wands",
+        "Rods": "Rods",
+        "Trinkets": "Trinkets",
+        "Tools": "Tools",
+        "Loot": "Loot"
+      }
+    },
+    "Filters": {
+      "Action": "Action",
+      "BonusAction": "Bonus Action",
+      "Reaction": "Reaction",
+      "LegendaryAction": "Legendary Action",
+      "Feature": "Feature",
+      "Cantrip": "Cantrip",
+      "SpellLevel": "Spell Level",
+	  "SpellSlots": "Spell Slots",
+      "PactMagic": "Pact Magic",
+      "ApothecaryMagic": "Apothecary Magic"
+    },
+    "Info": {
+      "Skills": "Skills",
+      "ChecksSaves": "Checks & Saves",
+      "Abilities": {
+        "Strength": "Strength",
+        "Dexterity": "Dexterity",
+        "Constitution": "Constitution",
+        "Intelligence": "Intelligence",
+        "Wisdom": "Wisdom",
+        "Charisma": "Charisma"
+      },
+      "SkillNames": {
+        "Acrobatics": "Acrobatics",
+        "AnimalHandling": "Animal Handling",
+        "Arcana": "Arcana",
+        "Athletics": "Athletics",
+        "Deception": "Deception",
+        "History": "History",
+        "Insight": "Insight",
+        "Intimidation": "Intimidation",
+        "Investigation": "Investigation",
+        "Medicine": "Medicine",
+        "Nature": "Nature",
+        "Perception": "Perception",
+        "Performance": "Performance",
+        "Persuasion": "Persuasion",
+        "Religion": "Religion",
+        "SleightOfHand": "Sleight of Hand",
+        "Stealth": "Stealth",
+        "Survival": "Survival"
+      },
+      "CheckFormat": "{ability} Check",
+      "SaveFormat": "{ability} Save"
+    },
+    "Portrait": {
+      "SetTo0HP": "Set to 0 HP",
+      "FullHeal": "Full Heal"
+    },
+    "Menu": {
+      "UseTokenImage": "Use Token Image",
+      "UseCharacterPortrait": "Use Character Portrait",
+      "ScaleWithToken": "Scale with Token",
+      "ScaleWithTokenHint": "Scale the portrait image to match the token's scale",
+      "Check": "Check",
+      "Save": "Save"
+    },
+    "Passives": {
+      "SelectPassiveFeatures": "Select Passive Features",
+      "SaveForAllTokens": "Save for all tokens of this type",
+      "SaveForAllTokensHint": "Apply this selection to all future tokens of this actor"
+    },
+    "Advantage": {
+      "ADV": "ADV",
+      "DIS": "DIS",
+      "AdvTooltip": "Left-click to set Advantage to roll only.<br>Right-click to toggle.",
+      "DisTooltip": "Left-click to set Disadvantage to roll only.<br>Right-click to toggle."
+    },
+    "Tooltips": {
+      "ActiveEffect": "Active Effect"
+    },
+    "RestDialog": {
+      "ShortRest": "Short Rest",
+      "LongRest": "Long Rest"
+    },
+    "CPR": {
+      "GenericActionsButton": {
+        "Label": "ACTIONS",
+        "Tooltip": "Click to open CPR Generic Actions dialog"
+      },
+      "SelectActionsTitle": "Select CPR Generic Actions",
+      "SelectActionsDescription": "Select up to {max} CPR Generic Actions to show in quick access. List is populated with the compendium matching your D&D 5e Rules Version (2014/Legacy or 2024/Modern).",
+      "SelectActionsMenuName": "Select CPR Actions",
+      "SelectActionsMenuLabel": "Select CPR Actions",
+      "SelectActionsMenuHint": "Choose which CPR Generic Actions to display in quick access (up to 6, based on Rules Version)",
+      "NoActionsAvailable": "No CPR actions available. Make sure Chris's Premades module is installed and the appropriate CPRActions compendium exists for your Rules Version.",
+      "MaxSelectionsReached": "Maximum of {max} actions can be selected",
+      "SelectionCounter": "Selected: {current} / {max}"
+    },
+    "Notifications": {
+      "AutoPopulateSystemNotAvailable": "Auto-populate system not available",
+      "NoItemTypesAvailable": "No item types available for configuration",
+      "AutoPopulateConfigurationSaved": "Auto-populate configuration saved",
+      "ItemNotFound": "Item not found",
+      "ItemCannotBeUsed": "Item cannot be used",
+      "MacroNotFound": "Macro not found",
+      "CPRGenericActionsNotFound": "CPR Generic Actions (2024) item not found. Make sure Chris's Premades module is installed and active.",
+      "CPRGenericActionsError": "Error using CPR Generic Actions",
+      "CPRModuleNotActive": "Chris's Premades module is not active. Please enable it to use CPR features.",
+      "CPRActionsSelectionSaved": "CPR actions selection saved",
+      "CPRActionNotFound": "CPR action not found",
+      "CPRActionError": "Error using CPR action",
+      "ShortRestNotAvailable": "Short rest not available for this actor",
+      "LongRestNotAvailable": "Long rest not available for this actor",
+      "SlotOccupiedByTwoHandedWeapon": "This slot is occupied by a two-handed weapon",
+      "FailedToRollInitiative": "Failed to roll initiative",
+      "CPRActionBlockedFromHotbar": "CPR Generic Actions cannot be added to the hotbar. Use the Quick Access grid instead.",
+      "ActivityNotFound": "Activity not found",
+      "ActivityCannotBeUsed": "Activity cannot be used"
+    },
+    "AutoPopulateOptions": {
+      "IncludeActivities": "Include Individual Activities",
+      "IncludeActivitiesHint": "When enabled, items with multiple activities (e.g., Thrown weapons) will add each activity separately instead of the parent item"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+
+    "filepicker-plus": {
+        "settings": {
+            "sidebarFilepicker": {
+                "name": "启用文件选择器侧边栏标签",
+                "hint": "在侧边栏添加一个新标签页，允许你浏览和上传文件，以及将图片/3D模型拖放到场景中。"
+            },
+            "placeastokens": {
+                "name": "将图片放置为Token",
+                "hint": "当将图片拖到场景上时，如果你处于Token层，则将其放置为Token而非图块（仅限侧边栏选择器）"
+            },
+            "size": {
+                "name": "文件选择器大小",
+                "hint": "文件选择器的宽度",
+                "choices": {
+                    "default": "默认",
+                    "large": "大",
+                    "extraLarge": "超大",
+                    "massive": "巨大"
+                }
+            },
+            "imagepreview": {
+                "name": "图片-视频预览",
+                "hint": "在文件选择器中悬停在图片或视频上时显示预览"
+            },
+            "threepreview": {
+                "name": "3D预览",
+                "hint": "显示3D预览，需要3D Portraits模组。如果禁用此设置，将改用3D文件缩略图（如果存在）。"
+            },
+            "audiopreview": {
+                "name": "音频预览",
+                "hint": "在文件选择器中悬停在声音文件上时播放音频预览"
+            },
+            "audiopreviewdelay": {
+                "name": "音频预览延迟",
+                "hint": "预览声音开始播放前的延迟时间（毫秒）"
+            },
+            "audiopreviewvol": {
+                "name": "音频预览音量",
+                "hint": "预览声音的音量"
+            },
+            "enablecolortheme": {
+                "name": "启用颜色主题",
+                "hint": "为文件选择器启用深色主题，如果你有模组或系统为文件选择器应用了主题，你可能需要禁用此选项。"
+            }
+        },
+        "app": {},
+        "flags": {},
+        "sidebar": {
+            "no-filepicker": "文件浏览器在单独窗口中打开。关闭窗口后，文件浏览器将返回侧边栏。",
+            "open": "文件浏览器侧边栏已激活，选定的文件浏览器已在侧边栏中打开。"
+        }
+    }
+}

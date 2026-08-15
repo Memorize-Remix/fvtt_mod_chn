@@ -1,0 +1,121 @@
+
+  "GBT": {
+    "Common": {
+      "Enabled": "已启用",
+      "Save": "保存",
+      "Cancel": "取消",
+      "TintMode": "着色模式",
+      "UsePlayerColor": "使用玩家颜色",
+      "ColorHex": "颜色十六进制",
+      "ColorPicker": "颜色选择器",
+      "InvalidHex": "请输入有效的十六进制颜色（例如 #RRGGBB）。",
+      "DefaultColor": "默认颜色"
+    },
+    "Tint": {
+      "None": "无着色",
+      "Disposition": "阵营",
+      "Unicolor": "单色",
+      "Custom": "自定义",
+      "ActorType": "角色类型",
+      "Ownership": "所有权"
+    },
+    "Frames": {
+      "Name": "Token框设置",
+      "Label": "配置Token框",
+      "Frame1": "Token框 1",
+      "Frame2": "Token框 2",
+      "Mask": "遮罩",
+      "Frame1Preview": "Token框 1 预览",
+      "Frame2Preview": "Token框 2 预览",
+      "MaskPreview": "遮罩预览",
+      "Frame1AlwaysOnTitle": "Token框 1 始终激活。",
+      "Path": "路径",
+      "Scale": "缩放",
+      "Browse": "浏览…"
+    },
+    "Disposition": {
+      "hostile": "敌对",
+      "neutral": "中立",
+      "friendly": "友好",
+      "secret": "秘密",
+      "character": "玩家角色"
+    },
+    "Nameplate": {
+      "Name": "铭牌设置",
+      "Label": "配置铭牌",
+      "BaseFontSize": "基础字体大小（像素）",
+      "FontFamily": "字体家族",
+      "ScaleWithToken": "随Token缩放"
+    },
+    "Sync": {
+      "Name": "立绘 → 原型Token同步",
+      "Hint": "选择当角色立绘更改时如何处理同步到原型Token图像。",
+      "ChoiceAlways": "始终同步",
+      "ChoiceDialog": "询问（对话框）",
+      "ChoiceNothing": "不执行任何操作",
+      "DialogTitle": "同步原型Token图像？",
+      "DialogText": "角色立绘已更改。你希望更新原型Token图像以匹配吗？",
+      "ActorPortrait": "角色立绘",
+      "ProtoToken": "原型Token",
+      "ButtonSync": "同步",
+      "ButtonCancel": "取消",
+      "DoneInfo": "已为 {name} 同步原型Token图像。"
+    },
+    "Tools": {
+      "SizeShrinkTitle": "缩小Token（最小 {sizeMin}）",
+      "SizeGrowTitle": "放大Token（最大 {sizeMax}）",
+      "ToggleFrameToolTitle": "切换Token框标志",
+      "Config": {
+        "Name": "Token工具",
+        "Label": "配置Token工具",
+        "Size": "启用缩小/放大",
+        "ToggleFrame": "启用切换Token框标志",
+        "Disposition": "启用阵营工具",
+        "SizeMin": "缩小/放大的最小尺寸",
+        "SizeMax": "缩小/放大的最大尺寸",
+        "MirrorArtwork": "启用镜像图像工具",
+        "CustomTint": "启用自定义颜色工具"
+      },
+      "Disposition": {
+        "ToolTitle": "为选定的Token设置阵营",
+        "Title": "更改阵营",
+        "Content": "应将哪个阵营应用于所有选定的Token？",
+        "NoneSelected": "请至少选择一个Token。"
+      },
+      "MirrorArtwork": {
+        "ToolTitle": "切换选定Token图像的镜像（垂直轴）"
+      },
+      "CustomTint": {
+        "ToolTitle": "为选定的Token设置自定义颜色",
+        "Title": "设置自定义颜色",
+        "Content": "应将哪个自定义颜色应用于所有选定的Token？",
+        "NoneSelected": "请至少选择一个Token。",
+        "Clear": "移除颜色"
+      }
+    },
+    "ActorTypeColors": {
+      "Name": "角色类型颜色",
+      "Label": "配置角色类型颜色",
+      "ActorType": "角色类型",
+      "Hint": "为所有已注册的角色类型定义默认颜色。"
+    },
+    "DispositionColors": {
+      "Name": "阵营颜色",
+      "Label": "配置阵营颜色",
+      "Disposition": "阵营",
+      "Hint": "为每个Token阵营定义默认着色颜色。"
+    },
+    "Ownership": {
+      "owner": "拥有",
+      "observer": "查看",
+      "limited": "限制",
+      "none": "无"
+    },
+    "OwnershipColors": {
+      "Name": "所有权颜色",
+      "Label": "配置所有权颜色",
+      "Level": "所有权",
+      "Hint": "为每个所有权级别定义默认着色颜色。"
+    }
+  }
+}

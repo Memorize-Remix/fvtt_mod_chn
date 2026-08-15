@@ -1,0 +1,262 @@
+
+    "tokencover.name": "Alternative Token Cover",
+    "tokencover.nameAbbr": "ATC",
+	
+	"tokencover.coverbook.create-cover": "创建掩护",
+    "tokencover.coverbook.reset-defaults": "重置默认掩护",
+	"tokencover.coverbook.edit-cover": "编辑掩护",
+	"tokencover.coverbook.import-cover": "导入掩护",
+	"tokencover.coverbook.import-cover-description": "用JSON文件中存储的设置替换此掩护。",
+	"tokencover.coverbook.export-cover": "导出掩护",
+	"tokencover.coverbook.import-cover-description": "用 JSON 文件中存储的设置替换此掩护。",
+	"tokencover.coverbook.delete-cover": "删除掩护",
+	"tokencover.coverbook.are-you-sure": "确定吗？",
+	"tokencover.coverbook.remove-cover-description": "这将删除选中的掩护，且无法撤销。",
+	"tokencover.coverbook.create-defaults-description": "这将用原始设置覆盖默认掩护。",
+
+    "tokencover.cover-effect.percent-threshold.Name": "百分比阈值",
+    "tokencover.cover-effect.can-overlap.Name": "可重叠",
+    "tokencover.cover-effect.include-walls.Name": "墙壁阻挡",
+    "tokencover.cover-effect.include-tokens.Name": "Token阻挡",
+    "tokencover.cover-effect.priority.Name": "优先级",
+    "tokencover.cover-effect.priority.Hint": "优先级较大的优先测试。将优先级设置为 “0 ”可忽略。",
+    "tokencover.cover-effect.live-tokens-block.Name": "存活Token阻挡",
+    "tokencover.cover-effect.dead-tokens-block.Name": "死亡Token阻挡",
+    "tokencover.cover-effect.dead-tokens-block.Hint": "请参阅模组设置，配置用于确定Token HP 的属性。",
+    "tokencover.cover-effect.prone-tokens-block.Name": "倒地Token阻挡",
+    "tokencover.cover-effect.prone-tokens-block.Hint": "如果启用，倒地Token会提供掩护（基于其身高乘以倒地乘数）。如果死亡或存活Token都不提供掩护，则不起任何作用。有关倒地乘数，请参阅模组设置。",
+	"tokencover.cover-effect.linked-status.Name": "关联状态",
+	"tokencover.cover-effect.linked-status.Hint": "当在Token HUD中选择该状态时，将使用此掩护效果替代。",
+
+    "tokencover.settings.never": "从不",
+    "tokencover.settings.combat": "在战斗中",
+    "tokencover.settings.combatant": "仅适用于当前战斗人员",
+    "tokencover.settings.always": "总是",
+    "tokencover.settings.attack": "攻击期间",
+
+    "tokencover.settings.cover-workflow-confirm-user": "询问用户",
+    "tokencover.settings.cover-workflow-confirm-user-cancel": "询问用户(仅限取消)",
+    "tokencover.settings.cover-workflow-confirm-gm": "询问GM",
+    "tokencover.settings.cover-workflow-confirm-automatic": "自动应用",
+
+    "tokencover.settings.use-cover-types.Name": "显示掩护图标",
+    "tokencover.settings.use-cover-types.Hint": "启用后，代表掩护类型的图标将在本地（每个用户）token上显示，以指示是否有来自受控token的掩护。如果选择了多个token，掩护将是来自该组的最小掩护。这种掩护显示并不考虑某些可能忽略掩护的系统特定功能（例如只忽略某些攻击类型的掩护）。",
+
+    "tokencover.settings.cover-types-targeting.Name": "仅在标记目标时应用掩护图标",
+    "tokencover.settings.cover-types -targeting.Hint": "如果启用，掩护图标将只显示在标记token上。否则，将为所有非受控token显示掩护图标。仅在启用'显示掩护类型'时适用。",
+
+    "tokencover.settings.use-cover-effects.Name": "应用掩护效果",
+    "tokencover.settings.use-cover-effects.Hint": "在本地对token应用掩护效果（主动效果或系统等效效果）。对于dnd5e，下面的确认掩护设置可能会在之后修改攻击时实际应用的效果。",
+
+    "tokencover.settings.cover-effects-targeting.Name": "仅在标记目标时才会应用掩护效果",
+    "tokencover.settings.cover-effects-targeting.Hint": "如果启用，掩护效果将只应用于标记token。否则，掩护类型将应用于所有非受控token。仅在启用'应用掩护效果'时适用。",
+
+    "tokencover.settings.display-cover-book.Name": "显示掩护书籍",
+    "tokencover.settings.display-cover-book.Hint": "如果启用，将在GM控制的token中添加一个书籍图标，允许GM自定义掩护类型和掩护效果。GM还可以将掩护效果拖到tokne上，以覆盖自动掩护。",
+
+    "tokencover.settings.display-secret-cover.Name": "秘密token上显示掩护",
+    "tokencover.settings.display-secret-cover.Hint": "切换是否在有秘密倾向的token上显示掩护图标。",
+	
+	"tokencover.settings.templates-use-cover.Name": "测量板上显示掩护",
+    "tokencover.settings.templates-use-cover.Hint": "切换是否从模板应用掩护。",
+
+    "tokencover.settings.only-cover-icons.Name": "只使用掩护图标",
+    "tokencover.settings.only-cover-icons.Hint": "启用后，只显示掩护图标，不使用掩护效果。如果你的系统不支持此功能，请尝试启用。",
+
+    "tokencover.settings.cover-chat-message.Name": "在聊天中显示掩护",
+    "tokencover.settings.cover-chat-message.Hint": "进行一次攻击时，在聊天中显示目标的掩护类型。",
+
+    "tokencover.settings.cover-workflow-confirm.Name": "确认掩护?",
+    "tokencover.settings.cover-workflow-confirm.Hint": "在进行攻击时，是否应该显示对话框，让用户确认掩护计算？这会影响基本掩护计算。它还会影响掩护类型或掩护效果（如果这些设置已启用）。",
+
+    "tokencover.settings.cover-workflow-confirm-change-only.Name": "仅在更改时确认",
+    "tokencover.settings.cover-workflow-confirm-change-only.Hint": "如果启用了确认对话框，则只有在token上的掩护类型或效果与计算结果不同时，才会显示确认对话框。",
+
+    "tokencover.settings.cover-workflow-confirm-no-cover.Name": "确认无掩护",
+    "tokencover.settings.cover-workflow-confirm-no-cover.Hint": "启用后，当掩护计算评估token没有掩护时，将显示确认信息。",
+
+    "tokencover.settings.points-center": "仅限Token中心(1 点) ⚀",
+    "tokencover.settings.points-two": "Token正面角(2 点)",
+    "tokencover.settings.points-three": "Token正面和中心(3 点)",
+    "tokencover.settings.points-four": "Token角(4 点) ⚃",
+    "tokencover.settings.points-five": "Token角和中心(5 点) ⚄",
+    "tokencover.settings.points-eight": "Token中点和边角(8 点)",
+    "tokencover.settings.points-nine": "Token中点、角、中心(9 点)",
+
+    "tokencover.settings.los-algorithm.Name": "算法",
+    "tokencover.settings.los-algorithm.Hint": "如何测试标记token对查看token是否具有掩护。",
+
+    "tokencover.settings.los-large-target.Name": "大型 token 次定位",
+    "tokencover.settings.los-large-target.Hint": "如果标记token大于网格方格，则分别测试token下每个网格方格的掩护情况。掩护最小获胜。如果观察者能看到目标的大部分区域，则对不应该有掩护的大型目标很有用。使用点数算法时，这一般遵循 dnd5e DMG 的网格方格掩护规则。",
+
+    "tokencover.settings.los-algorithm-points": "点阵",
+	"tokencover.settings.los-algorithm-geometric": "几何",
+	"tokencover.settings.los-algorithm-webgl2": "WebGL2",
+	"tokencover.settings.los-algorithm-webgpu": "WebGPU",
+	"tokencover.settings.los-algorithm-per-pixel": "平面点格",
+	"tokencover.settings.los-algorithm-sample-pixel": "像素采样",
+
+	"tokencover.settings.los-points-options-viewer.Name": "视点排列",
+	"tokencover.settings.los-points-options-viewer.Hint": "测试观察者视线的视点位置。每个点代表观察者的一个“眼睛”。",
+
+    "tokencover.settings.los-inset-viewer.Name": "嵌入",
+    "tokencover.settings.los-inset-viewer.Hint": "对于中心点以外的观察点，从token边界向token中心嵌入的百分比是多少。",
+
+    "tokencover.settings.los-points-options-target.Name": "点",
+    "tokencover.settings.los-points-target.Hint": "从观察者的视线出发，测试目标上有多少个掩护点。",
+
+    "tokencover.settings.los-inset-target.Name": "嵌入",
+    "tokencover.settings.los-inset-target.Hint": "对于中心以外的目标点，从token边界向token中心嵌入的百分比是多少。",
+
+    "tokencover.settings.debug-cover.Name": "调试掩护",
+    "tokencover.settings.debug-cover.Hint": "如果启用，将在观测者和目标之间的掩护画布上绘制表示。如果启用了区域 3d，则必须以单个 token 为目标才能显示调试窗口。",
+
+    "tokencover.settings.button-foundry-default.Name": "更改设置为",
+    "tokencover.settings.button-foundry-default.Label": "重置为 Foundry 默认值",
+    "tokencover.settings.button-foundry-default.Notification": "设置更改为 Foundry 默认设置",
+
+    "tokencover.settings.button-dnd5e-dmg.Name": "",
+    "tokencover.settings.button-dnd5e-dmg.Label": "重置为 DND5e DMG",
+    "tokencover.settings.button-dnd5e-dmg.Notification": "设置改为 D&D 5e",
+
+    "tokencover.settings.prone-status-id.Name": "'倒地'状态Id",
+    "tokencover.settings.prone-status-id.Hint": "字符串表示 token'倒地'状态的 ID。如果设置，倒地的 token 在所有视野和掩护计算中将被视为半高。",
+
+    "tokencover.settings.token-hp-attribute.Name": "Token HP 属性",
+    "tokencover.settings.token-hp-attribute.Hint": "字符串表示可以在何处找到`token.actor`的生命值。使用死亡token掩护时必须使用。",
+
+    "tokencover.settings.prone-multiplier.Name": "倒地乘数",
+    "tokencover.settings.prone-multiplier.Hint": "倒地token应使用token高度的多少百分比。例如，如果token有 5 英尺高，而乘数设置为 0.6，那么倒地token将被视为 3 英尺高。这会影响倒地token的视野点以及倒地token遮挡视野时使用的形状。",
+
+    "tokencover.settings.vision-height-multiplier.Name": "视觉高度乘数",
+    "tokencover.settings.vision-height-multiplier.Hint": "它的视野位于 token 高度的几分之几？0% 表示最底部；100% (1) 表示最顶部。",
+
+    "tokencover.settings.atv-settings-message.Name": "倒地/HP 配置",
+    "tokencover.settings.atv-settings-message.Hint": "当Alternative Token Visibility激活时，倒地乘数、视觉高度乘数、倒地状态 ID 和 token HP ID 使用 ATV 的设置。",
+
+    "tokencover.settings.button-pf2e.Label": "重置为 PF2e",
+    "tokencover.settings.button-pf2e.Notification": "Alternative Token Cover设置更改为 PF2e 默认设置",
+
+    "tokencover.settings.button-dnd5e.Label": "重置为 DND5e DMG",
+    "tokencover.settings.button-dnd5e.Notification": "Alternative Token Cover设置更改为 D&D 5e DMG 默认设置",
+
+    "tokencover.settings.button-threeD.Label": "重置为 3-D",
+    "tokencover.settings.button-threeD.Notification": "Alternative Token Cover设置更改为 3D 默认设置",
+
+    "tokencover.settings.button-documentation.Label": "开放文档",
+    "tokencover.settings.button-issue.Label": "报告问题",
+
+    "tokencover.template.settings-config.tabs.los_viewer": "观测者",
+    "tokencover.template.settings-config.tabs.los_target": "标记",
+    "tokencover.template.settings-config.tabs.workflow": "掩护工作流",
+    "tokencover.template.settings-config.tabs.other": "掩护选项",
+
+    "tokencover.settings.submenu.Name": "",
+    "tokencover.settings.submenu.Label": "GM掩护设置",
+    "tokencover.settings.submenu.title": "Alternative Token Cover设置",
+
+    "tokencover.settings-submenu.tabs.losTarget": "目标视线",
+	"tokencover.settings-submenu.tabs.losViewer": "观察者视线",
+	"tokencover.settings-submenu.tabs.other": "其他",
+	"tokencover.settings-submenu.tabs.workflow": "工作流",
+	
+	"tokencover.settings.exportButton.Name": "",
+    "tokencover.settings.exportButton.Label": "导出设置",
+	
+	"tokencover.settings.importButton.Name": "",
+    "tokencover.settings.importButton.Label": "导入设置",
+
+    "tokencover.DrawingConfiguration.LegendTitle": "Alternative Token Visibility",
+    "tokencover.DrawingConfiguration.isHole.Name": "绘图是孔",
+    "tokencover.DrawingConfiguration.isHole.Hint": "对于区域算法，将图纸（包括立面图）指示的空间视为图块孔。仅适用于Levels激活时。",
+	
+	"tokencover.dnd5e.spell-configuration.useCover.Name": "使用掩护",
+    "tokencover.dnd5e.spell-configuration.useCover.no": "否",
+    "tokencover.dnd5e.spell-configuration.useCover.caster": "来自施放者",
+    "tokencover.dnd5e.spell-configuration.useCover.template": "来自测量板",
+
+    "tokencover.dnd5e.feats.cover.Name": "忽略某些掩护级别",
+    "tokencover.dnd5e.feats.cover.Hint": "由专长和魔法物品提供。",
+    "tokencover.dnd5e.feats.cover.OptionNone": "不要忽视任何掩护",
+    "tokencover.dnd5e.feats.cover.OptionHalf": "忽略半身掩护",
+    "tokencover.dnd5e.feats.cover.OptionThreeQuarters": "忽略半身掩护和3/4掩护",
+    "tokencover.dnd5e.feats.cover.OptionFull": "忽略全部掩护",
+
+    "tokencover.template.settings-config.viewer": "查看 Token",
+    "tokencover.template.settings-config.viewerDescription": "与token查看/标记可能有掩护的另一个token相关的设置",
+
+    "tokencover.template.settings-config.target": "标记 Token",
+    "tokencover.template.settings-config.targetDescription": "与标记 token（将应用掩护的 token）相关的设置。",
+
+    "tokencover.template.settings-config.workflow": "掩护工作流",
+    "tokencover.template.settings-config.workflowDescription": "用于调整 token 移动和战斗时如何确定掩护的设置。",
+
+    "tokencover.template.settings-config.other": "掩护选项",
+    "tokencover.template.settings-config.otherDescription": "设置来调整其他掩护规则和设置系统特定的掩护属性。",
+
+    "tokencover.tokenconfig.maximum-cover.name": "最大掩护",
+    "tokencover.tokenconfig.maximum-cover.hint": "此 token 提供的最大掩护。例如 一群蜜蜂可能只能提供半身掩护。幽灵可能不提供任何掩护。如果token不提供掩护，则不起任何作用（请参阅模组设置）。",
+
+    "tokencover.cover-rules-config.title": "Alternative Token Visibility: 掩护规则",
+
+    "tokencover.cover-effects-menu.listCoverTypes": "掩护类型列表(高级编辑)",
+
+    "tokencover.active-effect-config.coverType.name": "掩护类型",
+    "tokencover.active-effect-config.coverType.hint": "将此激活效果与一个或多个特定掩护类型关联。根据模组设置的不同，这可能会导致激活效果自动分配给某个用户的本地 token。",
+
+    "tokencover.controls.cover-effects-control.name": "Alternative Token Visibility",
+
+    "tokencover.cover-types-list-config.title": "掩护类型",
+    "tokencover.cover-types-list-config.description": "掩护类型定义了用于控制何时适用掩护的特定属性。",
+
+    "tokencover.cover-types-list-config.add": "新增掩护类型",
+    "tokencover.cover-types-list-config.import": "导入掩护类型",
+    "tokencover.cover-types-list-config.export": "导出掩护类型",
+    "tokencover.cover-types-list-config.reset": "重置为默认",
+	
+	"TYPES.RegionBehavior.tokencover.setCover": "设置最小掩护",
+	
+	"tokencover.behavior.types.set-cover.fields.cover.name": "最小掩护",
+    "tokencover.behavior.types.set-cover.fields.cover.hint": "选择一个掩护，该掩护将自动适用于该FVTT区域内的防御token（除非有更高优先级的掩护适用）。",
+
+    "tokencover.behavior.types.set-cover.fields.distance.name": "最小距离",
+    "tokencover.behavior.types.set-cover.fields.distance.hint": "只有当防守方距离最近的攻击方超过这个距离时，才会自动应用此掩护。",
+
+    "tokencover.behavior.types.set-cover.fields.exclusive.name": "禁用掩护",
+    "tokencover.behavior.types.set-cover.fields.exclusive.hint": "禁用该FVTT区域内的所有其他掩护。",
+
+    "tokencover.behavior.types.set-cover.fields.appliesToAttackers.name": "适用于攻击者",
+    "tokencover.behavior.types.set-cover.fields.appliesToAttackers.hint": "如果启用，FVTT区域外的防御token将获得FVTT区域内攻击token的掩护。如果未启用，则只有FVTT区域内的防御 token 会受到影响。",
+
+    "tokencover.cover-dialog.yes": "应用掩护",
+	"tokencover.cover-dialog.no": "忽略所有掩护",
+
+	"tokencover.phrases.coverRules": "掩护规则",
+	"tokencover.phrases.coverEffects": "掩护效果",
+
+    "tokencover.phrases.xCoverEffect": "{cover} 掩护效果",
+    "tokencover.phrases.xCoverType": "{cover} 掩护类型",
+    "tokencover.phrases.xCover": "{cover} 掩护",
+
+    "tokencover.cover.HalfToken": "1/2(仅限Token)",
+
+    "tokencover.cover.None": "无掩护",
+    "tokencover.cover.Low": "低等掩护",
+    "tokencover.cover.Medium": "中等掩护",
+    "tokencover.cover.High": "高等掩护",
+    "tokencover.cover.Total": "全身掩护",
+
+    "tokencover.cover.NONE": "无掩护",
+    "tokencover.cover.LOW": "低等掩护",
+    "tokencover.cover.MEDIUM": "中等掩护",
+    "tokencover.cover.HIGH": "高等掩护",
+    "tokencover.cover.TOTAL": "全身掩护",
+
+    "tokencover.phrases.Total": "全",
+    "tokencover.phrases.CoverByTarget": "标记掩护",
+    "tokencover.phrases.Done": "完成",
+    "tokencover.phrases.ConfirmCover": "确认掩护",
+    "tokencover.phrases.AllAttacks": "全部攻击",
+    "tokencover.phrases.newEffect": "新掩护效果",
+    "tokencover.phrases.takeCover": "进行掩护"
+}

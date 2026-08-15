@@ -1,0 +1,107 @@
+
+  "fvtt-party-sheet": {
+    "party-sheet": {
+      "assigned-only": "隐藏所有未分配的角色",
+      "assigned-only-tooltip": "隐藏任何未分配给玩家的角色。",
+      "invalid-template": "你使用的模板无效。<br/>请检查模板并重试。",
+      "no-players": "当前没有玩家登录。",
+      "no-systems": "你的 data/partysheets 文件夹中没有此系统的 JSON 文件。请添加一些文件以启用此功能。",
+      "bugreport": "提交错误报告",
+      "feedback": "发送反馈",
+      "discord": "Discord"
+    },
+    "preview-mode": {
+      "active": "预览模式已激活",
+      "active-tooltip": "你当前正在预览模板编辑器中的模板。关闭模板编辑器以返回正常视图。"
+    },
+    "hide-sheet": {
+      "button": "配置隐藏的角色",
+      "hint": "编辑如果不显示在线角色时要显示的角色。",
+      "hide-all": "全部隐藏",
+      "tooltip": "选择要隐藏的角色"
+    },
+    "settings": {
+      "refresh-rate": {
+        "name": "刷新频率",
+        "hint": "小队卡刷新的频率（秒）。较低的值可能导致性能问题。默认（关闭）为 0。"
+      },
+      "enable-minimal-view": {
+        "name": "隐藏支持按钮",
+        "hint": "隐藏错误报告和反馈按钮。"
+      },
+      "enable-only-online": {
+        "name": "仅显示在线角色",
+        "hint": "仅显示分配给已登录玩家的角色。关闭此选项将显示所有非 NPC 角色，但允许你'隐藏'不关心的角色。"
+      },
+      "enable-dark-mode": {
+        "name": "启用深色模式",
+        "hint": "为小队卡启用深色模式。"
+      },
+      "show-debug-info": {
+        "name": "显示调试信息",
+        "hint": "启用此选项可在打开小队卡时在控制台中显示所有已解析角色的调试信息。希望这能帮助你找到正在尝试解析的特定属性。"
+      },
+      "show-template-status-form": {
+        "name": "显示模板状态表单",
+        "hint": "这将显示哪些模板已过时、哪些安装了较新的系统版本，以及哪些没有版本信息。"
+      },
+      "show-version-notifications": {
+        "name": "显示模板更新通知",
+        "hint": "当已安装的模板在模组的示例模板中有新版本可用时，显示通知横幅。"
+      }
+    },
+    "template-status": {
+      "template-status": "模板状态",
+      "by": "作者",
+      "out-of-date": "以下模板已过时",
+      "current-version": "当前版本",
+      "module-version": "模组版本",
+      "newer-required-system": "以下模板需要安装较新的系统版本",
+      "older-required-system": "以下模板需要安装较旧的系统版本",
+      "no-version-information": "以下模板没有版本信息",
+      "no-system-information": "以下模板没有系统信息",
+      "current-system-version": "当前系统版本",
+      "required-system-version": "所需系统版本",
+      "maximum-system-version": "最大系统版本"
+    },
+    "notifications": {
+      "template-update-available": "模板更新可用！{count} 个已安装模板有新版本可用。请检查模板状态对话框或使用安装程序进行更新。"
+    },
+    "template-editor": {
+      "new": "新建",
+      "new-tooltip": "新建模板",
+      "load": "加载",
+      "load-tooltip": "加载模板",
+      "save": "保存",
+      "save-tooltip": "复制模板到剪贴板",
+      "validate": "验证",
+      "validate-tooltip": "验证 JSON",
+      "format": "格式化",
+      "format-tooltip": "格式化 JSON",
+      "close-tooltip": "关闭编辑器",
+      "metadata": "模板元数据",
+      "name-placeholder": "模板名称...",
+      "author-placeholder": "作者名称...",
+      "system": "系统",
+      "json-editor": "JSON 编辑器",
+      "save-warnings": "此数据是临时的。请在关闭前使用保存按钮将模板复制到剪贴板。",
+      "ready": "就绪"
+    },
+    "template": "模板",
+    "close": "关闭",
+    "install": "安装",
+    "reinstall": "重新安装",
+    "installer": "安装程序",
+    "update": "更新",
+    "template-name": "名称",
+    "preview": "预览",
+    "author": "作者",
+    "version": "版本",
+    "section-title": "小队卡",
+    "show-section-title": "显示小队卡",
+    "section-title-tooltip": "显示小队卡",
+    "template-installed-version": "已安装版本",
+    "template-system-version": "最小系统版本",
+    "template-max-system-version": "最大系统版本"
+  }
+}

@@ -1,0 +1,314 @@
+
+  "obs-utils": {
+    "strings": {
+      "module": "OBS Utils",
+      "ic": "战斗中",
+      "trackAll": "追踪所有拥有的Token",
+      "trackOne": "追踪当前活跃的Token",
+      "clonePlayer": "克隆选定玩家的视窗",
+      "cloneDM": "克隆DM的视窗",
+      "birdseye": "适配地图到屏幕",
+      "cloneTurnPlayer": "克隆回合玩家的视窗",
+      "ooc": "非战斗状态",
+      "trackManual": "追踪手动Token列表",
+      "limitCanvas": "限制画布到屏幕边缘",
+      "keypressInfo1": "已切换",
+      "keypressInfo2": "模式至",
+      "avInputPlaceholder": "输入文字或搜索",
+      "iconPlaceholder": "图标",
+      "true": "是",
+      "false": "否",
+      "missingTypeNotice": "旧版/缺失类型。请在下拉菜单中选择新类型进行编辑。",
+      "done": "完成",
+      "trackPlayerOwned": "追踪玩家拥有的Token",
+      "pauseCameraTracking": "暂停镜头追踪",
+	  "manualOBSWarning": "你当前处于 OBS 模式。如需返回正常模式，请按下 SHIFT + ALT + CONTROL + O（默认）或你的自定义快捷键，然后重新加载页面。",
+	  "disableOBSMode": "禁用 OBS 模式",
+	  "disableOBSModeHint": "如果你卡在 OBS 模式中，此选项将关闭手动 OBS 模式设置。"
+    },
+    "applications": {
+      "rollOverlayEditor": {
+        "name": "掷骰覆盖编辑器",
+        "test": "测试",
+        "preRollImage": "掷骰前图像",
+        "rollImage": "掷骰图像",
+        "postRollImage": "掷骰后图像",
+        "imageUrl": "图像URL",
+        "foregroundImageUrl": "前景图像URL",
+        "backgroundImageUrl": "背景图像URL",
+        "delay": "延迟(毫秒)",
+        "fadeIn": "淡入(毫秒)",
+        "duration": "持续时间(毫秒)",
+        "fadeOut": "淡出(毫秒)"
+      },
+      "director": {
+        "name": "导演模式",
+        "icTypeHeader": "战斗模式类型",
+        "oocTypeHeader": "非战斗模式类型",
+        "canvasOptionsHeader": "画布选项",
+        "trackedPlayerHeader": "追踪玩家",
+        "obsUserCommands": "OBS用户命令",
+        "forceOpenSettingsForOBSUser": "强制为OBS用户打开设置菜单",
+		"noGMWarning": "当前没有GM登录，无法更改导演设置"
+      },
+      "obsRemote": {
+        "name": "OBS远程设置",
+        "sceneName": "场景名称",
+        "sourceName": "OBS源名称",
+        "switchScene": "切换场景",
+        "toggleSource": "切换源",
+        "enableSource": "启用源",
+        "disableSource": "禁用源",
+        "vttSceneLabel": "VTT场景名称",
+        "vttScenePlaceholder": "输入名称或拖入场景",
+        "onLoad": "加载",
+        "onCombatStart": "战斗开始",
+        "onCombatEnd": "战斗结束",
+        "onPause": "暂停",
+        "onUnpause": "取消暂停",
+        "onSceneLoad": "场景加载",
+        "onStopStreaming": "停止直播"
+      },
+      "obsWebsocket": {
+        "name": "OBS Websocket设置",
+        "urlLabel": "URL",
+        "portLabel": "端口",
+        "passwordLabel": "密码",
+        "syncLabel": "同步目标客户端",
+        "saveButton": "保存",
+        "syncButton": "同步"
+      },
+      "actorSelect": {
+        "name": "角色选择",
+        "searchPlaceholder": "搜索",
+        "closeButton": "关闭",
+        "resetButton": "重置"
+      },
+      "overlayEditor": {
+        "name": "覆盖编辑器",
+        "addButton": "添加新组件",
+        "editStyleButton": "编辑样式",
+        "removeButton": "移除覆盖",
+        "removeComponentButton": "移除组件",
+        "importButton": "导入",
+        "exportButton": "导出",
+        "addOverlayButton": "添加新覆盖",
+        "closeButton": "关闭",
+        "importDialog": {
+          "title": "导入数据：覆盖",
+          "hint1": "你即将导入导出的覆盖配置。请确保它是在同一系统中导出的，否则AV覆盖可能无法工作。",
+          "hint2": "请选择是要替换现有覆盖还是追加导入列表。",
+          "replaceButton": "替换",
+          "appendButton": "追加",
+          "fileError": "未上传数据文件",
+          "versionError": "版本不受支持",
+          "formatError": "导入文件不是OBS Utils覆盖导出",
+          "cancelButton": "取消"
+        },
+        "exportDialog": {
+          "title": "导出设置？",
+          "content": "你要导出覆盖设置吗？",
+          "yesButton": "是",
+          "noButton": "否"
+        }
+      },
+      "styleEditor": {
+        "name": "样式编辑器",
+		"mode": {
+			"simple": "简单",
+			"advanced": "高级"
+		},
+		"fontFamily": "字体",
+		"fontSize": "字体大小",
+		"fontWeight": "字体粗细",
+		"color": "文字颜色",
+		"backgroundColor": "背景颜色",
+		"width": "宽度",
+		"height": "高度",
+		"padding": "内边距",
+		"margin": "外边距",
+		"textAlign": "文字对齐",
+		"lineHeight": "行高",
+		"letterSpacing": "字间距",
+		"border": "边框",
+		"borderRadius": "边框圆角",
+		"preservedExtras": "额外保留规则",
+		"clear": "清除",
+		"submitButton": "应用并关闭"
+      }
+    },
+    "overlays": {
+      "plainText": {
+        "name": "纯文本"
+      },
+      "fontAwesomeIcon": {
+        "name": "Font Awesome图标"
+      },
+      "booleanAVIcon": {
+        "name": "Boolean AV图标"
+      },
+      "booleanAVImage": {
+        "name": "Boolean AV图像"
+      },
+      "image": {
+        "name": "图像"
+      },
+      "multiIconAV": {
+        "name": "多图标AV"
+      },
+      "multiImageAV": {
+        "name": "多图像AV"
+      },
+      "progressBar": {
+        "name": "进度条"
+      }
+    },
+    "settings": {
+      "forceStreamPageOBSMode": {
+        "Name": "强制直播页面使用OBS模式",
+        "Hint": "始终强制/stream输出处于OBS模式"
+      },
+      "obsMode": {
+        "Name": "OBS模式",
+        "Hint": "将此浏览器设置为OBS浏览器。仅当无法使用浏览器源时启用"
+      },
+      "obsModeUser": {
+        "Name": "OBS模式用户(用户名)",
+        "Hint": "设置此用户始终处于OBS模式，无论使用何种浏览器"
+      },
+      "obsModeGlobalDisable": {
+        "Name": "全局禁用OBS视图",
+        "Hint": "这将关闭所有客户端的OBS功能，无论使用何种方法"
+      },
+      "minScale": {
+        "Name": "最小缩放比例",
+        "Hint": "屏幕可以缩放到的最小值"
+      },
+      "maxScale": {
+        "Name": "最大缩放比例",
+        "Hint": "屏幕可以缩放到的最大值"
+      },
+      "defaultOutOfCombat": {
+        "Name": "非战斗模式",
+        "Hint": "非战斗状态下的镜头模式"
+      },
+      "defaultInCombat": {
+        "Name": "战斗模式",
+        "Hint": "战斗状态下的镜头模式"
+      },
+      "popupCloseDelay": {
+        "Name": "弹窗关闭延迟",
+        "Hint": "弹窗自动关闭前的秒数。0表示禁用"
+      },
+      "showTrackerInCombat": {
+        "Name": "战斗中显示战斗追踪器？",
+        "Hint": "如果勾选，战斗回合中将显示战斗追踪器"
+      },
+      "obsRemoteMenu": {
+        "Label": "打开菜单",
+        "Name": "OBS远程设置",
+        "Hint": "配置OBS远程"
+      },
+      "obsWebsocketMenu": {
+        "Label": "打开菜单",
+        "Name": "OBS Websocket设置",
+        "Hint": "配置OBS Websocket"
+      },
+      "overlayActorSelect": {
+        "Label": "打开菜单",
+        "Name": "覆盖角色",
+        "Hint": "选择覆盖的角色"
+      },
+      "overlayEditor": {
+        "Label": "打开编辑器",
+        "Name": "覆盖编辑器",
+        "Hint": "编辑覆盖"
+      },
+      "enableOBSWebsocket": {
+        "Name": "启用OBS Websocket？",
+        "Hint": "如果勾选，将使用OBS Websocket进行远程控制"
+      },
+      "allowWebsocketAPI": {
+        "Name": "允许OBS Websocket API访问？",
+        "Hint": "如果勾选，其他模组可以直接访问OBS Websocket"
+      },
+      "rollOverlayEditor": {
+        "Name": "掷骰覆盖编辑器",
+        "Hint": "编辑掷骰覆盖",
+        "Label": "打开编辑器"
+      },
+      "showAV": {
+        "Name": "显示视频覆盖？",
+        "Hint": "如果启用，OBS上将显示音视频聊天UI(可能需要在OBS中重新加载)"
+      },
+      "showUserConfig": {
+        "Name": "允许渲染用户配置？",
+        "Hint": "如果启用，将不会禁止用户配置对话框"
+      },
+      "fixedPopups": {
+        "Name": "使用固定弹窗",
+        "Hint": "如果启用，所有弹窗将重新定位并调整大小至配置值"
+      },
+      "fixedPopupX": {
+        "Name": "弹窗X坐标",
+        "Hint": "距离屏幕左侧的像素距离"
+      },
+      "fixedPopupY": {
+        "Name": "弹窗Y坐标",
+        "Hint": "距离屏幕顶部的像素距离"
+      },
+      "fixedPopupWidth": {
+        "Name": "弹窗宽度",
+        "Hint": "弹窗的像素宽度"
+      },
+      "fixedPopupHeight": {
+        "Name": "弹窗高度",
+        "Hint": "弹窗的像素高度"
+      },
+      "showKeybindingPopup": {
+        "Name": "显示快捷键通知",
+        "Hint": "如果勾选，使用键盘快捷键时将显示所选模式的通知"
+      },
+      "diceSoNice": {
+        "Name": "启用Dice so Nice覆盖",
+        "Hint": "如果勾选，将渲染Dice so Nice部分与其他覆盖一起显示"
+      },
+      "diceSoNiceOverlayWidth": {
+        "Name": "Dice so Nice覆盖宽度",
+        "Hint": "元素的像素宽度"
+      },
+      "diceSoNiceOverlayHeight": {
+        "Name": "Dice so Nice覆盖高度",
+        "Hint": "元素的像素高度"
+      },
+      "smoothUserCamera": {
+        "Name": "平滑镜头移动",
+        "Hint": "如果启用，通过降低更新率来平滑手动镜头移动"
+      },
+      "proxyOBSMessages": {
+        "Name": "向GM发送OBS模式通知",
+		"Hint": "如果启用，在OBS视图中隐藏的通知将显示在所有连接的GM客户端中"
+      },
+	  "showChatNotificationsOnCanvas": {
+		"Name": "在游戏中显示聊天通知",
+		"Hint": "如果启用，聊天消息弹窗将不会在游戏UI中被隐藏"
+	  },
+	  "leftAlignChatNotifications": {
+		"Name": "左侧对齐聊天通知",
+		"Hint": "如果启用，聊天消息弹窗将对齐到屏幕左侧"
+		},
+	  "streamChatPopupStyle": {
+		"Name": "通知样式聊天覆盖层",
+		"Hint": "如果启用，/stream 上的聊天将以游戏视图中的通知样式显示"
+	  },
+	  "trackObserverTokens": {
+		"Name": "追踪查看Token",
+		"Hint": "如果启用，导演将追踪用户具有查看权限的Token，而不仅仅是拥有的Token"
+	  },
+	  "showDirectorInOBSMode": {
+		"Name": "在OBS模式中显示导演控件",
+		"Hint": "如果禁用，在OBS模式中导演控件将被隐藏"
+	  }
+    }
+  }
+}

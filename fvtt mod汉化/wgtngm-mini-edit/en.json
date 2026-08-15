@@ -1,0 +1,28 @@
+{
+  "MINIEDIT": {
+    "controls": {
+      "open": "Mini Edit"
+    },
+    "dialog": {
+      "title": "Mini Edit",
+      "content": "Multiple document types are selected. Choose one type to edit."
+    },
+    "keybindings": {
+      "open": {
+        "name": "Open Mini Edit",
+        "hint": "Open Mini Edit for currently controlled placeables."
+      }
+    },
+    "notifications": {
+      "noSelection": "No controlled placeables found.",
+      "noChanges": "No checked fields to apply.",
+      "applied": "Updated {count} {types} documents."
+    },
+    "errors": {
+      "gmOnly": "Mini Edit is GM-only.",
+      "canvasNotReady": "Canvas is not ready.",
+      "updateFailed": "Failed to update selected {documentName} documents.",
+      "noSheetClass": "No sheet class found for {documentName}."
+    }
+  }
+}

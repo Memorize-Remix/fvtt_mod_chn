@@ -1,0 +1,23 @@
+
+  "DDB.Settings.CobaltCookie.Name": "D&D Beyond CobaltSession Cookie",
+  "DDB.Settings.CobaltCookie.Hint": "你的D&D Beyond CobaltSession cookie值。在浏览器开发者工具中找到：应用程序 > Cookies > dndbeyond.com > CobaltSession。这用于获取WebSocket连接的访问Token。",
+  
+  "DDB.Settings.ProxyUrl.Name": "DDB代理URL",
+  "DDB.Settings.ProxyUrl.Hint": "与D&D Beyond通信时用于绕过CORS限制的代理服务器URL。默认使用DDB Importer代理。",
+
+  "DDB.Settings.CharacterMapping.Name": "角色映射",
+  "DDB.Settings.CharacterMapping.Label": "配置映射",
+  "DDB.Settings.CharacterMapping.Hint": "将D&D Beyond角色映射到Foundry角色，用于骰子掷骰同步。",
+
+  "DDB.Settings.UserId.Name": "D&D Beyond Cobalt用户ID",
+  "DDB.Settings.UserId.Hint": "你在D&D Beyond账户的ID。在D&D Beyond战役页面时，从浏览器控制台运行console.log(Cobalt.User.ID)找到此ID。",
+
+  "DDB.Settings.CampaignId.Name": "战役ID",
+  "DDB.Settings.CampaignId.Hint": "你的D&D Beyond战役ID。你可以在战役的URL中找到此ID。",
+  
+  "DDB.Settings.Enabled.Name": "启用DDB骰子同步",
+  "DDB.Settings.Enabled.Hint": "启用或禁用与D&D Beyond的连接。启用后，来自DDB的骰子掷骰将同步到Foundry。",
+  
+  "DDB.Settings.UpdateDamageOnly.Name": "从D&D Beyond更新角色伤害",
+  "DDB.Settings.UpdateDamageOnly.Hint": "启用后，来自D&D Beyond的角色伤害将同步。"
+}

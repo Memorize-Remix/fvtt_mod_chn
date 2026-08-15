@@ -1,0 +1,102 @@
+{
+  "inlineView": {
+    "button": "Webview",
+    "webviewColor": {
+      "name": "Background color",
+      "hint": "Changes the color of the webview background",
+      "label": "Choose Color"
+    },
+    "notifications": {
+      "settingsError": "Something is wrong with the webview settings. Check your formatting."
+    },
+    "html": {
+      "compatBox": "compatibility mode?",
+      "compatDisclaimer": "Compatibility mode logs domain names to prevent proxy abuse.",
+      "extensionDisclaimer": "If compatibility mode doesn't work, try the <a target=\"_blank\" href=\"https://github.com/ardittristan/FoundryVTT-Inline-Webviewer-Extension\">extension</a>",
+      "loginDisclaimer": "Logging in won't work sometimes, first try logging in while devtools (F12) is open, otherwise create an issue on the <a target=\"_blank\" href=\"https://github.com/ardittristan/FoundryVTT-Inline-Webviewer-Extension\">extension github</a>",
+      "settings": {
+        "compat": "Compat",
+        "save": "Save",
+        "cancel": "Cancel",
+        "compatToggle": "Toggle Compatibility mode",
+        "name": "Name",
+        "url": "Url",
+        "icon": "Icon",
+        "width": "Width",
+        "height": "Height",
+        "removedElements": "Removed Elements",
+        "properties": "Iframe HTML Properties",
+        "id": "Scene id",
+        "sceneHint": "Create new scene"
+      }
+    },
+    "confirmExit": {
+      "name": "Confirm Exit",
+      "hint": "Show a confirmation prompt if you close a viewer window.",
+      "title": "Are you sure?",
+      "content": "Are you sure you want to close this view?"
+    },
+    "confirmExport": {
+      "title": "Are you sure?",
+      "content": "Do you want to export this webview with it's current settings to a journal?"
+    },
+    "menus": {
+      "global": "Global Webviewers",
+      "private": "Private Webviewers",
+      "label": "Open Settings",
+      "scene": "Scene Webviewers"
+    },
+    "gmShare": {
+      "tools": {
+        "name": "Send url to players",
+        "title": "Send url to players"
+      },
+      "popup": "GM Popup"
+    },
+    "headers": {
+      "share": "Share",
+      "export": "Export"
+    },
+    "help": {
+      "title": "Help",
+      "image": "Image",
+      "adding": "Adding Entries",
+      "addingDesc": "You can add new webviewer entries in the bottom container, when you're done you can click the + button to add it to the list.",
+      "add": "add",
+      "reordering": "Reordering Entries",
+      "reorderingDesc": "The order of the entries corrosponds with the order they'll show up in the button list, you can change the order with the ᐱ and ᐯ buttons.",
+      "datafields": {
+        "title": "Data Fields",
+        "name": "Name (Required)",
+        "nameDesc": "The name field sets what name will show up in the header of the webviewer window and the button name.",
+        "url": "Url (Required)",
+        "urlDesc": "The url field sets which url the webviewer loads.",
+        "icon": "Icon",
+        "iconDescA": "The icon field is for the icon of the button, you can put any free",
+        "iconDescB": "icon name in here. (eg",
+        "iconDescC": "which translates to",
+        "dimensions": "Width and Height",
+        "dimensionsDesc": "The width and height fields set the width and the height of the webviewer window when it appears.",
+        "compat": "Compat",
+        "compatDesc": "The compat checkbox activates compatibility mode, in this mode the webviewer uses a proxy. This can be used when the site does not function well normally.",
+        "compatWarn": "Do keep in mind that the proxy logs the urls visited to prevent abuse!",
+        "removed": "Removed Elements",
+        "removedDescA": "This textbox only appears if compat mode is on. Any css selector (eg",
+        "removedDescB": "you put in here will be hidden in the webviewer. This is because some things won't dissapear when compatibility mode is on because cookies don't work well with it.",
+        "removeSeparator": "Selectors are seperated by commas!",
+        "properties": "HTML Properties",
+        "propertiesDesc": "These properties are HTML tags that will be added to the iframe element, eg:"
+      }
+    },
+    "urlShare": {
+      "title": "Send url"
+    },
+    "settings": {
+      "title": "Webviewer Settings",
+      "duplicate": "Please do not use the same name twice."
+    },
+    "extension": {
+      "newVersion": "There is a new extension version available"
+    }
+  }
+}

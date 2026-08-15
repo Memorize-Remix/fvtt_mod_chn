@@ -1,0 +1,71 @@
+
+  "rnk-illumination": {
+    "keybindings": {
+      "targetHovered": {
+        "name": "目标悬停Token",
+        "hint": "切换当前悬停Token的瞄准状态"
+      }
+    },
+    "notifications": {
+      "filePickerUnavailable": "当前环境中无法使用文件选择器。",
+      "hubAccessWarn": "只有 GM 或指定的副 GM 可以打开照明中心。",
+      "hubAccessDenied": "只有 GM 或指定的副 GM 可以访问照明中心。",
+      "hubSubmitDenied": "只有 GM 或指定的副 GM 可以修改照明设置。",
+      "settingsUpdated": "照明设置已更新。",
+      "settingsSaveFailed": "保存照明设置失败。请查看控制台获取详细信息。"
+    },
+    "settings": {
+      "main": {
+        "name": "启用照明效果",
+        "hint": "切换Token照明效果的开启/关闭"
+      },
+      "gmOrigin": {
+        "name": "GM 目标来源Token ID"
+      }
+    },
+    "ui": {
+      "controls": {
+        "title": "RNK 照明系统"
+      },
+      "hub": {
+        "title": "RNK 照明界面",
+        "open": "打开界面",
+        "hint": "配置照明颜色、效果和Token分配。",
+        "adminTitle": "照明管理员",
+        "adminSubtitle": "GM 和副 GM 用户可以在此界面配置他们的照明设置。",
+        "authorizedUsers": "RNK 授权用户",
+        "noActor": "无角色",
+        "color": "照明颜色",
+        "effect": "效果样式",
+        "effectDisabled": "无（禁用）",
+        "symbol": "目标标记",
+        "customSymbolPlaceholder": "图片 URL 或路径",
+        "upload": "上传",
+        "intensity": "效果强度",
+        "range": "效果范围",
+        "rangeLabel": "范围：",
+        "assignedToken": "已分配的Token",
+        "autoOwnedToken": "自动（所属Token）",
+        "noUsersConnected": "没有其他用户连接。",
+        "saveAll": "保存所有设置",
+        "saving": "保存中..."
+      },
+      "roles": {
+        "gm": "GM",
+        "gmShort": "GM",
+        "cogm": "副 GM",
+        "player": "玩家"
+      },
+      "token": {
+        "originButton": "将此Token用作瞄准来源",
+        "originButtonActive": "当前已选为瞄准来源",
+        "assignButton": "将Token分配给用户",
+        "assignDialogTitle": "分配Token",
+        "assignPrompt": "选择要分配此Token的用户：",
+        "assignNone": "无（默认所有者）",
+        "assignConfirm": "分配",
+        "assignCancel": "取消"
+      }
+    }
+  }
+}

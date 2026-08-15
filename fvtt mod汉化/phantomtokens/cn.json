@@ -1,0 +1,32 @@
+
+	"phantomtokens" : {
+		"Titles" : {
+			"togglePhantomVision"			: "切换幻影视野",
+			
+			"modes" : {
+				"normal.descrp"				: "常规Token",
+				"anchor.descrp"				: "固定Token",
+				"unclickable.descrp"		: "不可点击Token",
+				"phantom.descrp"			: "隐形Token"
+			}
+		},
+		
+		"Keys" : {
+			"TogglePhantomRealm.name"		: "切换幻影视野",
+			"IncreaseModeSelected.name"		: "提升选中Token的幻影模式", 
+			"DecreaseModeSelected.name"		: "降低选中Token的幻影模式"
+		},
+		
+		"Settings" : {
+			"anchorpreventteleport" : {
+				"name"						: "防止锚定传送",
+				"descrp"					: "防止锚定Token被传送(通过stairways)"
+			},
+			
+			"PhantomonDeath" : {
+				"name"                        : "死亡幻影",
+				"descrp"                    : "当NPC Token濒死时切换至幻影模式"
+			}
+		}
+	}
+}

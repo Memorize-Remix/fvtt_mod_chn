@@ -1,0 +1,75 @@
+
+    "vision-toolkit": {
+        "keybinding": {
+            "toggleVision": {
+                "name": "切换Token视觉",
+                "hint": " "
+            },
+            "activeGmVision": {
+                "name": "切换GM视觉",
+                "hint": " "
+            }
+        },
+        "toggle": "忽略Token视觉",
+        "setting": {
+            "disableVisionOnDragAsGM": {
+                "name": "当从 GM 拖动 token 时，禁用 token 视觉",
+                "hint": "以 GM 身份拖动token时禁用视野（当你在地图上移动某些token时，可用于不向玩家显示地图）"
+            },
+            "noTokenAnimationAsGM": {
+                "name": "为 GM 禁用 token 移动动画",
+                "hint": "在地图上拖放 token 会立即传送，而不是移动。"
+            },
+            "enableGmVision": {
+                "name": "启用GM视觉",
+                "hint": "'GM Vision'模组的嵌入式版本"
+            },
+            "enableRevealObservableTokens": {
+                "name": "启用启用揭示可观测 token",
+                "hint": "'Reveal Observable Tokens'模组的嵌入式版本"
+            },
+            "doNotRevealMyMap": {
+                "name": "穿墙时不显示地图",
+                "hint": "如果Token会穿过墙壁，则取消Token的动画，以防止显示玩家不应该看到的地图部分。"
+            },
+            "invisibleTokensCanSee": {
+                "name": "隐形 token 可以看到",
+                "hint": "默认情况下，隐形 token 会消失。如果选中此设置，这种行为就会改变。"
+            },
+            "invisibleTokensEmitLight": {
+                "name": "隐形 token 发光",
+                "hint": "带有光源的 token 如果隐形，仍然会发光。"
+            },
+            "reset": {
+                "name": "将设置重置为默认值",
+                "label": "将设置重置为默认值",
+                "hint": "这将把所有设置重置为当前游戏系统的默认设置。"
+            },
+            "debug": {
+                "name": "启用调试",
+                "label": "将调试信息打印到控制台",
+                "hint": "将调试信息打印到控制台"
+            },
+            "tokenWarpEnable": {
+                "name": "启用 token Warp",
+                "hint": "当路径上有墙壁时，自动取消拖动 token 的移动动画，帮助 GM 避免暴露地图。"
+            },
+            "tokenWarpWallsCancelTokenAnimation": {
+                "name": "墙壁取消 token 移动动画",
+                "hint": "选中后，当GM将 token 拖过场景墙壁时，token 会立即出现在目的地（无 token 移动动画）。此设置可帮助GM避免出现玩家看不到的地图区域（如果token移动动画处于关闭状态，则不会有任何影响）。"
+            },
+            "tokenWarpDefaultTokenAnimationSwitch": {
+                "name": "默认情况下没有 token 移动动画",
+                "hint": "选中后，token 会立即出现在目的地（没有 token 移动动画）。"
+            },
+            "tokenWarpExcludedScenes": {
+                "name": "排除场景",
+                "hint": "添加用分号 (;) 分隔的场景 UUID（或 ID）。token 移动动画始终打开。"
+            },
+            "tokenWarpDefaultTokenAnimation": {
+                "name": "token 移动动画速度",
+                "hint": "默认值为 6。Foundry v10 使用的默认值为 12。"
+            }
+        }
+    }
+}

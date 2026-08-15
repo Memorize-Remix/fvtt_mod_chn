@@ -1,0 +1,127 @@
+
+  "SEASONS_STARS": {
+    "module_title": "Seasons & Stars",
+    "calendar": {
+      "current_date": "当前日期",
+      "toggle_calendar": "切换日历",
+      "monthly_view": "月历视图",
+      "advance_time": "推进时间",
+      "calendar_selection": "日历选择",
+      "calendar_format": "日历格式",
+      "custom": "自定义日历",
+      "import": "导入日历",
+      "export": "导出日历",
+      "months": "月份",
+      "days_per_week": "每周天数",
+      "leap_year": "闰年",
+      "enabled": "已启用"
+    },
+    "dialog": {
+      "calendar_selection": {
+        "title": "📅 更改日历系统",
+        "choose_calendar": "选择你的日历系统",
+        "choose_hint": "选择在你的世界中用于日期显示和时间跟踪的日历系统。这将影响游戏中日期的显示和计算方式。你可以从以下内置日历中选择，或加载自定义日历文件。",
+        "select": "使用此日历",
+        "cancel": "保持当前",
+        "switch_to": "切换到 {calendar}",
+        "current": "当前激活",
+		"selected": "已选择",
+        "select_this": "选择此日历",
+        "sample": "示例",
+        "preview": "预览",
+        "preview_tooltip": "查看日历详细信息和示例日期",
+        "sample_dates": "示例日期",
+        "structure": "日历结构",
+        "no_calendars": "无可用日历",
+        "no_calendars_hint": "未找到日历文件。请确保日历数据已正确安装。",
+		"custom_file": "自定义日历文件",
+		"custom_file_hint": "从你的FVTT服务器中选择一个自定义日历 JSON 文件。这允许你使用内置集合中未包含的日历。",
+		"browse": "浏览",
+		"browse_tooltip": "从你的FVTT服务器中选择自定义日历文件",
+		"no_file_selected": "未选择自定义文件",
+		"clear_file": "清除文件选择",
+		"clear": "清除",
+		"file_active": "自定义日历文件当前已激活",
+		"file_loaded": "自定义日历文件已加载并准备使用",
+		"file_path": "文件路径",
+		"status": "状态",
+		"click_to_select": "点击选择日历文件",
+		"use_this_file": "使用此文件",
+		"search_placeholder": "搜索日历...",
+		"filter_by_tag": "按标签过滤",
+		"clear_filters": "清除过滤条件",
+		"of": "的",
+		"no_results": "没有匹配搜索条件的日历",
+		"select_to_view": "选择日历以查看详情",
+		"toggle_variants": "切换变体",
+		"tags": "标签",
+		"prev_month": "上一月",
+		"next_month": "下一月"
+      },
+      "calendar_preview": {
+        "title": "日历预览：{calendar}"
+      },
+      "close": "关闭"
+    },
+    "settings": {
+	  "calendar_selection": "📅 日历系统",
+	  "select_calendar_button": "选择日历",
+	  "calendar_selection_hint": "选择要在你的世界中用于日期显示和时间追踪的日历系统。打开对话框以浏览并选择可用的日历。",
+      "active_calendar": "📅 激活日历系统",
+      "active_calendar_hint": "选择用于日期显示和时间跟踪的日历系统。这是配置你世界日历的主要设置。",
+	  "active_calendar_file": "📄 自定义日历文件路径",
+	  "active_calendar_file_hint": "FVTT服务器上自定义日历 JSON 文件的路径。此设置通过日历选择对话框进行管理。",
+	  "chat_day_notifications": "📝 日期变更聊天通知",
+	  "chat_day_notifications_hint": "当游戏内日期变更时在聊天中发布消息，帮助玩家在聊天记录中追踪时间进度",
+	  "chat_day_format": "📝 日期变更格式",
+	  "chat_day_format_hint": "日期变更通知的格式模板。使用Handlebars语法，支持如{{ss-weekday format='name'}}、{{ss-month format='name'}}、{{ss-day format='ordinal'}}、{{ss-year}}等助手函数",
+      "current_date": "当前日期",
+      "current_date_hint": "当前游戏内日期（自动管理）",
+      "default_widget": "🔧 默认日历小部件",
+      "default_widget_hint": "选择使用场景控制按钮或默认键盘快捷键（Alt+S）时打开的日历小部件",
+	  "default_widget_none": "无（启动时不显示小部件）",
+      "default_widget_main": "主日历小部件",
+      "default_widget_mini": "迷你日历小部件",
+      "default_widget_grid": "日历网格小部件"
+    },
+    "notifications": {
+      "calendar_changed": "日历已更改为 {calendar}"
+    },
+    "warnings": {
+      "no_calendars_available": "没有可用的日历供选择",
+      "calendar_file_failed": "无法加载日历文件 '{path}': {error}"
+    },
+    "keybindings": {
+      "toggle_default_widget": "切换默认日历小部件",
+      "toggle_default_widget_hint": "显示或隐藏默认日历小部件（可在设置中配置）",
+      "toggle_mini_widget": "切换迷你日历小部件",
+      "toggle_mini_widget_hint": "显示或隐藏紧凑型日历小部件",
+      "toggle_grid_widget": "切换日历网格小部件",
+      "toggle_grid_widget_hint": "显示或隐藏月历网格小部件",
+      "toggle_main_widget": "切换主日历小部件",
+      "toggle_main_widget_hint": "显示或隐藏主日历管理小部件"
+    },
+    "errors": {
+      "invalid_calendar": "无效的日历格式",
+      "failed_load": "加载日历失败：{error}",
+      "conversion_failed": "日历转换失败：{error}",
+      "manager_not_ready": "日历管理器尚未准备就绪",
+	  "file_picker_failed": "无法打开文件选择对话框",
+	  "calendar_file_load_failed": "无法从文件 {path} 加载日历: {error}",
+	  "clear_file_failed": "无法清除自定义日历文件选择"
+    },
+	"mini_widget": {
+		"context_menu": {
+		  "toggle_time": "切换时间",
+		  "toggle_weekday": "切换星期",
+		  "toggle_year": "切换年",
+		  "toggle_sunrise_sunset": "切换日出/日落",
+		  "toggle_12hour": "切换12小时制",
+		  "toggle_moon_phases": "切换月相",
+		  "toggle_time_controls": "切换时间控件",
+		  "toggle_extensions": "切换扩展按钮",
+		  "toggle_pin": "切换固定"
+		}
+	}
+  }
+}

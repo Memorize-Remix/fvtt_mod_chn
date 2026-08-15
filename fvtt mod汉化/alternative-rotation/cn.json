@@ -1,0 +1,36 @@
+
+  "alternative-rotation": {
+    "settings": {
+      "altSnapByDefault": {
+        "name": "默认对齐网格方向",
+        "hint": "若启用，旋转将默认对齐45°/60°方向，除非按住“快速旋转（对齐）”键来反转此行为。"
+      },
+      "smoothRotation": {
+        "name": "平滑旋转",
+        "hint": "若启用，将减少软对齐的增量，从5度调整为0.1度。"
+      },
+      "fastPreview": {
+        "name": "快速预览",
+        "hint": "若启用，旋转时将无延迟，但其他玩家在你松开前不会看到变化。"
+      },
+      "rotationUpdateFrequency": {
+        "name": "旋转更新频率",
+        "hint": "仅在“快速预览”禁用时生效。默认60（次/秒）。提高此值可使旋转更平滑，但可能导致延迟。"
+      },
+      "disableSingleArrowVfx": {
+        "name": "禁用视觉效果（隐藏橙色箭头）",
+        "hint": "旋转单个物体时，此设置将隐藏箭头显示。适用于例如Token发射锥形光源或具有明显朝向的情况。"
+      }
+    },
+    "keybindings": {
+      "alternativeRotation": {
+        "name": "快速旋转",
+        "hint": "选中Token时按住此键，使Token朝向光标方向旋转。按住Shift可对齐网格方向（45°/60°）。"
+      },
+      "alternativeRotationSnap": {
+        "name": "快速旋转（对齐）",
+        "hint": "使用快速旋转时按住此键，以对齐网格方向（45°/60°）。"
+      }
+    }
+  }
+}

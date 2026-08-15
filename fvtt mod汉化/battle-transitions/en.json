@@ -1,0 +1,767 @@
+{
+  "BATTLETRANSITIONS": {
+    "SCENECONFIG": {
+      "AUTOTRIGGER": {
+        "HINT": "Automatically trigger this transition any time this scene is activated.",
+        "LABEL": "Automatically Trigger"
+      },
+      "BARWIPE": {
+        "BARS": {
+          "HINT": "Number of bars into which to split the screen.",
+          "LABEL": "Number of Bars"
+        }
+      },
+      "BOSSSPLASH": {
+        "ANIMATIONDELAY": {
+          "HINT": "Time, in milliseconds, to wait before beginning the animation.",
+          "LABEL": "Animation Delay"
+        },
+        "ANIMATIONDURATION": {
+          "HINT": "Time, in milliseconds, that it should take for the slide-in animation to play.",
+          "LABEL": "Animation Duration"
+        },
+        "BOTCOLOR": {
+          "HINT": "Coor to be used for bottom, tertiary color bar.",
+          "LABEL": "Bottom Color"
+        },
+        "FONT": {
+          "HINT": "Font to use for message text.",
+          "LABEL": "Font"
+        },
+        "FONTCOLOR": {
+          "HINT": "Color for main message text.",
+          "LABEL": "Font Color"
+        },
+        "FONTSHADOW": {
+          "HINT": "Color for the shadow on the main message text.",
+          "LABEL": "Font Shadow Color"
+        },
+        "FONTSIZE": {
+          "HINT": "Size of the main message font.",
+          "LABEL": "Font Size"
+        },
+        "MESSAGE": {
+          "HINT": "If unspecified, will display an actor's name.",
+          "LABEL": "Message"
+        },
+        "MIDCOLOR": {
+          "HINT": "Color to be used for middle, secondary color bar.",
+          "LABEL": "Middle Color"
+        },
+        "SUBCOLOR": {
+          "HINT": "Color of the secondary message text.",
+          "LABEL": "Subtext Color"
+        },
+        "SUBSHADOW": {
+          "HINT": "Color of the shadow for the secondary message text.",
+          "LABEL": "Subtext Shadow Color"
+        },
+        "SUBSIZE": {
+          "HINT": "Size of the secondary message font.",
+          "LABEL": "Subtext Size"
+        },
+        "SUBTEXT": {
+          "HINT": "Text displayed below the main message.",
+          "LABEL": "Subtext"
+        },
+        "TABS": {
+          "ANIMATION": "Animation",
+          "BASICS": "Basics",
+          "COLORS": "Colors",
+          "FONT": "Font"
+        },
+        "TOPCOLOR": {
+          "HINT": "Color to be used for top, primary color bar.",
+          "LABEL": "Top Color"
+        }
+      },
+      "BUTTONS": {
+        "ADDSTEP": "Add Step",
+		"CLEARSTEPS": "Clear Steps",
+        "CONFIGURE": "Configure {name}",
+        "REMOVE": "Remove {name}"
+      },
+      "CHROMAKEY": {
+        "ENABLE": {
+          "HINT": "",
+          "LABEL": "Enable Chroma Key"
+        },
+        "KEYCOLOR": {
+          "HINT": "Color to be removed",
+          "LABEL": "Key Color"
+        },
+        "RANGE": {
+          "HINT": "Cut-off values for background, foreground, or blending colors.",
+		  "LABEL": "Cut-off Range",
+          "X": "X",
+          "Y": "Y"
+        }
+      },
+      "CLOCKWIPE": {
+        "DIRECTION": {
+          "HINT": "Direction to travel",
+          "LABEL": "Clock Direction"
+        }
+      },
+      "COMMON": {
+        "ACTOR": {
+          "HINT": "",
+          "LABEL": "Actor"
+        },
+        "BACKGROUND": {
+          "COLOR": "Background Color",
+          "HINT": "Background color or image to show behind this step",
+          "IMAGE": "Background Image",
+          "LABEL": "Background",
+          "OVERLAY": "Original overlay texture",
+          "STYLE": "Background Style"
+        },
+        "CLOCKDIRECTION": {
+          "HINT": "Clockwise or counterclockwise",
+          "LABEL": "Direction"
+        },
+        "DIRECTION": {
+          "HINT": "Direction from which to start",
+          "LABEL": "Direction"
+        },
+		"DROPSHADOW": {
+          "BLUR": {
+            "HINT": "Drop shadow blur radius",
+            "LABEL": "Drop Shadow Blur"
+          },
+          "COLOR": {
+            "HINT": "The color of the drop shadow",
+            "LABEL": "Drop Shadow Color"
+          },
+          "DISTANCE": {
+            "HINT": "Distance from the base text to display the drop shadow",
+            "LABEL": "Drop Shadow Distance"
+          },
+          "ENABLE": {
+            "HINT": "Click to enable a drop shadow on the text.",
+            "LABEL": "Enable Drop Shadow"
+          }
+        },
+        "DUALSTYLE": {
+          "BOTH": "Apply To Both",
+          "HINT": "This effect can be applied to the transition overlay, the new scene, or both.",
+          "LABEL": "Apply effect to",
+          "OVERLAY": "Apply To Overlay",
+          "SCENE": "Apply to New Scene"
+        },
+        "DURATION": {
+          "HINT": "Duration in milliseconds",
+          "LABEL": "Duration"
+        },
+		"FALLOFF": {
+          "HINT": "How far from the edge of the transition to start fading out.  0 is no fade, 1 will start fading from the very end of the fade.",
+          "LABEL": "Edge Fade"
+        },
+        "FONT": {
+          "HINT": "Select a font family.",
+          "LABEL": "Font"
+        },
+        "FONTSIZE": {
+          "HINT": "Size of the font, in pixels.",
+          "LABEL": "Font Size"
+        },
+        "LABEL": {
+          "FORMAT": "({label})",
+          "HINT": "",
+          "LABEL": "Label"
+        },
+        "RADIAL": {
+          "HINT": "Start from inside or outside",
+          "LABEL": "Radial Direction"
+        },
+		"TARGET": {
+          "HINT": "Screen point or scene element on which to center this effect.",
+          "LABEL": "Target",
+          "TYPE": "Target Type"
+        },
+        "TARGETBOTH": "both the overlay and new scene",
+        "TARGETDIALOG": {
+          "TITLE": "Effect Target"
+        },
+        "TARGETOVERLAY": "the overlay",
+        "TARGETSCENE": "the new scene",
+        "TARGETTYPE": {
+          "DRAWING": {
+            "HINT": "Center this effect on the mid point of a drawing.",
+            "LABEL": "Drawing"
+          },
+          "LABEL": "Target Type",
+          "NOTE": {
+            "HINT": "Center this effect on the location of a journal note",
+            "LABEL": "Note",
+            "SELECT": "Select Journal Note",
+            "SELECTHINT": "Please select a journal note to use for the target of this effect."
+          },
+          "POINT": {
+            "HINT": "A normalized point on the screen.  (0,0) is the top left, (1,1) is the bottom right.  (0.5,0.5) is the center.",
+            "LABEL": "Screen Point",
+            "X": "X",
+            "Y": "Y"
+          },
+          "PROMPT": {
+            "HINT": "Prompt for the target of this effect at the start of the transition.",
+            "LABEL": "Ask Before Transition"
+          },
+          "TILE": {
+            "HINT": "Center this effect on the mid point of a tile",
+            "LABEL": "Tile"
+          },
+          "TOKEN": {
+            "HINT": "Center this effect on the mid point of a token",
+            "LABEL": "Token"
+          }
+        },
+        "VOLUME": {
+          "HINT": "",
+          "LABEL": "Volume"
+        }
+      },
+      "DIAMOND": {
+        "SIZE": {
+          "HINT": "Size of diamondsudration",
+          "LABEL": "Size"
+        }
+      },
+      "EASING": {
+        "HINT": "The easing function to use when animating this transition.",
+        "LABEL": "Easing"
+      },
+      "EXPORT": {
+        "HINT": "Download a copy of this sequence as a .json file.",
+        "LABEL": "Export Sequence"
+      },
+      "FIREDISSOLVE": {
+        "BURNSIZE": {
+          "HINT": "Size of the burn holes during transiton",
+          "LABEL": "Burn Size"
+        }
+      },
+      "HUESHIFT": {
+        "MAXSHIFT": {
+          "HINT": "Amount by which to shift the hue.  1 will wrap back around to the original hue.",
+          "LABEL": "Shift Amount"
+        }
+      },
+      "IMPORT": {
+        "HINT": "Import a transition sequence previously exported as a .json file.",
+        "LABEL": "Import Sequence"
+      },
+      "LOADINGTIP": {
+        "FONTCOLOR": {
+          "HINT": "Color of the loading tip text.",
+          "LABEL": "Font Color"
+        },
+        "LOCATION": {
+          "BOTTOMCENTER": "Bottom Center",
+          "BOTTOMLEFT": "Bottom Left",
+          "BOTTOMRIGHT": "Bottom Right",
+          "CENTER": "Center",
+          "HINT": "Section of the screen to display the loading tip.",
+          "LABEL": "Screen Location",
+          "TOPCENTER": "Top Center",
+          "TOPLEFT": "Top Left",
+          "TOPRIGHT": "Top Right"
+        },
+        "MESSAGE": {
+          "HINT": "Loading tip message to display.",
+          "LABEL": "Message"
+        },
+        "ROLLTABLE": {
+          "HINT": "RollTable from which to select message.",
+          "LABEL": "RollTable"
+        },
+        "SOURCETYPE": {
+          "HINT": "The source from the loading tip will come.",
+          "LABEL": "Source",
+          "ROLLTABLE": {
+            "HINT": "Select a random message from a RollTable.",
+            "LABEL": "RollTable"
+          },
+          "STRING": {
+            "HINT": "Specify a message.",
+            "LABEL": "String"
+          }
+        },
+        "TABS": {
+          "BASICS": "Basics",
+          "FONT": "Font Settings"
+        }
+      },
+      "MACRO": {
+        "HINT": "Save this sequence as a macro.",
+        "LABEL": "Save as Macro"
+      },
+      "PARALLEL": {
+        "ADDSEQUENCE": "Add Sequence",
+		"EDITSEQUENCE": "Edit Sequence",
+        "REMOVESEQUENCE": "Remove Sequence",
+        "SEQUENCE": "Sequence {index}",
+        "SEQUENCES": "Sequences"
+      },
+      "PIXELATE": {
+        "MAXSIZE": {
+          "HINT": "Maximum relative size of pixels.",
+          "LABEL": "Maximum Pixel Size"
+        }
+      },
+      "REPEAT": {
+        "DELAY": {
+          "HINT": "Time to delay between repetitions",
+          "LABEL": "Delay"
+        },
+		"EDITSEQUENCE": "Edit Sequence",
+        "ITERATIONS": {
+          "HINT": "Number of times to repeat.",
+          "LABEL": "Iterations"
+        },
+        "PREVIOUS": {
+          "HINT": "Repeat the step prior to this one.",
+          "LABEL": "Previous"
+        },
+        "SEQUENCE": {
+          "HINT": "Repeat the specified sequence.",
+          "LABEL": "Sequence"
+        },
+        "STYLE": {
+          "LABEL": "Repeat Style"
+        }
+      },
+      "REVERSE": {
+        "DELAY": {
+          "HINT": "Time to delay before reversing the previous effect.",
+          "LABEL": "Delay"
+        }
+      },
+      "SOUND": {
+        "FILE": {
+          "HINT": "Sound file to play",
+          "LABEL": "File"
+        }
+      },
+      "TAB": "Transition",
+      "TEXTURESWAP": {
+		  "REPLACE": {
+          "HINT": "If enabled, will fully replace the current overlay texture.  Otherwise, will blend based on this texture's alpha value.",
+          "LABEL": "Replace Current"
+        },
+        "TEXTURE": {
+          "HINT": "Texture to which to swap",
+          "LABEL": "Texture"
+        }
+      },
+      "TOTALDURATION": "Total duration: {duration}",
+      "TRANSITIONCONFIG": {
+        "LABEL": "Transition Steps"
+      },
+      "VIDEO": {
+		"CLEAR": {
+          "HINT": "Will remove the video after it has finished playing.",
+		  "LABEL": "Clear After Playing"
+        },
+        "FILE": {
+          "HINT": "Video to play",
+          "LABEL": "File"
+        },
+        "TABS": {
+          "BASICS": "Basics",
+          "CHROMAKEY": "Chroma Key"
+        }
+      },
+      "ZOOM": {
+        "AMOUNT": {
+          "HINT": "Amount by which to multiply overlay UVs.  1 = normal size, <1 = closer, >1 = further away.",
+          "LABEL": "Zoom Amount"
+        },
+        "CLAMPBOUNDS": {
+          "HINT": "Clamp the edges of the overlay texture to the edge of the screen when zooming out.",
+          "LABEL": "Clamp Bounds"
+        }
+      },
+      "ZOOMBLUR": {
+        "INNERRADIUS": {
+          "HINT": "Radius of a circle in the center of the screen that is not blurred.",
+          "LABEL": "Inner Radius"
+        },
+        "MAXSTRENGTH": {
+          "HINT": "Maximum strength of the effect.",
+          "LABEL": "Maximum Strength"
+        }
+      }
+    },
+    "DIALOGS": {
+      "REVERSIBLE": "This step is reversible",
+      "IMPORTCONFIRM": {
+        "TITLE": "Import Sequence",
+        "MESSAGE": "Importing a sequence will overwrite the existing one, are you sure you want to do this?"
+      },
+      "BUTTONS": {
+        "CANCEL": "Cancel",
+        "OK": "Ok",
+        "CLEARSEARCH": "Clear search",
+        "TRANSITION": "Transition"
+      },
+      "CLEARSTEPS": {
+        "TITLE": "Clear Transition Sequence",
+        "MESSAGE": "Are you sure you wish to remove all transition steps?"
+      },
+      "ADDSTEP": {
+        "TITLE": "Add Transition Step",
+        "SEARCH": {
+          "PLACEHOLDER": "Search"
+        },
+        "TABS": {
+          "WIPES": "Wipes",
+          "WARPS": "Warps",
+          "EFFECTS": "Effects",
+          "TECHNICAL": "Technical"
+        }
+      },
+      "EDITSTEP": {
+        "TITLE": "Edit {name}"
+      },
+      "SEQUENCE": {
+        "ADD": "Add Sequence",
+        "EDIT": "Edit Sequence",
+        "NAME": "Sequence {index}"
+      },
+      "REMOVECONFIRM": {
+        "CONTENT": "Are you sure you wish to remove {name}?",
+        "TITLE": "Remove {name}"
+      },
+      "SCENESELECTOR": {
+        "DESCRIPTION": "Please select a scene below:",
+        "TITLE": "Scene Selector"
+      },
+      "SAVEMACRO": {
+        "TITLE": "Save as Macro",
+        "SCENE": {
+          "HINT": "The scene to which to transition.  If none is specified, the generated macro will prompt to select the scene."
+        }
+      }
+    },
+    "COMMON": {
+      "TRANSITION": "Transition"
+    },
+	"DOCUMENTPICKER": {
+      "PLACEHOLDER": "Please select a(n) {type}",
+      "TOOLTIP": "Select a(n) {type}"
+    },
+    "WARNINGS": {
+      "TRANSITIONCANCELED": "Transition canceled.",
+      "PREPARETIMEOUT": "One or more clients timed out waiting for a response.",
+      "INVALIDFORM": "Invalid form data.",
+      "REMOVEOVERLAYDEPRECATION": "The 'removeOverlay' function is deprecated, and will be removed in a future update.  Please use 'hideOverlay' instead.",
+      "RESTOREOVERLAYDEPRECATION": "The 'restoreOverlay' function is deprecated, and will be removed in a future update.  Please use 'showOverlay' instead."
+    },
+    "INFO": {
+      "SCENESMIGRATED": "Battle Transitions: Updated {count} scene(s) to most recent configuration format."
+    },
+    "DIRECTIONS": {
+      "BOTTOM": "Bottom",
+      "BOTTOMLEFT": "Bottom Left",
+      "BOTTOMRIGHT": "Bottom Right",
+      "CLOCKWISE": "Clockwise",
+      "COUNTERCLOCKWISE": "Counterclockwise",
+      "HORIZONTAL": "Horizontal",
+      "INSIDE": "Inside",
+      "LEFT": "Left",
+      "OUTSIDE": "Outside",
+      "RIGHT": "Right",
+      "TOP": "Top",
+      "TOPLEFT": "Top Left",
+      "TOPRIGHT": "Top Right",
+      "VERTICAL": "Vertical"
+    },
+    "EASINGS": {
+      "BACKIN": "back.in",
+      "BACKINOUT": "back.inOut",
+      "BACKOUT": "back.out",
+      "BOUNCEIN": "bounce.in",
+      "BOUNCEINOUT": "bounce.inOut",
+      "BOUNCEOUT": "bounce.out",
+      "CIRCIN": "circ.in",
+      "CIRCINOUT": "circ.inOut",
+      "CIRCOUT": "circ.out",
+      "ELASTICIN": "elastic.in",
+      "ELASTICINOUT": "elastic.inOut",
+      "ELASTICOUT": "elastic.out",
+      "EXPOIN": "expo.in",
+      "EXPOINOUT": "expo.inOut",
+      "EXPOOUT": "expo.out",
+      "NONE": "none",
+      "POWER1IN": "power1.in",
+      "POWER1INOUT": "power1.inOut",
+      "POWER1OUT": "power1.out",
+      "POWER2IN": "power2.in",
+      "POWER2INOUT": "power2.inOut",
+      "POWER2OUT": "power2.out",
+      "POWER3IN": "power3.in",
+      "POWER3INOUT": "power3.inOut",
+      "POWER3OUT": "power3.out",
+      "POWER4IN": "power4.in",
+      "POWER4INOUT": "power4.inOut",
+      "POWER4OUT": "power4.out",
+      "SINEIN": "sine.in",
+      "SINEINOUT": "sine.inOut",
+      "SINEOUT": "sine.out",
+      "STEPS": "steps",
+      "ROUGH": "rough",
+      "SLOW": "slow",
+      "EXPOSCALE": "expoScale"
+    },
+    "FORMATTERS": {
+      "MILLISECONDS": "{value}ms",
+      "PERCENT": "{value}%",
+      "PIXELS": "{value}px"
+    },
+    "NAVIGATION": {
+      "CUSTOM": "Transition Builder",
+      "TRIGGER": "Transition",
+      "BYPASS": "Bypass Transition"
+    },
+    "ERRORS": {
+      "CANNOTAUTOPLAYAUDIO": "Cannot play audio programmatically, please interact with the browser window first.",
+      "CANNOTINITIALIZECANVAS": "Unable to initialize canvas",
+      "CANVASNOTFOUND": "Canvas not found",
+      "EXECUTECALLEDPARALLEL": "Do not call execute function when creating parallel transition chains.",
+      "EXECUTECALLEDREPEAT": "Do not call execute function when creating repeated transition sequences",
+      "FILENOTFOUND": "File not found: {file}",
+      "INVALIDDIRECTION": "Invalid direction provided: {direction}",
+	  "INVALIDDOCUMENTTYPE": "Invalid document type: {type}",
+      "INVALIDDURATION": "Invalid duration provided: {duration}",
+      "INVALIDEASING": "Invalid easing: {easing}",
+      "INVALIDELEMENT": "Unable to locate HTML element",
+      "INVALIDIMPORT": "Invalid import data.",
+      "INVALIDMARO": "Invalid macro: {macro}",
+      "INVALIDOBJECT": "Invalid object specified: {object}",
+      "INVALIDROLLTABLE": "Invalid RollTable provided: {table}",
+      "INVALIDSCENE": "Invalid scene: {name}",
+      "INVALIDSOUND": "Invalid sound: {sound}",
+      "INVALIDTARGET": "Invalid target: {item}",
+      "INVALIDTEXTURE": "Invalid texture provided.",
+      "INVALIDTIPLOCATION": "Invalid loading tip location: {location}",
+      "INVALIDTRANSITION": "Invalid transition: {name}",
+      "INVALIDVERSION": "Invalid data version: {version}",
+      "MIGRATORNOTFOUND": "Could not find function to migrate {type} from version {currentVersion} to {newVersion}.",
+      "MODULENOTACTIVE": "The module {name} is not installed and active.",
+      "NEWERVERSION": "Data appears to be from a newer version: {version}",
+      "NOAPPLICATION": "No PIXI Application",
+      "NOBACKGROUNDPROVIDED": "No background image or color provided.",
+	  "NOCONFIGAPP": "No configuration application configured.",
+      "NOCOVERELEMENT": "Unable to locate transition cover facade",
+      "NOFILE": "No file loaded.",
+      "NOIMAGEPROVIDED": "No image provided.",
+      "NOPREVIOUSSTEP": "No previous step to repeat.",
+      "NOTIMPLEMENTED": "Not implemented.",
+      "NOTINITIALIZED": "Not initialized",
+      "NOVIDEOPROVIDED": "No video provided.",
+      "PERMISSIONDENIED": "Permision denied.",
+      "PREPARETIMEDOUT": "Timed out waiting for users to signal they're ready to transition.",
+      "SEQUENCETIMEDOUT": "Transition sequence timed out.",
+      "STEPNOTREVERSIBLE": "Transition step not reversible: {type}",
+      "TRANSITIONTOSELF": "Attempting to transition to the current scene.",
+      "UNABLETOMIGRATE": "Unable to migrate data from {old} to {current}"
+    },
+      "TRANSITIONBUILDER": {
+        "TITLE": "Transition Builder",
+        "USERS": {
+          "HINT": "Only show the transition for select users.  If none are selected, it will be executed for everyone."
+        }
+      },
+    "ANGULARWIPE": {
+      "DESCRIPTION": "A wipe that clears angled sections of the screen progressively closer to the center.",
+      "NAME": "Angular Wipe",
+      "LABEL": "Wipe to {background} over {duration}ms"
+    },
+    "BARWIPE": {
+      "DESCRIPTION": "A wipe that consists of a series of bars from alternating sides of the screen.",
+      "NAME": "Bar Wipe",
+      "LABEL": "{bars}-bar {direction} wipe to {background} over {duration}ms"
+    },
+    "BILINEARWIPE": {
+      "DESCRIPTION": "Two linear wipes along a horizontal, vertical, or diagonal axis originating from either the center or outer edges of the screen.",
+      "NAME": "Bilinear Wipe",
+      "LABEL": "Wipe from {radial} / {direction} to {background} over {duration}ms"
+    },
+    "BOSSSPLASH": {
+      "DESCRIPTION": "Trigger an animation from the Boss Splash Screen module.",
+      "NAME": "Boss Splash Screen",
+      "LABEL": "Splash {message} for {duration}ms"
+    },
+    "CHROMAKEY": {
+      "DESCRIPTION": "Replace one color found in the current transition image with another.  Useful for adding transparency to green screen videos.",
+      "NAME": "Chroma Key"
+    },
+    "CLEAREFFECTS": {
+      "DESCRIPTION": "Remove any transition effects that have been applied to the overlay.",
+      "NAME": "Clear Effects",
+      "LABEL": "Clear all transition effects"
+    },
+    "CLOCKWIPE": {
+      "DESCRIPTION": "Wipe the screen around the center point in either a clockwise or counterclockwise direction.",
+      "NAME": "Clock Wipe",
+      "LABEL": "Wipe {clockDirection} from {direction} to {background} over {duration}ms"
+    },
+    "DIAMONDWIPE": {
+      "DESCRIPTION": "Break the screen into diamond shapes that shrink over time, starting from the left to the right.",
+      "NAME": "Diamond Wipe",
+      "LABEL": "Wipe to {background} over {duration}ms"
+    },
+    "FADE": {
+      "DESCRIPTION": "Fade from the current foreground to a specified background color.",
+      "NAME": "Fade",
+      "LABEL": "Fade to {background} over {duration}ms"
+    },
+    "FIREDISSOLVE": {
+      "DESCRIPTION": "Apply a burning effect to the screen, exposing the underlying background.",
+      "NAME": "Fire Dissolve (Burn)",
+      "LABEL": "Screen burn effect over {duration}ms"
+    },
+    "FLASH": {
+      "DESCRIPTION": "Flashes the screen a given color or texture.",
+      "NAME": "Flash",
+      "LABEL": "Flash the screen {background} for {duration}ms"
+    },
+    "HIDEOVERLAY": {
+      "DESCRIPTION": "Sets the transition overlay to invisible, exposing the new scene underneath.",
+      "NAME": "Hide Overlay",
+      "LABEL": "Hide the transition overlay"
+    },
+    "HUESHIFT": {
+      "DESCRIPTION": "Shift the screen's hue.",
+      "NAME": "Hue Shift",
+      "LABEL": "Shift hue of {target} by {maxShift} over {duration}ms"
+    },
+    "INVERT": {
+      "DESCRIPTION": "Invert the current screen texture/color.",
+      "NAME": "Invert",
+      "LABEL": "Invert colors on {target}"
+    },
+    "LINEARWIPE": {
+      "DESCRIPTION": "A linear wipe from one side of the screen to the other, exposing a given background color along the way.",
+      "NAME": "Linear Wipe",
+      "LABEL": "Linear wipe from the {direction} to {background} over {duration}ms"
+    },
+    "LOADINGTIP": {
+      "DESCRIPTION": "Show text-based loading screen tips.",
+      "NAME": "Loading Tip",
+      "LABEL": "Show loading tip at {location}"
+    },
+    "MACRO": {
+      "DESCRIPTION": "Execute a macro.  This will execute for each user with their own permissions, so please be sure they have permission at all.",
+      "NAME": "Macro",
+      "LABEL": "Execute macro: {macro}"
+    },
+    "MELT": {
+      "DESCRIPTION": "Melt the screen like you may have seen in a certain demon-killing FPS.",
+      "NAME": "Melt",
+      "LABEL": "Melt the screen to {background} over {duration}ms"
+    },
+    "PARALLEL": {
+      "DESCRIPTION": "Run multiple sequences of transition effects simultaneously.",
+      "NAME": "Parallel",
+      "LABEL": "Execute {count} sequences in parallel."
+    },
+    "PIXELATE": {
+      "DESCRIPTION": "Increase the displayed size of pixels in the overlay texture.",
+      "NAME": "Pixelate",
+      "LABEL": "Pixelate {target} over {duration}ms"
+    },
+    "RADIALWIPE": {
+      "DESCRIPTION": "Circular wipe, starting either from the inside or outside of the screen.",
+      "NAME": "Radial Wipe (Shutter)",
+      "LABEL": "Radial wipe from {radial} of the screen over {duration}ms"
+    },
+    "REPEAT": {
+      "DESCRIPTION": "Repeat either the previous step or a specified sequence of steps.",
+      "NAME": "Repeat",
+      "LABELPREV": "Repeat previous step {iterations} times.",
+      "LABELSEQUENCE": "Repeat sequence of steps {iterations} times."
+    },
+    "REVERSE": {
+      "DESCRIPTION": "Play the previous step in reverse, if available.",
+      "NAME": "Reverse",
+      "LABEL": "Reverse the previous step after {delay}ms"
+    },
+    "SCENECHANGE": {
+      "DESCRIPTION": "Change the active scene.",
+      "NAME": "Change Scene"
+    },
+    "SHOWOVERLAY": {
+      "DESCRIPTION": "Set the transition overlay to visible again.",
+      "NAME": "Show Overlay",
+      "LABEL": "Show the transition overlay"
+    },
+    "SOUND": {
+      "DESCRIPTION": "Play a sound during the transition.  Unlike most transition steps, this one will NOT wait until the sound is finished to continue to the next.",
+      "NAME": "Play Sound",
+      "LABEL": "Play sound: {file}"
+    },
+    "SPIRALSHUTTER": {
+      "DESCRIPTION": "A shutter-type wipe in a spiral shape.",
+      "NAME": "Spiral Shutter",
+      "LABEL": "Spiral shutter wipe from {radial} to {background} over {duration}ms"
+    },
+    "SPIRALWIPE": {
+      "DESCRIPTION": "A spiral-shaped screen wipe, starting from the outside or inside of the screen.",
+      "NAME": "Spiral Wipe",
+      "LABEL": "Spiral wipe to {background} over {duration}ms"
+    },
+    "SPOTLIGHTWIPE": {
+      "DESCRIPTION": "Bilinear wipe centered on a point along the edge of, and starting from either the inside or outside of the screen.",
+      "NAME": "Spotlight Wipe",
+      "LABEL": "Spotlight-shaped wipe from {direction} to {background} over {duration}ms"
+    },
+    "STARTPLAYLIST": {
+      "DESCRIPTION": "Start playing the new scene's configured ambient sound / playlist.",
+      "NAME": "Start Ambient Playlist"
+    },
+    "TEXTURESWAP": {
+      "DESCRIPTION": "Set the current transition background to a given image.",
+      "NAME": "Texture Swap",
+      "LABEL": "Change the texture of {target} to {background}"
+    },
+    "TWIST": {
+      "DESCRIPTION": "Twist the screen image.",
+      "NAME": "Twist",
+      "LABEL": "Twist the screen {angle}° over {duration}ms"
+    },
+    "VIDEO": {
+      "DESCRIPTION": "Play a video.",
+      "NAME": "Video",
+      "LABEL": "Play video: {file}"
+    },
+    "WAIT": {
+      "DESCRIPTION": "Wait some specified amount of time.",
+      "NAME": "Wait",
+      "LABEL": "Wait {duration}ms"
+    },
+    "WAVEWIPE": {
+      "DESCRIPTION": "A wavy bilinear wipe.",
+      "NAME": "Wave Wipe",
+      "LABEL": "Wave wipe from {direction} to {background} over {duration}ms"
+    },
+    "ZOOM": {
+      "DESCRIPTION": "Zoom in on some point on the screen.",
+      "NAME": "Zoom",
+      "LABEL": "Zoom {target} {amount}% over {duration}ms"
+    },
+    "ZOOMBLUR": {
+      "DESCRIPTION": "Simultaneously zoom in on and blur the screen.",
+      "NAME": "Zoom & Blur",
+      "LABEL": "Zoom and blur {target} over {duration}ms"
+    }
+  },
+  "SCENE": {
+    "TABS": {
+      "SHEET": {
+        "transition": "Transition"
+      }
+    }
+  }
+}

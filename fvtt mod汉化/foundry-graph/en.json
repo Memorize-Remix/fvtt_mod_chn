@@ -1,0 +1,125 @@
+{
+    "foundry-graph": {
+        "tooltip": {
+            "edit": "Edit Graph metadata",
+            "delete": "Delete Graph",
+            "openGraph": "Open and manage Graph Diagram",
+            "backgroundImage": "Set background image for the graph",
+            "selectGraphType": "Select the type of graph to create",
+            "manageRelations": "Manage Relations",
+			"manageRelationsDisabled": "Relations are fixed for this graph type",
+			"reassignEntities": "Reassign entities of an imported graph",
+            "permissions": "Manage Graph permissions"
+        },
+		"themes":{
+            "none": "No Theme"
+        },
+        "Tabs": {
+            "creationGraph": "Create Graph",
+            "listGraph": "Graph List"
+        },
+        "Manager": {
+            "ControlTitle": "Graphs Management",
+            "ControlManage": "Graphs Management"
+        },
+        "Window": {
+            "DashboardTitle": "Graphs",
+            "GraphTitle": "Graph",
+            "PermTitle": "Graph Permissions",
+            "RelationsTitle": "Manage Graph's Relations: ",
+            "ViewOnlyMode": "View-only mode"
+        },
+        "Settings": {
+            "DebugName": "Enable debug logs",
+            "DebugHint": "Writes verbose logs to the console for troubleshooting."
+        },
+        "List": {
+            "SavedGraphs": "Saved Graphs",
+			"Type": "Type",
+            "Name": "Name",
+            "Description": "Description",
+            "Actions": "Actions"
+        },
+        "Buttons": {
+            "ExportSvg": "Export Graph",
+            "LinkNodes": "Link Nodes",
+            "DeleteClean": "Delete & Cleanup",
+            "Save": "Save",
+            "Cancel": "Cancel",
+            "CancelLinking": "Cancel Linking",
+            "CreateGraph": "Create Graph"
+        },
+        "Labels": {
+            "RelationType": "Relation Type",
+            "graphId": "Graph ID",
+            "graphName": "Graph Name",
+            "graphDesc": "Graph Description",
+			"importGraph": "Import Graph",
+            "SelectGraphType": "Select Graph Type"
+        },
+        "Confirm": {
+            "DeleteNode": "Delete node \"{name}\"?",
+            "DeleteLink": "Delete link from \"{source}\" to \"{target}\"?"
+        },
+        "Errors": {
+            "SaveError": "Error while saving the graph.",
+            "ExportFailed": "Export failed. See console for details.",
+            "NoGraphSelectedForExport": "No graph selected for export.",
+            "ImportParseFailed": "Could not read the file. Make sure it is a valid JSON graph export.",
+            "ImportInvalidFile": "This file does not appear to be a valid Foundry Graph export.",
+            "ImportSaveFailed": "The graph was parsed but could not be saved. Check the console for details."
+        },
+        "Defaults": {
+            "UntitledGraph": "New Graph",
+            "GraphDescription": "Description of the graph."
+        },
+        "Notifications": {
+            "LinkingOn": "Linking mode ON",
+            "LinkingOff": "Linking mode OFF",
+            "ExportPrepare": "Preparing high-resolution export… this may take a few seconds for large graphs.",
+            "ExportFinished": "Export finished.",
+            "InvalidGraphType": "Invalid graph type selected.",
+            "GraphSaved": "Graph saved.",
+            "GraphCleanupDone": "Cleaned up graph references.",
+            "ImportSuccess": "Graph \"{name}\" imported successfully.",
+            "ImportIdCollision": "A graph with ID \"{oldId}\" already exists. Imported with new ID: {newId}."
+        },
+		"GraphPage": {
+            "Configure": "Foundry Graph",
+            "Title": "Graph Page",
+            "Hint": "Set Foundry Graph flags for this Journal Page.",
+            "IconLabel": "Custom icon",
+            "PickIcon": "Pick an image",
+            "ClearIcon": "Clear",
+            "Preview": "Preview",
+            "Saved": "Page settings saved.",
+            "SaveError": "Could not save page settings.",
+            "start_date": "Start date",
+            "end_date": "End date",
+            "event_color": "Event color",
+            "StartDateRequired": "Start date is required.",
+            "PickDate": "Pick date",
+            "ClearDate": "Clear",
+            "Year": "Year",
+            "Month": "Month",
+            "Day": "Day",
+            "Time": "Time",
+            "Apply": "Apply",
+            "Close": "Close",
+            "StartDate": "Start date",
+            "EndDate": "End date",
+            "InvalidDate": "Invalid date"
+        },
+		"Timeline": {
+            "DefaultLane": "Default Lane",
+            "AddGraphFrame": "Add Graph Frame",
+            "GraphFrame": "Graph Frame"
+        },
+        "DeletionDialog": {
+            "Title": "Deletion Warning",
+            "UsedInGraphs": "is used in these graphs:",
+			"RangeDropHint": "Range item placed — drag the right edge to set the end date.",
+            "WarningRemoveFromDiagrams": "Deleting it will remove it from these diagrams. Proceed?"
+        }
+    }
+}

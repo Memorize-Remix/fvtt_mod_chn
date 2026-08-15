@@ -1,0 +1,46 @@
+{
+    "simple-portrait-organizer" : {
+        
+        "settings" : {
+			"storageSourceName" : "Storage source",
+            "storageSourceHint" : "Option for cloud provider file system support. If options like S3 or Forge are available, they will be shown here.",
+
+            "uploadDirectoryName" : "Upload directory",
+            "uploadDirectoryHint" : "Choose the directory where converted WebP images will be saved.",
+
+            "uploadDirectoryGMName" : "(Optional) GM upload directory",
+            "uploadDirectoryGMHint" : "If not empty all GM uploads will go here.",
+
+            "capturePasteEventsName" : "Enable clipboard (Ctrl + V) support",
+            "capturePasteEventsHint" : "(Requires reload) May potentially cause issues with other modules.",
+
+            "qualityPercentName" : "Image quality",
+            "qualityPercentHint" : "Qualuty of .webp format as a percentage (e.g., 90, 80, 70).",
+
+            "maxSidePixelSizeName" : "(Optional) Maximum image side length (in pixels)",
+            "maxSidePixelSizeHint" : "0 = no resize. If the image is larger, it will be scaled proportionally.",
+
+            "enabledForGmName" : "Enable for GM",
+            "enabledForGmHint" : "Allows the GM to automate image conversion. No restart required.",
+
+            "keepOriginalFilenamesForGMName" : "Keep original filenames for GM",
+            "keepOriginalFilenamesForGMHint" : "Will still change format to .webp",
+
+            "generateRandomFileNameName" : "Generate random name for each uploaded file",
+            "generateRandomFileNameHint" : "Will cause a mess, but ensures the updated image appears immediately. Solves editing problem."
+        },
+
+        "form" : {
+            "chooseFile" : "Choose, paste or drop an image:",
+			"uploadingNow": "Please wait untill uploading is done.",
+            "dropHere" : "Drop an image here, or paste one from the clipboard. (Ctrl + V)",
+            "chooseFileLabel" : "Choose file",
+            "defaultUploader" : "Open default FilePicker"
+        },
+
+        "dialog" : {
+            "selectFilename" : "Confirm a filename"
+        }
+    }
+}
+

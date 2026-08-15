@@ -1,0 +1,47 @@
+{
+	"DF-SCENE-ENHANCE": {
+		"errorLibWrapperMissing": "'DF Scene Enhancements' requires the 'libWrapper' module. Please install and activate 'libWrapper'.",
+		"Thumbnail": {
+			"Label": "Preview Image Override",
+			"Hint": "Thumbnail Path",
+			"Button": "Browse Files"
+		},
+		"Nav": {
+			"NavigateMenuItem": "Navigate",
+			"SettingOnClick": "Navigate when scene is clicked",
+			"SettingOnClickHint": "When a scene is clicked in the sidebar, it is navigated to (Always true for players). UPDATES ON NEXT SCENE CHANGE",
+			"SettingOnClickPC": "Enable Scene Tab for Players",
+			"SettingOnClickPCHint": "(requires refresh) Allow players to use the Scenes Tab to perform navigation.",
+			"SettingOnClickJournal": "Navigate when a Scene reference is clicked in a Journal",
+			"SettingOnClickJournalHint": "If a Journal Entry contains a Scene link, clicking it will allow you to navigate to that Scene.",
+			"SettingOnClickJournalOnlyOne": "Execute Scene Link immediately if only one option is available",
+			"SettingOnClickJournalOnlyOneHint": "If only one option is available, don't display the dialog and just execute the action immediately.",
+			"SettingRealName": "Display Full Names in Nav Bar for GM",
+			"SettingRealNameHint": "Overrides the scene navigation bar to display the Scene's Full name for GM users.",
+			"SettingShowTitle": "Show scene name in nav hint on hover",
+			"SettingShowTitleHint": "Display a hint when you hover over a button in the Nav Bar that displays the name of the scene. If \"Display Full Names\" is on and a Navigation Name is set, will display that instead.",
+			"Tooltip_PC": "Nav Name: ",
+			"ContextOptions": {
+				"SetView": "Set View Position",
+				"ConfigGrid": "Configure Grid",
+				"SetViewConfirmation": "Updated scene's initial view"
+			}
+		},
+		"Dialog": {
+			"JournalTitle": "Scene Navigation: ",
+			"JournalMessage": "How would you like to open this Scene?",
+			"JournalNavigate": "Navigate",
+			"JournalJournal": "Journal",
+			"JournalConfig": "Config"
+		},
+		"Ratio": {
+			"Denominator": "Denominator",
+			"Numerator": "Numerator",
+			"LockRatio": "Lock Ratio",
+			"SizeRatio": "Size Ratio",
+			"ApplyRatio": "Apply custom ratio to width/height",
+			"Scale": "Scale",
+			"ApplyScale": "Multiply width/height by scale"
+		}
+	}
+}

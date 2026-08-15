@@ -1,0 +1,16 @@
+{
+  "token-movement.settings.animationMode.name": "Animation Mode",
+  "token-movement.settings.animationMode.hint": "Control how token movement animation behaves.",
+  "token-movement.settings.animationMode.default": "Default (Foundry built-in)",
+  "token-movement.settings.animationMode.disabled": "Disabled (instant movement)",
+  "token-movement.settings.animationMode.fixed": "Fixed Duration (ms for entire movement)",
+  "token-movement.settings.animationMode.percentage": "Percentage of Default Speed",
+  "token-movement.settings.speedValue.name": "Animation Speed Value",
+  "token-movement.settings.speedValue.hint": "In Fixed mode: total animation duration in milliseconds regardless of distance (lower = faster). In Percentage mode: percent of default speed (100 = normal, 50 = slower, 200 = faster). Ignored in Default/Disabled modes.",
+  "token-movement.settings.distanceScaling.name": "Distance-Based Speed Scaling",
+  "token-movement.settings.distanceScaling.hint": "When enabled, short moves are proportionally faster than the configured speed. Moves at or above the threshold distance use the configured speed. Only applies in Fixed or Percentage mode.",
+  "token-movement.settings.distanceThreshold.name": "Distance Scaling Threshold",
+  "token-movement.settings.distanceThreshold.hint": "Distance in grid spaces at or above which the token moves at the configured speed. Below this distance, speed increases proportionally.",
+  "token-movement.settings.suppressMovementVision.name": "Suppress Movement Vision",
+  "token-movement.settings.suppressMovementVision.hint": "Prevent fog of war from being revealed during token movement animation. FOW is only updated at the final position after the animation ends."
+}

@@ -1,0 +1,67 @@
+
+  "EFFECTMACRO": {
+    "AddAnother": "添加",
+
+    "CombatTriggers": "战斗",
+    "CombatantTriggers": "战斗者",
+    "EffectTriggers": "效果",
+	"SystemTriggers": "系统",
+    "never": "当被外部方法调用时",
+
+    "onCombatantDefeated": "当战斗者被标记为'已战败'时",
+    "onTurnEnd": "当战斗者结束其回合时",
+    "onTurnStart": "当战斗者开始其回合时",
+
+    "onCombatEnd": "当战斗结束时",
+    "onCombatStart": "当战斗开始时",
+    "onEachTurn": "当战斗进入下一回合时",
+    "onRoundEnd": "当战斗中一轮结束时",
+    "onRoundStart": "当战斗中一轮开始时",
+
+    "onCreate": "当效果被创建时",
+    "onDelete": "当效果被删除时",
+    "onDisable": "当效果被禁用时",
+    "onEnable": "当效果被启用时",
+    "onToggle": "当效果被禁用或启用时",
+
+    "dnd5e": {
+        "ChangeTriggers": "变化",
+        "RestTriggers": "休息",
+        "RollTriggers": "掷骰",
+
+        "beginConcentrating": "开始专注时",
+        "damageActor": "角色受到伤害时",
+        "endConcentration": "专注结束时",
+        "healActor": "角色被治疗时",
+        "longRest": "完成长休时",
+        "rollAbilityCheck": "进行属性检定时",
+        "rollAbilitySave": "进行豁免检定时",
+        "rollAbilityTest": "进行属性检定时",
+        "rollAttack": "进行攻击检定时",
+        "rollConcentration": "进行专注检定时",
+        "rollDamage": "进行伤害掷骰时",
+        "rollDeathSave": "进行死亡豁免检定时",
+        "rollHitDie": "掷生命骰时",
+        "rollInitiative": "进行先攻检定时",
+        "rollSavingThrow": "进行豁免检定时",
+        "rollSkill": "进行技能检定时",
+        "rollToolCheck": "进行工具检定时",
+        "shortRest": "完成短休时"
+    },
+
+    "DeletePrompt": "删除此宏？",
+    "MacroSheet": "效果宏：{name}",
+
+    "ModuleTitle": "效果宏",
+    "NoScriptProvided": "你未提供函数。",
+    "NoSuchScript": "效果中未嵌入此类脚本。",
+
+    "SettingRestrictPermission": "限制权限",
+    "SettingRestrictPermissionHint": "如果启用，非GM客户端将无法在主动效果中添加、编辑或删除宏。",
+
+    "effectSheet": {
+      "used": "这些是由'Effect Macro'模组配置为自动执行的宏。",
+      "unused": "选择触发器并配置新的宏，以便由'Effect Macro'模组自动执行。"
+    }
+  }
+}

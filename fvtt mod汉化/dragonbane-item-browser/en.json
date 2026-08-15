@@ -1,0 +1,100 @@
+{
+  "TYPES": {
+    "Actor": {
+      "dragonbane-item-browser.merchant": "Merchant"
+    }
+  },
+  "DB-IB": {
+    "Any": "Any",
+    "addItem": "<strong>{actor}</strong> adds to character sheet <strong>{type}</strong> <strong>{item}</strong>",
+    "rollForPrice": "Roll {formula} to define the cost of {item} in {currency}",
+    "notEnoughMoney": "<strong>{actor}</strong> does not have enough coins to buy <strong>{item}</strong>.",
+    "spendMoney": "<strong>{actor}</strong> spends <strong>{itemPrice}</strong> to buy <strong>{item}</strong>",
+    "gainMoney": "<strong>{actor}</strong> gets <strong>{itemPrice}</strong> from selling <strong>{item}</strong>",
+    "manualMonyRemoval": "Define with GM the price of <strong>{item}</strong>. Define as <strong>{itemPrice}</strong> and reduce price manually.",
+    "settings": {
+      "rollForBarter": "Barter roll when purchasing or selling an item",
+      "hintRollForBarter": "When you purchase or sell an item from the item browser dialog, a window will pop up asking the player if they want to roll for BARTER to adjust the price according to the rules defined in the Rulebook.",
+      "nonCoreSkill": "Insert non-core skill name for BARTER",
+      "hintSkillBarter": "The skill name entered here will be searched on the character sheet to use for the Barter roll.",
+      "selling": "Add piggy bank icon to items with cost allowing them to be sold.",
+      "hintSelling": "Allow selling items by default at 50% of cost. If Bartering option is on, it allows to roll for selling as well.",
+      "stash": "Add check box for stashing items.",
+      "hintStash": "Stashed items will not be added to encumbrance limit but will still be displayed in inventory.",
+      "hintSkippedFoldersForBrowser": "Define folders with items to not appear in Item Browser",
+      "skippedFoldersForBrowser": "Define folders to skip"
+    },
+    "Chat": {
+      "buyItem": "Buy Item",
+      "reducePrice": "You reduce the price of {item} by 20%!",
+      "cannotBuy": "You offend your opponent, which ends up with no possibility to buy {item}",
+      "cannotSell": "You offend your opponent, which ends up with no possibility to sell {item}",
+      "reducePriceDragon": "You reduce the price of {item} by 50%!",
+      "nochangeInPrice": "You can buy {item} at the regular price.",
+      "sellItem": "<b>{actor}</b> sells <b>{item}</b> for <b>{cost} {currency}</b>.",
+      "increasPrice": "You sell {item} for 20% more.",
+      "increasePriceDragon": "You sell {item} for 50% more!",
+      "nochangeInPriceSell": "You can sell {item} at the regular price.",
+      "sellItemButton": "Sell Item",
+      "actorSells": "{actor} sells items {items} for",
+      "and": "and"
+    },
+    "itemName": "Item name",
+    "wannaBarter": "Do you want to barter?",
+    "pickIfYouWantToRollForBartering": "Pick if you want to roll for bartering or not.",
+    "rollForBarter": "Roll for bartering",
+    "BuyWithoutRoll": "Buy without roll",
+    "openItemBrowser": "Open Item Browser",
+    "sellItem": "Sell Item",
+    "addItemToCharacter": "Add item to character without spending coins.",
+    "buyItem": "Buy item. It will add the item to character and spend coins.",
+    "stashItem": "Keep item in character sheet, but weight will not be included in encumbrance limit.",
+    "stash": "Stash",
+    "SellWithoutBarter": "Sell without bartering",
+    "merchant": {
+      "setting": "Settings",
+      "selling": "Stuff for sale",
+      "buing": "Merchant buys from you",
+      "setSellingRate": "Set merchant selling rate as percentage of original price",
+      "setBuingRate": "Set merchant buying rate as percentage of original price",
+      "allowedSupply": "Until what kind of supply of item merchant accepts",
+      "sells": "is selling",
+      "notAcceptSuply": "This merchant does not accept this type of supply.",
+      "nonGMaddItemsToSell": "You are not a GM, you cannot add items which merchant sells.",
+      "youCannotSellTheSameItemTwice": "You cannot sell an item more than once!"
+    },
+    "warrning": {
+      "incoretInput": "Please input a number or number with % symbol",
+      "youAreNotOwnerOfDeletedItem": "You tried to delete items for sale that are not yours!",
+      "merchantDoNotHaveMoreItem": "Merchant does not have more of {itemName}",
+      "youDoNotSellAnything": "Your character does not sell anything!"
+    },
+    "itemPrice": "Item price",
+    "dialog": {
+      "denfieQuantity": "Define selling quantity.",
+      "selectSellingQuantity": "Select how many of {item} you want to sell",
+      "selectActor": "Select actor who is buying",
+      "buy": "Buy for selected actor",
+      "sell": "Pass item to merchant",
+      "openMerchantSheet": "Open merchant character sheet",
+      "youAttempToOpenMerchantSheet": "Do you want to open merchant character sheet?",
+      "selectSkill": "Select Skill for Bartering",
+      "useSelectedSkill": "Use selected Skill"
+    },
+    "title": "Item Browser",
+    "Sort": "Sort by:",
+    "SortByName": "By item Name",
+    "SortByType": "By item Type",
+    "SortByCost": "By item Cost",
+    "increaseQuantity": "Increase item quantity",
+    "decreseQuantity": "Decrese item quantity",
+    "buy": "Buy",
+    "onlyGMCanMove": "Only GMs can move this Merchant."
+  },
+  "DB_IB": {
+    "selectQuantity": "Select quantity",
+    "ChangeQuantity": "Change quantity",
+    "InfinityQuantity": "Infinite quantity",
+    "DoNotAddToBuyer": "Do not add to buyer"
+  }
+}

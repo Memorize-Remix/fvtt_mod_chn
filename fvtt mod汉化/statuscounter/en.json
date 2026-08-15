@@ -1,0 +1,67 @@
+{
+    "statuscounter": {
+        "rebindNumberKeys": {
+            "name": "Rebind number keys",
+            "hint": "Overrides the default number key assignment when hovering a status marker to set the amount of stacks."
+        },
+        "rebindMouseButtons": {
+            "name": "Rebind mouse buttons",
+            "hint": "Overrides the default mouse button behavior to increase the stack count with left click and decrease it with right click. The status overlay can be set with Shift + Left click. A specific stack amount can be set with Alt + Left click."
+        },
+        "multiSelect": {
+            "name": "Modify all selected tokens",
+            "hint": "Adjusts effects and counters for all selected tokens."
+        },
+        "displayOne": {
+            "name": "Display '1'",
+            "hint": "Configures when/if the counter should be displayed for a single stack.",
+            "always": "Always",
+            "countdown": "When counting down",
+            "never": "Never"
+        },
+        "counterFontSize": {
+            "name": "Counter font size",
+            "hint": "The font size of the status counter."
+        },
+        "counterColor": {
+            "name": "Counter color",
+            "hint": "The color of the status counter in RRGGBB format."
+        },
+        "countdownColor": {
+            "name": "Countdown color",
+            "hint": "The color of combat countdowns in RRGGBB format."
+        },
+        "counterDefaults": {
+            "name": "Reset defaults",
+            "hint": "Opens a dialog to reset default configurations for one or more status effects.",
+            "reset": "Reset selected effects",
+            "none": "There are no defaults configured."
+        },
+        "config": {
+            "title": "Counter configuration",
+            "value": "Amount",
+            "type": {
+                "name": "Type",
+                "default": "Simple"
+            },
+            "durationType": {
+                "name": "Duration",
+                "hint": "Determines how the remaining duration of the effect is displayed.",
+                "none": "None",
+                "round": "Rounds",
+                "turn": "Turns"
+            },
+            "localEffect": "Local effect {name} cannot be configured.",
+            "modifyDuration": {
+                "name": "Modify duration",
+                "hint": "Mouse and keyboard inputs for the token change the duration (instead of the amount)."
+            },
+            "multiplyEffect": {
+                "name": "Amplify effect",
+                "hint": "Multiplies the modifications of the effect with the amount of the counter. This only applies to additive and multiplicative modifiers."
+            },
+            "save": "Save",
+            "saveDefault": "Save as default for {status}"
+        }
+    }
+}

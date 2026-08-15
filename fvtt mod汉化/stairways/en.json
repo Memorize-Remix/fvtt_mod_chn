@@ -1,0 +1,77 @@
+{
+  "DOCUMENT": {
+    "Stairway": "Stairway"
+  },
+  "stairways": {
+    "settings": {
+      "prompt-player": {
+        "name": "Require confirmation?",
+        "hint": "Prompt player to confirm stairway use."
+      }
+    },
+    "ui": {
+      "config": {
+        "title": "Stairway Configuration",
+        "tab-main": "Main",
+        "tab-label": "Label",
+        "tab-position": "Position",
+        "status": "Status",
+        "name": "ID",
+        "name-hint": "Stairways are connected when both have the same ID.",
+        "name-warning": "Be sure to only have two stairways with the same ID!",
+        "scene": "Partner Scene",
+        "current-scene": "(Current Scene)",
+        "partner-scene-label": "Use Partner Scene Name",
+        "label": "Label",
+        "font-family": "Font Family",
+        "font-size": "Font Size",
+        "text-color": "Text Color",
+        "icon": "Icon",
+        "icons": {
+          "stairway": "Stairway (Default)",
+          "door-steel": "Steel Door",
+          "door-closed": "Closed Door",
+          "door-exit": "Exit Door",
+          "cave": "Cave",
+          "house": "House",
+          "city": "City",
+          "castle": "Castle"
+        },
+        "disabled": "Disabled (Locked)",
+        "hidden": "Hide from Players",
+        "animate": "Animate Movement",
+        "animate-hint-1": "Animate the stairway usage like a normal movement.",
+        "animate-hint-2": "Only available within the same scene.",
+        "locked": "Position Fixed",
+        "reset": "Reset Defaults",
+        "submit": "Save"
+      },
+      "controls": {
+        "group": "Stairway Controls",
+        "stairway": "Create Stairway",
+        "disabled": "Disable (Lock) Stairway",
+        "hidden": "Hide Stairway",
+        "animate": "Animate Movement",
+        "clear": "Clear Stairways"
+      },
+      "messages": {
+        "disabled": "You can't use this stairway, it looks disabled.",
+        "no-gm": "You have to wait for your GM to use the stairway.",
+        "no-partner": "Stairway leads to nowhere!",
+        "no-token-selected": "Please select at least one token.",
+        "data-update-error": "Failed to save your change.",
+        "internal-error": "Internal error in stairway module."
+      },
+      "status": {
+        "connected": "Connected.",
+        "no-partner-other-scene": "Missing partner in other scene.",
+        "no-partner": "Missing partner in current scene.",
+        "non-monogamous": "Has more than one partner!"
+      },
+      "prompt": {
+        "title": "Use Stairway?",
+        "content": "Do you want to use this stairway/teleporter?"
+      }
+    }
+  }
+}

@@ -1,0 +1,427 @@
+
+  "cooking-pot": {
+    "global": {
+      "close": "关闭"
+    },
+    "title": "烹饪锅",
+    "cutting-board-title": "砧板",
+    "settings": {
+      "name": "允许玩家查看食材列表",
+      "hint": "允许玩家查看可用食材列表。",
+      "reloadNotice": "设置已更改。正在重新加载...",
+      "useDefaultIngredients": {
+        "name": "使用默认食材",
+        "hint": "使用模组的默认食材快速填充你的世界。如果禁用此选项，模组添加的所有默认食材将从数据库中移除。"
+      },
+      "useDefaultCuttingBoards": {
+        "name": "使用默认砧板",
+        "hint": "使用模组的默认砧板快速填充你的世界。如果禁用此选项，模组添加的所有默认砧板将从数据库中移除。"
+      },
+      "useDefaultRecipes": {
+        "name": "使用默认食谱",
+        "hint": "使用模组的默认食谱快速填充你的世界。如果禁用此选项，模组添加的所有默认食谱将从数据库中移除。"
+      }
+    },
+    "recipe": {
+      "title": "食谱管理",
+      "label": "打开食谱管理器",
+      "hint": "管理你的烹饪食谱 - 创建、编辑、查看和删除食谱",
+      "create": "创建食谱",
+      "edit": "编辑食谱",
+      "view": "查看食谱",
+      "delete": "删除食谱",
+      "ingredients": "食材",
+      "items": "物品",
+      "empty": {
+        "title": "暂无食谱",
+        "description": "开始创建你的第一个食谱来构建你的烹饪书！"
+      },
+      "buttons": {
+        "createFirst": "创建第一个食谱",
+        "close": "关闭",
+        "cancel": "取消",
+        "update": "更新",
+        "create": "创建"
+      },
+      "dialogs": {
+        "createTitle": "创建食谱",
+        "editTitle": "编辑食谱",
+        "viewTitle": "查看食谱",
+        "deleteTitle": "删除食谱",
+        "deleteConfirm": "你确定要删除食谱\"{name}\"吗？"
+      },
+      "form": {
+        "name": "名称",
+        "image": "图片URL",
+        "ingredients": "食材",
+        "selectPlaceholder": "选择食材...",
+        "add": "添加",
+        "instructions": "制作说明",
+        "noIngredients": "没有可用食材。请先创建食材。",
+        "validation": {
+          "required": "名称、至少一种食材和图片是必需的",
+          "maxIngredients": "一个食谱最多可以有4种食材"
+        },
+        "result": {
+          "label": "食谱结果",
+          "type": {
+            "ingredient": "食材",
+            "item": "游戏物品",
+            "self": "相同食谱"
+          },
+          "selectIngredientPlaceholder": "选择食材...",
+          "selectItemPlaceholder": "选择游戏物品...",
+          "readonly": {
+            "none": "无",
+            "ingredient": "食材: {name}",
+            "item": "物品: {name}",
+            "self": "相同食谱: {name}"
+          }
+        }
+      },
+      "notify": {
+        "loadFailed": "加载食谱数据失败",
+        "deletedSuccess": "食谱删除成功",
+        "deleteFailed": "删除食谱失败",
+        "deleteError": "删除食谱时出错",
+        "created": "食谱创建成功",
+        "updated": "食谱更新成功",
+        "saveFailed": "保存食谱失败: {error}",
+        "saveError": "保存食谱时出错",
+        "noGmAvailable": "没有GM在线。"
+      },
+      "access": {
+        "manage": "管理访问权限",
+        "dialogTitle": "食谱访问权限",
+        "allowAll": "允许所有用户",
+        "users": "用户",
+        "save": "保存",
+        "saveSuccess": "访问权限已更新",
+        "saveFailed": "保存访问权限失败"
+      }
+    },
+    "ingredients": {
+      "title": "食材管理",
+      "label": "打开食材管理器",
+      "hint": "管理你的食材和分类 - 创建、编辑、删除食材并将其组织到分类中",
+      "create": "创建食材",
+      "edit": "编辑食材",
+      "delete": "删除食材",
+
+      "ingredient-sidebar": {
+        "title": "食材列表"
+      },
+
+      "list": {
+        "title": "食材"
+      },
+
+      "empty": {
+        "title": "暂无食材",
+        "description": "开始创建食材以用于你的食谱！"
+      },
+
+      "buttons": {
+        "createFirst": "创建第一个食材",
+        "close": "关闭",
+        "cancel": "取消",
+        "update": "更新",
+        "create": "创建"
+      },
+
+      "dialogs": {
+        "createTitle": "创建食材",
+        "editTitle": "编辑食材",
+        "viewTitle": "查看食材",
+        "deleteTitle": "删除食材",
+        "deleteConfirm": "你确定要删除食材\"{name}\"吗？"
+      },
+
+      "form": {
+        "name": "名称",
+        "image": "图片URL",
+        "category": "分类",
+        "categoryHint": "按住Ctrl（Mac上为Cmd）可选择多个分类",
+        "description": "描述",
+        "validation": {
+          "required": "名称为必填项"
+        }
+      },
+
+      "notify": {
+        "loadFailed": "加载食材数据失败",
+        "deletedSuccess": "食材删除成功",
+        "deleteFailed": "删除食材失败",
+        "deleteError": "删除食材时出错",
+        "created": "食材创建成功",
+        "updated": "食材更新成功",
+        "saveFailed": "保存食材失败: {error}",
+        "saveError": "保存食材时出错"
+      },
+
+      "categories": {
+        "title": "分类",
+        "create": "创建分类",
+        "edit": "编辑分类",
+        "delete": "删除分类",
+        "items": "物品",
+        "none": "无",
+        "empty": "暂无分类",
+
+        "createTitle": "创建分类",
+        "editTitle": "编辑分类",
+        "deleteTitle": "删除分类",
+        "deleteConfirm": "你确定要删除分类\"{name}\"吗？",
+
+        "form": {
+          "name": "名称",
+          "validation": {
+            "required": "名称为必填项"
+          }
+        },
+
+        "deletedSuccess": "分类删除成功",
+        "deleteFailed": "删除分类失败",
+        "deleteError": "删除分类时出错",
+        "created": "分类创建成功",
+        "updated": "分类更新成功",
+        "saveFailed": "保存分类失败: {error}",
+        "saveError": "保存分类时出错"
+      },
+      "sidebar": {
+        "contextMenu": {
+          "transferToBackpack": "转移到背包"
+        },
+        "transferDialog": {
+          "title": "转移到背包",
+          "selectActor": "选择角色",
+          "quantity": "数量",
+          "add": "添加",
+          "cancel": "取消"
+        },
+        "notify": {
+          "transferDialog": {
+            "title": "转移到背包",
+            "selectActor": "选择角色",
+            "quantity": "数量",
+            "add": "添加",
+            "cancel": "取消"
+          },
+          "transferNotImplemented": "转移功能未实现。",
+          "transferNotImplementedItem": "\"{name}\" - 转移功能未实现。",
+          "noActorsAvailable": "没有可用的角色进行转移。",
+          "backpackModuleMissing": "未找到背包模组。请确保'backpack'模组处于活动状态。",
+          "transferSuccess": "\"{name}\"已成功添加到背包。",
+          "transferFailed": "将物品转移到背包失败。"
+        },
+        "search": {
+          "placeholder": "搜索食材...",
+          "ariaLabel": "搜索食材",
+          "noResults": "没有匹配的食材"
+        }
+      }
+    },
+    "items": "物品",
+    "empty": {
+      "title": "暂无食谱",
+      "description": "开始创建你的第一个食谱来构建你的烹饪书！"
+    },
+    "buttons": {
+      "createFirst": "创建第一个食谱",
+      "close": "关闭",
+      "cancel": "取消",
+      "update": "更新",
+      "create": "创建"
+    },
+    "dialogs": {
+      "createTitle": "创建食谱",
+      "editTitle": "编辑食谱",
+      "viewTitle": "查看食谱",
+      "deleteTitle": "删除食谱",
+      "deleteConfirm": "你确定要删除食谱\"{name}\"吗？"
+    },
+    "form": {
+      "name": "名称",
+      "image": "图片URL",
+      "ingredients": "食材",
+      "selectPlaceholder": "选择食材...",
+      "add": "添加",
+      "instructions": "制作说明",
+      "noIngredients": "没有可用食材。请先创建食材。",
+      "validation": {
+        "required": "名称和制作说明是必需的"
+      }
+    },
+    "notify": {
+      "loadFailed": "加载食谱数据失败",
+      "deletedSuccess": "食谱删除成功",
+      "deleteFailed": "删除食谱失败",
+      "deleteError": "删除食谱时出错",
+      "created": "食谱创建成功",
+      "updated": "食谱更新成功",
+      "saveFailed": "保存食谱失败: {error}",
+      "saveError": "保存食谱时出错"
+    },
+    "validation": {
+      "required": "名称、至少一种食材和图片是必需的"
+    },
+    "cuttingBoard": {
+      "name": "砧板",
+      "title": "砧板管理",
+      "label": "打开砧板管理器",
+      "hint": "管理食材转换 - 创建、编辑、查看和删除砧板",
+      "create": "创建砧板",
+      "edit": "编辑砧板",
+      "view": "查看砧板",
+      "delete": "删除砧板",
+      "inputs": "输入",
+      "results": "结果",
+      "empty": {
+        "title": "暂无砧板",
+        "description": "开始创建砧板来定义食材转换！"
+      },
+      "buttons": {
+        "createFirst": "创建第一个砧板",
+        "cut": "切割"
+      },
+      "menu": {
+        "use": "使用",
+        "boards": "砧板",
+        "items": "物品"
+      },
+      "dialogs": {
+        "createTitle": "创建砧板",
+        "editTitle": "编辑砧板",
+        "viewTitle": "查看砧板",
+        "deleteTitle": "删除砧板",
+        "deleteConfirm": "你确定要删除砧板\"{name}\"吗？"
+      },
+      "form": {
+        "inputs": "输入食材",
+        "results": "结果食材",
+        "addNewResult": "新结果食材",
+        "validation": {
+          "required": "名称、输入和结果是必需的",
+          "maxInputs": "一个砧板最多可以有4种输入食材",
+          "maxResults": "一个砧板最多可以有4种结果食材"
+        }
+      },
+      "itemsPanel": {
+        "selectActor": "选择一个角色:",
+        "emptyNoItems": "背包中没有物品。",
+        "emptyNoActors": "你没有任何角色。",
+        "quantity": "数量"
+      },
+      "notify": {
+        "loadFailed": "加载砧板数据失败",
+        "deletedSuccess": "砧板删除成功",
+        "deleteFailed": "删除砧板失败",
+        "deleteError": "删除砧板时出错",
+        "created": "砧板创建成功",
+        "updated": "砧板更新成功",
+        "saveFailed": "保存砧板失败",
+        "saveError": "保存砧板时出错",
+        "boardNotFound": "未找到砧板。"
+      },
+      "access": {
+        "manage": "管理访问权限",
+        "dialogTitle": "砧板访问权限",
+        "allowAll": "允许所有用户",
+        "users": "用户",
+        "save": "保存",
+        "saveSuccess": "访问权限已更新",
+        "saveFailed": "保存访问权限失败"
+      },
+      "boardDialog": {
+        "name": "名称",
+        "description": "描述",
+        "empty": "空"
+      }
+    },
+    "cookingPot": {
+      "title": "烹饪锅",
+      "sidebar": {
+        "title": "食谱列表",
+        "empty": "没有可用食谱"
+      },
+      "content": {
+        "ingredients": "食材",
+        "noIngredients": "此食谱没有列出食材。",
+        "instructions": "制作说明",
+        "noInstructions": "未提供制作说明。",
+        "selectHint": "在左侧列中选择一个食谱以查看其详细信息。"
+      },
+      "notify": {
+        "loadFailed": "加载烹饪锅数据失败。",
+        "noActor": "没有可访问的角色。请先选择一个角色。",
+        "noMatch": "没有匹配所选食材的食谱。",
+        "backpackApiMissing": "未找到背包模组API。",
+        "cookSuccess": "已烹饪: {name}",
+        "cookFailed": "烹饪食谱失败。"
+      },
+      "itemsPanel": {
+        "emptyNoActors": "你没有任何角色。"
+      },
+      "buttons": {
+        "cook": "烹饪"
+      },
+      "dialogs": {
+        "selectItem": {
+          "title": "为槽位{slot}选择物品",
+          "itemsListAriaLabel": "背包物品列表",
+          "itemsGridAriaLabel": "背包物品",
+          "emptyNoItems": "背包中没有物品。",
+          "cancel": "取消"
+        },
+		"selectQuantity": {
+			"title": "为槽位 {slot} 选择 {item} 的数量",
+			"available": "可用",
+			"quantity": "数量",
+			"cancel": "取消",
+			"confirm": "确认"
+		  },
+        "recipeInfo": {
+          "close": "关闭",
+          "result": "结果"
+        }
+      }
+    },
+    "menu": {
+      "cook": "烹饪",
+      "recipes": "食谱",
+      "items": "物品"
+    },
+    "itemsPanel": {
+      "selectActor": "选择一个角色:",
+      "emptyNoItems": "背包中没有物品。",
+      "emptyNoActors": "你没有任何角色。",
+      "quantity": "数量"
+    },
+    "hotkeys": {
+      "manager": {
+        "title": "快捷键",
+        "label": "打开快捷键管理器",
+        "hint": "为烹饪锅和砧板配置快捷键。"
+      },
+      "tab": { "hotkeys": "快捷键" },
+      "fields": {
+        "name": "名称",
+        "key": "按键",
+        "modifiers": "调整",
+        "action": "操作",
+        "scene": "场景 ID",
+        "tile": "图块 ID",
+        "enabled": "启用"
+      },
+      "add": "添加快捷键",
+      "delete": "删除",
+      "save": "保存",
+      "notify": {
+        "saveSuccess": "快捷键保存成功",
+        "saveFailed": "保存快捷键时出错",
+        "loadFailed": "加载快捷键时出错",
+        "deleteFailed": "删除快捷键时出错"
+      }
+    }
+  }
+}

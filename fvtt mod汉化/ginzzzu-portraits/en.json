@@ -1,0 +1,296 @@
+{
+  "I18N.LANGUAGE": "English",
+  "I18N.MAINTAINERS": "@tposney",
+
+  "GINZZZUPORTRAITS": {
+    "showCharacterPortrait": "Show Character",
+    "hideCharacterPortrait": "Hide Character",
+	"playerShowPortrait": "Show My Character",
+    "playerHidePortrait": "Hide My Character",
+    "tokenHUDShowPortrait": "Show Character",
+    "tokenHUDHidePortrait": "Hide Character",  
+	"configurePortrait": "Configure portrait",
+	"resetPortraitEmotion": "Reset emotion",
+    "changePortraitEmotion": "Change emotion",
+    "toggleCharacterPortrait": "Toggle Character",
+    "showPanelUI": "Show Characters Panel",
+    "hidePanelUI": "Hide Characters Panel",
+    "searchNPC": "Search NPC...",
+    "sorting": "Sort by:",
+    "displaySrc": "Source:",
+    "fromScene": "(current scene)",
+    "sortByName": "name",
+    "sortByFolder": "folder",
+    "folder": "Folder:",
+    "allFolders": "(all folders)",
+	"groupPrefix": "(Group)",
+    "hideAllPortraits": "Hide all portraits",
+    "noNPCFound": "No NPCs matching current filters",
+	"pcFoldersAll": "All players",
+    "pcFoldersNoFolder": "Players without folder",
+
+    "PortraitToolbar": {
+      "Joy": "Joy",
+      "Sad": "Sadness",
+      "Anger": "Anger",
+      "Fear": "Fear",
+      "Love": "Love",
+      "Hurt" : "Hurt",
+      "Tired": "Tired",
+      "portraitSettings": "Portrait Settings"
+    },
+
+    "PortraitConfig": {
+      "title": "Portrait: {name}",
+      "label": "Portrait display name",
+      "note": "This name will be used in player UI and can differ from the actor's real name. Leave the field empty to use the actual name.",
+      "portraitHeightMultiplier": "Portrait Height Multiplier",
+      "portraitHeightMultiplierHint": "Relative height multiplier for this portrait (0 = 0%, 1 = 100%, 2 = 200%, etc.). Default: 1",
+      "portraitCustomImage": "Custom Portrait Image",
+      "portraitCustomImagePlaceholder": "path/to/portrait.webp",
+      "portraitCustomImageButtonHint": "Select Portrait Image",
+      "portraitCustomImageHint": "Optional custom image displayed instead of the actor's default image",
+      "clear": "Reset name",
+      "save": "Save",
+      "customEmotionsLabel": "Custom Emotions",
+      "addEmotion": "Add Custom Emotion",
+      "showStandardEmotions": "Show standard emotions",
+      "emotionEmoji": "Emoji",
+      "emotionEmojiPlaceholder": "😊",
+      "emotionName": "Name",
+      "emotionNamePlaceholder": "Name",
+	  "emotionDisplayName": "Character Display Name",
+      "emotionDisplayNamePlaceholder": "Display name when emotion is active",
+      "emotionImagePath": "Image Path",
+      "emotionImagePathPlaceholder": "path/to/image.webp",
+      "emotionImageButtonHint": "Select Image",
+      "emotionAnimation": "Animation",
+      "emotionColor": "Color correction",
+      "emotionHeightMultiplier": "Height Multiplier",
+      "removeEmotion": "Remove",
+      "moveEmotionUp": "Move up",
+      "moveEmotionDown": "Move down",
+      "collapseEmotion": "Collapse",
+      "expandEmotion": "Expand"
+    },
+
+    "Settings": {
+	  "hidePortraits": {
+        "name": "Do not display portraits",
+        "hint": "If enabled, you will not see any character portraits."
+      },
+      "gmForcePortraitHeight": {
+        "name": "Override player portrait height",
+        "hint": "If enabled, the GM can set a specific height for player portraits."
+      },
+      "playerCharactersPanelEnabled": {
+        "name": "Enable Player Characters Panel",
+        "hint": "If enabled, a panel for player characters will be displayed."
+      },
+      "gmPortraitHeight": {
+        "name": "[world] Portraits: height",
+        "hint": "0 - bottom strip, 1 - full height"
+      },
+      "portraitHeight": {
+        "name": "Portraits: height",
+        "hint": "0 - bottom strip, 1 - full height. Used if GM hasn't forced a value."
+      },
+	  "portraitBottomOffset": {
+       "name": "Bottom Offset (px)",
+       "hint": "How many pixels to lift the portraits above the bottom of the screen. Portrait height is recalculated based on the remaining screen height."
+      },
+	  "portraitNameVertical": {
+        "name": "Portrait: name badge vertical position",
+        "hint": "Vertical position of the name badge on the portrait (0 — top, 100 — bottom)."
+      },
+      "portraitNameFontSize": {
+        "name": "Portrait: name font size",
+        "hint": "Font size of the name badge on portraits (in pixels)."
+      },
+      "portraitNamesAlwaysVisible": {
+        "name": "Portraits: name visibility",
+      "hint": "Controls how character names are shown on portraits: never, on hover, or always.",
+      "option.none": "Do not show names",
+      "option.hover": "Show on hover",
+      "option.always": "Always show"
+      },
+      "visualNovelMode": {
+        "name": "Visual novel mode",
+        "hint": "If enabled, portrait will fit the screen from bottom to top."
+      },
+      "resizeToFit": {
+        "name": "Portraits: resize to fit all portraits",
+        "hint": "If enabled, portraits will be resized to fit within their containers."
+      },
+      "adjustForSidebar": {
+        "name": "Portraits: account for sidebar width",
+        "hint": "If enabled, portrait layout will consider the sidebar width."
+      },
+      "portraitToneEnabled": {
+        "name": "Portraits: adjust brightness/contrast based on scene darkness",
+        "hint": "If enabled, portrait tones will adjust based on scene darkness."
+      },
+      "portraitToneStrength": {
+        "name": "Portraits: adjustment strength (0..1)",
+        "hint": "0 - no changes, 1 - maximum noticeable correction"
+      },
+      "portraitFocusHighlightStrength": {
+      "name": "Portraits: Focus Brightness (0..1)",
+      "hint": "0 — no change, 1 — most noticeable correction"
+      },
+      "portraitShadowDimStrength": {
+      "name": "Portraits: Shadow Depth (0..1)",
+      "hint": "0 — no change, 1 — most noticeable correction"
+      },
+	  "portraitFlipAccess": {
+      "name": "Who can flip portraits",
+      "hint": "Controls who can flip portraits with right-click: only the GM or also players who own the character.",
+      "gm": "GM only",
+      "owners": "GM and Owners"
+    },
+        "emotionPanelVisibility": {
+        "name": "Emotion Panel Visibility",
+        "hint": "Controls who can see the emotion panel when hovering over a portrait.",
+        "none": "No one",
+        "gm": "GM only",
+        "all": "GM and Owners"
+      },
+
+      "resetEmotionOnHide": {
+        "name": "Reset emotion when hiding portrait",
+        "hint": "When enabled, the actor's emotion flag will be cleared when their portrait is hidden."
+      },
+	  "portraitUIToggleVisibility": {
+        "name": "Portrait UI Toggle Button Visibility",
+        "hint": "Controls who can see the portrait UI toggle button.",
+        "all": "Show to everyone",
+        "players": "Show to players only",
+        "gm": "Show to GM only",
+        "none": "Hide from everyone"
+      },
+
+      "playerPortraitToolbarButton": {
+        "name": "Player portrait toolbar button",
+        "hint": "If enabled, players will see an extra toolbar button near the portrait UI to quickly toggle their own portrait."
+      },
+
+      "emotionPanelScale": {
+        "name": "Emotion Panel Scale",
+        "hint": "Adjusts the overall size of the emotion panel (icon scale)."
+      },
+
+      "emotionPanelPosition": {
+        "name": "Emotion Panel Position",
+        "hint": "Choose where the emotion panel appears relative to the portrait.",
+        "top": "Top",
+        "left": "Left",
+        "right": "Right"
+      },
+      "emotionColorIntensity": {
+        "name": "Emotion Color Intensity",
+        "hint": "0 - no color changes from emotions, 1 - full (default)"
+      },
+	  "emotionImageTransitionMs": {
+        "name": "Portrait image transition speed",
+        "hint": "Duration of the image transition animation for emotions (in milliseconds). 0 means no animation."
+      },
+	  "displayNameSeparators": {
+        "name": "Name: public-part separators",
+        "hint": "Characters to cut off NPC names for players. Comma-separated. Example: #,: — then \"Karl#Main boss\" will show players only \"Karl\"."
+      },
+      "actorImagePaths": {
+        "name": "Actor image paths (CSV)",
+        "hint": "List of Actor dot-path fields separated by commas, used in order as image source. Example: img, prototypeToken.texture.src, system.image"
+      },
+      "pcActorTypes": {
+        "name": "Actor Types: Players (CSV)",
+        "hint": "List of Actor types separated by commas to be considered as 'players'. Examples: character, pc, hero, player"
+      },
+      "npcActorTypes": {
+        "name": "Actor Types: NPCs (CSV)",
+        "hint": "List of Actor types separated by commas to be considered as NPCs. Examples: npc, adversary, creature, monster, minion"
+      },
+      "portraitFadeMs": {
+        "name": "Portraits: fade-in duration (ms)",
+        "hint": "Duration in milliseconds for portrait fade-in animation."
+      },
+      "portraitMoveMs": {
+        "name": "Portraits: movement duration (ms)",
+        "hint": "Duration in milliseconds for portrait movement animation."
+      },
+      "portraitEasing": {
+        "name": "Portraits: easing type",
+        "hint": "CSS timing-function: e.g., 'ease', 'ease-out', 'ease-in-out' or cubic-bezier(0.22,1,0.36,1)."
+      },
+	  "portraitBlurEnabled": {
+        "name": "Portraits: enable background blur",
+        "hint": "If enabled, the background will blur when portraits are displayed."
+      },
+      "portraitBlurStrength": {
+        "name": "Portraits: blur strength (px)",
+        "hint": "Strength of the blur effect applied to the background (1-30 pixels)."
+      },
+      "portraitBlurSpeed": {
+        "name": "Portraits: blur animation speed (ms)",
+        "hint": "Duration of the blur fade-in animation in milliseconds."
+      },
+      "portraitFocusBlurEnabled": {
+        "name": "Portraits: enable focus blur",
+        "hint": "If enabled, dimmed portraits will be blurred when a portrait has focus."
+      },
+      "portraitFocusBlurStrength": {
+        "name": "Portraits: focus blur strength (px)",
+        "hint": "Strength of the blur effect applied to dimmed portraits when focus is active (1-30 pixels)."
+      },
+      "portraitFocusPortraitBlurEnabled": {
+        "name": "Portraits: enable blur for unfocused portraits",
+        "hint": "If enabled, portraits that are not in focus will be blurred."
+      },
+      "portraitFocusPortraitBlurStrength": {
+        "name": "Portraits: unfocused blur strength (px)",
+        "hint": "Strength of the blur effect applied to unfocused portraits (1-30 pixels)."
+      },
+      "npcDockFolder": {
+        "name": "NPC Dock: default folder filter",
+        "hint": "Example: 'all'. Can be overridden by the dock during operation."
+      },
+	  "showGroupActorsInSources": {
+        "name": "Show group actors in source list",
+        "hint": "If enabled, actors representing groups/parties will be included in the Source dropdown in the NPC dock."
+      },
+      "npcDockSearch": {
+        "name": "NPC Dock: default search string",
+        "hint": "Example: 'Goblin' or 'Merchant'."
+      },
+      "npcDockSort": {
+        "name": "NPC Dock: default sorting",
+        "hint": "Example: 'name-asc' or 'name-desc'."
+      },
+	  "npcDockWidth": {
+        "name": "NPC Dock: panel width",
+        "hint": "Width of the NPC dock panel in viewport width units (e.g., 40 = 40vw)."
+      },
+	  "npcDockRows": {
+        "name": "NPC Dock: NPC rows",
+        "hint": "How many NPC rows to show in the dock. Increasing this value also increases the panel height."
+      },
+      "performanceMode": {
+        "name": "Performance mode",
+        "hint": "Disables background and panel blur effects on this client to improve performance."
+      },
+      "pcDockFolder": {
+        "name": "Player Dock: folder filter",
+        "hint": "Controls which Actor folder is used for the Player Characters panel in the NPC dock. \"All players\" shows actors from all folders; \"Players without folder\" shows only actors that are not in any folder."
+      },
+      "showActivePortraits": {
+        "name": "Show Active Portraits Dock",
+        "hint": "When enabled, a mini dock with active portrait circles is shown above the NPC dock."
+      }
+    },
+    "PortraitUIToggle": {
+      "togglePortraitUI": "Toggle portraits",
+      "hideUI": "Hide portraits",
+      "showUI": "Show portraits"
+    }
+  }
+}

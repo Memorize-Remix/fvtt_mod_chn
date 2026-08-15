@@ -1,0 +1,26 @@
+
+    "esm": {
+        "dialog": {
+            "title": "设置言语习惯",
+			"explanation": "如果勾选高级模式复选框，系统将使用正则表达式框中的输入，而非默认的言谈举止和位置设置，为你提供更灵活的规则控制。",
+            "mannerismLabel": "言语习惯：",
+            "mannerismPlaceholder": "例如：'嗯...' 或 '你知道'",
+            "positionLabel": "位置：",
+            "positionStart": "开头",
+            "positionMiddle": "中间", 
+            "positionEnd": "结尾",
+            "saveButton": "保存",
+            "clearButton": "清除并禁用",
+            "advancedMode": "高级模式",
+            "regex": "正则表达式",
+            "regexPlaceholder": "e.g., /"
+        },
+        "notifications": {
+            "selectOneToken": "请选择且仅选择一个token。",
+            "mannerismCleared": "{actor} 的言语习惯已清除。",
+            "mannerismSet": "{actor} 的言语习惯已设置为 \"{mannerism}\"（{position}）。",
+            "validationError": "你的消息不符合 {actor} 的言语习惯：\"{mannerism}\"（{position}）。"
+        },
+        "init": "Eventide Speech Mannerisms | 正在初始化"
+    }
+}

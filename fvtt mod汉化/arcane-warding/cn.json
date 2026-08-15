@@ -1,0 +1,78 @@
+
+	"ARCANE_WARDING": {
+		"INITIALIZE_WARD": "<p>奥术守御模组已初始化。</p>",
+		"MISSING_FEATURE": "<p>你没有奥术守御特性。</p>",
+		"EFFECT_NAME": "奥术守御",
+		"EFFECT_LABEL": "奥术守御",
+		"EFFECT_CREATED": "<p>一道魔法能量的微光笼罩着<strong>{actor}</strong>，保护其免受伤害。</p>",
+		"WARD_AT_MAX": "<p><strong>{actor}</strong>的奥术守御已处于最大充能。</p>",
+		"ABSORBED_MESSAGE_BASE":"<p><strong>{actor}的奥术守御</strong>能量涌动，吸收了此次攻击，承受了<strong>{amount}点伤害</strong>。</p>",
+		"ABSORBED_MESSAGE_0HP": "<p><strong>{actor}的奥术守御</strong>已被削弱，无法再保护<strong>{actor}</strong>",
+		"ABSORBED_MESSAGE_REMAINING_DMG": "，且<strong>{actor}</strong>受到<strong>{remaining}点伤害</strong>。</p>",
+		"ABSORBED_MESSAGE_NO_DMG": "，但<strong>{actor}</strong>未受到任何伤害。</p>",
+		"ABSORBED_MESSAGE_SUCCESS": "<p><strong>{actor}的奥术守御</strong>成功保护了他们！</p>",
+		"LONG_REST": "<p><strong>{actor}</strong>进行了长休，<strong>奥术守御</strong>逐渐消散。</p>",
+		"WARD_HEALED": "<p><strong>{actor}</strong>的奥术守御感受到防护法术的涌动而变得更加强大！</p>",
+		"DIALOG" : {
+			"ARCANE_WARD" : {
+				"TITLE": "{actor}：创建奥术守御？",
+				"CONTENT": "<p>你刚刚施放了<strong>{spell}</strong>防护学派法术。</p><p>是否要利用法术的魔法能量为自己施加奥术守御？</p>"
+			},
+			"PROJECTED_WARD" : {
+				"TITLE": "{actor}：用你的奥术守御保护{target}？",
+				"CONTENT": "<p>{attacker}即将用{spell}攻击{target}。是否要延伸你的奥术守御来保护{target}？</p>"
+			}
+		},
+		"PROJECTED_WARD_APPLIED": "<p><strong>{actor}</strong>迅速将奥术守御延伸至<strong>{target}</strong>，为其施加保护屏障！<strong>{target}</strong>受到防护免受此次攻击！</p>",
+		"PROJECTED_WARD_ABSORBED_BASE": "<p><strong>{actor}</strong>的奥术守御能量涌动，吸收了来自<strong>{attacker}</strong>的攻击。",
+		"PROJECTED_WARD_ABSORBED_0HP": "<p><strong>{actor}</strong>的奥术守御已被削弱，无法再保护<strong>{target}</strong>。</p>",
+		"PROJECTED_WARD_ABSORBED_SUCCESS": "<p><strong>{actor}</strong>的奥术守御成功保护了<strong>{target}</strong>！</p>",
+		"LABEL_YES": "是",
+		"LABEL_NO": "否",
+		"WITTY_MESSAGES": {
+			"FIRST_PERSON": {
+				"0": "看来我还能再战一场！",
+				"1": "我还活着！",
+				"2": "我还没倒下！",
+				"3": "我还没完蛋呢！",
+				"4": "我还没结束！",
+				"5": "我还没放弃！",
+				"6": "我不会轻易认输！",
+				"7": "哈！这招对我没用！",
+				"8": "不好意思！请保持30英尺个人空间！太粗鲁了！",
+				"9": "我叫{actor}，你攻击了我的朋友，准备受死吧！",
+				"10": "哈！你这可悲的弱者！",
+				"11": "你到底在瞄准什么？",
+				"12": "也许你该再试一次。",
+				"13": "你根本没认真！",
+				"14": "拜托，你肯定能做得更好吧？",
+				"15": "你真的会用那玩意儿吗？",
+				"16": "你显然不知道自己在做什么！",
+				"17": "哈。哈。哈。不错的尝试！",
+				"18": "你根本不会用这个，对吧？",
+				"19": "你连这是干什么的都不知道，对吧？"
+			},
+			"THIRD_PERSON": {
+				"0": "朝{target}的方向放了个屁！",
+				"1": "对着{target}发出震耳欲聋的笑声"
+			},
+
+			"ACTOR": {
+				"0": "干得漂亮，伙计！👍",
+				"1": "看啊，<strong>{actor}</strong>又一次拯救了世界。",
+				"2": "好了，<strong>{actor}</strong>，你现在只是在炫耀了。",
+				"3": "你真是救了我一命，<strong>{actor}</strong>。",
+				"4": "谢了，<strong>{actor}</strong>。那每次都把我吓得不轻。",
+				"5": "谢谢你，先生！",
+				"6": "<strong>{actor}</strong>，多谢。你是我的英雄。"
+			},
+			"ATTACKER": {
+				"0": "哦！以为你抓到我了是吧？",
+				"1": "哈！没打中！",
+				"2": "这就叫做，<em>有朋友</em>。",
+				"3": "我打赌你以为那招会管用是吧？",
+				"4": "就差<em>那么</em>一点点就打中我了！"
+			}
+		}
+	}
+}

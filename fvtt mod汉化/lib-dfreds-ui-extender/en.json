@@ -1,0 +1,49 @@
+{
+    "UiExtender": {
+        "RegistrationConfig": {
+            "Title": "Registration Config",
+            "Hud": "HUD",
+            "SceneControls": "Scene Controls",
+            "Directories": "Directories",
+            "HudButton": {
+                "ModuleIdLabel": "Module ID",
+                "HudTypeLabel": "HUD Type",
+                "TooltipLabel": "Tooltip",
+                "ActionLabel": "Action",
+                "IconLabel": "Icon",
+                "LocationLabel": "Location",
+                "PredicateLabel": "Has Predicate",
+                "HandlersLabel": "Event Handlers",
+                "NoHudButtons": "No HUD buttons registered for {moduleId}"
+            },
+            "SceneControl": {
+                "ModuleIdLabel": "Module ID",
+                "NameLabel": "Control Name",
+                "PredicateLabel": "Has Predicate",
+                "ToolLabel": "Tool Name",
+                "ToolOrderLabel": "Tool Order",
+                "ToolTitleLabel": "Tool Title",
+                "ToolIconLabel": "Tool Icon",
+                "ToolPropertiesLabel": "Tool Properties",
+                "ToolclipLabel": "Toolclip Heading",
+                "NoSceneControls": "No scene controls registered for {moduleId}"
+            },
+            "Directory": {
+                "ModuleIdLabel": "Module ID",
+                "IdLabel": "Directory ID",
+                "TooltipLabel": "Tooltip",
+                "IconLabel": "Icon",
+                "DocumentNameLabel": "Document Name",
+                "OrderLabel": "Order",
+                "ApplicationClassLabel": "Application Class",
+                "NoDirectories": "No directories registered for {moduleId}"
+            }
+        },
+        "Settings": {
+            "RegistrationConfig": {
+                "Name": "Registration",
+                "Hint": "View details of registered UI components"
+            }
+        }
+    }
+}

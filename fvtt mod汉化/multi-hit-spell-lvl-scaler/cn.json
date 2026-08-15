@@ -1,0 +1,65 @@
+
+  "MULTI_HIT_SPELL_LVL_SCALER": {
+    "ModuleTitle": "Multi-Hit Spell Level Scaler",
+    "Settings": {
+      "Debug": {
+        "Name": "启用调试日志",
+        "Hint": "将额外的Multi-Hit Spell Level Scaler诊断信息写入浏览器控制台。"
+      }
+    },
+    "Ui": {
+      "HeaderButton": {
+        "AriaLabel": "打开多重打击设置",
+        "TooltipDisabled": "多重打击已禁用",
+        "TooltipValid": "多重打击已启用并准备就绪",
+        "TooltipInvalid": "多重打击已启用，但设置未完成"
+      },
+      "SpellConfig": {
+        "Title": "多重打击：{itemName}",
+        "FallbackSpellName": "法术",
+        "Enable": "启用多重打击",
+        "HitActivity": "打击行动",
+        "SelectActivity": "选择一个行动",
+        "UnknownActivity": "未知行动 ({activityId})",
+        "ActivityHintAvailable": "每次打击将重用此行动。",
+        "ActivityHintMissing": "此法术当前没有可用的行动。",
+        "BaseTotalHits": "基础总打击次数",
+        "HitsPerSlotLevel": "每法术环阶获得的打击次数",
+        "DerivedBaseLevel": "基础法术环阶自动从法术环阶 {spellLevel} 派生。",
+        "Save": "保存",
+        "Cancel": "取消",
+        "Saved": "多重打击设置已保存。"
+      },
+      "ExtraHitPrompt": {
+        "Title": "剩余打击次数：{itemName}",
+        "FallbackSpellName": "已配置的法术",
+        "RemainingHits": "剩余打击次数：{hitsRemaining} / {totalHits}",
+        "NextHitHint": "下次打击使用当前选中的目标。",
+        "ResolveAllHint": "全部解决对每个选中的目标消耗1次打击，或对唯一选中的目标消耗所有剩余打击。",
+        "SelectionHint": "你的选择绝不能超过可用打击次数。",
+        "NextHit": "下次打击",
+        "ResolveAll": "全部解决",
+        "Cancel": "取消"
+      }
+    },
+    "Notifications": {
+      "CastContextCanceled": "施法配置已取消。",
+      "ConfigTargetRange": "在施放此配置的法术前，选择1到{totalHits}个目标。",
+      "ConfigTooManyTargets": "你选择了{selectedCount}个目标，但此次施法只提供{totalHits}次打击。请减少选择并重试。",
+      "InitialTargetPrepareFailed": "初始目标无法为受控的单目标施法做好准备。",
+      "TargetUnresolved": "所选目标无法再被解析。",
+      "TargetOffScene": "所选目标不再处于行动场景中。",
+      "NextHitSelectOne": "在解决下次打击前，请准确选择一个目标。",
+      "SingleHitTooManyTargets": "解决单次打击时只能选择一个目标。",
+      "RemainingHitsSelectAtLeastOne": "在解决剩余打击前，请至少选择一个目标。",
+      "TooManyTargetsForRemainingHits": "你选择了{selectedCount}个目标，但只有{remaining}次打击剩余。请减少选择并重试。",
+      "MissingContext": "打击配置已不存在。",
+      "ForbiddenUser": "只有创建此施法配置的用户才能解决其剩余打击。",
+      "UnsupportedResolutionMode": "解决模式\"{mode}\"在此处不受支持。",
+      "NoHitsRemaining": "此配置中没有剩余打击。",
+      "MissingDocuments": "无法为此配置解析法术物品或打击行动。",
+      "TemplateActivitiesUnsupported": "基于测量板的打击行动在此受控解决流程中不受支持。",
+      "ActivityUseCancelled": "由于dnd5e行动未完成，打击未被解决。"
+    }
+  }
+}

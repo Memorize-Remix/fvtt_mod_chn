@@ -1,0 +1,244 @@
+
+  "NAMEPLATES": {
+    "CONFIG": {
+      "ALIGN": {
+		"CENTER": "居中",
+		"HINT": "文本对齐方式",
+		"JUSTIFY": "两端对齐",
+		"LABEL": "对齐方式",
+		"LEFT": "左对齐",
+		"RIGHT": "右对齐"
+	  },
+      "ALPHA": {
+        "HINT": "铭牌的透明度",
+        "LABEL": "透明度"
+      },
+	  "ANCHOR": {
+		"HINT": "覆盖此铭牌的锚点位置，以便更精细地控制定位",
+		"LABEL": "覆盖锚点",
+		"X": "X轴",
+		"Y": "Y轴"
+	  },
+      "ANGLE": {
+        "HINT": "显示此铭牌的角度",
+        "LABEL": "角度"
+      },
+	  "AUTOANCHOR": {
+		"HINT": "将根据对齐方式自动设置铭牌的锚点位置",
+		"LABEL": "自动计算锚点"
+	  },
+      "CURRENT": {
+        "HINT": "插值后的当前值",
+        "LABEL": "当前值"
+      },
+      "DISPLAY": {
+        "HINT": "",
+        "LABEL": "显示铭牌"
+      },
+	  "EFFECTS": {
+		"ALPHA": {
+		  "HINT": "效果的透明度级别",
+		  "LABEL": "透明度"
+		},
+		"COLOR": {
+		  "HINT": "效果的颜色",
+		  "LABEL": "颜色"
+		},
+		"GLOW": {
+		  "ENABLE": {
+			"HINT": "为铭牌添加发光效果",
+			"LABEL": "启用发光"
+		  },
+		  "INNER": {
+			"HINT": "从精灵边缘向内发光的强度",
+			"LABEL": "内部强度"
+		  },
+		  "OUTER": {
+			"HINT": "从精灵边缘向外发光的强度",
+			"LABEL": "外部强度"
+		  }
+		},
+		"OUTLINE": {
+		  "ENABLE": {
+			"HINT": "为铭牌添加轮廓",
+			"LABEL": "启用轮廓"
+		  },
+		  "THICKNESS": {
+			"HINT": "轮廓的粗细",
+			"LABEL": "粗细"
+		  }
+		},
+		"USEDISPOSITIONCOLOR": {
+		  "HINT": "将根据Token的阵营（敌对、中立等）为此效果着色",
+		  "LABEL": "使用阵营颜色"
+		}
+	  },
+      "ENABLE": {
+        "HINT": "切换开启为此Token启用Token铭牌",
+        "LABEL": "启用铭牌"
+      },
+      "ENABLEGLOBAL": {
+        "HINT": "切换开启为此角色类型使用默认铭牌",
+        "LABEL": "启用默认铭牌"
+      },
+      "EXPORT": {
+		"CLIPBOARD": "复制到剪贴板",
+		"COPIED": "配置已复制到剪贴板",
+		"DIALOGMESSAGE": "复制下方文本",
+		"DOWNLOAD": "下载 JSON",
+		"HINT": "导出 JSON 配置",
+		"LABEL": "导出配置"
+	  },
+      "FONT": {
+        "COLOR": {
+          "HINT": "",
+          "LABEL": "颜色"
+        },
+		"DISPOSITIONCOLOR": {
+          "HINT": "将根据Token的阵营来选择字体颜色",
+          "LABEL": "使用阵营颜色"
+        },
+        "DROPSHADOW": {
+          "HINT": "",
+          "LABEL": "投影"
+        },
+        "DROPSHADOWALPHA": {
+          "HINT": "投影的透明度（如果有）",
+          "LABEL": "投影透明度"
+        },
+		"DROPSHADOWANGLE": {
+			"HINT": "投影的投射角度。0 = 正右方",
+			"LABEL": "投影角度"
+		},
+        "DROPSHADOWCOLOR": {
+          "HINT": "投影的颜色（如果有）",
+          "LABEL": "投影颜色"
+        },
+		"DROPSHADOWDISTANCE": {
+			"HINT": "投影的偏移距离（像素）",
+			"LABEL": "投影距离"
+		},
+        "FAMILY": {
+          "HINT": "此铭牌的字体",
+          "LABEL": "字体"
+        },
+        "SIZE": {
+          "HINT": "",
+          "LABEL": "大小"
+        }
+      },
+      "HEADER": "铭牌",
+      "IMPORT": {
+		"ACTOR": "从角色设置导入",
+        "CLIPBOARD": "从剪贴板导入",
+        "DIALOGMESSAGE": "在下方粘贴 JSON",
+		"GLOBAL": "从全局设置导入",
+        "HINT": "导入 JSON 配置",
+        "LABEL": "导入配置",
+        "PASTED": "已从剪贴板读取配置",
+		"TOKEN": "从Token设置导入",
+        "TYPE": "从角色类型（{type}）设置导入",
+        "UPLOAD": "上传JSON"
+      },
+	  "LEFT": "左侧铭牌",
+	  "LOADFROMACTOR": "从角色加载设置",
+      "LOADFROMTOKEN": "从Token加载设置",
+      "LOWER": "下方铭牌",
+      "PADDING": {
+        "HINT": "铭牌上方和左侧的间距",
+        "LABEL": "内边距",
+        "X": "左侧",
+        "Y": "顶部"
+      },
+      "POSITION": {
+        "BOTTOM": "底部",
+        "HINT": "相对于Token放置铭牌的位置",
+        "LABEL": "位置",
+		"LEFT": "左",
+        "RIGHT": "右",
+        "TOP": "顶部"
+      },
+      "REMOVE": {
+        "CONTENT": "确定要移除此铭牌吗？\n此操作无法撤销。",
+        "TITLE": "移除铭牌"
+      },
+      "REVERT": {
+        "HINT": "将设置恢复为默认值",
+        "LABEL": "恢复设置",
+        "MESSAGE": "确定要将这些设置恢复为默认值吗？",
+        "TITLE": "恢复设置"
+      },
+	  "RIGHT": "右侧铭牌",
+	  "SOURCE": {
+		  "DISABLED": "由于配置来源，控件已禁用。",
+		  "HINT": "选择此Token应从何处获取其铭牌配置",
+		  "LABEL": "配置来源",
+		  "TYPE": "角色类型（{type}）"
+		},
+      "TABS": {
+        "BASICS": "基础",
+		"DROPSHADOW": "投影",
+        "EFFECTS": "效果",
+        "FONT": "字体",
+        "GLOW": "发光",
+        "OUTLINE": "轮廓"
+      },
+      "TITLE": "配置铭牌",
+	  "TOKENOVERRIDE": {
+        "HINT": "如果启用，将在此Token而非其角色上存储设置。",
+        "LABEL": "启用Token覆盖"
+      },
+      "TOOLTIPS": {
+        "ADD": "添加铭牌",
+        "DOWN": "向下移动铭牌",
+        "EDIT": "编辑铭牌",
+        "EXPORT": "将当前配置导出为 JSON",
+        "IMPORT": "导入 JSON 配置",
+        "REMOVE": "移除铭牌",
+        "UP": "向上移动铭牌"
+      },
+      "TYPES": {
+        "GLOBAL": "全局"
+      },
+      "UPPER": "上方铭牌",
+      "VALUE": {
+        "HINT": "标签的值。<br>有关字符串插值的信息，请参阅<a href='https://github.com/Unarekin/FoundryVTT-Token-Nameplates/wiki/Interpolation'>维基页面</a>。",
+        "LABEL": "值"
+      }
+    },
+    "ERRORS": {
+      "MISSINGNAMEPLATEID": "铭牌 ID 缺失！",
+      "NAMEPLATENOTFOUND": "未找到铭牌！"
+    },
+    "SETTINGS": {
+		"GLOBAL": {
+		  "HINT": "配置默认铭牌设置",
+		  "LABEL": "配置",
+		  "LIST": {
+			"DESCRIPTION": "配置以下类型的全局铭牌设置：",
+			"TITLE": "全局铭牌设置"
+		  },
+		  "TEXT": "全局设置",
+		  "TITLE": "全局铭牌设置：{type}"
+		},
+		"INVERTISOMETRY": {
+		  "HINT": "如果启用，将撤销isometric projection模组对铭牌的透视变换",
+		  "LABEL": "反转等距变换"
+		},
+		"PLACEABOVEPLACEABLES": {
+		  "HINT": "启用后，铭牌将始终显示在Token、图块和其他可放置对象之上",
+		  "LABEL": "将铭牌置于Token上方"
+		}
+    }
+  },
+  "TILE": {
+    "TABS": {
+      "nameplates": "铭牌"
+    }
+  },
+  "TOKEN": {
+    "TABS": {
+      "nameplates": "铭牌"
+    }
+  }
+}

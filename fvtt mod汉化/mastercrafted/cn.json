@@ -1,0 +1,220 @@
+
+    "TYPES": {
+        "JournalEntryPage": {
+            "mastercrafted": {
+                "mastercrafted": "Mastercrafted配方"
+            }
+        }
+    },
+    "mastercrafted": {
+        "mastercrafted": "Mastercrafted配方",
+        "craft": "制作",
+        "show-recipes": "显示配方",
+        "craftDialog": {
+            "title": "制作",
+            "craft": "制作",
+            "cancel": "取消",
+            "consumes": "消耗",
+            "crafts": "制作",
+            "crafted": "已制作"
+        },
+		  "componentEditForm": {
+			"title": "成分配置",
+			"name": {
+			  "label": "名称",
+			  "hint": "用于匹配将作为制作成分消耗的物品的名称。"
+			},
+			"img": "图像",
+			"quantity": "数量",
+			"uuid": {
+			  "label": "物品",
+			  "hint": "点击后将显示的物品。请注意，更改此物品不会更新成分的名称或图像。"
+			},
+			"resourcePath": {
+			  "title": "资源配置",
+			  "hint": "指向角色资源的路径。如果物品不在库存中，制作将消耗制作角色的资源而非该物品。",
+			  "label": "资源路径"
+			},
+			"tags": {
+			  "title": "标签配置",
+			  "hint": "定义此成分替代物品的标签列表。如果主要物品不在库存中，制作将使用匹配至少一个标签（任一模式）或所有标签（全部模式）的物品。",
+			  "label": "标签",
+			  "mode": {
+				"label": "要求",
+				"every": "全部",
+				"some": "任一"
+			  }
+			}
+		  },
+        "recipeApp": {
+            "errors": {
+                "namemissing": "名称字段是必填项！",
+                "alreadyingredient": "这个物品已经在这个合成配方的原料中了！",
+                "noJournal": "请打开一本书以配置分类。"
+            },
+            "bookcontext": {
+                "add": "添加合成配方表",
+                "edit": "编辑",
+                "delete": "删除",
+				"inspect": "检视",
+                "duplicate": "复制",
+                "export": "导出",
+                "import": "导入"
+            },
+            "editcreatebook": {
+                "title": "编辑/创建合成配方集",
+                "name": "名称",
+                "namep": "新合成配方集",
+                "description": "描述",
+                "image": "图像",
+                "sound": "音效",
+                "confirm": "确定",
+                "tools": "工具",
+                "toolsplaceholder": "工具名称列表以逗号分隔",
+                "macro": "条件",
+                "macroplaceholder": "宏名称或命令",
+                "time": "时间",
+                "timeplaceholder": "制造时间的分钟数",
+                "edit": "编辑",
+                "create": "创建",
+                "book": "合成配方集",
+                "recipe": "合成配方",
+                "permission": "玩家权限",
+                "expression": {
+					"label": "表达式",
+					"placeholder": "表达式"
+				  },
+				  "abilityDc": {
+					"label": "DC",
+					"placeholder": "DC"
+				  },
+				  "toolCheck": {
+					"label": "工具检定",
+					"placeholder": "工具检定"
+				  },
+				  "toolDc": {
+					"label": "DC",
+					"placeholder": "DC"
+				  },
+				  "abilityCheck": {
+					"label": "系统属性",
+					"placeholder": "系统属性"
+				  },
+				  "modifierList": {
+					"add": "添加修正值",
+					"hint": "如果掷骰结果或表达式返回值（取较高值）大于或等于DC，则根据修正表达式调整收集的物品数量。你可以在修正值开头包含数学运算符；如果未提供，则默认假定为加号(+)。例如，*1d4 表示将收集的物品数量乘以1d4。",
+					"label": "修正值"
+				  }
+            },
+            "configbookrecipe": {
+                "permissions": {
+                    "default": "默认",
+                    "allow": "允许",
+                    "deny": "拒绝"
+                }
+            },
+            "recipeconfig": {
+                "inheritTools": "继承工具",
+                "ingredientsInspection": "原料检查",
+                "productInspection": "产品检查",
+                "ingredients": "原料",
+                "result": "产物"
+            },
+            "title": "Mastercrafted",
+			"recipeBooks": "配方书",
+            "addRecipeBook": "增加合成配方集",
+            "filter": "切换所有/仅可制作",
+            "relinked": "一个或多个物品缺少引用并已重新链接。",
+            "craft": "Craft - 按住 Ctrl 可快速制作",
+            "searchRecipe": "搜索合成配方",
+            "tools": "需要工具",
+            "time": "制作时间",
+            "minutes": "分钟",
+            "craftError": "制作出错",
+            "craftSuccess": "制作成功！ 添加到库存：",
+            "craftSuccessTimed": "制作成功！ 以下物品将会在制作完成时添加到库存：",
+            "timedCraftCompleted": "制作完成！ 添加到库存：",
+            "craftFailConsumed": "制作失败！ 条件不满足，原料被消耗掉了。",
+            "craftFailNotConsumed": "制作失败！ 条件不满足，原料没有被消耗。",
+            "noTools": "缺少工具！ 你需要以下之一：",
+            "noProficiency": "你不擅长使用：",
+			  "ingredientsTooltip": "左键点击选择材料，右键点击检视材料。",
+			  "resultTooltip": "左键点击方框选择成品，右键点击物品进行检视。",
+			  "ingredientsEditInfo": "将物品拖拽到方框上可将其添加为制作成分。点击 + 按钮可添加空成分。同一方框内的多个成分可互换使用。制作时每个方框至少需要一个成分。",
+			  "resultEditInfo": "将物品拖拽到方框上可将其添加为制作成品。同一方框内的多个物品均会在制作完成后获得。制作过程中只能选择一个方框作为成品。",
+            "cauldron": "大锅",
+            "timedCrafting": "制作进度",
+            "readyIn": "准备就绪：",
+            "onlyCraftable": "仅可制作",
+			  "all": "全部",
+			  "useCraftingActor": "使用制作角色",
+			  "editMode": "编辑",
+			  "useInventory": "使用库存",
+			  "craftAs": "以...身份制作",
+			  "useInventoryInfo": "将使用此角色的库存物品进行制作。制作结果和延迟制作结果也将放入此角色的库存中。",
+			  "craftAsInfo": "此角色将执行制作，所有制作检定（工具、属性等）都将由此角色进行。",
+			  "ingredient": "材料",
+			  "product": "成品",
+			  "component": "成分"
+        },
+        "cauldronApp": {
+            "title": "大锅",
+            "noIngredients": "你需要混合至少两个原料来发现一个配方！",
+            "brewFail": "酿造失败！你的混合物混合得不好。原料被消耗掉了。",
+            "hint": "将原料拖放到大锅中，将它们混合在一起。单击一种成分将其从坩锅中取出。单击“混合原料”按钮将成分混合在一起。如果成分混合得很好，你就会发现一个新的配方。成分将被消耗。",
+            "discovered": "你发现了一个新的配方！",
+            "gmConfirm": "在此次发现可以使用前需要GM确认。",
+            "confirm": "确定",
+            "partial": {
+                "consumed": "消耗了：",
+                "extra1": "非常接近了！你几乎快要得到它了！也许你加的有一点点多。",
+                "extra2": "看起来会起作用，但它没有。也许你加的太多了。",
+                "missing1": "非常接近了！你几乎快要得到它了！也许它需要再多一点点。",
+                "missing2": "看起来会起作用，但它没有。也许它需要更多的东西。",
+                "extra1missing1": "看起来会起作用，但它没有。也许你加了太多的东西而没有加足够的其他东西。"
+            }
+        },
+        "itemConfig": {
+            "title": "Mastercrafted - 物品配置",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "属性路径"
+            },
+            "tags": {
+                "label": "标签",
+                "notes": "逗号分隔的标签列表。在制作过程中，玩家的库存中必须至少有一个带有这些标签的物品。"
+            }
+        },
+        "UI": {
+            "open-recipe-app" : "合成配方管理",
+            "delete-recipe-book-title" : "删除合成配方集",
+            "delete-recipe-book-content" : "你确定想要删除这个合成配方集吗?",
+            "delete-recipe-title" : "删除合成配方表",
+            "delete-recipe-content" : "你确定想要删除这个合成配方表吗?",
+            "default-recipe-name": "新合成配方",
+            "no-permission": "你没有权限打开这个配方表或配方集。"
+        },
+        "settings": {
+            "enableCauldron": {
+                "name": "启用大锅",
+                "hint": "启用大锅界面。这将允许玩家将任何原料混合在一起来发现配方。"
+            },
+            "customQuantityPath": {
+                "name": "自定义数量路径",
+                "hint": "物品数量数据值的路径(数据路径从'system'开始，例如，如果你的数量存储在item.system.itemQuantity.value中，你应该写入'itemQuantity'在此设置中')。留空以使用默认路径，仅在系统不使用公共路径时自定义。"
+            },
+            "migrateOnStartup": {
+				"name": "启动时迁移设置",
+				"hint": "若启用，模组将在启动时迁移日志数据。你可以使用宏 'game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()' 手动迁移设置。"
+			  },
+			  "dontShowButtonOnNpc": {
+				"name": "在NPC界面隐藏按钮",
+				"hint": "若启用，NPC角色卡上将不显示打开配方书的按钮。"
+			  },
+			  "mainFolderName": {
+				"name": "主文件夹名称",
+				"hint": "若设置了文件夹名称，则Mastercrafted界面仅显示该文件夹的内容。否则，模组将尝试自动检测主文件夹。"
+			  }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+
+  "DLC": {
+    "Title": "Dorman Lakely Cartography",
+    "Description": "通过 Patreon 集成下载和管理自定义战斗地图",
+
+    "Settings": {
+      "DownloadPath": {
+        "Name": "下载路径",
+        "Hint": "下载地图文件的自定义路径（留空使用默认模组路径）"
+      },
+      "ConcurrentDownloads": {
+        "Name": "并发下载数",
+        "Hint": "并行下载的文件数量 (1-10)"
+      },
+      "CacheExpiry": {
+        "Name": "缓存过期时间（小时）",
+        "Hint": "刷新前缓存地图目录数据的时间长度"
+      }
+    },
+
+    "Gallery": {
+      "Title": "地图画廊",
+      "SearchPlaceholder": "搜索地图...",
+      "FilterByTags": "按标签筛选",
+      "ClearTags": "清除所有标签",
+      "NoMapsFound": "未找到地图",
+      "AdjustFilters": "请调整筛选条件或搜索词",
+      "BackToGallery": "返回画廊",
+      "LoadingCatalog": "正在加载地图目录...",
+      "RefreshCatalog": "刷新地图目录"
+    },
+
+    "Auth": {
+      "NotLoggedIn": "未登录",
+      "FreeAccess": "免费访问",
+      "PremiumAccess": "高级访问",
+      "LoginWithPatreon": "使用 Patreon 登录",
+      "Logout": "登出",
+      "WaitingForAuth": "正在等待 Patreon 认证...",
+      "AuthSuccess": "认证成功！",
+      "AuthFailed": "Patreon 认证失败，请重试。",
+      "AuthTimeout": "Patreon 认证超时或已取消。",
+      "LogoutSuccess": "成功登出。",
+      "PopupBlocked": "无法打开 Patreon 登录窗口，请允许此网站的弹出窗口。"
+    },
+
+    "Download": {
+      "Title": "下载地图",
+      "StartDownload": "开始下载",
+      "Cancel": "取消",
+      "Close": "关闭",
+      "DownloadingFiles": "正在下载文件...",
+      "DownloadComplete": "下载完成！",
+      "FilesToDownload": "要下载的文件",
+      "Completed": "已完成",
+      "Failed": "失败",
+      "LoadingFileList": "正在加载文件列表...",
+      "DownloadStarted": "开始下载",
+      "DownloadSuccess": "成功下载 {count} 个文件！",
+      "DownloadPartial": "下载了 {success} 个文件，{fail} 个错误。",
+      "DownloadCancelled": "下载已取消。",
+      "PleaseLoginToDownload": "请登录以下载地图。",
+      "PremiumRequired": "此地图需要高级访问权限，请升级你的 Patreon 等级。"
+    },
+
+    "Map": {
+      "DownloadMap": "下载地图",
+      "FreeMap": "免费",
+      "PremiumMap": "高级",
+      "PremiumAccessRequired": "需要高级访问权限"
+    },
+
+    "Errors": {
+      "LoadDataFailed": "加载地图目录失败，请重试。",
+      "LoadFilesFailed": "加载文件列表失败。",
+      "DownloadFailed": "下载失败，请重试。",
+      "AuthRequired": "需要认证，请使用 Patreon 登录。",
+      "AccessDenied": "你无权访问此地图。",
+      "FileNotFound": "文件未找到。",
+      "NetworkError": "网络错误，请检查连接并重试。"
+    }
+  }
+}

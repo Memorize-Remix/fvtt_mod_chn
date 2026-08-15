@@ -1,0 +1,43 @@
+
+  "smart-doors": {
+    "keybindings": {
+      "toggleSecretDoor": {
+        "name": "切换密门",
+        "hint": "当按下此键时，点击门将使其在普通门和密门之间切换。"
+      }
+    },
+    "settings": {
+      "doorControlSizeFactor": {
+        "name": "门控件图标大小系数",
+        "hint": "定义门控件图标应放大的倍数。"
+      },
+      "highlightSecretDoors": {
+        "name": "为密门着色",
+        "hint": "在GM屏幕上为密门着色以区分它们与普通门。"
+      },
+      "lockedDoorAlert": {
+        "name": "锁定门警报",
+        "hint": "当玩家尝试打开锁定的门时，在聊天中发送消息。"
+      },
+      "synchronizedDoors": {
+        "name": "同步门",
+        "hint": "同步多个门的状态。"
+      }
+    },
+    "ui": {
+      "lockedDoorAlert": "刚刚尝试打开一扇锁定的门",
+      "messages": {
+        "migrating": "正在将Smart Doors迁移到版本{version}。请勿关闭应用程序。",
+        "migrationDone": "Smart Doors已成功迁移到版本{version}。",
+        "unknownVersion": "Smart Doors迁移失败，错误：未知版本{version}。请将此问题报告给Smart Doors问题跟踪。为防止可能的数据丢失，请勿使用此插件，直到此错误修复。"
+      },
+      "synchronizedDoors": {
+        "description": "同一同步组中的门的状态变化将在场景之间同步。留空以禁用此门的同步。",
+        "groupName": "同步组",
+		"groupNameShort": "同步组",
+        "synchronizeSecretStatus": "同步隐藏状态",
+		"synchronizeSecretStatusShort": "同步隐藏状态"
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "I18N.LANGUAGE": "English",
+  "rhym": {
+    "module-settings": {
+      "enabled": {
+        "name": "Enable Module",
+        "hint": "When unchecked disables all functionality of this module"
+      },
+      "combat-prefix": {
+        "name": "Combat Playlist Prefix",
+        "hint": "Prefix for all your combat playlists to pull from"
+      },
+      "combat-prep-playlist": {
+        "name": "Combat Preparations Playlist Name",
+        "hint": "Input the name of the playlist you wish to play when the combat tracker has been added but the combat hasn't begun yet."
+      },
+      "combat-victory": {
+        "enabled": {
+          "name": "Play Victory playlist after combat?",
+          "hint": "When enabled plays the specified victory playlist after combat"
+        },
+        "playlist": {
+          "name": "Victory Playlist",
+          "hint": "Name of the playlist to play when combat is ended"
+        },
+        "duration": {
+          "name": "Play the victory song for...",
+          "hint": "How long in seconds to play the victory playlist for, 0 means it will never be automatically stopped"
+        }
+      },
+      "mood-prefix": {
+        "name": "Mood Playlist Prefix",
+        "hint": "Prefix for all your mood playlists to pull from"
+      },
+      "track-title": {
+        "size": {
+          "name": "Track Title Size",
+          "hint": "Size scaling of the track title that shows if you have it enabled in the playlist settings (Default is 5)"
+        },
+        "duration": {
+          "name": "Track Title Duration (s)",
+          "hint": "How long in seconds to display the track title (Default is 8)"
+        }
+      }
+    },
+    "menu": {
+      "right-click": "Right click to change the playlist image",
+      "playlist-image-path": "Image File path:",
+      "mood": {
+        "title": "Pick Mood Music"
+      },
+      "combat": {
+        "title": "Pick Combat Music"
+      }
+    },
+    "controls": {
+      "music": {
+        "name": "Open Contextual Music Menu",
+        "hint": "Open Contextual Music picker",
+        "toolclip": {
+          "heading": "Open Music",
+          "items": {
+            "description": {
+              "paragraph": "Open Music picker dialog"
+            }
+          }
+        }
+      }
+    },
+    "notification": {
+      "error": {
+        "no-playlists": "No playlists to select from, look at your RHYM module settings to make sure your prefix matches your playlists"
+      }
+    },
+    "playlist-config": {
+      "show-track-title": {
+        "name": "Show Track Title",
+        "hint": "When this enabled it will create a small animation showing the track title every time you switch tracks (Note: If you want to have it show an author/album on a lower line use '|' or '-' as a splitter)"
+      }
+    }
+  }
+}

@@ -1,0 +1,519 @@
+{
+    "names": {
+        "title": "Nomina Names",
+        "window-title": "Nomina Names - Name Generator",
+        "picker-window-title": "Nomina Names - Name Picker",
+        "// ===== BASIC UI ELEMENTS =====": "",
+        "language": "Language",
+        "lbl_species": "Species",
+        "lbl_language": "Language Tone",
+        "lbl_gender": "Gender",
+        "category": "Category",
+        "generate": "Generate",
+        "btn-copy": "Copy",
+        "clear": "Clear",
+        "copied": "Name copied!",
+        "or": "or",
+        "// ===== UI DROPDOWN LABELS =====": "",
+        "ui": {
+            "choose-species": "Choose species...",
+            "choose-category": "Choose category...",
+            "all-genders": "All Genders (random)",
+            "search-language": "Search language...",
+            "search-species": "Search species...",
+            "search-category": "Search category...",
+            "search-recipe": "Search recipe...",
+            "placeholder-language": "Choose language tone...",
+            "placeholder-species": "Choose species...",
+            "placeholder-category": "Choose category...",
+            "placeholder-recipe": "Choose recipe..."
+        },
+        "// ===== NAMES & COMPONENTS =====": "",
+        "names": "Names",
+        "components": "Components",
+		"recipe": "Recipe",
+        "recipes": "Recipes",
+        "recipe-mode": "Recipes",
+        "component-mode": "Components",
+        "custom-recipe": "Custom",
+        "recipe-copy": "Copy",
+        "recipe-clear": "Clear",
+        "recipe-field-label": "Recipe Definition",
+        "recipe-seed": "Seed",
+        "recipe-seed-placeholder": "Optional: Seed for deterministic generation",
+        "recipe-randomize-seed": "Generate random seed",
+        "example-prefix": "e.g.:",
+        "gender": {
+            "label": "Gender",
+            "male": "Male",
+            "female": "Female",
+            "nonbinary": "Non-binary",
+            "neutral": "Neutral",
+            "random": "Random"
+        },
+        "firstname": "First Name",
+        "surname": "Surname",
+        "titles": "Title",
+        "nickname": "Nickname",
+        "nameformat": "Name Format",
+        "placeholders": "Available Placeholders",
+        "examples": "Examples",
+        "// ===== CATEGORIZED CONTENT =====": "",
+        "subcategories": "Subcategories",
+        "settlements": "Settlements",
+        "// ===== GENERATION CONTROLS =====": "",
+        "max-20": "Generate 1-20 names at once",
+        "lbl_amount": "Number of Names",
+        "new-names": "New Names",
+        "choose-name": "Choose name:",
+        "select-options": "Select options and click 'Generate'",
+        "select-all": "Please select language and species",
+        "select-components": "Please select at least one name component",
+        "search-hint": "Tip: Use the search function to find additional options",
+		"search-placeholder": "Search names...",
+        "no-search-results": "No names found",
+        "// ===== HELP & INSTRUCTIONS =====": "",
+        "gender-help": "Non-binary first names are only available if the selected species supports it.",
+        "subcategory-help": "Select at least one subcategory, or leave all unselected for random selection.",
+        "click-for-suggestions": "Click \"New Names\" to get 3 suggestions",
+        "click-to-adopt": "Click on a name to adopt it for the character",
+        "// ===== NEW UI ELEMENTS =====": "",
+        "section": {
+            "basic": "Basic Settings"
+        },
+        "results": {
+            "title": "Generated Names",
+            "count": "{count} Results",
+            "count-zero": "0 Results"
+        },
+        "view": {
+            "detailed": "Detailed",
+            "simple": "Compact"
+        },
+        "type": {
+            "name": "Name"
+        },
+        "copy": {
+            "hint": "Click to copy",
+            "help": "💡 Click on a name to copy it"
+        },
+        "// ===== USER INTERACTION =====": "",
+        "name-adopted": "Name \"{name}\" has been adopted!",
+        "select-one-token": "Please select exactly one token.",
+        "no-permission": "You don't have permission to use the name generator.",
+        "permissions-saved": "Role permissions have been saved!",
+		"copied-to-clipboard": "copied to clipboard",
+        "click-disabled-hint": "Name click actions are disabled. Enable them in module settings.",
+        "generated-name": "Generated Name",
+        "// ===== ERRORS & WARNINGS =====": "",
+        "no-names-found": "No names found for",
+        "generation-error": "Error generating: {error}",
+        "name-error": "Error adopting name",
+        "copy-error": "Copy failed",
+        "no-names-generated": "No names could be generated",
+        "// ===== LANGUAGES =====": "",
+        "languages": {
+            "de": "German",
+            "en": "English",
+            "fr": "French",
+            "es": "Spanish",
+            "it": "Italian"
+        },
+        "// ===== SPECIES =====": "",
+        "species": {
+            "human": "Human",
+            "elf": "Elf",
+            "dwarf": "Dwarf",
+            "halfling": "Halfling",
+            "orc": "Orc",
+            "goblin": "Goblin",
+            "dragonborn": "Dragonborn",
+            "tiefling": "Tiefling",
+            "aasimar": "Aasimar",
+            "gnome": "Gnome"
+        },
+        "// ===== CATEGORIES =====": "",
+        "categories": {
+            "male": "Male First Names",
+            "female": "Female First Names",
+            "nonbinary": "Non-binary First Names",
+            "surnames": "Surnames",
+            "titles": "Titles/Noble Titles",
+            "nicknames": "Nicknames",
+            "pets": "Pets & Companions"
+        },
+        "// ===== CATEGORY GROUPS =====": "",
+        "category-groups": {
+            "places": "Places",
+            "atmospheric": "Atmospheric"
+        },
+        "// ===== SUBCATEGORY TRANSLATIONS =====": "",
+        "subcategory-translations": {
+            "pets": {
+                "hunde": "Dogs",
+                "katzen": "Cats",
+                "voegel": "Birds",
+                "fische": "Fish",
+                "tressym": "Tressym"
+            }
+        },
+        "// ===== SETTINGS =====": "",
+        "settings": {
+            "interfaceLanguage": {
+                "name": "Interface Language",
+                "hint": "The language of the user interface (independent of content language)",
+                "auto": "Automatic (Foundry Language)"
+            },
+            "defaultContentLanguage": {
+                "name": "Default Content Language",
+                "hint": "The default language tone for generated names (German, English, etc.)",
+                "auto": "Automatic (Interface Language)"
+            },
+            "showInTokenControls": {
+                "name": "Show Button in Token Controls",
+                "hint": "Shows the name generator button in the left toolbar"
+            },
+            "showInCharacterSheet": {
+                "name": "Show Button in Character Sheet",
+                "hint": "Shows a name picker button next to the name field in character sheets"
+            },
+            "showInTokenContextMenu": {
+                "name": "Token HUD & Context Menu",
+                "hint": "Shows a name button in the token HUD and adds a 'Change Name' option to the right-click menu"
+            },
+            "showEmergencyButton": {
+                "name": "Show \"Emergency-NPC\"-Button",
+                "hint": "Shows a button below the chat for quick NPC name generation"
+            },
+            "includeNonbinaryNames": {
+                "name": "Include Non-binary Names",
+                "hint": "Allows selection of non-binary first names if the species supports it"
+            },
+            "roleConfig": {
+                "name": "Configure Role Permissions",
+                "hint": "Determine which user roles can use the name generator",
+                "label": "Configure Roles"
+            },
+            "logLevel": {
+                "name": "Log Level",
+                "hint": "Set the amount of log output to the console",
+                "error": "Errors only",
+                "warn": "Warnings",
+                "info": "Information",
+                "debug": "All details"
+            },
+            "availableSpecies": {
+                "name": "Available Species",
+                "hint": "Select which species should be available in the generator"
+            },
+            "speciesConfig": {
+                "name": "Manage Species",
+                "hint": "Configure which species should be available",
+                "label": "Configure Species"
+            },
+            "defaultView": {
+                "name": "Default View",
+                "hint": "The view that is automatically selected when opening the name generator",
+                "detailed": "Detailed",
+                "simple": "Compact"
+            },
+			"generateButtonPlacement": {
+                "name": "Generate Button Position",
+                "hint": "Position of the Generate button in the Generator app",
+                "legacy": "Classic (below the options)",
+                "floating": "Floating (at bottom of options panel)",
+                "result": "Result Area (next to Copy button)"
+            },
+            "defaultNameCount": {
+                "name": "Default Name Count",
+                "hint": "The number of names that should be generated by default (1-20)"
+            },
+            "historyMaxEntries": {
+                "name": "Maximum History Entries",
+                "hint": "The maximum number of generated names stored in history (10-200)"
+            },
+            "enableMetadata": {
+                "name": "Show Enhanced Metadata",
+                "hint": "Displays additional information like owners, locations, and specialties for generated places and buildings"
+            },
+            "nameClickCopy": {
+                "name": "Copy to Clipboard",
+                "hint": "Automatically copy names to clipboard when clicked"
+            },
+            "nameClickPost": {
+                "name": "Post to Chat",
+                "hint": "Automatically post names to chat when clicked"
+            },
+            "nameClickPostWhisper": {
+                "name": "Chat Privacy",
+                "hint": "Determines the visibility of chat messages when posting names",
+                "inherit": "Inherit Current Mode",
+                "whisper": "GM Only (WHISPER)",
+                "public": "Public (PUBLIC)"
+            },
+			"rememberSelections": {
+                "name": "Remember Selections",
+                "hint": "Saves all form selections (language, species, category, genders, components, etc.) on close and restores them when reopened"
+            },
+            "enableGenderColors": {
+                "name": "Enable Gender Colors",
+                "hint": "Display generated names with color-coding based on gender"
+            },
+            "genderColorsConfig": {
+                "name": "Configure Gender Colors",
+                "hint": "Set individual colors for each gender",
+                "label": "Configure Colors"
+            },
+            "enableEmergencyGenderColors": {
+                "name": "Emergency Gender Colors",
+                "hint": "Display emergency names with color-coding based on gender"
+            },
+            "emergencyGenderColors": {
+                "name": "Emergency Gender Colors",
+                "hint": "Color configuration for each gender in emergency names"
+            }
+        },
+		"// ===== GENDER COLORS CONFIG =====": "",
+        "genderColorsConfig": {
+            "title": "Gender Colors",
+            "enable": "Enable Gender Colors",
+            "description": "Choose an accent color for each gender. The color will be used subtly as a background gradient and border accent.",
+            "male": "Male",
+            "female": "Female",
+            "nonbinary": "Non-binary",
+            "preview": "Preview",
+            "reset": "Reset",
+            "save": "Save",
+            "cancel": "Cancel",
+            "saved": "Colors have been saved!"
+        },
+		"emergencyGenderColorsConfig": {
+            "sectionTitle": "Emergency Generator Colors",
+            "enable": "Enable gender colors in Emergency Generator",
+            "description": "Separate color settings for the Emergency Names generator.",
+            "copyFromAbove": "Copy from main generator",
+            "copiedSuccess": "Colors copied from main generator"
+        },
+        "// ===== SPECIES CONFIG =====": "",
+        "speciesConfig": {
+            "title": "Manage Species",
+            "description": "Select which species should be available in the name generator. Disabled species will not appear in the dropdown menus.",
+            "search": "Search:",
+            "searchPlaceholder": "Search species...",
+            "enableAll": "Enable All",
+            "disableAll": "Disable All",
+            "reset": "Reset",
+            "coreSpecies": "Core Species",
+            "extensionSpecies": "Extension Species",
+            "coreModule": "Core Module",
+            "enableAllInModule": "Enable All",
+            "disableAllInModule": "Disable All",
+            "noExtensions": "No extension modules with additional species found.",
+            "extensionHint": "Install modules with additional species to have more choices.",
+            "totalAvailable": "Available Species:",
+            "saved": "Species configuration saved: {enabled}/{total} enabled",
+            "save": "Save",
+            "cancel": "Cancel"
+        },
+        "// ===== ROLE CONFIG =====": "",
+        "roleConfig": {
+            "title": "Name Generator Role Permissions",
+            "description": "Select which user roles are allowed to use the name generator. Users without the appropriate role will not see any name generator buttons and cannot use chat commands.",
+            "allowedRoles": "Allowed Roles:",
+            "save": "Save",
+            "reset": "Reset",
+            "roles": {
+                "PLAYER": "Player",
+                "TRUSTED": "Trusted Player",
+                "ASSISTANT": "Assistant",
+                "GAMEMASTER": "Game Master"
+            }
+        },
+        "// ===== PERMISSION CHANGE =====": "",
+        "permissionChange": {
+            "title": "Permission Changed",
+            "content": "Your Names Generator permission has been changed by the Game Master. A page reload is required for the changes to take effect.",
+            "reload": "Reload Page",
+            "later": "Later"
+        },
+        "// ===== EMERGENCY NAMES =====": "",
+        "emergency": {
+            "title": "Emergency NPC Names",
+            "button": "Emergency NPC Names",
+            "tooltip": "Quick NPC names for emergencies",
+            "reroll": "New Names",
+            "generating": "Generating...",
+            "clickToCopy": "Click to copy",
+            "nameCopied": "'{name}' copied!",
+            "openGenerator": "Open Name Generator",
+            "quickNames": "Quick NPC Names",
+            "description": "Click a name to copy it to your clipboard",
+            "noNames": "no names available",
+            "hint": "Names are generated using the default settings of the name generator module",
+            "error": "Error generating names",
+            "errorOpenGenerator": "Error opening the main generator",
+            "speciesFilter": "Species Filter",
+            "speciesFilterExpanded": "Select species",
+            "selectAll": "Select all",
+            "selectHumans": "Humans",
+            "allSpeciesSelected": "All species",
+            "minOneSpecies": "At least one species must be selected"
+        },
+        "// ===== META DATA LABELS =====": "",
+        "meta": {
+            "owner": "Owner",
+            "location": "Location",
+            "price": "Price",
+            "specialization": "Specialization",
+            "atmosphere": "Atmosphere",
+            "clientele": "Clientele",
+            "features": "Features",
+            "services": "Services",
+            "quality": "Quality",
+            "size": "Size",
+            "age": "Age",
+            "type": "Type",
+            "description": "Description"
+        },
+        "// ===== HISTORY =====": "",
+        "history": {
+            "title": "Name History",
+            "open": "Open History",
+            "entries": "Entries",
+            "empty": "No names in history",
+            "empty-hint": "Generate names in any of the apps to see them here.",
+            "already-empty": "History is already empty",
+            "search-placeholder": "Search names...",
+            "select-all": "Select all",
+            "no-selection": "No names selected",
+            "click-to-copy": "Click to copy",
+            "name-copied": "\"{name}\" copied!",
+            "copied-selected": "{count} names copied",
+            "copied-all": "{count} names copied",
+            "clear": "Clear History",
+            "clear-title": "Clear History?",
+            "clear-confirm": "Do you really want to delete all {count} entries from history? This cannot be undone.",
+            "cleared": "History has been cleared",
+            "export": "Export",
+            "exported": "History exported as JSON",
+            "copy-selected": "Copy Selected",
+            "copy-all": "Copy All",
+            "help": "Click on a name to copy it. Use checkboxes for multiple selection.",
+            "filter": {
+                "all": "All",
+                "generator": "Generator",
+                "picker": "Picker",
+                "emergency": "Emergency"
+            },
+            "source": {
+                "generator": "Generator",
+                "picker": "Picker",
+                "emergency": "Emergency"
+            },
+            "column": {
+                "name": "Name",
+                "species": "Species",
+                "category": "Category",
+                "subcategory": "Subcategory",
+                "source": "Source",
+                "time": "Time"
+            },
+            "time": {
+                "just-now": "Just now",
+                "minutes-ago": "{minutes} min. ago",
+                "hours-ago": "{hours} hrs. ago"
+            }
+        },
+        "// ===== CONSOLE MESSAGES =====": "",
+        "console": {
+            "module-init": "Names Module init",
+            "loading-index": "Loading data index...",
+            "index-not-found": "index.json not found, using fallback",
+            "index-loaded": "Index loaded, {count} files found",
+            "index-error": "Error loading index file:",
+            "available-languages": "Available languages:",
+            "available-species": "Available species:",
+            "available-categories": "Available categories:",
+            "file-unavailable": "{filename} not available ({status})",
+            "grammar-loaded": "Grammar rules loaded for {key}",
+            "file-loaded": "✓ {filename} ({count} entries)",
+            "file-failed": "✗ {filename} - {error}",
+            "no-data-found": "No data found for {key}",
+            "no-gender-data": "No {gender} {category} found for {key}",
+            "no-titles-found": "No {gender} titles found for {language}.{species}",
+            "component-generation-failed": "Could not generate {component}:",
+            "generation-error": "Error generating:",
+            "name-setting-error": "Error setting name:",
+            "clipboard-fallback": "Clipboard API not available, using fallback"
+        },
+        "// ===== DETAILED ERROR MESSAGES =====": "",
+        "errors": {
+            "catalog": {
+                "empty": "No names available in this category",
+                "empty-hint": "This category doesn't contain any names yet. Try a different category or species.",
+                "no-match": "No names match your filter criteria",
+                "no-match-hint": "Try removing some filters or selecting different options.",
+                "not-found": "Data catalog '{catalog}' not found",
+                "missing-required": "Missing data catalogs: {catalogs}",
+                "no-distinct": "Unable to find unique names after {attempts} attempts",
+                "no-distinct-hint": "There aren't enough different names available. Try generating fewer names at once."
+            },
+            "package": {
+                "not-found": "Name data for {species} in {language} not available",
+                "not-found-hint": "This combination of species and language is not currently available.",
+                "invalid-format": "Invalid data format: {format}",
+                "missing-data": "Required name data is missing"
+            },
+            "recipe": {
+                "not-found": "Recipe '{recipe}' not found",
+                "not-found-hint": "This name template is not available. Try selecting a different option.",
+                "invalid-json": "Invalid recipe format",
+                "invalid-json-hint": "The recipe definition contains errors. Check the syntax and try again.",
+                "missing": "At least one recipe must be specified",
+                "execution-failed": "Failed to generate name using template",
+                "execution-failed-hint": "There was a problem with the name generation. Try again or select a different template."
+            },
+            "generation": {
+                "failed": "Names could not be generated",
+                "failed-hint": "Please check your settings and try again.",
+                "partial": "Only {count} of {requested} names could be generated",
+                "partial-hint": "Not enough unique names available. Try generating fewer names.",
+                "no-components": "No name components could be generated",
+                "no-components-hint": "Please select at least one component (first name, surname, etc.) and try again.",
+                "species-unavailable": "Species '{species}' not available for {language}",
+                "unsupported-gender": "Gender '{gender}' is not supported",
+                "no-subcategories": "No subcategories available for this selection",
+                "no-data": "No data available for {subcategory}",
+                "template-failed": "Template is missing required components: {components}"
+            },
+            "selection": {
+                "select-language-species": "Please select both language and species",
+                "select-components": "Please select at least one name component",
+                "select-category": "Please select a category"
+            },
+            "api": {
+                "invalid-language": "Invalid language: '{language}'",
+                "invalid-language-hint": "Available languages: {available}",
+                "invalid-species": "Invalid species: '{species}'",
+                "invalid-species-hint": "Available species: {available}",
+                "invalid-gender": "Invalid gender: '{gender}'",
+                "invalid-gender-hint": "Available genders: {available}",
+                "invalid-components": "Invalid name components: {components}",
+                "invalid-components-hint": "Components must be valid name part types (e.g., 'firstname', 'surname', 'title')",
+                "invalid-format": "Invalid format: '{format}'",
+                "invalid-format-hint": "Format must be a valid name template string",
+                "invalid-count": "Invalid count: {count}",
+                "invalid-count-hint": "Count must be a number between 1 and 100",
+                "invalid-package-code": "Invalid package code: '{code}'",
+                "invalid-package-code-hint": "Package code must be in format 'language.species' (e.g., 'de.human')",
+                "invalid-catalog": "Invalid catalog: '{catalog}'",
+                "invalid-catalog-hint": "Catalog must be a valid data catalog identifier",
+                "invalid-tags": "Invalid tags: {tags}",
+                "invalid-tags-hint": "Tags must be provided as an array of strings",
+                "missing-required-param": "Missing required parameter: '{param}'",
+                "module-not-ready": "Module is not ready yet",
+                "module-not-ready-hint": "The name generator is still initializing. Please wait a moment and try again."
+            }
+        }
+    }
+}

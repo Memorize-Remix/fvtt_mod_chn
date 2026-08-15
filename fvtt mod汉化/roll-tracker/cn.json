@@ -1,0 +1,100 @@
+
+    "ROLL-TRACKER": {
+        "button-title": "查看掷骰",
+        "form-label": {
+            "mean": "平均值",
+            "median": "中位数",
+            "mode": "众数",
+            "nat1s": "自然1",
+            "nat20s": "自然20",
+            "lastRoll": "最近掷骰",
+            "count": "掷骰计数",
+            "instance": "次",
+            "instances": "次",
+            "each": "各",
+            "combatstats": "战斗统计"
+        },
+        "form-button": {
+            "clear": "清除数据",
+            "toggle-combat": "仅显示战斗统计",
+            "toggle-all": "显示所有统计",
+            "download": "下载",
+            "print": "打印到聊天"
+        },
+        "comparison-card": {
+            "title": "对比卡片",
+            "combat-title": "战斗对比卡片",
+            "headers": {
+                "mean": "平均值",
+                "median": "中位数",
+                "mode": "众数",
+                "nat1s": "自然1",
+                "nat20s": "自然20"
+            },
+            "descriptors": {
+                "highest": "最高",
+                "lowest": "最低",
+                "most": "最多",
+                "fewest": "最少",
+                "raw": "原始数值",
+                "percentage": "按百分比"
+            },
+            "misc": {
+                "and": "和",
+                "with": "拥有"
+            },
+            "mode": {
+                "most-frequent": "拥有最频繁的众数",
+                "instances-of": "次出现",
+                "of-their-rolls": "的掷骰结果为"
+            }
+        },
+        "settings": {
+            "gm_see_players": {
+                "Name": "GM可见玩家掷骰图标？",
+                "Hint": "如果启用，GM将在所有玩家名称旁边看到图标，可用于访问该玩家的掷骰统计。"
+            },
+            "roll_storage": {
+                "Name": "最大存储掷骰数",
+                "Hint": "系统在开始覆盖旧掷骰数据前应存储多少个掷骰结果？"
+            },
+            "players_see_players": {
+                "Name": "玩家可访问追踪的掷骰？",
+                "Hint": "如果禁用，玩家将无法访问他们的掷骰摘要。"
+            },
+            "count_hidden": {
+                "Name": "统计盲骰？",
+                "Hint": "如果禁用，玩家的盲骰将不会被追踪器统计。"
+            },
+            "streak_behaviour": {
+                "Name": "连骰行为",
+                "Hint": "选择是否禁用连骰消息、仅向GM发送或公开显示。注意：包含盲骰的连骰始终会私聊给GM。",
+                "disable": "禁用连骰消息",
+                "hidden": "向GM私聊连骰",
+                "shown": "公开显示连骰"
+            },
+            "streak_threshold": {
+                "Name": "连骰阈值",
+                "Hint": "连续掷骰结果相差在1点以内的次数达到多少时被计为连骰。"
+            },
+            "dnd5e": {
+                "restrict_counted_rolls": {
+                    "Name": "不统计未关联掷骰",
+                    "Hint": "如果启用，追踪器将不会统计任何未明确关联到角色的掷骰。例如：在聊天中输入/r 1d20不会被统计，但攻击检定或豁免检定会被统计。"
+                }
+            },
+            "pf2e": {
+                "restrict_counted_rolls": {
+                    "Name": "不统计未关联掷骰",
+                    "Hint": "如果启用，追踪器将不会统计任何未明确关联到角色的掷骰。例如：在聊天中输入/r 1d20不会被统计，但攻击检定或豁免检定会被统计。"
+                }
+            }
+        },
+        "confirms": {
+            "clear_rolls": {
+                "title": "清除掷骰？",
+                "content": "确定要清除你的掷骰数据吗？此操作无法撤销。"
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "AE": {
+        "custombindings": {
+            "add" : "Add Binding",
+            "bindingstitle": "Edit Custom Bindings",
+            "bindingtitle": "Edit Binding",
+            "tt": {
+                "spellname": "Spell Name",
+                "edit": "Edit",
+                "delete": "Delete",
+                "creaturename": "Creature Name"
+            },
+            "sett": {
+                "label": "Configure Custom Bindings",
+                "name": "Custom Bindings",
+                "hint": "Configure Custom Spell Bindings"
+            }
+        },
+        "pick3d": "Click a point in the 3D Canvas to Summon.",
+        "dialogs": {
+            "companionManager":{
+                "title": "Companion Manager",
+                "confirm": {
+                    "title": "Delete Companion",
+                    "content": "<p>Are you sure you want to delete this companion?</p>"
+                }
+            }
+        },
+        "actorSheetBtn": "Companions",
+        "animations": {
+            "fire": "Fire",
+            "air": "Air",
+            "lightning": "Lightning",
+            "water": "Water",
+            "energy1": "Energy",
+            "magic1": "Magic",
+            "heart": "Doki-Doki",
+            "music": "Crescendo",
+            "fourelements": "Four Elements",
+            "music2": "Chord",
+            "darkness": "Darkness",
+            "ice1": "Ice",
+            "magic2": "Conjuration",
+            "lightning2": "Storm"
+
+        },
+        "groups":{
+            "elemental": "Elemental",
+            "magical": "Magical",
+            "z-none": "Other"
+        },
+        "settings":{
+            "storeonactor":{
+                "title": "Store Companions on Actor",
+                "hint": "Store the companions on the actor instead of the user by default."
+            },
+            "enableautomations":{
+                "title": "Enable Automations",
+                "hint": "Enable the companion automation system on spellcast."
+            },
+            "autoclose": {
+                "title": "Auto-Close",
+                "hint": "Automatically close the companion window after summoning."
+            },
+            "hidebutton":{
+                "title": "Hide Companion Button",
+                "hint": "Hide the companion button on the character sheet."
+            },
+            "restrictOwned":{
+                "title": "Only Owned Actors",
+                "hint": "Restrict the companion list to only show owned companions actors."
+            }
+        }
+    }
+}

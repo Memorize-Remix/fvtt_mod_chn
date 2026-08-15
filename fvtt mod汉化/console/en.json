@@ -1,0 +1,115 @@
+{
+    "CONSOLE": {
+        "archive": {
+            "image-type": "media type: image",
+            "video-type": "media type: video (thumbnail)"
+        },
+        "button-title": "Open Console Manager",
+        "config": {
+            "text": {
+                "header": "Text",
+                "name": "Name",
+                "title": "Title",
+                "description": "Description",
+                "gm-info": "GM Info"
+            },
+            "appearance": {
+                "header": "Appearance",
+                "fg-col": "Foreground Color",
+                "bg-col": "Background Color",
+                "bg-img": "Background Image",
+                "height": "Height",
+                "width": "Width"
+            },
+            "notifications": {
+                "header": "Notifications",
+                "enabled": "Enable notifications",
+                "src": "Audio source",
+                "mute": "Mute notification sounds"
+            },
+            "timestamps": {
+                "header": "Timestamps",
+                "hover-info": "Integrates with the SimpleCalendar module to provide sent messages with a timestamp. Choose the format of these timestamps in the settings for this module",
+                "enabled": "Enable timestamps"
+            },
+            "default-anchor": {
+                "header": "Default anchor state",
+                "hover-info": "An anchored window cannot be closed while anchored. The active state can be toggled within the app window.",
+                "not-anchored": "Not anchored",
+                "anchored": "Anchored"
+            },
+            "style": {
+                "header": "Style",
+                "messenger": "Messenger",
+                "terminal": "Terminal"
+            },
+            "limits": {
+                "header": "Message Limits",
+                "hover-info": "Cuts off messages after a specified length of words or characters, optionally appending with a custom string",
+                "none": "None",
+                "characters": "Characters",
+                "words": "Words",
+                "marker": "Marker",
+                "number": "Number"
+            },
+            "players": {
+                "header": "Player Ownership",
+                "hide": "Hide from owners",
+                "show": "Show to owners",
+                "hover-info": "Select who can see this console in their console manager. This is seperate from whether or not a console is public/private"
+            },
+            "permissions": {
+                "header": "Player permissions",
+                "hover-info": "Select which players can send messages in this console."
+            },
+            "scenes": {
+                "header": "Scenes",
+                "hover-info": "Keep track of which scenes this console may be relevant to"
+            },
+            "submit": "Submit"
+        },
+        "console": {
+            "anchor-app": "Toggle whether this window is anchored. An anchored window cannot be closed",
+            "become-actor": "Become linked actor",
+            "characters": "characters",
+            "close": "Close",
+            "copy-message": "copy text",
+            "delete-message": "delete",
+            "file-picker": "Choose an image/video to send",
+            "image-info":  "Left click to zoom image",
+            "limit": "limit",
+            "link-actor": "Link currently represented actor to this console",
+            "message-info": "Right click a message for context menu",
+            "pin": "Remeber this size for this app",
+            "send": "send",
+            "sending-file": "Loaded file",
+            "show-players": "Show to players",
+            "words": "words",
+            "zoom-image": "zoom image",
+            "zoom-video": "watch video"
+        },
+        "consoles": "Consoles",
+        "manager": {
+            "add-new-console": "Add new",
+            "archive-console": "Archive",
+            "cancel": "Cancel",
+            "confirm-archive": "This will convert this console to a page in the '_console-data' journal entry and delete the console from the manager. This is irreversible. Are you sure you want to archive this console?",
+            "confirm-delete": "Are you sure you want to delete this console?",
+            "current-character": "CURRENT CHARACTER",
+            "delete-console": "Delete",
+            "description": "Description",
+            "duplicate-console": "Duplicate",
+            "edit-console": "Edit",
+            "gm-info": "GM Info",
+            "n/a": "N/A",
+            "open-console": "Open",
+            "scenes": "Scenes",
+            "toggle-lock": "Toggle lock to disable/enable editing",
+            "toggle-mute": "Toggle mute notifications",
+            "toggle-notifications": "Toggle notifications",
+            "toggle-visibility": "Toggle visibility to owners",
+            "toggle-timestamps": "Toggle timestamps"
+        },
+        "version-migration": "Migrating module data to latest verison."
+    }
+}

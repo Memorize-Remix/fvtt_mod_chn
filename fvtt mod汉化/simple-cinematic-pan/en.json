@@ -1,0 +1,61 @@
+{
+    "simple-cinematic-pan": {
+        "settings": {
+            "animation-duration": {
+                "name": "Animation duration (ms)",
+                "hint": "Duration of transition animation in milliseconds"
+            },
+            "show-notifications": {
+                "name": "Show notifications",
+                "hint": "Shows notifications (only for the GM)"
+            },
+            "cinematic-bars-height": {
+                "name": "Cinematic bars height (%)",
+                "hint": "Height of the cinematic bars as percentage of screen height"
+            },
+            "cinematic-bars-color": {
+                "name": "Cinematic bars color",
+                "hint": "Color of the cinematic bars (hex format, e.g. #000000)"
+            },
+            "cinematic-bars-opacity": {
+                "name": "Cinematic bars opacity",
+                "hint": "Opacity of the cinematic bars (0 - 1)"
+            },
+            "hide-ui-for-players": {
+                "name": "Hide UI for players during cinematic mode",
+                "hint": "When enabled, hides the Foundry UI for players when cinematic mode (canvas lock) is active"
+            },
+            "cinematic-mode-on-load-scene": {
+                "name": "Auto lock canvas in cinematic mode when this scene is activated"
+            },
+            "debug-mode": {
+                "name": "Debug mode",
+                "hint": "When enabled, shows debug information in the console"
+            }
+        },
+        "notifications": {
+            "gm-only-canvas-lock": "Only the GM can control canvas lock.",
+            "canvas-locked": "Canvas locked for all players.",
+            "canvas-unlocked": "Canvas unlocked for all players.",
+            "gm-only-sync": "Only the GM can synchronize the view.",
+            "canvas-not-ready": "Canvas is not ready.",
+            "gm-only-reset": "Only the GM can use this feature.",
+            "canvas-locked-local": "Canvas locked.",
+            "canvas-unlocked-local": "Canvas unlocked.",
+            "players-synchronizing": "Players are synchronizing...",
+            "view-synchronized": "View synchronized with all players."
+        },
+        "controls": {
+            "title": "Cinematic Controls",
+            "canvas-lock": {
+                "title": "Toggle Canvas Lock"
+            },
+            "sync-view": {
+                "title": "Synchronize View"
+            },
+            "reset": {
+                "title": "Debug: Reset and resync all users to their default states"
+            }
+        }
+    }
+} 

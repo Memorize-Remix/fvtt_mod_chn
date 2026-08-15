@@ -1,0 +1,90 @@
+{
+  "foundry-beams": {
+    "Beam": "Beam",
+    "EnableBeam": "Enable Beam",
+    "Active": "Active",
+	"UseControlHud": "Use control HUD",
+    "UseControlHudTooltip": "If enabled, adds a Foundry Beams button to the Token HUD (visible when the Token HUD is shown).",
+    "BeamWidthPx": "Beam Width (px)",
+    "BeamOffsetPx": "Beam Offset (px)",
+    "BeamColor": "Beam Color",
+	"BeamColorTooltip": "Beam Color; can be overridden by the HUD if activated",
+    "BeamStyle": "Beam Style",
+    "ActivateRegionOnBeam": "Activate region on beam?",
+    "ConfigureRegion": "Configure Region",
+    "WallConfigLegend": "Active Beams",
+    "WallConfigIsReactiveLegend": "Is reactive to beam entering",
+    "WallConfigIsReactiveExitLegend": "Is reactive to beam exiting",
+    "IsMirror": "Is mirror",
+    "IsReactive": "Is reactive",
+    "IsReactiveTooltip": "If enabled, when a beam hits this wall, it will trigger the specified Macro/MATT (save UUID).",
+    "IsReactiveExitTooltip": "If enabled, when a beam leaves this wall, it will trigger the specified Macro/MATT (save UUID).",
+    "MacroForReactive": "UUID for reactive",
+    "HUD": {
+      "ToggleSequencerEffect": "Toggle Sequencer Effect"
+    },
+    "error": {
+      "SequencerNotActive": "Sequencer module is not active."
+    },
+    "Settings": {
+      "MaxBounces": {
+        "Name": "Maximum bounces",
+        "Hint": "Maximum number of bounces a beam can make before it stops."
+      },
+      "Debug": {
+        "Name": "Enable debug logging"
+      },
+      "UseProviderStyles": {
+        "Name": "Load styles from Styles Hub module",
+        "Hint": "If the 'foundry-beams-styles' module is active, import and register all of its styles."
+      },
+      "ControlHudMode": "HUD mode",
+      "ControlHudModeTooltip": "Select what the hover HUD should allow you to configure for this token.",
+      "ControlHudModeNone": "No HUD",
+      "ControlHudModeColor": "Configure color",
+      "ControlHudModeRotation": "Configure rotation",
+      "ControlHudModeBoth": "Configure both",
+      "HudDialShadowImg": "HUD dial image (shadow)",
+      "HudDialShadowImgTooltip": "Personalize the shadow image of the Dial seen by the players",
+      "HudDialColorImg": "HUD Color's dial image",
+      "HudDialColorImgTooltip": "Image of the Dial used to change colors of the emitter used in the HUD seen by the players",
+      "HudDialRotationImg": "HUD Rotation's dial image",
+      "HudDialRotationImgTooltip": "Image for the Dial used to change rotation of the emitter used in the HUD seen by the players",
+      "HudRotationSteps": "Rotation steps",
+      "HudRotationStepsTooltip": "Number of rotation steps to use in the HUD rotation dial. The image should be done to match the number of steps.",
+      "HudUseActivatorButton": "Use a HUD activator button",
+      "HudUseActivatorButtonTooltip": "If enabled, the Rune Dial HUD starts inactive and players must press the activator button to enable the dials.",
+      "HudActivatorOffImg": "HUD activator image (off)",
+      "HudActivatorOffImgTooltip": "Image for the activator button when the HUD dials are inactive.",
+      "HudActivatorOnImg": "HUD activator image (on)",
+      "HudActivatorOnImgTooltip": "Image for the activator button when the HUD dials are active.",
+      "EditColors": "Edit Hud Colors",
+      "EditColorsLabel": "Edit HUD Colors Management",
+      "EditColorsTooltip": "Open the Beam Hud Colors Editor, where you can add, remove, and modify the colors available for HUD.",
+      "HudDialTitle": "HUD",
+      "HudDialForToken": "Token",
+      "HudDialColor": "Color",
+      "HudDialRotation": "Rotation",
+      "HudDialStep": "Step",
+      "HudDialSteps": "Step",
+      "HudDialNoImage": "No image configured"
+    },
+    "MATT": {
+      "GroupName": "Active Beams",
+      "Actions": {
+        "RotateBeamOf": {
+          "Name": "Rotate Beam Of",
+          "Controls": {
+            "Entity": {
+              "Name": "Select Beam Emitter",
+              "Placeholder": "Please select a Token that is an emitter"
+            },
+            "RotateOf": {
+              "Name": "Rotate Of"
+            }
+          }
+        }
+      }
+    }
+  }
+}

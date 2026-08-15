@@ -1,0 +1,115 @@
+
+    "CONSOLE": {
+        "archive": {
+            "image-type": "媒体类型: 图片",
+            "video-type": "媒体类型: 视频 (缩略图)"
+        },
+        "button-title": "打开控制台管理",
+        "config": {
+            "text": {
+                "header": "文本",
+                "name": "名称",
+                "title": "标题",
+                "description": "描述",
+                "gm-info": "GM信息"
+            },
+            "appearance": {
+                "header": "外观",
+                "fg-col": "前景色",
+                "bg-col": "背景色",
+                "bg-img": "背景图片",
+                "height": "高度",
+                "width": "宽度"
+            },
+            "notifications": {
+                "header": "通知",
+                "enabled": "启用通知",
+                "src": "音频源",
+                "mute": "静音通知"
+            },
+            "timestamps": {
+                "header": "时间戳",
+                "hover-info": "与SimpleCalendar模组集成，为发送的消息提供时间戳。时间戳格式可在本模组设置中选择",
+                "enabled": "启用时间戳"
+            },
+            "default-anchor": {
+                "header": "默认锚定状态",
+                "hover-info": "锚定的窗口在锚定时无法关闭。激活状态可在应用窗口内切换",
+                "not-anchored": "未锚定",
+                "anchored": "已锚定"
+            },
+            "style": {
+                "header": "样式",
+                "messenger": "消息",
+                "terminal": "终端"
+            },
+            "limits": {
+                "header": "消息限制",
+                "hover-info": "在指定字数或字符数后截断消息，可选择附加自定义字符串",
+                "none": "无",
+                "characters": "字符",
+                "words": "字数",
+                "marker": "标记",
+                "number": "数量"
+            },
+            "players": {
+                "header": "玩家拥有",
+                "hide": "对拥有者隐藏",
+                "show": "对拥有者显示",
+                "hover-info": "选择哪些玩家可以在他们的控制台管理器中看到此控制台。这与控制台是公开/私有的设置是分开的"
+            },
+            "permissions": {
+                "header": "玩家权限",
+                "hover-info": "选择哪些玩家可以在此控制台中发送消息"
+            },
+            "scenes": {
+                "header": "场景",
+                "hover-info": "记录此控制台可能关联的场景"
+            },
+            "submit": "提交"
+        },
+        "console": {
+            "anchor-app": "切换此窗口是否锚定。锚定的窗口无法关闭",
+            "become-actor": "成为链接角色",
+            "characters": "字符",
+            "close": "关闭",
+            "copy-message": "复制文本",
+            "delete-message": "删除",
+            "file-picker": "选择要发送的图片/视频",
+            "image-info":  "左键点击缩放图片",
+            "limit": "限制",
+            "link-actor": "将当前代表的角色链接到此控制台",
+            "message-info": "右键点击消息查看菜单",
+            "pin": "记住此应用的大小",
+            "send": "发送",
+            "sending-file": "已加载文件",
+            "show-players": "对玩家显示",
+            "words": "字数",
+            "zoom-image": "缩放图片",
+            "zoom-video": "观看视频"
+        },
+        "consoles": "控制台",
+        "manager": {
+            "add-new-console": "新增",
+            "archive-console": "归档",
+            "cancel": "取消",
+            "confirm-archive": "这会将此控制台转换为'_console-data'日志条目中的页面，并从管理器中删除该控制台。此操作不可逆。确定要归档此控制台吗？",
+            "confirm-delete": "确定要删除此控制台吗？",
+            "current-character": "当前角色",
+            "delete-console": "删除",
+            "description": "描述",
+            "duplicate-console": "复制",
+            "edit-console": "编辑",
+            "gm-info": "GM信息",
+            "n/a": "N/A",
+            "open-console": "打开",
+            "scenes": "场景",
+            "toggle-lock": "切换锁定以启用/禁用编辑",
+            "toggle-mute": "切换静音通知",
+            "toggle-notifications": "切换通知",
+            "toggle-visibility": "切换对所有者可见性",
+            "toggle-timestamps": "切换时间戳"
+        },
+        "version-migration": "正在将模组数据迁移至最新版本"
+    }
+}

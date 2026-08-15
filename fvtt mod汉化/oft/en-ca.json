@@ -1,0 +1,124 @@
+{
+	"OFT": {
+		"setting": {
+			"addGlobalAppsReference": {
+				"name": "Add Global Instances",
+				"hint": "(v13+) This adds a global variable named \"apps\" that allows you to access \"foundry.applications.instances\" with less typing."
+			},
+			"addGlobalDocReferrer": {
+				"name": "Add Global \"_doc\"",
+				"hint": "(v13+) This adds a header control to document sheets that sets the _doc globalThis variable. Until the header control is triggered, the \"_doc\" variable is undefined."
+			},
+			"autoUnpauseOnLoad": {
+				"name": "Auto Unpause On Load",
+				"hint": "(v13+, GM-Only) Automatically unpauses the game when you load into the world. This will happen EVERY time you load into the world, including if you reload the website."
+			},
+			"chatImageLinks": {
+				"name": "Image Shortcuts",
+				"hint": "(v13+) Automatically embeds image and gif links when posted in the chat. The link must point to a specific image file (e.g. png, webp, gif), otherwise it will not be embedded at all."
+			},
+			"chatSidebarBackground": {
+				"name": "Chat Background",
+				"hint": "(v13+) Adds a background to the chat tab of the right-hand sidebar."
+			},
+			"defaultHotbarPage": {
+				"name": "Default Hotbar Page",
+				"hint": "(v13+) What page the hotbar will default to when loading into Foundry."
+			},
+			"hideProseMirrorChatMenu": {
+				"name": "Hide Chat Text Menu",
+				"hint": "(v14+) Hides the rich-text menu controls in the chat sidebar. This does not disable any keybinds used to style your chat message, it just hides the menu."
+			},
+			"hotbarButtonGap": {
+				"name": "Hotbar Button Gap",
+				"hint": "(v13+) Allows changing the amount of space between the hotbar buttons."
+			},
+			"hotbarButtonSize": {
+				"name": "Hotbar Button Size",
+				"hint": "(v13+) Changes the size of the hotbar buttons to a size you prefer."
+			},
+			"preventMovementHistory": {
+				"name": "Prevent Movement History",
+				"hint": "(v13+, GM-Only) This prevents Foundry from recording movement history of a token, but not disabling the movement ruler."
+			},
+			"preventTokenRotation": {
+				"name": "Prevent Token Auto-Rotation",
+				"hint": "(v13+, GM-Only) This prevents tokens from rotating while you are moving them allowing you to more easily use POG-style tokens without them being rotated automatically by Foundry."
+			},
+			"preventUserConfigOpen": {
+				"name": "Prevent Auto User Config",
+				"hint": "(v13+, Non-GMs) Prevents Foundry from opening the User Configuration when a player loads into the world."
+			},
+			"repositionHotbar": {
+				"name": "Reposition Hotbar",
+				"hint": "(v13+) This moves the hotbar into a position similar to where it was in ~v11, making it so that it doesn't move when you expand or collapse the right-hand sidebar."
+			},
+			"startSidebarExpanded": {
+				"name": "Start Sidebar Expanded",
+				"hint": "(v13+) Starts the right-hand sidebar expanded when logging in."
+			},
+			"startingSidebarTab": {
+				"name": "Starting Sidebar Tab",
+				"hint": "(v13+) Determines what sidebar tab to have selected initially when loading Foundry.",
+				"choices": {
+					"blank": "No Custom Default Tab"
+				}
+			}
+		},
+		"menu": {
+			"customStatusIcons": {
+				"name": "Custom Status Icons",
+				"hint": "(v13+) Modify your token status effect icons without needing a custom module or a world script to do so! Pick any image on your server for the icons!",
+				"label": "Configure Icons"
+			},
+			"devSettings": {
+				"name": "Developer Settings",
+				"hint": "Tweaks that are relevant if you are developing something within Foundry, but are rarely useful outside of that context.",
+				"label": "Configure Dev Settings"
+			},
+			"hotbarSettings": {
+				"name": "Hotbar Settings",
+				"hint": "Tweaks that modify Foundry's hotbar",
+				"label": "Configure Hotbar"
+			},
+			"rearrangeSidebarTabs": {
+				"name": "Rearrange Sidebar Tabs",
+				"hint": "(v13+) Allows you to customize the order the right-hand sidebar tabs appear in. Including module-added sidebar tabs.",
+				"label": "Change Tab Order"
+			}
+		},
+		"keybindings": {
+			"toggleMouseBroadcast": {
+				"name": "Toggle Show Cursor",
+				"hint": "(v13+) Temporarily turns off the mouse cursor position that other players can see. Hides the cursor until you activate this keybind again."
+			}
+		},
+		"apps": {
+			"discard-changes": "Discard Changes",
+			"no-settings-to-display": "No settings to display",
+			"make-global-reference": "Make Global Reference",
+			"StatusEffectIconConfig": {
+				"title": "Configure Status Effect Icons",
+				"no-status-effects": "No status effects detected, this is most likely due to your game system or other modules.",
+				"remove-override": "Remove custom override",
+				"select-using-image-tagger": "Select using Image Tagger"
+			},
+			"SidebarTabRearranger": {
+				"title": "Rearrange Sidebar Tabs",
+				"top": "Top",
+				"bottom": "Bottom",
+				"save-user": "Save Changes for User",
+				"remove-user": "Remove User Order",
+				"save-world": "Save Changes for World",
+				"remove-world": "Remove World Order",
+				"user-override-warning": "You have a User-level tab order, saving any changes to the World-level tab order will not show up for you."
+			}
+		},
+		"notifs": {
+			"toggleMouseBroadcast": {
+				"hidingCursor": "Hiding your cursor from others!",
+				"showingCursor": "Showing your cursor to others!"
+			}
+		}
+	}
+}

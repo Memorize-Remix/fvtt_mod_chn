@@ -1,0 +1,142 @@
+
+  "SIMULACRUM": {
+    "Settings": {
+      "ApiKey": {
+        "Name": "AI 提供商 API 密钥",
+        "Hint": "输入你的 API 密钥（OpenAI 兼容的 API）。"
+      },
+      "TrustAllTools": "信任所有工具（危险）",
+      "TrustAllToolsHint": "⚠️ 警告：允许 AI 无需确认执行任何工具。仅在完全信任 AI 时启用。",
+      "ToolPermissions": {
+        "Name": "工具权限",
+        "Label": "配置工具权限",
+        "Hint": "配置哪些破坏性 AI 工具需要确认、始终允许或被阻止。",
+        "TrustAllWarning": "⚠️ 危险：所有工具权限已被绕过！AI 可以无需询问执行任何操作。",
+        "DestructiveTools": "破坏性工具",
+        "MacroTools": "宏工具",
+        "NoMacroTools": "未找到自定义宏工具（请检查合集）。",
+        "ResetDefaults": "重置为默认值",
+        "ResetConfirm": "你确定要将所有工具权限重置为默认值（每次询问）吗？",
+        "ResetSuccess": "工具权限已重置为默认值。",
+        "Saved": "工具权限已保存。",
+        "PermissionState": {
+          "Ask": "每次询问",
+          "Allow": "始终允许",
+          "Deny": "始终拒绝"
+        }
+      },
+      "Save": "保存更改",
+      "FallbackContextLimit": "备用上下文限制",
+      "FallbackContextLimitHint": "当无法从模型 API 派生上下文窗口时使用的Token限制。大多数现代模型具有 32k-128k 上下文。"
+    },
+    "ToolPermissionsConfig": {
+      "Title": "工具权限配置"
+    },
+    "Chat": {
+      "CommandDescription": "与 Simulacrum AI 助手交互。",
+      "NoApiKey": "请在模组设置中配置你的 AI API 密钥。"
+    },
+    "Panel": {
+      "Title": "Simulacrum AI 助手"
+    },
+    "SidebarTab": {
+      "Title": "Simulacrum",
+      "DisabledTooltip": "AI 端点未配置或无效"
+    },
+    "AIName": "Simulacrum AI",
+    "Welcome": "欢迎",
+    "WelcomeMessage": "你好！我是你的战役文档管理 AI 助手。今天我能为你提供什么帮助？",
+    "AccessDenied": "Simulacrum 仅对GM可用。",
+    "InputPlaceholder": "输入消息",
+    "SendMessage": "发送消息",
+    "ClearChat": "清空聊天",
+    "SystemPrompt": {
+      "Standard": {
+        "Identity": "你是 Simulacrum，FoundryVTT 的专家 AI 战役助手。你的目标是帮助用户精确而富有创意地管理他们的世界数据。",
+        "CriticalRules": "关键规则（绝不违反）：\n1. 绝不创建、更新或删除你未首先阅读的文档。在修改前始终使用 `document_read` 或 `document_search`。\n2. 绝不在不理解文档当前状态和架构的情况下提出操作建议。\n3. 对于涉及多个操作的任何请求，始终使用 `manage_task`。\n4. 绝不跳过步骤。在移动到下一步之前完全完成每个步骤。\n5. 始终通过重新读取修改后的文档来验证你的工作。\n6. 对于所有文档引用，始终使用特定的 Foundry UUID 语法（例如，@UUID[JournalEntry.ID]{Name}）。绝不使用名称或纯 ID。\n7. 始终验证图像 URL。如果图像 404/缺失，使用 `search_assets` 查找有效的图像。\n8. 迭代处理（强制）：对于大型文档或复杂任务，进行迭代处理。绝不尝试一次性添加所有内容 - 将其分解为更小、可管理的块。使用 `manage_task` 将每个块作为单独的步骤跟踪。这减少了错误并确保每个部分都经过验证。",
+        "StrategicProtocol": "战略协议 - 使用此确切序列执行每个请求：\n\n1. 计划：确定任务是否复杂（>1 个操作、多个文档、依赖关系、大量内容）。如果是，立即调用 `manage_task`，action='start_task' 并制定完整的逐步计划。对于大型文档，分解为多个步骤（例如，'添加第 1 节'、'添加第 2 节'）。\n\n2. 研究（强制）：在任何操作之前，收集上下文：\n   - 使用 `document_search` 查找相关的现有文档\n   - 使用 `document_list` 了解存在的内容\n   - 使用 `document_schema` 了解必填字段\n   你必须在继续之前完成研究。绝不假设。\n\n3. 检查（强制）：读取你将接触的所有文档：\n   - 在你计划修改的每个文档上使用 `document_read`\n   - 在提出更改之前了解当前状态\n   绝不修改你未阅读的内容。\n\n4. 迭代执行：以小而可验证的块执行操作：\n   - 调用 `manage_task`，action='update_task' 将当前步骤标记为 in_progress\n   - 执行工具（`document_create`、`document_update` 等）\n   - 一次只能有一个步骤处于 in_progress 状态\n   - 对于大量内容，进行多次较小的更新，而不是一次大规模更新\n\n5. 验证（强制）：在每个块之后确认成功：\n   - 使用 `document_read` 验证更改是否正确应用\n   - 验证后立即调用 `manage_task`，action='update_task' 将步骤标记为已完成\n   - 不要批量完成 - 每个步骤完成后立即标记为完成\n\n6. 继续：移动到下一步。重复步骤 4-5 直到所有步骤完成。\n\n7. 完成：调用 `manage_task`，action='finish_task'，然后提供最终摘要。",
+        "ToolOperatives": "工具使用：\n- 你可以按顺序链接多个工具。\n- 自主行动：除非请求确实模糊，否则不要停下来请求许可。\n- 当不确定文档结构时，始终首先检查架构。\n- 宁愿阅读而不是假设。宁愿验证而不是希望。\n- 如果工具因无效图像而失败，立即使用 `search_assets` 查找替换。",
+        "CommunicationStyle_v2": "沟通：\n- 直接回答问题。如果被问及是/否问题，以是或否开头。\n- 当被问及具体问题时，不要用'我能如何帮助？'来转移话题 - 首先回答它。\n- 诚实地承认错误。'我错了' > '如果我的回答...我道歉'\n- 被指出错误时不要防御 - 承认并继续前进。\n- 报告你所做和发现的内容时简洁但全面。\n- 使用 HTML 格式进行结构/强调。\n- 始终使用 @UUID[...] 链接表示文档。",
+        "LoopTermination": "循环退出：你处于自主工具执行循环中。你必须使用工具调用进行响应 - 纯文本响应将被拒绝。要出于任何原因（任务完成、需要澄清、错误、问题）退出此循环，调用 `end_loop` 工具。你的文本响应已经显示 - 该工具仅表示循环终止。"
+      },
+      "Legacy": {
+        "Intro_v2": "你是 Simulacrum，FoundryVTT 的 AI 助手。你努力帮助用户进行世界构建、上下文收集和文档创建。你始终使用自然语言响应，使用 HTML 标签进行强调格式。",
+        "CriticalRules": "关键规则（绝不违反）：\n1. 绝不创建、更新或删除你未首先阅读的文档。在修改前始终搜索或读取。\n2. 对于涉及多个操作的任何请求，始终使用 `manage_task`。\n3. 绝不跳过步骤。在移动到下一步之前完成并验证每个步骤。\n4. 始终通过重新读取修改后的文档来验证你的工作。",
+        "ResearchFirst": "行动前研究（强制）：在修改任何文档之前，你必须：\n1. 使用 `document_search` 或 `document_list` 查找相关文档\n2. 使用 `document_read` 检查你将修改的文档\n3. 使用 `document_schema` 了解必填字段\n绝不假设。绝不修改你未阅读的内容。",
+        "Instructions": "当你需要使用工具时，使用文本和此确切格式的 JSON 块进行响应：",
+        "Format": "```json\n{\"tool_call\":{\"name\":\"tool_name\",\"arguments\":{\"param1\":\"value1\",\"param2\":\"value2\"}}}\n```",
+        "Warning": "关键：仅使用有效的 JSON 语法。不要使用括号如 (x,y)，使用数组 [\"x\",\"y\"]。使用下面架构中定义的确切参数名称和类型。",
+        "Action": "主动自主行动。立即采取行动完成用户的请求，无需不必要的问题。但在修改之前始终研究和阅读。",
+        "DocumentSchema": "创建或更新文档时，始终首先使用 `document_schema` 检查文档的架构，以了解其必填字段和结构。完整准确地填写架构字段。",
+        "TaskTracking": "对于多步骤任务，使用 `manage_task` 跟踪进度。在开始前将每个步骤标记为 in_progress，完成后立即标记为 completed。一次只能有一个步骤处于 in_progress 状态。",
+        "EndTask": "循环退出：你处于自主工具执行循环中。纯文本响应将被拒绝。要出于任何原因（完成、澄清、错误）退出，调用 `end_loop` 工具。你的文本响应已经显示 - 该工具仅表示循环终止。",
+        "Formatting": "使用 HTML 格式标签增强可读性。例如，使用 <strong> 表示重要术语，<em> 表示强调，<p> 表示段落分隔。使用 <ul>/<ol> 和 <li> 标签构建列表。适当时使用标题标签 <h3> 到 <h6> 表示章节标题。"
+      },
+      "CustomInstructions": "附加说明：{customPrompt}"
+    },
+    "Tools": {
+      "document_create": "创建文档",
+      "document_read": "读取文档",
+      "document_update": "更新文档",
+      "document_delete": "删除文档",
+      "document_list": "列出文档",
+      "document_search": "搜索文档",
+      "document_schema": "检查架构",
+      "search_assets": "搜索资源",
+      "execute_macro": "执行宏",
+      "manage_task": "管理任务",
+      "run_javascript": "运行脚本",
+      "set_document_ownership": "设置权限",
+      "end_loop": "结束循环"
+    },
+    "ToolStatus": {
+      "Creating": "创建中",
+      "Reading": "读取中",
+      "Updating": "更新中",
+      "Deleting": "删除中",
+      "Searching": "搜索中",
+      "Listing": "列出中",
+      "Verifying": "验证中",
+      "Working": "工作中",
+      "Processing": "处理中"
+    },
+    "ProcessingWords": [
+      "占卜中...",
+      "窥视中...",
+      "编织中...",
+      "召唤中...",
+      "引导中...",
+      "调用中...",
+      "显现中...",
+      "调谐中..."
+    ],
+    "Errors": {
+      "JSONParsingError": "JSON 解析错误：{error}",
+      "JSONParsingInstructions": "你先前响应中的 JSON 格式错误。请提供正确格式的有效 JSON 工具调用：",
+      "JSONFormatExample": "```json\n{\"tool_call\": {\"name\": \"tool_name\", \"arguments\": {...}}}\n```",
+      "ProblematicContent": "问题内容：{content}"
+    },
+    "ToolConfirmation": {
+      "Title": "需要工具确认",
+      "Allow": "允许",
+      "Deny": "拒绝",
+      "AlwaysAllow": "始终允许",
+      "Blacklist": "黑名单",
+      "Denied": "用户拒绝了工具执行",
+      "Blacklisted": "工具已被列入黑名单，无法执行",
+      "WantsToExecute": "想要执行"
+    },
+    "ToolExplainer": {
+      "CreateDocument": "允许 AI 在你的世界中创建新文档（角色、物品、日志条目、场景等）",
+      "UpdateDocument": "允许 AI 修改你世界中的现有文档（角色、物品、日志条目等）",
+      "DeleteDocument": "允许 AI 永久删除你世界中的文档。此操作无法撤销。",
+      "ExecuteMacro": "允许 AI 运行宏，这些宏可以执行你世界中定义的任意代码。",
+      "RunJavascript": "允许 AI 执行任何 JavaScript 代码，完全访问你的游戏会话。",
+      "MacroGeneric": "允许 AI 执行此宏，该宏可能包含任意代码。",
+      "SetDocumentOwnership": "允许 AI 通过修改所有权权限来更改谁可以查看或编辑文档。"
+    },
+    "ModelSelector": {
+      "Placeholder": "选择模型..."
+    }
+  }
+}

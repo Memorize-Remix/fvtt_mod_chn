@@ -1,0 +1,30 @@
+{
+  "Koboldworks": {
+    "ReadyUp": {
+      "VolumeLabel": "Volume %",
+      "VolumeHint": "Volume percentage for audio notifications. This is not linear scale. You may notice largest change in the lower (sub 25%) range.",
+      "NextUp": "Next Up!",
+      "YourTurn": "Your Turn!",
+      "RoundSfx": "Round start sound",
+      "RoundSfxHint": "Sound effect played whenever new round starts. To enhance feeling of passing rounds and help tracking them.",
+      "TurnSfx": "Turn start sound",
+      "TurnSfxHint": "Sound effect played whenever current player turn starts; altering them to action.",
+      "NextSfx": "Next up sound",
+      "NextSfxHint": "Sound effect played a turn before current player's turn starts; anticipating their need to action.",
+      "Test": "Test",
+      "TestNotify": "Testing \"{key}\": {file} - at {volume}%`",
+      "NotifyLabel": "Display notification banners",
+      "NotifyHint": "If enabled, displays large banner-like turn notifications in middle of the canvas.",
+      "LingerLabel": "Notification duration",
+      "LingerHint": "Defines for how long the turn notifications linger before fading away. 0 makes them stay indefinitely until clicked.",
+      "SpamGuardLabel": "Spam guard",
+      "SpamGuardHint": "Simple protection against notification spam.",
+      "NextUpLabel": "Next up message",
+      "NextUpHint": "Message displayed when the player's turn is next in order.\n`{name}` can be used to display the combatant's name.\n\\n allows line breaks.",
+      "TurnStartLabel": "Turn start message",
+      "TurnStartHint": "Message displayed when the player's turn starts.\n`{name}` is available here like with next up message.",
+      "StickyLabel": "Sticky notification",
+      "StickyHint": "If enabled, next turn notification remains on screen in faded out state to ensure players realize it is still upcoming."
+    }
+  }
+}

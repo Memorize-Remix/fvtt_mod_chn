@@ -1,0 +1,216 @@
+
+  "LMJE": {
+    "SYSTEM": {
+      "changelog": {
+        "intro": "已安装新版本！以下是自上次安装更新以来的所有更改列表。",
+        "additions": "新增功能",
+        "fixes": "错误修复"
+      },
+      "getDocument": {
+        "wrongType": "预期类型与找到的文档类型不匹配",
+        "expectedTypeNotFound": "预期类型未实现",
+        "noExpectedDocumentType": "未提供预期类型",
+        "noDocumentFound": "未找到文档",
+        "selfReference": "无法进行自我引用",
+        "multiplePagesFound": "找到多个具有该标识符的页面"
+      },
+      "welcomeMessage": {
+        "name": "发布欢迎消息",
+        "hint": "勾选后，当世界重新加载时，将欢迎消息发布到聊天中。",
+        "message": {
+          "Thanks": "感谢安装 More Journal Enrichers",
+          "Wiki": "查看维基以了解mod的说明",
+          "Journal": "或者，你可以查看介绍日志",
+          "Contact": "如果你有任何问题或反馈，请随时在 Discord 上联系我",
+          "wikiLinkLabel": "维基",
+          "FoundryVTTDiscordLabel": "官方 FVTT Discord",
+          "WeltenformerDiscordLabel": "Weltenformer Discord - 地图制作和 FVTT 社区",
+          "IntroductionJournal": "@UUID[Compendium.lyynix-more-journal-enrichers.lmje-introduction.JournalEntry.5HxMwKHnyXOC1Xtg]",
+          "IntroductionJournalLinkPage": "@UUID[Compendium.lyynix-more-journal-enrichers.lmje-introduction.JournalEntry.5HxMwKHnyXOC1Xtg.JournalEntryPage.o1vv5ODbL2o7bAmi]"
+        }
+      }
+    },
+    "JOURNAL": {
+      "PAGE": {
+        "pageTypeNotSupported": "此日志页面类型当前不受支持"
+      },
+      "CHECKBOX": {
+        "invalidId": "输入的 ID 无效",
+        "idNotFound": "输入的 ID 不存在"
+      },
+      "VARIABLE": {
+        "editVariablesDialog": {
+          "title": "编辑变量",
+          "chooseKey": "选择要编辑的键：",
+          "newKey": "新键",
+          "editKey": "编辑键：",
+          "editVal": "编辑值：",
+          "submit": "提交",
+          "submitResponse": "成功更新变量",
+          "delete": "删除",
+          "deleteResponse": "成功删除变量"
+        },
+        "chooseVariablesDialog": {
+          "title": "选择变量",
+          "submit": "提交"
+        },
+        "keyNotFound": "该键没有值"
+      }
+    },
+    "SCENEMENU": {
+      "Title": "场景菜单",
+      "Tooltip": {
+        "Show": "显示场景",
+        "Activate": "激活场景",
+        "ToggleNav": "在导航中切换场景",
+        "Preload": "预加载场景",
+        "Edit": "编辑场景",
+        "Collapse": "显示/隐藏预览"
+      }
+    },
+    "ROLLTABLE": {
+      "Title": "随机表菜单"
+    },
+    "COMPENDIUM": {
+      "INLINE": {
+        "Show": "显示合集包"
+      },
+      "MENU": {
+        "Title": "合集包菜单"
+      },
+      "ERROR": {
+        "NotFound": "未找到合集包",
+        "Multiple": "找到多个同名合集包"
+      }
+    },
+    "PLAYLIST": {
+      "Title": "播放列表菜单",
+      "Tooltip": {
+        "PlayPause": "播放 / 暂停",
+        "FastForward": "下一首音频",
+        "Edit": "编辑播放列表"
+      }
+    },
+    "WHISPER": {
+      "Title": "私聊消息",
+      "Dialog": {
+        "Title": "向玩家私聊发送",
+        "Cancel": "取消"
+      }
+    },
+    "CHAT": {
+      "Title": "聊天消息"
+    },
+    "POLYGLOT": {
+      "UnknownLanguage": "未知语言"
+    },
+    "PROSEMIRROR": {
+      "INFO": {
+        "Cancel": "按 [{keybinding}] 取消选择过程。",
+        "Cancelled": "选择过程已取消。",
+        "WrongType": "所选文档类型错误。",
+        "AddedDocument": "所选文档已添加到增强器：{docName}"
+      },
+      "TEXTINPUTDIALOG": {
+        "TITLE": {
+          "Alias": "输入别名",
+          "Chat": "输入聊天消息",
+          "Checkbox": "输入复选框名称",
+          "CBLabel": "输入复选框的标签",
+          "IfChecked": "输入复选框名称",
+          "IfCheckedContent": "输入文本",
+          "PolyglotLanguage": "输入语言",
+          "PolyglotText": "输入文本",
+          "Page": "选择页面"
+        },
+        "DESCRIPTION": {
+          "Alias": "输入替代标签。留空或点击取消以不分配别名。",
+          "Chat": "输入应发送到聊天的消息。",
+          "Checkbox": "输入复选框的唯一名称。此名称不会显示在复选框旁边，仅用作内部标识符。",
+          "CBLabel": "输入将显示在复选框旁边的标签。留空或按取消以不设置标签。",
+          "IfChecked": "输入应使用的复选框的唯一名称。",
+          "IfCheckedContent": "输入复选框被选中时应显示的文本。",
+          "PolyglotLanguage": "输入文本应显示的语言。",
+          "PolyglotText": "输入所选语言中应显示的文本。",
+          "Page": "请选择要插入的日志页面："
+        },
+        "Accept": "接受",
+        "Cancel": "取消"
+      },
+      "ENRICHERS": {
+        "MenuTitle": "增强器",
+        "TOC": {
+          "Category": "目录",
+          "toc": "目录 - 其他日志",
+          "tocs": "目录 - 本日志",
+          "otoc": "有序目录 - 其他日志",
+          "otocs": "有序目录 - 本日志"
+        },
+        "JOURNAL": {
+          "Page": "日志页面",
+          "Category": "日志增强器",
+          "Variable": "占位符文本",
+          "Checkbox": "复选框",
+          "IfChecked": "条件文本"
+        },
+        "SCENES": {
+          "Category": "场景增强器",
+          "Menu": "场景菜单",
+          "Full": "完整场景",
+          "Inline": "内联场景"
+        },
+        "ROLLTABLES": {
+          "Category": "随机表增强器",
+          "Menu": "随机表菜单",
+          "Full": "完整随机表",
+          "Inline": "内联随机表"
+        },
+        "PLAYLIST": {
+          "Category": "播放列表增强器",
+          "Menu": "播放列表菜单",
+          "Inline": "内联播放列表"
+        },
+        "COMPENDIUM": {
+          "Category": "合集包增强器",
+          "Full": "完整合集",
+          "Inline": "内联合集"
+        },
+        "CHAT": {
+          "Category": "聊天增强器",
+          "Post": "将段落发布到聊天",
+          "Whisper": "向用户私聊发送段落"
+        },
+        "Polyglot": "Polyglot"
+      }
+    },
+    "DND": {
+      "CHARACTER": {
+        "imageAlt": "角色立绘",
+        "race": "种族",
+        "alignment": "阵营",
+        "attr": {
+          "str": "力量",
+          "dex": "敏捷",
+          "con": "体质",
+          "int": "智力",
+          "wis": "感知",
+          "cha": "魅力"
+        }
+      }
+    },
+    "PF2E": {
+      "CHARACTER": {
+        "imageAlt": "角色立绘",
+        "level": "等级",
+        "attr": {
+          "str": "力量",
+          "dex": "敏捷",
+          "con": "体质",
+          "int": "智力",
+          "wis": "感知",
+          "cha": "魅力"
+        }
+      }
+    }
+  }
+}

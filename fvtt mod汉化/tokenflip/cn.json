@@ -1,0 +1,38 @@
+
+    "tokenflip": {
+        "token-flip-config": {
+            "title": "配置Token翻转",
+            "add": "添加新面容",
+            "flip": "翻转Token",
+            "model3d": "3D 模型",
+            "faceId": "面容 ID",
+            "protoWarning": "警告：由于FVTT核心Bug 影响原型Token，强烈建议在场景中的Token上设置Token翻转，然后将Token分配给原型Token。",
+            "copiedId": "将 ID 复制到剪贴板",
+            "copyID": "复制 ID",
+            "autoFlip": {
+                "label": "自动翻转",
+                "none": "无",
+                "inCombat": "战斗中",
+                "outOfCombat": "退出战斗"
+            },
+            "transition": {
+                "label": "过渡",
+                "flip": "翻转"
+            },
+            "autoFlipMacro": {
+                "label": "自动翻转宏",
+                "hint": "当角色或其物品更新时，以及当 GM 加载到场景中时运行的宏。返回 true 即可翻转至此面容。更多信息请参阅wiki。"
+            }
+        },
+        "settings": {
+            "flipSpeed": {
+                "name": "翻转速度",
+                "hint": "翻转动画的持续时间（秒）。对于非翻转动画，该数字将乘以 10。默认值为 0.1。"
+            },
+            "enableAutoFlip": {
+                "name": "启用自动翻转",
+                "hint": "启用 token 自动翻转功能。如果不使用自动翻转功能，可以禁用此设置以节省性能。"
+            }
+        }
+    }
+}

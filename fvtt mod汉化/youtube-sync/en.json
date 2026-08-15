@@ -1,0 +1,43 @@
+{
+    "youtube-sync": {
+        "settings": {
+            "bgColorPrimary": {
+                "name": "Primary Background Color",
+                "hint": "Primary color for background gradient (hex format)\nDefault is: #667eea"
+            },
+            "bgColorSecondary": {
+                "name": "Secondary Background Color",
+                "hint": "Secondary color for background gradient (hex format)\nDefault is: #764ba2"
+            },
+            "textColor": {
+                "name": "Text Color",
+                "hint": "Main text color (hex format)\nDefault is: #ffffff"
+            },
+            "accentColor": {
+                "name": "Buttons Color",
+                "hint": "Buttons and highlights color (hex format)\nDefault is: #FF6B6B"
+            },
+            "youtube-sync.rememberVolume.name": "Remember Volume",
+            "youtube-sync.rememberVolume.hint": "Remember the last volume setting and restore it when opening a new video"
+        },
+        "dialog": {
+            "title": "YouTube Sync",
+            "urlLabel": "YouTube video URL",
+            "playButton": "Play",
+            "cancelButton": "Cancel",
+            "placeholder": "Enter YouTube URL here…",
+            "love": {
+                "question": "Do you like this plugin?",
+                "linkKOFI": "Buy me a coffee on Ko-fi"
+            }
+        },
+        "controls": {
+            "play": "Play",
+            "pause": "Pause",
+            "stop": "Stop"
+        },
+        "errors": {
+            "invalidUrl": "Invalid YouTube URL"
+        }
+    }
+}

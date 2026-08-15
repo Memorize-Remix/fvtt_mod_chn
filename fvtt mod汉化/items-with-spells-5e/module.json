@@ -1,0 +1,93 @@
+{
+  "id": "items-with-spells-5e",
+  "title": "Items with Spells DnD5e",
+  "description": "A module that allows spells to be attached to Items, Features, etc.",
+  "version": "13.0.2",
+  "authors": [
+    {
+      "name": "MorePurpleMoreBetter",
+      "discord": "morepurplemorebetter",
+      "url": "https://github.com/morepurplemorebetter",
+      "patreon": "https://www.patreon.com/morepurplemorebetter"
+    },
+    {
+      "name": "Zhell",
+      "discord": "zhell9201",
+      "url": "https://github.com/krbz999",
+      "patreon": "https://www.patreon.com/zhell",
+      "ko-fi": "https://ko-fi.com/zhell"
+    },
+    {
+      "name": "Andrew Krigline",
+      "discord": "Calego#0914",
+      "url": "https://github.com/ElfFriend-DnD",
+      "patreon": "https://www.patreon.com/ElfFriend_DnD",
+      "ko-fi": "https://ko-fi.com/elffriend"
+    }
+  ],
+  "esmodules": [
+    "scripts/items-with-spells-5e.min.js"
+  ],
+  "styles": [
+    "styles/items-with-spells-5e.css"
+  ],
+  "compatibility": {
+    "minimum": 12,
+    "maximum": 12,
+    "verified": "12.331"
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    },
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "lang/it.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0",
+          "maximum": "4.9.99",
+          "verified": "4.0.3"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "compatibility": {
+          "minimum": "1.12.14.1"
+        }
+      }
+    ]
+  },
+  "bugs": "https://github.com/morepurplemorebetter/fvtt-items-with-spells-5e/issues",
+  "changelog": "https://github.com/morepurplemorebetter/fvtt-items-with-spells-5e/releases",
+  "download": "https://github.com/morepurplemorebetter/fvtt-items-with-spells-5e/releases/download/v13.0.2/module.zip",
+  "manifest": "https://github.com/morepurplemorebetter/fvtt-items-with-spells-5e/releases/latest/download/module.json",
+  "readme": "https://raw.githubusercontent.com/morepurplemorebetter/fvtt-items-with-spells-5e/main/README.md",
+  "url": "https://github.com/morepurplemorebetter/fvtt-items-with-spells-5e",
+  "flags": {
+    "fvttdevleague": {
+      "package-jam": 2022
+    }
+  }
+}

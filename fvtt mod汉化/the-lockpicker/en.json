@@ -1,0 +1,121 @@
+{
+  "LOCKPICKING": {
+    "Title": "Lockpicking",
+    "TrapTitle": "Trap Disarming",
+    "ConfigTitle": "The Lockpicker — Configuration",
+    "OnlyGM": "Only the Gamemaster can open this window.",
+    "RequestSent": "Request sent to Gamemaster...",
+    "RequestInfo": "{user} requests a lock or trap challenge ({actor}).",
+    "ButtonTitle": "Request Lockpicking / Trap Disarm",
+    "Start": "Start",
+    "Cancel": "Cancel",
+    "Cancelled": "Cancelled",
+    "Ready": "Ready – click »Start«.",
+    "Memorize": "Memorize the sequence!",
+    "Go": "Let's go!",
+    "StartedSpectator": "Minigame started (Spectator).",
+    "Success": "Success!",
+    "Failure": "Failure",
+    "SpectatorSuccess": "Success! (Spectator)",
+    "SpectatorFailure": "Failure: {reason} (Spectator)",
+    "TimeUp": "Time's up",
+    "WrongKey": "Wrong Key",
+    "MistakesAllowed": "Mistakes allowed: {remaining}/{max}",
+    "MistakesCount": "Wrong Key ({current}/{max})",
+    "TrapTag": "Trap",
+    "Phase": "Phase {n}",
+    "ChainedNextPhase": "Phase {n} — Configure the next phase.",
+    "NoTools": "{actor} does not possess Thieves' Tools.",
+    "NoCharSelected": "No character selected.",
+    "Attempts": "attempts to pick a lock.",
+    "AttemptsDisarm": "attempts to disarm a trap.",
+    "ReliableTalent": "Reliable Talent",
+    "Disadvantage": "Disadvantage",
+    "NoDisadvantage": "No Disadvantage",
+    "BonusBreakdown": "Bonus:",
+    "Proficiency": "Proficiency",
+    "Expertise": "Expertise",
+    "NoProficiency": "No Proficiency",
+    "Progress": "Progress:",
+    "Sequence": "Sequence:",
+    "CurrentKey": "Current Key",
+    "ExtremeMode": "⚡ Extreme Mode",
+    "ChatMessage": {
+      "Title": "Lockpicking – <b>{actor}</b>",
+      "TrapTitle": "Trap Disarming – <b>{actor}</b>",
+      "Result": "Result: <b>{result}</b>",
+      "Mistakes": "Mistakes: {mistakes} / {allowed}",
+      "TrapDamage": "⚠ <b>Trap triggered!</b> GM should apply <b>{damage} {damageType}</b> damage.",
+      "TrapDamageAuto": "Trap triggered! {total} {damageType} damage applied ({formula}).",
+      "TrapApply": "GM: apply damage manually to the character."
+    },
+    "Result": {
+      "Success": "Success",
+      "Failure": "Failure"
+    },
+    "Explanation": {
+      "Bonus": "Thieves' Tools bonus ({label}): <b>{bonus}</b>.",
+      "Reliable": "With <b>Reliable Talent</b>: <b>{mistakes}</b> allowed mistakes.",
+      "NoReliable": "No Reliable Talent: 0 allowed mistakes.",
+      "TrapWarning": "⚠ On failure: <b>{damage} {damageType}</b> damage will be applied.",
+      "Instructions": "Press the displayed keys in order before time runs out."
+    },
+    "Settings": {
+      "DcWasd": {
+        "Name": "DC threshold for WASD keys",
+        "Hint": "From this DC onwards, WASD keys are added to the sequence pool (in addition to arrows)."
+      },
+      "DcExtra": {
+        "Name": "DC threshold for letters & numbers",
+        "Hint": "From this DC onwards, extra letter and number keys are added to the pool."
+      }
+    },
+    "Config": {
+      "Character": "Character:",
+      "Type": "Challenge Type:",
+      "TypeLock": "🔒 Lock",
+      "TypeTrap": "⚠ Trap",
+      "DC": "Difficulty Class (DC):",
+      "Damage": "Damage on failure:",
+      "ChainedTrap": "Chained Trap (multi-phase)",
+      "ChainedTrapHint": "After success, the GM will be prompted to configure the next phase.",
+      "ExtremeMode": "⚡ Extreme Mode",
+      "ExtremeModeHint": "The sequence is shown briefly, then hidden. You must memorize it.",
+      "Start": "Start Minigame",
+      "Presets": "Saved Presets:",
+      "SelectPreset": "Select a preset",
+      "LoadPreset": "Load",
+      "SavePreset": "Save as preset:",
+      "PresetName": "Preset name...",
+      "SavePresetBtn": "Save",
+      "PresetSaved": "Preset \"{name}\" saved.",
+      "OpenHistory": "View History",
+      "Estimate": "{steps} steps · ~{seconds}s · Keys: {keys}",
+      "KeysArrows": "Arrows only",
+      "KeysWasd": "Arrows + WASD",
+      "KeysAll": "Arrows + WASD + Letters/Numbers",
+      "DamageTypeLabel": "Damage type:",
+      "DamageTypes": {
+        "Piercing": "Piercing",
+        "Poison": "Poison",
+        "Fire": "Fire",
+        "Cold": "Cold",
+        "Lightning": "Lightning",
+        "Acid": "Acid",
+        "Necrotic": "Necrotic",
+        "Force": "Force"
+      }
+    },
+    "History": {
+      "Title": "The Lockpicker — GM History",
+      "Date": "Date",
+      "Actor": "Character",
+      "Type": "Type",
+      "Result": "Result",
+      "Mistakes": "Mistakes",
+      "Damage": "Damage",
+      "Empty": "No attempts recorded yet.",
+      "Clear": "Clear History"
+    }
+  }
+}

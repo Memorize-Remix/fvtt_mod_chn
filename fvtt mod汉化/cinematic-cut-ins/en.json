@@ -1,0 +1,475 @@
+{
+  "CINEMATIC": {
+    "AllOut": {
+      "Btn": {
+        "Execute": "EXECUTE",
+        "Save": "Save",
+        "Test": "TEST (LOCAL)"
+      },
+      "CenterMessage": "Center Message",
+      "GlobalSettings": "Global Settings",
+      "Hint": {
+        "LinkCombat": "Roll Initiative on Join & Start Combat when Ready."
+      },
+      "Label": {
+        "AudioGroup": "AUDIO",
+        "CharVoice": "음성",
+        "Character": "CHARACTER",
+        "Color": "Theme",
+        "Finish": "Finish SFX",
+        "Font": "Font",
+        "SubFont": "Sub Font",
+        "GlobalBGM": "Background Music (BGM)",
+        "IndivSFX": "SFX",
+        "IndivVoice": "Voice",
+        "LinkCombat": "Link Combat",
+        "SFX": "SFX (Effect)",
+        "ScaleShort": "S",
+        "Shadow": "Shadow",
+        "ShowNames": "Show Char. Names",
+        "Speed": "Speed",
+        "TextColor": "Color",
+        "TextGroup": "TEXT",
+        "Theme": "Theme",
+        "Voice": "Voice / BGM",
+        "VoteButtonText": "Vote Button Text",
+		"VoteButtonSound": "Vote Button Sound",
+        "X": "X",
+        "Y": "Y",
+        "ZoomShort": "Z"
+      },
+      "LivePreview": "LIVE PREVIEW",
+      "AddParticipant": "Add Actor",
+      "SelectActor": "Select Actor",
+      "Notif": {
+        "NoActorsAvailable": "No actors available to add."
+      },
+      "Participants": "Participants",
+      "Placeholder": {
+        "DisplayText": "Display Text",
+        "MainTitle": "Main Title (Default: ALL-OUT ATTACK)",
+        "PresetName": "Preset Name",
+        "SubTitle": "Sub Title (Default: TIME TO FINISH IT!)"
+      },
+      "SelectPreset": "-- Presets --"
+    },
+    "Analysis": {
+      "Actor": {
+        "Failed": "Failed (None)",
+        "TokenHint": "Selected Token"
+      },
+      "Btn": {
+        "Close": "Close"
+      },
+      "ContextMenuName": "⚡ Cinematic Analysis",
+      "Dice": {
+        "None": "No Dice Rolls"
+      },
+      "Hint": {
+        "Dice": "* Enter Orange/Blue numbers into 'Roll Index'.<br>* Set condition with Operator (>=) and Value.",
+        "DiceLegend": "(Left: Dice Check / Right: Formula)",
+        "Keyword": "Enter a word from above into the 'Keyword' condition."
+      },
+      "Label": {
+        "Actor": "Detected Actor",
+        "Dice": "Dice Data (Dice Check)",
+        "Keyword": "Text Keyword"
+      },
+      "Roll": {
+        "Index": "Index",
+        "Result": "Results",
+        "Sum": "Sum",
+        "Total": "Total"
+      },
+      "Title": "Message Analysis (Cinematic Inspector)"
+    },
+    "Blend": {
+      "Add": "Add",
+      "Multiply": "Multiply",
+      "Normal": "Normal",
+      "Overlay": "Overlay",
+      "Screen": "Screen"
+    },
+    "Config": {
+      "Btn": {
+        "Global": "Global"
+      },
+      "BtnAdd": "Add",
+      "BtnAddSound": "Add Audio Path",
+      "BtnAddVariation": "Add Variation",
+      "BtnDelete": "Delete",
+      "BtnLoad": "Load",
+      "BtnReset": "Reset",
+      "BtnSave": "Save",
+      "BtnSaveConfig": "Save Configuration",
+      "BtnTest": "Test (Local)",
+      "ColorsEffects": "Colors & Effects",
+      "CustomDecoration": "Custom Decoration (Assets)",
+      "Dialog": {
+        "DeleteContent": "<p>Are you sure you want to delete this preset?</p>",
+        "DeleteTitle": "Delete Preset",
+        "OverwriteGlobal": "<p>A global style named <strong>\"{name}\"</strong> already exists.<br>Do you want to overwrite it?</p>",
+        "OverwriteGroup": "<p>A group preset named <strong>\"{name}\"</strong> already exists.<br>Do you want to overwrite it?</p>",
+        "OverwritePersonal": "<p>A preset named <strong>\"{name}\"</strong> already exists.<br>Do you want to overwrite it?</p>",
+        "OverwriteTitle": "Overwrite Preset?",
+        "ResetContent": "<p>Are you sure you want to reset all settings to default?</p>",
+        "ResetTitle": "Reset Settings"
+      },
+      "FontDefault": " (Default)",
+      "GeneralSettings": "General Settings",
+      "Groups": {
+        "Add": "Add Group",
+        "Hint": "Set a default global preset per group. Actors in that group can fall back to it.",
+        "Name": "Group name",
+        "NoDefault": "-- No Default Preset --",
+        "Title": "Actor Groups"
+      },
+      "Hint": {
+        "ActorGroup": "Assign this actor to a group to use group default presets as fallback.",
+        "AudioOnly": "Play only sound/SFX without any visual effects or letterbox.",
+        "LocalOnly": "Play this cut-in only on the triggering client. Other players will not see it.",
+        "SaveBottom": "Use bottom button to save changes.",
+        "VideoAudio": "If the cut-in image is a video file, play its audio track as well."
+      },
+      "Label": {
+        "ActorGroup": "Actor Group",
+        "AudioOnly": "Audio Only (No Visuals)",
+        "LocalOnly": "Local Only (This Client Only)",
+        "BgAdjust": "Background Adjust",
+        "BlendMode": "Blend Mode",
+        "Border": "Border",
+        "CharAdjust": "Char. Adjust",
+        "CharShadow": "Char. Shadow",
+        "CustomBg": "Custom Background Image",
+        "CustomDuration": "Display Duration",
+        "CustomLoop": "Loop Video Assets",
+        "CustomMid": "커스텀 중경 이미지",
+        "CustomOverlay": "Custom Overlay (Foreground)",
+        "DimIntensity": "Background Dimming",
+        "FontFamily": "Font Family",
+        "SubFontFamily": "Sub Text Font",
+        "FontBold": "Bold",
+        "FontItalic": "Italic",
+        "Format": "Format",
+        "HideBackground": "Hide Theme Background",
+        "HideCharShadow": "Hide Shadow",
+        "Image": "Cut-in Image",
+        "KeepAudioPlaying": "Keep playing audio after cut-in ends",
+        "LayerDelay": "Start Delay (sec)",
+        "LayersBack": "Background Layers (Back)",
+        "LayersFront": "Foreground Layers (Front)",
+        "Loop": "Loop Video",
+        "Main": "Main",
+        "MainOffset": "Main Offset",
+        "MainSize": "Main Size",
+        "MainText": "Main Text",
+        "MidAdjust": "중경 위치/크기",
+        "Mirror": "Mirror",
+        "NoBackLayers": "No Background Layers configured.",
+        "NoFrontLayers": "No Foreground Layers configured.",
+        "Opacity": "Opacity",
+        "OverlayAdjust": "Overlay Adjust",
+        "PosX": "Pos X",
+        "PosY": "Pos Y",
+        "Remove": "Remove",
+        "Rotation": "Rotation",
+        "SFX": "SFX (Effect)",
+        "SFXList": "SFX List (Random)",
+        "SFXVolume": "SFX Volume",
+        "Scale": "Scale",
+        "ScreenPos": "Screen Pos (X / Y)",
+        "Shake": "Screen Shake",
+        "Sound": "Voice / BGM",
+        "SoundList": "Voice / BGM List (Random)",
+        "SoundVolume": "Voice / BGM Volume",
+        "Sub": "Sub",
+        "SubOffset": "Sub Offset",
+        "SubSize": "Sub Size",
+        "SubText": "Sub Text",
+        "TextColor": "Text Color",
+        "Theme": "Theme",
+        "ThemeColor": "Theme Color",
+        "VideoAudio": "Play Video Audio"
+      },
+      "Layer": {
+        "BtnAdd": "Add Layer",
+        "EmptyState": "Click 'Add Layer' to create custom effects.",
+        "SystemFixed": "(System Fixed)",
+        "ZIndex": "Z-idx",
+        "ZIndexHint": "Higher = In Front"
+      },
+      "LayerManager": "Layer Manager",
+      "LivePreview": "Live Preview",
+      "Notif": {
+        "EnterGlobalName": "Please enter a name for the global preset.",
+        "EnterName": "Please enter a preset name.",
+        "GlobalSaved": "Saved as Global Preset: \"{name}\"",
+        "PresetDeleted": "Cinematic-cut-ins FX: Preset deleted.",
+        "PresetLoaded": "Cinematic-cut-ins FX: Loaded preset  \"{name}\".",
+        "PresetSaved": "Cinematic-cut-ins FX: Preset  \"{name}\" saved.",
+        "ResetComplete": "Cinematic-cut-ins FX: Settings have been reset.",
+        "Saved": "Cinematic-cut-ins FX: Configuration saved for {name}",
+        "SelectDelete": "Please select a preset to delete.",
+        "TestPlay": "Cinematic-cut-ins FX: Playing local preview."
+      },
+      "Option": {
+        "NoGroup": "-- No Group --"
+      },
+      "Placeholder": {
+        "PresetName": "New Preset Name",
+        "Width": "Width",
+        "X": "X (px)",
+        "Y": "Y (px)"
+      },
+      "Presets": "Presets",
+      "PreviewHint": "Preview represents a scaled-down version.",
+      "SaveActorTitle": "Save to Actor",
+      "SaveGlobalTitle": "Save as Global Style",
+      "SelectPreset": "-- Select a Preset --",
+      "Short": {
+        "Angle": "Angle(°)",
+        "Delay": "Delay",
+        "Opacity": "Op",
+        "Scale": "Sc",
+        "X": "X",
+        "Y": "Y"
+      },
+      "Tab": {
+        "General": "General",
+        "Triggers": "Triggers"
+      },
+      "TipVariation": "One of these (or the main image) will be chosen randomly.",
+      "Title": "Cinematic-cut-ins FX Settings",
+      "Typography": "Typography",
+      "Variations": "Image Variations (Random)"
+    },
+    "Control": {
+      "Btn": {
+        "ActiveConfig": "Active Config",
+        "AssignGroupSelected": "Assign Group to Selected",
+        "CreateNew": "CREATE NEW ATTACK",
+        "CreateScene": "Create New Scene Effect",
+        "CreateSelected": "CREATE ALL-OUT WITH SELECTED",
+        "LoadMore": "Load More",
+        "NewStyle": "New Style"
+      },
+      "Filter": {
+        "All": "All"
+      },
+      "Hint": {
+        "SelectFirst": "(Select actors in the Actors tab first to include them)"
+      },
+      "NoActors": "No controllable actors found.",
+      "NoGroups": "No saved group presets.",
+      "Notif": {
+        "AssignedGroup": "Assigned group to {count} actor(s).",
+        "ClearedGroup": "Cleared group assignment for {count} actor(s).",
+        "NoActorsSelected": "No selected actors."
+      },
+      "Option": {
+        "ClearGroup": "Clear Group"
+      },
+      "Placeholder": {
+        "Search": "Search Actors..."
+      },
+      "Label": {
+        "Selected": "Selected"
+      },
+      "Tab": {
+        "Actors": "Actors",
+        "AllOut": "All-Out",
+        "Scenes": "Scenes",
+        "Style": "Style"
+      },
+      "Title": {
+        "CopyGroup": "Copy Code",
+        "CopyMacro": "Copy Macro Code",
+        "Delete": "Delete Preset",
+        "DeleteGroup": "Delete",
+        "EditGroup": "Edit",
+        "InitiateVote": "Initiate Vote (Player Join)",
+        "Play": "Play Cut-in",
+        "PlayGroup": "Play",
+        "SelectGroup": "Select to create Group Attack"
+      }
+    },
+    "Format": {
+      "Boxed": "Boxed",
+      "Popout": "Pop-out"
+    },
+    "Global": {
+      "Hint": {
+        "ScanAttributes": "* Select an actor to populate the path helper dropdown below."
+      },
+      "Label": {
+        "ScanAttributes": "Scan attributes from:"
+      },
+      "SelectReference": "-- Select Reference Actor --",
+      "Warning": {
+        "Message1": "You can define conditions here (e.g., HP < 50%, On Attack), but you cannot select a preset to play.",
+        "Message2": "Please select the specific preset after loading this style onto an Actor.",
+        "Title": "Global Mode:"
+      }
+    },
+    "ItemConfig": {
+      "Hint": "<details style='margin-bottom:10px; background:rgba(0,0,0,0.3); border:1px solid #444; border-radius:4px; padding:5px;'><summary style='cursor:pointer; color:#e61c34; font-weight:bold; padding:5px;'>📖 Trigger Config Guide (Click to expand)</summary><div style='padding:10px; font-size:0.85em; color:#ccc; line-height:1.6; max-height:250px; overflow-y:auto; border-top:1px solid #444;'><p style='margin-top:0;'><b>1. Basic Modes</b><br>• <b>On Use / Attack / Damage:</b> Auto-triggers via System Hooks.<br>• <b>Keyword (Any / Roll):</b> Triggers if a specific word exists.<br>• <b>Dice Check:</b> Inspects specific die values.<br>&nbsp;&nbsp;└ <i>Enter <b>#</b>(Index) and <b>Val</b>(Target). (See orange numbers in Inspector)</i></p><p><b>2. Special Mode (Advanced Formula)</b><br>Create complex conditions using JavaScript syntax.<br><br><b>[Operators]</b><br>• <code>==</code> : Equal<br>• <code>!=</code> : Not Equal<br>• <code>&gt;=</code> : Greater or Equal<br>• <code>&&</code> : AND (Both true)<br>• <code>||</code> : OR (Either true)<br><br><b>[Variables]</b><br>• <code>d</code> : Array of die results (e.g. <code>d[0]</code> is the 1st die)<br>• <code>t</code> : Total sum of the roll<br>• <code>flavor</code> : Item name or chat text<br><br><b>[Examples]</b><br>• <b>Fabula Ultima Critical:</b><br><code style='background:#222; padding:2px 5px; color:#4ecdc4'>d[0] == d[1] && d[0] >= 6</code><br>• <b>Fumble (Snake Eyes):</b><br><code style='background:#222; padding:2px 5px; color:#ff6b6b'>d[0] == 1 && d[1] == 1</code><br>• <b>Complex (Total >= 20 OR contains 'Finisher'):</b><br><code style='background:#222; padding:2px 5px; color:#f9ca24'>t >= 20 || flavor.includes('Finisher')</code></div></details>"
+    },
+    "Macro": {
+      "CopyQuestion": "Which type of macro code would you like to copy?",
+      "Instant": "Instant Play",
+      "NotifInstant": "Instant play macro copied to clipboard!",
+      "NotifInstantGroup": "Instant group attack macro copied to clipboard!",
+      "NotifPrompt": "Interaction prompt macro copied to clipboard!",
+      "NotifVote": "All-out attack vote macro copied to clipboard!",
+      "Prompt": "Interaction Prompt",
+      "Title": "Macro",
+      "TitleGroup": "Group Macro",
+      "Vote": "Participation Vote (JOIN)"
+    },
+    "Scene": {
+      "AutomationTitle": "Scene Automation",
+      "Trigger": {
+        "CombatEnd": "On Combat End",
+        "CombatStart": "On Combat Start",
+        "RoundHint": "If checked, this scene will play automatically when a new Combat Round begins.<br>Use <code>{{round}}</code> in text to display the round number.",
+        "RoundStart": "On Round Start"
+      }
+    },
+    "ScreenMode": {
+      "Cover": "Cover Mode (Crop Edges)",
+      "Dimmed": "Focus Mode (Dimmed Bars)",
+      "Fit": "Floating Mode (No Bars / 16:9)",
+      "Letterbox": "Cinema Mode (Black Bars)",
+      "Stretch": "Adaptive Stretch (Full Screen)"
+    },
+    "Setting": {
+      "GroupScreenMode": "Group: Screen Aspect Mode",
+      "PersonalScreenMode": "Personal: Screen Aspect Mode",
+      "ScreenModeHint": "Choose how the cut-in fits your screen. Cinema/Focus/Floating modes preserve the GM's intended composition.",
+      "WaitForDSN": "Wait for Dice So Nice",
+      "WaitForDSNHint": "Play cut-ins after Dice So Nice animations finish instead of simultaneously."
+    },
+    "Settings": {
+      "BattleStartHint": "Select an All-Out Attack preset ID to play when combat starts.",
+      "BattleStartName": "Battle Start Effect",
+      "VictoryHint": "Select an All-Out Attack preset ID to play when combat ends.",
+      "VictoryName": "Victory Effect"
+    },
+    "Theme": {
+      "Arcane": "Arcane (Magic/Fantasy)",
+      "Blitz": "Blitz R (Right Side)",
+      "BlitzLeft": "Blitz L (Left Side)",
+      "Blossom": "Blossom",
+      "Brush": "Brush (Original)",
+      "Burst": "Burst",
+      "Cinematic": "Cinematic (Movie)",
+      "Cyber": "Cyber (Sci-Fi)",
+      "Dash": "Dash (Speed)",
+      "Glitch": "Glitch",
+      "Impact": "Impact (Action)",
+      "Map": "Adventure Map (Old Paper)",
+      "Neon": "Neon (Retrowave)",
+      "Phantom": "Phantom (Stylish)",
+      "Royal": "Royal (Gold)",
+      "Runes": "Runes (Mystic)",
+      "Saga": "Saga (Texture)",
+      "Scope": "Scope (Widescreen)",
+      "Slash": "Slash (Diagonal)",
+      "Stellar": "Stellar R (Right Side)",
+      "StellarLeft": "Stellar L (Left Side)",
+      "Tribal": "Tribal (Dragon)",
+      "Typewriter": "Typewriter",
+      "Voltage": "Voltage (Speed)",
+      "Yakuza": "Yakuza",
+      "Ink": "Ink (Splash)",
+      "Cleave": "Cleave",
+      "Eclipse": "Eclipse"
+    },
+    "Trigger": {
+      "BtnAdd": "Add Trigger",
+      "ChatTriggers": "Chat/Roll Watch List",
+      "Empty": {
+        "TurnEnd": "No Turn End triggers configured.",
+        "TurnStart": "No Turn Start triggers configured."
+      },
+      "Header": {
+        "Special": "Special Conditions"
+      },
+      "Hint": {
+        "GroupFallback": "If preset is empty, Group '{group}' default preset '{preset}' is used automatically."
+      },
+      "HintChat": "<details style='margin-bottom:10px; background:rgba(0,0,0,0.3); border:1px solid #444; border-radius:4px; padding:5px;'><summary style='cursor:pointer; color:#e61c34; font-weight:bold; padding:5px;'>📖 Trigger Config Guide (Click to expand)</summary><div style='padding:10px; font-size:0.85em; color:#ccc; line-height:1.6; max-height:250px; overflow-y:auto; border-top:1px solid #444;'><p style='margin-top:0;'><b>1. Basic Modes</b><br>• <b>Keyword (Any):</b> Triggers if the word is found in text/flavor.<br>• <b>Keyword (Roll):</b> Triggers only on <b>'Dice Rolls'</b> containing the word.<br>• <b>Dice Check:</b> Inspects specific die values.<br>&nbsp;&nbsp;└ <i>Enter <b>#</b>(Index) and <b>Val</b>(Target). (See orange numbers in Inspector)</i></p><p><b>2. Special Mode (Advanced Formula)</b><br>Create complex conditions using JavaScript syntax.<br><br><b>[Operators]</b><br>• <code>==</code> : Equal<br>• <code>!=</code> : Not Equal<br>• <code>&gt;=</code> : Greater or Equal<br>• <code>&&</code> : AND (Both true)<br>• <code>||</code> : OR (Either true)<br><br><b>[Variables]</b><br>• <code>d</code> : Array of die results (e.g. <code>d[0]</code> is the 1st die)<br>• <code>t</code> : Total sum of the roll<br>• <code>flavor</code> : Item name or chat text<br><br><b>[Examples]</b><br>• <b>Fabula Ultima Critical:</b><br><code style='background:#222; padding:2px 5px; color:#4ecdc4'>d[0] == d[1] && d[0] >= 6</code><br>• <b>High-Roll Doubles (Double & Total >= 12):</b><br><code style='background:#222; padding:2px 5px; color:#f9ca24'>d[0] == d[1] && t >= 12</code></div><br><i class='fas fa-info-circle'></i> Right-click a chat message and select <b>'⚡ Cinematic Inspector'</b> to check die indices.</details>",
+      "Hintpath": "Enter the property path to watch. The system will compare .value with .max to calculate the percentage.",
+      "Label": {
+        "DefaultSpell": "Default Spell Cut-in",
+        "Keyword": "Search Keyword",
+        "Path": "Attribute Path"
+      },
+      "MacroLabel": "Macro",
+      "MacroTooltip": "Optional: Run a macro when this trigger fires",
+      "NoMacro": "-- No Macro --",
+      "LowHP": "Low HP (Danger)",
+      "Mode": {
+        "Decrease": "📉 Below (Decrease)",
+        "Increase": "📈 Above (Increase)"
+      },
+      "NoChatTriggers": "No watch list configured.",
+      "NoTriggers": "No triggers configured.",
+      "Note": {
+        "DefaultSpell": "Plays when using a spell that has no specific cut-in configuration."
+      },
+      "Placeholder": {
+        "Path": "e.g. system.attributes.hp.value",
+        "Rounds": "Rounds"
+      },
+      "Preset": "Preset to Play",
+      "ResourceTriggers": "Resource Watch List",
+      "SelectHelper": "Select from list...",
+      "SelectPreset": "-- Select Effect --",
+      "SelectPresetAuto": "Auto: Group Default ({preset})",
+      "TargetRoll": "Target Roll",
+      "Threshold": "Trigger Threshold",
+      "Title": {
+        "RoundInput": "Specific rounds (comma separated). Leave empty for every turn."
+      },
+      "TriggerMode": "Trigger Mode",
+      "TurnEnd": "Turn End",
+      "TurnRoundHint": "<i class='fas fa-info-circle'></i> Leave empty to trigger <strong>every turn</strong>. (e.g., <code>1, 3</code>)",
+      "TurnStart": "Turn Start",
+      "Unit": {
+        "Percent": "% (Percentage)",
+        "Value": "№ (Absolute Value)"
+      }
+    },
+    "Export": {
+      "Btn": {
+        "Export": "Export",
+        "Import": "Import"
+      },
+      "Notif": {
+        "ExportSuccess": "Preset exported ({count} assets bundled).",
+        "ImportSuccess": "Preset imported ({count} assets restored).",
+        "SelectFirst": "Select a preset first."
+      },
+      "Error": {
+        "TypeMismatch": "Type mismatch: expected {expected}, got {actual}.",
+        "InvalidPackage": "Invalid package: missing preset.json."
+      }
+    },
+    "Update": {
+      "Close": "Close",
+      "Confirm": "Confirm",
+      "ConfirmNotice": "Got it",
+      "CriticalWarning": "⚠️ This update includes critical fixes.",
+      "CurrentVersion": "Current version: {current}",
+      "NewVersion": "New version {version} is available!",
+      "PatchHighlights": "Patch Highlights",
+      "SkipVersion": "Skip this version",
+      "Title": "Cinematic FX Update Notice",
+      "DisableNotification": "Don't show again",
+      "DisableConfirm": "Update notifications have been disabled. You can re-enable them in the module settings.",
+      "DisableName": "Disable Update Notifications",
+      "DisableHint": "When enabled, update notification popups will not be shown."
+    }
+  }
+}

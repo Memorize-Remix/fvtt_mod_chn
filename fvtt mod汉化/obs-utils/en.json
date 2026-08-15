@@ -1,0 +1,314 @@
+{
+	"obs-utils": {
+		"strings": {
+			"module": "OBS Utils",
+			"ic": "In Combat",
+			"trackAll": "Track all Owned Tokens",
+			"trackOne": "Track the currently active Owned Token",
+			"clonePlayer": "Clone the Selected Player's Viewport",
+			"cloneDM": "Clone the DM's Viewport",
+			"birdseye": "Fit Map to Screen",
+			"cloneTurnPlayer": "Clone the Turn Player's Viewport",
+			"ooc": "Out of Combat",
+			"trackManual": "Track a manual List of Tokens",
+			"limitCanvas": "Limit Canvas to Screen Edges",
+			"keypressInfo1": "Switched ",
+			"keypressInfo2": "Mode to ",
+			"avInputPlaceholder": "Enter text or search",
+			"iconPlaceholder": "Icon",
+			"true": "True",
+			"false": "False",
+			"missingTypeNotice": "Legacy/Missing Type. Please select a new type in the dropdown to edit.",
+			"done": "Done",
+			"trackPlayerOwned": "Track Player-Owned Tokens",
+			"pauseCameraTracking": "Pause Camera Tracking",
+			"manualOBSWarning": "You are running in OBS Mode. If you want to return to normal, press SHIFT + ALT + CONTROL + O (Default) or your custom keybind. Then reload the page.",
+			"disableOBSMode": "Disable OBS Mode",
+			"disableOBSModeHint": "Turns off the manual OBS Mode setting if you are stuck in it."
+		},
+		"applications": {
+			"rollOverlayEditor": {
+				"name": "Roll Overlay Editor",
+				"test": "Test",
+				"preRollImage": "Pre Roll Image",
+				"rollImage": "Roll Image",
+				"postRollImage": "Post Roll Image",
+				"imageUrl": "Image URL",
+				"foregroundImageUrl": "Foreground Image URL",
+				"backgroundImageUrl": "Background Image URL",
+				"delay": "Delay (ms)",
+				"fadeIn": "Fade In (ms)",
+				"duration": "Duration (ms)",
+				"fadeOut": "Fade Out (ms)"
+			},
+			"director": {
+				"name": "Director",
+				"icTypeHeader": "In Combat Type",
+				"oocTypeHeader": "Out of Combat Type",
+				"canvasOptionsHeader": "Canvas Options",
+				"trackedPlayerHeader": "Tracked Player",
+				"obsUserCommands": "OBS User Commands",
+				"forceOpenSettingsForOBSUser": "Force Open Settings Menu for OBS User",
+				"noGMWarning": "No GM is currently logged in, director settings cannot be changed"
+			},
+			"obsRemote": {
+				"name": "OBS Remote Settings",
+				"sceneName": "Scene Name",
+				"sourceName": "OBS Source Name",
+				"switchScene": "Switch Scene",
+				"toggleSource": "Toggle Source",
+				"enableSource": "Enable Source",
+				"disableSource": "Disable Source",
+				"vttSceneLabel": "VTT Scene Name",
+				"vttScenePlaceholder": "Input name or drop a scene here",
+				"onLoad": "Load",
+				"onCombatStart": "Combat Start",
+				"onCombatEnd": "Combat End",
+				"onPause": "Pause",
+				"onUnpause": "Unpause",
+				"onSceneLoad": "Scene Load",
+				"onStopStreaming": "Stop Streaming"
+			},
+			"obsWebsocket": {
+				"name": "OBS Websocket Settings",
+				"urlLabel": "URL",
+				"portLabel": "Port",
+				"passwordLabel": "Password",
+				"syncLabel": "Sync Target Client",
+				"saveButton": "Save",
+				"syncButton": "Sync"
+			},
+			"actorSelect": {
+				"name": "Actor Selection",
+				"searchPlaceholder": "Search",
+				"closeButton": "Close",
+				"resetButton": "Reset"
+			},
+			"overlayEditor": {
+				"name": "Overlay Editor",
+				"addButton": "Add New Component",
+				"editStyleButton": "Edit Style",
+				"removeButton": "Remove Overlay",
+				"removeComponentButton": "Remove Component",
+				"importButton": "Import",
+				"exportButton": "Export",
+				"addOverlayButton": "Add New Overlay",
+				"closeButton": "Close",
+				"importDialog": {
+					"title": "Import Data: Overlays",
+					"hint1": "You are about to import an exported Overlay configuration. Please ensure that it was exported in the same system or AV Overlays may not work.",
+					"hint2": "Please choose if you want to replace your existing overlays or add the imported list.",
+					"replaceButton": "Replace",
+					"appendButton": "Append",
+					"fileError": "You did not upload a data file",
+					"versionError": "Version unsupported",
+					"formatError": "Imported file is not an OBS Utils Overlay Export",
+					"cancelButton": "Cancel"
+				},
+				"exportDialog": {
+					"title": "Export your settings?",
+					"content": "Do you want to export your Overlay Settings?",
+					"yesButton": "Yes",
+					"noButton": "No"
+				}
+			},
+			"styleEditor": {
+				"name": "Style Editor",
+				"mode": {
+					"simple": "Simple",
+					"advanced": "Advanced"
+				},
+				"fontFamily": "Font family",
+				"fontSize": "Font size",
+				"fontWeight": "Font weight",
+				"color": "Text color",
+				"backgroundColor": "Background color",
+				"width": "Width",
+				"height": "Height",
+				"padding": "Padding",
+				"margin": "Margin",
+				"textAlign": "Text align",
+				"lineHeight": "Line height",
+				"letterSpacing": "Letter spacing",
+				"border": "Border",
+				"borderRadius": "Border radius",
+				"preservedExtras": "Additional preserved rules",
+				"clear": "Clear",
+				"submitButton": "Apply & Close"
+			}
+		},
+		"overlays": {
+			"plainText": {
+				"name": "Plain Text"
+			},
+			"fontAwesomeIcon": {
+				"name": "Font Awesome Icon"
+			},
+			"booleanAVIcon": {
+				"name": "Boolean AV Icon"
+			},
+			"booleanAVImage": {
+				"name": "Boolean AV Image"
+			},
+			"image": {
+				"name": "Image"
+			},
+			"multiIconAV": {
+				"name": "Multi Icon AV"
+			},
+			"multiImageAV": {
+				"name": "Multi Image AV"
+			},
+			"progressBar": {
+				"name": "Progress Bar"
+			}
+		},
+		"settings": {
+			"forceStreamPageOBSMode": {
+				"Name": "Force OBS Mode on Stream Page",
+				"Hint": "Forces the /stream output to be in OBS mode at all times"
+			},
+			"obsMode": {
+				"Name": "OBS Mode",
+				"Hint": "Sets this browser as the OBS browser. Only enable this if you are not able to use a browser source"
+			},
+			"obsModeUser": {
+				"Name": "OBS Mode User (Username)",
+				"Hint": "Sets this User to always be in OBS Mode, regardless of browser"
+			},
+			"obsModeGlobalDisable": {
+				"Name": "OBS View Global Disable",
+				"Hint": "This will turn off the OBS features for all clients, regardless of method"
+			},
+			"minScale": {
+				"Name": "Minimum Scale",
+				"Hint": "The lowest that the screen can zoom to"
+			},
+			"maxScale": {
+				"Name": "Maximum Scale",
+				"Hint": "The highest that the screen can zoom to"
+			},
+			"defaultOutOfCombat": {
+				"Name": "Out Of Combat Mode",
+				"Hint": "The out of Combat Camera Mode"
+			},
+			"defaultInCombat": {
+				"Name": "In Combat Mode",
+				"Hint": "The in Combat Camera Mode"
+			},
+			"popupCloseDelay": {
+				"Name": "Pop-Up Close Delay",
+				"Hint": "Seconds until pop-ups are automatically closed. 0 to disable"
+			},
+			"showTrackerInCombat": {
+				"Name": "Show Combat Tracker in Combat?",
+				"Hint": "If checked, the Combat Tracker will be visible during Combat Turns"
+			},
+			"obsRemoteMenu": {
+				"Label": "Open Menu",
+				"Name": "OBS Remote Settings",
+				"Hint": "Configure the OBS Remote"
+			},
+			"obsWebsocketMenu": {
+				"Label": "Open Menu",
+				"Name": "OBS Websocket Settings",
+				"Hint": "Configure OBS Websocket"
+			},
+			"overlayActorSelect": {
+				"Label": "Open Menu",
+				"Name": "Overlay Actors",
+				"Hint": "Select the Actors for the Overlay"
+			},
+			"overlayEditor": {
+				"Label": "Open Editor",
+				"Name": "Overlay Editor",
+				"Hint": "Edit the Overlays"
+			},
+			"enableOBSWebsocket": {
+				"Name": "Enable OBS Websocket?",
+				"Hint": "If checked, OBS Websocket will be used for Remoting"
+			},
+      "allowWebsocketAPI": {
+        "Name": "Allow OBS Websocket API Access?",
+        "Hint": "If checked, other modules can access OBS Websocket directly"
+      },
+			"rollOverlayEditor": {
+				"Name": "Roll Overlay Editor",
+				"Hint": "Edit the Roll Overlay",
+				"Label": "Open Editor"
+			},
+			"showAV": {
+				"Name": "Show Video Overlay?",
+				"Hint": "If enabled, the Audio/Video Chat UI will be visible on OBS (might require reload in OBS)"
+			},
+			"showUserConfig": {
+				"Name": "Allow User-Config to Render?",
+				"Hint": "If enabled, the user config dialog will not be suppressed"
+			},
+			"fixedPopups": {
+				"Name": "Use Fixed Pop-Ups",
+				"Hint": "If enabled, all Popups are repositioned and resized to the configured values"
+			},
+			"fixedPopupX": {
+				"Name": "Pop-Up X",
+				"Hint": "The distance to the left screen edge in pixels"
+			},
+			"fixedPopupY": {
+				"Name": "Pop-Up Y",
+				"Hint": "The distance to the top screen edge in pixels"
+			},
+			"fixedPopupWidth": {
+				"Name": "Pop-Up Width",
+				"Hint": "The width of the pop-up in pixels"
+			},
+			"fixedPopupHeight": {
+				"Name": "Pop-Up Height",
+				"Hint": "The height of the pop-up in pixels"
+			},
+			"showKeybindingPopup": {
+				"Name": "Show Keybinding Notification",
+				"Hint": "If checked, using a keyboard shortcut will show a notification what mode was selected"
+			},
+			"diceSoNice": {
+				"Name": "Enable Dice so Nice overlay",
+				"Hint": "If checked, a Dice so Nice section will be rendered alongside the other overlays"
+			},
+			"diceSoNiceOverlayWidth": {
+				"Name": "Dice so Nice Overlay Width",
+				"Hint": "Width of the element in pixels"
+			},
+			"diceSoNiceOverlayHeight": {
+				"Name": "Dice so Nice Overlay Height",
+				"Hint": "Height of the element in pixels"
+			},
+			"smoothUserCamera": {
+				"Name": "Smooth Camera Movement",
+				"Hint": "If enabled, manual camera movement will be smoothed by reducing update rate"
+			},
+			"proxyOBSMessages": {
+				"Name": "Send OBS Mode Notifications to GM",
+				"Hint": "If enabled, notifications hidden in OBS view will be displayed in all connected GM clients"
+			},
+      "showChatNotificationsOnCanvas": {
+        "Name": "Display Chat Notifications in Game",
+        "Hint": "If enabled, chat message popups will be not be hidden from the in-game UI"
+      },
+	  "leftAlignChatNotifications": {
+				"Name": "Left Align Chat Notifications",
+				"Hint": "If enabled, chat message popups will be aligned to the left side of the screen"
+		},
+      "streamChatPopupStyle": {
+        "Name": "Notification-Style Chat Overlay",
+        "Hint": "If enabled, the chat on /stream will be displayed like the Notifications in the Game View"
+      },
+			"trackObserverTokens": {
+				"Name": "Track Observer Tokens",
+				"Hint": "If enabled, the Director will track tokens that the user has observer permission for, not just owned tokens"
+			},
+			"showDirectorInOBSMode": {
+				"Name": "Show Director Controls in OBS Mode",
+				"Hint": "If disabled, the Director controls will be hidden when in OBS Mode"
+			}
+		}
+	}
+}

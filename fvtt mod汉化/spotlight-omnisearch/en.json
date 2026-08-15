@@ -1,0 +1,184 @@
+{
+    "spotlight-omnisearch": {
+		"KEYBINDING": "Keybinding",
+        "settings": {
+            "compendiumConfig": {
+                "name": "Compendium Configuration",
+                "hint": "Configure which compendiums to include in the search results",
+                "label": "Configure Compendiums"
+            },
+            "gmOnly": {
+                "name": "GM Only",
+                "hint": "Only the GM can open the Spotlight Omnisearch"
+            },
+            "compactMode": {
+                "name": "Compact Mode",
+                "hint": "Use a compact layout for the Spotlight Omnisearch. This will hide descriptions and reduce size of the search results"
+            },
+            "clickToDismiss": {
+                "name": "Click to Dismiss",
+                "hint": "Click outside the Spotlight Omnisearch to dismiss it"
+            },
+            "saveLastSearch": {
+                "name": "Save Last Search",
+                "hint": "Save the last search query and results for the next time the Spotlight Omnisearch is opened"
+            },
+            "useHistory": {
+                "name": "Use Search History",
+                "hint": "Use the search history to suggest previous searches"
+            },
+            "enableCtrlSpace": {
+                "name": "Enable Ctrl + Space",
+                "hint": "Enable the Ctrl + Space hotkey to open the Spotlight Omnisearch - Since this binding bypasses the Core Foundry keybindings system, it will work inside input fields and text areas."
+            },
+            "position": {
+                "name": "Position",
+                "hint": "Set the position of the Spotlight Omnisearch on the screen",
+                "choices": {
+                    "default": "Default (Center)",
+                    "save": "Save last position",
+                    "mouse": "Open at mouse position"
+                }
+            },
+            "alwaysOnTop": {
+                "name": "Always On Top",
+                "hint": "Keep the Spotlight Omnisearch on top of other windows"
+            },
+            "spotlightWidth": {
+                "name": "Spotlight Width",
+                "hint": "Set the width of the Spotlight Omnisearch in pixels"
+            },
+            "showImages": {
+                "name": "Show Images",
+                "hint": "Display images in search results. Images will increase loading times for the results and may result in stuttering depending on the number of results and the size of the images."
+            },
+            "searchFiles": {
+                "name": "Search Files",
+                "hint": "Include file search results (Requires File Index from the Dig Down module)"
+            },
+            "searchSettings": {
+                "name": "Search Settings",
+                "hint": "Include game settings in search results"
+            },
+            "searchCompendium": {
+                "name": "Search Compendium",
+                "hint": "Include compendium search results"
+            },
+            "fullCompendiumJournalIndex": {
+                "name": "Full Compendium Journal Index",
+                "hint": "Include pages and headers in compendium journal indexing. This will increase the initialization time of the index. It's recommended to disable this if you have a large number of journal compendiums."
+            },
+            "searchSidebar": {
+                "name": "Search Sidebar",
+                "hint": "Include sidebar tab search results"
+            },
+            "searchUtils": {
+                "name": "Search Utilities",
+                "hint": "Include utility search results"
+            },
+            "useMetricForLights": {
+                "name": "Use Metric for Lights",
+                "hint": "Use metric units quick light effects"
+            }
+        },
+        "hotkeys": {
+            "toggleSpotlight": {
+                "name": "Toggle Spotlight Omnisearch"
+            }
+        },
+        "recent-searches": "Recent Searches",
+        "recent-tooltip": "Clear recent searches",
+        "app": {},
+        "flags": {},
+        "actions": {
+            "execute": "Execute",
+            "activate": "Activate",
+            "preload": "Preload",
+            "view": "View",
+            "roll-table": "Roll Table",
+            "play-playlist": "Play Playlist",
+            "stop-playlist": "Stop Playlist",
+            "use-item": "Use Item",
+            "playForEveryone": "Play for Everyone"
+        },
+        "notifications": {
+            "calc-clipboard": "Result copied to clipboard",
+            "note": "Note saved in 'Omnisearch Notes' journal",
+            "timer-gm": "Only the GM can start a timer",
+            "tracker-gm": "Only the GM can use the success/failure tracker"
+        },
+        "special": {
+            "note": {
+                "name": "Quick Note",
+                "local-keyword": "note"
+            },
+            "roll": {
+                "name": "Quick Roll",
+                "local-keyword": "roll"
+            },
+            "help": {
+                "name": "Help",
+                "local-keyword": "help",
+                "list": [
+                    "Shift + Space to open the Spotlight Omnisearch",
+                    "Escape or Click outside (optional, default off) to close the Spotlight Omnisearch",
+                    "Press Enter to confirm first result",
+                    "Shift / Alt + Enter to execute the first or second actions of the first result",
+                    "Special commands: help, note, roll, timer, tracker, counter or type a Math expression to calculate",
+                    "! to filter search results by type (!item, !actor). Filters:"
+                ]
+            },
+            "timer": {
+                "name": "Timer",
+                "timeLeft": "Time Left",
+                "local-keyword": "timer",
+                "expired": "Timer Expired!"
+            },
+            "light": {
+                "torch": "Torch",
+                "lantern": "Lantern",
+                "lantern-shut": "Lantern (Covered)",
+                "off": "Remove Light",
+                "candle": "Candle",
+                "magical": "Magical Light",
+                "flashlight": "Flashlight",
+                "info": "Apply light to selected tokens"
+            },
+            "tracker": {
+                "name": "Success/Failure Tracker",
+                "local-keyword": "tracker"
+            },
+            "counter": {
+                "name": "Counter",
+                "local-keyword": "counter"
+            },
+            "kill": {
+                "name": "Kill",
+                "description": "Kill the selected token(s)"
+            },
+            "heal": {
+                "name": "Heal"
+            },
+            "damage": {
+                "name": "Damage"
+            },
+            "restore": {
+                "name": "Restore",
+                "description": "Restore the selected token(s) to full health"
+            },
+            "reindex": {
+                "name": "Index",
+                "description": "Rebuild the search index for the Spotlight Omnisearch"
+            },
+            "darkness": {
+                "night": "Night",
+                "dawn": "Dawn",
+                "day": "Day",
+                "dusk": "Dusk"
+            },
+            "attribute": {
+                "name": "Attribute"
+            }
+        }
+    }
+}

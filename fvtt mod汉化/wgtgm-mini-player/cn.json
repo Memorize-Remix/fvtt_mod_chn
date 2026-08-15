@@ -1,0 +1,119 @@
+
+  "wgtgm-mini-player": {
+    "welcomePageHTML": "<div> <p><strong>欢迎使用 Mini Player</strong></p> <hr> <p><strong>加入 Mini Player 社区</strong></p> <p>在 Discord 上加入我们。</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> 加入 Discord</button></div> <strong>支持开发</strong></p> <p>如果你想支持开发，请考虑查看 Patreon 上的会员选项。</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://patreon.com/wgtngm\"><i class=\"fas fa-star\"></i> 成为会员</button></div><p><strong>文档</strong></p> <p>感觉有点迷茫？前往我们的文档页面获取指引，或跳转到 Discord 提问。</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://campaigncodex.wgtngm.com/miniplayer\"><i class=\"fas fa-book\"></i> 文档</button></div></div>",
+    "button": {
+      "title": "创建新的 {type}",
+      "droptoscene": "将 {type} 放置到当前场景",
+      "tagmode": "标记模式"
+    },
+    "ui": {
+		"resultsLabel": "结果：",
+		"playlistLabel": "播放列表：",
+		"trackLabel": "曲目：",
+		"noMatchesText": "-- 无匹配项 --",
+		"selectTrackText": "-- 选择曲目 --",
+		"tagHint": "左键单击包含，右键单击排除。",
+		"tagToggleTitle": "左键单击包含，右键单击排除",
+		"ttrpgSourceToggleTitle": "切换 TTRPG 源曲目",
+		"favoriteTitle": "收藏",
+		"crossfadeOn": "交叉淡入淡出 开启",
+		"crossfadeOff": "交叉淡入淡出 关闭",
+		"loopTitle": "循环",
+		"previousTrackTitle": "上一曲目",
+		"playPauseTitle": "播放/暂停",
+		"stopTitle": "停止",
+		"nextTrackTitle": "下一曲目",
+		"muteTitle": "静音",
+		"nextLabel": "下一首：",
+		"none": "无",
+		"windowTitle": "Mini Player",
+		"endOfPlaylist": "播放列表结束",
+		"createTagPlaylist": "创建标签播放列表",
+		"editTags": "编辑标签",
+		"rescanLibrary": "重新扫描音乐库",
+		"openSoundboard": "打开音效板",
+		"toggleTagMode": "切换标签模式",
+		"toggleDock": "切换停靠",
+		"rescanComplete": "Mini Player：音乐库重新扫描完成。",
+		"noTrackSelectedToFavorite": "未选择要收藏的曲目。",
+		"favoritesCreated": "已创建收藏播放列表。",
+		"favoritesCreateFailed": "创建收藏播放列表失败。",
+		"favoritesUpdateFailed": "更新收藏播放列表失败。",
+		"favoriteRemoved": "已从收藏中移除“{name}”。",
+		"favoriteAdded": "已将“{name}”添加到收藏。"
+	},
+	"settings": {
+		"runonlyonce": {
+		  "name": "欢迎消息已禁用",
+		  "hint": "禁用以查看欢迎消息"
+		},
+		"rememberOpenState": {
+		  "name": "记住播放器和音效板状态",
+		  "hint": "如果 Foundry 关闭时播放器和音效板处于打开状态，则在加载时自动打开它们"
+		},
+		"enableCrossfade": {
+		  "name": "启用交叉淡入淡出",
+		  "hint": "如果启用，交叉淡入淡出将应用于音乐播放列表"
+		},
+		"enableSoundboardCrossfade": {
+		  "name": "在音效板上启用交叉淡入淡出",
+		  "hint": "如果启用，交叉淡入淡出将应用于音效板播放列表"
+		},
+		"crossfadeDuration": {
+		  "name": "交叉淡入淡出持续时间（秒）",
+		  "hint": "设置曲目间交叉淡入淡出的持续时间（秒）"
+		},
+		"maxTrackCount": {
+		  "name": "标签播放列表中的最大曲目数",
+		  "hint": "限制Mini Player中动态创建的标签播放列表的曲目数量"
+		},
+		"musicFolder": {
+		  "name": "基础音乐文件夹",
+		  "hint": "从中创建播放列表的文件夹，带有 [sfx] 的文件夹将仅添加到音效板"
+		},
+		"includePlaylistSoundsInTagScan": {
+		  "name": "在标签扫描中包含非Mini Player播放列表",
+		  "hint": "同时扫描非Mini Player创建的播放列表中的声音。使用每个声音路径忽略重复曲目"
+		},
+		"setToLoop": {
+		  "name": "将音效板播放列表曲目设置为循环",
+		  "hint": "导入到仅音效板播放列表中的曲目将设置为循环播放"
+		},
+		"setToEnvironment": {
+		  "name": "将音效板播放列表通道设置为环境",
+		  "hint": "导入的仅音效板播放列表将设置为环境通道"
+		},
+		"setMusicToLoop": {
+		  "name": "将音乐播放列表曲目设置为循环",
+		  "hint": "导入到音乐播放列表中的曲目将设置为循环播放"
+		},
+		"playOnSelect": {
+		  "name": "选择曲目时自动播放",
+		  "hint": "从下拉列表中选择曲目时自动播放"
+		},
+		"stopOnNewSoundboard": {
+		  "name": "播放新音效时停止",
+		  "hint": "播放新的音效板音效时停止当前音效板曲目的播放"
+		},
+		"stopOnNewPlaylist": {
+		  "name": "选择新播放列表时停止",
+		  "hint": "选择新播放列表中的曲目时停止当前曲目的播放"
+		},
+		"linkTTRPG": {
+		  "name": "与 TTRPG Music (Patreon) 链接",
+		  "hint": "启用与 Tabletop RPG Music 模组的集成。需要安装并激活该模组"
+		},
+		"dockSidebar": {
+		  "name": "停靠到播放列表面板",
+		  "hint": "如果启用，播放器将停靠到播放列表面板"
+		},
+		"keybindMiniPlayer": {
+		  "name": "打开迷你音乐播放器"
+		},
+		"keybindMiniBoard": {
+		  "name": "打开迷你音效板"
+		}
+	 }
+  }
+}
+

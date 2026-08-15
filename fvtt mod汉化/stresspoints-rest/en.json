@@ -1,0 +1,103 @@
+{
+  "STRESS.Settings.MaxStress.Name": "Max Stress Limit",
+  "STRESS.Settings.MaxStress.Hint": "Maximum accumulated stress before death (Default: 12).",
+  "STRESS.Settings.Ratio.Name": "Stress/Exhaustion Ratio",
+  "STRESS.Settings.Ratio.Hint": "How many stress points equal 1 exhaustion level.",
+  "STRESS.Settings.AutoHp.Name": "Automation: Collapse (0 HP)",
+  "STRESS.Settings.AutoHp.Hint": "Automatically gain stress when dropping to 0 HP.",
+  "STRESS.Settings.HealerReq.Name": "Require Healer's Kit (Short Rest)",
+  "STRESS.Settings.HealerReq.Hint": "If active, players MUST use a Healer's Kit or Potion to roll hit dice.",
+  "STRESS.Settings.FoodMode.Name": "Starvation Mode (Food)",
+  "STRESS.Settings.FoodMode.Hint": "Determines the penalty for not eating.",
+  "STRESS.Settings.DrinkMode.Name": "Dehydration Mode (Drink)",
+  "STRESS.Settings.DrinkMode.Hint": "Determines the penalty for not drinking.",
+  "STRESS.Settings.EnvMode.Name": "Enable Environmental Hazards",
+  "STRESS.Settings.EnvMode.Hint": "If active, shows environment danger selector and requires Constitution saves.",
+  
+  "STRESS.Options.Mandatory": "Mandatory Consumption (Auto-Stress)",
+  "STRESS.Options.Roll": "Require Saving Throw (DC 10)",
+
+  "STRESS.Dialog.LongRest": "Long Rest",
+  "STRESS.Dialog.ShortRest": "Short Rest",
+  
+  "STRESS.Hud.HP": "HP",
+  "STRESS.Hud.Stress": "STRESS",
+  "STRESS.Hud.Exhaustion": "EXHAUSTION",
+
+  "STRESS.Category.Environment": "ENVIRONMENT",
+  "STRESS.Category.Food": "FOOD",
+  "STRESS.Category.Drink": "DRINK",
+  "STRESS.Category.Heal": "HEALING / POTIONS",
+
+  "STRESS.Env.Safe": "Safe",
+  "STRESS.Env.LowSafe": "Unsafe",
+  "STRESS.Env.LowDanger": "Risky",
+  "STRESS.Env.Danger": "Dangerous",
+  "STRESS.Env.HighDanger": "Treacherous",
+  "STRESS.Env.Hostile": "Deadly",
+
+  "STRESS.Inventory.Nothing": "None",
+  "STRESS.Inventory.NoItemUsed": "No items used.",
+  "STRESS.Item.Tent": "Tent",
+  "STRESS.Item.Bedroll": "Bedroll",
+
+  "STRESS.Rarity.Uncommon": "Uncommon",
+  "STRESS.Rarity.Rare": "Rare",
+  "STRESS.Rarity.VeryRare": "Very Rare",
+  "STRESS.Rarity.Legendary": "Legendary",
+
+  "STRESS.Warn.ItemEmpty": "{name} is empty.",
+  "STRESS.Warn.NoMoreItem": "You have no more {name}.",
+  
+  "STRESS.Button.LongRest": "TAKE LONG REST",
+  "STRESS.Button.ShortRest": "REST",
+
+  "STRESS.Labels.EnvCheck": "Environment Save",
+  "STRESS.Labels.FoodCheck": "Starvation Save",
+  "STRESS.Labels.DrinkCheck": "Thirst Save",
+  
+  "STRESS.Msg.EatSuccess": "Consumed",
+  "STRESS.Msg.DrinkSuccess": "Drank",
+  "STRESS.Msg.FailStress": "Failed: +1 Stress Gained",
+  "STRESS.Msg.Saved": "Succeeded (No Stress)",
+  "STRESS.Msg.NoItemHeal": "No item used: HP will not be recovered.",
+  "STRESS.Msg.EnvironmentSafe": "Environment: Safe",
+  "STRESS.Msg.HealerReqWarning": "⚠ Healer's Kit required to recover HP!",
+  "STRESS.Msg.ShortRestPrompt": "Select items to use during rest:",
+
+  "STRESS.Report.Title": "REST REPORT",
+  "STRESS.Report.Start": "Start",
+  "STRESS.Report.Recovery": "Recovery",
+  "STRESS.Report.Modifiers": "Modifiers",
+  "STRESS.Report.FinalStress": "FINAL STRESS",
+  "STRESS.Report.ShortRestDone": "SHORT REST COMPLETED",
+  "STRESS.Report.HPRestored": "Recovered {val} HP.",
+  "STRESS.Report.HPCritical": "CRITICAL: HP Reverted (Item Required).",
+  "STRESS.Report.UsedItem": "Used",
+
+  "STRESS.Collapse.Title": "COLLAPSE!",
+  "STRESS.Collapse.SubTitle": "HP dropped to 0",
+  "STRESS.Collapse.Gain": "+2 STRESS",
+  "STRESS.Collapse.ExhaustionUp": "(Exhaustion Level Increased!)",
+
+  "STRESS.Exhaustion.Title": "FATIGUE",
+  "STRESS.Exhaustion.Level": "LEVEL",
+  "STRESS.Exhaustion.L1": "You start to falter: −2 on d20 tests and −5 ft speed.",
+  "STRESS.Exhaustion.L2": "Movements are heavy: −4 on d20 tests and −10 ft speed.",
+  "STRESS.Exhaustion.L3": "Visible wear: −6 on d20 tests and −15 ft speed.",
+  "STRESS.Exhaustion.L4": "Every action hurts: −8 on d20 tests and −20 ft speed.",
+  "STRESS.Exhaustion.L5": "On the verge of collapse: −10 on d20 tests and −25 ft speed.",
+  "STRESS.Exhaustion.L6": "The body succumbs: Death.",
+
+  "STRESS.Panel.Title": "Stress Control",
+  "STRESS.Panel.GroupStatus": "GROUP STATUS",
+  "STRESS.Panel.GMReport": "GM REPORT",
+  "STRESS.Panel.NoPlayers": "No player characters found.",
+  "STRESS.Panel.StressLevel": "STRESS LEVEL",
+  "STRESS.Panel.StressLabel": "Stress",
+  "STRESS.Panel.SendReport": "Send Report to Chat",
+
+  "STRESS.Chat.LimitExceeded": "LIMIT EXCEEDED",
+  "STRESS.Chat.LimitDesc": "Accepted the risk in exchange for power.",
+  "STRESS.Report.BandageEffect": "Bandage: Recovered 50% HP ({val})"
+}

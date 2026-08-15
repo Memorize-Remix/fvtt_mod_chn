@@ -1,0 +1,167 @@
+{
+  "random-target": {
+    "macro": {
+      "unexpectedError": "[RandomTarget] There was a problem. Try updating the macro from the compendium. If the problem persists contact the author."
+    },
+    "targetApp": {
+      "window": {
+        "title":"Random Target",
+        "controls": {
+          "openSettings": "Settings",
+          "openHelp": "Help",
+          "openSupport": "Support"
+        }
+      },
+      "ui": {
+        "toggleSelection": {
+          "label": "Toggle Selection (All/None)"
+        },
+        "emptySceneError": {
+          "label": "There are no tokens to select in the current scene."
+        },
+        "buttons": {
+          "cancel": {
+            "label": "Cancel"
+          },
+          "submit": {
+            "label": "Choose Random Target"
+          }
+        },
+        "status": {
+          "selection": {
+            "none": "No candidates selected",
+            "one": "1 candidate selected",
+            "many": "{total} candidates selected"
+          },
+          "chatVisibility": {
+            "silent": {
+              "label": "Silent",
+              "tooltip": "Will not post to chat"
+            },
+            "gmOnly":{
+              "label": "Private",
+              "tooltip": "Will post GM-only messages to chat"
+            },
+            "public":{
+              "label": "Public",
+              "tooltip": "Will post public messages to chat"
+            }
+          }
+        }
+      }
+    },
+    "supportDialog": {
+      "window": {
+        "title":"Support this module"
+      },
+      "ui": {
+        "buttons": {
+          "later": {
+            "label": "Maybe later"
+          },
+          "support": {
+            "label": "Support now"
+          }
+        }
+      },
+      "content": {
+        "heading": "Thank you for using <strong>Random Target</strong>!",
+        "backgroundText": "This project has been actively maintained since 2022. What started as a small side project has grown into a tool now used by hundreds of Foundry VTT users like you.",
+        "supportText": "If you find this module helpful, please consider supporting its development!"
+      }
+    },
+    "categories": {
+      "targeted": {
+        "label": "Targets",
+        "description": "Lists the targeted tokens in the scene",
+        "info": "Only appears if there is at least {count} token(s) targeted."
+      },
+      "selected": {
+        "label": "Selection",
+        "description": "Lists the selected tokens in the scene",
+        "info": "Only appears if there is at least {count} token(s) selected."
+      },
+      "all": {
+        "label": "All",
+        "description": "Lists all tokens in the scene"
+      },
+      "category": {
+        "description": "Lists tokens of type <code>{name}</code>",
+        "info": "Only appears if there is at least {count} matching token(s)."
+      },
+      "disposition": {
+        "description": "Lists tokens with disposition <code>{name}</code>",
+        "info": "Only appears if there is at least {count} matching token(s)."
+      }
+    },
+    "categoriesSettings": {
+      "window": {
+        "title":"Random Target: Categories"
+      },
+      "ui": {
+        "buttons": {
+          "save": {
+            "label": "Save selection"
+          }
+        }
+      },
+      "content": {
+        "instructions": "Choose which category filters to make available. At least one category must be selected. You can drag to rearrange their order."
+      }
+    },
+    "notifications": {
+      "targeted": "<b>{targetName}</b> targeted",
+      "missingSceneError": "You need to have an active scene to select random targets",
+      "minimumSelectionError": "You need to select at least 2 tokens",
+      "minimumCategoriesError": "You need to select at least 1 category"
+    },
+    "chat": {
+      "unknownTarget": {
+        "label": "Unknown token ({tokenId})"
+      },
+      "target": {
+        "label": "{targetLink} was randomly selected.",
+        "tooltip": "Target: {name}"
+      },
+      "candidatesPool": {
+        "label": "The pool of candidates for this selection:"
+      }
+    },
+    "settings": {
+      "categoryFilters": {
+        "name": "Category filters",
+        "label": "Configure",
+        "hint": "Manage which category filters are available and the order in which they appear."
+      },
+      "closeAfterSelection": {
+        "name": "Close after selection",
+        "hint": "Specifies whether the target selection window should close after a target is chosen."
+      },
+      "chatNotifications": {
+        "name": "Chat notifications",
+        "hint": "Specifies whether a chat message should be sent when a random target is selected, and what the privacy level should be.",
+        "options": {
+          "disabled": "Disabled",
+          "gm": "GM only",
+          "public": "Public"
+        }
+      },
+      "avoidSameTarget": {
+        "name": "Avoid selecting the same target",
+        "hint": "Specifies whether the same target should be prevented from being selected twice in a row."
+      },
+	  "panToTarget": {
+        "name": "Pan to target",
+        "hint": "Specifies whether the canvas should pan to the selected target."
+      },
+      "preferredTargetImage": {
+        "name": "Preferred target image",
+        "hint": "Specifies the preferred image to display in the list of targets.",
+        "options": {
+          "token": "Token image",
+          "actor": "Actor image"
+        }
+      }
+    }
+  }
+}

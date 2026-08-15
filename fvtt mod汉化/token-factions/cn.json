@@ -1,0 +1,149 @@
+
+  "token-factions.setting.tokenFactionsEnabled.name": "启用/禁用 Token 阵营功能",
+  "token-factions.setting.tokenFactionsEnabled.hint": "根据 Token 的倾向或角色文件夹颜色生成 Token 底座。",
+
+  "token-factions.setting.fillTexture.name": "填充纹理",
+  "token-factions.setting.fillTexture.hint": "勾选以填充 Token 下方的纹理",
+
+  "token-factions.setting.base-opacity.name": "底座透明度",
+  "token-factions.setting.base-opacity.hint": "设置纹理的透明度渐变",
+
+  "token-factions.setting.color-from.name": "生成阵营颜色的来源",
+  "token-factions.setting.color-from.hint": " ",
+
+  "token-factions.setting.color-from.opt.token-disposition": "默认：Token 的倾向",
+  "token-factions.setting.color-from.opt.actor-folder-color": "角色的文件夹颜色",
+  "token-factions.setting.color-from.opt.custom-disposition": "为 Token 倾向设置自定义颜色",
+
+  "token-factions.setting.pixiFactionsEnabled.name": "子功能 - 启用标准 Token 阵营纹理",
+  "token-factions.setting.pixiFactionsEnabled.hint": "标准用法为 Token 添加纹理，需要重新加载",
+
+  "token-factions.setting.draw-frames-by-default.name": "默认绘制 Token 边框？",
+  "token-factions.setting.draw-frames-by-default.hint": "Token 边框（环）位于 Token 图形的上层。如果您主要使用圆形 Token，请启用此选项。如果您主要使用不规则形状的 Token，请禁用它。",
+
+  "token-factions.setting.frame-style.name": "边框渲染样式",
+  "token-factions.setting.frame-style.hint": " ",
+
+  "token-factions.setting.frame-style.opt.flat": "默认：平面",
+  "token-factions.setting.frame-style.opt.beveled": "斜面",
+
+  "token-factions.setting.frame-width.name": "边框宽度（网格单位的百分比）",
+  "token-factions.setting.frame-width.hint": " ",
+
+  "token-factions.setting.frame-opacity.name": "边框透明度",
+  "token-factions.setting.frame-opacity.hint": " ",
+
+  "token-factions.setting.borderFactionsEnabled.name": "子功能 - 启用替代 Token 自定义边框",
+  "token-factions.setting.borderFactionsEnabled.hint": "替代自定义 Token 的边框，需要重新加载",
+
+  "token-factions.setting.removeBorders.name": "移除边框",
+  "token-factions.setting.removeBorders.hint": "移除特定 Token 的边框",
+
+  "token-factions.setting.permanentBorder.name": "选中 Token 的边框",
+  "token-factions.setting.permanentBorder.hint": "选中的 Token 具有双倍宽度的边框",
+
+  "token-factions.setting.scaleBorder.name": "缩放边框",
+  "token-factions.setting.scaleBorder.hint": "根据 Token 的'比例'设置缩放边框",
+
+  "token-factions.setting.borderWidth.name": "边框宽度",
+  "token-factions.setting.borderWidth.hint": "覆盖边框宽度",
+
+  "token-factions.setting.borderGridScale.name": "网格缩放",
+  "token-factions.setting.borderGridScale.hint": "根据网格大小缩放边框宽度，基于 100px 网格",
+
+  "token-factions.setting.borderOffset.name": "边框偏移",
+  "token-factions.setting.borderOffset.hint": "自定义边框偏移",
+
+  "token-factions.setting.circleBorders.name": "圆形边框",
+  "token-factions.setting.circleBorders.hint": " ",
+
+  "token-factions.setting.hudEnable.name": "Token 阵营 HUD 元素",
+  "token-factions.setting.hudEnable.hint": "添加 Token HUD 元素以启用/禁用 Token 阵营边框",
+
+  "token-factions.setting.hudColumn.name": "HUD 列",
+  "token-factions.setting.hudColumn.hint": "将按钮放置在哪个 HUD 列中",
+
+  "token-factions.setting.hudTopBottom.name": "HUD 顶部/底部",
+  "token-factions.setting.hudTopBottom.hint": "在列中的哪个位置放置按钮",
+
+  "token-factions.setting.circularNameplate.name": "圆形铭牌",
+  "token-factions.setting.circularNameplate.hint": "需要刷新",
+
+  "token-factions.setting.circularNameplateRadius.name": "圆形铭牌半径",
+  "token-factions.setting.circularNameplateRadius.hint": "需要刷新",
+
+  "token-factions.setting.nameplateOffset.name": "铭牌 Y 轴偏移",
+  "token-factions.setting.nameplateOffset.hint": "需要刷新",
+
+  "token-factions.setting.plateFont.name": "铭牌字体",
+  "token-factions.setting.plateFont.hint": "需要刷新",
+
+  "token-factions.setting.sizeMultiplier.name": "铭牌字体大小",
+  "token-factions.setting.sizeMultiplier.hint": "需要刷新",
+
+  "token-factions.setting.plateConsistency.name": "铭牌一致性",
+  "token-factions.setting.plateConsistency.hint": "尝试在不同网格大小下保持铭牌大小一致",
+
+  "token-factions.setting.controlledColor.name": "颜色：控制",
+  "token-factions.setting.controlledColor.hint": " ",
+
+  "token-factions.setting.controlledColorEx.name": "颜色：外部控制",
+  "token-factions.setting.controlledColorEx.hint": " ",
+
+  "token-factions.setting.hostileColor.name": "颜色：敌对",
+  "token-factions.setting.hostileColor.hint": " ",
+
+  "token-factions.setting.hostileColorEx.name": "颜色：外部敌对",
+  "token-factions.setting.hostileColorEx.hint": " ",
+
+  "token-factions.setting.friendlyColor.name": "颜色：友好",
+  "token-factions.setting.friendlyColor.hint": " ",
+
+  "token-factions.setting.friendlyColorEx.name": "颜色：外部友好",
+  "token-factions.setting.friendlyColorEx.hint": " ",
+
+  "token-factions.setting.neutralColor.name": "颜色：中立",
+  "token-factions.setting.neutralColor.hint": " ",
+
+  "token-factions.setting.neutralColorEx.name": "颜色：外部中立",
+  "token-factions.setting.neutralColorEx.hint": " ",
+
+  "token-factions.setting.partyColor.name": "颜色：队伍",
+  "token-factions.setting.partyColor.hint": " ",
+
+  "token-factions.setting.partyColorEx.name": "颜色：外部队伍",
+  "token-factions.setting.partyColorEx.hint": " ",
+
+  "token-factions.setting.actorFolderColorEx.name": "颜色：外部角色文件夹",
+  "token-factions.setting.actorFolderColorEx.hint": " ",
+
+  "token-factions.setting.overrideBorderGraphic.name": "覆盖默认 Token 边框的图形",
+  "token-factions.setting.overrideBorderGraphic.hint": "如果'Border Control'模组已启用，此功能将无效",
+
+  "token-factions.tokeconfig.factions": "阵营",
+  "token-factions.tokeconfig.enableBorder": "启用边框",
+  "token-factions.tokeconfig.customBorder": "自定义边框",
+  "token-factions.tokeconfig.customColorInt": "自定义 Token 颜色（内部）",
+  "token-factions.tokeconfig.customColorExt": "自定义 Token 颜色（外部）",
+  "token-factions.tokeconfig.customFrameOpacity": "自定义 Token 边框透明度",
+  "token-factions.tokeconfig.customBaseOpacity": "自定义 Token 底座透明度",
+  "token-factions.tokeconfig.customColor": "自定义阵营颜色",
+
+  "token-factions.label.chooseCustomColorToken": "选择切换阵营边框颜色",
+  "token-factions.label.applyCustomColor": "应用自定义颜色",
+  "token-factions.label.doNothing": "不执行任何操作",
+
+  "token-factions.setting.enable-default.name": "为所有Token启用阵营",
+  "token-factions.setting.enable-default.hint": "默认情况下，所有Token都将启用Token阵营功能。你仍可为特定Token禁用此功能。",
+  "token-factions.setting.reset.name": "重置设置为默认",
+  "token-factions.setting.reset.label": "重置设置为默认",
+  "token-factions.setting.reset.hint": "这将把所有设置重置为当前游戏系统的默认值。",
+  "token-factions.setting.debug.name": "启用调试",
+  "token-factions.setting.debug.label": "将调试信息打印到控制台",
+  "token-factions.setting.debug.hint": " ",
+
+  "token-factions.dialogs.resetsettings.title": "重置模组设置",
+  "token-factions.dialogs.resetsettings.content": "您确定要将所有模组设置重置为当前系统的默认吗？<strong>此操作无法撤销！</strong>",
+  "token-factions.dialogs.resetsettings.confirm": "重置模组设置",
+  "token-factions.dialogs.resetsettings.cancel": "取消"
+}

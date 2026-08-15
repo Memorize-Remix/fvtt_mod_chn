@@ -1,0 +1,100 @@
+
+  "FABDRAGRULER": {
+    "CONFIG": {
+      "COMMON": {
+        "RESETTODEFAULT": "重置为默认"
+      },
+      "WAYPOINT": {
+        "TITLE": "路径点样式覆盖",
+        "ENABLED": {
+          "LABEL": "启用",
+          "HINT": "切换以启用路径点覆盖"
+        },
+        "RADIUS": {
+          "LABEL": "半径",
+          "HINT": "路径点的半径"
+        },
+        "ALPHA": {
+          "LABEL": "透明度",
+          "HINT": "路径点的透明度值"
+        },
+        "COLOR": {
+          "LABEL": "颜色",
+          "HINT": "路径点的颜色"
+        }
+      },
+      "GRIDHIGHLIGHT": {
+        "TITLE": "网格高亮样式覆盖",
+        "ENABLED": {
+          "LABEL": "启用",
+          "HINT": "切换以启用拖拽段覆盖"
+        },
+        "COLOR": {
+          "LABEL": "颜色",
+          "HINT": "网格高亮部分的颜色"
+        },
+        "ALPHA": {
+          "LABEL": "透明度",
+          "HINT": "网格高亮的透明度值"
+        }
+      },
+      "SEGMENT": {
+        "TITLE": "线段样式覆盖",
+        "ENABLED": {
+          "LABEL": "启用",
+          "HINT": "切换以启用拖拽线段覆盖"
+        },
+        "WIDTH": {
+          "LABEL": "宽度",
+          "HINT": "拖拽线段的宽度。将乘以画布的UI缩放比例"
+        },
+        "COLOR": {
+          "LABEL": "颜色",
+          "HINT": "拖拽标尺线段的颜色"
+        },
+        "ALPHA": {
+          "LABEL": "透明度",
+          "HINT": "拖拽标尺线段的透明度值"
+        }
+      }
+    },
+    "KEYBINDINGS": {
+      "SHOWTOKENDRAGRULER": "显示Token拖拽标尺"
+    },
+    "SCENE": {
+      "RULERSTATE": {
+        "LABEL": "Token拖拽标尺",
+        "HINT": "设置为'默认'以使用网格类型的全局默认值，否则设置为'启用'或'禁用'以覆盖。",
+        "ENABLED": "启用",
+        "DISABLED": "禁用",
+        "DEFAULT": "默认"
+      }
+    },
+    "SETTINGS": {
+      "DISABLEOUTOFCOMBAT": {
+        "LABEL": "非战斗时禁用",
+        "HINT": "在非激活战斗时默认禁用拖拽标尺"
+      },
+      "ENABLEGRIDLESS": {
+        "LABEL": "为无网格场景启用",
+        "HINT": "为无网格场景默认启用拖拽标尺"
+      },
+      "ENABLEGRIDDED": {
+        "LABEL": "为有网格场景启用",
+        "HINT": "为有网格场景默认启用拖拽标尺"
+      },
+      "SEGMENTSTYLEOVERRIDE": {
+        "LABEL": "线段样式覆盖",
+        "HINT": "自定义拖拽Token时线段外观的选项"
+      },
+      "WAYPOINTSTYLEOVERRIDE": {
+        "LABEL": "路径点样式覆盖",
+        "HINT": "自定义拖拽标尺上路径点外观的选项"
+      },
+      "GRIDHIGHLIGHTSTYLEOVERRIDE": {
+        "LABEL": "网格高亮样式覆盖",
+        "HINT": "自定义拖拽标尺网格高亮外观的选项"
+      }
+    }
+  }
+}

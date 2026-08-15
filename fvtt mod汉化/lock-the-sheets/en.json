@@ -1,0 +1,110 @@
+{
+  "lock-the-sheets": {
+    "setting": {
+      "modVersion": {
+        "name": "Version",
+        "hint": "Currently installed module version (can't be changed here)."
+      },
+      "debug": {
+        "name": "Debug mode",
+        "hint": "Client-side setting enabling extended debug logging."
+      },
+      "isActive": {
+        "name": "Activate lock",
+        "hint": "Turn sheet lock state ON (can be toggled in game via keybinding, macros or UI button)."
+      },
+      "allowEquip": {
+        "name": "Allow equip & unequip",
+        "hint": "Should equipping/unequipping of inventory items be allowed while sheet lock is active?"
+      },
+      "showUIButton": {
+        "name": "Show UI button",
+        "hint": "Display a button in the scene controls menu on the left hand for toggling lock state on and off."
+      },
+      "hideChatInfo": {
+        "name": "Hide module info in chat window",
+        "hint": "Hides the info text about this module in the chat window on game start (uncheck this option to see it once more)."
+      },
+      "notifyOnChange": {
+        "name": "UI messages on toggle",
+        "hint": "Show temporary UI messages whenever toggling on and off."
+      },
+      "notifyPermanentlyWhileLOCKED": {
+        "name": "Sticky screen message on activate",
+        "hint": "Show permanent UI message when toggling ON (visible until deactivation). Needs option \"UI messages on toggle\" to be enabled."
+      },
+      "notifyPermanentlyWhileUNLOCKED": {
+        "name": "Sticky screen message on deactivate",
+        "hint": "Show permanent UI message when toggling OFF (visible until reactivation). Needs option \"UI messages on toggle\" to be enabled."
+      },
+      "alertGMOnReject": {
+        "name": "Alert GM about rejected edits",
+        "hint": "Show a sceen warning for the GM whenever a player tries to edit a locked sheet."
+      },
+      "lockForGM": {
+        "name": "Also lock changes for the GM",
+        "hint": "Same rules for all! Apply locking to me as the GM as well (protecting myself from accidental edits)."
+      },
+      "showOverlayLocked": {
+        "name": "Show icons on locked actors",
+        "hint": "Display an icon on tokens and actors when locked (Default: OFF). ATTENTION: This may impact performance when switching scenes for large scenes and/or worlds. Toggling overlays off can also be simulated by using scale option 'invisible'."
+      },
+      "showOverlayOpen": {
+        "name": "Show icons on unlocked actors",
+        "hint": "Display an icon on tokens and actors when unlocked (Default: OFF). ATTENTION: This may impact performance when switching scenes for large scenes and/or worlds. Toggling overlays off can also be simulated by using scale option 'invisible'."
+      },
+      "overlayScale": {
+        "name": "Icon size",
+        "hint": "Scale of the icons on locked/unlocked actors in scene view. Can also be toggled by custom keybindings in the global control settings."
+      },
+      "overlayScaleOptions": {
+        "small": "small",
+        "normal": "normal",
+        "large": "large"
+      },
+      "showHUDIconLocked": {
+        "name": "Show HUD status icon when lock is ON",
+        "hint": "Display an icon on screen (top-right) indicating locked status (Default: ON).\n You can automatically make it turn off after a timeout by setting the slider below."
+      },
+      "showHUDIconOpen": {
+        "name": "Show HUD status icon when lock is OFF",
+        "hint": "Display an icon on screen (top-right) indicating unlocked status (Default: ON).\n You can automatically make it turn off after a timeout by setting the slider below."
+      },
+      "hudIconTimeoutSeconds": {
+        "name": "Timeout for the HUD status icon (seconds)",
+        "hint": "Timeout in seconds for the HUD icon to automatically turn off after a certain time. Set to 0 to make the HUD icon always visible. Default: 10."
+      },
+      "hudIconOpacity": {
+        "name": "Opacity of the HUD status icon",
+        "hint": "1 (maximum) means fully visible, 0.2 (minimum) means visible by 20% (transparent by 80%). Default: 0.7 (70%)"
+      },
+      "keybindingNames": {
+        "toggle": "Lock The Sheets! (on/off)",
+        "scaleZero": "Icon Size: invisible",
+        "scaleSmall": "Icon Size: small",
+        "scaleNormal": "Icon Size: normal",
+        "scaleLarge": "Icon Size: large"
+      }
+    },
+    "chatInfoContent": {
+      "title": "Lock The Sheets!<br/>(by coffiarts)",
+      "text1": "Be the gatekeeper!<br/>Lock and unlock all character sheets at once with just one click!",
+      "text2": "With this nice little helper module the Game Master can block and unblock any edits to character sheets by the players.",
+      "text3": "Toggling on/off works in various ways: By game settings, or with a nice UI Button (optional), or by macro code or macro button. <br/><br/>Refer to the module preferences under game settings.<br/><br/>Find more details on GitHub",
+      "footer": "This chat card will only be shown once. Activate once more in the module settings if needed."
+    },
+    "onOffUIMessage": {
+      "whenON": "Character Sheets are now LOCKED!",
+      "whenOFF": "Character Sheets are now unlocked."
+    },
+    "sheetEditRejected": {
+      "playerMsg": "Character sheets are currently locked remotely by the game master. Changes won't be saved.",
+      "gmMsgSheet": "[{userName}] is attempting to modify actor: [{sheetName}].",
+      "gmMsgItem": "[{userName}] is attempting to change something in actor sheet: [{itemName}]",
+      "gmMsgItemDeleted": "[{userName}] is attempting to delete something from actor sheet: [{itemName}]"
+    },
+    "controlButton": {
+      "label": "Lock The Sheets! ON/OFF"
+    }
+  }
+}

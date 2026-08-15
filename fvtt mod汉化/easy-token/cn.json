@@ -1,0 +1,69 @@
+
+    "easy-token": {
+        "settings": {
+            "menus": {
+                "directories": {
+                    "name": "目录",
+                    "label": "设置目录",
+                    "hint": "为不同的角色类型上传目录。"
+                }
+            }
+        },
+        "directories": {
+            "avatar": "立绘",
+            "cancel": "取消",
+            "save": "保存",
+            "source": {
+                "label": "来源",
+                "hint": "文件将上传到的数据源。"
+            },
+            "title": "角色类型目录",
+            "token": "Token"
+        },
+        "editor": {
+            "background": {
+				"background-plain": "纯色背景",
+				"background-marble": "大理石背景", 
+				"background-noise": "噪点背景",
+				"label": "背景"
+			},
+            "border": "边框",
+            "download": "下载Token图像",
+            "load-avatar": "加载立绘图像",
+			"mask": {
+				"add": "添加新遮罩",
+				"angle": "角度",
+				"range": "范围",
+				"title": "使用弹出遮罩",
+				"width": "宽度"
+			},
+            "open-local": "打开本地图像",
+            "open-server": "打开服务器图像",
+            "popout": {
+                "both": "完整弹出",
+                "bottom": "底部弹出",
+                "disabled": "无弹出",
+                "top": "顶部弹出"
+            },
+            "ring": {
+                "dynamic": "动态Token环",
+				"label": "Token环 {number}"
+            },
+            "save-all": "保存全部并关闭",
+            "save-avatar": "保存立绘图像",
+            "save-token": "保存Token图像",
+            "saved": {
+                "avatar": "立绘图像已成功保存 '{path}'",
+                "token": "Token图像已成功保存 '{path}'"
+            },
+			"token": {
+                "title": "Token"
+            },
+            "warning": {
+                "actor": "此角色未链接，场景中已放置的Token将不会更新。",
+                "token": "此Token未链接到任何角色，更改仅适用于此特定Token。"
+            }
+        },
+        "label": "Easy-Token"
+    }
+}

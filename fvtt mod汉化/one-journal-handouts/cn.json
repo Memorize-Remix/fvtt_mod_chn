@@ -1,0 +1,27 @@
+
+  "one-journal-handouts": {
+	"base.validate": "验证",
+    "settings": {
+      "gm-journal-name": "资料库日志条目（世界）",
+      "gm-journal-hint": "存储所有待分享给玩家的资料库日志条目。⚠️ 不要将此日志条目分享给玩家。",
+      "players-journal-name": "玩家日志条目（世界）",
+      "players-journal-hint": "玩家可查看所有GM分享资料的日志条目。⚠️ 记得将此日志条目分享给玩家。",
+      "sharing-mode-name": "分享模式（世界）",
+      "sharing-mode-hint": "\"分享模式\"定义日志条目分享后的处理方式：\"默认\"：保留原日志条目；\"复制\"：从原日志删除并复制到另一个日志（下方定义）；\"删除\"：直接删除日志条目。",
+      "duplicated-journal-name": "复制的日志条目（世界）",
+      "duplicated-journal-hint": "所有资料将被复制到的目标日志条目。⚠️ 仅当在\"分享模式\"中选择\"复制\"时生效。",
+      "open-page-name": "向GM打开页面（世界）",
+      "open-page-hint": "当向玩家分享资料时，若启用此设置，新创建的页面将同时为GM打开。",
+	  "blacklist": {
+		"label": "用户黑名单",
+		"name": "配置用户黑名单",
+		"hint": "将特定用户排除在自动打开日志之外。",
+		"description": "勾选你希望排除在自动打开日志之外的用户旁边的复选框。"
+	  }
+    },
+    "share-with-players": "分享当前页面",
+    "no-players-journal": "玩家日志不存在。",
+    "no-duplicated-journal": "复制的日志不存在。",
+    "successful": "日志条目页面已成功分享给玩家。"
+  }
+}

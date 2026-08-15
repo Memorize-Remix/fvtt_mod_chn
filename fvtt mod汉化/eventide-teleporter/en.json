@@ -1,0 +1,38 @@
+{
+    "EVENTIDE_TELEPORTER": {
+        "Keybind": {
+            "TeleportTokens": "Teleport Selected Tokens",
+            "TeleportTokensHint": "Teleport selected tokens to mouse cursor position"
+        },
+        "Settings": {
+            "Mode": "Teleporter Mode",
+            "ModeHint": "Set the teleporter mode: Off (disabled), Slow (click while holding key), or Fast (immediate)",
+            "ModeOff": "Off",
+            "ModeSlow": "Slow Mode",
+            "ModeFast": "Fast Mode",
+            "SnapToGrid": "Snap to Grid",
+            "SnapToGridHint": "Snap the teleported tokens to the nearest grid square center"
+        },
+        "Controls": {
+            "Title": "Eventide Teleporter",
+            "ModeOff": "Teleporter: Off",
+            "ModeSlow": "Teleporter: Slow Mode",
+            "ModeFast": "Teleporter: Fast Mode"
+        },
+        "Notifications": {
+            "ModeOff": "Teleporter disabled",
+            "ModeSlow": "Teleporter set to Slow Mode (hold key + click)",
+            "ModeFast": "Teleporter set to Fast Mode (instant)",
+            "SlowModeInstruction": "Hold the teleport key and click where you want to teleport",
+            "TokensTeleported": "{count} token(s) teleported successfully"
+        },
+        "Warnings": {
+            "GMOnly": "Only GMs can use the teleporter",
+            "NotEnabled": "Teleporter is not enabled. Click the teleporter button in the token controls to enable it.",
+            "NoTokensSelected": "No tokens selected for teleportation"
+        },
+        "Errors": {
+            "TeleportFailed": "Teleportation failed. Check console for details."
+        }
+    }
+} 

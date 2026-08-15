@@ -1,0 +1,53 @@
+{
+  "precise-drawing-tools": {
+    "drawing-to-image": {
+      "dialog-title": "Convert drawing to image",
+      "dialog-input-filename-label": "Image filename",
+      "default-filename-prefix": "MyFoundryDrawing_",
+      "dialog-button-download-label": "Download image",
+      "dialog-button-uploadAndKeep-label": "Hide drawings + replace with tile",
+      "dialog-error-no-file-name": "No file name entered.",
+      "dialog-error-no-drawings-selected": "No drawings are selected!",
+      "progress-uploading": "Uploading tile image...",
+      "progress-creating-tile": "Creating tile...",
+      "progress-hiding-drawings": "Hiding drawings (this may take a while)...",
+      "progress-done-hiding-drawings": "Done hiding drawings!",
+      "progress-preparing": "Preparing drawings...",
+      "progress-workaround": "Workaround...",
+      "progress-collecting": "Collecting drawings...",
+      "progress-rendering": "Rendering image...",
+      "progress-cleaning-up": "Cleaning up...",
+      "progress-done-preparing": "Done preparing image.",
+      "toolbar-title": "Convert Selection to Image"
+    },
+    "eyedropper": {
+      "keybinding-name": "Eyedropper (Color Pick)",
+      "keybinding-hint": "Pick the color of the current pixel under the cursor, and set it as current stroke color. Hold Shift to change the fill color instead."
+    },
+    "settings": {
+      "disable-drag-resistance": {
+        "name": "Disable drag resistance while drawing",
+        "hint": "Allows making short strokes - otherwise, the minimum size of each drawing is 1/4th of a square (usually 25px)"
+      },
+      "enable-dsr": {
+        "name": "Enable dynamic sampling rate (DSR) while drawing",
+        "hint": "Normally, Foundry imposes a sampling rate of 75ms for polygon lines and ~17ms for any mouse drag event. This setting will dynamically pick a sampling rate of 4-75 depending on how slow you draw with the freehand tool."
+      },
+      "target-sampling-distance": {
+        "name": "Target sampling distance (if DSR is enabled)",
+        "hint": "Defaults to 50, which means it aims to place about two polygon points per 50 screen pixels. Lower numbers give higher frequency of points"
+      },
+      "enable-eyedropper": {
+        "name": "Enable \"eyedropper\"/\"color picker\" hotkey",
+        "hint": "Pick the color of the current pixel under the cursor, and set it as current stroke color. Hold Shift to change the fill color instead. (default hotkey is K, see Configure Controls)"
+      },
+      "enable-convert-drawings": {
+        "name": "Enable \"Convert Drawings\" button",
+        "hint": "This new button in the Drawings controls allows you to convert selected drawings to a single image file and optionally create a tile with that image in the same location. The image will be saved to the worlds/[your-world-id]/PDT-converted-drawings directory."
+      }
+    },
+    "notifications": {
+      "progress-bar-not-found": "Progress bar not found, something is wrong with preciseDrawingTools!"
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+    "walledtemplates.MeasuredTemplateConfiguration.LegendTitle": "Walled Templates",
+
+    "walledtemplates.MeasuredTemplateConfiguration.hint": "Settings specific to the Walled Template module",
+    "walledtemplates.MeasuredTemplateConfiguration.legend.walls": "Walls",
+    "walledtemplates.MeasuredTemplateConfiguration.legend.tokens": "Tokens",
+
+    "walledtemplates.MeasuredTemplateConfiguration.walls-block.Name": "Walls",
+    "walledtemplates.MeasuredTemplateConfiguration.walls-block.Hint": "Circles/Rectangles: Spread; Rays/Cones: Reflect.",
+
+    "walledtemplates.MeasuredTemplateConfiguration.wall-restriction-type.Name": "Wall Type",
+    "walledtemplates.MeasuredTemplateConfiguration.walls-restriction-type.Hint": "Template ignores walls that do not block this type.",
+
+    "walledtemplates.MeasuredTemplateConfiguration.globalDefault": "Use global default",
+    "walledtemplates.MeasuredTemplateConfiguration.unwalled": "Do not block template",
+    "walledtemplates.MeasuredTemplateConfiguration.walled": "Block template",
+    "walledtemplates.MeasuredTemplateConfiguration.recurse": "Reflect/Spread template",
+
+    "walledtemplates.MeasuredTemplateConfiguration.alwaysHide": "Always Hide",
+    "walledtemplates.MeasuredTemplateConfiguration.alwaysShow": "Always Show",
+
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.Name": "Attached Token?",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.Hint": "Connect this template so it moves along with the token.",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.useSelectedToken": "Attach last selected token",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.useTargetedToken": "Attach last targeted token",
+    "walledtemplates.MeasuredTemplateConfiguration.attach-token.removeToken": "Remove attached token",
+
+    "walledtemplates.MeasuredTemplateConfiguration.rotate-with-token.Name": "Rotate with Attached",
+    "walledtemplates.MeasuredTemplateConfiguration.rotate-with-token.Hint": "When token rotates, rotate this template around the token.",
+
+    "walledtemplates.MeasuredTemplateConfiguration.no-autotarget.Name": "Do not autotarget",
+    "walledtemplates.MeasuredTemplateConfiguration.no-autotarget.Hint": "When enabled, overrides settings to not target tokens with this template.",
+
+    "walledtemplates.MeasuredTemplateConfiguration.hide-border.Name": "Hide Border",
+    "walledtemplates.MeasuredTemplateConfiguration.hide-border.Hint": "Overrides settings to always show or hide the border of this template.",
+
+    "walledtemplates.MeasuredTemplateConfiguration.hide-highlighting.Name": "Hide Highlighting",
+    "walledtemplates.MeasuredTemplateConfiguration.hide-highlighting.Hint": "Overrides settings to always show or hide highlighting for this template.",
+
+    "walledtemplates.MeasuredTemplateConfiguration.show-hover.Name": "Show on Hover",
+    "walledtemplates.MeasuredTemplateConfiguration.show-hover.Hint": "Overrides settings to always or never show the template when hovering over a token within the template.",
+
+    "walledtemplates.MeasuredTemplateConfiguration.elevation.Name": "Elevation",
+
+    "walledtemplates.MeasuredTemplateConfiguration.legend.snapping": "Snap-to-Grid",
+
+    "walledtemplates.dnd5e-spell-config.attach-token.Name": "Attach to?",
+    "walledtemplates.dnd5e-spell-config.attach-token.na": "N/A",
+    "walledtemplates.dnd5e-spell-config.attach-token.caster": "Caster",
+    "walledtemplates.dnd5e-spell-config.attach-token.target": "Last Targeted",
+
+    "walledtemplates.dnd5e-spell-config.add-token-size.Name": "Add token size to template",
+    "walledtemplates.dnd5e-spell-config.add-token-size.Hint": "If spell originates at the center of a token, add the token size (min of width/height) to the template size.",
+
+    "walledtemplates.settings.submenu.title": "Default Shape Settings",
+
+    "walledtemplates.settings.submenu.circle.Name": "Circle",
+    "walledtemplates.settings.submenu.cone.Name": "Cone",
+    "walledtemplates.settings.submenu.ray.Name": "Ray",
+    "walledtemplates.settings.submenu.rect.Name": "Rectangle",
+
+    "walledtemplates.settings.submenu.circle.Title": "Default circle template settings",
+    "walledtemplates.settings.submenu.cone.Title": "Default cone template settings",
+    "walledtemplates.settings.submenu.ray.Title": "Default ray template settings",
+    "walledtemplates.settings.submenu.rect.Title": "Default rectangle template settings",
+
+    "walledtemplates.settings.submenu.circle.Description": "Default template settings unless overriden by a specific spell (dnd5e) or macro.",
+    "walledtemplates.settings.submenu.cone.Description": "Default template settings unless overriden by a specific spell (dnd5e) or macro.",
+    "walledtemplates.settings.submenu.ray.Description": "Default template settings unless overriden by a specific spell (dnd5e) or macro.",
+    "walledtemplates.settings.submenu.rect.Description": "Default template settings unless overriden by a specific spell (dnd5e) or macro.",
+
+    "walledtemplates.settings.submenu.autotarget-override.Name": "Override Highlight/Autotarget",
+    "walledtemplates.settings.submenu.autotarget-override.Hint": "Override the default highlight/autotarget settings for this shape",
+
+    "walledtemplates.settings.submenu.snap-center.Name": "Snap to Center",
+    "walledtemplates.settings.submenu.snap-corner.Name": "Snap to Corner",
+    "walledtemplates.settings.submenu.snap-midpoint.Name": "Snap to Side Midpoint",
+
+    "walledtemplates.settings.default_circle.Name": "Walls Block",
+    "walledtemplates.settings.default_cone.Name": "Walls Block",
+    "walledtemplates.settings.default_ray.Name": "Walls Block",
+    "walledtemplates.settings.default_rect.Name": "Walls Block",
+
+    "walledtemplates.settings.default_circle.Hint": "Select default for newly created circle templates. Circles can spread but not reflect.",
+    "walledtemplates.settings.default_cone.Hint": "Select default for newly created cone templates. Cones can reflect but not spread.",
+    "walledtemplates.settings.default_ray.Hint": "Select default for newly created ray templates. Rays can reflect but not spread.",
+    "walledtemplates.settings.default_rect.Hint": "Select default for newly created rectangle templates. Rectangles can spread but not reflect.",
+
+    "walledtemplates.settings.default-circle-wall-restriction.Name": "Wall Restriction",
+    "walledtemplates.settings.default-cone-wall-restriction.Name": "Wall Restriction",
+    "walledtemplates.settings.default-ray-wall-restriction.Name": "Wall Restriction",
+    "walledtemplates.settings.default-rect-wall-restriction.Name": "Wall Restriction",
+
+    "walledtemplates.settings.default-circle-wall-restriction.Hint": "Walls that block this type will block circle templates.",
+    "walledtemplates.settings.default-cone-wall-restriction.Hint": "Walls that block this type will block cone templates.",
+    "walledtemplates.settings.default-ray-wall-restriction.Hint": "Walls that block this type will block ray templates.",
+    "walledtemplates.settings.default-rect-wall-restriction.Hint": "Walls that block this type will block rectangular templates.",
+
+    "walledtemplates.settings.unwalled": "Not blocked by walls",
+    "walledtemplates.settings.walled": "Blocked by walls",
+    "walledtemplates.settings.recurse": "Reflected/Spread",
+
+    "walledtemplates.settings.autotarget-menu.Name": "Enable autotargeting",
+    "walledtemplates.settings.autotarget-menu.Hint": "When toggle option is selected, a bullseye control button in the template control bar will allow you to switch between targeting or not targeting.",
+    "walledtemplates.settings.autotarget-menu.Choice.no": "Do not autotarget",
+    "walledtemplates.settings.autotarget-menu.Choice.toggle": "Display toggle button",
+    "walledtemplates.settings.autotarget-menu.Choice.yes": "Always autotarget",
+
+    "walledtemplates.settings.autotarget-method.Name": "Highlight/Autotarget method",
+    "walledtemplates.settings.autotarget-method.Hint": "How to highlight grid squares and autotarget tokens under templates.",
+    "walledtemplates.settings.autotarget-method.Method.center": "Token center inside template",
+    "walledtemplates.settings.autotarget-method.Method.overlap": "Token area overlaps template",
+
+    "walledtemplates.settings.autotarget-area.Name": "Highlight/Autotarget percentage",
+    "walledtemplates.settings.autotarget-area.Hint": "For overlap highlight/autotarget method only. Percent token bounds or grid area that must overlap the template to count. 0 means any overlap counts. (Hint: use the arrow keys after clicking the square to increment by steps of 0.01.)",
+
+    "walledtemplates.settings.diagonal-scaling-ray.Name": "Scale diagonal rays",
+    "walledtemplates.settings.diagonal-scaling-ray.Hint": "Scale ray templates to conform with the 5-5-5 diagonal rule.",
+
+    "walledtemplates.settings.diagonal-scaling-cone.Name": "Scale diagonal cones",
+    "walledtemplates.settings.diagonal-scaling-cone.Hint": "Scale cone templates to conform with the 5-5-5 diagonal rule.",
+
+    "walledtemplates.settings.diagonal-scaling-circle.Name": "Convert circles to squares",
+    "walledtemplates.settings.diagonal-scaling-circle.Hint": "Convert circle templates to squares to better conform with the 5-5-5 diagonal rule.",
+
+    "walledtemplates.settings.diagonal-scaling-rect.Name": "Unused: Diagonal Scaling Rect",
+    "walledtemplates.settings.diagonal-scaling-rect.Hint": "Unused",
+
+    "walledtemplates.settings.hideBorder.Name": "Hide template border",
+    "walledtemplates.settings.hideBorder.Hint": "Unless hovering over the template control icon, do not show the outline of the template shape.",
+
+    "walledtemplates.settings.hideHighlighting.Name": "Hide template highlighting",
+    "walledtemplates.settings.hideHighlighting.Hint": "Unless hovering over the template control icon, do not show the highlighted grid for the template.",
+
+    "walledtemplates.settings.showOnHover.Name": "Show on token hover",
+    "walledtemplates.settings.showOnHover.Hint": "When hovering over a token, show grid highlighting for all hidden templates that overlap that token's border.",
+
+    "walledtemplates.settings.hideBasedOnVisibility.Name": "Hide based on visibility",
+    "walledtemplates.settings.hideBasedOnVisibility.Hint": "Hide template highlighting for a grid space if the space is outside the user's visibility, as measured by the line-of-sight and field-of-view for tokens that the user has OBSERVE or better permissions.",
+
+    "walledtemplates.settings.circleSquare.Name": "Replace Circles with Squares",
+
+    "walledtemplates.controls.autotarget.Title": "Autotarget tokens with template",
+
+    "walledtemplates.notifications.attach-last-selected-token": "Please select a token to attach.",
+    "walledtemplates.notifications.attach-last-targeted-token": "Please target a token to attach.",
+
+    "walledtemplates.keybindings.autoTarget.name": "Toggle Template Autotargeting",
+    "walledtemplates.keybindings.autoTarget.hint": "Defers to other uses for the key. For example, if set to 'T', will not function if hovering over a token. Also only functions if the autotarget toggle is enabled in settings. And only functions in token or template layers.",
+
+    "walledtemplates.keybindings.unhideTemplates.name": "Temporarily Unhide Templates",
+    "walledtemplates.keybindings.unhideTemplates.hint": "When held, template borders and highlighting unhidden.",
+
+    "walledtemplates.keybindings.incrementElevation.name": "Increment Template Elevation",
+    "walledtemplates.keybindings.incrementElevation.hint": "Increases template elevation in grid steps. Either while template is placed or when hovering over template control.",
+
+    "walledtemplates.keybindings.decrementElevation.name": "Decrement Template Elevation",
+    "walledtemplates.keybindings.decrementElevation.hint": "Decreases template elevation in grid steps. Either while template is placed or when hovering over template control."
+
+}

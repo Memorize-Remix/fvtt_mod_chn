@@ -1,0 +1,220 @@
+{
+    "TYPES": {
+        "JournalEntryPage": {
+            "mastercrafted": {
+                "mastercrafted": "Mastercrafted Recipe"
+            }
+        }
+    },
+    "mastercrafted": {
+        "mastercrafted": "Mastercrafted Recipe",
+        "craft": "Crafting",
+        "show-recipes": "Show Recipes",
+        "craftDialog": {
+            "title": "Crafting",
+            "craft": "Craft",
+            "cancel": "Cancel",
+            "consumes": "Consumes",
+            "crafts": "Crafts",
+            "crafted": "Crafted"
+        },
+		"componentEditForm": {
+            "title": "Component Configuration",
+            "name": {
+                "label": "Name",
+                "hint": "Name used to match the item that will be consumed as component for the crafting."
+            },
+            "img": "Image",
+            "quantity": "Quantity",
+            "uuid": {
+                "label": "Item",
+                "hint": "Item that will be shown on click. Note that changing this item will not update the name or image of the component."
+            },
+            "resourcePath": {
+                "title": "Resource Configuration",
+                "hint": "The path to an actor resource. If the item is not present in the inventory, crafting will deplete the crafting actor's resource instead of the item.",
+                "label": "Resource Path"
+            },
+            "tags": {
+                "title": "Tags Configuration",
+                "hint": "A list of tags that define alternative items for this component. If the main item is not present in the inventory, crafting will use items that match at least one tag in Some mode or all tags in Every mode.",
+                "label": "Tags",
+                "mode": {
+                    "label": "Require",
+                    "every": "Every",
+                    "some": "Some"
+                }
+            }
+        },
+        "recipeApp": {
+            "errors": {
+                "namemissing": "Name field required!",
+                "alreadyingredient": "This item is already in an Ingredient of this recipe!",
+                "noJournal": "Open a book to configure categories."
+            },
+            "bookcontext": {
+                "add": "Add Recipe",
+                "edit": "Edit",
+                "delete": "Delete",
+				"inspect": "Inspect",
+                "duplicate": "Duplicate",
+                "export": "Export",
+                "import": "Import"
+            },
+            "editcreatebook": {
+                "title": "Edit/Create Book",
+                "name": "Name",
+                "namep": "New Book",
+                "description": "Description",
+                "image": "Image",
+                "sound": "Sound",
+                "confirm": "Confirm",
+                "tools": "Tools",
+                "toolsplaceholder": "Comma separated list of tools names",
+                "macro": "Condition",
+                "macroplaceholder": "Macro Name or Command",
+                "time": "Time",
+                "timeplaceholder": "Crafting time in minutes",
+                "edit": "Edit",
+                "create": "Create",
+                "book": "Book",
+                "recipe": "Recipe",
+                "permission": "Player Permission",
+                "expression": {
+                    "label": "Expression",
+                    "placeholder": "Expression"
+                },
+                "abilityDc": {
+                    "label": "DC",
+                    "placeholder": "DC"
+                },
+                "toolCheck": {
+                    "label": "Tool Check",
+                    "placeholder": "Tool Check"
+                },
+                "toolDc": {
+                    "label": "DC",
+                    "placeholder": "DC"
+                },
+                "abilityCheck": {
+                    "label": "System Ability",
+                    "placeholder": "System Ability"
+                },
+                "modifierList": {
+                    "add": "Add Modifier",
+                    "hint": "If either the roll result or the value returned by the expression is equal to or greater than the DC (using the higher value), the number of items gathered is modified according to the modifier expression. You may include a mathematical operator at the beginning of the modifier; if none is provided, a plus (+) is assumed by default. For example, *1d4 multiplies the number of gathered items by 1d4.",
+                    "label": "Modifier"
+                }
+            },
+            "configbookrecipe": {
+                "permissions": {
+                    "default": "Default",
+                    "allow": "Allow",
+                    "deny": "Deny"
+                }
+            },
+            "recipeconfig": {
+                "inheritTools": "Inherit Tools",
+                "ingredientsInspection": "Ingredients Inspection",
+                "productInspection": "Product Inspection",
+                "ingredients": "Ingredients",
+                "result": "Result"
+            },
+            "title": "Mastercrafted",
+			"recipeBooks": "Recipe Books",
+            "addRecipeBook": "Add Recipe Book",
+            "filter": "Toggle All/Craftable",
+            "relinked": "One or more Items were missing references and have been relinked.",
+            "craft": "Craft - Hold Ctrl to quick craft",
+            "searchRecipe": "Search Recipe",
+            "tools": "Required Tools",
+            "time": "Crafting Time",
+            "minutes": "minutes",
+            "craftError": "Crafting error",
+            "craftSuccess": "Crafting successfull! Added to inventory: ",
+            "craftSuccessTimed": "Crafting successfull! The following items will be added once the crafting is complete: ",
+            "timedCraftCompleted": "Crafting completed! Added to inventory: ",
+            "craftFailConsumed": "Crafting failed! The condition was not met and the ingredients were consumed.",
+            "craftFailNotConsumed": "Crafting failed! The condition was not met and the ingredients were not consumed.",
+            "noTools": "Tools missing! You need one of: ",
+           "noProficiency": "You are not proficient with: ",
+            "ingredientsTooltip": "Left Click to Select Ingredients, Right Click to Inspect an Ingredient.",
+            "resultTooltip": "Left Click on the box to Select Result, Right Click on the item to Inspect it.",
+            "ingredientsEditInfo": "Drag an item on a box to add it as a crafting component. Click on the + button to add an empty component. Multiple components in the same box can be used interchangeably. At least one component per box is required to craft.",
+            "resultEditInfo": "Drag an item on a box to add it as a crafting result. Multiple items in the same box will all be awarded in the crafting. Only one box can be selected as the result during crafting.",
+            "cauldron": "Cauldron",
+            "timedCrafting": "Crafting Progress",
+            "readyIn": "Ready in: ",
+            "onlyCraftable": "Only Craftable",
+            "all": "All",
+            "useCraftingActor": "Use Crafting Actor",
+            "editMode": "Edit",
+            "useInventory": "Use Inventory",
+            "craftAs": "Craft as",
+            "useInventoryInfo": "Items from this actor's inventory will be used for crafting. Crafting and delayed crafing results will also be placed in this actor's inventory.",
+            "craftAsInfo": "This actor will perform the crafting and any crafting checks (tools, abilities, etc.) will be performed by this actor.",
+            "ingredient": "Ingredient",
+            "product": "Product",
+            "component": "Component"
+        },
+        "cauldronApp": {
+            "title": "Cauldron",
+            "noIngredients": "You need to mix at least two ingredients to discover a recipe!",
+            "brewFail": "Brewing failed! Your concoction did not mix well. The ingredients were consumed.",
+            "hint": "Drag and drop ingredients into the cauldron to mix them together. Click on an ingredient to remove it from the cauldron. Click on the 'Mix Ingredients' button to mix the ingredients together. If the ingredients mix well, you will discover a new recipe. The ingredients will be consumed.",
+            "discovered": "You discovered a new recipe!",
+            "gmConfirm": "A Game Master will need to confirm this discovery before it can be used.",
+            "confirm": "Confirm",
+            "partial": {
+                "consumed": "Consumed:",
+                "extra1": "It was so close! You almost had it! Maybe you added a little too much.",
+                "extra2": "It looked like it was going to work, but it didn't. Maybe you added too much.",
+                "missing1": "It was so close! You almost had it! Maybe it needs a little bit more.",
+                "missing2": "It looked like it was going to work, but it didn't. Maybe it needs more of something.",
+                "extra1missing1": "It looked like it was going to work, but it didn't. Maybe you added too much of something and not enough of something else."
+            }
+        },
+        "itemConfig": {
+            "title": "Mastercrafted - Item Configuration",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "Attribute Path"
+            },
+            "tags": {
+                "label": "Tags",
+                "notes": "Comma separated list of tags. When crafting, the player must have items with at least one of these tags in their inventory."
+            }
+        },
+        "UI": {
+            "open-recipe-app" : "Recipe Manager",
+            "delete-recipe-book-title" : "Delete Recipe Book",
+            "delete-recipe-book-content" : "Are you sure you want to delete this recipe book?",
+            "delete-recipe-title" : "Delete Recipe",
+            "delete-recipe-content" : "Are you sure you want to delete this recipe?",
+            "default-recipe-name": "New Recipe",
+            "no-permission": "You don't have permission to open this recipe or book."
+        },
+        "settings": {
+            "enableCauldron": {
+                "name": "Enable Cauldron",
+                "hint": "Enable the Cauldron interface. This will allow players to mix any ingredients together to discover recipes."
+            },
+            "customQuantityPath": {
+                "name": "Custom Quantity Path",
+                "hint": "The path to the item quantity data value (data path starts from 'system', for example if your quantity is stored in item.system.itemQuantity.value you would insert 'itemQuantity.value' in this setting). Leave blank to use the default path, only customize if your system does not use the common path."
+            },
+            "migrateOnStartup": {
+                "name": "Migrate settings on startup",
+                "hint": "If enabled, the module will migrate journal data on startup. You can use the macro 'game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()' to manually migrate your settings."
+            },
+            "dontShowButtonOnNpc": {
+                "name": "Hide button in NPC header",
+                "hint": "If enabled, the button to open the recipe book will not be shown on NPC sheets."
+            },
+            "mainFolderName": {
+                "name": "Main folder name",
+                "hint": "If a folder name is set, only the content of said folder will be shown in the Mastercrafted interface. Otherwise, the module will attempt to automatically detect the main folder."
+            }
+        }
+    }
+}

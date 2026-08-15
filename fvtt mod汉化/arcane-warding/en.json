@@ -1,0 +1,77 @@
+{
+	"ARCANE_WARDING": {
+		"INITIALIZE_WARD": "<p>Arcane Warding module initialized.</p>",
+		"MISSING_FEATURE": "<p>You do not have the Arcane Ward feature.</p>",
+		"EFFECT_NAME": "Arcane Ward",
+		"EFFECT_LABEL": "Arcane Ward",
+		"EFFECT_CREATED": "<p>A shimmering glow of magical energy enshrouds <strong>{actor}</strong>, protecting them from harm.</p>",
+		"WARD_AT_MAX": "<p><strong>{actor}</strong>'s Arcane Ward is already at maximum strength.</p>",
+		"ABSORBED_MESSAGE_BASE":"<p><strong>{actor}'s Arcane Ward</strong> surges with power and absorbs the incoming attack, taking <strong>{amount} damage</strong>.</p>",
+		"ABSORBED_MESSAGE_0HP": "<p><strong>{actor}'s Arcane Ward</strong> has been weakened, and can no longer protect <strong>{actor}</strong>",
+		"ABSORBED_MESSAGE_REMAINING_DMG": ", and <strong>{actor}</strong> takes <strong>{remaining} damage</strong>.</p>",
+		"ABSORBED_MESSAGE_NO_DMG": ", yet, <strong>{actor}</strong> takes no damage.</p>",
+		"ABSORBED_MESSAGE_SUCCESS": "<p><strong>{actor}'s Arcane Ward</strong> has successfully protected them!</p>",
+		"LONG_REST": "<p><strong>{actor}</strong> takes a long rest and the <strong>Arcane Ward</strong> fades away.</p>",
+		"WARD_HEALED": "<p><strong>{actor}</strong>'s Arcane Ward feels a surge of Abjuration magic and becomes stronger!</p>",
+		"DIALOG" : {
+			"ARCANE_WARD" : {
+				"TITLE": "{actor}: Create Arcane Ward?",
+				"CONTENT": "<p>You just cast an Abjuration spell of <strong>{spell}</strong>.</p><p>Would you like to use a strand of the spell's magical energy to enshroud yourself in a ward of protection?</p>"
+			},
+			"PROJECTED_WARD" : {
+				"TITLE": "{actor}: Protect {target} with your Arcane Ward?",
+				"CONTENT": "<p>{attacker} is about to attack {target} with {spell}. Would you like to extend your Arcane Ward to protect {target}?</p>"
+			}
+		},
+		"PROJECTED_WARD_APPLIED": "<p><strong>{actor}</strong> quickly extends thier Arcane Ward toward <strong>{target}</strong> enshrouding them in a protective barrier! <strong>{target}</strong> is protected from the incoming attack!</p>",
+		"PROJECTED_WARD_ABSORBED_BASE": "<p><strong>{actor}</strong>'s Arcane Ward surges with power and absorbs the incoming attack from <strong>{attacker}</strong>.",
+		"PROJECTED_WARD_ABSORBED_0HP": "<p><strong>{actor}</strong>'s Arcane Ward has been weakened, and can no longer protect <strong>{target}</strong>.</p>",
+		"PROJECTED_WARD_ABSORBED_SUCCESS": "<p><strong>{actor}</strong>'s Arcane Ward has successfully protected <strong>{target}</strong>!</p>",
+		"LABEL_YES": "Yes",
+		"LABEL_NO": "No",
+		"WITTY_MESSAGES": {
+			"FIRST_PERSON": {
+				"0": "It seems as though I live to fight another day!",
+				"1": "I'm still alive!",
+				"2": "I'm still kicking!",
+				"3": "I'm not out of this yet!",
+				"4": "I'm not done yet!",
+				"5": "I'm not giving up yet!",
+				"6": "I'm not going down without a fight!",
+				"7": "HA! That doesn't work on me!",
+				"8": "Excuse me! 30ft of personal space please! RUDE!",
+				"9": "My name is {actor}, you attacked my friends, prepare to die!",
+				"10": "Huh! you weak pathetic fool!",
+				"11": "What are you even aiming for?",
+				"12": "Maybe you should try again.",
+				"13": "You're not even trying!",
+				"14": "Come on, surely you can do better than that?",
+				"15": "Do you even know how to use that thing?",
+				"16": "You clearly have no idea what you're doing!",
+				"17": "HA. HA. HA. Nice try!",
+				"18": "You have no idea how to use that, do you?",
+				"19": "You have no idea what that even does, do you?"
+			},
+			"THIRD_PERSON": {
+				"0": "farts in {target}'s general direction!",
+				"1": "let's out a bellowing laugh at {target}"
+			},
+			"ACTOR": {
+				"0": "Cheers, Mate! 👍",
+				"1": "There goes <strong>{actor}</strong>, saving the day once again.",
+				"2": "Okay, <strong>{actor}</strong>, now you're just showing off.",
+				"3": "You really saved my bacon there, <strong>{actor}</strong>.",
+				"4": "Thanks, <strong>{actor}</strong>. That freaks me out everytime.",
+				"5": "Thank you, sir!",
+				"6": "<strong>{actor}</strong>, Thanks. You're my hero."
+			},
+			"ATTACKER": {
+				"0": "OH! Thought you had me huh?",
+				"1": "HA! MISSED ME!",
+				"2": "That's what we call, <em>Having Friends</em>.",
+				"3": "I bet you thought that was going to work huh?",
+				"4": "Missed me by <em>that</em> much!"
+			}
+		}
+	}
+} 

@@ -1,0 +1,121 @@
+
+  "LOCKPICKING": {
+    "Title": "开锁",
+    "TrapTitle": "解除陷阱",
+    "ConfigTitle": "The Lockpicker — 配置",
+    "OnlyGM": "只有GM可以打开此窗口。",
+    "RequestSent": "请求已发送给GM...",
+    "RequestInfo": "{user} 请求一个开锁或解除陷阱挑战（{actor}）。",
+    "ButtonTitle": "请求开锁/解除陷阱",
+    "Start": "开始",
+    "Cancel": "取消",
+    "Cancelled": "已取消",
+    "Ready": "准备就绪 — 点击»开始«。",
+    "Memorize": "记住序列！",
+    "Go": "开始吧！",
+    "StartedSpectator": "迷你游戏开始（观察者）。",
+    "Success": "成功！",
+    "Failure": "失败",
+    "SpectatorSuccess": "成功！（观察者）",
+    "SpectatorFailure": "失败：{reason}（观察者）",
+    "TimeUp": "时间到",
+    "WrongKey": "错误的按键",
+    "MistakesAllowed": "允许的错误：{remaining}/{max}",
+    "MistakesCount": "错误的按键（{current}/{max}）",
+    "TrapTag": "陷阱",
+    "Phase": "阶段 {n}",
+    "ChainedNextPhase": "阶段 {n} — 配置下一阶段。",
+    "NoTools": "{actor} 不拥有盗贼工具。",
+    "NoCharSelected": "未选择角色。",
+    "Attempts": "尝试开锁。",
+    "AttemptsDisarm": "尝试解除陷阱。",
+    "ReliableTalent": "可靠才能",
+    "Disadvantage": "劣势",
+    "NoDisadvantage": "无劣势",
+    "BonusBreakdown": "加值：",
+    "Proficiency": "熟练",
+    "Expertise": "专精",
+    "NoProficiency": "不熟练",
+    "Progress": "进度：",
+    "Sequence": "序列：",
+    "CurrentKey": "当前按键",
+    "ExtremeMode": "⚡ 极限模式",
+    "ChatMessage": {
+      "Title": "开锁 — <b>{actor}</b>",
+      "TrapTitle": "解除陷阱 — <b>{actor}</b>",
+      "Result": "结果：<b>{result}</b>",
+      "Mistakes": "错误：{mistakes} / {allowed}",
+      "TrapDamage": "⚠ <b>陷阱触发！</b> GM 应应用 <b>{damage} {damageType}</b> 伤害。",
+      "TrapDamageAuto": "陷阱触发！应用了 {total} {damageType} 伤害（{formula}）。",
+      "TrapApply": "GM：手动对角色应用伤害。"
+    },
+    "Result": {
+      "Success": "成功",
+      "Failure": "失败"
+    },
+    "Explanation": {
+      "Bonus": "盗贼工具加值（{label}）：<b>{bonus}</b>。",
+      "Reliable": "使用<b>可靠才能</b>：允许<b>{mistakes}</b>个错误。",
+      "NoReliable": "无可靠天赋：允许0个错误。",
+      "TrapWarning": "⚠ 失败时：将应用<b>{damage} {damageType}</b>伤害。",
+      "Instructions": "在时间耗尽前按顺序按下显示的按键。"
+    },
+    "Settings": {
+      "DcWasd": {
+        "Name": "WASD 按键的 DC 阈值",
+        "Hint": "从此 DC 开始，WASD 按键将被添加到序列池中（除了方向键）。"
+      },
+      "DcExtra": {
+        "Name": "字母和数字的 DC 阈值",
+        "Hint": "从此 DC 开始，额外的字母和数字按键将被添加到池中。"
+      }
+    },
+    "Config": {
+      "Character": "角色：",
+      "Type": "挑战类型：",
+      "TypeLock": "🔒 锁",
+      "TypeTrap": "⚠ 陷阱",
+      "DC": "难度等级（DC）：",
+      "Damage": "失败时的伤害：",
+      "ChainedTrap": "连锁陷阱（多阶段）",
+      "ChainedTrapHint": "成功后，将提示 GM 配置下一阶段。",
+      "ExtremeMode": "⚡ 极限模式",
+      "ExtremeModeHint": "序列短暂显示，然后隐藏。你必须记住它。",
+      "Start": "开始迷你游戏",
+      "Presets": "保存的预设：",
+      "SelectPreset": "选择预设",
+      "LoadPreset": "加载",
+      "SavePreset": "另存为预设：",
+      "PresetName": "预设名称...",
+      "SavePresetBtn": "保存",
+      "PresetSaved": "预设 \"{name}\" 已保存。",
+      "OpenHistory": "查看历史记录",
+      "Estimate": "{steps} 步骤 · ~{seconds}秒 · 按键：{keys}",
+      "KeysArrows": "仅方向键",
+      "KeysWasd": "方向键 + WASD",
+      "KeysAll": "方向键 + WASD + 字母/数字",
+      "DamageTypeLabel": "伤害类型：",
+      "DamageTypes": {
+        "Piercing": "穿刺",
+        "Poison": "毒素",
+        "Fire": "火焰",
+        "Cold": "冷冻",
+        "Lightning": "闪电",
+        "Acid": "强酸",
+        "Necrotic": "黯蚀",
+        "Force": "力场"
+      }
+    },
+    "History": {
+      "Title": "The Lockpicker — GM 历史记录",
+      "Date": "日期",
+      "Actor": "角色",
+      "Type": "类型",
+      "Result": "结果",
+      "Mistakes": "错误",
+      "Damage": "伤害",
+      "Empty": "尚未记录任何尝试。",
+      "Clear": "清除历史记录"
+    }
+  }
+}

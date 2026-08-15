@@ -1,0 +1,235 @@
+
+  "RNCS": {
+    "Button": {
+      "text": "掷骰新角色属性"
+    },
+    "settings": {
+      "version": {
+        "title": "检测到模组更新",
+        "content": "<p>感谢你的更新！</p><p>自上次更新以来，设置配置已更改，需要恢复为默认设置。</p><p>请阅读v3.1.4<a href=\"https://github.com/MrXofar/roll-new-character-stats/blob/master/changes.txt\">更新说明</a>了解更多。</p>"
+      },
+      "NumberOfActors": {
+        "Name": "角色数量",
+        "Hint": "输入要生成的角色数量。如果启用了Dice So Nice!请谨慎使用。"
+      },
+      "DiceSoNiceEnabled": {
+        "Name": "Dice So Nice!",
+        "Hint": "勾选后，若已安装并启用Dice So Nice!，3D骰子将仅在你的屏幕上掷骰。"
+      },
+      "NameFormat": {
+        "Name": "名称格式",
+        "Hint": "未提供名称时的角色名称格式。",
+        "choices": {
+          "player-occupation": "玩家(职业)",
+          "occupation-player": "职业(玩家)",
+          "occupation": "职业",
+          "random": "随机"
+        }
+      },
+      "HideResultsZone": {
+        "Name": "隐藏结果区域",
+        "Hint": "此设置将在选择\"按掷骰结果应用\"或\"购点\"时隐藏结果区域。"
+      },
+      "ReverseRingMethodScrolling": {
+        "Name": "反向环方式滚动",
+        "Hint": "反向环方式滚动选择方法中鼠标滚轮的默认滚动方向。"
+      },
+      "ShowOtherPropertyResults": {
+        "Name": "显示其他属性结果",
+        "Hint": "选择如何显示其他属性结果与结果描述。其他属性结果是由增强支持执行的其他掷骰，如职业、装备、武器、护甲等。",
+        "choices": {
+          "do-not-show": "不显示",
+          "with-result": "与结果描述一起显示",
+          "in-place-of": "替换结果描述显示"
+        }
+      },
+      "IncludeResultDescription": {
+        "Name": "包含结果描述",
+        "Hint": "此设置将在角色表中包含其他属性结果的结果描述；例如在传记、背景故事或笔记中。"
+      },
+      "RollMethodAndDistribution": {
+        "Name": "掷骰方法与分配",
+        "Hint": "选择要掷骰的骰子数量、掷骰多少组、如何分配结果以及其他掷骰方法和分配规则。"
+      },
+      "AbilitiesRollMethod": {
+        "Name": "掷骰d6数量",
+        "Hint": "选择要掷骰多少d6",
+        "choices": {
+          "3": "3d6",
+          "4": "4d6",
+          "2": "2d6+6"
+        }
+      },
+      "DropLowestDieRoll": {
+        "Name": "丢弃最低骰值",
+        "Hint": "从掷骰的d6中丢弃最低的骰值。"
+      },
+      "ReRollOnes": {
+        "Name": "重掷1点",
+        "Hint": "重掷1点直到不再掷出1点。"
+      },
+      "NumberOfSetsRolled": {
+        "Name": "掷骰组数",
+        "Hint": "选择要掷骰多少组骰子",
+        "choices": {
+          "6": "6组",
+          "7": "7组",
+          "8": "8组",
+          "9": "9组"
+        }
+      },
+      "DropLowestSet": {
+        "Name": "丢弃最低组",
+        "Hint": "从掷骰的组数中丢弃最低的一组。"
+      },
+      "BonusPoints": {
+        "Name": "奖励点数",
+        "Hint": "选择要奖励多少奖励点数",
+        "choices": {
+          "zero-points": "0奖励点数",
+          "one-point": "1奖励点数",
+          "one-d-four": "1d4奖励点数"
+        }
+      },
+      "Over18Allowed": {
+        "Name": "允许超过18点",
+        "Hint": "当分配掷骰结果和/或奖励点数时允许属性值超过18点。当选择\"按掷骰结果应用\"（不授予奖励点数）或\"购点\"分配方式时，此设置将被忽略。"
+      },
+      "MinimumAbilityTotal": {
+        "Name": "最低属性总值",
+        "Hint": "包括奖励点数在内的最终最低属性总值。0=无限制"
+      },
+      "MaximumAbilityTotal": {
+        "Name": "最高属性总值",
+        "Hint": "包括奖励点数在内的最终最高属性总值。0=无限制"
+      },
+      "DistributeResults": {
+        "Name": "分配结果",
+        "Hint": "允许自由分配属性结果"      
+      },
+      "DistributionMethod": {
+        "Name": "分配方式",
+        "Hint": "选择属性结果的分配方式",
+        "choices":{
+          "apply-as-rolled"  : "按掷骰结果应用",
+          "distribute-freely": "自由分配",
+          "ring-method"      : "环方式",
+          "point-buy-method" : "购点"
+        }          
+      },
+      "ChatRemoveConfigureActorButton": {
+        "Name": "移除配置角色按钮",
+        "Hint": "点击后移除配置角色按钮"      
+      },
+      "ChatSettings": {
+        "Name": "聊天设置",
+        "Hint": "选择在聊天日志中隐藏或显示哪些信息。"
+      },
+      "ChatShowDescription": {
+        "Name": "描述",
+        "Hint": "在聊天信息中显示角色描述(如果有)。"
+      },
+      "ChatShowMethodText": {
+        "Name": "掷骰方法与分配规则",
+        "Hint": "显示新属性的掷骰方法与分配规则。"
+      },
+	  "ChatShowResultsText": {
+		"Name": "显示结果",
+		"Hint": "显示所有掷骰结果。取消勾选将隐藏聊天消息中的所有掷骰结果。"
+	  },
+	  "ChatShowCondensedResults": {
+		"Name": "精简属性结果",
+		"Hint": "当'显示结果'勾选时，以精简格式显示属性结果。"
+	  },
+	  "ChatShowDieResultSet": {
+		"Name": "骰子结果组",
+		"Hint": "当'显示结果'勾选时，显示所有骰子结果（不包括重掷和弃掷）。"
+	  },
+	  "ChatShowBonusPointsText": {
+		"Name": "奖励点数",
+		"Hint": "当'显示结果'勾选时，显示奖励点数。"
+	  },
+	  "ChatShowTotalAbilityScore": {
+		"Name": "总属性值",
+		"Hint": "在聊天消息中显示所有掷骰和奖励点数的总和。"
+	  },
+	  "ChatShowDifficultyText": {
+		"Name": "难度",
+		"Hint": "显示难度说明 - 以有趣的方式展示掷出高值的概率。"
+	  },
+	  "ChatShowNoteFromDM": {
+		"Name": "DM备注",
+		"Hint": "DM的备注，总结掷骰方法和分配规则。"
+	  }
+    },
+	
+    "results-text": {
+      "methods": {
+        "label": "掷骰方法与分配规则",
+        "drop-lowest-die": "-丢弃最低骰值",
+        "re-roll-ones": "-重掷1点",
+        "drop-lowest-set": "-丢弃最低组",
+        "over-18-allowed": "允许超过18点",
+        "over-18-not-allowed": "不允许超过18点",
+        "distribute-freely": "自由分配",
+        "apply-as-rolled": "按掷骰结果应用",
+        "ring-method": "环方式分配",
+        "point-buy": "购点分配"
+      },
+      "difficulty": {
+        "label": "难度",
+        "level": {
+          "Hardcore": "硬核",
+          "Veteran": "老手",
+          "EasyDay": "轻松",
+          "Yawn": "简单"
+        }
+      },
+      "results": {
+        "label": "结果",
+        "abilities": "属性",
+        "total-ability-score": "属性总值",
+        "min_max_failed": "(调整骰子/组数或最小/最大值)"
+      },
+      "bonus": {
+        "label": "奖励"
+      },
+      "note-from-dm": {
+        "label": "DM备注",
+        "apply-as-rolled": "每个结果将按照掷骰顺序应用到各属性。",
+        "distribute-freely": "你可以自由分配这些分数到各属性。",
+        "ring-method": "你可以选择三个连续的骰子结果并应用到任意属性。",
+		"point-buy-method": "你可以将27个点数自由分配到各项属性中。",
+        "distribute-bonus-points": "奖励点数可以分配到任意属性值。",
+        "final-scores-may": "最终分数可以",
+        "final-scores-may-not": "最终分数<b>不能</b>",
+        "above-18": "在计入以下内容后可超过18点",
+        "bonus-points": "奖励点数和",
+        "any-bonuses": "任何初始奖励。"
+      }
+    },
+	
+    "dialog": {
+      "confirm-roll": {
+        "Title": "掷骰新角色属性",
+        "Content": "为{0}个新{1}掷骰吗？"
+      },
+      "results-button": {
+        "configure-new-actor": "配置角色"
+      },
+      "point-buy":{
+        "Title": "创建新角色属性",
+        "Content": "使用购点方式创建新角色属性？"
+      }
+    },
+    "form-app": {
+      "form-text": {
+        "applied-as-rolled": "按掷骰结果应用。",
+        "over-18-not-allowed": "*不允许超过18点。",
+        "accept-new-actor": "接受新角色",
+        "ring-method": "环方式分配：此方法允许你选择三个连续的骰子结果并应用到任意属性。",
+        "point-buy-method": "购点方式：你可以将27个点数分配到各项属性中。"
+      }
+    }
+  }
+}

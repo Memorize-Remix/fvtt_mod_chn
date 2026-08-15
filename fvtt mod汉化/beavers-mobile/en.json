@@ -1,0 +1,32 @@
+{
+  "beaversMobile": {
+    "settings": {
+      "addCombatTrackerTarget": {
+        "name": "Select Targets on Combat Tracker",
+        "hint": "Enable to add a Target icon next to each Combatant in Combat Tracker"
+      },
+      "hideCanvas": {
+        "name": "Activate Mobile",
+        "hint": "We do not want a local lan party, do we? Just a character sheet and some interactions. Hide Canvas for mobile device users"
+      },
+      "virtualGamepad": {
+        "name": "enable VirtualGamepad",
+        "hint": "This will enable one virtualGamepad controller stick. Combined with beavers-gamepad you can use this to control a token"
+      },
+      "disableItemDrag": {
+        "saved": "item-dragging-disabled users updated.",
+        "users": {
+          "name": "item-dragging-disabled",
+          "label": "Select users to disable item dragging",
+          "notes": "Only these users will be prevented from dragging items"
+        },
+        "menu": {
+          "name": "Disable item dragging",
+          "label": "disable item dragging",
+          "hint": "Open a dialog to pick which users disable item dragging.",
+          "title": "Disabled item dragging"
+        }
+      }
+    }
+  }
+}

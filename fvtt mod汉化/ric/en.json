@@ -1,0 +1,39 @@
+{
+  "RIC": {
+    "APP": {
+      "AUTOFIX": "Attempt to automatically resolve the invalid property.",
+      "COPY": "Copy",
+      "COPIED_ERROR": "The error message has been copied to the clipboard.",
+      "DELETE": "Delete the invalid Document.",
+      "TITLE": "Reflect, Inspect, Correct",
+      "MANUALFIX":"Open dialogue to manually input replacement values.",
+      "CONFIRM":{
+        "DELETION":{
+          "TITLE":"Delete invalid Document",
+          "CONTENT":"This will permanently delete the invalid Document. Are you sure you wish to do this?"
+        },
+        "AUTOFIX":{
+          "TITLE":"Remove invalid data",
+          "CONTENT":"This will attempt to automatically remove the data causing the validation failure of the Document. <p> This will lead to <strong> permanent loss of the current value </strong> of the problematic field and can not be reverted.</p> Do you wish to proceed regardless?"
+        },
+        "MANUALFIX":{
+          "TITLE":"Manually replace invalid data",
+          "CONTENT":"Please enter the new value for the relevant fields below."
+        }
+      }
+    },
+    "NOTIF":{
+      "DELETE":"The Document has been deleted. Do note that this will not be visible until you refresh.",
+      "AUTOFIX":"Automatic correction of the invalid Document has been attempted.To see the result you will need to refresh. Should it still be invalid after a refresh, the issue can not be automatically resolved.",
+      "MANUALFIX":"The Document has been updated with the entered properties. Refresh to see the change.",
+      "ARRAY":"Manual adjustment of Array values is not supported at this time.",
+       "CUSTOMTYPE":"Documents with an unrecognized type originally introduced by a module can not be resolved in any way, shape or form. Your only options are to delete the Document or reinstall the Module that added the custom type.",
+      "UNSALVAGEABLE":"Document issue could not be identified. Deletion or recovery via custom script is recommended.",
+      "USE_SHEET_AND_RELOAD":"Please use the Document sheet that opened to resolve the issue and reload afterwards. The Document will not become valid until after you reload!"
+    },
+    "LAUNCHER":{
+      "DISABLED":"No validation issues detected!",
+      "ENABLED":"Resolve Validation issues."
+    }
+  }
+}

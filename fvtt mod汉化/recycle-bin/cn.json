@@ -1,0 +1,42 @@
+{
+    "recycle-bin": {
+        "app": {
+            "title": "🗑️回收站",
+            "restore-item": "恢复项目",
+            "preview-item": "项目预览",
+            "permanently-delete": "永久删除项目",
+            "noParent": "主要文件",
+            "search": "搜索",
+            "time": "{time}前删除",
+            "deleteOnRefresh": "刷新后，此项目将被永久删除。",
+            "deleteOnRefreshTitle": "一个或多个待删除项目"
+        },
+        "settings": {
+            "maxPermanentItems": {
+                "name": "最大永久历史记录",
+                "hint": "在两次重新加载之间保存的项目数。"
+            },
+            "maxTemporaryItems": {
+                "name": "最大临时历史记录",
+                "hint": "将保存的项目数。超过'最大永久历史记录'的临时项目将在重新加载时丢失。"
+            }
+        },
+        "error": {
+            "restore": "恢复 {item} 失败。未找到父项：",
+            "preview": "预览 {item} 失败。未找到父项。"
+        },
+        "success": {
+            "restore": "成功恢复 {item}."
+        },
+        "dialog": {
+            "restoreParent": {
+                "title": "恢复父项",
+                "content": "在你的世界中找不到此项目的父项目，但它存在于回收站中。你想恢复它吗？"
+            },
+            "permanentlyDelete": {
+                "title": "永久删除",
+                "content": "你确定要永久删除此项目吗？此操作无法撤销。"
+            }
+        }
+    }
+}

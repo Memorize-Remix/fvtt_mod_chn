@@ -1,0 +1,79 @@
+
+  "fast-flip": {
+    "keybinds": {
+      "flip-token": {
+        "hotkey": "翻转选中的Token",
+        "hint": "翻转选中的Token（按住SHIFT键可垂直翻转）"
+      },
+      "flip-tile": {
+        "hotkey": "翻转选中的图块",
+        "hint": "翻转选中的图块（按住SHIFT键可垂直翻转）"
+      },
+      "afk-toggle": {
+        "hotkey": "切换暂离状态",
+        "hint": "切换选中Token的暂离状态"
+      },
+      "show-speech-bubble": {
+        "hotkey": "显示对话气泡",
+        "hint": "向所有玩家显示附加在你选中Token上的对话气泡"
+      }
+    },
+    "settings": {
+      "afk": {
+        "show-toggle-button": {
+          "value": "显示暂离切换按钮",
+          "hint": "在TokenHUD上显示或隐藏暂离切换按钮"
+        },
+        "allow": {
+          "value": "允许切换暂离状态",
+          "hint": "允许为玩家拥有的Token切换暂离状态"
+        },
+        "overlay-icon-path": {
+          "value": "暂离图标路径",
+          "hint": "用于Token上暂离状态指示器的图像路径"
+        },
+        "show-status-in-chat": {
+          "value": "在聊天中显示暂离状态",
+          "hint": "当玩家的暂离状态发生变化时发送聊天消息"
+        }
+      },
+      "speech-bubble": {
+        "allow": {
+          "value": "允许对话气泡",
+          "hint": "允许在激活热键时在Token上显示对话气泡"
+        },
+        "font-size": {
+          "value": "对话气泡字体大小",
+          "hint": "对话气泡中显示名称的字体大小（单位：像素）"
+        }
+      },
+      "flip": {
+        "show": {
+          "value": "显示翻转按钮",
+          "hint": "在TokenHUD上显示或隐藏翻转按钮"
+        },
+        "animation-duration": {
+          "value": "⚠️ 动画持续时间",
+          "hint": "Token翻转动画的持续时间（秒）（0表示禁用动画）。使用风险自负。仅验证适用于Pathfinder 2e。"
+        }
+      }
+    },
+    "text": {
+      "afk": {
+        "toggle-button": "切换暂离状态",
+        "chat": {
+          "message": "{name} 已暂离。",
+          "returned-message": "{name} 已从暂离状态返回。"
+        }
+      },
+      "flip-token": {
+        "horizontal-button": "翻转Token（水平）",
+        "vertical-button": "翻转Token（垂直）"
+      },
+      "flip-tile": {
+        "horizontal-button": "翻转图块（水平）",
+        "vertical-button": "翻转图块（垂直）"
+      }
+    }
+  }
+}

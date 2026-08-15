@@ -1,0 +1,88 @@
+{
+    "world-setting-sync": {
+        "settings": {
+            "masterAgnostic": {
+                "name": "Is Master World for Agnostic Settings?",
+                "hint": "If enabled, this world will be the master world for system agnostic settings, users, and system agnostic modules."
+            },
+            "masterSystem": {
+                "name": "Is Master World for System Settings?",
+                "hint": "If enabled, this world will be the master world for system settings, users, and system modules."
+            },
+            "autoCheckSync": {
+                "name": "Auto Check Sync",
+                "hint": "If enabled, this world will automatically check for changes to agnostic and system settings on startup."
+            },
+            "autoPerformSync": {
+                "name": "Auto Perform Sync",
+                "hint": "If enabled, this world will automatically save agnostic and system settings to file on startup."
+            },
+            "silentUpload": {
+                "name": "Silent Upload",
+                "hint": "If enabled, this world will not notify you when saving agnostic and system settings to file."
+            },
+            "settingsSync": {
+                "name": "Synchronization Manager",
+                "label": "Open Synchronization Manager",
+                "hint": "Open the synchronization manager to save or load agnostic and system settings."
+            },
+            "syncModules": {
+                "name": "Synchronize Modules",
+                "hint": "If enabled, this world will synchronize active modules."
+            },
+            "syncUsers": {
+                "name": "Synchronize Users",
+                "hint": "If enabled, this world will synchronize users between."
+            },
+            "syncSettings": {
+                "name": "Synchronize Settings",
+                "hint": "If enabled, this world will synchronize settings."
+            },
+            "exclusionList": {
+                "name": "Exclusion List",
+                "label": "Open Exclusion List",
+                "hint": "Open the exclusion list to exclude modules, users, and settings from synchronization.",
+                "title": "Exclusion List",
+                "info": "This list will be used to exclude modules, system, and core settings from synchronization.<br>On a Master world, exclusions will not be saved to the synchronization file.<br>On a non-Master world, exclusions will be ignored when loading settings from the synchronization file.",
+                "core": "Core",
+                "coreSystem": "Core & System",
+                "modules": "Modules",
+                "users": "Users"
+            }
+        },
+        "settings-sync": {
+            "title": "Settings Sync",
+            "activate": "Activate",
+            "deactivate": "Deactivate",
+            "expand": "Click to expand",
+            "namespace": "Namespace",
+            "setting": "Setting",
+            "user": "User",
+            "change": "Change",
+            "apply": "Apply?",
+            "confirm": {
+                "syncAll": "Syncronize Everything",
+                "syncAgnostic": "Syncronize Agnostic Settings",
+                "syncSystem": "Syncronize System Settings",
+                "syncModules": "Syncronize Modules",
+                "syncUsers": "Syncronize Users",
+                "content": "Are you sure you want to procede? This operation is not reversible."
+            },
+            "tabs": {
+                "modules": "Modules",
+                "users": "Users",
+                "settingsAgnostic": "Agnostic Settings",
+                "settingsSystem": "System Settings"
+            },
+            "actions": {
+                "syncAll": "Sync All",
+                "syncAgnostic": "Sync Agnostic",
+                "syncSystem": "Sync System",
+                "syncModules": "Sync Modules",
+                "syncUsers": "Sync Users",
+                "saveConfigurations": "Manually Save Settings to File"
+            }
+        },
+        "flags": {}
+    }
+}

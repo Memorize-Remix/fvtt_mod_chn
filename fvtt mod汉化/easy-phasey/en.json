@@ -1,0 +1,34 @@
+{
+  "fep": {
+    "windowTitle": "Easy Phasey - Configure phases",
+    "notifications": {
+      "noValidScenes": "Easy Phasey: No other valid scenes found.",
+      "masterSceneNotActive": "Easy Phasey: Why didn't the phase change? Because you're not looking at the active scene.",
+      "noValidFolder": "Before configuring a phased map, you must have at least one folder with a scene in it."
+    },
+    "labels": {
+      "skipped": "skipped",
+      "mergeTokens": "Merge Tokens",
+      "save": "Save",
+      "saveActivate": "Save and Activate",
+      "phaseScenes": "Phase Scenes",
+      "chooseFolder": "Choose a folder",
+      "phaseFolder": "Phase Folder",
+      "masterScene": "Master Scene",
+      "currentPhase": "Current Phase"
+    },
+    "controls": {
+      "nextPhase": "Next Phase",
+      "prevPhase": "Previous Phase"
+    },
+    "tooltips": {
+      "mergeTokens": "Merge any tokens from the new phase with the ones coming from the prior.  If off, any existing tokens in the scenes will be removed and only tokens coming from the prior phase will appear."
+    },
+    "keybindings": {
+      "prevPhase": "Previous Phase",
+      "prevPhaseHelp": "Move to previous phase in the order (will wrap around)",
+      "nextPhase": "Next Phase",
+      "nextPhaseHelp": "Move to next phase in the order (will wrap around)"
+    }
+  }
+}

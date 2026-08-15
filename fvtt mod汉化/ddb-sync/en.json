@@ -1,0 +1,23 @@
+{
+  "DDB.Settings.CobaltCookie.Name": "D&D Beyond CobaltSession Cookie",
+  "DDB.Settings.CobaltCookie.Hint": "Your D&D Beyond CobaltSession cookie value. Find this in your browser dev tools: Application > Cookies > dndbeyond.com > CobaltSession. This is used to obtain an access token for the WebSocket connection.",
+  
+  "DDB.Settings.ProxyUrl.Name": "DDB Proxy URL",
+  "DDB.Settings.ProxyUrl.Hint": "Proxy server URL to bypass CORS restrictions when communicating with D&D Beyond. Default uses the DDB Importer proxy.",
+
+  "DDB.Settings.CharacterMapping.Name": "Character Mapping",
+  "DDB.Settings.CharacterMapping.Label": "Configure Mappings",
+  "DDB.Settings.CharacterMapping.Hint": "Map D&D Beyond characters to Foundry actors for dice roll synchronization.",
+
+  "DDB.Settings.UserId.Name": "D&D Beyond Cobalt User ID",
+  "DDB.Settings.UserId.Hint": "The ID of your account in D&D Beyond. When on your D&D Beyond campaign, find this by running console.log(Cobalt.User.ID) from browser console.",
+
+  "DDB.Settings.CampaignId.Name": "Campaign ID",
+  "DDB.Settings.CampaignId.Hint": "The ID of your D&D Beyond campaign. You can find this in your campaign's URL.",
+  
+  "DDB.Settings.Enabled.Name": "Enable DDB Dice Sync",
+  "DDB.Settings.Enabled.Hint": "Enable or disable the connection to D&D Beyond. When enabled, dice rolls from DDB will be synced to Foundry.",
+  
+  "DDB.Settings.UpdateDamageOnly.Name": "Update Character Damage From D&D Beyond",
+  "DDB.Settings.UpdateDamageOnly.Hint": "When enabled, character damage from D&D Beyond will sync."
+}

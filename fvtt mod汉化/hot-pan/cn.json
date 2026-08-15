@@ -1,0 +1,129 @@
+
+  "hot-pan": {
+    "setting": {
+      "modVersion": {
+        "name": "版本",
+        "hint": "当前安装的模组版本（此处无法更改）。"
+      },
+      "debug": {
+        "name": "调试模式",
+        "hint": "客户端设置，启用扩展调试日志记录。"
+      },
+      "isActive": {
+        "name": "始终保持激活",
+        "hint": "除非被宏代码覆盖，否则始终保持模组激活状态。"
+      },
+      "hideChatInfo": {
+        "name": "在聊天窗口中隐藏模组信息",
+        "hint": "在聊天中隐藏关于此模组的通用一次性信息。如果希望下次重载时再次看到，请取消勾选此选项。"
+      },
+      "notifyOnChange": {
+        "name": "切换时显示界面消息",
+        "hint": "在开关切换时显示临时界面消息（通过宏代码切换时也有效）。"
+      },
+      "warnWhenON": {
+        "name": "激活时显示警告",
+        "hint": "切换为开启时显示格外醒目的界面消息（警告）。需要启用\"切换时显示界面消息\"选项。"
+      },
+      "warnWhenOFF": {
+        "name": "停用时显示警告",
+        "hint": "切换为关闭时显示格外醒目的界面消息（警告）。需要启用\"切换时显示界面消息\"选项。"
+      },
+      "showHUDIcon": {
+        "name": "显示HUD状态图标",
+        "hint": "当GM控制屏幕时，在屏幕上显示一个图标（右上角，默认：开启）。\n 你可以通过设置下面的滑块使其在超时后自动关闭。"
+      },
+      "hudIconScale": {
+        "name": "HUD图标大小",
+        "hint": "状态HUD图标的缩放比例。也可以通过全局控制设置中的自定义键位绑定来切换。"
+      },
+      "hudIconScaleOptions": {
+        "small": "小",
+        "normal": "正常",
+        "large": "大"
+      },
+      "hudIconOpacity": {
+        "name": "HUD状态图标的不透明度",
+        "hint": "1（最大值）表示完全可见，0.2（最小值）表示可见度为20%（透明度为80%）。默认：0.7（70%）"
+      },
+      "keybindingNames": {
+        "toggle": "热平移与缩放！(开/关)",
+        "scaleZero": "图标大小：不可见",
+        "scaleSmall": "图标大小：小",
+        "scaleNormal": "图标大小：正常",
+        "scaleLarge": "图标大小：大"
+      },
+      "afMode": {
+        "name": "模式",
+        "hint": "禁用：模组关闭（默认）| 队伍视图：所有玩家拥有的Token | 选中Token：仅选中的Token。",
+        "options": {
+          "disabled": "禁用",
+          "partyView": "队伍视图",
+          "selectedToken": "选中Token"
+        }
+      },
+      "afAutoZoom": {
+        "name": "自动缩放",
+        "hint": "同时调整缩放和位置。强烈推荐。"
+      },
+      "afMitigateBounce": {
+        "name": "缓解弹跳问题",
+        "hint": "仅在自动缩放关闭且模式为队伍视图时相关。在需要时强制启用自动缩放。"
+      },
+      "afPaddingSq": {
+        "name": "边距（方格数）",
+        "hint": "在所有方向添加到视图区域的边距。强烈建议设置为>2，<1时无效。"
+      },
+      "afPaddingPer": {
+        "name": "边距（百分比）",
+        "hint": "视图区域的百分比增加量"
+      },
+      "afMaxZoom": {
+        "name": "最大缩放级别",
+        "hint": "提示：0.1表示很远，3表示非常近。"
+      },
+      "afUpdateSpeed": {
+        "name": "摄像机动画速度",
+        "hint": "默认：500"
+      },
+      "afIncludeInvisible": {
+        "name": "包含不可见",
+        "hint": "是否在队伍视图计算中考虑用户无法看到的Token。"
+      }
+    },
+    "chatInfoContent": {
+      "title": "热平移与缩放！",
+      "text1": "&quot;一物平移众！一物寻众！一物缩放众，并将其绑定于GM的画布之上！&quot;",
+      "text2": "热平移与缩放！是一个系统无关的实用工具，用于保持玩家的画布位置和缩放与GM屏幕同步。它在后端运行，但也可以通过宏代码控制。",
+      "text3": "请参考游戏设置下的各种模组偏好设置。在GitHub上查找更多详细信息",
+      "footer": "此聊天卡片仅显示一次。如有需要，可在模组设置中再次激活。"
+    },
+    "chatInfoContentHUDIcon": {
+      "title": "新功能：HUD图标",
+      "text1": "场景视图右上角的新图标现在指示GM何时控制屏幕。",
+      "text2": "在模组设置中配置其大小，或者如果你觉得它过于侵入，可以完全禁用它。",
+      "text3": "它的工作方式类似于我的另一个模组<a href='https://github.com/coffiarts/FoundryVTT-lock-the-sheets' style='font-weight: bold; text-decoration: underline'>-&gt; Lock The Sheets!</a>中的类似HUD图标。两个模组/图标都设计为可以协同工作。",
+      "footer": "此消息卡片仅显示一次。如有需要，可在模组设置中再次激活。"
+    },
+    "onOffUIMessage": {
+      "whenON": "屏幕正由GM远程控制！",
+      "whenOFF": "屏幕控制已释放。"
+    },
+    "keybindingMenuLabel": "切换热平移与缩放！开/关",
+    "keybindingMenuLabelAF": "切换自动对焦（又名'Always Centred'）开/关",
+    "autoFocus": {
+      "title": "自动对焦（又名'Always Centred'）",
+      "description": "额外的自动对焦和自动缩放到场景Token（可以单独开关）。前身为SDoehren的'Always Centred'。与Hot Pan & Zoom!配合使用效果极佳。经原作者同意合并到此模组中。在以下位置查找原始模组",
+      "msg": {
+        "invalidMode": "你尝试为自动对焦设置无效模式：",
+        "whenON": "自动对焦已启用并设置为'{mode}'。",
+        "whenOFF": "自动对焦已禁用。",
+        "alwaysCentredWarning": {
+          "title": "警告：<br/>检测到原始模组'Always Centred'！",
+          "text": "Hot Pan & Zoom!检测到你的游戏中正在运行'Always Centred'模组。<br/>自模组版本12.1.0起，此模组已集成到Hot Pan & Zoom!中。<br/>建议你卸载'Always Centred'，以避免冲突。<br/>保留原始模组的唯一原因是如果玩家仍希望在他们的客户端上本地使用和配置自动对焦和自动缩放。",
+          "footer": "此聊天卡片仅显示一次！"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,279 @@
+
+  "SIMPLE_COVER_5E": {
+    "Settings": {
+      "CoverScope": {
+        "Name": "掩护移除范围",
+        "Hint": "选择清除掩护时影响哪些Token：场景上的所有Token、仅战斗人员，或仅玩家拥有的Token。",
+        "Options": {
+          "All": "场景上的所有Token",
+          "Combatants": "仅战斗人员",
+          "Player": "仅玩家拥有的Token"
+        }
+      },
+      "OnlyInCombat": {
+        "Name": "仅在战斗中应用掩护",
+        "Hint": "如果启用，自动掩护计算仅在战斗遭遇激活时运行。"
+      },
+      "RemoveOnCombat": {
+        "Name": "战斗更新时清除掩护",
+        "Hint": "在战斗变化时（回合/轮次/先攻）自动移除掩护状态，遵循选定的掩护移除范围。"
+      },
+      "RemoveOnMove": {
+        "Name": "Token移动时清除掩护",
+        "Hint": "在战斗激活期间Token移动时自动移除掩护状态，遵循选定的掩护移除范围。"
+      },
+	  "losCheck": {
+		"Name": "墙壁视线检查",
+		"Hint": "启用后，模组还会检查视线是否被阻挡性墙壁遮挡。可用于检测目标完全被墙壁遮挡的情况。"
+	  },
+	  "coverHints": {
+        "Name": "在掷骰对话框中显示掩护状态提示",
+        "Hint": "选择模组应在何时在攻击检定和豁免检定掷骰对话框中显示掩护提示。",
+		  "Options": {
+			"None": "从不显示",
+			"Conditional": "仅当掩护生效时",
+			"Always": "总是显示"
+		  }
+      },
+	  "coverHintsGmMessage": {
+		"Name": "掩护状态变更的GM聊天消息",
+		"Hint": "当在掷骰对话框中手动更改掩护状态时，向GM发送一条聊天消息。"
+	  },
+      "CreaturesHalfOnly": {
+        "Name": "其他生物掩护限制为半身掩护",
+        "Hint": "启用时，其他生物最多只能提供半身掩护。当至少一条视线被其他生物阻挡时，目标获得半身掩护，但绝不会仅从其他生物获得四分之三掩护。墙壁继续遵循标准DMG规则。"
+      },
+	  "IgnoreFriendly": {
+		"Name": "忽略友方单位提供的掩护",
+		"Hint": "启用时，掩护判定将忽略对攻击者友好的所有单位。"
+	  },
+	  "IgnoreAllAOE": {
+		"Name": "忽略所有范围效果的掩护",
+		"Hint": "当行动定义了任何范围测量板时，跳过掩护检查。如果存在测量板，该掷骰不计算掩护。"
+	  },
+	  "IgnoreDistanceAOE": {
+		"Name": "忽略远程AoE测量板的掩护",
+		"Hint": "跳过为创建远程范围的行动（如火球术）进行掩护检查。这适用于行动射程大于1且使用非自身/触及/特殊射程单位的AoE测量板的情况。"
+	  },
+	  "IgnoreDistanceSpace": {
+		"Name": "忽略远程空间目标的掩护",
+		"Hint": "当行动以远程空间为目标时（射程>1且影响类型为\"空间\"），跳过掩护检查。这通常用于召唤特性/法术，实际攻击/效果从召唤物处解析。掩护应从召唤物而非源特性/法术处评估。"
+	  },
+      "Hover": {
+        "Name": "悬停掩护显示",
+        "Hint": "控制悬停Token时是否以及如何显示掩护信息和距离。",
+        "Options": {
+          "Off": "禁用",
+          "CoverOnly": "仅掩护图标",
+          "CoverAndDistance": "掩护图标和距离"
+        }
+      },
+      "HoverLabelPosition": {
+        "Name": "悬停标签位置",
+        "Hint": "选择悬停标签相对于目标Token的锚定位置。",
+        "Options": {
+          "Above": "Token上方",
+          "On": "Token居中",
+          "Below": "Token下方"
+        }
+      },
+      "HoverLabelYOffset": {
+        "Name": "悬停标签Y轴偏移",
+        "Hint": "应用于悬停标签位置的额外垂直偏移（像素）。正值向下移动标签，负值向上移动。"
+      },
+      "HoverLabelXOffset": {
+        "Name": "悬停标签X轴偏移",
+        "Hint": "应用于悬停标签位置的额外水平偏移（像素）。正值向右移动标签，负值向左移动。"
+      },
+      "GridlessDistanceMode": {
+		"Name": "无网格距离测量模式",
+		"Hint": "选择在无网格场景中如何测量距离。\"Token边界间距离\"测量Token边界之间的最短距离。\"到目标空间距离\"旨在匹配在使用全局对角线设置\"精确 (√2)\"的方形/六边形网格上使用的结果。",
+		"Options": {
+		  "EdgeEdge": "Token边界间距离",
+		  "EdgeToCenter": "到目标空间距离"
+		}
+	  },
+	  "GridlessTokenShape": {
+		"Name": "无网格Token默认形状",
+		"Hint": "启用后，所有无网格场景上的Token将自动设置为选定的形状。",
+		"Options": {
+		  "None": "不更改",
+		  "Square": "矩形",
+		  "Circle": "椭圆形"
+		}
+	  },
+	  "CreaturesProne": {
+		"Name": "倒地生物高度调整",
+		"Hint": "控制在构建用于掩护计算的3D棱柱时如何处理倒地生物。当“Wall Height”模组激活时，“视为小一级体型”将回退为半高处理。",
+		"Options": {
+		  "None": "无调整",
+		  "LowerSize": "视为小一级体型",
+		  "Half": "视为半高"
+		}
+	  },
+      "Debug": {
+        "Name": "显示掩护调试线",
+        "Hint": "在计算Token间掩护时绘制辅助线（用于调试/故障排除）。"
+      },
+	  "LibraryMode": {
+		"Name": "[注意] 启用库模式",
+		"Hint": "库模式将禁用 Simple Cover 5e 的掩护自动化功能。仅在明确需要库模式，或有其他模组（例如 Midi-QOL）为你处理自动化时启用此选项。某些模组可能会自动启用库模式。文档：https://github.com/Kapuzenjoe/simplecover5e/wiki/API-(Library-Mode)。"
+	  },
+      "CreatureHeights": {
+        "Name": "默认生物高度",
+        "Hint": "用于3D掩护评估的每个体型类别的默认生物高度（网格单位）。当\"Wall Height\"模组激活时，这些默认值将被忽略，高度将从该模组获取。"
+      },
+		"insetAttacker": {
+		  "Name": "攻击者内缩（像素）",
+		  "Hint": "将攻击者的采样点从原始角向Token中心移动（默认值：1；最大值：当前网格大小的30%）。"
+		},
+		"insetTarget": {
+		  "Name": "目标内缩（像素）",
+		  "Hint": "将目标的采样点从原始角向Token中心移动（默认值：3；最大值：当前网格大小的30%）。"
+		},
+		"insetOccluder": {
+		  "Name": "遮挡物内缩（像素）",
+		  "Hint": "缩小生物的遮挡物边界框（默认值：6；最大值：当前网格大小的30%）。"
+		},
+	  "FilteredTargetPoints": {
+		"Name": "过滤后的目标点",
+		"Hint": "控制被Token裁剪移除的目标测试点如何影响掩护评估。默认：\"视为被阻挡\"。\"动态阈值\"保持当前的半掩护行为，但当剩余视线中至少有四分之三被阻挡时，授予四分之三掩护，而不是始终使用完整目标形状。",
+		"Options": {
+		  "Blocked": "视为被阻挡",
+		  "Clear": "视为未被阻挡",
+		  "Dynamic": "动态阈值"
+		}
+	  },
+      "HeightsMenu": {
+        "Name": "配置生物高度",
+        "Label": "生物高度",
+        "Hint": "调整用于计算掩护时每个生物体型的默认高度（网格单位）。当\"Wall Height\"模组激活时，这些默认值将被忽略，高度将从该模组获取。",
+        "Legend": "生物高度",
+        "BodyHint": "设置每个生物体型的默认高度（网格单位）。这些值在将Token视为3D棱柱进行掩护计算时使用。当\"Wall Height\"模组激活时，这些默认值将被忽略，高度将从该模组获取。",
+        "Buttons": {
+          "Save": "保存",
+          "Reset": "重置"
+        }
+      },
+	  "VariantMenu": {
+		"Name": "配置掩护与测量规则",
+		"Label": "掩护与测量规则",
+		"Hint": "配置 Simple Cover 5e 如何在场景中计算掩护和测量距离。",
+		"Buttons": {
+		  "Save": "保存"
+		},
+		"Groups": {
+		  "General": "掩护规则",
+		  "Measurement": "测量规则",
+          "Engine": "引擎规则"
+		}
+	  },
+      "AutomationMenu": {
+        "Name": "配置掩护自动化",
+        "Label": "掩护自动化",
+        "Hint": "配置掩护自动化以及掷骰对话框中显示的信息。如果启用了库模式，所有自动化功能将被禁用，此菜单将被锁定。",
+        "Groups": {
+          "General": "自动化"
+        },
+        "LibraryModeWarning": "库模式已启用。自动化功能已禁用。请参阅 Wiki：https://github.com/Kapuzenjoe/simplecover5e/wiki/API-(Library-Mode)。某些模组可能会自动启用库模式（例如 Midi-QOL）。"
+      }
+    },
+    "Controls": {
+      "ClearCover": {
+        "Title": "移除掩护效果"
+      }
+    },
+    "Dialog": {
+      "Legend": "注释"
+    },
+    "CoverHint": {
+      "Attack": {
+        "none": "{tokenName}没有掩护。",
+		  "half": "{tokenName}因<strong>半身掩护</strong>获得<strong>+2</strong>的AC加值。",
+		  "threeQuarters": "{tokenName}因<strong>四分之三掩护</strong>获得<strong>+5</strong>的AC加值。",
+		  "total": "{tokenName}处于<strong>完全掩护</strong>状态，无法被直接瞄准。"
+      },
+      "Save": {
+        "none": "你没有掩护。",
+		"half": "你因<strong>半身掩护</strong>在此敏捷豁免中获得<strong>+2</strong>加值。",
+        "threeQuarters": "你因<strong>四分之三掩护</strong>在此敏捷豁免中获得<strong>+5</strong>加值。",
+        "total": "处于<strong>全身掩护</strong>时，你无法被直接瞄准。"
+      },
+      "CoverModeChanged": "掩护模式已更改",
+	  "CoverModeDesired": "计算值：{desiredCover}",
+	  "CoverModeNew": "已设置：{newMode}"
+    },
+    "Flags": {
+		"ignoreAllCover": {
+		  "all": {
+			"Name": "忽略所有掩护（全部）",
+			"Hint": "进攻性标记：忽略目标的所有掩护，适用于攻击检定和豁免检定效果。"
+		  },
+		  "attack": {
+			"Name": "忽略所有掩护（攻击）",
+			"Hint": "进攻性标记：仅忽略目标的所有掩护，适用于攻击检定。"
+		  },
+		  "save": {
+			"Name": "忽略所有掩护（豁免检定）",
+			"Hint": "进攻性标记：仅忽略目标的所有掩护，适用于豁免检定效果。"
+		  }
+		},
+		"ignoreHalfCover": {
+		  "all": {
+			"Name": "忽略半身掩护（全部）",
+			"Hint": "进攻性标记：忽略目标的半身掩护，适用于攻击检定和豁免检定效果。"
+		  },
+		  "attack": {
+			"Name": "忽略半身掩护（攻击）",
+			"Hint": "进攻性标记：仅忽略目标的半身掩护，适用于攻击检定。"
+		  },
+		  "save": {
+			"Name": "忽略半身掩护（豁免检定）",
+			"Hint": "进攻性标记：仅忽略目标的半身掩护，适用于豁免检定效果。"
+		  }
+		},
+		"ignoreThreeQuartersCover": {
+		  "all": {
+			"Name": "忽略最多四分之三掩护（全部）",
+			"Hint": "进攻性标记：忽略目标的半掩护和四分之三掩护，适用于攻击检定和豁免检定效果。"
+		  },
+		  "attack": {
+			"Name": "忽略最多四分之三掩护（攻击）",
+			"Hint": "进攻性标记：仅忽略目标的半掩护和四分之三掩护，适用于攻击检定。"
+		  },
+		  "save": {
+			"Name": "忽略最多四分之三掩护（豁免检定）",
+			"Hint": "进攻性标记：仅忽略目标的半掩护和四分之三掩护，适用于豁免检定效果。"
+		  }
+		},
+		"upgradeCover": {
+		  "all": {
+			"Name": "提升掩护等级（全部）",
+			"Hint": "防御性标记：提升当前掩护等级，适用于攻击检定和豁免检定效果。"
+		  },
+		  "attack": {
+			"Name": "提升掩护等级（攻击）",
+			"Hint": "防御性标记：仅提升当前掩护等级，适用于攻击检定。"
+		  },
+		  "save": {
+			"Name": "提升掩护等级（豁免检定）",
+			"Hint": "防御性标记：仅提升当前掩护等级，适用于豁免检定效果。"
+		  }
+		},
+		"downgradeCover": {
+		  "all": {
+			"Name": "降低掩护等级（全部）",
+			"Hint": "进攻性标记：降低目标的掩护等级，适用于攻击检定和豁免检定效果。"
+		  },
+		  "attack": {
+			"Name": "降低掩护等级（攻击）",
+			"Hint": "进攻性标记：仅降低目标的掩护等级，适用于攻击检定。"
+		  },
+		  "save": {
+			"Name": "降低掩护等级（豁免检定）",
+			"Hint": "进攻性标记：仅降低目标的掩护等级，适用于豁免检定效果。"
+		  }
+		}
+	  }
+  }
+}

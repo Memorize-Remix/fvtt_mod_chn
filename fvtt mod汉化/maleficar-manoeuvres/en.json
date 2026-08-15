@@ -1,0 +1,54 @@
+{
+  "maleficar-manoeuvres": {
+    "settings": {
+      "logLevel": {
+        "name": "Log Level",
+        "hint": "Set the logging level for the module",
+        "choices": {
+          "debug": "Debug — Show every log message, including detailed diagnostics",
+          "info": "Info — Show informational messages and above (hides debug)",
+          "warn": "Warning — Show only warnings and errors",
+          "error": "Error — Show only error-level messages",
+          "fatal": "Fatal — Show only critical (fatal) errors",
+          "none": "None — Disable all logging"
+        }
+      },
+      "foundryTokenBorderIndicator": {
+        "name": "Foundry Token Border Indicator",
+        "hint": "Foundry default outline around tokens."
+      },
+      "tokenDefaultVerticalHeight": {
+        "name": "Default Token Height",
+        "hint": "Default vertical height of a human‑sized creature."
+      },
+      "meleeWeaponRangeOverride": {
+        "name": "Melee Weapon Range Override",
+        "hint": "Override a weapon's range when it exactly matches the \"grid\" scale distance."
+      },
+      "movementValidation": {
+        "name": "Movement Validation",
+        "hint": "Enable collision detection and movement validation. When disabled, tokens can move freely through obstacles."
+      }
+    },
+    "tokenSheet": {
+      "verticalHeight": {
+        "label": "Vertical Height",
+        "hint": "The token's height from base to top, in scene units ({units})."
+      }
+    },
+    "keybindings": {
+      "toggleOverlay": {
+        "name": "Toggle Movement Overlays",
+        "hint": "Shows overlays while held. Release to hide."
+      }
+    },
+    "notifications": {
+      "moduleInitialised": "Maleficar Manoeuvres initialised successfully",
+      "settingChanged": "Setting '{setting}' updated to: {value}",
+      "settingFailed": "Failed to update setting '{setting}'",
+      "logLevelChanged": "Log level changed to: {level}",
+      "movementValidationEnabled": "Movement validation enabled",
+      "movementValidationDisabled": "Movement validation disabled"
+    }
+  }
+}

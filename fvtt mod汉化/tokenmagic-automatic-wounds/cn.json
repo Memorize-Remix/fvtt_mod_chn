@@ -1,0 +1,40 @@
+
+  "tokenmagic-automatic-wounds": {
+    "setting": {
+      "clear-wounds-on-full-heal": {
+        "name": "满血时清除伤口",
+        "hint": "当Token的生命值恢复到最大值时，是否应完全移除所有伤口？"
+      },
+      "token-images-are-circular": {
+        "name": "Token图像为圆形",
+        "hint": "是否应以圆形模式散布伤口？如果你使用方形Token图像，请关闭此选项，这样伤口可以出现在Token的任何位置（以方形模式），而不会总是留下空白角落。如果你使用俯视视角的Token，可能仍希望保持此设置开启。"
+      }
+    },
+    "dialog": {
+      "common": {
+        "cancel": "取消"
+      },
+      "change-blood-color": {
+        "title": "更改血迹颜色",
+        "selected-tokens": "选中的Token：{tokens}",
+        "currently-defaulting-to-splatter": "当前默认使用血迹颜色：{color}",
+        "splatter-color": "血迹颜色：{color}",
+        "currently-defaulting-to-red": "当前默认使用红色：{color}",
+        "buttons": {
+          "set-new-color": "设置新颜色",
+          "reset-to-default": "重置为默认：{color}",
+          "reset-to-splatter": "重置为血迹：{color}"
+        }
+      }
+    },
+    "notifications": {
+      "disabled-for-actors": "Automatic Wounds：已对 {names} 禁用（游戏角色）",
+      "enabled-for-actors": "Automatic Wounds：已对 {names} 启用（游戏角色）",
+      "disabled-for-tokens": "Automatic Wounds：已对 {names} 禁用（Token角色）",
+      "enabled-for-tokens": "Automatic Wounds：已对 {names} 启用（Token角色）",
+      "select-tokens-reapply": "你需要选择Token才能使“根据当前生命值重新应用伤口”宏生效。",
+      "no-tokens-selected-for-color-picker": "未选择任何Token，无法打开血迹颜色选择。",
+      "disabled-on-token-cannot-open-color-picker": "此Token上的自动伤口功能已禁用，无法打开血迹颜色选择。"
+    }
+  }
+}

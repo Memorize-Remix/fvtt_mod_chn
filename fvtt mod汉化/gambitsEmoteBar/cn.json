@@ -1,0 +1,164 @@
+
+  
+  "gambitsEmoteBar": {
+    "controls": {
+        "emoteBar": {
+            "title": "表情栏",
+			"resetOrderAZ": "重置表情排序",
+			"resetOrderAZDone": "表情排序已重置为 A–Z 顺序。"
+        }
+    },
+    "selector": {
+        "sequencer": {
+            "leftEye": "左眼",
+            "rightEye": "右眼",
+            "mouth": "嘴",
+            "nose": "鼻子"
+        }
+    },
+    "keybinds": {
+        "toggleEmoteBar": {
+            "name": "切换表情栏",
+            "hint": "按下此键以打开/关闭表情栏"
+        }
+    },
+    "menu": {
+        "emote": {
+            "laugh": "大笑",
+            "angry": "愤怒",
+            "surprised": "惊讶",
+            "shout": "喊叫",
+            "drunk": "醉酒（鼻子）",
+            "soul": "真挚",
+            "slap": "拍打",
+            "cry": "哭泣（眼睛）",
+            "offset": "配置偏移(眼睛，嘴巴，鼻子)",
+            "disgusted": "厌恶",
+            "giggle": "咯咯笑",
+            "love": "爱",
+            "rofl": "笑到打滚",
+            "smoking": "抽烟（嘴巴）",
+            "nervous": "紧张",
+            "party": "派对！",
+            "thunderHype": "雷响！",
+			"thankYou": "感谢",
+			"wink": "眨眼",
+			"smug": "得意",
+			"huh": "嗯？",
+			"confused": "困惑",
+			"whistle": "吹口哨（嘴型）",
+            "filepicker": "配置默认表情声音",
+            "endAll": "结束应用的所有表情",
+			"registerDialog": "注册自定义表情",
+			"hideUnhideEmote": "隐藏/显示表情",
+			"bloodied": "浴血",
+			"suspicious": "可疑(眼睛)",
+			"endAllSelected": "结束选定Token上的表情",
+			"endAllAll": "结束所有Token上的表情",
+			"playMode": {
+			  "permanent": "永久",
+			  "timed": "定时",
+			  "seconds": "秒",
+			  "toggleTooltip": "切换永久与定时表情模式",
+			  "durationTooltip": "在定时模式下，表情将在指定秒数后自动结束"
+			}
+        }
+    },
+    "log": {
+        "warning": {
+            "noEffect": "未定义表情效果：",
+            "pleaseSelectOneToken": "请至少选择一个Token。",
+            "noPermission": "您没有权限在选定的Token上使用表情工具。",
+            "selectMultiple": "按住Shift键以选择多个表情。",
+            "selectSingle": "请选择一个Token以设置偏移。",
+			"handleEmoteClick": "执行自定义表情宏时出错："
+            }
+        },
+        "dialog": {
+            "placeholder": {
+                "openIconPicker": "搜索图标...",
+                "emoteName": "输入表情名称...",
+                "emoteTooltipText": "输入表情提示文本...",
+                "soundFilePath": "输入音效文件路径...",
+				"preset": "选择内置表情..."
+            },
+            "window": {
+                "openIconPicker": "选择图标",
+				"registerCustomEmote": "注册自定义表情",
+                "editMacroCode": "编辑宏代码",
+                "manageHidingEmotes": "管理隐藏表情",
+                "customEmoteMacros": "自定义表情宏",
+                "pickIcon": "选择图标",
+                "emoteSoundFiles": "选择表情音效文件",
+                "editTriggers": "编辑触发器",
+                "editTrigger": "编辑触发器",
+                "newTrigger": "新建触发器",
+                "manageTriggers": "管理触发器"
+            },
+            "field": {
+                "uniqueEmoteName": "唯一表情名称：",
+                "emoteTooltipText": "表情提示文本：",
+                "emoteIcon": "表情图标：",
+                "macro": "宏：",
+                "generatedName": ".name属性：",
+                "macroCode": "宏代码：",
+                "triggers": "触发器：",
+                "openTriggers": "打开触发器",
+                "hook": "Hook:",
+                "target": "目标：",
+                "tokenIds": "Token ID's:",
+                "tokens": "Tokens:",
+                "duration": "持续时间：",
+                "hpThreshold": "生命值阈值%：",
+				"preset": "预设："
+            },
+            "tooltip": {
+                "generatedName": "若使用持续效果，请在此输入.name属性值（忽略此项将导致错误）",
+                "openTriggers": "打开此表情的触发列表",
+                "tokenIds": "多个ID时请用逗号分隔",
+                "duration": "持续时间（秒）",
+                "trigger": "触发器",
+                "triggers": "触发器",
+				"requiresJB2APatreon": "使用 JB2A Patreon 模组时可用。",
+				"requiresEskiePatreon": "使用 Eskie Effects Patreon 模组时可用。",
+				"preset": "插入内置表情的宏代码作为起点（需要先输入表情名称）。"
+            },
+            "button": {
+                "select": "选择",
+                "cancel": "取消",
+                "saveEmote": "保存表情",
+                "pickIcon": "选择图标",
+                "save": "保存",
+                "close": "关闭",
+                "edit": "编辑",
+                "delete": "删除",
+                "configureTriggers": "配置触发器",
+                "openTriggers": "打开触发器"
+            },
+            "heading": {
+                "defaultEmotes": "默认表情",
+                "customEmotes": "自定义表情",
+                "browseSoundFiles": "浏览音效文件"
+            },
+            "message": {
+                "noDefaultEmotes": "未定义默认表情",
+                "noCustomEmotes": "未定义自定义表情",
+				"noTriggers": "未定义触发"
+			  },
+			  "playmode": {
+				"locked": "定时表情播放时，无法更改定时/永久模式。"
+            }
+        },
+        "error": {
+            "uniqueEmoteNameNoSpaces": "唯一表情名称不能包含空格",
+            "fillAllFields": "请填写所有字段",
+            "emoteNameExists": "该名称表情已存在，请使用唯一名称"
+        },
+		"settings": {
+		  "disableTokenControls": {
+			"name": "禁用表情栏Token控件",
+			"hint": "从Token控件中隐藏表情栏图标（使用快捷键打开）。"
+		  }
+		}
+    }
+}

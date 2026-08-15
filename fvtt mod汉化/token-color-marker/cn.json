@@ -1,0 +1,67 @@
+
+    "token-color-marker": {
+        "button-title": "打开颜色选择器",
+        "trash-button-title": "点击移除Token上已删除的颜色标记",
+        "default-setting-colors": {
+            "#ff0000": "红色",
+            "#ffa500": "橙色", 
+            "#ffff00": "黄色",
+            "#008000": "绿色",
+            "#0000ff": "蓝色",
+            "#800080": "紫色",
+            "#ffffff": "白色",
+            "#000000": "黑色",
+            "Number1": "数字1",
+            "Number2": "数字2",
+            "ABC": "ABC",
+            "Rainbow": "彩虹"
+        },
+        "settings": {
+            "enable-button": {
+              "Name": "显示Token颜色标记按钮",
+              "Hint": "控制是否可以从Token HUD打开颜色标记面板"
+            },
+            "enable-button-for-gm-only": {
+                "Name": "仅GM可见按钮",
+                "Hint": "控制是否只有GM能看到此按钮"
+            },
+            "color-manager-menu": {
+                "Name": "颜色设置",
+                "Label": "我的颜色设置",
+                "Hint": "在此处可自定义颜色"
+            },
+            "enable-mono-Icon": {
+                "Name": "使用单色图标",
+                "Hint": "控制按钮使用彩虹渐变色图标还是单色图标"
+            },
+            "enable-icon-in-chat-message": {
+                "Name": "在聊天消息中显示颜色标记",
+                "Hint": "在聊天消息的目标名称旁显示Token颜色标记"
+            },
+            "max-font-size": {
+                "Name": "标记文字最大像素尺寸",
+                "Hint": "标记上文字的最大像素尺寸。需要刷新以更新当前标记文字大小。"
+            }
+        },
+        "color-manager-menu":{
+            "name-header": "名称",
+            "hex-header": "十六进制值",
+            "color-picker-header": "颜色",
+            "text-header": "文字",
+            "text-color-header": "文字颜色",
+            "add-color": "添加颜色",
+            "delete-color": "删除颜色",
+            "move-up": "上移",
+            "move-down": "下移",
+            "new-color-label": "新建颜色",
+            "add-image": "添加图片",
+            "new-image-label": "新建图片"
+        },
+        "confirms": {
+            "deleteConfirm": {
+              "Title": "确认删除",
+              "Content": "确定要删除此颜色吗？此操作不可撤销。"
+            }
+        }
+    }
+}

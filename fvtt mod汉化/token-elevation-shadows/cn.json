@@ -1,0 +1,22 @@
+
+    "TokenElevationShadows.Setting.BaseOpacity.Name": "基础阴影不透明度",
+    "TokenElevationShadows.Setting.BaseOpacity.Hint": "Token开始抬升时阴影的初始不透明度（0 到 1）。",
+    "TokenElevationShadows.Setting.MaxElevation.Name": "最大抬升高度",
+    "TokenElevationShadows.Setting.MaxElevation.Hint": "阴影完全消失时的抬升高度。",
+    "TokenElevationShadows.Setting.Azimuth.Name": "太阳方位角（方向）",
+    "TokenElevationShadows.Setting.Azimuth.Hint": "太阳的罗盘方向（0 = 北，90 = 东，180 = 南，270 = 西）。阴影背向太阳投射。",
+    "TokenElevationShadows.Setting.Altitude.Name": "太阳高度角（高度）",
+    "TokenElevationShadows.Setting.Altitude.Hint": "太阳在天空中的高度（1 = 地平线，89 = 正午）。较低的高度角会产生更长的阴影。",
+    "TokenElevationShadows.Setting.MeshOffsetMultiplier.Name": "抬升高度乘数",
+    "TokenElevationShadows.Setting.MeshOffsetMultiplier.Hint": "每单位抬升高度，Token在屏幕上视觉上移的强度。",
+    "TokenElevationShadows.Setting.AlphaThreshold.Name": "透明度裁剪阈值",
+    "TokenElevationShadows.Setting.AlphaThreshold.Hint": "用于剥离预烘焙阴影的不透明度阈值（0 到 1）。数值越高，剥离的像素越多。",
+    "TokenElevationShadows.Setting.RequireStatus.Name": "需要空中状态",
+    "TokenElevationShadows.Setting.RequireStatus.Hint": "如果启用，Token只有在应用了空中状态效果时才会视觉抬升并投射动态阴影。否则，它们将保持视觉上的地面状态。",
+    "TokenElevationShadows.Setting.StatusIds.Name": "空中状态 ID",
+    "TokenElevationShadows.Setting.StatusIds.Hint": "触发视觉抬升的系统特定状态 ID 的逗号分隔列表（例如：'fly, hover, levitate'）。默认为 'fly'。",
+    "TokenElevationShadows.Setting.TimeIntegration.Name": "时间集成",
+    "TokenElevationShadows.Setting.TimeIntegration.Hint": "将阴影方向与游戏内时间追踪模组同步。",
+    "TokenElevationShadows.Setting.TimeIntegration.None": "无（手动控制）",
+    "TokenElevationShadows.Setting.TimeIntegration.Core": "核心世界时间（SmallTime 等）"
+}

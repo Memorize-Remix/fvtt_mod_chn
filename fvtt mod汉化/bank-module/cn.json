@@ -1,0 +1,132 @@
+
+  "bank-module": {
+    "settings": {
+      "banks": {
+        "name": "已注册的银行",
+        "open-bank": "打开银行",
+        "hint": "世界中可用银行的列表"
+      },
+      "bankItems": {
+        "name": "银行物品",
+        "hint": "存储在每个银行中的物品"
+      },
+      "bankManager": {
+        "name": "银行管理器",
+        "label": "打开管理器",
+        "hint": "创建、编辑和删除世界中可用的银行"
+      },
+      "gridView": {
+        "name": "网格视图",
+        "hint": "在列表和网格视图之间切换银行物品显示"
+      }
+    },
+    "manager": {
+      "title": "银行管理器",
+      "bankName": "银行名称",
+      "bankIcon": "银行图标",
+      "browseIcon": "浏览图标",
+      "addBank": "添加银行",
+      "saveChanges": "保存更改",
+      "description": "创建、编辑或删除系统中可用的银行。每个银行都有一个<code>编号</code>和<strong>名称</strong>。",
+      "createButton": "创建新银行",
+      "tableHeaders": {
+        "bankId": "银行编号",
+        "bankName": "银行名称",
+        "actions": "操作"
+      },
+      "deleteButton": "删除",
+      "saveButton": "保存更改",
+      "newBank": "新银行"
+    },
+    "notifications": {
+      "selectOneToken": "请选择一个token来打开银行。",
+      "noActorForToken": "此token未关联任何角色对象。",
+      "bankSystemNotInitialized": "银行系统尚未初始化。",
+      "noAccessToBank": "该角色无权访问银行。",
+      "banksUpdated": "银行更新成功",
+      "itemDeposited": "你已在银行中存入 {quantity} 个 {itemName}",
+      "itemWithdrawn": "你已从银行中取出 {quantity} 个 {itemName}",
+      "itemDeleted": "物品已成功从银行中移除",
+      "configSaved": "设置已成功保存",
+      "errors": {
+        "noBank": "未为此角色选择银行",
+        "itemNotFound": "银行中未找到该物品",
+        "notYourItem": "该物品属于其他角色，无法取出",
+        "sourceActorNotFound": "未找到来源角色",
+        "invalidItem": "物品数据无效",
+        "invalidDrop": "只能存入物品",
+        "noSourceActor": "拖放的物品未提供来源角色",
+        "noSourceActorFound": "未找到来源角色",
+        "noItemFound": "无法通过 UUID 找到物品",
+        "noActorLink": "物品未关联到任何角色",
+        "inventoryItemNotFound": "在来源角色的物品栏中未找到该物品",
+        "cantDeposit": "无法存入该物品",
+        "quantityError": "你不能提取超过所拥有的数量",
+        "notBanker": "你没有访问银行的权限",
+        "saveFailed": "保存银行更改失败",
+        "anotherBankAccountOpen": "已有其他银行账户开启",
+        "selectBank": "启用银行家状态时必须选择银行",
+        "flagsUpdateFailed": "设置银行标记失败",
+        "configSaveError": "保存配置时出错",
+        "noBankSelected": "未选择要更新的银行"
+      },
+      "quantityUpdated": "物品数量更新成功",
+      "cleanupSuccess": "银行物品已成功清理"
+    },
+    "toggle": {
+      "title": "为 {actorName} 配置银行",
+      "label": "配置银行",
+      "status": {
+        "label": "银行状态：",
+        "enabled": "已启用",
+        "disabled": "已禁用"
+      },
+      "selectBank": {
+        "label": "选择银行：",
+        "none": "无",
+        "required": "启用银行家状态时必须选择银行"
+      },
+      "saveButton": "保存"
+    },
+	"dialog": {
+      "quantity": {
+        "title": "数量",
+        "label": "输入数量：",
+        "confirm": "确认",
+        "cancel": "取消"
+      }
+    },
+    "account": {
+      "title": "银行账户",
+      "label": "银行",
+      "noBank": "无银行",
+      "instructions": "将物品从物品栏拖入以下区域以存入：",
+      "dropZone": "将物品拖放到此处",
+      "closeButton": "关闭",
+      "quantity": "数量：{value}",
+      "owner": "所有者：",
+      "withdrawDialog": {
+        "title": "提取物品",
+        "content": "你拥有 {quantity} 个。你想提取多少？",
+        "confirm": "确认",
+        "cancel": "取消"
+      },
+      "editQuantity": {
+        "title": "编辑数量",
+        "dialogTitle": "编辑物品数量",
+        "dialogContent": "当前数量：{quantity}。请输入新数量：",
+        "confirm": "更新",
+        "cancel": "取消"
+      },
+      "depositDialog": {
+        "title": "存入物品",
+        "content": "你拥有 {quantity} 个。你想存入多少？",
+        "confirm": "确认",
+        "cancel": "取消"
+      },
+      "viewToggle": {
+        "title": "切换视图模式"
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "MAGICAL_BEANS": {
+    "BERRY": {
+      "Name": "Magic Berry",
+      "Description": "A berry filled with unpredictable wild magic."
+    },
+    "GRENADE": {
+      "Name": "Wild Magic Grenade",
+      "Description": "A grenade that releases a random magical effect."
+    },
+    "ARROW": {
+      "Name": "Chaotic Magic Arrow",
+      "Description": "An arrow that unleashes a chaotic magical effect upon impact."
+    },
+    "MESSAGES": {
+      "NoTokenFound": "No valid token found for the actor.",
+      "EffectAlreadyActive": "This effect is already active.",
+      "MagicResult": "Magic result: {total}",
+      "EffectDuration": "<b>{effect}</b> will last {duration} seconds.",
+      "EffectEnded": "The effect <b>{effect}</b> has ended.",
+      "AlreadyMaxHP": "The character already has maximum health.",
+      "AlreadyHasInspiration": "The character already has maximum health and inspiration."
+    },
+    "EFFECTS": {
+      "FatalDrain": {
+        "Name": "Fatal Drain",
+        "Flavor": "FATAL Magic Result!",
+        "Description": "A sudden energy drain leaves the character with **1 Hit Point** remaining.",
+        "NotificationError": "You're down to 1 HP!",
+        "NotificationInfo": "You were already at 1 HP or less.",
+        "NoEffect": "The energy drain is mild, the character's health remains at {hp}."
+      },
+      "RainbowSkin": {
+        "Name": "Rainbow Skin",
+        "NotificationStart": "Your skin turns a brilliant color!",
+        "NotificationEnd": "Your skin returns to normal."
+      },
+      "ColorfulHair": {
+        "Name": "Colorful Hair",
+        "NotificationStart": "Your hair changes to an unexpected color.",
+        "NotificationEnd": "Your hair returns to normal."
+      },
+      "Levitate": {
+        "Name": "Levitate",
+        "NotificationStart": "You begin to levitate 10 feet!",
+        "NotificationEnd": "You touch the ground again."
+      },
+      "LongTongue": {
+        "Name": "Long Tongue",
+        "NotificationStart": "Your tongue grows grotesquely",
+        "NotificationEnd": "Your tongue returns to its normal size"
+      },
+      "OnlyScreams": {
+        "Name": "Only Screams",
+        "NotificationStart": "You can only communicate by screaming!",
+        "NotificationEnd": "You return to speaking normally."
+      },
+      "OnlyWhispers": {
+        "Name": "Only Whispers",
+        "NotificationStart": "You can only communicate by whispering!",
+        "NotificationEnd": "You return to speaking normally."
+      },
+      "Vomiting": {
+        "Name": "Vomiting",
+        "NotificationStart": "You start vomiting uncontrollably!",
+        "NotificationEnd": "The vomiting has stopped."
+      },
+      "Lightbulb": {
+        "Name": "Lightbulb",
+        "NotificationStart": "You become a powerful light bulb!",
+        "NotificationEnd": "Your light goes out and you return to normal."
+      },
+      "Petrified": {
+        "Name": "Petrified",
+        "NotificationStart": "The character is petrified! They cannot move or act.",
+        "NotificationEnd": "The petrification ends. You return to normal."
+      },
+      "Healing": {
+        "Name": "Healing",
+        "Flavor": "Magic Healing Result! The character heals {total} HP.",
+        "Notification": "The character has healed {amount} HP."
+      },
+      "MaxHealing": {
+        "Name": "Maximum Healing",
+        "Flavor": "CRITICAL Magic Result! The character heals COMPLETELY. (+{amount} HP)",
+        "Description": "The character is completely healed by a flash of magical light. Maximum health restored!",
+        "Notification": "Maximum healing! The character has recovered {amount} HP.",
+        "InspirationFlavor": "CRITICAL Magic Result, Inspiration gained!",
+        "InspirationDescription": "An aura of magic surrounds the character, whose vitality is already at maximum. The magical energy channels into **Inspiration**.",
+        "InspirationNotification": "Inspiration granted! The character was already at maximum health.",
+        "NoEffectFlavor": "CRITICAL Magic Result, but no additional effect.",
+        "NoEffectDescription": "An aura of magic surrounds the character, but their vitality is already at maximum and they already have Inspiration."
+      }
+    }
+  }
+}

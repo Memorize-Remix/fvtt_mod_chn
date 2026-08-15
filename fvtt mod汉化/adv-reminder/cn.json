@@ -1,0 +1,76 @@
+
+  "adv-reminder.AutoFail": "自动失败",
+  "adv-reminder.Messages": "信息",
+  "adv-reminder.ButtonStyle": {
+    "SETTING": {
+		"name": "按钮样式",
+		"hint": "更改掷骰对话框上默认按钮的样式",
+		"label": "配置样式",
+		"test": "显示示例掷骰"
+	  },
+		"FIELDS": {
+			"wide": {
+				"label": "加宽默认按钮",
+				"hint": "将默认按钮加宽，以突出显示应点击哪个按钮。"
+			},
+			"color": {
+				"label": "默认按钮颜色",
+				"hint": "更改掷骰对话框上默认按钮的颜色。"
+			},
+			"custom": {
+				"label": "自定义颜色",
+				"buttonColor": {
+					"label": "按钮颜色",
+					"hint": "默认按钮的背景颜色。"
+				},
+				"textColor": {
+					"label": "文字颜色",
+					"hint": "默认按钮的文字颜色。留空则不更改。"
+				}
+			}
+		},
+		"COLORS": {
+			"default": {
+				"label": "默认"
+			},
+			"player": {
+				"label": "玩家颜色"
+			},
+			"green": {
+				"label": "绿色"
+			},
+			"custom": {
+				"label": "自定义颜色"
+			}
+		}
+	},
+  "adv-reminder.ShowSources": {
+    "Name": "显示优势/劣势/重击来源",
+    "Hint": "如果激活效果决定掷骰的优势/劣势/重击，则在对话框中以信息形式显示其名称"
+  },
+  "adv-reminder.Source": {
+    "Advantage": {
+        "override": "优势叠加来源",
+        "suppressed": "优势被抑制来源",
+        "prefix": "优势来源"
+    },
+    "Normal": {
+        "override": "普通叠加来源"
+    },
+    "Disadvantage": {
+        "override": "劣势叠加来源",
+        "suppressed": "劣势被抑制来源",
+        "prefix": "劣势来源"
+    },
+    "Critical": {
+        "suppressed": "重击被抑制来源",
+        "prefix": "重击来源",
+        "nat20": "自然 {value}"
+    }
+  },
+  "adv-reminder.UpdateStatusEffects": {
+    "Name": "启用状态效果",
+    "Hint": "根据系统的状态应用优势/劣势/重击（例如，中毒时对攻击检定应用劣势）。如果使用其他模组来修改或替换状态效果，则不推荐使用。"
+  },
+  "dae.fieldData.fieldCategories.ARMessage": "优劣势消息"
+}

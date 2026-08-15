@@ -1,0 +1,92 @@
+{
+	"hex-size-support": {
+		"settings": {
+			"alwaysShowBorder": {
+				"name": "Always Show Border",
+				"hint": "Always render the token's border. Overriden if a Token has 'Hide Border' checked."
+			},
+			"borderMode": {
+				"name": "Border Visibility Mode",
+				"hint": "When to render the token's border. Overridden if a Token has 'Hide Border' checked.",
+				"choices": {
+					"hover": "Hovered",
+					"always": "Always",
+					"combat": "Always in Combat",
+					"never": "Never"
+				}
+			},
+			"borderPosition": {
+				"name": "Border Position",
+				"hint": "Whether to render the border always in front of or behind the token artwork.",
+				"choices": {
+					"default": "Default",
+					"front": "Always in Front",
+					"behind": "Always Behind"
+				}
+			},
+			"borderWidth": {
+				"name": "Border Width",
+				"hint": "Specify the width of the token's border"
+			},
+			"borderBehindToken": {
+				"name": "Keep Border Behind Token",
+				"hint": "Render the token's border behind the token instead of in front when hovering the token."
+			},
+			"fillBorder": {
+				"name": "Fill Border Contents",
+				"hint": "Add a translucent color to the token's border contents.",
+				"choices": {
+					"combat": "Always in Combat",
+					"combat_hov": "Hovered in Combat"
+				}
+			},
+			"borderStyle": {
+				"name": "Border Style",
+				"hint": "Configure the line style for the token borders",
+				"choices": {
+					"default": "Foundry Default Style",
+					"bevel": "Beveled",
+					"flat": "Flat Outline"
+				}
+			},
+			"defaultHexShape": {
+				"name": "Default Hex Shape",
+				"hint": "Use this shape for new tokens on scenes with hexagonal grids"
+			},
+			"defaultGridlessShape": {
+				"name": "Default Gridless Shape",
+				"hint": "Use this shape for new tokens on scenes with no grid"
+			},
+			"controlledColor": { "name": "Color: Controlled" },
+			"partyColor": { "name": "Color: Party" },
+			"friendlyColor": { "name": "Color: Friendly" },
+			"neutralColor": { "name": "Color: Neutral" },
+			"hostileColor": { "name": "Color: Hostile" },
+			"secretColor": { "name": "Color: Secret" }
+		},
+		"keybinds": {
+			"swapOrientation": {
+				"name": "Toggle Alternate Orientation",
+				"hint": "Toggles orientation for controlled hex tokens."
+			}
+		},
+		"tokenConfig": {
+			"hideBorder": {
+				"label": "Hide Border",
+				"notes": "Hide the token's border. Overrides Module setting 'Always Show Border.'"
+			},
+			"hideFill": {
+				"label": "Hide Border Fill",
+				"notes": "Hide the token's border fill color. Overrides Module setting 'Fill Border Contents.'"
+			},
+			"hexShape": {
+				"label": "Hex Shape",
+				"hint": "Use this shape for new tokens on scenes with hexagonal grids instead of the global default."
+			},
+			"gridlessShape": {
+				"label": "Gridless Shape",
+				"hint": "Use this shape for new tokens on scenes with no grid instead of the global default."
+			}
+		}
+	}
+}

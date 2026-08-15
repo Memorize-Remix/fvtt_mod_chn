@@ -1,0 +1,375 @@
+{
+  "ASSET_LIBRARIAN": {
+    "Title": "Asset Librarian",
+    "WindowTitle": {
+      "WorldView": "Asset Librarian - World View",
+      "CompendiumView": "Asset Librarian - Compendium View"
+    },    
+    "Tabs": {
+      "Actor": "Actors",
+      "Item": "Items",
+      "JournalEntry": "Journals",
+      "Scene": "Scenes",
+      "Macro": "Macros",
+      "Cards": "Card Stacks",
+      "Playlist": "Playlists",
+      "Adventure": "Adventures",
+      "RollTable": "Roll Tables",
+      "Image": "Media",
+      "SetDefault": "Set Default Tab",
+      "ClearDefault": "Clear Default Tab",
+      "DefaultTooltip": "Default tab"
+    },
+    "Mode": {
+      "World": "World",
+      "Compendiums": "Compendiums"
+    },
+    "Folders": {
+      "All": "All",
+      "Unsorted": "Unsorted",
+      "SearchPlaceholder": "Filter folders..."
+    },
+    "Search": {
+      "Placeholder": "Search...",
+      "Clear": "Clear search"
+    },
+    "Counts": {
+      "Showing": "Showing {visible} of {total}"
+    },
+    "Empty": {
+      "NoAssetsFound": "No assets found",
+      "NoTabsEnabled": "All tabs are disabled in Asset Librarian settings. Enable at least one tab."
+    },
+    "Filters": {
+      "Title": "Filters",
+      "ResetAll": "Reset all filters",
+      "UnavailableInCompendium": "Custom fields unavailable in compendium index"
+    },
+    "ViewMode": {
+      "List": "List",
+      "ColumnList": "Column List",
+      "Small": "Small",
+      "Medium": "Medium",
+      "Large": "Large"
+    },
+    "Buttons": {
+      "ShowDuplicates": "Show Duplicates",
+      "Refresh": "Refresh",
+      "RefreshImages": "Refresh Images",
+      "Scanning": "Scanning...",
+      "ConfigureImagePaths": "Configure Image Paths",
+      "ConfigureCompendiums": "Configure Compendiums",
+      "ConfigureCategories": "Configure Categories",
+      "ConfigureTagGroups": "Configure Tag Groups",
+      "BulkEditTags": "Bulk Edit Tags",
+      "BulkSelectMode": "Bulk Select Mode",
+	  "BulkSelectNone": "Select None",
+      "BulkSelectAll": "Select All",
+      "BulkClearSelection": "Clear Bulk Selection",
+      "BulkEditSelected": "Edit Selected Tags",
+      "ConfigureCustomFilters": "Configure Custom Filters",
+      "SendToPlayer": "Send to Player",
+      "CreateTile": "Create Tile",
+      "SetBackground": "Set Background",
+      "CreateScene": "Create Scene",
+	  "CopyPath": "Copy Path",
+      "ShowFolder": "Show Folder",
+      "OpenCompendium": "Open Compendium"
+    },
+    "Controls": {
+      "PaletteTitle": "Asset Librarian",
+      "OpenBrowser": "Open Asset Browser"
+    },
+    "Categories": {
+      "All": "All",
+      "Images": "Images",
+      "Audio": "Audio",
+      "Video": "Video"
+    },
+	"AudioPreview": {
+      "NowPlaying": "Now Previewing",
+      "Stop": "Stop"
+    },
+    "Notifications": {
+      "ItemNotFound": "Item not found",
+      "AssetDeleted": "Deleted {name}",
+      "ImagesFound": "Found {count} scanned assets",
+      "AssetFolderPath": "{name} is in {folder}",
+      "AssetPathCopied": "Copied asset path: {path}",
+      "AssetPathCopyFailed": "Unable to copy asset path to clipboard."
+    },
+    "Welcome": {
+      "Title": "Welcome to Asset Librarian",
+      "CommunityTitle": "Be part of the community",
+      "CommunityText": "Join us on Discord.",
+      "SupportTitle": "Supporting development",
+      "SupportPatreonText": "If you want to support development, take a look at membership options on Patreon.",
+      "SupportKofiText": "If you prefer, you can support via Ko-fi.",
+      "DocsTitle": "Documentation",
+      "DocsText": "Need help getting started? Read the docs or ask in Discord.",
+      "Buttons": {
+        "Discord": "Join Discord",
+        "Patreon": "Become a member",
+        "Kofi": "Buy a coffee",
+        "Docs": "Documentation"
+      },
+      "Links": {
+        "DiscordUrl": "https://discord.gg/fycwH79s2y",
+        "PatreonUrl": "https://patreon.com/wgtngm",
+        "KofiUrl": "https://ko-fi.com/wgtngm",
+        "DocsUrl": "https://campaigncodex.wgtngm.com/"
+      }
+    },
+    "Settings": {
+      "CustomCategoryGroups": {
+        "Name": "Custom Category Groups",
+        "Hint": "Optional comma-separated extra category groups for Item browsing (for example: Relics, Recipes). Names must be unique and cannot reuse built-in groups."
+      },
+      "TagRegistry": {
+        "Name": "Tag Registry",
+        "Hint": "Internal autocomplete cache for Asset Librarian category/filter tags."
+      },
+      "TagGroupConfig": {
+        "Name": "Tag Group Configuration",
+        "Hint": "Mapping of custom filter tags into custom groups."
+      },
+      "openTags": {
+        "Name": "Expanded Tags",
+        "Hint": "Number of tag groups open by default (0 is all)."
+      },
+      "AllowPlayersSceneControl": {
+        "Name": "Allow Players Scene Control Button",
+        "Hint": "If enabled, players can see and use the Asset Librarian scene control button."
+      },
+      "ShowWelcomeMessage": {
+        "Name": "Show Welcome Message",
+        "Hint": "If enabled, GMs see the welcome card once per module version."
+      },
+      "LastWelcomeVersion": {
+        "Name": "Last Welcome Version",
+        "Hint": "Internal setting storing the last module version that displayed the welcome card."
+      },
+      "IncludedCompendiums": {
+        "Name": "Included Compendiums",
+        "Hint": "Which compendiums to include when browsing."
+      },
+      "IncludeWorld": {
+        "Name": "Include World Assets",
+        "Hint": "Include world-level assets in the scan."
+      },
+      "EnableImageScanning": {
+        "Name": "Enable Image Scanning",
+        "Hint": "Enable the Images tab to scan for image and video files."
+      },
+	  "EnableAudioScanning": {
+        "Name": "Enable Audio Scanning",
+        "Hint": "Include audio and music files in the Images tab scan."
+      },
+      "IncludeWorldPath": {
+        "Name": "Include World Images",
+        "Hint": "Scan the world directory for media files."
+      },
+      "FilterCollapsed": {
+        "Name": "Filter Panel Collapsed",
+        "Hint": "Filter panel collapsed by default."
+      },
+      "FolderCollapsed": {
+        "Name": "Folder Panel Collapsed",
+        "Hint": "Folder panel collapsed by default."
+      },
+      "ShowNestedFolderContent": {
+        "Name": "Show All Nested Content",
+        "Hint": "When selecting a folder, include content from all nested subfolders."
+      },
+      "ImageScanPaths": {
+        "Name": "Image Scan Paths",
+        "Hint": "Comma-separated list of paths to scan for media files."
+      },
+      "ViewMode": {
+        "Name": "View Mode",
+        "Hint": "How assets are displayed in the grid."
+      },
+      "UseDiskThumbnailCache": {
+        "Name": "Use Disk Cache (Images)",
+        "Hint": "Persist image thumbnails to disk cache. Disk cache needs to be manually cleared."
+      },
+      "UseDiskScenePreviewCache": {
+        "Name": "Use Disk Cache (Scene Previews)",
+        "Hint": "Persist scene previews to disk cache. Disk cache needs to be manually cleared."
+      },
+      "CustomFilterFields": {
+        "Name": "Custom Filter Fields",
+        "Hint": "Custom field mappings for filtering."
+      },
+      "CategoryConfig": {
+        "Name": "Category Configuration",
+        "Hint": "Mapping of system types to high-level categories."
+      },
+      "ShowTab": {
+        "Actor": {
+          "Name": "Show Actors",
+          "Hint": "Include Actors in the Asset Librarian menu."
+        },
+        "Item": {
+          "Name": "Show Items",
+          "Hint": "Include Items in the Asset Librarian menu."
+        },
+        "JournalEntry": {
+          "Name": "Show Journals",
+          "Hint": "Include Journals in the Asset Librarian menu."
+        },
+        "Scene": {
+          "Name": "Show Scenes",
+          "Hint": "Include Scenes in the Asset Librarian menu."
+        },
+        "RollTable": {
+          "Name": "Show Roll Tables",
+          "Hint": "Include Roll Tables in the Asset Librarian menu."
+        },
+        "Playlist": {
+          "Name": "Show Playlists",
+          "Hint": "Include Playlists in the Asset Librarian menu."
+        },
+        "Macro": {
+          "Name": "Show Macros",
+          "Hint": "Include Macros in the Asset Librarian menu."
+        },
+        "Cards": {
+          "Name": "Show Card Stacks",
+          "Hint": "Include Card Stacks in the Asset Librarian menu."
+        },
+        "Adventure": {
+          "Name": "Show Adventures",
+          "Hint": "Include Adventures in the Asset Librarian menu."
+        }
+      }
+    },
+    "Menus": {
+      "Compendiums": {
+        "Name": "Select Compendiums",
+        "Label": "Select Compendiums",
+        "Hint": "Select which compendiums to include in the scan."
+      },
+      "Filters": {
+        "Name": "Custom Filter Fields",
+        "Label": "Configure Filters",
+        "Hint": "Customize the filter fields for the Asset Librarian."
+      },
+      "Categories": {
+        "Name": "Category Configuration",
+        "Label": "Configure Categories",
+        "Hint": "Map system types to high-level categories."
+      },
+      "TagGroups": {
+        "Name": "Tag Group Configuration",
+        "Label": "Configure Tag Groups",
+        "Hint": "Map custom tags into custom groups."
+      }
+    },
+    "Compendiums": {
+      "WindowTitle": "Select Compendiums",
+      "Hint": "Select which compendiums to include when browsing in Compendium mode:",
+      "RefreshCache": "Refresh Cache",
+      "SelectAll": "Select All",
+      "SelectNone": "Select None",
+      "Save": "Save",
+      "SelectedCount": "{count} compendiums selected",
+      "CacheRefreshed": "Compendium cache refreshed."
+    },
+    "CustomFilters": {
+      "WindowTitle": "Custom Filter Fields",
+      "Hint": "Add custom fields to filter by. Path uses dot notation (e.g., system.level).",
+      "AddField": "Add Field",
+      "Save": "Save",
+      "PlaceholderKey": "key",
+      "PlaceholderLabel": "Label",
+      "PlaceholderPath": "system.path",
+      "Saved": "Custom filter fields saved!",
+      "Exported": "Filter pack exported to file!",
+      "Imported": "Filter pack imported! Click Save to apply.",
+      "InvalidJson": "Invalid JSON file format"
+    },
+    "CategoryConfig": {
+      "WindowTitle": "Category Configuration",
+      "Hint": "Assign system document types to high-level categories.",
+      "CustomGroupsValidationWarning": "Some custom groups were ignored. Use comma-separated unique names (2-30 chars) and avoid built-in group names.",
+      "ResetDefaults": "Reset Defaults",
+      "Save": "Save",
+      "Saved": "Category configuration saved",
+      "ResetToDefaults": "Category configuration reset to defaults.",
+      "ResetConfirm": "Are you sure you want to reset category configuration to system defaults?"
+    },
+    "TagGroupConfig": {
+      "WindowTitle": "Tag Group Configuration",
+      "Hint": "Create custom groups and assign custom tags. Each tag can belong to only one group per document type.",
+      "NoGroups": "No groups yet. Click + to add one.",
+      "NewGroupPrompt": "New group name",
+      "RemoveDeadTag": "Remove dead tag",
+      "ResetDefaults": "Reset Defaults",
+      "Save": "Save",
+      "Saved": "Tag group configuration saved",
+      "ResetToDefaults": "Tag group configuration reset to defaults.",
+      "ResetConfirm": "Are you sure you want to reset tag group configuration?"
+    },
+    "Tagging": {
+      "EditTags": "Edit Tags",
+      "WindowTitle": "Edit Tags",
+      "CategoryLabel": "Category Tag",
+      "CategoryHint": "Single tag used for the category bar.",
+      "FilterLabel": "Filter Tags",
+      "FilterHint": "Tags used in the Filters panel.",
+      "PlaceholderCategory": "...",
+      "PlaceholderFilters": "...",
+      "None": "None",
+      "Add": "Add",
+      "RegistryCategoryList": "Known category tags",
+      "RegistryFilterList": "Known filter tags",
+      "Save": "Save",
+      "Cancel": "Cancel",
+      "Saved": "Tags updated",
+      "BulkWindowTitle": "Bulk Edit Tags",
+      "BulkHint": "Apply tag changes to {count} documents.",
+      "BulkSkippedHint": "{count} documents are excluded (for example locked compendium entries).",
+      "BulkCategoryMode": "Category Action",
+      "BulkCategoryNoChange": "No change",
+      "BulkCategorySet": "Set category",
+      "BulkCategoryClear": "Clear category",
+      "BulkCategoryValue": "Category Value",
+      "BulkFilterAdd": "Add Filter Tags (comma-separated)",
+      "BulkUngroupedTags": "Other Tags",
+      "BulkCommonHint": "Checked tags are currently on every selected document. Uncheck any to remove them from all selected documents.",
+      "BulkFilterRemove": "Remove Filter Tags (comma-separated)",
+      "BulkClearFilters": "Clear all filter tags before applying add/remove",
+      "BulkApply": "Apply",
+      "BulkNoEditable": "No editable documents in the current results.",
+      "BulkNoSelected": "No selected documents to edit.",
+      "BulkNoChanges": "No bulk changes specified.",
+      "BulkSummary": "Bulk tagging complete: {updated} updated, {failed} failed, {skipped} skipped.",
+      "NoPermission": "You do not have permission to edit tags on this document.",
+      "InvalidDocument": "Unable to load this document for tag editing."
+    },
+    "Images": {
+      "DialogTitle": "Configure Image Paths",
+      "EnterPaths": "Enter paths to scan:",
+      "RelativeHint": "Paths are relative to Foundry's data directory.",
+      "Browse": "Browse",
+      "Save": "Save",
+      "Cancel": "Cancel",
+      "Updated": "Image paths updated"
+    },
+    "Helpers": {
+      "ConfirmDefault": "Are you sure?",
+      "CanvasNotReady": "Canvas is not ready.",
+      "NewScene": "New Scene",
+      "NoPlayerCharacters": "No player characters found",
+      "SendItemTitle": "Send Item to Player Character",
+      "SendItemPrompt": "Send <strong>{itemName}</strong> to which player character?",
+      "FilterCharacters": "Filter Characters...",
+      "Unassigned": "Unassigned",
+      "Cancel": "Cancel",
+      "ItemSent": "Item sent to player",
+      "WhisperSentItem": "<p><strong>{sender}</strong> sent you <strong>{item}</strong> from {source}!</p>",
+      "ConfirmChangeBackground": "Do you want to change the background of {sceneName}?"
+    }
+  }
+}

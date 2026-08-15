@@ -1,0 +1,227 @@
+
+  "DF_ARCHITECT": {
+    "ModName": "Dragon Flagon Architect",
+    "ErrorColourSettingsMissing": "DF Architect：需要'lib - ColorSettings'模组。请安装并激活'lib - ColorSettings'",
+    "ErrorLibWrapperMissing": "DF Architect：需要'libWrapper'模组。请安装并激活'libWrapper'",
+    "General": {
+      "Cancel": "取消",
+      "ShowCounterName": "显示对象计数",
+      "ShowCounterHint": "在图块、墙壁、光照和环境音层上显示对象计数"
+    },
+    "ReloadRequired": {
+      "Title": "需要重新加载",
+      "Content": "<p>需要重新加载才能使更改生效。</p>",
+      "Positive": "立即重新加载",
+      "Negative": "稍后自行重新加载"
+    },
+    "LayerShortcuts.Settings": {
+      "Description": "切换画布图层的快捷键",
+      "Reset": "重置为默认",
+      "Save": "保存",
+      "Layer": {
+        "Tokens": "Token：",
+        "Measure": "测量板：",
+        "Tiles": "图块：",
+        "Drawings": "绘图：",
+        "Walls": "墙体：",
+        "Lighting": "光线：",
+        "Sounds": "环境音：",
+        "Notes": "日志："
+      },
+      "QuickSwap": {
+        "Title": "图层快速切换",
+        "Info": "此热键用于在两个预设图层间快速切换。每次按下时，将切换到非当前图层。如果当前不在配对图层中，则切换到图层1",
+        "Layer1_Name": "快速切换图层1",
+        "Layer1_Hint": "按下快速切换热键时交替的两个图层之一",
+        "Layer2_Name": "快速切换图层2",
+        "Layer2_Hint": "按下快速切换热键时交替的两个图层之二"
+      }
+    },
+    "WallShortcuts.Settings": {
+      "Description": "切换不同墙壁类型的热键",
+      "ToggleForceSnapName": "切换强制对齐网格",
+      "ToggleForceSnapHint": "切换墙壁层的强制对齐网格选项"
+    },
+    "AltGridSnap": {
+      "Label": "交替网格对齐",
+      "Hotkey_Toggle": "切换交替网格对齐",
+      "Setting": {
+        "EnabledName": "显示交替网格对齐切换",
+        "EnabledHint": "显示切换按钮，启用交替网格对齐（对齐到格子中心而非四角）",
+        "PlaceOnControlBarName": "放置在主控件栏",
+        "PlaceOnControlBarHint": "将替代网格对齐切换按钮放在主控件栏而非工具栏上"
+      }
+    },
+    "WallCtrlInvert": {
+      "Title": "锁定墙壁链式",
+      "Name": "切换墙壁链式锁定",
+      "Hotkey": "切换链式锁定："
+    },
+    "WallJoinSplit": {
+      "Split_Label": "将选中墙壁分割为两段",
+      "Join_Label": "将选中的连续墙壁合并为单段"
+    },
+    "WallGapFiller": {
+      "SettingName": "墙壁缺口填充距离",
+      "SettingHint": "墙壁端点间最大可自动连接的距离",
+      "ToolButtonLabel": "查找墙壁缺口",
+      "DetectGapsLabel": "正在检测墙壁缺口...",
+      "NoGaps": "未检测到缺口",
+      "DialogTitle": "缺口检测",
+      "GapsDetected": "检测到{count}个缺口。是否要封闭它们？",
+      "ProgressLabel": "正在封闭缺口 {0}/{1}"
+    },
+    "WallChangeType.Setting": {
+      "MetaKeyName": "快速墙壁类型切换键",
+      "MetaKeyHint": "按住哪个键点击墙壁类型控件可将当前选中墙壁改为该类型？",
+      "MetaKey_OptionAlt": "Alt键",
+      "MetaKey_OptionCtrl": "Ctrl键"
+    },
+    "WallAltDrop.Setting": {
+      "DistanceName": "墙端点自动吸附",
+      "DistanceHint": "墙壁端点自动吸附到附近端点的像素距离"
+    },
+    "WallDirections.Setting": {
+      "AllowUnselectedInvertName": "允许反转未选中墙壁方向",
+      "AllowUnselectedInvertHint": "允许通过双击右键反转未选中墙壁的方向"
+    },
+    "AltLightOrigin.Settings": {
+      "Colour1_Name": "光照：十字线颜色",
+      "Colour1_Hint": "按住Shift移动光源时显示的十字线颜色",
+      "Colour2_Name": "光照：备用十字线颜色",
+      "Colour2_Hint": "按住Shift+Alt移动光源时显示的备用十字线颜色"
+    },
+    "QuickColourPicker": {
+      "EyeDrop_Title": "从地图选择颜色"
+    },
+    "CaptureGameScreen": {
+      "Setting": {
+        "AllowPC_Name": "允许玩家捕获画布",
+        "AllowPC_Hint": "允许玩家捕获当前游戏版画布"
+      },
+      "ScreenCapture": {
+        "Rendering": "正在渲染图像",
+        "Stitching": "正在拼接图像",
+        "ErrorStitchingFailure": "因内存限制无法完成图像拼接。可重试或缩小场景范围",
+        "Background": {
+          "Hide": "隐藏背景图像",
+          "Colour": "背景颜色",
+          "Alpha": "背景透明度"
+        },
+        "ShowControls": "显示控件",
+        "ShowHidden": "显示隐藏",
+        "ResetFilters": "重置滤镜",
+        "Label": "保存游戏版图像",
+        "ContinueButton": "捕获图像",
+        "Target": "要捕获哪部分？",
+        "Target_Current": "当前视图",
+        "Target_All": "整个画布",
+        "Format": "选择文件格式",
+        "FormatPNG": "PNG",
+        "FormatJPG": "JPEG",
+        "FormatWEB": "WebP(仅Chrome)",
+        "Compression": "JPEG/WebP质量等级",
+        "KeepPadding": "(仅整个画布)包含边距",
+        "WarningNoScene": "没有正在查看的场景。请查看或激活场景以捕获画布",
+        "WarningConfirmTitle": "超大图像警告",
+        "WarningConfirmContent": "<p>你正尝试捕获超大图像。开始后<b>切勿调整</b>浏览器窗口<br><br><i><b>不建议</b>渲染超过<b>8000x8000像素</b>的图像，可能因内存限制导致拼接失败</i></p>"
+      },
+      "SaveImageDialog": {
+        "Title": "保存图像",
+        "SaveServer": "保存到服务器",
+        "SaveLocal": "保存到电脑",
+        "FileNameLabel": "文件名：",
+        "FileNamePlaceholder": "截图",
+        "DefaultFileName": "捕获"
+      },
+      "ErrorCaptureInProgress": "已有捕获会话在进行中。请完成或取消后再试"
+    },
+    "LightTemplate": {
+      "CreateTemplateButton": {
+        "LightConfig": "创建模板",
+        "MacroDirectory": "创建光照模板"
+      },
+      "ContextMenu": {
+        "Edit": "编辑模板",
+        "Remove": "移除模板",
+        "Delete": "删除模板"
+      },
+      "CurrentTemplate": {
+        "Label": "当前激活模板",
+        "EditButton": "编辑模板",
+        "ExitButton": "停止放置模板"
+      },
+      "TemplateConfig": {
+        "SaveButton": "保存模板",
+        "UseButton": "激活模板",
+        "ImageTitle": "光照模板图像"
+      },
+      "Delete": {
+        "Title": "删除光照模板：",
+        "Confirm": "确定要删除此光照模板吗？"
+      }
+    },
+    "AltLightInverted": {
+      "InvertLuminosityButton": "反转亮度为明暗(正/负值)"
+    },
+    "TileFlattener": {
+      "CapturePromptTitle": "平铺图块",
+      "Label": "将图块平铺成单个图像",
+      "FlattenButton": "平铺图块",
+      "RenderLighting": "烘焙光照(背景不透明)",
+      "RenderBackground": "渲染背景图像",
+      "RenderHiddenTiles": "渲染隐藏图块(仅整个画布)",
+      "HideAnimatedTiles": "隐藏动画图块(需关闭'渲染隐藏图块')",
+      "RenderSelectedOnly": "选中图块",
+      "RenderEntireCanvas": "整个画布",
+      "Margin": "<b>选中图块</b>外额外渲染边距",
+      "ImageFolderTitle": "平铺图块图像文件夹",
+      "RenderRoofTiles": "仅渲染屋顶图块",
+      "RenderFloorTiles": "仅渲染地面图块",
+      "RenderBothTiles": "渲染地面和屋顶图块",
+      "SaveImageDialog": {
+        "Title": "保存平铺图块",
+        "FileNameLabel": "文件名：",
+        "FileNamePlaceholder": "图块平铺"
+      },
+      "SceneReplaceDialog": {
+        "Title": "场景替换",
+        "WhatToDo": "需要图块平铺为你执行以下操作吗？",
+        "ReplaceBackground": "替换当前场景背景",
+        "ReplaceBackgroundHint": "将当前场景背景更改为新创建的图像",
+        "CloneScene": "克隆当前场景并使用图像作为背景",
+        "CloneSceneHint": "克隆当前场景及其内容，并将新场景背景设为新创建的图像",
+        "ImportToScene": "作为新图块导入当前场景",
+        "ImportToSceneHint": "将新图像作为图块导入到当前场景中心",
+        "DoNothing": "不执行操作"
+      }
+    },
+    "ShowLayerControls": {
+      "Walls": "在其他图层显示墙壁",
+      "Lights": "在其他图层显示光照",
+      "Sounds": "在其他图层显示环境音"
+    },
+    "TileConfigExt": {
+      "LabelDimens": "图像尺寸",
+      "LabelAspect": "图像宽高比",
+      "SettingControlsName": "图块配置：显示动画控件",
+      "SettingControlsHint": "在图块配置缩略图中显示动画播放控件"
+    }
+  },
+  "LAYERS": {
+    "tiles": "图块层",
+    "foreground_deprecated": "前景/屋顶层",
+    "drawings": "绘图层",
+    "grid": "网格层",
+    "walls": "墙体层",
+    "templates": "测量板层",
+    "notes": "日志层",
+    "tokens": "Token层",
+    "lighting": "光线层",
+    "sounds": "环境音层",
+    "sight_deprecated": "视野层",
+    "controls": "控件层",
+    "weather": "天气层",
+    "unknown": "\"{0}层\""
+  }
+}

@@ -1,0 +1,34 @@
+{
+	"CSVIMPORTER": {
+		"COMPENDIUM": { "Import": "Import CSV/TSV" },
+		"IMPORT": {
+			"templateFile": {
+				"label": "Template File",
+				"hint": "A Handlebars template that renders to JSON data suitable for Document creation.",
+				"missing": "No template file specified"
+			},
+			"csvFile": {
+				"label": "Data File",
+				"hint": "CSV or TSV file to apply to the template.  Column names are required.  Spaces in the column names will be replaced with underscores.",
+				"missing": "No data file specified"
+			},
+			"baseFolder": {
+				"label": "Base Folder",
+				"hint": "Create all documents inside this folder."
+			},
+			"folderColumn": {
+				"label": "Folder Field",
+				"hint": "This column will be used as a folder name for each record.  Will be created under the Base Folder if it does not already exist."
+			},
+			"Progress": "Importing Data...",
+			"submit": { "label": "Import" },
+			"title": "Import to {id}"
+		},
+		"SETTINGS": {
+			"allowPackage": {
+				"name": "Allow system and module packs",
+				"hint": "For developers.  Allow importing to non-world compendium packs.  WARNING: Any changes to a package's compendium will be overwritten if that module or system updates."
+			}
+		}
+	}
+}

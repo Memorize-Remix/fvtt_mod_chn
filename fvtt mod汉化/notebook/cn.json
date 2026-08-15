@@ -1,0 +1,125 @@
+
+	"notebook" : {
+		"notebook" 							: "笔记本",
+		
+		"Titles" : {
+			"notebook" 						: "笔记本",
+			"note"							: "笔记",
+			
+			"defaultTitle"					: "笔记标题",
+			"newNote"						: "新笔记",
+			"copyfromTitle"					: "{pOriginal} - 复制",
+			"newFolder"						: "新文件夹",
+			"name"							: "名称",
+			"delete"						: "删除",
+			"manually"						: "手动",
+			
+			"searchNote"					: "搜索笔记",
+			
+			"userName"						: "用户名",
+			"self"							: "自我",
+			"default"						: "默认",
+			"alldefault"					: "全部/默认",
+			
+			"createNote"					: "创建笔记",
+			"createFolder"					: "创建文件夹",
+			"deleteNoteConfirm"				: "删除笔记 \"{pTitle}\" ?",
+			
+			"owner"							: "拥有",
+			"seer"							: "查看",
+			"editor"						: "编辑",
+			
+			"permissions"					: "权限",
+			"showtouser"					: "展示给玩家",
+			"permissionsTypes" : {
+				"default"					: "默认",
+				"none"						: "无",
+				"see"						: "查看",
+				"edit"						: "编辑",
+				"owner"						: "拥有"
+			},
+			
+			"type"							: "类型",
+			"typeTitle"						: "{pType}笔记",
+			"notesTypes" : {
+				"text"						: "文本",
+				"counter"					: "计数器",
+				"list"						: "列表",
+				"slider"					: "滑块",
+				"chat"						: "聊天",
+				"timer"						: "计时器",
+				"progressclock"				: "进度时钟",
+				"roundcounter"				: "圆形计数器",
+				"macro"						: "宏",
+				"enhancedtext"				: "增强文本",
+				"scribble"					: "涂鸦",
+				"hourglass"					: "沙漏"
+			},
+			
+			"min"							: "最小",
+			"max"							: "最大",
+			"steps"							: "步",
+			"segments"						: "段",
+			"changedirection"				: "转向",
+			"reset"							: "重置",
+			"days"							: "日",
+			"maxtime": "最大时间",
+			"currenttime": "当前时间",
+			
+			"none": "无",
+			
+			"context" : {
+				"ownership": "配置所有权",
+				"exportdata": "导出数据",
+				"importdata": "导入数据",
+				"delete": "删除",
+				"copy": "复制"
+			}
+		},
+		
+		"Warnings" : {
+			"importError"					: "Tried to import {pGotType} note, expected {pExpectedType} note"
+		},
+		
+		"Descrp" : {
+			"removeshiftclick"				: "shift+单击移除"
+		},
+		
+		"Settings" : {
+			"shiftquickcreate" : {
+				"name"						: "Shift快速创建",
+				"descrp"					: "创建新笔记时按住 Shift 键创建的笔记类型"
+			},
+			
+			"ctrlquickcreate" : {
+				"name"						: "CTRL快速创建",
+				"descrp"					: "创建新笔记时按住 CTRL 键创建的笔记类型"
+			},
+			
+			"altquickcreate" : {
+				"name"						: "ALT快速创建",
+				"descrp"					: "创建新笔记时按住 ALT 键创建的笔记类型"
+			},
+			
+			"smallnoteheight" : {
+				"name"						: "小笔记高度",
+				"descrp"					: "某些笔记在未主动悬停时折叠的高度"
+			},	
+			
+			"largenoteheight" : {
+				"name"						: "大笔记高度",
+				"descrp"					: "某些笔记主动悬停时展开的高度"
+			},
+			
+			"backgroundpattern" : {
+				"name"						: "笔记背景",
+				"descrp"					: "笔记背景图案",
+				"options" : {
+					"parchment"				: "Parchment",
+					"parchment-white"		: "White parchment",
+					"denim065"				: "Denim"
+				}
+			}
+		}
+	}
+}

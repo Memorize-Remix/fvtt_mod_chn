@@ -1,0 +1,23 @@
+
+  "FORCECLIENTCONTROLS": {
+    "settings": {
+      "forced": {
+        "name": "强制控制绑定",
+        "hint": "强制应用的控制键位配置"
+      },
+      "unlocked": {
+        "name": "解锁的软性强制绑定",
+        "hint": "可被客户端修改的软性强制绑定"
+      }
+    },
+    "ui": {
+      "open-gm-hint": "当前键位未强制绑定。点击启用软性强制。",
+      "soft-gm-hint": "当前为软性强制绑定（客户端可选择性修改）。点击转为硬性强制，Alt+点击解除绑定。",
+      "hard-gm-hint": "当前为全客户端强制绑定。点击解除强制，Alt+点击退出管理模式。",
+      "unlocked-gm-hint": "客户端强制绑定中，但GM已解除强制。点击重新启用强制。",
+      "hard-client-hint": "该键位已被GM强制锁定，不可编辑。",
+      "soft-client-hint": "该键位为GM设置的软性强制绑定。点击可解锁编辑。",
+      "unlocked-client-hint": "该键位已对此客户端解锁。点击重置为GM默认设置。"
+    }
+  }
+}

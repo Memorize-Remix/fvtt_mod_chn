@@ -1,0 +1,142 @@
+{
+  "aedifs-tactical-grid": {
+    "settings": {
+      "menu": {
+        "world": "World Settings",
+        "client": "Client Settings"
+      },
+      "tabs": {
+        "enable": "Enable Grid",
+        "grid": "Grid",
+        "ruler": "Ruler",
+        "measurement": "Measurement",
+        "cover": "Cover",
+        "range": "Range",
+        "misc": "Misc."
+      },
+      "disableTacticalGrid": {
+        "name": "Disable 'Tactical Grid'",
+        "hint": "Disable the 'Tactical Grid' module."
+      },
+      "defaultViewDistance": {
+        "name": "Default Grid View Distance",
+        "hint": "Number of grid spaces to be displayed."
+      },
+      "usePropertyBasedDistance": {
+        "name": "Use Token Property Based Distance",
+        "hint": "Use a token property instead of `Default Grid View Distance`"
+      },
+      "propertyDistance": {
+        "name": "Token Property",
+        "hint": "Path to the Token property to be used to determine the size of the grid."
+      },
+      "defaultViewShape": {
+        "name": "Default Grid View Shape",
+        "hint": "The shape of the grid mask."
+      },
+      "enableOnCombatOnly": {
+        "name": "On Combat Only",
+        "hint": "Grid will only be shown when in combat."
+      },
+      "enableOnControl": {
+        "name": "On Control",
+        "hint": "Grid will be shown for controlled placeables."
+      },
+      "enableOnHover": {
+        "name": "On Hover",
+        "hint": "Grid will be shown for hovered over placeables."
+      },
+      "mixColors": {
+        "name": "Mix Colors",
+        "hint": "When enabled view shape colors will be mixed/blended together."
+      },
+      "assignDispositionBasedColor": {
+        "name": "Assign Color Based on Disposition",
+        "hint": "When enabled Token view shape colors will default to their disposition:"
+      },
+      "layerEnable": {
+        "hint": "Enable tactical grid for \"{layerName}\""
+      },
+      "enableOnRuler": {
+        "name": "Enable Tactical Grid For Ruler",
+        "hint": "Enables grid for Ruler Measurements (requires libWrapper to be active)."
+      },
+      "measurementPrecision": {
+        "hint": "Decimal precision that measured distances are to be displayed in."
+      },
+      "rulerColor": {
+        "hint": "Set a color for the ruler grid. If no color is set then it will use the grid color of the scene."
+      },
+      "volumetricTokens": {
+        "name": "Three-dimensional Tokens",
+        "hint": "When enabled token height will be taken into account when calculating distances for elevated tokens."
+      },
+	  "broadcastControl": {
+        "name": "Insert Broadcast Control",
+        "hint": "When enabled a control will be added to Token scene controls to toggle global broadcasting of GM's distance measurements."
+      },
+      "scaleFontSize": "Scale Font Size to Canvas Grid",
+      "baseGridSize": {
+        "name": "Base Grid Size",
+        "hint": "Grid smaller or larger than this will result in Font Size being scaled proportionally."
+      },
+      "cover": {
+        "name": "Cover Calculator",
+        "hint": "If a cover calculator is selected and corresponding module enabled; cover information will be displayed under measurements.",
+        "none": "None",
+        "half": "Half",
+        "threeQuarters": "Three-quarters",
+        "total": "Total"
+      },
+      "ignoreEffect": {
+        "name": "Ignore Tokens with Effect",
+        "hint": "Tokens with a matching effect name will be ignored from measurement calculations."
+      },
+      "displayDistancesOnRulerDrag": {
+        "name": "Ruler Drag",
+        "hint": "When enabled distances between the leading point of the ruler and all visible Tokens will be calculated and displayed on them."
+      },
+      "displayDistancesOnTokenDrag": {
+        "name": "Token Drag",
+        "hint": "When enabled distances between the dragged token and all visible Tokens will be calculated and displayed on them."
+      },
+      "displayDistancesOnTokenHover": {
+        "name": "Token Hover",
+        "hint": "When enabled distances between the controlled and hovered Tokens will be calculated and displayed on the hovered Token."
+      },
+      "range": {
+        "item-range": "Item Range Highlighter",
+        "token-range": "Token Range Highlighter",
+        "combat-only": "Combat Only",
+        "ranges": "Ranges",
+        "grid-shape-shrink": "Grid Shape Shrink",
+        "dispositions": "Dispositions Highlighted for Players",
+        "client-toggle": {
+          "name": "Range Highlighter",
+          "hint": "Turn on/off Token/Item range highlighting on hover."
+        }
+      }
+    },
+    "keybindings": {
+      "toggleGrid": {
+        "name": "Toggle Grid on Current Layer (Global)",
+        "hint": "Short Press will toggle the layer globally, a long press will toggle the layer just for the current Scene."
+      },
+      "sceneToggleGrid": {
+        "name": "Toggle Grid on Current Layer (Scene)",
+        "hint": ""
+      }
+    },
+    "common": {
+      "layers": "Layers",
+      "gridSpaces": "Grid Spaces",
+      "color": "Color",
+      "precision": "Precision",
+      "decimalPlaces": "Decimal Places",
+      "apply": "Apply",
+      "labels": "Labels",
+      "alpha": "Alpha",
+      "marker": "Marker"
+    }
+  }
+}

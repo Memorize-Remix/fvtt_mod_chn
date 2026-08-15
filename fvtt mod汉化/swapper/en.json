@@ -1,0 +1,59 @@
+{
+	"swapper": {
+		"GameSettings": {
+			"globalSwappingEnabled": {
+				"Name": "Global Image Swapping on Rotation",
+				"Hint": "This enables Token image swapping on rotation for all tokens, unless disabled on a Token individually (See: Token configuration)."
+			},
+			"rotationFilesuffixMatrix": {
+				"Name": "Rotation File Suffixes",
+				"Hint": "Define rotation degrees and file suffixes for texture replacement."
+			},
+			"rotationFilesuffixMatrixMenu": {
+					"Name": "Configure Global Rotation File Suffixes",
+					"Label": "Rotation File suffixes",
+					"Hint": "Configure rotations and matching file suffixes for token image swapping.",
+					"Window": {
+						"Name": "Configure Rotation File Suffixes",
+						"Rotation": "Rotation",
+						"Filesuffix": "File Suffix",
+						"Remove": "Remove",
+						"RotationHint": "Rotation, in degrees, that has a token image",
+						"FilesuffixHint": "File suffix appended to the token image filename",
+						"ButtonAddRow": "Add Row",
+						"ButtonResetDefaults": "Reset to Default",
+						"ButtonSave": "Save"
+					}
+			}
+		},
+		"TokenConfig": {
+			"Fieldset":{
+				"Legend": "Swap Token Image on Rotation"
+			},
+			"OverrideGlobalSettings": {
+				"Label": "Override Global Settings",
+				"Hint": "If enabled, this token ignores the global swapping toggle."
+			},
+			"LocalSwappingEnabled": {
+				"Label": "Enable Image Swapping on Rotation",
+				"Hint": "Toggle whether this token swaps its image when rotated."
+			},
+			"LocalRotationFilesuffixMatrix": {
+				"Label": "Configure Token Specific Rotation File Suffixes",
+				"Hint": "Configure rotations and matching file suffixes for token image swapping.",
+				"ButtonLabel": "Rotation File Suffixes",
+				"ApplicationName": "Configure Token Specific Rotation File Suffixes"
+			}
+		},
+		"Warnings": {
+			"Warning001": "Swap token image on rotation, Warning 001: Rotation: {old} was normalized to the range 0-360 degrees. Rotation set to: {new}.",
+			"Warning002": "Swap token image on rotation, Warning 002: Token image change failed.\nAttempted file-path likely does not exist: {texture}",
+			"Warning003": "Swap token image on rotation, Warning 003: No rotation filesuffixes found for this token, but it has image swapping enabled (locally or globally).",
+			"Warning004": "Swap token image on rotation, Warning 004: Token has image swapping enabled (locally or globally), but an invalid filename without an underscore to mark the file suffix."
+		},
+		"Errors": {
+			    "Error001": "Swap token image on rotation, Error 001: Rotation must be a number representing a rotation between 0 and 360.",
+				"Error002": "Swap token image on rotation, Error 002: Rotation cannot duplicate an existing entry."
+		}
+	}
+}

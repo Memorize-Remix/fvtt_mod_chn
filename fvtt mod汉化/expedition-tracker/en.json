@@ -1,0 +1,219 @@
+{
+  "EXPEDITION_TRACKER": {
+    "Title": "Expedition Tracker",
+    "NoTurnsRecorded": "No expedition turns recorded yet.",
+    "NoWanderingCheckRecorded": "No wandering monster check recorded yet.",
+    "Actions": {
+      "AdvanceTurn": "Advance Turn",
+      "RestTurn": "Rest",
+      "SearchTurn": "Search",
+      "ListenTurn": "Listen"
+    },
+    "TurnTypes": {
+      "Advance": "Advance Turn",
+      "Rest": "Rest Turn",
+      "Search": "Search Turn",
+      "Listen": "Listening",
+      "Other": "Other Turn"
+    },
+    "Common": {
+      "Cancel": "Cancel"
+    },
+    "Expedition": {
+      "NameLabel": "Expedition Name",
+      "NamePlaceholder": "The Forgotten Mines",
+      "StartAction": "New Expedition",
+      "EndAction": "End Expedition",
+      "StartDialogTitle": "Start New Expedition",
+      "StartConfirmTitle": "Start New Expedition",
+      "StartConfirmBody": "Start a new expedition and clear the current turn count and expedition log?",
+      "StartConfirmYes": "Start New Expedition",
+      "EndConfirmTitle": "End Expedition",
+      "EndConfirmBody": "End the current expedition and collapse the tracker?",
+      "EndConfirmYes": "End Expedition"
+    },
+    "Log": {
+      "Toggle": "Toggle expedition log",
+      "Empty": "No expedition log entries yet."
+    },
+    "Notes": {
+      "Action": "Add Note",
+      "Title": "Note Current Turn",
+      "Label": "Turn notes",
+      "Placeholder": "Add details for the current turn...",
+      "Empty": "Enter a note before continuing.",
+      "Unavailable": "Record at least one turn before adding a note."
+    },
+    "OtherTurn": {
+      "Action": "Other Turn",
+      "Title": "Other Expedition Turn",
+      "PromptLabel": "Turn activity",
+      "Placeholder": "Map, force door, examine idol...",
+      "Empty": "Enter a turn activity before continuing."
+    },
+    "TimedEffects": {
+      "AddAction": "Add Effect",
+      "RemoveAction": "Remove Effect",
+      "NoTemplatesConfigured": "No timed effect templates are configured. Add one in module settings first.",
+      "RemainingTooltip": "{remaining} turns remaining (of {total})",
+      "SourceTooltip": "Source: {source}",
+      "LightTooltip": "Light: bright {bright}, dim {dim}, angle {angle}",
+      "PausedStatus": "Paused",
+      "UnknownSource": "Unknown source",
+      "Activated": "{name} activated.",
+      "ActivatedWithSource": "{source} activated {name}",
+      "Announce": "{name} begins. (Duration: {duration})",
+      "AnnounceWithTarget": "{target} gains {name}. (Duration: {duration})",
+      "AnnounceLight": "{name} is lit! (Duration: {duration})",
+      "AnnounceLightWithTarget": "{target} lights a {name}! (Duration: {duration})",
+      "AnnounceDurationLabel": "{duration} {incrementLabel}",
+      "Paused": "{name} paused.",
+      "PausedWithSource": "{source}'s {name} paused.",
+      "Resumed": "{name} resumed.",
+      "ResumedWithSource": "{source}'s {name} resumed.",
+      "Expired": "{name} expired.",
+      "ExpiredWithSource": "{source}'s {name} expired.",
+      "ExtinguishedMessage": "{tokenName}'s {name} has extinguished!",
+      "TemplateValidation": "Each timed effect template requires both a name and an icon path.",
+      "AddDialog": {
+        "Title": "Add Timed Effect",
+        "TemplateLabel": "Template",
+        "CustomTemplateOption": "Custom Effect",
+        "CustomNameLabel": "Custom Effect Name",
+        "CustomIconLabel": "Custom Icon Path",
+        "BrowseIconAction": "Browse",
+        "CustomRequired": "Enter a custom effect name.",
+        "DurationLabel": "Duration (turns)",
+        "AnnounceEffectLabel": "Announce Effect",
+        "SourceLabel": "Source (optional)",
+        "CustomSourceLabel": "Custom Source (optional)",
+        "SourcePlaceholder": "Choose a scene actor or type a custom source...",
+        "LightSourceLabel": "Light Source",
+        "SourceTokenLabel": "Scene Token",
+        "SourceTokenPlaceholder": "Select a token on the current scene",
+        "SourceLabelOverride": "Display Label (optional)",
+        "SourceLabelOverridePlaceholder": "Leave blank to use the token name",
+        "BrightLightLabel": "Bright Light",
+          "DimLightLabel": "Dim Light",
+          "EmissionAngleLabel": "Emission Angle",
+          "SourceTokenRequired": "Select a token on the current scene for light source effects."
+        },
+        "ManageDialog": {
+          "Title": "Manage {name}",
+          "NameLabel": "Name",
+          "RemainingTurns": "Remaining Turns",
+          "TotalTurns": "Total Turns",
+          "SourceLabel": "Source",
+          "SourcePlaceholder": "Optional source",
+          "TokenLabel": "Scene Token",
+          "UnknownToken": "Unknown token",
+          "DisplayLabel": "Display Label",
+          "DisplayLabelPlaceholder": "Leave blank to use the token name",
+          "SaveAction": "Save",
+          "PauseAction": "Pause",
+          "ResumeAction": "Resume",
+          "CustomNameRequired": "Enter a custom effect name."
+        },
+        "RemoveDialog": {
+          "Title": "Remove Timed Effect",
+          "Body": "Remove {name} from the timed effects track?",
+        "LightSourceBody": "Remove {name} from the timed effects track. Should the linked token light be recalculated too?",
+        "RemoveOnlyAction": "Remove Effect Only",
+        "RemoveAndRecalculateAction": "Remove Effect and Recalculate Light"
+      },
+      "Settings": {
+        "MenuLabel": "Timed Effect Templates",
+        "MenuAction": "Configure Templates",
+        "MenuHint": "Configure the effect templates that can be added to the timed effects turn track.",
+        "FormHint": "Define reusable timed effect templates with a name, icon path, and optional default duration.",
+        "TemplateName": "Name",
+        "TemplateIconPath": "Icon Path",
+        "TemplateConfig": "Template Config",
+        "TemplateDefaultDuration": "Default Duration",
+        "LightSourceLabel": "Light Source",
+        "BrightLightLabel": "Bright Light",
+        "DimLightLabel": "Dim Light",
+        "EmissionAngleLabel": "Emission Angle",
+        "TemplateActions": "Actions",
+        "AddTemplate": "Add Template",
+        "BrowseIconPath": "Browse",
+        "RemoveTemplate": "Remove",
+        "SaveTemplates": "Save Templates"
+      }
+    },
+    "Journal": {
+      "Name": "Expedition Log",
+      "LogLabel": "Log expedition turns to journal",
+      "LogHint": "Create or use the Expedition Log journal and add this expedition as a new page.",
+      "NameRequired": "Enter an expedition name to log this expedition to the journal.",
+      "Unavailable": "Unable to create or update the Expedition Log journal.",
+      "Started": "Expedition started",
+      "Ended": "Expedition ended",
+      "HourHeading": "Hour {hour}"
+    },
+    "Time": {
+      "SettingsLegend": "Time Procedure",
+      "ProcedureLabel": "Time procedure",
+      "Presets": {
+        "Dungeon": "Dungeon Turns",
+        "Overland": "Overland / Hexcrawl",
+        "Custom": "Custom"
+      },
+      "IncrementLabelSingular": "Increment Label (Singular)",
+      "IncrementLabelPlural": "Increment Label (Plural)",
+      "CycleLabelSingular": "Cycle Label (Singular)",
+      "CycleLabelPlural": "Cycle Label (Plural)",
+      "IncrementsPerCycle": "Increments Per Cycle",
+      "IncrementCountLabel": "{label} {count}",
+      "CycleCountLabel": "{label} {count}",
+      "IncrementInCycleLabel": "{increment} In {cycle} {count}/{total}",
+      "CycleHeading": "{label} {count}",
+      "NoteEntry": "{increment}: Note - {note}",
+      "SummaryIncrement": "Increment: {label}",
+      "SummaryCycle": "Cycle: {label}",
+      "SummaryCadence": "{count} {increment} per {cycle}",
+      "CustomRequired": "Complete all custom time procedure fields before continuing."
+    },
+    "Wandering": {
+      "Check": "Wandering Check",
+      "RuleLabel": "Wandering Rule: {value}",
+      "AutoLabel": "Auto Checks: {value}",
+      "LastLabel": "Last Wandering Check: {value}",
+      "SettingsLegend": "Wandering Check Settings",
+      "EncounterChanceLabel": "Encounter chance",
+      "ChanceSeparator": "in",
+      "EveryLabel": "Check every how many increments?",
+      "AutoCheckLabel": "Automatically roll wandering checks",
+      "AutoCheckHint": "If enabled, the tracker rolls wandering checks automatically after every matching turn interval. The manual button still remains available.",
+      "SettingsHint": "These settings are stored with this expedition and used by the Wandering Check button.",
+      "CadenceEveryIncrement": "check every {label}",
+      "CadenceEveryIncrements": "check every {count} {label}",
+      "RuleSummary": "{threshold}-in-{dieFaces}, {cadence}",
+      "AutoEnabled": "On ({cadence})",
+      "AutoDisabled": "Off",
+      "Result": "1d{dieFaces} = {total} ({outcome})",
+      "Encounter": "Encounter",
+      "NoEncounter": "No encounter",
+      "FlavorWithRule": "Wandering Monster Check ({rule})",
+      "AutoFlavorWithRule": "Automatic Wandering Monster Check ({rule})"
+    },
+    "Settings": {
+      "Enable": {
+        "Name": "Enable Expedition Tracker",
+        "Hint": "If enabled, the GM can use the expedition tracker above the hotbar for turn tracking and expedition journaling."
+      },
+      "TimedEffectsEnable": {
+        "Name": "Enable Timed Effects Turn Track",
+        "Hint": "If enabled, the expedition tracker shows the timed effects turn track and allows GMs to add countdown effects."
+      }
+    },
+    "TrackerPosition": {
+      "ResetMenuLabel": "Reset Tracker Position",
+      "ResetMenuAction": "Reset Position",
+      "ResetMenuHint": "Reset the expedition tracker HUD back to its default position above the hotbar for your client.",
+      "ResetDescription": "Reset the expedition tracker HUD to its default position above the hotbar.",
+      "ResetConfirmAction": "Reset Position",
+      "ResetSuccess": "Expedition tracker position reset."
+    }
+  }
+}

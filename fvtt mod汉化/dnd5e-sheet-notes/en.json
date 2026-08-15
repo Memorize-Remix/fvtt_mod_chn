@@ -1,0 +1,61 @@
+{
+  "dnd5e-sheet-notes": {
+    "title": "5e Sheet Notes & Trackers",
+    "tab": {
+      "label": "Notes"
+    },
+    "category": {
+      "add": "Add Category",
+      "edit": "Edit Category",
+      "delete": "Delete Category",
+      "confirm-delete": "Are you sure you want to delete the category \"{name}\"? All notes in this category will be moved to the default category.",
+      "editor": {
+        "title": {
+          "create": "Create Category",
+          "edit": "Edit Category"
+        }
+      },
+      "fields": {
+        "name": "Name",
+        "ordering": "Ordering"
+      },
+      "ordering": {
+        "alphabetical": "Alphabetical",
+        "manual": "Manual"
+      },
+      "errors": {
+        "name-required": "Category name is required",
+        "name-too-long": "Category name must be 50 characters or less",
+        "name-exists": "A category named \"{name}\" already exists"
+      },
+      "collapsed": {
+        "singular": "{count} hidden note",
+        "plural": "{count} hidden notes"
+      }
+    },
+    "actions": {
+      "edit": "Edit Note",
+      "delete": "Delete Note"
+    },
+    "search": {
+      "label": "Search notes",
+      "placeholder": "Search notes",
+      "clear": "Clear Search"
+    },
+    "type": {
+      "note": "Note"
+    },
+    "common": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "create": "Create"
+    }
+  },
+  "TYPES": {
+    "Item": {
+      "dnd5e-sheet-notes": {
+        "note": "Note"
+      }
+    }
+  }
+}

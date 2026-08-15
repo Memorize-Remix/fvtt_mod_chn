@@ -1,0 +1,71 @@
+
+    "fvtt-youtube-player": {
+        "deleteTrack": "删除曲目？",
+        "deleteTrackContent": "您确定要删除这条曲目吗？",
+        "deletePlaylist": "删除播放列表？",
+        "deletePlaylistContent": "您确定要删除这个播放列表吗？",
+        "fetchingTitle": "检索视频标题...",
+        "playlistName": "播放列表名称",
+        "playlistNameContent": "您正在导入一个播放列表。您想创建一个新的播放列表，还是将曲目添加到当前播放列表？如果要添加到当前播放列表，请将该字段留空。",
+        "TOOLTIP": {
+            "play": "播放",
+            "stop": "停止",
+            "toggle-playlists": "切换播放列表",
+            "add-to-playlist": "添加到播放列表",
+            "create-playlist": "创建播放列表",
+            "delete-playlist": "删除播放列表",
+            "delete-track": "删除曲目",
+            "rename-playlist": "重命名播放列表",
+            "sound-library": "音频库",
+            "loop": "切换重复",
+            "toggle-playlist": "切换自动播放",
+            "search": "搜索 YouTube",
+            "copy-url": "复制 URL",
+            "configure-track": "配置曲目",
+            "add-to-sound-library": "添加到音频库"
+        },
+        "settings": {
+            "googleApiKey": {
+                "name": "YouTube API 密钥",
+                "hint": "API 用于解析播放列表和执行搜索。请求将通过我的服务器发送，但您可以使用自己的 API 密钥来避免速率限制。搜索功能需要 API 密钥。请登录 https://console.developers.google.com/apis/credentials 获取。"
+            },
+            "importExport": {
+                "name": "导入/导出",
+                "label": "打开导入/导出对话框",
+                "hint": "导入或导出播放列表"
+            }
+        },
+        "import-export": {
+            "title": "导入/导出播放列表",
+            "import": "导入",
+            "export": "导出",
+            "imported": "成功导入播放列表"
+        },
+        "track-configuration": {
+            "title": "曲目配置",
+            "track-title": "曲目标题",
+            "track-url": "曲目 URL 或 ID",
+            "url": "URL",
+            "tags": "标签",
+            "rename-track": "重命名曲目"
+        },
+        "tags-configuration": {
+            "title": "标签配置",
+            "create-tag": "创建标签",
+            "tag-name": "标签名称",
+            "tag-color": "标签颜色",
+            "tag-label": "标签名称",
+            "delete-tag": "删除标签",
+            "create-tag-error": "请输入标签名称和标签颜色"
+        },
+        "sound-library": {
+            "title": "声音库",
+            "add-tracks": "添加曲目",
+            "import-tracks": "导入曲目",
+            "import-tracks-textarea": "在此处粘贴曲目/播放列表 URL 或 ID"
+        },
+        "app": {},
+        "flags": {},
+        "noApiKey": "警告：未设置 API 密钥。要访问搜索功能，需要在模组设置中设置 YouTube API 密钥。更多信息请查看Wiki。"
+    }
+}

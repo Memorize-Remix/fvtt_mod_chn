@@ -1,0 +1,117 @@
+{
+    "barbrawl": {
+        "translatedBy": "DJ Addi",
+        "barStyle": {
+            "name": "Bar style",
+            "hint": "Changes how bars are displayed.",
+            "minimal": "Minimalistic (slim, no border)",
+            "default": "Foundry default",
+            "large": "Large (wide, thin border)",
+            "legacy": "Legacy (thick border)"
+        },
+        "textStyle": {
+            "name": "Bar label",
+            "hint": "Changes the number displayed on the bar.",
+            "user": "User default",
+            "none": "None",
+            "fraction": "Fraction (value / max)",
+            "percent": "Percentage (%)"
+        },
+        "compactHud": {
+            "name": "Compact HUD",
+            "hint": "Reduces the size of the resource input fields in the token HUD."
+        },
+        "hideHostile": {
+            "name": "Hide all hostile bars",
+            "hint": "Prevents the display of bars for hostile tokens that players don't own. Be aware that this may override resource specific visibility settings."
+        },
+        "heightMultiplier": {
+            "name": "Bar height multiplier",
+            "hint": "Multiplies the bar height by the configured value to increase readability. This will affect the label, but not the background or foreground image of a bar."
+        },
+        "cacheBitmaps": {
+            "name": "Cache rendered bars",
+            "hint": "Enables bitmap caching for bars on the canvas, which may improve performance at the cost of readability (especially for labels)."
+        },
+        "config": {
+            "attribute": "Attribute",
+            "ownerVisibility": "Visibility (owner)",
+            "otherVisibility": "Visibility (everyone)",
+            "gmVisibility": "Visibility (GM)",
+            "hide": "Hide bar",
+            "hideHint": "Don't display the bar when any of the checked conditions are met.",
+            "hideFull": "Full",
+            "hideEmpty": "Empty",
+            "hideCombat": "In combat",
+            "hideNoCombat": "Out of combat",
+            "hideHud": "Hide HUD",
+            "value": "Value (current/max)",
+            "color": "Color (min/max)",
+            "position": "Position",
+			"moveInHint": "Move away from token edge",
+            "moveOutHint": "Move towards token edge",
+            "advanced": "Advanced configuration",
+            "indent": "Indentation",
+            "indentHint": "Additional space on the side of the bar in percent of the token's width.",
+            "indentLeft": "Left",
+            "indentRight": "Right",
+            "shareHeight": "Share height",
+            "shareHeightHint": "Prevents the bar from reserving any vertical space, which moves the following bar to the same line.",
+            "style": "Label",
+            "ignoreLimits": "Ignore limits",
+            "ignoreLimitsHint": "Disables clamping of input values between 0 (lower) and the maximum (upper).",
+            "ignoreMin": "Lower limit",
+            "ignoreMax": "Upper limit",
+            "invert": "Invert values",
+            "invertDirection": "Invert direction",
+            "invertHint": "Displays 0 as a full bar and the maximum value as an empty bar.",
+            "invertDirectionHint": "Inverts the direction this bar fills from.",
+            "label": "Label prefix",
+            "labelHint": "Displays the configured text on the bar.",
+            "approximate": "Approximation",
+            "approximateHint": "Shows an approximate value on the bar and its label. This configures the number of segments to display.",
+            "approximateOwner": "Approximation for owner",
+            "approximateOwnerHint": "Indicates whether the approximated value is also displayed for the owner of the token.",
+            "fgImage": "Foreground image",
+            "fgImageHint": "Replaces the usual bar with an image that is clipped based on the fill percentage.",
+            "bgImage": "Background image",
+            "bgImageHint": "Replaces the usual bar background with an image. It is recommended that both images have the same width as the scene's grid size.",
+			"hideBg": "Hide background",
+            "opacity": "Opacity"
+        },
+        "attribute": {
+            "none": "None (remove)",
+            "custom": "Custom (values below)"
+        },
+        "visibility": {
+            "inheritFromOwner": "Inherit from owner",
+            "inheritFromOther": "Inherit from everyone",
+            "none": "Never",
+            "always": "Always",
+            "hover": "When hovered",
+            "control": "When selected",
+            "hoverOrControl": "When hovered or selected"
+        },
+        "position": {
+            "top-inner": "Top (inside)",
+            "top-outer": "Top (outside)",
+            "bottom-inner": "Bottom (inside)",
+            "bottom-outer": "Bottom (outside)",
+            "left-inner": "Left (inside)",
+            "left-outer": "Left (outside)",
+            "right-inner": "Right (inside)",
+            "right-outer": "Right (outside)"
+        },
+        "section": "Resource Bars",
+        "add": "Add resource",
+        "defaults": {
+            "save": "Save to...",
+            "saveConfirmation": "Saved resources in {target}.",
+            "load": "Load from...",
+            "defaultToken": "Default token",
+            "typeDefaults": "{type} default",
+            "prototypeToken": "{name}'s prototype token",
+            "activeTokens": "{name}'s active tokens"
+        }
+    }
+}

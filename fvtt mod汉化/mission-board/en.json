@@ -1,0 +1,205 @@
+{
+  "mission-board": {
+    "title": "Mission Board",
+    "board": {
+      "columns": {
+        "left": "Backlog",
+        "center": "In Progress",
+        "right": "Completed"
+      },
+      "buttons": {
+        "addMission": "Add Mission",
+        "removeFromBoard": "Remove from Board",
+        "sign": "Sign",
+        "unsign": "Unsign",
+        "manageTracking": "Manage Tracking"
+      },
+      "labels": {
+        "signed": "Tracking",
+        "missingMission": "Missing mission ({id})"
+      }
+    },
+    "missionsManager": {
+      "title": "Mission Manager",
+      "label": "Manage Missions",
+      "hint": "Create, edit, enable/disable missions and control user tracking.",
+      "buttons": {
+        "create": "Create Mission",
+        "edit": "Edit",
+        "view": "View",
+        "delete": "Delete",
+        "save": "Save",
+        "cancel": "Cancel",
+        "close": "Close",
+        "confirm": "Confirm",
+        "enable": "Enable",
+        "disable": "Disable",
+        "update": "Update",
+        "addUser": "Add User",
+        "removeUser": "Remove User",
+        "addActor": "Add Actor",
+        "removeActor": "Remove Actor",
+        "setReward": "Set Reward"
+      },
+      "labels": {
+        "name": "Mission Name",
+        "description": "Description",
+        "objectives": "Objectives",
+        "rewards": "Rewards",
+        "status": "Status",
+        "assignedTo": "Assigned To",
+        "dueDate": "Due Date",
+        "priority": "Priority",
+        "location": "Location",
+        "notes": "Notes",
+        "image": "Image",
+        "userTracking": "User Tracking",
+        "userId": "User ID",
+        "reward": "Reward",
+        "trackingUsers": "Tracking Users",
+        "actorTracking": "Actor Tracking",
+        "trackingActors": "Tracking Actors",
+        "search": "Search Missions"
+      },
+      "status": {
+        "pending": "Pending",
+        "inProgress": "In Progress",
+        "completed": "Completed",
+        "failed": "Failed",
+        "cancelled": "Cancelled",
+        "enabled": "Enabled",
+        "disabled": "Disabled"
+      },
+      "priority": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "critical": "Critical"
+      },
+      "placeholders": {
+        "name": "Enter the mission name...",
+        "description": "Enter the mission description...",
+        "objectives": "List the mission objectives...",
+        "rewards": "Describe the rewards...",
+        "assignedTo": "Assign to player/character...",
+        "location": "Mission location...",
+        "notes": "Additional notes...",
+        "rewardUuid": "Paste reward Item UUID...",
+        "search": "Search by name or description..."
+      },
+      "hints": {
+        "richDescription": "Use the toolbar to format text with bold, italic, lists, images, and links."
+      },
+      "toolbar": {
+        "bold": "Bold (Ctrl+B)",
+        "italic": "Italic (Ctrl+I)",
+        "underline": "Underline (Ctrl+U)",
+        "strike": "Strikethrough",
+        "unorderedList": "Bulleted list",
+        "orderedList": "Numbered list",
+        "clearFormat": "Clear formatting"
+      },
+      "validation": {
+        "nameRequired": "Mission name is required",
+        "descriptionRequired": "Mission description is required",
+        "rewardUuidRequired": "Reward UUID is required",
+        "rewardInvalid": "Invalid reward",
+        "userNotFound": "User not found",
+        "userAlreadyTracking": "User already tracking this mission",
+        "userNotTracking": "User is not tracking this mission",
+        "actorAlreadyTracking": "Actor already tracking this mission",
+        "actorNotTracking": "Actor is not tracking this mission",
+        "noAvailableMissions": "No available missions to add",
+        "noAccessibleActors": "No accessible actors available",
+        "noMissionSelected": "Please select a mission before confirming",
+        "rewardAlreadyAdded": "Reward already added"
+      },
+      "notifications": {
+        "missionCreated": "Mission created successfully",
+        "missionUpdated": "Mission updated successfully",
+        "missionDeleted": "Mission '{name}' deleted successfully",
+        "trackingAdded": "User added to tracking",
+        "trackingRemoved": "User removed from tracking",
+        "rewardUpdated": "Reward updated successfully"
+      },
+      "dialogs": {
+        "confirmDelete": {
+          "deleteTitle": "Delete Mission",
+          "deleteConfirm": "Are you sure you want to delete the mission '{name}'? This action cannot be undone.",
+          "title": "Delete Mission",
+          "content": "Are you sure you want to delete the mission '{name}'? This action cannot be undone."
+        },
+        "createMission": {
+          "title": "Create New Mission"
+        },
+        "editMission": {
+          "title": "Edit Mission"
+        },
+        "viewMission": {
+          "title": "Mission Details"
+        }
+      },
+      "empty": {
+        "title": "No Missions",
+        "description": "No missions have been created yet. Click 'Create Mission' to get started.",
+        "noTrackingUsers": "No users are tracking this mission",
+        "noTrackingActors": "No one is tracking this mission",
+        "noReward": "No reward defined"
+      },
+      "errors": {
+        "noActiveGM": "No active GM found to process the request",
+        "createFailed": "Failed to create mission",
+        "updateFailed": "Failed to update mission",
+        "deleteFailed": "Failed to delete mission",
+        "loadFailed": "Failed to load missions",
+        "saveFailed": "Failed to save mission",
+        "missionNotFound": "Mission not found"
+      }
+    },
+    "global": {
+      "selectActor": "Select Actor"
+    },
+    "factionsManager": {
+      "fields": {
+        "searchActors": "Search actors"
+      }
+    },
+    "actors-missions": {
+      "title": "Tracking Missions",
+      "labels": {
+        "listTitle": "Tracked Missions",
+        "noMissions": "No tracked missions",
+        "tracking": "Tracking",
+        "rewardKind": {
+          "uuid": "UUID",
+          "inline": "Inline"
+        }
+      },
+      "buttons": {
+        "open": "Missions",
+        "unsign": "Unsign",
+        "giveReward": "Give Reward",
+        "close": "Close",
+        "giveAll": "Give to all",
+        "giveSingle": "Give to this actor"
+      },
+      "errors": {
+        "noActorSelected": "No actor selected"
+      },
+      "confirm": {
+        "rewardScope": "Give rewards to all tracked actors or only this one?"
+      },
+      "dialogs": {
+        "viewMission": {
+          "title": "Mission Details"
+        }
+      }
+    }
+  },
+  "missionsManager": {
+    "empty": {
+      "title": "No Missions",
+      "description": "No missions have been created yet. Click 'Add Mission' to get started."
+    }
+  }
+}

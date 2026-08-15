@@ -1,0 +1,78 @@
+{
+  "revolutionary-piratenames": {
+    "message": {
+      "flavor": {
+        "given": "Draws a {gender} {nation} given name.",
+        "surname": "Draws a {nation} surname.",
+        "full": "Draws a {gender} {nation} name.",
+        "ship": "Draws a {nation} ship name."
+      },
+      "speaker": "Pirate Name Generator"
+    },
+    "dialog": {
+      "person": {
+        "title": "Generate a Person’s Name",
+        "nationalities": {
+          "label": "Nationality",
+          "hint": "What nationality should this name come from?",
+          "options": {
+            "Random Person": "Random Person",
+            "Random Pirate": "Random Pirate",
+            "Spanish": "Spanish",
+            "English": "English",
+            "French": "French",
+            "Dutch": "Dutch",
+            "Scottish": "Scottish",
+            "Irish": "Irish",
+            "Welsh": "Welsh"
+          }
+        },
+        "gender": {
+          "label": "Gender",
+          "hint": "What gender should the name reflect?",
+          "options": {
+            "Random": "Random",
+            "Masculine": "Masculine",
+            "Feminine": "Feminine"
+          }
+        },
+        "actions": {
+          "generate": "Generate Name",
+          "cancel": "Cancel"
+        }
+      },
+      "ship": {
+        "title": "Generate a Ship’s Name",
+        "nationalities": {
+          "label": "Colors",
+          "options": {
+            "Random": "Random",
+            "Spanish": "Spanish Empire",
+            "British": "British Empire",
+            "French": "Kingdom of France",
+            "Dutch": "Dutch West India Company",
+            "Pirate": "Pirates"
+          }
+        },
+        "type": {
+          "label": "Type",
+          "hint": "Is this a merchantman or a man-of-war?",
+          "options": {
+            "Commercial": {
+              "label": "Merchantman",
+              "hint": "Generate a name for a civilian vessel built for commerce and trade."
+            },
+            "Martial": {
+              "label": "Man-of-War",
+              "hint": "Generate a name for a vessel built for war, either a naval vessel or a privateer."
+            }
+          }
+        },
+        "actions": {
+          "generate": "Generate Name",
+          "cancel": "Cancel"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+
+  "terrainmapper.name": "地形映射",
+  "terrainmapper.controls.fill-by-grid.name": "按网格填充",
+  "terrainmapper.controls.fill-by-los.name": "按视线填充",
+  "terrainmapper.controls.fill-space.name": "填充墙壁封闭区域",
+
+  "terrainmapper.terrainbook.create-terrain": "创建地形",
+  "terrainmapper.terrainbook.create-folder": "创建文件夹",
+  "terrainmapper.terrainbook.reset-defaults": "重置默认地形",
+  "terrainmapper.terrainbook.edit-terrain": "编辑地形",
+  "terrainmapper.terrainbook.import-terrain": "导入地形",
+  "terrainmapper.terrainbook.export-terrain": "导出地形",
+  "terrainmapper.terrainbook.delete-terrain": "删除地形",
+  "terrainmapper.terrainbook.search": "搜索地形",
+  "terrainmapper.terrainbook.add-favorite": "添加收藏",
+  "terrainmapper.terrainbook.remove-favorite": "移除收藏",
+  "terrainmapper.terrainbook.all-terrains": "所有地形",
+  "terrainmapper.terrainbook.favorites": "收藏夹",
+  "terrainmapper.terrainbook.are-you-sure": "确定吗？",
+  "terrainmapper.terrainbook.remove-terrain-description": "这将从所有场景中移除该地形。",
+  "terrainmapper.terrainbook.create-defaults-description": "这将重置所有现有的默认地形，并添加新的默认地形。",
+  "terrainmapper.terrainbook.import-terrain-description": "你可以从导出的 JSON 文件中导入地形设置数据。此操作将覆盖该地形。",
+  "terrainmapper.terrainbook.default-terrain-folder": "默认地形",
+
+  "terrainmapper.scene-config.backgroundElevation.name": "背景高度",
+  "terrainmapper.scene-config.backgroundElevation.hint": "放置在画布上的Token的默认高度",
+
+  "terrainmapper.scene-config.constrainElevation.name": "限制高度",
+  "terrainmapper.scene-config.constrainElevation.hint": "启用后，将根据地形和移动类型限制Token的垂直移动。",
+
+  "terrainmapper.active-effect-config.duplicatesAllowed.name": "允许重复",
+  "terrainmapper.active-effect-config.duplicatesAllowed.hint": "启用后，此地形效果可多次应用于同一Token",
+
+  "terrainmapper.active-effect-config.displayStatusIcon.name": "状态图标",
+  "terrainmapper.active-effect-config.displayStatusIcon.hint": "禁用后，受影响Token上不会显示地形状态图标",
+
+  "terrainmapper.region-config.algorithm.name": "区域高度形状",
+  "terrainmapper.region-config.algorithm.hint": "定义区域的'地面'高度。进入区域的Token将移动到定义的地面高度；离开区域的Token将'坠落'回场景高度（除非飞行）。'无'是Fvtt默认设置。'高原'使用单一'最高高度'。'斜坡'从最低高度开始按给定方向形成坡度",
+
+  "terrainmapper.region-config.plateauElevation.name": "最高高度",
+  "terrainmapper.region-config.plateauElevation.hint": "定义高原的地面高度或斜坡的顶部高度",
+
+  "terrainmapper.region-config.rampFloor.name": "斜坡：最低高度",
+
+  "terrainmapper.region-config.rampDirection.name": "斜坡：方向",
+  "terrainmapper.region-config.rampDirection.hint": "0º为正南；90º为正西",
+
+  "terrainmapper.region-config.rampStepSize.name": "斜坡：台阶高度",
+  "terrainmapper.region-config.rampStepSize.hint": "每个台阶的高度（网格单位）。台阶数量将根据此值自动计算。设为0时斜坡将近似平滑斜面",
+
+  "terrainmapper.region-config.splitPolygons.name": "斜坡：分离多边形",
+  "terrainmapper.region-config.splitPolygons.hint": "启用后，每个非孔洞区域多边形将成为独立斜坡，从各自最低到最高高度。禁用后，所有非孔洞多边形视为一个斜坡，由其组合边界定义",
+
+  "terrainmapper.region-config.wallRestrictions.name": "墙壁限制类型",
+  "terrainmapper.region-config.wallRestrictions.hint": "启用后，该区域将像墙壁一样运作，阻挡所选类型的来源。'物理掩护'选项旨在让模组将该区域视为物理掩护，而不会实际阻挡token移动。",
+
+  "terrainmapper.tile-config.isFloor.name": "视为地面",
+  "terrainmapper.tile-config.isFloor.hint": "",
+
+  "terrainmapper.tile-config.trimAlphaBorder.name": "修剪边界",
+  "terrainmapper.tile-config.trimAlphaBorder.hint": "忽略图块的透明边界。",
+
+  "terrainmapper.tile-config.testHoles.name": "检测孔洞",
+  "terrainmapper.tile-config.testHoles.hint": "将图块内较大的透明部分视为Token可能“掉落”的孔洞。",
+  
+  "terrainmapper.tile-config.alphaThreshold.name": "透明度阈值",
+  "terrainmapper.tile-config.alphaThreshold.hint": "被视为透明的透明度百分比。默认值：0.75。",
+
+  "terrainmapper.behavior.types.add-terrain.fields.terrain.hint": "选择将作为激活效果添加到Token的地形",
+
+  "terrainmapper.behavior.types.set-terrain.fields.terrain.hint": "选择将作为激活效果添加到Token的地形。Token离开区域时自动移除",
+
+  "terrainmapper.behavior.types.add-terrain.fields.removeOther.name": "移除其他",
+  "terrainmapper.behavior.types.add-terrain.fields.removeOther.hint": "启用后移除Token上所有其他地形",
+
+  "terrainmapper.behavior.types.add-terrain.fields.secret.name": "隐藏",
+  "terrainmapper.behavior.types.add-terrain.fields.secret.hint": "启用后拖动Token不会向用户显示地形存在",
+
+  "terrainmapper.behavior.types.remove-terrain.fields.terrain.hint": "选择要移除的一个或多个地形。留空则移除全部",
+
+  "terrainmapper.behavior.types.remove-terrain.fields.keepSelected.name": "保留选中",
+  "terrainmapper.behavior.types.remove-terrain.fields.keepSelected.hint": "启用后仅保留选中地形，移除其余",
+
+  "terrainmapper.behavior.types.stairs.fields.algorithm.name": "类型",
+
+  "terrainmapper.behavior.types.stairs.fields.elevation.name": "楼梯顶部",
+  "terrainmapper.behavior.types.stairs.fields.elevation.hint": "单向楼梯高度；双向楼梯顶部",
+
+  "terrainmapper.behavior.types.stairs.fields.floor.name": "楼梯底部",
+  "terrainmapper.behavior.types.stairs.fields.floor.hint": "单向楼梯触发高度；双向楼梯底部",
+
+  "terrainmapper.behavior.types.stairs.fields.dialog.name": "用户确认",
+  "terrainmapper.behavior.types.stairs.fields.dialog.hint": "启用后将提示用户确认。拒绝则保持原高度移动",
+
+  "terrainmapper.behavior.types.stairs.fields.strict.name": "严格高度检测",
+  "terrainmapper.behavior.types.stairs.fields.strict.hint": "启用后Token必须精确位于楼梯顶部高度（下移）或底部高度（上移）。单向楼梯需位于底部高度",
+
+  "terrainmapper.behavior.types.stairs.fields.resetOnExit.name": "离开时重置",
+  "terrainmapper.behavior.types.stairs.fields.resetOnExit.hint": "启用后，无论Token在进入区域时是走楼梯还是乘升降梯，Token离开区域时重置为场景高度（地面）。",
+
+  "terrainmapper.behavior.types.elevator.fields.strict.name": "严格高度检测",
+  "terrainmapper.behavior.types.elevator.fields.strict.hint": "启用后Token必须精确位于某楼层高度才能触发升降梯",
+
+  "terrainmapper.behavior.types.elevator.fields.floors.hint": "添加1+个升降梯楼层。格式为'数字|标签'(标签可选)，例如：10|1楼",
+
+  "terrainmapper.behavior.types.elevator.fields.resetOnExit.name": "离开时重置",
+  "terrainmapper.behavior.types.elevator.fields.resetOnExit.hint": "启用后，无论Token在进入区域时是走楼梯还是乘升降梯，Token离开区域时重置为场景高度（地面）。",
+
+  "terrainmapper.behavior.types.blockingWalls.fields.types.cover.name": "物理掩护",
+  "terrainmapper.behavior.types.blockingWalls.fields.types.cover.hint": "允许模组将该区域视为物理掩护，而不会实际阻挡Token移动",
+
+
+  "TYPES.RegionBehavior.terrainmapper.addTerrain": "添加地形",
+  "TYPES.RegionBehavior.terrainmapper.removeTerrain": "移除地形",
+  "TYPES.RegionBehavior.terrainmapper.setTerrain": "设置地形",
+  "TYPES.RegionBehavior.terrainmapper.setElevation": "楼梯",
+  "TYPES.RegionBehavior.terrainmapper.elevator": "升降梯",
+  "TYPES.RegionBehavior.terrainmapper.blockingWalls": "阻挡墙",
+
+  "terrainmapper.elevationAlgorithm.labels.none": "无",
+  "terrainmapper.elevationAlgorithm.labels.oneWay": "单向楼梯",
+  "terrainmapper.elevationAlgorithm.labels.plateau": "高原/平原",
+  "terrainmapper.elevationAlgorithm.labels.ramp": "斜坡/台阶",
+  "terrainmapper.elevationAlgorithm.labels.stairs": "双向楼梯",
+
+  "terrainmapper.phrases.terrainLayer": "地形层",
+  "terrainmapper.phrases.terrain": "地形",
+  "terrainmapper.phrases.terrains": "地形集合",
+  "terrainmapper.phrases.no-terrain": "无地形",
+  "terrainmapper.phrases.new-terrain": "新建地形",
+  "terrainmapper.phrases.layer-number": "层{layerNumber}",
+  "terrainmapper.phrases.difficult_x2": "困难地形(x2)",
+  "terrainmapper.phrases.water_swimming": "水域(游泳)",
+  "terrainmapper.phrases.cliff_climbing": "悬崖(攀爬)",
+  "terrainmapper.phrases.stairs-go-up": "通过此楼梯上行？",
+  "terrainmapper.phrases.stairs-go-down": "通过此楼梯下行？",
+  "terrainmapper.phrases.elevator": "升降梯",
+  "terrainmapper.phrases.elevator-choice": "选择楼层",
+  "terrainmapper.phrases.top": "顶部",
+  "terrainmapper.phrases.bottom": "底部",
+  "terrainmapper.phrases.resetOnExit": "返回地面高度？"
+}

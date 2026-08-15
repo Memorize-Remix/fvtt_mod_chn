@@ -1,0 +1,205 @@
+
+  "mission-board": {
+    "title": "任务板",
+    "board": {
+      "columns": {
+        "left": "待办",
+        "center": "进行中",
+        "right": "已完成"
+      },
+      "buttons": {
+        "addMission": "添加任务",
+        "removeFromBoard": "从任务板移除",
+        "sign": "接受",
+        "unsign": "放弃",
+        "manageTracking": "管理追踪"
+      },
+      "labels": {
+        "signed": "追踪中",
+        "missingMission": "任务缺失 ({id})"
+      }
+    },
+    "missionsManager": {
+      "title": "任务管理",
+      "label": "管理任务",
+      "hint": "创建、编辑、启用/禁用任务并控制用户追踪。",
+      "buttons": {
+        "create": "创建任务",
+        "edit": "编辑",
+        "view": "查看",
+        "delete": "删除",
+        "save": "保存",
+        "cancel": "取消",
+        "close": "关闭",
+        "confirm": "确认",
+        "enable": "启用",
+        "disable": "禁用",
+        "update": "更新",
+        "addUser": "添加用户",
+        "removeUser": "移除用户",
+        "addActor": "添加角色",
+        "removeActor": "移除角色",
+        "setReward": "设置奖励"
+      },
+      "labels": {
+        "name": "任务名称",
+        "description": "描述",
+        "objectives": "目标",
+        "rewards": "奖励",
+        "status": "状态",
+        "assignedTo": "分配给",
+        "dueDate": "截止日期",
+        "priority": "优先级",
+        "location": "地点",
+        "notes": "备注",
+        "image": "图片",
+        "userTracking": "用户追踪",
+        "userId": "用户ID",
+        "reward": "奖励",
+        "trackingUsers": "追踪用户",
+        "actorTracking": "角色追踪",
+        "trackingActors": "追踪角色",
+        "search": "搜索任务"
+      },
+      "status": {
+        "pending": "待处理",
+        "inProgress": "进行中",
+        "completed": "已完成",
+        "failed": "失败",
+        "cancelled": "已取消",
+        "enabled": "已启用",
+        "disabled": "已禁用"
+      },
+      "priority": {
+        "low": "低",
+        "medium": "中",
+        "high": "高",
+        "critical": "紧急"
+      },
+      "placeholders": {
+        "name": "输入任务名称...",
+        "description": "输入任务描述...",
+        "objectives": "列出任务目标...",
+        "rewards": "描述奖励...",
+        "assignedTo": "分配给玩家/角色...",
+        "location": "任务地点...",
+        "notes": "附加备注...",
+        "rewardUuid": "粘贴奖励物品UUID...",
+        "search": "按名称或描述搜索..."
+      },
+      "hints": {
+        "richDescription": "使用工具栏格式化文本，包括粗体、斜体、列表、图片和链接。"
+      },
+      "toolbar": {
+        "bold": "粗体 (Ctrl+B)",
+        "italic": "斜体 (Ctrl+I)",
+        "underline": "下划线 (Ctrl+U)",
+        "strike": "删除线",
+        "unorderedList": "项目符号列表",
+        "orderedList": "编号列表",
+        "clearFormat": "清除格式"
+      },
+      "validation": {
+        "nameRequired": "任务名称必填",
+        "descriptionRequired": "任务描述必填",
+        "rewardUuidRequired": "奖励UUID必填",
+        "rewardInvalid": "无效的奖励",
+        "userNotFound": "用户未找到",
+        "userAlreadyTracking": "用户已在追踪此任务",
+        "userNotTracking": "用户未追踪此任务",
+        "actorAlreadyTracking": "角色已在追踪此任务",
+        "actorNotTracking": "角色未追踪此任务",
+        "noAvailableMissions": "没有可添加的任务",
+        "noAccessibleActors": "没有可访问的角色",
+        "noMissionSelected": "请在确认前选择任务",
+        "rewardAlreadyAdded": "奖励已添加"
+      },
+      "notifications": {
+        "missionCreated": "任务创建成功",
+        "missionUpdated": "任务更新成功",
+        "missionDeleted": "任务 '{name}' 删除成功",
+        "trackingAdded": "用户已添加到追踪",
+        "trackingRemoved": "用户已从追踪中移除",
+        "rewardUpdated": "奖励更新成功"
+      },
+      "dialogs": {
+        "confirmDelete": {
+          "deleteTitle": "删除任务",
+          "deleteConfirm": "确定要删除任务 '{name}' 吗？此操作无法撤销。",
+          "title": "删除任务",
+          "content": "确定要删除任务 '{name}' 吗？此操作无法撤销。"
+        },
+        "createMission": {
+          "title": "创建新任务"
+        },
+        "editMission": {
+          "title": "编辑任务"
+        },
+        "viewMission": {
+          "title": "任务详情"
+        }
+      },
+      "empty": {
+        "title": "暂无任务",
+        "description": "尚未创建任何任务。点击'创建任务'开始。",
+        "noTrackingUsers": "没有用户追踪此任务",
+        "noTrackingActors": "没有人追踪此任务",
+        "noReward": "未定义奖励"
+      },
+      "errors": {
+        "noActiveGM": "未找到在线GM来处理请求",
+        "createFailed": "创建任务失败",
+        "updateFailed": "更新任务失败",
+        "deleteFailed": "删除任务失败",
+        "loadFailed": "加载任务失败",
+        "saveFailed": "保存任务失败",
+        "missionNotFound": "任务未找到"
+      }
+    },
+    "global": {
+      "selectActor": "选择角色"
+    },
+    "factionsManager": {
+      "fields": {
+        "searchActors": "搜索角色"
+      }
+    },
+    "actors-missions": {
+      "title": "追踪任务",
+      "labels": {
+        "listTitle": "已追踪任务",
+        "noMissions": "没有追踪的任务",
+        "tracking": "追踪中",
+        "rewardKind": {
+          "uuid": "UUID",
+          "inline": "内联"
+        }
+      },
+      "buttons": {
+        "open": "任务",
+        "unsign": "放弃",
+        "giveReward": "发放奖励",
+        "close": "关闭",
+        "giveAll": "发放给所有人",
+        "giveSingle": "发放给此角色"
+      },
+      "errors": {
+        "noActorSelected": "未选择角色"
+      },
+      "confirm": {
+        "rewardScope": "将奖励发放给所有追踪角色还是仅此角色？"
+      },
+      "dialogs": {
+        "viewMission": {
+          "title": "任务详情"
+        }
+      }
+    }
+  },
+  "missionsManager": {
+    "empty": {
+      "title": "暂无任务",
+      "description": "尚未创建任何任务。点击'添加任务'开始。"
+    }
+  }
+}

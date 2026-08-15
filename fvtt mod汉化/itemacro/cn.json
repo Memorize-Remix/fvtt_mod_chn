@@ -1,0 +1,44 @@
+
+    "settings.debug.title": "调试（客户端设置）",
+    "settings.debug.hint": "控制台调试信息。",
+
+    "settings.defaultmacro.title": "覆盖默认宏执行",
+    "settings.defaultmacro.hint": "启用此选项将允许物品宏检查物品是否具有宏，并掷骰该宏，而不是默认系统的执行。",
+
+    "settings.sheethook.title": "角色表 Hook",
+    "settings.sheethook.hint": "启用此选项将允许物品宏从角色表中掷骰宏。",
+
+    "settings.charsheet.title": "角色表 Hook",
+    "settings.charsheet.hint": "启用此选项将允许物品宏从角色表中掷骰宏。",
+
+    "settings.visibilty.title": "玩家访问权限",
+    "settings.visibilty.hint": "启用此选项将允许玩家查看和编辑他们拥有的物品上的宏。",
+
+    "settings.icon.title": "仅显示图标",
+    "settings.icon.hint": "启用此选项将把物品表按钮修剪为仅显示图标。",
+
+    "settings.click.title": "右键覆盖（客户端设置）",
+    "settings.click.hint": "启用此选项将导致物品宏（仅限 sheethooks）在右键点击时执行。",
+
+    "buttons.saveMacro": "保存宏",
+    "buttons.executeMacro": "执行宏",
+
+    "context.label": "更新世界物品宏",
+    "context.confirm.title": "物品宏覆盖提示",
+    "context.confirm.content": "您确定要覆盖所有物品的宏吗？",
+    "context.prompt.title": "物品宏覆盖信息",
+    "context.prompt.content": "物品宏覆盖完成",
+
+    "error.editImage": "您无法编辑此宏的图标。",
+    "error.macroExecution": "您的宏语法有错误。请查看控制台（F12）以获取详细信息。",
+
+    "warning.systemNotSupported": "{system} 系统不受物品宏支持。仍然可以将宏添加到物品中，但您必须从物品宏配置中启动它们，或以编程方式启动。",
+
+    "itemacro.dnd5e.v9deprecation": "物品宏：v9 已禁用快捷栏功能。",
+    "itemacro.dnd5e.systemDeprecationv4": "物品宏：新模组版本不再支持低于 4.0.0 的 DND5e。请更新您的系统或安装物品宏 v2.0.1。",
+    "itemmacro.dnd5e.skipItemMacroDeprecation": "物品宏：由于DND5e 4.0.0版本中物品的使用方式发生了变化，之前的解决方案将不再适用。你不能再使用 `item.use({}, {skipItemMacro: true});`，而必须使用 `item.use({skipItemMacro: true, legacy: false});` 来代替。",
+    "itemmacro.dnd5e.useFunctionWarning": "物品宏：在物品宏中不再支持空白的 `item.use()` 用法。在宏中返回 `true` 以回退到系统的使用方式，或将 `{skipItemMacro: true, legacy: false}` 作为第一个参数传递。",
+
+    "itemmacro.dnd5e.defaultmacro.title": "覆盖 `preUseItem` Hook",
+    "itemmacro.dnd5e.defaultmacro.hint": "启用此选项将允许物品宏触发物品宏，而不是默认的物品使用方式。在物品宏中返回 `true` 或调用 `item.use({skipItemMacro: true, legacy: false});` 以执行默认的物品使用方式。"
+}

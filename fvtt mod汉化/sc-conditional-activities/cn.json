@@ -1,0 +1,33 @@
+
+  "SCConditionalActivities": {
+    "ConditionTab": {
+      "Label": "条件",
+      "Heading": "行动条件",
+      "Hint": "使用 JavaScript。只有当脚本返回 true 时，行动才可用。",
+      "Variables": "可用变量：activity, activityType, item, actor, user, usage, dialog, message, rollData, source, getProperty, hasProperty, deepClone, game。",
+      "Placeholder": "示例：return actor?.system?.attributes?.hp?.value > 0;",
+      "Wiki": "打开维基",
+      "Invalid": "此条件包含无效代码。"
+    },
+    "Badge": {
+      "NotAvailable": "不可用",
+      "ConditionError": "条件错误"
+    },
+    "Notifications": {
+      "ConditionFailed": "不可用。条件不匹配。",
+      "ConditionError": "无法评估此行动的条件。"
+    },
+    "Settings": {
+      "SupportMenu": {
+        "Name": "支持开发者",
+        "Label": "Patreon 支持",
+        "Hint": "在 Patreon 上支持 Shattered Codex 的开发。"
+      },
+      "DocumentationMenu": {
+        "Name": "文档",
+        "Label": "打开维基",
+        "Hint": "打开 SC - Conditional Activities 文档维基。"
+      }
+    }
+  }
+}

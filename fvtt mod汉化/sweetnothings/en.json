@@ -1,0 +1,114 @@
+{
+    "SWEETNOTHINGS": {
+		"about": "(Whisper) Sweet Nothings",
+        "ABOUT": {
+            "About": "About (Whisper) Sweet Nothings",
+            "CreatedBy": "Created By",
+            "Help": "Help",
+            "LiveSupport": "For live support of (Whisper) Sweet Nothings, join the Foundry VTT Discord and post any questions in #module-troubleshooting!",
+            "ProjectPage": "View the Project Page to report issues or comment on this Project at: ",
+            "SupportTheCreator": "If you enjoy (Whisper) Sweet Nothings, please consider donating to the creator at: ",
+            "Title": "(Whisper) Sweet Nothings",
+            "Wiki": "View the (Whisper) Sweet Nothings wiki at: "
+        },
+        "ALT": {
+            "CANCEL": "Cancel and close the Sweet Nothings dialog.",
+            "SUBMIT": "Submit and send your Sweet Nothings dialog."
+        },
+        "BUTTONS": {
+            "CANCEL": "Cancel",
+            "CONFIGURE": "Configure Sweet Nothings",
+            "REPLY": "Reply",
+            "SUBMIT": "Send It!"
+        },
+        "CONFIGURATION": {
+            "DEFAULT_CHATMODE": "Default Chatmode",
+            "DEFAULT_DIALOG": "Default Dialog",
+            "DEFAULT_MESSAGE_ENGINE": "Default Rich Text Editor:",
+            "DEFAULT_WHISPER_SOURCE": "Default Whisper Source",
+            "DEFAULTS": {
+                "Hint": "These are the default options that will be set anytime you open the Sweet Nothings dialog.  They are per user, so these settings only affect you!",
+                "Name": "Configure Defaults"
+            },
+            "ENABLE_SOUND": "Enable Notification Sound?",
+            "ENABLE_TOAST": "Enable Toast Notification?",
+            "EXTERNAL_MODULES": {
+                "Hint": "Configure toast and audio notifications for any enabled external modules.",
+                "Name": "External Modules"
+            },
+            "GM_ALWAYS_IC": {
+                "Hint": "Whispers are always flagged as IC, making it play nicely with Tabbed Chat Log module.",
+                "Name": "Whispers always flagged IC?"
+            },
+            "HINT": "Configure your Sweet Nothings preferences",
+            "LABEL": "Sweet Nothings Individual User Configuration",
+            "NOTIFICATIONS": {
+                "Hint": "These settings handle whether, and how, you receive notifications when you receive a whisper.",
+                "Name": "Configure Notifications"
+            },
+            "NOTIFICATION_SOUND": "Notification Sound",
+            "NOTIFICATION_VOLUME": "Notification Volume",
+            "WHISPER_HISTORY_LENGTH": "Whisper History Length",
+            "WHISPER_ROLL_IN_HISTORY": "Show Whispered Rolls in History",
+            "WHISPER_ROLL_SOUND_NOTIFICATION": "Enable Sound Notifications for Rolls",
+            "WHISPER_ROLL_TOAST_NOTIFICATION": "Enable Toast Notifications for Rolls",
+            "WHISPER_TOAST_NOTIFICATION": "Whisper Toast Notification"
+        },
+		"CONTEXT": {
+      "WHISPER_PLAYER": "Whisper Player",
+      "WHISPER_SENDER": "Whisper Message Sender"
+    },
+        "DIALOG": {
+            "CHAT": "Chat",
+            "CHATMODE": "Chat Mode",
+            "CHATTEXT": "Your message will be posted to chat for everyone to see!",
+            "HISTORY": {
+                "1DAY": "1 Day",
+                "5DAYS": "5 Days",
+                "7DAYS": "7 Days",
+                "14DAYS": "14 Days",
+                "30DAYS": "30 Days"
+            },
+            "MODES": {
+                "EMOTE": "Emote",
+                "IC": "IC",
+                "OOC": "OOC",
+                "OTHER": "Other"
+            },
+            "RECIPIENTS": "Recipient(s)",
+            "SOURCE": "Source",
+            "SOURCETOKEN": "Token",
+            "SOURCEUSER": "User",
+            "WHISPER": "Whisper"
+        },
+        "GREETINGS": {
+            "Defaults": "By default, ALT-W will bring up the (Whisper) Sweet Nothings dialog.  You can also use ALT-R to auto-reply to the last whisper you received.   Not to worry, you will not receive this message again.",
+            "Description": "This module helps to simplify and expand whisper capabilities.  Enable/disabled Toast notifications, customize sound notification sounds and their volume (including disabling if you so desire!), and allowing for nice, rich text in your whispers or chat text is all at your finger tips.",
+            "Title": "Welcome to (Whisper) Sweet Nothings!"
+        },
+        "HINT": "Opens the Sweet Nothings Whisper and Chat Dialog",
+        "KEYBINDINGS": {
+            "REPLY": {
+                "HINT": "Opens the Sweet Nothings Dialog, replying to the last whisper sent to you.",
+                "NAME": "Reply using Whisper Sweet Nothings"
+            }
+        },
+        "NOTIFICATIONS": {
+            "NEW_MESSAGE": "You have a new whisper from: "
+        },
+        "TITLE": "Whisper Sweet Nothings",
+        "TOOLTIPS": {
+            "CHATMODE": "IC and Emote will cause a bubble around either your selected token or your user defined character's token if no token is selected.",
+            "REPLY": "Reply to the last whisper you received.",
+            "SAMPLE_SOUND": "Play selected sound"
+        },
+        "WARNINGS": {
+            "TARGET_NOT_ONLINE": "Target to reply to is not online."
+        },
+        "WHISPER_HISTORY": {
+            "Loading": "Loading...",
+            "No_Results": "No History Found.",
+            "Title": "Whisper History"
+        }
+    }
+}

@@ -1,0 +1,180 @@
+
+    "hexplorer": {
+        "request": {
+            "explore": "探索",
+            "reveal": "揭示",
+            "advance-time": "推进时间",
+            "total-time": "总时间",
+            "roll-tables": "掷骰表",
+            "move": "移动",
+            "journal-entry": "揭示页面",
+            "not-in-scene": "探索者: 你需要与请求的移动在同一个场景中，以便确认它。",
+            "player-message": "移动请求转发给GM。"
+        },
+        "fog": {
+            "showColor": "在揭示的单元格中切换显示单元格颜色"
+        },
+        "scene": {
+            "enable": {
+                "name": "启用探索者"
+            }
+        },
+        "token": {
+            "enable": {
+                "name": "是探索者？"
+            },
+            "revealRadius": {
+                "name": "揭示半径",
+                "hint": "在六角格中揭示区域的半径。0表示只揭示token所在的六角格。"
+            },
+            "speed": {
+                "name": "速度",
+                "hint": "探索者token的移动速度，以每小时场景为单位。这是用来计算时间推进的。"
+            }
+        },
+        "settings": {
+            "hexTime": {
+                "name": "移动动画",
+                "hint": "移动一个单元格的动画时间（以毫秒为单位）。"
+            },
+            "autoTriggerExplore": {
+                "name": "自动触发探索动作",
+                "hint": "当token移动到单元中时自动触发探索活动。如果你的系统需要玩家手动操作去探索一个单元格，你可以禁用这个功能。"
+            }
+        },
+        "hexplorer-app": {
+            "title": "探索者",
+            "brushes": {
+                "legend": "笔刷",
+                "radius": "笔刷半径",
+                "hint": "单击画布上的单元格来配置它和/或将其保存为笔刷。使用选定的笔刷单击单元格以绘制单元格，而不是对其进行配置。",
+                "apply": {
+                    "title": "应用笔刷",
+                    "sameColor": "相同颜色",
+                    "sameColorHint": "对所有颜色相同的单元格应用笔刷",
+                    "sameName": "相同名称",
+                    "sameNameHint": "对所有区域名称相同的单元格应用笔刷",
+                    "tooltip": "应用笔刷",
+                    "notification": "将笔刷应用于｛count｝个单元格。"
+                }
+            },
+            "settings": {
+                "legend": "设置",
+                "show-color": {
+                    "label": "显示揭示单元格的颜色"
+                },
+                "always-banner": {
+                    "label": "始终显示区域横幅"
+                }
+            },
+            "reset-fow": {
+                "label": "重置揭示的单元格",
+                "title": "重置揭示的单元格？",
+                "content": "您确定要重置揭示的单元格吗？此操作无法撤销。"
+            },
+            "reset-discovered": {
+				"label": "重置已探索区域",
+				"title": "重置已探索区域？",
+				"content": "确定要重置已探索区域吗？首次进入区域时将再次显示横幅。"
+            }
+        },
+        "cell-config": {
+            "title": "配置单元格",
+            "tabs": {
+                "basic": {
+                    "label": "基础"
+                },
+                "activities": {
+                    "label": "活动"
+                },
+                "discover-activities": {
+                    "label": "探索活动",
+                    "hint": "当探索者经过单元格或结束在单元格中的移动时，这些活动就会被执行。有些活动只能在 hexplorer 首次移动到单元格时执行。"
+                },
+                "explore-activities": {
+                    "label": "揭示活动",
+                    "hint": "这些活动将在单元格首次揭示时执行。"
+                }
+            },
+            "revealed": {
+                "label": "揭示",
+                "hint": "玩家将看到一个被揭示的单元格。"
+            },
+            "revealRadius": {
+                "label": "揭示半径",
+                "hint": "揭示单元格时，该单元格周围的揭示半径。如果值为 0 或更大，将覆盖探索者token设置。"
+            },
+            "discovered": {
+                "label": "探索",
+                "hint": "已探索单元格已被一个探索者token穿越。"
+            },
+            "execute-only-on-explore": {
+                "label": "仅在探索时执行",
+                "hint": "仅当单元格之前未被探索过时，才执行单元格活动。"
+            },
+            "first-time-only": {
+                "label": "仅限首次",
+                "hint": "只有在探索者首次移动到该单元格时才执行上述活动。"
+            },
+            "reveal-tooltip": {
+                "label": "揭示提示",
+                "hint": "允许玩家查看与提示相关的日志页面。"
+            },
+            "reveal-journal-entry": {
+                "label": "揭示日志条目",
+                "hint": "允许玩家在常规选项卡中打开与该单元格相关的日志条目。"
+            },
+            "reveal-map-notes": {
+                "label": "揭示地图注释",
+                "hint": "允许玩家查看该单元格内的所有场景地图注释。"
+            },
+            "color": {
+                "label": "颜色"
+            },
+            "region": {
+                "label": "区域"
+            },
+            "reveal": {
+                "label": "揭示单元格",
+                "hint": "以逗号分隔的要揭示的单元格列表。Shift + 单击画布可添加单元格。",
+                "notification": "单元格添加到揭示列表。"
+            },
+            "remove-hidden": {
+                "label": "移除隐藏",
+                "hint": "在执行该活动时删除隐藏状态的文档。可以是灯光、图块、音频、token 等。"
+            },
+            "macros": {
+                "label": "宏",
+                "hint": "执行此活动时要执行的宏。"
+            },
+            "speed-multiplier": {
+                "label": "速度系数"
+            },
+            "roll-tables": {
+                "label": "随机表",
+                "hint": "进入或通过单元格时掷骰随机表。"
+            },
+            "tooltip": {
+                "label": "提示"
+            },
+            "journal-entry": {
+                "label": "日志条目",
+                "hint": "点击后打开日志条目。"
+            },
+            "brush-name": {
+                "label": "笔刷名称"
+            },
+            "save-as-brush": {
+                "label": "保存为笔刷"
+            },
+            "discover-button": {
+                "label": "触发探索行动",
+                "no-token": "没有找到探索者token。"
+            }
+        },
+        "flags": {},
+        "err": {
+            "gridless": "Hexplorer 与无网格场景不兼容。请选择网格类型。"
+        }
+    }
+}

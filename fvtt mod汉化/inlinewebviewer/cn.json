@@ -1,0 +1,102 @@
+
+  "inlineView": {
+    "button": "网页视图",
+    "webviewColor": {
+      "name": "背景颜色",
+      "hint": "更改网页视图的背景颜色",
+      "label": "选择颜色"
+    },
+    "notifications": {
+      "settingsError": "网页视图设置存在问题，请检查格式是否正确。"
+    },
+    "html": {
+      "compatBox": "兼容模式？",
+      "compatDisclaimer": "兼容模式会记录域名以防止代理滥用。",
+      "extensionDisclaimer": "如果兼容模式无效，请尝试使用<a target=\"_blank\" href=\"https://github.com/ardittristan/FoundryVTT-Inline-Webviewer-Extension\">扩展程序</a>",
+      "loginDisclaimer": "登录有时会失效，建议先在开发者工具（F12）开启的状态下尝试登录，若仍无效请在<a target=\"_blank\" href=\"https://github.com/ardittristan/FoundryVTT-Inline-Webviewer-Extension\">扩展程序GitHub</a>提交问题",
+      "settings": {
+        "compat": "兼容",
+        "save": "保存",
+        "cancel": "取消",
+        "compatToggle": "切换兼容模式",
+        "name": "名称",
+        "url": "网址",
+        "icon": "图标",
+        "width": "宽度",
+        "height": "高度",
+        "removedElements": "移除元素",
+        "properties": "Iframe HTML属性",
+        "id": "场景ID",
+        "sceneHint": "创建新场景"
+      }
+    },
+    "confirmExit": {
+      "name": "确认退出",
+      "hint": "关闭视图窗口时显示确认提示。",
+      "title": "确定要关闭吗？",
+      "content": "确定要关闭此视图吗？"
+    },
+    "confirmExport": {
+      "title": "确定要导出吗？",
+      "content": "是否要将当前设置的网页视图导出到日志？"
+    },
+    "menus": {
+      "global": "全局网页视图",
+      "private": "私人网页视图",
+      "label": "打开设置",
+      "scene": "场景网页视图"
+    },
+    "gmShare": {
+      "tools": {
+        "name": "向玩家发送网址",
+        "title": "向玩家发送网址"
+      },
+      "popup": "GM弹窗"
+    },
+    "headers": {
+      "share": "分享",
+      "export": "导出"
+    },
+    "help": {
+      "title": "帮助",
+      "image": "图片",
+      "adding": "添加条目",
+      "addingDesc": "你可以在底部容器中添加新的网页视图条目，完成后点击+按钮将其添加到列表中。",
+      "add": "添加",
+      "reordering": "重新排序条目",
+      "reorderingDesc": "条目顺序对应按钮列表中的显示顺序，你可以使用ᐱ和ᐯ按钮调整顺序。",
+      "datafields": {
+        "title": "数据字段",
+        "name": "名称（必填）",
+        "nameDesc": "名称字段设置网页视图窗口标题和按钮名称。",
+        "url": "网址（必填）",
+        "urlDesc": "网址字段设置网页视图加载的URL。",
+        "icon": "图标",
+        "iconDescA": "图标字段用于设置按钮图标，你可以输入任何免费的",
+        "iconDescB": "图标名称（例如",
+        "iconDescC": "将显示为",
+        "dimensions": "宽度和高度",
+        "dimensionsDesc": "宽度和高度字段设置网页视图窗口打开时的尺寸。",
+        "compat": "兼容",
+        "compatDesc": "兼容复选框激活兼容模式，在此模式下网页视图使用代理。适用于网站正常模式下运行不佳的情况。",
+        "compatWarn": "请注意代理会记录访问的URL以防止滥用！",
+        "removed": "移除元素",
+        "removedDescA": "此文本框仅在兼容模式下显示。任何CSS选择器（例如",
+        "removedDescB": "在此输入的内容将在网页视图中隐藏。因为兼容模式下某些内容可能因cookie问题无法正常隐藏。",
+        "removeSeparator": "选择器之间用逗号分隔！",
+        "properties": "HTML属性",
+        "propertiesDesc": "这些属性将添加到iframe元素的HTML标签中，例如："
+      }
+    },
+    "urlShare": {
+      "title": "发送网址"
+    },
+    "settings": {
+      "title": "网页视图设置",
+      "duplicate": "请勿重复使用相同名称。"
+    },
+    "extension": {
+      "newVersion": "有新版本扩展程序可用"
+    }
+  }
+}

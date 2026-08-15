@@ -1,0 +1,73 @@
+
+    "party-monitor-dock": {
+		"title": "小队面板",
+		"settings": {
+			"onlyConnected": {
+				"name": "仅显示在线玩家",
+				"hint": "仅显示在线玩家"
+			},
+			"portraitSize": {
+				"name": "立绘尺寸",
+				"hint": "面板中玩家立绘的尺寸"
+			},
+			"position": {
+				"name": "面板位置",
+				"hint": "面板在屏幕上的显示位置",
+				"choices": {
+					"docked": "停靠",
+					"horizontal": "水平（悬浮）",
+					"vertical": "垂直（悬浮）",
+					"hidden": "隐藏"
+				}
+			},
+			"dockAlignment": {
+				"name": "HUD 对齐方式",
+				"hint": "在停靠位置时，HUD 在屏幕上的对齐方式",
+				"choices": {
+					"flex-start": "顶部",
+					"center": "居中",
+					"flex-end": "底部"
+				}
+			},
+			"hideInCombat": {
+                "name": "战斗中隐藏",
+                "hint": "战斗时隐藏面板"
+            },
+            "hideCompanions": {
+                "name": "隐藏同伴",
+                "hint": "从队伍列表中隐藏同伴"
+            },
+            "cornerImage": {
+                "name": "导航栏图像",
+                "hint": "显示为左侧导航栏的图像，留空以禁用。"
+            },
+            "edgeImage": {
+                "name": "填充图案",
+                "hint": "用于填角色图案之间空间的图像，留空以禁用。"
+            }
+        },
+        "app": {
+            "buttons": {
+                "toggle-nav": "切换导航按钮",
+                "toggle-dock": "切换导航栏样式",
+                "reduce": "缩小尺寸",
+                "enlarge": "增大尺寸",
+                "start-follow": "开启跟随",
+                "stop-follow": "停止跟随",
+                "context": {
+                    "follow": "随从",
+                    "mount": "坐骑",
+                    "epicRoll": "请求掷骰",
+                    "raise-hand": "举手"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": " 现在跟随 ",
+            "unfollow": " 不在跟随 ",
+            "mounted": " 已骑乘 ",
+            "dismounted": " 未骑乘 "
+        }
+    }
+}

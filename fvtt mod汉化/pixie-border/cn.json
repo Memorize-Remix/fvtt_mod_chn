@@ -1,0 +1,159 @@
+
+  "pixie-border": {
+    "settings": {
+      "foundryBorder": {
+        "name": "FVTT边框行为",
+        "hint": "设置默认FVTT方形边框的行为方式。",
+        "choices": {
+          "disable": "禁用",
+          "enable": "启用", 
+          "guide": "引导"
+        }
+      },
+
+      "hideTargetIndicator": {
+        "name": "隐藏FVTT目标指示器",
+        "hint": "移除FVTT的默认目标指示器。"
+      },
+
+      "enableTarget": {
+        "name": "启用目标边框",
+        "hint": "在你目标的Token上也显示轮廓和发光效果。"
+      },
+
+      "enableCombatBorder": {
+        "name": "启用战斗边框",
+        "hint": "为当前战斗中的角色显示动画边框。"
+      },
+
+      "disableOutline": {
+        "name": "禁用轮廓滤镜",
+        "hint": "开启此选项以完全禁用轮廓滤镜。"
+      },
+
+      "disableGlow": {
+        "name": "禁用发光滤镜", 
+        "hint": "开启此选项以完全禁用发光滤镜。"
+      },
+
+      "combatBorderSpeed": {
+        "name": "战斗边框速度",
+        "hint": "设置战斗边框动画的速度。"
+      },
+
+      "thickness": {
+        "name": "轮廓厚度",
+        "hint": "轮廓的宽度（像素）。"
+      },
+
+      "glowDistance": {
+        "name": "发光距离",
+        "hint": "发光半径（像素）。数值越大，发光范围越向外扩展。"
+      },
+
+      "glowOuterStrength": {
+        "name": "发光强度", 
+        "hint": "外部发光的强度。数值越高越亮。"
+      },
+
+      "mode": {
+        "name": "颜色模式",
+        "hint": "使用FVTT阵营颜色、自定义颜色或基于生命值状态的颜色。",
+        "choices": {
+          "disposition": "阵营颜色",
+          "custom": "自定义颜色", 
+          "condition": "状态颜色"
+        }
+      },
+
+      "colorMenu": {
+        "name": "自定义颜色",
+        "label": "自定义颜色",
+        "hint": "打开颜色面板，为选中和目标的Token设置轮廓和发光颜色。",
+        "saved": "Pixie Border：颜色已更新。",
+        "reset": "Pixie Border：颜色已重置为默认值。",
+        "invalidHex": "请输入有效的十六进制颜色（例如：#88ccff）。"
+      },
+
+      "colorSections": {
+        "core": "自定义颜色",
+        "disposition": "阵营颜色", 
+        "condition": "状态颜色",
+        "guided": "引导边框"
+      },
+
+      "outlineColor": {
+        "name": "轮廓颜色",
+        "hint": "当颜色模式设置为自定义时，为选中的Token设置轮廓颜色。"
+      },
+      "targetOutlineColor": {
+        "name": "目标轮廓颜色", 
+        "hint": "当启用目标边框时，为目标的Token设置轮廓颜色。"
+      },
+      "glowColor": {
+        "name": "发光颜色",
+        "hint": "当颜色模式设置为自定义时，为选中的Token设置发光颜色。"
+      },
+      "targetGlowColor": {
+        "name": "目标发光颜色",
+        "hint": "当启用目标边框时，为目标的Token设置发光颜色。"
+      },
+
+      "dispositionHostileColor": {
+        "name": "敌对颜色",
+        "hint": "当颜色模式设置为阵营时，用于敌对Token。"
+      },
+      "dispositionFriendlyColor": {
+        "name": "友好颜色", 
+        "hint": "当颜色模式设置为阵营时，用于友好Token。"
+      },
+      "dispositionNeutralColor": {
+        "name": "中立颜色",
+        "hint": "当颜色模式设置为阵营时，用于中立Token。"
+      },
+      "dispositionSecretColor": {
+        "name": "未知颜色",
+        "hint": "当颜色模式设置为阵营时，用于未知Token。"
+      },
+
+      "conditionHighColor": {
+        "name": "高生命值颜色",
+        "hint": "当Token生命值较高时使用。"
+      },
+      "conditionMidColor": {
+        "name": "中生命值颜色",
+        "hint": "当Token生命值中等时使用。"
+      },
+      "conditionLowColor": {
+        "name": "低生命值颜色", 
+        "hint": "当Token生命值较低时使用。"
+      },
+
+      "guideColor": {
+        "name": "引导边框颜色",
+        "hint": "当FVTT边框行为设置为引导时，设置悬停引导边框的颜色。"
+      },
+
+      "guideOpacity": {
+        "name": "引导边框透明度",
+        "hint": "调整悬停引导边框的透明度。"
+      },
+
+      "guideStyle": {
+        "name": "引导边框样式",
+        "hint": "选择悬停引导边框的线条样式。",
+        "choices": {
+          "dashed": "虚线",
+          "dotted": "点线", 
+          "solid": "实线"
+        }
+      }
+    },
+
+    "common": {
+      "save": "保存",
+      "reset": "重置为默认值", 
+      "cancel": "取消"
+    }
+  }
+}

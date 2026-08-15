@@ -1,0 +1,99 @@
+{
+  "I18N.LANGUAGE": "English",
+  "toolbar": {
+    "title": "Toolbar",
+    "groups": {
+      "tokens": "Tokens",
+      "chat": "Chat",
+      "roll": "Roll"
+    }
+  },
+  "macros": {
+    "change_size": {
+      "title": "Change token's size"
+    },
+    "hidden_or_not": {
+      "title": "Hidden or not (tile or token)"
+    },
+    "show_image": {
+      "title": "Show token's image"
+    },
+    "message_to_chat": {
+      "title": "Message to the chat",
+      "dialog_destinataires": "Recipient(s) of the message in the chat",
+      "dialog_message": "Message text"
+    },
+    "message_to_bubble": {
+      "title": "Bulle message",
+      "dialog_destinataires": "Token of talking character",
+      "dialog_message": "Message text"
+    },
+    "roll_pc": {
+      "title": "Randomly choose a PC",
+      "dialog_targets": "List of possible choices"
+    },
+    "rolltables": {
+      "title": "Roll a rolltable",
+      "select_title": "Rollable table",
+      "label_choice": "Choose a Rollable Table",
+      "other_groups": "Other tables",
+      "no_rolltable": "No table selected"
+    }
+  },
+  "settings": {
+    "common": {
+      "fadedui": "Fading and opacity of the bar",
+      "fadedui-active": "Fading enabled",
+      "fadedui-desactive": "Fading disabled"
+    },
+    "toolbar": {
+      "name": "Toolbar",
+      "title": "Settings of the Toolbar",
+      "orientation": "Display horizontally or verticaly",
+      "orientation-hint": "By default, the display is horizontal",
+      "horizontal": "Horizontal",
+      "vertical": "Vertical",
+      "position_left": "Horizontal position (pixels from left)",
+      "position_top": "Vertical position  (pixels from top)",
+      "one_line": "Display the Toolbar with one row",
+      "one_line-hint": "By default, the Toolbar uses two rows.",
+      "display": "Afficher la barre d'outils"
+    },
+    "partybar": {
+      "name": "Barre des PJ",
+      "title": "Options de la barre des PJ",
+      "pcfolder": "Nom du dossier contenant les PJ",
+      "orientation": "Afficher la barre des PJ horizontalement ou verticalement",
+      "orientation-hint": "Par défaut, l'affichage est horizontal",
+      "horizontal": "Horizontal",
+      "vertical": "Vertical",
+      "position_left": "Position horizontale (pixels depuis la gauche)",
+      "position_top": "Position verticale (pixels depuis le haut)",
+      "display": "Afficher la barre des PJ"
+    }
+  },
+  "common": {
+    "button": {
+      "cancel": "Cancel",
+      "apply": "Apply",
+      "save": "Save",
+      "send": "Send",
+      "close": "Close",
+      "select_all": "Check all",
+      "unselect_all": "Uncheck all",
+      "validate": "Apply",
+      "roll": "Roll",
+      "generate": "Generate"
+    },
+    "carriage_return": "Use <br> to add a carriage retien",
+    "private": "Private",
+    "roll_on": "Roll of",
+    "select": {
+      "no-player-connected": "No player connected => no active PC to do this action",
+      "select-token": "Please select a token.",
+      "select-token-pj": "Please select a PC's token.",
+      "select-tokens": "Please select a token (or several)",
+      "select-tokens-pj": "Please select a PC's token (or several)"
+    }
+  }
+}

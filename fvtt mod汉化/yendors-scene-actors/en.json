@@ -1,0 +1,78 @@
+{
+	"Menu":{
+		"enableSceneActorsOnScene": "Enable SceneActors for scene",
+		"hideSceneActorsOnScene": "Temporarily hide SceneActors"
+	},
+	"Selector": {
+		"deleteAllActors": "Delete all scene actors",
+		"noActor": "No NPC on this scene yet",
+		"noPlayerCharacter": "No player character added yet",
+		"noItems": "No item added yet",
+		"dropHere": "Drop here",
+		"minimize": "minimize",
+		"maximize": "maximize",
+		"szeneSettings": "Scene settings",
+		"openSheet": "Open actor sheet",
+		"openItemSheet": "Open item sheet",
+		"removeActor": "Remove actor from scene",
+		"removeItem": "Remove item from scene",
+		"showActor": "<strong>Left click:</strong> Show / hide actor on scene<br><strong>Right click:</strong> Change avatar display",
+		"showItem": "<strong>Left click:</strong> Show / hide item on scene<br><strong>Right click:</strong> Change item display",
+		"focusActor": "Focus on the actor on the scene",
+		"showToolbar": "Show toolbar for scene",
+		"hideToolbar": "Hide toolbar for scene",
+		"hint": "Note",
+		"disabledHint": "The display of PCs as well as NPCs is disabled",
+		"toolbarShowActorsToGM": "Show/hide actors for GM",
+		"toolbarShowActorsToPlayers": "Show/hide actors for players",
+		"toolbarScaleActors": "Scale actors",
+		"toolbarNPC": "NPC",
+		"toolbarPC": "PC",
+		"toolbarShowPC": "Show PCs",
+		"toolbarShowNPC": "Show NPCs"
+	},
+	"Settings": {
+		"disableTitle": "Disable SceneActors",
+		"disableHint": "Disabling should be discussed with the game leader, as it could be important for his or her game management.",
+		"tooltipsTitle": "Show tooltips",
+		"tooltipsHint": "Tooltips help the game master to find his way around the module, especially at the beginning.",
+		"changelogTitle": "Features & Changelog",
+		"changelogHint": "The possibilities of the module as well as the changelog can be found here.",
+		"changelogButton": "View now",
+		"showChangelogTitle": "Show changelog",
+		"showChangelogHint": "Should the changelog be displayed for game masters after updates?",
+		"keyToggleSceneActorsViewTitle": "Actors display",
+		"keyToggleSceneActorsViewHint": "Actors are hidden or shown on their own screen. Players can hide actors only temporarily, that is, as soon as the GM toggles an actor in, all actors are visible again.",
+		"keyMinMaxSelectorTitle": "Minimize selector",
+		"keyMinMaxSelectorHint": "Minimize or maximize SceneActorsSelector",
+		"keyToggleSceneActorsTitle": "Enable SceneActors",
+		"keyToggleSceneActorsHint": "The module is completely enabled or disabled for the scene.",
+		"rotateActorsTitle": "Rotate actors",
+		"rotateActorsHint": "Actors on the play area can be rotated by click",
+		"battleActorsTitle": "Enable BattleActors (BETA)",
+		"battleActorsHint": "ATTENTION: This feature requires at least DSA system v5.1.0. On battlemaps, one of the BattleActorsSelectors replaces the SceneActorsSelector during an active battle. This allows the players to have an immersive battle on another (TotM) scene without a battlemap, while the game master can still keep track with the help of the battlemap.",
+		"hoverNamesTitle": "Show names on mouse hover",
+		"hoverNamesHint": "If the name of an actor has been unlocked for the players, it is only displayed when the player is over the avatar with the mouse. This also applies to the interaction field for items."
+	},
+	"Changelog": {
+		"title": "Yendor's Scene Actors: Features & Changelog",
+		"tabFeatures": "Features",
+		"tabChangelog": "Changelog",
+		"currentReleaseHint": "This release contains minor improvements or bug fixes. More detailed information can be found in the"
+	},
+	"Canvas": {
+		"tooltipClickActor": "<strong>Left click:</strong> Show actor in focus<br><strong>Right click:</strong> Alternative portrait view<br><strong>Alt + left click:</strong> Rotate actor (if option enabled)",
+		"tooltipClickActorPlayer": "Open character sheet (rights required)",
+		"tooltipClickItem": "<strong>Left click:</strong> Show item in focus<br><strong>Right click:</strong> Alternative item view<br><strong>Alt + left click:</strong> Rotate item (if option enabled)",
+		"tooltipClickITemPlayer": "Open item sheet (rights required)",
+		"tooltipClickNameLabel": "Click: Show/hide name",
+		"tooltipNameIsHidden": "The name will be hidden",
+		"tooltipItemToInventory": "Take item and add to inventory",
+		"tooltipItemLocked": "Item cannot be viewed or taken",
+		"tooltipItemDisable": "Disable for players",
+		"tooltipItemEnable": "Enable for players",
+		"notification": {
+			"noCharacter": "Dem Spieler muss ein Charakter zugewiesen sein."
+		}
+	}
+}

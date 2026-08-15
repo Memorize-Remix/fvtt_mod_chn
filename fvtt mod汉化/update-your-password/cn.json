@@ -1,0 +1,30 @@
+
+    "update-your-password": {
+        "tool.title": "更新你的密码",
+        "dialog": {
+            "title": "更新你的密码",
+            "label.contents": "新密码：",
+            "confirm-label.contents": "确认密码：",
+            "other-user-header": "正在为其他用户更新密码：{name}",
+            "buttons": {
+                "apply.label": "应用",
+                "cancel.label": "取消"
+            }
+        },
+        "notifications": {
+            "error": {
+                "confirm-not-match": "密码不匹配。用户密码未更新。"
+            }
+        },
+        "settings": {
+            "show-user-context-menu": {
+                "name": "显示用户右键菜单项",
+                "hint": "在用户列表的右键菜单中显示一个选项。"
+            },
+            "expose-dialog-function": {
+                "name": "在主游戏对象中添加 showDialog() 函数",
+                "hint": "允许宏或脚本调用 game.updateYourPassword.showDialog()。"
+            }
+        }
+    }
+}

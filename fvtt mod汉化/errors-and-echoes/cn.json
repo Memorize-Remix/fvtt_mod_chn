@@ -1,0 +1,156 @@
+
+  "ERRORS_AND_ECHOES": {
+    "Title": "错误与反馈",
+    "Settings": {
+      "GlobalEnabled": {
+        "Name": "启用错误报告",
+        "Hint": "发送匿名错误报告帮助模组作者修复问题。你可以随时更改此设置。"
+      },
+      "PrivacyLevel": {
+        "Name": "隐私级别",
+        "Hint": "控制错误报告中包含的信息量",
+        "Choices": {
+          "minimal": "最小 - 仅错误信息",
+          "standard": "标准 - 错误+FVTT版本+模组",
+          "detailed": "详细 - 标准+浏览器信息+场景上下文"
+        }
+      },
+      "EndpointConfig": {
+        "Name": "配置错误报告端点",
+        "Label": "配置端点",
+        "Hint": "为不同模组作者设置错误报告端点",
+        "Title": "配置错误报告端点",
+        "Description": "配置不同模组作者的错误报告发送地址。你可以添加多个端点并控制哪些模组向哪些作者报告。",
+        "EndpointsTitle": "错误报告端点",
+        "AddEndpoint": "添加端点",
+        "RemoveEndpoint": "删除",
+        "TestEndpoint": "测试",
+        "Testing": "测试中...",
+        "EndpointName": "显示名称",
+        "EndpointUrl": "报告URL",
+        "Author": "模组作者",
+        "Modules": "特定模组",
+        "Enabled": "已启用",
+        "Consent": "我同意",
+        "Status": "状态",
+        "MonitoredModules": "当前监控的模组",
+        "Save": "保存设置",
+        "Cancel": "取消",
+        "NewEndpoint": "新端点",
+        "Unknown": "未知",
+        "NamePlaceholder": "该端点的友好名称",
+        "AuthorPlaceholder": "模组作者名称",
+        "AuthorHint": "该作者的所有模组都将被监控。留空则仅使用特定模组。",
+        "ModulesHint": "要监控的特定模组ID列表(逗号分隔)(如果指定了作者则为可选)。",
+        "NoEndpoints": "未配置端点。点击'添加端点'开始。",
+        "ModuleDisabled": "已禁用",
+        "Authors": "作者",
+        "GlobalStatus": "全局错误报告",
+        "StatusEnabled": "已启用",
+        "StatusDisabled": "已禁用",
+        "PrivacyLevel": "隐私级别",
+        "TestNoUrl": "无法测试端点: URL必填",
+        "TestSuccess": "端点测试成功: {name}",
+        "TestError": "端点测试失败: {name}: {error}",
+        "SaveSuccess": "端点设置保存成功",
+        "ConfirmRemove": "删除端点",
+        "ConfirmRemoveContent": "确定要删除端点'{name}'吗？此操作无法撤销。",
+        "RegisteredModules": "已注册模组",
+        "NoRegisteredModules": "尚无模组通过API注册"
+      }
+    },
+    "Welcome": {
+      "Title": "通过报告错误帮助改进FVTT模组",
+      "DataIncluded": "报告内容包括:",
+      "DataExcluded": "不报告的内容:",
+      "IncludedItems": {
+        "ErrorMessages": "错误信息和堆栈跟踪",
+        "FoundryVersion": "FVTT版本和激活模组",
+        "SystemInfo": "游戏系统信息"
+      },
+      "ExcludedItems": {
+        "WorldData": "你的世界数据或角色信息",
+        "ChatMessages": "聊天消息或日志条目",
+        "PersonalInfo": "个人信息或IP地址",
+        "ModuleSettings": "模组设置或配置"
+      },
+      "PrivacyLevels": {
+        "Title": "隐私级别:",
+        "Minimal": "仅错误信息和堆栈跟踪",
+        "Standard": "错误+FVTT版本+激活模组",
+        "Detailed": "标准+浏览器信息+场景上下文"
+      },
+      "PrivacyNote": "所有报告都是匿名的，帮助模组作者更快修复错误。你可以在模组设置中随时更改此设置。",
+      "EnableButton": "启用错误报告",
+      "DeclineButton": "暂不启用",
+      "LearnMoreButton": "了解更多"
+    },
+    "PrivacyDetails": {
+      "Title": "错误报告隐私详情",
+      "WhatCollected": "收集哪些信息?",
+      "WhatNotCollected": "不收集的信息:",
+      "HowDataUsed": "数据如何使用?",
+      "YourRights": "你的权利:",
+      "ExampleReport": "示例报告(标准级别):",
+      "MinimalLevel": "最小级别:",
+      "StandardLevel": "标准级别(推荐):",
+      "DetailedLevel": "详细级别:",
+      "MinimalItems": {
+        "ErrorMessage": "错误信息文本",
+        "StackTrace": "堆栈跟踪(显示错误发生位置)",
+        "ErrorType": "错误类型(TypeError, ReferenceError等)",
+        "Timestamp": "错误发生时间戳"
+      },
+      "StandardItems": {
+        "FromMinimal": "最小级别的所有内容",
+        "FoundryVersion": "FVTT版本号",
+        "SystemInfo": "游戏系统名称和版本",
+        "ModuleList": "激活模组列表(仅名称和版本)",
+        "SessionId": "匿名会话ID(每日轮换)"
+      },
+      "DetailedItems": {
+        "FromStandard": "标准级别的所有内容",
+        "BrowserInfo": "浏览器名称和版本(如\"Chrome/120\")",
+        "SceneName": "当前场景名称(如适用)",
+        "ErrorContext": "错误上下文(文件名,行号,如可用)"
+      },
+      "NotCollectedItems": {
+        "IpAddress": "你的IP地址或位置",
+        "WorldData": "世界数据、角色、物品或场景内容",
+        "ChatMessages": "聊天消息或日志条目",
+        "ModuleSettings": "模组设置或配置",
+        "UserAccounts": "用户账户或登录信息",
+        "PersonalInfo": "任何个人身份信息"
+      },
+      "DataUsageItems": {
+        "HelpAuthors": "帮助模组作者识别和修复错误",
+        "ImproveQuality": "提高整体模组质量",
+        "ProvideContext": "为调试问题提供上下文",
+        "NoTracking": "不跟踪或分析用户",
+        "NoSelling": "不出售数据或用于营销",
+        "NoIdentification": "不识别个人用户"
+      },
+      "RightsItems": {
+        "OptOut": "你可以随时选择退出",
+        "ChangePrivacy": "你可以随时更改隐私级别",
+        "DisableEndpoints": "你可以禁用特定端点的报告",
+        "Anonymous": "所有报告设计上都是匿名的"
+      },
+      "Buttons": {
+        "EnableReporting": "启用错误报告",
+        "ChangePrivacyLevel": "更改隐私级别",
+        "RefreshExample": "刷新示例",
+        "DisableReporting": "禁用错误报告",
+        "RevokeConsent": "撤销所有同意",
+        "Close": "关闭"
+      }
+    },
+    "Notifications": {
+      "Enabled": "错误报告已启用。感谢你帮助改进FVTT模组!",
+      "Disabled": "错误报告已禁用。",
+      "TestSuccess": "端点测试成功: {name}",
+      "TestFailedStatus": "端点测试失败: {name} ({status})",
+      "TestFailedError": "端点测试失败: {name} ({error})"
+    }
+  }
+}

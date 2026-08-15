@@ -1,0 +1,150 @@
+
+    "characterMonitor": {
+        "settings": {
+            "cmColorsMenu": {
+                "name": "自定义角色监控器颜色",
+                "label": "自定义"
+            },
+            "monitorHP": {
+                "name": "监控生命值",
+                "hint": "跟踪角色或NPC的生命值变化。"
+            },
+            "monitorEquip": {
+                "name": "监控装备",
+                "hint": "跟踪角色装备/卸下装备。"
+            },
+            "monitorQuantity": {
+                "name": "监控数量",
+                "hint": "跟踪角色物品数量变化。"
+            },
+            "monitorAttune": {
+                "name": "监控同调",
+                "hint": "跟踪角色与装备同调或解除同调。"
+            },
+            "monitorSpellPrep": {
+                "name": "监控法术准备",
+                "hint": "跟踪角色准备/取消准备法术。"
+            },
+            "monitorSpellSlots": {
+                "name": "监控法术位",
+                "hint": "跟踪角色在角色卡上更改法术位数量。"
+            },
+            "monitorFeats": {
+                "name": "监控特性",
+                "hint": "跟踪角色在角色卡上更改特性使用次数。"
+            },
+            "monitorResources": {
+                "name": "监控资源",
+                "hint": "跟踪角色在角色卡上更改资源值数量。"
+            },
+            "monitorActiveEffects": {
+                "name": "监控激活效果",
+                "hint": "跟踪角色在角色卡上更改激活效果。"
+            },
+            "monitorCurrency": {
+                "name": "监控货币",
+                "hint": "跟踪角色在角色卡上更改货币。"
+            },
+            "monitorProficiency": {
+                "name": "监控技能熟练度",
+                "hint": "跟踪角色更改技能熟练度。"
+            },
+            "monitorAbility": {
+                "name": "监控属性值",
+                "hint": "跟踪角色更改属性值。"
+            },
+            "monitorSheetMode": {
+                "name": "监控角色卡模式切换",
+                "hint": "跟踪角色卡在游戏和编辑模式之间切换。"
+            },
+            "showGMonly": {
+                "name": "仅向GM用户显示角色监控器",
+                "hint": "可以使用右键菜单向玩家显示聊天消息。"
+            },
+            "allowPlayerView": {
+                "name": "允许玩家查看自己的消息",
+                "hint": "如果启用了仅GM模式，此设置允许玩家仍然查看自己的监控器消息。"
+            },
+            "showToggle": {
+                "name": "显示角色监控器切换按钮",
+                "hint": "通过切换Token栏上的控件按钮临时禁用角色监控器。控件按钮仅对GM用户可见。"
+            },
+            "trashIcon": {
+                "name": "启用生命值监控器聊天消息垃圾桶图标"
+            },
+            "useTokenName": {
+                "name": "使用Token名称",
+                "hint": "对于未链接的Token，将使用Token名称。对于链接的Token，将使用原型Token名称。"
+            },
+            "hideNPCs": {
+                "name": "向玩家隐藏NPC生命值日志",
+                "hint": "GM用户可以使用右键菜单向玩家显示聊天消息"
+            },
+            "hideNPCname": {
+                "name": "隐藏NPC名称",
+                "hint": "用下面设置的文本替换NPC名称。"
+            },
+            "replacementName": {
+                "name": "隐藏的NPC名称替换文本",
+                "hint": "如果启用了上述设置，NPC名称将被替换为此处输入的文本。"
+            }
+        },
+        "control": {
+            "title": "切换角色监控器"
+        },
+        "chatMessage": {
+            "hp": {
+                "value": "生命值",
+                "max": "最大生命值",
+                "temp": "临时生命值"
+            },
+            "equipped": "已装备",
+            "unequipped": "已卸下",
+            "prepared": "已准备",
+            "unprepared": "未准备",
+            "aSpell": "一个法术",
+            "uses": "使用次数",
+            "attunesTo": "与物品同调",
+            "breaksAttune": "解除与物品的同调",
+            "SpellSlots": "法术位",
+            "enabled": "已启用",
+            "disabled": "已禁用",
+            "duration": {
+                "seconds": "秒",
+                "startTime": "开始时间",
+                "rounds": "轮",
+                "turns": "回合",
+                "startRound": "开始轮",
+                "startTurn": "开始回合"
+            },
+            "effects": {
+                "label": "标签",
+                "mode": "模式",
+                "value": "值"
+            },
+            "sheetMode": "角色卡模式"
+        },
+        "colorMenu": {
+            "hpPlus": "生命值增加",
+            "hpMinus": "生命值减少",
+            "on": "装备/准备/同调",
+            "off": "卸下/取消准备/解除同调"
+        }
+    },
+    "healthMonitor": {
+        "control": {
+            "title": "切换生命值监控器"
+        },
+        "chatMessage": {
+            "heals": "治疗",
+            "takes": "承受",
+            "damage": "伤害",
+            "gains": "获得",
+            "loses": "失去",
+            "maxHP": "最大生命值",
+            "Immunity": "免疫",
+            "Resistance": "抗性",
+            "Vulnerability": "易伤"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+
+  "MINIEDIT": {
+    "controls": {
+      "open": "迷你编辑"
+    },
+    "dialog": {
+      "title": "迷你编辑",
+      "content": "选择了多种文档类型。请选择一种类型进行编辑。"
+    },
+    "keybindings": {
+      "open": {
+        "name": "打开迷你编辑",
+        "hint": "为当前控制的放置物打开迷你编辑。"
+      }
+    },
+    "notifications": {
+      "noSelection": "未找到受控制的放置物。",
+      "noChanges": "没有勾选的字段需要应用。",
+      "applied": "已更新 {count} 个 {types} 文档。"
+    },
+    "errors": {
+      "gmOnly": "迷你编辑仅限GM使用。",
+      "canvasNotReady": "画布尚未准备就绪。",
+      "updateFailed": "更新选定的 {documentName} 文档失败。",
+      "noSheetClass": "未找到 {documentName} 的表类。"
+    }
+  }
+}

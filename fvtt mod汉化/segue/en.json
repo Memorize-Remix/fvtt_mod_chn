@@ -1,0 +1,42 @@
+{
+    "SEGUE": {
+        "SceneConfig": {
+            "EnableSegueScene": "Enable Segue for this scene",
+            "HintEnableSegueScene": "Enable Segue transition for this scene ^",
+            "TextToDisplay": "Text to Display",
+            "HintTextToDisplay": "Text to display during the transition. (shift+enter for newline)",
+            "PlaceholderTextToDisplay": "Chapter 1: Call to adventure",
+            "TextSize": "Text Size (px)",
+            "HintTextSize": "The font size of the displayed text in pixels (10 - 200)",
+            "TextColor": "Text Color",
+            "HintTextColor": "The color of the displayed text",
+            "FontFamily": "Font Family",
+            "HintFontFamily": "The font family used for the displayed text",
+            "SceneFadeInDuration": "Scene Fade In (ms)",
+            "HintSceneFadeInDuration": "Duration for this scene to fade in (in milliseconds)",
+            "TextFadeInDuration": "Text Fade In (ms)",
+            "HintTextFadeInDuration": "Duration of text fade in. Note: When Text to Display is blank, this setting has no effect",
+            "TextDisplayDuration": "Text Display Duration (ms)",
+            "HintTextDisplayDuration": "Time for the text to be displayed before beginning fade out (in milliseconds)",
+            "TextFadeOutDuration": "Text Fade Out (ms)",
+            "HintTextFadeOutDuration": "Time for the text to fade out (in milliseconds)",
+            "SceneFadeOutDuration": "Scene Fade Out (ms)",
+            "HintSceneFadeOutDuration": "Time for the currently active scene to fade out (in milliseconds)"
+        },
+        "GlobalSettings": {
+            "SegueOverUI": {
+                "Name": "Display Segue over UI for players",
+                "Hint": "Hide UI elements during Segue transition"
+            },
+            "gmSegueUnderUI": {
+                "Name": "Display Segue below UI for GM only",
+                "Hint": "If enabled, Segue will play under Foundry’s UI for GMs only (depending on setting above)"
+            }
+        },
+        "Notifications": {
+            "SegueNotEnabled": "Segue is not enabled for this scene. Enable and configure Segue settings via Scene Configuration.",
+            "SceneNotFound": "Unable to find scene",
+            "SegueFailed": "SEGUE FAILED"
+        }
+    }
+}

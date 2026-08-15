@@ -1,0 +1,301 @@
+
+  "SCSockets": {
+    "TabLabel": "插槽",
+    "ColumnSlot": "插槽",
+    "ActionAdd": "添加",
+    "ActionDelete": "删除",
+    "ActionRemoveGem": "移除宝石",
+	"ActionOpenGem": "打开宝石",
+    "EmptyList": "无",
+    "SocketEmptyName": "空",
+    "SocketEmptyTooltip": "空插槽",
+    "Notifications": {
+      "InvalidSocketIndex": "无效的插槽索引。",
+      "CannotResolveItem": "无法解析拖放的物品。",
+      "OnlyGems": "只有插槽兼容的物品才能插入。",
+      "GemIncompatible": "该物品与此插槽不兼容。",
+      "GemUnsocketed": "宝石已移除。",
+	  "CannotOpenGem": "无法打开宝石物品。",
+      "MaxReached": "已达到最大插槽数量。",
+      "GemRequiresSocket": "此宝石必须先镶嵌才能使用。",
+      "HostNotSocketable": "此物品类型无法镶嵌宝石。",
+      "SocketConditionFailed": "该宝石不符合此插槽的要求。",
+	  "SocketConditionError": "无法评估此插槽条件。"
+    },
+    "Effects": {
+      "DefaultName": "宝石效果"
+    },
+    "GemTargetTypes": {
+      "Label": "允许的物品类型",
+      "Hint": "选择哪些物品子类型可以接收此宝石。",
+      "AllTypes": "所有类型",
+      "Groups": {
+        "Weapons": "武器",
+        "Equipment": "装备"
+      }
+    },
+	"GemDetails": {
+	  "TabLabel": "+详情",
+	  "SelectLabel": "附加详情",
+	  "Hint": "选择此宝石应如何分类。",
+	  "TypeFieldset": "详情类型",
+	  "Disclaimer": "使用下方字段调整镶嵌此宝石的物品（包括法术）造成的攻击与伤害。应用于角色的主动效果将全局影响所有符合条件的攻击。对于护甲与盾牌，请在物品上使用宝石的标准主动效果。",
+	  "Options": {
+		"None": "无",
+		"Weapons": "武器",
+		"Equipment": "装备"
+	  },
+	  "ExtraDamage": {
+		"Label": "额外伤害",
+		"Hint": "添加一个或多个额外伤害条目，当此宝石镶嵌到武器或法术时应用。",
+		"Damage": "伤害",
+		"Type": "类型",
+		"Add": "添加伤害",
+		"Remove": "移除",
+		"Clear": "清除全部",
+		"Fields": {
+		  "Number": "数量",
+		  "Die": "骰子",
+		  "Bonus": "加值",
+		  "Activity": "应用时机"
+		},
+		"ActivityHint": "选择此额外伤害何时应用。任何动作：始终。仅攻击：仅在攻击类型的行动时。仅法术：仅当镶嵌于法术物品时生效。"
+	  },
+	  "ExtraDamageActivity": {
+		"Any": "任何动作",
+		"Attack": "仅攻击",
+        "Spell": "仅法术"
+	  },
+	  "CritDamage": {
+		"Label": "仅重击伤害",
+		"Hint": "仅当此宝石镶嵌且你掷出重击伤害（按钮或重击动作）时应用的伤害。"
+	  },
+	  "CritThreshold": {
+		"Label": "重击阈值",
+		"Hint": "使用此宝石镶嵌的攻击检定中，视为重击的最低d20结果。如果多个宝石调整暴击，则使用最低值。留空以使用基础默认值。"
+	  },
+	  "CritMultiplier": {
+		"Label": "重击倍率",
+		"Hint": "当此宝石镶嵌时，将重击伤害乘以此值。如果多个宝石设置此值，则使用最高值。留空以保持默认倍率。"
+	  },
+	  "AttackBonus": {
+		"Label": "攻击加值",
+		"Hint": "当此宝石镶嵌时，添加到攻击检定上的固定加值。多个宝石的加值叠加。留空表示无。"
+	  }
+	},
+	"SocketDescription": {
+      "Label": "插槽描述"
+    },
+	"ItemDetails": {
+	  "CustomDetailsHeading": "自定义详情",
+	  "EnableSocketTab": "启用插槽标签页",
+	  "EnableSocketTabHint": "当全局显示设置禁用时，在此物品上显示插槽标签页。",
+	  "EnableSocketTabLockedHint": "已有插槽的物品将保持此选项启用，直到所有插槽被移除。"
+	},
+	"SocketSlotConfig": {
+	  "Title": "插槽设置",
+	  "Subtitle": "配置此插槽的规则、描述和颜色。",
+	  "SlotLabel": "插槽",
+	  "SlotNameLabel": "插槽名称",
+	  "HostLabel": "宿主物品",
+	  "GemLabel": "插槽中的宝石",
+	  "InspectHost": "打开宿主物品",
+	  "InspectHostHint": "打开宿主物品卡。",
+	  "InspectGem": "检查宝石",
+	  "InspectHint": "以只读模式打开已插入的宝石。",
+	  "EmptySlot": "空插槽",
+	  "NoGem": "此插槽当前没有插入宝石。",
+	  "Save": "保存并关闭",
+	  "Cancel": "取消",
+	  "Saved": "插槽设置已保存。",
+	  "Condition": {
+		"Label": "插槽条件",
+		"Hint": "使用JavaScript。可用变量：gem、gemItem、hostItem、item、actor、user、slot、slotConfig、slotIndex、source、getProperty、hasProperty、deepClone。",
+		"Placeholder": "示例：return gem.name?.includes('红宝石') && getProperty(gem, 'flags.world.rarity') === '稀有';",
+		"Wiki": "打开维基"
+	  },
+	  "Description": {
+		"Label": "插槽描述",
+		"Hint": "插槽为空时在插槽描述中显示。添加宝石后，宝石描述将覆盖此描述。"
+	  },
+	  "Color": {
+		"Label": "插槽颜色",
+		"Hint": "仅应用于空插槽框架。",
+		"Preview": "预览",
+		"HexLabel": "十六进制",
+		"PickerLabel": "颜色选择器",
+		"Clear": "清除"
+	  },
+	  "Validation": {
+		"InvalidCondition": "插槽条件代码无效。"
+      }
+    },
+    "SocketDescriptions": {
+      "Label": "插槽描述",
+      "SendToChat": "发送到聊天"
+    },
+    "Tooltips": {
+      "RemoveGem": "从此插槽中移除宝石。",
+      "DeleteSocket": "从物品中删除此插槽。",
+      "DeleteSlotLabel": "删除插槽",
+      "ConfigureSlot": "配置此插槽。",
+	  "ConfigureSlotLabel": "配置插槽"
+    },
+    "Settings": {
+      "EditPermission": {
+        "Name": "编辑插槽权限",
+        "Hint": "添加或移除物品插槽所需的最低角色权限。"
+      },
+	  "SocketableItemTypes": {
+		"Name": "可镶嵌物品类型",
+		"Label": "配置可镶嵌物品类型",
+		"Hint": "选择哪些物品类型可以镶嵌宝石。",
+		"Title": "可镶嵌物品类型",
+		"SelectLabel": "可镶嵌宝石的物品类型",
+		"SelectHint": "选择一个或多个物品类型。",
+		"Save": "保存",
+		"Reset": "重置为默认",
+		"UnsavedChanges": "你有未保存的更改。"
+	  },
+      "MaxSockets": {
+        "Name": "每件物品最大插槽数",
+        "Hint": "一件物品可以拥有的最大插槽数量。使用 -1 表示无限制。"
+      },
+      "DeleteOnRemoval": {
+        "Name": "移除时删除宝石",
+        "Hint": "如果启用，宝石从插槽中移除时会被销毁；否则会返回到玩家的库存中。"
+      },
+      "GemLootSubtypes": {
+		"Name": "宝石战利品子类型",
+		"Label": "配置宝石战利品子类型",
+		"Hint": "选择哪些战利品子类型被视为宝石，并自定义额外的子类型标签。",
+		"Title": "宝石战利品子类型设置",
+		"SelectLabel": "被视为宝石的战利品子类型",
+		"SelectHint": "具有这些战利品子类型的物品将被视为宝石。",
+		"Save": "保存",
+		  "UnsavedChanges": "你有未保存的更改。",
+		  "Selection": {
+			"Name": "宝石战利品子类型",
+			"Label": "配置宝石战利品子类型",
+			"Hint": "选择哪些战利品子类型被视为宝石。",
+			"Title": "宝石战利品子类型设置",
+			"SelectLabel": "被视为宝石的战利品子类型",
+			"SelectHint": "具有这些战利品子类型的物品将被视为宝石。",
+			"Save": "保存",
+			"Reset": "重置为默认"
+		  },
+		  "CustomMenu": {
+			"Name": "自定义战利品子类型",
+			"Label": "配置自定义战利品子类型",
+			"Hint": "添加可作为宝石使用的自定义战利品子类型键和标签。",
+			"Title": "自定义战利品子类型",
+			"Save": "保存"
+		  },
+		"Custom": {
+		  "Heading": "自定义战利品子类型",
+		  "Hint": "添加新的战利品子类型键和标签，这些将可用于宝石。",
+		  "Key": "子类型键",
+		  "KeyPlaceholder": "例如：extra",
+		  "Label": "显示标签",
+		  "LabelPlaceholder": "额外",
+		  "Add": "添加子类型",
+		  "Remove": "移除"
+		}
+      },
+		"GemRollLayout": {
+		  "Name": "掷骰对话框中宝石伤害布局",
+		  "Hint": "在伤害掷骰配置对话框中启用按宝石分组的布局。"
+		},
+		"SocketTabLayout": {
+		  "Name": "插槽标签页布局",
+		  "Hint": "选择插槽标签页的显示方式。",
+		  "Options": {
+			"List": "默认列表",
+			"Grid": "网格"
+		  }
+		},
+		"EnableSocketTabForAllItems": {
+		  "Name": "为所有物品启用插槽标签页",
+		  "Hint": "启用后，所有可插槽物品都会显示插槽标签页。禁用后，需要在物品详情中为每个物品单独启用。"
+		},
+        "SupportMenu": {
+			"Name": "支持开发者",
+			"Label": "Patreon支持",
+			"Hint": "获取 SC - More Gems 的访问权限，内含 120+ 种宝石，且每月持续更新。我们同时正在开发 SC - Setforge，用于创建物品套装。"
+		},
+      "DocumentationMenu": {
+		  "Name": "文档",
+		  "Label": "打开维基",
+		  "Hint": "打开 SC - Simple Sockets 文档维基。"
+		},
+		"SocketBehaviorMenu": {
+		  "Name": "插槽设置",
+		  "Label": "配置插槽设置",
+		  "Hint": "打开专用窗口，用于配置插槽权限、限制、宝石处理及布局选项。",
+		  "Description": "集中管理插槽权限、限制和显示行为。",
+		  "Saved": "插槽设置已保存。",
+		  "Save": "保存并关闭",
+		  "Cancel": "取消",
+		  "Sections": {
+			"Rules": "插槽规则",
+			"RulesHint": "控制谁可以编辑插槽，以及宝石在插入或移除时的行为。",
+			"Display": "显示",
+			"DisplayHint": "调整宝石伤害和插槽标签页在用户界面中的显示方式。"
+		  }
+		},
+		"HideSupportCard": {
+		  "Name": "隐藏自动支持消息，直到下次更新",
+		  "Hint": "在当前版本中，支持卡片出现一次后，此选项会自动勾选。如果你希望每次世界加载时都显示该卡片，请取消勾选。"
+		}
+    },
+	"SupportCard": {
+	  "Description": "支持我的工作，获取独家模组并了解开发进度。",
+	  "Intro": "在 Patreon 上支持我们，帮助我们持续创作。",
+	  "Exclusive": "获取独家 <strong>SC - More Gems</strong> 模组的访问权限，内含 120+ 种宝石并每月更新。我们同时正在开发 <strong>SC - Setforge</strong>，让你可以创建物品套装。",
+	  "Issues": "问题 / 请求",
+	  "Link": "Patreon",
+	  "Wiki": "维基",
+	  "PatreonModulesTitle": "Patreon 专属模组",
+	  "FreeModulesTitle": "免费模组",
+	  "Footer": "此聊天卡片仅显示一次。如有需要，可在设置中重新启用。"
+	},
+	"Notifications": {
+	  "Reloading": "重新加载中..."
+	},
+	"RollLayout": {
+	  "BaseDamage": "基础伤害",
+	  "GemEffects": "宝石效果"
+	},
+    "Dialogs": {
+      "DeleteSocket": {
+        "Title": "删除插槽",
+        "Message": "确定要删除此插槽吗？",
+        "Warning": "此操作无法撤销。",
+        "Hint": "按住 Shift 键可跳过此提示。"
+      },
+      "RemoveGem": {
+        "Title": "移除宝石",
+        "Message": "确定要从此插槽中移除宝石吗？"
+      }
+    },
+    "Macro": {
+      "AddSocket": {
+        "SelectPrompt": "点击一个物品以添加插槽。按 Esc 取消。",
+        "Cancelled": "选择已取消。",
+        "NoPermission": "你没有添加插槽的权限。",
+        "ItemPermissionTitle": "无法编辑物品",
+        "ItemPermissionBody": "你没有编辑 {name} 的权限。",
+        "InvalidTypeTitle": "不支持的物品",
+        "InvalidTypeBody": "{name} 无法接收插槽。",
+        "MaxReachedTitle": "已达上限",
+        "MaxReachedBody": "{name} 已有 {count} 个插槽，已达到允许的最大值 ({max})。",
+        "ConfirmTitle": "添加插槽",
+        "ConfirmBody": "向 {name} 添加一个新插槽？",
+        "SelectAnotherTitle": "选择其他物品",
+        "SelectAnother": "是否要选择其他物品？",
+        "Success": "已向 {name} 添加一个插槽。",
+        "Error": "添加插槽失败。请查看控制台了解详情。"
+      }
+    }
+  }
+}

@@ -1,0 +1,377 @@
+
+    "CUSTOM_FIELDS": {
+		"headers": {
+			"title": "Custom Fields设置",
+			"general": "常规设置",
+			"actor": "角色字段",
+			"item": "物品字段",
+			"advanced": "高级设置"
+		},
+        "notifications": {
+            "nestingTooDeep": "容器嵌套不能超过 4 层。",
+			"UserPermissionDenied": "你没有编辑此字段所需的角色权限。",
+            "invalidSelector": "无效的受保护选择器语法：'{selector}'。",
+            "invalidFormula": "无效公式：{message}",
+            "saveBeforeCopy": "请在复制新字段路径前保存设置。",
+            "flagPathCopied": "字段路径已复制到剪贴板！",
+            "copyFailed": "复制路径失败。",
+            "attributeKeyCopied": "属性键已复制到剪贴板！",
+            "copyKeyFailed": "复制属性键失败。",
+            "maxCounters": "最多只能有 4 个计数器。",
+			"maxPortraits": "只能将一个图像字段设置为立绘。",
+			"labelRequiresIcon": "若要隐藏标签，必须先选择一个图标。",
+            "invalidNumber": "无效输入。请输入有效数字。",
+            "errors": {
+                "noAtChar": "不允许使用 '@' 字符。请使用用 '#' 包裹的完整路径，例如 #system.abilities.str.mod#。",
+                "invalidTerm": "术语 '{term}' 无效。如果是数据路径，请用 '#' 包裹（例如 #{term}#）。",
+                "pathValueMax": "路径 '#{path}#' 指向值/最大值字段。你必须指定 '.value' 或 '.max'（例如 #{path}.value#）。",
+                "pathNotNumber": "路径 '#{path}#' 无效或未解析为数字。",
+                "notFinite": "公式评估未得到有限数字。",
+                "circularDependency": "检测到循环依赖（无限循环）。"
+            },
+            "wait": "加载中... \n“巫师从不迟到，也从不早到。他总在恰好的时刻到来。”",
+            "nestingPDF": "PDF 容器无法嵌套。",
+            "cannotDuplicatePdfRoot": "PDF 容器无法复制。",
+            "noFilePermission": "你没有权限浏览此世界的文件。",
+            "macroNotFound": "宏 '{ref}' 未找到或未配置。"
+        },
+        "dialogs": {
+            "confirmDeleteContainer": {
+                "title": "删除容器",
+                "content": "你确定要删除此容器吗？其中的所有字段和容器也将被永久删除。",
+                "yes": "是的，删除",
+                "no": "取消"
+            },
+            "copyFlagPath": {
+                "title": "复制字段路径",
+                "content": "选择要为 <strong>{flagId}</strong> 复制的路径：",
+                "valuePath": "值路径",
+                "maxPath": "最大值路径"
+            },
+            "copyAttributeKey": {
+                "title": "复制属性键",
+                "content": "选择要为 <strong>{fieldId}</strong> 复制的键：",
+                "bar": "进度条（值和最大值）",
+                "valueOnly": "仅值",
+                "maxOnly": "仅最大值"
+            },
+			"pdfImport": {
+				"title": "正在导入 PDF...",
+				"wait": "正在读取文件并生成字段...",
+				"success": "PDF 卡已成功复制！",
+				"error": "读取 PDF 时出错：{message}",
+				"successJson": "布局 JSON 已成功导入！",
+				"errorJson": "处理 JSON 时出错：{message}"
+			},
+			"import": {
+				"title": "导入字段",
+				"content": "粘贴 JSON 内容。",
+				"placeholder": "在此处粘贴 JSON...",
+				"orUpload": "或上传文件：",
+				"success": "字段已成功导入！",
+				"error": "导入时出错：{message}",
+				"exportError": "导出字段数据时出错。",
+				"readError": "读取文件时出错。",
+				"emptyWarning": "请粘贴 JSON 或选择一个文件。",
+				"invalidFormat": "格式无效（必须为数组）。",
+				"selectPDF": "请先选择一个 PDF 文件。",
+				"noPDFContainer": "没有可导入的 PDF 容器。",
+				"errorTypeMismatch": "无法将“{source}”字段导入“{target}”编辑器。"
+			}
+        },
+        "settings": {
+            "types": {
+                "title": "自定义字段：类型配置",
+                "enabledActorTypes": "启用的角色类型",
+                "enabledItemTypes": "启用的物品类型"
+            },
+            "actorFields": {
+                "title": "自定义字段：角色字段"
+            },
+            "itemFields": {
+                "title": "自定义字段：物品字段"
+            },
+            "fields": {
+                "container": "容器",
+                "newContainer": "新建容器",
+                "addContainer": "添加容器",
+                "showLabel": {
+                    "label": "显示标签",
+                    "tooltip": "如果勾选，容器的显示标签将在角色卡上显示。"
+                },
+                "containerWidth": {
+                    "label": "宽度",
+                    "tooltip": "定义容器在角色卡上的宽度，允许字段以列排列。",
+                    "options": {
+                        "quarter": "四分之一",
+                        "third": "三分之一",
+                        "half": "一半",
+                        "full": "全宽",
+                        "fill": "填充可用空间"
+                    }
+                },
+                "newField": "新建字段",
+                "addField": "添加字段",
+                "displayLabel": {
+                    "label": "显示标签",
+                    "tooltip": "字段在文档角色卡上显示的标签。"
+                },
+                "dataType": {
+                    "label": "数据类型",
+                    "tooltip": "此字段将存储的数据类型（例如：文本、数字）。"
+                },
+                "defaultValue": {
+                    "label": "默认值",
+                    "tooltip": "此字段的初始值。"
+                },
+                "charLimit": {
+                    "label": "字符限制",
+                    "tooltip": "此文本字段允许的最大字符数。"
+                },
+                "permissions": {
+                    "label": "权限",
+                    "tooltip": "显示定义查看/编辑此字段所需的权限级别和角色的选项。"
+                },
+                "visibility": {
+                    "label": "可见性",
+                    "tooltip": "定义查看此字段所需的文档最低权限级别。"
+                },
+                "minRoleView": {
+                    "label": "最低查看角色",
+                    "tooltip": "除了可见性设置外，这设置了查看字段所需的最低用户角色（例如：玩家、GM）。"
+                },
+                "minRoleEdit": {
+                    "label": "最低编辑角色",
+                    "tooltip": "设置编辑此字段所需的最低用户角色，前提是他们可以编辑文档。"
+                },
+                "minRoleEditValue": {
+                    "label": "最低编辑值角色",
+                    "tooltip": "设置编辑此字段'值'部分所需的最低用户角色。"
+                },
+                "minRoleEditMax": {
+                    "label": "最低编辑最大值角色",
+                    "tooltip": "设置编辑此字段'最大值'部分所需的最低用户角色。"
+                },
+                "listOptions": {
+                    "label": "列表选项（每行一个）",
+                    "tooltip": "每行输入一个选项。第一个选项将是默认值。"
+                },
+                "isResource": {
+                    "label": "设为资源",
+                    "tooltip": "如果勾选，此字段将被视为角色资源，可用于链接到Token进度条。"
+                },
+                "editableOnHUD": {
+                    "label": "在 HUD 上编辑",
+                    "tooltip": "如果勾选，此资源将可直接在Token HUD 上编辑。取消勾选使其在 HUD 上只读。同步字段禁用此选项。"
+                },
+                "isCounter": {
+                    "label": "启用计数器",
+                    "tooltip": "如果勾选，此数字字段的值将作为计数器显示在角色卡库存中物品图标的指定位置。"
+                },
+                "isFormula": {
+                    "label": "同步数据路径",
+					"tooltip": "如果勾选，此字段将同步数学公式中使用的数据路径。所有数据路径必须用 '#' 字符包裹，例如：#system.attributes.hp.value# + 5。"
+                },
+                "counterPosition": {
+                    "label": "计数器位置",
+                    "positions": {
+                        "topright": "右上角",
+                        "topleft": "左上角",
+                        "bottomright": "右下角",
+                        "bottomleft": "左下角"
+                    }
+                },
+                "counterColor": {
+                    "label": "计数器颜色"
+                },
+                "useAsPortrait": {
+					"label": "用作立绘",
+					"tooltip": "如果勾选，此图像将替换主角色/物品立绘。在更改图像或打开卡时同步。"
+				},
+				"aspectRatio": {
+					"label": "宽高比",
+					"tooltip": "定义在卡上的显示宽高比。"
+				},
+				"displayAsTabs": {
+					"label": "以标签页显示",
+					"tooltip": "将内部容器排列为水平标签栏。"
+				},
+				"containerIcon": {
+					"label": "标签页图标",
+					"tooltip": "当此容器在标签页内显示时使用的图像。"
+				},
+				"mergeDown": {
+					"label": "向下合并",
+					"tooltip": "将此字段的区域与列表中的下一个字段合并。此字段将仅作为视觉参考。"
+				},
+				"reverseLayout": {
+					"label": "反转布局",
+					"tooltip": "如果勾选，将反转“最大值”和“当前值”字段的 X 和/或 Y 轴。"
+				},
+				"hasMacro": {
+					"label": "运行宏",
+					"tooltip": "如果勾选，将显示一个用于运行宏的按钮。"
+				},
+				"macroRef": {
+					"label": "宏的名称或 UUID",
+					"tooltip": "运行该宏，并将 'label'、'value'、'actor'、'uuid' 和 'path' 作为参数传入（聊天宏请使用 @ 前缀，例如 @value）。"
+				},
+				"hasMacroMax": {
+					"label": "运行宏（最大值）",
+					"tooltip": "为最大值启用一个宏按钮。"
+				},
+				"macroRefMax": {
+					"label": "最大值宏（名称/UUID）",
+					"tooltip": "由最大值按钮执行的宏。"
+				}
+            },
+			"pdfFields": {
+                "title": "Custom Fields：角色 PDF 字段",
+                "container": "此编辑器中的 PDF 内容已隐藏"
+            },
+            "module": {
+                "showNumberControls": {
+                    "name": "显示数字字段控件",
+                    "hint": "在数字字段上显示可点击的加减按钮，便于更改值。"
+                },
+				"showButtons": {
+                    "name": "显示按钮",
+                    "hint": "显示用于与自定义字段交互的按钮。"
+                },
+                "actorPosition": {
+                    "name": "角色字段位置",
+                    "hint": "选择在角色卡上显示自定义字段的位置。"
+                },
+                "actorAdvancedSelector": {
+                    "name": "高级：角色字段位置",
+                    "hint": "输入参考元素的 CSS 选择器。这适用于理解 CSS 的高级用户。例如：'.biography' 或 '#attributes'。自定义字段将根据你的选择显示在此元素的上方或下方。"
+                },
+                "itemPosition": {
+                    "name": "物品字段位置",
+                    "hint": "选择在物品卡上显示自定义字段的位置。"
+                },
+                "itemAdvancedSelector": {
+                    "name": "高级：物品字段位置",
+                    "hint": "输入参考元素的 CSS 选择器。这适用于理解 CSS 的高级用户。例如：'.item-properties' 或 '.description'。自定义字段将根据你的选择显示在此元素的上方或下方。"
+                },
+                "fullCustomMode": {
+                    "name": "启用完全自定义模式",
+                    "hint": "激活后，此模式将隐藏已启用角色和物品卡上的所有原生元素，仅显示你配置的自定义字段。这适用于创建与原生系统卡完全融合的自定义角色卡。"
+                },
+                "protectedSelectors": {
+                    "name": "完全自定义模式：受保护",
+                    "hint": "输入 CSS 选择器，用逗号分隔，用于在完全自定义模式激活时保持可见的元素。这适用于理解 CSS 的高级用户。"
+                },
+                "forceActivateTabs": {
+                    "name": "强制激活标签页（测试版）",
+                    "hint": "当完全自定义模式开启时，FVTT的默认行为是隐藏标签内容。启用此选项可自动强制任何受保护标签页（例如 .tab[data-tab=skills]）变为激活状态，确保其可见。如果禁用，你需要负责确保默认情况下受保护标签页处于激活状态。"
+                },
+                "compatibilityMode": {
+					"name": "兼容模式 (测试版)",
+					"hint": "强制渲染Custom Fields。如果配置的字段未显示，请尝试启用此选项。"
+				},
+                "positions": {
+                    "top": "角色卡顶部",
+                    "belowHeader": "标题下方",
+                    "bottom": "角色卡底部",
+                    "advancedAbove": "高级 - 上方",
+                    "advancedBelow": "高级 - 下方"
+                },
+                "autoCleanup": {
+                    "name": "自动清理数据",
+                    "hint": "如果勾选，当从配置中删除某个字段时，模组将尝试从世界中的所有角色/物品中移除该字段的数据。."
+                },
+                "autoAdjustPdf": {
+                    "name": "自动调整PDF",
+                    "hint": "如果勾选，PDF页面将尝试适应卡窗口的宽度，同时保持正确的宽高比（缩放控制仍将被禁用）。"
+                }
+            },
+            "menus": {
+                "types": {
+                    "name": "文档类型",
+                    "label": "配置文档类型"
+                },
+                "actorFields": {
+                    "name": "角色自定义字段",
+                    "label": "配置角色字段"
+                },
+                "itemFields": {
+                    "name": "物品自定义字段",
+                    "label": "配置物品字段"
+                },
+				"pdfImporter": {
+					"name": "将 PDF 转换为角色字段",
+					"label": "转换 PDF 卡",
+					"hint": "上传一个可填写的 PDF，以自动将其字段转换为 PDF 的副本。",
+					"keepExisting": "保留现有页面（追加而非替换）。\n警告：不勾选此项将删除当前已转换的 PDF。"
+				},
+				"config": {
+					"import": "导入字段",
+					"export": "导出字段",
+					"replace": "替换现有字段"
+				},
+				"pdfFields": {
+					"name": "PDF 自定义字段",
+					"label": "配置 PDF 字段"
+				}
+            }
+        },
+        "tooltips": {
+            "deleteField": "删除字段",
+            "deleteContainer": "删除容器",
+            "copyAttributeKey": "复制属性键",
+            "copyFlagPath": "复制字段路径",
+			"duplicateField": "复制字段",
+			"duplicateContainer": "复制容器",
+            "moveToTop": "移至顶部",
+            "moveUp": "上移",
+            "dragToSort": "拖拽排序",
+            "moveDown": "下移",
+            "moveToBottom": "移至底部",
+            "formulaHint": "用 '#' 包裹数据路径，例如 #system.abilities.str.mod#。不要使用 '@'。按 ESC 取消编辑。",
+            "editFormula": "编辑公式",
+            "selectImage": "选择图像",
+			"lockPDF": "解锁",
+			"unlockPDF": "锁定",
+			"runMacro": "运行宏",
+			"copyValue": "复制值",
+			"copyPath": "复制路径",
+			"copied": "已复制！"
+        },
+        "terms": {
+            "saveChanges": "保存更改",
+            "attributeBars": "属性进度条",
+            "customFields": "自定义字段",
+            "dataTypes": {
+                "textShort": "短文本",
+                "textLong": "长文本",
+                "number": "数字",
+                "valueMax": "值/最大值",
+				"image": "图像",
+                "list": "列表（下拉菜单）",
+                "checkbox": "复选框"
+            },
+			"ratios": {
+				"square": "1:1 (方形)",
+				"portrait": "3:4 (纵向)",
+				"widescreen": "16:9 (宽屏)",
+				"banner": "横幅",
+				"original": "原始比例"
+			},
+            "visibility": {
+                "observer": "查看+",
+                "limited": "受限+",
+                "owner": "拥有"
+            },
+            "roles": {
+                "player": "玩家",
+                "trustedPlayer": "受信玩家",
+                "assistantGM": "GM助手",
+                "gm": "GM"
+            },
+            "pdfImport": {
+                "page": "第 {number} 页"
+            }
+        }
+    }
+}

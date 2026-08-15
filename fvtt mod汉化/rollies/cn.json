@@ -1,0 +1,96 @@
+
+  "Rollies": {
+    "Chat": {
+      "AutoRoll": "自动掷骰",
+      "RolledFor": "掷骰",
+      "Rolloff": "决胜掷骰",
+      "WinnerAnnouncement": "🎉 决胜掷骰获胜者！",
+      "WinsRolloff": "赢得先攻决胜掷骰！"
+    },
+    "Dialog": {
+      "CloseButton": "关闭",
+      "Complete": "决胜掷骰完成！正在确定获胜者...",
+      "Header": "检测到先攻平局！",
+      "Instructions": "掷 {die} 来打破平局",
+      "RollButton": "掷骰",
+      "Rolled": "掷出",
+      "TimeoutWarning": "{timeout} 秒后为玩家自动掷骰",
+      "Title": "先攻决胜掷骰",
+      "Waiting": "等待中..."
+    },
+    "GMDialog": {
+      "Description": "发现 {count} 个先攻平局。你想要做什么？",
+      "Header": "发现先攻平局",
+      "Initiative": "先攻",
+      "KeepInitiative": "保持当前先攻",
+      "StartRolloffs": "开始决胜掷骰",
+      "Title": "检测到先攻平局"
+    },
+    "Messages": {
+      "AnotherTie": "决胜掷骰再次出现平局！重新掷骰中..."
+    },
+    "PlayerDialog": {
+      "BracketHeader": "决胜掷骰！",
+      "CloseButton": "关闭",
+      "Header": "需要进行先攻决胜掷骰！",
+      "Instructions": "掷 {die} 来打破先攻平局",
+      "Opponent": "对手",
+      "Roll": "掷骰",
+      "RollButton": "掷骰",
+      "RollComplete": "掷骰完成！等待结果中...",
+      "RollFor": "为先攻掷骰：",
+      "Rolled": "掷出",
+      "Round": "回合",
+      "SpectatingMessage": "观看剩余比赛...",
+      "SpectatorMode": "你已被淘汰 - 观看剩余比赛",
+      "TimeRemaining": "剩余时间：",
+      "TimeoutSeconds": "秒",
+      "TimeoutWarning": "自动掷骰倒计时",
+      "Title": "先攻决胜掷骰",
+      "VersusHeader": "先攻对决！",
+      "WaitingForOpponent": "等待对手...",
+      "WaitingForRoll": "掷骰中...",
+      "WaitingForWinner": "等待上一场比赛的获胜者",
+      "You": "你"
+    },
+    "Settings": {
+      "AutoRolloff": {
+        "Hint": "检测到先攻平局时自动开始决胜掷骰",
+        "Name": "自动触发决胜掷骰"
+      },
+      "IncludeNPCs": {
+        "Hint": "NPC 是否应该与角色一起参与先攻决胜掷骰",
+        "Name": "在决胜掷骰中包含 NPC"
+      },
+      "RolloffDie": {
+        "Hint": "用于先攻决胜掷骰的骰子类型",
+        "Name": "决胜掷骰骰子类型"
+      },
+      "RolloffTimeout": {
+        "Hint": "在为玩家自动掷骰前等待的时间",
+        "Name": "决胜掷骰超时时间（秒）"
+      },
+      "ShowWinnerAnnouncement": {
+        "Hint": "当有人赢得决胜掷骰时显示弹出公告",
+        "Name": "显示获胜者公告"
+      },
+      "ManualDiceTimeoutMultiplier": {
+        "Hint": "检测到手动/交互式骰子时的超时持续时间乘数（例如，2 = 超时时间翻倍）",
+        "Name": "手动骰子超时乘数"
+      }
+    },
+	"Errors": {
+      "BracketCombatantNotFound": "未能找到括号匹配的战斗者"
+    },
+    "Warnings": {
+      "CannotRoll": "你没有权限为此战斗者掷骰",
+      "ManualDiceTimeout": "检测到手动掷骰 - 请尽快完成掷骰，否则将自动掷出"
+    },
+    "WinnerDialog": {
+      "CloseButton": "太棒了！",
+      "Header": "🎉 决胜掷骰获胜者！🎉",
+      "Title": "决胜掷骰获胜者！",
+      "WinsRolloff": "赢得决胜掷骰！"
+    }
+  }
+}

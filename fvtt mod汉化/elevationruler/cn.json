@@ -1,0 +1,154 @@
+
+    "elevationruler.name": "Elevation Ruler",
+    "elevationruler.keybindings.decrementElevation.name": "降低标尺高度",
+    "elevationruler.keybindings.decrementElevation.hint": "使用标尺时，以网格为单位降低高度。",
+
+    "elevationruler.keybindings.incrementElevation.name": "增加标尺高度",
+    "elevationruler.keybindings.incrementElevation.hint": "使用标尺时，以网格为单位增加高度。",
+
+    "elevationruler.keybindings.addWaypoint.name": "添加常规标尺导航点",
+    "elevationruler.keybindings.addWaypoint.hint": "使用画布标尺时，添加导航点。",
+
+    "elevationruler.keybindings.removeWaypoint.name": "移除常规标尺导航点",
+    "elevationruler.keybindings.removeWaypoint.hint": "使用画布标尺时，移除导航点。",
+
+    "elevationruler.keybindings.addWaypointTokenRuler.name": "添加token标尺导航点",
+    "elevationruler.keybindings.addWaypointTokenRuler.hint": "启用token标尺并拖动token后，添加导航点。",
+
+    "elevationruler.keybindings.removeWaypointTokenRuler.name": "移除token标尺导航点",
+    "elevationruler.keybindings.removeWaypointTokenRuler.hint": "启用token标尺并拖动token后，移除导航点。",
+
+    "elevationruler.keybindings.togglePathfinding.name": "临时切换寻路",
+    "elevationruler.keybindings.togglePathfinding.hint": "如果寻路按钮已启用，按住此键将暂时禁用寻路功能。如果寻路按钮未启用，按住此键将暂时启用寻路功能。",
+
+    "elevationruler.keybindings.forceToGround.name": "强制标尺对地高度",
+    "elevationruler.keybindings.forceToGround.hint": "测量时，按下此键可获得与地面的距离。再按一次则恢复原状。",
+
+    "elevationruler.keybindings.teleport.name": "沿标尺传送",
+    "elevationruler.keybindings.teleport.hint": "测量时，在释放拖动的 token 时按住此键，或者点击空格键，将 token 无动画移动到标尺目的地。",
+
+    "elevationruler.settings.pathfinding-algorithm.name": "寻路算法",
+    "elevationruler.settings.pathfinding-algorithm-simple": "简单算法",
+    "elevationruler.settings.pathfinding-algorithm-collision": "网格碰撞检测",
+    "elevationruler.settings.pathfinding-algorithm-cwsweep": "顺时针扫描",
+    "elevationruler.settings.pathfinding-algorithm-trianglemesh": "三角网格",
+    "elevationruler.settings.pathfinding-algorithm-polymesh": "多边形网格",
+    "elevationruler.settings.pathfinding-algorithm-navmesh": "导航网格 (Recast/Detour)",
+    "elevationruler.settings.pathfinding-algorithm-webgpu": "WebGPU",
+
+    "elevationruler.settings.levels-use-floor-label.name": "Levels楼层标签",
+    "elevationruler.settings.levels-use-floor-label.hint": "如果Levels模组激活，且Levels UI楼层已命名，则在标尺上标注当前楼层。",
+    "elevationruler.settings.levels-labels-never": "从不",
+    "elevationruler.settings.levels-labels-ui": "仅当Levels UI激活",
+    "elevationruler.settings.levels-labels-always": "总是",
+
+    "elevationruler.settings.prefer-token-elevation.name": "添加token标尺控件",
+    "elevationruler.settings.prefer-token-elevation.hint": "在 token 工具栏上添加一个控件。打开时，该控件将使标尺保持在测量 token 的高度上。否则，标尺目的地将假定为网格空间或标尺目的地点遇到的token的高度。",
+
+    "elevationruler.settings.enable-token-ruler.name": "使用 token 标尺",
+    "elevationruler.settings.enable-token-ruler.hint": "拖动 token 时显示标尺。",
+	
+	"elevationruler.settings.hide-elevation-ruler.name": "从标尺中隐藏高度",
+    "elevationruler.settings.hide-elevation-ruler.hint": "使用标尺时，从标签中隐藏高度。",
+
+    "elevationruler.settings.hide-gm-ruler.name": "隐藏 GM token 标尺",
+    "elevationruler.settings.hide-gm-ruler.hint": "不要为其他非 GM 用户显示 GM 的 token 标尺。",
+
+   "elevationruler.settings.speed-highlighting-choice.name": "使用 token 速度高亮",
+    "elevationruler.settings.speed-highlighting-choice.hint": "使用标尺时，用不同的颜色表示 token 步行/疾走/最大距离。",
+
+    "elevationruler.settings.speed-highlighting-choice-never": "从不",
+    "elevationruler.settings.speed-highlighting-choice-combat": "仅限战斗",
+    "elevationruler.settings.speed-highlighting-choice-always": "总是",
+
+     "elevationruler.settings.speed-highlighting-no-hostiles.name": "敌方无速度高亮",
+    "elevationruler.settings.speed-highlighting-no-hostiles.hint": "启用后，除非用户拥有查看或拥有权限，否则无法看到敌对或秘密 token 的速度。",
+
+    "elevationruler.settings.token-ruler-combat-history.name": "追踪战斗移动历史",
+    "elevationruler.settings.token-ruler-combat-history.hint": "当 token 在同一战斗回合中重复移动时，在标尺中显示历史记录。",
+
+    "elevationruler.settings.combine-prior-with-total.name": "将先前的移动与总移动相结合",
+    "elevationruler.settings.combine-prior-with-total.hint": "启用追踪战斗移动时，将 token 在本回合中的先前移动与总移动相结合。否则，将之前的移动另起一行。",
+
+    "elevationruler.settings.token-speed-property.name": "Token步行属性",
+    "elevationruler.settings.token-speed-property.hint": "对于token速度高亮，这是代表Token步行速度的角色属性。",
+
+    "elevationruler.settings.token-fly-property.name": "Token飞行属性",
+    "elevationruler.settings.token-fly-property.hint": "对于token速度高亮，这是代表Token飞行速度的角色属性。",
+
+    "elevationruler.settings.token-burrow-property.name": "Token掘穴属性",
+    "elevationruler.settings.token-burrow-property.hint": "对于token速度高亮，这是代表Token掘穴速度的角色属性。",
+
+    "elevationruler.settings.token-speed-multiplier.name": "token 速度倍率",
+    "elevationruler.settings.token-speed-multiplier.hint": "对于token速度高亮，这是从步行到疾走再到最大值所使用的倍率。例如，在倍率为 2 的情况下，具有 25 步行速度的 token 在走完前 25 个单位距离后，其标尺将突出显示为橙色，而在走完前 50 个单位距离后，其标尺将突出显示为红色。",
+
+    "elevationruler.settings.round-to-multiple.name": "到倍数的舍入距离",
+    "elevationruler.settings.round-to-multiple.hint": "将显示的距离四舍五入为输入数字的最接近倍数。设置为 0 则禁用四舍五入。",
+
+    "elevationruler.settings.token-terrain-multiplier.name": "Token绕过生物(百分比)",
+    "elevationruler.settings.token-terrain-multiplier.hint": "通过其他token位置时的移动速度调整。设置为 1 表示没有变化，小于 1 表示增加速度，大于 1 表示减少速度。例如，设置为2时，绕过token时，每尺距离都要多花费1尺的移动力（即困难地形）。",
+
+    "elevationruler.settings.token-terrain-multiplier-flat.name": "Token绕过生物(固定值)",
+    "elevationruler.settings.token-terrain-multiplier-flat.hint": "如果启用，则将token移动调整视为固定的额外距离。例如，设置为 5 时，每格移动距离会增加 +5。负值则提供固定的移速加值。",
+	
+	"elevationruler.settings.pathfinding_enable.name": "使用寻路",
+    "elevationruler.settings.pathfinding_enable.hint": "启用后，将为Token控件添加寻路切换器，根据设置，Token将在墙壁和Token周围绘制路径。如果寻路会导致兼容性问题，请禁用此功能。禁用后性能可能会略有提升。",
+
+    "elevationruler.settings.pathfinding_tokens_block.name": "Token 阻挡",
+    "elevationruler.settings.pathfinding_tokens_block.hint": "对于寻路，token 是否会阻挡路径？",
+    "elevationruler.settings.pathfinding_tokens_block_no": "否",
+    "elevationruler.settings.pathfinding_tokens_block_hostile": "仅限敌对",
+    "elevationruler.settings.pathfinding_tokens_block_all": "全部",
+
+    "elevationruler.settings.pathfinding_difficulty_friendly.name": "移动倍率：友方",
+    "elevationruler.settings.pathfinding_difficulty_friendly.hint": "穿过友方Token时惩罚移动速度",
+    "elevationruler.settings.pathfinding_difficulty_hostile.name": "移动倍率：敌方",
+    "elevationruler.settings.pathfinding_difficulty_hostile.hint": "穿过敌方Token时惩罚移动速度",
+
+    "elevationruler.settings.pathfinding_limit_token_los.name": "将寻路限制在已探索区域内",
+    "elevationruler.settings.pathfinding_limit_token_los.hint": "寻路时，将寻路范围限制在已探索区域，除非是GM操控",
+
+    "elevationruler.settings.pathfinding_snap_to_grid.name": "寻路嵌入网格",
+    "elevationruler.settings.pathfinding_snap_to_grid.hint": "在网格地图上寻路时，除非会导致路径受阻，否则应将路径固定在网格中心。",
+
+    "elevationruler.settings.grid-terrain-algorithm.name": "地形网格测量",
+    "elevationruler.settings.grid-terrain-algorithm.hint": "在网格上时，如何计算地形和 token 带来的移动减值或加值？中心：如果地形/token与网格中心重叠，则适用；面积百分比：如果地形/token至少覆盖网格/六边形的这么多面积，则适用；欧几里得：根据地形/token在此网格/六边形与前一网格/六边形之间的线段百分比进行比例计算。",
+
+    "elevationruler.settings.grid-terrain-choice-center-point": "中心点",
+    "elevationruler.settings.grid-terrain-choice-percent-area": "面积百分比",
+    "elevationruler.settings.grid-terrain-choice-euclidean": "欧几里得",
+
+    "elevationruler.settings.grid-terrain-area-threshold.name": "面积百分比阈值",
+    "elevationruler.settings.grid-terrain-area-threshold.hint": "如果为地形网格测量选择了'面积百分比'，这将决定在网格上测量时计算地形/ token 所需的重叠百分比。",
+
+    "elevationruler.settings.automatic-movement-type.name": "自动检测移动类型",
+    "elevationruler.settings.automatic-movement-type.hint": "根据token位置自动检测移动类型。将 token 状态效果设置为'飞行fly'或'掘穴burrowing'，即可覆盖。",
+
+    "elevationruler.settings.euclidean-grid-distance.name": "首选欧几里得距离",
+    "elevationruler.settings.euclidean-grid-distance.hint": "对于网格场景，如果在'方形网格对角'核心设置中选择了'精确 (√2)'，这将迫使它测量欧几里得距离，而不是以六边形/方格为单位的距离。对于六边形网格，只有对角线的仰角移动会受到影响。",
+
+    "elevationruler.settings.scale-text.name": "标尺文本比例",
+    "elevationruler.settings.scale-text.hint": "启用后，标尺文本将根据 `canvas.dimensions.size` 缩放。使用 `CONFIG.elevationruler.labeling.textScale`可进一步调整缩放比例。",
+
+    "elevationruler.settings.force-grid-penalties.name": "使用网格进行移动调整",
+    "elevationruler.settings.force-grid-penalties.hint": "启用后，只有当token/绘图/FVTT区域覆盖了六角/方格的中心时，才会受到移动调整，在网格地图上，调整按方格或按六角计算。禁用时，移动调整会按移动比例实施。例如，如果一张带有 x2 移动调整的绘图覆盖了网格方格的 3/4，那么它将适用于通过该方格的 3/4 移动（即 1.5 倍移动调整）。",
+
+    "elevationruler.settings.customized-labels.name": "自定义标尺文本",
+    "elevationruler.settings.customized-labels.hint": "自定义标尺文本。使用 `CONFIG.elevationruler.labeling.styles` 和 `CONFIG.elevationruler.labeling.icons` 更改样式。",
+
+    "elevationruler.controls.prefer-token-elevation.name": "首选 token 高度",
+    "elevationruler.controls.pathfinding-control.name": "使用寻路",
+
+    "elevationruler.drawingconfig.movementPenalty.name": "移动调整百分比",
+    "elevationruler.drawingconfig.movementPenalty.hint": "设置为 1 表示没有变化，小于 1 表示增加速度，大于 1 表示减少速度。例如，设置为 2 表示通过该区域的移动速度加倍。绘图标高下的移动将被忽略。",
+
+    "elevationruler.drawingconfig.flatMovementPenalty.name": "使用固定调整",
+    "elevationruler.drawingconfig.flatMovementPenalty.hint": "如果启用，则将调整视为固定的额外距离。例如，设置为 5 时，每格移动距离会增加 +5。负值则提供固定的加值。",
+
+    "elevationruler.clearMovement": "清除战斗人员移动",
+    "elevationruler.waypoint": "路标",
+    "elevationruler.up": "上",
+    "elevationruler.down": "下",
+    "elevationruler.added": "附加",
+    "elevationruler.prior": "优先"
+}

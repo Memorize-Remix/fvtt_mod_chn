@@ -1,0 +1,61 @@
+
+    "simple-cinematic-pan": {
+        "settings": {
+            "animation-duration": {
+                "name": "动画持续时间（毫秒）",
+                "hint": "过渡动画的持续时间（毫秒）"
+            },
+            "show-notifications": {
+                "name": "显示通知",
+                "hint": "显示通知（仅对GM可见）"
+            },
+            "cinematic-bars-height": {
+                "name": "电影黑边高度（%）",
+                "hint": "电影黑边高度占屏幕高度的百分比"
+            },
+            "cinematic-bars-color": {
+                "name": "电影黑边颜色",
+                "hint": "电影黑边的颜色（十六进制格式，例如 #000000）"
+            },
+            "cinematic-bars-opacity": {
+                "name": "电影黑边透明度",
+                "hint": "电影黑边的透明度（0 - 1）"
+            },
+            "hide-ui-for-players": {
+                "name": "电影模式下为玩家隐藏UI",
+                "hint": "启用后，当电影模式（画布锁定）激活时，为玩家隐藏FVTT UI"
+            },
+            "cinematic-mode-on-load-scene": {
+                "name": "激活此场景时自动锁定画布进入电影模式"
+            },
+            "debug-mode": {
+                "name": "调试模式",
+                "hint": "启用后，在控制台中显示调试信息"
+            }
+        },
+        "notifications": {
+            "gm-only-canvas-lock": "只有GM可以控制画布锁定。",
+            "canvas-locked": "所有玩家的画布已锁定。",
+            "canvas-unlocked": "所有玩家的画布已解锁。",
+            "gm-only-sync": "只有GM可以同步视图。",
+            "canvas-not-ready": "画布尚未准备就绪。",
+            "gm-only-reset": "只有GM可以使用此功能。",
+            "canvas-locked-local": "画布已锁定。",
+            "canvas-unlocked-local": "画布已解锁。",
+            "players-synchronizing": "玩家正在同步中...",
+            "view-synchronized": "视图已与所有玩家同步。"
+        },
+        "controls": {
+            "title": "电影控件",
+            "canvas-lock": {
+                "title": "切换画布锁定"
+            },
+            "sync-view": {
+                "title": "同步视图"
+            },
+            "reset": {
+                "title": "调试：重置所有用户并将其重新同步到默认状态"
+            }
+        }
+    }
+}

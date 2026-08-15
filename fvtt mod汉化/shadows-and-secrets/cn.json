@@ -1,0 +1,34 @@
+
+  "shadows-and-secrets": {
+    "settings": {
+      "logLevel": {
+        "name": "日志级别",
+        "hint": "设置模组的日志记录级别",
+        "choices": {
+          "debug": "调试 — 显示所有日志消息，包括详细诊断信息",
+          "info": "信息 — 显示信息性消息及以上（隐藏调试信息）",
+          "warn": "警告 — 仅显示警告和错误",
+          "error": "错误 — 仅显示错误级别消息",
+          "fatal": "致命 — 仅显示严重（致命）错误",
+          "none": "无 — 禁用所有日志记录"
+        }
+      },
+      "notifications": {
+        "moduleInitialised": "Shadows & Secrets初始化成功",
+        "settingChanged": "设置 '{setting}' 已更新为：{value}",
+        "settingFailed": "更新设置 '{setting}' 失败",
+        "logLevelChanged": "日志级别已更改为：{level}"
+      }
+    },
+    "keybindings": {
+      "toggleHealthOverlay": {
+        "name": "切换生命值弧线",
+        "hint": "显示或隐藏Token的生命值弧线（按住 M）"
+      },
+      "toggleTokenInfo": {
+        "name": "切换追踪参考编号",
+        "hint": "显示或隐藏追踪参考编号覆盖层（按住 K）"
+      }
+    }
+  }
+}

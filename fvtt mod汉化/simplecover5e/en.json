@@ -1,0 +1,279 @@
+{
+  "SIMPLE_COVER_5E": {
+    "Settings": {
+      "CoverScope": {
+        "Name": "Cover Removal Scope",
+        "Hint": "Choose which tokens are affected when cover is cleared: everyone on the scene, only combatants, or player-owned tokens.",
+        "Options": {
+          "All": "All Tokens on Scene",
+          "Combatants": "Combatants Only",
+          "Player": "Player-Owned Tokens Only"
+        }
+      },
+      "OnlyInCombat": {
+        "Name": "Apply Cover Only In Combat",
+        "Hint": "If enabled, automatic cover calculation only runs while a combat encounter is active."
+      },
+      "RemoveOnCombat": {
+        "Name": "Clear Cover on Combat Updates",
+        "Hint": "Automatically remove the Cover condition on combat changes (turn/round/initiative), honoring the selected Cover Removal Scope."
+      },
+      "RemoveOnMove": {
+        "Name": "Clear Cover on Token Movement",
+        "Hint": "Automatically remove the Cover condition when a token moves during active combat, honoring the selected Cover Removal Scope."
+      },
+	  "losCheck": {
+        "Name": "Wall Line of Sight Check",
+        "Hint": "When enabled, the module also checks line of sight against sight-blocking walls. This can be used to detect cases where the target is fully blocked by walls."
+      },
+	  "coverHints": {
+        "Name": "Cover Notes in Roll Dialogs",
+        "Hint": "Choose when the module should show cover notes in attack and saving throw roll dialogs.",
+        "Options": {
+          "None": "Never",
+          "Conditional": "Only When Cover Applies",
+          "Always": "Always"
+        }
+      },
+	  "coverHintsGmMessage": {
+        "Name": "GM Chat Message for Cover Changes",
+        "Hint": "Sends a chat message to the GM when the cover state is changed manually in the roll dialog."
+      },
+      "CreaturesHalfOnly": {
+        "Name": "Limit Cover from Creatures to 1/2 Cover",
+        "Hint": "When enabled, creatures can grant at most Half Cover. As soon as at least one line is blocked purely by creatures, the target gains Half Cover, but never Three-Quarters Cover from creatures alone. Walls continue to follow the standard DMG rules."
+      },
+	  "IgnoreFriendly": {
+        "Name": "Ignore cover from friendly tokens",
+        "Hint": "When enabled, cover checks ignore any tokens that are friendly to the attacker."
+      },
+	  "IgnoreAllAOE": {
+        "Name": "Ignore cover for all area effects",
+        "Hint": "Skips cover checks whenever the activity defines any area template. If a template is present, no cover is calculated for that roll."
+      },
+      "IgnoreDistanceAOE": {
+        "Name": "Ignore cover for ranged AoE templates",
+        "Hint": "Skips cover checks for activities that create an area at range (e.g., Fireball). This applies when the activity has a range greater than 1 and uses an AoE template with range units other than self/touch/special."
+      },
+      "IgnoreDistanceSpace": {
+        "Name": "Ignore cover for ranged space targeting",
+        "Hint": "Skips cover checks when the activity targets a space at range (range > 1 and affects type is \"space\"). This is commonly used by summon features/spells, where the actual attack/effect is resolved from the summoned creature. Cover should be evaluated from the summon instead of the source feature/spell."
+      },
+      "Hover": {
+        "Name": "Hover Cover Display",
+        "Hint": "Controls whether and how cover information and distance are shown when hovering a token.",
+        "Options": {
+          "Off": "Disabled",
+          "CoverOnly": "Cover icons only",
+          "CoverAndDistance": "Cover icons and distance"
+        }
+      },
+      "HoverLabelPosition": {
+        "Name": "Hover Label Position",
+        "Hint": "Choose where the hover label is anchored relative to the target token.",
+        "Options": {
+          "Above": "Above the token",
+          "On": "Centered on the token",
+          "Below": "Below the token"
+        }
+      },
+      "HoverLabelYOffset": {
+        "Name": "Hover Label Y Offset",
+        "Hint": "Additional vertical offset (in pixels) applied to the hover label position. Positive values move the label downward, negative values upward."
+      },
+      "HoverLabelXOffset": {
+        "Name": "Hover Label X Offset",
+        "Hint": "Additional horizontal offset (in pixels) applied to the hover label position. Positive values move the label to the right, negative values to the left."
+      },
+      "GridlessDistanceMode": {
+        "Name": "Gridless Distance Mode",
+        "Hint": "Choose how distance is measured in gridless scenes. \"Distance Between Tokens\" measures the shortest distance between token boundaries. \"Distance to Target Space\" is intended to match the result used on square/hex grids with the global diagonal setting \"Exact (√2)\".",
+        "Options": {
+          "EdgeEdge": "Distance Between Tokens",
+          "EdgeToCenter": "Distance to Target Space"
+        }
+      },
+      "GridlessTokenShape": {
+        "Name": "Gridless Token Default Shape",
+        "Hint": "When enabled, all tokens on gridless scenes will be automatically set to the selected shape.",
+        "Options": {
+          "None": "No change",
+          "Square": "Rectangle",
+          "Circle": "Ellipse"
+        }
+      },
+      "CreaturesProne": {
+        "Name": "Prone Creature Height Adjustment",
+        "Hint": "Controls how prone creatures are treated when building their 3D prism for cover calculations. When the \"Wall Height\" module is active, \"Treat as one size smaller\" falls back to half height.",
+        "Options": {
+          "None": "None",
+          "LowerSize": "Treat as one size smaller",
+          "Half": "Treat as half as tall"
+        }
+      },
+      "Debug": {
+        "Name": "Show Cover Debug Lines",
+        "Hint": "Draw helper lines while computing cover between tokens (for debugging/troubleshooting)."
+      },
+	  "LibraryMode": {
+        "Name": "[CAUTION] Enable Library Mode",
+        "Hint": "Library Mode disables Simple Cover 5e cover automation features. Enable this only if you explicitly need Library Mode or if another module handles automation for you (e.g., Midi-QOL). Some modules may enable Library Mode automatically. Documentation: https://github.com/Kapuzenjoe/simplecover5e/wiki/API-(Library-Mode)."
+      },
+      "CreatureHeights": {
+        "Name": "Default Creature Heights",
+        "Hint": "Default creature heights (in Grid Units) per size category used for 3D cover evaluation. When the \"Wall Height\" module is active, these defaults are ignored and heights are taken from that module instead."
+      },
+	  "insetAttacker": {
+        "Name": "Attacker Inset (px)",
+        "Hint": "Moves the attacker's sampling points from the raw corner toward the token center (default: 1; max: 30% of the current grid size)."
+      },
+      "insetTarget": {
+        "Name": "Target Inset (px)",
+        "Hint": "Moves the target's sampling points from the raw corner toward the token center (default: 3; max: 30% of the current grid size)."
+      },
+      "insetOccluder": {
+        "Name": "Occluder Inset (px)",
+        "Hint": "Shrinks the occluder bounding box for creatures (default: 6; max: 30% of the current grid size)."
+      },
+	  "FilteredTargetPoints": {
+        "Name": "Filtered Target Points",
+        "Hint": "Controls how target test points removed by token clipping affect cover evaluation. Default: \"Treat as Blocked\". \"Dynamic Threshold\" keeps the current Half Cover behavior, but grants Three-Quarters Cover when at least three-quarters of the remaining lines are blocked instead of always using the full target shape.",
+        "Options": {
+          "Blocked": "Treat as Blocked",
+          "Clear": "Treat as Clear",
+          "Dynamic": "Dynamic Threshold"
+        }
+      },
+      "HeightsMenu": {
+        "Name": "Configure Creature Heights",
+        "Label": "Creature Heights",
+        "Hint": "Adjust default heights (in Grid Units) for each creature size used when computing cover. When the \"Wall Height\" module is active, these defaults are ignored and heights are taken from that module instead.",
+        "Legend": "Creature Heights",
+        "BodyHint": "Set the default height (in Grid Units) for each creature size. These values are used when treating tokens as 3D prisms for cover. When the \"Wall Height\" module is active, these defaults are ignored and heights are taken from that module instead.",
+        "Buttons": {
+          "Save": "Save",
+          "Reset": "Reset"
+        }
+      },
+      "VariantMenu": {
+        "Name": "Configure Cover & Measurement Rules",
+        "Label": "Cover & Measurement Rules",
+        "Hint": "Configure how Simple Cover 5e calculates cover and measures distance on your scenes.",
+        "Buttons": {
+          "Save": "Save"
+        },
+        "Groups": {
+          "General": "Cover Rules",
+          "Measurement": "Measurement Rules",
+          "Engine": "Engine Rules"
+        }
+      },
+      "AutomationMenu": {
+        "Name": "Configure Cover Automation",
+        "Label": "Cover Automation",
+        "Hint": "Configure cover automation and what information is shown in roll dialogs. If Library Mode is enabled, all automation is disabled and this menu is locked.",
+        "Groups": {
+          "General": "Automation"
+        },
+        "LibraryModeWarning": "Library Mode is active. Automation features are disabled. See the wiki: https://github.com/Kapuzenjoe/simplecover5e/wiki/API-(Library-Mode). Some modules may enable Library Mode automatically (e.g. Midi-QOL)."
+      }
+    },
+    "Controls": {
+      "ClearCover": {
+        "Title": "Remove Cover Effects"
+      }
+    },
+    "Dialog": {
+      "Legend": "Notes"
+    },
+    "CoverHint": {
+      "Attack": {
+        "none": "{tokenName} has no cover.",
+        "half": "{tokenName} gains a <strong>+2</strong> bonus to AC from <strong>half cover</strong>.",
+        "threeQuarters": "{tokenName} gains a <strong>+5</strong> bonus to AC from <strong>three-quarters cover</strong>.",
+        "total": "{tokenName} has <strong>total cover</strong> and can't be targeted directly.."
+      },
+      "Save": {
+		"none": "You have no cover.",
+        "half": "You gain a <strong>+2</strong> bonus to this Dexterity saving throw from <strong>half cover</strong>.",
+        "threeQuarters": "You gain a <strong>+5</strong> bonus to this Dexterity saving throw from <strong>three-quarters cover</strong>.",
+        "total": "With <strong>total cover</strong>, you can't be targeted directly."
+      },
+      "CoverModeChanged": "Cover mode changed",
+      "CoverModeDesired": "Calculated: {desiredCover}",
+      "CoverModeNew": "Set: {newMode}"
+    },
+    "Flags": {
+      "ignoreAllCover": {
+        "all": {
+          "Name": "Ignore All Cover (All)",
+          "Hint": "Offensive flag: Ignore all target cover for attacks and saving throw effects."
+        },
+        "attack": {
+          "Name": "Ignore All Cover (Attacks)",
+          "Hint": "Offensive flag: Ignore all target cover for attacks only."
+        },
+        "save": {
+          "Name": "Ignore All Cover (Saving Throws)",
+          "Hint": "Offensive flag: Ignore all target cover for saving throw effects only."
+        }
+      },
+      "ignoreHalfCover": {
+        "all": {
+          "Name": "Ignore Half Cover (All)",
+          "Hint": "Offensive flag: Ignore half cover for attacks and saving throw effects."
+        },
+        "attack": {
+          "Name": "Ignore Half Cover (Attacks)",
+          "Hint": "Offensive flag: Ignore half cover for attacks only."
+        },
+        "save": {
+          "Name": "Ignore Half Cover (Saving Throws)",
+          "Hint": "Offensive flag: Ignore half cover for saving throw effects only."
+        }
+      },
+      "ignoreThreeQuartersCover": {
+        "all": {
+          "Name": "Ignore Up to Three-Quarters Cover (All)",
+          "Hint": "Offensive flag: Ignore half and three-quarters cover, for attacks and saving throw effects."
+        },
+        "attack": {
+          "Name": "Ignore Up to Three-Quarters Cover (Attacks)",
+          "Hint": "Offensive flag: Ignore half and three-quarters cover, for attacks only."
+        },
+        "save": {
+          "Name": "Ignore Up to Three-Quarters Cover (Saving Throws)",
+          "Hint": "Offensive flag: Ignore half and three-quarters cover, for saving throw effects only."
+        }
+      },
+      "upgradeCover": {
+        "all": {
+          "Name": "Upgrade Cover (All)",
+          "Hint": "Defensive flag: Increase current cover for attacks and saving throw effects."
+        },
+        "attack": {
+          "Name": "Upgrade Cover (Attacks)",
+          "Hint": "Defensive flag: Increase current cover against attacks only."
+        },
+        "save": {
+          "Name": "Upgrade Cover (Saving Throws)",
+          "Hint": "Defensive flag: Increase current cover against saving throw effects only."
+        }
+      },
+      "downgradeCover": {
+        "all": {
+          "Name": "Downgrade Cover (All)",
+          "Hint": "Offensive flag: Reduce target cover for attacks and saving throw effects."
+        },
+        "attack": {
+          "Name": "Downgrade Cover (Attacks)",
+          "Hint": "Offensive flag: Reduce target cover for attacks only."
+        },
+        "save": {
+          "Name": "Downgrade Cover (Saving Throws)",
+          "Hint": "Offensive flag: Reduce target cover for saving throw effects only."
+        }
+      }
+    }
+  }
+}

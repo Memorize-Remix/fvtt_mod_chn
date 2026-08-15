@@ -1,0 +1,48 @@
+
+    "betterroofs.settings.fogVisibility.name": "战争迷雾下图块的可见度",
+    "betterroofs.settings.fogVisibility.hint": "设置通过战争迷雾显示的图块的可见程度（或感知亮度）",
+
+    "betterroofs.settings.forceFallback.name": "性能模式",
+    "betterroofs.settings.forceFallback.hint": "对所有遮罩屋顶强制使用隐藏模式，当性能受影响时启用",
+
+    "betterroofs.settings.roomPreview.name": "高级模式",
+    "betterroofs.settings.roomPreview.hint": "打开图块配置时，显示建筑检测计算出的建筑轮廓。同时提供手动设置房间多边形的控制选项，用于调试",
+
+    "betterroofs.settings.wbIntegration.name": "Weather Blocker集成",
+    "betterroofs.settings.wbIntegration.hint": "若安装了Weather Blocker模组，动态隐藏建筑内部的天气效果。需要刷新场景",
+
+    "betterroofs.settings.occlusionRadius.name": "遮挡半径",
+    "betterroofs.settings.occlusionRadius.hint": "径向遮挡模式的半径倍率",
+
+    "betterroofs.tokenConfig.occlusionRadius.name": "遮挡半径",
+    "betterroofs.tokenConfig.occlusionRadius.placeholder": "默认",
+
+    "betterroofs.tileConfig.showInFog.name": "显示战争迷雾",
+    "betterroofs.tileConfig.showInFog.hint": "当Token视野覆盖此图块时，该图块将穿透战争迷雾显示。不适用于光源",
+    "betterroofs.tileConfig.brMode.name": "高级屋顶模式",
+    "betterroofs.tileConfig.brMode.option0": "无（Fvtt默认）",
+    "betterroofs.tileConfig.brMode.option1": "显示（穿透战争迷雾）",
+    "betterroofs.tileConfig.brMode.option2": "隐藏（视野内隐藏）",
+    "betterroofs.tileConfig.brMode.option3": "遮罩（视野内镂空）",
+    "betterroofs.tileConfig.manualPoly.name": "选定墙壁",
+    "betterroofs.tileConfig.definePoly.name": "定义多边形",
+    "betterroofs.tileConfig.clearPoly.name": "清除多边形",
+    "betterroofs.tileConfig.definePoly.notify": "先选择要用于多边形的墙壁，然后再次点击定义多边形按钮确认",
+    "betterroofs.tileConfig.occlusionLinkId": "遮挡链接ID",
+    "betterroofs.tileConfig.occlusionLinkIdHint": "可输入任意文本。当标记为'遮挡链接源？'的图块被遮挡（下方有Token）时，所有相同'遮挡链接ID'的图块也会被遮挡。示例用法：连接多个屋顶",
+    "betterroofs.tileConfig.occlusionLinkSource": "遮挡链接源？",
+
+    "betterroofs.tileConfig.isbroken": "此图块的多边形自动检测可能失败。请在模组设置中启用高级模式并手动定义多边形",
+
+    "betterroofs.wallConfig.externalWall.name":"是否为外墙？",
+
+    "betterroofs.scenecontrols.walledges": "场景边缘墙",
+
+    "betterroofs.yesnodialog.yes": "确认",
+    "betterroofs.yesnodialog.no": "取消",
+    "betterroofs.yesnodialog.title": "场景边缘墙",
+    "betterroofs.yesnodialog.desc": "确定要为场景边缘添加墙壁吗？",
+
+    "betterroofs.bulk.notification": "警告：此操作将改变所有选中过顶图块的设置。若未选中任何图块，则所有过顶图块都将被处理。模式设为'无'的过顶图块不受影响",
+    "betterroofs.bulk.title": "批量修改场景中的高级屋顶"
+}

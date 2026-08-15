@@ -1,0 +1,35 @@
+
+	"movementApproval": {
+		"controls": {
+			"lockMovement": {
+				"enabled": "解锁移动",
+				"disabled": "锁定移动"
+			},
+			"pendingRequest": {
+				"name": "待处理移动请求"
+			}
+		},
+		"notifications": {
+			"pendingRequest": "你已经有一个待处理的移动请求。请等待 GM 批准。",
+			"requestSent": "向GM提交移动请求，供其批准。",
+			"movementApproved": "你的移动已获批准。",
+			"movementDenied": "拒绝移动。",
+			"movementLocked": "当前移动被锁定。使用标尺请求移动。",
+			"requestCancelled": "移动请求已取消。",
+			"requestCancelledByUser": " {tokenName} 的移动请求被取消。",
+			"requestCancelledByDisconnect": "{tokenName} 的移动请求因断开连接而被取消。"
+		},
+		"dialog": {
+			"title": "移动批准",
+			"content": "{tokenName} 请求移动。你是否批准？",
+			"approve": "批准",
+			"deny": "拒绝"
+		},
+		"cancelDialog": {
+			"title": "取消移动请求",
+			"content": "你确定要取消移动请求吗？",
+			"cancel": "取消请求",
+			"close": "保持请求"
+		}
+	}
+}

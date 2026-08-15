@@ -1,0 +1,39 @@
+
+  "npc-dialogue-bubbles": {
+    "settings": {
+      "globalEnabled": {
+        "name": "启用NPC对话气泡",
+        "hint": "全局启用或禁用所有NPC对话气泡"
+      },
+      "debugMode": {
+        "name": "调试模式",
+        "hint": "启用调试日志以进行故障排除"
+      }
+    },
+    "dialog": {
+      "configTitle": "配置对话气泡",
+      "enableLabel": "为此Token启用对话",
+      "phrasesLabel": "短语（每行一个）",
+      "phrasesHint": "每行输入一个短语。留空则禁用对话。",
+      "minIntervalLabel": "最小间隔（秒）",
+      "maxIntervalLabel": "最大间隔（秒）",
+      "saveButton": "保存",
+      "cancelButton": "取消"
+    },
+    "contextMenu": {
+      "configureDialogue": "配置对话气泡"
+    },
+    "NPCDB": {
+      "ConfigureDialogue": "配置对话气泡"
+    },
+    "notifications": {
+      "configSaved": "已为{name}配置对话",
+      "intervalError": "最小间隔必须小于最大间隔",
+      "moduleReady": "NPC Dialogue Bubbles模组已就绪"
+    },
+    "errors": {
+      "tokenNotFound": "未找到Token",
+      "invalidConfig": "无效的对话配置"
+    }
+  }
+}

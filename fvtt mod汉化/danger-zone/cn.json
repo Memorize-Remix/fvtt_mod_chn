@@ -1,0 +1,1191 @@
+
+    "DANGERZONE": {
+        "add": "添加",
+        "advanced.label": "高级选项",
+        "after": "之后",
+        "and": "和",
+		"animation.label": "动画",
+        "audio.label": "音频",
+        "behaviors.label": "行为",
+        "between": "之间",
+        "cancel": "取消",
+        "chat.label": "聊天",
+        "clear": "清除",
+        "continue": "继续",
+        "copy": "复制",
+        "damage.label": "伤害",
+        "degrees": "（角度）",
+        "delete": "删除",
+        "distance": "（距离）",
+        "edit": "编辑",
+        "effects.label": "效应",
+        "export-danger": "导出危险地带",
+		"file": {
+			"audio": {
+				"label": "音频源",
+				"placeholder": "路径/音频.mp3",
+				"playlist.label": "播放列表名称",
+				"random.label": "从播放列表中随机"
+			},
+			"visual": {
+				"label": "图像或视频",
+				"placeholder": "路径/图像.webm",
+				"random.label": "随机化通配符webm"
+			}
+		},
+        "grids": "（网格）",
+        "gridUnits": "单位",
+        "gridUnits2": "（网格单位）",
+        "location-picker": "选择地带范围",
+		"macro.label": "宏",
+        "movement.label": "移动",
+        "ms": "ms",
+        "none": "无",
+		"offset.label": "偏移",
+        "overhead.label": "过顶",
+        "play": "播放",
+        "preview": "预览",
+        "ratio": "（比率）",
+        "save.label": "保存",
+        "sec": "秒",
+		"settings.label": "设置",
+		"source.label": "源",
+		"stop": "停止",
+		"tile.label": "图块",
+		"view": "查看",
+		"wall.label": "墙壁",
+		"visual.label": "视觉",
+        "yes": "确定",
+        "zones": "配置地带",
+        "alerts": {
+            "cancel-target-select": "目标选择和地带触发已取消。",
+            "danger-depth-exceeds-zone": "危险深度不得超过地带深度，且当地带深度为无限（即0）时，危险深度不能大于0。",
+            "enter-z": "输入危险高度",
+            "json-invalid": "数据格式无效。",
+            "no-active-combat": "当前无战斗进行，战斗危险部分已取消。",
+            "no-trigger-if-not-on-combat-scene": "未在当前战斗场景时，危险地带不会触发。",
+            "select-zone-start": "选择此地带的起始位置。所选范围将吸附至网格并代表此地带的左上角。",
+            "select-zone-end": "选择此地带的结束位置。所选范围将吸附至网格并代表此地带的右下角。",
+            "select-target": "选择地带内危险目标的位置。所选范围将吸附至网格并代表危险目标的左上角。右键点击取消。",
+            "select-warpgate-target": "选择地带内危险目标的位置。非方形危险范围的左上角空间将解析为目标范围的左上角网格。",
+            "trigger-zone": "触发地带",
+            "user-selection-exited": "你已提前退出危险位置选择。地带触发执行已停止。",
+            "zone-copied": "地带复制成功！请检查地带尺寸。",
+            "zone-copy-fail": "抱歉，复制地带时出现问题。"
+        },
+        "controls": {
+			"clear.label": "清除 Danger Zone 可放置物",
+			"clear.description": "清除所有 Danger Zone 可放置物？",
+			"clearAmbientLight.label": "清除 Danger Zone 环境光",
+			"clearAmbientLight.description": "清除场景中所有由 Danger Zone 放置的光源？",
+			"clearAmbientSound.label": "清除 Danger Zone 环境音",
+			"clearAmbientSound.description": "清除场景中所有由 Danger Zone 放置的环境音？",
+			"clearRegion.label": "清除 Danger Zone 区域",
+			"clearRegion.description": "清除场景中所有由 Danger Zone 放置的区域？",
+			"clearEffectsTile.label": "清除 Danger Zone 图块（持续效果）",
+			"clearTile.description": "清除场景中所有由 Danger Zone 放置的图块？",
+			"clearWall.label": "清除 Danger Zone 墙壁",
+			"clearWall.description": "清除场景中所有由 Danger Zone 放置的墙壁？"
+        },
+        "copy-zone":{
+            "label": "从场景复制地带",
+            "scene": "复制来源",
+            "target": "复制至",
+            "zone": "地带"
+        },
+        "doorStates":{
+            "closed": "关闭",
+            "open": "开启",
+            "locked": "锁定"
+        },
+        "edit-form": {
+            "actor.label": "角色",
+            "allInArea.label": "目标为所有Token",
+            "allInArea.description": "若目标范围内有多个Token，则全部成为目标。否则仅随机选择一个Token为目标。",
+            "basics.label": "基础设置",
+            "bleed.label": "溢出",
+            "bleed.description": "若启用，危险的边界（基于其宽度、高度和深度）可部分超出此地带的边界。危险效果将延伸至溢出区域，但不在地带边界内的Token不会成为溢出区域的目标。这确保地带内每个网格有均等机会被随机选为目标。若未启用，靠近地带中心的单位有更高概率成为目标。",
+            "boundary": {
+                "bottom.label": "底部",
+                "choose.label": "选择网格尺寸",
+                "elevation.label": "高度界限",
+                "end.label": "结束网格位置",
+                "label": "尺寸",
+                "description": "地带的尺寸在选定区域内，若未选定区域，则此场景的尺寸为无限深度。",
+                "start.label": "起始网格位置",
+                "top.label": "顶部",
+                "x.label": "x",
+                "y.label": "y"
+            },
+            "extend": {
+                "label": "扩展",
+                "description": "当地带触发时与其他地带互动。",
+                "zone": {
+                    "name.label": "地带名称"
+                }
+            },
+            "extension":{
+                "add": "添加地带扩展",
+                "boundary.description": "此扩展将使用与触发地带相同的目标位置。",
+                "boundary.label": "传入目标位置",
+                "clear.label": "绕过清除",
+                "clear.description": "此扩展的清除设置将被忽略",
+                "delay":{
+                    "description": "将扩展的触发延迟指定毫秒数。这是在触发地带已有延迟基础上的额外延迟。\n若最大值超过最小值，则延迟将在此范围内随机变化。",
+                    "label": "延迟开始",
+                    "min.label": "最小",
+                    "max.label": "最大"
+                },
+                "interaction.label": "互动",
+                "interaction.options": {
+                    "toggle": "切换目标地带激活状态",
+                    "enable": "激活目标地带",
+                    "disable": "停用目标地带",
+                    "trigger": "触发目标地带",
+                    "add-region": "将区域形状复制到目标地带",
+                    "replace-region": "用此地带的区域替换目标地带的区域",
+                    "swap-region": "交换目标地带与此地带的区域"
+                },
+                "interaction.warning": "更新地带区域的互动仅影响场景地带。对世界地带或危险无效，因为它们不与区域关联。",
+                "interaction.shape": "要复制的形状需满足：此（源）地带必须先触发，且此地带的危险必须创建了一个区域。目标地带必须与区域关联。",
+                "likelihood.description": "设置触发地带触发时与此扩展互动的概率。注意此地扩展的地带概率（如在地带自身配置）仍会额外评估。",
+                "likelihood.label": "概率",
+                "once.label": "仅一次",
+                "once.description": "无论触发地带循环执行多少次，此扩展仅互动一次",
+                "sequence.label": "顺序",
+                "sequence.options": {
+                    "after": "在触发地带完成后执行",
+                    "before": "在触发地带播放前执行",
+                    "same": "与触发地带同时执行"
+                },
+                "save.description": "此扩展将使用与触发地带相同的豁免检定结果。",
+                "save.label": "传入豁免检定",
+                "source.description": "此扩展将使用与触发地带相同的来源。",
+                "source.label": "传入来源",
+                "target.description": "此扩展将使用与触发地带相同的目标Token。",
+                "target.label": "传入目标Token",
+                "trigger.label": "触发设置",
+                "zone.label": "目标地带"
+            },
+            "clear.label": "清除",
+            "combatantInZone.description": "仅当当前战斗者位于地带内时才会触发。",
+            "combatantInZone.label": "战斗者在地带内",
+            "convert-global.notes": "将此全局地带保存到此场景（全局地带仍将存在）。",
+            "delay":{
+                "description": "将危险开始延迟指定毫秒数。\n对于循环，每次循环间都会添加延迟。\n若最大值超过最小值，则每次延迟将在此范围内随机变化。",
+                "label": "延迟开始",
+                "min.label": "最小",
+                "max.label": "最大"
+            },
+            "enabled.label": "激活",
+            "events.label": "事件",
+            "initiative-count.label": "先攻计数",
+            "flavor.label": "描述",
+            "flavor.description": "当地带触发时，此文本将输出到聊天消息。无论地带循环多少次，描述仅输出一次。",
+            "light.replace.label": "环境光照",
+            "light.replace.description": "选择当地带触发时如何处理现有危险地带创建的环境光照。",
+            "likelihood.label": "概率",
+            "likelihood.description": "设置地带触发时危险效果执行的概率。",
+            "loop.label": "循环次数",
+            "loop.description": "设置地带触发时危险执行的次数。每次循环执行时将单独评估概率。",
+            "name": "配置地带",
+            "operation.description": "决定每次循环的触发操作。\n  顺序：当前循环完成后触发下一个循环。\n  交错：所有循环同时触发，'延迟开始'分别计算。\n  同时：'延迟开始'计算并执行一次，然后直接触发所有循环。\n注意：危险的天气部分仅在第一次循环时播放。",
+            "operation.label": "循环操作",
+            "placeTemplate.label": "选择位置",
+            "placeTemplate.description": "触发时，将提示你选择场景位置作为危险目标（否则将从地带和溢出范围内随机选择位置）。若你选择的位置完全在地带外，危险效果仍会生成但地带外的Token不会被选为目标。",
+            "promptElevation.label": "选择高度",
+            "promptTrigger.label": "触发时提示GM",
+            "promptTrigger.description": "当地带触发启动时，将向GM发送提示询问是否继续触发。适用于需要取消选项的自动触发。",
+            "random.label": "随机化",
+            "random.description": "此场景中所有共享相同触发的地带将分组，并随机触发其中一个。分配权重以控制触发频率。",
+            "region.label": "区域尺寸",
+            "region.description": "将地带分配到区域，否则地带由场景尺寸组成。",
+            "region.replace.label": "区域",
+            "region.replace.description": "选择当地带触发时如何处理现有危险地带创建的区域。",
+            "replace.label": "持续效果",
+            "replace.description": "选择当地带触发时如何处理现有危险地带创建的持续效果。",
+            "runUntilTokenFound.label": "总是标记Token",
+            "runUntilTokenFound.description": "危险将尽可能标记地带内至少有一个Token的范围。",
+            "single-run.description": "此部分最多执行一次，在第一次概率成功后，且无论此地带的循环次数。",
+            "sound.replace.label": "音效",
+            "sound.replace.description": "选择当地带触发时如何处理现有危险地带创建的环境音效。",
+            "source":{
+                "actor":{
+                    "actors.label": "角色",
+                    "dispositions.label": "倾向",
+                    "label": "来源角色"
+                },
+                "area.label": "来源范围",
+                "area.description": "定义地带内可能影响目标选择的来源范围",
+                "description": "来源可能影响地带是否及何时触发。许多危险部分可相对于地带的来源定义。",
+                "label": "来源",
+                "limit": {
+                    "description": "若有多个来源，则在触发时将总来源数限制在最小和最大值之间。设为0则忽略。",
+                    "label": "数量",
+                    "min.label": "最小",
+                    "max.label": "最大"
+                },
+                "tag":{
+                    "zone.label": "地带",
+                    "danger.label": "危险",
+                    "tag.label": "标签"
+                },
+                "target.label": "目标影响",
+                "target.description": "根据地带的来源范围限制目标选择。\n *对光环触发的地带或GM选择目标位置的地带无影响",
+                "trigger.description": "由来源角色决定是否触发地带。\n * 对手动或API触发的地带无影响。\n 对于战斗触发'仅来源可触发地带'，来源必须作为战斗者在范围内。\n 回合：对应回合的战斗者。\n 其他：必须是战斗中的战斗者。",
+                "trigger.label": "触发影响",
+                "triggers":{
+                    "any": "无论来源如何都会触发地带",
+                    "scene": "仅当来源在场景上时触发地带",
+                    "source": "仅来源角色可触发地带"
+                }
+            },
+            "stretch.description": "调整危险的影响范围，使拉伸位置保持固定，同时地带的顶部和底部仍限制可能的初始目标。'地面'使用0作为最终底部，'天空'使用99999作为最终顶部。示例：给定地带底部=2，顶部=10，危险深度=3，初始目标底部=5/顶部=8。拉伸将保持顶部目标=8，但将底部降至2，等于地带底部。",
+            "stretch.label": "拉伸",
+            "target.description": "触发时，危险被放置在地带边界内，危险范围内的Token成为可选目标。",
+            "targetMovementStart.description": "对于光环触发，目标位置将是移动Token的起始位置（否则为目标位置）。",
+            "targetMovementStart.label": "在起始位置（光环）",
+            "targetCombatant.description": "对于战斗范围的触发，这将标记战斗者的位置，并仅标记战斗者，除非启用'危险目标为所有Token'。",
+            "targetCombatant.label": "标记当前战斗者",
+            "title.label": "标题",
+            "token-targeting.label": "目标",
+            "token-condition-ex.description": "Token上激活的状态或效果名称列表，将排除该Token成为危险目标。",
+            "token-condition-ex.label": "排除状态/效果",
+            "token-disposition.label": "倾向",
+            "trigger":{
+                "chat":{
+                    "phrases.description": "列出将触发此地带的短语。",
+                    "phrases.label": "触发短语"
+                },
+                "description": "触发定义必须满足的条件才能在地带内调用危险。文档见 https://github.com/napolitanod/Danger-Zone/wiki/Triggers。",
+                "label": "触发",
+                "movement":{
+                    "wait.label": "移动完成后",
+                    "wait.description": "Token移动动画完成前不会触发地带"
+                }
+            },
+            "type.label": "危险",
+            "types.add": "查看危险",
+            "wall.replace.label": "墙壁",
+            "wall.replace.description": "选择当地带触发时如何处理现有危险地带创建的墙壁。",
+            "weather.replace.label": "天气",
+            "weather.replace.description": "选择如何处理现有FXMaster天气效果。",
+            "weight.label": "权重"
+        },
+        "executor-form":{
+            "boundary":{
+                "clear.label": "清除边界",
+                "label": "目标边界",
+                "highlight.label": "高亮边界位置",
+                "lock.label": "锁定后地带变化时保留边界",
+                "none.label": "未选择目标边界。",
+                "prompt.label": "选择边界位置",
+                "random.label": "新的随机边界位置",
+                "target.label": "将边界更改为场景目标位置"
+            },
+            "danger":{
+                "edit.label": "编辑危险",
+                "label": "危险"
+            },
+            "eligible":{
+                "fail.label": "使边界内所有符合条件的Token豁免检定失败",
+                "highlight.label": "在游戏画布上标记此列表中的Token",
+                "label": "地带",
+                "list.label": "边界内符合条件的Token",
+                "none.label": "目标边界内没有符合条件的Token。",
+                "refresh.label": "刷新边界内符合条件的Token列表",
+                "succeed.label": "使边界内所有符合条件的Token豁免检定成功",
+                "target.label": "将边界内所有符合条件的Token移到目标列表"
+            },
+            "form-name": "危险地带执行",
+            "no-executor.label": "从下拉菜单中选择一个地带。",
+            "no-play": "缺少必要元素，播放已禁用。",
+            "play-zone.label": "触发地带",
+            "save":{
+                "add-success.label": "将画布目标Token添加到豁免成功列表",
+                "clear.label": "清除豁免列表",
+                "highlight.label": "在游戏画布上标记此列表中的Token",
+                "list.label": "豁免检定列表",
+                "lock.label": "锁定后地带或边界变化时保留豁免列表",
+                "none.label": "尚未进行豁免检定",
+                "add-fail.label": "将画布目标Token添加到豁免失败列表",
+                "requires-fail.label": "仅在豁免失败时播放",
+                "requires-success.label": "仅在豁免成功时播放"
+            },
+            "scope": {
+                "boundary.label": "在目标边界上播放",
+                "scene.label": "在场景上播放",
+                "token.label": "在目标Token上播放"
+            },
+            "source":{
+                "add.label": "将画布目标Token添加到来源列表",
+                "clear.label": "清除来源列表",
+                "fail.label": "使列表中所有目标豁免检定失败",
+                "highlight.label": "在游戏画布上标记此列表中的Token",
+                "list.label": "来源列表",
+                "lock.label": "锁定后地带或边界变化时保留源列表",
+                "none.label": "来源列表为空",
+                "replace.label": "用场景目标替换来源列表",
+                "succeed.label": "使列表中所有来源豁免检定成功"
+            },
+            "tab":{
+                "list.label": "触发地带",
+                "exploded.label": "执行"
+            },
+            "targets":{
+                "add.label": "将画布目标Token添加到目标列表",
+                "clear.label": "清除目标列表",
+                "fail.label": "使列表中所有目标豁免检定失败",
+                "highlight.label": "在游戏画布上标记此列表中的Token",
+                "list.label": "目标列表",
+                "lock.label": "锁定后地带或边界变化时保留目标列表",
+                "none.label": "目标列表为空",
+                "random.label": "从符合条件的Token中随机设置目标",
+                "replace.label": "用场景目标替换目标列表",
+                "succeed.label": "使列表中所有目标豁免检定成功"
+            },
+            "zone":{
+                "edit.label": "编辑地带",
+                "fail.label": "使地带内所有符合条件的Token豁免检定失败",
+                "highlight.label": "高亮地带",
+                "label": "地带",
+                "list.label": "地带内符合条件的Token",
+                "none.label": "地带内没有符合条件的Token。",
+                "options":{
+                    "scene": "场景地带",
+                    "world": "世界地带",
+                    "danger": "危险"
+                },
+                "refresh.label": "刷新地带内符合条件的Token列表",
+                "succeed.label": "使地带内所有符合条件的Token豁免检定成功",
+                "target.label": "将地带内所有符合条件的Token移到目标列表"
+            }
+        },
+        "export":{
+            "title": "导出危险"
+        },
+        "import":{
+            "title": "导入危险",
+            "noFile": "你未上传数据文件！",
+            "complete": "导入完成",
+            "success": "导入成功",
+            "error": "因数据无效导入失败",
+            "skipped": "因ID与现有危险重复而跳过",
+            "short-title": "导入"
+        },
+        "item": {
+            "target": {
+                "add": "将物品添加到Token",
+                "add-unless": "除非已存在，否则将物品添加到Token",
+                "delete": "从Token删除每个物品的一个实例",
+                "delete-all": "从Token删除所有物品实例",
+                "update": "更新Token上的物品"
+            }
+        },
+        "light": {
+            "clear-types":{
+                "delete": "删除光源",
+                "off": "关闭光源"
+            },
+			"label": "光源",
+            "replace-types": {
+                "A.label": "清除所有环境光照",
+                "N.label": "保留所有环境光照",
+                "R.label": "清除共享此触发的光源",
+                "T.label": "清除共享此危险的光源",
+                "Z.label": "清除共享此地带的光源"
+            }
+        },
+        "occlusionmodes": {
+            "none": "无（总是可见）",
+            "fade": "渐隐（整块图块）",
+            "radial": "辐射（围绕Token）",
+            "vision": "视觉（Token视觉）"
+        },
+        "record": {
+            "title.label": "标题",
+            "likelihood.label": "概率",
+            "likelihood.description": "概率",
+            "isActive.label": "激活"
+        },
+        "region": {
+            "events": {
+                "options": {
+                    "behaviorStatus": "行为状态变更",
+                    "regionBoundary": "区域边界变更",
+                    "tokenEnter": "Token进入",
+                    "tokenExit": "Token离开",
+                    "tokenMove": "Token移动后",
+                    "tokenMoveIn": "Token移入",
+                    "tokenMoveOut": "Token移出",
+                    "tokenPreMove": "Token移动前",
+                    "tokenRoundEnd": "Token结束一轮",
+                    "tokenRoundStart": "Token开始一轮",
+                    "tokenTurnEnd": "Token回合结束",
+                    "tokenTurnStart": "Token回合开始"
+                }
+            },
+            "replace-types": {
+                "A.label": "清除所有区域",
+                "N.label": "保留所有区域",
+                "R.label": "清除共享此触发的区域",
+                "T.label": "清除共享此危险的区域",
+                "Z.label": "清除共享此地带的区域"
+            }
+        },
+        "replace-types": {
+            "A.label": "清除所有持续效果",
+            "N.label": "保留所有持续效果",
+            "R.label": "清除共享此触发的效果",
+            "T.label": "清除共享此危险的效果",
+            "Z.label": "清除共享此地带的效果"
+        },
+        "restrictions":{
+            "none": "无",
+            "limited": "限制",
+            "normal": "普通",
+            "proximity": "接近",
+            "distance": "远离"
+        },
+        "scene": {
+            "add-danger-zone": "添加危险地带",
+            "clear": "删除地带",
+            "confirm": "确定要删除此地带吗？",
+            "copy-danger-zone": "从其他场景复制地带。尺寸将默认为此场景的宽度和高度。",
+            "delete-danger-zone": "删除危险地带",
+            "description": "地带定义危险发生的地点、时间和对象。每个地带包含一个危险。文档见 https://github.com/napolitanod/Danger-Zone/wiki/Zones。",
+            "edit-danger-zone": "编辑危险地带",
+            "executor.label": "地带执行",
+            "header.name": "配置场景地带",
+            "label": "危险地带",
+            "random": "随机",
+            "random-trigger.label": "随机手动触发",
+            "title": "标题",
+            "trigger": "事件",
+            "type": "危险"
+        },
+        "setting": {
+            "apply-damage":{
+                "label": "应用伤害",
+                "description": "对于包含伤害部分的危险，这将自动应用伤害，考虑抗性、易伤等。"
+            },
+            "chat-details-to-gm.label": "触发时向GM发送地带详情",
+		    "chat-details-to-gm.description": "将在触发时向GM发送包含危险地带详情的私聊消息，如目标位置、符合条件的Token和目标Token。",
+            "danger-zone-types-config.name": "危险",
+            "danger-zone-types-config.label": "配置危险",
+            "display-danger-boundary.label": "高亮危险目标范围",
+            "open-socket.label": "玩家可触发API",
+            "open-socket.description": "启用此设置允许玩家在宏中使用'dangerZone.triggerZone' API（dangerZone.triggerZone()会传递到GM的会话执行，这要求GM在宏运行时已登录）。",
+            "display-danger-boundary.description": "当地带触发时临时高亮危险标记的范围（仅GM会话可见）。",
+            "saving-throw-delay.label": "玩家豁免检定等待时间",
+            "saving-throw-delay.description": "需要socketLib模组。在向GM发送提示前等待玩家完成豁免检定请求的时间（秒）。",
+            "saving-throw-fast-forward.label": "快速豁免检定",
+            "saving-throw-fast-forward.description": "绕过提示并自动掷出危险地带生成的豁免检定。",
+            "types-button-display.label": "显示危险按钮",
+            "types-button-display.description": "在场景侧边栏操作中显示危险表单启动按钮。",
+            "scene-enabled-default.label": "新地带默认激活",
+            "scene-enabled-default.description": "选择新创建的危险地带是否默认激活。",
+            "token-depth-multiplier.label": "Token高度乘数",
+		    "token-depth-multiplier.description": "为地带高度标记目的，设置计算Token高度相对于场景距离和Token占据网格数的乘数。占据单个网格且比例为1.0的Token，场景距离为5，乘数为1.2时，高度为6（1 * 1.0 * 5 * 1.2）。若安装'Wall Height'模组，则对'Token高度'>0的Token忽略此设置。",
+            "zone-exclusion-tag.label": "阻挡地带标签",
+            "zone-exclusion-tag.description": "输入用于指示墙壁、光源、图块、Token或绘图阻挡所在网格被包含在地带内的标签。注意需要'Tagger'模组，或对绘图使用此作为文本标签也有效。"
+        },
+        "sound.replace-types": {
+            "A.label": "清除所有环境音效",
+            "N.label": "保留所有环境音效",
+            "R.label": "清除共享此触发的音效",
+            "T.label": "清除共享此危险的音效",
+            "Z.label": "清除共享此地带的音效"
+        },
+        "source":{
+            "area": {
+                "none": "未定义来源范围",
+                "danger.placeable": "包含危险创建的可放置物的网格",
+                "danger.tile": "包含危险创建图块的网格",
+                "tag": "包含带标签可放置物的网格",
+                "actor": "包含来源角色的网格",
+                "zone.placeable": "包含地带创建的可放置物的网格",
+                "zone.tile": "包含地带创建的图块的网格"
+            },
+            "danger.description": "来源是在地带表中定义的角色。\n定义此危险部分应如何相对于目标和来源应用。",
+            "label": "来源",
+            "target": {
+                "none": "不基于来源范围选择目标",
+                "adjacent": "邻近来源范围",
+                "in": "在来源范围内",
+                "both": "在来源范围内或邻近来源范围"
+            },
+            "danger.location": {
+                "actor": "在来源角色上播放",
+                "area": "在来源范围上播放",
+                "both": "同时在来源角色和范围上播放"
+            },
+            "treatment":{
+                "none": "无特殊处理",
+                "ignore": "不应用于来源角色（若被标记）",
+                "also": "同时应用于来源角色",
+                "only": "应用于来源角色而非目标",
+                "targets": "应用于目标"
+            }
+        },
+        "stretch": {
+            "bottom.label": "从底部上升",
+            "ground.label": "从地面上升",
+            "sky.label": "从天空下降",
+            "top.label": "从顶部下降"
+        },
+        "token-disposition": {
+            "all.label": "全部",
+            "friendly.label": "友善",
+            "hostile.label": "敌对",
+            "neutral.label": "中立"
+        },
+        "trigger-operation": {
+            "sequential": "顺序",
+            "staggered": "交错",
+            "together": "同时"
+        },
+        "events": {
+            "api.label": "API",
+            "aura.label": "光环",
+            "chat-rolltable.label": "随机表结果",
+            "manual.label": "手动",
+            "move.label": "移动",
+            "combat-start.label": "战斗开始",
+            "combat-end.label": "战斗结束",
+            "extension.label": "地带扩展",
+            "initiative-start.label":  "先攻计数（同数值为先）",
+            "initiative-end.label":  "先攻计数（同数值为后）",
+            "round-start.label": "一轮开始",
+            "round-end.label": "一轮结束",
+            "turn-start.label": "回合开始",
+            "turn-end.label": "回合结束"
+        },
+        "type-form": {
+            "ambientLight":{
+                "animationIntensity.label": "动画强度",
+                "animation.label": "光源动画类型",
+                "attenuation.description": "在明亮、昏暗和黑暗之间逐渐过渡照明。",
+                "brightLight.label": "明亮",
+                "clear.label": "创建后激活",
+                "color.label": "光源颜色",
+                "coloration.label": "着色技术",
+                "coloration.description":"应用于光源的着色技术对最终外观产生叠加混合效果。",
+                "contrast.description": "调整被此光源照明的表面对比度。标准光源的默认值为0。",
+                "contrast.label": "对比度",
+                "darkness.label": "黑暗激活范围",
+                "delay.label": "延迟开始",
+                "description": "向目标范围添加环境光照。",
+                "dimLight.label": "昏暗",
+                "emission.label": "发射角度",
+                "attenuation.label": "衰减",
+                "intensity.label": "颜色强度",
+                "label": "环境局部光源",
+                "luminosity.label": "亮度",
+                "luminosity.description": "调整此光源的亮度。更亮的光源受黑暗影响较小。标准光源的默认值为0.5。",
+                "negative.label": "是黑暗源",
+                "priority.label": "优先级",
+                "radius.label": "光源半径",
+                "reverseAnimation.label": "反向",
+                "rotation.label": "旋转角度",
+                "saturation.description": "调整被此光源照明的表面饱和度。标准光源的默认值为0。",
+                "saturation.label": "饱和度",
+                "shadows.description": "增强或减弱被此光源照明的深色强度。标准光源的默认值为0。",
+                "shadows.label": "阴影",
+                "sightLimit.label": "视野限制",
+                "speed.label": "动画速度",
+                "tag.label": "标签",
+                "tag.description": "Tagger标签",
+                "vision.label": "提供视野",
+                "walls.label": "受墙限制"
+            },
+            "animation.label": "动画",
+            "area-x.label": "宽度",
+            "area-y.label": "高度",
+            "area-z.label": "深度",
+            "audio":{
+                "description": "危险触发时播放音效。",
+                "label": "音频",
+                "delay.label": "延迟开始",
+                "duration.description": "若音频文件长于输入的持续时间（秒），则会在播放开始后指定持续时间停止。若持续时间=0则播放整个长度。",
+                "duration.label": "持续时间",
+				"fade.label": "淡化",
+				"fade.description": "如果声音设置了持续时间，则在声音结束前指定的毫秒数内将其音量逐渐降低至零。",
+                "volume.label": "音量"
+            },
+            "backgroundEffect":{
+                "audio":{
+                    "label": "音频",
+                    "volume.label": "音量"
+                },
+				"below.label": "在Token下方显示",
+                "delay.label": "延迟开始",
+                "description": "生成在目标范围下方播放的临时效果，如爆炸或撞击动画。",
+                "label": "目标效果",
+                "rotate.label": "随机旋转",
+                "scale.label": "缩放",
+                "repeat.label": "重复次数",
+                "duration.label": "持续时间",
+                "visual.label": "视觉"
+            },
+            "clear": "清除",
+            "cleared.info": "已从此危险中删除。",
+            "combat":{
+                "targets":{
+                    "add.label": "将目标添加到战斗"
+                },
+                "delay.label": "延迟开始",
+                "description": "与正在进行的战斗互动或创建新战斗。",
+                "initiative": {
+                    "player.label": "为玩家拥有掷骰",
+                    "type":{
+                        "label": "先攻决定",
+                        "options": {
+                            "none": "不执行任何操作",
+                            "roll": "先攻检定",
+                            "set": "设置先攻"
+                        }
+                    },
+                    "value.label": "先攻计数"
+                },
+                "label": "战斗",
+                "new.label": "创建新战斗",
+                "source": {
+                    "add.label": "将来源添加到战斗"
+                },
+                "spawn.description": "此危险部分将应用于由此危险生成的任何Token。生成危险部分的'延迟开始'必须在此危险部分的'延迟开始'之前发生。",
+                "spawn.label": "将生成添加到战斗",
+                "start.label": "开始战斗"
+            },
+            "confirm": "确定要删除此危险的",
+            "dimensions.label": "尺寸",
+            "dimensions.description": "宽度和高度尺寸以场景网格测量。\n若宽度或高度=0，则该尺寸默认为地带的尺寸。\n对于深度，指定顶部和底部高度之间的网格单位差。\n深度为0将默认为地带的深度。",
+            "canvas": {
+                "active.label": "平移至目标位置",
+                "delay.label":"延迟开始",
+                "description": "调用画布范围效果和平移。",
+                "duration.label":"持续时间",
+                "effect.label": "效果",
+                "intensity.label":"强度",
+                "iteration.label":"频率",
+                "label":"画布",
+                "lock.label": "平移后锁定视图",
+                "pan.label": "平移",
+                "scale.label": "缩放",
+                "speed.label": "速度",
+                "type.label":"效果类型",
+                "types":{
+                    "shake": "画布震动"
+                }
+            },
+            "effect":{
+                "delay.label": "延迟开始",
+                "description": "向目标Token添加激活效果。",
+                "deleteEffects.description": "输入要从目标删除的激活效果名称列表。",
+                "delete-effects.label": "删除效果",
+                "disable-effects.description": "输入要在目标上禁用的激活效果名称列表。",
+                "disable-effects.label": "禁用效果",
+                "enable-effects.description": "输入要在目标上启用的激活效果名称列表。",
+                "enable-effects.label": "启用效果",
+                "label": "激活效果",
+                "limit.description": "若Token已应用此效果，则不会添加第二个。",
+                "limit.label": "每个Token最多1个",
+                "macro.description": "决定激活效果宏是否应在关联Token的每个回合重复。",
+                "macro.label": "宏重复",
+                "notes": "激活效果将转移到每个危险目标。",
+                "toggle-effects.description": "输入要在目标上切换的激活效果名称列表。",
+                "toggle-effects.label": "切换效果",
+                "edit.title": "编辑激活效果",
+                "delete.title": "删除激活效果"
+            },
+            "foregroundEffect":{
+                "delay.label": "延迟开始",
+                "description": "生成在目标范围上方播放的临时效果，如闪电或落石动画。",
+                "label": "主要效果",
+                "scale.label": "缩放",
+                "source": {
+                    "enabled.label": "来源至目标",
+                    "name.label": "覆盖来源(Tag)",
+                    "name.description": "Tagger标签",
+                    "name.notes": "默认来源是地带的来源角色。若在此添加标签，则地带内带此标签的所有实体被视为来源。",
+                    "target.label": "来源位置",
+                    "swap.description": "播放效果使其看起来来自目标并朝向来源。",
+                    "swap.label": "反向流动"
+                },
+                "repeat.label": "重复次数",
+                "duration.label": "持续时间"
+            },
+            "globalZone": {
+                "bottom.label": "地带底部",
+                "description": "配置此危险使其在每个场景上作为手动触发的地带可用，选项更有限。",
+                "top.label": "地带顶部",
+                "label": "世界地带"
+            },
+            "icon.label": "图标",
+            "icon.find": "浏览图标",
+            "item": {
+                "action.description": "选择物品是添加到Token、从Token移除还是更新。注意对于某些游戏系统，若希望减少物品数量可能需要更新而非删除。",
+                "action.label": "更新类型",
+                "compendium":{
+                    "description": "标识包含物品的合集。若'合集'留空或未在合集中找到物品，则将从本世界的物品中获取。",
+                    "label": "物品合集",
+                    "placeholder": "合集名称"
+                },
+                "delay.label": "延迟开始",
+                "description": "添加、移除或更新目标Token上的物品。",
+                "interpolate.description": "更新可使用[[path]]引用现有物品数据（例如，name: '[[name]] Mutated'）。",
+                "label": "物品",
+                "name.description": "输入要交互的物品名称列表，使用物品上找到的确切名称。",
+                "name.label": "物品名称",
+                "pile.label": "创建为物品堆",
+                "updates.description": "通过按物品名称传入对象更新数据来更新Token的物品，例如\"Item A\": {name: 'My rename'}, \"Item B\": {name: 'My other item rename'}",
+                "updates.label": "更新",
+                "tag.label": "物品标签",
+                "tag.description": "Tagger标签"
+                },
+			"lastingEffect.label": "持续效果",
+            "macro.label": "宏",
+            "macro.description": "当此危险触发时要执行的宏。",
+            "mutate": {
+                "actor.label": "Token角色数据",
+                "actor.description": "通过传入对象数据更新Token角色。需要键值对。",
+                "delay.label": "延迟开始",
+                "description": "通过永久更新改变目标Token。",
+                "embedded.label": "嵌入数据",
+                "embedded.description": "通过传入对象数据更新Token物品或激活效果。需要键值对。",
+                "interpolate.description": "更新可使用[[path]]引用现有Token数据（例如name: '[[name]] Mutated', width: [[width]] +1）。",
+                "label": "改变",
+                "permanent.description": "改变目前都是对Token的永久更新。没有方法可恢复至先前的Token版本。",
+                "permanent.label": "启用改变",
+                "tag.label": "Token标签",
+                "tag.description": "Tagger标签",
+                "token.label": "Token数据",
+                "token.description": "通过传入对象数据更新Token。需要键值对。"
+            },
+            "name.label": "名称",
+            "offset": {
+                    "adj.label": "旋转角度",
+                    "description": "根据目标位置，在画布上按此数量偏移危险部分的位置。",
+                    "flip": {
+                        "description": "随机镜像位置偏移。",
+                        "description-image": "随机或始终镜像图像，并镜像位置偏移。选择'全部'将始终镜像位置和图像，选择'任意'将随机镜像每个。",
+                        "description-rotation": "随机或始终移动旋转角度，并镜像位置偏移。选择'全部'将始终镜像位置和调整旋转，选择'任意'将随机镜像/调整每个。",
+                        "label": "镜像",
+                        "options": {
+                            "image-sometimes.label": "图像（偶尔）",
+                            "image-always.label": "图像（始终）",
+                            "none.label": "无",
+                            "both.label": "全部（偶尔）",
+                            "any.label": "任意（偶尔）",
+                            "location.label": "位置",
+                            "rotation-sometimes.label": "半径（偶尔）",
+                            "rotation-always.label": "半径（始终）"
+                        }
+                    },
+                    "label": "位置偏移",
+                    "x.label": "X偏移",
+                    "min.label": "最小",
+                    "max.label": "最大",
+                    "type": {
+                        "label": "测量",
+                        "options": {
+                            "non.label": "无",
+                            "pct.label": "百分比（网格距离）",
+                            "pxl.label": "像素"
+                        }
+                    },
+                    "y.label": "Y偏移"
+            },
+            "region":{
+                "active.label": "启用区域",
+                "behavior": {
+                    "macro":{
+                        "label": "执行宏",
+                        "description": "在区域触发时生成宏",
+                        "events.label": "事件",
+                        "uuid.label": "宏",
+                        "everyone.label": "所有人"
+                    },
+                    "pause":{
+                        "enable.label": "添加暂停游戏",
+                        "label": "暂停游戏",
+                        "once.label": "一次"
+                    },
+                    "script":{
+                        "label": "执行脚本",
+                        "description": "在区域触发时生成脚本",
+                        "events.label": "事件",
+                        "source.label": "脚本"
+                    },
+                    "suppress-weather": {
+                        "enable.label": "添加抑制天气",
+                        "label": "抑制天气"
+                    },
+                    "teleport":{
+                        "choice.label": "允许选择",
+                        "description": "将Token传送到地带内另一个随机目标位置。若选择'双联'，则将创建第二个区域，两者互相传送。",
+                        "enable.label": "添加Token传送",
+                        "name.label": "名称",
+                        "label": "传送",
+                        "twin.label": "双联区域（如传送门）"
+                    }
+                },
+                "color.label": "颜色",
+                "delay.label": "延迟开始",
+                "description": "在目标范围创建区域。",
+                "hole.label": "是孔洞",
+                "label": "区域",
+                "name.label": "名称",
+                "scale.label": "区域缩放",
+                "type.label": "形状",
+                "type.options": {
+                    "rectangle": "矩形",
+                    "ellipse": "椭圆"
+                },
+                "tag.label": "区域标签",
+                "tag.description": "Tagger标签",
+                "visibility.label": "可见性",
+                "visibility.options": {
+                    "layer": "仅在区域层",
+                    "gamemaster": "始终为GM",
+                    "always": "始终为任何人"
+                }
+            },
+            "rolltable": {
+                "name.label": "随机表名称",
+                "delay.label":"延迟开始",
+                "description": "掷随机表并将结果发送到聊天。",
+                "label": "随机表",
+                "whisper.label": "结果仅对GM？"
+            },
+            "scene": {
+                "active.label": "启用场景修改",
+				"background.label": "背景",
+                "description": "修改场景设置和全局照明",
+                "label": "场景",
+                "darkness":{
+                    "animate.label": "随时间动画",
+                    "enable.label": "更新黑暗等级",
+                    "value.label": "黑暗等级"
+                },
+                "delay.label": "延迟开始",
+                "foreground":{
+					"label": "前景",
+                    "e": {
+                        "label": "前景高度",
+                        "distance": {
+                            "label": "高度范围",
+                            "max.label": "最大",
+                            "min.label": "最小"
+                        },
+                        "type.label": "高度变化类型",
+                        "types": {
+                            "relative.label": "相对于当前高度变化",
+                            "set.label": "设置为高度"
+                        }
+                    }
+                },
+                "globalLight": {
+                    "label": "切换全局照明",
+                    "options": {
+                        "Y.label": "开启全局光",
+                        "N.label": "关闭全局光"
+                    }
+                },
+                "render.description": "* 将导致场景重新渲染。危险地带将尝试暂停危险执行，直到场景完成渲染。"
+            },
+            "sound":{
+                "description": "在目标位置向场景添加环境音效。",
+				"effects": {
+					"base": {
+						"type.label": "基础效果",
+						"intensity.label": "基础效果强度"
+					},
+					"muffled": {
+						"type.label": "模糊效果",
+						"intensity.label": "模糊效果强度"
+					},
+					"label": "特殊效果"
+				},
+                "label": "音效",
+                "delay.label": "延迟开始",
+                "easing.label": "音量缓动",
+                "random.label": "从播放列表随机",
+                "walls.label": "受墙限制",
+                "radius.label": "效果半径",
+                "volume.label": "最大音量"
+            },
+            "sourceEffect":{
+                "audio":{
+                    "volume.label": "音量"
+                },
+                "delay.label": "延迟开始",
+                "description": "生成在来源范围下方播放的临时效果，如烟雾或挥动魔杖。",
+                "label": "来源效果",
+                "rotate.label": "随机旋转",
+                "scale.label": "缩放",
+                "repeat.label": "重复次数",
+                "target.label": "位置",
+                "duration.label": "持续时间"
+            },
+            "tab" :{
+                "effects.title": "效果",
+                "modules.title": "模组集成",
+                "main.title": "核心配置"
+            },
+            "tile":{
+                "alpha.label": "图块透明度",
+                "delay.label": "延迟开始",
+                "description": "在目标范围创建带有嵌入视频或图像的图块。",
+                "effect.description": "此字段为生成图块所必需。要生成空白图块，请使用透明图像。",
+                "effect.label": "图块图像或视频",
+                "hidden.label":"隐藏",
+                "label": "持续效果",
+                "occlusion":{
+                    "alpha.label": "遮挡透明度",
+                    "mode.label":  "遮挡模式"
+                },
+                "overhead.label": "过顶图块",
+                "is-overhead.label": "是否过顶？",
+                "loop.label": "循环视频",
+                "restrictsLight.label": "限制光线",
+                "restrictsWeather.label": "限制天气",
+                "scale.label": "效果缩放",
+                "tag.label": "图块标签",
+                "tag.description": "Tagger标签",
+                "z.label": "排序"
+            },
+            "tokenSays": {
+                "audio":{
+                    "compendium":{
+                        "description": "标识包含播放列表的合集。若'合集'留空，则Token Says将使用默认合集或遵循Token Says设置的世界来源。",
+                        "label": "音频合集",
+                        "placeholder": "合集名称"
+                    },
+                    "label": "音频",
+                    "says":{
+                        "description": "若包含播放列表，输入播放列表音轨名称。否则输入文件路径。",
+                        "label": "音轨/文件路径",
+                        "placeholder": "音频音轨或文件路径"
+                    },
+                    "saying-source.label": "播放列表",
+                    "source.placeholder": "播放列表名称"
+                },
+                "chat.label": "聊天",
+                "compendium.description": "标识包含'来源'播放列表或随机表的合集。若'合集'留空，则Token Says将使用默认合集或遵循Token Says设置的世界源。",
+                "compendium.label": "随机表合集",
+                "compendium.placeholder": "合集名称",
+                "delay.label":"延迟开始",
+                "description": "使用Token Says模组使危险目标以文本或声音方式说话。",
+                "label": "Token Says",
+                "likelihood.label": "概率",
+                "rule-type.label": "类型",
+                "rule-type-option": {
+                    "playlist": "音频播放列表",
+                    "roll-table": "随机表"
+                },
+                "saying-source.label": "随机表",
+                "says":{
+                    "description": "若填写，Token将始终说此内容。留空则使用'来源'随机化说话内容。",
+                    "label": "聊天消息",
+                    "placeholder": "引用"
+                },
+				"spawn.label": "包含生成的Token",
+                "source.label": "来源",
+                "source.placeholder": "随机表名称",
+                "suppress.label": "抑制",
+                "suppressChatbubble.label": "聊天泡泡",
+                "suppressChatMessage.label": "聊天消息",
+                "suppressQuotes.label": "引用",
+                "volume.label": "音量"
+            },
+            "tokenEffect":{
+                "below.label": "在Token下方显示",
+                "delay.label": "延迟开始",
+                "description": "创建在目标Token上播放的效果，若设为永久，则随Token移动。",
+                "label": "Token效果",
+                "scale.label": "缩放",
+                "duration.label": "持续时间"
+            },
+            "tokenMove":{
+                "delay.label": "延迟开始",
+                "elevation.label": "高度移动",
+                "elevation-distance.label": "移动距离",
+                "elevation-distance-max.label": "最大",
+                "elevation-distance-min.label": "最小",
+                "elevation-type.label": "移动类型",
+                "elevation-types": {
+                    "relative.label": "相对于Token高度",
+                    "set.label": "设置为高度"
+                    },
+                "flag.description": "防止此危险引起的任何移动触发地带（因为某些地带可能有基于移动的触发）。",
+                "flag.label": "不触发地带",
+                "horizontal.label": "水平移动",
+                "horizontal-distance.label": "移动距离",
+                "horizontal-distance-max.label": "最大",
+                "horizontal-distance-min.label": "最小",
+                "horizontal-direction.label": "移动方向",
+                "horizontal-directions": {
+                    "left.label": "左",
+                    "right.label": "右",
+                    "random.label": "随机"
+                    },
+                "label": "移动Token",
+                "overrides.label": "移动覆盖",
+                "source-to-target.label": "将来源移动到目标",
+                "teleport.label": "传送",
+                "tiles-block.label": "图块阻挡目标深度移动",
+                "walls-block.label": "墙壁阻挡移动",
+                "vertical.label": "垂直移动",
+                "vertical-distance.label": "移动距离",
+                "vertical-distance-max.label": "最大",
+                "vertical-distance-min.label": "最小",
+                "vertical-direction.label": "移动方向",
+                "vertical-directions": {
+                    "down.label": "下",
+                    "up.label": "上",
+                    "random.label": "随机"
+                    },
+                "description": "移动目标Token。"
+            },
+            "tokenResponse": {
+                "damage": {
+                    "amount.description": "例如1d6+1",
+                    "amount.label": "伤害掷骰或数值",
+                    "amount.title": "包含可变掷骰的参数：\n@elevation表示危险改变的Token高度*\n@moved表示危险移动的Token网格*\n*这些按Token单独计算，将强制使用单独伤害掷骰和聊天卡。",
+                    "delay.label": "延迟开始",
+                    "description": "对每个目标Token掷伤害。伤害是否自动应用取决于你的危险地带伤害设置。",
+                    "enable.label": "激活伤害",
+                    "flavor.label": "描述（聊天卡）",
+                    "flavor.description": "为每个受伤害的Token输出消息到聊天作为伤害卡片的一部分。\n包含可变文本的参数：\n@alias表示Token名称列表\n@elevation表示危险改变的Token高度*\n@moved表示危险移动的Token网格*\n*这些按Token单独计算，将强制使用单独伤害掷骰和聊天卡。",
+                    "save.label": "若豁免成功",
+                    "save.options": {
+                        "none": "无伤",
+                        "half": "半伤",
+                        "full": "全伤"
+                    },
+                    "secondary": {
+                        "label": "额外伤害",
+                        "amount.description": "例如1d6+1",
+                        "amount.label": "伤害掷骰或数值",
+                        "amount.title": "包含可变掷骰的参数：\n@elevation表示危险改变的Token高度*\n@moved表示危险移动的Token网格*\n*这些按Token单独计算，将强制使用单独伤害掷骰和聊天卡。",
+                        "save.label": "若豁免成功",
+                        "type.label": "伤害类型"
+                    },
+                    "type.label": "伤害类型"
+                },
+                "description": "通过调用系统特定事件与目标Token互动，如执行豁免检定或应用伤害。",
+                "label": "Token互动",
+                "save": {
+                    "diff.label": "豁免检定DC",
+                    "description": "为每个目标Token调用豁免检定，并定义这如何影响其他危险部分。",
+                    "enable.label": "激活豁免检定",
+                    "result":{
+                        "success": "仅在成功时生成",
+                        "fail": "仅在失败时生成",
+                        "both": "成功或失败时都生成"
+                    },
+                    "socket-off.description": "将提示GM进行所有豁免检定。若希望提示玩家，请安装socketlib模组。",
+                    "socket-on.description": "拥有Token的玩家将被提示进行豁免检定。",
+                    "success.description": "选择豁免成功或失败如何影响其他危险部分",
+                    "success.label": "基于豁免结果",
+                    "type.label": "豁免检定类型"
+                }
+            },
+            "wall":{
+                "bottom.label": "底部墙壁",
+                "description": "在目标范围周边添加墙壁或门。",
+                "doorOptions.label": "门选项",
+                "doorSound.label": "门音效",
+                "doorState.label": "门状态",
+                "direction.label": "墙壁方向",
+                "door.label": "是门？",
+                "label": "墙壁",
+                "left.label": "左侧墙壁",
+                "light.label": "光照限制",
+                "movement.label": "移动限制",
+                "random.description": "从选定的墙壁（顶部、右侧、底部、左侧）中，随机决定是否实际建造每个墙壁。",
+                "random.label": "随机放置墙壁",
+                "right.label": "右侧墙壁",
+                "sound.label": "音效限制",
+                "sight.label": "视线限制",
+                "tag.label": "标签",
+                "tag.description": "Tagger标签",
+                "thresholdAttenuation.label": "接近阈值衰减",
+                "top.label": "顶部墙壁"
+            },
+            "warpgate": {
+                "description": "使用Portal模组向目标范围生成新Token。",
+                "actor.description": "使用角色名称生成生物，若勾选'随机表'，则生成将是从指定随机表中掷出的匹配名称的随机角色。",
+                "actor.label": "名称",
+                "actor.placeholder": "角色或随机表名称",
+                "color.label": "Portal颜色",
+                "duplicates.label": "生成数量",
+                "delay.label": "Portal延迟开始",
+                "isRolltable.label": "是随机表",
+                "label": "Token生成",
+                "mutate.label": "改变目标",
+                "mutate.description": "若此危险包含'改变'危险部分，启用这将把改变应用于生成的Token而非正常地带目标。确保改变危险部分的'延迟开始'设置在此部分的'延迟开始'之后。",
+                "range.description": "设置Portal范围。若=0，范围将是场景距离乘以危险的最大宽度或高度。",
+                "range.label": "范围",
+                "spawnDelay.label": "Token生成延迟",
+                "tag.label": "标签",
+                "tag.description": "Tagger标签"
+            },
+            "weather": {
+                "description": "使用FXMaster模组创建全屏天气和其他自然效果。",
+                "delay.label": "延迟开始",
+                "duration.label": "持续时间",
+                "label": "天气",
+                "type.label": "类型"
+            }
+        },
+        "tiles-block":{
+            "none.label": "图块不阻挡",
+            "all.label": "所有图块阻挡",
+            "roof.label": "过顶图块阻挡",
+            "bottom.label": "图块在深度顶部阻挡",
+            "top.label": "图块在深度底部阻挡"
+        },
+        "times-up-macro": {
+            "start": "角色回合开始",
+            "end": "角色回合结束"
+        },
+        "types-form": {
+            "clear": "删除危险",
+            "confirm": "确定要删除此危险吗？",
+			"description": "危险元素通过创建墙壁、开启灯光或启动战斗等方式为你的场景注入活力。使用方式：只需使用Danger Zone场景控件在场景中创建一个地带，然后将其链接到一个危险元素即可。",
+            "header.name": "添加和编辑危险",
+            "search.placeholder": "输入文本过滤危险",
+            "search.clear": "清除搜索",
+            "export.title": "导出危险",
+            "import.title": "导入危险",
+            "type.name.label": "危险名称",
+            "world.label": "切换世界地带"
+        },
+        "walls-block":{
+            "none.label": "墙壁不阻挡",
+            "all.label": "所有墙壁阻挡"
+        },
+        "wall.replace-types": {
+            "A.label": "清除所有墙壁",
+            "N.label": "保留所有墙壁",
+            "R.label": "清除共享此触发的墙壁",
+            "T.label": "清除共享此危险的墙壁",
+            "Z.label": "清除共享此地带的墙壁"
+        },
+        "weather.replace-types": {
+            "A.label": "清除所有天气",
+            "T.label": "清除共享此危险的天气",
+            "N.label": "保留现有天气"
+        },
+        "zone-active-effect-form": {
+            "form-name": "危险激活效果"
+        },
+        "zone-type-form": {
+            "form-name": "危险",
+            "name": "名称"
+        }
+    }
+
+}

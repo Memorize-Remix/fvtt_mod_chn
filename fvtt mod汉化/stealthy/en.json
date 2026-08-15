@@ -1,0 +1,149 @@
+{
+  "stealthy": {
+    "hidden": {
+      "name": "Hidden",
+      "description": "Banked stealth roll",
+      "source": "Hidden effect source",
+      "preloc": {
+        "key": "Localization key for Hidden name",
+        "hint": "This string will be sent through i18n.localize(). Changing these may affect overall automation of Stealthy's effects."
+      },
+      "icon": "Hidden icon",
+      "iconhint": "Default icon for Hidden effect",
+      "aliases": "Other names to recognize as hidden",
+      "aliasesHint": "Separate names with semicolons. This is useful in mixed-language situations"
+    },
+    "spot": {
+      "name": "Spot",
+      "description": "Banked perception roll",
+      "source": "Spot effect source",
+      "preloc": {
+        "key": "Localization key for Spot name"
+      },
+      "icon": "Spot icon",
+      "iconhint": "Default icon for Spot effect"
+    },
+    "bankPerception": "Bank perception rolls",
+    "title": "Stealthy",
+    "friendlyStealth": {
+      "name": "How to treat friendly tokens under stealth",
+      "allow": "Always test Perception",
+      "inCombat": "Only test Perception in combat",
+      "ignore": "Ignore Perception tests"
+    },
+    "playerHud": {
+      "name": "Players can see banked rolls",
+      "hint": "Players can see banked rolls on the token HUD but can't change them"
+    },
+    "exposure": {
+      "name": "Show light exposure",
+      "hint": "Shows the selected token's light exposure on the Token HUD",
+      "bright": "in Bright light",
+      "dim": "in Dim light",
+      "dark": "in Dark"
+    },
+    "gIDimThreshold": {
+      "name": "Global Illumination dim light threshold",
+      "hint": "On scenes with GI enabled, bright light exposure is assumed unless the darkness level exceeds the scene's GI threshold multiplied by this factor, yielding dim light. Use 1.0 to transition directly from bright to dark."
+    },
+    "clearAfterCombat": {
+      "name": "Clear stealth effects after combat",
+      "hint": "Removes Stealthy's spot/hidden effects from only the combatants"
+    },
+    "stealthToActor": {
+      "name": "Bank stealth rolls to actor",
+      "hint": "Bank stealth rolls in an actor effect/item rather than the token."
+    },
+    "perceptionToActor": {
+      "name": "Bank perception rolls to actor",
+      "hint": "Bank perception rolls in an actor effect/item rather than the token."
+    },
+    "detectionModesMenu": {
+      "name": "Detection Modes",
+      "label": "Configure Detection Modes",
+      "hint": "Enable which detection modes stealth will apply to",
+      "warning": "Reload is required to apply changes to selected detection modes",
+      "enable": "Is mode enabled",
+      "light": "Is mode affected by dim vs bright lighting"
+    },
+    "source": {
+      "hint": "Which source to use for the Active Effect stored on the actor",
+      "ce": {
+        "name": "Convenient Effects",
+        "beforeLabel": "Couldn't find effect",
+        "afterLabel": "in CE, using Stealthy's default instead"
+      },
+      "clt": {
+        "name": "Condition Lab & Triggler",
+        "beforeLabel": "Couldn't find effect",
+        "afterLabel": "in CLT, using Stealthy's default instead"
+      },
+      "cpr": {
+        "name": "Cauldron of Plentiful Resources",
+        "beforeLabel": "Couldn't find effect",
+        "afterLabel": "in CPR, using Stealthy's default instead"
+      },
+      "ae": "Stealthy",
+      "min": "Stealthy (no token effect)"
+    },
+    "schema": {
+      "name": "Schema Version",
+      "hint": "Set this to a previous version to force a data migration from the specified version to the current version"
+    },
+    "logLevel": {
+      "name": "Logging Level",
+      "none": "No logging",
+      "debug": "Debug level",
+      "log": "Log level"
+    },
+    "config": {
+      "general": "General Options",
+      "effects": "Active Effect Options",
+      "debug": "Debug Options",
+      "advanced": "Advanced Options"
+    },
+    "dnd5e": {
+      "name": "Dnd5e",
+      "endTurn": {
+        "name": "End Turn",
+        "hint": "End turn if you are owner of the current combatant"
+      },
+      "hiding": {
+        "choice": "Use 'Hiding' Status Effect",
+        "iconhint": "Default icon for Hidden effect (ignored if using Status Effect)"
+      },
+      "perceptionDisadvantage": {
+        "name": "Perception disadvantage in Dim light",
+        "hint": "Use scene lighting to determine if perception disadvantage applies for tokens with stealth. Uses center X,Y of the token, nothing fancy"
+      },
+      "ignorePassiveFloor": {
+        "name": "Ignore passive perception minimum value for active checks",
+        "hint": "Enables a homebrew option to ignore the passive perception value when rolling an active perception check"
+      },
+      "friendlyUmbralSight": {
+        "name": "DEPRECATED - How to treat friendly tokens with Umbral Sight",
+        "allow": "Umbral Sight is hidden to Darkvision",
+        "inCombat": "Ignore Umbral Sight unless in combat",
+        "ignore": "Ignore Umbral Sight"
+      },
+      "stealthKey": {
+        "name": "Stealth skill key",
+        "hint": "Must be a key found in actor.system.skills, default is 'ste'. Used to redirect rolls from a custom skill into the stealth channel, all tooltips/etc will continue to use localize from 'stealth'"
+      },
+      "perceptionKey": {
+        "name": "Perception skill key",
+        "hint": "Must be a key found in actor.system.skills, default is 'prc'. See Stealth skill key hint but substitute perception"
+      }
+    },
+    "pf1": {
+      "name": "Pathfinder",
+      "passiveSpotOffset": {
+        "name": "Assumed roll for passive spotting",
+        "hint": "If no banked perception roll is available, assume this value for the d20 in the visibility test. Typically, -99 to auto-fail or 10 for a take-10 result."
+      }
+    },
+    "pf2e": {
+      "dependency": "Stealthy requires the Hide and Seek actions from Basic Action Macros in PF2e Workbench"
+    }
+  }
+}

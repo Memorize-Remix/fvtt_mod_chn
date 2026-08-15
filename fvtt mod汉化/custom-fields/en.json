@@ -1,0 +1,377 @@
+{
+    "CUSTOM_FIELDS": {
+        "headers": {
+            "title": "Custom Fields Settings",
+            "general": "General Settings",
+            "actor": "Actors Fields",
+            "item": "Items Fields",
+            "advanced": "Advanced Settings"
+        },
+        "notifications": {
+            "nestingTooDeep": "Containers cannot be nested more than 4 levels deep.",
+			"UserPermissionDenied": "You do not have the required role to edit this field.",
+            "invalidSelector": "Invalid Protected Selector syntax: '{selector}'.",
+            "invalidFormula": "Invalid Formula: {message}",
+            "saveBeforeCopy": "Please save the settings before copying the path for a new field.",
+            "flagPathCopied": "Field Path copied to clipboard!",
+            "copyFailed": "Failed to copy path.",
+            "attributeKeyCopied": "Attribute Key copied to clipboard!",
+            "copyKeyFailed": "Failed to copy attribute key.",
+            "maxCounters": "You can only have up to 4 counters.",
+			"maxPortraits": "Only one image field can be set as portrait.",
+            "labelRequiresIcon": "To hide the Label, you must first select an Icon.",
+            "invalidNumber": "Invalid input. Please enter a valid number.",
+            "errors": {
+                "noAtChar": "The '@' character is not allowed. Please use the full path wrapped in '#', e.g., #system.abilities.str.mod#.",
+                "invalidTerm": "The term '{term}' is not valid. If it's a data path, please wrap it in '#' (e.g., #{term}#).",
+                "pathValueMax": "The path '#{path}#' refers to a Value/Max field. You must specify '.value' or '.max' (e.g., #{path}.value#).",
+                "pathNotNumber": "The path '#{path}#' is invalid or does not resolve to a number.",
+                "notFinite": "Formula evaluation did not result in a finite number.",
+                "circularDependency": "Circular dependency detected (Infinite loop)."
+            },
+            "wait": "Loading... \n“A wizard is never late, nor is he early. He arrives precisely when he means to.”",
+            "nestingPDF": "The PDF Container cannot be nested.",
+            "cannotDuplicatePdfRoot": "The PDF Container cannot be duplicated.",
+            "noFilePermission": "You do not have permission to browse files in this world.",
+            "macroNotFound": "Macro '{ref}' not found or not configured."
+        },
+        "dialogs": {
+            "confirmDeleteContainer": {
+                "title": "Delete Container",
+                "content": "Are you sure you want to delete this container? All fields and containers within it will also be permanently deleted.",
+                "yes": "Yes, Delete",
+                "no": "Cancel"
+            },
+            "copyFlagPath": {
+                "title": "Copy Field Path",
+                "content": "Choose which path to copy for <strong>{flagId}</strong>:",
+                "valuePath": "Value Path",
+                "maxPath": "Max Path"
+            },
+            "copyAttributeKey": {
+                "title": "Copy Attribute Key",
+                "content": "Choose which key to copy for <strong>{fieldId}</strong>:",
+                "bar": "Bar (Value & Max)",
+                "valueOnly": "Value Only",
+                "maxOnly": "Max Only"
+            },
+            "pdfImport": {
+                "title": "Importing PDF...",
+                "wait": "Reading file and generating fields...",
+                "success": "PDF Sheet replicated successfully!",
+                "error": "Error reading PDF: {message}",
+                "successJson": "Layout JSON imported successfully!",
+                "errorJson": "Error processing JSON: {message}"
+            },
+            "import": {
+                "title": "Import Fields",
+                "content": "Paste the JSON content.",
+                "placeholder": "Paste JSON here...",
+                "orUpload": "Or upload a file:",
+                "success": "Fields imported successfully!",
+                "error": "Error importing: {message}",
+                "exportError": "Error exporting fields data.",
+                "readError": "Error reading file.",
+                "emptyWarning": "Paste JSON or select a file.",
+                "invalidFormat": "Invalid format (Must be an Array).",
+                "selectPDF": "Please select a PDF file first.",
+                "noPDFContainer": "There is no PDF container to import.",
+                "errorTypeMismatch": "Cannot import '{source}' fields into '{target}' editor."
+            }
+        },
+        "settings": {
+            "types": {
+                "title": "Custom Fields: Type Configuration",
+                "enabledActorTypes": "Enabled Actor Types",
+                "enabledItemTypes": "Enabled Item Types"
+            },
+            "actorFields": {
+                "title": "Custom Fields: Actor Fields"
+            },
+            "itemFields": {
+                "title": "Custom Fields: Item Fields"
+            },
+            "fields": {
+                "container": "Container",
+                "newContainer": "New Container",
+                "addContainer": "Add Container",
+                "showLabel": {
+                    "label": "Show Label",
+                    "tooltip": "If checked, the container's display label will be shown on the sheet."
+                },
+                "containerWidth": {
+                    "label": "Width",
+                    "tooltip": "Defines the width of the container on the sheet, allowing fields to be arranged in columns.",
+                    "options": {
+                        "quarter": "One Quarter",
+                        "third": "One Third",
+                        "half": "Half",
+                        "full": "Full",
+                        "fill": "Fill Available Space"
+                    }
+                },
+                "newField": "New Field",
+                "addField": "Add Field",
+                "displayLabel": {
+                    "label": "Display Label",
+                    "tooltip": "The label for the field as it appears on the document sheet."
+                },
+                "dataType": {
+                    "label": "Data Type",
+                    "tooltip": "The type of data this field will store (e.g., text, number)."
+                },
+                "defaultValue": {
+                    "label": "Default Value",
+                    "tooltip": "The initial value for this field."
+                },
+                "charLimit": {
+                    "label": "Char Limit",
+                    "tooltip": "The maximum number of characters allowed for this text field."
+                },
+                "permissions": {
+                    "label": "Permissions",
+                    "tooltip": "Show options to define the permission levels and roles required to see/edit this field."
+                },
+                "visibility": {
+                    "label": "Visibility",
+                    "tooltip": "Defines the minimum permission level on the document required to see this field."
+                },
+                "minRoleView": {
+                    "label": "Min. Role to View",
+                    "tooltip": "In addition to Visibility, this sets the minimum user role (e.g., Player, GM) required to see the field."
+                },
+                "minRoleEdit": {
+                    "label": "Min. Role to Edit",
+                    "tooltip": "Sets the minimum user role required to edit this field, provided they can edit the document."
+                },
+                "minRoleEditValue": {
+                    "label": "Min. Role to Edit Value",
+                    "tooltip": "Sets the minimum user role to edit the 'Value' part of this field."
+                },
+                "minRoleEditMax": {
+                    "label": "Min. Role to Edit Max",
+                    "tooltip": "Sets the minimum user role to edit the 'Max' part of this field."
+                },
+                "listOptions": {
+                    "label": "List Options (one per line)",
+                    "tooltip": "Enter one option per line. The first option will be the default."
+                },
+                "isResource": {
+                    "label": "Set as Resource",
+                    "tooltip": "If checked, this field will be treated as an actor resource, available to be linked to token bars."
+                },
+                "editableOnHUD": {
+                    "label": "Edit on HUD",
+                    "tooltip": "If checked, this resource will be directly editable on the Token HUD. Uncheck to make it read-only on the HUD. This is disabled for synchronized fields."
+                },
+                "isCounter": {
+                    "label": "Enable Counter",
+                    "tooltip": "If checked, this numeric field's value will be displayed as a counter on the item's icon in the character sheet inventory."
+                },
+                "isFormula": {
+                    "label": "Sync Data Paths",
+                    "tooltip": "If checked, this field syncs data paths used in mathematical formulas. All data paths must be wrapped in '#' characters, e.g., #system.attributes.hp.value# + 5."
+                },
+                "counterPosition": {
+                    "label": "Counter Position",
+                    "positions": {
+                        "topright": "Top-Right",
+                        "topleft": "Top-Left",
+                        "bottomright": "Bottom-Right",
+                        "bottomleft": "Bottom-Left"
+                    }
+                },
+                "counterColor": {
+                    "label": "Counter Color"
+                },
+                "useAsPortrait": {
+                    "label": "Use as Portrait",
+                    "tooltip": "If checked, this image will replace the main Actor/Item portrait. Syncs when changing the image or opening the sheet."
+                },
+                "aspectRatio": {
+                    "label": "Aspect Ratio",
+                    "tooltip": "Defines the display aspect ratio on the sheet."
+                },
+                "displayAsTabs": {
+                    "label": "Display with Tabs",
+                    "tooltip": "Arranges internal containers into a horizontal tab bar."
+                },
+                "containerIcon": {
+                    "label": "Tab Icon",
+                    "tooltip": "Image used when this container is displayed inside a tab."
+                },
+                "mergeDown": {
+                    "label": "Merge Down",
+                    "tooltip": "Merges this field's area with the next field in the list. This field becomes a visual reference only."
+                },
+                "reverseLayout": {
+                    "label": "Reverse Layout",
+                    "tooltip": "If checked, inverts the X and/or Y axis of the Max and Value fields."
+                },
+                "hasMacro": {
+                    "label": "Run Macro",
+                    "tooltip": "If checked, shows a button to run a Macro."
+                },
+                "macroRef": {
+                    "label": "Macro's Name or UUID",
+                    "tooltip": "Run that macro sending 'label', 'value', 'actor', 'uuid' and 'path' as parameters (use @ for chat macros e.g. @value)."
+                },
+                "hasMacroMax": {
+                    "label": "Run Macro (Max)",
+                    "tooltip": "Habilita um botão de macro para o valor Máximo."
+                },
+                "macroRefMax": {
+                    "label": "Macro Max (Nome/UUID)",
+                    "tooltip": "Macro executada pelo botão do valor Máximo."
+                }
+            },
+			"pdfFields": {
+                "title": "Custom Fields: Actor PDF Fields",
+                "container": "PDF content hidden in this editor"
+            },
+            "module": {
+                "showNumberControls": {
+                    "name": "Show Number Field Controls",
+                    "hint": "Shows clickable plus and minus buttons on number fields for easier value changes."
+                },
+				"showButtons": {
+                    "name": "Show Buttons",
+                    "hint": "Show the buttons to interact with custom fields."
+                },
+                "actorPosition": {
+                    "name": "Actor Fields Position",
+                    "hint": "Choose where to show the custom fields on Actor sheets."
+                },
+                "actorAdvancedSelector": {
+                    "name": "Advanced: Actor Fields Position",
+                    "hint": "Enter the CSS selector for the reference element. This is for advanced users who understand CSS. For example: '.biography' or '#attributes'. The custom fields will be showed above or below this element based on your selection."
+                },
+                "itemPosition": {
+                    "name": "Item Fields Position",
+                    "hint": "Choose where to show the custom fields on Item sheets."
+                },
+                "itemAdvancedSelector": {
+                    "name": "Advanced: Item Fields Position",
+                    "hint": "Enter the CSS selector for the reference element. This is for advanced users who understand CSS. For example: '.item-properties' or '.description'. The custom fields will be showed above or below this element based on your selection."
+                },
+                "fullCustomMode": {
+                    "name": "Enable Full Custom Mode",
+                    "hint": "When activated, this mode will hide all native elements on enabled actor and item sheets, showing only the custom fields you have configured. This is useful for creating fully customized character sheets merged with the native system sheet."
+                },
+                "protectedSelectors": {
+                    "name": "Full Custom Mode: Protected",
+                    "hint": "Enter CSS selectors, separated by commas, for elements to keep visible when Full Custom Mode is active. This is for advanced users who understand CSS."
+                },
+                "forceActivateTabs": {
+                    "name": "Force Activate Tabs (BETA)",
+                    "hint": "When Full Custom Mode is on, Foundry's default behavior is to hide tab content. Enable this option to automatically force any protected tab (e.g., .tab[data-tab=skills]) to become active, ensuring it is visible. If disabled, you are responsible for ensuring that a protected tab is active by default."
+                },
+                "compatibilityMode": {
+                    "name": "Compatibility Mode (BETA)",
+                    "hint": "Forces the rendering of Custom Fields. If the configured fields do not appear, try enabling this option."
+                },
+                "positions": {
+                    "top": "Top of Sheet",
+                    "belowHeader": "Below Header",
+                    "bottom": "Bottom of Sheet",
+                    "advancedAbove": "Advanced - Above",
+                    "advancedBelow": "Advanced - Below"
+                },
+                "autoCleanup": {
+                    "name": "Auto Cleanup Data",
+                    "hint": "If checked, when deleting a field from config, the module will attempt to remove that field's data from all Actors/Items in the world."
+                },
+                "autoAdjustPdf": {
+                    "name": "Auto Adjust PDF",
+                    "hint": "If checked, PDF pages will attempt to fit the sheet window width while maintaining the correct aspect ratio (Zoom controls will still be disabled)."
+                }
+            },
+            "menus": {
+                "types": {
+                    "name": "Document Types",
+                    "label": "Configure Document Types"
+                },
+                "actorFields": {
+                    "name": "Actor Custom Fields",
+                    "label": "Configure Actor Fields"
+                },
+                "itemFields": {
+                    "name": "Item Custom Fields",
+                    "label": "Configure Item Fields"
+                },
+                "pdfImporter": {
+                    "name": "Convert PDF to Actors Fields",
+                    "label": "Convert PDF Sheet",
+                    "hint": "Upload a fillable PDF to automatically convert fields into a replica of the PDF.",
+                    "keepExisting": "Keep existing pages (Append instead of Replace). \nWARNING: Not checking this will delete the currently converted PDF."
+                },
+                "config": {
+                    "import": "Import Fields",
+                    "export": "Export Fields",
+                    "replace": "Replace existing fields"
+                },
+                "pdfFields": {
+                    "name": "PDF Custom Fields",
+                    "label": "Configure PDF Fields"
+                }
+            }
+        },
+        "tooltips": {
+            "deleteField": "Delete Field",
+            "deleteContainer": "Delete Container",
+            "copyAttributeKey": "Copy Attribute Key",
+            "copyFlagPath": "Copy Field Path",
+            "duplicateField": "Duplicate Field",
+            "duplicateContainer": "Duplicate Container",
+            "moveToTop": "Move to Top",
+            "moveUp": "Move Up",
+            "dragToSort": "Drag to Sort",
+            "moveDown": "Move Down",
+            "moveToBottom": "Move to Bottom",
+            "formulaHint": "Wrap data paths in '#', e.g., #system.abilities.str.mod#. Do not use '@'. Press ESC to cancel editing.",
+            "editFormula": "Edit Formula",
+            "selectImage": "Select Image",
+            "lockPDF": "Unlock",
+            "unlockPDF": "Lock",
+            "runMacro": "Run Macro",
+            "copyValue": "Copy Value",
+            "copyPath": "Copy Path",
+            "copied": "Copied!"
+        },
+        "terms": {
+            "saveChanges": "Save Changes",
+            "attributeBars": "Attribute Bars",
+            "customFields": "Custom Fields",
+            "dataTypes": {
+                "textShort": "Short Text",
+                "textLong": "Long Text",
+                "number": "Number",
+                "valueMax": "Value/Max",
+				"image": "Image",
+                "list": "List (Dropdown)",
+                "checkbox": "Checkbox"
+            },
+			"ratios": {
+                "square": "1:1 (Square)",
+                "portrait": "3:4 (Portrait)",
+                "widescreen": "16:9 (Widescreen)",
+                "banner": "Banner",
+                "original": "Original"
+            },
+            "visibility": {
+                "observer": "Observer+",
+                "limited": "Limited+",
+                "owner": "Owner Only"
+            },
+            "roles": {
+                "player": "Player",
+                "trustedPlayer": "Trusted Player",
+                "assistantGM": "Assistant GM",
+                "gm": "GM"
+            },
+            "pdfImport": {
+                "page": "Page {number}"
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+
+	"swapper": {
+		"GameSettings": {
+			"globalSwappingEnabled": {
+				"Name": "全局启用旋转时图像替换",
+				"Hint": "为所有Token启用旋转时的图像替换功能，除非在单个Token上单独禁用（参见：Token配置）。"
+			},
+			"rotationFilesuffixMatrix": {
+				"Name": "旋转文件后缀",
+				"Hint": "定义旋转角度及对应的纹理替换文件后缀。"
+			},
+			"rotationFilesuffixMatrixMenu": {
+					"Name": "配置全局旋转文件后缀",
+					"Label": "旋转文件后缀",
+					"Hint": "配置旋转角度及对应的Token图像替换文件后缀。",
+					"Window": {
+						"Name": "配置旋转文件后缀",
+						"Rotation": "旋转角度",
+						"Filesuffix": "文件后缀",
+						"Remove": "删除",
+						"RotationHint": "拥有对应Token图像的旋转角度（度）",
+						"FilesuffixHint": "附加在Token图像文件名后的文件后缀",
+						"ButtonAddRow": "添加行",
+						"ButtonResetDefaults": "重置为默认",
+						"ButtonSave": "保存"
+					}
+			}
+		},
+		"TokenConfig": {
+			"Fieldset":{
+				"Legend": "旋转时替换Token图像"
+			},
+			"OverrideGlobalSettings": {
+				"Label": "覆盖全局设置",
+				"Hint": "若启用，此Token将忽略全局的替换开关。"
+			},
+			"LocalSwappingEnabled": {
+				"Label": "启用旋转时图像替换",
+				"Hint": "切换此Token旋转时是否替换其图像。"
+			},
+			"LocalRotationFilesuffixMatrix": {
+				"Label": "配置Token特定的旋转文件后缀",
+				"Hint": "配置旋转角度及对应的Token图像替换文件后缀。",
+				"ButtonLabel": "旋转文件后缀",
+				"ApplicationName": "配置Token特定的旋转文件后缀"
+			}
+		},
+		"Warnings": {
+			"Warning001": "旋转时替换Token图像，警告 001：旋转角度 {old} 已标准化至 0-360 度范围。旋转角度设置为：{new}。",
+			"Warning002": "旋转时替换Token图像，警告 002：Token图像更改失败。\n尝试的文件路径可能不存在：{texture}",
+			"Warning003": "旋转时替换Token图像，警告 003：未找到此Token的旋转文件后缀，但已启用图像替换（本地或全局）。",
+			"Warning004": "旋转时替换Token图像，警告 004：Token已启用图像替换（本地或全局），但文件名无效，缺少用于标记文件后缀的下划线。"
+		},
+		"Errors": {
+			    "Error001": "旋转时替换Token图像，错误 001：旋转角度必须是一个介于 0 到 360 之间的数字。",
+				"Error002": "旋转时替换Token图像，错误 002：旋转角度不能与现有条目重复。"
+		}
+	}
+}

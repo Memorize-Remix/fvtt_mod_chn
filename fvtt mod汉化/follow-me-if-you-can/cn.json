@@ -1,0 +1,85 @@
+
+    "FOLLOWMEIFYOUCAN": {
+        "Settings": {
+            "KeepFollowing": {
+                "Name": "场景切换时保持跟随",
+                "Hint": "启用后，token将在场景切换后继续跟随目标。"
+            },
+            "InstantFollow": {
+                "Name": "即时跟随",
+                "Hint": "启用后，跟随token将立即移动到目标位置，而不是逐渐移动。"
+            },
+            "PlayerAccess": {
+                "Name": "玩家访问",
+                "Hint": "启用后，玩家可以使用token跟随功能。"
+            },
+            "ShowFloatingButtons": {
+                "Name": "显示浮动按钮",
+                "Hint": "启用后，会显示浮动按钮，方便快速访问跟随命令。"
+            },
+            "GitHub": {
+                "Hint": "点击访问模组的GitHub页面"
+            }
+        },
+        "Controls": {
+            "Start": "开始跟随一个token",
+            "Stop": "停止跟随",
+            "StopAll": "管理跟随",
+            "SelectToFollow": "选择一个token进行跟随",
+            "Home": "重置控件位置",
+            "DragHandle": "移动控件"
+        },
+        "Notifications": {
+            "FollowingStarted": "{followerName} 现在正在跟随 {target}。",
+            "FollowingStopped": "{followerName} 已停止跟随 {target}。",
+            "FollowingStoppedAll": "所有跟随已停止。",
+            "NoActiveToken": "你必须选择一个Token作为跟随者。",
+            "NoActiveFollowing": "你必须先选择一个Token作为跟随者。",
+            "StopButtonPressed": "停止跟随按钮已被按下。",
+            "SelectedFollowingStopped": "已停止 {count} 个跟随。",
+            "NoFollowsSelected": "没有选择任何要停止的跟随。",
+            "NoTargetTokens": "在当前场景中没有可用的目标token。",
+            "CircularFollowingPrevented": "检测到循环跟随并已阻止。{followerName} 无法跟随 {target}。",
+            "FollowRequestSent": "已发送请求，要求跟随 {target}。",
+            "PlayerRequestedFollow": "{playerName} 请求 {followerName} 跟随 {target}。",
+            "ResetPosition": "控件位置已重置为默认。",
+            "NoVisibleTargets": "当前场景中没有可见的目标。",
+            "StoppedFollowing": "{followerName} 已停止跟随 {target}。",
+            "CannotFollowSelf": "{followerName} 无法跟随自己。",
+            "StartedFollowing": "{followerName} 现在正在跟随 {target}。",
+            "SelectTarget": "选择一个目标进行跟随"
+        },
+        "Dialog": {
+            "SelectTarget": {
+                "Title": "选择一个目标进行跟随",
+                "Label": "选择一个token进行跟随：",
+                "Follow": "跟随"
+            },
+            "StopFollowing": {
+                "Title": "停止跟随",
+                "Label": "选择要停止的跟随：",
+                "Stop": "停止",
+                "SelectAll": "全选",
+                "OtherScenes": "其他场景中的跟随",
+                "StopAllScenes": "停止所有场景中的跟随"
+            },
+            "ConfirmFollow": {
+                "Title": "确认跟随",
+                "Content": "{source} 将跟随 {target}。你确定吗？"
+            },
+            "Yes": "是",
+            "No": "否",
+            "Cancel": "取消"
+        },
+        "Errors": {
+            "NoGM": "没有连接的GM。无法处理您的请求。",
+            "SocketTimeout": "与GM的连接超时。请稍后重试。",
+            "SocketProcessingError": "处理socket消息时出错。",
+            "MissingParameters": "缺少跟随请求的参数。请选择有效的token。",
+            "SocketConnectionFailed": "无法与GM建立连接。请检查GM是否在线，并确保模组已启用。",
+            "SocketNotAvailable": "socket通信系统不可用。请刷新页面或联系GM。",
+            "SocketError": "发送请求时发生错误。请重试。",
+            "SocketTestFailed": "多次尝试后，socket连接测试失败。请检查GM是否在线，并确保模组已启用。"
+        }
+    }
+}

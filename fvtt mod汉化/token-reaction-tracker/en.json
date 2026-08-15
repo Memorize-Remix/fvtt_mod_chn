@@ -1,0 +1,28 @@
+{
+    "TRT" : {
+        "mod-title": "Token Reaction Tracker",
+        "toggle-state": "Toggle Reaction State",
+        "notifications": {
+            "link-success": "Successfully linked tokens to target!",
+            "unlink-all": "Successfully unlinked all tokens from target!",
+            "unlink-success": "Successfully un-linked tokens from target!",
+            "zero-linked": "The target token does not have any linked tokens."
+        },
+        "settings": {
+            "combat-only": "Enable only in combat",
+            "combat-only_desc": "The reaction tracker button will only show on the token HUD when there is an active combat encounter",
+            "disable-autorefresh": "Disable auto refresh in combat",
+            "disable-autorefresh_desc": "Disable token reactions being autorefreshed at the start of the tokens turn in combat",
+            "disable-scrolltext": "Disable scrolling text",
+            "disable-scrolltext_desc": "Disable the scrolling text that appears on a token when changing the tokens reaction state",
+            "toggle-token": "Toggle token reaction state",
+            "toggle-token_desc": "Toggles the reaction use state on a moused-over token while using one of the token select tools"
+        },
+        "warnings": {
+            "no-selected": "You do not have any tokens selected! You must select tokens to link/unlink from your target",
+            "multi-target": "You have multiple targeted tokens! This macro only takes in one target",
+            "no-target": "You do not have a token targeted! This macro take in on target",
+            "no-token": "Unable to find a token with that ID!"
+        }
+    }
+}

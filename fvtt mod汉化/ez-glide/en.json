@@ -1,0 +1,30 @@
+{
+  "ez-glide": {
+    "settings": {
+      "enableSmoothZoom": {
+        "name": "Smooth Zoom",
+        "hint": "Disable to revert to Foundry's default zooming behavior."
+      },
+      "enableSmoothPan": {
+        "name": "Smooth Panning",
+        "hint": "Disable to revert to Foundry's default panning behavior."
+      },
+      "zoomStepSize": {
+        "name": "Zoom Step Size",
+        "hint": "Foundry's default is 1.05."
+      },
+      "zoomSpeed": {
+        "name": "Zoom Smoothing Factor",
+        "hint": "Lower values have slower convergence, higher values are faster."
+      },
+      "panSpeed": {
+        "name": "Pan Smoothing Factor",
+        "hint": "Lower values have slower convergence, higher values are faster."
+      }
+    },
+    "warnings": {
+      "failedToRegisterWrappers": "{package_id} | Failed to register wrappers ({error_name}). Another module may already override these methods.",
+      "conflictDetected": "Conflict detected: '{id}' conflicts with EZGlide.\n{reason}"
+    }
+  }
+}

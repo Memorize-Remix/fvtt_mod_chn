@@ -1,0 +1,187 @@
+{
+  "GOLD_BOX": {
+    "MODULE_NAME": "The Gold Box",
+    "MODULE_DESCRIPTION": "An AI-powered Foundry VTT module for intelligent TTRPG assistance",
+    "VERSION": "0.2.5",
+    
+    "BUTTONS": {
+      "TAKE_AI_TURN": "Take AI Turn",
+      "DISCOVER_BACKEND": "Discover Backend",
+      "MODULE_INFO": "The Gold Box"
+    },
+    
+    "NOTIFICATIONS": {
+      "AI_FUNCTIONALITY_COMING_SOON": "The Gold Box: AI functionality coming soon!",
+      "MODULE_INITIALIZED": "The Gold Box module initialized successfully",
+      "MODULE_READY": "The Gold Box is ready for AI adventures!",
+      "CONNECTION_VERIFIED": "OK Backend connection verified!",
+      "CONNECTION_FAILED": "❌ No backend server found. Please start backend server.",
+      "DISCOVERY_FAILED": "🚫 Backend discovery failed - {error}",
+      "SESSION_EXPIRING": "WARNING Session expiring soon! Server connection may be unstable. Please refresh the page.",
+      "CRITICAL_SESSION": "WARNING Session expiring soon! Server connection may be unstable. Please refresh the page."
+    },
+    
+    "DIALOG": {
+      "TITLE": "The Gold Box",
+      "VERSION": "Version {version}",
+      "DESCRIPTION": "An AI-powered Foundry VTT module for intelligent TTRPG assistance.",
+      "STATUS": "Basic structure loaded - AI features coming soon!",
+      "GITHUB_LINK": "GitHub Repository",
+      "CLOSE": "Close",
+      "BACKEND_STARTUP": "The Gold Box - Backend Startup Required",
+      "PROVIDER_STATUS": "The Gold Box - Provider Status",
+      "AVAILABLE_PROVIDERS": "The Gold Box - Available Providers",
+      "CRITICAL_WARNING": "The Gold Box - Critical Session Warning",
+      "AI_PROCESSING": "The Gold Box - AI Processing"
+    },
+    
+    "STATUS": {
+      "THINKING": "AI is thinking...",
+      "READY": "AI is ready",
+      "ERROR": "AI encountered an error",
+      "PROCESSING": "AI Processing...",
+      "THINKING_BUTTON": "🤔 AI Thinking...",
+      "CONNECTED": "connected",
+      "DISCONNECTED": "disconnected",
+      "ERROR_STATE": "error",
+      "CHECKING": "checking..."
+    },
+    
+    "SETTINGS": {
+      "TITLE": "The Gold Box Settings",
+      "BACKEND_STATUS": "Backend Status",
+      "BACKEND_STATUS_HINT": "Current status of backend server (automatically detected)",
+      "BACKEND_PASSWORD": "Backend Password",
+      "BACKEND_PASSWORD_HINT": "Password for admin operations on backend server (used to sync settings)",
+      "MAX_MESSAGE_CONTEXT": "Maximum Message Context",
+      "MAX_MESSAGE_CONTEXT_HINT": "Number of recent chat messages to send to AI for context (default: 15)",
+      "AI_RESPONSE_TIMEOUT": "AI Response Timeout (seconds)",
+      "AI_RESPONSE_TIMEOUT_HINT": "Maximum time to wait for AI response before re-enabling button (default: 60)",
+      "AI_ROLE": "AI Role",
+      "AI_ROLE_HINT": "What role AI should play in your game",
+      "GENERAL_LLM_PROVIDER": "General LLM - Provider",
+      "GENERAL_LLM_PROVIDER_HINT": "Provider name for General LLM (e.g., openai, anthropic, opencode, custom-provider)",
+      "GENERAL_LLM_BASE_URL": "General LLM - Base URL",
+      "GENERAL_LLM_BASE_URL_HINT": "Base URL for General LLM provider (e.g., https://api.openai.com/v1, https://api.z.ai/api/coding/paas/v4)",
+      "GENERAL_LLM_MODEL": "General LLM - Model",
+      "GENERAL_LLM_MODEL_HINT": "Model name for General LLM (e.g., gpt-3.5-turbo, claude-3-5-sonnet-20241022, openai/glm-4.6)",
+      "GENERAL_LLM_VERSION": "General LLM - API Version",
+      "GENERAL_LLM_VERSION_HINT": "API version for General LLM (e.g., v1, v2, custom)",
+      "GENERAL_LLM_TIMEOUT": "General LLM - Timeout (seconds)",
+      "GENERAL_LLM_TIMEOUT_HINT": "Request timeout for General LLM in seconds (default: 30)",
+      "GENERAL_LLM_MAX_RETRIES": "General LLM - Max Retries",
+      "GENERAL_LLM_MAX_RETRIES_HINT": "Maximum retry attempts for General LLM (default: 3)",
+      "GENERAL_LLM_CUSTOM_HEADERS": "General LLM - Custom Headers (JSON)",
+      "GENERAL_LLM_CUSTOM_HEADERS_HINT": "Custom headers for General LLM in JSON format (advanced)",
+      "TACTICAL_LLM_PROVIDER": "Tactical LLM - Provider",
+      "TACTICAL_LLM_PROVIDER_HINT": "Provider name for Tactical LLM (placeholder for future implementation)",
+      "TACTICAL_LLM_BASE_URL": "Tactical LLM - Base URL",
+      "TACTICAL_LLM_BASE_URL_HINT": "Base URL for Tactical LLM provider (placeholder for future implementation)",
+      "TACTICAL_LLM_MODEL": "Tactical LLM - Model",
+      "TACTICAL_LLM_MODEL_HINT": "Model name for Tactical LLM (placeholder for future implementation)",
+      "TACTICAL_LLM_VERSION": "Tactical LLM - API Version",
+      "TACTICAL_LLM_VERSION_HINT": "API version for Tactical LLM (e.g., v1, v2, custom)",
+      "TACTICAL_LLM_TIMEOUT": "Tactical LLM - Timeout (seconds)",
+      "TACTICAL_LLM_TIMEOUT_HINT": "Request timeout for Tactical LLM in seconds (default: 30)",
+      "TACTICAL_LLM_MAX_RETRIES": "Tactical LLM - Max Retries",
+      "TACTICAL_LLM_MAX_RETRIES_HINT": "Maximum retry attempts for Tactical LLM (default: 3)",
+      "TACTICAL_LLM_CUSTOM_HEADERS": "Tactical LLM - Custom Headers (JSON)",
+      "TACTICAL_LLM_CUSTOM_HEADERS_HINT": "Custom headers for Tactical LLM in JSON format (advanced)",
+      
+      "CHOICES": {
+        "DM": "Dungeon Master",
+        "DM_ASSISTANT": "DM Assistant", 
+        "PLAYER": "Player"
+      },
+      
+      "NOTES": {
+        "DISCOVER_BACKEND": "Test backend connection and discover server if port changed"
+      }
+    },
+    
+    "CONNECTION": {
+      "BACKEND_NOT_RUNNING": "Backend Server Not Running or Not Reachable",
+      "OPTION_1_RUN": "Option 1: Run automation script",
+      "RUN_AUTOMATION": "Run <code>./start-backend.py</code> from The Gold Box module directory to automatically set up and start backend server.",
+      "OPTION_2_MANUAL": "Option 2: Manual setup",
+      "SEE_README": "See README.md file for manual setup instructions.",
+      "OPTION_3_DISCOVER": "Option 3: Auto-discover port",
+      "AUTO_DISCOVER": "Go to The Gold Box settings and click \"Discover Backend\" to automatically find and connect to a running backend server.",
+      "NOTE": "Note: The frontend automatically discovers backend port. Use \"Discover Backend\" button if needed.",
+      
+      "NO_PROVIDERS_CONFIGURED": "No LLM providers configured",
+      "CONFIGURE_API_KEYS": "Please configure API keys in backend to use AI features.",
+      "USE_KEY_MANAGER": "Use key manager to add providers like OpenAI, Anthropic, or others.",
+      "FOUND_PROVIDERS": "Found {count} configured LLM provider(s):",
+      "CONFIGURE_DESIRED": "Configure your desired provider in The Gold Box settings.",
+      
+      "AI_RESPONSE": "AI Response",
+      "AI_ERROR": "Error",
+      "AI_TURN_ERROR": "Error: {error}",
+      "CHECK_CONNECTION": "Please check your backend connection and settings.",
+      "AI_TIMEOUT": "AI response timeout"
+    },
+    
+    "ERRORS": {
+      "BACKEND_UNREACHABLE": "Cannot reach backend server",
+      "INVALID_API_KEY": "Invalid API key",
+      "CONNECTION_FAILED": "Failed to connect to AI service",
+      "RATE_LIMIT_EXCEEDED": "Rate limit exceeded. Please wait before trying again.",
+      "SESSION_REQUIRED": "Session required or expired. Please refresh the page.",
+      "CSRF_REQUIRED": "CSRF token required",
+      "CSRF_INVALID": "CSRF token validation failed",
+      "SESSION_INVALID": "Session validation failed",
+      "SESSION_EXPIRED": "Session has expired",
+      "HTTP_ERROR": "HTTP {status}: {statusText}",
+      "REQUEST_FAILED": "Request failed: {error}",
+      "BACKEND_NOT_FOUND": "No backend server found on any port",
+      "PORT_DISCOVERY_FAILED": "Port discovery failed: {error}",
+      "SESSION_INITIALIZATION_FAILED": "Failed to initialize session",
+      "CONNECTION_TEST_FAILED": "Connection test failed",
+      "REFRESH_FAILED": "Session refresh failed after {failures} consecutive failures"
+    },
+    
+    "MESSAGES": {
+      "COLLECTING_CHAT": "Collecting recent chat messages for AI context...",
+      "SENDING_TO_BACKEND": "Sending message context to backend...",
+      "PROCESSING_RESPONSE": "Processing AI response...",
+      "RESPONSE_RECEIVED": "AI response received successfully",
+      "ERROR_PROCESSING": "Error processing AI request: {error}",
+      "EXTENDING_SESSION": "Attempting to extend existing session...",
+      "SESSION_EXTENDED": "Session extended successfully",
+      "REFRESHING_SESSION": "Refreshing session...",
+      "SESSION_REFRESHED": "Session refreshed successfully",
+      "CIRCUIT_BREAKER_OPEN": "Circuit breaker opened due to repeated failures",
+      "CIRCUIT_BREAKER_RESET": "Circuit breaker reset, allowing refresh",
+      "VISIBILITY_HIDDEN": "Tab became hidden, adjusting refresh behavior",
+      "VISIBILITY_VISIBLE": "Tab became visible, checking session health",
+      "HEALTH_CHECK_PASSED": "Connection test passed on tab visibility",
+      "HEALTH_CHECK_FAILED": "Connection test failed on tab visibility, refreshing session"
+    },
+    
+    "ENDPOINTS": {
+      "HEALTH_CHECK": "Testing backend health...",
+      "SESSION_INIT": "Initializing session...",
+      "SIMPLE_CHAT": "Sending simple chat request...",
+      "PROCESS_CHAT": "Processing chat with compact JSON...",
+      "ADMIN_COMMAND": "Executing admin command: {command}",
+      "AUTO_START": "Getting auto-start instructions..."
+    },
+    
+    "PROVIDERS": {
+      "OPENAI": "OpenAI Compatible",
+      "ANTHROPIC": "Anthropic",
+      "OPENCODE": "OpenCode",
+      "NOVELAI": "NovelAI",
+      "CUSTOM": "Custom Provider",
+      "LOCAL_LLM": "Local LLM"
+    },
+    
+    "TIMESTAMP": {
+      "JUST_NOW": "Just now",
+      "MINUTES_AGO": "{minutes} minutes ago",
+      "HOURS_AGO": "{hours} hours ago",
+      "SECONDS_AGO": "{seconds} seconds ago"
+    }
+  }
+}

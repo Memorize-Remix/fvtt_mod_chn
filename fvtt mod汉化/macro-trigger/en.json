@@ -1,0 +1,224 @@
+{
+  "macro-trigger": {
+    "title": "Macro Trigger",
+    "manager": {
+      "title": "Macro Event Management",
+      "createEvent": "Create event",
+      "createFirstEvent": "Create your first event",
+      "noEventsYet": "No events yet.",
+      "table": {
+        "name": "Name",
+        "macroId": "Macro ID",
+        "events": "Events",
+        "actions": "Actions"
+      },
+      "buttons": {
+        "view": "View event",
+        "edit": "Edit event",
+        "delete": "Delete event"
+      },
+      "dialog": {
+        "createEvent": {
+          "title": "Create New Event",
+          "name": "Event Name",
+          "macroId": "Macro ID",
+          "events": "Event Type",
+          "selectEvent": "Select an event type",
+          "eventDescription": "Event Description",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "validation": {
+          "requiredFields": "The following fields are required: {fields}",
+          "fieldNames": {
+            "eventName": "Event name",
+            "macroId": "Macro ID",
+            "eventType": "Event type"
+          }
+        },
+        "eventTypes": {
+          "setup": {
+            "name": "Setup",
+            "description": "Triggered after init when systems and modules are ready."
+          },
+          "ready": {
+            "name": "Ready",
+            "description": "Final initialization hook, world is ready to use."
+          },
+          "preCreateActor": {
+            "name": "Pre Create Actor",
+            "description": "Before creating an Actor."
+          },
+          "createActor": {
+            "name": "Create Actor",
+            "description": "After creating an Actor."
+          },
+          "updateActor": {
+            "name": "Update Actor",
+            "description": "When updating an Actor's data."
+          },
+          "deleteActor": {
+            "name": "Delete Actor",
+            "description": "After deleting an Actor."
+          },
+          "preCreateItem": {
+            "name": "Pre Create Item",
+            "description": "Before creating an Item."
+          },
+          "createItem": {
+            "name": "Create Item",
+            "description": "After creating an Item."
+          },
+          "updateItem": {
+            "name": "Update Item",
+            "description": "When updating an Item's data."
+          },
+          "deleteItem": {
+            "name": "Delete Item",
+            "description": "After deleting an Item."
+          },
+          "preCreateToken": {
+            "name": "Pre Create Token",
+            "description": "Before creating a Token."
+          },
+          "createToken": {
+            "name": "Create Token",
+            "description": "After creating a Token."
+          },
+          "updateToken": {
+            "name": "Update Token",
+            "description": "When updating a Token's data."
+          },
+          "deleteToken": {
+            "name": "Delete Token",
+            "description": "After deleting a Token."
+          },
+          "preCreateScene": {
+            "name": "Pre Create Scene",
+            "description": "Before creating a Scene."
+          },
+          "createScene": {
+            "name": "Create Scene",
+            "description": "After creating a Scene."
+          },
+          "updateScene": {
+            "name": "Update Scene",
+            "description": "When updating a Scene's data."
+          },
+          "deleteScene": {
+            "name": "Delete Scene",
+            "description": "After deleting a Scene."
+          },
+          "preCreateCombat": {
+            "name": "Pre Create Combat",
+            "description": "Before creating a Combat."
+          },
+          "createCombat": {
+            "name": "Create Combat",
+            "description": "After creating a Combat."
+          },
+          "updateCombat": {
+            "name": "Update Combat",
+            "description": "When updating a Combat's data."
+          },
+          "deleteCombat": {
+            "name": "Delete Combat",
+            "description": "After deleting a Combat."
+          },
+          "renderChatMessage": {
+            "name": "Render Chat Message",
+            "description": "When a chat message is rendered."
+          },
+          "chatMessage": {
+            "name": "Chat Message",
+            "description": "When a chat message is sent."
+          },
+          "preCreateChatMessage": {
+            "name": "Pre Create Chat Message",
+            "description": "Before creating a chat message."
+          },
+          "createChatMessage": {
+            "name": "Create Chat Message",
+            "description": "After creating a chat message."
+          },
+          "controlToken": {
+            "name": "Control Token",
+            "description": "When a token is controlled/uncontrolled."
+          },
+          "hoverToken": {
+            "name": "Hover Token",
+            "description": "When hovering over a token."
+          },
+          "targetToken": {
+            "name": "Target Token",
+            "description": "When targeting or untargeting a token."
+          },
+          "preUpdateToken": {
+            "name": "Pre Update Token",
+            "description": "Before moving/updating a token."
+          },
+          "canvasReady": {
+            "name": "Canvas Ready",
+            "description": "When the canvas (map) is ready."
+          },
+          "combatStart": {
+            "name": "Combat Start",
+            "description": "When combat starts."
+          },
+          "combatRound": {
+            "name": "Combat Round",
+            "description": "When the combat round changes."
+          },
+          "combatTurn": {
+            "name": "Combat Turn",
+            "description": "When the combat turn changes."
+          },
+          "renderActorSheet": {
+            "name": "Render Actor Sheet",
+            "description": "When an Actor sheet is rendered."
+          },
+          "renderItemSheet": {
+            "name": "Render Item Sheet",
+            "description": "When an Item sheet is rendered."
+          },
+          "renderSceneControls": {
+            "name": "Render Scene Controls",
+            "description": "When the scene controls are rendered."
+          },
+          "renderJournalSheet": {
+            "name": "Render Journal Sheet",
+            "description": "When a Journal sheet is rendered."
+          }
+        },
+        "viewEvent": {
+          "title": "View Event",
+          "close": "Close"
+        },
+        "editEvent": {
+          "title": "Edit Event",
+          "save": "Save Changes",
+          "cancel": "Cancel"
+        },
+        "deleteEvent": {
+          "title": "Delete Event",
+          "confirmation": "Are you sure you want to delete this event?",
+          "warning": "This action cannot be undone!",
+          "delete": "Delete",
+          "cancel": "Cancel"
+        }
+      },
+      "notifications": {
+        "eventCreated": "Event created successfully!",
+        "eventCreateFailed": "Failed to create event",
+        "eventUpdated": "Event updated successfully!",
+        "eventUpdateFailed": "Failed to update event",
+        "eventDeleted": "Event deleted successfully!",
+        "eventDeleteFailed": "Failed to delete event!",
+        "eventNotFound": "Event not found!"
+      }
+    },
+    "notifications": {
+      "gmRequired": "You need to be a Game Master to use this feature"
+    }
+  }
+}

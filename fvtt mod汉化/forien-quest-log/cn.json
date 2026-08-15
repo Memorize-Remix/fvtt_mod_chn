@@ -1,0 +1,270 @@
+
+  "ForienQuestLog": {
+    "API": {
+      "Hooks": {
+        "Labels": {
+          "OpenMacro": "打开“{name}”"
+        },
+        "Notifications": {
+          "NoQuest": "API错误：无法使用无效的任务ID创建宏"
+        }
+      },
+      "QuestDB": {
+        "Labels": {
+          "NewQuest": "新建任务"
+        }
+      },
+      "Socket": {
+        "Notifications": {
+          "RewardDrop": "任务日志(任务奖励)：{userName}将'{itemName}'放入{actorName}的物品栏"
+        }
+      },
+      "Utils": {
+        "Notifications": {
+          "NoDocument": "无法加载UUID为'{uuid}'的实体",
+          "NoPermission": "你没有查看此实体详情的权限"
+        }
+      }
+    },
+    "DeleteDialog": {
+      "BodyObjective": "此目标及其数据将被永久删除",
+      "BodyQuest": "此任务及其数据将被永久删除",
+      "BodyReward": "此奖励及其数据将被永久删除",
+      "Cancel": "取消",
+      "Delete": "删除",
+      "HeaderDel": "确定要删除：<p>'{name}'</p>吗？",
+      "TitleDel": "删除{title}"
+    },
+    "Keybindings": {
+      "openQuestLog": {
+        "Name": "打开任务日志",
+        "Hint": "GM使用或任务日志未隐藏时打开任务日志界面"
+      },
+      "openPrimaryQuest": {
+        "Name": "打开主要任务",
+        "Hint": "若有主要任务则打开其预览/详情页面（需GM身份或查看权限）"
+      },
+      "toggleQuestTracker": {
+        "Name": "切换任务追踪器",
+        "Hint": ""
+      }
+    },
+    "Labels": {
+      "AppHeader": {
+        "ShowPlayers": "向玩家显示"
+      },
+      "Quest": "任务"
+    },
+    "Migration": {
+      "ChatMessage": {
+        "Footer": "你需要手动从合集或世界中更新以下任务的有效文档数据。<br>",
+        "Header": "Forien's Quest Log(数据库迁移)<br>已从以下任务中移除未链接的任务发布者或奖励物品：<p>",
+        "Notification": "Forien's Quest Log - 已从一个或多个任务中移除未链接的任务发布者或奖励物品。请查看聊天消息获取更多信息",
+        "QuestGiver": "任务发布者",
+        "QuestRewards": "任务奖励"
+      },
+      "Notifications": {
+        "Complete": "Forien's Quest Log - 数据迁移完成",
+        "CouldNotMigrate": "Forien's Quest Log - 无法迁移任务：'{name}'",
+        "Schema": "Forien's Quest Log - 正在将数据迁移至版本'{version}'",
+        "Start": "Forien's Quest Log - 正在迁移数据，请勿刷新"
+      }
+    },
+    "Notifications": {
+      "CannotOpen": "无法打开任务详情。该任务可能不可见或已不存在",
+      "FinishQuestAdded": "请先完成编辑并关闭当前新建任务后再添加其他任务",
+      "LinkCopied": "此任务的实体链接已复制到剪贴板",
+      "QuestAdded": "已添加'{name}'为新任务，状态：'{status}'",
+      "QuestIDCopied": "此任务的ID已复制到剪贴板",
+      "QuestMoved": "已移动'{name}'并设置新状态为：'{target}'",
+      "QuestPrimary": "'{name}'已成为新的主要任务",
+      "QuestTrackerNoActive": "任务追踪器已启用，但当前没有进行中的任务",
+      "UserCantOpen": "用户'{user}'没有打开此任务的权限"
+    },
+    "QuestLog": {
+      "Buttons": {
+        "AddQuest": "添加任务"
+      },
+      "ContextMenu": {
+        "CopyEntityLink": "复制实体内容链接",
+        "CopyQuestID": "复制任务ID",
+        "PrimaryQuest": "设为/取消设为主要任务"
+      },
+      "Labels": {
+        "TableHeader": "{0}个任务",
+        "SubTitle": "{0}的子任务"
+      },
+      "Title": "任务日志",
+      "Tooltips": {
+        "Objectives": "目标"
+      }
+    },
+    "QuestPreview": {
+      "Buttons": {
+        "RewardCustom": "自定义",
+        "RewardHide": "隐藏",
+        "RewardLock": "锁定",
+        "RewardShow": "显示", 
+        "RewardUnlock": "解锁"
+      },
+      "Labels": {
+        "CustomSource": "自定义来源",
+        "Description": "描述：",
+        "DragDropActor": "拖放角色、物品或日志条目，或左键点击设置自定义来源",
+        "DragDropActorPlayer": "拖放角色、物品或日志条目",
+        "DragDropRewards": "拖放物品至此添加为奖励",
+        "GMNotes": "GM备注：",
+        "Objective": "目标",
+        "Objectives": "目标：",
+        "PlayerNotes": "玩家备注：",
+        "Reward": "奖励",
+        "Rewards": "奖励："
+      },
+      "Management": {
+        "AddSubquest": "添加子任务",
+        "ConfigurePermissions": "配置权限",
+        "QuestBranching": "子任务：",
+        "QuestSettings": "任务设置：",
+        "SplashArt": "任务插图：",
+        "SplashInfo": "点击设置图片",
+        "SplashQuestIcon": "设为任务图标"
+      },
+      "Notifications": {
+        "BadUUID": "无法获取UUID为'{uuid}'的文档",
+        "WrongDocType": "Forien's Quest Log仅接受世界/合集中的角色、物品和日志条目作为任务发布者",
+        "WrongItemType": "Forien's Quest Log仅接受世界和合集中的物品作为奖励"
+      },
+      "Tabs": {
+        "Details": "详情",
+        "GMNotes": "GM备注",
+        "PlayerNotes": "玩家备注",
+        "QuestManagement": "管理任务"
+      },
+      "Title": "任务详情 - {name}",
+      "Tooltips": {
+        "AddCustom": "添加自定义",
+        "AddObjective": "添加目标",
+        "ChangeSplashPos": "更改插图对齐方式",
+        "DeleteQuestGiver": "删除任务发布者",
+        "DeleteSplash": "删除插图",
+        "HideAll": "全部隐藏",
+        "LockAll": "全部锁定",
+        "PrimaryQuestSet": "点击设为主要任务",
+        "PrimaryQuestUnset": "点击取消主要任务",
+        "RewardHidden": "奖励已隐藏。点击显示",
+        "RewardLocked": "奖励已锁定。点击解锁",
+        "RewardLockedPlayer": "奖励已锁定",
+        "RewardUnlocked": "奖励已解锁。点击锁定",
+        "RewardUnlockedPlayer": "奖励已解锁",
+        "RewardVisible": "奖励可见。点击隐藏",
+        "ShowAll": "全部显示",
+        "TaskHidden": "目标已隐藏。点击显示",
+        "TaskVisible": "目标可见。点击隐藏",
+        "ToggleImage": "切换角色/Token图片",
+        "UnlockAll": "全部解锁",
+        "ViewSplashArt": "查看插图"
+      }
+    },
+    "QuestTracker": {
+      "NoPrimary": "无可用主要任务",
+      "Title": "任务追踪器",
+      "Tooltips": {
+        "BackgroundShow": "点击显示背景",
+        "BackgroundUnshow": "点击使背景透明",
+        "PrimaryQuestShow": "点击显示主要任务",
+        "PrimaryQuestUnshow": "点击显示所有任务"
+      }
+    },
+    "QuestTypes": {
+      "Labels": {
+        "Active": "进行中",
+        "active": "进行中",
+        "Available": "可接取",
+        "available": "可接取",
+        "Completed": "已完成",
+        "completed": "已完成",
+        "Failed": "已失败",
+        "failed": "已失败",
+        "InActive": "未激活",
+        "inactive": "未激活",
+        "Status": "任务状态：{statusLabel}"
+      },
+      "Tooltips": {
+        "SetActive": "设为进行中",
+        "SetAvailable": "设为可接取",
+        "SetCompleted": "设为已完成",
+        "SetFailed": "设为已失败",
+        "SetInactive": "设为未激活",
+        "Status": "状态：{statusI18n}"
+      }
+    },
+    "Settings": {
+      "allowPlayersAccept": {
+        "Enable": "允许玩家接取任务",
+        "EnableHint": "勾选允许玩家从'可接取'选项卡接取任务"
+      },
+      "allowPlayersCreate": {
+        "Enable": "允许玩家创建任务",
+        "EnableHint": "勾选允许玩家创建任务。玩家创建的任务将出现在'可接取'选项卡中并拥有玩家编辑权限。需要核心'创建日志'权限"
+      },
+      "allowPlayersDrag": {
+        "Enable": "允许玩家拖拽奖励",
+        "EnableHint": "勾选允许玩家从任务详情窗口将奖励拖拽至其拥有的角色物品栏"
+      },
+      "countHidden": {
+        "Enable": "统计隐藏目标",
+        "EnableHint": "勾选后，已完成/总目标数将包含隐藏目标"
+      },
+      "defaultPermissionLevel": {
+        "Enable": "默认任务权限级别",
+        "EnableHint": "设置新建任务时的默认权限级别",
+        "NONE": "无",
+        "OBSERVER": "查看",
+        "OWNER": "拥有"
+      },
+      "dynamicBookmarkBackground": {
+        "Enable": "动态书签背景",
+        "EnableHint": "勾选后书签标签背景将动态设置为窗口内容背景"
+      },
+      "hideFQLFromPlayers": {
+        "Enable": "对玩家隐藏任务日志",
+        "EnableHint": "启用后所有玩家将无法看到任务日志，仅GM可访问"
+      },
+      "navStyle": {
+        "bookmarks": "书签式",
+        "classic": "经典标签式",
+        "Enable": "导航样式",
+        "EnableHint": "设置任务日志的导航显示方式"
+      },
+      "notifyRewardDrop": {
+        "Enable": "显示奖励掉落通知",
+        "EnableHint": "勾选后在奖励物品拖放到玩家角色表时显示UI通知"
+      },
+      "questTrackerResizable": {
+        "Enable": "可调整任务追踪器大小",
+        "EnableHint": "勾选允许手动调整任务追踪器的大小"
+      },
+      "showFolder": {
+        "Enable": "显示任务数据文件夹",
+        "EnableHint": "勾选后在日志选项卡中显示任务数据文件夹（仅调试用）"
+      },
+      "showTasks": {
+        "default": "显示目标：完成/总数",
+        "Enable": "在任务日志中显示目标",
+        "EnableHint": "设置是否及如何在任务日志中任务标题旁显示目标数量。此设置不影响任务预览",
+        "no": "隐藏\"目标\"列",
+        "onlyCurrent": "显示目标：已完成"
+      },
+      "trustedPlayerEdit": {
+        "Enable": "允许受信玩家编辑任务",
+        "EnableHint": "勾选允许受信玩家对他们拥有权限的任务进行扩展编辑和状态控制"
+      }
+    },
+    "Tooltips": {
+      "Delete": "删除",
+      "Edit": "编辑",
+      "HiddenQuestNoPlayers": "此任务对所有玩家隐藏",
+      "PrimaryQuest": "主要任务"
+    }
+  }
+}

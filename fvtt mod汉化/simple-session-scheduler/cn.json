@@ -1,0 +1,67 @@
+
+    "simple-session-scheduler": {
+        "settings": {
+            "sessionFrequency": {
+                "name": "会话频率",
+                "hint": "距离上次会话多久后安排下一次会话。",
+                "daily": "每日",
+                "weekly": "每周",
+                "biweekly": "每两周",
+                "monthly": "每月"
+            },
+            "silentMode": {
+                "name": "静默模式",
+                "hint": "如果启用，模组将不会提示确认下一次会话日期，而是根据会话频率自动设置。"
+            },
+            "enable": {
+                "name": "启用",
+                "hint": "启用模组功能。"
+            },
+            "announceType": {
+                "name": "公告类型",
+                "hint": "选择自动设置下一次会话日期时的公告方式。",
+                "none": "无",
+                "public": "公开",
+                "whisperGMs": "私聊所有GM",
+                "whisperCurrentUser": "私聊当前用户"
+            },
+            "sessionReminder": {
+                "name": "会话提醒",
+                "hint": "加入世界时提醒下一次会话的安排时间。",
+                "prompt": "对话框",
+                "whisper": "私聊",
+                "none": "无"
+            },
+            "dateSettings": {
+                "name": "日期设置",
+                "hint": "配置日期显示方式。长格式：星期日，2023年1月1日 12:00 PM。数字格式：2023/01/01 12:00 PM。",
+                "long": "长格式",
+                "numeric": "数字格式"
+            }
+        },
+        "dialogs": {
+            "sessionDate": {
+                "title": "即将到来的会话",
+                "content": "下一次会话安排在 {date}。"
+            },
+            "sessionDatePassed": {
+                "title": "会话日期已过",
+                "content": "下一次会话日期是 {date}，但已经过去了。你的GM应该更新会话日期。"
+            },
+            "reschedule": {
+                "title": "下一次会话确认",
+                "lastSession": "上一次会话安排在：",
+                "futureSession": "下一次会话将安排在：",
+                "confirm": "你要继续吗？"
+            }
+        },
+        "announcement": {
+            "message": "下一次会话已安排在 {date}。",
+            "silentMessage": "下一次会话已自动安排在 {date}。",
+            "speaker": "Simple Session Scheduler",
+            "sessionDatePassed": "下一次会话日期是 {date}，但已经过去了。你的GM应该更新会话日期。",
+            "sessionDate": "下一次会话安排在 {date}。",
+            "setInitialSession": "要使用Simple Session Scheduler，你需要先在编辑世界中设置下一次会话日期。"
+        }
+    }
+}

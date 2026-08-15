@@ -1,0 +1,109 @@
+{
+    "TEAMBOX": {
+        "Title": "Team Inventory",
+        "Inventory": {
+            "Title": "Team Inventory",
+            "Empty": "No items in inventory"
+        },
+        "Settings": {
+            "Theme": {
+                "Name": "Theme",
+                "Hint": "Select the visual theme for the inventory"
+            }
+        },
+        "Controls": {
+            "Sort": {
+                "Name": "Sort by Name",
+                "Type": "Sort by Type",
+                "Quantity": "Sort by Quantity"
+            },
+            "Edit": "Edit",
+            "Delete": "Delete",
+            "DeleteAll": "Delete All",
+            "Give": "Give",
+            "Take": "Take",
+            "Filters": {
+                "All": "All",
+                "weapon": "Weapons",
+                "armor": "Armor",
+                "item": "Items",
+                "equipment": "Equipment",
+                "consumables": "Consumables",
+                "tools": "Tools",
+                "spells": "Spells",
+                "features": "Features",
+                "spacecraftmods": "Spacecraft Mods",
+                "vehicleweapons": "Vehicle Weapons",
+                "spacecraftweapons": "Spacecraft Weapons",
+                "currency": "Currency",
+                "containers": "Containers",
+                "loot": "Loot",
+                "cybernetics": "Cybernetics",
+                "modifications": "Modifications",
+                "drugs": "Drugs",
+                "magic": "Magic Items",
+                "tech": "Technology"
+            },
+            "Confirm": "Confirm",
+            "Cancel": "Cancel"
+        },
+        "DropZone": {
+            "Text": "Drop items here"
+        },
+        "Dialogs": {
+            "Edit": {
+                "Title": "Edit Item",
+                "Quantity": "Quantity",
+                "Confirm": "Update",
+                "Cancel": "Cancel"
+            },
+            "Delete": {
+                "Title": "Delete Item",
+                "Content": "Are you sure you want to delete this item?",
+                "Confirm": "Delete",
+                "Cancel": "Cancel"
+            },
+            "DeleteAll": {
+                "Title": "Delete All Inventory",
+                "Content": "Are you sure you want to delete all items from the team inventory? This action cannot be undone."
+            },
+            "Give": {
+                "Title": "Give Item",
+                "SelectPlayer": "Select Player",
+                "Token": "Token",
+                "Quantity": "Quantity"
+            },
+            "TakeRequest": {
+                "Title": "Take Item Request",
+                "Content": "{player} requests to take {item}",
+                "Confirm": "Allow",
+                "Cancel": "Deny"
+            }
+        },
+        "Notifications": {
+            "ItemAdded": "Item added to inventory",
+            "ItemUpdated": "Item updated",
+            "ItemDeleted": "Item deleted",
+            "AllItemsDeleted": "All items have been deleted from the team inventory",
+            "ItemGiven": "Item given to {target}",
+            "ItemReceived": "Received {item} from {source}",
+            "ItemTaken": "You took 1 {name}",
+            "ItemRemoved": "Item removed from team inventory",
+            "QuantityUpdated": "Quantity of {item} updated to {quantity}",
+            "ItemSent": "{item} sent to {recipient}",
+            "ItemRequested": "Item request sent to GM",
+            "ItemRequestAccepted": "Request accepted for {item}",
+            "ItemRequestDenied": "Request denied for {item}"
+        },
+        "Errors": {
+            "NoTokens": "No tokens on scene",
+            "InvalidItem": "Invalid item",
+            "NoPermission": "You don't have permission to do that",
+            "TargetNotFound": "Target not found",
+            "AddFailed": "Failed to add item",
+            "UpdateFailed": "Failed to update item",
+            "DeleteFailed": "Failed to delete item",
+            "InvalidQuantity": "Invalid quantity"
+        }
+    }
+}

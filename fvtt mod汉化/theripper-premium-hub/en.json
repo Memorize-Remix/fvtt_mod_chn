@@ -1,0 +1,63 @@
+{
+    "theripper-premium-hub": {
+        "settings": {
+            "autoCheck": {
+                "name": "Check for Updates on Startup",
+                "hint": "Automatically check on world load if any of my premium modules have updates."
+            },
+            "checkDisabled": {
+                "name": "Check Modules not Enabled",
+                "hint": "Check for updates on modules that are installed but not enabled."
+            }
+        },
+        "tweaks-menu": {
+            "title": "Tweaks",
+            "label": "Configure Tweaks",
+            "hint": "Configure some quality of life features, such as Startup Macros, Clean Header Buttons, and CSS tweaks.",
+            "tabs": {
+                "misc": "Miscellaneous",
+                "startup-macros": "Startup Macros",
+                "css-tweaks": "CSS Tweaks"
+            },
+            "initMacros": {
+                "name": "Startup Macros",
+                "hint": "Execute macros on world load. Macros are executed in the order they are listed here."
+            },
+            "readyMacros": {
+                "name": "Ready Macros",
+                "hint": "Execute macros when the client is ready. Macros are executed in the order they are listed here."
+            },
+            "cssTweak": {
+                "name": "CSS Tweaks",
+                "hint": "Write custom CSS to modify Foundry or Modules styles. Three fields are provided for organization but you could also use just one field."
+            },
+            "cleanHeaderButtons": {
+                "name": "Clean Header Buttons",
+                "hint": "Remove text from header buttons to make them cleaner. If you use a lot of my modules, you might end up with a lot of buttons in window headers, this option removes the text from them. (Requires LibWrapper)"
+            },
+            "compactSidebar": {
+                "name": "Compact Sidebar",
+                "hint": "Make the sidebar entries smaller to fit more items on the screen."
+            },
+            "enableSettingsSwap": {
+                "name": "Forced Client Settings",
+                "hint": "Enable the ability to change world settings to client settings. This will force the selected settings for all clients, players also no longer be able to see these settings."
+            },
+            "diceTray": {
+                "name": "Dice Tray",
+                "hint": "Add a dice tray to the chat log. This will allow you to roll dice and add modifiers to them."
+            },
+            "autoRotate": {
+                "name": "Auto Rotate",
+                "hint": "Automatically rotate tokens to face the movement direction and the targeted token.",
+                "none": "Disabled",
+                "defaultOn": "Enabled (Default On)",
+                "defaultOff": "Enabled (Default Off)",
+                "on": "Enabled",
+                "off": "Disabled",
+                "default": "Default"
+            }
+        },
+        "wtcNotification": "Configuration for {setting} set to {value}. Please reload the game for the changes to take effect. Changes to the setting will not be saved until the next reload."
+    }
+}

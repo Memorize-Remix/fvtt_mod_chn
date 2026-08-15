@@ -1,0 +1,38 @@
+
+    "EVENTIDE_TELEPORTER": {
+        "Keybind": {
+            "TeleportTokens": "传送选中Token",
+            "TeleportTokensHint": "将选中的Token传送到鼠标光标位置"
+        },
+        "Settings": {
+            "Mode": "传送模式",
+            "ModeHint": "设置传送模式：关闭（禁用）、慢速（按住按键点击）或快速（即时）",
+            "ModeOff": "关闭",
+            "ModeSlow": "慢速模式",
+            "ModeFast": "快速模式",
+            "SnapToGrid": "对齐到网格",
+            "SnapToGridHint": "将传送的Token对齐到最近的网格方格中心"
+        },
+        "Controls": {
+            "Title": "Eventide传送",
+            "ModeOff": "传送：关闭",
+            "ModeSlow": "传送：慢速模式",
+            "ModeFast": "传送：快速模式"
+        },
+        "Notifications": {
+            "ModeOff": "传送已禁用",
+            "ModeSlow": "传送设置为慢速模式（按住按键+点击）",
+            "ModeFast": "传送设置为快速模式（即时）",
+            "SlowModeInstruction": "按住传送键并点击想要传送的位置",
+            "TokensTeleported": "成功传送 {count} 个Token"
+        },
+        "Warnings": {
+            "GMOnly": "只有GM可以使用传送",
+            "NotEnabled": "传送未启用。请在Token控件中点击传送按钮启用它。",
+            "NoTokensSelected": "没有选中要传送的Token"
+        },
+        "Errors": {
+            "TeleportFailed": "传送失败。请检查控制台获取详细信息。"
+        }
+    }
+}

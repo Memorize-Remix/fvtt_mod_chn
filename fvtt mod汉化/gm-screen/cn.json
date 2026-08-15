@@ -1,0 +1,97 @@
+
+  "GMSCR": {
+    "Grid": "网格",
+    "gmScreen": {
+      "Title": "GM屏幕",
+      "ClearCell": "清空单元格",
+      "ConfigureCell": "配置行列跨度",
+	  "ChooseImage": "为单元格选择图片（不使用日志页面）",
+      "EmptyCellHint": "从世界或合集中拖放日志条目、随机表、角色或物品到此处",
+      "Open": "GM屏幕",
+      "OpenPlayer": "玩家屏幕",
+      "OpenFull": "打开完整实体表",
+	  "ShowNPCStatBlock": "显示属性表",
+	  "ShowNPCNormal": "显示NPC表",
+      "Refresh": "刷新",
+      "Reset": "清空网格"
+    },
+    "settings": {
+      "gm-screen-config": {
+        "Name": "网格标签",
+        "Label": "标签配置",
+        "Hint": "在此添加、删除和更新网格标签"
+      },
+      "columns": {
+        "Name": "列数",
+        "Hint": "需要多少列？修改此值可能需要清空网格"
+      },
+      "rows": {
+        "Name": "行数",
+        "Hint": "需要多少行？修改此值可能需要清空网格"
+      },
+      "right-margin": {
+        "Name": "仅抽屉模式：右边距",
+        "Hint": "设置GM屏幕右侧与边栏的偏移距离。此数值影响抽屉显示模式下屏幕的最大可能宽度"
+      },
+      "drawer-height": {
+        "Name": "仅抽屉模式：高度",
+        "Hint": "设置抽屉显示模式下GM屏幕的高度"
+      },
+      "drawer-width": {
+        "Name": "仅抽屉模式：宽度",
+        "Hint": "根据边栏和右边距计算后的可用屏幕宽度百分比"
+      },
+      "drawer-opacity": {
+        "Name": "仅抽屉模式：透明度",
+        "Hint": "控制抽屉的不透明度"
+      },
+      "condensedButton": {
+        "Name": "精简GM屏幕按钮",
+        "Hint": "移除按钮上的文字"
+      },
+      "reset": {
+        "Name": "重置",
+        "Hint": "清空网格内容。此操作不可撤销"
+      },
+      "display-as-drawer": {
+        "Name": "以抽屉模式显示",
+        "Hint": "将GM屏幕显示为底部抽屉而非普通对话框。如需使用弹出功能，请设为false"
+      }
+    },
+    "warnings": {
+      "noGrids": "你的GM尚未共享任何GM屏幕网格",
+      "clearConfirm": {
+        "Title": "清空网格",
+        "Content": "确定要清空网格内容吗？此操作不可撤销"
+      }
+    },
+    "cellConfigDialog": {
+      "CellConfig": "单元格配置",
+      "RowSpan": "跨越行数",
+      "ColSpan": "跨越列数"
+    },
+    "gridConfig": {
+      "GridConfig": "网格配置",
+      "GridTabs": "网格标签配置",
+      "table": {
+        "Add": "添加",
+        "Columns": "列覆盖",
+        "Rows": "行覆盖", 
+		"Shared": "共享",
+		"TabLabel": "标签页标签",
+		"TabOrder": "顺序"
+      },
+      "errors": {
+        "empty": "无法保存没有标签的网格"
+      }
+    },
+    "entitySheet": {
+      "Label": "GM屏幕表",
+      "Hint": "为此物品设置在GM屏幕上使用的专用表"
+    },
+    "keybindings": {
+      "openCloseScreen": "打开/关闭 GM 屏幕",
+      "changeTab": "切换 GM 屏幕标签页"
+    }
+  }
+}

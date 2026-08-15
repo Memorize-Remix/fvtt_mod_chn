@@ -1,0 +1,64 @@
+
+    "clock-works.clocks": "进程",
+    "clock-works.settings": {
+        "default-ownership": {
+            "name": "默认权限",
+            "hint": "决定新创建进程的默认权限。\"限制\" 表示用户可以看到进程，但其名称是隐藏的；\"查看\" 允许看到名称；\"拥有\" 允许使用增加和减少按钮以及编辑进程属性。"
+        },
+        "default-color-empty": {
+            "name": "默认空槽颜色",
+            "hint": "新创建时钟上，空槽位使用的默认颜色。"
+        },
+        "default-color-filled": {
+            "name": "默认已填充颜色",
+            "hint": "新创建时钟上，已填充槽位使用的默认颜色。"
+        },
+        "default-color-frame": {
+            "name": "默认边框颜色",
+            "hint": "新创建时钟上，边框使用的默认颜色。"
+        }
+    },
+    "clock-works.edit-form": {
+        "title": "编辑进程",
+        "save": "保存并关闭",
+        "default-name": "新进程",
+        "fields": {
+            "name": "名称",
+            "name-tooltip": "进程名称/主题",
+            "size": "大小",
+            "size-tooltip": "进程段总数",
+            "filled": "填充区段",
+            "filled-tooltip": "进程上已填刻度数",
+            "imagebg": "背景图片",
+            "imagebg-tooltip": "进程背景图片",
+            "imagefg": "前景图像",
+            "imagefg-tooltip": "进程前景图像",
+            "colorempty": "空段颜色",
+            "colorempty-tooltip": "进程空段的颜色",
+            "colorfilled": "填充颜色",
+            "colorfilled-tooltip": "进程上填满区段的颜色",
+            "colorframe": "框架颜色",
+            "colorframe-tooltip": "进程框架的颜色"
+        },
+        "permission-hint": "配置对该特定进程的访问权限，允许为每个用户分配不同的可见性级别。\"限制\"意味着用户可以看到进程，但其名称是隐藏的；\"查看\" 允许看到名称；\"拥有\" 允许使用增加和减少按钮以及编辑进程属性。"
+    },
+    "clock-works.folders": {
+		"name": "文件夹名称",
+        "color": "文件夹颜色",
+        "default-name": "新文件夹"
+    },
+    "clock-works.sidebar": {
+        "create-folder": "创建文件夹",
+        "edit-folder": "编辑文件夹",
+        "delete-folder": "删除文件夹和内容",
+        "create": "创建进程",
+        "show": "向玩家展示",
+        "edit": "编辑",
+        "duplicate": "复制",
+        "delete": "删除",
+        "postfix-copy": "(复制)",
+        "obfuscated": "未知进程 #{index}",
+        "increment": "增加",
+        "decrement": "减少"
+    }
+}

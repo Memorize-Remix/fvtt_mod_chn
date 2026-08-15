@@ -1,0 +1,219 @@
+
+  "EXPEDITION_TRACKER": {
+    "Title": "远征追踪器",
+    "NoTurnsRecorded": "尚未记录远征回合。",
+    "NoWanderingCheckRecorded": "尚未记录随机遭遇检查。",
+    "Actions": {
+      "AdvanceTurn": "推进回合",
+      "RestTurn": "休息",
+      "SearchTurn": "搜索",
+      "ListenTurn": "聆听"
+    },
+    "TurnTypes": {
+      "Advance": "推进回合",
+      "Rest": "休息回合",
+      "Search": "搜索回合",
+      "Listen": "聆听",
+      "Other": "其他回合"
+    },
+    "Common": {
+      "Cancel": "取消"
+    },
+    "Expedition": {
+      "NameLabel": "远征名称",
+      "NamePlaceholder": "遗忘矿坑",
+      "StartAction": "新建远征",
+      "EndAction": "结束远征",
+      "StartDialogTitle": "开始新远征",
+      "StartConfirmTitle": "开始新远征",
+      "StartConfirmBody": "开始新远征并清除当前回合计数和远征日志？",
+      "StartConfirmYes": "开始新远征",
+      "EndConfirmTitle": "结束远征",
+      "EndConfirmBody": "结束当前远征并收起追踪器？",
+      "EndConfirmYes": "结束远征"
+    },
+    "Log": {
+      "Toggle": "切换远征日志",
+      "Empty": "尚无远征日志条目。"
+    },
+    "Notes": {
+      "Action": "添加备注",
+      "Title": "备注当前回合",
+      "Label": "回合备注",
+      "Placeholder": "为当前回合添加详细信息...",
+      "Empty": "继续前请输入备注。",
+      "Unavailable": "至少记录一个回合后才能添加备注。"
+    },
+    "OtherTurn": {
+      "Action": "其他回合",
+      "Title": "其他远征回合",
+      "PromptLabel": "回合活动",
+      "Placeholder": "绘制地图、强行开门、检查神像...",
+      "Empty": "继续前请输入回合活动。"
+    },
+    "TimedEffects": {
+      "AddAction": "添加效果",
+      "RemoveAction": "移除效果",
+      "NoTemplatesConfigured": "未配置定时效果模板。请先在模组设置中添加。",
+      "RemainingTooltip": "剩余 {remaining} 回合（共 {total}）",
+      "SourceTooltip": "来源：{source}",
+      "LightTooltip": "光照：明亮 {bright}，昏暗 {dim}，角度 {angle}",
+      "PausedStatus": "已暂停",
+      "UnknownSource": "未知来源",
+      "Activated": "{name} 已激活。",
+      "ActivatedWithSource": "{source} 激活了 {name}",
+      "Announce": "{name} 开始。（持续时间：{duration}）",
+      "AnnounceWithTarget": "{target} 获得 {name}。（持续时间：{duration}）",
+      "AnnounceLight": "{name} 已点燃！（持续时间：{duration}）",
+      "AnnounceLightWithTarget": "{target} 点燃了 {name}！（持续时间：{duration}）",
+      "AnnounceDurationLabel": "{duration} {incrementLabel}",
+      "Paused": "{name} 已暂停。",
+      "PausedWithSource": "{source} 的 {name} 已暂停。",
+      "Resumed": "{name} 已恢复。",
+      "ResumedWithSource": "{source} 的 {name} 已恢复。",
+      "Expired": "{name} 已过期。",
+      "ExpiredWithSource": "{source} 的 {name} 已过期。",
+      "ExtinguishedMessage": "{tokenName} 的 {name} 已熄灭！",
+      "TemplateValidation": "每个定时效果模板都需要名称和图标路径。",
+      "AddDialog": {
+        "Title": "添加定时效果",
+        "TemplateLabel": "模板",
+        "CustomTemplateOption": "自定义效果",
+        "CustomNameLabel": "自定义效果名称",
+        "CustomIconLabel": "自定义图标路径",
+        "BrowseIconAction": "浏览",
+        "CustomRequired": "请输入自定义效果名称。",
+        "DurationLabel": "持续时间（回合）",
+        "AnnounceEffectLabel": "宣布效果",
+        "SourceLabel": "来源（可选）",
+        "CustomSourceLabel": "自定义来源（可选）",
+        "SourcePlaceholder": "选择场景角色或输入自定义来源...",
+        "LightSourceLabel": "光源",
+        "SourceTokenLabel": "场景Token",
+        "SourceTokenPlaceholder": "选择当前场景上的Token",
+        "SourceLabelOverride": "显示标签（可选）",
+        "SourceLabelOverridePlaceholder": "留空以使用Token名称",
+        "BrightLightLabel": "明亮光照",
+        "DimLightLabel": "昏暗光照",
+        "EmissionAngleLabel": "发射角度",
+        "SourceTokenRequired": "为光源效果选择当前场景上的Token。"
+      },
+      "ManageDialog": {
+        "Title": "管理 {name}",
+        "NameLabel": "名称",
+        "RemainingTurns": "剩余回合",
+        "TotalTurns": "总回合数",
+        "SourceLabel": "来源",
+        "SourcePlaceholder": "可选来源",
+        "TokenLabel": "场景Token",
+        "UnknownToken": "未知Token",
+        "DisplayLabel": "显示标签",
+        "DisplayLabelPlaceholder": "留空以使用Token名称",
+        "SaveAction": "保存",
+        "PauseAction": "暂停",
+        "ResumeAction": "恢复",
+        "CustomNameRequired": "请输入自定义效果名称。"
+      },
+      "RemoveDialog": {
+        "Title": "移除定时效果",
+        "Body": "从定时效果轨道中移除 {name}？",
+        "LightSourceBody": "从定时效果轨道中移除 {name}。是否同时重新计算关联Token的光照？",
+        "RemoveOnlyAction": "仅移除效果",
+        "RemoveAndRecalculateAction": "移除效果并重新计算光照"
+      },
+      "Settings": {
+        "MenuLabel": "定时效果模板",
+        "MenuAction": "配置模板",
+        "MenuHint": "配置可添加到定时效果回合轨道的效果模板。",
+        "FormHint": "定义可重用的定时效果模板，包括名称、图标路径和可选的默认持续时间。",
+        "TemplateName": "名称",
+        "TemplateIconPath": "图标路径",
+        "TemplateConfig": "模板配置",
+        "TemplateDefaultDuration": "默认持续时间",
+        "LightSourceLabel": "光源",
+        "BrightLightLabel": "明亮光照",
+        "DimLightLabel": "昏暗光照",
+        "EmissionAngleLabel": "发射角度",
+        "TemplateActions": "操作",
+        "AddTemplate": "添加模板",
+        "BrowseIconPath": "浏览",
+        "RemoveTemplate": "移除",
+        "SaveTemplates": "保存模板"
+      }
+    },
+    "Journal": {
+      "Name": "远征日志",
+      "LogLabel": "将远征回合记录到日志",
+      "LogHint": "创建或使用远征日志日志，并将此远征添加为新页面。",
+      "NameRequired": "输入远征名称以将此远征记录到日志。",
+      "Unavailable": "无法创建或更新远征日志日志。",
+      "Started": "远征已开始",
+      "Ended": "远征已结束",
+      "HourHeading": "第 {hour} 小时"
+    },
+    "Time": {
+      "SettingsLegend": "时间程序",
+      "ProcedureLabel": "时间程序",
+      "Presets": {
+        "Dungeon": "地牢回合",
+        "Overland": "野外/六角格探索",
+        "Custom": "自定义"
+      },
+      "IncrementLabelSingular": "增量标签（单数）",
+      "IncrementLabelPlural": "增量标签（复数）",
+      "CycleLabelSingular": "周期标签（单数）",
+      "CycleLabelPlural": "周期标签（复数）",
+      "IncrementsPerCycle": "每周期增量数",
+      "IncrementCountLabel": "{label} {count}",
+      "CycleCountLabel": "{label} {count}",
+      "IncrementInCycleLabel": "{increment} 在 {cycle} {count}/{total}",
+      "CycleHeading": "{label} {count}",
+      "NoteEntry": "{increment}：备注 - {note}",
+      "SummaryIncrement": "增量：{label}",
+      "SummaryCycle": "周期：{label}",
+      "SummaryCadence": "{count} {increment} 每 {cycle}",
+      "CustomRequired": "继续前请完成所有自定义时间程序字段。"
+    },
+    "Wandering": {
+      "Check": "随机遭遇检查",
+      "RuleLabel": "随机规则：{value}",
+      "AutoLabel": "自动检查：{value}",
+      "LastLabel": "上次随机遭遇检查：{value}",
+      "SettingsLegend": "随机遭遇检查设置",
+      "EncounterChanceLabel": "遭遇概率",
+      "ChanceSeparator": "在",
+      "EveryLabel": "每多少个增量检查一次？",
+      "AutoCheckLabel": "自动进行随机遭遇检查",
+      "AutoCheckHint": "如果启用，追踪器将在每个匹配的回合间隔后自动进行随机遭遇检查。手动按钮仍然可用。",
+      "SettingsHint": "这些设置与此远征一起存储，并由随机遭遇检查按钮使用。",
+      "CadenceEveryIncrement": "每 {label} 检查",
+      "CadenceEveryIncrements": "每 {count} {label} 检查",
+      "RuleSummary": "{threshold}-in-{dieFaces}，{cadence}",
+      "AutoEnabled": "开启（{cadence}）",
+      "AutoDisabled": "关闭",
+      "Result": "1d{dieFaces} = {total}（{outcome}）",
+      "Encounter": "遭遇",
+      "NoEncounter": "无遭遇",
+      "FlavorWithRule": "随机怪物检查（{rule}）",
+      "AutoFlavorWithRule": "自动随机怪物检查（{rule}）"
+    },
+    "Settings": {
+      "Enable": {
+        "Name": "启用远征追踪器",
+        "Hint": "如果启用，GM可以使用热栏上方的远征追踪器进行回合追踪和远征日志记录。"
+      },
+      "TimedEffectsEnable": {
+        "Name": "启用定时效果回合轨道",
+        "Hint": "如果启用，远征追踪器将显示定时效果回合轨道，并允许GM添加倒计时效果。"
+      }
+    },
+    "TrackerPosition": {
+      "ResetMenuLabel": "重置追踪器位置",
+      "ResetMenuAction": "重置位置",
+      "ResetMenuHint": "将远征追踪器HUD重置回热栏上方的默认位置（仅对您的客户端生效）。",
+      "ResetDescription": "将远征追踪器HUD重置到热栏上方的默认位置。",
+      "ResetConfirmAction": "重置位置",
+      "ResetSuccess": "远征追踪器位置已重置。"
+    }
+  }
+}

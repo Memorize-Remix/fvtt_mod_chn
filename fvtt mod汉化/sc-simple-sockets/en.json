@@ -1,0 +1,301 @@
+{
+  "SCSockets": {
+    "TabLabel": "Sockets",
+    "ColumnSlot": "Slot",
+    "ActionAdd": "Add",
+    "ActionDelete": "Delete",
+    "ActionRemoveGem": "Remove Gem",
+	"ActionOpenGem": "Open Gem",
+    "EmptyList": "None",
+    "SocketEmptyName": "Empty",
+    "SocketEmptyTooltip": "Empty Slot",
+    "Notifications": {
+      "InvalidSocketIndex": "Invalid socket index.",
+      "CannotResolveItem": "Cannot resolve dropped item.",
+      "OnlyGems": "Only socket-compatible items can be inserted.",
+      "GemIncompatible": "That item is not compatible with this socket.",
+      "GemUnsocketed": "Gem unsocketed.",
+	  "CannotOpenGem": "Could not open the gem item.",
+      "MaxReached": "Maximum number of sockets reached.",
+      "GemRequiresSocket": "This gem must be socketed before it can be used.",
+      "HostNotSocketable": "This item type cannot receive sockets.",
+      "SocketConditionFailed": "That gem does not meet this socket's requirements.",
+      "SocketConditionError": "This socket condition could not be evaluated."
+    },
+    "Effects": {
+      "DefaultName": "Gem Effect"
+    },
+    "GemTargetTypes": {
+      "Label": "Allowed Item Types",
+      "Hint": "Choose which item subtypes can receive this gem.",
+      "AllTypes": "All Types",
+      "Groups": {
+        "Weapons": "Weapons",
+        "Equipment": "Equipment"
+      }
+    },
+	"GemDetails": {
+      "TabLabel": "+Details",
+      "SelectLabel": "Additional Details",
+      "Hint": "Choose how this gem should be categorized.",
+      "TypeFieldset": "Details Type",
+      "Disclaimer": "Use the fields below to adjust attacks and damage made with the item that holds this gem (including spells). Active Effects applied to the actor affect all eligible attacks globally. For armor and shields, use the gem's standard Active Effects on the item.",
+      "Options": {
+        "None": "None",
+        "Weapons": "Weapons",
+        "Equipment": "Equipment"
+      },
+      "ExtraDamage": {
+        "Label": "Extra Damage",
+        "Hint": "Add one or more extra damage entries applied when this gem is socketed into weapons or spells.",
+        "Damage": "Damage",
+        "Type": "Type",
+        "Add": "Add damage",
+        "Remove": "Remove",
+        "Clear": "Clear all",
+        "Fields": {
+          "Number": "Number",
+          "Die": "Die",
+          "Bonus": "Bonus",
+          "Activity": "When to apply"
+        },
+        "ActivityHint": "Choose when this extra damage applies. Any action: always. Attack only: only on attack-type activities. Spell only: only when socketed into a spell item."
+      },
+      "ExtraDamageActivity": {
+        "Any": "Any action",
+        "Attack": "Attack only",
+        "Spell": "Spell only"
+      },
+      "CritDamage": {
+        "Label": "Critical-Only Damage",
+        "Hint": "Damage that only applies when this gem is socketed and you roll critical damage (button or crit action)."
+      },
+      "CritThreshold": {
+        "Label": "Critical Threshold",
+        "Hint": "Lowest d20 result that counts as a critical hit for attack rolls with this gem socketed. If multiple gems adjust crit, the lowest value is used. Leave blank to use the default value."
+      },
+      "CritMultiplier": {
+        "Label": "Critical Multiplier",
+        "Hint": "Multiply critical damage by this value when this gem is socketed. If multiple gems set this, the highest value is used. Leave blank to keep the default multiplier."
+      },
+      "AttackBonus": {
+        "Label": "Attack Bonus",
+        "Hint": "Flat bonus added to attack rolls when this gem is socketed. Bonuses from multiple gems stack. Leave blank for none."
+      }
+    },
+	"SocketDescription": {
+      "Label": "Socket Description"
+    },
+	"ItemDetails": {
+      "CustomDetailsHeading": "Custom Details",
+      "EnableSocketTab": "Enable Socket Tab",
+      "EnableSocketTabHint": "Show the Sockets tab on this item when the global display setting is disabled.",
+      "EnableSocketTabLockedHint": "Items that already have sockets keep this option enabled until all sockets are removed."
+    },
+    "SocketSlotConfig": {
+      "Title": "Socket Slot Settings",
+      "Subtitle": "Configure rules, description, and tint for this slot.",
+      "SlotLabel": "Slot",
+      "SlotNameLabel": "Slot name",
+      "HostLabel": "Host item",
+      "GemLabel": "Gem in slot",
+      "InspectHost": "Open Host Item",
+      "InspectHostHint": "Opens the host item sheet.",
+      "InspectGem": "Inspect Gem",
+      "InspectHint": "Opens the socketed gem in read-only mode.",
+      "EmptySlot": "Empty slot",
+      "NoGem": "No gem is currently socketed in this slot.",
+      "Save": "Save and Close",
+      "Cancel": "Cancel",
+      "Saved": "Slot settings saved.",
+      "Condition": {
+        "Label": "Slot condition",
+        "Hint": "Use JavaScript. Available variables: gem, gemItem, hostItem, item, actor, user, slot, slotConfig, slotIndex, source, getProperty, hasProperty, deepClone.",
+        "Placeholder": "Example: return gem.name?.includes('Ruby') && getProperty(gem, 'flags.world.rarity') === 'rare';",
+        "Wiki": "Open wiki"
+      },
+      "Description": {
+        "Label": "Slot description",
+        "Hint": "Shown in Socket Descriptions while the slot is empty. When a gem is added, the gem description takes over."
+      },
+      "Color": {
+        "Label": "Slot color",
+        "Hint": "Applied only to the empty socket frame.",
+        "Preview": "Preview",
+        "HexLabel": "Hex",
+        "PickerLabel": "Color picker",
+        "Clear": "Clear"
+      },
+      "Validation": {
+        "InvalidCondition": "The slot condition has invalid code."
+      }
+    },
+    "SocketDescriptions": {
+      "Label": "Socket Descriptions",
+      "SendToChat": "Send to Chat"
+    },
+    "Tooltips": {
+      "RemoveGem": "Remove the gem from this socket.",
+      "DeleteSocket": "Delete this slot from the item.",
+      "DeleteSlotLabel": "Delete slot",
+      "ConfigureSlot": "Configure this slot.",
+      "ConfigureSlotLabel": "Configure slot"
+    },
+    "Settings": {
+      "EditPermission": {
+        "Name": "Edit Socket Permission",
+        "Hint": "The minimum role required to add or remove sockets from items."
+      },
+	  "SocketableItemTypes": {
+        "Name": "Socketable Item Types",
+        "Label": "Configure Socketable Item Types",
+        "Hint": "Choose which item types can receive sockets.",
+        "Title": "Socketable Item Types",
+        "SelectLabel": "Item types that can receive sockets",
+        "SelectHint": "Choose one or more item types.",
+        "Save": "Save",
+        "Reset": "Reset Defaults",
+        "UnsavedChanges": "You have unsaved changes."
+      },
+      "MaxSockets": {
+        "Name": "Maximum Number of Sockets per Item",
+        "Hint": "Maximum number of sockets an item can have. Use -1 for unlimited."
+      },
+      "DeleteOnRemoval": {
+        "Name": "Delete Gem on Removal",
+        "Hint": "If enabled, a gem is destroyed when removed from a socket; otherwise it's returned to the player's inventory."
+      },
+      "GemLootSubtypes": {
+        "Name": "Gem Loot Subtypes",
+        "Label": "Configure Gem Loot Subtypes",
+        "Hint": "Select which loot subtypes count as gems and customize the extra subtype label.",
+        "Title": "Gem Loot Subtype Settings",
+        "SelectLabel": "Loot subtypes considered gems",
+        "SelectHint": "Items with these loot subtypes will be treated as gems.",
+        "Save": "Save",
+		"UnsavedChanges": "You have unsaved changes.",
+        "Selection": {
+          "Name": "Gem Loot Subtypes",
+          "Label": "Configure Gem Loot Subtypes",
+          "Hint": "Select which loot subtypes count as gems.",
+          "Title": "Gem Loot Subtype Settings",
+          "SelectLabel": "Loot subtypes considered gems",
+          "SelectHint": "Items with these loot subtypes will be treated as gems.",
+          "Save": "Save",
+          "Reset": "Reset defaults"
+        },
+        "CustomMenu": {
+          "Name": "Custom Loot Subtypes",
+          "Label": "Configure Custom Loot Subtypes",
+          "Hint": "Add custom loot subtype keys and labels that can be used as gems.",
+          "Title": "Custom Loot Subtypes",
+          "Save": "Save"
+        },
+        "Custom": {
+          "Heading": "Custom loot subtypes",
+          "Hint": "Add new loot subtype keys and labels that will be available for gems.",
+          "Key": "Subtype key",
+          "KeyPlaceholder": "e.g. extra",
+          "Label": "Display label",
+          "LabelPlaceholder": "Extra",
+          "Add": "Add subtype",
+          "Remove": "Remove"
+        }
+      },
+      "GemRollLayout": {
+        "Name": "Gem damage layout in roll dialog",
+        "Hint": "Enable the grouped-by-gem layout in the damage roll configuration dialog."
+      },
+      "SocketTabLayout": {
+        "Name": "Socket tab layout",
+        "Hint": "Choose how the sockets tab is displayed.",
+        "Options": {
+          "List": "Default list",
+          "Grid": "Grid"
+        }
+      },
+      "EnableSocketTabForAllItems": {
+        "Name": "Enable Socket Tab on all items",
+        "Hint": "If enabled, the Sockets tab appears on every socketable item. If disabled, it must be enabled per item in Details."
+      },
+      "SupportMenu": {
+        "Name": "Support the developer",
+        "Label": "Patreon support",
+        "Hint": "Get access to SC - More Gems with 120+ gems, and more every month. We are also building SC - Setforge to create item sets."
+      },
+      "DocumentationMenu": {
+        "Name": "Documentation",
+        "Label": "Open wiki",
+        "Hint": "Open the SC - Simple Sockets documentation wiki."
+      },
+      "SocketBehaviorMenu": {
+        "Name": "Socket settings",
+        "Label": "Configure socket settings",
+        "Hint": "Open a dedicated window for socket permissions, limits, gem handling, and layout options.",
+        "Description": "Manage socket permissions, limits, and display behavior in one place.",
+        "Saved": "Socket settings saved.",
+        "Save": "Save and Close",
+        "Cancel": "Cancel",
+        "Sections": {
+          "Rules": "Socket rules",
+          "RulesHint": "Control who can edit sockets and how gems behave when attached or removed.",
+          "Display": "Display",
+          "DisplayHint": "Adjust how gem damage and the socket tab are presented in the UI."
+        }
+      },
+      "HideSupportCard": {
+        "Name": "Hide automatic support message until next update",
+        "Hint": "After the support card appears once for the current version, this option is checked automatically. Uncheck it if you want the card to appear whenever the world loads."
+      }
+    },
+	"SupportCard": {
+	  "Description": "Support my work and stay up to date with exclusive modules and development progress.",
+      "Intro": "Support us on Patreon to help us keep creating.",
+      "Exclusive": "Get access to the exclusive <strong>SC - More Gems</strong> module with 120+ gems and monthly updates. We are also building <strong>SC - Setforge</strong> so you can create item sets.",
+	  "Issues": "Issues / Requests",
+      "Link": "Patreon",
+	  "Wiki": "Wiki",
+      "PatreonModulesTitle": "Patreon modules",
+      "FreeModulesTitle": "Free modules",
+      "Footer": "This chat card will only be shown once. Enable it again in the settings if needed."
+    },
+    "Notifications": {
+      "Reloading": "Reloading..."
+    },
+    "RollLayout": {
+      "BaseDamage": "Base Damage",
+      "GemEffects": "Gem Effects"
+    },
+    "Dialogs": {
+      "DeleteSocket": {
+        "Title": "Delete Socket",
+        "Message": "Are you sure you want to delete this socket?",
+        "Warning": "This action cannot be undone.",
+        "Hint": "Hold Shift to bypass this prompt."
+      },
+      "RemoveGem": {
+        "Title": "Remove Gem",
+        "Message": "Are you sure you want to remove the gem from this slot?"
+      }
+    },
+    "Macro": {
+      "AddSocket": {
+        "SelectPrompt": "Click an item to add a socket. Press Esc to cancel.",
+        "Cancelled": "Selection cancelled.",
+        "NoPermission": "You do not have permission to add sockets.",
+        "ItemPermissionTitle": "Cannot Edit Item",
+        "ItemPermissionBody": "You do not have permission to edit {name}.",
+        "InvalidTypeTitle": "Unsupported Item",
+        "InvalidTypeBody": "{name} cannot receive sockets.",
+        "MaxReachedTitle": "Maximum Reached",
+        "MaxReachedBody": "{name} already has {count} socket(s), which is the maximum allowed ({max}).",
+        "ConfirmTitle": "Add Socket",
+        "ConfirmBody": "Add a new socket to {name}?",
+        "SelectAnotherTitle": "Select Another Item",
+        "SelectAnother": "Do you want to select another item?",
+        "Success": "A socket was added to {name}.",
+        "Error": "Failed to add socket. See console for details."
+      }
+    }
+  }
+}

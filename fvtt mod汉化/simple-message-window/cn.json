@@ -1,0 +1,100 @@
+
+    "SETTING": {
+        "smwEnable":{
+            "name": "显示消息窗口"
+        },
+        "showCharacter":{
+            "name": "角色消息",
+            "hint": "在窗口中显示角色消息（默认：开启）"
+        },
+        "showGM":{
+            "name": "GM消息",
+            "hint": "在窗口中显示GM消息（默认：开启）"
+        },
+        "showPlayer":{
+            "name": "玩家消息",
+            "hint": "在窗口中显示玩家消息（默认：关闭）"
+        },
+        "showRoll":{
+            "name": "掷骰消息",
+            "hint": "在窗口中显示掷骰结果消息（默认：关闭）"
+        },
+        "showOther":{
+            "name": "其他消息",
+            "hint": "在窗口中显示其他消息（默认：关闭）"
+        },
+        "delayTime":{
+            "name": "隐藏延迟时间（毫秒）",
+            "hint": "消息窗口自动隐藏的延迟时间（0：不自动隐藏，默认：10000）"
+        },
+        "transparent":{
+            "name": "窗口透明度（%）",
+            "hint": "消息窗口背景透明度百分比（0：不透明，100：完全透明，默认：10）"
+        },
+        "fontSize":{
+            "name": "字体大小（%）",
+            "hint": "消息文字大小百分比（默认：100）"
+        },
+        "textSpeed":{
+            "name": "文字显示速度（%）",
+            "hint": "文字显示速度百分比（默认：100）"
+        },
+        "windowHPosition":{
+            "name": "水平位置",
+            "hint": "消息窗口水平位置（0：底部，100：顶部，默认：50）"
+        },
+        "windowVPosition":{
+            "name": "垂直位置",
+            "hint": "消息窗口垂直位置（0：底部，100：顶部，默认：10）"
+        },
+        "windowWidth":{
+            "name": "窗口宽度（%）",
+            "hint": "消息窗口宽度百分比（默认：100）"
+        },
+        "windowHeight":{
+            "name": "窗口高度（%）",
+            "hint": "消息窗口高度百分比（默认：100）"
+        },
+        "showImg":{
+            "name": "显示图像",
+            "hint": "显示角色图像（默认：开启）"
+        },
+        "hideMysteryman":{
+            "name": "隐藏默认图像",
+            "hint": "隐藏默认角色图像（icons/svg/mystery-man.svg，默认：开启）"
+        },
+        "imgTransparent":{
+            "name": "图像透明度（%）",
+            "hint": "图像透明度百分比（0：不透明，100：完全透明，默认：10）"
+        },
+        "imgSize":{
+            "name": "图像尺寸（%）",
+            "hint": "图像显示尺寸百分比（默认：100）"
+        },
+	  "layoutMenu": {
+		"name": "窗口布局调整",
+		"label": "布局调整",
+		"hint": "调整位置、大小、透明度、字体大小和文本速度。"
+	  },
+	  "layout": {
+		"guiMode": "GUI模式",
+		"guiModeStart": "开始GUI模式",
+		"guiModeEnd": "结束GUI模式",
+		"reset": "重置",
+		"save": "保存更改",
+		"groupWindow": "消息窗口设置",
+		"groupImage": "图像设置",
+		"previewHeader": "简易消息窗口",
+		"previewMessage": "这是一个预览显示。\n\n你可以使用滑块和数字输入来调整与消息窗口和角色图像显示相关的各种设置。\n\n通过启动GUI模式，你可以通过鼠标拖拽来更改设置。\n\n更改后别忘了保存！！！"
+	  },
+	  "mct": {
+		"name": "Multiple Chat Tabs集成",
+		"label": "选择不显示的标签页",
+		"hint": "选择哪些聊天标签页不在消息窗口中显示。"
+	  },
+	  "mctDialog": {
+		"title": "Multiple Chat Tabs集成设置",
+		"description": "选择你<b>不</b>希望在消息窗口中显示的标签页。"
+	  }
+    }
+}

@@ -1,0 +1,46 @@
+
+  "illandril-token-hud-scale": {
+    "setting": {
+      "debug": {
+        "label": "调试模式",
+        "hint": "除非Illandril特别要求，否则请保持禁用（开启会降低运行速度）"
+      },
+      "effectIconsPerRow": {
+        "label": "效果图标每行显示数量",
+        "hint": "调整效果图标的缩放比例，使1x1大小的Token上每行/列能显示指定数量的图标（更大的Token显示更多，更小的Token显示更少）"
+      },
+      "effectIconsLayout": {
+        "label": "效果图标布局",
+        "hint": "指定效果图标在Token上的显示方式",
+        "choice": {
+          "horizontal": "Token上方水平排列",
+          "vertical": "Token上方垂直排列",
+          "above": "Token顶部水平排列"
+        }
+      },
+      "enableStatusSelectorScale": {
+        "label": "缩放状态效果选择图标",
+        "hint": "增大'分配状态效果'按钮下的状态效果图标尺寸，使其与其他TokenHUD按钮尺寸匹配"
+      },
+      "hudButtonScale": {
+        "label": "HUD按钮缩放比例",
+        "hint": "设置可放置物HUD按钮的缩放倍数（相对于默认尺寸）。可放置物包括Token、图块和绘图。设为1则保持默认大小不变"
+      },
+      "enableStaticSizedHUD": {
+        "label": "固定尺寸HUD",
+        "hint": "缩放场景时保持HUD大小不变（默认会随缩放级别变化）。注意：启用此功能后建议将HUD按钮缩放比例设为1.5以下"
+      },
+      "enableOneXOneHUD": {
+        "label": "1x1尺寸HUD",
+        "hint": "无论可放置物实际大小如何，都按照1x1网格单位来显示HUD（为小型对象提供更多HUD空间，使大型对象的HUD更接近Token）"
+      },
+      "darkenHUDButtonBG": {
+        "label": "加深HUD按钮背景",
+        "hint": "降低HUD按钮背景透明度以提升对比度"
+      },
+      "centerHUDButtons": {
+        "label": "居中显示图块和绘图HUD按钮"
+      }
+    }
+  }
+}

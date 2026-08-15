@@ -1,0 +1,80 @@
+{
+  "TDP": {
+    "settings": {
+      "enabled": {
+        "name": "Enable Pointers",
+        "hint": "Show directional arrows on tokens toward their targets."
+      },
+      "gmShowAll": {
+        "name": "GM Show All",
+        "hint": "When enabled, the GM sees targeting pointers for all players, not just their own."
+      },
+      "baseHalfWidth": {
+        "name": "Arrow Base Width",
+        "hint": "Half-width of the arrow base in pixels (at 1x1 token scale). Default: 6"
+      },
+      "baseLength": {
+        "name": "Arrow Min Length",
+        "hint": "Minimum arrow length in pixels. Default: 12"
+      },
+      "maxLength": {
+        "name": "Arrow Max Length",
+        "hint": "Maximum arrow length in pixels (at 1x1 token scale). Default: 30"
+      },
+      "distFactor": {
+        "name": "Distance Scale Factor",
+        "hint": "How much arrow length grows per grid-unit of distance. Default: 1.5"
+      },
+      "offset": {
+        "name": "Border Offset",
+        "hint": "Gap in pixels between the token edge and the arrow base. Default: 2"
+      },
+      "outlineWidth": {
+        "name": "Outline Width",
+        "hint": "Width of the dark outline around arrows in pixels. Default: 1.5"
+      },
+      "alphaClose": {
+        "name": "Near Opacity",
+        "hint": "Arrow opacity for the nearest targets (0-1). Default: 0.90"
+      },
+      "alphaFar": {
+        "name": "Far Opacity",
+        "hint": "Arrow opacity floor for the most distant targets (0-1). Default: 0.35"
+      },
+      "alphaFalloff": {
+        "name": "Opacity Falloff Distance",
+        "hint": "Grid-units over which opacity decays from near to far. Default: 20"
+      },
+      "breathSpeed": {
+        "name": "Breathing Speed",
+        "hint": "Speed of the breathing animation oscillation. Set to 0 to disable. Default: 0.0015"
+      },
+      "breathDepth": {
+        "name": "Breathing Intensity",
+        "hint": "Amplitude of the breathing animation (0 to disable). Default: 0.12"
+      },
+      "colorHostile": {
+        "name": "Hostile Color",
+        "hint": "Arrow color for cross-disposition targeting (e.g. PC vs Monster). Default: #ff4444"
+      },
+      "colorFriendly": {
+        "name": "Friendly Color",
+        "hint": "Arrow color for friendly-on-friendly targeting. Default: #44ddaa"
+      },
+      "colorNeutral": {
+        "name": "Neutral Color",
+        "hint": "Arrow color for same-hostile or ambiguous targeting. Default: #f0c020"
+      }
+    },
+    "keybinding": {
+      "toggle": {
+        "name": "Toggle Target Pointers",
+        "hint": "Toggle directional target pointers on/off."
+      }
+    },
+    "notifications": {
+      "on": "Target direction pointers ON.",
+      "off": "Target direction pointers OFF."
+    }
+  }
+}

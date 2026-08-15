@@ -1,0 +1,53 @@
+
+  "NoteLicker": {
+    "ModuleName": "Note Licker",
+    "Settings": {
+      "Reset": {
+        "Title": "恢复默认设置",
+        "Label": "重置Note Licker设置",
+        "Hint": "这将把本模组所有设置恢复为默认"
+      },
+      "LogLevel": {
+        "Name": "日志级别",
+        "Hint": "控制输出到控制台的日志详细程度",
+        "debug": "调试 - 详细日志",
+        "info": "信息 - 常规信息",
+        "warn": "警告 - 仅显示警告",
+        "error": "错误 - 仅显示错误",
+        "off": "关闭"
+      },
+      "EnableDynamicIcons": {
+        "Name": "启用动态笔记图标？",
+        "Hint": "将笔记图标动态更新为小型数字/字母（如'1a. Strange Door'会变成带'1a'的圆形图标）"
+      },
+      "EnableAnchorLinks": {
+        "Name": "启用锚点链接？",
+        "Hint": "场景标记可跳转至日志中的锚点（当前与Monks Enhanced Journals不兼容）"
+      },
+      "EnableIconBorderRemoval": {
+        "Name": "移除图标边框？",
+        "Hint": "移除图标边框（类似backgroundless-pins模组的效果）"
+      },
+      "IconUploadDir": {
+        "Name": "图标上传目录",
+        "Hint": "设置图标文件的上传路径"
+      }
+    },
+    "Dialogs": {
+      "ResetSettings": {
+        "Title": "Note Licker | 重置设置",
+        "Content": "确定要将Note Licker模组的所有设置恢复为默认吗？",
+        "Confirm": "重置模组设置",
+        "Cancel": "取消"
+      }
+    },
+    "Chat": {},
+    "Notifications": {},
+    "Labels": {
+      "ShowIconBorder": "显示图标边框？",
+      "DisableAutoIcon": "禁用Note Licker自动图标生成？",
+      "JumpToAnchor": "跳转至页面锚点"
+    },
+    "Folders": {}
+  }
+}

@@ -1,0 +1,184 @@
+
+    "spotlight-omnisearch": {
+		"KEYBINDING": "按键绑定",
+        "settings": {
+            "compendiumConfig": {
+                "name": "合集配置",
+                "hint": "配置搜索结果中包含哪些合集",
+                "label": "配置合集"
+            },
+            "gmOnly": {
+                "name": "仅限GM",
+                "hint": "只有GM可以打开Spotlight Omnisearch"
+            },
+            "compactMode": {
+                "name": "紧凑模式",
+                "hint": "为 Spotlight Omnisearch 使用紧凑布局。这将隐藏描述并缩小搜索结果的大小。"
+            },
+            "clickToDismiss": {
+                "name": "点击取消",
+                "hint": "单击 Spotlight Omnisearch 外侧将其取消"
+            },
+            "saveLastSearch": {
+                "name": "保存上次搜索",
+                "hint": "保存上次搜索查询和结果，以便下次打开 Spotlight Omnisearch 时使用"
+            },
+            "useHistory": {
+                "name": "使用搜索历史",
+                "hint": "使用搜索历史记录来建议搜索"
+            },
+            "enableCtrlSpace": {
+                "name": "启用 Ctrl + Space",
+                "hint": "启用 Ctrl + Space 热键打开 Spotlight Omnisearch - 由于此绑定绕过了FVV核心键绑定系统，因此它将在输入框和文本区域内工作。"
+            },
+            "position": {
+                "name": "位置",
+                "hint": "设置 Spotlight Omnisearch 在屏幕上的位置",
+                "choices": {
+                    "default": "默认（居中）",
+                    "save": "保存最后位置",
+                    "mouse": "在鼠标位置打开"
+                }
+            },
+            "alwaysOnTop": {
+                "name": "始终处于顶端",
+                "hint": "让 Spotlight Omnisearch 位于其他窗口上方"
+            },
+            "spotlightWidth": {
+                "name": "Spotlight宽度",
+                "hint": "以像素为单位设置 Spotlight Omnisearch 的宽度"
+            },
+            "showImages": {
+                "name": "显示图片",
+                "hint": "在搜索结果中显示图片。图片会增加搜索结果的加载时间，并可能导致卡顿，具体取决于搜索结果的数量和图片的大小。"
+            },
+            "searchFiles": {
+                "name": "搜索文件",
+                "hint": "包含文件搜索结果（需要使用Dig Down模组中的文件索引）"
+            },
+            "searchSettings": {
+                "name": "搜索设置",
+                "hint": "在搜索结果中包含游戏设置"
+            },
+            "searchCompendium": {
+                "name": "搜索合集",
+                "hint": "在搜索结果中包含合集"
+            },
+			"fullCompendiumJournalIndex": {
+                "name": "全合集日志索引",
+                "hint": "在合集日志索引中包含页面和标题。这会增加索引的初始化时间。如果你有大量的日志合集，建议禁用此功能。"
+            },
+            "searchSidebar": {
+                "name": "搜索侧边栏",
+                "hint": "在搜索结果中包含侧边栏标签"
+            },
+            "searchUtils": {
+                "name": "搜索实体",
+                "hint": "在搜索结果中包含实体"
+            },
+            "useMetricForLights": {
+                "name": "使用公制光源",
+                "hint": "使用公制单位快速光源效果"
+            }
+        },
+        "hotkeys": {
+            "toggleSpotlight": {
+                "name": "切换Spotlight Omnisearch"
+            }
+        },
+        "recent-searches": "最近搜索",
+        "recent-tooltip": "清除最近的搜索",
+        "app": {},
+        "flags": {},
+        "actions": {
+            "execute": "执行",
+            "activate": "激活",
+            "preload": "预载",
+            "view": "浏览",
+            "roll-table": "随机表",
+            "play-playlist": "播放播放列表",
+            "stop-playlist": "停止播放列表",
+            "use-item": "使用物品",
+            "playForEveryone": "为每个人执行"
+        },
+        "notifications": {
+            "calc-clipboard": "结果复制到剪贴板",
+            "note": "保存在'Omnisearch Notes'日志中的说明",
+            "timer-gm": "只有GM可以启动计时器",
+            "tracker-gm": "只有GM可以使用成功/失败追踪"
+        },
+        "special": {
+            "note": {
+                "name": "快速说明",
+                "local-keyword": "说明"
+            },
+            "roll": {
+                "name": "快速掷骰",
+                "local-keyword": "掷骰"
+            },
+            "help": {
+                "name": "帮助",
+                "local-keyword": "帮助",
+                "list": [
+                    "Shift + Space 以打开Spotlight Omnisearch",
+                    "Escape 或单击外部(可选，默认为关闭)以关闭Spotlight Omnisearch",
+                    "按回车键确认第一个结果",
+                    "Shift / Alt + Enter 执行第一个结果的第一个或第二个操作",
+                    "特殊指令: 帮助, 说明, 掷骰, 计时器, 追踪器, 计数器或输入一个数学表达式来计算",
+                    "! 按类型过滤搜索结果 (!item, !actor)。过滤:"
+                ]
+            },
+            "timer": {
+                "name": "计时器",
+                "timeLeft": "剩余时间",
+                "local-keyword": "计时器",
+                "expired": "计时器已过期!"
+            },
+            "light": {
+                "torch": "火把",
+                "lantern": "提灯",
+                "lantern-shut": "提灯(关闭)",
+                "off": "移除灯光",
+                "candle": "蜡烛",
+                "magical": "魔法灯光",
+                "flashlight": "手电筒",
+                "info": "对选定 token 应用灯光"
+            },
+            "tracker": {
+                "name": "成功/失败追踪器",
+                "local-keyword": "追踪器"
+            },
+            "counter": {
+                "name": "计数器",
+                "local-keyword": "计数器"
+            },
+            "kill": {
+                "name": "击杀",
+                "description": "杀死所选 token"
+            },
+            "heal": {
+                "name": "治愈"
+            },
+            "damage": {
+                "name": "伤害"
+            },
+            "restore": {
+                "name": "复原",
+                "description": "将所选 token 恢复到满生命值状态"
+            },
+            "reindex": {
+                "name": "索引",
+                "description": "为 Spotlight Omnisearch 重建搜索索引"
+            },
+            "darkness": {
+                "night": "夜晚",
+                "dawn": "黎明",
+                "day": "日",
+                "dusk": "黄昏"
+            },
+            "attribute": {
+                "name": "属性"
+            }
+        }
+    }
+}

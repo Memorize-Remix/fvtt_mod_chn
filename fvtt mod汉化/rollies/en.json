@@ -1,0 +1,96 @@
+{
+  "Rollies": {
+    "Chat": {
+      "AutoRoll": "auto-rolled",
+      "RolledFor": "rolled for",
+      "Rolloff": "rolloff",
+      "WinnerAnnouncement": "🎉 Rolloff Winner!",
+      "WinsRolloff": "wins the initiative rolloff!"
+    },
+    "Dialog": {
+      "CloseButton": "Close",
+      "Complete": "Rolloff complete! Determining winner...",
+      "Header": "Initiative Tie Detected!",
+      "Instructions": "Roll {die} to break the tie",
+      "RollButton": "Roll",
+      "Rolled": "Rolled",
+      "TimeoutWarning": "Auto-rolling in {timeout} seconds for inactive players",
+      "Title": "Initiative Rolloff",
+      "Waiting": "Waiting..."
+    },
+    "GMDialog": {
+      "Description": "Found {count} initiative tie(s). What would you like to do?",
+      "Header": "Initiative Ties Found",
+      "Initiative": "Initiative",
+      "KeepInitiative": "Keep Current Initiative",
+      "StartRolloffs": "Start Rolloffs",
+      "Title": "Initiative Ties Detected"
+    },
+    "Messages": {
+      "AnotherTie": "The rolloff resulted in another tie! Rolling again..."
+    },
+    "PlayerDialog": {
+      "BracketHeader": "Tournament Bracket Rolloff!",
+      "CloseButton": "Close",
+      "Header": "Initiative Rolloff Required!",
+      "Instructions": "Roll {die} to break the initiative tie",
+      "Opponent": "Opponent",
+      "Roll": "Roll",
+      "RollButton": "Roll Dice",
+      "RollComplete": "Roll completed! Waiting for results...",
+      "RollFor": "Roll for initiative:",
+      "Rolled": "Rolled",
+      "Round": "Round",
+      "SpectatingMessage": "Watching the remaining tournament matches...",
+      "SpectatorMode": "You've been eliminated - spectating remaining matches",
+      "TimeRemaining": "Time Remaining:",
+      "TimeoutSeconds": "seconds",
+      "TimeoutWarning": "Auto-rolling in",
+      "Title": "Initiative Rolloff",
+      "VersusHeader": "Initiative Showdown!",
+      "WaitingForOpponent": "Waiting for opponent...",
+      "WaitingForRoll": "Rolling...",
+      "WaitingForWinner": "Awaiting winner from previous match",
+      "You": "You"
+    },
+    "Settings": {
+      "AutoRolloff": {
+        "Hint": "Automatically start rolloffs when initiative ties are detected",
+        "Name": "Auto-trigger Rolloffs"
+      },
+      "IncludeNPCs": {
+        "Hint": "Whether NPCs should participate in initiative rolloffs alongside characters",
+        "Name": "Include NPCs in Rolloffs"
+      },
+      "RolloffDie": {
+        "Hint": "The type of die used for initiative rolloffs",
+        "Name": "Rolloff Die Type"
+      },
+      "RolloffTimeout": {
+        "Hint": "How long to wait before automatically rolling for inactive players",
+        "Name": "Rolloff Timeout (seconds)"
+      },
+      "ShowWinnerAnnouncement": {
+        "Hint": "Display a popup announcement when someone wins a rolloff",
+        "Name": "Show Winner Announcements"
+      },
+      "ManualDiceTimeoutMultiplier": {
+        "Hint": "Multiplier for timeout duration when manual/interactive dice are detected (e.g., 2 = double the timeout)",
+        "Name": "Manual Dice Timeout Multiplier"
+      }
+    },
+	"Errors": {
+      "BracketCombatantNotFound": "Failed to find combatants for bracket match"
+    },
+    "Warnings": {
+      "CannotRoll": "You don't have permission to roll for this combatant",
+      "ManualDiceTimeout": "Manual dice detected - please complete your roll soon or it will be auto-rolled"
+    },
+    "WinnerDialog": {
+      "CloseButton": "Awesome!",
+      "Header": "🎉 Rolloff Winner! 🎉",
+      "Title": "Rolloff Winner!",
+      "WinsRolloff": "wins the rolloff!"
+    }
+  }
+}

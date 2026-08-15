@@ -1,0 +1,82 @@
+
+  "I18N.LANGUAGE": "中文",
+  "rhym": {
+    "module-settings": {
+      "enabled": {
+        "name": "启用模组",
+        "hint": "取消勾选时将禁用此模组的所有功能"
+      },
+      "combat-prefix": {
+        "name": "战斗播放列表前缀",
+        "hint": "用于识别战斗播放列表的前缀"
+      },
+      "combat-prep-playlist": {
+        "name": "战斗准备播放列表名称",
+        "hint": "输入当战斗追踪器已添加但战斗尚未开始时希望播放的播放列表名称"
+      },
+      "combat-victory": {
+        "enabled": {
+          "name": "战斗结束后播放胜利音乐？",
+          "hint": "启用时将在战斗结束后播放指定的胜利播放列表"
+        },
+        "playlist": {
+          "name": "胜利播放列表",
+          "hint": "战斗结束时播放的播放列表名称"
+        },
+        "duration": {
+          "name": "胜利音乐播放时长...",
+          "hint": "胜利播放列表的播放时长（秒），设为0则不会自动停止"
+        }
+      },
+      "mood-prefix": {
+        "name": "情绪播放列表前缀",
+        "hint": "用于提取情绪播放列表的统一前缀"
+      },
+	  "track-title": {
+		"size": {
+		  "name": "曲目标题大小",
+		  "hint": "在播放列表设置中启用时显示的曲目标题大小缩放比例（默认为 5）"
+		},
+		"duration": {
+		  "name": "曲目标题显示时长（秒）",
+		  "hint": "曲目标题显示的持续时间（秒）（默认为 8 秒）"
+		}
+	  }
+    },
+    "menu": {
+      "right-click": "右键点击更改播放列表图片",
+      "playlist-image-path": "图片文件路径：",
+      "mood": {
+        "title": "选择氛围音乐"
+      },
+      "combat": {
+        "title": "选择战斗音乐"
+      }
+    },
+    "controls": {
+      "music": {
+        "name": "打开情境音乐菜单",
+        "hint": "打开情境音乐选择",
+        "toolclip": {
+          "heading": "打开音乐",
+          "items": {
+            "description": {
+              "paragraph": "打开音乐选择对话框"
+            }
+          }
+        }
+      }
+    },
+    "notification": {
+      "error": {
+        "no-playlists": "没有可选择的播放列表，请检查 RHYM 模组设置以确保前缀与播放列表匹配"
+      }
+    },
+    "playlist-config": {
+      "show-track-title": {
+        "name": "显示曲目标题",
+        "hint": "启用后，每次切换曲目时会显示一个小动画展示曲目标题（注意：如需在下方显示作者/专辑信息，可使用 '|' 或 '-' 作为分隔符）"
+      }
+    }
+  }
+}

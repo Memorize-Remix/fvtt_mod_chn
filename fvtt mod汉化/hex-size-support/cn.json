@@ -1,0 +1,92 @@
+
+	"hex-size-support": {
+		"settings": {
+			"alwaysShowBorder": {
+				"name": "始终显示边框",
+				"hint": "始终渲染Token边框。如果Token勾选了“隐藏边框”，则此设置将被覆盖。"
+			},
+			"borderMode": {
+				"name": "边框可见性模式",
+				"hint": "何时渲染Token的边框。如果Token勾选了“隐藏边框”，此设置将被覆盖。",
+				"choices": {
+				  "hover": "悬停时",
+				  "always": "始终",
+				  "combat": "战斗中始终",
+				  "never": "从不"
+				}
+			},
+			"borderPosition": {
+				"name": "边框位置",
+				"hint": "将边框渲染在Token图的上方还是下方。",
+				"choices": {
+				  "default": "默认",
+				  "front": "始终在前",
+				  "behind": "始终在后"
+				}
+			},
+			"borderWidth": {
+				"name": "边框宽度",
+				"hint": "指定Token边框的宽度"
+			},
+			"borderBehindToken": {
+				"name": "将边框保持在Token后方",
+				"hint": "在悬停Token时，将Token的边框渲染在Token后方而非前方。"
+			},
+			"fillBorder": {
+				"name": "填充边框内容",
+				"hint": "为Token的边框内容添加半透明颜色。",
+				"choices": {
+					"combat": "战斗中始终",
+					"combat_hov": "战斗中悬停"
+				}
+			},
+			"borderStyle": {
+				"name": "边框样式",
+				"hint": "配置Token边框的线条样式",
+				"choices": {
+					"default": "FVTT默认样式",
+					"bevel": "斜角",
+					"flat": "扁平轮廓"
+				}
+			},
+			"defaultHexShape": {
+				"name": "默认六边形形状",
+				"hint": "在六边形网格场景中为新Token使用此形状"
+			},
+			"defaultGridlessShape": {
+				"name": "默认无网格形状",
+				"hint": "在无网格场景中为新Token使用此形状"
+			},
+			"controlledColor": { "name": "颜色：拥有" },
+			"partyColor": { "name": "颜色：队伍" },
+			"friendlyColor": { "name": "颜色：友善" },
+			"neutralColor": { "name": "颜色：中立" },
+			"hostileColor": { "name": "颜色：敌对" },
+			"secretColor": { "name": "颜色：秘密" }
+		},
+		"keybinds": {
+			"swapOrientation": {
+				"name": "切换替代方向",
+				"hint": "切换受控制的六边形Token的方向。"
+			}
+		},
+		"tokenConfig": {
+			"hideBorder": {
+				"label": "隐藏边框",
+				"notes": "隐藏Token的边框。覆盖模组设置“始终显示边框”。"
+			},
+			"hideFill": {
+				"label": "隐藏边框填充",
+				"notes": "隐藏Token的边框填充颜色。覆盖模组设置“填充边框内容”。"
+			},
+			"hexShape": {
+				"label": "六边形形状",
+				"hint": "在六边形网格场景中为新Token使用此形状，而非全局默认形状。"
+			},
+			"gridlessShape": {
+				"label": "无网格形状",
+				"hint": "在无网格场景中为新Token使用此形状，而非全局默认形状。"
+			}
+		}
+	}
+}

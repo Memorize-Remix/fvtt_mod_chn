@@ -1,0 +1,54 @@
+
+  "beaversGamepad": {
+    "errors": {
+      "UserHasNoGamepad": "没有与此用户关联的游戏手柄"
+    },
+    "settings": {
+      "uiConfig": {
+        "name": "用户配置",
+        "hint": "为此客户端配置用户数据",
+        "label": "\uD83D\uDC65 用户配置"
+      },
+      "gamepadConfig":{
+        "name": "游戏手柄配置",
+        "hint": "配置游戏手柄",
+        "label": "\uD83C\uDFAE 配置"
+      },
+      "actorFilter":{
+        "name": "角色过滤类型",
+        "hint": "为游戏手柄选择角色的过滤类型"
+      }
+    },
+    "gamepadConfigApp": {
+      "title": "游戏手柄配置",
+      "noGamepad": "未检测到已连接的游戏手柄",
+      "info": "请按下游戏手柄上的按钮进行连接",
+      "user": "用户:",
+      "addUser": "分配用户",
+      "userHint": "每个游戏手柄都需要分配给一个用户",
+      "actorLabel": "角色:",
+      "reversedLabel": "反向:",
+      "addModule": "添加游戏手柄模组"
+    },
+    "uiConfigApp": {
+      "title": "用户配置",
+      "info": "此用户配置不是全局的，仅对当前连接的客户端有效",
+      "userPosition": "用户位置:",
+      "userPositionHint": "当显示器平放在桌面上时，玩家相对于显示器的位置(例如'top'表示玩家从上方俯视显示器)",
+      "userPositionPx": "显示位置 顶部/左侧:",
+      "userPositionPxHint": "显示器在屏幕上的坐标位置",
+      "userPositionPxCenter":"根据用户位置居中微型用户界面",
+      "tinyUI": "启用微型用户界面",
+      "tinyUIHint": "在此客户端屏幕上为指定用户显示微型界面。一个客户端可以显示多个界面",
+      "addUser": "添加用户",
+      "addUserHint": ""
+    },
+    "TUIGamepadModule": {
+      "desc": "这是一个上下文模组。激活后可控制微型用户界面Tiny-User-Interface",
+      "desc2": "此模组用于激活微型用户界面Tiny-User-Interface"
+    },
+    "TokenRotation": {
+      "desc": "此模组允许控制Token的朝向"
+    }
+  }
+}

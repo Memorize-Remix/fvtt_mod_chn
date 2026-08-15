@@ -1,0 +1,170 @@
+{
+  "SMARTPHONE_ID_CARD": {
+    "appTitle": "ID Card",
+    "gmHack": {
+      "sendTitle": "Admin Transfer",
+      "transferMethodTitle": "Transfer Method",
+      "transferMethodPrompt": "How should the card be transferred to {target}?",
+      "targetDefault": "Target",
+      "copyAction": "Copy (Clone)",
+      "moveAction": "Move (Steal)",
+      "noCardToTarget": "No card to target.",
+      "targetHasNoPhone": "Target has no phone.",
+      "cardStolen": "Card stolen (moved) successfully.",
+      "cardCloned": "Card cloned successfully.",
+      "transferFailed": "Transfer failed."
+    },
+    "emptyState": {
+      "title": "No Credentials",
+      "subtitle": "This device has no digital IDs stored. Request one from your organization."
+    },
+    "errors": {
+      "requiresWidget": "ID Card App requires the 'Smartphone Widget' module.",
+      "deviceNotFound": "Device not found",
+      "permissionDenied": "Permission denied",
+      "sceneNotFound": "Scene not found",
+      "doorNotFound": "Door not found",
+      "notSmartDoor": "Not a smart door.",
+      "noCardSelected": "No card selected",
+      "socket": "Socket error.",
+      "noControlledToken": "No controlled token.",
+      "noToken": "No token"
+    },
+    "wallConfig": {
+      "title": "Smartphone Access",
+      "smartLockEnabled": "Smart Lock Enabled",
+      "smartLockHint": "Check this to require an ID card to open this door.",
+      "requiredLevel": "Required Level",
+      "requiredOrg": "Required Organization",
+      "requiredOrgPlaceholder": "e.g. UMBRELLA",
+      "detectionEnabled": "Forgery Detection",
+      "detectionHint": "Check forged cards using detection rules.",
+      "detectionMode": "Detection Mode",
+      "detectionModeChance": "Chance (quality - detection)",
+      "detectionModeThreshold": "Threshold (quality >= detection)",
+      "detectionLevel": "Detection Level (0-100)",
+      "logAccess": "Access Log (GM)",
+      "logAccessHint": "Record open/close and denied access for this door.",
+      "autoClose": "Auto Close",
+      "autoCloseHint": "Automatically close the door after opening.",
+      "closeState": "Manual Close State",
+      "closeDelay": "Close Delay (sec)",
+      "autoCloseState": "Auto Close State",
+      "stateClosed": "Closed",
+      "stateLocked": "Locked"
+    },
+    "access": {
+      "any": "Any",
+      "denied": "Access Denied.\nReq: {org} (Lv.{level})",
+      "forgeryDetected": "Forgery detected."
+    },
+    "log": {
+      "title": "Access Log",
+      "view": "View Access Log",
+      "close": "Close",
+      "back": "Back",
+      "empty": "No access records yet.",
+      "time": "Time",
+      "filterTitle": "Filters",
+      "filterSuccess": "Success",
+      "filterDenied": "Denied",
+      "filterOpened": "Opened",
+      "filterClosed": "Closed",
+      "filterDoor": "Door",
+      "filterAllDoors": "All doors",
+      "opened": "opened",
+      "closed": "closed",
+      "denied": "denied",
+      "forged": "forged",
+      "authentic": "authentic",
+      "entrySuccess": "{scene} / Door {door}: {card} ({org}, Lv.{level}, {status}) {state}",
+      "entryDenied": "{scene} / Door {door}: {card} ({org}, Lv.{level}, {status}) denied ({reason})"
+    },
+    "defaults": {
+      "unknownName": "Unknown",
+      "securityAccess": "SECURITY ACCESS",
+      "newUser": "New User",
+      "newOrg": "NEW ORG"
+    },
+    "actions": {
+      "showToChat": "Show to Chat",
+      "sendToDevice": "Send to Device",
+      "gmHack": "GM: Hack/Steal Card",
+      "exportAsItem": "GM: Export as Item"
+    },
+	"item": {
+      "exported": "Card exported as item.",
+      "cardAdded": "ID card installed from item.",
+      "cardRemoved": "ID card removed from phone."
+    },
+    "scan": {
+      "verifying": "VERIFYING...",
+      "scanAccess": "SCAN ACCESS",
+      "noDoorInRange": "No secured door in range.",
+      "doorOpened": "OPENED",
+      "doorClosed": "CLOSED",
+      "success": "Success: Door {state}",
+      "errorInteracting": "Error interacting with door."
+    },
+    "card": {
+      "nameLabel": "NAME",
+      "clearanceLabel": "CLEARANCE",
+      "levelLabel": "LEVEL",
+      "forgedLabel": "FORGED",
+      "idCode": "ID: {id}",
+      "avatarAlt": "Avatar"
+    },
+    "editor": {
+      "title": "Card Management",
+      "addCard": "Add New Card",
+      "deleteCard": "Delete Current Card",
+      "newOrg": "New",
+      "newUser": "User",
+      "themePreset": "Theme Preset",
+      "themeStandard": "Standard (Dark)",
+      "themeCorporate": "Corporate (White)",
+      "themeCyberpunk": "Cyberpunk (Neon)",
+      "themeFantasy": "Fantasy (Parchment)",
+      "profileImage": "Profile Image",
+      "holderName": "Holder Name",
+      "level": "Level (0-10)",
+      "forged": "Forged",
+      "quality": "Quality (0-100)",
+      "organization": "Organization (ID Type)",
+      "organizationPlaceholder": "e.g. UMBRELLA",
+      "customBackground": "Custom Background",
+      "imageUrlPlaceholder": "image url...",
+      "customLogo": "Custom Logo",
+      "headerColor": "Header Color",
+      "bodyColor": "Body Color",
+      "footerColor": "Footer Color",
+      "resetTheme": "Reset to Theme Defaults",
+      "saveAll": "Save All Cards",
+      "exit": "Exit",
+      "saved": "All Cards Saved",
+      "expirationType": "Expiration Type",
+      "expPermanent": "Permanent",
+      "expUsage": "Usage Limit",
+      "expTime": "Time Limit",
+      "maxUses": "Max Uses",
+      "durationHours": "Valid Hours",
+      "usesLeft": "Uses Left: {count}",
+      "expiredLabel": "Expired",
+      "timeRemaining": "Expires: {time}",
+      "soundSettings": "Sound Settings",
+      "successSound": "Success Sound",
+      "failSound": "Fail Sound",
+      "soundVolume": "Volume"
+    },
+    "share": {
+      "sharedToChat": "Card shared to chat."
+    },
+    "send": {
+      "title": "Send ID Card",
+      "noCardToSend": "No card to send.",
+      "recipientNoPhone": "Recipient has no phone.",
+      "success": "Card sent successfully!",
+      "failed": "Failed to send card."
+    }
+  }
+}

@@ -1,0 +1,211 @@
+
+  "BG3HUD": {
+    "Rest": "休息",
+    "RestTooltip": "休息<br><span style='font-size: 0.85em; opacity: 0.8;'>点击：选择休息类型<br>Ctrl+点击：短休<br>Alt+点击：长休</span>",
+    "ChooseRestType": "选择休息类型：",
+    "EndTurn": "结束回合"
+  },
+  "bg3-hud-dnd5e": {
+    "Settings": {
+      "AutoPopulateConfiguration": "自动填充配置",
+      "ConfigureAutoPopulateGrids": "配置自动填充网格",
+      "ConfigureGrids": "配置网格",
+      "ConfigureGridsHint": "配置创建Token时在每个网格中自动填充哪些物品类型",
+	  "ConfigureAutoPopulateDescription": "为<strong>仅限NPC</strong>分配物品类型到快捷栏格。每种类型只能分配到一个格子。<br><small>注意：玩家角色应使用右键菜单 → 自动填充容器功能。</small>",
+      "AutoPopulatePassives": "自动填充被动特性",
+      "AutoPopulatePassivesHint": "创建Token时自动用没有行动组合的特性填充",
+      "ShowItemNames": "显示物品名称",
+      "ShowItemNamesHint": "在快捷栏单元格上显示物品名称",
+      "ShowItemUses": "显示物品使用次数",
+      "ShowItemUsesHint": "在有限使用次数的物品上显示剩余使用次数",
+      "ShowHealthOverlay": "显示生命条",
+      "ShowHealthOverlayHint": "在立绘图像上显示红色生命条",
+	  "ShowHPControls": "显示生命值控件按钮",
+      "ShowHPControlsHint": "在立绘生命值控件中显示击杀（骷髅）和治疗（心形）按钮",
+      "EnableCPRGenericActions": "启用CPR通用动作按钮",
+      "EnableCPRGenericActionsHint": "在优势旁边显示一个垂直按钮，触发CPR的通用动作（2024）对话框",
+      "EnableCPRActionsAutoPopulate": "启用CPR动作自动填充",
+      "EnableCPRActionsAutoPopulateHint": "创建Token时自动用CPR动作填充快速访问（根据D&D 5e规则版本设置使用2014或2024合集）。如果手动选择了动作，则优先使用手动选择的动作。",
+      "SelectedCPRActions": "选中的CPR动作",
+	  "SelectedCPRActionsHint": "手动选择的CPR动作以显示在快速访问中（通过'选择CPR动作'菜单配置）。列表内容会根据你选择的D&D 5e规则版本，自动匹配对应的合集。",
+      "BlockCPRActionsOnHotbar": "阻止CPR动作在快捷栏上",
+      "BlockCPRActionsOnHotbarHint": "防止CPR通用动作被拖放到快捷栏上。派生的物品如'擒抱: 逃脱'仍然允许。",
+      "EnableAdvBtnsMidiQoL": "启用优势/劣势按钮（Midi-QoL）",
+      "EnableAdvBtnsMidiQoLHint": "当Midi-QoL激活时，向全局加值添加优势/劣势按钮",
+      "AutoPopulateOnTokenCreation": "创建Token时自动填充",
+      "AutoPopulateOnTokenCreationHint": "创建Token时自动用物品填充快捷栏网格",
+      "AutoPopulatePlayerCharacters": "允许为玩家角色自动填充",
+      "AutoPopulatePlayerCharactersHint": "⚠️ 警告：这会覆盖默认行为并允许为玩家角色自动填充。不推荐这样做，因为玩家应该自由自定义自己的HUD。仅在了解其影响的情况下启用。",
+      "FilterPreparedSpellsPlayers": "过滤已准备法术（玩家）",
+      "FilterPreparedSpellsPlayersHint": "仅为玩家角色显示已准备的法术。随意、天生和契约魔法法术始终包含在内。",
+      "FilterPreparedSpellsNPCs": "过滤已准备法术（NPC）",
+      "FilterPreparedSpellsNPCsHint": "仅为NPC显示已准备的法术。随意、天生和契约魔法法术始终包含在内。",
+      "AutoPopulateConfigurationHint": "配置在每个网格中自动填充哪些物品类型（仅限于GM）",
+      "Display": {
+        "MenuTitle": "显示设置",
+        "MenuName": "显示设置",
+        "MenuLabel": "显示设置",
+        "MenuHint": "切换快捷栏单元格上的物品名称和使用次数",
+        "Legend": "显示"
+      },
+      "AutoPopulate": {
+        "MenuTitle": "自动填充设置",
+        "MenuName": "自动填充设置",
+        "MenuLabel": "自动填充设置",
+        "MenuHint": "控制网格和被动特性的自动填充",
+        "Legend": "自动填充"
+      },
+      "ThirdParty": {
+        "MenuTitle": "第三方模组",
+        "MenuName": "第三方模组",
+        "MenuLabel": "第三方模组",
+        "MenuHint": "配置与CPR和Midi-QoL等第三方模组的集成",
+        "CPR": {
+          "Legend": "CPR"
+        },
+        "Midi": {
+          "Legend": "Midi-QoL"
+        }
+      }
+    },
+    "AutoPopulate": {
+      "Groups": {
+        "Combat": "战斗",
+        "Consumables": "消耗品",
+        "Wondrous": "奇物",
+        "Other": "其他"
+      },
+      "ItemTypes": {
+        "Weapons": "武器",
+        "FeaturesActions": "特性与动作",
+        "Spells": "法术",
+        "Ammunition": "弹药",
+        "Potions": "魔药",
+        "Poisons": "毒药",
+        "Scrolls": "卷轴",
+        "FoodDrink": "食物与饮品",
+        "Equipment": "装备",
+        "Wands": "魔杖",
+        "Rods": "权杖",
+        "Trinkets": "饰品",
+        "Tools": "工具",
+        "Loot": "战利品"
+      }
+    },
+    "Filters": {
+      "Action": "动作",
+      "BonusAction": "附赠动作",
+      "Reaction": "反应",
+      "LegendaryAction": "传奇动作",
+      "Feature": "特性",
+      "Cantrip": "戏法",
+      "SpellLevel": "法术环阶",
+	  "SpellSlots": "法术位",
+      "PactMagic": "契约魔法",
+      "ApothecaryMagic": "药剂师施法"
+    },
+    "Info": {
+      "Skills": "技能",
+      "ChecksSaves": "检定与豁免",
+      "Abilities": {
+        "Strength": "力量",
+        "Dexterity": "敏捷",
+        "Constitution": "体质",
+        "Intelligence": "智力",
+        "Wisdom": "感知",
+        "Charisma": "魅力"
+      },
+      "SkillNames": {
+        "Acrobatics": "特技",
+        "AnimalHandling": "驯兽",
+        "Arcana": "奥秘",
+        "Athletics": "运动",
+        "Deception": "欺瞒",
+        "History": "历史",
+        "Insight": "洞悉",
+        "Intimidation": "威吓",
+        "Investigation": "调查",
+        "Medicine": "医药",
+        "Nature": "自然",
+        "Perception": "察觉",
+        "Performance": "表演",
+        "Persuasion": "游说",
+        "Religion": "宗教",
+        "SleightOfHand": "巧手",
+        "Stealth": "隐匿",
+        "Survival": "求生"
+      },
+      "CheckFormat": "{ability}检定",
+      "SaveFormat": "{ability}豁免"
+    },
+    "Portrait": {
+      "SetTo0HP": "设置为0生命值",
+      "FullHeal": "完全治疗"
+    },
+    "Menu": {
+      "UseTokenImage": "使用Token图像",
+      "UseCharacterPortrait": "使用角色立绘",
+      "ScaleWithToken": "随Token缩放",
+      "ScaleWithTokenHint": "缩放立绘图像以匹配Token的缩放比例",
+      "Check": "检定",
+      "Save": "豁免"
+    },
+    "Passives": {
+      "SelectPassiveFeatures": "选择被动特性",
+      "SaveForAllTokens": "保存为此类型所有token",
+      "SaveForAllTokensHint": "将此选择应用于此角色的所有未来token"
+    },
+    "Advantage": {
+      "ADV": "优势",
+      "DIS": "劣势",
+      "AdvTooltip": "左键点击设置仅投掷优势。<br>右键点击切换。",
+      "DisTooltip": "左键点击设置仅投掷劣势。<br>右键点击切换。"
+    },
+    "Tooltips": {
+      "ActiveEffect": "激活效果"
+    },
+    "RestDialog": {
+      "ShortRest": "短休",
+      "LongRest": "长休"
+    },
+    "CPR": {
+      "GenericActionsButton": {
+        "Label": "动作",
+        "Tooltip": "点击打开CPR通用动作对话框"
+      },
+      "SelectActionsTitle": "选择CPR通用动作",
+	  "SelectActionsDescription": "选择最多{max}个CPR通用动作以显示在快速访问中。列表内容会根据你选择的D&D 5e规则版本（2014/旧版或2024/现代版）自动匹配对应的合集。",
+      "SelectActionsMenuName": "选择CPR动作",
+      "SelectActionsMenuLabel": "选择CPR动作",
+      "SelectActionsMenuHint": "选择要在快速访问中显示的CPR通用动作（最多6个，基于规则版本）",
+      "NoActionsAvailable": "没有可用的CPR动作。请确保CPR模组已安装，并且存在适用于你规则版本的适当CPR Actions合集。",
+      "MaxSelectionsReached": "最多可选择{max}个动作",
+      "SelectionCounter": "已选择：{current} / {max}"
+    },
+    "Notifications": {
+      "AutoPopulateSystemNotAvailable": "自动填充系统不可用",
+      "NoItemTypesAvailable": "没有可用于配置的物品类型",
+      "AutoPopulateConfigurationSaved": "自动填充配置已保存",
+      "ItemNotFound": "物品未找到",
+      "ItemCannotBeUsed": "物品无法使用",
+      "MacroNotFound": "宏未找到",
+      "CPRGenericActionsNotFound": "未找到CPR通用动作（2024）物品。请确保CPR模组已安装并激活。",
+      "CPRGenericActionsError": "使用CPR通用动作时出错",
+      "CPRModuleNotActive": "CPR模组未激活。请启用它以使用CPR功能。",
+      "CPRActionsSelectionSaved": "CPR动作选择已保存",
+      "CPRActionNotFound": "未找到CPR动作",
+      "CPRActionError": "使用CPR动作时出错",
+      "ShortRestNotAvailable": "此角色无法进行短休",
+      "LongRestNotAvailable": "此角色无法进行长休",
+      "SlotOccupiedByTwoHandedWeapon": "此槽位已被双手武器占用",
+      "FailedToRollInitiative": "投掷先攻失败",
+      "CPRActionBlockedFromHotbar": "CPR通用动作无法添加到快捷栏。请改用快速访问网格。",
+      "ActivityNotFound": "未找到行动组合",
+      "ActivityCannotBeUsed": "行动组合无法使用"
+    },
+    "AutoPopulateOptions": {
+      "IncludeActivities": "包含单独的行动组合",
+      "IncludeActivitiesHint": "启用后，具有多个行动组合的物品（例如，投掷武器）将分别添加每个行动组合，而不是父物品"
+    }
+  }
+}

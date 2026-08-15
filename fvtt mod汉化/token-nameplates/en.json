@@ -1,0 +1,244 @@
+{
+  "NAMEPLATES": {
+    "CONFIG": {
+      "ALIGN": {
+        "CENTER": "Center",
+        "HINT": "Text alignment",
+        "JUSTIFY": "Justified",
+        "LABEL": "Alignment",
+        "LEFT": "Left",
+        "RIGHT": "Right"
+      },
+      "ALPHA": {
+        "HINT": "Opacity of the nameplate",
+        "LABEL": "Opacity"
+      },
+	  "ANCHOR": {
+        "HINT": "Override the anchor position of this nameplate, for finer control over positioning",
+        "LABEL": "Override Anchor",
+        "X": "X",
+        "Y": "Y"
+      },
+      "ANGLE": {
+        "HINT": "Angle at which to display this namplate.",
+        "LABEL": "Angle"
+      },
+	  "AUTOANCHOR": {
+        "HINT": "Will set the nameplate's anchor point based on its alignment",
+        "LABEL": "Automatically Calculate Anchor"
+      },
+      "CURRENT": {
+        "HINT": "The current value after interpolation",
+        "LABEL": "Current Value"
+      },
+      "DISPLAY": {
+        "HINT": "",
+        "LABEL": "Display Nameplate"
+      },
+	  "EFFECTS": {
+        "ALPHA": {
+          "HINT": "Level of transparency for the effect",
+          "LABEL": "Alpha"
+        },
+        "COLOR": {
+          "HINT": "The effect's color",
+          "LABEL": "Color"
+        },
+        "GLOW": {
+          "ENABLE": {
+            "HINT": "Add a glow effect to the nameplate",
+            "LABEL": "Enable Glow"
+          },
+          "INNER": {
+            "HINT": "Strength of the glow inward from the edge of the sprite",
+            "LABEL": "Inner Strength"
+          },
+          "OUTER": {
+            "HINT": "Strength of the glow outward from the edge of the sprite",
+            "LABEL": "Outer Strength"
+          }
+        },
+        "OUTLINE": {
+          "ENABLE": {
+            "HINT": "Add an outline to the nameplate",
+            "LABEL": "Enable Outline"
+          },
+          "THICKNESS": {
+            "HINT": "The thickness of the outline",
+            "LABEL": "Thickness"
+          }
+        },
+        "USEDISPOSITIONCOLOR": {
+          "HINT": "Will color this effect based on the token's disposition (hostile, neutral, etc.)",
+          "LABEL": "Use Disposition Color"
+        }
+      },
+      "ENABLE": {
+        "HINT": "Toggle on to enable Token Nameplates for this token.",
+        "LABEL": "Enable Nameplates"
+      },
+      "ENABLEGLOBAL": {
+        "HINT": "Toggle on to use default nameplates for this actor type.",
+        "LABEL": "Enable Default Nameplates"
+      },
+      "EXPORT": {
+        "CLIPBOARD": "Copy to Clipboard",
+        "COPIED": "Configuration copied to clipboard",
+        "DIALOGMESSAGE": "Copy the text below",
+        "DOWNLOAD": "Download JSON",
+        "HINT": "Export JSON configuration",
+        "LABEL": "Export Configuration"
+      },
+      "FONT": {
+        "COLOR": {
+          "HINT": "",
+          "LABEL": "Color"
+        },
+		"DISPOSITIONCOLOR": {
+          "HINT": "Will use the token's disposition to select font color.",
+          "LABEL": "Use DispositionColor"
+        },
+        "DROPSHADOW": {
+          "HINT": "",
+          "LABEL": "Drop Shadow"
+        },
+        "DROPSHADOWALPHA": {
+          "HINT": "Opacity of the drop shadow, if any",
+          "LABEL": "Drop Shadow Alpha"
+        },
+		"DROPSHADOWANGLE": {
+          "HINT": "The drop shadow's projection angle. 0 = directly to the right",
+          "LABEL": "Drop Shadow Angle"
+        },
+        "DROPSHADOWCOLOR": {
+          "HINT": "The color of the drop shadow, if any",
+          "LABEL": "Drop Shadow Color"
+        },
+		"DROPSHADOWDISTANCE": {
+          "HINT": "The drop shadow's offset distance in pixels",
+          "LABEL": "Drop Shadow Distance"
+        },
+        "FAMILY": {
+          "HINT": "The font for this nameplate.",
+          "LABEL": "Font"
+        },
+        "SIZE": {
+          "HINT": "",
+          "LABEL": "Size"
+        }
+      },
+      "HEADER": "Nameplates",
+      "IMPORT": {
+		"ACTOR": "Import from actor settings",
+        "CLIPBOARD": "Import from Clipboard",
+        "DIALOGMESSAGE": "Paste the JSON below",
+		"GLOBAL": "Import from global settings",
+        "HINT": "Import JSON configuration",
+        "LABEL": "Import Configuration",
+        "PASTED": "Configuration read from clipboard",
+		"TOKEN": "Import from token settings",
+        "TYPE": "Import from actor type ({type}) settings",
+        "UPLOAD": "Upload JSON"
+      },
+	  "LEFT": "Left Nameplates",
+	  "LOADFROMACTOR": "Load Settings from Actor",
+      "LOADFROMTOKEN": "Load Settings from Token",
+      "LOWER": "Lower Nameplates",
+      "PADDING": {
+        "HINT": "Space above and to the left of the nameplate",
+        "LABEL": "Padding",
+        "X": "Left",
+        "Y": "Top"
+      },
+      "POSITION": {
+        "BOTTOM": "Bottom",
+        "HINT": "Where to place the nameplate relative to the token",
+        "LABEL": "Position",
+		"LEFT": "Left",
+        "RIGHT": "Right",
+        "TOP": "Top"
+      },
+      "REMOVE": {
+        "CONTENT": "Are you sure you want to remove this nameplate?\nThis cannot be undone.",
+        "TITLE": "Remove Nameplate"
+      },
+      "REVERT": {
+        "HINT": "Revert settings back to default.",
+        "LABEL": "Revert Settings",
+        "MESSAGE": "Are you sure you want to revert these settings back to default?",
+        "TITLE": "Revert Settings"
+      },
+	  "RIGHT": "Right Nameplates",
+	  "SOURCE": {
+        "DISABLED": "Controls disabled because of configuration source.",
+        "HINT": "Select from where this token should get its nameplate configuration",
+        "LABEL": "Configuration Source",
+        "TYPE": "Actor type ({type})"
+      },
+      "TABS": {
+        "BASICS": "Basics",
+		"DROPSHADOW": "Drop Shadow",
+        "EFFECTS": "Effects",
+		"FONT": "Font",
+        "GLOW": "Glow",
+        "OUTLINE": "Outline"
+      },
+      "TITLE": "Configure Nameplate",
+	  "TOKENOVERRIDE": {
+        "HINT": "If enabled, will store settings on this token rather than its actor.",
+        "LABEL": "Enable Token Overrides"
+      },
+      "TOOLTIPS": {
+        "ADD": "Add nameplate",
+        "DOWN": "Move nameplate down",
+        "EDIT": "Edit nameplate",
+        "EXPORT": "Export the current configuration as JSON",
+        "IMPORT": "Import a JSON configuration",
+        "REMOVE": "Remove nameplate",
+        "UP": "Move nameplate up"
+      },
+      "TYPES": {
+        "GLOBAL": "Global"
+      },
+      "UPPER": "Upper Nameplates",
+      "VALUE": {
+        "HINT": "The value of the label.<br>See <a href='https://github.com/Unarekin/FoundryVTT-Token-Nameplates/wiki/Interpolation'>the wiki</a> for information about string interpolation.",
+        "LABEL": "Value"
+      }
+    },
+    "ERRORS": {
+      "MISSINGNAMEPLATEID": "Nameplate ID missing!",
+      "NAMEPLATENOTFOUND": "Nameplate not found!"
+    },
+    "SETTINGS": {
+      "GLOBAL": {
+        "HINT": "Configure default nameplate settings",
+        "LABEL": "Configure",
+        "LIST": {
+          "DESCRIPTION": "Configure global nameplate settings for type:",
+          "TITLE": "Global Nameplate Settings"
+        },
+        "TEXT": "Global Settings",
+        "TITLE": "Global Nameplate Settings: {type}"
+      },
+      "INVERTISOMETRY": {
+        "HINT": "If enabled, will undo the perspective changes of isometric projection modules for nameplates",
+        "LABEL": "Invert Isometry Transform"
+      },
+      "PLACEABOVEPLACEABLES": {
+        "HINT": "When enabled, nameplates will always be displayed above tokens, tiles, and other placeables",
+        "LABEL": "Place Nameplates Above Tokens"
+      }
+    }
+  },
+  "TILE": {
+    "TABS": {
+      "nameplates": "Nameplates"
+    }
+  },
+  "TOKEN": {
+    "TABS": {
+      "nameplates": "Nameplates"
+    }
+  }
+}

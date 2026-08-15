@@ -1,0 +1,88 @@
+{
+    "WorldExplorer": {
+        "Name": "World Explorer",
+        "FIELDS": {
+            "image": {
+                "Name": "Overlay Image"
+            },
+            "color": {
+                "Name": "Overlay Color",
+                "Hint": "Ignored if using an overlay image.",
+                "Placeholder": "Default (#000000)"
+            },
+            "opacityGM": {
+                "Name": "Gamemaster Opacity"
+            },
+            "opacityPlayer": {
+                "Name": "Player Opacity"
+            },
+            "partialColor": {
+                "Name": "Partials Color",
+                "Hint": "If empty, the overlay color will be used. If not empty and using an overlay image, the partials will be colored for the GM but not for the players.",
+                "Placeholder": "Default (same as Overlay Color above)"
+            },
+            "partialOpacityPlayer": {
+                "Name": "Partials Opacity",
+                "Hint": "GMs will see a weighed opacity for the partially revealed spaces, calculated from the other opacities. This calculated value is shown on the right."
+            },
+            "persistExploredAreas": {
+                "Name": "Keep areas explored by tokens"
+            },
+            "position": {
+                "Name": "Overlay Position",
+                "Hint": "Whether it should display below tiles and textures or above.",
+                "Choices": {
+                    "back": "Cover the map only",
+                    "behindDrawings": "Cover the map and non-overhead tiles",
+                    "behindTokens": "Cover the map, non-overhead tiles, and drawings",
+                    "front": "Cover everything except grid"
+                }
+            },
+            "revealRadius": {
+                "Name": "Token Reveal Distance",
+                "Hint": "Distance (from center) to temporarily reveal around friendly tokens."
+            },
+            "gridRevealRadius": {
+                "Name": "Extend Revealed Distance",
+                "Hint": "If set, revealed grid spaces extend a certain amount into hidden and partially revealed spaces. Does not extend the partially revealed spaces."
+            }
+        },
+        "SceneSettings": {
+            "Enabled": "Enable for this scene",
+            "Overlay": {
+                "Title": "Overlay Settings"
+            },
+            "Partial": {
+                "Title": "Partially Revealed Spaces Settings",
+                "DerivedName": "GM"
+            },
+            "TokenInteractions" : {
+                "Title": "Token Interactions"
+            }
+        },
+        "Tools": {
+            "Toggle": "Toggle Spaces",
+            "Reveal": "Reveal Spaces",
+            "Partial": "Partially Reveal Spaces",
+            "Hide": "Hide Spaces",
+            "Reset": "Reset Scene",
+            "Opacity": "GM Overlay Opacity"
+        },
+        "ResetDialog": {
+            "Title": "Reset Scene?",
+            "Content": "Are you sure you want to reset and update the entire scene?</br>This can't be undone!",
+            "Confirm": "Enter this exact code in the box below to proceed: <strong>{code}</strong>",
+            "Choices": {
+                "Explored": "Show All",
+                "Unexplored": "Hide All"
+            }
+        },
+        "MigrateModuleSettings": {
+            "Title": "Migrate Module Settings",
+            "Content": "This scene has certain data that has been migrated to module settings. Do you want to override the module settings with the values this scene used to have?"
+        },
+        "Notifications": {
+            "Migrated": "World Explorer | Completed migration for the current scene"
+        }
+    }
+}

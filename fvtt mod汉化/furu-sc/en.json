@@ -1,0 +1,218 @@
+{
+  "FURU-SC": {
+    "SETTINGS": {
+      "SAVE_PATH": {
+        "name": "Save path",
+        "hint": "The default path where you want to save your recipe files. Path should be relevant to your data folder. You can also use it to sort different recipe files between different worlds by folders! Note: Don't use folders with other json files!"
+      },
+      "CURRENT_FILE": {
+        "name": "Current file name",
+        "hint": "The name of a loaded file with recipes, that we are changing right now."
+      },
+      "RECIPE_FILES": {
+        "name": "Recipe files",
+        "hint": "All the recipe files that are available in the world on the set save path"
+      },
+      "PLAYER_CAN_EDIT": {
+        "name": "Player recipe editing",
+        "hint": "Allow your player's to edit and create recipe files. GM's always have that right. If set to false, player's will only be able to explore the already created recipe files and craft with them."
+      },
+      "QUANTITY": {
+        "name": "System quantity path",
+        "hint": "If the system provides an ability to track the quantity of an item, you can provide a path relative to an item, for that variable. \"Simple Crafting\" will use it instead of using it's own quantity system."
+      },
+      "HIDE_TAGS_LABEL": {
+        "name": "Hide tags label",
+        "hint": "Hides label of the tag editor header button in an item window."
+      },
+      "ALLOW_FORCE_CRAFTING": {
+        "name": "Allow force crafting",
+        "hint": "Allow players to force craft any recipe without using ingredients. Can be set up per recipe. In case of such craft's GM's will receive notifications in chat."
+      },
+      "HIDE_WRONG_WORLD_NOTIFICATION": {
+        "name": "Hide wrong world notification",
+        "hint": "Hides the \"This recipes file was made in another world\" notification in craft menu."
+      }
+    },
+    "CRAFT_MENU": "Craft menu",
+    "CRAFT_MENU_UI": {
+      "NOTIFICATIONS": {
+        "WRONG_SYSTEM": "This recipes file was made in another game system. Item's probably won't be compatible at all!",
+        "WRONG_WORLD": "This recipes file was made in another world. Item's probably won't be compatible unless you use the same system and compendiums!"
+      },
+      "TOOLTIPS": {
+        "SEARCH": "Search for a recipe",
+        "SELECT_FILE": "Select file with the recipes",
+        "CLEAR_RECIPES": "Clear all recipes from selected file",
+        "CREATE_FILE": "Create a new recipe file",
+        "RELOAD_FILE": "Reload current file",
+        "SAVE_FILE": "Save recipe file",
+        "CREATE_RECIPE": "Create a new recipe",
+        "DELETE_RECIPE": "Delete this recipe",
+        "SAVE_DESCRIPTION": "Save description",
+        "EDIT_DESCRIPTION": "Edit description",
+        "CRAFT_FROM_RECIPE": "Craft from recipe",
+        "SUBSTRACT_QUANTITY": "Substract quantity",
+        "ITEM_QUANTITY": "Quantity of that item",
+        "ADD_QUANTITY": "Add quantity",
+        "DELETE_INGREDIENT": "Delete ingredient",
+        "ADD_TAG": "Add a new tag",
+        "TAG_QUANTITY": "Quantity for this tag",
+        "CHANGE_TAG": "Change this tag",
+        "REMOVE_TAG": "Remove this tag",
+        "EDIT_RECIPE_SETTINGS": "Edit recipe settings"
+      },
+      "SETTINGS": {
+        "TITLE": "Recipe settings",
+        "IS_TARGET_LIST": "Allow multiple target items",
+        "ALLOW_DISMANTLING": "Allow to dismantle the target item back to it's components by this recipe",
+        "IS_SECRET": "Make this recipe secret, hiding required components from players",
+        "ALLOW_FORCE_CRAFT": "Allow players to force craft by recipe so they can create items even if they lack ingredients. You will receive a chat message about forced crafting.",
+        "IS_ONE_TIME": "Make this recipe one time only, hiding it from players after crafting",
+        "IS_HIDDEN": "Hides this recipe from players",
+        "SEND_CRAFT_REQUEST": "Send GM an approval request to create an item"
+      },
+      "SEARCH_RECIPES": "Search recipes:",
+      "SEARCH_PLACEHOLDER": "Search...",
+      "CURRENT_FILE": "Current file:",
+      "RECIPE_NAME": "Recipe name:",
+      "RECIPE_TYPE": "Recipe type:",
+      "TYPES": {
+        "TEXT": "Text",
+        "ITEMS": "Items",
+        "TAGS": "Tags"
+      },
+      "TARGET_ITEM": "Target item:",
+      "TARGET_ITEMS": "Target items:",
+      "DESCRIPTION": "Description:",
+      "REQUIRED_ITEMS": "Required items:",
+      "REQUIRED_TAGS": "Required tags:"
+    },
+    "CRAFT_TABLE": "Craft table",
+    "CRAFT_TABLE_UI": {
+      "NOTIFICATIONS": {
+        "NOT_ENOUGH_ITEMS_WITH_TAGS": "You don't have enough ingredients with required tags to craft this item!"
+      },
+      "TOOLTIPS": {
+        "SELECT_ACTOR": "Select an actor that crafts this item",
+        "RELOAD_CRAFT_TABLE": "Reload craft table",
+        "CRAFT_ITEM": "Craft item",
+        "EXPAND_ITEM": "Expand item info",
+        "ITEM_NAME": "Item's name",
+        "TAG_QUANTITY": "Quantity for this tag",
+        "SUBSTRACT_QUANTITY": "Substract quantity",
+        "ITEM_QUANTITY": "Quantity of that item to use in crafting",
+        "ADD_QUANTITY": "Add quantity"
+      },
+      "ACTOR_SELECTION": "Actor selection:",
+      "QUANTITY": "Quantity:",
+      "REQUIRED_INGREDIENTS": "Required ingredients:",
+      "REQUIRED": "Required:",
+      "SUITABLE_INGREDIENTS": "Suitable ingredients:",
+      "TARGET_ITEMS": "Target items:",
+      "FORCE_CRAFT": "Force craft this recipe. Does not require ingredients. GM will be notified!"
+    },
+    "QUANTITY_CONFIG_TITLE": "Quantity path config",
+    "QUANTITY_CONFIG_UI": {
+      "TOOLTIPS": {
+        "HELP": "Get help on how to obtain item's quantity path.",
+        "QUANTITY_PATH": "Write quantity path here"
+      },
+      "HELP": "Help",
+      "STEPS": {
+        "HEADER": "Steps to obtain that quantity path",
+        "FIRST": "Create some items of different types and check if they have a quantity property anywhere in the items UI.",
+        "SECOND": "Open the console. Default key - \"F12\"",
+        "THIRD": "Type | game.items | in the console. This will give a list of all items in that world. If you want to get a specific item - type | game.items.get(\"\") | and add an itemID between the \"\"",
+        "FOURTH": "Check properties for all item type's and find the quantity. Then write down the path you took to get it, relative to that item. It should look something like this - \"data.quantity\" or \"system.count\" e.t.c. The important part is to be sure it contains the necessary data in a number format.",
+        "FIFTH": "Finally write that path to the field corresponding to that item type. If your item does not contain any quantity properties. Just leave it blank."
+      },
+      "TYPE": "Type",
+      "PATH": "Path"
+    },
+    "NOTIFICATIONS": {
+      "NO_RIGHTS": "You don't have enough rights to perform this action!",
+      "INVALID_NUMBER": "Please enter a valid number!",
+      "NO_INGREDIENTS": "This recipe has no ingredients. Please add some ingredients before crafting.",
+      "NO_TARGET": "This recipe has no target item. Please add a target to craft.",
+      "NO_TARGETS": "This recipe has no target items. Please add at least one target to craft.",
+      "FILE_RELOADED": "Selected file reloaded!",
+      "ITEMS_ONLY": "Only items can be dropped in a craft menu!",
+      "ACTOR_NOT_FOUND": "Actor not found!",
+      "CRAFT_TABLE_RELOADED": "Craft table reloaded!",
+      "NOT_ENOUGH_INGREDIENTS": "Not enough ingredients to craft the item!",
+      "NO_FOLDER_OR_FILE": "Can't get the current folder and/or file.",
+      "FOUND_NO_RECIPES": "Found no recipes for the search query",
+      "NO_DATA": "No data to save!",
+      "SUCCESSFULL_SAVE": "Successfully saved file:",
+      "FAILED_LOAD": "Failed to load recipes data. Error:",
+      "NO_OWNED_ACTOR": "No owned actor found! You can't craft without crafter!",
+      "ACTOR_NO_ITEMS": "Actor does not have any items!",
+      "CRAFTED": "Crafted:",
+      "INVALID_MESSAGE": "Invalid message!",
+      "TAG_EXISTS": "This tag is already assigned!",
+      "NO_TAGS": "This recipe has no tags assigned! Please add some tags before crafting.",
+      "SPECIAL_SYMBOLS": "Don't use any special symbols in this input field!",
+      "INSUFFICIENT_ITEM_QUANTITY": "You already selected the maximum possible amount of this item!",
+      "ENOUGH_TAGS": "You already provided enough tags to craft an item!",
+      "NOT_ENOUGH_TAGS": "You don't have enough tags to craft this item!",
+      "INVALID_RECIPE_TYPE": "Invalid recipe type!",
+      "FOUND_QUANTITY_PATH_DEFAULT": "Found quantity path setting preset for items in the current system. Setting up..."
+    },
+    "NEW_RECIPE": "New recipe",
+    "DEFAULT_DESCRIPTION": "Fill me in!",
+    "DIALOGS": {
+      "DELETE_CONFIRM": {
+        "title": "Confirm deletion",
+        "content": "<p>Are you sure you want to delete this recipe? This action cannot be undone.</p>"
+      },
+      "INGREDIENT_EQUALS_TARGET": {
+        "title": "Warning!",
+        "content": "<p>Target item and your dragged item have the same name or source item! It's not very logical to craft the item from itself.</p><p>Are you sure?</p>"
+      },
+      "SAVE_PROGRESS": {
+        "title": "Save progress",
+        "content": "<p>Save your progress?</p>"
+      },
+      "CLEAR_FILE": {
+        "title": "Confirm clearing the file",
+        "content": "<p>This will irreversibly delete all the data from the file. Are you sure?</p>"
+      },
+      "FILE_CREATION": {
+        "title": "File creation",
+        "content": "Please name a new file.",
+        "placeholder": "Enter a name"
+      },
+      "TAG_CREATION": {
+        "title": "Tag creation",
+        "content": "Please enter a new tag. Note that tags are case-sensitive.",
+        "placeholder": "Tag"
+      },
+      "CLEAR_TAGS": {
+        "title": "Clear tags",
+        "content": "<p>Are you sure you want to clear all the tags from this item?</p>"
+      }
+    },
+    "CRAFT_TAGS": "Craft tags",
+    "TAGS_EDITOR_TITLE": "Tags editor",
+    "TAGS_EDITOR_UI": {
+      "NOTIFICATIONS": {
+        "NO_TAGS": "Item has no tags or found no tags for the search query!"
+      },
+      "TOOLTIPS": {
+        "SEARCH_TAGS": "Search tags",
+        "CLEAR_TAGS": "Clear all tags",
+        "RELOAD_WINDOW": "Reload tag editor",
+        "ADD_TAG": "Add new tag",
+        "TAG_QUANTITY": "Quantity for this tag",
+        "CHANGE_TAG": "Change this tag",
+        "REMOVE_TAG": "Remove this tag"
+      },
+      "SEARCH_TAGS": "Search tags:",
+      "SEARCH_PLACEHOLDER": "Search..."
+    },
+    "CHAT_MESSAGES": {
+      "FORCE_CRAFT": "<h2>Force crafted</h2><p>Recipe: \"%r\"</p><p>Player: \"%p\" </p><p>Actor: \"%a\" </p>"
+    }
+  }
+}

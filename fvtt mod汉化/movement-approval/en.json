@@ -1,0 +1,35 @@
+{
+	"movementApproval": {
+		"controls": {
+			"lockMovement": {
+				"enabled": "Unlock Movement",
+				"disabled": "Lock Movement"
+			},
+			"pendingRequest": {
+				"name": "Pending Movement Request"
+			}
+		},
+		"notifications": {
+			"pendingRequest": "You already have a pending movement request. Please wait for GM approval.",
+			"requestSent": "Movement request sent to GM for approval.",
+			"movementApproved": "Your movement has been approved.",
+			"movementDenied": "Movement denied.",
+			"movementLocked": "Movement is currently locked. Use the ruler to request movement.",
+			"requestCancelled": "Movement request cancelled.",
+			"requestCancelledByUser": "{tokenName}'s movement request was cancelled by the user.",
+			"requestCancelledByDisconnect": "{tokenName}'s movement request was cancelled due to disconnection."
+		},
+		"dialog": {
+			"title": "Movement Approval",
+			"content": "{tokenName} requests to move. Do you approve?",
+			"approve": "Approve",
+			"deny": "Deny"
+		},
+		"cancelDialog": {
+			"title": "Cancel Movement Request",
+			"content": "Are you sure you want to cancel your movement request?",
+			"cancel": "Cancel Request",
+			"close": "Keep Request"
+		}
+	}
+}

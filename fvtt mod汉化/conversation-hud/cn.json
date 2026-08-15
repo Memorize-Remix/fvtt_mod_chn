@@ -1,0 +1,329 @@
+
+  "CHUD.strings": {
+    "participantName": {
+      "name": "名称",
+      "hint": "对话参与者的名称。"
+    },
+    "displayName": {
+      "name": "显示名称",
+      "hint": "切换是否显示参与者的名称。关闭时，将显示'未知'而不是名称。"
+    },
+    "portrait": {
+      "name": "头像",
+      "hint": "对话参与者的头像。"
+    },
+    "portraitScale": {
+      "name": "头像缩放",
+      "hint": "头像的缩放比例。默认情况下，比例为1将填充容器。较低的值会减小尺寸并添加边距，而较高的值会放大图片。"
+    },
+    "portraitAnchor": {
+      "vertical": {
+        "name": "垂直头像偏移",
+        "hint": "被视为图像显示起点的垂直原点。"
+      },
+      "horizontal": {
+        "name": "水平头像偏移",
+        "hint": "被视为图像显示起点的水平原点。"
+      }
+    },
+    "name": "名称",
+    "activeConversation": "活跃对话",
+    "noLinkedDocuments": "无关联文档",
+    "noActiveConversation": "无活跃对话",
+    "linkedJournal": {
+      "name": "关联日志",
+      "hint": "将与对话参与者关联的日志条目。"
+    },
+    "linkedActor": {
+      "name": "关联角色",
+      "hint": "将与对话参与者关联的角色。"
+    },
+    "conversationName": "对话名称",
+    "conversationParticipants": "对话参与者",
+    "conversationSettings": "对话设置",
+    "conversationBackground": {
+      "name": "对话背景",
+      "hint": "将作为此对话背景显示的图像。如果未选择图像，将显示深色半透明背景。"
+    },
+    "newParticipant": "新参与者",
+    "currentParticipants": "当前参与者",
+    "noActiveParticipant": "无活跃参与者",
+    "noParticipants": "无参与者",
+    "participantsHidden": "参与者列表已隐藏",
+    "noParticipantsInList": "对话没有参与者。尝试添加一些。（支持拖放）",
+    "conversationEntry": "对话条目",
+    "participantData": "对话参与者数据",
+    "factionData": "对话派系数据",
+    "browseFiles": "浏览文件",
+    "filePath": "文件路径",
+    "dropItem": "将物品拖放到此处以添加到对话",
+    "dropFaction": "将派系拖放到此处以添加到参与者",
+    "holdControl": "按住CTRL替换当前参与者",
+    "anonymous": "匿名",
+    "unknown": "未知",
+    "active": "活跃",
+    "banner": "横幅",
+    "details": "详情",
+    "actions": "操作",
+    "tokenIsHidden": "Token已隐藏",
+    "invalidDocumentRef": "无效的文档引用",
+    "migration": {
+      "migrationWizard": "迁移向导",
+      "migrationInfo": "此迁移将更新过时的<strong>对话</strong>和<strong>派系</strong>为Conversation HUD使用的最新格式。<br><br>仅包含遗留或不兼容数据的条目会受到影响。不会创建新内容，无关文档将保持不变。",
+      "migrationWarning": "<strong>重要：</strong>在继续之前，请确保你的世界已备份。此迁移将覆盖受影响日志条目中的现有数据。",
+      "documentsToMigrate": "需要迁移的文档",
+      "noDocumentsToMigrate": "所有对话和派系表都是最新的。无需迁移。"
+    },
+    "sceneConversation": {
+      "name": "场景对话",
+      "hint": "每当场景激活时将自动激活的关联对话。"
+    },
+    "sceneConversationVisibilityOff": {
+      "name": "以隐藏状态开始对话",
+      "hint": "设置是否以隐藏状态开始对话。未勾选时，对话将以可见状态开始。"
+    },
+    "sceneActors": "场景中的角色",
+    "excludeFromBeingPulled": {
+      "name": "排除被拉入对话",
+      "hint": "切换是否在拉入活跃对话的角色列表中显示此Token。"
+    },
+    "linkedConversation": {
+      "name": "关联对话",
+      "hint": "当Token被拉入活跃对话时将使用的关联对话。"
+    },
+    "chooseType": "选择类型",
+    "featureLocked": "功能已被GM锁定"
+  },
+  "CHUD.dialogue": {
+    "onCloseActiveConversation": {
+      "title": "确定吗？",
+      "content": "确定要关闭此对话吗？任何未保存的更改都将丢失。",
+      "confirm": "是",
+      "reject": "否"
+    },
+    "onRemoveParticipant": {
+      "title": "确定吗？",
+      "content": "确定要从当前活跃对话中移除此参与者吗？",
+      "confirm": "是",
+      "reject": "否"
+    },
+    "unsavedChanges": {
+      "title": "未保存的更改",
+      "content": "文档包含未保存的更改。你希望保存它们吗？",
+      "confirm": "保存更改",
+      "reject": "放弃更改"
+    },
+    "onMigrateData": {
+      "title": "确定吗？",
+      "content": "这将迁移过时的对话和派系。受影响的日志条目将被覆盖。请在继续之前确保你的世界已备份。",
+      "confirm": "迁移数据",
+      "reject": "取消"
+    }
+  },
+  "CHUD.actions": {
+    "save": "保存",
+    "activateHUD": "激活Conversation HUD",
+    "activateConversation": "活跃对话",
+    "createConversation": "创建对话",
+    "startConversation": "开始对话",
+    "closeConversation": "关闭对话",
+    "saveConversation": "保存对话",
+    "saveFaction": "保存派系",
+    "exportFaction": "导出派系",
+    "toggleSpeakAs": "切换发言者",
+    "toggleVisibility": "切换可见性",
+    "toggleBackgroundBlur": "切换背景",
+    "maximizeConversation": "最大化对话",
+    "minimizeConversation": "最小化对话",
+    "lockMinimization": "锁定最小化",
+    "discardChanges": "放弃更改",
+    "showLinkedConversation": "显示关联对话",
+    "participant": {
+      "add": "添加参与者",
+      "clone": "克隆参与者",
+      "edit": "编辑参与者",
+      "delete": "删除参与者"
+    },
+    "selection": {
+      "selectAll": "全选",
+      "selectVisible": "选择可见",
+      "deselectAll": "取消全选"
+    },
+    "changeConversationBackground": "更改对话背景",
+    "pullParticipants": "从场景拉取参与者",
+    "addActors": "添加角色",
+    "startMigration": "开始迁移"
+  },
+  "CHUD.tabs": {
+    "conversationParticipantAddEdit": {
+      "participant": "参与者配置",
+      "faction": "派系配置"
+    }
+  },
+  "CHUD.faction": {
+    "factionSelector": {
+      "name": "派系选择",
+      "hint": "创建新派系或选择现有派系。"
+    },
+    "displayFaction": {
+      "name": "显示派系",
+      "hint": "切换是否显示参与者所属的派系。"
+    },
+    "factionName": {
+      "name": "派系名称",
+      "hint": "派系的名称。",
+      "placeholder": "新派系"
+    },
+    "factionLogo": {
+      "name": "派系标志",
+      "hint": "代表派系的标志。"
+    },
+    "displayFactionBanner": {
+      "name": "显示横幅",
+      "hint": "切换是否显示背景中出现的横幅。"
+    },
+    "factionBannerShape": {
+      "name": "横幅形状",
+      "hint": "横幅的形状。"
+    },
+    "factionBannerColor": {
+      "name": "横幅颜色",
+      "hint": "横幅的颜色。"
+    },
+    "unknownFaction": "未知派系",
+    "unaffiliated": "无隶属",
+    "noBannerPreview": "无横幅预览可用",
+    "bannerPreview": "横幅预览"
+  },
+  "CHUD.sheets": {
+    "entrySheet": "对话条目表",
+    "factionSheet": "对话派系表"
+  },
+  "CHUD.conversationTypes": {
+    "gmControlled": {
+      "name": "GM控制",
+      "description": "只有GM选择谁在发言。最适合NPC向队伍讲话的场景，完全由GM管理。"
+    },
+    "collective": {
+      "name": "集体",
+      "description": "每个玩家选择自己的发言者。适用于玩家轮流扮演不同角色的小队场景。"
+    }
+  },
+  "CHUD.errors": {
+    "generic": "发生未知错误，请检查控制台以获取更多信息。",
+    "genericSheetError": "尝试渲染表单时发生未知错误。你确定这是一个有效的对话表单吗？",
+    "failedToParse": "解析表单数据失败。你确定这是一个有效的对话表单吗？",
+    "invalidActor": "提供的角色格式无效，无法正确解析。",
+    "typeNotSupported": "Conversation HUD不支持此类数据。",
+    "activateNoPages": "尝试激活包含无页面的文档的对话。",
+    "activateNoInit": "Conversation HUD对象尚未初始化时尝试活跃对话",
+    "activateNoPerms": "你没有权限激活此对话。",
+    "noActiveConversation": "未找到活跃对话。",
+    "saveUnsuccessful": "保存当前对话失败。",
+    "noSelectedTokens": "未选择任何Token。",
+    "conversationAlreadyActive": "无法创建新对话，因为已有活跃对话。",
+    "insufficientRights": "用户权限不足。",
+    "featureNotEnabled": "功能当前已禁用。如果你希望使用它，请在设置中启用。",
+    "noLibWrapper": "Conversation HUD需要libWrapper模组以获得完整功能。请安装并激活它。",
+    "invalidJournalEntry": "提供的日志条目无效，请确保提供的日志条目有效且未被删除。"
+  },
+  "CHUD.warnings": {
+    "noParticipantDataFound": "在此日志条目中未找到可用的参与者数据。",
+    "noFactionDataFound": "在此日志条目中未找到可用的派系数据。",
+    "migrationNotComplete": "迁移未完成：某些条目无法更新。请检查控制台以获取更多信息。"
+  },
+  "CHUD.info": {
+    "saveSuccessful": "当前对话已成功保存。",
+    "migrationComplete": "迁移成功：所有条目均已更新，无错误。"
+  },
+  "CHUD.settings": {
+    "settingsSheetHeaders": {
+      "portrait": "头像",
+      "interface": "界面",
+      "features": "功能",
+      "fontSize": "字体大小",
+      "dataMigration": "数据迁移",
+      "others": "其他设置"
+    },
+    "portraitStyle": {
+      "name": "头像样式",
+      "hint": "此选项决定活跃参与者头像的显示方向和样式。",
+      "choices": {
+        "vertical": "垂直",
+        "horizontal": "水平",
+        "square": "方形",
+        "auto": "自动"
+      }
+    },
+    "portraitAnchorVertical": {
+      "name": "头像偏移 - 垂直",
+      "hint": "头像显示起点的垂直偏移参考。例如，选择'顶部'选项时，将始终显示头像的上部。",
+      "choices": {
+        "top": "顶部",
+        "center": "居中",
+        "bottom": "底部"
+      }
+    },
+    "portraitAnchorHorizontal": {
+      "name": "头像偏移 - 水平",
+      "hint": "头像显示起点的水平偏移参考。例如，选择'左侧'选项时，将始终显示头像的最左侧部分。",
+      "choices": {
+        "left": "左侧",
+        "center": "居中",
+        "right": "右侧"
+      }
+    },
+    "displayAllParticipantsToPlayers": {
+      "name": "显示参与者列表",
+      "hint": "切换是否向玩家显示所有对话参与者的列表。GM仍然可以看到此列表。"
+    },
+    "displayNoParticipantBox": {
+      "name": "显示无活跃参与者界面",
+      "hint": "切换是否显示通知用户当前没有活跃发言参与者的容器。如果关闭，将不显示任何内容。"
+    },
+    "enableSpeakAs": {
+      "name": "启用发言者功能",
+      "hint": "切换发言者功能的开关。默认情况下，该功能是开启的，但如果你不使用它并且不希望出现额外按钮，可以将其关闭。"
+    },
+    "enableMinimize": {
+      "name": "启用最小化功能",
+      "hint": "切换最小化功能的开关。默认情况下，该功能是开启的，因为它允许用户在对话活跃且可见时与地图交互。如果你不希望此行为，可以关闭该功能。"
+    },
+    "keepMinimize": {
+      "name": "记住最小化状态",
+      "hint": "在不同对话之间记住最小化状态。默认情况下，该功能是关闭的，因此每个新对话都将以最大化状态开始。启用此功能可使新对话继承之前的最小化状态。最小化状态在页面重新加载时重置。"
+    },
+    "clearActiveParticipantOnVisibilityChange": {
+      "name": "在可见性更改时清除活跃参与者",
+      "hint": "切换是否在对话可见性切换为关闭时清除当前活跃参与者。"
+    },
+    "enableSceneConversations": {
+      "name": "启用场景对话",
+      "hint": "切换场景对话功能的开关。默认情况下，该功能是开启的，它允许用户将对话链接到场景，当场景激活时对话将自动打开。对话选择器可以在场景配置表的环境选项卡中找到。如果你不希望此行为，可以关闭该功能。"
+    },
+    "blurAmount": {
+      "name": "模糊程度",
+      "hint": "对话活跃时应用于背景的模糊量（以像素为单位）。零像素将完全禁用背景模糊。"
+    },
+    "activeParticipantFontSize": {
+      "name": "参与者字体大小",
+      "hint": "此选项决定用于显示当前活跃参与者名称的字体大小。"
+    },
+    "activeParticipantFactionFontSize": {
+      "name": "参与者派系字体大小",
+      "hint": "此选项决定用于显示当前活跃参与者所属派系名称的字体大小。"
+    },
+    "fontSizeOptions": {
+      "verySmall": "非常小",
+      "small": "小",
+      "regular": "常规",
+      "large": "大",
+      "veryLarge": "非常大"
+    },
+    "migrationWizard": {
+      "name": "迁移向导",
+      "button": "打开向导",
+      "hint": "打开迁移向导，将过时的对话或派系迁移到新格式。"
+    }
+  }
+}
