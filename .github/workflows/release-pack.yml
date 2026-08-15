@@ -14,47 +14,50 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      - name: 安装 jq 和 dos2unix
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y jq dos2unix
+      - name: 安装 jq
+        run: sudo apt-get update && sudo apt-get install -y jq xxd
 
-      # 统一所有 cn.json 的换行符为 LF
-      - name: 统一换行符为 LF
-        run: |
-          echo "转换所有 cn.json 的换行符为 LF..."
-          find "fvtt mod汉化" -name "cn.json" -exec dos2unix {} \;
-
-      # 🛠️ 针对 inspect-statblock/cn.json 进行强制修复
-      - name: 修复 inspect-statblock/cn.json
+      # 🔥 删除原文件，用原始字符串重建
+      - name: 暴力重建 inspect-statblock/cn.json
         run: |
           FILE="fvtt mod汉化/inspect-statblock/cn.json"
-          echo "正在修复 $FILE ..."
+          echo "删除旧文件..."
+          rm -f "$FILE"
           
-          # 去除文件末尾的空白字符（换行、空格等）
-          sed -i -e :a -e '/^\n*$/{$d;N;ba' -e '}' "$FILE" 2>/dev/null || true
+          echo "创建新文件..."
+          # 使用 printf 写入每一行，确保结尾有换行
+          printf '{\n' > "$FILE"
+          printf '\t"INSPECTSTATBLOCK": {\n' >> "$FILE"
+          printf '      "MODULE.NAME": "Inspect Statblock",\n' >> "$FILE"
+          printf '      "MODULE.DESCRIPTION": "一个允许你查看角色属性的模组。",\n' >> "$FILE"
+          printf '      "KEYBINDING.OPEN": "打开Inspect Statblock",\n' >> "$FILE"
+          printf '      "NOTIFICATIONS.NO_TOKEN": "请选择一个角色。",\n' >> "$FILE"
+          printf '      "NOTIFICATIONS.NO_ACTOR": "选中的角色没有关联的属性。"\n' >> "$FILE"
+          printf '    }\n' >> "$FILE"
+          printf '}\n' >> "$FILE"
           
-          # 获取最后一个非空白字符的十六进制值
-          LAST_CHAR=$(tail -c 1 "$FILE" | od -An -tx1 | tr -d ' \n')
-          # '}' 的十六进制是 7d
-          if [ "$LAST_CHAR" != "7d" ]; then
-            echo "文件末尾不是 '}'，追加一个 '}'"
-            echo '}' >> "$FILE"
+          echo "文件内容（cat -A）："
+          cat -A "$FILE"
+          echo ""
+          echo "文件大小和行数："
+          wc -c "$FILE"
+          wc -l "$FILE"
+          echo ""
+          echo "文件头部十六进制（前100字节）："
+          xxd -c 16 -l 100 "$FILE"
+          echo ""
+          
+          echo "现在用 jq 验证："
+          if jq empty "$FILE"; then
+            echo "✅ 验证成功"
           else
-            echo "文件末尾已是 '}'"
-          fi
-          
-          # 再次用 jq 尝试格式化，如果能成功，则用 jq 重新输出干净格式（可选）
-          if jq empty "$FILE" 2>/dev/null; then
-            echo "✅ 修复后格式正确"
-          else
-            echo "⚠️ 修复后仍然报错，请手动检查文件内容"
-            # 可选：输出文件内容以便排查
-            cat -A "$FILE"
+            echo "❌ 验证失败，错误码：$?"
+            echo "尝试打印 jq 详细错误："
+            jq . "$FILE" 2>&1 || true
             exit 1
           fi
 
-      # 验证所有 cn.json 是否合法（此时应该全部通过）
+      # 验证所有 cn.json（此时应该全部通过）
       - name: 验证所有 cn.json
         run: |
           echo "开始验证所有 cn.json 文件..."
@@ -67,14 +70,14 @@ jobs:
           done
           echo "✅ 所有 cn.json 文件格式正确"
 
-      # 合并所有 cn.json
+      # 合并
       - name: 合并所有 cn.json
         run: |
           find "fvtt mod汉化" -name "cn.json" -exec cat {} + | jq -s 'reduce .[] as $item ({}; . * $item)' > cn.json
-          echo "合并完成，文件大小："
+          echo "合并完成，大小："
           ls -lh cn.json
 
-      # 准备打包
+      # 打包
       - name: 准备打包文件夹
         run: |
           mkdir package
@@ -83,14 +86,12 @@ jobs:
           cp module.json package/ || echo "⚠️ module.json 不存在"
           ls -la package/
 
-      # 打包成 zip
       - name: 打包成 zip
         run: |
           cd package
           zip -r ../汉化包.zip .
           cd ..
 
-      # 上传附件到 Release
       - name: 上传附件到 Release
         uses: softprops/action-gh-release@v1
         with:
