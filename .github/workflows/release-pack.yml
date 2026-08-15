@@ -7,6 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:              # ⬅️ 新增这一整块
+      contents: write         # 允许上传 Release 附件
+      # 如果需要读取其他，可添加 actions: read 等，但写 release 只需 contents: write
+
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
@@ -46,6 +50,6 @@ jobs:
       - name: 上传附件到 Release
         uses: softprops/action-gh-release@v1
         with:
-          files: 汉化包.zip
+          files: mod_chn.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
