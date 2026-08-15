@@ -17,7 +17,7 @@ jobs:
       - name: 安装 jq 和 dos2unix
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq dos2unix
+          sudo apt-get install -y jq dos2unix xxd
 
       # 将所有 cn.json 的换行符统一转为 LF（Unix 风格）
       - name: 统一换行符为 LF
@@ -25,6 +25,43 @@ jobs:
           echo "转换所有 cn.json 的换行符为 LF..."
           find "fvtt mod汉化" -name "cn.json" -exec dos2unix {} \;
           echo "转换完成"
+
+      # 🐛 专门针对 inspect-statblock/cn.json 进行详细调试
+      - name: 调试 inspect-statblock/cn.json
+        run: |
+          FILE="fvtt mod汉化/inspect-statblock/cn.json"
+          echo "=== 文件内容 (cat -A) ==="
+          cat -A "$FILE"
+          echo ""
+          echo "=== 文件十六进制 (前200字节) ==="
+          xxd -c 16 -l 200 "$FILE"
+          echo ""
+          echo "=== 文件大小和行数 ==="
+          wc -c "$FILE"
+          wc -l "$FILE"
+          echo ""
+          echo "=== 尝试用 jq 解析，显示详细错误 ==="
+          jq . "$FILE" 2>&1 || true
+          echo ""
+          echo "=== 检查 JSON 括号匹配 (用 python) ==="
+          python3 -c "
+import json, sys
+try:
+    with open('$FILE', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    print('✅ JSON 解析成功')
+except json.JSONDecodeError as e:
+    print(f'❌ JSON 错误: {e}')
+    # 显示错误行附近的内容
+    with open('$FILE', 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+        err_line = e.lineno - 1
+        start = max(0, err_line - 2)
+        end = min(len(lines), err_line + 3)
+        for i in range(start, end):
+            prefix = '>>>' if i == err_line else '   '
+            print(f'{prefix} {i+1}: {repr(lines[i])}')
+" || echo "python 未安装，跳过"
 
       # 验证所有 cn.json 是否合法
       - name: 验证所有 cn.json
@@ -48,7 +85,7 @@ jobs:
           echo "内容预览（前10行）："
           head -n 10 cn.json
 
-      # 准备打包文件夹（复制合并后的 cn.json、welcome.js、module.json）
+      # 准备打包文件夹
       - name: 准备打包文件夹
         run: |
           mkdir package
