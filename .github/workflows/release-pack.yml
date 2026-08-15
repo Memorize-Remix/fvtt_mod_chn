@@ -1,0 +1,51 @@
+name: 合并汉化并打包 Release
+
+on:
+  release:
+    types: [published]   # 当你发布 Release 时自动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 jq (用于 JSON 深度合并)
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: 合并所有子目录中的 cn.json
+        run: |
+          # 查找 FVTT mod汉化 下所有的 cn.json
+          # 使用 jq -s (slurp) 读取所有文件为数组，然后用 reduce 进行递归合并（深度合并）
+          # 若顶级键冲突，后读取的文件会覆盖前者，但内部嵌套对象会合并
+          find "FVTT mod汉化" -name "cn.json" -print0 | xargs -0 cat | jq -s 'reduce .[] as $item ({}; . * $item)' > cn.json
+          
+          echo "合并后的 cn.json 内容预览："
+          cat cn.json | jq '.' | head -n 20
+
+      - name: 准备打包文件夹
+        run: |
+          mkdir package
+          # 复制合并后的汉化主文件
+          cp cn.json package/
+          # 复制固定的欢迎页和 Mod 配置（module.json 保持你手动调整的原始状态）
+          cp welcome.js package/
+          cp module.json package/
+          
+          # （可选操作）如果你希望 Release 版本号自动同步到 module.json，取消下面两行注释：
+          # VERSION_TAG=${GITHUB_REF#refs/tags/}
+          # jq --arg ver "$VERSION_TAG" '.version = $ver' module.json > package/module.json
+
+      - name: 打包成 zip
+        run: |
+          cd package
+          zip -r ../汉化包.zip .
+          cd ..
+
+      - name: 上传附件到 Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: 汉化包.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
