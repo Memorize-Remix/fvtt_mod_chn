@@ -15,17 +15,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 安装 jq
-        run: sudo apt-get update && sudo apt-get install -y jq xxd
+        run: sudo apt-get update && sudo apt-get install -y jq
 
-      # 🔥 删除原文件，用原始字符串重建
-      - name: 暴力重建 inspect-statblock/cn.json
+      # ---------- 强制重建 inspect-statblock/cn.json ----------
+      - name: 强制重建 inspect-statblock/cn.json
         run: |
           FILE="fvtt mod汉化/inspect-statblock/cn.json"
-          echo "删除旧文件..."
           rm -f "$FILE"
-          
-          echo "创建新文件..."
-          # 使用 printf 写入每一行，确保结尾有换行
           printf '{\n' > "$FILE"
           printf '\t"INSPECTSTATBLOCK": {\n' >> "$FILE"
           printf '      "MODULE.NAME": "Inspect Statblock",\n' >> "$FILE"
@@ -35,29 +31,99 @@ jobs:
           printf '      "NOTIFICATIONS.NO_ACTOR": "选中的角色没有关联的属性。"\n' >> "$FILE"
           printf '    }\n' >> "$FILE"
           printf '}\n' >> "$FILE"
-          
-          echo "文件内容（cat -A）："
-          cat -A "$FILE"
-          echo ""
-          echo "文件大小和行数："
-          wc -c "$FILE"
-          wc -l "$FILE"
-          echo ""
-          echo "文件头部十六进制（前100字节）："
-          xxd -c 16 -l 100 "$FILE"
-          echo ""
-          
-          echo "现在用 jq 验证："
-          if jq empty "$FILE"; then
-            echo "✅ 验证成功"
-          else
-            echo "❌ 验证失败，错误码：$?"
-            echo "尝试打印 jq 详细错误："
-            jq . "$FILE" 2>&1 || true
+          echo "已重建 $FILE"
+          if ! jq empty "$FILE"; then
+            echo "❌ 重建失败"
+            cat -A "$FILE"
             exit 1
           fi
 
-      # 验证所有 cn.json（此时应该全部通过）
+      # ---------- 强制重建 vf-5e-sheet-addons/cn.json ----------
+      - name: 强制重建 vf-5e-sheet-addons/cn.json
+        run: |
+          FILE="fvtt mod汉化/vf-5e-sheet-addons/cn.json"
+          rm -f "$FILE"
+          printf '{\n' > "$FILE"
+          printf '\t"vf-5e-sheet-addons": {\n' >> "$FILE"
+          printf '    "class-names": {\n' >> "$FILE"
+          printf '      "artificer": "奇械师",\n' >> "$FILE"
+          printf '      "cleric": "牧师",\n' >> "$FILE"
+          printf '      "druid": "德鲁伊",\n' >> "$FILE"
+          printf '      "paladin": "圣武士",\n' >> "$FILE"
+          printf '      "wizard": "法师"\n' >> "$FILE"
+          printf '    },\n' >> "$FILE"
+          printf '    "spellcasting": {\n' >> "$FILE"
+          printf '      "preparable": "可准备"\n' >> "$FILE"
+          printf '    },\n' >> "$FILE"
+          printf '    "settings": {\n' >> "$FILE"
+          printf '      "additional-class-names": {\n' >> "$FILE"
+          printf '        "name": "其他准备施法者职业名称"\n' >> "$FILE"
+          printf '      },\n' >> "$FILE"
+          printf '      "edit-class-names-menu": {\n' >> "$FILE"
+          printf '        "name": "编辑准备施法者职业名称",\n' >> "$FILE"
+          printf '        "label": "编辑",\n' >> "$FILE"
+          printf '        "title": "编辑准备施法者职业名称",\n' >> "$FILE"
+          printf '        "note": "添加任何您想用于角色表法术书准备功能的额外职业名。 注意：这些应该是正确的标题大小写名称，如'Wizard'，而不是'wizard'。",\n' >> "$FILE"
+          printf '        "header": {\n' >> "$FILE"
+          printf '          "name": "职业名"\n' >> "$FILE"
+          printf '        },\n' >> "$FILE"
+          printf '        "button": {\n' >> "$FILE"
+          printf '          "cancel": "取消",\n' >> "$FILE"
+          printf '          "save": "保存变更"\n' >> "$FILE"
+          printf '        },\n' >> "$FILE"
+          printf '        "tooltip": {\n' >> "$FILE"
+          printf '          "create": "添加新的职业名",\n' >> "$FILE"
+          printf '          "undo": "撤销文本更改",\n' >> "$FILE"
+          printf '          "delete": "删除此名称"\n' >> "$FILE"
+          printf '        }\n' >> "$FILE"
+          printf '      },\n' >> "$FILE"
+          printf '      "show-prep-limit-colours": {\n' >> "$FILE"
+          printf '        "name": "为准备法术更改颜色",\n' >> "$FILE"
+          printf '        "hint": "如果勾选，当您达到或超过上限时，会更改法术选项卡中准备法术的背景和准备图标的颜色。您需要重新打开角色表才能看到更改。"\n' >> "$FILE"
+          printf '      },\n' >> "$FILE"
+          printf '      "use-class-sources": {\n' >> "$FILE"
+          printf '        "name": "使用职业来源",\n' >> "$FILE"
+          printf '        "hint": "如果勾选，则允许您管理准备施法者的法术来源。您需要重新打开角色表才能看到更改。"\n' >> "$FILE"
+          printf '      },\n' >> "$FILE"
+          printf '      "prep-bar-top": {\n' >> "$FILE"
+          printf '        "name": "顶部的法术准备栏",\n' >> "$FILE"
+          printf '        "hint": "如果勾选，则在法术选项卡顶部显示法术准备栏。您需要重新打开角色表才能看到变化。"\n' >> "$FILE"
+          printf '      },\n' >> "$FILE"
+          printf '      "prep-bar-bottom": {\n' >> "$FILE"
+          printf '        "name": "底部的法术准备栏",\n' >> "$FILE"
+          printf '        "hint": "如果勾选，则在法术选项卡底部显示法术准备栏。您需要重新打开角色表才能看到变化。"\n' >> "$FILE"
+          printf '      },\n' >> "$FILE"
+          printf '      "identify-permission": {\n' >> "$FILE"
+          printf '        "name": "确定权限级别",\n' >> "$FILE"
+          printf '        "hint": "识别物品所需的最低用户角色。"\n' >> "$FILE"
+          printf '      },\n' >> "$FILE"
+          printf '      "remove-attunement-control": {\n' >> "$FILE"
+          printf '        "name": "移除同调控制",\n' >> "$FILE"
+          printf '        "hint": "对于上述角色以下的用户，也请移除角色表中未识别物品的同调控制。您需要重新打开角色表才能看到更改。"\n' >> "$FILE"
+          printf '      }\n' >> "$FILE"
+          printf '    },\n' >> "$FILE"
+          printf '    "spell-manager": {\n' >> "$FILE"
+          printf '      "title": "准备法术来源管理器",\n' >> "$FILE"
+          printf '      "headers": {\n' >> "$FILE"
+          printf '        "name": "法术",\n' >> "$FILE"
+          printf '        "level": "环阶",\n' >> "$FILE"
+          printf '        "source": "来源"\n' >> "$FILE"
+          printf '      }\n' >> "$FILE"
+          printf '    },\n' >> "$FILE"
+          printf '    "spell-prep-bar": {\n' >> "$FILE"
+          printf '      "heading": "法术准备",\n' >> "$FILE"
+          printf '      "prep-total": "总计"\n' >> "$FILE"
+          printf '    }\n' >> "$FILE"
+          printf '  }\n' >> "$FILE"
+          printf '}\n' >> "$FILE"
+          echo "已重建 $FILE"
+          if ! jq empty "$FILE"; then
+            echo "❌ 重建失败"
+            cat -A "$FILE"
+            exit 1
+          fi
+
+      # ---------- 验证所有 cn.json ----------
       - name: 验证所有 cn.json
         run: |
           echo "开始验证所有 cn.json 文件..."
@@ -70,14 +136,14 @@ jobs:
           done
           echo "✅ 所有 cn.json 文件格式正确"
 
-      # 合并
+      # ---------- 合并 ----------
       - name: 合并所有 cn.json
         run: |
           find "fvtt mod汉化" -name "cn.json" -exec cat {} + | jq -s 'reduce .[] as $item ({}; . * $item)' > cn.json
           echo "合并完成，大小："
           ls -lh cn.json
 
-      # 打包
+      # ---------- 打包 ----------
       - name: 准备打包文件夹
         run: |
           mkdir package
