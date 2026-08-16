@@ -1,0 +1,255 @@
+{
+  "SIMPLE_SHOP_CRAFT_5E": {
+    "SHOP": {
+      "FIELDS": {
+        "name": { "label": "Shop Name" },
+        "location": { "label": "Location" },
+        "img": { "label": "Image" },
+        "buyModifier": {
+          "label": "Buy Modifier",
+          "hint": "Percentage adjustment applied to item prices in this shop's Buy tab. Negative values lower the price, positive values raise it. Individual items can override this."
+        },
+        "sellModifier": {
+          "label": "Sell Modifier",
+          "hint": "Percentage adjustment applied to item prices in this shop's Sell tab. Negative values lower the price, positive values raise it."
+        },
+        "fixedValueLootTypes": {
+          "label": "Fixed-Value Item Types",
+          "hint": "Loot subtypes never subject to the Buy/Sell modifiers above (e.g. gemstones, art objects always sell at their listed value)."
+        },
+        "goldPool": {
+          "unlimited": { "label": "Unlimited" }
+        }
+      }
+    },
+    "RECIPE": {
+      "FIELDS": {
+        "name": { "label": "Recipe Name" },
+        "img": { "label": "Image" },
+        "targetItem": {
+          "uuid": {
+            "label": "UUID",
+            "hint": "Alternative to the browser above — paste or drop an item UUID directly, useful for world items in no compendium."
+          }
+        },
+        "allowFreeformMaterials": {
+          "label": "Allow Freeform Materials",
+          "hint": "Players may substitute any item of sufficient value for the fixed materials below."
+        },
+        "unlockedFor": {
+          "label": "Unlocked For",
+          "hint": "Actors who may start this craft. Ignored if \"Open to All\" is checked."
+        },
+        "openToAll": {
+          "label": "Open to All",
+          "hint": "Any player may start this craft, regardless of the list above."
+        },
+        "materialPrice": {
+          "label": "Material Price",
+          "hint": "Required value of the selected materials. Leave empty to use the rules-based value for the target item."
+        },
+        "toolProficiencies": { "label": "Tool Proficiencies" },
+        "allowWorkshopOverride": {
+          "label": "Allow Workshop Override",
+          "hint": "Players can claim access to a proper workshop instead of owning the required tool."
+        },
+        "durationOverride": {
+          "value": {
+            "label": "Duration Override",
+            "hint": "Leave empty to use the rules-based duration for the target item."
+          }
+        }
+      }
+    },
+    "StarterPack": {
+      "Blacksmith": "Blacksmith",
+      "Alchemist": "Alchemist",
+      "Tavern": "Tavern",
+      "GeneralStore": "General Store",
+      "MagicShop": "Magic Shop",
+      "Blackmarket": "Blackmarket"
+    },
+    "ShopManager": {
+      "Title": "Shop & Craft",
+      "Tabs": {
+        "Shops": "Shops",
+        "Recipes": "Craft"
+      },
+      "Shops": {
+        "Active": "Active",
+        "Inactive": "Inactive",
+        "Status": "Status",
+        "Activate": "Activate Shop",
+        "Deactivate": "Deactivate Shop",
+        "StarterPack": "Starter Pack",
+        "Empty": "Empty",
+        "None": "No shops yet.",
+        "Create": "New Shop",
+        "Delete": "Delete Shop",
+        "Duplicate": "Duplicate Shop",
+        "DeleteConfirm": "Delete this shop? This cannot be undone."
+      },
+      "Recipes": {
+        "None": "No recipes yet.",
+        "Create": "New Recipe",
+        "Delete": "Delete Recipe",
+        "DeleteConfirm": "Delete this recipe? This cannot be undone.",
+        "Unlocked": "Unlocked",
+        "UnlockedAll": "All",
+        "Locked": "You haven't unlocked this recipe yet."
+      }
+    },
+    "RecipeEditor": {
+      "TargetItem": "Target Item",
+      "PickTargetItem": "Choose Target Item",
+      "RemoveTargetItem": "Remove Target Item",
+      "MaterialsNone": "No materials yet. Use the <i class=\"fas fa-plus\"></i> button above to add one.",
+      "AddMaterial": "Add Material",
+      "DropMaterialHint": "Drop an item here to add it as a material.",
+      "Unlock": "Unlock"
+    },
+    "ShopEditor": {
+      "Title": "Edit Shop",
+      "AddItems": "Add Items",
+      "GenerateItem": "Generate Item",
+      "GenerateItemType": "Item Type",
+      "GenerateItemMundane": "Mundane",
+      "GenerateItemSubtype": "Subtype",
+      "GenerateItemRoll": "Generate",
+      "GenerateItemNone": "No matching items found.",
+      "GenerateItemResult": "Generated {name}.",
+      "GenerateItemResultMultiple": "Generated {count} items.",
+      "GenerateItemPartial": "Generated {count} of {total} requested items — pool exhausted.",
+      "GenerateItemAny": "Any",
+      "GenerateItemMagic": "Magic",
+      "GenerateItemMagicOnly": "Magical Only",
+      "GenerateItemSpellFilter": "Spell Filter",
+      "GenerateItemRitualOnly": "Ritual Only",
+      "GenerateItemCount": "Count",
+      "GenerateItemClass": "Class",
+      "Tabs": {
+        "Buy": "Buy",
+        "Sell": "Sell",
+        "Players": "Players"
+      },
+      "Location": "Location",
+      "ActingAs": "Acting As",
+      "Player": "Player",
+      "Haggling": "Haggle",
+      "HagglingAttitude": "Attitude",
+      "HagglingCurrent": "Current Discount",
+      "HagglingRoll": "Roll",
+      "HagglingLocked": "Haggling Locked",
+      "HagglingUnlock": "Reset Haggling Lock",
+      "EditPlayers": "Edit Player Discounts",
+      "Players": {
+        "None": "No player-specific discounts yet.",
+        "DropHint": "Drop an actor here to add a player-specific discount"
+      },
+      "RenameShop": "Rename Shop",
+      "Spotlight": "Show to All Players",
+      "SpotlightNoTargets": "No other players are currently connected.",
+      "SpotlightSuccess": "Shop shown to all connected players.",
+      "NoActorSelected": "— None —",
+      "LocationPlaceholder": "e.g. Baldur's Gate",
+      "SettlementCap": "Settlement Cap",
+      "NoCap": "No Cap",
+      "Village": "Village",
+      "Town": "Town",
+      "City": "City",
+      "GoldPool": "Shop Money",
+      "GoldPoolMax": "Max. Shop Money",
+      "GoldPoolMaxHint": "Restored to this amount when the shop is restocked.",
+      "ResetRestock": "Reset Stock & Shop Money",
+      "NoRestock": "Exclude from Restock",
+      "NoRestockHint": "This item stays depleted after being bought out — Reset won't restock it.",
+      "PriceTooltip": "Edit Price",
+      "PriceOverrideHint": "Override this item's default price for this shop.",
+      "BundleSize": "Bundle Size",
+      "BundleSizeHint": "How many individual items the listed price buys (e.g. 20 for a bundle of arrows). Leave blank to guess from the catalog item.",
+      "PriceModifier": "Price Modifier",
+      "Discount": "Discount",
+      "DiscountTooltip": "Edit Price Modifier",
+      "DiscountOverrideHint": "Override the shop's price modifier for this item specifically.",
+      "ItemOverride": "Item Override",
+      "FixedValueItem": "Fixed-Value Item",
+      "Stock": "Stock",
+      "StockTooltip": "Edit Stock",
+      "StockMax": "Max Stock",
+      "StockMaxHint": "Empty means unlimited stock.",
+      "StockCurrent": "Current Stock",
+      "CartQuantity": "Buy",
+      "SellQuantity": "Sell",
+      "IncreaseQuantity": "Increase Quantity",
+      "DecreaseQuantity": "Decrease Quantity",
+      "NoSellableItems": "Nothing to sell.",
+      "SuppressedStock": "Out of Stock",
+      "SuppressedCap": "Exceeds Settlement Cap",
+      "SuppressedNotFound": "Item not found in active compendiums — check the identifier or enabled rulebooks",
+      "None": "No items yet."
+    },
+    "ShopCart": {
+      "Title": "Shopping Cart",
+      "ViewCart": "View Cart",
+      "Empty": "No items selected yet.",
+      "Total": "Total",
+      "Balance": "Balance",
+      "InsufficientFunds": "Insufficient funds",
+      "NoActiveGM": "No GM is currently online — purchases can only be completed while a GM is connected.",
+      "PurchaseRequested": "Purchase request sent — waiting for GM confirmation."
+    },
+    "PurchaseCard": {
+      "Buyer": "Buyer",
+      "InsufficientStock": "Not enough stock left for one or more items — purchase not completed.",
+      "InsufficientSellQuantity": "The seller no longer has enough of one or more items — sale not completed.",
+      "InsufficientShopGold": "The shop doesn't have enough gold to buy these items — sale not completed.",
+      "MissingActor": "The buying character could no longer be found.",
+      "MissingShop": "The shop this purchase belongs to could no longer be found.",
+      "MissingItem": "One of the purchased items could no longer be resolved."
+    },
+    "CraftStart": {
+      "NoActor": "Select a character above to continue.",
+      "NotProficient": "You are not proficient with this tool.",
+      "ToolMissing": "You don't own this tool.",
+      "WorkshopAccess": "Workshop Access",
+      "MaterialMissing": "Not in your inventory",
+      "DropMaterialHint": "Drop an item here to use it as a material.",
+      "MustOwnMaterial": "You can only use your own items as materials.",
+      "Supplied": "Supplied",
+      "Threshold": "Required",
+      "FillWithGold": "Fill with Gold",
+      "Start": "Start Craft",
+      "Requested": "Craft request sent — waiting for GM confirmation."
+    },
+    "CraftCard": {
+      "Crafter": "Crafter",
+      "MissingActor": "The crafting character could no longer be found.",
+      "MissingMaterial": "One of the contributed materials could no longer be found — craft not started."
+    },
+    "Craft": {
+      "InProgressName": "Crafting: {name}",
+      "ProgressActivityName": "Progress Craft",
+      "ProgressActivityFlavor": "The crafting progresses ({completed}/{total} workdays).",
+      "CompleteMessage": "{name} is finished and has been added to {actor}'s inventory."
+    },
+    "Shop": "Shop",
+    "Owner": "Owner",
+    "Recipe": "Recipe",
+    "Unknown": "Unknown",
+    "NewRecipePlaceholder": "New Recipe",
+    "RemoveMaterial": "Remove Material",
+    "Tool": "Tool",
+    "Buying": "Buying",
+    "Selling": "Selling",
+    "Accept": "Accept",
+    "Reject": "Reject",
+    "Status": {
+      "Pending": "Pending GM confirmation…",
+      "Accepted": "Accepted",
+      "Rejected": "Rejected"
+    },
+    "GoldFilled": "From Gold",
+    "NoActorSelectedHint": "No character selected — pick one under \"Acting As\" first.",
+    "Custom": "Custom"
+  }
+}

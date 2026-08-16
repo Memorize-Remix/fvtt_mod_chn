@@ -1,0 +1,255 @@
+{
+  "SIMPLE_SHOP_CRAFT_5E": {
+    "SHOP": {
+      "FIELDS": {
+        "name": { "label": "商店名称" },
+        "location": { "label": "位置" },
+        "img": { "label": "图像" },
+        "buyModifier": {
+          "label": "购买修正",
+          "hint": "应用于该商店“购买”标签页中物品价格的百分比调整。负值降低价格，正值提高价格。单个物品可覆盖此设置。"
+        },
+        "sellModifier": {
+          "label": "出售修正",
+          "hint": "应用于该商店“出售”标签页中物品价格的百分比调整。负值降低价格，正值提高价格。"
+        },
+        "fixedValueLootTypes": {
+          "label": "固定价值物品类型",
+          "hint": "不受上述购买/出售修正影响的战利品子类型（例如，宝石、艺术品始终按其标价出售）。"
+        },
+        "goldPool": {
+          "unlimited": { "label": "无限" }
+        }
+      }
+    },
+    "RECIPE": {
+      "FIELDS": {
+        "name": { "label": "配方名称" },
+        "img": { "label": "图像" },
+        "targetItem": {
+          "uuid": {
+            "label": "UUID",
+            "hint": "替代上方浏览功能——直接粘贴或拖放物品UUID，适用于不在合集中的世界物品。"
+          }
+        },
+        "allowFreeformMaterials": {
+          "label": "允许自由材料",
+          "hint": "玩家可以用任何价值足够的物品替代下方指定的固定材料。"
+        },
+        "unlockedFor": {
+          "label": "已解锁给",
+          "hint": "可以开始此制作的角色。若勾选“对所有人开放”则忽略此列表。"
+        },
+        "openToAll": {
+          "label": "对所有人开放",
+          "hint": "任何玩家均可开始此制作，无视上方列表。"
+        },
+        "materialPrice": {
+          "label": "材料价格",
+          "hint": "所选材料所需的价值。留空则使用目标物品基于规则的价值。"
+        },
+        "toolProficiencies": { "label": "工具熟练项" },
+        "allowWorkshopOverride": {
+          "label": "允许工坊替代",
+          "hint": "玩家可以声明使用合适的工坊，而不必拥有所需工具。"
+        },
+        "durationOverride": {
+          "value": {
+            "label": "制作时长覆盖",
+            "hint": "留空则使用目标物品基于规则的制作时长。"
+          }
+        }
+      }
+    },
+    "StarterPack": {
+      "Blacksmith": "铁匠铺",
+      "Alchemist": "炼金术士店",
+      "Tavern": "酒馆",
+      "GeneralStore": "杂货店",
+      "MagicShop": "魔法商店",
+      "Blackmarket": "黑市"
+    },
+    "ShopManager": {
+      "Title": "商店与制作",
+      "Tabs": {
+        "Shops": "商店",
+        "Recipes": "制作"
+      },
+      "Shops": {
+        "Active": "已激活",
+        "Inactive": "未激活",
+        "Status": "状态",
+        "Activate": "激活商店",
+        "Deactivate": "停用商店",
+        "StarterPack": "入门包",
+        "Empty": "空",
+        "None": "尚无商店。",
+        "Create": "新建商店",
+        "Delete": "删除商店",
+        "Duplicate": "复制商店",
+        "DeleteConfirm": "删除此商店？此操作不可撤销。"
+      },
+      "Recipes": {
+        "None": "尚无配方。",
+        "Create": "新建配方",
+        "Delete": "删除配方",
+        "DeleteConfirm": "删除此配方？此操作不可撤销。",
+        "Unlocked": "已解锁",
+        "UnlockedAll": "全部",
+        "Locked": "你尚未解锁此配方。"
+      }
+    },
+    "RecipeEditor": {
+      "TargetItem": "目标物品",
+      "PickTargetItem": "选择目标物品",
+      "RemoveTargetItem": "移除目标物品",
+      "MaterialsNone": "尚无材料。使用上方的 <i class=\"fas fa-plus\"></i> 按钮添加。",
+      "AddMaterial": "添加材料",
+      "DropMaterialHint": "拖放物品至此以添加为材料。",
+      "Unlock": "解锁"
+    },
+    "ShopEditor": {
+      "Title": "编辑商店",
+      "AddItems": "添加物品",
+      "GenerateItem": "生成物品",
+      "GenerateItemType": "物品类型",
+      "GenerateItemMundane": "普通",
+      "GenerateItemSubtype": "子类型",
+      "GenerateItemRoll": "生成",
+      "GenerateItemNone": "未找到匹配物品。",
+      "GenerateItemResult": "已生成 {name}。",
+      "GenerateItemResultMultiple": "已生成 {count} 件物品。",
+      "GenerateItemPartial": "请求生成 {total} 件，实际生成 {count} 件——池已耗尽。",
+      "GenerateItemAny": "任意",
+      "GenerateItemMagic": "魔法",
+      "GenerateItemMagicOnly": "仅魔法",
+      "GenerateItemSpellFilter": "法术筛选",
+      "GenerateItemRitualOnly": "仅仪式",
+      "GenerateItemCount": "数量",
+      "GenerateItemClass": "职业",
+      "Tabs": {
+        "Buy": "购买",
+        "Sell": "出售",
+        "Players": "玩家"
+      },
+      "Location": "位置",
+      "ActingAs": "扮演角色",
+      "Player": "玩家",
+      "Haggling": "议价",
+      "HagglingAttitude": "态度",
+      "HagglingCurrent": "当前折扣",
+      "HagglingRoll": "掷骰",
+      "HagglingLocked": "议价锁定",
+      "HagglingUnlock": "重置议价锁定",
+      "EditPlayers": "编辑玩家折扣",
+      "Players": {
+        "None": "尚无玩家专属折扣。",
+        "DropHint": "拖放角色至此以添加玩家专属折扣"
+      },
+      "RenameShop": "重命名商店",
+      "Spotlight": "向所有玩家展示",
+      "SpotlightNoTargets": "当前没有其他玩家连接。",
+      "SpotlightSuccess": "商店已向所有已连接玩家展示。",
+      "NoActorSelected": "— 无 —",
+      "LocationPlaceholder": "例如：博德之门",
+      "SettlementCap": "定居点上限",
+      "NoCap": "无上限",
+      "Village": "村庄",
+      "Town": "城镇",
+      "City": "城市",
+      "GoldPool": "商店资金",
+      "GoldPoolMax": "商店资金上限",
+      "GoldPoolMaxHint": "商店补货时恢复至此金额。",
+      "ResetRestock": "重置库存与商店资金",
+      "NoRestock": "不参与补货",
+      "NoRestockHint": "此物品售罄后保持缺货状态——重置不会补货。",
+      "PriceTooltip": "编辑价格",
+      "PriceOverrideHint": "为此商店覆盖该物品的默认价格。",
+      "BundleSize": "捆绑数量",
+      "BundleSizeHint": "所列价格可购买多少个单件（例如弓箭为20）。留空则根据目录物品猜测。",
+      "PriceModifier": "价格修正",
+      "Discount": "折扣",
+      "DiscountTooltip": "编辑价格修正",
+      "DiscountOverrideHint": "为此物品单独覆盖商店的价格修正。",
+      "ItemOverride": "物品覆盖",
+      "FixedValueItem": "固定价值物品",
+      "Stock": "库存",
+      "StockTooltip": "编辑库存",
+      "StockMax": "最大库存",
+      "StockMaxHint": "留空表示无限库存。",
+      "StockCurrent": "当前库存",
+      "CartQuantity": "购买",
+      "SellQuantity": "出售",
+      "IncreaseQuantity": "增加数量",
+      "DecreaseQuantity": "减少数量",
+      "NoSellableItems": "无可出售物品。",
+      "SuppressedStock": "缺货",
+      "SuppressedCap": "超过定居点上限",
+      "SuppressedNotFound": "在已激活的合集中未找到物品——请检查标识符或已启用的规则书",
+      "None": "尚无物品。"
+    },
+    "ShopCart": {
+      "Title": "购物车",
+      "ViewCart": "查看购物车",
+      "Empty": "尚未选择物品。",
+      "Total": "总计",
+      "Balance": "余额",
+      "InsufficientFunds": "资金不足",
+      "NoActiveGM": "当前没有在线主持人——购买只能在主持人在线时完成。",
+      "PurchaseRequested": "购买请求已发送——等待主持人确认。"
+    },
+    "PurchaseCard": {
+      "Buyer": "购买者",
+      "InsufficientStock": "一件或多件物品库存不足——购买未完成。",
+      "InsufficientSellQuantity": "出售方已没有足够的一件或多件物品——出售未完成。",
+      "InsufficientShopGold": "商店资金不足以购买这些物品——出售未完成。",
+      "MissingActor": "无法找到购买角色。",
+      "MissingShop": "无法找到此购买所属的商店。",
+      "MissingItem": "无法解析已购买的一件物品。"
+    },
+    "CraftStart": {
+      "NoActor": "请先在上方选择角色以继续。",
+      "NotProficient": "你不熟练此工具。",
+      "ToolMissing": "你未拥有此工具。",
+      "WorkshopAccess": "工坊使用权限",
+      "MaterialMissing": "不在你的物品栏中",
+      "DropMaterialHint": "拖放物品至此以用作材料。",
+      "MustOwnMaterial": "你只能使用自己的物品作为材料。",
+      "Supplied": "已提供",
+      "Threshold": "所需",
+      "FillWithGold": "用金币补足",
+      "Start": "开始制作",
+      "Requested": "制作请求已发送——等待主持人确认。"
+    },
+    "CraftCard": {
+      "Crafter": "制作人",
+      "MissingActor": "无法找到制作角色。",
+      "MissingMaterial": "无法找到已贡献的某件材料——制作未开始。"
+    },
+    "Craft": {
+      "InProgressName": "制作中：{name}",
+      "ProgressActivityName": "推进制作进度",
+      "ProgressActivityFlavor": "制作正在进行（{completed}/{total} 个工作日）。",
+      "CompleteMessage": "{name} 已完成并已添加到 {actor} 的物品栏。"
+    },
+    "Shop": "商店",
+    "Owner": "所有者",
+    "Recipe": "配方",
+    "Unknown": "未知",
+    "NewRecipePlaceholder": "新配方",
+    "RemoveMaterial": "移除材料",
+    "Tool": "工具",
+    "Buying": "购买",
+    "Selling": "出售",
+    "Accept": "接受",
+    "Reject": "拒绝",
+    "Status": {
+      "Pending": "等待主持人确认……",
+      "Accepted": "已接受",
+      "Rejected": "已拒绝"
+    },
+    "GoldFilled": "用金币支付",
+    "NoActorSelectedHint": "未选择角色——请先在“扮演角色”下选择。",
+    "Custom": "自定义"
+  }
+}
