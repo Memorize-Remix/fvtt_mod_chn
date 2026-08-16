@@ -12,7 +12,7 @@
 ## 一些须知
 - 如安装了此mod，则不要在安装[Foundry VTT Mega](https://github.com/fvtt-cn/mega_chn)，以免文本冲突。
 - **12.99版本是专属于V12汉化的最后一个更新版本。**
-- **13.x版本是专属于V13新更新mod的汉化。**
+- **13.99版本是专属于V13汉化的最后一个更新版本。**
 
 ## 安装
 - [x] 清单文件地址： [https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json](https://github.com/13996090016/fvtt_mod_chn/releases/latest/download/module.json)
