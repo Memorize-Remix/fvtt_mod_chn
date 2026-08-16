@@ -1,0 +1,287 @@
+{
+  "indy-walls": {
+    "Controls": {
+      "CubicBezier": "三次贝塞尔墙",
+      "Ellipse": "椭圆墙",
+      "Rectangle": "矩形墙",
+      "Polyline": "折线墙",
+      "ConvertToIndyWalls": "转换为 Indy Walls",
+      "CleanupWalls": "清理墙",
+      "RegionsToIndyWalls": "从区域创建 Indy Walls",
+      "DecreaseSegments": "减少曲线分段",
+      "IncreaseSegments": "增加曲线分段",
+      "UndoEdit": "撤销编辑",
+      "RedoEdit": "重做编辑",
+      "ApplyCubic": "创建三次贝塞尔墙",
+      "CancelCubic": "取消三次贝塞尔墙",
+      "ApplyEllipse": "创建椭圆墙",
+      "CancelEllipse": "取消椭圆墙",
+      "ApplyRectangle": "创建矩形墙",
+      "CancelRectangle": "取消矩形墙",
+      "ApplyPolyline": "创建折线墙",
+      "CancelPolyline": "取消折线墙",
+      "SaveConversionPreview": "保存转换预览",
+      "CancelConversionPreview": "取消转换预览",
+      "DecreaseConversionTolerance": "降低转换容差",
+      "IncreaseConversionTolerance": "提高转换容差",
+      "RectangleConversionTolerance": "矩形",
+      "EllipseConversionTolerance": "椭圆",
+      "ArcConversionTolerance": "弧线",
+      "BezierConversionTolerance": "贝塞尔",
+      "RegionConversionDetail": "细节",
+      "ShapeLevels": "Indy 形状层级",
+      "NoShapeLevels": "无层级",
+      "MixedShapeLevels": "混合",
+      "ShortcutHelp": "编辑器快捷键"
+    },
+    "Settings": {
+      "ColorPickerLabel": "颜色选择器",
+      "QuickWallTypeChange": {
+        "Name": "Ctrl 点击墙类型按钮以更新选中的墙",
+        "Hint": "启用后，在墙控制中 Ctrl 点击普通、地形、隐形、灵体、窗户、门或暗门，可将选中的墙更改为该类型。"
+      },
+      "HoveredWallHotkeyTypeChange": {
+        "Name": "墙类型快捷键更新悬停的 Foundry 墙",
+        "Hint": "启用后，当墙控制处于活动状态时，墙类型快捷键可更改鼠标下方的 Foundry 墙。编辑形状时，Indy 形状分段快捷键仍然有效。"
+      },
+      "KeepWallSelectionOnCanvasClick": {
+        "Name": "点击空白处时保持墙选中",
+        "Hint": "启用后，当墙控制处于活动状态时，点击画布空白区域会保持当前选中的墙仍处于选中状态。"
+      },
+      "ShowWallLengthsWhileDrawing": {
+        "Name": "绘制时显示墙长度",
+        "Hint": "启用后，在绘制或编辑普通墙与 Indy 墙时，墙预览会显示当前长度。长度使用场景网格距离与单位。"
+      },
+      "ShowWallLengthsOnHover": {
+        "Name": "悬停时显示墙长度",
+        "Hint": "启用后，在墙控制中悬停 Foundry 墙会显示其长度，包括由 Indy Walls 创建的墙分段。"
+      },
+      "DebugShapeSelection": {
+        "Name": "调试 Indy 形状选择",
+        "Hint": "启用后，Ctrl 点击形状选择的诊断信息将写入浏览器控制台。"
+      },
+      "ActiveShapeToolHighlightColor": {
+        "Name": "活动 Indy 形状工具高亮颜色",
+        "Hint": "用于在墙控制中高亮所选 Indy 形状绘制工具的十六进制颜色。"
+      },
+      "ActiveShapeToolHighlightGlow": {
+        "Name": "活动 Indy 形状工具发光",
+        "Hint": "所选 Indy 形状绘制工具按钮的发光强度。设为 0 可禁用发光。"
+      },
+      "ActiveShapeToolHighlightBorderWidth": {
+        "Name": "活动 Indy 形状工具边框宽度",
+        "Hint": "所选 Indy 形状绘制工具按钮的内嵌边框宽度。"
+      },
+      "ShowDoorGlyphsInEditor": {
+        "Name": "在 Indy 形状编辑器中显示门图标",
+        "Hint": "启用后，编辑 Indy 墙形状时，门与暗门分段会显示 Foundry 风格的门图标。"
+      },
+      "ShowShortcutHelpInEditor": {
+        "Name": "在 Indy 形状编辑器中显示快捷键帮助",
+        "Hint": "启用后，Indy 形状编辑器控制会包含一个紧凑的帮助按钮，显示当前形状工具的快捷键。"
+      },
+      "SharedRectangleConversion": {
+        "Name": "转换共享边相邻矩形",
+        "Hint": "启用后，转换可检测共享完整或部分墙边的相邻矩形，并隐藏重复的共享分段。禁用此选项可使用旧的互斥墙矩形检测。"
+      },
+      "RectangleConversionTolerance": {
+        "Name": "转换为 Indy Walls 的矩形容差",
+        "Hint": "转换过程中普通墙可贴合所检测矩形的宽松程度倍率。数值越低越严格；数值越高转换越激进。"
+      },
+      "EllipseConversionTolerance": {
+        "Name": "转换为 Indy Walls 的椭圆容差",
+        "Hint": "转换过程中普通墙可贴合所检测椭圆的宽松程度倍率。数值越低越严格；数值越高转换越激进。"
+      },
+      "ArcConversionTolerance": {
+        "Name": "转换为 Indy Walls 的弧线容差",
+        "Hint": "转换过程中普通墙可贴合所检测弧线的宽松程度倍率。数值越低越严格；数值越高转换越激进。"
+      },
+      "BezierConversionTolerance": {
+        "Name": "转换为 Indy Walls 的贝塞尔容差",
+        "Hint": "转换过程中普通墙可贴合所检测贝塞尔曲线的宽松程度倍率。数值越低越严格；数值越高转换越激进。"
+      },
+      "WallCleanupTolerance": {
+        "Name": "墙清理吸附容差",
+        "Hint": "清理墙工具将墙端点吸附到一起的最大像素距离。设为 0 则仅移除完全重复的线段。"
+      },
+      "WallCleanupRespectLevels": {
+        "Name": "清理墙遵循层级",
+        "Hint": "启用后，仅当墙共享相同的 v14 层级列表时，清理墙才会将端点吸附到一起。禁用此选项可允许跨层级吸附。"
+      },
+      "WallCleanupSnapStandaloneTargets": {
+        "Name": "清理墙吸附到网格线与地图边缘",
+        "Hint": "启用后，清理墙可将孤立端点移动到清理容差范围内的邻近网格线或地图边缘。默认禁用，因此端点只会朝其他端点或墙分段移动。"
+      },
+      "WallCleanupSimplifyPaths": {
+        "Name": "清理墙简化噪点路径",
+        "Hint": "启用后，清理墙可将兼容的非门普通墙路径缩减为更少的分段，同时使路径保持在清理容差范围内。默认禁用。"
+      },
+      "WallCleanupDuplicateWallTypes": {
+        "Name": "清理类型不同的重复墙",
+        "Hint": "启用后，当完全重复的分段仅墙类型不同时，清理墙会提示保留哪种墙类型。默认禁用。"
+      },
+      "PreviewWallColor": {
+        "Name": "预览墙颜色",
+        "Hint": "生成的墙预览的十六进制颜色，例如 #c10e56ff。"
+      },
+      "PreviewWindowWallColor": {
+        "Name": "预览窗户分段颜色",
+        "Hint": "标记为窗户的 Indy 预览分段的十六进制颜色。"
+      },
+      "PreviewDoorWallColor": {
+        "Name": "预览门分段颜色",
+        "Hint": "标记为门的 Indy 预览分段的十六进制颜色。"
+      },
+      "PreviewSecretWallColor": {
+        "Name": "预览暗门分段颜色",
+        "Hint": "标记为暗门的 Indy 预览分段的十六进制颜色。"
+      },
+      "PreviewInvisibleWallColor": {
+        "Name": "预览隐形分段颜色",
+        "Hint": "标记为隐形墙的 Indy 预览分段的十六进制颜色。"
+      },
+      "PreviewTerrainWallColor": {
+        "Name": "预览地形分段颜色",
+        "Hint": "标记为地形的 Indy 预览分段的十六进制颜色。"
+      },
+      "PreviewWallWidth": {
+        "Name": "预览墙宽度",
+        "Hint": "生成的墙预览的线宽。"
+      },
+      "PreviewVertexColor": {
+        "Name": "预览顶点颜色",
+        "Hint": "常规预览顶点的十六进制颜色。"
+      },
+      "PreviewVertexActiveColor": {
+        "Name": "预览活动顶点颜色",
+        "Hint": "悬停或拖动的矩形分割顶点的十六进制颜色。"
+      },
+      "PreviewVertexSize": {
+        "Name": "预览顶点大小",
+        "Hint": "常规预览顶点的大小。矩形分割顶点绘制得稍大一些。"
+      },
+      "PreviewEndpointColor": {
+        "Name": "预览端点颜色",
+        "Hint": "端点与矩形角点手柄的十六进制颜色。"
+      },
+      "PreviewEndpointSize": {
+        "Name": "预览端点大小",
+        "Hint": "端点与矩形角点手柄的大小。"
+      },
+      "PreviewHandleColor": {
+        "Name": "预览贝塞尔手柄颜色",
+        "Hint": "三次贝塞尔控制手柄的十六进制颜色。"
+      },
+      "PreviewHandleSize": {
+        "Name": "预览贝塞尔手柄大小",
+        "Hint": "三次贝塞尔控制手柄的大小。"
+      },
+      "PreviewMoveHandleColor": {
+        "Name": "预览中心手柄颜色",
+        "Hint": "用于移动活动 Indy 形状预览的中心手柄的十六进制颜色。"
+      },
+      "PreviewMoveHandleSize": {
+        "Name": "预览中心手柄大小",
+        "Hint": "用于移动活动 Indy 形状预览的中心手柄的大小。"
+      },
+      "PreviewOutlineColor": {
+        "Name": "预览描边颜色",
+        "Hint": "手柄与顶点描边的十六进制颜色。"
+      },
+      "PreviewOutlineWidth": {
+        "Name": "预览描边宽度",
+        "Hint": "手柄与顶点的描边宽度。"
+      }
+    },
+    "Dialogs": {
+      "DuplicateWallType": {
+        "Title": "选择重复墙类型",
+        "Content": "找到 {count} 个包含以下墙类型的重复坐标组：{types}。请选择要保留的类型。",
+        "Cancel": "取消清理"
+      }
+    },
+    "Keybindings": {
+      "SetHoveredSegmentNormal": {
+        "Name": "将悬停的 Indy 墙分段设为普通墙",
+        "Hint": "编辑 Indy 墙形状时，将鼠标下方的分段更改为普通墙。若在设置中启用，也会更改悬停的 Foundry 墙。"
+      },
+      "SetHoveredSegmentDoor": {
+        "Name": "将悬停的 Indy 墙分段设为门",
+        "Hint": "编辑 Indy 墙形状时，将鼠标下方的分段更改为门。若在设置中启用，也会更改悬停的 Foundry 墙。"
+      },
+      "SetHoveredSegmentWindow": {
+        "Name": "将悬停的 Indy 墙分段设为窗户",
+        "Hint": "编辑 Indy 墙形状时，将鼠标下方的分段更改为窗户。若在设置中启用，也会更改悬停的 Foundry 墙。"
+      },
+      "SetHoveredSegmentInvisible": {
+        "Name": "将悬停的 Indy 墙分段设为隐形墙",
+        "Hint": "编辑 Indy 墙形状时，将鼠标下方的分段更改为隐形墙。若在设置中启用，也会更改悬停的 Foundry 墙。"
+      },
+      "SetHoveredSegmentSecret": {
+        "Name": "将悬停的 Indy 墙分段设为暗门",
+        "Hint": "编辑 Indy 墙形状时，将鼠标下方的分段更改为暗门。若在设置中启用，也会更改悬停的 Foundry 墙。"
+      },
+      "SetHoveredSegmentTerrain": {
+        "Name": "将悬停的 Indy 墙分段设为地形墙",
+        "Hint": "编辑 Indy 墙形状时，将鼠标下方的分段更改为地形墙。若在设置中启用，也会更改悬停的 Foundry 墙。"
+      },
+      "CycleHoveredSegmentCurve": {
+        "Name": "切换悬停的 Indy 墙分段曲线模式",
+        "Hint": "编辑三次或折线 Indy 墙形状时，切换鼠标下方分段的曲线模式。"
+      }
+    },
+    "Shortcuts": {
+      "Save": "保存或创建当前形状。",
+      "Cancel": "取消当前编辑。",
+      "UndoRedo": "撤销或重做编辑器更改。",
+      "DeleteShape": "删除当前正在编辑的形状。",
+      "WallTypeHotkeys": "设置悬停分段的墙类型。",
+      "SetWallType": "将悬停分段设为 {type}。",
+      "Unassigned": "未分配",
+      "Levels": "使用层级选择器设置 v14 墙层级。",
+      "CubicDrag": "移动端点或曲线手柄。",
+      "CubicToggleMode": "在弧线与贝塞尔之间切换曲线。",
+      "CurveSegments": "更改生成的曲线分段数量。",
+      "SegmentShowHide": "显示或隐藏悬停的分段。",
+      "EllipseDrag": "通过手柄与顶点调整大小、改变形状或旋转。",
+      "EllipseCircle": "以圆形放置。",
+      "EllipseFromCenter": "从中心点向外放置。",
+      "RectangleAddRestore": "添加顶点 / 恢复隐藏的分段。",
+      "RectangleGap": "隐藏悬停的边分段。",
+      "RectangleRemoveVertex": "移除中间的边顶点。",
+      "RectangleDrag": "调整大小或移动边顶点。",
+      "PolylineAddPoint": "添加下一个折线点。",
+      "PolylineAddRestore": "添加一个点或恢复隐藏的分段。",
+      "PolylineCycleCurve": "在直线、弧线与贝塞尔之间切换分段。",
+      "PolylineRemoveHide": "移除一个点或隐藏一个分段。",
+      "PolylineCurveSegments": "更改悬停曲线分段的细节；未悬停于分段上时，更改全局曲线细节。",
+      "PolylineDrag": "移动点或曲线手柄。"
+    },
+    "Tooltips": {
+      "CubicBezier": "点击并拖动以放置曲线，然后拖动红色端点或绿色手柄。悬停曲线时按 C 可在弧线与贝塞尔模式之间切换。使用加号/减号或 Ctrl 滚轮调整分段数量，按 Enter 创建墙，或按 Escape 取消。",
+      "Ellipse": "点击并拖动以放置椭圆，按住 Alt 放置圆形，或按住 Ctrl 从中心向外扩展。使用加号/减号或 Ctrl 滚轮调整分段数量，按 Enter 创建墙，或按 Escape 取消。",
+      "Rectangle": "点击并拖动以放置矩形。左键点击某条边可添加顶点、恢复有缺口的分段或恢复被移除的边。Alt 点击分段可创建缺口，Alt 点击顶点可将其移除，拖动顶点可重新定位，Enter 创建墙，Escape 取消。",
+      "Polyline": "点击以放置每个顶点。左键点击分段可添加点或恢复隐藏的分段，悬停分段时按 C 可在直线/弧线/贝塞尔模式之间切换，拖动曲线手柄可塑造弧线与贝塞尔曲线，Ctrl 滚动可更改曲线分段细节，Alt 点击可隐藏分段或移除点，Enter 创建墙，Escape 取消。",
+      "ConvertToIndyWalls": "扫描当前场景中的普通 Foundry 墙并预览 Indy 形状元数据。调整容差后，点击保存进行转换或点击取消以放弃。轴对齐的闭合矩形会先转换为 Indy 矩形；其余相连的墙路径会转换为 Indy 折线。",
+      "RegionsToIndyWalls": "从选中的区域形状创建 Indy 墙形状。若未选中任何区域，则使用场景中的全部区域。区域矩形变为 Indy 矩形，椭圆与圆形变为 Indy 椭圆，多边形变为闭合的 Indy 折线。",
+      "RegionConversionDetail": "区域转换预览中用于圆形与椭圆的生成墙分段数量。",
+      "CleanupWalls": "将邻近的墙端点吸附到一起，将端点智能延长或修剪至邻近墙分段，在交叉处分割非门普通墙，可选地在容差范围内简化噪点普通墙路径，删除已坍缩的墙，并移除墙数据匹配的重复线段。Indy 形状端点元数据在可能的情况下会更新，但曲线手柄保持不变。"
+    },
+    "Notifications": {
+      "WallTypesUpdated": "Indy Walls | 已更新 {count} 面选中的墙。",
+      "CubicWallsCreated": "Indy Walls | 已创建 {count} 个曲线墙分段。",
+      "EllipseWallsCreated": "Indy Walls | 已创建 {count} 个椭圆墙分段。",
+      "RectangleWallsCreated": "Indy Walls | 已创建 {count} 个矩形墙分段。",
+      "PolylineWallsCreated": "Indy Walls | 已创建 {count} 个折线墙分段。",
+      "SceneNotReady": "Indy Walls | 画布场景尚未就绪。",
+      "NoWallsToConvert": "Indy Walls | 未找到可转换的普通墙。",
+      "WallsConvertedToIndy": "Indy Walls | 已将 {count} 面墙转换为 {rectangles} 个矩形、{ellipses} 个椭圆和 {polylines} 条折线。",
+      "NoRegionsToConvert": "Indy Walls | 未找到可转换的区域。",
+      "NoRegionShapesToConvert": "Indy Walls | 未找到可转换的支持的区域形状。",
+      "RegionWallsCreated": "Indy Walls | 已从 {regions} 个区域创建 {count} 个墙分段：{rectangles} 个矩形、{ellipses} 个椭圆和 {polylines} 条折线。",
+      "NoWallsToClean": "Indy Walls | 未找到可清理的墙。",
+      "WallsAlreadyClean": "Indy Walls | 无需进行墙清理更改。",
+      "WallsCleaned": "Indy Walls | 墙清理完成：吸附或调整了 {snapped} 个端点，分割了 {split} 面墙，简化了 {simplified} 个墙分段，创建了 {created} 面墙，更新了 {updated} 面墙，删除了 {deleted} 面重复、简化或坍缩的墙。"
+    }
+  }
+}

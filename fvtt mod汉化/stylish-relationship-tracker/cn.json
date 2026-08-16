@@ -1,0 +1,1296 @@
+{
+  "STYLISH_RELATIONSHIP_TRACKER": {
+    "sidebar": {
+      "quickPanel": "快捷关系面板",
+      "quickPanelSelect": "快捷关系工具",
+      "quickPanelOwnerSelect": "选择你的角色",
+      "quickPanelTargetSelect": "目标关系 Token",
+      "relationshipArchive": "打开关系档案",
+      "relationshipManager": "关系管理器（GM）",
+      "relationships": "关系"
+    },
+    "quickPanel": {
+      "title": "快捷关系",
+      "refresh": "刷新目标与关系",
+      "noTarget": "以其他 Token 为目标",
+      "noTargetHint": "使用关系控件中的目标工具，保留一个目标，然后按下「快捷」。",
+      "multipleTargets": "目标过多",
+      "multipleTargetsHint": "打开「快捷」前，请仅以一个其他 Token 为目标。",
+      "target": "目标 TOKEN",
+      "owner": "你的关系角色",
+      "noLinkShort": "无链接",
+      "noOwner": "未找到此关系可用的角色。",
+      "noRelationship": "未找到关系",
+      "noRelationshipHint": "请先为此目标创建一个链接角色的关系。",
+      "increase": "关系 +",
+      "decrease": "关系 -",
+      "rankDenied": "你无权更改此关系的等级。",
+      "gift": "快捷礼物",
+      "searchItems": "搜索物品栏……",
+      "noSearchResults": "本页没有匹配的物品。",
+      "quantity": "数量",
+      "day": "日期",
+      "giftNote": "礼物备注（可选）",
+      "give": "赠送礼物",
+      "giftDenied": "此关系或角色无法赠送礼物。",
+      "openArchive": "打开档案",
+      "openManager": "打开管理器",
+      "rankFailed": "无法更改此关系。",
+      "giftGiven": "已赠送 {name}。",
+      "giftFailed": "无法赠送礼物。",
+      "giftDisabled": {
+        "deny": "你无权从此角色赠送礼物。",
+        "locked": "已锁定的关系无法接收礼物。",
+        "disabled": "此关系已禁用礼物。",
+        "max": "此礼物配置不接受最高等级时的礼物。",
+        "noItems": "此角色没有可赠送的物品栏物品。"
+      }
+    },
+    "polarity": {
+      "field": "关系状态",
+      "unlockField": "所需状态",
+      "macroField": "触发状态",
+      "positive": "正面",
+      "negative": "敌对",
+      "neutral": "中立",
+      "hostileRank": "敌意",
+      "maxHostility": "最大敌意",
+      "hostileLimit": "敌意上限",
+      "reconcile": "和解",
+      "deepenHostility": "加深敌意",
+      "hint": "归零时关系为中立。下一次 + 或 - 的变化将决定其方向。"
+    },
+    "module": {
+      "title": "Stylish Relationship Tracker",
+      "description": "一款适用于 FoundryVTT 的、与系统无关的社交链接 / 关系档案模组。"
+    },
+    "profile": {
+      "subtitle": "羁绊记录",
+      "archiveLabel": "档案 / 存档 03",
+      "sessionLabel": "第 12 周",
+      "calendarLabel": "周二"
+    },
+    "settings": {
+      "allowObserverView": {
+        "name": "允许观察者只读访问",
+        "hint": "让对某角色拥有 OBSERVER 权限的玩家可以打开该角色的关系追踪器，而不授予编辑权限。仅显示玩家可见的记录；仅拥有者和仅 GM 可见的记录保持隐藏。"
+      },
+      "allowPlayerEdit": {
+        "name": "允许玩家编辑关系",
+        "hint": "玩家关系编辑的总开关。用户角色、角色权限以及下方的字段类别设置共同决定每个符合条件的玩家可以更改哪些内容。"
+      },
+      "playerEditMinimumRole": {
+        "name": "玩家编辑的最低用户角色",
+        "hint": "启用玩家关系编辑后，选择编辑关系所需的最低用户角色。",
+        "choices": {
+          "player": "PLAYER 或更高",
+          "trusted": "TRUSTED PLAYER 或更高",
+          "assistant": "ASSISTANT GM 或更高"
+        }
+      },
+      "playerEditMinimumPermission": {
+        "name": "玩家编辑的最低角色权限",
+        "hint": "启用玩家关系编辑后，选择编辑关系所需的最低角色权限。",
+        "choices": {
+          "owner": "OWNER 或更高",
+          "observer": "OBSERVER 或更高"
+        }
+      },
+      "playerEditStructure": {
+        "name": "玩家编辑：关系结构",
+        "hint": "允许符合条件的玩家创建和删除关系、在自定义与链接角色条目之间切换，以及链接或取消链接可观察的目标角色。当玩家只应编辑现有关系上的字段时，请保持此项关闭。需要启用「允许玩家编辑关系」。"
+      },
+      "playerEditBasic": {
+        "name": "玩家编辑：基本信息",
+        "hint": "允许符合条件的玩家编辑关系名称、身份、罗马字名称和传记。需要启用「允许玩家编辑关系」。"
+      },
+      "playerEditType": {
+        "name": "玩家编辑：关系类型",
+        "hint": "允许符合条件的玩家编辑关系类别代码和类型/分类标签。需要启用「允许玩家编辑关系」。"
+      },
+      "playerEditRank": {
+        "name": "玩家编辑：等级数值",
+        "hint": "允许符合条件的玩家在管理器中直接编辑当前等级、最高等级、每级步数和等级进度。需要启用「允许玩家编辑关系」。"
+      },
+      "playerUseRankControls": {
+        "name": "玩家编辑：等级 +/- 控件",
+        "hint": "允许符合条件的玩家在关系界面、地图和快捷面板上使用等级提升和降低控件。这与在管理器中直接编辑等级数值是分开的。"
+      },
+      "playerEditAppearance": {
+        "name": "玩家编辑：外观与图像",
+        "hint": "允许符合条件的玩家编辑强调色、肖像、列表图像、缩略图、图像变换和过场立绘。需要启用「允许玩家编辑关系」。"
+      },
+      "playerEditStats": {
+        "name": "玩家编辑：状态卡",
+        "hint": "允许符合条件的玩家编辑关系档案中显示的三张状态卡。需要启用「允许玩家编辑关系」。"
+      },
+      "playerEditNotes": {
+        "name": "玩家编辑：笔记",
+        "hint": "允许符合条件的玩家添加、编辑和删除玩家可见的关系笔记。仅 GM 可见的笔记保持受保护。需要启用「允许玩家编辑关系」。"
+      },
+      "playerEditEvents": {
+        "name": "玩家编辑：事件日志",
+        "hint": "允许符合条件的玩家添加、编辑、删除和重新排序关系事件。需要启用「允许玩家编辑关系」。"
+      },
+      "showLocked": {
+        "name": "向玩家显示已锁定的关系",
+        "hint": "启用后，已锁定的关系会以经过脱敏处理、仅含最少类型信息的条目显示给玩家。禁用后，已锁定的关系将在玩家视图中隐藏。"
+      },
+      "allowPlayerGiveGifts": {
+        "name": "允许玩家赠送礼物",
+        "hint": "允许玩家从他们拥有的角色中赠送符合条件的嵌入物品。礼物结果和物品栏消耗仍由当前 GM 权威裁决。"
+      },
+      "requireGmGiftApproval": {
+        "name": "玩家礼物需经 GM 批准",
+        "hint": "启用后，玩家的礼物请求会进入当前 GM 的批准队列。在 GM 批准之前，不会消耗或更改任何内容。GM 的礼物仍然即时生效。"
+      },
+      "giftItemTypeFilter": {
+        "name": "使用自定义礼物物品类型筛选",
+        "hint": "将礼物选择器限制为选定的物品文档类型。禁用后，除非该系统有内置的安全预设，否则接受所有类型。"
+      },
+      "giftDefaultConsumeMode": {
+        "name": "默认礼物消耗",
+        "hint": "选择新的礼物配置是否默认消耗所赠物品。",
+        "choices": {
+          "consume": "消耗物品",
+          "keep": "保留物品"
+        }
+      },
+      "giftDefaultMaxQuantityPerGift": {
+        "name": "默认最大礼物数量",
+        "hint": "新的礼物配置在一次礼物操作中允许的最大数量。"
+      },
+      "giftDefaultUnmatchedGiftMode": {
+        "name": "默认无匹配礼物处理",
+        "hint": "选择当物品不匹配任何偏好规则时，新的礼物配置如何处理。",
+        "choices": {
+          "neutral": "使用中立反应",
+          "block": "阻止礼物"
+        }
+      },
+      "giftDefaultUnmatchedGiftProgressDelta": {
+        "name": "默认无匹配礼物进度",
+        "hint": "使用中立处理模式时，无匹配礼物所给予的进度。"
+      },
+      "giftDefaultPreferenceVisibility": {
+        "name": "默认礼物偏好可见性",
+        "hint": "选择新的礼物配置在赠送礼物前会透露多少偏好信息。",
+        "choices": {
+          "hidden": "隐藏",
+          "hint": "仅提示",
+          "full": "完整结果预览"
+        }
+      },
+      "giftDefaultAllowMaxRankGifts": {
+        "name": "默认允许最高等级时赠送礼物",
+        "hint": "允许新的礼物配置在关系达到最高等级后仍接受礼物。"
+      },
+      "giftDefaultRejectedConsumeMode": {
+        "name": "默认被拒礼物的消耗",
+        "hint": "选择在新创建的礼物配置中，被拒礼物是否被消耗。",
+        "choices": {
+          "keep": "退还物品",
+          "consume": "消耗物品"
+        }
+      },
+      "giftDefaultReactionAudience": {
+        "name": "默认礼物反应受众",
+        "hint": "选择谁可以接收来自新礼物配置的礼物反应过场。",
+        "choices": {
+          "giverOnly": "仅赠送者",
+          "giverAndGm": "赠送者和 GM",
+          "eligibleViewers": "所有符合条件的查看者"
+        }
+      },
+      "giftDefaultReactionDisplayMode": {
+        "name": "默认礼物反应显示",
+        "hint": "选择新的礼物配置如何呈现其反应。",
+        "choices": {
+          "auto": "自动",
+          "dialog": "对话框",
+          "cutin": "过场"
+        }
+      },
+      "soundVolume": {
+        "name": "关系音效音量",
+        "hint": "控制关系档案按钮和等级过场音效的音量。"
+      },
+      "soundEnabled": {
+        "name": "启用关系音效",
+        "hint": "使用关系档案和等级过场时播放音效。"
+      },
+      "hostileAccentEnabled": {
+        "name": "为敌对关系更改颜色",
+        "hint": "启用后，敌对关系使用世界的敌对强调色。禁用后，它们保留各自关系现有的强调色。"
+      },
+      "hostileAccentColor": {
+        "name": "敌对关系强调色",
+        "hint": "整个世界中用于敌对关系卡片、等级、进度和控件的颜色。"
+      },
+      "worldDisplayProfileEnabled": {
+        "name": "使用单一世界显示配置",
+        "hint": "使用以下设置覆盖每个角色的视觉追踪器配置。角色专属的数值会被保留，并在禁用此项后恢复。"
+      },
+      "worldProfileTheme": {
+        "name": "世界追踪器主题",
+        "hint": "启用世界显示配置时，每个角色使用的主题。"
+      },
+      "worldProfileTitle": {
+        "name": "世界追踪器标题",
+        "hint": "追踪器标题栏中显示的主标题。"
+      },
+      "worldProfileSubtitle": {
+        "name": "世界追踪器副标题",
+        "hint": "显示在主追踪器标题旁或下方的副标题。"
+      },
+      "worldProfileLozenge": {
+        "name": "世界标题栏标记",
+        "hint": "在受支持的主题标题栏中显示的简短标记，最多三个字符。"
+      },
+      "worldProfileArchiveLabel": {
+        "name": "世界档案标签",
+        "hint": "追踪器标题栏中显示的次要档案标签。"
+      },
+      "worldProfileBondLabel": {
+        "name": "世界关系术语（单数）",
+        "hint": "整个追踪器中用于角色关系的单数术语。"
+      },
+      "worldProfileBondLabelPlural": {
+        "name": "世界关系术语（复数）",
+        "hint": "用于角色关系列表和标签的复数术语。"
+      },
+      "worldProfileFontScale": {
+        "name": "世界字体缩放",
+        "hint": "应用于每个关系主题的文本缩放。"
+      },
+      "worldProfileShowBgLetter": {
+        "name": "显示背景字母（档案）",
+        "hint": "在档案主题中显示装饰性背景字母。"
+      },
+      "worldProfileShowNameRoman": {
+        "name": "显示罗马字名称（档案）",
+        "hint": "在档案主题中显示罗马字关系名称。"
+      },
+      "worldProfileMapUseThumbnails": {
+        "name": "使用关系地图缩略图",
+        "hint": "关系节点优先使用生成的地图缩略图，而非完整肖像。"
+      },
+      "themeFontOverrides": {
+        "name": "主题字体覆盖",
+        "hint": "将主题使用的每种字体替换为 Foundry 中加载的其他字体。更改同样适用于关系地图、等级过场、礼物反应和礼物批准界面。"
+      },
+      "rankCutinText": {
+        "rankUp": {
+          "name": "升级消息",
+          "hint": "此主题的升级过场以及提升等级的礼物结果所显示的主消息。留空则使用内置文本。"
+        },
+        "rankDown": {
+          "name": "降级消息",
+          "hint": "此主题的降级过场所显示的主消息。留空则使用内置文本。"
+        },
+        "max": {
+          "name": "最高等级消息",
+          "hint": "此主题的最高等级过场以及达到最高等级的礼物结果所显示的主消息。留空则使用内置文本。"
+        },
+        "unlock": {
+          "name": "解锁消息",
+          "hint": "此主题的解锁过场所显示的主消息。留空则使用内置文本。"
+        }
+      }
+    },
+    "settingsCenter": {
+      "menuName": "关系追踪器设置",
+      "menuLabel": "打开设置",
+      "menuHint": "在一个窗口中配置玩家权限、显示默认值与颜色、礼物默认值以及个人音频选项。",
+      "title": "关系设置",
+      "eyebrow": "系统配置",
+      "subtitleGm": "世界选项会影响所有用户；音频选项会为此客户端单独保存。",
+      "subtitlePlayer": "玩家仅可使用个人客户端选项。",
+      "scope": {
+        "world": "世界设置",
+        "client": "本客户端"
+      },
+      "tabs": {
+        "permissions": {
+          "label": "玩家权限",
+          "description": "访问与编辑范围"
+        },
+        "display": {
+          "label": "显示",
+          "description": "世界默认值与颜色"
+        },
+        "gifts": {
+          "label": "礼物默认值",
+          "description": "世界礼物策略"
+        },
+        "audio": {
+          "label": "音频",
+          "description": "个人音效播放"
+        }
+      },
+      "sections": {
+        "permissions": {
+          "view": {
+            "title": "只读访问",
+            "description": "让被明确观察的角色共享其玩家可见的关系记录，而不授予编辑权限。"
+          },
+          "access": {
+            "title": "访问要求",
+            "description": "在定义可更改内容之前，先选择谁可以编辑关系记录。"
+          },
+          "fields": {
+            "title": "允许的编辑操作",
+            "description": "独立授予每个编辑类别。服务端检查会强制执行相同的策略。"
+          },
+          "visibility": {
+            "title": "已锁定记录的可见性",
+            "description": "控制玩家是否可以看到未揭示关系的脱敏占位符。"
+          }
+        },
+        "display": {
+          "profileDefaults": {
+            "title": "世界显示配置",
+            "description": "将一种视觉配置应用于每个角色，而不会覆盖其角色专属的数值。"
+          },
+          "themeFonts": {
+            "title": "主题字体",
+            "description": "替换每个主题使用的单个字体族。选择「主题默认」可保留原始排版。"
+          },
+          "rankCutinText": {
+            "title": "按主题的等级过场消息",
+            "description": "为每个主题分别设置升级、降级、最高等级和解锁消息。留空的字段保留该主题的内置文本。"
+          },
+          "hostility": {
+            "title": "敌对关系颜色",
+            "description": "选择敌意是否替换关系强调色，以及使用哪种颜色。"
+          }
+        },
+        "gifts": {
+          "access": {
+            "title": "玩家礼物访问",
+            "description": "允许符合条件的玩家通过关系界面赠送物品。"
+          },
+          "itemTypes": {
+            "title": "礼物物品类型",
+            "description": "选择在此游戏系统中哪些物品文档类型算作实体礼物。"
+          },
+          "defaults": {
+            "title": "新礼物配置默认值",
+            "description": "这些数值会作为新创建的礼物配置的初始值；现有配置保留其当前策略。"
+          }
+        },
+        "audio": {
+          "playback": {
+            "title": "音效播放",
+            "description": "为此浏览器客户端调整关系界面和过场音效。"
+          }
+        }
+      },
+      "giftItemFilter": {
+        "customActive": "自定义筛选已激活",
+        "systemPresetActive": "系统预设已激活",
+        "allTypesActive": "所有物品类型已激活",
+        "selectAll": "全选",
+        "clear": "清除",
+        "recommended": "推荐",
+        "noTypes": "无法为此游戏系统检测到任何公开的物品类型。"
+      },
+      "audioNote": "主题专属的音效文件可在关系管理器的「音效」标签页中管理。此页面仅控制个人播放和音量。",
+      "save": "保存设置",
+      "saved": "关系设置已保存。",
+      "saveFailed": "无法保存关系设置。"
+    },
+    "themeFonts": {
+      "themeDefault": "主题默认（{family}）",
+      "resetTheme": "重置此主题的字体",
+      "roles": {
+        "display": "显示",
+        "body": "正文",
+        "mono": "等宽",
+        "approvalDisplay": "礼物批准显示",
+        "approvalMono": "礼物批准等宽",
+        "approvalBody": "礼物批准正文",
+        "serif": "衬线",
+        "korean": "韩文回退",
+        "koreanApprovalBody": "韩文回退 / 礼物批准正文",
+        "hand": "手写体",
+        "handFallback": "手写体回退",
+        "heading": "标题",
+        "bodyFallback": "正文回退",
+        "runes": "装饰符文",
+        "headingBody": "标题 / 正文",
+        "displayFallback": "显示回退",
+        "stamp": "印章 / 打字机"
+      }
+    },
+    "giftApproval": {
+      "title": "礼物请求",
+      "question": "{giver} 想将 {item} 赠送给 {target}。",
+      "approve": "批准礼物",
+      "reject": "拒绝请求",
+      "from": "来自",
+      "to": "赠予",
+      "item": "礼物物品",
+      "quantity": "数量",
+      "rank": "当前等级",
+      "requestedBy": "请求者",
+      "day": "日期 / 章节",
+      "note": "事件备注",
+      "noImage": "无图像",
+      "queue": "请求 {current} / {total}",
+      "statusPending": "等待当前 GM 的决定",
+      "statusResolving": "正在记录决定……",
+      "ariaLabel": "审核礼物请求",
+      "pendingPlayer": "礼物请求已发送给当前 GM 以供批准。",
+      "alreadyPendingPlayer": "该礼物请求已在等待 GM 批准。",
+      "gmProcessFailed": "无法处理礼物请求。",
+      "gmAwaitingResubmit": "待处理的礼物包含私密的日期或备注详情。在 GM 交接之后，玩家必须重新提交该礼物才能接受审核。",
+      "playerResult": {
+        "approved": "GM 已批准将 {item} 赠送给 {target}。",
+        "denied": "GM 拒绝了将 {item} 赠送给 {target} 的请求。未消耗任何物品。",
+        "expired": "将 {item} 赠送给 {target} 的请求已过期。未消耗任何物品。",
+        "failed": "由于当前数据已失效，针对 {item} 的已批准礼物请求无法完成。"
+      },
+      "theme": {
+        "archive": {
+          "eyebrow": "授权 // 礼物转移",
+          "code": "记录待审核",
+          "approveSub": "提交修订",
+          "rejectSub": "不予登记退回"
+        },
+        "dossierPaper": {
+          "eyebrow": "转移表单 / GM 审核",
+          "code": "待签名",
+          "approveSub": "盖章「已批准」",
+          "rejectSub": "盖章「已拒绝」"
+        },
+        "journal": {
+          "eyebrow": "一则小小的礼物便笺",
+          "code": "等待你的答复",
+          "approveSub": "留住这一刻",
+          "rejectSub": "这次不了"
+        },
+        "arcaneGrimoire": {
+          "eyebrow": "献祭仪式 / 请愿",
+          "code": "封印等待守护者",
+          "approveSub": "封印献祭",
+          "rejectSub": "中断仪式"
+        },
+        "stellarLink": {
+          "eyebrow": "货物授权数据包",
+          "code": "需要指挥许可",
+          "approveSub": "授权转移",
+          "rejectSub": "拒绝数据包"
+        },
+        "adventurersLedger": {
+          "eyebrow": "军需官发运",
+          "code": "公会会长审核",
+          "approveSub": "批准发运",
+          "rejectSub": "退回包裹"
+        }
+      }
+    },
+    "ui": {
+      "fullscreen": "全屏",
+      "windowed": "窗口化",
+      "close": "关闭"
+    },
+    "topbar": {
+      "rankSum": "等级总和",
+      "max": "最高"
+    },
+    "map": {
+      "archiveView": "档案视图",
+      "relationshipView": "返回关系视图",
+      "mapView": "地图视图",
+      "you": "你",
+      "protagonist": "主角",
+      "protagonistName": "主角",
+      "locked": "已锁定",
+      "unknown": "未知",
+      "portrait": "肖像",
+      "bondClass": "关系类别",
+      "profile": "档案 · 角色",
+      "stats": "状态",
+      "eventLog": "事件日志 · 最近关系",
+      "currentRank": "当前等级",
+      "maxBond": "最高关系",
+      "legendActive": "活跃",
+      "legendBonded": "已链接",
+      "legendLocked": "已锁定",
+      "legendWeight": "线条粗细 = 等级",
+      "empty": "在地图上选择一个节点以查看其关系记录。",
+      "emptyTag": "未选择关系",
+      "compass": "布局 · 星群",
+      "focus": "将地图居中到此角色",
+      "focusing": "聚焦于 ",
+      "focusDenied": "你无法查看此角色的关系。",
+      "back": "返回自己",
+      "zoomIn": "放大",
+      "zoomOut": "缩小",
+      "zoomReset": "重置缩放",
+      "zoomLabel": "地图缩放"
+    },
+    "list": {
+      "title": "列表",
+      "subtitle": "关系名册",
+      "activeBonds": "活跃关系",
+      "rank": "等级",
+      "filterLabel": "关系列表类型",
+      "peopleTab": "人物",
+      "organizationsTab": "组织",
+      "peopleTitle": "人物",
+      "organizationsTitle": "组织",
+      "peopleSubtitle": "角色关系",
+      "organizationsSubtitle": "阵营声望",
+      "peopleActive": "活跃关系",
+      "organizationsActive": "已追踪阵营",
+      "peopleEmpty": "没有角色关系",
+      "peopleEmptyHint": "在管理器中添加或链接角色关系。",
+      "organizationsEmpty": "未追踪任何组织",
+      "organizationsEmptyHint": "添加一个组织以开始追踪其声望。"
+    },
+    "organization": {
+      "badge": "组织",
+      "badgeShort": "组织",
+      "rank": "声望",
+      "currentRank": "当前声望",
+      "maxRank": "最高声望",
+      "increase": "提升声望",
+      "rankUp": "声望提升",
+      "rankDown": "声望下降",
+      "unlocked": "组织已解锁",
+      "complete": "最高声望",
+      "managerTitle": "组织声望条目",
+      "managerHint": "追踪与此组织之间的声望和立场。礼物已禁用；声望控件和声望宏仍可继续使用。"
+    },
+    "detail": {
+      "profile": "档案 · 角色记录",
+      "locked": "已锁定",
+      "lockedName": "??? · 已锁定",
+      "dossier": "卷宗 · 笔记",
+      "dossierOpen": "查看卷宗",
+      "dossierHint": "按 ESC 关闭",
+      "dossierClose": "关闭卷宗",
+      "playerNotes": "笔记",
+      "gmNotes": "GM 笔记",
+      "noteUntitled": "无标题笔记"
+    },
+    "notes": {
+      "dialog": {
+        "title": "编辑笔记",
+        "titleNew": "新建笔记",
+        "heading": "卷宗笔记",
+        "hint": "编写富文本笔记。链接和格式会被保留。",
+        "noteTitle": "标题",
+        "noteTitlePlaceholder": "例如：第一印象",
+        "visibility": "可见性",
+        "save": "保存",
+        "cancel": "取消",
+        "clear": "清除"
+      }
+    },
+    "events": {
+      "title": "事件",
+      "hint": "点击以回溯此场景",
+      "allLogs": "全部日志",
+      "logOpen": "查看完整事件日志",
+      "logTitle": "事件日志",
+      "logClose": "关闭事件日志",
+      "logHint": "点击场景 · ESC - 关闭"
+    },
+    "guide": {
+      "label": "指引",
+      "default": "你想查看哪个角色记录？",
+      "locked": "请先加深其他关系。",
+      "firstGiftUnlock": "赠送礼物以揭示此关系。"
+    },
+    "controls": {
+      "prev": "上一个",
+      "next": "下一个",
+      "deepen": "加深关系",
+      "unlock": "解锁",
+      "back": "返回",
+      "add": "添加",
+      "edit": "编辑",
+      "delete": "删除",
+      "rankDown": "等级 -",
+      "manage": "管理",
+      "gift": "礼物"
+    },
+    "moment": {
+      "max": "关系圆满",
+      "hint": "点击 · ENTER - 继续"
+    },
+    "scene": {
+      "tag": "场景回溯",
+      "subtitle": "关系回溯",
+      "close": "关闭记录",
+      "hint": "点击 · ESC - 关闭",
+      "emptyRecollection": "此场景尚未被记录。"
+    },
+    "rankup": {
+      "rankUp": "升级",
+      "rankDown": "降级",
+      "bondComplete": "关系圆满",
+      "deepened": "关系已加深",
+      "unlocked": "关系解锁"
+    },
+    "notify": {
+      "saveFailed": "无法保存关系更改。",
+      "deleteFailed": "无法删除。",
+      "giftGiven": "已赠送 {name}。",
+      "giftNoItem": "请先选择要赠送的物品。",
+      "giftFailed": "无法赠送礼物。",
+      "rankMacroMissing": "找不到等级 {rank} 触发宏：{macro}",
+      "rankMacroForbidden": "你无法执行等级 {rank} 触发宏：{macro}",
+      "rankMacroFailed": "等级 {rank} 触发宏失败：{macro}",
+      "rankMacroAuthorityChanged": "由于当前 GM 已变更，跳过了等级 {rank} 触发宏：{macro}"
+    },
+    "picker": {
+      "title": "选择角色",
+      "subtitle": "选择一个角色以打开其关系记录",
+      "search": "搜索角色……",
+      "count": "角色",
+      "filterLabel": "显示",
+      "filterHint": "「相关」包括已链接的角色以及已有关系数据的角色。",
+      "filters": {
+        "relevant": {
+          "label": "相关",
+          "hint": "显示已链接的角色以及已有关系数据的角色。"
+        },
+        "linked": {
+          "label": "仅已链接",
+          "hint": "仅显示其原型 Token 已链接到自身的角色。"
+        },
+        "all": {
+          "label": "所有角色",
+          "hint": "显示你有权限打开的每个角色。"
+        }
+      },
+      "owner": "拥有者",
+      "hasData": "有数据",
+      "noData": "新",
+      "empty": "没有可访问的角色",
+      "emptyHint": "你没有可打开关系档案的已拥有角色。",
+      "noFilterMatches": "没有角色匹配此视图",
+      "noFilterMatchesHint": "尝试其他筛选条件或清除当前搜索。",
+      "showAll": "显示所有角色",
+      "selectHint": "点击 · 选择一个角色以打开关系档案",
+      "close": "关闭",
+      "openFailed": "无法为此角色打开关系档案。"
+    },
+    "manager": {
+      "title": "关系管理器",
+      "subtitle": "关系数据控制台",
+      "ownerPanel": "拥有者 · 目标角色",
+      "ownerSearch": "搜索角色……",
+      "ownerDrop": "将角色拖放到此处",
+      "ownerDropHint": "或从下方列表中选择一个",
+      "ownerCardDragHint": "拖放到关系的目标槽位以链接此角色",
+      "pagerPrev": "上一页",
+      "pagerNext": "下一页",
+      "ownerNone": "未选择角色",
+      "ownerSelectHint": "选择一个角色以管理其关系。",
+      "ownerEmpty": "没有可访问的角色",
+      "clearOwner": "清除",
+      "relPanel": "关系 · 关系列表",
+      "relEmpty": "此角色尚未登记任何关系。",
+      "relEmptyHint": "添加一个以开始。",
+      "addRelationship": "添加关系",
+      "addPersonRelationship": "添加角色关系",
+      "addOrganization": "添加组织",
+      "editorEmpty": "在左侧选择一个关系，或添加一个新关系。",
+      "linkedActorPanel": "链接角色 · 目标",
+      "targetPanel": "目标 · 关系目标",
+      "fieldsOrganization": "组织 · 详情",
+      "fieldsReputation": "声望 · 立场",
+      "fieldsReputationMacros": "宏 · 声望触发",
+      "fieldsEmblem": "徽记 · 纹章 / 标识",
+      "fieldsReputationCutin": "过场 · 声望",
+      "targetDrop": "将目标角色拖放到此处",
+      "targetNone": "无链接角色",
+      "unlink": "取消链接",
+      "themeLabel": "主题",
+      "themeArchive": "档案",
+      "themeDossierPaper": "纸张",
+      "themeJournal": "日志",
+      "themeArcaneGrimoire": "奥术魔法书",
+      "themeStellarLink": "星链",
+      "themeAdventurersLedger": "冒险者账本",
+      "openArchive": "预览档案",
+      "save": "保存关系",
+      "saved": "已保存",
+      "delete": "删除",
+      "deny": "你需要 GM 或拥有者权限才能管理此角色。",
+      "eventLog": "事件日志 · 事件",
+      "fieldsBasic": "基本信息 · 基本信息",
+      "fieldsClass": "类型 · 关系类型",
+      "fieldsRank": "等级 · 等级",
+      "fieldsRankMacros": "宏 · 等级触发",
+      "fieldsPortrait": "肖像 · 肖像",
+      "fieldsAccess": "访问 · 可见性",
+      "fieldsNotes": "笔记 · 笔记",
+      "fieldsStats": "状态 · 状态卡",
+      "fieldsUnlock": "解锁 · 解锁规则",
+      "fieldsMap": "地图 · 可见性",
+      "fieldsRankCutin": "过场 · 等级过场",
+      "fieldsGift": "礼物 · 赠送物品",
+      "profilePanel": "配置 · 世界显示",
+      "profileHint": "角色专属的显示、容量和地图设置（仅 GM）。",
+      "worldDisplayProfileActive": "世界显示配置已激活。视觉字段和主题在关系设置中管理；角色容量和地图范围仍可在此处编辑。",
+      "openRelationshipSettings": "关系设置",
+      "saveProfile": "保存配置",
+      "tabRelationship": "关系",
+      "sectionNavLabel": "关系编辑器分区",
+      "sectionGeneral": "常规",
+      "sectionProgress": "进度",
+      "sectionImages": "图像",
+      "sectionRecords": "记录",
+      "tabProfile": "显示",
+      "tabSfx": "音效",
+      "tabGift": "礼物",
+      "sfx": {
+        "panel": "音效 · 主题音效",
+        "hint": "除非你在此处设置自定义文件，否则每个主题动作都会播放其默认音效。留空字段以使用默认音效。按世界存储（仅 GM）。",
+        "save": "保存音效",
+        "defaultLabel": "默认",
+        "customLabel": "路径",
+        "customPlaceholder": "modules/.../custom-sound.ogg",
+        "browse": "浏览",
+        "reset": "重置",
+        "action": {
+          "OPEN": "打开档案",
+          "SELECT": "菜单选择",
+          "PAGE": "翻页 / 过渡",
+          "SUCCESS": "等级过场",
+          "ERROR": "错误",
+          "BOND_CHANGE": "关系变化",
+          "BOND_UP": "升级过场",
+          "BOND_DOWN": "降级过场",
+          "MAP_VIEW": "地图视图切换",
+          "MAP_NODE": "地图节点选择",
+          "MAP_FOCUS": "地图聚焦 / 返回",
+          "MAP_ZOOM": "地图缩放"
+        }
+      },
+      "presetNew": "新建",
+      "presetNewHint": "从选定的预设创建一个新关系（之后再设置角色）。",
+      "presetDelete": "删除",
+      "presetSave": "保存",
+      "presetSaveHint": "将当前关系保存为预设（不含其链接角色）。",
+      "presetEmpty": "没有已保存的预设",
+      "presetNamePlaceholder": "预设名称",
+      "presetIncludeEvents": "包含事件日志",
+      "presetIncludeEventsHint": "同时将该关系的事件存入预设，以便你每次基于它构建新关系时都能重建这些事件。",
+      "confirmDeletePreset": "删除此关系预设？",
+      "notify": {
+        "ownerSet": "拥有者已设为 {name}。",
+        "targetLinked": "已将 {name} 链接为关系目标。",
+        "targetPermissionDenied": "你需要对目标角色拥有 Observer 或更高权限。",
+        "relationshipSaved": "关系已保存。",
+        "profileSaved": "配置设置已保存。",
+        "sfxSaved": "主题音效设置已保存。",
+        "sfxReset": "已重置为默认音效。",
+        "presetSaved": "已保存预设「{name}」。",
+        "presetCreated": "已从预设「{name}」创建关系。",
+        "presetDeleted": "已删除预设「{name}」。",
+        "presetDeleteDenied": "只有创建者或 GM 可以删除此预设。",
+        "presetNameRequired": "请先输入预设名称。",
+        "presetNone": "请先选择一个预设。",
+        "presetNoRelationship": "打开一个关系以将其保存为预设。",
+        "relationshipLimitReached": "此角色已填满 {count}/{max} 个关系槽位。",
+        "noteContextChanged": "所选关系已更改。请在保存前重新打开笔记编辑器。",
+        "dropNotActor": "此处只能拖放角色。",
+        "resolveFailed": "无法解析拖放的角色。",
+        "giftGiven": "已赠送 {name}。",
+        "giftNoItem": "请先选择要赠送的物品。",
+        "giftNoChange": "此关系无法获得更多进度，因此未消耗任何物品。",
+        "giftLocked": "无法向已锁定的关系赠送礼物。",
+        "giftFailed": "无法赠送礼物。",
+        "giftProfileSaved": "礼物配置已保存。",
+        "giftTargetMissing": "保存共享礼物配置前，请先链接一个目标角色。",
+        "giftReactionDeleteBlocked": "该反应仍被某条规则、默认值、无匹配策略或最后一个剩余反应所使用。"
+      }
+    },
+    "sync": {
+      "title": "共享关系",
+      "eyebrow": "同步控制 · 共享记录",
+      "heading": "关系同步",
+      "relationship": "关系",
+      "linked": "已链接",
+      "modeTitle": "选择保持同步的内容",
+      "modeContent": "共享详情",
+      "modeContentHint": "名称、描述、类型、立绘和显示设置会一起更新。每个角色的等级和进度保持独立。",
+      "modeParty": "共享队伍进度",
+      "modePartyHint": "共享详情、等级和进度将作为一份队伍级记录进行管理。切换到此模式时，当前打开角色的等级将成为共享起点。",
+      "recordOptionsTitle": "可选的共享记录",
+      "recordOptionsHint": "开启某项会将该记录在链接角色上的副本替换为当前打开关系的副本。关闭某项则保留最后一次同步的副本，之后的编辑保持本地。",
+      "shareNotes": "共享玩家可见的笔记",
+      "shareNotesHint": "只有玩家可见的笔记会一起更新；仅 GM 可见的笔记始终保留在各角色的本地。当前打开的关系提供共享的起始笔记。",
+      "shareEvents": "共享事件日志",
+      "shareEventsHint": "将事件日志条目作为一份共享记录进行管理。当前打开的关系提供共享的起始事件。",
+      "actorsTitle": "选择要链接的角色",
+      "actorCount": "已选择 {selected} / {total}",
+      "searchLabel": "搜索角色或关系",
+      "searchPlaceholder": "按角色或关系名称搜索……",
+      "clearSearch": "清除搜索",
+      "relationshipChoice": "要链接的关系",
+      "createNewRelationship": "创建新关系",
+      "relationshipChoiceHint": "选择一个现有记录以保留其本地身份以及任何未选择共享的记录。共享详情模式还会保留其等级。",
+      "noActors": "没有可用于此关系的角色。",
+      "apply": "应用同步",
+      "detach": "解除关联",
+      "detachHint": "将此关系从共享源解除关联，同时保留其当前显示的数值。",
+      "cancel": "取消",
+      "selectAtLeastOne": "请至少选择一个可用的角色。",
+      "statusLocal": "本地 · 独立",
+      "statusContent": "已链接 · 共享详情",
+      "statusParty": "已链接 · 队伍进度",
+      "statusLocalHint": "此记录仅属于当前角色。",
+      "statusLinkedHint": "共享更改会传播到每个已链接的角色。",
+      "manage": "管理共享",
+      "sourceActor": "当前源角色 · 始终包含",
+      "relationshipLimit": "没有空余的关系槽位",
+      "applied": "同步已应用到 {count} 个角色。",
+      "appliedWithSkips": "同步已应用到 {count} 个角色；{skipped} 个角色无法链接。",
+      "partialFailure": "部分角色记录无法同步。请检查选择后重试。",
+      "detached": "关系已解除关联。其当前数值已保留。",
+      "gmOnly": "只有 GM 可以管理共享关系。",
+      "failed": "无法更新关系同步。"
+    },
+    "editor": {
+      "addTitle": "添加关系",
+      "editTitle": "编辑关系",
+      "savedHint": "已保存",
+      "close": "关闭",
+      "save": "保存",
+      "cancel": "取消",
+      "browse": "浏览",
+      "deleteRel": "删除此关系",
+      "sectionBasic": "基本信息 · 基本信息",
+      "sectionClass": "类型 · 关系类型",
+      "sectionRank": "等级 · 等级",
+      "sectionPortrait": "肖像 · 肖像",
+      "sectionDesc": "传记 · 描述",
+      "sectionAccess": "访问 · 可见性",
+      "eventsTitle": "事件日志 · 事件",
+      "eventLogHint": "事件日志条目是关系的记忆，而非宏触发器。「等级变化」会添加升级或降级标记；「按等级揭示」控制条目何时出现在关系界面上。",
+      "eventRevealBadge": "等级 {rank}+",
+      "addEvent": "添加事件",
+      "editEvent": "编辑",
+      "deleteEvent": "删除",
+      "moveEventUp": "上移",
+      "moveEventDown": "下移",
+      "moveNoteUp": "上移笔记",
+      "moveNoteDown": "下移笔记",
+      "noEvents": "尚未记录任何事件。",
+      "eventsAfterSave": "请先保存关系，再管理事件。",
+      "eventAddTitle": "添加事件",
+      "eventEditTitle": "编辑事件",
+      "eventSave": "保存事件",
+      "confirmDeleteRel": "删除此关系？",
+      "confirmDeleteEvent": "删除此事件？",
+      "confirmYes": "删除",
+      "confirmNo": "取消",
+      "sampleDataPlaceholder": "选择示例数据……",
+      "sampleDataHint": "用完整示例填充整个编辑器。在保存关系之前不会存储任何内容。",
+      "notesHint": "每条笔记都会按此列表顺序成为档案卷宗中的一个独立标签页。玩家可见的笔记会显示给所有能看到此关系的人；仅 GM 可见的笔记保持仅 GM 可见。笔记正文在对话框中编辑，不会在此处预览。",
+      "addNote": "添加笔记",
+      "editNote": "编辑 / 查看",
+      "deleteNote": "删除笔记",
+      "noteUntitled": "无标题笔记",
+      "noteHasContent": "有内容",
+      "noteEmptyStatus": "空",
+      "noteListEmpty": "尚无笔记。",
+      "noteEmpty": "尚无笔记。",
+      "statsHint": "档案上最多显示三张状态卡（例如 初次相遇 / 最后互动 / 好感度）。将某行留空以跳过它；勾选「强调」以突出显示它。",
+      "unlockRuleHint": "可选：在满足条件时自动解锁此关系。保持禁用则无规则。",
+      "unlockOnGiftHint": "玩家只有在启用「向玩家显示已锁定的关系」后才能使用此功能。在成功记录礼物之前，此关系保持显示为 ???。",
+      "mapThumbnailPlaceholder": "留空时保存会自动生成。",
+      "mapInspectorImagePlaceholder": "留空则使用主肖像。",
+      "listImagePlaceholder": "留空则使用肖像或 Token 图像。",
+      "field": {
+        "entryType": "条目类型",
+        "targetUuid": "目标角色 UUID/ID",
+        "customName": "显示名称",
+        "customRole": "身份",
+        "nameRoman": "罗马字名称",
+        "organizationName": "组织名称",
+        "organizationRole": "关系 / 立场",
+        "organizationShortName": "英文名 / 缩写",
+        "organizationDescription": "组织描述",
+        "organizationCode": "组织类型代码",
+        "organizationType": "组织类型",
+        "organizationTag": "组织标记",
+        "sampleData": "入门 · 示例数据",
+        "classId": "类型代码",
+        "categoryId": "分类 ID",
+        "categoryLabel": "类型标签",
+        "categoryLabelEn": "类型标记",
+        "accent": "强调色",
+        "rank": "等级",
+        "maxRank": "最高等级",
+        "rankSteps": "步数 / 等级",
+        "rankProgress": "关系进度",
+        "reputation": "声望等级",
+        "maxReputation": "最高声望等级",
+        "reputationSteps": "步数 / 声望等级",
+        "reputationProgress": "声望进度",
+        "reputationMacroHint": "当声望沿所选方向越过目标值时，运行所选宏。跳过等级的更改会按顺序运行每个被越过的触发器。",
+        "reputationMacroTarget": "目标声望",
+        "reputationMacroAdd": "添加声望宏",
+        "reputationMacroRemove": "移除声望宏",
+        "reputationMacroEmpty": "未注册任何声望宏触发器。",
+        "emblem": "组织纹章 / 标识",
+        "emblemThumbnail": "地图纹章缩略图",
+        "emblemTag": "纹章标签",
+        "emblemScale": "纹章缩放",
+        "emblemOffsetX": "纹章偏移 X",
+        "emblemOffsetY": "纹章偏移 Y",
+        "reputationCutinHint": "为每个声望状态选择纹章或关键图像，然后在预览中调整其取景。留空的字段复用组织纹章 / 标识。",
+        "reputationUpImage": "声望提升图像",
+        "reputationMaxImage": "最高声望图像",
+        "reputationDownImage": "声望下降图像",
+        "organizationUnlockImage": "组织解锁图像",
+        "emblemImageFallback": "留空则使用组织纹章 / 标识",
+        "rankMacroHint": "当关系沿所选方向越过目标等级时，运行所选宏。正面阈值在「升级」时输入，在「降级」时留空；敌对阈值则相反。被跳过的等级按顺序运行。",
+        "rankMacroTarget": "目标等级",
+        "rankMacroDirection": "方向",
+        "rankMacroDirectionUp": "升级 (+)",
+        "rankMacroDirectionDown": "降级 (−)",
+        "rankMacroMacro": "宏",
+        "rankMacroAdd": "添加等级宏",
+        "rankMacroRemove": "移除等级宏",
+        "rankMacroEmpty": "未注册任何等级宏触发器。",
+        "rankMacroNoMacros": "请先创建一个世界宏。",
+        "rankMacroNone": "选择宏",
+        "rankMacroUnavailable": "缺少宏",
+        "locked": "已锁定",
+        "portrait": "肖像图像",
+        "listImage": "列表图像",
+        "listImageHint": "可选：为关系列表选择单独的图像。留空时先使用肖像，其次使用链接角色的 Token 图像。",
+        "mapThumbnail": "地图缩略图",
+        "mapThumbnailHint": "为关系地图节点选择单独的图像，或使用「自动」从肖像重新生成。缩放和 X/Y 仅影响地图节点；调整自动图像时使用未裁剪的肖像，以便偏离中心的主体仍可保留。",
+        "mapThumbnailAuto": "自动",
+        "mapThumbnailPreview": "地图节点预览",
+        "mapThumbnailScale": "地图缩放",
+        "mapThumbnailOffsetX": "地图 X（%）",
+        "mapThumbnailOffsetY": "地图 Y（%）",
+        "mapThumbnailReset": "重置地图取景",
+        "mapInspectorImage": "地图详情肖像",
+        "mapInspectorEmblem": "地图详情纹章",
+        "mapInspectorHint": "设置右侧关系地图详情面板中使用的图像。留空则复用主肖像。其取景独立于圆形地图节点。",
+        "mapInspectorUsePortrait": "使用主图",
+        "mapInspectorPreview": "地图详情预览",
+        "mapInspectorScale": "详情缩放",
+        "mapInspectorOffsetX": "详情 X（%）",
+        "mapInspectorOffsetY": "详情 Y（%）",
+        "mapInspectorReset": "重置详情取景",
+        "portraitTag": "图像标签",
+        "portraitPresentation": "图像布局",
+        "portraitPresentationHint": "无论文件格式如何，直接选择呈现方式。该选择适用于主视图和等级过场。",
+        "portraitPresentationCutout": "全身 / 抠图",
+        "portraitPresentationFramed": "主题边框",
+        "portraitScale": "肖像缩放",
+        "portraitOffsetX": "偏移 X",
+        "portraitOffsetY": "偏移 Y",
+        "rankCutinHint": "为每个过场状态选择单独的图像，然后在冻结预览中调整共享取景。留空的图像字段复用肖像图像。",
+        "rankCutinRankUpImage": "升级图像",
+        "rankCutinMaxImage": "关系圆满图像",
+        "rankCutinRankDownImage": "降级图像",
+        "rankCutinUnlockImage": "解锁图像",
+        "rankCutinImageFallback": "留空则使用肖像图像",
+        "rankCutinPreview": "冻结过场预览",
+        "rankCutinPreviewPlay": "全屏播放",
+        "rankCutinPreviewPlayHint": "在不更改关系的情况下播放此预览",
+        "rankCutinPreviewEmpty": "选择一个带肖像的关系",
+        "rankCutinPreviewMode": "预览状态",
+        "rankCutinPreviewRankUp": "升级",
+        "rankCutinPreviewMax": "关系圆满",
+        "rankCutinPreviewRankDown": "降级",
+        "rankCutinPreviewUnlock": "解锁",
+        "rankCutinScale": "过场缩放",
+        "rankCutinOffsetX": "过场偏移 X",
+        "rankCutinOffsetY": "过场偏移 Y",
+        "bio": "传记",
+        "playerNotes": "玩家笔记",
+        "gmNotes": "GM 笔记（仅 GM）",
+        "statKey": "标签",
+        "statValue": "数值",
+        "statAccent": "强调",
+        "unlockEnabled": "启用自动解锁",
+        "unlockOnGift": "首次赠送礼物时解锁",
+        "unlockType": "条件",
+        "unlockRelationship": "关系",
+        "unlockValue": "阈值",
+        "visibility": "可见性",
+        "playerEditable": "允许玩家编辑",
+        "eventDay": "日期标签",
+        "eventText": "标题",
+        "eventRankLabel": "显示等级标签",
+        "eventRevealAtRank": "按等级揭示（仅 GM）",
+        "eventRevealAtRankHint": "0 = 始终可见。正值会使该条目在达到该等级之前不出现在关系界面上；GM 仍可在此处管理它。",
+        "eventQuote": "引言",
+        "eventRecollection": "回想",
+        "eventImage": "图像",
+        "eventImageScale": "图像缩放",
+        "eventImageOffsetX": "图像偏移 X",
+        "eventImageOffsetY": "图像偏移 Y",
+        "eventRankChange": "等级变化标记",
+        "eventRankChangeNone": "普通事件",
+        "eventRankChangeUp": "升级",
+        "eventRankChangeDown": "降级",
+        "eventIsRankUp": "升级事件"
+      },
+      "entry": {
+        "custom": "自定义条目",
+        "actor": "链接角色",
+        "organization": "组织 / 阵营"
+      },
+      "vis": {
+        "players": "对玩家可见",
+        "owner": "仅拥有者",
+        "gm": "仅 GM"
+      },
+      "unlockType": {
+        "totalRankAtLeast": "总等级至少为",
+        "relationshipRankAtLeast": "特定关系等级至少为"
+      },
+      "unlockRelationshipNone": "选择一个关系",
+      "gift": {
+        "profileHint": "编写决定反应、进度和消耗的礼物配置。玩家永远不会看到此编辑器；使用下方的试运行来验证它。",
+        "source": {
+          "targetActor": "共享角色配置",
+          "relationshipOverride": "关系覆盖",
+          "disabled": "已禁用",
+          "disabledHint": "此关系已关闭礼物赠送。"
+        },
+        "targetMissingHint": "链接一个目标角色以编辑其共享礼物配置。",
+        "sharedScopeHint": "正在编辑目标角色的共享配置。除非被覆盖，否则每个指向此角色的关系都会使用它。",
+        "consumeModeLabel": "消耗模式",
+        "consumeMode": {
+          "worldDefault": "世界默认",
+          "consume": "消耗物品",
+          "keep": "保留物品"
+        },
+        "maxQuantityLabel": "每份礼物的最大数量",
+        "allowMaxRankLabel": "允许最高等级礼物",
+        "rejectedConsumeLabel": "被拒时消耗",
+        "rejectedConsumeMode": {
+          "keep": "保留物品",
+          "consume": "消耗物品"
+        },
+        "defaultReactionLabel": "默认反应",
+        "preferenceVisibilityLabel": "偏好可见性",
+        "preferenceVisibility": {
+          "hidden": "隐藏",
+          "hint": "弱提示",
+          "full": "完全揭示"
+        },
+        "reactionDisplayLabel": "反应显示",
+        "reactionDisplayMode": {
+          "auto": "自动",
+          "dialog": "对话框",
+          "cutin": "过场"
+        },
+        "reactionAudienceLabel": "反应受众",
+        "reactionAudience": {
+          "giverOnly": "仅赠送者",
+          "giverAndGm": "赠送者与 GM",
+          "eligibleViewers": "符合条件的查看者"
+        },
+        "unmatchedModeLabel": "无匹配礼物",
+        "unmatchedMode": {
+          "neutral": "以反应接受",
+          "block": "阻止"
+        },
+        "unmatchedReactionLabel": "无匹配反应",
+        "unmatchedProgressLabel": "无匹配进度 +",
+        "reactionRegistryLabel": "反应预设",
+        "reactionNameLabel": "反应名称",
+        "reactionConsumeLabel": "消耗覆盖",
+        "addReaction": "添加反应",
+        "removeReaction": "移除反应",
+        "reactionConsumeMode": {
+          "inherit": "使用配置策略",
+          "consume": "始终消耗",
+          "keep": "始终保留"
+        },
+        "stageLabel": "阶段名称",
+        "rankMin": "最低等级",
+        "rankMax": "最高等级",
+        "removeStage": "移除阶段",
+        "addStage": "添加阶段",
+        "ruleLabel": "规则标签",
+        "matchModeLabel": "匹配模式",
+        "matchMode": {
+          "sourceUuid": "来源 UUID",
+          "uuid": "物品 UUID",
+          "name": "名称",
+          "type": "类型",
+          "tag": "标记"
+        },
+        "matchValueLabel": "匹配值",
+        "ruleReactionLabel": "反应",
+        "removeRule": "移除规则",
+        "addRule": "添加规则",
+        "noRules": "尚无规则。无匹配的礼物遵循无匹配策略。",
+        "reactionLabel": {
+          "favorite": "最爱",
+          "liked": "喜欢",
+          "neutral": "中立",
+          "disliked": "不喜欢",
+          "rejected": "拒绝"
+        },
+        "reactionColReaction": "反应",
+        "reactionColProgress": "进度 +",
+        "reactionColLine": "台词",
+        "reactionColPreviewHint": "弱提示台词",
+        "reactionColPreviewResult": "完全揭示台词",
+        "reactionColCutin": "过场图像",
+        "reactionColSfx": "音效",
+        "reactionColCutinScale": "过场缩放",
+        "reactionColCutinOffsetX": "过场 X",
+        "reactionColCutinOffsetY": "过场 Y",
+        "reactionCutinBrowse": "浏览过场图像",
+        "reactionCutinPreview": "预览过场",
+        "reactionCutinPreviewHint": "在不消耗物品或更改关系的情况下，全屏播放当前数值和音效",
+        "reactionCutinPreviewUnavailable": "另一个礼物过场正在播放，或此预览的数据不完整。",
+        "reactionCutinPreviewPanel": "礼物过场预览",
+        "reactionCutinPreviewReaction": "预览反应",
+        "reactionCutinPreviewEditHint": "仅编辑所选反应的过场图像、音效、缩放和位置（见下方）。",
+        "reactionCutinPreviewPlay": "全屏播放",
+        "reactionCutinPreviewPlayHint": "在不消耗物品或更改关系的情况下，全屏播放所选反应",
+        "reactionCutinPreviewEmpty": "选择一个礼物反应以预览",
+        "reactionSfxBrowse": "浏览音效",
+        "saveProfile": "保存礼物配置",
+        "testRunTitle": "GM 试运行",
+        "testRunHint": "针对已保存的配置运行真实礼物引擎。进度和反应仅来自已保存的礼物配置。",
+        "giver": "赠送者角色",
+        "item": "物品",
+        "quantity": "数量",
+        "eventText": "事件备注（可选）",
+        "eventTextPlaceholder": "留空以自动填写",
+        "eventDay": "日期标签（可选）",
+        "eventDayPlaceholder": "例如：第 12 周",
+        "testSubmit": "测试礼物",
+        "singleUse": "数量未追踪",
+        "genericItem": "该物品",
+        "previewItemName": "预览礼物",
+        "noItems": "此角色没有可赠送的物品。",
+        "noItemsOption": "没有可用物品",
+        "disabledHint": "此关系已禁用礼物赠送。",
+        "lockedHint": "请在赠送礼物前解锁此关系。",
+        "maxHint": "此关系已处于最高等级。",
+        "denyHint": "你需要 GM 或拥有者权限才能赠送礼物。",
+        "archive": {
+          "title": "赠送礼物",
+          "close": "关闭礼物对话框",
+          "closeShort": "关闭",
+          "question": "你要赠送什么？",
+          "submit": "赠送礼物",
+          "submitSub": "确认所选物品",
+          "hint": "点击 · B / ESC - 关闭",
+          "giverLabel": "以……身份赠送",
+          "catalogLabel": "拥有的物品目录",
+          "searchLabel": "搜索礼物物品",
+          "searchPlaceholder": "按名称或类型搜索",
+          "clearSearch": "清除搜索",
+          "emptySearch": "没有匹配的物品",
+          "emptySearchHint": "尝试其他搜索或将其清除",
+          "emptyInventory": "没有可赠送的物品",
+          "emptyInventoryHint": "向物品栏添加一个物品，然后再次打开此界面",
+          "previous": "上一个",
+          "next": "下一个",
+          "selectedLabel": "已选礼物",
+          "owned": "已拥有",
+          "singleUseWarning": "数量未追踪 · 物品将被保留",
+          "singleUseDetail": "无数量字段 · 予以保留以防意外删除",
+          "preview": {
+            "title": "预期反应",
+            "loading": "正在读取反应……",
+            "error": "无法读取反应。",
+            "hint": {
+              "positive": "这份礼物似乎引起了他们的兴趣。",
+              "neutral": "这份礼物似乎可以接受。",
+              "negative": "他们似乎对此不太感兴趣。",
+              "blocked": "他们可能不会接受这份礼物。",
+              "unknown": "他们的反应难以捉摸。"
+            },
+            "full": {
+              "result": "{reaction} · 进度 +{progress}",
+              "blocked": "无法接受这份礼物。",
+              "unknownReaction": "未知反应"
+            }
+          },
+          "reaction": {
+            "giftLabel": "礼物",
+            "progressLabel": "进度",
+            "hint": "点击 · ENTER - 继续"
+          }
+        },
+        "journal": {
+          "title": "礼物日记",
+          "catalogTitle": "小物件",
+          "question": "挑选一件值得铭记的小物件。",
+          "searchPlaceholder": "翻找这些小物件……",
+          "page": "页",
+          "forLabel": "给……的一件小礼物",
+          "selectedTitle": "包起这件",
+          "reactionTitle": "或许，一种心情",
+          "noteTitle": "留在它旁边的一则便笺",
+          "submit": "包好并赠送",
+          "submitSub": "将这一刻留在日记中"
+        }
+      }
+    },
+    "profileForm": {
+      "title": "标题",
+      "bondLabel": "关系术语（单数）",
+      "bondLabelHint": "用于角色关系，以替代 BOND。组织的 REPUTATION（声望）不变。",
+      "bondLabelPlural": "关系术语（复数）",
+      "bondLabelPluralHint": "用于列表标题，例如 BONDS 或 AFFINITIES。",
+      "subtitle": "副标题",
+      "lozenge": "菱形标记",
+      "archiveLabel": "档案标签",
+      "sessionLabel": "会话标签",
+      "calendarLabel": "日历标签",
+      "fontScale": "字体缩放",
+      "maxRelationshipSlots": "最大关系槽位",
+      "showBgLetter": "显示背景字母",
+      "showNameRoman": "显示罗马字名称",
+      "mapHint": "控制地图展开的范围，以及地图节点是否使用生成的缩略图。",
+      "mapVisibilityMode": "地图范围",
+      "mapMaxDepth": "最大地图深度",
+      "mapMaxNodes": "最大地图节点数",
+      "mapUseThumbnails": "使用地图缩略图",
+      "mapVisibility": {
+        "direct": "仅直接关系",
+        "expanded": "扩展网络（安全默认值）",
+        "network": "上限内的完整网络"
+      }
+    },
+    "terminology": {
+      "increase": "{term} +",
+      "decrease": "{term} -",
+      "activePlural": "活跃 {terms}",
+      "record": "{term} 记录",
+      "recall": "{term} 回溯",
+      "recentPlural": "事件日志 · 最近 {terms}",
+      "mapEmpty": "在地图上选择一个节点以查看其 {termLower} 记录。",
+      "managerPanel": "{terms} · 关系列表",
+      "progressLabel": "{term} 进度",
+      "completeImage": "{term} 圆满图像",
+      "classLabel": "{term} 类别",
+      "linked": "{term}",
+      "emptySelection": "未选择 {term}",
+      "maxLabel": "最高 {term}",
+      "deepen": "加深 {term}",
+      "unlock": "解锁 {term}",
+      "complete": "{term} 圆满",
+      "deepened": "{term} 已加深",
+      "unlocked": "{term} 解锁"
+    }
+  }
+}

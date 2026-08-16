@@ -1,0 +1,161 @@
+{
+	"yugen-tracker": {
+		"settings": {
+			"hide-gm-changes": {
+				"name": "隐藏 GM 的更改",
+				"hint": "启用后，GM 所做的更改将不会被追踪或播报。"
+			},
+			"track-all-owned": {
+				"name": "追踪所有拥有的角色卡",
+				"hint": "启用后，玩家拥有的所有角色卡都将被追踪（防止在未分配的角色卡上作弊）。禁用后，仅追踪已分配的角色。"
+			},
+			"track-concentration": {
+				"name": "追踪专注",
+				"hint": "启用后，开始或中断专注将在聊天中播报。"
+			},
+			"display-biography-changes": {
+				"name": "显示传记更改",
+				"hint": "启用后，角色传记与个性特征的更改将被播报。"
+			},
+			"sensitive-keys": {
+				"name": "敏感键",
+				"hint": "当“显示传记更改”被禁用时，要忽略的键的逗号分隔列表。"
+			},
+			"output-to-file": {
+				"name": "输出到文件",
+				"hint": "启用后，日志将保存到 Foundry 数据文件夹中的 .txt 文件（Data/yugen-tracker-logs/）。"
+			},
+			"log-file-name": {
+				"name": "日志文件名",
+				"hint": "日志文件的名称（例如 combat-log.txt）。"
+			},
+			"allow-player-log-viewer": {
+				"name": "允许玩家使用日志查看器",
+				"hint": "启用后，玩家将能够打开日志历史查看器。"
+			},
+			"debug-mode": {
+				"name": "调试模式",
+				"hint": "启用后，详细的技术日志将打印到浏览器控制台。"
+			},
+			"show-sidebar-button": {
+				"name": "显示侧边栏按钮",
+				"hint": "启用后，日志历史按钮将出现在日志条目侧边栏和目录标题中。禁用后，您必须使用宏来打开界面。"
+			},
+			"discord-webhook": {
+				"name": "Discord Webhook",
+				"hint": "输入 Discord Webhook URL，将日志发送到 Discord 频道。留空以禁用。"
+			},
+			"announce-gamemasters": {
+				"name": "向 GM 播报",
+				"hint": "启用后，更改将私聊发送给 GM。"
+			},
+			"announce-assistant-gamemasters": {
+				"name": "向助理 GM 播报",
+				"hint": "启用后，更改将私聊发送给助理 GM。"
+			},
+			"announce-trusted-players": {
+				"name": "向受信任玩家播报",
+				"hint": "启用后，更改将私聊发送给受信任玩家。"
+			},
+			"announce-all-players": {
+				"name": "向所有玩家播报",
+				"hint": "启用后，更改将以公开聊天消息发送给所有人（覆盖其他角色设置）。"
+			},
+			"colors": {
+				"title": "配置颜色",
+				"hint": "为聊天日志中不同类型的日志消息和玩家设置自定义背景色与文字色。",
+				"log-colors-section": "日志消息颜色",
+				"log-update": "角色更新日志",
+				"log-item": "物品/装备日志",
+				"log-snapshot": "快照日志",
+				"log-concentration": "专注日志",
+				"log-resources": "队伍资源日志",
+				"user-colors-section": "玩家聊天框颜色",
+				"user-colors-hint": "为聊天日志中的特定用户分配自定义背景色与文字色。",
+				"reset": "重置为默认值",
+				"save": "保存更改"
+			}
+		},
+		"chat": {
+			"concentration": {
+				"start": "<strong>{user}</strong>：<strong>{actor}</strong> 现在正专注于 <strong>{spell}</strong>。",
+				"break": "<strong>{user}</strong>：<strong>{actor}</strong> 已中断专注！",
+				"default-spell": "一个法术"
+			},
+			"item": {
+				"create": "<strong>{user}</strong> 将物品 <strong>{item}</strong> 添加给 <strong>{owner}</strong>。",
+				"delete": "<strong>{user}</strong> 从 <strong>{owner}</strong> 处移除了物品 <strong>{item}</strong>。",
+				"update": "<strong>{user}</strong> 更新了 <strong>{owner}</strong> 上的 <strong>{item}</strong>：",
+				"prepared": "已准备",
+				"unprepared": "已取消准备",
+				"equipped": "已装备",
+				"unequipped": "已卸下",
+				"action-message": "<strong>{user}</strong> 在 <strong>{owner}</strong> 上 {action} <strong>{item}</strong>"
+			},
+			"actor": {
+				"modified": "<strong>{user}</strong> 修改了 <strong>{actor}</strong>：",
+				"set-to": "\n• {key} 被设置为 {value}"
+			},
+			"labels": {
+				"charges": "充能",
+				"equipped-status": "装备状态",
+				"prepared-status": "准备状态",
+				"level-spell-slots": "第 {level} 环法术位",
+				"level-spell-slots-max": "第 {level} 环法术位上限",
+				"pact-spell-slots": "契约法术位",
+				"pact-spell-slots-max": "契约法术位上限",
+				"currency": "货币： ",
+				"race": "种族"
+			}
+		},
+		"log-viewer": {
+			"title": "yugen-tracker：日志历史",
+			"refresh": "刷新日志",
+			"clear": "清空历史",
+			"logging-disabled-warn": "“输出到文件”当前处于禁用状态。历史日志将不会更新。",
+			"search-placeholder": "搜索日志...",
+			"snapshot-all": "快照全部",
+			"tabs": {
+				"all": "全部",
+				"spells": "法术",
+				"inventory": "物品栏",
+				"attributes": "属性",
+				"concentration": "专注"
+			}
+		},
+		"snapshot": {
+			"title": "yugen-tracker：角色卡快照",
+			"header-btn": "快照",
+			"taken-at": "快照拍摄于",
+			"no-snapshot": "尚未为此角色拍摄基准快照。",
+			"create-btn": "拍摄快照",
+			"rollback-all-btn": "还原所有更改",
+			"no-changes": "此角色卡与快照完全一致。",
+			"no-characters": "未找到可拍摄快照的玩家角色。",
+			"all-created-success": "已为 {count} 个角色拍摄角色卡基准快照。",
+			"table": {
+				"property": "属性",
+				"snapshot": "快照",
+				"current": "当前状态",
+				"action": "还原"
+			},
+			"states": {
+				"non-existent": "不存在",
+				"created": "已创建",
+				"yes": "是",
+				"no": "否",
+				"existed": "曾存在",
+				"deleted": "已删除"
+			},
+			"diff-labels": {
+				"hp": "生命值",
+				"ability": "属性：{ability}"
+			},
+			"item-prop-labels": {
+				"quantity": "数量",
+				"equipped": "装备状态",
+				"prepared": "准备状态"
+			}
+		}
+	}
+}

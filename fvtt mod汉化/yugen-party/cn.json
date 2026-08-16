@@ -1,0 +1,233 @@
+{
+	"yugen-party": {
+		"settings": {
+			"max-pc-count": {
+				"name": "最大玩家角色数",
+				"hint": "侧边栏中显示的最大玩家角色数。"
+			},
+			"sidebar-scale": {
+				"name": "UI 缩放",
+				"hint": "调整队伍侧边栏头像的尺寸。"
+			},
+			"hp-estimate": {
+				"name": "使用 HP 估算",
+				"hint": "显示健康状态（例如：受伤）而非精确数值。"
+			},
+			"hp-label-unharmed": {
+				"name": "无恙标签",
+				"hint": "角色无恙时显示的标签。"
+			},
+			"hp-color-unharmed": {
+				"name": "无恙颜色",
+				"hint": "无恙角色生命条的颜色。"
+			},
+			"hp-label-fine": {
+				"name": "良好标签",
+				"hint": "角色状态良好时显示的标签。"
+			},
+			"hp-color-fine": {
+				"name": "良好颜色",
+				"hint": "状态良好角色生命条的颜色。"
+			},
+			"hp-threshold-fine": {
+				"name": "良好阈值",
+				"hint": "角色被视为状态良好的生命值百分比。"
+			},
+			"hp-label-scratched": {
+				"name": "擦伤标签",
+				"hint": "角色擦伤时显示的标签。"
+			},
+			"hp-color-scratched": {
+				"name": "擦伤颜色",
+				"hint": "擦伤角色生命条的颜色。"
+			},
+			"hp-threshold-scratched": {
+				"name": "擦伤阈值",
+				"hint": "角色被视为擦伤的生命值百分比。"
+			},
+			"hp-label-injured": {
+				"name": "受伤标签",
+				"hint": "角色受伤时显示的标签。"
+			},
+			"hp-color-injured": {
+				"name": "受伤颜色",
+				"hint": "受伤角色生命条的颜色。"
+			},
+			"hp-threshold-injured": {
+				"name": "受伤阈值",
+				"hint": "角色被视为受伤的生命值百分比。"
+			},
+			"hp-label-wounded": {
+				"name": "重伤标签",
+				"hint": "角色重伤时显示的标签。"
+			},
+			"hp-color-wounded": {
+				"name": "重伤颜色",
+				"hint": "重伤角色生命条的颜色。"
+			},
+			"hp-label-dead": {
+				"name": "死亡标签",
+				"hint": "角色死亡或昏迷时显示的标签。"
+			},
+			"hp-color-dead": {
+				"name": "死亡颜色",
+				"hint": "死亡角色生命条的颜色。"
+			},
+			"hide-conditions": {
+				"name": "隐藏状态",
+				"hint": "启用后，头像旁将不再显示状态图标。"
+			},
+			"highlight-color": {
+				"name": "高亮颜色",
+				"hint": "角色被选中或悬停时边框的颜色。"
+			},
+			"actor-filter": {
+				"name": "按名称过滤角色",
+				"hint": "仅显示名称与此逗号分隔列表匹配的角色。若留空，则显示场景中所有由玩家拥有的角色。"
+			},
+			"show-background": {
+				"name": "显示侧边栏背景",
+				"hint": "启用后，队伍侧边栏后方将显示深色渐变背景。"
+			},
+			"theme-style": {
+				"name": "HUD 主题风格",
+				"hint": "选择队伍 HUD 的布局与风格。",
+				"default": "默认（弧形与扇形）",
+				"standard": "标准（经典网格）",
+				"persona": "Persona（斜式 P3）"
+			},
+			"persona-glow-strength": {
+				"name": "Persona 辉光强度",
+				"hint": "调整 Persona 模式下白色辉光效果的亮度和扩散范围。"
+			},
+			"persona-stagger": {
+				"name": "错位排列 Persona HUD",
+				"hint": "启用后，角色头像将以阶梯状水平错位排列；禁用则完全垂直对齐。"
+			},
+			"sidebar-alignment": {
+				"name": "侧边栏对齐位置",
+				"hint": "选择队伍侧边栏在屏幕的哪一侧显示。",
+				"left": "左侧",
+				"right": "右侧",
+				"top": "顶部",
+				"bottom": "底部"
+			},
+			"sidebar-offset-x": {
+				"name": "水平偏移（X）",
+				"hint": "调整侧边栏的水平位置（以像素为单位）。"
+			},
+			"sidebar-offset-y": {
+				"name": "垂直偏移（Y）",
+				"hint": "调整侧边栏的垂直位置（以像素为单位）。"
+			},
+			"show-hover-details": {
+				"name": "启用悬停详情",
+				"hint": "悬停到头像上时显示生命值与护甲等级详情。"
+			},
+			"show-hover-hp": {
+				"name": "悬停时显示 HP",
+				"hint": "在悬停详情中显示当前与最大生命值。"
+			},
+			"show-hover-ac": {
+				"name": "悬停时显示 AC",
+				"hint": "在悬停详情中显示护甲等级。"
+			},
+			"show-inspiration": {
+				"name": "显示激励 / 英雄点",
+				"hint": "若角色拥有激励（5e）或英雄点（pf2e），在其头像上显示发光图标。"
+			},
+			"low-health-pulse": {
+				"name": "低生命值脉冲",
+				"hint": "启用后，低生命值角色的头像周围将显示脉动的红色光晕。"
+			},
+			"enable-chat-bubbles": {
+				"name": "启用聊天气泡",
+				"hint": "角色在聊天中发言时，在其头像旁显示聊天气泡。"
+			},
+			"show-only-chat": {
+				"name": "仅常规聊天",
+				"hint": "启用后，仅常规聊天消息（OOC、IC、表情、私聊）会触发聊天气泡，掷骰与物品使用不触发。"
+			},
+			"chat-bubble-duration": {
+				"name": "聊天气泡持续时间",
+				"hint": "聊天气泡在头像旁保持可见的时长（秒）。"
+			},
+			"sidebar-collapsed": {
+				"name": "折叠队伍界面",
+				"hint": "启用后，队伍界面会折叠为屏幕边缘的一个小把手，仅在悬停时展开。"
+			},
+			"yugen-modifiers-integration": {
+				"name": "显示 Token 悬停详情",
+				"hint": "若 yugen-modifiers 已启用，悬停到头像上时将显示详细的 Token 提示（生命值、装备、武器、效果）。"
+			},
+			"hide-in-combat": {
+				"name": "战斗中隐藏",
+				"hint": "启用后，战斗中会隐藏队伍 HUD。"
+			},
+			"chat-bubble-theme": {
+				"name": "聊天气泡主题",
+				"hint": "选择聊天气泡的视觉风格。",
+				"clean": "简洁现代",
+				"persona": "Persona（锯齿漫画）",
+				"fantasy": "奇幻（羊皮纸卷轴）",
+				"scifi": "科幻（霓虹全息屏）",
+				"gothic": "哥特（暗黑金属）"
+			},
+			"enable-custom-pause": {
+				"name": "启用自定义暂停界面",
+				"hint": "游戏暂停时显示风格化的自定义暂停覆盖层。"
+			},
+			"always-show-on-pause": {
+				"name": "暂停时始终显示",
+				"hint": "游戏暂停时自动显示展开的自定义暂停覆盖层；禁用则默认以折叠状态开始。"
+			},
+			"pause-stats-list": {
+				"name": "暂停菜单属性",
+				"hint": "要显示的属性列表，以逗号分隔。可使用预设（str、dex、con、int、wis、cha、hp、ac）或自定义语法：'Label:path.to.property:color-bar'（例如 'Mana:system.attributes.mana:int-bar'）。"
+			},
+			"resources-hide-ui": {
+				"name": "隐藏浮动条",
+				"hint": "启用后，浮动的队伍资源条将被隐藏。"
+			},
+			"resources-opacity": {
+				"name": "UI 不透明度",
+				"hint": "浮动资源条的透明度。"
+			},
+			"resources-scale": {
+				"name": "UI 缩放",
+				"hint": "浮动资源条的尺寸。"
+			},
+			"resources-offset-x": {
+				"name": "水平偏移（X）",
+				"hint": "距中心的水平位置调整（以像素为单位）。"
+			},
+			"resources-offset-y": {
+				"name": "垂直偏移（Y）",
+				"hint": "距底部的垂直位置调整（以像素为单位）。"
+			},
+			"resources-container-actor-id": {
+				"name": "队伍容器",
+				"hint": "共享队伍容器的名称或 ID（可以是 Loot Actor、容器物品或场景中的 Token）。若找到，背包按钮将打开其面板；否则将打开资源查看器。"
+			}
+		},
+		"config": {
+			"title": "yugen-party",
+			"action-title": "yugen-party-action",
+			"add-btn": "添加资源",
+			"save-btn": "保存资源",
+			"save-action-btn": "保存动作",
+			"label-placeholder": "资源标签",
+			"icon-placeholder": "图标类名或图片路径（例如 fas fa-coins）",
+			"value-placeholder": "初始值",
+			"macro-label": "点击宏",
+			"script-label": "自定义点击脚本"
+		},
+		"viewer": {
+			"title": "yugen-party",
+			"view-all": "查看所有资源"
+		},
+		"chat": {
+			"updated": "<strong>{user}</strong> 更新了队伍资源 <strong>{label}</strong>：{old} &rarr; {new}（{diff}）"
+		}
+	}
+}

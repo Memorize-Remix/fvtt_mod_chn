@@ -1,0 +1,292 @@
+{
+  "perceived-reality": {
+    "Groups": {
+      "A": {
+        "Label": "Perception: Group A"
+      },
+      "B": {
+        "Label": "Perception: Group B"
+      },
+      "C": {
+        "Label": "Perception: Group C"
+      },
+      "D": {
+        "Label": "Perception: Group D"
+      },
+      "E": {
+        "Label": "Perception: Group E"
+      },
+      "F": {
+        "Label": "Perception: Group F"
+      }
+    },
+    "Settings": {
+      "GroupLabel": {
+        "Name": "Group {group} Display Name",
+        "Hint": "Override the display name shown in the token HUD and config sheets. Leave blank to use the default label."
+      },
+      "GmSeeAll": {
+        "Name": "GM Sees All Groups",
+        "Hint": "When enabled, the GM always sees tokens, tiles, and lights from every perception group at full visibility, regardless of their selected token. When disabled, selecting a token previews that token's perspective: anything outside its perception groups (or otherwise hidden) is dimmed rather than hidden, so the GM can still see and select it. With no token selected, everything returns to normal."
+      },
+      "GmSeeAllDisguises": {
+        "Name": "GM Sees True Appearances",
+        "Hint": "When enabled, the GM always sees every token's real appearance and ignores disguises entirely, regardless of selection. When disabled, selecting a token previews disguises from that token's own perspective: the selected token always shows as itself, and anything it perceives as disguised is shown disguised. With no token selected, the GM sees the default disguised view."
+      }
+    },
+    "DetectionMode": {
+      "group-a": "Perceived Reality: Group A",
+      "group-b": "Perceived Reality: Group B",
+      "group-c": "Perceived Reality: Group C",
+      "group-d": "Perceived Reality: Group D",
+      "group-e": "Perceived Reality: Group E",
+      "group-f": "Perceived Reality: Group F"
+    },
+    "TokenConfig": {
+      "SectionLabel": "Perceived Reality",
+      "SectionHint": "Assign this token to one or more perception groups. Only viewer tokens sharing a matching group, or with the corresponding status effect active, will see this token.",
+      "ColumnGroup": "Group",
+      "ColumnEnabled": "Enabled"
+    },
+    "TileConfig": {
+      "SectionLabel": "Perceived Reality",
+      "SectionHint": "Assign this tile to one or more perception groups. Only players whose tokens share a matching group will see this tile rendered on their canvas."
+    },
+    "LightConfig": {
+      "SectionLabel": "Perceived Reality",
+      "SectionHint": "Assign this light to one or more perception groups. Only players whose tokens share a matching group will see this light and its illumination effect."
+    },
+    "WallConfig": {
+      "SectionLabel": "Perceived Reality",
+      "SectionHintDoor": "Assign one or more perception groups. Players whose tokens share a matching group see and use this as a normal door. Everyone else perceives it as a solid wall instead.",
+      "SectionHintSecret": "Assign one or more perception groups. Players whose tokens share a matching group see and use this secret door as a normal door. Everyone else still perceives a solid wall, as with any secret door.",
+      "SectionHintNone": "This only has an effect when the wall's Door type is set to Door or Secret Door."
+    },
+    "HUD": {
+      "ButtonTooltip": "Perceived Reality: Set Perception Group",
+      "PanelTitle": "Perception Groups",
+      "PanelHint": "Toggle which groups this token belongs to."
+    },
+    "Moments": {
+      "BuilderTitle": "Moment Builder",
+      "MenuOpen": "Moment Builder",
+      "KeybindOpen": "Open Moment Builder",
+      "NewMomentName": "New Moment",
+      "NamePlaceholder": "Moment name",
+      "NewMoment": "New",
+      "DeleteMoment": "Delete",
+      "Save": "Save",
+      "Run": "Run",
+      "Zoom": "Timeline zoom",
+      "TriggerManual": "Trigger: Manual",
+      "TriggerActivation": "Trigger: On Scene Activation",
+      "Rows": {
+        "transition": "Transitions",
+        "narration": "Narration",
+        "sound": "Sound",
+        "state": "State",
+        "fx": "Effects"
+      },
+      "Add": {
+        "transition": "Transition",
+        "narration": "Narration",
+        "sound": "Sound",
+        "perception": "Perception",
+        "object": "Grouping",
+        "atmosphere": "Atmosphere",
+        "fx": "Effect",
+        "disguise": "Disguise"
+      },
+      "Transitions": {
+        "mist": "Rolling Mist",
+        "blackout": "Blackout",
+        "pollen": "Pollen Bloom",
+        "ripple": "Veil Ripple",
+        "ember": "Emberfall",
+        "snow": "Snowfall",
+        "rain": "Rainveil",
+        "sand": "Sandstorm",
+        "fireflies": "Fireflies",
+        "static": "Void Static",
+        "bloodmist": "Bloodmist",
+        "spores": "Spore Cloud",
+        "starfall": "Starfall",
+        "ghostlight": "Ghostlight",
+        "shadow": "Shadow Crawl",
+        "haze": "Golden Haze",
+        "petals": "Petal Drift",
+        "ash": "Ash Storm",
+        "lightning": "Lightning Veil",
+        "dream": "Dream Smoke"
+      },
+      "Presets": {
+        "none": "None (clear)",
+        "fey": "Fey Glamour",
+        "dread": "Cold Dread",
+        "ashen": "Ashen Rot",
+        "sickly": "Sickly Bloom"
+      },
+      "Inspector": {
+        "NoSelection": "Select a clip on the timeline to edit it, or add one from the palette above.",
+        "Start": "Start (s)",
+        "Duration": "Duration (s)",
+        "Delete": "Delete clip",
+        "Style": "Style",
+        "Audience": "Audience",
+        "AudienceAll": "Everyone",
+        "AudiencePerceivers": "Perceivers of group",
+        "AudienceOthers": "Everyone else",
+        "Group": "Group",
+        "PrimaryColor": "Primary color",
+        "BackdropColor": "Backdrop color",
+        "Particles": "Particles",
+        "SceneBlur": "Scene blur",
+        "Intensity": "Intensity",
+        "SameForAll": "Same text for everyone",
+        "Text": "Text",
+        "TextPerceiver": "Perceivers read",
+        "TextOther": "Everyone else reads",
+        "SoundPath": "Audio file",
+        "Browse": "Browse",
+        "Volume": "Volume",
+        "Loop": "Loop",
+        "LoopOn": "On",
+        "LoopOff": "Off",
+        "Action": "Action",
+        "ActionGrant": "Grant group",
+        "ActionRemove": "Remove group",
+        "ActionAdd": "Add to group",
+        "ActionRemoveGroup": "Remove from group",
+        "Targets": "Targets",
+        "TargetType": "Target type",
+        "Tokens": "Tokens",
+        "Tiles": "Tiles",
+        "Lights": "Lights",
+        "Doors": "Doors",
+        "Door": "Door",
+        "SecretDoor": "Secret Door",
+        "NoTargets": "Nothing of this type on the scene.",
+        "Preset": "Preset",
+        "Saturation": "Saturation",
+        "Brightness": "Brightness",
+        "HueShift": "Hue shift",
+        "TintColor": "Tint color",
+        "TintStrength": "Tint strength",
+        "VignetteColor": "Vignette color",
+        "VignetteStrength": "Vignette strength",
+        "Motes": "Drifting motes",
+        "MoteColor": "Mote color",
+        "AudienceDiverges": "diverges",
+        "FxMissing": "FXMaster is not active in this world. This clip is kept but will not play.",
+        "FxMode": "Mode",
+        "FxModePreset": "Preset",
+        "FxModeParticle": "Particle effect",
+        "FxModeFilter": "Filter effect",
+        "FxPreset": "Preset",
+        "FxPickPreset": "Choose a preset",
+        "FxType": "Effect",
+        "FxPickType": "Choose an effect",
+        "FxDirection": "Direction",
+        "FxSpeed": "Speed",
+        "FxDensity": "Density",
+        "FxColor": "Color override",
+        "FxDefault": "Default",
+        "FxVeryLow": "Very low",
+        "FxLow": "Low",
+        "FxMedium": "Medium",
+        "FxHigh": "High",
+        "FxVeryHigh": "Very high",
+        "FxPresetEveryone": "Presets play for everyone. Use a particle or filter effect to target an audience.",
+        "DeleteConfirmTitle": "Delete Clip",
+        "DeleteConfirmContent": "Delete this clip from the timeline? This cannot be undone.",
+        "MoteCount": "Mote count",
+        "MoteDirection": "Mote direction",
+        "MoteDirUp": "Rising",
+        "MoteDirDown": "Falling",
+        "AtmoAutoEnd": "Ends after (s)",
+        "AtmoAutoEndNever": "Never",
+        "MoteDirAngle": "Directional",
+        "MoteAngle": "Angle",
+        "TintEnabled": "Tint",
+        "GroupOverrides": "Group overrides",
+        "AddOverride": "Add override",
+        "RemoveOverride": "Remove override",
+        "Near": "near",
+        "Locate": "Locate on canvas",
+        "ActionSet": "Set",
+        "ActionUnset": "Unset",
+        "DisguiseUnsetAll": "Apply to every token in the scene, not just the ones picked below",
+        "DisguiseGroupHint": "The group picked here is who gets fooled: members of it see the disguise below (or stop seeing it, once unset). Everyone outside the group always sees this token as it really is, regardless of their own Perception groups."
+      },
+      "Notify": {
+        "Saved": "Moments saved to scene.",
+        "NoScene": "Open or activate a scene first.",
+        "GMOnly": "Only a GM can run a moment.",
+        "NotFound": "No moment named \"{name}\" on this scene.",
+        "MomentGone": "That moment no longer exists.",
+        "Cleared": "Cleared all lingering moment effects for this scene.",
+        "PerceptionCleared": "Cleared all moment-granted sight and visibility groupings for this scene.",
+        "DisguisesCleared": "Cleared all disguises for this scene."
+      },
+      "ViewAsAll": "All (GM view)",
+      "ViewAsHint": "Preview this session as a specific token would perceive it. Only affects your own screen.",
+      "ZoomIn": "Zoom in",
+      "ZoomOut": "Zoom out",
+      "ZoomReset": "Reset zoom",
+      "Catalog": "Catalog",
+      "CatalogTitle": "Moment Catalog",
+      "CatalogMenuOpen": "Moment Catalog",
+      "CatalogMenuTitle": "Actions",
+      "CatalogEmpty": "No moments saved yet. Build one in the Moment Builder and click Save.",
+      "CatalogUnassigned": "Unassigned",
+      "CatalogUnknownScene": "Unknown Scene",
+      "CatalogRun": "Run",
+      "CatalogEdit": "Edit",
+      "CatalogDelete": "Delete",
+      "CatalogDeleteTitle": "Delete Moment",
+      "CatalogDeleteContent": "Delete \"{name}\"? This removes its saved timeline and cannot be undone.",
+      "GroupLabelHint": "The scene this moment's timeline is saved under. Unassigned moments use the active scene for token/tile/light/wall pickers but stay unassigned.",
+      "CatalogDeleteCancel": "Cancel",
+      "AddHint": {
+        "transition": "A full-screen curtain effect (mist, blackout, rain, and more) that plays for a set duration, then clears.",
+        "narration": "Letterboxed text shown on screen. Can say the same thing to everyone, or diverge so a chosen group reads different text than everyone else.",
+        "sound": "Plays an audio file for a set duration. Can target everyone or just a chosen perception group.",
+        "perception": "Grants or removes a token's ability to see a perception group's tokens, tiles, lights, and doors.",
+        "object": "Adds or removes a perception group tag on specific tokens, tiles, lights, or doors, changing who can see them.",
+        "atmosphere": "A persistent color/vignette/motes preset applied to a perception group's view of the scene, until changed or cleared.",
+        "fx": "A FXMaster particle or filter effect (rain, snow, fog, and more) timed to this clip. Requires the FXMaster module active in this world. Presets play for everyone; particle/filter effects can target a single perception group.",
+        "disguise": "Swaps a token's appearance for one perception group only, until unset. Reuses the same appearance data as the token's own Seen As sheet section - setting one overwrites the other."
+      },
+      "ClearEffects": "Clear Effects",
+      "ClearEffectsHint": "Immediately clears any lingering transition, narration, atmosphere, and effect overlays for everyone on this scene.",
+      "ClearPerception": "Clear Perception",
+      "ClearPerceptionHint": "Immediately removes every sight grant and visibility grouping created by moments for all tokens, tiles, lights, and doors on this scene.",
+      "ClearDisguises": "Clear Disguises",
+      "ClearDisguisesHint": "Immediately removes every disguise set on tokens in this scene, restoring their true appearance for everyone.",
+      "ZoomTick": "{n}s",
+      "ZoomTickHint": "Ruler interval"
+    },
+    "UpdateCheck": {
+      "Title": "Release Notes",
+      "Tooltip": "Update available: {version}",
+      "ViewHistory": "View full history on GitHub",
+      "NoNotes": "No release notes provided for this version.",
+      "Close": "Close"
+    },
+    "Disguise": {
+      "SectionLabel": "Perceived Reality: Seen As",
+      "SectionHint": "Each row below fools one perception group with a fake appearance instead of the truth. This is the opposite of the Perception checklist above: there, matching a group reveals the token; here, matching a group hides the truth and shows the disguise instead. Everyone outside the chosen group still sees this token as it really is.",
+      "GroupSet": "Disguised",
+      "GroupNotSet": "Not set",
+      "ToggleLabel": "Enable or disable this group's disguise",
+      "Appearance": "Appearance",
+      "SearchPlaceholder": "Search actors and compendiums...",
+      "WorldActors": "World Actors",
+      "NoResults": "No matches",
+      "Clear": "Clear",
+      "HideNameplate": "Hide nameplate on hover / selection for this group",
+      "HideNameplateHint": "Off by default - allies usually still see a name on hover, just the disguised one.",
+      "ShowAsDisposition": "Show as disposition"
+    }
+  }
+}

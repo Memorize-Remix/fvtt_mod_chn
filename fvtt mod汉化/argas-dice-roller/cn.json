@@ -1,0 +1,363 @@
+{
+  "argas-dice-roller": {
+    "title": "掷骰窗口",
+    "legend": {
+      "hiddenRolls": "隐藏掷骰",
+      "explodingDiceRolls": "爆发骰",
+      "coin": "硬币",
+      "wildDie": "百搭骰",
+      "d2Rolls": "D2 骰",
+      "d100Rolls": "D100 骰",
+      "modifiers": "修正（可多选）",
+      "freeRollLabel": "自由掷骰",
+      "wildDieChat": "百搭骰",
+      "tokenSelection": "随机选择 Token",
+      "showGroupSelection": "显示候选者？"
+    },
+    "controlTitle": "Arga's Dice Roller",
+    "tooltip": {
+      "makeGMRoll": "GM 私骰（GM 与你可见）",
+      "makeBlindRoll": "GM 盲骰（仅 GM 可见）",
+      "makeSelfRoll": "私骰（仅你自己可见）",
+      "explodingDice": "所有骰子均可爆发",
+      "wildDie": "掷一枚百搭骰（d6）"
+    },
+    "warn": {
+      "cannotRollAsGroupOrVehicle": "你不能以「群体」或「载具」身份掷骰。",
+      "coinNotInMulti": "硬币不能混入多骰掷骰。",
+      "coinNoModifier": "硬币掷骰不接受修正。请先取消选择修正。",
+      "selectToken": "请至少选择一个 Token。"
+    },
+    "chat": {
+      "fateTitle": "命运掷骰",
+      "fateChosen": "……被命运选中",
+      "fateCandidates": "（候选者：{names}）",
+      "coin-heads": "正面",
+      "coin-tails": "反面",
+      "coin-roll-label": "掷硬币",
+      "critical-failure": "大失败",
+      "critical-failure-short": "大失败",
+      "critical-failure-prefix": "若此次掷骰为特性检定，则为",
+      "critical-failure-no-benny": "大失败不能用本尼重掷",
+      "multiDiceMixed": "多种骰子",
+      "multiDicePlus": "(+)",
+      "flavorResult": "结果：{total}",
+      "flavorMain": "主骰：{main} | 百搭骰：{wild}",
+      "flavorMulti": "多骰池：{total}",
+      "flavorMultiWild": "多骰池：{total} | 百搭骰：{wild}",
+      "rollName": "掷骰",
+      "fumbleCheckName": "大失败检定"
+    },
+    "multiSelect": {
+      "tooltipHint": "按住 Ctrl 可选择多枚不同骰子进行组合掷骰。"
+    },
+    "hiddenInfo": {
+      "gmRoll": "~ GM 私骰 ~\n（GM 与你可见）",
+      "gmRollViewedByGM": "~ GM 私骰 ~\n（GM 与掷骰者可见）",
+      "blindRoll": "~ GM 盲骰 ~\n（仅 GM 可见）",
+      "selfRoll": "~ 私骰 ~\n（仅你自己可见）",
+      "gmToPlayerRoll": "~ GM 私骰 ~\n（仅 GM 可见）"
+    },
+    "dialogs": {
+      "reload": {
+        "title": "需要重新加载",
+        "content": "某些已更改的设置需要重新加载应用才能生效。是否立即重新加载？"
+      }
+    },
+    "requestRoll": {
+      "legendMode": "模式",
+      "legend": "骰子检定",
+      "button": "请求掷骰",
+      "windowTitle": "请求掷骰",
+      "modeSingle": "单独掷骰",
+      "modeSingleHint": "可以向每个选中的角色请求不同的检定。",
+      "modeGroup": "团体检定",
+      "modeGroupHint": "向所有选中的角色请求相同的特性检定。黄色特性并非所有角色都可用。没有所请求特性的角色会自动被提示进行「未受训」检定。",
+      "modeOpposed": "对抗检定",
+      "modeOpposedHint": "两名角色相互竞争，各自使用单独选择的特性。",
+      "modeDramatic": "剧情任务",
+      "modeDramaticHint": "启动专用的剧情任务流程，包含预设、轮数和标记追踪。",
+      "sectionPCs": "玩家角色",
+      "sectionNPCs": "NPC（当前场景中）",
+      "attributes": "属性",
+      "skills": "技能",
+      "legendTraits": "特性",
+      "legendTraitsGroup": "至少一名角色拥有的所有特性",
+      "partialHint": "并非所有角色都拥有此特性（按「未受训」掷骰）",
+      "untrained": "未受训",
+      "modifier": "修正（可多选）",
+      "visibility": "可见性",
+      "submit": "请求掷骰",
+      "chatTitle": "掷骰请求",
+      "chatHeaderLabel": "请求的掷骰",
+      "opposedChatHeaderLabel": "对抗掷骰",
+      "modifierLabel": "修正：",
+      "modifierStepMinusTitle": "修正 −1",
+      "modifierStepPlusTitle": "修正 +1",
+      "diePrefix": "d",
+      "chatRollButton": "掷骰",
+      "chatPending": "待处理…",
+      "chatNoPermission": "无权限",
+      "chatComplete": "完成",
+      "bennyTooltip": "使用本尼重掷",
+      "bennyTooltipNPC": "使用 GM 本尼重掷",
+      "fumbleCheckBtn1": "检查大失败",
+      "fumbleCheckBtn2": "使用 d6？",
+      "fumbleCheckNone": "<u>无</u>大失败",
+      "fumbleCheckYes": "大失败",
+      "fumbleCheckTextNo": "追加检定判定 {result}&nbsp; 成立。",
+      "fumbleCheckTextYes": "追加检定判定 {result}&nbsp; 成立。",
+      "fumbleCheckTextNoShort": "追加检定结果：{result}",
+      "fumbleCheckTextYesShort": "追加检定结果：{result}",
+      "fumbleCheckDieLabel": "检定骰",
+      "acceptResultBtn": "接受结果",
+      "keepBetterResultBtn": "保留更好的结果",
+      "orChoice": "或",
+      "pendingFumblePotentialHint": "这名龙套的本尼重掷结果是 1，可能是大失败。",
+      "pendingFumblePotentialHintN": "这名龙套第 {n} 次本尼重掷的结果是 1，可能是大失败。",
+      "bennyProtectedHint": "本尼重掷的结果<u>没有更好</u>。保留之前的结果。",
+      "bennyProtectedHintN": "第 {n} 次本尼重掷的结果<u>没有更好</u>。保留之前的结果。",
+      "bennyProtectedHintExtraOne": "不过，这名龙套的重掷结果是 1：",
+      "bennyProtectedHintFumble": "本尼重掷的结果是大失败",
+      "bennyProtectedHintFumbleN": "第 {n} 次本尼重掷的结果是大失败",
+      "bennyProtectedHintFumblePotential": "如果此次掷骰是特性检定，则本尼重掷的结果为",
+      "bennyProtectedHintFumblePotentialN": "如果此次掷骰是特性检定，则第 {n} 次本尼重掷的结果为",
+      "bennyImprovedHint": "本尼重掷的结果<u>更好</u>。新结果现已生效。",
+      "bennyImprovedHintN": "第 {n} 次本尼重掷的结果<u>更好</u>。新结果现已生效。",
+      "bennyProtectedHintNamed": "{actor} 的本尼重掷结果<u>没有更好</u>。保留之前的结果。",
+      "bennyProtectedHintNamedN": "{actor} 的第 {n} 次本尼重掷结果<u>没有更好</u>。保留之前的结果。",
+      "bennyProtectedHintExtraOneNamed": "不过，{actor}（龙套）的重掷结果是 1：",
+      "bennyProtectedHintFumbleNamed": "{actor} 的本尼重掷结果是大失败",
+      "bennyProtectedHintFumbleNamedN": "{actor} 的第 {n} 次本尼重掷结果是大失败",
+      "bennyProtectedHintFumblePotentialNamed": "如果 {actor} 的掷骰是特性检定，则本尼重掷的结果为",
+      "bennyProtectedHintFumblePotentialNamedN": "如果 {actor} 的掷骰是特性检定，则第 {n} 次本尼重掷的结果为",
+      "bennyImprovedHintNamed": "{actor} 的本尼重掷结果<u>更好</u>。新结果现已生效。",
+      "bennyImprovedHintNamedN": "{actor} 的第 {n} 次本尼重掷结果<u>更好</u>。新结果现已生效。",
+      "firstRollFumbleNamed": "{actor} 掷出了大失败",
+      "bennyCoinHint": "本尼重掷会替换之前的结果。",
+      "bennyCoinHintN": "第 {n} 次本尼重掷会替换之前的结果。",
+      "bennyFumbleOverwriteHint": "本尼重掷的结果是 1，之前的结果被弃置。",
+      "bennyFumbleOverwriteHintN": "第 {n} 次本尼重掷的结果是 1，之前的结果被弃置。",
+      "bennyFumbleOverwriteHintConfirmed": "本尼重掷的结果是 1，追加检定判定 {result}&nbsp; 成立。",
+      "bennyFumbleOverwriteHintConfirmedN": "第 {n} 次本尼重掷的结果是 1，追加检定判定 {result}&nbsp; 成立。",
+      "bennyFumbleOverwriteHintCritical": "本尼重掷的结果是大失败，之前的结果被弃置。",
+      "bennyFumbleOverwriteHintCriticalN": "第 {n} 次本尼重掷的结果是大失败，之前的结果被弃置。",
+      "warn": {
+        "noActor": "请至少选择一个角色。",
+        "noTrait": "请为所有选中的角色选择一个技能或属性。",
+        "groupMin": "进行团体检定时，请至少选择两名角色。",
+        "opposedTwo": "进行对抗检定时，请恰好选择两名角色。",
+        "singleNeed": "请至少选择一个角色和一个特性。",
+        "groupNeed": "请至少选择两名角色及其各自的特性。",
+        "opposedNeed": "请选择两名角色及其各自的特性。",
+        "dramaticNeed": "请至少选择一个角色和一个特性。",
+        "notOwner": "你无权为该角色掷骰。",
+        "alreadyRolled": "此次掷骰已经完成。",
+        "rollError": "掷骰出错。请重试。",
+        "bennyUsed": "此次掷骰已经使用过本尼。",
+        "noBennies": "没有剩余的本尼。",
+        "noGMBennies": "GM 没有剩余的本尼。",
+        "invalidModifier": "请输入介于 {min} 和 {max} 之间的值。"
+      },
+      "dramatic": {
+        "presetStandard": "标准（3/3）",
+        "presetChallenging": "有挑战（4/3）",
+        "presetHard": "困难（6/4）",
+        "presetComplex": "复杂（8/5）",
+        "customPreset": "自定义",
+        "description": "{preset}：每位参与者须在 {rounds} 轮内平均收集 {markers} 个 Token。",
+        "preview": "{participants} 名参与者 · {target} 个 Token · {rounds} 轮",
+        "markersLabel": "任务 Token",
+        "roundsLabel": "轮数",
+        "statusActive": "进行中",
+        "statusSuccess": "成功完成",
+        "statusFailure": "失败",
+        "statusFailureComplication": "因意外状况未命中而失败",
+        "chatHeaderLabel": "剧情任务",
+        "chatRollButton": "掷骰",
+        "chatPassButton": "跳过",
+        "chatWaiting": "等待中…",
+        "passed": "已跳过",
+        "markerProgress": "Token：{current} / {target}",
+        "roundProgress": "轮：{current} / {total}",
+        "summary": "{preset} · {participants} 名参与者 · 在 {rounds} 轮内收集 {target} 个 Token",
+        "cardComplication": "意外状况（–2）",
+        "cardJoker": "鬼牌（+2）",
+        "resultSuccess": "+{markers} 个 Token",
+        "resultFailure": "无 Token",
+        "resultCriticalFailure": "−1 个 Token",
+        "resultComplicationFailure": "意外状况期间失败——任务失败",
+        "resultComplicationCriticalFailure": "意外状况期间大失败——任务失败",
+        "roundLabel": "第 {round} 轮"
+      },
+      "dramaticChatHeaderLabel": "剧情任务",
+      "dramaticRoundLabel": "轮",
+      "dramaticMarkerLabel": "Token",
+      "dramaticJokerLabel": "鬼牌 +2",
+      "dramaticComplicationLabel": "意外状况 −2",
+      "dramaticSkipButton": "跳过",
+      "dramaticSkippedLabel": "已跳过",
+      "dramaticOptionsLabel": "选项：",
+      "dramaticChangeTraitButton": "更换特性",
+      "dramaticSupportButton": "协助",
+      "dramaticChangeTrait": {
+        "title": "~ 更换特性 ~",
+        "infoHTML": "为剧情任务的<em>当前</em>轮选择一个不同的特性。只要本轮你尚未掷骰，就可以随意更换选择。",
+        "noteHTML": "<strong>注意：</strong>&nbsp;&nbsp;请与 GM 确认所选特性是否适合当前任务。下一轮中，你最近的选择将成为默认项——届时你可以再次更换。",
+        "traitLabel": "要掷哪个特性？",
+        "confirm": "确认",
+        "cancel": "取消",
+        "reset": "恢复原始特性",
+        "originalTraitLine": "GM 最初请求的：<strong>{trait}</strong>",
+        "noLongerPossible": "已无法更换——你本轮已经行动过了。"
+      },
+      "dramaticSupport": {
+        "title": "~ 协助掷骰 ~",
+        "bonusInfoHTML": "成功的协助会在<strong><em>当前轮</em></strong>为目标掷骰提供 +1 加值（若掷出提升则 +2）。只有本轮尚未掷骰的角色才能被协助。",
+        "warningHTML": "<strong>注意：</strong>&nbsp;&nbsp;请与 GM 协调确认你在此处选择的特性是否确实适合协助另一名角色的掷骰。",
+        "targetLabel": "要协助谁？",
+        "traitLabel": "你想用哪个特性进行协助？",
+        "confirm": "协助",
+        "cancel": "取消",
+        "noTargetsAvailable": "没有可协助的目标——所有参与者本轮都已行动或跳过。",
+        "noLongerPossible": "已无法协助——目标在此期间已经行动。",
+        "helperLineSuccess": "通过 <em>{trait}</em> 对 <strong>{target}</strong> 的协助<span class=\"adr-dramatic-support-success-text\">成功：&nbsp;&nbsp;{delta}</span>",
+        "helperLineFailure": "通过 <em>{trait}</em> 对 <strong>{target}</strong> 的协助<span class=\"adr-dramatic-support-failure-text\">未成功</span>",
+        "helperLineFumble": "通过 <em>{trait}</em> 对 <strong>{target}</strong> 的协助是<span class=\"adr-dramatic-support-fumble-text\">大失败</span>",
+        "helperLinePendingFumble": "通过 <em>{trait}</em> 对 <strong>{target}</strong> 的协助：<span class=\"adr-dramatic-support-pending-text\">大失败检定待定</span>",
+        "helperLineTooLate": "已无法协助——目标已经行动",
+        "helperLineCapExceeded": "无法协助——已达到 +4 上限",
+        "targetLineSuccess": "<strong>{helper}</strong> 为你提供 <strong>{delta}</strong> 的协助",
+        "targetLineFailure": "<strong>{helper}</strong> 未能协助你",
+        "targetLineFumble": "<strong>{helper}</strong> 给你的掷骰带来 <strong>−2</strong> 的阻碍",
+        "targetLinePendingFumble": "<strong>{helper}</strong>：大失败检定待定"
+      },
+      "dramaticNoSuccess": "未成功",
+      "dramaticHistoryToggle": "各项结果 <i>（点击）</i>",
+      "dramaticTaskFailedLabel": "剧情任务失败",
+      "dramaticGainedMarkerLabel": "+{count} 个 Token",
+      "dramaticHistoryLostMarkerLabel": "−1 个 Token",
+      "dramaticLostMarkerLabelTitle": "大失败：",
+      "dramaticLostMarkerLabelDetail": "−1 个 Token（若有可用）",
+      "dramaticHistoryComplicationFailureLabel": "失败",
+      "dramaticHistorySupportSuccess": "以 {delta} 协助 {target}",
+      "dramaticHistorySupportFailure": "对 {target} 的协助失败",
+      "dramaticHistorySupportFumble": "协助时大失败——对 {target} 造成 −2",
+      "dramaticHistorySupportTooLate": "对 {target} 的协助太迟",
+      "dramaticHistorySupportCapExceeded": "对 {target} 的协助超过上限",
+      "dramaticNoMarkerLabel": "无 Token",
+      "dramaticPendingCheckLabel": "大失败检定待定",
+      "dramaticComplicationFailedLabel": "意外状况期间失败",
+      "dramaticRoundReadyLine1": "第 {round} 轮结束。",
+      "dramaticRoundReadyLine2": "继续第 {nextRound} 轮",
+      "dramaticRoundFailurePendingLine1": "最后一轮结束",
+      "dramaticRoundFailurePendingLine2": "任务失败",
+      "dramaticComplicationFailurePendingLine1": "意外状况期间失败",
+      "dramaticComplicationFailurePendingLine2": "任务失败",
+      "dramaticNextRoundButton": "下一轮",
+      "dramaticConfirmFailureButton": "确认失败",
+      "dramaticTaskSuccessLine1": "目标已达成",
+      "dramaticTaskSuccessLine2": "任务成功完成！",
+      "dramaticTaskFailureRoundsLine1": "目标未达成",
+      "dramaticTaskFailureRoundsLine2": "任务失败",
+      "dramaticTaskFailureComplicationLine1": "意外状况期间失败",
+      "dramaticTaskFailureComplicationLine2": "任务失败"
+    },
+    "swadeSettings": {
+      "windowTitle": "SWADE 系统机制",
+      "menuName": "SWADE 系统机制",
+      "menuLabel": "设置（仅 GM）",
+      "save": "保存"
+    },
+    "settings": {
+      "chatDesign": {
+        "name": "聊天样式",
+        "hint": "选择骰子结果在聊天中显示的样式。",
+        "choices": {
+          "fantasy": "奇幻",
+          "modern": "现代",
+          "standard": "标准（Foundry）"
+        }
+      },
+      "enableHiddenRolls": {
+        "name": "「隐藏掷骰」按钮",
+        "hint": "添加「GM 私骰」「GM 盲骰」和「私骰」按钮。"
+      },
+      "explodingMode": {
+        "name": "「爆发骰」按钮",
+        "hint": "启用或停用一个按钮，选中后应用爆发骰机制（掷出最高值的骰子会再次掷出，并将结果相加）。",
+        "choices": {
+          "multi": "多次爆发",
+          "once": "仅爆发一次",
+          "off": "隐藏按钮"
+        }
+      },
+      "explodingDefault": {
+        "name": "「爆发骰」始终启用",
+        "hint": "「爆发骰」开关默认启用。"
+      },
+      "enableWildDie": {
+        "name": "「百搭骰」按钮",
+        "hint": "添加「Savage Worlds」百搭骰按钮。无论「爆发骰」开关如何，它始终可以爆发。"
+      },
+      "enableModifiers": {
+        "name": "「修正」按钮",
+        "hint": "允许添加骰子修正。多个数值可以组合。"
+      },
+      "enableFirstColumn": {
+        "name": "「1」骰子的额外列",
+        "hint": "注意：骰子图标可点击，每点一次掷出一枚骰子。"
+      },
+      "closeFormOnRoll": {
+        "name": "窗口自动关闭",
+        "hint": "启用后，每次掷骰后骰子窗口都会关闭。"
+      },
+      "maxDiceCount": {
+        "name": "骰子最大数量：",
+        "hint": "可以同时掷出的骰子数量。"
+      },
+      "enableCoins": {
+        "name": "启用「掷硬币」",
+        "hint": "「硬币」会掷出 ~正面~ 或 ~反面~ 的结果。"
+      },
+      "enableD2Rolls": {
+        "name": "启用「d2」掷骰",
+        "hint": "显示「D2」骰子所在行。"
+      },
+      "enableD100Rolls": {
+        "name": "启用「d100」掷骰",
+        "hint": "显示「D100」骰子所在行。"
+      },
+      "enableFateRollButton": {
+        "name": "「命运掷骰」按钮",
+        "hint": "从当前选中的 Token 中随机选择一个，并将其名称发布到聊天。",
+        "labelHtml": "命运掷骰"
+      },
+      "enableGroupSelection": {
+        "name": "显示候选者？",
+        "hint": "显示或隐藏哪些 Token 在候选池中。"
+      },
+      "groupSelectionYes": {
+        "name": "是",
+        "hint": "所有候选 Token 的名称都会显示在聊天中。"
+      },
+      "groupSelectionNo": {
+        "name": "否",
+        "hint": "只有被选中的 Token 名称会显示在聊天中。"
+      },
+      "highlightNaturalOnes": {
+        "name": "启用大失败机制",
+        "hint": "启用后，「Savage Worlds」的大失败规则也适用于「自由掷骰」，而不仅限于请求的掷骰。规则：如果一枚骰子掷出自然 1，即使之后被修正调整，最终结果也会以红色高亮显示。对于多枚骰子，仅当超过半数骰子（包括可能的百搭骰）都掷出自然 1 时才适用。对于王牌角色，只有当百搭骰也掷出自然 1 时才会发生「大失败」。"
+      },
+      "enableRequestRoll": {
+        "name": "启用掷骰请求",
+        "hint": "GM 可以向玩家请求单独检定、团体检定、对抗检定和剧情任务检定。"
+      }
+    },
+    "individualResults": {
+      "toggle": "各项结果 <i>（点击）</i>",
+      "appliedModifierLabel": "修正",
+      "appliedModifierLabelShort": "修正"
+    }
+  }
+}

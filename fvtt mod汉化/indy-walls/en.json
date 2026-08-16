@@ -1,0 +1,287 @@
+{
+  "indy-walls": {
+    "Controls": {
+      "CubicBezier": "Cubic Bezier Wall",
+      "Ellipse": "Ellipse Wall",
+      "Rectangle": "Rectangle Wall",
+      "Polyline": "Polyline Wall",
+      "ConvertToIndyWalls": "Convert to Indy Walls",
+      "CleanupWalls": "Clean Up Walls",
+      "RegionsToIndyWalls": "Create Indy Walls from Regions",
+      "DecreaseSegments": "Decrease Curve Segments",
+      "IncreaseSegments": "Increase Curve Segments",
+      "UndoEdit": "Undo Edit",
+      "RedoEdit": "Redo Edit",
+      "ApplyCubic": "Create Cubic Bezier Walls",
+      "CancelCubic": "Cancel Cubic Bezier Wall",
+      "ApplyEllipse": "Create Ellipse Walls",
+      "CancelEllipse": "Cancel Ellipse Wall",
+      "ApplyRectangle": "Create Rectangle Walls",
+      "CancelRectangle": "Cancel Rectangle Wall",
+      "ApplyPolyline": "Create Polyline Walls",
+      "CancelPolyline": "Cancel Polyline Wall",
+      "SaveConversionPreview": "Save conversion preview",
+      "CancelConversionPreview": "Cancel conversion preview",
+      "DecreaseConversionTolerance": "Decrease conversion tolerance",
+      "IncreaseConversionTolerance": "Increase conversion tolerance",
+      "RectangleConversionTolerance": "Rect",
+      "EllipseConversionTolerance": "Ellipse",
+      "ArcConversionTolerance": "Arc",
+      "BezierConversionTolerance": "Bezier",
+      "RegionConversionDetail": "Detail",
+      "ShapeLevels": "Indy shape levels",
+      "NoShapeLevels": "No levels",
+      "MixedShapeLevels": "Mixed",
+      "ShortcutHelp": "Editor shortcuts"
+    },
+    "Settings": {
+      "ColorPickerLabel": "Color Picker",
+      "QuickWallTypeChange": {
+        "Name": "Ctrl-click wall type buttons to update selected walls",
+        "Hint": "When enabled, Ctrl-clicking Normal, Terrain, Invisible, Ethereal, Window, Door, or Secret Door in the Wall Controls changes the selected walls to that type."
+      },
+      "HoveredWallHotkeyTypeChange": {
+        "Name": "Wall type hotkeys update hovered Foundry walls",
+        "Hint": "When enabled, wall type hotkeys can change the Foundry wall under the mouse while Wall Controls are active. Indy shape segment hotkeys still work while editing shapes."
+      },
+      "KeepWallSelectionOnCanvasClick": {
+        "Name": "Keep walls selected when clicking empty space",
+        "Hint": "When enabled, clicking empty canvas space while Wall Controls are active keeps the currently selected walls selected."
+      },
+      "ShowWallLengthsWhileDrawing": {
+        "Name": "Show wall lengths while drawing",
+        "Hint": "When enabled, wall previews show their current length while drawing or editing normal and Indy walls. Lengths use the scene grid distance and units."
+      },
+      "ShowWallLengthsOnHover": {
+        "Name": "Show wall lengths on hover",
+        "Hint": "When enabled, hovering a Foundry wall in Wall Controls shows its length, including wall segments created by Indy Walls."
+      },
+      "DebugShapeSelection": {
+        "Name": "Debug Indy shape selection",
+        "Hint": "When enabled, Ctrl-click shape selection diagnostics are written to the browser console."
+      },
+      "ActiveShapeToolHighlightColor": {
+        "Name": "Active Indy shape tool highlight color",
+        "Hint": "Hex color used to highlight the selected Indy shape drawing tool in the Wall Controls."
+      },
+      "ActiveShapeToolHighlightGlow": {
+        "Name": "Active Indy shape tool glow",
+        "Hint": "Glow strength for the selected Indy shape drawing tool button. Set to 0 to disable the glow."
+      },
+      "ActiveShapeToolHighlightBorderWidth": {
+        "Name": "Active Indy shape tool border width",
+        "Hint": "Inset border width for the selected Indy shape drawing tool button."
+      },
+      "ShowDoorGlyphsInEditor": {
+        "Name": "Show door glyphs in Indy shape editor",
+        "Hint": "When enabled, door and secret door segments show Foundry-style door glyphs while editing Indy wall shapes."
+      },
+      "ShowShortcutHelpInEditor": {
+        "Name": "Show shortcut help in Indy shape editor",
+        "Hint": "When enabled, Indy shape editor controls include a compact help button showing shortcuts for the current shape tool."
+      },
+      "SharedRectangleConversion": {
+        "Name": "Convert adjacent rectangles with shared sides",
+        "Hint": "When enabled, conversion can detect adjacent rectangles that share full or partial wall sides and hide duplicate shared segments. Disable this to use the older exclusive-wall rectangle detection."
+      },
+      "RectangleConversionTolerance": {
+        "Name": "Convert to Indy Walls rectangle tolerance",
+        "Hint": "Multiplier for how loosely plain walls may fit detected rectangles during conversion. Lower values are stricter; higher values convert more aggressively."
+      },
+      "EllipseConversionTolerance": {
+        "Name": "Convert to Indy Walls ellipse tolerance",
+        "Hint": "Multiplier for how loosely plain walls may fit detected ellipses during conversion. Lower values are stricter; higher values convert more aggressively."
+      },
+      "ArcConversionTolerance": {
+        "Name": "Convert to Indy Walls arc tolerance",
+        "Hint": "Multiplier for how loosely plain walls may fit detected arcs during conversion. Lower values are stricter; higher values convert more aggressively."
+      },
+      "BezierConversionTolerance": {
+        "Name": "Convert to Indy Walls Bezier tolerance",
+        "Hint": "Multiplier for how loosely plain walls may fit detected Bezier curves during conversion. Lower values are stricter; higher values convert more aggressively."
+      },
+      "WallCleanupTolerance": {
+        "Name": "Wall cleanup snap tolerance",
+        "Hint": "Maximum pixel distance for the Clean Up Walls tool to snap wall endpoints together. Set to 0 to only remove exact duplicate lines."
+      },
+      "WallCleanupRespectLevels": {
+        "Name": "Clean Up Walls respects levels",
+        "Hint": "When enabled, Clean Up Walls only snaps endpoints together when the walls share the same v14 level list. Disable this to allow snapping across levels."
+      },
+      "WallCleanupSnapStandaloneTargets": {
+        "Name": "Clean Up Walls snaps to grid lines and map edges",
+        "Hint": "When enabled, Clean Up Walls may move lone endpoints to nearby grid lines or map edges within cleanup tolerance. Disabled by default so endpoints only move toward other endpoints or wall segments."
+      },
+      "WallCleanupSimplifyPaths": {
+        "Name": "Clean Up Walls simplifies noisy paths",
+        "Hint": "When enabled, Clean Up Walls may reduce compatible non-door plain wall paths into fewer segments while keeping the path within cleanup tolerance. Disabled by default."
+      },
+      "WallCleanupDuplicateWallTypes": {
+        "Name": "Clean up duplicate walls with different types",
+        "Hint": "When enabled, Clean Up Walls prompts which wall type to retain when exact duplicate segments differ only by wall type. Disabled by default."
+      },
+      "PreviewWallColor": {
+        "Name": "Preview wall color",
+        "Hint": "Hex color for generated wall previews, for example #c10e56ff."
+      },
+      "PreviewWindowWallColor": {
+        "Name": "Preview window segment color",
+        "Hint": "Hex color for Indy preview segments marked as windows."
+      },
+      "PreviewDoorWallColor": {
+        "Name": "Preview door segment color",
+        "Hint": "Hex color for Indy preview segments marked as doors."
+      },
+      "PreviewSecretWallColor": {
+        "Name": "Preview secret door segment color",
+        "Hint": "Hex color for Indy preview segments marked as secret doors."
+      },
+      "PreviewInvisibleWallColor": {
+        "Name": "Preview invisible segment color",
+        "Hint": "Hex color for Indy preview segments marked as invisible walls."
+      },
+      "PreviewTerrainWallColor": {
+        "Name": "Preview terrain segment color",
+        "Hint": "Hex color for Indy preview segments marked as terrain."
+      },
+      "PreviewWallWidth": {
+        "Name": "Preview wall width",
+        "Hint": "Line width for generated wall previews."
+      },
+      "PreviewVertexColor": {
+        "Name": "Preview vertex color",
+        "Hint": "Hex color for regular preview vertices."
+      },
+      "PreviewVertexActiveColor": {
+        "Name": "Preview active vertex color",
+        "Hint": "Hex color for hovered or dragged rectangle split vertices."
+      },
+      "PreviewVertexSize": {
+        "Name": "Preview vertex size",
+        "Hint": "Size for regular preview vertices. Rectangle split vertices are drawn slightly larger."
+      },
+      "PreviewEndpointColor": {
+        "Name": "Preview endpoint color",
+        "Hint": "Hex color for endpoint and rectangle corner handles."
+      },
+      "PreviewEndpointSize": {
+        "Name": "Preview endpoint size",
+        "Hint": "Size for endpoint and rectangle corner handles."
+      },
+      "PreviewHandleColor": {
+        "Name": "Preview Bezier handle color",
+        "Hint": "Hex color for cubic Bezier control handles."
+      },
+      "PreviewHandleSize": {
+        "Name": "Preview Bezier handle size",
+        "Hint": "Size for cubic Bezier control handles."
+      },
+      "PreviewMoveHandleColor": {
+        "Name": "Preview center handle color",
+        "Hint": "Hex color for the center handle used to move the active Indy shape preview."
+      },
+      "PreviewMoveHandleSize": {
+        "Name": "Preview center handle size",
+        "Hint": "Size for the center handle used to move the active Indy shape preview."
+      },
+      "PreviewOutlineColor": {
+        "Name": "Preview outline color",
+        "Hint": "Hex color for handle and vertex outlines."
+      },
+      "PreviewOutlineWidth": {
+        "Name": "Preview outline width",
+        "Hint": "Outline width for handles and vertices."
+      }
+    },
+    "Dialogs": {
+      "DuplicateWallType": {
+        "Title": "Choose Duplicate Wall Type",
+        "Content": "Found {count} duplicate coordinate group(s) containing these wall types: {types}. Choose the type to retain.",
+        "Cancel": "Cancel cleanup"
+      }
+    },
+    "Keybindings": {
+      "SetHoveredSegmentNormal": {
+        "Name": "Set hovered Indy wall segment to Normal",
+        "Hint": "While editing an Indy wall shape, changes the segment under the mouse to a normal wall. If enabled in settings, also changes hovered Foundry walls."
+      },
+      "SetHoveredSegmentDoor": {
+        "Name": "Set hovered Indy wall segment to Door",
+        "Hint": "While editing an Indy wall shape, changes the segment under the mouse to a door. If enabled in settings, also changes hovered Foundry walls."
+      },
+      "SetHoveredSegmentWindow": {
+        "Name": "Set hovered Indy wall segment to Window",
+        "Hint": "While editing an Indy wall shape, changes the segment under the mouse to a window. If enabled in settings, also changes hovered Foundry walls."
+      },
+      "SetHoveredSegmentInvisible": {
+        "Name": "Set hovered Indy wall segment to Invisible",
+        "Hint": "While editing an Indy wall shape, changes the segment under the mouse to an invisible wall. If enabled in settings, also changes hovered Foundry walls."
+      },
+      "SetHoveredSegmentSecret": {
+        "Name": "Set hovered Indy wall segment to Secret Door",
+        "Hint": "While editing an Indy wall shape, changes the segment under the mouse to a secret door. If enabled in settings, also changes hovered Foundry walls."
+      },
+      "SetHoveredSegmentTerrain": {
+        "Name": "Set hovered Indy wall segment to Terrain",
+        "Hint": "While editing an Indy wall shape, changes the segment under the mouse to terrain. If enabled in settings, also changes hovered Foundry walls."
+      },
+      "CycleHoveredSegmentCurve": {
+        "Name": "Cycle hovered Indy wall segment curve mode",
+        "Hint": "While editing a cubic or polyline Indy wall shape, cycles the curve mode for the segment under the mouse."
+      }
+    },
+    "Shortcuts": {
+      "Save": "Save or create the current shape.",
+      "Cancel": "Cancel the current editing.",
+      "UndoRedo": "Undo or redo editor changes.",
+      "DeleteShape": "Delete the active edited shape.",
+      "WallTypeHotkeys": "Set the hovered segment wall type.",
+      "SetWallType": "Set hovered segment to {type}.",
+      "Unassigned": "Unassigned",
+      "Levels": "Use the level selector to set v14 wall levels.",
+      "CubicDrag": "Move endpoints or curve handles.",
+      "CubicToggleMode": "Toggle the curve between arc and Bezier.",
+      "CurveSegments": "Change generated curve segment count.",
+      "SegmentShowHide": "Show or hide the hovered segment.",
+      "EllipseDrag": "Resize, reshape, or rotate from handles and vertices.",
+      "EllipseCircle": "Place as a circle.",
+      "EllipseFromCenter": "Place outward from the center point.",
+      "RectangleAddRestore": "Add a vertex / restore a hidden segment.",
+      "RectangleGap": "Hide the hovered side segment.",
+      "RectangleRemoveVertex": "Remove an intermediate side vertex.",
+      "RectangleDrag": "Resize or move side vertices.",
+      "PolylineAddPoint": "Add the next polyline point.",
+      "PolylineAddRestore": "Add a point or restore a hidden segment.",
+      "PolylineCycleCurve": "Cycle a segment between line, arc, and Bezier.",
+      "PolylineRemoveHide": "Remove a point or hide a segment.",
+      "PolylineCurveSegments": "Change detail for the hovered curve segment, or global curve detail when not over one.",
+      "PolylineDrag": "Move points or curve handles."
+    },
+    "Tooltips": {
+      "CubicBezier": "Click-drag to place the curve, then drag the red endpoints or green handles. Press C while hovering the curve to toggle between arc and Bezier modes. Use plus/minus or Ctrl-wheel to adjust segment count, Enter to create walls, or Escape to cancel.",
+      "Ellipse": "Click-drag to place the ellipse, hold Alt for a circle, or hold Ctrl to grow from the center. Use plus/minus or Ctrl-wheel to adjust segment count, Enter to create walls, or Escape to cancel.",
+      "Rectangle": "Click-drag to place the rectangle. Left-click a side to add a vertex, restore a gapped segment, or restore a removed side. Alt-click a segment to create a gap, Alt-click a vertex to remove it, drag vertices to reposition them, Enter creates walls, and Escape cancels.",
+      "Polyline": "Click to place each vertex. Left-click a segment to add a point or restore a hidden segment, press C while hovering a segment to cycle line/arc/Bezier modes, drag curve handles to shape arcs and Beziers, Ctrl-scroll changes curved segment detail, Alt-click hides segments or removes points, Enter creates walls, and Escape cancels.",
+      "ConvertToIndyWalls": "Scans plain Foundry walls in the current scene and previews Indy shape metadata. Adjust tolerance, then Save to convert or Cancel to discard. Axis-aligned closed rectangles are converted to Indy rectangles first; remaining connected wall paths are converted to Indy polylines.",
+      "RegionsToIndyWalls": "Creates Indy wall shapes from selected Region shapes. If no Regions are selected, every Region in the scene is used. Region rectangles become Indy rectangles, ellipses and circles become Indy ellipses, and polygons become closed Indy polylines.",
+      "RegionConversionDetail": "Number of generated wall segments used for circles and ellipses in Region conversion previews.",
+      "CleanupWalls": "Snaps nearby wall endpoints together, smart-extends or trims endpoints to nearby wall segments, splits non-door plain walls at intersections, optionally simplifies noisy plain wall paths within tolerance, deletes collapsed walls, and removes duplicate lines with matching wall data. Indy shape endpoint metadata is updated where possible, but curve handles are left unchanged."
+    },
+    "Notifications": {
+      "WallTypesUpdated": "Indy Walls | Updated {count} selected wall(s).",
+      "CubicWallsCreated": "Indy Walls | Created {count} curved wall segment(s).",
+      "EllipseWallsCreated": "Indy Walls | Created {count} ellipse wall segment(s).",
+      "RectangleWallsCreated": "Indy Walls | Created {count} rectangle wall segment(s).",
+      "PolylineWallsCreated": "Indy Walls | Created {count} polyline wall segment(s).",
+      "SceneNotReady": "Indy Walls | Canvas scene is not ready.",
+      "NoWallsToConvert": "Indy Walls | No plain walls found to convert.",
+      "WallsConvertedToIndy": "Indy Walls | Converted {count} wall(s) into {rectangles} rectangle(s), {ellipses} ellipse(s), and {polylines} polyline(s).",
+      "NoRegionsToConvert": "Indy Walls | No Regions found to convert.",
+      "NoRegionShapesToConvert": "Indy Walls | No supported Region shapes found to convert.",
+      "RegionWallsCreated": "Indy Walls | Created {count} wall segment(s) from {regions} Region(s): {rectangles} rectangle(s), {ellipses} ellipse(s), and {polylines} polyline(s).",
+      "NoWallsToClean": "Indy Walls | No walls found to clean.",
+      "WallsAlreadyClean": "Indy Walls | No wall cleanup changes were needed.",
+      "WallsCleaned": "Indy Walls | Cleaned walls: snapped or adjusted {snapped} endpoint(s), split {split} wall(s), simplified {simplified} wall segment(s), created {created} wall(s), updated {updated} wall(s), deleted {deleted} duplicate, simplified, or collapsed wall(s)."
+    }
+  }
+}

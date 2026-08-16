@@ -1,0 +1,77 @@
+{
+  "IMPTHEATER": {
+    "Settings": {
+      "RoomState": {
+        "Name": "房间状态"
+      },
+      "ShowLauncher": {
+        "Name": "显示 Imp Theater 启动器",
+        "Hint": "客户端设置：在画布上显示剧场小按钮。"
+      },
+      "AutoOpenOnPlay": {
+        "Name": "播放开始时自动打开",
+        "Hint": "客户端设置：当 GM 开始播放时自动打开剧场窗口。"
+      },
+      "SyncTolerance": {
+        "Name": "同步容差（秒）",
+        "Hint": "客户端设置：仅当直连媒体偏移超过该值时才会校正。"
+      },
+      "LocalVolume": {
+        "Name": "本地音量"
+      },
+      "WindowState": {
+        "Name": "窗口状态"
+      }
+    },
+    "UI": {
+      "Launcher": "剧场",
+      "ToggleTitle": "打开或隐藏 Imp Theater",
+      "SourceUrl": "源 URL",
+      "SourcePlaceholder": "Foundry 文件路径、直连媒体 URL 或 YouTube 链接",
+      "SourceType": "来源",
+      "SourceAuto": "自动",
+      "SourceDirect": "直连媒体",
+      "SourceYoutube": "YouTube 嵌入",
+      "MediaKind": "媒体",
+      "MediaAuto": "自动",
+      "MediaVideo": "视频",
+      "MediaAudio": "音频",
+      "Title": "标题",
+      "TitlePlaceholder": "可选标题",
+      "Load": "加载",
+      "Play": "播放",
+      "Pause": "暂停",
+      "Stop": "停止",
+      "Sync": "同步",
+      "Previous": "上一个",
+      "Next": "下一个",
+      "Playlists": "播放列表",
+      "PlaylistName": "播放列表名称",
+      "CreatePlaylist": "创建播放列表",
+      "NoPlaylists": "还没有播放列表",
+      "AddPlaylist": "添加曲目",
+      "DeletePlaylist": "删除文件夹",
+      "PlaylistEmpty": "所选播放列表为空。",
+      "PlayPlaylist": "从播放列表播放",
+      "RemovePlaylist": "从播放列表移除",
+      "Close": "关闭",
+      "Untitled": "未命名媒体",
+      "NoSource": "无来源",
+      "Playing": "播放中",
+      "Paused": "已暂停",
+      "YoutubeNote": "YouTube 嵌入已同步，但每位玩家仍需能够直接访问 YouTube。",
+      "Empty": "GM 可以加载 Foundry 文件、直连媒体 URL 或 YouTube 嵌入链接。",
+      "LocalVolume": "本地音量",
+      "GlobalVolume": "全局音量",
+      "Loop": "循环",
+      "LoopTitle": "重复播放当前媒体"
+    },
+    "Notifications": {
+      "SourceRequired": "Imp Theater：请先添加源 URL。",
+      "PlaylistNameRequired": "Imp Theater：请输入播放列表名称。",
+      "PlaylistRequired": "Imp Theater：请先创建或选择播放列表。",
+      "MediaError": "Imp Theater：无法加载媒体源。",
+      "ClickToPlay": "Imp Theater：浏览器自动播放被阻止。请在剧场窗口中点击播放。"
+    }
+  }
+}

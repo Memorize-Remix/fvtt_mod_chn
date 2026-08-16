@@ -1,0 +1,34 @@
+{
+    "simraki-cursed-items": {
+        "BlockUnequip": "You cannot unequip a cursed item",
+        "BlockUnattune": "You cannot unattune from a cursed item",
+        "Cursed": "Cursed",
+        "CursedItemTitle": "Curse Details",
+        "CursedItemDescHint": "The curse description is located in the \"Description\" tab",
+        "CursedItemReveal": "Reveal Curse",
+        "CursedItemDescTitle": "Curse Description",
+        "CursedItemEffectTitle": "Curse Effect",
+        "CursedItemEffectDesc": "This effect is shown only after the item is identified and the curse is revealed",
+        "CursedStage": {
+            "None": "No curse",
+            "Unrevealed": "Unrevealed curse",
+            "Revealed": "Revealed curse"
+        },
+        "Settings": {
+            "ShowUnrevealedCursedEffects": {
+                "Name": "Show unrevealed cursed effects",
+                "Hint": "Show effects from both revealed and unrevealed curses"
+            },
+            "RequireAttunement": {
+                "Name": "Curses require attunement",
+                "Hint": "Does not affect existing curses on items without attunement - they remain active"
+            },
+            "BlockUnequip": {
+                "Name": "Prevent unequipping cursed items"
+            },
+            "BlockUnattune": {
+                "Name": "Prevent breaking attunement from cursed items"
+            }
+        }
+    }
+}

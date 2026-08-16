@@ -1,4 +1,5 @@
-{"fameosity": {
+{
+  "fameosity": {
     "settings": {
       "reputationSettings": {
         "name": "声望设置",
@@ -205,7 +206,34 @@
       "unnest": "从父级移除",
       "add-child": "添加子元素",
       "add-to-tracking": "添加到跟踪",
-      "announce-wanted": "宣布通缉状态并通知所有人"
+      "announce-wanted": "宣布通缉状态并通知所有人",
+      "cycle-mode": "切换模式（自动 / 混合 / 手动）",
+      "toggle-hidden": "切换可见性",
+      "add-relation": "添加关系",
+      "add-faction-relation": "添加派系关系",
+      "add-faction-to-faction-relation": "添加派系关系",
+      "add-member": "添加成员",
+      "add-rank": "添加等级",
+      "delete-rank": "删除等级",
+      "remove-member": "移除成员",
+      "toggle-member-hidden": "切换成员可见性",
+      "remove-relation": "移除关系",
+      "toggle-relation-hidden": "切换关系可见性",
+      "increase-rep": "增加声望",
+      "decrease-rep": "减少声望",
+      "open-sheet": "打开角色表",
+      "edit-description": "编辑描述",
+      "add-child-location": "添加子地点",
+      "add-child-faction": "添加子派系",
+      "set-controller": "设置控制派系",
+      "clear-controller": "清除控制派系",
+      "add-faction-to-location": "添加派系",
+      "add-actor-to-location": "添加角色",
+      "remove-from-location": "从地点移除",
+      "toggle-location-item-hidden": "在地点中切换可见性",
+      "create-location": "创建地点",
+      "create-faction": "创建派系",
+      "add-actor": "添加角色"
     },
     "errors": {
       "saveFailed": "保存声望数据失败",
@@ -230,7 +258,7 @@
     },
     "ui": {
       "type": "类型",
-      "description-placeholder": "描述...",
+      "description-placeholder": "输入描述……支持 @UUID 和 @Embed",
       "player-characters": "玩家角色",
       "active-characters": "小队成员",
       "npcs": "角色",
@@ -241,7 +269,9 @@
       "no-active-party-player": "你不属于任何活跃小队。",
       "personal-reputation": "个人声望",
       "custom-type-name-placeholder": "自定义类型名称...",
-      "current-active-party": "活跃小队"
+      "current-active-party": "活跃小队",
+      "edit-description": "编辑描述",
+      "no-description": "无描述"
     },
     "creator": {
       "title-location": "创建地点",

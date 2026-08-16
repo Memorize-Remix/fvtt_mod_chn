@@ -1,0 +1,75 @@
+{
+	"yendorsUserPasswords": {
+		"notifications": {
+			"error": {
+				"passwordNoMatch": "The passwords do not match.",
+				"updateFailed": "The password could not be saved. Please try a different password.",
+				"noEmptyPassword": "An empty password is not allowed."
+			},
+			"success": {
+				"passwordUpdated": "The password has been saved successfully.",
+				"reset": "The password for user <strong>{user}</strong> has been reset.",
+				"resetRequestNew": "The password for user <strong>{user}</strong> has been reset. A new password will be required on the next login.",
+				"requestNew": "A new password will be required for user <strong>{user}</strong> on the next login."
+			}
+		},
+		"dialogs": {
+			"setPassword": {
+				"title": "Change Password",
+				"new": "New Password",
+				"confirm": "Confirm Password",
+				"show": "Show Passwords",
+				"save": "Save"
+			},
+			"requestPasswords": {
+				"title": "Request New Passwords",
+				"content": "On the next login, the affected players will be required to set a new password.",
+				"buttons": {
+					"all": "All including GM",
+					"players": "Players Only",
+					"cancel": "Cancel"
+				}
+			},
+			"passwordManager": {
+				"title": "Password Manager",
+				"pending": "Waiting for new password",
+				"buttons": {
+					"reset": "Reset",
+					"request": "Request New",
+					"edit": "Edit"
+				}
+			},
+			"passwordReset": {
+				"title": "Reset Password",
+				"content": "Resetting the password will remove it. Login will then be possible without a password. Additionally, the user can be required to set a new password.",
+				"reset": "Reset",
+				"requestNew": "Reset & Request New",
+				"cancel": "Cancel",
+				"initial": "Initial Password"
+			}
+		},
+		"contextMenu": {
+			"updatePassword": "Change Password"
+		},
+		"settings": {
+			"allowEmptyPasswords": {
+				"name": "Allow Empty Passwords",
+				"hint": "Are users allowed to set an empty password (no password required for login)?"
+			},
+			"changePassword": {
+				"name": "Change Own Password",
+				"hint": "Your own password can be changed here.",
+				"label": "Change Passwords"
+			},
+			"passwordManager": {
+				"name": "Password Manager",
+				"hint": "Overview of users with the ability to reset passwords, request new ones, and view their status.",
+				"label": "Manage Passwords"
+			},
+			"requestPasswordForNewUsers": {
+				"name": "Password Prompt for New Users",
+				"hint": "Should new users be required to set a new password after their first login?"
+			}
+		}
+	}
+}

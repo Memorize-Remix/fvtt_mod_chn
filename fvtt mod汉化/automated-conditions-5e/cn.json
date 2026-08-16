@@ -1,32 +1,33 @@
-{"AC5E.AutomateStatuses": {
-		"Name": "自动处理D&D5E状态效果",
-		"Hint": "启用后，AC5E将根据系统状态自动计算优/劣势和掷骰模式调整。"
+{
+	"AC5E.AutomateStatuses": {
+		"Name": "D&D 5e 状态规则",
+    "Hint": "为 D&D 5e 状态启用 AC5E 处理，在 D&D 5e 系统内置的优势模式自动化基础上，扩展了更广泛、更精确的规则处理，尤其是对攻击检定。"
 	},
-	"AC5E.ShowTooltipsName": "显示 AC5e 提示",
-	"AC5E.ShowTooltipsHint": "当选择相关选项时，AC5e 将在悬停在建议的掷骰按钮或生成的消息上时显示有用的提示，总结该建议的原因。",
+	"AC5E.ShowTooltipsName": "显示 AC5E 提示",
+	"AC5E.ShowTooltipsHint": "在掷骰对话框、聊天消息或两者中显示 AC5E 提示，解释建议结果背后的原因。",
 	"AC5E.ShowToolTipsChoicesBoth": "掷骰对话框和聊天消息",
 	"AC5E.ShowToolTipsChoicesDialog": "仅在掷骰对话框上",
 	"AC5E.ShowToolTipsChoicesChat": "仅在聊天消息上",
 	"AC5E.ShowToolTipsChoicesNone": "不显示",
-	"AC5E.ShowModuleNameInTooltipsName": "在提示中显示模组名称",
-    "AC5E.ShowTooltipChatVisibility.Name": "为以下内容显示聊天提示",
-    "AC5E.ShowTooltipChatVisibility.Hint": "'全部' - 所有角色掷骰, '无' - 不显示, '拥有' - 仅自己拥有的角色掷骰, '玩家' - 仅玩家角色掷骰; (GM全部可见)",
-    "AC5E.ShowTooltipChatVisibility.All": "全部",
-    "AC5E.ShowTooltipChatVisibility.None": "无",
-    "AC5E.ShowTooltipChatVisibility.Owned": "拥有",
-    "AC5E.ShowTooltipChatVisibility.Players": "玩家",
+	"AC5E.ShowModuleNameInTooltipsName": "在提示框中显示模组名称",
+	"AC5E.ShowTooltipChatVisibility.Name": "为以下内容显示聊天提示",
+	"AC5E.ShowTooltipChatVisibility.Hint": "选择谁的掷骰会显示 AC5E 聊天提示。GM 始终能看到所有提示。",
+	"AC5E.ShowTooltipChatVisibility.All": "全部",
+	"AC5E.ShowTooltipChatVisibility.None": "无",
+	"AC5E.ShowTooltipChatVisibility.Owned": "拥有",
+	"AC5E.ShowTooltipChatVisibility.Players": "玩家",
 	"AC5E.ExpandedConditionsName": "扩展状态",
-	"AC5E.ExpandedConditionsHint": "启用后，AC5e 将尝试自动化一些额外的状态，例如撤离、躲藏。",
+	"AC5E.ExpandedConditionsHint": "为额外状态与战斗状态启用自动化，例如闪避、躲藏、狂暴施法限制以及水下战斗。",
 	"AC5E.VisibilityChecksSetting": {
-		"Name": "可见性检查",
-		"Hint": "启用后，AC5e 将注入'无法看见目标'/'目标无法看见攻击者'选项，并让这些条目驱动攻击的优势/劣势，而不仅仅依赖于目盲/隐形状态。当 MidiQOL 已应用其可选的隐形/隐藏攻击者规则时，这些选项将被抑制，以避免重复计算原因。"
+		"Name": "可见性规则",
+		"Hint": "基于 Token 的视觉与感官使用 AC5E 攻击可见性规则。启用后，AC5E 会添加“无法看见目标”和“目标无法看见攻击者”攻击原因。当 MidiQOL 已应用其隐形或隐藏攻击者规则时，将跳过这些原因。"
 	},
-	"AC5E.ActivityUse" : {
-		"Name": "物品使用检定",
-		"Hint": "允许、强制（取消+通知）或警告（允许+通知）。检查：失能时的动作；狂暴、沉默或护甲不熟练时的施法",
+	"AC5E.ActivityUse": {
+		"Name": "物品使用规则",
+		"Hint": "控制 AC5E 在掷骰前是允许、警告还是阻止无效的行动使用。适用于使用阶段的检查，例如失能动作、施法限制以及非攻击性超出范围失败。攻击超出范围失败会在稍后使用所选攻击模式进行攻击检定配置时处理。",
 		"Choices": {
 			"Off": "允许",
-			"Enforce": "强制执行",
+			"Enforce": "按情况阻止/失败",
 			"Warn": "警告提示"
 		},
 		"Type": {
@@ -46,44 +47,44 @@
 				"Enforce": "处于沉默状态，无法施放含言语成分的法术。法术已取消！",
 				"Warn": "处于沉默状态，无法施放含言语成分的法术。"
 			}
-		}		
+		}
 	},
 	"AC5E.AutoRangeChecks": {
-		"Name": "自动范围检查",
-		"Hint": "近战对角线触及：无论使用何种对角线规则，所有相邻方格都视为在触及范围内。近战超出范围：超出武器触及范围的攻击失败。远程临近敌人：攻击者相邻的敌对目标会使远程攻击具有劣势。远程长距离劣势：超出常规射程但在最大射程范围内的攻击具有劣势。远程超出范围：超出最大射程范围的攻击失败。",
+		"Name": "射程规则",
+		"Hint": "启用自动化的近战与远程射程规则，包括近战触及、超出范围失败、临近敌人劣势以及长距离劣势。近战对角线触及将所有相邻方格视为处于触及范围内，覆盖对角线网格距离规则。超出范围失败在验证射程时应用：非攻击行动在使用时，攻击行动在使用所选攻击模式进行攻击检定配置时。",
 		"MeleeDiagonals": "近战对角线触及",
 		"MeleeOutOfRange": "近战超出范围",
 		"RangedNearbyFoes": "远程临近敌人",
 		"RangedLongDisadvantage": "远程长距离劣势",
 		"RangedOutOfRange": "远程超出范围"
 	},
-	"AC5E.AutoExhaustionName": "力竭自动化",
-	"AC5E.AutoExhaustionHint": "启用后，如果你使用的是旧版 dnd5e 规则，AC5e 将自动处理标准的 5e 力竭状态规则。",
+	"AC5E.AutoExhaustionName": "力竭规则",
+	"AC5E.AutoExhaustionHint": "使用旧版 D&D 5e 规则时启用 AC5E 的力竭处理。",
 	"AC5E.AutoEncumbranceName": "变体负重规则",
-	"AC5E.AutoEncumbranceHint": "启用后，AC5e 将自动处理 5e 变体负重规则。GM 还必须在 Dnd5e 系统的设置中选择变体（重载 & 超载）选项，否则此设置无效。",
+	"AC5E.AutoEncumbranceHint": "在 AC5E 中启用变体负重处理。GM 还必须启用 D&D 5e 系统的变体（负重与重载）选项，否则此设置将无效。",
 	"AC5E.Targeting": {
-		"Name": "攻击标记选项",
-		"Hint": "当攻击未选择目标或选择多个目标时，设定AC5e系统的响应方式",
+		"Name": "攻击目标规则",
+		"Hint": "控制在未选择目标或选择多个目标时 AC5E 如何处理攻击检定。",
 		"Choices": {
-			"Source": "仅依据来源角色状态",
+			"Source": "忽略目标状态与标志",
 			"Enforce": "沉默取消掷骰",
 			"Warn": "警告提示并取消掷骰"
 		},
 		"MultipleTargetsAttack": {
-			"Source": "AC5e：选中多个目标，结果可能存在偏差。仅使用来源角色数据。",
-			"Enforce": "AC5e：选中多个目标，已取消掷骰！"
+			"Source": "AC5E：已选择多个目标。结果可能有偏差。仅使用来源角色数据。",
+			"Enforce": "AC5E：已选择多个目标。掷骰已取消！"
 		},
 		"NoTargetsAttack": {
-			"Source": "AC5e：未选择目标，优劣势状态可能不准确。仅使用来源角色数据。",
-			"Enforce": "AC5e：未选择目标，已取消掷骰！"
+			"Source": "AC5E：未选择目标。优势/劣势可能不准确。仅使用来源角色数据。",
+			"Enforce": "AC5E：未选择目标。掷骰已取消！"
 		}
 	},
-	"AC5E.DebuggingName": "AC5e 调试",
-	"AC5E.DebuggingHint": "仅用于开发时调试的一些有用日志。对用户来说可能没什么意义 :)",
+	"AC5E.DebuggingName": "AC5E 调试日志",
+	"AC5E.DebuggingHint": "启用用于开发与故障排除的额外 AC5E 调试日志。",
 	"AC5E.TokenlessActorWarning": {
-		"Hint": "该模组不影响当前场景中没有Token的角色进行的掷骰！",
-		"Name": "显示无Token角色警告",
-		"Text": "AC5E警告：你正在掷骰的角色在场景中没有Token。结果可能不准确"
+		"Hint": "为当前场景中没有 Token 的角色掷骰时显示警告。",
+		"Name": "显示无 Token 角色警告",
+		"Text": "AC5E 警告：正在掷骰的角色在场景中没有 Token。结果可能不准确。"
 	},
 	"AC5E.Statuses": {
 		"UnderwaterCombat": "水下战斗"
@@ -109,20 +110,20 @@
 	"AC5E.NearbyFoe": "附近敌人",
 	"AC5E.ButtonColorPicker": {
 		"Enabled": {
-			"Name": "彩色按钮",
-			"Hint": "让你的掷骰对话框按钮更醒目。默认颜色：#288bcc（背景）、白色（文字/边框）。输入user将使用game.user.color（最适合背景色）。输入false/none/null/0可关闭任意颜色选择器。删除任何字段将回退至默认值。"
+			"Name": "自定义掷骰按钮颜色",
+			"Hint": "自定义掷骰对话框的按钮颜色。将字段留空以使用默认值。使用 'user' 以使用 game.user.color。使用 'false'、'none'、'null' 或 '0' 来禁用单个颜色覆盖。"
 		},
 		"Background": {
-			"Name": "🎨 按钮背景颜色",
-			"Hint": "删除输入中的任何字符串以默认使用game.user.color"
+			"Name": "按钮背景颜色",
+			"Hint": "留空以使用 game.user.color。"
 		},
 		"Border": {
-			"Name": "🖍️ 按钮边框颜色",
-			"Hint": "删除输入中的任何字符串以默认使用白色"
+			"Name": "按钮边框颜色",
+			"Hint": "留空以使用白色。"
 		},
 		"Text": {
-			"Name": "🔤 按钮文字颜色",
-			"Hint": "删除输入中的任何字符串以默认使用白色"
+			"Name": "按钮文本颜色",
+			"Hint": "留空以使用白色。"
 		}
 	},
 	"AC5E.AdvantageKeypress": "优势按键",
@@ -136,8 +137,8 @@
 	"AC5E.ForcedAdvantage": "系统强制优势",
 	"AC5E.ForcedDisadvantage": "系统强制劣势",
 	"AC5E.NoAdvantage": "不会具有优势",
-	"AC5E.NoDisadvantage": "不会承受劣势",
 	"AC5E.NoCritical": "不会大成功",
+	"AC5E.NoDisadvantage": "不会承受劣势",
 	"AC5E.TargetGrantsNoAdvantage": "与该目标对抗的生物不会具有优势",
 	"AC5E.TargetGrantsNoCritical": "与该目标对抗的生物不会大成功",
 	"AC5E.TargetGrantsNoDisadvantage": "与该目标对抗的生物不会承受劣势",
@@ -152,69 +153,69 @@
 	"AC5E.Grants": "与该目标对抗",
 	"AC5E.Attacker": "攻击者",
 	"AC5E.Flags": "标志",
-    "AC5E.FlagsInitiativeAdv": "先攻系统优势",
-    "AC5E.FlagsInitiativeDisadv": "先攻系统劣势",
+	"AC5E.FlagsInitiativeAdv": "先攻系统优势",
+	"AC5E.FlagsInitiativeDisadv": "先攻系统劣势",
 	"AC5E.TargetGrantsAdvantageAbbreviated": "与该目标对抗的生物具有优势",
 	"AC5E.TargetGrantsDisadvantageAbbreviated": "与该目标对抗的生物承受劣势",
 	"AC5E.TargetGrantsCriticalAbbreviated": "与该目标对抗的生物必定大成功",
-	"AC5E.TargetGrantsExtraDice": "与该目标对抗的生物获得额外骰子",
 	"AC5E.TargetGrantsFail": "与该目标对抗的生物进行的检定失败",
 	"AC5E.TargetGrantsFumble": "与该目标对抗的生物进行的检定大失败",
 	"AC5E.TargetGrantsSuccess": "与该目标对抗的生物进行的检定成功",
 	"AC5E.TargetGrantsBonus": "与该目标对抗的生物获得加值",
 	"AC5E.TargetGrantsModifier": "与该目标对抗的生物掷骰公式修饰符调整",
+	"AC5E.TargetGrantsExtraDice": "与该目标对抗的生物获得额外骰子",
 	"AC5E.NoChanges": "无变化",
 	"AC5E.SystemMode": "系统模式",
-  "AC5E.OptinDescription.Roll.Attack": "攻击检定",
-  "AC5E.OptinDescription.Roll.Damage": "伤害掷骰",
-  "AC5E.OptinDescription.Roll.Check": "属性检定",
-  "AC5E.OptinDescription.Roll.Save": "豁免检定",
-  "AC5E.OptinDescription.Roll.Generic": "掷骰",
-  "AC5E.OptinDescription.GrantsAdvantage": "为{roll}提供优势",
-  "AC5E.OptinDescription.ImposesDisadvantage": "为{roll}施加劣势",
-  "AC5E.OptinDescription.RemovesAdvantage": "移除{roll}的优势",
-  "AC5E.OptinDescription.RemovesDisadvantage": "移除{roll}的劣势",
-  "AC5E.OptinDescription.ForcesCritical": "强制造成重击",
-  "AC5E.OptinDescription.PreventsCritical": "防止重击",
-  "AC5E.OptinDescription.ForcesFailure": "强制{roll}自动失败",
-  "AC5E.OptinDescription.ForcesFumble": "强制大失败",
-  "AC5E.OptinDescription.ForcesSuccess": "强制{roll}自动成功",
-  "AC5E.OptinDescription.SetsRollBonus": "将{roll}加值设为{value}",
-  "AC5E.OptinDescription.AppliesRollBonus": "为{roll}应用{value}加值",
-  "AC5E.OptinDescription.ModifiesRollBonus": "调整{roll}加值",
-  "AC5E.OptinDescription.SetsTargetAC": "将目标AC设为{value}",
-  "AC5E.OptinDescription.ModifiesTargetACBy": "将目标AC调整{value}",
-  "AC5E.OptinDescription.ModifiesTargetAC": "调整目标AC",
-  "AC5E.OptinDescription.SetsMinimumD20": "将D20最小结果设为{value}",
-  "AC5E.OptinDescription.SetsMaximumD20": "将D20最大结果设为{value}",
-  "AC5E.OptinDescription.AppliesRollModifier": "应用掷骰调整值",
-  "AC5E.OptinDescription.AppliesRollModifierWithValue": "应用掷骰调整值（{value}）",
-  "AC5E.OptinDescription.SetsMinimumDiceRoll": "将掷骰最小结果设为 {value}",
-  "AC5E.OptinDescription.SetsMaximumDiceRoll": "将掷骰最大结果设为 {value}",
-  "AC5E.OptinDescription.AppliesDiceRollModifier": "应用掷骰修饰",
-  "AC5E.OptinDescription.AppliesDiceRollModifierWithValue": "应用掷骰修饰（{value}）",
-  "AC5E.OptinDescription.SetsCriticalThreshold": "将重击阈值设为{value}",
-  "AC5E.OptinDescription.ModifiesCriticalThreshold": "调整重击阈值",
-  "AC5E.OptinDescription.SetsFumbleThreshold": "将大失败阈值设为{value}",
-  "AC5E.OptinDescription.ModifiesFumbleThreshold": "调整大失败阈值",
-  "AC5E.OptinDescription.AddsExtraDamageDice": "增加额外伤害骰",
-  "AC5E.OptinDescription.AddsExtraDamageDiceWithValue": "增加额外伤害骰（{value}）",
-  "AC5E.OptinDescription.UpgradesDamageDice": "增大伤害骰",
-  "AC5E.OptinDescription.UpgradesDamageDiceWithValue": "增大伤害骰（{value}）",
-  "AC5E.OptinDescription.DowngradesDamageDice": "减小伤害骰",
-  "AC5E.OptinDescription.DowngradesDamageDiceWithValue": "减小伤害骰（{value}）",
-  "AC5E.OptinDescription.ModifiesAttackRange": "调整攻击距离行为",
-  "AC5E.OptinDescription.FinalStandDropsTo": "最终站立（降至{value}）",
-  "AC5E.Chance.Triggered": "已触发",
-  "AC5E.Chance.TriggeredWithRoll": "已触发（掷出{roll}）",
-  "AC5E.OptinCadence.OncePerTurn": "（每回合1次）",
-  "AC5E.OptinCadence.OncePerRound": "（每轮1次）",
-  "AC5E.OptinCadence.OncePerCombat": "（每场战斗1次）",
-  "AC5E.OptinLegend.Optional": "AC5E",
+	"AC5E.OptinDescription.Roll.Attack": "攻击检定",
+	"AC5E.OptinDescription.Roll.Damage": "伤害掷骰",
+	"AC5E.OptinDescription.Roll.Check": "属性检定",
+	"AC5E.OptinDescription.Roll.Save": "豁免检定",
+	"AC5E.OptinDescription.Roll.Generic": "掷骰",
+	"AC5E.OptinDescription.GrantsAdvantage": "为{roll}提供优势",
+	"AC5E.OptinDescription.ImposesDisadvantage": "为{roll}施加劣势",
+	"AC5E.OptinDescription.RemovesAdvantage": "移除{roll}的优势",
+	"AC5E.OptinDescription.RemovesDisadvantage": "移除{roll}的劣势",
+	"AC5E.OptinDescription.ForcesCritical": "强制造成重击",
+	"AC5E.OptinDescription.PreventsCritical": "防止重击",
+	"AC5E.OptinDescription.ForcesFailure": "强制{roll}自动失败",
+	"AC5E.OptinDescription.ForcesFumble": "强制大失败",
+	"AC5E.OptinDescription.ForcesSuccess": "强制{roll}自动成功",
+	"AC5E.OptinDescription.SetsRollBonus": "将{roll}加值设为{value}",
+	"AC5E.OptinDescription.AppliesRollBonus": "为{roll}应用{value}加值",
+	"AC5E.OptinDescription.ModifiesRollBonus": "调整{roll}加值",
+	"AC5E.OptinDescription.SetsTargetAC": "将目标AC设为{value}",
+	"AC5E.OptinDescription.ModifiesTargetACBy": "将目标AC调整{value}",
+	"AC5E.OptinDescription.ModifiesTargetAC": "调整目标AC",
+	"AC5E.OptinDescription.SetsMinimumD20": "将D20最小结果设为{value}",
+	"AC5E.OptinDescription.SetsMaximumD20": "将D20最大结果设为{value}",
+	"AC5E.OptinDescription.AppliesRollModifier": "应用掷骰调整值",
+	"AC5E.OptinDescription.AppliesRollModifierWithValue": "应用掷骰调整值（{value}）",
+	"AC5E.OptinDescription.SetsMinimumDiceRoll": "将掷骰最小结果设为 {value}",
+	"AC5E.OptinDescription.SetsMaximumDiceRoll": "将掷骰最大结果设为 {value}",
+	"AC5E.OptinDescription.AppliesDiceRollModifier": "应用掷骰修饰",
+	"AC5E.OptinDescription.AppliesDiceRollModifierWithValue": "应用掷骰修饰（{value}）",
+	"AC5E.OptinDescription.SetsCriticalThreshold": "将重击阈值设为{value}",
+	"AC5E.OptinDescription.ModifiesCriticalThreshold": "调整重击阈值",
+	"AC5E.OptinDescription.SetsFumbleThreshold": "将大失败阈值设为{value}",
+	"AC5E.OptinDescription.ModifiesFumbleThreshold": "调整大失败阈值",
+	"AC5E.OptinDescription.AddsExtraDamageDice": "增加额外伤害骰",
+	"AC5E.OptinDescription.AddsExtraDamageDiceWithValue": "增加额外伤害骰（{value}）",
+	"AC5E.OptinDescription.UpgradesDamageDice": "增大伤害骰",
+	"AC5E.OptinDescription.UpgradesDamageDiceWithValue": "增大伤害骰（{value}）",
+	"AC5E.OptinDescription.DowngradesDamageDice": "减小伤害骰",
+	"AC5E.OptinDescription.DowngradesDamageDiceWithValue": "减小伤害骰（{value}）",
+	"AC5E.OptinDescription.ModifiesAttackRange": "调整攻击距离行为",
+	"AC5E.OptinDescription.FinalStandDropsTo": "最终站立（降至{value}）",
+	"AC5E.Chance.Triggered": "已触发",
+	"AC5E.Chance.TriggeredWithRoll": "已触发（掷出{roll}）",
+	"AC5E.OptinCadence.OncePerTurn": "（每回合1次）",
+	"AC5E.OptinCadence.OncePerRound": "（每轮1次）",
+	"AC5E.OptinCadence.OncePerCombat": "（每场战斗1次）",
+	"AC5E.OptinLegend.Optional": "AC5E",
 	"AC5E.OptinLegend.FromOtherSources": "来自其他来源的AC5E（需请求权限）",
 	"AC5E.EnvironmentalHazards": {
-		"SettingsName": "环境危害(2024)",
-		"SettingsHint": "根据2024 D&D 5e规则集自动化燃烧和窒息状态",
+		"SettingsName": "环境危害规则",
+		"SettingsHint": "使用 2024 D&D 5e 规则集时启用自动化的燃烧与窒息处理。",
 		"BurningHazard": "燃烧危害",
 		"SuffocatingHazard": "窒息"
 	},
@@ -247,15 +248,15 @@
 		"flags.automated-conditions-5e.attack.fumbleThreshold": {
 			"name": "调整攻击的大失败阈值",
 			"description": "使用 threshold=5 增加5点，或 set=15 将值设为15。可以使用掷骰数据、骰子公式和评估条件"
-		  },
-		  "flags.automated-conditions-5e.grants.attack.fumbleThreshold": {
+		},
+		"flags.automated-conditions-5e.grants.attack.fumbleThreshold": {
 			"name": "被攻击时，调整攻击者攻击的大失败阈值",
 			"description": "使用 threshold=-5 降低5点或 set=15 设置为15。可以使用掷骰数据、骰子公式和评估条件"
-		  },
-		  "flags.automated-conditions-5e.aura.attack.fumbleThreshold": {
+		},
+		"flags.automated-conditions-5e.aura.attack.fumbleThreshold": {
 			"name": "光环：调整范围内生物攻击的大失败阈值",
 			"description": "使用 radius=15;threshold=-5 降低5点或 radius=20;set=15 设置为15。可以使用掷骰数据、骰子公式和评估条件"
-		  },
+		},
 		"flags.automated-conditions-5e.damage.extraDice": {
 			"name": "增加或减少掷骰的骰子数量",
 			"description": "使用 bonus=4 增加4个骰子数量"
@@ -267,6 +268,18 @@
 		"flags.automated-conditions-5e.aura.damage.extraDice": {
 			"name": "光环：增加或减少范围内生物掷骰的骰子数量",
 			"description": "使用 bonus=2; radius=10 在10距离单位半径内生物掷骰的骰子数量增加 2"
+		},
+		"flags.automated-conditions-5e.damage.typeOverride": {
+			"name": "覆盖基础伤害掷骰的伤害类型集合",
+			"description": "使用 set=fire 强制一种类型，或使用 set=fire,lightning,thunder 提供多种类型。addTo=... 仅匹配基础伤害部分的目标。"
+		},
+		"flags.automated-conditions-5e.grants.damage.typeOverride": {
+			"name": "为对手的基础伤害掷骰授予伤害类型覆盖",
+			"description": "使用 set=fire 强制一种类型，或使用 set=fire,lightning,thunder 提供多种类型。addTo=... 仅匹配基础伤害部分的目标。"
+		},
+		"flags.automated-conditions-5e.aura.damage.typeOverride": {
+			"name": "光环：在半径内覆盖基础伤害掷骰的伤害类型集合",
+			"description": "使用 radius=10;set=fire 或 radius=10;set=fire,lightning,thunder。addTo=... 仅匹配基础伤害部分的目标。"
 		},
 		"flags.automated-conditions-5e.modifyAC": {
 			"name": "调整角色的AC",
@@ -444,17 +457,17 @@
 		}
 	},
 	"AC5E.Info": "信息",
-    "AC5E.OptinDescription.AppliesNonRollEffect": "对 {roll} 施加非掷骰效果",
-    "AC5E.advantageBehaviorOverride": {
-        "Name": "覆盖系统优势/劣势处理",
-        "Hint": "启用后，AC5E 将抑制原生优势/劣势掷骰，并将临时优势/劣势转换为下方公式。"
-    },
-    "AC5E.advantageBehaviorAdvantageFormula": {
-        "Name": "优势奖励公式",
-        "Hint": "当存在临时优势且覆盖启用时应用。例如：+3d6kh1 或 2。"
-    },
-    "AC5E.advantageBehaviorDisadvantageFormula": {
-        "Name": "劣势惩罚公式",
-        "Hint": "当存在临时劣势且覆盖启用时应用。例如：-3d6kh1 或 -2。"
-    }
+	"AC5E.OptinDescription.AppliesNonRollEffect": "对 {roll} 施加非掷骰效果",
+	"AC5E.advantageBehaviorOverride": {
+		"Name": "覆盖系统优势处理",
+		"Hint": "启用后，AC5E 将抑制原生优势/劣势掷骰，并将临时优势/劣势转换为下方公式。"
+	},
+	"AC5E.advantageBehaviorAdvantageFormula": {
+		"Name": "优势加值公式",
+		"Hint": "当存在临时优势且覆盖启用时应用。例如：+3d6kh1 或 2。"
+	},
+	"AC5E.advantageBehaviorDisadvantageFormula": {
+		"Name": "劣势减值公式",
+		"Hint": "当存在临时劣势且覆盖启用时应用。例如：-3d6kh1 或 -2。"
+	}
 }

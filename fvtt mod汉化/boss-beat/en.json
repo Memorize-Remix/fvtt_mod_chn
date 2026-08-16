@@ -1,0 +1,51 @@
+{
+  "BOSSBEAT": {
+    "WindowTitle": "Boss Beat: {name}",
+    "Message": "Name",
+    "SubText": "Subtext",
+    "BarStyle": "Boss Bar Style",
+    "NoStyle": "— none —",
+    "SplashOnly": "Splash only, no Boss Bar",
+    "SplashOnlyHint": "Show the splash and reveal the token, but do not put this boss on the Boss Bar. The bar style above still sets the splash font.",
+    "OutroPlaylist": "Playlist After Song",
+    "NoOutroPlaylist": "— none —",
+    "OutroPlaylistHint": "Starts this playlist once the boss track ends or you hit Stop. Whatever playlist track was already playing gets paused (not stopped) the moment the boss track starts.",
+    "Song": "Song",
+    "NoSong": "No song selected",
+    "ChooseFile": "Choose File",
+    "SetMarker": "Set Marker Here",
+    "Marker": "Marker: {time}",
+    "Save": "Save Boss Beat",
+    "SelectOneToken": "Boss Beat: select exactly one boss token first.",
+    "NoActor": "Boss Beat: selected token has no actor.",
+    "AlreadySaved": "A Boss Beat is already saved for {name}. What would you like to do?",
+    "AlreadySavedTitle": "Boss Beat: {name}",
+    "Run": "Run",
+    "Edit": "Edit",
+    "Delete": "Delete",
+    "Cancel": "Cancel",
+    "ConfirmDeleteTitle": "Delete Boss Beat",
+    "ConfirmDelete": "Delete the saved Boss Beat for {name}? This can't be undone.",
+    "Deleted": "Boss Beat: deleted saved beat for {name}.",
+    "Saved": "Boss Beat saved for {name}.",
+    "PickSongFirst": "Boss Beat: pick a song before saving.",
+    "PlaybackError": "Boss Beat: couldn't play \"{path}\". Check the file still exists.",
+    "NoSavedConfig": "Boss Beat: no saved beat for {name} yet - use the toolbar button to set one up first.",
+    "CreateMacro": "Create Macro",
+    "MacroName": "Boss Beat: {name}",
+    "MacroCreated": "Boss Beat: created the \"{name}\" macro - drag it from the Macro Directory to your hotbar.",
+    "HpProfileApplied": "Boss Beat: pointed Boss Bar's health bar at {system}'s own HP fields.",
+    "HpProfileAppliedLive": "Boss Beat: pointed Boss Bar's health bar at {system}'s own HP fields. A bar already on screen keeps its old fill until the boss next takes damage, or until you reload.",
+    "HpProfileRestored": "Boss Beat: gave Boss Bar's health settings back - set them yourself under Boss Bar.",
+    "Settings": {
+      "FixBossBarHp": {
+        "Name": "Set Boss Bar's health bar for this game system",
+        "Hint": "Boss Bar reads HP from a dot-path that only fits D&D-style systems, so on Daggerheart the bar reads nothing. With this on, Boss Beat sets Boss Bar's Current HP Path, Max HP Path and Wounds System to the right values for Pathfinder 2e, D&D 5e or Daggerheart, and re-applies them on load - so those three Boss Bar settings are Boss Beat's while it's on. Turn it off to set them by hand; your previous values come back."
+      },
+      "HideBossBarButton": {
+        "Name": "Hide Boss Bar's toolbar button",
+        "Hint": "Removes Boss Bar's own scene-control button, since Boss Beat's config form already covers assigning a bar style per boss."
+      }
+    }
+  }
+}

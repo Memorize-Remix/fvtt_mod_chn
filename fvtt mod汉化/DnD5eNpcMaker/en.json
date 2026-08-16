@@ -1,0 +1,168 @@
+{
+  "NpcBuilder": {
+    "SignIn": {
+      "Opening": "Opening Patreon sign-in…",
+      "Complete": "Patreon sign-in complete.",
+      "Failed": "Sign-in failed."
+    },
+    "SignOut": {
+      "Success": "Signed out."
+    },
+    "Auth": {
+      "Failed": "Authentication failed."
+    },
+    "Session": {
+      "Missing": "Session missing. Please sign in again.",
+      "Expired": "Your session has expired — please sign in again."
+    },
+    "Generate": {
+      "NotSignedIn": "Please sign in with Patreon before generating.",
+      "AlreadyInProgress": "A generation is already in progress.",
+      "FormNotFound": "Builder form not found.",
+      "Success": "\"{name}\" created successfully!"
+    },
+    "Create": {
+      "Failed": "Failed to create \"{name}\": {error}"
+    },
+    "Undo": {
+      "None": "No recent generation to undo.",
+      "Deleted": "\"{name}\" deleted.",
+      "Failed": "Failed to delete \"{name}\": {error}"
+    },
+    "Export": {
+      "None": "No {noun} has been generated yet.",
+      "Done": "Exported {filename}."
+    },
+    "ImageGen": {
+      "Title": "Generate NPC Image",
+      "NotSignedIn": "Please sign in with Patreon before generating an image.",
+      "NoNpc": "No {noun} available — generate or open one first.",
+      "NotSupported": "Image generation is not supported in this module.",
+      "Generating": "Generating NPC image… this may take a moment.",
+      "Confirm": "Generate Image",
+      "Cancel": "Cancel",
+      "SetSuccess": "Image set for \"{name}\"!",
+      "SavedSuccess": "NPC image saved: {path}",
+      "SentSuccess": "Image generation request sent successfully.",
+      "Failed": "Image generation failed: {error}"
+    },
+    "ImageConfirm": {
+      "ForName": "Generate an image for {name}?",
+      "CostNote": "This will use {cost} NPC uses from your monthly allowance.",
+      "ArtStyle": "Art style: {style}"
+    },
+    "ClearHistory": {
+      "Title": "Clear History",
+      "Content": "<p>Delete all history entries? This cannot be undone.</p>",
+      "Confirm": "Clear All",
+      "Cancel": "Cancel"
+    },
+    "QuickEdit": {
+      "Title": "Quick-Edit: {name}",
+      "Hint": "Fix any details before the sheet opens:",
+      "Confirm": "Apply & Open Sheet"
+    },
+    "RawData": {
+      "Title": "Download Raw Data",
+      "Content": "<p>The AI generated data but Foundry rejected the document. Download the raw JSON to keep it?</p>",
+      "Confirm": "Download JSON",
+      "Cancel": "Dismiss"
+    },
+    "Feedback": {
+      "MissingMessage": "Please enter a feedback message before sending.",
+      "Success": "Feedback sent! Thank you.",
+      "Failed": "Failed to send feedback. Please try again."
+    },
+    "Settings": {
+      "ResetWelcome": {
+        "Name": "Reset Welcome Message",
+        "Label": "Reset",
+        "Hint": "Show the welcome message again on the next world reload.",
+        "ConfirmContent": "Reset the welcome message so it appears again on the next reload?",
+        "ConfirmLabel": "Reset",
+        "Success": "Welcome message will show again on the next reload."
+      },
+      "ClearSession": {
+        "Name": "Clear Stored Session",
+        "Label": "Clear Session",
+        "Hint": "Remove the stored Patreon session key. You will need to sign in again.",
+        "ConfirmContent": "Remove the stored Patreon session key? You will need to sign in again.",
+        "ConfirmLabel": "Clear Session",
+        "Success": "Session key cleared. Please sign in again."
+      }
+    }
+  },
+  "SettlementBuilder": {
+    "Settings": {
+      "IncomeJitter": {
+        "Name": "Income Variance (%)",
+        "Hint": "How much random variance to apply to each store's daily income. 0 = fixed, 15 = ±15% (default), 50 = ±50%."
+      },
+      "HighContrast": {
+        "Name": "High-Contrast Theme",
+        "Hint": "Replace the parchment palette on settlement and nation sheets with a strong-contrast dark theme for improved readability."
+      },
+      "ArmyTravelDays": {
+        "Name": "Army Travel Days",
+        "Hint": "Days a field army takes to march between any two settlements (#75)."
+      },
+      "ResetWelcome": {
+        "Name": "Reset Welcome Message",
+        "Label": "Reset",
+        "Hint": "Show the settlement builder welcome message again on the next world reload.",
+        "ConfirmContent": "Reset the welcome message so it appears again on the next reload?",
+        "ConfirmLabel": "Reset",
+        "Success": "Welcome message will show again on the next reload."
+      },
+      "ClearSettlements": {
+        "Name": "Clear Stored Session",
+        "Label": "Clear Session",
+        "Hint": "Remove the stored Patreon session key for the Settlement Builder.",
+        "ConfirmContent": "Remove the stored session key? You will need to sign in again.",
+        "ConfirmLabel": "Clear Session",
+        "Success": "Session key cleared. Please sign in again."
+      },
+      "ResetCalendar": {
+        "Name": "Reset Calendar to Default",
+        "Label": "Reset Calendar",
+        "Hint": "Reset the Pf2eCalendarTimeline to the default Golarion calendar and clear all scheduled events.",
+        "ConfirmContent": "Reset the calendar to the default Golarion settings? This will clear all scheduled events and cannot be undone.",
+        "ConfirmLabel": "Reset Calendar",
+        "NotActive": "Pf2eCalendarTimeline is not installed or active.",
+        "Success": "Calendar reset to default Golarion settings."
+      },
+      "FixtureSheet": {
+        "Name": "Open Fixture Settlement (QA)",
+        "Label": "Open Fixture Sheet",
+        "Hint": "GM only — opens a temporary pre-filled settlement sheet for QA testing. The journal is deleted automatically when the sheet is closed."
+      },
+      "CreateArmy": {
+        "Name": "Create Army",
+        "Label": "New Army",
+        "Hint": "Name the new army"
+      },
+      "HireMercenaries": {
+        "Name": "Hire Mercenary Company",
+        "Label": "Hire Mercenaries",
+        "Hint": "Pay a settlement's treasury to hire a preset mercenary company for a fixed contract length (#81).",
+        "NotActive": "Pf2eCalendarTimeline is not installed or active — it's needed to track the contract length.",
+        "NoSettlements": "No settlements available to pay for the contract.",
+        "ConfirmLabel": "Hire"
+      },
+      "ImportPrebuilt": {
+        "Hint": "Choose a preset",
+        "ConfirmLabel": "Import"
+      },
+      "ImportPrebuiltSettlement": {
+        "Name": "Import Prebuilt Settlement",
+        "Label": "Import Settlement",
+        "Hint": "Drop in one of 10 ready-made settlements without spending AI credits."
+      },
+      "ImportPrebuiltNation": {
+        "Name": "Import Prebuilt Nation",
+        "Label": "Import Nation",
+        "Hint": "Drop in one of 5 ready-made nations without spending AI credits."
+      }
+    }
+  }
+}

@@ -1,653 +1,680 @@
-{"Rideable": {
-        "Titles": {
-            "Rideable": "可骑乘",
-            "WorldSettings": "世界设置(仅GM)",
-            "ClientSettings": "客户端设置",
-            "GMonly": "仅GM",
-            "Tile": "图块",
-            "RequiresRL": "可骑乘功能需要激活<a href=\"https://foundryvtt.com/packages/routinglib\">routinglib</a>模组才能使Token跟随功能正常工作"
-        },
-        
-        "Settings": {
-            "defaultRideable": {
-                "name": "默认可骑乘",
-                "descrp": "是否默认所有Token都可骑乘(可在每个Token的设置中更改)"
-            },
-            
-            "allowTileRiding": {
-                "name": "图块可骑乘",
-                "descrp": "是否允许骑乘图块，就像骑乘Token一样"
-            },
-            
-            "allowMountingonEntering": {
-                "name": "允许进入时骑乘",
-                "descrp": "允许设置Token和图块在被其他Token进入其空间时自动骑乘"
-            },
-            
-            "LocknKeyintegration": {
-                "name": "Lock & Key集成",
-                "descrp": "允许可骑乘Token被锁定"
-            },
-            
-            "DFredsEffectsIntegration": {
-                "name": "DCE集成",
-                "descrp": "允许对骑乘和擒抱的Token应用特定效果"
-            },
-            
-            "CPREffectsIntegration": {
-                "name": "CPR集成",
-                "descrp": "允许对骑乘和擒抱的Token应用特定效果"
-            },
-            
-            "TaggerMountingIntegration": {
-                "name": "Tagger骑乘集成",
-                "descrp": "允许通过Tagger标签骑乘和下乘Token(tag: \"Rideable:{RiderTokenID}\")"
-            },
-            
-            "CheckRiderCollision": {
-                "name": "检查骑手碰撞",
-                "descrp": "检查骑手碰撞并相应调整位置"
-            },
-            
-            "RidingHeight": {
-                "name": "骑乘高度",
-                "descrp": "骑乘Token相对于坐骑的z轴高度(建议大于0)"
-            },
-            
-            "useRidingHeight": {
-                "name": "默认使用骑乘高度",
-                "descrp": "Token是否默认使用骑乘高度"
-            },
-            
-            "useRiddenTokenHeight": {
-                "name": "使用Token高度",
-                "descrp": "使用被骑乘Token的高度(通过\"Wall-Height\"模组添加)而非设置的\"骑乘高度\""
-            },
-            
-            "MountingDistance": {
-                "name": "骑乘距离",
-                "descrp": "Token可骑乘目标的最大距离(-1表示无限距离)"
-            },
-            
-            "UseArmReachDistance": {
-                "name": "使用\"Arms Reach\"",
-                "descrp": "使用\"Arms Reach\"中设置的距离作为骑乘距离"
-            },
-            
-            "BorderDistance": {
-                "name": "边缘到边缘距离",
-                "descrp": "是否应从Token边缘而非中心点计算骑乘距离(仅对圆形/方形Token有效)"
-            },
+{
+	"Rideable" : {
+		"Titles" : {
+			"Rideable"					: "可骑乘",
+			"WorldSettings"				: "世界设置(仅GM)",
+			"ClientSettings"			: "客户端设置",
+			"GMonly"					: "仅GM",
+			"Tile"						: "图块",
+			"RequiresRL"				: "可骑乘功能需要激活<a href=\"https://foundryvtt.com/packages/routinglib\">routinglib</a>模组才能使Token跟随功能正常工作" 
+		},
+		
+		"Settings" : {
+			"defaultRideable" : {
+				"name" 					: "默认可骑乘",
+				"descrp"				: "是否默认所有Token都可骑乘(可在每个Token的设置中更改)"
+			},
+			
+			"allowTileRiding" : {
+				"name" 					: "图块可骑乘",
+				"descrp"				: "是否允许骑乘图块，就像骑乘Token一样"
+			},
+			
+			"allowMountingonEntering" : {
+				"name" 					: "允许进入时骑乘",
+				"descrp"				: "允许设置Token和图块在被其他Token进入其空间时自动骑乘"
+			},
+			
+			"LocknKeyintegration" : {
+				"name" 					: "Lock & Key集成",
+				"descrp"				: "允许可骑乘Token被锁定"
+			},
+			
+			"DFredsEffectsIntegration" : {
+				"name" 					: "DCE集成",
+				"descrp"				: "允许对骑乘和擒抱的Token应用特定效果"
+			},
+			
+			"CPREffectsIntegration" : {
+				"name" 					: "CPR集成",
+				"descrp"				: "允许对骑乘和擒抱的Token应用特定效果"
+			},
+			
+			"TaggerMountingIntegration" : {
+				"name" 					: "Tagger骑乘集成",
+				"descrp"				: "允许通过Tagger标签骑乘和下乘Token(tag: \"Rideable:{RiderTokenID}\")"
+			},
+			
+			"CheckRiderCollision" : {
+				"name" 					: "检查骑手碰撞",
+				"descrp"				: "检查骑手碰撞并相应调整位置"
+			},
+			
+			"RidingHeight" : {
+				"name" 					: "骑乘高度",
+				"descrp"				: "骑乘Token相对于坐骑的z轴高度(建议大于0)"
+			},
+			
+			"useRidingHeight" : {
+				"name" 					: "默认使用骑乘高度",
+				"descrp"				: "Token是否默认使用骑乘高度"
+			},
+			
+			"useRiddenTokenHeight" : {
+				"name" 					: "使用Token高度",
+				"descrp"				: "使用被骑乘Token的高度(通过\"Wall-Height\"模组添加)而非设置的\"骑乘高度\""
+			},
+			
+			"MountingDistance" : {
+				"name" 					: "骑乘距离",
+				"descrp"				: "Token可骑乘目标的最大距离(-1表示无限距离)"
+			},
+			
+			"UseArmReachDistance": {
+				"name" 					: "使用\"Arms Reach\"",
+				"descrp"				: "使用\"Arms Reach\"中设置的距离作为骑乘距离"	
+			},
+			
+			"BorderDistance" : {
+				"name" 					: "边缘到边缘距离",
+				"descrp"				: "是否应从Token边缘而非中心点计算骑乘距离(仅对圆形/方形Token有效)"
+			},
 
-            "MaxRiders": {
-                "name": "每个Token的最大骑手数",
-                "descrp": "一个Token可被骑乘的最大Token数(-1表示无限)"
-            },
+			"MaxRiders" : {
+				"name" 					: "每个Token的最大骑手数",
+				"descrp"				: "一个Token可被骑乘的最大Token数(-1表示无限)"
+			},
 
-            "RiderMovementworlddefault": {
-                "name": "骑手移动默认设置",
-                "descrp": "玩家骑手移动的默认设置(不覆盖现有设置)"
-            },        
+			"RiderMovementworlddefault" : {
+				"name" 					: "骑手移动默认设置",
+				"descrp"				: "玩家骑手移动的默认设置(不覆盖现有设置)"
+			},		
 
-            "MountButtonDefaultPosition": {
-                "name": "骑乘按钮默认位置",
-                "descrp": "骑乘按钮位置的默认设置(不覆盖现有设置)"
-            },                    
+			"MountButtonDefaultPosition" : {
+				"name" 					: "骑乘按钮默认位置",
+				"descrp"				: "骑乘按钮位置的默认设置(不覆盖现有设置)"
+			},					
 
-            "RiderMovement": {
-                "name": "骑手移动",
-                "descrp": "当骑乘Token尝试自行移动时的处理方式",
-                "options": {
-                    "worlddefault": "使用世界默认设置",
-                    "disallow": "阻止移动",
-                    "dismount": "解除骑乘",
-                    "moveridden": "移动被骑乘Token(如果拥有)"
-                }
-            },
-            
-            "MountButtonPosition": {
-                "name": "骑乘按钮位置",
-                "descrp": "骑乘按钮的位置",
-                "options": {
-                    "default": "使用世界默认设置",
-                    "none": "无按钮",
-                    "left": "左侧",
-                    "right": "右侧"
-                }
-            },
-            
-            "RiderProxySelect": {
-                "name": "骑手代理选择",
-                "descrp": "是否应选择被骑乘Token或骑手而非所选Token",
-                "options": {
-                    "never": "从不",
-                    "familiar": "仅魔宠",
-                    "always": "总是",
-                    "allRiders": "所有骑手",
-                    "ctrl": "按CTRL时"
-                }
-            },
-            
-            "RiderRotation": {
-                "name": "链接旋转",
-                "descrp": "当被骑乘Token旋转时旋转所有骑手(与\"移动被骑乘Token\"选项配合使用)"
-            },
-
-
-			"TeleportRiders": {
-				"name": "传送骑乘者",
-				"descrp": "当被骑乘的token移动时，是否应将骑乘token传送而非移动",
-				"options": {
-					  "off": "关闭",
-					  "familiaronly": "仅限魔宠",
-					  "all": "所有骑乘者"
+			"RiderMovement" : {
+				"name" 					: "骑手移动",
+				"descrp"				: "当骑乘Token尝试自行移动时的处理方式",
+				"options" : {
+					"worlddefault"		: "使用世界默认设置",
+					"disallow"			: "阻止移动",
+					"dismount"			: "解除骑乘",
+					"moveridden"		: "移动被骑乘Token(如果拥有)"
 				}
 			},
-        
-            "RidingSystemEffects": {
-                "name": "应用\"骑乘\"效果",
-                "descrp": "当Token开始骑乘时，将应用系统相关效果"
-            },
-            
-            "CustomRidingEffects": {
-                "name": "自定义骑乘效果",
-                "descrp": "Token开始骑乘时应用的效果(名称或ID，用\";\"分隔)"
-            },            
-            
-            "RideableTag": {
-                "name": "\"可骑乘\"特性",
-                "descrp": "允许具有'可骑乘'特性的Token被骑乘(需在设置>PF2>管理房规元素>生物特性中手动添加\"可骑乘\"特性)"
-            },
-            
-            "FamiliarRiding": {
-                "name": "魔宠骑乘",
-                "descrp": "允许魔宠骑乘其主人，魔宠将被放置在主人的角落"
-            },
-            
-            "FamiliarRidingFirstCorner": {
-                "name": "魔宠骑乘位置",
-                "descrp": "魔宠占据的第一个角落",
-                "options": {
-                    "tl": "左上",
-                    "tr": "右上",
-                    "bl": "左下",
-                    "br": "右下"
-                }
-            },
-            
-            "Grappling": {
-                "name": "擒抱",
-                "descrp": "允许Token相互擒抱(被擒抱Token只能由擒抱Token解除)"
-            },
-            
-            "GrapplingSystemEffects": {
-                "name": "应用\"擒抱\"效果",
-                "descrp": "当Token被擒抱时，将应用系统相关效果"
-            },
-            
-            "CustomGrapplingEffects": {
-                "name": "自定义擒抱效果",
-                "descrp": "Token被擒抱时应用的效果(名称或ID，用\";\"分隔)"
-            },
-            
-            "StopGrappleonEffectRemoval": {
-                "name": "效果移除时停止擒抱",
-                "descrp": "当擒抱效果被移除时是否应立即释放Token"
-            },
-            
-            "GrappleplacementDefault": {
-                "name": "擒抱位置默认",
-                "descrp": "Token擒抱的标准位置",
-                "options": {
-                    "RowBelow": "下方",
-                    "RowAbove": "上方",
-                    "RowMiddle": "中间",
-                    "ClosestInside": "内部",
-                    "Following": "跟随"
-                }
-            },
-            
-            "PreventEnemyRiding": {
-                "name": "阻止骑乘敌人",
-                "descrp": "阻止Token骑乘敌对Token(GM仍可覆盖此设置)"
-            },
-            
-            "FitRidersize": {
-                "name": "调整骑手大小",
-                "descrp": "当骑手大小大于或等于被骑乘Token时调整骑手大小"
-            },
-            
-            "FitRiderSizeFactor": {
-                "name": "骑手大小调整系数",
-                "descrp": "当骑手大小大于或等于被骑乘Token时调整骑手大小的系数"
-            },
-            
-            "RiderScaleFactor": {
-                "name": "骑手缩放系数",
-                "descrp": "应用于骑手的缩放比例(仅视觉)"
-            },
-            
-            "MountingWeight": {
-                "name": "骑乘重量",
-                "descrp": "为坐骑添加一个物品来表示骑乘Token的重量",
-                "options": {
-                    "off": "关闭",
-                    "mountsonly": "仅常规坐骑",
-                    "all": "所有坐骑(包括魔宠骑乘)"
-                }
-            },
-            
-            "InitiativeLink": {
-                "name": "先攻链接",
-                "descrp": "总是将坐骑放在骑手之后在先攻列表中",
-                "options": {
-                    "off": "关闭",
-                    "mountsonly": "仅常规坐骑",
-                    "all": "所有坐骑(魔宠骑乘时相反)"
-                }
-            },
-            
-            "SpeedAdjustment": {
-                "name": "速度调整",
-                "descrp": "将骑手的移动速度调整为坐骑的速度(仅在骑乘效果激活时有效)",
-                "options": {
-                    "off": "关闭",
-                    "mountsonly": "仅常规坐骑",
-                    "all": "所有坐骑"
-                }
-            },
-        
-            "MessagePopUps": {
-                "name": "消息弹窗",
-                "descrp": "在骑乘或下乘等操作时启用多个弹窗"
-            },        
-            
-            "OnlyownedMessagePopUps": {
-                "name": "仅自己消息弹窗",
-                "descrp": "仅显示你控制的Token的消息弹窗"
-            },
-
+			
+			"MountButtonPosition" : {
+				"name" 					: "骑乘按钮位置",
+				"descrp"				: "骑乘按钮的位置",
+				"options" : {
+					"default"			: "使用世界默认设置",
+					"none"				: "无按钮",
+					"left"				: "左侧",
+					"right"				: "右侧"
+				}
+			},
+			
+			"RiderProxySelect" : {
+				"name"					: "骑手代理选择",
+				"descrp"				: "是否应选择被骑乘Token或骑手而非所选Token",
+				"options" : {
+					"never"				: "从不",
+					"familiar"			: "仅魔宠",
+					"always"			: "总是",
+					"allRiders"			: "所有骑手",
+					"ctrl"				: "按CTRL时"
+				}
+			},
+			
+			"RiderRotation" : {
+				"name" 					: "链接旋转",
+				"descrp"				: "当被骑乘Token旋转时旋转所有骑手(与\"移动被骑乘Token\"选项配合使用)"				
+			},
+			
+			"TeleportRiders" : {
+				"name" 					: "传送骑乘者",
+				"descrp"				: "当被骑乘的token移动时，是否应将骑乘token传送而非移动",
+				"options" : {
+					"off" 				: "关闭",
+					"familiaronly"		: "仅限魔宠",
+					"all"				: "所有骑乘者"
+				}
+			},
+		
+			"RidingSystemEffects" : {
+				"name" 					: "应用\"骑乘\"效果",
+				"descrp"				: "当Token开始骑乘时，将应用系统相关效果"				
+			},
+			
+			"CustomRidingEffects" : {
+				"name" 					: "自定义骑乘效果",
+				"descrp"				: "Token开始骑乘时应用的效果(名称或ID，用\";\"分隔)"				
+			},			
+			
+			"RideableTag" : {
+				"name" 					: "\"可骑乘\"特性",
+				"descrp"				: "允许具有'可骑乘'特性的Token被骑乘(需在设置>PF2>管理房规元素>生物特性中手动添加\"可骑乘\"特性)"				
+			},
+			
+			"RiderProxyPositionDefault" : {
+				"name"					: "默认骑手代理位置",
+				"descrp"				: "默认情况下，骑乘Token的距离是否根据被骑乘Token的位置计算。"
+			},
+			
+			"FamiliarRiding" : {
+				"name" 					: "魔宠骑乘",
+				"descrp"				: "允许魔宠骑乘其主人，魔宠将被放置在主人的角落"				
+			},
+			
+			"FamiliarRidingFirstCorner" : {
+				"name" 					: "魔宠骑乘位置",
+				"descrp"				: "魔宠占据的第一个角落",
+				"options" : {
+					"tl"				: "左上",
+					"tr"				: "右上",
+					"bl"				: "左下",
+					"br"				: "右下"
+				}
+			},
+			
+			"FamiliarRidingInside" : {
+				"name" 					: "将魔宠置于内部",
+				"descrp"				: "将魔宠放置在主人的Token内。"				
+			},
+			
+			"Grappling" : {
+				"name" 					: "擒抱",
+				"descrp"				: "允许Token相互擒抱(被擒抱Token只能由擒抱Token解除)"				
+			},
+			
+			"GrapplingSystemEffects" : {
+				"name" 					: "应用\"擒抱\"效果",
+				"descrp"				: "当Token被擒抱时，将应用系统相关效果"				
+			},
+			
+			"CustomGrapplingEffects" : {
+				"name" 					: "自定义擒抱效果",
+				"descrp"				: "Token被擒抱时应用的效果(名称或ID，用\";\"分隔)"				
+			},
+			
+			"StopGrappleonEffectRemoval" : {
+				"name"					: "效果移除时停止擒抱",
+				"descrp"				: "当擒抱效果被移除时是否应立即释放Token"
+			},
+			
+			"GrappleplacementDefault" : {
+				"name"					: "擒抱位置默认",
+				"descrp"				: "Token擒抱的标准位置",
+				"options" : {
+					"RowBelow"			: "下方",
+					"RowAbove"			: "上方",
+					"RowMiddle"			: "中间",
+					"ClosestInside"		: "内部",
+					"Following"			: "跟随"
+				}
+			},
+			
+			"PreventEnemyRiding" : {
+				"name" 					: "阻止骑乘敌人",
+				"descrp"				: "阻止Token骑乘敌对Token(GM仍可覆盖此设置)"				
+			},
+			
+			"FitRidersize" : {
+				"name" 					: "调整骑手大小",
+				"descrp"				: "当骑手大小大于或等于被骑乘Token时调整骑手大小"				
+			},
+			
+			"FitRiderSizeFactor" : {
+				"name" 					: "骑手大小调整系数",
+				"descrp"				: "当骑手大小大于或等于被骑乘Token时调整骑手大小的系数"				
+			},
+			
+			"RiderScaleFactor" : {
+				"name" 					: "骑手缩放系数",
+				"descrp"				: "应用于骑手的缩放比例(仅视觉)"	
+			},
+			
+			"MountingWeight" : {
+				"name" 					: "骑乘重量",
+				"descrp"				: "为坐骑添加一个物品来表示骑乘Token的重量",
+				"options" : {
+					"off"				: "关闭",
+					"mountsonly"		: "仅常规坐骑",
+					"all"				: "所有坐骑(包括魔宠骑乘)"
+				}
+			},
+			
+			"InitiativeLink" : {
+				"name" 					: "先攻链接",
+				"descrp"				: "总是将坐骑放在骑手之后在先攻列表中",
+				"options" : {
+					"off"				: "关闭",
+					"mountsonly"		: "仅常规坐骑",
+					"all"				: "所有坐骑(魔宠骑乘时相反)"
+				}
+			},
+			
+			"SpeedAdjustment" : {
+				"name" 					: "速度调整",
+				"descrp"				: "将骑手的移动速度调整为坐骑的速度(仅在骑乘效果激活时有效)",
+				"options" : {
+					"off"				: "关闭",
+					"mountsonly"		: "仅常规坐骑",
+					"all"				: "所有坐骑"
+				}
+			},
+		
+			"MessagePopUps" : {
+				"name" 					: "消息弹窗",
+				"descrp"				: "在骑乘或下乘等操作时启用多个弹窗"				
+			},		
+			
+			"OnlyownedMessagePopUps" : {
+				"name" 					: "仅自己消息弹窗",
+				"descrp"				: "仅显示你控制的Token的消息弹窗"				
+			},
+			
 			"UINotifications" : {
 				"name" 					: "界面通知",
 				"descrp"				: "在诸如骑乘或下乘等操作时启用多个界面通知"				
 			},
-		            
-            "EnableFollowing": {
-                "name": "启用Token跟随",
-                "descrp": "是否在当前世界激活Token跟随功能"
-            },
-            
-            "FollowingCompatibilityMode": {
-                "name": "Token跟随兼容模式",
-                "descrp": "此模式可防止或减少使用\"Drag Ruler\"等模组时的错误(改变跟随逻辑顺序)"
-            },
-            
-            "FollowingAlgorithm": {
-                "name": "跟随算法",
-                "descrp": "使用的跟随算法(安装routinglib可获得更多选项)",
-                "options": {
-                    "SimplePathHistory": "简单路径历史(简单，资源占用低)",
-                    "routinglib": "routinglib(高级，资源占用高，推荐)"
-                }
-            },
-            
-            "FollowingCombatBehaviour": {
-                "name": "战斗中跟随行为",
-                "descrp": "跟随Token在战斗中的行为",
-                "options": {
-                    "stop": "停止跟随",
-                    "stop-includefollowed": "停止跟随(考虑被跟随)",
-                    "resumeafter": "战斗后恢复",
-                    "resumeafter-includefollowed": "战斗后恢复(考虑被跟随)",
-                    "continue": "继续跟随"
-                }
-            },
-            
-            "OnlyfollowViewed": {
-                "name": "仅跟随可见",
-                "descrp": "是否仅跟随当前可见的Token"
-            },    
-            
-            "PreventFollowerStacking": {
-                "name": "防止跟随者堆叠",
-                "descrp": "是否防止同一Token的跟随者堆叠，在狭窄区域仍可能堆叠"
-            },    
-            
-            "OnFollowerMovement": {
-                "name": "跟随者移动",
-                "descrp": "当跟随Token尝试自行移动时的处理方式",
-                "options": {
-                    "stopfollowing": "停止跟随",
-                    "updatedistance": "更新跟随距离"
-                }
-            }            
-        },
-        
-        "Keys": {
-            "Mount": {
-                "name": "骑乘",
-                "descrp": "将控制的Token骑乘到目标Token(替代宏:\"Mount\")"
-            },
-            
-            "UnMount": {
-                "name": "下乘",
-                "descrp": "将控制的Token从其骑乘的Token下乘，或将目标Token从控制的Token下乘(替代宏:\"Unmount\")"
-            },
-            
-            "MountFamiliar": {
-                "name": "骑乘魔宠",
-                "descrp": "如果目标Token是主人，则将控制的魔宠骑乘到目标Token(替代宏:\"MountFamiliar\")(仅在设置\"魔宠骑乘\"激活时有效)"
-            },
-            
-            "GrappleTarget": {
-                "name": "擒抱/释放目标",
-                "descrp": "将目标Token束缚到控制的Token，只能由擒抱Token释放(替代宏:\"Grapple\")(仅在设置\"擒抱\"激活时有效)"
-            },
-            
-            "ToggleMount": {
-                "name": "切换骑乘",
-                "descrp": "将控制的Token骑乘到目标Token或从目标Token下乘"
-            },
-            
-            "ToggleGrapplePlacement": {
-                "name": "切换擒抱位置",
-                "descrp": "为所选Token切换擒抱Token的位置选项"
-            },
-            
-            "TogglePiloting": {
-                "name": "切换骑乘",
-                "descrp": "开始或停止骑乘当前骑乘的Token"
-            },
+			
+			"EnableFollowing" : {
+				"name"					: "启用Token跟随",
+				"descrp"				: "是否在当前世界激活Token跟随功能"
+			},
+			
+			"FollowingCompatibilityMode" : {
+				"name"					: "Token跟随兼容模式",
+				"descrp"				: "此模式可防止或减少使用\"Drag Ruler\"等模组时的错误(改变跟随逻辑顺序)"
+			},
+			
+			"FollowingAlgorithm" : {
+				"name"					: "跟随算法",
+				"descrp"				: "使用的跟随算法(安装routinglib可获得更多选项)",
+				"options" : {
+					"SimplePathHistory" : "简单路径历史(简单，资源占用低)",
+					"routinglib"		: "routinglib(高级，资源占用高，推荐)"
+				}
+			},
+			
+			"FollowingCombatBehaviour" : {
+				"name"					: "战斗中跟随行为",
+				"descrp"				: "跟随Token在战斗中的行为",
+				"options" : {
+					"stop"				: "停止跟随",
+					"stop-includefollowed"	: "停止跟随(考虑被跟随)",
+					"resumeafter"		: "战斗后恢复",
+					"resumeafter-includefollowed" : "战斗后恢复(考虑被跟随)",
+					"continue"			: "继续跟随"
+				}
+			},
+			
+			"OnlyfollowViewed" : {
+				"name"					: "仅跟随可见",
+				"descrp"				: "是否仅跟随当前可见的Token"
+			},	
+			
+			"PreventFollowerStacking" : {
+				"name"					: "防止跟随者堆叠",
+				"descrp"				: "是否防止同一Token的跟随者堆叠，在狭窄区域仍可能堆叠"
+			},	
+			
+			"OnFollowerMovement" : {
+				"name" 					: "跟随者移动",
+				"descrp"				: "当跟随Token尝试自行移动时的处理方式",
+				"options" : {
+					"stopfollowing"		: "停止跟随",
+					"updatedistance"	: "更新跟随距离"
+				}
+			}			
+		},
+		
+		"Keys" : {
+			"Mount" : {
+				"name" 					: "骑乘",
+				"descrp"				: "将控制的Token骑乘到目标Token(替代宏:\"Mount\")"
+			},
+			
+			"UnMount" : {
+				"name" 					: "下乘",
+				"descrp"				: "将控制的Token从其骑乘的Token下乘，或将目标Token从控制的Token下乘(替代宏:\"Unmount\")"
+			},
+			
+			"MountFamiliar" : {
+				"name" 					: "骑乘魔宠",
+				"descrp"				: "如果目标Token是主人，则将控制的魔宠骑乘到目标Token(替代宏:\"MountFamiliar\")(仅在设置\"魔宠骑乘\"激活时有效)"
+			},
+			
+			"GrappleTarget" : {
+				"name" 					: "擒抱/释放目标",
+				"descrp"				: "将目标Token束缚到控制的Token，只能由擒抱Token释放(替代宏:\"Grapple\")(仅在设置\"擒抱\"激活时有效)"
+			},
+			
+			"ToggleMount" : {
+				"name" 					: "切换骑乘",
+				"descrp"				: "将控制的Token骑乘到目标Token或从目标Token下乘"
+			},
+			
+			"ToggleGrapplePlacement" : {
+				"name"					: "切换擒抱位置",
+				"descrp"				: "为所选Token切换擒抱Token的位置选项"
+			},
+			
+			"TogglePiloting" : {
+				"name" 					: "切换骑乘",
+				"descrp"				: "开始或停止骑乘当前骑乘的Token"
+			},
 
-            "ToggleFollowing": {
-                "name": "切换跟随",
-                "descrp": "开始或停止所选Token跟随目标或被跟随Token"
-            },
+			"ToggleFollowing" : {
+				"name"					: "切换跟随",
+				"descrp"				: "开始或停止所选Token跟随目标或被跟随Token"
+			},
 
-            "ProxyTarget": {
-                "name": "代理目标",
-                "descrp": "如果可能，将悬停Token的坐骑设为目标"
-            }                
-        },
-        
-        "Popup": {
-            "Mounting": "骑乘{pRiddenName}",
-            "UnMounting": "下乘{pRiddenName}",
-            "MountingFamiliar": "跟随主人{pRiddenName}",
-            "UnMountingFamiliar": "停止跟随主人{pRiddenName}",
-            "PreventedRiderMove": "仍在骑乘{pRiddenName}",
-            "RidingLoop": "骑乘{pRiddenName}会很尴尬",
-            "NoPlace": "{pRiddenName}已无空位",
-            "EnemyRiding": "{pRiddenName}是我的敌人",
-            "Toofaraway": "{pRiddenName}距离太远",
-            "RiddenisLocked": "{pRiddenName}已锁定",
-            
-            "Grappling": "被{pRiddenName}擒抱",
-            "UnGrappling": "从{pRiddenName}释放",
-            "PreventedGrappledMove": "仍被{pRiddenName}擒抱",
-            
-            "cantPilot": "{pRiddenName}无法骑乘",
-            "startPiloting": "正在骑乘{pRiddenName}",
-            "stopPiloting": "停止骑乘{pRiddenName}",
-            "cantbeMoved": "{cantbeMoved}无法移动(可能已附加到某物)",
-            
-            "StopFollowing": "停止跟随",
-            "StartFollowing": "开始跟随{pFollowedName}",
-            "CantFollowinCombat": "战斗中无法跟随",
-            "TargetisFollowingMe": "{pFollowedName}已在跟随我",
-            
-            "PositionLocked": "位置已锁定",
-            "PositionUnlocked": "位置已解锁"
-        },    
-        
-        "TokenSettings": {
-            "MaxRiderFlag": {
-                "name": "最大骑手数",
-                "descrp": "覆盖此Token的全局设置(-1表示无限，留空恢复默认世界设置)"
-            },
-            
-            "MountonEnterFlag": {
-                "name": "进入时骑乘",
-                "descrp": "进入此Token/图块空间的Token将骑乘它"
-            },
-            
-            "AutoMountBlackListFlag": {
-                "name": "进入骑乘黑名单",
-                "descrp": "不会在进入时骑乘的Token名称、ID和角色ID(用\";\"分隔)"
-            },
-            
-            "AutoMountWhiteListFlag": {
-                "name": "进入骑乘白名单",
-                "descrp": "允许在进入时骑乘的Token名称、ID和角色ID(用\";\"分隔，留空忽略)"
-            },
-            
-            "RiderPositioningFlag": {
-                "name": "骑手定位",
-                "descrp": "骑手Token的放置模式",
-                "options": {
-                    "CirclePlacement": "圆形",
-                    "RowPlacement": "行",
-                    "BlockPlacement": "块",
-                    "ClusterPlacement": "簇",
-                    "RowPlacementTop": "上行",
-                    "RowPlacementBottom": "下行",
-                    "CornerPlacement": "角落",
-                    "CornerPlacementinner": "内角落",
-                    "MountPosition": "骑乘位置"
-                }
-            },
-            
-            "RiderOffsetFlag": {
-                "name": "骑手偏移",
-                "descrp": "骑手的放置偏移[以场景方格为单位]"
-            },
-            
-            "RiderRotOffsetFlag": {
-                "name": "骑手旋转偏移",
-                "descrp": "骑手的旋转偏移"
-            },
-            
-            "GrapplePlacementFlag": {
-                "name": "擒抱位置",
-                "descrp": "被擒抱Token的放置位置",
-                "options": {
-                    "RowBelow": "下方",
-                    "RowAbove": "上方",
-                    "RowMiddle": "中间",
-                    "ClosestInside": "内部",
-                    "Following": "跟随"
-                }
-            },
-            
-            "issetRideableFlag": {
-                "name": "Token可骑乘",
-                "descrp": "覆盖全局默认设置"
-            },
-            
-            "TileRideableNameFlag": {
-                "name": "图块名称",
-                "descrp": "可骑乘功能使用的此图块名称(如弹窗)"
-            },
-            
-            "TokenFormFlag": {
-                "name": "Token形状",
-                "descrp": "",
-                "options": {
-                    "TokenFormCircle": "圆形/椭圆",
-                    "TokenFormRectangle": "矩形",
-                    "TokenTransparency": "根据透明度",
-                    "TokenFormAttachedTiles": "根据附加Token/图块",
-                    "TileFormNone": "无形状/忽略"
-                }
-            },
-            
-            "CustomRidingheightFlag": {
-                "name": "自定义骑乘高度",
-                "descrp": "此Token的自定义高度，用于其骑手(留空使用默认值)"
-            },
-            
-            "UseRidingHeightFlag": {
-                "name": "使用骑乘高度",
-                "descrp": "管理此Token骑手的高度"
-            },
-            
-            "RidersScaleFlag": {
-                "name": "骑手缩放",
-                "descrp": "应用于此对象骑手的缩放比例(仅视觉)"
-            },
-            
-            "InsideMovementFlag": {
-                "name": "骑手可自由移动",
-                "descrp": "骑手是否可在此Token界内自由移动"
-            },
-            
-            "SpawnRidersFlag": {
-                "name": "生成骑手",
-                "descrp": "此Token生成的骑手(名称或ID，用\";\"分隔)"
-            },
-            
-            "MountingEffectsFlag": {
-                "name": "骑乘效果",
-                "descrp": "应用于此Token骑手的效果(名称或ID，用\";\"分隔)"
-            },
-            
-            "WorldMEffectOverrideFlag": {
-                "name": "覆盖世界效果",
-                "descrp": "用下方设置的效果覆盖世界标准效果(而非追加)"
-            },
-            
-            "SelfApplyEffectsFlag": {
-                "name": "自我应用骑乘效果",
-                "descrp": "此Token在骑乘时是否应应用自身的骑乘效果"
-            },
-            
-            "forMountEffectsFlag": {
-                "name": "骑乘效果",
-                "descrp": "应用于此Token骑乘的效果(名称或ID，用\";\"分隔)"
-            },
-            
-            "canbeGrappledFlag": {
-                "name": "可被擒抱",
-                "descrp": "此Token是否可被擒抱"
-            },
-            
-            "GrapplingEffectsFlag": {
-                "name": "擒抱效果",
-                "descrp": "应用于此Token擒抱目标的效果(名称或ID，用\";\"分隔)"
-            },
-            
-            "CanbePilotedFlag": {
-                "name": "可被骑乘",
-                "descrp": "玩家可骑乘此Token，即使他们不拥有它"
-            },
-            
-            "CheckPilotedCollisionFlag": {
-                "name": "骑乘时碰撞检测",
-                "descrp": "骑乘时是否计算此Token的碰撞(对带有附加墙的TA禁用)"
-            },
-            
-            "PilotedbyDefaultFlag": {
-                "name": "默认骑乘",
-                "descrp": "骑乘此Token的每个人是否自动骑乘它(与\"骑手可自由移动\"不兼容)"
-            }
-        },
-        
-        "RideableTag.str": "可骑乘",
-        
-        "Items": {
-            "MountItem": {
-                "name": "骑乘重量",
-                "descrp": "骑乘生物增加的重量:"
-            }
-        },
-        
-        "monks-active-tiles": {
-            "filters": {
-                "name": "过滤",
-                
-                "riders-of": {
-                    "name": "过滤坐骑的骑手",
-                    "descrp": "<span class=\"filter-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> {pCondition} 的 <span class=\"entity-style\">{pMount}</span>",
-                    "settings": {
-                        "mount": {
-                            "name": "骑乘"
-                        },
-                        
-                        "filterCondition": {
-                            "name": "骑乘状态条件:",
-                            "options": {
-                                "rider": "是骑手",
-                                "notrider": "不是骑手"
-                            }    
-                        }
-                    }
-                },
-                
-                "is-rider": {
-                    "name": "过滤骑手",
-                    "descrp": "<span class=\"filter-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> {pCondition}",
-                    "settings": {
-                        "filterCondition": {
-                            "name": "骑乘状态条件:",
-                            "options": {
-                                "rider": "是骑手",
-                                "notrider": "不是骑手"
-                            }    
-                        }
-                    }                    
-                },
-                
-                "is-ridden": {
-                    "name": "过滤被骑乘",
-                    "descrp": "<span class=\"filter-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> {pCondition}",
-                    "settings": {
-                        "filterCondition": {
-                            "name": "被骑乘状态条件:",
-                            "options": {
-                                "ridden": "被骑乘",
-                                "notridden": "未被骑乘"
-                            }    
-                        }
-                    }                    
-                }
-            },
-            
-            "actions": {
-                "mount-this-tile": {
-                    "name": "骑乘到此图块",
-                    "descrp": "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span>"
-                },
-                
-                "mount-target": {
-                    "name": "骑乘",
-                    "descrp": "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> 到 <span class=\"entity-style\">{pMount}</span>",
-                    "settings": {
-                        "target": {
-                            "name": "骑乘"
-                        }
-                    }
-                },
-                
-                "unmount": {
-                    "name": "下乘",
-                    "descrp": "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span>"
-                },
-                
-                "unmount-riders": {
-                    "name": "骑手下乘",
-                    "descrp": "<span class=\"logic-style\">{pname}</span> 的 <span class=\"entity-style\">{pEntities}</span>"
-                },
-                
-                "toggle-mount-target": {
-                    "name": "切换骑乘",
-                    "descrp": "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> 到 <span class=\"entity-style\">{pMount}</span>",
-                    "settings": {
-                        "target": {
-                            "name": "骑乘"
-                        }
-                    }
-                }
-            }
-        }
-    }
+			"ProxyTarget" : {
+				"name"					: "代理目标",
+				"descrp"				: "如果可能，将悬停Token的坐骑设为目标"
+			}				
+		},
+		
+		"Popup" : {
+			"Mounting"					: "骑乘{pRiddenName}",
+			"UnMounting"				: "下乘{pRiddenName}",
+			"MountingFamiliar"			: "跟随主人{pRiddenName}",
+			"UnMountingFamiliar"		: "停止跟随主人{pRiddenName}",
+			"PreventedRiderMove"		: "仍在骑乘{pRiddenName}",
+			"RidingLoop"				: "骑乘{pRiddenName}会很尴尬",
+			"NoPlace"					: "{pRiddenName}已无空位",
+			"EnemyRiding"				: "{pRiddenName}是我的敌人",
+			"Toofaraway"				: "{pRiddenName}距离太远",
+			"RiddenisLocked"			: "{pRiddenName}已锁定",
+			
+			"Grappling"					: "被{pRiddenName}擒抱",
+			"UnGrappling"				: "从{pRiddenName}释放",
+			"PreventedGrappledMove"		: "仍被{pRiddenName}擒抱",
+			
+			"cantPilot"					: "{pRiddenName}无法骑乘",
+			"startPiloting"				: "正在骑乘{pRiddenName}",
+			"stopPiloting"				: "停止骑乘{pRiddenName}",
+			"cantbeMoved"				: "{cantbeMoved}无法移动(可能已附加到某物)",
+			
+			"StopFollowing"				: "停止跟随",
+			"StartFollowing"			: "开始跟随{pFollowedName}",
+			"CantFollowinCombat"		: "战斗中无法跟随",
+			"TargetisFollowingMe"		: "{pFollowedName}已在跟随我",
+			
+			"PositionLocked"			: "位置已锁定",
+			"PositionUnlocked"			: "位置已解锁"
+		},	
+		
+		"TokenSettings" : {
+			"MaxRiderFlag" : {
+				"name"					: "最大骑手数",
+				"descrp"				: "覆盖此Token的全局设置(-1表示无限，留空恢复默认世界设置)"
+			},
+			
+			"MountonEnterFlag" : {
+				"name"					: "进入时骑乘",
+				"descrp"				: "进入此Token/图块空间的Token将骑乘它"
+			},
+			
+			"AutoMountBlackListFlag" : {
+				"name"					: "进入骑乘黑名单",
+				"descrp"				: "不会在进入时骑乘的Token名称、ID和角色ID(用\";\"分隔)"
+			},
+			
+			"AutoMountWhiteListFlag" : {
+				"name"					: "进入骑乘白名单",
+				"descrp"				: "允许在进入时骑乘的Token名称、ID和角色ID(用\";\"分隔，留空忽略)"
+			},
+			
+			"RiderPositioningFlag" : {
+				"name"					: "骑手定位",
+				"descrp"				: "骑手Token的放置模式",
+				"options" : {
+					"CirclePlacement"	: "圆形",
+					"RowPlacement"		: "行",
+					"BlockPlacement"	: "块",
+					"ClusterPlacement"	: "簇",
+					"RowPlacementTop"	: "上行",
+					"RowPlacementBottom": "下行",
+					"CornerPlacement"	: "角落",
+					"CornerPlacementinner": "内角落",
+					"MountPosition"		: "骑乘位置"
+				}
+			},
+			
+			"RiderOffsetFlag" : {
+				"name"					: "骑手偏移",
+				"descrp"				: "骑手的放置偏移[以场景方格为单位]"
+			},
+			
+			"RiderRotOffsetFlag" : {
+				"name"					: "骑手旋转偏移",
+				"descrp"				: "骑手的旋转偏移"
+			},
+			
+			"GrapplePlacementFlag" : {
+				"name"					: "擒抱位置",
+				"descrp"				: "被擒抱Token的放置位置",
+				"options" : {
+					"RowBelow"			: "下方",
+					"RowAbove"			: "上方",
+					"RowMiddle"			: "中间",
+					"ClosestInside"		: "内部",
+					"Following"			: "跟随"
+				}
+			},
+			
+			"issetRideableFlag" : {
+				"name"					: "Token可骑乘",
+				"descrp"				: "覆盖全局默认设置"
+			},
+			
+			"TileRideableNameFlag" : {
+				"name"					: "图块名称",
+				"descrp"				: "可骑乘功能使用的此图块名称(如弹窗)"
+			},
+			
+			"TokenFormFlag" : {
+				"name"					: "Token形状",
+				"descrp"				: "",
+				"options" : {
+					"TokenFormCircle"	: "圆形/椭圆",
+					"TokenFormRectangle": "矩形",
+					"TokenTransparency"	: "根据透明度",
+					"TokenFormAttachedTiles" : "根据附加Token/图块",
+					"TileFormNone"		: "无形状/忽略"
+				}
+			},
+			
+			"CustomRidingheightFlag" : {
+				"name"					: "自定义骑乘高度",
+				"descrp"				: "此Token的自定义高度，用于其骑手(留空使用默认值)"
+			},
+			
+			"UseRidingHeightFlag" : {
+				"name"					: "使用骑乘高度",
+				"descrp"				: "管理此Token骑手的高度"
+			},
+			
+			"RidersScaleFlag" : {
+				"name"					: "骑手缩放",
+				"descrp"				: "应用于此对象骑手的缩放比例(仅视觉)"
+			},
+			
+			"InsideMovementFlag" : {
+				"name"					: "骑手可自由移动",
+				"descrp"				: "骑手是否可在此Token界内自由移动"
+			},
+			
+			"SpawnRidersFlag" : {
+				"name"					: "生成骑手",
+				"descrp"				: "此Token生成的骑手(名称或ID，用\";\"分隔)"
+			},
+			
+			"MountingEffectsFlag" : {
+				"name"					: "骑乘效果",
+				"descrp"				: "应用于此Token骑手的效果(名称或ID，用\";\"分隔)"
+			},
+			
+			"WorldMEffectOverrideFlag" : {
+				"name"					: "覆盖世界效果",
+				"descrp"				: "用下方设置的效果覆盖世界标准效果(而非追加)"
+			},
+			
+			"SelfApplyEffectsFlag" : {
+				"name"					: "自我应用骑乘效果",
+				"descrp"				: "此Token在骑乘时是否应应用自身的骑乘效果"
+			},
+			
+			"forMountEffectsFlag" : {
+				"name"					: "骑乘效果",
+				"descrp"				: "应用于此Token骑乘的效果(名称或ID，用\";\"分隔)"
+			},
+			
+			"canbeGrappledFlag" : {
+				"name"					: "可被擒抱",
+				"descrp"				: "此Token是否可被擒抱"
+			},
+			
+			"GrapplingEffectsFlag" : {
+				"name"					: "擒抱效果",
+				"descrp"				: "应用于此Token擒抱目标的效果(名称或ID，用\";\"分隔)"
+			},
+			
+			"CanbePilotedFlag" : {
+				"name"					: "可被骑乘",
+				"descrp"				: "玩家可骑乘此Token，即使他们不拥有它"
+			},
+			
+			"CheckPilotedCollisionFlag" : {
+				"name"					: "骑乘时碰撞检测",
+				"descrp"				: "骑乘时是否计算此Token的碰撞(对带有附加墙的TA禁用)"
+			},
+			
+			"PilotedbyDefaultFlag" : {
+				"name"					: "默认骑乘",
+				"descrp"				: "骑乘此Token的每个人是否自动骑乘它(与\"骑手可自由移动\"不兼容)"
+			},
+			
+			"ApplyReachEffectFlag" : {
+				"name"					: "应用触及效果",
+				"descrp"				: "此坐骑是否应为其骑乘者应用系统特定效果，以调整触及范围以符合系统规则。"
+			},
+			
+			"RiderProxyPositionFlag" : {
+				"name"					: "骑手代理位置",
+				"descrp"				: "计算其骑手的距离时使用此Token的位置。"
+			}
+		},
+		
+		"RideableTag.str"				: "可骑乘",
+		
+		"Items" : {
+			"MountItem" : {
+				"name" 					: "骑乘重量",
+				"descrp"				: "骑乘生物增加的重量:"
+			}
+		},
+		
+		"Effects" : {
+			"Reach" : {
+				"name" 					: "触及调整",
+				"descrp"				: "<p>Adjusts:</p><ul><li>Makes large (mounting will adjust visual size, you will remain large and centered while mounted)</li><li>Adjusts carry modifier to reflect not actually being large.</li><li>Adjust skills, attack, effective weapon size, AC, CMB, etc. to reflect not actually being large.</li><li>Macro on toggle to change between long/tall to enforce correct reach rules.</li></ul>"
+			}
+		},
+		
+		"monks-active-tiles" : {
+			"filters" : {
+				"name"					: "过滤",
+				
+				"riders-of" : {
+					"name"				: "过滤坐骑的骑手",
+					"descrp"			: "<span class=\"filter-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> {pCondition} 的 <span class=\"entity-style\">{pMount}</span>",
+					"settings" : {
+						"mount" : {
+							"name"		: "骑乘"
+						},
+						
+						"filterCondition" : {
+							"name"		: "骑乘状态条件:",
+							"options" : {
+								"rider": "是骑手",
+								"notrider" : "不是骑手"
+							}	
+						}
+					}
+				},
+				
+				"is-rider" : {
+					"name"				: "过滤骑手",
+					"descrp"			: "<span class=\"filter-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> {pCondition}",
+					"settings" : {
+						"filterCondition" : {
+							"name"		: "骑乘状态条件:",
+							"options" : {
+								"rider": "是骑手",
+								"notrider" : "不是骑手"
+							}	
+						}
+					}					
+				},
+				
+				"is-ridden" : {
+					"name"				: "过滤被骑乘",
+					"descrp"			: "<span class=\"filter-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> {pCondition}",
+					"settings" : {
+						"filterCondition" : {
+							"name"		: "被骑乘状态条件:",
+							"options" : {
+								"ridden": "被骑乘",
+								"notridden" : "未被骑乘"
+							}	
+						}
+					}					
+				}
+			},
+			
+			"actions" : {
+				"mount-this-tile" : {
+					"name"				: "骑乘到此图块",
+					"descrp"			: "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span>"
+				},
+				
+				"mount-target" : {
+					"name"				: "骑乘",
+					"descrp"			: "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> 到 <span class=\"entity-style\">{pMount}</span>",
+					"settings" : {
+						"target" : {
+							"name"		: "骑乘"
+						}
+					}
+				},
+				
+				"unmount" : {
+					"name"				: "下乘",
+					"descrp"			: "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span>"
+				},
+				
+				"unmount-riders" : {
+					"name"				: "骑手下乘",
+					"descrp"			: "<span class=\"logic-style\">{pname}</span> 的 <span class=\"entity-style\">{pEntities}</span>"
+				},
+				
+				"toggle-mount-target" : {
+					"name"				: "切换骑乘",
+					"descrp"			: "<span class=\"logic-style\">{pname}</span> <span class=\"entity-style\">{pEntities}</span> 到 <span class=\"entity-style\">{pMount}</span>",
+					"settings" : {
+						"target" : {
+							"name"		: "骑乘"
+						}
+					}
+				}
+			}
+		}
+	}
 }

@@ -1,0 +1,143 @@
+{
+  "GLITCHSMITH-LIB": {
+    "module": {
+      "title": "GlitchSmith Library",
+      "description": "为 GlitchSmith 模组提供共享后端服务。其他 GlitchSmith 包会自动将其作为依赖安装。不供单独使用。"
+    },
+    "currency": {
+      "menu": {
+        "name": "货币定义",
+        "label": "配置货币",
+        "hint": "定义在 GlitchSmith 模组（Stylish Shop、Smartphone Widget、Unboxing Mystery）之间共享的表单货币与虚拟货币。"
+      },
+      "dialog": {
+        "title": "货币定义",
+        "activeSystem": "当前系统",
+        "intro": "定义 GlitchSmith 模组使用的货币。表单货币可映射到角色数据路径或嵌入的物品数量。虚拟货币存储在本库中，并在所有模组之间共享。",
+        "sheetTitle": "表单货币",
+        "sheetHint": "存储在角色表单上（例如 dnd5e 的 gp/sp/cp）或作为角色拥有的物品的货币。角色路径用于直接读取角色数值；嵌入物品使用该行下方的字段。",
+        "sheetEmpty": "未定义表单货币。",
+        "virtualTitle": "虚拟货币",
+        "virtualHint": "由库追踪并在模组间同步的虚拟货币。余额保存在库钱包中，而非角色表单上。",
+        "virtualEmpty": "未定义虚拟货币。",
+        "noPreset": "该游戏系统没有内置预设。",
+        "addRow": "添加行",
+        "removeRow": "移除",
+        "pickIcon": "选择图标",
+        "resetSheet": "重置为系统默认值",
+        "resetSheetConfirm": "用当前系统的内置默认值替换表单货币？当前的表单条目将被丢弃。",
+        "save": "保存",
+        "cancel": "取消",
+        "saved": "货币定义已保存。",
+        "col": {
+          "icon": "",
+          "id": "ID",
+          "name": "名称",
+          "symbol": "符号",
+          "rate": "汇率",
+          "storage": "存储方式",
+          "actorPath": "角色路径",
+          "integer": "整数",
+          "primary": "主要"
+        },
+        "storage": {
+          "actorPath": "角色路径",
+          "embeddedItem": "嵌入物品",
+          "itemType": "物品类型",
+          "quantityPath": "数量路径",
+          "filters": "过滤器",
+          "createFromUuid": "从 UUID 创建"
+        },
+        "scan": {
+          "button": "扫描角色",
+          "test": "测试",
+          "hint": "选择一个 Token 或为你的用户分配一个角色，然后扫描以列出其基于物品的货币。",
+          "results": "候选",
+          "searchPlaceholder": "按名称、类型或过滤器搜索候选…",
+          "count": "已显示 {shown} / {total}",
+          "noMatch": "没有候选与你的搜索匹配。",
+          "apply": "应用",
+          "clear": "清除结果",
+          "summaryQty": "qty",
+          "noActor": "未找到角色。请选择一个 Token 或为你的用户分配一个角色。",
+          "empty": "在 {actor} 上未找到基于物品的货币候选。",
+          "testInvalid": "测试前请先设置数量路径以及物品类型或过滤器。",
+          "testSuccess": "{actor}：匹配“{item}” — 数量 {quantity}。",
+          "testFail": "{actor}：没有物品与当前字段匹配。",
+          "dropHint": "或者从侧边栏或合集中拖拽一个货币物品到这里以自动填充。",
+          "dropInvalid": "拖入有效的物品以自动填充货币字段。"
+        },
+        "errors": {
+          "duplicateId": "重复的货币 ID：{id}",
+          "saveFailed": "保存货币定义失败。"
+        }
+      }
+    },
+    "wallet": {
+      "headerButton": "钱包",
+      "hideHeaderButton": {
+        "name": "隐藏钱包表单头部按钮",
+        "hint": "在此客户端上从角色表单头部隐藏 GlitchSmith Library 虚拟钱包按钮。钱包余额与 API 仍然可用。"
+      },
+      "dialog": {
+        "title": "虚拟货币钱包",
+        "hint": "调整此角色的虚拟货币余额。表单货币（系统硬币）在角色表单上管理。",
+        "noCurrencies": "未定义虚拟货币。请通过 游戏设置 → 货币定义 添加。",
+        "noActor": "未选择角色。",
+        "save": "保存",
+        "cancel": "取消",
+        "saved": "已更新 {count} 项货币余额。",
+        "saveErrors": "部分余额保存失败：{errors}"
+      }
+    },
+    "actorSheetMenu": {
+      "label": "GlitchSmith",
+      "setting": {
+        "name": "合并 GlitchSmith 角色表单菜单",
+        "hint": "在此客户端上将 GlitchSmith 模组添加的角色表单头部控件集中到单个 GlitchSmith 下拉菜单中。默认启用。"
+      }
+    },
+    "notifier": {
+      "disableName": "禁用更新通知",
+      "disableHint": "抑制此模组的更新与公告对话框。",
+      "updateAvailable": "{title} — 有可用更新",
+      "newVersion": "{title} v{version} 可用！",
+      "currentVersion": "（当前：v{current}）",
+      "patchHighlights": "补丁要点",
+      "skipVersion": "跳过此版本",
+      "criticalWarning": "⚠️ 建议进行关键更新",
+      "confirm": "知道了",
+      "allConfirmButton": "全部确认",
+      "allConfirm": "已将全部通知标记为已读",
+      "disableNotification": "禁用通知",
+      "allDisableButton": "禁用所有通知",
+      "disableConfirm": "更新通知已禁用",
+      "allDisableConfirm": "已为列出的每个模组禁用更新通知",
+      "settingsReset": "{title}：更新设置已重置",
+      "announcementTitle": "{title} — 公告",
+      "confirmNotice": "确定",
+      "close": "关闭",
+      "managerName": "更新通知",
+      "managerLabel": "管理",
+      "managerHint": "为之前禁用的 GlitchSmith 模组重新启用更新通知。",
+      "managerTitle": "GlitchSmith — 更新通知",
+      "managerSummary": "当前有 {count} 个模组禁用了更新通知：",
+      "managerConfirm": "为它们全部重新启用更新通知？",
+      "managerNoneDisabled": "当前没有 GlitchSmith 模组禁用更新通知。",
+      "managerSuccess": "已为 {count} 个模组重新启用更新通知。",
+      "managerYes": "全部重新启用",
+      "managerNo": "取消",
+      "board": {
+        "title": "GlitchSmith — 通知面板",
+        "menuName": "GlitchSmith 通知面板",
+        "menuLabel": "打开面板",
+        "menuHint": "在一处查看来自 GlitchSmith 模组的待处理更新与公告。",
+        "tabUpdates": "更新",
+        "tabAnnouncements": "公告",
+        "manageDisabled": "管理已禁用",
+        "manageDisabledHint": "为之前禁用的模组重新启用通知。",
+        "empty": "目前没有来自 GlitchSmith 模组的新内容。"
+      }
+    }
+  }
+}

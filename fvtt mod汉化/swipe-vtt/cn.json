@@ -1,4 +1,5 @@
-{"SWIPE_VTT": {
+{
+  "SWIPE_VTT": {
     "ModuleTitle": "Swipe VTT",
     "Settings": {
       "MenuTitle": "Swipe VTT 设置",
@@ -8,10 +9,10 @@
         "Hint": "打开 Swipe VTT 设置对话框"
       },
       "PremiumMenu": {
-		"Name": "会员功能",
-		"Label": "连接到 Patreon",
-		"Hint": "GM 必须连接其 Patreon 账户才能访问会员功能，例如支持系统的移动端角色卡"
-	  },
+        "Name": "会员功能",
+        "Label": "连接到 Patreon",
+        "Hint": "GM 必须连接其 Patreon 账户才能访问会员功能，例如支持系统的移动端角色卡"
+      },
       "ImageOptimizerMenu": {
         "Name": "图像优化器",
         "Label": "优化场景图像",
@@ -19,15 +20,19 @@
       },
       "ImageOptimizerPrompt": {
         "Title": "SWIPE | 自动创建移动端图片？",
-		  "Content1": "如果确认，Swipe 将仅为移动设备创建场景图片的小尺寸版本。当 GM 查看包含大图片的场景时，此过程会自动进行。",
-		  "Content2": "这不会更改原始图片或场景配置。你稍后可以在 Swipe VTT 设置中手动执行此操作。",
-		  "FolderLabel": "保存优化图片的文件夹：",
-		  "SelectFolder": "选择文件夹"
+        "Content1": "如果确认，Swipe 将仅为移动设备创建场景图片的小尺寸版本。当 GM 查看包含大图片的场景时，此过程会自动进行。",
+        "Content2": "这不会更改原始图片或场景配置。你稍后可以在 Swipe VTT 设置中手动执行此操作。",
+        "FolderLabel": "保存优化图片的文件夹：",
+        "SelectFolder": "选择文件夹"
       },
-	  "AutoOptimizeScenes": {
-		"Name": "自动优化场景图片",
-		"Hint": "自动创建针对移动设备优化的场景图片版本。这不会更改原始图片或场景配置。"
-	  },
+      "AutoOptimizeScenes": {
+        "Name": "自动优化场景图片",
+        "Hint": "自动创建针对移动设备优化的场景图片版本。这不会更改原始图片或场景配置。"
+      },
+      "DisableLargeMapWarnings": {
+        "Name": "禁用大地图警告",
+        "Hint": "当玩家加载了设备无法承载的场景图像时，不再显示通知。"
+      },
       "Tabs": {
         "General": "常规",
         "Performance": "性能",
@@ -35,23 +40,23 @@
       },
       "Fieldsets": {
         "SheetAndChat": "角色卡与聊天",
-		"Controls": "控件",
+        "Controls": "控件",
         "CameraViews": "摄像机视图",
         "SystemSettings": "系统设置"
       },
       "System": {
         "PF2E": {
           "ShowCheckDialogs": {
-			  "Name": "总是显示掷骰对话框",
-			  "Hint": "在进行检定前显示包含调整值的掷骰对话框。在桌面端，可以通过 Shift+点击 来切换此功能。"
-		  }
+            "Name": "总是显示掷骰对话框",
+            "Hint": "在进行检定前显示包含调整值的掷骰对话框。在桌面端，可以通过 Shift+点击 来切换此功能。"
+          }
         }
       },
       "UnfreezeTriggers": "自动解冻触发器",
       "Reset": "重置为默认值",
       "Save": "保存设置",
       "ToggleHints": "切换提示",
-	  "AdvancedSettings": "高级设置",
+      "AdvancedSettings": "高级设置",
       "Saved": "Swipe VTT 设置已保存",
       "OpenGameSettings": "打开游戏设置",
       "MobileOnlyNote": "这些设置仅在使用移动端或平板电脑时适用。",
@@ -105,30 +110,30 @@
         "Name": "聊天自动隐藏延迟",
         "Hint": "自动显示的聊天弹出窗口隐藏前的秒数。（2-10）"
       },
-	  "KeepAwake": {
-		"Name": "保持唤醒",
-		"Hint": "播放静音音频以防止浏览器在屏幕关闭时挂起。保持你与游戏的连接。会消耗少量电量。"
-	  },
-	  "Controls": {
-		"TouchOnly": "这些设置仅在触摸设备（手机或平板电脑）上生效。"
-	  },
-	  "HideQuickControls": {
-		"Name": "隐藏快速控件栏",
-		"Hint": "隐藏浮动的快速控件栏和设置按钮。在手机上，由于 Foundry 的侧边栏被隐藏，设置按钮仍会保持可见。"
-	  },
-	  "HideAvatarCarousel": {
-		"Name": "隐藏轮播",
-		"Hint": "隐藏屏幕底部的角色头像。你仍可通过双击画布上的Token来打开角色卡。"
-	  },
-	  "HideMacroButton": {
-		"Name": "隐藏宏热键栏按钮",
-		"Hint": "隐藏宏热键栏切换按钮。当该按钮可见时，它允许你在抽屉中打开宏热键栏。"
-	  },
-	  "AddMacro": "添加宏",
-	  "SpeakerOnlyAV": {
-		"Name": "仅显示发言者摄像机模式",
-		"Hint": "仅显示当前正在发言用户的摄像机视图。当无人发言时，会显示 GM 的摄像机作为后备。"
-	  },
+      "KeepAwake": {
+        "Name": "保持唤醒",
+        "Hint": "播放静音音频以防止浏览器在屏幕关闭时挂起。保持你与游戏的连接。会消耗少量电量。"
+      },
+      "Controls": {
+        "TouchOnly": "这些设置仅在触摸设备（手机或平板电脑）上生效。"
+      },
+      "HideQuickControls": {
+        "Name": "隐藏快速控件栏",
+        "Hint": "隐藏浮动的快速控件栏和设置按钮。在手机上，由于 Foundry 的侧边栏被隐藏，设置按钮仍会保持可见。"
+      },
+      "HideAvatarCarousel": {
+        "Name": "隐藏轮播",
+        "Hint": "隐藏屏幕底部的角色头像。你仍可通过双击画布上的Token来打开角色卡。"
+      },
+      "HideMacroButton": {
+        "Name": "隐藏宏热键栏按钮",
+        "Hint": "隐藏宏热键栏切换按钮。当该按钮可见时，它允许你在抽屉中打开宏热键栏。"
+      },
+      "AddMacro": "添加宏",
+      "SpeakerOnlyAV": {
+        "Name": "仅显示发言者摄像机模式",
+        "Hint": "仅显示当前正在发言用户的摄像机视图。当无人发言时，会显示 GM 的摄像机作为后备。"
+      },
       "EnableMobileSheets": {
         "Name": "启用移动端角色卡",
         "Hint": "使用自定义的移动端优化角色卡。禁用以使用默认的 FVTT 角色卡。"
@@ -143,64 +148,72 @@
         "Name": "调试模式",
         "Hint": "启用详细的控制台日志记录以进行故障排除。"
       },
-	  "InviteUrlOverride": {
-		"Name": "邀请链接覆盖",
-		"Hint": "为“连接手机”二维码设置自定义基础 URL（例如 http://26.x.x.x:30000）。当玩家通过 VPN（Radmin、Hamachi、ZeroTier 等）或反向代理连接时使用此项。留空则自动检测。"
-	  },
-	  "StandaloneSkipAuth": {
-		"Name": "跳过独立应用身份验证",
-		"Hint": "允许玩家无需输入密码即可访问独立手机应用。如果你使用外部托管服务（例如 Sqyre）或你的玩家遇到连接问题，请启用此选项。"
-	  },
-	  "ShowMemoryMonitor": {
-		"Name": "显示内存监视器",
-		"Hint": "在玩家列表的延迟和 FPS 旁边显示实时内存使用情况（JS 堆 + GPU 纹理）。"
-	  },
-	  "AllowMiniCanvas": {
-		"Name": "允许简化Token地图",
-		"Hint": "允许玩家在角色卡模式下启用简化Token地图。这会显示一个带有Token位置的轻量级网格，而不是完整的画布。"
-	  },
-	  "EnableMiniCanvas": {
-		"Name": "启用简化Token地图",
-		"Hint": "在角色卡模式下显示带有网格和Token位置的简化Token地图。需要 GM 权限。"
-	  },
-	  "MiniCanvasPrompt": {
-		"Title": "简化Token地图",
-		"Content": "你要启用简化Token地图吗？它会显示一个轻量级网格，允许你在角色卡模式下移动Token、选择目标和放置模板。",
-		"Yes": "启用",
-		"No": "不用了，谢谢"
-	  },
-	  "DisableModules": {
+      "InviteUrlOverride": {
+        "Name": "邀请链接覆盖",
+        "Hint": "为“连接手机”二维码设置自定义基础 URL（例如 http://26.x.x.x:30000）。当玩家通过 VPN（Radmin、Hamachi、ZeroTier 等）或反向代理连接时使用此项。留空则自动检测。"
+      },
+      "StandaloneSkipAuth": {
+        "Name": "跳过独立应用身份验证",
+        "Hint": "允许玩家无需输入密码即可访问独立手机应用。如果你使用外部托管服务（例如 Sqyre）或你的玩家遇到连接问题，请启用此选项。"
+      },
+      "ModuleEnabled": {
+        "Name": "在此客户端启用 Swipe",
+        "Hint": "此客户端中 Swipe VTT 的总开关。取消勾选后，模组将被完全禁用（无移动端 UI、无钩子、无高级加载）。需要重新加载。"
+      },
+      "ShowMemoryMonitor": {
+        "Name": "显示内存监视器",
+        "Hint": "在玩家列表的延迟和 FPS 旁边显示实时内存使用情况（JS 堆 + GPU 纹理）。"
+      },
+      "AllowMiniCanvas": {
+        "Name": "允许玩家使用简化 Token 地图",
+        "Hint": "允许玩家在角色卡模式下启用简化Token地图。这会显示一个带有Token位置的轻量级网格，而不是完整的画布。"
+      },
+      "EnableMiniCanvas": {
+        "Name": "启用简化Token地图",
+        "Hint": "在角色卡模式下显示带有网格和Token位置的简化Token地图。需要 GM 权限。"
+      },
+      "MiniCanvasShowWalls": {
+        "Name": "在简化 Token 地图上显示墙壁",
+        "Hint": "在简化 Token 地图上显示玩家所选 Token 周围约 60 英尺内的墙体几何结构。暗门会被隐藏。禁用此选项可防止玩家看到墙壁。"
+      },
+      "MiniCanvasPrompt": {
+        "Title": "简化Token地图",
+        "Content": "你要启用简化Token地图吗？它会显示一个轻量级网格，允许你在角色卡模式下移动Token、选择目标和放置模板。",
+        "Yes": "启用",
+        "No": "不用了，谢谢"
+      },
+      "DisableModules": {
         "Title": "禁用资源密集型模组"
       },
       "DisableAAAnimations": {
         "Name": "禁用Automated Animations",
         "Hint": "在此设备上禁用 JB2A / Automated Animations以提高性能。"
       },
-    "DisableDiceSoNice": {
+      "DisableDiceSoNice": {
         "Name": "禁用 Dice So Nice",
         "Hint": "在此设备上禁用 3D 骰子动画以提升性能。"
-    },
-    "DisableCanvas": {
+      },
+      "DisableCanvas": {
         "Name": "禁用画布",
         "Hint": "如果设备性能严重不足，可完全禁用游戏画布，仅保留角色卡/掷骰功能。"
-    },
-	"ExpandedSheet": {
-		"Name": "扩展角色卡（平板模式）",
-		"Hint": "当画布被禁用时，使用全屏并排显示多个角色卡部分。需要禁用画布功能。"
-	},
-    "Override": {
+      },
+      "ExpandedSheet": {
+        "Name": "扩展角色卡（平板模式）",
+        "Hint": "当画布被禁用时，使用全屏并排显示多个角色卡部分。需要禁用画布功能。"
+      },
+      "Override": {
         "Default": "使用性能模式设置",
         "Enabled": "始终启用",
         "Disabled": "始终禁用"
-    },
-    "OverrideDiceSoNice": {
+      },
+      "OverrideDiceSoNice": {
         "Name": "Dice So Nice 覆盖设置",
         "Hint": "覆盖性能模式对 3D 骰子的设置。“默认”将遵循性能模式。"
-    },
-    "OverrideAAAnimations": {
+      },
+      "OverrideAAAnimations": {
         "Name": "Automated Animations覆盖设置",
         "Hint": "覆盖性能模式对 JB2A 动画的设置。“默认”将遵循性能模式。"
-    },
+      },
       "PowerSaver": {
         "Title": "省电模式",
         "EnableAll": "全部启用",
@@ -224,52 +237,53 @@
         "DialogDontAsk": "不再询问"
       },
       "PremiumFeature": "会员功能 - 连接 Patreon 解锁",
-	  "NoCanvasBackgroundEnabled": {
-			"Name": "背景图片（仅角色卡模式）",
-			"Hint": "当画布被禁用时显示背景图片。取消勾选将使用黑色背景。"
-		},
-		"NoCanvasBackground": {
-			"Name": "自定义仅角色卡背景",
-			"Hint": "为使用仅角色卡模式的用户选择自定义背景图片。留空则使用默认背景。",
-			"Default": "默认",
-			"Browse": "浏览",
-			"Clear": "重置"
-		},
+      "NoCanvasBackgroundEnabled": {
+        "Name": "背景图片（仅角色卡模式）",
+        "Hint": "当画布被禁用时显示背景图片。取消勾选将使用黑色背景。"
+      },
+      "NoCanvasBackground": {
+        "Name": "自定义仅角色卡背景",
+        "Hint": "为使用仅角色卡模式的用户选择自定义背景图片。留空则使用默认背景。",
+        "Default": "默认",
+        "Browse": "浏览",
+        "Clear": "重置"
+      },
       "PartyGroupActor": {
-		"Name": "小队角色",
-		"Hint": "选择一个小队角色作为小队。所有拥有至少“限制”权限的玩家都将看到该小队成员显示在轮播视图中。",
-		"None": "— 无 —"
-	  }
+        "Name": "小队角色",
+        "Hint": "选择一个小队角色作为小队。所有拥有至少“限制”权限的玩家都将看到该小队成员显示在轮播视图中。",
+        "None": "— 无 —"
+      }
     },
     "Notifications": {
       "MobileDetected": "Swipe VTT：检测到移动端，启用触摸控制",
       "DiceDisabled": "Swipe VTT：已禁用 3D 骰子以获得更好的性能",
       "LargeMapOptimized": "Swipe VTT：检测到大型场景，已启用优化渲染",
       "LargeUnoptimizedImages": "场景“{scene}”包含大型图像，可能无法在某些移动设备上加载。Swipe VTT 可以为你创建移动设备专用版本，仅会在手机上加载。请在模组设置中找到“优化图像”选项。",
-	  "SceneExceedsMaxTexture": "场景 \"{scene}\" 包含超出此设备支持尺寸的图像（最大 {maxTexture}px）。部分图像可能无法正确渲染。请让你的 GM 在 Swipe VTT 设置中优化场景图像。",
-	  "PlayerOversizedTexture": "玩家 \"{player}\" 尝试加载超出其设备支持尺寸的场景图像（{width}x{height}，最大 {maxTexture}px）。请在 Swipe VTT 设置中使用图像优化器创建移动端版本。",
-	  "AutoOptimized": "Swipe VTT：已为场景 \"{scene}\" 自动优化 {count} 张图像，适用于移动设备。",
+      "PlayerOversizedTexture": "玩家 \"{player}\" 尝试加载超出其设备支持尺寸的场景图像（{width}x{height}，最大 {maxTexture}px）。请在 Swipe VTT 设置中使用图像优化器创建移动端版本。",
+      "AutoOptimized": "Swipe VTT：已为场景 \"{scene}\" 自动优化 {count} 张图像，适用于移动设备。",
       "OptimizedImagesLoaded": "Swipe VTT：正在使用 {count} 张移动端优化图像",
       "DSNSafariOptimized": "Swipe VTT：调整了Dice So Nice设置以兼容Safari浏览器",
-	  "SafariIOSWarning": "FVTT 在 iOS Safari 浏览器上运行不佳。为了获得更好的体验，请使用 Chrome（或其他基于 Chromium 的浏览器）。"
+      "SafariIOSWarning": "FVTT 在 iOS Safari 浏览器上运行不佳。为了获得更好的体验，请使用 Chrome（或其他基于 Chromium 的浏览器）。",
+      "MovementBlockedByWall": "移动被墙壁阻挡。",
+      "MovementNoGM": "GM 必须在线才能移动 Token。"
     },
     "DesktopEnableWarning": {
-        "Title": "在桌面端启用移动端模式",
-        "Content": "此设置适用于支持触控的笔记本电脑或使用 Chrome 设备模拟器进行测试。在常规浏览器上可能会引发问题。确定要启用吗？",
-        "Enable": "启用",
-        "Cancel": "取消"
+      "Title": "在桌面端启用移动端模式",
+      "Content": "此设置适用于支持触控的笔记本电脑或使用 Chrome 设备模拟器进行测试。在常规浏览器上可能会引发问题。确定要启用吗？",
+      "Enable": "启用",
+      "Cancel": "取消"
     },
-	"DiceSoNicePrompt": {
-        "Title": "Dice So Nice",
-        "Content": "3D 骰子动画可能会影响移动设备的性能。你要禁用 Dice So Nice 吗？",
-        "Disable": "禁用 3D 骰子",
-        "Keep": "保持启用"
+    "DiceSoNicePrompt": {
+      "Title": "Dice So Nice",
+      "Content": "3D 骰子动画可能会影响移动设备的性能。你要禁用 Dice So Nice 吗？",
+      "Disable": "禁用 3D 骰子",
+      "Keep": "保持启用"
     },
     "iOSAAPrompt": {
-        "Title": "iOS 上的自动动画",
-        "Content": "JB2A的透明视频在iOS上显示为黑色背景。这是Swipe VTT无法修复的问题。你是否要禁用Automated Animations？",
-        "Disable": "禁用动画",
-        "Keep": "保持启用"
+      "Title": "iOS 上的自动动画",
+      "Content": "JB2A的透明视频在iOS上显示为黑色背景。这是Swipe VTT无法修复的问题。你是否要禁用Automated Animations？",
+      "Disable": "禁用动画",
+      "Keep": "保持启用"
     },
     "ImageOptimizer": {
       "windowTitle": "Swipe VTT - 图像优化",
@@ -281,12 +295,12 @@
       "noScenesFound": "在此世界中未找到场景。",
       "noLargeImages": "无大图像",
       "note": "优化后的图像将调整到最大 4096px 并压缩为 WebP。原始文件将被保留。",
-    "folderLabel": "保存优化图像的目标文件夹：",
-    "folderNote": "如果删除或更改此文件夹，可能导致图像无法找到。请确保为所有图像选择一个固定文件夹，若文件夹被手动移动，请在此处更新。",
-    "folderHint": "优化开始时将自动创建此文件夹。你可以修改路径或浏览选择现有文件夹。",
-    "folderRequired": "请输入文件夹名称。",
-    "folderInvalid": "文件夹路径无效。",
-    "selectFolder": "选择文件夹",
+      "folderLabel": "保存优化图像的目标文件夹：",
+      "folderNote": "如果删除或更改此文件夹，可能导致图像无法找到。请确保为所有图像选择一个固定文件夹，若文件夹被手动移动，请在此处更新。",
+      "folderHint": "优化开始时将自动创建此文件夹。你可以修改路径或浏览选择现有文件夹。",
+      "folderRequired": "请输入文件夹名称。",
+      "folderInvalid": "文件夹路径无效。",
+      "selectFolder": "选择文件夹",
       "selectAll": "全选",
       "sceneName": "场景",
       "status": "状态",
@@ -295,12 +309,12 @@
       "statusOptimized": "已优化",
       "statusSkipped": "被 GM 跳过",
       "statusOk": "正常",
-	  "statusVideo": "视频",
-    "videosSkipped": "视频 - 无法优化",
-    "videoWarning": "视频背景无法优化。为获得更好的移动端性能，建议使用静态图像或将视频预先转换为 720p H.264 格式。",
+      "statusVideo": "视频",
+      "videosSkipped": "视频 - 无法优化",
+      "videoWarning": "视频背景无法优化。为获得更好的移动端性能，建议使用静态图像或将视频预先转换为 720p H.264 格式。",
       "imagesOptimized": "张图像已优化",
       "optimizeSelected": "优化选定项",
-	  "saveAndClose": "关闭",
+      "saveAndClose": "关闭",
       "skipAll": "关闭",
       "dontAskAgainCheckbox": "不再询问未选中的场景",
       "processing": "处理中",
@@ -311,14 +325,15 @@
       "failedCount": "{count} 张图像失败：",
       "mobileNote": "移动端将在可用时自动使用优化版本。",
       "StaleEntriesTitle": "缺失的优化图像",
-		"StaleEntriesFound": "有 {count} 个已注册的优化图像在磁盘上已不存在：",
-		"StaleEntriesClear": "是否要从注册表中清除这些条目？",
-		"ClearRegistry": "清除注册表",
-		"KeepEntries": "保留条目",
-		"StaleEntriesCleared": "已清除 {count} 个过期的注册表条目",
-		"ProgressDialogTitle": "正在优化图像",
-		"ProgressDialogStarting": "正在启动...",
-		"ProgressDialogProcessing": "正在处理："
+      "StaleEntriesFound": "{count} 张优化图像已注册，但其文件在磁盘上缺失。（仍存在但以无效名称保存的优化文件会自动修复——此处不列出。）",
+      "StaleEntriesClear": "是否从注册表中清除这些条目？受影响的场景将回退到其原始图像，直到你重新优化它们。",
+      "ClearRegistry": "清除注册表",
+      "KeepEntries": "保留条目",
+      "StaleEntriesCleared": "已清除 {count} 个过期的注册表条目",
+      "LegacyEntriesRepaired": "Swipe VTT：已修复 {count} 条以无效名称保存的优化图像路径。",
+      "ProgressDialogTitle": "正在优化图像",
+      "ProgressDialogStarting": "正在启动...",
+      "ProgressDialogProcessing": "正在处理："
     },
     "UI": {
       "Buttons": {
@@ -349,7 +364,10 @@
       "Logout": "登出",
       "LogoutConfirmTitle": "确认登出",
       "LogoutConfirmMessage": "你确定要登出吗？",
-      "Volume": "音量"
+      "Volume": "音量",
+      "Journal": "日志",
+      "Compendium": "数据包",
+      "Scenes": "场景"
     },
     "Sheet": {
       "OpenSheet": "打开角色卡",
@@ -362,108 +380,108 @@
         "All": "所有技能",
         "Proficient": "仅熟练项"
       },
-	  "ToolsFilter": {
-		"All": "全部工具",
-		"Proficient": "仅熟练工具"
-	  },
+      "ToolsFilter": {
+        "All": "全部工具",
+        "Proficient": "仅熟练工具"
+      },
       "TempHP": "临时 HP",
       "TempMax": "临时最大",
-	  "Healing": "治疗",
-	  "Damage": "伤害",
-	  "Apply": "应用",
-	  "PF2E": {
-		"View": "查看",
-		"Delete": "删除",
-		"Cancel": "取消",
-		"Use": "使用",
-		"Cast": "施放",
-		"Craft": "制作",
-		"Unprepare": "取消准备",
-		"Expend": "消耗",
-		"Restore": "恢复",
-		"DailyCrafting": "每日制作",
-		"Reset": "重置",
-		"DeleteConfirmTitle": "删除 {name}",
-		"DeleteConfirmContent": "<p>删除 <strong>{name}</strong>？</p>",
-		"NoCraftingAbilities": "无制作能力",
-		"NoSpellcasting": "无法术施放",
-		"NoFeats": "无专长",
-		"NoExplorationActivities": "无探索活动",
-		"NoDowntimeActivities": "无休整期活动",
-		"DC": "DC",
-		"Cost": "成本",
-		"Quantity": "数量",
-		"Bulk": "体积",
-		"Currency": "货币",
-		"InvestedItems": "已投资物品",
-		"KnownFormulas": "已知配方 ({count})",
-		"AdvancedAlchemy": "高等炼金术",
-		"InfusedReagents": "灌注试剂",
-		"Level": "等级 {level}",
-		"FocusPoints": "聚能点",
-		"SearchSpells": "搜索法术...",
-		"Cantrips": "戏法",
-		"Rank": "环位 {rank}",
-		"SpellDC": "法术DC",
-		"Attack": "攻击",
-		"EmptySlot": "空位",
-		"EmptySlotRemaining": "空位 ({remaining} 剩余)",
-		"Prepare": "准备 {rank}",
-		"PrepareBtn": "准备",
-		  "Spells": "法术",
-		  "Flexible": "灵活",
-		  "Done": "完成",
-		  "NoSpellsPrepared": "未准备法术",
-		"Conditions": "状态",
-		"ConditionsCount": "状态 ({count})",
-		"EffectsCount": "效果 ({count})",
-		"IntercessionsCount": "神圣干预 ({count})",
-		"Expired": "已过期",
-		"Encounter": "遭遇",
-		"Exploration": "探索",
-		"Downtime": "休整期",
-		"Strike": "打击",
-		"Damage": "伤害",
-		"Critical": "重击",
-		"Action": "动作",
-		"Actions": "动作",
-		"Reactions": "反应",
-		"FreeActions": "自由动作",
-		"Active": "激活",
-		"Available": "可用",
-		"Enc": "遭遇",
-		"Curse": "诅咒",
-		"Boon": "恩赐",
-		"Skills": "技能",
-		"All": "全部",
-		"TrainedPlus": "受训+",
-		"Attacks": "攻击",
-		"Defenses": "防御",
-		"MartialProficiencies": "武术熟练项",
-		"ClassDC": "职业DC",
-		"Weapons": "武器",
-		"Armor": "护甲",
-		"Equipment": "装备",
-		"Consumables": "消耗品",
-		"Treasure": "财宝",
-		"Containers": "容器",
-		"Kits": "工具包",
-		"Other": "其他",
-		"Invested": "已投资",
-		"Strikes": "打击",
-		"AncestryFeatures": "传承特性",
-		"ClassFeatures": "职业特性",
-		"AncestryFeats": "传承专长",
-		"ClassFeats": "职业专长",
-		"ArchetypeFeats": "变体专长",
-		"SkillFeats": "技能专长",
-		"GeneralFeats": "通用专长",
-		"BonusFeats": "奖励专长",
-		"MythicFeats": "神话专长",
-		"CampaignFeats": "战役专长",
-		"Calling": "使命",
-		"PFSBoons": "PFS恩赐"
-	  }
+      "Healing": "治疗",
+      "Damage": "伤害",
+      "Apply": "应用",
+      "PF2E": {
+        "View": "查看",
+        "Delete": "删除",
+        "Cancel": "取消",
+        "Use": "使用",
+        "Cast": "施放",
+        "Craft": "制作",
+        "Unprepare": "取消准备",
+        "Expend": "消耗",
+        "Restore": "恢复",
+        "DailyCrafting": "每日制作",
+        "Reset": "重置",
+        "DeleteConfirmTitle": "删除 {name}",
+        "DeleteConfirmContent": "<p>删除 <strong>{name}</strong>？</p>",
+        "NoCraftingAbilities": "无制作能力",
+        "NoSpellcasting": "无法术施放",
+        "NoFeats": "无专长",
+        "NoExplorationActivities": "无探索活动",
+        "NoDowntimeActivities": "无休整期活动",
+        "DC": "DC",
+        "Cost": "成本",
+        "Quantity": "数量",
+        "Bulk": "体积",
+        "Currency": "货币",
+        "InvestedItems": "已投资物品",
+        "KnownFormulas": "已知配方 ({count})",
+        "AdvancedAlchemy": "高等炼金术",
+        "InfusedReagents": "灌注试剂",
+        "Level": "等级 {level}",
+        "FocusPoints": "聚能点",
+        "SearchSpells": "搜索法术...",
+        "Cantrips": "戏法",
+        "Rank": "环位 {rank}",
+        "SpellDC": "法术DC",
+        "Attack": "攻击",
+        "EmptySlot": "空位",
+        "EmptySlotRemaining": "空位 ({remaining} 剩余)",
+        "Prepare": "准备 {rank}",
+        "PrepareBtn": "准备",
+        "Spells": "法术",
+        "Flexible": "灵活",
+        "Done": "完成",
+        "NoSpellsPrepared": "未准备法术",
+        "Conditions": "状态",
+        "ConditionsCount": "状态 ({count})",
+        "EffectsCount": "效果 ({count})",
+        "IntercessionsCount": "神圣干预 ({count})",
+        "Expired": "已过期",
+        "Encounter": "遭遇",
+        "Exploration": "探索",
+        "Downtime": "休整期",
+        "Strike": "打击",
+        "Damage": "伤害",
+        "Critical": "重击",
+        "Action": "动作",
+        "Actions": "动作",
+        "Reactions": "反应",
+        "FreeActions": "自由动作",
+        "Active": "激活",
+        "Available": "可用",
+        "Enc": "遭遇",
+        "Curse": "诅咒",
+        "Boon": "恩赐",
+        "Skills": "技能",
+        "All": "全部",
+        "TrainedPlus": "受训+",
+        "Attacks": "攻击",
+        "Defenses": "防御",
+        "MartialProficiencies": "武术熟练项",
+        "ClassDC": "职业DC",
+        "Weapons": "武器",
+        "Armor": "护甲",
+        "Equipment": "装备",
+        "Consumables": "消耗品",
+        "Treasure": "财宝",
+        "Containers": "容器",
+        "Kits": "工具包",
+        "Other": "其他",
+        "Invested": "已投资",
+        "Strikes": "打击",
+        "AncestryFeatures": "传承特性",
+        "ClassFeatures": "职业特性",
+        "AncestryFeats": "传承专长",
+        "ClassFeats": "职业专长",
+        "ArchetypeFeats": "变体专长",
+        "SkillFeats": "技能专长",
+        "GeneralFeats": "通用专长",
+        "BonusFeats": "奖励专长",
+        "MythicFeats": "神话专长",
+        "CampaignFeats": "战役专长",
+        "Calling": "使命",
+        "PFSBoons": "PFS恩赐"
+      }
     },
     "Sheets": {
       "MobileCharacter": "移动端角色卡"
@@ -474,7 +492,7 @@
       "SelectDice": "选择掷骰",
       "CustomRoll": "自定义掷骰"
     },
-    "Daggerheart": {
+"Daggerheart": {
       "Loadout": "装备配置",
       "Vault": "仓库",
       "NoCardsEquipped": "无装备卡牌",
@@ -528,159 +546,173 @@
       "ReactionRoll": "反应骰"
     },
     "PerformanceMode": {
-        "DialogTitle": "性能模式",
-        "Intro": "根据设备性能，Swipe 建议使用 {recommendedMode} 模式。",
-        "ChooseMode": "选择性能模式：",
-        "Recommended": "推荐",
-        "Apply": "应用",
-		"Reset": "重置",
-        "Applied": "性能模式已设置为 {mode}",
-        "ChangeMode": "更改性能模式",
-        "CurrentMode": "当前模式",
-        "AutoOptimize": {
-            "Name": "性能不足时自动升级",
-            "Hint": "如果帧率持续较低，提示启用更高的性能模式。"
-        },
-        "Minimal": {
-            "Name": "最小化",
-            "Desc": "除了加载优化的移动端图像外，不进行其他性能调整。仅适用于旗舰设备。",
-            "Warning": "可能会导致设备发热。请测试并在必要时切换模式。"
-        },
-        "Balanced": {
-            "Name": "平衡",
-            "Desc": "将帧率降至 30，空闲时冻结画布，并禁用一些资源消耗大的效果模组。在画质和电池续航之间取得良好平衡。"
-        },
-        "Aggressive": {
-            "Name": "激进",
-            "Desc": "包含所有平衡优化，同时禁用Automated Animations、提供禁用 Dice So Nice 选项，并使用较低分辨率渲染。"
-        },
-        "SheetOnly": {
-            "Name": "仅角色卡",
-            "Desc": "禁用地图渲染，但保留部分 FVTT 功能。适用于大型世界或运行 FVTT 困难的设备。"
-        },
-		"Standalone": {
-			"Name": "独立页面",
-			"Desc": "轻量级独立页面，绕过 FVTT 客户端。最适合在 iPhone 或低内存设备上访问角色卡，但缺少许多 FVTT 功能。"
-		},
-        "Escalation": {
-            "Title": "性能仍然较低",
-            "Message": "你的设备正经历低帧率（{fps} FPS）。你想尝试 {nextMode} 模式吗？",
-            "Apply": "是",
-            "Skip": "稍后决定",
-            "StopAsking": "不再询问"
-        },
-        "ReloadTitle": "需要重新加载",
-        "ReloadPrompt": "性能模式设置已保存。需要重新加载页面才能使所有更改生效。",
-        "ReloadNow": "立即重新加载",
-        "ReloadLater": "稍后"
+      "DialogTitle": "性能模式",
+      "Intro": "根据设备性能，Swipe 建议使用 {recommendedMode} 模式。",
+      "ChooseMode": "选择性能模式：",
+      "Recommended": "推荐",
+      "Apply": "应用",
+      "Reset": "重置",
+      "Applied": "性能模式已设置为 {mode}",
+      "ChangeMode": "更改性能模式",
+      "CurrentMode": "当前模式",
+      "AutoOptimize": {
+        "Name": "性能不足时自动升级",
+        "Hint": "如果帧率持续较低，提示启用更高的性能模式。"
+      },
+      "Minimal": {
+        "Name": "最小化",
+        "Desc": "除了加载优化的移动端图像外，不进行其他性能调整。仅适用于旗舰设备。",
+        "Warning": "可能会导致设备发热。请测试并在必要时切换模式。"
+      },
+      "Balanced": {
+        "Name": "平衡",
+        "Desc": "将帧率降至 30，空闲时冻结画布，并禁用一些资源消耗大的效果模组。在画质和电池续航之间取得良好平衡。"
+      },
+      "Aggressive": {
+        "Name": "激进",
+        "Desc": "包含所有平衡优化，同时禁用Automated Animations、提供禁用 Dice So Nice 选项，并使用较低分辨率渲染。"
+      },
+      "SheetOnly": {
+        "Name": "仅角色卡",
+        "Desc": "禁用地图渲染，但保留部分 FVTT 功能。适用于大型世界或运行 FVTT 困难的设备。"
+      },
+      "Standalone": {
+        "Name": "独立页面",
+        "Desc": "轻量级独立页面，绕过 FVTT 客户端。最适合在 iPhone 或低内存设备上访问角色卡，但缺少许多 FVTT 功能。"
+      },
+      "Escalation": {
+        "Title": "性能仍然较低",
+        "Message": "你的设备正经历低帧率（{fps} FPS）。你想尝试 {nextMode} 模式吗？",
+        "Apply": "是",
+        "Skip": "稍后决定",
+        "StopAsking": "不再询问"
+      },
+      "ReloadTitle": "需要重新加载",
+      "ReloadPrompt": "性能模式设置已保存。需要重新加载页面才能使所有更改生效。",
+      "ReloadNow": "立即重新加载",
+      "ReloadLater": "稍后"
     },
     "ConnectPhone": {
-        "Title": "滑动显示二维码",
-		"ButtonName": "滑动显示二维码",
-        "Instructions": "在手机上扫描此二维码，以同一用户身份连接。",
-        "NetworkNote": "",
-        "CopyUrl": "复制链接",
-        "Copied": "链接已复制到剪贴板！",
-        "DontShowAgain": "启动时不显示此提示（可在用户配置对话框中重新打开）"
+      "Title": "滑动显示二维码",
+      "ButtonName": "滑动显示二维码",
+      "Instructions": "在手机上扫描此二维码，以同一用户身份连接。",
+      "NetworkNote": "",
+      "CopyUrl": "复制链接",
+      "Copied": "链接已复制到剪贴板！",
+      "DontShowAgain": "启动时不显示此提示（可在用户配置对话框中重新打开）"
     },
-	  "SettingsCleanup": {
-		"MenuButton": {
-		  "Name": "清理工具",
-		  "Label": "清理残留设置",
-		  "Hint": "每个已安装的模组都会留下设置项。扫描并删除由已禁用或已卸载模组留下的残留设置——这可能会减少世界加载时间。"
-		},
-		"WindowTitle": "清理工具",
-		"Title": "残留模组设置",
-		"Description": "这些设置项属于已不再激活的模组。删除它们有助于略微减少世界加载时间。",
-		"Scanning": "正在扫描设置...",
-		"NoOrphansFound": "未发现残留设置。你的世界很干净！",
-		"WorldSettings": "世界设置",
-		"ClientSettings": "客户端设置（浏览器）",
-		"SelectAll": "全选",
-		"Module": "模组",
-		"Status": "状态",
-		"SettingsCount": "设置项",
-		"Settings": "项设置",
-		"StatusInactive": "未启用",
-		"StatusUninstalled": "未安装",
-		"NoneSelected": "请至少选择一个模组进行清理。",
-		"ConfirmTitle": "确认删除",
-		"ConfirmMessage": "删除 {count} 项残留设置？此操作无法撤销。",
-		"ConfirmDelete": "删除",
-		"ConfirmCancel": "取消",
-		"DeletedSummary": "已删除 {world} 项世界设置和 {client} 项客户端设置。",
-		"DeleteSelected": "删除所选",
-		"Close": "关闭",
-		"Note": "仅显示来自未启用或未安装模组的设置。激活模组、系统和核心设置永远不会受影响。"
-	  },
-	  "MemoryDiag": {
-		"MenuButton": {
-		  "Name": "内存诊断",
-		  "Label": "打开内存诊断",
-		  "Hint": "按模组和资源类型分析内存使用情况。有助于识别在移动设备上消耗资源的项目。"
-		},
-		"WindowTitle": "内存诊断",
-		"Refresh": "刷新",
-		"Close": "关闭",
-		  "TABS": {
-			"overview": "概览",
-			"documents": "文档",
-			"textures": "材质",
-			"recommendations": "推荐"
-		  },
-		  "QuickStats": "快速统计",
-		  "WorldDocuments": "世界文档",
-		  "ActiveModules": "激活模组",
-		  "LoadedTextures": "已加载材质",
-		  "TextureMemory": "材质内存",
-		  "EstimatedTotal": "预估总内存",
-		  "EstimatedTotalHint": "JS堆内存（包含模组代码+文档）+ GPU材质",
-		  "CollectionCounts": "集合数量",
-		  "ToConsider": "待考虑",
-		  "DocumentsIntro": "侧边栏“世界”中的所有内容都会为每个连接的客户端加载到内存中。请在不主动使用时将角色、物品和场景保存在数据包中——它们仅在需要时加载，不会拖慢你的世界运行速度。",
-		  "Name": "名称",
-		  "Type": "类型",
-		  "DataSize": "数据大小",
-		  "Embedded": "内嵌",
-		  "NoDocuments": "此集合中没有文档。",
-		  "SkippedLargeCollection": "已跳过 {count} 个条目的大小计算（数量过大）。仅显示数量。",
-		  "WorldVsCompendium": "世界 vs 数据包",
-		  "WorldVsCompendiumHint": "世界文档始终加载到内存中。数据包文档按需延迟加载。",
-		  "World": "世界",
-		  "Compendium": "数据包",
-		  "WorldInMemory": "世界（始终在内存中）",
-		  "CompendiumLazy": "数据包（延迟加载）",
-		  "DiskUsage": "服务器磁盘使用情况",
-		  "DiskUsageHint": "服务器上每个数据集合的实际文件大小。",
-		  "WorldData": "世界数据",
-		  "CompendiumData": "数据包数据",
-		  "Collection": "集合",
-		  "Count": "数量",
-		  "DiskSize": "磁盘大小",
-		  "Pack": "包",
-		  "IndexEntries": "索引",
-		  "GMRequired": "服务器磁盘大小仅对GM可见。",
-		  "GPUTextureMemory": "GPU材质内存",
-		  "TexturesLoaded": "个材质已加载到GPU内存",
-		  "ByModule": "按模组",
-		  "ByCategory": "按类别",
-		  "LargestTextures": "最大材质",
-		  "Asset": "资源",
-		  "Size": "大小",
-		  "Memory": "内存",
-		  "Module": "模组",
-		  "Textures": "材质",
-		  "Category": "类别",
-		  "PerSceneTextures": "每场景材质预估",
-		  "PerSceneHint": "每个场景的预估GPU内存占用。激活/查看中的场景会加载材质。",
-		  "Scene": "场景",
-		  "Dimensions": "尺寸",
-		  "Assets": "资源",
-		  "Loaded": "已加载",
-		  "Estimated": "预估",
-		  "ShowMore": "显示更多 {count} 项...",
-		  "NoIssuesFound": "未发现问题。你的世界运行状况良好！"
-	  },
+    "SettingsCleanup": {
+      "MenuButton": {
+        "Name": "清理工具",
+        "Label": "清理残留设置",
+        "Hint": "每个已安装的模组都会留下设置项。扫描并删除由已禁用或已卸载模组留下的残留设置——这可能会减少世界加载时间。"
+      },
+      "WindowTitle": "清理工具",
+      "Title": "残留模组设置",
+      "Description": "这些设置项属于已不再激活的模组。删除它们有助于略微减少世界加载时间。",
+      "Scanning": "正在扫描设置...",
+      "NoOrphansFound": "未发现残留设置。你的世界很干净！",
+      "WorldSettings": "世界设置",
+      "ClientSettings": "客户端设置（浏览器）",
+      "SelectAll": "全选",
+      "Module": "模组",
+      "Status": "状态",
+      "SettingsCount": "设置项",
+      "Settings": "项设置",
+      "StatusInactive": "未启用",
+      "StatusUninstalled": "未安装",
+      "NoneSelected": "请至少选择一个模组进行清理。",
+      "ConfirmTitle": "确认删除",
+      "ConfirmMessage": "删除 {count} 项残留设置？此操作无法撤销。",
+      "ConfirmDelete": "删除",
+      "ConfirmCancel": "取消",
+      "DeletedSummary": "已删除 {world} 项世界设置和 {client} 项客户端设置。",
+      "DeleteSelected": "删除所选",
+      "Close": "关闭",
+      "Note": "仅显示来自未启用或未安装模组的设置。激活模组、系统和核心设置永远不会受影响。"
+    },
+    "MemoryDiag": {
+      "MenuButton": {
+        "Name": "内存诊断",
+        "Label": "打开内存诊断",
+        "Hint": "按模组和资源类型分析内存使用情况。有助于识别在移动设备上消耗资源的项目。"
+      },
+      "WindowTitle": "内存诊断",
+      "Refresh": "刷新",
+      "Close": "关闭",
+      "TABS": {
+        "overview": "概览",
+        "documents": "文档",
+        "textures": "材质",
+        "recommendations": "推荐"
+      },
+      "QuickStats": "快速统计",
+      "WorldDocuments": "世界文档",
+      "ActiveModules": "激活模组",
+      "LoadedTextures": "已加载材质",
+      "TextureMemory": "材质内存",
+      "EstimatedTotal": "预估总内存",
+      "EstimatedTotalHint": "JS堆内存（包含模组代码+文档）+ GPU材质",
+      "CollectionCounts": "集合数量",
+      "ToConsider": "待考虑",
+      "DocumentsIntro": "侧边栏“世界”中的所有内容都会为每个连接的客户端加载到内存中。请在不主动使用时将角色、物品和场景保存在数据包中——它们仅在需要时加载，不会拖慢你的世界运行速度。",
+      "Name": "名称",
+      "Type": "类型",
+      "DataSize": "数据大小",
+      "Embedded": "内嵌",
+      "NoDocuments": "此集合中没有文档。",
+      "SkippedLargeCollection": "已跳过 {count} 个条目的大小计算（数量过大）。仅显示数量。",
+      "WorldVsCompendium": "世界 vs 数据包",
+      "WorldVsCompendiumHint": "世界文档包含序列化数据以及来自系统准备的派生数据。数据包计数仅显示索引条目——完整文档在访问时才延迟加载，不计入此处。该条反映了内存比例（字节），而非计数比例。",
+      "World": "世界",
+      "Compendium": "数据包",
+      "WorldInMemory": "世界（内存中的原始数据 + 派生数据）",
+      "CompendiumLazy": "数据包（内存中的索引条目）",
+      "DiskUsage": "服务器磁盘使用情况",
+      "DiskUsageHint": "服务器上每个数据集合的实际文件大小。",
+      "WorldData": "世界数据",
+      "CompendiumData": "数据包数据",
+      "Collection": "集合",
+      "Count": "数量",
+      "DiskSize": "磁盘大小",
+      "Pack": "包",
+      "IndexEntries": "索引",
+      "GMRequired": "服务器磁盘大小仅对GM可见。",
+      "GPUTextureMemory": "GPU材质内存",
+      "TexturesLoaded": "个材质已加载到GPU内存",
+      "ByModule": "按模组",
+      "ByCategory": "按类别",
+      "LargestTextures": "最大材质",
+      "Asset": "资源",
+      "Size": "大小",
+      "Memory": "内存",
+      "Module": "模组",
+      "Textures": "材质",
+      "Category": "类别",
+      "PerSceneTextures": "每场景材质预估",
+      "PerSceneHint": "每个场景的预估GPU内存占用。激活/查看中的场景会加载材质。",
+      "Scene": "场景",
+      "Dimensions": "尺寸",
+      "Assets": "资源",
+      "Loaded": "已加载",
+      "Estimated": "预估",
+      "ShowMore": "显示更多 {count} 项...",
+      "NoIssuesFound": "未发现问题。你的世界运行状况良好！",
+      "UsageTracking": "文档使用追踪",
+      "UsageInactiveHint": "准确查看会话期间访问了哪些文档。追踪必须在世界初始化时启动，因此启用需要重新加载页面。重新加载后，正常使用世界几分钟，然后重新打开此对话框。未被访问的文档可考虑移至数据包。",
+      "UsageActiveHint": "追踪已激活 {elapsed}。计数显示已被代码访问或渲染到角色卡中的文档。迭代（侧边栏遍历等）特意不计入，以保持信号有意义。",
+      "UsageEnable": "启用追踪并重新加载",
+      "UsageDisable": "禁用追踪并重新加载",
+      "UsageEnableConfirm": "这将重新加载页面，以便使用追踪能在初始化时安装。重新加载后，正常使用世界几分钟，然后回到此处查看哪些文档被访问。",
+      "UsageDisableConfirm": "这将重新加载页面以移除追踪钩子。",
+      "UsageEnableReload": "启用并重新加载",
+      "UsageDisableReload": "禁用并重新加载",
+      "UsageLoaded": "已加载",
+      "UsageAccessed": "已访问",
+      "UsageRendered": "已渲染",
+      "UsageUntouched": "未访问",
+      "UsageUntouchedTotal": "未访问文档占用的总内存：{size}。这大致是如果将此状态下的所有内容都移至数据包（或一开始就不实例化），世界文档部分的堆可以缩减的量。"
+    },
     "Premium": {
       "DialogTitle": "会员功能",
       "TabAuthentication": "认证",
@@ -724,56 +756,56 @@
       "EnterCode": "请输入链接代码",
       "InvalidCode": "无效或已过期的代码"
     },
-	"Diagnostics": {
-		"CollectionActors": "角色",
-		"CollectionItems": "物品",
-		"CollectionScenes": "场景",
-		"CollectionJournals": "日志",
-		"CollectionTables": "随机表",
-		"CollectionPlaylists": "播放列表",
-		"CollectionMacros": "宏",
-		"CollectionMessages": "聊天消息",
-		"ConflictCompetingMobile": "{modules} 与 Swipe VTT 的触摸控制存在冲突。禁用它们可提升稳定性并降低内存占用。",
-		"ConflictAnimationStack": "{count} 个动画模组正在运行 ({modules})。动画库在移动设备上会占用大量 GPU 内存，且通常在 iOS 上无法正常工作。",
-		"ConflictDiceModules": "{count} 个骰子模组正在运行。每个模组都会增加 WebGL 材质。建议在移动设备上仅保留 Dice So Nice。",
-		"ConflictFxModules": "{modules}: GPU 着色器效果会增加移动设备的内存压力。",
-		"ConflictMediaOptimizer": "Media Optimizer 与 Swipe VTT 内置的图像优化器同时运行。这可能导致冲突或重复处理。",
-		"RecActorCount": "你的世界中有 {count} 个角色已加载到内存中。建议将 NPC 移至数据包，仅在需要时导入。",
-		"RecActorCountHint": "将非激活 NPC 移至数据包",
-		"RecBloatedActors": "角色内嵌物品过多",
-		"RecBloatedActorsHint": "将未使用的物品归档至数据包",
-		"RecChatMessages": "你有 {count} 条聊天消息。旧消息会占用每个客户端的内存。",
-		"RecChatMessagesHint": "使用“清空聊天”或删除旧消息",
-		"RecOversizedTextures": "场景背景图尺寸过大（超过 4096px）",
-		"RecOversizedTexturesHint": "使用图像优化器创建适合移动设备的版本",
-		"RecStorageSize": "世界数据在磁盘上的总大小为 {size}。",
-		"RecStorageSizeHint": "考虑移除未使用的数据包或清理世界数据",
-		"RecWorldHeavy": "文档主要存储在世界中的集合（始终加载到内存）",
-		"RecWorldHeavyHint": "将很少使用的条目移至数据包",
-		"RecComplexWalls": "场景包含复杂的墙体几何结构",
-		"RecComplexWallsHint": "复杂的墙体会增加内存占用和渲染时间",
-		"WarnTexturesCritical": "GPU 材质内存极高 ({size})。这很可能导致移动设备崩溃。",
-		"WarnTexturesHigh": "GPU 材质内存偏高 ({size})。可能在低端设备上引发问题。",
-		"WarnModulesCritical": "有 {count} 个模组正在运行。这对移动设备来说极高。每个模组都会增加 JS、CSS 和钩子开销。",
-		"WarnModulesHigh": "有 {count} 个模组正在运行。建议为移动端会话禁用非必要模组。",
-		"WarnDOMComplexity": "DOM 包含 {count} 个元素。DOM 复杂度高会增加内存占用并拖慢渲染速度。"
-	  },
-	  "UserConfig": {
-		"Description": "为单个玩家配置移动模式与性能设置。",
-		"Mode": "移动模式",
-		"ModeAuto": "自动检测",
-		"ModeFull": "完整移动模式",
-		"ModeSheetsOnly": "仅角色卡",
-		"ModeOff": "桌面模式（关闭）",
-		"Force": "强制设置",
-		"Overrides": "性能覆盖",
-		"PlayerChoice": "玩家自选",
-		"On": "开启",
-		"Off": "关闭",
-		"NoUsers": "此世界中暂无非GM用户。",
-		"ForcedByGM": "由GM设置",
-		"ReloadTitle": "设置已更改",
-		"ReloadPrompt": "你的GM已更新你的移动设置。需要重新加载页面以使更改生效。"
-	  }
+    "Diagnostics": {
+      "CollectionActors": "角色",
+      "CollectionItems": "物品",
+      "CollectionScenes": "场景",
+      "CollectionJournals": "日志",
+      "CollectionTables": "随机表",
+      "CollectionPlaylists": "播放列表",
+      "CollectionMacros": "宏",
+      "CollectionMessages": "聊天消息",
+      "ConflictCompetingMobile": "{modules} 与 Swipe VTT 的触摸控制存在冲突。禁用它们可提升稳定性并降低内存占用。",
+      "ConflictAnimationStack": "{count} 个动画模组正在运行 ({modules})。动画库在移动设备上会占用大量 GPU 内存，且通常在 iOS 上无法正常工作。",
+      "ConflictDiceModules": "{count} 个骰子模组正在运行。每个模组都会增加 WebGL 材质。建议在移动设备上仅保留 Dice So Nice。",
+      "ConflictFxModules": "{modules}: GPU 着色器效果会增加移动设备的内存压力。",
+      "ConflictMediaOptimizer": "Media Optimizer 与 Swipe VTT 内置的图像优化器同时运行。这可能导致冲突或重复处理。",
+      "RecActorCount": "你的世界中有 {count} 个角色已加载到内存中。建议将 NPC 移至数据包，仅在需要时导入。",
+      "RecActorCountHint": "将非激活 NPC 移至数据包",
+      "RecBloatedActors": "角色内嵌物品过多",
+      "RecBloatedActorsHint": "将未使用的物品归档至数据包",
+      "RecChatMessages": "你有 {count} 条聊天消息。旧消息会占用每个客户端的内存。",
+      "RecChatMessagesHint": "使用“清空聊天”或删除旧消息",
+      "RecOversizedTextures": "场景背景图尺寸过大（超过 4096px）",
+      "RecOversizedTexturesHint": "使用图像优化器创建适合移动设备的版本",
+      "RecStorageSize": "世界数据在磁盘上的总大小为 {size}。",
+      "RecStorageSizeHint": "考虑移除未使用的数据包或清理世界数据",
+      "RecWorldHeavy": "文档主要存储在世界中的集合（始终加载到内存）",
+      "RecWorldHeavyHint": "将很少使用的条目移至数据包",
+      "RecComplexWalls": "场景包含复杂的墙体几何结构",
+      "RecComplexWallsHint": "复杂的墙体会增加内存占用和渲染时间",
+      "WarnTexturesCritical": "GPU 材质内存极高 ({size})。这很可能导致移动设备崩溃。",
+      "WarnTexturesHigh": "GPU 材质内存偏高 ({size})。可能在低端设备上引发问题。",
+      "WarnModulesCritical": "有 {count} 个模组正在运行。这对移动设备来说极高。每个模组都会增加 JS、CSS 和钩子开销。",
+      "WarnModulesHigh": "有 {count} 个模组正在运行。建议为移动端会话禁用非必要模组。",
+      "WarnDOMComplexity": "DOM 包含 {count} 个元素。DOM 复杂度高会增加内存占用并拖慢渲染速度。"
+    },
+    "UserConfig": {
+      "Description": "为单个玩家配置移动模式与性能设置。",
+      "Mode": "移动模式",
+      "ModeAuto": "玩家自选",
+      "ModeFull": "完整移动模式",
+      "ModeSheetsOnly": "仅角色卡",
+      "ModeOff": "桌面模式（关闭）",
+      "Force": "强制设置",
+      "Overrides": "性能覆盖",
+      "PlayerChoice": "玩家自选",
+      "On": "开启",
+      "Off": "关闭",
+      "NoUsers": "此世界中暂无非GM用户。",
+      "ForcedByGM": "由GM设置",
+      "ReloadTitle": "设置已更改",
+      "ReloadPrompt": "你的GM已更新你的移动设置。需要重新加载页面以使更改生效。"
+    }
   }
 }

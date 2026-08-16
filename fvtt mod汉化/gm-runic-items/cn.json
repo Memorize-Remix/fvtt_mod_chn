@@ -1,0 +1,860 @@
+{
+  "gm-runic-items": {
+    "panel": {
+      "title": "索尔瓦瑞符文工艺",
+      "power": "符文之力",
+      "empowerment": "符文强化",
+      "empowermentHint": "每道铭文使所选属性 +1",
+      "legacy": "符文传承",
+      "feat": "专长",
+      "spell": "法术"
+    },
+    "rarity": {
+      "Common": "普通",
+      "Uncommon": "非普通",
+      "Rare": "稀有",
+      "VeryRare": "极稀有",
+      "Legendary": "传奇"
+    },
+    "picker": {
+      "title": "哪个目标？",
+      "intro": "{item} 命中了多个目标。请选择其符文生效的目标。",
+      "away": "相距 {distance} {unit}",
+      "declined": "未应用来自 {item} 的任何符文效果。",
+      "remove": "移除",
+      "searchFeats": "搜索专长……",
+      "searchSpells": "搜索法术……",
+      "loading": "正在载入合集数据……",
+      "showingFirst": "显示前 {limit} 项（共 {total} 项）— 输入以筛选",
+      "countAvailable": "可用 {type} 共 {total} 项",
+      "noMatch": "没有 {type} 匹配「{query}」",
+      "typeFeats": "专长",
+      "typeSpells": "法术",
+      "featInscribed": "专长已铭刻到此物品中。",
+      "spellInscribed": "{level} 环法术已铭刻到此物品中。"
+    },
+    "notify": {
+      "legacyGranted": "符文传承：「{name}」已授予 {actor}。",
+      "legacyEquipRequired": "符文传承：「{item}」必须已装备才能使该授予生效。",
+      "legacyAttuneRequired": "符文传承：「{item}」必须已装备并调谐才能使该授予生效。",
+      "grantedBy": "由 {item} 授予",
+      "cacheCleared": "[符文物品] 合集缓存已清空。",
+      "cacheReady": "[符文物品] 缓存就绪 — 共 {packs} 个合集、{feats} 个专长、{spells} 个法术。"
+    },
+    "settings": {
+      "minRoleToEdit": {
+        "name": "编辑符文的最低权限角色",
+        "hint": "能够打开符文选择器并指派符文的最低用户角色。达到或高于所选等级的角色拥有权限。例如，选择「受信任玩家」也会授予「助理 GM」和 GM 权限。默认仅限 GM。"
+      },
+      "cacheInfo": {
+        "name": "合集缓存",
+        "hint": "专长和法术在首次使用时从已加载的合集建立索引。可使用下方按钮手动管理缓存。"
+      },
+      "cacheLabel": "合集缓存",
+      "clearCache": "清空缓存",
+      "refreshCache": "刷新缓存",
+      "refreshing": "正在刷新……",
+      "cacheNotes": "专长和法术在每个会话首次使用时从已加载的合集建立索引。「清空」会清空缓存，「刷新」会清空并从当前已加载的合集重建。",
+      "automationMode": {
+        "name": "符文自动化",
+        "hint": "「自动」即时结算符文效果。「手动」为每个效果（伤害、移动、状态、豁免检定）发布一张聊天卡片，由 GM 或玩家点击应用，类似于普通 dnd5e 攻击的伤害在聊天中等待应用的方式。",
+        "auto": "自动",
+        "manual": "手动（聊天卡片）"
+      },
+      "narrateUntargeted": {
+        "name": "描述无目标的符文攻击",
+        "hint": "当带有符文的武器攻击没有目标时，发布一张聊天卡片，描述其符文本会产生的效果（骰子已掷出），以便 GM 手动应用。自然骰 1 从不描述。"
+      }
+    },
+    "presets": {
+      "save": "保存预设",
+      "load": "载入预设",
+      "dialogTitle": "保存符文预设",
+      "namePlaceholder": "预设名称……",
+      "saved": "预设「{name}」已保存。",
+      "applied": "预设「{name}」已应用。",
+      "deleted": "预设「{name}」已删除。",
+      "empty": "此物品类型没有已保存的预设。",
+      "settingsTitle": "符文预设",
+      "settingsHint": "查看并删除已保存的符文预设配置。",
+      "delete": "删除",
+      "melee": "近战",
+      "ranged": "远程",
+      "armor": "护甲",
+      "noneForCategory": "尚未保存 {category} 预设。",
+      "confirmDelete": "删除预设「{name}」？",
+      "metaEmp": "强化铭文：{count}",
+      "metaFeat": "已铭刻专长",
+      "metaSpell": "已铭刻法术"
+    },
+    "combo": {
+      "label": "组合",
+      "description": {
+        "ember-surge": "当「余烬烙印」造成重击时，「破灭印记」的护甲裂痕会作用于所有攻击（目标燃烧期间），同时「锻炉钟」会一次性召唤附近所有盟友向前。",
+        "rift-break": "当「石裂」命中时，「流沙抓握」无需豁免即触发，且「幻影守护」在本轮内使整个队伍免受借机攻击。",
+        "crystal-anchor": "「暗流」的拖拽会自动触发「流沙禁锢」，使速度降至 0，同时「灼痕」的迷失效果扩展到所有属性检定。",
+        "blight-field": "「灰烬云」会跟随受疫病影响的目标移动。云中的任何生物都会失去掩护和隐形。",
+        "ironwall": "「余烬帷幕」的推离无需豁免即触发「守护脉冲」，且「锻炉护盾」的 AC 加值扩展到 {radius} {unit} 内的所有盟友。",
+        "morrains-resolve": "「守卫突进」变为自由动作。守卫者无需消耗反应即可冲过去保护盟友。"
+      }
+    },
+    "crack": {
+      "statOverCap": "{stats} 超出上限（30）",
+      "featMissing": "专长在合集中已不存在",
+      "spellMissing": "法术在合集中已不存在",
+      "featDuplicate": "专长已由 {item} 授予",
+      "spellDuplicate": "法术已由 {item} 授予"
+    },
+    "combat": {
+      "emberveil": {
+        "pushed": "{attacker} 被 {target} 的「余烬帷幕」弹开 {distance} {unit}，且无法重新进入其所在格。"
+      },
+      "forgeshield": {
+        "allies": "{target} 周围 {radius} {unit} 内的盟友因「锻炉护盾」在 2 轮内获得 +2 AC。"
+      },
+      "wardpulse": {
+        "blocked": "{attacker} 体质豁免失败，失去其附赠动作。",
+        "resisted": "{attacker} 抵抗了「守护脉冲」。"
+      },
+      "vanguard": {
+        "dialogTitle": "先锋 — 守卫突进",
+        "dialogContent": "<p>{actor}：使用「守卫突进」保护 {ally}？</p>",
+        "dialogFreeAction": "<p>{actor}：使用「守卫突进」（自由动作）保护 {ally}？</p>",
+        "noPosition": "{actor} 找不到有效的相邻位置。",
+        "rushed": "{actor} 冲过去保护 {ally}。{attacker} 的所有攻击在本轮结束前承受劣势。",
+        "partial": "{actor} 向 {ally} 冲去，但未能及时拉近距离。{attacker} 不受任何减益。"
+      },
+      "stonewarden": {
+        "flared": "{name} 的「岩石守卫」符文爆发，在其生命值降至一半以下时恢复 {total} 点生命值。",
+        "prone": "{name} 受伤倒地时「岩石守卫」脉动，恢复 {total} 点生命值。"
+      },
+      "ashenmantle": {
+        "erupted": "{name} 的「灰烬披风」爆发。他们获得对所有伤害的抗性，且本轮内无法被移动或击倒。"
+      },
+      "stonecleft": {
+        "pushed": "{target} 被「石裂」推离 {distance} {unit} 并陷入踉跄。",
+        "resisted": "{target} 抵抗了「石裂」。",
+        "autofail": "{target} 被「石裂」的重击震退 {distance} {unit}。"
+      },
+      "mirageward": {
+        "active": "「幻影守护」在 {target} 周围闪烁。直到 {attacker} 的下回合开始前，他们无法进行借机攻击。"
+      },
+      "emberbrand": {
+        "ignited": "{target} 被烙上余烬之火。直到 {actor} 的下回合开始前，命中他们的盟友额外造成 {die} 点 {dtype} 伤害。",
+        "tick": "{name} 受到「余烬烙印」造成的额外 {total} 点 {dtype} 伤害。"
+      },
+      "sandgrasp": {
+        "seized": "流沙抓住 {target}。其速度降低 {penalty} {unit}。",
+        "resisted": "{target} 抵抗了「流沙抓握」。"
+      },
+      "ruinmark": {
+        "cracked": "{target} 的防御被「破灭印记」击破。AC -2，持续 {rounds} 轮。"
+      },
+      "forgebell": {
+        "rang": "「锻炉钟」敲响。{ally} 可使用其反应向目标移动最多 {distance} {unit}。",
+        "moved": "「锻炉钟」敲响。{ally} 自动向 {target} 移动 {distance} {unit}，其反应移动还剩余 {remaining} {unit} 可供使用。",
+        "blocked": "「锻炉钟」敲响，但 {ally} 没有通往 {target} 的畅通路径。完整的 {distance} {unit} 反应移动仍然可用。",
+        "dialogTitle": "锻炉钟 — 反应",
+        "anAlly": "一名盟友",
+        "noAllies": "范围内没有盟友",
+        "nearbyAllies": "附近的盟友"
+      },
+      "burntrace": {
+        "marked": "{target} 被「灼痕」标记，其攻击在 1 轮内承受劣势。"
+      },
+      "sandhold": {
+        "held": "{target} 的移动因「流沙禁锢」降低 {penalty} {unit}。"
+      },
+      "ashcloud": {
+        "erupted": "「灰烬云」爆发。云中的生物必须豁免，否则中毒。",
+        "failed": "{name} 豁免失败，受到 {total} 点毒素伤害。"
+      },
+      "undertow": {
+        "pulled": "{target} 被「暗流」向落点拖拽 {distance} {unit}。"
+      },
+      "scorcheye": {
+        "stripped": "「灼眼」剥离了 {target} 的隐蔽。直到你的下回合开始前，他们无法利用掩护或隐形。"
+      },
+      "wasteblight": {
+        "poisoned": "{target} 被「荒芜疫病」感染。附近的生物有传播腐化的风险。",
+        "spread": "{name} 豁免失败，因「荒芜疫病」的传播受到 {total} 点毒素伤害。",
+        "resisted": "{name} 抵抗了「荒芜疫病」的传播。"
+      }
+    },
+    "effects": {
+      "emberveilBlocked": "被「余烬帷幕」弹开。在本轮结束前无法进入 {target} 的所在格。",
+      "wardpulseBlock": "附赠动作本轮被「守护脉冲」封锁。",
+      "forgeshield": "因「锻炉护盾」光环，AC 在 2 轮内 +2。",
+      "vanguardDisadvantage": "因「守卫突进」，所有攻击检定在本轮结束前承受劣势。",
+      "stonecleft": "因「石裂」，移动速度在本轮结束前减半。",
+      "mirageward": "因「幻影守护」，直到 {attacker} 的下回合开始前无法进行借机攻击。",
+      "ruinmark": "因「破灭印记」，AC 在 {rounds} 轮内 -2。",
+      "emberbranded": "被「余烬烙印」标记。命中此生物的盟友额外造成 {die} 点 {dtype} 伤害。",
+      "sandgrasp": "因「流沙抓握」，移动速度降低 {penalty} {unit}。",
+      "burntrace": "被「灼痕」标记。攻击检定在 1 轮内承受劣势。",
+      "burntraceAnchored": "被「灼痕」标记。攻击检定和属性检定在 1 轮内承受劣势。",
+      "sandhold": "因「流沙禁锢」，移动速度降低 {penalty} {unit}。",
+      "sandholdAnchored": "因「流沙禁锢」（锚定），移动速度降至 0。",
+      "scorcheye": "被「灼眼」剥离隐蔽。1 轮内无法获得掩护或隐形的益处。",
+      "scorcheyeBlightField": "站在疫病领域内时被「灼眼」剥离隐蔽。无法获得掩护或隐形的益处。",
+      "wasteblight": "被「荒芜疫病」感染并中毒。相邻生物在每个自己回合开始时都有感染腐化的风险。",
+      "ashenmantleResistance": "因「灰烬披风」，本轮对所有伤害类型具有抗性。",
+      "ashenmantleImmovable": "因「灰烬披风」，本轮无法被移动、推离或击倒。",
+      "armorAc": "因「符文守护」，AC 增加 {bonus}。"
+    },
+    "common": {
+      "close": "关闭",
+      "cancel": "取消",
+      "confirm": "确认"
+    },
+    "effectNames": {
+      "emberveilBlocked": "余烬帷幕·被弹开",
+      "bonusActionBlocked": "附赠动作被封锁",
+      "forgeshield": "锻炉护盾",
+      "vanguardDisadvantage": "守卫突进·劣势",
+      "stonecleft": "踉跄（石裂）",
+      "mirageward": "幻影守护",
+      "miragewardParty": "幻影守护（队伍）",
+      "ruinmark": "破灭印记（护甲击破）",
+      "emberbranded": "余烬烙印",
+      "sandgrasp": "流沙抓握",
+      "burntrace": "灼痕",
+      "burntraceAnchored": "灼痕（锚定）",
+      "sandhold": "流沙禁锢",
+      "sandholdAnchored": "流沙禁锢（锚定）",
+      "scorcheye": "灼眼",
+      "scorcheyeBlightField": "灼眼（疫病领域）",
+      "wasteblight": "荒芜疫病",
+      "ashenmantle": "灰烬披风",
+      "ashenmantleImmovable": "灰烬披风（不可移动）",
+      "armorAc": "符文守护（{item}）",
+      "empowerment": "符文强化（{item}）"
+    },
+    "saves": {
+      "wardpulse": "守护脉冲（DC {dc}）",
+      "stonecleft": "石裂（DC {dc}）",
+      "sandgrasp": "流沙抓握（DC {dc}）",
+      "ashcloud": "灰烬云（DC {dc}）",
+      "wasteblight": "荒芜疫病传播（DC {dc}）"
+    },
+    "engine": {
+      "saveFlavor": "{rune}（DC {dc}）",
+      "resisted": "{name} 抵抗了 {rune}。",
+      "pushed": "{name} 被推离 {distance} {unit}。",
+      "pulled": "{name} 被拖拽 {distance} {unit}。",
+      "moveBlocked": "{name} 无法被移动。没有畅通路径。",
+      "damaged": "{name} 受到 {total} 点 {type} 伤害。",
+      "damagedHalf": "{name} 受到 {total} 点 {type} 伤害（豁免成功减半）。",
+      "healed": "{name} 恢复 {total} 点生命值。",
+      "tempHp": "{name} 获得 {total} 点临时生命值。",
+      "status": "{name} 处于 {status} 状态。",
+      "reminder": "{name}：{text}。",
+      "cloud": "{rune} 在落点留下持续云雾。",
+      "cloudTick": "{name} 豁免失败，在 {rune} 的云雾中受到 {total} 点伤害。",
+      "light": "{name} 在半径 {radius} {unit} 内发出明亮光照。",
+      "lightDesc": "由 {rune} 发出明亮光照。",
+      "statAcBonus": "{name} 获得 +2 AC。",
+      "statAcBonusDesc": "因 {rune}，AC 增加 2。",
+      "statAcPenalty": "{name} 的 AC 降低 2。",
+      "statAcPenaltyDesc": "因 {rune}，AC 降低 2。",
+      "statSpeedPenalty": "{name} 的速度降低 {penalty} {unit}。",
+      "statSpeedPenaltyDesc": "因 {rune}，移动速度降低 {penalty} {unit}。",
+      "statSpeedHalf": "{name} 的移动减半。",
+      "statSpeedHalfDesc": "因 {rune}，移动速度减半。",
+      "statSpeedZero": "{name} 的速度降至 0。",
+      "statSpeedZeroDesc": "因 {rune}，移动速度降至 0。",
+      "statDisadvAttack": "{name} 的攻击检定承受劣势。",
+      "statDisadvAttackDesc": "因 {rune}，攻击检定承受劣势。使用 midi-qol 时自动执行；否则仅作提醒。",
+      "statInitAdv": "{name} 以优势掷先攻。",
+      "statInitAdvDesc": "因 {rune}，先攻具有优势。",
+      "statResistAll": "{name} 获得对所有伤害的抗性。",
+      "statResistAllDesc": "因 {rune}，对所有伤害类型具有抗性。",
+      "statDisadvCheck": "{name} 的属性检定承受劣势。",
+      "statDisadvCheckDesc": "因 {rune}，属性检定承受劣势。在核心 dnd5e 4.1+ 中自动执行；已包含 midi-qol 标记。",
+      "lastsRound": "持续 1 轮。",
+      "lastsRounds": "持续 {rounds} 轮。",
+      "brand": "{name} 被烙印：对其的命中额外造成 {die} 点伤害。",
+      "brandDesc": "对命中此生物额外造成 {die} 点伤害（{rune}）。",
+      "brandTick": "{name} 受到 {rune} 造成的额外 {total} 点伤害。",
+      "contagion": "{name} 变得具有传染性。",
+      "contagionDesc": "回合结束时与此生物相邻的生物必须豁免，否则被感染（{rune}）。",
+      "contagionSpread": "{name} 被 {rune} 感染，受到 {total} 点伤害。",
+      "contagionResisted": "{name} 抵抗了 {rune}。",
+      "allyDashNone": "符文发出召唤，但范围内没有盟友响应（最多 {distance} {unit}）。",
+      "allyDashPick": "选择一名盟友向目标移动最多 {distance} {unit}。",
+      "allyDashMoved": "{ally} 向 {target} 移动 {distance} {unit}。",
+      "allyDashBlocked": "{ally} 找不到通往 {target} 的路径（最多 {distance} {unit}）。",
+      "guardianRushConfirm": "{actor}：使用你的反应冲向 {ally} 身边？",
+      "guardianRushNoPath": "{name} 无法到达与盟友相邻的位置。",
+      "guardianRushPartial": "{name} 冲向 {ally}，但无法到达其身边。",
+      "guardianRush": "{name} 冲到 {ally} 身边；{attacker} 的攻击在 1 轮内承受劣势。",
+      "misconfigured": "{name} 配置有误，已跳过。请打开符文熔炉修复。",
+      "statDenyBonus": "{name} 失去其附赠动作。",
+      "statDenyReaction": "{name} 失去其反应。",
+      "statDenyBonusDesc": "因 {rune} 失去附赠动作。使用 midi-qol 时自动执行。",
+      "statDenyReactionDesc": "因 {rune} 失去反应。使用 midi-qol 时自动执行。",
+      "teleportToward": "{name} 闪烁靠近 {distance} {unit}。",
+      "teleportAway": "{name} 闪烁远离 {distance} {unit}。",
+      "teleportBlocked": "{name} 无法闪烁。该方向没有可见空间。"
+    },
+    "runeforge": {
+      "title": "符文熔炉",
+      "openTitle": "打开符文熔炉",
+      "keybind": "打开符文熔炉",
+      "missingRune": "未知符文",
+      "missingRuneDesc": "此符文的定义在当前世界中不可用。请重新导入或清空该槽位。",
+      "cursedName": "未鉴定符文",
+      "cursedDesc": "其铭文无法辨认。",
+      "tabs": {
+        "library": "符文库",
+        "editor": "符文编辑器",
+        "combo": "组合编辑器"
+      },
+      "lib": {
+        "new": "+ 锻造新符文",
+        "import": "导入 JSON",
+        "export": "全部导出",
+        "coreMelee": "核心 — 近战",
+        "coreRanged": "核心 — 远程",
+        "coreArmor": "核心 — 护甲",
+        "empty": "这里还没有内容。",
+        "core": "核心",
+        "customBadge": "自定义",
+        "confirmDelete": "删除符文「{name}」？使用它的物品将显示未知符文插槽。",
+        "deleted": "符文「{name}」已删除。",
+        "saved": "符文「{name}」已锻造。",
+        "importResult": "已导入 {runes} 个符文和 {combos} 个组合。",
+        "importErrors": "部分条目已跳过：{errors}",
+        "exportDone": "自定义符文已导出到 JSON 文件。",
+        "customMelee": "自定义 — 近战",
+        "customRanged": "自定义 — 远程",
+        "customArmor": "自定义 — 护甲",
+        "collapseAll": "全部折叠",
+        "expandAll": "全部展开",
+        "filterAll": "全部",
+        "filterCustom": "自定义",
+        "filterCore": "核心"
+      },
+      "locked": {
+        "text": "这是一个核心符文。它随模组提供，无法编辑。可复制它作为起点。",
+        "duplicate": "复制",
+        "copySuffix": "（副本）",
+        "new": "改为新建"
+      },
+      "step": {
+        "identity": "身份",
+        "trigger": "触发条件",
+        "save": "豁免检定门槛",
+        "limit": "使用限制",
+        "actions": "动作 — 自上而下执行"
+      },
+      "identity": {
+        "namePh": "符文名称……",
+        "browse": "浏览 SVG 文件……",
+        "cursed": "诅咒 — 在物品被鉴定前隐藏符文的真实名称与效果",
+        "cursedShort": "诅咒",
+        "passiveAc": "被动 AC — 装备时授予稀有度 AC 加值"
+      },
+      "trigger": {
+        "onHit": {
+          "name": "命中时",
+          "desc": "当此武器的攻击命中时触发。"
+        },
+        "onCrit": {
+          "name": "重击时",
+          "desc": "仅在重击时触发。"
+        },
+        "whenStruck": {
+          "name": "被击中时",
+          "desc": "当穿戴者被近战攻击命中时触发。"
+        },
+        "halfHp": {
+          "name": "生命值低于一半时",
+          "desc": "当伤害使穿戴者的生命值降至一半以下时触发。"
+        },
+        "turnStart": {
+          "name": "回合开始光环",
+          "desc": "在持有者的回合开始时触发，影响 {radius} {unit} 内的生物。"
+        },
+        "onMiss": {
+          "name": "未命中时",
+          "desc": "当此武器的攻击未命中时触发。"
+        },
+        "onKill": {
+          "name": "击杀时",
+          "desc": "当此武器将目标的生命值降至 0 时触发。"
+        },
+        "onSpellCast": {
+          "name": "施放法术时",
+          "desc": "当持用者施放法术时触发。"
+        },
+        "whenMissed": {
+          "name": "未被命中时",
+          "desc": "当近战攻击未命中穿戴者时触发。"
+        },
+        "concBreak": {
+          "name": "专注结束时",
+          "desc": "当穿戴者的专注结束时触发。"
+        },
+        "proximity": {
+          "name": "敌人接近时",
+          "desc": "当敌人首次进入穿戴者 {radius} {unit} 范围内时触发。"
+        },
+        "combatStart": {
+          "name": "战斗开始时",
+          "desc": "战斗开始时为持有者触发一次。"
+        },
+        "turnEnd": {
+          "name": "回合结束光环",
+          "desc": "在持有者的回合结束时触发，影响 {radius} {unit} 内的生物。"
+        },
+        "allyStruck": {
+          "name": "盟友被击中时",
+          "desc": "当战斗中一名盟友被近战攻击命中时，为穿戴者触发。"
+        },
+        "whenProne": {
+          "name": "倒地时",
+          "desc": "当穿戴者被击倒时触发。"
+        }
+      },
+      "save": {
+        "enable": "此符文可被豁免检定抵抗",
+        "who": "谁进行豁免",
+        "ability": "属性",
+        "dc": "DC",
+        "critAuto": "重击自动使豁免失败"
+      },
+      "who": {
+        "target": "被击中的目标",
+        "attacker": "攻击者",
+        "self": "持用者",
+        "selfArmor": "穿戴者",
+        "allies": "范围内的盟友",
+        "enemies": "范围内的敌人",
+        "area": "区域内的生物"
+      },
+      "limit": {
+        "none": "无限",
+        "round": "每轮一次",
+        "combat": "每场战斗一次",
+        "rest": "每次休息一次"
+      },
+      "act": {
+        "add": "+ 添加动作",
+        "applies": "应用于",
+        "onSave": "豁免时",
+        "negate": "被抵消",
+        "half": "减半",
+        "full": "始终生效",
+        "remove": "删除",
+        "radius": "半径",
+        "feet": "{value} {unit}",
+        "duration": "持续时间",
+        "rounds": "{rounds} 轮",
+        "roundsDie": "稀有度骰",
+        "affects": "影响",
+        "immediate": "放置时立即爆发",
+        "status": "豁免失败时的状态",
+        "statusNone": "无",
+        "distance": "距离",
+        "direction": "方向",
+        "effect": "效果",
+        "mode": "模式",
+        "damageType": "伤害类型",
+        "condition": "状态"
+      },
+      "action": {
+        "move": {
+          "label": "推离 / 拉近 Token"
+        },
+        "stat": {
+          "label": "修改属性"
+        },
+        "damage": {
+          "label": "伤害 / 治疗"
+        },
+        "status": {
+          "label": "施加状态"
+        },
+        "reminder": {
+          "label": "提醒效果"
+        },
+        "cloud": {
+          "label": "持续云雾"
+        },
+        "light": {
+          "label": "Token 光源"
+        },
+        "teleport": {
+          "label": "传送"
+        },
+        "brand": {
+          "label": "烙印"
+        },
+        "contagion": {
+          "label": "传染"
+        },
+        "allyDash": {
+          "label": "盟友疾走"
+        },
+        "guardianRush": {
+          "label": "守卫突进"
+        }
+      },
+      "opt": {
+        "move": {
+          "away": "推离",
+          "toward": "拉近"
+        },
+        "stat": {
+          "acBonus": "AC +2",
+          "acPenalty": "AC -2",
+          "speedPenalty": "速度减益",
+          "speedHalf": "速度减半",
+          "speedZero": "速度 0",
+          "disadvAttack": "攻击劣势",
+          "tempHp": "临时生命值",
+          "resistAll": "全抗性",
+          "initAdv": "先攻优势",
+          "disadvCheck": "检定劣势",
+          "denyBonus": "剥夺附赠动作",
+          "denyReaction": "剥夺反应"
+        },
+        "damage": {
+          "damage": "伤害",
+          "heal": "治疗"
+        },
+        "affects": {
+          "all": "所有生物",
+          "enemies": "仅敌人",
+          "allies": "仅盟友"
+        },
+        "teleport": {
+          "away": "闪烁远离",
+          "toward": "闪烁靠近"
+        }
+      },
+      "reminderPh": "提醒文本，例如：无法进行借机攻击……",
+      "cloudNote": "锚定于落点。使用此符文的豁免门槛与稀有度骰进行每轮判定，持续 3 轮。",
+      "preview": {
+        "title": "实时预览",
+        "locked": "核心（已锁定）",
+        "forge": "锻造符文",
+        "forged": "已锻造",
+        "export": "导出 JSON",
+        "noActions": "至少添加一个动作来定义此符文的效果。"
+      },
+      "svg": {
+        "title": "从 SVG 导入雕文",
+        "path": "路径提取",
+        "silhouette": "剪影着色",
+        "pathNote": "可重新着色的描边，保留绘制动画。最适合线条图标。",
+        "silhouetteNote": "以符文颜色着色的填充形状。适用于复杂图案。",
+        "failed": "无法读取该 SVG：{error}",
+        "pickImage": "选择一个 .svg 文件。"
+      },
+      "combo": {
+        "trio": "选择三枚符文",
+        "identity": "组合标识",
+        "existing": "现有的自定义组合",
+        "pickHint": "选择同一类别的三枚符文。当三枚符文共享一件物品的符文槽位时，组合便会激活。",
+        "complete": "三枚符文已选定。请在下方命名并锻造。",
+        "namePh": "组合名称……",
+        "descPh": "当这三枚符文一起嵌入时会有什么变化……",
+        "skipSave": "组合激活时移除成员符文的豁免检定",
+        "skipSaveFor": "{name} 必定命中（无需豁免）",
+        "save": "锻造组合",
+        "saved": "组合「{name}」已锻造。",
+        "edit": "编辑",
+        "confirmDelete": "删除组合「{name}」？",
+        "empty": "还没有自定义组合。",
+        "issuesHead": "尚未就绪，无法锻造：",
+        "issueName": "请为这个组合命名。",
+        "issueRunes": "用同一类别且互不相同的三枚符文填满三个槽位。",
+        "issueDescription": "请描述此组合嵌入后会发生什么。",
+        "issueOther": "{message}",
+        "category": "类别"
+      },
+      "err": {
+        "invalid": "无法锻造：{errors}"
+      },
+      "phrase": {
+        "and": "和",
+        "saveOr": "或",
+        "save": "{who} 进行一次 DC {dc} 的 {ability} 豁免",
+        "critAuto": "重击时，豁免自动失败。",
+        "onSaveHalf": "（豁免成功时减半）",
+        "onSaveFull": "无论豁免结果如何",
+        "onSaveFail": "豁免失败时",
+        "trigger": {
+          "onHit": "命中时，",
+          "onCrit": "重击时，",
+          "whenStruck": "当穿戴者被近战攻击命中时，",
+          "halfHp": "当穿戴者的生命值降至一半以下时，",
+          "turnStart": "在持有者的回合开始时，",
+          "onMiss": "当攻击未命中时，",
+          "onKill": "当目标被击杀时，",
+          "onSpellCast": "当持用者施放法术时，",
+          "whenMissed": "当近战攻击未命中穿戴者时，",
+          "concBreak": "当穿戴者的专注结束时，",
+          "proximity": "当敌人首次进入穿戴者 {radius} {unit} 范围内时，",
+          "combatStart": "战斗开始时，",
+          "turnEnd": "在持有者的回合结束时，",
+          "allyStruck": "当盟友被近战攻击命中时，",
+          "whenProne": "当穿戴者被击倒时，"
+        },
+        "limit": {
+          "round": "每轮一次。",
+          "combat": "每场战斗一次。",
+          "rest": "每次休息一次。"
+        },
+        "who": {
+          "target": "目标",
+          "attacker": "攻击者",
+          "self": "持用者",
+          "selfArmor": "穿戴者",
+          "allies": "{radius} {unit} 内的盟友",
+          "enemies": "{radius} {unit} 内的敌人",
+          "area": "{radius} {unit} 内的每个生物"
+        },
+        "action": {
+          "move": {
+            "away": "被推离最多 {die}×{pip} {unit}",
+            "toward": "被向落点拖拽最多 {die}×{pip} {unit}"
+          },
+          "stat": {
+            "acBonus": "获得 +2 AC",
+            "acPenalty": "AC 降低 2",
+            "speedPenalty": "速度降低 {die}×{pip} {unit}",
+            "speedHalf": "移动减半",
+            "speedZero": "速度降至 0",
+            "disadvAttack": "攻击检定承受劣势",
+            "tempHp": "获得 {die} 点临时生命值",
+            "resistAll": "获得对所有伤害的抗性",
+            "initAdv": "以优势掷先攻",
+            "disadvCheck": "属性检定承受劣势",
+            "denyBonus": "失去附赠动作",
+            "denyReaction": "失去反应"
+          },
+          "damage": "受到 {die} 点 {type} 伤害",
+          "heal": "恢复 {die} 点生命值",
+          "status": "处于 {status} 状态",
+          "cloud": "一团 {radius} {unit} 的云雾在落点持续，每轮重复此符文的豁免与伤害，持续 3 轮。",
+          "light": "在半径 {radius} {unit} 内发出明亮光照，持续 1 轮",
+          "teleport": {
+            "away": "闪烁至视野内最多 {radius} {unit} 远的位置",
+            "toward": "闪烁至视野内最多靠近 {radius} {unit} 的位置"
+          },
+          "brand": "被烙印 — 烙印持续期间，命中他们的生物额外造成 {die} 点伤害",
+          "contagion": "变得具有传染性 — 回合结束时与其相邻的生物必须进行一次 DC {dc} 的 {ability} 豁免，否则被感染",
+          "allyDash": "附近一名盟友可立即向目标移动最多 {die}×{pip} {unit}。",
+          "guardianRush": "穿戴者可使用其反应移动到被击中的盟友身边；到达后，攻击者的攻击在 1 轮内承受劣势。"
+        },
+        "forRound": "，持续 1 轮",
+        "forRounds": "，持续 {rounds} 轮",
+        "forRoundsDie": "，持续 {die} 轮",
+        "passiveAc": "装备时根据符文稀有度授予被动 AC 加值。"
+      },
+      "brandNote": "标记目标。烙印持续期间，之后对其的每次命中都额外造成一个稀有度骰的伤害。",
+      "contagionNote": "目标在每个战斗回合开始时将所选状态传播给相邻生物。",
+      "guardianNote": "穿戴者可使用其反应移动到被击中的盟友身边。若成功到达，攻击者的攻击承受劣势。",
+      "tmpl": {
+        "mirageward": "直到你的下回合开始前，无法进行借机攻击。",
+        "scorcheye": "直到你的下回合开始前，无法获得掩护或隐形的益处。",
+        "emberveil": "直到其下回合开始前，无法重新进入你的所在格。",
+        "wardpulse": "直到其下回合结束前失去附赠动作。",
+        "ashenmantle": "抗性生效期间无法被移动或击倒。"
+      },
+      "issues": {
+        "head": "尚未就绪，无法锻造：",
+        "name": "请为这个符文命名。",
+        "actionsNone": "至少添加一个动作。",
+        "reminderText": "动作 {index}（提醒）需要填写文本。",
+        "actionTrigger": "动作 {index} 的目标或类型已不适用于当前触发条件。",
+        "trigger": "请选择对此类别有效的触发条件。",
+        "other": "{message}"
+      }
+    },
+    "UpdateCheck": {
+      "Title": "发布说明",
+      "Tooltip": "有可用更新：{version}",
+      "ViewHistory": "在 GitHub 上查看完整历史记录",
+      "NoNotes": "此版本未提供发布说明。",
+      "Close": "关闭"
+    },
+    "migration": {
+      "warnFound": "[符文物品] 发现 {count} 个物品引用了已不存在的符文 — 请查看控制台了解详情。"
+    },
+    "rune": {
+      "stonecleft": {
+        "description": "命中时，目标进行一次 DC 13 的力量豁免，失败则被推离 {die}×{pip} {unit}，且移动在 1 轮内减半。重击时，其豁免自动失败。"
+      },
+      "mirageward": {
+        "description": "命中时，直到你的下回合开始前，目标无法进行借机攻击。"
+      },
+      "emberbrand": {
+        "description": "重击时，目标被烙上余烬之火。直到你的下回合开始前，命中该目标的盟友额外造成 {die} 点火焰或光耀伤害。"
+      },
+      "sandgrasp": {
+        "description": "命中时，目标进行一次 DC 15 的力量豁免，失败则其速度在其下回合结束前降低 {die}×{pip} {unit}。"
+      },
+      "ruinmark": {
+        "description": "命中时，目标的护甲被击破。其 AC 在 {die} 轮内降低 2。任何攻击者都能利用这一破绽。"
+      },
+      "forgebell": {
+        "description": "命中时，符文如锻炉钟般敲响。{radius} {unit} 内的一名盟友可使用其反应向目标移动最多 {die}×{pip} {unit}。"
+      },
+      "burntrace": {
+        "description": "命中时，目标身上留下一道灼痕。其攻击检定在 1 轮内承受劣势。"
+      },
+      "sandhold": {
+        "description": "命中时，沙漠之沙在目标周围硬化。其移动速度在 1 轮内降低 {die}×{pip} {unit}。"
+      },
+      "ashcloud": {
+        "description": "命中时，一团裂隙灰烬在落点爆发。云中的生物必须进行一次 DC 14 的体质豁免，失败则中毒并受到 {die} 点毒素伤害。"
+      },
+      "undertow": {
+        "description": "命中时，裂隙能量将目标向落点拖拽 {die}×{pip} {unit}。"
+      },
+      "scorcheye": {
+        "description": "命中时，沙漠热浪的澄澈剥离了隐蔽。直到你的下回合开始前，目标无法获得掩护或隐形的益处。"
+      },
+      "wasteblight": {
+        "description": "命中时，裂隙腐化在目标体内扩散。其中毒期间，回合结束时与其相邻的生物必须进行一次 DC 13 的体质豁免，失败则中毒并受到 {die} 点毒素伤害。"
+      },
+      "emberveil": {
+        "description": "根据符文稀有度授予被动 AC 加值。被近战攻击命中时，攻击者被直接推离 {die}×{pip} {unit}，且直到其下回合开始前无法重新进入你的所在格。"
+      },
+      "stonewarden": {
+        "description": "当穿戴者的生命值降至一半以下时，符文爆发并恢复 {die} 点生命值。每场战斗一次。"
+      },
+      "vanguard": {
+        "description": "当盟友被近战攻击命中时，穿戴者可使用其反应移动到该盟友身边。攻击者的所有攻击在本轮结束前承受劣势。每场战斗一次。"
+      },
+      "wardpulse": {
+        "description": "被近战攻击命中时，攻击者进行一次 DC 14 的体质豁免，失败则在其下回合结束前失去附赠动作。每轮一次。"
+      },
+      "forgeshield": {
+        "description": "被近战攻击命中时，穿戴者周围 {radius} {unit} 内的盟友在 2 轮内获得 +2 AC。"
+      },
+      "ashenmantle": {
+        "description": "当穿戴者首次降至一半生命值或以下时，其在 1 轮内获得对所有伤害类型的抗性，且抗性生效期间无法被移动或击倒。每次休息一次。"
+      },
+      "ability": {
+        "str": {
+          "description": "每道铭刻的力量符文使所选属性 +1。"
+        },
+        "dex": {
+          "description": "每道铭刻的敏捷符文使所选属性 +1。"
+        },
+        "con": {
+          "description": "每道铭刻的体质符文使所选属性 +1。"
+        },
+        "int": {
+          "description": "每道铭刻的智力符文使所选属性 +1。"
+        },
+        "wis": {
+          "description": "每道铭刻的感知符文使所选属性 +1。"
+        },
+        "cha": {
+          "description": "每道铭刻的魅力符文使所选属性 +1。"
+        }
+      }
+    },
+    "validate": {
+      "notObject": "不是有效的符文定义。",
+      "name": "名称为必填项（最多 60 个字符）。",
+      "category": "类别必须是近战、远程或护甲。",
+      "color": "颜色必须是有效的十六进制值。",
+      "glyph": "雕文为必填项。",
+      "glyphMode": "雕文模式必须是路径或剪影。",
+      "glyphView": "雕文视图必须是有效的 SVG viewBox。",
+      "passiveAcType": "被动 AC 必须是 true 或 false。",
+      "passiveAcCategory": "被动 AC 仅适用于护甲符文。",
+      "triggerUnknown": "未知触发条件：{trigger}。",
+      "triggerCategory": "{trigger} 对此类别无效。",
+      "saveType": "豁免必须是对象或为空。",
+      "saveWho": "豁免目标必须是目标、攻击者或自身。",
+      "saveWhoTrigger": "{who} 不适用于此触发条件。",
+      "saveAbility": "豁免属性无效。",
+      "saveDc": "豁免 DC 必须在 5 到 30 之间。",
+      "saveCritType": "重击自动失败必须是 true 或 false。",
+      "usesPer": "使用限制必须是轮、战斗或休息。",
+      "actionsCount": "添加 1 到 8 个动作。",
+      "actionType": "动作 {index} 的类型未知。",
+      "actionKey": "动作 {index} 需要一个键。",
+      "actionTypeTrigger": "动作 {index} 不适用于此触发条件。",
+      "actionRounds": "动作 {index} 的持续时间必须为 1-10 轮。",
+      "actionRadius": "动作 {index} 的半径必须为 {min}-{max} {unit}。",
+      "actionDc": "动作 {index} 的 DC 必须在 5 到 30 之间。",
+      "actionAbility": "动作 {index} 的豁免属性无效。",
+      "actionStatus": "动作 {index} 的状态未知。",
+      "actionAffectsCloud": "动作 {index} 的目标必须是全部或敌人。",
+      "actionImmediate": "动作 {index} 的立即标记必须是 true 或 false。",
+      "actionAffectsContagion": "动作 {index} 的目标无效。",
+      "actionTargetPoint": "动作 {index} 必须以一个点为目标。",
+      "actionTargetTrigger": "动作 {index} 的目标不适用于此触发条件。",
+      "actionOnSave": "动作 {index} 的豁免结果无效。",
+      "actionOnSaveHalf": "只有伤害动作可在豁免时减半。",
+      "actionDir": "动作 {index} 的方向必须是远离或靠近。",
+      "actionStat": "动作 {index} 的属性选项未知。",
+      "actionKind": "动作 {index} 必须是伤害或治疗。",
+      "actionDtype": "动作 {index} 的伤害类型未知。",
+      "actionText": "动作 {index} 需要填写提醒文本。",
+      "comboGlyph": "组合雕文为必填项。",
+      "comboRunesCount": "必须选择恰好 3 枚不同的符文。",
+      "comboRuneUnresolved": "符文「{id}」已不存在。",
+      "comboRuneCategory": "三枚符文必须属于同一类别。",
+      "comboSkipSaveFor": "必定命中列表必须引用这三枚符文。",
+      "comboExtraActions": "最多添加 4 个额外动作。",
+      "comboDescription": "描述为必填项（最多 400 个字符）。",
+      "actionDistance": "动作 {index} 的传送距离必须是 {options} {unit} 之一。"
+    },
+    "store": {
+      "invalidJson": "JSON 无效：{message}",
+      "newerSchema": "此文件需要更新版本的模组（架构 {fileVersion}，当前安装最高支持 {maxSchema}）。",
+      "emptyImport": "文件中未找到符文或组合。",
+      "runeImportError": "符文「{name}」：{errors}",
+      "comboImportError": "组合「{name}」：{message}",
+      "trioCoreCombo": "这三枚符文已构成核心组合。",
+      "trioCustomCombo": "这三枚符文已构成自定义组合。"
+    },
+    "manual": {
+      "apply": "应用",
+      "applied": "已应用",
+      "genericDamage": "伤害",
+      "bodyHeal": "{name} 恢复 {total} 点生命值。",
+      "bodyDamage": "{name} 受到 {total} 点 {type} 伤害。",
+      "bodyPulled": "{name} 被拉近 {distance} {unit}。",
+      "bodyPushed": "{name} 被推离 {distance} {unit}。",
+      "bodyMoved": "{name} 移动 {distance} {unit}。",
+      "bodyStatus": "{name} 进入 {status} 状态。",
+      "bodyEffect": "{name} 受到 {effect} 影响。",
+      "bodyUpdate": "{name} 已更新。",
+      "bodyTemplate": "{name} 放置了一个区域效果。",
+      "saveFlavor": "{rune} — 豁免检定（DC {dc}）",
+      "bodySave": "一次豁免检定（DC {dc}，{ability}）决定结果。",
+      "rollSave": "豁免检定 DC {dc}（{ability}）"
+    },
+    "narrate": {
+      "header": "{item} 没有命中任何被选中的目标。请手动结算以下效果：",
+      "saveGate": "{who} 必须进行一次 DC {dc} 的 {ability} 豁免。",
+      "scripted": "{rune} 对其目标生效。",
+      "teleport": {
+        "away": "{name} 闪烁远离最多 {radius} {unit}。",
+        "toward": "{name} 闪烁靠近最多 {radius} {unit}。"
+      },
+      "allyDash": "{radius} {unit} 内的一名盟友可向目标移动最多 {distance} {unit}。",
+      "guardianRush": "穿戴者可使用其反应移动到被击中的盟友身边。",
+      "contagionSave": "相邻生物必须进行一次 DC {dc} 的 {ability} 豁免。",
+      "who": {
+        "self": "穿戴者",
+        "target": "目标",
+        "attacker": "攻击者",
+        "allies": "{radius} {unit} 内的每名盟友",
+        "enemies": "{radius} {unit} 内的每个敌人",
+        "area": "{radius} {unit} 内的每个生物"
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "IMPTHEATER": {
+    "Settings": {
+      "RoomState": {
+        "Name": "Room state"
+      },
+      "ShowLauncher": {
+        "Name": "Show Imp Theater launcher",
+        "Hint": "Client setting: shows the small Theater button on the canvas."
+      },
+      "AutoOpenOnPlay": {
+        "Name": "Open when playback starts",
+        "Hint": "Client setting: opens the Theater window when the GM starts playback."
+      },
+      "SyncTolerance": {
+        "Name": "Sync tolerance in seconds",
+        "Hint": "Client setting: direct media is corrected only when it drifts beyond this value."
+      },
+      "LocalVolume": {
+        "Name": "Local volume"
+      },
+      "WindowState": {
+        "Name": "Window state"
+      }
+    },
+    "UI": {
+      "Launcher": "Theater",
+      "ToggleTitle": "Open or hide Imp Theater",
+      "SourceUrl": "Source URL",
+      "SourcePlaceholder": "Foundry file path, direct media URL, or YouTube link",
+      "SourceType": "Source",
+      "SourceAuto": "Auto",
+      "SourceDirect": "Direct media",
+      "SourceYoutube": "YouTube embed",
+      "MediaKind": "Media",
+      "MediaAuto": "Auto",
+      "MediaVideo": "Video",
+      "MediaAudio": "Audio",
+      "Title": "Title",
+      "TitlePlaceholder": "Optional title",
+      "Load": "Load",
+      "Play": "Play",
+      "Pause": "Pause",
+      "Stop": "Stop",
+      "Sync": "Sync",
+      "Previous": "Previous",
+      "Next": "Next",
+      "Playlists": "Playlists",
+      "PlaylistName": "Playlist name",
+      "CreatePlaylist": "Create playlist",
+      "NoPlaylists": "No playlists yet",
+      "AddPlaylist": "Add track",
+      "DeletePlaylist": "Delete folder",
+      "PlaylistEmpty": "The selected playlist is empty.",
+      "PlayPlaylist": "Play from playlist",
+      "RemovePlaylist": "Remove from playlist",
+      "Close": "Close",
+      "Untitled": "Untitled media",
+      "NoSource": "No source",
+      "Playing": "Playing",
+      "Paused": "Paused",
+      "YoutubeNote": "YouTube embed is synchronized, but each player still needs direct access to YouTube.",
+      "Empty": "GM can load a Foundry file, a direct media URL, or a YouTube embed link.",
+      "LocalVolume": "Local volume",
+      "GlobalVolume": "Global volume",
+      "Loop": "Loop",
+      "LoopTitle": "Repeat the current media"
+    },
+    "Notifications": {
+      "SourceRequired": "Imp Theater: add a source URL first.",
+      "PlaylistNameRequired": "Imp Theater: enter a playlist name.",
+      "PlaylistRequired": "Imp Theater: create or select a playlist first.",
+      "MediaError": "Imp Theater: the media source could not be loaded.",
+      "ClickToPlay": "Imp Theater: browser autoplay was blocked. Click Play in the Theater window."
+    }
+  }
+}

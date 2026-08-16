@@ -1,0 +1,55 @@
+{
+  "RPGX-SHOPS": {
+    "Settings": {
+      "ProtonUrl": {
+        "Name": "RPGX Proton URL",
+        "Hint": "RPGX Proton 桌面应用的本机地址。默认值为 http://127.0.0.1:3033，仅当你已将 Proton 配置为使用其他端口时才需要更改。可在 rpgxstudios.com 免费下载 RPGX Proton。"
+      },
+      "ProtonToken": {
+        "Name": "RPGX Proton 认证令牌",
+        "Hint": "RPGX Proton 的认证令牌，必须与 Proton 应用设置中显示的令牌一致。如果其他 RPGX 模组已设置此项，则会自动使用；仅当 Shops & Traders 是你唯一的 RPGX 模组时才需要设置。"
+      },
+      "GameSystem": {
+        "Name": "游戏系统",
+        "Hint": "你的游戏所运行使用的规则系统。AI 商店生成会据此保证机制准确。例如：D&D 5E（2024）、D&D 5E（2014）、Pathfinder 2E、Homebrew 等。"
+      },
+      "Genre": {
+        "Name": "战役类型",
+        "Hint": "描述你战役的氛围与背景设定，供 AI 生成使用。类型决定叙事内容，如世界观、基调、风味、对话与地点；游戏系统仍决定机制。例如：现代恐怖、黑暗奇幻、未来赛博反乌托邦。"
+      },
+      "OllamaModel": {
+        "Name": "AI 模型档位",
+        "Hint": "根据你的电脑配置选择性能档位。模型必须通过 RPGX Proton 安装。Lite（phi4-mini）= 4-6GB 内存；Standard（phi4）= 8-12GB 内存；Enhanced（phi4-reasoning）= 16GB 以上内存；Ultra（phi4-reasoning:plus）= 16GB 以上内存。"
+      },
+      "AITimeout": {
+        "Name": "AI 生成超时",
+        "Hint": "等待 AI 商店生成的最长时间。使用更大的模型（Enhanced/Ultra 档位）时请调高。30 秒 = 快速模型，60 秒 = 大多数模型，120 秒以上 = Ultra 档位或复杂提示词。"
+      },
+      "AICreativity": {
+        "Name": "AI 创造力",
+        "Hint": "控制商店生成的随机程度。越低越有条理且可预测，越高越有创意且多变。0.5 = 有条理，0.8 = 均衡，1.2 = 创意，1.5 = 狂野。"
+      },
+      "BuybackRate": {
+        "Name": "默认回购比例（%）",
+        "Hint": "玩家出售物品时，商店按物品价值的多少百分比支付，除非某家商铺单独覆盖此设置。"
+      },
+      "AutoApprove": {
+        "Name": "自动批准进入商店",
+        "Hint": "启用后，只要没有其他人正在该商店购物，玩家即可立即进入商店，无需 GM 批准。"
+      },
+      "DefaultInventories": {
+        "Name": "默认库存列表",
+        "Label": "管理默认库存列表",
+        "Hint": "创建常用物品的命名列表。创建新商铺时可选择一个作为起始库存，或为某个列表标星以自动使用。"
+      },
+      "Currency": {
+        "Name": "货币",
+        "Label": "配置货币",
+        "Hint": "设置你的世界所使用的货币面额。可为常见系统选择预设，也可构建自定义列表以匹配你的世界。货币键必须与你的游戏系统在角色上存储的值一致。"
+      }
+    },
+    "MainMenu": {
+      "Title": "RPGX Shops & Traders"
+    }
+  }
+}

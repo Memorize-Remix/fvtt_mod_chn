@@ -1,4 +1,5 @@
-{"SMARTPHONE": {
+{
+  "SMARTPHONE": {
     "ui": {
       "share": "分享",
       "shareData": "分享数据",
@@ -189,7 +190,20 @@
           "circuitGridSize5": "5 x 5（困难）",
           "circuitGridSize6": "6 x 6（专家）",
           "circuitTrapLabel": "过载陷阱（危险）",
-          "circuitTrapNotes": "包含通电时减少能量的陷阱。"
+          "circuitTrapNotes": "包含通电时减少能量的陷阱。",
+          "typeCircuitMaze": "电路迷宫（导航）",
+          "typeCircuitMazeSettings": "电路迷宫设置",
+          "mazeDifficultyLabel": "安全等级（1-5）",
+          "mazeDifficultyNotes": "等级越高，生成的迷宫越大、越复杂。",
+          "mazeTimeLimitLabel": "时间限制（秒）",
+          "mazeTimeLimitNotes": "完成迷宫的时间（秒）。（默认：30）",
+          "mazeMaxKeysLabel": "最大钥匙/锁对（0-2）",
+          "mazeMaxKeysNotes": "迷宫路径上钥匙/锁障碍的数量。",
+          "mazeDifficulty1": "等级 1（5x5 - 简单）",
+          "mazeDifficulty2": "等级 2（6x6）",
+          "mazeDifficulty3": "等级 3（7x7 - 正常）",
+          "mazeDifficulty4": "等级 4（8x8）",
+          "mazeDifficulty5": "等级 5（9x9 - 专家）"
         },
         "combinationRules": {
           "title": "数据组合规则",
@@ -274,7 +288,8 @@
         "resultCorrectSymbol": "正确代码",
         "puzzleInstructionSliding": "使用空白空间滑动图块以完成图片。",
         "puzzleInstructionFrequency": "当信号进入蓝色区域时按下[同步]。",
-        "puzzleInstructionCircuit": "旋转图块以将电源（⚡）连接到锁（🔒）。避开警告（⚠️）图块！左键单击（顺时针），右键单击（逆时针）。"
+        "puzzleInstructionCircuit": "旋转图块以将电源（⚡）连接到锁（🔒）。避开警告（⚠️）图块！左键单击（顺时针），右键单击（逆时针）。",
+        "puzzleInstructionCircuitMaze": "导航穿过电路迷宫到达出口。[WASD / 方向键]"
       },
       "dataarchive": {
         "noData": "尚未获取数据。",

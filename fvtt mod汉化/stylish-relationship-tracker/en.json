@@ -1,0 +1,1296 @@
+{
+  "STYLISH_RELATIONSHIP_TRACKER": {
+    "sidebar": {
+      "quickPanel": "Quick Relationship Panel",
+      "quickPanelSelect": "Quick Relationship Tools",
+      "quickPanelOwnerSelect": "Select Your Actor",
+      "quickPanelTargetSelect": "Target Relationship Token",
+      "relationshipArchive": "Open Relationship Archive",
+      "relationshipManager": "Relationship Manager (GM)",
+      "relationships": "Relationships"
+    },
+    "quickPanel": {
+      "title": "Quick Relationship",
+      "refresh": "Refresh target and relationship",
+      "noTarget": "Target the other token",
+      "noTargetHint": "Use the target tool in the relationship controls, keep one target, then press Quick.",
+      "multipleTargets": "Too many targets",
+      "multipleTargetsHint": "Keep exactly one other token targeted before opening Quick.",
+      "target": "TARGET TOKEN",
+      "owner": "YOUR RELATIONSHIP ACTOR",
+      "noLinkShort": "no link",
+      "noOwner": "No available Actor was found for this relationship.",
+      "noRelationship": "No relationship found",
+      "noRelationshipHint": "Create an Actor-linked relationship for this target first.",
+      "increase": "Relationship +",
+      "decrease": "Relationship -",
+      "rankDenied": "You do not have permission to change this relationship's rank.",
+      "gift": "QUICK GIFT",
+      "searchItems": "Search inventory...",
+      "noSearchResults": "No matching items on this page.",
+      "quantity": "Quantity",
+      "day": "Day / Date",
+      "giftNote": "Optional gift note",
+      "give": "Give Gift",
+      "giftDenied": "Gift giving is not available for this relationship or Actor.",
+      "openArchive": "Open Archive",
+      "openManager": "Open Manager",
+      "rankFailed": "Could not change this relationship.",
+      "giftGiven": "Gave {name}.",
+      "giftFailed": "Could not give the gift.",
+      "giftDisabled": {
+        "deny": "You do not have permission to give from this Actor.",
+        "locked": "Locked relationships cannot receive gifts.",
+        "disabled": "Gifts are disabled for this relationship.",
+        "max": "This Gift Profile does not accept gifts at maximum rank.",
+        "noItems": "This Actor has no giftable inventory items."
+      }
+    },
+    "polarity": {
+      "field": "Relationship State",
+      "unlockField": "Required State",
+      "macroField": "Trigger State",
+      "positive": "Positive",
+      "negative": "Hostile",
+      "neutral": "Neutral",
+      "hostileRank": "Hostility",
+      "maxHostility": "Maximum Hostility",
+      "hostileLimit": "Hostility Limit",
+      "reconcile": "Reconcile",
+      "deepenHostility": "Deepen Hostility",
+      "hint": "At zero the relationship is neutral. The next + or - change sets its direction."
+    },
+    "module": {
+      "title": "Stylish Relationship Tracker",
+      "description": "A system-agnostic social link / relationship archive for FoundryVTT."
+    },
+    "profile": {
+      "subtitle": "Bond Record",
+      "archiveLabel": "ARCHIVE / SAVE 03",
+      "sessionLabel": "WK 12",
+      "calendarLabel": "TUE"
+    },
+    "settings": {
+      "allowObserverView": {
+        "name": "Allow Observer View-Only Access",
+        "hint": "Let players with OBSERVER permission on an Actor open that Actor's Relationship Tracker without granting editing access. Player-visible records are shown; owner-only and GM-only records remain hidden."
+      },
+      "allowPlayerEdit": {
+        "name": "Allow Player Relationship Editing",
+        "hint": "Master switch for player relationship editing. Role, Actor permission, and the field-category settings below determine exactly what each eligible player may change."
+      },
+      "playerEditMinimumRole": {
+        "name": "Minimum User Role for Player Editing",
+        "hint": "When player relationship editing is enabled, choose the minimum user role required to edit relationships.",
+        "choices": {
+          "player": "PLAYER or higher",
+          "trusted": "TRUSTED PLAYER or higher",
+          "assistant": "ASSISTANT GM or higher"
+        }
+      },
+      "playerEditMinimumPermission": {
+        "name": "Minimum Actor Permission for Player Editing",
+        "hint": "When player relationship editing is enabled, choose the minimum Actor permission required to edit relationships.",
+        "choices": {
+          "owner": "OWNER or higher",
+          "observer": "OBSERVER or higher"
+        }
+      },
+      "playerEditStructure": {
+        "name": "Player Editing: Relationship Structure",
+        "hint": "Allow eligible players to create and delete relationships, switch between Custom and Linked Actor entries, and link or unlink observable target Actors. Keep this disabled when players should only edit fields on existing relationships. Requires Allow Player Relationship Editing."
+      },
+      "playerEditBasic": {
+        "name": "Player Editing: Basic Information",
+        "hint": "Allow eligible players to edit relationship names, roles, romanized names, and biographies. Requires Allow Player Relationship Editing."
+      },
+      "playerEditType": {
+        "name": "Player Editing: Relationship Type",
+        "hint": "Allow eligible players to edit relationship class codes and type/category labels. Requires Allow Player Relationship Editing."
+      },
+      "playerEditRank": {
+        "name": "Player Editing: Rank Values",
+        "hint": "Allow eligible players to directly edit current rank, maximum rank, steps per rank, and rank progress in the Manager. Requires Allow Player Relationship Editing."
+      },
+      "playerUseRankControls": {
+        "name": "Player Editing: Rank +/- Controls",
+        "hint": "Allow eligible players to use rank increase and decrease controls on relationship screens, the map, and the Quick Panel. This is separate from directly editing rank values in the Manager."
+      },
+      "playerEditAppearance": {
+        "name": "Player Editing: Appearance and Images",
+        "hint": "Allow eligible players to edit accent colors, portraits, list images, thumbnails, image transforms, and cut-in artwork. Requires Allow Player Relationship Editing."
+      },
+      "playerEditStats": {
+        "name": "Player Editing: Stat Cards",
+        "hint": "Allow eligible players to edit the three Stat Cards shown in the relationship archive. Requires Allow Player Relationship Editing."
+      },
+      "playerEditNotes": {
+        "name": "Player Editing: Notes",
+        "hint": "Allow eligible players to add, edit, and delete player-visible relationship notes. GM-only notes remain protected. Requires Allow Player Relationship Editing."
+      },
+      "playerEditEvents": {
+        "name": "Player Editing: Event Log",
+        "hint": "Allow eligible players to add, edit, delete, and reorder relationship events. Requires Allow Player Relationship Editing."
+      },
+      "showLocked": {
+        "name": "Show Locked Relationships to Players",
+        "hint": "When enabled, locked relationships appear to players as redacted entries with minimal type information. When disabled, locked relationships are hidden from player views."
+      },
+      "allowPlayerGiveGifts": {
+        "name": "Allow Players to Give Gifts",
+        "hint": "Allow players to give eligible embedded Items from Actors they own. Gift outcomes and inventory consumption are still resolved authoritatively by the active GM."
+      },
+      "requireGmGiftApproval": {
+        "name": "Require GM Approval for Player Gifts",
+        "hint": "When enabled, a player's Gift request enters the active GM's approval queue. Nothing is consumed or changed until the GM approves it. GM Gifts remain immediate."
+      },
+      "giftItemTypeFilter": {
+        "name": "Use Custom Gift Item Type Filter",
+        "hint": "Limit Gift pickers to the selected Item document types. When disabled, all types are accepted unless this system has a built-in safety preset."
+      },
+      "giftDefaultConsumeMode": {
+        "name": "Default Gift Consumption",
+        "hint": "Choose whether new Gift Profiles consume the given Item by default.",
+        "choices": {
+          "consume": "Consume the Item",
+          "keep": "Keep the Item"
+        }
+      },
+      "giftDefaultMaxQuantityPerGift": {
+        "name": "Default Maximum Gift Quantity",
+        "hint": "Maximum quantity that a new Gift Profile allows in one Gift action."
+      },
+      "giftDefaultUnmatchedGiftMode": {
+        "name": "Default Unmatched Gift Handling",
+        "hint": "Choose what new Gift Profiles do when an Item matches no preference rule.",
+        "choices": {
+          "neutral": "Use the neutral reaction",
+          "block": "Block the Gift"
+        }
+      },
+      "giftDefaultUnmatchedGiftProgressDelta": {
+        "name": "Default Unmatched Gift Progress",
+        "hint": "Progress granted by an unmatched Gift when the neutral handling mode is used."
+      },
+      "giftDefaultPreferenceVisibility": {
+        "name": "Default Gift Preference Visibility",
+        "hint": "Choose how much preference information new Gift Profiles reveal before a Gift is given.",
+        "choices": {
+          "hidden": "Hidden",
+          "hint": "Hint only",
+          "full": "Full result preview"
+        }
+      },
+      "giftDefaultAllowMaxRankGifts": {
+        "name": "Allow Gifts at Maximum Rank by Default",
+        "hint": "Allow new Gift Profiles to accept Gifts after the relationship reaches its maximum rank."
+      },
+      "giftDefaultRejectedConsumeMode": {
+        "name": "Default Rejected Gift Consumption",
+        "hint": "Choose whether a rejected Gift is consumed in newly created Gift Profiles.",
+        "choices": {
+          "keep": "Return the Item",
+          "consume": "Consume the Item"
+        }
+      },
+      "giftDefaultReactionAudience": {
+        "name": "Default Gift Reaction Audience",
+        "hint": "Choose who receives Gift reaction cut-ins from new Gift Profiles.",
+        "choices": {
+          "giverOnly": "Giver only",
+          "giverAndGm": "Giver and GMs",
+          "eligibleViewers": "All eligible viewers"
+        }
+      },
+      "giftDefaultReactionDisplayMode": {
+        "name": "Default Gift Reaction Display",
+        "hint": "Choose how new Gift Profiles present their reaction.",
+        "choices": {
+          "auto": "Automatic",
+          "dialog": "Dialog",
+          "cutin": "Cut-in"
+        }
+      },
+      "soundVolume": {
+        "name": "Relationship SFX Volume",
+        "hint": "Controls the volume of relationship archive button and rank cut-in sound effects."
+      },
+      "soundEnabled": {
+        "name": "Enable Relationship SFX",
+        "hint": "Play sound effects when using the relationship archive and rank cut-ins."
+      },
+      "hostileAccentEnabled": {
+        "name": "Change Colors for Hostile Relationships",
+        "hint": "When enabled, hostile relationships use the world hostile accent color. When disabled, they keep each relationship's existing accent color."
+      },
+      "hostileAccentColor": {
+        "name": "Hostile Relationship Accent",
+        "hint": "Color used for hostile relationship cards, ranks, progress, and controls throughout this world."
+      },
+      "worldDisplayProfileEnabled": {
+        "name": "Use One World Display Profile",
+        "hint": "Override every Actor's visual tracker profile with the settings below. Actor-specific values are kept and return when this is disabled."
+      },
+      "worldProfileTheme": {
+        "name": "World Tracker Theme",
+        "hint": "Theme used by every Actor while the world display profile is enabled."
+      },
+      "worldProfileTitle": {
+        "name": "World Tracker Title",
+        "hint": "Main title shown in the tracker header."
+      },
+      "worldProfileSubtitle": {
+        "name": "World Tracker Subtitle",
+        "hint": "Subtitle shown beside or below the main tracker title."
+      },
+      "worldProfileLozenge": {
+        "name": "World Header Mark",
+        "hint": "Short mark shown in supported theme headers, up to three characters."
+      },
+      "worldProfileArchiveLabel": {
+        "name": "World Archive Label",
+        "hint": "Secondary archive label shown in tracker headers."
+      },
+      "worldProfileBondLabel": {
+        "name": "World Relationship Term (Singular)",
+        "hint": "Singular term used for character relationships throughout the tracker."
+      },
+      "worldProfileBondLabelPlural": {
+        "name": "World Relationship Term (Plural)",
+        "hint": "Plural term used for character relationship lists and labels."
+      },
+      "worldProfileFontScale": {
+        "name": "World Font Scale",
+        "hint": "Text scale applied across every relationship theme."
+      },
+      "worldProfileShowBgLetter": {
+        "name": "Show Background Letter (Archive)",
+        "hint": "Show the decorative background letter in the Archive theme."
+      },
+      "worldProfileShowNameRoman": {
+        "name": "Show Romanized Name (Archive)",
+        "hint": "Show romanized relationship names in the Archive theme."
+      },
+      "worldProfileMapUseThumbnails": {
+        "name": "Use Relationship Map Thumbnails",
+        "hint": "Prefer generated map thumbnails over full portraits for relationship nodes."
+      },
+      "themeFontOverrides": {
+        "name": "Theme Font Overrides",
+        "hint": "Replace each font family used by a theme with another font loaded in Foundry. Changes also apply to relationship maps, Rank cut-ins, Gift reactions, and Gift approval screens."
+      },
+      "rankCutinText": {
+        "rankUp": {
+          "name": "Rank Up Message",
+          "hint": "Main message for this theme's Rank Up cut-in and Gift results that increase a rank. Leave blank to use the built-in text."
+        },
+        "rankDown": {
+          "name": "Rank Down Message",
+          "hint": "Main message for this theme's Rank Down cut-in. Leave blank to use the built-in text."
+        },
+        "max": {
+          "name": "Max Rank Message",
+          "hint": "Main message for this theme's Max Rank cut-in and Gift results that reach Max Rank. Leave blank to use the built-in text."
+        },
+        "unlock": {
+          "name": "Unlock Message",
+          "hint": "Main message for this theme's Unlock cut-in. Leave blank to use the built-in text."
+        }
+      }
+    },
+    "settingsCenter": {
+      "menuName": "Relationship Tracker Settings",
+      "menuLabel": "Open Settings",
+      "menuHint": "Configure player permissions, display defaults and colors, Gift defaults, and personal audio options in one window.",
+      "title": "Relationship Settings",
+      "eyebrow": "System Configuration",
+      "subtitleGm": "World options affect every user; audio options are saved separately for this client.",
+      "subtitlePlayer": "Only personal client options are available to players.",
+      "scope": {
+        "world": "World Setting",
+        "client": "This Client"
+      },
+      "tabs": {
+        "permissions": {
+          "label": "Player Permissions",
+          "description": "Access and editing scope"
+        },
+        "display": {
+          "label": "Display",
+          "description": "World defaults and colors"
+        },
+        "gifts": {
+          "label": "Gift Defaults",
+          "description": "World gift policy"
+        },
+        "audio": {
+          "label": "Audio",
+          "description": "Personal SFX playback"
+        }
+      },
+      "sections": {
+        "permissions": {
+          "view": {
+            "title": "View-Only Access",
+            "description": "Let explicitly observed Actors share their player-visible relationship records without granting editing access."
+          },
+          "access": {
+            "title": "Access Requirements",
+            "description": "Choose who may edit relationship records before defining what they may change."
+          },
+          "fields": {
+            "title": "Allowed Editing Actions",
+            "description": "Grant each editing category independently. Server-side checks enforce the same policy."
+          },
+          "visibility": {
+            "title": "Locked Record Visibility",
+            "description": "Control whether players can see redacted placeholders for unrevealed relationships."
+          }
+        },
+        "display": {
+          "profileDefaults": {
+            "title": "World Display Profile",
+            "description": "Apply one visual profile to every Actor without overwriting their Actor-specific values."
+          },
+          "themeFonts": {
+            "title": "Theme Fonts",
+            "description": "Replace the individual font families used by each theme. Select Theme default to preserve the original typography."
+          },
+          "rankCutinText": {
+            "title": "Rank Cut-in Messages by Theme",
+            "description": "Set separate Rank Up, Rank Down, Max Rank, and Unlock messages for each theme. Blank fields keep that theme's built-in text."
+          },
+          "hostility": {
+            "title": "Hostile Relationship Colors",
+            "description": "Choose whether hostility replaces relationship accent colors and which color it uses."
+          }
+        },
+        "gifts": {
+          "access": {
+            "title": "Player Gift Access",
+            "description": "Allow eligible players to give Items through the relationship interface."
+          },
+          "itemTypes": {
+            "title": "Gift Item Types",
+            "description": "Choose which Item document types count as physical Gifts in this game system."
+          },
+          "defaults": {
+            "title": "New Gift Profile Defaults",
+            "description": "These values seed newly created Gift Profiles; existing profiles keep their current policy."
+          }
+        },
+        "audio": {
+          "playback": {
+            "title": "SFX Playback",
+            "description": "Adjust relationship interface and cut-in sounds for this browser client."
+          }
+        }
+      },
+      "giftItemFilter": {
+        "customActive": "Custom filter active",
+        "systemPresetActive": "System preset active",
+        "allTypesActive": "All Item types active",
+        "selectAll": "Select All",
+        "clear": "Clear",
+        "recommended": "Recommended",
+        "noTypes": "No public Item types could be detected for this game system."
+      },
+      "audioNote": "Theme-specific SFX files are managed from the SFX tab in the Relationship Manager. This page controls only personal playback and volume.",
+      "save": "Save Settings",
+      "saved": "Relationship settings saved.",
+      "saveFailed": "Relationship settings could not be saved."
+    },
+    "themeFonts": {
+      "themeDefault": "Theme default ({family})",
+      "resetTheme": "Reset Fonts for This Theme",
+      "roles": {
+        "display": "Display",
+        "body": "Body",
+        "mono": "Monospace",
+        "approvalDisplay": "Gift Approval Display",
+        "approvalMono": "Gift Approval Monospace",
+        "approvalBody": "Gift Approval Body",
+        "serif": "Serif",
+        "korean": "Korean Fallback",
+        "koreanApprovalBody": "Korean Fallback / Gift Approval Body",
+        "hand": "Handwriting",
+        "handFallback": "Handwriting Fallback",
+        "heading": "Heading",
+        "bodyFallback": "Body Fallback",
+        "runes": "Decorative Runes",
+        "headingBody": "Heading / Body",
+        "displayFallback": "Display Fallback",
+        "stamp": "Stamp / Typewriter"
+      }
+    },
+    "giftApproval": {
+      "title": "Gift Request",
+      "question": "{giver} wants to give {item} to {target}.",
+      "approve": "Approve Gift",
+      "reject": "Reject Request",
+      "from": "From",
+      "to": "To",
+      "item": "Gift Item",
+      "quantity": "Quantity",
+      "rank": "Current Rank",
+      "requestedBy": "Requested by",
+      "day": "Date / Chapter",
+      "note": "Event Note",
+      "noImage": "No Image",
+      "queue": "Request {current} / {total}",
+      "statusPending": "Awaiting the active GM's decision",
+      "statusResolving": "Recording decision...",
+      "ariaLabel": "Review Gift request",
+      "pendingPlayer": "Gift request sent to the active GM for approval.",
+      "alreadyPendingPlayer": "That Gift request is already waiting for GM approval.",
+      "gmProcessFailed": "Could not process the Gift request.",
+      "gmAwaitingResubmit": "A pending Gift included private date or note details. After the GM handoff, the player must submit that Gift again before it can be reviewed.",
+      "playerResult": {
+        "approved": "The GM approved {item} for {target}.",
+        "denied": "The GM declined the request to give {item} to {target}. Nothing was consumed.",
+        "expired": "The request to give {item} to {target} expired. Nothing was consumed.",
+        "failed": "The approved Gift request for {item} could not be completed because its current data was no longer valid."
+      },
+      "theme": {
+        "archive": {
+          "eyebrow": "AUTHORIZATION // GIFT TRANSFER",
+          "code": "RECORD AWAITING REVIEW",
+          "approveSub": "File the amendment",
+          "rejectSub": "Return without entry"
+        },
+        "dossierPaper": {
+          "eyebrow": "TRANSFER FORM / GM REVIEW",
+          "code": "PENDING SIGNATURE",
+          "approveSub": "Stamp APPROVED",
+          "rejectSub": "Stamp DENIED"
+        },
+        "journal": {
+          "eyebrow": "A LITTLE GIFT NOTE",
+          "code": "WAITING FOR YOUR ANSWER",
+          "approveSub": "Keep this moment",
+          "rejectSub": "Not this time"
+        },
+        "arcaneGrimoire": {
+          "eyebrow": "OFFERING RITE / PETITION",
+          "code": "SEAL AWAITS THE KEEPER",
+          "approveSub": "Seal the offering",
+          "rejectSub": "Break the rite"
+        },
+        "stellarLink": {
+          "eyebrow": "CARGO AUTH PACKET",
+          "code": "COMMAND CLEARANCE REQUIRED",
+          "approveSub": "Authorize transfer",
+          "rejectSub": "Reject packet"
+        },
+        "adventurersLedger": {
+          "eyebrow": "QUARTERMASTER DISPATCH",
+          "code": "GUILDMASTER REVIEW",
+          "approveSub": "Approve dispatch",
+          "rejectSub": "Return parcel"
+        }
+      }
+    },
+    "ui": {
+      "fullscreen": "Fullscreen",
+      "windowed": "Windowed",
+      "close": "Close"
+    },
+    "topbar": {
+      "rankSum": "RANK SUM",
+      "max": "MAX"
+    },
+    "map": {
+      "archiveView": "Archive View",
+      "relationshipView": "Return to Relationship View",
+      "mapView": "Map View",
+      "you": "YOU",
+      "protagonist": "PROTAGONIST",
+      "protagonistName": "Protagonist",
+      "locked": "LOCKED",
+      "unknown": "UNKNOWN",
+      "portrait": "PORTRAIT",
+      "bondClass": "RELATIONSHIP CLASS",
+      "profile": "PROFILE · Character",
+      "stats": "STATS",
+      "eventLog": "EVENT LOG · Recent Relationships",
+      "currentRank": "CURRENT RANK",
+      "maxBond": "MAX RELATIONSHIP",
+      "legendActive": "ACTIVE",
+      "legendBonded": "LINKED",
+      "legendLocked": "LOCKED",
+      "legendWeight": "LINE WEIGHT = RANK",
+      "empty": "Select a node on the map to view its relationship record.",
+      "emptyTag": "NO RELATIONSHIP SELECTED",
+      "compass": "LAYOUT · CONSTELLATION",
+      "focus": "Center the map on this character",
+      "focusing": "FOCUSED ON ",
+      "focusDenied": "You cannot view this character's relationships.",
+      "back": "Back to me",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "zoomReset": "Reset zoom",
+      "zoomLabel": "Map zoom"
+    },
+    "list": {
+      "title": "LIST",
+      "subtitle": "Relationship Roster",
+      "activeBonds": "ACTIVE RELATIONSHIPS",
+      "rank": "RANK",
+      "filterLabel": "Relationship list type",
+      "peopleTab": "People",
+      "organizationsTab": "Organizations",
+      "peopleTitle": "PEOPLE",
+      "organizationsTitle": "ORGANIZATIONS",
+      "peopleSubtitle": "Character Relationships",
+      "organizationsSubtitle": "Faction Reputation",
+      "peopleActive": "ACTIVE RELATIONSHIPS",
+      "organizationsActive": "TRACKED FACTIONS",
+      "peopleEmpty": "No character relationships",
+      "peopleEmptyHint": "Add or link a character relationship in the Manager.",
+      "organizationsEmpty": "No organizations tracked",
+      "organizationsEmptyHint": "Add an organization to begin tracking its reputation."
+    },
+    "organization": {
+      "badge": "Organization",
+      "badgeShort": "ORG",
+      "rank": "REPUTATION",
+      "currentRank": "CURRENT REPUTATION",
+      "maxRank": "MAX REPUTATION",
+      "increase": "Raise Reputation",
+      "rankUp": "REPUTATION UP",
+      "rankDown": "REPUTATION DOWN",
+      "unlocked": "ORGANIZATION UNLOCKED",
+      "complete": "MAX REPUTATION",
+      "managerTitle": "Organization Reputation Entry",
+      "managerHint": "Track reputation and standing with this organization. Gift is disabled; reputation controls and reputation macros continue to work."
+    },
+    "detail": {
+      "profile": "PROFILE · Character Record",
+      "locked": "Locked",
+      "lockedName": "??? · Locked",
+      "dossier": "DOSSIER · Notes",
+      "dossierOpen": "View Dossier",
+      "dossierHint": "ESC to close",
+      "dossierClose": "Close dossier",
+      "playerNotes": "Notes",
+      "gmNotes": "GM Notes",
+      "noteUntitled": "Untitled Note"
+    },
+    "notes": {
+      "dialog": {
+        "title": "Edit Note",
+        "titleNew": "New Note",
+        "heading": "Dossier Note",
+        "hint": "Write a rich-text note. Links and formatting are preserved.",
+        "noteTitle": "Title",
+        "noteTitlePlaceholder": "e.g. First Impressions",
+        "visibility": "Visibility",
+        "save": "Save",
+        "cancel": "Cancel",
+        "clear": "Clear"
+      }
+    },
+    "events": {
+      "title": "EVENTS",
+      "hint": "Click to recall this scene",
+      "allLogs": "All Logs",
+      "logOpen": "View the full event log",
+      "logTitle": "EVENT LOG",
+      "logClose": "Close event log",
+      "logHint": "CLICK a scene · ESC - Close"
+    },
+    "guide": {
+      "label": "GUIDE",
+      "default": "Which character record do you want to view?",
+      "locked": "Deepen other relationships first.",
+      "firstGiftUnlock": "Offer a Gift to reveal this relationship."
+    },
+    "controls": {
+      "prev": "Previous",
+      "next": "Next",
+      "deepen": "Deepen Relationship",
+      "unlock": "Unlock",
+      "back": "Back",
+      "add": "Add",
+      "edit": "Edit",
+      "delete": "Delete",
+      "rankDown": "Rank -",
+      "manage": "Manage",
+      "gift": "Gift"
+    },
+    "moment": {
+      "max": "Relationship Complete",
+      "hint": "CLICK · ENTER - Continue"
+    },
+    "scene": {
+      "tag": "SCENE RECALL",
+      "subtitle": "Relationship Recall",
+      "close": "Close Record",
+      "hint": "CLICK · ESC - Close",
+      "emptyRecollection": "This scene has not been recorded yet."
+    },
+    "rankup": {
+      "rankUp": "RANK UP",
+      "rankDown": "RANK DOWN",
+      "bondComplete": "RELATIONSHIP COMPLETE",
+      "deepened": "RELATIONSHIP DEEPENED",
+      "unlocked": "RELATIONSHIP UNLOCK"
+    },
+    "notify": {
+      "saveFailed": "Could not save relationship change.",
+      "deleteFailed": "Could not delete.",
+      "giftGiven": "Gave {name}.",
+      "giftNoItem": "Select an item to gift first.",
+      "giftFailed": "Could not give the gift.",
+      "rankMacroMissing": "Could not find the Rank {rank} trigger Macro: {macro}",
+      "rankMacroForbidden": "You cannot execute the Rank {rank} trigger Macro: {macro}",
+      "rankMacroFailed": "The Rank {rank} trigger Macro failed: {macro}",
+      "rankMacroAuthorityChanged": "Skipped the Rank {rank} trigger Macro because the active GM changed: {macro}"
+    },
+    "picker": {
+      "title": "SELECT ACTOR",
+      "subtitle": "Select a character to open their relationship record",
+      "search": "Search actors…",
+      "count": "ACTORS",
+      "filterLabel": "SHOW",
+      "filterHint": "Relevant includes linked Actors and Actors with existing relationship data.",
+      "filters": {
+        "relevant": {
+          "label": "Relevant",
+          "hint": "Show linked Actors and Actors that already have relationship data."
+        },
+        "linked": {
+          "label": "Linked Only",
+          "hint": "Show only Actors whose Prototype Token is linked to its Actor."
+        },
+        "all": {
+          "label": "All Actors",
+          "hint": "Show every Actor you have permission to open."
+        }
+      },
+      "owner": "OWNER",
+      "hasData": "DATA",
+      "noData": "NEW",
+      "empty": "No accessible actors",
+      "emptyHint": "You have no owned actors to open a relationship archive for.",
+      "noFilterMatches": "No actors match this view",
+      "noFilterMatchesHint": "Try another filter or clear the current search.",
+      "showAll": "Show All Actors",
+      "selectHint": "CLICK · Select a character to open the relationship archive",
+      "close": "Close",
+      "openFailed": "Could not open the relationship archive for this actor."
+    },
+    "manager": {
+      "title": "RELATIONSHIP MANAGER",
+      "subtitle": "Relationship Data Console",
+      "ownerPanel": "OWNER · Target Character",
+      "ownerSearch": "Search actors…",
+      "ownerDrop": "Drop an Actor here",
+      "ownerDropHint": "or pick one from the list below",
+      "ownerCardDragHint": "Drag onto a relationship's target slot to link this actor",
+      "pagerPrev": "Previous page",
+      "pagerNext": "Next page",
+      "ownerNone": "No Actor selected",
+      "ownerSelectHint": "Select an Actor to manage its relationships.",
+      "ownerEmpty": "No accessible actors",
+      "clearOwner": "Clear",
+      "relPanel": "RELATIONSHIPS · Relationship List",
+      "relEmpty": "No relationships registered for this Actor yet.",
+      "relEmptyHint": "Add one to get started.",
+      "addRelationship": "Add relationship",
+      "addPersonRelationship": "Add character relationship",
+      "addOrganization": "Add organization",
+      "editorEmpty": "Select a relationship on the left, or add a new one.",
+      "linkedActorPanel": "LINKED ACTOR · Target",
+      "targetPanel": "TARGET · Relationship Target",
+      "fieldsOrganization": "ORGANIZATION · Details",
+      "fieldsReputation": "REPUTATION · Standing",
+      "fieldsReputationMacros": "MACRO · Reputation Triggers",
+      "fieldsEmblem": "EMBLEM · Crest / Logo",
+      "fieldsReputationCutin": "CUT-IN · Reputation",
+      "targetDrop": "Drop the target Actor here",
+      "targetNone": "No linked Actor",
+      "unlink": "Unlink",
+      "themeLabel": "Theme",
+      "themeArchive": "Archive",
+      "themeDossierPaper": "Paper",
+      "themeJournal": "Journal",
+      "themeArcaneGrimoire": "Arcane Grimoire",
+      "themeStellarLink": "Stellar Link",
+      "themeAdventurersLedger": "Adventurer's Ledger",
+      "openArchive": "Preview archive",
+      "save": "Save relationship",
+      "saved": "Saved",
+      "delete": "Delete",
+      "deny": "You need GM or owner permission to manage this Actor.",
+      "eventLog": "EVENT LOG · Events",
+      "fieldsBasic": "BASIC · Basic",
+      "fieldsClass": "TYPE · Relationship Type",
+      "fieldsRank": "RANK · Rank",
+      "fieldsRankMacros": "MACRO · Rank Triggers",
+      "fieldsPortrait": "PORTRAIT · Portrait",
+      "fieldsAccess": "ACCESS · Visibility",
+      "fieldsNotes": "NOTES · Notes",
+      "fieldsStats": "STATS · Stat Cards",
+      "fieldsUnlock": "UNLOCK · Unlock Rule",
+      "fieldsMap": "MAP · Visibility",
+      "fieldsRankCutin": "CUT-IN · Rank cut-in",
+      "fieldsGift": "GIFT · Give Item",
+      "profilePanel": "PROFILE · World Display",
+      "profileHint": "Actor-specific display, capacity, and map settings (GM only).",
+      "worldDisplayProfileActive": "A world display profile is active. Visual fields and the theme are managed in Relationship Settings; Actor capacity and map scope remain editable here.",
+      "openRelationshipSettings": "Relationship Settings",
+      "saveProfile": "Save profile",
+      "tabRelationship": "Relationship",
+      "sectionNavLabel": "Relationship editor sections",
+      "sectionGeneral": "General",
+      "sectionProgress": "Progress",
+      "sectionImages": "Images",
+      "sectionRecords": "Records",
+      "tabProfile": "Display",
+      "tabSfx": "SFX",
+      "tabGift": "Gift",
+      "sfx": {
+        "panel": "SFX · Theme Sound Effects",
+        "hint": "Each theme action plays its default sound unless you set a custom file here. Leave a field blank to use the default. Stored per world (GM only).",
+        "save": "Save SFX",
+        "defaultLabel": "Default",
+        "customLabel": "Path",
+        "customPlaceholder": "modules/.../custom-sound.ogg",
+        "browse": "Browse",
+        "reset": "Reset",
+        "action": {
+          "OPEN": "Open archive",
+          "SELECT": "Menu select",
+          "PAGE": "Page / transition",
+          "SUCCESS": "Rank cut-in",
+          "ERROR": "Error",
+          "BOND_CHANGE": "Relationship change",
+          "BOND_UP": "Rank-up cut-in",
+          "BOND_DOWN": "Rank-down cut-in",
+          "MAP_VIEW": "Map view toggle",
+          "MAP_NODE": "Map node select",
+          "MAP_FOCUS": "Map focus / back",
+          "MAP_ZOOM": "Map zoom"
+        }
+      },
+      "presetNew": "New",
+      "presetNewHint": "Create a new relationship from the selected preset (you set the actor afterwards).",
+      "presetDelete": "Delete",
+      "presetSave": "Save",
+      "presetSaveHint": "Save the current relationship as a preset (without its linked actor).",
+      "presetEmpty": "No saved presets",
+      "presetNamePlaceholder": "Preset name",
+      "presetIncludeEvents": "Include event log",
+      "presetIncludeEventsHint": "Also store this relationship's events in the preset, so they are recreated whenever you build a new relationship from it.",
+      "confirmDeletePreset": "Delete this relationship preset?",
+      "notify": {
+        "ownerSet": "Owner set to {name}.",
+        "targetLinked": "Linked {name} as the relationship target.",
+        "targetPermissionDenied": "You need Observer permission or higher for the target Actor.",
+        "relationshipSaved": "Relationship saved.",
+        "profileSaved": "Profile settings saved.",
+        "sfxSaved": "Theme SFX settings saved.",
+        "sfxReset": "Reset to the default sound.",
+        "presetSaved": "Saved preset \"{name}\".",
+        "presetCreated": "Created a relationship from preset \"{name}\".",
+        "presetDeleted": "Deleted preset \"{name}\".",
+        "presetDeleteDenied": "Only the creator or a GM can delete this preset.",
+        "presetNameRequired": "Enter a preset name first.",
+        "presetNone": "Select a preset first.",
+        "presetNoRelationship": "Open a relationship to save it as a preset.",
+        "relationshipLimitReached": "This Actor already has {count}/{max} relationship slots filled.",
+        "noteContextChanged": "The selected relationship changed. Reopen the note editor before saving.",
+        "dropNotActor": "Only an Actor can be dropped here.",
+        "resolveFailed": "Could not resolve the dropped Actor.",
+        "giftGiven": "Gave {name}.",
+        "giftNoItem": "Select an item to gift first.",
+        "giftNoChange": "This relationship cannot gain more progress, so nothing was consumed.",
+        "giftLocked": "Cannot give gifts to a locked relationship.",
+        "giftFailed": "Could not give the gift.",
+        "giftProfileSaved": "Gift Profile saved.",
+        "giftTargetMissing": "Link a target Actor before saving a shared Gift Profile.",
+        "giftReactionDeleteBlocked": "That reaction is still used by a rule, default, unmatched policy, or the last remaining reaction."
+      }
+    },
+    "sync": {
+      "title": "Shared Relationship",
+      "eyebrow": "SYNC CONTROL · SHARED RECORD",
+      "heading": "Relationship Synchronization",
+      "relationship": "RELATIONSHIP",
+      "linked": "LINKED",
+      "modeTitle": "Choose what stays synchronized",
+      "modeContent": "Shared details",
+      "modeContentHint": "Names, descriptions, types, artwork, and display settings update together. Rank and progress remain separate for each Actor.",
+      "modeParty": "Shared party progress",
+      "modePartyHint": "Shared details, rank, and progress are managed as one party-wide record. When switching to this mode, the currently opened Actor's rank becomes the shared starting point.",
+      "recordOptionsTitle": "Optional shared records",
+      "recordOptionsHint": "Turning an option on replaces that record on linked Actors with the currently opened relationship's copy. Turning it off keeps the last synchronized copy, and future edits stay local.",
+      "shareNotes": "Share player-visible notes",
+      "shareNotesHint": "Only notes visible to players update together; GM-only notes always stay local to each Actor. The currently opened relationship supplies the shared starting notes.",
+      "shareEvents": "Share Event Log",
+      "shareEventsHint": "Manage Event Log entries as one shared record. The currently opened relationship supplies the shared starting events.",
+      "actorsTitle": "Choose Actors to link",
+      "actorCount": "{selected} / {total} selected",
+      "searchLabel": "Search Actors or relationships",
+      "searchPlaceholder": "Search by Actor or relationship name...",
+      "clearSearch": "Clear search",
+      "relationshipChoice": "Relationship to link",
+      "createNewRelationship": "Create a new relationship",
+      "relationshipChoiceHint": "Choose an existing record to preserve its local role and any records not selected for sharing. Shared-details mode also keeps its rank.",
+      "noActors": "No Actors are available for this relationship.",
+      "apply": "Apply synchronization",
+      "detach": "Detach",
+      "detachHint": "Detach this relationship from the shared source while keeping its current displayed values.",
+      "cancel": "Cancel",
+      "selectAtLeastOne": "Select at least one available Actor.",
+      "statusLocal": "LOCAL · INDEPENDENT",
+      "statusContent": "LINKED · SHARED DETAILS",
+      "statusParty": "LINKED · PARTY PROGRESS",
+      "statusLocalHint": "This record belongs only to the current Actor.",
+      "statusLinkedHint": "Shared changes are propagated to every linked Actor.",
+      "manage": "Manage sharing",
+      "sourceActor": "Current source Actor · always included",
+      "relationshipLimit": "No open Relationship slots",
+      "applied": "Synchronization applied to {count} Actors.",
+      "appliedWithSkips": "Synchronization applied to {count} Actors; {skipped} could not be linked.",
+      "partialFailure": "Some Actor records could not be synchronized. Review the selection and try again.",
+      "detached": "Relationship detached. Its current values were kept.",
+      "gmOnly": "Only a GM can manage shared relationships.",
+      "failed": "Could not update relationship synchronization."
+    },
+    "editor": {
+      "addTitle": "Add Relationship",
+      "editTitle": "Edit Relationship",
+      "savedHint": "Saved",
+      "close": "Close",
+      "save": "Save",
+      "cancel": "Cancel",
+      "browse": "Browse",
+      "deleteRel": "Delete this relationship",
+      "sectionBasic": "BASIC · Basic Info",
+      "sectionClass": "TYPE · Relationship Type",
+      "sectionRank": "RANK · Rank",
+      "sectionPortrait": "PORTRAIT · Portrait",
+      "sectionDesc": "BIO · Description",
+      "sectionAccess": "ACCESS · Visibility",
+      "eventsTitle": "EVENT LOG · Events",
+      "eventLogHint": "Event Log entries are relationship memories, not Macro triggers. Rank Change adds an Up or Down marker; Reveal at Rank controls when an entry appears on the relationship screen.",
+      "eventRevealBadge": "RANK {rank}+",
+      "addEvent": "Add event",
+      "editEvent": "Edit",
+      "deleteEvent": "Delete",
+      "moveEventUp": "Move up",
+      "moveEventDown": "Move down",
+      "moveNoteUp": "Move note up",
+      "moveNoteDown": "Move note down",
+      "noEvents": "No events recorded yet.",
+      "eventsAfterSave": "Save the relationship first to manage events.",
+      "eventAddTitle": "Add Event",
+      "eventEditTitle": "Edit Event",
+      "eventSave": "Save Event",
+      "confirmDeleteRel": "Delete this relationship?",
+      "confirmDeleteEvent": "Delete this event?",
+      "confirmYes": "Delete",
+      "confirmNo": "Cancel",
+      "sampleDataPlaceholder": "Choose sample data…",
+      "sampleDataHint": "Fills the entire editor with a complete example. Nothing is stored until you save the relationship.",
+      "notesHint": "Each note becomes its own archive dossier tab in this list order. Player-visible notes show for anyone who can see this relationship; GM-only notes stay GM-only. Note bodies are edited in a dialog, not previewed here.",
+      "addNote": "Add Note",
+      "editNote": "Edit / View",
+      "deleteNote": "Delete Note",
+      "noteUntitled": "Untitled Note",
+      "noteHasContent": "Has content",
+      "noteEmptyStatus": "Empty",
+      "noteListEmpty": "No notes yet.",
+      "noteEmpty": "No note yet.",
+      "statsHint": "Up to three stat cards shown on the archive (e.g. FIRST MET / LAST INTERACT / AFFINITY). Leave a row blank to skip it; tick Accent to highlight it.",
+      "unlockRuleHint": "Optionally auto-unlock this relationship when a condition is met. Leave it disabled for no rule.",
+      "unlockOnGiftHint": "Players can use this only when Show Locked Relationships to Players is enabled. The relationship remains ??? until a Gift is successfully recorded.",
+      "mapThumbnailPlaceholder": "Auto-generated on save when blank.",
+      "mapInspectorImagePlaceholder": "Blank uses the main portrait.",
+      "listImagePlaceholder": "Blank uses the portrait or token image.",
+      "field": {
+        "entryType": "Entry Type",
+        "targetUuid": "Target Actor UUID/ID",
+        "customName": "Display Name",
+        "customRole": "Role",
+        "nameRoman": "Romanized Name",
+        "organizationName": "Organization Name",
+        "organizationRole": "Relationship / Standing",
+        "organizationShortName": "English Name / Abbreviation",
+        "organizationDescription": "Organization Description",
+        "organizationCode": "Organization Type Code",
+        "organizationType": "Organization Type",
+        "organizationTag": "Organization Tag",
+        "sampleData": "STARTER · Sample Data",
+        "classId": "Type Code",
+        "categoryId": "Category ID",
+        "categoryLabel": "Type Label",
+        "categoryLabelEn": "Type Tag",
+        "accent": "Accent Color",
+        "rank": "Rank",
+        "maxRank": "Max Rank",
+        "rankSteps": "Steps / Rank",
+        "rankProgress": "Relationship Progress",
+        "reputation": "Reputation Level",
+        "maxReputation": "Max Reputation Level",
+        "reputationSteps": "Steps / Reputation Level",
+        "reputationProgress": "Reputation Progress",
+        "reputationMacroHint": "Runs the selected Macro when reputation crosses the target in the chosen direction. Changes that skip levels run every crossed trigger in order.",
+        "reputationMacroTarget": "Target Reputation",
+        "reputationMacroAdd": "Add Reputation Macro",
+        "reputationMacroRemove": "Remove Reputation Macro",
+        "reputationMacroEmpty": "No Reputation Macro triggers are registered.",
+        "emblem": "Organization Crest / Logo",
+        "emblemThumbnail": "Map Crest Thumbnail",
+        "emblemTag": "Crest Label",
+        "emblemScale": "Crest Scale",
+        "emblemOffsetX": "Crest Offset X",
+        "emblemOffsetY": "Crest Offset Y",
+        "reputationCutinHint": "Choose a crest or key image for each reputation state, then adjust its framing in the preview. Blank fields reuse the organization crest / logo.",
+        "reputationUpImage": "Reputation Up Image",
+        "reputationMaxImage": "Max Reputation Image",
+        "reputationDownImage": "Reputation Down Image",
+        "organizationUnlockImage": "Organization Unlock Image",
+        "emblemImageFallback": "Blank uses the organization crest / logo",
+        "rankMacroHint": "Runs the selected Macro when the relationship crosses the target rank in the chosen direction. Positive thresholds are entered on Up and left on Down; hostile thresholds work in reverse. Skipped ranks run in order.",
+        "rankMacroTarget": "Target Rank",
+        "rankMacroDirection": "Direction",
+        "rankMacroDirectionUp": "Up (+)",
+        "rankMacroDirectionDown": "Down (−)",
+        "rankMacroMacro": "Macro",
+        "rankMacroAdd": "Add Rank Macro",
+        "rankMacroRemove": "Remove Rank Macro",
+        "rankMacroEmpty": "No Rank Macro triggers are registered.",
+        "rankMacroNoMacros": "Create a world Macro first.",
+        "rankMacroNone": "Select Macro",
+        "rankMacroUnavailable": "Missing Macro",
+        "locked": "Locked",
+        "portrait": "Portrait Image",
+        "listImage": "List Image",
+        "listImageHint": "Optionally choose a separate image for relationship lists. When blank, the portrait is used first, followed by the linked Actor's token image.",
+        "mapThumbnail": "Map Thumbnail",
+        "mapThumbnailHint": "Choose a separate image for Relationship Map nodes, or use Auto to regenerate it from the portrait. Scale and X/Y affect only the map node; adjusting an automatic image uses the uncropped portrait so off-center subjects remain available.",
+        "mapThumbnailAuto": "Auto",
+        "mapThumbnailPreview": "Map Node Preview",
+        "mapThumbnailScale": "Map Scale",
+        "mapThumbnailOffsetX": "Map X (%)",
+        "mapThumbnailOffsetY": "Map Y (%)",
+        "mapThumbnailReset": "Reset Map Frame",
+        "mapInspectorImage": "Map Detail Portrait",
+        "mapInspectorEmblem": "Map Detail Crest",
+        "mapInspectorHint": "Sets the image used in the right-hand Relationship Map detail panel. Blank reuses the main portrait. Its framing is independent from the circular Map Node.",
+        "mapInspectorUsePortrait": "Use Main",
+        "mapInspectorPreview": "Map Detail Preview",
+        "mapInspectorScale": "Detail Scale",
+        "mapInspectorOffsetX": "Detail X (%)",
+        "mapInspectorOffsetY": "Detail Y (%)",
+        "mapInspectorReset": "Reset Detail Frame",
+        "portraitTag": "Image Label",
+        "portraitPresentation": "Image Layout",
+        "portraitPresentationHint": "Choose the presentation directly, regardless of file format. The choice applies to the main view and rank cut-ins.",
+        "portraitPresentationCutout": "Full-body / Cutout",
+        "portraitPresentationFramed": "Theme Frame",
+        "portraitScale": "Portrait Scale",
+        "portraitOffsetX": "Offset X",
+        "portraitOffsetY": "Offset Y",
+        "rankCutinHint": "Choose separate images for each cut-in state, then adjust the shared framing inside the frozen preview. Blank image fields reuse the portrait image.",
+        "rankCutinRankUpImage": "Rank Up Image",
+        "rankCutinMaxImage": "Relationship Complete Image",
+        "rankCutinRankDownImage": "Rank Down Image",
+        "rankCutinUnlockImage": "Unlock Image",
+        "rankCutinImageFallback": "Blank uses the portrait image",
+        "rankCutinPreview": "Frozen Cut-In Preview",
+        "rankCutinPreviewPlay": "Play Full Screen",
+        "rankCutinPreviewPlayHint": "Play this preview without changing the relationship",
+        "rankCutinPreviewEmpty": "Select a relationship with a portrait",
+        "rankCutinPreviewMode": "Preview State",
+        "rankCutinPreviewRankUp": "Rank Up",
+        "rankCutinPreviewMax": "Relationship Complete",
+        "rankCutinPreviewRankDown": "Rank Down",
+        "rankCutinPreviewUnlock": "Unlock",
+        "rankCutinScale": "Cut-In Scale",
+        "rankCutinOffsetX": "Cut-In Offset X",
+        "rankCutinOffsetY": "Cut-In Offset Y",
+        "bio": "Bio",
+        "playerNotes": "Player Notes",
+        "gmNotes": "GM Notes (GM only)",
+        "statKey": "Label",
+        "statValue": "Value",
+        "statAccent": "Accent",
+        "unlockEnabled": "Enable auto-unlock",
+        "unlockOnGift": "Unlock with the first Gift",
+        "unlockType": "Condition",
+        "unlockRelationship": "Relationship",
+        "unlockValue": "Threshold",
+        "visibility": "Visibility",
+        "playerEditable": "Allow Player Editing",
+        "eventDay": "Date Label",
+        "eventText": "Title",
+        "eventRankLabel": "Display Rank Label",
+        "eventRevealAtRank": "Reveal at Rank (GM only)",
+        "eventRevealAtRankHint": "0 = always visible. A positive value keeps this entry off the relationship screen until that rank; GMs can still manage it here.",
+        "eventQuote": "Quote",
+        "eventRecollection": "Recollection",
+        "eventImage": "Image",
+        "eventImageScale": "Image Scale",
+        "eventImageOffsetX": "Image Offset X",
+        "eventImageOffsetY": "Image Offset Y",
+        "eventRankChange": "Rank Change Marker",
+        "eventRankChangeNone": "Normal Event",
+        "eventRankChangeUp": "Rank Up",
+        "eventRankChangeDown": "Rank Down",
+        "eventIsRankUp": "Rank-Up Event"
+      },
+      "entry": {
+        "custom": "Custom Entry",
+        "actor": "Linked Actor",
+        "organization": "Organization / Faction"
+      },
+      "vis": {
+        "players": "Visible to Players",
+        "owner": "Owner Only",
+        "gm": "GM Only"
+      },
+      "unlockType": {
+        "totalRankAtLeast": "Total rank at least",
+        "relationshipRankAtLeast": "Specific relationship rank at least"
+      },
+      "unlockRelationshipNone": "Select a relationship",
+      "gift": {
+        "profileHint": "Author the Gift Profile that decides reactions, progress, and consumption. Players never see this editor; use the test run below to verify it.",
+        "source": {
+          "targetActor": "Shared Actor Profile",
+          "relationshipOverride": "Relationship Override",
+          "disabled": "Disabled",
+          "disabledHint": "Gift giving is turned off for this relationship."
+        },
+        "targetMissingHint": "Link a target Actor to edit its shared Gift Profile.",
+        "sharedScopeHint": "Editing the target Actor's shared profile. Every relationship pointing at this Actor uses it unless overridden.",
+        "consumeModeLabel": "Consume Mode",
+        "consumeMode": {
+          "worldDefault": "World Default",
+          "consume": "Consume Item",
+          "keep": "Keep Item"
+        },
+        "maxQuantityLabel": "Max Qty / Gift",
+        "allowMaxRankLabel": "Allow Max-Rank Gifts",
+        "rejectedConsumeLabel": "Rejected Consume",
+        "rejectedConsumeMode": {
+          "keep": "Keep Item",
+          "consume": "Consume Item"
+        },
+        "defaultReactionLabel": "Default Reaction",
+        "preferenceVisibilityLabel": "Preference Visibility",
+        "preferenceVisibility": {
+          "hidden": "Hidden",
+          "hint": "Weak Hint",
+          "full": "Full Reveal"
+        },
+        "reactionDisplayLabel": "Reaction Display",
+        "reactionDisplayMode": {
+          "auto": "Auto",
+          "dialog": "Dialog",
+          "cutin": "Cut-in"
+        },
+        "reactionAudienceLabel": "Reaction Audience",
+        "reactionAudience": {
+          "giverOnly": "Giver Only",
+          "giverAndGm": "Giver & GM",
+          "eligibleViewers": "Eligible Viewers"
+        },
+        "unmatchedModeLabel": "Unmatched Gift",
+        "unmatchedMode": {
+          "neutral": "Accept with Reaction",
+          "block": "Block"
+        },
+        "unmatchedReactionLabel": "Unmatched Reaction",
+        "unmatchedProgressLabel": "Unmatched Progress +",
+        "reactionRegistryLabel": "Reaction Presets",
+        "reactionNameLabel": "Reaction Name",
+        "reactionConsumeLabel": "Consume Override",
+        "addReaction": "Add Reaction",
+        "removeReaction": "Remove reaction",
+        "reactionConsumeMode": {
+          "inherit": "Use Profile Policy",
+          "consume": "Always Consume",
+          "keep": "Always Keep"
+        },
+        "stageLabel": "Stage Name",
+        "rankMin": "Rank Min",
+        "rankMax": "Rank Max",
+        "removeStage": "Remove stage",
+        "addStage": "Add Stage",
+        "ruleLabel": "Rule Label",
+        "matchModeLabel": "Match Mode",
+        "matchMode": {
+          "sourceUuid": "Source UUID",
+          "uuid": "Item UUID",
+          "name": "Name",
+          "type": "Type",
+          "tag": "Tag"
+        },
+        "matchValueLabel": "Match Value",
+        "ruleReactionLabel": "Reaction",
+        "removeRule": "Remove rule",
+        "addRule": "Add Rule",
+        "noRules": "No rules yet. Unmatched gifts follow the unmatched policy.",
+        "reactionLabel": {
+          "favorite": "Favorite",
+          "liked": "Liked",
+          "neutral": "Neutral",
+          "disliked": "Disliked",
+          "rejected": "Rejected"
+        },
+        "reactionColReaction": "Reaction",
+        "reactionColProgress": "Prog +",
+        "reactionColLine": "Line",
+        "reactionColPreviewHint": "Weak Hint Line",
+        "reactionColPreviewResult": "Full Reveal Line",
+        "reactionColCutin": "Cut-in Image",
+        "reactionColSfx": "SFX",
+        "reactionColCutinScale": "Cut-in Scale",
+        "reactionColCutinOffsetX": "Cut-in X",
+        "reactionColCutinOffsetY": "Cut-in Y",
+        "reactionCutinBrowse": "Browse cut-in image",
+        "reactionCutinPreview": "Preview Cut-In",
+        "reactionCutinPreviewHint": "Play the current values and SFX full screen without consuming an Item or changing the relationship",
+        "reactionCutinPreviewUnavailable": "Another Gift cut-in is playing or this preview has incomplete data.",
+        "reactionCutinPreviewPanel": "Gift Cut-In Preview",
+        "reactionCutinPreviewReaction": "Preview Reaction",
+        "reactionCutinPreviewEditHint": "Edit only the selected reaction's cut-in image, SFX, scale, and position below.",
+        "reactionCutinPreviewPlay": "Play Full Screen",
+        "reactionCutinPreviewPlayHint": "Play the selected reaction full screen without consuming an Item or changing the relationship",
+        "reactionCutinPreviewEmpty": "Select a Gift reaction to preview",
+        "reactionSfxBrowse": "Browse SFX",
+        "saveProfile": "Save Gift Profile",
+        "testRunTitle": "GM Test Run",
+        "testRunHint": "Runs the real gift engine against the saved profile. Progress and reaction come only from the saved Gift Profile.",
+        "giver": "Giver Actor",
+        "item": "Item",
+        "quantity": "Qty",
+        "eventText": "Event Note (optional)",
+        "eventTextPlaceholder": "Leave blank to auto-fill",
+        "eventDay": "Date Label (optional)",
+        "eventDayPlaceholder": "e.g. WK 12",
+        "testSubmit": "Test Gift",
+        "singleUse": "quantity untracked",
+        "genericItem": "the item",
+        "previewItemName": "Preview Gift",
+        "noItems": "This Actor has no giftable items.",
+        "noItemsOption": "No items available",
+        "disabledHint": "Gift giving is disabled for this relationship.",
+        "lockedHint": "Unlock this relationship before giving a gift.",
+        "maxHint": "This relationship is already at max rank.",
+        "denyHint": "You need GM or owner permission to give gifts.",
+        "archive": {
+          "title": "Give Gift",
+          "close": "Close gift dialog",
+          "closeShort": "Close",
+          "question": "What will you give?",
+          "submit": "Give Gift",
+          "submitSub": "Confirm the selected item",
+          "hint": "CLICK · B / ESC - Close",
+          "giverLabel": "Giving as",
+          "catalogLabel": "Owned item catalog",
+          "searchLabel": "Search gift items",
+          "searchPlaceholder": "Search name or type",
+          "clearSearch": "Clear search",
+          "emptySearch": "No matching items",
+          "emptySearchHint": "Try a different search or clear it",
+          "emptyInventory": "No items available to gift",
+          "emptyInventoryHint": "Add an Item to the inventory, then open this again",
+          "previous": "Prev",
+          "next": "Next",
+          "selectedLabel": "Selected Gift",
+          "owned": "Owned",
+          "singleUseWarning": "Quantity untracked · item will be preserved",
+          "singleUseDetail": "No quantity field · preserved to prevent accidental deletion",
+          "preview": {
+            "title": "Expected Reaction",
+            "loading": "Reading the reaction...",
+            "error": "Could not read the reaction.",
+            "hint": {
+              "positive": "This gift seems to catch their interest.",
+              "neutral": "This gift seems acceptable.",
+              "negative": "They do not seem very drawn to this.",
+              "blocked": "They may not accept this gift.",
+              "unknown": "Their reaction is hard to read."
+            },
+            "full": {
+              "result": "{reaction} · Progress +{progress}",
+              "blocked": "This gift cannot be accepted.",
+              "unknownReaction": "Unknown reaction"
+            }
+          },
+          "reaction": {
+            "giftLabel": "GIFT",
+            "progressLabel": "Progress",
+            "hint": "CLICK · ENTER - Continue"
+          }
+        },
+        "journal": {
+          "title": "Gift diary",
+          "catalogTitle": "little things",
+          "question": "Pick a small thing worth remembering.",
+          "searchPlaceholder": "Look through the little things...",
+          "page": "page",
+          "forLabel": "a little something for",
+          "selectedTitle": "wrap this one",
+          "reactionTitle": "a feeling, perhaps",
+          "noteTitle": "a note to leave beside it",
+          "submit": "Wrap & Give",
+          "submitSub": "Keep this moment in the journal"
+        }
+      }
+    },
+    "profileForm": {
+      "title": "Title",
+      "bondLabel": "Relationship Term (Singular)",
+      "bondLabelHint": "Used instead of BOND for character relationships. Organization REPUTATION is unchanged.",
+      "bondLabelPlural": "Relationship Term (Plural)",
+      "bondLabelPluralHint": "Used for list headings, such as BONDS or AFFINITIES.",
+      "subtitle": "Subtitle",
+      "lozenge": "Lozenge",
+      "archiveLabel": "Archive Label",
+      "sessionLabel": "Session Label",
+      "calendarLabel": "Calendar Label",
+      "fontScale": "Font Scale",
+      "maxRelationshipSlots": "Max Relationship Slots",
+      "showBgLetter": "Show Background Letter",
+      "showNameRoman": "Show Romanized Name",
+      "mapHint": "Control how far the map expands and whether map nodes use generated thumbnails.",
+      "mapVisibilityMode": "Map Range",
+      "mapMaxDepth": "Max Map Depth",
+      "mapMaxNodes": "Max Map Nodes",
+      "mapUseThumbnails": "Use Map Thumbnails",
+      "mapVisibility": {
+        "direct": "Direct relationships only",
+        "expanded": "Expanded network (safe default)",
+        "network": "Full network within caps"
+      }
+    },
+    "terminology": {
+      "increase": "{term} +",
+      "decrease": "{term} -",
+      "activePlural": "ACTIVE {terms}",
+      "record": "{term} Record",
+      "recall": "{term} Recall",
+      "recentPlural": "EVENT LOG · Recent {terms}",
+      "mapEmpty": "Select a node on the map to view its {termLower} record.",
+      "managerPanel": "{terms} · Relationship List",
+      "progressLabel": "{term} Progress",
+      "completeImage": "{term} Complete Image",
+      "classLabel": "{term} CLASS",
+      "linked": "{term}",
+      "emptySelection": "NO {term} SELECTED",
+      "maxLabel": "MAX {term}",
+      "deepen": "Deepen {term}",
+      "unlock": "Unlock {term}",
+      "complete": "{term} Complete",
+      "deepened": "{term} Deepened",
+      "unlocked": "{term} Unlock"
+    }
+  }
+}

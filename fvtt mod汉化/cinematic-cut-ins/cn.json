@@ -1,4 +1,5 @@
-{"CINEMATIC": {
+{
+  "CINEMATIC": {
     "AllOut": {
       "Btn": {
         "Execute": "执行",
@@ -12,6 +13,8 @@
       },
       "Label": {
         "AudioGroup": "音频",
+        "BaseAdjust": "基础",
+        "BaseAdjustTitle": "编辑基础图像调整",
         "CharVoice": "语音",
         "Character": "角色",
         "Color": "主题",
@@ -22,6 +25,17 @@
         "IndivSFX": "音效",
         "IndivVoice": "语音",
         "LinkCombat": "链接战斗",
+        "ReadyGroup": "就绪状态",
+        "ReadyAdjust": "就绪",
+        "ReadyAdjustTitle": "编辑就绪图像调整",
+        "ReadyFinalScaleTitle": "就绪最终缩放",
+        "ReadyFinalXTitle": "就绪最终 X",
+        "ReadyFinalYTitle": "就绪最终 Y",
+        "ReadyImage": "就绪图像",
+        "ReadySFX": "就绪音效",
+        "ReadyZoomScaleTitle": "就绪缩放比例",
+        "ReadyZoomXTitle": "就绪缩放 X",
+        "ReadyZoomYTitle": "就绪缩放 Y",
         "SFX": "音效（效果）",
         "ScaleShort": "S",
         "Shadow": "阴影",
@@ -32,7 +46,7 @@
         "Theme": "主题",
         "Voice": "语音 / BGM",
         "VoteButtonText": "投票按钮文本",
-		"VoteButtonSound": "投票按钮音效",
+        "VoteButtonSound": "投票按钮音效",
         "X": "X",
         "Y": "Y",
         "ZoomShort": "Z"
@@ -43,6 +57,60 @@
       "Notif": {
         "NoActorsAvailable": "没有可添加的角色。"
       },
+      "PanelMode": {
+        "BtnInit": "初始化手动面板（单个全屏面板）",
+        "BtnReset": "重置手动面板",
+        "BtnUndo": "撤销上次手动分割",
+        "HideGuides": {
+          "Label": "隐藏参考线和编号",
+          "Tooltip": "仅在编辑器中隐藏细面板轮廓参考线和面板编号。手动分割线保持可见，且不会影响已保存的预设。"
+        },
+        "Hint": "点击面板将其选中，然后在其上拖动一条直线将其一分为二。继续分割，直到面板数量与参与者数量一致。面板按顺序对应参与者（1、2、3……）。",
+        "Label": "面板布局",
+        "LineStyle": {
+          "BlackBrush": "黑色画笔",
+          "BlackBrushSoft": "柔和黑色画笔",
+          "BlackBrushSoftClean": "柔和黑色画笔（干净）",
+          "BlackBrushClean": "黑色画笔（干净）",
+          "BlackBrushRough": "粗糙黑色画笔",
+          "BlackBrushRoughClean": "粗糙黑色画笔（干净）",
+          "ColorLabel": "颜色",
+          "ColorTooltip": "可选地为下一条手动分割线着色或发光。",
+          "GlowLabel": "发光",
+          "Label": "分割线",
+          "NeonGlitch": "霓虹故障",
+          "None": "无（仅形状）",
+          "PrismaticRift": "棱镜裂隙",
+          "Note": "仅适用于新的分割。现有分割线保留绘制时所选的样式、粗细和效果。",
+          "TintLabel": "着色",
+          "Tooltip": "选择绘制下一条手动分割线时使用的视觉线条资源。",
+          "WidthLabel": "粗细",
+          "WidthTooltip": "选择绘制下一条手动分割线时使用的粗细。"
+        },
+        "Manual": "手动（绘制分割线）",
+        "Notif": {
+          "Initialized": "手动面板已初始化为单个全屏面板。",
+          "SplitFailed": "分割被拒绝：线条必须穿过选中的面板，并产生两个非退化的部分。",
+          "UndoUnavailable": "没有可撤销的手动分割。",
+          "Undone": "已撤销上次手动分割。"
+        },
+        "Status": {
+          "NeedMoreSplits": "{current}/{target} 个面板——还需分割 {missing} 次。",
+          "Ready": "{count} 个面板已就绪。",
+          "TooMany": "{current}/{target} 个面板——数量过多；请重置并重新分割。",
+          "Uninitialized": "手动面板尚未初始化。"
+        },
+        "Theme": "主题默认（自动）",
+        "ThemeGuide": {
+          "Title": "主题兼容性",
+          "RecommendedLabel": "推荐",
+          "RecommendedThemes": "Rebel, Comic, Urban, Noir, Dragon, Classic Slice",
+          "LimitedLabel": "不推荐",
+          "LimitedThemes": "Wanted, Arcane, Legion, Horizon",
+          "Note": "推荐的主题与手动分割配合自然。不推荐的主题针对其自动布局进行了调校，手动分割的效果可能显得别扭。"
+        },
+        "Tooltip": "在主题的自动布局和手动绘制的面板布局之间切换。"
+      },
       "Participants": "参与者",
       "Placeholder": {
         "DisplayText": "显示文本",
@@ -50,7 +118,14 @@
         "PresetName": "预设名称",
         "SubTitle": "副标题（默认：是时候结束了！）"
       },
-      "SelectPreset": "-- 预设 --"
+      "SelectPreset": "-- 预设 --",
+      "Tabs": {
+        "Setup": "设置",
+        "Panels": "面板",
+        "Text": "文本",
+        "Actors": "角色",
+        "Layers": "层"
+      }
     },
     "Analysis": {
       "Actor": {
@@ -96,12 +171,20 @@
       "BtnAdd": "添加",
       "BtnAddSound": "添加音频路径",
       "BtnAddVariation": "添加变体",
+      "BtnCopyGlobalToActive": "将全局样式复制到激活配置",
+      "BtnCopyInheritedTriggers": "复制到角色",
+      "BtnCopyToActive": "将预设复制到激活配置",
       "BtnDelete": "删除",
+      "BtnInsertActorName": "角色名称",
       "BtnLoad": "加载",
       "BtnReset": "重置",
       "BtnSave": "保存",
+      "BtnSaveActiveConfig": "保存激活配置",
       "BtnSaveConfig": "保存配置",
+      "BtnSaveGlobalPreset": "保存全局预设",
+      "BtnSavePersonalPreset": "保存个人预设",
       "BtnTest": "测试（本地）",
+      "BtnConvertTextOffsets": "使用独立文本偏移",
       "ColorsEffects": "颜色与效果",
       "CustomDecoration": "自定义装饰（资源）",
       "Dialog": {
@@ -112,7 +195,9 @@
         "OverwritePersonal": "<p>名为<strong>\"{name}\"</strong>的预设已存在。<br>是否要覆盖它？</p>",
         "OverwriteTitle": "覆盖预设？",
         "ResetContent": "<p>确定要将所有设置重置为默认值吗？</p>",
-        "ResetTitle": "重置设置"
+        "ResetTitle": "重置设置",
+        "ConvertTextOffsetsTitle": "使用独立文本偏移？",
+        "ConvertTextOffsetsContent": "<p>这会尽可能保留当前的视觉间距，然后让主文本 Y 和副文本 Y 独立移动。</p><p>检查预览后保存配置。</p>"
       },
       "FontDefault": "（默认）",
       "GeneralSettings": "常规设置",
@@ -125,8 +210,12 @@
       },
       "Hint": {
         "ActorGroup": "将此角色分配到分组中，以便使用分组默认预设作为回退。",
+        "ActorNamePlaceholder": "在光标处插入 {{name}}。播放时它会被替换为当前角色的名称。",
         "AudioOnly": "仅播放声音/音效，无任何视觉效果或黑边。",
+        "InheritGroupTriggers": "启用后，分组默认全局预设中的触发规则也会应用于此角色。",
         "LocalOnly": "仅在此触发客户端播放此切入效果。其他玩家不会看到。",
+        "LegacyTextOffset": "此旧版预设使用旧式文本偏移，其中主文本 Y 影响整个文本块，副文本 Y 改变间距。",
+        "ConvertTextOffsets": "转换此预设，使主文本 Y 和副文本 Y 独立移动。现有间距将尽可能保留。",
         "SaveBottom": "使用底部按钮保存更改。",
         "VideoAudio": "如果特写是视频文件，则同时播放其音轨。"
       },
@@ -151,8 +240,11 @@
         "FontItalic": "斜体",
         "Format": "格式",
         "HideBackground": "隐藏主题背景",
+        "HideCharacter": "隐藏角色",
         "HideCharShadow": "隐藏阴影",
         "Image": "切入图片",
+        "ImageSource": "角色图像来源",
+        "InheritGroupTriggers": "继承分组触发规则",
         "KeepAudioPlaying": "切入结束后继续播放音频",
         "LayerDelay": "开始延迟（秒）",
         "LayersBack": "背景层（后）",
@@ -162,6 +254,7 @@
         "MainOffset": "主文本偏移",
         "MainSize": "主文本大小",
         "MainText": "主文本",
+        "PreserveMainTextCase": "保留主文本大小写",
         "MidAdjust": "中景位置/大小",
         "Mirror": "镜像",
         "NoBackLayers": "未配置背景层。",
@@ -176,6 +269,13 @@
         "SFXList": "音效列表（随机）",
         "SFXVolume": "音效音量",
         "Scale": "缩放",
+        "CinematicEffect": "电影化效果",
+        "CinematicEffectStrength": "效果强度",
+        "CinematicEffectPositionX": "效果位置 X",
+        "CinematicEffectPositionY": "效果位置 Y",
+        "CinematicEffectScale": "效果缩放",
+        "ScreenMood": "屏幕氛围",
+        "ScreenMoodOpacity": "氛围不透明度",
         "ScreenPos": "屏幕位置（X / Y）",
         "Shake": "屏幕震动",
         "Sound": "语音 / BGM",
@@ -186,6 +286,7 @@
         "SubSize": "副文本大小",
         "SubText": "副文本",
         "TextColor": "文本颜色",
+        "TextOffsetMode": "文本偏移模式",
         "Theme": "主题",
         "ThemeColor": "主题颜色",
         "VideoAudio": "播放视频音频"
@@ -203,15 +304,20 @@
         "EnterGlobalName": "请输入全局预设的名称。",
         "EnterName": "请输入预设名称。",
         "GlobalSaved": "已保存为全局预设：\"{name}\"",
+        "CopiedInheritedTriggers": "已从 \"{preset}\" 复制继承的触发器到此角色，并禁用了分组触发器继承。",
+        "NoInheritedTriggers": "没有可复制的继承分组触发器。",
         "PresetDeleted": "Cinematic-cut-ins效果：预设已删除。",
         "PresetLoaded": "Cinematic-cut-ins效果：已加载预设 \"{name}\"。",
         "PresetSaved": "Cinematic-cut-ins效果：预设 \"{name}\" 已保存。",
+        "TextOffsetsConverted": "文本偏移已转换。检查预览后保存以保留此模式。",
         "ResetComplete": "Cinematic-cut-ins效果：设置已重置。",
         "Saved": "Cinematic-cut-ins效果：已保存 {name} 的配置",
         "SelectDelete": "请选择要删除的预设。",
         "TestPlay": "Cinematic-cut-ins效果：正在播放本地预览。"
       },
       "Option": {
+        "CurrentActorImage": "当前角色图像",
+        "PresetImage": "预设图像",
         "NoGroup": "-- 无分组 --"
       },
       "Placeholder": {
@@ -225,6 +331,43 @@
       "SaveActorTitle": "保存到角色",
       "SaveGlobalTitle": "保存为全局样式",
       "SelectPreset": "-- 选择预设 --",
+      "ScreenMood": {
+        "None": "无",
+        "Night": "夜晚",
+        "Dusk": "黄昏",
+        "Dawn": "黎明",
+        "Flashback": "闪回",
+        "Vignette": "暗角",
+        "Dream": "梦境",
+        "OldTv": "老电视",
+        "Lightning": "闪电",
+        "MonochromeFilm": "黑白胶片"
+      },
+      "CinematicEffect": {
+        "None": "无",
+        "Group": {
+          "Particles": "粒子与碎片",
+          "Cinematic": "电影化点缀"
+        },
+        "DebrisBurst": "碎片爆裂",
+        "SparkBurst": "能量火花",
+        "EmberStorm": "余烬风暴",
+        "VictoryConfetti": "胜利彩带",
+        "PetalDrift": "花瓣飘落",
+        "SparkleShimmer": "星光闪烁",
+        "LensRain": "镜头雨滴",
+        "Shockwave": "冲击波",
+        "HeroFlare": "英雄光耀",
+        "FilmBurn": "胶片灼烧",
+        "BlackoutCut": "黑幕切换",
+        "SpeedLines": "速度线",
+        "ShadowMist": "阴影迷雾",
+        "Strength": {
+          "Low": "低",
+          "Medium": "中",
+          "High": "高"
+        }
+      },
       "Short": {
         "Angle": "角度（°）",
         "Delay": "延迟",
@@ -234,8 +377,13 @@
         "Y": "Y"
       },
       "Tab": {
+        "Effects": "效果",
         "General": "常规",
-        "Triggers": "触发器"
+        "Layers": "层",
+        "Preset": "预设",
+        "Text": "文本",
+        "Triggers": "触发器",
+        "Visual": "视觉"
       },
       "TipVariation": "将随机选择其中之一（或主图片）。",
       "Title": "Cinematic-cut-ins效果设置",
@@ -263,7 +411,8 @@
       "Notif": {
         "AssignedGroup": "已将分组分配给 {count} 个角色。",
         "ClearedGroup": "已清除 {count} 个角色的分组分配。",
-        "NoActorsSelected": "未选择角色。"
+        "NoActorsSelected": "未选择角色。",
+        "SetupGuideUnavailable": "无法启动设置指南。请重新打开控制面板后重试。"
       },
       "Option": {
         "ClearGroup": "清除分组"
@@ -289,7 +438,8 @@
         "InitiateVote": "发起投票（玩家加入）",
         "Play": "播放切入效果",
         "PlayGroup": "播放",
-        "SelectGroup": "选择以创建分组攻击"
+        "SelectGroup": "选择以创建分组攻击",
+        "SetupGuide": "打开初始设置指南"
       }
     },
     "Format": {
@@ -327,6 +477,11 @@
     },
     "Scene": {
       "AutomationTitle": "场景自动化",
+      "Scope": {
+        "Hint": "留空可将此预设用作所有 Foundry 场景中的默认预设。如果某个场景专属预设匹配相同的触发器，则只会播放该场景专属预设。",
+        "Label": "应用于 Foundry 场景",
+        "NoScenes": "没有可用的 Foundry 场景。"
+      },
       "Trigger": {
         "CombatEnd": "战斗结束时",
         "CombatStart": "战斗开始时",
@@ -342,6 +497,8 @@
       "Stretch": "自适应拉伸（全屏）"
     },
     "Setting": {
+      "DisableCinematicEffects": "为我禁用电影化效果",
+      "DisableCinematicEffectsHint": "在我的屏幕上跳过粒子和冲击效果。切入效果仍会正常播放。适用于低配置机器。",
       "GroupScreenMode": "分组：屏幕宽高比模式",
       "PersonalScreenMode": "个人：屏幕宽高比模式",
       "ScreenModeHint": "选择切入效果如何适应你的屏幕。影院/聚焦/浮动模式保留 GM 的预期构图。",
@@ -354,121 +511,200 @@
       "VictoryHint": "选择战斗结束时播放的全力攻击预设 ID。",
       "VictoryName": "胜利效果"
     },
-  "Theme": {
-    "Arcane": "奥术（魔法/奇幻）",
-    "Blitz": "闪电 R（右侧）",
-    "BlitzLeft": "闪电 L（左侧）",
-    "Blossom": "绽放",
-    "Brush": "画笔（原版）",
-    "Burst": "爆发",
-    "Cinematic": "电影化（电影）",
-    "Cyber": "赛博（科幻）",
-    "Dash": "冲刺（速度）",
-    "Glitch": "故障",
-    "Impact": "冲击（动作）",
-    "Map": "冒险地图（旧纸张）",
-    "Neon": "霓虹（复古波）",
-    "Phantom": "幻影（时尚）",
-    "Royal": "皇家（金色）",
-    "Runes": "符文（神秘）",
-    "Saga": "传奇（纹理）",
-    "Scope": "瞄准镜（宽屏）",
-    "Slash": "斩击（对角线）",
-    "Stellar": "星辉 R（右侧）",
-    "StellarLeft": "星辉 L（左侧）",
-    "Tribal": "部落（龙）",
-    "Typewriter": "打字机",
-    "Voltage": "电压（速度）",
-    "Yakuza": "极道",
-    "Ink": "墨水（飞溅）",
-    "Cleave": "裂斩",
-	"Eclipse": "日蚀"
-  },
-  "Trigger": {
-    "BtnAdd": "添加触发器",
-    "ChatTriggers": "聊天/掷骰监视列表",
-    "Empty": {
-      "TurnEnd": "未配置回合结束触发器。",
-      "TurnStart": "未配置回合开始触发器。"
+    "Theme": {
+      "Arcane": "奥术（魔法/奇幻）",
+      "Blitz": "闪电 R（右侧）",
+      "BlitzLeft": "闪电 L（左侧）",
+      "Blossom": "绽放",
+      "Broadcast": "广播（紧急信号）",
+      "Brush": "画笔（原版）",
+      "Burst": "爆发",
+      "Cinematic": "电影化（电影）",
+      "Cyber": "赛博（科幻）",
+      "Dash": "冲刺（速度）",
+      "Glitch": "故障",
+      "Impact": "冲击（动作）",
+      "Map": "冒险地图（旧纸张）",
+      "Neon": "霓虹（复古波）",
+      "Phantom": "幻影（时尚）",
+      "Royal": "皇家（金色）",
+      "Runes": "符文（神秘）",
+      "Saga": "传奇（纹理）",
+      "Scope": "瞄准镜（宽屏）",
+      "Slash": "斩击（对角线）",
+      "Stellar": "星辉 R（右侧）",
+      "StellarLeft": "星辉 L（左侧）",
+      "Tribal": "部落（龙）",
+      "Typewriter": "打字机",
+      "Voltage": "电压（速度）",
+      "Yakuza": "极道",
+      "Ink": "墨水（飞溅）",
+      "Cleave": "裂斩",
+      "Eclipse": "日蚀",
+      "Blank": "空白（无图形）"
     },
-    "Header": {
-      "Special": "特殊条件"
+    "Tour": {
+      "InitialSetup": {
+        "Title": "Cinematic Cut-ins 初始设置",
+        "Description": "创建并测试你的第一个角色切入效果。",
+        "Step": {
+          "Purpose": {
+            "Title": "先构建一个切入效果",
+            "Content": "<p>本指南会打开控制面板，并带你完成一个角色切入效果。不会自动保存任何内容。</p><p>你可以边操作边点击高亮显示的控件，如果想手动前进，也可以使用引导按钮。</p>"
+          },
+          "OpenActors": {
+            "Title": "从角色开始",
+            "Content": "<p>角色标签页是个人切入效果的起点。本指南已为你打开它。</p>"
+          },
+          "ChooseActor": {
+            "Title": "点击角色行",
+            "Content": "<p>点击角色行将其展开。如果此列表为空，请先创建或导入角色，然后重新开始指南。</p>"
+          },
+          "OpenConfig": {
+            "Title": "打开激活配置",
+            "Content": "<p>点击「激活配置」。这会打开该角色切入效果设置的编辑器。</p>"
+          },
+          "NamePreset": {
+            "Title": "命名预设",
+            "Content": "<p>用此字段填写一个你以后能认出的预设名称。首次测试时，像 <code>Opening Cut-in</code> 这样的名称就足够了。</p>"
+          },
+          "VisualTab": {
+            "Title": "选择外观",
+            "Content": "<p>点击「视觉」。添加图片或视频，选择主题，然后根据需要调整角色位置。</p>"
+          },
+          "TextTab": {
+            "Title": "设置文本",
+            "Content": "<p>点击「文本」。设置切入过程中显示的主行和副标题。</p>"
+          },
+          "TestPlay": {
+            "Title": "本地测试",
+            "Content": "<p>点击「测试」。这只会在此客户端上播放当前的切入效果，因此你可以在保存前检查结果。</p>"
+          },
+          "Save": {
+            "Title": "满意后保存",
+            "Content": "<p>当对预览和本地测试满意后，点击「保存配置」。这一步会写入角色设置。</p>"
+          },
+          "Triggers": {
+            "Title": "稍后添加自动化",
+            "Content": "<p>触发器标签页会将此切入效果连接到攻击、聊天掷骰、资源变化、状态或回合时机。在添加触发规则之前，先保存一个可用的切入效果。</p>"
+          },
+          "Finish": {
+            "Title": "首次设置流程",
+            "Content": "<p>你的首次流程是：选择一个角色，打开「激活配置」，设置图像和文本，本地测试，保存，然后仅在需要自动化时添加触发器。</p><p>在一个角色切入效果可用后，全力攻击、场景和可复用的样式会更易于使用。</p>"
+          }
+        }
+      }
     },
-    "Hint": {
-      "GroupFallback": "如果预设为空，将自动使用分组 '{group}' 的默认预设 '{preset}'。"
+    "Trigger": {
+      "ActiveConfigOption": "角色：激活配置（本地）",
+      "ActorPresetOption": "角色预设：{preset}（链接）",
+      "BtnAdd": "添加触发器",
+      "ChatTriggers": "聊天/掷骰监视列表",
+      "ConditionTriggers": "状态监视列表",
+      "Column": {
+        "Condition": "状态",
+        "Detail": "详情",
+        "Preset": "预设"
+      },
+      "Empty": {
+        "Conditions": "未配置状态触发器。",
+        "TurnEnd": "未配置回合结束触发器。",
+        "TurnStart": "未配置回合开始触发器。"
+      },
+      "Header": {
+        "Special": "特殊条件"
+      },
+      "Hint": {
+        "GroupFallback": "如果预设为空，将自动使用分组 '{group}' 的默认预设 '{preset}'。",
+        "GroupInheritance": "来自分组 '{group}' 默认预设 '{preset}' 的触发规则在运行时被继承。",
+        "PresetSources": "选择「激活配置」以播放此角色的已保存编辑。角色和全局预设会保持链接到其可复用的来源。"
+      },
+      "GlobalPresetOption": "全局预设：{preset}（共享）",
+      "HintChat": "<details style='margin-bottom:10px; background:rgba(0,0,0,0.3); border:1px solid #444; border-radius:4px; padding:5px;'><summary style='cursor:pointer; color:#e61c34; font-weight:bold; padding:5px;'>📖 触发器配置指南（点击展开）</summary><div style='padding:10px; font-size:0.85em; color:#ccc; line-height:1.6; max-height:250px; overflow-y:auto; border-top:1px solid #444;'><p style='margin-top:0;'><b>1. 基本模式</b><br>• <b>关键词（任意）：</b>如果在文本/描述中找到该词则触发。<br>• <b>关键词（掷骰）：</b>仅在包含该词的<b>'掷骰'</b>上触发。<br>• <b>骰子检查：</b>检查特定的骰子值。<br>&nbsp;&nbsp;└ <i>输入<b>#</b>（索引）和<b>值</b>（目标）。（参见检查器中的橙色数字）</i></p><p><b>2. 特殊模式（高级公式）</b><br>使用 JavaScript 语法创建复杂条件。<br><br><b>[运算符]</b><br>• <code>==</code> : 等于<br>• <code>!=</code> : 不等于<br>• <code>&gt;=</code> : 大于或等于<br>• <code>&&</code> : 与（两者都为真）<br>• <code>||</code> : 或（任一为真）<br><br><b>[变量]</b><br>• <code>d</code> : 骰子结果数分组（例如 <code>d[0]</code> 是第一个骰子）<br>• <code>t</code> : 掷骰的总和<br>• <code>flavor</code> : 物品名称或聊天文本<br><br><b>[示例]</b><br>• <b>Fabula Ultima 暴击：</b><br><code style='background:#222; padding:2px 5px; color:#4ecdc4'>d[0] == d[1] && d[0] >= 6</code><br>• <b>高掷骰双倍（双倍且总计 >= 12）：</b><br><code style='background:#222; padding:2px 5px; color:#f9ca24'>d[0] == d[1] && t >= 12</code></div><br><i class='fas fa-info-circle'></i> 右键点击聊天消息并选择<b>'⚡ 电影化检查器'</b>来检查骰子索引。</details>",
+      "HintCondition": "通过状态 ID、核心 statusId、slug 或效果名称/标签匹配 ActiveEffect 状态。请尽可能使用 prone、stunned 或 frightened 等 ID。",
+      "Hintpath": "输入要监视的属性路径。系统将比较 .value 与 .max 以计算百分比。",
+      "Inherited": {
+        "AllRounds": "每个回合",
+        "AutoPreset": "自动：分组默认（{preset}）",
+        "ReadOnly": "只读",
+        "Round": "回合",
+        "Source": "来源",
+        "Title": "继承的分组触发器"
+      },
+      "Label": {
+        "Condition": "状态 ID / 名称",
+        "DefaultSpell": "默认法术切入",
+        "Keyword": "搜索关键词",
+        "Path": "属性路径"
+      },
+      "MacroLabel": "宏",
+      "MacroTooltip": "可选：触发此触发器时运行宏",
+      "NoMacro": "-- 无宏 --",
+      "LowHP": "低生命值（危险）",
+      "Mode": {
+        "Apply": "应用时",
+        "Decrease": "📉 低于（减少）",
+        "Increase": "📈 高于（增加）",
+        "Remove": "移除时"
+      },
+      "NoChatTriggers": "未配置监视列表。",
+      "NoTriggers": "未配置触发器。",
+      "Note": {
+        "DefaultSpell": "当使用没有特定切入配置的法术时播放。"
+      },
+      "PF2eCriticalSuccess": "PF2e：大成功（检定）",
+      "Placeholder": {
+        "Condition": "例如：prone、stunned、frightened",
+        "Path": "例如：system.attributes.hp.value",
+        "Rounds": "回合"
+      },
+      "Preset": "要播放的预设",
+      "ResourceTriggers": "资源监视列表",
+      "SelectHelper": "从列表中选择...",
+      "SelectCondition": "从列表中选择状态...",
+      "SelectPreset": "-- 选择效果 --",
+      "SelectPresetAuto": "自动：分组默认（{preset}）",
+      "SelectPresetAutoGroup": "自动：分组默认预设",
+      "TargetRoll": "目标掷骰",
+      "Threshold": "触发阈值",
+      "Title": {
+        "RoundInput": "特定回合（逗号分隔）。留空表示每个回合。"
+      },
+      "TriggerMode": "触发模式",
+      "Type": {
+        "DiceCheck": "骰子检查",
+        "Formula": "高级公式",
+        "KeywordAny": "关键词（任意）",
+        "KeywordRoll": "关键词（掷骰）",
+        "MidiAttack": "Midi：攻击时",
+        "MidiCritical": "Midi：暴击时",
+        "MidiDamage": "Midi：伤害时",
+        "OnAttack": "攻击时（系统）",
+        "OnCritical": "暴击时（系统）",
+        "OnDamage": "伤害时（系统）"
+      },
+      "TurnEnd": "回合结束",
+      "TurnRoundHint": "<i class='fas fa-info-circle'></i> 留空以触发<strong>每个回合</strong>。（例如：<code>1, 3</code>）",
+      "TurnStart": "回合开始",
+      "Unit": {
+        "Percent": "%（百分比）",
+        "Value": "№（绝对值）"
+      }
     },
-    "HintChat": "<details style='margin-bottom:10px; background:rgba(0,0,0,0.3); border:1px solid #444; border-radius:4px; padding:5px;'><summary style='cursor:pointer; color:#e61c34; font-weight:bold; padding:5px;'>📖 触发器配置指南（点击展开）</summary><div style='padding:10px; font-size:0.85em; color:#ccc; line-height:1.6; max-height:250px; overflow-y:auto; border-top:1px solid #444;'><p style='margin-top:0;'><b>1. 基本模式</b><br>• <b>关键词（任意）：</b>如果在文本/描述中找到该词则触发。<br>• <b>关键词（掷骰）：</b>仅在包含该词的<b>'掷骰'</b>上触发。<br>• <b>骰子检查：</b>检查特定的骰子值。<br>&nbsp;&nbsp;└ <i>输入<b>#</b>（索引）和<b>值</b>（目标）。（参见检查器中的橙色数字）</i></p><p><b>2. 特殊模式（高级公式）</b><br>使用 JavaScript 语法创建复杂条件。<br><br><b>[运算符]</b><br>• <code>==</code> : 等于<br>• <code>!=</code> : 不等于<br>• <code>&gt;=</code> : 大于或等于<br>• <code>&&</code> : 与（两者都为真）<br>• <code>||</code> : 或（任一为真）<br><br><b>[变量]</b><br>• <code>d</code> : 骰子结果数分组（例如 <code>d[0]</code> 是第一个骰子）<br>• <code>t</code> : 掷骰的总和<br>• <code>flavor</code> : 物品名称或聊天文本<br><br><b>[示例]</b><br>• <b>Fabula Ultima 暴击：</b><br><code style='background:#222; padding:2px 5px; color:#4ecdc4'>d[0] == d[1] && d[0] >= 6</code><br>• <b>高掷骰双倍（双倍且总计 >= 12）：</b><br><code style='background:#222; padding:2px 5px; color:#f9ca24'>d[0] == d[1] && t >= 12</code></div><br><i class='fas fa-info-circle'></i> 右键点击聊天消息并选择<b>'⚡ 电影化检查器'</b>来检查骰子索引。</details>",
-    "Hintpath": "输入要监视的属性路径。系统将比较 .value 与 .max 以计算百分比。",
-    "Label": {
-      "DefaultSpell": "默认法术切入",
-      "Keyword": "搜索关键词",
-      "Path": "属性路径"
-    },
-    "MacroLabel": "宏",
-    "MacroTooltip": "可选：触发此触发器时运行宏",
-    "NoMacro": "-- 无宏 --",
-    "LowHP": "低生命值（危险）",
-    "Mode": {
-      "Decrease": "📉 低于（减少）",
-      "Increase": "📈 高于（增加）"
-    },
-    "NoChatTriggers": "未配置监视列表。",
-    "NoTriggers": "未配置触发器。",
-    "Note": {
-      "DefaultSpell": "当使用没有特定切入配置的法术时播放。"
-    },
-    "Placeholder": {
-      "Path": "例如：system.attributes.hp.value",
-      "Rounds": "回合"
-    },
-    "Preset": "要播放的预设",
-    "ResourceTriggers": "资源监视列表",
-    "SelectHelper": "从列表中选择...",
-    "SelectPreset": "-- 选择效果 --",
-    "SelectPresetAuto": "自动：分组默认（{preset}）",
-    "TargetRoll": "目标掷骰",
-    "Threshold": "触发阈值",
-    "Title": {
-      "RoundInput": "特定回合（逗号分隔）。留空表示每个回合。"
-    },
-    "TriggerMode": "触发模式",
-    "TurnEnd": "回合结束",
-    "TurnRoundHint": "<i class='fas fa-info-circle'></i> 留空以触发<strong>每个回合</strong>。（例如：<code>1, 3</code>）",
-    "TurnStart": "回合开始",
-    "Unit": {
-      "Percent": "%（百分比）",
-      "Value": "№（绝对值）"
-    }
-  },
-  "Export": {
-    "Btn": {
-      "Export": "导出",
-      "Import": "导入"
-    },
-    "Notif": {
-      "ExportSuccess": "预设已导出（包含 {count} 个资源）。",
-      "ImportSuccess": "预设已导入（恢复 {count} 个资源）。",
-      "SelectFirst": "请先选择预设。"
-    },
-    "Error": {
-      "TypeMismatch": "类型不匹配：预期 {expected}，实际 {actual}。",
-      "InvalidPackage": "无效的包：缺少 preset.json。"
-    }
-  },
-  "Update": {
-    "Close": "关闭",
-    "Confirm": "确认",
-    "ConfirmNotice": "知道了",
-    "CriticalWarning": "⚠️ 此更新包含关键修复。",
-    "CurrentVersion": "当前版本：{current}",
-    "NewVersion": "新版本 {version} 可用！",
-    "PatchHighlights": "更新亮点",
-    "SkipVersion": "跳过此版本",
-    "Title": "电影化效果更新通知",
-    "DisableNotification": "不再显示",
-    "DisableConfirm": "已禁用更新通知。你可以在模组设置中重新启用。",
-    "DisableName": "禁用更新通知",
-    "DisableHint": "启用后，将不再显示更新通知弹窗。"
+    "Export": {
+      "Btn": {
+        "Export": "导出",
+        "Import": "导入"
+      },
+      "Notif": {
+        "ExportSuccess": "预设已导出（包含 {count} 个资源）。",
+        "ImportSuccess": "预设已导入（恢复 {count} 个资源）。",
+        "SelectFirst": "请先选择预设。"
+      },
+      "Error": {
+        "TypeMismatch": "类型不匹配：预期 {expected}，实际 {actual}。",
+        "InvalidPackage": "无效的包：缺少 preset.json。"
+      }
     }
   }
 }

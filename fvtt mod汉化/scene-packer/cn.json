@@ -1,4 +1,5 @@
-{"SCENE-PACKER": {
+{
+  "SCENE-PACKER": {
     "ok": "确定",
     "dontShow": "不再显示",
     "settings": {
@@ -206,7 +207,7 @@
         "details": "必须将字符串数组传递给“SetAdditionalMacrosToImport()”。它们必须是宏的名称。收到：{macro}",
         "missing": "调用SetAdditionalMacrosToImport()时未提供值。这将禁用导入其他宏。"
       },
-"creaturePacks": {
+      "creaturePacks": {
         "ui": "调用SetCreaturePacks()无效。请查看控制台以获取详细信息。",
         "details": "必须将字符串数组传递给“SetCreaturePacks()”。它们必须是角色合集的名称。收到：{pack}",
         "missing": "调用SetCreaturePacks()时未提供值。这将禁用导入角色。"
@@ -332,7 +333,7 @@
       "version": "版本：",
       "more-info": "更多信息：",
       "missing-asset": "包数据中缺少资产：{asset}",
-	  "incorrect-system": "你尝试导入的系统 ({packSystem}) 与当前系统 ({currentSystem}) 不同，可能会遇到问题。场景中的所有Token将被替换为占位角色以提高兼容性。是否继续？"
+      "incorrect-system": "你尝试导入的系统 ({packSystem}) 与当前系统 ({currentSystem}) 不同，可能会遇到问题。场景中的所有Token将被替换为占位角色以提高兼容性。是否继续？"
     },
     "zip-importer": {
       "name": "从Moulinette ZIP导入",
@@ -493,79 +494,93 @@
       "invalid": {
         "title": "无效的表单数据",
         "fields": "<p><strong>选项</strong>选项卡上的以下字段需要填写：</p><ul>{fields}</ul>"
+      },
+      "template": {
+        "label": "导出模板",
+        "save": "保存模板",
+        "load": "加载模板",
+        "help": "将你当前的选择和设置保存为模板文件，或加载之前保存的模板。",
+        "save-success": "模板保存成功！",
+        "load-success": "模板加载成功！",
+        "save-error": "保存模板失败：{error}",
+        "load-error": "加载模板失败：{error}",
+        "invalid-file": "模板文件格式无效",
+        "missing-warning": "模板中的以下条目已不再存在于你的世界中：",
+        "missing-continue": "这些条目将被跳过。是否要继续加载模板？",
+        "missing-title": "缺失条目"
       }
     },
-  "adventure-converter": {
-    "name": "冒险转换",
-    "setting-hint": "将你现有的Scene Packer冒险转换为V10冒险文档格式。（仅对创作者有用，对最终用户无意义。）",
-    "sitting-label": "打开冒险转换器",
-    "summary": "使用此工具将你现有的Scene Packer冒险转换为V10冒险文档格式。在使用此工具之前，你可能希望{link}。",
-    "view-tutorial": "观看教程视频",
-    "summary-help": "如果你在转换包时需要任何帮助，请访问{img} {link}并与<code>blair#9056</code>联系。",
-    "discord-name": "Scene Packer Discord服务器",
-    "missing-adventure-pack": "你选择的模组目前不支持冒险包格式。",
-    "missing-adventure-pack-link": "查看推荐的<code>module.json</code>更改。",
-    "select-adventure": "选择要转换的兼容模组",
-    "select-adventure-hint": "选择你希望转换的Scene Packer模组。它必须在此世界中启用。",
-    "select-adventure-details": "从上方选择一个模组以开始。",
-    "no-adventures": "未选择启用Scene Packer的模组。你只能使用此转换器转换已在此世界中启用的现有Scene Packer冒险。",
-    "welcome-journal": "欢迎日志",
-    "welcome-journal-hint": "欢迎日志（如果设置）将在冒险导入后自动显示。你可以将日志拖到框中以设置此值。",
-    "welcome-journal-description": "在成功导入此冒险后，{link}日志将自动显示给最终用户。",
-    "error-journal-wrong-pack": "你必须选择属于你正在转换的模组的日志。",
-    "error-journal-not-found": "在现有模组中找不到名为\"{name}\"的日志。请尝试直接从模组的合集中拖拽日志。",
-    "backup-warning": "强烈建议在运行冒险转换器之前备份你的模组和世界。这将确保你拥有与Foundry VTT v9兼容的模组版本。",
-    "backup-warning-link": "查看推荐的备份步骤。",
-    "submit": "转换冒险",
-    "manifest-upgrade-prompt-title": "冒险选项",
-    "manifest-upgrade-prompt-message": "为你的冒险文档输入一个名称。这是在合集侧栏中显示的包标签。",
-    "manifest-upgrade-prompt-label": "冒险标签",
-    "manifest-upgrade-prompt-button": "显示module.json更改",
-    "manifest-upgrade-detail-1": "需要对你的<code>{module}</code>文件进行以下更改，并已建议如下：",
-    "manifest-upgrade-detail-2": "添加了一个<code>Adventure</code>包。",
-    "manifest-upgrade-detail-3": "将<code>compatibility</code>更改为最低V10。",
-    "manifest-upgrade-detail-4": "由Core Foundry VTT平台执行的转换过程会将警告输出到控制台（F12）。请考虑查看这些警告以获取除上述两项之外的其他更改的上下文。",
-    "manifest-upgrade-next-steps": "在你的冒险模组可以转换之前，你需要手动执行以下步骤（请记下或截屏这些步骤，因为在完成所有步骤之前你将关闭此对话框）：",
-    "manifest-upgrade-next-steps-1": "在文本编辑器中打开<code>{module}</code>文件。",
-    "manifest-upgrade-next-steps-2": "将文件替换为以下内容并查看更改。进行你认为合适的任何额外更改。如果你有任何疑问，请加入Discord服务器以获取帮助。",
-    "manifest-upgrade-next-steps-3": "保存文件。",
-    "manifest-upgrade-next-steps-4": "退出此世界，返回到设置屏幕（这将重新加载模组详细信息）。",
-    "manifest-upgrade-next-steps-5": "再次加载世界并返回冒险转换器。选择你刚刚更新的模组并继续进行转换。",
-    "manifest-upgrade-automated-steps": "已自动选择以下文件路径来存储冒险合集数据库。如果你选择使用与上述建议的<code>module.json</code>更改不同的格式，则可能需要手动调整包路径。",
-    "manifest-upgrade-ok": "我已按照上述步骤操作。",
-    "manifest-upgrade-error": "生成module.json推荐更改时出错。请检查控制台（F12）以获取更多信息。",
-    "manifest-upgrade-module-not-found": "世界中不存在名为\"{name}\"的模组。",
-    "process-error-no-module": "必须提供模组名称。",
-    "process-error-no-target": "你必须提供目标包。",
-    "process-error-no-source": "你必须提供至少一个要转换的源包。",
-    "process-error-no-instance": "未找到名为\"{moduleName}\"的模组的Scene Packer实例。",
-    "process-error-no-module-found": "世界中未找到名为\"{moduleName}\"的模组。",
-    "process-error-no-pack-found": "未找到名为\"{packName}\"的合集包，其名称为\"{moduleName}\"。"
-  },
-  "welcome-journal": {
-    "import-all": "从模组导入所有{totalCount}个实体",
-    "import-replace": "替换现有内容",
-    "import-rename": "重命名现有内容",
-    "import-close": "不再显示"
-  },
-  "assets-to-lowercase": {
-    "title": "检查资产是否存在并转换为小写",
-    "description": "此工具将检查你世界中所有资产是否存在并将其引用转换为小写。它首先会列出所有将要转换的资产引用，然后提示你确认。",
-    "find-assets": "查找资产",
-    "convert": "转换资产",
-    "wait": "请稍候…",
-    "nothing": "你的世界中未找到任何资产。",
-    "all-lowercase": "所有资产已为小写。",
-    "list-assets": "以下资产将被转换为小写：",
-    "confirm": "你确定要将这些资产转换为小写吗？"
-  },
-  "reset-prompts": {
-    "name": "重置导入提示",
-    "label": "选择模组",
-    "hint": "使用此功能重置你首次安装受支持模组时收到的提示。如果你第一次不小心关闭了它，这将非常有用。",
-    "nothing": "未安装任何注册到Scene Packer的模组，因此无法重置欢迎提示。请确保模组已启用。",
-    "refresh-text": "重置提示将自动重新加载你的世界。",
-    "select-module-label": "选择模组："
+    "adventure-converter": {
+      "name": "冒险转换",
+      "setting-hint": "将你现有的Scene Packer冒险转换为V10冒险文档格式。（仅对创作者有用，对最终用户无意义。）",
+      "sitting-label": "打开冒险转换器",
+      "summary": "使用此工具将你现有的Scene Packer冒险转换为V10冒险文档格式。在使用此工具之前，你可能希望{link}。",
+      "view-tutorial": "观看教程视频",
+      "summary-help": "如果你在转换包时需要任何帮助，请访问{img} {link}并与<code>blair#9056</code>联系。",
+      "discord-name": "Scene Packer Discord服务器",
+      "missing-adventure-pack": "你选择的模组目前不支持冒险包格式。",
+      "missing-adventure-pack-link": "查看推荐的<code>module.json</code>更改。",
+      "select-adventure": "选择要转换的兼容模组",
+      "select-adventure-hint": "选择你希望转换的Scene Packer模组。它必须在此世界中启用。",
+      "select-adventure-details": "从上方选择一个模组以开始。",
+      "no-adventures": "未选择启用Scene Packer的模组。你只能使用此转换器转换已在此世界中启用的现有Scene Packer冒险。",
+      "welcome-journal": "欢迎日志",
+      "welcome-journal-hint": "欢迎日志（如果设置）将在冒险导入后自动显示。你可以将日志拖到框中以设置此值。",
+      "welcome-journal-description": "在成功导入此冒险后，{link}日志将自动显示给最终用户。",
+      "error-journal-wrong-pack": "你必须选择属于你正在转换的模组的日志。",
+      "error-journal-not-found": "在现有模组中找不到名为\"{name}\"的日志。请尝试直接从模组的合集中拖拽日志。",
+      "backup-warning": "强烈建议在运行冒险转换器之前备份你的模组和世界。这将确保你拥有与Foundry VTT v9兼容的模组版本。",
+      "backup-warning-link": "查看推荐的备份步骤。",
+      "submit": "转换冒险",
+      "manifest-upgrade-prompt-title": "冒险选项",
+      "manifest-upgrade-prompt-message": "为你的冒险文档输入一个名称。这是在合集侧栏中显示的包标签。",
+      "manifest-upgrade-prompt-label": "冒险标签",
+      "manifest-upgrade-prompt-button": "显示module.json更改",
+      "manifest-upgrade-detail-1": "需要对你的<code>{module}</code>文件进行以下更改，并已建议如下：",
+      "manifest-upgrade-detail-2": "添加了一个<code>Adventure</code>包。",
+      "manifest-upgrade-detail-3": "将<code>compatibility</code>更改为最低V10。",
+      "manifest-upgrade-detail-4": "由Core Foundry VTT平台执行的转换过程会将警告输出到控制台（F12）。请考虑查看这些警告以获取除上述两项之外的其他更改的上下文。",
+      "manifest-upgrade-next-steps": "在你的冒险模组可以转换之前，你需要手动执行以下步骤（请记下或截屏这些步骤，因为在完成所有步骤之前你将关闭此对话框）：",
+      "manifest-upgrade-next-steps-1": "在文本编辑器中打开<code>{module}</code>文件。",
+      "manifest-upgrade-next-steps-2": "将文件替换为以下内容并查看更改。进行你认为合适的任何额外更改。如果你有任何疑问，请加入Discord服务器以获取帮助。",
+      "manifest-upgrade-next-steps-3": "保存文件。",
+      "manifest-upgrade-next-steps-4": "退出此世界，返回到设置屏幕（这将重新加载模组详细信息）。",
+      "manifest-upgrade-next-steps-5": "再次加载世界并返回冒险转换器。选择你刚刚更新的模组并继续进行转换。",
+      "manifest-upgrade-automated-steps": "已自动选择以下文件路径来存储冒险合集数据库。如果你选择使用与上述建议的<code>module.json</code>更改不同的格式，则可能需要手动调整包路径。",
+      "manifest-upgrade-ok": "我已按照上述步骤操作。",
+      "manifest-upgrade-error": "生成module.json推荐更改时出错。请检查控制台（F12）以获取更多信息。",
+      "manifest-upgrade-module-not-found": "世界中不存在名为\"{name}\"的模组。",
+      "process-error-no-module": "必须提供模组名称。",
+      "process-error-no-target": "你必须提供目标包。",
+      "process-error-no-source": "你必须提供至少一个要转换的源包。",
+      "process-error-no-instance": "未找到名为\"{moduleName}\"的模组的Scene Packer实例。",
+      "process-error-no-module-found": "世界中未找到名为\"{moduleName}\"的模组。",
+      "process-error-no-pack-found": "未找到名为\"{packName}\"的合集包，其名称为\"{moduleName}\"。"
+    },
+    "welcome-journal": {
+      "import-all": "从模组导入所有{totalCount}个实体",
+      "import-replace": "替换现有内容",
+      "import-rename": "重命名现有内容",
+      "import-close": "不再显示"
+    },
+    "assets-to-lowercase": {
+      "title": "检查资产是否存在并转换为小写",
+      "description": "此工具将检查你世界中所有资产是否存在并将其引用转换为小写。它首先会列出所有将要转换的资产引用，然后提示你确认。",
+      "find-assets": "查找资产",
+      "convert": "转换资产",
+      "wait": "请稍候…",
+      "nothing": "你的世界中未找到任何资产。",
+      "all-lowercase": "所有资产已为小写。",
+      "list-assets": "以下资产将被转换为小写：",
+      "confirm": "你确定要将这些资产转换为小写吗？"
+    },
+    "reset-prompts": {
+      "name": "重置导入提示",
+      "label": "选择模组",
+      "hint": "使用此功能重置你首次安装受支持模组时收到的提示。如果你第一次不小心关闭了它，这将非常有用。",
+      "nothing": "未安装任何注册到Scene Packer的模组，因此无法重置欢迎提示。请确保模组已启用。",
+      "refresh-text": "重置提示将自动重新加载你的世界。",
+      "select-module-label": "选择模组："
     }
   }
 }

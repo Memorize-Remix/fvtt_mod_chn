@@ -1,0 +1,288 @@
+{
+	"CLT": {
+		"Trigger": "触发器",
+		"ENHANCED_CONDITIONS": {
+			"OutputChatConfirm": {
+				"Title": "为所有状态启用“输出到聊天”？",
+				"Content": "点击“是”以在所有状态上启用“输出到聊天”"
+			},
+			"ConditionLab": {
+				"NoReference": "--无参考条目--（将文档拖入此字段以设置）",
+				"FilterInputTitle": "按名称筛选",
+				"FilterButtonTitle": "应用筛选",
+				"SortAnchorTitle": {
+					"asc": "A 到 Z",
+					"desc": "Z 到 A",
+					"unsorted": "未排序"
+				},
+				"SortDirectionSave": {
+					"Title": "连同排序方向一起保存映射？",
+					"Content": "<p>点击“是”以按当前排序方向保存 Ironsworn Impacts 映射。点击“否”取消保存。</p>",
+					"CheckboxText": "不再显示"
+				},
+				"BadReference": "无法为拖入的内容（角色、物品、日志等）构建链接",
+				"RestoreDefaultClearCache": {
+					"CheckboxText": "清除缓存"
+				},
+				"Buttons": {
+					"Options": "选项"
+				}
+			},
+			"ChatCard": {
+				"Heading": "状态变更",
+				"HeadingActive": "活动状态",
+				"Title": {
+					"Active": "活动状态",
+					"Added": "已添加状态",
+					"Removed": "已移除状态"
+				},
+				"Buttons": {
+					"Undo": "撤销移除状态",
+					"Remove": "移除状态"
+				}
+			},
+			"MacroConfig": {
+				"Title": "宏配置",
+				"Heading": "要执行的宏",
+				"ApplyHeading": "应用宏",
+				"RemoveHeading": "移除宏",
+				"Description": "选择在状态添加到或移出 Token/角色时执行的宏",
+				"NoTriggerSet": "--未设置触发器--",
+				"SelectNone": "--无宏--"
+			},
+			"TriggerConfig": {
+				"Title": "触发器配置",
+				"Heading": "触发器",
+				"ApplyHeading": "应用触发器",
+				"RemoveHeading": "移除触发器",
+				"Description": "应用或移除此状态的触发器",
+				"SelectNone": "--无触发器--"
+			},
+			"OptionConfig": {
+				"Title": "选项配置",
+				"Heading": "选项",
+				"Description": "此状态的常规选项",
+				"SpecialStatusEffects": {
+					"Heading": "特殊状态效果",
+					"Description": "使用 Foundry 原生功能应用的特殊效果。"
+				},
+				"BlindToken": {
+					"Label": "致盲 Token",
+					"Notes": "应用时，此状态还会使 Token 被致盲"
+				},
+				"MarkInvisible": {
+					"Label": "标记为隐形",
+					"Notes": "应用时，此状态会使受影响的 Token 被标记为隐形"
+				},
+				"SpecialStatusEffectOverride": {
+					"Title": "覆盖此状态效果的现有状态？",
+					"Content": "另一个状态（{existingCondition}）已设置应用此特殊状态效果：{statusEffect}。<p>如果你点击“是”并保存此状态的选项，将覆盖现有的映射。</p>"
+				},
+				"SaveNote": "注意：点击保存将保存 Ironsworn Impacts 映射"
+			},
+			"Warnings": {
+				"ApplyCondition": "applyCondition 已被 addCondition 取代。请更新你的代码。"
+			},
+			"MapMismatch": "此映射与你的游戏系统不匹配，可能无法按预期工作。",
+			"ApplyCondition": {
+				"Failed": {
+					"NoToken": "应用状态失败。未提供 Token",
+					"NoCondition": "应用状态失败。找不到状态：",
+					"NoIcon": "应用状态失败。找不到图标。",
+					"AlreadyActive": "已处于活动状态。应用状态失败"
+				}
+			},
+			"GetConditions": {
+				"Failed": {
+					"NoToken": "获取状态失败。未提供实体，且无法自动找到实体",
+					"NoCondition": "获取状态失败。未找到状态映射",
+					"NoResults": "获取状态失败。在角色/Token 上未找到状态"
+				}
+			},
+			"RemoveCondition": {
+				"Failed": {
+					"NoToken": "移除状态失败。未提供 Token",
+					"NoCondition": "移除状态失败。找不到名为以下内容的状态：",
+					"NoIcon": "移除状态失败。找不到图标",
+					"NotActive": "在 Token 上不处于活动状态。移除状态失败。"
+				}
+			},
+			"RemoveAllConditions": {
+				"Failed": {
+					"NoToken": "移除状态失败。未提供 Token",
+					"NoCondition": "移除状态失败。没有活动的状态映射"
+				}
+			},
+			"Lab": {
+				"Title": "Ironsworn Impacts",
+				"Hint": "提供将状态映射到状态效果图标的功能",
+				"MappingType": {
+					"Label": "映射类型",
+					"Unsaved": "（未保存的更改）"
+				},
+				"ActiveEffects": {
+					"Title": "活动效果配置",
+					"TitleDisabledNew": "请先保存映射",
+					"TitleDisabledDefault": "无法编辑默认映射"
+				},
+				"Import": {
+					"NoFile": "你没有上传数据文件！"
+				},
+				"ConfirmDeleteTitle": "确认删除行",
+				"ConfirmDeleteContent": "你确定要删除此行吗？",
+				"RestoreDefaultsTitle": "恢复默认值？",
+				"RestoreDefaultsContent": "<p>你确定要将此映射恢复为默认值吗？</p><strong>如果保存，此更改将是永久性的。</strong>",
+				"ResetFormTitle": "重置表单？",
+				"ResetFormContent": "<p>你确定要重置表单吗？</p><p><strong>你将丢失所有未保存的更改。</strong></p>",
+				"SaveFailed": "Ironsworn Impacts 保存并关闭失败",
+				"SaveSuccess": "Ironsworn Impacts 映射已保存！",
+				"ImportTitle": "导入状态映射",
+				"ExportTitle": "导出状态映射",
+				"Options": {
+					"Title": "选项：",
+					"Overlay.Label": "叠加",
+					"RemoveOthers.Label": "移除其他状态",
+					"OutputChat.Label": "输出到聊天",
+					"MarkDefeated.Label": "标记为战败",
+					"Overlay.Title": "状态为叠加状态",
+					"RemoveOthers.Title": "应用此状态时移除其他状态",
+					"MarkDefeated.Title": "应用此状态时将匹配的战斗员标记为战败",
+					"OutputChat.Title": "添加/移除此状态时将其输出到聊天"
+				}
+			}
+		},
+		"GAME_SYSTEMS": {
+			"other": "其他",
+			"custom": "自定义/其他",
+			"unknown": "--未知--"
+		},
+		"KEYBINDINGS": {
+			"openConditionLab": {
+				"name": "打开 Ironsworn Impacts"
+			},
+			"openTriggler": {
+				"name": "打开影响触发器"
+			}
+		},
+		"SETTINGS": {
+			"EnhancedConditions": {
+				"CoreIconsN": "核心状态图标",
+				"CoreIconsH": "核心状态图标的副本",
+				"SystemN": "游戏系统",
+				"SystemH": "游戏系统的引用。如果模组无法识别，则默认为 other",
+				"OutputChatN": "输出到聊天",
+				"OutputChatH": "将匹配的状态输出到聊天",
+				"OutputCombatN": "战斗中输出",
+				"OutputCombatH": "在战斗的每一轮，将当前战斗员的所有状态输出到聊天",
+				"DefaultMapsN": "默认状态映射",
+				"DefaultMapsH": "模组提供的状态到图标的映射",
+				"RemoveDefaultEffectsN": "移除默认状态效果",
+				"RemoveDefaultEffectsH": "从 Token HUD 中移除现有的状态效果图标",
+				"DefaultOutputChatN": "将默认状态输出到聊天",
+				"DefaultOutputChatH": "将所有默认状态输出到聊天",
+				"MapTypeN": "活动状态映射类型",
+				"MapTypeH": "当前使用的状态映射类型 -- default、custom 或 other",
+				"MapType": {
+					"Choices": {
+						"inferred": "系统 - 推断",
+						"default": "系统 - 默认",
+						"custom": "系统 - 自定义",
+						"other": "其他/导入"
+					}
+				},
+				"ActiveConditionMapN": "活动状态映射",
+				"ActiveConditionMapH": "存储活动的状态映射",
+				"SuppressPreventativeSaveReminderN": "抑制预防性保存提醒",
+				"SuppressPreventativeSaveReminderH": "抑制保存 Ironsworn Impacts 以防问题的提醒（例如用户已经保存过）",
+				"ShowSortDirectionDialogN": "提示保存排序方向",
+				"ShowSortDirectionDialogH": "是否显示保存排序方向的确认对话框。"
+			},
+			"TokenUtility": {
+				"TokenEffectSizeN": "Token 效果图标大小",
+				"TokenEffectSizeH": "设置 Token 上效果图标的大小。数字表示要显示的效果图标数量（X * Y）。默认：小 - 5x5",
+				"TokenEffectSize": {
+					"choices": {
+						"small": "小 - 5x5",
+						"medium": "中 - 4x4",
+						"large": "大 - 3x3",
+						"xLarge": "特大 - 2x2"
+					}
+				}
+			},
+			"Triggler": {
+				"TriggersN": "影响触发器",
+				"TriggersH": "用于 Token/角色属性变更的触发器管理系统"
+			},
+			"SceneControls": {
+				"Name": "场景控制快捷键",
+				"Hint": "向 Token 控件添加两个按钮，用于打开 Ironsworn Impacts 或触发器窗口。注意，你也可以通过设置按键绑定来打开它们，而不必使用此设置。"
+			}
+		},
+		"TRIGGLER": {
+			"ImportTitle": "导入触发器",
+			"TriggerMismatch": "这些触发器与你的游戏系统不匹配，可能无法按预期工作。",
+			"App": {
+				"Labels": {
+					"Type": "类型",
+					"Triggers": "现有触发器",
+					"Category": "类别",
+					"Attribute": "属性",
+					"Property": "属性路径 {number}",
+					"Operator": "运算符",
+					"Value": "值"
+				},
+				"AdvancedTrigger": {
+					"ActorProperty": {
+						"Label": "角色更新属性路径",
+						"Note": "设置用于角色更新的属性路径。该路径相对于传递给 updateActor 钩子的更新对象。注意，如果未设置 Token 更新属性路径，则此项为必填。",
+						"Placeholder": "eg. system.attributes.hp.value"
+					},
+					"ActorProperty2": {
+						"Label": "角色比较属性路径",
+						"Note": "可选地设置第二个属性以与第一个属性比较——此路径相对于 Actor 对象本身",
+						"Placeholder": "eg. system.attributes.hp.max (optional)"
+					},
+					"TokenProperty": {
+						"Label": "Token 更新属性路径",
+						"Note": "设置用于 Token 更新的属性路径——此路径相对于传递给 updateToken 钩子的更新对象。注意，如果未设置角色更新属性路径，则此项为必填。",
+						"Placeholder": "eg. actor.system.attributes.hp.value"
+					},
+					"TokenProperty2": {
+						"Label": "Token 比较属性路径",
+						"Note": "可选地设置第二个属性以与第一个属性比较——此路径相对于 Token 对象本身",
+						"Placeholder": "eg. actor.system.attributes.hp.max (optional)"
+					},
+					"Property": {
+						"Hint": "要监听的更新属性的路径。角色和 Token 入口点的值告诉影响触发器在哪里查找每种实体类型"
+					},
+					"OperatorValue": {
+						"Heading": "运算符与值",
+						"Note": "始终必填。运算符和值同时应用于上面设置的角色和 Token 属性路径"
+					},
+					"Name": {
+						"Label": "触发器名称",
+						"Warning": "高级触发器必须填写名称！"
+					}
+				},
+				"TriggerType": {
+					"Simple": {
+						"Label": "简单触发器"
+					},
+					"Advanced": {
+						"Label": "高级触发器"
+					}
+				},
+				"Options": {
+					"Title": "选项"
+				},
+				"SaveSuccessful": "触发器保存成功！"
+			}
+		},
+		"WORDS": {
+			"Icon": "图标",
+			"Reference": "参考",
+			"Import": "导入",
+			"Export": "导出"
+		}
+	}
+}

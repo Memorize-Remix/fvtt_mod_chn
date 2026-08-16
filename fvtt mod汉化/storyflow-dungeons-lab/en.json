@@ -1,0 +1,3256 @@
+{
+  "TYPES.JournalEntryPage.storyflow-dungeons-lab.graph": "StoryFlow Graph",
+  "TYPES.JournalEntryPage.storyflow-dungeons-lab.trader": "StoryFlow Trader",
+  "TYPES.JournalEntryPage.storyflow-dungeons-lab.quest": "StoryFlow Quest",
+  "TYPES.JournalEntryPage.storyflow-dungeons-lab.lore": "StoryFlow Lore",
+  "TYPES.RegionBehavior.storyflow-dungeons-lab.storyflowTrigger": "StoryFlow Trigger",
+  "STORYFLOW_DUNGEONS_LAB": {
+    "Ready": "StoryFlow Dungeons Lab v{version} is ready.",
+    "GraphSheetLabel": "StoryFlow Graph Editor",
+    "TraderSheetLabel": "StoryFlow Trader",
+    "GraphSaved": "StoryFlow graph saved.",
+    "Welcome": {
+      "Title": "StoryFlow - Dungeons LAB",
+      "Intro": "Thanks for installing StoryFlow! The whole Dungeons LAB crew hangs out on Discord.",
+      "Help": "Getting started or stuck? Ask - we answer.",
+      "Request": "Missing a node or a feature? Request it.",
+      "Bug": "Found a bug? Report it and we'll fix it.",
+      "Button": "Join the Discord"
+    },
+    "Guide": {
+      "Title": "StoryFlow Tour",
+      "Invite": {
+        "Kicker": "First launch",
+        "Heading": "Shall I walk you through StoryFlow?",
+        "Body": "A short tour shows how to run a story: build a scene, set the party a goal, hand out rewards. We highlight the right elements right inside Foundry, and nothing in your world changes.",
+        "BadgeSteps": "{count} steps",
+        "BadgeTime": "≈ {minutes} min",
+        "BadgeInterrupt": "Stop any time",
+        "Suppress": "Don't offer again",
+        "Dismiss": "Not now",
+        "Start": "Start the tour",
+        "ReplayTooltip": "Show LOBIK II again",
+        "CloseTooltip": "Close"
+      },
+      "Explainer": {
+        "Next": "Next",
+        "Start": "Begin",
+        "Back": "Back",
+        "Page1": {
+          "Kicker": "Step 1 · What is this",
+          "Title": "I'll walk you through StoryFlow",
+          "Body": "This is the module's tour mode. While it is open, nothing in your world changes. I only show where things live and explain why you and the party need them.",
+          "Flavor": "«Candles lit, map unrolled. Let's start small.»"
+        },
+        "Page2": {
+          "Kicker": "Step 2 · Who's talking",
+          "Title": "My name is LOBIK II",
+          "Body": "I'm the Dungeons LAB mascot and your guide. The Second of my name, because the first LOBIK had an argument with a rock, and the rock won. I pop up over the window when something needs explaining and vanish once you've got it.",
+          "Flavor": "«A small dragon with a large archive of notes.»"
+        },
+        "Page3": {
+          "Kicker": "Step 3 · How the tour works",
+          "Title": "One action per step",
+          "Body": "Each step highlights a real element of the interface and waits for you to act. Do it, and the step is marked done. The current goal always sits in the tracker in the top-left corner.",
+          "Flavor": "«Barovia forgives no haste, but hates waiting too.»"
+        },
+        "Page4": {
+          "Kicker": "Step 4 · Controls",
+          "Title": "You lead, I prompt",
+          "Body": "«Next» moves on, «Back» returns. You can stop the tour at any moment: progress is saved and we resume from the same place next session.",
+          "Flavor": "«When you're ready, knock on the shield in the sidebar.»"
+        }
+      },
+      "Step": {
+        "Kicker": "Step {step} of {total}",
+        "Next": "Next",
+        "Done": "Finish",
+        "Back": "Back",
+        "Skip": "Skip the tour",
+        "CloseTooltip": "Close the hint",
+        "Waiting": "Waiting for your action…",
+        "Completed": "Done!"
+      },
+      "Checklist": {
+        "Title": "What to do",
+        "Stop": "Stop the tour"
+      },
+      "Objective": {
+        "Title": "Current goal",
+        "Abandon": "Stop",
+        "Progress": "{done} of {total} steps done",
+        "Collapse": "Collapse",
+        "Expand": "Expand"
+      },
+      "Finished": {
+        "Title": "Tour complete",
+        "Body": "That's the basics. Restart the tour any time from the module settings.",
+        "Notify": "StoryFlow tour complete."
+      },
+      "Restart": "Restart the StoryFlow tour",
+      "RestartHint": "Reopens the tour invitation window on this client.",
+      "Cheer": {
+        "C1": "Great work!",
+        "C2": "Keep it up!",
+        "C3": "Did you know my creators can build whole worlds? I can see you're good at it too. Will you teach me?",
+        "C4": "You learn faster than a dragon hoards gold!",
+        "C5": "One more step and I'll start taking notes from you.",
+        "C6": "My tail is wagging. That means you did well.",
+        "C7": "Careful, you're making this look easy.",
+        "C8": "LOBIK I once took on a rock and lost. You're doing much better."
+      },
+      "Support": {
+        "Title": "Thank you!",
+        "Kicker": "Tour complete",
+        "Heading": "Support the creators",
+        "Body": "StoryFlow is built late at night by a small team of enthusiasts. If LOBIK II made your prep easier, a coffee on Ko-fi keeps him fed and the updates coming.",
+        "Decline": "Maybe later",
+        "Kofi": "Buy us a Ko-fi"
+      },
+      "Chapters": {
+        "Calendar": {
+          "Title": "Calendar and events",
+          "Blurb": "World time, scheduled events and daily weather",
+          "WeatherShow": {
+            "Title": "A living calendar",
+            "Body": "The calendar generates weather for every day by itself, and the widget is animated: rain, fog and snow live right on it. Let me show you.",
+            "Hint": "Watch the show, then press Next",
+            "Say": "Watch what I can do!",
+            "Now": "Now: {name}",
+            "Cond": {
+              "clear": "Clear skies",
+              "rain": "Rain",
+              "storm": "Downpour",
+              "fog": "Fog",
+              "snow": "Snowfall"
+            }
+          },
+          "OpenCalendar": {
+            "Title": "Open the calendar",
+            "Body": "The calendar drives world time for the whole table: seasons, weather and scheduled events. Its widget lives above the hotbar.",
+            "Hint": "Click the highlighted calendar widget"
+          },
+          "SeasonsGear": {
+            "Title": "Calendar settings",
+            "Body": "Behind the gear live the calendar settings: seasons, temperatures and weather effects. Open it for a quick look.",
+            "Hint": "Click the gear, take a look around, then press Next"
+          },
+          "CloseSeasons": {
+            "Title": "Close the settings",
+            "Body": "That is where the climate is tuned. You can come back any time; for now, close the window and let us move on.",
+            "Hint": "Close the season settings window"
+          },
+          "OpenEventDialog": {
+            "Title": "Add an event",
+            "Body": "An event is a note tied to a date. When world time reaches it, StoryFlow can fire a graph: a festival, a caravan, an assault.",
+            "Hint": "Click the highlighted «Add Event» button"
+          },
+          "SaveEvent": {
+            "Title": "Save the event",
+            "Body": "Give it a name, pick a kind (a plain notification or a full graph), and save. The calendar fires it when the moment comes.",
+            "Hint": "Fill the form and click the highlighted save button"
+          },
+          "CloseCalendar": {
+            "Title": "Close the calendar",
+            "Body": "The event stays in the world. The widget keeps showing the current date and the nearest event.",
+            "Hint": "Close the calendar window"
+          }
+        },
+        "JournalGraph": {
+          "Title": "Journal and graphs",
+          "Blurb": "Where StoryFlow graphs live and how to start one from a template",
+          "OpenJournalTab": {
+            "Title": "Open the Journal tab",
+            "Body": "StoryFlow graphs are journal pages: they live in your world's journal, not in module settings. That means folders, permissions and search all work as usual.",
+            "Hint": "Click the highlighted Journal tab in the sidebar"
+          },
+          "CreateJournal": {
+            "Title": "Create a journal entry",
+            "Body": "A journal entry is a container. One entry can hold several graphs, for example every scene of one chapter.",
+            "Hint": "Click «Create Journal Entry» and save it"
+          },
+          "OpenJournal": {
+            "Title": "Open the entry",
+            "Body": "The entry opens as a regular journal sheet. Pages are added from here.",
+            "Hint": "Open the journal entry you just created"
+          },
+          "CreatePage": {
+            "Title": "Add a StoryFlow Graph page",
+            "Body": "Choose the «StoryFlow Graph» page type. That page holds the whole node graph: dialogue, choices, checks and world actions.",
+            "Hint": "Add a page and pick the StoryFlow Graph type"
+          },
+          "OpenCanvas": {
+            "Title": "Open the graph editor",
+            "Body": "The editor is a node canvas. Nodes are connected by pins: the story flows from an entry point along the links you draw.",
+            "Hint": "Open the graph page editor"
+          },
+          "UIAddNode": {
+            "Title": "The Add Node button",
+            "Body": "This button opens the node palette: dialogues, checks, rewards and the other story bricks. A new node lands on the canvas, ready to be wired by its pins.",
+            "Hint": "Read, then press Next"
+          },
+          "UISearch": {
+            "Title": "Graph search",
+            "Body": "Search finds a node by name or text and brings the camera to it. In a big graph it is a lifesaver.",
+            "Hint": "Read, then press Next"
+          },
+          "UIUndoRedo": {
+            "Title": "Undo and redo",
+            "Body": "Anything you do on the canvas can be undone and redone. Experiment freely: the graph can always roll back.",
+            "Hint": "Read, then press Next"
+          },
+          "TemplatesIntro": {
+            "Title": "Ready-made templates",
+            "Body": "You don't have to build a story from scratch. StoryFlow ships ready-made template sets (dialogues, skill checks, shops, whole scenes) that land on the canvas as working graphs. Start from one, then bend it to your story.",
+            "Flavor": "«Why forge a sword when the armory is full?»"
+          },
+          "OpenTemplates": {
+            "Title": "Open the template library",
+            "Body": "The library holds ready-made graphs: a dialogue, a shop, a skill check. A template is a fast start: paste it and rewrite the text.",
+            "Hint": "Click the highlighted template library button"
+          },
+          "ApplyTemplate": {
+            "Title": "Try a template",
+            "Body": "Pick any template and insert it into the graph. The nodes land on the canvas; nothing is written to your world until you save.",
+            "Hint": "Insert any template into the graph"
+          },
+          "CloseTemplates": {
+            "Title": "Close the library",
+            "Body": "The library is a tool, not part of the graph. Close it and the canvas is all yours.",
+            "Hint": "Close the template library window"
+          },
+          "NodesIntro": {
+            "Title": "A whole toolbox of nodes",
+            "Body": "Dialogue, choices, skill checks, rewards, traders, world actions: StoryFlow has dozens of node types, and every one is a building block of your story. You don't need to memorize them: the Node Guide explains each node with examples. Reading it is the best investment in your first story.",
+            "Flavor": "«Every node is a tooth in the dragon's jaw. Together, a bite.»"
+          },
+          "OpenNodeGuide": {
+            "Title": "Open the node guide",
+            "Body": "The guide explains every node type: what its pins do, when to use it and which nodes pair with it. It is the reference to come back to.",
+            "Hint": "Click the highlighted Guide button"
+          },
+          "CloseGraphWindows": {
+            "Title": "Tidy up the desk",
+            "Body": "The graph is saved on its journal page. Close the graph editor and the node guide, and head back to the journal: a trader is waiting to be built there.",
+            "Hint": "Close the graph editor window"
+          }
+        },
+        "Trader": {
+          "Title": "Trader and shops",
+          "Blurb": "Stock a shop and open it to the party, from the journal or mid-scene",
+          "Intro": {
+            "Title": "Meet the Trader",
+            "Body": "A trader is a shop your players buy from and sell to. It lives on a journal page: open it straight from the journal, or drop a Trader node into a StoryFlow graph and the shop opens mid-scene. You pick the wares, prices and stock; StoryFlow runs the till.",
+            "Flavor": "«Every good adventure starts at a counter with a little bell.»"
+          },
+          "CreateTraderPage": {
+            "Title": "Create a trader page",
+            "Body": "A trader is a journal page of the «StoryFlow Trader» type. It sits in your world's journal next to graphs and quests, so folders, permissions and search all work as usual.",
+            "Hint": "Add a page and pick the StoryFlow Trader type"
+          },
+          "AddItems": {
+            "Title": "Stock the shelves",
+            "Body": "Empty shelves? No problem. LOBIK will fetch the goods himself and lay them out: every row gets a price and a stock count.",
+            "Hint": "Wait for the courier, or drag items in yourself",
+            "Say": "I will fetch some items so you can try buying and selling!"
+          },
+          "RestockDays": {
+            "Title": "Automatic restock",
+            "Body": "The in-game-days field makes the shop restock itself: a bought item returns to the shelf after that many world days. Zero means it stays gone until you restock by hand.",
+            "Hint": "Read, then press Next"
+          },
+          "Restock": {
+            "Title": "Restocking",
+            "Body": "«Restock now» is the manual lever: it puts everything sold straight back on the shelf.",
+            "Hint": "Read, then press Next"
+          },
+          "CloseTraderSheet": {
+            "Title": "Close the settings",
+            "Body": "The stock is set. Close the trader settings sheet; the shop itself is opened from the page, not from here.",
+            "Hint": "Close the trader settings window"
+          },
+          "OpenTraderPage": {
+            "Title": "Open the trader page",
+            "Body": "The new trader page sits in the entry's page list, and it does not open by itself. Click it: the page holds the shop button the party will use.",
+            "Hint": "Click the highlighted trader page in the list"
+          },
+          "OpenShop": {
+            "Title": "Open the shop",
+            "Body": "The «Open Shop» button shows exactly what a player sees: the storefront with search, categories and the ledger cart. My favorite moment, watch closely.",
+            "Hint": "Click the highlighted «Open Shop» button"
+          },
+          "ShopBuyer": {
+            "Title": "Who is buying",
+            "Body": "The GM picks in this list who the purchase belongs to. For players it is simpler: the shop binds to their character by itself.",
+            "Hint": "Read, then press Next"
+          },
+          "ShopWallet": {
+            "Title": "The wallet",
+            "Body": "This shows the buyer's coins. The shop itself makes sure the gold is enough.",
+            "Hint": "Read, then press Next"
+          },
+          "ShopCart": {
+            "Title": "The cart",
+            "Body": "This button opens the cart: goods pile up in it and check out as one purchase.",
+            "Hint": "Read, then press Next"
+          },
+          "ShopSell": {
+            "Title": "Selling",
+            "Body": "The Sell tab works the other way around: players turn their loot into the trader's gold.",
+            "Hint": "Click the highlighted Sell tab"
+          },
+          "CloseShop": {
+            "Title": "Close the shop",
+            "Body": "Wares and prices stay on the page. The shop reopens any time: from the same button, a map pin, or a Trader node in a graph.",
+            "Hint": "Close the shop window"
+          }
+        },
+        "QuestBoard": {
+          "Title": "Quest Board",
+          "Blurb": "A shared party quest log: quests, lore and dramatic reveals",
+          "Intro": {
+            "Title": "Meet the Quest Board",
+            "Body": "The Quest Board is the party's shared quest log: quests and lore in one window. You write the entries, attach rewards and factions, and reveal each one when the party is ready. Players only ever see what you revealed.",
+            "Flavor": "«A tavern notice board, minus the damp parchment and the rat cellars.»"
+          },
+          "OpenBoard": {
+            "Title": "Open the board",
+            "Body": "The launcher lives in the token scene controls, the scroll icon. One click opens the board for you; players have the same button on their side.",
+            "Hint": "Click the highlighted scroll tool in the scene controls"
+          },
+          "AddQuest": {
+            "Title": "Add a quest",
+            "Body": "«New Quest» creates a quest page in the board's own journal. Status, objectives, category and description all edit right here in the detail pane.",
+            "Hint": "Click the highlighted «New Quest» button"
+          },
+          "Objectives": {
+            "Title": "Quest objectives",
+            "Body": "Objectives are the quest steps the party can see. The button below adds one; the eye hides it for later, the arrows reorder it, the checkbox marks it done.",
+            "Hint": "Click the highlighted button and add an objective"
+          },
+          "RewardsSetup": {
+            "Title": "The rewards",
+            "Body": "The rewards section holds gold, experience, reputation and items. LOBIK will now drop an item in and set the gold himself.",
+            "Hint": "Wait for the courier",
+            "Say": "Let me toss in a reward: an item and some gold!"
+          },
+          "AnnounceQuest": {
+            "Title": "Announce the quest",
+            "Body": "The announce button does everything at once: reveals the quest to the party, drops a card into chat and pings every player.",
+            "Hint": "Click the highlighted announce button"
+          },
+          "GiveReward": {
+            "Title": "Hand out the rewards",
+            "Body": "The reward button starts dividing the spoils. Players raise a hand on the items they want; when two want the same item, a die is rolled and the winner takes it. Gold and experience split themselves.",
+            "Hint": "Click the highlighted reward button"
+          },
+          "DistributeRewards": {
+            "Title": "Divide the spoils",
+            "Body": "This window is the payout. Gold and experience split evenly with one click. Items go by hand: players raise a hand on what they want, and when two hands are up on the same item, the roll-off button lets the dice decide. Confirm hands everything out.",
+            "Hint": "Try the buttons, then confirm (or cancel)"
+          },
+          "CloseLedger": {
+            "Title": "Close the payout",
+            "Body": "Rewards are on their way. Close this window; next we tidy up the board itself.",
+            "Hint": "Close the reward window"
+          },
+          "CloseBoard": {
+            "Title": "Close the board",
+            "Body": "Everything is saved in the world journal. Reopen the board any time from the same scene-control tool.",
+            "Hint": "Close the quest board window"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "DebugLogging": "Verbose logging",
+      "DebugLoggingHint": "Print detailed StoryFlow logs to the F12 console. Turn on when reporting a bug.",
+      "AllowChoiceVoting": "Allow choice voting",
+      "AllowChoiceVotingHint": "Let non-controlling players cast advisory (BG3-style) votes on choices. The controlling player / GM still decides.",
+      "ReduceMotion": "Reduce motion",
+      "ReduceMotionHint": "Disable the cinematic overlay and notification animations (sunbeams, countdown bar, transitions).",
+      "CalendarPerfMode": "Calendar: performance mode (weak PC)",
+      "CalendarPerfModeHint": "Disable the calendar's animations and expensive visual effects (blur, glows, shadows) on your client.",
+      "CalendarUserScale": "Calendar: UI size",
+      "CalendarUserScaleHint": "Scale the calendar window and HUD widget on your client (also adjustable via the magnifier − / + buttons in the calendar header).",
+      "SkipTypewriter": "Skip typewriter effect",
+      "SkipTypewriterHint": "Reveal dialogue text instantly instead of typing it out, on your client.",
+      "GmCardReveal": "Show the card-reveal panel (GM)",
+      "GmCardRevealHint": "As GM, see the same full-screen card-reveal panel players get when an actor unlocks faction cards, instead of a small text toast.",
+      "CaptureErrors": "Capture errors for troubleshooting",
+      "CaptureErrorsHint": "Record StoryFlow errors this session so the troubleshooting report can include them.",
+      "Troubleshoot": "Troubleshooting",
+      "TroubleshootLabel": "Open Troubleshooting",
+      "TroubleshootHint": "Health checks + a copy-pasteable diagnostic report for bug reports.",
+      "ResetTriggersMenu": "Reset one-time triggers",
+      "ResetTriggersLabel": "Reactivate all one-time triggers",
+      "ResetTriggersHint": "Clear the fired-state of every 'Fire Once' event trigger so they can fire again.",
+      "ResetTriggersConfirm": "Reactivate every one-time event trigger in this world?",
+      "ResetTriggersDone": "All one-time triggers reactivated.",
+      "TraderRep": "Trader Reputation Pricing",
+      "TraderRepHint": "How a faction-linked trader treats a buyer at each reputation tier. Multiplier scales buy prices (1.0 = unchanged); Refuse means the trader won't sell.",
+      "TraderRepTier": "Tier",
+      "TraderRepMultiplier": "Price ×",
+      "TraderRepRefuse": "Refuse",
+      "ModuleSettingsMenu": "Module Settings",
+      "ModuleSettingsMenuLabel": "Open Module Settings",
+      "ModuleSettingsMenuHint": "General, Calendar, Factions, Trader, and Overlay controls for StoryFlow Dungeons Lab.",
+      "ModuleSettingsTitle": "StoryFlow Dungeons Lab - Settings",
+      "ModuleSettingsSave": "Save Changes",
+      "ModuleSettingsReset": "Reset to Defaults",
+      "ModuleSettingsSaved": "StoryFlow settings saved.",
+      "TabGeneral": "General",
+      "TabCalendar": "Calendar",
+      "TabFactions": "Factions",
+      "TabTrader": "Trader",
+      "TabOverlay": "Overlay",
+      "ModuleEnabled": "Enable StoryFlow Dungeons Lab",
+      "GmPermissionLevel": "GM Permission Level",
+      "GmPermissionLevelHint": "Who may open this settings window.",
+      "GmPermissionGmOnly": "Game Master Only",
+      "GmPermissionAssistant": "Assistant GM and above",
+      "CompactRows": "Use compact Quest Board rows",
+      "FactionsEnabled": "Enable Factions",
+      "FactionsEnabledHint": "Show the Factions tab on character sheets and track faction reputation. The reputation nodes and service update after a world reload.",
+      "RepMin": "Minimum reputation",
+      "RepMax": "Maximum reputation",
+      "RepTiers": "Reputation tiers",
+      "RepTiersHint": "The standing value at which each tier begins (e.g. a character becomes \"Honored\" once their standing reaches this number). Values are clamped to the min/max above and forced into ascending order.",
+      "RepTierName": "Tier",
+      "RepTierMin": "Begins at",
+      "GraphActorLinksEnabled": "Enable actor StoryFlow graphs",
+      "GraphActorLinksEnabledHint": "Show the \"Open / Create StoryFlow graph\" option on the Actors sidebar right-click menu.",
+      "QuestBoardEnabled": "Enable Quest Board",
+      "QuestBoardEnabledHint": "Allow the Quest Board to be opened (scene-control button, keybinding, and the public API).",
+      "TraderEnabled": "Enable Trader",
+      "TraderEnabledHint": "Allow Trader shops to be opened, standalone or during a graph run.",
+      "TraderBuybackPct": "Buyback percent",
+      "TraderBuybackPctHint": "Base share of an item's value the trader pays when a player sells (before the reputation card factor). 0-100.",
+      "CalendarEnabled": "Enable Calendar",
+      "CalendarEnabledHint": "Turn off the whole calendar subsystem (scheduled weather/events + HUD widget). The two settings below have no effect while this is off.",
+      "OverlayEnabled": "Enable player overlay & epic notifications",
+      "OverlayStyle": "Overlay Style",
+      "OverlayStyleParchment": "Parchment Scroll",
+      "OverlayStyleLeather": "Leather Tome (coming soon)",
+      "OverlayStyleMinimal": "Minimal Banner (coming soon)",
+      "NotifDuration": "Notification Duration (seconds)",
+      "GmOnlyTitle": "Game Master Only",
+      "GmOnlyBody": "Only the Game Master may configure StoryFlow Dungeons Lab. Ask your GM if a setting here needs to change.",
+      "Close": "Close",
+      "SecretRevealEnabled": "Secret-item reveal animation",
+      "SecretRevealEnabledHint": "Play the full-screen tap-to-reveal animation for secret notifications. Off = reveal the item instantly with no animation.",
+      "SecretGlowStyle": "Secret reveal glow style",
+      "SecretGlowStyleHint": "The final glow effect behind a revealed secret item.",
+      "SecretGlowHalo": "Soft halo",
+      "SecretGlowRadiant": "Radiant burst",
+      "SecretGlowPulse": "Pulsing aura",
+      "CalendarSceneWeather": "Calendar drives scene weather",
+      "CalendarSceneWeatherHint": "Apply each day's calendar weather to the active scene's weather effect (fog, rain, snow…).",
+      "CalendarWidget": "Show the calendar widget",
+      "CalendarWidgetHint": "Show the Calendar widget at the top of the screen for all players.",
+      "ScrubSection": "Sky Scrubbing",
+      "ScrubHint": "Drag across the widget's sky panel to move the clock. Sensitivity sets how much world time one pixel of drag is worth - the panel always lands on a whole minute. GM only.",
+      "ScrubSensitivity": "Scrub Sensitivity",
+      "ScrubGrow": "Grow panel while scrubbing",
+      "ScrubGrowHint": "Swell the widget's sky panel while you drag, for a larger target.",
+      "ScrubSnap": "Snap release to 5 minutes",
+      "ScrubSnapHint": "Round to the nearest 5 minutes when you let go; otherwise the exact minute you land on is kept.",
+      "TimeTraySection": "Time Tray",
+      "TimeTrayHint": "Each enabled step adds a − / + button pair to the GM time tray (up to 3). Dawn, Dusk and +1 Day are always shown.",
+      "TimeStepEnable": "Show this step in the tray",
+      "TimeUnitMinute": "Minutes",
+      "TimeUnitHour": "Hours",
+      "TimeUnitDay": "Days",
+      "TimeUnitWeek": "Weeks"
+    },
+    "Secret": {
+      "TapToReveal": "Tap to reveal"
+    },
+    "Notification": {
+      "ToastKicker": "Notification"
+    },
+    "Crate": {
+      "Activate": "Activate",
+      "SpinAgain": "Spin again",
+      "Free": "Free",
+      "Gp": "gp",
+      "Close": "Close",
+      "Waiting": "Waiting for other players…",
+      "PossibleRewards": "Possible rewards",
+      "AddItem": "Add item",
+      "DragHere": "drag items here",
+      "NoItems": "No items yet - drag items from a compendium or the sidebar into this window.",
+      "ItemName": "Item",
+      "ManageItems": "Manage items",
+      "Equalize": "Equalize weights",
+      "Weight": "Weight",
+      "DropChance": "Drop %",
+      "GlowColor": "Glow colour",
+      "GlowStyle": "Glow style",
+      "Items": "Crate items",
+      "CostGold": "Cost (gp)",
+      "MaxSpins": "Max spins per player (0 = unlimited)"
+    },
+    "Preload": {
+      "NotifyMessage": "Preload complete - every connected client has cached this graph's images and audio.",
+      "ConfirmTitle": "Run this graph?",
+      "ConfirmMessage": "All assets are preloaded. Continue running this graph now?"
+    },
+    "Prop": {
+      "Title": "Interactive Prop",
+      "Spectator": "Watching",
+      "Try": "Try",
+      "AttemptsUnlimited": "Attempts: Unlimited",
+      "AttemptsLeft": "Attempts left: {n}",
+      "ForceSolve": "Force Solve",
+      "ForceFail": "Force Fail",
+      "ForceResolveTitle": "Force-resolve prop",
+      "ForceSolveConfirm": "Force this prop to solve? This bypasses the puzzle for every player.",
+      "ForceFailConfirm": "Force this prop to fail? This bypasses the puzzle for every player.",
+      "Solved": "Solved",
+      "Failed": "Failed",
+      "NextLetter": "Next letter",
+      "PreviousLetter": "Previous letter",
+      "AbortTitle": "Close for everyone",
+      "AbortConfirm": "Close this prop for the whole table and end the flow? This does not count as solved or failed - the run simply stops here."
+    },
+    "Troubleshoot": {
+      "Title": "StoryFlow - Troubleshooting",
+      "Intro": "Run a quick health check and copy the report below into your bug report.",
+      "Health": "Health Checks",
+      "Report": "Diagnostic Report",
+      "Copy": "Copy",
+      "Download": "Download",
+      "Refresh": "Refresh",
+      "ClearErrors": "Clear errors",
+      "Copied": "Diagnostic report copied to the clipboard.",
+      "ErrorsCleared": "Captured errors cleared.",
+      "Timeline": "Event Timeline"
+    },
+    "Extras": {
+      "Title": "Dungeon LAB Modules",
+      "AlwaysOn": "Always on",
+      "GMOnly": "Only the Game Master can change this world-wide setting.",
+      "DetailClose": "Close",
+      "Factions": {
+        "Name": "Factions & Reputation",
+        "Hint": "Track faction standing and NPC affinity: the Factions tab on character sheets, the Faction Codex, and the reputation nodes. World-wide - GM only.",
+        "Description": "The Factions plugin turns loose alliances into something the game tracks for you. Every actor gains a Factions tab: where they stand with each faction, tier by tier, from Hated to Exalted, plus how individual NPCs feel about the party.\nAuthors get reputation nodes on the graph canvas - raise or lower standing as a reward, gate a door or a price on a tier, swing an NPC's mood after a choice - and a Faction Codex the party can browse. The Trader shop and Condition checks read the same standing, so a hard-won reputation actually changes what the world offers.\nThis is a world-wide switch, so only the Game Master can flip it. The sheet tab and codex hide the moment it's off; the reputation nodes and service update after the next world reload.",
+        "ReloadHint": "Factions setting saved. Reload the world to apply the reputation nodes and service."
+      },
+      "DlTheme": {
+        "Name": "Dungeons LAB theme",
+        "Hint": "Skin the module's UI in the Dungeons LAB look - candlelight ember on Barovian stone. Applies to this panel, the GM Scene Dashboard and the Actors sidebar. Personal to your client.",
+        "Description": "By default the module wears Foundry's own clothes - whatever theme your world runs, its panels blend in. Switch this on and they put on the Dungeons LAB colours instead: deep Barovian stone, candlelight-ember accents, a warm glow on whatever you have selected, and a serif hand on the headings.\nIt re-skins the Dungeon LAB Modules panel, the GM Scene Dashboard and the Actors sidebar in one stroke - and touches nothing else on your screen. Purely your view; off until you want it, and reversible in a single click."
+      },
+      "ActorTint": {
+        "Name": "Group & colour actors by type",
+        "Hint": "Group the Actors sidebar into type sections and softly tint each row, with a distinct shade for player-owned characters. Personal to your client.",
+        "Description": "Picture the eve of a big session: your Actors tab has swollen into a grey avalanche of names - heroes, hirelings, that one war-galley, a bestiary's worth of goblins - all wearing the same drab colour, all jumbled together in the order you happened to import them.\nFoundry gives every actor the same neutral row, so telling a player character from an NPC from a vehicle means reading each name one at a time. Add a few dozen monsters and the party's own heroes vanish into the crowd right when you need them.\nSwitch this on and the sidebar sorts itself into tidy type sections - Characters, NPCs, Vehicles, Groups - each row washed in a soft, readable colour so the type registers at a glance. And it isn't limited to the usual suspects: the type list is read live from your game, so every actor type your system or your modules add gets its own distinct, consistent colour instead of drowning in a nameless grey. Your players' own characters get a brighter shade and a little accent stripe, so the heroes always stand out from the horde. It works inside your folders too, and it's purely your view - nobody else's screen changes."
+      },
+      "ItemTint": {
+        "Name": "Group & colour items by type",
+        "Hint": "Group the Items sidebar into type sections and softly tint each row, with a distinct shade per item type. Personal to your client.",
+        "Description": "The Items tab has the same problem as the Actors one, only worse: weapons, spells, consumables, features, loot and a dozen homebrew types, all poured into one long grey list in import order.\nFoundry gives every item the same neutral row, so finding the one longsword among fifty scrolls means reading each name in turn. The bigger your compendium-fed world grows, the more the thing you want hides in the crowd.\nSwitch this on and the sidebar sorts itself into tidy type sections - Weapons, Spells, Consumables, Features and the rest - each row washed in a soft, readable colour so the type registers at a glance. The type list is read live from your game, so every item type your system or modules add gets its own distinct, consistent colour instead of drowning in a nameless grey. It works inside your folders too, and it's purely your view - nobody else's screen changes."
+      },
+      "DragScroll": {
+        "Name": "Auto-scroll while dragging",
+        "Hint": "Dragging a sidebar entry near the top or bottom edge scrolls the list, so you can reach a far-off folder. Works in every sidebar tab.",
+        "Description": "You know the move: the actor you want to file lives at the very bottom of a long list, so you grab it, aim for a folder near the top - and the sidebar just… sits there. The list won't budge while you're holding the drag, and there's no way to reach the destination without letting go and losing your place.\nIt's one of those small Foundry papercuts that costs you three fumbling attempts every time you tidy up.\nWith this on, holding a dragged entry near the top or bottom edge of any sidebar list gently scrolls it in that direction - faster the closer you hover to the edge - carrying your grip along until the target folder rolls into view. Actors, items, journals, scenes: every sidebar tab, always ready, no setting required."
+      },
+      "MoveFolder": {
+        "Name": "Right-click → move to folder",
+        "Hint": "A right-click option on an actor or item that opens a picker to drop it straight into any folder - no dragging at all.",
+        "Description": "Sometimes you don't want to drag at all. The folder is collapsed, or it's clear across a scrolled list, or you just have thirty actors (or items) to sort and dragging each one is death by a thousand clicks.\nFoundry's only way to re-file a document is to physically haul it there - fine for one, a chore for many.\nRight-click any actor or item and choose \"Move to folder…\" to open a tidy picker: pick the destination (or send it back to the root) and it's done, instantly, no aiming required. The dialog names the document you're moving and tints it with its type colour, so you always know exactly what's about to change homes - and only one window ever opens, no matter how many times you click."
+      },
+      "ActorType": {
+        "other": "Other"
+      },
+      "MoveToFolder": "Move to folder…",
+      "MoveToFolderTitle": "Move to Folder",
+      "MoveToFolderPrompt": "Move this actor to:",
+      "MoveToFolderPromptItem": "Move this item to:",
+      "MoveToFolderRoot": "- Root (no folder) -",
+      "MoveToFolderConfirm": "Move",
+      "CreateGraph": "Open / Create StoryFlow graph",
+      "CreateGraphDone": "StoryFlow graph created for {name}.",
+      "CreateGraphFail": "Could not create the StoryFlow graph."
+    },
+    "QuestBoard": {
+      "Title": "Quest Board",
+      "Disabled": "The Quest Board is disabled - enable it in Module Settings → General.",
+      "Quests": "Quests",
+      "Lore": "Lore",
+      "Notes": "Notes",
+      "General": "General",
+      "NewQuest": "New Quest",
+      "NewLore": "New Lore",
+      "Objectives": "Objectives",
+      "AddObjective": "Add objective",
+      "Description": "Description",
+      "Category": "Category",
+      "Delete": "Delete",
+      "AddCategory": "Add Category",
+      "RenameCategory": "Rename Category",
+      "RemoveCategory": "Delete Category",
+      "RemoveCategoryConfirm": "Delete this category? Its entries move to General.",
+      "DeleteEntry": "Delete Entry",
+      "DeleteEntryConfirm": "Delete this entry? This cannot be undone.",
+      "ToggleReveal": "Reveal to players",
+      "AnnouncedChat": "The quest \"{name}\" was announced!",
+      "NoQuestSelected": "Select a quest to view it.",
+      "NoLoreSelected": "Select a lore entry to view it.",
+      "NotesComingSoon": "Notes are coming in a later update.",
+      "Personal": "Personal",
+      "Party": "Party",
+      "NewNote": "New Note",
+      "NoNoteSelected": "Select a note, or create one.",
+      "DeleteNote": "Delete Note",
+      "DeleteNoteConfirm": "Delete this note? This cannot be undone.",
+      "LastEdited": "Last edited by",
+      "ViewNotebook": "View a player's notebook",
+      "EditInBoard": "Manage this entry from the Quest Board (Token controls → Quest Board).",
+      "QuestPageSheetLabel": "StoryFlow Quest",
+      "LorePageSheetLabel": "StoryFlow Lore",
+      "KeybindName": "Open Quest Board",
+      "KeybindHint": "Open the StoryFlow Quest Board.",
+      "CategoryShort": "Category",
+      "NoEntries": "No entries yet",
+      "Progress": "{done}/{total} objectives",
+      "StatusLabel": "Status",
+      "VisibleLabel": "Visible",
+      "HiddenLabel": "Hidden",
+      "Announce": "Announce",
+      "AnnounceHint": "Flag as unread - players see it blink until opened",
+      "AnnouncedHint": "Announced - unread for some players",
+      "HiddenHint": "Hidden from players",
+      "UnreadHint": "New - unread",
+      "CountQuestsGM": "{total} Quests · {hidden} Hidden",
+      "CountQuests": "{count} Quests",
+      "CountLoreGM": "{total} Entries · {hidden} Hidden",
+      "CountLore": "{count} Entries",
+      "CountFactions": "{count} Factions",
+      "Factions": {
+        "Rivals": "Rivals"
+      },
+      "EmptyQuestsTitle": "The board stands empty",
+      "EmptyQuestsGM": "No quests have been posted yet. Post the first quest for your party to pursue.",
+      "EmptyQuestsPlayer": "The GM has not posted any quests yet. Check back after the next session.",
+      "EmptyLoreTitle": "No lore recorded",
+      "EmptyLoreGM": "The chronicle is blank. Add the first entry of your world's history.",
+      "EmptyLorePlayer": "Nothing of the world has been revealed to you yet.",
+      "EmptyNotesTitle": "An empty notebook",
+      "EmptyNotesText": "No notes yet. Start a new page - your secrets are safe here.",
+      "EmptyNotesOther": "{name} has not written anything yet.",
+      "EmptyFactionsTitle": "No factions known",
+      "EmptyFactionsGM": "Add the first faction your party will treat with - or against.",
+      "EmptyFactionsPlayer": "Your party has made no notable allies or enemies. Yet.",
+      "NoteTitle": "Note title",
+      "NotePlaceholder": "Write your note…",
+      "NotePrivate": "Private - only you can read this",
+      "NoteReadOnly": "{name}'s notebook - read-only",
+      "NoteShared": "Shared with the party",
+      "FooterGM": "GM · hidden entries are dimmed here and invisible to players",
+      "FooterPlayer": "New entries blink until you open them",
+      "Toast": {
+        "available": "New Quest",
+        "updated": "Quest Updated",
+        "completed": "Quest Completed",
+        "failed": "Quest Failed",
+        "lore": "Lore Revealed",
+        "Open": "Open in Quest Log",
+        "Event": {
+          "objectiveShown": "New objective - {text}",
+          "objectiveDone": "Objective complete - {text}"
+        }
+      },
+      "Status": {
+        "available": "Available",
+        "active": "Active",
+        "completed": "Completed",
+        "failed": "Failed"
+      }
+    },
+    "Trader": {
+      "Disabled": "The Trader shop is disabled - enable it in Module Settings → Trader.",
+      "Name": "Name",
+      "Portrait": "Portrait",
+      "Item": "Item",
+      "Price": "Price (gp)",
+      "Stock": "Stock",
+      "PriceGp": "{price} gp",
+      "RemoveItem": "Remove item",
+      "DropHint": "Drag items here to stock the trader",
+      "MissingItem": "(missing item)",
+      "Empty": "No items yet - drag items here to stock the trader.",
+      "ShopTitle": "Trader",
+      "Buy": "Buy",
+      "SoldOut": "Sold out",
+      "Gold": "Gold",
+      "BuyingAs": "Buying as",
+      "LeaveShop": "Leave shop",
+      "NoCharacter": "Assign a character to buy.",
+      "BoughtChat": "{actor} bought {item} for {price} gp.",
+      "SoldChat": "{actor} sold {item} for {price} gp.",
+      "Faction": "Faction",
+      "NoFaction": "- none -",
+      "FactionHint": "If set, the buyer's reputation with this faction gates and scales prices.",
+      "NpcLink": "Linked NPC (UUID)",
+      "NpcLinkHint": "If set, this NPC's party-wide affinity stacks on the buyer's faction standing for pricing.",
+      "Reputation": "Reputation",
+      "Refused": "This trader refuses to deal with you.",
+      "EditTrader": "Edit",
+      "EditTraderHint": "Edit this trader's journal page",
+      "BuyWares": "Buy Wares",
+      "SellWares": "Sell",
+      "Sell": "Sell",
+      "Payout": "Payout",
+      "Qty": "Qty",
+      "NothingToSell": "Nothing to sell",
+      "NothingToSellBody": "This character carries no goods the trader will buy.",
+      "NotBuying": "Not buying",
+      "NotOwned": "You don't own this item",
+      "WareCount": "{shown} of {total} wares",
+      "SearchPlaceholder": "Search the shelves…",
+      "AllWares": "All Wares",
+      "ToggleDescriptions": "Show/hide item descriptions",
+      "ShelvesBareTitle": "The shelves stand bare",
+      "ShelvesBareBody": "This trader carries no stock yet. Add items to its journal page and they will appear here for the party.",
+      "NoMatchTitle": "Nothing matches your search",
+      "NoMatchBody": "The trader squints. \"Never heard of it.\"",
+      "AddToLedger": "Add to ledger",
+      "Gone": "Gone",
+      "Ledger": "The Ledger",
+      "LedgerButton": "Ledger",
+      "LedgerEmpty": "Nothing written yet. Add wares from the shelves.",
+      "Total": "Total",
+      "PurseAfter": "Purse after",
+      "ShortBy": "−{amount} gp short",
+      "InsufficientFunds": "The purse runs light. Remove items or return with more coin.",
+      "CompletePurchase": "Complete Purchase",
+      "Purse": "Purse",
+      "RolePlayer": "Purchases deduct from your character's purse",
+      "OpenShop": "Open Shop",
+      "RestockDays": "Restock (in-game days)",
+      "RestockDaysHint": "A bought item stays out of stock for this many in-game days. 0 = it never returns until you press Restock now.",
+      "RestockNow": "Restock now",
+      "RestockPolicy": "Restocks every {days} days",
+      "RestockManual": "Restocks by hand only",
+      "Capacity": "{current} / {max}",
+      "BackInDays": "back in {days}d",
+      "AwaitingRestock": "awaiting restock",
+      "RequiresTier": "Requires {tier}",
+      "LockNone": "- no lock",
+      "LockNeedsFaction": "Link a faction to use reputation locks",
+      "OpenFactionOverview": "Open faction overview",
+      "OpenFactionMembers": "Open faction members",
+      "SellItems": "Sell Items (want-list)",
+      "SellItemsHint": "Optional. When you add items here, this trader will ONLY buy back items matching one of these by name - leave empty to let players sell any owned item, as before.",
+      "SellDropHint": "Drag items here to curate what this trader wants to buy",
+      "SellRatio": "Buyback rate override",
+      "SellRatioBlank": "- use global -",
+      "SellRatioHint": "Overrides the world's Buyback percent setting for this trader only (0-1). Leave blank to inherit the global setting.",
+      "AddToSellLedger": "Add to sell ledger",
+      "SellLedger": "The Buyback Ledger",
+      "SellLedgerButton": "Sell Ledger",
+      "SellLedgerEmpty": "Nothing selected yet. Add wares to sell.",
+      "CompleteSale": "Complete Sale"
+    },
+    "GraphPage": {
+      "OpenEditor": "Open Graph Editor",
+      "StartFlow": "Start Flow",
+      "NodeCount": "{count} nodes",
+      "EdgeCount": "{count} connections",
+      "Dangling": "{count} broken connections",
+      "EnterEdit": "Edit",
+      "ExitEdit": "Done",
+      "Editor": {
+        "SetCover": "Set cover image",
+        "RemoveCover": "Remove cover image",
+        "DescriptionLabel": "Description",
+        "Bold": "Bold",
+        "Italic": "Italic",
+        "Underline": "Underline",
+        "Strikethrough": "Strikethrough",
+        "BulletList": "Bullet list",
+        "NumberedList": "Numbered list",
+        "Paragraph": "Paragraph",
+        "Heading1": "Heading 1",
+        "Heading2": "Heading 2",
+        "Heading3": "Heading 3"
+      }
+    },
+    "Canvas": {
+      "AddNode": "Add Node",
+      "Undo": "Undo (Ctrl+Z)",
+      "Redo": "Redo (Ctrl+Shift+Z)",
+      "Save": "Save",
+      "DeleteSelected": "Delete selected (Del)",
+      "Duplicate": "Duplicate selected (Ctrl+D)",
+      "FindNode": "Find a node (Ctrl+F)",
+      "FindNodePlaceholder": "Find a node by name or type…",
+      "AddGroup": "Add a group frame",
+      "FullScreen": "Toggle full screen",
+      "SearchNodes": "Search nodes…",
+      "GuideButton": "Guide",
+      "Close": "Close",
+      "NoMatch": "No matching nodes.",
+      "RenamePage": "Rename graph page",
+      "Import": "Import graph from file…",
+      "Export": "Export graph to file",
+      "NodeCount": "{count} nodes",
+      "TemplateBadge": "Template"
+    },
+    "Editor": {
+      "CategoryLabel": "Category",
+      "NoCategory": "No category",
+      "NewCategory": "+ New category…",
+      "MultiStartNoEntry": "This graph has several trigger nodes but no default entry - click the star (or right-click) on an entry in the Command Deck's Graph Control to choose which one runs by default."
+    },
+    "ContextMenu": {
+      "RunFromHere": "Run from here",
+      "Delete": "Delete",
+      "Copy": "Copy",
+      "Disconnect": "Disconnect",
+      "Paste": "Paste",
+      "Create": "Create",
+      "CreateTemplate": "Create template…",
+      "Tutorial": "Node guide"
+    },
+    "GraphBrowser": {
+      "Title": "StoryFlow Graphs",
+      "Search": "Search graphs…",
+      "Empty": "No StoryFlow graphs in this world yet.",
+      "Nodes": "{count} nodes",
+      "Section": {
+        "Journal": "Journal pages",
+        "Actors": "Actor graphs",
+        "Regions": "Scene regions",
+        "Macros": "Macros",
+        "Events": "Event triggers"
+      }
+    },
+    "Group": {
+      "Edit": "Edit Group",
+      "Title": "Title",
+      "Color": "Color",
+      "Save": "Save",
+      "Cancel": "Cancel"
+    },
+    "GraphIO": {
+      "ExportInfo": "Graph exported.",
+      "ExportNameTitle": "Export Graph",
+      "ExportNameLabel": "Export file name",
+      "ExportConfirm": "Export",
+      "ExportChat": "StoryFlow graph <strong>{name}</strong> exported to <code>{path}</code>.",
+      "ExportFailed": "Graph export failed - check that you have file-upload permission.",
+      "ImportConfirmTitle": "Replace Graph?",
+      "ImportConfirm": "Replace the current graph with the imported one? Unsaved changes will be lost. You'll still need to Save to persist.",
+      "ImportLoaded": "Graph imported. Review it, then Save to persist.",
+      "ImportFailed": "Couldn't read that export file.",
+      "RenameTitle": "Rename Graph Page",
+      "RenameLabel": "Name",
+      "Error": {
+        "BadJson": "That file isn't valid JSON.",
+        "NotGraph": "That file isn't a StoryFlow graph export.",
+        "FutureVersion": "That graph was exported by a newer version of StoryFlow."
+      }
+    },
+    "Templates": {
+      "CreateButton": "Create template from selection (Ctrl+T)",
+      "LibraryButton": "Template library",
+      "LibraryTitle": "Template Library",
+      "CreateTitle": "New template",
+      "NameLabel": "Template name",
+      "Create": "Create",
+      "NoSelection": "Select one or more nodes first.",
+      "ExistsTitle": "Template Exists",
+      "Exists": "A template named <strong>{name}</strong> already exists.",
+      "Overwrite": "Overwrite",
+      "KeepBoth": "Keep both",
+      "Cancel": "Cancel",
+      "Created": "Template \"{name}\" saved.",
+      "Saved": "Template saved.",
+      "SaveFailed": "Template save failed - check that you have file-upload permission.",
+      "StoreCorrupt": "The StoryFlow template file couldn't be read - starting with an empty library.",
+      "SearchPlaceholder": "Search templates…",
+      "PreviewHint": "Select a template to preview its nodes",
+      "NewFolder": "New folder",
+      "AddFolderTitle": "New folder",
+      "RenameFolderTitle": "Rename folder",
+      "DeleteFolderTooltip": "Remove folder (templates return to the list)",
+      "DeleteFolderTitle": "Delete folder",
+      "DeleteFolderConfirm": "Are you sure you want to delete the folder {name}? Its templates return to the main list.",
+      "MenuMove": "Move to folder…",
+      "MoveTitle": "Move to folder",
+      "MoveRoot": "- No folder -",
+      "MovePresetFolder": "Dungeons Lab (presets)",
+      "PresetLocked": "Bundled presets - locked (read-only). Insert only.",
+      "PresetUnlocked": "Bundled presets - UNLOCKED for authoring. Changes are saved into the module.",
+      "PresetAuthoringGmOnly": "Preset authoring is available to the GM only.",
+      "FlashPromoted": "Added \"{name}\" to the Dungeons Lab presets.",
+      "FlashDemoted": "Moved \"{name}\" out of the presets.",
+      "EmptyTitle": "Your library stands empty",
+      "EmptyBody": "Save a chart from the editor, or import a template file shared by another GM.",
+      "EmptyImport": "Import Template",
+      "NoResults": "No templates match \"{query}\".",
+      "Meta": "{nodes} nodes · Updated {date}",
+      "InsertLabel": "Insert",
+      "InsertedLabel": "Inserted ✓",
+      "InsertTooltip": "Insert this chart into the editor",
+      "InsertNoEditor": "Open a graph editor to insert templates.",
+      "MoreActions": "More actions",
+      "MenuEdit": "Edit Template",
+      "MenuRename": "Rename",
+      "MenuExport": "Export to File",
+      "MenuDelete": "Delete…",
+      "RenameTitle": "Rename Template",
+      "RenameHint": "Enter to save · Esc to cancel",
+      "ExportChat": "StoryFlow template <strong>{name}</strong> exported to <code>{path}</code>.",
+      "ExportFailed": "Template export failed - check that you have file-upload permission.",
+      "Import": "Import…",
+      "Imported": "Template \"{name}\" imported.",
+      "DeleteConfirm": "Delete {name}? This cannot be undone.",
+      "ConfirmDelete": "Delete",
+      "FooterHint": "GM · Double-click a template to insert it",
+      "FooterIdle": "GM · Template Library",
+      "CountOne": "{count} template",
+      "CountMany": "{count} templates",
+      "FlashInserted": "\"{name}\" inserted into the editor.",
+      "PlaceHint": "Click to place \"{name}\" · drag to pan · right-click or Esc to cancel",
+      "FlashEditing": "Opening \"{name}\" in the chart editor…",
+      "FlashExported": "\"{name}\" exported to file.",
+      "FlashDeleted": "\"{name}\" was deleted.",
+      "Error": {
+        "BadJson": "That file isn't valid JSON.",
+        "NotTemplate": "That file isn't a StoryFlow template export.",
+        "FutureVersion": "That template was exported by a newer version of StoryFlow."
+      }
+    },
+    "FieldEditor": {
+      "Title": "Dialogue Editor",
+      "Open": "Edit dialogue nodes (find & replace)",
+      "NodeName": "Name",
+      "Filter": "Filter by name / speaker…",
+      "Chain": "Chain",
+      "RevealHint": "Click to show this node on the canvas",
+      "Find": "Find…",
+      "Replace": "Replace with…",
+      "ReplaceAll": "Replace all",
+      "CaseSensitive": "Match case",
+      "Matches": "{count} matches",
+      "Replaced": "Replaced {count} occurrence(s). Click Apply to push to the canvas.",
+      "Apply": "Apply",
+      "Refresh": "Refresh",
+      "RefreshHint": "Reload from the canvas (discards unapplied edits)",
+      "Applied": "Changes applied. Review the canvas, then Save to persist.",
+      "Stale": "Canvas changed - Refresh to reload.",
+      "Empty": "No dialogue (Display / Text) nodes in this graph yet."
+    },
+    "NodeCategory": {
+      "trigger": "Triggers",
+      "dialogue": "Dialogue",
+      "flow": "Flow & Logic",
+      "actor": "Actor",
+      "world": "World",
+      "narrative": "Narrative",
+      "presentation": "Presentation",
+      "prop": "Interactive Props",
+      "control": "Control"
+    },
+    "PathSelector": {
+      "Title": "Choose a Path",
+      "Unnamed": "(unnamed path)",
+      "Skip": "Skip"
+    },
+    "NodeDesc": {
+      "trigger.region": "Start a flow when a token enters a region.",
+      "trigger.macro": "Start a flow from a hotbar macro or tile trigger.",
+      "trigger.weather": "Start a flow when the scene weather changes to a value.",
+      "trigger.time": "Start a flow when the time of day enters a phase.",
+      "trigger.rest": "Start a flow when a character finishes a short or long rest.",
+      "trigger.door": "Start a flow when a tagged door opens, closes, or locks.",
+      "trigger.combat": "Start a flow when combat begins, ends, or reaches a round.",
+      "trigger.levelup": "Start a flow when a character gains a level.",
+      "action.bossBar": "Show or hide the cinematic boss health bar tracking one actor.",
+      "display": "Show a dialogue line with a speaker, portrait, and backdrop.",
+      "text": "Show text over the live scene (or the previous backdrop).",
+      "choice": "Offer the player branching options, with optional timeout.",
+      "check": "Roll a skill / save / ability / tool check against a DC.",
+      "condition": "Branch on the actor's class, item, skill, or attribute.",
+      "jump": "Continue the run at another node (merge paths together).",
+      "action.giveItem": "Give an item to - or remove one from - the actor.",
+      "action.applyEffect": "Apply or remove a standard status effect on the target(s).",
+      "action.changeScene": "Activate or preview another scene.",
+      "action.healDamage": "Roll healing or damage onto targets.",
+      "action.giveGold": "Give or take gold from targets.",
+      "action.macro": "Run a Foundry macro and/or inline code.",
+      "action.preloadScene": "Preload a scene so changing to it is instant.",
+      "action.door": "Open / close / lock doors, or convert walls to doors or secret doors.",
+      "action.light": "Turn lights on/off/toggle, or change any light property (color, radius, intensity, animation).",
+      "action.modifyAffinity": "Change how an NPC feels about the party.",
+      "action.effect": "Play a JB2A (or any Sequencer-registered) visual effect, one-shot or persistent.",
+      "action.endEffect": "End a persistent effect by name, by this graph, or all StoryFlow effects.",
+      "action.tiles": "Mass-place an animation as looping tiles; show/hide the group at runtime.",
+      "action.token": "Move, create, or delete tokens on the scene.",
+      "trader": "Open a shop where players can buy items.",
+      "quest": "Reveal / update a quest or lore entry on the board.",
+      "journal": "Open, write, or create journal entries and pages.",
+      "notification": "Pop a toast or full-screen epic notification.",
+      "crate": "A CS-style case opening: each player spins a weighted item reel and wins an item.",
+      "prop.cryptex": "A rotating-ring cryptex the players turn together to spell out a solution.",
+      "showOnMap": "Pan everyone's camera to a saved spot on the map.",
+      "wait": "Pause the flow for a number of seconds.",
+      "showImage": "Show a full-screen image for a few seconds.",
+      "audio": "Play a sound once or as a loop.",
+      "transition": "Play a full-screen cinematic transition (fade, wipe, iris, …).",
+      "screenAnimation": "Play a short one-shot camera or screen effect, then restore the view.",
+      "parchment": "Unfurl an aged-paper scroll showing a journal page or inline text.",
+      "end": "End the flow.",
+      "branch": "A small GM-only window picks which output path the run follows."
+    },
+    "Overlay": {
+      "Continue": "Continue",
+      "EndScene": "End scene",
+      "Votes": "Votes"
+    },
+    "Parchment": {
+      "Close": "Close"
+    },
+    "Check": {
+      "DC": "DC",
+      "WhoRolls": "Who attempts it?",
+      "Roll": "Roll",
+      "RollTheCheck": "Roll the Check",
+      "Normal": "Normal",
+      "Advantage": "Advantage",
+      "Disadvantage": "Disadvantage",
+      "RollForThem": "Roll for them",
+      "RollMode": "Roll mode",
+      "Success": "Success",
+      "Failure": "Failure",
+      "Crit": "Critical!",
+      "Fumble": "Fumble!",
+      "CritSuccess": "Critical Success",
+      "CritFailure": "Critical Failure",
+      "SubIdle": "click to tempt fate",
+      "SubRolling": "the die is cast…",
+      "SubDoom": "doom stirs within…",
+      "SubHeavens": "the heavens open…",
+      "StepOf": "Check {step} of {count}",
+      "PassTally": "{pass} passed",
+      "AddCheck": "Add check",
+      "Kind": {
+        "skill": "Skill Check",
+        "save": "Saving Throw",
+        "ability": "Ability Check",
+        "tool": "Tool Check"
+      }
+    },
+    "RollTrigger": {
+      "Rules": "Fires when ANY rule matches",
+      "AddRule": "Add Rule",
+      "RemoveRule": "Remove rule",
+      "AnyDetail": "Any"
+    },
+    "SpellTrigger": {
+      "Spells": "Spells",
+      "DropHint": "Drag spells here (empty = any spell cast)",
+      "AnySpell": "No spells listed - fires on ANY spell cast.",
+      "RemoveSpell": "Remove spell",
+      "NotASpell": "Only spell items can be dropped here."
+    },
+    "ActorList": {
+      "Legend": "Specific Actors",
+      "DropHint": "Drag actors here",
+      "Remove": "Remove actor",
+      "Empty": "No actors listed.",
+      "NotWorldActor": "Only actors from this world can be dropped here."
+    },
+    "AudioNode": {
+      "Tracks": "Tracks",
+      "DropHint": "Drag a single track anywhere on this node to play just that file - drag a whole Playlist here to build a list of tracks instead.",
+      "RemoveTrack": "Remove track"
+    },
+    "TimerNode": {
+      "Off": "OFF - will not fire"
+    },
+    "HealDamage": {
+      "DamageFlavor": "StoryFlow - Damage ({total}): {names}",
+      "HealFlavor": "StoryFlow - Heal ({total}): {names}",
+      "PickTargets": "Who is affected?",
+      "Apply": "Apply",
+      "Cancel": "Cancel"
+    },
+    "GiveGold": {
+      "GaveChat": "{actor} received {amount} gp.",
+      "TookChat": "{actor} lost {amount} gp.",
+      "ReceiptLine": "{actor} - {left} gp left"
+    },
+    "GiveItem": {
+      "ReceiptHeader": "StoryFlow - Give / Remove Item",
+      "ReceiptRemoved": "{actor} - {item} ×{qty} removed - {left} left",
+      "ReceiptGave": "{actor} - {item} ×{qty} added",
+      "ReceiptFrom": "(from {container})",
+      "ReceiptMatched": "· matched {count} stacks with this name"
+    },
+    "QuietCheck": {
+      "RetryTitle": "Roll not completed",
+      "RetryBody": "The check could not be rolled, so the scene is waiting. Roll again, or give up and let the GM sort it out.",
+      "Retry": "Roll again",
+      "GiveUp": "Give up"
+    },
+    "Errors": {
+      "NoGraphPage": "StoryFlow: graph page not found.",
+      "NoActor": "StoryFlow: no acting actor - assign a character to your user.",
+      "RollFailed": "StoryFlow: the roll failed - try rolling again.",
+      "RunActive": "StoryFlow: a scene is already playing - finish it before starting another."
+    },
+    "NodeType": {
+      "trigger.region": "Region Trigger",
+      "trigger.macro": "Macro Trigger",
+      "trigger.weather": "Weather Trigger",
+      "trigger.time": "Time of Day Trigger",
+      "trigger.rest": "Rest Trigger",
+      "trigger.door": "Door Trigger",
+      "trigger.timer": "Timer Trigger",
+      "trigger.hp": "HP Trigger",
+      "trigger.spell": "Spell Cast Trigger",
+      "trigger.roll": "Roll / Effect Trigger",
+      "trigger.combat": "Combat Round Trigger",
+      "trigger.levelup": "Level Up Trigger",
+      "action.bossBar": "Boss Bar",
+      "display": "Display",
+      "text": "Text",
+      "choice": "Choice",
+      "check": "Check",
+      "condition": "Condition",
+      "jump": "Jump",
+      "action.giveItem": "Give / Remove Item",
+      "action.applyEffect": "Apply Effect",
+      "action.changeScene": "Change Scene",
+      "action.healDamage": "Heal / Damage",
+      "action.giveGold": "Give / Take Gold",
+      "action.macro": "Run Macro / Code",
+      "action.preloadScene": "Preload Scene",
+      "action.door": "Change Door / Wall",
+      "action.light": "Change Light",
+      "action.modifyAffinity": "Modify NPC Affinity",
+      "action.effect": "Play Effect",
+      "action.endEffect": "End Effect",
+      "action.tiles": "Animation Tiles",
+      "action.token": "Token",
+      "trader": "Trader",
+      "quest": "Quest",
+      "journal": "Journal",
+      "notification": "Notification",
+      "crate": "Loot Crate",
+      "prop.cryptex": "Cryptex",
+      "showOnMap": "Show on Map",
+      "wait": "Wait",
+      "showImage": "Show Image",
+      "audio": "Audio",
+      "stopAudio": "Stop Audio",
+      "transition": "Transition",
+      "screenAnimation": "Screen Animation",
+      "parchment": "Parchment",
+      "end": "End",
+      "branch": "Path Selector",
+      "preload": "Preload Graph"
+    },
+    "BossBar": {
+      "Victory": "VICTORY",
+      "ToggleTip": "Boss Bar"
+    },
+    "Tutorial": {
+      "WindowTitle": "Node Guide",
+      "PinsHeading": "Pins",
+      "PinsIn": "Inputs",
+      "PinsOut": "Outputs",
+      "PinsOutDynamic": "Dynamic - one pin per configured entry",
+      "UsageHeading": "How to use",
+      "TipsHeading": "GM tips",
+      "PairsHeading": "Works well with",
+      "RunDemo": "Run example",
+      "RunDemoHint": "Runs this example live through the real overlay.",
+      "ExampleInactiveNote": "Demo and example graphs live in a hidden journal and are inactive - their triggers never fire in your world; they're for inspection only.",
+      "ShowExample": "Open",
+      "ShowExampleHint": "Opens the wiring in the graph editor - comment notes explain each part.",
+      "CopyExample": "Copy",
+      "ExampleCopied": "Example copied - paste it (Ctrl+V) into any StoryFlow graph.",
+      "ExampleCopyFailed": "This type has no example to copy.",
+      "RunFailed": "Could not run the tutorial demo - see console.",
+      "ComingSoon": "Guide coming soon. The facts above are live registry data.",
+      "JournalName": "StoryFlow Tutorials",
+      "Edit": {
+        "Edit": "Edit guide",
+        "Save": "Save",
+        "Cancel": "Cancel",
+        "Reset": "Reset to default",
+        "ResetConfirm": "Reset this guide to the built-in content?",
+        "ResetYes": "Reset",
+        "ResetNo": "Cancel",
+        "SummaryLabel": "Summary",
+        "UsageLabel": "How to use",
+        "InsertTip": "Insert tip callout",
+        "InsertWarning": "Insert warning callout",
+        "InsertInfo": "Insert info callout",
+        "CalloutHint": "Start a line with [!tip], [!warning], or [!info] to make a callout.",
+        "TipsLabel": "GM tips",
+        "AddTip": "Add tip",
+        "SectionsLabel": "Custom sections",
+        "AddSection": "Add section",
+        "SectionTitlePlaceholder": "Section title",
+        "PairsLabel": "Works well with",
+        "AddPair": "Add pairing",
+        "WhyPlaceholder": "Why they pair well…",
+        "DemoLabel": "Demo page",
+        "BuiltinDemo": "Built-in demo",
+        "DemoMissing": "The custom demo page no longer exists.",
+        "EditedBadge": "Edited"
+      },
+      "Custom": {
+        "AddCategory": "Add category",
+        "RenameCategory": "Rename category",
+        "RemoveCategory": "Remove category",
+        "RemoveCategoryConfirm": "Delete this category and all of its pages? This cannot be undone.",
+        "AddPage": "Add page",
+        "RemovePage": "Remove page",
+        "RemovePageConfirm": "Delete this page? This cannot be undone.",
+        "EditPage": "Edit page",
+        "TitleLabel": "Title",
+        "BodyLabel": "Body",
+        "Save": "Save",
+        "Cancel": "Cancel",
+        "NoCategories": "No custom categories yet."
+      },
+      "display": {
+        "Summary": "Shows a cinematic dialogue beat: speaker name, portrait, backdrop, and typewriter body text.",
+        "Usage": "Set a speaker name and body text; optionally add a portrait and a backdrop image. Pacing controls: typewriter speed (cps), or auto-advance with a delay instead of waiting for a click. Voice-over and ambient audio can play with the beat. One input, one output - chain displays to build a scene.",
+        "Tip1": "Leave the backdrop empty to keep the previous node's backdrop - scenes flow without flicker.",
+        "Tip2": "Auto-advance with ~1500 ms reads like a film cut; keep click-to-advance for anything the players must actually read.",
+        "Tip3": "The body is enriched HTML - @UUID links to actors and items work.",
+        "Pair": {
+          "text": "Text is the narrator's version of Display - no speaker, pure prose between beats.",
+          "choice": "Follow a Display beat with a Choice to hand the scene to the players.",
+          "audio": "Start a music bed just before a Display chain to score the scene."
+        }
+      },
+      "choice": {
+        "Summary": "Presents options to the triggering player; each option is its own output pin and branch.",
+        "Usage": "Write a prompt and add choices - each choice becomes a positional output pin (choice_0, choice_1, …). Only the triggering player can select; everyone else sees the options and can cast an advisory vote. Options can be gated (item, class…) and a timeout can auto-pick a path via the timeout pin.\n\n[!info] A gated choice fails OPEN for a solo GM with no assigned character, staying visible rather than hiding from \"nobody\" - it only hides from a character that actually fails the gate.",
+        "Tip1": "Deleting a choice remaps the remaining pins - re-check your wiring after removing options.",
+        "Tip2": "A dead-end choice pin simply ends the run; wire every option somewhere, even if it is a shared Jump.",
+        "Tip3": "Use short labels - long options wrap and push the prompt off smaller screens.",
+        "Pair": {
+          "display": "Set the scene with a Display beat before asking the question.",
+          "check": "Route a risky option into a Check so choosing it still demands a roll.",
+          "jump": "Converge several choice branches back into one path with a Jump."
+        }
+      },
+      "check": {
+        "Summary": "Asks the triggering player for a native dnd5e roll (skill, save, ability, tool) against a DC; branches on success/failure.",
+        "Usage": "Pick the roll kind and key (e.g. Perception) and set the DC. The roll happens on the trigger player's client through the real dnd5e dialog - advantage, bonuses and features all apply; the chat card is suppressed and only the total comes back. Multiple checks can be combined with AND/OR. Success and failure pins lead to separate branches.",
+        "Tip1": "Cancelling the roll dialog does not fail the check - the node re-arms and waits.",
+        "Tip2": "The trigger actor makes the roll: make sure the flow starts with the right token (a null actor is the usual cause of weird outcomes).",
+        "Tip3": "Hide the breakdown for secret DCs; show it for teaching moments.",
+        "Pair": {
+          "choice": "Offer the check as one option among safer paths.",
+          "condition": "Gate the check itself - e.g. only rogues even get to try.",
+          "display": "Narrate both outcomes with a Display beat on each branch."
+        }
+      },
+      "condition": {
+        "Summary": "Silently routes the flow TRUE/FALSE based on actor facts - class, items, attributes. No player interaction.",
+        "Usage": "Choose the target (usually the trigger actor) and add condition rows; combine with AND/OR. The runner evaluates instantly and fires exactly one of the true/false pins. With no rows configured the node passes (true).\n\n[!tip] If the TRUE or FALSE branch looks wrong, check the trigger actor first - a null or unexpected actor is the most common cause, not a broken rule.",
+        "Tip1": "An unexpected FALSE is almost always the wrong trigger actor, not a broken comparison - check who started the flow first.",
+        "Tip2": "Chain two Condition nodes for mixed AND/OR logic instead of one giant rule.",
+        "Tip3": "Conditions read live actor data at run time - mid-session changes count.",
+        "Pair": {
+          "check": "Condition gates by fact; Check gates by roll - combine for 'only wizards may attempt this'.",
+          "choice": "Branch after a choice to react differently per class or item.",
+          "jump": "Send both branches to shared scenes with Jumps instead of duplicating nodes."
+        }
+      },
+      "trigger": {
+        "start": {
+          "Summary": "The entry marker of a graph - the run begins here. Purely a pass-through at runtime.",
+          "Usage": "Place one START and wire it to your first beat. Flows are started from outside: the region behavior (token enters a zone), the generated macro, the Deck, or api.startFlow(pageUuid). The run's trigger actor - who rolls checks and is tested by conditions - is set by whoever/whatever started the flow.",
+          "Tip1": "There is no live demo for START - it cannot trigger itself. Use 'Run from here' on any node in the editor instead.",
+          "Tip2": "If meta.entry is unset the runner falls back to the first trigger-category node - keep exactly one START to stay predictable.",
+          "Tip3": "A GM starting a flow with a player's token selected hands that player the controls.",
+          "Pair": {
+            "display": "The classic opener: START into a Display beat.",
+            "condition": "Branch immediately on who triggered the flow."
+          }
+        },
+        "region": {
+          "Summary": "Fires when a token moves into a scene Region with the StoryFlow behavior attached - the mover becomes the run's trigger actor.",
+          "Usage": "Attach it in Scene Controls → Regions: create or select a Region, open its Behaviors tab, add a StoryFlow Trigger behavior, and drop this page onto it (optionally set the behavior's node field to a specific trigger.region node id if the graph has more than one - otherwise the run starts at the graph's entry node). Region events fire on EVERY connected client, but only the client that actually moved the token dispatches the run, and that token's actor becomes the trigger actor. The active GM client is the one that consumes once (disabling the behavior), since only it holds permission to edit it.",
+          "Tip1": "whoTriggers/specificActorIds are defined on this payload but the region behavior does not filter by them yet - every token that enters fires the flow; gate by actor with a Condition node right after.",
+          "Tip2": "Two Regions in one scene can drive two different flows from the same graph page by pointing each behavior's node field at a different trigger.region node id.",
+          "Tip3": "once is consumed by the active GM only - with no GM online, a once-region never disables itself.",
+          "Pair": {
+            "condition": "Gate immediately on WHO stepped into the region - trigger actor's class, items, or attributes.",
+            "display": "The classic ambush opener: a Region trigger straight into a Display beat.",
+            "notification": "A quick toast (\"You feel watched...\") without stopping the scene for a full dialogue beat."
+          }
+        },
+        "macro": {
+          "Summary": "Fires when a GM (or an external trigger like Monk's Active Tile Triggers) runs the macro generated for this node.",
+          "Usage": "In the canvas app, use Generate Macro on a trigger.macro node to produce a script-macro command, then paste it into a hotbar slot. The macro resolves an acting actor by precedence - Monk's Active Tile Trigger entering token(s), else a selected token, else the running user's assigned character, else null - then calls api.startFlow(pageUuid, {nodeId, actorId}). Because actor resolution happens at RUN time from whatever is selected or entering, the same pasted macro works both for a GM manually firing it and for an automated tile trigger.\n\n[!warning] After changing this node you must re-generate the macro and re-paste it into the hotbar - an already-pasted macro does not self-update.",
+          "Tip1": "The macro is baked with this node's id and the page uuid at generation time - rename the node or point at a different one, and you must re-generate and re-paste; editing the payload alone doesn't update an already-pasted macro.",
+          "Tip2": "If nothing is selected/entering and the running user has no assigned character, actorId is null - any downstream Condition targeting the trigger actor reads no actor and likely fails.",
+          "Tip3": "whoTriggers/specificActorIds exist on the payload but the generated macro doesn't filter by them - it always starts the flow when run; add a Condition node to gate.",
+          "Pair": {
+            "condition": "Guard on the macro's resolved actor before letting the scene continue.",
+            "branch": "Let the GM who ran the macro pick the outcome by hand - no player roll involved.",
+            "display": "Fire the macro to kick off a GM-cued cutscene."
+          }
+        },
+        "weather": {
+          "Summary": "Fires when the ACTIVE scene's weather effect is set to the configured key.",
+          "Usage": "Pick a weather key from the dropdown (populated from the scene's available weather effects). The trigger listens on Foundry's updateScene hook and only reacts when the update actually touches the weather field on the currently-active scene. There is no trigger actor - the active GM client evaluates and drives the run, so downstream Condition nodes checking target:\"trigger\" find no actor.",
+          "Tip1": "Only the ACTIVE scene counts - changing weather on a scene nobody is viewing never fires, even with a matching key.",
+          "Tip2": "The match only checks that the weather field was touched and equals the payload's key - re-applying the SAME weather (e.g. a Simple Weather reroll of an unchanged forecast) refires it too, unless you set once.",
+          "Tip3": "actorId is always null here - pair Condition on something other than the trigger actor, or skip actor logic entirely.",
+          "Pair": {
+            "display": "Open with a mood beat the moment the storm rolls in.",
+            "action": {
+              "light": "Dim or flicker scene lighting to match the new weather."
+            },
+            "notification": "A quiet toast (\"The rain begins...\") without pulling players into a dialogue."
+          }
+        },
+        "time": {
+          "Summary": "Fires once when the world clock crosses into a new time-of-day phase (dawn/day/dusk/night) that matches the configured phase.",
+          "Usage": "Pick one of the four phases. The trigger listens on updateWorldTime, computes the current hour (via Simple Calendar if active, else worldTime/3600), and only fires on the actual TRANSITION into the chosen phase - not every tick while already inside it. There is no trigger actor; the active GM drives the run.",
+          "Tip1": "It fires on the edge, not the level - jumping world time by many hours at once (e.g. a long rest) still fires this once per new phase entered, not once per hour.",
+          "Tip2": "Phase boundaries are fixed: dawn 5-8, day 8-17, dusk 17-20, night 20-5 - not configurable per calendar.",
+          "Tip3": "actorId is always null - pair Condition on a world fact, not the trigger actor.",
+          "Pair": {
+            "display": "Announce the time change with a short narration beat.",
+            "condition": "Gate on a WORLD fact (e.g. a quest flag) since there's no trigger actor to check.",
+            "action": {
+              "changeScene": "Swap to a night-lit version of the map the moment dusk falls."
+            }
+          }
+        },
+        "rest": {
+          "Summary": "Fires when an actor completes a short or long rest, filtered by rest type and who rested.",
+          "Usage": "Choose restType (any/short/long) and whoTriggers (any/party/specific actors). The trigger listens on dnd5e's restCompleted hook and reports the resting actor as the run's trigger actor, so downstream checks/conditions can react to THAT character specifically. party mode matches any actor with a player owner; specific matches only the listed actor ids.",
+          "Tip1": "The resting actor IS the trigger actor here (unlike weather/time) - Condition/Check nodes targeting the trigger see the resting character, not whichever client the GM runs.",
+          "Tip2": "restType reads the dnd5e result's long/short flag directly - verify live if a system update ever renames that result shape.",
+          "Tip3": "party mode only checks actor.hasPlayerOwner - an NPC ally with a player owner assigned still counts as party.",
+          "Pair": {
+            "condition": "Only continue if the resting actor is (or isn't) a specific class or state.",
+            "display": "A quiet \"you wake refreshed...\" beat after the party rests.",
+            "action": {
+              "healDamage": "Top off HP beyond what the native rest already restored, e.g. a magic tent effect."
+            }
+          }
+        },
+        "door": {
+          "Summary": "Fires when a wall/door changes to the configured state (open/closed/locked), scoped to a required Tagger tag.",
+          "Usage": "Pick the target doorState, a Tagger tag (required to match - an untagged trigger never fires), and tagScope (active scene only, or all scenes). The trigger listens on updateWall, only reacting when the update actually touches the door state, and needs the Tagger module active to resolve tags. There is no trigger actor; the active GM drives the run.",
+          "Tip1": "A tag is REQUIRED - the matcher demands a non-blank tag AND a tag match, so leaving it blank means the trigger can never fire, not \"match any door\".",
+          "Tip2": "Needs the Tagger module active - without it, tags read as empty and the tag check always fails.",
+          "Tip3": "actorId is always null - the door doesn't know who opened it; gate on world state, not the trigger actor.",
+          "Pair": {
+            "action": {
+              "door": "Lock the door back behind the party right after the flow that unlocked it."
+            },
+            "condition": "Gate on a quest flag before letting the door event mean anything.",
+            "display": "A creak-and-reveal beat the moment the tagged door opens."
+          }
+        },
+        "timer": {
+          "Summary": "Fires on a repeating game-time interval anchored to a calendar date, independent of any world event.",
+          "Usage": "Set an anchor (year/month/day/hour) and an interval (every × unit: hours/days/weeks/months). The trigger listens on updateWorldTime and fires once per tick that crosses one or more grid boundaries - a big time jump (e.g. a long rest) still fires it exactly ONCE, not once per boundary skipped. once makes it single-shot; otherwise it re-arms forever on the fixed anchor+k·interval grid, tracked in persisted trigger state so a reload doesn't re-fire missed boundaries.",
+          "Tip1": "Months/weeks are fixed at 28-day months / 7-day weeks (the module's own calendar), not whatever a Simple Calendar custom calendar defines.",
+          "Tip2": "A disabled timer still silently advances its internal clock on every world-time tick, so re-enabling it later doesn't back-fire for every boundary it missed.",
+          "Tip3": "actorId is always null - this is a world clock, not tied to any character.",
+          "Pair": {
+            "display": "A recurring omen or countdown beat every N days.",
+            "condition": "Gate a scheduled event on a quest flag before it fires for real.",
+            "notification": "A subtle toast marking the passage of time without stopping play."
+          }
+        },
+        "hp": {
+          "Summary": "Fires when a watched actor's HP crosses DOWNWARD through a threshold (percent, flat value, or death at 0 HP).",
+          "Usage": "Choose mode (percent of max HP, flat value, stage boundary, or death at 0 HP or below) and threshold where applicable, plus whoTriggers/specificActorIds to scope which actors are watched. It listens on updateActor (linked and unlinked tokens alike), comparing the HP just before vs. just after the update, and fires ONLY on the downward crossing - old HP above the limit, new HP at or below it, so dropping HP exactly TO the threshold fires - and it re-arms itself once the actor heals back above the line. maxFires (0 = unlimited) caps how many times one node can fire, tracked in persisted trigger state.\n\n[!info] This pairs well with the Boss Bar plugin action node, and setting this trigger to stage mode fires it once per HP stage instead of once at a single threshold.",
+          "Tip1": "It's edge-triggered, not level-triggered - an actor already sitting below the threshold when the flow is authored won't refire until they heal above it and drop below again.",
+          "Tip2": "The actor whose HP dropped IS the trigger actor - Condition/Check nodes after it see that character.",
+          "Tip3": "maxFires counts per NODE, not per actor - with whoTriggers:\"party\" one unlucky character bleeding out repeatedly can burn through the whole cap for everyone.",
+          "Pair": {
+            "condition": "Only escalate (\"bloodied\" narration) if the dropping actor is the party's tank, say.",
+            "action": {
+              "healDamage": "A guardian-angel effect: heal the actor back the instant they cross the threshold."
+            },
+            "display": "A \"you're badly wounded\" beat the moment HP crosses the line."
+          }
+        },
+        "spell": {
+          "Summary": "Fires when a watched actor casts one of the listed spells (or ANY spell, if the list is empty).",
+          "Usage": "Add spell rows by dragging spell items into the list (matched by source uuid/name, tolerant of world vs. compendium copies), and set whoTriggers/specificActorIds to scope which casters count. It listens on dnd5e's activity-use hook, only matching spell-type items owned by an actor; an empty spell list matches ANY spell cast by a scoped actor. The casting actor is the run's trigger actor.",
+          "Tip1": "An empty spell list is NOT \"never fires\" - it means \"match any spell\"; combine with whoTriggers:\"specific\" if you only want to watch one caster's spellbook.",
+          "Tip2": "Matching is by item identity (uuid/sourceId/name), not by spell school or level - \"watch for Fireball\" won't catch a reskinned copy with a different name.",
+          "Tip3": "Fires once per activity use - verify live that a multi-target or upcast doesn't fire it more than once on your dnd5e version.",
+          "Pair": {
+            "condition": "Only react if the caster is a specific class or has a specific item.",
+            "display": "A \"the air crackles with magic\" beat the instant the watched spell lands.",
+            "check": "Follow up with a save/check of your own reacting to the cast, e.g. a ward the spell just triggered."
+          }
+        },
+        "roll": {
+          "Summary": "Fires when a watched actor's save, ability check, skill check, attack roll, or applied status effect matches one of the node's rules.",
+          "Usage": "Add rule rows (kind: save/ability/skill/attack/effect; optional detail like a specific skill key; optional outcome: any/success/failure/critical/fumble), scoped by whoTriggers/specificActorIds. Rules are OR'd together - any one matching rule fires the node; an empty rule list never fires. It listens on dnd5e's roll hooks (and createActiveEffect for the effect kind) and reports the roller/affected actor as the run's trigger actor; success/failure needs a known DC/AC on the roll, else it reads as unknown and only any/critical/fumble outcomes can still match.",
+          "Tip1": "Effect rules ignore outcome entirely (always normalized to \"any\") - they match purely on the status id in detail.",
+          "Tip2": "A roll with no target DC/AC (e.g. a bare ability check with no set target) has an unknown success - rules asking for success/failure never match it, only any/critical/fumble can.",
+          "Tip3": "Rules OR together by design (no AND/NONE) - to require BOTH a specific roll AND a specific actor, that's what whoTriggers is for; you can't AND two roll kinds on one node.",
+          "Pair": {
+            "condition": "Only react to the roll if the roller is a specific class or holds a specific item.",
+            "display": "A dramatic beat the instant a critical hit or fumble lands.",
+            "check": "Chain a follow-up check that reacts to the roll that was just detected."
+          }
+        },
+        "combat": {
+          "Summary": "Fires when a combat encounter starts, ends, or reaches a specific round.",
+          "Usage": "Pick the event: start (initiative begins), end (the encounter is deleted/closed), or roundChange with a round number (0 = every round, N = only when round N begins). Like all event triggers it registers on every client and self-gates to the active GM, who starts the flow; use once for one-shot cinematics and enabled as a kill switch. There is no live demo - start or advance a real combat to see it fire.",
+          "Tip1": "roundChange with round 0 fires on EVERY new round - great for recurring hazards, dangerous with once unchecked on anything loud.",
+          "Tip2": "Combat events have no single acting player, so the run's trigger actor comes from the GM-side start - gate per-actor logic with a Condition inside the flow instead.",
+          "Pair": {
+            "display": "An opening beat the moment initiative is rolled sells the ambush.",
+            "condition": "Branch the combat-start flow on who is actually in the fight.",
+            "transition": "A cinematic wipe into round one makes the start of combat land."
+          }
+        },
+        "levelup": {
+          "Summary": "Fires when a character gains a class level - the leveling character becomes the run's trigger actor.",
+          "Usage": "Optionally set a level (0 = any level-up, N = only when the character reaches exactly level N) and who triggers: any actor, party (player-owned actors), or specific actors dragged into the list. The trigger watches the dnd5e class item's level increasing, so it fires however the level is granted - the level-up dialog, manual edit, or another module. Like all event triggers it registers on every client and self-gates to the active GM, who starts the flow; use once for one-shot milestones and enabled as a kill switch. There is no live demo - level a real character to see it fire.",
+          "Tip1": "The leveling character IS the trigger actor, so Condition nodes targeting the trigger and Check rolls address them directly - no extra gating needed.",
+          "Tip2": "A multi-level jump (e.g. 4 → 6 in one edit) fires once with the final level - an exact-level node set to the skipped level (5) does not fire.",
+          "Pair": {
+            "display": "A congratulatory beat the moment the level lands makes milestones feel earned.",
+            "notification": "A light toast (\"Mira reaches level 5!\") announces the milestone without stopping play.",
+            "action": {
+              "giveItem": "Grant a milestone reward - a feat scroll, a signature weapon - the moment the level is reached."
+            }
+          }
+        }
+      },
+      "notification": {
+        "Summary": "Fire-and-forget on-screen notification: toast, epic item reveal, or secret unveil.",
+        "Usage": "Pick a style and write the text. Toast is a corner notification; epic and secret present a drag-dropped item cinematically. The flow advances immediately - the notification does not wait to be dismissed.",
+        "Tip1": "Epic/secret need an item reference - drag one onto the field in the inspector.",
+        "Tip2": "For text the players must read before continuing, use a Display beat instead.",
+        "Pair": {
+          "display": "Follow a secret reveal with a Display beat explaining what they found.",
+          "audio": "A sting right before an epic reveal sells the moment."
+        }
+      },
+      "text": {
+        "Summary": "Narrator prose: typewriter body text with no speaker name or portrait.",
+        "Usage": "Write the body text; unlike Display there is no speaker name or portrait, only the words. Background can stay transparent (the live scene shows through) or carry the previous node's backdrop. The same pacing controls apply: typewriter speed, or auto-advance with a delay instead of a click. One input, one output.",
+        "Tip1": "Use Text for narration and scene-setting; switch to Display the moment a character is speaking.",
+        "Tip2": "background: \"carry\" keeps whatever image the last beat set - mix Text and Display freely in one scene without flicker.",
+        "Tip3": "autoAdvance turns this into a cutscene beat - no Continue button, it moves on by itself after the delay.",
+        "Pair": {
+          "display": "Alternate Text (narration) with Display (dialogue) to build a scene.",
+          "wait": "Follow a Text beat with a Wait for a dramatic pause before the next line.",
+          "choice": "Close a run of Text beats with a Choice to hand control back to the player."
+        }
+      },
+      "jump": {
+        "Summary": "Redirects the run to any other node in this graph by id - no output pin, the path just teleports.",
+        "Usage": "Pick a target node from the graph (the field lists every node in the current graph). At runtime the run continues there directly, skipping edges entirely. Jump has no output pin - wiring after a Jump is pointless, the redirect already happened. Great for converging several branches back onto one shared beat instead of duplicating it.",
+        "Tip1": "showLink draws a dashed authoring line from the Jump to its target on the canvas - leave it on so the wiring stays readable.",
+        "Tip2": "A blank targetNodeId just ends the path here - Jump degrades safely if you forget to wire it.",
+        "Tip3": "Jump ignores its own position in the fan-out graph - it can point backwards (a loop) or forwards; the runner doesn't care which.",
+        "Pair": {
+          "display": "Converge multiple Display chains onto one Jump target instead of repeating the ending.",
+          "choice": "Send two or more Choice branches to the same Jump so they share a common continuation.",
+          "condition": "Route both a Condition's true and false paths to distinct beats that Jump back to the same place."
+        }
+      },
+      "wait": {
+        "Summary": "Pauses the run for a fixed number of seconds, then continues - no player interaction.",
+        "Usage": "Set seconds (0-120). The run holds there and advances automatically once the time elapses; nothing is shown to players by default, so pair it with a Display/Text/Notification if the pause needs a reason on screen. One input, one output.",
+        "Tip1": "A Wait with seconds: 0 is a legal no-op - handy as a placeholder while you're still wiring a graph.",
+        "Tip2": "Long waits (music stings, environmental beats) read better paired with a Transition or ambient audio than silence.",
+        "Pair": {
+          "display": "Wait between two Display beats for a beat of silence instead of an instant cut.",
+          "text": "A Wait after narration gives the moment room to land before the next line.",
+          "transition": "Hold on a faded screen with Wait, then use Transition to reveal the next scene."
+        }
+      },
+      "branch": {
+        "Summary": "GM path selector: the GM (or the trigger player) picks one of several configured output paths at play time.",
+        "Usage": "Add paths - each becomes a positional output pin (path_0, path_1, …). Set decider to \"gm\" (the active GM chooses) or \"trigger\" (the triggering player chooses). Unlike Choice, this prompts a single decider rather than offering options to everyone; use it for GM-authored pacing decisions rather than player agency.",
+        "Tip1": "decider: \"gm\" prompts you, the GM, mid-run - expect that prompt when testing a graph with a Branch node.",
+        "Tip2": "Reordering or deleting paths remaps the positional pins the same way Choice does - recheck wiring after edits.",
+        "Tip3": "Branch is deterministic (someone picks); reach for Random instead when you want the story to vary on its own.",
+        "Pair": {
+          "choice": "Use Choice for player agency, Branch for a GM's own storytelling fork in the same graph.",
+          "condition": "Gate a Branch path so a choice is only offered when a Condition already allows it.",
+          "random": "Combine a Branch (GM picks the theme) with a Random node inside one branch (who shows up)."
+        }
+      },
+      "random": {
+        "Summary": "Weighted-RNG path selector: the runner draws one of several configured output paths at play time.",
+        "Usage": "Add paths, each with a weight - the runner draws one at random in proportion to its weight (equal weights = equal odds). Output pins are positional (rand_0, rand_1, …), same shape as Branch, but nobody is prompted; the pick happens instantly and silently.",
+        "Tip1": "Weights are relative, not percentages - {70, 30} and {7, 3} draw identically; use whatever numbers read clearly to you.",
+        "Tip2": "A path with weight 0 can still be wired and will simply never fire - useful for staging an option before you're ready to enable it.",
+        "Tip3": "Random has no dedicated shape validator - a malformed row degrades gracefully in the weighted draw rather than erroring.",
+        "Pair": {
+          "branch": "Reach for Branch instead when the outcome should be a deliberate GM/player pick, not chance.",
+          "choice": "Randomize flavor (which merchant, which ambient line) behind a Choice the player actually made.",
+          "condition": "Gate which Random roll even runs, so luck only applies once prerequisites are met."
+        }
+      },
+      "preload": {
+        "Summary": "Barrier node: waits for every connected client to finish fetching this graph's images/audio before the run continues.",
+        "Usage": "Place a Preload before an asset-heavy beat (a big reveal, a scene change) so every player's client has the files cached before it plays. confirmBeforeRun adds a GM confirmation prompt once the barrier is satisfied - off means it releases automatically the instant loading finishes. One output pin only; there is no failure branch.",
+        "Tip1": "In a solo-GM test world the barrier is satisfied instantly (only one participant) - the real payoff shows with a full table on a slow connection.",
+        "Tip2": "confirmBeforeRun: true is a good safety valve before something destructive/irreversible (a scene change); turn it off for routine pacing.",
+        "Pair": {
+          "action": {
+            "changeScene": "Preload the destination scene's assets, then Change Scene - no pop-in on arrival."
+          },
+          "display": "Preload lets the very next Display's backdrop/portrait appear instantly instead of loading in.",
+          "wait": "A short Wait after a non-confirming Preload gives a beat to settle even when loading was already instant."
+        }
+      },
+      "end": {
+        "Summary": "Terminates one path through the graph. The run itself ends only once every path has settled.",
+        "Usage": "Wire every dangling branch to an End node (or a Jump that eventually reaches one) - a graph is not required to have exactly one End; fan-out edges can each carry their own. The run as a whole finishes on a settle basis: once no path is still pending (every branch has reached an End, an unresolved wait, or simply stopped), the overlay closes for everyone.",
+        "Tip1": "Multiple simultaneous End nodes are normal for a fan-out graph - you don't need to funnel every branch back to one.",
+        "Tip2": "A node type the runner doesn't recognize still advances its \"out\" pin and loads as a gray placeholder - it is never silently dropped, so a stray dead end usually means a missing End, not a corrupted graph.",
+        "Pair": {
+          "display": "Close out a scene with a final Display beat right before the End.",
+          "jump": "A Jump with a blank target behaves like an implicit End - prefer an explicit End node for clarity."
+        }
+      },
+      "comment": {
+        "Summary": "A sticky-note annotation on the canvas - no pins, never part of the run.",
+        "Usage": "Drop a Comment anywhere to leave yourself (or a co-author) a note: why a branch exists, a TODO, a reminder about a dependency. It has no input or output pins, so no edge can ever reach it and the runner can never execute it - it is purely a canvas annotation, resizable like a sticky note.",
+        "Tip1": "Because nothing can wire to a Comment, there is nothing to test-run - the Node Guide's demo button is a no-op for this type by design.",
+        "Tip2": "Use Comments to mark WIP sections of a big graph before you fill them in - they're invisible to players and to the runner alike.",
+        "Pair": {
+          "jump": "Note the intent behind a Jump's target right next to it - the destination isn't always obvious from the canvas.",
+          "condition": "Document a Condition's real-world intent (\"only rogues\") since its rows alone can be terse."
+        }
+      },
+      "showImage": {
+        "Summary": "Shows a full-bleed image for a fixed duration, then advances - a poster/illustration beat.",
+        "Usage": "Pick an image file and set seconds; the image displays full-screen and the run advances automatically once the timer elapses. There is no click-to-advance - treat it like a timed cutscene panel rather than a beat players linger on. One input, one output.",
+        "Tip1": "seconds: 0 shows the image for a single frame before advancing - effectively unusable; give it at least a couple of seconds.",
+        "Tip2": "Pair with a Transition for a fade in/out instead of a hard cut to and from the image.",
+        "Pair": {
+          "display": "Follow a Show Image with a Display beat to caption or react to what was just shown.",
+          "wait": "Insert a Wait beforehand to build anticipation before the image reveals.",
+          "transition": "Wrap the Show Image in fade Transitions so it doesn't pop in and out abruptly."
+        }
+      },
+      "action": {
+        "giveItem": {
+          "Summary": "Copies a dropped item onto the trigger actor, or removes a matching one from their inventory.",
+          "Usage": "Drag an item onto itemUuid and set quantity. mode \"give\" copies the item onto the RUN'S trigger actor (the world/compendium source is untouched); mode \"remove\" matches the actor's owned items by source uuid, id, or name and deletes whole stacks first, decrementing the final partial stack down to quantity. A missing/no trigger actor skips with a console warning - the flow still advances.",
+          "Tip1": "This always targets the trigger actor - there is no selected/all option here, unlike Heal/Damage or Give Gold.",
+          "Tip2": "remove matches by source/uuid/id/name, so it still finds a world-copy of a compendium item - but a renamed custom item may not match; verify live if names diverge.",
+          "Tip3": "No trigger actor (a null actorId) means this silently skips - same root cause as most \"nothing happened\" reports elsewhere in the graph.",
+          "Pair": {
+            "condition": "Gate the reward on a Condition (class, prior item) before handing it out.",
+            "notification": "Follow up with a Notification (epic/secret style) to cinematically reveal what was just given.",
+            "action": {
+              "giveGold": "Pair an item reward with a gold reward for a quest payout beat."
+            }
+          }
+        },
+        "healDamage": {
+          "Summary": "Rolls a formula once and applies it as damage or healing to the trigger actor, selected actors, or the whole party.",
+          "Usage": "Pick mode (damage/heal), a dice formula, and target: \"trigger\" (the run's actor), \"selected\" (the GM is prompted with a checklist dialog - the run PAUSES until they confirm), or \"all\" (every non-GM user's assigned character, falling back to every character actor if nobody's assigned). The roll applies once via dnd5e's native applyDamage (so resistances/temp HP work), then posts a chat card with the total.",
+          "Tip1": "target \"selected\" pauses the whole run at a GM dialog - don't use it inside a timed sequence you expect to run unattended.",
+          "Tip2": "\"all\" is the party's ASSIGNED characters, not everyone currently online - an unassigned player's actor won't be touched even if they're logged in.",
+          "Tip3": "One roll is shared across every resolved target (same damage/heal amount for all), not a separate roll per actor.",
+          "Pair": {
+            "trigger": {
+              "hp": "Follow an HP-threshold trigger with Heal/Damage for a guardian-angel or bleed-out effect."
+            },
+            "condition": "Gate who takes the damage/heal with a Condition first (e.g. only if poisoned).",
+            "check": "Apply damage only down the failure branch of a Check."
+          }
+        },
+        "giveGold": {
+          "Summary": "Rolls a formula once and adds (or subtracts) that many gp to the trigger actor, selected actors, or the whole party.",
+          "Usage": "Pick mode (give/take) and a dice/flat formula; target works exactly like Heal/Damage (\"trigger\"/\"selected\" with a pausing GM dialog/\"all\" the party). The roll is applied to each resolved actor's system.currency.gp directly, then a chat card announces the total.",
+          "Tip1": "There is no canned demo for this node: even a blank-default payload (10 gp to the trigger actor) validates fine but genuinely writes to a character's purse - always test it against a throwaway actor first.",
+          "Tip2": "mode \"take\" clamps at 0 gp - you can't drive an actor's gold negative by overtaking.",
+          "Tip3": "target \"selected\" pauses the run at a GM checklist dialog, same as Heal/Damage - plan for that pause in a timed graph.",
+          "Pair": {
+            "trader": "Reward gold right before opening a Trader so players can immediately spend it.",
+            "condition": "Only pay out if a Condition (quest flag, class) says the reward is earned.",
+            "notification": "A toast (\"+50 gp\") reinforces the chat card without forcing a read."
+          }
+        },
+        "applyEffect": {
+          "Summary": "Applies or removes a standard status effect (CONFIG.statusEffects, e.g. blinded, prone) on the trigger, selected, or all actors.",
+          "Usage": "Pick the effect from the runtime dropdown and mode (apply/remove); targeting matches Heal/Damage/Give Gold exactly (\"selected\" pauses on a GM checklist dialog). Each resolved actor gets actor.toggleStatusEffect(effectId, {active}) called directly - the effect's own duration/end conditions (if any) are whatever that status normally carries in your dnd5e build.",
+          "Tip1": "effectId must be picked from the dropdown - it can't be typed, and a blank selection fails validation entirely.",
+          "Tip2": "toggleStatusEffect is idempotent per actor - reapplying the same effect with mode \"apply\" doesn't stack a second copy.",
+          "Tip3": "target \"selected\" pauses the run at a GM dialog just like Heal/Damage and Give Gold - the same targeting code is shared underneath.",
+          "Pair": {
+            "condition": "Gate which actors are even eligible before applying a status.",
+            "check": "Apply a status only down a Check's failure branch (e.g. failed save → poisoned).",
+            "trigger": {
+              "roll": "React to a detected roll/effect trigger by applying a matching status of your own."
+            }
+          }
+        },
+        "changeScene": {
+          "Summary": "Activates a scene for the whole table, or just previews it on the GM's own client.",
+          "Usage": "Drag a Scene onto sceneId. activate: true calls scene.activate() - every connected client is switched to that scene, same as clicking Activate in the Scenes sidebar. activate: false calls scene.view() instead - a GM-only preview that does not move players. A missing scene warns and skips; the flow still advances.",
+          "Tip1": "activate: true moves EVERY player's view immediately - don't fire it mid-conversation unless you mean to relocate the whole table.",
+          "Tip2": "activate: false is handy for a GM to eyeball a destination scene mid-run without disrupting what players currently see.",
+          "Tip3": "Pair with Preload Scene beforehand so the new scene's assets are already cached - activate doesn't wait for anything to load.",
+          "Pair": {
+            "action": {
+              "preloadScene": "Preload the destination's assets before activating it, so there's no pop-in."
+            },
+            "trigger": {
+              "time": "Swap to a night map the moment a Time trigger crosses into dusk."
+            },
+            "display": "Narrate the transition with a Display beat right before (or after) the scene change."
+          }
+        },
+        "preloadScene": {
+          "Summary": "Tells clients to fetch a scene's images/audio into cache ahead of time, without switching to it.",
+          "Usage": "Drag a Scene onto sceneId. allClients: true asks every connected client to preload (not just the GM), so a later Change Scene is instant for everyone. This is fire-and-forget - the node doesn't wait for the preload to finish before advancing (unlike the general-purpose Preload barrier node, which does).",
+          "Tip1": "Unlike the Preload node, this one does NOT block the run waiting for assets to finish loading - it just kicks off the fetch and moves on.",
+          "Tip2": "allClients: false only preloads on the GM's own client - usually not what you want before a real scene change for the table.",
+          "Pair": {
+            "action": {
+              "changeScene": "The classic pairing: Preload Scene now, Change Scene later, no pop-in on arrival."
+            },
+            "preload": "Use the general Preload barrier instead when the run should actually WAIT for loading to finish."
+          }
+        },
+        "token": {
+          "Summary": "Moves, spawns, or deletes tokens on a scene.",
+          "Usage": "Pick operation (move/create/delete). move/delete resolve tokens from a captured selection (the \"Capture Selected Tokens\" inspector button), a Tagger tag, or one or more dropped Actors (any token of those actors currently on the active scene - survives token re-placement); create spawns a dropped Actor's prototype token instead. All three need a destination for move/create: a captured point, a captured tile's CURRENT center (re-resolved live, so a moved/resized tile still lands correctly), or a Tagger-tagged marker. move is same-scene only - a resolved token whose scene doesn't match the destination scene is skipped with a warning, never teleported cross-scene.",
+          "Tip1": "A captured destination tile is stored by id, not baked coordinates - move the tile later in the editor and this node still lands on its new center.",
+          "Tip2": "move never crosses scenes - if your captured tokens and destination are on different scenes, that group is skipped with a console warning, not an error.",
+          "Tip3": "Tag mode needs the Tagger module active for both source AND destination tags; without it, tag-based targeting/destinations resolve to nothing (fail-soft, not a crash).",
+          "Pair": {
+            "action": {
+              "door": "Move a token through a doorway right after Action: Door opens it."
+            },
+            "trigger": {
+              "region": "Spawn a reinforcement token the moment a Region trigger fires."
+            },
+            "condition": "Only relocate/delete tokens that pass a Condition check first."
+          }
+        },
+        "macro": {
+          "Summary": "Runs a referenced Foundry Macro and/or a block of inline code on the GM-authority client, with the run's actor/token in scope.",
+          "Usage": "Drag a Macro onto macroUuid and/or write inline code (both can be used together; both are optional - a fully blank payload is a legal no-op). The code runs as an async function with (actor, token, speaker, scope) in scope, where actor/token/speaker resolve from the run's trigger actor. It executes ONLY on the active-GM client - the same trust model as running any other Foundry script macro.",
+          "Tip1": "This has the same trust level as any GM-authored script macro - inline code has full API access; only put graphs you trust in front of players who can edit them.",
+          "Tip2": "A thrown error in the macro or the inline code is caught and logged to console, but does NOT fail the node - the flow still advances past it.",
+          "Tip3": "actor/token are null when the run has no trigger actor (e.g. a world-event trigger like weather/time) - code that assumes a real actor should guard for null.",
+          "Pair": {
+            "trigger": {
+              "macro": "The generated macro from a trigger.macro node calls api.startFlow - chain a second Action: Macro deeper in the same graph for a scripted follow-up."
+            },
+            "condition": "Gate whether the macro even runs behind a Condition.",
+            "branch": "Let the GM choose a path, then run different macros per branch."
+          }
+        },
+        "door": {
+          "Summary": "Opens, closes, locks, toggles, or converts (wall/door/secret) the targeted walls.",
+          "Usage": "Pick operation and targeting: \"captured\" uses walls selected via the \"Capture Selected Walls\" inspector button (baked to specific wall ids on a specific scene); \"tag\" resolves walls tagged with a Tagger tag at RUN time (requires the Tagger module active). Writes go through Scene#updateEmbeddedDocuments so every client sees the change instantly, natively - no socket message needed.\n\n[!tip] Tag targeting needs the Tagger module active; StoryFlow warns and does nothing if Tagger is not installed or enabled, it never assumes the tags exist.",
+          "Tip1": "Captured mode bakes specific wall ids at authoring time - if you later delete/replace those walls, the node silently has nothing to act on (capture again).",
+          "Tip2": "Tag mode needs the Tagger module active; without it (or with no matching tag), it warns and skips rather than erroring - safe, but silent if you forget to check the console.",
+          "Tip3": "makeDoor/makeSecret/makeWall convert a plain wall segment into a door type - handy for a secret passage that only appears mid-story.",
+          "Pair": {
+            "trigger": {
+              "door": "Pair with a Door trigger to react when the SAME tagged door later changes state again."
+            },
+            "action": {
+              "light": "Light up a newly-opened secret passage the moment the door node runs."
+            },
+            "condition": "Only unlock a door once a Condition (quest state, key item) passes."
+          }
+        },
+        "light": {
+          "Summary": "Turns lights on/off/toggle, or partially reconfigures their properties (color, radius, animation, darkness range).",
+          "Usage": "Pick operation and targeting exactly like Action: Door (captured selection or a Tagger tag). configure mode is a PARTIAL update - every field defaults to \"unchanged\"/null and only fields you explicitly enable (setColor + the nullable numeric fields) get written; everything else on the light keeps its current value.\n\n[!tip] Tag targeting needs the Tagger module active; StoryFlow warns and does nothing if Tagger is not installed or enabled, it never assumes the tags exist.",
+          "Tip1": "configure only writes fields you've explicitly touched - leaving a field at its null/\"unchanged\" default leaves that property alone on the real light, it does not reset it to a default.",
+          "Tip2": "Tag mode needs the Tagger module active; missing it (or no match) warns and skips - the flow still advances, nothing breaks.",
+          "Tip3": "on/off/toggle just flip hidden - full configure control (color, animation, darkness range) is a separate operation, not layered on top.",
+          "Pair": {
+            "trigger": {
+              "weather": "Dim or flicker lighting the instant a matching Weather trigger fires."
+            },
+            "action": {
+              "door": "Kill the torches the moment a secret door opens, for atmosphere.",
+              "effect": "Layer a Sequencer glow effect on top of a light that just turned on."
+            }
+          }
+        },
+        "effect": {
+          "Summary": "Plays a Sequencer/JB2A visual effect at a token, a captured point, a captured line, the screen, or a set of tokens.",
+          "Usage": "Type or pick a Sequencer database path (animation) and a target mode. Persistent effects (persist: true) need a name and stay until an End Effect node (or Sequencer's own Effect Manager) ends them; non-persistent ones with waitUntilFinished hold the run until playback completes. Requires the Sequencer module (and usually a JB2A pack) active - without it, this warns and advances immediately, never blocking the run.\n\n[!warning] This requires the Sequencer module (with an animation database such as JB2A) to be active; without it the node fails soft and simply advances, no animation plays.",
+          "Tip1": "No Sequencer module active? The node fails soft: a console warning, a GM-facing notification, and the flow advances right past it - it never hangs a run.",
+          "Tip2": "persist: true effects MUST have a name - that name (and this graph's page uuid as an origin) is how an End Effect node later finds and ends exactly this effect, not someone else's Sequencer animation.",
+          "Tip3": "waitUntilFinished pauses the run until the animation completes - leave it off for pure atmosphere you don't want to gate pacing on.",
+          "Pair": {
+            "action": {
+              "endEffect": "Persist an effect here, then clean it up later with an End Effect node."
+            },
+            "check": "Play an impact effect on the failure branch of a Check.",
+            "notification": "Layer a quick Notification toast alongside a bigger visual effect."
+          }
+        },
+        "endEffect": {
+          "Summary": "Ends persistent Sequencer effects this module created - by name, by source graph, or all of them; or deletes a whole mass-placed tile group.",
+          "Usage": "Pick mode: \"name\" ends one persistent effect by its label; \"graph\" ends every persistent effect this SAME graph page created (matched by page uuid origin); \"all\" ends every persistent effect ANY StoryFlow graph created (namespaced storyflow: - it never touches another module's Sequencer effects); \"tiles\" instead deletes every tile in an Action: Tiles placement group (plain scene document deletion, no Sequencer needed for that mode).",
+          "Tip1": "\"all\" only reaches effects this module namespaced (storyflow:) - it can never accidentally end a different module's or the GM's own manually-placed Sequencer effect.",
+          "Tip2": "\"tiles\" mode doesn't need the Sequencer module at all - it's a plain document delete on the scene's tiles in that group.",
+          "Tip3": "Ending an effect (or group) that isn't currently running is a safe no-op - this node is idempotent by design.",
+          "Pair": {
+            "action": {
+              "effect": "The natural pair: persist an effect with Action: Effect, clean it up later with this node.",
+              "tiles": "Delete a whole mass-placed tile group with mode \"tiles\" once its scene is done with."
+            }
+          }
+        },
+        "tiles": {
+          "Summary": "Mass-places tagged, animated tiles (using a Sequencer file as the texture) across a scene, or shows/hides/toggles an already-placed group.",
+          "Usage": "Set animation (a Sequencer database path - its first playable file becomes the tile texture), a group name (stamped on every tile via a flag so they can be found again), size/rotation/opacity for placement, and operation (show/hide/toggle) for an already-placed group. Placement itself happens through the canvas app's Mass Place button, not this payload alone - the node's operation then toggles visibility on whatever's already in that group.\n\n[!warning] This requires the Sequencer module (with an animation database such as JB2A) to be active; without it the node fails soft and simply advances, no tiles appear.",
+          "Tip1": "The group name is how this node (and End Effect's \"tiles\" mode) finds its own tiles later - reusing a group name across unrelated placements will affect all of them together.",
+          "Tip2": "Placed tiles are editable natively afterward (drag, resize, restyle in the Tiles layer) - this node's fields only apply at PLACEMENT time, not on every show/hide/toggle.",
+          "Tip3": "Deleting a whole tile group is End Effect's job (mode \"tiles\"), not this node - this one only toggles visibility.",
+          "Pair": {
+            "action": {
+              "endEffect": "Delete the whole placed group later with End Effect's tiles mode.",
+              "effect": "Layer a one-shot Sequencer effect on top of a tile group that just appeared."
+            },
+            "condition": "Only reveal a hazard/decoration tile group once a Condition allows it."
+          }
+        },
+        "bossBar": {
+          "Summary": "Shows or hides the cinematic Boss HP Bar on every client, tracking one actor's health live.",
+          "Usage": "Drag ANY one actor into the Actor field (or pick it from the list) and choose the operation: show raises the banner on all connected clients - name intro, blood-liquid bar, stage diamonds at 2/3 and 1/3, shield thread fed by temp HP - and hide lowers it. HP tracks the actor document itself, so damage and healing from any source move the bar instantly; reaching 0 HP plays the death sequence on its own. An optional Label overrides the displayed name.",
+          "Tip1": "One bar at a time - showing a new boss replaces the current one; wire a hide node (or use the Token HUD skull button) when the fight ends early.",
+          "Tip2": "The bar's stages are the same crossings the HP Trigger's Boss Stage mode fires on - pair them to script phase transitions without duplicating thresholds.",
+          "Pair": {
+            "trigger": {
+              "combat": "Raise the banner the moment initiative is rolled with a Combat trigger.",
+              "hp": "An HP Trigger in Boss Stage mode scripts each phase change of the same bar."
+            },
+            "display": "A Display beat introducing the boss lands harder with the banner rising behind it."
+          }
+        },
+        "modifyReputation": {
+          "Summary": "Adjusts an actor's standing with a faction: add, subtract, or set the reputation value outright.",
+          "Usage": "Pick the faction, a mode (add/subtract/set) and an integer value, and the target - the trigger actor, the currently selected tokens, or all player characters. The write runs on the GM-authority client and the flow advances immediately. Reputation tiers then drive the rest of the module (trader prices, faction visibility, conditions).",
+          "Tip1": "The faction is a required pick - the dropdown lists your registered factions; with none configured the node is a warned no-op.",
+          "Tip2": "\"set\" overwrites unconditionally - prefer add/subtract for repeatable scenes so a re-run doesn't clobber earned standing.",
+          "Tip3": "target \"trigger\" follows the run's trigger actor - the usual suspect when reputation lands on the wrong character.",
+          "Pair": {
+            "condition": "Branch on the new standing right after the change with a Condition.",
+            "notification": "Announce the reputation shift with a toast so the player knows why prices moved.",
+            "choice": "Reward or punish a Choice branch with an immediate reputation swing."
+          }
+        },
+        "modifyAffinity": {
+          "Summary": "Nudges one NPC's personal affinity toward the party: add, subtract, or set the approval value.",
+          "Usage": "Paste the NPC actor's UUID (right-click the actor → Copy UUID), pick add/subtract/set and an integer value. The GM-authority client applies the change and the flow advances immediately. Affinity is per-NPC approval - the personal counterpart to faction-wide reputation.",
+          "Tip1": "The actor UUID is required and plain text - a typo makes the node a warned no-op, so copy it from the document, don't type it.",
+          "Tip2": "Like reputation, \"set\" clobbers - use add/subtract in repeatable dialogue so re-running a scene doesn't reset earned approval.",
+          "Pair": {
+            "choice": "The classic use: each dialogue Choice branch shifts the NPC's approval differently.",
+            "condition": "Branch a later scene on the accumulated affinity with a Condition.",
+            "display": "Let the NPC's Display line acknowledge the shift so players feel the needle move."
+          }
+        }
+      },
+      "showOnMap": {
+        "Summary": "Pans the camera to a saved map location on every client, hiding the cinematic overlay for the duration.",
+        "Usage": "Use the \"Confirm Camera Location\" inspector button to capture a scene + pan target/scale (from the GM's own current camera), then set duration (how long the pan takes AND how long the map stays visible before the Out pin fires) and audience (\"all\" or \"players\" - the GM's own camera only moves for \"all\"). The overlay hides for EVERYONE regardless of audience so the GM watches the reveal too; it automatically re-shows on the next content beat (Display/Choice/Check) after this node.\n\n[!tip] While the camera pans, the dialogue overlay hides on every client and returns automatically on the next beat - this is expected behavior, not a bug.",
+        "Tip1": "This really moves every targeted client's camera - safe, but noticeable; don't fire it mid-conversation unless the reveal is the point.",
+        "Tip2": "audience \"players\" still hides the GM's overlay, it just doesn't move the GM's own camera - the GM keeps their current view while players see the map.",
+        "Tip3": "There's no live demo for this node: sceneId is a required captured reference, so it only runs meaningfully once you've clicked Confirm Camera Location in a real scene.",
+        "Pair": {
+          "display": "Follow the reveal with a Display beat once the camera lands, to narrate what's shown.",
+          "trader": "Pan to the merchant's stall right before opening the Trader node.",
+          "notification": "A quick toast right after the pan reinforces what just came into view."
+        }
+      },
+      "trader": {
+        "Summary": "Opens a shop overlay backed by a Trader journal page - buy and sell tabs, reputation-aware pricing, and a stock ledger.",
+        "Usage": "Drag a Trader page onto traderUuid. Buying draws down stock (and restocks over time per the trader's own restockDays setting); selling writes the sold goods back into the SAME catalog, so a player's sale can reappear as stock to buy. Faction-linked traders layer reputation multipliers/refusals and per-item rep-tier locks on top of catalog prices. Because the trader is a fan-out/settle node (like Choice), re-entering it via a loop-back edge rebuilds the shop state fresh from the trader page each time - restocked or newly-sold items show up correctly on re-entry, not a stale snapshot.\n\n[!info] A buyer faction reputation can gate purchases entirely (refused at Hostile or Hated) and scales prices by tier; this is configured under the Factions system.",
+        "Tip1": "An empty trader (no items in its catalog) skips this node entirely - the Out pin fires immediately with no shop shown, not an error.",
+        "Tip2": "A faction with 'Refuse' reputation empties the whole Buy list for that player, even though the trader itself still has stock for everyone else.",
+        "Tip3": "Loop the trader's own continuation edge back to itself for a shop the player can keep browsing after each purchase - stock rebuilds live on every re-entry.",
+        "Pair": {
+          "action": {
+            "giveGold": "Pay out gold right before opening the Trader so there's something to spend."
+          },
+          "condition": "Gate access to the whole shop behind a Condition (e.g. a quest flag or faction standing).",
+          "showOnMap": "Pan to the merchant's location right before the shop opens."
+        }
+      },
+      "journal": {
+        "Summary": "Opens a journal page for players, or writes/creates journal content as the GM-authority client.",
+        "Usage": "Pick operation: \"open\" broadcasts an open instruction so each client opens pageUuid locally if it matches target (\"trigger\"/\"all\"/\"gm\"); \"write\" appends or overwrites a TEXT page's content; \"createPage\" adds a new page to an existing JournalEntry; \"createEntry\" makes a brand-new JournalEntry (optionally in a folder), with an initial text page if content is set. Every write path runs ONLY on the active-GM client - Foundry then syncs the result to everyone natively.",
+        "Tip1": "\"write\" only works on a text-type page - pointing it at an image or PDF page silently skips with a console warning.",
+        "Tip2": "reveal only applies to createPage/createEntry - it grants OBSERVER ownership to the new document; leaving it off keeps the new page/entry GM-only.",
+        "Tip3": "The Node Guide has no canned demo for this node: open/write/createPage all need a real JournalEntryPage or JournalEntry reference, and createEntry writes a permanent new document into your world - none of that is safe to fire from a random world.",
+        "Pair": {
+          "parchment": "Follow an \"open\" journal read with a Parchment scroll for a more cinematic recap of the same lore.",
+          "condition": "Only reveal a page once a Condition (quest state, a prior clue) says the players have earned it.",
+          "notification": "A toast pointing at the newly-opened page reinforces that something worth reading just appeared."
+        }
+      },
+      "parchment": {
+        "Summary": "Unfurls an aged-paper scroll/letter/book overlay showing either a referenced journal page or inline text, until the reader taps it closed.",
+        "Usage": "Pick style (scroll/letter/book) and either drag a JournalEntryPage onto pageUuid or leave it blank and write text directly - a referenced page always wins over inline text when both are set. title/subtitle label the scroll's header, and audience (\"all\"/\"players\"/\"trigger\") decides who sees it; the run pauses until an eligible reader taps the parchment closed.",
+        "Tip1": "A blank pageUuid falls back to the inline text field - you don't need a real Journal page to author a working Parchment beat.",
+        "Tip2": "audience \"trigger\" shows the scroll ONLY to the triggering player, not the GM as well - the same rule as Notification's audience gate.",
+        "Tip3": "The run is genuinely paused waiting for a tap - treat Parchment like Choice/Check, not something to chain inside a timed auto-advancing sequence.",
+        "Pair": {
+          "journal": "Reach for the Journal node instead when the content should live as a real, revisitable page in the sidebar.",
+          "display": "Follow a Parchment reveal with a Display beat reacting to what was just read.",
+          "notification": "A quick toast right before the scroll unfurls builds anticipation for the reveal."
+        }
+      },
+      "audio": {
+        "Summary": "Plays an audio file once or on loop, broadcast to every client, with an optional persistent name for later control.",
+        "Usage": "Pick a file for audioPath (or drop a whole Playlist to populate tracks, picked randomly or sequentially each time this node fires) and mode (once/loop). volume can boost up to 150% for a quiet source. persistAfterEnd + name keep a looping track playing after this overlay closes, untouched by anything except a Stop Audio node targeting that same name (or \"all\").",
+        "Tip1": "A blank audioPath with no tracks list is a silent no-op - the node just advances, nothing plays.",
+        "Tip2": "persistAfterEnd only matters for a looping/ambient bed you want to survive past this node's own overlay - a one-shot sting never needs it.",
+        "Pair": {
+          "display": "Start a music bed just before a Display chain to score the scene.",
+          "transition": "Time a sting to land right as a Transition's cover finishes sweeping in.",
+          "stopAudio": "Every looping Audio node with persistAfterEnd needs a matching Stop Audio eventually, by its name."
+        }
+      },
+      "stopAudio": {
+        "Summary": "Stops one named looping Audio track, or every StoryFlow-triggered sound at once.",
+        "Usage": "Set mode to \"name\" and give the same name an Audio node used with persistAfterEnd, or mode \"all\" to stop everything this module currently has playing. It broadcasts a stop instruction to every client and advances immediately - there's nothing to wait for.",
+        "Tip1": "mode \"all\" only reaches sounds THIS module started (namespaced) - it never touches another module's ambience or the GM's own Playlists.",
+        "Tip2": "Stopping a name that isn't currently playing (or running \"all\" with nothing playing) is a safe no-op - nothing errors.",
+        "Pair": {
+          "audio": "The natural pair: loop an Audio node with persistAfterEnd, then Stop Audio by that same name later.",
+          "display": "Cut the music right as a Display beat delivers the twist, for a hard emotional cut."
+        }
+      },
+      "transition": {
+        "Summary": "Plays a full-screen cinematic wipe/fade over the overlay, masking the swap to whatever comes next.",
+        "Usage": "Pick style (fade/iris/wipe/…), phase (\"both\" covers AND reveals in one node; \"cover\" sweeps in and holds, waiting for a later \"reveal\" node to clear it), color, duration, and an optional hold beat while fully covered. audience controls who plays it (\"all\"/\"players\"/\"trigger\"); direction only matters for wipe/blinds/curtain. The run advances to the next node HIDDEN under the cover, so nothing pops in - \"both\" reveals it immediately, \"cover\" leaves the mask up for a matching \"reveal\" node to clear later in the graph.\n\n[!tip] Phase \"both\" covers the screen, swaps to the next beat while hidden, then reveals it - so the reveal always lands on the new content.",
+        "Tip1": "phase \"both\" is the simple case - one node, one seamless swap; reach for a \"cover\"+\"reveal\" pair only when something needs to happen in between while the screen is hidden.",
+        "Tip2": "hold only applies to phase \"both\" - it's the beat spent fully covered before the reveal starts, good for a hard scene cut.",
+        "Tip3": "direction is ignored entirely by fade/iris/dissolve/zoomBlur/ripple/shatter - it only steers wipe/blinds/curtain.",
+        "Pair": {
+          "wait": "Pair a \"cover\"-phase Transition with a Wait while something loads behind the mask, then a \"reveal\" node to clear it.",
+          "showImage": "Wrap a Show Image beat in fade Transitions instead of a hard cut in and out.",
+          "display": "Cut between two Display beats set in different places with a Transition instead of an instant jump."
+        }
+      },
+      "screenAnimation": {
+        "Summary": "Plays a short one-shot camera/screen effect - shake, quick zoom, punch, tilt, or flash - then restores the view exactly.",
+        "Usage": "Pick an Effect and its fields: Shake (intensity), Quick Zoom (direction in/out, amount), Camera Punch (direction, distance), Camera Tilt (direction, angle), or Screen Flash (color, opacity). Duration is in milliseconds. Target Users controls who sees it (\"all\" or just the \"trigger\" player). With Wait For Completion on, the next node runs only after the effect finishes; off, the flow continues immediately while it plays. The effect never permanently changes the canvas - zoom, pan, and rotation are always restored.\n\n[!tip] Keep durations short (200-500 ms) - these are punchy accents for dramatic or comedic beats, not lasting camera moves.",
+        "Tip1": "Every effect is temporary and self-restoring - the camera's real zoom, position, and rotation are untouched, so it's safe to fire mid-scene.",
+        "Tip2": "Only one Screen Animation plays per client at a time - starting a new one cleanly cancels and restores any effect still running.",
+        "Tip3": "With Wait For Completion off, use it as a flourish that plays while the flow moves on; turn it on when the next beat should land only after the effect settles.",
+        "Pair": {
+          "display": "Fire a quick Shake or Flash right before a Display beat to punctuate a dramatic line.",
+          "transition": "Use a Screen Flash as a sharp accent, or a full Transition when you need to actually mask a scene swap.",
+          "notification": "Pair a Camera Punch with an epic Notification so the hit and the callout land together."
+        }
+      },
+      "crate": {
+        "Summary": "A CS-style loot crate: each participating player spins a weighted item reel and keeps what they win.",
+        "Usage": "Add catalog rows (drag an item, set weight, optional glow color/style) plus title/text shown on the crate's lid, costGold per spin (0 = free), and maxSpins per player (0 = unlimited). Every online player with an assigned character can open the crate independently; the node's Out pin waits on a settle barrier - it doesn't fire until every participant has spun (or closed without spinning).",
+        "Tip1": "Each catalog row needs a real dropped Item - an empty catalog fails validation, so this node can't demo with placeholder data.",
+        "Tip2": "costGold is charged per spin from the spinning player's own purse; a player who can't afford it simply can't spin again until they have the gold.",
+        "Tip3": "maxSpins caps how many times each player personally can spin - it's a per-player limit, not a shared pool across the table.",
+        "Pair": {
+          "action": {
+            "giveGold": "Pay out a little gold right before opening the crate so a costly spin feels earned."
+          },
+          "trader": "Let a crate's winnings feed straight into a Trader's stock, or be sold back for gold.",
+          "notification": "Follow a big win with a Notification (epic style) for an extra cinematic beat."
+        }
+      },
+      "prop": {
+        "cryptex": {
+          "Summary": "An interactive rotating-ring cryptex the players turn together live on screen to spell out a solution.",
+          "Usage": "Set rings (2-8) and alphabet (the glyphs each ring cycles through), then solution - one character per ring, each a letter present in alphabet. mode \"auto\" opens automatically the instant the rings match; mode \"submit\" adds a Try button, and a wrong attempt shakes the rings and (if maxAttempts > 0) decrements a shared attempt budget until it hits 0. The interactive player (plus the GM as a fallback) can turn the rings; success fires when solved, failure only when submit mode exhausts its attempts.",
+          "Tip1": "auto mode never fires failure at all - it has unlimited attempts by design, so only wire its failure pin if you plan to switch to submit mode later.",
+          "Tip2": "A blank solution validates fine (fail-open) but never actually solves - the cryptex just waits forever, so always fill it in before shipping a graph.",
+          "Tip3": "solution length must exactly match rings, and every character must appear in alphabet - a mismatch fails validation immediately in the editor.",
+          "Pair": {
+            "check": "Use Check for a dice-driven puzzle, Cryptex when you want the players to physically manipulate the solution instead.",
+            "condition": "Gate whether the cryptex even appears behind a Condition (e.g. only after finding the matching journal clue).",
+            "display": "Follow a solved cryptex with a Display beat narrating what opens or reveals."
+          }
+        }
+      },
+      "quest": {
+        "Summary": "Drives the Quest Board from a flow: reveal quests or lore, flip statuses, reveal and complete objectives, or announce progress.",
+        "Usage": "Pick a target (a Quest or Lore page from your Quest Board) and an operation: revealQuest makes it visible to players, setStatus moves it between available/active/completed/failed, revealObjective and completeObjective work on one objective by id, announce pushes a progress banner, revealLore uncovers a lore page. The write runs on the GM-authority client and the flow advances immediately - no player interaction.",
+        "Tip1": "The target is a required reference - drag the quest or lore page in; a missing target makes the node a warned no-op at run time.",
+        "Tip2": "completeObjective does not auto-complete the quest - chain a second Quest node with setStatus when the last objective should close it.",
+        "Tip3": "Pair reveals with announce sparingly: every announce interrupts all players with a banner.",
+        "Pair": {
+          "display": "Narrate WHY the quest updated with a Display beat before the board changes.",
+          "notification": "A toast is a lighter touch than the quest announce banner for minor progress.",
+          "condition": "Gate objective completion on who actually did the deed with a Condition."
+        }
+      }
+    },
+    "QuestNode": {
+      "TargetType": "Target type",
+      "TargetEntry": "Target",
+      "Operation": "Operation",
+      "Objective": "Objective",
+      "Status": "Status",
+      "Target": {
+        "quest": "Quest",
+        "lore": "Lore"
+      },
+      "Op": {
+        "revealQuest": "Reveal quest",
+        "setStatus": "Set status",
+        "revealObjective": "Reveal objective",
+        "completeObjective": "Complete objective",
+        "announce": "Announce (open board)",
+        "revealLore": "Reveal lore entry"
+      }
+    },
+    "Rewards": {
+      "Title": "Divide the Spoils",
+      "OpenButton": "Reward",
+      "OpenHint": "Open the reward distribution window on every client",
+      "Section": "Rewards",
+      "Gold": "Gold (gp)",
+      "Xp": "XP",
+      "Faction": "Faction",
+      "NoFaction": "- none -",
+      "Reputation": "Reputation",
+      "RemoveItem": "Remove reward item",
+      "DropHint": "Drag items here - they become claimable spoils",
+      "MissingItem": "(missing item)",
+      "QuestComplete": "Quest Complete",
+      "PartyRewards": "Party Rewards · Everyone",
+      "Experience": "Experience",
+      "XpEach": "{xp} XP each",
+      "Renown": "{amount} reputation",
+      "GoldPool": "Gold · {pool}",
+      "SplitEqually": "Split Equally",
+      "SplitHint": "Reset to an equal split among included members",
+      "IncludeHint": "Include in the party rewards",
+      "UnallocatedLabel": "Unallocated",
+      "Spoils": "Spoils · {count} items",
+      "HintGM": "Click a raised hand to assign",
+      "HintPlayer": "Raise your hand on items you want",
+      "Claimed": "Claimed",
+      "Contested": "Contested",
+      "Unclaimed": "Unclaimed",
+      "Hands": "{count} hands",
+      "NoHands": "No hands raised yet",
+      "RollOff": "Roll Off",
+      "RollOffHint": "Each claimant rolls a d20 - highest takes it",
+      "RaiseHand": "Raise Hand",
+      "HandRaised": "Hand Raised",
+      "AssignHint": "Assign this item",
+      "UnassignHint": "Click to unassign",
+      "Unassigned": "{count} items unassigned",
+      "GoldUnallocated": "{gp} gp unallocated",
+      "GoldOver": "{gp} gp over-allocated",
+      "FooterGM": "GM",
+      "FooterGMOk": "GM · all spoils accounted for",
+      "FooterPlayer": "Player · raise your hand to claim - the GM makes the final call.",
+      "FooterDone": "Rewards distributed - sent to character sheets and posted to chat.",
+      "Cancel": "Cancel",
+      "Distribute": "Distribute Rewards",
+      "Distributed": "Distributed",
+      "ChatHeader": "Rewards for \"{quest}\"",
+      "Contest": {
+        "Kicker": "Contested Spoils · Roll-Off",
+        "Vs": "vs",
+        "AwardTo": "Award to {name}",
+        "Cancel": "Cancel Contest",
+        "PlayerHint": "Highest roll takes it - the GM confirms the award.",
+        "RollSelf": "Roll d20",
+        "RollForThem": "Roll for Them",
+        "Awaiting": "Awaiting their roll…",
+        "HighRoll": "High Roll",
+        "Tied": "Tied",
+        "StatusTied": "Tied at {roll} - the GM decides who takes it.",
+        "StatusLeader": "{name} takes the high roll.",
+        "StatusWaiting": "The dice decide - highest d20 takes it."
+      }
+    },
+    "Factions": {
+      "Tab": "Factions",
+      "AddFaction": "Add Faction",
+      "NewFaction": "New Faction",
+      "MerchantsName": "Merchants",
+      "RemoveFaction": "Remove Faction",
+      "RemoveFactionConfirm": "Remove this faction from the registry? Standings already recorded on characters are left untouched.",
+      "NoFactions": "No factions have been created yet.",
+      "NoFactionSelected": "Select a faction to view or edit it.",
+      "Name": "Name",
+      "Color": "Color",
+      "Logo": "Logo",
+      "PickLogo": "Choose logo image",
+      "Description": "Description",
+      "DescriptionPlaceholder": "Describe this faction…",
+      "SheetSection": "Faction Standings",
+      "Member": "Member",
+      "MemberToggle": "Toggle membership",
+      "RelationTip": "Reputation combines both directions of the relation:",
+      "RelationCapped": "(capped)",
+      "Codex": {
+        "Title": "Faction Codex",
+        "Disabled": "Factions are disabled - enable them in Module Settings → General.",
+        "Subject": "Viewing as",
+        "NoSubject": "No character",
+        "Standing": "Standing",
+        "Location": "Location",
+        "Privileges": "Privileges",
+        "PrivilegesSubtitle": "Boons & penalties by standing",
+        "DescriptionToggle": "Description",
+        "Description": "Description",
+        "BannerTheme": "Banner",
+        "CrestShape": "Crest",
+        "NoEffect": "-",
+        "EffectPlaceholder": "Effect at this standing…",
+        "OpenButton": "Open Faction Codex",
+        "EditDescription": "Edit description",
+        "SaveDescription": "Save description",
+        "EditPrivileges": "Edit privileges",
+        "SavePrivileges": "Save privileges",
+        "IncreaseStanding": "Increase standing (+5)",
+        "DecreaseStanding": "Decrease standing (−5)",
+        "Dossier": "Faction Dossier",
+        "About": "About",
+        "Lore": "Lore",
+        "Motto": "Motto",
+        "MottoPlaceholder": "A few words the faction lives by…",
+        "Domain": "Domain",
+        "DomainPlaceholder": "Domain or seat of power…",
+        "Icon": "Crest icon (Font Awesome class)",
+        "IconPlaceholder": "fa-solid fa-shield-halved",
+        "YourStanding": "Your standing"
+      }
+    },
+    "FactionCards": {
+      "Eyebrow": "Ritual of Summoning",
+      "PropsEyebrow": "Faction Properties",
+      "Title": "Faction Cards",
+      "Subtitle": "Properties and consequences - hover over a card",
+      "StoreTitle": "Card Store",
+      "StoreEmpty": "No cards yet - hit Create Card to summon the first one.",
+      "CreateCard": "Create Card",
+      "DeleteCard": "Delete",
+      "Category": "Category (e.g. Merchants)",
+      "CardName": "Card name",
+      "Description": "What this card means…",
+      "PlusEffect": "Positive effect",
+      "MinusEffect": "Negative effect",
+      "GMOnly": "Only the Game Master can manage faction cards.",
+      "FilterAll": "All",
+      "Uncategorized": "Uncategorized",
+      "AddCategory": "New category…",
+      "DeleteCategory": "Remove category",
+      "CardStore": "Card Store",
+      "SectionLabel": "Cards",
+      "Assign": "Assign cards to this faction",
+      "RemoveCard": "Remove this card from the faction",
+      "Reputation": "Reputation when active",
+      "CategoriesLabel": "Categories",
+      "CollectionsLabel": "Collections",
+      "AllCollections": "All cards",
+      "Unfiled": "Unfiled",
+      "NewCollection": "New collection…",
+      "NewSubcollection": "New collection",
+      "AddSubcollection": "Add sub-collection",
+      "RenameCollection": "Rename collection",
+      "ExportCollection": "Export this collection to a file",
+      "ImportCollection": "Import a collection (with its subcollections) from a file",
+      "ImportFolderResultTitle": "Import complete",
+      "ImportFolderAdded": "{count} new card(s) added:",
+      "ImportFolderNothingNew": "Every card was already in the store - nothing new was added.",
+      "DeleteCollection": "Delete collection + its nested collections (cards move up)",
+      "DeleteCollectionConfirmTitle": "Delete collection",
+      "DeleteCollectionConfirm": "Delete the collection “{name}” and every collection nested inside it? The cards are kept - they move up into the parent collection.",
+      "FolderNamePlaceholder": "Collection name",
+      "FactionsLabel": "Factions",
+      "ReputationLabel": "Reputation",
+      "ReputationBadge": "Reputation",
+      "RepPositive": "Positive",
+      "RepNeutral": "Neutral",
+      "RepNegative": "Negative",
+      "AddToFaction": "Add",
+      "AddedToFaction": "Card added to {faction}.",
+      "AlreadyInFaction": "Card is already in {faction}.",
+      "FullscreenTip": "Toggle fullscreen",
+      "Select": "Select",
+      "SelectTip": "Select multiple cards, then assign them to factions at once",
+      "AssignSelected": "Assign to factions…",
+      "SelectedCount": "{count} selected",
+      "ClearSelection": "Clear",
+      "Done": "Done",
+      "BulkAssignTitle": "Assign {count} cards",
+      "BulkAssigned": "Added {cards} card(s) to {factions} faction(s).",
+      "Modify": "Modify",
+      "EditCardTitle": "Edit card",
+      "CategoryField": "Category",
+      "CollectionField": "Collection",
+      "CardIdField": "ID",
+      "CardIdPlaceholder": "auto (leave blank for a random id)",
+      "CannotDeleteBuiltin": "Built-in Merchant cards can't be deleted. Change the category first to remove one.",
+      "Save": "Save",
+      "Cancel": "Cancel",
+      "Close": "Close",
+      "Threshold": "Requires",
+      "ThresholdField": "Reputation threshold (0-100)",
+      "MerchantCategory": "Merchant",
+      "BuyDiscountField": "Shop buy discount % (when liked)",
+      "BuyMarkupField": "Shop buy markup % (when hated)",
+      "UsedBy": "Used by",
+      "Export": "Export",
+      "Import": "Import",
+      "ExportTip": "Save all cards and categories to a JSON file",
+      "ImportTip": "Merge cards and categories from a JSON file",
+      "ExportChat": "Card Store exported ({count} cards) → {path}",
+      "ExportDone": "Exported {count} cards.",
+      "ExportFailed": "Export failed - see the console.",
+      "ImportDone": "Imported {count} cards.",
+      "ImportTitle": "Import Card Store",
+      "ImportPrompt": "Importing {count} cards. Add them alongside your cards, or replace cards with the same name and category?",
+      "ImportMerge": "Add all",
+      "ImportReplace": "Replace matching",
+      "Error": {
+        "badJson": "That file isn't valid JSON.",
+        "badFormat": "That file isn't a Card Store export."
+      },
+      "SearchPlaceholder": "Search name / category / threshold…",
+      "Sort_category": "Sort: category",
+      "Sort_name": "Sort: name",
+      "Sort_thresholdAsc": "Sort: threshold ↑",
+      "Sort_thresholdDesc": "Sort: threshold ↓",
+      "Duplicate": "Duplicate",
+      "CopyName": "{name} (copy)",
+      "CardImage": "Card art (image)",
+      "AssignTitle": "Assign to factions",
+      "NoFactionsToAssign": "No factions to assign to yet.",
+      "DeleteCategoryConfirmTitle": "Remove category",
+      "DeleteCategoryConfirm": "Remove the category \"{name}\"? Cards keep their category text.",
+      "CardUnlocked": "Earned \"{card}\" with {faction}",
+      "CardLocked": "Lost \"{card}\" with {faction}",
+      "RevealTitle": "You received cards",
+      "RevealView": "View",
+      "RevealCloseAria": "Close",
+      "NextUnlock": "{delta} to unlock \"{card}\"",
+      "EffectNeedsPositive": "Inactive - needs a positive standing",
+      "EffectNeedsNegative": "Inactive - needs a negative standing",
+      "NoFactionSelected": "Open the Faction Codex and select a faction first.",
+      "DeleteConfirmTitle": "Delete card",
+      "DeleteConfirm": "Delete the card \"{name}\"? Factions holding it will lose it.",
+      "NoCardsHint": "No cards in the store yet - open the Card Store to create some."
+    },
+    "Reputation": {
+      "Tier": {
+        "hated": "Hated",
+        "hostile": "Hostile",
+        "unfriendly": "Unfriendly",
+        "neutral": "Neutral",
+        "friendly": "Friendly",
+        "honored": "Honored",
+        "revered": "Revered"
+      },
+      "Toast": {
+        "Faction": "Reputation",
+        "Affinity": "Disposition"
+      }
+    },
+    "FactionCodex": {
+      "TabOverview": "Overview",
+      "TabMembers": "Members",
+      "TabOthers": "Relations with Others",
+      "NoMembers": "No members yet - star an actor in Relations with Others.",
+      "NoOthers": "Everyone belongs to this faction.",
+      "OthersFilterAll": "All",
+      "OthersFilterNeutrals": "Neutrals",
+      "RosterPC": "PC",
+      "RosterNPC": "NPC",
+      "MemberToggleOn": "Member - click to remove",
+      "MemberToggleOff": "Not a member - click to add",
+      "MoveMemberTitle": "Change faction?",
+      "MoveMemberFrom": "Currently sworn to",
+      "MoveMemberTo": "Move to",
+      "MoveMemberNote": "Confirming removes their old allegiance.",
+      "OpenSheet": "Open sheet",
+      "ShowEffects": "Show effects",
+      "TabFactions": "Factions",
+      "RelationsHint": "Baseline standing granted to members of each faction. Empty = no relation. Baselines sum for multi-membership; explicit standings override.",
+      "RelationNone": "-",
+      "RelationUp": "Improve relation (+5)",
+      "RelationDown": "Worsen relation (−5)",
+      "SelectFaction": "Select this faction",
+      "NoRelations": "No other factions yet.",
+      "Theme": {
+        "royalPurple": "Royal Purple",
+        "crimson": "Crimson",
+        "verdant": "Verdant",
+        "gilded": "Gilded"
+      },
+      "Shape": {
+        "shield": "Shield",
+        "roundel": "Roundel",
+        "banner": "Banner"
+      },
+      "Visibility": {
+        "Tooltip": "Who can see this faction in the Codex",
+        "all": "Visible to all",
+        "hidden": "Hidden from players",
+        "some": "Specific players",
+        "AllowedPlayers": "Players who can see this faction:",
+        "NoPlayers": "No player characters to grant.",
+        "HiddenTip": "Hidden from all players",
+        "SomeTip": "Visible to specific players only"
+      },
+      "Unlock": {
+        "Kicker": "New faction unlocked",
+        "View": "View",
+        "Close": "Close"
+      }
+    },
+    "Fields": {
+      "speakerName": "Speaker Name",
+      "portraitPath": "Portrait",
+      "bodyHtml": "Dialogue Text",
+      "backdropPath": "Backdrop Image",
+      "voiceOverPath": "Voice-Over Audio",
+      "ambientPath": "Ambient Audio",
+      "typewriter": "Typewriter Effect",
+      "cps": "Characters per Second",
+      "autoAdvance": "Auto-Advance",
+      "autoAdvanceDelay": "Auto-Advance Delay (ms)",
+      "prompt": "Prompt",
+      "kind": "Check Type",
+      "key": "Skill / Ability Key",
+      "dc": "Difficulty Class",
+      "hideBreakdown": "Hide Roll Breakdown",
+      "quietRoll": "Quiet Roll (no cinematic)",
+      "rollMode": "Roll Mode",
+      "itemUuid": "Item",
+      "quantity": "Quantity",
+      "rings": "Number of Rings",
+      "effectId": "Status Effect",
+      "mode": "Mode",
+      "sceneId": "Scene ID",
+      "activate": "Activate for Everyone",
+      "label": "Label",
+      "once": "Fire Once",
+      "whoTriggers": "Who Triggers",
+      "specificActorIds": "Specific Actor IDs",
+      "enabled": "Enabled",
+      "anchorYear": "Start Year",
+      "anchorMonth": "Start Month",
+      "anchorDay": "Start Day",
+      "anchorHour": "Start Hour",
+      "every": "Every",
+      "unit": "Unit",
+      "threshold": "Threshold",
+      "stage": "Boss Stage",
+      "maxFires": "Max Fires (0 = unlimited)",
+      "weather": "Weather",
+      "phase": "Phase",
+      "restType": "Rest Type",
+      "doorState": "Door State",
+      "event": "Event",
+      "round": "Round (0 = any)",
+      "level": "Level (0 = any)",
+      "tag": "Tagger Tag",
+      "tagScope": "Tag Scope",
+      "formula": "Formula",
+      "target": "Target",
+      "targetActorId": "Character",
+      "traderUuid": "Trader",
+      "seconds": "Seconds",
+      "imagePath": "Image",
+      "image": "Background Image",
+      "audioPath": "Audio",
+      "alphabet": "Alphabet",
+      "solution": "Solution",
+      "logicOperator": "Logic",
+      "sourceType": "Source",
+      "operator": "Operator",
+      "value": "Value",
+      "factionId": "Faction",
+      "actorUuid": "Actor",
+      "equipped": "Equipped",
+      "operation": "Operation",
+      "targeting": "Targeting",
+      "actorIds": "Target Actors",
+      "destMode": "Destination",
+      "destTag": "Destination Tag",
+      "destTagScope": "Destination Tag Scope",
+      "pageUuid": "Page",
+      "entryUuid": "Journal Entry",
+      "folderId": "Folder",
+      "writeMode": "Write Mode",
+      "newName": "Name",
+      "content": "Content",
+      "reveal": "Reveal to Players",
+      "duration": "Duration (sec)",
+      "color": "Color",
+      "hold": "Hold (sec)",
+      "direction": "Direction",
+      "audience": "Audience",
+      "background": "Background",
+      "style": "Style",
+      "text": "Text",
+      "title": "Title",
+      "subtitle": "Subtitle",
+      "macroUuid": "Macro",
+      "code": "Inline Code",
+      "allClients": "Preload for All Players",
+      "timeout": "Timeout (auto-fail)",
+      "timeoutSeconds": "Timeout (sec)",
+      "confirmBeforeRun": "Confirm before running",
+      "maxAttempts": "Max Attempts (0 = unlimited)",
+      "targetNodeId": "Continue at node",
+      "showLink": "Show link on canvas",
+      "setColor": "Set color",
+      "dim": "Dim radius",
+      "bright": "Bright radius",
+      "alpha": "Intensity",
+      "angle": "Emission angle",
+      "animationType": "Animation",
+      "synchronizeWithAudio": "Synchronize with audio",
+      "audioSensitivity": "Audio sensitivity",
+      "animationSpeed": "Animation speed",
+      "animationIntensity": "Animation intensity",
+      "animationReverse": "Animation direction",
+      "darknessMin": "Darkness activation (min)",
+      "darknessMax": "Darkness activation (max)",
+      "negative": "Negative (darkness source)",
+      "decider": "Who decides",
+      "animation": "Animation Path",
+      "attach": "Follow Token",
+      "fitToToken": "Fit to Token Size",
+      "belowTokens": "Below Tokens",
+      "fadeIn": "Fade In (ms)",
+      "fadeOut": "Fade Out (ms)",
+      "randomRotation": "Random Rotation",
+      "repeats": "Repeats",
+      "repeatDelay": "Repeat Delay (ms)",
+      "persist": "Persistent",
+      "aboveUI": "Above UI",
+      "waitUntilFinished": "Wait Until Finished",
+      "name": "Effect Name (used when Persistent)",
+      "motion": "Direction Style",
+      "group": "Group Name",
+      "size": "Tile Size (grid squares)",
+      "bgColor": "Background Color"
+    },
+    "FieldOption": {
+      "style": {
+        "scroll": "Scroll",
+        "letter": "Letter",
+        "book": "Book"
+      },
+      "mode": {
+        "apply": "Apply",
+        "remove": "Remove",
+        "name": "By Name",
+        "graph": "All From This Graph",
+        "all": "All StoryFlow Effects",
+        "tiles": "Delete Placed Tiles (by group)",
+        "percent": "Percent of Max HP",
+        "value": "HP Value",
+        "stage": "Boss Stage",
+        "death": "Death (drops to 0 HP or below)"
+      },
+      "stage": {
+        "2": "Stage II (below 2/3 HP)",
+        "3": "Stage III (below 1/3 HP)"
+      },
+      "audience": {
+        "all": "All",
+        "players": "Players",
+        "trigger": "Trigger",
+        "gm": "GM"
+      },
+      "target": {
+        "gm": "GM",
+        "trigger": "Trigger Actor's Token",
+        "point": "Map Point",
+        "tokens": "Specific Tokens",
+        "screen": "Screen (Cinematic)",
+        "line": "Line (Source → Target)",
+        "triggerTargets": "Trigger's Targets (beams)",
+        "checkActor": "The actor who took the check"
+      },
+      "background": {
+        "carry": "Keep previous",
+        "scene": "Live scene",
+        "image": "Custom image"
+      },
+      "operation": {
+        "show": "Show tiles",
+        "hide": "Hide tiles",
+        "open": "Open door",
+        "close": "Close door",
+        "lock": "Lock door",
+        "toggle": "Toggle",
+        "makeDoor": "Make door",
+        "makeSecret": "Make secret door",
+        "makeWall": "Make plain wall",
+        "on": "Turn on",
+        "off": "Turn off",
+        "configure": "Configure",
+        "move": "Move token(s)",
+        "create": "Create token",
+        "delete": "Delete token(s)"
+      },
+      "targeting": {
+        "captured": "Captured selection",
+        "tag": "Tagger tag",
+        "actor": "Actor (any token on scene)"
+      },
+      "motion": {
+        "stretch": "Stretch (beam spans A→B)",
+        "projectile": "Projectile (travels A→B)",
+        "face": "Face (points toward B)"
+      },
+      "destMode": {
+        "point": "Captured point",
+        "tag": "Tagger tag",
+        "tile": "Tile center"
+      },
+      "tagScope": {
+        "active": "Active scene",
+        "all": "All scenes"
+      },
+      "event": {
+        "start": "Combat Starts",
+        "end": "Combat Ends",
+        "roundChange": "Round Changes"
+      },
+      "animationReverse": {
+        "unchanged": "- unchanged -",
+        "yes": "Reversed",
+        "no": "Normal"
+      },
+      "negative": {
+        "unchanged": "- unchanged -",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "decider": {
+        "gm": "GM",
+        "trigger": "Triggering player"
+      }
+    },
+    "FieldGroup": {
+      "audio": "Audio",
+      "pacing": "Pacing & Auto-Advance",
+      "basic": "Basic",
+      "animation": "Animation",
+      "darkness": "Darkness Range",
+      "advanced": "Advanced",
+      "appearance": "Appearance",
+      "timing": "Timing",
+      "persistence": "Persistence",
+      "whoTriggers": "Who Triggers",
+      "audience": "Audience"
+    },
+    "FieldHint": {
+      "persistAfterEnd": "Keeps this sound playing after the story ends, instead of cutting it off. It won't stop on its own - use a Stop Audio node targeting this sound's Name below (or set to stop \"All\") to end it later.",
+      "animationType": "Which one-shot effect to play. Only the fields for the chosen effect are shown.",
+      "intensity": "Maximum shake offset in pixels (1-50).",
+      "zoomAmount": "How far to zoom, as a fraction of the current view (0.05-0.75).",
+      "distance": "How far the camera punches, in pixels (5-200).",
+      "angle": "How far to tilt, in degrees (1-45).",
+      "opacity": "Peak flash opacity, 0-1.",
+      "duration": "Total effect length in milliseconds (50-3000). Hidden while audio sync is on - the audio drives all timing then (its length for Shake/Tilt; the stored value is each pulse's length for Quick Zoom, Camera Punch, and Screen Flash).",
+      "waitForCompletion": "On: the next node runs only after the effect finishes. Off: the flow continues immediately.",
+      "synchronizeWithAudio": "Shown only when the node directly before this one is an Audio node. On: each viewer's effect reacts to that same audio's loudness and peaks (footsteps shake, thunder flashes). With sync on, Shake and Tilt run for the audio's full length; Quick Zoom, Camera Punch, and Flash use Duration as the length of each reaction. Falls back to the ordinary one-shot when no Audio node precedes.",
+      "audioSensitivity": "How readily the effect reacts to peaks (0-100). Lower ignores all but the strongest hits; higher reacts to subtler ones. 50 suits most clips."
+    },
+    "JournalNode": {
+      "NewPageDefault": "New Page",
+      "NewEntryDefault": "New Journal Entry"
+    },
+    "ShowOnMap": {
+      "CameraLocation": "Camera Location",
+      "Confirm": "Confirm Camera Location",
+      "Captured": "Camera location saved.",
+      "NotSet": "No location set - position your camera on the map, then click Confirm.",
+      "NoCanvas": "No active scene canvas to capture.",
+      "Zoom": "zoom"
+    },
+    "Door": {
+      "CapturedWalls": "Target Walls",
+      "CaptureWalls": "Capture Selected Walls",
+      "WallsOn": "wall(s) on",
+      "Status": "Captured walls",
+      "NotSet": "No walls captured - select walls on the Walls layer, then click Capture.",
+      "NoCanvas": "No active scene canvas to capture walls from.",
+      "NoSelection": "No walls selected - control one or more walls on the Walls layer first.",
+      "Captured": "Captured {count} wall(s)."
+    },
+    "Light": {
+      "CapturedLights": "Target Lights",
+      "CaptureLights": "Capture Selected Lights",
+      "LightsOn": "light(s) on",
+      "Status": "Captured lights",
+      "NotSet": "No lights captured - select lights on the Lighting layer, then click Capture.",
+      "NoCanvas": "No active scene canvas to capture lights from.",
+      "NoSelection": "No lights selected - control one or more lights on the Lighting layer first.",
+      "Captured": "Captured {count} light(s).",
+      "Unchanged": "- unchanged -",
+      "AnimNone": "None (no animation)"
+    },
+    "Effect": {
+      "NoSequencer": "StoryFlow: the Sequencer module is not active - effect node skipped.",
+      "SequencerInactive": "The Sequencer module is not active in this world - this node will be skipped at runtime.",
+      "Animation": "Animation",
+      "Browse": "Browse Animations…",
+      "PathMissing": "This animation path is not in this world's database (different JB2A edition?). The node will fail-soft at runtime.",
+      "Location": "Map Location",
+      "PickLocation": "Pick Location on Map",
+      "NoLocation": "No location picked - click Pick Location, then click a spot on the map.",
+      "TargetTokens": "Target Tokens",
+      "CaptureTokens": "Capture Selected Tokens",
+      "TokensOn": "token(s) on",
+      "NoTokens": "No tokens captured - select tokens on the map, then click Capture.",
+      "CapturedTokens": "Captured {count} token(s).",
+      "NoCanvas": "No active scene canvas.",
+      "NoTokenSelection": "No tokens selected - control one or more tokens first.",
+      "Line": "Source → Target Line",
+      "PickLine": "Pick Source → Target",
+      "PickSource": "Click the SOURCE point on the map…",
+      "PickTarget": "Now click the TARGET point…",
+      "NoLine": "No line picked - click Pick Source → Target, then click two points on the map.",
+      "Preview": "Preview on My Screen",
+      "PreviewFailed": "Preview could not play - check the animation path, and select/target tokens for trigger/target modes."
+    },
+    "Tiles": {
+      "Placements": "Tile Placements",
+      "MassPlace": "Mass Place on Map",
+      "PlaceHint": "Click to place tiles (snaps to grid) - hold Shift for free placement, right-click (or Esc) to stop.",
+      "PlaceLabel": "Click to place · Shift = free · right-click to finish",
+      "Placed": "Placed {count} tile(s).",
+      "TilesOn": "tile(s) in this group on",
+      "NoTiles": "No tiles placed yet - click Mass Place, then click spots on the map.",
+      "NoGroup": "Set a Group Name first - it links the node to its placed tiles.",
+      "NoFile": "This animation path has no playable video file to place as a tile.",
+      "EditPlacements": "Edit Placements on Map",
+      "EditBarText": "Editing placed tiles - drag to move, handles to resize/rotate, Delete to remove.",
+      "EditDone": "Done",
+      "NoPlacedHere": "No tiles from this group on the current scene."
+    },
+    "EffectPicker": {
+      "Title": "Animation Library",
+      "SearchPlaceholder": "Search animations (e.g. fireball)…",
+      "TabAll": "All",
+      "TabFavorites": "Favorites",
+      "TabRecent": "Recent",
+      "NoDatabase": "No Sequencer animations found - is a pack like JB2A installed and active?",
+      "LoadMore": "Load 40 more",
+      "NoResults": "No animations match your search.",
+      "EmptyFavorites": "No favorites yet - tap the ★ on any animation to save it here.",
+      "EmptyRecent": "No recent picks yet - animations you choose will appear here.",
+      "Favorite": "Toggle favorite",
+      "Cancel": "Cancel"
+    },
+    "Token": {
+      "CapturedTokens": "Target Tokens",
+      "CaptureTokens": "Capture Selected Tokens",
+      "TokensOn": "token(s) on",
+      "NotSet": "No tokens captured - select tokens on the canvas, then click Capture.",
+      "NoCanvas": "No active scene canvas to capture tokens from.",
+      "NoSelection": "No tokens selected - control one or more tokens on the canvas first.",
+      "Captured": "Captured {count} token(s).",
+      "Destination": "Destination",
+      "CaptureDestination": "Capture Destination",
+      "DestNotSet": "No destination set - position your camera on the map, then click Capture.",
+      "DestCaptured": "Destination saved.",
+      "CaptureDestinationTile": "Capture Destination Tile",
+      "DestTileNotSet": "No tile captured - select a tile on the canvas, then click Capture.",
+      "NoTileSelection": "No tile selected - control a tile on the canvas first.",
+      "DestTileCaptured": "Destination tile saved."
+    },
+    "Condition": {
+      "Target": "Check",
+      "AddRule": "Add Rule",
+      "RemoveRule": "Remove rule",
+      "Equipped": "Equipped",
+      "NpcAffinityKeyPlaceholder": "NPC actor UUID (right-click → Copy UUID)"
+    },
+    "VoiceStudio": {
+      "Title": "Voice Studio",
+      "Teleprompter": "Teleprompter",
+      "Speed": "Speed",
+      "FontSize": "Font size",
+      "AutoScroll": "Auto-scroll on record",
+      "PopOut": "Pop out teleprompter",
+      "PopoutBlocked": "Pop-out was blocked by the browser.",
+      "Record": "Record",
+      "Recording": "Recording…",
+      "Stop": "Stop",
+      "Preview": "Preview",
+      "EmptyHint": "Press ● Record and read the teleprompter aloud. Then trim, tweak the volume, add a voice effect, and Save.",
+      "TeleStart": "Start scrolling",
+      "TeleReset": "Reset to top",
+      "Edit": "Edit",
+      "TrimStart": "Trim start",
+      "TrimEnd": "Trim end",
+      "Volume": "Volume",
+      "FadeIn": "Fade in",
+      "FadeOut": "Fade out",
+      "Normalize": "Normalize",
+      "Effects": "Effects",
+      "Intensity": "Intensity",
+      "Reset": "Reset",
+      "SaveInsert": "Save & Insert",
+      "NamePrompt": "Name this recording",
+      "Rendering": "Rendering…",
+      "Saved": "Voice-over saved and inserted.",
+      "NoMic": "Recording needs a microphone (and HTTPS or localhost).",
+      "MicDenied": "Microphone permission was denied.",
+      "DecodeFail": "Could not decode the recording.",
+      "PreviewFail": "Preview failed.",
+      "EncodeFail": "MP3 encoding failed.",
+      "UploadFail": "Could not save the file.",
+      "OpenFail": "Voice Studio failed to open - try reloading Foundry."
+    },
+    "Inspector": {
+      "NodeName": "Name",
+      "GenerateMacro": "Generate Macro",
+      "GotoJumpTarget": "Go to target node",
+      "JumpNoTarget": "This jump has no target node selected.",
+      "Reactivate": "Reactivate trigger",
+      "TriggerReactivated": "Trigger reactivated - it can fire again.",
+      "ResetTriggerState": "Reset Trigger State",
+      "TriggerStateReset": "Trigger state cleared.",
+      "RecordVoice": "Record voice-over",
+      "MacroCopied": "Macro command copied - paste it into a new hotbar macro.",
+      "NoSelection": "Select a node to edit its properties.",
+      "MissingComponent": "⚠ Missing component",
+      "MissingComponentHint": "Install the module that provides this node type to edit it. Its data is preserved.",
+      "Choices": "Choices",
+      "ChoiceLabel": "Choice label",
+      "RequiresItem": "Requires item (optional)",
+      "AddChoice": "Add Choice",
+      "RemoveChoice": "Remove choice",
+      "ChoiceVisibility": "Visibility (optional)",
+      "Gated": "This choice is only shown when its conditions are met",
+      "Browse": "Browse files",
+      "MdBold": "Bold",
+      "MdItalic": "Italic",
+      "MdHeading1": "Heading 1",
+      "MdHeading2": "Heading 2",
+      "MdHeading3": "Heading 3",
+      "MdList": "List item",
+      "MdImage": "Insert image / GIF…",
+      "SceneDropHint": "Pick a scene, or drag one from the sidebar onto this panel.",
+      "JournalDropHint": "Pick from the list, or drag a journal entry, page, or folder from the sidebar onto this panel.",
+      "MacroDropHint": "Pick a macro, or drag one from the sidebar onto this panel.",
+      "RefDropHint": "Type to search, or drag one from the sidebar onto this panel.",
+      "RefSearch": "Search…",
+      "NodeSearch": "Search nodes…",
+      "RefNone": "- none -",
+      "ItemDropHint": "Drag an item from the sidebar onto this panel.",
+      "ClearItem": "Remove item",
+      "Paths": "Paths",
+      "AddPath": "Add path",
+      "RemovePath": "Remove path",
+      "PathLabel": "Path label",
+      "PathWeight": "Odds %",
+      "PathNumber": "Path {n}",
+      "EqualizeRandomPaths": "Equalize odds",
+      "RandomTotal": "Total: {total}%"
+    },
+    "RegionBehavior": {
+      "FIELDS": {
+        "page": {
+          "label": "StoryFlow Graph Page",
+          "hint": "The JournalEntryPage graph to run when a token enters this region."
+        },
+        "once": {
+          "label": "Fire Once",
+          "hint": "Only trigger the first time a token enters."
+        }
+      },
+      "SheetLabel": "StoryFlow Trigger",
+      "BehaviorName": "Name",
+      "Page": "StoryFlow Graph Page",
+      "NoPage": "- none -",
+      "StartNode": "Start at node",
+      "StartNodeHint": "Which Region Trigger node in the graph to start from. Leave on Entry to start the whole flow - pick a specific node so two regions can run two different flows.",
+      "EntryDefault": "Entry node (whole flow)",
+      "Once": "Fire once",
+      "Disabled": "Disabled"
+    },
+    "Calendar": {
+      "EventPageMissing": "Calendar event \"{name}\": graph page is missing.",
+      "Title": "Calendar",
+      "OpenTip": "Open the Calendar",
+      "NoWeatherToday": "No weather charted for today",
+      "Dawn": "Dawn",
+      "DawnTip": "Jump to dawn (06:00)",
+      "Dusk": "Dusk",
+      "DuskTip": "Jump to nightfall (18:00)",
+      "PlusDay": "+1 Day",
+      "PlusDayTip": "Advance one day",
+      "Months": {
+        "0": "Yinvar",
+        "1": "Fivral",
+        "2": "Mart",
+        "3": "Aprel",
+        "4": "Mai",
+        "5": "Eyun",
+        "6": "Eyul",
+        "7": "Avgust",
+        "8": "Sentyabr",
+        "9": "Oktyabr",
+        "10": "Noyabr",
+        "11": "Dekabr"
+      },
+      "Weekdays": {
+        "0": "Mon",
+        "1": "Tue",
+        "2": "Wed",
+        "3": "Thu",
+        "4": "Fri",
+        "5": "Sat",
+        "6": "Sun"
+      },
+      "WeekdaysFull": {
+        "0": "Monday",
+        "1": "Tuesday",
+        "2": "Wednesday",
+        "3": "Thursday",
+        "4": "Friday",
+        "5": "Saturday",
+        "6": "Sunday"
+      },
+      "Seasons": {
+        "winter": "Winter",
+        "spring": "Spring",
+        "summer": "Summer",
+        "autumn": "Autumn"
+      },
+      "SkyStyle": "Calendar: sky style (plane)",
+      "SkyStyleHint": "Which plane of existence the calendar's sky panel depicts on your client. Extra planes ship with the paid editions.",
+      "Planes": {
+        "material": "Material Plane",
+        "elemental": "Elemental Planes",
+        "sunken": "Sunken Realm",
+        "caverns": "Gemstone Caverns",
+        "gilded": "Gilded Realm"
+      },
+      "PlaneSettingsTitle": "World Type",
+      "PlaneReadOnly": "Only the Dungeon Master may change the world type. Shown read-only.",
+      "PlaneDockLabel": "Choose a plane",
+      "PlaneConditionSection": "Plane state",
+      "PlaneParamSection": "Plane parameters",
+      "PlaneRoll": "Roll",
+      "PlaneRollTip": "Roll a random state for this plane",
+      "PlanePerScene": "Remember the world type per scene",
+      "PlaneParams": {
+        "depth": "Depth",
+        "murk": "Murk",
+        "dread": "Dread",
+        "rift": "Rift gauge",
+        "coverage": "Cloud cover",
+        "drift": "Drift speed",
+        "seam": "Seam depth",
+        "suspension": "Suspension",
+        "druse": "Druse glow",
+        "grace": "Grace",
+        "pollen": "Pollen"
+      },
+      "PlaneHud": {
+        "vis": "Vis",
+        "psi": "Psi",
+        "attune": "Attune",
+        "haze": "Haze",
+        "glow": "Glow",
+        "pollen": "Pollen",
+        "ascend": "Ascend",
+        "descend": "Descend",
+        "emberdawn": "Emberdawn",
+        "umbralTide": "Umbral Tide",
+        "Bands": {
+          "shallows": "Shallows",
+          "twilight": "Twilight Zone",
+          "midnight": "Midnight Zone",
+          "abyss": "Abyss",
+          "sealed": "Sealed",
+          "fraying": "Fraying",
+          "breached": "Breached",
+          "wideOpen": "Wide Open",
+          "conjunction": "Conjunction",
+          "upperGalleries": "Upper Galleries",
+          "deepSeams": "Deep Seams",
+          "rootWorks": "Root Works",
+          "underdark": "Underdark",
+          "forsaken": "Forsaken",
+          "tarnished": "Tarnished",
+          "favoured": "Favoured",
+          "resplendent": "Resplendent"
+        },
+        "Notes": {
+          "depth": "below 60% visibility ranged attacks are at disadvantage",
+          "planar": "spell components and summons drawn from the dominant element are empowered",
+          "cave": "druse light is the only light down here - below 30% glow, bring your own",
+          "gilded": "thick pollen dulls scent and hearing - tracking is at disadvantage above 70%"
+        }
+      },
+      "PlaneHazards": {
+        "depth": {
+          "clear": "no penalty",
+          "overcast": "disadv. Perception",
+          "rain": "DC 14 STR (Athletics)",
+          "storm": "2d6 fire, DC 13 DEX",
+          "snow": "advantage on Stealth",
+          "fog": "DC 15 WIS save · fear"
+        },
+        "planar": {
+          "clear": "1d6 fire / hour",
+          "overcast": "2d10 fire, DC 15 DEX",
+          "storm": "3d8 lightning, DC 14 DEX",
+          "rain": "difficult terrain · DC 12 STR",
+          "snow": "1d4 piercing per shard",
+          "fog": "wild magic · roll 1d100"
+        }
+      },
+      "PlaneEffectSection": "Plane effects",
+      "PlaneEffectAdd": "Add rule",
+      "PlaneEffectSoon": "Effect rules are not available yet - the plane's state has no scene effects wired to it.",
+      "PlaneOpenSeasons": "Seasons & weather…",
+      "PlaneOpenSeasonsTip": "Seasonal tables and daily weather",
+      "PlaneWeatherOn": "The calendar rolls daily weather on this plane and mirrors it onto the scene.",
+      "PlaneWeatherOff": "This plane has no weather: the calendar rolls none and pushes none onto the scene. You set its state here.",
+      "SkyStyles": {
+        "classic": "Classic",
+        "clouds": "Living Sky",
+        "planar": "Planar Sky",
+        "depth": "Depth Column",
+        "cave": "Slime Luminary",
+        "gilded": "Gilded Ephemeris"
+      },
+      "Moon": {
+        "new": "New Moon",
+        "waxingCrescent": "Waxing Crescent",
+        "firstQuarter": "First Quarter",
+        "waxingGibbous": "Waxing Gibbous",
+        "full": "Full Moon",
+        "waningGibbous": "Waning Gibbous",
+        "lastQuarter": "Last Quarter",
+        "waningCrescent": "Waning Crescent"
+      },
+      "Conditions": {
+        "clear": "Clear",
+        "overcast": "Overcast",
+        "fog": "Fog",
+        "rain": "Rain",
+        "storm": "Storm",
+        "snow": "Snow"
+      },
+      "Winds": {
+        "calm": "Calm",
+        "light": "Light breeze",
+        "strong": "Strong wind",
+        "howling": "Howling gale"
+      },
+      "Flavor": {
+        "clear": "Rare sunlight breaks over the valley.",
+        "overcast": "A grey shroud hangs low over the valley.",
+        "fog": "The Svalich mists press close against the windows.",
+        "rain": "Cold rain drums on the rooftops of the village.",
+        "storm": "Thunder rolls down from Mount Baratok.",
+        "snow": "Snow falls silent on the Old Svalich Road."
+      },
+      "Today": "Today",
+      "Temperature": "Temperature",
+      "Wind": "Wind",
+      "RollWeather": "Roll Weather",
+      "RollHint": "1d20 vs. the season table",
+      "ChartWeather": "Chart Weather",
+      "UpdateWeather": "Update Weather",
+      "Clear": "Clear",
+      "Events": "Events",
+      "NoEvents": "No events marked for this day.",
+      "AddEvent": "Add Event",
+      "SeasonsTip": "Configure seasonal weather generation & month names",
+      "ScaleDownTip": "Shrink the calendar (your client only)",
+      "ScaleUpTip": "Enlarge the calendar (your client only)",
+      "HelpTip": "About the calendar & help",
+      "HelpTitle": "Calendar - Help",
+      "HelpClose": "Got it",
+      "Help": {
+        "Nav": {
+          "Title": "Navigation",
+          "Body": "Browse months with the arrows, jump back with Today, click a day to open its panel."
+        },
+        "Weather": {
+          "Title": "Weather",
+          "Body": "The GM charts weather per day (pick a condition, temperature and wind, or roll on the season table). Players see a day's weather once its day dawns; future days stay veiled."
+        },
+        "Events": {
+          "Title": "Events",
+          "Body": "The GM can mark events on any day (double-click a day or press Add Event). Story-graph events fire automatically when their day arrives."
+        },
+        "Seasons": {
+          "Title": "Seasons",
+          "Body": "The gear button (GM only) configures month names, seasonal weather tables and scene weather effects."
+        },
+        "Widget": {
+          "Title": "HUD widget",
+          "Body": "The small calendar bar on screen shows today's date and weather; the GM can drag its sky to move world time."
+        },
+        "Scale": {
+          "Title": "Calendar size",
+          "Body": "Use the magnifier − / + buttons in this window's header to shrink or enlarge the whole calendar (window and HUD widget) on your client only. The same value lives in module settings as \"Calendar: UI size\"."
+        },
+        "PerfMode": {
+          "Title": "Weak PC? Performance mode",
+          "Body": "If the calendar feels slow on your machine, open Game Settings → Configure Settings → StoryFlow Dungeons Lab and enable \"Calendar: performance mode (weak PC)\". It turns off the calendar's animations, blur and glow effects - on your client only."
+        }
+      },
+      "VeiledTip": "The mists conceal what is to come",
+      "VeiledTitle": "The mists conceal what is to come",
+      "VeiledBody": "Weather for the days ahead is known only to the Dungeon Master.",
+      "NoneTitle": "No weather recorded",
+      "NoneBody": "The chronicle holds no entry for this day.",
+      "BrokenEvent": "The scheduled graph page no longer exists",
+      "FooterGm": "GM · charted weather is revealed to players when its day dawns",
+      "FooterPlayer": "Player · the calendar is read-only; only revealed weather is shown",
+      "Kicker": {
+        "today": "Today",
+        "chronicle": "The Chronicle",
+        "ahead": "Days Ahead"
+      },
+      "EmptyMonthBanner": "No weather has been charted for this month. Set the skies below, or let the dice decide.",
+      "EventTitle": "Schedule Event",
+      "EventTime": "Time",
+      "EventLabel": "Label",
+      "EventLabelPh": "Optional short label…",
+      "KindNotification": "Notification",
+      "KindGraph": "Graph",
+      "NotifTextPh": "Notification text…",
+      "Audience": "Audience",
+      "AudienceGm": "DM only",
+      "AudienceAll": "Everyone",
+      "GraphCreate": "Create new graph",
+      "GraphPick": "Pick existing graph",
+      "EventGraphName": "Event - {date}",
+      "SaveEvent": "Save Event",
+      "CreateEvent": "Create Event",
+      "Cancel": "Cancel",
+      "NeedText": "Enter the notification text.",
+      "NeedGraph": "Pick a graph page.",
+      "CreateGraphFail": "Could not create the graph page.",
+      "SeasonsTitle": "Calendar Setup",
+      "TempMin": "Min Temp",
+      "TempMax": "Max Temp",
+      "SaveSeasons": "Save",
+      "ResetSeasons": "Reset to Defaults",
+      "EditGraph": "Open Graph Editor",
+      "MonthNames": "Month Names",
+      "MonthNamesHint": "Leave a field blank to keep the default month name.",
+      "SceneEffects": "Scene Effects",
+      "SceneEffectsHint": "Which weather effect plays on the active scene for each generated condition. Effects from any weather module you have installed appear here automatically.",
+      "EffectNone": "No effect",
+      "ConfigureEffects": "Configure effects…",
+      "EventToastKicker": "Calendar Event"
+    },
+    "Weather": {
+      "ProviderMissing": "The module providing this weather effect ({provider}) is not active."
+    },
+    "Deck": {
+      "Title": "Command Deck",
+      "Detach": "Detach window",
+      "Fullscreen": "Toggle fullscreen",
+      "NewTab": "New tab",
+      "CloseTab": "Close tab",
+      "CloseTabConfirm": "Close this tab? Its widgets will be removed.",
+      "AddWidget": "Add widget",
+      "ZoomIn": "Zoom in",
+      "ZoomOut": "Zoom out",
+      "ZoomToFit": "Zoom to fit",
+      "SearchWidgets": "Search widgets…",
+      "EmptyTitle": "This tab is empty",
+      "EmptyHint": "Click + to add a widget, or drag an actor, item, or journal entry here from the sidebar.",
+      "SaveFailed": "Command Deck could not be saved - changes are kept for this session only.",
+      "SendToDeck": "Send to Command Deck",
+      "ImportEntryMenu": "Import to Command Deck",
+      "ImportTarget": {
+        "Title": "Import to Command Deck",
+        "NewTab": "Import into a new tab",
+        "ExistingTab": "Import into an existing tab:",
+        "Confirm": "Import",
+        "Cancel": "Cancel"
+      },
+      "SentToDeck": "\"{name}\" added to the Command Deck.",
+      "AlreadyOnTab": "This page is already on the active tab.",
+      "UnknownWidget": "Unknown widget type",
+      "BrokenWidget": "This widget failed to render.",
+      "Import": {
+        "NewTabName": "Journals"
+      },
+      "Picker": {
+        "TitleJournals": "Add Journal Cards",
+        "TitlePages": "Add Page Cards",
+        "TitleActors": "Add Actors",
+        "TitleItems": "Add Items",
+        "Search": "Search…",
+        "Add": "Add to the active tab",
+        "Empty": "Nothing to add in this world."
+      },
+      "Menu": {
+        "Open": "Open",
+        "EditComment": "Edit Comment",
+        "Connect": "Connect to…",
+        "Delete": "Delete",
+        "ConvertToPin": "Convert to Pin",
+        "ConvertToReader": "Convert to Reader"
+      },
+      "Widgets": {
+        "DocPin": {
+          "Label": "Document Pin",
+          "CommentHint": "Add a comment…",
+          "OpenSheet": "Double-click opens sheet",
+          "OpenItem": "Double-click opens item",
+          "OpenEntry": "Double-click opens entry",
+          "OpenScene": "Double-click opens scene",
+          "OpenMacro": "Double-click opens macro",
+          "OpenTable": "Double-click opens table"
+        },
+        "Launcher": {
+          "Label": "StoryFlow Launcher",
+          "Kicker": "StoryFlow Scene",
+          "Start": "Start Scene",
+          "Entry": "Default entry point",
+          "DropHint": "Drop a StoryFlow graph page here",
+          "CommentHint": "What does this scene do?",
+          "Footer": "Plays for the whole table"
+        },
+        "Note": {
+          "Label": "Sticky Note",
+          "Placeholder": "Write a note…"
+        },
+        "ActorSheet": {
+          "Label": "Actor Sheet",
+          "Kicker": "Actor",
+          "Badge": "Statblock",
+          "Missing": "Actor not found",
+          "AC": "Armor Class",
+          "HP": "Hit Points",
+          "Speed": "Speed",
+          "Saves": "Saving Throws",
+          "Skills": "Skills",
+          "DamageImm": "Damage Immunities",
+          "DamageRes": "Damage Resistances",
+          "DamageVuln": "Damage Vulnerabilities",
+          "CondImm": "Condition Immunities",
+          "Senses": "Senses",
+          "Languages": "Languages",
+          "Challenge": "Challenge",
+          "Level": "Level",
+          "Prof": "Proficiency Bonus",
+          "Init": "Initiative",
+          "PassivePerception": "Passive Perception",
+          "Traits": "Traits",
+          "Actions": "Actions",
+          "Spellcasting": "Spellcasting",
+          "SpellDC": "Spell save DC",
+          "Slots": "Spell Slots",
+          "Cantrips": "Cantrips",
+          "Expand": "Show statblock",
+          "Collapse": "Show portrait only",
+          "OpenHint": "Double-click opens sheet",
+          "CommentPlaceholder": "Add a comment..."
+        },
+        "ItemCard": {
+          "Label": "Item Card",
+          "Kicker": "Item",
+          "Badge": "Item",
+          "Missing": "Item not found",
+          "Expand": "Show details",
+          "Collapse": "Show compact card",
+          "OpenHint": "Double-click opens sheet",
+          "CommentPlaceholder": "Add a comment...",
+          "Price": "Price",
+          "Weight": "Weight",
+          "Quantity": "Quantity",
+          "ToHit": "Attack",
+          "Damage": "Damage",
+          "Give": "Give Item",
+          "GiveTo": "Give to…",
+          "Characters": "Characters",
+          "Others": "NPCs & others",
+          "Given": "\"{item}\" given to {actor}",
+          "GiveNoTarget": "Choose who receives the item first.",
+          "GiveMissing": "Item not found"
+        },
+        "Rewards": {
+          "Label": "Rewards",
+          "Kicker": "Rewards",
+          "Badge": "GM",
+          "Gold": "Gold",
+          "XP": "XP",
+          "Rep": "Rep",
+          "Grant": "Grant",
+          "Add": "Add reward",
+          "Remove": "Remove",
+          "Award": "Give",
+          "Empty": "No rewards - click + to add.",
+          "UnitGold": "gp",
+          "UnitXp": "XP",
+          "UnitRep": "rep.",
+          "NoFactions": "No factions registered",
+          "Invalid": "Enter a valid amount first (reputation also needs a faction).",
+          "NoRecipient": "No matching character - pick a target first.",
+          "Granted": "Reward granted to {count} character(s).",
+          "AwardTitle": "Award: {label}",
+          "ModeAll": "All",
+          "ModeOne": "One",
+          "ModeSome": "Some",
+          "AllInfo": "Will be granted to the whole active party.",
+          "SelectAll": "Select all",
+          "SplitEvenly": "Split evenly among the selected",
+          "Cancel": "Cancel",
+          "Confirm": "Award",
+          "PickCharacter": "Pick a character",
+          "PickSome": "Pick at least one character",
+          "SumAll": "{amount} {unit} each - whole party ({count})",
+          "SumOne": "{amount} {unit} - {name}",
+          "SumSplit": "{total} {unit} ÷ {count} = {each} each",
+          "SumEach": "{amount} {unit} each × {count} = {total} total",
+          "LogGold": "received {amount} gp (GM grant)",
+          "LogXp": "received {amount} XP (GM grant)",
+          "LogRep": "{amount} {faction} reputation (GM grant)"
+        },
+        "EventLog": {
+          "Label": "Event Log",
+          "Kicker": "Log",
+          "Badge": "Log",
+          "JournalName": "Adventure Log",
+          "Empty": "No events yet.",
+          "More": "… {n} more in the journal (double-click opens it)",
+          "Dice": "dice",
+          "Rolled": "rolled {what}: {total}",
+          "Bought": "bought {item} ({price} gp)",
+          "Gained": "gained {item}",
+          "Lost": "lost {item}",
+          "Died": "died",
+          "Filter": {
+            "roll": "Show/hide dice rolls",
+            "purchase": "Show/hide purchases",
+            "item": "Show/hide item changes",
+            "death": "Show/hide deaths",
+            "reward": "Show/hide GM rewards"
+          }
+        },
+        "JournalPage": {
+          "Label": "Journal Page",
+          "Kicker": "Journal Page",
+          "Badge": "Page",
+          "ShowPlayers": "Show to players",
+          "Collapse": "Collapse",
+          "Expand": "Expand",
+          "Missing": "Journal page not found"
+        },
+        "JournalToc": {
+          "Label": "Journal",
+          "Kicker": "Journal",
+          "Pages": "{n} p.",
+          "Missing": "Journal not found",
+          "NoPages": "This journal has no pages.",
+          "AddPage": "Add to the active tab"
+        },
+        "GraphControl": {
+          "Label": "Graph Control",
+          "Kicker": "Graph Control",
+          "SearchPlaceholder": "Search graphs…",
+          "AllCategories": "All",
+          "AddTooltip": "Add graphs to this panel",
+          "AddSearchPlaceholder": "Search all graphs…",
+          "StartTooltip": "Start this graph now",
+          "StopTooltip": "Stop this run",
+          "ConfirmStop": "Confirm?",
+          "EnabledTooltip": "Enabled - triggers may start this graph",
+          "DisabledTooltip": "Disabled - triggers are ignored",
+          "MissedN": "missed {n}",
+          "MissedTooltip": "Triggers suppressed while disabled - click to clear",
+          "RemoveFromPanel": "Remove from panel",
+          "OpenEditorTooltip": "Open in graph editor",
+          "ManualPill": "manual",
+          "ManualTooltip": "No trigger - runs only when you press Start",
+          "AddDragHint": "…or drag a graph from this list onto the panel",
+          "MoveToCategory": "Move to: {name}",
+          "ClearCategory": "Remove from category",
+          "NewCategoryAssign": "New category…",
+          "EntryTooltip": "Graph entry point",
+          "EntryN": "Entry {n}",
+          "SetAsEntry": "Set as graph entry"
+        },
+        "PassiveWisdom": {
+          "Label": "Passive Wisdom Check",
+          "Kicker": "Passive Wisdom Check",
+          "MinWisdom": "Minimum Passive Wisdom",
+          "PlayersShown": "Players Shown",
+          "ScopeAll": "All Characters",
+          "ScopeActive": "Active Only",
+          "Online": "Online",
+          "Offline": "Offline",
+          "LegendPass": "Notices (≥ min)",
+          "LegendFail": "Oblivious (< min)",
+          "Empty": "No player characters to show."
+        },
+        "Audio": {
+          "SoundLabel": "Audio Cue",
+          "SoundBadge": "Audio",
+          "PlaylistLabel": "Playlist",
+          "PlaylistBadge": "Playlist",
+          "Play": "Play",
+          "Stop": "Stop",
+          "Playing": "Playing",
+          "PlayingLoop": "Playing · loop",
+          "Stopped": "Stopped",
+          "PrevTrack": "Previous track",
+          "NextTrack": "Next track",
+          "TrackList": "Track list",
+          "TrackPos": "Track {i} of {n}",
+          "NoTracks": "No tracks in this playlist.",
+          "Missing": "Audio not found"
+        }
+      }
+    }
+  },
+  "GM_PANEL": {
+    "SceneDashboard": {
+      "Title": "Scene Dashboard",
+      "Empty": "No tokens on this scene.",
+      "NoScene": "No active scene.",
+      "Tokens": "tokens",
+      "Select": "Select & pan to token",
+      "Ping": "Ping location",
+      "ToggleHidden": "Toggle token visibility",
+      "OpenSheet": "Open actor sheet"
+    }
+  }
+}

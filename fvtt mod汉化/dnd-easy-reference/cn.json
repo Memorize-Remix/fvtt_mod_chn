@@ -1,4 +1,5 @@
-{"DND": {
+{
+  "DND": {
     "DIALOG": {
       "APPLY": "应用",
       "ATTRIBUTES": "属性",
@@ -7,16 +8,16 @@
       "COMBINATION": "组合",
       "CONCENTRATION": "专注",
       "CONFIRM": "确认",
-	  "COPPER": "铜币",
+      "COPPER": "铜币",
       "DAMAGE_ADD": "添加伤害部分",
       "DAMAGE_PARTS": "伤害部分",
       "DAMAGE_TYPES": "伤害类型",
       "DC": "DC",
       "DELETE": "删除",
-	  "EACH": "每位角色",
+      "EACH": "每位角色",
       "EXTENDED": "扩展",
       "FORMULA": "公式",
-	  "GOLD": "金币",
+      "GOLD": "金币",
       "NAME_FORMAT": {
         "CAPITALIZE": "首字母大写",
         "LABEL": "名称格式",
@@ -28,13 +29,13 @@
       "PLACEHOLDER": "",
       "RULES_SEARCH": "规则",
       "SELECT_ATTRIBUTE": "选择属性",
-	  "SILVER": "银币",
+      "SILVER": "银币",
       "TYPES": "类型",
       "USE_NAME": "角色名称",
-	  "XP": "经验值",
-	  "AWARD_EXPERIENCE": "经验",
-	  "AWARD_CURRENCY": "货币",
-	  "AWARD_OPTIONS": "选项"
+      "XP": "经验值",
+      "AWARD_EXPERIENCE": "经验",
+      "AWARD_CURRENCY": "货币",
+      "AWARD_OPTIONS": "选项"
     },
     "DETECT": {
       "TITLE": "识别模式",
@@ -51,65 +52,91 @@
     },
     "MENU": {
       "ABILITIES": {
-        "TITLE": "属性"
+        "SETTING_NAME": "显示属性",
+        "TITLE": "显示属性"
       },
       "AREATARGETTYPES": {
+        "SETTING_NAME": "显示区域目标类型",
         "TITLE": "区域目标类型"
       },
       "ATTACK": {
+        "SETTING_NAME": "显示攻击公式",
         "TITLE": "攻击公式"
       },
-	  "AWARD": {
-        "TITLE": "奖励",
-		"HINT": "在编辑中显示奖励菜单"
+      "AWARD": {
+        "SETTING_NAME": "显示奖励",
+        "TITLE": "奖励"
       },
       "CHECKS": {
+        "SETTING_NAME": "显示检定",
         "TITLE": "检定"
       },
       "CONDITIONTYPES": {
+        "SETTING_NAME": "显示状态",
         "TITLE": "状态"
       },
       "CREATURETYPES": {
+        "SETTING_NAME": "显示生物类型",
         "TITLE": "生物类型"
       },
       "DAMAGE": {
+        "SETTING_NAME": "显示伤害公式",
         "TITLE": "伤害公式"
       },
       "DAMAGETYPES": {
+        "SETTING_NAME": "显示伤害类型",
         "TITLE": "伤害类型"
       },
       "DESCRIPTION": "选择要在ProseMirror中显示的菜单。",
       "DETECTPATTERNS": {
+        "SETTING_NAME": "显示模式检测",
         "TITLE": "模式识别"
       },
       "DIALOG": "配置富文本编辑器",
       "HEAL": {
+        "SETTING_NAME": "显示治疗公式",
         "TITLE": "治疗公式"
       },
       "ITEMPROPERTIES": {
+        "SETTING_NAME": "显示法术属性",
         "TITLE": "法术属性"
       },
       "LOOKUP": {
+        "SETTING_NAME": "显示查询",
         "TITLE": "查找"
       },
       "RULES": {
+        "SETTING_NAME": "显示规则",
         "TITLE": "规则"
       },
       "SAVES": {
+        "SETTING_NAME": "显示豁免检定",
         "TITLE": "豁免检定"
       },
       "SKILLS": {
+        "SETTING_NAME": "显示技能",
         "TITLE": "技能"
       },
       "STYLE": {
         "ADVICE": "建议",
         "ADVICE_CONTENT": "这是一个建议块。",
         "ADVICE_TITLE": "建议",
+        "HABITAT_TREASURE": "栖息地/宝藏",
+        "HABITAT_TREASURE_TITLE_HABITAT": "栖息地",
+        "HABITAT_TREASURE_CONTENT_HABITAT": "栖息地",
+        "HABITAT_TREASURE_TITLE_TREASURE": "宝藏",
+        "HABITAT_TREASURE_CONTENT_TREASURE": "宝藏",
         "NARRATIVE": "叙事",
         "NOTABLE": "显著",
+        "PULL_QUOTE_AUTHOR": "作者",
+        "PULL_QUOTE_CONTENT": "在此输入引文",
+        "PULL_QUOTE_LEFT": "左对齐引言",
+        "PULL_QUOTE_RIGHT": "右对齐引言",
+        "PULL_QUOTE_SOURCE": "来源",
         "QUEST": "任务",
         "QUEST_CONTENT": "这是一个任务块。",
         "QUEST_TITLE": "任务",
+        "SETTING_NAME": "显示样式",
         "TITLE": "样式",
         "TREASURE": "宝藏",
         "TREASURE_CONTENT": "这是一个宝藏块。",
@@ -120,6 +147,7 @@
         "TITLE": "工具"
       },
       "WEAPONMASTERIES": {
+        "SETTING_NAME": "显示武器精通",
         "TITLE": "武器精通"
       }
     },
@@ -128,15 +156,6 @@
         "LONG": "长格式",
         "SHORT": "短格式",
         "TITLE": "格式"
-      },
-      "MENU": {
-        "HINT": "配置D&D菜单中显示的项目",
-        "LABEL": "配置菜单项目",
-        "TITLE": "菜单配置"
-      },
-      "PROSEGAP": {
-        "HINT": "减少间隙以防止ProseMirror在添加D&D菜单时分成两行。",
-        "TITLE": "ProseMirror间隙减少"
       }
     }
   }

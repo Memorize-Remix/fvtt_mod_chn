@@ -1,4 +1,5 @@
-{"rnk-illumination": {
+{
+  "rnk-illumination": {
     "keybindings": {
       "targetHovered": {
         "name": "目标悬停Token",
@@ -10,6 +11,7 @@
       "hubAccessWarn": "只有 GM 或指定的副 GM 可以打开照明中心。",
       "hubAccessDenied": "只有 GM 或指定的副 GM 可以访问照明中心。",
       "hubSubmitDenied": "只有 GM 或指定的副 GM 可以修改照明设置。",
+      "objectNotFound": "在当前画布上找不到该场景对象。",
       "settingsUpdated": "照明设置已更新。",
       "settingsSaveFailed": "保存照明设置失败。请查看控制台获取详细信息。"
     },
@@ -17,6 +19,10 @@
       "main": {
         "name": "启用照明效果",
         "hint": "切换Token照明效果的开启/关闭"
+      },
+      "targetingEnabled": {
+        "name": "启用瞄准显示",
+        "hint": "关闭瞄准线和目标标记，同时保持 Token 发光效果开启"
       },
       "gmOrigin": {
         "name": "GM 目标来源Token ID"
@@ -34,6 +40,17 @@
         "adminSubtitle": "GM 和副 GM 用户可以在此界面配置他们的照明设置。",
         "authorizedUsers": "RNK 授权用户",
         "noActor": "无角色",
+        "configuredObjects": "已配置的场景对象",
+        "editObject": "编辑",
+        "clearObject": "清除",
+        "noConfiguredObjects": "当前没有场景对象具有自定义照明。",
+        "searchObjects": "搜索对象...",
+        "filterAllObjects": "所有对象",
+        "filterTiles": "图块",
+        "filterDrawings": "绘图",
+        "filterWalls": "墙壁",
+        "filterLights": "光源",
+        "objectCount": "个对象",
         "color": "照明颜色",
         "effect": "效果样式",
         "effectDisabled": "无（禁用）",
@@ -43,6 +60,7 @@
         "intensity": "效果强度",
         "range": "效果范围",
         "rangeLabel": "范围：",
+        "targetingEnabled": "显示瞄准线和目标标记",
         "assignedToken": "已分配的Token",
         "autoOwnedToken": "自动（所属Token）",
         "noUsersConnected": "没有其他用户连接。",
@@ -64,6 +82,17 @@
         "assignNone": "无（默认所有者）",
         "assignConfirm": "分配",
         "assignCancel": "取消"
+      },
+      "tile": {
+        "configure": "配置图块照明",
+        "dialogTitle": "图块照明",
+        "save": "保存",
+        "clear": "清除",
+        "cancel": "取消"
+      },
+      "object": {
+        "dialogTitle": "照明",
+        "configure": "配置照明"
       }
     }
   }

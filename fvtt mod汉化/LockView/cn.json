@@ -1,4 +1,5 @@
-{"LOCKVIEW": {
+{
+    "LOCKVIEW": {
         "Help": "帮助",
         "Settings": {
             "ShowHideUI": "显示/隐藏UI",
@@ -15,6 +16,8 @@
             "CycleViewboxes_Hint": "在启用编辑视图框时循环切换视图框。",
             "MouseViewboxControl": "鼠标视图框编辑",
             "MouseViewboxControl_Hint": "启用通过右键拖动和使用鼠标滚轮编辑视图框。如果启用，在启用编辑视图框控件时将无法平移或缩放。",
+            "EditViewbox": "切换视图框编辑",
+            "EditViewbox_Hint": "开启或关闭「编辑视图框」设置",
             "PingPan": {
                 "Label": "画布平移至Ping行为",
                 "Hint": "配置当控制用户使用画布平移至Ping功能且（缩放和/或平移）锁已应用时的行为。",
@@ -172,7 +175,7 @@
                 "Players": "玩家框",
                 "Sidebar": "侧边栏",
                 "ChatNotifications": "聊天通知",
-                "CameraViews": "摄像机视图"
+                "CameraViews": "AV Dock"
             },
             "ForceInitialView": {
                 "Label": "强制初始视图",
@@ -192,6 +195,17 @@
                 "NoChange": "无变化",
                 "Collapse": "折叠",
                 "Expand": "展开"
+            },
+            "AVDock": {
+                "Label": "音频/视频停靠栏",
+                "Label_Abbr": "AV Dock",
+                "Hint": "配置音频/视频停靠栏。",
+                "ExcludeDock": "排除停靠栏",
+                "ExcludeDock_Hint": "在使用视图框确定玩家视图以及配置「自动缩放」时排除停靠栏。",
+                "BlackenDock": "停靠栏黑化",
+                "BlackenDock_Hint": "移除停靠栏的透明度，防止用户看到其后面的内容。",
+                "OnSceneLoad": "场景加载时",
+                "OnSceneLoad_Hint": "配置场景加载时停靠栏的行为。折叠、展开或保持原样。"
             },
             "ExpandToSeeMore": "展开查看更多。",
             "CollapseExpandAll": "折叠或展开全部",
@@ -216,6 +230,11 @@
             "Hint_B": "应用到所选用户。",
             "Pan": "平移",
             "Zoom": "缩放",
+            "Disabled": "禁用",
+            "HorizontalView": "水平视图",
+            "VerticalView": "垂直视图",
+            "AutomaticInner": "自动（内部）",
+            "AutomaticOuter": "自动（外部）",
             "ButtonTitle": "克隆视图配置",
             "ButtonHint": "配置克隆视图时的行为。",
             "DialogContent": "克隆视图将覆盖平移和缩放锁定，确定要继续吗？",

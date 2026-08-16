@@ -1,0 +1,114 @@
+{
+  "BMO": {
+    "menu": {
+      "name": "Batch Media Optimizer",
+      "label": "打开优化器",
+      "hint": "扫描世界并将图片转换为 WebP（视频转换为 WebM），然后重新指向引用。"
+    },
+    "settings": {
+      "quality": {
+        "name": "WebP 质量",
+        "hint": "有损 WebP 质量，取值范围 0.3 到 1.0。数值越高细节保留越多，但文件更大。回填与上传时转换均使用此设置。"
+      },
+      "maxDimension": {
+        "name": "最大尺寸（像素）",
+        "hint": "将最长边超过该像素数的图片和视频缩小。0 表示不缩小。WebP 的硬上限为 16383 像素。"
+      },
+      "losslessPngAlphaUnder": {
+        "name": "无损 PNG 透明图上限（像素）",
+        "hint": "最长边小于该尺寸的透明 PNG 将使用无损编码（适合 Token/图标）。0 表示禁用。"
+      },
+      "videoQuality": {
+        "name": "视频质量",
+        "hint": "VP9 质量，取值范围 0.3 到 1.0，映射为每像素比特率目标。数值越高细节保留越多，但文件更大。用于回填期间的 MP4/MOV → WebM 转换。"
+      },
+      "audioQuality": {
+        "name": "音频质量",
+        "hint": "Opus 质量，取值范围 0.3 到 1.0，映射为比特率目标。数值越高细节保留越多，但文件更大。用于回填期间的音频 → Ogg/Opus 转换。"
+      },
+      "uploadOptimize": {
+        "name": "上传时优化",
+        "hint": "通过 Foundry 上传时自动将 PNG/JPG 图片转换为 WebP。"
+      },
+      "includeItems": {
+        "name": "包含物品美术",
+        "hint": "回填时同时优化世界物品图片与角色持有的物品图片。"
+      },
+      "includeImages": {
+        "name": "包含图片",
+        "hint": "回填时将 PNG/JPG 图片转换为 WebP。取消勾选（同时勾选视频）可仅处理视频。"
+      },
+      "includeVideo": {
+        "name": "包含视频",
+        "hint": "回填时同时将 MP4/MOV 视频（场景背景、视频图块、动画 Token）转换为 WebM。编码速度远慢于图片；音频会被丢弃。"
+      },
+      "includeAudio": {
+        "name": "包含音频",
+        "hint": "回填时同时将音频（播放列表音效、场景环境音）转换为 Ogg/Opus。注意：Ogg 可在 Foundry 客户端及 Chrome/Firefox 中播放，但 Safari 不支持。"
+      },
+      "includePackages": {
+        "name": "转换模组/系统资产（有风险）",
+        "hint": "默认关闭。开启后，回填时也会转换 modules/ 与 systems/ 目录下被引用的媒体。模组更新可能会覆盖原始文件并删除转换后的副本，导致引用失效。仅处理被文档引用的媒体；Foundry 核心资产绝不会被转换。"
+      }
+    },
+    "app": {
+      "title": "Batch Media Optimizer",
+      "scopeLegend": "扫描范围",
+      "scopeScenes": "场景（背景、图块、Token、绘图、笔记）",
+      "scopeActors": "角色（头像、原型 Token）",
+      "scopeJournal": "日志（图片页、内嵌图片）",
+      "scopeItems": "物品美术",
+      "mediaLegend": "媒体类型",
+      "mediaImages": "图片（PNG/JPG → WebP）",
+      "mediaVideo": "视频（MP4/MOV → WebM，较慢）",
+      "mediaAudio": "音频（MP3/WAV/… → Ogg/Opus）",
+      "mediaHint": "取消勾选类型以运行子集——例如关闭图片、开启音频，仅处理音频。",
+      "scopePackages": "同时转换模组/系统资产（风险自负）",
+      "packagesHint": "默认关闭。开启后，也会转换 modules/ 与 systems/ 目录下随包分发的被引用媒体。风险：模组/系统更新可能会覆盖原始文件并删除转换后的副本，导致引用失效。仅处理被引用的媒体；Foundry 核心资产绝不会被转换。",
+      "convertLegend": "转换选项",
+      "videoNote": "视频重新编码（VP9）虽经硬件加速，但仍远慢于图片——每个片段预计耗时数秒到数分钟。音频会被丢弃。",
+      "audioNote": "音频将重新编码为 Opus 并封装为 Ogg。效率最佳且支持广泛；但无法在 Safari 中播放。",
+      "working": "处理中……",
+      "statConverted": "待转换",
+      "statSkipped": "已优化",
+      "statErrors": "错误",
+      "statDocs": "文档更新",
+      "statSaved": "节省",
+      "fileListSummary": "逐文件计划",
+      "selectAll": "全选 / 全不选",
+      "colFile": "文件",
+      "colStatus": "状态",
+      "colSource": "源",
+      "colOutput": "优化后",
+      "colSaved": "节省",
+      "repointFailTitle": "未生效的文档更新",
+      "repointFailHint": "优化后的文件已写入，但以下文档字段无法重新指向（写入被拒绝或静默忽略）。它们的引用仍指向原始文件。请手动重新关联，或反馈所显示的字段名。",
+      "cleanupTitle": "已孤立的原始文件",
+      "cleanupHint": "这些原始文件已有优化副本，且不再被引用。Foundry 没有文件删除 API，请在验证世界无误后手动删除。",
+      "btnScan": "扫描并试运行",
+      "btnApply": "应用（转换 + 重新指向）",
+      "btnCancel": "取消",
+      "btnCleanup": "清理报告",
+      "btnReset": "重置",
+      "confirmTitle": "应用优化？",
+      "confirmBody": "此操作将上传优化副本（WebP/WebM）并更新文档引用。请先对世界进行全新备份。原始文件会被保留。是否继续？",
+      "applyDone": "已优化 {n} 个文件，节省 {saved}。",
+      "cancelled": "运行已取消。已写入的文件被保留。",
+      "skippedNote": "已跳过 {n} 个引用（只读或不支持的后端）——请查看控制台。",
+      "error": "优化器错误：{msg}"
+    },
+    "phase": {
+      "convert": "正在转换",
+      "repoint": "正在更新引用"
+    },
+    "status": {
+      "pending": "待处理",
+      "uploaded": "已转换",
+      "converted-dry": "将转换",
+      "estimated-dry": "将转换（估算）",
+      "skipped-existing": "已优化",
+      "skipped-larger": "保留（输出更大）",
+      "error": "错误"
+    }
+  }
+}

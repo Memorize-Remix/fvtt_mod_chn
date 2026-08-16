@@ -1,0 +1,860 @@
+{
+  "gm-runic-items": {
+    "panel": {
+      "title": "Solvarian Runecraft",
+      "power": "Runic Power",
+      "empowerment": "Runic Empowerment",
+      "empowermentHint": "each inscription adds +1 to the chosen stat",
+      "legacy": "Runic Legacy",
+      "feat": "Feat",
+      "spell": "Spell"
+    },
+    "rarity": {
+      "Common": "Common",
+      "Uncommon": "Uncommon",
+      "Rare": "Rare",
+      "VeryRare": "Very Rare",
+      "Legendary": "Legendary"
+    },
+    "picker": {
+      "title": "Which target?",
+      "intro": "{item} hit more than one target. Choose which one its runes affect.",
+      "away": "{distance} {unit} away",
+      "declined": "No rune effects were applied from {item}.",
+      "remove": "Remove",
+      "searchFeats": "Search feats...",
+      "searchSpells": "Search spells...",
+      "loading": "Loading compendium data...",
+      "showingFirst": "Showing first {limit} of {total} - type to filter",
+      "countAvailable": "{total} {type} available",
+      "noMatch": "No {type} match \"{query}\"",
+      "typeFeats": "feats",
+      "typeSpells": "spells",
+      "featInscribed": "Feat inscribed into this item.",
+      "spellInscribed": "Level {level} spell inscribed into this item."
+    },
+    "notify": {
+      "legacyGranted": "Runic Legacy: \"{name}\" granted to {actor}.",
+      "legacyEquipRequired": "Runic Legacy: \"{item}\" must be equipped for the grant to take effect.",
+      "legacyAttuneRequired": "Runic Legacy: \"{item}\" must be equipped and attuned for the grant to take effect.",
+      "grantedBy": "Granted by {item}",
+      "cacheCleared": "[Runic Items] Compendium cache cleared.",
+      "cacheReady": "[Runic Items] Cache ready - {feats} feats, {spells} spells across {packs} packs."
+    },
+    "settings": {
+      "minRoleToEdit": {
+        "name": "Minimum Role to Edit Runes",
+        "hint": "The lowest user role that can open rune pickers and assign runes. Roles at or above the selected level have access. For example, selecting Trusted also grants access to Assistant GM and GM. Defaults to Game Master only."
+      },
+      "cacheInfo": {
+        "name": "Compendium Cache",
+        "hint": "Feats and spells are indexed from loaded compendiums on first use. Use the buttons below to manage the cache manually."
+      },
+      "cacheLabel": "Compendium Cache",
+      "clearCache": "Clear Cache",
+      "refreshCache": "Refresh Cache",
+      "refreshing": "Refreshing...",
+      "cacheNotes": "Feats and spells are indexed from loaded compendiums on first use each session. Clear empties the cache. Refresh clears and rebuilds from currently loaded compendiums.",
+      "automationMode": {
+        "name": "Rune Automation",
+        "hint": "Automatic resolves rune effects instantly. Manual posts a chat card for each effect (damage, movement, status, saving throws) so a GM or player applies it with a click, similar to how a normal dnd5e attack's damage sits in chat until applied.",
+        "auto": "Automatic",
+        "manual": "Manual (chat cards)"
+      },
+      "narrateUntargeted": {
+        "name": "Describe untargeted rune attacks",
+        "hint": "When an attack with a runed weapon has nothing targeted, post a chat card describing what its runes would have done, with the dice already rolled, so the GM can apply it by hand. A natural 1 is never described."
+      }
+    },
+    "presets": {
+      "save": "Save Preset",
+      "load": "Load Preset",
+      "dialogTitle": "Save Rune Preset",
+      "namePlaceholder": "Preset name...",
+      "saved": "Preset \"{name}\" saved.",
+      "applied": "Preset \"{name}\" applied.",
+      "deleted": "Preset \"{name}\" deleted.",
+      "empty": "No saved presets for this item type.",
+      "settingsTitle": "Rune Presets",
+      "settingsHint": "View and delete saved rune preset configurations.",
+      "delete": "Delete",
+      "melee": "Melee",
+      "ranged": "Ranged",
+      "armor": "Armor",
+      "noneForCategory": "No {category} presets saved yet.",
+      "confirmDelete": "Delete preset \"{name}\"?",
+      "metaEmp": "Empowerment inscriptions: {count}",
+      "metaFeat": "Feat inscribed",
+      "metaSpell": "Spell inscribed"
+    },
+    "combo": {
+      "label": "Combo",
+      "description": {
+        "ember-surge": "On an Emberbrand crit, Ruinmark's AC crack applies to all attacks while the target burns and Forgebell calls all nearby allies forward at once.",
+        "rift-break": "When Stonecleft lands, Sandgrasp triggers with no save and Mirageward shields the entire party from opportunity attacks for the round.",
+        "crystal-anchor": "Undertow's pull triggers Sandhold automatically, dropping speed to zero, while Burntrace's disorientation extends to all ability checks.",
+        "blight-field": "The Ashcloud follows the blighted target as they move. Anyone in the cloud loses cover and invisibility.",
+        "ironwall": "Emberveil's push triggers Wardpulse with no save, and Forgeshield's AC bonus extends to all allies within {radius} {unit}.",
+        "morrains-resolve": "Guardian's Rush becomes a free action. The defender rushes to protect allies without spending their reaction."
+      }
+    },
+    "crack": {
+      "statOverCap": "{stats} over cap (30)",
+      "featMissing": "Feat no longer found in compendiums",
+      "spellMissing": "Spell no longer found in compendiums",
+      "featDuplicate": "Feat already granted by {item}",
+      "spellDuplicate": "Spell already granted by {item}"
+    },
+    "combat": {
+      "emberveil": {
+        "pushed": "{attacker} is repelled by {target}'s Emberveil for {distance} {unit} and cannot re-enter their space."
+      },
+      "forgeshield": {
+        "allies": "Allies within {radius} {unit} of {target} gain +2 AC for 2 rounds from the Forgeshield."
+      },
+      "wardpulse": {
+        "blocked": "{attacker} fails the CON save and loses their bonus action.",
+        "resisted": "{attacker} resists the Wardpulse."
+      },
+      "vanguard": {
+        "dialogTitle": "Vanguard - Guardian's Rush",
+        "dialogContent": "<p>{actor}: use Guardian's Rush to protect {ally}?</p>",
+        "dialogFreeAction": "<p>{actor}: use Guardian's Rush (free action) to protect {ally}?</p>",
+        "noPosition": "{actor} could not find a valid adjacent position.",
+        "rushed": "{actor} rushes to protect {ally}. {attacker} suffers disadvantage on all attacks until end of round.",
+        "partial": "{actor} rushes toward {ally} but cannot close the distance in time. {attacker} suffers no penalty."
+      },
+      "stonewarden": {
+        "flared": "{name}'s Stonewarden rune flares, restoring {total} HP as they fall below half health.",
+        "prone": "Stonewarden pulses as {name} falls prone while wounded, restoring {total} HP."
+      },
+      "ashenmantle": {
+        "erupted": "{name}'s Ashen Mantle erupts. They gain resistance to all damage and cannot be moved or knocked prone this round."
+      },
+      "stonecleft": {
+        "pushed": "{target} is pushed {distance} {unit} and staggered by Stonecleft.",
+        "resisted": "{target} resists the Stonecleft.",
+        "autofail": "{target} is shattered back {distance} {unit} by a critical Stonecleft strike."
+      },
+      "mirageward": {
+        "active": "Mirageward flickers around {target}. They cannot make opportunity attacks until {attacker}'s next turn."
+      },
+      "emberbrand": {
+        "ignited": "{target} is branded with ember fire. Allies who hit them deal extra {die} {dtype} until {actor}'s next turn.",
+        "tick": "{name} takes {total} additional {dtype} damage from Emberbrand."
+      },
+      "sandgrasp": {
+        "seized": "Desert grasp seizes {target}. Their speed is reduced by {penalty} {unit}.",
+        "resisted": "{target} resists the Sandgrasp."
+      },
+      "ruinmark": {
+        "cracked": "{target}'s guard is cracked by Ruinmark. AC -2 for {rounds} rounds."
+      },
+      "forgebell": {
+        "rang": "Forgebell rings. {ally} may use their reaction to move up to {distance} {unit} toward the target.",
+        "moved": "Forgebell rings. {ally} automatically moves {distance} {unit} toward {target}, with {remaining} {unit} of the reaction move remaining for {ally} to use.",
+        "blocked": "Forgebell rings, but {ally} has no clear path toward {target}. The full {distance} {unit} reaction move remains available.",
+        "dialogTitle": "Forgebell - Reaction",
+        "anAlly": "an ally",
+        "noAllies": "no allies in range",
+        "nearbyAllies": "nearby allies"
+      },
+      "burntrace": {
+        "marked": "{target} is marked by Burntrace and suffers disadvantage on attacks for 1 round."
+      },
+      "sandhold": {
+        "held": "{target}'s movement is reduced by {penalty} {unit} from Sandhold."
+      },
+      "ashcloud": {
+        "erupted": "Ashcloud erupts. Creatures in the cloud must save or be poisoned.",
+        "failed": "{name} fails the save and takes {total} poison damage."
+      },
+      "undertow": {
+        "pulled": "{target} is dragged {distance} {unit} toward the impact by Undertow."
+      },
+      "scorcheye": {
+        "stripped": "Scorcheye strips {target}'s concealment. They cannot use cover or invisibility until your next turn."
+      },
+      "wasteblight": {
+        "poisoned": "{target} is infected by Wasteblight. Nearby creatures risk spreading corruption.",
+        "spread": "{name} fails the save and takes {total} poison damage from spreading Wasteblight.",
+        "resisted": "{name} resists the Wasteblight spread."
+      }
+    },
+    "effects": {
+      "emberveilBlocked": "Repelled by Emberveil. Cannot move into {target}'s space until the end of the round.",
+      "wardpulseBlock": "Bonus action is blocked this round by Wardpulse.",
+      "forgeshield": "AC increased by 2 for 2 rounds from the Forgeshield aura.",
+      "vanguardDisadvantage": "Disadvantage on all attack rolls until the end of the round due to Guardian's Rush.",
+      "stonecleft": "Movement speed is halved until the end of the round due to Stonecleft.",
+      "mirageward": "Cannot make opportunity attacks until {attacker}'s next turn due to Mirageward.",
+      "ruinmark": "AC reduced by 2 for {rounds} round(s) due to Ruinmark.",
+      "emberbranded": "Marked by Emberbrand. Allies who hit this creature deal an extra {die} {dtype} damage.",
+      "sandgrasp": "Movement speed reduced by {penalty} {unit} due to Sandgrasp.",
+      "burntrace": "Marked by Burntrace. Disadvantage on attack rolls for 1 round.",
+      "burntraceAnchored": "Marked by Burntrace. Disadvantage on attack rolls and ability checks for 1 round.",
+      "sandhold": "Movement speed reduced by {penalty} {unit} due to Sandhold.",
+      "sandholdAnchored": "Movement speed reduced to 0 due to Sandhold (Anchored).",
+      "scorcheye": "Concealment stripped by Scorcheye. Cannot benefit from cover or invisibility for 1 round.",
+      "scorcheyeBlightField": "Concealment stripped by Scorcheye while standing in the blight field. Cannot benefit from cover or invisibility.",
+      "wasteblight": "Infected by Wasteblight and poisoned. Adjacent creatures risk catching the corruption at the start of each of their turns.",
+      "ashenmantleResistance": "Resistance to all damage types this round due to Ashen Mantle.",
+      "ashenmantleImmovable": "Cannot be moved, pushed, or knocked prone this round due to Ashen Mantle.",
+      "armorAc": "AC increased by {bonus} due to Runic Ward."
+    },
+    "common": {
+      "close": "Close",
+      "cancel": "Cancel",
+      "confirm": "Confirm"
+    },
+    "effectNames": {
+      "emberveilBlocked": "Emberveil Blocked",
+      "bonusActionBlocked": "Bonus Action Blocked",
+      "forgeshield": "Forgeshield",
+      "vanguardDisadvantage": "Guardian's Rush Disadvantage",
+      "stonecleft": "Staggered (Stonecleft)",
+      "mirageward": "Mirageward",
+      "miragewardParty": "Mirageward (Party)",
+      "ruinmark": "Ruinmark (AC Cracked)",
+      "emberbranded": "Emberbranded",
+      "sandgrasp": "Sandgrasp",
+      "burntrace": "Burntrace",
+      "burntraceAnchored": "Burntrace (Anchored)",
+      "sandhold": "Sandhold",
+      "sandholdAnchored": "Sandhold (Anchored)",
+      "scorcheye": "Scorcheye",
+      "scorcheyeBlightField": "Scorcheye (Blight Field)",
+      "wasteblight": "Wasteblight",
+      "ashenmantle": "Ashen Mantle",
+      "ashenmantleImmovable": "Ashen Mantle (Immovable)",
+      "armorAc": "Runic Ward ({item})",
+      "empowerment": "Runic Empowerment ({item})"
+    },
+    "saves": {
+      "wardpulse": "Wardpulse (DC {dc})",
+      "stonecleft": "Stonecleft (DC {dc})",
+      "sandgrasp": "Sandgrasp (DC {dc})",
+      "ashcloud": "Ashcloud (DC {dc})",
+      "wasteblight": "Wasteblight Spread (DC {dc})"
+    },
+    "engine": {
+      "saveFlavor": "{rune} (DC {dc})",
+      "resisted": "{name} resists {rune}.",
+      "pushed": "{name} is pushed {distance} {unit} away.",
+      "pulled": "{name} is dragged {distance} {unit}.",
+      "moveBlocked": "{name} cannot be moved. No clear path.",
+      "damaged": "{name} takes {total} {type} damage.",
+      "damagedHalf": "{name} takes {total} {type} damage (halved by the save).",
+      "healed": "{name} regains {total} HP.",
+      "tempHp": "{name} gains {total} temporary HP.",
+      "status": "{name} is {status}.",
+      "reminder": "{name}: {text}.",
+      "cloud": "{rune} leaves a lingering cloud at the impact point.",
+      "cloudTick": "{name} fails the save and takes {total} damage inside the {rune} cloud.",
+      "light": "{name} sheds bright light in a {radius} {unit} radius.",
+      "lightDesc": "Shedding bright light from {rune}.",
+      "statAcBonus": "{name} gains +2 AC.",
+      "statAcBonusDesc": "AC increased by 2 due to {rune}.",
+      "statAcPenalty": "{name} has their AC reduced by 2.",
+      "statAcPenaltyDesc": "AC reduced by 2 due to {rune}.",
+      "statSpeedPenalty": "{name} has their speed reduced by {penalty} {unit}.",
+      "statSpeedPenaltyDesc": "Movement speed reduced by {penalty} {unit} due to {rune}.",
+      "statSpeedHalf": "{name} has their movement halved.",
+      "statSpeedHalfDesc": "Movement speed halved due to {rune}.",
+      "statSpeedZero": "{name} has their speed reduced to 0.",
+      "statSpeedZeroDesc": "Movement speed reduced to 0 due to {rune}.",
+      "statDisadvAttack": "{name} suffers disadvantage on attack rolls.",
+      "statDisadvAttackDesc": "Disadvantage on attack rolls due to {rune}. Enforced automatically with midi-qol; otherwise a reminder.",
+      "statInitAdv": "{name} rolls initiative with advantage.",
+      "statInitAdvDesc": "Advantage on initiative due to {rune}.",
+      "statResistAll": "{name} gains resistance to all damage.",
+      "statResistAllDesc": "Resistance to all damage types due to {rune}.",
+      "statDisadvCheck": "{name} suffers disadvantage on ability checks.",
+      "statDisadvCheckDesc": "Disadvantage on ability checks due to {rune}. Automated in core dnd5e 4.1+; midi-qol flag included.",
+      "lastsRound": "Lasts 1 round.",
+      "lastsRounds": "Lasts {rounds} rounds.",
+      "brand": "{name} is branded: hits against them deal an extra {die} damage.",
+      "brandDesc": "Hits against this creature deal an extra {die} damage ({rune}).",
+      "brandTick": "{name} takes {total} extra damage from {rune}.",
+      "contagion": "{name} becomes contagious.",
+      "contagionDesc": "Creatures ending their turn adjacent to this creature must save or be afflicted ({rune}).",
+      "contagionSpread": "{name} is afflicted by {rune} and takes {total} damage.",
+      "contagionResisted": "{name} resists {rune}.",
+      "allyDashNone": "The rune calls out, but no ally is in range to answer (up to {distance} {unit}).",
+      "allyDashPick": "Choose an ally to move up to {distance} {unit} toward the target.",
+      "allyDashMoved": "{ally} moves {distance} {unit} toward {target}.",
+      "allyDashBlocked": "{ally} cannot find a path toward {target} (up to {distance} {unit}).",
+      "guardianRushConfirm": "{actor}: use your reaction to rush to {ally}'s side?",
+      "guardianRushNoPath": "{name} cannot reach a position adjacent to the ally.",
+      "guardianRushPartial": "{name} rushes toward {ally} but cannot reach their side.",
+      "guardianRush": "{name} rushes to {ally}'s side; {attacker} suffers disadvantage on attacks for 1 round.",
+      "misconfigured": "{name} is misconfigured and was skipped. Open the Runeforge to fix it.",
+      "statDenyBonus": "{name} loses their bonus action.",
+      "statDenyReaction": "{name} loses their reaction.",
+      "statDenyBonusDesc": "Bonus action denied by {rune}. Enforced automatically with midi-qol.",
+      "statDenyReactionDesc": "Reaction denied by {rune}. Enforced automatically with midi-qol.",
+      "teleportToward": "{name} blinks {distance} {unit} closer.",
+      "teleportAway": "{name} blinks {distance} {unit} away.",
+      "teleportBlocked": "{name} cannot blink. No visible space in that direction."
+    },
+    "runeforge": {
+      "title": "Runeforge",
+      "openTitle": "Open Runeforge",
+      "keybind": "Open Runeforge",
+      "missingRune": "Unknown Rune",
+      "missingRuneDesc": "This rune's definition is not available in this world. Re-import it or clear the slot.",
+      "cursedName": "Unidentified Rune",
+      "cursedDesc": "Its markings resist reading.",
+      "tabs": {
+        "library": "Rune Library",
+        "editor": "Rune Editor",
+        "combo": "Combo Editor"
+      },
+      "lib": {
+        "new": "+ Forge New Rune",
+        "import": "Import JSON",
+        "export": "Export All",
+        "coreMelee": "Core - Melee",
+        "coreRanged": "Core - Ranged",
+        "coreArmor": "Core - Armor",
+        "empty": "Nothing here yet.",
+        "core": "Core",
+        "customBadge": "Custom",
+        "confirmDelete": "Delete rune \"{name}\"? Items using it will show an unknown-rune socket.",
+        "deleted": "Rune \"{name}\" deleted.",
+        "saved": "Rune \"{name}\" forged.",
+        "importResult": "Imported {runes} runes and {combos} combos.",
+        "importErrors": "Some entries were skipped: {errors}",
+        "exportDone": "Custom runes exported to a JSON file.",
+        "customMelee": "Custom - Melee",
+        "customRanged": "Custom - Ranged",
+        "customArmor": "Custom - Armor",
+        "collapseAll": "Collapse All",
+        "expandAll": "Expand All",
+        "filterAll": "All",
+        "filterCustom": "Custom",
+        "filterCore": "Core"
+      },
+      "locked": {
+        "text": "This is a core rune. It ships with the module and cannot be edited. Duplicate it to use as a starting point.",
+        "duplicate": "Duplicate",
+        "copySuffix": "(Copy)",
+        "new": "Craft New Instead"
+      },
+      "step": {
+        "identity": "Identity",
+        "trigger": "Trigger",
+        "save": "Saving Throw Gate",
+        "limit": "Use Limit",
+        "actions": "Actions - executed top to bottom"
+      },
+      "identity": {
+        "namePh": "Rune name...",
+        "browse": "Browse SVG File...",
+        "cursed": "Cursed - conceal the rune's true name and effect until the item is identified",
+        "cursedShort": "Cursed",
+        "passiveAc": "Passive AC - grants the rarity AC bonus while equipped"
+      },
+      "trigger": {
+        "onHit": {
+          "name": "On Hit",
+          "desc": "Fires whenever this weapon's attack hits."
+        },
+        "onCrit": {
+          "name": "On Critical Hit",
+          "desc": "Fires only on a critical hit."
+        },
+        "whenStruck": {
+          "name": "When Struck",
+          "desc": "Fires when the wearer is hit by a melee attack."
+        },
+        "halfHp": {
+          "name": "Below Half HP",
+          "desc": "Fires when damage drops the wearer below half HP."
+        },
+        "turnStart": {
+          "name": "Turn Start Aura",
+          "desc": "Fires at the start of the owner's turn, affecting creatures within {radius} {unit}."
+        },
+        "onMiss": {
+          "name": "On Miss",
+          "desc": "Fires when this weapon's attack misses."
+        },
+        "onKill": {
+          "name": "On Kill",
+          "desc": "Fires when this weapon reduces a target to 0 HP."
+        },
+        "onSpellCast": {
+          "name": "On Spell Cast",
+          "desc": "Fires when the wielder casts a spell."
+        },
+        "whenMissed": {
+          "name": "When Missed",
+          "desc": "Fires when a melee attack misses the wearer."
+        },
+        "concBreak": {
+          "name": "Concentration Ends",
+          "desc": "Fires when the wearer's concentration ends."
+        },
+        "proximity": {
+          "name": "Enemy Approach",
+          "desc": "Fires when an enemy first moves within {radius} {unit} of the wearer."
+        },
+        "combatStart": {
+          "name": "Combat Start",
+          "desc": "Fires once for the owner when combat begins."
+        },
+        "turnEnd": {
+          "name": "Turn End Aura",
+          "desc": "Fires at the end of the owner's turn, affecting creatures within {radius} {unit}."
+        },
+        "allyStruck": {
+          "name": "Ally Struck",
+          "desc": "Fires for the wearer when an ally in combat is struck by a melee attack."
+        },
+        "whenProne": {
+          "name": "When Prone",
+          "desc": "Fires when the wearer is knocked prone."
+        }
+      },
+      "save": {
+        "enable": "A saving throw can resist this rune",
+        "who": "Who saves",
+        "ability": "Ability",
+        "dc": "DC",
+        "critAuto": "Critical hits automatically fail the save"
+      },
+      "who": {
+        "target": "Struck Target",
+        "attacker": "The Attacker",
+        "self": "The Wielder",
+        "selfArmor": "The Wearer",
+        "allies": "Allies Within Range",
+        "enemies": "Enemies Within Range",
+        "area": "Creatures In Area"
+      },
+      "limit": {
+        "none": "Unlimited",
+        "round": "Once / Round",
+        "combat": "Once / Combat",
+        "rest": "Once / Rest"
+      },
+      "act": {
+        "add": "+ Add Action",
+        "applies": "Applies to",
+        "onSave": "On save",
+        "negate": "Negated",
+        "half": "Halved",
+        "full": "Always applies",
+        "remove": "Delete",
+        "radius": "Radius",
+        "feet": "{value} {unit}",
+        "duration": "Duration",
+        "rounds": "{rounds} rd",
+        "roundsDie": "Rarity die",
+        "affects": "Affects",
+        "immediate": "Erupts immediately on placement",
+        "status": "Status on failed save",
+        "statusNone": "None",
+        "distance": "Distance",
+        "direction": "Direction",
+        "effect": "Effect",
+        "mode": "Mode",
+        "damageType": "Damage type",
+        "condition": "Condition"
+      },
+      "action": {
+        "move": {
+          "label": "Push / Pull Token"
+        },
+        "stat": {
+          "label": "Modify Stat"
+        },
+        "damage": {
+          "label": "Damage / Heal"
+        },
+        "status": {
+          "label": "Apply Status"
+        },
+        "reminder": {
+          "label": "Reminder Effect"
+        },
+        "cloud": {
+          "label": "Lingering Cloud"
+        },
+        "light": {
+          "label": "Token Light"
+        },
+        "teleport": {
+          "label": "Teleport"
+        },
+        "brand": {
+          "label": "Brand"
+        },
+        "contagion": {
+          "label": "Contagion"
+        },
+        "allyDash": {
+          "label": "Ally Dash"
+        },
+        "guardianRush": {
+          "label": "Guardian Rush"
+        }
+      },
+      "opt": {
+        "move": {
+          "away": "Push away",
+          "toward": "Pull toward"
+        },
+        "stat": {
+          "acBonus": "AC +2",
+          "acPenalty": "AC -2",
+          "speedPenalty": "Speed penalty",
+          "speedHalf": "Speed halved",
+          "speedZero": "Speed 0",
+          "disadvAttack": "Attack disadv.",
+          "tempHp": "Temp HP",
+          "resistAll": "Resist all",
+          "initAdv": "Initiative adv.",
+          "disadvCheck": "Check disadv.",
+          "denyBonus": "Deny Bonus Action",
+          "denyReaction": "Deny Reaction"
+        },
+        "damage": {
+          "damage": "Damage",
+          "heal": "Heal"
+        },
+        "affects": {
+          "all": "All creatures",
+          "enemies": "Enemies only",
+          "allies": "Allies only"
+        },
+        "teleport": {
+          "away": "Blink away",
+          "toward": "Blink toward"
+        }
+      },
+      "reminderPh": "Reminder text, e.g. cannot make opportunity attacks...",
+      "cloudNote": "Anchored at the impact point. Uses this rune's save gate and rarity die for its per-round tick, for 3 rounds.",
+      "preview": {
+        "title": "Live Preview",
+        "locked": "CORE (locked)",
+        "forge": "Forge Rune",
+        "forged": "Forged",
+        "export": "Export JSON",
+        "noActions": "Add at least one action to define what this rune does."
+      },
+      "svg": {
+        "title": "Import Glyph From SVG",
+        "path": "Path Extraction",
+        "silhouette": "Silhouette Tint",
+        "pathNote": "Recolorable stroke, keeps the draw in animation. Best for line art icons.",
+        "silhouetteNote": "Filled shape tinted with the rune color. Works for complex art.",
+        "failed": "Could not read that SVG: {error}",
+        "pickImage": "Pick an .svg file."
+      },
+      "combo": {
+        "trio": "Choose the trio",
+        "identity": "Combo identity",
+        "existing": "Existing custom combos",
+        "pickHint": "Pick three runes of one category. The combo activates when all three share an item's power slots.",
+        "complete": "Trio complete. Name it and forge it below.",
+        "namePh": "Combo name...",
+        "descPh": "What changes when the trio is socketed together...",
+        "skipSave": "Remove the saving throw from member runes while the combo is active",
+        "skipSaveFor": "{name} always lands (no save)",
+        "save": "Forge Combo",
+        "saved": "Combo \"{name}\" forged.",
+        "edit": "Edit",
+        "confirmDelete": "Delete combo \"{name}\"?",
+        "empty": "No custom combos yet.",
+        "issuesHead": "Not ready to forge yet:",
+        "issueName": "Give this combo a name.",
+        "issueRunes": "Fill all three slots with distinct runes of the same category.",
+        "issueDescription": "Describe what happens when this combo is socketed.",
+        "issueOther": "{message}",
+        "category": "Category"
+      },
+      "err": {
+        "invalid": "Cannot forge: {errors}"
+      },
+      "phrase": {
+        "and": "and",
+        "saveOr": "or",
+        "save": "{who} makes a DC {dc} {ability} save",
+        "critAuto": "On a critical hit, the save automatically fails.",
+        "onSaveHalf": " (halved on a successful save)",
+        "onSaveFull": " regardless of the save",
+        "onSaveFail": " on a failed save",
+        "trigger": {
+          "onHit": "On a hit,",
+          "onCrit": "On a critical hit,",
+          "whenStruck": "When the wearer is struck by a melee attack,",
+          "halfHp": "When the wearer drops below half HP,",
+          "turnStart": "At the start of the owner's turn,",
+          "onMiss": "When the attack misses,",
+          "onKill": "When the target is slain,",
+          "onSpellCast": "When the wielder casts a spell,",
+          "whenMissed": "When a melee attack misses the wearer,",
+          "concBreak": "When the wearer's concentration ends,",
+          "proximity": "When an enemy first moves within {radius} {unit} of the wearer,",
+          "combatStart": "When combat begins,",
+          "turnEnd": "At the end of the owner's turn,",
+          "allyStruck": "When an ally is struck by a melee attack,",
+          "whenProne": "When the wearer is knocked prone,"
+        },
+        "limit": {
+          "round": "Once per round.",
+          "combat": "Once per combat.",
+          "rest": "Once per rest."
+        },
+        "who": {
+          "target": "the target",
+          "attacker": "the attacker",
+          "self": "the wielder",
+          "selfArmor": "the wearer",
+          "allies": "allies within {radius} {unit}",
+          "enemies": "enemies within {radius} {unit}",
+          "area": "each creature within {radius} {unit}"
+        },
+        "action": {
+          "move": {
+            "away": "is shoved up to {die}×{pip} {unit} away",
+            "toward": "is dragged up to {die}×{pip} {unit} toward the impact point"
+          },
+          "stat": {
+            "acBonus": "gains +2 AC",
+            "acPenalty": "has their AC reduced by 2",
+            "speedPenalty": "has their speed reduced by {die}×{pip} {unit}",
+            "speedHalf": "has their movement halved",
+            "speedZero": "has their speed reduced to 0",
+            "disadvAttack": "suffers disadvantage on attack rolls",
+            "tempHp": "gains {die} temporary HP",
+            "resistAll": "gains resistance to all damage",
+            "initAdv": "rolls initiative with advantage",
+            "disadvCheck": "suffers disadvantage on ability checks",
+            "denyBonus": "loses their bonus action",
+            "denyReaction": "loses their reaction"
+          },
+          "damage": "takes {die} {type} damage",
+          "heal": "regains {die} HP",
+          "status": "is {status}",
+          "cloud": "A {radius} {unit} cloud lingers at the impact point, repeating this rune's save and damage each round for 3 rounds.",
+          "light": "sheds bright light in a {radius} {unit} radius for 1 round",
+          "teleport": {
+            "away": "blinks up to {radius} {unit} away, to a space in view",
+            "toward": "blinks up to {radius} {unit} closer, to a space in view"
+          },
+          "brand": "is branded - creatures that hit them deal an extra {die} damage while the brand lasts",
+          "contagion": "becomes contagious - creatures ending their turn adjacent to them must make a DC {dc} {ability} save or be afflicted",
+          "allyDash": "One nearby ally may immediately move up to {die}×{pip} {unit} toward the target.",
+          "guardianRush": "The wearer may use their reaction to move adjacent to the struck ally; reaching them imposes disadvantage on the attacker's attacks for 1 round."
+        },
+        "forRound": " for 1 round",
+        "forRounds": " for {rounds} rounds",
+        "forRoundsDie": " for {die} rounds",
+        "passiveAc": "Grants a passive AC bonus based on runic rarity while equipped."
+      },
+      "brandNote": "Marks the target. Each later hit against them deals an extra rarity die of damage while the brand lasts.",
+      "contagionNote": "The target spreads the chosen status to adjacent creatures at the start of each combat turn.",
+      "guardianNote": "The wearer may use their reaction to move adjacent to the struck ally. If they reach them, the attacker suffers attack disadvantage.",
+      "tmpl": {
+        "mirageward": "Cannot make opportunity attacks until the start of your next turn.",
+        "scorcheye": "Cannot benefit from cover or invisibility until the start of your next turn.",
+        "emberveil": "Cannot re-enter your space until the start of their next turn.",
+        "wardpulse": "Loses their bonus action until the end of their next turn.",
+        "ashenmantle": "Cannot be moved or knocked prone while the resistance is active."
+      },
+      "issues": {
+        "head": "Not ready to forge yet:",
+        "name": "Give this rune a name.",
+        "actionsNone": "Add at least one action.",
+        "reminderText": "Action {index} (Reminder) needs its text filled in.",
+        "actionTrigger": "Action {index}'s target or type no longer fits the current trigger.",
+        "trigger": "Choose a trigger that's valid for this category.",
+        "other": "{message}"
+      }
+    },
+    "UpdateCheck": {
+      "Title": "Release Notes",
+      "Tooltip": "Update available: {version}",
+      "ViewHistory": "View full history on GitHub",
+      "NoNotes": "No release notes provided for this version.",
+      "Close": "Close"
+    },
+    "migration": {
+      "warnFound": "[Runic Items] Found {count} item(s) referencing a rune that no longer exists - check the console for details."
+    },
+    "rune": {
+      "stonecleft": {
+        "description": "On a hit, the target makes a DC 13 Strength save or is pushed {die}×{pip} {unit} away and has their movement halved for 1 round. On a critical hit, they automatically fail the save."
+      },
+      "mirageward": {
+        "description": "On a hit, the target loses the ability to make opportunity attacks until the start of your next turn."
+      },
+      "emberbrand": {
+        "description": "On a critical hit, the target is branded with ember fire. Until the start of your next turn, allies who hit the target deal an extra {die} fire or radiant damage."
+      },
+      "sandgrasp": {
+        "description": "On a hit, the target makes a DC 15 Strength save or their speed is reduced by {die}×{pip} {unit} until the end of their next turn."
+      },
+      "ruinmark": {
+        "description": "On a hit, the target's armor is cracked. Their AC is reduced by 2 for {die} rounds. Any attacker benefits from this opening."
+      },
+      "forgebell": {
+        "description": "On a hit, the rune rings like a forge bell. One ally within {radius} {unit} may use their reaction to move up to {die}×{pip} {unit} toward the target."
+      },
+      "burntrace": {
+        "description": "On a hit, a scorched mark is left on the target. They suffer disadvantage on attack rolls for 1 round."
+      },
+      "sandhold": {
+        "description": "On a hit, desert sand hardens around the target. Their movement speed is reduced by {die}×{pip} {unit} for 1 round."
+      },
+      "ashcloud": {
+        "description": "On a hit, a cloud of rift ash erupts at the impact point. Creatures in the cloud must make a DC 14 Constitution save or be poisoned and take {die} poison damage."
+      },
+      "undertow": {
+        "description": "On a hit, rift energy drags the target {die}×{pip} {unit} toward the impact point."
+      },
+      "scorcheye": {
+        "description": "On a hit, the heat-haze clarity of the desert strips concealment. The target cannot benefit from cover or invisibility until the start of your next turn."
+      },
+      "wasteblight": {
+        "description": "On a hit, rift corruption spreads through the target. While poisoned, creatures ending their turn adjacent to them must make a DC 13 Constitution save or become poisoned and take {die} poison damage."
+      },
+      "emberveil": {
+        "description": "Grants a passive AC bonus based on runic rarity. When struck by a melee attack, the attacker is pushed {die}×{pip} {unit} directly away and cannot re-enter your space until the start of their next turn."
+      },
+      "stonewarden": {
+        "description": "When the wearer drops below half HP, the rune flares and restores {die} HP. Once per combat."
+      },
+      "vanguard": {
+        "description": "When an ally is struck by a melee attack, the wearer may use their reaction to move adjacent to that ally. The attacker suffers disadvantage on all attacks until the end of the round. Once per combat."
+      },
+      "wardpulse": {
+        "description": "When struck by a melee attack, the attacker makes a DC 14 Constitution save or loses their bonus action until the end of their next turn. Once per round."
+      },
+      "forgeshield": {
+        "description": "When struck by a melee attack, allies within {radius} {unit} of the wearer gain +2 AC for 2 rounds."
+      },
+      "ashenmantle": {
+        "description": "When the wearer drops to or below half HP for the first time, they gain resistance to all damage types for 1 round and cannot be moved or knocked prone while the resistance is active. Once per rest."
+      },
+      "ability": {
+        "str": {
+          "description": "Each inscribed Strength marking grants +1 to the chosen stat."
+        },
+        "dex": {
+          "description": "Each inscribed Dexterity marking grants +1 to the chosen stat."
+        },
+        "con": {
+          "description": "Each inscribed Constitution marking grants +1 to the chosen stat."
+        },
+        "int": {
+          "description": "Each inscribed Intelligence marking grants +1 to the chosen stat."
+        },
+        "wis": {
+          "description": "Each inscribed Wisdom marking grants +1 to the chosen stat."
+        },
+        "cha": {
+          "description": "Each inscribed Charisma marking grants +1 to the chosen stat."
+        }
+      }
+    },
+    "validate": {
+      "notObject": "Not a valid rune definition.",
+      "name": "Name is required (max 60 characters).",
+      "category": "Category must be melee, ranged, or armor.",
+      "color": "Color must be a valid hex value.",
+      "glyph": "Glyph is required.",
+      "glyphMode": "Glyph mode must be path or silhouette.",
+      "glyphView": "Glyph view must be a valid SVG viewBox.",
+      "passiveAcType": "Passive AC must be true or false.",
+      "passiveAcCategory": "Passive AC only applies to armor runes.",
+      "triggerUnknown": "Unknown trigger: {trigger}.",
+      "triggerCategory": "{trigger} is not valid for this category.",
+      "saveType": "Save must be an object or empty.",
+      "saveWho": "Save target must be target, attacker, or self.",
+      "saveWhoTrigger": "{who} is not available for this trigger.",
+      "saveAbility": "Save ability is invalid.",
+      "saveDc": "Save DC must be between 5 and 30.",
+      "saveCritType": "Critical auto-fail must be true or false.",
+      "usesPer": "Use limit must be round, combat, or rest.",
+      "actionsCount": "Add between 1 and 8 actions.",
+      "actionType": "Action {index} has an unknown type.",
+      "actionKey": "Action {index} needs a key.",
+      "actionTypeTrigger": "Action {index} isn't available for this trigger.",
+      "actionRounds": "Action {index}'s duration must be 1-10 rounds.",
+      "actionRadius": "Action {index}'s radius must be {min}-{max} {unit}.",
+      "actionDc": "Action {index}'s DC must be between 5 and 30.",
+      "actionAbility": "Action {index}'s save ability is invalid.",
+      "actionStatus": "Action {index} has an unknown status.",
+      "actionAffectsCloud": "Action {index}'s targets must be all or enemies.",
+      "actionImmediate": "Action {index}'s immediate flag must be true or false.",
+      "actionAffectsContagion": "Action {index}'s targets are invalid.",
+      "actionTargetPoint": "Action {index} must target a point.",
+      "actionTargetTrigger": "Action {index}'s target isn't valid for this trigger.",
+      "actionOnSave": "Action {index}'s save result is invalid.",
+      "actionOnSaveHalf": "Only damage actions can be halved on a save.",
+      "actionDir": "Action {index}'s direction must be away or toward.",
+      "actionStat": "Action {index} has an unknown stat option.",
+      "actionKind": "Action {index} must be damage or heal.",
+      "actionDtype": "Action {index} has an unknown damage type.",
+      "actionText": "Action {index} needs its reminder text filled in.",
+      "comboGlyph": "Combo glyph is required.",
+      "comboRunesCount": "Pick exactly 3 distinct runes.",
+      "comboRuneUnresolved": "The rune \"{id}\" no longer exists.",
+      "comboRuneCategory": "All three runes must share a category.",
+      "comboSkipSaveFor": "Always lands list must reference the trio's runes.",
+      "comboExtraActions": "Add at most 4 extra actions.",
+      "comboDescription": "Description is required (max 400 characters).",
+      "actionDistance": "Action {index}'s teleport distance must be one of {options} {unit}."
+    },
+    "store": {
+      "invalidJson": "Invalid JSON: {message}",
+      "newerSchema": "This file needs a newer module version (schema {fileVersion}, this install supports up to {maxSchema}).",
+      "emptyImport": "No runes or combos found in the file.",
+      "runeImportError": "Rune \"{name}\": {errors}",
+      "comboImportError": "Combo \"{name}\": {message}",
+      "trioCoreCombo": "This trio already forms a core combo.",
+      "trioCustomCombo": "This trio already forms a custom combo."
+    },
+    "manual": {
+      "apply": "Apply",
+      "applied": "Applied",
+      "genericDamage": "damage",
+      "bodyHeal": "{name} regains {total} hit points.",
+      "bodyDamage": "{name} takes {total} {type} damage.",
+      "bodyPulled": "{name} is pulled {distance} {unit}.",
+      "bodyPushed": "{name} is pushed {distance} {unit}.",
+      "bodyMoved": "{name} moves {distance} {unit}.",
+      "bodyStatus": "{name} becomes {status}.",
+      "bodyEffect": "{name} is affected by {effect}.",
+      "bodyUpdate": "{name} is updated.",
+      "bodyTemplate": "{name} places an area effect.",
+      "saveFlavor": "{rune} - saving throw (DC {dc})",
+      "bodySave": "A saving throw (DC {dc} {ability}) determines the outcome.",
+      "rollSave": "Saving Throw DC {dc} ({ability})"
+    },
+    "narrate": {
+      "header": "{item} hit nothing that was targeted. Resolve these by hand:",
+      "saveGate": "{who} must make a DC {dc} {ability} save.",
+      "scripted": "{rune} resolves against its target.",
+      "teleport": {
+        "away": "{name} blinks up to {radius} {unit} away.",
+        "toward": "{name} blinks up to {radius} {unit} closer."
+      },
+      "allyDash": "One ally within {radius} {unit} may move up to {distance} {unit} toward the target.",
+      "guardianRush": "The wearer may use their reaction to move adjacent to the struck ally.",
+      "contagionSave": "Adjacent creatures must make a DC {dc} {ability} save.",
+      "who": {
+        "self": "The wearer",
+        "target": "The target",
+        "attacker": "The attacker",
+        "allies": "Each ally within {radius} {unit}",
+        "enemies": "Each enemy within {radius} {unit}",
+        "area": "Each creature within {radius} {unit}"
+      }
+    }
+  }
+}

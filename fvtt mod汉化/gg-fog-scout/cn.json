@@ -1,0 +1,39 @@
+{
+  "GGFS.brand": "Crónicas Bárdicas",
+  "GGFS.cancel": "取消",
+
+  "GGFS.settings.menu.name": "探索者",
+  "GGFS.settings.menu.label": "配置探索者",
+  "GGFS.settings.menu.hint": "选择哪些用户保留他们探索过的地图记忆。",
+  "GGFS.settings.notifyOnShare.name": "在聊天中宣布分享",
+  "GGFS.settings.notifyOnShare.hint": "向接收共享地图的用户私聊发送消息。",
+
+  "GGFS.config.title": "GG Fog Scout · 探索者",
+  "GGFS.config.hint": "勾选的用户会保留其探索过的内容。未勾选的用户只能看到他们的 Token 当前能看到的内容，不保留地图记忆。",
+  "GGFS.config.note": "取消勾选某人不会抹除其保存的探索记录：记录会被冻结，若再次勾选则会原样恢复。",
+  "GGFS.config.save": "保存",
+  "GGFS.config.online": "在线",
+  "GGFS.config.saved": "探索者已更新。",
+
+  "GGFS.controls.explorers": "探索者（GG Fog Scout）",
+  "GGFS.controls.share": "分享已探索的地图",
+
+  "GGFS.share.title": "GG Fog Scout · 分享地图",
+  "GGFS.share.hint": "将某个用户在本场景探索过的迷雾复制给其他用户。经典时刻：斥候归来，为队伍画出地图。",
+  "GGFS.share.from": "从…复制",
+  "GGFS.share.to": "复制到…",
+  "GGFS.share.confirm": "分享",
+  "GGFS.share.notExplorer": "无探索记录",
+  "GGFS.share.warning": "这会覆盖接收者在本场景的探索记录，无法撤销。",
+  "GGFS.share.done": "已将 {from} 的地图分享给：{to}。",
+  "GGFS.share.chat": "{from} 分享了他们探索过的地图。",
+  "GGFS.share.gmOnly": "只有 GM 可以分享探索记录。",
+  "GGFS.share.noCanvas": "没有激活的场景。",
+  "GGFS.share.noSource": "请选择一个来源用户。",
+  "GGFS.share.noTargets": "请至少选择一个除来源以外的接收者。",
+  "GGFS.share.sceneOff": "此场景已禁用迷雾探索。",
+  "GGFS.share.unsupported": "此 Foundry 版本未开放 canvas.fog.sync，无法使用分享功能。",
+  "GGFS.share.failed": "无法同步探索记录，请查看控制台。",
+
+  "GGFS.warn.notPatched": "GG Fog Scout 无法在此 Foundry 版本中挂接到画布，选择性探索已停用。"
+}

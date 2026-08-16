@@ -1,4 +1,5 @@
-{"LocknKey" : {
+{
+	"LocknKey" : {
 		"Titles" : {
 			"LockSettings"				: "锁设置",
 			"PickpocketSettings"		: "扒窃设置",
@@ -145,10 +146,10 @@
 			},
 			
 			"allowTileLocking" : {
-				"name": "允许图块锁定",
-				"descrp": "允许将图块设置为可锁定对象"
+				"name" 					: "允许图块锁定",
+				"descrp"				: "允许将图块设置为可锁定对象"
 			},
-		
+			
 			"allowLocking" : {
 				"name" 					: "允许玩家锁定",
 				"descrp"				: "允许玩家在拥有匹配钥匙时锁定锁"
@@ -260,22 +261,23 @@
 				"options" : {
 					"noCrit"			: "无大成功/大失败",
 					"natCrit"			: "N 1/20",
+					"natCrit-inverse"	: "N 20/1（反转 N 1/20）",
 					"natCritpm10"		: "N 1/20 &  DC +-10 [例如 Pf2e]",
-					"d100WFRP4": "d100 Nat1/100（反转难度等级）[例如：WFRP4e]",
-					"d100WFRP4Doubles": "d100 Nat1/100 & 双骰（反转难度等级）[例如：WFRP4e]",
-					"d100WFRP4normDC": "d100 Nat1/100 [例如：WFRP4e]",
-					"d100WFRP4DoublesnormDC": "d100 Nat1/100 & 双骰 [例如：WFRP4e]",
+					"d100WFRP4"			: "d100 Nat1/100（反转难度等级）[例如：WFRP4e]",
+					"d100WFRP4Doubles"	: "d100 Nat1/100 & 双骰（反转难度等级）[例如：WFRP4e]",
+					"d100WFRP4normDC"	: "d100 Nat1/100 [例如：WFRP4e]",
+					"d100WFRP4DoublesnormDC"	: "d100 Nat1/100 & 双骰 [例如：WFRP4e]",
 					"d100CoC7e"			: "d100 难度范围 [例如 CoC7e]",
 					"d10poolCoD2e"		: "d10 池 >=8 并在10时重新掷骰 [例如 CoD2e]",
 					"3d20DSA": "3d20 DSA"
 				}
 			},
 			
-			"InfinityThreshold": {
-				"name": "无穷阈值",
-				"descrp": "在计算DC时，等于此值的数字将被视为无穷大"
+			"InfinityThreshold" : {
+				"name" : "无穷阈值",
+				"descrp" : "在计算DC时，等于此值的数字将被视为无穷大" 
 			},
-						
+			
 			"LockPickItem" : {
 				"name" 					: "撬锁工具物品",
 				"descrp"				: "撬锁工具物品的名称或合集 ID（推荐），“-”表示不需要物品（用“;”分隔）"		

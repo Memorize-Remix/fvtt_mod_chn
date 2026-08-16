@@ -1,0 +1,55 @@
+{
+  "RPGX-SHOPS": {
+    "Settings": {
+      "ProtonUrl": {
+        "Name": "RPGX Proton URL",
+        "Hint": "Local address of the RPGX Proton desktop app. Default is http://127.0.0.1:3033, only change this if you have configured Proton to use a different port. Download RPGX Proton free at rpgxstudios.com."
+      },
+      "ProtonToken": {
+        "Name": "RPGX Proton Auth Token",
+        "Hint": "Authentication token for RPGX Proton. Must match the token shown in the Proton app settings. If another RPGX module already has this set, it is used automatically, you only need to set this if Shops & Traders is your only RPGX module."
+      },
+      "GameSystem": {
+        "Name": "Game System",
+        "Hint": "The rule system your game is running on. Used by AI shop generation to keep mechanics accurate. Examples: D&D 5E (2024), D&D 5E (2014), Pathfinder 2E, Homebrew, etc."
+      },
+      "Genre": {
+        "Name": "Campaign Genre",
+        "Hint": "Describe the mood and setting of your campaign for AI generation. The genre governs narrative content such as world, tone, flavour, dialogue, and locations. The game system still governs mechanics. Examples: Modern Horror, Dark Fantasy, Futuristic Cyberdystopia."
+      },
+      "OllamaModel": {
+        "Name": "AI Model Tier",
+        "Hint": "Select a performance tier based on your PC specs. Models must be installed via RPGX Proton. Lite (phi4-mini) = 4-6GB RAM. Standard (phi4) = 8-12GB RAM. Enhanced (phi4-reasoning) = 16GB+ RAM. Ultra (phi4-reasoning:plus) = 16GB+ RAM."
+      },
+      "AITimeout": {
+        "Name": "AI Generation Timeout",
+        "Hint": "Maximum time to wait for AI shop generation. Increase for larger models (Enhanced/Ultra tiers). 30s = fast models, 60s = most models, 120s+ = Ultra tier or complex prompts."
+      },
+      "AICreativity": {
+        "Name": "AI Creativity",
+        "Hint": "Controls randomness in shop generation. Lower means more structured and predictable, higher means more creative and varied. 0.5 = Structured, 0.8 = Balanced, 1.2 = Creative, 1.5 = Wild."
+      },
+      "BuybackRate": {
+        "Name": "Default Buyback Rate (%)",
+        "Hint": "The percentage of an item's value shops pay when players sell items, unless a business overrides this."
+      },
+      "AutoApprove": {
+        "Name": "Auto-Approve Shop Visits",
+        "Hint": "If enabled, players can enter a shop immediately without GM approval, as long as no one else is currently shopping there."
+      },
+      "DefaultInventories": {
+        "Name": "Default Inventories",
+        "Label": "Manage Default Inventories",
+        "Hint": "Create named lists of common items. Pick one as a starting point when you create a new business, or mark one with a star to use it automatically."
+      },
+      "Currency": {
+        "Name": "Currency",
+        "Label": "Configure Currency",
+        "Hint": "Set up the denominations your world uses. Choose a preset for common systems, or build a custom list to match your own. Currency keys must match what your game system stores on actors."
+      }
+    },
+    "MainMenu": {
+      "Title": "RPGX Shops & Traders"
+    }
+  }
+}

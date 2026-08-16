@@ -1,4 +1,5 @@
-{"lock-the-sheets": {
+{
+  "lock-the-sheets": {
     "setting": {
       "modVersion": {
         "name": "版本",
@@ -73,9 +74,37 @@
         "name": "HUD状态图标的超时时间（秒）",
         "hint": "HUD图标在一定时间后自动关闭的超时时间（秒）。设置为0使HUD图标始终可见。默认：10。"
       },
+      "hudIconScale": {
+        "name": "HUD 图标大小",
+        "hint": "状态 HUD 图标的缩放比例。也可以通过全局控制设置中的自定义键位绑定来切换。"
+      },
+      "hudIconScaleOptions": {
+        "zero": "不可见",
+        "small": "小",
+        "normal": "正常",
+        "large": "大"
+      },
       "hudIconOpacity": {
         "name": "HUD状态图标的不透明度",
         "hint": "1（最大值）表示完全可见，0.2（最小值）表示可见度为20%（透明度为80%）。默认：0.7（70%）"
+      },
+      "hudIconAnchor": {
+        "name": "HUD 状态图标的锚定位置",
+        "hint": "相对于屏幕的基准位置（哪个角落？）。可通过下方偏移设置进一步微调。"
+      },
+      "hudIconAnchorOptions": {
+        "topleft": "左上（默认）",
+        "topright": "右上",
+        "bottomleft": "左下",
+        "bottomright": "右下"
+      },
+      "hudIconOffsetX": {
+        "name": "HUD 状态图标的水平偏移（像素）",
+        "hint": "左右位置的相对调整（默认：100）。"
+      },
+      "hudIconOffsetY": {
+        "name": "HUD 状态图标的垂直偏移（像素）",
+        "hint": "上下位置的相对调整（默认：50）。"
       },
       "keybindingNames": {
         "toggle": "锁定角色表！(开/关)",

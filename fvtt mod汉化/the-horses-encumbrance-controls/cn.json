@@ -1,0 +1,23 @@
+{
+  "the-horses-encumbrance-controls": {
+    "settings": {
+      "carryWeightMultiplier": {
+        "name": "负重倍率",
+        "hint": "力量值用于计算总负重能力的倍率。每个负重等级都是该总量的一个比例（默认：15）"
+      },
+      "enableEffects": {
+        "name": "启用负重效果",
+        "hint": "启用后，根据负重等级应用自定义的临时效果"
+      },
+      "currencyPerWeight": {
+        "name": "货币/重量",
+        "hint": "等于 1 磅重量的硬币数量。设为 0 可使货币完全无重量（默认：50）"
+      }
+    },
+    "effects": {
+      "encumbered": "负重",
+      "heavilyEncumbered": "重度负重",
+      "exceedingCapacity": "超出负重上限"
+    }
+  }
+}

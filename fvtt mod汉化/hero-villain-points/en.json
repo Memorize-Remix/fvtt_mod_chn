@@ -1,0 +1,101 @@
+{
+  "HEROVILLAIN": {
+    "Title": "Hero / Villain",
+    "Settings": {
+      "TotalPoints": {
+        "Name": "How many circles",
+        "Hint": "Fixed size of the shared pool (1–20). Hero + Villain always equals this total."
+      },
+      "DefaultHero": {
+        "Name": "How many start as Hero",
+        "Hint": "Opening Hero balance when the pool is first created or repaired. Does not reset an existing campaign pool."
+      },
+      "AllowPlayerFlip": {
+        "Name": "Allow players to click",
+        "Hint": "When on, player clicks request a flip that a present GM applies. When off, only GMs can change the pool."
+      },
+      "AnnounceFlips": {
+        "Name": "Announce flips in chat",
+        "Hint": "When on, each flip posts a short public chat line with the new balance."
+      },
+      "AnnounceTides": {
+        "Name": "Announce tide moments",
+        "Hint": "When on, chat calls out when the pool swings lead or becomes all Hero / all Villain."
+      },
+      "ShowSceneControl": {
+        "Name": "Show toolbar button",
+        "Hint": "Adds a token-controls button to open or close the tracker (this client only)."
+      },
+      "PlaySound": {
+        "Name": "Play flip sound",
+        "Hint": "Soft click when the shared pool changes (this client only)."
+      },
+      "CircleSize": {
+        "Name": "Circle size",
+        "Hint": "How large the circles appear for you.",
+        "Compact": "Compact",
+        "Comfortable": "Comfortable",
+        "Large": "Large"
+      },
+      "AutoOpen": {
+        "Name": "Open tracker on load",
+        "Hint": "Automatically open the Hero / Villain window when you join the world."
+      },
+      "ColorHero": {
+        "Name": "Hero circle color",
+        "Hint": "Fill color for Hero circles. Default: Warm Ivory (#E8E0C8)."
+      },
+      "ColorHeroBorder": {
+        "Name": "Hero circle trim",
+        "Hint": "Border color for Hero circles. Default: Antique Gold (#D2A33A)."
+      },
+      "ColorVillain": {
+        "Name": "Villain circle color",
+        "Hint": "Fill color for Villain circles. Default: Eldergate Blue (#183159)."
+      },
+      "ColorVillainBorder": {
+        "Name": "Villain circle trim",
+        "Hint": "Border color for Villain circles. Default: Charcoal (#282421)."
+      },
+      "ColorPanel": {
+        "Name": "Panel base color",
+        "Hint": "Darker end of the tracker background. Default: Charcoal (#282421)."
+      },
+      "ColorPanelAlt": {
+        "Name": "Panel highlight color",
+        "Hint": "Richer end of the tracker background gradient. Default: Eldergate Blue (#183159)."
+      },
+      "ColorAccent": {
+        "Name": "Accent / embroidery",
+        "Hint": "Gold trim for focus rings and highlights. Default: Antique Gold (#D2A33A)."
+      },
+      "ColorCopper": {
+        "Name": "Fixture / copper detail",
+        "Hint": "Secondary warm metal used in subtle mixes. Default: Aged Copper (#9E7D67)."
+      }
+    },
+    "Controls": {
+      "OpenTracker": "Hero / Villain Points",
+      "ToggleKeybind": "Toggle Hero / Villain tracker",
+      "ToggleKeybindHint": "Open or close the shared Hero / Villain window."
+    },
+    "Warnings": {
+      "NoGM": "No Game Master is present to apply that flip. The pool is unchanged.",
+      "NotAllowed": "Only the Game Master can flip points right now.",
+      "RequestSent": "Flip requested — waiting for the Game Master."
+    },
+    "Chat": {
+      "TowardHero": "toward the Heroes",
+      "TowardVillain": "toward the Villains",
+      "ByUser": " — {name}",
+      "Flip": "The balance tips {toward} ({hero}–{villain}){who}.",
+      "HeroPoint": "Hero",
+      "VillainPoint": "Villain",
+      "RequestWhisper": "{name} requested a {side} flip.",
+      "TideAllHero": "Tide shift: the pool is all Hero ({hero}–{villain}).",
+      "TideAllVillain": "Tide shift: the pool is all Villain ({hero}–{villain}).",
+      "TideSwungHero": "Tide shift: Heroes take the lead ({hero}–{villain}).",
+      "TideSwungVillain": "Tide shift: Villains take the lead ({hero}–{villain})."
+    }
+  }
+}

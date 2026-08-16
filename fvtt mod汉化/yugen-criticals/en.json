@@ -1,0 +1,174 @@
+{
+	"yugen-criticals": {
+		"title": "yugen-criticals",
+		"settings": {
+			"critical-message": {
+				"name": "Default Critical Message",
+				"hint": "The text displayed during a critical hit animation (fallback if no actor quote)."
+			},
+			"fumble-message": {
+				"name": "Default Fumble Message",
+				"hint": "The text displayed during a natural 1 fumble animation."
+			},
+			"animation-style": {
+				"name": "Animation Style",
+				"hint": "Choose your personal visual style for the animation overlay.",
+				"choices": {
+					"cinematic": "Cinematic (Fire Emblem)",
+					"anime": "Anime (Speed Lines)",
+					"cyberpunk": "Cyberpunk (Neon Glitch)",
+					"mk": "Mortal Kombat (Blood Red)",
+					"fire": "Fire (Blazing)",
+					"impacts": "Impacts (Multi-Hit)",
+					"barbarian": "Barbarian",
+					"bard": "Bard",
+					"cleric": "Cleric/Paladin",
+					"druid": "Druid",
+					"fighter": "Fighter/Rogue",
+					"warlock": "Warlock",
+					"wizard": "Wizard/Sorcerer"
+				}
+			},
+			"global-animation-style": {
+				"name": "Global Animation Style (GM)",
+				"hint": "The visual style used when the GM override is enabled."
+			},
+			"gm-style-override": {
+				"name": "Force Global Style",
+				"hint": "If enabled, all players will see the Global Animation Style instead of their own choice."
+			},
+			"critical-color": {
+				"name": "Critical Theme Color",
+				"hint": "The primary glow and bar color for standard critical hits."
+			},
+			"critical-size": {
+				"name": "Animation Scale",
+				"hint": "Adjust the size of the animation overlay."
+			},
+			"critical-sound": {
+				"name": "Critical Sound Effect",
+				"hint": "The sound file played during a critical hit. Supports multiple sounds separated by '|' for a random pool."
+			},
+			"fumble-sound": {
+				"name": "Fumble Sound Effect",
+				"hint": "The sound file played during a fumble (Natural 1). Supports multiple sounds separated by '|' for a random pool."
+			},
+			"critical-volume": {
+				"name": "Sound Volume",
+				"hint": "Adjust the volume of the sound effects."
+			},
+			"always-show-crit": {
+				"name": "Always Show Critical Animation",
+				"hint": "Force the critical animation on every roll for yourself."
+			},
+			"always-show-fumble": {
+				"name": "Always Show Fumble Animation",
+				"hint": "Force the fumble animation on every roll for yourself (if Always Show Critical is off)."
+			},
+			"user-only": {
+				"name": "User-Only Animations",
+				"hint": "If enabled, animations will only appear for the player who made the roll."
+			},
+			"ignore-discarded-dice": {
+				"name": "Ignore Discarded Dice",
+				"hint": "If enabled, results on dice discarded by advantage/disadvantage will not trigger animations."
+			},
+			"ignore-multi-dice": {
+				"name": "Ignore Large Dice Pools",
+				"hint": "If enabled, dice pools with more than 2 d20s (e.g., 10d20) will not trigger automatic animations."
+			},
+			"screen-shake": {
+				"name": "Screen Shake & Zoom",
+				"hint": "Briefly shake and zoom the game canvas during critical animations."
+			},
+			"debug-mode": {
+				"name": "Debug Mode",
+				"hint": "Enable browser console logging for animation and hook events."
+			},
+			"hide-private-rolls": {
+				"name": "Hide Private Rolls",
+				"hint": "If enabled, critical animations will not show on player screens if they do not have permission to see the roll details."
+			},
+			"critical-threshold-type": {
+				"name": "Critical Threshold Type",
+				"hint": "Select whether critical hits are triggered by a natural die roll or by the total roll result.",
+				"choices": {
+					"die": "Natural Die Roll",
+					"total": "Total Roll Result"
+				}
+			},
+			"critical-threshold-value": {
+				"name": "Critical Threshold Value",
+				"hint": "The minimum value required to trigger a critical animation (either on the die or total result)."
+			},
+			"pf2e-natural-only": {
+				"name": "PF2e Natural Crits Only",
+				"hint": "If enabled, critical hit and fumble animations for Pathfinder 2e will only trigger on a natural 20 or natural 1 on the die, rather than any critical success/failure outcome."
+			}
+		},
+		"actor-config": {
+			"title": "yugen-criticals-config",
+			"crit-quote-name": "Critical Quotes",
+			"crit-quote-hint": "Enter one quote per line. One will be chosen at random for critical hits.",
+			"fumble-quote-name": "Fumble Quotes",
+			"fumble-quote-hint": "Enter one quote per line. One will be chosen at random for fumbles.",
+			"crit-sound-name": "Critical Sound Override",
+			"crit-sound-hint": "Override the default critical sound effect for this actor.",
+			"fumble-sound-name": "Fumble Sound Override",
+			"fumble-sound-hint": "Override the default fumble sound effect for this actor.",
+			"crit-img-name": "Critical Portrait Override",
+			"crit-img-hint": "Override the portrait/token image displayed during a critical hit animation for this actor.",
+			"fumble-img-name": "Fumble Portrait Override",
+			"fumble-img-hint": "Override the portrait/token image displayed during a fumble animation for this actor.",
+			"style-name": "Signature Animation Style",
+			"style-hint": "Choose a signature visual style for this actor's animations.",
+			"style-choices": {
+				"default": "Default (Use settings)",
+				"cinematic": "Cinematic (Fire Emblem)",
+				"anime": "Anime (Speed Lines)",
+				"cyberpunk": "Cyberpunk (Neon Glitch)",
+				"mk": "Mortal Kombat (Blood Red)",
+				"fire": "Fire (Blazing)",
+				"impacts": "Impacts (Multi-Hit)",
+				"barbarian": "Barbarian",
+				"bard": "Bard",
+				"cleric": "Cleric/Paladin",
+				"druid": "Druid",
+				"fighter": "Fighter/Rogue",
+				"warlock": "Warlock",
+				"wizard": "Wizard/Sorcerer"
+			},
+			"reset": "Reset to Defaults",
+			"save": "Save Changes",
+			"crit-threshold-legend": "Critical Trigger Threshold",
+			"crit-threshold-type-name": "Threshold Type",
+			"crit-threshold-type-hint": "Select whether critical hits are triggered by a natural die roll or by the total roll result.",
+			"crit-threshold-type-choices": {
+				"default": "Default (Use settings)",
+				"die": "Natural Die Roll",
+				"total": "Total Roll Result"
+			},
+			"crit-threshold-value-name": "Threshold Value",
+			"crit-threshold-value-hint": "The minimum total result or die roll required to trigger a critical hit animation."
+		},
+		"team-critical": {
+			"title": "yugen-criticals (Team)",
+			"select-actors": "Select Actors",
+			"execute": "Go",
+			"theme": "Theme",
+			"custom-message": "Message",
+			"search-placeholder": "Search actors...",
+			"themes": {
+				"persona": "Persona Cut-ins",
+				"vertical": "Vertical Slices",
+				"slash": "Cross Slash",
+				"horizontal": "Horizontal Bands",
+				"grid": "Grid Blocks",
+				"circle": "Circle Pop",
+				"zoom": "Cinematic Zoom",
+				"fade": "Smooth Fade"
+			}
+		}
+	}
+}
+

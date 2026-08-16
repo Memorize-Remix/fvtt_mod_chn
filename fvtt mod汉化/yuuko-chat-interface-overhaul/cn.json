@@ -1,0 +1,196 @@
+{
+  "YCIO": {
+    "WindowTitle": "Yuuko's Chat Interface Overhaul（GM 可在设置中覆盖）",
+    "MinimizeIcon": "最小化",
+    "Warning": {
+      "NoLabeledAvatars": "当前发言者没有带标签的头像。",
+      "FailedMsg": "消息发送失败。",
+      "InitialRenderFailed": "无法打开 YCIO 聊天窗口。请查看控制台了解详情。",
+      "NoAvailableSpeaker": "当前标签页中没有可用的发言身份。"
+    },
+    "Menu": {
+      "ExportLog": "导出聊天记录",
+      "ClearLog": "清除聊天记录",
+      "MosaicSpeaker": "模糊发言者（用于截图）",
+      "MosaicSpeakerOff": "移除模糊",
+      "Settings": "模组设置",
+      "About": "关于模组"
+    },
+    "Tabs": {
+      "Label": "聊天标签页",
+      "OOC": "OOC"
+    },
+    "Input": {
+      "Placeholder": "输入消息……",
+      "Send": "发送消息",
+      "TypingNone": "没有人在输入",
+      "Typing": " 正在输入……",
+      "AvatarSetting": "选择头像",
+      "Speaker": "发言身份",
+      "Formatting": "文本格式",
+      "JumpToBottom": "跳到底部",
+      "NewMessages": "新消息",
+      "Bold": "粗体",
+      "Italic": "斜体",
+      "Strikethrough": "删除线",
+      "TextColor": "文本颜色",
+      "SelectColor": "选择颜色",
+      "InlineAvatar": "从头像中插入表情",
+      "Wait": "让大家稍等一下",
+      "WaitLabel": "请稍候",
+      "WaitLabelActive": "好的，稍等",
+      "IsWaiting": " 请大家稍等片刻。",
+      "QuickRoll": "快速掷骰",
+      "QuickRollBtn": "掷骰！",
+      "QuickRollCancel": "取消",
+      "QuickRollNoSelection": "请至少选择一个骰子。"
+    },
+    "Speaker": {
+      "OOC": "OOC",
+      "Actor": "角色",
+      "NoAvailableToken": "没有可用于发言的 Token"
+    },
+    "Settings": {
+      "Sections": {
+        "Controls": "控制",
+        "Audio": "声音",
+        "Interface": "界面",
+        "Compatibility": "兼容性"
+      },
+      "SwapEnter": {
+        "Name": "➤ 使用 Shift+Enter 发送",
+        "Hint": "选中后，消息将仅通过 Shift+Enter 发送。单独按 Enter 只会换行。"
+      },
+      "NotificationSound": {
+        "Name": "➤ 新消息提示音路径",
+        "Hint": "(GM) 默认声音路径为 modules/yuuko-chat-interface-overhaul/sounds/page.mp3\n留空则不播放声音。\n（你可以在 FVTT 的「播放列表」标签页中「界面」选项下调整音量。）"
+      },
+      "PlayOnOOC": {
+        "Name": "➤ 为 OOC 标签页消息播放声音",
+        "Hint": "(GM) 选中后，OOC 标签页中的新消息也会触发提示音。"
+      },
+      "WindowTitle": {
+        "Name": "➤ 自定义窗口标题",
+        "Hint": "(GM) 浮动聊天窗口的标题文本。",
+        "Changed": "浮动聊天窗口标题已更改。<span style=\"color:#ff0000\"><b>请让您的玩家刷新页面以应用最新设置。</b></span>。"
+      },
+      "HideNativeSidebar": {
+        "Name": "➤ 隐藏 FVTT 原生聊天界面",
+        "Hint": "(GM) 包括原生侧边栏聊天和右下角的弹出式聊天气泡。",
+        "Choices": {
+          "None": "不隐藏",
+          "All": "为所有人隐藏",
+          "GM": "除 GM 外全部隐藏"
+        }
+      },
+      "BackgroundColor": {
+        "Name": "➤ 浮动聊天窗口背景颜色",
+        "Hint": "设置（你自己的）浮动聊天窗口的背景颜色。"
+      },
+      "BackgroundOpacity": {
+        "Name": "➤ 浮动聊天窗口背景不透明度",
+        "Hint": "调整浮动聊天窗口的背景不透明度（最低 30%）。"
+      },
+      "CleanSender": {
+        "Name": "➤ 精简发言者信息",
+        "Hint": "(GM) 某些系统会向发言者添加额外信息（例如 D&D 5e 会添加头像和副标题），这可能会降低本模组的版面美观度。\n启用此选项以仅保留 FVTT 原生发言者名称。",
+        "Changed": "设置已更改。<span style=\"color:#ff0000\"><b>请让您的玩家刷新页面以应用最新设置。</b></span>。"
+      },
+      "MessageTextColor": {
+        "Name": "➤ 默认消息文本颜色",
+        "Hint": "(GM) 覆盖浮动聊天窗口内的文本颜色（包括标题），用于处理会修改文本颜色的模组或系统。"
+      },
+      "EnableCustomMessageBg": {
+        "Name": "➤ 启用自定义消息背景",
+        "Hint": "(GM) 选中后，将移除浮动聊天窗口中消息的原始背景颜色或图像，并应用下一选项设置的颜色。适用于会更改消息背景颜色或图像的系统或模组（如 D&D 5e）。"
+      },
+      "CustomMessageBgColor": {
+        "Name": "➤ 消息背景颜色",
+        "Hint": "(GM) 自定义浮动聊天窗口中消息的背景颜色（需要勾选上一选项）。"
+      },
+      "StyleOverride": {
+        "Changed": "字体/背景样式设置已更改。<span style=\"color:#ff0000\"><b>请让您的玩家刷新页面以应用最新设置。</b></span>"
+      },
+      "UseTokenAvatar": {
+        "Name": "➤ 使用 Token 图像作为默认头像（实验性）",
+        "Hint": "未勾选：使用角色图像。\n勾选：使用场景中的 Token 图像作为默认头像。可能存在一些神秘问题。"
+      },
+      "HookArgumentType": {
+        "Name": "➤ 系统兼容性：消息内交互功能模式（DOM / jQuery）",
+        "Hint": "(GM) 决定消息中可交互容器的类型。如果你发现消息内的交互功能（如攻击、掷骰、伤害、展开骰子等）无法点击，并且在浏览器控制台（F12）中出现红色错误，请尝试切换此选项。",
+        "Choices": {
+          "jQuery": "jQuery 对象（兼容 CoC 7e 等较旧的系统）",
+          "native": "原生 DOM 元素（适用于 D&D 5e 等较新架构的系统）"
+        },
+        "Changed": "设置已更改。<span style=\"color:#ff0000\"><b>请让您的玩家刷新页面以应用最新设置。</b></span>"
+      },
+      "HookMode": {
+        "Name": "➤ 某些系统需要的进一步兼容模式切换（实验性）",
+        "Hint": "(GM) 如果上一选项不起作用，请尝试切换此项。\n在某些结构特殊的系统中，消息交互可能仍然失败或表现异常（如反复展开/关闭）。请尝试切换此项。\n切换到「隔离」可能会破坏某些第三方模组并造成轻微的性能损失。",
+        "Standard": "标准（适用于大多数系统）",
+        "Clone": "隔离（适用于少数具有独特或老旧架构的系统，如 SR 5e）",
+        "Changed": "设置已更改。<span style=\"color:#ff0000\"><b>请让您的玩家刷新页面以应用最新设置。</b></span>"
+      }
+    },
+    "Avatar": {
+      "WindowTitle": "选择发言头像",
+      "Add": "添加头像",
+      "Select": "选择头像",
+      "Delete": "删除头像",
+      "Label": "头像标签",
+      "ErrorUpdateList": "更新头像列表失败。请重试。",
+      "Managing": "正在管理角色：",
+      "Default": "默认",
+      "NoAvatar": "隐藏（仅 GM）",
+      "LabelPlaceholder": "头像标签……",
+      "Confirm": "确认",
+      "Current": "当前头像：",
+      "UnlinkedWarning": "所选 Token 未链接到角色数据<br>因此，强制使用 Token 图像："
+    },
+    "Picker": {
+      "Title": "选择表情",
+      "NoAvatars": "没有可用的表情（请在头像选择器中为要用作表情的头像设置标签）。"
+    },
+    "Editor": {
+      "WindowTitle": "编辑消息",
+      "Edit": "编辑消息",
+      "Content": "消息内容",
+      "Conflict": "该消息已被其他操作更新。为避免覆盖，已取消保存。",
+      "ErrorUpdate": "更新消息失败。请重试。",
+      "Update": "确认编辑"
+    },
+    "Exporter": {
+      "Title": "导出聊天记录",
+      "Description": "请选择要导出的频道标签页。导出过程会将所有图像转换为嵌入格式，可能需要几分钟。",
+      "IncludePrivate": "包含私密消息",
+      "IncludePrivateHint": "包含你可见的私聊、暗骰和其他私密消息。",
+      "PrivateWarning": "导出的私密消息可能包含敏感信息。请谨慎分享该文件。",
+      "OOCLabel": "OOC",
+      "OOCButton": "OOC",
+      "WarningNoSelection": "请至少选择一个标签页进行导出。",
+      "InfoPreparing": "正在准备导出；图像转换可能需要一些时间。请稍候……",
+      "InfoDownloadingCSS": "正在下载并打包样式表……",
+      "InfoComplete": "导出完成！",
+      "WarningResourceFailures": "已省略 {count} 个外部资源；导出的文件可能显示不完整的内容。",
+      "ErrorFailed": "聊天记录导出失败：{error}",
+      "ButtonStart": "开始导出",
+      "HtmlTitle": "聊天记录导出"
+    },
+    "Clearer": {
+      "Title": "清除聊天记录",
+      "Description": "<p>确定要清除所有聊天记录吗？此操作<span style=\"color:#ff0000\"><b>无法撤销</b></span>。</p>",
+      "Notification": "所有聊天记录已清除。"
+    },
+    "About": {
+      "Title": "关于模组",
+      "ModuleName": "Yuuko's Chat Interface Overhaul",
+      "Version": "版本",
+      "LastUpdate": "最后更新",
+      "ProjectUrl": "项目地址",
+      "ProjectLink": "GitHub 仓库",
+      "Author": "作者",
+      "Contact": "联系方式",
+      "Donate": "支持 Yuuko"
+    }
+  }
+}

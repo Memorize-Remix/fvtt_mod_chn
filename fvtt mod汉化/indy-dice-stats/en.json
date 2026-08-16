@@ -1,0 +1,248 @@
+{
+  "IDS": {
+    "App": {
+      "Name": "Indy Dice Stats",
+      "LuckLedger": "Luck Ledger",
+      "Subtitle": "Track roll distributions by player, action, and die type.",
+      "MonitorHint": "Double-click to open stats.",
+      "MonitorTitle": "Indy Dice Stats Monitor"
+    },
+    "Common": {
+      "Action": "Action",
+      "All": "All",
+      "AllActions": "All Actions",
+      "AllPlayers": "All Players",
+      "AllTime": "All Time",
+      "Average": "Average",
+      "AverageShort": "Avg",
+      "Check": "Check",
+      "Count": "Count",
+      "Die": "Die",
+      "Max": "Max",
+      "Min": "Min",
+      "None": "None",
+      "Player": "Player",
+      "Roll": "Roll",
+      "Save": "Save",
+      "SaveButton": "Save",
+      "Session": "Session",
+      "Skill": "Skill",
+      "Today": "Today",
+      "Unknown": "Unknown"
+    },
+    "Actions": {
+      "Attack": "Attack Rolls",
+      "Damage": "Damage Rolls",
+      "Save": "Saving Throw",
+      "Check": "Ability Check",
+      "Skill": "Skill Check",
+      "Ability": "Ability Check",
+      "Initiative": "Initiative",
+      "DeathSave": "Death Save",
+      "Tool": "Tool Check",
+      "Heal": "Healing",
+      "Spell": "Spell",
+      "Other": "Other"
+    },
+    "ActionNames": {
+      "Attack": "Attack",
+      "Damage": "Damage",
+      "Save": "Saving Throw",
+      "Check": "Ability Check",
+      "Skill": "Skill Check",
+      "Ability": "Ability Check",
+      "Initiative": "Initiative",
+      "DeathSave": "Death Save",
+      "Tool": "Tool Check",
+      "Heal": "Healing",
+      "Spell": "Spell",
+      "Other": "Other"
+    },
+    "Controls": {
+      "PlayerHint": "Choose which player's stats to view.",
+      "ComparePlayers": "Compare Players",
+      "CompareHint": "Select additional players to compare against the chosen player.",
+      "ActionHint": "Filter stats by roll action type.",
+      "SaveCheck": "Save/Check",
+      "DetailHint": "Filter saving throws, ability checks, or skill checks.",
+      "DieHint": "Filter stats by die type (d4, d6, d20, etc.).",
+      "SessionHint": "Filter stats to a specific day or all time."
+    },
+    "Summary": {
+      "TotalDice": "Total Dice",
+      "TotalDiceHint": "All recorded dice results",
+      "FilteredDice": "Filtered Dice",
+      "FilteredDiceWithDie": "Filtered Dice ({die})",
+      "FilteredDiceHint": "Count for the selected die",
+      "Average": "Average (Selected Die)",
+      "AverageHint": "Mean result for current die",
+      "TopAction": "Top Action",
+      "TopActionHint": "Most rolled category",
+      "TopType": "Top Type",
+      "TopRoll": "Top Roll"
+    },
+    "Charts": {
+      "Distribution": "Distribution",
+      "DistributionAria": "Distribution chart",
+      "BreakdownAria": "Breakdown chart",
+      "Normalize": "Normalize",
+      "NormalizeHint": "Normalize comparisons by percent instead of raw counts.",
+      "NormalizedSuffix": " (Normalized)",
+      "Candles": "Candles",
+      "CandlesHint": "Show candlestick ranges on the trend view.",
+      "MaxStreak": "Max Streak",
+      "StreakHint": "Toggle between min/max streak heatmaps.",
+      "DieResults": "{die} Results",
+      "DistributionTitle": "Distribution: {die}{suffix}",
+      "TrendWithDie": "Trend {die}",
+      "StreaksWithDie": "Streaks {die}",
+      "DistributionWithDie": "Distribution {die}",
+      "DistributionNormalizedWithDie": "Distribution {die} (Normalized)",
+      "DistributionParen": "Distribution ({die})",
+      "CycleHint": "Click to toggle distribution, trend, and streaks view.",
+      "NoStreakData": "No streak data yet.",
+      "StreakCell": "{player} {type} streak on {date}: {value}",
+      "TrendTooltip": "{label}: avg {avg}, min {min}, max {max}",
+      "CandleTooltip": "{label}: avg {avg}, min {min}, max {max}, q1 {q1}, q3 {q3}",
+      "ActionBreakdown": "Action Breakdown",
+      "ActionsWithDie": "Actions ({die})",
+      "ActionType": "{action} Type",
+      "DiceMix": "Dice Mix ({action})",
+      "NoData": "No data",
+      "NoDataForFilters": "No data for current filters"
+    },
+    "Table": {
+      "DieSummary": "Die Summary",
+      "DieSummaryHint": "Selected player stats.",
+      "MinStreak": "Min Streak",
+      "MaxStreak": "Max Streak",
+      "NoRolls": "No rolls captured yet.",
+      "PlayerComparison": "Player Comparison",
+      "PlayerComparisonHint": "Totals by player.",
+      "TotalRolls": "Total Rolls",
+      "SelectPlayers": "Select two or more players to compare."
+    },
+    "Latest": {
+      "Title": "Latest Roll",
+      "Awaiting": "Awaiting Rolls",
+      "Listening": "Listening for rolls...",
+      "Unknown": "Unknown",
+      "Advantage": "Advantage",
+      "Disadvantage": "Disadvantage",
+      "NoDice": "No dice results",
+      "Blind": "Blind",
+      "Private": "Private",
+      "Self": "Self"
+    },
+    "Detail": {
+      "Save": "{label} Save",
+      "Skill": "{label} Skill",
+      "Check": "{label} Check"
+    },
+    "Reset": {
+      "Title": "Reset Dice Stats",
+      "Description": "Clear stored stats for a player or for everyone.",
+      "Button": "Reset Selected",
+      "ConfirmAll": "This clears stats for every player. Continue?",
+      "ConfirmPlayer": "This clears stored stats for the selected player. Continue?"
+    },
+    "Visibility": {
+      "Title": "Player Visibility",
+      "Description": "Select players to hide from the dice stats dashboard.",
+      "HiddenPlayers": "Hidden Players",
+      "ReshowHint": "Uncheck a player and save to show them again."
+    },
+    "Faker": {
+      "Title": "Generate Fake Data",
+      "Description": "Create 12 sessions of sample rolls for testing.",
+      "Note": "Generates 30–90 rolls per session across common roll types, checks, and saves. Existing stats are not cleared.",
+      "Confirm": "Add fake dice stats for <strong>{name}</strong> across {sessions} sessions ({min}–{max} rolls each). Existing stats are not cleared. Continue?",
+      "Complete": "Indy Dice Stats | Added {rolls} fake rolls across {sessions} sessions for {name}."
+    },
+    "Settings": {
+      "Enabled": {
+        "Name": "Enable dice tracking",
+        "Hint": "Track dice rolls for D&D 5e, Pathfinder 2e, and Midi-QOL workflows."
+      },
+      "RestrictToGm": {
+        "Name": "Restrict module to GM",
+        "Hint": "Totally disable Indy Dice Stats for non-GM users."
+      },
+      "RecordSelf": {
+        "Name": "Record Self Rolls",
+        "Hint": "Record self-only rolls (private) in the dice stats."
+      },
+      "RecordGmPrivate": {
+        "Name": "Record Private GM Rolls",
+        "Hint": "Record GM private rolls in the dice stats."
+      },
+      "RecordGmBlind": {
+        "Name": "Record Blind GM Rolls",
+        "Hint": "Record GM blind rolls in the dice stats."
+      },
+      "AllowGmStats": {
+        "Name": "Allow Players to See GM Stats",
+        "Hint": "Allow non-GM users to include GM stats in player lists and All Players views."
+      },
+      "ShowActorNames": {
+        "Name": "Show Actor Names to Players",
+        "Hint": "Display actor names in the Latest Roll monitor for non-GM users."
+      },
+      "ShowLatest": {
+        "Name": "Show Latest Roll",
+        "Hint": "Display the latest roll in the dashboard title and floating monitor."
+      },
+      "OnlyD20": {
+        "Name": "Only Monitor d20",
+        "Hint": "Only update the latest roll display when a roll includes a d20."
+      },
+      "DebugMidi": {
+        "Name": "Debug Midi-QOL Roll Capture",
+        "Hint": "Log Midi-QOL roll sources and deduping details to the console."
+      },
+      "RollDelay": {
+        "Name": "Roll Processing Delay (ms)",
+        "Hint": "Delay processing chat and Midi-QOL rolls. When Dice So Nice is active, processing waits for its completion hook instead of this delay."
+      },
+      "GlobalStats": "Global Dice Stats",
+      "UiState": "Indy Dice Stats UI State",
+      "MonitorPosition": "Indy Dice Stats Monitor Position",
+      "BodyFont": {
+        "Name": "Body Font",
+        "Hint": "Font used for general text in the module."
+      },
+      "TitleFont": {
+        "Name": "Title Font",
+        "Hint": "Font used for titles and large numbers."
+      },
+      "BodyScale": {
+        "Name": "Body Font Scale",
+        "Hint": "Multiplier applied to body font sizes (e.g. 1.1 = 10% larger)."
+      },
+      "TitleScale": {
+        "Name": "Title Font Scale",
+        "Hint": "Multiplier applied to title/number font sizes."
+      },
+      "ChartScale": {
+        "Name": "Chart Legend Font Scale",
+        "Hint": "Multiplier applied to chart legend and axis label sizes."
+      }
+    },
+    "Menus": {
+      "Viewer": {
+        "Label": "Open Dice Dashboard",
+        "Hint": "View dice statistics for players and actions."
+      },
+      "Reset": {
+        "Hint": "Clear dice statistics for players."
+      },
+      "Visibility": {
+        "Label": "Configure Hidden Players",
+        "Hint": "Choose players to hide from the dice stats dashboard."
+      },
+      "Faker": {
+        "Hint": "Create fake dice stats for a selected player."
+      }
+    }
+  }
+}

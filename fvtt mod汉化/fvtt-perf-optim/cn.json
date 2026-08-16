@@ -1,83 +1,105 @@
-{"fvtt-perf-optim": {
-    "settings": {
-      "optimize-interface-layer-clipping": {
-        "name": "优化Token界面渲染批处理",
-        "hint": "优化Token界面元素的渲染批处理。预计不会造成视觉质量下降。需要启用此选项才能使Token状态条和效果缓存设置产生明显效果。"
-      },
-      "token-bars-caching": {
-        "name": "缓存Token资源条",
-        "hint": "将Token资源条缓存为纹理。在高缩放级别下可能会有非常轻微的视觉质量下降。"
-      },
-      "token-effects-caching": {
-        "name": "缓存Token效果",
-        "hint": "缓存Token效果栏。在高缩放级别下可能会有非常轻微的视觉质量下降。"
-      },
-      "precomputed-noise-textures": {
-        "name": "优化动态光源",
-        "hint": "通过使用预计算的FBM噪声纹理来优化某些动态光源(扭曲波、彩灯、幽光、雾斑、扭曲彩虹、涡流)的着色器。视觉影响很小，但对性能提升显著，特别是在低端GPU上。"
-      },
-      "reduce-lighting-resolution": {
-        "name": "缩放光照效果分辨率",
-        "hint": "降低光照效果的内部分辨率以提高性能。这可以显著提升性能，特别是当使用多个光源或大型光源时。视觉影响应该很小，除了在极高缩放级别和一些具有清晰轮廓的光照效果(如六角穹顶纹)。你可以在设置菜单中为各个光照层配置渲染比例。"
-      },
-      "spritesheet-substitution": {
-        "name": "使用精灵表替换纹理",
-        "hint": "用优化的精灵表替换核心SVG图标和其他图形元素。当显示大量UI图标(如日志、光源、门等)时，这可以提高性能和资源利用率。"
-      },
-      "spritesheet-substitution-custom": {
-        "name": "自定义精灵表",
-        "label": "管理自定义精灵表",
-        "hint": "自定义精灵表可用于替换更多核心或自定义图标和纹理，例如自定义状态标记、Token图或图块，以提高性能",
-        "menu": {
-          "add": "添加自定义精灵表",
-          "spritesheet": "选择自定义精灵表",
-          "delete": "删除自定义精灵表",
-          "title": "管理自定义精灵表",
-          "warn-no-src": "你必须选择精灵表源才能添加",
-          "warn-no-json": "你选择的文件必须是有效的pixi.js精灵表JSON文件",
-          "warn-inalid-asset": "你选择的文件不包含有效的pixi.js精灵表数据",
-          "warn-init-failed": "Prime Performance: 加载默认图标替换精灵表失败。精灵表优化将被禁用。请查看控制台获取更多详情。",
-          "warn-custom-spritesheets-failed": "Prime Performance: 加载一个或多个自定义精灵表失败。请查看控制台获取更多详情。"
-        }
-      },
-      "token-ring-spritesheet-support": {
-        "name": "动态Token精灵表支持",
-        "hint": "允许将带有动态环的Token替换为精灵表纹理。仅在使用动态Token环和精灵表替换功能来替换Token纹理时需要。"
-      },
-      "disable-app-v2-background-blur": {
-        "name": "禁用背景模糊效果",
-        "hint": "禁用app v2中的背景模糊效果和所有其他UI元素。这可以显著提高性能，特别是在低端GPU和某些操作系统(如MacOS)上。"
-      },
-      "custom-render-scale": {
-        "name": "光照效果渲染比例",
-        "label": "配置渲染比例",
-        "hint": "为画布上的光照效果配置渲染比例。这可以显著提高性能，特别是在低端GPU上。视觉影响从不可察觉到非常明显，取决于效果层。激活\"降低光照效果分辨率\"以使此配置生效。",
-        "menu": {
-          "title": "自定义渲染比例",
-          "label": "自定义渲染比例",
-          "description": "为不同的光照效果配置单独的渲染比例。渲染比例是光照效果内部分辨率的倍率。值为100表示100%渲染比例，即无变化。值为50表示分辨率减半，以此类推。",
-          "confirm": "确认",
-          "cancel": "重置",
-          "FIELDS": {
-            "background": {
-              "label": "背景",
-              "hint": "背景效果渲染比例。视觉影响高，性能影响小。优化默认值为100%"
-            },
-            "illumination": {
-              "label": "照明",
-              "hint": "照明效果渲染比例。视觉影响非常小，性能影响中等。优化默认值为40%"
-            },
-            "coloration": {
-              "label": "着色",
-              "hint": "着色效果渲染比例。视觉影响中等至高，取决于着色技术。性能影响高。优化默认值为100%。"
-            },
-            "darkness": {
-              "label": "黑暗",
-              "hint": "黑暗效果渲染比例。视觉影响最小，性能影响最小。优化默认值为50%"
-            }
-          }
-        }
-      }
-    }
-  }
+{
+	"fvtt-perf-optim": {
+		"settings": {
+			"optimize-interface-layer-clipping": {
+				"name": "优化Token界面渲染批处理",
+				"hint": "通过跨 Token 边界重新排序各界面元素的绘制调用来优化 Token 界面的渲染批处理。与「缓存 Token 资源条」和「token-effects-caching」一同启用可获得最佳效果。"
+			},
+
+			"token-bars-caching": {
+				"name": "缓存Token资源条",
+				"hint": "将 Token 资源条缓存为纹理。在高缩放级别下可能出现极轻微的视觉降级。"
+			},
+
+			"token-effects-caching": {
+				"name": "缓存Token效果",
+				"hint": "缓存 Token 效果条。在高缩放级别下可能出现极轻微的视觉降级。"
+			},
+
+			"precomputed-noise-textures": {
+				"name": "优化动态光源",
+				"hint": "为某些动态光源启用着色器优化（Bewitching Wave、Fairy Light、Ghostly Light、Smoke Patch 等）。可大幅提升包含大量动态光源的场景的性能。"
+			},
+
+			"reduce-lighting-resolution": {
+				"name": "缩放光照效果分辨率",
+				"hint": "降低光照效果的内部分辨率以提升性能。V14 已对除最高档以外的性能等级实现了此方案，因此在 V14 中启用此选项仅会为所有光照层启用精细控制。"
+			},
+
+			"control-icon-caching": {
+				"name": "缓存控件图标",
+				"hint": "将控件图标（笔记、声音、绘图）缓存为位图。将每个图标减少为一次绘制调用，无论数量多少都与其他所有图标一起批处理。"
+			},
+
+			"mesh-geometry-fitting": {
+				"name": "适配 Token 与图块网格几何",
+				"hint": "将 Token 和图块的渲染几何适配为一个贴合其纹理可见（非透明）区域的紧凑多边形。这可以减少具有大面积透明区域的 Token 和图块（尤其是大型圆形 Token 图像）的 GPU 过度绘制。对于动画（视频）Token、图块以及其他特殊情况会自动跳过。略有实验性。"
+			},
+
+			"wall-sprite-caching": {
+				"name": "将墙壁图形缓存为精灵",
+				"hint": "通过用预烘焙精灵替换 PIXI.Graphics 对象来优化墙壁界面线段的绘制。在墙壁图层激活时能大幅提升性能。"
+			},
+
+			"token-layer-cache": {
+				"name": "缓存 Token 界面图层",
+				"hint": "在每次变更时将所有 Token 界面元素（资源条、名牌、状态效果、虚空网格）渲染到纹理一次，然后在每一帧应用缓存结果。可以大幅提升包含大量 Token 的场景的性能。"
+			},
+
+			"ember-shader-optimizations": {
+				"name": "优化 Ember 着色器",
+				"hint": "优化 Ember 模组的着色器。可大幅提升区域地图、世界地图以及各种其他场景的性能。",
+				"emberVersionWarningTitle": "Prime Performance：未经验证的 Ember 版本",
+				"emberVersionWarningMessage": "Prime Performance 的 Ember 着色器优化尚未针对 Ember {currentVersion} 进行验证。由于 Ember 开发迭代迅速，这些优化可能无法在此版本上正常工作。请先禁用 Prime Performance，再向 Ember 团队报告相关问题。",
+				"emberVersionWarningSuppress": "屏蔽 Ember {currentVersion} 的警告",
+				"emberVersionWarningSuppressed": "已屏蔽 Ember {currentVersion} 及更早版本的警告。"
+			},
+
+			"ember-version-warning-suppressed-through": {
+				"name": "屏蔽 Ember 警告（截至指定版本）",
+				"hint": "不显示此 Ember 版本或任何更早版本的兼容性警告。清空该字段以恢复所有警告。"
+			},
+
+			"dnd5e-optimizations": {
+				"name": "启用 D&D 5e 专属优化",
+				"hint": "优化 D&D 5e 专属功能。用优化版本替换地图位置笔记标记。可大幅提升包含大量地图位置笔记的场景的性能。"
+			},
+
+			"disable-app-v2-background-blur": {
+				"name": "禁用背景模糊效果",
+				"hint": "禁用 app v2 和所有其他界面元素中的背景模糊效果。这可以显著提升性能，尤其是在低端 GPU 上。"
+			},
+
+			"custom-render-scale": {
+				"name": "光照效果渲染比例",
+				"label": "配置渲染比例",
+				"hint": "为画布上的光照效果配置渲染比例。这可以显著提高性能，特别是在低端GPU上。视觉影响从不可察觉到非常明显，取决于效果层。激活\"降低光照效果分辨率\"以使此配置生效。",
+				"menu": {
+					"title": "自定义渲染比例",
+					"label": "自定义渲染比例",
+					"description": "为不同的光照效果配置单独的渲染比例。渲染比例是光照效果内部分辨率的倍率。值为100表示100%渲染比例，即无变化。值为50表示分辨率减半，以此类推。",
+					"confirm": "确认",
+					"cancel": "重置",
+					"FIELDS": {
+						"background": {
+							"label": "背景",
+							"hint": "背景效果渲染比例。视觉影响高，性能影响小。优化默认值为100%"
+						},
+						"illumination": {
+							"label": "照明",
+							"hint": "照明效果渲染比例。视觉影响非常小，性能影响中等。优化默认值为40%"
+						},
+						"coloration": {
+							"label": "着色",
+							"hint": "着色效果渲染比例。视觉影响中等至高，取决于着色技术。性能影响高。优化默认值为100%。"
+						},
+						"darkness": {
+							"label": "黑暗",
+							"hint": "黑暗效果渲染比例。视觉影响最小，性能影响最小。优化默认值为50%"
+						}
+					}
+				}
+			}
+		}
+	}
 }

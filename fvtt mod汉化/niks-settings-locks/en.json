@@ -1,0 +1,93 @@
+{
+  "NSL": {
+    "ModuleTitle": "Nik's Settings Locks",
+
+    "LockType": {
+      "None": "Unlocked",
+      "Soft": "Soft Lock",
+      "Hard": "Hard Lock"
+    },
+
+    "Tooltip": {
+      "Unlocked": "Click to cycle lock state.\nUnlocked — players can freely change this.",
+      "Soft": "Soft Locked — the GM's value is applied once. Players may override it permanently.\nClick to cycle to Hard Lock. Right-click to unlock.",
+      "Hard": "Hard Locked — forced to the GM's value. Players cannot change it.\nClick to unlock. Right-click to cycle to Soft Lock.",
+      "LockedByGM": "This is locked by the GM.",
+      "SoftLockedByGM": "This was set by the GM. You may change it if you wish."
+    },
+
+    "Notifications": {
+      "LocksAppliedOne": "Applied {count} lock.",
+      "LocksAppliedMany": "Applied {count} locks.",
+      "HardLockBlocked": "Cannot change \"{name}\" — it is locked by the GM.",
+      "ExportSuccess": "Locks exported successfully.",
+      "ImportSuccessOne": "Imported {count} lock successfully.",
+      "ImportSuccessMany": "Imported {count} locks successfully.",
+      "ImportFailed": "Failed to import locks: {error}",
+      "NoLocksToExport": "No locks to export.",
+      "ReloadForcing": "Some locked settings require a reload to take effect. Reloading now…",
+      "LocksEnforced": "Locks have been updated by the GM.",
+      "SoftLocksReenforcedOne": "Re-enforced {count} soft lock. Players will receive the updated value on their next login.",
+      "SoftLocksReenforcedMany": "Re-enforced {count} soft locks. Players will receive the updated values on their next login.",
+      "NoSoftLocks": "No soft locks to re-enforce.",
+      "SoftLocksUpdated": "Updated {count} soft lock(s) for players."
+    },
+
+    "Prompt": {
+      "SoftLockUpdateTitle": "Update Soft Locks?",
+      "SoftLockUpdateDesc": "You have changed the values of settings that are currently soft-locked. Do you want to update the soft lock so players receive the new values, or keep it as a local change for yourself only?",
+      "NewValue": "New value",
+      "UpdateLock": "Update soft lock for players",
+      "ApplySelected": "Apply Selected"
+    },
+
+    "Settings": {
+      "OpenManager": "Open Lock Manager",
+      "OpenManagerHint": "Opens a dedicated window for managing all settings and control locks.",
+      "MinRoleName": "Minimum Role for Lock Management",
+      "MinRoleHint": "The minimum user role required to view and manage locks. Higher roles are always included (e.g. selecting Trusted Player also grants access to Assistant GMs and Game Masters).",
+      "RoleGM": "Game Master",
+      "RoleAssistant": "Assistant Game Master",
+      "RoleTrusted": "Trusted Player"
+    },
+
+    "Manager": {
+      "Title": "Settings Lock Manager",
+      "FilterPlaceholder": "Filter settings and controls…",
+      "ColumnName": "Name",
+      "ColumnModule": "Module",
+      "ColumnType": "Type",
+      "ColumnValue": "Value",
+      "ColumnLock": "Lock",
+      "TypeSetting": "Setting",
+      "TypeControl": "Control",
+      "NoResults": "No lockable items match your filter.",
+      "ExportButton": "Export Locks",
+      "ImportButton": "Import Locks",
+      "ReenforceButton": "Re-enforce Soft Locks",
+      "ClearAllButton": "Clear All Locks",
+      "ClearAllConfirm": "Are you sure you want to remove all locks?",
+      "ShowLockedOnly": "Show locked only",
+      "FilterAll": "All",
+      "FilterSettings": "Settings",
+      "FilterControls": "Controls",
+      "HiddenSettingTag": "menu",
+      "OrphanedTitle": "Orphaned Locks",
+      "OrphanedHint": "These locks reference settings or controls that are no longer registered. This usually means the module was uninstalled or the setting was removed.",
+      "OrphanedColumnKey": "Key",
+      "OrphanedRemove": "Remove this lock",
+      "OrphanedRemoveAll": "Remove All Orphaned"
+    },
+
+    "Export": {
+      "Filename": "settings-locks"
+    },
+
+    "Import": {
+      "DialogTitle": "Import Locks",
+      "ConfirmMessageOne": "This will import {count} lock. Existing locks for the same items will be overwritten. Continue?",
+      "ConfirmMessageMany": "This will import {count} locks. Existing locks for the same items will be overwritten. Continue?",
+      "InvalidFormat": "Invalid file format. Expected a JSON file exported from Nik's Settings Locks."
+    }
+  }
+}

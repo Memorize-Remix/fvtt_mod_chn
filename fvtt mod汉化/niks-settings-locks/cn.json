@@ -1,0 +1,93 @@
+{
+  "NSL": {
+    "ModuleTitle": "Nik's Settings Locks",
+
+    "LockType": {
+      "None": "未锁定",
+      "Soft": "软锁定",
+      "Hard": "硬锁定"
+    },
+
+    "Tooltip": {
+      "Unlocked": "点击以循环切换锁定状态。\n未锁定——玩家可以自由更改此项。",
+      "Soft": "软锁定——GM 的值会被应用一次。玩家可以永久覆盖它。\n点击以切换为硬锁定。右键取消锁定。",
+      "Hard": "硬锁定——强制使用 GM 的值。玩家无法更改。\n点击取消锁定。右键切换为软锁定。",
+      "LockedByGM": "此项已被 GM 锁定。",
+      "SoftLockedByGM": "此项由 GM 设置。如果你愿意，可以更改它。"
+    },
+
+    "Notifications": {
+      "LocksAppliedOne": "已应用 {count} 个锁定。",
+      "LocksAppliedMany": "已应用 {count} 个锁定。",
+      "HardLockBlocked": "无法更改 \"{name}\"——它已被 GM 锁定。",
+      "ExportSuccess": "锁定已成功导出。",
+      "ImportSuccessOne": "已成功导入 {count} 个锁定。",
+      "ImportSuccessMany": "已成功导入 {count} 个锁定。",
+      "ImportFailed": "导入锁定失败：{error}",
+      "NoLocksToExport": "没有可导出的锁定。",
+      "ReloadForcing": "某些已锁定的设置需要重新加载才能生效。正在重新加载……",
+      "LocksEnforced": "锁定已被 GM 更新。",
+      "SoftLocksReenforcedOne": "已重新执行 {count} 个软锁定。玩家将在下次登录时收到更新后的值。",
+      "SoftLocksReenforcedMany": "已重新执行 {count} 个软锁定。玩家将在下次登录时收到更新后的值。",
+      "NoSoftLocks": "没有可重新执行的软锁定。",
+      "SoftLocksUpdated": "已为玩家更新 {count} 个软锁定。"
+    },
+
+    "Prompt": {
+      "SoftLockUpdateTitle": "更新软锁定？",
+      "SoftLockUpdateDesc": "你更改了当前处于软锁定状态的设置的值。是否要更新软锁定，以便玩家收到新值，还是仅作为你自己的本地更改保留？",
+      "NewValue": "新值",
+      "UpdateLock": "为玩家更新软锁定",
+      "ApplySelected": "应用所选"
+    },
+
+    "Settings": {
+      "OpenManager": "打开锁定管理器",
+      "OpenManagerHint": "打开一个专用窗口，用于管理所有设置和控制锁定。",
+      "MinRoleName": "锁定管理的最低角色",
+      "MinRoleHint": "查看和管理锁定所需的最低用户角色。更高级别的角色始终包含在内（例如，选择受信任玩家也会授予助理 GM 和 GM 的访问权限）。",
+      "RoleGM": "游戏主持人",
+      "RoleAssistant": "助理游戏主持人",
+      "RoleTrusted": "受信任玩家"
+    },
+
+    "Manager": {
+      "Title": "设置锁定管理器",
+      "FilterPlaceholder": "筛选设置和控制……",
+      "ColumnName": "名称",
+      "ColumnModule": "模组",
+      "ColumnType": "类型",
+      "ColumnValue": "值",
+      "ColumnLock": "锁定",
+      "TypeSetting": "设置",
+      "TypeControl": "控制",
+      "NoResults": "没有符合筛选条件的可锁定项目。",
+      "ExportButton": "导出锁定",
+      "ImportButton": "导入锁定",
+      "ReenforceButton": "重新执行软锁定",
+      "ClearAllButton": "清除所有锁定",
+      "ClearAllConfirm": "确定要移除所有锁定吗？",
+      "ShowLockedOnly": "仅显示已锁定",
+      "FilterAll": "全部",
+      "FilterSettings": "设置",
+      "FilterControls": "控制",
+      "HiddenSettingTag": "menu",
+      "OrphanedTitle": "孤立锁定",
+      "OrphanedHint": "这些锁定引用了已不再注册的设置或控制。这通常意味着模组已被卸载或设置已被移除。",
+      "OrphanedColumnKey": "键",
+      "OrphanedRemove": "移除此锁定",
+      "OrphanedRemoveAll": "移除所有孤立项"
+    },
+
+    "Export": {
+      "Filename": "settings-locks"
+    },
+
+    "Import": {
+      "DialogTitle": "导入锁定",
+      "ConfirmMessageOne": "这将导入 {count} 个锁定。相同项目的现有锁定将被覆盖。继续吗？",
+      "ConfirmMessageMany": "这将导入 {count} 个锁定。相同项目的现有锁定将被覆盖。继续吗？",
+      "InvalidFormat": "文件格式无效。应为从 Nik's Settings Locks 导出的 JSON 文件。"
+    }
+  }
+}

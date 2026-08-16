@@ -1,313 +1,677 @@
-{"obs-utils": {
-    "strings": {
-      "module": "OBS Utils",
-      "ic": "战斗中",
-      "trackAll": "追踪所有拥有的Token",
-      "trackOne": "追踪当前活跃的Token",
-      "clonePlayer": "克隆选定玩家的视窗",
-      "cloneDM": "克隆DM的视窗",
-      "birdseye": "适配地图到屏幕",
-      "cloneTurnPlayer": "克隆回合玩家的视窗",
-      "ooc": "非战斗状态",
-      "trackManual": "追踪手动Token列表",
-      "limitCanvas": "限制画布到屏幕边缘",
-      "keypressInfo1": "已切换",
-      "keypressInfo2": "模式至",
-      "avInputPlaceholder": "输入文字或搜索",
-      "iconPlaceholder": "图标",
-      "true": "是",
-      "false": "否",
-      "missingTypeNotice": "旧版/缺失类型。请在下拉菜单中选择新类型进行编辑。",
-      "done": "完成",
-      "trackPlayerOwned": "追踪玩家拥有的Token",
-      "pauseCameraTracking": "暂停镜头追踪",
-	  "manualOBSWarning": "你当前处于 OBS 模式。如需返回正常模式，请按下 SHIFT + ALT + CONTROL + O（默认）或你的自定义快捷键，然后重新加载页面。",
-	  "disableOBSMode": "禁用 OBS 模式",
-	  "disableOBSModeHint": "如果你卡在 OBS 模式中，此选项将关闭手动 OBS 模式设置。"
-    },
-    "applications": {
-      "rollOverlayEditor": {
-        "name": "掷骰覆盖编辑器",
-        "test": "测试",
-        "preRollImage": "掷骰前图像",
-        "rollImage": "掷骰图像",
-        "postRollImage": "掷骰后图像",
-        "imageUrl": "图像URL",
-        "foregroundImageUrl": "前景图像URL",
-        "backgroundImageUrl": "背景图像URL",
-        "delay": "延迟(毫秒)",
-        "fadeIn": "淡入(毫秒)",
-        "duration": "持续时间(毫秒)",
-        "fadeOut": "淡出(毫秒)"
-      },
-      "director": {
-        "name": "导演模式",
-        "icTypeHeader": "战斗模式类型",
-        "oocTypeHeader": "非战斗模式类型",
-        "canvasOptionsHeader": "画布选项",
-        "trackedPlayerHeader": "追踪玩家",
-        "obsUserCommands": "OBS用户命令",
-        "forceOpenSettingsForOBSUser": "强制为OBS用户打开设置菜单",
-		"noGMWarning": "当前没有GM登录，无法更改导演设置"
-      },
-      "obsRemote": {
-        "name": "OBS远程设置",
-        "sceneName": "场景名称",
-        "sourceName": "OBS源名称",
-        "switchScene": "切换场景",
-        "toggleSource": "切换源",
-        "enableSource": "启用源",
-        "disableSource": "禁用源",
-        "vttSceneLabel": "VTT场景名称",
-        "vttScenePlaceholder": "输入名称或拖入场景",
-        "onLoad": "加载",
-        "onCombatStart": "战斗开始",
-        "onCombatEnd": "战斗结束",
-        "onPause": "暂停",
-        "onUnpause": "取消暂停",
-        "onSceneLoad": "场景加载",
-        "onStopStreaming": "停止直播"
-      },
-      "obsWebsocket": {
-        "name": "OBS Websocket设置",
-        "urlLabel": "URL",
-        "portLabel": "端口",
-        "passwordLabel": "密码",
-        "syncLabel": "同步目标客户端",
-        "saveButton": "保存",
-        "syncButton": "同步"
-      },
-      "actorSelect": {
-        "name": "角色选择",
-        "searchPlaceholder": "搜索",
-        "closeButton": "关闭",
-        "resetButton": "重置"
-      },
-      "overlayEditor": {
-        "name": "覆盖编辑器",
-        "addButton": "添加新组件",
-        "editStyleButton": "编辑样式",
-        "removeButton": "移除覆盖",
-        "removeComponentButton": "移除组件",
-        "importButton": "导入",
-        "exportButton": "导出",
-        "addOverlayButton": "添加新覆盖",
-        "closeButton": "关闭",
-        "importDialog": {
-          "title": "导入数据：覆盖",
-          "hint1": "你即将导入导出的覆盖配置。请确保它是在同一系统中导出的，否则AV覆盖可能无法工作。",
-          "hint2": "请选择是要替换现有覆盖还是追加导入列表。",
-          "replaceButton": "替换",
-          "appendButton": "追加",
-          "fileError": "未上传数据文件",
-          "versionError": "版本不受支持",
-          "formatError": "导入文件不是OBS Utils覆盖导出",
-          "cancelButton": "取消"
-        },
-        "exportDialog": {
-          "title": "导出设置？",
-          "content": "你要导出覆盖设置吗？",
-          "yesButton": "是",
-          "noButton": "否"
-        }
-      },
-      "styleEditor": {
-        "name": "样式编辑器",
-		"mode": {
-			"simple": "简单",
-			"advanced": "高级"
+{
+	"obs-utils": {
+		"strings": {
+			"module": "OBS Utils",
+			"ic": "战斗中",
+			"trackAll": "追踪所有拥有的Token",
+			"trackOne": "追踪当前活跃的Token",
+			"clonePlayer": "克隆选定玩家的视窗",
+			"cloneDM": "克隆DM的视窗",
+			"birdseye": "适配地图到屏幕",
+			"cloneTurnPlayer": "克隆回合玩家的视窗",
+			"ooc": "非战斗状态",
+			"trackManual": "追踪手动Token列表",
+			"limitCanvas": "限制画布到屏幕边缘",
+			"keypressInfo1": "已切换",
+			"keypressInfo2": "模式至",
+			"avInputPlaceholder": "输入文字或搜索",
+			"customGroup": "自定义",
+			"triggerGroup": "触发器",
+			"iconPlaceholder": "图标",
+			"true": "是",
+			"false": "否",
+			"missingTypeNotice": "旧版/缺失类型。请在下拉菜单中选择新类型进行编辑。",
+			"done": "完成",
+			"trackPlayerOwned": "追踪玩家拥有的Token",
+			"pauseCameraTracking": "暂停镜头追踪",
+			"manualOBSWarning": "你当前处于 OBS 模式。如需返回正常模式，请按下 SHIFT + ALT + CONTROL + O（默认）或你的自定义快捷键，然后重新加载页面。",
+			"disableOBSMode": "禁用 OBS 模式",
+			"disableOBSModeHint": "如果你卡在 OBS 模式中，此选项将关闭手动 OBS 模式设置。",
+			"toggleTokenTracking": "切换Token追踪",
+			"toggleTokenTrackingHint": "在使用手动追踪时，切换悬停或受控Token的镜头追踪状态。",
+			"tokenTrackingOn": "Now tracking {names}",
+			"tokenTrackingOff": "不再追踪 {names}",
+			"trackToken": "追踪特定Token",
+			"levelPolicyRelative": "跟随被追踪的Token",
+			"levelPolicyToken": "跟随单个Token的楼层",
+			"levelPolicyPinned": "停留在所选楼层",
+			"levelRelativeLowest": "最低占用楼层",
+			"levelRelativeMiddle": "中间占用楼层",
+			"levelRelativeHighest": "最高占用楼层"
 		},
-		"fontFamily": "字体",
-		"fontSize": "字体大小",
-		"fontWeight": "字体粗细",
-		"color": "文字颜色",
-		"backgroundColor": "背景颜色",
-		"width": "宽度",
-		"height": "高度",
-		"padding": "内边距",
-		"margin": "外边距",
-		"textAlign": "文字对齐",
-		"lineHeight": "行高",
-		"letterSpacing": "字间距",
-		"border": "边框",
-		"borderRadius": "边框圆角",
-		"preservedExtras": "额外保留规则",
-		"clear": "清除",
-		"submitButton": "应用并关闭"
-      }
-    },
-    "overlays": {
-      "plainText": {
-        "name": "纯文本"
-      },
-      "fontAwesomeIcon": {
-        "name": "Font Awesome图标"
-      },
-      "booleanAVIcon": {
-        "name": "Boolean AV图标"
-      },
-      "booleanAVImage": {
-        "name": "Boolean AV图像"
-      },
-      "image": {
-        "name": "图像"
-      },
-      "multiIconAV": {
-        "name": "多图标AV"
-      },
-      "multiImageAV": {
-        "name": "多图像AV"
-      },
-      "progressBar": {
-        "name": "进度条"
-      }
-    },
-    "settings": {
-      "forceStreamPageOBSMode": {
-        "Name": "强制直播页面使用OBS模式",
-        "Hint": "始终强制/stream输出处于OBS模式"
-      },
-      "obsMode": {
-        "Name": "OBS模式",
-        "Hint": "将此浏览器设置为OBS浏览器。仅当无法使用浏览器源时启用"
-      },
-      "obsModeUser": {
-        "Name": "OBS模式用户(用户名)",
-        "Hint": "设置此用户始终处于OBS模式，无论使用何种浏览器"
-      },
-      "obsModeGlobalDisable": {
-        "Name": "全局禁用OBS视图",
-        "Hint": "这将关闭所有客户端的OBS功能，无论使用何种方法"
-      },
-      "minScale": {
-        "Name": "最小缩放比例",
-        "Hint": "屏幕可以缩放到的最小值"
-      },
-      "maxScale": {
-        "Name": "最大缩放比例",
-        "Hint": "屏幕可以缩放到的最大值"
-      },
-      "defaultOutOfCombat": {
-        "Name": "非战斗模式",
-        "Hint": "非战斗状态下的镜头模式"
-      },
-      "defaultInCombat": {
-        "Name": "战斗模式",
-        "Hint": "战斗状态下的镜头模式"
-      },
-      "popupCloseDelay": {
-        "Name": "弹窗关闭延迟",
-        "Hint": "弹窗自动关闭前的秒数。0表示禁用"
-      },
-      "showTrackerInCombat": {
-        "Name": "战斗中显示战斗追踪器？",
-        "Hint": "如果勾选，战斗回合中将显示战斗追踪器"
-      },
-      "obsRemoteMenu": {
-        "Label": "打开菜单",
-        "Name": "OBS远程设置",
-        "Hint": "配置OBS远程"
-      },
-      "obsWebsocketMenu": {
-        "Label": "打开菜单",
-        "Name": "OBS Websocket设置",
-        "Hint": "配置OBS Websocket"
-      },
-      "overlayActorSelect": {
-        "Label": "打开菜单",
-        "Name": "覆盖角色",
-        "Hint": "选择覆盖的角色"
-      },
-      "overlayEditor": {
-        "Label": "打开编辑器",
-        "Name": "覆盖编辑器",
-        "Hint": "编辑覆盖"
-      },
-      "enableOBSWebsocket": {
-        "Name": "启用OBS Websocket？",
-        "Hint": "如果勾选，将使用OBS Websocket进行远程控制"
-      },
-      "allowWebsocketAPI": {
-        "Name": "允许OBS Websocket API访问？",
-        "Hint": "如果勾选，其他模组可以直接访问OBS Websocket"
-      },
-      "rollOverlayEditor": {
-        "Name": "掷骰覆盖编辑器",
-        "Hint": "编辑掷骰覆盖",
-        "Label": "打开编辑器"
-      },
-      "showAV": {
-        "Name": "显示视频覆盖？",
-        "Hint": "如果启用，OBS上将显示音视频聊天UI(可能需要在OBS中重新加载)"
-      },
-      "showUserConfig": {
-        "Name": "允许渲染用户配置？",
-        "Hint": "如果启用，将不会禁止用户配置对话框"
-      },
-      "fixedPopups": {
-        "Name": "使用固定弹窗",
-        "Hint": "如果启用，所有弹窗将重新定位并调整大小至配置值"
-      },
-      "fixedPopupX": {
-        "Name": "弹窗X坐标",
-        "Hint": "距离屏幕左侧的像素距离"
-      },
-      "fixedPopupY": {
-        "Name": "弹窗Y坐标",
-        "Hint": "距离屏幕顶部的像素距离"
-      },
-      "fixedPopupWidth": {
-        "Name": "弹窗宽度",
-        "Hint": "弹窗的像素宽度"
-      },
-      "fixedPopupHeight": {
-        "Name": "弹窗高度",
-        "Hint": "弹窗的像素高度"
-      },
-      "showKeybindingPopup": {
-        "Name": "显示快捷键通知",
-        "Hint": "如果勾选，使用键盘快捷键时将显示所选模式的通知"
-      },
-      "diceSoNice": {
-        "Name": "启用Dice so Nice覆盖",
-        "Hint": "如果勾选，将渲染Dice so Nice部分与其他覆盖一起显示"
-      },
-      "diceSoNiceOverlayWidth": {
-        "Name": "Dice so Nice覆盖宽度",
-        "Hint": "元素的像素宽度"
-      },
-      "diceSoNiceOverlayHeight": {
-        "Name": "Dice so Nice覆盖高度",
-        "Hint": "元素的像素高度"
-      },
-      "smoothUserCamera": {
-        "Name": "平滑镜头移动",
-        "Hint": "如果启用，通过降低更新率来平滑手动镜头移动"
-      },
-      "proxyOBSMessages": {
-        "Name": "向GM发送OBS模式通知",
-		"Hint": "如果启用，在OBS视图中隐藏的通知将显示在所有连接的GM客户端中"
-      },
-	  "showChatNotificationsOnCanvas": {
-		"Name": "在游戏中显示聊天通知",
-		"Hint": "如果启用，聊天消息弹窗将不会在游戏UI中被隐藏"
-	  },
-	  "leftAlignChatNotifications": {
-		"Name": "左侧对齐聊天通知",
-		"Hint": "如果启用，聊天消息弹窗将对齐到屏幕左侧"
+		"applications": {
+			"componentEditors": {
+				"valuePath": "值路径",
+				"maxPath": "最大值路径",
+				"iconWhenTrue": "为真时的图标",
+				"iconWhenFalse": "为假时的图标",
+				"imageWhenTrue": "为真时的图像",
+				"imageWhenFalse": "为假时的图像",
+				"filledIcon": "填充图标",
+				"emptyIcon": "空图标",
+				"filledImage": "填充图像",
+				"emptyImage": "空图像",
+				"dataDriven": "数据驱动",
+				"staticPlaceholder": "输入字面值",
+				"staticImagePlaceholder": "图像URL或路径",
+				"triggerNotActive": "此覆盖尚无过渡——请在动画选项卡中添加一个，以便触发器载荷能驱动此值。"
+			},
+			"director": {
+				"name": "导演模式",
+				"icTypeHeader": "战斗模式类型",
+				"oocTypeHeader": "非战斗模式类型",
+				"trackedPlayerHeader": "追踪玩家",
+				"actionsHeader": "动作",
+				"levelsHeader": "场景层级",
+				"levelChoice": "场景层级选择",
+				"levelSplit": "拆分时所在楼层",
+				"levelFollowToken": "跟随Token",
+				"levelFollowTokenShort": "跟随",
+				"levelPinned": "固定楼层",
+				"levelPinnedShort": "楼层",
+				"trackedToken": "被追踪的Token",
+				"trackedTokenShort": "追踪",
+				"levelChoiceShort": "选择",
+				"levelSplitShort": "拆分时",
+				"levelNoSelection": "— 无 —",
+				"levelBlocked": "The OBS client cannot show {level} — it has no token there to see by.",
+				"levelBlockedShort": "Can't show {level}",
+				"forceOpenSettingsForOBSUser": "强制为OBS用户打开设置菜单",
+				"noGMWarning": "当前没有GM登录，无法更改导演设置",
+				"cameraSmoothingHeader": "镜头平滑",
+				"easing": "缓动",
+				"duration": "持续时间",
+				"easingDirect": "直接（无缓动）",
+				"easingLinear": "线性",
+				"easingEaseOut": "缓出（默认）",
+				"easingEaseInOut": "缓入/缓出（电影感）",
+				"easingEaseOutCosine": "余弦缓出",
+				"easingEaseInOutCosine": "余弦缓入/缓出",
+				"trackingModeHeader": "追踪模式",
+				"trackingModeRaw": "直接",
+				"trackingModeSmooth": "平滑",
+				"trackingModeDragRelease": "松开时",
+				"trackingModeRawTip": "限速更新，无平滑。延迟最低。",
+				"trackingModeSmoothTip": "对GM平移路径进行移动平均平滑。",
+				"trackingModeDragReleaseTip": "暂停更新，直到GM停止平移后发送单个最终位置。",
+				"coDMsHeader": "联合GM",
+				"coDMsEmpty": "此世界中只有你拥有GM权限。一旦至少再有一名用户被授予游戏主持人或助理GM角色，联合GM选项卡将允许你将镜头控制权交给其他GM。",
+				"codmInControl": "控制中",
+				"codmOffline": "离线",
+				"takeControl": "接管控制",
+				"tabControls": "控制",
+				"tabCoDMs": "联合GM",
+				"tabPresets": "预设",
+				"presetAdd": "添加预设",
+				"presetAddStatic": "添加静态",
+				"presetAddAnimation": "添加动画",
+				"presetKindStatic": "静态预设",
+				"presetKindAnimation": "动画预设",
+				"presetNotFound": "未找到预设。",
+				"presetPlay": "播放",
+				"presetPanTo": "平移至",
+				"presetApply": "应用（镜头跳转至此）",
+				"presetUpdate": "更新为当前镜头",
+				"presetDelete": "删除预设",
+				"presetsNoScene": "未加载场景",
+				"presetsEmpty": "尚未为此场景保存任何镜头预设。平移并缩放镜头，然后点击“添加预设”进行保存。",
+				"keyframeEditor": {
+					"convert": "转换为关键帧序列",
+					"total": "总计",
+					"duration": "持续时间（毫秒）",
+					"durationTip": "动画时间轴的总长度。留 0 表示自动。",
+					"loop": "循环",
+					"loopNone": "无",
+					"loopRestart": "重新开始",
+					"loopPingPong": "往返",
+					"play": "播放",
+					"stop": "停止",
+					"record": "录制",
+					"recordStop": "停止录制",
+					"smoothing": "平滑",
+					"smoothingTip": "停止时应用的移动平均窗口，用于消除手抖（1 = 无，15 = 最大）。",
+					"zoomIn": "放大（Ctrl+滚轮）",
+					"zoomOut": "缩小（Ctrl+滚轮）",
+					"zoomReset": "重置缩放",
+					"close": "关闭编辑器",
+					"expandLabel": "编辑关键帧",
+					"addAtPlayhead": "在播放头处添加关键帧",
+					"captureFromViewport": "从当前视窗捕获",
+					"deleteKeyframe": "删除关键帧",
+					"selectedHeader": "已选关键帧",
+					"timeMs": "时间（毫秒）",
+					"easing": "缓动",
+					"keyframes": "关键帧",
+					"scale": "缩放",
+					"selectHint": "选择一个关键帧进行编辑。",
+					"prevFrame": "上一帧",
+					"nextFrame": "下一帧",
+					"prevKeyframe": "上一个关键帧",
+					"nextKeyframe": "下一个关键帧",
+					"noKeyframes": "此预设尚无关键帧。"
+				}
+			},
+			"obsRemote": {
+				"name": "OBS远程设置",
+				"sceneName": "场景名称",
+				"sourceName": "OBS源名称",
+				"switchScene": "切换场景",
+				"toggleSource": "切换源",
+				"enableSource": "启用源",
+				"disableSource": "禁用源",
+				"vttSceneLabel": "VTT场景名称",
+				"onLoad": "加载",
+				"onCombatStart": "战斗开始",
+				"onCombatEnd": "战斗结束",
+				"onPause": "暂停",
+				"onUnpause": "取消暂停",
+				"onSceneLoad": "场景加载",
+				"onStopStreaming": "停止直播",
+				"instance": "已配置",
+				"addInstance": "添加另一个已配置实例",
+				"removeInstance": "移除此实例",
+				"addAction": "添加OBS动作",
+				"noInstancesYet": "尚无已配置实例。点击 + 添加一个。",
+				"tabConnection": "连接",
+				"tabEvents": "事件"
+			},
+			"obsWebsocket": {
+				"urlLabel": "URL",
+				"portLabel": "端口",
+				"passwordLabel": "密码",
+				"syncLabel": "同步目标客户端",
+				"saveButton": "保存",
+				"syncButton": "同步"
+			},
+			"actorSelect": {
+				"name": "角色选择",
+				"searchPlaceholder": "搜索",
+				"closeButton": "关闭",
+				"resetButton": "重置",
+				"userTokensHeader": "用户Token",
+				"editCSS": "编辑各角色的CSS"
+			},
+			"globalCSSEditor": {
+				"name": "全局覆盖CSS",
+				"menuLabel": "全局CSS",
+				"saveButton": "保存并关闭",
+				"intro": "全局CSS会应用到 obs-utils 渲染的每个覆盖上。可使用 .obs-utils 之类的选择器限定到覆盖容器，#actor{...} 用于特定角色，或 progress、.my-class 等用于元素。"
+			},
+			"overlayPreview": {
+				"name": "覆盖预览",
+				"chatDeadzoneLabel": "聊天死区",
+				"toggleBboxes": "边界框"
+			},
+			"overlayEditor": {
+				"name": "覆盖编辑器",
+				"animationEditor": {
+					"header": "动画",
+					"addAnimation": "添加动画",
+					"reEntryLabel": "重入策略",
+					"reEntry": {
+						"restart": "重新开始",
+						"replace": "替换",
+						"queue": "排队",
+						"ignore": "忽略",
+						"extend": "延长"
+					},
+					"stateDefault": "默认",
+					"addState": "添加状态",
+					"removeState": "移除状态",
+					"entrance": "入场",
+					"steady": "稳定",
+					"exit": "退场",
+					"defineEntrance": "+ 定义入场",
+					"defineSteady": "+ 定义稳定",
+					"defineExit": "+ 定义退场",
+					"duration": "持续时间（毫秒）",
+					"loop": "循环",
+					"loopNone": "无",
+					"loopRestart": "重新开始",
+					"loopPingPong": "往返",
+					"loopInfinite": "无限",
+					"ease": "缓动",
+					"keyframeAt": "关键帧位置",
+					"offset": "偏移（0..1）",
+					"transform": "变换",
+					"opacity": "不透明度",
+					"filter": "滤镜",
+					"customProperty": "自定义属性",
+					"propertyName": "属性名称",
+					"propertyValue": "值",
+					"addProperty": "添加属性",
+					"addKeyframe": "+ 在播放头处添加关键帧",
+					"deleteKeyframe": "删除关键帧",
+					"testState": "测试状态",
+					"noComponent": "选择一个组件以编辑其动画。"
+				},
+				"triggerSection": {
+					"header": "触发器",
+					"enable": "事件驱动",
+					"event": "事件",
+					"conditions": "条件",
+					"conditionEmpty": "（任意）",
+					"clearCondition": "清除",
+					"duration": "持续时间（毫秒，-1 = 粘滞）",
+					"showMs": "显示动画（毫秒）",
+					"hideMs": "隐藏动画（毫秒）",
+					"transition": "过渡",
+					"transitionFade": "淡入淡出",
+					"transitionSlideUp": "上滑",
+					"transitionSlideDown": "下滑",
+					"transitionScale": "缩放",
+					"transitionFlash": "闪烁",
+					"test": "测试",
+					"testHint": "以当前条件作为载荷触发该触发器"
+				},
+				"previewActorLabel": "预览为",
+				"showFullPreview": "完整预览",
+				"removeButton": "移除覆盖",
+				"removeComponentButton": "移除组件",
+				"importButton": "导入",
+				"exportButton": "导出",
+				"importStarterButton": "导入初始覆盖",
+				"starterConfirm": "向你的世界添加 {count} 个初始覆盖？",
+				"starterImported": "已导入 {count} 个初始覆盖。",
+				"starterEmpty": "没有可用的初始覆盖。",
+				"addOverlayButton": "添加新覆盖",
+				"previousComponent": "上一个组件",
+				"nextComponent": "下一个组件",
+				"componentNavLabel": "Component {current} of {total}",
+				"componentType": "组件类型",
+				"closeButton": "关闭",
+				"layersHeader": "覆盖",
+				"componentHeader": "组件",
+				"layerName": "名称",
+				"layerType": "类型",
+				"hideLayer": "隐藏覆盖",
+				"showLayer": "显示覆盖",
+				"previewActorAll": "所有角色",
+				"emptyLayers": "尚无覆盖。点击 + 添加一个。",
+				"noLayerSelected": "选择一个覆盖以编辑其属性。",
+				"selectLayerHint": "选择一个图层开始编辑。",
+				"selectComponentHint": "点击画布上的组件，或从面板中添加一个。",
+				"overlaySize": "大小",
+				"sizeHint": "对于背景，添加一个尺寸与覆盖相同的图像组件。",
+				"tileByLabel": "平铺方式",
+				"tileByHint": "角色：每个绑定角色一个副本。玩家：每个活跃玩家一个副本。一次：无论上下文如何仅单个实例。",
+				"tileByActors": "角色",
+				"tileByPlayers": "玩家",
+				"tileByUsers": "用户（含GM）",
+				"tileByOnce": "一次（单例）",
+				"canvasWidth": "画布宽度（像素）",
+				"canvasHeight": "画布高度（像素）",
+				"customCSS": "此覆盖的自定义CSS",
+				"tileBy": {
+					"actors": "角色",
+					"players": "玩家",
+					"once": "一次（单例）"
+				},
+				"backgroundImage": "背景图像",
+				"componentData": "数据",
+				"componentsHeader": "组件",
+				"drawOrderHint": "（列表顶部 = 最先绘制）",
+				"dragReorder": "拖拽以重新排序",
+				"emptyComponents": "尚无组件。在上方添加一个。",
+				"simpleIntro": "简单覆盖以内联方式渲染组件。重新排序可更改布局顺序。",
+				"selectComponentHintSimple": "从覆盖选项卡的列表中选择一个组件。",
+				"unknownType": "未知的覆盖类型。",
+				"addComponent": "添加组件",
+				"tabLayer": "覆盖",
+				"tabComponent": "组件",
+				"tabStyle": "样式",
+				"styleNoTarget": "选择一个组件或覆盖以设置其样式。",
+				"stylingTarget": "样式",
+				"easyHint": "快速视觉调整。这些会以内联CSS形式应用到元素。",
+				"advancedHint": "完整CSS，支持选择器、伪元素、嵌套。规则会自动限定到此目标。",
+				"previewReadOnly": "只读预览",
+				"emptyTitle": "尚无覆盖",
+				"emptyDescription": "覆盖是直播画面内容的构建基础。选择一个类型开始——你随时可以添加更多。",
+				"overviewCrumb": "概览",
+				"overviewListTitle": "覆盖",
+				"unnamedOverlay": "未命名覆盖",
+				"modeSettings": "设置",
+				"modeLayout": "布局",
+				"modeAnimation": "动画",
+				"modePreview": "预览",
+				"menuBlank": "空白",
+				"menuFromTemplate": "从模板",
+				"animationStub": "动画编辑器即将推出。",
+				"previewStub": "预览工作区即将推出。",
+				"animation": {
+					"intro": "动画让覆盖产生反应。添加轨道并用触发器将它们连接起来，让这个覆盖生动起来。",
+					"start": "设置动画",
+					"tracks": "轨道",
+					"addTrack": "添加轨道",
+					"removeTrack": "移除轨道",
+					"initialTrack": "初始轨道（默认挂载）",
+					"useAsInitial": "用作初始轨道",
+					"initialShort": "初始",
+					"kfSelectHint": "点击关键帧以编辑它。",
+					"behavior": "行为",
+					"behaviorStatic": "静态（无播放）",
+					"behaviorLooping": "循环",
+					"behaviorTransitionOnEnd": "结束时过渡到另一轨道",
+					"duration": "持续时间（毫秒）",
+					"endTarget": "转到轨道",
+					"endTargetTime": "在时间（毫秒）",
+					"selectTrack": "选择一个轨道以编辑它。",
+					"playhead": "播放头",
+					"addKeyframe": "在播放头处添加关键帧",
+					"deleteKeyframe": "删除关键帧",
+					"keyframe": "关键帧",
+					"time": "时间（毫秒）",
+					"opacity": "不透明度",
+					"rotation": "旋转（度）",
+					"transitions": "过渡",
+					"endOfTrack": "轨道结束时",
+					"deleteAnimation": "移除动画",
+					"confirmDeleteAnimation": "从此覆盖中移除整个动画？轨道、关键帧和过渡都将被丢弃。",
+					"addTransition": "添加触发响应",
+					"removeTransition": "移除触发响应",
+					"trigger": "当触发器触发时",
+					"fromTrack": "从轨道",
+					"addZone": "添加条件",
+					"removeZone": "移除条件",
+					"zoneStart": "若播放头 ≥",
+					"zoneEnd": "且 <",
+					"zoneDestination": "则",
+					"zoneIgnore": "不执行任何操作",
+					"zoneGotoTrack": "跳转到轨道",
+					"zoneGotoTime": "起始于",
+					"testFire": "测试触发",
+					"noTriggersHint": "触发器用于连接轨道。请先添加第二个轨道，然后添加一个在事件发生时触发的过渡。",
+					"livePreview": "实时预览",
+					"prevFrame": "上一帧",
+					"nextFrame": "下一帧",
+					"prevKeyframe": "上一个关键帧",
+					"nextKeyframe": "下一个关键帧"
+				},
+				"preview": {
+					"testFires": "测试触发",
+					"testFiresHint": "触发任意已注册的触发器，查看覆盖的反应。",
+					"noTriggers": "尚未注册触发器。"
+				},
+				"templates": {
+					"heading": "创建新覆盖",
+					"hpBar": {
+						"label": "生命值条",
+						"description": "绑定到角色生命值的进度条，每个角色一个。"
+					},
+					"namePlate": {
+						"label": "名牌",
+						"description": "居中的角色名称标签，每个角色一个。"
+					},
+					"statusRow": {
+						"label": "状态图标",
+						"description": "内联图标行。将每个图标绑定到一个状态标记。"
+					},
+					"customCanvas": {
+						"label": "自定义画布",
+						"description": "空白自由定位画布。自行添加组件。"
+					},
+					"customInline": {
+						"label": "自定义内联",
+						"description": "空白内联流覆盖。组件从左到右排列。"
+					},
+					"starter": {
+						"description": "由当前系统捆绑提供。"
+					}
+				},
+				"toggleEnabled": "切换可见性",
+				"removeLayer": "移除覆盖",
+				"manageActors": "管理角色",
+				"confirmTypeChange": "更改覆盖类型可能会丢弃现有组件的位置或渲染数据。是否继续？",
+				"importDialog": {
+					"title": "导入数据：覆盖",
+					"hint1": "你即将导入导出的覆盖配置。请确保它是在同一系统中导出的，否则AV覆盖可能无法工作。",
+					"hint2": "请选择是要替换现有覆盖还是追加导入列表。",
+					"replaceButton": "替换",
+					"appendButton": "追加",
+					"fileError": "未上传数据文件",
+					"versionError": "版本不受支持",
+					"formatError": "导入文件不是OBS Utils覆盖导出",
+					"cancelButton": "取消",
+					"unknownType": "无法识别的文件。期望 v1/v2 覆盖导出或 .vmoverlay 捆绑包。",
+					"bundleImported": "Imported \"{name}\" — {count} overlay(s) added.",
+					"bundleImageWarning": "部分捆绑包图像上传失败：{names}",
+					"bundleValidationFailed": "捆绑包格式有误：{reason}"
+				},
+				"exportDialog": {
+					"title": "导出设置？",
+					"content": "你要导出覆盖设置吗？",
+					"yesButton": "JSON",
+					"bundleButton": "捆绑包",
+					"noButton": "取消",
+					"bundleFormTitle": "导出为捆绑包",
+					"bundleId": "捆绑包ID（slug）",
+					"bundleName": "显示名称",
+					"bundleAuthor": "作者",
+					"bundleLicense": "许可证（SPDX）",
+					"bundleUrl": "URL（可选）"
+				}
+			},
+			"styleEditor": {
+				"name": "样式编辑器",
+				"mode": {
+					"simple": "简单",
+					"advanced": "高级"
+				},
+				"groupTypography": "排版",
+				"groupColor": "颜色",
+				"groupLayout": "布局与间距",
+				"groupBorder": "边框",
+				"groupImage": "图像",
+				"fontFamily": "字体",
+				"fontSize": "字体大小",
+				"fontWeight": "字体粗细",
+				"color": "文字颜色",
+				"backgroundColor": "背景颜色",
+				"width": "宽度",
+				"height": "高度",
+				"display": "显示",
+				"padding": "内边距",
+				"margin": "外边距",
+				"textAlign": "文字对齐",
+				"verticalAlign": "垂直对齐",
+				"lineHeight": "行高",
+				"letterSpacing": "字间距",
+				"border": "边框",
+				"borderRadius": "边框圆角",
+				"objectFit": "图像适配",
+				"objectPosition": "图像位置",
+				"preservedHeader": "保留的CSS",
+				"preservedHint": "简单模式字段集之外的规则将保持原样，仅在高级模式下可见。",
+				"preservedExtras": "额外保留规则",
+				"clear": "清除",
+				"submitButton": "应用并关闭"
+			}
 		},
-	  "streamChatPopupStyle": {
-		"Name": "通知样式聊天覆盖层",
-		"Hint": "如果启用，/stream 上的聊天将以游戏视图中的通知样式显示"
-	  },
-	  "trackObserverTokens": {
-		"Name": "追踪查看Token",
-		"Hint": "如果启用，导演将追踪用户具有查看权限的Token，而不仅仅是拥有的Token"
-	  },
-	  "showDirectorInOBSMode": {
-		"Name": "在OBS模式中显示导演控件",
-		"Hint": "如果禁用，在OBS模式中导演控件将被隐藏"
-	  }
-    }
-  }
+		"overlays": {
+			"plainText": {
+				"name": "文本"
+			},
+			"fontAwesomeIcon": {
+				"name": "图标"
+			},
+			"booleanAVIcon": {
+				"name": "条件图标"
+			},
+			"booleanAVImage": {
+				"name": "条件图像"
+			},
+			"image": {
+				"name": "图像"
+			},
+			"multiIconAV": {
+				"name": "图标计数器"
+			},
+			"multiImageAV": {
+				"name": "图像计数器"
+			},
+			"progressBar": {
+				"name": "进度条"
+			},
+			"simpleOverlay": {
+				"name": "内联"
+			},
+			"wysiwygOverlay": {
+				"name": "画布"
+			}
+		},
+		"triggers": {
+			"core": {
+				"onPlayerRoll": {
+					"name": "玩家掷骰",
+					"fields": {
+						"actor": "掷骰角色",
+						"roll": "掷骰对象",
+						"total": "掷骰总计",
+						"formula": "掷骰公式",
+						"isCritical": "是否重击（天然20）",
+						"isFumble": "是否大失败（天然1）"
+					}
+				},
+				"onChatMessage": {
+					"name": "聊天消息",
+					"fields": {
+						"content": "消息内容",
+						"speakerAlias": "发言者名称"
+					}
+				}
+			}
+		},
+		"settings": {
+			"forceStreamPageOBSMode": {
+				"Name": "在 /stream 上强制启用OBS模式",
+				"Hint": "始终在 /stream 页面上渲染覆盖。"
+			},
+			"obsMode": {
+				"Name": "将此浏览器固定为OBS模式",
+				"Hint": "⚠ 在禁用前，将本浏览器在每个选项卡中都锁定为OBS模式。OBS浏览器源会自动检测——仅在手动设置时使用。"
+			},
+			"obsModeUser": {
+				"Name": "将用户指定为OBS客户端",
+				"Hint": "将所选用户的浏览器视为OBS——隐藏UI，渲染覆盖。"
+			},
+			"obsModeGlobalDisable": {
+				"Name": "为所有人禁用OBS模式",
+				"Hint": "总开关。在所有客户端上禁用OBS模式。用于恢复卡住的浏览器。"
+			},
+			"frameMargin": {
+				"Name": "画面边距",
+				"Hint": "在被追踪Token与画面边缘之间至少保留这么多图块。"
+			},
+			"closestView": {
+				"Name": "最近视图",
+				"Hint": "镜头横向显示绝不会少于这么多图块。调低它可让镜头更近。"
+			},
+			"widestView": {
+				"Name": "最广视图",
+				"Hint": "镜头横向显示绝不会超过这么多图块。启用画布限制时，场景自身的宽度是进一步的限制。"
+			},
+			"defaultOutOfCombat": {
+				"Name": "非战斗模式",
+				"Hint": "非战斗状态下的镜头模式"
+			},
+			"defaultInCombat": {
+				"Name": "战斗模式",
+				"Hint": "战斗状态下的镜头模式"
+			},
+			"popupCloseDelay": {
+				"Name": "弹窗关闭延迟",
+				"Hint": "弹窗自动关闭前的秒数。0表示禁用"
+			},
+			"showTrackerInCombat": {
+				"Name": "战斗中显示战斗追踪器？",
+				"Hint": "如果勾选，战斗回合中将显示战斗追踪器"
+			},
+			"obsRemoteMenu": {
+				"Label": "打开菜单",
+				"Name": "OBS远程设置",
+				"Hint": "配置OBS Websocket连接和事件驱动的动作"
+			},
+			"overlayEditor": {
+				"Label": "打开编辑器",
+				"Name": "覆盖编辑器",
+				"Hint": "编辑覆盖"
+			},
+			"enableOBSWebsocket": {
+				"Name": "启用OBS Websocket？",
+				"Hint": "如果勾选，将使用OBS Websocket进行远程控制"
+			},
+			"allowWebsocketAPI": {
+				"Name": "允许OBS Websocket API访问？",
+				"Hint": "如果勾选，其他模组可以直接访问OBS Websocket"
+			},
+			"showAV": {
+				"Name": "显示视频覆盖？",
+				"Hint": "如果启用，OBS上将显示音视频聊天UI(可能需要在OBS中重新加载)"
+			},
+			"showUserConfig": {
+				"Name": "允许渲染用户配置？",
+				"Hint": "如果启用，将不会禁止用户配置对话框"
+			},
+			"fixedPopups": {
+				"Name": "使用固定弹窗",
+				"Hint": "如果启用，所有弹窗将重新定位并调整大小至配置值"
+			},
+			"fixedPopupX": {
+				"Name": "弹窗X坐标",
+				"Hint": "距离屏幕左侧的像素距离"
+			},
+			"fixedPopupY": {
+				"Name": "弹窗Y坐标",
+				"Hint": "距离屏幕顶部的像素距离"
+			},
+			"fixedPopupWidth": {
+				"Name": "弹窗宽度",
+				"Hint": "弹窗的像素宽度"
+			},
+			"fixedPopupHeight": {
+				"Name": "弹窗高度",
+				"Hint": "弹窗的像素高度"
+			},
+			"showKeybindingPopup": {
+				"Name": "显示快捷键通知",
+				"Hint": "如果勾选，使用键盘快捷键时将显示所选模式的通知"
+			},
+			"diceSoNice": {
+				"Name": "启用Dice so Nice覆盖",
+				"Hint": "如果勾选，将渲染Dice so Nice部分与其他覆盖一起显示"
+			},
+			"diceSoNiceOverlayWidth": {
+				"Name": "Dice so Nice覆盖宽度",
+				"Hint": "元素的像素宽度"
+			},
+			"diceSoNiceOverlayHeight": {
+				"Name": "Dice so Nice覆盖高度",
+				"Hint": "元素的像素高度"
+			},
+			"smoothUserCamera": {
+				"Name": "平滑镜头移动",
+				"Hint": "如果启用，通过降低更新率来平滑手动镜头移动"
+			},
+			"proxyOBSMessages": {
+				"Name": "向GM发送OBS模式通知",
+				"Hint": "如果启用，在OBS视图中隐藏的通知将显示在所有连接的GM客户端中"
+			},
+			"showChatNotificationsOnCanvas": {
+				"Name": "在游戏中显示聊天通知",
+				"Hint": "如果启用，聊天消息弹窗将不会在游戏UI中被隐藏"
+			},
+			"leftAlignChatNotifications": {
+				"Name": "左侧对齐聊天通知",
+				"Hint": "如果启用，聊天消息弹窗将对齐到屏幕左侧"
+			},
+			"trackObserverTokens": {
+				"Name": "追踪查看Token",
+				"Hint": "如果启用，导演将追踪用户具有查看权限的Token，而不仅仅是拥有的Token"
+			},
+			"showDirectorInOBSMode": {
+				"Name": "在OBS模式中显示导演控件",
+				"Hint": "如果禁用，在OBS模式中导演控件将被隐藏"
+			}
+		}
+	}
 }

@@ -1,0 +1,143 @@
+{
+  "GLITCHSMITH-LIB": {
+    "module": {
+      "title": "GlitchSmith Library",
+      "description": "Shared backend services for GlitchSmith modules. Installed automatically as a dependency by other GlitchSmith packages. Not intended for standalone use."
+    },
+    "currency": {
+      "menu": {
+        "name": "Currency Definitions",
+        "label": "Configure Currencies",
+        "hint": "Define sheet and virtual currencies shared across GlitchSmith modules (Stylish Shop, Smartphone Widget, Unboxing Mystery)."
+      },
+      "dialog": {
+        "title": "Currency Definitions",
+        "activeSystem": "Active System",
+        "intro": "Define currencies used by GlitchSmith modules. Sheet currencies can map to actor data paths or embedded item quantities. Virtual currencies are stored in this library and shared across all modules.",
+        "sheetTitle": "Sheet Currencies",
+        "sheetHint": "Currencies stored on the actor sheet (e.g. dnd5e gp/sp/cp) or as actor-owned items. Actor Path is used for direct actor values; Embedded Item uses the fields below the row.",
+        "sheetEmpty": "No sheet currencies defined.",
+        "virtualTitle": "Virtual Currencies",
+        "virtualHint": "Virtual currencies tracked by the library and synced across modules. Balances live in the library wallet, not on actor sheets.",
+        "virtualEmpty": "No virtual currencies defined.",
+        "noPreset": "No built-in preset for this game system.",
+        "addRow": "Add Row",
+        "removeRow": "Remove",
+        "pickIcon": "Pick Icon",
+        "resetSheet": "Reset to System Defaults",
+        "resetSheetConfirm": "Replace sheet currencies with the active system's built-in defaults? Current sheet entries will be discarded.",
+        "save": "Save",
+        "cancel": "Cancel",
+        "saved": "Currency definitions saved.",
+        "col": {
+          "icon": "",
+          "id": "ID",
+          "name": "Name",
+          "symbol": "Symbol",
+          "rate": "Rate",
+          "storage": "Storage",
+          "actorPath": "Actor Path",
+          "integer": "Whole",
+          "primary": "Primary"
+        },
+        "storage": {
+          "actorPath": "Actor Path",
+          "embeddedItem": "Embedded Item",
+          "itemType": "Item Type",
+          "quantityPath": "Quantity Path",
+          "filters": "Filters",
+          "createFromUuid": "Create From UUID"
+        },
+        "scan": {
+          "button": "Scan Actor",
+          "test": "Test",
+          "hint": "Select a token or assign a character to your user, then scan to list its item-based currencies.",
+          "results": "Candidates",
+          "searchPlaceholder": "Search candidates by name, type, or filter...",
+          "count": "{shown} of {total} shown",
+          "noMatch": "No candidates match your search.",
+          "apply": "Apply",
+          "clear": "Clear results",
+          "summaryQty": "qty",
+          "noActor": "No actor found. Select a token or assign a character to your user.",
+          "empty": "No item-based currency candidates found on {actor}.",
+          "testInvalid": "Set a quantity path and an item type or filter before testing.",
+          "testSuccess": "{actor}: matched \"{item}\" — quantity {quantity}.",
+          "testFail": "{actor}: no item matched the current fields.",
+          "dropHint": "Or drag a currency item from the sidebar or a compendium here to auto-fill.",
+          "dropInvalid": "Drop a valid Item to auto-fill the currency fields."
+        },
+        "errors": {
+          "duplicateId": "Duplicate currency ID: {id}",
+          "saveFailed": "Failed to save currency definitions."
+        }
+      }
+    },
+    "wallet": {
+      "headerButton": "Wallet",
+      "hideHeaderButton": {
+        "name": "Hide Wallet sheet header button",
+        "hint": "Hide the GlitchSmith Library virtual wallet button from Actor sheet headers on this client. Wallet balances and APIs remain available."
+      },
+      "dialog": {
+        "title": "Virtual Currency Wallet",
+        "hint": "Adjust this actor's virtual currency balances. Sheet currencies (system coins) are managed on the actor sheet.",
+        "noCurrencies": "No virtual currencies are defined. Add some via Game Settings → Currency Definitions.",
+        "noActor": "No actor selected.",
+        "save": "Save",
+        "cancel": "Cancel",
+        "saved": "Updated {count} currency balance(s).",
+        "saveErrors": "Some balances failed to save: {errors}"
+      }
+    },
+    "actorSheetMenu": {
+      "label": "GlitchSmith",
+      "setting": {
+        "name": "Combine GlitchSmith Actor sheet menus",
+        "hint": "Collect Actor sheet header controls added by GlitchSmith modules into a single GlitchSmith dropdown on this client. Enabled by default."
+      }
+    },
+    "notifier": {
+      "disableName": "Disable update notifications",
+      "disableHint": "Suppress this module's update and announcement dialogs.",
+      "updateAvailable": "{title} — Update Available",
+      "newVersion": "{title} v{version} available!",
+      "currentVersion": "(current: v{current})",
+      "patchHighlights": "Patch Highlights",
+      "skipVersion": "Skip this version",
+      "criticalWarning": "⚠️ Critical update recommended",
+      "confirm": "Got it",
+      "allConfirmButton": "OK all",
+      "allConfirm": "Marked all notifications as read",
+      "disableNotification": "Disable notifications",
+      "allDisableButton": "Disable all notifications",
+      "disableConfirm": "Update notifications disabled",
+      "allDisableConfirm": "Disabled update notifications for every listed module",
+      "settingsReset": "{title}: update settings reset",
+      "announcementTitle": "{title} — Announcement",
+      "confirmNotice": "OK",
+      "close": "Close",
+      "managerName": "Update notifications",
+      "managerLabel": "Manage",
+      "managerHint": "Re-enable update notifications for GlitchSmith modules you previously disabled.",
+      "managerTitle": "GlitchSmith — Update Notifications",
+      "managerSummary": "{count} module(s) currently have update notifications disabled:",
+      "managerConfirm": "Re-enable update notifications for all of them?",
+      "managerNoneDisabled": "No GlitchSmith modules currently have update notifications disabled.",
+      "managerSuccess": "Re-enabled update notifications for {count} module(s).",
+      "managerYes": "Re-enable all",
+      "managerNo": "Cancel",
+      "board": {
+        "title": "GlitchSmith — Notification Board",
+        "menuName": "GlitchSmith notification board",
+        "menuLabel": "Open board",
+        "menuHint": "Review pending updates and announcements from GlitchSmith modules in one place.",
+        "tabUpdates": "Updates",
+        "tabAnnouncements": "Announcements",
+        "manageDisabled": "Manage disabled",
+        "manageDisabledHint": "Re-enable notifications for modules you previously disabled.",
+        "empty": "Nothing new from GlitchSmith modules right now."
+      }
+    }
+  }
+}

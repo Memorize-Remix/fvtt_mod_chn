@@ -1,0 +1,45 @@
+{
+  "niks-token-tags": {
+    "settings": {
+      "enabled": {
+        "Name": "Enable Token Tags",
+        "Hint": "Automatically rename duplicate NPC tokens in combat with alphabetical suffixes and apply color-coded effects."
+      },
+      "uniqueLetters": {
+        "Name": "Unique Letters Globally",
+        "Hint": "When enabled, assigns unique letters across all types of NPCs in the combat (e.g., Goblin A, Hobgoblin B). When disabled, letters are per-actor type (e.g., Goblin A, Hobgoblin A)."
+      },
+      "includeSingletons": {
+        "Name": "Letter Unique Creatures",
+        "Hint": "When enabled, creatures that are the only one of their type in the combat will also receive a letter (e.g. Boss A). When disabled, only creatures with duplicates of the same type receive letters."
+      },
+      "restoreOnCombatEnd": {
+        "Name": "Restore Names on Combat End",
+        "Hint": "When combat is deleted, restore original token names and remove letter effects."
+      },
+      "iconDirectory": {
+        "Name": "Icon Storage Directory",
+        "Hint": "Directory in user data where generated letter icons are stored. Changing this requires a reload."
+      },
+      "colorConfigMenu": {
+        "Name": "Letter Color Settings",
+        "Label": "Configure Colors",
+        "Hint": "Customize the background and text colors used for each letter marker."
+      },
+      "debug": {
+        "Name": "Debug Logging",
+        "Hint": "Enable verbose console logging. Useful for troubleshooting."
+      }
+    },
+    "colorConfig": {
+      "title": "Token Tags — Letter Colors",
+      "letterHeader": "Letter",
+      "bgColorHeader": "Background",
+      "bgHexHeader": "Hex",
+      "textColorHeader": "Text",
+      "textHexHeader": "Hex",
+      "previewHeader": "Preview",
+      "resetDefaults": "Reset to Defaults"
+    }
+  }
+}

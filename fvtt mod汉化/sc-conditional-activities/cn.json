@@ -1,14 +1,31 @@
-{"SCConditionalActivities": {
+{
+  "SCConditionalActivities": {
     "ConditionTab": {
       "Label": "条件",
       "Heading": "行动条件",
       "Hint": "使用 JavaScript。只有当脚本返回 true 时，行动才可用。",
       "Variables": "可用变量：activity, activityType, item, actor, user, usage, dialog, message, rollData, source, getProperty, hasProperty, deepClone, game。",
       "Placeholder": "示例：return actor?.system?.attributes?.hp?.value > 0;",
+      "WarningLabel": "警告消息",
+      "WarningHint": "条件返回 false 时显示。留空以使用默认警告。",
+      "WarningTooltip": "可选。如果留空，Conditional Activities 将使用默认警告文本。",
+      "WarningPlaceholder": "示例：你必须处于狂暴状态才能使用此能力。",
+      "DisableWarningLabel": "禁用警告消息",
+      "DisableWarningHint": "当条件返回 false 时，阻止该行动而不显示警告通知。",
+      "DisableWarningTooltip": "条件错误仍会正常警告，以便更容易发现无效脚本。",
+      "BadgeLabel": "锁定徽章标签",
+      "BadgeHint": "锁定行动上显示的单行标签。留空以使用默认徽章。",
+      "BadgeTooltip": "可选。最多 36 个字符。如果留空，Conditional Activities 将使用默认徽章标签。",
+      "BadgePlaceholder": "示例：需要精华",
+      "CharactersUsed": "个字符",
+      "Preview": "预览",
+      "PreviewBadge": "徽章",
+      "PreviewWarning": "警告",
       "Wiki": "打开维基",
       "Invalid": "此条件包含无效代码。"
     },
     "Badge": {
+      "ColumnHeader": "状态",
       "NotAvailable": "不可用",
       "ConditionError": "条件错误"
     },
@@ -17,6 +34,10 @@
       "ConditionError": "无法评估此行动的条件。"
     },
     "Settings": {
+      "HideUnavailableActivityChoices": {
+        "Name": "在选项对话框中隐藏不可用的行动",
+        "Hint": "启用后，被条件阻止的行动将从行动选项对话框中移除。"
+      },
       "SupportMenu": {
         "Name": "支持开发者",
         "Label": "Patreon 支持",

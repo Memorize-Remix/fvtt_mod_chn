@@ -1,0 +1,448 @@
+{
+  "DEATH-EFFECTS": {
+    "CONFIG": {
+      "ACTORTYPE": {
+        "DESCRIPTION": "为以下类型配置死亡特效设置：",
+        "TITLE": "角色类型"
+      },
+      "AUTOHIDE": {
+        "HINT": "死亡特效播放完毕后自动隐藏 Token。",
+        "LABEL": "自动隐藏"
+      },
+      "AUTOTRANSPARENT": {
+        "HINT": "死亡特效播放完毕后自动将 Token 的不透明度设为 0。",
+        "LABEL": "自动透明"
+      },
+      "EDITTIMELINE": {
+        "HINT": "编辑死亡特效动画时间轴。<br>更多信息请参阅<a href='https://github.com/Unarekin/FoundryVTT-Death-Effects/wiki/Timeline-Editor'>wiki</a>。",
+        "LABEL": "编辑时间轴"
+      },
+      "ENABLE": {
+        "HINT": "开启后，当角色被击倒时自动播放死亡特效。",
+        "LABEL": "启用死亡特效"
+      },
+      "EXPORT": {
+        "BROWSE": "保存到服务器",
+        "CLIPBOARD": "复制到剪贴板",
+        "COPIED": "配置已复制到剪贴板",
+        "DOWNLOAD": "下载 JSON",
+        "LABEL": "导出特效"
+      },
+      "IMPORT": {
+        "BROWSE": "文件浏览器",
+        "CLIPBOARD": "从剪贴板粘贴",
+        "LABEL": "导入特效",
+        "PASTED": "已从剪贴板读取配置",
+        "PRESET": "导入预设",
+        "UPLOAD": "上传 JSON"
+      },
+      "REMOVEEFFECT": {
+        "MESSAGE": "确定要移除该特效吗？",
+        "TITLE": "移除特效"
+      },
+      "SOURCE": {
+        "ACTOR": "角色",
+        "GLOBAL": "全局",
+        "HINT": "选择此 Token 特效配置的存储位置",
+        "LABEL": "配置来源",
+        "TOKEN": "Token",
+        "TYPE": "角色类型（{type}）"
+      },
+      "TITLE": "死亡特效",
+      "TOOLTIPS": {
+        "EDITEFFECT": "编辑特效",
+        "REMOVEEFFECT": "移除特效"
+      },
+      "TRIGGERCONDITION": {
+        "ACTIVEEFFECT": {
+          "HINT": "获得特定生效效果（ActiveEffect）时的触发条件",
+          "LABEL": "生效效果"
+        },
+        "HINT": "自动触发死亡特效的条件",
+        "LABEL": "触发条件",
+        "RESOURCE": {
+          "COMPARISONOPERATOR": {
+            "EQ": "等于",
+            "GT": "大于",
+            "GTE": "大于或等于",
+            "HINT": "该资源应如何与给定值进行比较？",
+            "LABEL": "比较运算符",
+            "LT": "小于",
+            "LTE": "小于或等于"
+          },
+          "COMPARISONVALUE": {
+            "HINT": "用于与角色资源比较的数值<br>该值可以是角色上某个数值的路径，也可以是静态数字",
+            "LABEL": "数值"
+          },
+          "HINT": "当指定资源（如生命值）等于或小于 0 时触发",
+          "LABEL": "角色资源"
+        },
+        "STATUS": {
+          "HINT": "当角色获得指定状态效果时触发其死亡特效",
+          "LABEL": "状态效果"
+        }
+      }
+    },
+    "EFFECTS": {
+      "CHANGEIMAGE": {
+        "DESCRIPTION": "更改可放置对象的纹理",
+        "IMAGE": {
+          "HINT": "用于更改此可放置对象纹理的图像",
+          "LABEL": "图像"
+        },
+        "NAME": "更改图像",
+        "REVERT": {
+          "HINT": "启用后，将在死亡特效的整个时间轴播放完毕后恢复为原始纹理。",
+          "LABEL": "结束后还原"
+        }
+      },
+      "COMMON": {
+        "ADD": {
+          "TEXT": "请在下方选择特效类型。",
+          "TITLE": "添加特效"
+        },
+        "ALPHA": {
+          "HINT": "特效的不透明度",
+          "LABEL": "透明度"
+        },
+        "ANGLE": {
+          "HINT": "显示此特效的角度",
+          "LABEL": "角度"
+        },
+        "DIRECTION": {
+          "DOWN": "向下",
+          "LEFT": "向左",
+          "RIGHT": "向右",
+          "UP": "向上"
+        },
+        "DURATION": {
+          "HINT": "此特效应持续的时长（毫秒）",
+          "LABEL": "时长"
+        },
+        "EASING": {
+          "FUNCTION": "函数",
+          "HINT": "动画此特效时使用的缓动函数。<br>参见：<a href='https://gsap.com/docs/v3/Eases/'>GSAP 文档</a>",
+          "LABEL": "缓动",
+          "PARAMETERS": "参数"
+        },
+        "EASINGPARAMS": {
+          "HINT": "要传递给缓动函数的一组参数。",
+          "LABEL": "缓动参数"
+        },
+        "LABEL": {
+          "HINT": "用于列出此特效的友好名称",
+          "LABEL": "标签"
+        },
+        "START": {
+          "HINT": "此特效应在动画播放到哪个时间点时开始",
+          "LABEL": "开始"
+        }
+      },
+      "CRUMBLE": {
+        "DESCRIPTION": "让可放置对象碎裂成一个个像素",
+        "DIRECTION": {
+          "HINT": "可放置对象碎裂的方向",
+          "LABEL": "方向"
+        },
+        "FLOATDISTANCE": {
+          "HINT": "像素在溶解前漂浮的距离",
+          "LABEL": "漂浮距离"
+        },
+        "NAME": "碎裂"
+      },
+      "DISSOLVE": {
+        "BLOCKSIZE": {
+          "HINT": "溶解的方块大小",
+          "LABEL": "方块大小"
+        },
+        "DESCRIPTION": "溶解可放置对象",
+        "NAME": "溶解"
+      },
+      "DUST": {
+        "DESCRIPTION": "将可放置对象化为尘土",
+        "DIRECTION": {
+          "HINT": "动画中可放置对象坍塌的方向",
+          "LABEL": "方向",
+          "X": "X",
+          "Y": "Y"
+        },
+        "NAME": "尘土"
+      },
+      "FADE": {
+        "DESCRIPTION": "简单的淡出特效",
+        "NAME": "淡出"
+      },
+      "FLASH": {
+        "COLOR": {
+          "HINT": "闪烁可放置对象所用的颜色",
+          "LABEL": "颜色"
+        },
+        "DESCRIPTION": "用指定颜色闪烁可放置对象",
+        "NAME": "闪烁",
+        "REPLACE": {
+          "HINT": "启用后，将完全用此颜色替换可放置对象的颜色",
+          "LABEL": "替换颜色"
+        }
+      },
+      "MACRO": {
+        "DESCRIPTION": "执行一个宏",
+        "GMONLY": {
+          "HINT": "启用后，仅 GM 会执行此宏；否则，所有已连接的玩家都会执行。",
+          "LABEL": "仅 GM"
+        },
+        "MACRO": {
+          "HINT": "要执行的宏",
+          "LABEL": "宏"
+        },
+        "NAME": "宏"
+      },
+      "MELT": {
+        "DESCRIPTION": "熔化可放置对象",
+        "NAME": "熔化"
+      },
+      "NULL": {
+        "DESCRIPTION": "在一段时间内不做任何事。可用于将特效序列的结束任意延后。",
+        "NAME": "空操作"
+      },
+      "OVERLAYIMAGE": {
+        "DESCRIPTION": "在 Token 上方叠加图像或视频片段",
+        "SIZEMODE": {
+          "LABEL": "尺寸模式",
+          "HINT": "如何调整此特效的尺寸"
+        },
+        "RELATIVESIZE": {
+          "LABEL": "相对尺寸",
+          "HINT": "启用后，尺寸或缩放将相对于可放置对象的大小"
+        },
+        "SIZE": {
+          "LABEL": "尺寸",
+          "HINT": "此特效的基础宽度和高度<br>若启用了相对尺寸，这些值将<strong>叠加</strong>到可放置对象的基础大小上"
+        },
+        "SCALE": {
+          "LABEL": "缩放",
+          "HINT": "此特效的相对大小<br>该值是归一化百分比，1 表示 100%。"
+        },
+        "ANCHOR": {
+          "LABEL": "锚点",
+          "HINT": "此图像在 Token 上的放置位置。<br>{0, 0} 为左上角，{0.5, 0.5} 为中心，{1, 1} 为右下角"
+        },
+        "IMAGE": {
+          "HINT": "叠加在此可放置对象上的图像",
+          "LABEL": "图像"
+        },
+        "NAME": "叠加图像"
+      },
+      "ROTATE": {
+        "ANGLE": {
+          "HINT": "旋转此可放置对象的角度（度）",
+          "LABEL": "角度"
+        },
+        "DESCRIPTION": "旋转可放置对象",
+        "NAME": "旋转"
+      },
+      "SCALE": {
+        "DESCRIPTION": "缩放可放置对象",
+        "DIMENSIONS": {
+          "HINT": "在 X 和 Y 轴上的缩放量。值为 1 表示原始大小。",
+          "LABEL": "缩放量",
+          "X": "X",
+          "Y": "Y"
+        },
+        "NAME": "缩放"
+      },
+      "SCREENFLASH": {
+        "BACKGROUNDONLY": {
+          "HINT": "启用后，仅闪烁 Token、图块等对象背后的背景",
+          "LABEL": "仅背景"
+        },
+        "COLOR": {
+          "HINT": "闪烁屏幕所用的颜色",
+          "LABEL": "颜色"
+        },
+        "DESCRIPTION": "用指定颜色闪烁屏幕",
+        "NAME": "屏幕闪烁"
+      },
+      "SCREENSHAKE": {
+        "BACKGROUNDONLY": {
+          "HINT": "仅晃动背景",
+          "LABEL": "仅背景"
+        },
+        "DESCRIPTION": "晃动屏幕",
+        "NAME": "屏幕晃动",
+        "STRENGTH": {
+          "HINT": "晃动强度",
+          "LABEL": "强度"
+        }
+      },
+      "SHAKE": {
+        "DESCRIPTION": "顾名思义：晃动可放置对象。",
+        "HORIZONTAL": {
+          "HINT": "水平晃动可放置对象",
+          "LABEL": "水平"
+        },
+        "NAME": "晃动",
+        "STRENGTH": {
+          "HINT": "晃动的幅度",
+          "LABEL": "强度"
+        },
+        "VERTICAL": {
+          "HINT": "垂直晃动可放置对象",
+          "LABEL": "垂直"
+        }
+      },
+      "SLIDE": {
+        "DESCRIPTION": "将可放置对象的贴图向某个方向滑动",
+        "DIRECTION": {
+          "HINT": "滑动可放置对象的方向",
+          "LABEL": "方向"
+        },
+        "DISTANCE": {
+          "HINT": "滑动可放置对象的距离（像素）",
+          "LABEL": "距离"
+        },
+        "NAME": "滑动"
+      },
+      "SOUND": {
+        "DESCRIPTION": "播放声音",
+        "NAME": "声音",
+        "POSITION": {
+          "HINT": "启用后，将在该可放置对象的位置播放声音",
+          "LABEL": "在对象处播放"
+        },
+        "RADIUS": {
+          "HINT": "在该可放置对象位置播放时，声音可被听到的半径",
+          "LABEL": "半径"
+        },
+        "SOUND": {
+          "HINT": "要播放的声音文件",
+          "LABEL": "声音"
+        },
+        "VOLUME": {
+          "HINT": "播放此声音的音量",
+          "LABEL": "音量"
+        }
+      },
+      "SPRITEANIMATION": {
+        "ANIMATION": {
+          "HINT": "要触发的动画",
+          "LABEL": "动画"
+        },
+        "DESCRIPTION": "使用 <a href='https://foundryvtt.com/packages/sprite-animations'>Sprite Animations</a> 模组触发动画",
+        "IMMEDIATE": {
+          "HINT": "若未勾选，将等待当前动画播放完毕后再触发此动画。",
+          "LABEL": "立即播放"
+        },
+        "LOOP": {
+          "HINT": "启用后，将无限循环播放此动画。",
+          "LABEL": "循环"
+        },
+        "NAME": "精灵动画"
+      },
+      "STARTPLAYLIST": {
+        "DESCRIPTION": "启动指定播放列表",
+        "NAME": "启动播放列表",
+        "PLAYLIST": {
+          "HINT": "要启动的播放列表",
+          "LABEL": "播放列表"
+        },
+        "SOUND": {
+          "HINT": "（可选）上述播放列表上要播放的声音",
+          "LABEL": "声音"
+        }
+      },
+      "STOPPLAYLIST": {
+        "DESCRIPTION": "停止当前播放列表",
+        "NAME": "停止播放列表"
+      },
+      "TEXTUREMASK": {
+        "DESCRIPTION": "对可放置对象的纹理应用遮罩",
+        "MASK": {
+          "HINT": "用作遮罩的图像。<br>参见：<a href='https://pixijs.download/v7.4.2/docs/PIXI.DisplayObject.html#mask'>PIXI 文档</a>",
+          "LABEL": "遮罩"
+        },
+        "NAME": "纹理遮罩"
+      },
+      "TINT": {
+        "DESCRIPTION": "为可放置对象着色的简单特效",
+        "NAME": "着色",
+        "REPLACE": {
+          "HINT": "启用后，将完全用此颜色替换可放置对象的颜色",
+          "LABEL": "替换颜色"
+        },
+        "TINT": {
+          "HINT": "用于为此可放置对象着色的颜色。使用白色可恢复其原本的颜色。",
+          "LABEL": "着色"
+        }
+      },
+      "TOKENMAGIC": {
+        "DESCRIPTION": "对此可放置对象应用 Token Magic FX 预设",
+        "NAME": "Token Magic FX",
+        "PARAMS": {
+          "HINT": "要传递给 Token Magic FX 的参数",
+          "LABEL": "参数"
+        },
+        "PRESET": {
+          "HINT": "加载 Token Magic FX 提供的某个预设",
+          "LABEL": "预设"
+        }
+      }
+    },
+    "HUD": {
+      "PLAY": "播放死亡特效"
+    },
+    "DOCUMENTPICKER": {
+      "PLACEHOLDER": "文档",
+      "TOOLTIP": "选择文档",
+      "CLEARTOOLTIP": "清除选择"
+    },
+    "PRESETS": {
+      "DESCRIPTION": "在下方选择一个预设",
+      "FINALBOSS": {
+        "DESCRIPTION": "仿照《最终幻想 6》中凯夫卡的死亡演出风格制作的动画序列。",
+        "NAME": "最终 Boss"
+      },
+      "PURPLEDUST": {
+        "DESCRIPTION": "将可放置对象变为紫色，随后像风中尘土一样飘散。",
+        "NAME": "紫色尘土"
+      },
+      "REDDISSOLVE": {
+        "DESCRIPTION": "将可放置对象变为红色，然后将其溶解。",
+        "NAME": "红色溶解"
+      },
+      "TITLE": "预设"
+    },
+    "SETTINGS": {
+      "INJECTTOKENCONFIG": {
+        "LABEL": "向 Token 配置添加标签页",
+        "HINT": "启用后，将向 Token 配置应用添加一个标签页。"
+      },
+      "MENUS": {
+        "GLOBAL": {
+          "LABEL": "全局配置",
+          "HINT": "配置全局死亡特效动画"
+        },
+        "ACTORTYPE": {
+          "LABEL": "角色类型配置",
+          "HINT": "按角色类型配置死亡特效"
+        }
+      }
+    },
+    "TIMELINE": {
+      "ADDEFFECT": {
+        "LABEL": "添加特效",
+        "TOOLTIP": "向时间轴添加特效"
+      },
+      "CLEAR": {
+        "LABEL": "清空",
+        "TOOLTIP": "清空时间轴上的所有特效",
+        "CONFIRM": "确定要清空此时间轴上的所有特效吗？"
+      },
+      "TITLE": "时间轴编辑器"
+    }
+  },
+  "TOKEN": {
+    "TABS": {
+      "deathEffects": "死亡特效"
+    }
+  }
+}

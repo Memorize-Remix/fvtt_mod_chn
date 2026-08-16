@@ -1,0 +1,177 @@
+{
+  "LOOTFORGE": {
+    "Title": "LootForge",
+    "HUD": {
+      "LootBody": "Loot Body",
+      "LootTargetedBody": "Loot Targeted Body",
+      "ViewLoot": "View Loot",
+      "Looted": "Looted",
+      "ResetLoot": "Reset Loot"
+    },
+    "Keybinding": {
+      "LootTargetHint": "Loot the targeted corpse, or the nearest lootable corpse (Alt+L). Players must be within 10 feet. Double-left-click a corpse also works."
+    },
+    "Quality": {
+      "poor": "Poor",
+      "standard": "Standard",
+      "good": "Good",
+      "excellent": "Excellent",
+      "exceptional": "Exceptional"
+    },
+    "Notify": {
+      "WrongSystem": "LootForge currently supports the D&D 5e system only.",
+      "NotDefeated": "{name} is not lootable yet (defeat the creature, or place a LootForge Chest/Container).",
+      "AlreadyLooted": "{name} has already been looted.",
+      "AlreadyLootedEmpty": "This corpse has already been looted.",
+      "NoLooter": "No eligible player characters found. Create a character or place one on the scene.",
+      "RollCancelled": "Loot skill roll cancelled.",
+      "RollInvestigation": "Rolling Investigation to loot the corpse…",
+      "RollLootSkill": "Rolling {skill} to loot the corpse…",
+      "InvestigationAlreadyRolled": "A loot skill was already rolled for this corpse — waiting for the DM.",
+      "LootInProgress": "LootForge is already handling this corpse — wait for the current roll/session to finish.",
+      "NoTable": "No LootForge profile found for {name}.",
+      "LootAvailable": "Loot available: {name}",
+      "FlagReset": "Loot reset for {name}.",
+      "PermissionDenied": "You do not have permission to modify loot on {name}.",
+      "NeedGM": "An active GM must be connected for LootForge to update corpse loot.",
+      "SelectOrTarget": "Target a defeated creature with T, then use Loot Targeted Body (or Alt+L).",
+      "NoAssignedCorpse": "No lootable corpse found. Target a dead body, or stand near one.",
+      "WaitingForGM": "Waiting for the DM to finish reviewing the loot.",
+      "PlayersMustInitiate": "Only players can start looting a corpse — ask a player to double-click it.",
+      "LootOpenForAll": "Loot is ready — approach within {range} feet and double-click the corpse to loot.",
+      "LootReadyApproach": "Loot ready on {name}. Approach within {range} feet, then double-click (or Alt+L) to loot.",
+      "TooFarToLoot": "You must be within {range} feet of the corpse to loot it.",
+      "NeedNearbyCharacter": "Select or place your character token near the corpse before looting.",
+      "PlayerGeneratedLoot": "{player} rolled {skill} {total} on {name}. Review the loot, then Save & Close.",
+      "LootBusy": "{name} is already looting this corpse.",
+      "ResetConfirm": "Clear generated loot on this corpse so it can be generated again?",
+      "NoTakePermission": "You do not have permission to take this loot.",
+      "ItemGone": "That item is no longer available on the corpse.",
+      "TransferFailed": "Loot could not be transferred to the selected character.",
+      "TransferBusy": "A loot transfer is already in progress.",
+      "TransferPending": "Loot request sent to the GM…",
+      "CharacterMissing": "The selected character no longer exists.",
+      "NoItemsToAssign": "There is no loot to release.",
+      "CorpseEmpty": "The corpse has been fully looted.",
+      "LootDeposited": "Remaining loot was left for other players."
+    },
+    "Dialog": {
+      "Title": "Loot — {name}",
+      "ChooseLooterTitle": "Who is looting?",
+      "ChooseLooter": "Character",
+      "ChooseLooterHint": "Choose which character makes the skill roll and/or receives the loot.",
+      "Close": "Close",
+      "Empty": "No usable materials were recovered."
+    },
+    "Skill": {
+      "Investigation": "Investigation",
+      "Survival": "Survival"
+    },
+    "DM": {
+      "Title": "LootForge — DM Review",
+      "TitleNamed": "LootForge — {name}",
+      "Type": "Type",
+      "CR": "CR",
+      "Size": "Size",
+      "Investigation": "Investigation",
+      "Survival": "Survival",
+      "Natural": "Natural",
+      "RolledBy": "Rolled by",
+      "RerollAll": "Reroll All",
+      "RerollItem": "Reroll item",
+      "RemoveItem": "Remove item",
+      "AddItem": "Add LootForge item",
+      "Add": "Add",
+      "SaveAndClose": "Save & Close",
+      "SaveAndCloseHint": "Save & Close (or Close) releases this loot so any player can double-click the corpse to open the loot window."
+    },
+    "Player": {
+      "Title": "Loot",
+      "TitleNamed": "Loot — {name}",
+      "WindowTitle": "Items",
+      "LootFor": "Loot for",
+      "TakeItem": "Take",
+      "TakeAll": "Take All",
+      "LootAll": "Loot All",
+      "Done": "Done",
+      "DoubleClickHint": "Double-click an item to take it. Closing leaves leftovers for everyone — open loot windows stay in sync."
+    },
+    "Settings": {
+      "ManualGenerationOnly": {
+        "Name": "Manual generation only",
+        "Hint": "Legacy setting (unused)."
+      },
+      "RequireInvestigationRoll": {
+        "Name": "Require Investigation roll",
+        "Hint": "Legacy setting — Investigation is always rolled by the player."
+      },
+      "DefaultInvestigationTotal": {
+        "Name": "Default Investigation total",
+        "Hint": "Legacy setting — unused."
+      },
+      "AllowAllPlayersToLoot": {
+        "Name": "Allow all players to loot",
+        "Hint": "After the GM closes DM Review, any player can double-click the corpse to loot together (live-synced). Recommended on."
+      },
+      "AllowPlayerRequestLoot": {
+        "Name": "Allow players to request loot from DM",
+        "Hint": "Legacy setting — players start Investigation by double-clicking."
+      },
+      "PreventDuplicateGeneration": {
+        "Name": "Prevent duplicate generation",
+        "Hint": "Block regenerating loot on a corpse that already has generated loot."
+      },
+      "ShowLootIndicators": {
+        "Name": "Show loot indicators",
+        "Hint": "Show WoW-style white sparkles around creatures as soon as they are marked dead. Sparkles vanish and the corpse is hidden when fully looted."
+      },
+      "EnableRareDrops": {
+        "Name": "Enable rare drops",
+        "Hint": "Allow uncommon rewards such as Alpha Wolf Fang."
+      },
+      "DebugLogging": {
+        "Name": "Debug logging",
+        "Hint": "Print detailed LootForge logs to the console."
+      },
+      "Auth": {
+        "PanelLabel": "Gambits Forge Authentication",
+        "MenuName": "Gambits Forge Account",
+        "MenuLabel": "Manage Account",
+        "Hint": "Sign in with your Gambits Forge account. LootForge requires Tier 1 or higher. Players do not need their own subscription when the GM is entitled.",
+        "AccessStatus": "LootForge access",
+        "AccessGranted": "Active",
+        "AccessLocked": "Locked",
+        "AuthState": "Auth state",
+        "WorldAccess": "World unlock",
+        "WorldUnlocked": "Unlocked for players",
+        "WorldLocked": "Locked",
+        "ApiBaseUrl": {
+          "Name": "Gambits Forge API base URL",
+          "Hint": "Backend URL for account and entitlement checks. Defaults to the production Gambits Forge API."
+        },
+        "Debug": {
+          "Name": "Debug authentication logging",
+          "Hint": "Log auth flow details to the console. Tokens and passwords are never printed."
+        }
+      }
+    },
+    "Access": {
+      "Title": "LootForge Access",
+      "Required": "LootForge requires an active Gambits Forge Tier 1 or higher subscription.",
+      "Expired": "Your LootForge access has expired. Connect to the internet and check your subscription.",
+      "NoEntitledGM": "No entitled GM is available to process LootForge actions.",
+      "Account": "Account",
+      "Plan": "Plan",
+      "Expires": "Entitlement expires",
+      "NoAccount": "Not Signed In",
+      "SignIn": "Sign In",
+      "SyncSubscription": "Sync Subscription",
+      "CheckSubscription": "Sync Subscription",
+      "ForgotPassword": "Forgot Password",
+      "CreateAccount": "Create Account",
+      "OpenWebsite": "Open Gambits Forge Website",
+      "OpenAccount": "Open Account Page",
+      "LogOut": "Log Out"
+    }
+  }
+}

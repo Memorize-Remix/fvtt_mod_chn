@@ -1,4 +1,5 @@
-{"MORTAL_NEEDS": {
+{
+  "MORTAL_NEEDS": {
     "Title": "凡人需求",
 
     "Controls": {
@@ -26,6 +27,13 @@
       "Environmental": "环境压力"
     },
 
+    "Categories": {
+      "Physical": "生理",
+      "Environmental": "环境",
+      "Mental": "精神",
+      "Custom": "自定义"
+    },
+
     "Severity": {
       "Safe": "安全",
       "Low": "轻微",
@@ -39,6 +47,8 @@
       "AddActors": "添加角色",
       "StressAll": "施加所有",
       "RelieveAll": "缓解所有",
+      "ResetAll": "全部重置",
+      "ResetAllTracked": "重置所有已追踪角色",
       "Configure": "配置",
       "History": "历史记录"
     },
@@ -47,7 +57,8 @@
       "Stress": "施加",
       "Relieve": "缓解",
       "ResetAll": "全部重置",
-      "Untrack": "停止追踪"
+      "Untrack": "停止追踪",
+      "ToggleDetails": "切换详情"
     },
 
     "EmptyState": {
@@ -57,14 +68,62 @@
       "PlayerWaiting": "等待GM添加角色..."
     },
 
+    "Panel": {
+      "ActorsTracked": "已追踪",
+      "Tracked": "已追踪",
+      "Crisis": "危机",
+      "Average": "平均",
+      "Decay": "衰减",
+      "Updated": "已更新",
+      "Critical": "危急",
+      "AtRisk": "有风险",
+      "AvgSeverity": "平均严重度",
+      "DecayActive": "衰减进行中",
+      "LastChange": "最近变化",
+      "NoRecentChange": "无",
+      "Now": "现在",
+      "CrisisQueue": "危机队列",
+      "NoCrisis": "没有紧急需求。",
+      "QuickActions": "快捷操作",
+      "Journey": "旅程",
+      "JourneyDesc": "打开批量施加。",
+      "Rest": "休息",
+      "RestDesc": "打开批量缓解。",
+      "Broadcast": "广播",
+      "BroadcastDesc": "显示玩家 HUD。",
+      "Flash": "闪烁",
+      "FlashDesc": "脉冲所有屏幕。",
+      "NextDecay": "下次衰减",
+      "NoDecay": "没有进行中的衰减。",
+      "WorstNeed": "最差",
+      "Stable": "稳定",
+      "SearchActors": "搜索已追踪角色...",
+      "Visible": "可见",
+      "NoActorMatches": "没有已追踪角色与此搜索匹配。",
+      "DisplayMode": "面板显示模式",
+      "ModeNormal": "正常",
+      "ModeCompact": "紧凑",
+      "ModeFocus": "聚焦",
+      "ModeCategory": "按类别"
+    },
+
     "ActorSelection": {
-      "Title": "选择要追踪的角色",
+      "Title": "管理已追踪角色",
       "FoundryActors": "FVTT角色",
       "ESCharacters": "Exalted Scenes角色",
       "SearchPlaceholder": "搜索角色...",
       "AlreadyTracked": "已追踪",
+      "WillAdd": "添加",
+      "WillRemove": "移除",
       "NoESCharacters": "没有可用的Exalted Scenes角色。",
-      "AddSelected": "添加选中项"
+      "NoActors": "没有可用的角色。",
+      "Available": "可用",
+      "Selected": "已选择",
+      "Tracking": "已追踪",
+      "ToAdd": "添加",
+      "ToRemove": "移除",
+      "AddSelected": "添加选中项",
+      "ApplyChanges": "应用更改"
     },
 
     "MultiStress": {
@@ -72,7 +131,26 @@
       "RelieveTitle": "缓解所有角色",
       "SelectNeed": "选择需求",
       "Amount": "数量",
-      "Targets": "目标角色"
+      "Targets": "目标角色",
+      "Needs": "需求",
+      "TargetsShort": "目标",
+      "NeedsShort": "需求",
+      "Changes": "变更",
+      "All": "全部",
+      "None": "无",
+      "Preview": "预览",
+      "SelectedTargets": "选中的目标",
+      "SelectedNeeds": "选中的需求",
+      "PreviewHint": "选择目标和一个或多个需求，然后一次性对所有人应用该操作。",
+      "AppliedImmediately": "已立即应用。",
+      "StressAppliedImmediately": "已立即应用。修正值可能会调整最终施加量。",
+      "RelieveAppliedImmediately": "已立即应用。",
+      "BaseAmount": "基础",
+      "ApplyStress": "应用施加",
+      "ApplyRelieve": "应用缓解",
+      "EmptyPreview": "请至少选择一个目标和一个需求。",
+      "NoTargets": "没有已追踪角色。",
+      "NoNeeds": "没有已启用的需求。"
     },
 
     "Config": {
@@ -91,7 +169,63 @@
       "ExportJSON": "导出配置",
       "Import": "导入",
       "ImportJSON": "导入配置",
-      "ImportPlaceholder": "在此处粘贴JSON配置..."
+      "ImportPlaceholder": "在此处粘贴JSON配置...",
+      "ImportExportHint": "导出备份或粘贴配置 JSON 以替换当前设置。",
+      "ExportHint": "将当前需求设置下载为 JSON 备份。",
+      "ImportHint": "粘贴 Mortal Needs 配置 JSON，并在导入前进行核对。",
+      "ExportPayload": "包括启用状态、自定义需求、反转行为、衰减、移动推进、后果和阈值。",
+      "MetricNeeds": "需求",
+      "MetricEnabled": "已启用",
+      "MetricCustom": "自定义",
+      "JsonOnly": "仅 JSON",
+      "ReplacesCurrentConfig": "导入将替换当前的需求配置。",
+      "FormatImportJSON": "格式化 JSON",
+      "ClearImportJSON": "清空 JSON",
+      "ImportStatusEmpty": "等待 JSON",
+      "ImportStatusEmptyHint": "粘贴导出的配置以在此处检查。",
+      "ImportStatusValid": "有效的 JSON",
+      "ImportStatusValidHint": "该配置包含 needs 数组，已准备好导入。",
+      "ImportStatusInvalid": "无效的 JSON",
+      "ImportStatusInvalidHint": "导入前请修复 JSON 语法。",
+      "SearchPlaceholder": "搜索需求...",
+      "SidebarOverview": "概览",
+      "SidebarSections": "分区",
+      "EnabledCount": "已启用",
+      "CustomCount": "自定义",
+      "DecayCount": "衰减",
+      "MovementCount": "移动",
+      "Preview": "预览",
+      "EditNeed": "编辑需求",
+      "MoveNeedUp": "上移",
+      "MoveNeedDown": "下移",
+      "ColumnStatus": "状态",
+      "ColumnNeed": "需求",
+      "ColumnCategory": "类别",
+      "ColumnTraits": "特性",
+      "ColumnActions": "操作",
+      "CustomTrait": "自定义",
+      "DefaultTrait": "默认",
+      "GMOnlyTrait": "仅 GM",
+      "ShowAboveZeroTrait": "高于零",
+      "InvertedTrait": "反转",
+      "CustomColorTrait": "自定义颜色",
+      "StressPerClick": "每次点击施加",
+      "ConsequenceCount": "后果",
+      "DecayOff": "衰减关闭",
+      "MovementOff": "移动关闭",
+      "Disabled": "已禁用",
+      "ThresholdPreview": "危急阈值",
+      "PresetLibraryHint": "选择一个场景配置，并预览它将启用的具体需求。",
+      "SaveCurrentPreset": "保存当前",
+      "ApplyPresetShort": "应用",
+      "ApplySelectedPreset": "应用选中项",
+      "DeletePreset": "删除预设",
+      "PresetNeeds": "需求",
+      "PresetCategories": "类别",
+      "PresetDecay": "衰减",
+      "PresetMovement": "移动",
+      "PresetCategoryMix": "类别组合",
+      "PresetEnabledNeeds": "已启用的需求"
     },
 
     "NeedEdit": {
@@ -100,17 +234,37 @@
       "Id": "需求ID",
       "Label": "显示名称",
       "Icon": "图标（FontAwesome）",
+      "Color": "颜色",
+      "UseCustomColor": "使用自定义",
       "Category": "类别",
       "Enabled": "已启用",
+      "Visibility": "可见性",
+      "GMOnly": "仅 GM",
+      "GMOnlyHint": "对玩家、公开广播和公开聊天通知隐藏此需求。",
+      "ShowAboveZeroOnly": "仅在高于零时显示",
+      "ShowAboveZeroOnlyHint": "在此需求的值高于零之前，使其不出现在可视化面板中。",
       "Values": "数值",
       "Min": "最小值",
       "Max": "最大值",
       "Default": "默认值",
       "StressAmount": "每次点击施加量",
+      "Inverted": "反转需求",
+      "InvertedHint": "用于开始时为满值、随着数值下降而变得危险的资源。施加会降低数值，缓解会恢复数值。",
       "Decay": "自动衰减",
       "DecayEnabled": "启用基于时间的衰减",
       "DecayRate": "衰减量",
       "DecayInterval": "间隔",
+      "Movement": "移动推进",
+      "MovementEnabled": "当已追踪角色 Token 移动时推进此需求。",
+      "MovementInterval": "每",
+      "MovementAmount": "推进量",
+      "MovementMetric": "移动度量",
+      "MovementMetricSpaces": "网格格数（方格 / 六角格）",
+      "MovementMetricCost": "移动消耗",
+      "MovementMetricDistance": "场景距离",
+      "MovementMetricSpacesShort": "格",
+      "MovementMetricCostShort": "消耗",
+      "MovementMetricDistanceShort": "距离",
       "Consequences": "后果",
       "NoConsequences": "未配置后果。",
       "AddConsequence": "添加后果",
@@ -118,7 +272,13 @@
       "DeleteConsequence": "移除",
       "Delete": "删除需求",
       "DeleteTitle": "删除自定义需求",
-      "DeleteConfirm": "确定吗？这将删除需求及其所有相关数据。"
+      "DeleteConfirm": "确定吗？这将删除需求及其所有相关数据。",
+      "SaveBeforeConsequences": "添加后果前请先保存此需求。",
+      "NeedIdRequired": "需求 ID 为必填项。",
+      "NeedIdInvalid": "需求 ID 只能使用字母、数字、点、连字符和下划线。",
+      "NeedIdDuplicate": "已存在具有此 ID 的需求。",
+      "InvalidValueRange": "保存前请检查最小值、最大值、默认值、施加量、衰减和移动数值。",
+      "LivePreview": "实时预览"
     },
 
     "EffectConfig": {
@@ -129,13 +289,22 @@
       "Threshold": "阈值",
       "Ticks": "重复前的刻度数",
       "Reversible": "需求恢复时可逆转",
-      "ThresholdHint": "当此需求达到此百分比时，后果触发。例如：80表示当需求达到80%时触发。",
+      "ThresholdHint": "当此需求达到此危险百分比时，后果会触发。对于反转需求，80 表示当资源大部分耗尽时触发。",
       "TicksHint": "在后果重新应用之前，持续的压力检查发生多少次。数值越低惩罚越重。",
       "ReversibleHint": "如果勾选，当需求恢复到此阈值以下时，此后果会自动移除。",
       "EditTitle": "编辑后果",
       "DeleteConfirm": "移除此后果？",
       "SuggestionsTitle": "此系统的建议",
       "NoSuggestions": "此需求没有可用的系统建议。",
+      "FiresAt": "触发于",
+      "RepeatsAfter": "重复于",
+      "Checks": "次检查",
+      "RemovesOnRecovery": "恢复时移除",
+      "StaysUntilManual": "保持到手动移除",
+      "InvalidType": "请选择有效的后果类型。",
+      "MissingConsequence": "此后果已不存在。请关闭编辑器并重新打开。",
+      "RequiredConfigMissing": "保存前请填写所需的后果配置。",
+      "SaveFailed": "保存后果失败。",
       "AttributePathHint": "角色属性的路径。使用下拉菜单从你系统的已知属性中选择，或输入自定义路径。"
     },
 
@@ -171,9 +340,38 @@
 
     "History": {
       "Title": "需求历史记录",
+      "Subtitle": "查看最近的施加、恢复、衰减、移动和手动更改。",
       "AllEntities": "所有角色",
       "AllNeeds": "所有需求",
-      "NoEntries": "尚无历史记录条目。"
+      "SearchPlaceholder": "搜索历史记录",
+      "NoEntries": "尚无历史记录条目。",
+      "EmptyTitle": "尚未记录任何历史。",
+      "EmptyHint": "当已追踪需求通过施加、缓解、衰减、移动、重置或手动编辑发生变化时，账本便开始填充。",
+      "NoMatches": "没有条目与这些筛选条件匹配。",
+      "NoMatchesHint": "调整角色、需求或搜索筛选条件以扩大账本范围。",
+      "Summary": "摘要",
+      "FilteredSummary": "筛选后的账本",
+      "Total": "总计",
+      "Recoveries": "恢复次数",
+      "MostAffected": "受影响最多",
+      "LastChange": "最近变化",
+      "None": "无",
+      "Now": "现在",
+      "Refresh": "刷新",
+      "Export": "导出",
+      "Clear": "清除",
+      "Exported": "历史记录已导出。",
+      "Cleared": "历史记录已清除。",
+      "ClearTitle": "清除需求历史记录",
+      "ClearContent": "这将清除此世界中存储的凡人需求历史记录。当前需求值不会被更改。",
+      "SourceStress": "施加",
+      "SourceRelieve": "缓解",
+      "SourceManual": "手动",
+      "SourceReset": "重置",
+      "SourceDecay": "衰减",
+      "SourceMovement": "移动",
+      "SourceSocket": "同步",
+      "SourceRegistration": "新需求"
     },
 
     "Presets": {
@@ -217,6 +415,29 @@
       "OrientationHorizontal": "水平条",
       "OrientationVertical": "垂直条",
       "OrientationRadial": "径向弧",
+      "PanelDisplayMode": "面板显示模式",
+      "PanelDisplayModeHint": "选择主面板中已追踪角色和需求的排列方式。",
+      "PanelDisplayNormal": "正常",
+      "PanelDisplayCompact": "紧凑",
+      "PanelDisplayFocus": "最差需求聚焦",
+      "PanelDisplayCategory": "按类别分组",
+      "BroadcastLayout": "广播 HUD 布局",
+      "BroadcastLayoutHint": "选择仅用于广播 HUD 的条样式，或继承主面板样式。",
+      "BroadcastLayoutInherit": "继承面板样式",
+      "BroadcastDensity": "广播 HUD 密度",
+      "BroadcastDensityHint": "控制广播 HUD 使用的屏幕空间大小。",
+      "BroadcastDensityNormal": "正常",
+      "BroadcastDensityCompact": "紧凑",
+      "BroadcastDensityMicro": "微型停靠",
+      "BroadcastContentMode": "广播 HUD 内容",
+      "BroadcastContentModeHint": "选择广播 HUD 是显示每个需求、仅显示每个角色最差的需求，还是显示聚焦危机的需求。",
+      "BroadcastContentAll": "所有需求",
+      "BroadcastContentWorst": "仅最差需求",
+      "BroadcastContentCrisis": "聚焦严重与危急",
+      "BroadcastAutoFade": "广播 HUD 自动淡出",
+      "BroadcastAutoFadeHint": "让广播 HUD 在闲置时淡出，并在悬停或聚焦时恢复为完全不透明。",
+      "BroadcastIdleOpacity": "广播闲置不透明度",
+      "BroadcastIdleOpacityHint": "广播 HUD 闲置时使用的不透明度。",
       "UIScale": "UI缩放",
       "UIScaleHint": "调整需求面板的大小（80-200%）。",
       "CompactMode": "紧凑模式",
@@ -254,10 +475,21 @@
       "Keep": "保持激活",
       "ResetAllTitle": "重置所有需求",
       "ResetAllContent": "重置此角色的所有需求为默认值吗？",
+      "ResetAllTrackedTitle": "重置所有已追踪角色",
+      "ResetAllTrackedContent": "重置所有 {count} 个已追踪角色的所有需求吗？这会保持角色处于追踪状态，仅将其需求恢复为默认值。",
       "Apply": "应用",
+      "Cancel": "取消",
       "SelectNeed": "选择需求",
       "Amount": "数量",
       "QuickStressTitle": "快速施加"
+    },
+
+    "Broadcast": {
+      "CycleDensity": "循环切换广播密度",
+      "ResetPosition": "重置广播位置",
+      "OpenPanel": "打开凡人需求面板",
+      "StressNeed": "施加 {need}",
+      "RelieveNeed": "缓解 {need}"
     },
 
     "SessionFlow": {
@@ -272,7 +504,9 @@
       "BroadcastTitle": "凡人需求",
       "FlashTitle": "凡人需求",
       "ResetAll": "重置所有需求",
-      "ResetActor": "重置需求"
+      "ResetActor": "重置需求",
+      "NoVisibleNeeds": "没有可见的需求。",
+      "MoreNeeds": "更多可见需求"
     },
 
     "Notifications": {
@@ -280,13 +514,20 @@
       "NoTokenSelected": "未选择Token。",
       "NoTargetsSelected": "未选择目标。",
       "NoNeedsEnabled": "当前没有启用任何需求。",
+      "NoNeedsSelected": "未选择需求。",
+      "BatchApplyFailed": "应用批量需求更新失败。",
       "ConfigSaved": "需求配置已保存。",
       "ConfigExported": "配置已导出。",
       "ConfigImported": "配置已成功导入。",
       "ImportEmpty": "没有要导入的数据。",
       "ImportFailed": "导入配置失败。",
+      "ImportFormatted": "导入 JSON 已格式化。",
       "PresetApplied": "预设已应用。",
       "PresetSaved": "预设已保存。",
+      "ActorTrackingUpdated": "已追踪角色已更新。添加 {added} 个，移除 {removed} 个。",
+      "ResetAllTrackedComplete": "已重置 {count} 个已追踪角色的需求。",
+      "BroadcastActionFailed": "从广播 HUD 更新需求失败。",
+      "WidgetActionFailed": "更新 SessionFlow 部件操作失败。",
       "LongRestComplete": "长休完成——所有需求已重置。",
       "ShortRestComplete": "短休完成——需求部分缓解。",
       "SceneModifierSet": "场景修饰符已更新。"
@@ -309,17 +550,17 @@
             "2": "食物不由自主地浮现在脑海中——一种持续的低沉的渴望。",
             "3": "身体发出第一个礼貌的请求：它非常想吃东西。"
           },
-        "Medium": {
+          "Medium": {
             "1": "饥饿像不受欢迎的客人一样安顿下来，要求关注且无法忽视。",
             "2": "胃部因一种紧迫感而扭曲，挤走了更柔和的想法。",
             "3": "注意力在边缘磨损——身体的耐心正危险地变薄。"
           },
-        "High": {
+          "High": {
             "1": "身体开始反抗，饥饿压倒思想和理性。",
             "2": "一种深深的、动物的需求从肠道中爬上来，抹去其他一切。",
             "3": "饥饿深深咬入，一个从不睡觉的耐心的捕食者。"
           },
-        "Critical": {
+          "Critical": {
             "1": "啃噬的空虚变成了活物，抓挠着他们胃壁。",
             "2": "他们的身体开始消耗自己，一种缓慢而可怕的生存算术。",
             "3": "饥饿用颤抖的手和凹陷的脸颊写下它的名字。"
@@ -331,17 +572,17 @@
             "2": "一点食物缓解了边缘——足够思考，勉强足够移动。",
             "3": "啃噬感减轻，尽管胃仍在咕咕抗议。"
           },
-        "Medium": {
+          "Medium": {
             "1": "饥饿减弱为可管理的疼痛——仍然存在，但不再支配。",
             "2": "食物找到它最需要的地方，身体带着安静的宽慰呼气。",
             "3": "饥饿的迷雾散去，思想以缓慢、受欢迎的波浪回归。"
           },
-        "Low": {
+          "Low": {
             "1": "现在几乎满足了。折磨褪去成为身体不会很快忘记的记忆。",
             "2": "随着营养进行耐心、稳定的工作，力量慢慢回流。",
             "3": "肚子安静了。不完全是饱的，但不再尖叫。"
           },
-        "Safe": {
+          "Safe": {
             "1": "营养像干旱后的雨水一样涌入，每个细胞都唱着宽慰的歌。",
             "2": "许久以来的第一次真正的饱腹感——身体因感激的疲惫而瘫软。",
             "3": "再次吃饱并完整。饥饿是一场噩梦，现在仁慈地结束了。"
@@ -355,17 +596,17 @@
             "2": "嘴唇感觉有点太干，嘴巴有点太空。",
             "3": "口渴发出第一个警告，轻柔如风中沙粒移动。"
           },
-        "Medium": {
+          "Medium": {
             "1": "喉咙收紧，每次吞咽都是对抗上升干燥感的自觉努力。",
             "2": "口渴变得尖锐，成为无法避免、要求关注的持续伴侣。",
             "3": "舌头开始粘住，思想不可避免地回到水上。"
           },
-        "High": {
+          "High": {
             "1": "每次吞咽都是一把剃刀。身体为它无法拥有的东西尖叫。",
             "2": "脱水在思想上蒙上一层面纱——思想来得缓慢而粘稠如焦油。",
             "3": "舌头变成死物，肿胀开裂如晒干的土地。"
           },
-        "Critical": {
+          "Critical": {
             "1": "口渴是最残酷的需求——它杀得更快，比其他所有都更痛苦。",
             "2": "血液变稠，心脏费力，每个细胞都呼喊着水分。",
             "3": "视线模糊。现实弯曲。身体是一片消耗自己的沙漠。"
@@ -377,17 +618,17 @@
             "2": "口渴的锋利边缘变钝，尽管喉咙仍在燃烧。",
             "3": "一些缓解，像暴风雨前的第一滴——不够，但一个承诺。"
           },
-        "Medium": {
+          "Medium": {
             "1": "水找到它穿过干涸通道的路，思想开始清晰。",
             "2": "绝望的边缘消退。吞咽不再感觉像惩罚。",
             "3": "水分以谨慎的量回归，每一小口都是小小的仁慈行为。"
           },
-        "Low": {
+          "Low": {
             "1": "危机过去。喉咙记得舒适的感觉。",
             "2": "几乎再次完整——身体像守财奴数金子一样囤积每一滴水。",
             "3": "口渴退去为低语，几乎听不见恢复的声音。"
           },
-        "Safe": {
+          "Safe": {
             "1": "水碰到干裂的嘴唇像祝福，将生命传播到干涸的血管中。",
             "2": "缓解如此尖锐以至于近乎疼痛——身体饮入救赎。",
             "3": "终于完全解渴。口渴的记忆像噩梦一样萦绕。"
@@ -693,7 +934,7 @@
             "3": "超越尖叫，超越眼泪。身体关闭一切非必需的东西以求生存。"
           }
         },
-		"Improving": {
+        "Improving": {
           "High": {
             "1": "最锋利的边缘变钝。仍然痛苦，但身体敢于相信它能忍受。",
             "2": "疼痛退去一小部分——足够吸一口气而不是喘息。",

@@ -1,0 +1,84 @@
+{
+  "RPGX": {
+    "QuestLog": {
+      "Title": "Quest Log",
+      "NewQuest": "New Quest",
+      "NoQuests": "No quests here.",
+      "FreeTierUpgrade": "Premium features require RPGX Proton — download free at rpgxstudios.com",
+      "Tabs": {
+        "Active": "Active",
+        "Completed": "Completed",
+        "Failed": "Failed",
+        "Abandoned": "Abandoned"
+      }
+    },
+    "QuestSheet": {
+      "TitlePlaceholder": "Enter quest title...",
+      "DescriptionPlaceholder": "Write the player-facing quest description here...",
+      "GMNotesPlaceholder": "GM-only notes, plot twists, secret info...",
+      "PromptPlaceholder": "Optional prompt — or leave blank for a random quest...",
+      "AssignerLabel": "Quest Assigner",
+      "AssignerDrop": "Drop an actor token here",
+      "AssigneesLabel": "Assigned Characters",
+      "AssigneesDrop": "Drop characters here",
+      "RewardsLabel": "Rewards",
+      "ItemsDrop": "Drop items here",
+      "RevealRewards": "Reveal Rewards to Players",
+      "HideRewards": "Hide Rewards from Players",
+      "RewardsHidden": "Rewards are hidden until the GM reveals them.",
+      "DistributeXP": "Award XP",
+      "DistributeCurrency": "Distribute Currency",
+      "GenerateQuest": "Generate Quest",
+      "Generating": "Generating...",
+      "SaveQuest": "Save Quest",
+      "DeleteQuest": "Delete Quest",
+      "Status": {
+        "Active": "Active",
+        "Completed": "Completed",
+        "Failed": "Failed",
+        "Abandoned": "Abandoned"
+      },
+      "Tabs": {
+        "Details": "Details",
+        "Rewards": "Rewards",
+        "AIGenerate": "AI Generate"
+      },
+      "Currency": {
+        "PP": "PP",
+        "GP": "GP",
+        "SP": "SP",
+        "CP": "CP",
+        "Custom": "Other"
+      }
+    },
+    "Settings": {
+      "ProtonUrl": "RPGX Proton URL",
+      "ProtonUrlHint": "Local address of the RPGX Proton desktop app (default: http://127.0.0.1:3033). Download Proton free at rpgxstudios.com.",
+      "OllamaModel": "Ollama AI Model",
+      "OllamaModelHint": "The Ollama model used for AI quest generation. Must be installed in Ollama via RPGX Proton. (e.g. llama3, qwen2.5:7b, mistral)"
+    },
+    "Errors": {
+      "FreeTierLimit": "Free tier limit reached (10 quests). Premium features require the RPGX Proton desktop app — download free at rpgxstudios.com.",
+      "ProtonRequired": "RPGX Proton is required for this feature. Download free at rpgxstudios.com.",
+      "ProtonNotDetected": "RPGX Proton is not running. Start Proton to unlock premium features.",
+      "OllamaFailed": "Could not reach RPGX Proton. Make sure Proton is running on your computer.",
+      "NoAssignees": "No characters assigned to this quest.",
+      "QuestNotFound": "Quest not found.",
+      "SaveFailed": "Failed to save quest."
+    },
+    "Confirm": {
+      "DeleteQuest": "Are you sure you want to delete this quest? This cannot be undone.",
+      "DeleteQuestTitle": "Delete Quest"
+    },
+    "Awards": {
+      "XPAwarded": "Quest XP Awarded",
+      "CurrencyAwarded": "Quest Currency Distributed",
+      "RewardsRevealed": "Quest rewards are now visible to players."
+    },
+    "Proton": {
+      "Required": "Premium features require the RPGX Proton desktop application.",
+      "Download": "Download RPGX Proton free at rpgxstudios.com",
+      "Subscribe": "Requires an active Patreon subscription — patreon.com/c/rpgxstudios"
+    }
+  }
+}

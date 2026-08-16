@@ -1,0 +1,111 @@
+{
+    "simraki-radial-effects": {
+        "Source": "Source",
+        "Duration": "Duration",
+        "TimeUnlimited": "Unlimited",
+        "TimeExpired": "Expired",
+        "SettingChoices": {
+            "ClickActions": {
+                "Nothing": "Nothing",
+                "Disable": "Disable",
+                "Delete": "Delete"
+            },
+            "TooltipVisibilityMode": {
+                "Disable": "Disabled",
+                "GMOnly": "GM Only",
+                "OwnersOnly": "Token Owners Only",
+                "AnyPlayer": "Any Player's Token",
+                "FriendlyNeutral": "Friendly & Neutral",
+                "Everyone": "Everyone"
+            },
+            "TooltipElements": {
+                "Duration": "Duration",
+                "Description": "Description",
+                "Source": "Source"
+            },
+            "EffectShapes": {
+                "Circle": "Circle",
+                "RoundedSquare": "Rounded Square",
+                "Hexagon": "Hexagon",
+                "FlatHexagon": "Hexagon (Flat)",
+                "Triangle": "Triangle"
+            },
+            "OrbitShapes": {
+                "Circle": "Circle",
+                "Square": "Square",
+                "Hexagon": "Hexagon",
+                "FlatHexagon": "Hexagon (Flat)"
+            }
+        },
+        "Settings": {
+            "ClickActionGM": {
+                "Name": "GM Click Action",
+                "Hint": "What happens when the GM clicks on an effect icon"
+            },
+            "ClickActionOwner": {
+                "Name": "Owner Click Action",
+                "Hint": "What happens when a token owner clicks on an effect icon"
+            },
+            "TooltipVisibilityMode": {
+                "Name": "Tooltip Visibility Mode",
+                "Hint": "Determines who can see the popup tooltips when hovering over effect icons"
+            },
+            "TooltipElementsGM": {
+                "Name": "Tooltip Content (GM)",
+                "Hint": "Select which elements are shown in the tooltip for the GM"
+            },
+            "TooltipElementsPlayer": {
+                "Name": "Tooltip Content (Player)",
+                "Hint": "Select which elements are shown in the tooltip for players"
+            },
+            "InteractionRequireAlt": {
+                "Name": "Require Alt Key",
+                "Hint": "If enabled, effect interaction (hover, clicks) only works while holding the Alt key"
+            },
+            "EffectShape": {
+                "Name": "Effect Icon Shape",
+                "Hint": "Choose the geometric shape for each effect icon's background"
+            },
+            "EffectBgColor": {
+                "Name": "Icon Background Color"
+            },
+            "EffectBorderColor": {
+                "Name": "Icon Border Color"
+            },
+            "EffectSizeMultiplier": {
+                "Name": "Icon Size Multiplier"
+            },
+            "EffectOpacity": {
+                "Name": "Icon Opacity"
+            },
+            "OrbitShape": {
+                "Name": "Orbit Shape",
+                "Hint": "The geometric path along which effect icons are arranged around the token"
+            },
+            "OrbitSpacing": {
+                "Name": "Icon Spacing",
+                "Hint": "Multiplier for the distance between adjacent effect icons on the same orbit ring"
+            },
+            "OrbitStartAngle": {
+                "Name": "Start Angle",
+                "Hint": "Angle (in degrees) where the first effect icon is placed. Measured counter‑clockwise"
+            },
+            "OrbitBaseRadiusMultiplier": {
+                "Name": "Base Orbit Radius",
+                "Hint": "Multiplier for the radius of the first orbit ring (from token center)"
+            },
+            "OrbitReverseDirection": {
+                "Name": "Reverse Direction",
+                "Hint": "If enabled, icons are placed clockwise (otherwise counter‑clockwise). Does not affect start angle"
+            },
+            "HoverEnableAnimation": {
+                "Name": "Enable Hover Animation",
+                "Hint": "Enable smooth scaling of the effect icon when hovering the mouse over it"
+            },
+            "TooltipDelay": {
+                "Name": "Tooltip Delay",
+                "Hint": "Delay in milliseconds before the tooltip appears when hovering"
+            }
+        }
+    }
+}

@@ -1,117 +1,186 @@
-{"wgtgm-mini-player": {
-    "welcomePageHTML": "<div> <p><strong>欢迎使用 Mini Player</strong></p> <hr> <p><strong>加入 Mini Player 社区</strong></p> <p>在 Discord 上加入我们。</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> 加入 Discord</button></div> <strong>支持开发</strong></p> <p>如果你想支持开发，请考虑查看 Patreon 上的会员选项。</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://patreon.com/wgtngm\"><i class=\"fas fa-star\"></i> 成为会员</button></div><p><strong>文档</strong></p> <p>感觉有点迷茫？前往我们的文档页面获取指引，或跳转到 Discord 提问。</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://campaigncodex.wgtngm.com/miniplayer\"><i class=\"fas fa-book\"></i> 文档</button></div></div>",
-    "button": {
-      "title": "创建新的 {type}",
-      "droptoscene": "将 {type} 放置到当前场景",
+{
+  "wgtgm-mini-player": {
+    "welcomePageHTML" : "<div> <p><strong>欢迎使用 Mini Player</strong></p> <hr> <p><strong>加入 Mini Player 社区</strong></p> <p>在 Discord 上加入我们。</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> 加入 Discord</button></div> <strong>支持开发</strong></p> <p>如果你想支持开发，请考虑查看 Patreon 上的会员选项。</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://patreon.com/wgtngm\"><i class=\"fas fa-star\"></i> 成为会员</button></div><p><strong>文档</strong></p> <p>感觉有点迷茫？前往我们的文档页面获取指引，或跳转到 Discord 提问。</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://campaigncodex.wgtngm.com/miniplayer\"><i class=\"fas fa-book\"></i> 文档</button></div></div>",   
+    "button":{
+      "title":"创建新的 {type}",
+      "droptoscene" : "将 {type} 放置到当前场景",
       "tagmode": "标记模式"
     },
     "ui": {
-		"resultsLabel": "结果：",
-		"playlistLabel": "播放列表：",
-		"trackLabel": "曲目：",
-		"noMatchesText": "-- 无匹配项 --",
-		"selectTrackText": "-- 选择曲目 --",
-		"tagHint": "左键单击包含，右键单击排除。",
-		"tagToggleTitle": "左键单击包含，右键单击排除",
-		"ttrpgSourceToggleTitle": "切换 TTRPG 源曲目",
-		"favoriteTitle": "收藏",
-		"crossfadeOn": "交叉淡入淡出 开启",
-		"crossfadeOff": "交叉淡入淡出 关闭",
-		"loopTitle": "循环",
-		"previousTrackTitle": "上一曲目",
-		"playPauseTitle": "播放/暂停",
-		"stopTitle": "停止",
-		"nextTrackTitle": "下一曲目",
-		"muteTitle": "静音",
-		"nextLabel": "下一首：",
-		"none": "无",
-		"windowTitle": "Mini Player",
-		"endOfPlaylist": "播放列表结束",
-		"createTagPlaylist": "创建标签播放列表",
-		"editTags": "编辑标签",
-		"rescanLibrary": "重新扫描音乐库",
-		"openSoundboard": "打开音效板",
-		"toggleTagMode": "切换标签模式",
-		"toggleDock": "切换停靠",
-		"rescanComplete": "Mini Player：音乐库重新扫描完成。",
-		"noTrackSelectedToFavorite": "未选择要收藏的曲目。",
-		"favoritesCreated": "已创建收藏播放列表。",
-		"favoritesCreateFailed": "创建收藏播放列表失败。",
-		"favoritesUpdateFailed": "更新收藏播放列表失败。",
-		"favoriteRemoved": "已从收藏中移除“{name}”。",
-		"favoriteAdded": "已将“{name}”添加到收藏。"
-	},
-	"settings": {
-		"runonlyonce": {
-		  "name": "欢迎消息已禁用",
-		  "hint": "禁用以查看欢迎消息"
-		},
-		"rememberOpenState": {
-		  "name": "记住播放器和音效板状态",
-		  "hint": "如果 Foundry 关闭时播放器和音效板处于打开状态，则在加载时自动打开它们"
-		},
-		"enableCrossfade": {
-		  "name": "启用交叉淡入淡出",
-		  "hint": "如果启用，交叉淡入淡出将应用于音乐播放列表"
-		},
-		"enableSoundboardCrossfade": {
-		  "name": "在音效板上启用交叉淡入淡出",
-		  "hint": "如果启用，交叉淡入淡出将应用于音效板播放列表"
-		},
-		"crossfadeDuration": {
-		  "name": "交叉淡入淡出持续时间（秒）",
-		  "hint": "设置曲目间交叉淡入淡出的持续时间（秒）"
-		},
-		"maxTrackCount": {
-		  "name": "标签播放列表中的最大曲目数",
-		  "hint": "限制Mini Player中动态创建的标签播放列表的曲目数量"
-		},
-		"musicFolder": {
-		  "name": "基础音乐文件夹",
-		  "hint": "从中创建播放列表的文件夹，带有 [sfx] 的文件夹将仅添加到音效板"
-		},
-		"includePlaylistSoundsInTagScan": {
-		  "name": "在标签扫描中包含非Mini Player播放列表",
-		  "hint": "同时扫描非Mini Player创建的播放列表中的声音。使用每个声音路径忽略重复曲目"
-		},
-		"setToLoop": {
-		  "name": "将音效板播放列表曲目设置为循环",
-		  "hint": "导入到仅音效板播放列表中的曲目将设置为循环播放"
-		},
-		"setToEnvironment": {
-		  "name": "将音效板播放列表通道设置为环境",
-		  "hint": "导入的仅音效板播放列表将设置为环境通道"
-		},
-		"setMusicToLoop": {
-		  "name": "将音乐播放列表曲目设置为循环",
-		  "hint": "导入到音乐播放列表中的曲目将设置为循环播放"
-		},
-		"playOnSelect": {
-		  "name": "选择曲目时自动播放",
-		  "hint": "从下拉列表中选择曲目时自动播放"
-		},
-		"stopOnNewSoundboard": {
-		  "name": "播放新音效时停止",
-		  "hint": "播放新的音效板音效时停止当前音效板曲目的播放"
-		},
-		"stopOnNewPlaylist": {
-		  "name": "选择新播放列表时停止",
-		  "hint": "选择新播放列表中的曲目时停止当前曲目的播放"
-		},
-		"linkTTRPG": {
-		  "name": "与 TTRPG Music (Patreon) 链接",
-		  "hint": "启用与 Tabletop RPG Music 模组的集成。需要安装并激活该模组"
-		},
-		"dockSidebar": {
-		  "name": "停靠到播放列表面板",
-		  "hint": "如果启用，播放器将停靠到播放列表面板"
-		},
-		"keybindMiniPlayer": {
-		  "name": "打开迷你音乐播放器"
-		},
-		"keybindMiniBoard": {
-		  "name": "打开迷你音效板"
-		}
-	 }
+      "resultsLabel": "结果：",
+      "playlistLabel": "播放列表：",
+      "trackLabel": "曲目：",
+      "noMatchesText": "-- 无匹配项 --",
+      "selectTrackText": "-- 选择曲目 --",
+      "tagHint": "左键单击包含，右键单击排除。",
+      "tagToggleTitle": "左键单击包含，右键单击排除",
+      "tagGroupToggleTitle": "单击打开或关闭，Shift 单击全部包含，Shift 右键单击全部排除",
+      "ttrpgSourceToggleTitle": "切换 TTRPG 源曲目",
+      "favoriteTitle": "收藏",
+      "crossfadeOn": "交叉淡入淡出 开启",
+      "crossfadeOff": "交叉淡入淡出 关闭",
+      "loopTitle": "循环",
+      "previousTrackTitle": "上一曲目",
+      "playPauseTitle": "播放/暂停",
+      "stopTitle": "停止",
+      "nextTrackTitle": "下一曲目",
+      "muteTitle": "静音",
+      "nextLabel": "下一首：",
+      "none": "无",
+      "windowTitle": "Mini Player",
+      "endOfPlaylist": "播放列表结束",
+      "createTagPlaylist": "创建标签播放列表",
+      "editTags": "编辑标签",
+      "rescanLibrary": "重新扫描音乐库",
+      "openSoundboard": "打开音效板",
+      "toggleTagMode": "切换标签模式",
+      "toggleDock": "切换停靠",
+      "rescanComplete": "Mini Player：音乐库重新扫描完成。",
+      "noTrackSelectedToFavorite": "未选择要收藏的曲目。",
+      "favoritesCreated": "已创建收藏播放列表。",
+      "favoritesCreateFailed": "创建收藏播放列表失败。",
+      "favoritesUpdateFailed": "更新收藏播放列表失败。",
+      "favoriteRemoved": "已从收藏中移除“{name}”。",
+      "favoriteAdded": "已将“{name}”添加到收藏。",
+      "randomTracksTitle": "使用随机曲目顺序",
+      "previousTrackSet": "Prev {count}",
+      "nextTrackSet": "Next {count}",
+      "trackPageStatus": "Tracks {start}-{end} of {total}"
+    },
+    "sceneConfig": {
+      "playPlaylistLabel": "Mini Player 播放列表",
+      "playPlaylistHint": "当此场景变为活动时，在 Mini Player 中打开的可选播放列表。若未选择曲目，Mini Player 将开始随机播放曲目。若设置了 Mini Player 标签，则忽略此项。",
+      "playPlaylistSoundLabel": "Mini Player 曲目",
+      "playPlaylistSoundHint": "当此场景变为活动时播放的可选曲目。留空则从所选播放列表中随机开始一首曲目。",
+      "playTagsLabel": "Mini Player 标签",
+      "playTagsHint": "当此场景变为活动时，以标签模式打开并自动播放的、以逗号分隔的标签。在标签前加 \"-\" 或使用 \"not(tag)\" 以排除它。包含 \"ttrpg\" 可启用 TTRPG 源切换。",
+      "playPresetLabel": "Mini Player 预设",
+      "playPresetHint": "当此场景变为活动时播放的可选预设。若同时设置了标签，则预设先加载，随后 Mini Player 标签播放可接管音乐层。",
+      "stopMiniPlayerOnStartLabel": "先停止所有音乐",
+      "stopMiniPlayerOnStartHint": "当此场景变为活动时，在应用场景播放列表、场景曲目、预设或标签之前，停止当前正在播放的音乐。",
+      "stopAllSoundsOnStartLabel": "先停止所有声音",
+      "stopAllSoundsOnStartHint": "当此场景变为活动时，在应用场景播放列表、场景曲目、预设或标签之前，停止所有当前正在播放的声音。"
+    },
+    "combatTracker": {
+      "sectionLabel": "Mini Player 战斗音频",
+      "autoplayLabel": "战斗开始时自动播放",
+      "autoplayHint": "若启用，下方的 Mini Player 战斗音频设置将在战斗开始时应用。",
+      "stopMiniPlayerOnStartLabel": "先停止 Mini Player 音乐",
+      "stopMiniPlayerOnStartHint": "在应用所选的 Mini Player 播放列表或标签之前停止当前正在播放的音乐。开启自动播放时始终启用此项。",
+      "stopAllSoundsOnStartLabel": "先停止所有声音",
+      "stopAllSoundsOnStartHint": "在应用战斗 Mini Player 与音效板选择之前，停止所有当前正在播放的播放列表与曲目。",
+      "miniPlaylistLabel": "Mini Player 播放列表",
+      "miniPlaylistHint": "战斗开始时在 Mini Player 中打开的可选播放列表。若设置，则优先于 Mini Player 标签。",
+      "miniTagsLabel": "Mini Player 标签",
+      "miniTagsHint": "战斗开始时以 Mini Player 标签模式打开的、以逗号分隔的标签。在标签前加 \"-\" 或使用 \"not(tag)\" 以排除它。包含 \"ttrpg\" 可启用 TTRPG 源切换。若已选择 Mini Player 播放列表，则忽略此项。",
+      "soundboardTagsLabel": "音效板标签",
+      "soundboardTagsHint": "战斗开始时以音效板标签模式打开的、以逗号分隔的标签。在标签前加 \"-\" 或使用 \"not(tag)\" 以排除它。",
+      "presetLabel": "预设",
+      "presetHint": "战斗开始时播放的可选预设。预设先加载，随后 Mini Player 播放列表/标签播放可接管音乐层，战斗结束时恢复先前的音频状态。"
+    },
+    "settings": {
+      "runonlyonce": {
+        "name": "欢迎消息已禁用",
+        "hint": "禁用以查看欢迎消息"
+      },
+      "rememberOpenState": {
+        "name": "记住播放器和音效板状态",
+        "hint": "如果 Foundry 关闭时播放器和音效板处于打开状态，则在加载时自动打开它们"
+      },
+      "enableCrossfade": {
+        "name": "启用交叉淡入淡出",
+        "hint": "如果启用，交叉淡入淡出将应用于音乐播放列表"
+      },
+      "enableSoundboardCrossfade": {
+        "name": "在音效板上启用交叉淡入淡出",
+        "hint": "如果启用，交叉淡入淡出将应用于音效板播放列表"
+      },
+      "crossfadeDuration": {
+        "name": "交叉淡入淡出持续时间（秒）",
+        "hint": "设置曲目间交叉淡入淡出的持续时间（秒）"
+      },
+      "maxTrackCount": {
+        "name": "标签播放列表中的最大曲目数",
+        "hint": "限制Mini Player中动态创建的标签播放列表的曲目数量"
+      },
+      "musicFolder": {
+        "name": "基础音乐文件夹",
+        "hint": "播放列表的创建来源文件夹，带 -sfx 的文件夹将仅作为音效板添加"
+      },
+      "includePlaylistSoundsInTagScan": {
+        "name": "在标签扫描中包含非Mini Player播放列表",
+        "hint": "同时扫描非Mini Player创建的播放列表中的声音。使用每个声音路径忽略重复曲目"
+      },
+      "setToLoop": {
+        "name": "将音效板播放列表曲目设置为循环",
+        "hint": "导入到仅音效板播放列表中的曲目将设置为循环播放"
+      },
+      "setToEnvironment": {
+        "name": "将音效板播放列表通道设置为环境",
+        "hint": "导入的仅音效板播放列表将设置为环境通道"
+      },
+      "setMusicToLoop": {
+        "name": "将音乐播放列表曲目设置为循环",
+        "hint": "导入到音乐播放列表中的曲目将设置为循环播放"
+      },
+      "playOnSelect": {
+        "name": "选择曲目时自动播放",
+        "hint": "从下拉列表中选择曲目时自动播放"
+      },
+      "combatPlayTags": {
+        "name": "战斗播放标签",
+        "hint": "战斗开始时以 Mini Player 标签模式打开并自动播放的、以逗号分隔的标签。包含 \"ttrpg\" 可启用 TTRPG 源切换。"
+      },
+      "combatPlayPlaylist": {
+        "name": "战斗播放列表",
+        "hint": "战斗开始时在 Mini Player 中打开的播放列表。若设置，则优先于战斗播放标签。"
+      },
+      "combatPlayPreset": {
+        "name": "战斗播放预设",
+        "hint": "战斗开始时播放的预设。预设先加载，随后 Mini Player 播放列表/标签播放可接管音乐层，战斗结束时恢复先前的音频状态。"
+      },
+      "combatSoundboardTags": {
+        "name": "战斗音效板标签",
+        "hint": "战斗开始时以音效板标签模式打开的、以逗号分隔的标签。"
+      },
+      "combatAutoplayOnStart": {
+        "name": "战斗开始时自动播放",
+        "hint": "若启用，战斗开始时将运行战斗音频自动化。"
+      },
+      "combatStopMiniPlayerOnStart": {
+        "name": "先停止 Mini Player 音乐",
+        "hint": "在应用战斗 Mini Player 播放列表/标签选择之前停止当前正在播放的音乐。开启自动播放时始终启用此项。"
+      },
+      "combatStopAllSoundsOnStart": {
+        "name": "先停止所有声音",
+        "hint": "在应用战斗 Mini Player 与音效板选择之前，停止所有当前正在播放的播放列表与曲目。"
+      },
+      "stopOnNewSoundboard": {
+        "name": "播放新音效时停止",
+        "hint": "播放新的音效板音效时停止当前音效板曲目的播放"
+      },
+      "playTrackWhenDroppedOnMixer": {
+        "name": "拖放到混音器时播放曲目",
+        "hint": "若禁用，将播放列表曲目拖放到混音器时，会将其添加为排队的混音器行而不自动播放。"
+      },
+      "stopOnNewPlaylist": {
+        "name": "选择新播放列表时停止",
+        "hint": "选择新播放列表中的曲目时停止当前曲目的播放"
+      },
+      "linkTTRPG": {
+        "name": "与 TTRPG Music (Patreon) 链接",
+        "hint": "启用与 Tabletop RPG Music 模组的集成。需要安装并激活该模组"
+      },
+      "dockSidebar": {
+        "name": "停靠到播放列表面板",
+        "hint": "如果启用，播放器将停靠到播放列表面板"
+      },
+      "keybindMiniPlayer": {
+        "name": "打开迷你音乐播放器"
+      },
+      "keybindMiniBoard": {
+        "name": "打开迷你音效板"
+      }
+    }
   }
 }

@@ -1,0 +1,249 @@
+{
+  "FILE_MANAGER_DUNGEONS_LAB": {
+    "Title": "文件管理器",
+    "Keybindings": {
+      "Open": { "Name": "打开文件管理器" },
+      "SelectAll": { "Name": "全选文件（当文件管理器打开时）" },
+      "QuickJump": { "Name": "快速跳转到文件夹（当文件管理器打开时）" },
+      "ScopedQuickJump": {
+        "Name": "在当前文件夹内快速跳转（当文件管理器打开时）"
+      }
+    },
+    "Settings": {
+      "AccentColor": {
+        "Name": "强调色",
+        "Hint": "文件管理器各处使用的强调颜色。"
+      },
+      "DefaultView": {
+        "Name": "默认视图",
+        "Hint": "文件管理器打开时使用的视图模式。"
+      },
+      "DisableChatGreeting": {
+        "Name": "禁用聊天问候",
+        "Hint": "隐藏世界加载时发布到聊天的 Dungeons Lab 问候消息。"
+      },
+      "WebpQuality": {
+        "Name": "WebP 质量",
+        "Hint": "“转换为 WebP”上下文操作的质量（1 = 最佳，文件更大）。"
+      },
+      "RecursiveSearch": {
+        "Name": "递归搜索",
+        "Hint": "搜索栏使用后台索引在所有嵌套文件夹中查找文件。如果索引拖慢服务器，请将其关闭。"
+      },
+      "ScopedQuickJump": {
+        "Name": "限定范围快速跳转（Ctrl+I）",
+        "Hint": "Ctrl+I 打开快速跳转面板，范围限定为你打开的文件夹及其子文件夹。Ctrl+P 则继续搜索整个数据源。"
+      },
+      "AutoWebpUpload": {
+        "Name": "将上传转换为 WebP",
+        "Hint": "通过文件管理器上传的 PNG、JPEG、BMP 和 AVIF 图片会在到达服务器之前转换为 WebP（质量取自 WebP 质量设置）。GIF、SVG 及其他所有文件保持原样上传。"
+      }
+    },
+    "Hub": {
+      "Group": {
+        "Appearance": "外观",
+        "Search": "搜索",
+        "FilesUpload": "文件与上传",
+        "Misc": "其他"
+      }
+    },
+    "View": {
+      "Grid": "网格",
+      "List": "列表",
+      "Compact": "紧凑",
+      "Portrait": "竖版"
+    },
+    "Colors": {
+      "None": "无颜色",
+      "Red": "红色",
+      "Orange": "橙色",
+      "Yellow": "黄色",
+      "Green": "绿色",
+      "Blue": "蓝色",
+      "Purple": "紫色"
+    },
+    "Toolbar": {
+      "Up": "上一级",
+      "SearchPlaceholder": "搜索文件…",
+      "NewFolder": "新建文件夹",
+      "Upload": "上传",
+      "TagResults": "筛选的文件",
+      "EditPath": "点击输入路径",
+      "PathPlaceholder": "输入路径并按回车…",
+      "SplitView": "分屏视图"
+    },
+    "Tabs": {
+      "NewTab": "新建标签页",
+      "CloseTab": "关闭标签页"
+    },
+    "Split": {
+      "Close": "关闭第二个窗格",
+      "Toggle": "分屏",
+      "Active": "活动",
+      "Swap": "交换窗格",
+      "Direction": "切换分屏方向",
+      "Copied": "已将“{name}”复制到此窗格的文件夹",
+      "FoldersNotCopyable": "文件夹无法在两个窗格之间复制"
+    },
+    "Dnd": {
+      "CopiedTo": "已将“{name}”复制到“{folder}”"
+    },
+    "Palette": {
+      "GoTo": "转到…",
+      "Tooltip": "快速跳转到文件夹",
+      "Placeholder": "跳转到文件夹…",
+      "Recent": "最近文件夹",
+      "Matches": "文件夹 - 匹配数：{count}",
+      "NoResults": "未找到结果",
+      "NoResultsHint": "模糊搜索涵盖此数据源中的所有文件夹和文件",
+      "ScopedIn": "在文件夹 {folder} 中",
+      "ScopedMatches": "在 {folder} 中 - 匹配数：{count}",
+      "ScopedPlaceholder": "在 {folder} 内搜索…",
+      "ScopedNoResultsHint": "仅搜索 {folder} 及其子文件夹 - Ctrl+P 可搜索全部内容",
+      "HintNav": "↑↓ - 导航",
+      "HintGo": "↵ - 打开",
+      "HintTab": "⇥ - 在新标签页中打开"
+    },
+    "Sidebar": {
+      "Favorites": "收藏夹",
+      "NoFavorites": "空 - 右键单击文件夹并选择“添加到收藏夹”。",
+      "Recent": "最近",
+      "NoRecent": "空 - 打开几个文件夹。",
+      "Folders": "文件夹",
+      "Colors": "颜色",
+      "Tags": "标签"
+    },
+    "Main": {
+      "Filters": "筛选：",
+      "ClearFilters": "清除筛选",
+      "EmptyFolder": "此文件夹为空。将文件拖放到此处或创建子文件夹。",
+      "NoResults": "无结果。尝试其他搜索或清除标签筛选。",
+      "BulkTags": "标签…"
+    },
+    "Search": {
+      "Matches": "匹配数：{count}",
+      "Indexing": "正在索引文件夹…"
+    },
+    "Media": {
+      "Play": "播放预览",
+      "Stop": "停止预览"
+    },
+    "Preview": {
+      "PanelTitle": "详情",
+      "Hint": "选择文件以查看其详情和操作。",
+      "Actions": "Foundry 操作",
+      "ColorLabel": "颜色标签",
+      "EditTags": "编辑",
+      "NoTags": "无标签",
+      "ActionTile": "放置到场景（图块）",
+      "ActionShowPlayers": "向玩家显示",
+      "ActionStopAudio": "停止玩家播放",
+      "ActionChat": "发送到聊天",
+      "ActionWhisper": "私聊发送（GM）"
+    },
+    "Actions": {
+      "TileDone": "已将“{name}”作为图块放置到场景",
+      "SharedDone": "已向玩家显示“{name}”",
+      "AudioStopped": "已为所有人停止播放“{name}”",
+      "ChatDone": "已将“{name}”发送到聊天",
+      "WhisperDone": "已私聊发送“{name}”"
+    },
+    "Whisper": {
+      "Title": "私聊发送",
+      "Label": "发送给当前活跃玩家",
+      "Send": "发送"
+    },
+    "Properties": {
+      "Title": "属性",
+      "Type": "类型",
+      "Source": "来源",
+      "Path": "路径",
+      "CopyPath": "复制路径",
+      "PathCopied": "已复制路径到剪贴板"
+    },
+    "Types": {
+      "folder": "文件夹",
+      "image": "图片",
+      "audio": "音频",
+      "video": "视频",
+      "code": "代码",
+      "data": "数据",
+      "doc": "文档",
+      "pdf": "PDF",
+      "archive": "压缩包",
+      "font": "字体",
+      "other": "文件"
+    },
+    "Context": {
+      "Open": "打开",
+      "Favorite": "添加到收藏夹",
+      "Unfavorite": "从收藏夹移除",
+      "Tags": "标签…",
+      "ConvertWebp": "转换为 WebP"
+    },
+    "Convert": {
+      "Progress": "正在转换为 WebP… {current}/{total}",
+      "Done": "已转换为 WebP：{count}",
+      "Failed": "{count} 个失败（请查看控制台）"
+    },
+    "TagModal": {
+      "Title": "管理标签",
+      "AssignTitle": "所选内容的标签",
+      "NewTagPlaceholder": "新标签…",
+      "Add": "添加",
+      "RenameTitle": "重命名标签",
+      "Delete": "删除标签",
+      "MoveUp": "上移",
+      "MoveDown": "下移",
+      "NoTags": "尚无标签 - 请在下方创建第一个。"
+    },
+    "NewFolderDialog": {
+      "Title": "新建文件夹",
+      "Label": "文件夹名称"
+    },
+    "Dialog": {
+      "Create": "创建",
+      "Cancel": "取消",
+      "Save": "保存"
+    },
+    "Discord": {
+      "Title": "Dungeons Lab Discord",
+      "Content": "加入 Dungeons Lab Discord - 地图、更新与友好的 GM 社区：",
+      "Open": "打开 Discord"
+    },
+    "Kofi": {
+      "Tooltip": "在 Ko-fi 上支持我们"
+    },
+    "Drop": {
+      "NotAudio": "只有音频文件可以拖入播放列表",
+      "TargetGone": "拖放目标已不存在",
+      "TrackAdded": "已将曲目“{track}”添加到播放列表“{playlist}”",
+      "PlaylistCreated": "已创建播放列表“{playlist}”",
+      "PageAdded": "已将页面“{page}”添加到“{entry}”",
+      "EntryCreated": "已创建日志条目“{entry}”"
+    },
+    "Intro": {
+      "ChatTitle": "来自 Dungeons Lab 的问候！",
+      "ChatBody": "感谢您使用 <strong>文件管理器</strong> - 无需再翻遍文件夹，即可搜索、预览、颜色标记并分享您的资产。我们的 Discord 上有新地图、更新和一个友好的 GM 社区等着您。",
+      "ChatCta": "加入我们的 Discord"
+    },
+    "Footer": {
+      "SelectFile": "选择文件",
+      "SelectFolder": "选择文件夹"
+    },
+    "Errors": {
+      "NoScene": "没有可放置图块的活动场景。",
+      "TileNeedsMedia": "只有图片和视频可以作为图块放置。",
+      "ShowUnsupported": "此文件类型无法向玩家显示。",
+      "NoActiveUsers": "没有其他活动用户可以发送。",
+      "BadExtension": "“{name}”不符合此选择器接受的文件类型。",
+      "NothingSelected": "请先选择文件。",
+      "PathNotFound": "未找到路径：{path}"
+    },
+    "Status": {
+      "Count": "项目数：{count}",
+      "Selected": "已选择：{count}",
+      "ActivePane": "活动窗格 {pane}：{name}"
+    }
+  }
+}

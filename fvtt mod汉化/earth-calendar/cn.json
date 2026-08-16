@@ -1,4 +1,5 @@
-{"earth-calendar": {
+{
+  "earth-calendar": {
     "SETTINGS": {
       "calendarFormatStyle": {
         "name": "选择日期格式类型",
@@ -9,6 +10,10 @@
       "currentTimeZone": {
         "name": "当前时区",
         "hint": "默认为 UTC"
+      },
+      "useCustomConfig": {
+        "name": "使用自定义配置",
+        "hint": "配置来自 json"
       }
     }
   }

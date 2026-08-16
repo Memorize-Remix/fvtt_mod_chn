@@ -1,0 +1,168 @@
+{
+  "NpcBuilder": {
+    "SignIn": {
+      "Opening": "正在打开 Patreon 登录…",
+      "Complete": "Patreon 登录完成。",
+      "Failed": "登录失败。"
+    },
+    "SignOut": {
+      "Success": "已退出登录。"
+    },
+    "Auth": {
+      "Failed": "身份验证失败。"
+    },
+    "Session": {
+      "Missing": "会话缺失。请重新登录。",
+      "Expired": "您的会话已过期——请重新登录。"
+    },
+    "Generate": {
+      "NotSignedIn": "生成前请先使用 Patreon 登录。",
+      "AlreadyInProgress": "已有生成正在进行中。",
+      "FormNotFound": "未找到生成器表单。",
+      "Success": "已成功创建「{name}」！"
+    },
+    "Create": {
+      "Failed": "创建「{name}」失败：{error}"
+    },
+    "Undo": {
+      "None": "没有可撤销的最近生成。",
+      "Deleted": "已删除「{name}」。",
+      "Failed": "删除「{name}」失败：{error}"
+    },
+    "Export": {
+      "None": "尚未生成任何{noun}。",
+      "Done": "已导出 {filename}。"
+    },
+    "ImageGen": {
+      "Title": "生成 NPC 图像",
+      "NotSignedIn": "生成图像前请先使用 Patreon 登录。",
+      "NoNpc": "没有可用的{noun}——请先生成或打开一个。",
+      "NotSupported": "此模组不支持图像生成。",
+      "Generating": "正在生成 NPC 图像…这可能需要一点时间。",
+      "Confirm": "生成图像",
+      "Cancel": "取消",
+      "SetSuccess": "已为「{name}」设置图像！",
+      "SavedSuccess": "NPC 图像已保存：{path}",
+      "SentSuccess": "图像生成请求已成功发送。",
+      "Failed": "图像生成失败：{error}"
+    },
+    "ImageConfirm": {
+      "ForName": "为「{name}」生成图像？",
+      "CostNote": "这将消耗您每月额度中的 {cost} 次 NPC 使用次数。",
+      "ArtStyle": "艺术风格：{style}"
+    },
+    "ClearHistory": {
+      "Title": "清空历史记录",
+      "Content": "<p>删除所有历史记录？此操作无法撤销。</p>",
+      "Confirm": "全部清空",
+      "Cancel": "取消"
+    },
+    "QuickEdit": {
+      "Title": "快速编辑：{name}",
+      "Hint": "在打开角色卡前修正任何细节：",
+      "Confirm": "应用并打开角色卡"
+    },
+    "RawData": {
+      "Title": "下载原始数据",
+      "Content": "<p>AI 生成了数据，但 Foundry 拒绝了该文档。要下载原始 JSON 以保留它吗？</p>",
+      "Confirm": "下载 JSON",
+      "Cancel": "关闭"
+    },
+    "Feedback": {
+      "MissingMessage": "发送前请输入反馈内容。",
+      "Success": "反馈已发送！谢谢您。",
+      "Failed": "发送反馈失败。请重试。"
+    },
+    "Settings": {
+      "ResetWelcome": {
+        "Name": "重置欢迎消息",
+        "Label": "重置",
+        "Hint": "在下一次世界重载时再次显示欢迎消息。",
+        "ConfirmContent": "重置欢迎消息，使其在下一次重载时再次显示？",
+        "ConfirmLabel": "重置",
+        "Success": "欢迎消息将在下一次重载时再次显示。"
+      },
+      "ClearSession": {
+        "Name": "清除已存储的会话",
+        "Label": "清除会话",
+        "Hint": "移除已存储的 Patreon 会话密钥。您将需要重新登录。",
+        "ConfirmContent": "移除已存储的 Patreon 会话密钥？您将需要重新登录。",
+        "ConfirmLabel": "清除会话",
+        "Success": "会话密钥已清除。请重新登录。"
+      }
+    }
+  },
+  "SettlementBuilder": {
+    "Settings": {
+      "IncomeJitter": {
+        "Name": "收入波动幅度 (%)",
+        "Hint": "应用于每家商店每日收入的随机波动幅度。0 = 固定，15 = ±15%（默认），50 = ±50%。"
+      },
+      "HighContrast": {
+        "Name": "高对比度主题",
+        "Hint": "将聚落与国家角色卡上的羊皮纸配色替换为高对比度深色主题，以提高可读性。"
+      },
+      "ArmyTravelDays": {
+        "Name": "军队行军天数",
+        "Hint": "野战军在任意两个聚落之间行军所需的天数（#75）。"
+      },
+      "ResetWelcome": {
+        "Name": "重置欢迎消息",
+        "Label": "重置",
+        "Hint": "在下一次世界重载时再次显示聚落生成器欢迎消息。",
+        "ConfirmContent": "重置欢迎消息，使其在下一次重载时再次显示？",
+        "ConfirmLabel": "重置",
+        "Success": "欢迎消息将在下一次重载时再次显示。"
+      },
+      "ClearSettlements": {
+        "Name": "清除已存储的会话",
+        "Label": "清除会话",
+        "Hint": "移除 Settlement Builder 存储的 Patreon 会话密钥。",
+        "ConfirmContent": "移除已存储的会话密钥？您将需要重新登录。",
+        "ConfirmLabel": "清除会话",
+        "Success": "会话密钥已清除。请重新登录。"
+      },
+      "ResetCalendar": {
+        "Name": "将日历重置为默认",
+        "Label": "重置日历",
+        "Hint": "将 Pf2eCalendarTimeline 重置为默认的 Golarion 历法，并清除所有预定事件。",
+        "ConfirmContent": "将日历重置为默认的 Golarion 设置？这将清除所有预定事件，且无法撤销。",
+        "ConfirmLabel": "重置日历",
+        "NotActive": "Pf2eCalendarTimeline 未安装或未启用。",
+        "Success": "日历已重置为默认的 Golarion 设置。"
+      },
+      "FixtureSheet": {
+        "Name": "打开测试聚落（QA）",
+        "Label": "打开测试聚落卡",
+        "Hint": "仅限 GM——打开一个临时的预填充聚落卡用于 QA 测试。角色卡关闭时，该日志会自动删除。"
+      },
+      "CreateArmy": {
+        "Name": "创建军队",
+        "Label": "新建军队",
+        "Hint": "为新军队命名"
+      },
+      "HireMercenaries": {
+        "Name": "雇佣佣兵公司",
+        "Label": "雇佣佣兵",
+        "Hint": "支付聚落的国库资金以雇佣一支预设佣兵公司，合同期为固定时长（#81）。",
+        "NotActive": "Pf2eCalendarTimeline 未安装或未启用——跟踪合同期需要它。",
+        "NoSettlements": "没有可支付合同的聚落。",
+        "ConfirmLabel": "雇佣"
+      },
+      "ImportPrebuilt": {
+        "Hint": "选择一个预设",
+        "ConfirmLabel": "导入"
+      },
+      "ImportPrebuiltSettlement": {
+        "Name": "导入预建聚落",
+        "Label": "导入聚落",
+        "Hint": "直接导入 10 个现成聚落之一，无需消耗 AI 点数。"
+      },
+      "ImportPrebuiltNation": {
+        "Name": "导入预建国度",
+        "Label": "导入国度",
+        "Hint": "直接导入 5 个现成国度之一，无需消耗 AI 点数。"
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "REMOTE_ACTION": {
+    "Common": {
+      "Yes": "是",
+      "No": "否"
+    },
+    "Notifications": {
+      "ItemUseSent": "远程操作：已为 {item} 发送物品使用请求。",
+      "ItemUseDialogSent": "远程操作：已为 {item} 将物品使用对话框发送到主屏幕。",
+      "ItemUseDirectWorkflowSent": "远程操作：已在主屏幕上为 {item} 启动物品使用流程。",
+      "ItemUseFailed": "远程操作：发送 {item} 失败（{reason}）。"
+    },
+    "Roles": {
+      "Player": "玩家",
+      "Trusted": "受信任玩家",
+      "Assistant": "助理 GM",
+      "Gamemaster": "游戏主持人",
+      "Unknown": "未知"
+    },
+    "Settings": {
+      "NoUser": "无用户",
+      "NoRelevantUsers": "没有可用于远程操作的玩家用户。",
+      "UserConfiguration": {
+        "Name": "用户配置",
+        "Hint": "打开专用窗口，以选择主接收者和已授权的发送者。",
+        "Label": "配置",
+        "Title": "远程操作——用户",
+        "Description": "选择一个主接收者，并勾选已授权的发送者。"
+      },
+      "Columns": {
+        "Name": "名称",
+        "Role": "角色",
+        "Connected": "已连接",
+        "PrimaryReceiver": "主接收者",
+        "AuthorizedSender": "已授权的发送者"
+      },
+      "PrimaryReceiver": {
+        "Name": "主接收者",
+        "Hint": "通过专用远程操作窗口配置的内部用户。"
+      },
+      "AuthorizedSenders": {
+        "Name": "已授权的发送者",
+        "Hint": "通过专用远程操作窗口配置的内部用户。"
+      },
+      "Debug": {
+        "Name": "调试模式",
+        "Hint": "启用额外的控制台日志。"
+      },
+      "EmitterNotifications": {
+        "Name": "发送端通知",
+        "Hint": "当 open-item-use-dialog 成功转发或失败时，在发送端客户端上显示本地反馈。"
+      },
+      "UseAttackRolls": {
+        "Name": "使用 Foundry 攻击检定",
+        "Hint": "为后续准备的设置，暂不改变实际流程。"
+      },
+      "UseDamageRolls": {
+        "Name": "使用 Foundry 伤害掷骰",
+        "Hint": "为后续准备的设置，暂不改变实际流程。"
+      },
+      "UseSaveRolls": {
+        "Name": "使用 Foundry 豁免检定",
+        "Hint": "为后续准备的设置，暂不改变实际流程。"
+      },
+      "AutoInterceptItemUse": {
+        "Name": "拦截来自角色卡的物品使用",
+        "Hint": "对已授权的发送者默认启用。允许在本地覆盖，以禁用对角色卡中 DnD5e 物品使用的自动拦截。"
+      }
+    },
+    "Errors": {
+      "Dnd5eOnly": "远程操作仅适用于 DnD5e 系统。"
+    }
+  }
+}

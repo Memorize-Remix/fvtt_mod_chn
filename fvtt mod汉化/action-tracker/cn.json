@@ -1,7 +1,7 @@
-{"ACTION-TRACKER.ResetTiming": "动作重置时机",
-  "ACTION-TRACKER.ResetTimingHint": "何时重置动作？",
+{
+  "ACTION-TRACKER.ResetTiming": "动作重置时机",
+  "ACTION-TRACKER.ResetTimingHint": "选择动作是在每个生物的回合开始时重置，还是在轮次结束时重置。",
   "ACTION-TRACKER.TurnStart": "回合开始时",
-  "ACTION-TRACKER.TurnEnd": "回合结束时",  
   "ACTION-TRACKER.RoundEnd": "轮次结束时",
   "ACTION-TRACKER.IconCount": "动作图标数量",
   "ACTION-TRACKER.IconCountHint": "显示的动作图标数量(2-5)",
@@ -13,7 +13,7 @@
   "ACTION-TRACKER.ShowTrackerIconsHint": "在战斗追踪器中角色名称旁显示动作图标",
   "ACTION-TRACKER.Icon0Image": "图标1图像",
   "ACTION-TRACKER.Icon0ImageHint": "图标1的SVG路径",
-  "ACTION-TRACKER.Icon0Sound": "图标1音效",  
+  "ACTION-TRACKER.Icon0Sound": "图标1音效",
   "ACTION-TRACKER.Icon0SoundHint": "图标1的音效路径",
   "ACTION-TRACKER.Icon0Text": "图标1悬停文本",
   "ACTION-TRACKER.Icon0TextHint": "图标1的提示文本",
@@ -57,5 +57,14 @@
   "ACTION-TRACKER.Icon4Settings": "图标4设置",
   "ACTION-TRACKER.Icon5Settings": "图标5设置",
   "ACTION-TRACKER.Debug": "启用调试日志",
-  "ACTION-TRACKER.DebugHint": "在控制台输出详细信息用于故障排除。正常使用时请禁用。"
+  "ACTION-TRACKER.DebugHint": "在控制台输出详细信息用于故障排除。正常使用时请禁用。",
+  "ACTION-TRACKER.ImportExportSettings": "导入/导出设置",
+  "ACTION-TRACKER.ExportSettings": "导出设置",
+  "ACTION-TRACKER.ImportSettings": "导入设置",
+  "ACTION-TRACKER.ExportSuccess": "动作追踪器设置已导出。",
+  "ACTION-TRACKER.ImportSuccess": "动作追踪器设置已导入。",
+  "ACTION-TRACKER.ImportFailed": "动作追踪器设置导入失败。",
+  "ACTION-TRACKER.ImportInvalidFile": "这不是有效的动作追踪器设置文件。",
+  "ACTION-TRACKER.ImportInvalidIcons": "动作追踪器设置文件不包含有效的图标设置。",
+  "ACTION-TRACKER.ImportInvalidIcon": "动作追踪器设置文件中的图标 {index} 无效。"
 }

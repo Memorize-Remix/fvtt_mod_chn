@@ -1,0 +1,84 @@
+{
+  "RPGX": {
+    "QuestLog": {
+      "Title": "任务日志",
+      "NewQuest": "新建任务",
+      "NoQuests": "这里还没有任务。",
+      "FreeTierUpgrade": "高级功能需要 RPGX Proton——可在 rpgxstudios.com 免费下载",
+      "Tabs": {
+        "Active": "进行中",
+        "Completed": "已完成",
+        "Failed": "已失败",
+        "Abandoned": "已放弃"
+      }
+    },
+    "QuestSheet": {
+      "TitlePlaceholder": "输入任务标题……",
+      "DescriptionPlaceholder": "在此编写面向玩家的任务描述……",
+      "GMNotesPlaceholder": "仅 GM 可见的笔记、剧情转折、秘密信息……",
+      "PromptPlaceholder": "可选提示词——留空则生成随机任务……",
+      "AssignerLabel": "任务发布者",
+      "AssignerDrop": "将角色 Token 拖放到此处",
+      "AssigneesLabel": "被指派角色",
+      "AssigneesDrop": "将角色拖放到此处",
+      "RewardsLabel": "奖励",
+      "ItemsDrop": "将物品拖放到此处",
+      "RevealRewards": "向玩家展示奖励",
+      "HideRewards": "对玩家隐藏奖励",
+      "RewardsHidden": "奖励在 GM 展示之前保持隐藏。",
+      "DistributeXP": "发放 XP",
+      "DistributeCurrency": "分配货币",
+      "GenerateQuest": "生成任务",
+      "Generating": "生成中……",
+      "SaveQuest": "保存任务",
+      "DeleteQuest": "删除任务",
+      "Status": {
+        "Active": "进行中",
+        "Completed": "已完成",
+        "Failed": "已失败",
+        "Abandoned": "已放弃"
+      },
+      "Tabs": {
+        "Details": "详情",
+        "Rewards": "奖励",
+        "AIGenerate": "AI 生成"
+      },
+      "Currency": {
+        "PP": "PP",
+        "GP": "GP",
+        "SP": "SP",
+        "CP": "CP",
+        "Custom": "其他"
+      }
+    },
+    "Settings": {
+      "ProtonUrl": "RPGX Proton 地址",
+      "ProtonUrlHint": "RPGX Proton 桌面应用的本地地址（默认：http://127.0.0.1:3033）。可在 rpgxstudios.com 免费下载 Proton。",
+      "OllamaModel": "Ollama AI 模型",
+      "OllamaModelHint": "用于 AI 任务生成的 Ollama 模型。必须通过 RPGX Proton 在 Ollama 中安装。（例如 llama3、qwen2.5:7b、mistral）"
+    },
+    "Errors": {
+      "FreeTierLimit": "已达到免费版上限（10 个任务）。高级功能需要 RPGX Proton 桌面应用——可在 rpgxstudios.com 免费下载。",
+      "ProtonRequired": "此功能需要 RPGX Proton。可在 rpgxstudios.com 免费下载。",
+      "ProtonNotDetected": "RPGX Proton 未在运行。请启动 Proton 以解锁高级功能。",
+      "OllamaFailed": "无法连接 RPGX Proton。请确保 Proton 正在你的计算机上运行。",
+      "NoAssignees": "此任务未指派任何角色。",
+      "QuestNotFound": "找不到任务。",
+      "SaveFailed": "保存任务失败。"
+    },
+    "Confirm": {
+      "DeleteQuest": "确定要删除此任务吗？此操作无法撤销。",
+      "DeleteQuestTitle": "删除任务"
+    },
+    "Awards": {
+      "XPAwarded": "任务 XP 已发放",
+      "CurrencyAwarded": "任务货币已分配",
+      "RewardsRevealed": "任务奖励现在对玩家可见。"
+    },
+    "Proton": {
+      "Required": "高级功能需要 RPGX Proton 桌面应用。",
+      "Download": "可在 rpgxstudios.com 免费下载 RPGX Proton",
+      "Subscribe": "需要有效的 Patreon 订阅——patreon.com/c/rpgxstudios"
+    }
+  }
+}

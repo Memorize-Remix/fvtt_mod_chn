@@ -1,0 +1,248 @@
+{
+  "IDS": {
+    "App": {
+      "Name": "Indy Dice Stats",
+      "LuckLedger": "幸运账本",
+      "Subtitle": "按玩家、动作与骰子类型跟踪掷骰分布。",
+      "MonitorHint": "双击打开统计。",
+      "MonitorTitle": "Indy Dice Stats 监视器"
+    },
+    "Common": {
+      "Action": "动作",
+      "All": "全部",
+      "AllActions": "所有动作",
+      "AllPlayers": "所有玩家",
+      "AllTime": "所有时间",
+      "Average": "平均",
+      "AverageShort": "均值",
+      "Check": "检定",
+      "Count": "数量",
+      "Die": "骰子",
+      "Max": "最大",
+      "Min": "最小",
+      "None": "无",
+      "Player": "玩家",
+      "Roll": "掷骰",
+      "Save": "豁免",
+      "SaveButton": "保存",
+      "Session": "会话",
+      "Skill": "技能",
+      "Today": "今天",
+      "Unknown": "未知"
+    },
+    "Actions": {
+      "Attack": "攻击检定",
+      "Damage": "伤害掷骰",
+      "Save": "豁免检定",
+      "Check": "属性检定",
+      "Skill": "技能检定",
+      "Ability": "属性检定",
+      "Initiative": "先攻",
+      "DeathSave": "死亡豁免",
+      "Tool": "工具检定",
+      "Heal": "治疗",
+      "Spell": "法术",
+      "Other": "其他"
+    },
+    "ActionNames": {
+      "Attack": "攻击",
+      "Damage": "伤害",
+      "Save": "豁免检定",
+      "Check": "属性检定",
+      "Skill": "技能检定",
+      "Ability": "属性检定",
+      "Initiative": "先攻",
+      "DeathSave": "死亡豁免",
+      "Tool": "工具检定",
+      "Heal": "治疗",
+      "Spell": "法术",
+      "Other": "其他"
+    },
+    "Controls": {
+      "PlayerHint": "选择要查看哪位玩家的统计。",
+      "ComparePlayers": "比较玩家",
+      "CompareHint": "选择其他玩家与所选玩家进行比较。",
+      "ActionHint": "按掷骰动作类型筛选统计。",
+      "SaveCheck": "豁免/检定",
+      "DetailHint": "筛选豁免检定、属性检定或技能检定。",
+      "DieHint": "按骰子类型（d4、d6、d20 等）筛选统计。",
+      "SessionHint": "将统计筛选到特定日期或所有时间。"
+    },
+    "Summary": {
+      "TotalDice": "骰子总数",
+      "TotalDiceHint": "所有记录的骰子结果",
+      "FilteredDice": "筛选后的骰子",
+      "FilteredDiceWithDie": "筛选后的骰子（{die}）",
+      "FilteredDiceHint": "所选骰子的数量",
+      "Average": "平均（所选骰子）",
+      "AverageHint": "当前骰子的平均结果",
+      "TopAction": "最多动作",
+      "TopActionHint": "掷骰最多的类别",
+      "TopType": "最多类型",
+      "TopRoll": "最多掷骰"
+    },
+    "Charts": {
+      "Distribution": "分布",
+      "DistributionAria": "分布图",
+      "BreakdownAria": "构成图",
+      "Normalize": "归一化",
+      "NormalizeHint": "按百分比而非原始数量归一化比较。",
+      "NormalizedSuffix": "（归一化）",
+      "Candles": "蜡烛图",
+      "CandlesHint": "在趋势视图中显示蜡烛图范围。",
+      "MaxStreak": "最长连击",
+      "StreakHint": "在最小/最大连击热力图之间切换。",
+      "DieResults": "{die} 结果",
+      "DistributionTitle": "分布：{die}{suffix}",
+      "TrendWithDie": "趋势 {die}",
+      "StreaksWithDie": "连击 {die}",
+      "DistributionWithDie": "分布 {die}",
+      "DistributionNormalizedWithDie": "分布 {die}（归一化）",
+      "DistributionParen": "分布（{die}）",
+      "CycleHint": "点击在分布、趋势与连击视图之间切换。",
+      "NoStreakData": "暂无连击数据。",
+      "StreakCell": "{player} 在 {date} 的{type}连击：{value}",
+      "TrendTooltip": "{label}：平均 {avg}，最小 {min}，最大 {max}",
+      "CandleTooltip": "{label}：平均 {avg}，最小 {min}，最大 {max}，q1 {q1}，q3 {q3}",
+      "ActionBreakdown": "动作构成",
+      "ActionsWithDie": "动作（{die}）",
+      "ActionType": "{action} 类型",
+      "DiceMix": "骰子构成（{action}）",
+      "NoData": "无数据",
+      "NoDataForFilters": "当前筛选条件下无数据"
+    },
+    "Table": {
+      "DieSummary": "骰子摘要",
+      "DieSummaryHint": "所选玩家的统计。",
+      "MinStreak": "最短连击",
+      "MaxStreak": "最长连击",
+      "NoRolls": "尚未捕获任何掷骰。",
+      "PlayerComparison": "玩家比较",
+      "PlayerComparisonHint": "按玩家的总计。",
+      "TotalRolls": "掷骰总数",
+      "SelectPlayers": "选择两名或更多玩家进行比较。"
+    },
+    "Latest": {
+      "Title": "最近掷骰",
+      "Awaiting": "等待掷骰",
+      "Listening": "正在监听掷骰…",
+      "Unknown": "未知",
+      "Advantage": "优势",
+      "Disadvantage": "劣势",
+      "NoDice": "无骰子结果",
+      "Blind": "暗骰",
+      "Private": "私密",
+      "Self": "自己"
+    },
+    "Detail": {
+      "Save": "{label}豁免",
+      "Skill": "{label}技能",
+      "Check": "{label}检定"
+    },
+    "Reset": {
+      "Title": "重置骰子统计",
+      "Description": "清除某位玩家或所有玩家的已存统计。",
+      "Button": "重置所选",
+      "ConfirmAll": "这将清除所有玩家的统计。是否继续？",
+      "ConfirmPlayer": "这将清除所选玩家的已存统计。是否继续？"
+    },
+    "Visibility": {
+      "Title": "玩家可见性",
+      "Description": "选择要从骰子统计仪表盘中隐藏的玩家。",
+      "HiddenPlayers": "已隐藏的玩家",
+      "ReshowHint": "取消勾选某位玩家并保存，即可再次显示。"
+    },
+    "Faker": {
+      "Title": "生成模拟数据",
+      "Description": "创建 12 个会话的示例掷骰用于测试。",
+      "Note": "每个会话生成 30–90 次掷骰，涵盖常见掷骰类型、检定与豁免。已有统计不会被清除。",
+      "Confirm": "为 <strong>{name}</strong> 添加跨 {sessions} 个会话的模拟骰子统计（每个会话 {min}–{max} 次掷骰）。已有统计不会被清除。是否继续？",
+      "Complete": "Indy Dice Stats | 已为 {name} 添加跨 {sessions} 个会话的 {rolls} 次模拟掷骰。"
+    },
+    "Settings": {
+      "Enabled": {
+        "Name": "启用掷骰跟踪",
+        "Hint": "跟踪 D&D 5e、Pathfinder 2e 与 Midi-QOL 工作流中的掷骰。"
+      },
+      "RestrictToGm": {
+        "Name": "将模组限制为仅限 GM",
+        "Hint": "对非 GM 用户完全禁用 Indy Dice Stats。"
+      },
+      "RecordSelf": {
+        "Name": "记录自身掷骰",
+        "Hint": "在骰子统计中记录仅自己可见（私密）的掷骰。"
+      },
+      "RecordGmPrivate": {
+        "Name": "记录 GM 私密掷骰",
+        "Hint": "在骰子统计中记录 GM 的私密掷骰。"
+      },
+      "RecordGmBlind": {
+        "Name": "记录 GM 暗骰",
+        "Hint": "在骰子统计中记录 GM 的暗骰。"
+      },
+      "AllowGmStats": {
+        "Name": "允许玩家查看 GM 统计",
+        "Hint": "允许非 GM 用户在玩家列表与所有玩家视图中包含 GM 统计。"
+      },
+      "ShowActorNames": {
+        "Name": "向玩家显示角色名称",
+        "Hint": "在最近掷骰监视器中向非 GM 用户显示角色名称。"
+      },
+      "ShowLatest": {
+        "Name": "显示最近掷骰",
+        "Hint": "在仪表盘标题与浮动监视器中显示最近掷骰。"
+      },
+      "OnlyD20": {
+        "Name": "仅监视 d20",
+        "Hint": "仅当掷骰包含 d20 时更新最近掷骰显示。"
+      },
+      "DebugMidi": {
+        "Name": "调试 Midi-QOL 掷骰捕获",
+        "Hint": "将 Midi-QOL 掷骰来源与去重详情记录到控制台。"
+      },
+      "RollDelay": {
+        "Name": "掷骰处理延迟（毫秒）",
+        "Hint": "延迟处理聊天与 Midi-QOL 掷骰。当 Dice So Nice 激活时，处理会等待其完成钩子而非此延迟。"
+      },
+      "GlobalStats": "全局骰子统计",
+      "UiState": "Indy Dice Stats 界面状态",
+      "MonitorPosition": "Indy Dice Stats 监视器位置",
+      "BodyFont": {
+        "Name": "正文字体",
+        "Hint": "模组中常规文本使用的字体。"
+      },
+      "TitleFont": {
+        "Name": "标题字体",
+        "Hint": "标题与大数字使用的字体。"
+      },
+      "BodyScale": {
+        "Name": "正文字体倍率",
+        "Hint": "应用于正文字体大小的倍率（例如 1.1 = 大 10%）。"
+      },
+      "TitleScale": {
+        "Name": "标题字体倍率",
+        "Hint": "应用于标题/数字字体大小的倍率。"
+      },
+      "ChartScale": {
+        "Name": "图表图例字体倍率",
+        "Hint": "应用于图表图例与坐标轴标签大小的倍率。"
+      }
+    },
+    "Menus": {
+      "Viewer": {
+        "Label": "打开骰子仪表盘",
+        "Hint": "查看玩家与动作的骰子统计。"
+      },
+      "Reset": {
+        "Hint": "清除玩家的骰子统计。"
+      },
+      "Visibility": {
+        "Label": "配置隐藏玩家",
+        "Hint": "选择要从骰子统计仪表盘中隐藏的玩家。"
+      },
+      "Faker": {
+        "Hint": "为所选玩家创建模拟骰子统计。"
+      }
+    }
+  }
+}

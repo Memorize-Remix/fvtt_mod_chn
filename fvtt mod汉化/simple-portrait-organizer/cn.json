@@ -1,8 +1,9 @@
-{"simple-portrait-organizer" : {
+{
+    "simple-portrait-organizer" : {
         
         "settings" : {
-			"storageSourceName": "存储源",
-			"storageSourceHint": "云存储提供商文件系统支持选项。如果支持 S3 或 Forge 等选项，将在此处显示。",
+            "storageSourceName" : "存储源",
+            "storageSourceHint" : "云存储提供商文件系统支持选项。如果支持 S3 或 Forge 等选项，将在此处显示。",
 
             "uploadDirectoryName" : "上传路径",
             "uploadDirectoryHint" : "选择转换后的WebP图像保存的路径。",
@@ -31,7 +32,7 @@
 
         "form" : {
             "chooseFile" : "选择、粘贴或拖入图像：",
-			"uploadingNow": "请等待上传完成。",
+            "uploadingNow": "请等待上传完成。",
             "dropHere" : "拖入图像或从剪贴板粘贴。（Ctrl + V）",
             "chooseFileLabel" : "选择文件",
             "defaultUploader" : "打开默认文件选择"
@@ -39,6 +40,12 @@
 
         "dialog" : {
             "selectFilename" : "确认文件名"
+        },
+        
+        "errors" : {
+            "fileIsZeroSize" : "无法加载文件，请尝试其他方法！",
+            "fileIsNotImage" : "仅支持图像文件！"
         }
     }
 }
+

@@ -1,21 +1,6 @@
-{"FI": {
+{
+  "FI": {
     "ModuleTitle": "JRPG 场景互动",
-
-    "Update": {
-      "Title": "Visual Novel Maker — 更新可用",
-      "NewVersion": "v{version} 已可用！",
-      "CurrentVersion": "你当前版本为 v{current}",
-      "PatchHighlights": "更新内容：",
-      "CriticalWarning": "这是一个重要更新。请尽快更新。",
-      "Confirm": "确定",
-      "SkipVersion": "跳过此版本",
-      "DisableNotification": "不再显示",
-      "DisableConfirm": "更新通知已禁用。你可以在模组设置中重新启用。",
-      "DisableSetting": "禁用更新通知",
-      "DisableSettingHint": "关闭启动时的更新通知弹窗。",
-      "ConfirmNotice": "知道了",
-      "Close": "关闭"
-    },
 
     "Settings": {
       "Discord": {
@@ -26,13 +11,17 @@
         "Name": "启用模组",
         "Hint": "启用或禁用 JRPG 场景互动系统。"
       },
+      "HeaderButtonsIconOnly": {
+        "Name": "角色卡页眉按钮：仅图标",
+        "Hint": "将 Visual Novel Maker 的 Application V1 角色卡头像设置按钮显示为不带文字标签的图标。当某个系统或多个模组挤占角色卡页眉时很有用。"
+      },
       "PromptDistance": {
         "Name": "提示距离",
         "Hint": "出现互动提示的网格距离。（默认：1）"
       },
       "DefaultTransition": {
         "Name": "默认过渡效果",
-        "Hint": "进入视觉小说模式时的默认画面过渡效果。"
+        "Hint": "打开和关闭 VN 模式时使用的默认画面过渡效果。"
       },
       "TypewriterSpeed": {
         "Name": "打字机速度",
@@ -70,14 +59,44 @@
         "Name": "直播模式：隐藏对话框",
         "Hint": "在直播模式下隐藏对话框。适用于仅需要背景和角色画面的语音扮演场景。"
       },
+      "PerCharacterDialoguePanels": {
+        "Name": "逐角色对话面板",
+        "Hint": "启用后，已登场的角色会在底部相连的对话栏中获得各自的槽位，每个槽位都带有自己的名字标签。叙述和系统台词仍使用共享对话框。当发言者不在舞台上时回退到共享对话框。默认关闭。"
+      },
+      "HideCharacterDockNames": {
+        "Name": "隐藏顶栏中的角色名称",
+        "Hint": "为所有用户隐藏顶栏中角色头像下方的名字标签。角色头像和对话发言者名字仍然可见。当 NPC 的身份尚未揭晓时很有用。"
+      },
       "LockPlayerCharAdd": {
         "Name": "锁定玩家角色添加",
         "Hint": "启用后，玩家无法将自己的角色添加到舞台。只有 GM 可以添加角色。",
         "Locked": "玩家无法将角色添加到舞台。"
       },
+      "LockPlayerStageControls": {
+        "Name": "锁定玩家舞台控制",
+        "Hint": "阻止玩家移动、缩放、重置、翻转、隐藏、更改表情、效果或情绪，以及移除他们已登场的角色。玩家仍然可以选择自己的角色作为聊天发言者。",
+        "Locked": "GM 已锁定玩家的舞台控制。"
+      },
       "VoiceIndicator": {
         "Name": "直播模式：语音高亮",
-        "Hint": "通过麦克风检测自动高亮视觉小说舞台上正在说话的玩家角色。GM 除外。"
+        "Hint": "通过麦克风检测自动高亮每个用户选中的 VN 角色，当未选择角色时回退到其分配的角色。启用此功能可能会提示浏览器请求麦克风访问权限。"
+      },
+      "InactiveCharacterDim": {
+        "Name": "非活跃角色变暗",
+        "Hint": "控制当另一个角色被高亮时，非活跃舞台角色的变暗程度。活跃角色始终保持其光晕和 z 层级不受影响。",
+        "Strong": "强（默认）",
+        "Soft": "弱",
+        "Off": "关闭（不变暗）"
+      },
+      "LipSyncMode": {
+        "Name": "口型图像模式",
+        "Hint": "选择对话、聊天和麦克风语音活动是交替口型帧，还是在角色说话时保持说话图像。",
+        "Blink": "闪烁（默认）",
+        "Hold": "保持说话图像"
+      },
+      "AdaptiveUiScale": {
+        "Name": "自适应 UI 缩放",
+        "Hint": "缩放视觉小说舞台 UI 以匹配你的屏幕尺寸（按 1920×1080 设计）。禁用以保持固定像素大小。"
       },
       "ChoiceMode": {
         "Name": "选择模式",
@@ -96,10 +115,131 @@
         "Hint": "选择视觉小说覆盖层的视觉主题。"
       },
       "OverlayConfig": {
-		"Name": "覆盖层自定义",
-		"Label": "打开设置",
-		"Hint": "自定义视觉小说覆盖层元素的外观，如对话框、铭牌和选项。"
-	  }
+        "Name": "覆盖层自定义",
+        "Label": "打开设置",
+        "Hint": "自定义视觉小说覆盖层元素的外观，如对话框、铭牌和选项。"
+      }
+    },
+
+    "SettingsCenter": {
+      "title": "Visual Novel Maker 设置",
+      "eyebrow": "Visual Novel Maker",
+      "menuName": "Visual Novel Maker 设置",
+      "menuLabel": "打开设置",
+      "menuHint": "在一个地方管理通用、对话、直播模式、个人设置和高级工具。",
+      "subtitleGm": "世界设置对所有人适用。个人设置仅存储在此浏览器中。",
+      "subtitlePlayer": "个人设置仅存储在此浏览器中。",
+      "searchLabel": "搜索 Visual Novel Maker 设置",
+      "searchPlaceholder": "搜索设置...",
+      "noResults": "没有设置与你的搜索匹配。",
+      "save": "保存更改",
+      "cancel": "取消",
+      "close": "关闭",
+      "browse": "选择音频文件",
+      "saved": "Visual Novel Maker 设置已保存。",
+      "saveFailed": "无法保存设置。请查看控制台了解详情。",
+      "savedState": "所有更改均已保存。",
+      "unsavedState": "你有未保存的更改。",
+      "scope": {
+        "world": "世界设置",
+        "client": "个人设置",
+        "tools": "工具"
+      },
+      "tabs": {
+        "general": {
+          "label": "通用",
+          "description": "默认呈现与互动"
+        },
+        "dialogue": {
+          "label": "对话",
+          "description": "文字、声音和选项"
+        },
+        "live": {
+          "label": "直播模式",
+          "description": "舞台呈现与玩家访问"
+        },
+        "personal": {
+          "label": "个人",
+          "description": "此浏览器中的显示和声音"
+        },
+        "tools": {
+          "label": "工具",
+          "description": "高级设置与支持"
+        }
+      },
+      "sections": {
+        "general": {
+          "appearance": {
+            "title": "呈现默认值",
+            "description": "选择对话主题和默认 VN 画面过渡效果。"
+          },
+          "interaction": {
+            "title": "互动",
+            "description": "设置与 NPC 互动时 Token 需要多近。"
+          }
+        },
+        "dialogue": {
+          "text": {
+            "title": "对话文本",
+            "description": "调整对话在屏幕上出现的速度。"
+          },
+          "typewriterAudio": {
+            "title": "打字机音效",
+            "description": "选择所有人使用的默认音效文件和播放间隔。"
+          },
+          "choices": {
+            "title": "选项与投票",
+            "description": "立即决定选项或让玩家对它们投票。"
+          }
+        },
+        "live": {
+          "stage": {
+            "title": "舞台呈现",
+            "description": "设置直播会话的默认布局和显示行为。"
+          },
+          "speaker": {
+            "title": "发言者与语音",
+            "description": "配置聊天发言者切换和基于麦克风的角色高亮。"
+          },
+          "playerControls": {
+            "title": "玩家控制",
+            "description": "选择玩家是否可以添加角色或控制他们已登场的角色。"
+          }
+        },
+        "personal": {
+          "interface": {
+            "title": "界面",
+            "description": "在此浏览器中调整 UI 缩放和角色卡按钮。"
+          },
+          "characterFeedback": {
+            "title": "角色显示",
+            "description": "选择非活跃角色和说话口型图像的显示方式。"
+          },
+          "audio": {
+            "title": "个人音频",
+            "description": "调整你自己的打字机音效音量。"
+          }
+        },
+        "tools": {
+          "shortcuts": {
+            "title": "高级工具与支持",
+            "description": "编辑详细外观设置或打开 GlitchSmith 社区。"
+          }
+        }
+      },
+      "tools": {
+        "overlay": {
+          "title": "高级覆盖层编辑器",
+          "description": "调整对话、铭牌、选项和玩家编辑权限的外观。",
+          "descriptionPlayer": "在 GM 允许的选项范围内调整你的个人对话、铭牌和选项外观。",
+          "label": "打开高级编辑器"
+        },
+        "discord": {
+          "title": "GlitchSmith Discord",
+          "description": "打开 GlitchSmith 社区以获取支持、反馈和更新。",
+          "label": "打开 Discord"
+        }
+      }
     },
 
     "Config": {
@@ -141,6 +281,7 @@
       "SampleChoice2": "选项 B",
       "SampleLocation": "十字路口旅馆",
       "DialogueBox": "对话框",
+      "CharacterDialoguePanel": "角色对话面板",
       "Nameplate": "铭牌",
       "ChoicePanel": "选项",
       "SystemBar": "系统按钮",
@@ -173,6 +314,7 @@
       "DialogueSection": "对话文本",
       "NarrationSection": "叙述文本",
       "NarrationItalic": "斜体",
+      "TextAlign": "对齐",
       "NarrationAlign": "对齐",
       "AlignLeft": "左对齐",
       "AlignCenter": "居中",
@@ -203,6 +345,8 @@
       "BGMVolume": "BGM 音量",
       "CharEnter": "角色登场",
       "CharExit": "角色退场",
+      "CharEffect": "角色效果",
+      "CharEmotion": "角色情绪",
       "Expression": "表情",
       "Shake": "震动",
       "Jump": "跳转",
@@ -211,11 +355,40 @@
       "Macro": "宏",
       "Cutin": "切入动画",
       "Unboxing": "开箱",
+      "Shop": "打开商店",
+      "ShopDropHint": "将 Stylish Shop NPC 拖放到此处",
+      "ShopNotConfigured": "该角色未被配置为 Stylish Shop。",
+      "ShopMissingWarning": "Stylish Shop 模组未激活。此动作将在运行时被跳过。",
+      "ShopVersionWarning": "此动作需要 Stylish Shop v{required} 或更高版本。当前安装的版本为 v{current}。请更新 Stylish Shop 以避免功能降级。",
+      "RelationshipProgress": "调整关系进度",
+      "RelationshipOwnerMode": "关系所有者",
+      "RelationshipOwnerInteractor": "互动角色",
+      "RelationshipOwnerActor": "选中的角色",
+      "RelationshipOwner": "拥有该关系的角色",
+      "RelationshipTarget": "关系",
+      "RelationshipTargetActor": "关系目标角色",
+      "RelationshipSelect": "（选择关系...）",
+      "RelationshipDelta": "进度变化",
+      "RelationshipInteractorHint": "互动角色是从 Token 或区域发起互动的角色。当从直播导演直接运行剧情时，请选择一个具体角色。如果同一目标拥有多个关系，请使用「选中的角色」模式并选择具体的关系。",
+      "RelationshipHint": "通过 Tracker 的安全集成 API 增加或移除指定数量的关系进度点数。支持玩家拥有的角色和同步关系。此动作不会运行等级宏。在玩家主持的剧情、仅玩家互动和编辑器预览中，此动作会被跳过。",
+      "RelationshipMissingWarning": "添加或配置此动作前，请先安装并激活 Stylish Relationship Tracker v{required} 或更高版本。",
+      "RelationshipVersionWarning": "配置此动作前需要兼容的 Stylish Relationship Tracker v{required} 或更高版本。当前激活的模组版本为 v{current}。请先更新或重新安装 Tracker。",
+      "RelationshipActiveGMWarning": "只有当前激活的 GM 可以更改关系进度。此动作已在此 GM 客户端上被跳过。",
+      "RelationshipAmbiguousWarning": "有多个关系关联到该目标角色。请使用「选中的角色」模式并选择具体的关系。",
+      "RelationshipNone": "未找到此角色可调整的关系。",
+      "RelationshipOwnerFirst": "在选择关系前，请先选择拥有该关系的角色。",
+      "RelationshipOrganization": "组织关系",
+      "RelationshipCustom": "自定义关系",
+      "RelationshipMax": "最大值",
       "Delay": "延迟",
       "SoloMode": "独奏模式",
       "Camera": "摄像机",
       "CharMove": "移动角色",
       "SoloModeEnabled": "已启用",
+      "Flipped": "翻转",
+      "Facing": "朝向",
+      "FacingKeep": "保持当前",
+      "FacingNormal": "正常",
       "Picture": "图片",
       "PictureClear": "清除图片",
       "Image": "图像",
@@ -228,7 +401,21 @@
       "LocationClear": "清除地点",
       "LocationText": "地点名称",
       "Fx": "特效",
-      "FxStop": "停止特效"
+      "FxStop": "停止特效",
+      "SceneImage": "场景图像",
+      "SceneImageClear": "清除场景图像",
+      "SceneImageSrc": "图像",
+      "SceneImageName": "名称",
+      "SceneImageId": "道具 ID",
+      "SceneImageIdOptional": "道具 ID（留空 = 清除全部）",
+      "SceneImageX": "X (%)",
+      "SceneImageY": "Y (%)",
+      "SceneImageScale": "缩放",
+      "SceneImageOpacity": "不透明度",
+      "SceneImageLayer": "层",
+      "SceneImageLayerBack": "后方（在角色后面）",
+      "SceneImageLayerFront": "前方（在角色上方）",
+      "SceneImageClearHint": "将道具 ID 留空即可一次性清除所有场景图像。"
     },
 
     "Choice": {
@@ -258,6 +445,7 @@
       "ContextMenu": "编辑互动",
       "AddNode": "添加节点",
       "DeleteNode": "删除节点",
+      "DeleteNodeConfirm": "删除节点「{node}」吗？这也会移除指向它的连线。",
       "CannotDeleteStart": "无法删除起始节点。",
       "Preview": "预览",
       "PreviewNode": "从所选节点开始预览",
@@ -298,6 +486,14 @@
       "DeleteBranch": "删除分支",
       "BranchTextPrompt": "输入分支文本：",
       "SelectNodeFirst": "请先选择一个节点再添加分支。",
+      "ConditionalBranches": "条件分支",
+      "ConditionalBranch": "分支",
+      "ConditionalBranchTarget": "目标节点",
+      "AddConditionalBranch": "添加条件分支",
+      "DeleteConditionalBranch": "删除条件分支",
+      "ConditionalBranchesHint": "在默认的「下一个节点」之前自上而下求值。第一个匹配的条件生效。",
+      "MoveUp": "上移",
+      "MoveDown": "下移",
       "Sequence": "序列",
       "AddNarration": "添加叙述",
       "AddDialogue": "添加对话",
@@ -317,6 +513,7 @@
       "ReturnsToExploration": "返回探索",
       "ExitExploration": "从此节点退出探索",
       "HideDialogue": "在此节点隐藏对话框",
+      "SkipTypewriter": "跳过此节点的打字机效果",
       "GmOnlyAdvance": "仅 GM",
       "GmOnlyAdvanceHint": "只有 GM 可以推进对话。玩家无法点击继续。",
       "FramedMode": "相框模式",
@@ -341,6 +538,8 @@
       "Choices": "选项",
       "ChoicePlaceholder": "输入选项并按回车",
       "PresentChoices": "展示选项",
+      "ShowPlayerChoiceInput": "显示玩家选项输入",
+      "ShowPlayerChoiceInputHint": "关闭此选项以只向玩家显示已准备好的选项。",
       "WaitingForChoice": "等待玩家...",
       "ChoiceSelected": "玩家选择了：{choice}",
       "RunInteraction": "运行互动",
@@ -363,7 +562,10 @@
       },
       "SearchPlaceholder": "搜索角色...",
       "ClickToAdd": "点击添加到舞台",
+      "PrevPage": "上一页",
+      "NextPage": "下一页",
       "ExitStage": "退出舞台",
+      "ManageRelationships": "管理关系",
       "SessionNotActive": "直播未激活。",
       "VoteStatus": "投票状态",
       "VoteCount": "{count} 票",
@@ -381,12 +583,52 @@
       "GoBroadcast": "开始直播",
       "ToggleVisibility": "切换玩家可见性",
       "AddHiddenMode": "以隐藏方式添加",
+      "AddNameHiddenMode": "以隐藏名称方式添加",
       "LockPlayerAdd": "锁定玩家添加",
+      "LockPlayerStageControls": "锁定玩家舞台控制",
       "FlipCharacter": "翻转",
       "TargetPlayers": "目标玩家",
+      "TargetGM": "GM",
+      "NoTargetSelected": "请至少选择一个目标玩家。",
       "CharHidden": "对玩家隐藏",
       "CharVisible": "对玩家可见",
+      "HideDockName": "隐藏顶栏名称",
+      "ShowDockName": "显示顶栏名称",
       "FramedMode": "相框模式",
+      "QueueExpressions": {
+        "Name": "排队直到聊天",
+        "Hint": "开启后，表情弹窗的选择会排队到角色的下一条聊天消息，而不是立即应用。",
+        "QueuedPrefix": "已排队",
+        "QueuedStatus": "已排队等待下一条聊天"
+      },
+      "CharEffect": "效果",
+      "CharEffectNone": "无",
+      "CharEffectHologram": "全息",
+      "CharEffectGhost": "幽灵",
+      "CharEffectStealth": "隐身",
+      "CharEffectMemory": "记忆",
+      "CharEffectSilhouette": "剪影",
+      "CharEffectGlitch": "故障",
+      "CharEffectIce": "冰",
+      "CharEffectFire": "火",
+      "CharEffectElectric": "电击",
+      "CharEffectInvertColor": "反色",
+      "CharEffectAwakeningAura": "觉醒光环",
+      "CharEmotion": "情绪",
+      "CharEmotionNone": "无",
+      "CharEmotionHappyJump": "开心跳跃",
+      "CharEmotionSparkle": "闪光",
+      "CharEmotionBlush": "脸红",
+      "CharEmotionSweatdrop": "汗滴",
+      "CharEmotionExclamation": "惊叹",
+      "CharEmotionQuestionMark": "问号",
+      "CharEmotionSadness": "悲伤",
+      "CharEmotionAngry": "愤怒",
+      "CharEmotionVein": "暴怒",
+      "CharEmotionSleep": "睡眠",
+      "CharEmotionGloomCloud": "阴云",
+      "CharEmotionDazed": "眩晕",
+      "CharEmotionLaughter": "大笑",
       "FxEffects": "特效 / 效果",
       "FxGroupWeather": "天气",
       "FxGroupAmbience": "氛围",
@@ -410,8 +652,17 @@
       "FxGlitch": "故障",
       "FxOldTv": "老电视",
       "FxLightning": "闪电",
-      "FxFilmGrain": "胶片颗粒",
-      "FxMonochromeFilm": "黑白胶片",
+    "FxFilmGrain": "胶片颗粒",
+    "FxMonochromeFilm": "黑白胶片",
+      "FxSpeedLines": "速度线",
+      "FxShadowMist": "阴影迷雾",
+      "FxFilmBurn": "胶片灼烧",
+      "FxLensRain": "镜头雨点",
+      "FxHeroFlare": "英雄光晕",
+      "FxShockwave": "冲击波",
+      "FxVictoryConfetti": "胜利彩带",
+      "FxSparkBurst": "能量火花",
+      "FxVolumetricRays": "体积光",
       "FxBubbles": "气泡",
       "FxPollen": "花粉",
       "FxCustom": "自定义特效",
@@ -449,14 +700,55 @@
       "TabCast": "演员",
       "TabScene": "场景",
       "TabFx": "特效",
-      "TabStory": "剧情"
+      "TabStory": "剧情",
+      "SceneImages": "场景图像",
+      "SceneImageAdd": "添加图像",
+      "SceneImageClearAll": "清除全部",
+      "SceneImageRemove": "移除",
+      "SceneImageReplace": "替换图像",
+      "SceneImageTune": "调节",
+      "SceneImageX": "X",
+      "SceneImageY": "Y",
+      "SceneImageScale": "缩放",
+      "SceneImageOpacity": "不透明度",
+      "SceneImageLayerFrontHint": "在角色前方 — 点击移至后方",
+      "SceneImageLayerBackHint": "在角色后方 — 点击移至前方",
+      "SceneImageNeedSession": "添加场景图像前请先开始直播。"
     },
 
     "SystemBar": {
       "RequestTitle": "玩家请求",
       "RequestMessage": "{name} 请求：{action}",
       "Approve": "批准",
-      "Deny": "拒绝"
+      "Deny": "拒绝",
+      "Auto": "自动推进",
+      "Skip": "跳过",
+      "Log": "对话记录",
+      "Close": "关闭对话"
+    },
+
+    "Backlog": {
+      "Title": "对话记录",
+      "Export": "保存为 TXT",
+      "ExportHtml": "保存为 HTML",
+      "PreparingHtml": "正在准备...",
+      "ExportHtmlError": "无法保存 HTML 对话记录。",
+      "ExportHtmlPartial": "{count} 张头像图片无法嵌入，已用姓名首字母替换。",
+      "ExportedBy": "由 Visual Novel Maker 导出",
+      "Close": "关闭",
+      "Empty": "本会话的对话将显示在这里。",
+      "Hint": "最新的对话显示在底部",
+      "Count": "条目：{count}",
+      "Narration": "叙述",
+      "Choice": "选项",
+      "UnknownSpeaker": "未知",
+      "SearchPlaceholder": "搜索发言者或对话...",
+      "SearchLabel": "搜索对话记录",
+      "PreviousResult": "上一个结果",
+      "NextResult": "下一个结果",
+      "ClearSearch": "清除搜索",
+      "SearchResult": "{current} / {total}",
+      "NoResults": "无匹配结果"
     },
 
     "Keybind": {
@@ -507,7 +799,21 @@
       "LipClosed": "闭嘴",
       "LipOpen": "张嘴",
       "SpeakingVideo": "说话视频",
-      "SpeakingVideoNone": "无（静态图像）"
+      "SpeakingVideoNone": "无（静态图像）",
+      "TypewriterSound": "打字机音效",
+      "TypewriterSoundHint": "用于此角色对话打字机嗒嗒声的可选音频文件。留空以使用模组默认值。",
+      "TypewriterSoundDefault": "使用模组默认值",
+      "EmotionAnchors": "情绪锚点",
+      "EmotionExprOverride": "情绪锚点覆盖",
+      "EmotionClearOverride": "重置为默认",
+      "EmotionUseGroup": "从分组继承",
+      "EmotionDragHint": "从下方选择一个情绪，然后在预览上点击或拖动以设置其锚点。使用数值字段进行精确的缩放/旋转/透明度调整。",
+      "LinkedEmotion": "自动情绪",
+      "LinkedEmotionNone": "无自动情绪变化",
+      "GenerateThumbnails": "生成缩略图",
+      "GenerateThumbnailsHint": "为立绘、分组立绘和表情创建轻量缩略图，以加快此对话框的运行速度。",
+      "ThumbnailsGenerated": "已生成 {count} 张缩略图。",
+      "ThumbnailsNoneNeeded": "没有缺失的缩略图。所有项目都已有缩略图。"
     },
 
     "Crop": {
@@ -653,7 +959,10 @@
 
     "GM": {
       "InteractRequest": "互动请求",
-      "Approve": "开始"
+      "Approve": "开始",
+      "Requester": "玩家",
+      "Target": "目标",
+      "InteractorActor": "互动角色"
     },
 
     "Graph": {

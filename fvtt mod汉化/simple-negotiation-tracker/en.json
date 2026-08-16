@@ -1,0 +1,88 @@
+{
+  "SNT": {
+    "Title": "Negotiation Tracker",
+    "Tabs": {
+      "Tracker": "Tracker",
+      "Settings": "Settings"
+    },
+    "Aria": {
+      "Sections": "Tracker sections"
+    },
+    "Fields": {
+      "Actor": "NPC / Actor",
+      "Interest": "Interest",
+      "Patience": "Patience",
+      "Motivations": "Motivations",
+      "Pitfalls": "Pitfalls",
+      "Notes": "GM Notes",
+      "Min": "Min",
+      "Max": "Max",
+      "Label": "Label",
+      "Description": "Description",
+      "AvailableTraits": "Available traits",
+      "TraitName": "Trait name"
+    },
+    "Actions": {
+      "Add": "Add",
+      "Remove": "Remove"
+    },
+    "Placeholders": {
+      "SearchActor": "Search an actor...",
+      "Notes": "Context, concessions, promises, limits...",
+      "TraitName": "New trait name..."
+    },
+    "Help": {
+      "Motivations": "Approaches, values, or desires that can make this NPC more receptive.",
+      "Pitfalls": "Topics, pressures, or values that can sour the conversation."
+    },
+    "Empty": {
+      "Motivations": "No motivations recorded.",
+      "Pitfalls": "No pitfalls recorded.",
+      "NoActor": "Select an Actor to track a negotiation.",
+      "NoActorResults": "No matching actors.",
+      "AvailableTraits": "No traits available."
+    },
+    "Settings": {
+      "Open": {
+        "Name": "Negotiation Tracker",
+        "Label": "Open tracker",
+        "Hint": "Open the negotiation tracker without requiring an active scene."
+      }
+    },
+    "Notifications": {
+      "OnlyGM": "Only the GM can use the negotiation tracker."
+    },
+    "Traits": {
+      "Benevolence": "Benevolence",
+      "Discovery": "Discovery",
+      "Freedom": "Freedom",
+      "Greed": "Greed",
+      "HigherAuthority": "Higher Authority",
+      "Justice": "Justice",
+      "Legacy": "Legacy",
+      "Peace": "Peace",
+      "Power": "Power",
+      "Protection": "Protection",
+      "Revelry": "Revelry",
+      "Vengeance": "Vengeance"
+    },
+    "Defaults": {
+      "Interest": {
+        "0": { "Label": "No, and...", "Summary": "The NPC refuses and the situation gets worse." },
+        "1": { "Label": "No.", "Summary": "The NPC refuses the proposal." },
+        "2": { "Label": "No, but...", "Summary": "The NPC refuses, but leaves room for a concession or alternative." },
+        "3": { "Label": "Yes, but...", "Summary": "The NPC agrees with a cost, condition, or complication." },
+        "4": { "Label": "Yes.", "Summary": "The NPC agrees to the proposal." },
+        "5": { "Label": "Yes, and...", "Summary": "The NPC agrees and offers something extra." }
+      },
+      "Patience": {
+        "0": { "Label": "Closed", "Summary": "The negotiation is over. Use the current interest as the final offer." },
+        "1": { "Label": "Nearly spent", "Summary": "The NPC will tolerate very little more pressure." },
+        "2": { "Label": "Strained", "Summary": "The conversation is fragile and needs care." },
+        "3": { "Label": "Steady", "Summary": "There is still room for a few meaningful exchanges." },
+        "4": { "Label": "Patient", "Summary": "The NPC is willing to keep talking." },
+        "5": { "Label": "Very patient", "Summary": "The NPC is highly willing to hear the party out." }
+      }
+    }
+  }
+}

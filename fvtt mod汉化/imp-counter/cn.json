@@ -1,0 +1,73 @@
+{
+  "ADVCOUNTER": {
+    "Settings": {
+      "CounterOneLabel": {
+        "Name": "第一个窗口的文字",
+        "Hint": "例如：玩家优势、队伍优势或玩家。"
+      },
+      "CounterTwoLabel": {
+        "Name": "第二个窗口的文字",
+        "Hint": "例如：敌人优势、敌方优势或敌人。"
+      },
+      "AllowPlayersCounterOne": {
+        "Name": "玩家可以更改第一个窗口",
+        "Hint": "GM 始终可以更改两个数值。此选项允许或阻止普通玩家更改第一个计数器。"
+      },
+      "AllowPlayersCounterTwo": {
+        "Name": "玩家可以更改第二个窗口",
+        "Hint": "如果第二个窗口用于追踪敌人优势，通常最好由 GM 控制。"
+      },
+      "AllowNegativeValues": {
+        "Name": "允许负数值",
+        "Hint": "默认关闭，因为优势通常不会低于 0。如果你将此模组用于其他资源，请启用此项。"
+      },
+      "ResetOnCombatStart": {
+        "Name": "创建战斗时重置",
+        "Hint": "启用后，创建新战斗时，当前 GM 会自动将两个计数器重置为 0。"
+      },
+      "AutoOpenWindows": {
+        "Name": "登录时打开窗口",
+        "Hint": "客户端设置：仅影响当前用户。"
+      },
+      "ShowLauncher": {
+        "Name": "显示 Adv 按钮",
+        "Hint": "客户端设置：左下角的小按钮用于打开或隐藏窗口。"
+      },
+      "CounterOneValue": {
+        "Name": "第一个数值"
+      },
+      "CounterTwoValue": {
+        "Name": "第二个数值"
+      },
+      "CounterOneState": {
+        "Name": "第一个窗口状态"
+      },
+      "CounterTwoState": {
+        "Name": "第二个窗口状态"
+      },
+      "AutoOpenDefaultDisabledMigration": {
+        "Name": "自动打开已禁用迁移"
+      }
+    },
+    "UI": {
+      "AdvButton": "Adv",
+      "Locked": "已锁定",
+      "LockedText": "只有 GM 或被允许的玩家才能更改此数值。",
+      "CloseTitle": "关闭",
+      "MinusTitle": "减 1。Shift 点击：减 5。",
+      "PlusTitle": "加 1。Shift 点击：加 5。",
+      "ToggleWindowsTitle": "打开或隐藏 Imp Counter 窗口",
+      "ResetCountersTitle": "将计数器重置为 0",
+      "UndoCountersTitle": "恢复之前的数值",
+      "ResetCountersLabel": "重置",
+      "UndoCountersLabel": "撤销",
+      "OpenCounterOneTitle": "打开或隐藏第一个计数器",
+      "OpenCounterTwoTitle": "打开或隐藏第二个计数器"
+    },
+    "Notifications": {
+      "NoGM": "Imp Counter：需要一个活跃的 GM 才能保存此世界数值更改。",
+      "NoPermissionWindow": "Imp Counter：你没有更改此窗口的权限。",
+      "NoPermissionCounters": "Imp Counter：你没有更改计数器的权限。"
+    }
+  }
+}

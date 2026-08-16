@@ -1,0 +1,88 @@
+{
+  "SNT": {
+    "Title": "谈判追踪器",
+    "Tabs": {
+      "Tracker": "追踪器",
+      "Settings": "设置"
+    },
+    "Aria": {
+      "Sections": "追踪器分区"
+    },
+    "Fields": {
+      "Actor": "NPC / 角色",
+      "Interest": "兴趣",
+      "Patience": "耐心",
+      "Motivations": "动机",
+      "Pitfalls": "雷区",
+      "Notes": "GM 笔记",
+      "Min": "最小",
+      "Max": "最大",
+      "Label": "标签",
+      "Description": "描述",
+      "AvailableTraits": "可用特质",
+      "TraitName": "特质名称"
+    },
+    "Actions": {
+      "Add": "添加",
+      "Remove": "移除"
+    },
+    "Placeholders": {
+      "SearchActor": "搜索角色...",
+      "Notes": "背景、让步、承诺、限制...",
+      "TraitName": "新特质名称..."
+    },
+    "Help": {
+      "Motivations": "能让该 NPC 更易接受的方式、价值观或愿望。",
+      "Pitfalls": "可能让谈话变糟的话题、压力或价值观。"
+    },
+    "Empty": {
+      "Motivations": "尚未记录动机。",
+      "Pitfalls": "尚未记录雷区。",
+      "NoActor": "选择角色以追踪谈判。",
+      "NoActorResults": "没有匹配的角色。",
+      "AvailableTraits": "没有可用的特质。"
+    },
+    "Settings": {
+      "Open": {
+        "Name": "谈判追踪器",
+        "Label": "打开追踪器",
+        "Hint": "无需激活场景即可打开谈判追踪器。"
+      }
+    },
+    "Notifications": {
+      "OnlyGM": "只有 GM 可以使用谈判追踪器。"
+    },
+    "Traits": {
+      "Benevolence": "仁慈",
+      "Discovery": "探索",
+      "Freedom": "自由",
+      "Greed": "贪婪",
+      "HigherAuthority": "更高权威",
+      "Justice": "正义",
+      "Legacy": "传承",
+      "Peace": "和平",
+      "Power": "权力",
+      "Protection": "保护",
+      "Revelry": "狂欢",
+      "Vengeance": "复仇"
+    },
+    "Defaults": {
+      "Interest": {
+        "0": { "Label": "不，而且...", "Summary": "NPC 拒绝，且情况变得更糟。" },
+        "1": { "Label": "不。", "Summary": "NPC 拒绝该提议。" },
+        "2": { "Label": "不，但是...", "Summary": "NPC 拒绝，但留有让步或替代方案的余地。" },
+        "3": { "Label": "是，但是...", "Summary": "NPC 同意，但附带代价、条件或麻烦。" },
+        "4": { "Label": "是。", "Summary": "NPC 同意该提议。" },
+        "5": { "Label": "是，而且...", "Summary": "NPC 同意，并提供额外的好处。" }
+      },
+      "Patience": {
+        "0": { "Label": "已关闭", "Summary": "谈判已结束。将当前的兴趣值作为最终条件。" },
+        "1": { "Label": "所剩无几", "Summary": "NPC 几乎无法再承受更多压力。" },
+        "2": { "Label": "紧绷", "Summary": "谈话很脆弱，需要小心应对。" },
+        "3": { "Label": "平稳", "Summary": "仍有一些有意义的交流空间。" },
+        "4": { "Label": "耐心", "Summary": "NPC 愿意继续谈下去。" },
+        "5": { "Label": "非常耐心", "Summary": "NPC 非常愿意听队伍把话说完。" }
+      }
+    }
+  }
+}

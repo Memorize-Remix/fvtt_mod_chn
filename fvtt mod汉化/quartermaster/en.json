@@ -1,0 +1,166 @@
+{
+  "quartermaster": {
+    "title": "Quartermaster",
+    "buttons": {
+      "sharedPartyInventory": "Shared Party Inventory",
+      "gmLootPrep": "GM Loot Prep",
+      "inventoryToken": "Place Inventory Token",
+      "log": "Transaction Log",
+      "preferences": "Preferences"
+    },
+    "settings": {
+      "enforceCapacity": {
+        "name": "Enforce Capacity Limit",
+        "hint": "When enabled, the inventory respects a weight limit. Default 500 lbs matches a Bag of Holding. Disable for unlimited capacity."
+      },
+      "capacityLimit": {
+        "name": "Capacity Limit (lbs)",
+        "hint": "Weight cap when 'Enforce Capacity Limit' is enabled. The Bag of Holding standard is 500."
+      },
+      "applyCurrencyWeight": {
+        "name": "Currency Counts Toward Weight",
+        "hint": "When enabled, currency weight is included in the capacity total. Built-in currencies use the dnd5e standard of 50 coins per pound; custom currencies use their optional per-unit weight. Off by default."
+      },
+      "currencyApprovalMode": {
+        "name": "Currency Approval Mode",
+        "hint": "Controls whether GM approval is required when players change shared currency values."
+      },
+      "currencyApprovalThreshold": {
+        "name": "Approval Threshold (Reference Currency)",
+        "hint": "When mode is 'Threshold', changes equal to or above this value require GM approval. Currency changes are converted into the reference currency selected in Manage Currencies."
+      },
+      "useApprovalTimeout": {
+        "name": "Use Approval Timeout",
+        "hint": "When enabled, pending currency approval requests auto-approve after the specified time if the GM does not respond."
+      },
+      "approvalTimeoutSeconds": {
+        "name": "Approval Timeout (seconds)",
+        "hint": "Time before a pending approval auto-approves, when timeout is enabled."
+      },
+      "denialNotification": {
+        "name": "Denial Notification Scope",
+        "hint": "When the GM denies a currency request, who sees the denial chat message."
+      },
+      "reasonFieldEnabled": {
+        "name": "Show Reason Field on Requests",
+        "hint": "When enabled, players can optionally include a reason when requesting a currency change."
+      },
+      "resendCooldownSeconds": {
+        "name": "Resend Cooldown (seconds)",
+        "hint": "How long a player must wait before re-sending an approval request to the GM."
+      },
+      "unidentifiedDisplay": {
+        "name": "Unidentified Item Display",
+        "hint": "How items marked unidentified appear in the inventory."
+      },
+      "inventoryButtonLabel": {
+        "name": "Inventory Button Name",
+        "hint": "Custom name shown for the inventory button and popup window. Leave blank to use the default."
+      },
+      "inventoryBackgroundImage": {
+        "name": "Inventory Background Image",
+        "hint": "Optional image shown as a subtle watermark inside the inventory popup."
+      },
+      "hidePricesFromPlayers": {
+        "name": "Hide Item Prices from Players",
+        "hint": "When enabled, item prices are hidden from players in the inventory. GMs still see prices."
+      },
+      "enableInventoryToken": {
+        "name": "Enable Inventory Token Shortcut",
+        "hint": "When enabled, GMs can place a scene token that opens the inventory when double-clicked."
+      },
+      "inventoryTokenName": {
+        "name": "Inventory Token Name",
+        "hint": "Optional name for newly placed inventory shortcut tokens. Leave blank to use the inventory button name."
+      },
+      "inventoryTokenImage": {
+        "name": "Inventory Token Image",
+        "hint": "Optional image for newly placed inventory shortcut tokens. Leave blank to use the Quartermaster Vault image."
+      },
+      "defaultEntrySize": {
+        "name": "Default Entry Size",
+        "hint": "Default row size in the inventory. Each player can override via client settings."
+      },
+      "sortOrder": {
+        "name": "Default Sort Order",
+        "hint": "Order in which currencies, counters, and items appear in the list."
+      },
+      "hideZeroBalances": {
+        "name": "Hide Currencies at Zero",
+        "hint": "When enabled, currencies with a balance of zero are hidden until they have value."
+      },
+      "transactionLogCap": {
+        "name": "Transaction Log Cap",
+        "hint": "Maximum number of log entries retained. Older entries are trimmed when the cap is reached. Set to 0 for unlimited."
+      },
+      "transactionLogVisibility": {
+        "name": "Transaction Log Visibility",
+        "hint": "Who can open and view the transaction log."
+      },
+      "requestAgeMaxSeconds": {
+        "name": "Request Age Max (seconds)",
+        "hint": "Reject socket requests older than this many seconds. Protects against replay storms after reconnects. Default 30 is appropriate for typical tables."
+      },
+      "recentRequestCacheSize": {
+        "name": "Recent Request Cache Size",
+        "hint": "Maximum number of recent request IDs held in memory for fast idempotency checks. Larger values use slightly more RAM but reduce duplicate database lookups. Default 5000 is generous."
+      },
+      "uiRefreshDebounceMs": {
+        "name": "UI Refresh Debounce (ms)",
+        "hint": "Time window for collapsing rapid backing-actor updates into a single popup re-render. Higher values smooth out bulk operations at the cost of slight visual lag. 100 ms is the v0.5 default; set to 0 to disable debouncing."
+      },
+      "logDefaultPhaseFilter": {
+        "name": "Default Phase Filter",
+        "hint": "Phase filter selected when the Transaction Log opens."
+      },
+      "logDefaultCategoryFilter": {
+        "name": "Default Category Filter",
+        "hint": "Category filter selected when the Transaction Log opens."
+      },
+      "logAutoExpandGroups": {
+        "name": "Auto-expand Groups",
+        "hint": "Expand all log entry groups when the Transaction Log opens."
+      },
+      "hideElectrum": {
+        "name": "Hide Electrum",
+        "hint": "Remove Electrum (EP) from the currency display."
+      }
+    },
+    "choices": {
+      "currencyApprovalMode": {
+        "free": "Free — no approval needed",
+        "threshold": "Threshold — approval over a set amount",
+        "allRequired": "All Required — approval for every change"
+      },
+      "denialNotification": {
+        "group": "Whole Group",
+        "player": "Requesting Player Only"
+      },
+      "unidentifiedDisplay": {
+        "unidentified": "Unidentified Name Only",
+        "identified": "Identified Name Always",
+        "perItem": "Per Item — GM configures each"
+      },
+      "entrySize": {
+        "compact": "Compact",
+        "medium": "Medium",
+        "large": "Large"
+      },
+      "sortOrder": {
+        "currencyFirst": "Currencies first, then counters, then items",
+        "alphabetical": "Alphabetical",
+        "byType": "By Item Type",
+        "custom": "Manual (custom order)"
+      },
+      "logVisibility": {
+        "all": "All Users",
+        "gmOnly": "GM Only"
+      }
+    },
+    "messages": {
+      "loaded": "Quartermaster is loaded.",
+      "backingActorCreated": "Quartermaster backing actor created.",
+      "backingActorMissing": "Quartermaster backing actor not found. It will be created on next world load."
+    }
+  }
+}

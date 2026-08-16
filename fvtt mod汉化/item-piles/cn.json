@@ -1,8 +1,9 @@
-{"ITEM-PILES": {
+{
+  "ITEM-PILES": {
     "Items": "物品",
     "Currencies": "货币",
     "Currency": "货币",
-	"ContextMenu": {
+    "ContextMenu": {
       "ShowToPlayers": "显示给玩家",
       "RequestTrade": "请求交易",
       "GiveToCharacter": "给予角色"
@@ -23,58 +24,59 @@
       "merchant": "商人",
       "vault": "金库"
     },
-	"Notifications": {
+    "Notifications": {
+      "SystemSupportFound": "已找到系统支持！将默认系统设置应用到Item Piles",
       "UpdateItemPileSuccess": "Item Pile 更新成功。",
       "UpdateMerchantSuccess": "商人更新成功。",
       "ItemTransferred": "已将{source_actor_name}的{item_name}给予{target_actor_name}。",
+      "ItemAdded": "已将{item_name}添加给{target_actor_name}。",
       "GiveItemAccepted": "{user_name} 接受了你的物品报价。",
       "ShownToPlayers": "展示{actor_name}给玩家",
-      "SystemSupportFound": "已找到系统支持！将默认系统设置应用到Item Piles",
-      "ItemAdded": "已将{item_name}添加给{target_actor_name}。",
       "CreatedJournal": "已创建道具堆金库记录日志。"
     },
-	"Errors": {
+    "Errors": {
       "DisallowedItemDrop": "你无法丢下\"{type}\" 类物品",
       "DisallowedItemTrade": "你无法交易\"{type}\" 类物品",
       "DisallowedItemSell": "该商人不接受“{type}”类型的物品",
       "NoSourceDrop": "只有GM能往物品栏中拖放物品.",
       "PileTooFar": "你距离该物品堆太远，因此无法与其交互.",
+      "NoTokenFound": "无法找到代表你的Token或角色。",
       "PileLocked": "这个容器被锁上了，你无法打开它，所以也无法放入物品。",
       "DropNoToken": "你在这个场景中没有Token，因此你无法扔下任何东西。",
-      "NoTokenFound": "无法找到代表你的Token或角色。",
       "NoVaultAccess": "你没有权限查看这个金库。",
       "NoVaultAccessActor": "{actor_name} 没有权限查看这个金库。",
-	  "ItemNoQuantity": "{item_name}的数量为 0，因此无法转让此物品！"
+      "ItemNoQuantity": "{item_name}的数量为 0，因此无法转让此物品！"
     },
     "Warnings": {
       "NoGMsConnected": "警告 - 无GM在线 -使用道具堆的大部分特性需要GM在线。",
       "NoResponseFromGM": "警告 - GM \"{user_name}\"没有回应请求 - Item Piles需要 GM 连接并回应，玩家才能使用模组的大部分功能。",
       "NoResponseFromGMTimeout": "警告 - GM \"{user_name}\"没有回应上一个请求 - 请等待 {time} 秒后再提出另一个Item Piles请求。",
-	  "TransactionNoGMConnected": "无GM在线 - 当前交易已取消，没有添加、删除或转移任何内容",
-	  "GiveItemNoGM": "没有 GM 主动接收你给予的此物品。",
+      "TransactionNoGMConnected": "无GM在线 - 当前交易已取消，没有添加、删除或转移任何内容",
+      "GiveItemNoGM": "没有 GM 主动接收你给予的此物品。",
       "GiveItemDeclined": "{user_name}拒绝了你的物品报价。",
       "NoPlayersActive": "没有可以进行该行为的活跃玩家",
       "NoGMsConnectedAction": "警告 - 由于无GM在线，无法执行“{action}”。",
       "VaultFull": "金库已满！",
-	  "CantSortVault": "物品分类失败 - 要么物品太多，要么出了问题",
+      "CantSortVault": "物品分类失败 - 要么物品太多，要么出了问题",
       "VaultItemNotExpander": "此道具不是金库扩展器",
       "DroppedIsNotItem": "你不能把类型为\"{type}\"的文件放到这个物品堆里！",
-	  "DroppedFolderNotSupported": "你无法将包含类型\"{type}\"的文件夹拖入此物品堆！",
-	  "ItemPileInvalidItemDropped": "你无法将此类物品拖入此物品堆！",
+      "DroppedFolderNotSupported": "你无法将包含类型\"{type}\"的文件夹拖入此物品堆！",
+      "ItemPileInvalidItemDropped": "你无法将此类物品拖入此物品堆！",
       "VaultSameItemOrigin": "你不能向金库投放来自金库的物品！",
       "VaultNoGmItemSidebar": "只有GM才能从侧边栏中拖放物品！",
-	  "LogEmpty": "角色\"{actor_name}\"记录为空，没有内容可导出"
+      "NoMerchantOwnership": "你需要拥有此商人的角色才能将物品拖放到其上——请让 GM 授予你所有权。",
+      "LogEmpty": "角色\"{actor_name}\"记录为空，没有内容可导出"
     },
     "Inspect": {
       "Title": "检查交易内容",
       "AsActor": "你正作为{actorName}查看该物品堆。",
-	  "Change": "变更",
+      "Change": "变更",
       "Owner": "作为此物品堆的拥有者, 你可以编辑其内容.",
       "Empty": "该物品堆是空的.",
       "Destroyed": "这里面已经没有宝物了.",
       "TakeAll": "拿走所有物品",
       "Take": "拿走",
-	  "Close": "关闭",
+      "Close": "关闭",
       "Leave": "离开",
       "NoShareLeft": "没有剩余数量……",
       "NoneLeft": "没有剩余……",
@@ -86,13 +88,13 @@
       "SplitNoPlayers": "没有找到可以分割内容的角色。"
     },
     "Trade": {
-      "Accept": "接受",
       "Title": "Item Piles: 交易",
+      "Accept": "接受",
       "Decline": "拒绝",
       "Mute": "不回应",
       "AutoDecline": "你对交易的请求超时未响应，已自动拒绝。",
       "Declined": "对方拒绝了交易。",
-	  "SameActor": "两个用户不能选择同一个角色 - 不能在同一个角色之间进行交易。停止交易。",
+      "SameActor": "两个用户不能选择同一个角色 - 不能在同一个角色之间进行交易。停止交易。",
       "Private": "私下交易",
       "PrivateExplanation": "交易不显示在聊天中，也无人能观看",
       "Over": "该交易长时间未活跃.",
@@ -146,8 +148,7 @@
       "BuyItems": "购买物品",
       "BuyServices": "购买服务",
       "SellItems": "出售物品",
-      "ToolTipRemoveTable": "移除随机表",
-      "TooltipConfigureTable": "配置随机表",
+      "PopulateItems": "填充物品",
       "AllTypes": "所有类型",
       "Buy": "购买",
       "NoMatchFound": "未搜索到符合条件的结果",
@@ -169,59 +170,60 @@
       "EditTypePricesExplanation": "在物品购买标签页中切换各类型滑条的可见性",
       "BuyNoItems": "商人没有物品",
       "CurrentItems": "当前物品",
+      "CurrentServices": "当前服务",
       "NoRollTables": "无随机表，创建一个以继续",
       "ClickRoll": "点击投骰以开始",
       "RolledTimes": "已投骰{rolls}次",
       "KeepRolled": "保留投骰结果",
       "AddAll": "添加所有物品",
       "ClearAllItems": "清除所有角色物品",
+      "ClearAllServices": "清除所有角色服务",
       "AddItem": "应用",
       "RemoveItem": "删除",
       "ItemFree": "免费",
       "RollableTables": "随机表",
+      "Service": "服务",
       "AddTable": "添加随机表",
       "RollAllTables": "投掷所有随机表",
+      "ToolTipRemoveTable": "移除随机表",
+      "TooltipConfigureTable": "配置随机表",
       "TooltipRollTable": "投掷随机表",
       "ToolTipRemoveAllRolledItems": "移除已骰出的物品",
+      "ShoppingAs": "作为{actorName}购物",
       "TableAddAllItems": "添加所有道具：",
       "TableTimesToRoll": "在随机表中掷骰的次数：",
       "TableCustomCategory": "将道具添加到自定义类别：",
-      "Service": "服务",
-      "ShoppingAs": "作为{actorName}购物",
-      "PopulateItems": "填充物品",
-      "CurrentServices": "当前服务",
-      "ClearAllServices": "清除所有角色服务",
-      "LogSetQuantity": "{instigator} 设置 <strong>{item}</strong> 的 <span>数量</span> 为 {quantity}",
-      "LogSetVisible": "{instigator} 设置 <strong>{item}</strong> 为 <span>可见</span",
       "Log": "记录",
       "LogSearch": "查询记录:",
       "LogUserActor": "{actor_name} ({user_name})",
       "LogBought": "购买了",
       "LogSold": "卖出了",
       "LogQuantity": "{quantity} x ",
-      "LogSetNotForSale": "{instigator} 设置 <strong>{item}</strong> 为 <span>非卖品</span",
+      "LogSetQuantity": "{instigator} 设置 <strong>{item}</strong> 的 <span>数量</span> 为 {quantity}",
       "LogSetForSale": "{instigator} 设置 <strong>{item}</strong> 为 <span>待售</span",
+      "LogSetNotForSale": "{instigator} 设置 <strong>{item}</strong> 为 <span>非卖品</span",
+      "LogSetVisible": "{instigator} 设置 <strong>{item}</strong> 为 <span>可见</span",
       "LogSetHidden": "{instigator} 设置 <strong>{item}</strong> 为 <span>隐藏</span",
       "LogTransaction": "{instigator}以{price}的价格{action}了{quantity}{item}",
-	  "LogFreeTransaction": "{instigator} {action}了{quantity}{item}（免费）",
-	  "SetNotForSale": "设为非卖品",
-	  "SetForSale": "设为可出售",  
-	  "SetHidden": "隐藏",
-	  "SetVisible": "显示"
+      "LogFreeTransaction": "{instigator} {action}了{quantity}{item}（免费）",
+      "SetNotForSale": "设为非卖品",
+      "SetForSale": "设为可出售",
+      "SetHidden": "隐藏",
+      "SetVisible": "显示"
     },
-	"Vault": {
-	  "VaultTab": "金库",
-	  "ExpandersTab": "扩展器",
-	  "LogTab": "记录",
+    "Vault": {
+      "VaultTab": "金库",
+      "ExpandersTab": "扩展器",
+      "LogTab": "记录",
       "ViewingAs": "作为{actor_name}浏览",
       "NeedsCapacity": "金库的容量上限为{total_capacity}，但直到添加金库扩展器前不会生效",
-	  "CapacityLeft": "此金库当前容量为{capacity}，容量上限为{total_capacity}，拖入金库扩展器以增加容量",
-	  "CapacityFull": "金库容量已达到上限{total_capacity}",
-	  "ExpandsCols": "{cols}列",
+      "CapacityLeft": "此金库当前容量为{capacity}，容量上限为{total_capacity}，拖入金库扩展器以增加容量",
+      "CapacityFull": "金库容量已达到上限{total_capacity}",
+      "ExpandsCols": "{cols}列",
       "ExpandsRows": "{rows}行",
-	  "Withdraw": "取出",
-	  "Deposit": "存入",
-	  "SortItems": "物品分类",
+      "Withdraw": "取出",
+      "Deposit": "存入",
+      "SortItems": "物品分类",
       "SortItemsTooltip": "物品分类--按住 Ctrl 键合并相似物品",
       "LogUserActor": "{actor_name} （{user_name}）",
       "Deposited": "已存入",
@@ -229,7 +231,7 @@
       "LogEntry": "{instigator} {action} {quantity}{item_name}",
       "LogQuantity": "{quantity} x "
     },
-	"General": {
+    "General": {
       "Primary": "主要",
       "Exchange": "交易",
       "Name": "名称",
@@ -239,7 +241,7 @@
       "Icon": "图标",
       "Data": "数据"
     },
-	"Dialogs": {
+    "Dialogs": {
       "TypeWarning": {
         "Title": "物品类型警告",
         "DropContent": "你正在丢弃一个“{type}”类型的物品，该类型的物品通常不能丢弃。你确定要丢弃它吗？",
@@ -274,7 +276,7 @@
         "Title": "清除所有角色物品",
         "Content": "这将清除所有商人的物品，是否确认？"
       },
-	  "ClearAllServices": {
+      "ClearAllServices": {
         "Title": "清除所有角色服务",
         "Content": "这将清除所有商人的服务，是否确认？"
       },
@@ -286,22 +288,22 @@
         "Title": "移除商人随机表",
         "Content": "你确定要移除商人身上的“{table_name}”随机表吗？该行为无法撤销。"
       },
-	  "CantRemoveVaultExpander": {
+      "CantRemoveVaultExpander": {
         "Title": "无法移除扩展器",
         "Content": "你无法移除此金库扩展器，没有扩展器，金库中将无法装入道具。移除此扩展器前请先移除{num_items}道具！"
       },
-	  "GiveItems": {
+      "GiveItems": {
         "Title": "给予物品",
         "Header": "给予物品: {item_name}",
         "SelectPlaceholder": "选择要给予物品的角色",
         "ContentMultipleQuantity": "你有{quantity}该物品，你想给予多少？",
-		"Secret": "给予而不让他人知道（GM除外）",
+        "Secret": "给予而不让他人知道（GM除外）",
         "Submit": "发送"
       },
       "ReceiveItem": {
         "Title": "获得物品",
         "Header": "Item Piles：获得物品",
-        "ContentOne": "{source_actor_name}想要将物品“{item_name}”给予{target_actor_name}，是否接受？",
+        "Content": "{source_actor_name} 想将一个物品给予 {target_actor_name}，你是否接受？",
         "Ignore": "忽略用户"
       },
       "TextEditor": {
@@ -327,14 +329,14 @@
     "Applications": {
       "DropItem": {
         "Title": "抛下物品",
-        "ContentInfiniteQuantity": "你要添加的数量？",
-        "Submit": "添加到道具堆",
-        "SubmitNoTarget": "创建新道具堆",
         "Header": "你正在添加：{item_name}",
         "Content": "你正在将此道具添加到道具堆\"{target_name}\"。",
-        "ContentMultipleQuantity": "你拥有{quantity}个该道具，你想添加多少？"
+        "ContentMultipleQuantity": "你拥有{quantity}个该道具，你想添加多少？",
+        "ContentInfiniteQuantity": "你要添加的数量？",
+        "Submit": "添加到道具堆",
+        "SubmitNoTarget": "创建新道具堆"
       },
-	  "GiveItem": {
+      "GiveItem": {
         "Title": "给予物品",
         "Header": "正在给出：{item_name}",
         "Content": "确定将此道具交给\"{target_name}\"吗？",
@@ -342,56 +344,56 @@
         "ContentInfiniteQuantity": "你要交给\"{target_name}\"的数量？",
         "Submit": "给出"
       },
-	  "DepositItem": {
+      "DepositItem": {
         "Title": "存入道具",
-        "ContentMultipleQuantity": "你拥有{quantity}个该道具，存入的数量？",
-        "ContentInfiniteQuantity": "你想存入的数量是？",
         "Header": "正在存入：{item_name}",
         "Content": "确定将此道具存入\"{target_name}\"吗？",
+        "ContentMultipleQuantity": "你拥有{quantity}个该道具，存入的数量？",
+        "ContentInfiniteQuantity": "你想存入的数量是？",
         "Submit": "存入"
       },
-	  "WithdrawItem": {
+      "WithdrawItem": {
         "Title": "取出道具",
         "Header": "正在取出：{item_name}",
         "Content": "确定要从\"{target_name}\"取出该道具？",
         "ContentMultipleQuantity": "里面有{quantity}个该道具，你要取出多少？",
-		"ContentInfiniteQuantity": "",
+        "ContentInfiniteQuantity": "",
         "Submit": "取出"
       },
-	  "SplitItem": {
+      "SplitItem": {
         "Title": "分割道具",
-		"Header": "正在分割{item_name}",
-		"Content": "你要分割该道具吗？",
+        "Header": "正在分割{item_name}",
+        "Content": "你要分割该道具吗？",
         "ContentMultipleQuantity": "道具共有{quantity}个，分出多少？",
-		"ContentInfiniteQuantity": "",
-        "Submit": "分割道具"  
+        "ContentInfiniteQuantity": "",
+        "Submit": "分割道具"
       },
-	  "EditCurrencies": {
+      "EditCurrencies": {
         "Title": "正在编辑货币",
         "Content": "作为GM，你可以更新道具堆的货币：",
-		"Secondary": "二级货币：",
+        "Secondary": "二级货币：",
         "NoCurrency": "{actor_name} 没有有效货币",
-		"Submit": "提交"
+        "Submit": "提交"
       },
-	  "DropCurrencies": {
+      "DropCurrencies": {
         "Title": "放入货币",
-        "NoCurrency": "{actor_name}没有有效货币……",
         "Content": "你可以将以下货币添加到此道具堆：",
+        "NoCurrency": "{actor_name}没有有效货币……",
         "Submit": "添加"
       },
-	  "DepositCurrencies": {
+      "DepositCurrencies": {
         "Title": "存入货币",
         "Content": "你可以将以下货币存入此金库：",
         "NoCurrency": "{actor_name}没有可存入的货币。",
         "Submit": "存入"
       },
-	  "WithdrawCurrencies": {
+      "WithdrawCurrencies": {
         "Title": "取出道具",
         "Content": "你可以从此金库取出以下货币：",
-        "Submit": "取出",
-        "NoCurrency": "没有可供取出的货币。"
+        "NoCurrency": "没有可供取出的货币。",
+        "Submit": "取出"
       },
-	  "TradeMerchantItem": {
+      "TradeMerchantItem": {
         "Title": "交易物品：{item_name}",
         "BuyItem": "购买物品",
         "SellItem": "出售物品",
@@ -402,133 +404,133 @@
         "Change": "更改",
         "YouCantAfford": "你无法支付这个价格",
         "TheyCantAfford": "他们无法支付这个价格",
-        "MaxQuantity": "最大{quantity}",
         "YouLackQuantity": "你没有足够道具可供出售，当前数量{quantity}，需求{requiredQuantity}",
-        "TheyLackQuantity": "他们没有足够道具可供出售，当前数量{quantity}，需求{requiredQuantity}"
+        "TheyLackQuantity": "他们没有足够道具可供出售，当前数量{quantity}，需求{requiredQuantity}",
+        "MaxQuantity": "最大{quantity}"
       },
       "Settings": {
-        "MoreToCome": "并提供更多配置选项……",
-        "Request": "在这里提出你的新特性要求。",
         "Title": "Item Piles 模组配置",
         "Local": "本地设置",
         "Module": "模组设置",
-        "System": "系统专门设置",
-        "Donate": "如果喜欢该模组，你的捐款将会帮助它继续下去！",
-        "Submit": "提交设定",
         "Styles": "风格设置",
+        "System": "系统专门设置",
         "Export": "导出配置",
-        "Import": "导入配置"
+        "Import": "导入配置",
+        "Donate": "如果喜欢该模组，你的捐款将会帮助它继续下去！",
+        "MoreToCome": "并提供更多配置选项……",
+        "Request": "在这里提出你的新特性要求。",
+        "Submit": "提交设定"
       },
-	  "CurrenciesEditor": {
+      "CurrenciesEditor": {
         "Title": "Item Piles 货币编辑器",
         "TitleActor": "Item Piles 货币编辑器：{actor_name}",
         "Explanation": "你可以在此处定义角色能够从物品堆中捡起的货币，比如这些货币。",
-		"ExplanationSmallItems": "在其他系统中，货币也许是角色拥有的道具 - 你可以拖拽道具到此表格，将其添加为货币。",
         "ExplanationSmallAttributes": "在D&D5e中，角色货币路径为\"actor.system.currency.gp\"，所以你可以用名称“金币”和\"system.currency.gp\"路径来添加自己的货币。单击上方的加号增加1单位货币。",
+        "ExplanationSmallItems": "在其他系统中，货币也许是角色拥有的道具 - 你可以拖拽道具到此表格，将其添加为货币。",
         "DragDrop": "拖放物品来将其添加进列表",
         "Name": "货币名称",
         "Exchange": "交易",
         "Data": "数据",
         "Icon": "图标",
         "AddNew": "添加新货币",
-		"CreateNew": "下拉一个物品或点击加号按钮即可开始！",
+        "CreateNew": "下拉一个物品或点击加号按钮即可开始！",
         "Drop": "下拉添加"
       },
-	  "SecondaryCurrenciesEditor": {
+      "SecondaryCurrenciesEditor": {
         "Title": "Item Piles 二级货币编辑器",
         "TitleActor": "Item Piles 二级货币编辑器：{actor_name}",
         "Explanation": "你可以在此处定义角色能够从物品堆中捡起的二级货币。"
       },
-	  "ItemEditor": {
+      "ItemEditor": {
         "Title": "Item Piles 物品编辑器：{item_name}",
         "Update": "更新物品",
         "General": "常规设置",
         "Price": "价格设置",
-		"Vault": "金库设置",
+        "Vault": "金库设置",
         "GeneralTab": {
-			"NotForSale": "非卖品",
-			"NotForSaleExplanation": "启用后，该物品无法卖出，也不会买入。它仍然会显示在商人的物品列表中，除非被隐藏。",
-			"CustomCategory": "自定义道具类别",
-			"CustomCategoryExplanation": "不为空时，道具将被添加到自定义类别，取代其原本归类。",
-			"Hidden": "隐藏物品",
-			"HiddenExplanation": "启用后，该物品不会显示在商人的物品列表中。",
-			"CanStack": "可堆叠",
-			"CanStackExplanation": "将道具添加到金库时，是否与同类道具堆叠。",
-			"CanStackDefault": "金库默认设置",
-			"CanStackYes": "是，总是堆叠",
-			"CanStackNo": "否，不堆叠",
-			"DisplayQuantity": "物品数量可见",
-			"DisplayQuantityExplanation": "如果物品数量不为一，该选项可以配置该物品在商店中的数量显示方式。",
-			"DisplayQuantityDefault": "默认商人设置",
-			"DisplayQuantityYes": "总是显示数量",
-			"DisplayQuantityNo": "总是隐藏数量",
-			"InfiniteQuantity": "无限数量",
-			"InfiniteQuantityExplanation": "启用后，商人销售不会出现缺货的情况。",
-			"InfiniteQuantityDefault": "商人默认设置",
-			"InfiniteQuantityYes": "是，无限数量",
-			"InfiniteQuantityNo": "否，标准数量",
-			"KeepZero": "保持数量为零",
-			"KeepZeroExplanation": "道具卖光时，商人不移除道具，而是将其标记为“售罄”。",
-			"KeepOnMerchant": "保留在商人上",
-			"KeepOnMerchantExplanation": "当在商人的填充物品选项卡中清除所有角色物品时，或通过简单日历刷新库存的集成功能清除物品时（请参阅设置物品堆-其他设置底部的商人配置），该物品将始终保留。",
-			"PriceExplanation": "在此选项卡中，你可以配置该物品的价格，以及购买该物品是否会消耗其他物品。"
+          "NotForSale": "非卖品",
+          "NotForSaleExplanation": "启用后，该物品无法卖出，也不会买入。它仍然会显示在商人的物品列表中，除非被隐藏。",
+          "CustomCategory": "自定义道具类别",
+          "CustomCategoryExplanation": "不为空时，道具将被添加到自定义类别，取代其原本归类。",
+          "Hidden": "隐藏物品",
+          "HiddenExplanation": "启用后，该物品不会显示在商人的物品列表中。",
+          "CanStack": "可堆叠",
+          "CanStackExplanation": "将道具添加到金库时，是否与同类道具堆叠。",
+          "CanStackDefault": "金库默认设置",
+          "CanStackYes": "是，总是堆叠",
+          "CanStackNo": "否，不堆叠",
+          "DisplayQuantity": "物品数量可见",
+          "DisplayQuantityExplanation": "如果物品数量不为一，该选项可以配置该物品在商店中的数量显示方式。",
+          "DisplayQuantityDefault": "默认商人设置",
+          "DisplayQuantityYes": "总是显示数量",
+          "DisplayQuantityNo": "总是隐藏数量",
+          "InfiniteQuantity": "无限数量",
+          "InfiniteQuantityExplanation": "启用后，商人销售不会出现缺货的情况。",
+          "InfiniteQuantityDefault": "商人默认设置",
+          "InfiniteQuantityYes": "是，无限数量",
+          "InfiniteQuantityNo": "否，标准数量",
+          "KeepZero": "保持数量为零",
+          "KeepZeroExplanation": "道具卖光时，商人不移除道具，而是将其标记为“售罄”。",
+          "KeepOnMerchant": "保留在商人上",
+          "KeepOnMerchantExplanation": "当在商人的填充物品选项卡中清除所有角色物品时，或通过简单日历刷新库存的集成功能清除物品时（请参阅设置物品堆-其他设置底部的商人配置），该物品将始终保留。",
+          "PriceExplanation": "在此选项卡中，你可以配置该物品的价格，以及购买该物品是否会消耗其他物品。"
         },
         "PriceTab": {
-			"BasePrice": "基本价格",
-			"BasePriceExplanation": "此处配置商品在正常情况下的价格。",
-			"QuantityForPrice": "标价对应数量",
-			"QuantityForPriceExplanation": "设置用标价购买道具时可获得的数量。",
-			"Service": "服务类商品",
-			"ServiceExplanation": "这会使物品不会添加到买方的所持物中。这种服务“物品”仍然拥有数量，但是如果数量归零，物品不会被从商人处删除，而是会被设置为非卖品。",
-			"PurchaseMacro": "购买宏",
-			"PurchaseMacroExplanation": "购买此物品时触发的宏名称。",
-			"Free": "免费物品",
-			"FreeExplanation": "启用后，在商人处购买此物品不用花钱。",
-			"DisableNormalCost": "禁用通常花费",
-			"DisableNormalCostExplanation": "该项启用后，无法使用主要货币购买此物品，而必须使用下列物品之一购买。",
-			"PurchaseOptionsAsSellOption": "购买选项作为出售选项",
-			"PurchaseOptionsAsSellOptionExplanation": "启用此选项后，在将物品卖回给商家时，可以使用下面的购买选项。默认情况下，只能使用下面的出售选项。",
-			"PurchaseOptions": "购买选项",
-			"PurchaseOptionsExplanation": "你可以在这里设置购买此物品的其他方式。每组代表一个角色可以从商人处购买此物品的不同方式。",
-			"SellOptions": "出售选项",
-			"SellOptionsExplanation": "你可以在这里设置出售此物品的其他方式。每组代表一个角色向商人出售此物品的不同方式。",
-			"CantBeSoldToMerchants": "不能卖回",
-			"CantBeSoldToMerchantsExplanation": "启用后，该物品只能从商人处购买，无法卖回。",
-			"AddPurchaseOption": "添加购买选项",
-			"AddSellOption": "添加出售选项",
-			"DropMeClickMe": "通过点击或者拖放物品来添加属性",
-			"PricePreset": "或者选择预设价格：",
-			"SelectPreset": "选择预设价格",
-			"AddOverheadCostOption": "添加额外成本",
-			"OverheadCostOptions": "额外成本选项",
-			"OverheadCostOptionsExplanation": "在此处可以配置商人出售此物品时始终添加到价格中的额外成本。该成本会受到价格调整的影响。"
+          "BasePrice": "基本价格",
+          "BasePriceExplanation": "此处配置商品在正常情况下的价格。",
+          "QuantityForPrice": "标价对应数量",
+          "QuantityForPriceExplanation": "设置用标价购买道具时可获得的数量。",
+          "Service": "服务类商品",
+          "ServiceExplanation": "这会使物品不会添加到买方的所持物中。这种服务“物品”仍然拥有数量，但是如果数量归零，物品不会被从商人处删除，而是会被设置为非卖品。",
+          "PurchaseMacro": "购买宏",
+          "PurchaseMacroExplanation": "购买此物品时触发的宏名称。",
+          "Free": "免费物品",
+          "FreeExplanation": "启用后，在商人处购买此物品不用花钱。",
+          "DisableNormalCost": "禁用通常花费",
+          "DisableNormalCostExplanation": "该项启用后，无法使用主要货币购买此物品，而必须使用下列物品之一购买。",
+          "PurchaseOptionsAsSellOption": "购买选项作为出售选项",
+          "PurchaseOptionsAsSellOptionExplanation": "启用此选项后，在将物品卖回给商家时，可以使用下面的购买选项。默认情况下，只能使用下面的出售选项。",
+          "PurchaseOptions": "购买选项",
+          "PurchaseOptionsExplanation": "你可以在这里设置购买此物品的其他方式。每组代表一个角色可以从商人处购买此物品的不同方式。",
+          "SellOptions": "出售选项",
+          "SellOptionsExplanation": "你可以在这里设置出售此物品的其他方式。每组代表一个角色向商人出售此物品的不同方式。",
+          "CantBeSoldToMerchants": "不能卖回",
+          "CantBeSoldToMerchantsExplanation": "启用后，该物品只能从商人处购买，无法卖回。",
+          "AddPurchaseOption": "添加购买选项",
+          "AddSellOption": "添加出售选项",
+          "DropMeClickMe": "通过点击或者拖放物品来添加属性",
+          "PricePreset": "或者选择预设价格：",
+          "SelectPreset": "选择预设价格",
+          "AddOverheadCostOption": "添加额外成本",
+          "OverheadCostOptions": "额外成本选项",
+          "OverheadCostOptionsExplanation": "在此处可以配置商人出售此物品时始终添加到价格中的额外成本。该成本会受到价格调整的影响。"
         },
         "VaultTab": {
-			"GridSize": "网格大小",
-			"GridSizeExplanation": "这将配置该物品占用的网格空间数量。",
-			"VaultImage": "金库图像",
-			"VaultImageExplanation": "在金库中显示时，这将覆盖物品的图像。",
-			"VaultImageRotated": "旋转金库图像",
-			"VaultImageRotatedExplanation": "当物品在金库中旋转显示时，这将覆盖物品的图像。",
-			"GridWidth": "宽度",
-			"GridHeight": "高度",
-			"VaultExpander": "金库扩展器",
-			"VaultExpanderExplanation": "启用时，该道具不再是金库中的普通道具，而是按以下设置增加金库的可用槽位。",
-			"ExpandColumnsRows": "道具列/行扩展",
-			"ExpandColumnsRowsExplanation": "以上设置启用时，此处配置金库中可用的列数与行数。此设置最大为金库容量。",
-			"PriceModifierTitle": "买卖价格调整值",
-			"PriceModifierExplanation": "此选项用于配置该物品在购买和出售时的成本调整值。在使用任何其他价格调整值之前，它会乘以物品的基本价格。如果商人的卖价调整值是 50%，那么该物品的卖价调整值必须是 200%，才能抵消商人的调整。"
+          "GridSize": "网格大小",
+          "GridSizeExplanation": "这将配置该物品占用的网格空间数量。",
+          "VaultImage": "金库图像",
+          "VaultImageExplanation": "在金库中显示时，这将覆盖物品的图像。",
+          "VaultImageRotated": "旋转金库图像",
+          "VaultImageRotatedExplanation": "当物品在金库中旋转显示时，这将覆盖物品的图像。",
+          "GridWidth": "宽度",
+          "GridHeight": "高度",
+          "VaultExpander": "金库扩展器",
+          "VaultExpanderExplanation": "启用时，该道具不再是金库中的普通道具，而是按以下设置增加金库的可用槽位。",
+          "ExpandColumnsRows": "道具列/行扩展",
+          "ExpandColumnsRowsExplanation": "以上设置启用时，此处配置金库中可用的列数与行数。此设置最大为金库容量。",
+          "PriceModifierTitle": "买卖价格调整值",
+          "PriceModifierExplanation": "此选项用于配置该物品在购买和出售时的成本调整值。在使用任何其他价格调整值之前，它会乘以物品的基本价格。如果商人的卖价调整值是 50%，那么该物品的卖价调整值必须是 200%，才能抵消商人的调整。"
         }
       },
-	  "FilterEditor": {
+      "FilterEditor": {
         "Title": "Item Piles 过滤编辑器",
         "TitleActor": "Item Piles 过滤编辑器：{actor_name}",
+        "Explanation": "在这里，你可以使用义多种类型的过滤器以过滤你所需的物品。根据给定的属性路径，物品堆可以找到物品的“类型”，并根据过滤器将这些物品隐藏在物品堆库存的UI中。",
         "Filters": "过滤器",
         "Path": "属性路径",
-        "AddNew": "添加新过滤器",
-        "Explanation": "在这里，你可以使用义多种类型的过滤器以过滤你所需的物品。根据给定的属性路径，物品堆可以找到物品的“类型”，并根据过滤器将这些物品隐藏在物品堆库存的UI中。"
+        "AddNew": "添加新过滤器"
       },
-	  "RequiredItemPropertiesEditor": {
+      "RequiredItemPropertiesEditor": {
         "Title": "Item Piles - 所需物品属性编辑",
         "TitleActor": "Item Piles - 所需物品属性编辑: {actor_name}",
         "Explanation": "在这里，你可以定义多种类型的所需物品属性，转入此物品堆的物品必须具备这些属性。根据给定的属性路径，物品堆可以找到物品的\"类型\"，并根据要求防止不符合这些属性的物品转移到此物品堆。",
@@ -536,62 +538,62 @@
         "Path": "属性路径",
         "AddNew": "添加新过滤"
       },
-	  "SimilaritiesEditor": {
+      "SimilaritiesEditor": {
         "Title": "Item Piles 相似物品编辑器",
-        "Path": "属性路径",
-        "Explanation": "在这里，你可以定义多种类型的标识符，以帮助物品堆区分相似的项。在几乎所有系统中，物品都可以通过“名称”和“类型”进行区分，但是在某些情况下，例如在PF2系统中，临时物品可能会与永久物品共享。所以通过添加\"system.temporary.value\"，该物品会视为临时的“独特”物品，与其他永久物区分开。"
+        "Explanation": "在这里，你可以定义多种类型的标识符，以帮助物品堆区分相似的项。在几乎所有系统中，物品都可以通过“名称”和“类型”进行区分，但是在某些情况下，例如在PF2系统中，临时物品可能会与永久物品共享。所以通过添加\"system.temporary.value\"，该物品会视为临时的“独特”物品，与其他永久物区分开。",
+        "Path": "属性路径"
       },
-	  "CustomItemCategoriesEditor": {
+      "CustomItemCategoriesEditor": {
         "Title": "自定义物品类别编辑器",
         "Explanation": "在这里，你可以配置在你的世界中可用的自定义物品类别。当你为数据库添加一个新的物品时，它会动态地加入到这些数据库中。",
         "Category": "类别"
       },
-	  "UnstackableItemTypesEditor": {
+      "UnstackableItemTypesEditor": {
         "Title": "不可堆叠物品编辑器",
         "Explanation": "在这里，你可以定义哪些类别的物品不可堆叠。",
         "Type": "物品类型"
       },
       "VaultStylesEditor": {
         "Title": "物品堆储存物风格编辑器",
+        "Explanation": "可以在此处为金库中的物品定义多种样式。例如，可以将“system.rarity”的样式设置为“珍稀”，并将样式应用到与设置匹配的物品上。",
         "Path": "属性路径",
         "Value": "匹配值",
         "Style": "配置样式",
-        "AddNew": "增加新的样式规则",
-        "Explanation": "可以在此处为金库中的物品定义多种样式。例如，可以将“system.rarity”的样式设置为“珍稀”，并将样式应用到与设置匹配的物品上。"
+        "AddNew": "增加新的样式规则"
       },
-	  "StylesEditor": {
+      "StylesEditor": {
         "Title": "样式编辑",
         "Style": "样式",
         "Variable": "变量",
         "Value": "配置值"
       },
-	  "ItemTypePriceModifiersEditor": {
+      "ItemTypePriceModifiersEditor": {
         "Title": "物品类型价格调整值编辑器",
         "TitleActor": "物品类型价格调整值编辑器：{actor_name}",
-		"Explanation": "在这里，你可以为该商家定义与特定物品类型有关的价格和销售价格调整值。覆盖设置意味着它会覆盖商家的正常价格调整值。",
+        "Explanation": "在这里，你可以为该商家定义与特定物品类型有关的价格和销售价格调整值。覆盖设置意味着它会覆盖商家的正常价格调整值。",
         "ItemType": "物品类型",
-		"Override": "覆盖"
+        "Override": "覆盖"
       },
       "PriceModifiersEditor": {
         "Title": "Item Piles 价格调整值编辑器",
         "TitleActor": "Item Piles 价格调整值编辑器：{actor_name}",
-		"Explanation": "在这里，你可以为该商家定义与特定 actor 有关的价格和销售价格调整值。覆盖设置意味着它会覆盖商家的正常价格调整值，包括物品类型特定的价格调整值。",
+        "Explanation": "在这里，你可以为该商家定义与特定 actor 有关的价格和销售价格调整值。覆盖设置意味着它会覆盖商家的正常价格调整值，包括物品类型特定的价格调整值。",
         "DragDrop": "向列表内拖放角色来进行添加",
         "Actor": "角色",
         "Override": "覆盖"
-      },  
+      },
       "ItemPileConfig": {
-		"Title": "Item Pile 配置：{actor_name}",
+        "Title": "Item Pile 配置：{actor_name}",
         "Configure": "物品堆",
         "Update": "配置更新",
         "Main": {
           "Title": "主要设置",
-		  "EnabledPile": "启用",
+          "EnabledPile": "启用",
           "EnabledPileExplanation": "是否为物品堆。",
-		  "InspectItems": "启用物品检视",
+          "InspectItems": "启用物品检视",
           "InspectItemsExplanation": "点击物品名称将打开其物品卡.",
-		  "DisplayItemTypes": "通过物品类型过滤物品",
-		  "DisplayItemTypesExplanation": "在物品堆中分类别显示各种物品，根据其物品类型排序。",
+          "DisplayItemTypes": "通过物品类型过滤物品",
+          "DisplayItemTypesExplanation": "在物品堆中分类别显示各种物品，根据其物品类型排序。",
           "Distance": "交互距离",
           "GridUnits": "单元格 (留空为无限)",
           "Macro": "交互宏",
@@ -604,14 +606,14 @@
           "DeleteWhenEmptyDefault": "默认模组设置",
           "DeleteWhenEmptyYes": "是，搬空后自动删除",
           "DeleteWhenEmptyNo": "否，搬空后不要删除",
-		  "CanStackItems": "可堆叠物品",
+          "CanStackItems": "可堆叠物品",
           "CanStackItemsExplanation": "使用此设置后，添加到物品堆的物品将与类似物品堆叠。这也可以在每个物品的配置中进行控制。注意：这也取决于系统，因为有些物品没有数量，所以永远无法堆叠。",
-		  "CanStackItemsYes": "是，堆叠物品（除非物品另有说明）",
+          "CanStackItemsYes": "是，堆叠物品（除非物品另有说明）",
           "CanStackItemsNo": "否，堆叠物品（除非物品另有说明）",
           "CanStackItemsYesAlways": "是，总是堆叠物品",
           "CanStackItemsNoAlways": "否，从不堆叠物品",
           "OverrideCurrencies": "覆盖货币",
-		  "OverrideCurrenciesExplanation": "配置此堆是否能转移默认货币以外的其他货币。",
+          "OverrideCurrenciesExplanation": "配置此堆是否能转移默认货币以外的其他货币。",
           "ConfigureOverrideCurrencies": "配置覆盖货币",
           "OverrideSecondaryCurrencies": "覆盖次要货币",
           "OverrideSecondaryCurrenciesExplanation": "配置此物品堆的次要货币覆盖。",
@@ -625,7 +627,7 @@
         },
         "Other": {
           "Title": "其他设置",
-		  "Type": "Item Pile类型",
+          "Type": "Item Pile类型",
           "TypeExplanation": "这将配置此物品堆的显示方式。"
         },
         "SingleItem": {
@@ -638,7 +640,7 @@
           "ItemName": "使用物品名称",
           "ItemNameExplanation": "使物品堆以其包含的单个物品命名。"
         },
-		"Container": {
+        "Container": {
           "Title": "容器设置",
           "IsContainer": "是容器",
           "Locked": "已锁定",
@@ -651,7 +653,7 @@
           "OpenSoundPath": "打开声音路径",
           "LockedSoundPath": "锁定声音路径"
         },
-		"Sharing": {
+        "Sharing": {
           "Title": "共享设置",
           "ShareItemsEnabled": "启用共享: 物品",
           "ShareItemsEnabledExplanation": "启用此功能后，玩家只能拿走自己应得的物品数量。禁用则意味着他们想拿多少就拿多少。",
@@ -666,7 +668,7 @@
           "ResetSharingData": "重置共享数据",
           "ResetSharingDataExplanation": "如果物品堆的内容在玩家获取时被手动更改，则分享数据可能会与玩家的实际份额不一致。按下此按钮将重置每个人在该物品堆中的份额。"
         },
-		"Merchant": {
+        "Merchant": {
           "Title": "商家设置",
           "Enabled": "是商家",
           "EnabledExplanation": "玩家不能从商人处拾取物品，而必须购买",
@@ -731,11 +733,11 @@
           "LogMerchantActivityExplanation": "启用此功能后，商家会记录购买和出售物品以及GM更新物品状态（数量、可见性和待售）等事件。",
           "ClearMerchantLog": "清除商户记录",
           "ClearMerchantLogExplanation": "这将清除商家记录，删除所有条目。此操作无法撤销。",
-		  "ExportMerchantLog": "导出商人记录",
-		  "ExportMerchantLogExplanation": "这将导出并下载按时间从旧到新排序的记录文本文件。",
-		  "AddOverheadCostOption": "添加额外成本",
-		  "OverheadCostOptions": "额外成本选项",
-		  "OverheadCostOptionsExplanation": "在此处可以配置商人出售物品时始终添加到价格中的额外成本。该成本会受到价格调整的影响。"
+          "ExportMerchantLog": "导出商人记录",
+          "ExportMerchantLogExplanation": "这将导出并下载按时间从旧到新排序的记录文本文件。",
+          "AddOverheadCostOption": "添加额外成本",
+          "OverheadCostOptions": "额外成本选项",
+          "OverheadCostOptionsExplanation": "在此处可以配置商人出售物品时始终添加到价格中的额外成本。该成本会受到价格调整的影响。"
         },
         "Vault": {
           "Title": "金库设置",
@@ -761,9 +763,9 @@
           "LoggingFormatUserActor": "显示用户名和角色名",
           "LoggingFormatUser": "仅显示用户名",
           "LoggingFormatActor": "仅显示角色名"
-        }      
+        }
       },
-	  "VaultAccessEditor": {
+      "VaultAccessEditor": {
         "Title": "金库访问编辑器",
         "TitleActor": "金库访问编辑器: {actor_name}",
         "Explanation": "这配置了哪些角色和玩家可以访问和修改金库的库存和货币。如果玩家拥有金库角色的拥有权限，则始终拥有完全访问权。",
@@ -773,7 +775,7 @@
         "Withdraw": "取出",
         "Deposit": "存入"
       },
-	  "MerchantColumnsEditor": {
+      "MerchantColumnsEditor": {
         "Title": "商户专栏",
         "TitleActor": "商户专栏: {actor_name}",
         "Explanation": "这将配置商家用户界面中除商品名称、数量和价格之外的可见列。",
@@ -786,19 +788,18 @@
         "MappingTitle": "商户栏映射: {label}",
         "MappingContent": "这将配置属性值与标签之间的映射。标签可以是本地化的字符串。"
       },
-	  "PricePresetEditor": {
+      "PricePresetEditor": {
         "Title": "价格预设编辑器",
         "Update": "更新预置",
         "Explanation": "在这里，你可以创建多个预设价格，然后可以轻松地用于物品的自定义价格。"
       }
     },
-	"HUD": {
+    "HUD": {
       "ToggleLocked": "切换锁定",
       "ToggleClosed": "切换开关",
       "Configure": "设置物品堆"
-    },  
+    },
     "Chat": {
-      "PrivateTrade": "私下交易",
       "Pickup": "{name} 挑选了以下物品:",
       "Split": "一个物品堆的内容平分给了{num_players}个玩家, 每个人都收到了:",
       "TradeComplete": "{party_1} 和 {party_2} 完成了一次交易.",
@@ -806,13 +807,14 @@
       "TradeStartedButton": "点击下面的按钮观看交易:",
       "TradeSpectate": "观看交易",
       "SpectateDisabled": "交易完成",
+      "PrivateTrade": "私下交易",
       "ExpandTrade": "查看完整交易详情",
       "MerchantTraded": "{name}从{merchant}处购买了以下物品：",
       "GaveItems": "{source}交易给{target}了一些道具："
     },
-	"VaultLog": {
-      "Deposit": "{actor_name} ({user_name}) *存入了* {item_name} x {quantity} ({date})",
-      "Withdraw": "{actor_name} ({user_name}) **取出了** {item_name} x {quantity} ({date})"
+    "VaultLog": {
+      "Withdraw": "{actor_name} ({user_name}) **取出了** {item_name} x {quantity} ({date})",
+      "Deposit": "{actor_name} ({user_name}) *存入了* {item_name} x {quantity} ({date})"
     },
     "Settings": {
       "Configure": {
@@ -820,16 +822,16 @@
         "Label": "配置模组",
         "Hint": "你可以在这个对话框中配置 Item Piles。"
       },
-	  "Reset": {
+      "Reset": {
         "Title": "重置系统专门设定为默认",
         "Label": "重置设置",
-		"Hint": "这将把物品堆的所有设置重置为当前游戏系统的默认设置。"
+        "Hint": "这将把物品堆的所有设置重置为当前游戏系统的默认设置。"
       },
-	  "ActorClass": {
+      "ActorClass": {
         "Title": "角色类型",
-		"Hint": "本设置定义了初次加入道具时默认为道具堆的角色类型。例如D&D5e系统中为\"角色character\"，因该系统没有默认战利品角色类型。"
+        "Hint": "本设置定义了初次加入道具时默认为道具堆的角色类型。例如D&D5e系统中为\"角色character\"，因该系统没有默认战利品角色类型。"
       },
-	  "ItemLootClass": {
+      "ItemLootClass": {
         "Title": "物品战利品类型",
         "Hint": "此物品类型是指将用于默认战利品的物品类型。"
       },
@@ -841,80 +843,80 @@
         "Title": "物品装备类型",
         "Hint": "此物品类型是指将用于默认装备的物品类型。"
       },
-	  "Quantity": {
+      "Quantity": {
         "Title": "物品数量属性",
         "Hint": "在这里，你可以配置每个物品数量的属性路径。例如，在 D&D5e 系统中，每个物品的数量都存储在物品的\"item.system.quantity\"属性中，因此你可以在此设置中设置\"system.quantity\"属性。"
       },
-	  "Price": {
+      "Price": {
         "Title": "物品价格属性",
         "Hint": "在这里，你可以设置每个物品价格的属性路径。例如，在 D&D5e 系统中，每个物品的数量都存储在物品的\"item.system.price\"属性中，因此你可以在此设置中设置 \"system.price\" 属性。"
       },
-	  "QuantityForPrice": {
+      "QuantityForPrice": {
         "Title": "价格属性的物品数量",
         "Hint": "在这里，你可以设置按价格获得物品数量的属性路径。例如，在 PF2e 系统中，物品上有一个\"per\"属性，它决定了物品的价格可以换取多少数量的物品，这个属性存储在物品的\"item.system.price.per\"属性中，所以你可以在这个设置中设置\"system.price.per\"。"
       },
-	  "PreviewLevel": {
-		"Title": "物品预览窗口权限级别",
-		"Hint": "配置玩家点击物品堆中物品时显示的物品窗口的权限级别。在某些系统中，只有当级别设置为“查看”时描述才可见，而“限制”等级适用于大多数系统。"
-	  },
-	  "Currencies": {
-        "Label": "货币配置",
-        "Hint": "本设置定义了适用于存取的货币类型，它可以是一串录入角色卡的数字，而非实际存在的道具。",
-        "Title": "货币"
+      "PreviewLevel": {
+        "Title": "物品预览窗口权限级别",
+        "Hint": "配置玩家点击物品堆中物品时显示的物品窗口的权限级别。在某些系统中，只有当级别设置为“查看”时描述才可见，而“限制”等级适用于大多数系统。"
       },
-	  "SecondaryCurrencies": {
+      "Currencies": {
+        "Title": "货币",
+        "Label": "货币配置",
+        "Hint": "本设置定义了适用于存取的货币类型，它可以是一串录入角色卡的数字，而非实际存在的道具。"
+      },
+      "SecondaryCurrencies": {
         "Title": "次要货币",
         "Label": "配置次要货币",
         "Hint": "此设置可定义次要货币，类似于常规货币，但与常规货币不同。这些货币不能有汇率，也不能拆分为其他自定义货币。"
       },
-	  "CurrencyDecimalDigits": {
+      "CurrencyDecimalDigits": {
         "Title": "货币小数点位数",
         "Hint": "该设置定义了货币四舍五入到小数点后的最低位数。例如，在使用现代货币的现代设置中，'0.01'允许两位小数。如果有多种货币，则不使用此设置。"
       },
-	  "ItemFilters": {
+      "ItemFilters": {
         "Title": "物品过滤",
         "Label": "配置物品过滤",
         "Hint": "在这里，你可以配置哪些物品会被忽略或不会在物品堆对话框中列出。"
-      }, 
-	  "ItemSimilarities": {
+      },
+      "ItemSimilarities": {
         "Title": "物品相似性",
-		"Label": "设置相似物品",
+        "Label": "设置相似物品",
         "Hint": "在这里你可以设置在这个系统中如何检测相似物品。某些系统会具有将物品和其他类型区分开来的数据，例如临时物品。"
       },
-	  "UnstackableItemTypes": {
+      "UnstackableItemTypes": {
         "Title": "不可堆叠物品类型",
         "Label": "配置不可堆叠类型",
         "Hint": "在这里，你可以配置哪些类型的物品无论如何都被视为唯一。这里配置的类型不能堆叠，数量也只能为 1。"
       },
-	  "CssVariables": {
+      "CssVariables": {
         "Title": "CSS 变量样式",
         "Label": "配置 CSS 变量",
         "Hint": "允许你可以配置各种 CSS 变量，以驱动物品堆界面中的颜色和其他样式。"
       },
-	  "VaultStyles": {
+      "VaultStyles": {
         "Title": "金库样式",
         "Label": "配置金库样式",
         "Hint": "这样就可以添加规则，根据属性路径和物品本身的值对物品进行样式设置。"
       },
-	  "PricePresets": {
+      "PricePresets": {
         "Title": "预设价格",
         "Label": "配置预设价格",
         "Hint": "你可以在这里配置自定义预设价格，然后轻松导入到物品中。"
       },
-	  "CustomItemCategories": {
+      "CustomItemCategories": {
         "Title": "自定义物品类别",
         "Label": "配置物品类别",
         "Hint": "在这里，你可以配置自定义物品类别，这些类别会在物品编辑器中显示为建议suggestion。"
       },
-	  "EnableDroppingItems": {
+      "EnableDroppingItems": {
         "Title": "启用抛弃物品",
         "Hint": "启用后，用户可以通过把物品抛在地上来创建他们自己的物品堆 — 禁用的话，用户无法创建新的物品堆，也不能向现有的物品堆添加物品。"
       },
-	  "EnableGivingItems": {
+      "EnableGivingItems": {
         "Title": "启用给予物品",
         "Hint": "启用后，用户可以通过将物品丢在别的Token上来向他们给予物品 — 禁用的话，用户将无法给予其他用户物品。"
       },
-	  "EnableTrading": {
+      "EnableTrading": {
         "Title": "启用交易",
         "Hint": "此项启用交易——当此选项禁用时，没有人能够发起交易。"
       },
@@ -922,11 +924,11 @@
         "Title": "显示交易按钮",
         "Hint": "在左下角的玩家列表下方显示一个交易按钮."
       },
-	  "InspectItemsTrade": {
+      "InspectItemsTrade": {
         "Title": "启用交易中检查物品",
         "Hint": "启用之后，用户可以在交易过程中点击交易的物品，查看物品卡。"
       },
-	  "OutputToChat": {
+      "OutputToChat": {
         "Title": "输出至聊天",
         "Hint": "当任何玩家在物品堆中获取道具时，都会显示一条信息以显示物品被捡起。",
         "Off": "关 - 关闭消息",
@@ -934,30 +936,30 @@
         "SelfGM": "仅自身和GM - 只有GM和用户自己能看到消息",
         "Blind": "仅GM - 只有GM能看到消息"
       },
-	  "HideTokenBorder": {
+      "HideTokenBorder": {
         "Title": "隐藏物品堆的 token 边框",
         "Hint": "该选项控制将鼠标悬停在物品堆token上时，是否隐藏token边框。选择 token 时始终显示边框。",
         "HideEveryone": "为所有人隐藏",
         "HidePlayers": "为pl隐藏",
         "Show": "显示边框(core behavior)"
-      },  
+      },
       "InvertSheetOpen": {
         "Title": "按住Ctrl+双击打开",
         "Hint": "通常，要打开物品堆的角色卡，你需要按住Ctrl点击。启用该项将默认打开物品堆角色卡，而按住Ctrl点击会打开物品堆UI。"
       },
-	  "HideHeaderButtonText": {
+      "HideHeaderButtonText": {
         "Title": "隐藏标题栏按钮文本",
         "Hint": "隐藏角色和物品标题栏中的“Item Piles”—如果启用的模组太多，标题栏变得十分拥挤，这会非常有用。"
       },
       "HideHeaderButton": {
-        "Hint": "隐藏角色和物品标题栏中的整个“Item Piles”按钮，会增加配置新的物品堆和物品的难度。",
-        "Title": "隐藏标题栏按钮"
+        "Title": "隐藏标题栏按钮",
+        "Hint": "隐藏角色和物品标题栏中的整个“Item Piles”按钮，会增加配置新的物品堆和物品的难度。"
       },
-	  "DeleteEmptyPiles": {
+      "DeleteEmptyPiles": {
         "Title": "自动删除空物品堆",
         "Hint": "会使清空物品的物品堆自我删除。该项会被各个物品堆的单独设定覆盖。"
       },
-	  "PreloadFiles": {
+      "PreloadFiles": {
         "Title": "预加载文件",
         "Hint": "预加载物品堆文件（音频和图片），来实现无缝体验。"
       },
@@ -973,7 +975,7 @@
         "Title": "RollTables 文件夹，用于 \"填充物品\"",
         "Hint": "用于在商家的\"填充物品\"选项卡中过滤RollTable的文件夹标题。",
         "AllTables": "所有选项卡"
-      }         
-    }   
+      }
+    }
   }
 }

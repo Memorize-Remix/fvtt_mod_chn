@@ -1,0 +1,249 @@
+{
+  "FILE_MANAGER_DUNGEONS_LAB": {
+    "Title": "File Manager",
+    "Keybindings": {
+      "Open": { "Name": "Open File Manager" },
+      "SelectAll": { "Name": "Select all files (when File Manager is open)" },
+      "QuickJump": { "Name": "Quick jump to folder (when File Manager is open)" },
+      "ScopedQuickJump": {
+        "Name": "Quick jump inside current folder (when File Manager is open)"
+      }
+    },
+    "Settings": {
+      "AccentColor": {
+        "Name": "Accent color",
+        "Hint": "Highlight color used throughout the File Manager."
+      },
+      "DefaultView": {
+        "Name": "Default view",
+        "Hint": "View mode used when the File Manager opens."
+      },
+      "DisableChatGreeting": {
+        "Name": "Disable chat greeting",
+        "Hint": "Hide the Dungeons Lab greeting message posted to chat when the world loads."
+      },
+      "WebpQuality": {
+        "Name": "WebP quality",
+        "Hint": "Quality for the Convert-to-WebP context action (1 = best, larger files)."
+      },
+      "RecursiveSearch": {
+        "Name": "Recursive search",
+        "Hint": "Search bar finds files in all nested folders using the background index. Turn off if indexing slows your server."
+      },
+      "ScopedQuickJump": {
+        "Name": "Scoped quick jump (Ctrl+I)",
+        "Hint": "Ctrl+I opens the quick jump palette limited to the folder you have open and its subfolders. Ctrl+P keeps searching the whole source."
+      },
+      "AutoWebpUpload": {
+        "Name": "Convert uploads to WebP",
+        "Hint": "PNG, JPEG, BMP and AVIF images uploaded through the File Manager are converted to WebP before they reach the server (quality from the WebP quality setting). GIF, SVG and everything else is uploaded untouched."
+      }
+    },
+    "Hub": {
+      "Group": {
+        "Appearance": "Appearance",
+        "Search": "Search",
+        "FilesUpload": "Files & upload",
+        "Misc": "Misc"
+      }
+    },
+    "View": {
+      "Grid": "Grid",
+      "List": "List",
+      "Compact": "Compact",
+      "Portrait": "Portrait"
+    },
+    "Colors": {
+      "None": "No color",
+      "Red": "Red",
+      "Orange": "Orange",
+      "Yellow": "Yellow",
+      "Green": "Green",
+      "Blue": "Blue",
+      "Purple": "Purple"
+    },
+    "Toolbar": {
+      "Up": "Up",
+      "SearchPlaceholder": "Search files…",
+      "NewFolder": "New Folder",
+      "Upload": "Upload",
+      "TagResults": "Filtered files",
+      "EditPath": "Click to type a path",
+      "PathPlaceholder": "Type a path and press Enter…",
+      "SplitView": "Split view"
+    },
+    "Tabs": {
+      "NewTab": "New tab",
+      "CloseTab": "Close tab"
+    },
+    "Split": {
+      "Close": "Close second pane",
+      "Toggle": "Split",
+      "Active": "active",
+      "Swap": "Swap panes",
+      "Direction": "Toggle split direction",
+      "Copied": "\"{name}\" copied to this pane's folder",
+      "FoldersNotCopyable": "Folders cannot be copied between panes"
+    },
+    "Dnd": {
+      "CopiedTo": "\"{name}\" copied to \"{folder}\""
+    },
+    "Palette": {
+      "GoTo": "Go to…",
+      "Tooltip": "Quick jump to a folder",
+      "Placeholder": "Jump to a folder…",
+      "Recent": "Recent folders",
+      "Matches": "Folders - matches: {count}",
+      "NoResults": "Nothing found",
+      "NoResultsHint": "Fuzzy search covers every folder and file in this source",
+      "ScopedIn": "In folder {folder}",
+      "ScopedMatches": "In {folder} - matches: {count}",
+      "ScopedPlaceholder": "Search inside {folder}…",
+      "ScopedNoResultsHint": "Only {folder} and its subfolders are searched - Ctrl+P covers everything",
+      "HintNav": "↑↓ - navigate",
+      "HintGo": "↵ - open",
+      "HintTab": "⇥ - open in a new tab"
+    },
+    "Sidebar": {
+      "Favorites": "Favorites",
+      "NoFavorites": "Empty - right-click a folder and pick \"Add to favorites\".",
+      "Recent": "Recent",
+      "NoRecent": "Empty - open a few folders.",
+      "Folders": "Folders",
+      "Colors": "Colors",
+      "Tags": "Tags"
+    },
+    "Main": {
+      "Filters": "Filters:",
+      "ClearFilters": "Clear filters",
+      "EmptyFolder": "This folder is empty. Drop files here or create a subfolder.",
+      "NoResults": "No results. Try a different search or clear the tag filter.",
+      "BulkTags": "Tags…"
+    },
+    "Search": {
+      "Matches": "Matches: {count}",
+      "Indexing": "Indexing folders…"
+    },
+    "Media": {
+      "Play": "Play preview",
+      "Stop": "Stop preview"
+    },
+    "Preview": {
+      "PanelTitle": "Details",
+      "Hint": "Select a file to see its details and actions.",
+      "Actions": "Foundry actions",
+      "ColorLabel": "Color label",
+      "EditTags": "Edit",
+      "NoTags": "No tags",
+      "ActionTile": "Place on scene (Tile)",
+      "ActionShowPlayers": "Show players",
+      "ActionStopAudio": "Stop for players",
+      "ActionChat": "Send to chat",
+      "ActionWhisper": "Send hidden (GM)"
+    },
+    "Actions": {
+      "TileDone": "\"{name}\" placed on the scene as a Tile",
+      "SharedDone": "\"{name}\" shown to players",
+      "AudioStopped": "\"{name}\" stopped for everyone",
+      "ChatDone": "\"{name}\" sent to chat",
+      "WhisperDone": "\"{name}\" sent hidden"
+    },
+    "Whisper": {
+      "Title": "Send hidden",
+      "Label": "Send to active player",
+      "Send": "Send"
+    },
+    "Properties": {
+      "Title": "Properties",
+      "Type": "Type",
+      "Source": "Source",
+      "Path": "Path",
+      "CopyPath": "Copy path",
+      "PathCopied": "Path copied to clipboard"
+    },
+    "Types": {
+      "folder": "Folder",
+      "image": "Image",
+      "audio": "Audio",
+      "video": "Video",
+      "code": "Code",
+      "data": "Data",
+      "doc": "Document",
+      "pdf": "PDF",
+      "archive": "Archive",
+      "font": "Font",
+      "other": "File"
+    },
+    "Context": {
+      "Open": "Open",
+      "Favorite": "Add to favorites",
+      "Unfavorite": "Remove from favorites",
+      "Tags": "Tags…",
+      "ConvertWebp": "Convert to WebP"
+    },
+    "Convert": {
+      "Progress": "Converting to WebP… {current}/{total}",
+      "Done": "Converted to WebP: {count}",
+      "Failed": "{count} failed (see console)"
+    },
+    "TagModal": {
+      "Title": "Manage tags",
+      "AssignTitle": "Tags for selection",
+      "NewTagPlaceholder": "New tag…",
+      "Add": "Add",
+      "RenameTitle": "Rename tag",
+      "Delete": "Delete tag",
+      "MoveUp": "Move up",
+      "MoveDown": "Move down",
+      "NoTags": "No tags yet - create the first one below."
+    },
+    "NewFolderDialog": {
+      "Title": "New Folder",
+      "Label": "Folder name"
+    },
+    "Dialog": {
+      "Create": "Create",
+      "Cancel": "Cancel",
+      "Save": "Save"
+    },
+    "Discord": {
+      "Title": "Dungeons Lab Discord",
+      "Content": "Join the Dungeons Lab Discord - maps, updates, and a friendly GM community:",
+      "Open": "Open Discord"
+    },
+    "Kofi": {
+      "Tooltip": "Support us on Ko-fi"
+    },
+    "Drop": {
+      "NotAudio": "Only audio files can be dropped into playlists",
+      "TargetGone": "The drop target no longer exists",
+      "TrackAdded": "Track \"{track}\" added to playlist \"{playlist}\"",
+      "PlaylistCreated": "Playlist \"{playlist}\" created",
+      "PageAdded": "Page \"{page}\" added to \"{entry}\"",
+      "EntryCreated": "Journal entry \"{entry}\" created"
+    },
+    "Intro": {
+      "ChatTitle": "Greetings from Dungeons Lab!",
+      "ChatBody": "Thank you for using <strong>File Manager</strong> - search, preview, color-tag and share your assets without ever digging through folders again. New maps, updates, and a friendly GM community await you on our Discord.",
+      "ChatCta": "Join our Discord"
+    },
+    "Footer": {
+      "SelectFile": "Select file",
+      "SelectFolder": "Select folder"
+    },
+    "Errors": {
+      "NoScene": "No active scene to place a Tile on.",
+      "TileNeedsMedia": "Only images and videos can be placed as a Tile.",
+      "ShowUnsupported": "This file type cannot be shown to players.",
+      "NoActiveUsers": "No other active users to send to.",
+      "BadExtension": "\"{name}\" does not match the file types this picker accepts.",
+      "NothingSelected": "Select a file first.",
+      "PathNotFound": "Path not found: {path}"
+    },
+    "Status": {
+      "Count": "Items: {count}",
+      "Selected": "Selected: {count}",
+      "ActivePane": "Active pane {pane}: {name}"
+    }
+  }
+}

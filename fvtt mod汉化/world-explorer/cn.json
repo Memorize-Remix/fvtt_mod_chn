@@ -1,35 +1,36 @@
-{"WorldExplorer": {
+{
+    "WorldExplorer": {
         "Name": "World Explorer",
         "FIELDS": {
             "image": {
-                "Name": "覆盖图像"
+                "label": "覆盖图像"
             },
             "color": {
-                "Name": "覆盖颜色",
-                "Hint": "如果使用覆盖图像，则忽略此项。",
+                "label": "覆盖颜色",
+                "hint": "如果使用覆盖图像，则忽略此设置。",
                 "Placeholder": "默认 (#000000)"
             },
             "opacityGM": {
-                "Name": "GM透明度"
+                "label": "GM 透明度"
             },
             "opacityPlayer": {
-                "Name": "玩家透明度"
+                "label": "玩家透明度"
             },
             "partialColor": {
-                "Name": "部分显示颜色",
-                "Hint": "如果为空，将使用覆盖颜色。如果不为空且使用覆盖图像，则部分显示区域会对GM着色，但不会对玩家着色。",
+                "label": "部分显示空间颜色",
+                "hint": "如果为空，将使用覆盖颜色。如果不为空且使用了覆盖图像，则部分显示空间仅对 GM 着色，而不对玩家着色。",
                 "Placeholder": "默认（与上方覆盖颜色相同）"
             },
             "partialOpacityPlayer": {
-                "Name": "部分显示透明度",
-                "Hint": "GM将看到部分显示区域的加权透明度，该值由其他透明度计算得出。计算后的值显示在右侧。"
+                "label": "部分显示空间透明度",
+                "hint": "GM 会看到部分显示空间的加权透明度，该值由其他透明度计算得出。此计算值显示在右侧。"
             },
             "persistExploredAreas": {
-                "Name": "保留由Token探索的区域"
+                "label": "保留 Token 探索过的区域"
             },
             "position": {
-                "Name": "覆盖位置",
-                "Hint": "应显示在图块和纹理下方还是上方。",
+                "label": "覆盖位置",
+                "hint": "决定它应显示在图块和纹理之下还是之上。",
                 "Choices": {
                     "back": "仅覆盖地图",
                     "behindDrawings": "覆盖地图和非过顶图块",
@@ -37,13 +38,13 @@
                     "front": "覆盖除网格外的所有内容"
                 }
             },
-            "revealRadius": {
-                "Name": "Token揭示距离",
-                "Hint": "围绕友方Token临时揭示的距离（从中心计算）。"
+            "tokenReveal": {
+                "label": "Token 揭示距离",
+                "hint": "围绕友方 Token 临时揭示的距离（从中心起算）。零仅揭示该 Token 所在格，留空则不揭示任何内容。"
             },
-            "gridRevealRadius": {
-                "Name": "扩展揭示距离",
-                "Hint": "如果设置，已揭示的网格空间将延伸到隐藏和部分显示的空间中一定距离。不会扩展部分显示的空间。"
+            "gridReveal": {
+                "label": "扩展揭示距离",
+                "hint": "设置后，已揭示的网格空间会向隐藏空间和部分显示空间延伸一定量。不会延伸部分显示空间。"
             }
         },
         "SceneSettings": {
@@ -55,10 +56,11 @@
                 "Title": "部分显示空间设置",
                 "DerivedName": "GM"
             },
-            "TokenInteractions": {
+            "TokenInteractions" : {
                 "Title": "Token交互"
             }
         },
+        "SpacesUnit": "格",
         "Tools": {
             "Toggle": "切换空间",
             "Reveal": "揭示空间",

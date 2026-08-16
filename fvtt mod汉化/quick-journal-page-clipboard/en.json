@@ -1,0 +1,128 @@
+{
+  "QJPC": {
+    "settings": {
+      "removeGMSecrets": {
+        "name": "Hidden secrets for all PLAYERS",
+        "hint": "Removes hidden secrets from exported journal text for all PLAYERS."
+      },
+      "returnHTMLtext": {
+        "name": "HMTL text",
+        "hint": "Returns the HTML Foundry saves and seen in the editor instead of plain text."
+      },
+      "isCuratedText": {
+        "name": "Curated Text export",
+        "hint": "Returns curated text. This means that block elements will create linefeeds and style the text export to be similar to what you see in the journalk."
+      },
+      "isEmptyLineText": {
+        "name": "Remove empty lines",
+        "hint": "Removes any empty lines in the text. If you want to keep them for styling do not use this option."
+      },
+      "isPageTitle": {
+        "name": "Include Page Title.",
+        "hint": "This will add the page title to the exported text."
+      },
+      "returnMDtext": {
+        "name": "Render to Markdown",
+        "hint": "Renders the text of a journal page to markdown before clipboard export."
+      },
+      "plaintext": {
+        "name": "Plain text"
+      },
+      "outputFormat": {
+        "name": "Output format",
+        "hint": "The output format for the clipboard. Markdown will not be rendered by the Foundry rendere."
+      },
+      "allowLimited": {
+        "name": "'Limited rights' export",
+        "hint": "Allows for the export of pages which have the 'limited' user right flag. Caution! this migth be very system specific."
+      },
+      "isSecretObsidianCallout": {
+        "name": "Secret as Callout",
+        "hint": "Returns Obsidian style Markdown callouts with the callout denominator '[!secret]' for secrets"
+      },
+      "isDetailsTagObsidianCallout": {
+        "name": "'Details' tag as Callout",
+        "hint": "Returns Obsidian style Markdown callouts with the callout denominator '[!note]' for HTML details tags."
+      },
+      "isBlockQuoteObsidianCallout": {
+        "name": "Blockquote as Callout",
+        "hint": "Returns Obsidian style Markdown callouts with the callout denominator '[!info]' for blockquotes."
+      },
+      "secretsForGM": {
+        "name": "Hide Secrets for GM",
+        "hint": "Toggles the export of hidden secrets for the GM."
+      },
+      "htmlStyleTag": {
+        "name": "Style CSS",
+        "hint": "Copy and paste any CSS you want to use for the html export here (without style tags). It will be added at the start of the html. Example: .qjpc-print-document {background: red;}"
+      },
+      "picturePathSearchFor": {
+        "name": "IMG path to replace",
+        "hint": "Enter the string of the IMG path you want to search and replace for. Like for example the Foundry path 'assets'. Leave empty if not replacements shall take place."
+      },
+      "picturePathReplaceWith": {
+        "name": "IMG path to be replaced with",
+        "hint": "This is the IMG path you want to replace with. For example 'D:\\Foundry14.363\\Data\\assets'. Leave empty if not replacements shall take place."
+      },
+      "buttons": {
+        "save": "Save",
+        "cancel": "Cancel"
+      },
+      "htmlFooter": {
+        "name": "HTML Footer",
+        "hint": "HTML Footer will be added at the end of the exported html. You need to include any tags you need."
+      },
+      "htmlHeader": {
+        "name": "HTML Header",
+        "hint": "HTML Header will be added at the top of the exported html. You need to include any tags you need."
+      },
+      "base64PictureExport": {
+        "name": "Export pictures in HTML",
+        "hint": "Export pictures as base64 encoded data included as inline html. As long as this option is set no URL adjusment will be made. Instead the whole picture URL will be replaced by the picture."
+      },
+      "outputChannel": {
+        "name": "Export Destination",
+        "hint": "To which destination the exportet text shall be exported to. Standard is the clipboard."
+      },
+      "channelClipboard": {
+        "name": "Clipboard"
+      },
+      "channelFile": {
+        "name": "File export"
+      },
+      "channelPrint": {
+        "name": "To Printer"
+      },
+      "fileName": {
+        "name": "Filenamen",
+        "hint": "Please input ONLY the file name and NO file path for the file export option."
+      }
+    },
+    "controls": {
+      "clipboard": {
+        "label": "Clipboard"
+      },
+      "print": {
+        "label": "Print"
+      },
+      "saveAs": {
+        "label": "Save as file"
+      }
+    },
+    "notifications": {
+      "copied": "Text copied to clipboard.",
+      "unsupported": "Non supported page type.",
+      "noJournalOpen": "No currently opened or active journal window.",
+      "fileDownload": "Journal text was saved.",
+      "print": "Journal has been sent to the printer."
+    },
+    "warning": {
+      "error": "Error during clipboard copy event.",
+      "onlyOneAllowed": "Only Markdown or HTML can be active at the same time. Switched to plain text export.",
+      "channel": "Output channel could not be opened."
+    },
+    "windows": {
+      "printPreview": "Print preview"
+    }
+  }
+}

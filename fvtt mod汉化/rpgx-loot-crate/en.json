@@ -1,0 +1,45 @@
+{
+  "RPGXLOOTCRATE": {
+    "Title": "RPGX Loot Crate",
+    "Settings": {
+      "ProtonUrl": {
+        "Name": "RPGX Proton Server URL",
+        "Hint": "URL of your running RPGX Proton instance. Required for PRO features and AI generation."
+      },
+      "ProtonModel": {
+        "Name": "AI Language Model",
+        "Hint": "Ollama model used for AI item generation. Must be installed in Proton."
+      },
+      "ConfirmDelete": {
+        "Name": "Confirm Crate Deletion",
+        "Hint": "Require typing the crate name to confirm deletion."
+      }
+    },
+    "Tabs": {
+      "PartyCrates": "Loot Crates",
+      "Trade": "Trade Items",
+      "Craft": "Craft Item"
+    },
+    "Crates": {
+      "New": "New Crate",
+      "Delete": "Delete Crate",
+      "Empty": "No loot crates yet.",
+      "EmptySub": "Create one to share items and currency with your party."
+    },
+    "Trade": {
+      "Request": "Send Trade Request",
+      "Accept": "Accept",
+      "Decline": "Decline",
+      "Confirm": "Confirm My Offer",
+      "Cancel": "Cancel Trade"
+    },
+    "Craft": {
+      "Begin": "Begin Crafting",
+      "Submit": "Submit for GM Review",
+      "Approve": "Approve",
+      "Deny": "Deny",
+      "Award": "Award",
+      "Rest": "Rest"
+    }
+  }
+}

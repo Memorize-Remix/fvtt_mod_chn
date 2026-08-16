@@ -1,0 +1,157 @@
+{
+	"BBH": {
+		"COMMON": {
+			"All": "全部",
+			"Unknown": "未知",
+			"None": "无",
+			"One": "1",
+			"RangeLow": "L",
+			"RangeHigh": "H"
+		},
+		"SETTINGS": {
+			"CreatureTypeTables": {
+				"Name": "收获表条目",
+				"Hint": "存储映射到生物类型的随机表 UUID 条目。",
+				"Menu": {
+					"Name": "生物类型表",
+					"Label": "分配随机表",
+					"Hint": "将随机表 UUID 分配给生物类型。优先精确匹配，否则使用“全部”作为回退。"
+				}
+			},
+			"AutoRollHarvest": {
+				"Name": "快进收获检定",
+				"Hint": "启用后，收获技能检定将跳过配置对话框。"
+			},
+			"AutoEnableQuantityOnNewTables": {
+				"Name": "自动启用新随机表的数量数据",
+				"Hint": "启用后，新建的随机表默认启用数量数据。"
+			},
+			"RollTableCompendium": {
+				"Name": "首选随机表文件夹",
+				"Hint": "当某行无法解析到随机表合集时，用作回退来源。",
+				"None": "侧边栏随机表"
+			},
+			"HarvestAttemptsBySize": {
+				"Name": "最大收获次数（{size}）",
+				"Hint": "对 {size} 生物允许的最大收获检定次数，超过后进一步尝试将被阻止。",
+				"Menu": {
+					"Name": "按体型设置最大收获次数",
+					"Label": "按体型的次数菜单",
+					"Hint": "配置每种 D&D5e 生物体型允许的最大收获检定次数。",
+					"HintWithDefaultBehavior": "配置每种 D&D5e 生物体型允许的最大收获检定次数。留空字段以使用该体型的默认值（DND5E 数值，最小为 1）。"
+				},
+				"WindowTitle": "配置最大收获次数"
+			},
+			"Debug": {
+				"Name": "调试日志",
+				"Hint": "在浏览器控制台中启用详细的 BBH 调试/信息日志。"
+			}
+		},
+		"KEYBINDINGS": {
+			"OpenTablesModifier": {
+				"Name": "打开收获者表格的修饰键",
+				"Hint": "按住此键点击 Harvester 的 Token 控制按钮可打开生物类型表。"
+			}
+		},
+		"SHEETS": {
+			"RollTable": {
+				"Label": "Bugbear's Harvester 随机表"
+			},
+			"TableResult": {
+				"Label": "Bugbear's Harvester 表格结果"
+			}
+		},
+		"TABLES": {
+			"WindowTitle": "收获者表格",
+			"Hint": "添加收获表条目。选择一种生物类型，或使用“全部”在所有生物类型间共享同一张表。将随机表拖入 UUID 字段。",
+			"HeaderType": "生物类型",
+			"HeaderRollTable": "随机表",
+			"CustomType": "自定义",
+			"CustomTypeEdit": "编辑自定义类型",
+			"CustomTypeDisplay": "自定义：{value}",
+			"CustomTypePromptTitle": "配置自定义类型",
+			"CustomTypePromptLabel": "自定义类型键",
+			"CustomTypePromptHint": "使用小写键。你可以使用 value:subtype 匹配特定亚种条目（例如：dragon:red、silver）。",
+			"OpenTableSource": "打开首选随机表文件夹",
+			"CreatureTypeAria": "生物类型",
+			"UuidPlaceholder": "在此拖入随机表或粘贴其 UUID",
+			"OpenLinkedRollTable": "打开关联的随机表",
+			"ClearInput": "清除输入",
+			"DeleteEntry": "删除条目",
+			"AddTable": "添加表格",
+			"Save": "保存"
+		},
+		"ROLL_TABLE": {
+			"HarvestDataLabel": "收获数据",
+			"HarvestDataHint": "在此随机表上公开收获技能与 DC 字段，并允许其用于收获结算。",
+			"QuantityDataLabel": "数量数据",
+			"QuantityDataHint": "在此随机表上公开数量字段，用于结果奖励。"
+		},
+		"RESULTS": {
+			"Skill": "技能",
+			"Dc": "DC",
+			"Quantity": "数量",
+			"ApplySkillToAllAria": "将技能应用于所有结果",
+			"ApplySelectedSkillToAllAria": "将所选技能应用于所有结果"
+		},
+		"RESULT_CONFIG": {
+			"HarvestSkillLabel": "收获技能",
+			"HarvestSkillHint": "收获此结果所需的技能检定。",
+			"HarvestDcLabel": "收获 DC",
+			"HarvestDcHint": "收获检定的难度等级。",
+			"QuantityLabel": "数量",
+			"QuantityHint": "在创建关联物品之前应用的固定数值或掷骰公式。",
+			"DcPlaceholder": "10",
+			"QuantityPlaceholder": "1d4"
+		},
+		"CONTROLS": {
+			"GroupTitle": "Bugbear's Harvester",
+			"HarvestTarget": "收获目标",
+			"ResetHarvestedResults": "重置已收获结果",
+			"ConfigureTables": "配置表格"
+		},
+		"INFO": {
+			"ResetHarvestedResultsDone": "已重置 {count} / {total} 个角色身上的已收获结果。"
+		},
+		"WARN": {
+			"NoHarvestTableForType": "未为生物类型“{creatureType}”配置收获表。",
+			"HarvestTableNoResults": "收获表“{tableName}”未返回任何结果。",
+			"ResultMissingSkillOrDc": "“{tableName}”上的结果“{resultName}”缺少收获技能或 DC。",
+			"ResultMissingItemLink": "“{tableName}”上的结果“{resultName}”未关联到物品文档。",
+			"SelectOne": {
+				"Actor": "尝试收获前请先选择一个 Token。",
+				"Target": "请仅选择一个收获目标。",
+				"TargetActor": "此目标 Token 引用的角色已不存在于该世界中。",
+				"Creature": "此目标 Token 引用的角色并非生物。"
+			},
+			"HarvestPayloadUnresolved": "无法从其存储的数据中解析此收获请求。",
+			"TargetMustBeAtZeroHp": "目标的 HP 必须为 0 或更低才能被收获。",
+			"NoHarvestableResultsRemaining": "此目标与表格已无剩余可收获的结果。",
+			"HarvestTableMissingResultConfig": "收获表“{tableName}”没有可用结果：缺少 {details}。请在表格结果上配置 BBH 结果的技能/DC 标志。",
+			"HarvestAttemptsReached": "{targetName} 无法再次收获。已达到最大尝试次数（{maxAttempts}）。",
+			"MissingSkillLabel": "技能",
+			"MissingDcLabel": "DC",
+			"DropRollTable": "在此拖入随机表文档。",
+			"TableNameOrUuidNotResolved": "该值无法解析为随机表 UUID 或确切的表名。",
+			"UuidNotRollTable": "UUID 无法解析为随机表。",
+			"SelectTargetsOrControlledForReset": "选择 Token 和/或目标 Token 以重置已收获结果。"
+		},
+		"CHAT": {
+			"RollFlavor": "{actorName} 收获 {targetName}",
+			"HarvestAttemptTitle": "收获尝试",
+			"AttemptBody": "{actorName} 正在收获 {targetName}。",
+			"TableLine": "表格：{tableName}",
+			"ResultLine": "结果：{resultName}",
+			"CheckLine": "检定：{skillLabel} 对抗 DC {dc}",
+			"SelectSkillPrompt": "选择要尝试收获的技能检定：",
+			"RollHarvestCheck": "掷收获检定",
+			"UnnamedResult": "未命名结果",
+			"HarvestResultFallback": "收获结果",
+			"HarvestSucceeded": "收获成功",
+			"HarvestFailed": "收获失败",
+			"OutcomeBody": "{actorName} 收获了 {targetName}（{creatureType}）。",
+			"CheckResultLine": "检定：{skillLabel} {total}",
+			"RewardLine": "奖励：{rewardName}"
+		}
+	}
+}

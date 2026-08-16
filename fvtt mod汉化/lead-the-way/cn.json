@@ -1,0 +1,76 @@
+{
+  "lead-the-way": {
+    "module": {
+      "name": "Lead The Way",
+      "description": "一个用于 Foundry VTT 中 Token 跟随的模组"
+    },
+    "settings": {
+      "queueWidth": {
+        "name": "编队宽度",
+        "hint": "设置跟随者编队的宽度（以网格单元格为单位）。"
+      },
+      "maxDistance": {
+        "name": "最大距离",
+        "hint": "设置 Token 可以跟随领队者的最大距离。0 = 无限。如果系统运行缓慢，请设置上限。"
+      },
+      "showFollowingIndicator": {
+        "name": "显示跟随指示器",
+        "hint": "启用或禁用跟随指示器。"
+      },
+      "indicatorSize": {
+        "name": "指示器大小",
+        "hint": "选择跟随指示器的大小。"
+      },
+      "indicatorCorner": {
+        "name": "指示器角位",
+        "hint": "选择指示器在 Token 上显示的角位。",
+        "topLeft": "左上",
+        "topRight": "右上",
+        "bottomLeft": "左下",
+        "bottomRight": "右下"
+      },
+      "showIndicatorBorder": {
+        "name": "显示指示器边框",
+        "hint": "启用或禁用跟随指示器的边框。"
+      },
+      "indicatorColor": {
+        "name": "指示器边框颜色",
+        "hint": "选择跟随指示器边框的颜色。"
+      },
+      "indicatorBorderThickness": {
+        "name": "指示器边框粗细",
+        "hint": "选择跟随指示器边框的粗细。"
+      }
+    },
+    "messages": {
+      "init": "Lead The Way 模组已初始化。",
+      "ready": "Lead The Way 模组已就绪。",
+      "selectToken": "请先选择一个 Token。",
+      "selectOneToken": "请仅选择一个 Token。",
+      "hoverLeader": "请将鼠标悬停在一个领队 Token 上。",
+      "cannotFollowSelf": "Token 不能跟随自己。",
+      "alreadyFollowing": "此 Token 已经在跟随所选的领队者。",
+      "addedFollower": "{follower} 现在正在跟随 {leader}。",
+      "noLongerFollowing": "{follower} 不再跟随 {leader}。",
+      "confirmClearAll": "确定要清除所有编队吗？",
+      "clearedAll": "所有编队已清除。",
+      "noValidLocation": "未找到有效位置。",
+      "targetTooFar": "要到达的目标太远。",
+      "removedOnManualMove": "由于手动移动，Token 已从编队中移除。",
+      "combatStarted": "战斗开始 | 正在禁用编队。",
+      "combatEnded": "战斗结束 | 正在重新启用编队。",
+      "enteredCombat": "进入战斗 | 正在禁用编队。",
+      "exitedCombat": "退出战斗 | 正在重新启用编队。",
+      "followingYou": "{token} 正在跟随您（{leader}）。",
+      "notGM": "用户不是 GM，已忽略。",
+      "updatedTokenNotLeader": "更新的 Token 不是领队者，已跳过。",
+      "controls": "操作："
+    },
+    "buttons": {
+      "clearFormations": "清除编队"
+    },
+    "tooltips": {
+      "info": "此模组允许您创建和管理 Token 编队。选择一个 Token，悬停到另一个 Token 上，然后按 F 使其跟随。使用下方按钮解散编队。"
+    }
+  }
+}

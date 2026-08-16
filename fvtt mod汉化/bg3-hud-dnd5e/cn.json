@@ -1,8 +1,11 @@
-{"BG3HUD": {
+{
+  "BG3HUD": {
     "Rest": "休息",
     "RestTooltip": "休息<br><span style='font-size: 0.85em; opacity: 0.8;'>点击：选择休息类型<br>Ctrl+点击：短休<br>Alt+点击：长休</span>",
     "ChooseRestType": "选择休息类型：",
-    "EndTurn": "结束回合"
+    "EndTurn": "结束回合",
+    "Inspiration": "激励",
+    "InspirationTooltip": "英雄激励<br><span style='font-size: 0.85em; opacity: 0.8;'>左键点击切换英雄激励状态。</span>"
   },
   "bg3-hud-dnd5e": {
     "Settings": {
@@ -10,7 +13,7 @@
       "ConfigureAutoPopulateGrids": "配置自动填充网格",
       "ConfigureGrids": "配置网格",
       "ConfigureGridsHint": "配置创建Token时在每个网格中自动填充哪些物品类型",
-	  "ConfigureAutoPopulateDescription": "为<strong>仅限NPC</strong>分配物品类型到快捷栏格。每种类型只能分配到一个格子。<br><small>注意：玩家角色应使用右键菜单 → 自动填充容器功能。</small>",
+      "ConfigureAutoPopulateDescription": "为<strong>仅限NPC</strong>分配物品类型到快捷栏格。每种类型只能分配到一个格子。<br><small>注意：玩家角色应使用右键菜单 → 自动填充容器功能。</small>",
       "AutoPopulatePassives": "自动填充被动特性",
       "AutoPopulatePassivesHint": "创建Token时自动用没有行动组合的特性填充",
       "ShowItemNames": "显示物品名称",
@@ -19,18 +22,28 @@
       "ShowItemUsesHint": "在有限使用次数的物品上显示剩余使用次数",
       "ShowHealthOverlay": "显示生命条",
       "ShowHealthOverlayHint": "在立绘图像上显示红色生命条",
-	  "ShowHPControls": "显示生命值控件按钮",
+      "DefaultPortraitImageSource": "默认立绘图像来源",
+      "DefaultPortraitImageSourceHint": "在设置角色特定的偏好之前，选择新角色在 HUD 中使用的图像。",
+      "PortraitSourceToken": "Token 图像",
+      "PortraitSourceActor": "角色立绘",
+      "ShowHPControls": "显示生命值控件按钮",
       "ShowHPControlsHint": "在立绘生命值控件中显示击杀（骷髅）和治疗（心形）按钮",
+      "HideDeathSaves": "隐藏死亡豁免 UI",
+      "HideDeathSavesHint": "生命值为 0 时完全隐藏死亡豁免 UI 行",
+      "IgnoreGroupActors": "忽略群组角色",
+      "IgnoreGroupActorsHint": "启用后，类型为 'group' 的角色会被排除在 BG3 HUD 兼容性检查之外",
       "EnableCPRGenericActions": "启用CPR通用动作按钮",
       "EnableCPRGenericActionsHint": "在优势旁边显示一个垂直按钮，触发CPR的通用动作（2024）对话框",
       "EnableCPRActionsAutoPopulate": "启用CPR动作自动填充",
       "EnableCPRActionsAutoPopulateHint": "创建Token时自动用CPR动作填充快速访问（根据D&D 5e规则版本设置使用2014或2024合集）。如果手动选择了动作，则优先使用手动选择的动作。",
       "SelectedCPRActions": "选中的CPR动作",
-	  "SelectedCPRActionsHint": "手动选择的CPR动作以显示在快速访问中（通过'选择CPR动作'菜单配置）。列表内容会根据你选择的D&D 5e规则版本，自动匹配对应的合集。",
-      "BlockCPRActionsOnHotbar": "阻止CPR动作在快捷栏上",
-      "BlockCPRActionsOnHotbarHint": "防止CPR通用动作被拖放到快捷栏上。派生的物品如'擒抱: 逃脱'仍然允许。",
-      "EnableAdvBtnsMidiQoL": "启用优势/劣势按钮（Midi-QoL）",
-      "EnableAdvBtnsMidiQoLHint": "当Midi-QoL激活时，向全局加值添加优势/劣势按钮",
+      "SelectedCPRActionsHint": "手动选择的CPR动作以显示在快速访问中（通过'选择CPR动作'菜单配置）。列表内容会根据你选择的D&D 5e规则版本，自动匹配对应的合集。",
+      "AllowCPRActionsInAutoPopulate": "允许 CPR 动作参与快捷栏自动填充",
+      "AllowCPRActionsInAutoPopulateHint": "启用后，自动填充主快捷栏时可以包含 CPR 通用动作（冲刺、闪避、攻击等）。任何网格始终允许拖放。",
+      "EnableAdvBtnsMidiQoL": "将优势/劣势应用到 Midi-QoL 掷骰",
+      "EnableAdvBtnsMidiQoLHint": "启用且 Midi-QoL 处于激活状态时，优势/劣势按钮状态会应用到下一次符合条件的掷骰。无论此设置如何，这些按钮始终可见以作提醒。",
+      "SyncBonusReactionFilters": "同步附赠动作与反应过滤",
+      "SyncBonusReactionFiltersHint": "启用且 Midi-QoL 处于激活状态时，当 Midi-QoL 应用相应的动作经济效果时，将附赠动作和反应过滤标记为已使用（与右键点击相同）。需要 Midi-QoL 工作流设置 > 反应：将「强制执行反应」和「强制执行附赠动作」都设置为「所有角色：使用时提示」。",
       "AutoPopulateOnTokenCreation": "创建Token时自动填充",
       "AutoPopulateOnTokenCreationHint": "创建Token时自动用物品填充快捷栏网格",
       "AutoPopulatePlayerCharacters": "允许为玩家角色自动填充",
@@ -60,7 +73,7 @@
         "MenuLabel": "第三方模组",
         "MenuHint": "配置与CPR和Midi-QoL等第三方模组的集成",
         "CPR": {
-          "Legend": "CPR"
+          "Legend": "Cauldron of Plentiful Resources (CPR)"
         },
         "Midi": {
           "Legend": "Midi-QoL"
@@ -99,7 +112,7 @@
       "Feature": "特性",
       "Cantrip": "戏法",
       "SpellLevel": "法术环阶",
-	  "SpellSlots": "法术位",
+      "SpellSlots": "法术位",
       "PactMagic": "契约魔法",
       "ApothecaryMagic": "药剂师施法"
     },
@@ -135,7 +148,9 @@
         "Survival": "求生"
       },
       "CheckFormat": "{ability}检定",
-      "SaveFormat": "{ability}豁免"
+      "SaveFormat": "{ability}豁免",
+      "CheckTooltip": "左键点击：属性检定",
+      "SaveTooltip": "右键点击：豁免检定"
     },
     "Portrait": {
       "SetTo0HP": "设置为0生命值",
@@ -173,11 +188,11 @@
         "Tooltip": "点击打开CPR通用动作对话框"
       },
       "SelectActionsTitle": "选择CPR通用动作",
-	  "SelectActionsDescription": "选择最多{max}个CPR通用动作以显示在快速访问中。列表内容会根据你选择的D&D 5e规则版本（2014/旧版或2024/现代版）自动匹配对应的合集。",
+      "SelectActionsDescription": "选择最多{max}个CPR通用动作以显示在快速访问中。列表内容会根据你选择的D&D 5e规则版本（2014/旧版或2024/现代版）自动匹配对应的合集。",
       "SelectActionsMenuName": "选择CPR动作",
       "SelectActionsMenuLabel": "选择CPR动作",
       "SelectActionsMenuHint": "选择要在快速访问中显示的CPR通用动作（最多6个，基于规则版本）",
-      "NoActionsAvailable": "没有可用的CPR动作。请确保CPR模组已安装，并且存在适用于你规则版本的适当CPR Actions合集。",
+      "NoActionsAvailable": "没有可用的 CPR 动作。请确保已安装 Cauldron of Plentiful Resources 模组，并且存在与你规则版本匹配的 CPRActions 合集。",
       "MaxSelectionsReached": "最多可选择{max}个动作",
       "SelectionCounter": "已选择：{current} / {max}"
     },
@@ -188,9 +203,9 @@
       "ItemNotFound": "物品未找到",
       "ItemCannotBeUsed": "物品无法使用",
       "MacroNotFound": "宏未找到",
-      "CPRGenericActionsNotFound": "未找到CPR通用动作（2024）物品。请确保CPR模组已安装并激活。",
+      "CPRGenericActionsNotFound": "未找到 CPR 通用动作（2024）物品。请确保已安装并激活 Cauldron of Plentiful Resources 模组。",
       "CPRGenericActionsError": "使用CPR通用动作时出错",
-      "CPRModuleNotActive": "CPR模组未激活。请启用它以使用CPR功能。",
+      "CPRModuleNotActive": "Cauldron of Plentiful Resources 模组未激活。请启用它以使用 CPR 功能。",
       "CPRActionsSelectionSaved": "CPR动作选择已保存",
       "CPRActionNotFound": "未找到CPR动作",
       "CPRActionError": "使用CPR动作时出错",
@@ -198,7 +213,6 @@
       "LongRestNotAvailable": "此角色无法进行长休",
       "SlotOccupiedByTwoHandedWeapon": "此槽位已被双手武器占用",
       "FailedToRollInitiative": "投掷先攻失败",
-      "CPRActionBlockedFromHotbar": "CPR通用动作无法添加到快捷栏。请改用快速访问网格。",
       "ActivityNotFound": "未找到行动组合",
       "ActivityCannotBeUsed": "行动组合无法使用"
     },

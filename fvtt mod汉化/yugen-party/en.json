@@ -1,0 +1,233 @@
+{
+	"yugen-party": {
+		"settings": {
+			"max-pc-count": {
+				"name": "Maximum Player Characters",
+				"hint": "The maximum number of player characters to display in the sidebar."
+			},
+			"sidebar-scale": {
+				"name": "UI Scale",
+				"hint": "Adjust the size of the party sidebar portraits."
+			},
+			"hp-estimate": {
+				"name": "Use HP Estimates",
+				"hint": "Show health status (e.g., Injured) instead of exact numbers."
+			},
+			"hp-label-unharmed": {
+				"name": "Unharmed Label",
+				"hint": "The label to display when a character is unharmed."
+			},
+			"hp-color-unharmed": {
+				"name": "Unharmed Color",
+				"hint": "The color of the health bar for unharmed characters."
+			},
+			"hp-label-fine": {
+				"name": "Fine Label",
+				"hint": "The label to display when a character is fine."
+			},
+			"hp-color-fine": {
+				"name": "Fine Color",
+				"hint": "The color of the health bar for characters that are fine."
+			},
+			"hp-threshold-fine": {
+				"name": "Fine Threshold",
+				"hint": "The HP percentage at which a character is considered fine."
+			},
+			"hp-label-scratched": {
+				"name": "Scratched Label",
+				"hint": "The label to display when a character is scratched."
+			},
+			"hp-color-scratched": {
+				"name": "Scratched Color",
+				"hint": "The color of the health bar for scratched characters."
+			},
+			"hp-threshold-scratched": {
+				"name": "Scratched Threshold",
+				"hint": "The HP percentage at which a character is considered scratched."
+			},
+			"hp-label-injured": {
+				"name": "Injured Label",
+				"hint": "The label to display when a character is injured."
+			},
+			"hp-color-injured": {
+				"name": "Injured Color",
+				"hint": "The color of the health bar for injured characters."
+			},
+			"hp-threshold-injured": {
+				"name": "Injured Threshold",
+				"hint": "The HP percentage at which a character is considered injured."
+			},
+			"hp-label-wounded": {
+				"name": "Badly Wounded Label",
+				"hint": "The label to display when a character is badly wounded."
+			},
+			"hp-color-wounded": {
+				"name": "Badly Wounded Color",
+				"hint": "The color of the health bar for badly wounded characters."
+			},
+			"hp-label-dead": {
+				"name": "Dead Label",
+				"hint": "The label to display when a character is dead or unconscious."
+			},
+			"hp-color-dead": {
+				"name": "Dead Color",
+				"hint": "The color of the health bar for dead characters."
+			},
+			"hide-conditions": {
+				"name": "Hide Conditions",
+				"hint": "If enabled, condition icons will not be displayed next to the portraits."
+			},
+			"highlight-color": {
+				"name": "Highlight Color",
+				"hint": "The color of the border when a character is selected or hovered."
+			},
+			"actor-filter": {
+				"name": "Filter Actors by Name",
+				"hint": "Only show actors whose names match this comma-separated list. If empty, all owned characters on the scene are shown."
+			},
+			"show-background": {
+				"name": "Show Sidebar Background",
+				"hint": "If enabled, a dark gradient background will be shown behind the party sidebar."
+			},
+			"theme-style": {
+				"name": "HUD Theme Style",
+				"hint": "Choose the layout and style of the party HUD.",
+				"default": "Default (Arc & Fan)",
+				"standard": "Standard (Classic Grid)",
+				"persona": "Persona (Slanted P3)"
+			},
+			"persona-glow-strength": {
+				"name": "Persona Glow Intensity",
+				"hint": "Adjust the brightness and spread of the white glow effect in persona mode."
+			},
+			"persona-stagger": {
+				"name": "Stagger Persona HUD",
+				"hint": "If enabled, character portraits will be staggered horizontally in a staircase pattern. If disabled, they will be perfectly vertically aligned."
+			},
+			"sidebar-alignment": {
+				"name": "Sidebar Alignment",
+				"hint": "Choose which side of the screen the party sidebar should appear on.",
+				"left": "Left",
+				"right": "Right",
+				"top": "Top",
+				"bottom": "Bottom"
+			},
+			"sidebar-offset-x": {
+				"name": "Horizontal Offset (X)",
+				"hint": "Adjust the horizontal position of the sidebar (in pixels)."
+			},
+			"sidebar-offset-y": {
+				"name": "Vertical Offset (Y)",
+				"hint": "Adjust the vertical position of the sidebar (in pixels)."
+			},
+			"show-hover-details": {
+				"name": "Enable Hover Details",
+				"hint": "Show health and armor class details when hovering over a portrait."
+			},
+			"show-hover-hp": {
+				"name": "Show HP on Hover",
+				"hint": "Include current and maximum health in the hover details."
+			},
+			"show-hover-ac": {
+				"name": "Show AC on Hover",
+				"hint": "Include armor class in the hover details."
+			},
+			"show-inspiration": {
+				"name": "Show Inspiration / Hero Points",
+				"hint": "Display a glowing icon on the character portrait if they have inspiration (5e) or hero points (pf2e)."
+			},
+			"low-health-pulse": {
+				"name": "Low Health Pulse",
+				"hint": "If enabled, characters with low health will have a pulsing red aura around their portrait."
+			},
+			"enable-chat-bubbles": {
+				"name": "Enable Chat Bubbles",
+				"hint": "Display chat bubbles next to character portraits when they speak in chat."
+			},
+			"show-only-chat": {
+				"name": "Only Regular Chat",
+				"hint": "If enabled, only regular chat messages (OOC, IC, Emote, Whisper) will trigger chat bubbles, ignoring rolls and item usage."
+			},
+			"chat-bubble-duration": {
+				"name": "Chat Bubble Duration",
+				"hint": "How long (in seconds) the chat bubbles remain visible next to the portraits."
+			},
+			"sidebar-collapsed": {
+				"name": "Collapse Party UI",
+				"hint": "If enabled, the party UI collapses to a small handle on the edge of the screen and expands only when hovered."
+			},
+			"yugen-modifiers-integration": {
+				"name": "Show Token Hover Details",
+				"hint": "If yugen-modifiers is active, hovering over portraits will display the detailed token tooltip (health, gear, weapons, effects)."
+			},
+			"hide-in-combat": {
+				"name": "Hide During Combat",
+				"hint": "If enabled, the party HUD will be hidden when combat is active."
+			},
+			"chat-bubble-theme": {
+				"name": "Chat Bubble Theme",
+				"hint": "Choose the visual style for chat bubbles.",
+				"clean": "Clean & Modern",
+				"persona": "Persona (Jagged Comic)",
+				"fantasy": "Fantasy (Parchment Scroll)",
+				"scifi": "Sci-Fi (Neon Holo Screen)",
+				"gothic": "Gothic (Dark Metallic)"
+			},
+			"enable-custom-pause": {
+				"name": "Enable Custom Pause Screen",
+				"hint": "Display a stylized custom pause overlay when the game is paused."
+			},
+			"always-show-on-pause": {
+				"name": "Always Show When Paused",
+				"hint": "Automatically show the expanded custom pause overlay whenever the game is paused. If disabled, it starts collapsed."
+			},
+			"pause-stats-list": {
+				"name": "Pause Menu Stats",
+				"hint": "A comma-separated list of stats to show. Can use presets (str, dex, con, int, wis, cha, hp, ac) or custom syntax: 'Label:path.to.property:color-bar' (e.g. 'Mana:system.attributes.mana:int-bar')."
+			},
+			"resources-hide-ui": {
+				"name": "Hide Floating Bar",
+				"hint": "If enabled, the floating party resources bar is hidden."
+			},
+			"resources-opacity": {
+				"name": "UI Opacity",
+				"hint": "The transparency of the floating resources bar."
+			},
+			"resources-scale": {
+				"name": "UI Scale",
+				"hint": "The size of the floating resources bar."
+			},
+			"resources-offset-x": {
+				"name": "Horizontal Offset (X)",
+				"hint": "Horizontal position adjustment (in pixels) from the center."
+			},
+			"resources-offset-y": {
+				"name": "Vertical Offset (Y)",
+				"hint": "Vertical position adjustment (in pixels) from the bottom."
+			},
+			"resources-container-actor-id": {
+				"name": "Party Container",
+				"hint": "The name or ID of the shared party container (can be a Loot Actor, a Container Item, or a Token on the scene). If found, the backpack button opens its sheet; otherwise, it opens the resource viewer."
+			}
+		},
+		"config": {
+			"title": "yugen-party",
+			"action-title": "yugen-party-action",
+			"add-btn": "Add Resource",
+			"save-btn": "Save Resources",
+			"save-action-btn": "Save Action",
+			"label-placeholder": "Resource Label",
+			"icon-placeholder": "Icon class or image path (e.g., fas fa-coins)",
+			"value-placeholder": "Starting value",
+			"macro-label": "Click Macro",
+			"script-label": "Custom Click Script"
+		},
+		"viewer": {
+			"title": "yugen-party",
+			"view-all": "View all resources"
+		},
+		"chat": {
+			"updated": "<strong>{user}</strong> updated party resource <strong>{label}</strong>: {old} &rarr; {new} ({diff})"
+		}
+	}
+}

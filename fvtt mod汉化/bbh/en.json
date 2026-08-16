@@ -1,0 +1,157 @@
+{
+	"BBH": {
+		"COMMON": {
+			"All": "ALL",
+			"Unknown": "Unknown",
+			"None": "None",
+			"One": "1",
+			"RangeLow": "L",
+			"RangeHigh": "H"
+		},
+		"SETTINGS": {
+			"CreatureTypeTables": {
+				"Name": "Harvest Table Entries",
+				"Hint": "Stores Roll Table UUID entries mapped to creature types.",
+				"Menu": {
+					"Name": "Creature Type Tables",
+					"Label": "Assign Roll Tables",
+					"Hint": "Assign Roll Table UUIDs to creature types. Exact matches are preferred, then ALL is used as a fallback."
+				}
+			},
+			"AutoRollHarvest": {
+				"Name": "Fast Forward Harvest Checks",
+				"Hint": "If enabled, harvest skill checks skip the configuration dialog."
+			},
+			"AutoEnableQuantityOnNewTables": {
+				"Name": "Auto-Enable Quantity Data on New RollTables",
+				"Hint": "If enabled, newly created RollTables default to Quantity Data enabled."
+			},
+			"RollTableCompendium": {
+				"Name": "Preferred RollTable Folder",
+				"Hint": "Used as a fallback source when a row does not resolve to a RollTable compendium.",
+				"None": "Sidebar Rollable Tables"
+			},
+			"HarvestAttemptsBySize": {
+				"Name": "Max Harvest Attempts ({size})",
+				"Hint": "Maximum number of harvest checks allowed against a {size} creature before further attempts are blocked.",
+				"Menu": {
+					"Name": "Max Harvest Attempts by Size",
+					"Label": "Attempts per Size Menu",
+					"Hint": "Configure maximum harvest checks allowed for each D&D5e creature size.",
+					"HintWithDefaultBehavior": "Configure maximum harvest checks allowed for each D&D5e creature size. Leave a field empty to use that size default (DND5E numerical, minimum 1)."
+				},
+				"WindowTitle": "Configure Max Harvest Attempts"
+			},
+			"Debug": {
+				"Name": "Debug Logging",
+				"Hint": "Enable verbose BBH debug/info logs in the browser console."
+			}
+		},
+		"KEYBINDINGS": {
+			"OpenTablesModifier": {
+				"Name": "Open Harvester Tables Modifier",
+				"Hint": "Hold this key while clicking the Harvester token control button to open Creature Type Tables."
+			}
+		},
+		"SHEETS": {
+			"RollTable": {
+				"Label": "Bugbear's Harvester Roll Table"
+			},
+			"TableResult": {
+				"Label": "Bugbear's Harvester Table Result"
+			}
+		},
+		"TABLES": {
+			"WindowTitle": "Harvester Tables",
+			"Hint": "Add harvest table entries. Choose a creature type, or use ALL to share one table across all creature types. Drag a Roll Table into the UUID field.",
+			"HeaderType": "Creature Types",
+			"HeaderRollTable": "Roll Table",
+			"CustomType": "Custom",
+			"CustomTypeEdit": "Edit custom type",
+			"CustomTypeDisplay": "Custom: {value}",
+			"CustomTypePromptTitle": "Configure Custom Type",
+			"CustomTypePromptLabel": "Custom type key",
+			"CustomTypePromptHint": "Use a lowercase key. You can match subtype-specific entries using value:subtype (example: dragon:red, silver).",
+			"OpenTableSource": "Open Preferred Roll Table Folder",
+			"CreatureTypeAria": "Creature type",
+			"UuidPlaceholder": "Drop a Roll Table here or paste its UUID",
+			"OpenLinkedRollTable": "Open linked Roll Table",
+			"ClearInput": "Clear input",
+			"DeleteEntry": "Delete entry",
+			"AddTable": "Add Table",
+			"Save": "Save"
+		},
+		"ROLL_TABLE": {
+			"HarvestDataLabel": "Harvest Data",
+			"HarvestDataHint": "Expose harvest skill and DC fields on this Roll Table and allow it to be used for harvest resolution.",
+			"QuantityDataLabel": "Quantity Data",
+			"QuantityDataHint": "Expose quantity fields on this Roll Table for result rewards."
+		},
+		"RESULTS": {
+			"Skill": "Skill",
+			"Dc": "DC",
+			"Quantity": "Quantity",
+			"ApplySkillToAllAria": "Apply skill to all results",
+			"ApplySelectedSkillToAllAria": "Apply selected skill to all results"
+		},
+		"RESULT_CONFIG": {
+			"HarvestSkillLabel": "Harvest Skill",
+			"HarvestSkillHint": "Skill check required to harvest this result.",
+			"HarvestDcLabel": "Harvest DC",
+			"HarvestDcHint": "Difficulty class for the harvest check.",
+			"QuantityLabel": "Quantity",
+			"QuantityHint": "Fixed number or roll formula applied before the linked item is created.",
+			"DcPlaceholder": "10",
+			"QuantityPlaceholder": "1d4"
+		},
+		"CONTROLS": {
+			"GroupTitle": "Bugbear's Harvester",
+			"HarvestTarget": "Harvest Target",
+			"ResetHarvestedResults": "Reset Harvested Results",
+			"ConfigureTables": "Configure Tables"
+		},
+		"INFO": {
+			"ResetHarvestedResultsDone": "Reset harvested results on {count} / {total} actor(s)."
+		},
+		"WARN": {
+			"NoHarvestTableForType": "No harvest table is configured for creature type \"{creatureType}\".",
+			"HarvestTableNoResults": "Harvest table \"{tableName}\" returned no results.",
+			"ResultMissingSkillOrDc": "Result \"{resultName}\" on \"{tableName}\" is missing a harvest skill or DC.",
+			"ResultMissingItemLink": "Result \"{resultName}\" on \"{tableName}\" is not linked to an Item document.",
+			"SelectOne": {
+				"Actor": "Select a Token before attempting to harvest.",
+				"Target": "Select exactly one Target to harvest.",
+				"TargetActor": "This Targeted Token references an Actor which no longer exists within the World.",
+				"Creature": "This Targeted Token references an Actor which is not a Creature"
+			},
+			"HarvestPayloadUnresolved": "The harvest request could not be resolved from its stored data.",
+			"TargetMustBeAtZeroHp": "Target must have 0 HP or less to be harvested.",
+			"NoHarvestableResultsRemaining": "No harvestable results remain for this target and table.",
+			"HarvestTableMissingResultConfig": "Harvest table \"{tableName}\" has no usable results: missing {details}. Configure BBH result Skill/DC flags on table results.",
+			"HarvestAttemptsReached": "{targetName} cannot be harvested again. Maximum attempts reached ({maxAttempts}).",
+			"MissingSkillLabel": "Skill",
+			"MissingDcLabel": "DC",
+			"DropRollTable": "Drop a Roll Table document here.",
+			"TableNameOrUuidNotResolved": "Value did not resolve to a Roll Table UUID or exact table name.",
+			"UuidNotRollTable": "UUID did not resolve to a Roll Table.",
+			"SelectTargetsOrControlledForReset": "Select token(s) and/or target token(s) to reset harvested results."
+		},
+		"CHAT": {
+			"RollFlavor": "{actorName} harvests {targetName}",
+			"HarvestAttemptTitle": "Harvest Attempt",
+			"AttemptBody": "{actorName} is harvesting {targetName}.",
+			"TableLine": "Table: {tableName}",
+			"ResultLine": "Result: {resultName}",
+			"CheckLine": "Check: {skillLabel} vs DC {dc}",
+			"SelectSkillPrompt": "Choose a skill check to attempt harvest:",
+			"RollHarvestCheck": "Roll Harvest Check",
+			"UnnamedResult": "Unnamed Result",
+			"HarvestResultFallback": "Harvest Result",
+			"HarvestSucceeded": "Harvest Succeeded",
+			"HarvestFailed": "Harvest Failed",
+			"OutcomeBody": "{actorName} harvested {targetName} ({creatureType}).",
+			"CheckResultLine": "Check: {skillLabel} {total}",
+			"RewardLine": "Reward: {rewardName}"
+		}
+	}
+}

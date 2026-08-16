@@ -1,4 +1,5 @@
-{"ASSET_LIBRARIAN": {
+{
+  "ASSET_LIBRARIAN": {
     "Title": "资源浏览器",
     "WindowTitle": {
       "WorldView": "资源浏览器 - 世界视图",
@@ -41,8 +42,7 @@
     },
     "Filters": {
       "Title": "过滤",
-      "ResetAll": "重置所有过滤",
-      "UnavailableInCompendium": "合集索引中自定义字段不可用"
+      "ResetAll": "重置所有过滤"
     },
     "ViewMode": {
       "List": "列表",
@@ -54,24 +54,28 @@
     "Buttons": {
       "ShowDuplicates": "显示重复项",
       "Refresh": "刷新",
-      "RefreshImages": "刷新图像",
+      "RefreshImages": "刷新媒体",
+      "RefreshMediaFolder": "刷新此媒体文件夹",
       "Scanning": "扫描中...",
-      "ConfigureImagePaths": "配置图像路径",
+      "ConfigureImagePaths": "配置媒体路径",
       "ConfigureCompendiums": "配置合集",
       "ConfigureCategories": "配置分类",
       "ConfigureTagGroups": "配置标签组",
       "BulkEditTags": "批量编辑标签",
       "BulkSelectMode": "批量选择模式",
-	  "BulkSelectNone": "全不选",
-	  "BulkSelectAll": "全选",
+      "BulkSelectNone": "全不选",
+      "BulkSelectAll": "全选",
       "BulkClearSelection": "清除批量选择",
       "BulkEditSelected": "编辑选中标签",
       "ConfigureCustomFilters": "配置自定义过滤",
       "SendToPlayer": "发送给玩家",
       "CreateTile": "创建图块",
       "SetBackground": "设为背景",
+      "PlayPreview": "播放预览",
+      "StopPreview": "停止预览",      
       "CreateScene": "创建场景",
-	  "CopyPath": "复制路径",
+      "CopyPath": "复制路径",
+      "CreateHoldingScene": "创建暂存场景",
       "ShowFolder": "显示文件夹",
       "OpenCompendium": "打开合集"
     },
@@ -82,20 +86,25 @@
     "Categories": {
       "All": "全部",
       "Images": "图片",
-	  "Audio": "音频",
-	  "Video": "视频"
+      "Audio": "音频",
+      "Video": "视频"
     },
-	 "AudioPreview": {
-		"NowPlaying": "正在预览",
-		"Stop": "停止"
-	  },
+    "AudioPreview": {
+      "NowPlaying": "正在预览",
+      "Stop": "停止"
+    },
     "Notifications": {
       "ItemNotFound": "物品未找到",
       "AssetDeleted": "已删除 {name}",
       "ImagesFound": "找到 {count} 个扫描的资源",
-  "AssetFolderPath": "{name} 位于 {folder}",
-  "AssetPathCopied": "已复制资源路径：{path}",
-  "AssetPathCopyFailed": "无法将资源路径复制到剪贴板。"
+      "AssetFolderPath": "{name} 位于 {folder}",
+      "AssetPathCopied": "已复制资源路径：{path}",
+      "AssetPathCopyFailed": "无法将资源路径复制到剪贴板。",
+      "PortraitUpdated": "已更新 {name} 的头像。",
+      "PortraitNoPermission": "你没有权限更新此角色的立绘。",
+      "PortraitUpdateFailed": "无法更新 {name} 的头像。",
+      "TokenUpdated": "已更新 {name} 的原型 Token 图像。",
+      "TokenUpdateFailed": "无法更新 {name} 的原型 Token 图像。"
     },
     "Welcome": {
       "Title": "欢迎使用Asset Librarian",
@@ -124,6 +133,14 @@
         "Name": "自定义分类组",
         "Hint": "可选的逗号分隔额外分类组，用于物品浏览（例如：圣物、配方）。名称必须唯一且不能重用内置组名。"
       },
+      "RecycleHoldingScene": {
+        "Name": "复用暂存场景",
+        "Hint": "启用后，创建暂存场景会替换先前创建的暂存场景的背景和尺寸，而不是创建新场景。"
+      },
+      "RecycleHoldingSceneUuid": {
+        "Name": "复用暂存场景 UUID",
+        "Hint": "内部设置，存储「创建暂存场景」复用的世界场景。"
+      },      
       "TagRegistry": {
         "Name": "标签注册表",
         "Hint": "资源浏览器分类/过滤标签的内部自动完成缓存。"
@@ -157,15 +174,15 @@
         "Hint": "在扫描中包含世界级资源。"
       },
       "EnableImageScanning": {
-        "Name": "启用图像扫描",
-        "Hint": "启用图像标签页以扫描图像和视频文件。"
+        "Name": "启用媒体扫描",
+        "Hint": "启用媒体标签页以扫描图片和视频文件。"
       },
-	  "EnableAudioScanning": {
-		"Name": "启用音频扫描",
-		"Hint": "在图像标签页扫描中包含音频和音乐文件。"
-	  },
+      "EnableAudioScanning": {
+        "Name": "启用音频扫描",
+        "Hint": "在图像标签页扫描中包含音频和音乐文件。"
+      },
       "IncludeWorldPath": {
-        "Name": "包含世界图像",
+        "Name": "包含世界媒体",
         "Hint": "扫描世界目录中的媒体文件。"
       },
       "FilterCollapsed": {
@@ -181,7 +198,7 @@
         "Hint": "选择文件夹时，包含所有嵌套子文件夹的内容。"
       },
       "ImageScanPaths": {
-        "Name": "图像扫描路径",
+        "Name": "媒体扫描路径",
         "Hint": "逗号分隔的媒体文件扫描路径列表。"
       },
       "ViewMode": {
@@ -189,8 +206,8 @@
         "Hint": "资源在网格中的显示方式。"
       },
       "UseDiskThumbnailCache": {
-        "Name": "使用磁盘缓存（图像）",
-        "Hint": "将图像缩略图持久化到磁盘缓存。磁盘缓存需要手动清除。"
+        "Name": "使用磁盘缓存（媒体）",
+        "Hint": "将媒体缩略图持久化到磁盘缓存。磁盘缓存需要手动清除。"
       },
       "UseDiskScenePreviewCache": {
         "Name": "使用磁盘缓存（场景预览）",
@@ -321,6 +338,11 @@
       "PlaceholderFilters": "...",
       "None": "无",
       "Add": "添加",
+      "CleanUnusedCategory": "清理未使用的分类标签",
+      "CleanUnusedFilters": "清理未使用的过滤标签",
+      "CleanUnusedNone": "未找到未使用的标签。",
+      "CleanUnusedCategorySummary": "已移除 {count} 个未使用的分类标签。",
+      "CleanUnusedFilterSummary": "已移除 {count} 个未使用的过滤标签。",
       "RegistryCategoryList": "已知分类标签",
       "RegistryFilterList": "已知过滤标签",
       "Save": "保存",
@@ -343,18 +365,22 @@
       "BulkNoEditable": "当前结果中没有可编辑的文档。",
       "BulkNoSelected": "没有选中的文档可编辑。",
       "BulkNoChanges": "未指定批量更改。",
+      "BulkProgressLabel": "批量编辑（{pct}%）",
       "BulkSummary": "批量标签完成：{updated} 个已更新，{failed} 个失败，{skipped} 个跳过。",
       "NoPermission": "你没有权限编辑此文档的标签。",
       "InvalidDocument": "无法加载此文档进行标签编辑。"
     },
     "Images": {
-      "DialogTitle": "配置图像路径",
+      "DialogTitle": "配置媒体路径",
       "EnterPaths": "输入要扫描的路径：",
       "RelativeHint": "路径相对于 Foundry 的数据目录。",
       "Browse": "浏览",
       "Save": "保存",
       "Cancel": "取消",
-      "Updated": "图像路径已更新"
+      "Updated": "媒体路径已更新",
+      "ScanStarting": "开始媒体扫描…",
+      "ScanProgress": "正在扫描路径 {current}/{total}：{path} · {folders} 个文件夹 · {assets} 个媒体",
+      "ScanSaving": "正在保存媒体索引…"
     },
     "Helpers": {
       "ConfirmDefault": "你确定吗？",

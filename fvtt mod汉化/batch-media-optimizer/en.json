@@ -1,0 +1,114 @@
+{
+  "BMO": {
+    "menu": {
+      "name": "Batch Media Optimizer",
+      "label": "Open Optimizer",
+      "hint": "Scan the world and convert images to WebP (and video to WebM), then repoint references."
+    },
+    "settings": {
+      "quality": {
+        "name": "WebP quality",
+        "hint": "Lossy WebP quality from 0.3 to 1.0. Higher keeps more detail at a larger size. Used by both backfill and upload-time conversion."
+      },
+      "maxDimension": {
+        "name": "Max dimension (px)",
+        "hint": "Downscale images and video whose longest edge exceeds this many pixels. 0 disables downscaling. WebP's hard limit is 16383px."
+      },
+      "losslessPngAlphaUnder": {
+        "name": "Lossless PNG-alpha under (px)",
+        "hint": "PNGs with transparency whose longest edge is under this size are encoded losslessly (good for tokens/icons). 0 disables."
+      },
+      "videoQuality": {
+        "name": "Video quality",
+        "hint": "VP9 quality from 0.3 to 1.0, mapped to a bits-per-pixel bitrate target. Higher keeps more detail at a larger size. Used for MP4/MOV → WebM conversion during backfill."
+      },
+      "audioQuality": {
+        "name": "Audio quality",
+        "hint": "Opus quality from 0.3 to 1.0, mapped to a bitrate target. Higher keeps more detail at a larger size. Used for audio → Ogg/Opus conversion during backfill."
+      },
+      "uploadOptimize": {
+        "name": "Optimize on upload",
+        "hint": "Automatically convert PNG/JPG images to WebP as they are uploaded through Foundry."
+      },
+      "includeItems": {
+        "name": "Include item art",
+        "hint": "Also optimize world item images and actor-owned item images during backfill."
+      },
+      "includeImages": {
+        "name": "Include images",
+        "hint": "Convert PNG/JPG images to WebP during backfill. Untick (with video on) for a video-only pass."
+      },
+      "includeVideo": {
+        "name": "Include video",
+        "hint": "Also convert MP4/MOV video (scene backgrounds, video tiles, animated tokens) to WebM during backfill. Encoding is much slower than images; audio is dropped."
+      },
+      "includeAudio": {
+        "name": "Include audio",
+        "hint": "Also convert audio (playlist sounds, scene ambient sounds) to Ogg/Opus during backfill. Note: Ogg plays in Foundry's client and Chrome/Firefox, but not Safari."
+      },
+      "includePackages": {
+        "name": "Convert module/system assets (risky)",
+        "hint": "Off by default. When on, linked media under modules/ and systems/ is also converted during backfill. A package update can overwrite the original and remove the converted twin, breaking the reference. Only document-linked media is touched; core Foundry assets are never converted."
+      }
+    },
+    "app": {
+      "title": "Batch Media Optimizer",
+      "scopeLegend": "What to scan",
+      "scopeScenes": "Scenes (backgrounds, tiles, tokens, drawings, notes)",
+      "scopeActors": "Actors (portraits, prototype tokens)",
+      "scopeJournal": "Journals (image pages, embedded images)",
+      "scopeItems": "Item art",
+      "mediaLegend": "Media types",
+      "mediaImages": "Images (PNG/JPG → WebP)",
+      "mediaVideo": "Video (MP4/MOV → WebM, slow)",
+      "mediaAudio": "Audio (MP3/WAV/… → Ogg/Opus)",
+      "mediaHint": "Untick types to run a subset — e.g. images off + audio on for an audio-only pass.",
+      "scopePackages": "Also convert module/system assets (at your own risk)",
+      "packagesHint": "Off by default. When on, linked media shipped under modules/ and systems/ is also converted. Risk: a module/system update can overwrite the original and remove the converted twin, breaking the reference. Only linked media is touched; core Foundry assets are never converted.",
+      "convertLegend": "Conversion options",
+      "videoNote": "Video re-encoding (VP9) is hardware-accelerated but still far slower than images — expect seconds to minutes per clip. Audio is dropped.",
+      "audioNote": "Audio is re-encoded to Opus and wrapped in Ogg. Best efficiency and broad support; not playable in Safari.",
+      "working": "Working…",
+      "statConverted": "to convert",
+      "statSkipped": "already optimized",
+      "statErrors": "errors",
+      "statDocs": "doc updates",
+      "statSaved": "saved",
+      "fileListSummary": "Per-file plan",
+      "selectAll": "Select all / none",
+      "colFile": "File",
+      "colStatus": "Status",
+      "colSource": "Source",
+      "colOutput": "Optimized",
+      "colSaved": "Saved",
+      "repointFailTitle": "Document updates that didn't apply",
+      "repointFailHint": "The optimized file was written, but these document fields could not be repointed (the write was rejected or silently ignored). Their references still point at the original. Re-link manually, or report the field name shown.",
+      "cleanupTitle": "Orphaned originals",
+      "cleanupHint": "These originals now have an optimized twin and are no longer referenced. Foundry has no file-delete API, so remove them manually once you have verified the world.",
+      "btnScan": "Scan & dry-run",
+      "btnApply": "Apply (convert + repoint)",
+      "btnCancel": "Cancel",
+      "btnCleanup": "Cleanup report",
+      "btnReset": "Reset",
+      "confirmTitle": "Apply optimization?",
+      "confirmBody": "This will upload optimized copies (WebP/WebM) and update document references. Take a fresh world backup first. Originals are kept. Proceed?",
+      "applyDone": "Optimized {n} files, saved {saved}.",
+      "cancelled": "Run cancelled. Already-written files were kept.",
+      "skippedNote": "{n} reference(s) skipped (read-only or unsupported backend) — see console.",
+      "error": "Optimizer error: {msg}"
+    },
+    "phase": {
+      "convert": "Converting",
+      "repoint": "Updating references"
+    },
+    "status": {
+      "pending": "pending",
+      "uploaded": "converted",
+      "converted-dry": "will convert",
+      "estimated-dry": "will convert (est.)",
+      "skipped-existing": "already optimized",
+      "skipped-larger": "kept (output larger)",
+      "error": "error"
+    }
+  }
+}

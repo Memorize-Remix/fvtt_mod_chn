@@ -1,0 +1,349 @@
+{
+  "AFK_TAVERN": {
+    "title": "AFK Tavern",
+    "playerList": {
+      "startBreak": "Open Tavern",
+      "endBreak": "End Break",
+      "startSession": "Start Session"
+    },
+    "settings": {
+      "enableMusicControls": {
+        "name": "Enable Music Controls",
+        "hint": "Show music playback controls and the now-playing banner in the break room window. GM only setting."
+      },
+      "breakPlaylist": {
+        "name": "Break Playlist",
+        "hint": "Choose a playlist to play during breaks. Currently playing music will pause and resume after.",
+        "none": "None"
+      },
+      "spectate": {
+        "name": "Allow Spectating",
+        "hint": "When enabled, players can watch each other's minigames during breaks."
+      },
+      "showOfflinePlayers": {
+        "name": "Show Offline Players",
+        "hint": "Display offline players in the break room with a greyed-out card so you can see who hasn't connected yet."
+      },
+      "startMinimized": {
+        "name": "Start Tavern Minimized",
+        "hint": "When a break starts, show only the compact timer bar instead of the full window."
+      },
+      "minimizeDuringActivity": {
+        "name": "Minimize During Activity",
+        "hint": "Minimize the break room window while playing a game or spectating, and restore it when the activity ends.",
+        "disabled": "Disabled",
+        "game": "Games Only",
+        "spectate": "Spectating Only",
+        "both": "Games & Spectating"
+      },
+      "audioSettings": {
+        "name": "Sound Effects",
+        "label": "Configure Sounds",
+        "hint": "Choose custom audio files for break events."
+      },
+      "playerSettings": {
+        "name": "Player Visibility",
+        "label": "Configure Players",
+        "hint": "Choose which players appear in the Tavern Patrons list during breaks."
+      },
+      "gameSettings": {
+        "name": "Games Configuration",
+        "label": "Configure Games",
+        "hint": "Enable or disable the games tab and individual minigames."
+      }
+    },
+    "settingsApp": {
+      "save": "Save Changes",
+      "audio": {
+        "title": "AFK Tavern - Sound Effects",
+        "description": "Customise the audio played during break events. Leave blank to use the default."
+      },
+      "players": {
+        "title": "AFK Tavern - Player Visibility",
+        "description": "Control which users appear in the Tavern Patrons list. Hidden players won't be tracked during breaks.",
+        "playerListHint": "Uncheck a player to hide them from the tavern. Useful for spectator accounts or assistant GMs."
+      },
+      "games": {
+        "title": "AFK Tavern - Games",
+        "description": "Control which games are available in the break room.",
+        "enableGamesTab": "Enable Games Tab",
+        "enableGamesTabHint": "When disabled, the games drawer tab is completely hidden from the break room.",
+        "gameListHint": "Uncheck a game to hide it from the drawer. Disabled games cannot be launched."
+      },
+      "soundBreakStart": {
+        "name": "Break Start",
+        "hint": "Played when a break begins."
+      },
+      "soundBreakEnd": {
+        "name": "Break End",
+        "hint": "Played when a break ends or the timer runs out."
+      },
+      "soundBreakCountdown": {
+        "name": "Countdown",
+        "hint": "Played at 10 seconds remaining."
+      },
+      "soundBreakNotify": {
+        "name": "Bell Notification",
+        "hint": "Played when the GM rings the bell."
+      },
+      "browse": "Browse",
+      "preview": "Preview"
+    },
+    "controls": {
+      "startBreak": "AFK Tavern - Open Tavern"
+    },
+    "banner": {
+      "title": "AFK Tavern",
+      "subtitle": "☕ Take a breather, adventurer"
+    },
+    "timer": {
+      "durationLabel": "Duration (minutes)",
+      "endTimeLabel": "End Time",
+      "waiting": "Waiting for the GM to start break...",
+      "breakEndsIn": "BREAK ENDS IN"
+    },
+    "lobby": {
+      "label": "Pre-Session Lobby",
+      "hint": "Players join as Ready instead of Away. Use before a session to wait for everyone.",
+      "sessionStartsIn": "SESSION STARTS IN",
+      "startSession": "Start Session",
+      "ready": "Ready",
+      "notReady": "Not Ready",
+      "statusReady": "Ready",
+      "statusNotReady": "Not Ready",
+      "allReady": "ALL READY!"
+    },
+    "buttons": {
+      "startBreak": "Open Tavern",
+      "resumeSession": "Resume Session",
+      "notifyPlayers": "Ring Bell - Get Players' Attention",
+      "imBack": "I'm Back!",
+      "stepAway": "Step Away"
+    },
+    "players": {
+      "heading": "Tavern Patrons",
+      "statusBack": "Back",
+      "statusAway": "Away",
+      "statusOffline": "Offline",
+      "statusPlaying": "Playing {game}",
+      "gmBadge": "GM",
+      "allBack": "All Back!",
+      "allPlayersBack": "All Players Back"
+    },
+    "minigames": {
+      "heading": "Tavern Games",
+      "subtitle": "Just for fun, no rewards here!",
+      "highscores": "Highscores",
+      "noHighscores": "No highscores recorded yet.",
+      "music": {
+        "play": "Play Music",
+        "pause": "Pause Music",
+        "prev": "Previous Track",
+        "next": "Next Track"
+      },
+      "classicHeading": "Classic Games",
+      "premiumHeading": "Premium Module Games",
+      "multiplayerHeading": "Multiplayer",
+      "settingsTitle": "{game} - Settings",
+      "difficultyLabel": "Difficulty",
+      "practiceNote": "Just for fun, no rewards during break time!",
+      "play": "Play!",
+      "playing": "Playing",
+      "cancel": "Cancel",
+      "custom": "Custom",
+      "widthLabel": "Width",
+      "heightLabel": "Height",
+      "comingSoonLabel": "More Coming Soon",
+      "comingSoonDesc": "New minigames are in the works!",
+      "inviteExpired": "Challenge expired. No response received.",
+      "waitingFor": "Waiting for {name}...",
+      "opponent": "Opponent"
+    },
+    "notifications": {
+      "breakStarted": "Break time! The AFK Tavern is now open.",
+      "lobbyStarted": "Pre-session lobby is open! Waiting for players.",
+      "breakEnded": "Break's over! Back to the adventure.",
+      "sessionStarted": "Session is starting! Let's go!",
+      "allBack": "All players are back! Ready to resume.",
+      "allReady": "All players are ready! Good to go.",
+      "timerExpired": "Break timer has expired!",
+      "bellRing": "The GM wants your attention!",
+      "duplicateTab": "AFK Tavern is already open in another tab. Using multiple tabs may cause unexpected behaviour."
+    },
+    "dialog": {
+      "endEarlyTitle": "End Break Early?",
+      "endEarlyContent": "Not all players are back yet. End break anyway?",
+      "lobbyEndEarlyTitle": "Start Session Early?",
+      "lobbyEndEarlyContent": "Not all players are ready yet. Start the session anyway?",
+      "closeTitle": "Break In Progress",
+      "closeContent": "A break is still running. Would you like to end it or just minimize the window?",
+      "closeEnd": "End Break",
+      "closeMinimize": "Minimize",
+      "confirmContent": "A break is still running. Would you like to end it?",
+      "lobbyCloseTitle": "Lobby In Progress",
+      "lobbyCloseContent": "The pre-session lobby is still open. Would you like to start the session or just minimize the window?",
+      "lobbyCloseEnd": "Start Session",
+      "lobbyConfirmContent": "The pre-session lobby is still open. Would you like to start the session?"
+    },
+    "memoryMatch": {
+      "title": "Memory Match",
+      "description": "Flip cards and find matching pairs. Remember what you've seen to clear the board!",
+      "moves": "Moves",
+      "time": "Time",
+      "pairs": "Pairs",
+      "victory": "Well Played!",
+      "victoryStats": "{moves} moves in {time}",
+      "playAgain": "Play Again",
+      "newGame": "New Game"
+    },
+    "ticTacToe": {
+      "title": "Tic Tac Toe",
+      "description": "Challenge another player to a classic game of Tic Tac Toe!",
+      "vs": "vs",
+      "yourTurn": "Your turn!",
+      "opponentTurn": "Waiting for opponent...",
+      "youWin": "🎉 You win!",
+      "youLose": "You lose!",
+      "draw": "It's a draw!",
+      "rematch": "Rematch",
+      "score": "Score",
+      "selectOpponent": "Choose a player to challenge.",
+      "opponent": "Opponent",
+      "sendInvite": "Send Challenge",
+      "inviteTitle": "Tic Tac Toe Challenge",
+      "inviteMessage": "challenges you to Tic Tac Toe!",
+      "inviteSent": "Challenge sent to",
+      "inviteDeclined": "declined your challenge.",
+      "accept": "Accept",
+      "decline": "Decline",
+      "noPlayers": "No other players online to challenge.",
+      "playerBusy": "is already playing a game.",
+      "busyWarning": "This player is already in a game. They may not want to be disturbed.",
+      "opponentLeft": "has left the game."
+    },
+    "connectFour": {
+      "title": "Connect Four",
+      "description": "Drop pieces to connect four in a row: horizontally, vertically, or diagonally!",
+      "vs": "vs",
+      "yourTurn": "Your turn!",
+      "opponentTurn": "Waiting for opponent...",
+      "youWin": "🎉 You win!",
+      "youLose": "You lose!",
+      "draw": "It's a draw!",
+      "rematch": "Rematch",
+      "selectOpponent": "Choose a player to challenge.",
+      "opponent": "Opponent",
+      "sendInvite": "Send Challenge",
+      "inviteTitle": "Connect Four Challenge",
+      "inviteMessage": "challenges you to Connect Four!",
+      "inviteSent": "Challenge sent to",
+      "inviteDeclined": "declined your challenge.",
+      "accept": "Accept",
+      "decline": "Decline",
+      "noPlayers": "No other players online to challenge.",
+      "playerBusy": "is already playing a game.",
+      "busyWarning": "This player is already in a game. They may not want to be disturbed.",
+      "opponentLeft": "has left the game."
+    },
+    "spectate": {
+      "spectating": "Spectating",
+      "watching": "Watching",
+      "requesting": "Requesting to spectate",
+      "ended": "The game you were spectating has ended.",
+      "title": "Spectating",
+      "playerTurn": "{name}'s turn",
+      "playerWins": "🎉 {name} wins!",
+      "draw": "Draw!",
+      "vs": "vs",
+      "allMatched": "All Matched!"
+    },
+    "whackAMole": {
+      "title": "Whack-a-Mole",
+      "description": "Click targets as they pop up to score points. Hit the good ones, avoid the bad!",
+      "score": "Score",
+      "best": "Best",
+      "time": "Time",
+      "start": "Start Bashing!",
+      "gameOver": "Time's Up!",
+      "tryAgain": "Try Again",
+      "mimicHint": "👹 Mimics = 1pt | 💰 Chests = 3pts | 🐱 Cats = -2pts",
+      "streak": "x{count} Streak!",
+      "streakBonus": "🔥 x{count} Streak! +{bonus}"
+    },
+    "minesweeper": {
+      "title": "Minesweeper",
+      "description": "Reveal tiles without hitting a mine. Use the numbers to deduce where the dangers are hiding. Right-click to flag.",
+      "mines": "Mines",
+      "flags": "Flags",
+      "time": "Time",
+      "victory": "Board Cleared!",
+      "defeat": "You hit a mine!",
+      "newGame": "New Game"
+    },
+    "simonSays": {
+      "title": "Simon Says",
+      "description": "Watch the colour sequence, then repeat it from memory. Each round adds another colour!",
+      "round": "Round",
+      "best": "Best",
+      "watch": "Watch the sequence...",
+      "yourTurn": "Your turn!",
+      "start": "Start",
+      "gameOver": "Wrong colour!",
+      "tryAgain": "Try Again"
+    },
+    "wordScramble": {
+      "title": "Word Scramble",
+      "description": "Unscramble the letters to spell the hidden word. Use hints if you're stuck!",
+      "score": "Score",
+      "best": "Best",
+      "solved": "Solved",
+      "hint": "Hint",
+      "skip": "Skip",
+      "submit": "Submit",
+      "placeholder": "Type your guess...",
+      "wrong": "That's not it, try again!"
+    },
+    "monsterHarvester": {
+      "title": "Monster Harvester",
+      "description": "Harvest falling loot! Click items as they rain down. Avoid skulls, bombs, and frost traps! Try the full module for the real experience!",
+      "instructions": "Items will rain down. Click to harvest them! Avoid hazards: skulls steal harvests, bombs obscure vision, frost freezes you.",
+      "start": "Start Harvesting!",
+      "hint": "Click empty space = strike. Miss an item = strike. Don't run out!",
+      "harvested": "harvested",
+      "remaining": "remaining",
+      "newGame": "Play Again",
+      "importMH": "⬇ Import Table Settings",
+      "gradePerfect": "⭐ Perfect!",
+      "gradeGreat": "🎉 Great!",
+      "gradeNotBad": "👍 Not bad!",
+      "gradeTryAgain": "💀 Try again!",
+      "config": {
+        "itemCount": "Item Count",
+        "baseSpeed": "Fall Speed",
+        "hazardRatio": "Hazard Ratio",
+        "maxStrikes": "Max Strikes",
+        "advancedHazards": "Advanced Hazards (💣 + ❄️)"
+      },
+      "hazardDecoy": "Rotten Offal",
+      "hazardBomb": "Volatile Reagent",
+      "hazardFreeze": "Frozen Aura"
+    },
+    "highscores": {
+      "journalName": "AFK Tavern - Highscores",
+      "top": "Top {count}",
+      "personalBests": "{difficulty} - Personal Bests",
+      "lowerIsBetter": "(lower is better)",
+      "noWins": "No wins recorded yet.",
+      "noScores": "No scores recorded yet.",
+      "rank": "#",
+      "player": "Player",
+      "wins": "Wins",
+      "date": "Date",
+      "moves": "Moves",
+      "timeSeconds": "Time (s)",
+      "rounds": "Rounds",
+      "score": "Score",
+      "harvested": "Harvested"
+    }
+  }
+}

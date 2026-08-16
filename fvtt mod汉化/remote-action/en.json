@@ -1,0 +1,74 @@
+{
+  "REMOTE_ACTION": {
+    "Common": {
+      "Yes": "Yes",
+      "No": "No"
+    },
+    "Notifications": {
+      "ItemUseSent": "Remote Action: item use request sent for {item}.",
+      "ItemUseDialogSent": "Remote Action: item use dialog sent to the central screen for {item}.",
+      "ItemUseDirectWorkflowSent": "Remote Action: item use workflow started on the central screen for {item}.",
+      "ItemUseFailed": "Remote Action: failed to send {item} ({reason})."
+    },
+    "Roles": {
+      "Player": "Player",
+      "Trusted": "Trusted Player",
+      "Assistant": "Assistant GM",
+      "Gamemaster": "Gamemaster",
+      "Unknown": "Unknown"
+    },
+    "Settings": {
+      "NoUser": "No user",
+      "NoRelevantUsers": "No player user is available for Remote Action.",
+      "UserConfiguration": {
+        "Name": "User configuration",
+        "Hint": "Open the dedicated window to choose the primary receiver and authorized senders.",
+        "Label": "Configure",
+        "Title": "Remote Action - Users",
+        "Description": "Choose a single primary receiver and check the authorized senders."
+      },
+      "Columns": {
+        "Name": "Name",
+        "Role": "Role",
+        "Connected": "Connected",
+        "PrimaryReceiver": "Primary receiver",
+        "AuthorizedSender": "Authorized sender"
+      },
+      "PrimaryReceiver": {
+        "Name": "Primary receiver",
+        "Hint": "Internal user configured through the dedicated Remote Action window."
+      },
+      "AuthorizedSenders": {
+        "Name": "Authorized senders",
+        "Hint": "Internal users configured through the dedicated Remote Action window."
+      },
+      "Debug": {
+        "Name": "Debug mode",
+        "Hint": "Enable additional console logs."
+      },
+      "EmitterNotifications": {
+        "Name": "Emitter-side notifications",
+        "Hint": "Show local feedback on the emitter client when open-item-use-dialog is successfully relayed or fails."
+      },
+      "UseAttackRolls": {
+        "Name": "Use Foundry attack rolls",
+        "Hint": "Preparatory setting for later. Does not change the real workflow yet."
+      },
+      "UseDamageRolls": {
+        "Name": "Use Foundry damage rolls",
+        "Hint": "Preparatory setting for later. Does not change the real workflow yet."
+      },
+      "UseSaveRolls": {
+        "Name": "Use Foundry saving throws",
+        "Hint": "Preparatory setting for later. Does not change the real workflow yet."
+      },
+      "AutoInterceptItemUse": {
+        "Name": "Intercept item use from actor sheet",
+        "Hint": "Enabled by default for authorized senders. Allows a local override to disable automatic interception of DnD5e item use from the actor sheet."
+      }
+    },
+    "Errors": {
+      "Dnd5eOnly": "Remote Action only works with the DnD5e system."
+    }
+  }
+}

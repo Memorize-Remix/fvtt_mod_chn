@@ -1,0 +1,28 @@
+{
+	"TOKEN_DEFAULTS.SETTINGS": {
+		"MENU": {
+			"Name": "Configure Defaults",
+			"Label": "Configure Defaults",
+			"Title": "Token Defaults Configuration",
+			"Reset": "Delete All",
+			"Submit": "Submit",
+			"Hint": "These Settings apply to all types of Actors. If an Actor type also has one of those settings specified, the specific one will be prioritized.",
+			"Confirm": {
+				"Label": "Reset Defaults",
+				"Warning": "This will remove all configured Token Defaults"
+			}
+		},
+		"TOKEN_CREATE": {
+			"Name": "Tokens",
+			"Hint": "Apply the Defaults to newly created Tokens. The \"Append Number\" and \"Prepend Adjective\" Settings do not exist on Tokens and are ignored."
+		},
+		"ACTOR_CREATE": {
+			"Name": "Prototype Tokens",
+			"Hint": "Apply the Defaults to the Prototype Tokens of newly created Actors."
+		},
+		"COMPENDIUM": {
+			"Name": "Compendium Actors",
+			"Hint": "Apply the Defaults to the Prototype Tokens of newly created Actors in compendiums. This only works if the \"Prototype Tokens\" Setting is enabled too."
+		}
+	}
+}

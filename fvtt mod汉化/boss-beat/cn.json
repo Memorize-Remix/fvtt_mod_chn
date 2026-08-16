@@ -1,0 +1,51 @@
+{
+  "BOSSBEAT": {
+    "WindowTitle": "Boss Beat：{name}",
+    "Message": "名称",
+    "SubText": "副文本",
+    "BarStyle": "Boss 条样式",
+    "NoStyle": "— 无 —",
+    "SplashOnly": "仅开场画面，无 Boss 条",
+    "SplashOnlyHint": "显示开场画面并揭示 Token，但不将此 Boss 放入 Boss 条。上方的条样式仍会设置开场画面的字体。",
+    "OutroPlaylist": "歌曲结束后的播放列表",
+    "NoOutroPlaylist": "— 无 —",
+    "OutroPlaylistHint": "当 Boss 曲目结束或你点击停止后，将开始播放此播放列表。Boss 曲目一开始播放，原本正在播放的播放列表曲目就会被暂停（而非停止）。",
+    "Song": "歌曲",
+    "NoSong": "未选择歌曲",
+    "ChooseFile": "选择文件",
+    "SetMarker": "在此设置标记",
+    "Marker": "标记：{time}",
+    "Save": "保存 Boss Beat",
+    "SelectOneToken": "Boss Beat：请先精确选择一个 Boss Token。",
+    "NoActor": "Boss Beat：所选 Token 没有角色。",
+    "AlreadySaved": "已为 {name} 保存过 Boss Beat。你想怎么做？",
+    "AlreadySavedTitle": "Boss Beat：{name}",
+    "Run": "运行",
+    "Edit": "编辑",
+    "Delete": "删除",
+    "Cancel": "取消",
+    "ConfirmDeleteTitle": "删除 Boss Beat",
+    "ConfirmDelete": "删除为 {name} 保存的 Boss Beat？此操作无法撤销。",
+    "Deleted": "Boss Beat：已删除为 {name} 保存的 Boss Beat。",
+    "Saved": "已为 {name} 保存 Boss Beat。",
+    "PickSongFirst": "Boss Beat：保存前请先选择歌曲。",
+    "PlaybackError": "Boss Beat：无法播放「{path}」。请检查文件是否仍然存在。",
+    "NoSavedConfig": "Boss Beat：还没有为 {name} 保存过 Boss Beat——请先使用工具栏按钮进行设置。",
+    "CreateMacro": "创建宏",
+    "MacroName": "Boss Beat：{name}",
+    "MacroCreated": "Boss Beat：已创建「{name}」宏——将其从宏目录拖到你的快捷栏。",
+    "HpProfileApplied": "Boss Beat：已将 Boss Bar 的生命条指向 {system} 自身的 HP 字段。",
+    "HpProfileAppliedLive": "Boss Beat：已将 Boss Bar 的生命条指向 {system} 自身的 HP 字段。屏幕上已有的生命条将保持旧填充，直到 Boss 下次受到伤害或你重新加载。",
+    "HpProfileRestored": "Boss Beat：已交还 Boss Bar 的生命设置——请在 Boss Bar 下自行设置。",
+    "Settings": {
+      "FixBossBarHp": {
+        "Name": "为此游戏系统设置 Boss Bar 的生命条",
+        "Hint": "Boss Bar 从仅适用于 D&D 风格系统的点路径读取 HP，因此在 Daggerheart 上生命条读不到任何值。启用此项后，Boss Beat 会将 Boss Bar 的当前 HP 路径、最大 HP 路径和伤势系统设置为 Pathfinder 2e、D&D 5e 或 Daggerheart 的正确值，并在加载时重新应用——因此启用期间，这三项 Boss Bar 设置归 Boss Beat 管理。关闭后即可手动设置；你的旧值会恢复。"
+      },
+      "HideBossBarButton": {
+        "Name": "隐藏 Boss Bar 的工具栏按钮",
+        "Hint": "移除 Boss Bar 自带的场景控制按钮，因为 Boss Beat 的配置表单已经覆盖了为每个 Boss 分配条样式的功能。"
+      }
+    }
+  }
+}

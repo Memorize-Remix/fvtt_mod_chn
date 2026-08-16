@@ -1,4 +1,5 @@
-{"bg3-hud-core": {
+{
+  "bg3-hud-core": {
     "Settings": {
       "Theme": {
         "Name": "主题设置",
@@ -76,26 +77,37 @@
         "Name": "底部内边距",
         "Hint": "距离屏幕底部的内边距（像素）"
       },
-	  "PassivesContainerIconsPerRow": {
-			"Name": "被动特性图标每行数量",
-			"Hint": "每行显示的被动特性图标数量，超出则换行"
-		},
-		"ActiveEffectsContainerIconsPerRow": {
-			"Name": "主动效果图标每行数量",
-			"Hint": "每行显示的主动效果图标数量，超出则换行"
-		},
-		"ShowPassiveActiveEffects": {
-			"Name": "显示被动效果",
-			"Hint": "启用后，除了临时效果外，还会显示永久/被动效果（无持续时间）"
-		},
-		"ShowFilters": {
-			"Name": "显示过滤图标",
-			"Hint": "在快捷栏上方显示法术位和动作类型过滤图标"
-		},
-		"ShowPortraitHPControls": {
-			"Name": "显示立绘生命值控件",
-			"Hint": "在立绘界面中显示设置生命值为最小值（骷髅）、最大值（心形）的按钮和生命值输入框"
-		},
+      "PassivesContainerIconsPerRow": {
+        "Name": "被动特性图标每行数量",
+        "Hint": "每行显示的被动特性图标数量，超出则换行"
+      },
+      "ActiveEffectsContainerIconsPerRow": {
+        "Name": "主动效果图标每行数量",
+        "Hint": "每行显示的主动效果图标数量，超出则换行"
+      },
+      "ShowPassiveActiveEffects": {
+        "Name": "显示被动效果",
+        "Hint": "启用后，除了临时效果外，还会显示永久/被动效果（无持续时间）"
+      },
+      "ShowFilters": {
+        "Name": "显示过滤图标",
+        "Hint": "在快捷栏上方显示法术位和动作类型过滤图标"
+      },
+      "ShowPortrait": {
+        "Name": "显示立绘",
+        "Hint": "显示角色立绘、HP 覆盖层和立绘数据纹章。禁用后，角色信息按钮（d20）仍可使用。"
+      },
+      "BorderPortraitPreferences": {
+        "Name": "立绘边框",
+        "Hint": "HUD 立绘图像周围的装饰性边框。",
+        "None": "无",
+        "Simple": "简单",
+        "Styled": "装饰样式（圆形环）"
+      },
+      "ShowPortraitHPControls": {
+        "Name": "显示立绘生命值控件",
+        "Hint": "在立绘界面中显示设置生命值为最小值（骷髅）、最大值（心形）的按钮和生命值输入框"
+      },
       "LayoutAppearance": {
         "MenuTitle": "布局与外观",
         "MenuName": "布局与外观",
@@ -124,7 +136,9 @@
         "MenuName": "FVTT UI",
         "MenuLabel": "FVTT UI设置",
         "MenuHint": "控制宏栏可见性和提示时间",
-        "Legend": "FVTT UI"
+        "Legend": "FVTT UI",
+        "NameOnlyTooltipsName": "仅名称提示",
+        "NameOnlyTooltipsHint": "对物品、法术和特性使用简单的原生提示，而非系统富文本提示。"
       },
       "GMHotbar": {
         "MenuTitle": "GM快捷栏",
@@ -171,7 +185,7 @@
         "Title": "立绘数据配置",
         "MenuName": "立绘数据",
         "MenuLabel": "配置立绘数据",
-        "MenuHint": "在立绘周围显示数据徽章（AC、速度、英雄点等）",
+        "MenuHint": "在立绘周围显示数据纹章（AC、HP、速度等）",
         "ShowName": "显示立绘数据",
         "ShowHint": "在角色立绘周围显示数据纹章",
         "TopLeft": "左上",
@@ -181,11 +195,15 @@
         "BottomLeft": "左下",
         "BottomRight": "右下",
         "Saved": "立绘数据配置已保存",
-		"WorldOverride": "使用世界配置（所有玩家）",
-		"SyncToWorld": "同步到世界",
-		"SyncedToWorld": "立绘数据已同步到世界 - 所有玩家现在都将使用此配置",
-		"WorldConfigActive": "GM已设置世界配置",
-		"UseMyOwnConfig": "改用我自己的配置"
+        "WorldOverride": "使用世界配置（所有玩家）",
+        "SyncToWorld": "同步到世界",
+        "SyncedToWorld": "立绘数据已同步到世界 - 所有玩家现在都将使用此配置",
+        "WorldConfigActive": "GM已设置世界配置",
+        "UseMyOwnConfig": "改用我自己的配置"
+      },
+      "AutoPopulate": {
+        "Options": "选项",
+        "HotbarGrid": "快捷栏网格 {number}"
       }
     },
     "Controls": {
@@ -195,7 +213,34 @@
         "DeselectToken": "取消选择Token",
         "Opacity": "透明度",
         "DragDrop": "拖放"
+      },
+      "GMToggle": {
+        "Tooltip": "在 GM 快捷栏和 Token 快捷栏之间切换"
+      },
+      "Row": {
+        "Add": "添加行",
+        "Remove": "移除行"
+      },
+      "Settings": {
+        "Tooltip": "设置<br>（右键单击查看快捷操作）",
+        "ResetLayout": "重置布局",
+        "ClearAllItems": "清空所有物品",
+        "SaveLayout": "保存布局为角色默认",
+        "ExportLayout": "导出布局",
+        "ImportLayout": "导入布局"
       }
+    },
+    "ContextMenu": {
+      "EditItem": "编辑物品",
+      "RemoveItem": "移除物品",
+      "SortContainer": "整理容器",
+      "ClearContainer": "清空容器",
+      "AutoPopulateContainer": "自动填充容器",
+      "AutoPopulateHint": "手动用角色身上的物品填充此容器。注意：NPC 在创建 Token 时会自动填充，但玩家角色应使用此选项。"
+    },
+    "Filters": {
+      "LeftClick": "左键单击：高亮匹配的物品",
+      "RightClick": "右键单击：标记为已使用"
     },
     "Tooltips": {
       "InfoButton": "角色信息<br><small>右键单击查看先攻</small>",
@@ -225,6 +270,61 @@
       "MinTargetsRequired": "至少需要{min}个目标",
       "IncreaseMax": "增加最大目标数",
       "DecreaseMax": "减少最大目标数"
+    },
+    "Notifications": {
+      "AutoSortNotAvailable": "自动整理不可用",
+      "SortFailed": "整理容器失败",
+      "AutoPopulateFailed": "自动填充容器失败",
+      "ClearContainerFailed": "清空容器失败",
+      "CrossContainerMoveBlocked": "无法在容器和快捷栏之间移动物品",
+      "DuplicateItem": "此物品已存在于 HUD 的其他位置",
+      "DuplicateSpellSlot": "此法术位已在 HUD 中",
+      "DuplicateInHud": "此 {label} 已在 HUD 中",
+      "NoActorSelected": "未选择角色",
+      "ItemOwnerMismatch": "此 {type} 属于 {owner}，而非 {current}",
+      "MacroNotFound": "未找到宏",
+      "NoItemsToSort": "没有可整理的物品",
+      "SortContainerFailed": "整理容器失败。详情请查看控制台。",
+      "NoActorForAutoPopulate": "没有可用于自动填充的角色",
+      "NoItemTypesForAutoPopulate": "没有可用于自动填充的物品类型",
+      "NoMatchingItems": "未找到匹配的物品",
+      "AllItemsAlreadyInHud": "所有选中的物品已在 HUD 中",
+      "NoItemTypesForConfig": "没有可用于配置的物品类型",
+      "PassivesNotImplemented": "此系统尚未实现被动特性配置",
+      "ClearAllFailed": "清空所有物品失败",
+      "ImportLayoutFailed": "导入布局失败",
+      "NoActorForSave": "没有可保存布局的角色。",
+      "SaveLayoutSuccess": "已将布局保存为角色默认，供未来的 Token 使用。",
+      "SaveLayoutFailed": "将布局保存为角色默认失败。",
+      "GMHotbarNotEnabled": "GM 快捷栏未在模组设置中启用。",
+      "SelectTokenToSwitch": "选择一个 Token 以切换到 Token 快捷栏",
+      "MinRowsReached": "无法移除行：快捷栏已处于最小高度。"
+    },
+    "Views": {
+      "CreateTitle": "创建新视图",
+      "EditTitle": "编辑视图",
+      "CreateButton": "创建",
+      "SaveButton": "保存",
+      "DefaultNewName": "新视图",
+      "DefaultEditName": "视图",
+      "NameLabel": "视图名称",
+      "NamePlaceholder": "输入视图名称...",
+      "IconLabel": "选择图标",
+      "CustomIconLabel": "或输入自定义 Font Awesome 类名：",
+      "CustomIconPlaceholder": "例如：fa-sparkles",
+      "ErrorEmptyName": "视图名称不能为空",
+      "MaxViewsReached": "最多允许 {max} 个视图",
+      "Created": "已创建视图：{name}",
+      "CreateFailed": "创建视图失败",
+      "RenameFailed": "重命名视图失败",
+      "DuplicateFailed": "复制视图失败",
+      "DeleteTitle": "删除视图",
+      "DeleteConfirm": "Are you sure you want to delete the view <strong>\"{name}\"</strong>?",
+      "DeleteWarning": "此操作无法撤销。",
+      "DeleteFailed": "删除视图失败",
+      "ContextEdit": "编辑视图",
+      "ContextDuplicate": "复制视图",
+      "ContextDelete": "删除视图"
     },
     "MaxSelectionsReached": "已达到最大选择数量 {max}"
   }

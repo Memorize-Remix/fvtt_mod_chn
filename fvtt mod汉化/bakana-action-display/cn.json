@@ -1,0 +1,83 @@
+{
+    "BAD": {
+        "settings": {
+            "hudOpacity": {
+                "name": "HUD 不透明度",
+                "hint": "控制动作显示 HUD 覆盖层的透明度。"
+            },
+            "hudScale": {
+                "name": "HUD 缩放",
+                "hint": "按比例控制 HUD 窗口及其所有内容的整体缩放。"
+            },
+            "fontSize": {
+                "name": "字体大小（px）",
+                "hint": "控制文本和图标的基准字体大小。HUD 窗口大小将保持独立。"
+            },
+            "logVerbosity": {
+                "name": "日志详细级别",
+                "hint": "控制打印到浏览器控制台的详细信息级别。",
+                "choices": {
+                    "error": "仅错误",
+                    "warn": "警告与错误（默认）",
+                    "info": "信息、警告与错误",
+                    "debug": "调试（全部）"
+                }
+            },
+            "persistDetached": {
+                "name": "点击别处时保持分离 HUD",
+                "hint": "启用后，点击 Token 以外的地方时，分离的 HUD 会保持打开，只有再次右键单击同一 Token 才会关闭。"
+            },
+
+            "persistTabState": {
+                "name": "记住标签页选择",
+                "hint": "启用后，每个角色的当前标签页选择会被保存，并在您重新打开 HUD 或刷新 Foundry 时恢复。"
+            },
+            "toggleTabSelection": {
+                "name": "左键点击切换标签页选择",
+                "hint": "启用后，左键点击标签页会切换其选中状态（多选），而不会清除其他已选标签页。只有再次点击它们或点击「全部」才会清除选择。"
+            },
+            "hudAnchorSide": {
+                "name": "HUD 附着方位",
+                "hint": "控制附着式 HUD 相对于 Token 是垂直锚定（上方 / 下方）还是水平锚定（左侧 / 右侧）。",
+                "choices": {
+                    "vertical": "垂直（上方 / 下方）",
+                    "horizontal": "水平（左侧 / 右侧）"
+                }
+            },
+            "hudGridOffset": {
+                "name": "HUD 网格偏移（垂直）",
+                "hint": "控制 HUD 在 Token 上方或下方的垂直偏移距离（以网格单位计）。"
+            },
+            "hudGridOffsetHorizontal": {
+                "name": "HUD 网格偏移（水平）",
+                "hint": "控制 HUD 在 Token 左侧或右侧的水平偏移距离（以网格单位计）。"
+            }
+        },
+        "core": {
+            "filterNoResources": "隐藏已耗尽",
+            "hidden": "已隐藏",
+            "hideAction": "隐藏动作",
+            "unhideAction": "取消隐藏动作",
+            "noActions": "没有可用动作。",
+            "allItems": "全部物品",
+            "other": "其他",
+            "allActions": "全部动作",
+            "none": "无"
+        },
+        "common": {
+            "actionEconomy": "动作经济",
+            "itemCharges": "物品充能",
+            "prepareSpell": "准备法术",
+            "unprepareSpell": "取消准备法术",
+            "equipItem": "装备物品",
+            "unequipItem": "卸下物品",
+            "allSpells": "全部法术",
+            "allWeapons": "全部武器",
+            "allEquipment": "全部装备",
+            "spellComponents": "法术成分"
+        },
+        "dnd5e": {
+            "upcast": "升环施法"
+        }
+    }
+}

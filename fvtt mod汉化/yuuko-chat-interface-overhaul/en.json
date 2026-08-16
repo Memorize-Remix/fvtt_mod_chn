@@ -1,0 +1,196 @@
+{
+  "YCIO": {
+    "WindowTitle": "Yuuko's Chat Interface Overhaul (GM can override this in settings)",
+    "MinimizeIcon": "Minimize",
+    "Warning": {
+      "NoLabeledAvatars": "The current speaker has no avatars with labels.",
+      "FailedMsg": "Message failed to send.",
+      "InitialRenderFailed": "The YCIO chat window could not be opened. Check the console for details.",
+      "NoAvailableSpeaker": "There is no available speaking identity in the current tab."
+    },
+    "Menu": {
+      "ExportLog": "Export Chat Log",
+      "ClearLog": "Clear Chat Log",
+      "MosaicSpeaker": "Blur Speakers (for screenshots)",
+      "MosaicSpeakerOff": "Remove Blurs",
+      "Settings": "Module Settings",
+      "About": "About Module"
+    },
+    "Tabs": {
+      "Label": "Chat tabs",
+      "OOC": "OOC"
+    },
+    "Input": {
+      "Placeholder": "Type a message...",
+      "Send": "Send Message",
+      "TypingNone": "No one is typing",
+      "Typing": " is typing...",
+      "AvatarSetting": "Select Avatar",
+      "Speaker": "Speaking as",
+      "Formatting": "Text formatting",
+      "JumpToBottom": "Jump to bottom",
+      "NewMessages": "New messages",
+      "Bold": "Bold",
+      "Italic": "Italic",
+      "Strikethrough": "Strikethrough",
+      "TextColor": "Text Color",
+      "SelectColor": "Select Color",
+      "InlineAvatar": "Insert Emote from Avatars",
+      "Wait": "Tell everyone to wait a moment",
+      "WaitLabel": "Please wait",
+      "WaitLabelActive": "Okay, waiting",
+      "IsWaiting": " asked to wait a moment.",
+      "QuickRoll": "Quick Roll",
+      "QuickRollBtn": "Roll!",
+      "QuickRollCancel": "Cancel",
+      "QuickRollNoSelection": "Please select at least one die."
+    },
+    "Speaker": {
+      "OOC": "OOC",
+      "Actor": "Actor",
+      "NoAvailableToken": "No Token available for speaking"
+    },
+    "Settings": {
+      "Sections": {
+        "Controls": "Controls",
+        "Audio": "Sound",
+        "Interface": "Interface",
+        "Compatibility": "Compatibility"
+      },
+      "SwapEnter": {
+        "Name": "➤ Send with Shift+Enter",
+        "Hint": "If checked, messages will only be sent with Shift+Enter. Pressing Enter alone will just add a new line."
+      },
+      "NotificationSound": {
+        "Name": "➤ New Message Notification Sound Path",
+        "Hint": "(GM) The default sound path is modules/yuuko-chat-interface-overhaul/sounds/page.mp3\nLeave blank for no sound.\n(You can adjust the volume in the FVTT 'Playlists' tab under the 'Interface' option.)"
+      },
+      "PlayOnOOC": {
+        "Name": "➤ Play Sound for OOC Tab Messages",
+        "Hint": "(GM) If checked, new messages in the OOC tab will also trigger the notification sound."
+      },
+      "WindowTitle": {
+        "Name": "➤ Custom Window Title",
+        "Hint": "(GM) The title text for the floating chat window.",
+        "Changed": "Floating chat window title changed. <span style=\"color:#ff0000\"><b>Please tell your players to refresh the page to apply the latest settings.</b></span>."
+      },
+      "HideNativeSidebar": {
+        "Name": "➤ Hide Native FVTT Chat UI",
+        "Hint": "(GM) Includes the native sidebar chat and the pop-up chat bubbles in the bottom right corner.",
+        "Choices": {
+          "None": "Do Not Hide",
+          "All": "Hide for Everyone",
+          "GM": "Hide Except for GM"
+        }
+      },
+      "BackgroundColor": {
+        "Name": "➤ Floating Chat Window Background Color",
+        "Hint": "Set the background color of (your own) floating chat window."
+      },
+      "BackgroundOpacity": {
+        "Name": "➤ Floating Chat Window Background Opacity",
+        "Hint": "Adjust the background opacity of your floating chat window (minimum 30%)."
+      },
+      "CleanSender": {
+        "Name": "➤ Clean Speaker Info",
+        "Hint": "(GM) Some systems add extra information to the speaker (e.g., D&D 5e adds avatars and subtitles), which can make the layout of this module less appealing.\nEnable this to keep only the native FVTT speaker name.",
+        "Changed": "Settings changed. <span style=\"color:#ff0000\"><b>Please tell your players to refresh the page to apply the latest settings.</b></span>."
+      },
+      "MessageTextColor": {
+        "Name": "➤ Default Message Text Color",
+        "Hint": "(GM) Overrides the text color inside the floating chat window (including headings), useful for dealing with modules or systems that modify text colors."
+      },
+      "EnableCustomMessageBg": {
+        "Name": "➤ Enable Custom Message Background",
+        "Hint": "(GM) If checked, removes the original background color or image of messages in the floating chat window, applying the color set in the next option. Useful for systems or modules that alter message background colors or images (like D&D 5e)."
+      },
+      "CustomMessageBgColor": {
+        "Name": "➤ Message Background Color",
+        "Hint": "(GM) Customize the background color of messages in the floating chat window (requires the previous option to be checked)."
+      },
+      "StyleOverride": {
+        "Changed": "Font/Background style settings changed. <span style=\"color:#ff0000\"><b>Please tell your players to refresh the page to apply the latest settings.</b></span>"
+      },
+      "UseTokenAvatar": {
+        "Name": "➤ Use Token Image as Default Avatar (Experimental)",
+        "Hint": "Unchecked: Uses the Actor image.\nChecked: Uses the on-scene Token image as the default avatar. May have some mystical issues."
+      },
+      "HookArgumentType": {
+        "Name": "➤ System Compatibility: In-Message Interactive Feature Mode (DOM / jQuery)",
+        "Hint": "(GM) Determines the interactable container type in messages. If you find interactive features within messages (like attacks, rolls, damage, expanding dice, etc.) are unclickable and you get red errors in your browser Console (F12), try toggling this option.",
+        "Choices": {
+          "jQuery": "jQuery Object (Compatible with older systems like CoC 7e)",
+          "native": "Native DOM Element (For newer architecture systems like D&D 5e)"
+        },
+        "Changed": "Settings changed. <span style=\"color:#ff0000\"><b>Please tell your players to refresh the page to apply the latest settings.</b></span>"
+      },
+      "HookMode": {
+        "Name": "➤ Further toggle compatibility modes needed by some systems (Experimental)",
+        "Hint": "(GM) If the previous option doesn't work, try toggling this one.\nIn some uniquely structured systems, message interactions might still fail or act unexpectedly (like repeatedly expanding/closing). Try toggling this.\nSwitching to 'Isolated' may break some third-party modules and cause slight performance loss.",
+        "Standard": "Standard (suits most systems)",
+        "Clone": "Isolated (suits a few systems with unique or ancient architecture, like SR 5e.)",
+        "Changed": "Settings changed. <span style=\"color:#ff0000\"><b>Please tell your players to refresh the page to apply the latest settings.</b></span>"
+      }
+    },
+    "Avatar": {
+      "WindowTitle": "Select Speaking Avatar",
+      "Add": "Add Avatar",
+      "Select": "Select avatar",
+      "Delete": "Delete avatar",
+      "Label": "Avatar label",
+      "ErrorUpdateList": "Failed to update the avatar list. Please try again.",
+      "Managing": "Managing Actor:",
+      "Default": "Default",
+      "NoAvatar": "Hidden (GM Only)",
+      "LabelPlaceholder": "Avatar label...",
+      "Confirm": "Confirm",
+      "Current": "Current Avatar:",
+      "UnlinkedWarning": "The selected Token is not linked to Actor data<br>Therefore, forced to Token image:"
+    },
+    "Picker": {
+      "Title": "Select Emote",
+      "NoAvatars": "No emotes available (please set a label for the avatar you want to use as an emote in the avatar selector)."
+    },
+    "Editor": {
+      "WindowTitle": "Edit Message",
+      "Edit": "Edit Message",
+      "Content": "Message content",
+      "Conflict": "The message was updated by another operation. Saving was cancelled to avoid overwriting it.",
+      "ErrorUpdate": "Failed to update the message. Please try again.",
+      "Update": "Confirm Edit"
+    },
+    "Exporter": {
+      "Title": "Export Chat Log",
+      "Description": "Please select the channel tabs to export. The export process will convert all images into an embedded format, which might take a few minutes.",
+      "IncludePrivate": "Include private messages",
+      "IncludePrivateHint": "Includes whispers, blind rolls, and other private messages visible to you.",
+      "PrivateWarning": "Exported private messages may contain sensitive information. Share the file carefully.",
+      "OOCLabel": "OOC",
+      "OOCButton": "OOC",
+      "WarningNoSelection": "Please select at least one tab to export.",
+      "InfoPreparing": "Preparing export; image conversion may take some time. Please wait...",
+      "InfoDownloadingCSS": "Downloading and packaging stylesheets...",
+      "InfoComplete": "Export complete!",
+      "WarningResourceFailures": "{count} external resources were omitted; the exported file may display incomplete content.",
+      "ErrorFailed": "Chat log export failed: {error}",
+      "ButtonStart": "Start Export",
+      "HtmlTitle": "Chat Log Export"
+    },
+    "Clearer": {
+      "Title": "Clear Chat Log",
+      "Description": "<p>Are you sure you want to clear all chat logs? This action <span style=\"color:#ff0000\"><b>cannot be undone</b></span>.</p>",
+      "Notification": "All chat logs have been cleared."
+    },
+    "About": {
+      "Title": "About Module",
+      "ModuleName": "Yuuko's Chat Interface Overhaul",
+      "Version": "Version",
+      "LastUpdate": "Last Updated",
+      "ProjectUrl": "Project URL",
+      "ProjectLink": "GitHub Repo",
+      "Author": "Author",
+      "Contact": "Contact",
+      "Donate": "Support Yuuko"
+    }
+  }
+}

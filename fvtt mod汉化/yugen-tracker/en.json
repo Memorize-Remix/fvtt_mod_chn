@@ -1,0 +1,161 @@
+{
+	"yugen-tracker": {
+		"settings": {
+			"hide-gm-changes": {
+				"name": "Hide Gamemaster Changes",
+				"hint": "If enabled, changes made by Gamemasters will not be tracked or announced."
+			},
+			"track-all-owned": {
+				"name": "Track All Owned Sheets",
+				"hint": "If enabled, all sheets owned by a player will be tracked (preventing cheating on unassigned sheets). If disabled, only assigned characters are tracked."
+			},
+			"track-concentration": {
+				"name": "Track Concentration",
+				"hint": "If enabled, starting or breaking concentration will be announced in chat."
+			},
+			"display-biography-changes": {
+				"name": "Display Biography Changes",
+				"hint": "If enabled, changes to the character biography and personality traits will be announced."
+			},
+			"sensitive-keys": {
+				"name": "Sensitive Keys",
+				"hint": "A comma-separated list of keys to ignore when \"Display Biography Changes\" is disabled."
+			},
+			"output-to-file": {
+				"name": "Output to File",
+				"hint": "If enabled, logs will be saved to a .txt file in your Foundry data folder (Data/yugen-tracker-logs/)."
+			},
+			"log-file-name": {
+				"name": "Log File Name",
+				"hint": "The name of the log file (e.g., combat-log.txt)."
+			},
+			"allow-player-log-viewer": {
+				"name": "Allow Player Log Viewer",
+				"hint": "If enabled, players will be able to open the log history viewer."
+			},
+			"debug-mode": {
+				"name": "Debug Mode",
+				"hint": "If enabled, detailed technical logs will be printed to the browser console."
+			},
+			"show-sidebar-button": {
+				"name": "Show Sidebar Button",
+				"hint": "If enabled, the Log History button will appear in the Journal Notes sidebar and Directory header. If disabled, you must use a macro to open the UI."
+			},
+			"discord-webhook": {
+				"name": "Discord Webhook",
+				"hint": "Enter a Discord Webhook URL to send logs to a Discord channel. Leave empty to disable."
+			},
+			"announce-gamemasters": {
+				"name": "Announce to Gamemasters",
+				"hint": "If enabled, changes will be whispered to Gamemasters."
+			},
+			"announce-assistant-gamemasters": {
+				"name": "Announce to Assistant Gamemasters",
+				"hint": "If enabled, changes will be whispered to Assistant Gamemasters."
+			},
+			"announce-trusted-players": {
+				"name": "Announce to Trusted Players",
+				"hint": "If enabled, changes will be whispered to Trusted Players."
+			},
+			"announce-all-players": {
+				"name": "Announce to All Players",
+				"hint": "If enabled, changes will be sent as public chat messages to everyone (overrides other role settings)."
+			},
+			"colors": {
+				"title": "Configure Colors",
+				"hint": "Set custom background and text colors for different types of log messages and players in the chat log.",
+				"log-colors-section": "Log Message Colors",
+				"log-update": "Actor Update Logs",
+				"log-item": "Item/Equipment Logs",
+				"log-snapshot": "Snapshot Logs",
+				"log-concentration": "Concentration Logs",
+				"log-resources": "Party Resource Logs",
+				"user-colors-section": "Player Chat Box Colors",
+				"user-colors-hint": "Assign custom background and text colors for specific users in the chat log.",
+				"reset": "Reset to Defaults",
+				"save": "Save Changes"
+			}
+		},
+		"chat": {
+			"concentration": {
+				"start": "<strong>{user}</strong>: <strong>{actor}</strong> is now concentrating on <strong>{spell}</strong>.",
+				"break": "<strong>{user}</strong>: <strong>{actor}</strong> has broken concentration!",
+				"default-spell": "a spell"
+			},
+			"item": {
+				"create": "<strong>{user}</strong> added item <strong>{item}</strong> to <strong>{owner}</strong>.",
+				"delete": "<strong>{user}</strong> removed item <strong>{item}</strong> from <strong>{owner}</strong>.",
+				"update": "<strong>{user}</strong> updated <strong>{item}</strong> on <strong>{owner}</strong>:",
+				"prepared": "prepared",
+				"unprepared": "unprepared",
+				"equipped": "equipped",
+				"unequipped": "unequipped",
+				"action-message": "<strong>{user}</strong> {action} <strong>{item}</strong> on <strong>{owner}</strong>"
+			},
+			"actor": {
+				"modified": "<strong>{user}</strong> modified <strong>{actor}</strong>:",
+				"set-to": "\n• {key} set to {value}"
+			},
+			"labels": {
+				"charges": "charges",
+				"equipped-status": "equipped status",
+				"prepared-status": "prepared status",
+				"level-spell-slots": "Level {level} Spell Slots",
+				"level-spell-slots-max": "Level {level} Spell Slots Max",
+				"pact-spell-slots": "Pact Spell Slots",
+				"pact-spell-slots-max": "Pact Spell Slots Max",
+				"currency": "currency: ",
+				"race": "race"
+			}
+		},
+		"log-viewer": {
+			"title": "yugen-tracker: Log History",
+			"refresh": "Refresh Logs",
+			"clear": "Clear History",
+			"logging-disabled-warn": "Output to File is currently disabled. Historical logs will not be updated.",
+			"search-placeholder": "Search logs...",
+			"snapshot-all": "Snapshot All",
+			"tabs": {
+				"all": "All",
+				"spells": "Spells",
+				"inventory": "Inventory",
+				"attributes": "Attributes",
+				"concentration": "Concentration"
+			}
+		},
+		"snapshot": {
+			"title": "yugen-tracker: Sheet Snapshot",
+			"header-btn": "Snapshot",
+			"taken-at": "Snapshot taken at",
+			"no-snapshot": "No baseline snapshot has been taken for this character.",
+			"create-btn": "Take Snapshot",
+			"rollback-all-btn": "Revert All Changes",
+			"no-changes": "This sheet matches the snapshot perfectly.",
+			"no-characters": "No player characters found to snapshot.",
+			"all-created-success": "Taken sheet baseline snapshots for {count} characters.",
+			"table": {
+				"property": "Property",
+				"snapshot": "Snapshot",
+				"current": "Current State",
+				"action": "Revert"
+			},
+			"states": {
+				"non-existent": "Non-existent",
+				"created": "Created",
+				"yes": "Yes",
+				"no": "No",
+				"existed": "Existed",
+				"deleted": "Deleted"
+			},
+			"diff-labels": {
+				"hp": "Hit Points",
+				"ability": "Ability: {ability}"
+			},
+			"item-prop-labels": {
+				"quantity": "Quantity",
+				"equipped": "Equipped Status",
+				"prepared": "Prepared Status"
+			}
+		}
+	}
+}

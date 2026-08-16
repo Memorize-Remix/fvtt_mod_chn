@@ -1,10 +1,14 @@
-{"PTH.HOTBAR": "切换到宏模式",
+{
+  "PTH.HOTBAR": "切换到宏模式",
   "PTH.TOKEN": "切换到Token模式",
   "PTH.CONFIG": "配置Token快捷栏",
   "PTH.ORIGINAL": "修改原型角色",
+  "PTH.LOCKED": "快捷栏已锁定",
   "PTH.FILL": "填充Token快捷栏",
   "PTH.FILTER.SELECT": "已选过滤：",
   "PTH.FILTER.NONE": "无",
+  "PTH.FILTER.MACRO": "宏",
+  "PTH.FILTER.ITEM": "物品",
 
   "PTH.DBCLICK": "双击打开角色表",
   "PTH.CURRENT_HP": "当前生命值",
@@ -13,11 +17,11 @@
   "PTH.TEMPORARY_HP": "临时生命值",
   "PTH.CONFIG_TITLE": "配置Token快捷栏",
 
-  "PTH.NO_ITEM_ROLL_CONFIGURED": "Pazindor's Token Hotbar：该系统未配置掷骰处理器。",
+  "PTH.NO_SLOT_USE_CONFIGURED": "Pazindor's Token Hotbar：该系统的使用栏位处理器尚未配置。",
 
   "PTH.EFFECT_DELETE": "是否要移除该效果？",
-  "PTH.ITEM_SHEET": "打开物品卡",
-  "PTH.REMOVE_ITEM": "移除物品",
+  "PTH.OPEN_CONFIG": "打开配置",
+  "PTH.EMPTY_SLOT": "移除栏位",
   "PTH.END_TURN": "结束回合",
 
   "PTH.HC.GLOBAL": "全局选项",
@@ -25,6 +29,9 @@
   "PTH.HC.SECTION_A": "A区（右侧）",
   "PTH.HC.SECTION_B": "B区（左侧）",
   "PTH.HC.DISPLAY_TOKEN": "显示Token图像而非角色立绘",
+  "PTH.HC.OVERLAY": "显示头像覆盖层（如果系统已配置）",
+  "PTH.HC.SHOW_CHARGES": "显示充能（如果系统已配置）",
+  "PTH.HC.SHOW_QUANTITY": "显示数量（如果系统已配置）",
 
   "PTH.HC.ROWS": "行数",
   "PTH.HC.COLUMNS": "列数",
@@ -38,6 +45,7 @@
   "PTH.HC.RESOURCE.PATH": "资源的系统路径",
   "PTH.HC.RESOURCE.LABEL": "资源标签",
   "PTH.HC.RESOURCE.COLOR": "资源颜色",
+  "PTH.HC.DEFAULT_RESOURCE": "重置为默认值",
 
   "PTH.BASIC_ROLL.TITLE": "选择掷骰",
   "PTH.BASIC_ROLL.CHECK": "检定",
@@ -47,9 +55,19 @@
   "PTH.SETTINGS.CURRENT_HP": "当前生命值路径（必填）",
   "PTH.SETTINGS.TEMP_HP": "临时生命值路径（如存在）",
   "PTH.SETTINGS.NEGATIVE_HEALTH": "允许负生命值",
-  "PTH.SETTINGS.NEGATIVE_HEALTH_HINT": "如果为真，Token快捷栏中的生命值将允许达到负值。某些系统可能不允许。",
+  "PTH.SETTINGS.NEGATIVE_HEALTH_HINT": "如果启用，HP 将可以在 Token 快捷栏上达到负值。某些系统可能会覆盖此值。",
 
+  "PTH.SETTINGS.RESOURCE_1_COLOR": "资源 1 默认颜色",
+  "PTH.SETTINGS.RESOURCE_1_NAME": "资源 1 默认标签",
+  "PTH.SETTINGS.RESOURCE_1_PATH": "资源 1 默认路径",
+  "PTH.SETTINGS.RESOURCE_2_COLOR": "资源 2 默认颜色",
+  "PTH.SETTINGS.RESOURCE_2_NAME": "资源 2 默认标签",
+  "PTH.SETTINGS.RESOURCE_2_PATH": "资源 2 默认路径",
+  "PTH.SETTINGS.RESOURCE_3_COLOR": "资源 3 默认颜色",
+  "PTH.SETTINGS.RESOURCE_3_NAME": "资源 3 默认标签",
+  "PTH.SETTINGS.RESOURCE_3_PATH": "资源 3 默认路径",
 
+  "PTH.DND5E.FILTER.ACTIVITY": "活动",
   "PTH.DND5E.FILTER.ACTION": "动作",
   "PTH.DND5E.FILTER.BONUS_ACTION": "附赠动作",
   "PTH.DND5E.FILTER.REACTION": "反应",
@@ -58,6 +76,10 @@
   "PTH.DND5E.START_REST.SHORT": "开始短休",
   "PTH.DND5E.BASIC_ROLL": "进行检定/豁免",
   "PTH.DND5E.INITIATIVE": "先攻检定",
+  "PTH.DND5E.DEATH_SAVE": "掷死亡豁免",
+  "PTH.DND5E.CONCENTRATION": "掷专注检定",
+  "PTH.DND5E.DYING": "你正处于濒死状态",
+  "PTH.DND5E.DEATH": "你已死亡",
 
   "PTH.DND5E.EQUIP_ITEM": "装备物品",
   "PTH.DND5E.UNEQUIP_ITEM": "卸下物品",
@@ -65,6 +87,24 @@
   "PTH.DND5E.UNATTUNE_ITEM": "解除同调",
   "PTH.DND5E.PREPARE_SPELL": "准备法术",
   "PTH.DND5E.UNPREPARE_SPELL": "取消准备法术",
+
+  "PTH.PF1.FILTER.STANDARD": "标准动作",
+  "PTH.PF1.FILTER.MOVE": "移动动作",
+  "PTH.PF1.FILTER.SWIFT": "迅捷动作",
+  "PTH.PF1.FILTER.FREE": "自由动作",
+  "PTH.PF1.FILTER.FULL": "整轮动作",
+
+  "PTH.PF1.START_REST": "开始休息",
+  "PTH.PF1.BASIC_ROLL": "掷检定/豁免",
+  "PTH.PF1.INITIATIVE": "掷先攻",
+  "PTH.PF1.STABILIZE": "掷稳定检定",
+
+  "PTH.PF1.EQUIP_ITEM": "装备物品",
+  "PTH.PF1.UNEQUIP_ITEM": "卸下物品",
+  "PTH.PF1.CARRY_ITEM": "携带物品",
+  "PTH.PF1.DROP_ITEM": "丢弃物品",
+  "PTH.PF1.PREPARE_SPELL": "准备法术",
+  "PTH.PF1.UNPREPARE_SPELL": "取消准备法术",
 
 
   "PTH.PF2E.FILTER.ACTION_1": "1动作",
@@ -76,6 +116,9 @@
   "PTH.PF2E.START_REST": "开始休息",
   "PTH.PF2E.BASIC_ROLL": "进行检定/豁免",
   "PTH.PF2E.INITIATIVE": "先攻检定",
+  "PTH.PF2E.RECOVERY": "掷恢复检定",
+  "PTH.PF2E.DYING": "你正处于濒死状态",
+  "PTH.PF2E.DEAD": "你已死亡",
 
   "PTH.PF2E.HOLD_ITEM_1H": "单手持握",
   "PTH.PF2E.HOLD_ITEM_2H": "双手持握",
@@ -89,5 +132,5 @@
   "PTH.PF2E.SPELL.SELECT_RANK": "选择法术环位",
   "PTH.PF2E.SPELL.RANK": "环位：",
   "PTH.PF2E.INITIATIVE_SELECT": "选择先攻技能"
-  
+
 }

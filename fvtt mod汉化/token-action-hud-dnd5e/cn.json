@@ -31,6 +31,8 @@
       "defensiveTactics": "防御策略",
       "eldritchInvocations": "魔能祈唤",
       "elementalDisciplines": "元素灵术",
+      "equip": "装备",
+      "favorites": "收藏",
       "feats": "专长",
       "fightingStyles": "战斗风格",
       "huntersPrey": "猎人目标",
@@ -41,11 +43,12 @@
       "lairActions": "巢穴动作",
       "legendary": "传奇",
       "legendaryActions": "传奇动作",
-      "magicItems": "魔法物品",
+      "limitedSpells": "有限法术",
       "maneuvers": "战技",
       "metamagicOptions": "超魔法选项",
       "monsterFeatures": "怪物特性",
       "multiattacks": "多重攻击",
+      "noAction": "无动作",
       "otherActions": "其他动作",
       "pactBoons": "魔契恩泽",
       "pactSpells": "契约法术",
@@ -56,45 +59,55 @@
       "rests": "休息",
       "rollInitiative": "先攻检定",
       "runes": "符文",
+      "settings": {
+        "abbreviateSkills": {
+          "hint": "将技能和属性名称显示为三字符缩写。",
+          "name": "缩写技能和属性名称"
+        },
+        "displaySpellInfo": {
+          "hint": "在法术名称旁显示法术成分信息、专注和仪式状态。",
+          "name": "显示法术信息"
+        },
+        "showActivitiesAsActions": {
+          "hint": "将物品上的每个行动组合显示为独立动作。点击行动组合动作时，会直接执行该行动组合。禁用后，每个物品是单个动作，点击动作将显示行动组合选择窗口（除非被跳过）。",
+          "name": "将行动组合显示为动作"
+        },
+        "showItemsWithoutActivationCosts": {
+          "hint": "显示激活消耗为「无」的物品。",
+          "name": "显示无激活消耗的物品"
+        },
+        "showSlowActions": {
+          "hint": "显示耗时超过一轮的动作。",
+          "name": "显示慢速操作"
+        },
+        "showSpellsAcrossGroups": {
+          "hint": "在法术可施放的每个法术位组中都显示该法术动作。禁用后，法术仅显示在其基础法术位组中。",
+          "name": "在所有可施法组中显示法术"
+        },
+        "showUnchargedItems": {
+          "hint": "显示无剩余充能的物品。",
+          "name": "显示无充能物品"
+        },
+        "showUnequippedItems": {
+          "hint": "为玩家角色显示未装备的物品栏物品。禁用后，仅显示已装备的物品栏物品。",
+          "name": "为玩家角色显示未装备物品"
+        },
+        "showUnequippedItemsNpcs": {
+          "hint": "为 NPC 显示未装备的物品栏物品。禁用后，仅显示已装备的物品栏物品。",
+          "name": "为NPC显示未装备物品"
+        },
+        "showUnpreparedSpells": {
+          "hint": "显示未准备的法术。",
+          "name": "显示未准备法术"
+        }
+      },
       "skill": "技能",
       "skills": "技能",
       "superiorHuntersDefense": "卓越猎人防御",
       "uncommon": "非普通",
+      "unequip": "卸下",
       "veryRare": "极珍稀",
-      "settings": {
-        "abbreviateSkills": {
-          "hint": "以三个字符的缩写显示技能和属性名称",
-          "name": "缩写技能和属性名称"
-        },
-        "displaySpellInfo": {
-          "hint": "在法术名称旁显示法术成分信息、专注和仪式标签",
-          "name": "显示法术信息"
-        },
-        "showItemsWithoutActivationCosts": {
-          "hint": "显示无激活消耗的物品",
-          "name": "显示无激活消耗的物品"
-        },
-        "showSlowActions": {
-          "hint": "显示耗时超过一轮的动作",
-          "name": "显示慢速操作"
-        },
-        "showUnchargedItems": {
-          "hint": "显示无剩余充能的物品",
-          "name": "显示无充能物品"
-        },
-        "showUnequippedItems": {
-          "hint": "显示未装备物品",
-          "name": "显示未装备物品"
-        },
-        "showUnequippedItemsNpcs": {
-          "hint": "为NPC显示未装备物品",
-          "name": "为NPC显示未装备物品"
-        },
-        "showUnpreparedSpells": {
-          "hint": "显示未准备法术",
-          "name": "显示未准备法术"
-        }
-      }
+      "viewItem": "查看物品"
     }
   }
 }

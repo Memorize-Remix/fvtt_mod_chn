@@ -1,0 +1,75 @@
+{
+	"yendorsUserPasswords": {
+		"notifications": {
+			"error": {
+				"passwordNoMatch": "两次输入的密码不一致。",
+				"updateFailed": "密码无法保存，请尝试其他密码。",
+				"noEmptyPassword": "不允许使用空密码。"
+			},
+			"success": {
+				"passwordUpdated": "密码已成功保存。",
+				"reset": "用户 <strong>{user}</strong> 的密码已被重置。",
+				"resetRequestNew": "用户 <strong>{user}</strong> 的密码已被重置，下次登录时需要设置新密码。",
+				"requestNew": "用户 <strong>{user}</strong> 下次登录时需要设置新密码。"
+			}
+		},
+		"dialogs": {
+			"setPassword": {
+				"title": "修改密码",
+				"new": "新密码",
+				"confirm": "确认密码",
+				"show": "显示密码",
+				"save": "保存"
+			},
+			"requestPasswords": {
+				"title": "要求设置新密码",
+				"content": "下次登录时，受影响的玩家将被要求设置新密码。",
+				"buttons": {
+					"all": "所有人（包括 GM）",
+					"players": "仅玩家",
+					"cancel": "取消"
+				}
+			},
+			"passwordManager": {
+				"title": "密码管理器",
+				"pending": "等待设置新密码",
+				"buttons": {
+					"reset": "重置",
+					"request": "要求新密码",
+					"edit": "编辑"
+				}
+			},
+			"passwordReset": {
+				"title": "重置密码",
+				"content": "重置密码会将其移除，此后无需密码即可登录。此外，还可以要求该用户设置新密码。",
+				"reset": "重置",
+				"requestNew": "重置并要求新密码",
+				"cancel": "取消",
+				"initial": "初始密码"
+			}
+		},
+		"contextMenu": {
+			"updatePassword": "修改密码"
+		},
+		"settings": {
+			"allowEmptyPasswords": {
+				"name": "允许空密码",
+				"hint": "是否允许用户设置空密码（登录时无需密码）？"
+			},
+			"changePassword": {
+				"name": "修改自己的密码",
+				"hint": "可以在此修改你自己的密码。",
+				"label": "修改密码"
+			},
+			"passwordManager": {
+				"name": "密码管理器",
+				"hint": "用户概览，可重置密码、要求设置新密码并查看其状态。",
+				"label": "管理密码"
+			},
+			"requestPasswordForNewUsers": {
+				"name": "新用户密码提示",
+				"hint": "是否要求新用户在首次登录后设置新密码？"
+			}
+		}
+	}
+}

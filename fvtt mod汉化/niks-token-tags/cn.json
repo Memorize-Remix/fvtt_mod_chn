@@ -1,0 +1,45 @@
+{
+  "niks-token-tags": {
+    "settings": {
+      "enabled": {
+        "Name": "启用 Token 标签",
+        "Hint": "自动为战斗中重复的 NPC Token 添加字母后缀重命名，并应用颜色编码效果。"
+      },
+      "uniqueLetters": {
+        "Name": "全局唯一字母",
+        "Hint": "启用后，会在战斗中所有类型的 NPC 之间分配唯一字母（例如：哥布林 A、霍布哥布林 B）。禁用时，字母按角色类型分别分配（例如：哥布林 A、霍布哥布林 A）。"
+      },
+      "includeSingletons": {
+        "Name": "为唯一生物加字母",
+        "Hint": "启用后，战斗中同类型唯一的生物也会获得字母（例如：首领 A）。禁用时，只有同类型存在重复的生物才会获得字母。"
+      },
+      "restoreOnCombatEnd": {
+        "Name": "战斗结束后恢复名称",
+        "Hint": "删除战斗时，恢复 Token 的原始名称并移除字母效果。"
+      },
+      "iconDirectory": {
+        "Name": "图标存储目录",
+        "Hint": "用户数据中存放所生成字母图标的目录。更改后需要重新加载。"
+      },
+      "colorConfigMenu": {
+        "Name": "字母颜色设置",
+        "Label": "配置颜色",
+        "Hint": "自定义每个字母标记使用的背景色与文字色。"
+      },
+      "debug": {
+        "Name": "调试日志",
+        "Hint": "启用详细的控制台日志，有助于排查问题。"
+      }
+    },
+    "colorConfig": {
+      "title": "Token 标签——字母颜色",
+      "letterHeader": "字母",
+      "bgColorHeader": "背景",
+      "bgHexHeader": "Hex",
+      "textColorHeader": "文字",
+      "textHexHeader": "Hex",
+      "previewHeader": "预览",
+      "resetDefaults": "重置为默认值"
+    }
+  }
+}

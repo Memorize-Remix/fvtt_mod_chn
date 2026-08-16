@@ -1,0 +1,63 @@
+{
+    "FOGWEAVER": {
+        "Title": "Fog Weaver",
+        "Settings": {
+            "Enabled": {
+                "Name": "启用手动迷雾控制",
+                "Hint": "启用后，Token 移动不再揭示迷雾。请使用 Fog Weaver 工具手动揭示和隐藏区域。"
+            },
+            "LineWidth": {
+                "Name": "线条工具宽度",
+                "Hint": "使用揭示线条或隐藏线条工具时，线条形状的像素宽度。"
+            },
+            "GmFogAlpha": {
+                "Name": "GM 迷雾预览不透明度",
+                "Hint": "Fog Weaver 工具激活时，战争迷雾会以此不透明度显示给 GM。数值越低，越能透过未揭示的区域看清地图。"
+            },
+            "GmFogTint": {
+                "Name": "GM 迷雾色调颜色",
+                "Hint": "Fog Weaver 工具激活时，显示给 GM 的未探索迷雾区域的颜色。"
+            },
+            "IsolateStates": {
+                "Name": "保留独立的迷雾状态",
+                "Hint": "启用后，切换 Fog Weaver 会独立保留每种模式的迷雾状态——GM 绘制的迷雾与 Token 视野探索互不重叠。关闭以恢复之前的共享状态行为。"
+            },
+            "SnapshotSizeWarning": {
+                "Name": "快照大小警告阈值（KB）",
+                "Hint": "当切换期间保存的迷雾快照超过此千字节大小时显示警告。调高或调低此值以调整警告出现的时机。"
+            },
+            "DebugLogging": {
+                "Name": "调试日志",
+                "Hint": "启用后，Fog Weaver 会向浏览器控制台写入诊断日志消息。正常游玩时关闭；排查问题时开启。"
+            }
+        },
+        "Controls": {
+            "Title": "Fog Weaver",
+            "RevealCircle": "揭示——圆形",
+            "RevealRect": "揭示——矩形",
+            "RevealLine": "揭示——线条",
+            "RevealFreehand": "揭示——手绘",
+            "Opacity": "迷雾不透明度",
+            "FogTint": "迷雾色调",
+            "FogTintHint": "未探索区域的颜色",
+            "LineThickness": "线条宽度",
+            "HintsTitle": "绘制",
+            "HintDrag": "拖拽：揭示",
+            "HintAlt": "Alt + 拖拽：隐藏",
+            "HintShift": "Shift + 拖拽：从中心（仅形状）",
+            "HintCtrl": "Ctrl + 拖拽：圆形 / 方形（仅形状）",
+            "ResetFog": "重置迷雾",
+            "ResetFogTitle": "重置战争迷雾",
+            "ResetFogContent": "这将清除所有已揭示和隐藏的区域，并清空绘制历史。此操作无法撤销。",
+            "ResetFogContentMultiLevel": "这将清除已揭示和隐藏的区域，并清空绘制历史。此操作无法撤销。请选择要重置的层级。",
+            "ResetFogAllLevels": "所有层级",
+            "ResetFogCurrentLevel": "当前层级",
+            "ResetFogCancel": "取消"
+        },
+        "Warnings": {
+            "SnapshotLarge": "Fog Weaver：{type} 迷雾快照为 {size} KB，超过了 {threshold} KB 的警告阈值。如果迷雾异常膨胀，请考虑重置迷雾。",
+            "SnapshotTypeNormal": "正常视野",
+            "SnapshotTypeWeaver": "GM 绘制"
+        }
+    }
+}

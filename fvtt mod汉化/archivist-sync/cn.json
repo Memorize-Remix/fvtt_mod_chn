@@ -1,4 +1,5 @@
-{"ARCHIVIST_SYNC": {
+{
+  "ARCHIVIST_SYNC": {
     "Settings": {
       "ApiKey": {
         "Name": "API 密钥",
@@ -24,22 +25,18 @@
         "Name": "保留聊天历史",
         "Hint": "启用后，你的聊天会话将按用户和战役保存和恢复。禁用则每次重新开始。"
       },
-	  "ChatVisibility": {
+      "ChatVisibility": {
         "Name": "聊天可见性",
         "Hint": "谁应该可以看到Archivist聊天侧边栏标签？",
         "Options": {
-            "All": "所有人",
-            "GMOnly": "仅GM",
-            "None": "无人"
+          "All": "所有人",
+          "GMOnly": "仅GM",
+          "None": "无人"
         }
       },
-		"ChatGmPermissions": {
-			"Name": "允许在聊天中使用GM私人日志上下文",
-			"Hint": "启用后，GM的聊天请求会在检索时包含私人日志上下文。非GM用户永远不会发送私人上下文。"
-		},
-	  "ChatGmPermissions": {
-        "Name": "Allow GM private journal context in chat",
-        "Hint": "When enabled, GM chat requests include private journal context during retrieval. Non-GM users never send private context."
+      "ChatGmPermissions": {
+        "Name": "允许在聊天中使用 GM 私密日志上下文",
+        "Hint": "启用后，GM 的聊天请求在检索时会包含私密日志上下文。非 GM 用户永远不会发送私密上下文。"
       },
       "MappingOverride": {
         "Name": "映射覆盖 (JSON)",
@@ -174,7 +171,9 @@
       "items": "物品",
       "recaps": "战报",
       "mappingOverride": "映射覆盖 (JSON)",
-      "importProgress": "导入进度"
+      "importProgress": "导入进度",
+      "journals": "日志",
+      "quests": "任务"
     },
     "status": {
       "connected": "已连接",
@@ -232,7 +231,9 @@
       "locationsPulled": "地点拉取成功",
       "charactersPulled": "角色拉取成功",
       "worldInitialized": "FVTT 世界已首次使用 Archivist 初始化",
-      "worldInitializedReset": "世界初始化已重置。重新加载以再次运行设置..."
+      "worldInitializedReset": "世界初始化已重置。重新加载以再次运行设置...",
+      "journalImportNotice": "日志内容与 Archivist 同步。文件夹结构是某一时点的快照，不会持续同步。",
+      "questSynced": "任务已与 Archivist 同步。"
     },
     "errors": {
       "fetchFailed": "从 Archivist API 获取世界失败",
@@ -321,6 +322,35 @@
       "realtimeSync": {
         "name": "实时同步（自动更新 Archivist）",
         "hint": "启用后，你在 FVTT 中进行的更改（创建、编辑或删除角色、物品以及指定的派系/地点日志页面）会立即镜像到 Archivist。战报是只读的：创建战报页面不会在 Archivist 中创建游戏会话，删除战报页面也不会删除 Archivist 中的游戏会话。"
+      }
+    },
+    "quest": {
+      "status": {
+        "planned": "已计划",
+        "inProgress": "进行中",
+        "blocked": "受阻",
+        "failed": "失败",
+        "done": "已完成"
+      },
+      "category": {
+        "main": "主线",
+        "side": "支线",
+        "faction": "派系",
+        "personal": "个人"
+      },
+      "objectiveStatus": {
+        "pending": "待处理",
+        "inProgress": "进行中",
+        "completed": "已完成",
+        "failed": "失败",
+        "blocked": "受阻"
+      },
+      "fields": {
+        "questGiver": "任务发布者",
+        "successDefinition": "成功定义",
+        "failureConditions": "失败条件",
+        "nextAction": "下一步行动",
+        "resolution": "结局"
       }
     }
   }

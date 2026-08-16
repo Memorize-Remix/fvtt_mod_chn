@@ -1,0 +1,28 @@
+{
+	"TOKEN_DEFAULTS.SETTINGS": {
+		"MENU": {
+			"Name": "配置默认值",
+			"Label": "配置默认值",
+			"Title": "Token 默认值配置",
+			"Reset": "全部删除",
+			"Submit": "提交",
+			"Hint": "这些设置适用于所有类型的角色。如果某类角色也单独指定了其中某项设置，则以更具体的设置为准。",
+			"Confirm": {
+				"Label": "重置默认值",
+				"Warning": "这将移除所有已配置的 Token 默认值"
+			}
+		},
+		"TOKEN_CREATE": {
+			"Name": "Token",
+			"Hint": "将默认值应用到新创建的 Token。\"Append Number\" 和 \"Prepend Adjective\" 设置在 Token 上不存在，会被忽略。"
+		},
+		"ACTOR_CREATE": {
+			"Name": "原型 Token",
+			"Hint": "将默认值应用到新建角色的原型 Token。"
+		},
+		"COMPENDIUM": {
+			"Name": "合集角色",
+			"Hint": "将默认值应用到合集中新建角色的原型 Token。仅当「原型 Token」设置同时启用时才生效。"
+		}
+	}
+}

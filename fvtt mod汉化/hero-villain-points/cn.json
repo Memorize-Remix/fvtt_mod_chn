@@ -1,0 +1,101 @@
+{
+  "HEROVILLAIN": {
+    "Title": "英雄 / 反派",
+    "Settings": {
+      "TotalPoints": {
+        "Name": "圆圈数量",
+        "Hint": "共享点数池的固定大小（1–20）。英雄 + 反派始终等于该总数。"
+      },
+      "DefaultHero": {
+        "Name": "初始英雄点数",
+        "Hint": "首次创建或修复点数池时英雄的初始点数。不会重置已有的战役点数池。"
+      },
+      "AllowPlayerFlip": {
+        "Name": "允许玩家点击",
+        "Hint": "开启时，玩家点击会请求翻转，由在场的 GM 执行。关闭时，只有 GM 可以改变点数池。"
+      },
+      "AnnounceFlips": {
+        "Name": "在聊天中播报翻转",
+        "Hint": "开启时，每次翻转都会在公共聊天中发布一条简短消息，显示新的点数。"
+      },
+      "AnnounceTides": {
+        "Name": "播报局势逆转时刻",
+        "Hint": "开启时，当点数池领先方易主或变为全英雄 / 全反派时，会在聊天中播报。"
+      },
+      "ShowSceneControl": {
+        "Name": "显示工具栏按钮",
+        "Hint": "添加一个 Token 控制按钮，用于打开或关闭追踪器（仅本客户端）。"
+      },
+      "PlaySound": {
+        "Name": "播放翻转音效",
+        "Hint": "共享点数池变化时播放轻柔的咔嗒声（仅本客户端）。"
+      },
+      "CircleSize": {
+        "Name": "圆圈大小",
+        "Hint": "圆圈在您眼中的显示大小。",
+        "Compact": "紧凑",
+        "Comfortable": "舒适",
+        "Large": "大"
+      },
+      "AutoOpen": {
+        "Name": "加载时打开追踪器",
+        "Hint": "加入世界时自动打开英雄 / 反派窗口。"
+      },
+      "ColorHero": {
+        "Name": "英雄圆圈颜色",
+        "Hint": "英雄圆圈的填充颜色。默认：暖象牙白（#E8E0C8）。"
+      },
+      "ColorHeroBorder": {
+        "Name": "英雄圆圈描边",
+        "Hint": "英雄圆圈的边框颜色。默认：古董金（#D2A33A）。"
+      },
+      "ColorVillain": {
+        "Name": "反派圆圈颜色",
+        "Hint": "反派圆圈的填充颜色。默认：古门蓝（#183159）。"
+      },
+      "ColorVillainBorder": {
+        "Name": "反派圆圈描边",
+        "Hint": "反派圆圈的边框颜色。默认：炭黑（#282421）。"
+      },
+      "ColorPanel": {
+        "Name": "面板基础颜色",
+        "Hint": "追踪器背景较深的一端。默认：炭黑（#282421）。"
+      },
+      "ColorPanelAlt": {
+        "Name": "面板高亮颜色",
+        "Hint": "追踪器背景渐变中较浓郁的一端。默认：古门蓝（#183159）。"
+      },
+      "ColorAccent": {
+        "Name": "点缀 / 绣饰",
+        "Hint": "聚焦环和高亮处的金色描边。默认：古董金（#D2A33A）。"
+      },
+      "ColorCopper": {
+        "Name": "配件 / 铜色细节",
+        "Hint": "用于细微混色的次要暖色金属。默认：陈铜色（#9E7D67）。"
+      }
+    },
+    "Controls": {
+      "OpenTracker": "英雄 / 反派点数",
+      "ToggleKeybind": "切换英雄 / 反派追踪器",
+      "ToggleKeybindHint": "打开或关闭共享的英雄 / 反派窗口。"
+    },
+    "Warnings": {
+      "NoGM": "当前没有 GM 在场执行该翻转。点数池保持不变。",
+      "NotAllowed": "目前只有 GM 可以翻转点数。",
+      "RequestSent": "已请求翻转——正在等待 GM。"
+    },
+    "Chat": {
+      "TowardHero": "偏向英雄",
+      "TowardVillain": "偏向反派",
+      "ByUser": " — {name}",
+      "Flip": "点数平衡偏向{toward}（{hero}–{villain}）{who}。",
+      "HeroPoint": "英雄",
+      "VillainPoint": "反派",
+      "RequestWhisper": "{name} 请求了一次{side}翻转。",
+      "TideAllHero": "局势逆转：点数池全部为英雄（{hero}–{villain}）。",
+      "TideAllVillain": "局势逆转：点数池全部为反派（{hero}–{villain}）。",
+      "TideSwungHero": "局势逆转：英雄取得领先（{hero}–{villain}）。",
+      "TideSwungVillain": "局势逆转：反派取得领先（{hero}–{villain}）。"
+    }
+  }
+}

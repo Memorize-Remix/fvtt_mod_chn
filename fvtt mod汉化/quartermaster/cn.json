@@ -1,0 +1,166 @@
+{
+  "quartermaster": {
+    "title": "Quartermaster",
+    "buttons": {
+      "sharedPartyInventory": "共享队伍库存",
+      "gmLootPrep": "GM 战利品准备",
+      "inventoryToken": "放置库存 Token",
+      "log": "交易记录",
+      "preferences": "偏好设置"
+    },
+    "settings": {
+      "enforceCapacity": {
+        "name": "强制容量上限",
+        "hint": "启用后，库存将遵循重量上限。默认 500 磅与次元袋（Bag of Holding）一致。禁用则容量无限制。"
+      },
+      "capacityLimit": {
+        "name": "容量上限（磅）",
+        "hint": "启用「强制容量上限」时的重量上限。次元袋标准为 500。"
+      },
+      "applyCurrencyWeight": {
+        "name": "货币计入重量",
+        "hint": "启用后，货币重量会计入容量总数。内置货币使用 dnd5e 标准（每磅 50 枚硬币）；自定义货币使用其可选单位重量。默认关闭。"
+      },
+      "currencyApprovalMode": {
+        "name": "货币审批模式",
+        "hint": "控制玩家更改共享货币数值时是否需要 GM 审批。"
+      },
+      "currencyApprovalThreshold": {
+        "name": "审批阈值（参考货币）",
+        "hint": "当模式为「阈值」时，达到或超过此数值的更改需要 GM 审批。货币更改会换算为在「管理货币」中选择的参考货币。"
+      },
+      "useApprovalTimeout": {
+        "name": "使用审批超时",
+        "hint": "启用后，若 GM 未在指定时间内响应，待处理的货币审批请求将自动批准。"
+      },
+      "approvalTimeoutSeconds": {
+        "name": "审批超时（秒）",
+        "hint": "启用超时后，待处理审批自动批准前的等待时间。"
+      },
+      "denialNotification": {
+        "name": "拒绝通知范围",
+        "hint": "当 GM 拒绝货币请求时，谁可以看到拒绝的聊天消息。"
+      },
+      "reasonFieldEnabled": {
+        "name": "在请求中显示原因字段",
+        "hint": "启用后，玩家在请求更改货币时可选地填写原因。"
+      },
+      "resendCooldownSeconds": {
+        "name": "重新发送冷却（秒）",
+        "hint": "玩家在向 GM 重新发送审批请求前必须等待的时间。"
+      },
+      "unidentifiedDisplay": {
+        "name": "未鉴定物品显示",
+        "hint": "标记为未鉴定的物品在库存中的显示方式。"
+      },
+      "inventoryButtonLabel": {
+        "name": "库存按钮名称",
+        "hint": "库存按钮和弹窗显示的自定义名称。留空则使用默认值。"
+      },
+      "inventoryBackgroundImage": {
+        "name": "库存背景图片",
+        "hint": "可选图片，在库存弹窗内以淡色水印形式显示。"
+      },
+      "hidePricesFromPlayers": {
+        "name": "对玩家隐藏物品价格",
+        "hint": "启用后，库存中的物品价格将对玩家隐藏。GM 仍可看到价格。"
+      },
+      "enableInventoryToken": {
+        "name": "启用库存 Token 快捷方式",
+        "hint": "启用后，GM 可以放置一个场景 Token，双击即可打开库存。"
+      },
+      "inventoryTokenName": {
+        "name": "库存 Token 名称",
+        "hint": "新放置的库存快捷 Token 的可选名称。留空则使用库存按钮名称。"
+      },
+      "inventoryTokenImage": {
+        "name": "库存 Token 图片",
+        "hint": "新放置的库存快捷 Token 的可选图片。留空则使用 Quartermaster 金库图片。"
+      },
+      "defaultEntrySize": {
+        "name": "默认条目大小",
+        "hint": "库存中的默认行大小。每位玩家可通过客户端设置覆盖。"
+      },
+      "sortOrder": {
+        "name": "默认排序方式",
+        "hint": "货币、计数器和物品在列表中出现的顺序。"
+      },
+      "hideZeroBalances": {
+        "name": "隐藏余额为零的货币",
+        "hint": "启用后，余额为零的货币将被隐藏，直到它们拥有数值。"
+      },
+      "transactionLogCap": {
+        "name": "交易记录上限",
+        "hint": "保留的日志条目最大数量。达到上限时，较早的条目会被裁剪。设为 0 表示无限制。"
+      },
+      "transactionLogVisibility": {
+        "name": "交易记录可见性",
+        "hint": "谁可以打开并查看交易记录。"
+      },
+      "requestAgeMaxSeconds": {
+        "name": "请求最大时限（秒）",
+        "hint": "拒绝超过此秒数的 socket 请求，防止重连后发生重放风暴。默认 30 秒适合常规跑团场景。"
+      },
+      "recentRequestCacheSize": {
+        "name": "近期请求缓存大小",
+        "hint": "内存中保留的近期请求 ID 最大数量，用于快速幂等性检查。较大的值会略微占用更多内存，但可减少重复的数据库查询。默认 5000 相当充裕。"
+      },
+      "uiRefreshDebounceMs": {
+        "name": "UI 刷新防抖（毫秒）",
+        "hint": "将快速的后备角色更新合并为一次弹窗重渲染的时间窗口。较高的值可使批量操作更流畅，但会带来轻微视觉延迟。100 毫秒是 v0.5 的默认值；设为 0 可禁用防抖。"
+      },
+      "logDefaultPhaseFilter": {
+        "name": "默认阶段筛选",
+        "hint": "打开交易记录时选中的阶段筛选。"
+      },
+      "logDefaultCategoryFilter": {
+        "name": "默认类别筛选",
+        "hint": "打开交易记录时选中的类别筛选。"
+      },
+      "logAutoExpandGroups": {
+        "name": "自动展开分组",
+        "hint": "打开交易记录时展开所有日志条目分组。"
+      },
+      "hideElectrum": {
+        "name": "隐藏电镍币",
+        "hint": "从货币显示中移除电镍币（EP）。"
+      }
+    },
+    "choices": {
+      "currencyApprovalMode": {
+        "free": "自由 —— 无需审批",
+        "threshold": "阈值 —— 超过设定金额需审批",
+        "allRequired": "全部需要 —— 每次更改都需审批"
+      },
+      "denialNotification": {
+        "group": "整个队伍",
+        "player": "仅请求的玩家"
+      },
+      "unidentifiedDisplay": {
+        "unidentified": "仅未鉴定名称",
+        "identified": "始终显示已鉴定名称",
+        "perItem": "按物品 —— GM 逐个配置"
+      },
+      "entrySize": {
+        "compact": "紧凑",
+        "medium": "中等",
+        "large": "大"
+      },
+      "sortOrder": {
+        "currencyFirst": "货币优先，然后是计数器，最后是物品",
+        "alphabetical": "按字母顺序",
+        "byType": "按物品类型",
+        "custom": "手动（自定义顺序）"
+      },
+      "logVisibility": {
+        "all": "所有用户",
+        "gmOnly": "仅 GM"
+      }
+    },
+    "messages": {
+      "loaded": "Quartermaster 已加载。",
+      "backingActorCreated": "已创建 Quartermaster 后备角色。",
+      "backingActorMissing": "未找到 Quartermaster 后备角色。将在下次加载世界时创建。"
+    }
+  }
+}

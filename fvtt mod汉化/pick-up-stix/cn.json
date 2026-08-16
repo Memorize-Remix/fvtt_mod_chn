@@ -1,0 +1,373 @@
+{
+  "INTERACTIVE_ITEMS": {
+    "Title": "交互物品",
+    "Settings": {
+      "ActorFolder": {
+        "Name": "角色文件夹",
+        "Hint": "用于整理交互对象角色的文件夹。选择一个现有文件夹，或输入新名称以创建文件夹。",
+        "Placeholder": "输入新的文件夹名称……",
+        "Existing": "现有文件夹"
+      },
+      "FolderColor": {
+        "Name": "文件夹颜色",
+        "Hint": "应用于整理交互对象所用的角色文件夹的颜色。更改会立即应用到现有文件夹。"
+      },
+      "DefaultContainerImage": {
+        "Name": "默认容器图像（关闭）",
+        "Hint": "新建容器（关闭状态）时使用的默认 Token 图像。"
+      },
+      "DefaultContainerOpenImage": {
+        "Name": "默认容器图像（打开）",
+        "Hint": "容器首次打开时使用的默认 Token 图像。"
+      },
+      "DefaultInteractionRange": {
+        "Name": "默认交互距离",
+        "Hint": "新交互角色允许拾取 / 打开 / 关闭 / 锁定的距离，以网格格数计。0 = 无限制。"
+      },
+      "DefaultInspectionRange": {
+        "Name": "默认查看距离",
+        "Hint": "新交互角色允许查看名牌 / 物品卡的距离，以网格格数计。0 = 无限制。"
+      },
+      "RequireCtrlForDrag": {
+        "Name": "拖拽操作需按住 Ctrl",
+        "Hint": "启用后，将物品或交互角色从侧边栏拖到画布上时需要按住 Ctrl 键（macOS 上为 Cmd）。其他所有放置操作（角色卡到角色卡、存入容器等）不受影响。"
+      },
+      "GMOverrideEnabled": {
+        "Name": "启用 GM 覆盖",
+        "Hint": "启用后，GM 可以无视玩家限制（距离、鉴定状态、锁定状态等）看到并交互所有内容。禁用以预览模组在玩家视角下的表现。该设置为每个客户端独立，不影响其他 GM。"
+      },
+      "GenericPickupItemType": {
+        "Name": "通用模式——拾取物品类型",
+        "Hint": "（仅通用模式）玩家拾取交互对象时所用的物品类型。首次启动时若检测到可能匹配的类型会自动设置；否则会通过对话框提示。若检测结果有误，可在此更改。"
+      },
+      "VendorFavorMax": {
+        "Name": "最大好感度",
+        "Hint": "好感度的绝对上限。商人可设置的范围为 −最大 到 +最大（例如 5 表示允许 −5 到 +5）。"
+      },
+      "VendorFavorFactorMax": {
+        "Name": "最大好感系数",
+        "Hint": "商人可设置的最高好感系数（每点好感度的百分比）。最小值恒为 1。"
+      },
+      "VendorMaxPriceFactor": {
+        "Name": "最大价格系数",
+        "Hint": "商人可为每个分组设置的最高价格系数（百分比），例如 500 表示最高 ×5.00。最小值恒为 0。"
+      },
+      "UseOnlyAvailableCurrency": {
+        "Name": "仅使用可用货币",
+        "Hint": "开启时，购买仅使用买家与商人实际持有的硬币——若无法精确找零，则无法购买该物品。关闭时，将按需生成找零。"
+      },
+      "InteractiveItemSettingsMenu": {
+        "Name": "交互物品设置",
+        "Hint": "配置 GM 覆盖、文件夹整理、容器图像、距离默认值与拖拽行为。",
+        "Label": "打开设置"
+      },
+      "VendorSettingsMenu": {
+        "Name": "商人设置",
+        "Hint": "配置应用于商人定价的好感度范围与好感系数区间。",
+        "Label": "打开设置"
+      }
+    },
+    "FolderToggle": {
+      "Show": "显示临时角色",
+      "Hide": "隐藏临时角色"
+    },
+    "ObjectType": {
+      "Item": "物品",
+      "Container": "容器"
+    },
+    "Sheet": {
+      "Tab": {
+        "Details": "详情",
+        "Contents": "内容"
+      },
+      "NeedsItem": "从物品侧边栏拖入一个物品到此角色卡，以初始化此交互对象。",
+      "NeedsModeGeneric": "此交互对象未设置模式。请关闭此对话框并重新创建角色，以选择物品或容器模式。",
+      "Contents": "内容",
+      "Empty": "空",
+      "Closed": "此容器已关闭。",
+      "Locked": "此容器已锁定。",
+      "ToggleOpen": "打开 / 关闭",
+      "ToggleLock": "锁定 / 解锁",
+      "StateLocked": "已锁定",
+      "StateUnlocked": "已解锁",
+      "StateOpened": "已打开",
+      "StateClosed": "已关闭",
+      "InteractionRange": "交互距离（格）",
+      "InspectionRange": "查看距离（格）",
+      "NameLabel": "名称",
+      "Name": "名称",
+      "Quantity": "数量",
+      "QuantityIncrease": "增加数量（+1，Shift +5，Ctrl +10）",
+      "QuantityDecrease": "减少数量（-1，Shift -5，Ctrl -10）",
+      "Bulk": "体积",
+      "NamePlaceholder": "此对象的名称……",
+      "UnidentifiedName": "未鉴定名称",
+      "UnidentifiedNamePlaceholder": "未鉴定时显示的名称……",
+      "LimitedName": "受限名称",
+      "LimitedNamePlaceholder": "远处观察者看到的内容……",
+      "Description": "描述",
+      "UnidentifiedDescription": "未鉴定描述",
+      "LimitedDescription": "受限描述",
+      "ToggleIdentified": "切换鉴定状态",
+      "Identified": "已鉴定",
+      "Unidentified": "未鉴定",
+      "OpenImage": "打开图像",
+      "OpenImageHint": "容器打开时 Token 上显示的图像",
+      "UnidentifiedImage": "未鉴定图像",
+      "DeleteItem": "删除物品",
+      "InteractiveObjectItem": "交互对象",
+      "ClearContents": "清空所有内容",
+      "LockedMessage": "锁定消息",
+      "LockedMessagePlaceholder": "锁定时显示的自定义消息……",
+      "Configure": "配置",
+      "ConfigLegend": "交互对象设置",
+      "ViewItemSheet": "打开物品卡",
+      "ViewContainerSheet": "打开容器",
+      "ConfigureHUD": "交互物品配置"
+    },
+    "HUD": {
+      "Inspect": "查看",
+      "PickUp": "拾取",
+      "SplitStack": "拆分堆叠",
+      "Open": "打开",
+      "Close": "关闭",
+      "Identify": "鉴定",
+      "Unidentify": "标记为未鉴定"
+    },
+    "Notify": {
+      "Locked": "此容器已锁定。",
+      "ItemLocked": "无法拾取此物品。",
+      "Placed": "已将 {name} 放置到场景中。",
+      "PickedUp": "已拾取 {name}。",
+      "Deposited": "已存入 {name}。",
+      "Split": "已从堆叠中拆分出 {name}。",
+      "PlacedByPlayer": "{player} 将 {name} 放置到场景中。",
+      "PickedUpByPlayer": "{player} 拾取了 {name}。",
+      "DepositedByPlayer": "{player} 存入了 {name}。",
+      "SplitByPlayer": "{player} 从堆叠中拆分出 {name}。",
+      "Purchased": "你从 {vendor} 处购买了 {name}。",
+      "PurchasedByPlayer": "{player} 从 {vendor} 处购买了 {name}。",
+      "PurchasedQty": "你从 {vendor} 处购买了 {name} ×{quantity}。",
+      "PurchasedQtyByPlayer": "{player} 从 {vendor} 处购买了 {name} ×{quantity}。",
+      "NotEnoughCoin": "你买不起 {name}。",
+      "NoChange": "此购买无法用现有硬币结算。",
+      "NoBuyer": "请选择一个 Token 或分配角色以进行购买。",
+      "TransferError": "转移物品失败。",
+      "NoCharacter": "未分配角色。请在用户配置中设置你的角色。",
+      "NoItems": "没有可拾取的物品。",
+      "ContainerClosed": "此容器已关闭。",
+      "NotPhysical": "只有实体物品可以放入容器。",
+      "TooFar": "你距离太远，无法与之交互。",
+      "NotInitialized": "此交互对象需要先绑定一个物品，才能放置到画布上。",
+      "NoToken": "画布上未找到此角色的 Token。",
+      "NoContainerInContainer": "容器不能放入其他容器。",
+      "CannotGiveContainer": "容器类型的交互对象不能放入玩家的物品栏。",
+      "NoSceneActors": "此场景中未找到符合条件的角色。",
+      "GenericMode": "Pick-Up-Stix 正在为系统 '{system}' 以通用模式运行。某些系统专属功能（例如原生鉴定）已禁用。物品栏转移所用的拾取物品类型可在模组设置中配置。"
+    },
+    "Context": {
+      "DropItem": "放下物品",
+      "RevealItem": "显示（交互）",
+      "HideItem": "隐藏（交互）"
+    },
+    "CreatePickerTitle": "创建交互对象",
+    "CreateInteractiveItem": "交互物品",
+    "CreateInteractiveContainer": "交互容器",
+    "DefaultItemName": "新交互物品",
+    "DefaultContainerName": "新交互容器",
+    "Controls": {
+      "ToolsTool": "交互物品工具",
+      "EnableGMOverride": "启用 GM 覆盖",
+      "DisableGMOverride": "禁用 GM 覆盖"
+    },
+    "Dialog": {
+      "PlaceTitle": "放置交互对象",
+      "ChooseType": "交互对象类型",
+      "ChooseTypeHint": "这是什么类型的交互对象？",
+      "Name": "名称",
+      "Type": "对象类型",
+      "Create": "创建",
+      "CreateTemplateTitle": "将 \"{name}\" 放置到画布",
+      "CreateTemplateHint": "此物品应以何种方式放置到画布上？",
+      "CreateTemplateTemplated": "模板化",
+      "CreateTemplateTemplatedHint": "在交互对象文件夹中创建一个持久角色。Token 被移除后角色仍会保留，可稍后再次放置。",
+      "CreateTemplateEphemeral": "临时",
+      "CreateTemplateEphemeralHint": "放置一个临时 Token，不创建持久角色。删除 Token 时角色会自动移除。",
+      "Close": "关闭",
+      "PickupTargetTitle": "将物品给予……",
+      "PickupTargetHint": "选择接收此物品的角色。",
+      "PickupTargetSearch": "筛选角色……",
+      "PlaceOnCanvas": "放置到画布",
+      "DropTargetTitle": "将 \"{name}\" 放到哪里？",
+      "TokenMoveTitle": "将 \"{name}\" 移动到哪里？",
+      "DropTargetHint": "放置位置与一个 Token 重叠。请在下方选择操作。",
+      "MultiDropTargetHint": "放置位置与 {count} 个 Token 重叠。请在下方选择操作。",
+      "TokenMoveHint": "目标位置已被占用。请选择是将 Token 移动到这里，还是存入物品。",
+      "TokenMultiMoveHint": "目标位置与 {count} 个 Token 重叠。请选择是将 Token 移动到这里，还是选择接收者。",
+      "DepositToActor": "存入 {name}",
+      "ChooseRecipient": "选择接收者……",
+      "MoveToPosition": "移动到该位置",
+      "QuantityTitle": "需要多少个 \"{name}\"？",
+      "QuantityActionMove": "此堆叠应移动多少个？",
+      "QuantityActionPlace": "要在画布上放置多少个？",
+      "QuantityActionDeposit": "要存入 {target} 多少个？",
+      "QuantityActionGive": "要给予 {target} 多少个？",
+      "QuantityActionPickup": "要拾取多少个放入 {target}？",
+      "QuantityActionSplit": "要拆分出多少个？",
+      "QuantityActionDelete": "要从该堆叠中移除多少个？",
+      "QuantityActionDeleteMulti": "请选择要从每个堆叠中移除的数量。",
+      "QuantityBatchTitle": "从 {count} 个堆叠中删除",
+      "QuantityLabel": "数量",
+      "QuantityRange": "请选择 1 到 {max} 之间的数值。",
+      "QuantityMin": "最小",
+      "QuantityMax": "最大",
+      "QuantityConfirm": "确认",
+      "QuantityCancel": "取消",
+      "Confirm": "确认",
+      "PickPickupType": {
+        "Title": "Pick-Up-Stix——选择拾取物品类型",
+        "Body": "在系统 '{system}' 中未找到与 'item'、'loot'、'gear'、'equipment'、'treasure' 或 'consumable' 匹配的物品类型。请选择玩家拾取交互对象时模组应使用的物品类型。你之后可以在模组设置中更改。",
+        "Label": "拾取物品类型："
+      }
+    },
+    "Light": {
+      "Title": "光照",
+      "ConfigureActive": "光照（已配置）",
+      "ConfigureInactive": "光照",
+      "ToggleOn": "开启光照",
+      "ToggleOff": "关闭光照",
+      "RowTooltipActive": "光照已开启（点击关闭）",
+      "RowTooltipInactive": "光照已关闭（点击开启）"
+    },
+    "Limited": {
+      "DefaultContainerName": "某种容器",
+      "DefaultItemName": "某种 {type}",
+      "DefaultItemTypeGeneric": "物品",
+      "DefaultDescription": "你距离太远，无法看清任何细节。",
+      "AppearsOpen": "它看起来是打开的。",
+      "AppearsClosed": "它看起来是关闭的。"
+    },
+    "Container": {
+      "ContentsHidden": "你距离太远，无法看清内容",
+      "Empty": "此容器是空的。"
+    },
+    "Model": {
+      "FIELDS": {
+        "objectType": {
+          "label": "对象类型",
+          "hint": "这是一个普通物品还是一个容器"
+        },
+        "description": {
+          "label": "描述",
+          "hint": "此对象的描述"
+        },
+        "isOpen": {
+          "label": "打开",
+          "hint": "此容器当前是否打开"
+        },
+        "isLocked": {
+          "label": "锁定",
+          "hint": "此容器是否锁定"
+        },
+        "openImage": {
+          "label": "打开图像",
+          "hint": "此容器打开时显示的 Token 图像"
+        },
+        "unidentifiedImage": {
+          "label": "未鉴定图像",
+          "hint": "此物品未鉴定时显示的 Token 图像"
+        },
+        "unidentifiedName": {
+          "label": "未鉴定名称",
+          "hint": "鉴定前显示给玩家的名称"
+        },
+        "unidentifiedDescription": {
+          "label": "未鉴定描述",
+          "hint": "鉴定前显示给玩家的描述"
+        },
+        "isIdentified": {
+          "label": "已鉴定",
+          "hint": "玩家是否可以看到真实名称和描述"
+        },
+        "lockedMessage": {
+          "label": "锁定消息",
+          "hint": "玩家尝试与此锁定对象交互时显示的自定义消息"
+        }
+      }
+    },
+    "Vendor": {
+      "Description": "描述",
+      "Buy": "购买",
+      "Empty": "此商人没有出售任何商品。",
+      "ShopTab": "商店",
+      "Delete": "删除",
+      "StockHint": "将物品拖到这里为商人备货。使用每行上的控件调整数量或移除。",
+      "Col": { "Rarity": "稀有度", "Stock": "库存", "Price": "价格" },
+      "Group": { "Type": "类型" },
+      "Filter": {
+        "Rarity": "稀有度",
+        "All": "全部",
+        "Affordable": "买得起",
+        "AffordableTooltip": "隐藏你买不起的商品。堆叠仅显示你可购买的数量。",
+        "Reset": "重置筛选",
+        "NoneAffordable": "当前这里没有买得起的商品。"
+      },
+      "ToggleShopVisible": "在商店中显示 / 隐藏",
+      "ViewDetails": "点击查看详情",
+      "AddToCart": "加入 / 移出购物车",
+      "ClearCart": "清空购物车",
+      "CartTotal": "购物车总计",
+      "CartCount": "购物车中的物品",
+      "CartQty": "购买数量",
+      "AllShop": "全部",
+      "ToggleAllShop": "全部加入 / 全部移出商店",
+      "Favor": "好感度",
+      "FavorTooltip": "此商人为队伍定价的优惠程度。正值为折扣，负值为加价。",
+      "FavorFactor": "好感系数",
+      "FavorFactorTooltip": "每点好感度所应用的百分比。默认 4 表示每点好感度使价格变动 4%。",
+      "Settings": "商人设置",
+      "SettingsToggle": "显示 / 隐藏商人设置",
+      "SettingsBy": {
+        "Label": "设置依据",
+        "Type": "类型",
+        "Rarity": "稀有度"
+      },
+      "GlobalFactor": {
+        "Label": "全局系数",
+        "Tooltip": "应用于所有物品。与其他系数叠加。"
+      },
+      "Factor": {
+        "Items": "物品",
+        "Hint": "价格系数——最大为",
+        "Empty": "物品栏中没有可配置的物品。"
+      },
+      "Queue": {
+        "SwitchTitle": "切换商店？",
+        "SwitchPrompt": "你已在 {from} 处排队。加入 {to} 将离开 {from} 的队列。",
+        "SwitchConfirm": "加入此队列",
+        "Active": "正在购物",
+        "Waiting": "排队等待中",
+        "Title": "购物队列",
+        "Toggle": "显示 / 隐藏购物队列"
+      },
+      "SetInventory": "设为默认库存",
+      "SetInventoryDone": "已将 {count} 个物品保存为此商人的默认库存。",
+      "Restock": "按默认补货",
+      "RestockNoDefault": "尚未保存默认库存——请先使用“设为默认库存”。",
+      "RestockNothing": "库存已与保存的默认值一致。",
+      "RestockDone": "补货完成——新增 {created} 个，补货 {increased} 个，移除 {removed} 个。",
+      "RestockConfirmTitle": "移除多余库存？",
+      "RestockConfirmPrompt": "缺失的物品和数量将被补回。以下物品超出保存的默认值，可以移除：",
+      "RestockExtraQtyRow": "{name}：移除 {remove} 个多余",
+      "RestockExtraItemRow": "{name}（×{qty}）：不在默认库存中",
+      "RestockRemove": "移除多余",
+      "RestockKeep": "保留多余"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "pick-up-stix.interactiveItem": "交互对象",
+      "pick-up-stix.vendor": "商人"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "RPGXLOOTCRATE": {
+    "Title": "RPGX Loot Crate",
+    "Settings": {
+      "ProtonUrl": {
+        "Name": "RPGX Proton 服务器 URL",
+        "Hint": "你正在运行的 RPGX Proton 实例的 URL。PRO 功能与 AI 生成必需。"
+      },
+      "ProtonModel": {
+        "Name": "AI 语言模型",
+        "Hint": "用于 AI 物品生成的 Ollama 模型，必须已安装到 Proton 中。"
+      },
+      "ConfirmDelete": {
+        "Name": "确认删除箱子",
+        "Hint": "删除时需输入箱子名称以确认。"
+      }
+    },
+    "Tabs": {
+      "PartyCrates": "战利品箱",
+      "Trade": "交易物品",
+      "Craft": "制作物品"
+    },
+    "Crates": {
+      "New": "新建箱子",
+      "Delete": "删除箱子",
+      "Empty": "还没有战利品箱。",
+      "EmptySub": "创建一个即可与你的队伍分享物品和货币。"
+    },
+    "Trade": {
+      "Request": "发送交易请求",
+      "Accept": "接受",
+      "Decline": "拒绝",
+      "Confirm": "确认我的报价",
+      "Cancel": "取消交易"
+    },
+    "Craft": {
+      "Begin": "开始制作",
+      "Submit": "提交 GM 审核",
+      "Approve": "批准",
+      "Deny": "拒绝",
+      "Award": "发放",
+      "Rest": "休息"
+    }
+  }
+}

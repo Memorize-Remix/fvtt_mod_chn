@@ -1,4 +1,6 @@
-{"MINI_UPLOADER": {
+{
+    "MINI_UPLOADER": {
+    "welcomePageHTML" : "<div> <h4><strong>Welcome to Mini Uploader</strong></h4> <strong>Get involved</strong> <p><a href=\"https://discord.com/invite/fycwH79s2y\" class=\"button\"><i class=\"fab fa-discord\"></i> Discord</a></p> <p><a href=\"https://bsky.app/profile/wgtngm.bsky.social\" class=\"button\"> <i class=\"fab fa-bluesky\"></i> Bluesky</a></p> <p><a href=\"https://github.com/xthesaintx/wgtngm/issues\" class=\"button\"><i class=\"fas fa-bug\"></i> Bug Reports</a></p> <hr> <strong>Documentation</strong> <p><a href=\"https://campaigncodex.wgtngm.com/mini-uploader\" class=\"button\"><i class=\"fas fa-book\"></i> wgtngm.com</a></p> <p><a href=\"https://www.youtube.com/@WgtnGM\" class=\"button\"><i class=\"fab fa-youtube\"></i> youtube.com/@WgtnGM</a></p> <hr> <strong>Support the modules</strong> <p><a href=\"https://www.patreon.com/wgtngm\" class=\"button\"><i class=\"fab fa-patreon\"></i> Patreon.com/wgtngm</a></p> <p><a href=\"https://ko-fi.com/wgtngm\" class=\"button\"><i class=\"fas fa-coffee\"></i> ko-fi.com/wgtngm</a></p> <hr> <strong>See what else is available</strong> <p><a href=\"https://www.wgtngm.com/\" class=\"button\"><i class=\"fas fa-globe\"></i> www.wgtngm.com</a></p> <p><a href=\"https://foundryvtt.com/community/xthesaintx/packages\" class=\"button\"><i class=\"fas fa-cubes\"></i> All my foundry VTT Packages</a></p> <hr> </div>",
         "Settings": {
             "UploadFolder": {
                 "Name": "上传文件夹",
@@ -12,6 +14,26 @@
                 "Name": "WebP质量",
                 "Hint": "WebP转换的质量（0.1 = 最低，1.0 = 最高）。"
             },
+            "includeWorldId": {
+                "Name": "在路径中包含世界ID",
+                "Hint": "添加一个以当前世界ID命名的子文件夹。"
+            },
+            "subfolderByType": {
+                "Name": "按类型添加子文件夹",
+                "Hint": "启用后，上传的文件将放入图像、视频或音频子文件夹。SVG 上传始终放入 svg 子文件夹。"
+            },
+            "ConvertMonotoneSvgToWhite": {
+                "Name": "调亮深色单色SVG",
+                "Hint": "启用后，深色灰度单色SVG上传将保存为浅色以便着色。"
+            },
+            "KeepOriginalSvg": {
+                "Name": "保留原始SVG",
+                "Hint": "启用后，被转换SVG的原始文件保留在 svg 中，处理后的SVG保存在 svg/converted 中。"
+            },
+            "StampAllUploads": {
+                "Name": "为所有上传添加时间戳",
+                "Hint": "转换后的文件会获得唯一的时间戳。启用此选项可为所有上传添加时间戳。"
+            },
             "ShowNotifications": {
                 "Name": "显示通知",
                 "Hint": "上传图像时显示通知消息。"
@@ -19,6 +41,10 @@
             "CreateJournalIfMissing": {
                 "Name": "自动创建日志",
                 "Hint": "如果目标日志不存在，则自动创建。"
+            },
+            "CreatePlaylistIfMissing": {
+                "Name": "自动创建播放列表",
+                "Hint": "如果音频文件的 MiniUploader 播放列表不存在，则自动创建。"
             }
         },
         "Notifications": {

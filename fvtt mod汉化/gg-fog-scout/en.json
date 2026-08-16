@@ -1,0 +1,39 @@
+{
+  "GGFS.brand": "Crónicas Bárdicas",
+  "GGFS.cancel": "Cancel",
+
+  "GGFS.settings.menu.name": "Explorers",
+  "GGFS.settings.menu.label": "Configure explorers",
+  "GGFS.settings.menu.hint": "Choose which users keep the memory of the map they explored.",
+  "GGFS.settings.notifyOnShare.name": "Announce sharing in chat",
+  "GGFS.settings.notifyOnShare.hint": "Whisper a message to the users who receive the shared map.",
+
+  "GGFS.config.title": "GG Fog Scout · Explorers",
+  "GGFS.config.hint": "Checked users keep what they explored. Unchecked users only see what their tokens can see right now, with no memory of the map.",
+  "GGFS.config.note": "Unchecking someone does not erase their saved exploration: it is frozen and returns untouched if you check them again.",
+  "GGFS.config.save": "Save",
+  "GGFS.config.online": "online",
+  "GGFS.config.saved": "Explorers updated.",
+
+  "GGFS.controls.explorers": "Explorers (GG Fog Scout)",
+  "GGFS.controls.share": "Share explored map",
+
+  "GGFS.share.title": "GG Fog Scout · Share map",
+  "GGFS.share.hint": "Copy one user's explored fog to the others on this scene. The classic moment: the scout comes back and draws the map for the party.",
+  "GGFS.share.from": "Copy from",
+  "GGFS.share.to": "Copy to",
+  "GGFS.share.confirm": "Share",
+  "GGFS.share.notExplorer": "no exploration",
+  "GGFS.share.warning": "This overwrites the recipients' exploration on this scene. It cannot be undone.",
+  "GGFS.share.done": "{from}'s map shared with: {to}.",
+  "GGFS.share.chat": "{from} shares the map of what they explored.",
+  "GGFS.share.gmOnly": "Only the GM can share exploration.",
+  "GGFS.share.noCanvas": "There is no active scene.",
+  "GGFS.share.noSource": "Pick a source user.",
+  "GGFS.share.noTargets": "Pick at least one recipient other than the source.",
+  "GGFS.share.sceneOff": "Fog exploration is disabled on this scene.",
+  "GGFS.share.unsupported": "This Foundry version does not expose canvas.fog.sync. Sharing is unavailable.",
+  "GGFS.share.failed": "Could not synchronize exploration. Check the console.",
+
+  "GGFS.warn.notPatched": "GG Fog Scout could not hook into the canvas on this Foundry version. Selective exploration is inactive."
+}

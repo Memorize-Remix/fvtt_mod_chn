@@ -1,0 +1,373 @@
+{
+  "INTERACTIVE_ITEMS": {
+    "Title": "Interactive Items",
+    "Settings": {
+      "ActorFolder": {
+        "Name": "Actor Folder",
+        "Hint": "Folder to organize interactive object actors into. Select an existing folder or type a new name to create one.",
+        "Placeholder": "Type a new folder name...",
+        "Existing": "Existing folders"
+      },
+      "FolderColor": {
+        "Name": "Folder Color",
+        "Hint": "Color applied to the actor folder used to organize interactive objects. Changes apply immediately to the existing folder."
+      },
+      "DefaultContainerImage": {
+        "Name": "Default Container Image (Closed)",
+        "Hint": "Default token image used when a new container is created (closed state)."
+      },
+      "DefaultContainerOpenImage": {
+        "Name": "Default Container Image (Open)",
+        "Hint": "Default token image used when a new container is opened for the first time."
+      },
+      "DefaultInteractionRange": {
+        "Name": "Default Interaction Range",
+        "Hint": "Distance, in grid squares, a new interactive actor allows for pickup / open / close / lock. 0 = unlimited."
+      },
+      "DefaultInspectionRange": {
+        "Name": "Default Inspection Range",
+        "Hint": "Distance, in grid squares, a new interactive actor allows for nameplate / sheet view. 0 = unlimited."
+      },
+      "RequireCtrlForDrag": {
+        "Name": "Require Ctrl for drag actions",
+        "Hint": "When enabled, dragging an item or an interactive actor from the sidebar onto the canvas requires the Ctrl key (Cmd on macOS) to be held. All other drops (sheet-to-sheet, container deposits, etc.) are unaffected."
+      },
+      "GMOverrideEnabled": {
+        "Name": "GM Override Enabled",
+        "Hint": "When enabled, GMs see and interact with everything regardless of player gating (proximity, identification, lock state, etc.). Disable to preview the module as a player would experience it. Per-client; does not affect other GMs."
+      },
+      "GenericPickupItemType": {
+        "Name": "Generic Mode — Pickup Item Type",
+        "Hint": "(Generic mode only) The item type used when a player picks up an interactive object. Set automatically on first launch when a likely candidate is detected; otherwise prompted via dialog. Change here if detection picked the wrong type."
+      },
+      "VendorFavorMax": {
+        "Name": "Max Favor",
+        "Hint": "Absolute Favor ceiling. Vendors can be set from −Max to +Max (e.g. 5 allows −5 to +5)."
+      },
+      "VendorFavorFactorMax": {
+        "Name": "Max Favor Factor",
+        "Hint": "Highest Favor Factor (% per Favor point) a vendor can be set to. Minimum is always 1."
+      },
+      "VendorMaxPriceFactor": {
+        "Name": "Max Price Factor",
+        "Hint": "Highest per-grouping price factor (percent) a vendor can set, e.g. 500 allows up to ×5.00. Minimum is always 0."
+      },
+      "UseOnlyAvailableCurrency": {
+        "Name": "Use only available currency",
+        "Hint": "When on, purchases use only coins the buyer and vendor actually hold — if exact change can't be made, the item can't be bought. When off, change is created as needed."
+      },
+      "InteractiveItemSettingsMenu": {
+        "Name": "Interactive Item Settings",
+        "Hint": "Configure GM overrides, folder organisation, container images, range defaults, and drag behaviour.",
+        "Label": "Open Settings"
+      },
+      "VendorSettingsMenu": {
+        "Name": "Vendor Settings",
+        "Hint": "Configure the Favor bounds and Favor Factor range applied to vendor pricing.",
+        "Label": "Open Settings"
+      }
+    },
+    "FolderToggle": {
+      "Show": "Show Ephemeral Actors",
+      "Hide": "Hide Ephemeral Actors"
+    },
+    "ObjectType": {
+      "Item": "Item",
+      "Container": "Container"
+    },
+    "Sheet": {
+      "Tab": {
+        "Details": "Details",
+        "Contents": "Contents"
+      },
+      "NeedsItem": "Drop an item from the Items sidebar onto this sheet to initialize this interactive object.",
+      "NeedsModeGeneric": "This interactive object has no mode set. Close this dialog and re-create the actor to pick item or container mode.",
+      "Contents": "Contents",
+      "Empty": "Empty",
+      "Closed": "This container is closed.",
+      "Locked": "This container is locked.",
+      "ToggleOpen": "Open / Close",
+      "ToggleLock": "Lock / Unlock",
+      "StateLocked": "Locked",
+      "StateUnlocked": "Unlocked",
+      "StateOpened": "Opened",
+      "StateClosed": "Closed",
+      "InteractionRange": "Interaction Range (squares)",
+      "InspectionRange": "Inspection Range (squares)",
+      "NameLabel": "Name",
+      "Name": "Name",
+      "Quantity": "Qty",
+      "QuantityIncrease": "Increase quantity (+1, Shift +5, Ctrl +10)",
+      "QuantityDecrease": "Decrease quantity (-1, Shift -5, Ctrl -10)",
+      "Bulk": "Bulk",
+      "NamePlaceholder": "Name for this object...",
+      "UnidentifiedName": "Unidentified Name",
+      "UnidentifiedNamePlaceholder": "Name shown when unidentified...",
+      "LimitedName": "Limited Name",
+      "LimitedNamePlaceholder": "What a distant observer sees...",
+      "Description": "Description",
+      "UnidentifiedDescription": "Unidentified Description",
+      "LimitedDescription": "Limited Description",
+      "ToggleIdentified": "Toggle Identified",
+      "Identified": "Identified",
+      "Unidentified": "Unidentified",
+      "OpenImage": "Open Image",
+      "OpenImageHint": "Image shown on the token when the container is open",
+      "UnidentifiedImage": "Unidentified Image",
+      "DeleteItem": "Delete Item",
+      "InteractiveObjectItem": "Interactive Object",
+      "ClearContents": "Clear All Contents",
+      "LockedMessage": "Locked Message",
+      "LockedMessagePlaceholder": "Custom message when locked...",
+      "Configure": "Configure",
+      "ConfigLegend": "Interactive Object Settings",
+      "ViewItemSheet": "Open Item Sheet",
+      "ViewContainerSheet": "Open Container",
+      "ConfigureHUD": "Interactive Item Configuration"
+    },
+    "HUD": {
+      "Inspect": "Inspect",
+      "PickUp": "Pick Up",
+      "SplitStack": "Split stack",
+      "Open": "Open",
+      "Close": "Close",
+      "Identify": "Identify",
+      "Unidentify": "Mark Unidentified"
+    },
+    "Notify": {
+      "Locked": "This container is locked.",
+      "ItemLocked": "This item can not be picked up.",
+      "Placed": "{name} placed on the scene.",
+      "PickedUp": "Picked up {name}.",
+      "Deposited": "Deposited {name}.",
+      "Split": "Split {name} off the stack.",
+      "PlacedByPlayer": "{player} placed {name} on the scene.",
+      "PickedUpByPlayer": "{player} picked up {name}.",
+      "DepositedByPlayer": "{player} deposited {name}.",
+      "SplitByPlayer": "{player} split {name} off the stack.",
+      "Purchased": "You purchased {name} from {vendor}.",
+      "PurchasedByPlayer": "{player} purchased {name} from {vendor}.",
+      "PurchasedQty": "You purchased {name} ×{quantity} from {vendor}.",
+      "PurchasedQtyByPlayer": "{player} purchased {name} ×{quantity} from {vendor}.",
+      "NotEnoughCoin": "You can't afford {name}.",
+      "NoChange": "This purchase can't be settled with available coins.",
+      "NoBuyer": "Select a token or assign a character to make a purchase.",
+      "TransferError": "Failed to transfer item.",
+      "NoCharacter": "No character assigned. Set your character in User Configuration.",
+      "NoItems": "No items to pick up.",
+      "ContainerClosed": "This container is closed.",
+      "NotPhysical": "Only physical items can be placed in containers.",
+      "TooFar": "You are too far away to interact with this.",
+      "NotInitialized": "This interactive object needs an item before it can be placed on the canvas.",
+      "NoToken": "No token found on the canvas for this character.",
+      "NoContainerInContainer": "Containers cannot be placed inside other containers.",
+      "CannotGiveContainer": "Container-type interactive objects cannot be placed in a player's inventory.",
+      "NoSceneActors": "No eligible actors found on this scene.",
+      "GenericMode": "Pick-Up-Stix is running in generic mode for system '{system}'. Some system-specific features (e.g. native identification) are disabled. The pickup item type used for inventory transfers is configurable in module settings."
+    },
+    "Context": {
+      "DropItem": "Drop Item",
+      "RevealItem": "Reveal (Interactive)",
+      "HideItem": "Hide (Interactive)"
+    },
+    "CreatePickerTitle": "Create Interactive Object",
+    "CreateInteractiveItem": "Interactive Item",
+    "CreateInteractiveContainer": "Interactive Container",
+    "DefaultItemName": "New Interactive Item",
+    "DefaultContainerName": "New Interactive Container",
+    "Controls": {
+      "ToolsTool": "Interactive Items Tools",
+      "EnableGMOverride": "Enable GM Override",
+      "DisableGMOverride": "Disable GM Override"
+    },
+    "Dialog": {
+      "PlaceTitle": "Place Interactive Object",
+      "ChooseType": "Interactive Object Type",
+      "ChooseTypeHint": "What kind of interactive object is this?",
+      "Name": "Name",
+      "Type": "Object Type",
+      "Create": "Create",
+      "CreateTemplateTitle": "Place \"{name}\" on Canvas",
+      "CreateTemplateHint": "How should this item be placed on the canvas?",
+      "CreateTemplateTemplated": "Templated",
+      "CreateTemplateTemplatedHint": "Creates a persistent actor in the Interactive Objects folder. The actor remains after the token is removed and can be placed again later.",
+      "CreateTemplateEphemeral": "Ephemeral",
+      "CreateTemplateEphemeralHint": "Places a temporary token with no persistent actor. The actor is automatically removed when the token is deleted.",
+      "Close": "Close",
+      "PickupTargetTitle": "Give Item To...",
+      "PickupTargetHint": "Choose which actor receives the item.",
+      "PickupTargetSearch": "Filter actors...",
+      "PlaceOnCanvas": "Place on Canvas",
+      "DropTargetTitle": "Drop \"{name}\" where?",
+      "TokenMoveTitle": "Move \"{name}\" where?",
+      "DropTargetHint": "The drop location overlaps a token. Choose an action below.",
+      "MultiDropTargetHint": "The drop location overlaps {count} tokens. Choose an action below.",
+      "TokenMoveHint": "The destination is occupied. Choose whether to move the token here or deposit the item.",
+      "TokenMultiMoveHint": "The destination overlaps {count} tokens. Choose whether to move the token here or pick a recipient.",
+      "DepositToActor": "Deposit to {name}",
+      "ChooseRecipient": "Choose Recipient\u2026",
+      "MoveToPosition": "Move to Position",
+      "QuantityTitle": "How many \"{name}\"?",
+      "QuantityActionMove": "How many of this stack should be moved?",
+      "QuantityActionPlace": "How many to place on the canvas?",
+      "QuantityActionDeposit": "How many to deposit into {target}?",
+      "QuantityActionGive": "How many to give to {target}?",
+      "QuantityActionPickup": "How many to pick up into {target}?",
+      "QuantityActionSplit": "Split off how many?",
+      "QuantityActionDelete": "How many to remove from this stack?",
+      "QuantityActionDeleteMulti": "Choose a quantity to remove from each stack.",
+      "QuantityBatchTitle": "Delete from {count} stacks",
+      "QuantityLabel": "Quantity",
+      "QuantityRange": "Choose a value between 1 and {max}.",
+      "QuantityMin": "Min",
+      "QuantityMax": "Max",
+      "QuantityConfirm": "Confirm",
+      "QuantityCancel": "Cancel",
+      "Confirm": "Confirm",
+      "PickPickupType": {
+        "Title": "Pick-Up-Stix — Pick Pickup Item Type",
+        "Body": "No item type matching 'item', 'loot', 'gear', 'equipment', 'treasure', or 'consumable' was found in system '{system}'. Pick which item type the module should use when players pick up interactive objects. You can change this later in module settings.",
+        "Label": "Pickup item type:"
+      }
+    },
+    "Light": {
+      "Title": "Light Emission",
+      "ConfigureActive": "Light Emission (Configured)",
+      "ConfigureInactive": "Light Emission",
+      "ToggleOn": "Turn Light On",
+      "ToggleOff": "Turn Light Off",
+      "RowTooltipActive": "Light On (click to turn off)",
+      "RowTooltipInactive": "Light Off (click to turn on)"
+    },
+    "Limited": {
+      "DefaultContainerName": "A container of some sort",
+      "DefaultItemName": "A {type} of some sort",
+      "DefaultItemTypeGeneric": "item",
+      "DefaultDescription": "You are too far away to discern any details.",
+      "AppearsOpen": "It appears to be open.",
+      "AppearsClosed": "It appears to be closed."
+    },
+    "Container": {
+      "ContentsHidden": "You are too far away to see the contents",
+      "Empty": "This container is empty."
+    },
+    "Model": {
+      "FIELDS": {
+        "objectType": {
+          "label": "Object Type",
+          "hint": "Whether this is a simple item or a container"
+        },
+        "description": {
+          "label": "Description",
+          "hint": "Description for this object"
+        },
+        "isOpen": {
+          "label": "Open",
+          "hint": "Whether this container is currently open"
+        },
+        "isLocked": {
+          "label": "Locked",
+          "hint": "Whether this container is locked"
+        },
+        "openImage": {
+          "label": "Open Image",
+          "hint": "Token image displayed when this container is open"
+        },
+        "unidentifiedImage": {
+          "label": "Unidentified Image",
+          "hint": "Token image displayed when this item is unidentified"
+        },
+        "unidentifiedName": {
+          "label": "Unidentified Name",
+          "hint": "Name shown to players before identification"
+        },
+        "unidentifiedDescription": {
+          "label": "Unidentified Description",
+          "hint": "Description shown to players before identification"
+        },
+        "isIdentified": {
+          "label": "Identified",
+          "hint": "Whether players can see the real name and description"
+        },
+        "lockedMessage": {
+          "label": "Locked Message",
+          "hint": "Custom message shown when a player attempts to interact with this locked object"
+        }
+      }
+    },
+    "Vendor": {
+      "Description": "Description",
+      "Buy": "Buy",
+      "Empty": "This vendor has nothing for sale.",
+      "ShopTab": "Shop",
+      "Delete": "Delete",
+      "StockHint": "Drag items here to stock the vendor. Adjust quantity or remove with the controls on each row.",
+      "Col": { "Rarity": "Rarity", "Stock": "Stock", "Price": "Price" },
+      "Group": { "Type": "Type" },
+      "Filter": {
+        "Rarity": "Rarity",
+        "All": "All",
+        "Affordable": "Affordable",
+        "AffordableTooltip": "Hide wares you can't afford. Stacks show only the quantity you can buy.",
+        "Reset": "Reset filters",
+        "NoneAffordable": "Nothing here is affordable right now."
+      },
+      "ToggleShopVisible": "Show / hide in shop",
+      "ViewDetails": "Press to view details",
+      "AddToCart": "Add to / remove from cart",
+      "ClearCart": "Clear cart",
+      "CartTotal": "Cart total",
+      "CartCount": "Items in cart",
+      "CartQty": "Quantity to buy",
+      "AllShop": "All",
+      "ToggleAllShop": "Add all to / remove all from shop",
+      "Favor": "Favor",
+      "FavorTooltip": "How favourably this vendor prices for the party. Positive is a discount, negative a surcharge.",
+      "FavorFactor": "Favor Factor",
+      "FavorFactorTooltip": "The percentage applied per Favor point. Default 4 means each Favor point shifts the price by 4%.",
+      "Settings": "Vendor Settings",
+      "SettingsToggle": "Show / hide vendor settings",
+      "SettingsBy": {
+        "Label": "Settings by",
+        "Type": "Type",
+        "Rarity": "Rarity"
+      },
+      "GlobalFactor": {
+        "Label": "Global Factor",
+        "Tooltip": "Applies to all items. Compounds with other factors."
+      },
+      "Factor": {
+        "Items": "items",
+        "Hint": "Price factor — max is",
+        "Empty": "No items in inventory to configure."
+      },
+      "Queue": {
+        "SwitchTitle": "Switch shops?",
+        "SwitchPrompt": "You're already in line at {from}. Joining {to} will leave {from}'s queue.",
+        "SwitchConfirm": "Join this queue",
+        "Active": "Shopping now",
+        "Waiting": "Waiting in line",
+        "Title": "Shopping Queue",
+        "Toggle": "Show / hide the shopping queue"
+      },
+      "SetInventory": "Set default inventory",
+      "SetInventoryDone": "Saved {count} item(s) as this vendor's default inventory.",
+      "Restock": "Restock to default",
+      "RestockNoDefault": "No default inventory saved yet — use Set Inventory first.",
+      "RestockNothing": "Inventory already matches the saved default.",
+      "RestockDone": "Restock complete — {created} added, {increased} restocked, {removed} removed.",
+      "RestockConfirmTitle": "Remove extra stock?",
+      "RestockConfirmPrompt": "Missing items and quantities will be restored. These exceed the saved default and can be removed:",
+      "RestockExtraQtyRow": "{name}: remove {remove} extra",
+      "RestockExtraItemRow": "{name} (×{qty}): not in the default",
+      "RestockRemove": "Remove extras",
+      "RestockKeep": "Keep extras"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "pick-up-stix.interactiveItem": "Interactive Object",
+      "pick-up-stix.vendor": "Vendor"
+    }
+  }
+}

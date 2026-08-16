@@ -1,60 +1,77 @@
-{"FABDRAGRULER": {
+{
+  "FABDRAGRULER": {
     "CONFIG": {
       "COMMON": {
         "RESETTODEFAULT": "重置为默认"
       },
-      "WAYPOINT": {
-        "TITLE": "路径点样式覆盖",
-        "ENABLED": {
-          "LABEL": "启用",
-          "HINT": "切换以启用路径点覆盖"
-        },
-        "RADIUS": {
-          "LABEL": "半径",
-          "HINT": "路径点的半径"
-        },
-        "ALPHA": {
-          "LABEL": "透明度",
-          "HINT": "路径点的透明度值"
-        },
-        "COLOR": {
-          "LABEL": "颜色",
-          "HINT": "路径点的颜色"
-        }
-      },
       "GRIDHIGHLIGHT": {
-        "TITLE": "网格高亮样式覆盖",
-        "ENABLED": {
-          "LABEL": "启用",
-          "HINT": "切换以启用拖拽段覆盖"
+        "ALPHA": {
+          "HINT": "网格高亮的透明度值",
+          "LABEL": "透明度"
         },
         "COLOR": {
-          "LABEL": "颜色",
-          "HINT": "网格高亮部分的颜色"
+          "HINT": "网格高亮部分的颜色",
+          "LABEL": "颜色"
         },
-        "ALPHA": {
-          "LABEL": "透明度",
-          "HINT": "网格高亮的透明度值"
-        }
+        "ENABLED": {
+          "HINT": "切换以启用拖拽段覆盖",
+          "LABEL": "启用"
+        },
+        "TITLE": "网格高亮样式覆盖"
       },
       "SEGMENT": {
-        "TITLE": "线段样式覆盖",
-        "ENABLED": {
-          "LABEL": "启用",
-          "HINT": "切换以启用拖拽线段覆盖"
-        },
-        "WIDTH": {
-          "LABEL": "宽度",
-          "HINT": "拖拽线段的宽度。将乘以画布的UI缩放比例"
+        "ALPHA": {
+          "HINT": "拖拽标尺线段的透明度值",
+          "LABEL": "透明度"
         },
         "COLOR": {
-          "LABEL": "颜色",
-          "HINT": "拖拽标尺线段的颜色"
+          "HINT": "拖拽标尺线段的颜色",
+          "LABEL": "颜色"
         },
-        "ALPHA": {
-          "LABEL": "透明度",
-          "HINT": "拖拽标尺线段的透明度值"
+        "ENABLED": {
+          "HINT": "切换以启用拖拽线段覆盖",
+          "LABEL": "启用"
+        },
+        "TITLE": "线段样式覆盖",
+        "WIDTH": {
+          "HINT": "拖拽线段的宽度。将乘以画布的UI缩放比例",
+          "LABEL": "宽度"
         }
+      },
+      "WAYPOINT": {
+        "ALPHA": {
+          "HINT": "路径点的透明度值",
+          "LABEL": "透明度"
+        },
+        "BGALPHA": {
+          "HINT": "路径点背景的透明度",
+          "LABEL": "背景透明度"
+        },
+        "BGCOLOR": {
+          "HINT": "路径点的背景颜色。",
+          "LABEL": "背景颜色"
+        },
+        "COLOR": {
+          "HINT": "路径点的颜色",
+          "LABEL": "颜色"
+        },
+        "ENABLED": {
+          "HINT": "切换以启用路径点覆盖",
+          "LABEL": "启用"
+        },
+        "FONT": {
+          "HINT": "标签的字体",
+          "LABEL": "字体"
+        },
+        "FONTCOLOR": {
+          "HINT": "标签文本的颜色",
+          "LABEL": "字体颜色"
+        },
+        "RADIUS": {
+          "HINT": "路径点的半径",
+          "LABEL": "半径"
+        },
+        "TITLE": "路径点样式覆盖"
       }
     },
     "KEYBINDINGS": {
@@ -62,37 +79,41 @@
     },
     "SCENE": {
       "RULERSTATE": {
-        "LABEL": "Token拖拽标尺",
-        "HINT": "设置为'默认'以使用网格类型的全局默认值，否则设置为'启用'或'禁用'以覆盖。",
-        "ENABLED": "启用",
+        "DEFAULT": "默认",
         "DISABLED": "禁用",
-        "DEFAULT": "默认"
+        "ENABLED": "启用",
+        "HINT": "设置为'默认'以使用网格类型的全局默认值，否则设置为'启用'或'禁用'以覆盖。",
+        "LABEL": "Token拖拽标尺"
       }
     },
     "SETTINGS": {
       "DISABLEOUTOFCOMBAT": {
-        "LABEL": "非战斗时禁用",
-        "HINT": "在非激活战斗时默认禁用拖拽标尺"
-      },
-      "ENABLEGRIDLESS": {
-        "LABEL": "为无网格场景启用",
-        "HINT": "为无网格场景默认启用拖拽标尺"
+        "HINT": "在非激活战斗时默认禁用拖拽标尺",
+        "LABEL": "非战斗时禁用"
       },
       "ENABLEGRIDDED": {
-        "LABEL": "为有网格场景启用",
-        "HINT": "为有网格场景默认启用拖拽标尺"
+        "HINT": "为有网格场景默认启用拖拽标尺",
+        "LABEL": "为有网格场景启用"
       },
-      "SEGMENTSTYLEOVERRIDE": {
-        "LABEL": "线段样式覆盖",
-        "HINT": "自定义拖拽Token时线段外观的选项"
-      },
-      "WAYPOINTSTYLEOVERRIDE": {
-        "LABEL": "路径点样式覆盖",
-        "HINT": "自定义拖拽标尺上路径点外观的选项"
+      "ENABLEGRIDLESS": {
+        "HINT": "为无网格场景默认启用拖拽标尺",
+        "LABEL": "为无网格场景启用"
       },
       "GRIDHIGHLIGHTSTYLEOVERRIDE": {
-        "LABEL": "网格高亮样式覆盖",
-        "HINT": "自定义拖拽标尺网格高亮外观的选项"
+        "HINT": "自定义拖拽标尺网格高亮外观的选项",
+        "LABEL": "网格高亮样式覆盖"
+      },
+      "SCALEWAYPOINTLABEL": {
+        "HINT": "启用后，将调整拖拽标尺的路径点标签元素大小，使其保持恒定大小，不受画布缩放影响。",
+        "LABEL": "缩放路径点标签"
+      },
+      "SEGMENTSTYLEOVERRIDE": {
+        "HINT": "自定义拖拽Token时线段外观的选项",
+        "LABEL": "线段样式覆盖"
+      },
+      "WAYPOINTSTYLEOVERRIDE": {
+        "HINT": "自定义拖拽标尺上路径点外观的选项",
+        "LABEL": "路径点样式覆盖"
       }
     }
   }

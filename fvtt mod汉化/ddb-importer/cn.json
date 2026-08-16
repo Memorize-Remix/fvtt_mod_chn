@@ -1,5 +1,9 @@
-{"ddb-importer": {
+{
+  "ddb-importer": {
     "module-name": "D&D Beyond Importer",
+    "tokenizer2": {
+      "frames-tab-label": "DDB"
+    },
     "activities": {
       "macro": {
         "Title": "宏命令 (DDB Importer)",
@@ -38,6 +42,10 @@
       "Fin": "完成设置后，你将不会再看到此消息。"
     },
     "settings": {
+      "stickers-upload-path.name": "DDB 贴纸上传目录",
+      "stickers-upload-path.hint": "指定服务器上贴纸的图片上传位置，这不是用于冒险，而是用于 DDB Maps 贴纸。",
+      "maps-upload-path.name": "DDB 地图图片上传目录",
+      "maps-upload-path.hint": "指定服务器上地图的图片上传位置，这不是用于冒险，而是用于 DDB Maps 地图。",
       "add-extra-base-weapons.name": "添加额外基础武器？",
       "add-extra-base-weapons.hint": "导入物品后，是否将新的基础武器添加到 FVTT 基础武器列表中？",
       "use-basic-rules.name": "解析资源时添加D&D基础规则而非SRD或PHB 2024？",
@@ -86,8 +94,8 @@
       "campaign-id.hint": "输入战役URL或ID，例如https://www.dndbeyond.com/campaigns/12345或12345",
       "spells-on-items-as-activities.name": "物品上的法术作为行动",
       "spells-on-items-as-activities.hint": "如果勾选，物品上的法术将创建为行动，而非从法术链接的使用方式",
-	  "patreon-key.name": "Patreon赞助者密钥",
-	  "patreon-key.hint": "在此处输入你的Patreon赞助者密钥。",
+      "patreon-key.name": "Patreon赞助者密钥",
+      "patreon-key.hint": "在此处输入你的Patreon赞助者密钥。",
       "auto-create-compendium.name": "自动创建缺失的合集？",
       "auto-create-compendium.hint": "自动创建缺失的合集？",
       "use-full-source.name": "使用完整资源书名？",
@@ -144,8 +152,8 @@
       "show-read-alouds-button.hint": "在日志中提供悬停按钮向玩家朗读文本？(需要重新加载)",
       "show-read-alouds-all-content.name": "为所有内容启用朗读功能？",
       "show-read-alouds-all-content.hint": "在非DDB Importer导入的内容中也显示向玩家朗读按钮。(需要重新加载)",
-	  "show-welcome-message.name": "显示欢迎信息？",
-	  "show-welcome-message.hint": "勾选此项后，下次登录时将显示欢迎信息。",
+      "show-welcome-message.name": "显示欢迎信息？",
+      "show-welcome-message.hint": "勾选此项后，下次登录时将显示欢迎信息。",
       "dynamic-sync": {
         "dynamic-sync": "启用动态同步？",
         "dynamic-sync-policy-currency": "货币？",
@@ -213,7 +221,8 @@
     },
     "scenes": {
       "download": "DDB场景配置",
-      "third-party-download": "第三方场景配置"
+      "third-party-download": "第三方场景配置",
+      "detect-grid": "DDB Importer：检测网格"
     },
     "Dialogs": {
       "ResetSettings": {

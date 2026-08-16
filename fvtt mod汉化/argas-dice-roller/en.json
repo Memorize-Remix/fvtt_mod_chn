@@ -1,0 +1,363 @@
+{
+  "argas-dice-roller": {
+    "title": "Dice Roll Window",
+    "legend": {
+      "hiddenRolls": "Hidden Rolls",
+      "explodingDiceRolls": "Exploding Dice",
+      "coin": "Coin",
+      "wildDie": "Wild Die",
+      "d2Rolls": "D2 Dice",
+      "d100Rolls": "D100 Dice",
+      "modifiers": "Modifiers (multiple selection possible)",
+      "freeRollLabel": "Free Roll",
+      "wildDieChat": "Wild Die",
+      "tokenSelection": "Random Token Selection",
+      "showGroupSelection": "Show candidates?"
+    },
+    "controlTitle": "Arga's Dice Roller",
+    "tooltip": {
+      "makeGMRoll": "Private to Gamemasters (visible to GMs and you)",
+      "makeBlindRoll": "Blind to Gamemasters (visible to GMs only)",
+      "makeSelfRoll": "Self only (visible only to you)",
+      "explodingDice": "All dice can explode",
+      "wildDie": "Roll a Wildcard die (d6)"
+    },
+    "warn": {
+      "cannotRollAsGroupOrVehicle": "You cannot roll as 'Group' or 'Vehicle'.",
+      "coinNotInMulti": "The coin cannot be mixed into a multi-die roll.",
+      "coinNoModifier": "Coin rolls do not take modifiers. Please deselect the modifiers first.",
+      "selectToken": "Please select at least one token."
+    },
+    "chat": {
+      "fateTitle": "Fate Roll",
+      "fateChosen": "... was chosen by fate",
+      "fateCandidates": "(Candidates were: {names})",
+      "coin-heads": "Heads",
+      "coin-tails": "Tails",
+      "coin-roll-label": "Coin Toss",
+      "critical-failure": "Critical Failure",
+      "critical-failure-short": "Critical Failure",
+      "critical-failure-prefix": "If this roll was a trait check, it was a",
+      "critical-failure-no-benny": "Critical failures cannot be rerolled with a Benny",
+      "multiDiceMixed": "var. dice",
+      "multiDicePlus": "(+)",
+      "flavorResult": "Result: {total}",
+      "flavorMain": "Main: {main} | Wild Die: {wild}",
+      "flavorMulti": "Multi-Pool: {total}",
+      "flavorMultiWild": "Multi-Pool: {total} | Wild Die: {wild}",
+      "rollName": "Roll",
+      "fumbleCheckName": "Fumble Check"
+    },
+    "multiSelect": {
+      "tooltipHint": "Hold Ctrl to select multiple different dice for a combined roll."
+    },
+    "hiddenInfo": {
+      "gmRoll": "~ Private GM Roll ~\n(visible to GMs\nand to you)",
+      "gmRollViewedByGM": "~ Private GM Roll ~\n(visible to GMs\nand to the roller)",
+      "blindRoll": "~ Blind GM Roll ~\n(visible to GMs only)",
+      "selfRoll": "~ Private Roll ~\n(visible only to you)",
+      "gmToPlayerRoll": "~ Private GM Roll ~\n(visible only to GM)"
+    },
+    "dialogs": {
+      "reload": {
+        "title": "Reload required",
+        "content": "Some changed settings require reloading the application to take effect. Reload now?"
+      }
+    },
+    "requestRoll": {
+      "legendMode": "Mode",
+      "legend": "Dice Checks",
+      "button": "Request Roll",
+      "windowTitle": "Request Roll",
+      "modeSingle": "Individual Rolls",
+      "modeSingleHint": "A different check can be requested from each selected actor.",
+      "modeGroup": "Group Check",
+      "modeGroupHint": "The same trait check is requested from all selected actors. Yellow traits are not available to all actors. Actors who do not have the requested trait are automatically prompted for an 'untrained' check.",
+      "modeOpposed": "Opposed Test",
+      "modeOpposedHint": "Two actors compete against each other, each using an individually chosen trait.",
+      "modeDramatic": "Dramatic Task",
+      "modeDramaticHint": "Starts a dedicated dramatic task flow with presets, rounds, and marker tracking.",
+      "sectionPCs": "Player Characters",
+      "sectionNPCs": "NPCs (on current scene)",
+      "attributes": "Attributes",
+      "skills": "Skills",
+      "legendTraits": "Traits",
+      "legendTraitsGroup": "All traits that at least one character has",
+      "partialHint": "Not all actors have this trait (rolled as 'Untrained')",
+      "untrained": "Untrained",
+      "modifier": "Modifiers (multiple selection possible)",
+      "visibility": "Visibility",
+      "submit": "Request Roll",
+      "chatTitle": "Roll Request",
+      "chatHeaderLabel": "Requested Roll",
+      "opposedChatHeaderLabel": "Opposed Roll",
+      "modifierLabel": "Modifier:",
+      "modifierStepMinusTitle": "Decrease modifier by 1",
+      "modifierStepPlusTitle": "Increase modifier by 1",
+      "diePrefix": "d",
+      "chatRollButton": "Roll",
+      "chatPending": "Pending…",
+      "chatNoPermission": "No permission",
+      "chatComplete": "Complete",
+      "bennyTooltip": "Reroll with Benny",
+      "bennyTooltipNPC": "Reroll with GM Benny",
+      "fumbleCheckBtn1": "Check for fumble",
+      "fumbleCheckBtn2": "with d6?",
+      "fumbleCheckNone": "<u>no</u> critical failure",
+      "fumbleCheckYes": "critical failure",
+      "fumbleCheckTextNo": "An additional check determined that {result}&nbsp; applies.",
+      "fumbleCheckTextYes": "An additional check determined that a {result}&nbsp; applies.",
+      "fumbleCheckTextNoShort": "Additional check result: {result}",
+      "fumbleCheckTextYesShort": "Additional check result: {result}",
+      "fumbleCheckDieLabel": "Check die",
+      "acceptResultBtn": "Accept result",
+      "keepBetterResultBtn": "Keep better result",
+      "orChoice": "or",
+      "pendingFumblePotentialHint": "This Extra's Benny re-roll was a 1, which could be a fumble.",
+      "pendingFumblePotentialHintN": "This Extra's {n} Benny re-roll was a 1, which could be a fumble.",
+      "bennyProtectedHint": "The Benny re-roll was <u>not better</u>. The previous result stands.",
+      "bennyProtectedHintN": "The {n} Benny re-roll was <u>not better</u>. The previous result stands.",
+      "bennyProtectedHintExtraOne": "However, this Extra's re-roll was a 1:",
+      "bennyProtectedHintFumble": "The Benny re-roll was a critical failure",
+      "bennyProtectedHintFumbleN": "The {n} Benny re-roll was a critical failure",
+      "bennyProtectedHintFumblePotential": "If the roll was a trait check, the Benny re-roll was a",
+      "bennyProtectedHintFumblePotentialN": "If the roll was a trait check, the {n} Benny re-roll was a",
+      "bennyImprovedHint": "The Benny re-roll was <u>better</u>. The new result is now in effect.",
+      "bennyImprovedHintN": "The {n} Benny re-roll was <u>better</u>. The new result is now in effect.",
+      "bennyProtectedHintNamed": "{actor}'s Benny re-roll was <u>not better</u>. The previous result stands.",
+      "bennyProtectedHintNamedN": "{actor}'s {n} Benny re-roll was <u>not better</u>. The previous result stands.",
+      "bennyProtectedHintExtraOneNamed": "However, {actor}'s (Extra) re-roll was a 1:",
+      "bennyProtectedHintFumbleNamed": "{actor}'s Benny re-roll was a critical failure",
+      "bennyProtectedHintFumbleNamedN": "{actor}'s {n} Benny re-roll was a critical failure",
+      "bennyProtectedHintFumblePotentialNamed": "If {actor}'s roll was a trait check, the Benny re-roll was a",
+      "bennyProtectedHintFumblePotentialNamedN": "If {actor}'s roll was a trait check, the {n} Benny re-roll was a",
+      "bennyImprovedHintNamed": "{actor}'s Benny re-roll was <u>better</u>. The new result is now in effect.",
+      "bennyImprovedHintNamedN": "{actor}'s {n} Benny re-roll was <u>better</u>. The new result is now in effect.",
+      "firstRollFumbleNamed": "{actor} rolled a critical failure",
+      "bennyCoinHint": "The Benny re-roll replaces the previous result.",
+      "bennyCoinHintN": "The {n} Benny re-roll replaces the previous result.",
+      "bennyFumbleOverwriteHint": "The Benny re-roll was a 1, the previous result is discarded.",
+      "bennyFumbleOverwriteHintN": "The {n} Benny re-roll was a 1, the previous result is discarded.",
+      "bennyFumbleOverwriteHintConfirmed": "The Benny re-roll was a 1, and an additional check determined that a {result}&nbsp; applies.",
+      "bennyFumbleOverwriteHintConfirmedN": "The {n} Benny re-roll was a 1, and an additional check determined that a {result}&nbsp; applies.",
+      "bennyFumbleOverwriteHintCritical": "The Benny re-roll was a critical failure, the previous result is discarded.",
+      "bennyFumbleOverwriteHintCriticalN": "The {n} Benny re-roll was a critical failure, the previous result is discarded.",
+      "warn": {
+        "noActor": "Please select at least one actor.",
+        "noTrait": "Please select a skill or attribute for all selected actors.",
+        "groupMin": "For a group check, please select at least two actors.",
+        "opposedTwo": "For an opposed check, please select exactly two actors.",
+        "singleNeed": "Select at least one actor and one trait.",
+        "groupNeed": "Select at least two actors and their respective traits.",
+        "opposedNeed": "Select two actors and their respective traits.",
+        "dramaticNeed": "Select at least one actor and one trait.",
+        "notOwner": "You are not authorized to roll for this character.",
+        "alreadyRolled": "This roll has already been made.",
+        "rollError": "Error rolling dice. Please try again.",
+        "bennyUsed": "A Benny has already been used for this roll.",
+        "noBennies": "No Bennies remaining.",
+        "noGMBennies": "The GM has no Bennies remaining.",
+        "invalidModifier": "Please enter a value between {min} and {max}."
+      },
+      "dramatic": {
+        "presetStandard": "Standard (3/3)",
+        "presetChallenging": "Challenging (4/3)",
+        "presetHard": "Hard (6/4)",
+        "presetComplex": "Complex (8/5)",
+        "customPreset": "Custom",
+        "description": "{preset}: Each participant must gather an average of {markers} tokens within {rounds} rounds.",
+        "preview": "{participants} participants · {target} tokens · {rounds} rounds",
+        "markersLabel": "Task Tokens",
+        "roundsLabel": "Rounds",
+        "statusActive": "In progress",
+        "statusSuccess": "Completed successfully",
+        "statusFailure": "Failed",
+        "statusFailureComplication": "Failed due to a complication miss",
+        "chatHeaderLabel": "Dramatic Task",
+        "chatRollButton": "Roll",
+        "chatPassButton": "Pass",
+        "chatWaiting": "Waiting …",
+        "passed": "Passed",
+        "markerProgress": "Tokens: {current} / {target}",
+        "roundProgress": "Round: {current} / {total}",
+        "summary": "{preset} · {participants} participants · {target} tokens in {rounds} rounds",
+        "cardComplication": "Complication (–2)",
+        "cardJoker": "Joker (+2)",
+        "resultSuccess": "+{markers} token(s)",
+        "resultFailure": "No tokens",
+        "resultCriticalFailure": "−1 token",
+        "resultComplicationFailure": "Failed during a complication — task fails",
+        "resultComplicationCriticalFailure": "Critical failure during a complication — task fails",
+        "roundLabel": "Round {round}"
+      },
+      "dramaticChatHeaderLabel": "Dramatic Task",
+      "dramaticRoundLabel": "Round",
+      "dramaticMarkerLabel": "Tokens",
+      "dramaticJokerLabel": "Joker +2",
+      "dramaticComplicationLabel": "Complication −2",
+      "dramaticSkipButton": "Skip",
+      "dramaticSkippedLabel": "Skipped",
+      "dramaticOptionsLabel": "Options:",
+      "dramaticChangeTraitButton": "Change trait",
+      "dramaticSupportButton": "Support",
+      "dramaticChangeTrait": {
+        "title": "~ Change Trait ~",
+        "infoHTML": "Choose a different trait for the <em>current</em> round of the Dramatic Task. As long as you haven't rolled yet this round, you can change your choice as often as you like.",
+        "noteHTML": "<strong>NOTE:</strong>  Please confirm with the GM that the chosen trait is appropriate for the task at hand. In the next round, your latest choice will be the default — you can change it again then.",
+        "traitLabel": "Which trait to roll?",
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "reset": "Restore original trait",
+        "originalTraitLine": "Originally requested by the GM: <strong>{trait}</strong>",
+        "noLongerPossible": "No longer possible — you've already acted this round."
+      },
+      "dramaticSupport": {
+        "title": "~ Support a Roll ~",
+        "bonusInfoHTML": "A successful Support grants the target <strong><em>in the current round</em></strong> a +1 bonus (+2 with a raise) on their roll. Only actors who have not yet rolled this round can be supported.",
+        "warningHTML": "<strong>NOTE:</strong>  Coordinate with the GM whether the trait you selected here is actually suitable to support the other actor's roll.",
+        "targetLabel": "Who shall be supported?",
+        "traitLabel": "Which trait would you like to support with?",
+        "confirm": "Support",
+        "cancel": "Cancel",
+        "noTargetsAvailable": "No targets available — every participant has already acted or skipped this round.",
+        "noLongerPossible": "Support no longer possible — the target has acted in the meantime.",
+        "helperLineSuccess": "Support of <strong>{target}</strong> via <em>{trait}</em> was <span class=\"adr-dramatic-support-success-text\">successful:  {delta}</span>",
+        "helperLineFailure": "Support of <strong>{target}</strong> via <em>{trait}</em> was <span class=\"adr-dramatic-support-failure-text\">unsuccessful</span>",
+        "helperLineFumble": "Support of <strong>{target}</strong> via <em>{trait}</em> was a <span class=\"adr-dramatic-support-fumble-text\">critical failure</span>",
+        "helperLinePendingFumble": "Support of <strong>{target}</strong> via <em>{trait}</em>: <span class=\"adr-dramatic-support-pending-text\">fumble check pending</span>",
+        "helperLineTooLate": "Support no longer possible — target has already acted",
+        "helperLineCapExceeded": "Support not possible — limit of +4 already reached",
+        "targetLineSuccess": "<strong>{helper}</strong> supports you with <strong>{delta}</strong>",
+        "targetLineFailure": "<strong>{helper}</strong> fails to support you",
+        "targetLineFumble": "<strong>{helper}</strong> hinders your roll with <strong>−2</strong>",
+        "targetLinePendingFumble": "<strong>{helper}</strong>: fumble check pending"
+      },
+      "dramaticNoSuccess": "No success",
+      "dramaticHistoryToggle": "Individual results <i>(click)</i>",
+      "dramaticTaskFailedLabel": "Dramatic task failed",
+      "dramaticGainedMarkerLabel": "+{count} tokens",
+      "dramaticHistoryLostMarkerLabel": "−1 token",
+      "dramaticLostMarkerLabelTitle": "Critical Failure:",
+      "dramaticLostMarkerLabelDetail": "−1 token (if any available)",
+      "dramaticHistoryComplicationFailureLabel": "Failure",
+      "dramaticHistorySupportSuccess": "Supports {target} with {delta}",
+      "dramaticHistorySupportFailure": "Support for {target} failed",
+      "dramaticHistorySupportFumble": "Critical fumble while supporting — −2 for {target}",
+      "dramaticHistorySupportTooLate": "Support for {target} too late",
+      "dramaticHistorySupportCapExceeded": "Support for {target} over cap",
+      "dramaticNoMarkerLabel": "No token",
+      "dramaticPendingCheckLabel": "Fumble check pending",
+      "dramaticComplicationFailedLabel": "Failed during complication",
+      "dramaticRoundReadyLine1": "Round {round} ended.",
+      "dramaticRoundReadyLine2": "Continuing with round {nextRound}",
+      "dramaticRoundFailurePendingLine1": "Final round ended",
+      "dramaticRoundFailurePendingLine2": "Task failed",
+      "dramaticComplicationFailurePendingLine1": "Failure during complication",
+      "dramaticComplicationFailurePendingLine2": "Task failed",
+      "dramaticNextRoundButton": "Next round",
+      "dramaticConfirmFailureButton": "Confirm failure",
+      "dramaticTaskSuccessLine1": "Target reached",
+      "dramaticTaskSuccessLine2": "Task completed successfully!",
+      "dramaticTaskFailureRoundsLine1": "Target not reached",
+      "dramaticTaskFailureRoundsLine2": "Task failed",
+      "dramaticTaskFailureComplicationLine1": "Failure during complication",
+      "dramaticTaskFailureComplicationLine2": "Task failed"
+    },
+    "swadeSettings": {
+      "windowTitle": "SWADE System Mechanics",
+      "menuName": "SWADE System Mechanics",
+      "menuLabel": "Settings (GM only)",
+      "save": "Save"
+    },
+    "settings": {
+      "chatDesign": {
+        "name": "Chat design",
+        "hint": "Choose the style in which dice results are displayed in the chat.",
+        "choices": {
+          "fantasy": "Fantasy",
+          "modern": "Modern",
+          "standard": "Standard (Foundry)"
+        }
+      },
+      "enableHiddenRolls": {
+        "name": "Buttons \"Hidden Rolls\"",
+        "hint": "Adds buttons for 'Private GM Roll', 'Blind GM Roll', and 'Private Roll'."
+      },
+      "explodingMode": {
+        "name": "Button \"Exploding Dice\"",
+        "hint": "Activates or deactivates a button that, when selected, applies the exploding dice mechanic (dice that show the highest possible value are rolled again and the results are added).",
+        "choices": {
+          "multi": "Multiple explosions",
+          "once": "Single explosion only",
+          "off": "Button hidden"
+        }
+      },
+      "explodingDefault": {
+        "name": "\"Exploding Dice\" always active",
+        "hint": "The \"Exploding Dice\" toggle is enabled by default."
+      },
+      "enableWildDie": {
+        "name": "\"Wild Die\" button",
+        "hint": "Adds a button for the 'Savage Worlds' Wildcard die. It can always explode, regardless of the \"Exploding Dice\" toggle."
+      },
+      "enableModifiers": {
+        "name": "Button \"Modifiers\"",
+        "hint": "Allows adding dice modifiers. Multiple values can be combined."
+      },
+      "enableFirstColumn": {
+        "name": "Extra column for \"1\" die",
+        "hint": "NOTE: The die icons are clickable and roll one die each."
+      },
+      "closeFormOnRoll": {
+        "name": "Window closes automatically",
+        "hint": "If enabled, the dice window closes after each roll."
+      },
+      "maxDiceCount": {
+        "name": "Maximum number of dice:",
+        "hint": "Number of dice that can be rolled simultaneously."
+      },
+      "enableCoins": {
+        "name": "Enable \"Coin Toss\"",
+        "hint": "The 'coin' yields the results ~heads~ or ~tails~."
+      },
+      "enableD2Rolls": {
+        "name": "Enable \"d2\" rolls",
+        "hint": "Makes the row with the 'D2' dice visible."
+      },
+      "enableD100Rolls": {
+        "name": "Enable \"d100\" rolls",
+        "hint": "Makes the row with the 'D100' dice visible."
+      },
+      "enableFateRollButton": {
+        "name": "Button \"Fate Roll\"",
+        "hint": "Randomly selects one token from the currently selected tokens and posts the name to chat.",
+        "labelHtml": "Fate Roll"
+      },
+      "enableGroupSelection": {
+        "name": "Show candidates?",
+        "hint": "Shows or hides which tokens were in the selection pool."
+      },
+      "groupSelectionYes": {
+        "name": "yes",
+        "hint": "All candidate token names will be shown in chat."
+      },
+      "groupSelectionNo": {
+        "name": "no",
+        "hint": "Only the selected token's name will be shown in chat."
+      },
+      "highlightNaturalOnes": {
+        "name": "Enable Critical Failure mechanic",
+        "hint": "If enabled, the Savage Worlds rule for 'critical failures' also applies to 'Free Rolls' and not only to requested rolls. The rule: If a die shows a natural one, the final result is highlighted in red, even if it was later modified by modifiers. With multiple dice, this only applies if more than half of all dice (including a possible Wild Die) show a natural one. For a Wild Card, a 'Critical Failure' only occurs if the Wild Die also shows a natural one."
+      },
+      "enableRequestRoll": {
+        "name": "Enable Roll Requests",
+        "hint": "The GM can request single checks, group checks, opposed checks and dramatic task checks from players."
+      }
+    },
+    "individualResults": {
+      "toggle": "Individual results <i>(click)</i>",
+      "appliedModifierLabel": "Modifier",
+      "appliedModifierLabelShort": "Mod."
+    }
+  }
+}

@@ -1,4 +1,5 @@
-{"perceptive" : {
+{
+	"perceptive" : {
 		"Titles" : {
 			"perceptive"				: "察觉",
 			"LockPeekSettings"			: "锁窥视设置",
@@ -95,6 +96,11 @@
 			"InteractionDistance" : {
 				"name"					: "最大互动距离",
 				"descrp"				: "玩家可与物体互动的最大距离(-1为无限)"
+			},
+			
+			"activateWallFeatures" : {
+				"name"					: "启用墙壁功能",
+				"descrp"				: "启用窥视门和开门功能"
 			},
 			
 			"UseArmsreachDistance" : {
@@ -353,14 +359,14 @@
 			
 			"customPerceptionEffect" : {
 				"name"					: "自定义察觉效果",
-				"descrp"				: "Token进行察觉检定时应用的额外效果(名称或ID，用\";\"分隔)"
+				"descrp"				: "Token进行察觉检定时应用的额外效果(名称或ID，用\";\"分隔)"				
 			},
 			
 			"resetSpottedbyMovedefault" : {
 				"name"					: "默认移动时重置被察觉",
 				"descrp"				: "隐匿Token移动时是否重置其主动察觉者"
 			}, 
-			
+
 			"IlluminationPDCModifier" : {
 				"name"					: "光照察觉DC调整",
 				"descrp"				: "不同光照等级的察觉DC调整(黑暗,微光光照,明亮光照,\"0,0,0\"表示无调整)"

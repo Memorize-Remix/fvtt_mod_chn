@@ -1,0 +1,3256 @@
+{
+  "TYPES.JournalEntryPage.storyflow-dungeons-lab.graph": "StoryFlow 剧情图",
+  "TYPES.JournalEntryPage.storyflow-dungeons-lab.trader": "StoryFlow 商人",
+  "TYPES.JournalEntryPage.storyflow-dungeons-lab.quest": "StoryFlow 任务",
+  "TYPES.JournalEntryPage.storyflow-dungeons-lab.lore": "StoryFlow 传说",
+  "TYPES.RegionBehavior.storyflow-dungeons-lab.storyflowTrigger": "StoryFlow 触发器",
+  "STORYFLOW_DUNGEONS_LAB": {
+    "Ready": "StoryFlow Dungeons Lab v{version} 已就绪。",
+    "GraphSheetLabel": "StoryFlow 剧情图编辑器",
+    "TraderSheetLabel": "StoryFlow 商人",
+    "GraphSaved": "StoryFlow 剧情图已保存。",
+    "Welcome": {
+      "Title": "StoryFlow - Dungeons LAB",
+      "Intro": "感谢安装 StoryFlow！整个 Dungeons LAB 团队都在 Discord 上活动。",
+      "Help": "刚开始或卡住了？尽管问——我们有问必答。",
+      "Request": "缺少某个节点或功能？请提出需求。",
+      "Bug": "发现 bug？报告给我们，我们会修复。",
+      "Button": "加入 Discord"
+    },
+    "Guide": {
+      "Title": "StoryFlow 导览",
+      "Invite": {
+        "Kicker": "首次启动",
+        "Heading": "需要我带你了解 StoryFlow 吗？",
+        "Body": "一次简短的导览会展示如何运行一个故事：搭建场景、为队伍设定目标、发放奖励。我们会在 Foundry 内高亮对应的元素，而你世界中的任何内容都不会被改变。",
+        "BadgeSteps": "{count} 个步骤",
+        "BadgeTime": "≈ {minutes} 分钟",
+        "BadgeInterrupt": "随时可停止",
+        "Suppress": "不再提示",
+        "Dismiss": "暂不",
+        "Start": "开始导览",
+        "ReplayTooltip": "再次显示 LOBIK II",
+        "CloseTooltip": "关闭"
+      },
+      "Explainer": {
+        "Next": "下一步",
+        "Start": "开始",
+        "Back": "上一步",
+        "Page1": {
+          "Kicker": "第 1 步 · 这是什么",
+          "Title": "我将带你了解 StoryFlow",
+          "Body": "这是模组的导览模式。导览进行期间，你世界中的任何内容都不会改变。我只会指出各项功能的位置，并解释你和队伍为什么需要它们。",
+          "Flavor": "「蜡烛已点燃，地图已展开。让我们从小处开始。」"
+        },
+        "Page2": {
+          "Kicker": "第 2 步 · 谁在说话",
+          "Title": "我叫 LOBIK II",
+          "Body": "我是 Dungeons LAB 的吉祥物，也是你的向导。我是第二代，因为第一代 LOBIK 跟一块石头吵了一架，结果石头赢了。当有内容需要解释时，我会在窗口上方弹出，等你弄明白后就消失。",
+          "Flavor": "「一条带着庞大笔记档案的小龙。」"
+        },
+        "Page3": {
+          "Kicker": "第 3 步 · 导览如何运作",
+          "Title": "每步一个操作",
+          "Body": "每一步都会高亮界面上一个真实元素，并等待你操作。完成操作后，该步骤即标记为已完成。当前目标始终显示在左上角的跟踪器里。",
+          "Flavor": "「巴洛维亚不容急躁，却也讨厌等待。」"
+        },
+        "Page4": {
+          "Kicker": "第 4 步 · 操作方式",
+          "Title": "你来主导，我来提示",
+          "Body": "「下一步」继续前进，「上一步」返回。你可以随时停止导览：进度会保存，下次会话会从同一位置继续。",
+          "Flavor": "「准备好后，就敲响侧边栏里的盾牌吧。」"
+        }
+      },
+      "Step": {
+        "Kicker": "第 {step} 步 / 共 {total} 步",
+        "Next": "下一步",
+        "Done": "完成",
+        "Back": "上一步",
+        "Skip": "跳过导览",
+        "CloseTooltip": "关闭提示",
+        "Waiting": "等待你的操作…",
+        "Completed": "完成！"
+      },
+      "Checklist": {
+        "Title": "待办事项",
+        "Stop": "停止导览"
+      },
+      "Objective": {
+        "Title": "当前目标",
+        "Abandon": "停止",
+        "Progress": "已完成 {done}/{total} 步",
+        "Collapse": "折叠",
+        "Expand": "展开"
+      },
+      "Finished": {
+        "Title": "导览完成",
+        "Body": "以上就是基础知识。你可以随时从模组设置中重新开始导览。",
+        "Notify": "StoryFlow 导览已完成。"
+      },
+      "Restart": "重新开始 StoryFlow 导览",
+      "RestartHint": "在此客户端重新打开导览邀请窗口。",
+      "Cheer": {
+        "C1": "干得漂亮！",
+        "C2": "继续保持！",
+        "C3": "你知道我的创造者能构建整个世界吗？我看得出你也很擅长。你愿意教我吗？",
+        "C4": "你学习的速度比巨龙囤积金币还快！",
+        "C5": "再来一步，我就要开始向你学习了。",
+        "C6": "我的尾巴在摇，这说明你做得很好。",
+        "C7": "小心点，你让它看起来太简单了。",
+        "C8": "LOBIK I 曾挑战过一块石头，结果输了。你表现得比他好多了。"
+      },
+      "Support": {
+        "Title": "谢谢！",
+        "Kicker": "导览完成",
+        "Heading": "支持创作者",
+        "Body": "StoryFlow 是由一小群爱好者熬夜开发的。如果 LOBIK II 让你的准备工作更轻松，在 Ko-fi 上请一杯咖啡，就能让他吃饱并持续更新。",
+        "Decline": "以后再说",
+        "Kofi": "请我们一杯 Ko-fi"
+      },
+      "Chapters": {
+        "Calendar": {
+          "Title": "日历与事件",
+          "Blurb": "世界时间、预定事件与每日天气",
+          "WeatherShow": {
+            "Title": "一个鲜活的日历",
+            "Body": "日历会自行生成每天的天气，而且小部件是动画的：雨、雾和雪会直接呈现在上面。让我展示给你看。",
+            "Hint": "观看演示，然后点击「下一步」",
+            "Say": "看看我的本事！",
+            "Now": "当前：{name}",
+            "Cond": {
+              "clear": "晴朗",
+              "rain": "下雨",
+              "storm": "暴雨",
+              "fog": "起雾",
+              "snow": "降雪"
+            }
+          },
+          "OpenCalendar": {
+            "Title": "打开日历",
+            "Body": "日历驱动着整桌的世界时间：季节、天气和预定事件。它的小部件位于快捷栏上方。",
+            "Hint": "点击高亮的日历小部件"
+          },
+          "SeasonsGear": {
+            "Title": "日历设置",
+            "Body": "齿轮后面是日历设置：季节、温度和天气效果。打开快速看一眼。",
+            "Hint": "点击齿轮，四处看看，然后点击「下一步」"
+          },
+          "CloseSeasons": {
+            "Title": "关闭设置",
+            "Body": "这里就是调整气候的地方。你随时可以回来；现在先关闭窗口，我们继续。",
+            "Hint": "关闭季节设置窗口"
+          },
+          "OpenEventDialog": {
+            "Title": "添加事件",
+            "Body": "事件是绑定在某个日期上的笔记。当世界时间到达时，StoryFlow 可以触发一个剧情图：一场节日、一支商队、一次袭击。",
+            "Hint": "点击高亮的「添加事件」按钮"
+          },
+          "SaveEvent": {
+            "Title": "保存事件",
+            "Body": "给它起个名字，选择类型（一条普通通知或一个完整剧情图），然后保存。时机一到，日历就会触发它。",
+            "Hint": "填写表单并点击高亮的保存按钮"
+          },
+          "CloseCalendar": {
+            "Title": "关闭日历",
+            "Body": "事件会保留在世界中。小部件会继续显示当前日期和最近的事件。",
+            "Hint": "关闭日历窗口"
+          }
+        },
+        "JournalGraph": {
+          "Title": "日志与剧情图",
+          "Blurb": "StoryFlow 剧情图的存放位置，以及如何从模板创建",
+          "OpenJournalTab": {
+            "Title": "打开日志标签页",
+            "Body": "StoryFlow 剧情图是日志页面：它们存放在你世界的日志里，而不是模组设置中。这意味着文件夹、权限和搜索都照常工作。",
+            "Hint": "点击侧边栏中高亮的日志标签页"
+          },
+          "CreateJournal": {
+            "Title": "创建日志条目",
+            "Body": "日志条目是一个容器。一个条目可以容纳多个剧情图，例如某一章的所有场景。",
+            "Hint": "点击「创建日志条目」并保存"
+          },
+          "OpenJournal": {
+            "Title": "打开条目",
+            "Body": "条目会以普通日志表单打开。页面从这里添加。",
+            "Hint": "打开你刚创建的日志条目"
+          },
+          "CreatePage": {
+            "Title": "添加 StoryFlow 剧情图页面",
+            "Body": "选择「StoryFlow 剧情图」页面类型。该页面承载整个节点图：对话、选择、检定和世界动作。",
+            "Hint": "添加页面并选择 StoryFlow 剧情图类型"
+          },
+          "OpenCanvas": {
+            "Title": "打开剧情图编辑器",
+            "Body": "编辑器是一块节点画布。节点通过引脚连接：故事从入口点出发，沿着你绘制的连线流动。",
+            "Hint": "打开剧情图页面编辑器"
+          },
+          "UIAddNode": {
+            "Title": "「添加节点」按钮",
+            "Body": "此按钮会打开节点面板：对话、检定、奖励和其他故事积木。新节点会落在画布上，随时可用其引脚接线。",
+            "Hint": "阅读后，点击「下一步」"
+          },
+          "UISearch": {
+            "Title": "剧情图搜索",
+            "Body": "搜索可按名称或文本查找节点，并将镜头带到它所在处。在大图中，它是救命稻草。",
+            "Hint": "阅读后，点击「下一步」"
+          },
+          "UIUndoRedo": {
+            "Title": "撤销与重做",
+            "Body": "你在画布上的任何操作都可以撤销和重做。放心尝试：剧情图随时可以回退。",
+            "Hint": "阅读后，点击「下一步」"
+          },
+          "TemplatesIntro": {
+            "Title": "现成模板",
+            "Body": "你不必从零开始构建故事。StoryFlow 自带现成模板集（对话、技能检定、商店、完整场景），它们会作为可运行的剧情图落在画布上。从一个模板开始，再改造它来适配你的故事。",
+            "Flavor": "「军械库已满，何必再铸剑？」"
+          },
+          "OpenTemplates": {
+            "Title": "打开模板库",
+            "Body": "模板库里存放着现成剧情图：一段对话、一家商店、一次技能检定。模板是快速起点：粘贴进去，再改写文本。",
+            "Hint": "点击高亮的模板库按钮"
+          },
+          "ApplyTemplate": {
+            "Title": "试用模板",
+            "Body": "挑选任意模板并插入剧情图。节点会落在画布上；在你保存之前，不会向世界写入任何内容。",
+            "Hint": "将任意模板插入剧情图"
+          },
+          "CloseTemplates": {
+            "Title": "关闭模板库",
+            "Body": "模板库是工具，不属于剧情图的一部分。关闭它，画布就完全属于你了。",
+            "Hint": "关闭模板库窗口"
+          },
+          "NodesIntro": {
+            "Title": "一整套节点工具箱",
+            "Body": "对话、选择、技能检定、奖励、商人、世界动作：StoryFlow 拥有数十种节点类型，每一种都是你故事的积木。你无需死记硬背：节点指南会用示例讲解每个节点。阅读它是你第一部故事的最佳投资。",
+            "Flavor": "「每个节点都是龙颚上的一颗牙。合在一起，就是一口。」"
+          },
+          "OpenNodeGuide": {
+            "Title": "打开节点指南",
+            "Body": "指南会讲解每种节点类型：它的引脚有何作用、何时使用、以及它和哪些节点搭配。它是你可以反复查阅的参考。",
+            "Hint": "点击高亮的「指南」按钮"
+          },
+          "CloseGraphWindows": {
+            "Title": "收拾桌面",
+            "Body": "剧情图已保存到它的日志页面。关闭剧情图编辑器和节点指南，回到日志：有一位商人在那里等着被创建。",
+            "Hint": "关闭剧情图编辑器窗口"
+          }
+        },
+        "Trader": {
+          "Title": "商人与商店",
+          "Blurb": "为商店备货并向队伍开放，可从日志或场景中途打开",
+          "Intro": {
+            "Title": "认识商人",
+            "Body": "商人是你的玩家可以购买和出售的商店。它存在于日志页面上：可以直接从日志打开，或将商人节点拖入 StoryFlow 剧情图，商店就会在场景中途打开。你负责挑选商品、价格和库存；StoryFlow 负责收银。",
+            "Flavor": "「每一次精彩的冒险，都始于一个带小铃铛的柜台。」"
+          },
+          "CreateTraderPage": {
+            "Title": "创建商人页面",
+            "Body": "商人是「StoryFlow 商人」类型的日志页面。它与剧情图和任务并排存放在你世界的日志里，因此文件夹、权限和搜索都照常工作。",
+            "Hint": "添加页面并选择 StoryFlow 商人类型"
+          },
+          "AddItems": {
+            "Title": "给货架上货",
+            "Body": "货架空空如也？没问题。LOBIK 会亲自取来货物并摆放好：每一行都有价格和库存数量。",
+            "Hint": "等待送货员，或自行拖入物品",
+            "Say": "我会取来一些物品，这样你就可以尝试购买和出售了！"
+          },
+          "RestockDays": {
+            "Title": "自动补货",
+            "Body": "「游戏内天数」字段会让商店自动补货：购买的物品在经过这么多世界天数后会重新上架。设为零表示它会一直缺货，直到你手动补货。",
+            "Hint": "阅读后，点击「下一步」"
+          },
+          "Restock": {
+            "Title": "补货",
+            "Body": "「立即补货」是手动开关：它会将所有已售出的物品直接放回货架。",
+            "Hint": "阅读后，点击「下一步」"
+          },
+          "CloseTraderSheet": {
+            "Title": "关闭设置",
+            "Body": "库存已设置完毕。关闭商人设置表单；商店本身是从页面打开的，而不是从这里。",
+            "Hint": "关闭商人设置窗口"
+          },
+          "OpenTraderPage": {
+            "Title": "打开商人页面",
+            "Body": "新商人页面位于条目的页面列表中，它不会自动打开。点击它：该页面上有队伍将要使用的商店按钮。",
+            "Hint": "点击列表中高亮的商人页面"
+          },
+          "OpenShop": {
+            "Title": "打开商店",
+            "Body": "「打开商店」按钮会精确展示玩家看到的内容：带搜索、分类和账本购物车的店面。这是我最喜欢的时刻，请仔细看。",
+            "Hint": "点击高亮的「打开商店」按钮"
+          },
+          "ShopBuyer": {
+            "Title": "谁在购买",
+            "Body": "GM 在此列表中选择这笔购买归属于谁。对玩家来说更简单：商店会自动绑定到他们的角色。",
+            "Hint": "阅读后，点击「下一步」"
+          },
+          "ShopWallet": {
+            "Title": "钱包",
+            "Body": "这里显示购买者的钱币。商店本身会确保金币足够。",
+            "Hint": "阅读后，点击「下一步」"
+          },
+          "ShopCart": {
+            "Title": "购物车",
+            "Body": "此按钮打开购物车：商品在其中堆积，并作为一次购买结算。",
+            "Hint": "阅读后，点击「下一步」"
+          },
+          "ShopSell": {
+            "Title": "出售",
+            "Body": "「出售」标签页则相反：玩家把战利品换成商人的金币。",
+            "Hint": "点击高亮的「出售」标签页"
+          },
+          "CloseShop": {
+            "Title": "关闭商店",
+            "Body": "商品和价格保留在页面上。商店随时可以重新打开：通过同一个按钮、地图图钉，或剧情图中的商人节点。",
+            "Hint": "关闭商店窗口"
+          }
+        },
+        "QuestBoard": {
+          "Title": "任务板",
+          "Blurb": "队伍共享的任务日志：任务、传说与戏剧性揭晓",
+          "Intro": {
+            "Title": "认识任务板",
+            "Body": "任务板是队伍共享的任务日志：任务和传说集中在一个窗口。你编写条目、附加奖励和势力，并在队伍准备好时逐一揭示。玩家只能看到你已揭示的内容。",
+            "Flavor": "「一块酒馆布告板，只是没有潮湿的羊皮纸和老鼠成灾的地窖。」"
+          },
+          "OpenBoard": {
+            "Title": "打开任务板",
+            "Body": "启动器位于 Token 场景控制中，就是那个卷轴图标。点一下即可为你打开任务板；玩家那一侧也有同样的按钮。",
+            "Hint": "点击场景控制中高亮的卷轴工具"
+          },
+          "AddQuest": {
+            "Title": "添加任务",
+            "Body": "「新任务」会在任务板自己的日志中创建一个任务页面。状态、目标、分类和描述都可以在这里的详情面板中直接编辑。",
+            "Hint": "点击高亮的「新任务」按钮"
+          },
+          "Objectives": {
+            "Title": "任务目标",
+            "Body": "目标是队伍可以看到的任务步骤。下方按钮用于添加目标；眼睛图标可将其隐藏稍后显示，箭头可调整顺序，复选框可标记完成。",
+            "Hint": "点击高亮的按钮并添加一个目标"
+          },
+          "RewardsSetup": {
+            "Title": "奖励",
+            "Body": "奖励区域包含金币、经验、声望和物品。现在 LOBIK 会放入一件物品并亲自设置金币。",
+            "Hint": "等待送货员",
+            "Say": "让我加入一份奖励：一件物品和一些金币！"
+          },
+          "AnnounceQuest": {
+            "Title": "公布任务",
+            "Body": "公布按钮会一次性完成所有操作：向队伍揭示任务、向聊天里投放一张卡片，并提醒每一位玩家。",
+            "Hint": "点击高亮的公布按钮"
+          },
+          "GiveReward": {
+            "Title": "发放奖励",
+            "Body": "奖励按钮开始分配战利品。玩家对自己想要的物品举手；当两人想要同一件物品时，会掷一颗骰子，赢家拿走它。金币和经验会自动分配。",
+            "Hint": "点击高亮的奖励按钮"
+          },
+          "DistributeRewards": {
+            "Title": "分配战利品",
+            "Body": "此窗口用于结算。金币和经验一键均分。物品则手动分配：玩家对自己想要的物品举手，当同一件物品有两人举手时，可通过掷骰按钮让骰子决定。确认后即发放所有物品。",
+            "Hint": "试试这些按钮，然后确认（或取消）"
+          },
+          "CloseLedger": {
+            "Title": "关闭结算",
+            "Body": "奖励正在发放。关闭此窗口；接下来我们整理任务板本身。",
+            "Hint": "关闭奖励窗口"
+          },
+          "CloseBoard": {
+            "Title": "关闭任务板",
+            "Body": "所有内容都保存在世界日志中。随时可通过同一个场景控制工具重新打开任务板。",
+            "Hint": "关闭任务板窗口"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "DebugLogging": "详细日志",
+      "DebugLoggingHint": "将详细的 StoryFlow 日志打印到 F12 控制台。报告 bug 时请开启。",
+      "AllowChoiceVoting": "允许选择投票",
+      "AllowChoiceVotingHint": "允许非操控玩家对选项投出建议性（BG3 风格）的票。操控玩家 / GM 仍做最终决定。",
+      "ReduceMotion": "减少动态效果",
+      "ReduceMotionHint": "禁用过场覆盖层和通知动画（阳光光束、倒计时条、转场）。",
+      "CalendarPerfMode": "日历：性能模式（低配电脑）",
+      "CalendarPerfModeHint": "在你的客户端禁用日历的动画和高开销视觉效果（模糊、辉光、阴影）。",
+      "CalendarUserScale": "日历：界面大小",
+      "CalendarUserScaleHint": "在你的客户端缩放日历窗口和 HUD 小部件（也可通过日历标题栏中的放大镜 − / + 按钮调整）。",
+      "SkipTypewriter": "跳过打字机效果",
+      "SkipTypewriterHint": "在你的客户端立即显示对话文本，而不是逐字打出。",
+      "GmCardReveal": "显示卡牌揭示面板（GM）",
+      "GmCardRevealHint": "作为 GM，当角色解锁势力卡牌时，看到与玩家相同的全屏卡牌揭示面板，而不是一条小文字提示。",
+      "CaptureErrors": "捕获错误以进行故障排查",
+      "CaptureErrorsHint": "记录本次会话中的 StoryFlow 错误，以便故障排查报告能够包含它们。",
+      "Troubleshoot": "故障排查",
+      "TroubleshootLabel": "打开故障排查",
+      "TroubleshootHint": "健康检查 + 一份可复制粘贴的诊断报告，用于 bug 报告。",
+      "ResetTriggersMenu": "重置一次性触发器",
+      "ResetTriggersLabel": "重新激活所有一次性触发器",
+      "ResetTriggersHint": "清除所有「触发一次」事件触发器的已触发状态，使它们能够再次触发。",
+      "ResetTriggersConfirm": "重新激活这个世界中的所有一次性事件触发器吗？",
+      "ResetTriggersDone": "所有一次性触发器已重新激活。",
+      "TraderRep": "商人声望定价",
+      "TraderRepHint": "与势力绑定的商人在每个声望等级如何对待买家。倍率会缩放购买价格（1.0 = 不变）；拒绝表示商人不愿出售。",
+      "TraderRepTier": "等级",
+      "TraderRepMultiplier": "价格 ×",
+      "TraderRepRefuse": "拒绝",
+      "ModuleSettingsMenu": "模组设置",
+      "ModuleSettingsMenuLabel": "打开模组设置",
+      "ModuleSettingsMenuHint": "StoryFlow Dungeons Lab 的通用、日历、势力、商人和覆盖层控制。",
+      "ModuleSettingsTitle": "StoryFlow Dungeons Lab - 设置",
+      "ModuleSettingsSave": "保存更改",
+      "ModuleSettingsReset": "重置为默认值",
+      "ModuleSettingsSaved": "StoryFlow 设置已保存。",
+      "TabGeneral": "通用",
+      "TabCalendar": "日历",
+      "TabFactions": "势力",
+      "TabTrader": "商人",
+      "TabOverlay": "覆盖层",
+      "ModuleEnabled": "启用 StoryFlow Dungeons Lab",
+      "GmPermissionLevel": "GM 权限级别",
+      "GmPermissionLevelHint": "谁可以打开此设置窗口。",
+      "GmPermissionGmOnly": "仅 GM",
+      "GmPermissionAssistant": "副 GM 及以上",
+      "CompactRows": "使用紧凑的任务板行",
+      "FactionsEnabled": "启用势力",
+      "FactionsEnabledHint": "在角色卡上显示势力标签页并追踪势力声望。声望节点和服务在世界重新加载后更新。",
+      "RepMin": "最低声望",
+      "RepMax": "最高声望",
+      "RepTiers": "声望等级",
+      "RepTiersHint": "每个等级开始的声望值（例如，当角色的声望达到此数字时就会成为「尊敬」）。数值会被限制在上方的最小值/最大值之间，并强制按升序排列。",
+      "RepTierName": "等级",
+      "RepTierMin": "起始于",
+      "GraphActorLinksEnabled": "启用角色 StoryFlow 剧情图",
+      "GraphActorLinksEnabledHint": "在「角色」侧边栏的右键菜单中显示「打开 / 创建 StoryFlow 剧情图」选项。",
+      "QuestBoardEnabled": "启用任务板",
+      "QuestBoardEnabledHint": "允许打开任务板（场景控制按钮、快捷键绑定和公开 API）。",
+      "TraderEnabled": "启用商人",
+      "TraderEnabledHint": "允许打开商人商店，可独立打开或在剧情图运行期间打开。",
+      "TraderBuybackPct": "回购百分比",
+      "TraderBuybackPctHint": "玩家出售时，商人支付物品价值的基础比例（在声望卡牌系数之前）。0-100。",
+      "CalendarEnabled": "启用日历",
+      "CalendarEnabledHint": "关闭整个日历子系统（预定天气/事件 + HUD 小部件）。此开关关闭时，下方两个设置不生效。",
+      "OverlayEnabled": "启用玩家覆盖层与史诗通知",
+      "OverlayStyle": "覆盖层样式",
+      "OverlayStyleParchment": "羊皮纸卷轴",
+      "OverlayStyleLeather": "皮革典籍（即将推出）",
+      "OverlayStyleMinimal": "极简横幅（即将推出）",
+      "NotifDuration": "通知时长（秒）",
+      "GmOnlyTitle": "仅 GM",
+      "GmOnlyBody": "只有 GM 可以配置 StoryFlow Dungeons Lab。如果此处有设置需要更改，请询问你的 GM。",
+      "Close": "关闭",
+      "SecretRevealEnabled": "秘密物品揭示动画",
+      "SecretRevealEnabledHint": "为秘密通知播放全屏点击揭示动画。关闭 = 立即显示物品，无动画。",
+      "SecretGlowStyle": "秘密揭示辉光样式",
+      "SecretGlowStyleHint": "被揭示的秘密物品背后的最终辉光效果。",
+      "SecretGlowHalo": "柔和光晕",
+      "SecretGlowRadiant": "璀璨爆发",
+      "SecretGlowPulse": "脉动光环",
+      "CalendarSceneWeather": "日历驱动场景天气",
+      "CalendarSceneWeatherHint": "将每天的日历天气应用到当前场景的天气效果（雾、雨、雪……）。",
+      "CalendarWidget": "显示日历小部件",
+      "CalendarWidgetHint": "为所有玩家在屏幕顶部显示日历小部件。",
+      "ScrubSection": "天空拨动",
+      "ScrubHint": "在小部件的天空面板上拖动以移动时钟。灵敏度决定拖动一个像素相当于多少世界时间——面板始终落在整分钟上。仅 GM。",
+      "ScrubSensitivity": "拨动灵敏度",
+      "ScrubGrow": "拨动时放大面板",
+      "ScrubGrowHint": "拖动时放大天空面板，以获得更大的目标区域。",
+      "ScrubSnap": "松开时对齐到 5 分钟",
+      "ScrubSnapHint": "松开时四舍五入到最近的 5 分钟；否则保留你停下的精确分钟。",
+      "TimeTraySection": "时间托盘",
+      "TimeTrayHint": "每个启用的步进都会向 GM 时间托盘添加一对 − / + 按钮（最多 3 个）。黎明、黄昏和 +1 天始终显示。",
+      "TimeStepEnable": "在托盘中显示此步进",
+      "TimeUnitMinute": "分钟",
+      "TimeUnitHour": "小时",
+      "TimeUnitDay": "天",
+      "TimeUnitWeek": "周"
+    },
+    "Secret": {
+      "TapToReveal": "点击揭示"
+    },
+    "Notification": {
+      "ToastKicker": "通知"
+    },
+    "Crate": {
+      "Activate": "激活",
+      "SpinAgain": "再次抽取",
+      "Free": "免费",
+      "Gp": "金币",
+      "Close": "关闭",
+      "Waiting": "等待其他玩家…",
+      "PossibleRewards": "可能获得的奖励",
+      "AddItem": "添加物品",
+      "DragHere": "将物品拖到这里",
+      "NoItems": "暂无物品——从合集或侧边栏将物品拖入此窗口。",
+      "ItemName": "物品",
+      "ManageItems": "管理物品",
+      "Equalize": "均衡权重",
+      "Weight": "权重",
+      "DropChance": "掉落 %",
+      "GlowColor": "辉光颜色",
+      "GlowStyle": "辉光样式",
+      "Items": "宝箱物品",
+      "CostGold": "费用（金币）",
+      "MaxSpins": "每位玩家最大抽取次数（0 = 不限）"
+    },
+    "Preload": {
+      "NotifyMessage": "预加载完成——每个已连接的客户端都已缓存此剧情图的图像和音频。",
+      "ConfirmTitle": "运行此剧情图？",
+      "ConfirmMessage": "所有资产已预加载。现在继续运行此剧情图？"
+    },
+    "Prop": {
+      "Title": "交互道具",
+      "Spectator": "旁观中",
+      "Try": "尝试",
+      "AttemptsUnlimited": "尝试次数：不限",
+      "AttemptsLeft": "剩余尝试次数：{n}",
+      "ForceSolve": "强制解出",
+      "ForceFail": "强制失败",
+      "ForceResolveTitle": "强制结算道具",
+      "ForceSolveConfirm": "强制解出此道具？这会为所有玩家跳过谜题。",
+      "ForceFailConfirm": "强制此道具失败？这会为所有玩家跳过谜题。",
+      "Solved": "已解出",
+      "Failed": "已失败",
+      "NextLetter": "下一个字母",
+      "PreviousLetter": "上一个字母",
+      "AbortTitle": "为所有人关闭",
+      "AbortConfirm": "为整桌关闭此道具并结束流程？这不会计为解出或失败——运行只是在此停止。"
+    },
+    "Troubleshoot": {
+      "Title": "StoryFlow - 故障排查",
+      "Intro": "运行一次快速健康检查，并将下方报告复制到你的 bug 报告中。",
+      "Health": "健康检查",
+      "Report": "诊断报告",
+      "Copy": "复制",
+      "Download": "下载",
+      "Refresh": "刷新",
+      "ClearErrors": "清除错误",
+      "Copied": "诊断报告已复制到剪贴板。",
+      "ErrorsCleared": "已清除捕获的错误。",
+      "Timeline": "事件时间线"
+    },
+    "Extras": {
+      "Title": "Dungeon LAB 模块",
+      "AlwaysOn": "始终开启",
+      "GMOnly": "只有 GM 可以更改此全局设置。",
+      "DetailClose": "关闭",
+      "Factions": {
+        "Name": "势力与声望",
+        "Hint": "追踪势力声望与 NPC 好感度：角色卡上的势力标签页、势力图鉴以及声望节点。全局设置——仅 GM。",
+        "Description": "Factions 插件将松散的结盟变成游戏替你追踪的内容。每个角色都会获得一个「势力」标签页：他们与每个势力的关系，一级一级，从憎恨到崇敬，以及各个 NPC 对队伍的看法。\n作者会在剧情图画布上获得声望节点——作为奖励提高或降低声望、按等级设门或价格门槛、在做出选择后改变 NPC 的情绪——还有队伍可以浏览的势力图鉴。商人商店和条件检定读取相同的声望，因此辛苦赢得的声望会真正改变世界提供的东西。\n这是一个全局开关，因此只有 GM 可以拨动它。一旦关闭，角色卡标签页和图鉴会立即隐藏；声望节点和服务会在下次世界重新加载后更新。",
+        "ReloadHint": "势力设置已保存。重新加载世界以应用声望节点和服务。"
+      },
+      "DlTheme": {
+        "Name": "Dungeons LAB 主题",
+        "Hint": "将模组界面换为 Dungeons LAB 外观——巴洛维亚石墙上的烛光余烬。应用于此面板、GM 场景仪表盘和角色侧边栏。仅对你个人客户端生效。",
+        "Description": "默认情况下，模组穿着 Foundry 自己的衣服——无论你的世界运行什么主题，它的面板都会融入其中。打开此开关后，它们会换上 Dungeons LAB 配色：深邃的巴洛维亚石墙、烛光余烬的点缀、选中内容上的温暖辉光，以及标题上的衬线字体。\n它会一次性重新换肤 Dungeon LAB 模块面板、GM 场景仪表盘和角色侧边栏——并且不会碰你屏幕上的任何其他内容。纯粹只影响你的视图；在你想要之前保持关闭，一次点击即可还原。"
+      },
+      "ActorTint": {
+        "Name": "按类型分组并为角色着色",
+        "Hint": "将角色侧边栏按类型分组，并为每一行轻轻着色，玩家拥有的角色使用独特的色调。仅对你个人客户端生效。",
+        "Description": "想象一场大战的前夜：你的「角色」标签页已经膨胀成一片灰色的名字雪崩——英雄、雇佣兵、那艘战船、一整本怪物图鉴的哥布林——全都穿着同样灰暗的颜色，按你导入时的顺序杂乱地堆在一起。\nFoundry 给每个角色相同的默认行样式，所以要把玩家角色、NPC 和载具区分开，就得一个一个读名字。再加上几十只怪物，队伍自己的英雄就会在你最需要他们的时候淹没在人群里。\n打开此开关后，侧边栏会自动整理成整齐的类型分区——角色、NPC、载具、分组——每一行都涂上柔和、易读的颜色，让类型一目了然。而且它不限于常见的几类：类型列表是从你的游戏实时读取的，所以你的系统或模组添加的每一种角色类型都会获得自己独特而一致的颜色，而不是淹没在无名的灰色中。玩家自己的角色会获得更亮的色调和一条小点缀色条，让英雄们始终在怪物群中脱颖而出。它在你自己的文件夹里同样生效，而且纯粹只影响你的视图——别人的屏幕不会改变。"
+      },
+      "ItemTint": {
+        "Name": "按类型分组并为物品着色",
+        "Hint": "将物品侧边栏按类型分组，并为每一行轻轻着色，每种物品类型使用不同的色调。仅对你个人客户端生效。",
+        "Description": "「物品」标签页和「角色」标签页有同样的问题，甚至更糟：武器、法术、消耗品、特性、战利品和十几种自制类型，全部按导入顺序倒进一长条灰色列表。\nFoundry 给每件物品相同的默认行样式，所以要在五十张卷轴里找到那一把长剑，就得逐个读名字。你的世界靠合集喂养得越大，你想要的东西就越容易淹没在人群里。\n打开此开关后，侧边栏会自动整理成整齐的类型分区——武器、法术、消耗品、特性等等——每一行都涂上柔和、易读的颜色，让类型一目了然。类型列表是从你的游戏实时读取的，所以你的系统或模组添加的每一种物品类型都会获得自己独特而一致的颜色，而不是淹没在无名的灰色中。它在你自己的文件夹里同样生效，而且纯粹只影响你的视图——别人的屏幕不会改变。"
+      },
+      "DragScroll": {
+        "Name": "拖动时自动滚动",
+        "Hint": "将侧边栏条目拖到顶部或底部边缘附近会滚动列表，这样你就能到达远处的文件夹。在所有侧边栏标签页都有效。",
+        "Description": "你熟悉这个动作：你想归档的角色在最长的列表最底部，所以你抓住它，瞄准靠近顶部的文件夹——而侧边栏就……纹丝不动。你按住拖动时列表不肯移动，不松手就没法到达目的地，松手又会丢掉位置。\n这就是 Foundry 的一个小痛点，每次整理都要让你手忙脚乱地试上三次。\n开启此功能后，把拖动的条目按住靠近任意侧边栏列表的顶部或底部边缘，它就会朝那个方向轻轻滚动——越靠近边缘滚得越快——一直带着你，直到目标文件夹滚入视野。角色、物品、日志、场景：每个侧边栏标签页都随时可用，无需任何设置。"
+      },
+      "MoveFolder": {
+        "Name": "右键 → 移动到文件夹",
+        "Hint": "角色或物品上的右键选项，会打开一个选择器，直接把它放入任意文件夹——完全无需拖动。",
+        "Description": "有时候你根本不想拖动。文件夹是折叠的，或者它在滚动列表的另一头，又或者你有三十个角色（或物品）要整理，逐个拖动简直是千刀万剐。\nFoundry 重新归档文档的唯一方式就是手动把它拖过去——一个还好，一堆就很痛苦。\n右键点击任意角色或物品并选择「移动到文件夹…」，打开一个整洁的选择器：选择目的地（或把它送回根目录），瞬间完成，无需瞄准。对话框会显示你要移动的文档名称，并用其类型颜色着色，让你始终清楚谁要搬家——而且无论你点击多少次，只会打开一个窗口。"
+      },
+      "ActorType": {
+        "other": "其他"
+      },
+      "MoveToFolder": "移动到文件夹…",
+      "MoveToFolderTitle": "移动到文件夹",
+      "MoveToFolderPrompt": "将此角色移动到：",
+      "MoveToFolderPromptItem": "将此物品移动到：",
+      "MoveToFolderRoot": "- 根目录（无文件夹）-",
+      "MoveToFolderConfirm": "移动",
+      "CreateGraph": "打开 / 创建 StoryFlow 剧情图",
+      "CreateGraphDone": "已为 {name} 创建 StoryFlow 剧情图。",
+      "CreateGraphFail": "无法创建 StoryFlow 剧情图。"
+    },
+    "QuestBoard": {
+      "Title": "任务板",
+      "Disabled": "任务板已禁用——请在模组设置 → 通用中启用它。",
+      "Quests": "任务",
+      "Lore": "传说",
+      "Notes": "笔记",
+      "General": "通用",
+      "NewQuest": "新任务",
+      "NewLore": "新传说",
+      "Objectives": "目标",
+      "AddObjective": "添加目标",
+      "Description": "描述",
+      "Category": "分类",
+      "Delete": "删除",
+      "AddCategory": "添加分类",
+      "RenameCategory": "重命名分类",
+      "RemoveCategory": "删除分类",
+      "RemoveCategoryConfirm": "删除此分类？其中的条目将移至「通用」。",
+      "DeleteEntry": "删除条目",
+      "DeleteEntryConfirm": "删除此条目？此操作无法撤销。",
+      "ToggleReveal": "向玩家揭示",
+      "AnnouncedChat": "任务「{name}」已公布！",
+      "NoQuestSelected": "选择一个任务以查看。",
+      "NoLoreSelected": "选择一条传说以查看。",
+      "NotesComingSoon": "笔记将在后续更新中推出。",
+      "Personal": "个人",
+      "Party": "队伍",
+      "NewNote": "新笔记",
+      "NoNoteSelected": "选择一条笔记，或创建一条。",
+      "DeleteNote": "删除笔记",
+      "DeleteNoteConfirm": "删除此笔记？此操作无法撤销。",
+      "LastEdited": "最后由谁编辑",
+      "ViewNotebook": "查看玩家的笔记本",
+      "EditInBoard": "从任务板管理此条目（Token 控制 → 任务板）。",
+      "QuestPageSheetLabel": "StoryFlow 任务",
+      "LorePageSheetLabel": "StoryFlow 传说",
+      "KeybindName": "打开任务板",
+      "KeybindHint": "打开 StoryFlow 任务板。",
+      "CategoryShort": "分类",
+      "NoEntries": "暂无条目",
+      "Progress": "{done}/{total} 个目标",
+      "StatusLabel": "状态",
+      "VisibleLabel": "可见",
+      "HiddenLabel": "隐藏",
+      "Announce": "公布",
+      "AnnounceHint": "标记为未读——玩家会看到它闪烁，直到打开",
+      "AnnouncedHint": "已公布——部分玩家未读",
+      "HiddenHint": "对玩家隐藏",
+      "UnreadHint": "新——未读",
+      "CountQuestsGM": "{total} 个任务 · {hidden} 个隐藏",
+      "CountQuests": "{count} 个任务",
+      "CountLoreGM": "{total} 个条目 · {hidden} 个隐藏",
+      "CountLore": "{count} 个条目",
+      "CountFactions": "{count} 个势力",
+      "Factions": {
+        "Rivals": "宿敌"
+      },
+      "EmptyQuestsTitle": "任务板空空如也",
+      "EmptyQuestsGM": "还没有发布任何任务。发布第一个任务，让你的队伍去追寻吧。",
+      "EmptyQuestsPlayer": "GM 还没有发布任何任务。下次会话后再来看看。",
+      "EmptyLoreTitle": "未记录任何传说",
+      "EmptyLoreGM": "编年史还是一片空白。添加你世界历史的第一条记录吧。",
+      "EmptyLorePlayer": "这个世界的任何内容都还未向你揭示。",
+      "EmptyNotesTitle": "一本空笔记本",
+      "EmptyNotesText": "还没有笔记。开启新的一页——你的秘密在这里很安全。",
+      "EmptyNotesOther": "{name} 还没有写下任何内容。",
+      "EmptyFactionsTitle": "未知势力",
+      "EmptyFactionsGM": "添加你的队伍将要结交——或对抗——的第一个势力。",
+      "EmptyFactionsPlayer": "你的队伍还没有结交任何值得一提的盟友或敌人。暂时如此。",
+      "NoteTitle": "笔记标题",
+      "NotePlaceholder": "写下你的笔记…",
+      "NotePrivate": "私密——只有你能阅读",
+      "NoteReadOnly": "{name} 的笔记本——只读",
+      "NoteShared": "与队伍共享",
+      "FooterGM": "GM · 隐藏条目在此处变暗，玩家不可见",
+      "FooterPlayer": "新条目会闪烁，直到你打开",
+      "Toast": {
+        "available": "新任务",
+        "updated": "任务已更新",
+        "completed": "任务已完成",
+        "failed": "任务已失败",
+        "lore": "传说已揭示",
+        "Open": "在任务日志中打开",
+        "Event": {
+          "objectiveShown": "新目标 - {text}",
+          "objectiveDone": "目标已完成 - {text}"
+        }
+      },
+      "Status": {
+        "available": "可接取",
+        "active": "进行中",
+        "completed": "已完成",
+        "failed": "已失败"
+      }
+    },
+    "Trader": {
+      "Disabled": "商人商店已禁用——请在模组设置 → 商人中启用它。",
+      "Name": "名称",
+      "Portrait": "肖像",
+      "Item": "物品",
+      "Price": "价格（金币）",
+      "Stock": "库存",
+      "PriceGp": "{price} 金币",
+      "RemoveItem": "移除物品",
+      "DropHint": "将物品拖到这里为商人备货",
+      "MissingItem": "（物品缺失）",
+      "Empty": "暂无物品——将物品拖到这里为商人备货。",
+      "ShopTitle": "商人",
+      "Buy": "购买",
+      "SoldOut": "已售罄",
+      "Gold": "金币",
+      "BuyingAs": "以谁的身份购买",
+      "LeaveShop": "离开商店",
+      "NoCharacter": "请指定一个购买角色。",
+      "BoughtChat": "{actor} 以 {price} 金币购买了 {item}。",
+      "SoldChat": "{actor} 以 {price} 金币出售了 {item}。",
+      "Faction": "势力",
+      "NoFaction": "- 无 -",
+      "FactionHint": "若已设置，买家与该势力的声望会设门槛并缩放价格。",
+      "NpcLink": "关联 NPC（UUID）",
+      "NpcLinkHint": "若已设置，此 NPC 对全队的好感度会叠加到买家的势力声望上进行定价。",
+      "Reputation": "声望",
+      "Refused": "这位商人拒绝与你交易。",
+      "EditTrader": "编辑",
+      "EditTraderHint": "编辑此商人的日志页面",
+      "BuyWares": "购买商品",
+      "SellWares": "出售",
+      "Sell": "出售",
+      "Payout": "结算",
+      "Qty": "数量",
+      "NothingToSell": "无可出售之物",
+      "NothingToSellBody": "此角色没有携带商人愿意收购的货物。",
+      "NotBuying": "不收购",
+      "NotOwned": "你不拥有此物品",
+      "WareCount": "共 {total} 件商品，显示 {shown} 件",
+      "SearchPlaceholder": "搜索货架…",
+      "AllWares": "全部商品",
+      "ToggleDescriptions": "显示/隐藏物品描述",
+      "ShelvesBareTitle": "货架空空如也",
+      "ShelvesBareBody": "此商人还没有库存。向其日志页面添加物品，它们就会在这里向队伍展示。",
+      "NoMatchTitle": "没有匹配你搜索的结果",
+      "NoMatchBody": "商人眯起眼睛。「没听说过这东西。」",
+      "AddToLedger": "加入账本",
+      "Gone": "已售罄",
+      "Ledger": "账本",
+      "LedgerButton": "账本",
+      "LedgerEmpty": "还没有任何记录。从货架添加商品吧。",
+      "Total": "总计",
+      "PurseAfter": "付款后余额",
+      "ShortBy": "还差 {amount} 金币",
+      "InsufficientFunds": "钱袋里的钱不够。请移除物品或带更多钱再来。",
+      "CompletePurchase": "完成购买",
+      "Purse": "钱袋",
+      "RolePlayer": "购买会从你角色的钱袋中扣除",
+      "OpenShop": "打开商店",
+      "RestockDays": "补货（游戏内天数）",
+      "RestockDaysHint": "购买的物品会在这么多游戏内天数内保持缺货。0 = 在你按下「立即补货」之前它永远不会回来。",
+      "RestockNow": "立即补货",
+      "RestockPolicy": "每 {days} 天补货",
+      "RestockManual": "仅手动补货",
+      "Capacity": "{current} / {max}",
+      "BackInDays": "{days} 天后回归",
+      "AwaitingRestock": "等待补货",
+      "RequiresTier": "需要 {tier}",
+      "LockNone": "- 无锁定 -",
+      "LockNeedsFaction": "关联一个势力以使用声望锁定",
+      "OpenFactionOverview": "打开势力概览",
+      "OpenFactionMembers": "打开势力成员",
+      "SellItems": "出售物品（收购清单）",
+      "SellItemsHint": "可选。当你在此添加物品后，此商人将只回购名称与其中某一项匹配的物品——留空则让玩家像以前一样出售任意拥有的物品。",
+      "SellDropHint": "将物品拖到这里，整理此商人想要收购的物品",
+      "SellRatio": "回购比例覆盖",
+      "SellRatioBlank": "- 使用全局设置 -",
+      "SellRatioHint": "仅对此商人覆盖世界的回购百分比设置（0-1）。留空则继承全局设置。",
+      "AddToSellLedger": "加入出售账本",
+      "SellLedger": "回购账本",
+      "SellLedgerButton": "出售账本",
+      "SellLedgerEmpty": "还没有选择任何内容。添加要出售的商品吧。",
+      "CompleteSale": "完成出售"
+    },
+    "GraphPage": {
+      "OpenEditor": "打开剧情图编辑器",
+      "StartFlow": "开始流程",
+      "NodeCount": "{count} 个节点",
+      "EdgeCount": "{count} 条连线",
+      "Dangling": "{count} 条断开的连线",
+      "EnterEdit": "编辑",
+      "ExitEdit": "完成",
+      "Editor": {
+        "SetCover": "设置封面图像",
+        "RemoveCover": "移除封面图像",
+        "DescriptionLabel": "描述",
+        "Bold": "粗体",
+        "Italic": "斜体",
+        "Underline": "下划线",
+        "Strikethrough": "删除线",
+        "BulletList": "项目符号列表",
+        "NumberedList": "编号列表",
+        "Paragraph": "段落",
+        "Heading1": "标题 1",
+        "Heading2": "标题 2",
+        "Heading3": "标题 3"
+      }
+    },
+    "Canvas": {
+      "AddNode": "添加节点",
+      "Undo": "撤销（Ctrl+Z）",
+      "Redo": "重做（Ctrl+Shift+Z）",
+      "Save": "保存",
+      "DeleteSelected": "删除所选（Del）",
+      "Duplicate": "复制所选（Ctrl+D）",
+      "FindNode": "查找节点（Ctrl+F）",
+      "FindNodePlaceholder": "按名称或类型查找节点…",
+      "AddGroup": "添加分组框架",
+      "FullScreen": "切换全屏",
+      "SearchNodes": "搜索节点…",
+      "GuideButton": "指南",
+      "Close": "关闭",
+      "NoMatch": "没有匹配的节点。",
+      "RenamePage": "重命名剧情图页面",
+      "Import": "从文件导入剧情图…",
+      "Export": "将剧情图导出到文件",
+      "NodeCount": "{count} 个节点",
+      "TemplateBadge": "模板"
+    },
+    "Editor": {
+      "CategoryLabel": "分类",
+      "NoCategory": "无分类",
+      "NewCategory": "+ 新分类…",
+      "MultiStartNoEntry": "此剧情图有多个触发节点但没有默认入口——点击指挥台「剧情图控制」中某个入口上的星标（或右键）来选择默认运行哪一个。"
+    },
+    "ContextMenu": {
+      "RunFromHere": "从此处运行",
+      "Delete": "删除",
+      "Copy": "复制",
+      "Disconnect": "断开连接",
+      "Paste": "粘贴",
+      "Create": "创建",
+      "CreateTemplate": "创建模板…",
+      "Tutorial": "节点指南"
+    },
+    "GraphBrowser": {
+      "Title": "StoryFlow 剧情图",
+      "Search": "搜索剧情图…",
+      "Empty": "这个世界中还没有 StoryFlow 剧情图。",
+      "Nodes": "{count} 个节点",
+      "Section": {
+        "Journal": "日志页面",
+        "Actors": "角色剧情图",
+        "Regions": "场景区域",
+        "Macros": "宏",
+        "Events": "事件触发器"
+      }
+    },
+    "Group": {
+      "Edit": "编辑分组",
+      "Title": "标题",
+      "Color": "颜色",
+      "Save": "保存",
+      "Cancel": "取消"
+    },
+    "GraphIO": {
+      "ExportInfo": "剧情图已导出。",
+      "ExportNameTitle": "导出剧情图",
+      "ExportNameLabel": "导出文件名",
+      "ExportConfirm": "导出",
+      "ExportChat": "StoryFlow 剧情图 <strong>{name}</strong> 已导出到 <code>{path}</code>。",
+      "ExportFailed": "剧情图导出失败——请检查你是否有文件上传权限。",
+      "ImportConfirmTitle": "替换剧情图？",
+      "ImportConfirm": "用导入的剧情图替换当前剧情图？未保存的更改将丢失。你仍需保存才能持久化。",
+      "ImportLoaded": "剧情图已导入。请检查，然后保存以持久化。",
+      "ImportFailed": "无法读取该导出文件。",
+      "RenameTitle": "重命名剧情图页面",
+      "RenameLabel": "名称",
+      "Error": {
+        "BadJson": "该文件不是有效的 JSON。",
+        "NotGraph": "该文件不是 StoryFlow 剧情图导出文件。",
+        "FutureVersion": "该剧情图是由更新版本的 StoryFlow 导出的。"
+      }
+    },
+    "Templates": {
+      "CreateButton": "从所选内容创建模板（Ctrl+T）",
+      "LibraryButton": "模板库",
+      "LibraryTitle": "模板库",
+      "CreateTitle": "新模板",
+      "NameLabel": "模板名称",
+      "Create": "创建",
+      "NoSelection": "请先选择一个或多个节点。",
+      "ExistsTitle": "模板已存在",
+      "Exists": "已存在名为 <strong>{name}</strong> 的模板。",
+      "Overwrite": "覆盖",
+      "KeepBoth": "两者都保留",
+      "Cancel": "取消",
+      "Created": "模板「{name}」已保存。",
+      "Saved": "模板已保存。",
+      "SaveFailed": "模板保存失败——请检查你是否有文件上传权限。",
+      "StoreCorrupt": "无法读取 StoryFlow 模板文件——将以空模板库启动。",
+      "SearchPlaceholder": "搜索模板…",
+      "PreviewHint": "选择一个模板以预览其节点",
+      "NewFolder": "新文件夹",
+      "AddFolderTitle": "新文件夹",
+      "RenameFolderTitle": "重命名文件夹",
+      "DeleteFolderTooltip": "移除文件夹（模板回到列表中）",
+      "DeleteFolderTitle": "删除文件夹",
+      "DeleteFolderConfirm": "确定要删除文件夹 {name} 吗？其中的模板将回到主列表。",
+      "MenuMove": "移动到文件夹…",
+      "MoveTitle": "移动到文件夹",
+      "MoveRoot": "- 无文件夹 -",
+      "MovePresetFolder": "Dungeons Lab（预设）",
+      "PresetLocked": "内置预设——已锁定（只读）。仅可插入。",
+      "PresetUnlocked": "内置预设——已解锁供编辑。更改会保存到模组中。",
+      "PresetAuthoringGmOnly": "预设编辑仅对 GM 开放。",
+      "FlashPromoted": "已将「{name}」添加到 Dungeons Lab 预设。",
+      "FlashDemoted": "已将「{name}」移出预设。",
+      "EmptyTitle": "你的模板库空空如也",
+      "EmptyBody": "从编辑器保存一张剧情图，或导入其他 GM 分享的模板文件。",
+      "EmptyImport": "导入模板",
+      "NoResults": "没有匹配「{query}」的模板。",
+      "Meta": "{nodes} 个节点 · 更新于 {date}",
+      "InsertLabel": "插入",
+      "InsertedLabel": "已插入 ✓",
+      "InsertTooltip": "将此剧情图插入编辑器",
+      "InsertNoEditor": "打开剧情图编辑器以插入模板。",
+      "MoreActions": "更多操作",
+      "MenuEdit": "编辑模板",
+      "MenuRename": "重命名",
+      "MenuExport": "导出到文件",
+      "MenuDelete": "删除…",
+      "RenameTitle": "重命名模板",
+      "RenameHint": "回车保存 · Esc 取消",
+      "ExportChat": "StoryFlow 模板 <strong>{name}</strong> 已导出到 <code>{path}</code>。",
+      "ExportFailed": "模板导出失败——请检查你是否有文件上传权限。",
+      "Import": "导入…",
+      "Imported": "模板「{name}」已导入。",
+      "DeleteConfirm": "删除 {name}？此操作无法撤销。",
+      "ConfirmDelete": "删除",
+      "FooterHint": "GM · 双击模板即可插入",
+      "FooterIdle": "GM · 模板库",
+      "CountOne": "{count} 个模板",
+      "CountMany": "{count} 个模板",
+      "FlashInserted": "已将「{name}」插入编辑器。",
+      "PlaceHint": "点击放置「{name}」· 拖动平移 · 右键或 Esc 取消",
+      "FlashEditing": "正在剧情图编辑器中打开「{name}」…",
+      "FlashExported": "「{name}」已导出到文件。",
+      "FlashDeleted": "「{name}」已删除。",
+      "Error": {
+        "BadJson": "该文件不是有效的 JSON。",
+        "NotTemplate": "该文件不是 StoryFlow 模板导出文件。",
+        "FutureVersion": "该模板是由更新版本的 StoryFlow 导出的。"
+      }
+    },
+    "FieldEditor": {
+      "Title": "对话编辑器",
+      "Open": "编辑对话节点（查找与替换）",
+      "NodeName": "名称",
+      "Filter": "按名称 / 说话者筛选…",
+      "Chain": "串联",
+      "RevealHint": "点击在画布上显示此节点",
+      "Find": "查找…",
+      "Replace": "替换为…",
+      "ReplaceAll": "全部替换",
+      "CaseSensitive": "区分大小写",
+      "Matches": "{count} 处匹配",
+      "Replaced": "已替换 {count} 处。点击「应用」推送到画布。",
+      "Apply": "应用",
+      "Refresh": "刷新",
+      "RefreshHint": "从画布重新加载（丢弃未应用的编辑）",
+      "Applied": "更改已应用。请检查画布，然后保存以持久化。",
+      "Stale": "画布已更改——请刷新以重新加载。",
+      "Empty": "此剧情图中还没有对话（展示 / 文本）节点。"
+    },
+    "NodeCategory": {
+      "trigger": "触发器",
+      "dialogue": "对话",
+      "flow": "流程与逻辑",
+      "actor": "角色",
+      "world": "世界",
+      "narrative": "叙事",
+      "presentation": "呈现",
+      "prop": "交互道具",
+      "control": "控制"
+    },
+    "PathSelector": {
+      "Title": "选择路径",
+      "Unnamed": "（未命名路径）",
+      "Skip": "跳过"
+    },
+    "NodeDesc": {
+      "trigger.region": "当 Token 进入区域时开始流程。",
+      "trigger.macro": "从快捷栏宏或图块触发器开始流程。",
+      "trigger.weather": "当场景天气变为某个值时开始流程。",
+      "trigger.time": "当一天中的时间进入某个时段时开始流程。",
+      "trigger.rest": "当角色完成短休或长休时开始流程。",
+      "trigger.door": "当带标签的门打开、关闭或锁上时开始流程。",
+      "trigger.combat": "当战斗开始、结束或到达某一轮时开始流程。",
+      "trigger.levelup": "当角色升级时开始流程。",
+      "action.bossBar": "显示或隐藏追踪一名角色的电影化 Boss 生命条。",
+      "display": "显示一条带说话者、肖像和背景的对话台词。",
+      "text": "在实时场景（或上一张背景）上显示文本。",
+      "choice": "向玩家提供分支选项，可选超时。",
+      "check": "针对 DC 掷一次技能 / 豁免 / 属性 / 工具检定。",
+      "condition": "根据角色的职业、物品、技能或属性进行分支。",
+      "jump": "在另一个节点继续运行（合并路径）。",
+      "action.giveItem": "给角色一件物品——或从角色身上移除一件。",
+      "action.applyEffect": "对目标应用或移除一个标准状态效果。",
+      "action.changeScene": "激活或预览另一个场景。",
+      "action.healDamage": "对目标掷治疗或伤害。",
+      "action.giveGold": "给予或扣除目标的金币。",
+      "action.macro": "运行一个 Foundry 宏和/或内联代码。",
+      "action.preloadScene": "预加载场景，使切换时即时完成。",
+      "action.door": "打开 / 关闭 / 锁上门，或将墙转换为门或暗门。",
+      "action.light": "打开/关闭/切换灯光，或更改任意灯光属性（颜色、半径、强度、动画）。",
+      "action.modifyAffinity": "更改某个 NPC 对队伍的看法。",
+      "action.effect": "播放 JB2A（或任何已注册到 Sequencer 的）视觉效果，一次性或持续性的。",
+      "action.endEffect": "按名称、按此剧情图，或所有 StoryFlow 效果来结束持续效果。",
+      "action.tiles": "将动画批量放置为循环图块；运行时显示/隐藏该组。",
+      "action.token": "移动、创建或删除场景上的 Token。",
+      "trader": "打开一个玩家可以购买物品的商店。",
+      "quest": "在任务板上揭示 / 更新一个任务或传说条目。",
+      "journal": "打开、写入或创建日志条目和页面。",
+      "notification": "弹出提示或全屏史诗通知。",
+      "crate": "CS 风格的开箱：每位玩家转动加权物品转盘并赢得一件物品。",
+      "prop.cryptex": "一个旋转环密码筒，玩家共同转动以拼出答案。",
+      "showOnMap": "将所有人的镜头平移到地图上已保存的位置。",
+      "wait": "让流程暂停若干秒。",
+      "showImage": "全屏显示图像几秒钟。",
+      "audio": "播放一次声音或循环播放。",
+      "transition": "播放全屏电影化转场（淡入淡出、擦除、虹膜……）。",
+      "screenAnimation": "播放一个短的一次性镜头或屏幕效果，然后恢复视图。",
+      "parchment": "展开一张泛黄的羊皮纸卷轴，显示日志页面或内联文本。",
+      "end": "结束流程。",
+      "branch": "一个仅 GM 可见的小窗口，选择运行走哪条输出路径。"
+    },
+    "Overlay": {
+      "Continue": "继续",
+      "EndScene": "结束场景",
+      "Votes": "投票"
+    },
+    "Parchment": {
+      "Close": "关闭"
+    },
+    "Check": {
+      "DC": "DC",
+      "WhoRolls": "谁来尝试？",
+      "Roll": "掷骰",
+      "RollTheCheck": "掷检定",
+      "Normal": "普通",
+      "Advantage": "优势",
+      "Disadvantage": "劣势",
+      "RollForThem": "代其掷骰",
+      "RollMode": "掷骰模式",
+      "Success": "成功",
+      "Failure": "失败",
+      "Crit": "暴击！",
+      "Fumble": "失手！",
+      "CritSuccess": "大成功",
+      "CritFailure": "大失败",
+      "SubIdle": "点击试探命运",
+      "SubRolling": "骰子已掷出…",
+      "SubDoom": "厄运在心中涌动…",
+      "SubHeavens": "天门洞开…",
+      "StepOf": "检定 {step}/{count}",
+      "PassTally": "{pass} 通过",
+      "AddCheck": "添加检定",
+      "Kind": {
+        "skill": "技能检定",
+        "save": "豁免检定",
+        "ability": "属性检定",
+        "tool": "工具检定"
+      }
+    },
+    "RollTrigger": {
+      "Rules": "任意规则匹配时触发",
+      "AddRule": "添加规则",
+      "RemoveRule": "移除规则",
+      "AnyDetail": "任意"
+    },
+    "SpellTrigger": {
+      "Spells": "法术",
+      "DropHint": "将法术拖到这里（留空 = 任意施放的法术）",
+      "AnySpell": "未列出法术——任意法术施放时触发。",
+      "RemoveSpell": "移除法术",
+      "NotASpell": "此处只能拖入法术物品。"
+    },
+    "ActorList": {
+      "Legend": "指定角色",
+      "DropHint": "将角色拖到这里",
+      "Remove": "移除角色",
+      "Empty": "未列出角色。",
+      "NotWorldActor": "此处只能拖入来自这个世界的角色。"
+    },
+    "AudioNode": {
+      "Tracks": "音轨",
+      "DropHint": "将单个音轨拖到此节点任意位置即可只播放该文件——将整个播放列表拖到这里则改为构建音轨列表。",
+      "RemoveTrack": "移除音轨"
+    },
+    "TimerNode": {
+      "Off": "关闭——不会触发"
+    },
+    "HealDamage": {
+      "DamageFlavor": "StoryFlow - 伤害（{total}）：{names}",
+      "HealFlavor": "StoryFlow - 治疗（{total}）：{names}",
+      "PickTargets": "谁受到影响？",
+      "Apply": "应用",
+      "Cancel": "取消"
+    },
+    "GiveGold": {
+      "GaveChat": "{actor} 获得 {amount} 金币。",
+      "TookChat": "{actor} 失去 {amount} 金币。",
+      "ReceiptLine": "{actor} - 剩余 {left} 金币"
+    },
+    "GiveItem": {
+      "ReceiptHeader": "StoryFlow - 给予 / 移除物品",
+      "ReceiptRemoved": "{actor} - 已移除 {item} ×{qty} - 剩余 {left}",
+      "ReceiptGave": "{actor} - 已添加 {item} ×{qty}",
+      "ReceiptFrom": "（来自 {container}）",
+      "ReceiptMatched": "· 匹配到 {count} 组同名堆叠"
+    },
+    "QuietCheck": {
+      "RetryTitle": "掷骰未完成",
+      "RetryBody": "该检定无法掷出，因此场景正在等待。请重新掷骰，或放弃并让 GM 处理。",
+      "Retry": "重新掷骰",
+      "GiveUp": "放弃"
+    },
+    "Errors": {
+      "NoGraphPage": "StoryFlow：未找到剧情图页面。",
+      "NoActor": "StoryFlow：没有执行角色——请为你的用户指定一个角色。",
+      "RollFailed": "StoryFlow：掷骰失败——请重试。",
+      "RunActive": "StoryFlow：已有一个场景正在播放——请先结束它，再开始另一个。"
+    },
+    "NodeType": {
+      "trigger.region": "区域触发器",
+      "trigger.macro": "宏触发器",
+      "trigger.weather": "天气触发器",
+      "trigger.time": "时段触发器",
+      "trigger.rest": "休息触发器",
+      "trigger.door": "门触发器",
+      "trigger.timer": "计时器触发器",
+      "trigger.hp": "HP 触发器",
+      "trigger.spell": "施法触发器",
+      "trigger.roll": "掷骰 / 效果触发器",
+      "trigger.combat": "战斗轮触发器",
+      "trigger.levelup": "升级触发器",
+      "action.bossBar": "Boss 生命条",
+      "display": "展示",
+      "text": "文本",
+      "choice": "选择",
+      "check": "检定",
+      "condition": "条件",
+      "jump": "跳转",
+      "action.giveItem": "给予 / 移除物品",
+      "action.applyEffect": "应用效果",
+      "action.changeScene": "切换场景",
+      "action.healDamage": "治疗 / 伤害",
+      "action.giveGold": "给予 / 扣除金币",
+      "action.macro": "运行宏 / 代码",
+      "action.preloadScene": "预加载场景",
+      "action.door": "更改门 / 墙",
+      "action.light": "更改灯光",
+      "action.modifyAffinity": "调整 NPC 好感度",
+      "action.effect": "播放效果",
+      "action.endEffect": "结束效果",
+      "action.tiles": "动画图块",
+      "action.token": "Token",
+      "trader": "商人",
+      "quest": "任务",
+      "journal": "日志",
+      "notification": "通知",
+      "crate": "战利品箱",
+      "prop.cryptex": "密码筒",
+      "showOnMap": "在地图上显示",
+      "wait": "等待",
+      "showImage": "显示图像",
+      "audio": "音频",
+      "stopAudio": "停止音频",
+      "transition": "转场",
+      "screenAnimation": "屏幕动画",
+      "parchment": "羊皮纸",
+      "end": "结束",
+      "branch": "路径选择器",
+      "preload": "预加载剧情图"
+    },
+    "BossBar": {
+      "Victory": "胜利",
+      "ToggleTip": "Boss 生命条"
+    },
+    "Tutorial": {
+      "WindowTitle": "节点指南",
+      "PinsHeading": "引脚",
+      "PinsIn": "输入",
+      "PinsOut": "输出",
+      "PinsOutDynamic": "动态——每个配置条目对应一个引脚",
+      "UsageHeading": "如何使用",
+      "TipsHeading": "GM 提示",
+      "PairsHeading": "搭配推荐",
+      "RunDemo": "运行示例",
+      "RunDemoHint": "通过真实覆盖层实时运行此示例。",
+      "ExampleInactiveNote": "演示和示例剧情图存放在一个隐藏日志中，且处于非激活状态——它们的触发器永远不会在你的世界中触发；它们仅供查看。",
+      "ShowExample": "打开",
+      "ShowExampleHint": "在剧情图编辑器中打开连线——注释会解释每个部分。",
+      "CopyExample": "复制",
+      "ExampleCopied": "示例已复制——将其粘贴（Ctrl+V）到任意 StoryFlow 剧情图中。",
+      "ExampleCopyFailed": "此类型没有可复制的示例。",
+      "RunFailed": "无法运行教程演示——请查看控制台。",
+      "ComingSoon": "指南即将推出。上方内容是实时注册表数据。",
+      "JournalName": "StoryFlow 教程",
+      "Edit": {
+        "Edit": "编辑指南",
+        "Save": "保存",
+        "Cancel": "取消",
+        "Reset": "重置为默认值",
+        "ResetConfirm": "将此指南重置为内置内容？",
+        "ResetYes": "重置",
+        "ResetNo": "取消",
+        "SummaryLabel": "摘要",
+        "UsageLabel": "如何使用",
+        "InsertTip": "插入提示标注",
+        "InsertWarning": "插入警告标注",
+        "InsertInfo": "插入信息标注",
+        "CalloutHint": "以 [!tip]、[!warning] 或 [!info] 开头一行即可创建标注。",
+        "TipsLabel": "GM 提示",
+        "AddTip": "添加提示",
+        "SectionsLabel": "自定义章节",
+        "AddSection": "添加章节",
+        "SectionTitlePlaceholder": "章节标题",
+        "PairsLabel": "搭配推荐",
+        "AddPair": "添加搭配",
+        "WhyPlaceholder": "它们为何搭配良好…",
+        "DemoLabel": "演示页面",
+        "BuiltinDemo": "内置演示",
+        "DemoMissing": "自定义演示页面已不存在。",
+        "EditedBadge": "已编辑"
+      },
+      "Custom": {
+        "AddCategory": "添加分类",
+        "RenameCategory": "重命名分类",
+        "RemoveCategory": "移除分类",
+        "RemoveCategoryConfirm": "删除此分类及其所有页面？此操作无法撤销。",
+        "AddPage": "添加页面",
+        "RemovePage": "移除页面",
+        "RemovePageConfirm": "删除此页面？此操作无法撤销。",
+        "EditPage": "编辑页面",
+        "TitleLabel": "标题",
+        "BodyLabel": "正文",
+        "Save": "保存",
+        "Cancel": "取消",
+        "NoCategories": "还没有自定义分类。"
+      },
+      "display": {
+        "Summary": "展示一个电影化的对话片段：说话者名称、肖像、背景和打字机正文文本。",
+        "Usage": "设置说话者名称和正文文本；可选添加肖像和背景图像。节奏控制：打字机速度（每秒字符数），或用延迟自动前进而不是等待点击。旁白和环境音频可随片段播放。一个输入、一个输出——串联多个展示即可构建场景。",
+        "Tip1": "将背景留空即可保留上一节点的背景——场景衔接时不会闪烁。",
+        "Tip2": "约 1500 毫秒的自动前进读起来像电影剪辑；凡玩家必须真正阅读的内容，请保留点击前进。",
+        "Tip3": "正文是富文本 HTML——指向角色和物品的 @UUID 链接可用。",
+        "Pair": {
+          "text": "文本是展示的旁白版本——没有说话者，是片段之间的纯散文。",
+          "choice": "在展示片段后接一个选择，把场景交给玩家。",
+          "audio": "在展示链之前先铺一层背景音乐，为场景配乐。"
+        }
+      },
+      "choice": {
+        "Summary": "向触发玩家呈现选项；每个选项都是自己的输出引脚和分支。",
+        "Usage": "编写提示并添加选项——每个选项都成为一个按位置排列的输出引脚（choice_0、choice_1……）。只有触发玩家可以选择；其他人会看到选项并可投出建议票。选项可以设门槛（物品、职业……），超时可通过超时引脚自动选择路径。\n\n[!info] 对于没有指定角色的单人 GM，设门槛的选项会「放行」保持可见，而不是对「无人」隐藏——它只会对真正不满足门槛的角色隐藏。",
+        "Tip1": "删除选项会重新映射剩余引脚——移除选项后请重新检查你的连线。",
+        "Tip2": "死胡同的选项引脚只会结束运行；把每个选项都接到某处，哪怕是一个共享的跳转。",
+        "Tip3": "使用简短标签——过长的选项会换行，并在较小的屏幕上把提示挤出去。",
+        "Pair": {
+          "display": "在提问之前，先用展示片段铺设场景。",
+          "check": "把有风险的选项接到一个检定，让选择它的人仍需掷骰。",
+          "jump": "用跳转把多个选择分支收敛回一条路径。"
+        }
+      },
+      "check": {
+        "Summary": "向触发玩家请求一次原生的 dnd5e 掷骰（技能、豁免、属性、工具），针对一个 DC；按成功/失败分支。",
+        "Usage": "选择掷骰类型和关键属性（例如察觉）并设置 DC。掷骰会在触发玩家的客户端上通过真实的 dnd5e 对话框进行——优势、加值和特性都会生效；聊天卡片会被抑制，只有结果总值返回。多个检定可用 AND/OR 组合。成功和失败引脚通往各自的分支。",
+        "Tip1": "取消掷骰对话框不会让检定失败——节点会重新武装并继续等待。",
+        "Tip2": "由触发角色进行掷骰：请确保流程以正确的 Token 开始（空角色通常是奇怪结果的常见原因）。",
+        "Tip3": "秘密 DC 请隐藏明细；教学时刻再显示它。",
+        "Pair": {
+          "choice": "把检定作为更安全路径中的一个选项提供。",
+          "condition": "为检定本身设门槛——例如只有游荡者才有资格尝试。",
+          "display": "在每个分支上用展示片段叙述两种结果。"
+        }
+      },
+      "condition": {
+        "Summary": "根据角色事实——职业、物品、属性——静默地将流程路由为 TRUE/FALSE。无需玩家交互。",
+        "Usage": "选择目标（通常是触发角色）并添加条件行；用 AND/OR 组合。运行器会即时求值，并精确触发 true/false 引脚中的一个。未配置任何行时，节点直接通过（true）。\n\n[!tip] 如果 TRUE 或 FALSE 分支看起来不对，先检查触发角色——空角色或意外的角色是最常见原因，而不是规则坏了。",
+        "Tip1": "意外的 FALSE 几乎总是触发角色错了，而不是比较坏了——先检查是谁启动了流程。",
+        "Tip2": "用两个串联的条件节点实现混合的 AND/OR 逻辑，而不是一条庞大的规则。",
+        "Tip3": "条件在运行时读取实时的角色数据——会话中途的变化也会生效。",
+        "Pair": {
+          "check": "条件按事实设门槛；检定按掷骰设门槛——组合起来就是「只有法师可以尝试这个」。",
+          "choice": "在选项后分支，按职业或物品做出不同反应。",
+          "jump": "用跳转把两个分支都送到共享场景，而不是复制节点。"
+        }
+      },
+      "trigger": {
+        "start": {
+          "Summary": "剧情图的入口标记——运行从这里开始。运行时纯粹是直通。",
+          "Usage": "放置一个 START 并把它接到你的第一个片段。流程从外部启动：区域行为（Token 进入区域）、生成的宏、指挥台，或 api.startFlow(pageUuid)。运行的触发角色——负责掷检定并被条件测试的那位——由启动流程的人或物设定。",
+          "Tip1": "START 没有实时演示——它无法触发自己。请改用编辑器里任意节点上的「从此处运行」。",
+          "Tip2": "如果未设置 meta.entry，运行器会回退到第一个触发器类别的节点——保持恰好一个 START 以维持可预测性。",
+          "Tip3": "GM 在选中玩家 Token 的情况下启动流程，会把控制权交给该玩家。",
+          "Pair": {
+            "display": "经典开场：START 接一个展示片段。",
+            "condition": "立即根据触发流程的人进行分支。"
+          }
+        },
+        "region": {
+          "Summary": "当 Token 进入一个附加了 StoryFlow 行为的场景区域时触发——移动者成为运行的触发角色。",
+          "Usage": "在场景控制 → 区域中附加它：创建或选择一个区域，打开它的「行为」标签页，添加一个 StoryFlow 触发行为，然后把此页面拖到它上面（如果剧情图有多个触发区域节点，可选将行为的节点字段设为特定的 trigger.region 节点 id——否则运行从剧情图的入口节点开始）。区域事件会在每个已连接的客户端上触发，但只有真正移动 Token 的那个客户端会派发运行，该 Token 的角色成为触发角色。当前 GM 客户端是消耗「一次」（禁用行为）的那个，因为只有它拥有编辑权限。",
+          "Tip1": "whoTriggers/specificActorIds 已在此载荷上定义，但区域行为尚未按它们过滤——每个进入的 Token 都会触发流程；请紧接着用条件节点按角色设门槛。",
+          "Tip2": "同一场景中的两个区域可以通过把每个行为的节点字段指向不同的 trigger.region 节点 id，从同一剧情图页面驱动两个不同的流程。",
+          "Tip3": "「一次」仅由当前 GM 消耗——若没有 GM 在线，一次性区域永远不会自行禁用。",
+          "Pair": {
+            "condition": "立即根据「谁」踏入了区域设门槛——触发角色的职业、物品或属性。",
+            "display": "经典伏击开场：区域触发器直接接一个展示片段。",
+            "notification": "一条快速提示（「你感觉被盯上了……」），无需为完整对话片段中断场景。"
+          }
+        },
+        "macro": {
+          "Summary": "当 GM（或诸如 Monk's Active Tile Triggers 之类的外部触发器）运行为此节点生成的宏时触发。",
+          "Usage": "在画布应用中，对 trigger.macro 节点使用「生成宏」以产生脚本宏命令，然后粘贴到快捷栏槽位。宏按优先级解析执行角色——Monk's Active Tile Trigger 进入的 Token，否则是选中的 Token，否则是运行用户指定的角色，否则为空——然后调用 api.startFlow(pageUuid, {nodeId, actorId})。由于角色解析发生在运行时，取决于当时选中或进入的内容，同一段已粘贴的宏既适用于 GM 手动触发，也适用于自动图块触发。\n\n[!warning] 更改此节点后，你必须重新生成宏并重新粘贴到快捷栏——已粘贴的宏不会自动更新。",
+          "Tip1": "宏在生成时就烙入了此节点的 id 和页面 uuid——重命名节点或指向另一个节点，就必须重新生成并重新粘贴；仅编辑载荷不会更新已粘贴的宏。",
+          "Tip2": "如果没有任何内容被选中/进入，且运行用户没有指定角色，actorId 为空——任何针对触发角色的下游条件都会读到空角色，很可能失败。",
+          "Tip3": "whoTriggers/specificActorIds 存在于载荷上，但生成的宏不会按它们过滤——运行时它总是启动流程；请添加条件节点来设门槛。",
+          "Pair": {
+            "condition": "在让场景继续之前，先针对宏解析出的角色做防护。",
+            "branch": "让运行宏的 GM 手动选择结果——不涉及玩家掷骰。",
+            "display": "触发宏来启动一段 GM 提示的过场。"
+          }
+        },
+        "weather": {
+          "Summary": "当当前场景的天气效果被设为已配置的键时触发。",
+          "Usage": "从下拉框中选择天气键（由场景可用的天气效果填充）。触发器监听 Foundry 的 updateScene 钩子，且仅当更新确实触及当前场景的天气字段时才响应。没有触发角色——由当前 GM 客户端求值并驱动运行，因此检查 target:「trigger」的下游条件节点会找不到角色。",
+          "Tip1": "只有当前场景才算数——在无人查看的场景上更改天气永远不会触发，即使键匹配。",
+          "Tip2": "匹配只检查天气字段是否被触及且等于载荷的键——重新应用相同的天气（例如 Simple Weather 对未变化的预报重新掷骰）也会再次触发，除非你设置了「一次」。",
+          "Tip3": "这里 actorId 始终为空——把条件对接到触发角色以外的其他东西，或完全跳过角色逻辑。",
+          "Pair": {
+            "display": "在暴风雨来临的那一刻，用一个氛围片段开场。",
+            "action": {
+              "light": "调暗或闪烁场景灯光以匹配新的天气。"
+            },
+            "notification": "一条安静提示（「雨开始了……」），无需把玩家拉进对话。"
+          }
+        },
+        "time": {
+          "Summary": "当世界时钟跨入一个与已配置时段匹配的新时段（黎明/白天/黄昏/夜晚）时触发一次。",
+          "Usage": "选择四个时段之一。触发器监听 updateWorldTime，计算当前小时（若启用则通过 Simple Calendar，否则用 worldTime/3600），且只在真正「进入」所选时段时触发——而不是已经处于其中时的每次滴答。没有触发角色；由当前 GM 驱动运行。",
+          "Tip1": "它在「边界」触发，而不是「电平」——一次性跳过多个小时的世界时间（例如长休）仍会在每进入一个新时段时触发一次，而不是每小时一次。",
+          "Tip2": "时段边界是固定的：黎明 5-8 点，白天 8-17 点，黄昏 17-20 点，夜晚 20-5 点——不可按日历配置。",
+          "Tip3": "actorId 始终为空——把条件对接到一个世界事实，而不是触发角色。",
+          "Pair": {
+            "display": "用一个简短的叙述片段宣告时间变化。",
+            "condition": "针对世界事实（例如任务标记）设门槛，因为没有触发角色可检查。",
+            "action": {
+              "changeScene": "黄昏降临的瞬间，切换到夜晚光照版本的地图。"
+            }
+          }
+        },
+        "rest": {
+          "Summary": "当角色完成短休或长休时触发，可按休息类型和休息者过滤。",
+          "Usage": "选择 restType（任意/短休/长休）和 whoTriggers（任意/队伍/指定角色）。触发器监听 dnd5e 的 restCompleted 钩子，并将休息角色报告为运行的触发角色，因此下游的检定/条件可以专门针对该角色做出反应。party 模式匹配任何有玩家拥有者的角色；specific 只匹配列出的角色 id。",
+          "Tip1": "这里休息的角色就是触发角色（不同于天气/时间）——针对触发的条件/检定节点看到的是休息角色，而不是 GM 运行的客户端。",
+          "Tip2": "restType 直接读取 dnd5e 结果的 long/short 标记——若系统更新改名了该结果结构，请实时验证。",
+          "Tip3": "party 模式只检查 actor.hasPlayerOwner——被指定了玩家拥有者的 NPC 盟友仍算作队伍。",
+          "Pair": {
+            "condition": "仅当休息角色是（或不是）特定职业或状态时才继续。",
+            "display": "队伍休息后，一个安静的「你醒来时神清气爽……」片段。",
+            "action": {
+              "healDamage": "在原生长休已恢复的基础上再补满 HP，例如魔法帐篷效果。"
+            }
+          }
+        },
+        "door": {
+          "Summary": "当墙/门变为已配置的状态（打开/关闭/锁上）时触发，范围限定为一个必需的 Tagger 标签。",
+          "Usage": "选择目标 doorState、一个 Tagger 标签（匹配必需——未打标签的触发器永不触发）以及 tagScope（仅当前场景，或所有场景）。触发器监听 updateWall，仅当更新确实触及门状态时才响应，且需要 Tagger 模组处于激活状态才能解析标签。没有触发角色；由当前 GM 驱动运行。",
+          "Tip1": "标签是必需的——匹配器要求非空标签且标签匹配，所以留空意味着触发器永远无法触发，而不是「匹配任意门」。",
+          "Tip2": "需要 Tagger 模组处于激活状态——没有它，标签会读作空，标签检查总是失败。",
+          "Tip3": "actorId 始终为空——门不知道是谁打开的；针对世界状态设门槛，而不是触发角色。",
+          "Pair": {
+            "action": {
+              "door": "在解锁门的流程结束后，立刻把门在队伍身后重新锁上。"
+            },
+            "condition": "在门事件有意义之前，先针对任务标记设门槛。",
+            "display": "带标签的门打开的那一刻，一个「吱呀——揭示」片段。"
+          }
+        },
+        "timer": {
+          "Summary": "按锚定在日历日期上的重复游戏时间间隔触发，与任何世界事件无关。",
+          "Usage": "设置锚点（年/月/日/小时）和间隔（每 × 单位：小时/天/周/月）。触发器监听 updateWorldTime，并在每次跨过一个或多个网格边界的滴答触发一次——大幅时间跳转（例如长休）仍精确触发一次，而不是每个被跳过的边界各一次。once 使其单次触发；否则它会永久在固定锚点 + k·间隔的网格上重新武装，并记录在持久化的触发器状态中，因此重新加载不会对错过的边界补触发。",
+          "Tip1": "月/周固定为 28 天的月 / 7 天的周（模组自己的日历），而不是 Simple Calendar 自定义日历定义的任何内容。",
+          "Tip2": "禁用的计时器仍会在每次世界时间滴答时静默推进其内部时钟，因此稍后重新启用不会为它错过的每个边界补触发。",
+          "Tip3": "actorId 始终为空——这是世界时钟，不绑定任何角色。",
+          "Pair": {
+            "display": "每 N 天一个重复的预兆或倒计时片段。",
+            "condition": "在预定事件真正触发之前，先针对任务标记设门槛。",
+            "notification": "一条微妙的提示标记时间流逝，而不中断游戏。"
+          }
+        },
+        "hp": {
+          "Summary": "当被监视角色的 HP 向下穿过一个阈值（百分比、固定值，或 0 HP 死亡）时触发。",
+          "Usage": "选择模式（最大 HP 的百分比、固定值、阶段边界，或 0 HP 及以下死亡）以及适用的阈值，再加上 whoTriggers/specificActorIds 来限定监视哪些角色。它监听 updateActor（链接和未链接的 Token 一样），比较更新前后一刻的 HP，仅在向下穿越时触发——旧 HP 高于界限，新 HP 等于或低于它，因此把 HP 恰好降到阈值也会触发——并且一旦角色治疗回界限之上，它就会重新武装。maxFires（0 = 不限）限制一个节点最多触发多少次，记录在持久化的触发器状态中。\n\n[!info] 它与 Boss 生命条插件动作节点搭配良好，把此触发器设为阶段模式会在每个 HP 阶段触发一次，而不是只在单一阈值触发一次。",
+          "Tip1": "它是边沿触发，而非电平触发——在编写流程时已处于阈值以下的角色，除非先治疗到阈值之上再降到其下，否则不会重新触发。",
+          "Tip2": "HP 下降的那个角色就是触发角色——它之后的条件/检定节点会看到该角色。",
+          "Tip3": "maxFires 按节点计数，而不是按角色——使用 whoTriggers:「party」时，一个不幸的角色反复流血致死，会为所有人耗尽整个上限。",
+          "Pair": {
+            "condition": "仅当 HP 下降的角色是队伍的坦克时才升级（「浴血」叙述）。",
+            "action": {
+              "healDamage": "守护天使效果：角色一穿过阈值就立刻治疗回来。"
+            },
+            "display": "HP 一越过界线，就出现一个「你伤势严重」的片段。"
+          }
+        },
+        "spell": {
+          "Summary": "当被监视角色施放所列法术之一（或列表为空时任意法术）时触发。",
+          "Usage": "通过将法术物品拖入列表来添加法术行（按来源 uuid/名称匹配，容忍世界副本与合集副本的差异），并设置 whoTriggers/specificActorIds 来限定哪些施法者算数。它监听 dnd5e 的 activity-use 钩子，只匹配角色拥有的法术类型物品；空的法术列表匹配限定角色施放的任意法术。施法角色是运行的触发角色。",
+          "Tip1": "空的法术列表不是「永不触发」——它意味着「匹配任意法术」；若只想监视一个施法者的法术书，请与 whoTriggers:「specific」组合。",
+          "Tip2": "匹配是按物品身份（uuid/sourceId/名称），而不是按法术学派或环阶——「监视火球术」不会抓到改名换皮的副本。",
+          "Tip3": "每次使用活动触发一次——请实时验证多目标或升环施放不会在你的 dnd5e 版本上触发多次。",
+          "Pair": {
+            "condition": "仅当施法者是特定职业或拥有特定物品时才响应。",
+            "display": "被监视法术落地的瞬间，一个「空气中噼啪作响的魔力」片段。",
+            "check": "接一个你自己的豁免/检定来回应这次施法，例如法术刚触发的护符。"
+          }
+        },
+        "roll": {
+          "Summary": "当被监视角色的豁免、属性检定、技能检定、攻击检定，或应用的状态效果匹配节点规则之一时触发。",
+          "Usage": "添加规则行（kind：save/ability/skill/attack/effect；可选 detail，如特定技能键；可选 outcome：any/success/failure/critical/fumble），用 whoTriggers/specificActorIds 限定范围。规则之间是 OR 关系——任意一条匹配的规则就会触发节点；空规则列表永不触发。它监听 dnd5e 的掷骰钩子（以及 effect 种类的 createActiveEffect），并把掷骰者/受影响角色报告为运行的触发角色；success/failure 需要掷骰上有已知的 DC/AC，否则读作未知，只有 any/critical/fumble 结果仍可匹配。",
+          "Tip1": "效果规则完全忽略结果（总是归一化为「any」）——它们纯粹按 detail 中的状态 id 匹配。",
+          "Tip2": "没有目标 DC/AC 的掷骰（例如没有设定目标的裸属性检定）成功与否未知——要求 success/failure 的规则永远匹配不到它，只有 any/critical/fumble 可以。",
+          "Tip3": "规则按设计是 OR 关系（没有 AND/NONE）——若既要特定掷骰又要特定角色，这正是 whoTriggers 的用途；你无法在一个节点上 AND 两种掷骰类型。",
+          "Pair": {
+            "condition": "仅当掷骰者是特定职业或持有特定物品时才响应这次掷骰。",
+            "display": "重击或失手落地的瞬间，一个戏剧性片段。",
+            "check": "串联一个后续检定，回应刚刚检测到的掷骰。"
+          }
+        },
+        "combat": {
+          "Summary": "当战斗遭遇开始、结束或到达特定轮时触发。",
+          "Usage": "选择事件：start（先攻开始）、end（遭遇被删除/关闭），或带轮数的 roundChange（0 = 每一轮，N = 仅当第 N 轮开始时）。与所有事件触发器一样，它会在每个客户端注册并自我限制到当前 GM，由 GM 启动流程；用 once 做一次性过场，用 enabled 作总开关。没有实时演示——开始或推进一场真实战斗才能看到它触发。",
+          "Tip1": "轮数为 0 的 roundChange 会在每一轮触发——适合重复性危害，但对任何喧闹的东西若不勾选 once 会很危险。",
+          "Tip2": "战斗事件没有单一执行玩家，因此运行的触发角色来自 GM 侧的启动——请在流程内部用条件做逐角色逻辑的门槛。",
+          "Pair": {
+            "display": "先攻一掷出的瞬间，一个开场片段让伏击更带感。",
+            "condition": "根据实际参战者来分支战斗开始流程。",
+            "transition": "用一次电影化擦除进入第一轮，让战斗开场更有冲击力。"
+          }
+        },
+        "levelup": {
+          "Summary": "当角色获得职业等级时触发——升级角色成为运行的触发角色。",
+          "Usage": "可选设置等级（0 = 任意升级，N = 仅当角色恰好达到等级 N 时）以及触发者：任意角色、队伍（玩家拥有的角色），或拖入列表的指定角色。触发器监视 dnd5e 职业物品的等级提升，因此无论等级如何授予——升级对话框、手动编辑或另一个模组——它都会触发。与所有事件触发器一样，它会在每个客户端注册并自我限制到当前 GM，由 GM 启动流程；用 once 做一次性里程碑，用 enabled 作总开关。没有实时演示——升级一个真实角色才能看到它触发。",
+          "Tip1": "升级角色就是触发角色，因此针对触发的条件节点和检定掷骰会直接作用于他们——无需额外的门槛。",
+          "Tip2": "一次多级跳跃（例如一次编辑从 4 → 6）会以最终等级触发一次——设为被跳过等级（5）的精确等级节点不会触发。",
+          "Pair": {
+            "display": "等级落定的那一刻，一个祝贺片段让里程碑显得实至名归。",
+            "notification": "一条轻提示（「Mira 达到 5 级！」）宣告里程碑，而不中断游戏。",
+            "action": {
+              "giveItem": "在达到等级的瞬间授予里程碑奖励——一张专长卷轴、一把标志性武器。"
+            }
+          }
+        }
+      },
+      "notification": {
+        "Summary": "即发即忘的屏幕通知：提示、史诗物品揭示，或秘密揭晓。",
+        "Usage": "选择样式并编写文本。提示是角落通知；史诗和秘密会电影化地呈现拖入的物品。流程会立即前进——通知不会等待被关闭。",
+        "Tip1": "史诗/秘密需要物品引用——在检查器里把物品拖到字段上。",
+        "Tip2": "对于玩家必须先读再继续的文本，请改用展示片段。",
+        "Pair": {
+          "display": "秘密揭示后用展示片段解释他们找到了什么。",
+          "audio": "史诗揭示前的一记音效，让这一刻更带感。"
+        }
+      },
+      "text": {
+        "Summary": "旁白散文：没有说话者名称或肖像的打字机正文文本。",
+        "Usage": "编写正文文本；与展示不同，这里没有说话者名称或肖像，只有文字。背景可以保持透明（实时场景透出），或沿用上一节点的背景。节奏控制相同：打字机速度，或用延迟自动前进而不是点击。一个输入、一个输出。",
+        "Tip1": "用文本做叙述和场景铺设；一旦有角色说话，就切换到展示。",
+        "Tip2": "background:「carry」会保留上一片段设置的图像——在同一场景里自由混用文本和展示而不会闪烁。",
+        "Tip3": "autoAdvance 会把它变成过场片段——没有「继续」按钮，延迟后自行前进。",
+        "Pair": {
+          "display": "交替使用文本（叙述）和展示（对话）来构建场景。",
+          "wait": "在文本片段后接一个等待，在下一句之前制造戏剧性停顿。",
+          "choice": "用选择结束一连串文本片段，把控制权交还玩家。"
+        }
+      },
+      "jump": {
+        "Summary": "按 id 将运行重定向到本剧情图中的任意其他节点——没有输出引脚，路径直接瞬移。",
+        "Usage": "从剧情图中选择目标节点（字段会列出当前剧情图的每个节点）。运行时，运行会直接在那里继续，完全跳过连线。跳转没有输出引脚——在跳转之后接线毫无意义，重定向已经发生。非常适合把多个分支收敛回一个共享片段，而不是复制它。",
+        "Tip1": "showLink 会在画布上从跳转画一条虚线到其目标——保持开启，让连线可读。",
+        "Tip2": "空白的 targetNodeId 会让路径在此结束——若你忘记接线，跳转会安全降级。",
+        "Tip3": "跳转忽略自己在扇出图中的位置——它可以指向后方（循环）或前方；运行器不在乎方向。",
+        "Pair": {
+          "display": "把多条展示链收敛到一个跳转目标，而不是重复结局。",
+          "choice": "把两个或更多选择分支送到同一个跳转，让它们共享后续。",
+          "condition": "把条件的 true 和 false 两条路径都接到不同的片段，再跳转回同一处。"
+        }
+      },
+      "wait": {
+        "Summary": "让运行暂停固定秒数，然后继续——无需玩家交互。",
+        "Usage": "设置秒数（0-120）。运行会在那里停留，时间一到就自动前进；默认不向玩家显示任何内容，所以如果停顿需要在屏幕上有理由，请搭配展示/文本/通知。一个输入、一个输出。",
+        "Tip1": "秒数为 0 的等待是合法的空操作——在你还在为一个剧情图接线时，作为占位符很方便。",
+        "Tip2": "长时间等待（音乐重音、环境片段）搭配转场或环境音频比寂静更好。",
+        "Pair": {
+          "display": "在两个展示片段之间等待，制造片刻寂静，而不是瞬间切镜。",
+          "text": "叙述后的等待，让这一刻在下一句之前有落地空间。",
+          "transition": "用等待停留在渐隐的屏幕上，再用转场揭示下一场景。"
+        }
+      },
+      "branch": {
+        "Summary": "GM 路径选择器：GM（或触发玩家）在游戏时从几个已配置的输出路径中选择一个。",
+        "Usage": "添加路径——每个都成为一个按位置排列的输出引脚（path_0、path_1……）。把 decider 设为「gm」（当前 GM 选择）或「trigger」（触发玩家选择）。与选择不同，它只提示单一决策者，而不是向所有人提供选项；用它做 GM 主导的节奏决策，而非玩家自主权。",
+        "Tip1": "decider:「gm」会在运行中途提示你（GM）——用分支节点测试剧情图时，请预期该提示。",
+        "Tip2": "重新排序或删除路径会像选择一样重新映射位置引脚——编辑后请重新检查连线。",
+        "Tip3": "分支是确定性的（有人选择）；若想让故事自行变化，请改用随机。",
+        "Pair": {
+          "choice": "玩家自主权用选择，GM 自己的叙事分叉用分支，两者可共存于同一剧情图。",
+          "condition": "为分支路径设门槛，让某个选项仅在条件已允许时出现。",
+          "random": "把分支（GM 选主题）和分支内部的一个随机节点（谁登场）组合起来。"
+        }
+      },
+      "random": {
+        "Summary": "加权随机路径选择器：运行器在游戏时从几个已配置的输出路径中抽一个。",
+        "Usage": "添加路径，每条带一个权重——运行器按其权重比例随机抽取一个（相等权重 = 相等概率）。输出引脚按位置排列（rand_0、rand_1……），形状与分支相同，但不会提示任何人；抽取即时且静默完成。",
+        "Tip1": "权重是相对的，不是百分比——{70, 30} 和 {7, 3} 抽取结果相同；用对你而言清晰易读的数字即可。",
+        "Tip2": "权重为 0 的路径仍可接线，只是永远不会触发——适合在准备好启用前先占位一个选项。",
+        "Tip3": "随机没有专门的形状校验器——格式错误的行会在加权抽取中优雅降级，而不是报错。",
+        "Pair": {
+          "branch": "当结果应该是 GM/玩家的刻意选择而非运气时，请改用分支。",
+          "choice": "在玩家真正做出的选择背后，随机化风味（哪个商人、哪句环境台词）。",
+          "condition": "为哪个随机掷骰设门槛，让运气只在满足先决条件后生效。"
+        }
+      },
+      "preload": {
+        "Summary": "屏障节点：等待每个已连接的客户端完成获取此剧情图的图像/音频后，运行才继续。",
+        "Usage": "在资源密集的片段（大揭示、场景切换）之前放置一个预加载，让每个玩家的客户端在播放前已缓存文件。confirmBeforeRun 会在屏障满足后添加一个 GM 确认提示——关闭则意味着加载一完成就自动放行。只有一个输出引脚；没有失败分支。",
+        "Tip1": "在单人 GM 测试世界中，屏障会瞬间满足（只有一个参与者）——真正的好处要在满桌且连接较慢时才会显现。",
+        "Tip2": "在破坏性/不可逆的事情（场景切换）之前，confirmBeforeRun: true 是很好的安全阀；日常节奏请关闭它。",
+        "Pair": {
+          "action": {
+            "changeScene": "预加载目标场景的资产，然后切换场景——到达时不会有资源弹出。"
+          },
+          "display": "预加载让紧随其后的展示的背景/肖像即时出现，而不是慢慢载入。",
+          "wait": "在无确认的预加载之后接一个短暂等待，即使加载已即时完成，也给一个片段缓冲。"
+        }
+      },
+      "end": {
+        "Summary": "终止穿过剧情图的一条路径。运行本身只有在每条路径都尘埃落定后才结束。",
+        "Usage": "把每条悬空分支都接到结束节点（或最终到达结束节点的跳转）——剧情图不要求恰好一个结束；扇出的连线可以各带一个。运行整体按「尘埃落定」结束：一旦没有路径仍待处理（每个分支都已到达结束、一个未解决的等待，或干脆停止），覆盖层就会为所有人关闭。",
+        "Tip1": "多个同时的结束节点对扇出图来说是正常的——你无需把每个分支都漏斗回一个。",
+        "Tip2": "运行器不认识的节点类型仍会推进其「out」引脚，并以灰色占位符加载——它永远不会被静默丢弃，所以一个游离的死胡同通常意味着缺少结束节点，而不是剧情图损坏。",
+        "Pair": {
+          "display": "在结束之前，用最后一个展示片段收尾场景。",
+          "jump": "目标为空白的跳转表现得像隐式结束——为了清晰，请优先使用显式的结束节点。"
+        }
+      },
+      "comment": {
+        "Summary": "画布上的便利贴注释——没有引脚，永不参与运行。",
+        "Usage": "把注释放到任意位置，给你自己（或协作者）留一条笔记：某个分支为何存在、一个待办、关于某个依赖的提醒。它没有输入或输出引脚，所以任何连线都无法到达它，运行器也永远无法执行它——它纯粹是画布注释，可像便利贴一样调整大小。",
+        "Tip1": "因为没有任何东西能接到注释，所以没有可试运行的内容——节点指南的演示按钮对这种类型按设计是空操作。",
+        "Tip2": "用注释标记大图中尚未完成的区域，再填充它们——它们对玩家和运行器都不可见。",
+        "Pair": {
+          "jump": "在跳转目标旁记录它的意图——目的地从画布上看并不总是显而易见。",
+          "condition": "记录条件的真实意图（「只有游荡者」），因为光看它的行会过于简略。"
+        }
+      },
+      "showImage": {
+        "Summary": "在固定时长内显示一张满幅图像，然后前进——一个海报/插图片段。",
+        "Usage": "选择图像文件并设置秒数；图像全屏显示，计时结束后运行自动前进。没有点击前进——把它当作定时的过场面板，而不是玩家流连的片段。一个输入、一个输出。",
+        "Tip1": "秒数为 0 只会在前进前显示一帧图像——实际上不可用；请至少给它几秒。",
+        "Tip2": "搭配转场做淡入淡出，而不是对图像做硬切。",
+        "Pair": {
+          "display": "在显示图像后接展示片段，为刚显示的内容配文或回应。",
+          "wait": "事先插入一个等待，在图像揭示前营造期待。",
+          "transition": "用淡入淡出转场包裹显示图像，让它不会突兀地出现和消失。"
+        }
+      },
+      "action": {
+        "giveItem": {
+          "Summary": "把拖入的物品复制到触发角色身上，或从他们的物品栏移除一件匹配的物品。",
+          "Usage": "把物品拖到 itemUuid 并设置数量。mode「give」把物品复制到运行的触发角色（世界/合集来源不受影响）；mode「remove」按来源 uuid、id 或名称匹配角色拥有的物品，先删除整组堆叠，再把最后一组不完整堆叠减到指定数量。缺少/没有触发角色时，会带着控制台警告跳过——流程仍会前进。",
+          "Tip1": "它始终针对触发角色——与治疗/伤害或给予金币不同，这里没有「选中/全部」选项。",
+          "Tip2": "remove 按来源/uuid/id/名称匹配，所以它仍能找到合集物品的世界副本——但改名的自定义物品可能匹配不到；若名称有出入请实时验证。",
+          "Tip3": "没有触发角色（actorId 为空）意味着静默跳过——与剧情图别处大多数「什么都没发生」的报告同根同源。",
+          "Pair": {
+            "condition": "在发放奖励之前，先用条件（职业、已有物品）设门槛。",
+            "notification": "接一个通知（史诗/秘密样式），电影化地揭示刚给予的东西。",
+            "action": {
+              "giveGold": "把物品奖励与金币奖励配对，做成任务结算片段。"
+            }
+          }
+        },
+        "healDamage": {
+          "Summary": "掷一次公式，将其作为伤害或治疗应用到触发角色、选中角色，或整个队伍。",
+          "Usage": "选择模式（伤害/治疗）、骰子公式和目标：「trigger」（运行的角色）、「selected」（GM 会看到清单对话框——运行暂停直到他们确认），或「all」（每个非 GM 用户的指定角色，若无人指定则回退到每个角色）。掷骰通过 dnd5e 原生的 applyDamage 应用一次（因此抗性/临时 HP 生效），然后发布一张带总值的聊天卡片。",
+          "Tip1": "target「selected」会在 GM 对话框处暂停整个运行——不要在你期望无人值守运行的定时序列中使用它。",
+          "Tip2": "「all」是队伍「已指定」的角色，而不是当前在线的每个人——未指定角色的玩家即使在线，其角色也不会被触及。",
+          "Tip3": "一次掷骰由所有已解析目标共享（所有人伤害/治疗量相同），而不是每个角色单独掷一次。",
+          "Pair": {
+            "trigger": {
+              "hp": "在 HP 阈值触发器后接治疗/伤害，做成守护天使或失血效果。"
+            },
+            "condition": "先用条件设门槛决定谁承受伤害/治疗（例如仅当中毒时）。",
+            "check": "只在检定的失败分支上应用伤害。"
+          }
+        },
+        "giveGold": {
+          "Summary": "掷一次公式，把这么多金币加到（或减去）触发角色、选中角色或整个队伍。",
+          "Usage": "选择模式（给予/扣除）和骰子/固定公式；目标与治疗/伤害完全一致（「trigger」/带暂停 GM 对话框的「selected」/「all」队伍）。掷骰直接应用到每个已解析角色的 system.currency.gp，然后发布一张聊天卡片公布总值。",
+          "Tip1": "此节点没有现成演示：即使是空白默认载荷（给触发角色 10 金币）也能通过校验，但会真的写入角色的钱袋——请务必先用一次性角色测试。",
+          "Tip2": "mode「take」会钳制在 0 金币——你不能靠多扣把角色的金币扣成负数。",
+          "Tip3": "target「selected」会在 GM 清单对话框处暂停运行，与治疗/伤害相同——在定时剧情图中要为此停顿做好计划。",
+          "Pair": {
+            "trader": "在打开商人之前先奖励金币，让玩家能立刻花掉。",
+            "condition": "仅当条件（任务标记、职业）表明奖励是应得的时才发放。",
+            "notification": "一条提示（「+50 金币」）强化聊天卡片，而不强迫阅读。"
+          }
+        },
+        "applyEffect": {
+          "Summary": "对触发、选中或所有角色应用或移除一个标准状态效果（CONFIG.statusEffects，例如目盲、倒地）。",
+          "Usage": "从运行时下拉框选择效果和模式（应用/移除）；目标与治疗/伤害/给予金币完全一致（「selected」在 GM 清单对话框处暂停）。每个已解析角色都会直接调用 actor.toggleStatusEffect(effectId, {active})——效果自身的时长/结束条件（若有）就是该状态在你的 dnd5e 构建中通常携带的内容。",
+          "Tip1": "effectId 必须从下拉框选择——不能输入，空白选择会完全无法通过校验。",
+          "Tip2": "toggleStatusEffect 对每个角色是幂等的——用 mode「apply」重复应用同一效果不会叠加第二份。",
+          "Tip3": "target「selected」会像治疗/伤害和给予金币一样在 GM 对话框处暂停运行——底层共享同一套目标代码。",
+          "Pair": {
+            "condition": "在应用状态之前，先设门槛决定哪些角色有资格。",
+            "check": "只在检定的失败分支上应用状态（例如豁免失败 → 中毒）。",
+            "trigger": {
+              "roll": "通过应用你自己的匹配状态来回应检测到的掷骰/效果触发器。"
+            }
+          }
+        },
+        "changeScene": {
+          "Summary": "为整桌激活一个场景，或仅在 GM 自己的客户端预览。",
+          "Usage": "把场景拖到 sceneId 上。activate: true 会调用 scene.activate()——每个已连接的客户端都切换到该场景，与在场景侧边栏点击「激活」相同。activate: false 则改为调用 scene.view()——仅 GM 可见的预览，不会移动玩家。缺少场景会警告并跳过；流程仍会前进。",
+          "Tip1": "activate: true 会立即移动每位玩家的视图——除非你打算让整桌搬迁，否则不要在对话中途触发它。",
+          "Tip2": "activate: false 方便 GM 在运行中途查看目标场景，而不会打扰玩家当前所见。",
+          "Tip3": "事先搭配预加载场景，让新场景的资产已缓存——activate 不会等待任何东西加载。",
+          "Pair": {
+            "action": {
+              "preloadScene": "在激活目标前预加载其资产，这样不会有资源弹出。"
+            },
+            "trigger": {
+              "time": "时间触发器一跨入黄昏，就切换到夜晚地图。"
+            },
+            "display": "在场景切换前（或后）用展示片段叙述转场。"
+          }
+        },
+        "preloadScene": {
+          "Summary": "让客户端提前把场景的图像/音频取入缓存，而不切换到它。",
+          "Usage": "把场景拖到 sceneId 上。allClients: true 要求每个已连接的客户端（不只是 GM）预加载，这样之后的切换场景对所有人即时完成。这是即发即忘的——节点不会在前进前等待预加载完成（不同于通用预加载屏障节点）。",
+          "Tip1": "与预加载节点不同，这个节点不会阻塞运行去等待资产加载完成——它只是启动获取然后继续。",
+          "Tip2": "allClients: false 只在 GM 自己的客户端预加载——在真正为整桌切换场景之前，这通常不是你要的。",
+          "Pair": {
+            "action": {
+              "changeScene": "经典搭配：现在预加载场景，稍后切换场景，到达时无资源弹出。"
+            },
+            "preload": "当运行需要真正「等待」加载完成时，请改用通用预加载屏障。"
+          }
+        },
+        "token": {
+          "Summary": "在场景上移动、生成或删除 Token。",
+          "Usage": "选择操作（移动/创建/删除）。move/delete 从捕获的选区（「捕获选中 Token」检查器按钮）、Tagger 标签，或一个或多个拖入的角色（这些角色当前在当前场景上的任意 Token——Token 重新放置后仍有效）解析 Token；create 则改为生成拖入角色的原型 Token。三者都需要为 move/create 指定目的地：捕获的点、捕获图块的「当前」中心（实时重新解析，因此移动/缩放后的图块仍能正确落点），或带 Tagger 标签的标记。move 仅限同一场景——场景与目标场景不匹配的已解析 Token 会带着警告被跳过，绝不会跨场景传送。",
+          "Tip1": "捕获的目标图块按 id 存储，而不是烙入坐标——稍后在编辑器里移动图块，此节点仍会落在它的新中心。",
+          "Tip2": "move 永不跨场景——若捕获的 Token 和目的地在不同场景上，该组会被跳过并给出控制台警告，而非报错。",
+          "Tip3": "标签模式需要 Tagger 模组处于激活状态，来源和目标标签都一样；没有它，基于标签的目标/目的地解析为空（软失败，而非崩溃）。",
+          "Pair": {
+            "action": {
+              "door": "在「动作：门」打开门口之后，立刻把 Token 移过门洞。"
+            },
+            "trigger": {
+              "region": "区域触发器一触发，就生成一个增援 Token。"
+            },
+            "condition": "只搬移/删除先通过条件检查的 Token。"
+          }
+        },
+        "macro": {
+          "Summary": "在 GM 权威客户端上运行一个引用的 Foundry 宏和/或一段内联代码，作用域内有运行的 actor/token。",
+          "Usage": "把宏拖到 macroUuid 上，和/或编写内联代码（两者可同时使用；两者皆可选——完全空白的载荷是合法的空操作）。代码作为异步函数运行，作用域内有 (actor, token, speaker, scope)，其中 actor/token/speaker 从运行的触发角色解析。它只在当前 GM 客户端执行——与运行任何其他 Foundry 脚本宏的信任模型相同。",
+          "Tip1": "它与任何 GM 编写的脚本宏具有相同的信任级别——内联代码拥有完整 API 访问权；只把可信的剧情图放在能编辑它们的玩家面前。",
+          "Tip2": "宏或内联代码中抛出的错误会被捕获并记录到控制台，但不会让节点失败——流程仍会越过它继续前进。",
+          "Tip3": "当运行没有触发角色时（例如天气/时间这类世界事件触发器），actor/token 为空——假定真实角色的代码应为空值做防护。",
+          "Pair": {
+            "trigger": {
+              "macro": "trigger.macro 节点生成的宏会调用 api.startFlow——在同一剧情图更深处串联第二个「动作：宏」，做成脚本化的后续。"
+            },
+            "condition": "用条件设门槛决定宏是否运行。",
+            "branch": "让 GM 选择路径，然后每个分支运行不同的宏。"
+          }
+        },
+        "door": {
+          "Summary": "打开、关闭、锁上、切换或转换（墙/门/暗门）目标墙。",
+          "Usage": "选择操作和目标方式：「captured」使用通过「捕获选中墙」检查器按钮选中的墙（烙入特定场景上的特定墙 id）；「tag」在运行时解析带 Tagger 标签的墙（需要 Tagger 模组激活）。写入通过 Scene#updateEmbeddedDocuments 进行，因此每个客户端都能原生地即时看到更改——无需 socket 消息。\n\n[!tip] 标签目标需要 Tagger 模组激活；若 Tagger 未安装或未启用，StoryFlow 会警告并不做任何事，它从不假定标签存在。",
+          "Tip1": "捕获模式在编写时烙入特定墙 id——若你稍后删除/替换那些墙，节点会静默地没有可作用对象（请重新捕获）。",
+          "Tip2": "标签模式需要 Tagger 模组激活；没有它（或没有匹配标签），它会警告并跳过而不是报错——安全，但若你忘了检查控制台，它会沉默。",
+          "Tip3": "makeDoor/makeSecret/makeWall 会把普通墙段转换为门类型——适合只在故事中途出现的暗门通道。",
+          "Pair": {
+            "trigger": {
+              "door": "与门触发器搭配，当同一个带标签的门稍后再次改变状态时做出响应。"
+            },
+            "action": {
+              "light": "门节点运行的那一刻，照亮新打开的暗道。"
+            },
+            "condition": "仅当条件（任务状态、钥匙物品）通过时才解锁门。"
+          }
+        },
+        "light": {
+          "Summary": "打开/关闭/切换灯光，或部分重配置其属性（颜色、半径、动画、黑暗范围）。",
+          "Usage": "选择操作和目标方式，与「动作：门」完全一致（捕获选区或 Tagger 标签）。configure 模式是「部分」更新——每个字段默认「不变」/null，只有你显式启用的字段（setColor 加上可空数值字段）才会被写入；灯光上的其他一切都保持当前值。\n\n[!tip] 标签目标需要 Tagger 模组激活；若 Tagger 未安装或未启用，StoryFlow 会警告并不做任何事，它从不假定标签存在。",
+          "Tip1": "configure 只写入你显式动过的字段——把字段留在 null/「不变」默认值，就是让真实灯光上的该属性保持原样，而不是重置为默认值。",
+          "Tip2": "标签模式需要 Tagger 模组激活；缺少它（或无匹配）会警告并跳过——流程仍会前进，不会出错。",
+          "Tip3": "on/off/toggle 只是翻转隐藏——完整的 configure 控制（颜色、动画、黑暗范围）是独立操作，不叠加在上面。",
+          "Pair": {
+            "trigger": {
+              "weather": "匹配的天气触发器一触发，就调暗或闪烁灯光。"
+            },
+            "action": {
+              "door": "暗门打开的那一刻熄灭火把，营造氛围。",
+              "effect": "在刚打开的灯光上叠加一层 Sequencer 辉光效果。"
+            }
+          }
+        },
+        "effect": {
+          "Summary": "在 Token、捕获的点、捕获的线、屏幕或一组 Token 上播放 Sequencer/JB2A 视觉效果。",
+          "Usage": "输入或选择 Sequencer 数据库路径（动画）和目标模式。持续效果（persist: true）需要名称，并一直持续到结束效果节点（或 Sequencer 自带的效果管理器）将其结束；带 waitUntilFinished 的非持续效果会保持运行直到播放完成。需要 Sequencer 模组（通常还有 JB2A 包）处于激活状态——没有它，它会警告并立即前进，绝不阻塞运行。\n\n[!warning] 这需要 Sequencer 模组（带有诸如 JB2A 的动画数据库）处于激活状态；没有它，节点软失败并直接前进，不播放任何动画。",
+          "Tip1": "没有激活 Sequencer 模组？节点会软失败：一条控制台警告、一条面向 GM 的通知，然后流程直接越过它——它从不让运行卡住。",
+          "Tip2": "persist: true 的效果必须有名称——该名称（加上此剧情图的页面 uuid 作为来源）正是结束效果节点稍后找到并精确结束「这个」效果的方式，而不是别人的 Sequencer 动画。",
+          "Tip3": "waitUntilFinished 会让运行暂停到动画完成——对于不想用来卡节奏的纯氛围效果，请保持关闭。",
+          "Pair": {
+            "action": {
+              "endEffect": "在这里持续一个效果，稍后用结束效果节点清理。"
+            },
+            "check": "在检定的失败分支上播放冲击效果。",
+            "notification": "在更大的视觉效果旁叠加一条快速通知提示。"
+          }
+        },
+        "endEffect": {
+          "Summary": "结束本模组创建的持续 Sequencer 效果——按名称、按来源剧情图，或全部；或删除整个批量放置的图块组。",
+          "Usage": "选择模式：「name」按标签结束一个持续效果；「graph」结束同一剧情图页面创建的每个持续效果（按页面 uuid 来源匹配）；「all」结束任意 StoryFlow 剧情图创建的每个持续效果（命名空间 storyflow:——它绝不触及其他模组的 Sequencer 效果）；「tiles」则删除「动作：图块」放置组中的每个图块（普通场景文档删除，该模式无需 Sequencer）。",
+          "Tip1": "「all」只触及本模组命名空间（storyflow:）的效果——它绝不会意外结束其他模组或 GM 自己手动放置的 Sequencer 效果。",
+          "Tip2": "「tiles」模式完全不需要 Sequencer 模组——它只是对该组场景图块的普通文档删除。",
+          "Tip3": "结束一个当前未运行的效果（或组）是安全的空操作——此节点按设计是幂等的。",
+          "Pair": {
+            "action": {
+              "effect": "天然搭配：用「动作：效果」持续一个效果，稍后用此节点清理。",
+              "tiles": "场景用完之后，用「tiles」模式删除整个批量放置的图块组。"
+            }
+          }
+        },
+        "tiles": {
+          "Summary": "在场景上批量放置带标签的动画图块（用 Sequencer 文件作为纹理），或显示/隐藏/切换已放置的组。",
+          "Usage": "设置动画（Sequencer 数据库路径——其第一个可播放文件成为图块纹理）、组名（通过标记烙在每个图块上，以便再次找到）、放置用的大小/旋转/不透明度，以及针对已放置组的操作（显示/隐藏/切换）。放置本身通过画布应用的「批量放置」按钮完成，而不是仅靠此载荷——节点的操作随后切换该组中已有内容的可见性。\n\n[!warning] 这需要 Sequencer 模组（带有诸如 JB2A 的动画数据库）处于激活状态；没有它，节点软失败并直接前进，不会出现图块。",
+          "Tip1": "组名正是此节点（以及结束效果的「tiles」模式）稍后找到自己图块的方式——在不相关的放置之间复用组名会同时影响所有它们。",
+          "Tip2": "放置后的图块可以原生编辑（在图块图层中拖动、调整大小、重新样式化）——此节点的字段只在「放置时」生效，而不是每次显示/隐藏/切换时。",
+          "Tip3": "删除整个图块组是结束效果（「tiles」模式）的职责，而非此节点——这个节点只切换可见性。",
+          "Pair": {
+            "action": {
+              "endEffect": "稍后用结束效果的 tiles 模式删除整个已放置的组。",
+              "effect": "在刚出现的图块组上叠加一个一次性 Sequencer 效果。"
+            },
+            "condition": "仅当条件允许时才揭示一个危害/装饰图块组。"
+          }
+        },
+        "bossBar": {
+          "Summary": "在每个客户端上显示或隐藏电影化 Boss HP 生命条，实时追踪一名角色的生命值。",
+          "Usage": "把任意一个角色拖入「角色」字段（或从列表选择），然后选择操作：show 会在所有已连接客户端上升起横幅——名称介绍、血液般的液体条、2/3 和 1/3 处的阶段菱形、由临时 HP 供给的护盾线——hide 则降下它。HP 追踪角色文档本身，因此任何来源的伤害和治疗都会即时移动生命条；达到 0 HP 会自行播放死亡序列。可选的「标签」会覆盖显示的名称。",
+          "Tip1": "一次一条生命条——显示新 Boss 会替换当前的；当战斗提前结束时，接一个隐藏节点（或使用 Token HUD 的骷髅按钮）。",
+          "Tip2": "生命条的阶段正是 HP 触发器的「Boss 阶段」模式触发的同一批穿越点——把它们配对，即可脚本化阶段转换，而无需重复阈值。",
+          "Pair": {
+            "trigger": {
+              "combat": "用战斗触发器，在先攻掷出的那一刻升起横幅。",
+              "hp": "处于 Boss 阶段模式的 HP 触发器会脚本化同一条生命条的每次阶段变化。"
+            },
+            "display": "在横幅从背后升起的同时，介绍 Boss 的展示片段会更有冲击力。"
+          }
+        },
+        "modifyReputation": {
+          "Summary": "调整角色与某个势力的声望：增加、减少，或直接设定声望值。",
+          "Usage": "选择势力、模式（增加/减少/设定）和整数值，以及目标——触发角色、当前选中的 Token，或所有玩家角色。写入在 GM 权威客户端上运行，流程立即前进。声望等级随后驱动模组的其余部分（商人价格、势力可见性、条件）。",
+          "Tip1": "势力是必选项——下拉框列出你已注册的势力；未配置任何势力时，节点是带警告的空操作。",
+          "Tip2": "「set」会无条件覆盖——对于可重复的场景，请优先用增加/减少，以免重新运行抹掉已赢得的声望。",
+          "Tip3": "target「trigger」跟随运行的触发角色——声望落到错误角色时，它通常是嫌疑犯。",
+          "Pair": {
+            "condition": "更改后立刻用条件针对新声望分支。",
+            "notification": "用提示宣告声望变化，让玩家知道价格为何变动。",
+            "choice": "用即时的声望变动奖励或惩罚某个选择分支。"
+          }
+        },
+        "modifyAffinity": {
+          "Summary": "微调某个 NPC 对队伍的个人好感度：增加、减少，或设定好感值。",
+          "Usage": "粘贴 NPC 角色的 UUID（右键角色 → 复制 UUID），选择增加/减少/设定和整数值。GM 权威客户端应用更改，流程立即前进。好感度是每个 NPC 的认可度——与势力范围的声望相对的个人对应物。",
+          "Tip1": "角色 UUID 是必需的纯文本——一个拼写错误就会让节点成为带警告的空操作，所以请从文档复制，不要手打。",
+          "Tip2": "与声望一样，「set」会抹掉——在可重复的对话中使用增加/减少，以免重跑场景重置已赢得的认可。",
+          "Pair": {
+            "choice": "经典用法：每个对话选择分支都以不同方式改变 NPC 的认可度。",
+            "condition": "用条件针对累积的好感度分支后续场景。",
+            "display": "让 NPC 的展示台词承认这种变化，让玩家感受到指针在动。"
+          }
+        }
+      },
+      "showOnMap": {
+        "Summary": "在每个客户端上将镜头平移到已保存的地图位置，期间隐藏电影化覆盖层。",
+        "Usage": "使用「确认镜头位置」检查器按钮捕获场景 + 平移目标/缩放（来自 GM 自己当前的镜头），然后设置时长（平移需要多久，以及地图在 Out 引脚触发前保持可见多久）和受众（「all」或「players」——GM 自己的镜头只在「all」时移动）。无论受众如何，覆盖层都会为「所有人」隐藏，这样 GM 也能看到揭示；它会在本节点之后的下一个内容片段（展示/选择/检定）自动重新显示。\n\n[!tip] 镜头平移时，对话覆盖层会在每个客户端隐藏，并在下一片段自动恢复——这是预期行为，不是 bug。",
+        "Tip1": "它真的会移动每个目标客户端的镜头——安全，但很明显；除非揭示就是重点，否则不要在对话中途触发它。",
+        "Tip2": "audience「players」仍会隐藏 GM 的覆盖层，只是不移动 GM 自己的镜头——玩家看地图时，GM 保持当前视图。",
+        "Tip3": "此节点没有实时演示：sceneId 是必需的捕获引用，因此只有在你于真实场景中点击「确认镜头位置」后，它才有意义地运行。",
+        "Pair": {
+          "display": "镜头落定后，用展示片段叙述所显示的内容。",
+          "trader": "在打开商人节点之前，平移到商人的摊位。",
+          "notification": "平移后立刻一条快速提示，强化刚进入视野的内容。"
+        }
+      },
+      "trader": {
+        "Summary": "打开一个由商人日志页面支撑的商店覆盖层——购买和出售标签页、声望感知定价，以及库存账本。",
+        "Usage": "把商人页面拖到 traderUuid 上。购买会消耗库存（并按商人自己的 restockDays 设置随时间补货）；出售会把卖出的货物写回同一个商品目录，因此玩家的出售可以作为库存再次出现供购买。绑定势力的商人会在目录价格之上叠加声望倍率/拒绝和逐物品的声望等级锁定。由于商人是扇出/结算节点（与选择一样），通过回环连线重新进入它时，每次都会从商人页面全新重建商店状态——补货或新售出的物品会在重新进入时正确显示，而不是陈旧的快照。\n\n[!info] 买家势力声望可以完全设购买门槛（在「敌对」或「憎恨」时被拒绝）并按等级缩放价格；这在势力系统下配置。",
+        "Tip1": "空的商人（目录中无物品）会完全跳过此节点——Out 引脚立即触发，不显示商店，也不是错误。",
+        "Tip2": "声望为「拒绝」的势力会让该玩家的整个购买列表变空，尽管商人本身对其他人仍有库存。",
+        "Tip3": "把商人自己的后续连线回环到自身，做成玩家每次购买后都能继续浏览的商店——每次重新进入时库存实时重建。",
+        "Pair": {
+          "action": {
+            "giveGold": "在打开商人之前先发放金币，好有东西可花。"
+          },
+          "condition": "用条件（例如任务标记或势力声望）为整个商店设访问门槛。",
+          "showOnMap": "在商店打开之前，平移到商人的位置。"
+        }
+      },
+      "journal": {
+        "Summary": "为玩家打开日志页面，或以 GM 权威客户端写入/创建日志内容。",
+        "Usage": "选择操作：「open」广播打开指令，让每个客户端在匹配目标（「trigger」/「all」/「gm」）时本地打开 pageUuid；「write」追加或覆盖文本页面的内容；「createPage」向现有日志条目添加新页面；「createEntry」创建全新的日志条目（可选放在文件夹中），若设置了内容则带初始文本页面。每条写入路径都只在当前 GM 客户端运行——Foundry 随后原生地把结果同步给所有人。",
+        "Tip1": "「write」只对文本类型页面生效——指向图像或 PDF 页面会静默跳过并给出控制台警告。",
+        "Tip2": "reveal 只适用于 createPage/createEntry——它授予新文档 OBSERVER 所有权；关闭则让新页面/条目仅 GM 可见。",
+        "Tip3": "节点指南没有此节点的现成演示：open/write/createPage 都需要真实的 JournalEntryPage 或 JournalEntry 引用，而 createEntry 会向你的世界写入一份永久的新文档——这些都不适合从随机世界触发。",
+        "Pair": {
+          "parchment": "在「open」日志阅读后接一张羊皮纸卷轴，更电影化地回顾同一段传说。",
+          "condition": "仅当条件（任务状态、先前的线索）表明玩家已经赢得时才揭示页面。",
+          "notification": "指向新打开页面的提示会强化「有值得读的东西出现了」。"
+        }
+      },
+      "parchment": {
+        "Summary": "展开一张泛黄纸张的卷轴/信件/书籍覆盖层，显示引用的日志页面或内联文本，直到读者点击关闭。",
+        "Usage": "选择样式（卷轴/信件/书籍），并将 JournalEntryPage 拖到 pageUuid，或留空直接写文本——两者都设置时，引用的页面总是优先于内联文本。title/subtitle 标注卷轴的标题栏，audience（「all」/「players」/「trigger」）决定谁看到它；运行会暂停，直到有资格的读者点击关闭羊皮纸。",
+        "Tip1": "空白的 pageUuid 会回退到内联文本字段——编写可用的羊皮纸片段无需真实日志页面。",
+        "Tip2": "audience「trigger」只向触发玩家显示卷轴，GM 也看不到——与通知的受众门槛规则相同。",
+        "Tip3": "运行真的会暂停等待点击——把羊皮纸当作选择/检定对待，而不是在定时自动前进序列中串联的东西。",
+        "Pair": {
+          "journal": "当内容应作为侧边栏中真实、可回访的页面存在时，请改用日志节点。",
+          "display": "在羊皮纸揭示后接展示片段，回应刚读到的内容。",
+          "notification": "卷轴展开前的一条快速提示，为揭示营造期待。"
+        }
+      },
+      "audio": {
+        "Summary": "播放一次或循环播放音频文件，广播给每个客户端，可选持久名称供稍后控制。",
+        "Usage": "为 audioPath 选择文件（或拖入整个播放列表来填充音轨，每次此节点触发时随机或顺序选择）以及模式（once/loop）。volume 可为安静音源提升到最高 150%。persistAfterEnd + name 会在本覆盖层关闭后保持循环音轨播放，只有针对该名称（或「all」）的停止音频节点才能碰它。",
+        "Tip1": "空白的 audioPath 且无音轨列表是静默空操作——节点直接前进，不播放任何内容。",
+        "Tip2": "persistAfterEnd 只对你想让它在本节点覆盖层之后存续的循环/环境铺底有意义——一次性重音永远不需要它。",
+        "Pair": {
+          "display": "在展示链之前先铺一层背景音乐，为场景配乐。",
+          "transition": "让重音恰好在转场遮盖扫入完成的瞬间落下。",
+          "stopAudio": "每个带 persistAfterEnd 的循环音频节点，最终都需要一个按名称匹配的停止音频。"
+        }
+      },
+      "stopAudio": {
+        "Summary": "停止一条命名的循环音频轨道，或一次停止所有 StoryFlow 触发的声音。",
+        "Usage": "把 mode 设为「name」并给出与某个带 persistAfterEnd 的音频节点相同的名称，或设 mode「all」停止本模组当前正在播放的一切。它会向每个客户端广播停止指令并立即前进——无需等待任何东西。",
+        "Tip1": "mode「all」只触及本模组启动的声音（命名空间）——它绝不碰其他模块的环境音或 GM 自己的播放列表。",
+        "Tip2": "停止一个当前未播放的名称（或在没有播放任何内容时运行「all」）是安全的空操作——不会报错。",
+        "Pair": {
+          "audio": "天然搭配：用 persistAfterEnd 循环一个音频节点，稍后按同一名称停止音频。",
+          "display": "在展示片段给出转折的瞬间切断音乐，做一次干脆的情感切换。"
+        }
+      },
+      "transition": {
+        "Summary": "在覆盖层上播放全屏电影化擦除/淡入淡出，掩盖切换到下一内容的瞬间。",
+        "Usage": "选择样式（淡入淡出/虹膜/擦除……）、阶段（「both」在一个节点内既遮盖又揭示；「cover」扫入并保持，等待稍后的「reveal」节点清除它）、颜色、时长，以及完全遮盖时可选的一个保持片段。audience 控制谁播放它（「all」/「players」/「trigger」）；direction 只对擦除/百叶/帷幕有意义。运行会在遮盖下隐藏地前进到下一节点，所以不会有内容弹出——「both」立即揭示它，「cover」则保持遮罩，让剧情图稍后一个匹配的「reveal」节点来清除。\n\n[!tip] 阶段「both」遮盖屏幕，在隐藏中切换到下一片段，然后揭示它——所以揭示总是落在新内容上。",
+        "Tip1": "阶段「both」是简单情况——一个节点、一次无缝切换；只有当屏幕隐藏期间需要发生某些事时，才使用「cover」+「reveal」对。",
+        "Tip2": "hold 只适用于阶段「both」——它是在揭示开始前完全遮盖所花费的片段，适合硬切场景。",
+        "Tip3": "fade/iris/dissolve/zoomBlur/ripple/shatter 完全忽略 direction——它只操控 wipe/blinds/curtain。",
+        "Pair": {
+          "wait": "把「cover」阶段的转场与等待配对，在遮罩后加载某些内容，再用「reveal」节点清除它。",
+          "showImage": "用淡入淡出转场包裹显示图像片段，而不是硬切入切出。",
+          "display": "用转场在两个设置于不同地点的展示片段之间切换，而不是瞬间跳转。"
+        }
+      },
+      "screenAnimation": {
+        "Summary": "播放一个短的一次性镜头/屏幕效果——震动、快速缩放、冲击、倾斜或闪光——然后精确恢复视图。",
+        "Usage": "选择一个效果及其字段：震动（强度）、快速缩放（方向 进/出、幅度）、镜头冲击（方向、距离）、镜头倾斜（方向、角度）或屏幕闪光（颜色、不透明度）。时长以毫秒计。「目标用户」控制谁看到它（「all」或仅「trigger」玩家）。开启「等待完成」时，只有效果结束后才运行下一节点；关闭时，流程在播放期间立即继续。效果永远不会永久改变画布——缩放、平移和旋转总是会恢复。\n\n[!tip] 时长保持较短（200-500 毫秒）——这些是戏剧性或喜剧性片段的利落点缀，而非持久的镜头移动。",
+        "Tip1": "每个效果都是临时的且自我恢复——镜头的真实缩放、位置和旋转不受影响，因此在场景中途触发是安全的。",
+        "Tip2": "每个客户端一次只播放一个屏幕动画——启动新动画会干净地取消并恢复仍在运行的任何效果。",
+        "Tip3": "关闭「等待完成」时，把它当作流程前进时播放的花哨点缀；当下一片段应在效果落定后才落地时，请开启它。",
+        "Pair": {
+          "display": "在展示片段之前触发一次快速震动或闪光，为一句戏剧性台词加标点。",
+          "transition": "把屏幕闪光当作锐利点缀，或在需要真正掩盖场景切换时使用完整转场。",
+          "notification": "把镜头冲击与史诗通知配对，让重击和提示同时落地。"
+        }
+      },
+      "crate": {
+        "Summary": "CS 风格的战利品箱：每位参与的玩家转动加权物品转盘并保留赢得的物品。",
+        "Usage": "添加目录行（拖入物品、设置权重、可选辉光颜色/样式），加上显示在箱盖上的标题/文本、每次抽取的 costGold（0 = 免费），以及每位玩家的 maxSpins（0 = 不限）。每个拥有指定角色的在线玩家都可以独立打开宝箱；节点的 Out 引脚等待结算屏障——直到每位参与者都抽取（或未抽取就关闭）后才会触发。",
+        "Tip1": "每个目录行都需要真实拖入的物品——空目录无法通过校验，因此此节点不能用占位数据演示。",
+        "Tip2": "costGold 每次抽取从抽取玩家自己的钱袋扣除；付不起的玩家在有金币之前就无法再次抽取。",
+        "Tip3": "maxSpins 限制每位玩家个人可抽取的次数——它是逐玩家的上限，不是整桌共享的池子。",
+        "Pair": {
+          "action": {
+            "giveGold": "在打开宝箱之前先发放一点金币，让昂贵的抽取显得物有所值。"
+          },
+          "trader": "让宝箱的战利品直接流入商人的库存，或卖回换金币。",
+          "notification": "大奖之后接一个通知（史诗样式），多一个电影化片段。"
+        }
+      },
+      "prop": {
+        "cryptex": {
+          "Summary": "一个交互式旋转环密码筒，玩家在屏幕上实时共同转动以拼出答案。",
+          "Usage": "设置环数（2-8）和字母表（每个环循环经过的字形），然后设置答案——每个环一个字符，每个字符都是字母表中存在的字母。mode「auto」在环匹配的瞬间自动打开；mode「submit」添加「尝试」按钮，错误尝试会摇晃环，并且（若 maxAttempts > 0）递减共享的尝试预算直到归零。交互玩家（以及作为后备的 GM）可以转动环；解出时触发成功，失败只在 submit 模式耗尽尝试次数时触发。",
+          "Tip1": "auto 模式根本不会触发失败——按设计它有无限尝试次数，因此只有当你计划稍后切换到 submit 模式时，才接它的失败引脚。",
+          "Tip2": "空白的答案能通过校验（失败放行）但永远不会真正解出——密码筒会永远等待，所以在发布剧情图前务必填写它。",
+          "Tip3": "答案长度必须与环数精确匹配，且每个字符都必须出现在字母表中——不匹配会在编辑器中立即校验失败。",
+          "Pair": {
+            "check": "骰子驱动的谜题用检定，若想让玩家亲手摆弄答案则用密码筒。",
+            "condition": "用条件设门槛决定密码筒是否出现（例如只有找到匹配的日志线索后才出现）。",
+            "display": "在解出的密码筒后接展示片段，叙述打开了什么或揭示了什么。"
+          }
+        }
+      },
+      "quest": {
+        "Summary": "从流程驱动任务板：揭示任务或传说、翻转状态、揭示和完成目标，或公布进度。",
+        "Usage": "选择目标（任务板中的一个任务或传说页面）和操作：revealQuest 使其对玩家可见，setStatus 在可接取/进行中/已完成/已失败之间移动它，revealObjective 和 completeObjective 按 id 作用于一个目标，announce 推送进度横幅，revealLore 揭示传说页面。写入在 GM 权威客户端上运行，流程立即前进——无需玩家交互。",
+        "Tip1": "目标是必需的引用——把任务或传说页面拖进来；缺少目标会让节点在运行时成为带警告的空操作。",
+        "Tip2": "completeObjective 不会自动完成任务——当最后一个目标应结束任务时，串联第二个带 setStatus 的任务节点。",
+        "Tip3": "揭示与公布要节制地搭配：每次公布都会用横幅打断所有玩家。",
+        "Pair": {
+          "display": "在任务板变化之前，用展示片段叙述任务为何更新。",
+          "notification": "对于次要进度，提示比任务公布横幅更轻量。",
+          "condition": "用条件针对真正完成此举的人设目标完成的门槛。"
+        }
+      }
+    },
+    "QuestNode": {
+      "TargetType": "目标类型",
+      "TargetEntry": "目标",
+      "Operation": "操作",
+      "Objective": "目标",
+      "Status": "状态",
+      "Target": {
+        "quest": "任务",
+        "lore": "传说"
+      },
+      "Op": {
+        "revealQuest": "揭示任务",
+        "setStatus": "设置状态",
+        "revealObjective": "揭示目标",
+        "completeObjective": "完成目标",
+        "announce": "公布（打开任务板）",
+        "revealLore": "揭示传说条目"
+      }
+    },
+    "Rewards": {
+      "Title": "分配战利品",
+      "OpenButton": "奖励",
+      "OpenHint": "在每个客户端打开奖励分配窗口",
+      "Section": "奖励",
+      "Gold": "金币（gp）",
+      "Xp": "经验值",
+      "Faction": "势力",
+      "NoFaction": "- 无 -",
+      "Reputation": "声望",
+      "RemoveItem": "移除奖励物品",
+      "DropHint": "将物品拖到这里——它们将成为可领取的战利品",
+      "MissingItem": "（物品缺失）",
+      "QuestComplete": "任务完成",
+      "PartyRewards": "队伍奖励 · 所有人",
+      "Experience": "经验值",
+      "XpEach": "每人 {xp} 经验值",
+      "Renown": "{amount} 声望",
+      "GoldPool": "金币 · {pool}",
+      "SplitEqually": "平均分配",
+      "SplitHint": "重置为在包含的成员之间平均分配",
+      "IncludeHint": "包含在队伍奖励中",
+      "UnallocatedLabel": "未分配",
+      "Spoils": "战利品 · {count} 件物品",
+      "HintGM": "点击举起的手以分配",
+      "HintPlayer": "对你想要的物品举手",
+      "Claimed": "已领取",
+      "Contested": "有争议",
+      "Unclaimed": "未领取",
+      "Hands": "{count} 只手",
+      "NoHands": "还没有人举手",
+      "RollOff": "掷骰决胜",
+      "RollOffHint": "每位认领者掷一颗 d20——最高者获得",
+      "RaiseHand": "举手",
+      "HandRaised": "已举手",
+      "AssignHint": "分配此物品",
+      "UnassignHint": "点击取消分配",
+      "Unassigned": "{count} 件物品未分配",
+      "GoldUnallocated": "{gp} 金币未分配",
+      "GoldOver": "{gp} 金币超额分配",
+      "FooterGM": "GM",
+      "FooterGMOk": "GM · 所有战利品均已登记",
+      "FooterPlayer": "玩家 · 举手领取——GM 做最终决定。",
+      "FooterDone": "奖励已分配——已发送到角色卡并发布到聊天。",
+      "Cancel": "取消",
+      "Distribute": "分配奖励",
+      "Distributed": "已分配",
+      "ChatHeader": "「{quest}」的奖励",
+      "Contest": {
+        "Kicker": "有争议的战利品 · 掷骰决胜",
+        "Vs": "对阵",
+        "AwardTo": "授予 {name}",
+        "Cancel": "取消对决",
+        "PlayerHint": "最高掷骰者获得——GM 确认授予。",
+        "RollSelf": "掷 d20",
+        "RollForThem": "代其掷骰",
+        "Awaiting": "等待其掷骰…",
+        "HighRoll": "最高掷骰",
+        "Tied": "平局",
+        "StatusTied": "以 {roll} 打平——由 GM 决定谁获得。",
+        "StatusLeader": "{name} 掷出最高。",
+        "StatusWaiting": "由骰子决定——最高 d20 获得。"
+      }
+    },
+    "Factions": {
+      "Tab": "势力",
+      "AddFaction": "添加势力",
+      "NewFaction": "新势力",
+      "MerchantsName": "商人",
+      "RemoveFaction": "移除势力",
+      "RemoveFactionConfirm": "从注册表中移除此势力？已记录在角色身上的声望不受影响。",
+      "NoFactions": "还没有创建任何势力。",
+      "NoFactionSelected": "选择一个势力以查看或编辑。",
+      "Name": "名称",
+      "Color": "颜色",
+      "Logo": "标志",
+      "PickLogo": "选择标志图像",
+      "Description": "描述",
+      "DescriptionPlaceholder": "描述这个势力…",
+      "SheetSection": "势力声望",
+      "Member": "成员",
+      "MemberToggle": "切换成员资格",
+      "RelationTip": "声望结合了关系的两个方向：",
+      "RelationCapped": "（已封顶）",
+      "Codex": {
+        "Title": "势力图鉴",
+        "Disabled": "势力已禁用——请在模组设置 → 通用中启用。",
+        "Subject": "以谁的身份查看",
+        "NoSubject": "无角色",
+        "Standing": "声望",
+        "Location": "位置",
+        "Privileges": "特权",
+        "PrivilegesSubtitle": "按声望的恩惠与惩罚",
+        "DescriptionToggle": "描述",
+        "Description": "描述",
+        "BannerTheme": "横幅",
+        "CrestShape": "纹章",
+        "NoEffect": "-",
+        "EffectPlaceholder": "此声望下的效果…",
+        "OpenButton": "打开势力图鉴",
+        "EditDescription": "编辑描述",
+        "SaveDescription": "保存描述",
+        "EditPrivileges": "编辑特权",
+        "SavePrivileges": "保存特权",
+        "IncreaseStanding": "提高声望（+5）",
+        "DecreaseStanding": "降低声望（−5）",
+        "Dossier": "势力档案",
+        "About": "关于",
+        "Lore": "传说",
+        "Motto": "格言",
+        "MottoPlaceholder": "这个势力奉行的几句话…",
+        "Domain": "领地",
+        "DomainPlaceholder": "领地或权力中枢…",
+        "Icon": "纹章图标（Font Awesome 类）",
+        "IconPlaceholder": "fa-solid fa-shield-halved",
+        "YourStanding": "你的声望"
+      }
+    },
+    "FactionCards": {
+      "Eyebrow": "召唤仪式",
+      "PropsEyebrow": "势力属性",
+      "Title": "势力卡牌",
+      "Subtitle": "属性与后果——将鼠标悬停在卡牌上",
+      "StoreTitle": "卡牌商店",
+      "StoreEmpty": "还没有卡牌——点击「创建卡牌」召唤第一张。",
+      "CreateCard": "创建卡牌",
+      "DeleteCard": "删除",
+      "Category": "分类（例如商人）",
+      "CardName": "卡牌名称",
+      "Description": "这张卡牌的含义…",
+      "PlusEffect": "正面效果",
+      "MinusEffect": "负面效果",
+      "GMOnly": "只有 GM 可以管理势力卡牌。",
+      "FilterAll": "全部",
+      "Uncategorized": "未分类",
+      "AddCategory": "新分类…",
+      "DeleteCategory": "移除分类",
+      "CardStore": "卡牌商店",
+      "SectionLabel": "卡牌",
+      "Assign": "将卡牌分配到此势力",
+      "RemoveCard": "从势力中移除此卡牌",
+      "Reputation": "激活时的声望",
+      "CategoriesLabel": "分类",
+      "CollectionsLabel": "收藏集",
+      "AllCollections": "所有卡牌",
+      "Unfiled": "未归档",
+      "NewCollection": "新收藏集…",
+      "NewSubcollection": "新收藏集",
+      "AddSubcollection": "添加子收藏集",
+      "RenameCollection": "重命名收藏集",
+      "ExportCollection": "将此收藏集导出到文件",
+      "ImportCollection": "从文件导入收藏集（及其子收藏集）",
+      "ImportFolderResultTitle": "导入完成",
+      "ImportFolderAdded": "已添加 {count} 张新卡牌：",
+      "ImportFolderNothingNew": "每张卡牌都已在商店中——没有添加新内容。",
+      "DeleteCollection": "删除收藏集及其嵌套收藏集（卡牌上移）",
+      "DeleteCollectionConfirmTitle": "删除收藏集",
+      "DeleteCollectionConfirm": "删除收藏集“{name}”及其内部嵌套的每个收藏集？卡牌会保留——它们会移到父收藏集。",
+      "FolderNamePlaceholder": "收藏集名称",
+      "FactionsLabel": "势力",
+      "ReputationLabel": "声望",
+      "ReputationBadge": "声望",
+      "RepPositive": "正面",
+      "RepNeutral": "中立",
+      "RepNegative": "负面",
+      "AddToFaction": "添加",
+      "AddedToFaction": "卡牌已添加到 {faction}。",
+      "AlreadyInFaction": "卡牌已在 {faction} 中。",
+      "FullscreenTip": "切换全屏",
+      "Select": "选择",
+      "SelectTip": "选择多张卡牌，然后一次性分配到势力",
+      "AssignSelected": "分配到势力…",
+      "SelectedCount": "已选择 {count} 张",
+      "ClearSelection": "清除",
+      "Done": "完成",
+      "BulkAssignTitle": "分配 {count} 张卡牌",
+      "BulkAssigned": "已将 {cards} 张卡牌添加到 {factions} 个势力。",
+      "Modify": "修改",
+      "EditCardTitle": "编辑卡牌",
+      "CategoryField": "分类",
+      "CollectionField": "收藏集",
+      "CardIdField": "ID",
+      "CardIdPlaceholder": "自动（留空则随机生成 id）",
+      "CannotDeleteBuiltin": "内置的商人卡牌无法删除。请先更改分类以移除一张。",
+      "Save": "保存",
+      "Cancel": "取消",
+      "Close": "关闭",
+      "Threshold": "需要",
+      "ThresholdField": "声望阈值（0-100）",
+      "MerchantCategory": "商人",
+      "BuyDiscountField": "商店购买折扣 %（受喜爱时）",
+      "BuyMarkupField": "商店购买加价 %（被憎恨时）",
+      "UsedBy": "被谁使用",
+      "Export": "导出",
+      "Import": "导入",
+      "ExportTip": "将所有卡牌和分类保存到 JSON 文件",
+      "ImportTip": "从 JSON 文件合并卡牌和分类",
+      "ExportChat": "卡牌商店已导出（{count} 张卡牌）→ {path}",
+      "ExportDone": "已导出 {count} 张卡牌。",
+      "ExportFailed": "导出失败——请查看控制台。",
+      "ImportDone": "已导入 {count} 张卡牌。",
+      "ImportTitle": "导入卡牌商店",
+      "ImportPrompt": "正在导入 {count} 张卡牌。将它们添加到你的卡牌旁边，还是替换同名同分类的卡牌？",
+      "ImportMerge": "全部添加",
+      "ImportReplace": "替换匹配项",
+      "Error": {
+        "badJson": "该文件不是有效的 JSON。",
+        "badFormat": "该文件不是卡牌商店导出文件。"
+      },
+      "SearchPlaceholder": "搜索名称 / 分类 / 阈值…",
+      "Sort_category": "排序：分类",
+      "Sort_name": "排序：名称",
+      "Sort_thresholdAsc": "排序：阈值 ↑",
+      "Sort_thresholdDesc": "排序：阈值 ↓",
+      "Duplicate": "复制",
+      "CopyName": "{name}（副本）",
+      "CardImage": "卡牌插画（图像）",
+      "AssignTitle": "分配到势力",
+      "NoFactionsToAssign": "还没有可分配的势力。",
+      "DeleteCategoryConfirmTitle": "移除分类",
+      "DeleteCategoryConfirm": "移除分类「{name}」？卡牌会保留其分类文本。",
+      "CardUnlocked": "通过与 {faction} 的关系获得「{card}」",
+      "CardLocked": "失去与 {faction} 相关的「{card}」",
+      "RevealTitle": "你获得了卡牌",
+      "RevealView": "查看",
+      "RevealCloseAria": "关闭",
+      "NextUnlock": "再差 {delta} 解锁「{card}」",
+      "EffectNeedsPositive": "未激活——需要正面声望",
+      "EffectNeedsNegative": "未激活——需要负面声望",
+      "NoFactionSelected": "请先打开势力图鉴并选择一个势力。",
+      "DeleteConfirmTitle": "删除卡牌",
+      "DeleteConfirm": "删除卡牌「{name}」？持有它的势力将失去它。",
+      "NoCardsHint": "商店中还没有卡牌——打开卡牌商店创建一些。"
+    },
+    "Reputation": {
+      "Tier": {
+        "hated": "憎恨",
+        "hostile": "敌对",
+        "unfriendly": "不友善",
+        "neutral": "中立",
+        "friendly": "友善",
+        "honored": "尊敬",
+        "revered": "崇敬"
+      },
+      "Toast": {
+        "Faction": "声望",
+        "Affinity": "倾向"
+      }
+    },
+    "FactionCodex": {
+      "TabOverview": "概览",
+      "TabMembers": "成员",
+      "TabOthers": "与其他势力的关系",
+      "NoMembers": "还没有成员——在「与其他势力的关系」中给角色标星。",
+      "NoOthers": "每个人都属于此势力。",
+      "OthersFilterAll": "全部",
+      "OthersFilterNeutrals": "中立",
+      "RosterPC": "PC",
+      "RosterNPC": "NPC",
+      "MemberToggleOn": "成员——点击移除",
+      "MemberToggleOff": "非成员——点击添加",
+      "MoveMemberTitle": "更换势力？",
+      "MoveMemberFrom": "当前效忠于",
+      "MoveMemberTo": "移动到",
+      "MoveMemberNote": "确认将移除其旧效忠。",
+      "OpenSheet": "打开表单",
+      "ShowEffects": "显示效果",
+      "TabFactions": "势力",
+      "RelationsHint": "授予每个势力成员的基础声望。留空 = 无关系。多成员身份时基础值累加；显式声望会覆盖。",
+      "RelationNone": "-",
+      "RelationUp": "改善关系（+5）",
+      "RelationDown": "恶化关系（−5）",
+      "SelectFaction": "选择此势力",
+      "NoRelations": "还没有其他势力。",
+      "Theme": {
+        "royalPurple": "皇家紫",
+        "crimson": "绯红",
+        "verdant": "翠绿",
+        "gilded": "鎏金"
+      },
+      "Shape": {
+        "shield": "盾牌",
+        "roundel": "圆形徽章",
+        "banner": "横幅"
+      },
+      "Visibility": {
+        "Tooltip": "谁能在图鉴中看到此势力",
+        "all": "对所有人可见",
+        "hidden": "对玩家隐藏",
+        "some": "指定玩家",
+        "AllowedPlayers": "可以看到此势力的玩家：",
+        "NoPlayers": "没有可授予的玩家角色。",
+        "HiddenTip": "对所有玩家隐藏",
+        "SomeTip": "仅对指定玩家可见"
+      },
+      "Unlock": {
+        "Kicker": "新势力已解锁",
+        "View": "查看",
+        "Close": "关闭"
+      }
+    },
+    "Fields": {
+      "speakerName": "说话者名称",
+      "portraitPath": "肖像",
+      "bodyHtml": "对话文本",
+      "backdropPath": "背景图像",
+      "voiceOverPath": "旁白音频",
+      "ambientPath": "环境音频",
+      "typewriter": "打字机效果",
+      "cps": "每秒字符数",
+      "autoAdvance": "自动前进",
+      "autoAdvanceDelay": "自动前进延迟（毫秒）",
+      "prompt": "提示",
+      "kind": "检定类型",
+      "key": "技能 / 属性键",
+      "dc": "难度等级",
+      "hideBreakdown": "隐藏掷骰明细",
+      "quietRoll": "安静掷骰（无过场）",
+      "rollMode": "掷骰模式",
+      "itemUuid": "物品",
+      "quantity": "数量",
+      "rings": "环数",
+      "effectId": "状态效果",
+      "mode": "模式",
+      "sceneId": "场景 ID",
+      "activate": "为所有人激活",
+      "label": "标签",
+      "once": "触发一次",
+      "whoTriggers": "触发者",
+      "specificActorIds": "指定角色 ID",
+      "enabled": "启用",
+      "anchorYear": "起始年份",
+      "anchorMonth": "起始月份",
+      "anchorDay": "起始日",
+      "anchorHour": "起始小时",
+      "every": "每",
+      "unit": "单位",
+      "threshold": "阈值",
+      "stage": "Boss 阶段",
+      "maxFires": "最大触发次数（0 = 不限）",
+      "weather": "天气",
+      "phase": "时段",
+      "restType": "休息类型",
+      "doorState": "门状态",
+      "event": "事件",
+      "round": "轮（0 = 任意）",
+      "level": "等级（0 = 任意）",
+      "tag": "Tagger 标签",
+      "tagScope": "标签范围",
+      "formula": "公式",
+      "target": "目标",
+      "targetActorId": "角色",
+      "traderUuid": "商人",
+      "seconds": "秒",
+      "imagePath": "图像",
+      "image": "背景图像",
+      "audioPath": "音频",
+      "alphabet": "字母表",
+      "solution": "答案",
+      "logicOperator": "逻辑",
+      "sourceType": "来源",
+      "operator": "运算符",
+      "value": "值",
+      "factionId": "势力",
+      "actorUuid": "角色",
+      "equipped": "已装备",
+      "operation": "操作",
+      "targeting": "目标方式",
+      "actorIds": "目标角色",
+      "destMode": "目的地",
+      "destTag": "目的地标签",
+      "destTagScope": "目的地标签范围",
+      "pageUuid": "页面",
+      "entryUuid": "日志条目",
+      "folderId": "文件夹",
+      "writeMode": "写入模式",
+      "newName": "名称",
+      "content": "内容",
+      "reveal": "向玩家揭示",
+      "duration": "时长（秒）",
+      "color": "颜色",
+      "hold": "保持（秒）",
+      "direction": "方向",
+      "audience": "受众",
+      "background": "背景",
+      "style": "样式",
+      "text": "文本",
+      "title": "标题",
+      "subtitle": "副标题",
+      "macroUuid": "宏",
+      "code": "内联代码",
+      "allClients": "为所有玩家预加载",
+      "timeout": "超时（自动失败）",
+      "timeoutSeconds": "超时（秒）",
+      "confirmBeforeRun": "运行前确认",
+      "maxAttempts": "最大尝试次数（0 = 不限）",
+      "targetNodeId": "继续到节点",
+      "showLink": "在画布上显示链接",
+      "setColor": "设置颜色",
+      "dim": "微光半径",
+      "bright": "亮光半径",
+      "alpha": "强度",
+      "angle": "发射角度",
+      "animationType": "动画",
+      "synchronizeWithAudio": "与音频同步",
+      "audioSensitivity": "音频灵敏度",
+      "animationSpeed": "动画速度",
+      "animationIntensity": "动画强度",
+      "animationReverse": "动画方向",
+      "darknessMin": "黑暗激活（最小）",
+      "darknessMax": "黑暗激活（最大）",
+      "negative": "负向（黑暗源）",
+      "decider": "由谁决定",
+      "animation": "动画路径",
+      "attach": "跟随 Token",
+      "fitToToken": "适应 Token 大小",
+      "belowTokens": "在 Token 下方",
+      "fadeIn": "淡入（毫秒）",
+      "fadeOut": "淡出（毫秒）",
+      "randomRotation": "随机旋转",
+      "repeats": "重复次数",
+      "repeatDelay": "重复延迟（毫秒）",
+      "persist": "持续",
+      "aboveUI": "在界面之上",
+      "waitUntilFinished": "等待直到完成",
+      "name": "效果名称（持续时使用）",
+      "motion": "方向样式",
+      "group": "组名称",
+      "size": "图块大小（网格格数）",
+      "bgColor": "背景颜色"
+    },
+    "FieldOption": {
+      "style": {
+        "scroll": "卷轴",
+        "letter": "信件",
+        "book": "书籍"
+      },
+      "mode": {
+        "apply": "应用",
+        "remove": "移除",
+        "name": "按名称",
+        "graph": "此剧情图的所有",
+        "all": "所有 StoryFlow 效果",
+        "tiles": "删除已放置图块（按组）",
+        "percent": "最大 HP 的百分比",
+        "value": "HP 值",
+        "stage": "Boss 阶段",
+        "death": "死亡（降至 0 HP 或以下）"
+      },
+      "stage": {
+        "2": "第二阶段（低于 2/3 HP）",
+        "3": "第三阶段（低于 1/3 HP）"
+      },
+      "audience": {
+        "all": "全部",
+        "players": "玩家",
+        "trigger": "触发",
+        "gm": "GM"
+      },
+      "target": {
+        "gm": "GM",
+        "trigger": "触发角色的 Token",
+        "point": "地图点",
+        "tokens": "指定 Token",
+        "screen": "屏幕（电影化）",
+        "line": "线（来源 → 目标）",
+        "triggerTargets": "触发器的目标（光束）",
+        "checkActor": "进行检定的角色"
+      },
+      "background": {
+        "carry": "保留上一张",
+        "scene": "实时场景",
+        "image": "自定义图像"
+      },
+      "operation": {
+        "show": "显示图块",
+        "hide": "隐藏图块",
+        "open": "打开门",
+        "close": "关闭门",
+        "lock": "锁门",
+        "toggle": "切换",
+        "makeDoor": "变为门",
+        "makeSecret": "变为暗门",
+        "makeWall": "变为普通墙",
+        "on": "打开",
+        "off": "关闭",
+        "configure": "配置",
+        "move": "移动 Token",
+        "create": "创建 Token",
+        "delete": "删除 Token"
+      },
+      "targeting": {
+        "captured": "捕获的选区",
+        "tag": "Tagger 标签",
+        "actor": "角色（场景上的任意 Token）"
+      },
+      "motion": {
+        "stretch": "拉伸（光束跨越 A→B）",
+        "projectile": "抛射（从 A 到 B）",
+        "face": "朝向（指向 B）"
+      },
+      "destMode": {
+        "point": "捕获的点",
+        "tag": "Tagger 标签",
+        "tile": "图块中心"
+      },
+      "tagScope": {
+        "active": "当前场景",
+        "all": "所有场景"
+      },
+      "event": {
+        "start": "战斗开始",
+        "end": "战斗结束",
+        "roundChange": "轮变化"
+      },
+      "animationReverse": {
+        "unchanged": "- 不变 -",
+        "yes": "反向",
+        "no": "正常"
+      },
+      "negative": {
+        "unchanged": "- 不变 -",
+        "yes": "是",
+        "no": "否"
+      },
+      "decider": {
+        "gm": "GM",
+        "trigger": "触发玩家"
+      }
+    },
+    "FieldGroup": {
+      "audio": "音频",
+      "pacing": "节奏与自动前进",
+      "basic": "基本",
+      "animation": "动画",
+      "darkness": "黑暗范围",
+      "advanced": "高级",
+      "appearance": "外观",
+      "timing": "时序",
+      "persistence": "持续性",
+      "whoTriggers": "触发者",
+      "audience": "受众"
+    },
+    "FieldHint": {
+      "persistAfterEnd": "让此声音在故事结束后继续播放，而不是被切断。它不会自行停止——稍后请用一个针对下方该声音「名称」的停止音频节点（或设为停止「全部」）来结束它。",
+      "animationType": "要播放哪个一次性效果。只显示所选效果对应的字段。",
+      "intensity": "最大震动偏移，以像素计（1-50）。",
+      "zoomAmount": "缩放多远，作为当前视图的比例（0.05-0.75）。",
+      "distance": "镜头冲击多远，以像素计（5-200）。",
+      "angle": "倾斜多少，以度计（1-45）。",
+      "opacity": "闪光峰值不透明度，0-1。",
+      "duration": "效果总时长，以毫秒计（50-3000）。音频同步开启时隐藏——那时所有时序由音频驱动（震动/倾斜用其长度；快速缩放、镜头冲击和屏幕闪光用存储值作为每次脉冲的长度）。",
+      "waitForCompletion": "开启：只有效果结束后才运行下一节点。关闭：流程立即继续。",
+      "synchronizeWithAudio": "仅当前一个节点正好是音频节点时显示。开启：每个观看者的效果会响应同一段音频的响度和峰值（脚步震动、雷声闪光）。同步开启时，震动和倾斜持续音频的完整时长；快速缩放、镜头冲击和闪光用「时长」作为每次响应的长度。没有前置音频节点时，回退为普通一次性效果。",
+      "audioSensitivity": "效果对峰值反应的灵敏度（0-100）。越低越只对最强冲击反应；越高越对细微冲击反应。50 适合大多数片段。"
+    },
+    "JournalNode": {
+      "NewPageDefault": "新页面",
+      "NewEntryDefault": "新日志条目"
+    },
+    "ShowOnMap": {
+      "CameraLocation": "镜头位置",
+      "Confirm": "确认镜头位置",
+      "Captured": "镜头位置已保存。",
+      "NotSet": "未设置位置——将镜头定位到地图上，然后点击「确认」。",
+      "NoCanvas": "没有可捕获的当前场景画布。",
+      "Zoom": "缩放"
+    },
+    "Door": {
+      "CapturedWalls": "目标墙",
+      "CaptureWalls": "捕获选中墙",
+      "WallsOn": "墙已开启",
+      "Status": "已捕获的墙",
+      "NotSet": "未捕获墙——在「墙」图层选中墙，然后点击「捕获」。",
+      "NoCanvas": "没有可捕获墙的当前场景画布。",
+      "NoSelection": "未选中墙——请先在「墙」图层控制一面或多面墙。",
+      "Captured": "已捕获 {count} 面墙。"
+    },
+    "Light": {
+      "CapturedLights": "目标灯光",
+      "CaptureLights": "捕获选中灯光",
+      "LightsOn": "灯光已开启",
+      "Status": "已捕获的灯光",
+      "NotSet": "未捕获灯光——在「光照」图层选中灯光，然后点击「捕获」。",
+      "NoCanvas": "没有可捕获灯光的当前场景画布。",
+      "NoSelection": "未选中灯光——请先在「光照」图层控制一个或多个灯光。",
+      "Captured": "已捕获 {count} 个灯光。",
+      "Unchanged": "- 不变 -",
+      "AnimNone": "无（无动画）"
+    },
+    "Effect": {
+      "NoSequencer": "StoryFlow：Sequencer 模组未激活——效果节点已跳过。",
+      "SequencerInactive": "Sequencer 模组在此世界中未激活——此节点将在运行时被跳过。",
+      "Animation": "动画",
+      "Browse": "浏览动画…",
+      "PathMissing": "此动画路径不在这个世界的数据库中（JB2A 版本不同？）。节点将在运行时软失败。",
+      "Location": "地图位置",
+      "PickLocation": "在地图上选择位置",
+      "NoLocation": "未选择位置——点击「选择位置」，然后在地图上点击一个点。",
+      "TargetTokens": "目标 Token",
+      "CaptureTokens": "捕获选中 Token",
+      "TokensOn": "Token 已开启",
+      "NoTokens": "未捕获 Token——在地图上选中 Token，然后点击「捕获」。",
+      "CapturedTokens": "已捕获 {count} 个 Token。",
+      "NoCanvas": "没有当前场景画布。",
+      "NoTokenSelection": "未选中 Token——请先控制一个或多个 Token。",
+      "Line": "来源 → 目标线",
+      "PickLine": "选择来源 → 目标",
+      "PickSource": "在地图上点击「来源」点…",
+      "PickTarget": "现在点击「目标」点…",
+      "NoLine": "未选择线——点击「选择来源 → 目标」，然后在地图上点击两个点。",
+      "Preview": "在我的屏幕上预览",
+      "PreviewFailed": "预览无法播放——请检查动画路径，并为触发/目标模式选择/指定 Token。"
+    },
+    "Tiles": {
+      "Placements": "图块放置",
+      "MassPlace": "在地图上批量放置",
+      "PlaceHint": "点击放置图块（吸附到网格）——按住 Shift 自由放置，右键（或 Esc）停止。",
+      "PlaceLabel": "点击放置 · Shift = 自由 · 右键完成",
+      "Placed": "已放置 {count} 个图块。",
+      "TilesOn": "此组中的图块已开启",
+      "NoTiles": "还没有放置图块——点击「批量放置」，然后在地图上点击位置。",
+      "NoGroup": "请先设置组名称——它把节点与其放置的图块关联起来。",
+      "NoFile": "此动画路径没有可作为图块放置的可播放视频文件。",
+      "EditPlacements": "在地图上编辑放置",
+      "EditBarText": "正在编辑已放置的图块——拖动移动，用控点调整大小/旋转，Delete 删除。",
+      "EditDone": "完成",
+      "NoPlacedHere": "当前场景上没有此组的图块。"
+    },
+    "EffectPicker": {
+      "Title": "动画库",
+      "SearchPlaceholder": "搜索动画（例如 fireball）…",
+      "TabAll": "全部",
+      "TabFavorites": "收藏",
+      "TabRecent": "最近",
+      "NoDatabase": "未找到 Sequencer 动画——是否已安装并激活 JB2A 之类的包？",
+      "LoadMore": "再加载 40 个",
+      "NoResults": "没有匹配你搜索的动画。",
+      "EmptyFavorites": "还没有收藏——点击任意动画上的 ★ 即可保存到这里。",
+      "EmptyRecent": "还没有最近选择——你选择的动画会出现在这里。",
+      "Favorite": "切换收藏",
+      "Cancel": "取消"
+    },
+    "Token": {
+      "CapturedTokens": "目标 Token",
+      "CaptureTokens": "捕获选中 Token",
+      "TokensOn": "Token 已开启",
+      "NotSet": "未捕获 Token——在画布上选中 Token，然后点击「捕获」。",
+      "NoCanvas": "没有可捕获 Token 的当前场景画布。",
+      "NoSelection": "未选中 Token——请先在画布上控制一个或多个 Token。",
+      "Captured": "已捕获 {count} 个 Token。",
+      "Destination": "目的地",
+      "CaptureDestination": "捕获目的地",
+      "DestNotSet": "未设置目的地——将镜头定位到地图上，然后点击「捕获」。",
+      "DestCaptured": "目的地已保存。",
+      "CaptureDestinationTile": "捕获目的地图块",
+      "DestTileNotSet": "未捕获图块——在画布上选中一个图块，然后点击「捕获」。",
+      "NoTileSelection": "未选中图块——请先在画布上控制一个图块。",
+      "DestTileCaptured": "目的地图块已保存。"
+    },
+    "Condition": {
+      "Target": "检查",
+      "AddRule": "添加规则",
+      "RemoveRule": "移除规则",
+      "Equipped": "已装备",
+      "NpcAffinityKeyPlaceholder": "NPC 角色 UUID（右键 → 复制 UUID）"
+    },
+    "VoiceStudio": {
+      "Title": "语音工作室",
+      "Teleprompter": "提词器",
+      "Speed": "速度",
+      "FontSize": "字号",
+      "AutoScroll": "录制时自动滚动",
+      "PopOut": "弹出提词器",
+      "PopoutBlocked": "弹出窗口被浏览器拦截。",
+      "Record": "录制",
+      "Recording": "录制中…",
+      "Stop": "停止",
+      "Preview": "预览",
+      "EmptyHint": "按下 ● 录制并大声朗读提词器。然后剪辑、调整音量、添加语音效果并保存。",
+      "TeleStart": "开始滚动",
+      "TeleReset": "重置到顶部",
+      "Edit": "编辑",
+      "TrimStart": "裁剪开头",
+      "TrimEnd": "裁剪结尾",
+      "Volume": "音量",
+      "FadeIn": "淡入",
+      "FadeOut": "淡出",
+      "Normalize": "标准化",
+      "Effects": "效果",
+      "Intensity": "强度",
+      "Reset": "重置",
+      "SaveInsert": "保存并插入",
+      "NamePrompt": "为这段录音命名",
+      "Rendering": "渲染中…",
+      "Saved": "旁白已保存并插入。",
+      "NoMic": "录制需要麦克风（以及 HTTPS 或 localhost）。",
+      "MicDenied": "麦克风权限被拒绝。",
+      "DecodeFail": "无法解码录音。",
+      "PreviewFail": "预览失败。",
+      "EncodeFail": "MP3 编码失败。",
+      "UploadFail": "无法保存文件。",
+      "OpenFail": "语音工作室无法打开——请尝试重新加载 Foundry。"
+    },
+    "Inspector": {
+      "NodeName": "名称",
+      "GenerateMacro": "生成宏",
+      "GotoJumpTarget": "转到目标节点",
+      "JumpNoTarget": "此跳转未选择目标节点。",
+      "Reactivate": "重新激活触发器",
+      "TriggerReactivated": "触发器已重新激活——它可以再次触发。",
+      "ResetTriggerState": "重置触发器状态",
+      "TriggerStateReset": "触发器状态已清除。",
+      "RecordVoice": "录制旁白",
+      "MacroCopied": "宏命令已复制——将其粘贴到一个新的快捷栏宏中。",
+      "NoSelection": "选择一个节点以编辑其属性。",
+      "MissingComponent": "⚠ 缺少组件",
+      "MissingComponentHint": "安装提供此节点类型的模组以编辑它。其数据会被保留。",
+      "Choices": "选项",
+      "ChoiceLabel": "选项标签",
+      "RequiresItem": "需要物品（可选）",
+      "AddChoice": "添加选项",
+      "RemoveChoice": "移除选项",
+      "ChoiceVisibility": "可见性（可选）",
+      "Gated": "仅当满足其条件时才显示此选项",
+      "Browse": "浏览文件",
+      "MdBold": "粗体",
+      "MdItalic": "斜体",
+      "MdHeading1": "标题 1",
+      "MdHeading2": "标题 2",
+      "MdHeading3": "标题 3",
+      "MdList": "列表项",
+      "MdImage": "插入图像 / GIF…",
+      "SceneDropHint": "选择一个场景，或从侧边栏把一个场景拖到此面板。",
+      "JournalDropHint": "从列表选择，或从侧边栏把日志条目、页面或文件夹拖到此面板。",
+      "MacroDropHint": "选择一个宏，或从侧边栏把一个宏拖到此面板。",
+      "RefDropHint": "输入搜索，或从侧边栏拖一个到此面板。",
+      "RefSearch": "搜索…",
+      "NodeSearch": "搜索节点…",
+      "RefNone": "- 无 -",
+      "ItemDropHint": "从侧边栏把物品拖到此面板。",
+      "ClearItem": "移除物品",
+      "Paths": "路径",
+      "AddPath": "添加路径",
+      "RemovePath": "移除路径",
+      "PathLabel": "路径标签",
+      "PathWeight": "概率 %",
+      "PathNumber": "路径 {n}",
+      "EqualizeRandomPaths": "均衡概率",
+      "RandomTotal": "总计：{total}%"
+    },
+    "RegionBehavior": {
+      "FIELDS": {
+        "page": {
+          "label": "StoryFlow 剧情图页面",
+          "hint": "当 Token 进入此区域时要运行的 JournalEntryPage 剧情图。"
+        },
+        "once": {
+          "label": "触发一次",
+          "hint": "仅在 Token 第一次进入时触发。"
+        }
+      },
+      "SheetLabel": "StoryFlow 触发器",
+      "BehaviorName": "名称",
+      "Page": "StoryFlow 剧情图页面",
+      "NoPage": "- 无 -",
+      "StartNode": "从节点开始",
+      "StartNodeHint": "从剧情图中的哪个区域触发节点开始。保持「入口」以启动整个流程——选择特定节点，让两个区域可以运行两个不同的流程。",
+      "EntryDefault": "入口节点（整个流程）",
+      "Once": "触发一次",
+      "Disabled": "已禁用"
+    },
+    "Calendar": {
+      "EventPageMissing": "日历事件「{name}」：剧情图页面缺失。",
+      "Title": "日历",
+      "OpenTip": "打开日历",
+      "NoWeatherToday": "今天没有登记天气",
+      "Dawn": "黎明",
+      "DawnTip": "跳到黎明（06:00）",
+      "Dusk": "黄昏",
+      "DuskTip": "跳到黄昏（18:00）",
+      "PlusDay": "+1 天",
+      "PlusDayTip": "前进一天",
+      "Months": {
+        "0": "Yinvar",
+        "1": "Fivral",
+        "2": "Mart",
+        "3": "Aprel",
+        "4": "Mai",
+        "5": "Eyun",
+        "6": "Eyul",
+        "7": "Avgust",
+        "8": "Sentyabr",
+        "9": "Oktyabr",
+        "10": "Noyabr",
+        "11": "Dekabr"
+      },
+      "Weekdays": {
+        "0": "周一",
+        "1": "周二",
+        "2": "周三",
+        "3": "周四",
+        "4": "周五",
+        "5": "周六",
+        "6": "周日"
+      },
+      "WeekdaysFull": {
+        "0": "星期一",
+        "1": "星期二",
+        "2": "星期三",
+        "3": "星期四",
+        "4": "星期五",
+        "5": "星期六",
+        "6": "星期日"
+      },
+      "Seasons": {
+        "winter": "冬季",
+        "spring": "春季",
+        "summer": "夏季",
+        "autumn": "秋季"
+      },
+      "SkyStyle": "日历：天空样式（位面）",
+      "SkyStyleHint": "日历的天空面板在你的客户端上描绘哪个存在位面。额外位面随付费版本提供。",
+      "Planes": {
+        "material": "物质位面",
+        "elemental": "元素位面",
+        "sunken": "沉没领域",
+        "caverns": "宝石洞窟",
+        "gilded": "鎏金领域"
+      },
+      "PlaneSettingsTitle": "世界类型",
+      "PlaneReadOnly": "只有地下城主可以更改世界类型。以只读显示。",
+      "PlaneDockLabel": "选择位面",
+      "PlaneConditionSection": "位面状态",
+      "PlaneParamSection": "位面参数",
+      "PlaneRoll": "掷骰",
+      "PlaneRollTip": "为此位面掷一个随机状态",
+      "PlanePerScene": "按场景记住世界类型",
+      "PlaneParams": {
+        "depth": "深度",
+        "murk": "昏暗",
+        "dread": "恐惧",
+        "rift": "裂隙量表",
+        "coverage": "云量",
+        "drift": "漂移速度",
+        "seam": "裂隙深度",
+        "suspension": "悬浮",
+        "druse": "晶簇辉光",
+        "grace": "优雅",
+        "pollen": "花粉"
+      },
+      "PlaneHud": {
+        "vis": "能见度",
+        "psi": "灵能",
+        "attune": "调谐",
+        "haze": "雾霭",
+        "glow": "辉光",
+        "pollen": "花粉",
+        "ascend": "上升",
+        "descend": "下降",
+        "emberdawn": "余烬黎明",
+        "umbralTide": "暗影潮汐",
+        "Bands": {
+          "shallows": "浅滩",
+          "twilight": "暮光区",
+          "midnight": "午夜区",
+          "abyss": "深渊",
+          "sealed": "已封印",
+          "fraying": "磨损",
+          "breached": "已破口",
+          "wideOpen": "大开",
+          "conjunction": "交汇",
+          "upperGalleries": "上层回廊",
+          "deepSeams": "深层裂隙",
+          "rootWorks": "根系工程",
+          "underdark": "幽暗地域",
+          "forsaken": "被遗弃",
+          "tarnished": "暗淡",
+          "favoured": "受青睐",
+          "resplendent": "辉煌"
+        },
+        "Notes": {
+          "depth": "能见度低于 60% 时远程攻击处于劣势",
+          "planar": "取自主导元素的法术成分和召唤物得到强化",
+          "cave": "晶簇光是这里唯一的光——辉光低于 30% 时，请自备光源",
+          "gilded": "浓密的花粉削弱嗅觉和听觉——高于 70% 时追踪处于劣势"
+        }
+      },
+      "PlaneHazards": {
+        "depth": {
+          "clear": "无惩罚",
+          "overcast": "察觉劣势",
+          "rain": "DC 14 力量（运动）",
+          "storm": "2d6 火焰，DC 13 敏捷",
+          "snow": "隐匿优势",
+          "fog": "DC 15 感知豁免 · 恐惧"
+        },
+        "planar": {
+          "clear": "每小时 1d6 火焰",
+          "overcast": "2d10 火焰，DC 15 敏捷",
+          "storm": "3d8 闪电，DC 14 敏捷",
+          "rain": "困难地形 · DC 12 力量",
+          "snow": "每片碎片 1d4 穿刺",
+          "fog": "狂野魔法 · 掷 1d100"
+        }
+      },
+      "PlaneEffectSection": "位面效果",
+      "PlaneEffectAdd": "添加规则",
+      "PlaneEffectSoon": "效果规则尚不可用——位面状态没有接任何场景效果。",
+      "PlaneOpenSeasons": "季节与天气…",
+      "PlaneOpenSeasonsTip": "季节表和每日天气",
+      "PlaneWeatherOn": "日历会在此位面掷每日天气，并将其镜像到场景上。",
+      "PlaneWeatherOff": "此位面没有天气：日历不掷任何天气，也不推送到场景。你在这里设置它的状态。",
+      "SkyStyles": {
+        "classic": "经典",
+        "clouds": "鲜活天空",
+        "planar": "位面天空",
+        "depth": "深度柱",
+        "cave": "黏液灯",
+        "gilded": "鎏金星历"
+      },
+      "Moon": {
+        "new": "新月",
+        "waxingCrescent": "蛾眉月",
+        "firstQuarter": "上弦月",
+        "waxingGibbous": "盈凸月",
+        "full": "满月",
+        "waningGibbous": "亏凸月",
+        "lastQuarter": "下弦月",
+        "waningCrescent": "残月"
+      },
+      "Conditions": {
+        "clear": "晴朗",
+        "overcast": "阴天",
+        "fog": "雾",
+        "rain": "雨",
+        "storm": "风暴",
+        "snow": "雪"
+      },
+      "Winds": {
+        "calm": "无风",
+        "light": "微风",
+        "strong": "强风",
+        "howling": "呼啸狂风"
+      },
+      "Flavor": {
+        "clear": "罕见的阳光洒落在山谷上。",
+        "overcast": "灰蒙蒙的幕布低垂在山谷上。",
+        "fog": "斯瓦利奇的雾气贴着窗户逼近。",
+        "rain": "冷雨敲打着村庄的屋顶。",
+        "storm": "雷声从巴拉托克山滚滚而下。",
+        "snow": "雪悄然落在旧斯瓦利奇路上。"
+      },
+      "Today": "今天",
+      "Temperature": "温度",
+      "Wind": "风",
+      "RollWeather": "掷天气",
+      "RollHint": "1d20 对照季节表",
+      "ChartWeather": "登记天气",
+      "UpdateWeather": "更新天气",
+      "Clear": "清除",
+      "Events": "事件",
+      "NoEvents": "这一天没有标记事件。",
+      "AddEvent": "添加事件",
+      "SeasonsTip": "配置季节性天气生成与月份名称",
+      "ScaleDownTip": "缩小日历（仅你的客户端）",
+      "ScaleUpTip": "放大日历（仅你的客户端）",
+      "HelpTip": "关于日历与帮助",
+      "HelpTitle": "日历 - 帮助",
+      "HelpClose": "明白了",
+      "Help": {
+        "Nav": {
+          "Title": "导航",
+          "Body": "用箭头浏览月份，用「今天」跳回，点击某一天打开其面板。"
+        },
+        "Weather": {
+          "Title": "天气",
+          "Body": "GM 按天登记天气（选择天气状况、温度和风，或按季节表掷骰）。玩家在当天黎明时才能看到该天的天气；未来的日子保持遮蔽。"
+        },
+        "Events": {
+          "Title": "事件",
+          "Body": "GM 可以在任意一天标记事件（双击某一天或按「添加事件」）。剧情图事件在其日期到来时自动触发。"
+        },
+        "Seasons": {
+          "Title": "季节",
+          "Body": "齿轮按钮（仅 GM）配置月份名称、季节性天气表和场景天气效果。"
+        },
+        "Widget": {
+          "Title": "HUD 小部件",
+          "Body": "屏幕上的小日历条显示今天的日期和天气；GM 可以拖动它的天空来移动世界时间。"
+        },
+        "Scale": {
+          "Title": "日历大小",
+          "Body": "使用此窗口标题栏中的放大镜 − / + 按钮，仅在你的客户端缩小或放大整个日历（窗口和 HUD 小部件）。同一值存在于模组设置的「日历：界面大小」中。"
+        },
+        "PerfMode": {
+          "Title": "电脑配置低？性能模式",
+          "Body": "如果日历在你的机器上感觉卡顿，打开游戏设置 → 配置设置 → StoryFlow Dungeons Lab，并启用「日历：性能模式（低配电脑）」。它会关闭日历的动画、模糊和辉光效果——仅在你的客户端。"
+        }
+      },
+      "VeiledTip": "迷雾遮蔽着即将到来的一切",
+      "VeiledTitle": "迷雾遮蔽着即将到来的一切",
+      "VeiledBody": "未来几天的天气只有地下城主知道。",
+      "NoneTitle": "未记录天气",
+      "NoneBody": "编年史中没有这一天的记录。",
+      "BrokenEvent": "预定的剧情图页面已不存在",
+      "FooterGm": "GM · 已登记的天气在其当天黎明时向玩家揭示",
+      "FooterPlayer": "玩家 · 日历为只读；只显示已揭示的天气",
+      "Kicker": {
+        "today": "今天",
+        "chronicle": "编年史",
+        "ahead": "未来几日"
+      },
+      "EmptyMonthBanner": "本月还没有登记天气。在下方设置天空，或让骰子决定。",
+      "EventTitle": "安排事件",
+      "EventTime": "时间",
+      "EventLabel": "标签",
+      "EventLabelPh": "可选简短标签…",
+      "KindNotification": "通知",
+      "KindGraph": "剧情图",
+      "NotifTextPh": "通知文本…",
+      "Audience": "受众",
+      "AudienceGm": "仅地下城主",
+      "AudienceAll": "所有人",
+      "GraphCreate": "创建新剧情图",
+      "GraphPick": "选择现有剧情图",
+      "EventGraphName": "事件 - {date}",
+      "SaveEvent": "保存事件",
+      "CreateEvent": "创建事件",
+      "Cancel": "取消",
+      "NeedText": "请输入通知文本。",
+      "NeedGraph": "请选择一个剧情图页面。",
+      "CreateGraphFail": "无法创建剧情图页面。",
+      "SeasonsTitle": "日历设置",
+      "TempMin": "最低温度",
+      "TempMax": "最高温度",
+      "SaveSeasons": "保存",
+      "ResetSeasons": "重置为默认值",
+      "EditGraph": "打开剧情图编辑器",
+      "MonthNames": "月份名称",
+      "MonthNamesHint": "将字段留空以保留默认月份名称。",
+      "SceneEffects": "场景效果",
+      "SceneEffectsHint": "每种生成的天气状况在当前场景上播放哪个天气效果。你安装的任何天气模组的效果都会自动出现在这里。",
+      "EffectNone": "无效果",
+      "ConfigureEffects": "配置效果…",
+      "EventToastKicker": "日历事件"
+    },
+    "Weather": {
+      "ProviderMissing": "提供此天气效果（{provider}）的模组未激活。"
+    },
+    "Deck": {
+      "Title": "指挥台",
+      "Detach": "分离窗口",
+      "Fullscreen": "切换全屏",
+      "NewTab": "新标签页",
+      "CloseTab": "关闭标签页",
+      "CloseTabConfirm": "关闭此标签页？其中的小部件将被移除。",
+      "AddWidget": "添加小部件",
+      "ZoomIn": "放大",
+      "ZoomOut": "缩小",
+      "ZoomToFit": "缩放以适应",
+      "SearchWidgets": "搜索小部件…",
+      "EmptyTitle": "此标签页为空",
+      "EmptyHint": "点击 + 添加小部件，或从侧边栏把角色、物品或日志条目拖到这里。",
+      "SaveFailed": "指挥台无法保存——更改仅在本会话保留。",
+      "SendToDeck": "发送到指挥台",
+      "ImportEntryMenu": "导入到指挥台",
+      "ImportTarget": {
+        "Title": "导入到指挥台",
+        "NewTab": "导入到新标签页",
+        "ExistingTab": "导入到现有标签页：",
+        "Confirm": "导入",
+        "Cancel": "取消"
+      },
+      "SentToDeck": "已将「{name}」添加到指挥台。",
+      "AlreadyOnTab": "此页面已在当前标签页上。",
+      "UnknownWidget": "未知的小部件类型",
+      "BrokenWidget": "此小部件渲染失败。",
+      "Import": {
+        "NewTabName": "日志"
+      },
+      "Picker": {
+        "TitleJournals": "添加日志卡片",
+        "TitlePages": "添加页面卡片",
+        "TitleActors": "添加角色",
+        "TitleItems": "添加物品",
+        "Search": "搜索…",
+        "Add": "添加到当前标签页",
+        "Empty": "这个世界中无可添加的内容。"
+      },
+      "Menu": {
+        "Open": "打开",
+        "EditComment": "编辑注释",
+        "Connect": "连接到…",
+        "Delete": "删除",
+        "ConvertToPin": "转换为图钉",
+        "ConvertToReader": "转换为阅读器"
+      },
+      "Widgets": {
+        "DocPin": {
+          "Label": "文档图钉",
+          "CommentHint": "添加注释…",
+          "OpenSheet": "双击打开表单",
+          "OpenItem": "双击打开物品",
+          "OpenEntry": "双击打开条目",
+          "OpenScene": "双击打开场景",
+          "OpenMacro": "双击打开宏",
+          "OpenTable": "双击打开随机表"
+        },
+        "Launcher": {
+          "Label": "StoryFlow 启动器",
+          "Kicker": "StoryFlow 场景",
+          "Start": "开始场景",
+          "Entry": "默认入口点",
+          "DropHint": "将 StoryFlow 剧情图页面拖到这里",
+          "CommentHint": "这个场景做什么？",
+          "Footer": "为整桌播放"
+        },
+        "Note": {
+          "Label": "便利贴",
+          "Placeholder": "写一条笔记…"
+        },
+        "ActorSheet": {
+          "Label": "角色卡",
+          "Kicker": "角色",
+          "Badge": "属性块",
+          "Missing": "未找到角色",
+          "AC": "护甲等级",
+          "HP": "生命值",
+          "Speed": "速度",
+          "Saves": "豁免检定",
+          "Skills": "技能",
+          "DamageImm": "伤害免疫",
+          "DamageRes": "伤害抗性",
+          "DamageVuln": "伤害易伤",
+          "CondImm": "状态免疫",
+          "Senses": "感官",
+          "Languages": "语言",
+          "Challenge": "挑战等级",
+          "Level": "等级",
+          "Prof": "熟练加值",
+          "Init": "先攻",
+          "PassivePerception": "被动察觉",
+          "Traits": "特质",
+          "Actions": "动作",
+          "Spellcasting": "施法",
+          "SpellDC": "法术豁免 DC",
+          "Slots": "法术位",
+          "Cantrips": "戏法",
+          "Expand": "显示属性块",
+          "Collapse": "仅显示肖像",
+          "OpenHint": "双击打开表单",
+          "CommentPlaceholder": "添加注释..."
+        },
+        "ItemCard": {
+          "Label": "物品卡片",
+          "Kicker": "物品",
+          "Badge": "物品",
+          "Missing": "未找到物品",
+          "Expand": "显示详情",
+          "Collapse": "显示紧凑卡片",
+          "OpenHint": "双击打开表单",
+          "CommentPlaceholder": "添加注释...",
+          "Price": "价格",
+          "Weight": "重量",
+          "Quantity": "数量",
+          "ToHit": "攻击",
+          "Damage": "伤害",
+          "Give": "给予物品",
+          "GiveTo": "给予…",
+          "Characters": "角色",
+          "Others": "NPC 及其他",
+          "Given": "已将「{item}」给予 {actor}",
+          "GiveNoTarget": "请先选择物品的接收者。",
+          "GiveMissing": "未找到物品"
+        },
+        "Rewards": {
+          "Label": "奖励",
+          "Kicker": "奖励",
+          "Badge": "GM",
+          "Gold": "金币",
+          "XP": "经验值",
+          "Rep": "声望",
+          "Grant": "授予",
+          "Add": "添加奖励",
+          "Remove": "移除",
+          "Award": "给予",
+          "Empty": "无奖励——点击 + 添加。",
+          "UnitGold": "金币",
+          "UnitXp": "经验值",
+          "UnitRep": "声望",
+          "NoFactions": "未注册势力",
+          "Invalid": "请先输入有效数量（声望还需要势力）。",
+          "NoRecipient": "无匹配角色——请先选择目标。",
+          "Granted": "奖励已授予 {count} 个角色。",
+          "AwardTitle": "授予：{label}",
+          "ModeAll": "全部",
+          "ModeOne": "一个",
+          "ModeSome": "部分",
+          "AllInfo": "将授予整个当前队伍。",
+          "SelectAll": "全选",
+          "SplitEvenly": "在所选角色之间平均分配",
+          "Cancel": "取消",
+          "Confirm": "授予",
+          "PickCharacter": "选择一个角色",
+          "PickSome": "至少选择一个角色",
+          "SumAll": "每人 {amount} {unit} - 整个队伍（{count}）",
+          "SumOne": "{amount} {unit} - {name}",
+          "SumSplit": "{total} {unit} ÷ {count} = 每人 {each}",
+          "SumEach": "每人 {amount} {unit} × {count} = 总计 {total}",
+          "LogGold": "获得 {amount} 金币（GM 授予）",
+          "LogXp": "获得 {amount} 经验值（GM 授予）",
+          "LogRep": "{amount} {faction} 声望（GM 授予）"
+        },
+        "EventLog": {
+          "Label": "事件日志",
+          "Kicker": "日志",
+          "Badge": "日志",
+          "JournalName": "冒险日志",
+          "Empty": "还没有事件。",
+          "More": "… 日志中还有 {n} 条（双击打开）",
+          "Dice": "骰子",
+          "Rolled": "掷出 {what}：{total}",
+          "Bought": "购买 {item}（{price} 金币）",
+          "Gained": "获得 {item}",
+          "Lost": "失去 {item}",
+          "Died": "死亡",
+          "Filter": {
+            "roll": "显示/隐藏掷骰",
+            "purchase": "显示/隐藏购买",
+            "item": "显示/隐藏物品变化",
+            "death": "显示/隐藏死亡",
+            "reward": "显示/隐藏 GM 奖励"
+          }
+        },
+        "JournalPage": {
+          "Label": "日志页面",
+          "Kicker": "日志页面",
+          "Badge": "页面",
+          "ShowPlayers": "向玩家显示",
+          "Collapse": "折叠",
+          "Expand": "展开",
+          "Missing": "未找到日志页面"
+        },
+        "JournalToc": {
+          "Label": "日志",
+          "Kicker": "日志",
+          "Pages": "{n} 页",
+          "Missing": "未找到日志",
+          "NoPages": "此日志没有页面。",
+          "AddPage": "添加到当前标签页"
+        },
+        "GraphControl": {
+          "Label": "剧情图控制",
+          "Kicker": "剧情图控制",
+          "SearchPlaceholder": "搜索剧情图…",
+          "AllCategories": "全部",
+          "AddTooltip": "向此面板添加剧情图",
+          "AddSearchPlaceholder": "搜索所有剧情图…",
+          "StartTooltip": "现在开始此剧情图",
+          "StopTooltip": "停止此运行",
+          "ConfirmStop": "确认？",
+          "EnabledTooltip": "已启用——触发器可以启动此剧情图",
+          "DisabledTooltip": "已禁用——触发器被忽略",
+          "MissedN": "错过 {n}",
+          "MissedTooltip": "禁用期间触发器被抑制——点击清除",
+          "RemoveFromPanel": "从面板移除",
+          "OpenEditorTooltip": "在剧情图编辑器中打开",
+          "ManualPill": "手动",
+          "ManualTooltip": "无触发器——仅在你按下「开始」时运行",
+          "AddDragHint": "…或从此列表把剧情图拖到面板",
+          "MoveToCategory": "移动到：{name}",
+          "ClearCategory": "从分类中移除",
+          "NewCategoryAssign": "新分类…",
+          "EntryTooltip": "剧情图入口点",
+          "EntryN": "入口 {n}",
+          "SetAsEntry": "设为剧情图入口"
+        },
+        "PassiveWisdom": {
+          "Label": "被动感知检定",
+          "Kicker": "被动感知检定",
+          "MinWisdom": "最低被动感知",
+          "PlayersShown": "显示的玩家",
+          "ScopeAll": "所有角色",
+          "ScopeActive": "仅当前",
+          "Online": "在线",
+          "Offline": "离线",
+          "LegendPass": "察觉（≥ 最低值）",
+          "LegendFail": "浑然不觉（< 最低值）",
+          "Empty": "没有可显示的玩家角色。"
+        },
+        "Audio": {
+          "SoundLabel": "音频提示",
+          "SoundBadge": "音频",
+          "PlaylistLabel": "播放列表",
+          "PlaylistBadge": "播放列表",
+          "Play": "播放",
+          "Stop": "停止",
+          "Playing": "播放中",
+          "PlayingLoop": "播放中 · 循环",
+          "Stopped": "已停止",
+          "PrevTrack": "上一音轨",
+          "NextTrack": "下一音轨",
+          "TrackList": "音轨列表",
+          "TrackPos": "音轨 {i}/{n}",
+          "NoTracks": "此播放列表中没有音轨。",
+          "Missing": "未找到音频"
+        }
+      }
+    }
+  },
+  "GM_PANEL": {
+    "SceneDashboard": {
+      "Title": "场景仪表盘",
+      "Empty": "此场景上没有 Token。",
+      "NoScene": "没有当前场景。",
+      "Tokens": "Token",
+      "Select": "选择并平移到 Token",
+      "Ping": "标记位置",
+      "ToggleHidden": "切换 Token 可见性",
+      "OpenSheet": "打开角色卡"
+    }
+  }
+}

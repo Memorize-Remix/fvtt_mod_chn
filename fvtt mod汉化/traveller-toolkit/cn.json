@@ -1,4 +1,5 @@
-{"Traveller-Toolkit": {
+{
+  "Traveller-Toolkit": {
     "Settings": {
       "TileStyle": {
         "Name": "图块样式",
@@ -10,7 +11,18 @@
       },
       "ShortRangeMayLimit": {
         "Name": "短距离最大限制",
-        "Hint": "使用基于向量的移动时的最大短距离限制。（默认值：1）"
+        "Hint": "使用基于矢量的移动时的最大短距离限制。（默认 1）"
+      },
+      "PlayerVectorMovement": {
+        "Name": "玩家矢量移动",
+        "Hint": "是否为玩家启用矢量移动。（默认 true）",
+        "Settings": {
+          "Choices": {
+            "Disabled": "禁用",
+            "VectorOnly": "仅矢量——玩家只能更改矢量，但不能移动飞船",
+            "Full": "完整——玩家可以更改矢量并移动飞船"
+          }
+        }
       }
     }
   }

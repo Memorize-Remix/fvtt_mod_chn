@@ -1,0 +1,128 @@
+{
+  "QJPC": {
+    "settings": {
+      "removeGMSecrets": {
+        "name": "为所有玩家隐藏秘密",
+        "hint": "从所有玩家的导出日志文本中移除隐藏秘密。"
+      },
+      "returnHTMLtext": {
+        "name": "HTML 文本",
+        "hint": "返回 Foundry 在编辑器中保存和显示的 HTML，而非纯文本。"
+      },
+      "isCuratedText": {
+        "name": "整理文本导出",
+        "hint": "返回整理后的文本。这意味着块级元素会生成换行，并使导出的文本样式与你在日志中看到的内容相似。"
+      },
+      "isEmptyLineText": {
+        "name": "移除空行",
+        "hint": "移除文本中的所有空行。如果你想保留它们用于排版，请不要使用此选项。"
+      },
+      "isPageTitle": {
+        "name": "包含页面标题。",
+        "hint": "这会将页面标题添加到导出的文本中。"
+      },
+      "returnMDtext": {
+        "name": "渲染为 Markdown",
+        "hint": "在剪贴板导出前，将日志页面的文本渲染为 Markdown。"
+      },
+      "plaintext": {
+        "name": "纯文本"
+      },
+      "outputFormat": {
+        "name": "输出格式",
+        "hint": "剪贴板的输出格式。Markdown 不会被 Foundry 渲染器渲染。"
+      },
+      "allowLimited": {
+        "name": "「受限权限」导出",
+        "hint": "允许导出带有「受限」用户权限标记的页面。注意！这可能非常依赖系统。"
+      },
+      "isSecretObsidianCallout": {
+        "name": "秘密作为标注",
+        "hint": "为秘密返回 Obsidian 风格的 Markdown 标注，标注标识符为 '[!secret]'"
+      },
+      "isDetailsTagObsidianCallout": {
+        "name": "「Details」标签作为标注",
+        "hint": "为 HTML details 标签返回 Obsidian 风格的 Markdown 标注，标注标识符为 '[!note]'。"
+      },
+      "isBlockQuoteObsidianCallout": {
+        "name": "块引用作为标注",
+        "hint": "为块引用返回 Obsidian 风格的 Markdown 标注，标注标识符为 '[!info]'。"
+      },
+      "secretsForGM": {
+        "name": "为 GM 隐藏秘密",
+        "hint": "切换是否导出对 GM 可见的隐藏秘密。"
+      },
+      "htmlStyleTag": {
+        "name": "样式 CSS",
+        "hint": "在此复制粘贴你想用于 HTML 导出的任何 CSS（不要包含 style 标签）。它会被添加到 HTML 的开头。示例：.qjpc-print-document {background: red;}"
+      },
+      "picturePathSearchFor": {
+        "name": "要替换的 IMG 路径",
+        "hint": "输入你要搜索并替换的 IMG 路径字符串。例如 Foundry 路径 'assets'。如果不需要替换，请留空。"
+      },
+      "picturePathReplaceWith": {
+        "name": "要替换为的 IMG 路径",
+        "hint": "这是你要替换为的 IMG 路径。例如 'D:\\Foundry14.363\\Data\\assets'。如果不需要替换，请留空。"
+      },
+      "buttons": {
+        "save": "保存",
+        "cancel": "取消"
+      },
+      "htmlFooter": {
+        "name": "HTML 页脚",
+        "hint": "HTML 页脚将添加到导出 HTML 的末尾。你需要包含所需的任何标签。"
+      },
+      "htmlHeader": {
+        "name": "HTML 页眉",
+        "hint": "HTML 页眉将添加到导出 HTML 的顶部。你需要包含所需的任何标签。"
+      },
+      "base64PictureExport": {
+        "name": "在 HTML 中导出图片",
+        "hint": "将图片作为 base64 编码数据以内联 HTML 形式导出。只要启用此选项，就不会进行 URL 调整，而是将整个图片 URL 替换为图片。"
+      },
+      "outputChannel": {
+        "name": "导出目标",
+        "hint": "导出的文本将发送到哪个目标。默认为剪贴板。"
+      },
+      "channelClipboard": {
+        "name": "剪贴板"
+      },
+      "channelFile": {
+        "name": "文件导出"
+      },
+      "channelPrint": {
+        "name": "发送到打印机"
+      },
+      "fileName": {
+        "name": "文件名",
+        "hint": "对于文件导出选项，请只输入文件名，不要输入文件路径。"
+      }
+    },
+    "controls": {
+      "clipboard": {
+        "label": "剪贴板"
+      },
+      "print": {
+        "label": "打印"
+      },
+      "saveAs": {
+        "label": "另存为文件"
+      }
+    },
+    "notifications": {
+      "copied": "文本已复制到剪贴板。",
+      "unsupported": "不支持的页面类型。",
+      "noJournalOpen": "当前没有打开或活动的日志窗口。",
+      "fileDownload": "日志文本已保存。",
+      "print": "日志已发送到打印机。"
+    },
+    "warning": {
+      "error": "剪贴板复制事件期间出错。",
+      "onlyOneAllowed": "同一时间只能启用 Markdown 或 HTML 中的一种。已切换为纯文本导出。",
+      "channel": "无法打开输出通道。"
+    },
+    "windows": {
+      "printPreview": "打印预览"
+    }
+  }
+}

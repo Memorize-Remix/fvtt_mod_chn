@@ -1,6 +1,6 @@
-{"LAME": {
+{
+  "LAME": {
     "Module": {
-      "LongTitle": "Lucas's Awesome Messenger Extension",
       "ShortTitle": "LAME Messenger",
       "TitleWithAbbreviation": "Lucas's Awesome Messenger Extension (LAME Messenger)"
     },
@@ -21,16 +21,18 @@
       "PermanentNotificationForNewWhisper": "新私聊永久通知",
       "PermanentNotificationForNewWhisperHint": "通知是否应该一直保留到你将其取消？",
       "PlayNotificationSoundForNewWhisper": "为新的私聊播放通知音",
-      "PlayNotificationSoundForNewWhisperHint": "每次收到私聊时，是否都要播放\"pst-pst\"通知声音？(它是通过\"接口interface\"频道播放的）。",
+      "PlayNotificationSoundForNewWhisperHint": "每次收到私聊时是否应播放通知音？（它通过“界面”频道播放。）",
+      "NotificationSoundFile": "通知音文件",
+      "NotificationSoundFileHint": "收到新私聊时作为通知播放的声音文件。将字段留空可重置为默认的“pst-pst”音效。",
       "ButtonInSceneControlToolbar": "为场景控件添加按钮",
       "ButtonInSceneControlToolbarHint": "是否应将打开信息的按钮添加到屏幕左侧的场景控件栏中？ 仅适用于 FVTT v12",
       "ButtonInChatControl": "为聊天控件添加按钮",
-      "ButtonInChatControlHint": "是否应在侧边栏的聊天控件（掷骰类型选择器右侧）中添加打开信息的按钮？ 在 FVTT v13+ 版本中将变为非选项）。",
+      "ButtonInChatControlHint": "是否应将打开信使的按钮添加到侧边栏的聊天控件中（掷骰类型选择器的右侧）？（从 Foundry VTT v13 开始将变为必选项。）",
       "ShowInactiveUsers": "显示非活动用户",
       "ShowInactiveUsersHint": "信息中是否应该显示当前未登录的用户？",
       "UsersToExclude": "排除用户",
       "UsersToExcludeHint": "被选中的用户不会被列为所有用户的收信人。(世界设置，仅限GM）",
-      "UsersToExcludeHintV13preview": "被选中的用户不会被列为所有用户的收信人。(世界设置，仅限 GM）请注意，用户名将在 FVTT v13 稳定版发布后返回。"
+      "UsersToExcludeHintV13preview": "选中的用户将不会被列为所有用户的收信人。（世界设置，仅限GM）"
     },
     "IncomingWhisperFrom": "私聊来自",
     "NoUsersToShow": "无用户显示。",
@@ -38,7 +40,7 @@
     "UserIsOffline": "由于用户处于离线状态，因此无法向其发送。",
     "Keybinding": {
       "OpenMessengerWindow": "打开 LAME Messenger 窗口",
-      "OpenMessengerWindowHint": "默认情况下，分配的是左 Ctrl 键。您也可以用右 Ctrl 键悬停指定组合键，尽管它在输入框中看起来可能是一样的。"
+      "OpenMessengerWindowHint": "默认情况下，分配的 Ctrl 键为左 Ctrl。你也可以分配包含右 Ctrl 的按键组合，尽管在输入框中它可能看起来一样。"
     }
   }
 }

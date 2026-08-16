@@ -1,4 +1,5 @@
-{"z-scatter": {
+{
+	"z-scatter": {
 		"sizeSnap": {
 			"title": "尺寸吸附"
 		},
@@ -6,6 +7,18 @@
 			"ignoreDead": {
 				"name": "忽略特殊情况",
 				"hint": "死亡或失能的Token不会被吸附。"
+			},
+			"ignoreMisaligned": {
+				"name": "忽略未对齐的Token",
+				"hint": "故意放置在网格外的Token将不会被吸附。"
+			},
+			"ignoreElevation": {
+				"name": "忽略Token高度",
+				"hint": "处于不同高度的Token可以碰撞并一起分散。"
+			},
+			"collideDifferentSizes": {
+				"name": "碰撞不同尺寸的Token",
+				"hint": "具有不同尺寸的Token可以碰撞并一起分散。"
 			},
 			"scatter": {
 				"name": "分散程度",

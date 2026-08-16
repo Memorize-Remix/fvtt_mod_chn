@@ -1,0 +1,366 @@
+{
+  "PERSISTENT_ZONES": {
+    "ZoneSuffix": "Persistent Zone",
+    "UI": {
+      "ConfigTitle": "Persistent Zones",
+      "HeaderButtonLabel": "Open Persistent Zones configuration",
+      "HeaderButtonHintDisabled": "Persistent Zones not configured on this Item",
+      "HeaderButtonHintInactive": "Persistent Zones configured but disabled on this Item",
+      "HeaderButtonHintValid": "Persistent Zones configured and valid",
+      "HeaderButtonHintInvalid": "Persistent Zones configured, but the current definition is invalid",
+      "ClearTitle": "Clear Persistent Zones Definition",
+      "ClearConfirm": "Remove the persistent-zones definition from this Item?",
+      "NoneOption": "None",
+      "Sections": {
+        "Basics": "Basics",
+        "Activation": "Activation",
+        "Profiles": "Profiles",
+        "TemplateContext": "Detected Template",
+        "TypeVariant": "Zone Type & Variant",
+        "Geometry": "Geometry",
+        "DerivedGeometry": "Derived Geometry / Parameters",
+        "Behaviors": "Zone Behaviors",
+        "LinksTerrain": "Links & Terrain",
+        "Triggers": "Triggers",
+        "ConfigurationState": "Configuration Status",
+        "OnEnter": "On Enter",
+        "OnExit": "On Exit",
+        "OnMove": "On Move",
+        "OnStartTurn": "On Start Turn",
+        "OnEndTurn": "On End Turn",
+        "Validation": "Validation",
+        "StructuredDebug": "Structured Inspector",
+        "AdvancedDebug": "Advanced / Debug",
+        "RawDefinition": "Raw Definition",
+        "NormalizedDefinition": "Normalized Definition"
+      },
+      "Fields": {
+        "Enabled": "Persistent Zones Enabled",
+        "BaseType": "Base Type",
+        "Profile": "Profile",
+        "ProfileFilter": "Filter Profiles",
+        "ProfileName": "Profile Name",
+        "ProfileScope": "Profile Scope",
+        "ProfileBaseType": "Profile Base Type",
+        "ProfileTemplateType": "Profile Template Type",
+        "ProfileCompatibility": "Profile Compatibility",
+        "SimpleTemplateType": "Template Type",
+        "TemplateTypeSource": "Template Type Source",
+        "DetectedTemplateType": "Detected Template Type",
+        "DetectedTemplateSource": "Detected Template Source",
+        "EffectiveTemplateType": "Effective Template Type",
+        "MovementStop": "Movement Interruption",
+        "LegacyMovementStop": "Legacy Local Stop Flags",
+        "SelectedVariant": "Selected Variant",
+        "DefaultVariant": "Default Variant",
+        "AvailableVariants": "Available Variants",
+        "VariantResolutionMode": "Variant Resolution",
+        "PreviewTemplateType": "Preview Template Type",
+        "Status": "Status",
+        "TargetingMode": "Targeting Mode",
+        "TriggerMode": "Mode",
+        "SimpleEffectType": "Simple Effect",
+        "MovementMode": "Movement Type",
+        "StepMode": "Step Mode",
+        "CellStep": "Cells per Trigger",
+        "DistanceStep": "Distance per Trigger",
+        "OnEnterEnabled": "Enable onEnter",
+        "OnEnterMode": "onEnter Mode",
+        "DamageFormula": "Damage Formula",
+        "HealingFormula": "Healing Formula",
+        "TempHpFormula": "Temporary HP Formula",
+        "DamageType": "Damage Type",
+        "SaveAbility": "Save Ability",
+        "SaveDcMode": "Save DC Source",
+        "SaveDcModeAuto": "Automatic",
+        "SaveDcModeManual": "Manual",
+        "SaveDc": "Save DC",
+        "Activity": "Activity",
+        "PartCount": "Part Count",
+        "PartId": "Part ID",
+        "GeometryType": "Geometry Type",
+        "PartTargeting": "Targeting for This Zone",
+        "TargetFilter": "Targets",
+        "DifficultTerrain": "Difficult Terrain",
+        "LinkedWalls": "Linked Walls",
+        "LinkedWallsPreset": "Linked Wall Style",
+        "LinkedWallHeight": "Linked Wall Height",
+        "LinkedLight": "Linked Light",
+        "LinkedLightPreset": "Linked Light Style",
+        "LinkedLightRange": "Linked Light Range",
+        "LinkedLightBright": "Bright Range",
+        "LinkedLightDim": "Dim Range",
+        "WallThickness": "Wall Thickness",
+        "SideThickness": "Heated Side Thickness"
+      },
+      "Common": {
+        "Enabled": "Enabled",
+        "Disabled": "Disabled",
+        "EnabledGlobally": "Enabled globally",
+        "DisabledGlobally": "Disabled globally",
+        "Detected": "Detected",
+        "NotDetected": "Not detected"
+      },
+      "MovementStopModes": {
+        "Off": "Off",
+        "OnEnter": "On Enter only",
+        "OnEnterAndMove": "On Enter + On Move"
+      },
+      "DebugLogLevels": {
+        "Minimal": "Minimal",
+        "Standard": "Standard",
+        "Verbose": "Verbose"
+      },
+      "SectionSummaries": {
+        "GlobalTriggers": "{count} active triggers",
+        "CompositeParts": "{count} active zones"
+      },
+      "MovementModes": {
+        "Any": "Any",
+        "Voluntary": "Voluntary",
+        "Forced": "Forced"
+      },
+      "SimpleEffectTypes": {
+        "Damage": "Damage",
+        "Heal": "Healing",
+        "TempHp": "Temporary HP"
+      },
+      "TargetFilters": {
+        "All": "All",
+        "Allies": "Allies",
+        "Enemies": "Enemies",
+        "Self": "Self",
+        "NotSelf": "Not Self",
+        "None": "No Targets"
+      },
+      "TargetingModes": {
+        "All": "All",
+        "Custom": "Custom"
+      },
+      "TargetFilterModes": {
+        "Inherit": "Use Default Rule",
+        "Custom": "Zone-Specific Rule"
+      },
+      "LinkedWallPresets": {
+        "Solid": "Solid",
+        "Terrain": "Terrain",
+        "Invisible": "Invisible",
+        "Ethereal": "Ethereal"
+      },
+      "LinkedLightPresets": {
+        "Glow": "Glow",
+        "Moonlight": "Moonlight",
+        "Fire": "Fire",
+        "Holy": "Holy",
+        "Darkness": "Darkness"
+      },
+      "OnEnterModes": {
+        "None": "None",
+        "Simple": "Simple",
+        "Activity": "Activity"
+      },
+      "OnMoveStepModes": {
+        "GridCell": "By Cell",
+        "Distance": "By Distance"
+      },
+      "BaseTypes": {
+        "Simple": "Simple Zone",
+        "Ring": "Ring",
+        "CompositeLine": "Linear Wall",
+        "CompositeRing": "Annular Wall"
+      },
+      "TemplateTypes": {
+        "Circle": "Circle",
+        "Cone": "Cone",
+        "Ray": "Line / Ray",
+        "Rect": "Rectangle"
+      },
+      "GeometryTypes": {
+        "Template": "Template",
+        "Ring": "Ring",
+        "SideOfLine": "Directional Line",
+        "SideOfRing": "Directional Ring"
+      },
+      "TemplateTypeSources": {
+        "Auto": "Auto",
+        "Manual": "Manual",
+        "DetectedFromActivity": "Detected from activity",
+        "DetectedFromItemTarget": "Detected from Item target template",
+        "DetectedFromItemTemplate": "Detected from Item template"
+      },
+      "TemplateTypeWarnings": {
+        "AutoNotDetected": "No dnd5e template type could be detected automatically for this Item.",
+        "AutoFallback": "Preview is using a safe fallback.",
+        "AutoAmbiguous": "Multiple dnd5e template types were detected on this Item.",
+        "AutoUsingDetected": "Auto mode is using the first detected type.",
+        "ManualMismatch": "The manual template type override differs from the detected dnd5e template type.",
+        "NoDetectedSource": "No dnd5e template source detected."
+      },
+      "FeatureWarnings": {
+        "WallHeightUnavailable": "Linked wall height requires an active wall-height support module."
+      },
+      "ActivityTypes": {
+        "Damage": "Damage",
+        "Save": "Save",
+        "Heal": "Healing",
+        "Unknown": "Unknown"
+      },
+      "ActivityCompatibility": {
+        "Compatible": "Compatible zone-trigger",
+        "Incompatible": "Incompatible",
+        "OnlyCompatibleListed": "Only activities compatible with zone triggers are listed here.",
+        "SupportedTypes": "Supported types",
+        "CurrentIncompatibleSelection": "Current incompatible selection",
+        "NoCompatibleActivities": "No compatible zone-trigger activities were found on this Item.",
+        "SelectedMissing": "The selected activity could not be found on this Item.",
+        "SelectedIncompatible": "The selected activity is incompatible with zone-trigger mode.",
+        "UnsupportedType": "Unsupported activity type",
+        "MissingDamageParts": "The activity has no damage parts.",
+        "MissingSaveAbility": "The activity has no target save ability.",
+        "MissingSaveDc": "The activity has no resolved save DC.",
+        "MissingHealingParts": "The activity has no healing formula."
+      },
+      "Compatibility": {
+        "CompatibleBaseTypes": "Compatible base types",
+        "CompatibleVariants": "Compatible variants",
+        "BaseTypeFiltered": "The stored base type is incompatible with the effective template type, so the editor is using a compatible fallback.",
+        "VariantFiltered": "The stored variant is incompatible with the effective base type, so the editor is using a compatible fallback."
+      },
+      "ProfileScopes": {
+        "Builtin": "Built-in",
+        "User": "User"
+      },
+      "ProfileCompatibility": {
+        "Compatible": "Compatible",
+        "Incompatible": "Incompatible",
+        "NotFound": "The selected profile could not be found.",
+        "NotFoundShort": "Missing",
+        "TemplateMismatch": "This profile expects a different template type.",
+        "BaseTypeIncompatible": "This profile base type is incompatible with the effective template.",
+        "AnyTemplate": "Inherited from detected template"
+      },
+      "Profiles": {
+        "SimpleDamage": "Simple Damage",
+        "RingBasic": "Ring Basic",
+        "WallHeatedLineLeft": "Wall Heated Line Left",
+        "WallHeatedLineRight": "Wall Heated Line Right",
+        "WallHeatedRingInner": "Wall Heated Ring Inner",
+        "WallHeatedRingOuter": "Wall Heated Ring Outer",
+        "ImportedFallback": "Imported Profile"
+      },
+      "Variants": {
+        "LineLeft": "Line Left",
+        "LineRight": "Line Right",
+        "RingInner": "Ring Inner",
+        "RingOuter": "Ring Outer"
+      },
+      "Parts": {
+        "PrimaryZone": "Primary Zone",
+        "WallBody": "Wall Body",
+        "HeatedSideLeft": "Heated Side Left",
+        "HeatedSideRight": "Heated Side Right",
+        "HeatedSideInner": "Heated Side Inner",
+        "HeatedSideOuter": "Heated Side Outer",
+        "HeatedZoneLeft": "Heated Zone (Left)",
+        "HeatedZoneRight": "Heated Zone (Right)",
+        "HeatedZoneInner": "Heated Zone (Inner)",
+        "HeatedZoneOuter": "Heated Zone (Outer)"
+      },
+      "Validation": {
+        "Valid": "Valid",
+        "Invalid": "Invalid",
+        "Warning": "Warning",
+        "NeedsAttention": "Needs Attention",
+        "ValidWithWarnings": "Valid with warnings",
+        "Ready": "Ready",
+        "NoIssues": "No validation issues detected for the current preview."
+      },
+      "Actions": {
+        "Preview": "Preview",
+        "Save": "Save",
+        "ApplyProfile": "Apply Profile",
+        "DuplicateProfile": "Duplicate Profile",
+        "RenameProfile": "Rename Profile",
+        "SaveProfile": "Save as Profile",
+        "ExportProfiles": "Export User Profiles",
+        "ImportProfiles": "Import User Profiles",
+        "DeleteProfile": "Delete Profile",
+        "Clear": "Clear"
+      },
+      "Help": {
+        "AuthoringSubset": "This editor saves the Item definition using the supported authoring types: simple, ring, composite line, or composite ring.",
+        "MovementStopGlobalEnabled": "Movement interruption is enabled globally for {triggers}.",
+        "MovementStopGlobalEnabledGeneric": "Movement interruption is enabled globally for supported movement triggers.",
+        "MovementStopGlobalDisabled": "Movement interruption is disabled in the module settings.",
+        "MovementStopLegacyDetected": "Legacy local movement-stop flags were detected on the stored definition. The global module setting now controls movement stop.",
+        "PartOnEnterModes": "Composite definitions can configure onEnter separately for each part.",
+        "PartTriggerModes": "Composite definitions can configure onEnter, onStartTurn, and onEndTurn separately for each part.",
+        "PartTargetFilterInherited": "This zone uses the default targeting rule.",
+        "PartTargetFilterCustom": "This zone uses its own targeting rule.",
+        "ActiveVariantParts": "Only the effective parts for the currently selected variant are shown here.",
+        "LinkedLightRangesHint": "Use the bright and dim ranges to shape the linked light. Leave a field empty to keep the preset default.",
+        "ProfileSection": "Load a reusable built-in or user profile into the current editor draft.",
+        "ProfileSaveHint": "Leave the name blank to use the suggested profile name. Only valid definitions can be saved."
+      },
+      "Notifications": {
+        "Saved": "Persistent Zones definition saved.",
+        "Cleared": "Persistent Zones definition cleared.",
+        "ProfileApplied": "Persistent Zones profile applied to the editor.",
+        "ProfileDuplicated": "Persistent Zones profile duplicated as \"{profileLabel}\".",
+        "ProfileSaved": "Persistent Zones profile saved.",
+        "ProfileDeleted": "Persistent Zones profile deleted.",
+        "ProfileRenamed": "Persistent Zones profile renamed.",
+        "ProfilesExported": "Exported {count} Persistent Zones user profile(s).",
+        "ProfilesImported": "Imported {importedCount} user profile(s). Skipped {skippedCount} invalid entries.",
+        "ProfilesImportInvalidJson": "The selected file is not valid JSON.",
+        "ProfilesImportInvalidStructure": "The selected file does not contain a valid Persistent Zones profile export.",
+        "ProfilesImportNoEntries": "The selected file contains no user profiles to import.",
+        "ProfilesImportNoValidEntries": "No valid user profiles could be imported from the selected file.",
+        "ProfileNotFound": "The selected profile could not be found.",
+        "ProfileIncompatible": "This profile is incompatible with the current detected template.",
+        "ProfileDeleteBlockedBuiltin": "Built-in profiles cannot be deleted.",
+        "ProfileRenameBlockedBuiltin": "Built-in profiles cannot be renamed.",
+        "ProfileRenameEmpty": "A profile name is required.",
+        "ProfileRenameDuplicate": "Another user profile already uses that name.",
+        "ProfileRenameUnchanged": "The profile name is unchanged.",
+        "ProfileSaveInvalid": "Only a valid Persistent Zones definition can be saved as a profile."
+      },
+      "ProfileListSummaryAll": "{count} profiles available.",
+      "ProfileListSummaryFiltered": "{visibleCount}/{totalCount} profiles shown.",
+      "ProfileListNoMatches": "No profiles match the current filter.",
+      "ProfileCopySuffix": "Copy",
+      "ProfileRenameTitle": "Rename Persistent Zones Profile",
+      "ProfileRenamePrompt": "Enter a new name for this Persistent Zones profile.",
+      "ProfileDeleteTitle": "Delete Persistent Zones Profile",
+      "ProfileDeleteConfirm": "Delete the selected Persistent Zones profile?"
+    },
+    "Settings": {
+      "MovementStopGlobalLegacy": {
+        "Name": "Legacy movement interruption setting",
+        "Hint": "Internal legacy setting preserved for movement interruption migration."
+      },
+      "MovementStopGlobalMode": {
+        "Name": "Movement interruption",
+        "Hint": "Choose which supported movement triggers can interrupt token movement globally.",
+        "Choices": {
+          "Off": "Off",
+          "OnEnter": "On Enter only",
+          "OnEnterAndMove": "On Enter + On Move"
+        }
+      },
+      "MovementStopGlobalModeMigrated": {
+        "Name": "Movement interruption migrated",
+        "Hint": "Internal flag used to track legacy movement interruption migration."
+      },
+      "DebugLogLevel": {
+        "Name": "Debug log verbosity",
+        "Hint": "Control how much diagnostic output Persistent Zones writes to the console.",
+        "Choices": {
+          "Minimal": "Minimal",
+          "Standard": "Standard",
+          "Verbose": "Verbose"
+        }
+      }
+    }
+  }
+}

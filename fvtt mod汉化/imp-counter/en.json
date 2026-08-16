@@ -1,0 +1,73 @@
+{
+  "ADVCOUNTER": {
+    "Settings": {
+      "CounterOneLabel": {
+        "Name": "First window text",
+        "Hint": "For example: Players Advantage, Party Advantage, or Players."
+      },
+      "CounterTwoLabel": {
+        "Name": "Second window text",
+        "Hint": "For example: Enemies Advantage, Opposition Advantage, or Enemies."
+      },
+      "AllowPlayersCounterOne": {
+        "Name": "Players can change the first window",
+        "Hint": "The GM can always change both values. This option allows or blocks regular players from changing the first counter."
+      },
+      "AllowPlayersCounterTwo": {
+        "Name": "Players can change the second window",
+        "Hint": "It is often useful to keep the second window under GM control if it tracks enemy Advantage."
+      },
+      "AllowNegativeValues": {
+        "Name": "Allow negative values",
+        "Hint": "Disabled by default because Advantage usually cannot go below 0. Enable this if you use the module for another resource."
+      },
+      "ResetOnCombatStart": {
+        "Name": "Reset when Combat is created",
+        "Hint": "If enabled, the active GM automatically resets both counters to 0 when a new Combat is created."
+      },
+      "AutoOpenWindows": {
+        "Name": "Open windows on login",
+        "Hint": "Client setting: affects only the current user."
+      },
+      "ShowLauncher": {
+        "Name": "Show the Adv button",
+        "Hint": "Client setting: the small button in the lower left opens or hides the windows."
+      },
+      "CounterOneValue": {
+        "Name": "First value"
+      },
+      "CounterTwoValue": {
+        "Name": "Second value"
+      },
+      "CounterOneState": {
+        "Name": "First window state"
+      },
+      "CounterTwoState": {
+        "Name": "Second window state"
+      },
+      "AutoOpenDefaultDisabledMigration": {
+        "Name": "Auto-open disabled migration"
+      }
+    },
+    "UI": {
+      "AdvButton": "Adv",
+      "Locked": "Locked",
+      "LockedText": "Only the GM or permitted players can change this value.",
+      "CloseTitle": "Close",
+      "MinusTitle": "Minus 1. Shift-click: minus 5.",
+      "PlusTitle": "Plus 1. Shift-click: plus 5.",
+      "ToggleWindowsTitle": "Open or hide Imp Counter windows",
+      "ResetCountersTitle": "Reset counters to 0",
+      "UndoCountersTitle": "Restore previous values",
+      "ResetCountersLabel": "Reset",
+      "UndoCountersLabel": "Undo",
+      "OpenCounterOneTitle": "Open or hide the first counter",
+      "OpenCounterTwoTitle": "Open or hide the second counter"
+    },
+    "Notifications": {
+      "NoGM": "Imp Counter: an active GM is required to save this world value change.",
+      "NoPermissionWindow": "Imp Counter: you do not have permission to change this window.",
+      "NoPermissionCounters": "Imp Counter: you do not have permission to change the counters."
+    }
+  }
+}

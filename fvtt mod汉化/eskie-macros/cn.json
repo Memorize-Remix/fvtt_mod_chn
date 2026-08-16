@@ -1,0 +1,236 @@
+{
+    "EMP": {
+        "settings": {
+            "enableSounds": {
+                "name": "启用宏音效",
+                "hint": "如果禁用，宏将无法播放音效。"
+            },
+            "worldScripts": {
+                "name": "世界脚本配置",
+                "label": "配置世界脚本",
+                "hint": "启用或禁用玩家加载时运行的世界脚本。"
+            },
+            "autorecUpdate": {
+                "name": "更新 Automated Animations 自动识别",
+                "label": "更新 AA 自动识别",
+                "hint": "强制更新 Automated Animations 的自动识别。"
+            },
+            "recommendedModules": {
+                "name": "推荐模组指南",
+                "label": "查看推荐模组",
+                "hint": "查看为 Eskie Macro Pack 提供资产、音频和功能的配套模组。"
+            },
+            "logVerbosity": {
+                "name": "日志详细级别",
+                "hint": "控制打印到浏览器控制台的详细信息级别。",
+                "choices": {
+                    "error": "仅错误",
+                    "warn": "警告与错误（默认）",
+                    "info": "信息、警告与错误",
+                    "debug": "调试（全部）"
+                }
+            }
+        },
+        "recommendedModules": {
+            "menuTitle": "Eskie Macro Pack - 推荐配套模组",
+            "menuHint": "以下模组通过提供视觉资产、音频效果、动画或高级自动化来增强 Eskie Macro Pack。",
+            "closeButton": "关闭指南",
+            "status": {
+                "active": "已安装",
+                "disabled": "已禁用",
+                "missing": "未安装",
+                "supported": "已支持（1 个活跃）",
+                "requireOne": "至少需要以下之一"
+            },
+            "types": {
+                "recommended": "推荐",
+                "optional": "可选配套"
+            },
+            "categories": {
+                "assets": "资产",
+                "functionality": "功能",
+                "automation": "自动化"
+            },
+            "subcategories": {
+                "visual": "视觉资产",
+                "sound": "音效资产",
+                "tileTriggers": "图块触发器与标记",
+                "objectAttaching": "对象附加与链接"
+            },
+            "modules": {
+                "eskieEffects": {
+                    "name": "Eskie Effects (Patreon or Free)",
+                    "description": "专为 Eskie Macro Pack 动画设计的自定义视觉资产、纹理、Token 遮罩和音效。"
+                },
+                "jb2a": {
+                    "name": "JB2A - Animated Assets (Patreon or Free)",
+                    "description": "EMP 宏和 Automated Animations 预设使用的高质量法术、攻击、环境与模板动画核心合集。"
+                },
+                "jaamod": {
+                    "name": "Jinker's Animated Art",
+                    "description": "免费动画图形和模板动画，用于法术、攻击和场景视觉效果。"
+                },
+                "bossLoot": {
+                    "name": "Boss Loot Assets (Patreon or Free)",
+                    "description": "用于 EMP 陷阱和电影级效果的高分辨率打击纹理、法术图形、粒子覆盖层和音频轨道。"
+                },
+                "psfx": {
+                    "name": "PSFX - Peri's Sound Effects",
+                    "description": "丰富的音频音效库，已集成到 EMP 宏音效预设中。"
+                },
+                "matt": {
+                    "name": "Monk's Active Tile Triggers (MATT)",
+                    "description": "允许场景图块在 Token 进入或交互时触发 EMP 陷阱宏、坠落危险和交互式地图事件。"
+                },
+                "tagger": {
+                    "name": "Tagger",
+                    "description": "支持基于标签选择 Token、图块和绘图。EMP 用它实现自动化陷阱触发、区域检测和定向宏效果。"
+                },
+                "tokenAttacher": {
+                    "name": "Token Attacher",
+                    "description": "将图块、光源、音效和绘图附加到 Token 上，用于复杂的动画宏设置。"
+                },
+                "massEdit": {
+                    "name": "Baileywiki Mass Edit",
+                    "description": "支持将元素链接并附加到画布图块和 Token 上，实现高级场景对象操作。"
+                },
+                "autoanimations": {
+                    "name": "Automated Animations",
+                    "description": "在受支持的游戏系统中执行动作、掷骰或攻击时，自动触发 EMP 法术和物品动画。"
+                }
+            }
+        },
+        "worldScripts": {
+            "menuTitle": "Eskie Macro Pack - 世界脚本",
+            "menuHint": "世界脚本是模块化功能，会在每个玩家加载时自动运行。请在下方配置你想在此世界中启用的功能。",
+            "saveButton": "保存配置",
+            "savedNotify": "世界脚本配置已成功保存。",
+            "reloadTitle": "需要重载",
+            "reloadContent": "更改启用的世界脚本需要重载页面才能生效。",
+            "reloadButton": "立即重载",
+            "cancelButton": "稍后重载",
+            "rollAnimation": {
+                "name": "Eskie d20 掷骰动画",
+                "hint": "在豁免检定和属性检定中，于 Token 正上方播放自定义的 Eskie d20 掷骰动画序列。"
+            }
+        },
+        "autoanimations": {
+            "skipped": "EMP | 已跳过 Automated Animations 集成。"
+        },
+        "updateMenu": {
+            "menuTitle": "Automated Animations 集成",
+            "menuHint": "查看并同步 Automated Animations 中 Eskie Macro Pack 的自动识别（Autorec）预设。",
+            "added": "要添加的新动画预设",
+            "custom": "冲突预设已忽略",
+            "customHint": "这些预设已存在于其他来源，不会被覆盖。若要让 EMP 管理它们，请从 Automated Animations 中删除并重新提交。",
+            "updated": "要更新的动画预设",
+            "warning": "这将用更新版本覆盖所有现有的 EMP 动画预设。来自其他来源的自定义预设将保持不变。",
+            "nothing": "所有 Eskie Macro Pack 动画都是最新的！",
+            "acceptButton": "应用更新",
+            "cancelButton": "取消"
+        },
+        "effects": {
+            "concentratingPrefix": "专注中：{name}",
+            "angry": "愤怒",
+            "armsOfHadar": "哈达之臂",
+            "banishment": "放逐术",
+            "benignTransportation": "良性传送",
+            "blastLock": "轰开锁",
+            "bless": "祝福术",
+            "blurredVision": "视线模糊",
+            "charmed": "魅惑",
+            "chromaticOrb": "彩光球",
+            "colorSpray": "彩色喷射",
+            "dash": "疾走",
+            "dimensionDoor": "次元门",
+            "divineSmite": "神圣打击",
+            "drainingKiss": "吸取之吻",
+            "drunk": "醉酒",
+            "enlarged": "变大",
+            "faerieFire": "妖火",
+            "fightingSpirit": "战斗意志",
+            "fireBlast": "火焰冲击",
+            "fireShield": "火焰护盾",
+            "firecracker": "鞭炮",
+            "flurryOfBlows": "疾风连击",
+            "gate": "异界之门",
+            "grease": "油腻术",
+            "haloOfSpores": "孢子光环",
+            "healingWord": "治疗真言",
+            "hexed": "灾祸诅咒",
+            "hide": "躲藏",
+            "hitTheDirt": "卧倒",
+            "hookAndPull": "钩拉",
+            "levitating": "漂浮",
+            "lightningBolt": "闪电束",
+            "magicMissile": "魔法飞弹",
+            "massHealingWord": "群体治疗真言",
+            "mirrorImage": "镜影术",
+            "petrified": "石化",
+            "psychicTeleportation": "心灵传送",
+            "rage": "狂暴",
+            "rapidStrike": "快速打击",
+            "reduced": "缩小",
+            "sandevistan": "Sandevistan",
+            "shapechange": "形体变化",
+            "silence": "沉默术",
+            "sneakAttack": "偷袭",
+            "speakWithDead": "死者交谈",
+            "spikeGrowth": "荆棘丛生",
+            "starwardSword": "星向之剑",
+            "stepOfTheWind": "疾风步",
+            "stepOfTheWindJump": "疾风步（跳跃）",
+            "strengthBeforeDeath": "死前之力",
+            "stunningFist": "震慑拳",
+            "tashasCausticBrew": "塔莎的腐蚀酿",
+            "teleport": "传送术"
+        },
+        "traps": {
+            "name": {
+                "bullRushStatue": "蛮牛冲锋雕像",
+                "electricDoor": "电击门",
+                "fallingRocks": "落石",
+                "fallingSky": "从天而降",
+                "fire": "火焰",
+                "floodingRoom": "注水房间",
+                "pitfall": "陷阱坑",
+                "projectile": "投射物",
+                "rollingBoulder": "滚动巨石",
+                "spike": "尖刺"
+            },
+            "common": {
+                "continue": "继续",
+                "cancel": "取消"
+            },
+            "setup": {
+                "chooseTrapTitle": "陷阱设置：选择陷阱",
+                "chooseTrapContent": "<p>选择要在画布上配置和设置的陷阱。</p>",
+                "noTrapChosen": "EMP | 未选择陷阱。陷阱设置已取消。",
+                "noSetupMethod": "EMP | 陷阱“{name}”没有设置配置方法。",
+                "onlyGm": "EMP | 只有 GM 可以设置陷阱。",
+                "step1Title": "陷阱设置 - {name}：第 1 步（触发图块）",
+                "step1Content": "<p>在画布上选择**触发图块**（Token 踩上后触发陷阱的图块）。</p><p>选择完成后点击<strong>继续</strong>。</p>",
+                "noTriggerTiles": "EMP | 未选择触发图块。陷阱设置已取消。",
+                "step2OriginTitle": "陷阱设置 - {name}：第 2 步（陷阱原点/发射图块）",
+                "step2OriginContent": "<p>在画布上选择**陷阱原点图块**（陷阱起始或发射的位置）。</p><p>选择完成后点击<strong>继续</strong>。</p>",
+                "noOriginTiles": "EMP | 未选择陷阱原点图块。陷阱设置已取消。",
+                "step3TargetTitle": "陷阱设置 - {name}：第 3 步（陷阱目标/落点图块）",
+                "step3TargetContent": "<p>在画布上选择**陷阱目标图块**（陷阱射向或落下的位置）。</p><p>选择完成后点击<strong>继续</strong>。</p>",
+                "noTargetTiles": "EMP | 未选择陷阱目标图块。将默认使用触发图块。",
+                "step2AnimTitle": "陷阱设置 - {name}：第 2 步（动画图块）",
+                "step2AnimContent": "<p>选择将播放视觉效果的**陷阱动画图块**。</p><p>选择完成后点击<strong>继续</strong>。</p>",
+                "noAnimTiles": "EMP | 未选择陷阱动画图块。将默认使用触发图块。",
+                "extraTitle": "陷阱设置 - {name}",
+                "noExtraTiles": "EMP | 未选择{name}。陷阱设置已取消。"
+            },
+            "projectile": {
+                "chooseTypeTitle": "投射物陷阱设置：选择类型",
+                "chooseTypeContent": "<p>为此陷阱选择投射物类型。</p>",
+                "noTypeChosen": "EMP | 未选择投射物类型。设置已取消。",
+                "arrow": "箭矢",
+                "dart": "飞镖",
+                "javelin": "标枪"
+            }
+        }
+    }
+}

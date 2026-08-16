@@ -1,0 +1,63 @@
+{
+    "FOGWEAVER": {
+        "Title": "Fog Weaver",
+        "Settings": {
+            "Enabled": {
+                "Name": "Enable Manual Fog Control",
+                "Hint": "When enabled, token movement no longer reveals fog. Use the Fog Weaver tools to reveal and hide areas manually."
+            },
+            "LineWidth": {
+                "Name": "Line Tool Width",
+                "Hint": "The width in pixels of the line shape when using the Reveal-Line or Hide-Line tools."
+            },
+            "GmFogAlpha": {
+                "Name": "GM Fog Preview Opacity",
+                "Hint": "While the Fog Weaver tool is active, fog of war is shown to the GM at this opacity. Lower values let you see the map more clearly through unrevealed areas."
+            },
+            "GmFogTint": {
+                "Name": "GM Fog Tint Color",
+                "Hint": "The color of unexplored fog areas shown to the GM while the Fog Weaver tool is active."
+            },
+            "IsolateStates": {
+                "Name": "Preserve Independent Fog States",
+                "Hint": "When enabled, toggling Fog Weaver preserves each mode's fog state independently — GM-painted fog and token-vision exploration never overlap. Disable to revert to the previous shared-state behavior."
+            },
+            "SnapshotSizeWarning": {
+                "Name": "Snapshot Size Warning Threshold (KB)",
+                "Hint": "Show a warning when a fog snapshot saved during a toggle exceeds this size in kilobytes. Raise or lower this to tune when the alert appears."
+            },
+            "DebugLogging": {
+                "Name": "Debug Logging",
+                "Hint": "When enabled, Fog Weaver writes diagnostic log messages to the browser console. Disable in normal play; enable when troubleshooting."
+            }
+        },
+        "Controls": {
+            "Title": "Fog Weaver",
+            "RevealCircle": "Reveal — Circle",
+            "RevealRect": "Reveal — Rectangle",
+            "RevealLine": "Reveal — Line",
+            "RevealFreehand": "Reveal — Freehand",
+            "Opacity": "Fog Opacity",
+            "FogTint": "Fog Tint",
+            "FogTintHint": "Color of unexplored areas",
+            "LineThickness": "Line Width",
+            "HintsTitle": "Drawing",
+            "HintDrag": "Drag: reveal",
+            "HintAlt": "Alt + drag: hide",
+            "HintShift": "Shift + drag: from center (shapes only)",
+            "HintCtrl": "Ctrl + drag: circle / square (shapes only)",
+            "ResetFog": "Reset Fog",
+            "ResetFogTitle": "Reset Fog of War",
+            "ResetFogContent": "This will erase all revealed and hidden areas and clear the drawing history. This cannot be undone.",
+            "ResetFogContentMultiLevel": "This will erase revealed and hidden areas and clear the drawing history. This cannot be undone. Choose which levels to reset.",
+            "ResetFogAllLevels": "All Levels",
+            "ResetFogCurrentLevel": "Current Level",
+            "ResetFogCancel": "Cancel"
+        },
+        "Warnings": {
+            "SnapshotLarge": "Fog Weaver: the {type} fog snapshot is {size} KB, which exceeds the {threshold} KB warning threshold. Consider resetting fog if it has grown unexpectedly large.",
+            "SnapshotTypeNormal": "normal-vision",
+            "SnapshotTypeWeaver": "GM-painted"
+        }
+    }
+}

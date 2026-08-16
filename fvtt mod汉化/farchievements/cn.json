@@ -1,4 +1,5 @@
-{"Farchievements.Settings.EnableAchievementPopup": {
+{
+	"Farchievements.Settings.EnableAchievementPopup": {
 		"Text": "启用成就弹出",
 		"Hint": "如果启用，玩家在解锁成就时会收到一个弹出窗口。"
 	},
@@ -6,9 +7,9 @@
 		"Text": "禁用成就横幅",
 		"Hint": "如果启用，将禁用成就横幅动画。"
 	},
-    "Farchievements.Settings.EnableChatBarButton" : {
-        "Text":"启用聊天栏按钮",
-        "Hint": "允许从聊天栏访问档案。"
+    "Farchievements.Settings.EnableSidebarButton" : {
+        "Text":"启用右侧边栏按钮",
+        "Hint": "在右侧边栏中显示 Farchievements 按钮。"
     },
     "Farchievements.Settings.EnableAchievementMessage" : {
         "Text": "启用聊天信息",
@@ -165,7 +166,7 @@
         "Overwritten": "这个世界的成就已被覆盖。",
         "CopiedToClipboard": "成就复制到剪贴板"
     },
-    
+	
     "Farchievements.Html.Secret": "秘密",
     "Farchievements.Title": "成就",
     "Farchievements.Achievement": "成就",
@@ -190,13 +191,27 @@
     "Farchievements.Html.ProgressType": "进度类型",
     "Farchievements.Html.DiceType": "骰子类型",
     "Farchievements.Html.ChainLength": "链长",
+    "Farchievements.Html.BannerStyle": "横幅",
+    "Farchievements.Html.BannerDefault": "默认（全局设置）",
+    "Farchievements.Html.CardStyle": "卡片类型",
+    "Farchievements.Html.CardStyleDefault": "标准",
 	
 
     "Farchievements.Html.ImportExport":{
         "Title": "成就导入/导出",
         "Body": "这是一个导入和导出成就的小工具。<b>在考虑覆盖之前，请确保备份所有内容!!</b>",
         "ClipboardOverwrite": "从剪贴板覆盖",
-        "CopyToClipboard": "复制到剪贴板"
+        "CopyToClipboard": "复制到剪贴板",
+        "DataLabel": "成就 JSON",
+        "Download": "下载 JSON",
+        "ExportTitle": "导出",
+        "Format": "格式",
+        "Import": "导入 / 覆盖",
+        "ImportPlaceholder": "在此粘贴成就 JSON",
+        "ImportTitle": "导入",
+        "LoadFile": "加载文件",
+        "NoImportData": "无导入数据",
+        "PreviewEmpty": "导入预览将显示在这里。"
     },
 	"Farchievements.Html.SanitySaver":{
         "Title": "成就|sanity saver",

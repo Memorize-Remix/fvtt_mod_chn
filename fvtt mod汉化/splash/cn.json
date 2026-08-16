@@ -1,0 +1,452 @@
+{
+	"TYPES": {
+		"JournalEntryPage": {
+			"splash": {
+				"splash": "闪屏"
+			}
+		}
+	},
+	"splash": {
+		"settings": {
+			"renderer": {
+				"name": "闪屏渲染器",
+				"hint": "闪屏的绘制方式。自动模式会在高画布性能模式下选择 WebGL，在低性能模式下选择纯 HTML。",
+				"auto": "自动",
+				"webgl": "WebGL（着色器效果）",
+				"html": "纯 HTML（低配电脑）"
+			}
+		},
+		"quickAccess": {
+			"title": "闪屏"
+		},
+		"manager": {
+			"title": "闪屏管理器",
+			"menuName": "闪屏管理器",
+			"menuLabel": "打开闪屏管理器",
+			"menuHint": "浏览、创建、编辑并启动每个闪屏和讲义。",
+			"layerScene": "场景",
+			"layerHud": "HUD",
+			"layerFull": "全屏",
+			"layerHandout": "讲义",
+			"tabSplashes": "闪屏",
+			"tabPresets": "预设",
+			"renamePresetTitle": "重命名预设",
+			"renamePresetOk": "重命名",
+			"deletePresetTitle": "删除预设",
+			"deletePresetContent": "删除预设“{name}”？此操作无法撤销。",
+			"groupByJournal": "按日志",
+			"groupByKind": "按类型",
+			"newLayerFull": "全屏闪屏",
+			"newLayerScene": "场景闪屏",
+			"newLayerHud": "HUD 闪屏",
+			"newLayerHandout": "讲义",
+			"journalDefault": "闪屏和讲义（默认）",
+			"ungrouped": "未分组",
+			"duplicateName": "{name} 副本",
+			"deleteSplashTitle": "删除闪屏",
+			"deleteSplashContent": "删除“{name}”？此操作无法撤销。",
+			"unsetGlobal": "取消全局",
+			"setGlobal": "设为全局",
+			"unpinFromScene": "从场景取消固定",
+			"pinToScene": "固定到当前场景",
+			"duplicate": "复制",
+			"delete": "删除",
+			"searchSplashes": "搜索闪屏…",
+			"newSplash": "新建闪屏",
+			"name": "名称",
+			"newSplashPlaceholder": "新建闪屏",
+			"kind": "类型",
+			"journal": "日志",
+			"cancel": "取消",
+			"createAndEdit": "创建并编辑",
+			"launch": "启动",
+			"more": "更多",
+			"noSplashesMatch": "没有符合搜索条件的闪屏。",
+			"noSplashesYet": "还没有闪屏——点击 + 创建一个。",
+			"searchPresets": "搜索预设…",
+			"rename": "重命名",
+			"noPresetsMatch": "没有符合搜索条件的预设。",
+			"noPresetsYet": "还没有预设——从闪屏编辑器保存一个。",
+			"chipGlobal": "全局",
+			"chipSynced": "已同步"
+		},
+		"actions": {
+			"launch": "为玩家启动",
+			"preview": "预览",
+			"openHandout": "打开讲义",
+			"edit": "打开编辑器",
+			"triggers": "触发器"
+		},
+		"triggers": {
+			"title": "闪屏触发器",
+			"region": {
+				"label": "闪屏：进入区域时启动"
+			},
+			"setup": {
+				"regionLabel": "Token 进入区域",
+				"doorLabel": "玩家点击锁定的门"
+			},
+			"doorTrigger": {
+				"noDoors": "闪屏 | 活动场景中没有可绑定的门。",
+				"doorOption": "门 {index}",
+				"bindTitle": "绑定门触发器",
+				"bindPrompt": "点击哪扇锁定的门会启动此闪屏？",
+				"bindingSummary": "“{scene}”中的门"
+			},
+			"regionTrigger": {
+				"noRegions": "闪屏 | 请先在活动场景中创建一个场景区域，然后绑定它。",
+				"dialogTitle": "绑定区域触发器",
+				"dialogPrompt": "Token 进入哪个区域会启动此闪屏？",
+				"bindingSummary": "“{scene}”中的区域“{region}”"
+			}
+		},
+		"editor": {
+			"editorModel": {
+				"needsState": "闪屏 | 闪屏至少需要一个状态。",
+				"typeImage": "图像",
+				"typeText": "文本",
+				"typeButton": "按钮",
+				"typeObject": "对象",
+				"groupName": "组 {n}",
+				"stateCopy": "{label} 副本"
+			},
+			"editor": {
+				"undo": "撤销",
+				"undoTooltip": "撤销（Ctrl+Z）",
+				"redo": "重做",
+				"redoTooltip": "重做（Ctrl+Shift+Z）"
+			},
+			"originEditor": {
+				"sublabel": "原点——点击添加，拖动移动，右键移除",
+				"empty": "点击添加原点"
+			},
+			"sidebar": {
+				"tabObject": "对象",
+				"tabState": "状态",
+				"tabSplash": "闪屏"
+			},
+			"spriteFactory": {
+				"imageName": "图像",
+				"textName": "文本",
+				"textContent": "文本",
+				"panelName": "面板",
+				"buttonName": "按钮",
+				"buttonLabel": "按钮"
+			},
+			"actionEditor": {
+				"typeMacro": "运行宏",
+				"typeChangeState": "切换状态",
+				"typeSetValue": "设置值",
+				"typeIncrementValue": "增加值",
+				"typeVote": "投票",
+				"typeScript": "脚本（内联宏）",
+				"typeClose": "关闭闪屏",
+				"noAction": "无动作",
+				"pickMacro": "选择宏",
+				"loadStates": "加载状态…",
+				"unloadStates": "卸载状态…",
+				"conditionsLabel": "条件（值门控）",
+				"removeCondition": "移除条件",
+				"addCondition": "添加条件",
+				"valueKey": "值键",
+				"key": "键",
+				"value": "值",
+				"step": "步长",
+				"min": "最小值",
+				"max": "最大值",
+				"wrap": "最小值↔最大值循环（转轮数字）",
+				"voteOptionId": "投票选项 id",
+				"scriptGlobals": "内联宏——全局变量",
+				"scriptScope": "（此元素的节点）",
+				"scriptContext": "（其数据）",
+				"scriptApi": "（changeState / setValue / close）"
+			},
+			"effectsEditor": {
+				"heading": "效果（仅 WebGL）",
+				"addEffect": "添加效果",
+				"glitch": "故障",
+				"removeEffect": "移除效果",
+				"bands": "条纹",
+				"intensity": "强度",
+				"tint": "色调"
+			},
+			"splashTab": {
+				"layerScene": "场景（画布之上）",
+				"layerHud": "HUD（隐藏导航和控件）",
+				"layerFull": "全屏（所有界面之上）",
+				"layerHandout": "讲义（窗口化）",
+				"modeLocal": "本地（每个客户端）",
+				"modeSynced": "同步（共享状态）",
+				"voteAll": "计票结果对所有人可见",
+				"voteGm": "计票结果仅 GM 可见",
+				"kindLayer": "类型 / 层级",
+				"mode": "模式",
+				"voteTallies": "投票计票",
+				"global": "全局（场景控制全局标签页）",
+				"pinnedScenes": "已固定的场景",
+				"noScenesPinned": "没有固定的场景",
+				"width": "宽度",
+				"height": "高度",
+				"animIn": "闪屏入场动画",
+				"animOut": "闪屏退场动画"
+			},
+			"actionListEditor": {
+				"actionN": "动作 {n}",
+				"removeAction": "移除动作",
+				"addAction": "添加动作"
+			},
+			"nineSliceEditor": {
+				"headerTitle": "{title} — 九宫格",
+				"applyPreset": "应用九宫格预设",
+				"saveAsPreset": "保存为预设",
+				"presetDefaultName": "九宫格",
+				"close": "关闭",
+				"imageLabel": "图像",
+				"pickImageHint": "选择一张图像以设置其切片边界。",
+				"dragHint": "拖动橙色参考线以设置拉伸边界（左 {l} · 上 {t} · 右 {r} · 下 {b}）。",
+				"demoLabel": "演示——拖动调整我的大小",
+				"demoButton": "按钮",
+				"cutLeft": "左侧切口",
+				"cutRight": "右侧切口",
+				"cutTop": "顶部切口",
+				"cutBottom": "底部切口"
+			},
+			"stateTab": {
+				"stateLabel": "状态标签",
+				"initialState": "打开时加载（初始状态）",
+				"onEnter": "进入时——此状态加载时运行动作"
+			},
+			"animationEditor": {
+				"typeNone": "无",
+				"typeDissolve": "溶解",
+				"typeGlitch": "故障",
+				"originRandom": "随机",
+				"originFixed": "固定",
+				"applyPreset": "应用动画预设",
+				"savePreset": "保存为预设",
+				"presetDefaultName": "动画",
+				"duration": "时长",
+				"delay": "延迟",
+				"origins": "原点",
+				"originCount": "原点数量",
+				"bands": "条纹",
+				"intensity": "强度",
+				"tint": "色调",
+				"invert": "反转"
+			},
+			"objectTab": {
+				"alignLeft": "左",
+				"alignCenter": "居中",
+				"alignRight": "右",
+				"alignJustify": "两端对齐",
+				"multiSelected": "已选择 {count} 个对象——选择一个以编辑其属性。",
+				"noSelection": "选择一个对象以进行编辑。",
+				"name": "名称",
+				"applySpritePreset": "应用精灵预设",
+				"saveSpritePreset": "保存精灵预设",
+				"image": "图像",
+				"text": "文本",
+				"font": "字体",
+				"size": "大小",
+				"color": "颜色",
+				"align": "对齐",
+				"label": "标签",
+				"labelSize": "标签大小",
+				"labelColor": "标签颜色",
+				"buttonImages": "按钮图像（九宫格）",
+				"editImage": "编辑图像",
+				"hover": "悬停",
+				"click": "点击",
+				"editHoverImage": "编辑悬停图像",
+				"addHoverImage": "添加悬停图像",
+				"editClickImage": "编辑点击图像",
+				"addClickImage": "添加点击图像",
+				"remove": "移除",
+				"add": "添加",
+				"onClick": "点击时",
+				"macroContext": "宏上下文",
+				"contextKey": "上下文键",
+				"applyButtonPreset": "应用按钮预设",
+				"saveAsPreset": "保存为预设",
+				"buttonDefaultName": "按钮",
+				"fill": "填充",
+				"borderColor": "边框颜色",
+				"borderWidth": "边框宽度",
+				"cornerRadius": "圆角半径",
+				"animationIn": "入场动画",
+				"animationOut": "退场动画",
+				"placementIn": "在“{state}”中的摆放位置",
+				"x": "X",
+				"y": "Y",
+				"w": "W",
+				"h": "H",
+				"z": "Z",
+				"stateAnimationIn": "状态入场动画",
+				"stateAnimationOut": "状态退场动画",
+				"placeInState": "摆放到“{state}”中"
+			},
+			"statesPanel": {
+				"renameTitle": "重命名状态",
+				"rename": "重命名",
+				"duplicate": "复制",
+				"setSoleInitial": "设为唯一初始状态",
+				"delete": "删除",
+				"title": "状态",
+				"addState": "添加状态",
+				"initialState": "初始状态"
+			},
+			"canvasFrame": {
+				"addImageHere": "在此添加图像",
+				"addTextHere": "在此添加文本",
+				"addButtonHere": "在此添加按钮",
+				"deleteCount": "删除 {count} 个对象",
+				"duplicate": "复制",
+				"bringToFront": "置于顶层",
+				"sendToBack": "置于底层",
+				"scaleToFit": "缩放至适应舞台",
+				"resetSize": "重置为原始大小",
+				"removeFromState": "从“{state}”中移除",
+				"delete": "删除"
+			},
+			"objectsPanel": {
+				"prefabDefaultName": "预制件",
+				"addImage": "图像",
+				"addText": "文本",
+				"addButton": "按钮",
+				"addPanel": "面板",
+				"addPrefab": "预制件…",
+				"place": "摆放",
+				"removeFromState": "从“{state}”中移除",
+				"placeInState": "摆放到“{state}”中",
+				"duplicate": "复制",
+				"delete": "删除",
+				"renameGroupTitle": "重命名组",
+				"rename": "重命名",
+				"exitGroup": "退出组",
+				"enterGroup": "进入组",
+				"ungroup": "取消分组",
+				"deleteGroup": "删除组",
+				"title": "对象",
+				"groupSelection": "将选中项分组",
+				"savePrefab": "将选中项保存为预制件",
+				"addObject": "添加对象",
+				"groupDblClickHint": "双击以单独编辑成员",
+				"collapseGroup": "折叠组",
+				"groupInStateOn": "在此状态中——点击移除该组",
+				"groupInStateOff": "不在此状态中——点击添加该组",
+				"toggleGroupInState": "切换组在状态中的显示",
+				"empty": "还没有对象——点击 + 添加一个。",
+				"dragToAdd": "拖到画布上以添加到“{state}”",
+				"rowInStateOn": "在此状态中——点击移除",
+				"rowInStateOff": "不在此状态中——点击添加",
+				"toggleInState": "切换在状态中的显示",
+				"placePrefabTitle": "摆放预制件"
+			}
+		},
+		"ui": {
+			"splashUI": {
+				"loading": "加载中"
+			},
+			"triggersPanel": {
+				"introLead": "启动来源",
+				"thisSplash": "此闪屏",
+				"addPlaceholder": "添加触发器…",
+				"removeTrigger": "移除触发器",
+				"noTriggers": "还没有触发器——在上方添加一个。"
+			},
+			"editorSprite": {
+				"resize": "调整大小"
+			},
+			"gmLiveControls": {
+				"defaultName": "闪屏",
+				"hidden": "已隐藏",
+				"live": "运行中",
+				"showAgain": "再次显示闪屏",
+				"minimize": "最小化（仅对我隐藏，保持运行）",
+				"forceClose": "为所有人强制关闭所有闪屏"
+			},
+			"imageField": {
+				"browse": "浏览文件"
+			},
+			"select": {
+				"removeChip": "移除"
+			}
+		},
+		"sheet": {
+			"presetSheet": {
+				"kindNineslice": "九宫格",
+				"kindButton": "按钮",
+				"kindAnimation": "动画",
+				"kindSprite": "精灵",
+				"kindSpriteGroup": "精灵组",
+				"preview": "预览",
+				"rowImage": "图像",
+				"rowInsets": "内边距",
+				"rowLabel": "标签",
+				"rowVariants": "变体",
+				"rowEffect": "效果",
+				"rowDuration": "时长",
+				"rowDelay": "延迟",
+				"rowOrigins": "原点",
+				"originsFixed": "固定（{n}）",
+				"originsRandom": "随机（{n}）",
+				"rowBands": "条纹",
+				"rowIntensity": "强度",
+				"rowInvert": "反转",
+				"yes": "是",
+				"no": "否",
+				"rowMembers": "成员",
+				"rowSprite": "精灵"
+			}
+		},
+		"app": {
+			"splashEditorApplication": {
+				"title": "闪屏编辑器 — {name}"
+			}
+		},
+		"presets": {
+			"presetPicker": {
+				"title": "应用预设",
+				"close": "关闭",
+				"searchPlaceholder": "搜索预设…",
+				"empty": "还没有预设。",
+				"emptyOfKind": "还没有“{kind}”类型的预设。"
+			}
+		},
+		"preview": {
+			"previewHost": {
+				"exitPreview": "退出预览",
+				"escHint": "（Esc）"
+			}
+		},
+		"behavior": {
+			"tumblerLock": {
+				"label": "转轮锁",
+				"codeword": "口令",
+				"unlocked": "已解锁！",
+				"wrongCombination": "组合错误。"
+			}
+		},
+		"launcher": {
+			"sceneLauncher": {
+				"layerScene": "场景",
+				"layerHud": "HUD",
+				"layerFull": "全屏",
+				"fallbackName": "闪屏",
+				"previewJustMe": "预览（仅我）",
+				"openManager": "打开管理器",
+				"tabPinned": "已固定（{count}）",
+				"tabGlobal": "全局（{count}）",
+				"statusHidden": "已隐藏",
+				"statusLive": "运行中",
+				"showAgain": "再次显示闪屏",
+				"minimize": "最小化（仅对我隐藏，保持运行）",
+				"forceCloseAll": "为所有人强制关闭所有闪屏",
+				"triggeredInScene": "在此场景中触发",
+				"kill": "终止",
+				"emptyPinned": "没有固定到此场景的闪屏。",
+				"emptyGlobal": "没有全局闪屏。"
+			}
+		}
+	}
+}

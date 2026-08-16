@@ -1,0 +1,448 @@
+{
+  "DEATH-EFFECTS": {
+    "CONFIG": {
+      "ACTORTYPE": {
+        "DESCRIPTION": "Configure death effect settings for type:",
+        "TITLE": "Actor Type"
+      },
+      "AUTOHIDE": {
+        "HINT": "Automatically hide the token after the death effects finish.",
+        "LABEL": "Auto-Hide"
+      },
+      "AUTOTRANSPARENT": {
+        "HINT": "Automatically set the token's opacity to 0 after the death effects finish.",
+        "LABEL": "Auto-Transparent"
+      },
+      "EDITTIMELINE": {
+        "HINT": "Edit the death effect animation timeline.<br>See the <a href='https://github.com/Unarekin/FoundryVTT-Death-Effects/wiki/Timeline-Editor'>wiki</a> for more information.",
+        "LABEL": "Edit Timeline"
+      },
+      "ENABLE": {
+        "HINT": "Toggle on to automatically run death effects when actor is taken out.",
+        "LABEL": "Enable Death Effects"
+      },
+      "EXPORT": {
+        "BROWSE": "Save To Server",
+        "CLIPBOARD": "Copy To Clipboard",
+        "COPIED": "Configuration copied to clipboard",
+        "DOWNLOAD": "Download JSON",
+        "LABEL": "Export Effects"
+      },
+      "IMPORT": {
+        "BROWSE": "File Browser",
+        "CLIPBOARD": "Paste From Clipboard",
+        "LABEL": "Import Effects",
+        "PASTED": "Configuration read from clipboard",
+        "PRESET": "Import Preset",
+        "UPLOAD": "Upload JSON"
+      },
+      "REMOVEEFFECT": {
+        "MESSAGE": "Are you sure you wish to remove this effect?",
+        "TITLE": "Remove Effect"
+      },
+      "SOURCE": {
+        "ACTOR": "Actor",
+        "GLOBAL": "Global",
+        "HINT": "Select where to store the effect configuration for this token",
+        "LABEL": "Configuration Source",
+        "TOKEN": "Token",
+        "TYPE": "Actor Type ({type})"
+      },
+      "TITLE": "Death Effects",
+      "TOOLTIPS": {
+        "EDITEFFECT": "Edit Effect",
+        "REMOVEEFFECT": "Remove Effect"
+      },
+      "TRIGGERCONDITION": {
+        "ACTIVEEFFECT": {
+          "HINT": "Trigger condition when gaining a particular ActiveEffect",
+          "LABEL": "Active Effect"
+        },
+        "HINT": "The condition whereby to automatically trigger death effects",
+        "LABEL": "Trigger Condition",
+        "RESOURCE": {
+          "COMPARISONOPERATOR": {
+            "EQ": "Equal to",
+            "GT": "Greater than",
+            "GTE": "Greater than or equal to",
+            "HINT": "How should this resource be compared against the given value?",
+            "LABEL": "Comparison Operator",
+            "LT": "Less than",
+            "LTE": "Less than or equal to"
+          },
+          "COMPARISONVALUE": {
+            "HINT": "The value to which to compare the actor's resource<br>This value may either be the path to a value on the actor, or a static number",
+            "LABEL": "Value"
+          },
+          "HINT": "Trigger when a given resource (such as health) is equal to or less than 0",
+          "LABEL": "Actor Resource"
+        },
+        "STATUS": {
+          "HINT": "Trigger the actor's death effects when gaining a given status effect",
+          "LABEL": "Status Effect"
+        }
+      }
+    },
+    "EFFECTS": {
+      "CHANGEIMAGE": {
+        "DESCRIPTION": "Change the placeable's texture",
+        "IMAGE": {
+          "HINT": "The image to which to change this placeable's texture",
+          "LABEL": "Image"
+        },
+        "NAME": "Change Image",
+        "REVERT": {
+          "HINT": "If enabled, will revert back to the original texture once the entire timeline of death effects has finished.",
+          "LABEL": "Revert Afterwards"
+        }
+      },
+      "COMMON": {
+        "ADD": {
+          "TEXT": "Select an effect type below.",
+          "TITLE": "Add Effect"
+        },
+        "ALPHA": {
+          "HINT": "The effect's opacity",
+          "LABEL": "Alpha"
+        },
+        "ANGLE": {
+          "HINT": "The angle at which to display this effect",
+          "LABEL": "Angle"
+        },
+        "DIRECTION": {
+          "DOWN": "Down",
+          "LEFT": "Left",
+          "RIGHT": "Right",
+          "UP": "Up"
+        },
+        "DURATION": {
+          "HINT": "How long this effect should last, in milliseconds",
+          "LABEL": "Duration"
+        },
+        "EASING": {
+          "FUNCTION": "Function",
+          "HINT": "An easing function to use when animating this effect.<br>See: <a href='https://gsap.com/docs/v3/Eases/'>GSAP documentation</a>",
+          "LABEL": "Easing",
+          "PARAMETERS": "Params"
+        },
+        "EASINGPARAMS": {
+          "HINT": "A set of parameters to pass to the easing function.",
+          "LABEL": "Easing Parameters"
+        },
+        "LABEL": {
+          "HINT": "A friendly name by which to list this effect",
+          "LABEL": "Label"
+        },
+        "START": {
+          "HINT": "At which point during this animation should this effect start",
+          "LABEL": "Start"
+        }
+      },
+      "CRUMBLE": {
+        "DESCRIPTION": "Cause the placeable to crumble into individual pixels",
+        "DIRECTION": {
+          "HINT": "The direction the placeable will crumble",
+          "LABEL": "Direction"
+        },
+        "FLOATDISTANCE": {
+          "HINT": "How far pixels will float away before dissolving",
+          "LABEL": "Float Distance"
+        },
+        "NAME": "Crumble"
+      },
+      "DISSOLVE": {
+        "BLOCKSIZE": {
+          "HINT": "The size of blocks to dissolve",
+          "LABEL": "Block Size"
+        },
+        "DESCRIPTION": "Dissolve the placeable",
+        "NAME": "Dissolve"
+      },
+      "DUST": {
+        "DESCRIPTION": "Dissolves the placeable to dust",
+        "DIRECTION": {
+          "HINT": "The direction to animate the placeable collapsing",
+          "LABEL": "Direction",
+          "X": "X",
+          "Y": "Y"
+        },
+        "NAME": "Dust"
+      },
+      "FADE": {
+        "DESCRIPTION": "A simple fade-out effect",
+        "NAME": "Fade"
+      },
+      "FLASH": {
+        "COLOR": {
+          "HINT": "The color to flash the placeable",
+          "LABEL": "Color"
+        },
+        "DESCRIPTION": "Flashes the placeable a given color",
+        "NAME": "Flash",
+        "REPLACE": {
+          "HINT": "If enabled, will fully replace the colors of the placeable with this color",
+          "LABEL": "Replace Color"
+        }
+      },
+      "MACRO": {
+        "DESCRIPTION": "Execute a macro",
+        "GMONLY": {
+          "HINT": "If enabled, then only the GM will execute this macro.  Otherwise, ALL connected users will.",
+          "LABEL": "GM Only"
+        },
+        "MACRO": {
+          "HINT": "The macro to execute",
+          "LABEL": "Macro"
+        },
+        "NAME": "Macro"
+      },
+      "MELT": {
+        "DESCRIPTION": "Melt the placeable",
+        "NAME": "Melt"
+      },
+      "NULL": {
+        "DESCRIPTION": "Does nothing for a period of time.  Useful to delay the ending of the effect sequence by an arbitrary amount.",
+        "NAME": "Null"
+      },
+      "OVERLAYIMAGE": {
+        "DESCRIPTION": "Put an image or video cip overtop the token",
+        "SIZEMODE": {
+          "LABEL": "Sizing Mode",
+          "HINT": "How to size this effect"
+        },
+        "RELATIVESIZE": {
+          "LABEL": "Relative Sizing",
+          "HINT": "If enabled, size or scale will be relative to the size of the placeable"
+        },
+        "SIZE": {
+          "LABEL": "Size",
+          "HINT": "The base width and height of this effect<br>If relative sizing is enabled, these values will be <strong>added</strong> to the base size of the placeable"
+        },
+        "SCALE": {
+          "LABEL": "Scale",
+          "HINT": "Relative size of this effect<br>This value is a normalized percentage with 1 being 100%."
+        },
+        "ANCHOR": {
+          "LABEL": "Anchor",
+          "HINT": "The position on the token where this image will be placed.<br>{0, 0} is the top left corner, {0.5, 0.5} is the center, {1, 1} is the bottom right corner"
+        },
+        "IMAGE": {
+          "HINT": "The image to overlay this placeable",
+          "LABEL": "Image"
+        },
+        "NAME": "Overlay Image"
+      },
+      "ROTATE": {
+        "ANGLE": {
+          "HINT": "Angle in degrees by which to rotate this placeable",
+          "LABEL": "Angle"
+        },
+        "DESCRIPTION": "Rotate the placeable",
+        "NAME": "Rotate"
+      },
+      "SCALE": {
+        "DESCRIPTION": "Scale the placeable",
+        "DIMENSIONS": {
+          "HINT": "Amount to scale on the X and Y axes.  A value of 1 is the original size.",
+          "LABEL": "Amount",
+          "X": "X",
+          "Y": "Y"
+        },
+        "NAME": "Scale"
+      },
+      "SCREENFLASH": {
+        "BACKGROUNDONLY": {
+          "HINT": "When enabled, will only flash the background behind tokens/tiles/etc",
+          "LABEL": "Background Only"
+        },
+        "COLOR": {
+          "HINT": "The color to flash the screen",
+          "LABEL": "Color"
+        },
+        "DESCRIPTION": "Flash the screen a given color",
+        "NAME": "Screen Flash"
+      },
+      "SCREENSHAKE": {
+        "BACKGROUNDONLY": {
+          "HINT": "Only shake the background",
+          "LABEL": "Background Only"
+        },
+        "DESCRIPTION": "Shake the screen",
+        "NAME": "Screen Shake",
+        "STRENGTH": {
+          "HINT": "The strength of shake",
+          "LABEL": "Strength"
+        }
+      },
+      "SHAKE": {
+        "DESCRIPTION": "What it says on the tin. Shake the placeable.",
+        "HORIZONTAL": {
+          "HINT": "Shake the placeable horizontally",
+          "LABEL": "Horizontal"
+        },
+        "NAME": "Shake",
+        "STRENGTH": {
+          "HINT": "How much to shake",
+          "LABEL": "Strength"
+        },
+        "VERTICAL": {
+          "HINT": "Shake the placeable vertically",
+          "LABEL": "Vertical"
+        }
+      },
+      "SLIDE": {
+        "DESCRIPTION": "Slides the placeable's sprite in some direction",
+        "DIRECTION": {
+          "HINT": "The direction to slide the placeable",
+          "LABEL": "Direction"
+        },
+        "DISTANCE": {
+          "HINT": "Distance in pixels to slide the placeable",
+          "LABEL": "Distance"
+        },
+        "NAME": "Slide"
+      },
+      "SOUND": {
+        "DESCRIPTION": "Play a sound",
+        "NAME": "Sound",
+        "POSITION": {
+          "HINT": "If enabled, will cause sound to be played at this placeable's location",
+          "LABEL": "Play at Placeable"
+        },
+        "RADIUS": {
+          "HINT": "The radius at which the sound can be heard when playing at this placeable's locaiton",
+          "LABEL": "Radius"
+        },
+        "SOUND": {
+          "HINT": "The sound file to play",
+          "LABEL": "Sound"
+        },
+        "VOLUME": {
+          "HINT": "The volume at which to play this sound",
+          "LABEL": "Volume"
+        }
+      },
+      "SPRITEANIMATION": {
+        "ANIMATION": {
+          "HINT": "The animation to trigger",
+          "LABEL": "Animation"
+        },
+        "DESCRIPTION": "Trigger an animation with the <a href='https://foundryvtt.com/packages/sprite-animations'>Sprite Animations</a> module",
+        "IMMEDIATE": {
+          "HINT": "If unchecked, will wait until the current animation is finished before triggering this one.",
+          "LABEL": "Play Immediately"
+        },
+        "LOOP": {
+          "HINT": "If enabled, will loop this animation indefinitely.",
+          "LABEL": "Loop"
+        },
+        "NAME": "Sprite Animation"
+      },
+      "STARTPLAYLIST": {
+        "DESCRIPTION": "Start a given playlist",
+        "NAME": "Start Playlist",
+        "PLAYLIST": {
+          "HINT": "The playlist to start",
+          "LABEL": "Playlist"
+        },
+        "SOUND": {
+          "HINT": "(Optional) Sound on the above playlist to play",
+          "LABEL": "Sound"
+        }
+      },
+      "STOPPLAYLIST": {
+        "DESCRIPTION": "Stop the current playlist",
+        "NAME": "Stop Playlist"
+      },
+      "TEXTUREMASK": {
+        "DESCRIPTION": "Apply a mask to the placeable's texture",
+        "MASK": {
+          "HINT": "Image to use as the mask.<br>See: <a href='https://pixijs.download/v7.4.2/docs/PIXI.DisplayObject.html#mask'>PIXI documentation</a>",
+          "LABEL": "Mask"
+        },
+        "NAME": "Texture Mask"
+      },
+      "TINT": {
+        "DESCRIPTION": "A simple efect to tint the placeable",
+        "NAME": "Tint",
+        "REPLACE": {
+          "HINT": "If enabled, will fully replace the colors of the placeable with this color",
+          "LABEL": "Replace Color"
+        },
+        "TINT": {
+          "HINT": "The color to use to tint this placeable.  Use white to return it to its usual colors.",
+          "LABEL": "Tint"
+        }
+      },
+      "TOKENMAGIC": {
+        "DESCRIPTION": "Apply a Token Magic FX preset to this placeable",
+        "NAME": "Token Magic FX",
+        "PARAMS": {
+          "HINT": "The parameters to pass to Token Magic FX",
+          "LABEL": "Parameters"
+        },
+        "PRESET": {
+          "HINT": "Load one of the presets that Token Magic FX provides",
+          "LABEL": "Preset"
+        }
+      }
+    },
+    "HUD": {
+      "PLAY": "Play death effects"
+    },
+    "DOCUMENTPICKER": {
+      "PLACEHOLDER": "Document",
+      "TOOLTIP": "Select document",
+      "CLEARTOOLTIP": "Clear selection"
+    },
+    "PRESETS": {
+      "DESCRIPTION": "Select a preset below",
+      "FINALBOSS": {
+        "DESCRIPTION": "An animation sequence styled after Kefka's from Final Fantasy 6.",
+        "NAME": "Final Boss"
+      },
+      "PURPLEDUST": {
+        "DESCRIPTION": "Turns the placeable purple, then they blow away like dust in the wind.",
+        "NAME": "Purple Dust"
+      },
+      "REDDISSOLVE": {
+        "DESCRIPTION": "Turns the placeable red, then dissolves it.",
+        "NAME": "Red Dissolve"
+      },
+      "TITLE": "Preset"
+    },
+    "SETTINGS": {
+      "INJECTTOKENCONFIG": {
+        "LABEL": "Add tab to token configuration",
+        "HINT": "When enabled, will add a tab to the token configuration application."
+      },
+      "MENUS": {
+        "GLOBAL": {
+          "LABEL": "Global Configuration",
+          "HINT": "Configure global death effect animation"
+        },
+        "ACTORTYPE": {
+          "LABEL": "Actor Type Configuration",
+          "HINT": "Configure death effect configuration by actor type"
+        }
+      }
+    },
+    "TIMELINE": {
+      "ADDEFFECT": {
+        "LABEL": "Add Effect",
+        "TOOLTIP": "Add an effect to the timeline"
+      },
+      "CLEAR": {
+        "LABEL": "Clear",
+        "TOOLTIP": "Clear all effects from timeline",
+        "CONFIRM": "Are you sure you want to clear all effects from this timeline?"
+      },
+      "TITLE": "Timeline Editor"
+    }
+  },
+  "TOKEN": {
+    "TABS": {
+      "deathEffects": "Death Effects"
+    }
+  }
+}

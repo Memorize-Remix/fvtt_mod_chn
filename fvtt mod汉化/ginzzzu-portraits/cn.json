@@ -1,12 +1,16 @@
-{"GINZZZUPORTRAITS": {
+{
+  "I18N.LANGUAGE": "中文",
+  "I18N.MAINTAINERS": "@tposney",
+
+  "GINZZZUPORTRAITS": {
     "showCharacterPortrait": "显示角色",
     "hideCharacterPortrait": "隐藏角色",
-	"playerShowPortrait": "显示我的角色",
+    "playerShowPortrait": "显示我的角色",
     "playerHidePortrait": "隐藏我的角色",
     "tokenHUDShowPortrait": "显示角色",
     "tokenHUDHidePortrait": "隐藏角色",  
-	"configurePortrait": "配置立绘",
-	"resetPortraitEmotion": "重置表情",
+    "configurePortrait": "配置立绘",
+    "resetPortraitEmotion": "重置表情",
     "changePortraitEmotion": "更改表情",
     "toggleCharacterPortrait": "切换角色",
     "showPanelUI": "显示角色面板",
@@ -17,13 +21,14 @@
     "fromScene": "（当前场景）",
     "sortByName": "名称",
     "sortByFolder": "文件夹",
+    "sortByFoundry": "Foundry 文件夹顺序",
     "folder": "文件夹：",
     "allFolders": "（所有文件夹）",
-	"groupPrefix": "（小队）",
+    "groupPrefix": "（小队）",
     "hideAllPortraits": "隐藏所有立绘",
     "noNPCFound": "没有符合当前过滤条件的NPC",
-	"pcFoldersAll": "所有玩家",
-	"pcFoldersNoFolder": "无文件夹玩家",
+    "pcFoldersAll": "所有玩家",
+    "pcFoldersNoFolder": "无文件夹玩家",
 
     "PortraitToolbar": {
       "Joy": "喜悦",
@@ -31,85 +36,106 @@
       "Anger": "愤怒",
       "Fear": "恐惧",
       "Love": "爱",
-      "Hurt": "受伤",
+      "Hurt" : "受伤",
       "Tired": "疲惫",
       "portraitSettings": "立绘设置"
     },
 
     "PortraitConfig": {
-	  "title": "立绘：{name}",
-	  "label": "立绘显示名称",
-	  "note": "此名称将在玩家界面中使用，可与角色的真实姓名不同。留空则使用实际姓名。",
-	  "portraitHeightMultiplier": "立绘高度倍数",
-	  "portraitHeightMultiplierHint": "此立绘的相对高度倍数（0 = 0%，1 = 100%，2 = 200% 等）。默认：1",
-	  "portraitCustomImage": "自定义立绘图像",
-	  "portraitCustomImagePlaceholder": "路径/至/立绘.webp",
-	  "portraitCustomImageButtonHint": "选择立绘图像",
-	  "portraitCustomImageHint": "可选的自定义图像，用于替代角色的默认图像",
-	  "clear": "重置名称",
-	  "save": "保存",
-	  "customEmotionsLabel": "自定义情绪",
-	  "addEmotion": "添加自定义情绪",
-	  "showStandardEmotions": "显示标准情绪",
-	  "emotionEmoji": "表情符号",
-	  "emotionEmojiPlaceholder": "😊",
-	  "emotionName": "名称",
-	  "emotionNamePlaceholder": "名称",
-	  "emotionDisplayName": "角色显示名称",
-	  "emotionDisplayNamePlaceholder": "表情激活时显示的名称",
-	  "emotionImagePath": "图像路径",
-	  "emotionImagePathPlaceholder": "路径/至/图像.webp",
-	  "emotionImageButtonHint": "选择图像",
-	  "emotionAnimation": "动画",
-	  "emotionColor": "颜色校正",
-	  "emotionHeightMultiplier": "高度倍数",
-	  "removeEmotion": "移除",
-	  "moveEmotionUp": "上移",
-	  "moveEmotionDown": "下移",
-	  "collapseEmotion": "折叠",
-	  "expandEmotion": "展开"
+      "title": "立绘：{name}",
+      "label": "立绘显示名称",
+      "note": "此名称将在玩家界面中使用，可与角色的真实姓名不同。留空则使用实际姓名。",
+      "portraitHeightMultiplier": "立绘高度倍数",
+      "portraitHeightMultiplierHint": "此立绘的相对高度倍数（0 = 0%，1 = 100%，2 = 200% 等）。默认：1",
+      "portraitBreathingMultiplier": "呼吸动画速度倍数",
+      "portraitBreathingMultiplierHint": "每个角色的呼吸动画速度倍数。1 = 正常速度，2 = 快一倍，0 = 该立绘无呼吸。",
+      "portraitCustomImage": "自定义立绘图像",
+      "portraitCustomImagePlaceholder": "路径/至/立绘.webp",
+      "portraitCustomImageButtonHint": "选择立绘图像",
+      "portraitCustomImageHint": "可选的自定义图像，用于替代角色的默认图像",
+      "clear": "重置名称",
+      "save": "保存",
+      "customEmotionsLabel": "自定义情绪",
+      "addEmotion": "添加自定义情绪",
+      "showStandardEmotions": "显示标准情绪",
+      "emotionEmoji": "表情符号",
+      "emotionEmojiPlaceholder": "😊",
+      "emotionName": "名称",
+      "emotionNamePlaceholder": "名称",
+      "emotionDisplayName": "角色显示名称",
+      "emotionDisplayNamePlaceholder": "表情激活时显示的名称",
+      "emotionImagePath": "图像路径",
+      "emotionImagePathPlaceholder": "路径/至/图像.webp",
+      "emotionImageButtonHint": "选择图像",
+      "emotionAnimation": "动画",
+      "emotionColor": "颜色校正",
+      "emotionHeightMultiplier": "高度倍数",
+      "removeEmotion": "移除",
+      "moveEmotionUp": "上移",
+      "moveEmotionDown": "下移",
+      "collapseEmotion": "折叠",
+      "expandEmotion": "展开"
+    },
+
+    "Keybindings": {
+      "keepDragPosition": {
+        "name": "立绘拖动：保持手动位置",
+        "hint": "释放被拖动的立绘时按住此键，以保持其手动位置、缩放和倾斜。默认：Shift。"
+      },
+      "transformDrag": {
+        "name": "立绘拖动：缩放与旋转",
+        "hint": "拖动时按住此键，通过垂直移动进行缩放，通过水平移动进行旋转。默认：Alt。"
+      },
+      "portraitActionModifier": {
+        "name": "立绘：操作修饰键",
+        "hint": "左键单击立绘时按住此键可隐藏它，右键单击时按住可打开其角色卡。默认：Ctrl / Cmd。"
+      },
+      "panelOpenSheetModifier": {
+        "name": "面板：打开角色卡修饰键",
+        "hint": "在面板中左键单击角色卡时按住此键，可打开其角色卡，而不是显示或隐藏立绘。默认：Ctrl / Cmd。"
+      }
     },
 
     "Settings": {
       "hidePortraits": {
-			"name": "不显示立绘",
-			"hint": "如果启用，你将不会看到任何角色立绘。"
-	  },
-	  "gmForcePortraitHeight": {
-        "name": "强制设置玩家立绘高度",
-        "hint": "启用后，GM可以为玩家立绘设置特定高度。"
+        "name": "不显示立绘",
+        "hint": "如果启用，你将不会看到任何角色立绘。"
+      },
+      "gmForcePortraitHeight": {
+        "name": "为所有玩家强制统一立绘高度",
+        "hint": "如果启用，所有客户端都将使用下方的世界高度，而不是每个玩家各自的立绘高度。"
       },
       "playerCharactersPanelEnabled": {
-        "name": "启用玩家角色面板",
-        "hint": "启用后，将显示玩家角色面板。"
+        "name": "NPC面板：显示玩家角色面板",
+        "hint": "在 NPC 面板左侧显示小型玩家角色栏。"
       },
       "gmPortraitHeight": {
-        "name": "[世界] 立绘：高度",
-        "hint": "0 - 底部条状显示，1 - 全高度显示"
+        "name": "GM 强制立绘高度",
+        "hint": "仅在启用强制高度选项时使用。0 = 底部条带，1 = 全高。"
       },
       "portraitHeight": {
-        "name": "立绘：高度",
-        "hint": "0 - 底部条状显示，1 - 全高度显示。在GM未强制设置值时使用。"
+        "name": "此客户端上的立绘高度",
+        "hint": "此客户端的个人立绘高度。0 = 底部条带，1 = 全高。当 GM 强制世界高度时将被忽略。"
       },
-	  "portraitBottomOffset": {
-		"name": "底部偏移量（像素）",
-		"hint": "将头像从屏幕底部向上抬升的像素值。头像高度将根据剩余屏幕高度重新计算。"
-	  },
-	  "portraitNameVertical": {
-		"name": "立绘：名称徽章垂直位置",
-		"hint": "名称徽章在立绘上的垂直位置（0 — 顶部，100 — 底部）。"
-	  },
-	  "portraitNameFontSize": {
-		"name": "立绘：名称字体大小",
-		"hint": "立绘上名称徽章的字体大小（以像素为单位）。"
-	  },
-	  "portraitNamesAlwaysVisible": {
-		"name": "立绘：名称可见性",
-		"hint": "控制角色名称在立绘上的显示方式：从不显示、悬停时显示或始终显示。",
-		"option.none": "不显示名称",
-		"option.hover": "悬停时显示",
-		"option.always": "始终显示"
-	  },
+      "portraitBottomOffset": {
+       "name": "底部偏移量（像素）",
+       "hint": "将头像从屏幕底部向上抬升的像素值。头像高度将根据剩余屏幕高度重新计算。"
+      },
+      "portraitNameVertical": {
+        "name": "立绘：名称徽章垂直位置",
+        "hint": "名称徽章在立绘上的垂直位置（0 — 顶部，100 — 底部）。"
+      },
+      "portraitNameFontSize": {
+        "name": "立绘：名称字体大小",
+        "hint": "立绘上名称徽章的字体大小（以像素为单位）。"
+      },
+      "portraitNamesAlwaysVisible": {
+      "name": "立绘：名称可见性",
+      "hint": "控制角色名称在立绘上的显示方式：从不显示、悬停时显示或始终显示。",
+      "option.none": "不显示名称",
+      "option.hover": "悬停时显示",
+      "option.always": "始终显示"
+      },
       "visualNovelMode": {
         "name": "视觉小说模式",
         "hint": "启用后，立绘将自下而上适配屏幕尺寸。"
@@ -131,80 +157,135 @@
         "hint": "0 - 无变化，1 - 最大程度的明显修正"
       },
       "portraitFocusHighlightStrength": {
-        "name": "立绘：焦点亮度 (0..1)",
-        "hint": "0 — 无变化，1 — 最明显的修正"
+      "name": "立绘：焦点亮度 (0..1)",
+      "hint": "0 — 无变化，1 — 最明显的修正"
       },
       "portraitShadowDimStrength": {
-        "name": "立绘：阴影深度 (0..1)",
-        "hint": "0 — 无变化，1 — 最明显的修正"
+      "name": "立绘：阴影深度 (0..1)",
+      "hint": "0 — 无变化，1 — 最明显的修正"
       },
-	  "portraitFlipAccess": {
-		"name": "谁可以翻转头像",
-		"hint": "控制谁可以通过右键点击翻转头像：仅GM或拥有该角色的玩家也可以",
-		"gm": "仅GM",
-		"owners": "GM和拥有者"
-	  },
-	  "emotionPanelVisibility": {
-		"name": "表情面板可见性",
-		"hint": "控制谁可以在悬停头像时看到表情面板",
-		"none": "无人可见",
-		"gm": "仅GM",
-		"all": "GM和拥有者"
-	  },
-	  
-	  "resetEmotionOnHide": {
-		"name": "隐藏头像时重置表情",
-		"hint": "启用后，当角色头像被隐藏时，其表情标记将被清除"
-	  },
-	  "portraitUIToggleVisibility": {
-		"name": "立绘UI切换按钮可见性",
-		"hint": "控制谁可以看到立绘UI切换按钮。",
-		"all": "向所有人显示",
-		"players": "仅向玩家显示",
-		"gm": "仅向GM显示",
-		"none": "对所有人隐藏"
-	  },
+      "portraitBreathingEnabled": {
+        "name": "立绘：呼吸动画",
+        "hint": "为显示的立绘添加几乎察觉不到的静止呼吸运动。"
+      },
+      "portraitBreathingStrength": {
+        "name": "立绘呼吸：强度",
+        "hint": "呼吸运动的明显程度。数值越低越平缓。"
+      },
+      "portraitBreathingDurationMs": {
+        "name": "立绘呼吸：循环持续时间（毫秒）",
+        "hint": "一次呼吸循环持续的时间（以毫秒为单位）。"
+      },
+      "portraitFlipAccess": {
+      "name": "谁可以翻转头像",
+      "hint": "控制谁可以通过右键点击翻转头像：仅GM或拥有该角色的玩家也可以",
+      "gm": "仅GM",
+      "owners": "GM和拥有者"
+    },
+      "portraitDragAccess": {
+        "name": "谁可以拖动立绘",
+        "hint": "控制谁可以通过拖动重新排列立绘。玩家只能拖动自己拥有的立绘。",
+        "all": "GM和拥有者",
+        "gm": "仅GM",
+        "players": "仅拥有者",
+        "none": "无人"
+      },
+      "portraitDragAnimate": {
+        "name": "立绘拖动动画",
+        "hint": "如果启用，其他客户端会看到实时的拖动过程。如果禁用，只有最终的立绘交换会被同步并显示动画。"
+      },
+      "portraitDragResetOnRelease": {
+        "name": "释放时重置位置",
+        "hint": "启用时，立绘会回到自动位置，除非在释放时按住配置的保持位置键。禁用时，立绘保留其手动位置、缩放和倾斜；在释放时按住该键或双击立绘可重置它们。"
+      },
+      "portraitDragMinScale": {
+        "name": "立绘拖动：最小缩放",
+        "hint": "拖动缩放时允许的最小立绘缩放。"
+      },
+      "portraitDragMaxScale": {
+        "name": "立绘拖动：最大缩放",
+        "hint": "拖动缩放时允许的最大立绘缩放。"
+      },
+      "portraitDragMinTiltDeg": {
+        "name": "立绘拖动：向左旋转限制",
+        "hint": "拖动旋转时以度为单位的最小旋转角度。负值表示向左倾斜。"
+      },
+      "portraitDragMaxTiltDeg": {
+        "name": "立绘拖动：向右旋转限制",
+        "hint": "拖动旋转时以度为单位的最大旋转角度。正值表示向右倾斜。"
+      },
+        "emotionPanelVisibility": {
+        "name": "表情面板可见性",
+        "hint": "控制谁可以在悬停头像时看到表情面板",
+        "none": "无人可见",
+        "gm": "仅GM",
+        "all": "GM和拥有者"
+      },
 
-		"playerPortraitToolbarButton": {
-			"name": "玩家头像栏按钮",
-			"hint": "若启用，玩家将在头像界面附近看到一个额外的按钮，用于快速切换自己的头像。"
-		 },
-	  
-	  "emotionPanelScale": {
-		"name": "表情面板缩放",
-		"hint": "调整表情面板的整体大小（图标比例）"
-	  },
-	  
-	  "emotionPanelPosition": {
-		"name": "表情面板位置",
-		"hint": "选择表情面板相对于头像的显示位置",
-		"top": "上方",
-		"left": "左侧",
-		"right": "右侧"
-	  },
-	  "emotionColorIntensity": {
-		"name": "表情颜色强度",
-		"hint": "0 - 表情不改变颜色，1 - 完全改变（默认）"
-	  },
-	  "emotionImageTransitionMs": {
-        "name": "立绘图像过渡速度",
-		"hint": "情绪图像过渡动画的持续时间（以毫秒为单位）。0 表示无动画。"
+      "resetEmotionOnHide": {
+        "name": "隐藏头像时重置表情",
+        "hint": "启用后，当角色头像被隐藏时，其表情标记将被清除"
       },
-	  "displayNameSeparators": {
+      "portraitUIToggleVisibility": {
+        "name": "立绘UI切换按钮可见性",
+        "hint": "控制谁可以看到立绘UI切换按钮。",
+        "all": "向所有人显示",
+        "players": "仅向玩家显示",
+        "gm": "仅向GM显示",
+        "none": "对所有人隐藏"
+      },
+
+      "playerPortraitToolbarButton": {
+        "name": "玩家头像栏按钮",
+        "hint": "若启用，玩家将在头像界面附近看到一个额外的按钮，用于快速切换自己的头像。"
+      },
+
+      "emotionPanelScale": {
+        "name": "表情面板缩放",
+        "hint": "调整表情面板的整体大小（图标比例）"
+      },
+
+      "emotionPanelPosition": {
+        "name": "表情面板位置",
+        "hint": "选择表情面板相对于头像的显示位置",
+        "top": "上方",
+        "left": "左侧",
+        "right": "右侧"
+      },
+      "emotionColorIntensity": {
+        "name": "表情颜色强度",
+        "hint": "0 - 表情不改变颜色，1 - 完全改变（默认）"
+      },
+      "emotionImageTransitionMs": {
+        "name": "立绘图像过渡速度",
+        "hint": "情绪图像过渡动画的持续时间（以毫秒为单位）。0 表示无动画。"
+      },
+      "displayNameSeparators": {
         "name": "名称：公开部分分隔符",
         "hint": "用于为玩家截断NPC名称的字符。用逗号分隔。例如：#,: — 那么\"卡尔#最终首领\"将只向玩家显示\"卡尔\"。"
       },
       "actorImagePaths": {
-        "name": "角色图像路径 (CSV)",
+        "name": "高级：角色图像路径 (CSV)",
         "hint": "以逗号分隔的角色点路径字段列表，按顺序用作图像源。示例：img, prototypeToken.texture.src, system.image"
       },
       "pcActorTypes": {
-        "name": "角色类型：玩家 (CSV)",
+        "name": "高级：玩家角色类型 (CSV)",
         "hint": "以逗号分隔的角色类型列表，被视为'玩家'。示例：character, pc, hero, player"
       },
       "npcActorTypes": {
-        "name": "角色类型：NPC (CSV)",
+        "name": "高级：NPC 角色类型 (CSV)",
         "hint": "以逗号分隔的角色类型列表，被视为NPC。示例：npc, adversary, creature, monster, minion"
+      },
+      "ignoredNpcFolders": {
+        "name": "NPC面板：忽略的角色文件夹",
+        "hint": "选择要在 NPC 面板中隐藏其 NPC 的角色文件夹。选择父文件夹也会忽略其子文件夹。",
+        "open": "选择文件夹",
+        "title": "忽略的 NPC 文件夹",
+        "description": "所选角色文件夹中的 NPC 将不会出现在 NPC 面板、收藏列、来源文件夹列表或活动立绘迷你停靠栏中。",
+        "selectAll": "全选",
+        "clearAll": "全部清除",
+        "noFolders": "未找到角色文件夹。",
+        "save": "保存"
       },
       "portraitFadeMs": {
         "name": "立绘：淡入持续时间 (毫秒)",
@@ -218,70 +299,108 @@
         "name": "立绘：缓动类型",
         "hint": "CSS timing-function：例如 'ease', 'ease-out', 'ease-in-out' 或 cubic-bezier(0.22,1,0.36,1)。"
       },
-	  "portraitBlurEnabled": {
-		"name": "立绘：启用背景模糊",
-		"hint": "如果启用，显示立绘时背景将变得模糊。"
-	  },
-	  "portraitBlurStrength": {
-		"name": "立绘：模糊强度（像素）",
-		"hint": "应用于背景的模糊效果强度（1-30 像素）。"
-	  },
-	  "portraitBlurSpeed": {
-		"name": "立绘：模糊动画速度（毫秒）",
-		"hint": "模糊淡入动画的持续时间（毫秒）。"
-	  },
-	  "portraitFocusBlurEnabled": {
-		"name": "立绘：启用聚焦模糊",
-		"hint": "如果启用，当某个立绘获得焦点时，变暗的立绘将变得模糊。"
-	  },
-	  "portraitFocusBlurStrength": {
-		"name": "立绘：聚焦模糊强度（像素）",
-		"hint": "当焦点激活时，应用于变暗立绘的模糊效果强度（1-30 像素）。"
-	  },
-	  "portraitFocusPortraitBlurEnabled": {
-		"name": "立绘：启用未聚焦立绘模糊",
-		"hint": "如果启用，未获得焦点的立绘将变得模糊。"
-	  },
-	  "portraitFocusPortraitBlurStrength": {
-		"name": "立绘：未聚焦模糊强度（像素）",
-		"hint": "应用于未聚焦立绘的模糊效果强度（1-30 像素）。"
-	  },
-      "npcDockFolder": {
-        "name": "NPC面板：默认文件夹过滤",
-        "hint": "示例：'all'。可在操作期间被面板覆盖。"
+      "portraitBlurEnabled": {
+        "name": "立绘：启用背景模糊",
+        "hint": "如果启用，显示立绘时背景将变得模糊。"
       },
-	  "showGroupActorsInSources": {
+      "portraitBlurStrength": {
+        "name": "立绘：模糊强度（像素）",
+        "hint": "应用于背景的模糊效果强度（1-30 像素）。"
+      },
+      "portraitBlurSpeed": {
+        "name": "立绘：模糊动画速度（毫秒）",
+        "hint": "模糊淡入动画的持续时间（毫秒）。"
+      },
+      "portraitFocusBlurEnabled": {
+        "name": "立绘：启用聚焦模糊",
+        "hint": "如果启用，当某个立绘获得焦点时，变暗的立绘将变得模糊。"
+      },
+      "portraitFocusBlurStrength": {
+        "name": "立绘：聚焦模糊强度（像素）",
+        "hint": "当焦点激活时，应用于变暗立绘的模糊效果强度（1-30 像素）。"
+      },
+      "portraitFocusPortraitBlurEnabled": {
+        "name": "立绘：启用未聚焦立绘模糊",
+        "hint": "如果启用，未获得焦点的立绘将变得模糊。"
+      },
+      "portraitFocusPortraitBlurStrength": {
+        "name": "立绘：未聚焦模糊强度（像素）",
+        "hint": "应用于未聚焦立绘的模糊效果强度（1-30 像素）。"
+      },
+      "npcDockFolder": {
+        "name": "NPC面板：记住的来源筛选",
+        "hint": "存储在停靠栏本身中选择的来源，例如所有文件夹、当前场景或文件夹 ID。正常游戏时，请从停靠栏下拉菜单中更改。"
+      },
+      "showGroupActorsInSources": {
         "name": "在源列表中显示小队角色",
-		"hint": "如果启用，代表小队的角色将包含在NPC面板的“来源”下拉列表中。"
+        "hint": "如果启用，代表小队的角色将包含在NPC面板的“来源”下拉列表中。"
       },
       "npcDockSearch": {
-        "name": "NPC面板：默认搜索字符串",
-        "hint": "示例：'Goblin' 或 'Merchant'。"
+        "name": "NPC面板：记住的搜索",
+        "hint": "存储停靠栏中的搜索文本。正常游戏时，请从停靠栏搜索字段中更改。"
       },
       "npcDockSort": {
-        "name": "NPC面板：默认排序",
-        "hint": "示例：'name-asc' 或 'name-desc'。"
+        "name": "NPC面板：排序",
+        "hint": "控制停靠栏中 NPC 卡片的排列方式。Foundry 文件夹顺序遵循为每个角色文件夹配置的手动或字母排序。"
       },
-	  "npcDockWidth": {
-		"name": "NPC面板：面板宽度",
-		"hint": "NPC面板的宽度，以视口宽度单位表示（例如：40 = 40vw）。"
-	  },
-	  "npcDockRows": {
-			"name": "NPC面板：NPC 行数",
-			"hint": "在面板中显示的 NPC 行数。增加此值也会增加面板高度。"
-		},
-		"performanceMode": {
-			"name": "性能模式",
-			"hint": "在此客户端上禁用背景和面板模糊效果，以提升性能。"
-		},
+      "npcDockWidth": {
+        "name": "NPC面板：面板宽度",
+        "hint": "NPC面板的宽度，以视口宽度单位表示（例如：40 = 40vw）。"
+      },
+      "npcDockRows": {
+        "name": "NPC面板：NPC 行数",
+        "hint": "在面板中显示的 NPC 行数。增加此值也会增加面板高度。"
+      },
+      "performanceMode": {
+        "name": "性能模式",
+        "hint": "在此客户端上禁用背景和面板模糊效果，以提升性能。"
+      },
+      "updateDockPreviews": {
+        "name": "NPC面板：更新立绘预览",
+        "hint": "让停靠栏美术和显示名称与玩家看到立绘时的内容完全一致，包括自定义立绘美术和图像表情。只有受影响的卡片会被更新。"
+      },
       "pcDockFolder": {
-		"name": "玩家面板：文件夹筛选",
-		"hint": "控制NPC面板中玩家角色面板使用哪个角色文件夹。“所有玩家”显示所有文件夹中的角色；“无文件夹玩家”仅显示不在任何文件夹中的角色"
-	  },
-	  "showActivePortraits": {
-		"name": "显示在线头像面板",
-		"hint": "启用后，将在NPC面板上方显示一个包含在线头像圆圈的迷你面板"
-	  }
+        "name": "NPC面板：玩家面板文件夹",
+        "hint": "控制NPC面板中玩家角色面板使用哪个角色文件夹。“所有玩家”显示所有文件夹中的角色；“无文件夹玩家”仅显示不在任何文件夹中的角色"
+      },
+      "showActivePortraits": {
+        "name": "NPC面板：显示活动立绘迷你停靠栏",
+        "hint": "在 NPC 面板上方显示一排小型活动立绘圆圈。"
+      }
+    },
+    "SettingsGroups": {
+      "quick": {
+        "title": "快速客户端选项",
+        "hint": "仅影响此客户端如何显示本模组的个人开关。"
+      },
+      "performance": {
+        "title": "性能",
+        "hint": "控制此客户端上的可选视觉效果和高效的实时预览更新。"
+      },
+      "npcDock": {
+        "title": "NPC面板和玩家面板",
+        "hint": "控制停靠栏布局、其记住的筛选器，以及显示或忽略哪些角色文件夹。"
+      },
+      "portraitLayout": {
+        "title": "立绘布局和大小",
+        "hint": "控制立绘如何在屏幕上适配、名称徽章出现的位置，以及 GM 是否覆盖玩家的尺寸设置。"
+      },
+      "portraitVisuals": {
+        "title": "立绘视觉与动画",
+        "hint": "亮度、焦点、模糊、移动和过渡时间。"
+      },
+      "access": {
+        "title": "访问与控制",
+        "hint": "谁可以使用立绘控件以及哪些 UI 按钮可见。"
+      },
+      "emotions": {
+        "title": "表情",
+        "hint": "控制表情面板、表情颜色强度和立绘图像过渡。"
+      },
+      "advanced": {
+        "title": "高级系统兼容性",
+        "hint": "仅当你的游戏系统以不同方式存储角色或图像时才更改这些设置。"
+      }
     },
     "PortraitUIToggle": {
       "togglePortraitUI": "切换立绘",

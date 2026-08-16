@@ -1,0 +1,40 @@
+﻿{
+    "TYPES": {
+        "RegionBehavior": {
+            "ionrift-waterline": {
+                "waterFX": "Ionrift: Water FX"
+            }
+        }
+    },
+
+    "IonriftWaterline.SettingsEnableTokenWake": "Token water wake (ripples)",
+    "IonriftWaterline.SettingsEnableTokenWakeHint": "When enabled, tokens moving through Ionrift water regions emit expanding ring ripples on your client.",
+
+    "IonriftWaterline.SettingsRippleTuning": "Ripple Tuning",
+    "IonriftWaterline.SettingsRippleTuningLabel": "Open Ripple Tuning",
+    "IonriftWaterline.SettingsRippleTuningHint": "Fine-tune ripple lifetime, radius, variance, and shader parameters. Client-local; safe to adjust mid-session.",
+
+    "IonriftWaterline.SettingsDebug": "Debug Logging",
+    "IonriftWaterline.SettingsDebugHint": "Enable verbose console logging for water and ripple state. Useful for troubleshooting; can be chatty in combat.",
+
+    "IonriftWaterline.WakeTuningTitle": "Token Ripple Tuning",
+    "IonriftWaterline.WakeTuningHint": "Client-only ripple tuning. Shader / Sprites / Both = how you preview the effect.",
+    "IonriftWaterline.WakeTuningPreview": "Preview mode",
+    "IonriftWaterline.WakeTuningVisualMode": "Visual output",
+
+    "IonriftWaterline.WakeTuningRippleTiming": "Ripple -- shape and feel",
+    "IonriftWaterline.WakeTuningRippleVariance": "Ripple -- randomness",
+    "IonriftWaterline.WakeTuningRippleSpawnTrail": "Ripple -- spawn and trail",
+    "IonriftWaterline.WakeTuningShader": "Shader refraction",
+    "IonriftWaterline.WakeTuningSprites": "Sprite rings",
+    "IonriftWaterline.WakeTuningSpriteColor": "Ring color",
+
+    "IonriftWaterline.WakeTuningPresetSave": "Save current settings as a new preset",
+    "IonriftWaterline.WakeTuningPresetDelete": "Delete selected preset",
+    "IonriftWaterline.WakeTuningPresetNamePlaceholder": "Preset name…",
+    "IonriftWaterline.WakeTuningPresetConfirm": "Confirm save",
+    "IonriftWaterline.WakeTuningPresetCancel": "Cancel",
+
+    "IonriftWaterline.WakeTuningReset": "Reset defaults",
+    "IonriftWaterline.WakeTuningClose": "Close"
+}

@@ -1,0 +1,129 @@
+{
+  "SCConditionalAE": {
+    "Sheets": {
+      "ActiveEffect": "SC Conditional Active Effect"
+    },
+    "ConditionTab": {
+      "Label": "Condition",
+      "Heading": "Active Effect condition",
+      "Hint": "Use JavaScript. This Active Effect is applied only when the script returns true.",
+      "CompatibilityHint": "This condition came from DAE. SC Conditional AE is adapting it automatically.",
+      "Variables": "Available variables: effect, actor, targetActor, item, origin, originActor, user, rollData, source, getProperty, hasProperty, deepClone, game.",
+      "Placeholder": "Example: return actor?.system?.attributes?.hp?.value > 0;",
+      "Evaluation": {
+        "Heading": "Current evaluation",
+        "Empty": "No condition configured. The effect is available.",
+        "True": "The condition currently resolves to true. The effect is available.",
+        "False": "The condition currently resolves to false. The effect is unavailable.",
+        "Error": "The condition threw an error while being evaluated.",
+        "Result": "Returned value",
+        "Context": "Evaluated against",
+        "EffectState": "Effect state"
+      },
+      "Wiki": "Open wiki",
+      "Invalid": "This condition has invalid code.",
+      "BadgeLabel": "Condition badge label",
+      "BadgeLabelHint": "Optional custom label for the condition status badge. Leave blank to use the default label.",
+      "BadgeLabelPlaceholder": "e.g. Condition not met",
+      "SuppressedBadge": "Suppressed",
+      "SuppressedTooltip": "Condition not met. This effect is enabled, but its changes are currently suppressed.",
+      "SuppressedErrorBadge": "Condition error",
+      "SuppressedErrorTooltip": "Condition evaluation failed. This effect's changes are suppressed to prevent an unsafe application.",
+      "DisabledBadge": "Condition not met",
+      "DisabledManagedTooltip": "Condition not met. This effect was disabled by its condition and will re-enable automatically once the condition is met.",
+      "DisabledTooltip": "Condition not met. This effect is disabled; even if enabled, its changes would stay suppressed until the condition is met.",
+      "ConditionBehavior": "When the condition is not met",
+      "ConditionBehaviorSuppress": "Suppress changes (default)",
+      "ConditionBehaviorDisable": "Disable Active Effect",
+      "ConditionBehaviorHint": "Choose whether to keep the Active Effect enabled while suppressing its changes, or synchronize its disabled state with the condition.",
+      "ApplyBehavior": "When applied to a target",
+      "ApplyBehaviorUpdate": "Default",
+      "ApplyBehaviorDuplicate": "Stack",
+      "ApplyBehaviorDae": "Same as DAE",
+      "ApplyBehaviorUpdateHint": "Reapplies the current Active Effect on the target instead of creating a new one.",
+      "ApplyBehaviorDuplicateHint": "Adds a new Active Effect instead of updating the existing one.",
+      "ApplyBehaviorDaeHint": "Uses DAE's Stackable setting to decide whether the effect stacks."
+    },
+    "MacroChange": {
+      "Name": "Macro to Execute",
+      "Description": "Execute a world macro when this Active Effect is applied or removed. Value format: macro name or UUID, followed by optional arguments.",
+      "MacroNotFound": "Macro not found: {macro}"
+    },
+    "FormulaChange": {
+      "DialogTitle": "Roll Active Effect Formula",
+      "DialogHint": "Confirm or edit the formula to roll for this Active Effect.",
+      "RollButton": "Roll",
+      "ChatCardButton": "Roll all formulas",
+      "ChatCardTitle": "Formula roll available",
+      "ChatCardHint": "This effect's formulas are ready to roll.",
+      "ChatCardIntroActivation": "{effect} has just been activated.",
+      "ChatCardIntroCondition": "The condition for {effect} has been met.",
+      "ChatCardPrompt": "Do you want to roll now?",
+      "ChatCardReasonActivation": "{effect} is active, and its formulas can be rolled now.",
+      "ChatCardReasonCondition": "{effect} is ready, and its formulas can be rolled now.",
+      "ChatCardAttributeKeyLabel": "Attribute Key",
+      "ChatCardCurrentValueLabel": "Current Value",
+      "ChatCardFormulaLabel": "Formula",
+      "ChatCardUnnamedKey": "Change",
+      "RollAllLabel": "Roll all formulas",
+      "RollAllUnavailableLabel": "Formulas unavailable right now",
+      "RollFlavor": "Active Effect formula roll",
+      "InvalidFormula": "Invalid Active Effect formula.",
+      "Column": "Formula",
+      "ColumnHint": "Formula rolled when this Active Effect is activated.",
+      "Placeholder": "Optional formula"
+    },
+    "Settings": {
+      "EnableFormulaChanges": {
+        "Name": "Enable formula column",
+        "Hint": "Adds the Formula column to Active Effect changes and rolls formulas when effects are activated."
+      },
+      "UseFormulaChatCard": {
+        "Name": "Post formula roll chat card",
+        "Hint": "Whenever a conditional effect becomes available, or when a formula-backed Active Effect is activated, post a chat card so the roll can be triggered from chat instead of immediately."
+      },
+      "ShowConditionTab": {
+        "Name": "Show condition tab",
+        "Hint": "Adds the Condition tab to Active Effect configuration sheets.",
+        "DaeNotice": "If you use Dynamic Active Effects (DAE) with the condition tab enabled, a libWrapper conflict warning may appear in the browser console. This is expected — the module intentionally blocks effect application when a condition is not met, which also skips DAE's wrapper for those effects. You can safely ignore this warning."
+      },
+      "DebugLogging": {
+        "Name": "Enable debug logging",
+        "Hint": "Logs condition evaluation, suppression refreshes, and activation transitions to the browser console."
+      },
+      "SupportMenu": {
+        "Name": "Support the developer",
+        "Label": "Patreon support",
+        "Hint": "Support Shattered Codex development on Patreon."
+      },
+      "DocumentationMenu": {
+        "Name": "Documentation",
+        "Label": "Open wiki",
+        "Hint": "Open the SC - Conditional AE documentation wiki."
+      },
+      "ModuleSettingsMenu": {
+        "Name": "Module settings",
+        "Label": "Open settings",
+        "Hint": "Open the SC - Conditional AE configuration window."
+      },
+      "App": {
+        "Title": "SC - Conditional AE Settings",
+        "Intro": "Configure conditional Active Effect behavior, formula support, and module diagnostics.",
+        "WorldSection": {
+          "Title": "Effect behavior",
+          "Description": "World-level settings that control condition tabs, formula changes, and chat-card behavior.",
+          "PermissionNote": "Only a GM can change the settings in this section."
+        },
+        "ClientSection": {
+          "Title": "Diagnostics",
+          "Description": "Client-side settings for troubleshooting and local browser logging."
+        },
+        "DaeWarningTitle": "DAE compatibility warning",
+        "DaeWarning": "This libWrapper message is only a warning. When DAE is active, both modules touch the same Active Effect pipeline, so the browser console may report a potential conflict even when behavior is working normally.",
+        "Save": "Save",
+        "Cancel": "Cancel",
+        "Saved": "SC - Conditional AE settings saved."
+      }
+    }
+  }
+}

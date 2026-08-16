@@ -1,4 +1,5 @@
-{"PQT.Title": "任务追踪",
+{
+  "PQT.Title": "任务追踪",
   "PQT.AppName": "任务日志",
   
   "PQT.Status.Active": "进行中",
@@ -10,6 +11,7 @@
   "PQT.Category.Main": "主线任务",
   "PQT.Category.Side": "支线任务",
   "PQT.Category.Personal": "个人任务",
+  "PQT.Category.Misc": "杂项",
 
   "PQT.Field.Title": "任务标题",
   "PQT.Field.Description": "描述",
@@ -19,11 +21,14 @@
   "PQT.Field.StartDate": "开始日期",
   "PQT.Field.SyncCalendar": "与日历同步",
   "PQT.Field.Visibility": "可见性",
+  "PQT.Field.VisibleTo": "对谁可见",
   "PQT.Visibility.Always": "始终可见",
   "PQT.Visibility.GM": "仅GM可见",
   "PQT.Visibility.Date": "开始日期时可见",
+  "PQT.Visibility.Selected": "所选玩家/角色",
   "PQT.Action.PickDate": "从日历选择日期",
 
+  "PQT.Field.Access": "访问权限",
   "PQT.Access.Observer": "GM",
   "PQT.Access.Owner": "所有人",
   "PQT.Field.AccessLabel": "可编辑者",
@@ -37,7 +42,6 @@
   "PQT.Field.PlayerNotes": "玩家笔记",
   "PQT.Field.GMNotes": "GM笔记",
 
-    
   "PQT.Action.Create": "新建任务",
   "PQT.Action.Edit": "编辑",
   "PQT.Action.Delete": "删除",
@@ -48,19 +52,36 @@
   "PQT.Action.ShowToPlayers": "向玩家展示",
   "PQT.Action.HideFromPlayers": "对玩家隐藏",
   "PQT.Action.DragRewardToSheet": "将奖励拖拽到角色卡",
+  "PQT.Action.ExportMarkdown": "导出为 Markdown",
   
+  "PQT.Dialog.DeleteQuest": "删除任务",
+
   "PQT.Label.NoQuests": "未找到任务。",
-  "PQT.Label.DragActor": "拖拽角色至此",
+  "PQT.Label.DragActor": "将角色或日志条目拖拽至此",
+  "PQT.Label.DragGiverHint": "将角色或日志条目拖拽至此",
   "PQT.Label.DragItem": "拖拽物品至此",
   "PQT.Label.NoObjectivesVisible": "没有可见的目标。",
+  "PQT.Label.NoSelectables": "未选择任何玩家或角色。",
+  "PQT.Label.User": "玩家",
+  "PQT.Label.Actor": "角色",
   
   "PQT.Message.QuestCreated": "新任务已创建：{title}",
+  "PQT.Message.QuestRequested": "已请求创建任务。正在等待 GM...",
   "PQT.Message.QuestCompleted": "任务已完成：{title}",
+  "PQT.Message.QuestNowActive": "任务「{title}」现已进行中！",
   "PQT.Message.ConfirmDelete": "确定要删除此任务吗？",
+  "PQT.Message.DeleteQuestConfirm": "你确定要删除此任务吗？",
+  "PQT.Message.OnlyDeleteOwnQuests": "你只能删除自己的任务。",
+  "PQT.Message.CalendarNotActive": "Phils Day Night Cycle 未激活。",
   "PQT.Message.SavingToGM": "正在将更改保存至GM...",
+  "PQT.Message.NoGMConnected": "无法创建任务：当前没有 GM 连接。",
+  "PQT.Message.QuestNotFound": "PQT：未找到任务 {id}。",
+  "PQT.Message.QuestMigrated": "Phils Quest Tracker：已将 {count} 个任务迁移到新存储。旧日志条目已移除。",
+  "PQT.Calendar.StartPrefix": "开始：",
   "PQT.Label.NoRewardsVisible": "无可见奖励。",
 
   "PQT.Settings.Title": "任务追踪设置",
+  "PQT.Settings.Open": "打开设置",
   "PQT.Settings.Description": "管理你的任务数据。",
   "PQT.Settings.ExportLabel": "导出任务",
   "PQT.Settings.ExportButton": "导出数据",
@@ -69,7 +90,16 @@
   "PQT.Settings.ImportButton": "导入数据",
   "PQT.Settings.ImportHint": "上传先前导出的JSON文件。导入的任务将作为新任务添加。",
   "PQT.Settings.ExportSuccess": "任务导出成功。",
+  "PQT.Settings.ExportError": "导出失败。请检查控制台获取详细信息。",
   "PQT.Settings.ImportSuccess": "任务导入成功。",
+  "PQT.Settings.ImportError": "导入失败。请检查控制台获取详细信息。",
+  "PQT.Settings.InvalidFormat": "数据格式无效。",
+  "PQT.Settings.ImportedCount": "已导入 {count} 个任务。",
+  "PQT.Settings.SaveSuccess": "设置已保存。",
+  "PQT.Settings.AllowRewardDrag": "允许玩家拖拽奖励",
+  "PQT.Settings.AllowRewardDragHint": "启用后，玩家可以将物品奖励从任务卡直接拖拽到自己的角色卡中。禁用以防止玩家意外提前获得奖励物品。",
+  "PQT.Settings.ObjectivesAboveDescription": "在描述上方显示目标",
+  "PQT.Settings.ObjectivesAboveDescriptionHint": "启用后，概览选项卡中的目标区域会显示在描述上方 — 当任务描述较长或包含图片时很有用。",
   
   "PQT.Keybinding.Toggle.Name": "切换任务日志",
   "PQT.Keybinding.Toggle.Hint": "打开或关闭任务日志窗口。"

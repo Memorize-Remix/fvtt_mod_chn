@@ -1,0 +1,124 @@
+{
+  "indy-regions": {
+    "Controls": {
+      "PaintRegion": "绘制区域",
+      "MergeRegions": "合并区域",
+      "SplitRegions": "拆分区域"
+    },
+    "Settings": {
+      "DebugTimings": {
+        "Name": "调试区域绘制计时",
+        "Hint": "记录区域绘制蒙版重建、预览和提交的计时详情。"
+      },
+      "ShowPaintHelp": {
+        "Name": "显示区域绘制帮助",
+        "Hint": "在区域绘制对话框中显示简短的鼠标/键盘帮助文本。"
+      },
+      "PaintGridStepDebounce": {
+        "Name": "绘制网格步长防抖",
+        "Hint": "更改网格步长后，重建蒙版分辨率之前的延迟（毫秒）。"
+      },
+      "PaintRangeDebounce": {
+        "Name": "绘制滑块防抖",
+        "Hint": "拖动绘制对话框滑块时，重新计算区域边界之前的延迟（毫秒）。"
+      },
+      "PaintInputDebounce": {
+        "Name": "绘制输入防抖",
+        "Hint": "更改数字、复选框或选择器后，重新计算区域边界之前的延迟（毫秒）。"
+      },
+      "PaintTinyIslandArea": {
+        "Name": "绘制微小岛屿面积",
+        "Hint": "「移除岛屿」按钮移除的最大岛屿面积（以图像像素计）。"
+      },
+      "PaintTinyHoleArea": {
+        "Name": "绘制微小孔洞面积",
+        "Hint": "「移除孔洞」按钮填充的最大孔洞面积（以图像像素计）。"
+      }
+    },
+    "Dialog": {
+      "Title": {
+        "PaintRegion": "绘制区域"
+      },
+      "Help": {
+        "Title": "帮助",
+        "ShiftDrag": "按住 Shift 拖动可擦除已绘制的单元格。",
+        "CtrlClick": "按住 Ctrl 点击可从点击的颜色进行 HSL 填充。",
+        "CtrlShiftClick": "按住 Ctrl+Shift 点击可从点击的颜色进行 HSL 擦除。",
+        "AltClick": "按住 Alt 点击可填充点击的源区域形状。",
+        "ShiftAltClick": "按住 Shift+Alt 点击可擦除点击的源区域形状。",
+        "CtrlWheel": "按住 Ctrl 滚动滚轮可更改画笔大小。"
+      },
+      "Label": {
+        "Status": "状态",
+        "History": "历史",
+        "PenColour": "画笔颜色",
+        "PaintOpacity": "绘制不透明度",
+        "BrushSize": "画笔大小",
+        "FillTolerance": "填充容差",
+        "HslFillBias": "HSL 填充偏置",
+        "Hue": "色相",
+        "Lightness": "明度",
+        "FillBridge": "填充桥接",
+        "FillHoles": "填充孔洞",
+        "GridStep": "网格步长",
+        "ShrinkGrow": "收缩 / 扩张",
+        "BorderSmooth": "边界平滑",
+        "BorderSmoothType": "边界平滑类型",
+        "BorderThickness": "边界粗细",
+        "Cleanup": "清理",
+        "DialogScale": "UI 缩放"
+      },
+      "Hint": {
+        "PaintOpacity": "0 为透明，1 为不透明。",
+        "BrushSize": "画笔直径（像素）。按住 Ctrl 滚动滚轮也可更改。",
+        "FillTolerance": "数值越低越严格，越高则填充更多相近颜色。",
+        "HslFillBias": "-1 偏向明度，0 为平衡，1 偏向色相。",
+        "FillBridge": "0 为严格；数值越高越能跨越细小间隙。",
+        "FillHoles": "计算最终区域边界时填充内部孔洞。",
+        "GridStep": "1 最精确；数值越高越快但越粗糙。",
+        "ShrinkGrow": "负数收缩、正数扩张最终边界。",
+        "BorderSmooth": "0 保留细节；数值越高越能简化锯齿边缘。",
+        "BorderSmoothType": "选择蒙版处理后描边边界的平滑方式。",
+        "BorderThickness": "0 隐藏实时边界；数值越大越清晰可见。",
+        "DialogScale": "调整绘制对话框控件的大小。"
+      },
+      "BorderSmoothType": {
+        "Catmull": "Catmull-Rom",
+        "Rounded": "圆角",
+        "Relaxed": "松弛"
+      },
+      "Status": {
+        "Paint": "在画布上绘制以添加到区域。按住 Shift 左键可减去。"
+      },
+      "Button": {
+        "Undo": "撤销",
+        "Redo": "重做",
+        "CreateRegion": "创建区域",
+        "UpdateRegion": "更新区域",
+        "Cancel": "取消",
+        "RemoveTinyIslands": "移除岛屿",
+        "RemoveTinyHoles": "移除孔洞"
+      }
+    },
+    "Notifications": {
+      "GmOnlyPaint": "只有 GM 可以绘制区域。",
+      "GmOnlyPainting": "Indy Regions | 区域绘制仅限 GM。",
+      "CanvasNotReady": "Indy Regions | 画布尚未就绪。",
+      "SceneNotReadyForPainting": "Indy Regions | 画布场景尚未准备好进行区域绘制。",
+      "PaintAreaFirst": "Indy Regions | 请先绘制一个区域。",
+      "NoSourceShape": "Indy Regions | 光标下没有源区域形状。",
+      "PaintingSelectedRegion": "Indy Regions | 正在绘制选中的区域。左键添加，Shift+左键减去。",
+      "PaintRegion": "Indy Regions | 绘制区域。左键添加，Shift+左键减去。",
+      "NoTinyIslands": "Indy Regions | 未找到微小岛屿。",
+      "NoTinyHoles": "Indy Regions | 未找到微小孔洞。",
+      "SplitCreated": "Indy Regions | 已拆分为区域：",
+      "SelectMultipleRegionsToMerge": "Indy Regions | 请至少选择两个要合并的区域。",
+      "NoRegionShapesToMerge": "Indy Regions | 选中的区域没有可合并的形状。",
+      "MergedRegions": "Indy Regions | 已合并区域：",
+      "MergeRegionsFailed": "Indy Regions | 合并选中的区域失败。",
+      "SelectRegionsToSplit": "Indy Regions | 请至少选择一个要拆分的区域。",
+      "NoRegionsToSplit": "Indy Regions | 选中的区域不包含多个实体形状。",
+      "SplitRegionsFailed": "Indy Regions | 拆分选中的区域失败。"
+    }
+  }
+}

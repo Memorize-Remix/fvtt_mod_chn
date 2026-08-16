@@ -1,4 +1,5 @@
-{"regionba" : {
+{
+	"regionba" : {
 		"Titles" : {
 			"regionba" : "区域行为调整",
 			
@@ -34,6 +35,8 @@
 					"default" : "默认（FVTT行为）",
 					"upElevation" : "下一个更高高度",
 					"downElevation" : "下一个更低高度",
+					"upElevationInRegion" : "区域内下一个更高高度",
+					"downElevationInRegion" : "区域内下一个更低高度",
 					"neighbourElevation" : "相邻高度",
 					"levelChoice" : "自定义层级选择"
 				}
@@ -64,16 +67,16 @@
 				"hint" : "是否只有设置为玩家角色的Token才能触发此行为"
 			},
 			
-			"additionalRecipients": {
-				"name": "额外目标",
-				"hint": "其他Token，其物品将被更改"
+			"additionalRecipients" : {
+				"name" : "额外目标",
+				"hint" : "其他Token，其物品将被更改"
 			},
-
-			"ignoreTriggeringToken": {
-				"name": "忽略触发Token",
-				"hint": "从目标列表中移除触发Token"
+			
+			"ignoreTriggeringToken" : {
+				"name" : "忽略触发Token",
+				"hint" : "从目标列表中移除触发Token"
 			},
-					
+			
 			"addTokensonRegion" : {
 				"name" : "区域上的Token",
 				"hint" : "是否添加当前站在此区域上的Token"
@@ -134,8 +137,8 @@
 				"options" : {
 					"ItemsinToken" : "Token中的物品",
 					"DoorState" : "门状态",
-					"TokeninRegions": "区域内的Token",
-					"TokennotinRegions": "区域外的Token",
+					"TokeninRegions" : "区域内的Token",
+					"TokennotinRegions" : "区域外的Token",
 					"Macros" : "宏",
 					"Script" : "脚本"
 				}
@@ -187,17 +190,17 @@
 					"unlockedclosed" : "解锁关闭"
 				}
 			},
-
-			"conditionalTokeninRegions": {
-			  "name": "Token位于区域内",
-			  "hint": "检查触发事件发生时，触发Token是否位于这些区域内"
+			
+			"conditionalTokeninRegions" : {
+				"name" : "Token位于区域内",
+				"hint" : "检查触发事件发生时，触发Token是否位于这些区域内"
 			},
-
-			"conditionalTokennotinRegions": {
-			  "name": "Token位于区域外",
-			  "hint": "检查触发事件发生时，触发Token是否位于这些区域外"
+			
+			"conditionalTokennotinRegions" : {
+				"name" : "Token位于区域外",
+				"hint" : "检查触发事件发生时，触发Token是否位于这些区域外"
 			},
-				
+			
 			"conditionalMacros" : {
 				"name" : "宏",
 				"hint" : "宏应返回'true'、'false'、'undefined'（跳过）或其数组[参数：speaker, actor, token, scene, region, behavior, event]"
@@ -257,17 +260,17 @@
 				"name" : "阻止的移动类型",
 				"hint" : "在此区域中阻止的移动类型（GM仍可使用无限制移动来移动Token）"
 			},
-
-			"blockDirectionOnly": {
-			  "name": "定向阻挡",
-			  "hint": "是否仅阻挡特定方向的移动"
+			
+			"blockDirectionOnly" : {
+				"name" : "定向阻挡",
+				"hint" : "是否仅阻挡特定方向的移动"
 			},
-
-			"blockDirection": {
-			  "name": "阻挡方向",
-			  "hint": "被阻挡的移动方向"
+			
+			"blockDirection" : {
+				"name" : "阻挡方向",
+				"hint" : "被阻挡的移动方向"
 			},
-					
+			
 			"rollTables" : {
 				"name" : "随机表",
 				"hint" : "触发时由用户掷出的随机表"
@@ -330,111 +333,111 @@
 				"hint" : "试试看，这比解释它做什么更容易"
 			},
 			
-			"movementModus": {
-			  "name": "移动模式",
-			  "hint": "触发移动的定义方式",
-			  "options": {
-				"relative": "相对于Token",
-				"fromCenter": "相对于区域"
-			  }
-			},
-
-			"movementDirection": {
-			  "name": "方向",
-			  "hint": "触发Token被移动的方向"
-			},
-
-			"movementDistance": {
-			  "name": "距离",
-			  "hint": "触发Token被移动的距离"
-			},
-
-			"movementType": {
-			  "name": "移动类型",
-			  "hint": "用于触发移动的移动类型",
-			  "options": {
-				"RBAcurrentMovement": "当前移动"
-			  }
-			},
-
-			"onlySpawnActiveUsers": {
-			  "name": "仅在线玩家",
-			  "hint": "是否仅生成当前在线用户的角色"
-			},
-			
-			"onlyActiveScene": {
-				"name": "仅限激活场景",
-				"hint": "仅当此场景处于激活状态时生成角色"
-			},
-			
-			"soundSource": {
-				"name": "音效源",
-				"hint": "触发时播放的音效文件"
-			},
-			
-			"soundPosition": {
-				"name": "音效位置",
-				"hint": "音效位置的确定方式",
-				"options": {
-					"trigger": "触发器位置",
-					"custom": "自定义位置",
-					"global": "全局"
+			"movementModus" : {
+				"name" : "移动模式",
+				"hint" : "触发移动的定义方式",
+				"options" : {
+					"relative" : "相对于Token",
+					"fromCenter" : "相对于区域"
 				}
 			},
 			
-			"soundCustomPosition": {
-				"name": "自定义位置",
-				"hint": "播放音效的自定义位置"
+			"movementDirection" : {
+				"name" : "方向",
+				"hint" : "触发Token被移动的方向"
 			},
 			
-			"soundVolume": {
-				"name": "音效音量",
-				"hint": "播放音效的音量"
+			"movementDistance" : {
+				"name" : "距离",
+				"hint" : "触发Token被移动的距离"
 			},
 			
-			"soundRadius": {
-				"name": "音效半径",
-				"hint": "可听到音效的范围半径"
+			"movementType" : {
+				"name" : "移动类型",
+				"hint" : "用于触发移动的移动类型",
+				"options" : {
+					"RBAcurrentMovement" : "当前移动"
+				}
 			},
 			
-			"soundEasing": {
-				"name": "音效衰减",
-				"hint": "音效是否随距离逐渐减弱"
+			"onlySpawnActiveUsers" : {
+				"name" : "仅在线玩家",
+				"hint" : "是否仅生成当前在线用户的角色"
 			},
 			
-			"soundThroughWalls": {
-				"name": "穿透墙壁",
-				"hint": "音效是否可以穿透墙壁"
+			"onlyActiveScene" : {
+				"name" : "仅限激活场景",
+				"hint" : "仅当此场景处于激活状态时生成角色"
 			},
 			
-			"chatMessage": {
-				"name": "消息",
-				"hint": "显示的消息，可使用 {token} 引用触发Token，{tokens} 引用区域内的Token"
+			"soundSource" : {
+				"name" : "音效源",
+				"hint" : "触发时播放的音效文件"
 			},
 			
-			"messageSpeaker": {
-				"name": "发言者",
-				"hint": "显示为此消息发言者的Token或角色"
+			"soundPosition" : {
+				"name" : "音效位置",
+				"hint" : "音效位置的确定方式",
+				"options" : {
+					"trigger" : "触发器位置",
+					"custom" : "自定义位置",
+					"global" : "全局"
+				}
 			},
 			
-			"whisperMessage": {
-				"name": "私聊消息",
-				"hint": "此消息是否通过私聊的形式发送给触发Token的所有者"
+			"soundCustomPosition" : {
+				"name" : "自定义位置",
+				"hint" : "播放音效的自定义位置"
 			},
 			
-			"appearanceDocuments": {
-				"name": "文档",
-				"hint": "外观将被更改的图块和Token"
+			"soundVolume" : {
+				"name" : "音效音量",
+				"hint" : "播放音效的音量"
 			},
 			
-			"appearanceImageList": {
-				"name": "外观列表",
-				"hint": "外观列表，触发时为每个文档选择列表中的下一个外观"
+			"soundRadius" : {
+				"name" : "音效半径",
+				"hint" : "可听到音效的范围半径"
 			},
 			
-			"loopAppearance": {
-				"name": "循环外观",
-				"hint": "到达最后一项后是否从列表顶部重新开始"
+			"soundEasing" : {
+				"name" : "音效衰减",
+				"hint" : "音效是否随距离逐渐减弱"
+			},
+			
+			"soundThroughWalls" : {
+				"name" : "穿透墙壁",
+				"hint" : "音效是否可以穿透墙壁"
+			},
+			
+			"chatMessage" : {
+				"name" : "消息",
+				"hint" : "显示的消息，可使用 {token} 引用触发Token，{tokens} 引用区域内的Token"
+			},
+			
+			"messageSpeaker" : {
+				"name" : "发言者",
+				"hint" : "显示为此消息发言者的Token或角色"
+			},
+			
+			"whisperMessage" : {
+				"name" : "私聊消息",
+				"hint" : "此消息是否通过私聊的形式发送给触发Token的所有者"
+			},
+			
+			"appearanceDocuments" : {
+				"name" : "文档",
+				"hint" : "外观将被更改的图块和Token"
+			},
+			
+			"appearanceImageList" : {
+				"name" : "外观列表",
+				"hint" : "外观列表，触发时为每个文档选择列表中的下一个外观"
+			},
+			
+			"loopAppearance" : {
+				"name" : "循环外观",
+				"hint" : "到达最后一项后是否从列表顶部重新开始"
 			}
 		},
 		
@@ -481,9 +484,9 @@
 				"changeWall" : "[RBA] 更改墙壁",
 				"moveToken" : "[RBA] 移动Token",
 				"spawnPlayers" : "[RBA] 生成玩家角色",
-				"playSound": "[RBA] 播放音效",
-				"postChatMessage": "[RBA] 聊天消息",
-				"changeAppearance": "[RBA] 更改外观"
+				"playSound" : "[RBA] 播放音效",
+				"postChatMessage" : "[RBA] 聊天消息",
+				"changeAppearance" : "[RBA] 更改外观"
 			}
 		}
 	},

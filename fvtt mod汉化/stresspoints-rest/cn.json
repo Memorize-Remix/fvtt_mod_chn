@@ -1,11 +1,23 @@
-{"STRESS.Settings.MaxStress.Name": "最大压力上限",
+{
+  "STRESS.Settings.MaxStress.Name": "最大压力上限",
   "STRESS.Settings.MaxStress.Hint": "死亡前可累积的最大压力值（默认：12）。",
   "STRESS.Settings.Ratio.Name": "压力/力竭比例",
   "STRESS.Settings.Ratio.Hint": "多少压力等于1级力竭。",
   "STRESS.Settings.AutoHp.Name": "自动化：倒地（0生命值）",
   "STRESS.Settings.AutoHp.Hint": "生命值降至0时自动获得压力。",
-  "STRESS.Settings.HealerReq.Name": "需要医疗包（短休）",
-  "STRESS.Settings.HealerReq.Hint": "若启用，玩家必须使用医疗包或药水才能掷生命骰。",
+  "STRESS.Settings.StressZero.Name": "压力获取（0 生命值）",
+  "STRESS.Settings.StressZero.Hint": "生命值降至 0 时获得的压力量（默认：2）。",
+  
+  "STRESS.Settings.HealerLong.Name": "需要治疗（长休）",
+  "STRESS.Settings.HealerLong.Hint": "启用后，长休中显示治疗部分。",
+  "STRESS.Settings.HealerShort.Name": "需要治疗（短休）",
+  "STRESS.Settings.HealerShort.Hint": "启用后，短休中显示治疗部分。",
+  
+  "STRESS.Settings.FoodCost.Name": "外部食物费用",
+  "STRESS.Settings.FoodCur.Name": "食物货币",
+  "STRESS.Settings.DrinkCost.Name": "外部饮水费用",
+  "STRESS.Settings.DrinkCur.Name": "饮水货币",
+
   "STRESS.Settings.FoodMode.Name": "饥饿模式（食物）",
   "STRESS.Settings.FoodMode.Hint": "确定不进食的惩罚。",
   "STRESS.Settings.DrinkMode.Name": "脱水模式（饮水）",
@@ -15,42 +27,48 @@
   
   "STRESS.Options.Mandatory": "强制消耗（自动压力）",
   "STRESS.Options.Roll": "需要豁免检定（DC 10）",
-  
+
   "STRESS.Dialog.LongRest": "长休",
   "STRESS.Dialog.ShortRest": "短休",
   
   "STRESS.Hud.HP": "生命值",
   "STRESS.Hud.Stress": "压力",
   "STRESS.Hud.Exhaustion": "力竭",
-  
+
   "STRESS.Category.Environment": "环境",
   "STRESS.Category.Food": "食物",
   "STRESS.Category.Drink": "饮水",
   "STRESS.Category.Heal": "治疗 / 药水",
-  
+
   "STRESS.Env.Safe": "安全",
   "STRESS.Env.LowSafe": "不安全",
   "STRESS.Env.LowDanger": "危险",
   "STRESS.Env.Danger": "非常危险",
   "STRESS.Env.HighDanger": "极度危险",
   "STRESS.Env.Hostile": "致命",
-  
+
   "STRESS.Inventory.Nothing": "无",
   "STRESS.Inventory.NoItemUsed": "未使用任何物品。",
   "STRESS.Item.Tent": "帐篷",
   "STRESS.Item.Bedroll": "睡袋",
-  
+
+  "STRESS.Rarity.Common": "普通",
   "STRESS.Rarity.Uncommon": "非普通",
   "STRESS.Rarity.Rare": "珍稀",
   "STRESS.Rarity.VeryRare": "极珍稀",
   "STRESS.Rarity.Legendary": "传说",
-  
+
+  "STRESS.Settings.MaxFoodRarity.Name": "食物最高稀有度（外部购买）",
+  "STRESS.Settings.MaxFoodRarity.Hint": "外部购买食物时可用的最高稀有度等级。稀有度越高费用越高，但能减少压力。",
+  "STRESS.Settings.MaxDrinkRarity.Name": "饮水最高稀有度（外部购买）",
+  "STRESS.Settings.MaxDrinkRarity.Hint": "外部购买饮水时可用的最高稀有度等级。稀有度越高费用越高，但能减少压力。",
+
   "STRESS.Warn.ItemEmpty": "{name} 已空。",
   "STRESS.Warn.NoMoreItem": "你没有更多的 {name}。",
   
   "STRESS.Button.LongRest": "进行长休",
   "STRESS.Button.ShortRest": "休息",
-  
+
   "STRESS.Labels.EnvCheck": "环境豁免",
   "STRESS.Labels.FoodCheck": "饥饿豁免",
   "STRESS.Labels.DrinkCheck": "口渴豁免",
@@ -59,11 +77,14 @@
   "STRESS.Msg.DrinkSuccess": "已饮用",
   "STRESS.Msg.FailStress": "失败：获得+1压力",
   "STRESS.Msg.Saved": "成功（无压力）",
-  "STRESS.Msg.NoItemHeal": "未使用物品：生命值将不会恢复。",
-  "STRESS.Msg.EnvironmentSafe": "环境：安全",
+  "STRESS.Msg.NoItemHeal": "生命值将不会恢复。",
+  "STRESS.Msg.EnvironmentSafe": "安全。",
   "STRESS.Msg.HealerReqWarning": "⚠ 需要医疗包来恢复生命值！",
   "STRESS.Msg.ShortRestPrompt": "选择休息期间使用的物品：",
   
+  "STRESS.Msg.ImmuneFood": "不需要进食。",
+  "STRESS.Msg.ImmuneDrink": "不需要饮水。",
+
   "STRESS.Report.Title": "休息报告",
   "STRESS.Report.Start": "开始",
   "STRESS.Report.Recovery": "恢复",
@@ -73,12 +94,20 @@
   "STRESS.Report.HPRestored": "恢复了 {val} 点生命值。",
   "STRESS.Report.HPCritical": "危急：生命值恢复失败（需要物品）。",
   "STRESS.Report.UsedItem": "已使用",
-  
+  "STRESS.Report.NoHeal": "没有物品：生命值将不会恢复。",
+  "STRESS.Report.HPFull": "生命值完全恢复。",
+  "STRESS.Report.NoFood": "饥饿（未进食）：<span style='color:#ff5555'>+1 压力</span>",
+  "STRESS.Report.NoDrink": "脱水（未饮水）：<span style='color:#ff5555'>+1 压力</span>",
+  "STRESS.Report.EnvSafe": "在安全环境中休息。",
+  "STRESS.Report.EnvUnsafe": "在{type}环境中休息。",
+  "STRESS.Msg.InsufficientFunds": "金币不足！",
+  "STRESS.Msg.BuyExternal": "已购买",
+
   "STRESS.Collapse.Title": "倒地！",
   "STRESS.Collapse.SubTitle": "生命值降至0",
   "STRESS.Collapse.Gain": "+2 压力",
   "STRESS.Collapse.ExhaustionUp": "（力竭等级提升！）",
-  
+
   "STRESS.Exhaustion.Title": "疲惫",
   "STRESS.Exhaustion.Level": "等级",
   "STRESS.Exhaustion.L1": "你开始动摇：d20检定-2，速度-5英尺。",
@@ -87,7 +116,7 @@
   "STRESS.Exhaustion.L4": "每个动作都带来痛苦：d20检定-8，速度-20英尺。",
   "STRESS.Exhaustion.L5": "濒临崩溃：d20检定-10，速度-25英尺。",
   "STRESS.Exhaustion.L6": "身体屈服：死亡。",
-  
+
   "STRESS.Panel.Title": "压力控制",
   "STRESS.Panel.GroupStatus": "小队状态",
   "STRESS.Panel.GMReport": "GM报告",
@@ -95,8 +124,20 @@
   "STRESS.Panel.StressLevel": "压力等级",
   "STRESS.Panel.StressLabel": "压力",
   "STRESS.Panel.SendReport": "发送报告到聊天",
-  
-  "STRESS.Chat.LimitExceeded": "超出限制",
-  "STRESS.Chat.LimitDesc": "为换取力量而接受了风险。",
-  "STRESS.Report.BandageEffect": "绷带：恢复了50%生命值（{val}）"
+  "STRESS.Report.BandageEffect": "绷带：恢复了50%生命值（{val}）",
+
+  "STRESS.Feature.CostLabel": "费用",
+  "STRESS.PushingLimits.Title": "突破极限",
+  "STRESS.PushingLimits.ItemDescription": "将身体推向极限，以力竭为代价换取优势。可以选择在下一次掷骰中获得优势，或以纯粹的意志强制恢复一个已消耗的法术位（最高 5 级），所耗力竭等于该法术位的等级。",
+  "STRESS.PushingLimits.Prompt": "选择突破自己的方式：",
+  "STRESS.PushingLimits.SlotLevel": "法术位等级",
+  "STRESS.PushingLimits.SlotOption": "{level} 级",
+  "STRESS.PushingLimits.Advantage": "获得优势",
+  "STRESS.PushingLimits.RecoverSlot": "恢复法术位",
+  "STRESS.PushingLimits.AdvantageDesc": "{name} 突破了自己身体的极限，找到了破绽。",
+  "STRESS.PushingLimits.SlotDesc": "{name} 突破极限，从体内榨出了最后一缕魔力。",
+  "STRESS.PushingLimits.NoSlots": "没有可恢复的法术位。",
+  "STRESS.PushingLimits.NoSlotAvailable": "该法术位已满。",
+  "STRESS.PushingLimits.Confirm": "突破自己",
+  "STRESS.PushingLimits.AdvantageEffectName": "突破极限：优势"
 }

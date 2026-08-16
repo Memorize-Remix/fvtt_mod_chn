@@ -1,0 +1,452 @@
+{
+	"TYPES": {
+		"JournalEntryPage": {
+			"splash": {
+				"splash": "Splash"
+			}
+		}
+	},
+	"splash": {
+		"settings": {
+			"renderer": {
+				"name": "Splash Renderer",
+				"hint": "How splashes are drawn. Auto picks WebGL on high canvas performance modes and plain HTML on low ones.",
+				"auto": "Automatic",
+				"webgl": "WebGL (shader effects)",
+				"html": "Plain HTML (weak computers)"
+			}
+		},
+		"quickAccess": {
+			"title": "Splashes"
+		},
+		"manager": {
+			"title": "Splash Manager",
+			"menuName": "Splash Manager",
+			"menuLabel": "Open Splash Manager",
+			"menuHint": "Browse, create, edit, and launch every splash and handout.",
+			"layerScene": "Scene",
+			"layerHud": "HUD",
+			"layerFull": "Full",
+			"layerHandout": "Handout",
+			"tabSplashes": "Splashes",
+			"tabPresets": "Presets",
+			"renamePresetTitle": "Rename preset",
+			"renamePresetOk": "Rename",
+			"deletePresetTitle": "Delete preset",
+			"deletePresetContent": "Delete preset \"{name}\"? This cannot be undone.",
+			"groupByJournal": "By journal",
+			"groupByKind": "By kind",
+			"newLayerFull": "Full splash",
+			"newLayerScene": "Scene splash",
+			"newLayerHud": "HUD splash",
+			"newLayerHandout": "Handout",
+			"journalDefault": "Splashes and Handouts (default)",
+			"ungrouped": "Ungrouped",
+			"duplicateName": "{name} copy",
+			"deleteSplashTitle": "Delete splash",
+			"deleteSplashContent": "Delete \"{name}\"? This cannot be undone.",
+			"unsetGlobal": "Unset global",
+			"setGlobal": "Set global",
+			"unpinFromScene": "Unpin from scene",
+			"pinToScene": "Pin to current scene",
+			"duplicate": "Duplicate",
+			"delete": "Delete",
+			"searchSplashes": "Search splashes…",
+			"newSplash": "New splash",
+			"name": "Name",
+			"newSplashPlaceholder": "New Splash",
+			"kind": "Kind",
+			"journal": "Journal",
+			"cancel": "Cancel",
+			"createAndEdit": "Create & edit",
+			"launch": "Launch",
+			"more": "More",
+			"noSplashesMatch": "No splashes match your search.",
+			"noSplashesYet": "No splashes yet — use + to create one.",
+			"searchPresets": "Search presets…",
+			"rename": "Rename",
+			"noPresetsMatch": "No presets match your search.",
+			"noPresetsYet": "No presets yet — save one from the splash editor.",
+			"chipGlobal": "Global",
+			"chipSynced": "Synced"
+		},
+		"actions": {
+			"launch": "Launch for players",
+			"preview": "Preview",
+			"openHandout": "Open handout",
+			"edit": "Open editor",
+			"triggers": "Triggers"
+		},
+		"triggers": {
+			"title": "Splash Triggers",
+			"region": {
+				"label": "Splash: Launch on Region Entry"
+			},
+			"setup": {
+				"regionLabel": "Token enters a region",
+				"doorLabel": "Player clicks a locked door"
+			},
+			"doorTrigger": {
+				"noDoors": "Splash | No doors on the active scene to bind.",
+				"doorOption": "Door {index}",
+				"bindTitle": "Bind door trigger",
+				"bindPrompt": "Clicking which locked door launches this splash?",
+				"bindingSummary": "Door in \"{scene}\""
+			},
+			"regionTrigger": {
+				"noRegions": "Splash | Create a Scene Region on the active scene first, then bind it.",
+				"dialogTitle": "Bind region trigger",
+				"dialogPrompt": "A token entering which region launches this splash?",
+				"bindingSummary": "Region \"{region}\" in \"{scene}\""
+			}
+		},
+		"editor": {
+			"editorModel": {
+				"needsState": "Splash | A splash needs at least one state.",
+				"typeImage": "Image",
+				"typeText": "Text",
+				"typeButton": "Button",
+				"typeObject": "Object",
+				"groupName": "Group {n}",
+				"stateCopy": "{label} copy"
+			},
+			"editor": {
+				"undo": "Undo",
+				"undoTooltip": "Undo (Ctrl+Z)",
+				"redo": "Redo",
+				"redoTooltip": "Redo (Ctrl+Shift+Z)"
+			},
+			"originEditor": {
+				"sublabel": "Origins — click to add, drag to move, right-click to remove",
+				"empty": "click to add an origin"
+			},
+			"sidebar": {
+				"tabObject": "Object",
+				"tabState": "State",
+				"tabSplash": "Splash"
+			},
+			"spriteFactory": {
+				"imageName": "Image",
+				"textName": "Text",
+				"textContent": "Text",
+				"panelName": "Panel",
+				"buttonName": "Button",
+				"buttonLabel": "Button"
+			},
+			"actionEditor": {
+				"typeMacro": "Run macro",
+				"typeChangeState": "Change state",
+				"typeSetValue": "Set value",
+				"typeIncrementValue": "Increment value",
+				"typeVote": "Vote",
+				"typeScript": "Script (inline macro)",
+				"typeClose": "Close splash",
+				"noAction": "No action",
+				"pickMacro": "Pick a macro",
+				"loadStates": "Load states…",
+				"unloadStates": "Unload states…",
+				"conditionsLabel": "Conditions (value gate)",
+				"removeCondition": "Remove condition",
+				"addCondition": "Add condition",
+				"valueKey": "value key",
+				"key": "Key",
+				"value": "Value",
+				"step": "Step",
+				"min": "Min",
+				"max": "Max",
+				"wrap": "Wrap min↔max (tumbler digit)",
+				"voteOptionId": "Vote option id",
+				"scriptGlobals": "Inline macro — globals",
+				"scriptScope": "(this element's node)",
+				"scriptContext": "(its data)",
+				"scriptApi": "(changeState / setValue / close)"
+			},
+			"effectsEditor": {
+				"heading": "Effects (WebGL only)",
+				"addEffect": "Add effect",
+				"glitch": "Glitch",
+				"removeEffect": "Remove effect",
+				"bands": "Bands",
+				"intensity": "Intensity",
+				"tint": "Tint"
+			},
+			"splashTab": {
+				"layerScene": "Scene (above canvas)",
+				"layerHud": "HUD (hides nav & controls)",
+				"layerFull": "Full (above all UI)",
+				"layerHandout": "Handout (windowed)",
+				"modeLocal": "Local (per client)",
+				"modeSynced": "Synced (shared state)",
+				"voteAll": "Tallies visible to all",
+				"voteGm": "Tallies GM only",
+				"kindLayer": "Kind / layer",
+				"mode": "Mode",
+				"voteTallies": "Vote tallies",
+				"global": "Global (scene-control global tab)",
+				"pinnedScenes": "Pinned scenes",
+				"noScenesPinned": "No scenes pinned",
+				"width": "Width",
+				"height": "Height",
+				"animIn": "Splash animation in",
+				"animOut": "Splash animation out"
+			},
+			"actionListEditor": {
+				"actionN": "Action {n}",
+				"removeAction": "Remove action",
+				"addAction": "Add action"
+			},
+			"nineSliceEditor": {
+				"headerTitle": "{title} — nine-slice",
+				"applyPreset": "Apply nine-slice preset",
+				"saveAsPreset": "Save as preset",
+				"presetDefaultName": "Nine-slice",
+				"close": "Close",
+				"imageLabel": "Image",
+				"pickImageHint": "Pick an image to set its slice borders.",
+				"dragHint": "Drag the orange guides to set the stretch borders (L {l} · T {t} · R {r} · B {b}).",
+				"demoLabel": "Demo — resize me",
+				"demoButton": "Button",
+				"cutLeft": "Left cut",
+				"cutRight": "Right cut",
+				"cutTop": "Top cut",
+				"cutBottom": "Bottom cut"
+			},
+			"stateTab": {
+				"stateLabel": "State label",
+				"initialState": "Loaded on open (initial state)",
+				"onEnter": "On enter — actions run when this state loads"
+			},
+			"animationEditor": {
+				"typeNone": "None",
+				"typeDissolve": "Dissolve",
+				"typeGlitch": "Glitch",
+				"originRandom": "Random",
+				"originFixed": "Fixed",
+				"applyPreset": "Apply animation preset",
+				"savePreset": "Save as preset",
+				"presetDefaultName": "Animation",
+				"duration": "Duration",
+				"delay": "Delay",
+				"origins": "Origins",
+				"originCount": "Origin count",
+				"bands": "Bands",
+				"intensity": "Intensity",
+				"tint": "Tint",
+				"invert": "Invert"
+			},
+			"objectTab": {
+				"alignLeft": "Left",
+				"alignCenter": "Center",
+				"alignRight": "Right",
+				"alignJustify": "Justify",
+				"multiSelected": "{count} objects selected — pick one to edit its properties.",
+				"noSelection": "Select an object to edit it.",
+				"name": "Name",
+				"applySpritePreset": "Apply sprite preset",
+				"saveSpritePreset": "Save sprite preset",
+				"image": "Image",
+				"text": "Text",
+				"font": "Font",
+				"size": "Size",
+				"color": "Color",
+				"align": "Align",
+				"label": "Label",
+				"labelSize": "Label size",
+				"labelColor": "Label color",
+				"buttonImages": "Button images (nine-slice)",
+				"editImage": "Edit image",
+				"hover": "Hover",
+				"click": "Click",
+				"editHoverImage": "Edit hover image",
+				"addHoverImage": "Add hover image",
+				"editClickImage": "Edit click image",
+				"addClickImage": "Add click image",
+				"remove": "Remove",
+				"add": "Add",
+				"onClick": "On click",
+				"macroContext": "Macro context",
+				"contextKey": "context key",
+				"applyButtonPreset": "Apply button preset",
+				"saveAsPreset": "Save as preset",
+				"buttonDefaultName": "Button",
+				"fill": "Fill",
+				"borderColor": "Border color",
+				"borderWidth": "Border width",
+				"cornerRadius": "Corner radius",
+				"animationIn": "Animation in",
+				"animationOut": "Animation out",
+				"placementIn": "Placement in \"{state}\"",
+				"x": "X",
+				"y": "Y",
+				"w": "W",
+				"h": "H",
+				"z": "Z",
+				"stateAnimationIn": "State animation in",
+				"stateAnimationOut": "State animation out",
+				"placeInState": "Place in \"{state}\""
+			},
+			"statesPanel": {
+				"renameTitle": "Rename state",
+				"rename": "Rename",
+				"duplicate": "Duplicate",
+				"setSoleInitial": "Set as sole initial state",
+				"delete": "Delete",
+				"title": "States",
+				"addState": "Add state",
+				"initialState": "Initial state"
+			},
+			"canvasFrame": {
+				"addImageHere": "Add image here",
+				"addTextHere": "Add text here",
+				"addButtonHere": "Add button here",
+				"deleteCount": "Delete {count} objects",
+				"duplicate": "Duplicate",
+				"bringToFront": "Bring to front",
+				"sendToBack": "Send to back",
+				"scaleToFit": "Scale to fit stage",
+				"resetSize": "Reset to natural size",
+				"removeFromState": "Remove from \"{state}\"",
+				"delete": "Delete"
+			},
+			"objectsPanel": {
+				"prefabDefaultName": "Prefab",
+				"addImage": "Image",
+				"addText": "Text",
+				"addButton": "Button",
+				"addPanel": "Panel",
+				"addPrefab": "Prefab…",
+				"place": "Place",
+				"removeFromState": "Remove from \"{state}\"",
+				"placeInState": "Place in \"{state}\"",
+				"duplicate": "Duplicate",
+				"delete": "Delete",
+				"renameGroupTitle": "Rename group",
+				"rename": "Rename",
+				"exitGroup": "Exit group",
+				"enterGroup": "Enter group",
+				"ungroup": "Ungroup",
+				"deleteGroup": "Delete group",
+				"title": "Objects",
+				"groupSelection": "Group selection",
+				"savePrefab": "Save selection as prefab",
+				"addObject": "Add object",
+				"groupDblClickHint": "Double-click to edit members individually",
+				"collapseGroup": "Collapse group",
+				"groupInStateOn": "In this state — click to remove the group",
+				"groupInStateOff": "Not in this state — click to add the group",
+				"toggleGroupInState": "Toggle group in state",
+				"empty": "No objects yet — use + to add one.",
+				"dragToAdd": "Drag onto the canvas to add to \"{state}\"",
+				"rowInStateOn": "In this state — click to remove",
+				"rowInStateOff": "Not in this state — click to add",
+				"toggleInState": "Toggle in state",
+				"placePrefabTitle": "Place prefab"
+			}
+		},
+		"ui": {
+			"splashUI": {
+				"loading": "Loading"
+			},
+			"triggersPanel": {
+				"introLead": "Sources that launch",
+				"thisSplash": "this splash",
+				"addPlaceholder": "Add a trigger…",
+				"removeTrigger": "Remove trigger",
+				"noTriggers": "No triggers yet — add one above."
+			},
+			"editorSprite": {
+				"resize": "Resize"
+			},
+			"gmLiveControls": {
+				"defaultName": "Splash",
+				"hidden": "Hidden",
+				"live": "Live",
+				"showAgain": "Show splash again",
+				"minimize": "Minimize (hide for me, keep it running)",
+				"forceClose": "Force-close every splash for everyone"
+			},
+			"imageField": {
+				"browse": "Browse files"
+			},
+			"select": {
+				"removeChip": "Remove"
+			}
+		},
+		"sheet": {
+			"presetSheet": {
+				"kindNineslice": "Nine-slice",
+				"kindButton": "Button",
+				"kindAnimation": "Animation",
+				"kindSprite": "Sprite",
+				"kindSpriteGroup": "Sprite group",
+				"preview": "Preview",
+				"rowImage": "Image",
+				"rowInsets": "Insets",
+				"rowLabel": "Label",
+				"rowVariants": "Variants",
+				"rowEffect": "Effect",
+				"rowDuration": "Duration",
+				"rowDelay": "Delay",
+				"rowOrigins": "Origins",
+				"originsFixed": "fixed ({n})",
+				"originsRandom": "random ({n})",
+				"rowBands": "Bands",
+				"rowIntensity": "Intensity",
+				"rowInvert": "Invert",
+				"yes": "yes",
+				"no": "no",
+				"rowMembers": "Members",
+				"rowSprite": "Sprite"
+			}
+		},
+		"app": {
+			"splashEditorApplication": {
+				"title": "Splash Editor — {name}"
+			}
+		},
+		"presets": {
+			"presetPicker": {
+				"title": "Apply preset",
+				"close": "Close",
+				"searchPlaceholder": "Search presets…",
+				"empty": "No presets yet.",
+				"emptyOfKind": "No presets of kind \"{kind}\" yet."
+			}
+		},
+		"preview": {
+			"previewHost": {
+				"exitPreview": "Exit preview",
+				"escHint": "(Esc)"
+			}
+		},
+		"behavior": {
+			"tumblerLock": {
+				"label": "Tumbler lock",
+				"codeword": "Code word",
+				"unlocked": "Unlocked!",
+				"wrongCombination": "Wrong combination."
+			}
+		},
+		"launcher": {
+			"sceneLauncher": {
+				"layerScene": "Scene",
+				"layerHud": "HUD",
+				"layerFull": "Full",
+				"fallbackName": "Splash",
+				"previewJustMe": "Preview (just me)",
+				"openManager": "Open manager",
+				"tabPinned": "Pinned ({count})",
+				"tabGlobal": "Global ({count})",
+				"statusHidden": "Hidden",
+				"statusLive": "Live",
+				"showAgain": "Show splash again",
+				"minimize": "Minimize (hide for me, keep it running)",
+				"forceCloseAll": "Force-close every splash for everyone",
+				"triggeredInScene": "Triggered in this scene",
+				"kill": "Kill",
+				"emptyPinned": "No splashes pinned to this scene.",
+				"emptyGlobal": "No global splashes."
+			}
+		}
+	}
+}

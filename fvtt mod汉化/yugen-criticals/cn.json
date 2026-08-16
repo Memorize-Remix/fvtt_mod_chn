@@ -1,0 +1,174 @@
+{
+	"yugen-criticals": {
+		"title": "yugen-criticals",
+		"settings": {
+			"critical-message": {
+				"name": "默认重击消息",
+				"hint": "重击动画期间显示的文本（角色无台词时的回退内容）。"
+			},
+			"fumble-message": {
+				"name": "默认大失败消息",
+				"hint": "自然掷出 1 的大失败动画期间显示的文本。"
+			},
+			"animation-style": {
+				"name": "动画风格",
+				"hint": "为动画叠加层选择你喜欢的视觉风格。",
+				"choices": {
+					"cinematic": "电影感 (Fire Emblem)",
+					"anime": "动漫风（速度线）",
+					"cyberpunk": "赛博朋克（霓虹故障）",
+					"mk": "Mortal Kombat（血红）",
+					"fire": "火焰（炽烈）",
+					"impacts": "冲击（多重打击）",
+					"barbarian": "野蛮人",
+					"bard": "吟游诗人",
+					"cleric": "牧师/圣武士",
+					"druid": "德鲁伊",
+					"fighter": "战士/游荡者",
+					"warlock": "邪术师",
+					"wizard": "法师/术士"
+				}
+			},
+			"global-animation-style": {
+				"name": "全局动画风格 (GM)",
+				"hint": "启用 GM 覆盖时使用的视觉风格。"
+			},
+			"gm-style-override": {
+				"name": "强制使用全局风格",
+				"hint": "启用后，所有玩家将看到全局动画风格，而非各自的个人选择。"
+			},
+			"critical-color": {
+				"name": "重击主题色",
+				"hint": "标准重击的主要光晕与进度条颜色。"
+			},
+			"critical-size": {
+				"name": "动画缩放",
+				"hint": "调整动画叠加层的大小。"
+			},
+			"critical-sound": {
+				"name": "重击音效",
+				"hint": "重击期间播放的音效文件。支持用 '|' 分隔多个音效以组成随机池。"
+			},
+			"fumble-sound": {
+				"name": "大失败音效",
+				"hint": "大失败（自然 1）期间播放的音效文件。支持用 '|' 分隔多个音效以组成随机池。"
+			},
+			"critical-volume": {
+				"name": "音量",
+				"hint": "调整音效的音量。"
+			},
+			"always-show-crit": {
+				"name": "始终显示重击动画",
+				"hint": "对你自己而言，每次掷骰都强制显示重击动画。"
+			},
+			"always-show-fumble": {
+				"name": "始终显示大失败动画",
+				"hint": "对你自己而言，每次掷骰都强制显示大失败动画（若「始终显示重击」已关闭）。"
+			},
+			"user-only": {
+				"name": "仅本人动画",
+				"hint": "启用后，动画只会显示给进行掷骰的玩家。"
+			},
+			"ignore-discarded-dice": {
+				"name": "忽略弃置骰子",
+				"hint": "启用后，被优势/劣势弃置的骰子结果不会触发动画。"
+			},
+			"ignore-multi-dice": {
+				"name": "忽略大型骰池",
+				"hint": "启用后，包含 2 枚以上 d20 的骰池（如 10d20）不会触发自动动画。"
+			},
+			"screen-shake": {
+				"name": "屏幕震动与缩放",
+				"hint": "在重击动画期间短暂震动并缩放游戏画布。"
+			},
+			"debug-mode": {
+				"name": "调试模式",
+				"hint": "启用浏览器控制台对动画与钩子事件的日志记录。"
+			},
+			"hide-private-rolls": {
+				"name": "隐藏私密掷骰",
+				"hint": "启用后，若玩家没有查看掷骰详情的权限，重击动画不会显示在他们的屏幕上。"
+			},
+			"critical-threshold-type": {
+				"name": "重击阈值类型",
+				"hint": "选择重击是由骰子自然点数触发，还是由掷骰总结果触发。",
+				"choices": {
+					"die": "骰子自然点数",
+					"total": "掷骰总结果"
+				}
+			},
+			"critical-threshold-value": {
+				"name": "重击阈值数值",
+				"hint": "触发重击动画所需的最低数值（骰子点数或总结果）。"
+			},
+			"pf2e-natural-only": {
+				"name": "PF2e 仅自然重击",
+				"hint": "启用后，Pathfinder 2e 的重击与大失败动画只会在骰子自然掷出 20 或 1 时触发，而非任何大成功/大失败结果。"
+			}
+		},
+		"actor-config": {
+			"title": "yugen-criticals-config",
+			"crit-quote-name": "重击台词",
+			"crit-quote-hint": "每行输入一句台词。重击时会从中随机选择一句。",
+			"fumble-quote-name": "大失败台词",
+			"fumble-quote-hint": "每行输入一句台词。大失败时会从中随机选择一句。",
+			"crit-sound-name": "重击音效覆盖",
+			"crit-sound-hint": "覆盖此角色的默认重击音效。",
+			"fumble-sound-name": "大失败音效覆盖",
+			"fumble-sound-hint": "覆盖此角色的默认大失败音效。",
+			"crit-img-name": "重击立绘覆盖",
+			"crit-img-hint": "覆盖此角色重击动画期间显示的立绘/Token 图像。",
+			"fumble-img-name": "大失败立绘覆盖",
+			"fumble-img-hint": "覆盖此角色大失败动画期间显示的立绘/Token 图像。",
+			"style-name": "专属动画风格",
+			"style-hint": "为此角色的动画选择一种专属视觉风格。",
+			"style-choices": {
+				"default": "默认（使用设置）",
+				"cinematic": "电影感 (Fire Emblem)",
+				"anime": "动漫风（速度线）",
+				"cyberpunk": "赛博朋克（霓虹故障）",
+				"mk": "Mortal Kombat（血红）",
+				"fire": "火焰（炽烈）",
+				"impacts": "冲击（多重打击）",
+				"barbarian": "野蛮人",
+				"bard": "吟游诗人",
+				"cleric": "牧师/圣武士",
+				"druid": "德鲁伊",
+				"fighter": "战士/游荡者",
+				"warlock": "邪术师",
+				"wizard": "法师/术士"
+			},
+			"reset": "重置为默认值",
+			"save": "保存更改",
+			"crit-threshold-legend": "重击触发阈值",
+			"crit-threshold-type-name": "阈值类型",
+			"crit-threshold-type-hint": "选择重击是由骰子自然点数触发，还是由掷骰总结果触发。",
+			"crit-threshold-type-choices": {
+				"default": "默认（使用设置）",
+				"die": "骰子自然点数",
+				"total": "掷骰总结果"
+			},
+			"crit-threshold-value-name": "阈值数值",
+			"crit-threshold-value-hint": "触发重击动画所需的最低总结果或骰子点数。"
+		},
+		"team-critical": {
+			"title": "yugen-criticals（团队）",
+			"select-actors": "选择角色",
+			"execute": "开始",
+			"theme": "主题",
+			"custom-message": "消息",
+			"search-placeholder": "搜索角色…",
+			"themes": {
+				"persona": "立绘切入",
+				"vertical": "垂直切片",
+				"slash": "十字斩",
+				"horizontal": "水平条带",
+				"grid": "网格方块",
+				"circle": "圆形弹出",
+				"zoom": "电影缩放",
+				"fade": "平滑淡入淡出"
+			}
+		}
+	}
+}
+

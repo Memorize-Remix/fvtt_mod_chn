@@ -1,0 +1,122 @@
+{
+  "COMBAT_SPELL_TIMER": {
+    "Title": "战斗法术计时器",
+    "CastRound": "施放：第 {round} 轮",
+    "RoundsLeft": "剩余 {n} 轮",
+    "NameWithSource": "{name}（{source}）",
+    "ToggleEffects": "显示效果详情",
+    "RoundsUnit": "轮",
+    "RemoveSpellTimer": "移除法术计时器",
+    "EndSpell": "结束 {name}",
+    "RemoveEffect": "移除 {name}",
+    "UpdateEffect": "更新效果",
+    "UpdateTitle": "更新 {name}",
+    "Update": "更新",
+    "FeatureAutoExtended": "{actor} 的 {feature} 已被自动延长——拥有者未登录。",
+    "Keep": "保留",
+    "RemoveOnDeleteTitle": "拥有者离开战斗",
+    "RemoveOnDeletePrompt": "{name} 已从战斗中移除。是否也移除其追踪的法术计时器？",
+    "RemoveOnDeleteNote": "专注不会被终止。",
+    "ExistingTitle": "已有专注",
+    "ExistingSubtitle": "{name} 已在专注",
+    "RoundsRemaining": "剩余轮数",
+    "InitiativeOptional": "先攻（可选）",
+    "InitiativeHint": "留空则使用参战者的掷骰先攻",
+    "AddTimer": "添加计时器",
+    "RemoveConcentration": "移除专注",
+    "Rage": {
+      "TimerName": "狂暴",
+      "Raging": "狂暴中",
+      "ExtendTitle": "狂暴——回合结束",
+      "ExtendPrompt2014": "{name} 的狂暴回合刚刚结束。要延长还是结束？",
+      "ExtendPrompt2024": "{name} 的狂暴回合刚刚结束。要延长还是结束？",
+      "Extend": "延长狂暴",
+      "EndRage": "结束狂暴",
+      "AlreadyRagingTitle": "已在狂暴中",
+      "AlreadyRagingPrompt": "{name} 已在狂暴中！还剩多少轮？",
+      "AlreadyRagingRounds": "剩余轮数",
+      "RoundsLeft": "最大剩余轮数 {n}"
+    },
+    "FormOfTheBeast": {
+      "Title": "野兽形态",
+      "Prompt": "{name} 进入狂暴——唤醒内在的野兽之力？选择一件天生武器化形，直到狂暴结束。",
+      "Bite": "撕咬",
+      "Claws": "利爪",
+      "Tail": "尾巴",
+      "None": "不变形",
+      "BiteWeapon": "撕咬（野兽形态）",
+      "ClawsWeapon": "利爪（野兽形态）",
+      "TailWeapon": "尾巴（野兽形态）",
+      "BiteDescription": "你的嘴会变成野兽般的口鼻或巨大的下颚。每回合一次，当你用此撕咬对生物造成伤害时，若命中时你的生命值不足一半，你恢复相当于你的熟练加值的生命值。",
+      "ClawsDescription": "你的每只手都会变成利爪，在手中无物时可用作武器。每回合一次，当你使用攻击动作以利爪进行攻击时，你可以在同一动作中额外进行一次利爪攻击。",
+      "TailDescription": "你长出一条带有触达范围、可鞭打的多刺尾巴。当你能看到的 10 英尺内生物以攻击检定命中你时，你可以使用反应掷一个 d8，并将其加到针对该次攻击的 AC 上，可能使其落空。"
+    },
+    "TotemSpirit": {
+      "BearDescription": "狂暴期间，除心灵伤害外，你对所有伤害拥有抗性。",
+      "ElkDescription": "狂暴期间且未穿戴重甲时，你的步行速度增加 15 英尺。",
+      "EagleDescription": "狂暴期间且未穿戴重甲时，其他生物对你的借机攻击检定具有劣势，且你可以在自己的回合以附赠动作使用疾走动作。",
+      "TigerDescription": "狂暴期间，你的远跳距离增加 10 英尺，高跳距离增加 3 英尺。",
+      "WolfDescription": "狂暴期间，你的友方对你 5 英尺内任何敌视你的生物进行近战攻击检定时具有优势。"
+    },
+    "TotemicAttunement": {
+      "BearDescription": "狂暴期间，你 5 英尺内任何敌视你的生物，对除你或另一名拥有此特性的角色以外的目标进行攻击检定时具有劣势。",
+      "EagleDescription": "狂暴期间，你获得等于当前步行速度的飞行速度。此增益仅在短时间内有效；若你的回合结束时身处空中且无其他力量支撑，你将坠落。",
+      "ElkDescription": "狂暴期间，你可以在移动时使用附赠动作穿过大型或更小体型生物的空间。该生物必须成功通过一次力量豁免检定（DC 8 + 你的熟练加值 + 你的力量调整值），否则将被击倒并受到等于 1d12 + 你的力量调整值的钝击伤害。",
+      "TigerDescription": "狂暴期间，若你在对大型或更小体型目标进行近战武器攻击前，沿直线向其移动至少 20 英尺，你可以使用附赠动作对其额外进行一次近战武器攻击。",
+      "WolfDescription": "狂暴期间，当你以近战武器攻击命中大型或更小体型生物时，你可以使用附赠动作将其击倒。"
+    },
+    "WildSurge": {
+      "ExplodingSpirit": "爆裂精魂",
+      "ExplodingSpiritDescription": "直到你的狂暴结束，你可以在每个自己的回合以附赠动作召唤另一个爆裂精魂。在它出现的回合结束时，精魂爆炸：其 5 英尺内的每个生物必须成功通过一次敏捷豁免检定，否则受到 1d6 力场伤害。",
+      "WildMagicDamage": "狂野魔法伤害",
+      "WildMagicDamageDescription": "直到你的狂暴结束，每当有生物以攻击检定命中你，该生物会受到 1d6 力场伤害，仿佛魔法猛烈回击。",
+      "FlowersAndVines": "鲜花与藤蔓",
+      "FlowersAndVinesDescription": "鲜花与藤蔓在你周围暂时生长。直到你的狂暴结束，你 15 英尺内的地面对你的敌人而言是困难地形。",
+      "BoltOfLight": "光之箭",
+      "BoltOfLightDescription": "直到你的狂暴结束，你可以在每个自己的回合以附赠动作从胸口射出另一支光之箭：你选择的 30 英尺内一个生物必须成功通过一次体质豁免检定，否则受到 1d6 光耀伤害并目盲，直到你的下一个回合开始。"
+    },
+    "ZealousPresence": {
+      "RoundsLeft": "直到施法者的下一个回合",
+      "EndLabel": "结束狂热气场"
+    },
+    "PathToTheGrave": {
+      "NoPool": "找不到 {name} 的引导神力使用池——该能力将不会消耗任何次数。",
+      "EffectName": "诅咒",
+      "EffectDescription": "诅咒持续到施法者的下一个回合结束：下一次施法者或盟友以攻击命中该生物时，它对此次攻击的全部伤害具有易伤，随后诅咒结束。",
+      "RoundsLeft": "直到施法者的下一个回合结束",
+      "EndLabel": "结束坟墓之路"
+    },
+    "Beyond20": {
+      "SectionHeading": "Beyond20 集成",
+      "CastSpell": "施放法术",
+      "SettingName": "Beyond20：施放法术按钮",
+      "SettingHint": "在 Beyond20 法术聊天卡片上添加一个“施放法术”按钮，可在 Foundry 中施放法术并消耗法术位。",
+      "AutoCastName": "Beyond20：自动施放法术/应用效果",
+      "AutoCastHint": "自动施放你触发的 Beyond20 卡片中的法术并应用特性效果（例如狂暴），而无需点击按钮。按钮仍会显示，但处于禁用状态。",
+      "StartRage": "开始狂暴",
+      "UseBolsteringMagic": "使用鼓舞魔法",
+      "UseZealousPresence": "使用狂热气场",
+      "FeatureNotFound": "战斗法术计时器：在 {actor} 上找不到“{name}”。其在角色卡上的名称可能不同。",
+      "SpellNotFound": "战斗法术计时器：在 {actor} 上找不到 D&D Beyond 法术“{name}”。其在角色卡上的名称可能不同。",
+      "NoActivity": "战斗法术计时器：“{name}”没有可施放的行动。",
+      "NoActor": "战斗法术计时器：无法解析此卡片的施法角色。",
+      "SpellMap": {
+        "Title": "Beyond20 法术名称映射",
+        "MenuName": "法术名称映射",
+        "MenuLabel": "配置映射",
+        "MenuHint": "将 D&D Beyond 法术名称映射到 Foundry 角色卡上对应的法术名称，用于处理“施放法术”按钮无法按名称找到的法术。",
+        "Help": "将 D&D Beyond 法术名称（左）映射到 Foundry 角色卡上的法术名称（右）。匹配忽略大小写。不要留空任何项；不完整的行会在保存时被丢弃。",
+        "From": "D&D Beyond 名称",
+        "To": "Foundry 法术名称",
+        "FromPlaceholder": "D&D Beyond 名称",
+        "ToPlaceholder": "Foundry 法术名称",
+        "Add": "添加映射",
+        "ClearAll": "全部清空",
+        "Save": "保存",
+        "Remove": "移除映射",
+        "ShowSuggestions": "显示法术建议",
+        "Saved": "法术名称映射已保存。"
+      }
+    }
+  }
+}

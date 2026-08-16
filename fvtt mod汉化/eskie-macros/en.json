@@ -1,0 +1,236 @@
+{
+    "EMP": {
+        "settings": {
+            "enableSounds": {
+                "name": "Enable Macro Sounds",
+                "hint": "If disabled, macros will not be able to play sounds."
+            },
+            "worldScripts": {
+                "name": "World Scripts Configuration",
+                "label": "Configure World Scripts",
+                "hint": "Enable or disable world scripts that run at player load."
+            },
+            "autorecUpdate": {
+                "name": "Update Automated Animations Autorecognition",
+                "label": "Update AA Autorec",
+                "hint": "Force an update of the Automated Animations Autorecognition."
+            },
+            "recommendedModules": {
+                "name": "Recommended Modules Guide",
+                "label": "View Recommended Modules",
+                "hint": "View companion modules that provide assets, audio, and functionality for Eskie Macro Pack."
+            },
+            "logVerbosity": {
+                "name": "Log Verbosity Level",
+                "hint": "Controls the level of detail printed to the browser console.",
+                "choices": {
+                    "error": "Errors Only",
+                    "warn": "Warnings & Errors (Default)",
+                    "info": "Info, Warnings & Errors",
+                    "debug": "Debug (Everything)"
+                }
+            }
+        },
+        "recommendedModules": {
+            "menuTitle": "Eskie Macro Pack - Recommended Companion Modules",
+            "menuHint": "The following modules enhance Eskie Macro Pack by supplying visual assets, audio effects, animations, or advanced automation.",
+            "closeButton": "Close Guide",
+            "status": {
+                "active": "Installed",
+                "disabled": "Disabled",
+                "missing": "Not Installed",
+                "supported": "Supported (1 Active)",
+                "requireOne": "Requires at least one of"
+            },
+            "types": {
+                "recommended": "Recommended",
+                "optional": "Optional Companion"
+            },
+            "categories": {
+                "assets": "Assets",
+                "functionality": "Functionality",
+                "automation": "Automation"
+            },
+            "subcategories": {
+                "visual": "Visual Assets",
+                "sound": "Sound Assets",
+                "tileTriggers": "Tile Triggers & Tagging",
+                "objectAttaching": "Object Attaching & Linking"
+            },
+            "modules": {
+                "eskieEffects": {
+                    "name": "Eskie Effects (Patreon or Free)",
+                    "description": "Custom visual assets, textures, token masks, and sound effects designed specifically for Eskie Macro Pack animations."
+                },
+                "jb2a": {
+                    "name": "JB2A - Animated Assets (Patreon or Free)",
+                    "description": "Essential collection of high-quality spell, attack, ambient, and template animations used by EMP macros and Automated Animations presets."
+                },
+                "jaamod": {
+                    "name": "Jinker's Animated Art",
+                    "description": "Free animated graphics and template animations for spell, attack, and scene visual effects."
+                },
+                "bossLoot": {
+                    "name": "Boss Loot Assets (Patreon or Free)",
+                    "description": "High-resolution impact textures, spell graphics, particle overlays, and audio tracks for EMP traps and cinematic effects."
+                },
+                "psfx": {
+                    "name": "PSFX - Peri's Sound Effects",
+                    "description": "Rich audio sound effect libraries integrated into EMP macro sound presets."
+                },
+                "matt": {
+                    "name": "Monk's Active Tile Triggers (MATT)",
+                    "description": "Allows scene tiles to trigger EMP trap macros, falling hazards, and interactive map events when tokens enter or interact."
+                },
+                "tagger": {
+                    "name": "Tagger",
+                    "description": "Enables tag-based selection for tokens, tiles, and drawings. Used by EMP for automated trap triggers, zone detection, and targeted macro effects."
+                },
+                "tokenAttacher": {
+                    "name": "Token Attacher",
+                    "description": "Attaches tiles, lights, sounds, and drawings to tokens for complex animated macro setups."
+                },
+                "massEdit": {
+                    "name": "Baileywiki Mass Edit",
+                    "description": "Enables linking and attaching elements to canvas tiles and tokens for advanced scene object manipulation."
+                },
+                "autoanimations": {
+                    "name": "Automated Animations",
+                    "description": "Automatically triggers EMP spell and item animations when actions, rolls, or attacks are performed in supported game systems."
+                }
+            }
+        },
+        "worldScripts": {
+            "menuTitle": "Eskie Macro Pack - World Scripts",
+            "menuHint": "World scripts are modular features that run automatically for each player on load. Configure which features you want active in this world below.",
+            "saveButton": "Save Configuration",
+            "savedNotify": "World scripts configuration saved successfully.",
+            "reloadTitle": "Reload Required",
+            "reloadContent": "Changing active World Scripts requires a page reload to take effect.",
+            "reloadButton": "Reload Now",
+            "cancelButton": "Reload Later",
+            "rollAnimation": {
+                "name": "Eskie d20 Roll Animations",
+                "hint": "Plays a custom Eskie d20 roll animation sequence just above a token on saving throws and ability checks."
+            }
+        },
+        "autoanimations": {
+            "skipped": "EMP | Automated Animations integration skipped."
+        },
+        "updateMenu": {
+            "menuTitle": "Automated Animations Integration",
+            "menuHint": "Review and sync Eskie Macro Pack's Autorecognition (Autorec) presets in Automated Animations.",
+            "added": "New Animation Presets to Add",
+            "custom": "Conflicting Presets Ignored",
+            "customHint": "These presets already exist from another source and will not be overwritten. To let EMP manage them, delete them from Automated Animations and resubmit.",
+            "updated": "Animation Presets to Update",
+            "warning": "This will overwrite any existing EMP animation presets with updated versions. Custom presets from other sources will remain untouched.",
+            "nothing": "All Eskie Macro Pack animations are up to date!",
+            "acceptButton": "Apply Updates",
+            "cancelButton": "Cancel"
+        },
+        "effects": {
+            "concentratingPrefix": "Concentrating: {name}",
+            "angry": "Angry",
+            "armsOfHadar": "Arms of Hadar",
+            "banishment": "Banishment",
+            "benignTransportation": "Benign Transportation",
+            "blastLock": "Blast Lock",
+            "bless": "Bless",
+            "blurredVision": "Blurred Vision",
+            "charmed": "Charmed",
+            "chromaticOrb": "Chromatic Orb",
+            "colorSpray": "Color Spray",
+            "dash": "Dash",
+            "dimensionDoor": "Dimension Door",
+            "divineSmite": "Divine Smite",
+            "drainingKiss": "Draining Kiss",
+            "drunk": "Drunk",
+            "enlarged": "Enlarged",
+            "faerieFire": "Faerie Fire",
+            "fightingSpirit": "Fighting Spirit",
+            "fireBlast": "Fire Blast",
+            "fireShield": "Fire Shield",
+            "firecracker": "Firecracker",
+            "flurryOfBlows": "Flurry Of Blows",
+            "gate": "Gate",
+            "grease": "Grease",
+            "haloOfSpores": "Halo of Spores",
+            "healingWord": "Healing Word",
+            "hexed": "Hexed",
+            "hide": "Hide",
+            "hitTheDirt": "Hit the Dirt",
+            "hookAndPull": "Hook and Pull",
+            "levitating": "Levitating",
+            "lightningBolt": "Lightning Bolt",
+            "magicMissile": "Magic Missile",
+            "massHealingWord": "Mass Healing Word",
+            "mirrorImage": "Mirror Image",
+            "petrified": "Petrified",
+            "psychicTeleportation": "Psychic Teleportation",
+            "rage": "Rage",
+            "rapidStrike": "Rapid Strike",
+            "reduced": "Reduced",
+            "sandevistan": "Sandevistan",
+            "shapechange": "Shapechange",
+            "silence": "Silence",
+            "sneakAttack": "Sneak Attack",
+            "speakWithDead": "Speak with Dead",
+            "spikeGrowth": "Spike Growth",
+            "starwardSword": "Starward Sword",
+            "stepOfTheWind": "Step of the Wind",
+            "stepOfTheWindJump": "Step of the Wind Jump",
+            "strengthBeforeDeath": "Strength Before Death",
+            "stunningFist": "Stunning Fist",
+            "tashasCausticBrew": "Tasha's Caustic Brew",
+            "teleport": "Teleport"
+        },
+        "traps": {
+            "name": {
+                "bullRushStatue": "Bull Rush Statue",
+                "electricDoor": "Electric Door",
+                "fallingRocks": "Falling Rocks",
+                "fallingSky": "Falling from the Sky",
+                "fire": "Fire",
+                "floodingRoom": "Flooding Room",
+                "pitfall": "Pitfall",
+                "projectile": "Projectile",
+                "rollingBoulder": "Rolling Boulder",
+                "spike": "Spike"
+            },
+            "common": {
+                "continue": "Continue",
+                "cancel": "Cancel"
+            },
+            "setup": {
+                "chooseTrapTitle": "Trap Setup: Choose Trap",
+                "chooseTrapContent": "<p>Choose a trap to configure and set up on the canvas.</p>",
+                "noTrapChosen": "EMP | No trap chosen. Trap setup cancelled.",
+                "noSetupMethod": "EMP | Trap \"{name}\" has no setup configuration method.",
+                "onlyGm": "EMP | Only a GM can setup traps.",
+                "step1Title": "Trap Setup - {name}: Step 1 (Trigger Tiles)",
+                "step1Content": "<p>Select the **Trigger Tile(s)** on the canvas (which tokens step on to trigger the trap).</p><p>Click <strong>Continue</strong> once selected.</p>",
+                "noTriggerTiles": "EMP | No trigger tiles selected. Trap setup cancelled.",
+                "step2OriginTitle": "Trap Setup - {name}: Step 2 (Trap Origin/Launcher Tiles)",
+                "step2OriginContent": "<p>Select the **Trap Origin Tile(s)** on the canvas (where the trap starts or shoots from).</p><p>Click <strong>Continue</strong> once selected.</p>",
+                "noOriginTiles": "EMP | No trap origin tiles selected. Trap setup cancelled.",
+                "step3TargetTitle": "Trap Setup - {name}: Step 3 (Trap Target/Landing Tiles)",
+                "step3TargetContent": "<p>Select the **Trap Target Tile(s)** on the canvas (where the trap shoots towards or lands).</p><p>Click <strong>Continue</strong> once selected.</p>",
+                "noTargetTiles": "EMP | No trap target tiles selected. Defaulting to use Trigger Tiles.",
+                "step2AnimTitle": "Trap Setup - {name}: Step 2 (Animation Tiles)",
+                "step2AnimContent": "<p>Select the **Trap Animation Tile(s)** where the visual effect will play.</p><p>Click <strong>Continue</strong> once selected.</p>",
+                "noAnimTiles": "EMP | No trap animation tiles selected. Defaulting to use Trigger Tiles.",
+                "extraTitle": "Trap Setup - {name}",
+                "noExtraTiles": "EMP | No {name} selected. Trap setup cancelled."
+            },
+            "projectile": {
+                "chooseTypeTitle": "Projectile Trap Setup: Choose Type",
+                "chooseTypeContent": "<p>Choose the projectile type for this trap.</p>",
+                "noTypeChosen": "EMP | No projectile type chosen. Setup cancelled.",
+                "arrow": "Arrow",
+                "dart": "Dart",
+                "javelin": "Javelin"
+            }
+        }
+    }
+}

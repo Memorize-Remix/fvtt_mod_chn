@@ -1,0 +1,349 @@
+{
+  "AFK_TAVERN": {
+    "title": "AFK Tavern",
+    "playerList": {
+      "startBreak": "打开酒馆",
+      "endBreak": "结束休息",
+      "startSession": "开始游戏"
+    },
+    "settings": {
+      "enableMusicControls": {
+        "name": "启用音乐控制",
+        "hint": "在休息室窗口中显示音乐播放控件和正在播放横幅。仅限 GM 的设置。"
+      },
+      "breakPlaylist": {
+        "name": "休息播放列表",
+        "hint": "选择休息期间播放的播放列表。当前正在播放的音乐会暂停，休息结束后恢复。",
+        "none": "无"
+      },
+      "spectate": {
+        "name": "允许观战",
+        "hint": "启用后，玩家可以在休息期间观看彼此的小游戏。"
+      },
+      "showOfflinePlayers": {
+        "name": "显示离线玩家",
+        "hint": "在休息室中以灰色卡片显示离线玩家，方便查看谁尚未连接。"
+      },
+      "startMinimized": {
+        "name": "最小化启动酒馆",
+        "hint": "休息开始时，仅显示紧凑的计时条，而非完整窗口。"
+      },
+      "minimizeDuringActivity": {
+        "name": "活动期间最小化",
+        "hint": "在玩游戏或观战期间最小化休息室窗口，活动结束后恢复。",
+        "disabled": "禁用",
+        "game": "仅游戏",
+        "spectate": "仅观战",
+        "both": "游戏与观战"
+      },
+      "audioSettings": {
+        "name": "音效",
+        "label": "配置声音",
+        "hint": "为休息事件选择自定义音频文件。"
+      },
+      "playerSettings": {
+        "name": "玩家可见性",
+        "label": "配置玩家",
+        "hint": "选择休息期间哪些玩家出现在酒馆常客列表中。"
+      },
+      "gameSettings": {
+        "name": "游戏配置",
+        "label": "配置游戏",
+        "hint": "启用或禁用游戏标签页和各个小游戏。"
+      }
+    },
+    "settingsApp": {
+      "save": "保存更改",
+      "audio": {
+        "title": "AFK Tavern - 音效",
+        "description": "自定义休息事件期间播放的音频。留空则使用默认音频。"
+      },
+      "players": {
+        "title": "AFK Tavern - 玩家可见性",
+        "description": "控制哪些用户出现在酒馆常客列表中。被隐藏的玩家在休息期间不会被追踪。",
+        "playerListHint": "取消勾选玩家可将其从酒馆中隐藏。适用于观战账号或副 GM。"
+      },
+      "games": {
+        "title": "AFK Tavern - 游戏",
+        "description": "控制休息室中可用的游戏。",
+        "enableGamesTab": "启用游戏标签页",
+        "enableGamesTabHint": "禁用后，游戏抽屉标签页将从休息室中完全隐藏。",
+        "gameListHint": "取消勾选游戏可将其从抽屉中隐藏。被禁用的游戏无法启动。"
+      },
+      "soundBreakStart": {
+        "name": "休息开始",
+        "hint": "休息开始时播放。"
+      },
+      "soundBreakEnd": {
+        "name": "休息结束",
+        "hint": "休息结束或计时结束时播放。"
+      },
+      "soundBreakCountdown": {
+        "name": "倒计时",
+        "hint": "剩余 10 秒时播放。"
+      },
+      "soundBreakNotify": {
+        "name": "铃声提醒",
+        "hint": "GM 摇铃时播放。"
+      },
+      "browse": "浏览",
+      "preview": "预览"
+    },
+    "controls": {
+      "startBreak": "AFK Tavern - 打开酒馆"
+    },
+    "banner": {
+      "title": "AFK Tavern",
+      "subtitle": "☕ 喘口气吧，冒险者"
+    },
+    "timer": {
+      "durationLabel": "时长（分钟）",
+      "endTimeLabel": "结束时间",
+      "waiting": "等待 GM 开始休息……",
+      "breakEndsIn": "休息结束倒计时"
+    },
+    "lobby": {
+      "label": "游戏前大厅",
+      "hint": "玩家将以「准备就绪」而非「暂离」状态加入。在游戏开始前使用，等待所有人到齐。",
+      "sessionStartsIn": "游戏开始倒计时",
+      "startSession": "开始游戏",
+      "ready": "准备就绪",
+      "notReady": "未准备",
+      "statusReady": "准备就绪",
+      "statusNotReady": "未准备",
+      "allReady": "全部准备就绪！"
+    },
+    "buttons": {
+      "startBreak": "打开酒馆",
+      "resumeSession": "继续游戏",
+      "notifyPlayers": "摇铃 - 引起玩家注意",
+      "imBack": "我回来了！",
+      "stepAway": "暂时离开"
+    },
+    "players": {
+      "heading": "酒馆常客",
+      "statusBack": "已回来",
+      "statusAway": "暂离",
+      "statusOffline": "离线",
+      "statusPlaying": "正在玩 {game}",
+      "gmBadge": "GM",
+      "allBack": "全部回来了！",
+      "allPlayersBack": "所有玩家已回来"
+    },
+    "minigames": {
+      "heading": "酒馆游戏",
+      "subtitle": "纯属娱乐，这里没有奖励！",
+      "highscores": "最高分",
+      "noHighscores": "暂无最高分记录。",
+      "music": {
+        "play": "播放音乐",
+        "pause": "暂停音乐",
+        "prev": "上一曲",
+        "next": "下一曲"
+      },
+      "classicHeading": "经典游戏",
+      "premiumHeading": "高级模组游戏",
+      "multiplayerHeading": "多人游戏",
+      "settingsTitle": "{game} - 设置",
+      "difficultyLabel": "难度",
+      "practiceNote": "纯属娱乐，休息期间没有奖励！",
+      "play": "开始玩！",
+      "playing": "游戏中",
+      "cancel": "取消",
+      "custom": "自定义",
+      "widthLabel": "宽度",
+      "heightLabel": "高度",
+      "comingSoonLabel": "更多内容即将推出",
+      "comingSoonDesc": "新的小游戏正在开发中！",
+      "inviteExpired": "挑战已过期。未收到回应。",
+      "waitingFor": "等待 {name}……",
+      "opponent": "对手"
+    },
+    "notifications": {
+      "breakStarted": "休息时间到了！AFK Tavern 现已开放。",
+      "lobbyStarted": "游戏前大厅已开放！等待玩家中。",
+      "breakEnded": "休息结束！回到冒险吧。",
+      "sessionStarted": "游戏开始了！出发！",
+      "allBack": "所有玩家都回来了！可以继续了。",
+      "allReady": "所有玩家都已准备就绪！可以开始了。",
+      "timerExpired": "休息计时已结束！",
+      "bellRing": "GM 需要你的注意！",
+      "duplicateTab": "AFK Tavern 已在另一个标签页中打开。使用多个标签页可能导致意外行为。"
+    },
+    "dialog": {
+      "endEarlyTitle": "提前结束休息？",
+      "endEarlyContent": "还有玩家未回来。仍要结束休息吗？",
+      "lobbyEndEarlyTitle": "提前开始游戏？",
+      "lobbyEndEarlyContent": "还有玩家未准备就绪。仍要开始游戏吗？",
+      "closeTitle": "休息进行中",
+      "closeContent": "休息仍在进行。你想结束休息还是仅最小化窗口？",
+      "closeEnd": "结束休息",
+      "closeMinimize": "最小化",
+      "confirmContent": "休息仍在进行。你想结束它吗？",
+      "lobbyCloseTitle": "大厅进行中",
+      "lobbyCloseContent": "游戏前大厅仍处于开放状态。你想开始游戏还是仅最小化窗口？",
+      "lobbyCloseEnd": "开始游戏",
+      "lobbyConfirmContent": "游戏前大厅仍处于开放状态。你想开始游戏吗？"
+    },
+    "memoryMatch": {
+      "title": "记忆配对",
+      "description": "翻动卡片，找出配对的卡牌。记住你见过的卡牌来清空牌面！",
+      "moves": "步数",
+      "time": "时间",
+      "pairs": "配对",
+      "victory": "玩得漂亮！",
+      "victoryStats": "{moves} 步，用时 {time}",
+      "playAgain": "再玩一次",
+      "newGame": "新游戏"
+    },
+    "ticTacToe": {
+      "title": "井字棋",
+      "description": "向另一位玩家发起经典井字棋挑战！",
+      "vs": "vs",
+      "yourTurn": "轮到你了！",
+      "opponentTurn": "等待对手……",
+      "youWin": "🎉 你赢了！",
+      "youLose": "你输了！",
+      "draw": "平局！",
+      "rematch": "再来一局",
+      "score": "分数",
+      "selectOpponent": "选择一位玩家发起挑战。",
+      "opponent": "对手",
+      "sendInvite": "发送挑战",
+      "inviteTitle": "井字棋挑战",
+      "inviteMessage": "向你发起井字棋挑战！",
+      "inviteSent": "挑战已发送给",
+      "inviteDeclined": "拒绝了你的挑战。",
+      "accept": "接受",
+      "decline": "拒绝",
+      "noPlayers": "没有其他在线玩家可挑战。",
+      "playerBusy": "已经在进行游戏。",
+      "busyWarning": "该玩家已经在游戏中，可能不希望被打扰。",
+      "opponentLeft": "已离开游戏。"
+    },
+    "connectFour": {
+      "title": "四子棋",
+      "description": "落下棋子，在横向、纵向或斜向连成四个一行！",
+      "vs": "vs",
+      "yourTurn": "轮到你了！",
+      "opponentTurn": "等待对手……",
+      "youWin": "🎉 你赢了！",
+      "youLose": "你输了！",
+      "draw": "平局！",
+      "rematch": "再来一局",
+      "selectOpponent": "选择一位玩家发起挑战。",
+      "opponent": "对手",
+      "sendInvite": "发送挑战",
+      "inviteTitle": "四子棋挑战",
+      "inviteMessage": "向你发起四子棋挑战！",
+      "inviteSent": "挑战已发送给",
+      "inviteDeclined": "拒绝了你的挑战。",
+      "accept": "接受",
+      "decline": "拒绝",
+      "noPlayers": "没有其他在线玩家可挑战。",
+      "playerBusy": "已经在进行游戏。",
+      "busyWarning": "该玩家已经在游戏中，可能不希望被打扰。",
+      "opponentLeft": "已离开游戏。"
+    },
+    "spectate": {
+      "spectating": "观战中",
+      "watching": "观看中",
+      "requesting": "请求观战中",
+      "ended": "你正在观看的游戏已结束。",
+      "title": "观战",
+      "playerTurn": "{name} 的回合",
+      "playerWins": "🎉 {name} 赢了！",
+      "draw": "平局！",
+      "vs": "vs",
+      "allMatched": "全部配对完成！"
+    },
+    "whackAMole": {
+      "title": "打地鼠",
+      "description": "点击弹出的目标来得分。打好的，避开坏的！",
+      "score": "分数",
+      "best": "最佳成绩",
+      "time": "时间",
+      "start": "开始敲打！",
+      "gameOver": "时间到！",
+      "tryAgain": "再试一次",
+      "mimicHint": "👹 宝箱怪 = 1分 | 💰 宝箱 = 3分 | 🐱 猫 = -2分",
+      "streak": "x{count} 连击！",
+      "streakBonus": "🔥 x{count} 连击！+{bonus}"
+    },
+    "minesweeper": {
+      "title": "扫雷",
+      "description": "在不踩雷的情况下翻开图块。利用数字推断危险藏在哪里。右键插旗。",
+      "mines": "地雷",
+      "flags": "旗帜",
+      "time": "时间",
+      "victory": "棋盘已清空！",
+      "defeat": "你踩到雷了！",
+      "newGame": "新游戏"
+    },
+    "simonSays": {
+      "title": "西蒙说",
+      "description": "观察颜色序列，然后凭记忆重复。每轮会增加一种颜色！",
+      "round": "轮",
+      "best": "最佳成绩",
+      "watch": "观察序列……",
+      "yourTurn": "轮到你了！",
+      "start": "开始",
+      "gameOver": "颜色错了！",
+      "tryAgain": "再试一次"
+    },
+    "wordScramble": {
+      "title": "字母重组",
+      "description": "重新排列字母拼出隐藏的单词。卡住时可以使用提示！",
+      "score": "分数",
+      "best": "最佳成绩",
+      "solved": "已解答",
+      "hint": "提示",
+      "skip": "跳过",
+      "submit": "提交",
+      "placeholder": "输入你的猜测……",
+      "wrong": "不对，再试试！"
+    },
+    "monsterHarvester": {
+      "title": "怪物收割者",
+      "description": "收割掉落的战利品！点击如雨点般落下的物品。避开骷髅、炸弹和冰霜陷阱！试试完整模组以获得完整体验！",
+      "instructions": "物品会如雨点般落下。点击它们进行收割！避开危险：骷髅偷走收成，炸弹遮挡视线，冰霜冻结你。",
+      "start": "开始收割！",
+      "hint": "点击空白处 = 失误一次。漏掉物品 = 失误一次。别把失误次数用完！",
+      "harvested": "已收割",
+      "remaining": "剩余",
+      "newGame": "再玩一次",
+      "importMH": "⬇ 导入随机表设置",
+      "gradePerfect": "⭐ 完美！",
+      "gradeGreat": "🎉 很棒！",
+      "gradeNotBad": "👍 不错！",
+      "gradeTryAgain": "💀 再试一次！",
+      "config": {
+        "itemCount": "物品数量",
+        "baseSpeed": "下落速度",
+        "hazardRatio": "危险比例",
+        "maxStrikes": "最大失误次数",
+        "advancedHazards": "高级危险（💣 + ❄️）"
+      },
+      "hazardDecoy": "腐烂内脏",
+      "hazardBomb": "易爆试剂",
+      "hazardFreeze": "冰冻光环"
+    },
+    "highscores": {
+      "journalName": "AFK Tavern - 最高分",
+      "top": "前 {count} 名",
+      "personalBests": "{difficulty} - 个人最佳成绩",
+      "lowerIsBetter": "（越低越好）",
+      "noWins": "暂无胜利记录。",
+      "noScores": "暂无分数记录。",
+      "rank": "#",
+      "player": "玩家",
+      "wins": "胜利",
+      "date": "日期",
+      "moves": "步数",
+      "timeSeconds": "时间（秒）",
+      "rounds": "轮数",
+      "score": "分数",
+      "harvested": "已收割"
+    }
+  }
+}

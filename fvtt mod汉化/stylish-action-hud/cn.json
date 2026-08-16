@@ -1,88 +1,107 @@
-{"IBHUD": {
+{
+	"IBHUD": {
 		"Attributes": {
 			"HP": "生命值"
 		},
 		"Qualitative": {
-		  "Healthy": "健康",
-		  "Wounded": "受伤",
-		  "Bloodied": "重伤",
-		  "Critical": "濒死",
-		  "Dead": "死亡"
+			"Healthy": "健康",
+			"Wounded": "受伤",
+			"Bloodied": "重伤",
+			"Critical": "濒死",
+			"Dead": "死亡"
 		},
 		"Portrait": {
-		  "GalleryTitle": "立绘画廊",
-		  "AddVariant": "添加变体",
-		  "SetActive": "设为激活",
-		  "Delete": "删除",
-		  "Label": "标签",
-		  "ImagePath": "图像路径",
-		  "Browse": "浏览",
-		  "Scale": "缩放",
-		  "PosX": "X",
-		  "PosY": "Y",
-		  "Variant": "变体",
-		  "Default": "默认",
-		  "SelectToEdit": "选择要编辑的变体"
+			"GalleryTitle": "立绘画廊",
+			"AddVariant": "添加变体",
+			"SetActive": "设为激活",
+			"Delete": "删除",
+			"Label": "标签",
+			"ImagePath": "图像路径",
+			"Browse": "浏览",
+			"Scale": "缩放",
+			"PosX": "X轴",
+			"PosY": "Y轴",
+			"Variant": "变体",
+			"Default": "默认",
+			"SelectToEdit": "选择要编辑的变体"
 		},
 		"Settings": {
-			"TrackingConfigRole": {
-				"Name": "编辑追踪的最低权限角色",
-				"Hint": "选择编辑追踪属性（条、数字、徽章）所需的最低用户权限。"
-			},
-			"StyleConfigRole": {
-				"Name": "编辑样式与布局的最低权限角色",
-				"Hint": "选择编辑样式和布局设置所需的最低用户权限。（玩家默认只看到精简版）"
-			},
-			"MenuConfigRole": {
-				"Name": "编辑菜单的最低权限角色",
-				"Hint": "选择编辑动作菜单配置所需的最低用户权限。"
-			},
+		"TrackingConfigRole": {
+			"Name": "编辑追踪的最低权限角色",
+			"Hint": "选择编辑追踪属性（条、数字、徽章）所需的最低用户权限。"
+		},
+		"StyleConfigRole": {
+			"Name": "编辑样式与布局的最低权限角色",
+			"Hint": "选择编辑样式和布局设置所需的最低用户权限。（玩家默认只看到精简版）"
+		},
+		"MenuConfigRole": {
+			"Name": "编辑菜单的最低权限角色",
+			"Hint": "选择编辑动作菜单配置所需的最低用户权限。"
+		},
 			"ReduceMotion": {
 				"Name": "减少动态效果",
 				"Hint": "为对动态敏感的用户减少或禁用 HUD 动画。仅应用于你的客户端。"
 			},
 			"DisableHitFeedback": {
-			  "Name": "禁用命中反馈",
-			  "Hint": "禁用属性值变化时（如HP变化、状态施加）播放的卡牌闪烁动画。"
+				"Name": "禁用命中反馈",
+				"Hint": "禁用属性值变化时（如HP变化、状态施加）播放的卡牌闪烁动画。"
 			},
 			"TooltipPosition": {
-			  "Name": "提示框定位模式",
-			  "Hint": "选择操作菜单提示框的定位方式。仅适用于你的客户端。",
-			  "Anchor": "锚定到物品",
-			  "Cursor": "跟随光标"
+				"Name": "提示框定位模式",
+				"Hint": "选择操作菜单提示框的定位方式。仅适用于你的客户端。",
+				"Anchor": "锚定到物品",
+				"Cursor": "跟随光标"
+			},
+			"TooltipSide": {
+				"Name": "首选提示框方向",
+				"Hint": "选择提示框优先出现在动作菜单条目或光标的哪一侧。必要时它会切换方向以保持在屏幕内。仅应用于你的客户端。",
+				"Auto": "自动",
+				"Left": "左侧",
+				"Right": "右侧"
+			},
+			"ActionMenuSubmenuSide": {
+				"Name": "动作菜单子菜单方向",
+				"Hint": "选择动作 HUD 子菜单从哪一侧打开。自动会使用可用的屏幕空间。仅应用于你的客户端。",
+				"Auto": "自动",
+				"Left": "左侧",
+				"Right": "右侧"
+			},
+			"ActionMenuSubmenuWidth": {
+				"Name": "动作菜单子菜单宽度",
+				"Hint": "以像素为单位调整子菜单宽度。350 保留各主题的原始宽度；数值越大则越远离主菜单展开。仅应用于你的客户端。"
 			},
 			"VoiceIndicator": {
-			  "Name": "语音活动指示器",
-			  "Hint": "用发光效果高亮正在说话玩家的HUD卡牌。需要每位玩家浏览器的麦克风权限。",
-			  "MicDenied": "麦克风访问被拒绝。语音活动指示器需要麦克风权限才能运行。"
+				"Name": "语音活动指示器",
+				"Hint": "用发光效果高亮正在说话玩家的HUD卡牌。需要每位玩家浏览器的麦克风权限。",
+				"MicDenied": "麦克风访问被拒绝。语音活动指示器需要麦克风权限才能运行。"
 			},
 			"VoiceIndicatorColor": {
-			  "Name": "我的语音指示器颜色",
-			  "Hint": "选择你个人在语音活动指示器上的发光颜色。其他玩家在你说话时会看到此颜色。"
+				"Name": "我的语音指示器颜色",
+				"Hint": "选择你个人在语音活动指示器上的发光颜色。其他玩家在你说话时会看到此颜色。"
 			},
 			"Discord": {
-			  "Name": "Discord与支持",
-			  "Hint": "错误报告、功能请求和社区支持。"
+				"Name": "Discord与支持",
+				"Hint": "错误报告、功能请求和社区支持。"
 			},
-			  "BroadcastMenu": {
+			"BroadcastMenu": {
 				"Name": "广播账户",
 				"Hint": "为OBS/流媒体覆盖模式指定用户账户。",
 				"Label": "配置广播",
 				"Title": "广播账户设置",
 				"Save": "保存",
 				"Saved": "广播设置已保存。"
-			  },
-			  "BroadcastUser": {
+			},
+			"BroadcastUser": {
 				"Name": "广播用户",
 				"Hint": "当此用户登录时，覆盖模式自动激活。GM账户无法选择。",
 				"None": "无（禁用）",
 				"GmBlocked": "GM账户不能被指定为广播账户。"
-			  },
-			  "BroadcastActor": {
+			},
+			"BroadcastActor": {
 				"Name": "默认角色",
 				"Hint": "未提供覆盖URL时显示的角色。留空以显示所有跟踪的角色。",
 				"None": "所有跟踪的角色"
-			  }
+			}
 		},
 		"Keybindings": {
 			"ToggleHUD": {
@@ -102,8 +121,8 @@
 				"Hint": "将所有小队HUD卡片折叠为仅立绘缩略图。悬停以展开。"
 			},
 			"ToggleHUDForAll": {
-			  "Name": "切换所有人HUD（GM）",
-			  "Hint": "仅限GM。一次性显示或隐藏所有已连接玩家的HUD。"
+				"Name": "切换所有人HUD（GM）",
+				"Hint": "仅限GM。一次性显示或隐藏所有已连接玩家的HUD。"
 			}
 		},
 		"Config": {
@@ -115,6 +134,8 @@
 				"Fantasy": "史诗奇幻（RPG）",
 				"Cyberpunk": "赛博朋克（霓虹之城）",
 				"Medieval": "中世纪（王令）",
+				"Zenith": "Zenith",
+				"Rift": "Rift",
 				"Image": "自定义（完全自定义）"
 			},
 			"NewEffect": "新效果",
@@ -131,20 +152,24 @@
 				"NoResults": "未找到角色。"
 			},
 			"ActorList": {
-			  "DeselectAll": "取消全选"
+				"DeselectAll": "取消全选"
+			},
+			"SelectedRoster": {
+				"Title": "HUD 名册顺序",
+				"Empty": "尚未选择角色。"
 			},
 			"ActorGroups": {
-			  "Title": "分组",
-			  "SaveCurrent": "将当前选择保存为分组",
-			  "SaveTitle": "保存角色分组",
-			  "NamePlaceholder": "分组名称",
-			  "Save": "保存",
-			  "Load": "加载此分组",
-			  "Rename": "重命名",
-			  "RenameTitle": "重命名角色分组",
-			  "Delete": "删除",
-			  "Empty": "暂无保存的分组。",
-			  "NoActors": "请先至少选择一个角色。"
+				"Title": "分组",
+				"SaveCurrent": "将当前选择保存为分组",
+				"SaveTitle": "保存角色分组",
+				"NamePlaceholder": "分组名称",
+				"Save": "保存",
+				"Load": "加载此分组",
+				"Rename": "重命名",
+				"RenameTitle": "重命名角色分组",
+				"Delete": "删除",
+				"Empty": "暂无保存的分组。",
+				"NoActors": "请先至少选择一个角色。"
 			},
 			"GlobalInfo": {
 				"Desc": "你正在查看<strong>全局设置</strong>。此处的更改仅应用于<strong>你的屏幕</strong>。只有 GM 可以更改属性追踪规则。"
@@ -168,13 +193,54 @@
 				"Y": "Y轴",
 				"Active": "激活",
 				"ImagePath": "图像路径",
+				"SpeakingImagePath": "说话图像路径",
 				"Note": "在此管理立绘图像。点击HUD上的立绘可快速切换变体。",
 				"DefaultLabel": "变体"
 			},
 			"Tracking": {
 				"Title": "追踪属性",
 				"Locked": "(GM 已锁定)",
+				"Options": "属性选项",
+				"AudienceOptions": "受众",
+				"CombatOptions": "战斗可见性",
+				"DisplayOptions": "显示",
+				"BehaviorOptions": "行为",
+				"GMOnly": "仅 GM",
+				"OwnerOnly": "拥有者 + GM",
+				"CombatOnly": "仅战斗中",
+				"HideInCombat": "战斗中隐藏",
+				"QualitativeShort": "定性",
+				"CompactShort": "紧凑模式",
+				"CompactIconShort": "图标 + 数值",
+				"ThresholdColorShort": "阈值颜色",
+				"ThresholdMarkersShort": "阈值标记",
+				"SegmentedBarShort": "链接分段",
+				"HitFeedbackShort": "命中反馈",
 				"QualitativeDisplay": "定性显示（非拥有者看到的是健康/受伤等状态，而非具体数值）",
+				"ThresholdColor": "按剩余百分比给条着色",
+				"ThresholdMarkers": "在条上显示阈值标记",
+				"SegmentedBar": "将此条与一个链接资源合并",
+				"ThresholdStagesNote": "阶段控制阈值颜色与标记位置。0% 和 100% 处的标记不会被绘制。",
+				"LinkedBarTitle": "链接分段条",
+				"LinkedLabel": "链接标签",
+				"LinkedLabelPlaceholder": "结构或压力",
+				"LinkedValuePath": "链接值",
+				"LinkedMaxPath": "链接上限",
+				"LinkedMaxPlaceholder": "上限路径或 4",
+				"LinkedBarMode": "填充模式",
+				"LinkedModeRemaining": "剩余层级（HP + 结构）",
+				"LinkedModeDanger": "累积危险（热度 + 压力）",
+				"LinkedBarNote": "链接资源必须是一个递减的池，且整数上限在 2 到 20 之间。若无法解析，则此条按正常方式显示。",
+				"CompactVisible": "在紧凑模式下显示（最多 2 个）",
+				"CompactIconOnly": "紧凑：仅显示图标 + 数值（隐藏标签，需要图标）",
+				"HitFeedback": "仅当此属性变化时触发命中反馈（卡牌闪烁）",
+				"BarLabelRotation": "标签旋转（度）",
+				"BarValueRotation": "数值旋转（度）",
+				"BarLabelVertical": "标签竖排文字",
+				"BarValueVertical": "数值竖排文字",
+				"StageName": "阶段名称",
+				"AtOrBelow": "小于等于 %",
+				"AddStage": "添加阶段",
 				"PlaceholderLabel": "标签",
 				"AddBtn": "添加属性",
 				"AddBarBtn": "添加条",
@@ -184,16 +250,16 @@
 				"BarBgImg": "背景",
 				"BarFillImg": "填充纹理",
 				"BarScale": "条缩放",
-				"DotFilledImg": "已填充",
+					"DotFilledImg": "已填充",
 				"DotEmptyImg": "未填充",
 				"DotTint": "着色",
 				"NumberBgImg": "背景",
 				"ImageFieldPlaceholder": "(全局默认)",
-				"ImgScale": "缩放",
-				"ImgRotation": "旋转",
-				"ImgOpacity": "透明度",
-				"ImgWidth": "宽",
-				"ImgHeight": "高"
+			"ImgScale": "缩放",
+			"ImgRotation": "旋转",
+			"ImgOpacity": "透明度",
+			"ImgWidth": "宽",
+			"ImgHeight": "高"
 			},
 			"Actor": {
 				"DisplayNameLabel": "显示名称",
@@ -208,6 +274,8 @@
 				"AddBtn": "添加规则",
 				"Empty": "没有激活规则。点击“添加规则”开始。",
 				"PlaceholderImg": "图片路径（例如 icons/...）",
+				"PlaceholderSpeakingImg": "说话图像路径（说话时使用）",
+				"TooltipSpeakingImg": "可选。当此规则激活且角色正在说话时，使用此图像。回退到当前激活立绘变体的说话图像，再回退到旧版语音变体。",
 				"TypeStat": "属性",
 				"TypeStatus": "状态",
 				"SelectStatus": "选择状态效果",
@@ -227,7 +295,7 @@
 				"GMOnly": "(仅 GM)",
 				"ModeStack": "堆叠（自动）",
 				"ModeFree": "自由（手动）",
-				"ThemeTitle": "主题与视觉",
+			"ThemeTitle": "主题与视觉",
 				"ThemeLabel": "界面主题",
 				"ThemeNote": "同时应用于小队 HUD 和动作菜单。",
 				"FontHeader": "标题字体",
@@ -237,29 +305,46 @@
 				"ActionMenuFontNote": "行动菜单的自定义字体。选择（主题默认）以使用主题的默认字体。",
 				"ActionMenuLabel": "启用动作菜单",
 				"UseTokenImg": "使用Token图片（而非头像）",
+				"EmphasizeFirstActionButton": "强调第一个动作菜单按钮",
+				"EmphasizeFirstActionButtonNote": "关闭此选项可使第一个按钮与其他分类按钮具有相同的大小和样式。",
+				"Dnd5eGroupActionsByActivation": "按激活类型分组 D&D5e 动作",
+				"Dnd5eGroupActionsByActivationNote": "在 D&D5e 特性菜单中，按激活类型（动作、附赠、反应等）将动作特性拆分到左侧边栏的独立标签页中。关闭时保留单一的「动作」标签页。",
+				"Pf2eMergeActionsAndFeats": "合并 PF2e 动作与专长",
+				"Pf2eMergeActionsAndFeatsNote": "在动作菜单中一并显示 PF2e 动作物品与激活的专长，并隐藏单独的专长按钮。",
 				"ActionMenuNote": "选中Token时显示浮动动作按钮。",
 				"PartyHudVisibility": "小队 HUD 可见性",
 				"ActionMenuVisibility": "动作菜单可见性",
-				"VisibilityAlways": "始终",
-				"VisibilityCombatOnly": "仅战斗中",
-				"VisibilityNever": "从不",
+				"PanToTokenOnClick": "点击卡牌时将镜头平移到 Token",
+				"PanToTokenOnClickNote": "若禁用，点击小队 HUD 卡牌仍会选中 Token，但不会移动镜头。使用固定镜头模组时请禁用此选项。",
+			"VisibilityAlways": "始终",
+			"VisibilityCombatOnly": "仅战斗中",
+			"VisibilityNever": "从不",
 				"OwnerOnlyCards": "仅限拥有权限和查看权限显示卡牌",
 				"OwnerOnlyCardsNote": "仅向角色拥有权限和查看权限显示HUD卡牌。GM始终能看到所有卡牌。",
 				"SceneFriendlyNPCs": "显示场景友好NPC",
 				"SceneFriendlyNPCsNote": "自动为当前场景中设置为友好关系的关联NPC显示HUD卡牌。场景切换或添加/移除Token时卡牌会同步更新。",
 				"OnlinePlayersOnly": "仅在线玩家",
 				"OnlinePlayersOnlyNote": "仅显示其玩家当前在线的角色卡牌。名册中的NPC始终可见。",
+				"UseTokenName": "在卡牌上使用 Token 名称（而非角色名称）",
+				"UseTokenNameNote": "当卡牌没有名称覆盖时，显示角色的 Token 名称而非角色名称。",
 				"DisplayMode": "卡牌显示模式",
 				"DisplayModeAll": "显示全部",
 				"DisplayModeSelected": "仅选中Token",
 				"DisplayModeNote": "设置为'仅选中Token'时，仅当对应Token被选中时才显示卡牌。未选中任何内容时，默认显示拥有的角色。",
 				"QualitativeTitle": "定性显示",
+				"ResourceThresholdTitle": "资源阈值",
+				"ThresholdTitle": "定性标签与阈值颜色",
 				"HudBehindUI": "在 UI 后渲染 HUD",
 				"HudBehindUINote": "将 HUD 显示在 FVTT 核心 UI 元素之后（侧边栏、快捷栏等）",
 				"CollapseCards": "紧凑模式",
 				"CollapseCardsNote": "将卡牌折叠为仅显示立绘的缩略图。悬停以展开。（Shift+C 实时切换）",
 				"EndTurnX": "结束回合 X 坐标",
 				"EndTurnY": "结束回合 Y 坐标",
+				"ConditionsLayout": "状态图标布局",
+				"ConditionsLayoutGlobal": "使用全局设置",
+				"ConditionsLayoutHorizontal": "水平",
+				"ConditionsLayoutVertical": "垂直",
+				"ConditionsLayoutHidden": "隐藏",
 				"ThemeGMWarning": "只有 GM 可以管理主题。",
 				"LockLayout": "锁定玩家布局",
 				"CustomPortrait": "自定义头像路径",
@@ -276,6 +361,12 @@
 				"CollapseCardNo": "始终展开",
 				"CollapseAppearance": "折叠外观",
 				"CollapseSize": "大小",
+				"CollapseWidth": "宽度",
+				"CollapseHeight": "高度",
+				"CollapseBorderRadius": "圆角",
+				"CollapsePortraitScale": "立绘缩放",
+				"CollapsePortraitX": "立绘 X",
+				"CollapsePortraitY": "立绘 Y",
 				"CollapseBorderColor": "边框",
 				"CollapseUseCustomColors": "自定义颜色",
 				"CollapseBgColor": "背景色",
@@ -304,7 +395,7 @@
 				"GlobalBarFrame": "条边框",
 				"GlobalBarFill": "条填充",
 				"GlobalBarBg": "条背景",
-				"GlobalDotFilled": "点 ●",
+					"GlobalDotFilled": "点 ●",
 				"GlobalDotEmpty": "点 ○",
 				"GlobalDotTint": "点着色",
 				"GlobalNumberBg": "数字背景",
@@ -314,6 +405,7 @@
 				"ZIndex": "Z-Index",
 				"Auto": "自动",
 				"ActionMenuTitle": "动作菜单设置",
+				"ClientActionMenuOptions": "个人显示与定位",
 				"MenuScale": "菜单缩放",
 				"MenuTop": "菜单顶部（px）",
 				"MenuLeft": "菜单左侧（px）",
@@ -321,12 +413,12 @@
 				"AudioEnable": "启用声音",
 				"CustomClick": "自定义点击音效（世界）",
 				"AudioPlaceholder": "留空以使用主题默认",
-				"CardSizeTitle": "默认卡片尺寸",
+			"CardSizeTitle": "默认卡片尺寸",
 				"CardWidth": "宽度（px）",
 				"CardHeight": "高度（px）",
 				"CardSizeNote": "所有卡片的默认尺寸。可为每个角色单独覆盖。",
-				"CardScale": "卡片缩放",
-				"CardScaleNote": "缩放整个卡片（例如随从用 0.7）。保持 1.0 为默认。",
+			"CardScale": "卡片缩放",
+			"CardScaleNote": "缩放整个卡片（例如随从用 0.7）。保持 1.0 为默认。",
 				"AccessibilityTitle": "无障碍",
 				"ReduceMotion": "减少动态效果",
 				"ReduceMotionNote": "为对动态敏感的用户禁用动画（遵循系统偏好）"
@@ -358,6 +450,19 @@
 				"TintColor": "色调颜色",
 				"TintInt": "强度",
 				"TintAnim": "色调动画"
+			},
+			"Reset": {
+				"TrackingHint": "恢复此目标的追踪属性。",
+				"CommonHint": "恢复主题、字体、可见性选项和音效。",
+				"CardHint": "恢复卡牌布局、尺寸、图像、图层和视觉效果。",
+				"ActionMenuHint": "恢复动作菜单的行为、位置、缩放和设计。",
+				"MenuLabel": "菜单结构",
+				"MenuHint": "恢复系统菜单分类并清除适配器自定义。",
+				"EffectsHint": "恢复系统的默认状态效果。",
+				"PortraitHint": "移除此角色的立绘变体和语音立绘选择。",
+				"AllGlobalLabel": "所有全局设置",
+				"AllActorLabel": "所有角色设置",
+				"AllHint": "重置上面列出的所有分区。"
 			},
 			"Buttons": {
 				"EditLayout": "布局编辑模式",
@@ -392,6 +497,7 @@
 			},
 			"Menu": {
 				"Explanation": "拖放物品或宏以构建自定义菜单。",
+				"WorkflowNote": "此标签页定义了存储在世界层级的共享菜单结构（可见性过滤仍可限制每个角色看到哪些分类或标签页）。若要为某个特定角色添加动作或宏，请关闭此窗口，选中该角色或 Token，然后将物品/宏拖入其动作菜单作为个人条目。",
 				"AddCategory": "添加分类",
 				"AddTab": "添加标签页",
 				"DropHere": "将物品/宏拖到这里",
@@ -399,6 +505,23 @@
 				"DropGlobal": "将常用宏拖到这里",
 				"SystemContentTitle": "系统自动生成内容",
 				"SystemContentDesc": "此分类由系统管理。<br>（你不能手动修改物品。）",
+				"AdapterPreviewTitle": "外部适配器菜单",
+				"AdapterPreviewActor": "预览角色",
+				"AdapterPreviewHint": "外部适配器分类会保留其 ID、顺序和动作，而其外观和可见性可在此处自定义。在它们之间拖动自定义分类以选择这些按钮出现的位置。",
+				"AdapterPreviewUnavailable": "添加或选择一个适配器支持的角色以预览其菜单分类。",
+				"AdapterCategorySource": "外部适配器",
+				"CollapseCategory": "折叠分类",
+				"ExpandCategory": "展开分类",
+				"LivePreviewTitle": "实时动作菜单预览",
+				"LivePreviewHint": "更改会立即显示。点击或悬停按钮以试听其音效。",
+				"LivePreviewEmpty": "所选角色在当前战斗状态下没有可见的分类。",
+				"CategoryPresentation": "排版与音效",
+				"CategoryFont": "字体",
+				"CategoryTextColor": "文字颜色",
+				"OptionalColorHint": "双击以使用主题颜色。",
+				"CategoryClickSound": "点击音效",
+				"CategoryHoverSound": "悬停音效",
+				"SoundPathPlaceholder": "留空以使用全局或主题音效",
 				"Visibility": {
 					"Label": "可见性",
 					"All": "所有角色",
@@ -425,7 +548,8 @@
 			"EditHint": "输入新值。（最大：{max}）",
 			"Target": "目标路径",
 			"ResetTitle": "重置 {type}？",
-			"ResetContent": "<p>你确定要将<strong>{type}</strong>重置为默认吗？</p><p><small>此操作无法撤销。</small></p>"
+			"ResetChooseScope": "选择要重置的分区。",
+			"ResetSaveHint": "查看重置后的值，然后保存你的更改。"
 		},
 		"Notifications": {
 			"Saved": "Stylish Action HUD：设置已保存。",
@@ -442,15 +566,23 @@
 			"MacroNotFound": "未找到宏。",
 			"ResetGlobal": "全局设置已重置为默认。",
 			"ResetActor": "已清除 {name} 的设置。",
+			"ResetSection": "已在编辑器中把 {section} 重置为默认值。",
 			"Restored": "物品已恢复/刷新。",
 			"BroughtToView": "已将 {count} 张卡牌移至视野内。",
 			"AllCardsVisible": "所有卡牌已处于可见状态。",
 			"AddedToHUD": "{name} 已添加到HUD。",
-			"RemovedFromHUD": "{name} 已从HUD中移除。"
+			"RemovedFromHUD": "{name} 已从HUD中移除。",
+			"DerivedAttributeReadOnly": "\"{path}\" 是派生数据，无法直接编辑。请改为编辑来源物品或角色卡上的值。"
 		},
 		"UI": {
 			"Empty": "空",
 			"RightClickRemove": "右键移除",
+			"RightClickRemoveFavorite": "右键从收藏中移除",
+			"DragFavoriteToReorder": "拖动以重新排序",
+			"SortFavoritesFirst": "收藏优先排序",
+			"ShowFavoritesOnly": "仅显示收藏",
+			"NoFavoritesInView": "此视图没有收藏",
+			"NoSearchResults": "未找到结果",
 			"SearchPlaceholder": "搜索全部...",
 			"SelectedActor": "已选择角色",
 			"DropMacro": "拖放宏",
@@ -469,7 +601,16 @@
 			"BringToView": "移至视野",
 			"QuickNotePlaceholder": "写一条快速备注...",
 			"AddToHUD": "添加到Stylish Action HUD",
-			"RemoveFromHUD": "从HUD中移除"
+			"RemoveFromHUD": "从HUD中移除",
+			"EditCard": "编辑卡牌",
+			"MoveUp": "上移",
+			"MoveDown": "下移",
+			"ManageStatusEffects": "管理状态效果",
+			"StatusEffects": "状态效果",
+			"StatusEffectsHint": "左键添加或增加，右键减少或移除。",
+			"StatusEffectsSearch": "搜索状态效果...",
+			"RightClickReduceOrRemove": "右键减少或移除",
+			"Close": "关闭"
 		},
 		"Status": {
 			"Dead": "死亡",
@@ -571,6 +712,7 @@
 			"NoToggles": "无可用切换项",
 			"NoTogglesDesc": "该角色没有切换选项（例如：恶毒猛击、猛冲）",
 			"InvWeapons": "武器",
+			"InvShields": "护盾",
 			"InvArmor": "护甲",
 			"InvConsumables": "消耗品",
 			"InvEquipment": "装备",
@@ -647,6 +789,26 @@
 				"ImportTitle": "导入配置",
 				"ImportConfirm": "导入此配置？你当前的设置将被替换。",
 				"Imported": "已从文件导入配置。"
+			},
+			"ActionMenu": {
+				"Title": "动作菜单预设",
+				"Select": "选择预设",
+				"Save": "保存",
+				"Load": "加载",
+				"Delete": "删除",
+				"Hint": "保存分类结构、外部适配器覆盖和动作菜单外观。主题、缩放和屏幕位置不包含在内。",
+				"SaveTitle": "保存动作菜单预设",
+				"NameLabel": "预设名称",
+				"Saved": "动作菜单预设 '{name}' 已保存。",
+				"LoadTitle": "加载动作菜单预设",
+				"LoadConfirm": "将 '{name}' 加载到编辑器？未保存的动作菜单编辑将被替换。",
+				"Loaded": "'{name}' 已加载到编辑器。保存设置以应用它。",
+				"SelectRequired": "请先选择一个动作菜单预设。",
+				"NotFound": "未找到动作菜单预设数据。",
+				"SystemMismatch": "此预设是为 {system} 系统创建的，无法在此加载。",
+				"DeleteTitle": "删除动作菜单预设",
+				"DeleteConfirm": "删除动作菜单预设 '{name}'？",
+				"Deleted": "动作菜单预设 '{name}' 已删除。"
 			}
 		},
 		"Update": {

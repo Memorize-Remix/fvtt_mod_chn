@@ -1,0 +1,76 @@
+{
+  "lead-the-way": {
+    "module": {
+      "name": "Lead The Way",
+      "description": "A module for token following in Foundry VTT"
+    },
+    "settings": {
+      "queueWidth": {
+        "name": "Formation Width",
+        "hint": "Set the width (in grid cells) of the follower formation."
+      },
+      "maxDistance": {
+        "name": "Maximum Distance",
+        "hint": "Set the maximum distance a token can follow the leader. 0 = Infinite. Set a limit if the system is slow."
+      },
+      "showFollowingIndicator": {
+        "name": "Show following indicator",
+        "hint": "Enable or disable the following indicator."
+      },
+      "indicatorSize": {
+        "name": "Indicator size",
+        "hint": "Choose the size of the following indicator."
+      },
+      "indicatorCorner": {
+        "name": "Indicator corner",
+        "hint": "Choose the corner where the indicator is displayed on the token.",
+        "topLeft": "Top Left",
+        "topRight": "Top Right",
+        "bottomLeft": "Bottom Left",
+        "bottomRight": "Bottom Right"
+      },
+      "showIndicatorBorder": {
+        "name": "Show indicator border",
+        "hint": "Enable or disable the border of the following indicator."
+      },
+      "indicatorColor": {
+        "name": "Indicator border color",
+        "hint": "Choose the color of the following indicator's border."
+      },
+      "indicatorBorderThickness": {
+        "name": "Indicator border thickness",
+        "hint": "Choose the thickness of the following indicator's border."
+      }
+    },
+    "messages": {
+      "init": "Lead The Way module initialized.",
+      "ready": "Lead The Way module ready.",
+      "selectToken": "Please select a token first.",
+      "selectOneToken": "Please select only one token.",
+      "hoverLeader": "Please hover over a leader token.",
+      "cannotFollowSelf": "A token cannot follow itself.",
+      "alreadyFollowing": "This token is already following the selected leader.",
+      "addedFollower": "{follower} is now following {leader}.",
+      "noLongerFollowing": "{follower} is no longer following {leader}.",
+      "confirmClearAll": "Are you sure you want to clear all formations?",
+      "clearedAll": "All formations have been cleared.",
+      "noValidLocation": "No valid location found.",
+      "targetTooFar": "The target to reach is too far.",
+      "removedOnManualMove": "Token removed from formation due to manual movement.",
+      "combatStarted": "Combat started | Disabling formations.",
+      "combatEnded": "Combat ended | Re-enabling formations.",
+      "enteredCombat": "Entered Combat | Disabling formations.",
+      "exitedCombat": "Exited Combat | Re-enabling formations.",
+      "followingYou": "{token} is following you ({leader}).",
+      "notGM": "User not GM, ignoring.",
+      "updatedTokenNotLeader": "Updated token is not a leader, skipping.",
+      "controls": "Controls:"
+    },
+    "buttons": {
+      "clearFormations": "Clear Formations"
+    },
+    "tooltips": {
+      "info": "This module allows you to create and manage token formations. Select a token, hover another, and press F to make it follow. Use the buttons below to disband formations."
+    }
+  }
+}

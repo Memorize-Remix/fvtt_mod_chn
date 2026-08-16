@@ -1,0 +1,292 @@
+{
+  "perceived-reality": {
+    "Groups": {
+      "A": {
+        "Label": "察觉：A 组"
+      },
+      "B": {
+        "Label": "察觉：B 组"
+      },
+      "C": {
+        "Label": "察觉：C 组"
+      },
+      "D": {
+        "Label": "察觉：D 组"
+      },
+      "E": {
+        "Label": "察觉：E 组"
+      },
+      "F": {
+        "Label": "察觉：F 组"
+      }
+    },
+    "Settings": {
+      "GroupLabel": {
+        "Name": "组 {group} 显示名称",
+        "Hint": "覆盖 Token HUD 与配置面板中显示的显示名称。留空则使用默认标签。"
+      },
+      "GmSeeAll": {
+        "Name": "GM 查看所有组",
+        "Hint": "启用后，无论选中的 Token 是什么，GM 始终能以完全可见性查看所有察觉分组的 Token、图块与光照。禁用时，选中 Token 会预览该 Token 的视角：其察觉分组之外（或以其他方式隐藏）的内容会变暗而非隐藏，因此 GM 仍能看到并选中它们。未选中任何 Token 时，一切恢复正常。"
+      },
+      "GmSeeAllDisguises": {
+        "Name": "GM 查看真实外观",
+        "Hint": "启用后，无论选中什么，GM 始终看到每个 Token 的真实外观，完全忽略伪装。禁用时，选中 Token 会从该 Token 自身的视角预览伪装：被选中的 Token 始终显示为自身，而它察觉为伪装的物体会显示为伪装。未选中任何 Token 时，GM 看到默认的伪装视图。"
+      }
+    },
+    "DetectionMode": {
+      "group-a": "Perceived Reality：A 组",
+      "group-b": "Perceived Reality：B 组",
+      "group-c": "Perceived Reality：C 组",
+      "group-d": "Perceived Reality：D 组",
+      "group-e": "Perceived Reality：E 组",
+      "group-f": "Perceived Reality：F 组"
+    },
+    "TokenConfig": {
+      "SectionLabel": "Perceived Reality",
+      "SectionHint": "将此 Token 分配给一个或多个察觉分组。只有共享匹配分组、或激活了相应状态效果的观察者 Token 才能看到此 Token。",
+      "ColumnGroup": "分组",
+      "ColumnEnabled": "启用"
+    },
+    "TileConfig": {
+      "SectionLabel": "Perceived Reality",
+      "SectionHint": "将此图块分配给一个或多个察觉分组。只有 Token 共享匹配分组的玩家才能在其画布上看到此图块渲染。"
+    },
+    "LightConfig": {
+      "SectionLabel": "Perceived Reality",
+      "SectionHint": "将此光照分配给一个或多个察觉分组。只有 Token 共享匹配分组的玩家才能看到此光照及其照明效果。"
+    },
+    "WallConfig": {
+      "SectionLabel": "Perceived Reality",
+      "SectionHintDoor": "分配一个或多个察觉分组。Token 共享匹配分组的玩家会将其视为普通门并使用。其他人则会将其视为实心墙。",
+      "SectionHintSecret": "分配一个或多个察觉分组。Token 共享匹配分组的玩家会将此暗门视为普通门并使用。与任何暗门一样，其他人仍然会看到实心墙。",
+      "SectionHintNone": "仅当墙壁的门类型设置为「门」或「暗门」时，此设置才会生效。"
+    },
+    "HUD": {
+      "ButtonTooltip": "Perceived Reality：设置察觉分组",
+      "PanelTitle": "察觉分组",
+      "PanelHint": "切换此 Token 所属的分组。"
+    },
+    "Moments": {
+      "BuilderTitle": "时刻构建器",
+      "MenuOpen": "时刻构建器",
+      "KeybindOpen": "打开时刻构建器",
+      "NewMomentName": "新时刻",
+      "NamePlaceholder": "时刻名称",
+      "NewMoment": "新建",
+      "DeleteMoment": "删除",
+      "Save": "保存",
+      "Run": "运行",
+      "Zoom": "时间轴缩放",
+      "TriggerManual": "触发方式：手动",
+      "TriggerActivation": "触发方式：场景激活时",
+      "Rows": {
+        "transition": "过渡",
+        "narration": "旁白",
+        "sound": "音效",
+        "state": "状态",
+        "fx": "特效"
+      },
+      "Add": {
+        "transition": "过渡",
+        "narration": "旁白",
+        "sound": "音效",
+        "perception": "察觉",
+        "object": "分组",
+        "atmosphere": "氛围",
+        "fx": "特效",
+        "disguise": "伪装"
+      },
+      "Transitions": {
+        "mist": "翻滚迷雾",
+        "blackout": "黑幕",
+        "pollen": "花粉绽放",
+        "ripple": "帷幕涟漪",
+        "ember": "余烬坠落",
+        "snow": "飘雪",
+        "rain": "雨幕",
+        "sand": "沙暴",
+        "fireflies": "萤火虫",
+        "static": "虚空噪点",
+        "bloodmist": "血雾",
+        "spores": "孢子云",
+        "starfall": "流星雨",
+        "ghostlight": "鬼火",
+        "shadow": "暗影蠕动",
+        "haze": "金色薄雾",
+        "petals": "花瓣飘落",
+        "ash": "灰烬风暴",
+        "lightning": "闪电帷幕",
+        "dream": "梦境烟雾"
+      },
+      "Presets": {
+        "none": "无（清除）",
+        "fey": "妖精魅惑",
+        "dread": "冰冷恐惧",
+        "ashen": "灰烬腐朽",
+        "sickly": "病态绽放"
+      },
+      "Inspector": {
+        "NoSelection": "在时间轴上选择一个剪辑进行编辑，或从上方调色板中添加一个。",
+        "Start": "开始（秒）",
+        "Duration": "持续时间（秒）",
+        "Delete": "删除剪辑",
+        "Style": "样式",
+        "Audience": "受众",
+        "AudienceAll": "所有人",
+        "AudiencePerceivers": "组内察觉者",
+        "AudienceOthers": "其他所有人",
+        "Group": "分组",
+        "PrimaryColor": "主色",
+        "BackdropColor": "背景色",
+        "Particles": "粒子",
+        "SceneBlur": "场景模糊",
+        "Intensity": "强度",
+        "SameForAll": "所有人显示相同文本",
+        "Text": "文本",
+        "TextPerceiver": "组内察觉者看到",
+        "TextOther": "其他人看到",
+        "SoundPath": "音频文件",
+        "Browse": "浏览",
+        "Volume": "音量",
+        "Loop": "循环",
+        "LoopOn": "开",
+        "LoopOff": "关",
+        "Action": "操作",
+        "ActionGrant": "授予分组",
+        "ActionRemove": "移除分组",
+        "ActionAdd": "添加到分组",
+        "ActionRemoveGroup": "从分组移除",
+        "Targets": "目标",
+        "TargetType": "目标类型",
+        "Tokens": "Token",
+        "Tiles": "图块",
+        "Lights": "光照",
+        "Doors": "门",
+        "Door": "门",
+        "SecretDoor": "暗门",
+        "NoTargets": "场景中没有此类目标。",
+        "Preset": "预设",
+        "Saturation": "饱和度",
+        "Brightness": "亮度",
+        "HueShift": "色相偏移",
+        "TintColor": "色调颜色",
+        "TintStrength": "色调强度",
+        "VignetteColor": "暗角颜色",
+        "VignetteStrength": "暗角强度",
+        "Motes": "漂浮微粒",
+        "MoteColor": "微粒颜色",
+        "AudienceDiverges": "不同文本",
+        "FxMissing": "FXMaster 未在此世界中激活。此剪辑会被保留但不会播放。",
+        "FxMode": "模式",
+        "FxModePreset": "预设",
+        "FxModeParticle": "粒子特效",
+        "FxModeFilter": "滤镜特效",
+        "FxPreset": "预设",
+        "FxPickPreset": "选择一个预设",
+        "FxType": "特效",
+        "FxPickType": "选择一个特效",
+        "FxDirection": "方向",
+        "FxSpeed": "速度",
+        "FxDensity": "密度",
+        "FxColor": "颜色覆盖",
+        "FxDefault": "默认",
+        "FxVeryLow": "极低",
+        "FxLow": "低",
+        "FxMedium": "中",
+        "FxHigh": "高",
+        "FxVeryHigh": "极高",
+        "FxPresetEveryone": "预设对所有人播放。若要针对特定受众，请使用粒子或滤镜特效。",
+        "DeleteConfirmTitle": "删除剪辑",
+        "DeleteConfirmContent": "要从时间轴中删除此剪辑吗？此操作无法撤销。",
+        "MoteCount": "微粒数量",
+        "MoteDirection": "微粒方向",
+        "MoteDirUp": "上升",
+        "MoteDirDown": "下落",
+        "AtmoAutoEnd": "（秒）后结束",
+        "AtmoAutoEndNever": "永不",
+        "MoteDirAngle": "定向",
+        "MoteAngle": "角度",
+        "TintEnabled": "色调",
+        "GroupOverrides": "分组覆盖",
+        "AddOverride": "添加覆盖",
+        "RemoveOverride": "移除覆盖",
+        "Near": "附近",
+        "Locate": "在画布上定位",
+        "ActionSet": "设置",
+        "ActionUnset": "取消设置",
+        "DisguiseUnsetAll": "应用于场景中的每个 Token，而不仅是下方选中的 Token",
+        "DisguiseGroupHint": "在此选择的分组是被迷惑的对象：其成员会看到下方的伪装（一旦取消设置便不再看到）。分组之外的每个人始终会看到此 Token 的真实模样，无论其自身的察觉分组如何。"
+      },
+      "Notify": {
+        "Saved": "时刻已保存到场景。",
+        "NoScene": "请先打开或激活场景。",
+        "GMOnly": "只有 GM 才能运行时刻。",
+        "NotFound": "此场景上没有名为「{name}」的时刻。",
+        "MomentGone": "该时刻已不存在。",
+        "Cleared": "已清除此场景所有残留的时刻特效。",
+        "PerceptionCleared": "已清除此场景所有由时刻授予的视野与可见性分组。",
+        "DisguisesCleared": "已清除此场景的所有伪装。"
+      },
+      "ViewAsAll": "全部（GM 视角）",
+      "ViewAsHint": "以特定 Token 的感知方式预览本会话。仅影响你自己的屏幕。",
+      "ZoomIn": "放大",
+      "ZoomOut": "缩小",
+      "ZoomReset": "重置缩放",
+      "Catalog": "目录",
+      "CatalogTitle": "时刻目录",
+      "CatalogMenuOpen": "时刻目录",
+      "CatalogMenuTitle": "操作",
+      "CatalogEmpty": "尚未保存任何时刻。请在时刻构建器中构建一个并点击保存。",
+      "CatalogUnassigned": "未分配",
+      "CatalogUnknownScene": "未知场景",
+      "CatalogRun": "运行",
+      "CatalogEdit": "编辑",
+      "CatalogDelete": "删除",
+      "CatalogDeleteTitle": "删除时刻",
+      "CatalogDeleteContent": "删除「{name}」？这将移除其保存的时间轴，且无法撤销。",
+      "GroupLabelHint": "该时刻的时间轴保存于哪个场景之下。未分配的时刻在 Token/图块/光照/墙壁选择器中使用当前激活场景，但仍保持未分配状态。",
+      "CatalogDeleteCancel": "取消",
+      "AddHint": {
+        "transition": "一种全屏帷幕特效（迷雾、黑幕、雨幕等），播放一段设定时长后清除。",
+        "narration": "在屏幕上显示的信箱式文本。可以对所有人说同样的话，也可以让所选分组看到与其他所有人不同的文本。",
+        "sound": "播放一段设定时长的音频文件。可以面向所有人，也可以只面向某个选定的察觉分组。",
+        "perception": "授予或移除 Token 查看某个察觉分组的 Token、图块、光照与门的能力。",
+        "object": "在特定 Token、图块、光照或门上添加或移除察觉分组标签，从而改变谁能看到它们。",
+        "atmosphere": "应用于某个察觉分组对场景视角的持续性颜色/暗角/微粒预设，直到更改或清除。",
+        "fx": "与剪辑同步的 FXMaster 粒子或滤镜特效（雨、雪、雾等）。需要本世界中激活 FXMaster 模组。预设对所有人播放；粒子/滤镜特效可以针对单个察觉分组。",
+        "disguise": "仅针对某个察觉分组更换 Token 的外观，直到取消设置。复用与 Token 自身「显示为」表单区相同的外观数据——设置其中一个会覆盖另一个。"
+      },
+      "ClearEffects": "清除特效",
+      "ClearEffectsHint": "立即清除此场景上所有残留的过渡、旁白、氛围与特效覆盖层（对所有人）。",
+      "ClearPerception": "清除察觉",
+      "ClearPerceptionHint": "立即移除时刻在此场景所有 Token、图块、光照与门上创建的每个视野授予与可见性分组。",
+      "ClearDisguises": "清除伪装",
+      "ClearDisguisesHint": "立即移除此场景中 Token 上设置的所有伪装，为所有人恢复其真实外观。",
+      "ZoomTick": "{n}s",
+      "ZoomTickHint": "标尺间隔"
+    },
+    "UpdateCheck": {
+      "Title": "更新日志",
+      "Tooltip": "有可用更新：{version}",
+      "ViewHistory": "在 GitHub 上查看完整历史",
+      "NoNotes": "此版本未提供发布说明。",
+      "Close": "关闭"
+    },
+    "Disguise": {
+      "SectionLabel": "Perceived Reality：显示为",
+      "SectionHint": "下面的每一行都会用一个假外观欺骗某个察觉分组，而不是显示真相。这与上方「察觉」清单相反：那里是匹配分组则显示 Token；这里是匹配分组则隐藏真相并显示伪装。所选分组之外的每个人仍然会看到此 Token 的真实模样。",
+      "GroupSet": "已伪装",
+      "GroupNotSet": "未设置",
+      "ToggleLabel": "启用或禁用此分组的伪装",
+      "Appearance": "外观",
+      "SearchPlaceholder": "搜索角色与合集……",
+      "WorldActors": "世界角色",
+      "NoResults": "无匹配结果",
+      "Clear": "清除",
+      "HideNameplate": "为此分组在悬停/选中时隐藏名牌",
+      "HideNameplateHint": "默认关闭——盟友悬停时通常仍会看到名字，只是伪装后的名字。",
+      "ShowAsDisposition": "显示为倾向"
+    }
+  }
+}

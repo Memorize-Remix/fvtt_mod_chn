@@ -1,4 +1,5 @@
-{"CRLNGN_UI": {
+{
+  "CRLNGN_UI": {
     "ui": {
       "generalSettingsLabel": "通用设置",
       "clientSettingsLabel": "玩家设置（客户端）",
@@ -9,7 +10,7 @@
       "reloadRequiredLabel": "需要重新加载。立即重新加载吗？",
       "macroBarTooltipKeepOpen": "保持打开",
       "macroBarTooltipAutoHide": "隐藏",
-	  "enforcementTooltip": "点击循环锁定状态。右键点击（或Alt+点击）切换GM模式",
+      "enforcementTooltip": "点击循环锁定状态。右键点击（或Alt+点击）切换GM模式",
       "reset": "重置",
       "save": "保存",
       "reloadButton": "重新加载",
@@ -17,7 +18,7 @@
       "notifications": {
         "incompatibleVersion": "Carolingian UI 需要 FVTT v13.339 或更高版本。请更新 FVTT 或安装 Carolingian UI 1.x 版本。",
         "settingsUpdated": "设置已更新",
-		"settingsSavedAsDefaults": "当前设置已保存为玩家的默认设置",
+        "settingsSavedAsDefaults": "当前设置已保存为玩家的默认设置",
         "enforceGMSettingsConflict": "Carolingian UI 和 Force Client Settings 模组都在强制执行设置。这可能导致行为混乱。",
         "minimalUiNotSupported": "Carolingian UI 与 Minimal UI 不兼容，并提供其大部分功能。请禁用该模组以避免性能问题。",
         "monksScenesNotSupported": "Carolingian UI 的场景导航与 Monk's Scene Navigation 不兼容。请禁用 Monk's Scene Navigation 或在设置中取消勾选场景导航的'自定义布局'。",
@@ -46,10 +47,10 @@
         "preloadScene": "为玩家预加载场景",
         "sceneConfig": "场景配置"
       },
-	  "journalToggle": {
-		"enable": "启用Carolingian日志主题",
-		"disable": "禁用Carolingian日志主题"
-	  },
+      "journalToggle": {
+        "enable": "启用Carolingian日志主题",
+        "disable": "禁用Carolingian日志主题"
+      },
       "updates": {
         "label": "最后更新ID",
         "hint": "跟踪最后显示的更新通知"
@@ -66,41 +67,41 @@
       }
     },
     "settings": {
-	  "supportPatreon": {
-		"label": "支持开发者",
-		"buttonLabel": "Patreon 支持",
-		"hint": "如果你喜欢Carolingian UI和我的其他模组，请考虑每月支持几美元来支持开发。"
-	  },
-	  "exportSettings": {
-		"label": "故障排除",
-		"buttonLabel": "导出设置",
-		"hint": "将你的 Carolingian UI 设置和激活模组导出为 JSON 文件，以便进行故障排除。",
-		"success": "设置导出成功！"
-	  },
-	  "importSettings": {
-		"label": "导入设置",
-		"buttonLabel": "导入设置",
-		"hint": "从 JSON 文件导入 Carolingian UI 设置。仅限 GM。",
-		"success": "成功导入 {count} 项设置！",
-		"partialSuccess": "导入了 {applied} 项设置，其中 {errors} 项出错。",
-		"invalidFile": "无效的设置文件。必须包含 cuiSettings 或 carolingianSettings。",
-		"parseError": "解析设置文件失败。请检查文件格式。",
-		"reloadTitle": "需要重新加载",
-		"reloadPrompt": "设置已导入。是否重新加载页面以应用所有更改？"
-	  },
-	  "bulkLockAction": {
-		"label": "批量锁定设置 (GM)",
-		"hint": "一次性对所有玩家设置应用锁定状态。这是一次性操作。",
-		"options": {
-		  "select": "-- 选择操作 --",
-		  "unlocked": "未锁定 (玩家可更改)",
-		  "soft": "软锁定 (默认，玩家可更改)",
-		  "locked": "硬锁定 (玩家不可更改)"
-		},
-		"confirmTitle": "确认批量锁定更改",
-		"confirmMessage": "你确定要将所有玩家设置设为 '{state}' 吗？这将覆盖所有单独的锁定状态。",
-		"success": "已对所有客户端设置应用状态：'{state}'"
-	  },
+      "supportPatreon": {
+        "label": "支持开发者",
+        "buttonLabel": "Patreon 支持",
+        "hint": "如果你喜欢Carolingian UI和我的其他模组，请考虑每月支持几美元来支持开发。"
+      },
+      "exportSettings": {
+        "label": "故障排除",
+        "buttonLabel": "导出设置",
+        "hint": "将你的 Carolingian UI 设置和激活模组导出为 JSON 文件，以便进行故障排除。",
+        "success": "设置导出成功！"
+      },
+      "importSettings": {
+        "label": "导入设置",
+        "buttonLabel": "导入设置",
+        "hint": "从 JSON 文件导入 Carolingian UI 设置。仅限 GM。",
+        "success": "成功导入 {count} 项设置！",
+        "partialSuccess": "导入了 {applied} 项设置，其中 {errors} 项出错。",
+        "invalidFile": "无效的设置文件。必须包含 cuiSettings 或 carolingianSettings。",
+        "parseError": "解析设置文件失败。请检查文件格式。",
+        "reloadTitle": "需要重新加载",
+        "reloadPrompt": "设置已导入。是否重新加载页面以应用所有更改？"
+      },
+      "bulkLockAction": {
+        "label": "批量锁定设置 (GM)",
+        "hint": "一次性对所有玩家设置应用锁定状态。这是一次性操作。",
+        "options": {
+          "select": "-- 选择操作 --",
+          "unlocked": "未锁定 (玩家可更改)",
+          "soft": "软锁定 (默认，玩家可更改)",
+          "locked": "硬锁定 (玩家不可更改)"
+        },
+        "confirmTitle": "确认批量锁定更改",
+        "confirmMessage": "你确定要将所有玩家设置设为 '{state}' 吗？这将覆盖所有单独的锁定状态。",
+        "success": "已对所有客户端设置应用状态：'{state}'"
+      },
       "moduleSettingsMenu": {
         "label": "界面设置",
         "title": "配置选项",
@@ -109,12 +110,12 @@
           "interface": "UI元素",
           "fonts": "字体",
           "themes": "主题和样式",
-          "chat": "侧边栏和聊天记录",
+          "chat": "侧边栏与聊天记录",
           "controls": "左侧控件",
           "scenes": "场景导航",
           "players": "玩家列表",
           "camera": "摄像头停靠",
-		  "combat": "战斗追踪器",
+          "combat": "战斗追踪器",
           "system": "系统和模组"
         },
         "reset": "重置",
@@ -124,18 +125,18 @@
         "label": "切换隐藏/显示界面",
         "hint": "隐藏或显示UI。这将影响`#interface` html块内的所有元素"
       },
-	  "toggleSidebar": {
+      "toggleSidebar": {
         "label": "侧边栏展开/收起",
         "hint": "展开或收起右侧侧边栏"
       },
-	  "combatPrev": {
-		"label": "战斗：上一回合",
-		"hint": "转到战斗中的上一回合。仅当你拥有当前战斗者时有效。"
-	  },
-	  "combatNext": {
-		"label": "战斗：下一回合",
-		"hint": "前进到战斗中的下一回合。仅当你拥有当前战斗者时有效。"
-	  },
+      "combatPrev": {
+        "label": "战斗：上一回合",
+        "hint": "转到战斗中的上一回合。仅当你拥有当前战斗者时有效。"
+      },
+      "combatNext": {
+        "label": "战斗：下一回合",
+        "hint": "前进到战斗中的下一回合。仅当你拥有当前战斗者时有效。"
+      },
       "sidebarTabs": {
         "ChatLog": "聊天消息",
         "CombatTracker": "战斗遭遇",
@@ -171,75 +172,75 @@
           "customLayoutColumn": "自定义布局",
           "elementColumn": "界面元素",
           "hoverableSettingsHints": {
-				"label": "悬停设置提示",
-				"hint": "通过添加问号提示来清理设置和应用表单，悬停时显示/隐藏提示文本。影响默认的FVTT设置和模组窗口。"
-			},
+            "label": "悬停设置提示",
+            "hint": "通过添加问号提示来清理设置和应用表单，悬停时显示/隐藏提示文本。影响默认的FVTT设置和模组窗口。"
+          },
           "preventMacroBarReposition": {
             "label": "阻止宏栏重定位",
             "hint": "启用后，隐藏聊天输入框时也会阻止宏热键栏在侧边栏标签切换时被重定位。无论侧边栏状态如何，宏热键栏都将保持其原始位置。"
           },
-		"enableCombatTrackerCarousel": {
-			"label": "使用可拖拽战斗轮播",
-			"hint": "启用后，战斗追踪器将在战斗中有参与者时自动弹出，并在战斗结束时自动关闭。同时为弹出的追踪器启用自定义样式。"
-		},
-		"combatCarouselScale": {
-			"label": "停靠战斗轮播缩放比例",
-			"hint": "战斗轮播停靠在屏幕顶部时的缩放比例。范围：0.7（70%）至 1.5（150%）。"
-		},
-		"dockedCarouselOffset": {
-			"label": "停靠战斗轮播偏移量",
-			"hint": "战斗轮播停靠时的像素偏移量。当停靠在顶部时应用为 margin-top，当停靠在底部时应用为 margin-bottom。"
-		},
-		  "carouselDockOnLoad": {
-			"label": "加载时停靠战斗轮播",
-			"hint": "控制当 FVTT 加载时，战斗轮播停靠的位置。",
-			"options": {
-			  "preserve": "保留上次设置",
-			  "top": "始终停靠在顶部",
-			  "bottom": "始终停靠在底部"
-			}
-		  },
-		"combatTrackerTakeFullWidth": {
-			"label": "战斗轮播响应侧边栏",
-			"hint": "启用后，当侧边栏收起时，战斗轮播将根据需要占据全部可用宽度；侧边栏展开时，战斗轮播将自动调整回原尺寸。"
-		},
-		"carouselImageSource": {
-			"label": "战斗轮播图像来源",
-			"hint": "选择在战斗轮播中显示Token图像还是角色/人物立绘。",
-			"options": {
-				"token": "Token图像",
-				"actor": "角色立绘"
-			}
-		},
-		  "combatTrackerLayout": {
-			"label": "战斗追踪器布局",
-			"hint": "选择战斗追踪器的行为模式。战斗轮播模式会居中显示当前战斗者并循环滚动。简单列表模式为左对齐，并在需要时滚动以显示战斗者。",
-			"options": {
-			  "carousel": "战斗轮播（居中，循环滚动）",
-			  "simple": "简单列表（无轮播）"
-			}
-		  },
-		  "carouselShowAllHP": {
-			"label": "资源条可见性",
-			"hint": "控制谁可以看到战斗者上的资源/生命值条。需要配置一个追踪资源。此为世界设置（仅GM）。",
-			"options": {
-			  "gmOnly": "仅GM可见（玩家仅可见自己拥有的）",
-			  "all": "所有人可见所有",
-			  "disabled": "禁用"
-			}
-		  },
-		  "carouselTrackedResource": {
-			"label": "追踪资源",
-			"hint": "在战斗者卡片上显示的资源属性（例如生命值）。此为世界设置（仅GM）。"
-		  },
-		  "carouselHideDefeated": {
-			"label": "隐藏已击败的战斗者",
-			"hint": "启用后，已击败的战斗者将从战斗轮播中移除，以便重新计算剩余位置。"
-		  },
-		  "carouselRequirePlayerOwner": {
-			"label": "需要玩家角色",
-			"hint": "启用后，仅当有玩家角色加入战斗时，战斗轮播才会自动打开。禁用后，任何战斗者加入都会打开战斗轮播。"
-		  },
+          "enableCombatTrackerCarousel": {
+            "label": "使用可拖拽战斗轮播",
+            "hint": "启用后，战斗追踪器将在战斗中有参与者时自动弹出，并在战斗结束时自动关闭。同时为弹出的追踪器启用自定义样式。"
+          },
+          "combatCarouselScale": {
+            "label": "停靠战斗轮播缩放比例",
+            "hint": "战斗轮播停靠在屏幕顶部时的缩放比例。范围：0.7（70%）至 1.5（150%）。"
+          },
+          "dockedCarouselOffset": {
+            "label": "停靠战斗轮播偏移量",
+            "hint": "战斗轮播停靠时的像素偏移量。当停靠在顶部时应用为 margin-top，当停靠在底部时应用为 margin-bottom。"
+          },
+          "carouselDockOnLoad": {
+            "label": "加载时停靠战斗轮播",
+            "hint": "控制当 FVTT 加载时，战斗轮播停靠的位置。",
+            "options": {
+              "preserve": "保留上次设置",
+              "top": "始终停靠在顶部",
+              "bottom": "始终停靠在底部"
+            }
+          },
+          "combatTrackerTakeFullWidth": {
+            "label": "战斗轮播响应侧边栏",
+            "hint": "启用后，当侧边栏收起时，战斗轮播将根据需要占据全部可用宽度；侧边栏展开时，战斗轮播将自动调整回原尺寸。"
+          },
+          "carouselImageSource": {
+            "label": "战斗轮播图像来源",
+            "hint": "选择在战斗轮播中显示Token图像还是角色/人物立绘。",
+            "options": {
+              "token": "Token图像",
+              "actor": "角色立绘"
+            }
+          },
+          "combatTrackerLayout": {
+            "label": "战斗追踪器布局",
+            "hint": "选择战斗追踪器的行为模式。战斗轮播模式会居中显示当前战斗者并循环滚动。简单列表模式为左对齐，并在需要时滚动以显示战斗者。",
+            "options": {
+              "carousel": "战斗轮播（居中，循环滚动）",
+              "simple": "简单列表（无轮播）"
+            }
+          },
+          "carouselShowAllHP": {
+            "label": "资源条可见性",
+            "hint": "控制谁可以看到战斗者上的资源/生命值条。需要配置一个追踪资源。此为世界设置（仅GM）。",
+            "options": {
+              "gmOnly": "仅GM可见（玩家仅可见自己拥有的）",
+              "all": "所有人可见所有",
+              "disabled": "禁用"
+            }
+          },
+          "carouselTrackedResource": {
+            "label": "追踪资源",
+            "hint": "在战斗者卡片上显示的资源属性（例如生命值）。此为世界设置（仅GM）。"
+          },
+          "carouselHideDefeated": {
+            "label": "隐藏已击败的战斗者",
+            "hint": "启用后，已击败的战斗者将从战斗轮播中移除，以便重新计算剩余位置。"
+          },
+          "carouselRequirePlayerOwner": {
+            "label": "需要玩家角色",
+            "hint": "启用后，仅当有玩家角色加入战斗时，战斗轮播才会自动打开。禁用后，任何战斗者加入都会打开战斗轮播。"
+          },
           "combatFieldset": "战斗追踪"
         },
         "reset": "重置",
@@ -251,22 +252,22 @@
         "hint": "配置整个界面中使用的字体系列",
         "description": "选择或输入已在 FVTT 核心加载的自定义字体名称。",
         "fields": {
-		  "enableFontUI": {
-			"label": "启用界面字体",
-			"hint": "将自定义字体应用于界面正文文本"
-		  },
-		  "enableFontTitles": {
-			"label": "启用标题字体",
-			"hint": "将自定义字体应用于界面标题"
-		  },
-		  "enableFontJournal": {
-			"label": "启用日志字体",
-			"hint": "将自定义字体应用于日志正文文本"
-		  },
-		  "enableFontJournalTitles": {
-			"label": "启用日志标题字体",
-			"hint": "将自定义字体应用于日志标题"
-		  },
+          "enableFontUI": {
+            "label": "启用界面字体",
+            "hint": "将自定义字体应用于界面正文文本"
+          },
+          "enableFontTitles": {
+            "label": "启用标题字体",
+            "hint": "将自定义字体应用于界面标题"
+          },
+          "enableFontJournal": {
+            "label": "启用日志字体",
+            "hint": "将自定义字体应用于日志正文文本"
+          },
+          "enableFontJournalTitles": {
+            "label": "启用日志标题字体",
+            "hint": "将自定义字体应用于日志标题"
+          },
           "uiBody": {
             "label": "UI字体"
           },
@@ -289,51 +290,51 @@
         "title": "配置样式",
         "hint": "为UI选择颜色主题，并添加自定义CSS样式。",
         "fields": {
-		  "colorTheme": {
-			"label": "颜色主题（世界）",
-			"hint": "选择高亮颜色和次要颜色的选项。仅影响高亮、输入框和按钮。玩家颜色主题可能会覆盖此设置。"
-		  },
-		  "playerColorTheme": {
-			"label": "颜色主题（玩家）",
-			"hint": "选择高亮颜色和次要颜色的选项。仅影响高亮、输入框和按钮。"
-		  },
-		  "customThemeColors": {
-			"label": "自定义主题颜色（世界）",
-			"hint": "世界主题的自定义颜色配置"
-		  },
-		  "playerCustomThemeColors": {
-			"label": "自定义主题颜色（玩家）",
-			"hint": "该玩家的自定义颜色配置"
-		  },
-		  "useGlassEffect": {
-			"label": "启用玻璃效果（可能影响性能）",
-			"hint": "在应用程序窗口上启用背景滤镜玻璃效果。此功能可能导致性能较差的机器运行缓慢。如果遇到卡顿或延迟，请禁用此选项，此时将完全不应用背景滤镜效果。"
-		  },
-		  "glassTranslucence": {
-			"label": "玻璃透明度",
-			"hint": "控制窗口的透明度。0 = 完全不透明，模糊效果最小；1 = 高度透明，模糊效果最大。透明度和模糊效果会反向调整以确保可读性。在低性能模式下此控制项将被禁用。"
-		  },
-		  "enableJournalStyles": {
+          "colorTheme": {
+            "label": "颜色主题（世界）",
+            "hint": "选择高亮颜色和次要颜色的选项。仅影响高亮、输入框和按钮。玩家颜色主题可能会覆盖此设置。"
+          },
+          "playerColorTheme": {
+            "label": "颜色主题（玩家）",
+            "hint": "选择高亮颜色和次要颜色的选项。仅影响高亮、输入框和按钮。"
+          },
+          "customThemeColors": {
+            "label": "自定义主题颜色（世界）",
+            "hint": "世界主题的自定义颜色配置"
+          },
+          "playerCustomThemeColors": {
+            "label": "自定义主题颜色（玩家）",
+            "hint": "该玩家的自定义颜色配置"
+          },
+          "useGlassEffect": {
+            "label": "启用玻璃效果（可能影响性能）",
+            "hint": "在应用程序窗口上启用背景滤镜玻璃效果。此功能可能导致性能较差的机器运行缓慢。如果遇到卡顿或延迟，请禁用此选项，此时将完全不应用背景滤镜效果。"
+          },
+          "glassTranslucence": {
+            "label": "玻璃透明度",
+            "hint": "控制窗口的透明度。0 = 完全不透明，模糊效果最小；1 = 高度透明，模糊效果最大。透明度和模糊效果会反向调整以确保可读性。在低性能模式下此控制项将被禁用。"
+          },
+          "enableJournalStyles": {
             "label": "对日志应用样式",
             "hint": "启用后，将为日志条目表单应用Carolingian UI主题。如果第三方日志模组存在样式冲突，请禁用此选项。"
           },
-		  "customizeColors": "自定义颜色",
-		  "customizeHint": "点击打开颜色选择器并创建自定义主题颜色",
+          "customizeColors": "自定义颜色",
+          "customizeHint": "点击打开颜色选择器并创建自定义主题颜色",
           "adjustOtherModules": {
             "label": "在其他模组中强制应用样式",
             "hint": "在其他模组中启用Carolingian UI样式调整。如果你希望支持特定模组，请在Github issues中提出请求"
           },
           "applyDarkThemeToModules": {
-				"label": "为应用窗口应用深色主题",
-				"hint": "某些模组/系统从未实现深色主题。此选项尝试使用 .app.theme-light 类为应用窗口应用深色主题。如果某些窗口变得部分不可读，请取消勾选此选项。"
-			},
-			"otherModulesList": {
-				"label": "在其他模组中强制应用样式",
-				"hint": "在其他模组中启用Carolingian UI样式调整。勾选所需复选框或列表顶部的选项以全选/取消全选。如果某个模组出现问题，请取消勾选其复选框。"
-			},
+            "label": "为应用窗口应用深色主题",
+            "hint": "某些模组/系统从未实现深色主题。此选项尝试使用 .app.theme-light 类为应用窗口应用深色主题。如果某些窗口变得部分不可读，请取消勾选此选项。"
+          },
+          "otherModulesList": {
+            "label": "在其他模组中强制应用样式",
+            "hint": "在其他模组中启用Carolingian UI样式调整。勾选所需复选框或列表顶部的选项以全选/取消全选。如果某个模组出现问题，请取消勾选其复选框。"
+          },
           "forcedDarkTheme": {
-			"label": "通过 CSS 强制应用深色主题",
-			"hint": "实验性。如果上述复选框对特定模组无效，你可以尝试通过 CSS 选择器强制为模组应用深色背景和浅色字体。如果模组具有硬编码样式，此方法可能不总是有效。请在下方字段中输入元素的 CSS ID 或类，用逗号分隔。例如：#element-id, .element-class"
+            "label": "通过 CSS 强制应用深色主题",
+            "hint": "实验性。如果上面的复选框对某个模组无效，你可以尝试通过 CSS 选择器为模组强制应用深色背景和浅色字体。如果模组硬编码了样式，可能并不总是有效。在下方字段中输入元素的 CSS id 或 class，用逗号分隔。示例：#element-id, .element-class "
           },
           "customStyles": {
             "label": "自定义CSS",
@@ -365,16 +366,16 @@
               "none": "无"
             }
           },
-		  "borderPosition": {
-			"label": "彩色边框位置",
-			"hint": "[需要重新加载] <b>左侧：</b>边框仅显示在聊天卡的左侧。<br/><b>顶部：</b>边框仅显示在聊天卡的顶部。<br/><b>无：</b>完全不显示边框（将允许其他模组设置的边框）。<br/><b>全部：</b>边框显示在聊天卡的所有边上。",
-			"options": {
-			  "left": "左侧",
-			  "right": "右侧",
-			  "top": "顶部",
-			  "all": "全部"
-			}
-		  },
+          "borderPosition": {
+            "label": "彩色边框位置",
+            "hint": "[需要重新加载] <b>左侧：</b>边框仅显示在聊天卡的左侧。<br/><b>顶部：</b>边框仅显示在聊天卡的顶部。<br/><b>无：</b>完全不显示边框（将允许其他模组设置的边框）。<br/><b>全部：</b>边框显示在聊天卡的所有边上。",
+            "options": {
+              "left": "左侧",
+              "right": "右侧",
+              "top": "顶部",
+              "all": "全部"
+            }
+          },
           "useLeftChatBorder": {
             "label": "仅使用左侧边框",
             "hint": "你选择的边框颜色仅显示在聊天卡的左侧 - 其他侧没有边框。"
@@ -383,32 +384,32 @@
             "label": "侧边栏宽度",
             "hint": "屏幕右侧侧边栏面板的宽度。"
           },
-		  "openChatLogOnLoad": {
-			"label": "加载时打开聊天记录",
-			"hint": "启用后，模组加载时将自动展开侧边栏以显示聊天记录。"
-		  },
-		  "closeSidebarWhenIdle": {
-			"label": "闲置时关闭侧边栏",
-			"hint": "启用后，鼠标离开侧边栏区域3秒后将自动收起侧边栏。"
-		  },
-		  "useHorizontalSidebarTabs": {
-			"label": "使用水平侧边栏标签",
-			"hint": "启用后，将侧边栏标签改为水平方向，位于侧边栏顶部，而不是垂直排列在侧面。（v12风格）"
-		  },
+          "openChatLogOnLoad": {
+            "label": "加载时打开聊天记录",
+            "hint": "启用后，模组加载时将自动展开侧边栏以显示聊天记录。"
+          },
+          "closeSidebarWhenIdle": {
+            "label": "闲置时关闭侧边栏",
+            "hint": "启用后，鼠标离开侧边栏区域3秒后将自动收起侧边栏。"
+          },
+          "useHorizontalSidebarTabs": {
+            "label": "使用水平侧边栏标签",
+            "hint": "启用后，将侧边栏标签改为水平方向，位于侧边栏顶部，而不是垂直排列在侧面。（v12风格）"
+          },
           "showChatNotificationsOnTop": {
             "label": "从顶部显示聊天通知",
             "hint": "启用后，聊天卡片通知将从聊天输入区域的顶部而非底部显示。"
           },
-		  "useFolderStyle": {
-			"label": "侧边栏使用简洁文件夹颜色",
-			"hint": "在侧边栏目录文件夹上启用更简洁的颜色，仅在边框上显示所选颜色，以获得更美观的外观。"
-		  },
+          "useFolderStyle": {
+            "label": "侧边栏使用简洁文件夹颜色",
+            "hint": "在侧边栏目录文件夹上启用更简洁的颜色，仅在边框上显示所选颜色，以获得更美观的外观。"
+          },
           "hiddenSidebarTabs": {
-			"label": "侧边栏标签可见性与顺序",
-			"hint": "控制GM和玩家可见的侧边栏标签。隐藏的标签将不会出现在侧边栏中。",
-			"hideForGM": "对GM隐藏",
-			"hideForPlayer": "对玩家隐藏"
-		  }
+            "label": "侧边栏标签可见性与顺序",
+            "hint": "控制GM和玩家可见的侧边栏标签。隐藏的标签将不会出现在侧边栏中。",
+            "hideForGM": "对GM隐藏",
+            "hideForPlayer": "对玩家隐藏"
+          }
         },
         "reset": "重置",
         "save": "保存"
@@ -477,19 +478,19 @@
             "label": "摄像头组高度",
             "hint": "设置为浮动时非最小化摄像头停靠的尺寸，以像素为单位"
           },
-		  "dockCamerasToBottom": {
-			"label": "允许将摄像机停靠到宏栏",
-			"hint": "启用后，你可以将摄像机群组拖动到屏幕底部（宏栏上方）进行停靠。停靠时，摄像机群组将变为水平布局，横跨整个可用宽度，并将视频最小缩小至150像素。将其从底部拖走即可取消停靠。"
-		  },
+          "dockCamerasToBottom": {
+            "label": "允许将摄像机停靠到宏栏",
+            "hint": "启用后，你可以将摄像机群组拖动到屏幕底部（宏栏上方）进行停靠。停靠时，摄像机群组将变为水平布局，横跨整个可用宽度，并将视频最小缩小至150像素。将其从底部拖走即可取消停靠。"
+          },
           "dockResizeOnUserJoin": {
-			"label": "扩展停靠区域以适应视频",
-			"hint": "启用后，当用户加入时停靠区域将自动调整大小以显示新视频。手动调整的大小可能会在新用户加入时被覆盖。如需保持手动调整大小和滚动功能，请关闭此选项。",
-			"options": {
-			  "off": "关闭：不扩展",
-			  "horizontal": "水平扩展以适应",
-			  "vertical": "垂直扩展以适应"
-			}
-		  },
+            "label": "扩展停靠区域以适应视频",
+            "hint": "启用后，当用户加入时停靠区域将自动调整大小以显示新视频。手动调整的大小可能会在新用户加入时被覆盖。如需保持手动调整大小和滚动功能，请关闭此选项。",
+            "options": {
+              "off": "关闭：不扩展",
+              "horizontal": "水平扩展以适应",
+              "vertical": "垂直扩展以适应"
+            }
+          },
           "defaultVideoWidth": {
             "label": "默认视频宽度",
             "hint": "停靠栏中每个单独摄像头的宽度，以像素为单位。最小宽度为150px，以允许摄像头控件图标的空间。"
@@ -501,94 +502,102 @@
         "reset": "重置",
         "save": "保存"
       },
-	  "combatTrackerMenu": {
-		"label": "战斗追踪器",
-		"title": "配置战斗追踪器",
-		"hint": "配置战斗轮播的外观和行为。",
-		"fields": {
-		  "enableCombatTrackerCarousel": {
-			"label": "使用可拖拽战斗轮播",
-			"hint": "启用后，当战斗中有战斗者时，战斗追踪器将自动弹出；当战斗结束时自动关闭。同时启用弹出式追踪器的自定义样式。"
-		  },
-		  "combatCarouselScale": {
-			"label": "停靠战斗轮播缩放比例",
-			"hint": "战斗轮播停靠在屏幕顶部时的缩放比例。范围：0.7（70%）至1.5（150%）。"
-		  },
-		  "dockedCarouselOffset": {
-			"label": "停靠战斗轮播偏移量",
-			"hint": "战斗轮播停靠时的像素偏移量。当停靠在顶部时应用为 margin-top，当停靠在底部时应用为 margin-bottom。"
-		  },
-		  "carouselDockOnLoad": {
-			"label": "加载时停靠战斗轮播",
-			"hint": "控制当 FVTT 加载时，战斗轮播停靠的位置。",
-			"options": {
-			  "preserve": "保留上次设置",
-			  "top": "始终停靠在顶部",
-			  "bottom": "始终停靠在底部"
-			}
-		  },
-		  "combatTrackerTakeFullWidth": {
-			"label": "战斗轮播响应侧边栏",
-			"hint": "启用后，当侧边栏收起时，战斗轮播会占据全部可用宽度；当侧边栏展开时，轮播会相应调整。"
-		  },
-		  "carouselImageSource": {
-			"label": "战斗轮播图像来源",
-			"hint": "选择在战斗轮播中显示Token图像还是角色立绘。",
-			"options": {
-			  "token": "Token图像",
-			  "actor": "角色立绘"
-			}
-		  },
-		  "combatTrackerLayout": {
-			"label": "战斗追踪器布局",
-			"hint": "选择战斗追踪器的行为模式。战斗轮播会居中显示当前战斗者并循环滚动。简单列表模式为左对齐，并在需要时滚动以显示活跃战斗者。",
-			"options": {
-			  "carousel": "战斗轮播（居中，循环滚动）",
-			  "simple": "简单列表（无轮播）"
-			}
-		  },
-		  "carouselHideDefeated": {
-			"label": "隐藏已击败的战斗者",
-			"hint": "启用后，已击败的战斗者将从战斗轮播中移除，以便重新计算剩余位置。"
-		  },
-		  "carouselRequirePlayerOwner": {
-			"label": "需要玩家角色",
-			"hint": "启用后，仅当有玩家角色加入战斗时，战斗轮播才会自动打开。禁用后，任何战斗者加入都会打开战斗轮播。"
-		  },
-		  "carouselShowAllHP": {
-			"label": "资源条可见性",
-			"hint": "控制谁可以看到战斗者上的资源/生命值条。需要配置一个追踪资源。此为世界设置（仅GM）。",
-			"options": {
-			  "gmOnly": "仅GM可见（玩家仅可见自己拥有的）",
-			  "all": "所有人可见所有",
-			  "disabled": "禁用"
-			}
-		  },
-		  "carouselTrackedResource": {
-			"label": "追踪资源",
-			"hint": "在战斗者上显示的资源属性（例如生命值）。此为世界设置（仅GM）。"
-		  },
-		  "showCombatRoundButtons": {
-			"label": "显示回合导航按钮",
-			"hint": "启用后，战斗控件中会显示'上一回合'和'下一回合'按钮。此为世界设置（仅GM）。"
-		  }
-		},
-		"reset": "重置",
-		"save": "保存"
-	  },
+      "combatTrackerMenu": {
+        "label": "战斗追踪器",
+        "title": "配置战斗追踪器",
+        "hint": "配置战斗轮播的外观和行为。",
+        "fields": {
+          "enableCombatTrackerCarousel": {
+            "label": "使用可拖拽战斗轮播",
+            "hint": "启用后，当战斗中有战斗者时，战斗追踪器将自动弹出；当战斗结束时自动关闭。同时启用弹出式追踪器的自定义样式。"
+          },
+          "autoPopoutOnCombatStart": {
+            "label": "自动弹出战斗追踪器",
+            "hint": "启用后，当战斗开始或添加战斗者时，战斗追踪器会自动弹出。如果你想手动打开，请关闭此选项。"
+          },
+          "combatCarouselScale": {
+            "label": "停靠战斗轮播缩放比例",
+            "hint": "战斗轮播停靠在屏幕顶部时的缩放比例。范围：0.7（70%）至1.5（150%）。"
+          },
+          "dockedCarouselOffset": {
+            "label": "停靠战斗轮播偏移量",
+            "hint": "战斗轮播停靠时的像素偏移量。当停靠在顶部时应用为 margin-top，当停靠在底部时应用为 margin-bottom。"
+          },
+          "carouselDockOnLoad": {
+            "label": "加载时停靠战斗轮播",
+            "hint": "控制当 FVTT 加载时，战斗轮播停靠的位置。",
+            "options": {
+              "preserve": "保留上次设置",
+              "top": "始终停靠在顶部",
+              "bottom": "始终停靠在底部"
+            }
+          },
+          "combatTrackerTakeFullWidth": {
+            "label": "战斗轮播响应侧边栏",
+            "hint": "启用后，当侧边栏收起时，战斗轮播会占据全部可用宽度；当侧边栏展开时，轮播会相应调整。"
+          },
+          "carouselImageSource": {
+            "label": "战斗轮播图像来源",
+            "hint": "选择在战斗轮播中显示Token图像还是角色立绘。",
+            "options": {
+              "token": "Token图像",
+              "actor": "角色立绘"
+            }
+          },
+          "combatTrackerLayout": {
+            "label": "战斗追踪器布局",
+            "hint": "选择战斗追踪器的行为模式。战斗轮播会居中显示当前战斗者并循环滚动。简单列表模式为左对齐，并在需要时滚动以显示活跃战斗者。",
+            "options": {
+              "carousel": "战斗轮播（居中，循环滚动）",
+              "simple": "简单列表（无轮播）"
+            }
+          },
+          "carouselHideDefeated": {
+            "label": "隐藏已击败的战斗者",
+            "hint": "启用后，已击败的战斗者将从战斗轮播中移除，以便重新计算剩余位置。"
+          },
+          "carouselRequirePlayerOwner": {
+            "label": "需要玩家角色",
+            "hint": "启用后，仅当有玩家角色加入战斗时，战斗轮播才会自动打开。禁用后，任何战斗者加入都会打开战斗轮播。"
+          },
+          "carouselShowAllHP": {
+            "label": "资源条可见性",
+            "hint": "控制谁可以看到战斗者上的资源/生命值条。需要配置一个追踪资源。此为世界设置（仅GM）。",
+            "options": {
+              "gmOnly": "仅GM可见（玩家仅可见自己拥有的）",
+              "all": "所有人可见所有",
+              "disabled": "禁用"
+            }
+          },
+          "carouselTrackedResource": {
+            "label": "追踪资源",
+            "hint": "在战斗者上显示的资源属性（例如生命值）。此为世界设置（仅GM）。"
+          },
+          "showCombatRoundButtons": {
+            "label": "显示回合导航按钮",
+            "hint": "启用后，战斗控件中会显示'上一回合'和'下一回合'按钮。此为世界设置（仅GM）。"
+          },
+          "autoRollNPCsOnCombatStart": {
+            "label": "战斗开始时为 NPC 自动掷骰",
+            "hint": "启用后，战斗一开始就会自动为 NPC 掷先攻，跳过掷骰对话框。此为世界设置（仅 GM）。"
+          }
+        },
+        "reset": "重置",
+        "save": "保存"
+      },
       "sceneNavMenu": {
         "label": "场景导航",
         "title": "配置场景导航",
         "hint": "更改顶部栏场景导航菜单的选项。",
         "fields": {
-		  "hideLoadingSceneName": {
-			"label": "从加载条中隐藏场景名称",
-			"hint": "加载条会显示场景名称，可能会向玩家剧透内容。勾选此选项将仅显示一个细长的加载条。"
-		  },
-		  "disableActiveSceneSeparation": {
-			"label": "禁用激活/非激活场景分离",
-			"hint": "启用后，激活场景将与非激活场景显示在同一列表中，而不是被分离显示在顶部。"
-		  },
+          "hideLoadingSceneName": {
+            "label": "从加载条中隐藏场景名称",
+            "hint": "加载条会显示场景名称，可能会向玩家剧透内容。勾选此选项将仅显示一个细长的加载条。"
+          },
+          "disableActiveSceneSeparation": {
+            "label": "禁用激活/非激活场景分离",
+            "hint": "启用后，激活场景将与非激活场景显示在同一列表中，而不是被分离显示在顶部。"
+          },
           "sceneNavEnabled": {
             "label": "启用自定义场景导航",
             "hint": "[需要重新加载] 如果你与非兼容模组存在布局问题，可以尝试禁用我对场景导航的自定义样式。"
@@ -613,10 +622,10 @@
             "label": "开始时折叠",
             "hint": "启用此选项可在加载FVTT时折叠场景导航，无论先前的保存状态如何。"
           },
-			"collapseNavDuringCombat": {
-				"label": "战斗时自动折叠",
-				"hint": "战斗开始时自动折叠场景导航栏。战斗结束后导航栏将恢复至之前的状态。"
-			},
+          "collapseNavDuringCombat": {
+            "label": "战斗时自动折叠",
+            "hint": "战斗开始时自动折叠场景导航栏。战斗结束后导航栏将恢复至之前的状态。"
+          },
           "sceneClickToView": {
             "label": "启用单击查看与双击激活",
             "hint": "启用后，在场景导航中单击一次场景将查看该场景。双击将激活它。"
@@ -641,19 +650,23 @@
             "label": "切换文件夹时隐藏非激活场景",
             "hint": "启用后，默认场景列表将在文件夹视图打开时隐藏。当你隐藏文件夹时，列表将再次显示。这旨在避免导航中场景的重复。"
           },
-		  "subFoldersLayout": {
-			"label": "子文件夹行对齐方式",
-			"hint": "选择文件夹展开时，其内部场景的排列方式。仅在启用文件夹功能时生效。",
-			"options": {
-			  "parent": "与父文件夹对齐",
-			  "rowStart": "对齐到行首",
+          "subFoldersLayout": {
+            "label": "子文件夹行对齐方式",
+            "hint": "选择文件夹展开时，其内部场景的排列方式。仅在启用文件夹功能时生效。",
+            "options": {
+              "parent": "与父文件夹对齐",
+              "rowStart": "对齐到行首",
               "vertical": "垂直下拉菜单"
-			}
-		  },
-		  "expandScrimToSubfolders": {
-			"label": "将背景扩展到子文件夹",
-			"hint": "启用后，当文件夹展开时，导航背景将扩展以覆盖子文件夹行。"
-		  },
+            }
+          },
+          "expandScrimToSubfolders": {
+            "label": "将背景扩展到子文件夹",
+            "hint": "启用后，当文件夹展开时，导航背景将扩展以覆盖子文件夹行。"
+          },
+          "autoCloseSubmenuOnSceneChange": {
+            "label": "场景切换时自动关闭子菜单",
+            "hint": "启用后，选中或激活场景后，任何打开的文件夹子菜单都会关闭。禁用后，文件夹会保持打开，直到手动关闭。"
+          },
           "sceneItemWidth": {
             "label": "导航项宽度",
             "hint": "留空以使用默认宽度，或定义新的数值。最小为100像素"
@@ -666,7 +679,7 @@
         "label": "系统",
         "title": "配置特定系统的选项",
         "hint": "",
-		"currentSystem": "当前系统",
+        "currentSystem": "当前系统",
         "noSettingsForSystem": "当前系统无特定设置",
         "modulesLabel": "其他模组",
         "fields": {
@@ -678,14 +691,14 @@
             "label": "在角色卡上使用带标签的水平标签",
             "hint": "仅在启用角色卡自定义样式时生效。这将在5e角色卡上应用带标签的水平标签，而不是侧边的图标标签。"
           },
-		  "enableIconsOnSheets": {
-			"label": "在角色卡上启用聊天和提示图标",
-			"hint": "在角色卡的物品图片上显示“在聊天中显示”，并为物品提示显示滚动图标"
-		  },
-		  "applyBladeRunnerTweaks": {
-			"label": "应用Blade Runner系统界面调整",
-			"hint": "启用后，将对Blade Runner系统的角色卡和窗口应用界面调整与样式优化"
-		  }
+          "enableIconsOnSheets": {
+            "label": "在角色卡上启用聊天和提示图标",
+            "hint": "在角色卡的物品图片上显示“在聊天中显示”，并为物品提示显示滚动图标"
+          },
+          "applyBladeRunnerTweaks": {
+            "label": "应用Blade Runner系统界面调整",
+            "hint": "启用后，将对Blade Runner系统的角色卡和窗口应用界面调整与样式优化"
+          }
         },
         "reset": "重置",
         "save": "保存"
@@ -707,83 +720,101 @@
           "large": "大"
         }
       },
-	  "sceneNavCollapsed": {
-		"label": "场景导航已折叠",
-		"hint": "场景导航切换的当前状态。是否已折叠？"
-	  },
-	  "sceneNavPos": {
-		"label": "场景导航位置",
-		"hint": "存储导航的当前位置，以便在重新渲染时重置"
-	  },
-	  "enableMacroLayout": {
-		"label": "启用宏布局",
-		"hint": "模组会放大并居中宏快捷栏上的数字。禁用此设置以使用默认的FVTT布局。"
-	  },
-	  "autoHideLeftControls": {
-		"label": "自动隐藏次要控件",
-		"hint": "启用以保持左侧控件的次要控件隐藏，除非你悬停在该区域或单击项目。"
-	  },
-	  "collapseMacroBar": {
-		"label": "自动隐藏宏栏",
-		"hint": "启用以使宏快捷栏默认折叠，并在悬停时显示。"
-	  },
-	  "debugMode": {
-		"label": "调试模式",
-		"hint": "启用或禁用浏览器控制台上的调试消息。除非模组开发人员要求你打开以进行验证，否则应关闭此功能。"
-	  },
-	  "disableUI": {
-		"label": "在此客户端禁用UI",
-		"hint": "如果玩家不想使用Carolingian UI，他们可以禁用它。模组的其他功能将不起作用，除了聊天卡中的暗色样式 - 可以单独禁用。"
-	  },
-	  "dockDHResources":{
-		"label": "停靠 Daggerheart 恐惧追踪器",
-		"hint": "启用 Daggerheart 资源（恐惧）追踪器的停靠功能。将窗口拖拽至宏快捷栏附近，即可将其停靠在屏幕底部。"
+      "sceneNavCollapsed": {
+        "label": "场景导航已折叠",
+        "hint": "场景导航切换的当前状态。是否已折叠？"
       },
-	  "colorPicker": {
-		"hint": "请爱护你的视网膜：对于强调色，请使用至少具有“中等”对比度评级的颜色，以获得更好的可读性。",
-		"title": "自定义主题颜色",
-		"presets": "预设主题",
-		"accentColor": "强调色",
-		"secondaryColor": "次要颜色",
-		"hue": "色调",
-		"saturation": "饱和度",
-		"lightness": "亮度",
-		"accentOnBackground": "背景上的强调色",
-		"textOnAccent": "强调色上的文本",
-		"secondaryPreview": "次要颜色预览",
-		"contrastGood": "对比度：良好",
-		"contrastMedium": "对比度：中等",
-		"contrastPoor": "对比度：较差",
-		"apply": "保存",
-		"applySecondaryColorToBg": {
-		  "label": "将次要颜色应用到FVTT界面背景",
-		  "hint": "启用后，次要颜色将应用于界面背景（如侧边栏和控件）。这允许你在颜色主题中控制应用程序的背景。"
-		}
-	  }
-	},
-	"combat": {
-      "noCombatants": "遭遇中暂无战斗参与者",
-	  "closedNotice": "如需重新打开战斗轮播，请在侧边栏的战斗标签上右键点击",
-	  "noTrackedResource": "战斗遭遇设置为显示所有角色的资源条，但未在战斗追踪器设置中配置核心FVTT的追踪资源。",
-	  "configureResourceTitle": "配置资源条",
-	  "configureResourceMessage": "战斗轮播设置为显示所有战斗者的资源/生命值条，但未配置追踪资源。请在下方选择要追踪的资源：",
-	  "trackedResource": "追踪资源",
-	  "startCombatShort": "开始",
-	  "endCombatShort": "结束"
+      "sceneNavPos": {
+        "label": "场景导航位置",
+        "hint": "存储导航的当前位置，以便在重新渲染时重置"
+      },
+      "enableMacroLayout": {
+        "label": "启用宏布局",
+        "hint": "模组会放大并居中宏快捷栏上的数字。禁用此设置以使用默认的FVTT布局。"
+      },
+      "autoHideLeftControls": {
+        "label": "自动隐藏次要控件",
+        "hint": "启用以保持左侧控件的次要控件隐藏，除非你悬停在该区域或单击项目。"
+      },
+      "collapseMacroBar": {
+        "label": "自动隐藏宏栏",
+        "hint": "启用以使宏快捷栏默认折叠，并在悬停时显示。"
+      },
+      "debugMode": {
+        "label": "调试模式",
+        "hint": "启用或禁用浏览器控制台上的调试消息。除非模组开发人员要求你打开以进行验证，否则应关闭此功能。"
+      },
+      "disableUI": {
+        "label": "在此客户端禁用UI",
+        "hint": "如果玩家不想使用Carolingian UI，他们可以禁用它。模组的其他功能将不起作用，除了聊天卡中的暗色样式 - 可以单独禁用。"
+      },
+      "dockDHResources": {
+        "label": "停靠 Daggerheart 恐惧追踪器",
+        "hint": "启用 Daggerheart 资源（恐惧）追踪器的停靠功能。将窗口拖拽至宏快捷栏附近，即可将其停靠在屏幕底部。"
+      },
+      "colorPicker": {
+        "hint": "请爱护你的视网膜：对于强调色，请使用至少具有“中等”对比度评级的颜色，以获得更好的可读性。",
+        "title": "自定义主题颜色",
+        "presets": "预设主题",
+        "accentColor": "强调色",
+        "secondaryColor": "次要颜色",
+        "hue": "色调",
+        "saturation": "饱和度",
+        "lightness": "亮度",
+        "accentOnBackground": "背景上的强调色",
+        "textOnAccent": "强调色上的文本",
+        "secondaryPreview": "次要颜色预览",
+        "contrastGood": "对比度：良好",
+        "contrastMedium": "对比度：中等",
+        "contrastPoor": "对比度：较差",
+        "apply": "保存",
+        "applySecondaryColorToBg": {
+          "label": "将次要颜色应用到FVTT界面背景",
+          "hint": "启用后，次要颜色将应用于界面背景（如侧边栏和控件）。这允许你在颜色主题中控制应用程序的背景。"
+        },
+        "actorOverrides": {
+          "title": "按职业 / 按种族强调色（DnD5e）",
+          "hint": "根据角色的最高等级职业或其种族，覆盖单个角色卡上的强调色。将某行的颜色留空即可回退到主题强调色。",
+          "modeClass": "按职业",
+          "modeRace": "按种族",
+          "addRowClass": "添加职业颜色",
+          "addRowRace": "添加种族颜色",
+          "removeRow": "移除",
+          "pickColor": "选择颜色",
+          "clearColor": "使用主题颜色",
+          "namePlaceholderClass": "职业名称",
+          "namePlaceholderRace": "种族名称",
+          "perActorMenuLabel": "更改颜色主题",
+          "perActorDialogTitle": "颜色主题 — {name}",
+          "perActorHint": "仅为此角色设置强调色。这将覆盖职业/种族规则和全局主题。使用下方按钮清除覆盖并回退到那些设置。",
+          "perActorColorLabel": "强调色",
+          "perActorResetTooltip": "重置为默认"
+        }
+      }
     },
-	"dnd5e": {
-	  "chatCard": {
-		"buttons": {
-		  "summons": "召唤",
-		  "attack": "攻击",
-		  "healing": "治疗",
-		  "damage": "伤害",
-		  "template": "测量板",
-		  "consume": "消耗",
-		  "refund": "退还",
-		  "macro": "宏",
-		  "savedc": "豁免DC",
-		  "save": "豁免"
+    "combat": {
+      "noCombatants": "遭遇中暂无战斗参与者",
+      "closedNotice": "如需重新打开战斗轮播，请在侧边栏的战斗标签上右键点击",
+      "noTrackedResource": "战斗遭遇设置为显示所有角色的资源条，但未在战斗追踪器设置中配置核心FVTT的追踪资源。",
+      "configureResourceTitle": "配置资源条",
+      "configureResourceMessage": "战斗轮播设置为显示所有战斗者的资源/生命值条，但未配置追踪资源。请在下方选择要追踪的资源：",
+      "trackedResource": "追踪资源",
+      "startCombatShort": "开始",
+      "endCombatShort": "结束"
+    },
+    "dnd5e": {
+      "chatCard": {
+        "buttons": {
+          "summons": "召唤",
+          "attack": "攻击",
+          "healing": "治疗",
+          "damage": "伤害",
+          "template": "测量板",
+          "consume": "消耗",
+          "refund": "退还",
+          "macro": "宏",
+          "savedc": "豁免DC",
+          "save": "豁免"
         }
       }
     }

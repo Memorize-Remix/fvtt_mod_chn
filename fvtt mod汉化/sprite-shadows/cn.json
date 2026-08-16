@@ -1,24 +1,23 @@
-{"TOKEN": {
-    "TABS": {
-      "shadows": "阴影"
-    }
-  },
-  "TILE": {
-    "TABS": {
-      "shadows": "阴影"
-    }
-  },
+{
   "SPRITESHADOWS": {
+    "TITLE": "精灵阴影",
     "ERRORS": {
-      "TEXTUREGEN": "无法生成阴影纹理"
+      "TEXTUREGEN": "无法生成阴影纹理",
+      "UNKNOWNACTORAPP": "未知的 ActorSheet 应用版本",
+      "VISIONREFRESHPERFORMANCE": "刷新可见性耗时 {duration} 毫秒"
     },
     "SETTINGS": {
       "ADJUSTMENTS": {
+        "ANCHOR": "锚点",
+        "ANCHORTOOLTIP": "自动设置锚点",
         "DRAGPOS": "点击并拖动以微调位置",
         "DRAGSIZE": "点击并拖动以微调大小",
+        "DRAGHINT": "要移动和调整阴影大小，请直接在画布上点击并拖动阴影或其控制手柄。",
         "HEIGHT": "高度",
         "HINT": "微调阴影的位置和大小。",
         "LABEL": "调整",
+        "POSITION": "位置",
+        "SIZE": "大小",
         "WIDTH": "宽度",
         "X": "X轴",
         "Y": "Y轴"
@@ -28,6 +27,10 @@
         "CENTER": "居中",
         "HINT": "阴影相对于其Token的对齐位置。",
         "LABEL": "对齐方式"
+      },
+      "INJECTCONFIGTAB": {
+        "LABEL": "向配置应用添加标签页",
+        "HINT": "启用后，将为图块、Token 和场景的配置应用添加阴影设置标签页"
       },
       "ALPHA": {
         "HINT": "阴影的透明度",
@@ -50,6 +53,10 @@
         "HINT": "阴影的颜色。",
         "LABEL": "颜色"
       },
+      "CONFIGSOURCE": {
+        "HINT": "此 Token 的阴影配置存储位置",
+        "LABEL": "配置来源"
+      },
       "ELEVATIONADJUST": {
         "HINT": "如果启用，将根据Token的高度移动阴影。",
         "LABEL": "根据高度调整"
@@ -70,6 +77,20 @@
         "HINT": "导出JSON配置",
         "LABEL": "导出配置"
       },
+      "GLOBAL": {
+        "HINT": "默认应用于所有 Token 和图块的全局设置。",
+        "LABEL": "全局设置"
+      },
+      "SCENE": {
+        "TITLE": "场景设置"
+      },
+      "TOKEN": {
+        "TITLE": "Token 设置"
+      },
+      "TILE": {
+        "TITLE": "图块设置"
+      },
+      "ID": "ID",
       "IGNORESAADJUSTMENTS": {
         "HINT": "如果启用，将忽略Sprite Animations模组配置的网格调整。",
         "LABEL": "忽略Sprite Animations调整"
@@ -94,15 +115,35 @@
         "HINT": "从此Token加载当前设置",
         "LABEL": "从Token加载"
       },
+      "THRESHOLD": {
+        "LABEL": "Alpha 阈值",
+        "HINT": "创建模板阴影时，丢弃 Alpha 值低于此值的像素"
+      },
+      "NAME": "名称",
+      "REMOVE": {
+        "MESSAGE": "确定要移除 {name} 吗？<br>此操作无法撤销。",
+        "TITLE": "移除模板阴影"
+      },
       "ROTATION": {
         "HINT": "旋转阴影的角度",
         "LABEL": "旋转"
+      },
+      "ROTATEWITHTOKEN": {
+        "LABEL": "随放置物旋转",
+        "HINT": "启用后，当放置物旋转时自动旋转此阴影。"
       },
       "SKEW": {
         "HINT": "倾斜阴影的程度，用于模拟投影角度。",
         "LABEL": "倾斜量"
       },
+      "SOURCE": {
+        "GLOBAL": "全局"
+      },
       "STENCIL": {
+        "ENABLE": {
+          "HINT": "切换此阴影的开启或关闭。",
+          "LABEL": "启用阴影"
+        },
         "HINT": "基于Token纹理的伪3D阴影。",
         "LABEL": "模板阴影"
       },
@@ -110,13 +151,22 @@
         "HINT": "用于模板阴影形状的图像。",
         "LABEL": "图像"
       },
+      "TABS": {
+        "APPEARANCE": "外观",
+        "BASICS": "基础",
+        "BLOB": "圆形阴影",
+        "STENCIL": "模板阴影"
+      },
       "TOKENOVERRIDE": {
         "HINT": "如果启用，将在此Token上直接存储阴影设置，而非角色。",
         "LABEL": "使用Token覆盖"
       },
       "TOOLTIPS": {
+        "ADDSTENCIL": "添加模板阴影",
+        "EDITSTENCIL": "编辑 {name}",
         "EXPORT": "将当前配置导出为JSON",
-        "IMPORT": "导入JSON配置"
+        "IMPORT": "导入JSON配置",
+        "REMOVESTENCIL": "移除 {name}"
       },
       "TYPE": {
         "BLOB": "圆形",
@@ -127,6 +177,23 @@
       "USEIMAGE": {
         "HINT": "配置后，将使用单独的图像作为模板阴影的形状。\n注意：如果你正在使用<a href='https://foundryvtt.com/packages/sprite-animations'>Sprite Animations</a>模组，此设置将禁用与其的集成。",
         "LABEL": "使用图像作为形状"
+      }
+    }
+  },
+  "TOKEN": {
+    "TABS": {
+      "shadows": "阴影"
+    }
+  },
+  "TILE": {
+    "TABS": {
+      "shadows": "阴影"
+    }
+  },
+  "SCENE": {
+    "TABS": {
+      "SHEET": {
+        "shadows": "阴影"
       }
     }
   }

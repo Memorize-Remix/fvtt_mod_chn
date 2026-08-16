@@ -1,4 +1,5 @@
-{"CUSTOM_CHAT_TABS": {
+{
+  "CUSTOM_CHAT_TABS": {
     "enable": {
       "name": "启用聊天标签页",
       "hint": "启用聊天标签页功能。"
@@ -23,14 +24,26 @@
       "ic": "角色",
       "ooc": "超游",
       "rolls": "掷骰",
+      "mechanics": "机制",
       "scene": "场景",
       "whispers": "私聊"
     },
     "pin": "固定消息",
     "unpin": "取消固定消息",
+    "noActiveGM": "无法固定消息：当前没有 GM 在线。",
     "showPinButton": {
       "name": "显示固定指示器",
-      "hint": "在已固定的消息上显示固定图标。"
+      "hint": "在消息上显示固定图标。"
+    },
+    "pinPermission": {
+      "name": "固定权限",
+      "hint": "固定他人消息所需的最低角色。用户始终可以固定自己的消息。",
+      "choices": {
+        "player": "玩家",
+        "trusted": "可信玩家",
+        "assistant": "助理 GM",
+        "gamemaster": "GM"
+      }
     },
     "notificationPips": {
       "name": "通知标记",

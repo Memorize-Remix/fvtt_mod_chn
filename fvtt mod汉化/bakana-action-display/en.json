@@ -1,0 +1,83 @@
+{
+    "BAD": {
+        "settings": {
+            "hudOpacity": {
+                "name": "HUD Opacity",
+                "hint": "Controls the transparency of the Action Display HUD overlay."
+            },
+            "hudScale": {
+                "name": "HUD Scale",
+                "hint": "Controls the overall scale of the HUD window and all its contents proportionally."
+            },
+            "fontSize": {
+                "name": "Font Size (px)",
+                "hint": "Controls the base font size of the text and icons. The HUD window size will remain independent."
+            },
+            "logVerbosity": {
+                "name": "Log Verbosity Level",
+                "hint": "Controls the level of detail printed to the browser console.",
+                "choices": {
+                    "error": "Errors Only",
+                    "warn": "Warnings & Errors (Default)",
+                    "info": "Info, Warnings & Errors",
+                    "debug": "Debug (Everything)"
+                }
+            },
+            "persistDetached": {
+                "name": "Persist Detached HUD on Click-Off",
+                "hint": "If enabled, a detached HUD will stay open when clicking off the token, and will only close if you right-click the same token again."
+            },
+
+            "persistTabState": {
+                "name": "Persist Tab Selections",
+                "hint": "If enabled, your active tab selections for each character are saved and restored whenever you re-open the HUD or refresh Foundry."
+            },
+            "toggleTabSelection": {
+                "name": "Toggle Tab Selections on Left-Click",
+                "hint": "If enabled, left-clicking a tab toggles its selection on or off (multi-select) instead of clearing other selected tabs. Selections are only cleared by clicking them again or clicking 'All'."
+            },
+            "hudAnchorSide": {
+                "name": "HUD Attachment Side",
+                "hint": "Controls whether the Attached HUD anchors vertically (Above / Below) or horizontally (Left / Right) relative to the token.",
+                "choices": {
+                    "vertical": "Vertical (Above / Below)",
+                    "horizontal": "Horizontal (Left / Right)"
+                }
+            },
+            "hudGridOffset": {
+                "name": "HUD Grid Offset (Vertical)",
+                "hint": "Controls the vertical distance (in grid units) to offset the HUD above or below the token."
+            },
+            "hudGridOffsetHorizontal": {
+                "name": "HUD Grid Offset (Horizontal)",
+                "hint": "Controls the horizontal distance (in grid units) to offset the HUD to the left or right of the token."
+            }
+        },
+        "core": {
+            "filterNoResources": "Hide Depleted",
+            "hidden": "Hidden",
+            "hideAction": "Hide Action",
+            "unhideAction": "Unhide Action",
+            "noActions": "No actions available.",
+            "allItems": "All Items",
+            "other": "Other",
+            "allActions": "All Actions",
+            "none": "None"
+        },
+        "common": {
+            "actionEconomy": "Action Economy",
+            "itemCharges": "Item Charges",
+            "prepareSpell": "Prepare Spell",
+            "unprepareSpell": "Unprepare Spell",
+            "equipItem": "Equip Item",
+            "unequipItem": "Unequip Item",
+            "allSpells": "All Spells",
+            "allWeapons": "All Weapons",
+            "allEquipment": "All Equipment",
+            "spellComponents": "Spell Components"
+        },
+        "dnd5e": {
+            "upcast": "Upcast"
+        }
+    }
+}

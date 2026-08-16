@@ -1,0 +1,177 @@
+{
+  "LOOTFORGE": {
+    "Title": "LootForge",
+    "HUD": {
+      "LootBody": "搜刮尸体",
+      "LootTargetedBody": "搜刮目标尸体",
+      "ViewLoot": "查看战利品",
+      "Looted": "已搜刮",
+      "ResetLoot": "重置战利品"
+    },
+    "Keybinding": {
+      "LootTargetHint": "搜刮标记的尸体，或最近的可搜刮尸体（Alt+L）。玩家必须在 10 英尺以内。双击尸体也可以。"
+    },
+    "Quality": {
+      "poor": "粗糙",
+      "standard": "普通",
+      "good": "良好",
+      "excellent": "优秀",
+      "exceptional": "卓越"
+    },
+    "Notify": {
+      "WrongSystem": "LootForge 目前仅支持 D&D 5e 系统。",
+      "NotDefeated": "{name} 还无法搜刮（请击败该生物，或放置一个 LootForge 宝箱/容器）。",
+      "AlreadyLooted": "{name} 已经被搜刮过了。",
+      "AlreadyLootedEmpty": "这具尸体已经被搜刮过了。",
+      "NoLooter": "未找到符合条件的玩家角色。请创建一个角色，或在场景中放置一个角色。",
+      "RollCancelled": "搜刮技能掷骰已取消。",
+      "RollInvestigation": "正在掷调查检定以搜刮尸体……",
+      "RollLootSkill": "正在掷 {skill} 以搜刮尸体……",
+      "InvestigationAlreadyRolled": "这具尸体已经掷过搜刮技能——正在等待 DM。",
+      "LootInProgress": "LootForge 正在处理这具尸体——请等待当前的掷骰/会话结束。",
+      "NoTable": "未找到 {name} 的 LootForge 配置文件。",
+      "LootAvailable": "战利品可用：{name}",
+      "FlagReset": "已重置 {name} 的战利品。",
+      "PermissionDenied": "你没有权限修改 {name} 上的战利品。",
+      "NeedGM": "必须有在线 GM 连接，LootForge 才能更新尸体战利品。",
+      "SelectOrTarget": "用 T 标记一个被击败的生物，然后使用「搜刮目标尸体」（或 Alt+L）。",
+      "NoAssignedCorpse": "未找到可搜刮的尸体。请标记一具尸体，或站在尸体附近。",
+      "WaitingForGM": "正在等待 DM 完成战利品审核。",
+      "PlayersMustInitiate": "只有玩家才能开始搜刮尸体——请让玩家双击它。",
+      "LootOpenForAll": "战利品已就绪——靠近到 {range} 英尺以内，然后双击尸体进行搜刮。",
+      "LootReadyApproach": "{name} 上的战利品已就绪。靠近到 {range} 英尺以内，然后双击（或 Alt+L）进行搜刮。",
+      "TooFarToLoot": "你必须距离尸体 {range} 英尺以内才能搜刮。",
+      "NeedNearbyCharacter": "搜刮前，请先选择或放置一个靠近尸体的角色 Token。",
+      "PlayerGeneratedLoot": "{player} 在 {name} 上掷出了 {skill} {total}。请审核战利品，然后保存并关闭。",
+      "LootBusy": "{name} 正在搜刮这具尸体。",
+      "ResetConfirm": "要清除这具尸体上已生成战利品，以便可以重新生成吗？",
+      "NoTakePermission": "你没有权限拿走这些战利品。",
+      "ItemGone": "该物品在尸体上已不再可用。",
+      "TransferFailed": "战利品无法转移给所选角色。",
+      "TransferBusy": "已有一笔战利品转移正在进行中。",
+      "TransferPending": "战利品请求已发送给 GM……",
+      "CharacterMissing": "所选角色已不存在。",
+      "NoItemsToAssign": "没有可发放的战利品。",
+      "CorpseEmpty": "这具尸体已被搜刮一空。",
+      "LootDeposited": "剩余的战利品留给了其他玩家。"
+    },
+    "Dialog": {
+      "Title": "战利品 — {name}",
+      "ChooseLooterTitle": "谁在搜刮？",
+      "ChooseLooter": "角色",
+      "ChooseLooterHint": "选择哪个角色进行技能掷骰和/或接收战利品。",
+      "Close": "关闭",
+      "Empty": "没有回收任何可用材料。"
+    },
+    "Skill": {
+      "Investigation": "调查",
+      "Survival": "求生"
+    },
+    "DM": {
+      "Title": "LootForge — DM 审核",
+      "TitleNamed": "LootForge — {name}",
+      "Type": "类型",
+      "CR": "CR",
+      "Size": "体型",
+      "Investigation": "调查",
+      "Survival": "求生",
+      "Natural": "自然",
+      "RolledBy": "掷骰者",
+      "RerollAll": "全部重掷",
+      "RerollItem": "重掷物品",
+      "RemoveItem": "移除物品",
+      "AddItem": "添加 LootForge 物品",
+      "Add": "添加",
+      "SaveAndClose": "保存并关闭",
+      "SaveAndCloseHint": "保存并关闭（或关闭）会发放这些战利品，之后任何玩家都可以双击尸体打开战利品窗口。"
+    },
+    "Player": {
+      "Title": "战利品",
+      "TitleNamed": "战利品 — {name}",
+      "WindowTitle": "物品",
+      "LootFor": "战利品归属",
+      "TakeItem": "拿走",
+      "TakeAll": "全部拿走",
+      "LootAll": "搜刮全部",
+      "Done": "完成",
+      "DoubleClickHint": "双击物品即可拿走。关闭窗口会把剩余物品留给所有人——打开的战利品窗口会保持同步。"
+    },
+    "Settings": {
+      "ManualGenerationOnly": {
+        "Name": "仅手动生成",
+        "Hint": "旧版设置（未使用）。"
+      },
+      "RequireInvestigationRoll": {
+        "Name": "要求调查掷骰",
+        "Hint": "旧版设置——调查总是由玩家掷骰。"
+      },
+      "DefaultInvestigationTotal": {
+        "Name": "默认调查总值",
+        "Hint": "旧版设置——未使用。"
+      },
+      "AllowAllPlayersToLoot": {
+        "Name": "允许所有玩家搜刮",
+        "Hint": "GM 关闭 DM 审核后，任何玩家都可以双击尸体一起搜刮（实时同步）。建议开启。"
+      },
+      "AllowPlayerRequestLoot": {
+        "Name": "允许玩家向 DM 请求战利品",
+        "Hint": "旧版设置——玩家通过双击开始调查。"
+      },
+      "PreventDuplicateGeneration": {
+        "Name": "防止重复生成",
+        "Hint": "阻止在已有生成战利品的尸体上重新生成战利品。"
+      },
+      "ShowLootIndicators": {
+        "Name": "显示战利品指示",
+        "Hint": "生物被标记为死亡后，立即在其周围显示魔兽世界风格的白色闪光。搜刮完毕后闪光消失，尸体被隐藏。"
+      },
+      "EnableRareDrops": {
+        "Name": "启用稀有掉落",
+        "Hint": "允许出现不常见的奖励，例如 Alpha Wolf Fang。"
+      },
+      "DebugLogging": {
+        "Name": "调试日志",
+        "Hint": "向控制台输出详细的 LootForge 日志。"
+      },
+      "Auth": {
+        "PanelLabel": "Gambits Forge 认证",
+        "MenuName": "Gambits Forge 账户",
+        "MenuLabel": "管理账户",
+        "Hint": "使用你的 Gambits Forge 账户登录。LootForge 需要 Tier 1 或更高等级。当 GM 拥有权限时，玩家无需自己的订阅。",
+        "AccessStatus": "LootForge 访问状态",
+        "AccessGranted": "已激活",
+        "AccessLocked": "已锁定",
+        "AuthState": "认证状态",
+        "WorldAccess": "世界解锁",
+        "WorldUnlocked": "已为玩家解锁",
+        "WorldLocked": "已锁定",
+        "ApiBaseUrl": {
+          "Name": "Gambits Forge API 基础 URL",
+          "Hint": "用于账户与权限检查的后端 URL。默认为生产环境的 Gambits Forge API。"
+        },
+        "Debug": {
+          "Name": "调试认证日志",
+          "Hint": "向控制台记录认证流程详情。绝不会打印令牌和密码。"
+        }
+      }
+    },
+    "Access": {
+      "Title": "LootForge 访问权限",
+      "Required": "LootForge 需要有效的 Gambits Forge Tier 1 或更高等级订阅。",
+      "Expired": "你的 LootForge 访问权限已过期。请连接互联网并检查你的订阅。",
+      "NoEntitledGM": "没有具备权限的 GM 可处理 LootForge 操作。",
+      "Account": "账户",
+      "Plan": "方案",
+      "Expires": "权限到期时间",
+      "NoAccount": "未登录",
+      "SignIn": "登录",
+      "SyncSubscription": "同步订阅",
+      "CheckSubscription": "同步订阅",
+      "ForgotPassword": "忘记密码",
+      "CreateAccount": "创建账户",
+      "OpenWebsite": "打开 Gambits Forge 网站",
+      "OpenAccount": "打开账户页面",
+      "LogOut": "退出登录"
+    }
+  }
+}

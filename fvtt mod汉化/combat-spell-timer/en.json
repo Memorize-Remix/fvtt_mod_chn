@@ -1,0 +1,122 @@
+{
+  "COMBAT_SPELL_TIMER": {
+    "Title": "Combat Spell Timer",
+    "CastRound": "Cast: Round {round}",
+    "RoundsLeft": "{n} rounds left",
+    "NameWithSource": "{name} ({source})",
+    "ToggleEffects": "Show effect details",
+    "RoundsUnit": "Rounds",
+    "RemoveSpellTimer": "Remove Spell Timer",
+    "EndSpell": "End {name}",
+    "RemoveEffect": "Remove {name}",
+    "UpdateEffect": "Update Effect",
+    "UpdateTitle": "Update {name}",
+    "Update": "Update",
+    "FeatureAutoExtended": "{actor}'s {feature} was extended automatically — owner not logged in.",
+    "Keep": "Keep",
+    "RemoveOnDeleteTitle": "Owner Left Combat",
+    "RemoveOnDeletePrompt": "{name} was removed from combat. Also remove their tracked spell timer(s)?",
+    "RemoveOnDeleteNote": "Concentration will not be ended.",
+    "ExistingTitle": "Existing Concentration",
+    "ExistingSubtitle": "{name} is already concentrating",
+    "RoundsRemaining": "Rounds remaining",
+    "InitiativeOptional": "Initiative (optional)",
+    "InitiativeHint": "Leave blank to use combatant's rolled initiative",
+    "AddTimer": "Add Timer",
+    "RemoveConcentration": "Remove Concentration",
+    "Rage": {
+      "TimerName": "Rage",
+      "Raging": "Raging",
+      "ExtendTitle": "Rage — End of Turn",
+      "ExtendPrompt2014": "{name}'s Rage turn just ended. Extend or end it?",
+      "ExtendPrompt2024": "{name}'s Rage turn just ended. Extend or end it?",
+      "Extend": "Extend Rage",
+      "EndRage": "End Rage",
+      "AlreadyRagingTitle": "Already Raging",
+      "AlreadyRagingPrompt": "{name} is already raging! How many rounds remain?",
+      "AlreadyRagingRounds": "Rounds Remaining",
+      "RoundsLeft": "Max rounds left {n}"
+    },
+    "FormOfTheBeast": {
+      "Title": "Form of the Beast",
+      "Prompt": "{name} rages — manifest the bestial power within? Choose a natural weapon to take form until the rage ends.",
+      "Bite": "Bite",
+      "Claws": "Claws",
+      "Tail": "Tail",
+      "None": "Don't Transform",
+      "BiteWeapon": "Bite (Form of the Beast)",
+      "ClawsWeapon": "Claws (Form of the Beast)",
+      "TailWeapon": "Tail (Form of the Beast)",
+      "BiteDescription": "Your mouth transforms into a bestial muzzle or great mandibles. Once on each of your turns when you damage a creature with this bite, you regain hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.",
+      "ClawsDescription": "Each of your hands transforms into a claw, usable as a weapon while it's empty. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.",
+      "TailDescription": "You grow a lashing, spiny tail with reach. When a creature you can see within 10 feet hits you with an attack roll, you can use your reaction to roll a d8 and add it to your AC against that attack, possibly causing it to miss."
+    },
+    "TotemSpirit": {
+      "BearDescription": "While raging, you have resistance to all damage except psychic damage.",
+      "ElkDescription": "While you're raging and aren't wearing heavy armor, your walking speed increases by 15 feet.",
+      "EagleDescription": "While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn.",
+      "TigerDescription": "While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance.",
+      "WolfDescription": "While raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you."
+    },
+    "TotemicAttunement": {
+      "BearDescription": "While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature.",
+      "EagleDescription": "While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft.",
+      "ElkDescription": "While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked prone and take bludgeoning damage equal to 1d12 + your Strength modifier.",
+      "TigerDescription": "While raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it.",
+      "WolfDescription": "While raging, you can use a bonus action to knock a Large or smaller creature prone when you hit it with a melee weapon attack."
+    },
+    "WildSurge": {
+      "ExplodingSpirit": "Exploding Spirit",
+      "ExplodingSpiritDescription": "Until your rage ends, you can use a bonus action on each of your turns to summon another exploding spirit. At the end of the turn it appears, the spirit explodes: each creature within 5 feet of it must succeed on a Dexterity saving throw or take 1d6 force damage.",
+      "WildMagicDamage": "Wild Magic Damage",
+      "WildMagicDamageDescription": "Until your rage ends, whenever a creature hits you with an attack roll, that creature takes 1d6 force damage as magic lashes out in retribution.",
+      "FlowersAndVines": "Flowers and Vines",
+      "FlowersAndVinesDescription": "Flowers and vines temporarily grow around you. Until your rage ends, the ground within 15 feet of you is difficult terrain for your enemies.",
+      "BoltOfLight": "Bolt of Light",
+      "BoltOfLightDescription": "Until your rage ends, you can use a bonus action on each of your turns to shoot another bolt of light from your chest: a creature of your choice within 30 feet must succeed on a Constitution saving throw or take 1d6 radiant damage and be blinded until the start of your next turn."
+    },
+    "ZealousPresence": {
+      "RoundsLeft": "Until the caster's next turn",
+      "EndLabel": "End Zealous Presence"
+    },
+    "PathToTheGrave": {
+      "NoPool": "Couldn't find a Channel Divinity uses pool for {name} — the ability won't consume anything.",
+      "EffectName": "Cursed",
+      "EffectDescription": "Cursed until the end of the caster's next turn: the next time the caster or an ally hits this creature with an attack, it has vulnerability to all of the attack's damage, and then the curse ends.",
+      "RoundsLeft": "Until the end of the caster's next turn",
+      "EndLabel": "End Path to the Grave"
+    },
+    "Beyond20": {
+      "SectionHeading": "Beyond20 Integration",
+      "CastSpell": "Cast Spell",
+      "SettingName": "Beyond20: Cast Spell button",
+      "SettingHint": "Add a \"Cast Spell\" button to Beyond20 spell chat cards that casts the spell in Foundry and consumes the slot.",
+      "AutoCastName": "Beyond20: Auto-cast spell / apply effect",
+      "AutoCastHint": "Automatically cast spells and apply feature effects (e.g. Rage) from Beyond20 cards you trigger, instead of clicking the button. The button is still shown, but disabled.",
+      "StartRage": "Start Rage",
+      "UseBolsteringMagic": "Use Bolstering Magic",
+      "UseZealousPresence": "Use Zealous Presence",
+      "FeatureNotFound": "Combat Spell Timer: couldn't find \"{name}\" on {actor}. Its name on the character sheet may differ.",
+      "SpellNotFound": "Combat Spell Timer: couldn't find the D&D Beyond spell \"{name}\" on {actor}. Its name on the character sheet may differ.",
+      "NoActivity": "Combat Spell Timer: \"{name}\" has no usable activity to cast.",
+      "NoActor": "Combat Spell Timer: couldn't resolve the casting actor for this card.",
+      "SpellMap": {
+        "Title": "Beyond20 Spell Name Mappings",
+        "MenuName": "Spell Name Mappings",
+        "MenuLabel": "Configure Mappings",
+        "MenuHint": "Map D&D Beyond spell names to the matching spell names on your Foundry character sheets, for spells the Cast Spell button can't find by name.",
+        "Help": "Map a D&D Beyond spell name (left) to the spell's name on the Foundry character sheet (right). Matching ignores case. Leave nothing blank; incomplete rows are discarded on save.",
+        "From": "D&D Beyond name",
+        "To": "Foundry spell name",
+        "FromPlaceholder": "D&D Beyond name",
+        "ToPlaceholder": "Foundry spell name",
+        "Add": "Add Mapping",
+        "ClearAll": "Clear All",
+        "Save": "Save",
+        "Remove": "Remove mapping",
+        "ShowSuggestions": "Show spell suggestions",
+        "Saved": "Spell name mappings saved."
+      }
+    }
+  }
+}

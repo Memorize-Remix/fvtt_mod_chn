@@ -1,0 +1,23 @@
+{
+  "the-horses-encumbrance-controls": {
+    "settings": {
+      "carryWeightMultiplier": {
+        "name": "Carry Weight Multiplier",
+        "hint": "Multiplier for Strength to calculate total carrying capacity. Each encumbrance tier is a fraction of this total (default: 15)"
+      },
+      "enableEffects": {
+        "name": "Enable Encumbrance Effects",
+        "hint": "When enabled, applies custom temporary effects based on encumbrance tier"
+      },
+      "currencyPerWeight": {
+        "name": "Currency per Weight",
+        "hint": "Number of coins that equal 1 pound of weight. Set to 0 to make currency completely weightless (default: 50)"
+      }
+    },
+    "effects": {
+      "encumbered": "Encumbered",
+      "heavilyEncumbered": "Heavily Encumbered",
+      "exceedingCapacity": "Exceeding Carrying Capacity"
+    }
+  }
+}

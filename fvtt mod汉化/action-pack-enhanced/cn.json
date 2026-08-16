@@ -1,10 +1,11 @@
-{"action-pack-enhanced": {
+{
+    "action-pack-enhanced": {
         "control-icon": "切换 APE 显示",
         "end-turn": "结束回合",
         "roll-initiative": "投掷先攻！",
         "roll-check": "属性检定",
         "roll-save": "豁免检定",
-		"drag-to-target": "拖拽到目标",
+        "drag-to-target": "拖拽到目标",
         "action-type": {
             "action": "动作",
             "bonus": "附赠动作",
@@ -14,7 +15,7 @@
             "special": "特殊"
         },
         "range": {
-			"ft": "尺",
+            "ft": "尺",
             "self": "自身",
             "touch": "触及",
             "spec": "特殊",
@@ -35,6 +36,7 @@
             "year": "年"
         },
         "flag": {
+            "shield-title": "盾牌",
             "bonus": "B",
             "bonus-title": "附赠动作",
             "reaction": "R",
@@ -45,12 +47,14 @@
             "concentration-title": "专注",
             "legendary": "L",
             "legendary-title": "传奇动作",
+            "lair": "La",
+            "lair-title": "巢穴动作",
             "unprepared": "U",
             "unprepared-title": "未准备的法术",
             "unequipped": "装备",
-			"unequipped-title": "未装备"
+            "unequipped-title": "未装备"
         },
-		"masteries": {
+        "masteries": {
             "cleave": "横扫",
             "graze": "擦掠",
             "nick": "迅击",
@@ -64,6 +68,8 @@
             "equipped": "已装备",
             "inventory": "物品栏",
             "feature": "特性",
+            "legendary": "传奇动作",
+            "lair": "巢穴动作",
             "spell": "法术",
             "weapon": "武器",
             "equipment": "装备",
@@ -72,7 +78,7 @@
             "innate": "天生能力",
             "atwill": "随意施展",
             "pact": "契约魔法",
-			"unprepared": "未准备",
+            "unprepared": "未准备",
             "spell0": "戏法",
             "spell1": "1环",
             "spell2": "2环",
@@ -106,39 +112,82 @@
             "tray-size-medium": "中",
             "tray-size-large": "大",
             "use-control-button": "在Token控件中包含切换按钮",
-			"use-control-button-hint": "在Token控件栏中添加一个切换按钮，用于打开和关闭 APE 显示。如果你已将 APE 显示设置为始终显示，这会很有帮助。",
-			"show-inspiration-animation": "显示激励动画",
-			"show-inspiration-animation-hint": "当角色启用激励时播放激励动画。**如果取消勾选此项，忘记自己有激励时请不要怪我。只是提醒一下。**",
-			"use-custom-icons": "使用自定义图标",
-			"use-custom-icons-hint": "为种族和职业使用自定义图标；如果未勾选，则使用系统图标。**APE 包含一些由 AI 生成的各职业和子职业图标。公平地说，它们并不算很好，但能提供一致的外观和感觉。我个人不太喜欢它们，但也不太喜欢默认图标。我会努力制作更好的图标，如果有人愿意帮忙，请告诉我。**",
-			"show-weapon-mastery": "显示武器精通",
-			"show-weapon-mastery-hint": "在APE显示的装备栏中，为武器物品显示武器精通标签。",
-			"show-xp-info": "显示经验值进度",
-			"show-xp-info-hint": "如果使用里程碑升级请取消勾选。勾选后将在点击当前经验值时显示当前和下一等级的经验值、经验进度条以及增减按钮。",
-			"static-info": "静态信息区域（无折叠面板）",
-			"static-info-hint": "在折叠面板和静态显示之间切换经验值/生命值/休息区域。",
+            "use-control-button-hint": "在Token控件栏中添加一个切换按钮，用于打开和关闭 APE 显示。如果你已将 APE 显示设置为始终显示，这会很有帮助。",
+            "show-inspiration-animation": "显示激励动画",
+            "show-inspiration-animation-hint": "当角色启用激励时播放激励动画。**如果取消勾选此项，忘记自己有激励时请不要怪我。只是提醒一下。**",
+            "use-custom-icons": "使用自定义图标",
+            "use-custom-icons-hint": "为种族和职业使用自定义图标；如果未勾选，则使用系统图标。**APE 包含一些由 AI 生成的各职业和子职业图标。公平地说，它们并不算很好，但能提供一致的外观和感觉。我个人不太喜欢它们，但也不太喜欢默认图标。我会努力制作更好的图标，如果有人愿意帮忙，请告诉我。**",
+            "show-weapon-mastery": "显示武器精通",
+            "show-weapon-mastery-hint": "在APE显示的装备栏中，为武器物品显示武器精通标签。",
+            "show-xp-info": "显示经验值进度",
+            "show-xp-info-hint": "如果使用里程碑升级请取消勾选。勾选后将在点击当前经验值时显示当前和下一等级的经验值、经验进度条以及增减按钮。",
+            "static-info": "静态信息区域（无折叠面板）",
+            "static-info-hint": "在折叠面板和静态显示之间切换经验值/生命值/休息区域。",
+            "show-detailed-info": "显示详细角色信息",
+            "show-detailed-info-hint": "在 APE 显示中显示详细角色信息部分。该部分显示角色的伤害抗性、伤害免疫、伤害易伤、状态免疫和语言。",
             "show-no-uses": "显示没有使用次数的物品",
-			"show-no-uses-hint": "如果物品没有剩余使用次数，它将从 APE 显示中移除。勾选此项可保留该物品在显示中。",
-			"sort-alphabetic": "按字母顺序排序物品",
-			"sort-alphabetic-hint": "物品默认按添加到角色的顺序排序。勾选此项可改为按字母顺序排序。",
-			"show-unprepared-cantrips": "显示未准备的戏法",
-			"show-unprepared-cantrips-hint": "（这是原版动作包的旧设置，据我所知，在 D&D 5e 和 5.5e 中所有戏法默认都是已准备的）",
-			"show-unprepared-spells": "显示未准备的法术",
-			"show-unprepared-spells-hint": "默认只显示已准备的法术。勾选此项可显示所有法术，包括未准备的法术——根据 DM 规则，这些法术可能仍可使用。",
-			"show-spell-dots": "显示法术位圆点",
-			"show-spell-dots-hint": "勾选此项可将法术位显示为一系列已填充/未填充的圆点。",
-			"show-spell-uses": "显示法术位使用次数",
-			"show-spell-uses-hint": "勾选此项可将法术位显示为剩余使用次数/总使用次数的数值。",
-			"show-death-saves": "在 APE 中隐藏死亡豁免 UI",
-			"show-death-saves-hint": "勾选此项可在 APE 中隐藏死亡豁免 UI。该 UI 仅在角色生命值为 0 时可见。"
+            "show-no-uses-hint": "如果物品没有剩余使用次数，它将从 APE 显示中移除。勾选此项可保留该物品在显示中。",
+            "sort-alphabetic": "按字母顺序排序物品",
+            "sort-alphabetic-hint": "物品默认按添加到角色的顺序排序。勾选此项可改为按字母顺序排序。",
+            "show-unprepared-cantrips": "显示未准备的戏法",
+            "show-unprepared-cantrips-hint": "（这是原版动作包的旧设置，据我所知，在 D&D 5e 和 5.5e 中所有戏法默认都是已准备的）",
+            "show-unprepared-spells": "显示未准备的法术",
+            "show-unprepared-spells-hint": "默认只显示已准备的法术。勾选此项可显示所有法术，包括未准备的法术——根据 DM 规则，这些法术可能仍可使用。",
+            "show-spell-dots": "显示法术位圆点",
+            "show-spell-dots-hint": "勾选此项可将法术位显示为一系列已填充/未填充的圆点。",
+            "show-spell-uses": "显示法术位使用次数",
+            "show-spell-uses-hint": "勾选此项可将法术位显示为剩余使用次数/总使用次数的数值。",
+            "show-death-saves": "在 APE 中隐藏死亡豁免 UI",
+            "show-death-saves-hint": "勾选此项可在 APE 中隐藏死亡豁免 UI。该 UI 仅在角色生命值为 0 时可见。",
+            "spell-points-text-color": "法术点文字颜色",
+            "spell-points-text-color-hint": "显示法术点（剩余/总计）的文字颜色。",
+            "spell-points-bar-color-start": "法术点条起始颜色",
+            "spell-points-bar-color-start-hint": "法术点条的起始颜色（当点数接近上限时）。",
+            "spell-points-bar-color-end": "法术点条结束颜色",
+            "spell-points-bar-color-end-hint": "法术点条的结束颜色（当点数接近零时）。"
         },
-		"warning": {
-			"quantity-limit": "数量不足，无法在两个栏位同时装备。",
-			"two-handed": "同一套装备中不能同时装备两把双手武器。"
-		},
+        "warning": {
+            "quantity-limit": "数量不足，无法在两个栏位同时装备。",
+            "two-handed": "同一套装备中不能同时装备两把双手武器。",
+            "item-not-found": "找不到所选物品。",
+            "premium-locked": "管理法术和物品栏需要有效的 Patreon 订阅。"
+        },
         "item-context": {
             "show": "在 APE 显示中显示",
             "hide": "在 APE 显示中隐藏"
+        },
+        "dialog": {
+            "delete-item-title": "删除物品",
+            "delete-item-content": "确定要删除 <strong>{name}</strong> 吗？此操作无法撤销。",
+            "delete": "删除",
+            "cancel": "取消"
+        },
+        "manage": {
+            "add-item-title": "从合集添加物品",
+            "add-spell-title": "从合集添加法术",
+            "quantity-title": "数量",
+            "prepared-title": "已准备",
+            "unprepared-toggle-title": "未准备（点击以准备）",
+            "delete-item-title": "删除物品",
+            "prepared-count-title": "已准备法术 / 可准备的上限"
+        },
+        "premium": {
+            "connect": "连接 Patreon",
+            "connect-title": "连接 Patreon",
+            "connect-intro": "点击「开始身份验证」以连接你的 Patreon 账户。将打开一个浏览器标签页供你登录。",
+            "start-auth": "开始身份验证",
+            "waiting": "正在浏览器中等待身份验证……",
+            "waiting-attempt": "正在浏览器中等待身份验证……（{attempt}/{max}）",
+            "connected": "已作为 {tier} 支持者连接！",
+            "auth-failed": "身份验证超时或失败。请重试。",
+            "disconnect": "断开连接",
+            "disconnect-title": "断开 Patreon 连接",
+            "disconnect-content": "断开你的 Patreon 账户？法术和物品栏管理将再次被锁定。",
+            "supporter-tier": "{tier} 支持者",
+            "table-unlocked": "法术/物品栏管理已由 GM 解锁"
+        },
+        "version": {
+            "update-available": "有可用更新：v{version}"
         }
     }
 }
