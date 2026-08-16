@@ -151,6 +151,13 @@
       "DisplayNamePlaceholder": "Leave blank to use filename",
       "CategoryLabel": "Category",
       "Uploading": "Uploading...",
+      "UploadPreparing": "Preparing {name}...",
+      "UploadReading": "Reading {name} ({percent}%)...",
+      "UploadTransferStarting": "Uploading {name} to proxy...",
+      "UploadTransfer": "Uploading {name}{size}{speed}...",
+      "UploadSent": "Upload sent; waiting for server processing...",
+      "UploadComplete": "Uploaded {name}",
+      "UploadFailed": "PDF upload failed",
       "UploadBtn": "Upload PDF",
       "Delete": "Delete document",
       "DeleteTitle": "Delete Document",
@@ -164,6 +171,7 @@
       "InvalidFileType": "Please select a PDF file",
       "FileTooLarge": "File is too large (max {max})",
       "GenerateEmbeddings": "Generate semantic embeddings for existing content",
+      "RecoverGMPrep": "Recover GM Prep journals — rebuild any missing journal entries from scripts saved on the server",
       "EmbeddingsStarting": "Generating embeddings for content. This may take a few minutes...",
       "EmbeddingsSuccess": "Generated {count} new embeddings",
       "EmbeddingsNothingToDo": "All content already has embeddings",
@@ -536,6 +544,45 @@
       "NotIncludedList": "PDF files (re-upload needed), Full chat history, API credentials, Embeddings (regenerated automatically)",
       "GMOnly": "Backup management is only available to the GM."
     },
+    "Voice": {
+      "Toggle": {
+        "Label": "Hear AI voice",
+        "Hint": "Play AI responses out loud when canon is published. Per-user setting; off by default."
+      },
+      "PTT": {
+        "Label": "Push to talk",
+        "NotSupported": "Voice input requires Chrome or Edge."
+      },
+      "PermissionDenied": {
+        "Title": "Microphone access denied",
+        "Body": "Loremaster needs microphone access for push-to-talk. Enable it in your browser site settings and reload."
+      },
+      "SettingsHeader": "Voice",
+      "Provider": {
+        "ApiKey": {
+          "Label": "ElevenLabs API key",
+          "Hint": "Required for self-hosted mode. Hosted users do not need to set this."
+        },
+        "VoiceId": {
+          "Label": "Voice ID",
+          "Hint": "ElevenLabs voice ID (the UUID-style ID, not the display name). Find IDs at https://elevenlabs.io/app/voice-lab. Default: Einstein (n4gY9MeIbTbAMJ5rlJ51)."
+        }
+      },
+      "EmoteTags": {
+        "Label": "Use ElevenLabs v3 audio tags",
+        "Hint": "When on, Loremaster uses ElevenLabs v3 (more expressive) and Claude is instructed to add tags like [whispers], [excited] for emotional delivery. When off, falls back to eleven_turbo_v2_5 with no emote variation. Per-world setting; default on."
+      },
+      "Volume": "Voice volume",
+      "Hotkey": {
+        "Label": "Push-to-talk key",
+        "Hint": "Single character. Default: ` (backtick).",
+        "Mode": {
+          "Label": "Push-to-talk mode",
+          "Hold": "Hold to talk",
+          "Toggle": "Press to start/stop"
+        }
+      }
+    },
     "SharedContent": {
       "YourDocuments": "Your Documents",
       "SharedLibrary": "Shared Library",
@@ -626,7 +673,10 @@
       "SessionExpired": "Session expired",
       "NotConnected": "Not connected",
       "AuthRequired": "Sign in required",
-      "Disabled": "Disabled"
+      "Disabled": "Disabled",
+      "CouldntLoad": "Couldn't load",
+      "Retry": "Retry",
+      "SessionExpiredNotice": "Your session expired — please sign in again."
     },
     "SettingsPanel": {
       "AccountSection": "Account",

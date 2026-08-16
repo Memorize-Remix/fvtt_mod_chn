@@ -18,7 +18,7 @@
         "Skipped": "Sources not auto-assigned. You can configure them manually in the Actor Studio settings when ready."
       }
     },
-	"Notification": {
+    "Notification": {
       "CompendiumSourcesCleaned": "Actor Studio cleaned some compendium sources for {type}. <a class='gas-open-sources' href='#'>Open Sources</a> to review and save changes.",
       "SettingsSaved": "Settings saved successfully.",
       "SettingsSaveFailed": "Failed to save settings. Please try again."
@@ -31,7 +31,8 @@
       "Button": "Level Up",
       "ClassLevelUp": "Level up this class",
       "ExistingClassesTitle": "Level Up Existing Class",
-      "ExistingClassesDescription": "Click the class you want to level up, or select a class from the Multiclass dropdown to add a new one.",
+      "ExistingClassesDescription": "Click the class you want to level up.",
+      "MultiClassesDescription": "OR select a class from the Multiclass dropdown to add a new one.",
       "NewClassTitle": "Add Multiclass",
       "SelectClass": "Select a class to add",
       "SelectMulticlass": "Select Multiclass",
@@ -81,7 +82,7 @@
       },
       "Races": {
         "Title": "Races",
-		"Title2024": "Species",
+        "Title2024": "Species",
         "Movement": "Movement",
         "Senses": "Senses",
         "Type": "Type",
@@ -95,7 +96,7 @@
         "FilterByLevel": "Explore Advancements by Level",
         "Placeholder": "Classes",
         "SubclassPlaceholder": "Subclasses",
-		"LevelPreview": "Level Preview",
+        "LevelPreview": "Level Preview",
         "Level": "Level"
       },
       "Background": {
@@ -144,7 +145,7 @@
           "Name": "Allow standard array",
           "Hint": "Allow the user to use the standard array"
         },
-		"StandardArrayValues": {
+        "StandardArrayValues": {
           "Name": "Custom standard array",
           "Hint": "Set the custom standard array values (comma separated, e.g. 15, 14, 13, 12, 10, 8)"
         },
@@ -190,7 +191,7 @@
         "Name": "Disable Advancement Tab",
         "Hint": "Prevents advancements from being captured in the Advancements Tab. Instead they will appear as default for the system – i.e. as a dialog popup window. (Note: this is intended for debugging purposes only – there's not much point in using Actor Studio with this disabled.)"
       },
-	  "forceTakeAverageHitPoints": {
+      "forceTakeAverageHitPoints": {
         "Name": "Force Take Average Hit Points",
         "Hint": "When enabled, Actor Studio will force the Take Average option during level-up hit point advancements."
       },
@@ -305,6 +306,10 @@
         "Name": "Actor Studio application window width",
         "Hint": "Set the initial width for the window here"
       },
+      "KeepActorStudioOnTop": {
+        "Name": "Keep Actor Studio on top",
+        "Hint": "When enabled, the Actor Studio window stays pinned above other windows (e.g. after Create Character opens the character sheet). When disabled, it behaves like a normal window so you can read other windows (such as spell descriptions) during spell selection."
+      },
       "WindowY": {
         "Name": "Actor Studio application window height",
         "Hint": "Set the initial height for the window here"
@@ -315,9 +320,9 @@
         "Label": "Select sources",
         "Save": "Save",
         "RaceCompendia": "Race Compendia",
-		"RaceCompendia2024": "Species Compendia",
+        "RaceCompendia2024": "Species Compendia",
         "RacialFeatureCompendia": "Racial Features Compendia",
-		"RacialFeatureCompendia2024": "Species Features Compendia",
+        "RacialFeatureCompendia2024": "Species Features Compendia",
         "ClassCompendia": "Class Compendia",
         "SubclassCompendia": "Subclass Compendia",
         "ClassFeatureCompendia": "Class Features Compendia",
@@ -338,6 +343,10 @@
         "Name": "Enable Equipment Purchase",
         "Hint": "If enabled, adds a 'Shop' tab after equipment selection for characters who received starting gold, allowing them to purchase items from designated compendiums. Note that if Equipment Selection is disabled, this setting is ignored."
       },
+      "FilterOutUnaffordables": {
+        "Name": "Filter out unaffordable equipment",
+        "Hint": "If enabled, the Shop hides items you cannot currently afford. If disabled, unaffordable items remain visible but are greyed out, and trying to add one shows a warning."
+      },
       "ExperimentalCharacterNameStyling": {
         "Name": "Experimental Character Name Styling",
         "Hint": "Enable experimental animated character name styling with random colors and fonts. This is an experimental feature that adds visual flair to the character name input."
@@ -350,25 +359,25 @@
         "Name": "Enable Spell Selection",
         "Hint": "Allows players to select their spells during character creation. If disabled, spells will need to be added manually after creation."
       },
-	  "EnableCustomSpellListFiltering": {
+      "EnableCustomSpellListFiltering": {
         "Name": "Spells that are not assigned to any character class will be available to all characters.",
         "Hint": "If enabled, spells can match custom spell-list flags and spells without class assignments are included. If disabled, only spells explicitly assigned to the selected class/subclass are shown."
       },
       "ShowLevelPreviewDropdown": {
-        "Name": "Show Level Preview Dropdown",
-        "Hint": "If enabled, shows a level preview dropdown in the Class tab that allows users to preview advancements at different levels. If disabled, the dropdown will be hidden to avoid confusion about creating higher level characters."
+        "Name": "Show Level Preview Dropdown (Race, Background, Class)",
+        "Hint": "If enabled, shows e.g. a level preview dropdown in the Class tab that allows users to preview advancements at different levels. If disabled, the dropdown will be hidden to avoid confusion about creating higher level characters."
       },
-	  "HideAdvancementList": {
+      "HideLeftSidebar": {
         "Name": "Hide left panel for Backgrounds, Origins and Classes",
         "Hint": "If enabled, hides the left panel of the Background, Origins and Class tabs. The dropdown selectors remain visible. The blank area is filled with the relevant item description."
       },
-	  "CharacterCreationTabOrder": {
+      "CharacterCreationTabOrder": {
         "Name": "Character Creation Tab Order",
         "Hint": "Set the order for the four core character creation tabs (Abilities, Race, Background, Class).",
         "Title": "Character Creation Tab Order",
         "Abilities": "Abilities",
         "Race": "Race",
-		"Race2024": "Species",
+        "Race2024": "Species",
         "Background": "Background",
         "Class": "Class"
       },
@@ -413,7 +422,7 @@
         "StartingGold": "Starting Gold",
         "SelectionOptions": "Selection Options"
       },
-	  "Spell": {
+      "Spell": {
         "Name": "Spells",
         "Hint": "Configure spell selection and custom spell list behavior",
         "Label": "Configure spells",
@@ -512,7 +521,7 @@
         "Hint": "Time between polls when waiting for conditions"
       }
     },
-	"SpellListManager": {
+    "SpellListManager": {
       "NewList": "New List",
       "Save": "Save",
       "SaveAll": "Save All",
@@ -550,8 +559,10 @@
       "Label": "Equipment",
       "Choice": "Choose one",
       "ChooseOne": "Choose one...",
-      "EquipmentConfirmed": "Equipment has been confirmed and now resides on the character sheet",
-      "EquipmentReadOnly": "Equipment selections have been completed and are now read-only during advancement selection",
+      "NoSelectedSource": "No equipment source is currently selected.",
+      "SourceMissing": "has no starting equipment configured.",
+      "EquipmentConfirmed": "Starting Equipment has been confirmed and now resides on the character sheet",
+      "EquipmentReadOnly": "Starting Equipment selections have been completed and are now read-only during advancement selection",
       "Focus": "Spellcasting Focus",
       "SelectEquipment": "Select Equipment",
       "SelectOne": "Select one of the following options:",
@@ -589,7 +600,8 @@
       "ErrorUpdateQuantity": "Failed to update item quantity",
       "ErrorRemoveFromCart": "Failed to remove item from cart",
       "FilterPlaceholder": "Search items in the shop by keyword",
-      "NoMatchingEquipment": "No matching equipment was found."
+      "NoMatchingEquipment": "No matching equipment was found.",
+      "TooExpensive": "That item is too expensive for your remaining gold."
     },
     "AltText": {
       "MoveUp": "Move Up",
@@ -630,10 +642,10 @@
       "Skip": "Skip",
       "Retry": "Retry",
       "SelectedSpells": "Selected Spells",
-      "AvailableSpells":"Available Spells",
+      "AvailableSpells": "Available Spells",
       "NoSpellsSelected": "No spells selected"
     },
-	"FeatSelector": {
+    "FeatSelector": {
       "Title": "Select a Feat",
       "Search": "Search feats...",
       "Loading": "Loading feats...",
@@ -642,7 +654,7 @@
       "Cancel": "Cancel",
       "ShowIneligible": "Show ineligible feats"
     },
-	"Import": {
+    "Import": {
       "Method": "Import Method",
       "FromFile": "From File",
       "FromText": "From Text",
@@ -651,7 +663,7 @@
     },
     "SpellSchool": {
       "abj": "Abjuration",
-      "con": "Conjuration", 
+      "con": "Conjuration",
       "div": "Divination",
       "enc": "Enchantment",
       "evo": "Evocation",

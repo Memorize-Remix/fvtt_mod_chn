@@ -5,8 +5,19 @@
   "STRESS.Settings.Ratio.Hint": "How many stress points equal 1 exhaustion level.",
   "STRESS.Settings.AutoHp.Name": "Automation: Collapse (0 HP)",
   "STRESS.Settings.AutoHp.Hint": "Automatically gain stress when dropping to 0 HP.",
-  "STRESS.Settings.HealerReq.Name": "Require Healer's Kit (Short Rest)",
-  "STRESS.Settings.HealerReq.Hint": "If active, players MUST use a Healer's Kit or Potion to roll hit dice.",
+  "STRESS.Settings.StressZero.Name": "Stress Gain (0 HP)",
+  "STRESS.Settings.StressZero.Hint": "Amount of stress gained upon falling to 0 HP (Default: 2).",
+  
+  "STRESS.Settings.HealerLong.Name": "Require Healing (Long Rest)",
+  "STRESS.Settings.HealerLong.Hint": "If active, healing section appears in Long Rest.",
+  "STRESS.Settings.HealerShort.Name": "Require Healing (Short Rest)",
+  "STRESS.Settings.HealerShort.Hint": "If active, healing section appears in Short Rest.",
+  
+  "STRESS.Settings.FoodCost.Name": "External Food Cost",
+  "STRESS.Settings.FoodCur.Name": "Currency for Food",
+  "STRESS.Settings.DrinkCost.Name": "External Water Cost",
+  "STRESS.Settings.DrinkCur.Name": "Currency for Water",
+
   "STRESS.Settings.FoodMode.Name": "Starvation Mode (Food)",
   "STRESS.Settings.FoodMode.Hint": "Determines the penalty for not eating.",
   "STRESS.Settings.DrinkMode.Name": "Dehydration Mode (Drink)",
@@ -41,10 +52,16 @@
   "STRESS.Item.Tent": "Tent",
   "STRESS.Item.Bedroll": "Bedroll",
 
+  "STRESS.Rarity.Common": "Common",
   "STRESS.Rarity.Uncommon": "Uncommon",
   "STRESS.Rarity.Rare": "Rare",
   "STRESS.Rarity.VeryRare": "Very Rare",
   "STRESS.Rarity.Legendary": "Legendary",
+
+  "STRESS.Settings.MaxFoodRarity.Name": "Max Food Rarity (External Purchase)",
+  "STRESS.Settings.MaxFoodRarity.Hint": "Maximum rarity tier available when buying food externally. Higher rarities cost more but reduce stress.",
+  "STRESS.Settings.MaxDrinkRarity.Name": "Max Drink Rarity (External Purchase)",
+  "STRESS.Settings.MaxDrinkRarity.Hint": "Maximum rarity tier available when buying drinks externally. Higher rarities cost more but reduce stress.",
 
   "STRESS.Warn.ItemEmpty": "{name} is empty.",
   "STRESS.Warn.NoMoreItem": "You have no more {name}.",
@@ -60,10 +77,13 @@
   "STRESS.Msg.DrinkSuccess": "Drank",
   "STRESS.Msg.FailStress": "Failed: +1 Stress Gained",
   "STRESS.Msg.Saved": "Succeeded (No Stress)",
-  "STRESS.Msg.NoItemHeal": "No item used: HP will not be recovered.",
-  "STRESS.Msg.EnvironmentSafe": "Environment: Safe",
+  "STRESS.Msg.NoItemHeal": "HP will not be recovered.",
+  "STRESS.Msg.EnvironmentSafe": "Safe.",
   "STRESS.Msg.HealerReqWarning": "⚠ Healer's Kit required to recover HP!",
   "STRESS.Msg.ShortRestPrompt": "Select items to use during rest:",
+  
+  "STRESS.Msg.ImmuneFood": "Does not need to eat.",
+  "STRESS.Msg.ImmuneDrink": "Does not need to drink.",
 
   "STRESS.Report.Title": "REST REPORT",
   "STRESS.Report.Start": "Start",
@@ -74,6 +94,14 @@
   "STRESS.Report.HPRestored": "Recovered {val} HP.",
   "STRESS.Report.HPCritical": "CRITICAL: HP Reverted (Item Required).",
   "STRESS.Report.UsedItem": "Used",
+  "STRESS.Report.NoHeal": "No item: HP will not be recovered.",
+  "STRESS.Report.HPFull": "Full HP Recovery.",
+  "STRESS.Report.NoFood": "Starvation (Did not eat): <span style='color:#ff5555'>+1 STRESS</span>",
+  "STRESS.Report.NoDrink": "Dehydration (Did not drink): <span style='color:#ff5555'>+1 STRESS</span>",
+  "STRESS.Report.EnvSafe": "Rested in a Safe Environment.",
+  "STRESS.Report.EnvUnsafe": "Rested in a {type} Environment.",
+  "STRESS.Msg.InsufficientFunds": "Insufficient Coins!",
+  "STRESS.Msg.BuyExternal": "Bought",
 
   "STRESS.Collapse.Title": "COLLAPSE!",
   "STRESS.Collapse.SubTitle": "HP dropped to 0",
@@ -96,8 +124,20 @@
   "STRESS.Panel.StressLevel": "STRESS LEVEL",
   "STRESS.Panel.StressLabel": "Stress",
   "STRESS.Panel.SendReport": "Send Report to Chat",
+  "STRESS.Report.BandageEffect": "Bandage: Recovered 50% HP ({val})",
 
-  "STRESS.Chat.LimitExceeded": "LIMIT EXCEEDED",
-  "STRESS.Chat.LimitDesc": "Accepted the risk in exchange for power.",
-  "STRESS.Report.BandageEffect": "Bandage: Recovered 50% HP ({val})"
+  "STRESS.Feature.CostLabel": "COST",
+  "STRESS.PushingLimits.Title": "Pushing Limits",
+  "STRESS.PushingLimits.ItemDescription": "Push your body past its limits, gaining an edge in exchange for Exhaustion. Choose to gain Advantage on your next roll, or force a spent spell slot (up to level 5) back through sheer will, costing Exhaustion equal to the slot's level.",
+  "STRESS.PushingLimits.Prompt": "Choose how to push yourself:",
+  "STRESS.PushingLimits.SlotLevel": "Spell Slot Level",
+  "STRESS.PushingLimits.SlotOption": "Level {level}",
+  "STRESS.PushingLimits.Advantage": "Gain Advantage",
+  "STRESS.PushingLimits.RecoverSlot": "Recover Spell Slot",
+  "STRESS.PushingLimits.AdvantageDesc": "{name} pushes the limits of their own body and finds an opening.",
+  "STRESS.PushingLimits.SlotDesc": "{name} pushes the limits and tears out one last thread of magic from within.",
+  "STRESS.PushingLimits.NoSlots": "No available spell slots to recover.",
+  "STRESS.PushingLimits.NoSlotAvailable": "That spell slot is already full.",
+  "STRESS.PushingLimits.Confirm": "Push Yourself",
+  "STRESS.PushingLimits.AdvantageEffectName": "Pushing Limits: Advantage"
 }

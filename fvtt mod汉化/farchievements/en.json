@@ -7,9 +7,9 @@
 		"Text": "Disable Achievement Banner",
 		"Hint": "If enabled, the achievement banner animation will be disabled."
 	},
-    "Farchievements.Settings.EnableChatBarButton" : {
-        "Text":"Enable Chatbar Button",
-        "Hint": "Allows to access Farchivements from the chat bar."
+    "Farchievements.Settings.EnableSidebarButton" : {
+        "Text":"Enable Right Sidebar Button",
+        "Hint": "Shows the Farchievements button in the right sidebar."
     },
     "Farchievements.Settings.EnableAchievementMessage" : {
         "Text": "Enable Chatmessage",
@@ -166,7 +166,7 @@
         "Overwritten": "This World's Achievements have been overwritten.",
         "CopiedToClipboard": "Achievements copied to clipboard."
     },
-    
+	
     "Farchievements.Html.Secret": "Secret",
     "Farchievements.Title": "Farchievements",
     "Farchievements.Achievement": "Achievement",
@@ -191,13 +191,27 @@
     "Farchievements.Html.ProgressType": "Progress Type",
     "Farchievements.Html.DiceType": "Dice Type",
     "Farchievements.Html.ChainLength": "Chain Length",
+    "Farchievements.Html.BannerStyle": "Banner",
+    "Farchievements.Html.BannerDefault": "Default (global setting)",
+    "Farchievements.Html.CardStyle": "Card Type",
+    "Farchievements.Html.CardStyleDefault": "Standard",
 	
 
     "Farchievements.Html.ImportExport":{
         "Title": "Farchievements Import/Export",
         "Body": "This is a small tool to import and export your Achievements. <b>Make sure to backup everything before you even think about overriding!!</b>",
         "ClipboardOverwrite": "Overwrite from Clipboard",
-        "CopyToClipboard": "Copy to Clipboard"
+        "CopyToClipboard": "Copy to Clipboard",
+        "DataLabel": "Achievement JSON",
+        "Download": "Download JSON",
+        "ExportTitle": "Export",
+        "Format": "Format",
+        "Import": "Import / Overwrite",
+        "ImportPlaceholder": "Paste achievement JSON here",
+        "ImportTitle": "Import",
+        "LoadFile": "Load File",
+        "NoImportData": "No import data",
+        "PreviewEmpty": "Import preview will appear here."
     },
 	"Farchievements.Html.SanitySaver":{
         "Title": "Farchievements | sanity saver",

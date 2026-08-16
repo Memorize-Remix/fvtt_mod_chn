@@ -3,7 +3,9 @@
     "Rest": "Rest",
     "RestTooltip": "Rest<br><span style='font-size: 0.85em; opacity: 0.8;'>Click: Choose rest type<br>Ctrl+Click: Short Rest<br>Alt+Click: Long Rest</span>",
     "ChooseRestType": "Choose a rest type:",
-    "EndTurn": "End Turn"
+    "EndTurn": "End Turn",
+    "Inspiration": "Inspiration",
+    "InspirationTooltip": "Heroic Inspiration<br><span style='font-size: 0.85em; opacity: 0.8;'>Left Click to toggle Heroic Inspiration status.</span>"
   },
   "bg3-hud-dnd5e": {
     "Settings": {
@@ -11,7 +13,7 @@
       "ConfigureAutoPopulateGrids": "Configure Auto-populate Grids",
       "ConfigureGrids": "Configure Grids",
       "ConfigureGridsHint": "Configure which item types to auto-populate in each grid when a token is created",
-	  "ConfigureAutoPopulateDescription": "Assign item types to hotbar grids for <strong>NPCs only</strong>. Each type can only be assigned to one grid.<br><small>Note: Player characters should use right-click → Auto-Populate Container instead.</small>",
+      "ConfigureAutoPopulateDescription": "Assign item types to hotbar grids for <strong>NPCs only</strong>. Each type can only be assigned to one grid.<br><small>Note: Player characters should use right-click → Auto-Populate Container instead.</small>",
       "AutoPopulatePassives": "Auto-populate Passives",
       "AutoPopulatePassivesHint": "Automatically populate passives container with feats that have no activities when a token is created",
       "ShowItemNames": "Show Item Names",
@@ -20,18 +22,28 @@
       "ShowItemUsesHint": "Display remaining uses on items that have limited uses",
       "ShowHealthOverlay": "Show Health Overlay",
       "ShowHealthOverlayHint": "Display red damage overlay on portrait images",
-	  "ShowHPControls": "Show HP Control Buttons",
+      "DefaultPortraitImageSource": "Default Portrait Image Source",
+      "DefaultPortraitImageSourceHint": "Choose which image new actors use in the HUD before an actor-specific preference is set.",
+      "PortraitSourceToken": "Token Image",
+      "PortraitSourceActor": "Character Portrait",
+      "ShowHPControls": "Show HP Control Buttons",
       "ShowHPControlsHint": "Display the kill (skull) and heal (heart) buttons on the portrait HP controls",
+      "HideDeathSaves": "Hide Death Saves UI",
+      "HideDeathSavesHint": "Completely hide the death saves UI rows when at 0 HP",
+      "IgnoreGroupActors": "Ignore Group Actors",
+      "IgnoreGroupActorsHint": "When enabled, actors of type 'group' are excluded from BG3 HUD compatibility checks",
       "EnableCPRGenericActions": "Enable CPR Generic Actions Button",
       "EnableCPRGenericActionsHint": "Show a vertical button next to the advantage container that triggers CPR's Generic Actions (2024) dialog",
       "EnableCPRActionsAutoPopulate": "Enable CPR Actions Auto-Populate",
       "EnableCPRActionsAutoPopulateHint": "Automatically populate quick access with CPR actions when tokens are created (uses 2014 or 2024 compendium based on D&D 5e Rules Version setting). If actions are manually selected, those take priority.",
       "SelectedCPRActions": "Selected CPR Actions",
       "SelectedCPRActionsHint": "Manually selected CPR actions to show in quick access (configure via 'Select CPR Actions' menu). List is populated with the compendium matching your D&D 5e Rules Version.",
-      "BlockCPRActionsOnHotbar": "Block CPR Actions on Hotbar",
-      "BlockCPRActionsOnHotbarHint": "Prevent CPR Generic Actions from being dragged onto the hotbar. Derived items like 'Grapple: Escape' are still allowed.",
-      "EnableAdvBtnsMidiQoL": "Enable Advantage/Disadvantage Buttons (Midi-QoL)",
-      "EnableAdvBtnsMidiQoLHint": "Add advantage/disadvantage buttons to the situational bonuses container when Midi-QoL is active",
+      "AllowCPRActionsInAutoPopulate": "Allow CPR Actions in Hotbar Auto-Populate",
+      "AllowCPRActionsInAutoPopulateHint": "When enabled, CPR generic actions (Dash, Dodge, Attack, etc.) may be included when auto-populating the main hotbar. Drag-and-drop is always allowed on any grid.",
+      "EnableAdvBtnsMidiQoL": "Apply ADV/DIS to Midi-QoL Rolls",
+      "EnableAdvBtnsMidiQoLHint": "When enabled with Midi-QoL active, ADV/DIS button state is applied to the next qualifying roll. The buttons are always visible as reminders regardless of this setting.",
+      "SyncBonusReactionFilters": "Sync Bonus & Reaction Filters",
+      "SyncBonusReactionFiltersHint": "When enabled with Midi-QoL active, mark Bonus Action and Reaction filters as used (same as right-click) when Midi-QoL applies the corresponding action economy effect. Requires Midi-QoL Workflow Settings > Reactions: both \"Enforce Reactions\" and \"Enforce Bonus Actions\" must be set to \"All actors: prompt if used\".",
       "AutoPopulateOnTokenCreation": "Auto-populate on Token Creation",
       "AutoPopulateOnTokenCreationHint": "Automatically populate hotbar grids with items when a token is created",
       "AutoPopulatePlayerCharacters": "Allow Auto-populate for Player Characters",
@@ -61,7 +73,7 @@
         "MenuLabel": "Third-Party Modules",
         "MenuHint": "Configure integration with third-party modules like CPR and Midi-QoL",
         "CPR": {
-          "Legend": "Chris's Premades (CPR)"
+          "Legend": "Cauldron of Plentiful Resources (CPR)"
         },
         "Midi": {
           "Legend": "Midi-QoL"
@@ -100,7 +112,7 @@
       "Feature": "Feature",
       "Cantrip": "Cantrip",
       "SpellLevel": "Spell Level",
-	  "SpellSlots": "Spell Slots",
+      "SpellSlots": "Spell Slots",
       "PactMagic": "Pact Magic",
       "ApothecaryMagic": "Apothecary Magic"
     },
@@ -136,7 +148,9 @@
         "Survival": "Survival"
       },
       "CheckFormat": "{ability} Check",
-      "SaveFormat": "{ability} Save"
+      "SaveFormat": "{ability} Save",
+      "CheckTooltip": "Left-click: Ability Check",
+      "SaveTooltip": "Right-click: Saving Throw"
     },
     "Portrait": {
       "SetTo0HP": "Set to 0 HP",
@@ -178,7 +192,7 @@
       "SelectActionsMenuName": "Select CPR Actions",
       "SelectActionsMenuLabel": "Select CPR Actions",
       "SelectActionsMenuHint": "Choose which CPR Generic Actions to display in quick access (up to 6, based on Rules Version)",
-      "NoActionsAvailable": "No CPR actions available. Make sure Chris's Premades module is installed and the appropriate CPRActions compendium exists for your Rules Version.",
+      "NoActionsAvailable": "No CPR actions available. Make sure Cauldron of Plentiful Resources module is installed and the appropriate CPRActions compendium exists for your Rules Version.",
       "MaxSelectionsReached": "Maximum of {max} actions can be selected",
       "SelectionCounter": "Selected: {current} / {max}"
     },
@@ -189,9 +203,9 @@
       "ItemNotFound": "Item not found",
       "ItemCannotBeUsed": "Item cannot be used",
       "MacroNotFound": "Macro not found",
-      "CPRGenericActionsNotFound": "CPR Generic Actions (2024) item not found. Make sure Chris's Premades module is installed and active.",
+      "CPRGenericActionsNotFound": "CPR Generic Actions (2024) item not found. Make sure Cauldron of Plentiful Resources module is installed and active.",
       "CPRGenericActionsError": "Error using CPR Generic Actions",
-      "CPRModuleNotActive": "Chris's Premades module is not active. Please enable it to use CPR features.",
+      "CPRModuleNotActive": "Cauldron of Plentiful Resources module is not active. Please enable it to use CPR features.",
       "CPRActionsSelectionSaved": "CPR actions selection saved",
       "CPRActionNotFound": "CPR action not found",
       "CPRActionError": "Error using CPR action",
@@ -199,7 +213,6 @@
       "LongRestNotAvailable": "Long rest not available for this actor",
       "SlotOccupiedByTwoHandedWeapon": "This slot is occupied by a two-handed weapon",
       "FailedToRollInitiative": "Failed to roll initiative",
-      "CPRActionBlockedFromHotbar": "CPR Generic Actions cannot be added to the hotbar. Use the Quick Access grid instead.",
       "ActivityNotFound": "Activity not found",
       "ActivityCannotBeUsed": "Activity cannot be used"
     },

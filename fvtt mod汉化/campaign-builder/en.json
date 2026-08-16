@@ -1,6 +1,6 @@
 {
   "fcb": {
-    "title": "Campaign Builder",
+    "title": "Foundry World & Campaign Builder",
     "defaultRootFolderName": "Campaign Builder",
     "contentFolders": {
       "campaigns": "Campaigns",
@@ -13,11 +13,13 @@
     "settings": {
       "startCollapsed": "Sidebar starts collapsed?",
       "startCollapsedHelp": "Should the sidebar start closed when opening the window for the first time?",
+      "alwaysPopout": "Always open in pop-out window",
+      "alwaysPopoutHelp": "When enabled, the main window will automatically open detached into a separate browser window. (Requires Foundry v14+.)",
       "displaySessionNotes": "Display pop-up session notes",
       "displaySessionNotesHelp": "When enabled, a session notes window will automatically open when a play session starts",
       "defaultAddToSession": "Default 'Add to current session'",
       "defaultAddToSessionHelp": "When in play mode, should the checkbox when creating an entry default to on or off?",
-	  "sessionBookmark": "Display Session bookmark",
+      "sessionBookmark": "Display Session bookmark",
       "sessionBookmarkHelp": "When enabled, a bookmark for the current Session will be shown at the front of the bookmark bar",
       "sessionDisplayMode": "Session display format",
       "sessionDisplayModeHelp": "Choose how sessions are displayed in the campaign directory",
@@ -56,6 +58,9 @@
       "advanced": "Advanced Settings",
       "advancedLabel": "Open Advanced Settings",
       "advancedHelp": "Configure advanced settings (including AI)",
+      "repairIndexes": "Repair Document Indexes",
+      "repairIndexesLabel": "Repair Indexes",
+      "repairIndexesHelp": "Last-resort recovery tool that rebuilds the directory indexes from the actual documents. Generally only use it at the direction of the module creator after submitting a bug report.",
       "speciesList": "Manage Species List",
       "speciesListLabel": "Species List",
       "speciesListHelp": "Define the species to make available.  These cross all Settings - file an issue if you have need different lists per Setting.",
@@ -65,7 +70,7 @@
       "enableToDoListHelp": "If disabled, the To Do list feature will be turned off.",
       "autoRelationships": "Auto-suggest relationships",
       "autoRelationshipsHelp": "If enabled, the system will automatically suggest changes to relationships between entries based on changes made to the description.",
-	  "images": "Configure Content Images",
+      "images": "Configure Content Images",
       "imagesLabel": "Content Images",
       "imagesHelp": "Configure image visibility settings for different content types",
       "showTypesInTree": "Show types in Setting tree",
@@ -74,7 +79,7 @@
       "useFrontsHelp": "Turn on campaign \"front\" functionality.",
       "useStoryWebs": "Use Story Webs",
       "useStoryWebsHelp": "Turn on campaign \"story web\" functionality.",
-	  "useTimeline": "Use Timeline",
+      "useTimeline": "Use Timeline",
       "useTimelineHelp": "Turn on timeline functionality (requires Calendaria module).",
       "subTabsSavePosition": "Sub-tabs save position",
       "subTabsSavePositionHelp": "When enabled, every tab will remember which interior sub-tab was open and return to it when you re-open that tab. When disabled, tabs will always revert to the first one (usually description).",
@@ -91,7 +96,7 @@
       "tableGrouping": "Table Grouping Settings",
       "tableGroupingLabel": "Table Grouping",
       "tableGroupingHelp": "Configure which tabs use grouped tables for each content type",
-	  "tabVisibility": "Tab Visibility Settings",
+      "tabVisibility": "Tab Visibility Settings",
       "tabVisibilityLabel": "Tab Visibility",
       "tabVisibilityHelp": "Configure which tabs are visible for each content type",
       "importExport": "Import/Export Module Data",
@@ -112,7 +117,7 @@
           "edit": "Edit species",
           "delete": "Delete species"
         },
-		"newSpecies": "New Species",
+        "newSpecies": "New Species",
         "newDescription": "Description for new species",
         "defaultSpecies": {
           "dwarf": {
@@ -181,7 +186,7 @@
           "email": "Email"
         }
       },
-	  "customFields": {
+      "customFields": {
         "title": "Configure Custom Fields",
         "tabs": {
           "fields": "Fields",
@@ -297,12 +302,12 @@
           "refreshError": "Failed to refresh roll tables. Check console for details."
         }
       },
-	  "storyWebSettings": {
+      "storyWebSettings": {
         "title": "Configure Story Web Settings",
         "tabs": {
           "colors": "Connection Colors",
           "styles": "Connection Styles",
-		  "shapeColors": "Shape Colors",
+          "shapeColors": "Shape Colors",
           "fields": "Fields"
         },
         "columns": {
@@ -323,7 +328,7 @@
           "duplicateCustomColorSchemeIds": "Custom color scheme IDs must be unique"
         }
       },
-	  "associationTags": {
+      "associationTags": {
         "title": "Configure Association Tags",
         "tabs": {
           "characters": "Characters",
@@ -412,7 +417,7 @@
     "labels": {
       "add": "Add",
       "newTab": "New Tab",
-	  "newGroup": "New Group",
+      "newGroup": "New Group",
       "saveChanges": "Save Changes",
       "reset": "Reset",
       "cancel": "Cancel",
@@ -423,7 +428,7 @@
       "useOnce": "Use once",
       "tryAgain": "Try Again",
       "addToSetting": "Add to Setting",
-	  "description": "Description",
+      "description": "Description",
       "prep": "Prep",
       "play": "Play",
       "ok": "OK",
@@ -431,15 +436,15 @@
       "no": "No",
       "close": "Close",
       "update": "Update",
-	  "complete": "Complete",
+      "complete": "Complete",
       "noToAll": "No to All",
       "actors": "Actors",
       "sessions": "Sessions",
       "scenes": "Scenes",
       "journals": "Journals",
-	  "searching": "Searching",
-	  "copyOf": "Copy of {name}",
-	  "branchesFolder": "Branches",
+      "searching": "Searching",
+      "copyOf": "Copy of {name}",
+      "branchesFolder": "Branches",
       "tableHeaders": {
         "actions": "Actions",
         "name": "Name",
@@ -465,7 +470,7 @@
       "fields": {
         "type": "Type",
         "parent": "Parent",
-		"parentOrganization": "Parent Organization",
+        "parentOrganization": "Parent Organization",
         "branchLocation": "Location",
         "campaign": "Campaign",
         "sessionNumber": "Number",
@@ -474,12 +479,12 @@
         "background": "Background",
         "otherPlotPoints": "Other Plot Points",
         "desiredMagicItems": "Desired Magic Items",
-		"strongStart": "Strong Start",
+        "strongStart": "Strong Start",
         "aiDescription": "Detailed Description",
         "strongStartHelpText": "A strong start is a short, impactful event that sets the tone for the session. Click to read more from Lazy DM.",
         "name": "Name",
         "topic": "Topic",
-		"notes": "Notes",
+        "notes": "Notes",
         "species": "Species",
         "entryRolePlayingNotes": "Roleplaying Notes",
         "settingGenre": "Genre",
@@ -488,12 +493,12 @@
         "houseRules": "House rules",
         "settingDescription": "Setting description",
         "startingDescription": "Starting description",
-		"boxedText": "Boxed Text",
+        "boxedText": "Boxed Text",
         "gmNotes": "GM Notes",
         "generateImage": "Generate Image",
         "addToCurrentSession": "Add to current session"
       },
-	  "addParticipant": "Add Participant",
+      "addParticipant": "Add Participant",
       "addParticipantDrag": "(or drag/drop a Setting entry)",
       "addTopic": {
         "character": "Add Character",
@@ -508,12 +513,12 @@
         "pc": "(or drag/drop a PC)"
       },
       "entry": {
-		"entry": "Entry",
+        "entry": "Entry",
         "topic": "TopicFolder",
         "type": "Type",
         "relationships": "Relationships"
       },
-	  "arc": {
+      "arc": {
         "arc": "Arc",
         "addParticipant": "Add Participant",
         "addParticipantDrag": "(or drag/drop a character/organization)",
@@ -526,7 +531,7 @@
         "addLocationDrag": "(or drag/drop a location)",
         "addVignette": "Add vignette",
         "addLore": "Add lore",
-		"addDocumentDrag": "(drag/drop any Foundry document)",
+        "addDocumentDrag": "(drag/drop any Foundry document)",
         "addLoreDrag": "(or drag/drop a journal entry)",
         "addNPC": "Add NPC",
         "addNPCDrag": "(or drag/drop a character)",
@@ -538,7 +543,7 @@
         "addActorDrag": "(or drag/drop an actor)",
         "addScene": "Add scene",
         "addSceneDrag": "(or drag/drop a scene)",
-		"addJournal": "Add Journal",
+        "addJournal": "Add Journal",
         "addJournalDrag": "(or drag/drop a journal or journal page)", 
         "loreHelpText": "Tweet-sized bits of useful and interesting information. Click to read more from Lazy DM.",
         "itemHelpText": "Magic items that fit your PCs and the plot. Click to read more from Lazy DM.",
@@ -560,7 +565,7 @@
         "addParticipant": "Add Participant",
         "addParticipantDrag": "(or drag/drop a character/organization)"
       },
-	  "storyWeb": {
+      "storyWeb": {
         "addText": "Add Text",
         "enterText": "Enter new text",
         "editText": "Edit Text",
@@ -577,7 +582,7 @@
         "fitToWindow": "Fit to Window"
       },
       "campaign": {
-		"campaign": "Campaign",
+        "campaign": "Campaign",
         "addPC": "Add PC",
         "addPCDrag": "(or drag/drop a PC)",
         "pcs": "PCs",
@@ -592,7 +597,7 @@
         "linkToNewActor": "Link to new actor",
         "pc": "PC"
       },
-	  "character": {
+      "character": {
         "character": "Character"
       },
       "organization": {
@@ -605,7 +610,7 @@
       "setting": {
         "setting": "Setting"
       },
-	  "timeline": {
+      "timeline": {
         "loading": "Loading timeline...",
         "textSearch": "Search",
         "textSearchPlaceholder": "Search events...",
@@ -651,7 +656,7 @@
         "arc": {
           "pcs": "PCs",
           "lore": "Lore",
-		  "vignettes": "Vignettes",
+          "vignettes": "Vignettes",
           "locations": "Locations",
           "participants": "Participants",
           "monsters": "Monsters",
@@ -684,14 +689,14 @@
       "locationName": "Location Name",
       "organizationName": "Organization Name",
       "pcName": "PC Name",
-	  "arcName": "Arc Name",
-	  "allSessions": "All Sessions",
+      "arcName": "Arc Name",
+      "allSessions": "All Sessions",
       "campaignName": "Campaign Name",
       "settingName": "Setting Name",
       "sessionName": "Session Name",
-	  "frontName": "Front Name",
+      "frontName": "Front Name",
       "dangerName": "Danger Name",
-	  "storyWebName": "Story Web Name",
+      "storyWebName": "Story Web Name",
       "sessionDate": "Date",
       "sessionNumber": "Session Number",
       "linkToActor": "Link to Actor"
@@ -714,18 +719,18 @@
         "emailSettingsNotSet": "You have enabled the email idea list feature, but you haven't set a default Setting or Campaign.  Please set these in the advanced settings.",
         "rollTablesNotAvailable": "Backend is not available. Automatic RollTables will not be refreshed. Configure the backend in Advanced Settings to enable AI-generated names that match your world's theme."
       },
-	  "duplicateBookmark": "Already stored as a bookmark",
+      "duplicateBookmark": "Already stored as a bookmark",
       "nameRequired": "Name cannot be blank",
       "failedToRepairIndexes": "Failed to repair indexes. Check console for details.",
-	  "participantCopiedToNextSession": "Participant copied to next session",
+      "participantCopiedToNextSession": "Participant copied to next session",
       "locationCopiedToNextSession": "Location copied to next session",
       "monsterCopiedToNextSession": "Monster copied to next session",
-	  "itemCopiedToNextSession": "Item copied to next session",
+      "itemCopiedToNextSession": "Item copied to next session",
       "toDoReferenceNotFound": "The linked reference for this to-do item no longer exists.",
       "addedToSession": "added to session",
       "changesSaved": "Changes saved",
       "changesDiscarded": "Changes discarded",
-	  "failedToExportStoryWeb": "Failed to export story web as PNG",
+      "failedToExportStoryWeb": "Failed to export story web as PNG",
       "export": {
         "starting": "Starting setting export...",
         "complete": "Setting exported successfully",
@@ -735,7 +740,7 @@
         "minimumVersionRequired": "Campaign Builder cannot migrate from version {0}. You must first upgrade to version {1} or higher before upgrading to {2}.",
         "cannotOpen": "Campaign Builder cannot be opened because migration failed. Please check the console for details and resolve the migration issue."
       },
-      "documentIndexesRepaired": "All document indexes have been successfully repaired!",
+      "documentIndexesRepaired": "All document indexes have been successfully repaired! Refresh your browser to see the changes.",
       "voiceRecording": {
         "saved": "Voice recording saved",
         "deleted": "Voice recording removed",
@@ -759,7 +764,7 @@
         "title": "Remove from relationship?",
         "message": "Are you sure you want to delete this relationship?"
       },
-	  "confirmDeleteParticipant": {
+      "confirmDeleteParticipant": {
         "title": "Remove this participant?",
         "message": "Are you sure you want to remove this participant from the danger?"
       },
@@ -777,7 +782,7 @@
         "generatePrompt": "Press generate for results",
         "generatePrompt2": "Otherwise, \"Brief Description\" will be used as the new Entry description."
       },
-	  "voiceRecording": {
+      "voiceRecording": {
         "title": "Voice Recording",
         "recording": "Recording... Click Stop when finished.",
         "stop": "Stop",
@@ -787,7 +792,7 @@
         "deleteMessage": "Are you sure you want to delete this voice recording? The file will remain on the server but will no longer be linked to this character.",
         "selectFolderTitle": "Select Voice Recording Folder"
       },
-	  "arcManager": {
+      "arcManager": {
         "title": "Manage Arcs",
         "labels": {
           "edit": "Edit arc",
@@ -815,7 +820,7 @@
         "title": "Create Session",
         "sessionName": "Session Name"
       },
-	  "createFront": {
+      "createFront": {
         "title": "Create Front",
         "frontName": "Front Name"
       },
@@ -827,7 +832,7 @@
         "title": "Create Setting",
         "settingName": "Setting Name"
       },
-	  "createStoryWeb": {
+      "createStoryWeb": {
         "title": "Create Story Web",
         "webName": "Story Web Name"
       },
@@ -835,7 +840,7 @@
         "title": "Delete entry?",
         "message": "Are you sure you want to delete this entry?  It will be removed from all relationships and sessions.  Any references to it in editors will become broken."
       },
-	  "deleteEntryWithBranches": {
+      "deleteEntryWithBranches": {
         "title": "Delete entry?",
         "message": "This will also delete {count} branch(s). Are you sure you want to continue?"
       },
@@ -851,7 +856,7 @@
         "title": "Add To-do",
         "prompt": "Enter to-do text:"
       },
-	  "selectCampaign": {
+      "selectCampaign": {
         "title": "Select Campaign",
         "prompt": "Which campaign should this to-do be added to?"
       },
@@ -890,15 +895,15 @@
         "addJournal": "Add Journal/Page",
         "addScene": "Add Scene"       
       },
-	  "saveChanges": {
+      "saveChanges": {
         "title": "Unsaved Changes",
         "message": "You have unsaved changes in one or more open editors. What would you like to do?",
-		"uuidChangesMessage": "You've added or removed references to other entries. Would you like to update the related entries?",
+        "uuidChangesMessage": "You've added or removed references to other entries. Would you like to update the related entries?",
         "save": "Save Changes",
         "discard": "Discard Changes",
         "cancel": "Cancel"
       },
-	  "migrationProgress": {
+      "migrationProgress": {
         "title": "Migrating Campaign Builder to new version",
         "message": "Migrating your campaign data to the latest version...",
         "warnings": {
@@ -929,7 +934,7 @@
           "warnings": "Warnings"
         }
       },
-	  "imageSettings": {
+      "imageSettings": {
         "title": "Image Visibility Settings",
         "description": "Choose which content types should display images on their description pages.",
         "settings": "Settings",
@@ -939,7 +944,7 @@
         "sessions": "Sessions",
         "fronts": "Fronts"
       },
-	  "tableGrouping": {
+      "tableGrouping": {
         "title": "Table Grouping Settings",
         "description": "Choose which tabs should use grouped tables for each content type.",
         "contentTypes": {
@@ -970,7 +975,7 @@
           "grimPortents": "Grim Portents"
         }
       },
-	  "tabVisibility": {
+      "tabVisibility": {
         "title": "Tab Visibility Settings",
         "description": "Choose which tabs should be visible for each content type. Description tabs are always shown.",
         "contentTypes": {
@@ -1022,6 +1027,10 @@
       "deleteGroup": {
         "title": "Delete group?",
         "message": "Are you sure you want to delete this group? All items will be put in 'Ungrouped'"
+      },
+      "repairIndexes": {
+        "title": "Repair document indexes?",
+        "message": "This is a last-resort recovery tool - generally you should only run it at the direction of the module creator after submitting a bug report. Are you sure you want to continue?"
       },
       "deleteSetting": {
         "title": "Delete setting?",
@@ -1076,7 +1085,7 @@
       }
     },
     "contextMenus": {
-	  "addToStoryWeb": "Add to current Story Web",
+      "addToStoryWeb": "Add to current Story Web",
       "addWithRelationships": "Add with Relationships",
       "tabs": {
         "closeAll": "Close All Tabs",
@@ -1089,36 +1098,37 @@
       "settingFolder": {
         "delete": "Delete Setting",
         "createCampaign": "Create campaign",
-        "exportJson": "Export as JSON"
+        "exportJson": "Export as JSON",
+        "exportToon": "Export as TOON (for LLM use)"
       },
       "campaignsHeader": {
         "createCampaign":"Create campaign"
       },
       "campaignFolder": {
         "createSession": "Create a session",
-		"createFront": "Create a front",
+        "createFront": "Create a front",
         "createArc": "Create an arc",
-		"createStoryWeb": "Create a story web",
+        "createStoryWeb": "Create a story web",
         "manageArcs": "Manage arcs",
         "delete": "Delete campaign",
         "markComplete": "Mark campaign complete",
         "markActive": "Mark campaign active"
       },
-	  "arcFolder": {
+      "arcFolder": {
         "createSession": "Create a session",
         "delete": "Delete arc"
       },
       "session": {
         "delete": "Delete session"
       },
-	  "front": {
+      "front": {
         "delete": "Delete front"
       },
-	  "danger": {
+      "danger": {
         "delete": "Delete danger"
       },
-	  "storyWeb": {
-		"duplicate": "Duplicate Web",
+      "storyWeb": {
+        "duplicate": "Duplicate Web",
         "delete": "Delete Story Web",
         "exportAsPng": "Export as PNG"
       },
@@ -1147,7 +1157,7 @@
       },
       "image": {
         "viewImage": "View Image",
-		"showToPlayers": "Show to players",
+        "showToPlayers": "Show to players",
         "changeImage": "Change Image",
         "addImage": "Add Image",
         "removeImage": "Remove Image",
@@ -1157,7 +1167,7 @@
         "copyToClipboard": "Copy to clipboard",
         "copyLinkToClipboard": "Copy link to clipboard"
       },
-	  "voice": {
+      "voice": {
         "record": "Record Voice",
         "play": "Play Voice",
         "delete": "Delete Recording",
@@ -1190,20 +1200,21 @@
       "createSetting": "Create Setting",
       "expandDirectory": "Expand directory",
       "collapseDirectory": "Collapse directory",
-	  "maximizeWindow": "Maximize window",
+      "maximizeWindow": "Maximize window",
       "restoreWindow": "Restore window",
+      "popoutWindow": "Pop out into a separate window",
       "collapseAllTopics": "Collapse all",
       "addBookmark": "Add bookmark",
-	  "moreBookmarks": "More bookmarks",
-	  "currentSession": "current session",
-	  "campaignComplete": "Campaign complete",
-	  "arcComplete": "Arc complete",
+      "moreBookmarks": "More bookmarks",
+      "currentSession": "current session",
+      "campaignComplete": "Campaign complete",
+      "arcComplete": "Arc complete",
       "historyBack": "Back",
       "historyForward": "Forward",
-	  "generateAIContent": "Generate AI content",
+      "generateAIContent": "Generate AI content",
       "editRelationship": "Edit relationship",
-	  "editNotes": "Edit notes",
-	  "editSession": "Edit session",
+      "editNotes": "Edit notes",
+      "editSession": "Edit session",
       "editParticipant": "Edit participant",
       "editPortent": "Edit grim portent",
       "deleteRelationship": "Delete relationship",
@@ -1214,19 +1225,19 @@
       "editRow": "Edit this item. Press enter to save changes.",
       "deleteScene": "Delete scene",
       "deleteVignette": "Delete vignette",
-	  "deletePortent": "Delete grim portent",
+      "deletePortent": "Delete grim portent",
       "deleteParticipant": "Delete participant",
       "deleteLore": "Delete lore",
       "deleteToDo": "Complete to-do item",
       "deleteIdea": "Delete idea",
-	  "moveToToDo": "Move to to-do list",
+      "moveToToDo": "Move to to-do list",
       "moveToIdeas": "Move to ideas list",
       "markAsDelivered": "Mark as delivered",
       "unmarkAsDelivered": "Unmark as delivered",
       "moveToNextSession": "Move to next session",
-	  "copyToNextSession": "Copy to next session",
+      "copyToNextSession": "Copy to next session",
       "moveToCampaign": "Move to campaign for later usage",
-	  "moveToArc": "Move to arc for later usage",
+      "moveToArc": "Move to arc for later usage",
       "moveToLatestArc": "Move to latest arc",
       "addToCampaign": "Add to campaign",
       "addToASession": "Add to a session",
@@ -1238,7 +1249,7 @@
       "dragMonsterFromSession": "Drag to scene",
       "dragItemFromSession": "Drag to actor, etc.",
       "dragToScene": "Drag to scene",
-	  "cannotChangeSettingInPlayMode": "Cannot change Setting while in play mode",
+      "cannotChangeSettingInPlayMode": "Cannot change Setting while in play mode",
       "contentLinks": {
         "1": {
           "1": "Character",
@@ -1271,7 +1282,7 @@
       "noActorsAttached": "No actors attached",
       "noScenesAttached": "No scenes attached"
     },
-	"tags": {
+    "tags": {
       "tag": "Tag",
       "resultsFor": "Tag Results for",
       "entryFound": "entry found",

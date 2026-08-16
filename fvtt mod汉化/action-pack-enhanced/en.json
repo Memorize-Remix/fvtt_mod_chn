@@ -5,7 +5,7 @@
         "roll-initiative": "Roll initiative!",
         "roll-check": "ability check",
         "roll-save": "saving throw",
-		"drag-to-target": "Drag to target",
+        "drag-to-target": "Drag to target",
         "action-type": {
             "action": "Action",
             "bonus": "Bonus Action",
@@ -15,7 +15,7 @@
             "special": "Special"
         },
         "range": {
-			"ft": "Ft.",
+            "ft": "Ft.",
             "self": "Self",
             "touch": "Touch",
             "spec": "Special",
@@ -36,6 +36,7 @@
             "year": "Year"
         },
         "flag": {
+            "shield-title": "Shield",
             "bonus": "B",
             "bonus-title": "Bonus action",
             "reaction": "R",
@@ -46,12 +47,14 @@
             "concentration-title": "Concentration",
             "legendary": "L",
             "legendary-title": "Legendary action",
+            "lair": "La",
+            "lair-title": "Lair action",
             "unprepared": "U",
             "unprepared-title": "Unprepared spell",
             "unequipped": "Equip",
             "unequipped-title": "Unequipped"
         },
-		"masteries": {
+        "masteries": {
             "cleave": "Cleave",
             "graze": "Graze",
             "nick": "Nick",
@@ -65,6 +68,8 @@
             "equipped": "Equipped",
             "inventory": "Inventory",
             "feature": "Feature",
+            "legendary": "Legendary Actions",
+            "lair": "Lair Actions",
             "spell": "Spell",
             "weapon": "Weapon",
             "equipment": "Equipment",
@@ -73,7 +78,7 @@
             "innate": "Innate Ability",
             "atwill": "At-Will",
             "pact": "Pact Magic",
-			"unprepared": "Unprepared",
+            "unprepared": "Unprepared",
             "spell0": "Cantrip",
             "spell1": "Level 1",
             "spell2": "Level 2",
@@ -107,17 +112,19 @@
             "tray-size-medium": "Medium",
             "tray-size-large": "Large",
             "use-control-button": "Include a toggle button in token controls",
-			"use-control-button-hint": "Adds a toggle button to the token controls to open and close the APE display. This can be helpful if you have the APE display set to always show.",
-			"show-inspiration-animation": "Show Inspiration Animation",
+            "use-control-button-hint": "Adds a toggle button to the token controls to open and close the APE display. This can be helpful if you have the APE display set to always show.",
+            "show-inspiration-animation": "Show Inspiration Animation",
             "show-inspiration-animation-hint": "Enables the inspiration animation when an actor has inspiration toggled on. **If you uncheck this box, do not blame me when you forget that you have inspiration. Just saying.**",
-			"use-custom-icons": "Use custom icons",
+            "use-custom-icons": "Use custom icons",
             "use-custom-icons-hint": "Use custom icons for race and class; If unchecked, use the system icons. **APE includes some AI generated icons for each class and subclass. To be fair they are not very good, but they provide a consistent look and feel. I don't really like them, but also don't really like the default icons. I will work on making better ones, or if anyone wants to help, please let me know.**",
             "show-weapon-mastery": "Show weapon masteries",
             "show-weapon-mastery-hint": "Show weapon mastery labels on weapon items in the Equipped section of the APE display.",
             "show-xp-info": "Show experience point progress",
             "show-xp-info-hint": "Uncheck if you are using milestone leveling. Check to show current and next level XP with XP progress bar and increment/decrement buttons when clicking on the current XP value.",
-			"static-info": "Static info section (No Accordion)",
+            "static-info": "Static info section (No Accordion)",
             "static-info-hint": "Toggle the XP/HP/Rest section between an accordion and a static display.",
+            "show-detailed-info": "Show detailed character info",
+            "show-detailed-info-hint": "Show the detailed character info section in the APE display. This section shows the character's Damage Resistances, Damage Immunities, Damage Vulnerabilities, Condition Immunities and Languages.",
             "show-no-uses": "Show items with no uses left",
             "show-no-uses-hint": "If an item has no remaining uses, it will be removed from the APE display. To keep the item in the display, check this box.",
             "sort-alphabetic": "Sort items alphabetically",
@@ -131,15 +138,56 @@
             "show-spell-uses": "Show spell slot uses",
             "show-spell-uses-hint": "Check to display the spells slots as a numeric value of uses remaining/total uses.",
             "show-death-saves": "Hide the death saves UI in APE",
-            "show-death-saves-hint": "Check to hide the death saves UI in APE. This UI is only visible when the actor is at 0 HP."
+            "show-death-saves-hint": "Check to hide the death saves UI in APE. This UI is only visible when the actor is at 0 HP.",
+            "spell-points-text-color": "Spell Points Text Color",
+            "spell-points-text-color-hint": "The color of the text that displays the spell points (remaining/total).",
+            "spell-points-bar-color-start": "Spell Points Bar Color Start",
+            "spell-points-bar-color-start-hint": "The starting color of the spell points bar (when points are near maximum).",
+            "spell-points-bar-color-end": "Spell Points Bar Color End",
+            "spell-points-bar-color-end-hint": "The ending color of the spell points bar (when points are near zero)."
         },
-		"warning": {
+        "warning": {
             "quantity-limit": "Not enough quantity to equip in both slots.",
-            "two-handed": "You cannot have two two-handed weapons in the same set."
+            "two-handed": "You cannot have two two-handed weapons in the same set.",
+            "item-not-found": "Could not find the selected item.",
+            "premium-locked": "Managing spells and inventory requires an active Patreon subscription."
         },
         "item-context": {
             "show": "Show in APE display",
             "hide": "Hide in APE display"
+        },
+        "dialog": {
+            "delete-item-title": "Delete Item",
+            "delete-item-content": "Are you sure you want to delete <strong>{name}</strong>? This cannot be undone.",
+            "delete": "Delete",
+            "cancel": "Cancel"
+        },
+        "manage": {
+            "add-item-title": "Add item from compendium",
+            "add-spell-title": "Add spell from compendium",
+            "quantity-title": "Quantity",
+            "prepared-title": "Prepared",
+            "unprepared-toggle-title": "Not prepared (click to prepare)",
+            "delete-item-title": "Delete item",
+            "prepared-count-title": "Prepared spells / maximum you can prepare"
+        },
+        "premium": {
+            "connect": "Connect Patreon",
+            "connect-title": "Connect Patreon",
+            "connect-intro": "Click \"Start Authentication\" to connect your Patreon account. A browser tab will open for you to log in.",
+            "start-auth": "Start Authentication",
+            "waiting": "Waiting for authentication in your browser...",
+            "waiting-attempt": "Waiting for authentication in your browser... ({attempt}/{max})",
+            "connected": "Connected as a {tier} supporter!",
+            "auth-failed": "Authentication timed out or failed. Please try again.",
+            "disconnect": "Disconnect",
+            "disconnect-title": "Disconnect Patreon",
+            "disconnect-content": "Disconnect your Patreon account? Spell and inventory management will be locked again.",
+            "supporter-tier": "{tier} supporter",
+            "table-unlocked": "Spell/inventory management unlocked by GM"
+        },
+        "version": {
+            "update-available": "Update available: v{version}"
         }
     }
 }

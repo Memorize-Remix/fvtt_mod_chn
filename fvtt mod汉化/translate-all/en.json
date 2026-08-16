@@ -10,5 +10,19 @@
   "translate-all.settings.model.name": "Target Model",
   "translate-all.settings.model.hint": "The model to use for translation. Default is 'GPT-4o Mini'.",
   "translate-all.settings.promptTemplatePath.name": "Prompt Template File",
-  "translate-all.settings.promptTemplatePath.hint": "Path to a text file containing a custom prompt (e.g., /modules/translate-all/prompts/dnd5e.txt)"
+  "translate-all.settings.promptTemplatePath.hint": "Path to a text file containing a custom prompt (e.g., /modules/translate-all/prompts/dnd5e.txt)",
+  "translate-all.settings.tts.enabled.name": "Enable Read-Aloud TTS (experimental, PF2E only)",
+  "translate-all.settings.tts.enabled.hint": "Adds a small Text-to-Speech button next to each <p class=\"read-aloud\"> paragraph in Pathfinder 2e sheets and journals.",
+  "translate-all.settings.tts.apiEndpoint.name": "TTS API Endpoint",
+  "translate-all.settings.tts.apiEndpoint.hint": "OpenAI-compatible TTS endpoint base URL. The module appends '/audio/speech'. Leave empty to reuse the translation API endpoint.",
+  "translate-all.settings.tts.apiKey.name": "TTS API Key",
+  "translate-all.settings.tts.apiKey.hint": "API key used to authenticate against the TTS endpoint. Leave empty to reuse the translation API key.",
+  "translate-all.settings.tts.model.name": "TTS Model",
+  "translate-all.settings.tts.model.hint": "Speech synthesis model to use.",
+  "translate-all.settings.tts.voice.name": "TTS Voice",
+  "translate-all.settings.tts.voice.hint": "Voice preset used by the TTS model.",
+  "translate-all.settings.tts.instructions.name": "TTS Voice Instructions",
+  "translate-all.settings.tts.instructions.hint": "Free-form style/tone instructions sent to the TTS model (e.g., 'narrate dramatically, slow pacing, ominous tone'). Only used by steerable models such as gpt-4o-mini-tts; ignored by tts-1/tts-1-hd. Leave empty to disable.",
+  "translate-all.settings.tts.folderPath.name": "TTS Audio Folder",
+  "translate-all.settings.tts.folderPath.hint": "Path inside the Foundry Data folder where generated audio files are saved (e.g., translateAll/textToSpeech). Files are named by a hash of text+voice+model+instructions so identical passages reuse the same audio."
 }

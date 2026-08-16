@@ -1,10 +1,6 @@
 {
   "fvtt-player-achievements": {
     "settings": {
-      "enable-player-achievements": {
-        "name": "Enable Player Achievements",
-        "hint": "Enable Player Achievements"
-      },
       "play-self-sounds": {
         "name": "Play Self Achievement Sounds",
         "hint": "Play a sound if you are awarded an achievement."
@@ -36,11 +32,19 @@
       "cloak-description-text": {
         "name": "Cloak Description Text",
         "hint": "Text to show when an achievement description is cloaked."
+      },
+      "use-alternate-button": {
+        "name": "Use Alternate Button Position",
+        "hint": "Use an alternate button position for the achievements window. This is useful if you have a lot of icons in the primary column. The button will appear in the Token Controls sub-list You will need to refresh the window for the changes to take effect."
       }
     },
     "interface": {
       "achievements-sheet": "Achievements Window",
-      "show-achievements-sheet": "Show Achievements Window"
+      "show-achievements-sheet": "Show Achievements Window",
+      "achievements": "Achievements",
+      "achievements-none": "No achievements found.",
+      "achievements-error": "Error loading achievements.",
+      "achievements-earned": "Earned"
     },
     "forms": {
       "achievements-sheet": {
@@ -52,7 +56,7 @@
         "export-achievements": "Export achievement data to clipboard",
         "import-achievements": "Overwrite current achievements with export data from clipboard",
         "import": "Import",
-        "filter": "Filter by achievement name",
+        "filter": "Filter by achievement name, description, or tags",
         "hide-awarded": "Hide Awarded",
         "hide-unawarded": "Hide Unawarded",
         "hide-details": "Compact View",

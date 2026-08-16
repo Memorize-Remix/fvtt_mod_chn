@@ -2,7 +2,7 @@
     "simple-portrait-organizer" : {
         
         "settings" : {
-			"storageSourceName" : "Storage source",
+            "storageSourceName" : "Storage source",
             "storageSourceHint" : "Option for cloud provider file system support. If options like S3 or Forge are available, they will be shown here.",
 
             "uploadDirectoryName" : "Upload directory",
@@ -32,7 +32,7 @@
 
         "form" : {
             "chooseFile" : "Choose, paste or drop an image:",
-			"uploadingNow": "Please wait untill uploading is done.",
+            "uploadingNow": "Please wait untill uploading is done.",
             "dropHere" : "Drop an image here, or paste one from the clipboard. (Ctrl + V)",
             "chooseFileLabel" : "Choose file",
             "defaultUploader" : "Open default FilePicker"
@@ -40,6 +40,11 @@
 
         "dialog" : {
             "selectFilename" : "Confirm a filename"
+        },
+        
+        "errors" : {
+            "fileIsZeroSize" : "Cannot load a file, try a different method!",
+            "fileIsNotImage" : "Only image files are supported!"
         }
     }
 }

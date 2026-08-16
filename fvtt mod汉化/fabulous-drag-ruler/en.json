@@ -4,58 +4,74 @@
       "COMMON": {
         "RESETTODEFAULT": "Reset to Default"
       },
-      "WAYPOINT": {
-        "TITLE": "Waypoint Style Overrides",
-        "ENABLED": {
-          "LABEL": "Enable",
-          "HINT": "Toggle on to enable waypoint overrides"
-        },
-        "RADIUS": {
-          "LABEL": "Radius",
-          "HINT": "Radius of the waypoint"
-        },
-        "ALPHA": {
-          "LABEL": "Alpha",
-          "HINT": "Alpha value of the waypoint"
-        },
-        "COLOR": {
-          "LABEL": "Color",
-          "HINT": "Color of the waypoint"
-        }
-      },
       "GRIDHIGHLIGHT": {
-        "TITLE": "Grid Highlight Style Overrides",
-        "ENABLED": {
-          "LABEL": "Enable",
-          "HINT": "Toggle on to enable drag segment overrides"
+        "ALPHA": {
+          "HINT": "The alpha value of the grid highlight",
+          "LABEL": "Alpha"
         },
         "COLOR": {
-          "LABEL": "Color",
-          "HINT": "Color of the grid highlight section"
+          "HINT": "Color of the grid highlight section",
+          "LABEL": "Color"
         },
-        "ALPHA": {
-          "LABEL": "Alpha",
-          "HINT": "The alpha value of the grid highlight"
-        }
+        "ENABLED": {
+          "HINT": "Toggle on to enable drag segment overrides",
+          "LABEL": "Enable"
+        },
+        "TITLE": "Grid Highlight Style Overrides"
       },
       "SEGMENT": {
-        "TITLE": "Segment Style Overrides",
-        "ENABLED": {
-          "LABEL": "Enable",
-          "HINT": "Toggle on to enable drag segment overrides"
-        },
-        "WIDTH": {
-          "LABEL": "Width",
-          "HINT": "The width of the drag segment.  Will be multiplied by the canvas's UI scale"
+        "ALPHA": {
+          "HINT": "Alpha value of the drag ruler segments",
+          "LABEL": "Alpha"
         },
         "COLOR": {
-          "LABEL": "Color",
-          "HINT": "Color of the drag ruler segments"
+          "HINT": "Color of the drag ruler segments",
+          "LABEL": "Color"
         },
-        "ALPHA": {
-          "LABEL": "Alpha",
-          "HINT": "Alpha value of the drag ruler segments"
+        "ENABLED": {
+          "HINT": "Toggle on to enable drag segment overrides",
+          "LABEL": "Enable"
+        },
+        "TITLE": "Segment Style Overrides",
+        "WIDTH": {
+          "HINT": "The width of the drag segment.  Will be multiplied by the canvas's UI scale",
+          "LABEL": "Width"
         }
+      },
+      "WAYPOINT": {
+        "ALPHA": {
+          "HINT": "Alpha value of the waypoint",
+          "LABEL": "Alpha"
+        },
+        "BGALPHA": {
+          "HINT": "Alpha of the waypoint's background",
+          "LABEL": "Background Alpha"
+        },
+        "BGCOLOR": {
+          "HINT": "The background color of the waypoint.",
+          "LABEL": "Background Color"
+        },
+        "COLOR": {
+          "HINT": "Color of the waypoint",
+          "LABEL": "Color"
+        },
+        "ENABLED": {
+          "HINT": "Toggle on to enable waypoint overrides",
+          "LABEL": "Enable"
+        },
+        "FONT": {
+          "HINT": "The label's font",
+          "LABEL": "Font"
+        },
+        "FONTCOLOR": {
+          "HINT": "Color of the label's text",
+          "LABEL": "Font Color"
+        },
+        "RADIUS": {
+          "HINT": "Radius of the waypoint",
+          "LABEL": "Radius"
+        },
+        "TITLE": "Waypoint Style Overrides"
       }
     },
     "KEYBINDINGS": {
@@ -63,37 +79,41 @@
     },
     "SCENE": {
       "RULERSTATE": {
-        "LABEL": "Token Drag Ruler",
-        "HINT": "Set to 'Default' to use global defaults for grid type, otherwise set to 'Enabled' or 'Disabled' to override.",
-        "ENABLED": "Enabled",
+        "DEFAULT": "Default",
         "DISABLED": "Disabled",
-        "DEFAULT": "Default"
+        "ENABLED": "Enabled",
+        "HINT": "Set to 'Default' to use global defaults for grid type, otherwise set to 'Enabled' or 'Disabled' to override.",
+        "LABEL": "Token Drag Ruler"
       }
     },
     "SETTINGS": {
       "DISABLEOUTOFCOMBAT": {
-        "LABEL": "Disable Out of Combat",
-        "HINT": "Toggle on to disable the drag ruler by default when not in an active encounter"
-      },
-      "ENABLEGRIDLESS": {
-        "LABEL": "Enable for Gridless Scenes",
-        "HINT": "Toggle on to enable the drag ruler by default for gridless scenes"
+        "HINT": "Toggle on to disable the drag ruler by default when not in an active encounter",
+        "LABEL": "Disable Out of Combat"
       },
       "ENABLEGRIDDED": {
-        "LABEL": "Enable for Gridded Scenes",
-        "HINT": "Toggle on to enable the drag ruler by default for scenes with a grid"
+        "HINT": "Toggle on to enable the drag ruler by default for scenes with a grid",
+        "LABEL": "Enable for Gridded Scenes"
       },
-      "SEGMENTSTYLEOVERRIDE": {
-        "LABEL": "Segment Style Overrides",
-        "HINT": "Options to customize the look of line segments when dragging tokens."
-      },
-      "WAYPOINTSTYLEOVERRIDE": {
-        "LABEL": "Waypoint Style Overrides",
-        "HINT": "Options to customize the look of waypoints along the drag ruler."
+      "ENABLEGRIDLESS": {
+        "HINT": "Toggle on to enable the drag ruler by default for gridless scenes",
+        "LABEL": "Enable for Gridless Scenes"
       },
       "GRIDHIGHLIGHTSTYLEOVERRIDE": {
-        "LABEL": "Grid Highlight Style Overrides",
-        "HINT": "Options to customize the look of the drag ruler's grid highlight"
+        "HINT": "Options to customize the look of the drag ruler's grid highlight",
+        "LABEL": "Grid Highlight Style Overrides"
+      },
+      "SCALEWAYPOINTLABEL": {
+        "HINT": "If enabled, will size the drag ruler's waypoint label elements to maintain a constant size independent of canvas zoom.",
+        "LABEL": "Scale Waypoint Label"
+      },
+      "SEGMENTSTYLEOVERRIDE": {
+        "HINT": "Options to customize the look of line segments when dragging tokens.",
+        "LABEL": "Segment Style Overrides"
+      },
+      "WAYPOINTSTYLEOVERRIDE": {
+        "HINT": "Options to customize the look of waypoints along the drag ruler.",
+        "LABEL": "Waypoint Style Overrides"
       }
     }
   }

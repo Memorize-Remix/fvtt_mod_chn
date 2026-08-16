@@ -35,6 +35,8 @@
 					"default" : "Default (Foundry behaviour)",
 					"upElevation" : "Next higher elevation",
 					"downElevation" : "Next lower elevation",
+					"upElevationInRegion" : "Next higher elevation in region",
+					"downElevationInRegion" : "Next lower elevation in region",
 					"neighbourElevation" : "Neighbouring elevations",
 					"levelChoice" : "Custom level choice"
 				}
@@ -74,7 +76,7 @@
 				"name" : "Ignore triggering Token",
 				"hint" : "Removes the triggering Token from the list of recipients"
 			},
-					
+			
 			"addTokensonRegion" : {
 				"name" : "Tokens on Region",
 				"hint" : "If the Tokens curently standing on this region should be added"
@@ -188,7 +190,7 @@
 					"unlockedclosed" : "unlocked closed"
 				}
 			},
-
+			
 			"conditionalTokeninRegions" : {
 				"name" : "Token within Regions",
 				"hint" : "Check if the triggering Token is within these Regions during the trigger event"
@@ -198,7 +200,7 @@
 				"name" : "Token outside Regions",
 				"hint" : "Check if the triggering Token is outside these Regions during the trigger event"
 			},
-				
+			
 			"conditionalMacros" : {
 				"name" : "Macros",
 				"hint" : "Macros should return 'true', 'false', 'undefined' (skip) or an array thereof [Parameters: speaker, actor, token, scene, region, behavior, event]"
@@ -258,7 +260,7 @@
 				"name" : "Prevented Movement",
 				"hint" : "Movement types to prevent in this region (a GM can still move tokens using unconstrained movement)"
 			},
-
+			
 			"blockDirectionOnly" : {
 				"name" : "Directional Block",
 				"hint" : "If only a certain direction should be blocked"
@@ -268,7 +270,7 @@
 				"name" : "Block Direction",
 				"hint" : "Blocked movement direction"
 			},
-					
+			
 			"rollTables" : {
 				"name" : "Roll Tables",
 				"hint" : "Roll tables rolled by the user when triggered"

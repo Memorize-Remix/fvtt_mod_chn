@@ -133,7 +133,7 @@
 				"name" 					: "Link rotations",
 				"descrp"				: "Rotates alls riders if a ridden token is rotated (also works with \"Move ridden Token\" option)"				
 			},
-	
+			
 			"TeleportRiders" : {
 				"name" 					: "Teleport riders",
 				"descrp"				: "If riding tokens should be teleported instead of moved when the mounted token moves",
@@ -159,6 +159,11 @@
 				"descrp"				: "Allows tokens which have the 'Rideable' trait to be ridden (the \"Rideable\" trait has to be manually added under settings>Pathfinder 2nd Edition>Manage Honebrew Elements>Creature Traits)"				
 			},
 			
+			"RiderProxyPositionDefault" : {
+				"name"					: "Proxy Rider position default",
+				"descrp"				: "If riding tokens distance is calculated from the ridden tokens position by default"
+			},
+			
 			"FamiliarRiding" : {
 				"name" 					: "Familiar riding",
 				"descrp"				: "Allows for familiars to ride their master, the familairs will be placed at the corners of their master"				
@@ -173,6 +178,11 @@
 					"bl"				: "Bottom left",
 					"br"				: "Bottom right"
 				}
+			},
+			
+			"FamiliarRidingInside" : {
+				"name" 					: "Place familiars inside",
+				"descrp"				: "Places familiars within the masters token."				
 			},
 			
 			"Grappling" : {
@@ -266,12 +276,12 @@
 				"name" 					: "Own message popups only",
 				"descrp"				: "Only shows the message popups from tokens you control"				
 			},
-
+			
 			"UINotifications" : {
 				"name" 					: "UI Notifications",
 				"descrp"				: "Enables multible UI notifications upon actions such as mounting or dismounting"				
 			},
-					
+			
 			"EnableFollowing" : {
 				"name"					: "Enable Token following",
 				"descrp"				: "If Token following is active in this world"
@@ -549,6 +559,16 @@
 			"PilotedbyDefaultFlag" : {
 				"name"					: "Piloted by default",
 				"descrp"				: "If everyone riding this token automatically pilots this token (not compatible with \"Riders can move freely\")"
+			},
+			
+			"ApplyReachEffectFlag" : {
+				"name"					: "Apply reach effect",
+				"descrp"				: "If this mount should apply a system specific effect to its mounts to adjust the reach to comply with system rules"
+			},
+			
+			"RiderProxyPositionFlag" : {
+				"name"					: "Proxy Rider Position",
+				"descrp"				: "Use this tokens position when calculating the distances for its riders"
 			}
 		},
 		
@@ -558,6 +578,13 @@
 			"MountItem" : {
 				"name" 					: "Mounted weight",
 				"descrp"				: "Weight added by mounted creatures:"
+			}
+		},
+		
+		"Effects" : {
+			"Reach" : {
+				"name" 					: "Reach adjustment",
+				"descrp"				: "<p>Adjusts:</p><ul><li>Makes large (mounting will adjust visual size, you will remain large and centered while mounted)</li><li>Adjusts carry modifier to reflect not actually being large.</li><li>Adjust skills, attack, effective weapon size, AC, CMB, etc. to reflect not actually being large.</li><li>Macro on toggle to change between long/tall to enforce correct reach rules.</li></ul>"
 			}
 		},
 		

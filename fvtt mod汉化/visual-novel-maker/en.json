@@ -2,22 +2,6 @@
   "FI": {
     "ModuleTitle": "JRPG Field Interaction",
 
-    "Update": {
-      "Title": "Visual Novel Maker — Update Available",
-      "NewVersion": "v{version} is available!",
-      "CurrentVersion": "You are on v{current}",
-      "PatchHighlights": "What's New:",
-      "CriticalWarning": "This is a critical update. Please update as soon as possible.",
-      "Confirm": "OK",
-      "SkipVersion": "Skip this version",
-      "DisableNotification": "Don't show again",
-      "DisableConfirm": "Update notifications disabled. You can re-enable them in Module Settings.",
-      "DisableSetting": "Disable Update Notifications",
-      "DisableSettingHint": "Turn off update notification popups on startup.",
-      "ConfirmNotice": "Got it",
-      "Close": "Close"
-    },
-
     "Settings": {
       "Discord": {
         "Name": "Join Discord",
@@ -27,13 +11,17 @@
         "Name": "Enable Module",
         "Hint": "Enable or disable the JRPG Field Interaction system."
       },
+      "HeaderButtonsIconOnly": {
+        "Name": "Sheet Header Button: Icon Only",
+        "Hint": "Show Visual Novel Maker's Application V1 actor sheet portrait settings button as an icon without a text label. Useful when a system or multiple modules crowd the sheet header."
+      },
       "PromptDistance": {
         "Name": "Prompt Distance",
         "Hint": "Grid distance at which interaction prompts appear. (Default: 1)"
       },
       "DefaultTransition": {
         "Name": "Default Transition",
-        "Hint": "Default screen transition effect when entering VN mode."
+        "Hint": "Default screen transition used when opening and closing VN mode."
       },
       "TypewriterSpeed": {
         "Name": "Typewriter Speed",
@@ -71,14 +59,44 @@
         "Name": "Live Mode: Hide Dialogue Box",
         "Hint": "Hides the dialogue box in live mode. Useful for voice play sessions where only background and character visuals are needed."
       },
+      "PerCharacterDialoguePanels": {
+        "Name": "Per-Character Dialogue Panels",
+        "Hint": "When enabled, staged actors get their own slots in a connected bottom dialogue bar, each with its own name label. Narration and system lines keep using the shared dialogue box. Falls back to the shared box when the speaker is not on stage. Default off."
+      },
+      "HideCharacterDockNames": {
+        "Name": "Hide Character Names in Top Bar",
+        "Hint": "Hide the name labels below character portraits in the top bar for all users. Character portraits and dialogue speaker names remain visible. Useful when an NPC's identity has not been revealed yet."
+      },
       "LockPlayerCharAdd": {
         "Name": "Lock Player Character Add",
         "Hint": "When enabled, players cannot add their own characters to the stage. Only the GM can add characters.",
         "Locked": "Players cannot add characters to the stage."
       },
+      "LockPlayerStageControls": {
+        "Name": "Lock Player Stage Controls",
+        "Hint": "Prevent players from moving, scaling, resetting, flipping, hiding, changing expressions, effects, or emotions, and removing their staged characters. Players can still select their character as the chat speaker.",
+        "Locked": "The GM has locked player stage controls."
+      },
       "VoiceIndicator": {
         "Name": "Live Mode: Voice Highlight",
-        "Hint": "Automatically highlights the speaking player's character on the VN stage via microphone detection. GM is excluded."
+        "Hint": "Automatically highlights each user's selected VN character through microphone detection, falling back to their assigned character when none is selected. Enabling this may prompt the browser for microphone access."
+      },
+      "InactiveCharacterDim": {
+        "Name": "Inactive Character Dimming",
+        "Hint": "Controls how much non-active stage characters are dimmed when another character is highlighted. The active character keeps its glow and z-index regardless.",
+        "Strong": "Strong (default)",
+        "Soft": "Soft",
+        "Off": "Off (no dimming)"
+      },
+      "LipSyncMode": {
+        "Name": "Lip Image Mode",
+        "Hint": "Choose whether dialogue, chat, and microphone voice activity alternate lip frames or hold the speaking image while a character is talking.",
+        "Blink": "Blink (default)",
+        "Hold": "Hold speaking image"
+      },
+      "AdaptiveUiScale": {
+        "Name": "Adaptive UI Scaling",
+        "Hint": "Scale the visual novel stage UI to match your screen size (designed at 1920×1080). Disable to keep fixed pixel sizes."
       },
       "ChoiceMode": {
         "Name": "Choice Mode",
@@ -100,6 +118,127 @@
         "Name": "Overlay Customize",
         "Label": "Open Settings",
         "Hint": "Customize the appearance of VN overlay elements such as dialogue box, nameplate, and choices."
+      }
+    },
+
+    "SettingsCenter": {
+      "title": "Visual Novel Maker Settings",
+      "eyebrow": "Visual Novel Maker",
+      "menuName": "Visual Novel Maker Settings",
+      "menuLabel": "Open Settings",
+      "menuHint": "Manage general, dialogue, live mode, personal settings, and advanced tools in one place.",
+      "subtitleGm": "World settings apply to everyone. Personal settings are stored only in this browser.",
+      "subtitlePlayer": "Personal settings are stored only in this browser.",
+      "searchLabel": "Search Visual Novel Maker settings",
+      "searchPlaceholder": "Search settings...",
+      "noResults": "No settings match your search.",
+      "save": "Save Changes",
+      "cancel": "Cancel",
+      "close": "Close",
+      "browse": "Choose Audio File",
+      "saved": "Visual Novel Maker settings saved.",
+      "saveFailed": "Could not save the settings. Check the console for details.",
+      "savedState": "All changes are saved.",
+      "unsavedState": "You have unsaved changes.",
+      "scope": {
+        "world": "World Settings",
+        "client": "Personal Settings",
+        "tools": "Tools"
+      },
+      "tabs": {
+        "general": {
+          "label": "General",
+          "description": "Default presentation and interaction"
+        },
+        "dialogue": {
+          "label": "Dialogue",
+          "description": "Text, sound, and choices"
+        },
+        "live": {
+          "label": "Live Mode",
+          "description": "Stage presentation and player access"
+        },
+        "personal": {
+          "label": "Personal",
+          "description": "Display and sound in this browser"
+        },
+        "tools": {
+          "label": "Tools",
+          "description": "Advanced settings and support"
+        }
+      },
+      "sections": {
+        "general": {
+          "appearance": {
+            "title": "Presentation Defaults",
+            "description": "Choose the dialogue theme and default VN screen transition."
+          },
+          "interaction": {
+            "title": "Interaction",
+            "description": "Set how close a token must be to interact with an NPC."
+          }
+        },
+        "dialogue": {
+          "text": {
+            "title": "Dialogue Text",
+            "description": "Adjust how quickly dialogue appears on screen."
+          },
+          "typewriterAudio": {
+            "title": "Typewriter Sound",
+            "description": "Choose the default sound file and playback interval used by everyone."
+          },
+          "choices": {
+            "title": "Choices and Voting",
+            "description": "Resolve choices immediately or let players vote on them."
+          }
+        },
+        "live": {
+          "stage": {
+            "title": "Stage Presentation",
+            "description": "Set the default layout and display behavior for live sessions."
+          },
+          "speaker": {
+            "title": "Speaker and Voice",
+            "description": "Configure chat speaker switching and microphone-based character highlighting."
+          },
+          "playerControls": {
+            "title": "Player Controls",
+            "description": "Choose whether players can add characters or control their staged characters."
+          }
+        },
+        "personal": {
+          "interface": {
+            "title": "Interface",
+            "description": "Adjust UI scaling and actor sheet buttons in this browser."
+          },
+          "characterFeedback": {
+            "title": "Character Display",
+            "description": "Choose how inactive characters and speaking mouth images are displayed."
+          },
+          "audio": {
+            "title": "Personal Audio",
+            "description": "Adjust your own typewriter sound volume."
+          }
+        },
+        "tools": {
+          "shortcuts": {
+            "title": "Advanced Tools and Support",
+            "description": "Edit detailed appearance settings or open the GlitchSmith community."
+          }
+        }
+      },
+      "tools": {
+        "overlay": {
+          "title": "Advanced Overlay Editor",
+          "description": "Adjust the appearance of dialogue, nameplates, choices, and player editing permissions.",
+          "descriptionPlayer": "Adjust your personal dialogue, nameplate, and choice appearance within the options allowed by the GM.",
+          "label": "Open Advanced Editor"
+        },
+        "discord": {
+          "title": "GlitchSmith Discord",
+          "description": "Open the GlitchSmith community for support, feedback, and updates.",
+          "label": "Open Discord"
+        }
       }
     },
 
@@ -142,6 +281,7 @@
       "SampleChoice2": "Choice B",
       "SampleLocation": "Crossroads Inn",
       "DialogueBox": "Dialogue Box",
+      "CharacterDialoguePanel": "Character Dialogue Panels",
       "Nameplate": "Nameplate",
       "ChoicePanel": "Choices",
       "SystemBar": "System Buttons",
@@ -174,6 +314,7 @@
       "DialogueSection": "Dialogue Text",
       "NarrationSection": "Narration Text",
       "NarrationItalic": "Italic",
+      "TextAlign": "Alignment",
       "NarrationAlign": "Alignment",
       "AlignLeft": "Left",
       "AlignCenter": "Center",
@@ -204,6 +345,8 @@
       "BGMVolume": "BGM Volume",
       "CharEnter": "Character Enter",
       "CharExit": "Character Exit",
+      "CharEffect": "Character Effect",
+      "CharEmotion": "Character Emotion",
       "Expression": "Expression",
       "Shake": "Shake",
       "Jump": "Jump",
@@ -212,11 +355,40 @@
       "Macro": "Macro",
       "Cutin": "Cut-in",
       "Unboxing": "Unboxing",
+      "Shop": "Open Shop",
+      "ShopDropHint": "Drop a Stylish Shop NPC here",
+      "ShopNotConfigured": "That actor is not configured as a Stylish Shop.",
+      "ShopMissingWarning": "Stylish Shop module is not active. This action will be skipped at runtime.",
+      "ShopVersionWarning": "Stylish Shop v{required} or newer is required for this action. The installed version is v{current}. Please update Stylish Shop to avoid degraded behavior.",
+      "RelationshipProgress": "Adjust Relationship Progress",
+      "RelationshipOwnerMode": "Relationship Owner",
+      "RelationshipOwnerInteractor": "Interacting Actor",
+      "RelationshipOwnerActor": "Selected Actor",
+      "RelationshipOwner": "Actor That Owns the Relationship",
+      "RelationshipTarget": "Relationship",
+      "RelationshipTargetActor": "Relationship Target Actor",
+      "RelationshipSelect": "(Select a relationship...)",
+      "RelationshipDelta": "Progress Change",
+      "RelationshipInteractorHint": "The interacting Actor is the Actor that started the interaction from a token or Region. Select a specific Actor when running a Story directly from Live Director. If the same target has multiple relationships, use Selected Actor mode and choose the exact relationship.",
+      "RelationshipHint": "Adds or removes the specified number of relationship progress points through the Tracker's safe integration API. Player-owned Actors and synchronized relationships are supported. Rank macros are not run for this action. The action is skipped in player-hosted Stories, player-only interactions, and editor previews.",
+      "RelationshipMissingWarning": "Install and activate Stylish Relationship Tracker v{required} or newer before adding or configuring this action.",
+      "RelationshipVersionWarning": "A compatible Stylish Relationship Tracker v{required} or newer is required before this action can be configured. The active module reports v{current}. Update or reinstall the Tracker first.",
+      "RelationshipActiveGMWarning": "Only the active GM can change relationship progress. This action was skipped on this GM client.",
+      "RelationshipAmbiguousWarning": "More than one relationship is linked to that target Actor. Use Selected Actor mode and choose the exact relationship.",
+      "RelationshipNone": "No adjustable relationships were found for this Actor.",
+      "RelationshipOwnerFirst": "Select the Actor that owns the relationship before choosing a relationship.",
+      "RelationshipOrganization": "Organization relationship",
+      "RelationshipCustom": "Custom relationship",
+      "RelationshipMax": "Max",
       "Delay": "Delay",
       "SoloMode": "Solo Mode",
       "Camera": "Camera",
       "CharMove": "Move Character",
       "SoloModeEnabled": "Enabled",
+      "Flipped": "Flipped",
+      "Facing": "Facing",
+      "FacingKeep": "Keep current",
+      "FacingNormal": "Normal",
       "Picture": "Picture",
       "PictureClear": "Picture Clear",
       "Image": "Image",
@@ -229,7 +401,21 @@
       "LocationClear": "Clear Location",
       "LocationText": "Location Name",
       "Fx": "FX",
-      "FxStop": "FX Stop"
+      "FxStop": "FX Stop",
+      "SceneImage": "Scene Image",
+      "SceneImageClear": "Clear Scene Images",
+      "SceneImageSrc": "Image",
+      "SceneImageName": "Name",
+      "SceneImageId": "Prop ID",
+      "SceneImageIdOptional": "Prop ID (blank = clear all)",
+      "SceneImageX": "X (%)",
+      "SceneImageY": "Y (%)",
+      "SceneImageScale": "Scale",
+      "SceneImageOpacity": "Opacity",
+      "SceneImageLayer": "Layer",
+      "SceneImageLayerBack": "Back (behind characters)",
+      "SceneImageLayerFront": "Front (above characters)",
+      "SceneImageClearHint": "Leave Prop ID blank to clear every scene image at once."
     },
 
     "Choice": {
@@ -259,6 +445,7 @@
       "ContextMenu": "Edit Interaction",
       "AddNode": "Add Node",
       "DeleteNode": "Delete Node",
+      "DeleteNodeConfirm": "Delete node '{node}'? This will also remove links pointing to it.",
       "CannotDeleteStart": "Cannot delete the start node.",
       "Preview": "Preview",
       "PreviewNode": "Preview from selected node",
@@ -299,6 +486,14 @@
       "DeleteBranch": "Delete Branch",
       "BranchTextPrompt": "Enter branch text:",
       "SelectNodeFirst": "Select a node first to add a branch.",
+      "ConditionalBranches": "Conditional Branches",
+      "ConditionalBranch": "Branch",
+      "ConditionalBranchTarget": "Target Node",
+      "AddConditionalBranch": "Add Conditional Branch",
+      "DeleteConditionalBranch": "Delete Conditional Branch",
+      "ConditionalBranchesHint": "Evaluated top-to-bottom before the default Next Node. First matching condition wins.",
+      "MoveUp": "Move Up",
+      "MoveDown": "Move Down",
       "Sequence": "Sequence",
       "AddNarration": "Add Narration",
       "AddDialogue": "Add Dialogue",
@@ -318,6 +513,7 @@
       "ReturnsToExploration": "Returns to exploration",
       "ExitExploration": "Exit exploration from this node",
       "HideDialogue": "Hide dialogue box on this node",
+      "SkipTypewriter": "Skip typewriter on this node",
       "GmOnlyAdvance": "GM Only",
       "GmOnlyAdvanceHint": "Only the GM can advance dialogue. Players cannot click to progress.",
       "FramedMode": "Framed",
@@ -342,6 +538,8 @@
       "Choices": "Choices",
       "ChoicePlaceholder": "Type a choice and press Enter",
       "PresentChoices": "Present Choices",
+      "ShowPlayerChoiceInput": "Show player choice input",
+      "ShowPlayerChoiceInputHint": "Turn this off to show only the prepared choices to players.",
       "WaitingForChoice": "Waiting for player...",
       "ChoiceSelected": "Player selected: {choice}",
       "RunInteraction": "Run Interaction",
@@ -364,7 +562,10 @@
       },
       "SearchPlaceholder": "Search actors...",
       "ClickToAdd": "Click to add to stage",
+      "PrevPage": "Previous page",
+      "NextPage": "Next page",
       "ExitStage": "Exit Stage",
+      "ManageRelationships": "Manage Relationships",
       "SessionNotActive": "Live session is not active.",
       "VoteStatus": "Vote Status",
       "VoteCount": "{count} votes",
@@ -382,12 +583,52 @@
       "GoBroadcast": "Go Live",
       "ToggleVisibility": "Toggle player visibility",
       "AddHiddenMode": "Add hidden",
+      "AddNameHiddenMode": "Add with name hidden",
       "LockPlayerAdd": "Lock player add",
+      "LockPlayerStageControls": "Lock player stage controls",
       "FlipCharacter": "Flip",
       "TargetPlayers": "Target Players",
+      "TargetGM": "GM",
+      "NoTargetSelected": "Select at least one target player.",
       "CharHidden": "Hidden from players",
       "CharVisible": "Visible to players",
+      "HideDockName": "Hide Top-Bar Name",
+      "ShowDockName": "Show Top-Bar Name",
       "FramedMode": "Framed Mode",
+      "QueueExpressions": {
+        "Name": "Queue Until Chat",
+        "Hint": "When on, expression popup picks are queued for the actor's next chat message instead of applying immediately.",
+        "QueuedPrefix": "Queued",
+        "QueuedStatus": "Queued for next chat"
+      },
+      "CharEffect": "Effect",
+      "CharEffectNone": "None",
+      "CharEffectHologram": "Hologram",
+      "CharEffectGhost": "Ghost",
+      "CharEffectStealth": "Stealth",
+      "CharEffectMemory": "Memory",
+      "CharEffectSilhouette": "Silhouette",
+      "CharEffectGlitch": "Glitch",
+      "CharEffectIce": "Ice",
+      "CharEffectFire": "Fire",
+      "CharEffectElectric": "Electric Shock",
+      "CharEffectInvertColor": "Invert Color",
+      "CharEffectAwakeningAura": "Awakening Aura",
+      "CharEmotion": "Emotion",
+      "CharEmotionNone": "None",
+      "CharEmotionHappyJump": "Happy Jump",
+      "CharEmotionSparkle": "Sparkle",
+      "CharEmotionBlush": "Blush",
+      "CharEmotionSweatdrop": "Sweatdrop",
+      "CharEmotionExclamation": "Exclamation",
+      "CharEmotionQuestionMark": "Question Mark",
+      "CharEmotionSadness": "Sadness",
+      "CharEmotionAngry": "Angry",
+      "CharEmotionVein": "Rage",
+      "CharEmotionSleep": "Sleep",
+      "CharEmotionGloomCloud": "Gloom Cloud",
+      "CharEmotionDazed": "Dazed",
+      "CharEmotionLaughter": "Laughter",
       "FxEffects": "FX / Effects",
       "FxGroupWeather": "Weather",
       "FxGroupAmbience": "Ambience",
@@ -413,6 +654,15 @@
       "FxLightning": "Lightning",
     "FxFilmGrain": "Film Grain",
     "FxMonochromeFilm": "Monochrome Film",
+      "FxSpeedLines": "Speed Lines",
+      "FxShadowMist": "Shadow Mist",
+      "FxFilmBurn": "Film Burn",
+      "FxLensRain": "Lens Rain",
+      "FxHeroFlare": "Hero Flare",
+      "FxShockwave": "Shockwave",
+      "FxVictoryConfetti": "Victory Confetti",
+      "FxSparkBurst": "Energy Sparks",
+      "FxVolumetricRays": "Volumetric Rays",
       "FxBubbles": "Bubbles",
       "FxPollen": "Pollen",
       "FxCustom": "Custom FX",
@@ -450,14 +700,55 @@
       "TabCast": "Cast",
       "TabScene": "Scene",
       "TabFx": "FX",
-      "TabStory": "Story"
+      "TabStory": "Story",
+      "SceneImages": "Scene Images",
+      "SceneImageAdd": "Add Image",
+      "SceneImageClearAll": "Clear All",
+      "SceneImageRemove": "Remove",
+      "SceneImageReplace": "Replace Image",
+      "SceneImageTune": "Tune",
+      "SceneImageX": "X",
+      "SceneImageY": "Y",
+      "SceneImageScale": "Scale",
+      "SceneImageOpacity": "Opacity",
+      "SceneImageLayerFrontHint": "In front of characters — click to move behind",
+      "SceneImageLayerBackHint": "Behind characters — click to move in front",
+      "SceneImageNeedSession": "Start a session before adding scene images."
     },
 
     "SystemBar": {
       "RequestTitle": "Player Request",
       "RequestMessage": "{name} requested: {action}",
       "Approve": "Approve",
-      "Deny": "Deny"
+      "Deny": "Deny",
+      "Auto": "Auto advance",
+      "Skip": "Skip",
+      "Log": "Backlog",
+      "Close": "Close dialogue"
+    },
+
+    "Backlog": {
+      "Title": "Backlog",
+      "Export": "Save TXT",
+      "ExportHtml": "Save HTML",
+      "PreparingHtml": "Preparing...",
+      "ExportHtmlError": "Could not save the HTML backlog.",
+      "ExportHtmlPartial": "{count} portrait image(s) could not be embedded and were replaced with initials.",
+      "ExportedBy": "Exported from Visual Novel Maker",
+      "Close": "Close",
+      "Empty": "Dialogue from this session will appear here.",
+      "Hint": "Newest dialogue appears at the bottom",
+      "Count": "Entries: {count}",
+      "Narration": "Narration",
+      "Choice": "Choice",
+      "UnknownSpeaker": "Unknown",
+      "SearchPlaceholder": "Search speaker or dialogue...",
+      "SearchLabel": "Search backlog",
+      "PreviousResult": "Previous result",
+      "NextResult": "Next result",
+      "ClearSearch": "Clear search",
+      "SearchResult": "{current} / {total}",
+      "NoResults": "No matches"
     },
 
     "Keybind": {
@@ -508,7 +799,21 @@
       "LipClosed": "Mouth Closed",
       "LipOpen": "Mouth Open",
       "SpeakingVideo": "Speaking Video",
-      "SpeakingVideoNone": "None (static image)"
+      "SpeakingVideoNone": "None (static image)",
+      "TypewriterSound": "Typewriter Sound",
+      "TypewriterSoundHint": "Optional audio file used for this actor's dialogue typewriter ticks. Leave blank to use the module default.",
+      "TypewriterSoundDefault": "Use module default",
+      "EmotionAnchors": "Emotion Anchors",
+      "EmotionExprOverride": "Emotion Anchor Override",
+      "EmotionClearOverride": "Reset to default",
+      "EmotionUseGroup": "Inherit from group",
+      "EmotionDragHint": "Pick an emotion below, then click or drag on the preview to set its anchor. Use the numeric fields for precise scale/rotation/alpha.",
+      "LinkedEmotion": "Auto Emotion",
+      "LinkedEmotionNone": "No automatic emotion change",
+      "GenerateThumbnails": "Generate Thumbnails",
+      "GenerateThumbnailsHint": "Create lightweight thumbnails for the standing image, group standings, and expressions to speed up this dialog.",
+      "ThumbnailsGenerated": "{count} thumbnail(s) generated.",
+      "ThumbnailsNoneNeeded": "No missing thumbnails. Everything already has one."
     },
 
     "Crop": {
@@ -654,7 +959,10 @@
 
     "GM": {
       "InteractRequest": "Interaction Request",
-      "Approve": "Start"
+      "Approve": "Start",
+      "Requester": "Player",
+      "Target": "Target",
+      "InteractorActor": "Interacting Actor"
     },
 
     "Graph": {

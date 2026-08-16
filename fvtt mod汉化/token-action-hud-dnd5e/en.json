@@ -31,6 +31,8 @@
       "defensiveTactics": "Defensive Tactics",
       "eldritchInvocations": "Eldritch Invocations",
       "elementalDisciplines": "Elemental Disciplines",
+      "equip": "Equip",
+      "favorites": "Favorites",
       "feats": "Feats",
       "fightingStyles": "Fighting Styles",
       "huntersPrey": "Hunter's Prey",
@@ -41,11 +43,12 @@
       "lairActions": "Lair Actions",
       "legendary": "Legendary",
       "legendaryActions": "Legendary Actions",
-      "magicItems": "Magic Items",
+      "limitedSpells": "Limited Spells",
       "maneuvers": "Maneuvers",
       "metamagicOptions": "Metamagic Options",
       "monsterFeatures": "Monster Features",
       "multiattacks": "Multiattacks",
+      "noAction": "No Action",
       "otherActions": "Other Actions",
       "pactBoons": "Pact Boons",
       "pactSpells": "Pact Spells",
@@ -56,45 +59,55 @@
       "rests": "Rests",
       "rollInitiative": "Roll Initiative",
       "runes": "Runes",
+      "settings": {
+        "abbreviateSkills": {
+          "hint": "Display skill and ability names as a three-character abbreviation.",
+          "name": "Abbreviate Skill and Ability Names"
+        },
+        "displaySpellInfo": {
+          "hint": "Display spell component information, concentration, and ritual status next to the spell's name.",
+          "name": "Display Spell Information"
+        },
+        "showActivitiesAsActions": {
+          "hint": "Show each activity on an item as its own action. When clicking an activity action, the activity is executed directly. When disabled, each item is a single action and clicking the action will display the activity selection window (unless skipped).",
+          "name": "Show Activities as Actions"
+        },
+        "showItemsWithoutActivationCosts": {
+          "hint": "Show items with an Activation Cost of \"None\".",
+          "name": "Show Items without Activation Costs"
+        },
+        "showSlowActions": {
+          "hint": "Show actions that take longer than one round.",
+          "name": "Show Slow Actions"
+        },
+        "showSpellsAcrossGroups": {
+          "hint": "Show each spell action in every spell-slot group it can be cast from. When disabled, spells appear only in their base spell-slot group.",
+          "name": "Show Spells in All Castable Groups"
+        },
+        "showUnchargedItems": {
+          "hint": "Show items with no charges remaining.",
+          "name": "Show Uncharged Items"
+        },
+        "showUnequippedItems": {
+          "hint": "For player characters, show unequipped inventory items. When disabled, only equipped inventory items are shown.",
+          "name": "Show Unequipped Items for PCs"
+        },
+        "showUnequippedItemsNpcs": {
+          "hint": "For NPCs, show unequipped inventory items. When disabled, only equipped inventory items are shown.",
+          "name": "Show Unequipped Items for NPCs"
+        },
+        "showUnpreparedSpells": {
+          "hint": "Show unprepared spells.",
+          "name": "Show Unprepared Spells"
+        }
+      },
       "skill": "Skill",
       "skills": "Skills",
       "superiorHuntersDefense": "Superior Hunter's Defense",
       "uncommon": "Uncommon",
+      "unequip": "Unequip",
       "veryRare": "Very Rare",
-      "settings": {
-        "abbreviateSkills": {
-          "hint": "Display skill and ability names as a three-character abbreviation",
-          "name": "Abbreviate Skill and Ability Names"
-        },
-        "displaySpellInfo": {
-          "hint": "Display spell component information, concentration, and ritual status next to the spell's name",
-          "name": "Display Spell Information"
-        },
-        "showItemsWithoutActivationCosts": {
-          "hint": "Show items without an activation cost",
-          "name": "Show Items without Activation Costs"
-        },
-        "showSlowActions": {
-          "hint": "Show actions that take longer than one round",
-          "name": "Show Slow Actions"
-        },
-        "showUnchargedItems": {
-          "hint": "Show items with no charges remaining",
-          "name": "Show Uncharged Items"
-        },
-        "showUnequippedItems": {
-          "hint": "Show unequipped items",
-          "name": "Show Unequipped Items"
-        },
-        "showUnequippedItemsNpcs": {
-          "hint": "Show unequipped items for NPCs",
-          "name": "Show Unequipped Items for NPCs"
-        },
-        "showUnpreparedSpells": {
-          "hint": "Show unprepared spells",
-          "name": "Show Unprepared Spells"
-        }
-      }
+      "viewItem": "View Item"
     }
   }
 }

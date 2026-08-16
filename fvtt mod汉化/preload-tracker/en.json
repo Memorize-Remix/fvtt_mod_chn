@@ -1,19 +1,19 @@
 {
-    "preload-tracker":{
-        "title": "Preload Status",
-        "preloading": "Preloading:",
-        "preloadingScene": "Preloading scene...",
-        "finished": "Finished",
-        "loading": "Loading",
-        "waiting": "Waiting",
-        "close": "Close",
-        "activate": "Activate",
+	"preload-tracker": {
+		"title": "Preload Status",
+		"preloading": "Preloading:",
+		"preloadingScene": "Preloading scene...",
+		"finished": "Finished",
+		"loading": "Loading",
+		"waiting": "Waiting",
+		"close": "Close",
+		"activate": "Activate",
 		"alreadyActive": "Already active",
-        "activateError": "Activate failed; see console.",
-        "activateBtnTitle": "Waiting for all connected users to finish preloading",
-        "libwrapperReq": "Preload Tracker: libWrapper is required. Enable it and reload.",
+		"activateError": "Activate failed; see console.",
+		"activateBtnTitle": "Waiting for all connected users to finish preloading",
+		"libwrapperReq": "Preload Tracker: libWrapper is required. Enable it and reload.",
 		"preloadScene": "Preload Scene",
-		"preloadingSound": "Preloading Sound",
+        "preloadingSound": "Preloading Sound",
         "audioTitle": "Audio Preload Tracker",
         "playBtn": "Play",
         "playHint": "Play sound",
@@ -24,19 +24,21 @@
 		"secondPlace": "2nd place",
 		"thirdPlace": "3rd place",
 		"lastPlace": "Last place",
-        "settings": {
+		"settings": {
+			"showToPlayersName": "Show Window to Players",
+			"showToPlayersHint": "When enabled, players will see the preload tracker window (without the Activate and Send to Chat buttons).",
 			"enableRaceModeName": "Enable Race Mode",
 			"enableRaceModeHint": "Show a race progress bar with rabbit/turtle icons and trophy placements when everyone finishes.",
-            "debugLevelName": "Enable debugging",
-            "debugLevelHint": "Set the debug level for Preload Tracker.",
-            "debugLevelNone": "None",
-            "debugLevelError": "Errors",
-            "debugLevelWarn": "Warnings",
-            "debugLevelAll": "All",
+			"debugLevelName": "Enable debugging",
+			"debugLevelHint": "Set the debug level for Preload Tracker.",
+			"debugLevelNone": "None",
+			"debugLevelError": "Errors",
+			"debugLevelWarn": "Warnings",
+			"debugLevelAll": "All",
 			"raceResultsScopeName": "Race Results Include",
 			"raceResultsScopeHint": "Choose who is included in race placements.",
 			"raceResultsPlayers": "Players only",
 			"raceResultsAll": "GM + Players"
-        }
-    }
+		}
+	}
 }

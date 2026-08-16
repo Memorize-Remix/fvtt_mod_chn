@@ -190,7 +190,20 @@
           "circuitGridSize5": "5 x 5 (Hard)",
           "circuitGridSize6": "6 x 6 (Expert)",
           "circuitTrapLabel": "Overload Trap (Hazard)",
-          "circuitTrapNotes": "Includes traps that reduce energy when powered."
+          "circuitTrapNotes": "Includes traps that reduce energy when powered.",
+          "typeCircuitMaze": "Circuit Maze (Navigation)",
+          "typeCircuitMazeSettings": "Circuit Maze Settings",
+          "mazeDifficultyLabel": "Security Level (1-5)",
+          "mazeDifficultyNotes": "Higher levels create larger, more complex mazes.",
+          "mazeTimeLimitLabel": "Time Limit (seconds)",
+          "mazeTimeLimitNotes": "Time in seconds to complete the maze. (Default: 30)",
+          "mazeMaxKeysLabel": "Max Key/Lock Pairs (0-2)",
+          "mazeMaxKeysNotes": "Number of key/lock obstacles on the maze path.",
+          "mazeDifficulty1": "Level 1 (5x5 - Easy)",
+          "mazeDifficulty2": "Level 2 (6x6)",
+          "mazeDifficulty3": "Level 3 (7x7 - Normal)",
+          "mazeDifficulty4": "Level 4 (8x8)",
+          "mazeDifficulty5": "Level 5 (9x9 - Expert)"
         },
         "combinationRules": {
           "title": "Data Combination Rules",
@@ -275,7 +288,8 @@
         "resultCorrectSymbol": "Correct Code",
         "puzzleInstructionSliding": "Slide the tiles using the empty space to complete the picture.",
         "puzzleInstructionFrequency": "Press [SYNC] when the signal enters the blue zone.",
-        "puzzleInstructionCircuit": "Rotate tiles to connect power (⚡) to the lock (🔒). Avoid warning (⚠️) tiles! Left-click (CW), Right-click (CCW)."
+        "puzzleInstructionCircuit": "Rotate tiles to connect power (⚡) to the lock (🔒). Avoid warning (⚠️) tiles! Left-click (CW), Right-click (CCW).",
+        "puzzleInstructionCircuitMaze": "Navigate the circuit maze to the exit. [WASD / Arrow Keys]"
       },
       "dataarchive": {
         "noData": "No data acquired yet.",

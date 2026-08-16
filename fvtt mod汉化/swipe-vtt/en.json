@@ -25,9 +25,13 @@
         "FolderLabel": "Folder to save optimized images to:",
         "SelectFolder": "Select Folder"
       },
-	  "AutoOptimizeScenes": {
+      "AutoOptimizeScenes": {
         "Name": "Auto-Optimize Scene Images",
         "Hint": "Automatically create mobile-optimized versions of scene images. This does not change the original images or scene config."
+      },
+      "DisableLargeMapWarnings": {
+        "Name": "Disable Large Map Warnings",
+        "Hint": "Stop showing notifications when a player loads a scene image too large for their device."
       },
       "Tabs": {
         "General": "General",
@@ -36,7 +40,7 @@
       },
       "Fieldsets": {
         "SheetAndChat": "Sheet & Chat",
-		"Controls": "Controls",
+        "Controls": "Controls",
         "CameraViews": "Camera Views",
         "SystemSettings": "System Settings"
       },
@@ -52,7 +56,7 @@
       "Reset": "Reset to Defaults",
       "Save": "Save Settings",
       "ToggleHints": "Toggle Hints",
-	  "AdvancedSettings": "Advanced Settings",
+      "AdvancedSettings": "Advanced Settings",
       "Saved": "Swipe VTT settings saved",
       "OpenGameSettings": "Open Game Settings",
       "MobileOnlyNote": "These settings only apply when using a mobile or tablet device.",
@@ -106,11 +110,11 @@
         "Name": "Chat Auto-Hide Delay",
         "Hint": "Seconds before the auto-shown chat popup hides. (2-10)"
       },
-	  "KeepAwake": {
+      "KeepAwake": {
         "Name": "Keep Awake",
         "Hint": "Play silent audio to prevent the browser from suspending when your screen turns off. Keeps your connection to the game alive. Uses a small amount of battery."
       },
-	  "Controls": {
+      "Controls": {
         "TouchOnly": "These settings only apply when using a touch device (phone or tablet)."
       },
       "HideQuickControls": {
@@ -144,25 +148,33 @@
         "Name": "Debug Mode",
         "Hint": "Enable verbose console logging for troubleshooting."
       },
-	  "InviteUrlOverride": {
+      "InviteUrlOverride": {
         "Name": "Invite URL Override",
         "Hint": "Custom base URL for the Connect Phone QR code (e.g. http://26.x.x.x:30000). Use this when players connect via VPN (Radmin, Hamachi, ZeroTier, etc.) or a reverse proxy. Leave empty for auto-detection."
       },
-	  "StandaloneSkipAuth": {
+      "StandaloneSkipAuth": {
         "Name": "Skip Standalone Authentication",
         "Hint": "Allow players to access the standalone phone app without entering a password. Enable this if you use an external hosting service (e.g. Sqyre) or if your players have trouble connecting."
+      },
+      "ModuleEnabled": {
+        "Name": "Enable Swipe in this client",
+        "Hint": "Master switch for Swipe VTT in this client. When unchecked, the module is fully disabled (no mobile UI, no hooks, no premium loading). Requires reload."
       },
       "ShowMemoryMonitor": {
         "Name": "Show Memory Monitor",
         "Hint": "Display real-time memory usage (JS Heap + GPU Textures) in the Players list next to Latency and FPS."
       },
       "AllowMiniCanvas": {
-        "Name": "Allow Simplified Token Map",
+        "Name": "Allow players to use simplified Token Map",
         "Hint": "Allow players to enable the simplified token map when in Sheet mode. This shows a lightweight grid with token positions instead of the full canvas."
       },
       "EnableMiniCanvas": {
         "Name": "Enable Simplified Token Map",
         "Hint": "Show a simplified token map with grid and token positions when in Sheet mode. Requires GM permission."
+      },
+      "MiniCanvasShowWalls": {
+        "Name": "Show Walls on Simplified Token Map",
+        "Hint": "Show wall geometry within ~60ft of the player's selected token on the simplified token map. Secret doors are hidden. Disable to prevent players from seeing walls."
       },
       "MiniCanvasPrompt": {
         "Title": "Simplified Token Map",
@@ -170,14 +182,14 @@
         "Yes": "Enable",
         "No": "No Thanks"
       },
-	  "DisableModules": {
+      "DisableModules": {
         "Title": "Disable Heavy Modules"
       },
       "DisableAAAnimations": {
         "Name": "Disable Automated Animations",
         "Hint": "Disable JB2A / Automated Animations on this device to improve performance."
       },
-	  "DisableDiceSoNice": {
+      "DisableDiceSoNice": {
         "Name": "Disable Dice So Nice",
         "Hint": "Disable 3D dice animations on this device to improve performance."
       },
@@ -185,7 +197,7 @@
         "Name": "Disable Canvas",
         "Hint": "If your device really struggles, disable the game canvas entirely to use the sheet/roll functionality. "
       },
-	  "ExpandedSheet": {
+      "ExpandedSheet": {
         "Name": "Expanded Sheet (Tablet)",
         "Hint": "When canvas is disabled, show multiple character sheet sections side-by-side using the full screen. Requires canvas to be disabled."
       },
@@ -247,20 +259,21 @@
       "DiceDisabled": "Swipe VTT: Disabled 3D dice for better performance",
       "LargeMapOptimized": "Swipe VTT: Large scene detected, using optimized rendering",
       "LargeUnoptimizedImages": "Scene \"{scene}\" has large images that may not load on some mobile devices. Swipe VTT can create mobile-friendly versions for you, that will load only on mobile phones. Find the option in the module's settings - Optimize Images",
-	  "SceneExceedsMaxTexture": "Scene \"{scene}\" has images larger than this device supports ({maxTexture}px). Some images may not render correctly. Ask your GM to optimize scene images in Swipe VTT settings.",
       "PlayerOversizedTexture": "Player \"{player}\" tried to load a scene image too large for their device ({width}x{height}, max {maxTexture}px). Use Image Optimizer in Swipe VTT settings to create mobile versions.",
       "AutoOptimized": "Swipe VTT: Auto-optimized {count} image(s) for scene \"{scene}\" for mobile devices.",
       "OptimizedImagesLoaded": "Swipe VTT: Using {count} mobile-optimized image(s)",
       "DSNSafariOptimized": "Swipe VTT: Adjusted Dice So Nice settings for Safari compatibility",
-      "SafariIOSWarning": "Foundry VTT does not work well on iOS Safari. For a better experience, please use Chrome (or another Chromium browser) instead."
+      "SafariIOSWarning": "Foundry VTT does not work well on iOS Safari. For a better experience, please use Chrome (or another Chromium browser) instead.",
+      "MovementBlockedByWall": "Movement blocked by wall.",
+      "MovementNoGM": "GM must be online to move tokens."
     },
-	"DesktopEnableWarning": {
+    "DesktopEnableWarning": {
       "Title": "Enable Mobile Mode on Desktop",
       "Content": "This setting is meant for touch enabled laptops or testing with Chrome Device Simulator. It may cause issues on regular browser. Are you sure you want to enable?",
       "Enable": "Enable",
       "Cancel": "Cancel"
     },
-	"DiceSoNicePrompt": {
+    "DiceSoNicePrompt": {
       "Title": "Dice So Nice",
       "Content": "3D dice animations can impact performance on mobile devices. Would you like to disable Dice So Nice?",
       "Disable": "Disable 3D Dice",
@@ -296,12 +309,12 @@
       "statusOptimized": "Optimized",
       "statusSkipped": "Skipped by GM",
       "statusOk": "OK",
-	  "statusVideo": "Video",
+      "statusVideo": "Video",
       "videosSkipped": "video(s) - can't optimize",
       "videoWarning": "Video backgrounds cannot be optimized. For better mobile performance, consider using a static image or pre-converting videos to 720p H.264 format.",
       "imagesOptimized": "image(s) optimized",
       "optimizeSelected": "Optimize Selected",
-	  "saveAndClose": "Close",
+      "saveAndClose": "Close",
       "skipAll": "Close",
       "dontAskAgainCheckbox": "Don't ask again for unselected scenes",
       "processing": "Processing",
@@ -312,11 +325,12 @@
       "failedCount": "{count} image(s) failed:",
       "mobileNote": "Mobile clients will automatically use optimized versions when available.",
       "StaleEntriesTitle": "Missing Optimized Images",
-      "StaleEntriesFound": "{count} optimized image(s) are registered but no longer exist on disk:",
-      "StaleEntriesClear": "Would you like to clear these entries from the registry?",
+      "StaleEntriesFound": "{count} optimized image(s) are registered but their files are missing from disk. (Optimized files that still exist but were saved with an invalid name are repaired automatically — they are not listed here.)",
+      "StaleEntriesClear": "Clear these entries from the registry? The affected scenes will fall back to their original images until you re-optimize them.",
       "ClearRegistry": "Clear Registry",
       "KeepEntries": "Keep Entries",
       "StaleEntriesCleared": "Cleared {count} stale registry entries",
+      "LegacyEntriesRepaired": "Swipe VTT: Repaired {count} optimized image path(s) that were saved with an invalid name.",
       "ProgressDialogTitle": "Optimizing Images",
       "ProgressDialogStarting": "Starting...",
       "ProgressDialogProcessing": "Processing: "
@@ -350,7 +364,10 @@
       "Logout": "Logout",
       "LogoutConfirmTitle": "Confirm Logout",
       "LogoutConfirmMessage": "Are you sure you want to log out?",
-      "Volume": "Volume"
+      "Volume": "Volume",
+      "Journal": "Journal",
+      "Compendium": "Compendium",
+      "Scenes": "Scenes"
     },
     "Sheet": {
       "OpenSheet": "Open Character Sheet",
@@ -363,7 +380,7 @@
         "All": "All Skills",
         "Proficient": "Proficient Only"
       },
-	  "ToolsFilter": {
+      "ToolsFilter": {
         "All": "All Tools",
         "Proficient": "Proficient Only"
       },
@@ -380,7 +397,7 @@
         "Cast": "Cast",
         "Craft": "Craft",
         "Unprepare": "Unprepare",
-		"Expend": "Expend",
+        "Expend": "Expend",
         "Restore": "Restore",
         "DailyCrafting": "Daily Crafting",
         "Reset": "Reset",
@@ -402,7 +419,7 @@
         "InfusedReagents": "Infused Reagents",
         "Level": "Level {level}",
         "FocusPoints": "Focus Points",
-		"SearchSpells": "Search spells...",
+        "SearchSpells": "Search spells...",
         "Cantrips": "Cantrips",
         "Rank": "Rank {rank}",
         "SpellDC": "Spell DC",
@@ -410,7 +427,7 @@
         "EmptySlot": "Empty Slot",
         "EmptySlotRemaining": "Empty Slot ({remaining} remaining)",
         "Prepare": "Prepare {rank}",
-		"PrepareBtn": "Prepare",
+        "PrepareBtn": "Prepare",
         "Spells": "Spells",
         "Flexible": "Flexible",
         "Done": "Done",
@@ -528,13 +545,13 @@
       "NoFeatures": "No features",
       "ReactionRoll": "Reaction Roll"
     },
-	"PerformanceMode": {
+    "PerformanceMode": {
       "DialogTitle": "Performance Mode",
       "Intro": "Based on device's capabilities, Swipe suggests {recommendedMode} mode.",
       "ChooseMode": "Choose a performance mode:",
       "Recommended": "Recommended",
       "Apply": "Apply",
-	  "Reset": "Reset",
+      "Reset": "Reset",
       "Applied": "Performance mode set to {mode}",
       "ChangeMode": "Change Performance Mode",
       "CurrentMode": "Current Mode",
@@ -559,7 +576,7 @@
         "Name": "Sheet-Only",
         "Desc": "Disables the map rendering, but keeps certain Foundry functionality. For heavy worlds or devices struggling with Foundry."
       },
-	  "Standalone": {
+      "Standalone": {
         "Name": "Standalone",
         "Desc": "Lightweight standalone page that bypasses Foundry's client. Best for access to character sheet on iPhones or low-memory devices, but lacks many Foundry features."
       },
@@ -575,7 +592,7 @@
       "ReloadNow": "Reload Now",
       "ReloadLater": "Later"
     },
-	"ConnectPhone": {
+    "ConnectPhone": {
       "Title": "Swipe QR Code",
       "ButtonName": "Swipe QR Code",
       "Instructions": "Scan this QR code on your phone to connect as the same user.",
@@ -584,7 +601,7 @@
       "Copied": "Link copied to clipboard!",
       "DontShowAgain": "Don't show this on load (reopen on user config dialog)"
     },
-	"SettingsCleanup": {
+    "SettingsCleanup": {
       "MenuButton": {
         "Name": "Cleanup Utility",
         "Label": "Clean Up Orphaned Settings",
@@ -646,11 +663,11 @@
       "NoDocuments": "No documents in this collection.",
       "SkippedLargeCollection": "Skipped sizing for {count} entries (too large). Count shown only.",
       "WorldVsCompendium": "World vs Compendium",
-      "WorldVsCompendiumHint": "World documents are always loaded into memory. Compendium documents are lazy-loaded on demand.",
+      "WorldVsCompendiumHint": "World documents include serialized data plus derived data from system preparation. Compendium counts show index entries only — full documents are lazy-loaded on access and not counted here. The bar reflects memory ratio (bytes), not count ratio.",
       "World": "World",
       "Compendium": "Compendium",
-      "WorldInMemory": "World (always in memory)",
-      "CompendiumLazy": "Compendium (lazy-loaded)",
+      "WorldInMemory": "World (raw + derived data in memory)",
+      "CompendiumLazy": "Compendium (index entries in memory)",
       "DiskUsage": "Server Disk Usage",
       "DiskUsageHint": "Actual file sizes on the server for each data collection.",
       "WorldData": "World Data",
@@ -680,7 +697,21 @@
       "Loaded": "Loaded",
       "Estimated": "Estimated",
       "ShowMore": "Show {count} more...",
-      "NoIssuesFound": "No issues found. Your world looks healthy!"
+      "NoIssuesFound": "No issues found. Your world looks healthy!",
+      "UsageTracking": "Document Usage Tracking",
+      "UsageInactiveHint": "See exactly which documents are touched during a session. Tracking must start at world init, so enabling requires a page reload. After reload, use the world normally for a few minutes, then reopen this dialog. Untouched documents are candidates for moving to a compendium.",
+      "UsageActiveHint": "Tracking active for {elapsed}. Counts show docs that have been accessed by code or rendered into a sheet. Iteration (sidebar walks etc.) is intentionally NOT counted to keep the signal meaningful.",
+      "UsageEnable": "Enable Tracking and Reload",
+      "UsageDisable": "Disable Tracking and Reload",
+      "UsageEnableConfirm": "This will reload the page so usage tracking can install at init time. After the reload, use the world normally for a few minutes, then come back here to see which documents got touched.",
+      "UsageDisableConfirm": "This will reload the page to remove the tracking hooks.",
+      "UsageEnableReload": "Enable and Reload",
+      "UsageDisableReload": "Disable and Reload",
+      "UsageLoaded": "Loaded",
+      "UsageAccessed": "Accessed",
+      "UsageRendered": "Rendered",
+      "UsageUntouched": "Untouched",
+      "UsageUntouchedTotal": "Total memory tied up in untouched documents: {size}. This is roughly how much the world-document portion of the heap could shrink if everything in this state were moved to compendiums (or never instantiated in the first place)."
     },
     "Premium": {
       "DialogTitle": "Amethyst Club features",
@@ -725,7 +756,7 @@
       "EnterCode": "Please enter a link code",
       "InvalidCode": "Invalid or expired code"
     },
-	"Diagnostics": {
+    "Diagnostics": {
       "CollectionActors": "Actors",
       "CollectionItems": "Items",
       "CollectionScenes": "Scenes",
@@ -762,7 +793,7 @@
     "UserConfig": {
       "Description": "Configure mobile mode and performance settings for individual players.",
       "Mode": "Mobile Mode",
-      "ModeAuto": "Auto-Detect",
+      "ModeAuto": "Player's Choice",
       "ModeFull": "Full Mobile",
       "ModeSheetsOnly": "Sheets Only",
       "ModeOff": "Desktop (Off)",

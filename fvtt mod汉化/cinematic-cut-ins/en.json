@@ -13,6 +13,8 @@
       },
       "Label": {
         "AudioGroup": "AUDIO",
+        "BaseAdjust": "Base",
+        "BaseAdjustTitle": "Edit Base Image adjustments",
         "CharVoice": "음성",
         "Character": "CHARACTER",
         "Color": "Theme",
@@ -23,6 +25,17 @@
         "IndivSFX": "SFX",
         "IndivVoice": "Voice",
         "LinkCombat": "Link Combat",
+        "ReadyGroup": "Ready State",
+        "ReadyAdjust": "Ready",
+        "ReadyAdjustTitle": "Edit Ready Image adjustments",
+        "ReadyFinalScaleTitle": "Ready Final Scale",
+        "ReadyFinalXTitle": "Ready Final X",
+        "ReadyFinalYTitle": "Ready Final Y",
+        "ReadyImage": "Ready Image",
+        "ReadySFX": "Ready SFX",
+        "ReadyZoomScaleTitle": "Ready Zoom Scale",
+        "ReadyZoomXTitle": "Ready Zoom X",
+        "ReadyZoomYTitle": "Ready Zoom Y",
         "SFX": "SFX (Effect)",
         "ScaleShort": "S",
         "Shadow": "Shadow",
@@ -33,7 +46,7 @@
         "Theme": "Theme",
         "Voice": "Voice / BGM",
         "VoteButtonText": "Vote Button Text",
-		"VoteButtonSound": "Vote Button Sound",
+        "VoteButtonSound": "Vote Button Sound",
         "X": "X",
         "Y": "Y",
         "ZoomShort": "Z"
@@ -44,6 +57,60 @@
       "Notif": {
         "NoActorsAvailable": "No actors available to add."
       },
+      "PanelMode": {
+        "BtnInit": "Initialize manual panels (single full-screen panel)",
+        "BtnReset": "Reset manual panels",
+        "BtnUndo": "Undo last manual split",
+        "HideGuides": {
+          "Label": "Hide guides and numbers",
+          "Tooltip": "Hide the thin panel outline guides and panel numbers in the editor only. Manual split lines stay visible, and the saved preset is not affected."
+        },
+        "Hint": "Click a panel to select it, then drag a straight line across it to split it in two. Keep splitting until the panel count matches the participant count. Panels map to participants in order (1, 2, 3, ...).",
+        "Label": "Panel Layout",
+        "LineStyle": {
+          "BlackBrush": "Black Brush",
+          "BlackBrushSoft": "Soft Black Brush",
+          "BlackBrushSoftClean": "Soft Black Brush (Clean)",
+          "BlackBrushClean": "Black Brush (Clean)",
+          "BlackBrushRough": "Rough Black Brush",
+          "BlackBrushRoughClean": "Rough Black Brush (Clean)",
+          "ColorLabel": "Color",
+          "ColorTooltip": "Optionally tint or glow the next manual split line.",
+          "GlowLabel": "Glow",
+          "Label": "Split Line",
+          "NeonGlitch": "Neon Glitch",
+          "None": "None (shape only)",
+          "PrismaticRift": "Prismatic Rift",
+          "Note": "Applies to new splits only. Existing split lines keep the style, thickness, and effects selected when they were drawn.",
+          "TintLabel": "Tint",
+          "Tooltip": "Choose the visual line asset used when you draw the next manual split.",
+          "WidthLabel": "Thickness",
+          "WidthTooltip": "Choose the thickness used when you draw the next manual split."
+        },
+        "Manual": "Manual (draw splits)",
+        "Notif": {
+          "Initialized": "Manual panels initialized to a single full-screen panel.",
+          "SplitFailed": "Split rejected: the line must cross the selected panel and produce two non-degenerate pieces.",
+          "UndoUnavailable": "No manual split to undo.",
+          "Undone": "Last manual split undone."
+        },
+        "Status": {
+          "NeedMoreSplits": "{current}/{target} panels - split {missing} more.",
+          "Ready": "{count} panels ready.",
+          "TooMany": "{current}/{target} panels - too many; reset and re-split.",
+          "Uninitialized": "Manual panels are not initialized yet."
+        },
+        "Theme": "Theme default (automatic)",
+        "ThemeGuide": {
+          "Title": "Theme compatibility",
+          "RecommendedLabel": "Recommended",
+          "RecommendedThemes": "Rebel, Comic, Urban, Noir, Dragon, Classic Slice",
+          "LimitedLabel": "Not recommended",
+          "LimitedThemes": "Wanted, Arcane, Legion, Horizon",
+          "Note": "Recommended themes pair naturally with manual splits. Not recommended themes are tuned for their automatic layouts and manual results may look awkward."
+        },
+        "Tooltip": "Switch between the theme's automatic layout and a manually-drawn panel layout."
+      },
       "Participants": "Participants",
       "Placeholder": {
         "DisplayText": "Display Text",
@@ -51,7 +118,14 @@
         "PresetName": "Preset Name",
         "SubTitle": "Sub Title (Default: TIME TO FINISH IT!)"
       },
-      "SelectPreset": "-- Presets --"
+      "SelectPreset": "-- Presets --",
+      "Tabs": {
+        "Setup": "Setup",
+        "Panels": "Panels",
+        "Text": "Text",
+        "Actors": "Actors",
+        "Layers": "Layers"
+      }
     },
     "Analysis": {
       "Actor": {
@@ -97,12 +171,20 @@
       "BtnAdd": "Add",
       "BtnAddSound": "Add Audio Path",
       "BtnAddVariation": "Add Variation",
+      "BtnCopyGlobalToActive": "Copy Global Style to Active Config",
+      "BtnCopyInheritedTriggers": "Copy to Actor",
+      "BtnCopyToActive": "Copy Preset to Active Config",
       "BtnDelete": "Delete",
+      "BtnInsertActorName": "Actor Name",
       "BtnLoad": "Load",
       "BtnReset": "Reset",
       "BtnSave": "Save",
+      "BtnSaveActiveConfig": "Save Active Config",
       "BtnSaveConfig": "Save Configuration",
+      "BtnSaveGlobalPreset": "Save Global Preset",
+      "BtnSavePersonalPreset": "Save Personal Preset",
       "BtnTest": "Test (Local)",
+      "BtnConvertTextOffsets": "Use Independent Text Offsets",
       "ColorsEffects": "Colors & Effects",
       "CustomDecoration": "Custom Decoration (Assets)",
       "Dialog": {
@@ -113,7 +195,9 @@
         "OverwritePersonal": "<p>A preset named <strong>\"{name}\"</strong> already exists.<br>Do you want to overwrite it?</p>",
         "OverwriteTitle": "Overwrite Preset?",
         "ResetContent": "<p>Are you sure you want to reset all settings to default?</p>",
-        "ResetTitle": "Reset Settings"
+        "ResetTitle": "Reset Settings",
+        "ConvertTextOffsetsTitle": "Use Independent Text Offsets?",
+        "ConvertTextOffsetsContent": "<p>This keeps the current visual spacing as closely as possible, then makes Main Y and Sub Y move independently.</p><p>Save the configuration after checking the preview.</p>"
       },
       "FontDefault": " (Default)",
       "GeneralSettings": "General Settings",
@@ -126,8 +210,12 @@
       },
       "Hint": {
         "ActorGroup": "Assign this actor to a group to use group default presets as fallback.",
+        "ActorNamePlaceholder": "Insert {{name}} at the cursor. It is replaced with the current Actor's name during playback.",
         "AudioOnly": "Play only sound/SFX without any visual effects or letterbox.",
+        "InheritGroupTriggers": "When enabled, trigger rules from the group's default global preset also apply to this actor.",
         "LocalOnly": "Play this cut-in only on the triggering client. Other players will not see it.",
+        "LegacyTextOffset": "This older preset uses legacy text offsets where Main Y affects the whole text block and Sub Y changes spacing.",
+        "ConvertTextOffsets": "Convert this preset so Main Y and Sub Y move independently. Existing spacing is preserved as closely as possible.",
         "SaveBottom": "Use bottom button to save changes.",
         "VideoAudio": "If the cut-in image is a video file, play its audio track as well."
       },
@@ -152,8 +240,11 @@
         "FontItalic": "Italic",
         "Format": "Format",
         "HideBackground": "Hide Theme Background",
+        "HideCharacter": "Hide Character",
         "HideCharShadow": "Hide Shadow",
         "Image": "Cut-in Image",
+        "ImageSource": "Character Image Source",
+        "InheritGroupTriggers": "Inherit group trigger rules",
         "KeepAudioPlaying": "Keep playing audio after cut-in ends",
         "LayerDelay": "Start Delay (sec)",
         "LayersBack": "Background Layers (Back)",
@@ -163,6 +254,7 @@
         "MainOffset": "Main Offset",
         "MainSize": "Main Size",
         "MainText": "Main Text",
+        "PreserveMainTextCase": "Preserve Main Text Case",
         "MidAdjust": "중경 위치/크기",
         "Mirror": "Mirror",
         "NoBackLayers": "No Background Layers configured.",
@@ -177,6 +269,13 @@
         "SFXList": "SFX List (Random)",
         "SFXVolume": "SFX Volume",
         "Scale": "Scale",
+        "CinematicEffect": "Cinematic Effect",
+        "CinematicEffectStrength": "Effect Strength",
+        "CinematicEffectPositionX": "Effect Position X",
+        "CinematicEffectPositionY": "Effect Position Y",
+        "CinematicEffectScale": "Effect Scale",
+        "ScreenMood": "Screen Mood",
+        "ScreenMoodOpacity": "Mood Opacity",
         "ScreenPos": "Screen Pos (X / Y)",
         "Shake": "Screen Shake",
         "Sound": "Voice / BGM",
@@ -187,6 +286,7 @@
         "SubSize": "Sub Size",
         "SubText": "Sub Text",
         "TextColor": "Text Color",
+        "TextOffsetMode": "Text Offset Mode",
         "Theme": "Theme",
         "ThemeColor": "Theme Color",
         "VideoAudio": "Play Video Audio"
@@ -204,15 +304,20 @@
         "EnterGlobalName": "Please enter a name for the global preset.",
         "EnterName": "Please enter a preset name.",
         "GlobalSaved": "Saved as Global Preset: \"{name}\"",
+        "CopiedInheritedTriggers": "Copied inherited triggers from \"{preset}\" to this actor and disabled group trigger inheritance.",
+        "NoInheritedTriggers": "No inherited group triggers are available to copy.",
         "PresetDeleted": "Cinematic-cut-ins FX: Preset deleted.",
         "PresetLoaded": "Cinematic-cut-ins FX: Loaded preset  \"{name}\".",
         "PresetSaved": "Cinematic-cut-ins FX: Preset  \"{name}\" saved.",
+        "TextOffsetsConverted": "Text offsets converted. Review the preview, then save to keep this mode.",
         "ResetComplete": "Cinematic-cut-ins FX: Settings have been reset.",
         "Saved": "Cinematic-cut-ins FX: Configuration saved for {name}",
         "SelectDelete": "Please select a preset to delete.",
         "TestPlay": "Cinematic-cut-ins FX: Playing local preview."
       },
       "Option": {
+        "CurrentActorImage": "Current Actor Image",
+        "PresetImage": "Preset Image",
         "NoGroup": "-- No Group --"
       },
       "Placeholder": {
@@ -226,6 +331,43 @@
       "SaveActorTitle": "Save to Actor",
       "SaveGlobalTitle": "Save as Global Style",
       "SelectPreset": "-- Select a Preset --",
+      "ScreenMood": {
+        "None": "None",
+        "Night": "Night",
+        "Dusk": "Dusk",
+        "Dawn": "Dawn",
+        "Flashback": "Flashback",
+        "Vignette": "Vignette",
+        "Dream": "Dream",
+        "OldTv": "Old TV",
+        "Lightning": "Lightning",
+        "MonochromeFilm": "Monochrome Film"
+      },
+      "CinematicEffect": {
+        "None": "None",
+        "Group": {
+          "Particles": "Particles & Debris",
+          "Cinematic": "Cinematic Accents"
+        },
+        "DebrisBurst": "Debris Burst",
+        "SparkBurst": "Energy Sparks",
+        "EmberStorm": "Ember Storm",
+        "VictoryConfetti": "Victory Confetti",
+        "PetalDrift": "Petal Drift",
+        "SparkleShimmer": "Sparkle Shimmer",
+        "LensRain": "Lens Rain",
+        "Shockwave": "Shockwave",
+        "HeroFlare": "Hero Flare",
+        "FilmBurn": "Film Burn",
+        "BlackoutCut": "Blackout Cut",
+        "SpeedLines": "Speed Lines",
+        "ShadowMist": "Shadow Mist",
+        "Strength": {
+          "Low": "Low",
+          "Medium": "Medium",
+          "High": "High"
+        }
+      },
       "Short": {
         "Angle": "Angle(°)",
         "Delay": "Delay",
@@ -235,8 +377,13 @@
         "Y": "Y"
       },
       "Tab": {
+        "Effects": "Effects",
         "General": "General",
-        "Triggers": "Triggers"
+        "Layers": "Layers",
+        "Preset": "Preset",
+        "Text": "Text",
+        "Triggers": "Triggers",
+        "Visual": "Visual"
       },
       "TipVariation": "One of these (or the main image) will be chosen randomly.",
       "Title": "Cinematic-cut-ins FX Settings",
@@ -264,7 +411,8 @@
       "Notif": {
         "AssignedGroup": "Assigned group to {count} actor(s).",
         "ClearedGroup": "Cleared group assignment for {count} actor(s).",
-        "NoActorsSelected": "No selected actors."
+        "NoActorsSelected": "No selected actors.",
+        "SetupGuideUnavailable": "The setup guide could not be started. Reopen the Control Panel and try again."
       },
       "Option": {
         "ClearGroup": "Clear Group"
@@ -290,7 +438,8 @@
         "InitiateVote": "Initiate Vote (Player Join)",
         "Play": "Play Cut-in",
         "PlayGroup": "Play",
-        "SelectGroup": "Select to create Group Attack"
+        "SelectGroup": "Select to create Group Attack",
+        "SetupGuide": "Open the initial setup guide"
       }
     },
     "Format": {
@@ -328,6 +477,11 @@
     },
     "Scene": {
       "AutomationTitle": "Scene Automation",
+      "Scope": {
+        "Hint": "Leave empty to use this preset as a default in every Foundry Scene. If a scene-specific preset matches the same trigger, only the scene-specific preset plays.",
+        "Label": "Apply in Foundry Scenes",
+        "NoScenes": "No Foundry Scenes are available."
+      },
       "Trigger": {
         "CombatEnd": "On Combat End",
         "CombatStart": "On Combat Start",
@@ -343,6 +497,8 @@
       "Stretch": "Adaptive Stretch (Full Screen)"
     },
     "Setting": {
+      "DisableCinematicEffects": "Disable Cinematic Effects for Me",
+      "DisableCinematicEffectsHint": "Skip particle and impact effects on my screen. Cut-ins still play normally. Useful on low-end machines.",
       "GroupScreenMode": "Group: Screen Aspect Mode",
       "PersonalScreenMode": "Personal: Screen Aspect Mode",
       "ScreenModeHint": "Choose how the cut-in fits your screen. Cinema/Focus/Floating modes preserve the GM's intended composition.",
@@ -360,6 +516,7 @@
       "Blitz": "Blitz R (Right Side)",
       "BlitzLeft": "Blitz L (Left Side)",
       "Blossom": "Blossom",
+      "Broadcast": "Broadcast (Emergency Signal)",
       "Brush": "Brush (Original)",
       "Burst": "Burst",
       "Cinematic": "Cinematic (Movie)",
@@ -383,12 +540,74 @@
       "Yakuza": "Yakuza",
       "Ink": "Ink (Splash)",
       "Cleave": "Cleave",
-      "Eclipse": "Eclipse"
+      "Eclipse": "Eclipse",
+      "Blank": "Blank (No Graphics)"
+    },
+    "Tour": {
+      "InitialSetup": {
+        "Title": "Cinematic Cut-ins Initial Setup",
+        "Description": "Create and test your first actor cut-in.",
+        "Step": {
+          "Purpose": {
+            "Title": "Build one cut-in first",
+            "Content": "<p>This guide opens the Control Panel and walks through one actor cut-in. Nothing is saved automatically.</p><p>You can click the highlighted controls as you go, then use the Tour buttons if you want to move manually.</p>"
+          },
+          "OpenActors": {
+            "Title": "Start from Actors",
+            "Content": "<p>The Actors tab is where personal cut-ins begin. The guide has opened it for you.</p>"
+          },
+          "ChooseActor": {
+            "Title": "Click an actor row",
+            "Content": "<p>Click an actor row to expand it. If this list is empty, create or import an actor first, then start the guide again.</p>"
+          },
+          "OpenConfig": {
+            "Title": "Open Active Config",
+            "Content": "<p>Click Active Config. This opens the editor for that actor's cut-in settings.</p>"
+          },
+          "NamePreset": {
+            "Title": "Name the preset",
+            "Content": "<p>Use this field for a preset name you will recognize later. For a first test, something like <code>Opening Cut-in</code> is enough.</p>"
+          },
+          "VisualTab": {
+            "Title": "Choose the look",
+            "Content": "<p>Click Visual. Add an image or video, choose a theme, then adjust the actor position if needed.</p>"
+          },
+          "TextTab": {
+            "Title": "Set the text",
+            "Content": "<p>Click Text. Set the main line and subtitle that will appear during the cut-in.</p>"
+          },
+          "TestPlay": {
+            "Title": "Test locally",
+            "Content": "<p>Click Test. This plays the current cut-in only on your client, so you can check the result before saving.</p>"
+          },
+          "Save": {
+            "Title": "Save when it looks right",
+            "Content": "<p>Click Save Configuration when you are happy with the preview and local test. This is the step that writes the actor settings.</p>"
+          },
+          "Triggers": {
+            "Title": "Add automation later",
+            "Content": "<p>The Triggers tab connects this cut-in to attacks, chat rolls, resource changes, conditions, or turn timing. Save a working cut-in before adding trigger rules.</p>"
+          },
+          "Finish": {
+            "Title": "First setup path",
+            "Content": "<p>Your first path is: pick an actor, open Active Config, set image and text, test locally, save, then add triggers only if you want automation.</p><p>All-Out, Scenes, and reusable Styles are easier to use after one actor cut-in works.</p>"
+          }
+        }
+      }
     },
     "Trigger": {
+      "ActiveConfigOption": "Actor: Active Config (local)",
+      "ActorPresetOption": "Actor Preset: {preset} (linked)",
       "BtnAdd": "Add Trigger",
       "ChatTriggers": "Chat/Roll Watch List",
+      "ConditionTriggers": "Condition Watch List",
+      "Column": {
+        "Condition": "Condition",
+        "Detail": "Detail",
+        "Preset": "Preset"
+      },
       "Empty": {
+        "Conditions": "No condition triggers configured.",
         "TurnEnd": "No Turn End triggers configured.",
         "TurnStart": "No Turn Start triggers configured."
       },
@@ -396,11 +615,24 @@
         "Special": "Special Conditions"
       },
       "Hint": {
-        "GroupFallback": "If preset is empty, Group '{group}' default preset '{preset}' is used automatically."
+        "GroupFallback": "If preset is empty, Group '{group}' default preset '{preset}' is used automatically.",
+        "GroupInheritance": "Trigger rules from Group '{group}' default preset '{preset}' are inherited at runtime.",
+        "PresetSources": "Choose Active Config to play this actor's saved edits. Actor and Global presets stay linked to their reusable source."
       },
+      "GlobalPresetOption": "Global Preset: {preset} (shared)",
       "HintChat": "<details style='margin-bottom:10px; background:rgba(0,0,0,0.3); border:1px solid #444; border-radius:4px; padding:5px;'><summary style='cursor:pointer; color:#e61c34; font-weight:bold; padding:5px;'>📖 Trigger Config Guide (Click to expand)</summary><div style='padding:10px; font-size:0.85em; color:#ccc; line-height:1.6; max-height:250px; overflow-y:auto; border-top:1px solid #444;'><p style='margin-top:0;'><b>1. Basic Modes</b><br>• <b>Keyword (Any):</b> Triggers if the word is found in text/flavor.<br>• <b>Keyword (Roll):</b> Triggers only on <b>'Dice Rolls'</b> containing the word.<br>• <b>Dice Check:</b> Inspects specific die values.<br>&nbsp;&nbsp;└ <i>Enter <b>#</b>(Index) and <b>Val</b>(Target). (See orange numbers in Inspector)</i></p><p><b>2. Special Mode (Advanced Formula)</b><br>Create complex conditions using JavaScript syntax.<br><br><b>[Operators]</b><br>• <code>==</code> : Equal<br>• <code>!=</code> : Not Equal<br>• <code>&gt;=</code> : Greater or Equal<br>• <code>&&</code> : AND (Both true)<br>• <code>||</code> : OR (Either true)<br><br><b>[Variables]</b><br>• <code>d</code> : Array of die results (e.g. <code>d[0]</code> is the 1st die)<br>• <code>t</code> : Total sum of the roll<br>• <code>flavor</code> : Item name or chat text<br><br><b>[Examples]</b><br>• <b>Fabula Ultima Critical:</b><br><code style='background:#222; padding:2px 5px; color:#4ecdc4'>d[0] == d[1] && d[0] >= 6</code><br>• <b>High-Roll Doubles (Double & Total >= 12):</b><br><code style='background:#222; padding:2px 5px; color:#f9ca24'>d[0] == d[1] && t >= 12</code></div><br><i class='fas fa-info-circle'></i> Right-click a chat message and select <b>'⚡ Cinematic Inspector'</b> to check die indices.</details>",
+      "HintCondition": "Matches ActiveEffect conditions by status ID, core statusId, slug, or effect name/label. Use IDs such as prone, stunned, or frightened when possible.",
       "Hintpath": "Enter the property path to watch. The system will compare .value with .max to calculate the percentage.",
+      "Inherited": {
+        "AllRounds": "Every round",
+        "AutoPreset": "Auto: Group Default ({preset})",
+        "ReadOnly": "Read-only",
+        "Round": "Round",
+        "Source": "Source",
+        "Title": "Inherited Group Triggers"
+      },
       "Label": {
+        "Condition": "Condition ID / Name",
         "DefaultSpell": "Default Spell Cut-in",
         "Keyword": "Search Keyword",
         "Path": "Attribute Path"
@@ -410,29 +642,47 @@
       "NoMacro": "-- No Macro --",
       "LowHP": "Low HP (Danger)",
       "Mode": {
+        "Apply": "On Apply",
         "Decrease": "📉 Below (Decrease)",
-        "Increase": "📈 Above (Increase)"
+        "Increase": "📈 Above (Increase)",
+        "Remove": "On Remove"
       },
       "NoChatTriggers": "No watch list configured.",
       "NoTriggers": "No triggers configured.",
       "Note": {
         "DefaultSpell": "Plays when using a spell that has no specific cut-in configuration."
       },
+      "PF2eCriticalSuccess": "PF2e: Critical Success (Check)",
       "Placeholder": {
+        "Condition": "e.g. prone, stunned, frightened",
         "Path": "e.g. system.attributes.hp.value",
         "Rounds": "Rounds"
       },
       "Preset": "Preset to Play",
       "ResourceTriggers": "Resource Watch List",
       "SelectHelper": "Select from list...",
+      "SelectCondition": "Select condition from list...",
       "SelectPreset": "-- Select Effect --",
       "SelectPresetAuto": "Auto: Group Default ({preset})",
+      "SelectPresetAutoGroup": "Auto: Group Default Preset",
       "TargetRoll": "Target Roll",
       "Threshold": "Trigger Threshold",
       "Title": {
         "RoundInput": "Specific rounds (comma separated). Leave empty for every turn."
       },
       "TriggerMode": "Trigger Mode",
+      "Type": {
+        "DiceCheck": "Dice Check",
+        "Formula": "Advanced Formula",
+        "KeywordAny": "Keyword (Any)",
+        "KeywordRoll": "Keyword (Roll)",
+        "MidiAttack": "Midi: On Attack",
+        "MidiCritical": "Midi: On Critical",
+        "MidiDamage": "Midi: On Damage",
+        "OnAttack": "On Attack (System)",
+        "OnCritical": "On Critical (System)",
+        "OnDamage": "On Damage (System)"
+      },
       "TurnEnd": "Turn End",
       "TurnRoundHint": "<i class='fas fa-info-circle'></i> Leave empty to trigger <strong>every turn</strong>. (e.g., <code>1, 3</code>)",
       "TurnStart": "Turn Start",
@@ -455,21 +705,6 @@
         "TypeMismatch": "Type mismatch: expected {expected}, got {actual}.",
         "InvalidPackage": "Invalid package: missing preset.json."
       }
-    },
-    "Update": {
-      "Close": "Close",
-      "Confirm": "Confirm",
-      "ConfirmNotice": "Got it",
-      "CriticalWarning": "⚠️ This update includes critical fixes.",
-      "CurrentVersion": "Current version: {current}",
-      "NewVersion": "New version {version} is available!",
-      "PatchHighlights": "Patch Highlights",
-      "SkipVersion": "Skip this version",
-      "Title": "Cinematic FX Update Notice",
-      "DisableNotification": "Don't show again",
-      "DisableConfirm": "Update notifications have been disabled. You can re-enable them in the module settings.",
-      "DisableName": "Disable Update Notifications",
-      "DisableHint": "When enabled, update notification popups will not be shown."
     }
   }
 }

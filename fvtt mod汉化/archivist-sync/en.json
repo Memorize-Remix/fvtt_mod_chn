@@ -25,7 +25,7 @@
         "Name": "Keep Chat History",
         "Hint": "When enabled, your chat session is saved and restored per-user and per-campaign. Disable to start fresh each time."
       },
-	  "ChatVisibility": {
+      "ChatVisibility": {
         "Name": "Chat Visibility",
         "Hint": "Who should see the Archivist Chat sidebar tab?",
         "Options": {
@@ -34,7 +34,7 @@
           "None": "None"
         }
       },
-	  "ChatGmPermissions": {
+      "ChatGmPermissions": {
         "Name": "Allow GM private journal context in chat",
         "Hint": "When enabled, GM chat requests include private journal context during retrieval. Non-GM users never send private context."
       },
@@ -171,7 +171,9 @@
       "items": "Items",
       "recaps": "Recaps",
       "mappingOverride": "Mapping Override (JSON)",
-      "importProgress": "Import Progress"
+      "importProgress": "Import Progress",
+      "journals": "Journals",
+      "quests": "Quests"
     },
     "status": {
       "connected": "Connected",
@@ -229,7 +231,9 @@
       "locationsPulled": "Locations pulled successfully",
       "charactersPulled": "Characters pulled successfully",
       "worldInitialized": "Foundry world has been initialized with Archivist for the first time",
-      "worldInitializedReset": "World initialization reset. Reloading to run setup again..."
+      "worldInitializedReset": "World initialization reset. Reloading to run setup again...",
+      "journalImportNotice": "Journal content syncs with Archivist. Folder structure is a point-in-time snapshot and not kept in sync.",
+      "questSynced": "Quest synced with Archivist."
     },
     "errors": {
       "fetchFailed": "Failed to fetch worlds from Archivist API",
@@ -318,6 +322,35 @@
       "realtimeSync": {
         "name": "Real‑Time Sync (auto‑update Archivist)",
         "hint": "When enabled, changes you make in Foundry (create, edit, or delete Actors, Items, and designated Faction/Location journal pages) are immediately mirrored to Archivist. Recaps are read‑only: creating a Recaps page will not create a Game Session, and deleting a Recaps page will not delete a Game Session in Archivist."
+      }
+    },
+    "quest": {
+      "status": {
+        "planned": "Planned",
+        "inProgress": "In Progress",
+        "blocked": "Blocked",
+        "failed": "Failed",
+        "done": "Done"
+      },
+      "category": {
+        "main": "Main",
+        "side": "Side",
+        "faction": "Faction",
+        "personal": "Personal"
+      },
+      "objectiveStatus": {
+        "pending": "Pending",
+        "inProgress": "In Progress",
+        "completed": "Completed",
+        "failed": "Failed",
+        "blocked": "Blocked"
+      },
+      "fields": {
+        "questGiver": "Quest Giver",
+        "successDefinition": "Success Definition",
+        "failureConditions": "Failure Conditions",
+        "nextAction": "Next Action",
+        "resolution": "Resolution"
       }
     }
   }

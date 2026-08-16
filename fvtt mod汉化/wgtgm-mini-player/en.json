@@ -2,9 +2,9 @@
   "wgtgm-mini-player": {
     "welcomePageHTML" : "<div> <p><strong>Welcome to Mini Player</strong></p> <hr> <p><strong>Be part of the Mini Player Community</strong></p> <p>Join us on Discord.</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> Join Discord</button></div> <strong>Supporting the development</strong></p> <p>If you want to support the development, consider taking a look at the membership options on Patreon</a>.</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://patreon.com/wgtngm\"><i class=\"fas fa-star\"></i> Become a member</button></div><p><strong>Documentation</strong></p> <p>Feeling a little lost? Head over to our documentation page for some direction, or jump on Discord and ask a question</a>.</p> <div><button data-wgtngm=\"wgtgm-mini-player|openWindow|https://campaigncodex.wgtngm.com/miniplayer\"><i class=\"fas fa-book\"></i> Documentation</button></div></div>",   
     "button":{
-        "title":"Create new {type}",
-        "droptoscene" : "Drop  {type} to current scene",
-        "tagmode": "Tag Mode"
+      "title":"Create new {type}",
+      "droptoscene" : "Drop  {type} to current scene",
+      "tagmode": "Tag Mode"
     },
     "ui": {
       "resultsLabel": "Results:",
@@ -14,6 +14,7 @@
       "selectTrackText": "--Select a Track--",
       "tagHint": "Left-click include, right-click exclude.",
       "tagToggleTitle": "Left-click include, right-click exclude",
+      "tagGroupToggleTitle": "Click open or close, Shift-click include all, Shift-right-click exclude all",
       "ttrpgSourceToggleTitle": "Toggle TTRPG source tracks",
       "favoriteTitle": "Favorite",
       "crossfadeOn": "Crossfade on",
@@ -40,7 +41,42 @@
       "favoritesCreateFailed": "Failed to create favorites playlist.",
       "favoritesUpdateFailed": "Failed to update favorites playlist.",
       "favoriteRemoved": "Removed \"{name}\" from favorites.",
-      "favoriteAdded": "Added \"{name}\" to favorites."
+      "favoriteAdded": "Added \"{name}\" to favorites.",
+      "randomTracksTitle": "Use a random track order",
+      "previousTrackSet": "Prev {count}",
+      "nextTrackSet": "Next {count}",
+      "trackPageStatus": "Tracks {start}-{end} of {total}"
+    },
+    "sceneConfig": {
+      "playPlaylistLabel": "Mini Player Playlist",
+      "playPlaylistHint": "Optional playlist to open in Mini Player when this scene becomes active. If no track is selected, Mini Player starts a random track. Ignored if Mini Player Tags are set.",
+      "playPlaylistSoundLabel": "Mini Player Track",
+      "playPlaylistSoundHint": "Optional track to play when this scene becomes active. Leave blank to start a random track from the selected playlist.",
+      "playTagsLabel": "Mini Player Tags",
+      "playTagsHint": "Comma-separated tags to open in tag mode and autoplay when this scene becomes active. Prefix a tag with \"-\" or use \"not(tag)\" to exclude it. Include \"ttrpg\" to enable the TTRPG source toggle.",
+      "playPresetLabel": "Mini Player Preset",
+      "playPresetHint": "Optional preset to play when this scene becomes active. If tags are also set, the preset loads first and Mini Player tag playback can then take over the music layer.",
+      "stopMiniPlayerOnStartLabel": "Stop All Music First",
+      "stopMiniPlayerOnStartHint": "When this scene becomes active, stop currently playing music before applying scene playlist, scene track, preset, or tags.",
+      "stopAllSoundsOnStartLabel": "Stop All Sounds First",
+      "stopAllSoundsOnStartHint": "When this scene becomes active, stop all currently playing sounds before applying scene playlist, scene track, preset, or tags."
+    },
+    "combatTracker": {
+      "sectionLabel": "Mini Player Combat Audio",
+      "autoplayLabel": "Autoplay on Combat Start",
+      "autoplayHint": "If enabled, the Mini Player combat audio settings below will be applied when combat starts.",
+      "stopMiniPlayerOnStartLabel": "Stop Mini Player Music First",
+      "stopMiniPlayerOnStartHint": "Stop currently playing music before applying the selected Mini Player playlist or tags. This is always enabled while Autoplay is on.",
+      "stopAllSoundsOnStartLabel": "Stop All Sounds First",
+      "stopAllSoundsOnStartHint": "Stop all currently playing playlists and tracks before applying combat Mini Player and Soundboard selections.",
+      "miniPlaylistLabel": "Mini Player Playlist",
+      "miniPlaylistHint": "Optional playlist to open in Mini Player when combat starts. If set, it takes priority over Mini Player Tags.",
+      "miniTagsLabel": "Mini Player Tags",
+      "miniTagsHint": "Comma-separated tags to open in Mini Player tag mode when combat starts. Prefix a tag with \"-\" or use \"not(tag)\" to exclude it. Include \"ttrpg\" to enable the TTRPG source toggle. Ignored if a Mini Player Playlist is selected.",
+      "soundboardTagsLabel": "Soundboard Tags",
+      "soundboardTagsHint": "Comma-separated tags to open in Soundboard tag mode when combat starts. Prefix a tag with \"-\" or use \"not(tag)\" to exclude it.",
+      "presetLabel": "Preset",
+      "presetHint": "Optional preset to play when combat starts. The preset loads first, then Mini Player playlist/tag playback can take over the music layer, and the previous audio state is restored when combat ends."
     },
     "settings": {
       "runonlyonce": {
@@ -69,7 +105,7 @@
       },
       "musicFolder": {
         "name": "Base music folder",
-        "hint": "Folder where playlists are created from, folders with [sfx] will be added as Soundboard Only"
+        "hint": "Folder where playlists are created from, folders with -sfx will be added as Soundboard Only"
       },
       "includePlaylistSoundsInTagScan": {
         "name": "Include non-Mini Player playlists in tag scans",
@@ -91,9 +127,41 @@
         "name": "Play on Track Select",
         "hint": "Automatically play a track when it is selected from the dropdown list."
       },
+      "combatPlayTags": {
+        "name": "Combat Play Tags",
+        "hint": "Comma-separated tags to open in Mini Player tag mode and autoplay when combat starts. Include \"ttrpg\" to enable the TTRPG source toggle."
+      },
+      "combatPlayPlaylist": {
+        "name": "Combat Play Playlist",
+        "hint": "Playlist to open in Mini Player when combat starts. If set, it takes priority over Combat Play Tags."
+      },
+      "combatPlayPreset": {
+        "name": "Combat Play Preset",
+        "hint": "Preset to play when combat starts. The preset loads first, then Mini Player playlist/tag playback can take over the music layer, and the previous audio state is restored when combat ends."
+      },
+      "combatSoundboardTags": {
+        "name": "Combat Soundboard Tags",
+        "hint": "Comma-separated tags to open in Soundboard tag mode when combat starts."
+      },
+      "combatAutoplayOnStart": {
+        "name": "Autoplay on Combat Start",
+        "hint": "If enabled, combat audio automation will run when combat starts."
+      },
+      "combatStopMiniPlayerOnStart": {
+        "name": "Stop Mini Player Music First",
+        "hint": "Stop currently playing music before applying combat Mini Player playlist/tag selections. This is always enabled while Autoplay is on."
+      },
+      "combatStopAllSoundsOnStart": {
+        "name": "Stop All Sounds First",
+        "hint": "Stop all currently playing playlists and tracks before applying combat Mini Player and Soundboard selections."
+      },
       "stopOnNewSoundboard": {
         "name": "Stop on new Sound",
         "hint": "Stop playback of the soundboard track when a new Soundboard sound is played."
+      },
+      "playTrackWhenDroppedOnMixer": {
+        "name": "Play track when dropped on mixer",
+        "hint": "If disabled, dropping a playlist track on the mixer adds it as a queued mixer row without auto-playing."
       },
       "stopOnNewPlaylist": {
         "name": "Stop on New Playlist",

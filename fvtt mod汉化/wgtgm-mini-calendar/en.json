@@ -5,7 +5,7 @@
     "settings": {
       "calSheetDimensions": "Calendar Position",
       "calSheetDimensionsHint": "Stores the last position and size of the calendar.",
-	  "calHudOpened": "Calendar HUD Open State",
+      "calHudOpened": "Calendar HUD Open State",
       "calHudOpenedHint": "Stores if the calendar HUD was open when you last closed Foundry.",
       "calSheetOpened": "Calendar Open State",
       "calSheetOpenedHint": "Stores if the calendar was open when you last closed Foundry.",
@@ -15,8 +15,42 @@
       "resumeAfterCombatHint":"Restores the clock after combat has finished.",
       "fadedUIHint":"Calendar will fade until mouse is hovered over",
       "fadedUI":"Enable Fade UI",
-      "hideHudonCombat":"Hide HUD on combat",
-      "hideHudonCombatHint":"Hides the HUD during combat and reopens at end."
+      "hideHudonCombat":"Hide HUD on combat start",
+      "hideHudonCombatHint":"Hides the HUD during combat and reopens at end.",
+      "hideHudonCreateCombat":"Hide HUD on combat creation",
+      "hideHudonCreateCombatHint":"Hides the HUD when an encounter is created and reopens at end.",
+      "disableColour":"Disable the colour window header",
+      "disableColourHint":"Disabled the colour in the mini calendar header"
+    }
+  },
+  "TYPES": {
+    "RegionBehavior": {
+      "wgtgm-mini-calendar": {
+        "suppressWeatherSound": "Suppress Weather Sound"
+      }
+    },
+    "HINTS": {
+      "RegionBehavior": {
+        "wgtgm-mini-calendar": {
+          "suppressWeatherSound": "Mute or muffle Mini Calendar weather sounds inside this Region."
+        }
+      }
+    }
+  },
+  "BEHAVIOR": {
+    "TYPES": {
+      "suppressWeatherSound": {
+        "FIELDS": {
+          "mode": {
+            "label": "Mode",
+            "hint": "Choose how Mini Calendar weather sounds behave inside this Region."
+          }
+        },
+        "MODES": {
+          "muffle": "Muffle",
+          "mute": "Mute"
+        }
+      }
     }
   }
 }

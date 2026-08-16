@@ -3,9 +3,12 @@
   "PTH.TOKEN": "Change to Token Mode",
   "PTH.CONFIG": "Configure Token Hotbar",
   "PTH.ORIGINAL": "Modify Prototype Actor",
+  "PTH.LOCKED": "Hotbar Locked",
   "PTH.FILL": "Fill Token Hotbar",
   "PTH.FILTER.SELECT": "Selected Filter: ",
   "PTH.FILTER.NONE": "None",
+  "PTH.FILTER.MACRO": "Macro",
+  "PTH.FILTER.ITEM": "Item",
 
   "PTH.DBCLICK": "Double click to open sheet",
   "PTH.CURRENT_HP": "Current Health",
@@ -14,11 +17,11 @@
   "PTH.TEMPORARY_HP": "Temporary Health",
   "PTH.CONFIG_TITLE": "Configure Token Hotbar",
 
-  "PTH.NO_ITEM_ROLL_CONFIGURED": "Pazindor's Token Hotbar: Roll handler is not configured for that system.",
+  "PTH.NO_SLOT_USE_CONFIGURED": "Pazindor's Token Hotbar: Use Slot handler is not configured for that system.",
 
   "PTH.EFFECT_DELETE": "Do you want to remove that Effect?",
-  "PTH.ITEM_SHEET": "Open Item Sheet",
-  "PTH.REMOVE_ITEM": "Remove Item",
+  "PTH.OPEN_CONFIG": "Open Configuration",
+  "PTH.EMPTY_SLOT": "Remove Slot",
   "PTH.END_TURN": "End Turn",
 
   "PTH.HC.GLOBAL": "Global options",
@@ -26,6 +29,9 @@
   "PTH.HC.SECTION_A": "Section A (Right)",
   "PTH.HC.SECTION_B": "Section B (Left)",
   "PTH.HC.DISPLAY_TOKEN": "Display Token image instead of Actor portrait",
+  "PTH.HC.OVERLAY": "Show Portrait overlay (if configured by the system)",
+  "PTH.HC.SHOW_CHARGES": "Show Charges (if configured by the system)",
+  "PTH.HC.SHOW_QUANTITY": "Show Quantity (if configured by the system)",
 
   "PTH.HC.ROWS": "Number of Rows",
   "PTH.HC.COLUMNS": "Number of Columns",
@@ -39,6 +45,7 @@
   "PTH.HC.RESOURCE.PATH": "System path to Resource",
   "PTH.HC.RESOURCE.LABEL": "Resource Label",
   "PTH.HC.RESOURCE.COLOR": "Resource Color",
+  "PTH.HC.DEFAULT_RESOURCE": "Reset to default",
 
   "PTH.BASIC_ROLL.TITLE": "Select Roll",
   "PTH.BASIC_ROLL.CHECK": "Check",
@@ -48,9 +55,19 @@
   "PTH.SETTINGS.CURRENT_HP": "Current HP Path (required)",
   "PTH.SETTINGS.TEMP_HP": "Temporary HP Path (if exist)",
   "PTH.SETTINGS.NEGATIVE_HEALTH": "Allow Negative Health",
-  "PTH.SETTINGS.NEGATIVE_HEALTH_HINT": "If true, HP will be able to reach negative values on the Token Hotbar. Some systems might not allow it anyway.",
+  "PTH.SETTINGS.NEGATIVE_HEALTH_HINT": "If true, HP will be able to reach negative values on the Token Hotbar. Some systems might override this value.",
 
+  "PTH.SETTINGS.RESOURCE_1_COLOR": "Resource 1 Color default",
+  "PTH.SETTINGS.RESOURCE_1_NAME": "Resource 1 Label default",
+  "PTH.SETTINGS.RESOURCE_1_PATH": "Resource 1 Path default",
+  "PTH.SETTINGS.RESOURCE_2_COLOR": "Resource 2 Color default",
+  "PTH.SETTINGS.RESOURCE_2_NAME": "Resource 2 Label default",
+  "PTH.SETTINGS.RESOURCE_2_PATH": "Resource 2 Path default",
+  "PTH.SETTINGS.RESOURCE_3_COLOR": "Resource 3 Color default",
+  "PTH.SETTINGS.RESOURCE_3_NAME": "Resource 3 Label default",
+  "PTH.SETTINGS.RESOURCE_3_PATH": "Resource 3 Path default",
 
+  "PTH.DND5E.FILTER.ACTIVITY": "Activity",
   "PTH.DND5E.FILTER.ACTION": "Action",
   "PTH.DND5E.FILTER.BONUS_ACTION": "Bonus Action",
   "PTH.DND5E.FILTER.REACTION": "Reaction",
@@ -59,6 +76,10 @@
   "PTH.DND5E.START_REST.SHORT": "Start Short Rest",
   "PTH.DND5E.BASIC_ROLL": "Roll Check/Save",
   "PTH.DND5E.INITIATIVE": "Roll for Initiative",
+  "PTH.DND5E.DEATH_SAVE": "Roll Death Save",
+  "PTH.DND5E.CONCENTRATION": "Roll Concentration Check",
+  "PTH.DND5E.DYING": "You are Dying",
+  "PTH.DND5E.DEATH": "You are Dead",
 
   "PTH.DND5E.EQUIP_ITEM": "Equip Item",
   "PTH.DND5E.UNEQUIP_ITEM": "Unequip Item",
@@ -66,6 +87,24 @@
   "PTH.DND5E.UNATTUNE_ITEM": "Unattune Item",
   "PTH.DND5E.PREPARE_SPELL": "Prepare Spell",
   "PTH.DND5E.UNPREPARE_SPELL": "Unprepare Spell",
+
+  "PTH.PF1.FILTER.STANDARD": "Standard Action",
+  "PTH.PF1.FILTER.MOVE": "Move Action",
+  "PTH.PF1.FILTER.SWIFT": "Swift Action",
+  "PTH.PF1.FILTER.FREE": "Free Action",
+  "PTH.PF1.FILTER.FULL": "Full-Round Action",
+
+  "PTH.PF1.START_REST": "Start Rest",
+  "PTH.PF1.BASIC_ROLL": "Roll Check/Save",
+  "PTH.PF1.INITIATIVE": "Roll for Initiative",
+  "PTH.PF1.STABILIZE": "Roll Stabilization Check",
+
+  "PTH.PF1.EQUIP_ITEM": "Equip Item",
+  "PTH.PF1.UNEQUIP_ITEM": "Unequip Item",
+  "PTH.PF1.CARRY_ITEM": "Carry Item",
+  "PTH.PF1.DROP_ITEM": "Drop Item",
+  "PTH.PF1.PREPARE_SPELL": "Prepare Spell",
+  "PTH.PF1.UNPREPARE_SPELL": "Unprepare Spell",
 
 
   "PTH.PF2E.FILTER.ACTION_1": "1 Action",
@@ -77,6 +116,9 @@
   "PTH.PF2E.START_REST": "Start Rest",
   "PTH.PF2E.BASIC_ROLL": "Roll Check/Save",
   "PTH.PF2E.INITIATIVE": "Roll for Initiative",
+  "PTH.PF2E.RECOVERY": "Roll Recovery Check",
+  "PTH.PF2E.DYING": "You are Dying",
+  "PTH.PF2E.DEAD": "You are Dead",
 
   "PTH.PF2E.HOLD_ITEM_1H": "Hold in 1 Hand",
   "PTH.PF2E.HOLD_ITEM_2H": "Hold in 2 Hand",

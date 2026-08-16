@@ -42,8 +42,7 @@
     },
     "Filters": {
       "Title": "Filters",
-      "ResetAll": "Reset all filters",
-      "UnavailableInCompendium": "Custom fields unavailable in compendium index"
+      "ResetAll": "Reset all filters"
     },
     "ViewMode": {
       "List": "List",
@@ -55,15 +54,16 @@
     "Buttons": {
       "ShowDuplicates": "Show Duplicates",
       "Refresh": "Refresh",
-      "RefreshImages": "Refresh Images",
+      "RefreshImages": "Refresh Media",
+      "RefreshMediaFolder": "Refresh this media folder",
       "Scanning": "Scanning...",
-      "ConfigureImagePaths": "Configure Image Paths",
+      "ConfigureImagePaths": "Configure Media Paths",
       "ConfigureCompendiums": "Configure Compendiums",
       "ConfigureCategories": "Configure Categories",
       "ConfigureTagGroups": "Configure Tag Groups",
       "BulkEditTags": "Bulk Edit Tags",
       "BulkSelectMode": "Bulk Select Mode",
-	  "BulkSelectNone": "Select None",
+      "BulkSelectNone": "Select None",
       "BulkSelectAll": "Select All",
       "BulkClearSelection": "Clear Bulk Selection",
       "BulkEditSelected": "Edit Selected Tags",
@@ -71,8 +71,11 @@
       "SendToPlayer": "Send to Player",
       "CreateTile": "Create Tile",
       "SetBackground": "Set Background",
+      "PlayPreview": "Play Preview",
+      "StopPreview": "Stop Preview",      
       "CreateScene": "Create Scene",
-	  "CopyPath": "Copy Path",
+      "CopyPath": "Copy Path",
+      "CreateHoldingScene": "Create Holding Scene",
       "ShowFolder": "Show Folder",
       "OpenCompendium": "Open Compendium"
     },
@@ -86,7 +89,7 @@
       "Audio": "Audio",
       "Video": "Video"
     },
-	"AudioPreview": {
+    "AudioPreview": {
       "NowPlaying": "Now Previewing",
       "Stop": "Stop"
     },
@@ -96,7 +99,12 @@
       "ImagesFound": "Found {count} scanned assets",
       "AssetFolderPath": "{name} is in {folder}",
       "AssetPathCopied": "Copied asset path: {path}",
-      "AssetPathCopyFailed": "Unable to copy asset path to clipboard."
+      "AssetPathCopyFailed": "Unable to copy asset path to clipboard.",
+      "PortraitUpdated": "Updated {name}'s portrait.",
+      "PortraitNoPermission": "You do not have permission to update this actor's artwork.",
+      "PortraitUpdateFailed": "Unable to update {name}'s portrait.",
+      "TokenUpdated": "Updated {name}'s prototype token image.",
+      "TokenUpdateFailed": "Unable to update {name}'s prototype token image."
     },
     "Welcome": {
       "Title": "Welcome to Asset Librarian",
@@ -125,6 +133,14 @@
         "Name": "Custom Category Groups",
         "Hint": "Optional comma-separated extra category groups for Item browsing (for example: Relics, Recipes). Names must be unique and cannot reuse built-in groups."
       },
+      "RecycleHoldingScene": {
+        "Name": "Recycle Holding Scene",
+        "Hint": "If enabled, creating a holding scene replaces the background and dimensions of the previously created holding scene instead of creating a new Scene."
+      },
+      "RecycleHoldingSceneUuid": {
+        "Name": "Recycle Holding Scene UUID",
+        "Hint": "Internal setting storing the world Scene reused by Create Holding Scene."
+      },      
       "TagRegistry": {
         "Name": "Tag Registry",
         "Hint": "Internal autocomplete cache for Asset Librarian category/filter tags."
@@ -158,15 +174,15 @@
         "Hint": "Include world-level assets in the scan."
       },
       "EnableImageScanning": {
-        "Name": "Enable Image Scanning",
-        "Hint": "Enable the Images tab to scan for image and video files."
+        "Name": "Enable Media Scanning",
+        "Hint": "Enable the Media tab to scan for image and video files."
       },
-	  "EnableAudioScanning": {
+      "EnableAudioScanning": {
         "Name": "Enable Audio Scanning",
         "Hint": "Include audio and music files in the Images tab scan."
       },
       "IncludeWorldPath": {
-        "Name": "Include World Images",
+        "Name": "Include World Media",
         "Hint": "Scan the world directory for media files."
       },
       "FilterCollapsed": {
@@ -182,7 +198,7 @@
         "Hint": "When selecting a folder, include content from all nested subfolders."
       },
       "ImageScanPaths": {
-        "Name": "Image Scan Paths",
+        "Name": "Media Scan Paths",
         "Hint": "Comma-separated list of paths to scan for media files."
       },
       "ViewMode": {
@@ -190,8 +206,8 @@
         "Hint": "How assets are displayed in the grid."
       },
       "UseDiskThumbnailCache": {
-        "Name": "Use Disk Cache (Images)",
-        "Hint": "Persist image thumbnails to disk cache. Disk cache needs to be manually cleared."
+        "Name": "Use Disk Cache (Media)",
+        "Hint": "Persist media thumbnails to disk cache. Disk cache needs to be manually cleared."
       },
       "UseDiskScenePreviewCache": {
         "Name": "Use Disk Cache (Scene Previews)",
@@ -322,6 +338,11 @@
       "PlaceholderFilters": "...",
       "None": "None",
       "Add": "Add",
+      "CleanUnusedCategory": "Clean unused category tags",
+      "CleanUnusedFilters": "Clean unused filter tags",
+      "CleanUnusedNone": "No unused tags found.",
+      "CleanUnusedCategorySummary": "Removed {count} unused category tags.",
+      "CleanUnusedFilterSummary": "Removed {count} unused filter tags.",
       "RegistryCategoryList": "Known category tags",
       "RegistryFilterList": "Known filter tags",
       "Save": "Save",
@@ -344,18 +365,22 @@
       "BulkNoEditable": "No editable documents in the current results.",
       "BulkNoSelected": "No selected documents to edit.",
       "BulkNoChanges": "No bulk changes specified.",
+      "BulkProgressLabel": "Bulk edit ({pct}%)",
       "BulkSummary": "Bulk tagging complete: {updated} updated, {failed} failed, {skipped} skipped.",
       "NoPermission": "You do not have permission to edit tags on this document.",
       "InvalidDocument": "Unable to load this document for tag editing."
     },
     "Images": {
-      "DialogTitle": "Configure Image Paths",
+      "DialogTitle": "Configure Media Paths",
       "EnterPaths": "Enter paths to scan:",
       "RelativeHint": "Paths are relative to Foundry's data directory.",
       "Browse": "Browse",
       "Save": "Save",
       "Cancel": "Cancel",
-      "Updated": "Image paths updated"
+      "Updated": "Media paths updated",
+      "ScanStarting": "Starting media scan…",
+      "ScanProgress": "Scanning path {current}/{total}: {path} · {folders} folders · {assets} media",
+      "ScanSaving": "Saving media index…"
     },
     "Helpers": {
       "ConfirmDefault": "Are you sure?",

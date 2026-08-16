@@ -1,38 +1,47 @@
-{
+﻿{
   "Mobile-Companion": {
     "Settings": {
       "UseCurrency": {
         "Name": "Show Currency",
-        "Hint" : "Whether or not to show your currency within the inventory."
+        "Hint": "Whether or not to show your currency within the inventory."
       },
       "UseEncumbrance": {
         "Name": "Show Encumbrance",
-        "Hint" : "Whether or not to show the encumbrance indicator."
+        "Hint": "Whether or not to show the encumbrance indicator."
       },
       "UseContainer": {
         "Name": "Use Containers",
-        "Hint" : "(Patreon Feature) Whether or not to use the containers."
+        "Hint": "(Patreon Feature) Whether or not to use the containers."
       },
       "AdditionalItemInfo": {
         "Name": "Add additional info",
-        "Hint" : "Adds additional information to items and spells regarding actions, rolls and average damage."
+        "Hint": "Adds additional information to items and spells regarding actions, rolls and average damage."
       },
-	  "ShowAverageDamage": {
+      "ShowAverageDamage": {
         "Name": "Show average Damage",
-        "Hint" : "Additionally displays average damage in quick info"
-      },
-      "ShowBioTab": {
-        "Name": "Show Tab 'Biography'",
-        "Hint" : "Shows the biography tab of a character"
+        "Hint": "Additionally displays average damage in quick info"
       },
       "AllowBioEdit": {
         "Name": "Editable biography",
-        "Hint" : "Enables the edit function for biography. Warning: Once you enter the editor, there is no way (if you don't have an ESC key) to cancel any changes you made."
+        "Hint": "Enables the edit function for biography. Warning: Once you enter the editor, there is no way (if you don't have an ESC key) to cancel any changes you made."
       },
       "Splitscreen": {
         "Name": "Enable Splitscreen",
-        "Hint" : "(Patreon Feature) Enables splitscreen."
-      }
+        "Hint": "(Patreon Feature) Enables splitscreen."
+      },
+      "HideFilteredSkills": {
+        "Name": "Hide filtered skills",
+        "Hint": "When enabled, filtered skills are hidden in the character sheet instead of grayed out."
+      },
+      "RollRequestUser": {
+        "Name": "Roll Request User",
+        "Hint": "Select a GM-User that receives roll requests."
+      },
+      "RollRequestUserOptions": {
+        "Self": "» Self «",
+        "None": "» None «"
+      },
+      "RollRequestUserErrorOnSelfAndMidi": "You have the midi-qol option '{midi}' enabled. This does NOT work with player facing self rolls!. Either disable the midi-qol option or set the roll request user to a GM or » None «."
     },
     "Input": {
       "Set": "Set",
@@ -52,7 +61,8 @@
       "title": "Not in Combat!",
       "text": "You are not in combat. The DM has to add you to the combat tracker first. Re-open this dialog after being added to the tracker."
     },
-    "ApplySelf": "Apply {effect} to yourself",
+    "ApplyEffectSelf": "Apply {effect} to yourself",
+    "RemoveEffectSelf": "Remove {effect}",
     "Search": {
       "Spell": "Search spell",
       "Item": "Search item",
@@ -63,6 +73,52 @@
       "Objects": "Favorit Objects",
       "Features": "Favorit Features"
     },
-    "Exchange": "Exchange"
+    "Exchange": "Exchange",
+    "ItemTransfer": {
+      "SendItem": "Send Item",
+      "Quantity": "Quantity",
+      "Container": "Container",
+      "YourCharacters": "Your Characters",
+      "OtherCharacters": "Other Characters"
+    }
+  },
+  "Mobile-Companion-TradeApp": {
+    "Qty": "Qty",
+    "Price": "Price",
+    "NotForSale": "Not for sale",
+    "Buy": "Buy",
+    "Sell": "Sell",
+    "YouTake": "You Take",
+    "GM-Window-Empty": {
+      "DropPlayers": "Drop player(s) here. ",
+      "ClickHere": "click here",
+      "AddViaDropdown": "Or add them via dropdown above.",
+      "DropChestOrMerchant": "Drop loot chest or merchant actor here or select a token and"
+    },
+    "ItemsTaken": "Items Taken",
+    "ItemsOffered": "Items Offered",
+    "CantAfford": "Can't afford",
+    "Balance": "Balance",
+    "MerchantSettings": {
+      "InfiniteQty": "Infinite Quantity",
+      "InfiniteMoney": "Infinite Money",
+      "MerchantBuys": "Merchant Buys",
+      "SellPriceMod": "Selling Price Modifier",
+      "BuyPriceMod": "Buying Price Modifier"
+    },
+    "Type": "Type",
+    "Merchant": "Merchant",
+    "Pile": "Pile",
+    "Save": "Save",
+    "Reset": "Reset",
+    "CloseRequest": "Close Request",
+    "SendRequest": "Send Request",
+    "All": "All",
+    "Split": "Split",
+    "None": "None",
+    "Close": "Close",
+    "ConfirmTradeTooltip": "Confirm Trade and give the player the items they want.",
+    "CancelTradeTooltip": "Cancel trade an return everything back.",
+    "RemoveCharacterTooltip": "Removes this character from the trade."
   }
 }

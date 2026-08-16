@@ -1,7 +1,6 @@
 {
   "LAME": {
     "Module": {
-      "LongTitle": "Lucas's Awesome Messenger Extension",
       "ShortTitle": "LAME Messenger",
       "TitleWithAbbreviation": "Lucas's Awesome Messenger Extension (LAME Messenger)"
     },
@@ -22,16 +21,18 @@
       "PermanentNotificationForNewWhisper": "Permanent notification for new whisper",
       "PermanentNotificationForNewWhisperHint": "Should the visual notification stay until you dismiss it?",
       "PlayNotificationSoundForNewWhisper": "Play notification sound for new whisper",
-      "PlayNotificationSoundForNewWhisperHint": "Should the \"pst-pst\" notification sound be played every time a whisper is received? (It is played via the \"interface\" channel.)",
+      "PlayNotificationSoundForNewWhisperHint": "Should a notification sound be played every time a whisper is received? (It is played via the \"interface\" channel.)",
+      "NotificationSoundFile": "Notification sound file",
+      "NotificationSoundFileHint": "The sound file to play as notification upon receiving a new whisper. Leave the field blank to reset to the default \"pst-pst\" sound.",
       "ButtonInSceneControlToolbar": "Add button to scene controls",
       "ButtonInSceneControlToolbarHint": "Should the button to open the messenger be added to the scene controls toolbar on the left side of the screen? (Foundry VTT v12 only)",
       "ButtonInChatControl": "Add button to chat controls",
-      "ButtonInChatControlHint": "Should the button to open the messenger be added to the chat controls (to the right of the roll type selector) in the sidebar? (Will become non-optional for Foundry VTT v13+.)",
+      "ButtonInChatControlHint": "Should the button to open the messenger be added to the chat controls (to the right of the roll type selector) in the sidebar? (Will become non-optional starting with Foundry VTT v13.)",
       "ShowInactiveUsers": "Show inactive users",
       "ShowInactiveUsersHint": "Should users which currently aren't connected be shown in the messenger?",
       "UsersToExclude": "Users to exclude",
       "UsersToExcludeHint": "Selected users will not be listed as recipients for all users. (world setting, GM only)",
-      "UsersToExcludeHintV13preview": "Selected users will not be listed as recipients for all users. (world setting, GM only) Please note, user names will return when Foundry VTT v13 has a stable release."
+      "UsersToExcludeHintV13preview": "Selected users will not be listed as recipients for all users. (world setting, GM only)"
     },
     "IncomingWhisperFrom": "Whisper from",
     "NoUsersToShow": "No users to show.",
@@ -39,7 +40,7 @@
     "UserIsOffline": "Can't send to user as they are offline.",
     "Keybinding": {
       "OpenMessengerWindow": "Open LAME Messenger window",
-      "OpenMessengerWindowHint": "By default, the assigned Ctrl key is the left one. You can hover also assign a key combination with Right Ctrl, even though it might look the same in the input field."
+      "OpenMessengerWindowHint": "By default, the assigned Ctrl key is the left one. You can also assign a key combination with Right Ctrl, even though it might look the same in the input field."
     }
   }
 }

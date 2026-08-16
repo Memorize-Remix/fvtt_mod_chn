@@ -8,16 +8,16 @@
       "COMBINATION": "Combination",
       "CONCENTRATION": "Concentration",
       "CONFIRM": "Confirm",
-	  "COPPER": "Copper Pieces",
+      "COPPER": "Copper Pieces",
       "DAMAGE_ADD": "Add damage section",
       "DAMAGE_PARTS": "Damage section",
       "DAMAGE_TYPES": "Damage types",
       "DC": "Difficulty",
       "DELETE": "Delete",
-	  "EACH": "Each character",
+      "EACH": "Each character",
       "EXTENDED": "Extended",
       "FORMULA": "Formula",
-	  "GOLD": "Gold Pieces",
+      "GOLD": "Gold Pieces",
       "NAME_FORMAT": {
         "CAPITALIZE": "Capitalize",
         "LABEL": "Name format",
@@ -29,7 +29,7 @@
       "PLACEHOLDER": "",
       "RULES_SEARCH": "Rule",
       "SELECT_ATTRIBUTE": "Select attribute",
-	  "SILVER": "Silver Pieces",
+      "SILVER": "Silver Pieces",
       "TYPES": "Types",
       "USE_NAME": "Actor name",
       "XP": "Experience Points",
@@ -52,65 +52,91 @@
     },
     "MENU": {
       "ABILITIES": {
-        "TITLE": "Abilities"
+        "SETTING_NAME": "Show Abilities",
+        "TITLE": "Show Abilities"
       },
       "AREATARGETTYPES": {
+        "SETTING_NAME": "Show Area Target Types",
         "TITLE": "Area Target Types"
       },
       "ATTACK": {
+        "SETTING_NAME": "Show Attack formula",
         "TITLE": "Attack formula"
       },
-	  "AWARD": {
-        "TITLE": "Awards",
-        "HINT": "Show the award menu in the editor"
+      "AWARD": {
+        "SETTING_NAME": "Show Awards",
+        "TITLE": "Awards"
       },
       "CHECKS": {
+        "SETTING_NAME": "Show Checks",
         "TITLE": "Checks"
       },
       "CONDITIONTYPES": {
+        "SETTING_NAME": "Show Conditions",
         "TITLE": "Conditions"
       },
       "CREATURETYPES": {
+        "SETTING_NAME": "Show Creature Types",
         "TITLE": "Creature Types"
       },
       "DAMAGE": {
+        "SETTING_NAME": "Show Damage formula",
         "TITLE": "Damage formula"
       },
       "DAMAGETYPES": {
+        "SETTING_NAME": "Show Damage Types",
         "TITLE": "Damage Types"
       },
       "DESCRIPTION": "Select the menus to be displayed in ProseMirror.",
       "DETECTPATTERNS": {
+        "SETTING_NAME": "Show Pattern Detection",
         "TITLE": "Pattern Detection"
       },
       "DIALOG": "Configure enricher",
       "HEAL": {
+        "SETTING_NAME": "Show Healing formula",
         "TITLE": "Healing formula"
       },
       "ITEMPROPERTIES": {
+        "SETTING_NAME": "Show Spell Properties",
         "TITLE": "Spell Properties"
       },
       "LOOKUP": {
+        "SETTING_NAME": "Show Lookup",
         "TITLE": "Lookup"
       },
       "RULES": {
+        "SETTING_NAME": "Show Rules",
         "TITLE": "Rules"
       },
       "SAVES": {
+        "SETTING_NAME": "Show Saving Throws",
         "TITLE": "Saving Throws"
       },
       "SKILLS": {
+        "SETTING_NAME": "Show Skills",
         "TITLE": "Skills"
       },
       "STYLE": {
         "ADVICE": "Advice",
         "ADVICE_CONTENT": "This is an advice block.",
         "ADVICE_TITLE": "Advice",
+        "HABITAT_TREASURE": "Habitat/Treasure",
+        "HABITAT_TREASURE_TITLE_HABITAT": "Habitat",
+        "HABITAT_TREASURE_CONTENT_HABITAT": "The habitat",
+        "HABITAT_TREASURE_TITLE_TREASURE": "Treasure",
+        "HABITAT_TREASURE_CONTENT_TREASURE": "The treasure",
         "NARRATIVE": "Narrative",
         "NOTABLE": "Notable",
+        "PULL_QUOTE_AUTHOR": "Author",
+        "PULL_QUOTE_CONTENT": "Quote text here",
+        "PULL_QUOTE_LEFT": "Pull Quote - Left",
+        "PULL_QUOTE_RIGHT": "Pull Quote - Right",
+        "PULL_QUOTE_SOURCE": "Source",
         "QUEST": "Quest",
         "QUEST_CONTENT": "This is a quest block.",
         "QUEST_TITLE": "Quest",
+        "SETTING_NAME": "Show Styles",
         "TITLE": "Styles",
         "TREASURE": "Treasure",
         "TREASURE_CONTENT": "This is a treasure block.",
@@ -121,6 +147,7 @@
         "TITLE": "Tools"
       },
       "WEAPONMASTERIES": {
+        "SETTING_NAME": "Show Weapon Masteries",
         "TITLE": "Weapon Masteries"
       }
     },
@@ -129,15 +156,6 @@
         "LONG": "Long Format",
         "SHORT": "Short Format",
         "TITLE": "Format"
-      },
-      "MENU": {
-        "HINT": "Configure which items appear in the D&D menu",
-        "LABEL": "Configure Menu Items",
-        "TITLE": "Menu Configuration"
-      },
-      "PROSEGAP": {
-        "HINT": "Reduces the gap to prevent ProseMirror from breaking into two lines when adding D&D menu.",
-        "TITLE": "ProseMirror Gap Reduction"
       }
     }
   }

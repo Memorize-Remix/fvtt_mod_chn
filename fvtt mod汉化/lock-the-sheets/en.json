@@ -74,9 +74,37 @@
         "name": "Timeout for the HUD status icon (seconds)",
         "hint": "Timeout in seconds for the HUD icon to automatically turn off after a certain time. Set to 0 to make the HUD icon always visible. Default: 10."
       },
+      "hudIconScale": {
+        "name": "HUD Icon size",
+        "hint": "Scale of the Status HUD Icon. Can also be toggled by custom keybindings in the global control settings."
+      },
+      "hudIconScaleOptions": {
+        "zero": "invisible",
+        "small": "small",
+        "normal": "normal",
+        "large": "large"
+      },
       "hudIconOpacity": {
         "name": "Opacity of the HUD status icon",
         "hint": "1 (maximum) means fully visible, 0.2 (minimum) means visible by 20% (transparent by 80%). Default: 0.7 (70%)"
+      },
+      "hudIconAnchor": {
+        "name": "Anchoring position of the HUD status icon",
+        "hint": "Base position relative to your screen (which corner?). May be fine-tuned by offset settings further below."
+      },
+      "hudIconAnchorOptions": {
+        "topleft": "top-left (default)",
+        "topright": "top-right",
+        "bottomleft": "bottom-left",
+        "bottomright": "bottom-right"
+      },
+      "hudIconOffsetX": {
+        "name": "Horizontal offset (pixels) of the HUD status icon",
+        "hint": "Relative adaption of the Left-Right position (default: 100)."
+      },
+      "hudIconOffsetY": {
+        "name": " Vertical offset (pixels) of the HUD status icon",
+        "hint": "Relative adaption of the Top-Down position (default: 50)."
       },
       "keybindingNames": {
         "toggle": "Lock The Sheets! (on/off)",

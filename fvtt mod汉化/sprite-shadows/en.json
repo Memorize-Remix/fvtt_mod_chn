@@ -1,25 +1,23 @@
 {
-  "TOKEN": {
-    "TABS": {
-      "shadows": "Shadows"
-    }
-  },
-  "TILE": {
-    "TABS": {
-      "shadows": "Shadows"
-    }
-  },
   "SPRITESHADOWS": {
+    "TITLE": "Sprite Shadows",
     "ERRORS": {
-      "TEXTUREGEN": "Unaable to generate shadow texture"
+      "TEXTUREGEN": "Unaable to generate shadow texture",
+      "UNKNOWNACTORAPP": "Unknown ActorSheet application version",
+      "VISIONREFRESHPERFORMANCE": "Refreshing visibility took {duration}ms"
     },
     "SETTINGS": {
       "ADJUSTMENTS": {
+        "ANCHOR": "Anchor",
+        "ANCHORTOOLTIP": "Auto-set anchor",
         "DRAGPOS": "Click and drag to fine-tune position",
         "DRAGSIZE": "Click and drag to fine-tune size",
+        "DRAGHINT": "To move and resize the shadow, click and drag it or its control handle directly on the canvas.",
         "HEIGHT": "Height",
         "HINT": "Fine tune the position and size of the shadow.",
         "LABEL": "Adjustments",
+        "POSITION": "Position",
+        "SIZE": "Size",
         "WIDTH": "Width",
         "X": "X",
         "Y": "Y"
@@ -29,6 +27,10 @@
         "CENTER": "Center",
         "HINT": "Where to align the shadow relative to its token.",
         "LABEL": "Alignment"
+      },
+      "INJECTCONFIGTAB": {
+        "LABEL": "Add tab to configuration applications",
+        "HINT": "When enabled, will add a tab for shadow settings to the tile, token, and scene configuration applications"
       },
       "ALPHA": {
         "HINT": "Opoacity of the shadow",
@@ -51,6 +53,10 @@
         "HINT": "Color of the shadow.",
         "LABEL": "Color"
       },
+      "CONFIGSOURCE": {
+        "HINT": "Where to store the shadow configuration for this token",
+        "LABEL": "Configuration Source"
+      },
       "ELEVATIONADJUST": {
         "HINT": "If enabled, will move the shadow based on the token's elevation.",
         "LABEL": "Adjust for Elevation"
@@ -71,6 +77,20 @@
         "HINT": "Export JSON configuration",
         "LABEL": "Export Configuration"
       },
+      "GLOBAL": {
+        "HINT": "Global settings to be applied by default to all tokens and tiles.",
+        "LABEL": "Global Settings"
+      },
+      "SCENE": {
+        "TITLE": "Scene Settings"
+      },
+      "TOKEN": {
+        "TITLE": "Token Settings"
+      },
+      "TILE": {
+        "TITLE": "Tile Settings"
+      },
+      "ID": "ID",
       "IGNORESAADJUSTMENTS": {
         "HINT": "If enabled, will ignore mesh adjustments configured by Sprite Animations.",
         "LABEL": "Ignore Sprite Animations Adjustments"
@@ -95,15 +115,35 @@
         "HINT": "Load current settings from this token",
         "LABEL": "Load From Token"
       },
+      "THRESHOLD": {
+        "LABEL": "Alpha Cut-off",
+        "HINT": "Discard pixels with an alpha below this value when creating stencil shadows"
+      },
+      "NAME": "Name",
+      "REMOVE": {
+        "MESSAGE": "Are you sure you wish to remove {name}?<br>This cannot be undone.",
+        "TITLE": "Remove Stencil Shadow"
+      },
       "ROTATION": {
         "HINT": "Angle by which to rotate the shadow",
         "LABEL": "Rotation"
+      },
+      "ROTATEWITHTOKEN": {
+        "LABEL": "Rotate With Placeable",
+        "HINT": "Enable to automatically rotate this shadow when its placeable rotates."
       },
       "SKEW": {
         "HINT": "The amount by which to skew this shadow, to simulate projection angle.",
         "LABEL": "Skew Amount"
       },
+      "SOURCE": {
+        "GLOBAL": "Global"
+      },
       "STENCIL": {
+        "ENABLE": {
+          "HINT": "Toggle this shadow on or off.",
+          "LABEL": "Enable Shadow"
+        },
         "HINT": "A faux-3d shadow based on the token's texture.",
         "LABEL": "Stencil Shadow"
       },
@@ -111,13 +151,22 @@
         "HINT": "The image to use for the shape of the stencil shadow.",
         "LABEL": "Image"
       },
+      "TABS": {
+        "APPEARANCE": "Appearance",
+        "BASICS": "Basics",
+        "BLOB": "Blob Shadow",
+        "STENCIL": "Stencil Shadows"
+      },
       "TOKENOVERRIDE": {
         "HINT": "If enabled, will store shadow settings directly on this token rather than the actor.",
         "LABEL": "Use Token Overrides"
       },
       "TOOLTIPS": {
+        "ADDSTENCIL": "Add Stencil Shadow",
+        "EDITSTENCIL": "Edit {name}",
         "EXPORT": "Export the current configuration as JSON",
-        "IMPORT": "Import a JSON configuration"
+        "IMPORT": "Import a JSON configuration",
+        "REMOVESTENCIL": "Remove {name}"
       },
       "TYPE": {
         "BLOB": "Blob",
@@ -128,6 +177,23 @@
       "USEIMAGE": {
         "HINT": "When configured, will use a separate image for the shape of the stencil shadow.\nNote: If you are using the <a href='https://foundryvtt.com/packages/sprite-animations'>Sprite Animations</a> module, this setting will disable integration with it.",
         "LABEL": "Use Image for Shape"
+      }
+    }
+  },
+  "TOKEN": {
+    "TABS": {
+      "shadows": "Shadows"
+    }
+  },
+  "TILE": {
+    "TABS": {
+      "shadows": "Shadows"
+    }
+  },
+  "SCENE": {
+    "TABS": {
+      "SHEET": {
+        "shadows": "Shadows"
       }
     }
   }

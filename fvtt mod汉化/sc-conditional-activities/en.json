@@ -6,10 +6,26 @@
       "Hint": "Use JavaScript. The activity is available only when the script returns true.",
       "Variables": "Available variables: activity, activityType, item, actor, user, usage, dialog, message, rollData, source, getProperty, hasProperty, deepClone, game.",
       "Placeholder": "Example: return actor?.system?.attributes?.hp?.value > 0;",
+      "WarningLabel": "Warning message",
+      "WarningHint": "Shown when the condition returns false. Leave blank to use the default warning.",
+      "WarningTooltip": "Optional. If left blank, Conditional Activities uses the default warning text.",
+      "WarningPlaceholder": "Example: You must be raging to use this ability.",
+      "DisableWarningLabel": "Disable warning message",
+      "DisableWarningHint": "Blocks the activity without showing the warning notification when the condition returns false.",
+      "DisableWarningTooltip": "Condition errors still warn normally so invalid scripts are easier to spot.",
+      "BadgeLabel": "Locked badge label",
+      "BadgeHint": "Single-line label shown on locked activities. Leave blank to use the default badge.",
+      "BadgeTooltip": "Optional. Maximum 36 characters. If left blank, Conditional Activities uses the default badge label.",
+      "BadgePlaceholder": "Example: Requires Essence",
+      "CharactersUsed": "characters",
+      "Preview": "Preview",
+      "PreviewBadge": "Badge",
+      "PreviewWarning": "Warning",
       "Wiki": "Open wiki",
       "Invalid": "This condition has invalid code."
     },
     "Badge": {
+      "ColumnHeader": "Status",
       "NotAvailable": "Not available",
       "ConditionError": "Condition error"
     },
@@ -18,6 +34,10 @@
       "ConditionError": "This activity's condition could not be evaluated."
     },
     "Settings": {
+      "HideUnavailableActivityChoices": {
+        "Name": "Hide unavailable activities in the choice dialog",
+        "Hint": "When enabled, activities blocked by conditions are removed from the activity choice dialog."
+      },
       "SupportMenu": {
         "Name": "Support the developer",
         "Label": "Patreon support",

@@ -142,6 +142,13 @@
   "midi-qol.ConfigButtons": "Roll Dialog",
   "midi-qol.ConfigTitle": "Midi-QOL Configuration",
   "midi-qol.WorkflowSettings": "Workflow Settings",
+  "midi-qol.ActivitySheetTabs": {
+    "modConditions": "Conditions",
+    "workflowSettings": "Workflow",
+    "activityManagement": "Activities",
+    "overtime": "OverTime",
+    "activityMacro": "Macro"
+  },
   "midi-qol.CheckSaveText.Name": "Search item description",
   "midi-qol.CheckSaveText.Hint": "Search item description for save type - 'half as much damage' and if present spell does 1/2 damage on save. If unchecked assume a save does default save modifier damage",
   "midi-qol.Save": "Save Settings",
@@ -379,6 +386,7 @@
     "detailsDSN": "Roll Formula but show DSN roll",
     "details": "Roll Formula",
     "d20Only": "Show attack D20 + Damage total",
+    "d20DamageDSN": "Show attack D20 + Damage total + Damage DSN",
     "hitDamage": "Show Hit/Miss + damage total",
     "hitCriticalDamage": "Show Hit/Miss/Critical/Fumble + damage total",
     "attackTotalOnly": "Show the attack roll total only",
@@ -389,11 +397,58 @@
       "detailsDSN": "Hide the roll formulas but still roll DSN dice so players see the animation.",
       "details": "Hide the roll formula and don't show DSN dice.",
       "d20Only": "Show the attack d20 roll and damage total only.",
+      "d20DamageDSN": "Show the attack d20 roll and damage total, and show DSN animation for the damage dice.",
       "hitDamage": "Show hit/miss plus the damage total.",
       "hitCriticalDamage": "Show hit/miss/critical/fumble plus the damage total.",
       "attackTotalOnly": "Show the attack roll total only.",
       "d20AttackOnly": "Show the d20 attack dice only.",
       "all": "Hide all roll details from the players."
+    }
+  },
+  "midi-qol.GMAttackDisplay.Name": "GM Attack Roll Display",
+  "midi-qol.GMAttackDisplay.Hint": "What players see for GM attack rolls.",
+  "midi-qol.gmAttackDisplayOptions": {
+    "full": "Full Roll",
+    "hideFormula": "Hide Formula",
+    "d20Only": "D20 Only",
+    "attackTotal": "Attack Total Only",
+    "hitMiss": "Hit/Miss Only",
+    "hitMissCrit": "Hit/Miss/Critical/Fumble",
+    "hidden": "Hidden",
+    "expandedHints": {
+      "full": "Players see the complete attack roll including formula and dice breakdown.",
+      "hideFormula": "Players see the roll result but not the formula.",
+      "d20Only": "Players see only the d20 result.",
+      "attackTotal": "Players see only the attack total.",
+      "hitMiss": "Players see only whether the attack hit or missed.",
+      "hitMissCrit": "Players see hit/miss with critical/fumble distinction.",
+      "hidden": "Players see no attack roll information."
+    }
+  },
+  "midi-qol.GMDamageDisplay.Name": "GM Damage Roll Display",
+  "midi-qol.GMDamageDisplay.Hint": "What players see for GM damage rolls.",
+  "midi-qol.gmDamageDisplayOptions": {
+    "full": "Full Roll",
+    "totalOnly": "Damage Total Only",
+    "hidden": "Hidden",
+    "expandedHints": {
+      "full": "Players see the complete damage roll including formula and dice breakdown.",
+      "totalOnly": "Players see only the damage total.",
+      "hidden": "Players see no damage roll information."
+    }
+  },
+  "midi-qol.GMAttackDsn.Name": "Attack Roll DSN",
+  "midi-qol.GMAttackDsn.Hint": "Dice So Nice animation for GM attack rolls as seen by players.",
+  "midi-qol.GMDamageDsn.Name": "Damage Roll DSN",
+  "midi-qol.GMDamageDsn.Hint": "Dice So Nice animation for GM damage rolls as seen by players.",
+  "midi-qol.gmDsnDisplayOptions": {
+    "show": "Show Dice",
+    "ghost": "Ghost Dice",
+    "none": "No Dice",
+    "expandedHints": {
+      "show": "Players see the full DSN dice animation.",
+      "ghost": "Players see translucent ghost dice.",
+      "none": "No DSN dice animation shown to players."
     }
   },
   "midi-qol.RollOtherDamageOptions": {
@@ -403,8 +458,9 @@
     "ifSave": "Condition True & Save present"
   },
   "midi-qol.potion": "Potion",
-  "midi-qol.HideRollDetails.Name": "GM Roll details hiding",
-  "midi-qol.HideRollDetails.Hint": "Choose how much of GM rolls to hide/show to players",
+  "midi-qol.GMRollHiding": "GM Roll Hiding",
+  "midi-qol.HideRollDetails.Name": "GM Roll details hiding (Legacy)",
+  "midi-qol.HideRollDetails.Hint": "Deprecated — use the granular settings below instead.",
   "midi-qol.DiceRolled": "<div>Rolled</div>",
   "midi-qol.ForceHideRoll.Name": "Really Hide private/blind/self-rolls",
   "midi-qol.ForceHideRoll.Hint": "Display nothing to non-recipients for private/blind/self-rolls. Thanks to felix.mueller.86@web.de",
@@ -894,6 +950,8 @@
   "midi-qol.FlankingBonus.Hint": "When flanking is detected, grant advantage (default) or reduce the target's effective AC by a fixed amount.",
   "midi-qol.SharpShooter": "Sharpshooter",
   "midi-qol.SpellSniper": "Spell Sniper",
+  "midi-qol.FlankingRequiresVisibility.Name": "Flanking requires target can sense flanker",
+  "midi-qol.FlankingRequiresVisibility.Hint": "When enabled, an ally only counts as a flanker if the target can sense them. Invisible or hidden allies won't contribute to flanking.",
   "midi-qol.ShowFlankingHighlight.Name": "Show Flanking Positions",
   "midi-qol.ShowFlankingHighlight.Hint": "Highlight grid cells where an ally would create flanking against your current target.",
   "midi-qol.FlankingBonusOptions.advantage": "Advantage",
@@ -1104,6 +1162,7 @@
   "midi-qol.emanationTemplate.counted.one": "Emanation No Template",
   "midi-qol.emanationTemplate.counted.other": "Emanation No Template",
   "midi-qol.AddFakeDice.Name": "Add fake dice to GM Dice So Nice rolls",
+  "midi-qol.AddFakeDice.Hint": "Adds random extra dice to the DSN animation so players can't count dice to deduce modifiers.",
   "midi-qol.MidiFieldsTab.Name": "Display Midi item fields in a separate tab",
   "midi-qol.UndoChatColor.Name": "Undo Chat Cards Color",
   "midi-qol.UndoChatColor.Hint": "Delete means remove the chat card on undo. Otherwise, the undone chats are recoloured",
@@ -1288,7 +1347,7 @@
           "label": "Roll as",
           "hint": "Roll the activity as if owned by..."
         },
-		"triggeredActivityConsume": {
+        "triggeredActivityConsume": {
           "label": "Consume Resources",
           "hint": "Consume spell slots and resources when the triggered activity runs"
         },
@@ -2011,7 +2070,7 @@
       "name": "Critical Hit Threshold",
       "description": ""
     },
-	"flags.midi-qol.bloodsense": {
+    "flags.midi-qol.bloodsense": {
       "name": "Blood Sense (Range)",
       "description": "Blindsight within this range for wounded creatures (missing any HP). Negates advantage from not being able to detect the target if it is within the specified range. Does not affect the tokens actual vision"
     },

@@ -15,6 +15,8 @@
 			"keypressInfo1": "Switched ",
 			"keypressInfo2": "Mode to ",
 			"avInputPlaceholder": "Enter text or search",
+			"customGroup": "Custom",
+			"triggerGroup": "Trigger",
 			"iconPlaceholder": "Icon",
 			"true": "True",
 			"false": "False",
@@ -24,32 +26,130 @@
 			"pauseCameraTracking": "Pause Camera Tracking",
 			"manualOBSWarning": "You are running in OBS Mode. If you want to return to normal, press SHIFT + ALT + CONTROL + O (Default) or your custom keybind. Then reload the page.",
 			"disableOBSMode": "Disable OBS Mode",
-			"disableOBSModeHint": "Turns off the manual OBS Mode setting if you are stuck in it."
+			"disableOBSModeHint": "Turns off the manual OBS Mode setting if you are stuck in it.",
+			"toggleTokenTracking": "Toggle Token Tracking",
+			"toggleTokenTrackingHint": "Toggles the camera tracking state for the hovered or controlled tokens when using manual tracking.",
+			"tokenTrackingOn": "Now tracking {names}",
+			"tokenTrackingOff": "No longer tracking {names}",
+			"trackToken": "Track a Specific Token",
+			"levelPolicyRelative": "Follow the tracked tokens",
+			"levelPolicyToken": "Follow one token's floor",
+			"levelPolicyPinned": "Stay on a chosen floor",
+			"levelRelativeLowest": "Lowest occupied floor",
+			"levelRelativeMiddle": "Middle occupied floor",
+			"levelRelativeHighest": "Highest occupied floor"
 		},
 		"applications": {
-			"rollOverlayEditor": {
-				"name": "Roll Overlay Editor",
-				"test": "Test",
-				"preRollImage": "Pre Roll Image",
-				"rollImage": "Roll Image",
-				"postRollImage": "Post Roll Image",
-				"imageUrl": "Image URL",
-				"foregroundImageUrl": "Foreground Image URL",
-				"backgroundImageUrl": "Background Image URL",
-				"delay": "Delay (ms)",
-				"fadeIn": "Fade In (ms)",
-				"duration": "Duration (ms)",
-				"fadeOut": "Fade Out (ms)"
+			"componentEditors": {
+				"valuePath": "Value path",
+				"maxPath": "Max path",
+				"iconWhenTrue": "Icon when true",
+				"iconWhenFalse": "Icon when false",
+				"imageWhenTrue": "Image when true",
+				"imageWhenFalse": "Image when false",
+				"filledIcon": "Filled icon",
+				"emptyIcon": "Empty icon",
+				"filledImage": "Filled image",
+				"emptyImage": "Empty image",
+				"dataDriven": "Data-driven",
+				"staticPlaceholder": "Type a literal value",
+				"staticImagePlaceholder": "Image URL or path",
+				"triggerNotActive": "This overlay has no transitions yet — add one in the Animation tab so trigger payloads can drive this value."
 			},
 			"director": {
 				"name": "Director",
 				"icTypeHeader": "In Combat Type",
 				"oocTypeHeader": "Out of Combat Type",
-				"canvasOptionsHeader": "Canvas Options",
 				"trackedPlayerHeader": "Tracked Player",
-				"obsUserCommands": "OBS User Commands",
+				"actionsHeader": "Actions",
+				"levelsHeader": "Scene Levels",
+				"levelChoice": "Scene Level Choice",
+				"levelSplit": "Floor When Split",
+				"levelFollowToken": "Follow token",
+				"levelFollowTokenShort": "Follow",
+				"levelPinned": "Pinned floor",
+				"levelPinnedShort": "Floor",
+				"trackedToken": "Tracked token",
+				"trackedTokenShort": "Track",
+				"levelChoiceShort": "Choice",
+				"levelSplitShort": "If split",
+				"levelNoSelection": "— none —",
+				"levelBlocked": "The OBS client cannot show {level} — it has no token there to see by.",
+				"levelBlockedShort": "Can't show {level}",
 				"forceOpenSettingsForOBSUser": "Force Open Settings Menu for OBS User",
-				"noGMWarning": "No GM is currently logged in, director settings cannot be changed"
+				"noGMWarning": "No GM is currently logged in, director settings cannot be changed",
+				"cameraSmoothingHeader": "Camera Smoothing",
+				"easing": "Easing",
+				"duration": "Duration",
+				"easingDirect": "Direct (no easing)",
+				"easingLinear": "Linear",
+				"easingEaseOut": "Ease Out (default)",
+				"easingEaseInOut": "Ease In / Out (cinematic)",
+				"easingEaseOutCosine": "Ease Out Cosine",
+				"easingEaseInOutCosine": "Ease In / Out Cosine",
+				"trackingModeHeader": "Tracking Mode",
+				"trackingModeRaw": "Direct",
+				"trackingModeSmooth": "Smooth",
+				"trackingModeDragRelease": "On Release",
+				"trackingModeRawTip": "Rate-limited updates with no smoothing. Lowest latency.",
+				"trackingModeSmoothTip": "Moving-average smoothing of the GM's pan path.",
+				"trackingModeDragReleaseTip": "Hold updates until the GM stops panning, then send a single final position.",
+				"coDMsHeader": "Co-DMs",
+				"coDMsEmpty": "Only you have GM permission in this world. The Co-DMs tab will let you hand camera control to other GMs once at least one more user is given the Gamemaster or Assistant role.",
+				"codmInControl": "in control",
+				"codmOffline": "offline",
+				"takeControl": "Take Control",
+				"tabControls": "Controls",
+				"tabCoDMs": "Co-DMs",
+				"tabPresets": "Presets",
+				"presetAdd": "Add preset",
+				"presetAddStatic": "Add static",
+				"presetAddAnimation": "Add animation",
+				"presetKindStatic": "Static preset",
+				"presetKindAnimation": "Animation preset",
+				"presetNotFound": "Preset not found.",
+				"presetPlay": "Play",
+				"presetPanTo": "Pan to",
+				"presetApply": "Apply (jump camera here)",
+				"presetUpdate": "Update to current camera",
+				"presetDelete": "Delete preset",
+				"presetsNoScene": "No scene loaded",
+				"presetsEmpty": "No camera presets saved for this scene yet. Pan and zoom your camera, then click Add preset to save it.",
+				"keyframeEditor": {
+					"convert": "Convert to keyframed sequence",
+					"total": "Total",
+					"duration": "Duration (ms)",
+					"durationTip": "Total length of the animation timeline. Leave 0 for auto.",
+					"loop": "Loop",
+					"loopNone": "None",
+					"loopRestart": "Restart",
+					"loopPingPong": "Ping-pong",
+					"play": "Play",
+					"stop": "Stop",
+					"record": "Record",
+					"recordStop": "Stop recording",
+					"smoothing": "Smoothing",
+					"smoothingTip": "Moving-average window applied on stop to remove hand-jitter (1 = none, 15 = max).",
+					"zoomIn": "Zoom in (Ctrl+wheel)",
+					"zoomOut": "Zoom out (Ctrl+wheel)",
+					"zoomReset": "Reset zoom",
+					"close": "Close editor",
+					"expandLabel": "Edit keyframes",
+					"addAtPlayhead": "Add keyframe at playhead",
+					"captureFromViewport": "Capture from current viewport",
+					"deleteKeyframe": "Delete keyframe",
+					"selectedHeader": "Selected keyframe",
+					"timeMs": "Time (ms)",
+					"easing": "Easing",
+					"keyframes": "Keyframes",
+					"scale": "Scale",
+					"selectHint": "Pick a keyframe to edit it.",
+					"prevFrame": "Previous frame",
+					"nextFrame": "Next frame",
+					"prevKeyframe": "Previous keyframe",
+					"nextKeyframe": "Next keyframe",
+					"noKeyframes": "This preset has no keyframes yet."
+				}
 			},
 			"obsRemote": {
 				"name": "OBS Remote Settings",
@@ -60,17 +160,22 @@
 				"enableSource": "Enable Source",
 				"disableSource": "Disable Source",
 				"vttSceneLabel": "VTT Scene Name",
-				"vttScenePlaceholder": "Input name or drop a scene here",
 				"onLoad": "Load",
 				"onCombatStart": "Combat Start",
 				"onCombatEnd": "Combat End",
 				"onPause": "Pause",
 				"onUnpause": "Unpause",
 				"onSceneLoad": "Scene Load",
-				"onStopStreaming": "Stop Streaming"
+				"onStopStreaming": "Stop Streaming",
+				"instance": "Configured",
+				"addInstance": "Add another configured instance",
+				"removeInstance": "Remove this instance",
+				"addAction": "Add OBS action",
+				"noInstancesYet": "No configured instances yet. Click + to add one.",
+				"tabConnection": "Connection",
+				"tabEvents": "Events"
 			},
 			"obsWebsocket": {
-				"name": "OBS Websocket Settings",
 				"urlLabel": "URL",
 				"portLabel": "Port",
 				"passwordLabel": "Password",
@@ -82,18 +187,241 @@
 				"name": "Actor Selection",
 				"searchPlaceholder": "Search",
 				"closeButton": "Close",
-				"resetButton": "Reset"
+				"resetButton": "Reset",
+				"userTokensHeader": "User Tokens",
+				"editCSS": "Edit per-actor CSS"
+			},
+			"globalCSSEditor": {
+				"name": "Global Overlay CSS",
+				"menuLabel": "Global CSS",
+				"saveButton": "Save & Close",
+				"intro": "Global CSS is applied to every overlay obs-utils renders. Use selectors like .obs-utils to scope to overlay containers, #actor{...} for a specific actor, or progress, .my-class etc. for elements."
+			},
+			"overlayPreview": {
+				"name": "Overlay Preview",
+				"chatDeadzoneLabel": "Chat Deadzone",
+				"toggleBboxes": "Bounding boxes"
 			},
 			"overlayEditor": {
 				"name": "Overlay Editor",
-				"addButton": "Add New Component",
-				"editStyleButton": "Edit Style",
+				"animationEditor": {
+					"header": "Animation",
+					"addAnimation": "Add animation",
+					"reEntryLabel": "Re-entry policy",
+					"reEntry": {
+						"restart": "Restart",
+						"replace": "Replace",
+						"queue": "Queue",
+						"ignore": "Ignore",
+						"extend": "Extend"
+					},
+					"stateDefault": "Default",
+					"addState": "Add state",
+					"removeState": "Remove state",
+					"entrance": "Entrance",
+					"steady": "Steady",
+					"exit": "Exit",
+					"defineEntrance": "+ Define entrance",
+					"defineSteady": "+ Define steady",
+					"defineExit": "+ Define exit",
+					"duration": "Duration (ms)",
+					"loop": "Loop",
+					"loopNone": "None",
+					"loopRestart": "Restart",
+					"loopPingPong": "Ping-pong",
+					"loopInfinite": "Infinite",
+					"ease": "Easing",
+					"keyframeAt": "Keyframe at",
+					"offset": "Offset (0..1)",
+					"transform": "Transform",
+					"opacity": "Opacity",
+					"filter": "Filter",
+					"customProperty": "Custom property",
+					"propertyName": "Property name",
+					"propertyValue": "Value",
+					"addProperty": "Add property",
+					"addKeyframe": "+ Add keyframe at playhead",
+					"deleteKeyframe": "Delete keyframe",
+					"testState": "Test state",
+					"noComponent": "Select a component to edit its animation."
+				},
+				"triggerSection": {
+					"header": "Trigger",
+					"enable": "Event-driven",
+					"event": "Event",
+					"conditions": "Conditions",
+					"conditionEmpty": "(any)",
+					"clearCondition": "Clear",
+					"duration": "Duration (ms, -1 = sticky)",
+					"showMs": "Show animation (ms)",
+					"hideMs": "Hide animation (ms)",
+					"transition": "Transition",
+					"transitionFade": "Fade",
+					"transitionSlideUp": "Slide up",
+					"transitionSlideDown": "Slide down",
+					"transitionScale": "Scale",
+					"transitionFlash": "Flash",
+					"test": "Test",
+					"testHint": "Fires the trigger with the current conditions as payload"
+				},
+				"previewActorLabel": "Preview as",
+				"showFullPreview": "Full Preview",
 				"removeButton": "Remove Overlay",
 				"removeComponentButton": "Remove Component",
 				"importButton": "Import",
 				"exportButton": "Export",
+				"importStarterButton": "Import starter overlays",
+				"starterConfirm": "Add {count} starter overlay(s) to your world?",
+				"starterImported": "Imported {count} starter overlay(s).",
+				"starterEmpty": "No starter overlays are available.",
 				"addOverlayButton": "Add New Overlay",
+				"previousComponent": "Previous component",
+				"nextComponent": "Next component",
+				"componentNavLabel": "Component {current} of {total}",
+				"componentType": "Component type",
 				"closeButton": "Close",
+				"layersHeader": "Overlays",
+				"componentHeader": "Component",
+				"layerName": "Name",
+				"layerType": "Type",
+				"hideLayer": "Hide overlay",
+				"showLayer": "Show overlay",
+				"previewActorAll": "All actors",
+				"emptyLayers": "No overlays yet. Click + to add one.",
+				"noLayerSelected": "Select an overlay to edit its properties.",
+				"selectLayerHint": "Select a layer to start editing.",
+				"selectComponentHint": "Click a component on the canvas or add one from the panel.",
+				"overlaySize": "Size",
+				"sizeHint": "For backgrounds, add an Image component sized to the overlay.",
+				"tileByLabel": "Tile by",
+				"tileByHint": "Actors: one copy per bound actor. Players: one copy per active player. Once: a single instance regardless of context.",
+				"tileByActors": "Actors",
+				"tileByPlayers": "Players",
+				"tileByUsers": "Users (incl. GM)",
+				"tileByOnce": "Once (singleton)",
+				"canvasWidth": "Canvas width (px)",
+				"canvasHeight": "Canvas height (px)",
+				"customCSS": "Custom CSS for this overlay",
+				"tileBy": {
+					"actors": "Actors",
+					"players": "Players",
+					"once": "Once (singleton)"
+				},
+				"backgroundImage": "Background Image",
+				"componentData": "Data",
+				"componentsHeader": "Components",
+				"drawOrderHint": "(top of list = drawn first)",
+				"dragReorder": "Drag to reorder",
+				"emptyComponents": "No components yet. Add one above.",
+				"simpleIntro": "Simple overlays render components inline. Reorder to change layout order.",
+				"selectComponentHintSimple": "Pick a component from the list in the Overlay tab.",
+				"unknownType": "Unknown overlay type.",
+				"addComponent": "Add Component",
+				"tabLayer": "Overlay",
+				"tabComponent": "Component",
+				"tabStyle": "Style",
+				"styleNoTarget": "Select a component or overlay to style it.",
+				"stylingTarget": "Styling",
+				"easyHint": "Quick visual tweaks. These apply as inline CSS to the element.",
+				"advancedHint": "Full CSS with selectors, pseudo-elements, nesting. Rules are auto-scoped to this target.",
+				"previewReadOnly": "Read-only preview",
+				"emptyTitle": "No overlays yet",
+				"emptyDescription": "Overlays are the building blocks of what shows up on your stream. Pick a type to get started — you can always add more.",
+				"overviewCrumb": "Overview",
+				"overviewListTitle": "Overlays",
+				"unnamedOverlay": "Unnamed overlay",
+				"modeSettings": "Settings",
+				"modeLayout": "Layout",
+				"modeAnimation": "Animation",
+				"modePreview": "Preview",
+				"menuBlank": "Blank",
+				"menuFromTemplate": "From template",
+				"animationStub": "Animation editor coming soon.",
+				"previewStub": "Preview workspace coming soon.",
+				"animation": {
+					"intro": "Animation is what makes overlays react. Add tracks and connect them with triggers to bring this overlay to life.",
+					"start": "Set up animation",
+					"tracks": "Tracks",
+					"addTrack": "Add track",
+					"removeTrack": "Remove track",
+					"initialTrack": "Initial track (mounted by default)",
+					"useAsInitial": "Use as initial track",
+					"initialShort": "Initial",
+					"kfSelectHint": "Click a keyframe to edit it.",
+					"behavior": "Behavior",
+					"behaviorStatic": "Static (no playback)",
+					"behaviorLooping": "Loop",
+					"behaviorTransitionOnEnd": "Transition to another track on end",
+					"duration": "Duration (ms)",
+					"endTarget": "Go to track",
+					"endTargetTime": "At time (ms)",
+					"selectTrack": "Select a track to edit it.",
+					"playhead": "Playhead",
+					"addKeyframe": "Add keyframe at playhead",
+					"deleteKeyframe": "Delete keyframe",
+					"keyframe": "Keyframe",
+					"time": "Time (ms)",
+					"opacity": "Opacity",
+					"rotation": "Rotation (deg)",
+					"transitions": "Transitions",
+					"endOfTrack": "When track ends",
+					"deleteAnimation": "Remove animation",
+					"confirmDeleteAnimation": "Remove the entire animation from this overlay? Tracks, keyframes, and transitions will be discarded.",
+					"addTransition": "Add trigger response",
+					"removeTransition": "Remove trigger response",
+					"trigger": "When trigger fires",
+					"fromTrack": "From track",
+					"addZone": "Add condition",
+					"removeZone": "Remove condition",
+					"zoneStart": "If playhead ≥",
+					"zoneEnd": "and <",
+					"zoneDestination": "Then",
+					"zoneIgnore": "Do nothing",
+					"zoneGotoTrack": "Jump to track",
+					"zoneGotoTime": "starting at",
+					"testFire": "Test fire",
+					"noTriggersHint": "Triggers connect tracks. Add a second track first, then a transition that fires on an event.",
+					"livePreview": "Live preview",
+					"prevFrame": "Previous frame",
+					"nextFrame": "Next frame",
+					"prevKeyframe": "Previous keyframe",
+					"nextKeyframe": "Next keyframe"
+				},
+				"preview": {
+					"testFires": "Test fire",
+					"testFiresHint": "Fire any registered trigger to see how the overlays react.",
+					"noTriggers": "No triggers registered yet."
+				},
+				"templates": {
+					"heading": "Create a new overlay",
+					"hpBar": {
+						"label": "HP Bar",
+						"description": "Progress bar bound to actor HP, one per actor."
+					},
+					"namePlate": {
+						"label": "Name plate",
+						"description": "Centered actor name label, one per actor."
+					},
+					"statusRow": {
+						"label": "Status icons",
+						"description": "Inline row of icons. Bind each to a condition flag."
+					},
+					"customCanvas": {
+						"label": "Custom canvas",
+						"description": "Blank free-position canvas. Add components yourself."
+					},
+					"customInline": {
+						"label": "Custom inline",
+						"description": "Blank inline-flow overlay. Components flow left-to-right."
+					},
+					"starter": {
+						"description": "Bundled by the active system."
+					}
+				},
+				"toggleEnabled": "Toggle visibility",
+				"removeLayer": "Remove overlay",
+				"manageActors": "Manage Actors",
+				"confirmTypeChange": "Changing overlay type may discard position or rendering data for existing components. Continue?",
 				"importDialog": {
 					"title": "Import Data: Overlays",
 					"hint1": "You are about to import an exported Overlay configuration. Please ensure that it was exported in the same system or AV Overlays may not work.",
@@ -103,13 +431,24 @@
 					"fileError": "You did not upload a data file",
 					"versionError": "Version unsupported",
 					"formatError": "Imported file is not an OBS Utils Overlay Export",
-					"cancelButton": "Cancel"
+					"cancelButton": "Cancel",
+					"unknownType": "Unrecognized file. Expected a v1/v2 overlay export or a .vmoverlay bundle.",
+					"bundleImported": "Imported \"{name}\" — {count} overlay(s) added.",
+					"bundleImageWarning": "Some bundle images failed to upload: {names}",
+					"bundleValidationFailed": "Bundle is malformed: {reason}"
 				},
 				"exportDialog": {
 					"title": "Export your settings?",
 					"content": "Do you want to export your Overlay Settings?",
-					"yesButton": "Yes",
-					"noButton": "No"
+					"yesButton": "JSON",
+					"bundleButton": "Bundle",
+					"noButton": "Cancel",
+					"bundleFormTitle": "Export as Bundle",
+					"bundleId": "Bundle ID (slug)",
+					"bundleName": "Display name",
+					"bundleAuthor": "Author",
+					"bundleLicense": "License (SPDX)",
+					"bundleUrl": "URL (optional)"
 				}
 			},
 			"styleEditor": {
@@ -118,6 +457,11 @@
 					"simple": "Simple",
 					"advanced": "Advanced"
 				},
+				"groupTypography": "Typography",
+				"groupColor": "Color",
+				"groupLayout": "Layout & Spacing",
+				"groupBorder": "Border",
+				"groupImage": "Image",
 				"fontFamily": "Font family",
 				"fontSize": "Font size",
 				"fontWeight": "Font weight",
@@ -125,13 +469,19 @@
 				"backgroundColor": "Background color",
 				"width": "Width",
 				"height": "Height",
+				"display": "Display",
 				"padding": "Padding",
 				"margin": "Margin",
 				"textAlign": "Text align",
+				"verticalAlign": "Vertical align",
 				"lineHeight": "Line height",
 				"letterSpacing": "Letter spacing",
 				"border": "Border",
 				"borderRadius": "Border radius",
+				"objectFit": "Image fit",
+				"objectPosition": "Image position",
+				"preservedHeader": "Preserved CSS",
+				"preservedHint": "Rules outside the simple-mode field set are kept as-is and only visible in Advanced.",
 				"preservedExtras": "Additional preserved rules",
 				"clear": "Clear",
 				"submitButton": "Apply & Close"
@@ -139,54 +489,86 @@
 		},
 		"overlays": {
 			"plainText": {
-				"name": "Plain Text"
+				"name": "Text"
 			},
 			"fontAwesomeIcon": {
-				"name": "Font Awesome Icon"
+				"name": "Icon"
 			},
 			"booleanAVIcon": {
-				"name": "Boolean AV Icon"
+				"name": "Conditional Icon"
 			},
 			"booleanAVImage": {
-				"name": "Boolean AV Image"
+				"name": "Conditional Image"
 			},
 			"image": {
 				"name": "Image"
 			},
 			"multiIconAV": {
-				"name": "Multi Icon AV"
+				"name": "Icon Counter"
 			},
 			"multiImageAV": {
-				"name": "Multi Image AV"
+				"name": "Image Counter"
 			},
 			"progressBar": {
 				"name": "Progress Bar"
+			},
+			"simpleOverlay": {
+				"name": "Inline"
+			},
+			"wysiwygOverlay": {
+				"name": "Canvas"
+			}
+		},
+		"triggers": {
+			"core": {
+				"onPlayerRoll": {
+					"name": "Player Roll",
+					"fields": {
+						"actor": "Rolling Actor",
+						"roll": "Roll Object",
+						"total": "Roll Total",
+						"formula": "Roll Formula",
+						"isCritical": "Is Critical (Nat 20)",
+						"isFumble": "Is Fumble (Nat 1)"
+					}
+				},
+				"onChatMessage": {
+					"name": "Chat Message",
+					"fields": {
+						"content": "Message Content",
+						"speakerAlias": "Speaker Name"
+					}
+				}
 			}
 		},
 		"settings": {
 			"forceStreamPageOBSMode": {
-				"Name": "Force OBS Mode on Stream Page",
-				"Hint": "Forces the /stream output to be in OBS mode at all times"
+				"Name": "Force OBS Mode on /stream",
+				"Hint": "Always render overlays on the /stream page."
 			},
 			"obsMode": {
-				"Name": "OBS Mode",
-				"Hint": "Sets this browser as the OBS browser. Only enable this if you are not able to use a browser source"
+				"Name": "Pin This Browser to OBS Mode",
+				"Hint": "⚠ Locks THIS browser into OBS Mode on every tab until disabled. OBS browser sources autodetect — only use this for manual setups."
 			},
 			"obsModeUser": {
-				"Name": "OBS Mode User (Username)",
-				"Hint": "Sets this User to always be in OBS Mode, regardless of browser"
+				"Name": "Designate User as OBS Client",
+				"Hint": "Treat the selected user's browser as OBS — UI hidden, overlays rendered."
 			},
 			"obsModeGlobalDisable": {
-				"Name": "OBS View Global Disable",
-				"Hint": "This will turn off the OBS features for all clients, regardless of method"
+				"Name": "Disable OBS Mode for Everyone",
+				"Hint": "Kill switch. Disables OBS Mode on all clients. Use to recover a stuck browser."
 			},
-			"minScale": {
-				"Name": "Minimum Scale",
-				"Hint": "The lowest that the screen can zoom to"
+			"frameMargin": {
+				"Name": "Frame Margin",
+				"Hint": "At least this many tiles are kept between the tracked tokens and the edge of frame."
 			},
-			"maxScale": {
-				"Name": "Maximum Scale",
-				"Hint": "The highest that the screen can zoom to"
+			"closestView": {
+				"Name": "Closest View",
+				"Hint": "The camera will never show fewer than this many tiles across. Lower it to let the camera get closer."
+			},
+			"widestView": {
+				"Name": "Widest View",
+				"Hint": "The camera will never show more than this many tiles across. With canvas clamping on, the scene's own width is a further limit."
 			},
 			"defaultOutOfCombat": {
 				"Name": "Out Of Combat Mode",
@@ -207,17 +589,7 @@
 			"obsRemoteMenu": {
 				"Label": "Open Menu",
 				"Name": "OBS Remote Settings",
-				"Hint": "Configure the OBS Remote"
-			},
-			"obsWebsocketMenu": {
-				"Label": "Open Menu",
-				"Name": "OBS Websocket Settings",
-				"Hint": "Configure OBS Websocket"
-			},
-			"overlayActorSelect": {
-				"Label": "Open Menu",
-				"Name": "Overlay Actors",
-				"Hint": "Select the Actors for the Overlay"
+				"Hint": "Configure the OBS Websocket connection and event-driven actions"
 			},
 			"overlayEditor": {
 				"Label": "Open Editor",
@@ -228,14 +600,9 @@
 				"Name": "Enable OBS Websocket?",
 				"Hint": "If checked, OBS Websocket will be used for Remoting"
 			},
-      "allowWebsocketAPI": {
-        "Name": "Allow OBS Websocket API Access?",
-        "Hint": "If checked, other modules can access OBS Websocket directly"
-      },
-			"rollOverlayEditor": {
-				"Name": "Roll Overlay Editor",
-				"Hint": "Edit the Roll Overlay",
-				"Label": "Open Editor"
+			"allowWebsocketAPI": {
+				"Name": "Allow OBS Websocket API Access?",
+				"Hint": "If checked, other modules can access OBS Websocket directly"
 			},
 			"showAV": {
 				"Name": "Show Video Overlay?",
@@ -289,18 +656,14 @@
 				"Name": "Send OBS Mode Notifications to GM",
 				"Hint": "If enabled, notifications hidden in OBS view will be displayed in all connected GM clients"
 			},
-      "showChatNotificationsOnCanvas": {
-        "Name": "Display Chat Notifications in Game",
-        "Hint": "If enabled, chat message popups will be not be hidden from the in-game UI"
-      },
-	  "leftAlignChatNotifications": {
+			"showChatNotificationsOnCanvas": {
+				"Name": "Display Chat Notifications in Game",
+				"Hint": "If enabled, chat message popups will be not be hidden from the in-game UI"
+			},
+			"leftAlignChatNotifications": {
 				"Name": "Left Align Chat Notifications",
 				"Hint": "If enabled, chat message popups will be aligned to the left side of the screen"
-		},
-      "streamChatPopupStyle": {
-        "Name": "Notification-Style Chat Overlay",
-        "Hint": "If enabled, the chat on /stream will be displayed like the Notifications in the Game View"
-      },
+			},
 			"trackObserverTokens": {
 				"Name": "Track Observer Tokens",
 				"Hint": "If enabled, the Director will track tokens that the user has observer permission for, not just owned tokens"

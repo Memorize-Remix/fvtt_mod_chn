@@ -89,9 +89,20 @@
         "Name": "Show Passive Active Effects",
         "Hint": "When enabled, displays permanent/passive active effects (no duration) in addition to temporary effects"
       },
-	  "ShowFilters": {
+      "ShowFilters": {
         "Name": "Show Filter Icons",
         "Hint": "Display the spell slot and action type filter icons above the hotbar"
+      },
+      "ShowPortrait": {
+        "Name": "Show Portrait",
+        "Hint": "Display the character portrait, HP overlay, and portrait data badges. When disabled, the character info button (d20) remains available."
+      },
+      "BorderPortraitPreferences": {
+        "Name": "Portrait Border",
+        "Hint": "Decorative frame around the HUD portrait image.",
+        "None": "None",
+        "Simple": "Simple",
+        "Styled": "Styled (round ring)"
       },
       "ShowPortraitHPControls": {
         "Name": "Show Portrait HP Controls",
@@ -125,7 +136,9 @@
         "MenuName": "Foundry UI",
         "MenuLabel": "Foundry UI Settings",
         "MenuHint": "Control macro bar visibility and tooltip timing",
-        "Legend": "Foundry UI"
+        "Legend": "Foundry UI",
+        "NameOnlyTooltipsName": "Name-Only Tooltips",
+        "NameOnlyTooltipsHint": "Use simple, native tooltips instead of rich system tooltips for items, spells, and features."
       },
       "GMHotbar": {
         "MenuTitle": "GM Hotbar",
@@ -172,7 +185,7 @@
         "Title": "Portrait Data Configuration",
         "MenuName": "Portrait Data",
         "MenuLabel": "Configure Portrait Data",
-        "MenuHint": "Display data badges around the portrait (AC, Speed, Hero Points, etc.)",
+        "MenuHint": "Display data badges around the portrait (AC, HP, speed, etc.)",
         "ShowName": "Show Portrait Data",
         "ShowHint": "Display data badges around the character portrait",
         "TopLeft": "Top Left",
@@ -187,6 +200,10 @@
         "SyncedToWorld": "Portrait data synced to world - all players will now use this configuration",
         "WorldConfigActive": "Your GM has set a world config",
         "UseMyOwnConfig": "Use my own config instead"
+      },
+      "AutoPopulate": {
+        "Options": "Options",
+        "HotbarGrid": "Hotbar Grid {number}"
       }
     },
     "Controls": {
@@ -196,7 +213,34 @@
         "DeselectToken": "Deselecting Token",
         "Opacity": "Opacity",
         "DragDrop": "Drag & Drop"
+      },
+      "GMToggle": {
+        "Tooltip": "Toggle between GM Hotbar and Token Hotbar"
+      },
+      "Row": {
+        "Add": "Add Row",
+        "Remove": "Remove Row"
+      },
+      "Settings": {
+        "Tooltip": "Settings<br>(Right-click for quick actions)",
+        "ResetLayout": "Reset Layout",
+        "ClearAllItems": "Clear All Items",
+        "SaveLayout": "Save Layout as Actor Default",
+        "ExportLayout": "Export Layout",
+        "ImportLayout": "Import Layout"
       }
+    },
+    "ContextMenu": {
+      "EditItem": "Edit Item",
+      "RemoveItem": "Remove Item",
+      "SortContainer": "Sort Container",
+      "ClearContainer": "Clear Container",
+      "AutoPopulateContainer": "Auto-Populate Container",
+      "AutoPopulateHint": "Manually populate this container with items from the actor. Note: NPCs auto-populate on token creation, but player characters should use this option."
+    },
+    "Filters": {
+      "LeftClick": "Left Click: Highlight matching items",
+      "RightClick": "Right Click: Mark as used"
     },
     "Tooltips": {
       "InfoButton": "Character Info<br><small>Right-click for Initiative</small>",
@@ -226,6 +270,61 @@
       "MinTargetsRequired": "Minimum {min} targets required",
       "IncreaseMax": "Increase Max Targets",
       "DecreaseMax": "Decrease Max Targets"
+    },
+    "Notifications": {
+      "AutoSortNotAvailable": "AutoSort not available",
+      "SortFailed": "Failed to sort container",
+      "AutoPopulateFailed": "Failed to auto-populate container",
+      "ClearContainerFailed": "Failed to clear container",
+      "CrossContainerMoveBlocked": "Cannot move items between the container and the hotbar",
+      "DuplicateItem": "This item already exists elsewhere in the HUD",
+      "DuplicateSpellSlot": "This spell slot is already in the HUD",
+      "DuplicateInHud": "This {label} is already in the HUD",
+      "NoActorSelected": "No actor selected",
+      "ItemOwnerMismatch": "This {type} belongs to {owner}, not {current}",
+      "MacroNotFound": "Macro not found",
+      "NoItemsToSort": "No items to sort",
+      "SortContainerFailed": "Failed to sort container. See console for details.",
+      "NoActorForAutoPopulate": "No actor available for auto-populate",
+      "NoItemTypesForAutoPopulate": "No item types available for auto-populate",
+      "NoMatchingItems": "No matching items found",
+      "AllItemsAlreadyInHud": "All selected items are already in the HUD",
+      "NoItemTypesForConfig": "No item types available for configuration",
+      "PassivesNotImplemented": "Passive configuration not implemented for this system",
+      "ClearAllFailed": "Failed to clear all items",
+      "ImportLayoutFailed": "Failed to import layout",
+      "NoActorForSave": "No actor available to save layout.",
+      "SaveLayoutSuccess": "Saved layout as actor default for future tokens.",
+      "SaveLayoutFailed": "Failed to save layout as actor default.",
+      "GMHotbarNotEnabled": "GM Hotbar is not enabled in module settings.",
+      "SelectTokenToSwitch": "Select a token to switch to Token Hotbar",
+      "MinRowsReached": "Cannot remove a row: the hotbar is already at its minimum height."
+    },
+    "Views": {
+      "CreateTitle": "Create New View",
+      "EditTitle": "Edit View",
+      "CreateButton": "Create",
+      "SaveButton": "Save",
+      "DefaultNewName": "New View",
+      "DefaultEditName": "View",
+      "NameLabel": "View Name",
+      "NamePlaceholder": "Enter view name...",
+      "IconLabel": "Select Icon",
+      "CustomIconLabel": "Or enter custom Font Awesome class:",
+      "CustomIconPlaceholder": "e.g., fa-sparkles",
+      "ErrorEmptyName": "View name cannot be empty",
+      "MaxViewsReached": "Maximum of {max} views allowed",
+      "Created": "Created view: {name}",
+      "CreateFailed": "Failed to create view",
+      "RenameFailed": "Failed to rename view",
+      "DuplicateFailed": "Failed to duplicate view",
+      "DeleteTitle": "Delete View",
+      "DeleteConfirm": "Are you sure you want to delete the view <strong>\"{name}\"</strong>?",
+      "DeleteWarning": "This action cannot be undone.",
+      "DeleteFailed": "Failed to delete view",
+      "ContextEdit": "Edit View",
+      "ContextDuplicate": "Duplicate View",
+      "ContextDelete": "Delete View"
     },
     "MaxSelectionsReached": "Maximum of {max} selections reached"
   }

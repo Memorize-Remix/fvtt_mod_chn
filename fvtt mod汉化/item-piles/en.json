@@ -64,6 +64,7 @@
       "ItemPileInvalidItemDropped": "You cannot drop this type of item into this item pile!",
       "VaultSameItemOrigin": "You can't drop items into the vault that originate from the vault!",
       "VaultNoGmItemSidebar": "Only GMs can drop items from the sidebar!",
+      "NoMerchantOwnership": "You need to own this merchant's actor to drop items onto it - ask your GM to grant you ownership.",
       "LogEmpty": "The log for \"{actor_name}\" is empty and has nothing to export"
     },
     "Inspect": {
@@ -854,7 +855,7 @@
         "Title": "Quantity of item for price attribute",
         "Hint": "Here you can configure what the attribute path is for the amount of items you get for the price. For example, in PF2e system, there's a \"per\" property on items, which determines what quantity of items you get for the item's price, which stored in the item's \"item.system.price.per\" attribute, so you'd put \"system.price.per\" in this setting."
       },
-	  "PreviewLevel": {
+      "PreviewLevel": {
         "Title": "Item Preview Window Ownership Level",
         "Hint": "This configures the ownership level of the item window that is shown when players click on items in item piles. In some systems, the description is only visible when the level is set to \"Observer\", while \"Limited\" is fine for most systems."
       },

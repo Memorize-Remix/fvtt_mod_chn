@@ -11,6 +11,7 @@
       "hubAccessWarn": "Only the GM or a designated Co-GM can open the Illumination Hub.",
       "hubAccessDenied": "Only the GM or a designated Co-GM can access the Illumination Hub.",
       "hubSubmitDenied": "Only the GM or a designated Co-GM can modify illumination settings.",
+      "objectNotFound": "That scene object could not be found on the current canvas.",
       "settingsUpdated": "Illumination settings updated.",
       "settingsSaveFailed": "Failed to save illumination settings. Check the console for details."
     },
@@ -18,6 +19,10 @@
       "main": {
         "name": "Enable Illumination",
         "hint": "Toggle token illumination effects on/off"
+      },
+      "targetingEnabled": {
+        "name": "Enable targeting visuals",
+        "hint": "Turn off lines and target markers while keeping token glow effects active"
       },
       "gmOrigin": {
         "name": "GM target origin token ID"
@@ -35,6 +40,17 @@
         "adminSubtitle": "GM and Co-GM users can configure their illumination settings from this hub.",
         "authorizedUsers": "RNK™ Authorized Users",
         "noActor": "No Actor",
+        "configuredObjects": "Configured Scene Objects",
+        "editObject": "Edit",
+        "clearObject": "Clear",
+        "noConfiguredObjects": "No scene objects currently have custom illumination.",
+        "searchObjects": "Search objects...",
+        "filterAllObjects": "All objects",
+        "filterTiles": "Tiles",
+        "filterDrawings": "Drawings",
+        "filterWalls": "Walls",
+        "filterLights": "Lights",
+        "objectCount": "objects",
         "color": "Illumination color",
         "effect": "Effect style",
         "effectDisabled": "None (Disabled)",
@@ -44,6 +60,7 @@
         "intensity": "Effect intensity",
         "range": "Effect range",
         "rangeLabel": "Range:",
+        "targetingEnabled": "Show targeting lines and markers",
         "assignedToken": "Assigned token",
         "autoOwnedToken": "Auto (Owned Token)",
         "noUsersConnected": "No other users connected.",
@@ -65,6 +82,17 @@
         "assignNone": "None (default owner)",
         "assignConfirm": "Assign",
         "assignCancel": "Cancel"
+      },
+      "tile": {
+        "configure": "Configure tile illumination",
+        "dialogTitle": "Tile Illumination",
+        "save": "Save",
+        "clear": "Clear",
+        "cancel": "Cancel"
+      },
+      "object": {
+        "dialogTitle": "Illumination",
+        "configure": "Configure illumination"
       }
     }
   }

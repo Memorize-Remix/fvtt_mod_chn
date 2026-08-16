@@ -66,6 +66,8 @@
   "QUICKINSERT.SettingsDefaultActionDescription": "Select the primary action for each document type. The default action will be used when clicking a search result or pressing <kbd>Enter</kbd>. Additional actions can always be cycled with <kbd>Tab</kbd>.",
   "QUICKINSERT.SettingsExampleBrowse": "Example search result in <em>Browse Mode</em>. Showing available actions on the right.",
   "QUICKINSERT.SettingsExampleInsert": "Example search result in <em>Insert Mode</em>.",
+  "QUICKINSERT.SettingsIncludeLabelInJournalLinks": "Include label in journal links",
+  "QUICKINSERT.SettingsIncludeLabelInJournalLinksHint": "When inserting links in input fields, include the name label (@UUID[abc123]{Shield}). Disable to let Foundry look up the name dynamically (@UUID[abc123])",
   "QUICKINSERT.HintAutoFilter": "Automatic filter - {name}",
   "QUICKINSERT.IndexingSettingsIntroduction": "Configure which content each individual user-role can search for. No matter the settings here, no user can search for content they otherwise couldn't access.",
   "QUICKINSERT.IndexingSettingsNoMatchType": "No document type matches the filter \"{filter}\"",
@@ -138,5 +140,18 @@
   "QUICKINSERT.SearchChatCommandEmote": "Emote",
   "QUICKINSERT.SearchChatCommandWhisper": "Whisper Message",
   "QUICKINSERT.SearchChatCommandRoll": "Roll Dice",
-  "QUICKINSERT.SearchOwnedSelected": "{tokenCount} selected tokens"
+  "QUICKINSERT.SearchOwnedSelected": "{tokenCount} selected tokens",
+  "QUICKINSERT.WizardRunWizard": "Run Wizard",
+  "QUICKINSERT.WizardHint": "We'll guide you through a quick setup of Quick Insert for your game world. The wizard can be re-run at any time, it will only apply the changes you select.",
+  "QUICKINSERT.WizardApply": "Apply",
+  "QUICKINSERT.DND5E.SetupWizard": "Quick Insert D&D 5e Setup Wizard",
+  "QUICKINSERT.DND5E.SetupCompeniumPreset": "Apply a compendium indexing preset. If you have configured Content Indexing for the affected packs, they will be overwritten.",
+  "QUICKINSERT.DND5E.SetupContentIndexHint": "At any point, you can modify these settings individually under the Content Indexing tab in Quick Insert settings.",
+  "QUICKINSERT.DND5E.SetupContentModern": "Use Modern Content (SRD 5.2)",
+  "QUICKINSERT.DND5E.SetupContentLegacy": "Use Legacy Content (SRD 5.1)",
+  "QUICKINSERT.DND5E.SetupContentEnableAll": "Enable all default content",
+  "QUICKINSERT.DND5E.SetupContentDisableAll": "Disable all default content",
+  "QUICKINSERT.DND5E.SetupPacksEnabled": "Packs that will be enabled:",
+  "QUICKINSERT.DND5E.SetupPacksDisabled": "Packs that will be disabled:",
+  "QUICKINSERT.DND5E.SetupPacksRulesVersion": "Your world is configured for {rulesVersion}"
 }

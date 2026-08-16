@@ -11,44 +11,58 @@
       },
       "forceUniqueTargetToken": {
         "name": "Force target token selection",
-        "hint": "Prevent \"crunching\" when no unique group member has been preselected as the target. Most relevant for scenes that use levels and elevation (\"vertical\" maps): By \"crunching\" your party, all group members get teleported to the same position (and elevation!) as the preselected target. Whithout a unique target, a RANDOM member will be used, which may not always be intended (especially when it comes to elevations!). This option prevents that by a warning message."
+        "hint": "Prevent \"crunching\" when no unique group member has been selected. Most relevant for scenes that use levels and elevation, because group members get teleported to the same position and elevation! as the target."
+      },
+      "maxNoOfParties": {
+        "name": "Maximum number of parties",
+        "hint": "How many separately defined parties should be maintained at once?"
       },
       "memberTokenNames#": {
-        "name": "Party # - List of members",
-        "hint": "Names of all tokens belonging to Party # (comma-separated)."
+        "name": "Party # - Members (deprecated)",
+        "hint": "Not used anymore since v14. Only visible for easier takeover of old settings."
       },
       "partyTokenName#": {
-        "name": "Party # - Party name",
-        "hint": "Name of the shared tokens of Party #."
+        "name": "Party # - Party name (deprecated)",
+        "hint": "Not used anymore since v14. Only visible for easier takeover of old settings."
       },
       "hideChatInfo": {
         "name": "Hide module info in chat window",
         "hint": "Hides the info text about this module in the chat window on game start, so that it doesn't show up over and over again (deactivate this option to see it again)."
       },
-      "animation4Crunch": {
+      "animationFileCRUNCHED": {
         "name": "\"Crunch\" animation (optional)",
         "hint": "Animation to play when crunching single tokens into party token. Requires installation of J2BA (see Readme)."
       },
-      "playAudio4Crunch": {
+      "playAudioCRUNCHED": {
         "name": "Play audio on \"Crunch\"?",
-        "hint": "Plays the audio file spedified below, if activated."
+        "hint": "Plays the audio file specified below, if activated."
       },
-      "audioFile4Crunch": {
+      "audioFileCRUNCHED": {
         "name": "Audio file on \"Crunch\"",
         "hint": "Audio file (relative path) to be played on \"Crunch\"?"
       },
-      "animation4Explode": {
+      "animationFileEXPLODED": {
         "name": "\"Explode\" animation (optional)",
         "hint": "Animation to play when exploding party token into single member tokens. Requires installation of J2BA (see Readme)."
       },
-      "playAudio4Explode": {
+      "playAudioEXPLODED": {
         "name": "Play audio on \"Explode\"?",
-        "hint": "Plays the audio file spedified below, if activated."
+        "hint": "Plays the audio file specified below, if activated."
       },
-      "audioFile4Explode": {
+      "audioFileEXPLODED": {
         "name": "Audio file on \"Explode\"",
         "hint": "Audio file (relative path) to be played on \"Explode\"?"
       }
+    },
+    "labels" : {
+      "partyTokenName": "Party Token",
+      "memberTokenNames": "Members",
+      "partyState": "Status"
+    },
+    "partyState": {
+      "CRUNCHED": "GROUPED",
+      "EXPLODED": "SEPARATED",
+      "UNKNOWN":  "?"
     },
     "chatInfoContent": {
       "title": "Crunch My Party!",
@@ -58,33 +72,75 @@
       "footer": "This chat card will only be shown once. Activate once more in the module settings if needed."
     },
     "errMsg": {
-      "pleaseCheckYourTokenSelection": "Please check your party configuration",
+      "pleaseCheckYourTokenSelection": "Please check your token selection",
       "invalidTokenCount": "Required: Exactly ONE group and MORE THAN ONE members",
-      "groupAndMembersIntersect": "Names must not exist both as member and as group.",
+      "duplicateTokens": "Selection contains tokens of the same name (maybe hidden?). Name-siblings prohibit a consistent party configuration.",
       "tooManyMemberTokens": "Member list too long",
-      "invalidNumberOfMemberTokens": "Invalid number of tokens selected! A party must consist of 2 through 25 members.",
-      "notUniqueInScene": "is not unique in scene!",
-      "tokensMissingInScene": "Tokens missing in scene",
+      "invalidNumberOfMemberTokens": "Invalid number of tokens selected! A party must consist of 2 to {maxMembers} members.",
+      "notUniqueInScene": "Token [{tokenName}] is not unique in scene!",
+      "notUniqueInScenePlural": "The following tokens are not unique in the scene. The current action does not support this:",
+      "tokensMissingInScene": "Missing tokens: There are neither a party token nor any members visible in this scene for party #{partyNo} [{partyName}]. The appropriate action cannot be determined.",
+      "partyTokenMissingInConfig": "The party configuration is missing data for the party token named '#tokenName'. Please add it to the scene, or recreate the party using the \"Group\" macro.",
       "cannotDetermineAction": "Cannot determine action!",
-      "membersAndPartyAllHidden": "None of the involved tokens are currently visible (active).",
-      "pleaseWaitStillBusy": "Please wait for current action to complete ...",
-      "pleaseSelectToken": "Please select at least one scene token to use this function.",
-      "movementActionNotFound": "Unable to move token: The following movement action was not found in CONFIG.Token.movement.actions: ",
-      "pleaseReportThisError": "Please report this error to the mod author on https://github.com/coffiarts/FoundryVTT-crunch-my-party.",
-      "pleaseActivateTokenLayer": "Please activate the token layer (menu button on top left) to use this function.",
-      "pleaseSelectTargetToken": "Please select a unique group member to define the target position and elevation for this action."
+      "noTokensVisible": "Either the party token OR at least one of the party members must be visible (activated) in the scene to perform this action.",
+      "membersAndPartyTokenVisible": "Party token and members cannot be visible at the same time to perform this action.",
+      "pleaseWaitStillBusy": "Please wait for current action to complete. If this issue persists, please reload the scene.",
+      "partyConfigNotDefined": "Party #{partyNo} doesn't seem to be configured. Please check your Party definitions list."
     },
-    "promptForPartyTokenNameTitle": "What's the name of the party token?",
-    "promptForPartyTokenNameText": "Name of the party token that shall represent selected members<br/>(must exist with this exact name in current scene!)",
+    "promptForPartyDefinition": {
+      "title": "Party Definitions",
+      "text": "Which of the selected tokens should serve as the shared party token?",
+      "partyTokenMode": {
+        "text": "Is this token a separate placeholder, or is it a member of the party?",
+        "placeholder": "Placeholder",
+        "member": "Member"
+      },
+      "partyNo": {
+        "text": "Which party slot do you want to assign?<br/>(The number of available slots can be changed in the module settings)"
+      }
+    },
+    "promptForPartySelection": {
+      "windowTitle": "Select a Party",
+      "tableTitle": "For which Party do you want to do this?"
+    },
+    "promptForCrunchAfterGrouping" : {
+      "title": "Apply immediately?",
+      "text": "Do you want to \"crunch\" the members of your new party right away?",
+      "yes": "Yes, crunch 'em!",
+      "no": "No, leave them separate."
+    },
+    "promptForDuplicateReplaceOrKeep" : {
+      "title": "Token already exists in scene.",
+      "text": "Token [{tokenName}] exists {count}x in this scene. What do you want to do?",
+      "disallowKeepText": "As there's more than one, it is not possible to keep them. Please choose either \"Replace\" to replace all(!) {count} tokens,\nAlternatively, choose \"Cancel\", delete redundant tokens of this name, and then repeat this process.",
+      "replace": "Replace",
+      "keep": "Keep"
+    },
+    "promptForSimpleConfirmation":  "Confirmation required",
+    "confirmDeleteParty": "Do you want to delete Party # ({partyName}) with {noOfMembers} members from the list and release this slot?",
+    "okButton": "OK",
     "saveButton": "Save",
     "cancelButton": "Cancel",
-    "groupingConfirmation": "The following tokens have been assigned to <strong>party #{partyNo} [token: {partyTokenName}]</strong>",
-    "keybindingMenuLabelFind": "Find Party #",
-    "keybindingMenuLabelToggle": "Toggle Party # (collapse/explode)",
+    "closeButton": "Close",
+    "partyTable": {
+      "deleteButton": "Delete\n#{partyNo}",
+      "findButton": "Find\n#{partyNo}"
+    },
+    "empty": "empty",
+    "groupingConfirmation": "The following tokens have been assigned to <strong>party #{partyNo} [{partyTokenName}]</strong>",
+    "applyToAll": "Apply to all!",
+    "keybindingLabels": {
+      "find": "Find Party #",
+      "findGeneric": "Find ANY Party (select from list)",
+      "toggle": "Toggle Party #",
+      "toggleGeneric": "Toggle ANY Party (select from list)",
+      "groupGeneric": "Group selected tokens into a party",
+      "showConfig": "Show Party Configurations"
+    },
     "settingsMenu": {
       "behaviourSection": "Behaviour",
-      "membersSection": "Party Member Configuration",
-      "animationsSection": "Animation Settings (requires JB2A & Automated Animations)"
+      "partyConfigSection": "Party Member Configuration",
+      "animationsSection": "Animation & Audio (requires JB2A & Automated Animations)"
     }
   }
 }

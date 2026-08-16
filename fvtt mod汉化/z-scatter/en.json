@@ -8,6 +8,18 @@
 				"name": "Ignore Special Cases",
 				"hint": "Dead or incapacitated tokens will not be snapped."
 			},
+			"ignoreMisaligned": {
+				"name": "Ignore Misaligned Tokens",
+				"hint": "Tokens that are deliberately placed off-grid will not be snapped."
+			},
+			"ignoreElevation": {
+				"name": "Ignore Token Elevation",
+				"hint": "Tokens at different elevations can collide and scatter together."
+			},
+			"collideDifferentSizes": {
+				"name": "Collide Different Token Sizes",
+				"hint": "Tokens with different dimensions can collide and scatter together."
+			},
 			"scatter": {
 				"name": "Scattering",
 				"hint": "How much the tokens will scatter around?"

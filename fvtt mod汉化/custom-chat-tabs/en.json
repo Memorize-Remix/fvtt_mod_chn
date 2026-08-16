@@ -24,14 +24,26 @@
       "ic": "IC",
       "ooc": "OOC",
       "rolls": "Rolls",
+      "mechanics": "Mechanics",
       "scene": "Scene",
       "whispers": "Whispers"
     },
     "pin": "Pin Message",
     "unpin": "Unpin Message",
+    "noActiveGM": "Cannot pin message: no Gamemaster is currently online.",
     "showPinButton": {
       "name": "Show Pin Indicator",
-      "hint": "Show a pin icon on pinned messages."
+      "hint": "Show a pin icon on messages."
+    },
+    "pinPermission": {
+      "name": "Pin Permission",
+      "hint": "Minimum role required to pin unowned messages. Users can always pin their own messages.",
+      "choices": {
+        "player": "Player",
+        "trusted": "Trusted Player",
+        "assistant": "Assistant GM",
+        "gamemaster": "Gamemaster"
+      }
     },
     "notificationPips": {
       "name": "Notification Pips",

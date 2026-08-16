@@ -5,7 +5,7 @@
     "ActionAdd": "Add",
     "ActionDelete": "Delete",
     "ActionRemoveGem": "Remove Gem",
-	"ActionOpenGem": "Open Gem",
+    "ActionOpenGem": "Open Gem",
     "EmptyList": "None",
     "SocketEmptyName": "Empty",
     "SocketEmptyTooltip": "Empty Slot",
@@ -15,12 +15,19 @@
       "OnlyGems": "Only socket-compatible items can be inserted.",
       "GemIncompatible": "That item is not compatible with this socket.",
       "GemUnsocketed": "Gem unsocketed.",
-	  "CannotOpenGem": "Could not open the gem item.",
+      "CannotOpenGem": "Could not open the gem item.",
+      "SocketGemChanged": "The socketed gem changed since this sheet was opened. Close it and open the gem again.",
       "MaxReached": "Maximum number of sockets reached.",
       "GemRequiresSocket": "This gem must be socketed before it can be used.",
       "HostNotSocketable": "This item type cannot receive sockets.",
       "SocketConditionFailed": "That gem does not meet this socket's requirements.",
-      "SocketConditionError": "This socket condition could not be evaluated."
+      "SocketConditionError": "This socket condition could not be evaluated.",
+      "Reloading": "Reloading...",
+      "InsufficientSocketCharges": "Not enough socketed \"{resource}\" charges ({available}/{required}).",
+      "InsufficientSocketGems": "Not enough socketed gems to consume ({available}/{required}).",
+      "SourceGemMissing": "The gem that provides this activity is no longer socketed.",
+      "InvalidConsumptionSlot": "The socket slot configured for consumption does not exist.",
+      "InvalidConsumptionTarget": "This socket consumption target is not configured."
     },
     "Effects": {
       "DefaultName": "Gem Effect"
@@ -34,12 +41,21 @@
         "Equipment": "Equipment"
       }
     },
-	"GemDetails": {
+    "GemDetails": {
       "TabLabel": "+Details",
       "SelectLabel": "Additional Details",
       "Hint": "Choose how this gem should be categorized.",
+      "Panes": {
+        "Combat": "Combat",
+        "Resource": "Resource",
+        "Tags": "Tags",
+        "Filled": "Configured"
+      },
+      "AttackCrit": {
+        "Label": "Attack & Crit",
+        "Hint": "Leave blank to inherit from the host item."
+      },
       "TypeFieldset": "Details Type",
-      "Disclaimer": "Use the fields below to adjust attacks and damage made with the item that holds this gem (including spells). Active Effects applied to the actor affect all eligible attacks globally. For armor and shields, use the gem's standard Active Effects on the item.",
       "Options": {
         "None": "None",
         "Weapons": "Weapons",
@@ -47,12 +63,24 @@
       },
       "ExtraDamage": {
         "Label": "Extra Damage",
-        "Hint": "Add one or more extra damage entries applied when this gem is socketed into weapons or spells.",
+        "Hint": "Add one or more extra damage entries to rolls made with the item holding this gem, including weapons and spells. These fields are scoped to the host item; actor-level Active Effects remain global. For armor and shields, configure the gem's standard Active Effects on the item instead.",
         "Damage": "Damage",
         "Type": "Type",
+        "FormulaHint": "Enable this to enter a roll formula instead of manually choosing number, die, and bonus.",
+        "FormulaPlaceholder": "1d@scale.monk.martial-arts.faces",
+        "TypeHint": "Choose one or more damage types. Same as host is exclusive and clears the other selections. If multiple fixed types are selected, the roll dialog lets the player choose one of them.",
+        "TypeMode": "Damage type",
+        "TypeModeHint": "Same as host uses the socketed item's rolled damage type. Fixed type(s) lets this gem define one or more damage types for the roll dialog.",
         "Add": "Add damage",
         "Remove": "Remove",
         "Clear": "Clear all",
+        "TypeOptions": {
+          "Inherit": "Same as host"
+        },
+        "TypeModeOptions": {
+          "Inherit": "Same as host",
+          "Fixed": "Fixed type(s)"
+        },
         "Fields": {
           "Number": "Number",
           "Die": "Die",
@@ -72,21 +100,62 @@
       },
       "CritThreshold": {
         "Label": "Critical Threshold",
-        "Hint": "Lowest d20 result that counts as a critical hit for attack rolls with this gem socketed. If multiple gems adjust crit, the lowest value is used. Leave blank to use the default value."
+        "Hint": "Lowest d20 result that counts as a critical hit for attack rolls made with the item holding this gem, including spell attacks. If multiple socketed gems adjust it, the lowest value is used. Unlike an actor-level Active Effect, this applies only to the host item. Leave blank to use the default value."
       },
       "CritMultiplier": {
         "Label": "Critical Multiplier",
-        "Hint": "Multiply critical damage by this value when this gem is socketed. If multiple gems set this, the highest value is used. Leave blank to keep the default multiplier."
+        "Hint": "Multiplies critical damage rolled by the item holding this gem, including spells. If multiple socketed gems set it, the highest value is used. Unlike an actor-level Active Effect, this applies only to the host item. Leave blank to keep the default multiplier."
       },
       "AttackBonus": {
         "Label": "Attack Bonus",
-        "Hint": "Flat bonus added to attack rolls when this gem is socketed. Bonuses from multiple gems stack. Leave blank for none."
+        "Hint": "Flat bonus added to attack rolls made with the item holding this gem, including spell attacks. Bonuses from multiple socketed gems stack. Unlike an actor-level Active Effect, this applies only to the host item. Leave blank for none."
+      },
+      "Resource": {
+        "Label": "Socketed Resource",
+        "Hint": "Custom resource this gem provides while socketed (e.g. battery, magic). Activities can consume it through the Socket Consumption block. Leave the key blank to provide none.",
+        "Key": "Resource Key",
+        "KeyPlaceholder": "e.g. battery",
+        "Max": "Maximum",
+        "Value": "Current",
+        "DestroyOnEmpty": "Destroy when out of charges",
+        "DestroyOnEmptyHint": "When a consumption drains this gem to zero charges, the gem is destroyed and removed from its socket.",
+        "Recovery": {
+          "Period": "Recharges on",
+          "PeriodHint": "When these charges change automatically: during rests, in combat (initiative and turns), or through a manual Recharge die roll. Applies to the actor carrying the gem, whether it is socketed or loose in the inventory.",
+          "PeriodNone": "Never (manual only)",
+          "PeriodShortRest": "Short Rest",
+          "PeriodLongRest": "Long Rest",
+          "PeriodDay": "Daily (new day)",
+          "Type": "Recovery",
+          "TypeHint": "What happens when the period triggers: recover all charges, lose all charges, or roll a custom formula.",
+          "TypeRecoverAll": "Recover All Charges",
+          "TypeLoseAll": "Lose All Charges",
+          "TypeFormula": "Custom Formula",
+          "Formula": "Formula",
+          "FormulaPlaceholder": "e.g. 1d4",
+          "FormulaHint": "Formula rolled to determine how many charges return.",
+          "Threshold": "Recharge On",
+          "ThresholdHint": "Minimum d6 result for a successful recharge check, e.g. 5 means 5–6. On a success the selected recovery applies (all charges or the formula amount). Roll it with the die button here or in the Socket Descriptions.",
+          "Roll": "Roll Recharge",
+          "RechargeFlavor": "{name} recharge check - {result}",
+          "RechargeSuccess": "Success!",
+          "RechargeFailure": "Failure.",
+          "RechargeFull": "{name} is already fully charged."
+        }
+      },
+      "Tags": {
+        "Label": "Gem Tags",
+        "Tooltip": "Add stable identifiers for this gem. Tags are converted to lowercase; spaces and accents are normalized. Socket conditions can check them with gemTags or hasGemTag(tag). Example: return hasGemTag(\"poison\");"
       }
     },
-	"SocketDescription": {
+    "GemFormula": {
+      "TooltipTitle": "Socketed gem damage",
+      "AttackBonusTooltipTitle": "Gem attack bonus"
+    },
+    "SocketDescription": {
       "Label": "Socket Description"
     },
-	"ItemDetails": {
+    "ItemDetails": {
       "CustomDetailsHeading": "Custom Details",
       "EnableSocketTab": "Enable Socket Tab",
       "EnableSocketTabHint": "Show the Sockets tab on this item when the global display setting is disabled.",
@@ -95,24 +164,65 @@
     "SocketSlotConfig": {
       "Title": "Socket Slot Settings",
       "Subtitle": "Configure rules, description, and tint for this slot.",
+      "Sockets": "Sockets",
+      "AddSocket": "Add socket",
       "SlotLabel": "Slot",
       "SlotNameLabel": "Slot name",
+      "SlotNameHint": "Leave blank to number it automatically.",
       "HostLabel": "Host item",
       "GemLabel": "Gem in slot",
+      "Contents": "Contents",
+      "Rules": "Rules",
+      "SocketedBadge": "Socketed",
+      "EmptyBadge": "Empty",
+      "UnsocketGem": "Unsocket gem",
       "InspectHost": "Open Host Item",
       "InspectHostHint": "Opens the host item sheet.",
       "InspectGem": "Inspect Gem",
       "InspectHint": "Opens the socketed gem in read-only mode.",
       "EmptySlot": "Empty slot",
       "NoGem": "No gem is currently socketed in this slot.",
+      "DropGemHint": "Drag a gem here to socket it.",
       "Save": "Save and Close",
       "Cancel": "Cancel",
+      "CancelHint": "Discards unsaved slot edits. Adding sockets and socketing/unsocketing gems apply immediately and are not reverted.",
       "Saved": "Slot settings saved.",
+      "Tabs": {
+        "Description": "Description",
+        "Condition": "Condition"
+      },
+      "Hidden": {
+        "Label": "Hide slot",
+        "Hint": "Only GMs can see this slot and its socket description.",
+        "Badge": "GM only"
+      },
+      "DeleteGemOnRemoval": {
+        "Label": "Delete gem on removal",
+        "Hint": "When enabled, this slot deletes its gem when unsocketed even if the global setting is disabled.",
+        "Badge": "Destructive"
+      },
       "Condition": {
         "Label": "Slot condition",
-        "Hint": "Use JavaScript. Available variables: gem, gemItem, hostItem, item, actor, user, slot, slotConfig, slotIndex, source, getProperty, hasProperty, deepClone.",
-        "Placeholder": "Example: return gem.name?.includes('Ruby') && getProperty(gem, 'flags.world.rarity') === 'rare';",
-        "Wiki": "Open wiki"
+        "Hint": "Use JavaScript. Gem tags are available through gemTags and hasGemTag(tag). Other variables: gem, gemItem, hostItem, item, actor, user, slot, slotConfig, slotIndex, source, getProperty, hasProperty, deepClone.",
+        "Placeholder": "Example: return hasGemTag('poison');",
+        "Wiki": "Open wiki",
+        "Insert": {
+          "Label": "Click to insert",
+          "Vars": {
+            "Gem": "The gem item document being socketed (alias of gemItem).",
+            "GemTags": "Array with the gem's tags.",
+            "HasGemTag": "Returns true when the gem has the given tag.",
+            "HostItem": "The item that owns this socket (alias: item).",
+            "Actor": "The actor holding the host item, or null.",
+            "User": "The user socketing the gem.",
+            "Slot": "Raw data of this slot.",
+            "SlotConfig": "This slot's configuration (name, color, hidden…).",
+            "SlotIndex": "Zero-based index of this slot.",
+            "Source": "Source data of the gem before it is socketed.",
+            "GetProperty": "Reads a property by path, e.g. getProperty(gem, 'system.rarity').",
+            "HasProperty": "Checks whether a property exists at the given path."
+          }
+        }
       },
       "Description": {
         "Label": "Slot description",
@@ -128,6 +238,17 @@
       },
       "Validation": {
         "InvalidCondition": "The slot condition has invalid code."
+      },
+      "GemCharges": {
+        "Label": "Gem charges",
+        "Hint": "Current charges of the socketed gem. The maximum is configured on the gem itself.",
+        "CopyKeyHint": "Click to copy the charge identifier.",
+        "KeyCopied": "\"{key}\" copied to clipboard."
+      },
+      "GemRecovery": {
+        "Label": "Recharge",
+        "Hint": "When and how this gem's charges change automatically — rests, combat periods, or the Recharge d6 check — recovering all charges, losing all charges, or rolling a custom formula.",
+        "FormulaPlaceholder": "e.g. 1d4"
       }
     },
     "SocketDescriptions": {
@@ -136,17 +257,21 @@
     },
     "Tooltips": {
       "RemoveGem": "Remove the gem from this socket.",
+      "DestroyGem": "Destroy gem",
+      "ExtractGem": "Extract gem",
       "DeleteSocket": "Delete this slot from the item.",
       "DeleteSlotLabel": "Delete slot",
       "ConfigureSlot": "Configure this slot.",
-      "ConfigureSlotLabel": "Configure slot"
+      "ConfigureSlotLabel": "Configure slot",
+      "HideSlot": "Hide this slot from players.",
+      "ShowSlot": "Show this slot to players."
     },
     "Settings": {
       "EditPermission": {
         "Name": "Edit Socket Permission",
         "Hint": "The minimum role required to add or remove sockets from items."
       },
-	  "SocketableItemTypes": {
+      "SocketableItemTypes": {
         "Name": "Socketable Item Types",
         "Label": "Configure Socketable Item Types",
         "Hint": "Choose which item types can receive sockets.",
@@ -173,7 +298,7 @@
         "SelectLabel": "Loot subtypes considered gems",
         "SelectHint": "Items with these loot subtypes will be treated as gems.",
         "Save": "Save",
-		"UnsavedChanges": "You have unsaved changes.",
+        "UnsavedChanges": "You have unsaved changes.",
         "Selection": {
           "Name": "Gem Loot Subtypes",
           "Label": "Configure Gem Loot Subtypes",
@@ -204,7 +329,51 @@
       },
       "GemRollLayout": {
         "Name": "Gem damage layout in roll dialog",
-        "Hint": "Enable the grouped-by-gem layout in the damage roll configuration dialog."
+        "Hint": "Choose how gem damage is organized in the damage roll configuration dialog.",
+        "Options": {
+          "Gem": {
+            "Label": "Group by gem",
+            "Description": "Each socketed gem keeps its own block and shows only the damage rows that came from that specific gem."
+          },
+          "Type": {
+            "Label": "Group by damage type",
+            "Description": "All rows are merged by damage type, regardless of which gem or item created them."
+          },
+          "GemType": {
+            "Label": "Group by gem type",
+            "Description": "Identical gems are merged into one block. The title shows 2x, 3x, and so on when more than one copy contributes."
+          },
+          "TypeBadges": {
+            "Label": "Group by damage type with badges",
+            "Description": "All rows are merged by damage type and each result shows badges for the gems, plus the host item when its own damage is part of that type."
+          }
+        }
+      },
+      "GemFormulaLayout": {
+        "Name": "Gem damage in the sheet Formula column",
+        "Hint": "Choose how the extra damage from socketed gems appears in the Formula column of the character sheet.",
+        "Options": {
+          "Current": {
+            "Label": "Hidden (current behavior)",
+            "Description": "The Formula column only shows the item's own damage, exactly as before."
+          },
+          "Inline": {
+            "Label": "Inline",
+            "Description": "Every gem damage formula and its type are listed directly in the Formula column."
+          },
+          "Tooltip": {
+            "Label": "Tooltip",
+            "Description": "The Formula column stays compact; hovering or focusing a small gem badge reveals the full breakdown."
+          }
+        }
+      },
+      "GemFormulaShowImage": {
+        "Name": "Show gem image in the Formula breakdown",
+        "Hint": "If enabled, gems in the Formula breakdown are identified by a small image; otherwise the gem name is used. The tooltip breakdown always shows the image and this option only hides the gem name there."
+      },
+      "GemBadgesFavorites": {
+        "Name": "Show gem badges in Favorites",
+        "Hint": "If enabled, items with socketed gems also show their gem badges in the Favorites section of the character sheet."
       },
       "SocketTabLayout": {
         "Name": "Socket tab layout",
@@ -220,8 +389,8 @@
       },
       "SupportMenu": {
         "Name": "Support the developer",
-        "Label": "Patreon support",
-        "Hint": "Get access to SC - More Gems with 120+ gems, and more every month. We are also building SC - Setforge to create item sets."
+        "Label": "Open support popup",
+        "Hint": "Open the Shattered Codex popup with release notes, module highlights, Patreon, Discord, and wiki links."
       },
       "DocumentationMenu": {
         "Name": "Documentation",
@@ -243,24 +412,58 @@
           "DisplayHint": "Adjust how gem damage and the socket tab are presented in the UI."
         }
       },
+      "ConfigMenu": {
+        "Name": "Module configuration",
+        "Label": "Open configuration",
+        "Hint": "All Simple Sockets settings in one window: socket rules, display, item types, and gem subtypes.",
+        "Title": "Simple Sockets — Configuration",
+        "Tabs": {
+          "Rules": "Socket rules",
+          "RulesHint": "Control who can edit sockets and how gems behave when attached or removed.",
+          "Display": "Display",
+          "DisplayHint": "Adjust how gem damage and the socket tab are presented in the UI.",
+          "Types": "Item types",
+          "TypesHint": "Choose which item types can receive sockets.",
+          "Subtypes": "Gem subtypes",
+          "SubtypesHint": "Select which loot subtypes count as gems and manage custom subtypes. New custom subtypes appear in the selection above as soon as they are added."
+        },
+        "CustomBadge": "custom",
+        "Save": "Save Changes",
+        "Close": "Close",
+        "Reset": "Reset defaults",
+        "Unsaved": "Unsaved changes",
+        "SavedPill": "Saved",
+        "SavedNotification": "Simple Sockets settings saved."
+      },
       "HideSupportCard": {
-        "Name": "Hide automatic support message until next update",
-        "Hint": "After the support card appears once for the current version, this option is checked automatically. Uncheck it if you want the card to appear whenever the world loads."
+        "Name": "Hide automatic What's New popup until next update",
+        "Hint": "After the What's New popup appears for the current version, this option can keep it hidden until the next update. Uncheck it if you want the popup to appear whenever the world loads."
       }
     },
-	"SupportCard": {
-	  "Description": "Support my work and stay up to date with exclusive modules and development progress.",
+    "SupportCard": {
+      "Description": "Support my work and stay up to date with exclusive modules and development progress.",
       "Intro": "Support us on Patreon to help us keep creating.",
       "Exclusive": "Get access to the exclusive <strong>SC - More Gems</strong> module with 120+ gems and monthly updates. We are also building <strong>SC - Setforge</strong> so you can create item sets.",
-	  "Issues": "Issues / Requests",
+      "Discord": "Discord",
+      "DiscordInvite": "Join the community",
+      "Issues": "Issues / Requests",
       "Link": "Patreon",
-	  "Wiki": "Wiki",
+      "Wiki": "Wiki",
       "PatreonModulesTitle": "Patreon modules",
       "FreeModulesTitle": "Free modules",
-      "Footer": "This chat card will only be shown once. Enable it again in the settings if needed."
-    },
-    "Notifications": {
-      "Reloading": "Reloading..."
+      "Footer": "This chat card will only be shown once. Enable it again in the settings if needed.",
+      "Title": "What's New",
+      "MoreFrom": "More from Shattered Codex",
+      "ReleaseSubtitle": "SC - Simple Sockets Changelog",
+      "ViewModule": "View on wiki",
+      "DontShowAgain": "Don't show again until the next update",
+      "FeatureRequest": "Feature Request",
+      "Close": "Close",
+      "Status": {
+        "Free": "Free",
+        "Patreon": "Patreon",
+        "New": "New"
+      }
     },
     "RollLayout": {
       "BaseDamage": "Base Damage",
@@ -283,6 +486,10 @@
         "SelectPrompt": "Click an item to add a socket. Press Esc to cancel.",
         "Cancelled": "Selection cancelled.",
         "NoPermission": "You do not have permission to add sockets.",
+        "TargetConditionTitle": "Target Condition Failed",
+        "TargetConditionBody": "This item does not meet the socket activity target condition.",
+        "TargetConditionErrorTitle": "Target Condition Error",
+        "TargetConditionErrorBody": "The target condition for this socket activity could not be evaluated.",
         "ItemPermissionTitle": "Cannot Edit Item",
         "ItemPermissionBody": "You do not have permission to edit {name}.",
         "InvalidTypeTitle": "Unsupported Item",
@@ -295,6 +502,415 @@
         "SelectAnother": "Do you want to select another item?",
         "Success": "A socket was added to {name}.",
         "Error": "Failed to add socket. See console for details."
+      },
+      "ExtractGem": {
+        "SelectPrompt": "Click a filled socket to extract its gem. Press Esc to cancel.",
+        "Cancelled": "Selection cancelled.",
+        "InvalidSlot": "Could not resolve the clicked socket.",
+        "EmptySlot": "That slot does not contain a gem.",
+        "ItemPermissionBody": "You do not have permission to edit {name}.",
+        "Success": "Extracted {gem} from {name}.",
+        "Error": "Failed to extract gem. See console for details."
+      }
+    },
+    "Integrations": {
+      "ScMoreActivities": {
+        "GroupLabel": "SC Simple Sockets",
+        "Common": {
+          "Select": "Select",
+          "SelectAnother": "Do you want to select another item?",
+          "SelectAnotherTitle": "Select Another Item",
+          "SlotLabel": "Slot {slot}",
+          "CursorImage": {
+            "Label": "Click cursor image",
+            "Hint": "Optional image path or URL used as the cursor while this activity waits for the next clicked target. Leave blank to use the default hammer cursor.",
+            "Placeholder": "modules/my-module/assets/cursor.webp"
+          }
+        },
+        "Warnings": {
+          "ActivityDisabled": "{activity} is currently disabled by the GM.",
+          "ActivityPermission": "You do not have permission to use this activity.",
+          "InvalidRequest": "The socket activity request is no longer valid.",
+          "NoActiveGm": "An active GM is required for socket activities.",
+          "RequestFailed": "Could not request a GM-mediated socket operation: {error}"
+        },
+        "SocketSlot": {
+          "Title": "Socket Slot",
+          "Hint": "Select the next clicked item to add a configured socket, or remove one empty slot from the current item.",
+          "Sections": {
+            "Behavior": "Behavior",
+            "Conditions": "Conditions",
+            "Configuration": "Slot Configuration",
+            "Description": "Description"
+          },
+          "Fields": {
+            "EditorTags": {
+              "JavaScript": "JavaScript",
+              "RichText": "Rich Text",
+              "TargetItem": "Target Item"
+            },
+            "Operation": {
+              "Label": "Operation",
+              "Hint": "Choose whether this activity targets the next clicked item for a new socket or removes one empty slot from the current item.",
+              "Choices": {
+                "Add": "Add socket",
+                "RemoveEmpty": "Remove empty slot"
+              }
+            },
+            "IgnoreMaxSockets": {
+              "Label": "Ignore socket limit",
+              "Hint": "When enabled, this activity can add a socket even if the item is already at the world socket limit."
+            },
+            "TargetCondition": {
+              "Label": "Target item condition",
+              "Hint": "Use JavaScript to decide whether the clicked item can receive this socket. Available variables: item, targetItem, hostItem, actor, user, socketCount, game, getProperty, hasProperty, deepClone.",
+              "Placeholder": "Example: return item.type === 'equipment' && getProperty(item, 'system.type.value') === 'shield' && socketCount === 0;"
+            },
+            "RemoveHint": "This activity prompts for one empty slot on the item and removes it."
+          },
+          "Warnings": {
+            "AddFailed": "Could not add a socket to {item}.",
+            "InvalidSlot": "Choose a valid empty slot.",
+            "NoEmptySlots": "This item has no empty slots to remove.",
+            "RemoveFailed": "Could not remove the selected empty slot.",
+            "SlotNotEmpty": "Only empty slots can be removed with this activity.",
+            "TargetConditionError": "The target item condition for this socket activity could not be evaluated.",
+            "TargetConditionFailed": "The clicked item does not match the target condition for this socket activity.",
+            "TargetConditionInvalid": "The target item condition has invalid code."
+          },
+          "Info": {
+            "Added": "Added a socket to {item}.",
+            "Removed": "Removed an empty slot from {item}."
+          },
+          "App": {
+            "Confirm": "Remove empty slot",
+            "Subtitle": "{item} has {count} empty slots available.",
+            "Title": "Choose Empty Slot"
+          }
+        },
+        "SocketExtraction": {
+          "Title": "Socket Extraction",
+          "Hint": "Use the activity, then click the target item. The activity removes one socketed gem and decides whether it is kept or deleted.",
+          "Sections": {
+            "Configuration": "Extraction Configuration"
+          },
+          "Fields": {
+            "TargetingHint": "When used, this activity targets the next clicked item. The selected result below overrides global and slot removal settings.",
+            "TargetingHintSelf": "When used, this activity targets the item that owns it. The selected result below overrides global and slot removal settings.",
+            "TargetMode": {
+              "Label": "Target item",
+              "Hint": "Choose whether the user clicks the item whose gem is removed or the activity extracts from the item that owns it.",
+              "Choices": {
+                "Select": "Click a target item",
+                "Self": "This item (extract self)"
+              }
+            },
+            "Mode": {
+              "Label": "Removed Gem Outcome",
+              "Hint": "Choose whether the removed gem is returned or destroyed. This ignores global and slot removal settings.",
+              "HintSelf": "Choose whether the removed gem is returned or destroyed when extracting from the item that owns this activity. This ignores global and slot removal settings.",
+              "Choices": {
+                "Delete": "Extract and destroy",
+                "Keep": "Extract and keep"
+              }
+            }
+          },
+          "Selection": {
+            "Prompt": "Click the item whose socketed gem should be removed. Press Esc to cancel.",
+            "Cancelled": "Selection cancelled."
+          },
+          "Dialogs": {
+            "ConfirmBodyDelete": "Use {name} as the target and delete the removed gem?",
+            "ConfirmBodyKeep": "Use {name} as the target and keep the removed gem?",
+            "ConfirmTitleDelete": "Delete Socketed Gem",
+            "ConfirmTitleKeep": "Extract Socketed Gem",
+            "InvalidTypeBody": "{name} cannot use sockets.",
+            "InvalidTypeTitle": "Unsupported Item",
+            "ItemPermissionBody": "You do not have permission to edit {name}.",
+            "ItemPermissionTitle": "Cannot Edit Item",
+            "NoSocketedGemsBody": "{name} has no socketed gems to remove.",
+            "NoSocketedGemsTitle": "No Socketed Gems",
+            "OverrideHint": "This activity ignores global and slot removal settings."
+          },
+          "Warnings": {
+            "EmptySlot": "The selected slot does not contain a gem.",
+            "ExtractionFailed": "Could not extract the selected gem.",
+            "InvalidSlot": "Choose a valid socketed gem.",
+            "NoSocketedGems": "The target item has no socketed gems to remove."
+          },
+          "Info": {
+            "Deleted": "The activity removed a socketed gem from {item} and destroyed it.",
+            "Extracted": "The activity removed a socketed gem from {item} and kept it."
+          },
+          "App": {
+            "Confirm": "Remove selected gem",
+            "Subtitle": "{item} has {count} socketed gems. Choose which one to remove.",
+            "Title": "Choose Gem to Remove"
+          }
+        },
+        "GemReload": {
+          "Title": "Gem Reload",
+          "Hint": "Use the activity, click the target item, then socket a compatible gem from the user's inventory into one of its empty sockets.",
+          "Sections": {
+            "Configuration": "Gem Reload Configuration"
+          },
+          "Fields": {
+            "TargetingHint": "When used, this activity targets the next clicked socketable item, or an item that already has sockets, then selects a compatible gem from the user's inventory and sockets it into an empty slot.",
+            "TargetingHintSelf": "When used, this activity targets the item that owns it, then selects a compatible gem from the user's inventory and sockets it into one of its empty slots.",
+            "TargetMode": {
+              "Label": "Target item",
+              "Hint": "Choose whether the user clicks the item that receives the gem or the activity reloads the item that owns it.",
+              "Choices": {
+                "Select": "Click a target item",
+                "Self": "This item (reload self)"
+              }
+            },
+            "GemMode": {
+              "Label": "Gem selection",
+              "Hint": "Choose whether the user picks a compatible gem or the activity auto-selects one by exact name or match pattern.",
+              "Choices": {
+                "Prompt": "Prompt compatible gems",
+                "Name": "Exact gem name",
+                "Match": "Gem name match"
+              }
+            },
+            "GemQuery": {
+              "Label": "Gem filter",
+              "HintName": "Case-insensitive exact gem name to auto-select from the actor inventory.",
+              "HintMatch": "Case-insensitive gem name pattern to auto-select from the actor inventory. Use * as a wildcard.",
+              "PlaceholderName": "e.g. Ruby",
+              "PlaceholderMatch": "e.g. Fire* or Ruby"
+            },
+            "SlotMode": {
+              "Label": "Slot selection",
+              "Hint": "Choose whether the first compatible empty slot is used automatically or the user picks a slot.",
+              "Choices": {
+                "Ordered": "First compatible slot",
+                "Prompt": "Prompt compatible slots"
+              }
+            }
+          },
+          "Selection": {
+            "Prompt": "Click the item that should receive a gem. Press Esc to cancel.",
+            "Cancelled": "Selection cancelled."
+          },
+          "Dialogs": {
+            "InvalidTypeBody": "{name} cannot use sockets.",
+            "InvalidTypeTitle": "Unsupported Item",
+            "ItemPermissionBody": "You do not have permission to edit {name}.",
+            "ItemPermissionTitle": "Cannot Edit Item",
+            "NoCompatibleGemsBody": "{actor} has no compatible gems for {name}.",
+            "NoCompatibleGemsTitle": "No Compatible Gems",
+            "NoEmptySlotsBody": "{name} has no empty sockets available.",
+            "NoEmptySlotsTitle": "No Empty Slots",
+            "SlotConditionErrorBody": "Gem Reload could not evaluate one or more socket conditions on {name}: {slots}. Fix the slot condition or choose another item.",
+            "SlotConditionErrorTitle": "Socket Condition Error",
+            "UnknownSlots": "one or more sockets"
+          },
+          "Warnings": {
+            "GemNotFound": "The selected gem is no longer available in the source actor inventory.",
+            "InvalidGemQuery": "Configure a gem name or match pattern before using this activity.",
+            "InvalidSlot": "Choose a valid empty socket.",
+            "NoCompatibleGems": "No compatible gems are available for the selected target.",
+            "NoEmptySlots": "The target item has no empty slots available.",
+            "NoSourceActor": "This activity needs an actor inventory to draw gems from.",
+            "SlotConditionError": "Some sockets on {item} were skipped because their slot conditions could not be evaluated: {slots}.",
+            "SlotOccupied": "The selected socket is already occupied.",
+            "SocketFailed": "Could not socket the selected gem."
+          },
+          "Info": {
+            "Reloaded": "Socketed {gem} into {item} (slot {slot})."
+          },
+          "App": {
+            "GemDestination": "Will socket into {slot}",
+            "GemDestinationChoices": "{count} compatible slots: {slots}",
+            "GemFilterNoResults": "No gems match the current filter.",
+            "GemFilterPlaceholder": "Filter gems by name…",
+            "GemSubtitle": "{actor} has {count} compatible gems for {item}. Choose which one to socket.",
+            "GemTitle": "Choose Gem to Socket",
+            "SlotConfirm": "Socket into selected slot",
+            "SlotSubtitle": "{item} has {count} compatible empty slots for {gem}. Choose one.",
+            "SlotTitle": "Choose Slot"
+          }
+        },
+        "SocketRecharge": {
+          "Title": "Socket Recharge",
+          "Hint": "Use the activity, then click the target item and choose a socketed gem to restore its charges. Can require a check and roll the restored amount.",
+          "RollFlavor": "Socketed Gem Recharge",
+          "Sections": {
+            "Configuration": "Recharge Configuration",
+            "Check": "Recharge Check"
+          },
+          "Fields": {
+            "TargetingHint": "When used, this activity targets the next clicked item and restores charges to one of its socketed gems.",
+            "Formula": {
+              "Label": "Recharge formula",
+              "Hint": "Dice formula rolled to determine how many charges are restored (supports actor roll data, e.g. 1d4 + @abilities.int.mod). Leave blank to fully recharge the gem.",
+              "Placeholder": "1d4"
+            },
+            "Check": {
+              "Type": {
+                "Label": "Required check",
+                "Hint": "Optionally require an ability check or skill check before the recharge. On a failure no charges are restored.",
+                "Choices": {
+                  "None": "No check",
+                  "Ability": "Ability check",
+                  "Skill": "Skill check"
+                }
+              },
+              "Ability": {
+                "Label": "Ability"
+              },
+              "Skill": {
+                "Label": "Skill"
+              },
+              "Dc": {
+                "Label": "Check DC",
+                "Hint": "The difficulty class the check must meet or exceed for the recharge to succeed. Accepts a flat number or a deterministic formula using the actor's roll data (e.g. 8 + @prof or 10 + @abilities.int.mod).",
+                "Placeholder": "10 or 8 + @prof"
+              }
+            },
+            "ResourceKey": {
+              "Label": "Resource filter",
+              "Hint": "Optional charge name. When set, only socketed gems with this resource are offered for recharging. Leave blank to allow any gem with missing charges.",
+              "Placeholder": "e.g. mana"
+            }
+          },
+          "Selection": {
+            "Prompt": "Click the item whose socketed gem should be recharged. Press Esc to cancel.",
+            "Cancelled": "Selection cancelled."
+          },
+          "Dialogs": {
+            "InvalidTypeBody": "{name} cannot use sockets.",
+            "InvalidTypeTitle": "Unsupported Item",
+            "ItemPermissionBody": "You do not have permission to edit {name}.",
+            "ItemPermissionTitle": "Cannot Edit Item",
+            "NoMatchingGemsBody": "{name} has no socketed gems with missing \"{key}\" charges.",
+            "NoRechargeableGemsBody": "{name} has no socketed gems with missing charges.",
+            "NoRechargeableGemsTitle": "No Rechargeable Gems"
+          },
+          "Warnings": {
+            "AlreadyFull": "{gem} is already fully charged.",
+            "CheckFailed": "The recharge attempt failed. No charges were restored.",
+            "InvalidDcFormula": "The check DC formula \"{formula}\" could not be resolved; using DC 10.",
+            "InvalidFormula": "The recharge formula \"{formula}\" could not be rolled.",
+            "InvalidSlot": "Choose a valid socketed gem.",
+            "NoActor": "This activity requires an actor to roll the recharge check.",
+            "NoRechargeableGems": "The target item has no socketed gems with missing charges.",
+            "NoResource": "{gem} has no charges to recharge.",
+            "NothingRestored": "The recharge roll did not restore any charges."
+          },
+          "Info": {
+            "Recharged": "Restored {restored} charges to {gem} in {item} ({value}/{max})."
+          },
+          "App": {
+            "Confirm": "Recharge selected gem",
+            "Subtitle": "{item} has {count} rechargeable gems. Choose which one to recharge.",
+            "Title": "Choose Gem to Recharge"
+          }
+        },
+        "SocketPoolRecharge": {
+          "Title": "Socket Pool Recharge",
+          "Hint": "Use the activity, then click the target item and choose one of its charge pools. The restored charges are spread across every socketed gem that provides that resource, in slot order.",
+          "Sections": {
+            "Configuration": "Pool Recharge Configuration"
+          },
+          "Fields": {
+            "TargetingHint": "When used, this activity targets the next clicked item and restores charges to a whole resource pool, distributing them across its socketed gems in slot order.",
+            "Formula": {
+              "Hint": "Dice formula rolled to determine how many charges are restored across the pool (supports actor roll data). Leave blank to fully recharge the pool."
+            },
+            "ResourceKey": {
+              "Hint": "Optional charge name. When set, this activity always recharges that pool. Leave blank to let the user choose among the item's pools with missing charges."
+            }
+          },
+          "Selection": {
+            "Prompt": "Click the item whose socketed charge pool should be recharged. Press Esc to cancel."
+          },
+          "Dialogs": {
+            "NoMatchingPoolBody": "{name} has no missing \"{key}\" charges.",
+            "NoPoolsBody": "{name} has no socketed charge pools with missing charges.",
+            "NoPoolsTitle": "No Rechargeable Pools"
+          },
+          "Warnings": {
+            "AlreadyFull": "The \"{key}\" charge pool is already full.",
+            "InvalidResourceKey": "No charge pool was selected.",
+            "NoPool": "The target item has no socketed \"{key}\" charges."
+          },
+          "Info": {
+            "Recharged": "Restored {restored} \"{key}\" charges across {gems} gems in {item} ({value}/{max})."
+          },
+          "App": {
+            "Confirm": "Recharge pool",
+            "Subtitle": "{item} has {count} charge pools with missing charges. Choose which one to recharge.",
+            "Title": "Choose Charge Pool"
+          }
+        }
+      }
+    },
+    "SocketPools": {
+      "Label": "Resources",
+      "Hint": "Aggregated resource pools provided by the socketed gems. The item itself stores no charges.",
+      "TableLabel": "Gem Resource Charges",
+      "GemColumn": "Gem",
+      "ResourceColumn": "Resource ID",
+      "ChargesColumn": "Charges",
+      "DestroyColumn": "Destroy At 0",
+      "DestroyYes": "Yes",
+      "DestroyNo": "No"
+    },
+    "Consumption": {
+      "Charge": {
+        "Label": "Socketed Charges",
+        "PromptDecrease": "Consume Socketed Charges",
+        "PromptIncrease": "Restore Socketed Charges",
+        "PromptHintDecrease": "Consumes {cost} {resource} ({available} available).",
+        "PromptHintIncrease": "Restores {cost} {resource}.",
+        "GenericResource": "socketed charges"
+      },
+      "Gem": {
+        "Label": "Socketed Gem",
+        "Prompt": "Consume Socketed Gem",
+        "PromptHint": "Destroys {cost} socketed gem(s): {target} ({available} available)."
+      },
+      "Target": {
+        "SourceSlot": "Source gem (this activity)",
+        "SlotShort": "slot {slot}",
+        "AnyGem": "any socketed gem (slot order)",
+        "NameMatch": "gems matching \"{pattern}\""
+      },
+      "FromLabel": "From",
+      "FromHintCharge": "Item recovery does not automatically restore socketed charges.",
+      "FromHintGem": "Item recovery does not automatically restore consumed socketed gems.",
+      "ScopeLabel": "Pool scope",
+      "Scope": {
+        "item": "Sockets on this item",
+        "actorEquipped": "Equipped sockets on this character",
+        "actorAll": "All sockets on this character"
+      },
+      "Filter": {
+        "Label": "Host item filter",
+        "Hint": "Optional JavaScript condition. Only socketed host items for which it returns true contribute to this pool. Available variables: item, hostItem, sourceItem, actor, activity, user, game, getProperty, and hasProperty.",
+        "Placeholder": "Example: return getProperty(item, 'flags.sc-setforge.setId') === getProperty(sourceItem, 'flags.sc-setforge.setId');",
+        "Invalid": "The host item filter contains invalid JavaScript.",
+        "Error": "The socket consumption item filter could not be evaluated: {error}"
+      },
+      "Mode": {
+        "sourceSlot": "Source gem (this activity)",
+        "any": "Any gem with resource",
+        "anyGem": "Any gem (slot order)",
+        "gemName": "Gem by name",
+        "gemNameMatch": "Gem name matches",
+        "slot": "Specific slot"
+      },
+      "Value": {
+        "Resource": "Resource Key",
+        "ResourcePlaceholder": "e.g. battery",
+        "GemName": "Gem Name",
+        "GemNamePlaceholder": "e.g. Battery Gem",
+        "Slot": "Slot Number",
+        "NamePattern": "Name Pattern",
+        "NamePatternPlaceholder": "e.g. Fire* or Battery"
       }
     }
   }

@@ -98,6 +98,11 @@
 				"descrp"				: "Maximum distance over which players can interact with objects (-1 for unlimited)"
 			},
 			
+			"activateWallFeatures" : {
+				"name"					: "Activate wall features",
+				"descrp"				: "Activate the door peeking and the door moving feature"
+			},
+			
 			"UseArmsreachDistance" : {
 				"name"					: "Use Arms Reach distance",
 				"descrp"				: "Use the Arms Reach distance for the maximum interaction distance"
@@ -361,7 +366,7 @@
 				"name"					: "Reset spotted on token movement by default",
 				"descrp"				: "If the active spotters of a hidden token should be reset upon movement"
 			}, 
-			
+
 			"IlluminationPDCModifier" : {
 				"name"					: "Illumination perception DC modifiers",
 				"descrp"				: "Modifiers that are applied to the perception DCs for different Light levels (Darkness, Dim Light, and Bright light, \"0,0,0\" for no modifiers)"
@@ -751,7 +756,7 @@
 					"pf2e"				: "Profiency required to spot this object (Untrained: 0, Trained: 1, Expert: 2, Master: 3, Legendary: 4)"
 				}
 			},
-		
+			
 			"APDCFlag" : {
 				"name" 					: "Active perception DC",
 				"descrp"				: "DC to be spotted with ative perception (-1 for impossible, empty to synch with passive perception)"

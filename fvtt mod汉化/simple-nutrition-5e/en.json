@@ -18,6 +18,8 @@
       "DaysWithoutFoodLabel": "Days without food",
       "FreshWater": "Fresh Water Source Available",
       "FreshWaterHint": "Drink from a fresh water source instead of consuming stored water.",
+      "FreeFood": "Free Food Source Available",
+      "FreeFoodHint": "Eat from a free food source instead of consuming stored rations.",
       "RequiredLabel": "Required",
       "SelectedLabel": "Selected",
       "Each": "{amount} each",
@@ -41,31 +43,37 @@
       "Food": "Food",
       "Water": "Water",
       "Progress": "{current}/{required}",
+      "NotRequired": "N/A",
       "FoodTooltip": "Food consumed today: {current} of {required}",
-      "WaterTooltip": "Water consumed today: {current} of {required}"
+      "WaterTooltip": "Water consumed today: {current} of {required}",
+      "FoodNotRequiredTooltip": "Food is not required for this actor.",
+      "WaterNotRequiredTooltip": "Water is not required for this actor."
     },
     "Config": {
       "Title": "Nutrition",
       "Configure": "Configure Nutrition",
+      "Tracking": "Tracking",
+      "TrackFood": "Track Food",
+      "TrackFoodHint": "Disable food tracking for actors that do not need to eat.",
+      "TrackWater": "Track Water",
+      "TrackWaterHint": "Disable water tracking for actors that do not need to drink.",
       "Requirements": "Daily Needs",
       "OverrideHint": "Leave a field blank to use the actor's size-based default.",
       "FoodPerDay": "Food per Day",
       "WaterPerDay": "Water per Day",
       "StarvationLimit": "Days Without Food",
       "DefaultValue": "Default: {value}",
-      "DefaultDays": "Default: {days} days"
+      "DefaultDays": "Default: {days} days",
+      "SaveDC": "Save DC",
+      "MalnutritionDCHint": "Constitution saving throw DC when insufficient food is consumed."
     },
     "Chat": {
       "Title": "Nutrition",
-      "StarvationLabel": "Days without food",
-      "StarvationValue": "{days}",
-      "ConditionsLabel": "Conditions",
-      "StatusDehydrated": "Dehydrated",
-      "StatusMalnourished": "Malnourished"
+      "StarvationLabel": "Days without food"
     },
     "Rest": {
-      "MalnutritionSave": "Malnutrition Constitution Save (DC 10)",
-      "MalnutritionSaveHint": "On a failed save, manually apply 1 level of &Reference[Exhaustion] and the &Reference[Malnutrition] condition."
+      "MalnutritionSaveHint": "On a failed save, use the button below to apply 1 level of &Reference[exhaustion apply=false] and the &Reference[malnutrition apply=false] condition.",
+      "MalnutritionApply": "Apply Malnutrition"
     }
   }
 }

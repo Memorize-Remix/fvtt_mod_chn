@@ -1,6 +1,6 @@
 {
-  "CRLNGN_UI": { 
-    "ui": { 
+  "CRLNGN_UI": {
+    "ui": {
       "generalSettingsLabel": "General Settings",
       "clientSettingsLabel": "Player Settings (Client)",
       "worldSettingsLabel": "World Settings (GM)",
@@ -10,7 +10,7 @@
       "reloadRequiredLabel": "A reload is required. Reload now?",
       "macroBarTooltipKeepOpen": "Keep open",
       "macroBarTooltipAutoHide": "Hide",
-	  "enforcementTooltip": "Click to cycle lock state. Right-click (or Alt+Click) to toggle GM mode",
+      "enforcementTooltip": "Click to cycle lock state. Right-click (or Alt+Click) to toggle GM mode",
       "reset": "Reset",
       "save": "Save",
       "reloadButton": "Reload",
@@ -18,7 +18,7 @@
       "notifications": {
         "incompatibleVersion": "Carolingian UI requires Foundry v13.339 or higher. Please update Foundry or install version 1.x of Carolingian UI.",
         "settingsUpdated": "Settings updated",
-		"settingsSavedAsDefaults": "Current settings saved as defaults for players",
+        "settingsSavedAsDefaults": "Current settings saved as defaults for players",
         "enforceGMSettingsConflict": "Carolingian UI and Force Client Settings module are both enforcing settings. This may cause confusing behavior.",
         "minimalUiNotSupported": "Carolingian UI is not compatible with Minimal UI, and offers most of its features. Please disable that module to avoid performance issues.",
         "monksScenesNotSupported": "Carolingian UI's Scene Navigation and Monk's Scene Navigation are NOT compatible. Please either disable Monk's Scene Navigation or uncheck 'Custom Layout' for Scene Navigation in settings.",
@@ -47,7 +47,7 @@
         "preloadScene": "Preload scene for players",
         "sceneConfig": "Scene Configuration"
       },
-	  "journalToggle": {
+      "journalToggle": {
         "enable": "Enable Carolingian Journal Styles",
         "disable": "Disable Carolingian Journal Styles"
       },
@@ -72,7 +72,7 @@
         "buttonLabel": "Patreon support",
         "hint": "If you like Carolingian UI and my other modules, consider supporting the development with a few bucks per month."
       },
-	  "exportSettings": {
+      "exportSettings": {
         "label": "Troubleshooting",
         "buttonLabel": "Export settings",
         "hint": "Export your Carolingian UI settings and active modules to a JSON file for troubleshooting.",
@@ -110,12 +110,12 @@
           "interface": "UI Elements",
           "fonts": "Fonts",
           "themes": "Theme & Styles",
-          "chat": "Sidebar & Chat Log",
+          "chat": "Sidebar & ChatLog",
           "controls": "Left Controls",
           "scenes": "Scene Navigation",
           "players": "Players List",
           "camera": "Camera Dock",
-		  "combat": "Combat Tracker",
+          "combat": "Combat Tracker",
           "system": "System & Modules"
         },
         "reset": "Reset",
@@ -125,11 +125,11 @@
         "label": "Toggle Hide/Show Interface",
         "hint": "Hides or shows the UI. This will affect all elements inside the `#interface` html block"
       },
-	  "toggleSidebar": {
+      "toggleSidebar": {
         "label": "Sidebar Expand/Collapse",
         "hint": "Expands or collapses the right sidebar"
       },
-	  "combatPrev": {
+      "combatPrev": {
         "label": "Combat: Previous Turn",
         "hint": "Go to the previous turn in combat. Only works when you own the current combatant."
       },
@@ -187,11 +187,11 @@
             "label": "Docked Carousel Scale",
             "hint": "Scale of the combat carousel when docked to the top of the screen. Range: 0.7 (70%) to 1.5 (150%)."
           },
-		  "dockedCarouselOffset": {
+          "dockedCarouselOffset": {
             "label": "Docked Carousel Offset",
             "hint": "Offset in pixels when the carousel is docked. Applies as margin-top when docked to the top, or margin-bottom when docked to the bottom."
           },
-		  "carouselDockOnLoad": {
+          "carouselDockOnLoad": {
             "label": "Dock Carousel on Load",
             "hint": "Controls where the carousel docks when Foundry loads.",
             "options": {
@@ -211,8 +211,8 @@
               "token": "Token Image",
               "actor": "Actor Portrait"
             }
-        },
-		"combatTrackerLayout": {
+          },
+          "combatTrackerLayout": {
             "label": "Combat Tracker Layout",
             "hint": "Choose how the combat tracker behaves. Carousel mode centers on the active combatant and wraps around. Simple list mode is left-aligned and scrolls to show the active combatant when needed.",
             "options": {
@@ -298,7 +298,7 @@
             "label": "Color Theme (Player)",
             "hint": "Select an option for the color highlights and secondary color. Only affects highlights, inputs and buttons"
           },
-		  "customThemeColors": {
+          "customThemeColors": {
             "label": "Custom Theme Colors (World)",
             "hint": "Custom color configuration for the world theme"
           },
@@ -306,7 +306,7 @@
             "label": "Custom Theme Colors (Player)",
             "hint": "Custom color configuration for this player"
           },
-		  "useGlassEffect": {
+          "useGlassEffect": {
             "label": "Enable Glass Effect (may affect performance)",
             "hint": "Enable backdrop-filter glass effect on application windows. This feature can cause performance issues on slower machines. Disable if you experience lag or stuttering, and backdrop-filter will not be applied at all."
           },
@@ -314,7 +314,7 @@
             "label": "Glass Translucence",
             "hint": "Controls the translucence of windows. 0 = fully opaque with minimal blur, 1 = highly translucent with maximum blur. Opacity and blur adjust inversely for readability. Control is disabled on low performance mode."
           },
-		  "enableJournalStyles": {
+          "enableJournalStyles": {
             "label": "Apply styles to journal sheets",
             "hint": "Enable to apply Carolingian UI styling to journal entry sheets. Disable if third-party journal modules have styling conflicts."
           },
@@ -334,12 +334,12 @@
           },
           "forcedDarkTheme": {
             "label": "Force Dark Theme via CSS",
-            "hint": "EXPERIMENTAL. If the above checkbox doesn't work for a specific module, you may attempt to force dark background and light font to modules by css selector. It might not always work if modules have hardcoded styles. Enter in the field belowthe css id or class of the elements, separated by comma. Example: #element-id, .element-class "
+            "hint": "EXPERIMENTAL. If the above checkbox doesn't work for a specific module, you may attempt to force dark background and light font to modules by css selector. It might not always work if modules have hardcoded styles. Enter in the field below the css id or class of the elements, separated by comma. Example: #element-id, .element-class "
           },
           "customStyles": {
             "label": "Custom CSS",
             "hint": "These styles will be loaded the next time you load Foundry. You may include Google Fonts by pasting the @import link, and the font will be listed in the Custom Fonts settings."
-          }, 
+          },
           "enforceDarkMode": {
             "label": "Enforce Dark Mode to Players",
             "hint": "Do not enable this if using Force Client Settings or similar modules. This sets Foundry's UI theme on player's client to Dark if they have it set to 'Browser Default'. If they specifically set it to 'Light', their choice will be respected."
@@ -400,10 +400,10 @@
             "label": "Show Chat Notifications From the Top",
             "hint": "When enabled, chat card notifications appear from the top of the chat input area instead of the bottom."
           },
-		  "useFolderStyle": {
-			"label": "Discreet folder colors on sidebar",
-			"hint": "Enable more discreet colors on sidebar directory folders, showing the selected color only on the borders, for a nicer look."
-		  },
+          "useFolderStyle": {
+            "label": "Discreet folder colors on sidebar",
+            "hint": "Enable more discreet colors on sidebar directory folders, showing the selected color only on the borders, for a nicer look."
+          },
           "hiddenSidebarTabs": {
             "label": "Sidebar Tabs Visibility & Order",
             "hint": "Control which sidebar tabs are visible for GMs and players. Hidden tabs will not appear in the sidebar.",
@@ -461,24 +461,24 @@
           "enableFloatingDock": {
             "label": "Enable floating camera group",
             "hint": "<b>[Requires reload]</b> Allows video player group to be dragged and placed anywhere on screen"
-          }, 
+          },
           "dockPosX": {
             "label": "Horizontal position of camera group",
             "hint": "Position of camera group when set to float. From bottom left of screen, in pixels"
-          }, 
+          },
           "dockPosY": {
             "label": "Vertical position of camera group",
             "hint": "Position of camera group when set to float. From bottom left of screen, in pixels"
-          }, 
+          },
           "dockWidth": {
             "label": "Width of camera group",
             "hint": "Dimensions of the non-minimized camera group when set to float, in pixels"
-          }, 
+          },
           "dockHeight": {
             "label": "Height of camera group",
             "hint": "Dimensions of the non-minimized camera dock when set to float, in pixels"
           },
-		  "dockCamerasToBottom": {
+          "dockCamerasToBottom": {
             "label": "Allow docking cameras to macro hotbar",
             "hint": "When enabled, you can drag the camera group to the bottom of the screen (above the macro hotbar) to dock it. When docked, the camera group will be horizontal, span the full available width and shrink videos to a minimum of 150px. Drag it away from the bottom to undock."
           },
@@ -502,7 +502,7 @@
         "reset": "Reset",
         "save": "Save"
       },
-	  "combatTrackerMenu": {
+      "combatTrackerMenu": {
         "label": "Combat Tracker",
         "title": "Configure Combat Tracker",
         "hint": "Configure the combat tracker carousel appearance and behavior.",
@@ -510,6 +510,10 @@
           "enableCombatTrackerCarousel": {
             "label": "Use Draggable Combat Carousel",
             "hint": "When enabled, the combat tracker will automatically pop out when combat has combatants and close when combat ends. Also enables custom styling for the popped out tracker."
+          },
+          "autoPopoutOnCombatStart": {
+            "label": "Auto Pop Out Combat Tracker",
+            "hint": "When enabled, the combat tracker pops out automatically when a combat is started or combatants are added. Turn off if you'd rather open it manually."
           },
           "combatCarouselScale": {
             "label": "Docked Carousel Scale",
@@ -519,7 +523,7 @@
             "label": "Docked Carousel Offset",
             "hint": "Offset in pixels when the carousel is docked. Applies as margin-top when docked to the top, or margin-bottom when docked to the bottom."
           },
-		  "carouselDockOnLoad": {
+          "carouselDockOnLoad": {
             "label": "Dock Carousel on Load",
             "hint": "Controls where the carousel docks when Foundry loads.",
             "options": {
@@ -572,6 +576,10 @@
           "showCombatRoundButtons": {
             "label": "Show Round Navigation Buttons",
             "hint": "When enabled, Previous Round and Next Round buttons are visible in the combat controls. This is a world setting (GM)."
+          },
+          "autoRollNPCsOnCombatStart": {
+            "label": "Auto-roll for NPCs when starting combat",
+            "hint": "When enabled, NPC initiative is rolled automatically as soon as combat starts, skipping the roll dialog. This is a world setting (GM)."
           }
         },
         "reset": "Reset",
@@ -586,14 +594,14 @@
             "label": "Hide scene name from loading bar",
             "hint": "The loading bar shows the scene name, which can spoil content for players. Check this option to show only a thin loading bar instead."
           },
-		  "disableActiveSceneSeparation": {
+          "disableActiveSceneSeparation": {
             "label": "Disable active/inactive scene separation",
             "hint": "When enabled, active scenes will be displayed in the same list as inactive scenes instead of being separated at the top."
           },
           "sceneNavEnabled": {
             "label": "Enable custom scene navigation",
             "hint": "[Requires reload] If you are having layout issues with a non-compatible module, you can try to disable my custom styles for Scene Navigation."
-          }, 
+          },
           "showNavOnHover": {
             "label": "Toggle scene navigation on hover",
             "hint": "If the scene navigation is collapsed, you can show it by hovering the mouse over the top of the screen."
@@ -614,7 +622,7 @@
             "label": "Start collapsed",
             "hint": "Enable this option to collapse the scene navigation when loading Foundry, regardless of previous saved state."
           },
-		  "collapseNavDuringCombat": {
+          "collapseNavDuringCombat": {
             "label": "Collapse during combat",
             "hint": "Automatically collapse the scene navigation when combat starts. The navigation will restore to its previous state when combat ends."
           },
@@ -642,7 +650,7 @@
             "label": "Hide inactive scenes on folder toggle",
             "hint": "When enabled, default list of scenes will be hidden when folder view is on. The list will show up again when you hide folders. This aims to avoid duplication of scenes in navigation."
           },
-		  "subFoldersLayout": {
+          "subFoldersLayout": {
             "label": "Subfolder row alignment",
             "hint": "Choose how scenes inside subfolders are positioned when the folder is expanded. Only works if folders are enabled.",
             "options": {
@@ -654,6 +662,10 @@
           "expandScrimToSubfolders": {
             "label": "Expand background behind subfolders",
             "hint": "When enabled, the navigation background expands to cover subfolder rows when folders are open."
+          },
+          "autoCloseSubmenuOnSceneChange": {
+            "label": "Auto-close submenu on scene change",
+            "hint": "When enabled, any open folder submenu closes after a scene is selected or activated. When disabled, folders stay open until manually closed."
           },
           "sceneItemWidth": {
             "label": "Width of navigation item",
@@ -667,7 +679,7 @@
         "label": "System",
         "title": "Configure options for specific systems",
         "hint": "",
-		"currentSystem": "Current System",
+        "currentSystem": "Current System",
         "noSettingsForSystem": "No specific settings for the current system",
         "modulesLabel": "Other Modules",
         "fields": {
@@ -732,11 +744,11 @@
         "label": "Debug Mode",
         "hint": "Enable or disable debug messages on browser console. This should be turned off unless the module developer asks you to turn it on for verification."
       },
-      "disableUI":{
+      "disableUI": {
         "label": "Disable UI in this client",
         "hint": "If a player doesn't want to use Carolingian UI, they may disable it. No other feature of the module will work except for dark style in chat cards - which can be separately disabled."
       },
-	  "dockDHResources":{
+      "dockDHResources": {
         "label": "Dock Daggerheart Fear Tracker",
         "hint": "Enable docking functionality for the Daggerheart resource (fear) tracker. Drag the window near the macro hotbar to dock it at the bottom of the screen."
       },
@@ -759,10 +771,28 @@
         "applySecondaryColorToBg": {
           "label": "Apply Secondary color to Foundry interface backgrounds",
           "hint": "When enabled, the secondary color will be applied to interface backgrounds like sidebar and controls. This allows you to control background of applications in color theme."
+        },
+        "actorOverrides": {
+          "title": "Per-Class / Per-Race Accent (DnD5e)",
+          "hint": "Override the accent color on individual character sheets based on the character's highest-level class OR their race. Leave a row's color empty to fall back to the theme accent.",
+          "modeClass": "By Class",
+          "modeRace": "By Race",
+          "addRowClass": "Add class color",
+          "addRowRace": "Add race color",
+          "removeRow": "Remove",
+          "pickColor": "Pick a color",
+          "clearColor": "Use theme color",
+          "namePlaceholderClass": "Class name",
+          "namePlaceholderRace": "Race name",
+          "perActorMenuLabel": "Change Color Theme",
+          "perActorDialogTitle": "Color Theme — {name}",
+          "perActorHint": "Set an accent color just for this character. Overrides class/race rules and the global theme. Use the button below to clear the override and fall back to those.",
+          "perActorColorLabel": "Accent Color",
+          "perActorResetTooltip": "Reset to default"
         }
       }
     },
-	"combat": {
+    "combat": {
       "noCombatants": "No combatants in encounter",
       "closedNotice": "When you want the carousel back, right-click the combat tab on sidebar",
       "noTrackedResource": "Combat Encounter is set to show resource bar for all charcters, but no tracked resource in Core Foundry is configured in Combat Tracker settings.",

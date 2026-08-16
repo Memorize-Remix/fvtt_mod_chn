@@ -11,7 +11,18 @@
       },
       "ShortRangeMayLimit": {
         "Name": "Short Range Max. Limit",
-        "Hint": "The maximum short range limit  when using vector based movement. (Default 1)"
+        "Hint": "The maximum short range limit when using vector based movement. (Default 1)"
+      },
+      "PlayerVectorMovement": {
+        "Name": "Player Vector Movement",
+        "Hint": "Whether to enable vector movement for players. (Default true)",
+        "Settings": {
+          "Choices": {
+            "Disabled": "Disabled",
+            "VectorOnly": "Vector Only – Players can only change the vectors but not move the ship",
+            "Full": "Full – Players can change the vectors and move the ship"
+          }
+        }
       }
     }
   }

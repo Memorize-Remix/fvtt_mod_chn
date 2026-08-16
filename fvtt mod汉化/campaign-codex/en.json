@@ -1,8 +1,9 @@
 {
   "CAMPAIGN_CODEX": {
-    "updateHTML":"<div> <p><strong>IMPORTANT ACTION REQUIRED: Campaign Codex</strong></p><p>If you have just updated Campaign Codex from an 1.5.7 or older Execute the 'Migrate Parent Region' macro in the included Compendium</p></div>",
-	"updateQUESTS": "<div><p><strong>IMPORTANT ACTION REQUIRED: Campaign Codex</strong></p><p>If you have updated Campaign Codex from 2.x to 3.x and previously used quest cards, run the <strong>QuestConvert_v3</strong> macro from the included Compendium to migrate quests to the new quest sheets.</p></div>",
-    "welcomePageHTML" : "<div> <p><strong>Welcome to Campaign Codex</strong></p> <p>Folder management, system item price location and system item currency location, and other configurations can be changed in settings.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openMenu|core_settings\"><i class=\"fas fa-wrench\"></i>Settings</button></div> <hr> <p><strong>Be part of the Campaign Codex Community</strong></p> <p>If you would like to suggest a feature, report a bug, or just want to chat, feel free to join us on Discord.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> Join Discord</button></div> <p><strong>Found a bug?</strong></p> <p>If you would like to report a bug and Discord is not your thing head on over to GitHub.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://github.com/xthesaintx/cc13\"><i class=\"fas fa-bug\"></i> Report a Bug</button></div> <p><strong>Supporting the development</strong></p> <p>If you want to support the development, consider taking a look at the membership options on Patreon.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://patreon.com/wgtngm\"><i class=\"fa-brands fa-patreon\"></i> Become a member</button></div><p>If you prefer, you can support via Ko-fi.</p><div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://ko-fi.com/wgtngm\"><i class=\"fas fa-cup-togo\"></i> Buy a coffee</button></div><p><strong>Documentation</strong></p> <p>Feeling a little lost? Head over to our documentation page for some direction, or jump on Discord and ask a question</a>.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://campaigncodex.wgtngm.com\"><i class=\"fas fa-book\"></i> Documentation</button></div></div>",   
+    "updateHTML": "<div> <p><strong>IMPORTANT ACTION REQUIRED: Campaign Codex</strong></p><p>If you have just updated Campaign Codex from an 1.5.7 or older Execute the 'Migrate Parent Region' macro in the included Compendium</p></div>",
+    "updateQUESTS": "<div><p><strong>IMPORTANT ACTION REQUIRED: Campaign Codex</strong></p><p>If you have updated Campaign Codex from 2.x to 3.x and previously used quest cards, run the <strong>QuestConvert_v3</strong> macro from the included Compendium to migrate quests to the new quest sheets.</p></div>",
+    "updateINVENTORY":"<div><p><strong>IMPORTANT ACTION REQUIRED: Campaign Codex</strong></p><p>If you have updated Campaign Codex from a previous version and use inventories, run the <strong>Migrate Inventory to Cache Inventory</strong> macro from the included Compendium to migrate inventories to the new cached inventory.</p></div><div><p><strong>Map Markers:</strong></p><p>If you have updated Campaign Codex from a previous version and use Journal Names as map markers, ie A1 - Name, run the <strong>Name Map Markers to New Map Marker</strong> macro from the included Compendium to migrate the map markers to the map marker field, as inline map markers are depreciated.</p></div>",
+    "welcomePageHTML": "<div> <p><strong>Welcome to Campaign Codex</strong></p> <p>Folder management, system item price location and system item currency location, and other configurations can be changed in settings.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openMenu|core_settings\"><i class=\"fas fa-wrench\"></i>Settings</button></div> <hr> <p><strong>Be part of the Campaign Codex Community</strong></p> <p>If you would like to suggest a feature, report a bug, or just want to chat, feel free to join us on Discord.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://discord.gg/fycwH79s2y\"><i class=\"fab fa-discord\"></i> Join Discord</button></div> <p><strong>Found a bug?</strong></p> <p>If you would like to report a bug and Discord is not your thing head on over to GitHub.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://github.com/xthesaintx/cc13\"><i class=\"fas fa-bug\"></i> Report a Bug</button></div> <p><strong>Supporting the development</strong></p> <p>If you want to support the development, consider taking a look at the membership options on Patreon.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://patreon.com/wgtngm\"><i class=\"fa-brands fa-patreon\"></i> Become a member</button></div><p>If you prefer, you can support via Ko-fi.</p><div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://ko-fi.com/wgtngm\"><i class=\"fas fa-cup-togo\"></i> Buy a coffee</button></div><p><strong>Documentation</strong></p> <p>Feeling a little lost? Head over to our documentation page for some direction, or jump on Discord and ask a question</a>.</p> <div><button data-campaign-codex-handler=\"campaign-codex|openWindow|https://campaigncodex.wgtngm.com\"><i class=\"fas fa-book\"></i> Documentation</button></div></div>",
     "tabs": {
       "original-name": "Original Name",
       "override-name": "Override Name",
@@ -11,52 +12,52 @@
       "edit-title": "Configure Tabs",
       "reset": "Reset to Defaults"
     },
-    "widgets":{
-      "available":"Available",
-      "inactive":"Inactive",
-      "active":"Active"
+    "widgets": {
+      "available": "Available",
+      "inactive": "Inactive",
+      "active": "Active"
     },
-    "context":{
-	  "hideAssociate": "Hide from Player",
+    "context": {
+      "hideAssociate": "Hide from Player",
       "showAssociate": "Show to Player",
-      "export":"Export to Standard Journal",
-      "group":"Add to {type}",
+      "export": "Export to Standard Journal",
+      "group": "Add to {type}",
       "changeImage": "Change Image",
       "removeImage": "Remove Image",
       "showImage": "Show Image to Players",
-	  "showInDirectory": "Show in Directory",
-      "removeLink":"Unlink",
-      "removeTag":"Remove Tag"
+      "showInDirectory": "Show in Directory",
+      "removeLink": "Unlink",
+      "removeTag": "Remove Tag"
     },
-    "toc":{
+    "toc": {
       "filter": "Left-click includes, right-click excludes. Use the Mode button to toggle AND/OR include logic.",
       "clear": "Clear Filters",
       "filterPlaceholder": "Filter..."
     },
-    "button":{
-		"deactivate": "Deactivate",
-        "title":"Create new {type}",
-        "droptoscene" : "Drop  {type} to current scene",
-        "tagmode": "Tag Mode",
-        "dropactortoscene": "Drop Actor to current scene"
+    "button": {
+      "deactivate": "Deactivate",
+      "title": "Create new {type}",
+      "droptoscene": "Drop  {type} to current scene",
+      "tagmode": "Tag Mode",
+      "dropactortoscene": "Drop Actor to current scene"
     },
-    "info":{
-        "automatically":"{type} are automatically populated from all {source}.",
-        "refresh":"Refresh",
-        "linkfound":"Linking existing {type}.",
-        "newlink":"Created and linked {type} from the scene.",
-        "linked":"Linked {type}"
+    "info": {
+      "automatically": "{type} are automatically populated from all {source}.",
+      "refresh": "Refresh",
+      "linkfound": "Linking existing {type}.",
+      "newlink": "Created and linked {type} from the scene.",
+      "linked": "Linked {type}"
     },
-    "sheet":{
+    "sheet": {
       "journal": "{type} Journal"
     },
-    "add":"Add {type}",
+    "add": "Add {type}",
     "group": {
-      "notfound":"The item you are trying to add could not be found.",
-      "self":"A group cannot be added to itself.",
+      "notfound": "The item you are trying to add could not be found.",
+      "self": "A group cannot be added to itself.",
       "expandAll": "Expand All",
       "collapseAll": "Collapse All",
-	  "toggleRegions": "Hide/Show Regions",
+      "toggleRegions": "Hide/Show Regions",
       "toggleShops": "Hide/Show Entries",
       "toggleLocations": "Hide/Show Locations",
       "toggleGroups": "Hide/Show Groups",
@@ -66,13 +67,13 @@
       "toggleTagMode": "Factions View"
     },
     "member": {
-      "type":"Member {type}"
+      "type": "Member {type}"
     },
     "heading": {
-      "in":"{type} {in}"
+      "in": "{type} {in}"
     },
     "names": {
-      "widgets":"Widgets",
+      "widgets": "Widgets",
       "regionlocation": "Region or Location",
       "location": "Location",
       "locations": "Locations",
@@ -82,10 +83,10 @@
       "shops": "Entries",
       "region": "Region",
       "regions": "Regions",
-	  "parentregions": "Parents",
+      "parentregions": "Parents",
       "npc": "NPC",
       "npcs": "NPCs",
-	  "groupnpcs": "Linked NPCs & Factions",
+      "groupnpcs": "Linked NPCs & Factions",
       "items": "Items",
       "journal": "Journal",
       "journals": "Journals",
@@ -100,52 +101,62 @@
       "note": "Notes",
       "actor": "Actor",
       "player": "Player",
-	  "faction": "Faction",
+      "faction": "Faction",
       "tag": "Tag",
       "tags": "Tags",
-      "inventory":"Inventory",
-	  "loot": "Loot",
-      "scene":"Scene",
+      "inventory": "Inventory",
+      "loot": "Loot",
+      "scene": "Scene",
       "standard": "Standard",
-      "quest":"Quest",
-      "quests":"Quests",
-      "toc":"Table of Contents",
+      "quest": "Quest",
+      "quests": "Quests",
+      "toc": "Table of Contents",
       "factions": "Factions",
-      "faction": "Faction"
+      "faction": "Faction",
+      "entities":"Entities"
     },
     "settings": {
-      "allowPlayerPurchasing":{
+      "allowPlayerPurchasing": {
         "name": "Allow players to purchase from Inventories",
         "hint": "If enabled players can send items to themselves from an inventory"
       },
-	  "allowPlayerLooting": {
+      "allowPlayerLooting": {
         "name": "Allow players to take from Loot Inventories",
         "hint": "If enabled players can send items to themselves from a loot inventory"
       },
-	  "mapMarkerOverride":{
+      "mapMarkerOverride": {
         "name": "Map Marker Scale",
         "hint": "Size of the Campaign Codex Map marker. Default 1"
       },
-      "mapMarkerColor":{
-        "name": "Use CC Accent colour for the map markers",
-        "hint": "If enabled CC map markers will use the CC Accent colour for the background"
+      "mapMarkerColorPicker":
+      {
+        "name": "Colour for the map markers",
+        "hint": "Set the colour to be used for CC map markers"
       },
-	  "mapMarkerUseSheetIconFallback": {
+      "mapMarkerColor": {
+        "name": "Use selected colour for the map markers",
+        "hint": "If enabled CC map markers will use the selected colour for the background"
+      },
+      "mapMarkerUseSheetIconFallback": {
         "name": "Use Sheet Icon when Marker is Empty",
         "hint": "If enabled and no Campaign Codex map marker is set, the note will use its normal sheet icon instead of generating a code marker from the name."
       },
-      "mapMarkers":{
+      "mapMarkers": {
         "name": "Enable Campaign Codex Map Markers",
-        "hint": "If enabled CC sheets with a name that starts with an optional letter followed by up to three digits followd by an optional letter will create a custom map marker, ie A13"
+        "hint": "If enabled CC markers will be used on scenes"
       },
-	  "mapMarkersHover":{
+      "mapMarkersHover": {
         "name": "Enable Hover on Campaign Codex Map Markers",
         "hint": "If enabled map note widget markers will show content on hover"
       },
-	  "mapMarkersHoverDelay": {
+      "mapMarkersHoverDelay": {
         "name": "Map Marker Hover Delay (ms)",
         "hint": "Delay before showing map note content on hover. Set from 0 to 1500 milliseconds."
-      },  
+      },     
+      "hideGmCCbutton":{
+        "name": "Hide CC ToC Button for GM",
+        "hint": "Hide CC Table of Contents Button from scene control panel from GM users."
+      },
       "hideCCbutton": {
         "name": "Hide CC ToC Button",
         "hint": "Hide CC Table of Contents Button from scene control panel from NON GM users."
@@ -154,23 +165,23 @@
         "name": "Styled TOC Button",
         "hint": "Enable to use the Campaign Codex theme for the Table of Contents button in the scene controls."
       },
-      "colorPicker":{
+      "colorPicker": {
         "name": "Accent Color Override",
-        "hint": "Override the default theme accent color. Enter a hex code like #d4af37. Leave blank to restore the default."
+        "hint": "Override the default theme accent color. Enter a hex code like #b9a987. Leave blank to restore the default."
       },
-      "showOnlyPinned":{
+      "showOnlyPinned": {
         "name": "Show Only Pinned Quests in ToC",
         "hint": "If checked, the Table of Contents will only show quests that have been marked as 'pinned'."
       },
-      "showStats":{
+      "showStats": {
         "name": "Show stats in menu",
         "hint": "Will show (#) next to a menu item in the sheets to indicate the number of each kind, viewable by GM only."
       },
-	  "showActorDropperDialog": {
+      "showActorDropperDialog": {
         "name": "Show Actor Dropper Dialog",
         "hint": "If disabled, the Actor Dropper widget places actors immediately without the selection dialog."
       },
-      "roundFinalPrice":{
+      "roundFinalPrice": {
         "name": "Round final price to a whole number",
         "hint": "Will round the final price of an item to the nearest whole number."
       },
@@ -182,11 +193,11 @@
         "name": "Override Item Price Path",
         "hint": "Path to item price value (e.g., 'system.price.value' for D&D5e). Leave blank to use detected system."
       },
-	  "enableThemes": {
+      "enableThemes": {
         "name": "Enable custom theme",
         "hint": "Enables the custom colour and typeface selected in Configure Colours."
       },
-	  "playerCurrencyPath": {
+      "playerCurrencyPath": {
         "name": "Override Player Currency Path",
         "hint": "Path to player currency (e.g., 'system.currency' for D&D5e). Leave blank to use detected system."
       },
@@ -197,6 +208,14 @@
       "itemDenominationOverride": {
         "name": "Override Denomination",
         "hint": "Currency Denomination (e.g., credits, gp, units). Leave blank to use Item Currency Path or detected system. Campaign Codex will automatically detect the value and denomination for items based on the active game system (e.g., Dungeons and Dragons 5e, Pathfinder 2e, Starfinder, Savage Worlds Adventure Edition, Pathfinder 1e, Old-School Essentials and Daggerheart)."
+      },
+      "inventoryCategoryPath": {
+        "name": "Override Inventory Category Path",
+        "hint": "Path to item category for inventory grouping (e.g., 'system.itemtype'). Leave blank to use item type."
+      },
+      "useAssetLibrarianCategoryTag": {
+        "name": "Use Asset Librarian Category Tag",
+        "hint": "If enabled, inventory grouping uses flags.asset-librarian.categoryTag before other category sources."
       },
       "hideBaseCost": {
         "name": "Hide the Base cost column",
@@ -210,19 +229,31 @@
         "name": "Welcome Message - Disabled",
         "hint": "If On, you won't see the Welcome message"
       },
+      "actorLinkTokenHUD":{
+        "name": "CC Link on Token HUD",
+        "hint": "Display linked CC NPC sheets on the Token HUD as a button"
+      },
       "useOrganizedFolders": {
         "name": "Organise in Folders",
         "hint": "Automatically create and organise Campaign Codex journals in folders"
+      },
+      "showQuestByVisibility":{
+        "name": "Show Quest by Sheet Permission",
+        "hint": "Show linked quests if the user has observer or higher ownership of the quest journal"
       },
       "hideByPermission": {
         "name": "Hide by ownership",
         "hint": "Hide linked sheets if the user does not have observer or higher ownership of the journal"
       },
-      "hideInventoryByPermission":{
+      "allowPlayerViewInventory":{
+        "name": "Allow players to view all item descriptions",
+        "hint": "Allow players to view the description of an item they are not an observer of"
+      },
+      "hideInventoryByPermission": {
         "name": "Hide Inventory Items by ownership",
         "hint": "Hide Items in Inventories if the user does not have observer or higher ownership of the item"
       },
-	  "addPurchaseFundsToInventoryCash": {
+      "addPurchaseFundsToInventoryCash": {
         "name": "Add purchase funds to inventory held currency",
         "hint": "If enabled, successful purchases add the paid amount to Inventory Cash on that sheet."
       },
@@ -249,7 +280,7 @@
       "link": "Drop {type} to link",
       "empty": "Empty {type}"
     },
-	"dragToAdd": {
+    "dragToAdd": {
       "item": "Drag items here to add to inventory",
       "empty": "Empty"
     },
@@ -257,23 +288,23 @@
       "faileditem": "Failed to transfer item"
     },
     "warn": {
-      "notEnoughCurrency":"Not enough funds",
+      "notEnoughCurrency": "Not enough funds",
       "directly": "Cannot remove {type} directly",
       "remove": "Remove {type}",
-      "invaliddrop":"No members with linked actors found to drop!",
-      "nonpcfound":"No NPCs available to drop to map!",
-      "actornotfound":"Linked actor not found!",
-      "failedtodrop":"Failed to drop NPC to map!",
-      "scenenotfound":"Could not find the dropped scene."
+      "invaliddrop": "No members with linked actors found to drop!",
+      "nonpcfound": "No NPCs available to drop to map!",
+      "actornotfound": "Linked actor not found!",
+      "failedtodrop": "Failed to drop NPC to map!",
+      "scenenotfound": "Could not find the dropped scene."
     },
     "message": {
       "open": "Open {type}",
       "unlink": "Unlink {type}",
-      "droptomap":"Drop {type} Members to Scene",
-      "drop":"Drop to Scene."
+      "droptomap": "Drop {type} Members to Scene",
+      "drop": "Drop to Scene."
     },
     "title": {
-      "all":"All",
+      "all": "All",
       "open": {
         "actor": "Open Actor Sheet",
         "sheet": "Open Sheet"
@@ -286,17 +317,20 @@
       },
       "send": {
         "player": "Send to Player",
-		"purchase": "Purchase",
+        "purchase": "Purchase",
         "item": {
           "player": "Send Item to Player Character",
-          "typetoplayer":"Sent {type} to {player}."
+          "typetoplayer": "Sent {type} to {player}."
         }
       },
-	  "infinite":{
-        "item":"Toggle infinite amount"
+      "infinite": {
+        "item": "Toggle infinite amount"
       },
       "remove": {
         "item": "Remove Item",
+        "allInventory": "Remove all unlocked inventory items",
+        "lockedFromAll": "Protected from Remove All",
+        "unlockedForAll": "Not protected from Remove All",
         "from": {
           "group": "Remove from Group"
         }
@@ -308,7 +342,7 @@
       }
     },
     "inventory": {
-      "added":"Added {type} to inventory",
+      "added": "Added {type} to inventory",
       "price": {
         "name": "Price",
         "base": "Base Price",
@@ -327,7 +361,7 @@
       }
     },
     "ui": {
-      "addedto":"Added {type} to {typeb}",
+      "addedto": "Added {type} to {typeb}",
       "drag": {
         "link": {
           "journal": {
@@ -358,7 +392,7 @@
       "tabName": "Tab Name",
       "defaultVisible": "Default Visible",
       "hiddenFromPlayer": "Hidden from Player",
-      "tabPickerDescription": "Select which tabs are visible by default <i class=\"fas fa-power-off\"></i> and which are hidden from players <i class=\"fas fa-eye-slash\"></i> for each sheet type. This setting applies to all users. GMs can override this for individual sheets using the \"Configure Tabs\" button <i class=\"fas fa-cog\"></i> on the sheet header.",
+      "tabPickerDescription": "Set one global tab name override for each tab key, plus default visibility <i class=\"fas fa-power-off\"></i> and player-hidden state <i class=\"fas fa-eye-slash\"></i> per sheet type. ",
       "lootMode": "Loot Mode",
       "filter": "Filter...",
       "tagsPlaceholder": "Add a tag...",
@@ -371,10 +405,32 @@
       "balanceEncounter": "Balance Encounter",
       "noteTitle": "Note Title",
       "noNotesAvailable": "No notes available.",
+      "playerNoteVisibleToPlayers": "Visible to all players",
+      "playerNoteHiddenFromPlayers": "Hidden from other players",
+      "playerNotePrivateLabel": "Private",
+      "playerNoteSharedLabel": "Shared",
+      "playerNoteToggleNeedsContent": "Write a note before changing shared visibility.",
       "noQuestsFound": "No quests found.",
       "drop": "Drop",
+      "removeAll": "Remove All",
       "remove": "Remove",
-      "cr": "CR"
+      "cr": "CR",
+      "linkedEntityTable": {
+        "title": "Linked Entities",
+        "marker": "Marker",
+        "name": "Name",
+        "linkType": "Type",
+        "unlink": "Unlink",
+        "empty": "No linked entities.",
+        "sortBy": "Sort by {label}",
+        "linkedDocument": "Linked document",
+        "linkTypes": {
+          "parentRegion": "Parent Region",
+          "member": "Member",
+          "dependency": "Dependency",
+          "macro": "Macro"
+        }
+      }
     },
     "quest": {
       "rewards": "Rewards",
@@ -462,6 +518,7 @@
       "enterName": "Enter {type} name...",
       "defaultName": "New {type}",
       "areYouSure": "Are you sure?",
+      "removeAllInventory": "Are you sure you want to remove all unlocked inventory items?",
       "importContent": "Do you want to import the existing text content from \"{name}\" into the Campaign Codex description?",
       "defaultTabVisibility": "Default Tab Visibility",
       "themeColors": "Campaign Codex Theme Colors",
@@ -542,7 +599,7 @@
       "threatModerate": "Moderate",
       "threatSevere": "Severe",
       "threatExtreme": "Extreme",
-      "balanceEncounterPf2eNote": "PF2e XP uses creature level versus party level, with threat budgets based on party size."
+      "balanceEncounterPf2eNote": "XP uses creature level versus party level, with threat budgets based on party size."
     },
     "notify": {
       "journalNotFound": "Campaign Codex | Journal Entry not found.",
@@ -664,6 +721,8 @@
       "removedBrokenRefs": "Removed {count} broken {field} references from {name}",
       "removedBrokenParent": "Removed broken parent region link from {name}.",
       "removedBrokenInventory": "Removed {count} broken inventory items from {name}",
+      "removeAllSkippedLocked": "All inventory items are protected from Remove All.",
+      "removedInventoryItems": "Removed {count} unlocked inventory item(s) from {name}.",
       "sheetNotFound": "Selected sheet not found",
       "npcNoLinkedActor": "This NPC has no linked actor to drop!",
       "sourceDocNotFound": "Could not find the source document.",

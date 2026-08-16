@@ -144,7 +144,7 @@
 				"name" 					: "Use GM quick controls",
 				"descrp"				: "Allows the GM to use the special lock related controls listed at the bottom (affected marked with *)"
 			},
-	
+			
 			"allowTileLocking" : {
 				"name" 					: "Allow Tile locking",
 				"descrp"				: "Allows for tiles to be lockable objects"
@@ -261,6 +261,7 @@
 				"options" : {
 					"noCrit"			: "No crits",
 					"natCrit"			: "Nat 1/20",
+					"natCrit-inverse"	: "Nat 20/1 (inversed Nat 1/20)",
 					"natCritpm10"		: "Nat 1/20 & +-10 of DC [e.g. Pf2e]",
 					"d100WFRP4"			: "d100 Nat1/100 (inverted DC) [e.g. WFRP4e]",
 					"d100WFRP4Doubles"	: "d100 Nat1/100 & doubles (inverted DC) [e.g. WFRP4e]",
@@ -276,7 +277,7 @@
 				"name" : "Infinity Threshold",
 				"descrp" : "Numbers equal to this value are considered as infinite when calculating DCs" 
 			},
-						
+			
 			"LockPickItem" : {
 				"name" 					: "Lockpick items",
 				"descrp"				: "Names or compendium IDs (recommended) of a lockpicking items, \"-\" if no item is necessary (seperated with \";\")"		
